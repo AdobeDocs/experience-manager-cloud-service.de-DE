@@ -4,17 +4,17 @@ description: Der Regeleditor im universellen Editor ermöglicht es Ihnen, ohne P
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 98%
+source-wordcount: '2216'
+ht-degree: 97%
 
 ---
 
 
 # Einführung in den Regeleditor im WYSIWYG-Authoring
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Namen des Repositorys von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
+<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
 
 
 Sie können ein dynamisches Formularverhalten mit dem Regeleditor hinzufügen, mit dem Sie Regeln erstellen können. Diese Regeln ermöglichen eine bedingte Sichtbarkeit von Feldern oder die Automatisierung von Berechnungen auf der Grundlage von Benutzereingaben, was das allgemeine Anwendererlebnis verbessert. Durch das Optimieren der Formularausfüllung trägt der Regeleditor zur Genauigkeit und Effizienz bei.
@@ -278,7 +278,6 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
    * Wählen Sie **[!UICONTROL Minus]** aus dem Feld **[!UICONTROL Operator wählen]**.
 
    * Wählen Sie das Feld **[!UICONTROL Zusätzlicher Abzug]** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das andere Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**.
-
      ![Beispiel15 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
@@ -296,7 +295,6 @@ Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Di
    * Wählen Sie **[!UICONTROL Multipliziert mit]** aus dem Feld **[!UICONTROL Operator wählen]**.
 
    * Wählen Sie **Zahl** aus dem Feld **[!UICONTROL Option auswählen]** und geben Sie den Wert als `10` in das Feld **[!UICONTROL Zahl eingeben]** ein.
-
      ![Beispiel18 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Klicken Sie als Nächstes in den hervorgehobenen Bereich um das Ausdrucksfeld und wählen Sie dann **[!UICONTROL Ausdruck erweitern]** aus.
    ![Beispiel19 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Hinzufügen einer benutzerdefinierten Funktion](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Verwenden einer benutzerdefinierten Funktion im Regeleditor

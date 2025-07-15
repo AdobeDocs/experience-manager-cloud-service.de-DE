@@ -4,33 +4,33 @@ description: In diesem Artikel wird erläutert, wie Sie mit verschiedenen Emulat
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 42%
+source-wordcount: '1248'
+ht-degree: 99%
 
 ---
 
 
 # Responsiver Modus beim WYSIWYG-Authoring
 
-<span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail mit dem Namen Ihrer GitHub-Organisation und dem Repository-Namen von Ihrer offiziellen Adresse an <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Wenn die Repository-URL beispielsweise https://github.com/adobe/abc lautet, lautet der Name der Organisation „adobe“ und der Name des Repositorys „abc“.</span>
+<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
 
-## Einführung in Responsive Forms
+## Einführung in responsive Formulare
 
-In der heutigen Welt mit mehreren Geräten müssen Ihre Formulare auf Bildschirmen aller Größen - von Desktop-Monitoren bis hin zu Smartphones - großartig aussehen und gut funktionieren. Der responsive Modus im universellen Editor hilft Ihnen dabei, indem Sie Ihre Formulare während des Erstellungsprozesses über verschiedene Gerätegrößen hinweg in der Vorschau anzeigen und testen können.
+In der heutigen Welt, in der zahlreiche Geräte verwendet werden, müssen Ihre Formulare auf Bildschirmen aller Größen – von Desktop-Monitoren bis hin zu Smartphones – großartig aussehen und gut funktionieren. Dies erreichen Sie mit dem responsiven Modus im universellen Editor, indem Sie Ihre Formulare während des Erstellungsprozesses über verschiedene Gerätegrößen hinweg in der Vorschau anzeigen und testen können.
 
-Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ermöglicht es Ihnen, Formulare zu erstellen, die sich automatisch an verschiedene Bildschirmgrößen anpassen und ein optimales Benutzererlebnis unabhängig vom verwendeten Gerät bieten.
+Im [universellen Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) können Sie Formulare erstellen, die sich automatisch an verschiedene Bildschirmgrößen anpassen und unabhängig vom verwendeten Gerät ein optimales Anwendererlebnis bieten.
 
 ## Anzeigen einer Vorschau von Formularen im responsiven Modus für unterschiedliche Geräte
 
 Der universelle Editor bietet ein **Emulator**-Symbol oben rechts auf dem Bildschirm, mit dem Sie Seiten in unterschiedlichen Gerätegrößen in der Vorschau anzeigen und das Verhalten Ihres responsiven Designs testen können, um das Benutzererlebnis zu verbessern.
 
-So zeigen Sie eine Vorschau eines Formulars im responsiven Modus an:
+So zeigen Sie ein Formular im responsiven Modus in der Vorschau an:
 
 1. Öffnen Sie das Formular im universellen Editor zur Bearbeitung.
-2. Klicken Sie auf das ![Emulator-Symbol mit einem Gerätevorschau](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%}-Symbol in der Symbolleiste.
-3. Geräteformat auswählen:
+2. Klicken Sie auf das Symbol ![Emulator-Symbol mit einem Gerätevorschausymbol](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} in der Symbolleiste.
+3. Wählen Sie ein Geräteformat aus:
    - Desktop (Standard)
    - Tablet
    - Mobilgerät
@@ -38,7 +38,7 @@ So zeigen Sie eine Vorschau eines Formulars im responsiven Modus an:
 
 ![Screenshot des universellen Editors mit Optionen für den responsiven Modus für verschiedene Geräte](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-Sie können auch das Symbol **Screen Rotator** verwenden, um bei der Vorschau auf Tablet- oder Mobilgeräten zwischen Hoch- und Querformat umzuschalten.
+Mit dem Symbol **Bildschirmdrehung** können Sie bei der Vorschau auf Tablets oder Mobilgeräten Geräten zwischen Hoch- und Querformat umschalten. 
 
 Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorschau von Formularen auf unterschiedlichen Geräten. In der folgenden Tabelle sind die verfügbaren Emulatortypen zusammen mit den entsprechenden Gerätedarstellungen aufgeführt:
 
@@ -49,19 +49,19 @@ Der universelle Editor bietet verschiedene Emulatoren zum Anzeigen einer Vorscha
     </tr>
     <tr>
         <td style="width: 20%">Desktop</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop-Ansicht eines Formulars mit Layout in voller Breite" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Desktop-Ansicht eines Formulars mit dem Layout mit voller Breite" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td style="width: 20%">Tablet</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tabellenansicht eines Formulars mit einem Layout mit mittlerer Breite mit angepassten Komponenten" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Tabellenansicht eines Formulars mit dem Layout mit mittlerer Breite und angepassten Komponenten" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td style="width: 20%">Mobilgerät</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobilgeräteansicht eines Formulars mit schmalem Layout mit gestapelten Komponenten" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Mobilgeräteansicht eines Formulars mit schmalem Layout und gestapelten Komponenten" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td style="width: 20%">Benutzerdefiniertes Gerät</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Benutzerdefinierte Geräteansicht eines Formulars mit benutzerdefinierten Abmessungen" style="width: auto; height: auto"></td>
+        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Benutzerdefinierte Geräteansicht eines Formulars mit benutzerdefinierten Dimensionen" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
@@ -77,13 +77,13 @@ Der universelle Editor unterstützt die folgenden Arten von Layouts für Formula
 
 ### Panel-Layout
 
-Das Bedienfeld-Layout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Bereichslayout ordnet Formularkomponenten in separaten Abschnitten oder Bereichen in Formularen an.
+Das Bedienfeld-Layout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Panel-Layout ordnet Formularkomponenten in verschiedenen Abschnitten oder Panels in Formularen an.
 
-![Bereichslayout mit mehreren unterschiedlichen Abschnitten innerhalb eines Formulars](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+![Panel-Layout mit mehreren unterschiedlichen Abschnitten innerhalb eines Formulars](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Beispiel** Ein Bewerbungsformular kann Bedienfelder verwenden, um „Persönliche Informationen“, „Bildung“, „Berufserfahrung“ und „Verweise“ in verschiedene Abschnitte zu unterteilen.
+**Beispiel:** Ein Bewerbungsformular kann Panels verwenden, um „Persönliche Daten“, „Ausbildung“, „Berufserfahrung“ und „Referenzen“ in verschiedene Abschnitte zu unterteilen.
 
-**Responsives Verhalten:** Auf kleineren Bildschirmen werden Bedienfelder normalerweise vertikal gestapelt, wobei ihre unterschiedlichen Gruppierungen beibehalten und gleichzeitig die schmalere Breite angepasst wird.
+**Responsives Verhalten:** Auf kleineren Bildschirmen werden Panels normalerweise vertikal gestapelt. Dabei werden die unterschiedlichen Gruppierungen beibehalten und gleichzeitig eine Anpassung an die schmalere Breite durchgeführt.
 
 Sie können die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
@@ -91,9 +91,9 @@ Sie können die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/doc
 
 Das Assistenten-Layout vereinfacht ein komplexes Formular, indem es in verschiedene Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar, und Benutzende navigieren häufig mit den Schaltflächen **Weiter** und **Zurück** nacheinander durch die Schritte. Sie können das Assistenten-Layout verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
 
-![Assistentenlayout mit einem mehrstufigen Formular mit Navigationssteuerelementen](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+![Assistenten-Layout mit einem mehrstufigen Formular mit Navigationssteuerelementen](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Beispiel** Ein Versicherungsantragsformular kann einen Assistenten verwenden, der Benutzer durch die Bereitstellung von Details zu Vorfällen, das Hochladen von Beweismitteln, die Eingabe persönlicher Informationen und die Überprüfung der Übermittlung führt.
+**Beispiel:** Ein Antragsformular für Versicherungsleistungen kann Benutzende über einen Assistenten durch die Schritte zum Bereitstellen von Details zu einem Vorfall, Hochladen von Belegen, Eingeben persönlicher Daten und Überprüfen der Einreichung führen.
 
 **Responsives Verhalten:** Auf Mobilgeräten behält der Assistent seinen Schritt-für-Schritt-Ansatz bei, passt den Inhalt jedoch in jedem Schritt an den schmaleren Bildschirm an und stapelt häufig Elemente, die auf größeren Bildschirmen nebeneinander angezeigt würden.
 
@@ -105,9 +105,9 @@ Das Akkordeon-Layout zeigt Inhalte in reduzierbaren Abschnitten oder Bedienfelde
 
 ![Akkordeon-Layout mit erweiterbaren Abschnitten in einem Formular](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Beispiel** Ein Produktkonfigurationsformular kann Akkordeon-Abschnitte für „Grundlegende Optionen“, „Erweiterte Funktionen“, „Zubehör“ und „Zahlungspläne“ verwenden, sodass sich Benutzende auf einen Aspekt auf einmal konzentrieren können.
+**Beispiel:** Ein Formular zur Produktkonfiguration kann Akkordeon-Abschnitte für „Grundlegende Optionen“, „Erweiterte Funktionen“, „Zubehör“ und „Zahlungspläne“ verwenden, sodass sich Benutzende jeweils auf einen Aspekt konzentrieren können.
 
-**Responsives Verhalten:** Akkordeons eignen sich besonders gut für Mobilgeräte, da sie auf natürliche Weise vertikalen Raum sparen, indem sie nur den erweiterten Inhaltsbereich anzeigen, was sie ideal für kleinere Bildschirme macht.
+**Responsives Verhalten:** Akkordeons eignen sich besonders gut für Mobilgeräte, da sie auf natürliche Weise vertikalen Raum sparen, indem sie nur den erweiterten Inhaltsbereich anzeigen. Dadurch sind sie ideal für kleinere Bildschirme.
 
 Sie können die [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Akkordeon-Komponente finden Sie im Artikel [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
@@ -119,40 +119,40 @@ Für die Optimierung des Benutzererlebnisses und der Formularfunktionen ist die 
 |----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | **Zweck** | Gruppiert verwandte Inhalte in unterschiedliche Abschnitte | Führt Benutzende durch einen mehrstufigen Prozess oder ein mehrstufiges Formular | Organisiert Inhalte in reduzierbare Abschnitte |
 | **Struktur** | Unterschiedliche Abschnitte | Sequenzielle Schritte/Seiten | Reduzierbare Bedienfelder/Abschnitte |
-| **Navigation** | Klicken Sie zum Navigieren auf die Bedienfeldkopfzeilen | - Vorwärts: „Weiter“-Taste<br>- Rückwärts: „Zurück“-Schaltfläche<br>- Optionale Schritte überspringen | Anklickbare Kopfzeilen zum Erweitern/Reduzieren von Abschnitten |
+| **Navigation** | Klicken Sie zum Navigieren auf die Bedienfeldkopfzeilen | - Vorwärts: Schaltfläche „Weiter“<br>- Rückwärts: Schaltfläche „Zurück“<br>- Optionales Überspringen von Schritten | Anklickbare Kopfzeilen zum Erweitern/Reduzieren von Abschnitten |
 | **Anwendererlebnis** | Organisiert große Inhaltsmengen auf überschaubare Weise | Schrittweise Anleitung zur Verringerung der Überlastung | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
 | **Nutzungsszenario** | Komplexe Formulare mit kategorisierten Abschnitten | Einrichtungsprozesse, komplexe Formulare | Häufig gestellte Fragen, Einstellungsmenüs, detaillierte Inhaltsabschnitte |
-| **Am besten für Mobilgeräte** | Mittelgroß - Panels werden vertikal gestapelt | Gut - Fokus bleibt nur auf aktuellen Schritt | Hervorragend - Platz sparend mit ausklappbaren Abschnitten |
+| **Optimiert für Mobilgeräte** | Moderat – vertikales Stapeln der Panels | Gut – Fokus ausschließlich auf aktuellem Schritt | Hervorragend – platzsparend mit reduzierbaren Abschnitten |
 
-## Best Practices für Responsive Forms
+## Best Practices für responsive Formulare
 
-Befolgen Sie die folgenden Best Practices, um sicherzustellen, dass Ihre Formulare auf allen Geräten die beste Funktionalität bieten:
+Stellen Sie mithilfe der folgenden Best Practices sicher, dass Ihre Formulare auf allen Geräten ein optimales Erlebnis bieten:
 
-1. **Zuerst für Mobilgeräte entwickeln** Beginnen Sie mit der Gestaltung Ihres Formulars für Mobilgeräte und erweitern Sie es dann für größere Bildschirme. Dadurch wird sichergestellt, dass die Kernfunktionalität auch auf kleinsten Bildschirmen funktioniert.
+1. **Zuerst für Mobilgeräte entwickeln:** Gestalten Sie Ihr Formular zunächst für Mobilgeräte und erweitern Sie es dann für größere Bildschirme. Dadurch wird sichergestellt, dass die Kernfunktionen auch auf sehr kleinen Bildschirmen verwendet werden können.
 
-2. **Verwenden geeigneter Feldtypen:** Wählen Sie Feldtypen aus, die auf Touch-Geräten gut funktionieren:
-   - Verwenden von Dropdown-Listen anstelle von Optionsfeldern, wenn viele Optionen verfügbar sind
-   - Verwenden der Datumsauswahl für die Touch-Eingabe
-   - Stellen Sie sicher, dass Tasten und Touch-Targets mindestens 44 Pixel x 44 Pixel groß sind.
+2. **Geeignete Feldtypen verwenden:** Wählen Sie Feldtypen aus, die auf Touch-Geräten gut funktionieren:
+   - Verwenden Sie Dropdown-Listen anstelle von Optionsfeldern, wenn viele Optionen vorhanden sind.
+   - Verwenden Sie eine Datumsauswahl zur Touch-Eingabe.
+   - Stellen Sie sicher, dass Schaltflächen und Touch-Ziele mindestens 44 x 44 Pixel groß sind.
 
-3. **Vereinfachung für kleinere Bildschirme:**
-   - Anzeigen von weniger Feldern pro Zeile auf Mobilgeräten
-   - Erwägen, optionale Felder hinter einer Option „Mehr anzeigen“ auszublenden
-   - Aufteilen komplexer Formulare in mehrere Schritte auf Mobilgeräten
+3. **Für kleinere Bildschirme vereinfachen:**
+   - Lassen Sie auf Mobilgeräten weniger Felder pro Zeile anzeigen.
+   - Ziehen Sie in Betracht, optionale Felder hinter einer Option „Mehr anzeigen“ zu verbergen.
+   - Teilen Sie auf Mobilgeräten komplexe Formulare in mehrere Schritte auf.
 
-4. **Gründlich testen:** Testen Sie Ihre Formulare immer auf tatsächlichen Geräten oder verwenden Sie den Emulatormodus im universellen Editor, um sicherzustellen, dass sie in allen Bildschirmgrößen ordnungsgemäß funktionieren.
+4. **Gründlich testen:** Testen Sie Ihre Formulare immer auf den eigentlichen Geräten oder stellen Sie mit dem Emulatormodus im universellen Editor sicher, dass sie in allen Bildschirmgrößen ordnungsgemäß funktionieren.
 
-5. **Erwägen Sie Ladezeiten:** Optimieren Sie Bildgrößen und minimieren Sie die erforderlichen Ressourcen, insbesondere für mobile Benutzer, die langsamere Verbindungen haben können.
+5. **Ladezeiten berücksichtigen:** Optimieren Sie Bildgrößen und minimieren Sie die erforderlichen Ressourcen, insbesondere für mobile Benutzende, die ggf. über langsamere Verbindungen verfügen.
 
-## Fehlerbehebung bei responsivem Forms
+## Fehlerbehebung bei responsiven Formularen
 
 | Problem | Mögliche Ursache | Lösung |
 |-------|---------------|----------|
-| Formular erscheint auf Mobilgeräten abgeschnitten | Feste Breiteneinstellungen für Überlaufprobleme | Verwenden Sie relative Einheiten (%, rem) anstelle von Pixeln und überprüfen Sie auf Überlauf:ausgeblendete Eigenschaften |
-| Touch-Elemente, mit denen schwer interagiert werden kann | Touch-Ziele zu klein oder zu nah beieinander | Vergrößern Sie die Taste/den Eingang auf mindestens 44 Pixel x 44 Pixel und fügen Sie mehr Platz zwischen den interaktiven Elementen hinzu |
-| Inhaltsüberläufe auf kleinen Bildschirmen | Keine responsiven Regeln für kleinere Darstellungsfelder | Hinzufügen von Medienabfragen oder responsiven Klassen, um das Layout für verschiedene Bildschirmgrößen anzupassen |
-| Formular auf Mobilgeräten zu langsam | Große Bilder oder zu viele Skripte | Optimieren Sie Bilder, minimieren Sie JavaScript und erwägen Sie verzögertes Laden für nicht kritische Elemente |
-| Unterschiedliches Aussehen zwischen Emulator und echten Geräten | Browser-spezifisches Rendering oder Gerätevarianten | Testen Sie nach Möglichkeit auf tatsächlichen Geräten, nicht nur auf Emulatoren |
+| Formular wird auf Mobilgeräten abgeschnitten angezeigt | Feste Breiteneinstellungen oder Überlaufprobleme | Relative Einheiten (%, rem) anstelle von Pixeln verwenden und auf overflow:hidden-Eigenschaften prüfen |
+| Touch-Elemente mit schwieriger Interaktion | Touch-Ziele zu klein oder zu nah beieinander | Schaltfläche/Eingabegröße auf mindestens 44 x 44 Pixel vergrößern und mehr Platz zwischen interaktiven Elementen einfügen |
+| Inhaltsüberläufe auf kleinen Bildschirmen | Keine responsiven Regeln für kleinere Viewports | Medienabfragen oder responsive Klassen hinzufügen, um das Layout für verschiedene Bildschirmgrößen anzupassen |
+| Formular auf Mobilgeräten zu langsam | Große Bilder oder zu viele Skripte | Bilder optimieren, JavaScript minimieren und Lazy Loading für nicht kritische Elemente in Betracht ziehen |
+| Unterschiedliches Erscheinungsbild bei Emulator und echten Geräten | Browser-spezifisches Rendering oder Gerätevarianten | Nach Möglichkeit auf den eigentlichen Geräten testen, nicht nur auf Emulatoren |
 
 ## Siehe auch
 
