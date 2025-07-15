@@ -159,8 +159,8 @@ Führen Sie beispielsweise den folgenden Befehl nach dem Ersetzen im Terminal od
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header „Content-Type: application/json“ \
     —header „x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &#39;{
-    „data“: {
+    —data &#39;&lbrace;
+    „data“: &lbrace;
     „startDate“: „2025-01-10“,
     „endDate“: „2025-01-25“,
     „destination“: „Australia“,
@@ -171,8 +171,8 @@ Führen Sie beispielsweise den folgenden Befehl nach dem Ersetzen im Terminal od
     „Alter“: „35“,
     „Abonnieren“: null,
     „EMail“: &quot;mary@gmail.com&quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
@@ -183,7 +183,7 @@ Führen Sie beispielsweise den folgenden Befehl nach dem Ersetzen im Terminal od
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
     —Header „Content-Type: application/json“ ^
     —Header „x-adobe-routing: tier=live,bucket=main—[site/repository]—[organisation]&quot; ^
-    —data &quot;{\„data\&quot;: {\„startDate\&quot;: \„2025-01-10\&quot;, \„endDate\&quot;: \„2025-01-25\&quot;, \„destination\&quot;: \„Australia\&quot;, \„class\&quot; \„Erste Klasse\&quot;, \„budget\&quot;: \„2000\&quot;, \„amount\&quot;: \„1000000\&quot;, \„name\&quot;: \„Joe\&quot;, \„age\&quot;: \„35\&quot;, \„subscribe\&quot;: null, \„email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
+    —data &quot;&lbrace;\„data\&quot;: {\„startDate\&quot;: \„2025-01-10\&quot;, \„endDate\&quot;: \„2025-01-25\&quot;, \„destination\&quot;: \„Australia\&quot;, \„class\&quot; \„Erste Klasse\&quot;, \„budget\&quot;: \„2000\&quot;, \„amount\&quot;: \„1000000\&quot;, \„name\&quot;: \„Joe\&quot;, \„age\&quot;: \„35\&quot;, \„subscribe\&quot;: null, \„email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 
