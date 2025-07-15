@@ -79,6 +79,7 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 
    1. Geben Sie den **Namen** und den **Titel** an.
    1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
+
       `https://github.com/wkndforms/edsforms`
 
    ![Assistent für die Formularerstellung](/help/edge/assets/create-form-wizard.png)

@@ -142,6 +142,7 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
   }
   
 ```
+
 * `.{Type}-wrapper`: Wählt das äußere `div`-Element basierend auf dem Feldtyp als Ziel aus. Zum Beispiel wählt `.text-wrapper` alle Textfelder als Ziel aus.
 * `.field-{Name}`: Wählt das Element weiter auf Grundlage des spezifischen Feldnamens aus. Beispielsweise wählt `.field-first-name` das Textfeld „Vorname“ als Ziel aus. Dieser Selektor kann zwar für die Zielgruppenbestimmung von Elementen mithilfe der Klasse &quot;{Name}&quot; verwendet werden, es ist jedoch eine gewisse Vorsicht geboten. In diesem speziellen Fall wäre es für die Formatierung von Eingabefeldern nicht hilfreich, da nicht nur die Eingabe selbst, sondern auch die Titel- und Beschreibungselemente ausgewählt würden. Es empfiehlt sich, eine spezifischere Auswahl zu verwenden, z. B. eine, die für das Abzielen auf Texteingabefelder verfügbar ist (.text-wrapper-Eingabe).
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * Auswählen des Wrappers als Ziel: Die erste Auswahl (`.drop-down-wrapper`) wählt das äußere Wrapper-Element als Ziel aus, wodurch sichergestellt wird, dass die Stile auf die gesamte Dropdown-Komponente angewendet werden.
 * Flexbox-Layout: Flexbox ordnet Beschriftung, Dropdown-Liste und Beschreibung vertikal für ein sauberes Layout an.
 * Beschriftungsformatierung: Die Beschriftung zeichnet sich durch eine fette Schriftstärke und einen leichten Rand aus.
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### Optionsfeldgruppen
 
@@ -282,6 +284,7 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
+
 Dieser Selektor wählt alle Feldsätze mit dem Klassen-Optionsfeldgruppen-Wrapper aus.  Dies wäre nützlich, um allgemeine Stile auf die gesamte Optionsfeldgruppe anzuwenden.
 
 * Targeting von Optionsfeldbezeichnungen
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * Das fieldset-Element dient als Bedienfeld-Container mit dem Klassen-Bedienfeld-Wrapper und zusätzlichen Klassen zur Gestaltung basierend auf dem Bedienfeldnamen (Feldanmeldung).
-* Das legend-Element (<legend>) dient als Bedienfeldtitel mit dem Text „Anmeldeinformationen“ und der Klassenfeldbezeichnung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
+* Das legend-Element (&lt;legend>) dient als Bedienfeldtitel mit dem Text „Anmeldeinformationen“ und der Klassenfeldbezeichnung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
 * In diesem Feldsatz gibt es mehrere.{Type}-Wrapper-Elemente (.text-wrapper und .password-wrapper in diesem Fall) stellen einzelne Formularfelder im Bereich dar.
 * Jeder Wrapper enthält eine Bezeichnung, ein Eingabefeld und eine Beschreibung, ähnlich wie bei den vorherigen Beispielen.
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 Diese Auswahl gestaltet alle Feld-Wrapper in einem wiederholbaren Bedienfeld, wobei ein konsistenter Abstand zwischen Feldern beibehalten wird.
 
 * Targeting bestimmter Felder (in einem Bedienfeld):
