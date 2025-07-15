@@ -1,43 +1,44 @@
 ---
 title: Site-Designs
-description: Erfahren Sie, wie Sie AEM-Site-Designs verwenden, um den Stil und das Design Ihrer Site anzupassen.
+description: Erfahren Sie, wie AEM-Site-Designs verwendet werden können, um den Stil und das Design Ihrer Site für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung anzupassen.
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '364'
-ht-degree: 100%
+source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 75%
 
 ---
+
 
 # Site-Designs {#site-themes}
 
 {{traditional-aem}}
 
-Erfahren Sie, wie Sie AEM-Site-Designs verwenden, um den Stil und das Design Ihrer Site anzupassen.
+Erfahren Sie, wie AEM-Site-Designs verwendet werden können, um den Stil und das Design Ihrer Site für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung anzupassen.
 
 ## Überblick {#overview}
 
 Ein AEM-Site-Design ist ein Paket, das die CSS-, JavaScript- und statischen Ressourcen enthält, die das Aussehen Ihrer AEM-Site definieren und die Struktur eines AEM-Site-Designs einhalten.
 
-Sites, die mit AEM-Site-Vorlagen erstellt wurden, ermöglichen den einfachen Download, die Anpassung und die Neu-Bereitstellung von Designs.
+Sites, die mit AEM-Site-Vorlagen erstellt wurden, ermöglichen das einfache Herunterladen, Anpassen und Neu-Bereitstellen der Designs für herkömmliche AEM-Authoring-Projekte mit [Veröffentlichungsbereitstellung.](/help/sites-cloud/authoring/author-publish.md)
 
 >[!NOTE]
 >
->AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden](site-templates.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und beinhalten ein AEM-Site-Design, um die [schnelle Erstellung von Sites](create-site.md) zu ermöglichen.
+>AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden](site-templates.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM-Site-Design, um [schnelle Site-Erstellung“ zu ](create-site.md)
 
 ## Verwenden von Site-Designs {#using-themes}
 
 Site-Designs werden auf zwei verschiedene Arten verwendet:
 
 * Sie werden als Teil einer Site-Vorlage verwendet, um beim [Erstellen einer Site](create-site.md) den Stil zu bestimmen.
-* Sie werden heruntergeladen, nachdem eine Site basierend auf einer Site-Vorlage erstellt wurde, sodass Frontend-Entwickelnde den Stil weiter anpassen können.
+* Sie werden heruntergeladen, nachdem eine Site basierend auf einer Site-Vorlage erstellt wurde, sodass ein Frontend-Entwickler den Stil weiter anpassen kann.
 
 >[!TIP]
 >
->Eine vollständige Beschreibung des Prozesses zum Erstellen einer Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie in der [Tour zur schnellen Site-Erstellung](/help/journey-sites/quick-site/overview.md).
+>Eine vollständige Beschreibung des Prozesses zum Erstellen einer Site aus einer Vorlage und zum Anpassen ihres Designs finden Sie im Abschnitt [Tour zum Quick Site Creation](/help/journey-sites/quick-site/overview.md).
 
 ## Struktur von Site-Designs {#structure}
 
@@ -52,10 +53,10 @@ Abhängig von den spezifischen Projektanforderungen kann Ihre Designstruktur var
 
 ## Standard-Site-Design {#standard-site-theme}
 
-Adobe bietet ein Referenz-Design basierend auf Best Practices, das Sie als Grundlage für das Erstellen eines eigenen Designs verwenden können. [Das Standard-Site-Design ist auf GitHub verfügbar](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
+Adobe bietet ein Referenz-Design basierend auf Best Practices, das Sie als Grundlage für das Erstellen eines eigenen Designs verwenden können. [Das Standard-Site-Design ist auf GitHub verfügbar.](https://github.com/adobe/aem-site-template-standard/tree/main/theme)
 
 ## Entwickeln von Site-Designs {#developing-themes}
 
 Adobe bietet einen AEM-Site-Design-Assistenten als Satz von Skripten zum Erstellen neuer Site-Designs.
 
-[Der AEM-Site-Design-Assistent ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar](https://github.com/adobe/aem-site-theme-builder). Um das Design anpassen zu können, ist Erfahrung in der Frontend-Entwicklung erforderlich.
+[Der AEM-Site-Design-Assistent ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar.](https://github.com/adobe/aem-site-theme-builder) Um das Design anpassen zu können, ist Erfahrung in der Frontend-Entwicklung erforderlich.

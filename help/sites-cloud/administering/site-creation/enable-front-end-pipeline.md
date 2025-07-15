@@ -1,26 +1,27 @@
 ---
 title: Aktivieren der Frontend-Pipeline
-description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu nutzen und Ihre Site schneller anzupassen.
+description: Erfahren Sie, wie Sie die Frontend-Pipeline für bestehende herkömmliche AEM-Authoring-Sites mit Veröffentlichungsbereitstellung aktivieren können, um Site-Designs zu verwenden und Ihre Site schneller anzupassen.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 90%
 
 ---
+
 
 # Aktivieren der Frontend-Pipeline {#enable-front-end-pipeline}
 
 {{traditional-aem}}
 
-Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene Sites aktivieren können, um Site-Designs zu nutzen und Ihre Site schneller anzupassen.
+Erfahren Sie, wie Sie die Frontend-Pipeline für bestehende herkömmliche AEM-Authoring-Sites mit Veröffentlichungsbereitstellung aktivieren können, um Site-Designs zu verwenden und Ihre Site schneller anzupassen.
 
 ## Überblick {#overview}
 
-Die Frontend-Pipeline ist ein Mechanismus, der schnell nur den Frontend-Code Ihrer Websites bereitstellt, basierend auf [Site-Designs](site-themes.md) und [Site-Vorlagen](site-templates.md).
+Die Frontend-Pipeline ist ein Mechanismus für herkömmliche AEM-Authoring-Projekte mit [Veröffentlichungsbereitstellung](/help/sites-cloud/authoring/author-publish.md) der schnell nur den Frontend-Code Ihrer Websites bereitstellen kann, basierend auf [Site-](site-themes.md) und [Site-Vorlagen.](site-templates.md)
 
 Diese Pipeline verarbeitet nur Frontend-Code, wodurch der Bereitstellungsprozess schneller ist als Full-Stack-Bereitstellungen. Dadurch können Frontend-Entwickelnde Ihre Site einfach anpassen, ohne Kenntnisse über AEM zu benötigen.
 

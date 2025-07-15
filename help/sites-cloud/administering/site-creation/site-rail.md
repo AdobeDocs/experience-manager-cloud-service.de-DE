@@ -1,14 +1,14 @@
 ---
 title: Verwenden des Site-Bedienfelds zum Verwalten Ihres Site-Designs
-description: Erfahren Sie mehr über die leistungsstarken Funktionen des Site-Bedienfelds, mit denen Sie Ihr Site-Design einfach anpassen und verwalten können.
+description: Lernen Sie die leistungsstarken Funktionen des Site-Bedienfelds kennen, mit denen Sie Ihr Site-Design für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung einfach anpassen und verwalten können.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '583'
-ht-degree: 100%
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 82%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 {{traditional-aem}}
 
-Erfahren Sie mehr über die leistungsstarken Funktionen des Site-Bedienfelds, mit denen Sie Ihr Site-Design einfach anpassen und verwalten können.
+Lernen Sie die leistungsstarken Funktionen des Site-Bedienfelds kennen, mit denen Sie Ihr Site-Design für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung einfach anpassen und verwalten können.
 
 ## Überblick {#overview}
 
-Mit dem Site-Bedienfeld können Sie die Design- und Vorlagenressourcen Ihrer Site verwalten. [Wie andere Bedienfelder](/help/sites-cloud/authoring/sites-console/console-side-panel.md), z. B. die Inhaltsstruktur-, Verweis- oder Timeline-Bedienfelder, wird auch das Site-Bedienfeld in der Sites-Konsole ganz links als Bereich angezeigt, der Informationen zum ausgewählten Element enthält. Im Gegensatz zu anderen Bedienfeldern gilt das Site-Bedienfeld aber nur für Site-Stammverzeichnisse.
+Im Site-Bedienfeld können Sie die Design- und Vorlagenressourcen Ihrer Site für herkömmliche AEM-Authoring-Projekte mit [Publish-Bereitstellung“ verwalten.](/help/sites-cloud/authoring/author-publish.md) [wie andere Bereiche](/help/sites-cloud/authoring/sites-console/console-side-panel.md) z. B. die Inhaltsstruktur-, Verweis- oder Zeitleisten-Bereiche wird das Site-Bedienfeld in der Sites-Konsole als Bereich ganz links angezeigt, der Informationen zum ausgewählten Element anzeigt. Im Gegensatz zu anderen Bedienfeldern gilt das Site-Bedienfeld aber nur für Site-Stammverzeichnisse.
 
 Das Site-Bedienfeld wird verwendet, um Informationen zu Designs und Vorlagen für Ihre Site zu verwalten, darunter:
 
@@ -46,7 +46,7 @@ Wählen Sie **Design-Quellen herunterladen** aus, um eine lokale Kopie des Site-
 
 ## Herunterladen von Vorlagenressourcen {#downloading-template-resources}
 
-[Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem [Site-Design](site-themes.md) Informationen enthalten. Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
+[Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem [Site-Design Informationen enthalten.](site-themes.md) Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
 
 Wenn Ihre Site auf einer Site-Vorlage basiert und das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen, einschließlich zusätzlicher Site-Ressourcen.
 
@@ -86,4 +86,4 @@ Wenn das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das St
 
 ![Aktivieren der Frontend-Pipeline](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Weitere Informationen finden Sie im Dokument [Aktivieren der Frontend-Pipeline](enable-front-end-pipeline.md).
+Weitere Informationen finden Sie im Dokument [Aktivieren der Frontend-Pipeline.](enable-front-end-pipeline.md)

@@ -5,36 +5,25 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '755'
-ht-degree: 100%
+source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+workflow-type: tm+mt
+source-wordcount: '726'
+ht-degree: 64%
 
 ---
 
-# Erstellen einer Site {#creating-site}
 
-{{traditional-aem}}
+# Erstellen einer Site {#creating-site}
 
 Erfahren Sie, wie Sie mit AEM eine Site mithilfe von Site-Vorlagen erstellen, um den Stil und die Struktur Ihrer Site zu definieren.
 
 ## Übersicht {#overview}
 
-Bevor Inhaltsautoren Seiten mit Inhalten erstellen können, muss die Site zuerst erstellt werden. Dies wird im Allgemeinen von einem AEM-Administrator durchgeführt, der die anfängliche Struktur der Site definiert. Die Verwendung von Site-Vorlagen ermöglicht eine schnelle und flexible Erstellung von Sites.
-
-Mit dem AEM-Tool zur schnellen Site-Erstellung können auch Personen, die nicht in der Entwicklung tätig sind, mithilfe von Site-Vorlagen schnell eine Site von Grund auf erstellen.
-
-Nach der Erstellung ermöglicht das Tool Quick Site Creation auch eine schnelle Anpassung des Designs und des Stils der AEM-Site (JavaScript, CSS und statische Ressourcen). Dadurch kann der Frontend-Entwickler, der keine Kenntnisse über AEM benötigt, getrennt und parallel zu den Erstellern von Inhalten arbeiten. Der AEM-Administrator lädt ganz einfach das Site-Design herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst und dann die Änderungen an das AEM Code-Repository übergibt, das dann bereitgestellt wird.
-
-Dieses Dokument konzentriert sich auf die Erstellung von Sites mithilfe des Tools Quick Site Creation. Wenn Sie einen Überblick über den Site-Erstellungs- und -Anpassungs-Workflow erhalten möchten, lesen Sie die [Tour zur schnellen AEM-Site-Erstellung](/help/journey-sites/quick-site/overview.md)
+Bevor Inhaltsautoren Seiten mit Inhalten erstellen können, muss die Site zuerst erstellt werden. Dies wird im Allgemeinen von einem AEM-Administrator durchgeführt, der die anfängliche Struktur der Site definiert. Die Verwendung von Site-Vorlagen ermöglicht eine schnelle und flexible Erstellung von Sites für Nicht-Entwickler.
 
 ## Planen der Site-Struktur {#structure}
 
-Nehmen Sie sich Zeit, um den Zweck Ihrer Site und die geplanten Inhalte rechtzeitig im Voraus zu prüfen. Dadurch wird bestimmt, wie Sie die Struktur der Site entwerfen. Eine gute Site-Struktur unterstützt die einfache Navigation und Inhaltssuche für die Besucherinnen und Besucher Ihrer Site sowie verschiedene AEM-Funktionen wie [Multisite-Management und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md).
-
->[!TIP]
->
->[Die WKND-Referenz-Website](https://wknd.site) bietet eine Best-Practice-Implementierung einer voll funktionsfähigen Website für Outdoor-Erlebnisse. Erkunden Sie sie, um zu sehen, wie eine gut aufgebaute AEM-Site strukturiert ist.
+Nehmen Sie sich Zeit, um den Zweck Ihrer Site und die geplanten Inhalte rechtzeitig im Voraus zu prüfen. Dadurch wird bestimmt, wie Sie die Struktur der Site entwerfen. Eine gute Site-Struktur unterstützt die einfache Navigation und Inhaltssuche für Ihre Site-Besucher und unterstützt verschiedene AEM-Funktionen wie [Multisite-Management und Übersetzung.](/help/sites-cloud/administering/msm-and-translation.md)
 
 ## Site-Vorlagen {#site-templates}
 
@@ -44,11 +33,15 @@ Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Struktur sow
 
 >[!TIP]
 >
->Weitere Informationen zu Site-Vorlagen finden Sie unter [Site-Vorlagen](site-templates.md).
+>Weitere Informationen zu Site-Vorlagen finden Sie im Dokument [Site-Vorlagen.](site-templates.md)
 
 >[!NOTE]
 >
->Die Site-Vorlage darf nicht mit Seitenvorlagen verwechselt werden. Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
+>Die Site-Vorlage ist nicht zu verwechseln mit [Seitenvorlagen.](/help/sites-cloud/authoring/page-editor/templates.md) Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
+
+### Von Adobe bereitgestellte Site-Vorlagen {#adobe-templates}
+
+{{adobe-templates}}
 
 ## Erstellen einer Site {#create-site}
 
@@ -80,6 +73,11 @@ Die Verwendung einer Vorlage zum Erstellen einer Site ist einfach.
    * Der Site-Name wird Teil der URL.
    * Der Site-Name muss den [AEM-Konventionen zur Seitenbenennung](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices) entsprechen.
 
+1. Geben Sie zusätzliche Site-Details an, wie für die Site-Vorlage erforderlich.
+
+   * Verschiedene Vorlagen erfordern möglicherweise zusätzliche Details.
+   * Für Vorlagen für [Edge Delivery Services-Projekte](https://www.aem.live/developer/ue-tutorial) ist beispielsweise das GitHub-Repository Ihres Projekts erforderlich.
+
 1. Wählen Sie **Erstellen** aus. Die Site wird daraufhin anhand der Site-Vorlage erstellt.
 
    ![Details der neuen Site](../assets/create-site-details.png)
@@ -96,10 +94,10 @@ Inhaltsautoren können jetzt mit der Bearbeitung beginnen!
 
 ## Site-Anpassung {#site-customization}
 
-Wenn Ihre Site über die verfügbaren Vorlagen hinaus angepasst werden muss, stehen Ihnen verschiedene Optionen zur Verfügung.
+Vorlagen sind hilfreich, um die grundlegende Struktur und den Stil einer Site schnell einzurichten. Die meisten Projekte erfordern jedoch einige zusätzliche Stile und Anpassungen. Site-Vorlagen helfen, die Formatierung der Site zu entkoppeln, sodass Frontend-Entwicklerinnen und -Entwickler keine Kenntnisse von AEM benötigen, um die Site zu gestalten, und
+Sie arbeiten getrennt von und parallel zu den Erstellern von Inhalten. Je nach Art des Projekts kann dies zwei Formen annehmen.
 
-* Wenn die Site-Struktur oder der anfängliche Inhalt angepasst werden muss, [kann die Site-Vorlage an Ihre Anforderungen angepasst werden](site-templates.md).
-* Wenn der Site-Stil angepasst werden muss, [kann das Site-Design heruntergeladen und angepasst werden](/help/journey-sites/quick-site/overview.md).
-* Wenn die Site-Funktionalität angepasst werden muss, [kann die Site vollständig angepasst werden](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
-
-Jede Anpassung sollte mit Unterstützung eines Entwicklungs-Teams vorgenommen werden.
+* Bei Projekten mit AEM-Seitenbearbeitung mit dem universellen Editor und Bereitstellung [Edge-Bereitstellung](/help/edge/overview.md) erfolgt die gesamte Formatierung im GitHub-Projekt.
+   * Weitere Informationen finden Sie [ Dokument „Erste Schritte - Entwickler-Tutorial für ](https://www.aem.live/developer/ue-tutorial) Editor“.
+* Bei Projekten mit herkömmlicher AEM-Seitenbearbeitung und -Bereitstellung über [Veröffentlichungsbereitstellung“ lädt ](/help/sites-cloud/authoring/author-publish.md) AEM-Administrator einfach das Site-Design herunter und stellt es dem Frontend-Entwickler bereit, der es mithilfe seiner bevorzugten Tools anpasst und dann die Änderungen an das AEM-Code-Repository übergibt, das dann bereitgestellt wird.
+   * Weitere Informationen finden Sie im Dokument [Journey zur schnellen ](/help/journey-sites/quick-site/overview.md) von AEM.
