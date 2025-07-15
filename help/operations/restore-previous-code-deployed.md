@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 7%
 
 ---
@@ -34,9 +34,8 @@ Die Funktion **Vorherigen Code bereitgestellt** wiederherstellen“ ist nur verf
 * Ihre Organisation ist für das Early-Adopter-Programm registriert und das Feature Flag ist aktiviert.
 * Das Programm läuft auf AEM as a Cloud Service.
 * Die ausgewählte Umgebung ist eine `Development` Umgebung (temporäres Alpha-Limit).
-* Die letzte Pipeline für diese Umgebung wurde erfolgreich beendet und wurde vor **Tagen** ausgeführt.
+* Die letzte Pipeline für diese Umgebung wurde erfolgreich abgeschlossen und wurde vor **als 30** ausgeführt.
 * Der Umgebungsstatus lautet *Wird ausgeführt* und es wird keine Pipeline ausgeführt.
-* Die Ziel-Quellcodeversion, die Sie wiederherstellen möchten, wurde bereitgestellt **innerhalb von 30 Tagen**.
 
 Wenn eine Überprüfung fehlschlägt, öffnet Cloud Manager das folgende Dialogfeld, in dem eine oder mehrere nicht erfüllte Bedingungen aufgelistet und **Bestätigen** deaktiviert werden, um die Wiederherstellung zu verhindern.
 
