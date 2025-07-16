@@ -799,6 +799,7 @@ Vor Juli 2025 hat Adobe die unten aufgeführten WAF-Regeln empfohlen, die weiter
           - PRIVATEFILE
           - NULLBYTE
 ```
+
 </details>
 
 ## Tutorial {#tutorial}
