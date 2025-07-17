@@ -79,7 +79,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrieren von benutzerdefinierten Widgets mit XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wenn der Code des benutzerdefinierten Widgets fertig ist, registrieren Sie das Widget mit der Skripterstellungs-Engine, indem Sie die `registerConfig`-API für [Form Bridge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
+Wenn der Code des benutzerdefinierten Widgets fertig ist, registrieren Sie das Widget mit der Skripterstellungs-Engine, indem Sie die `registerConfig`-API für [Form Bridge](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
