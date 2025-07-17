@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die OpenAPIs für Inhaltsfragmente und Inha
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 1a55c35814d6651173f7bdeaa677a7dbdec13f73
+source-git-commit: d683051387af5c0de45917a50003c2194d887bc4
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 100%
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
 
@@ -22,6 +22,10 @@ Die bestehende Verwendung des [Assets-HTTP-API](https://experienceleague.adobe.c
 >Für den Zugriff auf die OpenAPI ist eine Autorisierung erforderlich, wenn Sie nicht bei AEM angemeldet sind, z. B. wenn die OpenAPI von einem anderen Produkt im Rahmen einer Integration verwendet wird.
 >
 >Weitere Informationen zur Autorisierung Ihres Zugriffs auf die OpenAPI finden Sie unter [OpenAPI-basierte APIs](/help/implementing/developing/open-api-based-apis.md).
+
+>[!CAUTION]
+>
+>Standardmäßig ist die OpenAPI für die Inhaltsfragmentverwaltung bei der Veröffentlichung deaktiviert. Stattdessen empfehlen wir für bereitstellungsorientierte Anwendungsfälle die Verwendung der [OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-content-fragment-delivery-with-openapi.md).
 
 >[!NOTE]
 >
