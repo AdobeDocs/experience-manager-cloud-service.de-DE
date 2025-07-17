@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Grundlagen und Best Practices für die 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
+workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die 
 
 Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/33376?quality=9&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -279,7 +279,7 @@ Das Ändern von Dienstbenutzenden oder ACLs, die auf Inhalte oder Code zugreifen
 
 ### Indexänderungen {#index-changes}
 
-Wenn Änderungen an Indizes vorgenommen werden, muss die neue Version ihre Indizes bis zum Ende weiter verwenden, während die alte Version ihre eigenen, geänderten Indizes nutzt. Die Entwicklerinnen und Entwickler sollten die Indexverwaltungsmethoden befolgen, die unter [Inhaltssuche und -indizierung](/help/operations/indexing.md) beschrieben sind.
+Wenn Änderungen an Indizes vorgenommen werden, ist es wichtig, dass die alte Version ihre Indizes bis zum Ende weiter verwendet, während die neue Version ihren eigenen geänderten Satz von Indizes verwendet. Die Entwicklerinnen und Entwickler sollten die Indexverwaltungsmethoden befolgen, die unter [Inhaltssuche und -indizierung](/help/operations/indexing.md) beschrieben sind.
 
 ### Konservative Codierung für Rollbacks {#conservative-coding-for-rollbacks}
 
