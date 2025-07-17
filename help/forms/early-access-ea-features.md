@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 28%
+source-wordcount: '2467'
+ht-degree: 25%
 
 ---
 
@@ -123,13 +123,37 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 
 Sie können AEM Forms mit Adobe Experience Platform (AEP) verbinden, um Kundenprofile und Daten für personalisierte Formularerlebnisse und nachgelagerte Trigger-Workflows auf der Grundlage von Formularübermittlungen zu nutzen. Durch das direkte Senden von Formulardaten an AEP-Datensätze können Sie Kundenprofile anreichern und tiefere Einblicke in Benutzerinteraktionen erhalten.
 
 Bereit zum Start? [ Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
+### AEM FORMS HTML5 FORMS
+
+AEM Forms HTML5 Forms ermöglicht es Ihnen, vorhandene XFA-Formularvorlagen (XML Forms Architecture) im HTML5-Format zu rendern, sodass sie auf modernen Browsern und Mobilgeräten verfügbar sind, auf denen XFA-basiertes PDF nicht unterstützt wird. Mit dieser Funktion wird die Lücke zwischen herkömmlichem PDF forms und modernen Web-Erlebnissen geschlossen.
+
+![HTML5 Forms-Vorschau](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**Schlüsselfunktionen:**
+
+* **HTML5-basiertes Rendern von XFA-Formularvorlagen**: Rendern Sie Ihre vorhandenen XFA-basierten Formulare im HTML5-Format, um Ihre Clientplattform auf Mobilgeräte (Apple iPad, Android-Tablet, Smartphones usw.) zu erweitern, die HTML5, aber nicht Adobe Reader mit XFA Forms unterstützen.
+
+* **Für Mobilgeräte geeignete Formulare**: HTML5 Forms bietet zahlreiche Funktionen, die für Mobilgeräte geeignet sind, sodass Sie Ihre aktuellen Lösungen und Workflows mit HTML5-Browsern auf Tablets oder Smartphones erweitern können.
+
+* **Unterstützung der Barrierefreiheit**: HTML5 Forms verwendet den ARIA HTML5-Barrierefreiheitsstandard und unterstützt die Registerkartennavigation, sodass sie mit gängigen Bildschirmlesehilfen wie JAWS und VoiceOver kompatibel sind.
+
+* **Anpassungsfunktionen**: Sie können das Erscheinungsbild vorhandener Widgets anpassen, Ihre eigenen benutzerdefinierten Widgets erstellen oder benutzerdefinierte Stile in Formularen verwenden, indem Sie standardmäßige Web-Technologien wie CSS und JavaScript verwenden.
+
+* **Sprachunterstützung von rechts nach links**: HTML5 Forms unterstützt von rechts nach links gerichtete Sprachen wie Hebräisch, sodass Sie Formulare in RTL-Sprachen anzeigen und ausfüllen können.
+
+* **Anlagenunterstützung**: Hochladen, Anzeigen in der Vorschau und Senden von Anhängen mit HTML5-Formularen für eine erweiterte Datenerfassung.
+
+* **Entwurfsspeicherung**: Speichern Sie ein HTML5-Formular als Entwurf und füllen Sie es zu einem späteren Zeitpunkt wieder aus.
+
+Bereit zum Start? Die [Einführung in HTML5 Forms](/help/forms/introductionhtml5.md)-Dokumentation bietet einen umfassenden Überblick und eine Anleitung für die ersten Schritte mit dieser Innovation.
 
 ## Zusätzliche Early-Access-Innovationen
 
