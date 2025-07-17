@@ -38,7 +38,7 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 1. Je nachdem, ob Sie AEM Forms unter OSGi oder JEE ausführen, müssen Sie Folgendes im Feld **Authentifizierungsanforderungen** hinzufügen: 
 
-   *  von AEM Forms für JEE
+   * von AEM Forms für JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
