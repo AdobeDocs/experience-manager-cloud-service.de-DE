@@ -77,7 +77,7 @@ Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts iden
 >[!NOTE]
 >
 >In AEM as a Cloud Service gibt das CDN eine allgemeine Fehlerseite aus, wenn vom Backend ein 5XX-Fehler empfangen wird. Damit die tatsächliche Antwort des Backends weitergeleitet werden kann, müssen Sie die folgende Kopfzeile zur Antwort hinzufügen: `x-aem-error-pass: true`.
->>Dies funktioniert nur bei Antworten aus AEM oder der Apache-/Dispatcher-Ebene. Bei anderen unerwarteten Fehlern, die von Zwischeninfrastruktur-Ebenen kommen, wird weiterhin die allgemeine Fehlerseite angezeigt.
+>&#x200B;>Dies funktioniert nur bei Antworten aus AEM oder der Apache-/Dispatcher-Ebene. Bei anderen unerwarteten Fehlern, die von Zwischeninfrastruktur-Ebenen kommen, wird weiterhin die allgemeine Fehlerseite angezeigt.
 
 >[!CAUTION]
 >
