@@ -3,9 +3,10 @@ title: Wie wird die AFP Output Sync API verwendet?
 description: Erfahren Sie, wie Sie mit der AFP Output Sync API Ausgabedarstellungen abrufen und synchronisieren können.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
-source-git-commit: 0b86f3bf71505b69ef995369045b7c682d7db8e3
+exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
+source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '235'
 ht-degree: 11%
 
 ---
@@ -100,4 +101,4 @@ Sie können die .yaml-Datei herunterladen und in Postman hochladen, um die Funkt
 
 Sie können die Antwort speichern und die gespeicherte Datei im AFP-Reader öffnen, um sie anzuzeigen.
 
-![PDF Reader](/help/forms/assets/afp-pdf.png)
+<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
