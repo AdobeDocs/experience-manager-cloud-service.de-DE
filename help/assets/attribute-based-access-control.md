@@ -1,15 +1,16 @@
 ---
-title: Attributbasierte Zugriffssteuerung
+title: Attributbasierte Zugriffssteuerung – Übersicht
 description: Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung aktivieren, um metadatenbasierte Regeln zu definieren, um die Zugriffsebene auf in Content Hub verfügbare Assets zu definieren
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 5%
 
 ---
 
-# Attributbasierte Zugriffssteuerung {#attribute-based-access-control}
+# Attributbasierte Zugriffssteuerung – Übersicht {#attribute-based-access-control}
 
 Mit der attributbasierten Zugriffssteuerung (ABAC) können Content Hub-Admins metadatenbasierte Regeln definieren, um die Zugriffsebene auf in Content Hub verfügbare Assets zu definieren.
 
@@ -23,13 +24,24 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 
 * Beseitigt die Abhängigkeit von der Ordnerstruktur für Berechtigungen
 
-* Ermöglicht es Administratoren, Assets hochzuladen und Berechtigungsstrukturen rückwirkend zu bestimmen
+* Ermöglicht es Admins, Assets hochzuladen und Berechtigungsstrukturen rückwirkend zu bestimmen
 
-* Reduziert die Anzahl der Duplikate - verbessert die Integrität des Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
+* Reduziert die Anzahl der Duplikate – verbessert die Integrität der Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
 
 ## Wie wird die attributbasierte Zugriffssteuerung aktiviert? {#enable-attribute-based-access-control}
 
-Derzeit können Sie keine attributbasierten Zugriffssteuerungsregeln eigenständig über die Content Hub-Benutzeroberfläche erstellen. Erstellen Sie ein Adobe-Support-Ticket, um mithilfe der in diesem Artikel definierten Richtlinien Regeln in einer Tabelle zu definieren.
+Derzeit können Sie keine attributbasierten Zugriffssteuerungsregeln eigenständig über die Content Hub-Benutzeroberfläche erstellen.
+
+Klicken Sie **Tabelle herunterladen**, um Regeln in einer Tabelle herunterzuladen und zu definieren. Erstellen Sie ein Adobe-Support-Ticket und stellen Sie Adobe die in der Tabelle definierten Regeln zur Verfügung.
+
+[!BADGE Arbeitsblatt herunterladen]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+Definieren Sie Regeln in der Tabelle anhand der in diesem Artikel definierten Richtlinien.
+
+>[!IMPORTANT]
+>
+> Navigieren Sie nach der Definition der Regeln zur Registerkarte **Validierungsfehler** des Arbeitsblatts und klicken Sie auf **ABAC-Validierungen ausführen**. **Alle Validierungen erfolgreich** bestätigt die Meldung, dass Sie die definierten Regeln für Adobe bereitstellen können.
 
 ## Beispiel für einen Anwendungsfall der attributbasierten Zugriffssteuerung {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ Auf diese Weise können Sie einfache und ausdrucksvolle Regeln schreiben, wie et
 * Erfassen Sie die geschäftliche Absicht der Regel im Kommentar, unabhängig davon, ob die Bedingung korrekt geschrieben wurde, da der Zweck uns dabei hilft, die Logik bei Bedarf zu validieren und zu korrigieren.
 
 * Die PDF-Lizenzdateien, die für DRM festgelegt sind, müssen für alle sichtbar sein, damit die Benutzer sie sehen können, wenn sie das Asset mit der -Lizenz herunterladen.
-
-
-
-
-
-
-
-
-
-
