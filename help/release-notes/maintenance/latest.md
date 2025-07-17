@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
+source-git-commit: 2e90e40a0fe439653987a23792a4c1ec612aafd6
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 81%
+source-wordcount: '276'
+ht-degree: 63%
 
 ---
 
@@ -28,7 +28,7 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 
 ### Verbesserungen {#enhancements-21570}
 
-Keine
+* Migriert zu Apache HTTPD 2.4.63
 
 ### Behobene Probleme {#fixed-issues-21570}
 
@@ -37,6 +37,7 @@ Keine
 ### Bekannte Probleme {#known-issues-21570}
 
 * Der zugehörige AEM SDK verfügt über eine andere Release-ID (21575) und ist über das Software Distribution-Portal verfügbar.
+* Apache HTTP Server Version 2.4.63 hat eine grundlegende Änderung in der Verarbeitung von Fragezeichen (`mod_rewrite`) in URLs durch `?` eingeführt. Diese Änderung wurde implementiert, um die Verwendung des `UnsafeAllow3F`-Flags zu verhindern, das als Sicherheitsrisiko betrachtet wurde. Dies betrifft alle `RewriteRule`-Anweisungen, die sich auf die Erkennung von Fragezeichen in URL-Mustern stützen.
 
 ### Eingestellte Funktionen und APIs {#deprecated-21570}
 
@@ -53,4 +54,5 @@ Keine
 | AEM Oak | 1.80.0 | [Oak-API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
+| Apache HTTP-Server | 2.4.63 | [Apache httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM-Kernkomponenten | 2.29.0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
