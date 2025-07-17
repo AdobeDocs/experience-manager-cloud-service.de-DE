@@ -4,10 +4,10 @@ description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung vo
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,10 @@ Um auf Fehler zu reagieren, stellt AEM unter `/libs/sling/servlet/errorhandler` 
 >Auf einer Authoring-Instanz ist der [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler antwortet, indem er den vollständigen Stacktrace in die Antwort schreibt.
 >
 >In Veröffentlichungsinstanzen ist CQ WCM Debug Filter **immer** deaktiviert (selbst wenn er als aktiviert konfiguriert ist).
+
+>[!NOTE]
+>
+>Weitere Informationen zur Fehlerbehandlung mit der Dispatcher finden Sie unter [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## Anpassen der vom Fehler-Handler angezeigten Seiten {#how-to-customize-pages-shown-by-the-error-handler}
 
@@ -73,7 +77,7 @@ Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts iden
 >[!NOTE]
 >
 >In AEM as a Cloud Service gibt das CDN eine allgemeine Fehlerseite aus, wenn vom Backend ein 5XX-Fehler empfangen wird. Damit die tatsächliche Antwort des Backends weitergeleitet werden kann, müssen Sie die folgende Kopfzeile zur Antwort hinzufügen: `x-aem-error-pass: true`.
->Dies funktioniert nur bei Antworten aus AEM oder der Apache-/Dispatcher-Ebene. Bei anderen unerwarteten Fehlern, die von Zwischeninfrastruktur-Ebenen kommen, wird weiterhin die allgemeine Fehlerseite angezeigt.
+>>Dies funktioniert nur bei Antworten aus AEM oder der Apache-/Dispatcher-Ebene. Bei anderen unerwarteten Fehlern, die von Zwischeninfrastruktur-Ebenen kommen, wird weiterhin die allgemeine Fehlerseite angezeigt.
 
 >[!CAUTION]
 >
