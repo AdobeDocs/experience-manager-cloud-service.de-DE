@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2803'
 ht-degree: 99%
 
 ---
+
 
 # Formularsatz in AEM Forms{#form-set-in-aem-forms}
 
@@ -34,7 +37,7 @@ Formularsätze werden auch in der AEM Forms-App unterstützt, sodass etwa Ihr Au
 
 Sie können mehrere XDPs oder Formularvorlagen, die unter Verwendung von Designer erstellt wurden, in einen Formularsatz zuordnen. Formularsätze können dann selektiv verwendet werden, um die XDPs zu rendern, basierend auf den Werten, die von den Benutzern in den anfänglichen Formularen und deren Profilen eingegeben wurden.
 
-Verwenden Sie die [AEM Forms-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms), um alle Formulare, Formularsätze und zugehörigen Assets zu verwalten.
+Verwenden Sie die [AEM Forms-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms), um alle Formulare, Formularsätze und zugehörigen Assets zu verwalten.
 
 ### Erstellen eines Formularsatzes {#create-a-form-set}
 
@@ -65,7 +68,7 @@ Gehen Sie wie folgt vor, um einen Formularsatz zu erstellen:
 
    * Reihenfolge der Formulare: Ziehen Sie die Formulare per Drag&amp;Drop, um die Anordnung zu ändern. Dieses Formular definiert die Reihenfolge, in der die Formulare dem Endbenutzer in der AEM Forms-App und in der eigenständigen Ausgabedarstellung angezeigt werden.
    * Formular-ID: Gibt eine eindeutige ID an, damit die Formulare in den Berechtigungsausdrücken verwendet werden können.
-   * Datenstamm: Die Autorin oder der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im übermittelten XML-Code positioniert werden. Standardmäßig ist der Wert „/“. Wenn alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. Weitere Informationen zur XML-Struktur von Formularsätzen finden Sie unter [Vorausfüllen von XML für Formularsätze](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Datenstamm: Die Autorin oder der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im übermittelten XML-Code positioniert werden. Standardmäßig ist der Wert „/“. Wenn alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. Weitere Informationen zur XML-Struktur von Formularsätzen finden Sie unter [Vorausfüllen von XML für Formularsätze](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Berechtigungsausdruck: Gibt einen JavaScript-Ausdruck an, der einen booleschen Wert auswertet und anzeigt, ob ein Formular im Formularsatz zum Ausfüllen zulässig ist. Wenn dies „false“ ist, wird der Benutzer nicht gefragt und es wird ihm auch nicht das Formular zum Ausfüllen angezeigt. Der Ausdruck basiert normalerweise auf den Werten der Felder, die in den diesem Formular vorangehenden Formularen erfasst werden. Darüber hinaus enthalten Ausdrücke auch Aufrufe von „fs.valueOf“ in der Formularsatz-API, um die von der Benutzerin oder dem Benutzer im entsprechenden Feld eines Formulars im Formularsatz eingegebenen Werte abzurufen:
 
    *fs.valueOf(&lt;Formularkennung>, &lt;fieldSom-Ausdruck>) > &lt;Wert>*
@@ -139,7 +142,7 @@ Ein Berechtigungsausdruck kann jede gültige JavaScript-Anweisung sein, die eine
 
 Neben der normalen JavaScript-Funktion wird im Formularsatz die fs.valueOf-API genutzt, die Zugriff auf den Wert eines Formularfelds in einem Formularsatz bietet. Verwenden Sie diese API, um auf den Wert eines Formularfelds in einem Formularsatz zuzugreifen. Die API-Syntax lautet fs.valueOf (formUid, fieldSOM), wobei:
 
-* formUid (String): Eine eindeutiger ID eines Formulars im Formularsatz. Sie können dies beim Erstellen des Formularsatzes in der Forms Manager-Benutzeroberfläche angeben. Standardmäßig ist dies der Name des Formulars.
+* formUid (String): Eine eindeutiger ID eines Formulars im Formularsatz. Sie können dies beim Erstellen des Formularsatzes in der Forms Manager-Benutzeroberfläche angeben. Standardmäßig ist dies der Formularname.
 * fieldSOM (string): Ein SOM-Ausdruck des Felds im durch formUid angegebenen Formular. SOM-Ausdruck- oder Skriptobjekt-Modellausdruck wird verwendet, um die Werte, Eigenschaften und Methoden innerhalb eines bestimmten Dokumentobjektmodells (DOM) zu referenzieren. Sie können ihn in Form Designer auf der Registerkarte „Skripte“ anzeigen, während das Feld ausgewählt ist.
 
 >[!NOTE]
@@ -338,7 +341,7 @@ Dieses Tag gibt den Anfang der XML für das HTML5-Formular an. Dies wird in der 
 
 Der Name „rootElement“ dient hier lediglich als Platzhalter. Der tatsächliche Name wird aus den im Formularsatz verwendeten Formularen übernommen. Die mit dem rootElement beginnende Unterstruktur enthält die Daten aus den Feldern und Unterformularen innerhalb der im Formularsatz enthaltenen Formulare. Es gibt mehrere Faktoren, die die Struktur des rootElement und seiner untergeordneten Elemente bestimmen.
 
-In der XML zum Vorausfüllen ist dieses Tag optional, fehlt es jedoch, wird die gesamte XML ignoriert.
+In der XML zum Vorbefüllen ist dieses Tag optional, aber wenn es fehlt, wird die gesamte XML ignoriert.
 
 NAME DES STAMMELEMENT-TAGS
 
