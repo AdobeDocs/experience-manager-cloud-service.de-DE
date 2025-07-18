@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 3%
+source-wordcount: '2409'
+ht-degree: 5%
 
 ---
 
@@ -19,23 +19,107 @@ ht-degree: 3%
 
 Kunden mit einer Lizenz bei einem Protokollierungsanbieter oder die ein Protokollierungsprodukt hosten, können AEM-Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an das zugehörige Protokollierungsziel weitergeleitet bekommen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
 
-* Amazon S3 (private Betaversion, siehe Hinweis unten)
-* Azure Blob Storage
-* Datadog
-* Elasticsearch oder OpenSearch
-* HTTPS
-* Splunk
-* Sumo Logic (private Betaversion, siehe Hinweis unten)
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Protokolltechnologie</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nein</td>
+    </tr>
+    <tr>
+      <td>Azure Blob Storage</td>
+      <td>Nein</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>Nein</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nein</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch<br>OpenSearch</td>
+      <td>Nein</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>Nein</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nein</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>Nein</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Sumo Logic</td>
+      <td style="background-color: #ffb3b3;">Ja</td>
+      <td>Ja</td>
+      <td>Ja</td>
+      <td style="background-color: #ffb3b3;">Nein</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> Für Technologien in Private Beta senden Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um den Zugriff anzufordern.
 
 Die Protokollweiterleitung wird im Self-Service-Modus konfiguriert, indem eine Konfiguration in Git deklariert wird, und kann über Cloud Manager-Konfigurations-Pipelines für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
 Es gibt eine Option für die Weiterleitung der AEM- und Apache/Dispatcher-Protokolle über die erweiterte Netzwerkinfrastruktur von AEM, z. B. eine dedizierte Ausgangs-IP.
 
 Beachten Sie, dass die Netzwerkbandbreite, die mit den an das Protokollierungsziel gesendeten Protokollen verbunden ist, als Teil der Netzwerk-E/A-Nutzung Ihres Unternehmens betrachtet wird.
-
->[!NOTE]
->
->Amazon S3 und Sumo Logic befinden sich in Private Beta und unterstützen nur AEM-Protokolle (einschließlich Apache/Dispatcher).  New Relic über HTTPS befindet sich ebenfalls in der privaten Betaversion. aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
 ## Wie dieser Artikel organisiert ist {#how-organized}
 
@@ -49,7 +133,7 @@ Dieser Artikel ist wie folgt aufgebaut:
 
 ## Einrichtung {#setup}
 
-1. Erstellen Sie eine Datei mit dem Namen `logForwarding.yaml`. Sie sollte Metadaten enthalten, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#common-syntax) beschrieben (**kind** sollte auf `LogForwarding` und Version auf „1“ festgelegt sein), mit einer Konfiguration, die der folgenden ähnelt (wir verwenden Splunk als Beispiel).
+1. Erstellen Sie eine Datei mit dem Namen `logForwarding.yaml`. Sie sollte Metadaten enthalten, wie im Artikel [Konfigurations-Pipeline](/help/operations/config-pipeline.md#common-syntax) beschrieben (**Kind** sollte auf `LogForwarding` und Version auf „1“ gesetzt werden), mit einer Konfiguration, die der folgenden ähnelt (wir verwenden Splunk als Beispiel).
 
    ```yaml
    kind: "LogForwarding"
@@ -116,14 +200,14 @@ Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder A
 Einige Organisationen entscheiden sich dafür, einzuschränken, welcher Traffic von den Protokollierungszielen empfangen werden kann. Andere benötigen möglicherweise andere Ports als HTTPS (443).  Wenn ja[ müssen ](/help/security/configuring-advanced-networking.md)Erweiterte Netzwerke“ vor der Bereitstellung der Protokollweiterleitungskonfiguration konfiguriert werden.
 
 In der folgenden Tabelle sehen Sie, welche Anforderungen an die erweiterte Netzwerk- und Protokollierungskonfiguration gestellt werden, je nachdem, ob Sie Port 443 verwenden oder nicht und ob Ihre Protokolle über eine feste IP-Adresse angezeigt werden müssen oder nicht.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,7 +217,7 @@ table, th, td &lbrace;
       <th>Port-Definition für logForwarding.yaml erforderlich</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS (443)</td>
+      <td rowspan="2" ro>HTTPS (443)</td>
       <td>Nein</td>
       <td>Nein</td>
       <td>Nein</td>
@@ -155,7 +239,7 @@ table, th, td &lbrace;
       <td>Ja</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >Ob Ihre Protokolle von einer einzelnen IP-Adresse aus angezeigt werden, hängt von der gewählten erweiterten Netzwerkkonfiguration ab.  Um dies zu erleichtern, muss ein dedizierter Ausgang verwendet werden.
@@ -194,13 +278,17 @@ Konfigurationen für die unterstützten Protokollierungsziele sind unten aufgef�
 
 ### Amazon S3 {#amazons3}
 
+Die Protokollweiterleitung an Amazon S3 unterstützt AEM- und Dispatcher-Protokolle. CDN-Protokolle werden noch nicht unterstützt.
+
 >[!NOTE]
 >
->In S3 werden regelmäßig alle 10 Minuten für jeden Protokolldateityp Protokolle geschrieben.  Dies kann zu einer anfänglichen Verzögerung für das Schreiben von Protokollen in S3 führen, sobald die Funktion aktiviert/deaktiviert wird.  Weitere Informationen dazu, warum dieses Verhalten existiert, finden Sie [hier](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+>In S3 werden regelmäßig alle 10 Minuten für jeden Protokolldateityp Protokolle geschrieben.  Dies kann zu einer anfänglichen Verzögerung für das Schreiben von Protokollen in S3 führen, sobald die Funktion aktiviert/deaktiviert wird.  [Weitere Informationen zu diesem Verhalten](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-Um die S3-Protokollweiterleitung zu verwenden, müssen Sie einen AWS IAM-Benutzer mit der entsprechenden Richtlinie für den Zugriff auf Ihren S3-Bucket vorkonfigurieren.  Siehe [hier](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) für die Erstellung von IAM-Benutzeranmeldeinformationen.
+Um die S3-Protokollweiterleitung zu verwenden, müssen Sie einen AWS IAM-Benutzer mit der entsprechenden Richtlinie für den Zugriff auf Ihren S3-Bucket vorkonfigurieren.  Wie Sie IAM-Benutzeranmeldeinformationen erstellen, erfahren Sie [ der ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)AWS IAM-Benutzerdokumentation.
 
 Die IAM-Richtlinie sollte es dem Benutzer ermöglichen, `s3:putObject` zu verwenden.  Zum Beispiel:
 
@@ -228,7 +316,7 @@ Die IAM-Richtlinie sollte es dem Benutzer ermöglichen, `s3:putObject` zu verwen
 }
 ```
 
-Weitere Informationen [ Implementierung der Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)Richtlinie von AWS finden Sie hier.
+Weitere Informationen zur Implementierung finden Sie in [ Dokumentation zur AWS-Bucket-Richtlinie .](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
 
 ### Azure Blob Storage {#azureblob}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-Überlegungen:
+#### Überlegungen
 
 * Erstellen Sie einen API-Schlüssel ohne Integration mit einem bestimmten Cloud-Anbieter.
 * Die Tag-Eigenschaft ist optional
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-Überlegungen:
+#### Überlegungen
 
 * Standardmäßig ist der Port 443. Optional kann sie mit einer Eigenschaft namens `port` überschrieben werden
 * Verwenden Sie für die Anmeldeinformationen Bereitstellungs-Anmeldeinformationen und keine Konto-Anmeldeinformationen. Dies sind die Anmeldeinformationen, die auf einem Bildschirm generiert werden, der diesem Bild ähneln kann:
@@ -378,17 +466,10 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-Überlegungen:
+#### Überlegungen
 
 * Die URL-Zeichenfolge muss **https://** enthalten. Andernfalls schlägt die Validierung fehl.
 * Die URL kann einen Port enthalten. Beispiel: `https://example.com:8443/aem_logs/aem`. Wenn in der URL-Zeichenfolge kein Port enthalten ist, wird Port 443 (der standardmäßige HTTPS-Port) angenommen.
-
-#### New Relic-Protokoll-API {#newrelic-https}
-
-aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
-
->[!NOTE]
->New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Siehe [hier](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) für die Dokumentation zu New Relic.
 
 #### HTTPS-CDN-Protokolle {#https-cdn}
 
@@ -413,6 +494,52 @@ Es gibt auch eine Eigenschaft mit dem Namen `Source-Type`, die auf einen der fol
 * aemhttpdaccess
 * aemhttpderror
 
+### New Relic-Protokoll-API {#newrelic-https}
+
+Die Protokollweiterleitung an New Relic nutzt die New Relic HTTPS-API für die Aufnahme.  Derzeit werden nur Protokolle von AEM und Dispatcher unterstützt. CDN-Protokolle werden noch nicht unterstützt.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
+>
+>aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+>
+>New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [ zu ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)New Relic .
+
+### Dynatrace-Protokoll-API {#dynatrace-https}
+
+Die Protokollweiterleitung an Dynatrace nutzt die Dynatrace HTTPS-API für die Aufnahme.  Derzeit werden nur Protokolle von AEM und Dispatcher unterstützt. CDN-Protokolle werden noch nicht unterstützt.
+
+Das Bereichsattribut „Protokolle aufnehmen“ ist für das Token erforderlich.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+
 ### Splunk {#splunk}
 
 ```yaml
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-Überlegungen:
+#### Überlegungen
 
 * Standardmäßig ist der Port 443. Optional kann sie mit einer Eigenschaft namens `port` überschrieben werden.
 * Das Feld „sourceType“ hat abhängig vom spezifischen Protokoll einen der folgenden Werte: *aemaccess*, *aemerror*,
@@ -441,6 +568,8 @@ data:
 > [Bei der Migration](#legacy-migration) von der alten Protokollweiterleitung zu diesem Self-Service-Modell haben sich die Werte des `sourcetype`-Felds, die an Ihren Splunk-Index gesendet werden, möglicherweise geändert. Passen Sie sie daher entsprechend an.
 
 ### Sumo Logic {#sumologic}
+
+Die Protokollweiterleitung an Sumo Logic unterstützt AEM- und Dispatcher-Protokolle; CDN-Protokolle werden noch nicht unterstützt.
 
 Bei der Konfiguration der Sumo-Logik für die Datenaufnahme erhalten Sie eine „HTTP-Source-Adresse“, die den Host, den Receiver-URI und den privaten Schlüssel in einer einzigen Zeichenfolge bereitstellt.  Zum Beispiel:
 
