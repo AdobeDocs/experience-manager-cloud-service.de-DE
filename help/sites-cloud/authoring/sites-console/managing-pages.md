@@ -5,10 +5,10 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1271'
-ht-degree: 100%
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+workflow-type: tm+mt
+source-wordcount: '1329'
+ht-degree: 94%
 
 ---
 
@@ -106,7 +106,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    ![Schaltfläche „Verschieben“](/help/sites-cloud/authoring/assets/move.png)
 
-1. Im Schritt **Umbenennen** des Assistenten haben Sie folgende Möglichkeiten:
+1. Der Schritt **Umbenennen** des Assistenten liefert **Informationen** zur Seite einschließlich Erstellungsdatum, Pfad und Anzahl der direkten Verweise. Von hier aus haben Sie folgende Möglichkeiten:
 
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und wählen Sie dann **Weiter**, um fortzufahren.
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
@@ -144,7 +144,8 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    >[!NOTE]
    >
-   >Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
+   >* Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
+   >* Dieser Schritt listet sowohl direkte als auch indirekte Referenzen auf. Dies kann sich von der Menge unterscheiden, die im **Umbenennen** des Assistenten sowie von den in der Leiste „Verweise“ gemeldeten Verweisen gemeldet wird, die beide aus Leistungsgründen nur direkte Verweise melden.
 
    ![Erneutes Veröffentlichen einer Seite nach Verschiebung](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
