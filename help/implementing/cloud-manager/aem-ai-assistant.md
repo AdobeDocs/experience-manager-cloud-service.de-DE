@@ -81,7 +81,7 @@ Administratoren sollten die normale Cloud Manager-Governance im Auge behalten. S
 
 ![Erstellung von Tickets für den technischen Support im AEM AI Assistant der Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-Eine Anleitung zum Einrichten von Benutzenden und Gruppen in AEM as a Cloud Service finden Sie unter [Zugriff auf AEM as a Cloud Service konfigurieren](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview).
+Eine Anleitung zum Einrichten von Benutzenden und Gruppen in AEM as a Cloud Service finden Sie unter [Zugriff auf AEM as a Cloud Service konfigurieren](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview).
 
 Siehe auch [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 
