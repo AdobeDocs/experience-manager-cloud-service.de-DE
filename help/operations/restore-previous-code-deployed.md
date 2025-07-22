@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '504'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Die in diesem Artikel beschriebene Funktion ist nur über das Early-Adopter-Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>Die in diesem Artikel beschriebene Funktion ist nur über das Alpha-Programm verfügbar. Informationen zum Anmelden bei der Alpha-Version finden Sie unter [1-Klick-Rollback für Pipeline-Bereitstellungen](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Verwenden Sie **vorherigen Code bereitstellen** um eine Umgebung sofort auf den letzten erfolgreichen Build zurückzusetzen - keine Pipeline-Ausführung erforderlich.
 
@@ -31,7 +31,7 @@ Sie öffnen einfach das Menü der ausgewählten Umgebung ![Mehr-Symbol oder ](ht
 Die Funktion **Vorherigen Code bereitgestellt** wiederherstellen“ ist nur verfügbar, wenn **alle** Bedingungen unten erfüllt sind:
 
 * Sie verfügen über **Berechtigungen zum Erstellen der**). Weitere Informationen über die Verwaltung von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
-* Ihre Organisation ist für das Early-Adopter-Programm registriert und das Feature Flag ist aktiviert.
+* Ihre Organisation ist für das Alpha-Programm registriert und das Feature Flag ist aktiviert.
 * Das Programm läuft auf AEM as a Cloud Service.
 * Die ausgewählte Umgebung ist eine `Development` Umgebung (temporäres Alpha-Limit).
 * Die letzte Pipeline für diese Umgebung wurde erfolgreich abgeschlossen und wurde vor **als 30** ausgeführt.
