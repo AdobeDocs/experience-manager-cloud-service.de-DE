@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 13124956fcce105ad42767f67b700284c8250012
+source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '622'
 ht-degree: 34%
 
 ---
@@ -61,7 +61,7 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * CQ-4359863: Die Tag-Suche funktioniert nicht ordnungsgemäß, wenn Schlüsselwörter im Inhaltsfragment-Editor/Asset-Editor nicht korrekt geordnet sind.
 * CQ-4359958: Machen Sie die OpenAPI-Unterstützung mit AEM 6.5.22.0 und höher kompatibel.
 * CQ-4360256: Fügen Sie den Servlet-Kontextpfad in den Anfragepfad für HTTP-Anfragen ein, die über den `/adobe` Servlet-Kontext verarbeitet werden.
-* CQ-4360317: Fügen Sie eine Methode zum Festlegen der Kopfzeile für das Datum des Sonnenuntergangs beim Erstellen von Antworten hinzu.
+* CQ-4360317: Fügen Sie eine Methode zum Festlegen der Kopfzeile für das Ablaufdatum hinzu, wenn Sie Antworten erstellen.
 * GRANITE-60311: AEM SDK QuickStart - NPE zu „OSGi Installer Configuration Printer“.
 * GS-15285: Benutzer werden als deaktiviert angezeigt.
 
@@ -81,7 +81,7 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM Oak | 1.80.0 | [Oak-API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
+| AEM Oak | 1.80.0 | [Oak-API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | Apache HTTP-Server | 2.4.63 | [Apache httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
