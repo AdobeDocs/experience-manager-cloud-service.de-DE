@@ -7,14 +7,14 @@ role: Admin
 source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 46%
+ht-degree: 93%
 
 ---
 
 
 # Wiederherstellen von Inhalten in AEM as a Cloud Service {#content-restore}
 
-Sie können Ihren AEM as a Cloud Service-Inhalt mithilfe von Cloud Manager aus einer Sicherung wiederherstellen.
+Sie können mithilfe von Cloud Manager Inhalte von AEM as a Cloud Service aus einem Backup wiederherstellen.
 
 ## Überblick {#overview}
 
@@ -24,7 +24,7 @@ Der Wiederherstellungsprozess wirkt sich nur auf die Inhalte aus, sodass Ihr Cod
 
 Cloud Manager bietet zwei Arten von Sicherungskopien, mit denen Sie Inhalte wiederherstellen können.
 
-* **Point-in-Time (PIT):** Mit dieser Option werden kontinuierliche Backups wiederhergestellt, die innerhalb der letzten 24 Stunden erfasst wurden.
+* **Zeitpunkt:** Mit dieser Option werden kontinuierliche Backups wiederhergestellt, die innerhalb der letzten 24 Stunden erfasst wurden.
 * **Letzte Woche**: Bei diesem Typ wird aus den Systemsicherungen der letzten sieben Tage vor den letzten 24 Stunden wiederhergestellt.
 
 In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und Ihre Version von AEM unverändert.
@@ -35,11 +35,11 @@ In beiden Fällen bleiben die Version Ihres benutzerspezifischen Codes und Ihre 
 
 >[!WARNING]
 >
->* Diese Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind. 
->* Beim Wiederherstellen eines Backups werden alle Daten gelöscht, die nach diesem Backup hinzugefügt wurden. Die Staging-Umgebung kehrt ebenfalls zur vorherigen Version zurück.
+>* Diese Funktion sollte nur verwendet werden, wenn schwerwiegende Probleme mit Code oder Inhalt aufgetreten sind.
+>* Beim Wiederherstellen eines Backups werden alle Daten gelöscht, die nach diesem Backup hinzugefügt wurden. Staging wird ebenfalls auf die vorherige Version zurückgesetzt.
 >* Bevor Sie eine Inhaltswiederherstellung starten, sollten Sie andere Optionen zur selektiven Inhaltswiederherstellung in Betracht ziehen.
 
-## Optionen zur selektiven Wiederherstellung von Inhalten {#selective-options}
+## Optionen zur selektiven Inhaltswiederherstellung {#selective-options}
 
 Bevor Sie eine vollständige Inhaltswiederherstellung vornehmen, sollten Sie diese Optionen in Erwägung ziehen, um Ihre Inhalte leichter wiederherzustellen.
 
@@ -50,16 +50,16 @@ Bevor Sie eine vollständige Inhaltswiederherstellung vornehmen, sollten Sie die
 
 Wenn keine der oben genannten Optionen funktioniert und der Inhalt des gelöschten Pfads signifikant ist, führen Sie eine Inhaltswiederherstellung durch, wie in den folgenden Abschnitten beschrieben.
 
-## Benutzerrolle erstellen {#user-role}
+## Erstellen einer Benutzerrolle {#user-role}
 
-Standardmäßig hat kein Benutzer die Berechtigung, Inhaltswiederherstellungen in Entwicklungs-, Produktions- oder Staging-Umgebungen auszuführen. Um diese Berechtigung an bestimmte Benutzer oder Gruppen zu delegieren, führen Sie die folgenden allgemeinen Schritte aus.
+Standardmäßig ist keine Benutzerin und kein Benutzer berechtigt, Inhaltswiederherstellungen in der Entwicklungs-, Produktions- oder Staging-Umgebung auszuführen. Um diese Berechtigung an bestimmte Benutzende oder Gruppen zu delegieren, führen Sie die folgenden allgemeinen Schritte aus.
 
 1. Erstellen Sie ein Produktprofil mit einem ausdrucksstarken Namen, der auf die Inhaltswiederherstellung verweist.
 1. Stellen Sie die **Programmzugriff**-Berechtigung für das erforderliche Programm bereit.
 1. Stellen Sie die Berechtigung **Umgebungswiederherstellung erstellen** je nach Anwendungsfall für die erforderliche Umgebung oder für alle Umgebungen des Programms bereit.
-1. Weisen Sie diesem Profil Benutzer zu.
+1. Weisen Sie dem Profil Benutzende zu.
 
-Weitere Informationen über die Verwaltung von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
+Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## Wiederherstellen des Inhalts einer Umgebung {#restoring-content}
 
@@ -73,60 +73,60 @@ Weitere Informationen über die Verwaltung von Berechtigungen finden Sie unter [
 
 1. Klicken Sie auf das Programm, für das Sie eine Wiederherstellung einleiten möchten.
 
-1. Führen Sie eine der folgenden Aktionen aus, um alle Umgebungen für das Programm aufzulisten:
+1. Führen Sie einen der folgenden Schritte aus, um alle Umgebungen für das Programm aufzulisten:
 
-   * Klicken Sie im linken Menü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
+   * Klicken Sie im linken Seitenmenü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
 
      ![Registerkarte „Umgebungen“](assets/environments-1.png)
 
-   * Klicken Sie im linken Menü unter **Programm** auf **Übersicht** und dann auf der Karte **Umgebungen** auf ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Alle anzeigen**.
+   * Klicken Sie im linken Seitenmenü unter **Programm** auf **Überblick** und dann auf der Karte **Umgebungen** auf ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Alle anzeigen**.
 
      ![Option „Alle anzeigen“](assets/environments-2.png)
 
      >[!NOTE]
      >
-     >Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie **der Karte** Alle anzeigen“, um *alle* Umgebungen des Programms anzuzeigen.
+     >Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf der Karte auf **Alle anzeigen**, um *alle* Umgebungen des Programms anzuzeigen.
 
 1. Klicken Sie in der Tabelle Umgebungen rechts neben einer Umgebung, deren Inhalt Sie wiederherstellen möchten, auf ![Mehr-Symbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)-Symbol) und dann auf **Inhalt wiederherstellen**.
 
-   ![Option „Inhalt wiederherstellen“ über das Menü mit den Auslassungspunkten](/help/operations/assets/environments-ellipsis-menu.png)
+   ![Option „Content wiederherstellen“ über das Menü mit den Auslassungspunkten](/help/operations/assets/environments-ellipsis-menu.png)
 
-1. Wählen Sie auf der Registerkarte **Inhalt wiederherstellen** der Seite der Umgebung in **Dropdown-Liste Wiederherstellungszeit** den Zeitrahmen der Wiederherstellung aus.
+1. Wählen Sie in der Dropdown-Liste **Wiederherstellungszeit** auf der Registerkarte **Content wiederherstellen** der Seite der Umgebung den Zeitrahmen der Wiederherstellung aus.
 
-   ![Registerkarte „Inhalt wiederherstellen“ einer Umgebung](/help/operations/assets/environments-content-restore-tab.png)
+   ![Registerkarte „Content wiederherstellen“ einer Umgebung](/help/operations/assets/environments-content-restore-tab.png)
 
-   * Wenn Sie **Letzte 24 Stunden** im angrenzenden Feld **Zeit** ausgewählt haben, geben Sie den genauen Zeitpunkt innerhalb der letzten 24 Stunden für die Wiederherstellung an.
-   * Wenn Sie **Letzte Woche** im angrenzenden Feld **Tag** auswählen, wählen Sie ein Datum innerhalb der letzten sieben Tage aus, wobei die letzten 24 Stunden ausgeschlossen sind.
+   * Wenn Sie **Letzte 24 Stunden** ausgewählt haben, können Sie im angrenzenden Feld **Zeit** den genauen Zeitpunkt innerhalb der letzten 24 Stunden für die Wiederherstellung angeben.
+   * Wenn Sie **Letzte Woche** ausgewählt haben, können Sie im angrenzenden Feld **Tag** ein Datum innerhalb der letzten sieben Tage auswählen, wobei die vergangenen 24 Stunden ausgeschlossen sind.
 
 1. Sobald Sie ein Datum oder eine Uhrzeit ausgewählt haben, zeigt der Abschnitt **Verfügbare Sicherungskopien** unten eine Liste der verfügbaren Sicherungskopien, die wiederhergestellt werden können
 
-1. Klicken Sie auf ![Informationssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) neben einem Backup, um dessen Code-Version und AEM-Version anzuzeigen, und wiegen Sie dann die Auswirkungen auf die Wiederherstellung, bevor Sie ein Backup auswählen (siehe [Auswahl des richtigen Backups](#choosing-backup)).
+1. Klicken Sie auf ![Informationssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) neben einem Backup, um dessen Code-Version und AEM-Version anzuzeigen, und wägen Sie dann die Auswirkungen der Wiederherstellung ab, bevor Sie ein Backup auswählen (siehe [Auswählen des richtigen Backups](#choosing-backup)).
 
    ![Sicherungsinformationen](assets/backup-info.png)
 
-   Der für die Wiederherstellungsoptionen angezeigte Zeitstempel basiert auf der Zeitzone des Computers des Benutzers.
+   Der für die Wiederherstellungsoptionen angezeigte Zeitstempel basiert auf der Zeitzone, in der sich der Computer der oder des Benutzenden befindet.
 
-1. Klicken Sie am rechten Ende der Zeile, die die wiederherzustellende Sicherungskopie darstellt, auf ![Rotieren von CCW fett oder Wiederherstellen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RotateCCWBold_18_N.svg), um den Wiederherstellungsprozess zu starten.
+1. Klicken Sie am rechten Ende der Zeile, die das wiederherzustellende Backup darstellt, auf ![„CCW drehen“ oder „Wiederherstellen“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RotateCCWBold_18_N.svg), um den Wiederherstellungsprozess zu starten.
 
-1. Überprüfen Sie die Details im Dialogfeld **Inhalt wiederherstellen** und klicken Sie dann auf **Wiederherstellen**.
+1. Überprüfen Sie die Details im Dialogfeld **Content wiederherstellen** und klicken Sie dann auf **Wiederherstellen**.
 
    ![Wiederherstellen bestätigen](assets/backup-restore.png)
 
-Der Sicherungsprozess wird gestartet. Sie können den Status der Aktivität in der Liste **[Aktivität wiederherstellen](#restore-activity)** anzeigen. Die Dauer des Wiederherstellungsvorgangs hängt von der Größe und dem Profil des wiederherzustellenden Inhalts ab.
+Der Backup-Prozess wird gestartet. Sie können den Status der Aktivität in der Liste **[Wiederherstellungsaktivität](#restore-activity)** anzeigen. Die Dauer des Wiederherstellungsvorgangs hängt von der Größe und dem Profil des wiederherzustellenden Inhalts ab.
 
-Wenn die Wiederherstellung erfolgreich abgeschlossen wurde, führt die Umgebung Folgendes aus:
+Wenn die Wiederherstellung erfolgreich abgeschlossen ist, führt die Umgebung Folgendes aus:
 
-* Führt denselben Code und dieselbe AEM-Version aus wie zum Zeitpunkt der Initiierung des Wiederherstellungsvorgangs.
-* Er enthält denselben Inhalt, der zum Zeitstempel des ausgewählten Snapshots verfügbar war, wobei die Indizes neu erstellt wurden, damit sie dem aktuellen Code entsprechen.
+* Sie führt denselben Code und dieselbe AEM-Version aus wie zum Zeitpunkt der Initiierung des Wiederherstellungsvorgangs.
+* Sie verfügt über denselben Inhalt, der beim Zeitstempel des ausgewählten Snapshots verfügbar war, wobei die Indizes neu erstellt wurden, damit sie dem aktuellen Code entsprechen.
 
-## Auswahl der richtigen Sicherungskopie {#choosing-backup}
+## Auswählen des richtigen Backups {#choosing-backup}
 
-Der Self-Service-Wiederherstellungsprozess von Cloud Manager stellt nur Inhalte in AEM wieder her. Aus diesem Grund müssen Sie Code-Änderungen, die zwischen dem gewünschten Wiederherstellungspunkt und der aktuellen Zeit vorgenommen wurden, sorgfältig prüfen. Überprüfen Sie den Commit-Verlauf zwischen der aktuellen Commit-ID und der ID, zu der wiederhergestellt wird.
+Der Self-Service-Wiederherstellungsprozess von Cloud Manager stellt nur Inhalte in AEM wieder her. Aus diesem Grund müssen Sie Code-Änderungen sorgfältig prüfen, die zwischen dem gewünschten Wiederherstellungszeitpunkt und der aktuellen Zeit vorgenommen wurden. Überprüfen Sie den Commit-Verlauf zwischen der aktuellen Commit-ID und der ID, zu der wiederhergestellt wird.
 
 Es gibt verschiedene Szenarien.
 
 * Der benutzerdefinierte Umgebungs-Code und die Wiederherstellung befinden sich im selben Repository und in derselben Verzweigung.
-* Der benutzerdefinierte Code der Umgebung und die Wiederherstellung teilen sich ein Repository, verwenden eine separate Verzweigung und stammen aus einem gemeinsamen Commit.
+* Der benutzerdefinierte Umgebungs-Code und die Wiederherstellung teilen sich ein Repository, verwenden eine separate Verzweigung und stammen aus einem gemeinsamen Commit.
 * Der benutzerdefinierte Umgebungs-Code und die Wiederherstellung befinden sich in verschiedenen Repositorys.
    * In diesem Fall wird keine Commit-ID angezeigt.
    * Adobe empfiehlt dringend, beide Repositorys zu klonen und ein Vergleichs-Tool zu verwenden, um die Verzweigungen zu vergleichen.
@@ -139,15 +139,15 @@ Die Tabelle **Wiederherstellungsaktivität** zeigt den Status der zehn letzten W
 
 ![Wiederherstellungsaktivität](assets/backup-activity.png)
 
-Durch Klicken auf ![Informationssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) für ein Backup können Sie Protokolle für dieses Backup herunterladen und die Code-Details einschließlich der Unterschiede zwischen dem Snapshot und den Daten zum Zeitpunkt der Wiederherstellung überprüfen.
+Wenn Sie auf ![Informationssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) für ein Backup klicken, können Sie Protokolle für dieses Backup herunterladen und die Code-Details einschließlich der Unterschiede zwischen dem Snapshot und den Daten zum Zeitpunkt der Wiederherstellung überprüfen.
 
-## Offsite-Sicherung {#offsite-backup}
+## Offsite-Backup {#offsite-backup}
 
 Regelmäßige Backups decken das Risiko von versehentlichen Löschungen oder technischen Fehlern in AEM Cloud Services ab, aber es können zusätzliche Risiken durch das Fehlschlagen bezüglich einer Region entstehen. Neben der Verfügbarkeit besteht das größte Risiko bei Ausfällen in solchen Regionen in erster Linie in Datenverlust.
 
-AEM as a Cloud Service mindert dieses Risiko für alle AEM-Produktionsumgebungen. Das heißt, es kopiert kontinuierlich alle AEM-Inhalte in eine Remote-Region. Durch diesen Prozess steht der Inhalt drei Monate lang zur Wiederherstellung zur Verfügung. Diese Funktion wird als Offsite-Backup bezeichnet.
+AEM as a Cloud Service mindert dieses Risiko für alle AEM-Produktionsumgebungen. Das heißt, dass alle AEM-Inhalte kontinuierlich in eine Remote-Region kopiert werden. Durch diesen Prozess steht der Inhalt drei Monate lang zur Wiederherstellung zur Verfügung. Diese Funktion wird als Offsite-Backup bezeichnet.
 
-AEM Service Reliability Engineering stellt Staging- und Produktionsumgebungen in AEM Cloud Service von Offsite-Backups während Ausfällen in der Datenregion wieder her.
+AEM Service Reliability Engineering stellt während Ausfällen in der Datenregion die Staging- und Produktionsumgebung in AEM Cloud Service von Offsite-Backups wieder her.
 
 ## Einschränkungen {#limitations}
 
@@ -156,7 +156,7 @@ Die Verwendung des Self-Service-Wiederherstellungsmechanismus unterliegt den fol
 * Wiederherstellungsvorgänge sind auf sieben Tage beschränkt, d. h. es ist nicht möglich, einen Snapshot wiederherzustellen, der älter als sieben Tage ist.
 * Pro Kalendermonat sind maximal zehn erfolgreiche Wiederherstellungen in allen Umgebungen eines Programms zulässig.
 * Nach der Erstellung der Umgebung dauert es sechs Stunden, bis der erste Snapshot für die Sicherung erstellt wird. Solange dieser Snapshot nicht erstellt ist, kann keine Wiederherstellung in der Umgebung durchgeführt werden.
-* Ein Wiederherstellungsvorgang wird nicht initiiert, wenn derzeit eine Konfigurations-Pipeline für den Full-Stack oder die Web-Stufe für die Umgebung ausgeführt wird.
+* Ein Wiederherstellungsvorgang wird nicht initiiert, wenn gerade eine Konfigurations-Pipeline (Full-Stack oder Web-Stufe) für die Umgebung ausgeführt wird.
 * Eine Wiederherstellung kann nicht initiiert werden, wenn bereits eine andere Wiederherstellung in derselben Umgebung ausgeführt wird.
 * In seltenen Fällen kann es vorkommen, dass aufgrund der Beschränkung von 24 Stunden bzw. 7 Tagen für Sicherungskopien die ausgewählte Sicherungskopie aufgrund einer Verzögerung zwischen dem Zeitpunkt der Auswahl und dem Beginn der Wiederherstellung nicht mehr verfügbar ist.
 * Daten gelöschter Umgebungen sind dauerhaft verloren und können nicht wiederhergestellt werden.

@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
 source-wordcount: '2488'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -134,21 +134,21 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
-1. Klicken Sie in **[Konsole](/help/implementing/cloud-manager/navigation.md#my-programs)** Meine Programme“ auf das Programm, für das Sie Details zu einer Umgebung anzeigen möchten.
+1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das Sie Umgebungsdetails anzeigen möchten.
 
-1. Führen Sie eine der folgenden Aktionen aus, um alle Umgebungen für das Programm aufzulisten:
+1. Führen Sie einen der folgenden Schritte aus, um alle Umgebungen für das Programm aufzulisten:
 
-   * Klicken Sie im linken Menü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
+   * Klicken Sie im linken Seitenmenü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
 
    ![Registerkarte „Umgebungen“](assets/environments-1.png)
 
-   * Klicken Sie im linken Menü unter **Programm** auf **Übersicht** und dann auf der Karte **Umgebungen** auf ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Alle anzeigen**.
+   * Klicken Sie im linken Seitenmenü unter **Programm** auf **Überblick** und dann auf der Karte **Umgebungen** auf ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Alle anzeigen**.
 
      ![Option „Alle anzeigen“](assets/environments-2.png)
 
    >[!NOTE]
    >
-   >Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie **der Karte** Alle anzeigen“, um *alle* Umgebungen des Programms anzuzeigen.
+   >Die Karte **Umgebungen** listet nur drei Umgebungen auf. Klicken Sie auf der Karte auf **Alle anzeigen**, um *alle* Umgebungen des Programms anzuzeigen.
 
 1. Führen Sie auf der Seite „Umgebungen“ eine der folgenden Schritte aus:
 
@@ -165,7 +165,7 @@ Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-net
 
 Siehe [Inhalt in AEM as a Cloud Service wiederherstellen](/help/operations/restore.md).
 
-## Wiederherstellen des bereitgestellten vorherigen Codes {#restore-previous-code-deployed}
+## Zuvor bereitgestellten Code wiederherstellen {#restore-previous-code-deployed}
 
 Siehe [Wiederherstellen von vorherigem in AEM as a Cloud Service bereitgestelltem Code](/help/operations/restore-previous-code-deployed.md).
 

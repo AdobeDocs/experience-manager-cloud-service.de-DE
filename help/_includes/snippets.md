@@ -2,7 +2,7 @@
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 # Snippets {#snippets}
@@ -113,7 +113,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    <tr>
     <td>ES2022-Unterstützung </td>
     <td>ES2022 wird noch nicht unterstützt. Die Unterstützung ist auf ES5 JavaScript-Funktionen beschränkt. </td>
-    <td>Unterstützung für moderne JavaScript-Funktionen, z. B. Links- und Pfeilfunktionen, bis ES2022, ist in benutzerdefinierten Funktionen verfügbar. 
+    <td>Unterstützung für moderne JavaScript-Funktionen, z. B. let-Funktionen und Pfeilfunktionen, bis ES2022, ist in benutzerdefinierten Funktionen verfügbar. 
    </td>
    </tr>
    </tr>
@@ -169,11 +169,11 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!IMPORTANT]
 >
 >Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste vorab zu Cloud Manager hinzugefügt wird.
->&#x200B;>[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
->&#x200B;>Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
+>>[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
+>>Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
 >
 >**Cloud Manager-IP-Zulassungsliste**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Hinzufügen von Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!IMPORTANT]
 >
 >Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden bzw. verwenden möchten, muss zuvor die Cloud Manager-IP-Zulassungsliste hinzugefügt werden.
->&#x200B;>Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>>Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## IP-Zulassungslisten und der universelle Editor {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 
