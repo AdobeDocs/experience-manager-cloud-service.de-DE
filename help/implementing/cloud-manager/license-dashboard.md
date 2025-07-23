@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Aufschlüsselung d
 
 Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Wenn Sie den Mauszeiger darüber bewegen, wird ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt angezeigt.
 
-In der rechten oberen Ecke der Dashboard-Seite können Sie auf **Bericht herunterladen** klicken, um die Daten als CSV-Datei zu exportieren. Dieser Download vereinfacht die Analyse und Freigabe von Nutzungstrends.
+In der rechten oberen Ecke der Dashboard-Seite können Sie auf **Bericht herunterladen** klicken, um die Daten als CSV-Datei zu exportieren. Dieser Download vereinfacht die Analyse und Freigabe von Nutzungs-Trends.
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}

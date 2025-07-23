@@ -7,9 +7,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
 source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -119,12 +119,12 @@ Sie können ein schemabasiertes Formularfragment mehrfach in einem adaptiven For
 
 ![Verwenden mehrerer Fragmente in einem adaptiven Formular](/help/forms/assets/using-multiple-fragment-af.gif)
 
-## Unterstützung der automatischen Zuordnung für Fragmente in einem adaptiven Formular
+## Unterstützung der automatischen Zuordnung von Fragmenten in einem adaptiven Formular
 
-Wenn Sie ein adaptives Formularfragment erstellen, das auf einer JSON-Schemadefinition basiert, kann es automatisch in Formularen wiederverwendet werden, die aus demselben Schema erstellt wurden.
-Wenn Sie ein Schemaobjekt oder verschachtelte Objekte, die der JSON-Schemadefinitionszuordnung eines adaptiven Formularfragments entsprechen, per Drag-and-Drop verschieben, wird das Objekt durch das entsprechende adaptive Formularfragment ersetzt. Anstatt ein Bedienfeld mit einzelnen Feldern hinzuzufügen, fügt das Formular das zugeordnete adaptive Formularfragment ein.
+Wenn Sie ein Fragment für ein adaptives Formular erstellen, das auf einer JSON-Schemadefinition basiert, kann es automatisch in Formularen wiederverwendet werden, die aus demselben Schema erstellt wurden.
+Wenn Sie ein Schemaobjekt oder verschachtelte Objekte, das bzw. die der JSON-Schemadefinitionszuordnung eines adaptiven Formularfragments entsprechen, per Drag-and-Drop verschieben, wird das Objekt durch das entsprechende adaptive Formularfragment ersetzt. Anstatt ein Panel mit einzelnen Feldern hinzuzufügen, fügt das Formular das zugeordnete adaptive Formularfragment ein.
 
-![Fragment per Drag-and-Drop verschieben](/help/forms/assets/fragment.png)
+![Verschieben eines Fragments per Drag-and-Drop](/help/forms/assets/fragment.png)
 
 Sie können auch per Drag-and-Drop ein gebundenes adaptives Formularfragment aus der adaptiven Formularfragment-Bibliothek in der AEM-Inhaltssuche ziehen und den richtigen Bindungsverweis aus dem Dialogfeld „Komponente bearbeiten“ des Bereichs „Adaptives Formularfragment“ angeben.
 

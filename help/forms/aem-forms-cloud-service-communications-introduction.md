@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2663'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-clou
 
 ## Dokumenterstellung
 
-APIs zur Generierung von Kommunikationsdokumenten helfen Ihnen, eine Vorlage (XFA oder PDF) mit Kundendaten (XML) zu kombinieren, um Dokumente in den Formaten PDF, AFP (Advanced Function Presentation) und Druckformate wie PS, PCL, DPL, IPL und ZPL zu generieren. Diese APIs verwenden PDF- und XFA-Vorlagen mit [XML-Daten](communications-known-issues-limitations.md#form-data) um bei Bedarf ein einzelnes Dokument oder mehrere Dokumente mithilfe eines Batch-Vorgangs zu generieren.
+APIs zur Erstellung von Kommunikationsdokumenten ermöglichen es Ihnen, durch die Kombination einer Vorlage (XFA oder PDF) mit Kundendaten (XML-Daten) Dokumente in PDF- und AFP-Formaten (Advanced Function Presentation) sowie Druckformaten wie PS, PCL, DPL, IPL und ZPL zu erstellen. Diese APIs verwenden PDF- und XFA-Vorlagen mit [XML-Daten](communications-known-issues-limitations.md#form-data), um auf Anfrage ein einzelnes Dokument oder mehrere Dokumente mithilfe eines Batch-Auftrags zu generieren.
 
 Normalerweise erstellen Sie eine Vorlage mit [Designer](use-forms-designer.md) und verwenden Communications-APIs, um Daten mit der Vorlage zusammenzuführen. Ihr Programm kann das Ausgabedokument zur Archivierung an einen Netzwerkdrucker, einen lokalen Drucker oder an ein Speichersystem senden. Typische vorkonfigurierte und benutzerdefinierte Workflows sehen wie folgt aus:
 
@@ -56,26 +56,26 @@ Je nach Anwendungsfall können Sie diese Dokumente auch über Ihre Website oder 
 
 #### Erstellen von Dokumenten in elektronischen PDF/AFP-Formaten
 
-Sie können die APIs zur Dokumenterstellung verwenden, um ein Dokument im PDF- oder AFP-Format zu erstellen, das auf einem Formularentwurf und XML-Formulardaten basiert. Die Ausgabe ist ein nicht interaktives Dokument. Das heißt, Benutzer können keine Formulardaten eingeben oder ändern. Ein einfacher Workflow besteht darin, XML-Formulardaten mit einem Formularentwurf zusammenzuführen, um ein Dokument zu erstellen. Die folgende Abbildung zeigt die Zusammenführung von Formular-Designs und XML-Formulardaten zur Erstellung eines PDF-Dokuments.
+Sie können das API zur Dokumentenerstellung verwenden, um ein Dokument in PDF- oder AFP-Format zu erstellen, das auf einem Formular-Design und XML-Formulardaten basiert. Die Ausgabe ist ein nicht interaktives Dokument. Das heißt, Benutzende können keine Formulardaten eingeben oder ändern. Ein einfacher Workflow besteht darin, XML-Formulardaten mit einem Formular-Design zusammenzuführen, um ein Dokument zu erstellen. Die folgende Abbildung zeigt die Zusammenführung von Formular-Designs und XML-Formulardaten zur Erstellung eines PDF-Dokuments.
 
 ![Erstellen von PDF-Dokumenten](assets/outPutPDF_popup.png)
 Abbildung: Typischer Workflow zum Erstellen eines Dokuments
 
-In der folgenden Tabelle wird der Unterschied zwischen dem AFP- und dem PDF-Format angezeigt:
+In der folgenden Tabelle wird der Unterschied zwischen dem AFP- und PDF-Format angezeigt:
 
 | **Funktion** | **AFP (Advanced Function Presentation)** | **PDF (Portable Document Format)** |
 |---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
 | **Zweck** | Drucken großer Mengen und Erstellen von Transaktionsdokumenten | Freigeben und Anzeigen von Dokumenten für allgemeine Zwecke |
-| **Nutzungsszenario** | Bankauszüge, Rechnungen, Rechnungen, Versicherungsdokumente | E-Books, Formulare, Berichte, Lebensläufe, Handbücher |
-| **Platform-Herkunft** | Entwickelt von IBM | Entwickelt von Adobe |
+| **Anwendungsfall** | Kontoauszüge, Rechnungen, Belege, Versicherungsunterlagen | E-Books, Formulare, Berichte, Lebensläufe, Handbücher |
+| **Plattform-Ursprung** | Entwickelt von IBM | Entwickelt von Adobe |
 | **Struktur** | Seitenorientiertes Format mit strukturierten Feldern und Objekten | Seitenorientiert, aber mit festem Layout |
-| **Bearbeitbarkeit** | Entwickelt für den Produktionsdruck und wird selten bearbeitet | Kann mit verschiedenen Tools bearbeitet werden, z. B. Adobe Acrobat |
-| **Dateigröße und Leistung** | Optimiert für Leistung in schnellen Druckumgebungen | Größer und für die Massenausgabe weniger optimiert sein |
+| **Editierbarkeit** | Entwickelt für den Produktionsdruck und wird selten bearbeitet | Kann mit verschiedenen Tools bearbeitet werden, z. B. Adobe Acrobat |
+| **Dateigröße und Leistung** | Optimiert für Leistung in Schnelldruckumgebungen | Kann größer und weniger für die Massenausgabe optimiert sein |
 | **Interaktivität** | Minimal bis keine; statische Seiten | Unterstützt interaktive Elemente wie Formulare, Links und JavaScript |
-| **Ausgabesteuerung** | Fein abgestimmte Steuerung des Layouts für Drucker | Visuelles Layout optimiert für Bildschirm und Druck |
+| **Ausgabesteuerung** | Fein abgestimmte Steuerung des Layouts für Drucker | Visuelles Layout für Bildschirm und Druck optimiert |
 | **Schriftarten und Grafiken** | Verwendet Schriftart- und Ressourcenverweise; erfordert, dass Renderer Folgendes interpretieren | Bettet Schriftarten und Bilder direkt in die Datei ein |
 
-Die Dokumenterstellungs-API gibt das generierte PDF-Dokument oder AFP-Dokument zurück. Optional können Sie auch die generierten PDF-Dateien in Azure Blob Storage hochladen.
+Das API zur Dokumentenerstellung gibt das generierte PDF- oder AFP-Dokument zurück. Optional können Sie auch die generierten PDF-Dateien in Azure Blob Storage hochladen.
 
 <span class="preview"> Das Hochladen der generierten PDF-Dateien mit der API zur Dokumenterstellung in die Azure Blob Storage-Funktion erfolgt im Rahmen des [Early-Adopter-Programms](/help/forms/early-access-ea-features.md). Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3207'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -382,11 +382,11 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
 >[!NOTE]
 > 
-> Um einen benutzerdefinierten Formulartitel in Ihrem Datensatzdokument anzuzeigen, bearbeiten Sie den **benutzerdefinierten Formulartitel** unter **Eigenschaften des Datensatzdokuments** > **Eigenschaften der Musterseite**. Dieser benutzerdefinierte Titel:
+> Um einen benutzerdefinierten Formulartitel in Ihrem Nachweis anzuzeigen, bearbeiten Sie den **benutzerdefinierten Formulartitel** unter **Nachweis-Eigenschaften** > **Eigenschaften der primären Seite**. Dieser benutzerdefinierte Titel:
 > 
-> * Erscheint in der Kopfzeile der generierten PDF
-> * Wird als Titel in den Dokumenteigenschaften von PDF angezeigt
-> * Wird beim Öffnen der PDF als Ansichtstitel angezeigt
+> * Erscheint in der Kopfzeile der generierten PDF-Datei
+> * Wird als Titel in den Dokumenteneigenschaften der PDF-Datei angezeigt
+> * Wird beim Öffnen der PDF-Datei als Ansichtstitel angezeigt
 
 ## Tabellen- und Spalten-Layouts für Bereiche im Datensatzdokument {#table-and-column-layouts-for-panels-in-document-of-record}
 

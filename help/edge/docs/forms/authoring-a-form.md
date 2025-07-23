@@ -7,9 +7,9 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
 source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1075'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) bietet eine flexible Plattform zum Erstellen ansp
 
 AEM bietet mehrere Möglichkeiten zum Erstellen interaktiver und ansprechender Formulare. Beachten Sie bei der Auswahl einer Authoring-Umgebung für Formulare die folgenden Faktoren:
 
-| 📝 **Berücksichtigung** | 💡 **Was zu fragen** |
+| 📝 **Überlegung** | 💡 **Fragen** |
 |----------------------|--------------------|
 | **Benutzerkompetenz** | Wer erstellt die Formulare – Entwickelnde, Geschäftsbenutzende oder Inhaltsverfassende? |
 | **Formularkomplexität** | Benötigt das Formular erweiterte Regeln, dynamische Abschnitte oder Integrationen? |
@@ -87,12 +87,12 @@ Die folgende Tabelle bietet einen detaillierten Vergleich der wichtigsten Funkti
 | **Fragmente** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Visueller Regeleditor** | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **Lokalisierung** | ✅ | ✅ | 💡 (über Sites) | ℹ️ (Excel – manuell, Google Sheets-Funktion) | Benutzerdefinierte Implementierung |
-| **Datenschema (Datenstruktur)** | ✅ | ✅ | 💡 (über die UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
+| **Datenschema (Datenstruktur)** | ✅ | ✅ | 💡 (über UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
 | **Vorlagenunterstützung** | ✅ | ✅ | Nur anfänglicher Inhalt, keine Richtlinie | ❌ | Benutzerdefinierte Implementierung |
 | **Portal** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **DoR-Authoring** | ✅ | ✅ | 💡 (via Derlina) | ❌ | ❌ |
-| **DoR-Generierung** | ✅ | ✅ | 💡 (FORMS-2475 NEU) | ❌ | ❌ |
-| **Desing** | ✅ | ✅ | ℹ️ (auf Projektebene) | ℹ️ (auf Projektebene) | Benutzerdefinierte Implementierung |
+| **DoR-Authoring** | ✅ | ✅ | 💡 (über Derlina) | ❌ | ❌ |
+| **DoR-Generierung** | ✅ | ✅ | 💡 (FORMS-2475 Neu) | ❌ | ❌ |
+| **Design** | ✅ | ✅ | ℹ️ (auf Projektebene) | ℹ️ (auf Projektebene) | Benutzerdefinierte Implementierung |
 | **Benutzerdefinierte Komponente** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB und benutzerdefinierte Funktionen** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Fragmentreferenz** | ✅ | ❌ | ❌ | ❌ | ❌ |
@@ -101,7 +101,7 @@ Die folgende Tabelle bietet einen detaillierten Vergleich der wichtigsten Funkti
 | **Experimente** | ❌ | ❌ | ✅ | ✅ | Benutzerdefinierte Implementierung |
 | **Aufgabenverwaltung über Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
 | **Personalisierungserweiterung** | ❌ | ❌ | 💡 | ❌ | Benutzerdefinierte Implementierung |
-| **Editoranpassung** | ❌ | ❌ | ✅ (über die UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
+| **Editoranpassung** | ❌ | ❌ | ✅ (über UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
 | **Übermitteln-Aktion** | ✅ | ✅ | ✅ | Nur Kalkulationstabelle | Benutzerdefinierte Implementierung |
 
 

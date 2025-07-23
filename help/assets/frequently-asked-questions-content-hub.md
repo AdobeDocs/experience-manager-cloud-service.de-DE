@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Sie können Content Hub auswerten, ohne dass sich dies auf Ihre in AEM as a Clou
 
 Es gibt ein Early-Access-Programm für Content Hub in Sandbox-Programmen und ihren Autorenproduktionsumgebungen. Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Wenden Sie sich an Ihr Adobe-Accountteam, um mehr über das Early-Access-Programm zu erfahren.
 
-Content Hub ist noch nicht für Nicht-Produktionsumgebungen (Staging und Entwicklung) verfügbar. Die erwartete Verfügbarkeit für Staging-/Entwicklungsumgebungen für Assets Ultimate ist März 2025.
+Content Hub ist noch nicht für produktionsfremde Umgebungen (Staging und Entwicklung) verfügbar. Die erwartete Verfügbarkeit für die Staging-/Entwicklungsumgebung für Assets Ultimate ist März 2025.
 
 ## Warum werden nach dem Anmelden bei Content Hub keine Assets angezeigt? {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Es gibt einige Konfigurationen dazu, wie Benutzende [!DNL Content Hub] und [!DNL
    >
    >Die Person, die Express- und Assets-Produktprofilen in zwei Admin Consoles zugewiesen ist, muss über dieselbe E-Mail-Adresse verfügen und ein Unternehmenskonto vom Typ **Unternehmen oder Schule** statt des **persönlichen** Kontos verwenden. In der idealen Konfiguration sind beide Admin Consoles als **Federated ID** mit einer vertrauenswürdigen Beziehung zwischen ihnen eingerichtet, damit Benutzende von einem nahtlosen Single Sign-on-Erlebnis profitieren. Einige der Express-Abos (z. B. Express Teams) unterstützen Federated ID/Single Sign-on nicht.
 
-Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[!UICONTROL # /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[#UICONTROL /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Kann ich Content Hub so einrichten, dass die Markenrichtlinien meiner Organisation als Link auf der Startseite angezeigt werden? {#content-hub-setup-brand-guidelines}
 
@@ -103,35 +103,35 @@ Um auf die [Konfigurationsoberfläche](/help/assets/configure-content-hub-ui-opt
 
 In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden Lösungen aufgeführt:
 
-| Flächendiagramm | Funktion | Content Hub | Brand Portal |
+| Bereich | Funktion | Content Hub | Brand Portal |
 |---|---|----|----|
-| Konfigurieren des Verteilungserlebnisses | Konfigurieren von Metadaten für Filter, Asset-Details und Hinzufügen von Assets | ✓ | − |
-|  | Konfigurieren von externen Links über das Portal | ✓ | − |
+| Konfigurieren des Verteilungserlebnisses | Konfigurieren von Metadaten für Filter, Asset-Details und die Seite zum Hinzufügen von Assets | ✓ | − |
+|  | Konfigurieren externer Links über das Portal | ✓ | − |
 |  | Konfigurieren von Bannernachrichten | ✓ | ✓ |
-|  | Bannerbild für Branding konfigurieren | ✓ | ✓ |
+|  | Konfigurieren des Bannerbilds für Branding | ✓ | ✓ |
 |  | Konfigurieren von primären und sekundären Farben für die Benutzeroberfläche gemäß den Branding-Anforderungen | ✓ | − |
-| Freigeben von Assets aus dem DAM | Freigeben von ursprünglich genehmigten Assets aus DAM | ✓ | ✓ |
-|  | Genehmigte Asset-Änderungen werden automatisch synchronisiert | ✓ | − |
+| Freigeben von Assets aus dem DAM | Freigeben von ursprünglich genehmigten Assets aus dem DAM | ✓ | ✓ |
+|  | Genehmigte Asset-Änderungen automatisch synchronisiert | ✓ | − |
 | Suche und Filter | Dynamische Filter (Optionen werden basierend auf angezeigten Assets dynamisch angezeigt) | ✓ | − |
 |  | Suchverlauf | ✓ | − |
 | Asset-Upload | Lokales Laufwerk | ✓ | ✓ |
 |  | Hinzufügen konfigurierbarer Metadaten beim Hochladen von Assets | ✓ | − |
-| Herunterladen und Ausgabedarstellungen | Original-Asset herunterladen | ✓ | ✓ |
-|  | Freigeben und Herunterladen statischer Ausgabedarstellungen von DAM | ✓ | ✓ |
-|  | Herunterladen dynamischer Ausgabedarstellungen (Voreinstellung und smartes Zuschneiden) | ✓ | ✓ |
-|  | Möglichkeit, die Anzeige und den Download abgelaufener Assets einzuschränken | ✓ | − |
-| Link-Freigabe und Sammlungen | Linkfreigabe für angemeldete Benutzer | ✓ | ✓ |
+| Download und Ausgabedarstellungen | Herunterladen des Original-Assets | ✓ | ✓ |
+|  | Freigeben und Herunterladen statischer Ausgabedarstellungen aus dem DAM | ✓ | ✓ |
+|  | Herunterladen dynamischer Ausgabedarstellungen (Voreinstellung und intelligenter Zuschnitt) | ✓ | ✓ |
+|  | Möglichkeit, die Anzeige und das Herunterladen abgelaufener Assets einzuschränken | ✓ | − |
+| Link-Freigabe und Sammlungen | Link-Freigabe für angemeldete Personen | ✓ | ✓ |
 |  | Öffentliche Sammlungen | ✓ | ✓ |
 |  | Suchen in Sammlungen | ✓ | − |
-|  | Anonyme Linkfreigabe | ✓ | ✓ |
+|  | Anonyme Link-Freigabe | ✓ | ✓ |
 |  | Private Sammlungen | ✓ | ✓ |
 | Berechtigungen | ACL-basierte Berechtigungen | − | ✓ |
 |  | Attributbasierte Zugriffssteuerung – Übersicht | ✓ | − |
-| Express-Integration | Content Hub Assets in Adobe Express bearbeiten und im DAM speichern | ✓ | − |
-| Dashboards und Berichte | Insights-Dashboard | ✓ | − |
+| Express-Integration | Bearbeiten von Content Hub-Assets in Adobe Express und Speichern im DAM | ✓ | − |
+| Dashboards und Berichte | Erkenntnis-Dashboard | ✓ | − |
 | Erweiterbarkeit der Benutzeroberfläche | Benutzerdefinierte Erweiterungspunkte auf der Seite „Asset-Details“ | Eingeschränkte Verfügbarkeit | − |
-| Innovationen in Kürze verfügbar | Favoriten für Sammlungen nach Benutzer | ✓ | − |
-|  | Angeheftete Sammlungen von Admin | ✓ | − |
+| Demnächst verfügbare Innovationen | Lieblingssammlungen nach Personen | ✓ | − |
+|  | Angeheftete Sammlungen nach Admin | ✓ | − |
 |  | Semantische Suche | ✓ | − |
 |  | Lokalisierte Suche und Anzeige von Metadaten | ✓ | − |
 

@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -213,7 +213,7 @@ So verwenden Sie diese Funktion:
 
 >[!NOTE]
 >
->Timewarp funktioniert für AEM-Seiten - Versionen für den Verlauf und Launches für zukünftige Inhaltsstatus und ist für diese Verwendung vorgesehen.
+>Timewarp funktioniert für AEM-Seiten und ist für diese Verwendung vorgesehen – Versionen für den Verlauf und Launches für zukünftige Inhaltsstatus.
 >
 >Dies funktioniert nicht für verschachtelte Launches oder bei der Verwendung von Experience Fragments.
 
