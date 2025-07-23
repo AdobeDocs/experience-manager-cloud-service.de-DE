@@ -4,10 +4,10 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '2002'
-ht-degree: 100%
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
+workflow-type: tm+mt
+source-wordcount: '2277'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 [!DNL Assets view] bietet eine effektive Suche, die einfach standardmäßig funktioniert. Die Suche ist umfassend, da es sich um eine Volltextsuche handelt. Mit der leistungsstarken Suchfunktion können Sie schnell das passende Asset ermitteln und die Geschwindigkeit Ihrer Inhaltserstellung steigern. [!DNL Assets view] bietet Volltextsuche und Suchvorgänge durch die Metadaten wie Smart-Tags, Titel, Erstellungsdatum und Copyright.
 
-Um nach Assets zu suchen,
+Um nach Assets zu suchen:
 
 * klicken Sie oben auf der Seite in das Suchfeld. Standardmäßig wird innerhalb des Ordners gesucht, den Sie gerade durchsuchen. Führen Sie einen der folgenden Schritte aus:
 
@@ -120,6 +120,40 @@ Entfernen benutzerdefinierter Filter
 1. Heben Sie im Dialogfeld **[!UICONTROL Verwaltung benutzerdefinierter Filter]** die Auswahl der Filter auf, die Sie aus der Liste der vorhandenen Filter entfernen möchten.
 
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Filter aus der Benutzeroberfläche zu entfernen.
+
+## Semantische Suche {#semantic-search}
+
+Die semantische Suche ist eine erweiterte Suchfunktion, die die Bedeutung und den Zweck hinter der Abfrage eines Benutzers versteht, anstatt sich auf exakte Keyword-Übereinstimmungen zu verlassen. Es nutzt künstliche Intelligenz (KI), natürliche Sprachverarbeitung (NLP) und maschinelles Lernen, um genauere und kontextbezogene Ergebnisse zu liefern.
+
+Im Gegensatz zur herkömmlichen schlüsselwortbasierten Suche, die nach exakten Begriffen sucht, interpretiert die semantische Suche Beziehungen zwischen Wörtern, Konzepten und der Benutzerabsicht. Dadurch wird sichergestellt, dass Benutzende das Gesuchte finden - auch wenn die Abfrage anders formuliert ist, Tippfehler enthält oder in einer anderen Sprache verfasst ist.
+
+Zu den wichtigsten Vorteilen zählen:
+
+* **Mehrsprachiger Support**: Suchen Sie über mehrere Sprachen hinweg, ohne dass genaue Übersetzungen erforderlich sind. Benutzer können relevante Inhalte unabhängig von ihrer Abfragesprache finden.
+
+* **Behandelt Rechtschreibfehler**: Korrigiert oder interpretiert Rechtschreibfehler automatisch und stellt so genaue Ergebnisse auch bei unvollständiger Eingabe sicher.
+
+* **Versteht Synonyme**: Liefert Ergebnisse für verwandte Begriffe und Ausdrücke, sodass Benutzende nicht das richtige Keyword erraten müssen.
+
+* **Kontextabhängige Suche**: Erkennt den Zweck einer Abfrage, nicht nur die Wörter.
+
+* **Suche basierend auf textbasierten Eingabeaufforderungen**: Experience Manager Assets wendet Filter auf Inhalte an und zeigt geeignete Ergebnisse automatisch basierend auf einfachen textbasierten Eingabeaufforderungen an.
+
+>[!IMPORTANT]
+>
+> Geben Sie drei oder mehr als drei Wörter für die semantische Suche an, um geeignete Ergebnisse anzuzeigen.
+
+### Beispiele für die semantische Suche {#examples-semantic-search}
+
+**Beispiel-Eingabeaufforderung**: *Frau trinkt Kaffee*
+
+Die herkömmliche Keyword-basierte Suche sucht nach genauen Übereinstimmungen der Asset-Metadaten wie Frau, Kaffee usw. und gibt Assets zurück, die diese Keywords enthalten.
+
+Die semantische Suche sucht jedoch nach ähnlichen Wörtern wie `Girl`, `Lady` bei `Woman`- und Kaffeeoptionen wie `Cappuccino` und `Latte` bei `Coffee`.
+
+Auf ähnliche Weise können Sie diese Eingabeaufforderung auf Spanisch angeben oder `Woman` als `Wman` falsch schreiben und trotzdem die gleichen Ergebnisse erhalten.
+
+![Semantische Suche in der Assets-Ansicht](assets/semantic-search.png)
 
 ## Suchen von Assets mithilfe von [!DNL Adobe Firefly] {#search-firefly}
 
@@ -343,6 +377,6 @@ Um Feedback zur Kontextsuche zu geben, klicken Sie auf das Symbol für die ![Kon
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
 
 
