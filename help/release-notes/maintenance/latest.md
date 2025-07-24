@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
+source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 34%
+source-wordcount: '632'
+ht-degree: 33%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 34%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 21644 {#21644}
+## Version 21706 {#21706}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 21644, die am Mittwoch, 22. Juli 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21570.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 21706, die am Freitag, 24. Juli 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21570.
+
+>[!NOTE]
+>
+>Release 21644 wurde als privat eingestuft und durch Release 21706 ersetzt.
 
 Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-21644}
+### Verbesserungen {#enhancements-21706}
 
 * ASSETS-39377: Verbessern Sie die Handhabung von 429s über Remote-Speicher im Assets Bulk Importer.
 * ASSETS-46026: Konfigurierbare maximale Tiefe für Metadaten-Exporter.
@@ -39,7 +43,7 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * SITES-31677: Benutzerdefinierter Arbeitsbereich unterstützt den Export von AEM-Inhaltsfragmenten zu Target.
 * SKYOPS-112741: Entfernen Sie das `com.adobe.granite.product.support` aus der AEM-CS SDK.
 
-### Behobene Probleme {#fixed-issues-21644}
+### Behobene Probleme {#fixed-issues-21706}
 
 * ASSETS-12882: Probleme mit der Ausrichtung der Benutzeroberfläche nach dem Öffnen von Viewer-Vorgaben.
 * ASSETS-48958: Problem mit dem Ändern des Veröffentlichungsstatus bei der Asset-Synchronisierung in der lokalen Sites-AEM.
@@ -65,19 +69,19 @@ Die Funktionsaktivierung von 2025.7.0 bietet den vollen Funktionsumfang für die
 * GRANITE-60311: AEM SDK QuickStart - NPE zu „OSGi Installer Configuration Printer“.
 * GS-15285: Benutzer werden als deaktiviert angezeigt.
 
-### Bekannte Probleme {#known-issues-21644}
+### Bekannte Probleme {#known-issues-21706}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-21644}
+### Eingestellte Funktionen und APIs {#deprecated-21706}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-21644}
+### Sicherheitskorrekturen {#security-21706}
 
 Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt vier identifizierte Schwachstellen und sorgt somit für einen noch robusteren Systemschutz.
 
-### Eingebettete Technologien {#embedded-tech-21644}
+### Eingebettete Technologien {#embedded-tech-21706}
 
 | Technologie | Version | Link |
 |---|---|---|
