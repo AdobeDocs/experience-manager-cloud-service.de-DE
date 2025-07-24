@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der R
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
 source-wordcount: '1711'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distrib
 >[!NOTE]
 >
 >Wenn Sie an Massenveröffentlichungen von Inhalten interessiert sind, erstellen Sie einen Workflow mit dem [Workflow-Schritt für die Strukturaktivierung](#tree-activation), der eine effiziente Verarbeitung umfangreicher Payloads ermöglicht.
->Es wird nicht empfohlen, für die Massenveröffentlichung Ihren eigenen, benutzerdefinierten Code zu erstellen.
->Wenn Sie aus irgendeinem Grund Anpassungen vornehmen müssen, können Sie mit diesem Schritt einen Workflow über vorhandene Workflow-APIs auslösen.
->Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die auch veröffentlicht werden müssen. Achten Sie außerdem darauf, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen hinsichtlich der Menge der Inhalte, die Sie über Workflows mit dem Workflow-Schritt für die Strukturaktivierung senden können.
+>>Es wird nicht empfohlen, für die Massenveröffentlichung Ihren eigenen, benutzerdefinierten Code zu erstellen.
+>>Wenn Sie aus irgendeinem Grund Anpassungen vornehmen müssen, können Sie mit diesem Schritt einen Workflow über vorhandene Workflow-APIs auslösen.
+>>Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die auch veröffentlicht werden müssen. Achten Sie außerdem darauf, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen hinsichtlich der Menge der Inhalte, die Sie über Workflows mit dem Workflow-Schritt für die Strukturaktivierung senden können.
 
 ### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
@@ -98,8 +98,8 @@ So erstellen Sie ein Workflow-Modell, das den Prozessschritt `TreeActivation` ve
 
 | Name | Beschreibung |
 | ------------- | ------------------------------------------- |
-| onlyModified | Knoten: sowohl neue als auch bereits vorhandene, die seit der letzten Veröffentlichung geändert wurden |
-| onlyActivated | Knoten: , die vor der letzten Veröffentlichung veröffentlicht wurden |
+| onlyModified | Knoten: sowohl neue als auch bereits vorhandene, die seit der letzten Veröffentlichung geändert wurden. |
+| onlyActivated | Knoten: die vor der letzten Veröffentlichung veröffentlicht wurden. |
 
 
 **Fortsetzung der Unterstützung**
@@ -193,7 +193,6 @@ Nachfolgend finden Sie Beispiele für Protokolle, die während eines Beispiel-Wo
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
 </details>
 
 ### Replikations-API {#replication-api}
@@ -272,7 +271,7 @@ Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer se
 
 Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Authoring-Service:
 
-1. Navigieren Sie im AEM-Startmenü zu **Tools** > **Bereitstellung** > **Verteilung**
+1. Navigieren Sie in [ AEM ](/help/sites-cloud/authoring/basic-handling.md#global-navigation)Globale Navigation) zu **Tools** > **Bereitstellung** > **Verteilung**
 1. Wählen Sie die Karte **Veröffentlichen** aus
 
    ![Status](assets/publish-status.png "Status")

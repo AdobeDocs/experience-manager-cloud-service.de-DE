@@ -4,10 +4,10 @@ description: Das folgende Tutorial führt Sie durch die Schritte zum Erstellen e
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2042'
-ht-degree: 100%
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+workflow-type: tm+mt
+source-wordcount: '2039'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Der Quell-Code eines Screens-Projekts wird normalerweise als Maven-Projekt mit m
 
 1. Das Paket **screens-weretail-run.ui.apps** installiert Code unter `/apps/weretail-run`.
 
-   Dieses Paket enthält den Code, der für das Rendern von benutzerdefinierten Komponenten für das Projekt verantwortlich ist. Dieses Paket enthält Komponenten-Code und alle erforderlichen JavaScript- oder CSS-Funktionen. Dieses Paket beinhaltet auch **screens-weretail-run.core-0.0.1-SNAPSHOT.jar**, die den Java™-Code enthält, der für das Projekt benötigt wird.
+   Dieses Paket enthält den Code, der für das Rendern von benutzerdefinierten Komponenten für das Projekt verantwortlich ist. Dieses Paket enthält Komponenten-Code und alle erforderlichen JavaScript- oder CSS-Funktionen. In dieses Paket ist auch **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** eingebettet, die den Java™-Code enthält, der für das Projekt benötigt wird.
 
    >[!NOTE]
    >
@@ -83,7 +83,7 @@ Der Quell-Code eines Screens-Projekts wird normalerweise als Maven-Projekt mit m
 
 1. **Navigieren Sie zum Projekt „AEM Screens“ > „We.Retail Run“:**
 
-   Klicken Sie im AEM-Startmenü auf das Screens-Symbol. Überprüfen Sie, ob das Projekt „We.Retail Run“ zu sehen ist.
+   Klicken Sie in der globalen AEM-Navigation auf das Symbol Screens . Überprüfen Sie, ob das Projekt „We.Retail Run“ zu sehen ist.
 
    ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
@@ -389,8 +389,8 @@ Im Folgenden wird eine „We.Retail Run“-Design-Seite erstellt, auf der alle f
    | Name | Typ | Wert |
    |---|---|---|
    | jcr:title | Zeichenfolge | We.Retail Run |
-   | sling:resourceType | Zeichenfolge | wcm/core/components/designer |
-   | cq:doctype | Zeichenfolge | html_5 |
+   | Sling:resourceType | Zeichenfolge | wcm/core/components/designer |
+   | CQ:doctype | Zeichenfolge | html_5 |
 
    ![Design-Seite unter /apps/settings/wcm/designs/we-retail-run](/help/screens-cloud/developing/assets/2018-05-07_at_1219pm.png)
 
@@ -400,7 +400,7 @@ Im Folgenden wird eine „We.Retail Run“-Design-Seite erstellt, auf der alle f
 
 Die Komponente „Hello World“ ist für die Verwendung in einem Sequenzkanal vorgesehen. Zum Testen der Komponente wird ein neuer Sequenzkanal erstellt.
 
-1. Navigieren Sie im AEM-Startmenü zu **Bildschirme** > **We.Retail Run** > und wählen Sie **Kanäle** aus.
+1. Navigieren Sie in der globalen AEM-Navigation zu **Screens** > **We.Retail Ru** n > und wählen Sie **Kanäle** aus.
 
 1. Klicken Sie auf die Schaltfläche **Erstellen**
 
