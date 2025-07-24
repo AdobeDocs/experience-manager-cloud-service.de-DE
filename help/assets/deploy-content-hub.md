@@ -3,10 +3,10 @@ title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren sowie Benutzenden mit unterschiedlichen Berechtigungstypen (Assets hochladen, Adobe Express-Benutzende) Zugriff und Administrationsberechtigungen gewähren.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1572'
-ht-degree: 100%
+source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
+workflow-type: tm+mt
+source-wordcount: '1586'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für d
 Die Assets, die in Experience Manager Assets as a Cloud Service als „Genehmigt“ markiert sind, sind in Content Hub für die Asset-Verteilung verfügbar.
 
 Dieser Artikel enthält einen durchgängigen Arbeitsablauf zur Bereitstellung von Content Hub-Assets für Benutzende, einschließlich der Berechtigungsvarianten basierend auf ihren Anforderungen.
+
+In diesem Video erfahren Sie, wie Sie Content Hub für Experience Manager Assets aktivieren:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469851)
 
 Zu den verschiedenen Berechtigungen für Content Hub gehören:
 
