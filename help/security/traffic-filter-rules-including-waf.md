@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4582'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Traffic-Filterregeln können verwendet werden, um Anforderungen auf der CDN-Eben
 * Festlegen von Ratenbeschränkungen, um für volumetrische DoS-Angriffe weniger anfällig zu sein
 * Verhindern, dass IP-Adressen, die als bösartig bekannt sind, auf Ihre Seiten zugreifen.
 
-Viele dieser Traffic-Filterregeln stehen allen Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung. Sie werden als *Standard-Traffic-Filterregeln* bezeichnet und basieren hauptsächlich auf Anfrageeigenschaften und Anfragekopfzeilen, einschließlich IP-Adresse, Hostname, Pfad und Benutzeragent. Standardregeln für Traffic-Filter enthalten Regeln für die Ratenbegrenzung, um Traffic-Spitzen zu verhindern.
+Viele dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung. Sie werden als *Standard-Traffic-Filterregeln* bezeichnet und gelten hauptsächlich für Anfrageeigenschaften und Anfrage-Header, zum Beispiel IP-Adresse, Host-Name, Pfad und Benutzeragent. Standard-Traffic-Filterregeln umfassen Ratenbegrenzungsregeln zum Schutz vor Traffic-Spitzen.
 
-Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für erweiterte Sicherheit oder eine WAF-DDoS Protection-Lizenz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall) (oder *WAF-Regeln* bezeichnet) bezeichnet und haben Zugriff auf die [WAF-Flags](#waf-flags-list) die weiter unten in diesem Artikel beschrieben werden.
+Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für erweiterte Sicherheit oder eine WAF-DDoS Protection-Lizenz. Diese leistungsstarken Regeln werden als Traffic-Filterregeln für WAF (Web Application Firewall, kurz: *WAF-Regeln*) bezeichnet und haben Zugriff auf die [WAF-Markierungen](#waf-flags-list), die weiter unten in diesem Artikel beschrieben werden.
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines in Entwicklungs-, Staging- und Produktionsumgebungen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
@@ -61,23 +61,23 @@ Kundinnen und Kunden können proaktive Maßnahmen ergreifen, um Angriffe auf Anw
 
 Auf der Apache-Ebene können Kundinnen und Kunden beispielsweise das [Dispatcher-Modul](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) konfigurieren, um den Zugriff auf bestimmte Inhalte zu beschränken.
 
-Wie in diesem Artikel beschrieben, können Traffic-Filterregeln in dem von Adobe verwalteten CDN bereitgestellt werden. Verwendet werden dazu die in Cloud Manager verfügbaren [Konfigurations-Pipelines](/help/operations/config-pipeline.md). Zusätzlich zu *standardmäßigen Traffic-Filterregeln* auf der Grundlage von Eigenschaften wie IP-Adresse, Pfad und Kopfzeilen oder Regeln auf der Grundlage von Ratenbeschränkungen können Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die als *WAF-Regeln* bezeichnet werden.
+Wie in diesem Artikel beschrieben, können Traffic-Filterregeln in dem von Adobe verwalteten CDN bereitgestellt werden. Verwendet werden dazu die in Cloud Manager verfügbaren [Konfigurations-Pipelines](/help/operations/config-pipeline.md). Neben den *Standard-Traffic-Filterregeln*, die auf Eigenschaften wie IP-Adresse, Pfad und Header basieren, oder Regeln, die der Festlegung von Ratenbegrenzungen dienen, können Kundinnen und Kunden auch eine leistungsstarke Unterkategorie von Traffic-Filterregeln lizenzieren, die sogenannten *WAF-Regeln*.
 
 ## Vorgeschlagener Prozess {#suggested-process}
 
 Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die Erstellung der richtigen Traffic-Filterregeln:
 
 1. Konfigurieren Sie Konfigurations-Pipelines für Nicht-Produktion und Produktion, wie im Abschnitt [Einrichtung](#setup) beschrieben.
-1. Kunden, die die *Traffic-Filterregeln für WAF lizenziert haben* sollten diese in Cloud Manager aktivieren.
+1. Kundinnen und Kunden, die die *WAF-Traffic-Filterregeln* lizenziert haben, sollten sie in Cloud Manager aktivieren.
 1. Lesen und probieren Sie das Tutorial aus, um genau zu verstehen, wie Traffic-Filterregeln verwendet werden, einschließlich WAF-Regeln, wenn sie lizenziert wurden. Das Tutorial führt Sie durch die Bereitstellung von Regeln in einer Entwicklungsumgebung, die Simulation von schädlichem Traffic sowie den Download der [CDN-Protokolle](#cdn-logs) und ihre Analyse in den [Dashboard-Tools](#dashboard-tooling).
-1. Kopieren Sie die empfohlenen Startregeln nach `cdn.yaml` und stellen Sie die Konfiguration in der Produktionsumgebung bereit, wobei sich einige der Regeln im Protokollmodus befinden.
-1. Nachdem Sie etwas Traffic erfasst haben, analysieren Sie die Ergebnisse mit den [Dashboard-Tools](#dashboard-tooling), um zu sehen, ob es Übereinstimmungen gab. Achten Sie auf falsch-positive Ergebnisse und nehmen Sie die erforderlichen Anpassungen vor, um letztendlich alle Starterregeln im Blockmodus zu aktivieren.
-1. Fügen Sie bei Bedarf benutzerdefinierte Regeln hinzu, die auf der Analyse der CDN-Protokolle basieren. Testen Sie zunächst den simulierten Traffic in Entwicklungsumgebungen, bevor Sie ihn in Staging- und Produktionsumgebungen im Log-Modus bereitstellen, und blockieren Sie dann den Modus.
+1. Kopieren Sie die empfohlenen Anfangsregeln nach `cdn.yaml` und stellen Sie die Konfiguration mit einigen der Regeln in der Produktionsumgebung im Protokollmodus bereit.
+1. Nachdem Sie etwas Traffic erfasst haben, analysieren Sie die Ergebnisse mit den [Dashboard-Tools](#dashboard-tooling), um zu sehen, ob es Übereinstimmungen gab. Suchen Sie nach falsch-positiven Ergebnissen und nehmen Sie die erforderlichen Anpassungen vor, um die Anfangsregeln im Blockmodus letztlich zu aktivieren.
+1. Fügen Sie bei Bedarf benutzerdefinierte Regeln hinzu, die auf der Analyse der CDN-Protokolle basieren. Testen Sie sie zunächst mit simuliertem Traffic in Entwicklungsumgebungen, bevor Sie sie in der Staging- und Produktionsumgebung im Protokollmodus und dann im Blockmodus bereitstellen.
 1. Überwachen Sie den Traffic auf fortlaufender Basis und nehmen Sie Änderungen an den Regeln vor, wenn sich die Bedrohungslage weiterentwickelt.
 
 ## Einrichtung {#setup}
 
-1. Erstellen Sie eine `cdn.yaml` mit einem Satz von Traffic-Filterregeln, einschließlich WAF-Regeln. Zum Beispiel:
+1. Erstellen Sie eine Datei `cdn.yaml` mit einer Reihe von Traffic-Filterregeln, einschließlich WAF-Regeln. Beispiel:
 
    ```
    kind: "CDN"
@@ -107,13 +107,13 @@ Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die 
 
    1. Um WAF für ein vorhandenes Programm zu konfigurieren, können Sie jederzeit Ihr [Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) und auf der Registerkarte **Sicherheit** die Option **WAF-DDOS** deaktivieren oder aktivieren.
 
-1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben. Die Pipeline verweist auf einen Ordner der obersten Ebene mit dem Namen `config`. Die Datei `cdn.yaml` ist in der Hierarchie irgendwo darunter abgelegt, siehe [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure).
+1. Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im [Artikel zu Konfigurations-Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager). Die Pipeline verweist auf einen Ordner der obersten Ebene mit dem Namen `config`. Die Datei `cdn.yaml` ist in der Hierarchie irgendwo darunter abgelegt, siehe [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntax für Traffic-Filterregeln {#rules-syntax}
 
 Sie können *Traffic-Filterregeln* konfigurieren, um Übereinstimmungen mit Mustern wie IPs, Benutzeragent, Anfrage-Headern, Host-Name, Geo und URL zu erhalten.
 
-Kunden, die das Angebot für erweiterte Sicherheit oder WAF-DDoS-Schutz lizenzieren, können auch eine spezielle Kategorie von Traffic-Filterregeln konfigurieren, die *WAF-Traffic-Filterregeln* (oder *WAF-Regeln* genannt) genannt werden und auf eine oder mehrere [WAF-Flags](#waf-flags-list) verweisen.
+Kundinnen und Kunden mit einer Lizenz für die erweiterte Sicherheit oder die Sicherheitsoption zum Schutz vor WAF-DDoS können auch eine spezielle Kategorie von Traffic-Filterregeln namens *WAF-Traffic-Filterregeln* (oder kurz: *WAF-Regeln*) konfigurieren, die auf eine oder mehrere [WAF-Markierungen](#waf-flags-list) verweisen.
 
 Im Folgenden finden Sie ein Beispiel für einen Satz von Traffic-Filterregeln, der auch eine WAF-Regel enthält.
 
@@ -237,8 +237,8 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 
 | **Flag-ID** | **Flag-Name** | **Beschreibung** |
 |---|---|---|
-| ATTACK | Angriff | Eine Aggregation von Markierungen für bösartigen Traffic (SQLI, CMDEXE, XSS usw.). Im [Empfohlene WAF-Regeln](#recommended-waf-starter-rules) finden Sie, wie dieses Flag effektiv verwendet werden kann. |
-| ATTACK-FROM-BAD-IP | Angriff von bösartiger IP | Ähnlich wie das ATTACK-Flag, aber „logisch UND-gesteuert“ mit dem `BAD-IP`-Flag, sodass eine Anfrage gekennzeichnet wird, wenn sie sowohl mit ATTACK als auch mit BAD-IP übereinstimmt. Im [Empfohlene WAF-Regeln](#recommended-waf-starter-rules) finden Sie, wie dieses Flag effektiv verwendet werden kann. |
+| ATTACK | Angriff | Eine Aggregation von Markierungen für bösartigen Traffic (SQLI, CMDEXE, XSS usw.). Im [Abschnitt „Empfohlene WAF-Regeln“](#recommended-waf-starter-rules) finden Sie weitere Informationen, wie diese Markierung effektiv verwendet werden kann. |
+| ATTACK-FROM-BAD-IP | Angriff von bösartiger IP | Ähnlich wie die Markierung ATTACK, aber per „logischem UND“ mit der Markierung `BAD-IP` verknüpft, damit Anfragen gekennzeichnet werden, die sowohl für ATTACK als auch BAD-IP eine Übereinstimmung aufweisen. Im [Abschnitt „Empfohlene WAF-Regeln“](#recommended-waf-starter-rules) finden Sie weitere Informationen, wie diese Markierung effektiv verwendet werden kann. |
 | SQLI | SQL-Injektion | SQL-Injektion ist der Versuch, durch die Ausführung beliebiger Datenbankabfragen Zugriff auf eine Anwendung zu erhalten oder privilegierte Informationen zu erhalten. |
 | BACKDOOR | Backdoor | Ein Backdoor-Signal ist eine Anfrage, die versucht festzustellen, ob eine gemeinsame Backdoor-Datei auf dem System vorhanden ist. |
 | CMDEXE | Befehlsausführung | Befehlsausführung ist der Versuch, durch beliebige Systembefehle mithilfe von Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder ein Zielsystem zu beschädigen. |
@@ -661,20 +661,20 @@ Adobe bietet einen Mechanismus zum Herunterladen von Dashboard-Tools auf Ihren C
 
 Dashboard-Tools können direkt aus dem GitHub-Repository [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) heruntergeladen werden.
 
-[Ein Tutorial](#tutorial) ist für konkrete Anweisungen zur Verwendung der Dashboard-Tools verfügbar.
+Für konkrete Anleitungen zum Verwenden der Dashboard-Tools ist [ein Tutorial](#tutorial) verfügbar.
 
-## Empfohlene Starterregeln {#recommended-starter-rules}
+## Empfohlene Anfangsregeln {#recommended-starter-rules}
 
-Adobe empfiehlt, mit den unten stehenden Traffic-Filterregeln zu beginnen und dann im Laufe der Zeit weiter zu verfeinern. *Standardregeln* sind mit einer Sites- oder Forms-Lizenz verfügbar, während *WAF-Regeln* eine erweiterte Sicherheits- oder WAF-DDoS-Schutzlizenz erfordern.
+Adobe empfiehlt, mit den unten stehenden Traffic-Filterregeln zu beginnen und dann im Lauf der Zeit Optimierungen vorzunehmen. *Standardregeln* sind mit einer Sites- oder Forms-Lizenz verfügbar, während *WAF-Regeln* eine erweiterte Sicherheits- oder WAF-DDoS-Schutzlizenz erfordern.
 
 ### Empfohlene Standardregeln {#recommended-nonwaf-starter-rules}
 
 Beginnen Sie mit diesen Regeln:
 
-1. Ratenlimit (Log-Modus):
-   * Protokollieren Sie, wenn der Traffic von einer bestimmten IP-Adresse ein Ratenlimit überschreitet. Wechseln Sie in den Blockierungsmodus, nachdem Sie überprüft haben, dass keine Warnhinweise empfangen wurden. Wenn Warnhinweise empfangen wurden, hätte dies bedeutet, dass der Grenzwert zu niedrig war.
+1. Ratenbegrenzung (Protokollmodus):
+   * Protokollieren Sie, wenn der Traffic von einer bestimmten IP-Adresse eine Ratenbegrenzung überschreitet. Wechseln Sie in den Blockmodus, nachdem Sie überprüft haben, dass keine Warnhinweise empfangen werden. Wenn Warnhinweise empfangen werden, bedeutet dies, dass der Grenzwert zu niedrig war.
 2. bestimmte Länder (Blockmodus):
-   * Blockieren Sie Traffic aus bestimmten Ländern (ändern Sie die Länder-Codes entsprechend Ihren Geschäftsanforderungen)
+   * Blockieren Sie Traffic aus bestimmten Ländern (ändern Sie die Länder-Codes entsprechend Ihren Unternehmensanforderungen)
 
 ```
 kind: "CDN"
@@ -737,15 +737,15 @@ data:
 
 Fügen Sie Ihrer vorhandenen Konfiguration die folgenden Regeln hinzu:
 
-1. ATTACK-FROM-BAD-IP Flag (Blockmodus):
-   * Sofort Traffic blockieren, der sowohl verdächtige Muster aufweist (einschließlich mehrerer in der [WAF-Flags-](#waf-flags-list)) als auch von IP-Adressen stammt, die als bösartig bekannt sind.
-   * Das Flag ATTACK-FROM-BAD-IP erfüllt von Natur aus beide Bedingungen (Musterübereinstimmung und bekannte bösartige IP-Adresse), wodurch das Risiko falsch positiver Ergebnisse minimiert wird. So können Sie diese Regel im Blockierungsmodus sofort sicher anwenden.
-2. ANGRIFF-Flag (Log-Modus):
-   * Protokollieren Sie zunächst Traffic, der verdächtigen Mustern entspricht, aber nicht von bekannten bösartigen IP-Adressen stammt, (anstatt ihn zu blockieren). Dieser vorsichtige Ansatz, bei dem Protokollierung statt Blockierung verwendet wird, hilft dabei, eine unbeabsichtigte Blockierung des legitimen Traffics (falsch-positive Ergebnisse) zu vermeiden.
-   * Analysieren Sie nach der Bereitstellung dieser Regel sorgfältig die CDN-Protokolle, um sicherzustellen, dass legitime Anfragen nicht falsch gekennzeichnet werden. Wechseln Sie in den Blockierungsmodus, wenn Sie davon überzeugt sind, dass kein legitimer Traffic betroffen ist.
+1. Markierung ATTACK-FROM-BAD-IP (Blockmodus):
+   * Blockieren Sie Traffic unmittelbar, wenn er sowohl verdächtige Muster aufweist (zum Beispiel mehrere aus der [Liste der WAF-Markierungen](#waf-flags-list)) als auch von bekanntermaßen bösartigen IP-Adressen stammt.
+   * Die Markierung ATTACK-FROM-BAD-IP erfüllt grundsätzlich beide Bedingungen (Musterübereinstimmung und bekannte bösartige IP), wodurch das Risiko falsch-positiver Ergebnisse minimiert wird. Daher können Sie diese Regel im Blockmodus sofort sicher anwenden.
+2. Markierung ATTACK (Protokollmodus):
+   * Protokollieren Sie zunächst Traffic (anstatt ihn zu blockieren), der verdächtigen Mustern entspricht, aber nicht von bekannten bösartigen IP-Adressen stammt. Dieser vorsichtigere Ansatz mit Protokollierung statt Blockierung ist hilfreich, um unbeabsichtigtes Blockieren von legitimem Traffic (falsch-positive Ergebnisse) zu vermeiden.
+   * Analysieren Sie nach der Bereitstellung dieser Regel sorgfältig die CDN-Protokolle, um sicherzustellen, dass legitime Anfragen nicht falsch markiert werden. Wechseln Sie in den Blockmodus, sobald Sie sicher sind, dass kein legitimer Traffic betroffen ist.
 
 >[!NOTE]
-> Unsere Erfahrung zeigt an, dass falsch-positive Ergebnisse, die mit der ATTACK-Markierung verbunden sind, selten sind. Daher kann es eine praktische Strategie sein, sofort jeglichen verdächtigen Traffic zu blockieren - selbst wenn nicht bekannt ist, dass die IP-Adresse bösartig ist - und anschließend die CDN-Protokollanalyse zu verwenden, um Regeln für legitimen Traffic zu identifizieren und einzuführen. Jede Organisation sollte ihre eigene Risikotoleranz bewerten und die Vorteile eines besseren Schutzes gegen das Risiko einer unbeabsichtigten Blockierung legitimer Anfragen abwägen.
+> Unsere Erfahrung zeigt, dass falsch-positive Ergebnisse im Zusammenhang mit der Markierung ATTACK nur selten auftreten. Daher kann es eine praktische Strategie sein, sofort jeglichen verdächtigen Traffic zu blockieren – selbst wenn die IP-Adresse nicht als bösartig bekannt ist – und anschließend mit der CDN-Protokollanalyse Regeln für legitimen Traffic zu identifizieren und aufzustellen. Jede Organisation sollte ihre eigene Risikotoleranz bewerten und die Vorteile eines besseren Schutzes gegen das Risiko einer unbeabsichtigten Blockierung legitimer Anfragen abwägen.
 >
 
 ```
@@ -769,12 +769,12 @@ Fügen Sie Ihrer vorhandenen Konfiguration die folgenden Regeln hinzu:
           - ATTACK
 ```
 
-### Alte empfohlene WAF-Regeln {#previous-waf-starter-rules}
+### Ältere empfohlenen WAF-Regeln {#previous-waf-starter-rules}
 
-Vor Juli 2025 hat Adobe die unten aufgeführten WAF-Regeln empfohlen, die weiterhin gültig und beim Schutz vor bösartigem Traffic wirksam sind. Lesen Sie das Tutorial für Überlegungen zur Migration zu den neuen empfohlenen Regeln.
+Vor Juli 2025 empfahl Adobe die unten aufgeführten WAF-Regeln, die weiterhin gültig und beim Schutz vor bösartigem Traffic wirksam sind. Im Tutorial finden Sie weitere Überlegungen bezüglich der Migration zu den neuen empfohlenen Regeln.
 
 <details>
-  <summary>Erweitern Sie , um die Legacy-empfohlenen WAF-Regeln anzuzeigen.</summary>
+  <summary>Erweitern, um die älteren empfohlenen WAF-Regeln anzuzeigen.</summary>
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,20 +799,19 @@ Vor Juli 2025 hat Adobe die unten aufgeführten WAF-Regeln empfohlen, die weiter
           - PRIVATEFILE
           - NULLBYTE
 ```
-
 </details>
 
 ## Tutorial {#tutorial}
 
-Lernen Sie [eine Reihe von Tutorials](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) um praktische Kenntnisse und Erfahrungen über Traffic-Filterregeln, einschließlich WAF-Regeln, zu sammeln.
+Arbeiten Sie [eine Reihe von Tutorials](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) durch, um praktisches Know-how und Erfahrungen bezüglich Traffic-Filterregeln zu sammeln, einschließlich WAF-Regeln.
 
-Zu den Tutorials gehören:
+Folgende Tutorials sind verfügbar:
 
-* Übersicht über die Traffic-Filterregeln von Standard und WAF
-* Konfigurieren der empfohlenen Standard- und WAF-Traffic-Filterregeln zur Abwehr von Angriffen, einschließlich Denial-of-Service (DoS) und anderen Bedrohungen
-* Bereitstellen von Regeln mithilfe der Cloud Manager-Konfigurations-Pipeline
-* Regeln mit Tools zur Simulation von bösartigem Traffic testen
-* Ergebnisanalyse mithilfe des Tools für die Protokollanalyse
+* Standard- und WAF-Traffic-Filterregeln – Überblick
+* Konfigurieren der empfohlenen Standard- und WAF-Traffic-Filterregeln zur Blockierung von Angriffen wie Denial-of-Service (DoS) und anderen Bedrohungen
+* Bereitstellen von Regeln mit der Cloud Manager-Konfigurations-Pipeline
+* Testen von Regeln mit Tools zur Simulation von bösartigem Traffic
+* Analysieren der Ergebnisse mit den Tools für die Protokollanalyse
 * Best Practices
 
 
