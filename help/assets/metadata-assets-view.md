@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '2453'
-ht-degree: 100%
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+workflow-type: tm+mt
+source-wordcount: '2430'
+ht-degree: 97%
 
 ---
 
@@ -130,10 +130,10 @@ Nachfolgend finden Sie eine Übersicht über die einzelnen Eigenschaftstypen und
 | Kontrollkästchen | Fügt einen booleschen Wert hinzu. Wird als TRUE oder FALSE gespeichert, sobald ein Wert gespeichert wird. |
 | Datum | Fügen Sie eine Datumskomponente hinzu. |
 | Dropdown | Fügt eine Dropdown-Liste hinzu. |
-| Status | Fügt die Repository-Statuseigenschaft hinzu (zugeordnet zu repo:state) |
-| Asset-Status | Fügt die standardmäßige Asset-Status-Eigenschaft hinzu (zugeordnet zu „dam:assetStatus“). |
-| Tags | Fügt ein Tag aus den Werten hinzu, die in der Taxonomie-Verwaltung gespeichert sind (zugeordnet zu „xcm:tags“). |
-| Keywords | Fügt freie Keywords hinzu (zugeordnet zu „dc:subject“). |
+| Status | Fügen Sie die Repository-Statuseigenschaft hinzu (repo zugeordnet:state) |
+| Asset-Status | Fügen Sie die standardmäßige Asset-Status-Eigenschaft hinzu (der dam zugeordnet ist:assetStatus) |
+| Tags | Fügen Sie ein Tag aus Werten hinzu, die in der Taxonomieverwaltung gespeichert sind (zugeordnet zu xcm:tags). |
+| Keywords | Fügen Sie freie Keywords hinzu (zugeordnet zu dc:subject). |
 | Smart-Tags | Fügt automatisch Metadaten-Tags hinzu, um Suchfunktionen zu ergänzen. |
 
 ### Zuweisen eines Metadatenformulars zu einem Ordner {#assign-metadata-form-folder}
@@ -228,9 +228,6 @@ So aktivieren Sie KI-generierte Metadaten:
 
 * Sie müssen eine GenAI Rider-Vereinbarung unterzeichnen. Weitere Informationen erhalten Sie vom Adobe-Support.
 
-  >[!IMPORTANT]
-  >
-  > Der KI-generierte Titel eines Assets wird nur dann auf der Asset-Karte angezeigt, wenn Sie den Asset-Titel nicht definiert haben. Ein von Ihnen angegebener Asset-Titel wird nicht überschrieben.
 
 ### Verwenden von KI-generierten Metadaten {#using-ai-generated-smart-tags}
 
@@ -252,6 +249,8 @@ Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Sc
    * **[!UICONTROL Generierte Keywords]:** Die Keywords sind zielgerichtete Begriffe, die die Hauptthemen eines Assets darstellen und beim Tagging und Filtern von Inhalten helfen.
 
 1. [Optional] Sie können zusätzliche Tags hinzufügen oder eigene erstellen, wenn Sie der Meinung sind, dass relevante Tags fehlen. Schreiben Sie dazu Ihre Tags in das Feld **[!UICONTROL Generierte Keywords]** und klicken Sie auf **[!UICONTROL Speichern]**.
+
+Informationen zum Deaktivieren von KI-generierten Metadaten finden Sie unter [Deaktivieren von KI-generierten Metadaten](/help/assets/smart-tags.md#disable-ai-generated-metadata).
 
 ## Nächste Schritte {#next-steps}
 

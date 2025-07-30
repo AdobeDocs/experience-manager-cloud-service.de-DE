@@ -4,10 +4,10 @@ description: Kennzeichnen Sie Assets mit einem Service für künstliche Intellig
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
-workflow-type: ht
-source-wordcount: '2457'
-ht-degree: 100%
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+workflow-type: tm+mt
+source-wordcount: '2696'
+ht-degree: 91%
 
 ---
 
@@ -227,9 +227,23 @@ So aktivieren Sie KI-generierte Metadaten:
 
 * Sie müssen eine GenAI Rider-Vereinbarung unterzeichnen. Weitere Informationen erhalten Sie vom Adobe-Support.
 
-  >[!IMPORTANT]
-  >
-  > Der KI-generierte Titel eines Assets wird nur dann auf der Asset-Karte angezeigt, wenn Sie den Asset-Titel nicht definiert haben. Ein von Ihnen angegebener Asset-Titel wird nicht überschrieben.
+### KI-generierte Titel konfigurieren {#configure-ai-generated-titles}
+
+Mit AEM können Sie die Anzeige von Asset-Titeln in der Karten- oder Listenansicht auf der Asset-Durchsuchen-Seite konfigurieren. Sie können den von Ihnen definierten Asset-Titel anzeigen, den Titel mithilfe von KI generieren oder einen von KI generierten Titel nur verwenden, wenn für das Asset kein Titel vorhanden ist.
+
+So konfigurieren Sie KI-generierte Titel:
+
+1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Assets-Konfiguration > Smart Tag Enhancement Configuration]**.
+
+1. Wählen Sie eine der folgenden Optionen aus:
+
+   * **DC-Titel anzeigen (Standard)**: Geben Sie den Titel im Feld **[!UICONTROL Titel]** an, das in den Asset-Eigenschaften verfügbar ist, um ihn in der Karten- oder Listenansicht anzuzeigen. Wenn der Asset-Titel nicht definiert ist, zeigt AEM Assets den Dateinamen an.
+
+   * **KI-generierter Titel anzeigen**: Zeigt den KI-generierten Titel an und ignoriert den in den Asset-Eigenschaften angegebenen Titel. Wenn ein KI-generierter Titel für ein Asset nicht verfügbar ist, zeigt AEM Assets den Standardtitel des Assets an, der in seinen Eigenschaften verfügbar ist.
+
+   * **KI-generierten Titel nur anzeigen, wenn kein DC-Titel vorhanden ist**: AEM Assets zeigt den KI-generierten Titel nur an, wenn für ein Asset kein Asset-Titel definiert ist.
+
+     ![KI-generierte Titel konfigurieren](assets/configure-title-ai-generated.png)
 
 ### Verwenden von KI-generierten Metadaten {#using-ai-generated-smart-tags}
 
@@ -251,6 +265,26 @@ Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Sc
    * **[!UICONTROL Generierte Keywords]:** Die Keywords sind zielgerichtete Begriffe, die die Hauptthemen eines Assets darstellen und beim Tagging und Filtern von Inhalten helfen.
 
 1. [Optional] Sie können zusätzliche Tags hinzufügen oder eigene erstellen, wenn Sie der Meinung sind, dass relevante Tags fehlen. Schreiben Sie dazu Ihre Tags in das Feld **[!UICONTROL Generierte Keywords]** und klicken Sie auf **[!UICONTROL Speichern]**.
+
+### KI-generierte Metadaten deaktivieren {#disable-ai-generated-metadata}
+
+Sie können KI-generierte Metadaten auf Ordnerebene deaktivieren. Alle untergeordneten Ordner übernehmen die Eigenschaften des übergeordneten Ordners.
+
+So deaktivieren Sie KI-generierte Metadaten auf Ordnerebene:
+
+1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager > Assets > Dateien]**.
+
+1. Wählen Sie den Ordner aus und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
+
+1. Navigieren Sie auf **[!UICONTROL Registerkarte]** Asset-Verarbeitung“ zum Ordner **[!UICONTROL Smart-Tags-Verbesserungen für Bilder]**. Wählen Sie einen der folgenden Werte aus der Dropdown-Liste aus:
+
+   * Vererbt – Der Ordner übernimmt die Optionen zum Aktivieren oder Deaktivieren vom übergeordneten Ordner.
+
+   * Aktivieren - Aktiviert KI-generierte Metadaten für den ausgewählten Ordner.
+
+   * Deaktivieren - Deaktiviert KI-generierte Metadaten für den ausgewählten Ordner.
+
+     ![KI-generierte Metadaten deaktivieren](assets/disable-ai-generated-metadata.png)
 
 ## Einschränkungen und Best Practices im Zusammenhang mit Smart-Tags {#limitations-best-practices-smart-tags}
 
