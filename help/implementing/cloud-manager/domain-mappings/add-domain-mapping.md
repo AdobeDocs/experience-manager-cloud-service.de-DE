@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 93%
+source-wordcount: '542'
+ht-degree: 78%
 
 ---
 
@@ -53,3 +53,22 @@ Siehe auch [Von Adobe verwaltetes CDN](https://www.aem.live/docs/byo-cdn-adobe-m
    | Anderer CDN-Anbieter | Wählen Sie diese Option aus, wenn Sie einen eigenen CDN-Anbieter und nicht das für Sie verfügbare von Adobe verwaltete CDN verwenden.<br>Wählen Sie unter **Konfigurationsdetails** in der Dropdown-Liste **Domain** den Domain-Namen aus, der verwendet werden soll.<br>Keine verifizierten Domains in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Klicken Sie auf **Speichern**.
+
+   Adobe empfiehlt, die Domain-Zuordnung zu testen.
+
+## Testen der Domain-Zuordnung {#test-domain-mapping}
+
+Sie können überprüfen, ob eine neue Domain-Zuordnung im von Adobe verwalteten CDN vorhanden ist, ohne auf eine öffentliche DNS-Verbreitung zu warten.
+
+Führen Sie einen **curl**-Befehl aus, der die DNS-Auflösung überschreibt und direkt auf den CDN-Edge verweist:
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* Ersetzen Sie **`www.example.com`** durch Ihre Domain.
+* Ersetzen Sie für diese Zuordnung **151.101.3.10** durch die in Cloud Manager angezeigte Edge-IP-Adresse.
+
+Das Flag `--resolve` erzwingt die Anfrage an die angegebene IP-Adresse und gibt erst dann Erfolg zurück, wenn das Zertifikat und das Routing für Ihre Domain ordnungsgemäß installiert wurden.
+

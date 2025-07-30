@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 96%
+source-wordcount: '833'
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Es könnte aus folgenden Gründen erforderlich sein, dass Sie die Konfiguration 
 
 1. Klicken Sie auf **Bearbeiten**.
 
-1. Gehen Sie **Dialogfeld Domain** Konfiguration bearbeiten wie folgt vor:
+1. Gehen Sie im Dialogfeld **Domain-Konfiguration bearbeiten** wie folgt vor:
 
    * Wählen Sie aus der Dropdown-Liste **Ebene** die Ebene (Veröffentlichung oder Vorschau) aus, die Sie verwenden möchten.
    * Wählen Sie in der Dropdown-Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das Sie verwenden möchten.
@@ -106,13 +106,19 @@ Benutzende mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** 
 
 ### Löschen eines benutzerdefinierten Domain-Namens aus einer bestimmten Umgebung {#delete-cdn-specific}
 
+>[!WARNING]
+>
+>Entfernen Sie die DNS-Einträge der Domain bei Ihrem DNS-Anbieter *vor* Löschen der Domain in Cloud Manager. Verworfene (herumhängende) DNS-Einträge können entführt werden und stellen ein Sicherheitsrisiko dar.
+
+**So löschen Sie einen benutzerdefinierten Domain-Namen aus einer bestimmten Umgebung:**
+
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
 1. Navigieren Sie von der Seite **Umgebungen** zum Bildschirm „Umgebungsdetails“ der betreffenden Umgebung.
 
-1. Identifizieren Sie in der Tabelle der Domain-Zuordnungen die Zeile des benutzerdefinierten Domain-Namens, den Sie löschen möchten.
+1. Ermitteln Sie in der Tabelle mit den Domain-Zuordnungen die Zeile mit dem benutzerdefinierten Domain-Namen, der gelöscht werden soll.
 
 1. Klicken Sie ganz rechts in der Zeile auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 

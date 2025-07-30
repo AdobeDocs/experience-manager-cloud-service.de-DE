@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: ht
-source-wordcount: '710'
-ht-degree: 100%
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
+workflow-type: tm+mt
+source-wordcount: '698'
+ht-degree: 90%
 
 ---
 
@@ -49,15 +49,19 @@ In einer Umgebung können Sie beide Domains im von AEM verwalteten CDN und in Ih
 
 ## Workflow {#workflow}
 
-Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Für diesen Workflow ist eine Reihe von Schritten zum Installieren, Konfigurieren und Überprüfen benutzerdefinierter Domain-Namen erforderlich. In der folgenden Tabelle finden Sie einen Überblick über die erforderlichen Schritte, einschließlich Links zur Dokumentation mit Informationen zur Durchführung dieser Schritte.
+Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Für diesen Workflow ist eine Reihe von Schritten zum Installieren, Konfigurieren und Überprüfen benutzerdefinierter Domain-Namen erforderlich. In der folgenden Tabelle sind die erforderlichen Schritte mit Links zu den Dokumentationsressourcen aufgeführt, um diese Schritte abzuschließen.
 
-| Schritt | Beschreibung | Dokumentation |
-| --- | --- | --- |
-| 1 | Hinzufügen eines SSL-Zertifikats zu Cloud Manager | [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | Hinzufügen einer Domain zu Cloud Manager | [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | Konfigurieren der DNS-Einstellungen durch Hinzufügen von DNS-CNAME- oder APEX-Einträgen, die auf AEM as a Cloud Service verweisen | [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | Überprüfen des Domain-Verifizierungsstatus | [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Überprüfen des Status von DNS-Einträgen | [Überprüfen des Status von DNS-Einträgen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+>[!WARNING]
+>
+>Führen Sie Schritt 4 (DNS konfigurieren) *erst dann) aus* wenn Schritt 3 (Domain-Zuordnung hinzufügen) erfolgreich abgeschlossen wurde. Nach dieser Bestellung wird die Domain beim CDN von Adobe registriert und das richtige Routing eingerichtet, um Ihre Site vor Domain-Übernahmen zu schützen.
+
+| Schritt | Beschreibung |
+| --- | --- |
+| 1 | [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | [Benutzerdefinierte Domain hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | [Domain-Zuordnung hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 4 | [DNS konfigurieren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | [DNS-Status überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
