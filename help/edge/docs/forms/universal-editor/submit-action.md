@@ -9,7 +9,7 @@ hidefromToC: true
 source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -17,41 +17,41 @@ ht-degree: 79%
 
 ## Überblick
 
-Die Formularübermittlung ist der entscheidende letzte Schritt auf der Benutzer-Journey. Dort werden die erfassten Daten verarbeitet und Aktionen durchgeführt. Dieses Dokument enthält eine umfassende Anleitung zum Konfigurieren und Verwalten von Übermittlungsaktionen für adaptive Forms im universellen Editor.
+Die Formularübermittlung ist der wichtige letzte Schritt der Benutzer-Journey. Dort werden die erfassten Daten verarbeitet und Aktionen durchgeführt. Dieses Dokument enthält eine umfassende Anleitung zum Konfigurieren und Verwalten von Übermittlungsaktionen für adaptive Formulare im universellen Editor.
 
 ### Lerninhalte
 
-Am Ende dieses Dokuments erfahren Sie, wie Sie:
+Am Ende dieses Dokuments werden Sie Folgendes beherrschen:
 
 * Konfigurieren verschiedener Arten von Übermittlungsaktionen für Ihre Formulare
 * Einrichten von REST-Endpunktübermittlungen für die Integration mit externen Systemen
 * Konfigurieren von E-Mail-Sendungen für Formularantworten
-* Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Geschäftsanforderungen
-* Formularvalidierung und Fehlerszenarien bei der Übermittlung handhaben
+* Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Unternehmensanforderungen
+* Bearbeitung der Formularvalidierung und Fehlerszenarien bei der Übermittlung
 
 ### Zielgruppe
 
-Dieses Handbuch wurde für folgende Zwecke entwickelt:
+Dieses Handbuch wurde für folgende Rollen entwickelt:
 
-* **Formularentwickler** Implementieren der Übermittlungslogik
-* **Systemintegratoren** Verbinden von Formularen mit Backend-Systemen
-* **Geschäftsanalysten** Definieren von Formular-Workflows
-* **Technische Architekten** Entwerfen von Formularübermittlungsprozessen
+* **Formularentwicklerinnen und -entwickler**, die Übermittlungslogik implementieren
+* **Systemintegratorinnen und -integratoren**, die Formulare mit Backend-Systemen verknüpfen
+* **Geschäftsanalystinnen und -analysten**, die Formular-Workflows definieren
+* **Technische Architektinnen und Architekten**, die Formularübermittlungsprozesse erstellen
 
 ### Verfügbare Übermittlungsaktionen
 
-Der universelle Editor bietet zwei primäre Typen von Übermittlungsaktionen:
+Der universelle Editor bietet zwei primäre Arten von Übermittlungsaktionen:
 
 1. **An REST-Endpunkt übermitteln** * Formulardaten an API-Endpunkte senden
 2. **E-Mail senden** * Formularantworten per E-Mail versenden
 
 ### Voraussetzungen
 
-Bevor Sie Übermittlungsaktionen konfigurieren, stellen Sie Folgendes sicher:
+Bevor Sie Übermittlungsaktionen konfigurieren, müssen Sie:
 
-* Zugriff auf den universellen Editor
-* Ordnungsgemäße Berechtigungen für die Formularkonfiguration
-* Erläuterung des Zielübermittlungsendpunkts oder der E-Mail-Konfiguration
+* Zugriff auf den universellen Editor haben
+* Ordnungsgemäße Berechtigungen für die Formularkonfiguration besitzen
+* Den Zielübermittlungsendpunkt oder die E-Mail-Konfiguration verstanden haben
 
 Eine Übermittlungsaktion gibt das Ziel für die Daten an, die über ein adaptives Formular erfasst werden. Der Übermittlungsprozess beginnt, wenn die Benutzenden im Formular auf die Schaltfläche **[!UICONTROL Senden]** klicken. AEM Forms bietet zwei Arten von Übermittlungsaktionen, die unten beschrieben werden, und ermöglicht es Ihnen, benutzerdefinierte Übermittlungsaktionen zu erstellen und zu verwenden, die Ihre spezifischen Anforderungen erfüllen. Vordefinierte Übermittlungsaktionen:
 
@@ -82,7 +82,7 @@ So konfigurieren Sie einen REST-Endpunkt:
 1. Geben Sie die URL des REST-Endpunkts an.
 1. Sie können auch **POST-Anforderungen aktivieren** und eine URL eingeben, um die Anforderung zu veröffentlichen.
 
-![Screenshot des Bedienfelds für den universellen Editor mit den REST-Endpunktkonfigurationsfeldern, einschließlich URL-Eingabe und Umschalter „POST-Anfrage aktivieren“ für die Formularübermittlung](/help/forms/assets/enable-post-request-ue.png)
+![Screenshot des Panels mit den Einstellungen für den universellen Editor mit den REST-Endpunktkonfigurationsfeldern, einschließlich URL-Eingabe und Umschalter „POST-Anforderung aktivieren“ für die Formularübermittlung](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
