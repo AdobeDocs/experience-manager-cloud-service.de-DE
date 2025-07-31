@@ -2,13 +2,13 @@
 Title: How to integrate Adaptive Form to a SharePoint Document Library?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: Verbinden der SharePoint-Dokumentbibliothek für ein adaptives Formular, Senden an SharePoint, Erstellen einer SharePoint-Dokumentbibliothek, Verwenden der Übermittlungsaktion „An SharePoint senden“ in einem adaptiven Formular, AEM Forms-Datenmodell SharePoint-Dokumentbibliothek, Forms-Datenmodell SharePoint-Dokumentbibliothek, Integrieren des Forms-Datenmodells in die SharePoint-Dokumentbibliothek
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 75%
+source-wordcount: '964'
+ht-degree: 63%
 
 ---
 
@@ -21,7 +21,7 @@ So verwenden Sie die Sendeaktion **[!UICONTROL An SharePoint-Dokumentbibliothek 
 1. [Konfiguration für die SharePoint-Dokumentbibliothek erstellen](#1-create-a-sharepoint-document-library-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® SharePoint-Speicher verbunden.
 2. [Sendeaktion „An SharePoint senden“ in einem adaptiven Formular verwenden](#2-use-sharepoint-document-library-configuration-in-an-adaptive-form): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
-## 1. Erstellen Sie eine SharePoint-Dokumentbibliothekskonfiguration
+## &#x200B;1. Erstellen Sie eine SharePoint-Dokumentbibliothekskonfiguration
 
 So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint-Dokumentbibliothekspeicher:
 
@@ -59,30 +59,73 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint-Dokumentbibliotheksp
 
 Jetzt können Sie die SharePoint-Sites-Konfiguration für die Sendeaktion in einem adaptiven Formular verwenden.
 
-### 2. Verwenden der SharePoint-Dokumentbibliothekskonfiguration in einem adaptiven Formular
+### &#x200B;2. Verwenden der SharePoint-Dokumentbibliothekskonfiguration in einem adaptiven Formular
 
-Sie können die erstellte Konfiguration für die SharePoint-Dokumentbibliothek in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem SharePoint-Ordner zu speichern. Führen Sie die folgenden Schritte aus, um eine Speicherkonfiguration der SharePoint-Dokumentbibliothek in einem adaptiven Formular zu verwenden:
+Sie können die erstellte SharePoint-Dokumentbibliothekskonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem SharePoint-Ordner zu speichern.
 
-1. Erstellen Sie ein [adaptives Formular](/help/forms/creating-adaptive-form-core-components.md).
+>[!NOTE]
+>
+> * Wählen Sie denselben [!UICONTROL Konfigurations-Container] für ein adaptives Formular, in dem Sie den SharePoint-Dokumentbibliothekspeicher erstellt haben.
+> * Wenn kein [!UICONTROL Konfigurations-Container] ausgewählt ist, erscheinen die globalen [!UICONTROL Speicherkonfigurations]-Ordner im Fenster mit den Eigenschaften der Sendeaktion.
 
-   >[!NOTE]
-   >
-   > * Wählen Sie denselben [!UICONTROL Konfigurations-Container] für ein adaptives Formular, in dem Sie den SharePoint-Dokumentbibliothekspeicher erstellt haben.
-   > * Wenn kein [!UICONTROL Konfigurations-Container] ausgewählt ist, erscheinen die globalen [!UICONTROL Speicherkonfigurations]-Ordner im Fenster mit den Eigenschaften der Sendeaktion.
+>[!BEGINTABS]
 
-1. Wählen Sie **Sendeaktion** als **[!UICONTROL An SharePoint senden]**.
+>[!TAB Foundation-Komponente]
+
+Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Speicherkonfiguration in einem adaptiven Formular zu verwenden, das auf Foundation-Komponenten basiert:
+
+1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
+1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **Übermittlungsaktion** als **[!UICONTROL An SharePoint übermitteln]**.
+   ![Sharepoint-GIF](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
+1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
+
+>[!NOTE]
+>
+> * Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliotheksspeicher gespeichert. Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Anlagen werden auch im Verzeichnis `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anhänge mit dem ursprünglichen Namen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
+
+>[!TAB Kernkomponente]
+
+Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Speicherkonfiguration in einem adaptiven Formular basierend auf der Kernkomponente zu verwenden:
+
+1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
+1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **Übermittlungsaktion** als **[!UICONTROL An SharePoint übermitteln]**.
    ![Sharepoint-GIF](/help/forms/assets/sharedrive-video.gif)
 1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
 >[!NOTE]
 >
-> Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliotheksspeicher gespeichert. Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliotheksspeicher gespeichert. Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Anlagen werden auch im Verzeichnis `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anhänge mit dem ursprünglichen Namen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
+
+>[!TAB Universeller Editor]
+
+Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Speicherkonfiguration in einem adaptiven Formular zu verwenden, das im universellen Editor verfasst wurde:
+
+1. Öffnen Sie das adaptive Formular zum Bearbeiten.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
+Das **Formulareigenschaften** wird angezeigt.
+
+   >[!NOTE]
+   >
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
+
+1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An SharePoint übermitteln]** Übermittlungsaktion aus.
+   ![Sharepoint-GIF](/help/forms/assets/submit-to-sharepoint-ue.png)
+1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
+1. Klicken Sie **[!UICONTROL Speichern&amp;Schließen]**, um die Sendeeinstellungen zu speichern.
 
 >[!NOTE]
 >
-> Anlagen werden auch im `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anlagen mit Originalnamen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
-> ![Bild](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
+> * Wenn Sie das Formular senden, werden die Daten im angegebenen Microsoft® Sharepoint-Dokumentbibliotheksspeicher gespeichert. Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Anlagen werden auch im Verzeichnis `/folder_name/form_name/year/month/date/submission_id/data` gespeichert. Wenn Sie jedoch **Anhänge mit dem ursprünglichen Namen speichern** auswählen, werden die Anlagen im Ordner unter Verwendung ihrer ursprünglichen Dateinamen gespeichert.
+
+>[!ENDTABS]
 
 ## Verwandte Artikel
 

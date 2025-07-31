@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
+source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
 workflow-type: tm+mt
-source-wordcount: '6522'
+source-wordcount: '6551'
 ht-degree: 99%
 
 ---
@@ -766,17 +766,9 @@ ht-degree: 99%
          + [Integrieren von AEM Forms as a Cloud Service mit Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrieren adaptiver Formulare in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Anzeigen und Verstehen des Analyseberichts zu adaptiven Formularen](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Einbetten eines adaptiven Formulars in eine AEM Sites-Seite](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Einbetten eines auf Kernkomponenten basierenden adaptiven Formulars in eine externe Web-Seite](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
          + [Einbetten eines auf Foundation-Komponenten basierenden adaptiven Formulars in eine externe Web-Seite](/help/forms/embed-adaptive-form-external-web-page.md)
-         + Integrieren von adaptiven Formularen mit Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [Integrieren von Adobe Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Konfigurieren eines neuen Formulars zur Integration mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Konfigurieren von Adobe Marketo Engage-Datenquellen für vorhandene adaptive Formulare](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Konfigurieren der Aktion „An Marketo Engage senden“ für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + Formulardatenmodell {#use-form-data-model}
          + [Verbinden von AEM Forms mit einer Datenbank oder Datenquelle](/help/forms/data-integration.md)
          + [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
@@ -789,6 +781,29 @@ ht-degree: 99%
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
          + [Entwerfen eines XML-Schemas für ein adaptives Formular](/help/forms/adaptive-form-xml-schema-form-model.md)
+      + Festlegen der Sende-Aktion für ein adaptives Formular {#set-submit-action}
+         + [Von Adaptive Forms unterstützte Übermittlungsaktionen](/help/forms/aem-forms-submit-action.md)
+         + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular basierend auf Foundation-Komponenten](/help/forms/configuring-submit-actions.md)
+         + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/configure-submit-actions-core-components.md)
+         + [Konfigurieren der Übermittlungsaktion für Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
+         + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
+         + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+         + Verbinden eines adaptiven Formulars mit Microsoft® SharePoint{#connect-to-sharepoint}
+            + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Übermitteln an eine SharePoint-Dokumentbibliothek](/help/forms/connect-forms-to-sharepoint-document-library.md)
+            + [Übermitteln an eine SharePoint-Liste](/help/forms/connect-forms-to-sharepoint-list.md)
+            + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
+         + [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+         + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
+         + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
+         + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
+         + [Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+         + Integrieren von adaptiven Formularen mit Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Integrieren von Adobe Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Konfigurieren eines neuen Formulars zur Integration mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Konfigurieren von Adobe Marketo Engage-Datenquellen für vorhandene adaptive Formulare](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Konfigurieren der Aktion „An Marketo Engage senden“ für vorhandene Formulare](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Adaptive Formulare {#adaptive-forms-authoring}
       + [Erstellen eines adaptiven Formulars](/help/forms/create-an-adaptive-form.md)
       + [Welche adaptiven Formulare eignen sich am besten für Sie?](/help/edge/docs/forms/authoring-a-form.md)
@@ -806,17 +821,6 @@ ht-degree: 99%
             + [Verwenden einer maschinellen oder menschlichen Übersetzung, um ein adaptives Formular zu übersetzen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
-            + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
-            + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + Verbinden eines adaptiven Formulars mit Microsoft® SharePoint{#connect-to-sharepoint}
-               + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [Übermitteln an eine SharePoint-Dokumentbibliothek](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [Übermitteln an eine SharePoint-Liste](/help/forms/connect-forms-to-sharepoint-list.md)
-               + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
-            + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
-            + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
-            + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Verwenden von hCAPTCHA in einem adaptiven Formular (Kernkomponenten)](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Verwenden von Turnstile Captcha in einem adaptiven Formular (Kernkomponenten)](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -889,7 +893,6 @@ ht-degree: 99%
          + Verwenden von [!DNL Adobe Sign] {#use-adobe-sign}
             + [Verwenden von Adobe Sign zum elektronischen Signieren adaptiver Formulare](/help/forms/working-with-adobe-sign.md)
          + Konfigurieren von Sende-Aktionen und Metadaten-Übermittlung {#configure-submit-actions-and-metadata-submission}
-            + [Festlegen der Sende-Aktion für ein adaptives Formular](/help/forms/configuring-submit-actions.md)
             + [Konfigurieren der Umleitungsseite](/help/forms/configuring-redirect-page.md)
             + [Konfigurieren der asynchronen Übermittlung für ein adaptives Formular](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Erstellen einer benutzerdefinierten Sende-Aktion](/help/forms/custom-submit-action-form.md)

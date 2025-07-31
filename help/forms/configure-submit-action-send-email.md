@@ -2,14 +2,14 @@
 Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: So senden Sie eine E-Mail für ein adaptives Formular, E-Mail-Übermittlungsaktion, E-Mail für adaptive Formulare, E-Mail für Formularübermittlung, E-Mail-Anleitung senden
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
+title: Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '827'
+ht-degree: 87%
 
 ---
 
@@ -29,9 +29,7 @@ Bei der Übermittlungsaktion **[!UICONTROL E-Mail senden]** wird nach erfolgrei
     
     Mit freundlichen Grüßen
     WKND
-    
     “
-
 
 ## Vorteile
 
@@ -41,9 +39,30 @@ Einige Vorteile der Konfiguration eines adaptiven Formulars mit der Sendeaktion 
 * Dies trägt zur Optimierung des Workflows bei, indem Formularübermittlungen direkt in E-Mail-Benachrichtigungen integriert werden.
 * Es hilft Unternehmen, die E-Mail-Inhalte individuell anzupassen, sodass sie für spezifische Kommunikationsanforderungen geeignet sind.
 
-## Konfigurieren der Sendeaktion „E-Mail senden“ {#steps-to-configure-send-email-submit-action}
+>[!BEGINTABS]
 
-So konfigurieren Sie die Sendeaktion:
+>[!TAB Foundation-Komponente]
+
+So konfigurieren Sie eine Übermittlungsaktion „E-Mail senden“ für die Foundation-Komponente:
+
+1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
+1. Wählen Sie **[!UICONTROL E-Mail senden]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
+
+   ![Aktionskonfiguration von „E-Mail senden“](/help/forms/assets/send-email-fc.png)
+
+1. Geben Sie die E-Mail-ID der Absenderin bzw. des Absenders im Textfeld **[!UICONTROL Von]** ein.
+1. Fügen Sie die E-Mail-ID der der Empfängerin bzw. des Empfängers  im Textfeld **[!UICONTROL Nach]** ein. Sie können mehrere Empfängerinnen und Empfänger hinzufügen, indem Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** klicken.
+1. [Optional] Fügen Sie die Empfängerinnen und Empfänger für CC und BCC hinzu, indem Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** klicken.
+1. Legen Sie die Betreffzeile im Textfeld **[!UICONTROL Betreff]** fest.
+1. Fügen Sie eine E-Mail-Vorlage hinzu, um die Sendeaktion „E-Mail senden“ zu konfigurieren.
+   * Sie können den Pfad zur externen E-Mail-Vorlage angeben, die in Ihren AEM-Assets gespeichert ist, indem Sie die Option **[!UICONTROL Externer Vorlagenpfad]** verwenden.
+   * Sie können auch eine benutzerdefinierte E-Mail-Vorlage für die Formularübermittlung im Textfeld **[!UICONTROL E-Mail-Vorlage]** hinzufügen.
+1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
+
+>[!TAB Kernkomponente]
+
+So konfigurieren Sie die Übermittlungsaktion E-Mail senden für die Kernkomponente:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
@@ -61,12 +80,41 @@ So konfigurieren Sie die Sendeaktion:
 1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
+>[!TAB Universeller Editor]
+
+So konfigurieren Sie die Übermittlungsaktion E-Mail senden im universellen Editor:
+
+1. Öffnen Sie das adaptive Formular zum Bearbeiten.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
+Das **Formulareigenschaften** wird angezeigt.
+
+   >[!NOTE]
+   >
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
+
+
+1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL E-Mail senden]** Übermittlungsaktion aus.
+
+   ![Universeller E-Mail-Editor senden](/help/forms/assets/send-email-ue.png)
+
+1. Geben Sie die E-Mail-ID der Absenderin bzw. des Absenders im Textfeld **[!UICONTROL Von]** ein.
+1. Fügen Sie die E-Mail-ID der der Empfängerin bzw. des Empfängers  im Textfeld **[!UICONTROL Nach]** ein. Sie können mehrere Empfängerinnen und Empfänger hinzufügen, indem Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** klicken.
+1. [Optional] Fügen Sie die Empfängerinnen und Empfänger für CC und BCC hinzu, indem Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** klicken.
+1. Legen Sie die Betreffzeile im Textfeld **[!UICONTROL Betreff]** fest.
+1. Fügen Sie eine E-Mail-Vorlage hinzu, um die Sendeaktion „E-Mail senden“ zu konfigurieren.
+   * Sie können den Pfad zur externen E-Mail-Vorlage angeben, die in Ihren AEM-Assets gespeichert ist, indem Sie die Option **[!UICONTROL Externer Vorlagenpfad]** verwenden.
+   * Sie können auch eine benutzerdefinierte E-Mail-Vorlage für die Formularübermittlung im Textfeld **[!UICONTROL E-Mail-Vorlage]** hinzufügen.
+1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
+1. Klicken Sie **[!UICONTROL Speichern und schließen]**.
+
+>[!ENDTABS]
+
 ## Best Practices {#best-practices}
 
 * Es wird empfohlen, den E-Mail-Inhalt klar und prägnant zu halten. Benutzerinnen und Benutzer sollten den Zweck der E-Mail verstehen und wissen, welche Maßnahmen sie ergreifen müssen.
 * Es ist wichtig, dass alle Formularfelder eindeutige Elementnamen haben, auch wenn sie in verschiedenen Bereichen innerhalb eines adaptiven Formulars platziert werden.
 * Bei der Verwendung von AEM as a Cloud Service ist eine Verschlüsselung für ausgehendene E-Mails erforderlich. Die Funktion für ausgehende E-Mails ist standardmäßig deaktiviert. Senden Sie zur Aktivierung ein Support-Ticket, um [Zugriff anzufordern](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email).
-
 
 ## Ähnliche Artikel
 

@@ -3,13 +3,13 @@ title: Integration von Adobe Workfront Fusion mit der AEM-Formularübermittlung
 description: Adobe Workfront Fusion ermöglicht es Ihnen, sich auf neue Aufgaben zu konzentrieren, anstatt sich auf sich wiederholende Aufgaben zu konzentrieren. Sie können Adobe Workfront Fusion über die Formularübermittlung mit einem adaptiven Formular verbinden.
 keywords: Senden eines adaptiven Formulars an Adobe Workfront Fusion, Integration von Adobe Workfront Fusion mit der AEM-Formularübermittlung, Adobe Workfront Fusion mit AEM Forms, Workfront Fusion mit AEM Forms, Verbinden von Workfront Fusion mit AEM Forms, AEM Forms und Workfront Fusion, Wie verbindet man Workfront Fusion mit AEM Forms?, Verbinden von Workfront Fusion mit einem Formular
 topic-tags: author, developer
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 100%
+source-wordcount: '1287'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Um eine Verbindung zwischen Workfront Fusion und AEM Forms herzustellen, ist Fol
 
 ## Integrieren von AEM-Formularen mit Adobe Workfront Fusion
 
-### 1. Erstellen eines Workfront-Szenarios {#workflow-scenario}
+### &#x200B;1. Erstellen eines Workfront-Szenarios {#workflow-scenario}
 
 Um ein Workfront-Szenario zu erstellen, führen Sie die folgenden Schritte aus:
 
@@ -51,6 +51,7 @@ Um ein Workfront-Szenario zu erstellen, führen Sie die folgenden Schritte aus:
 #### Erstellen eines Szenarios {#create-scenario}
 
 So erstellen Sie ein Szenario:
+
 1. Melden Sie sich bei Ihrem [Workfront Fusion-Konto](https://app-qa.workfrontfusion.com/) an.
 1. Klicken Sie unter **[!UICONTROL Szenarien]** auf das ![Freigabe-Symbol](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in der linken Leiste.
 1. Klicken Sie auf **[!UICONTROL Ein neues Szenario erstellen]** in der oberen rechten Ecke der Seite. Eine Seite zum Erstellen eines neuen Szenarios wird auf dem Bildschirm angezeigt.
@@ -143,49 +144,56 @@ So fügen Sie eine Verbindung hinzu:
 >
 > Wenn Sie das Workfront-Szenario nicht aktivieren, wird die Formularübermittlung nicht erkannt, und die Einstellung der Übermittlungsaktion auf Workfront führt zu einer fehlgeschlagenen Übermittlung.
 
-### 2. Konfigurieren der Übermittlungsaktion eines adaptiven Formulars für Workfront Fusion
+### &#x200B;2. Konfigurieren der Übermittlungsaktion eines adaptiven Formulars für Workfront Fusion
 
-Sie können die Übermittlungsaktion für Workfront Fusion für Folgendes konfigurieren:
-* [Neue adaptive Formulare](#new-af-submit-action)
-* [Vorhandene adaptive Formulare](#existing-af-submit-action)
+>[!BEGINTABS]
 
-#### Konfigurieren der Übermittlungsaktion für das neue adaptive Formular für Workfront Fusion {#new-af-submit-action}
+>[!TAB Foundation-Komponente]
 
-So konfigurieren Sie die Übermittlungsaktion des neuen adaptiven Formulars für Workfront Fusion:
+So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basierend auf Foundation-Komponenten für Workfront Fusion:
 
-1. Melden Sie sich bei Ihrer AEM-Instanz an. 
-1. Gehen Sie zu **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** > **[!UICONTROL Erstellen]** > **[!UICONTROL Adaptives Formular]**. Der **[!UICONTROL Assistent zum Erstellen von Formularen]** erscheint.
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Quelle]** eine Vorlage für ein adaptives Formular aus.
-1. Wählen Sie ein Design auf der Registerkarte **[!UICONTROL Stil]**.
+1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
+1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **[!UICONTROL Workfront Fusion-Szenario aufrufen]**.
+   ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-fusion-fc.png)
 
-   ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-scenario-new-af.png)
+1. Wählen Sie **[!UICONTROL Workfront Fusion Szenario]** aus der Dropdown-Liste.
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Übermittlungen]** die Option **[!UICONTROL Ein WorkFront Fusion-Szenario aufrufen]**.
-1. Wählen Sie den erstellten Webhook auf der Registerkarte **[!UICONTROL Optionen]** im Fenster **[!UICONTROL Eigenschaften]** aus.
+
+>[!TAB Kernkomponente]
+
+So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basierend auf Kernkomponenten für Workfront Fusion:
+
+1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
+1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **[!UICONTROL Workfront Fusion-Szenario aufrufen]**.
+
+   ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
+1. Wählen Sie **[!UICONTROL Workfront Fusion Szenario]** aus der Dropdown-Liste.
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
+
+>[!TAB Universeller Editor]
+
+So konfigurieren Sie die Übermittlungsaktion eines mit dem universellen Editor erstellten adaptiven Formulars:
+
+1. Öffnen Sie das adaptive Formular zum Bearbeiten.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
+Das **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
-   > Der Webhook-Name des Workfront-Szenarios erscheint in der Dropdown-Liste **Optionen**.
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]**.
-1. Geben Sie den Namen für Ihr neues adaptives Formular an und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL Workfront Fusion-Szenario aufrufen]** Übermittlungsaktion.
 
-#### Konfigurieren der Übermittlungsaktion des vorhandenen adaptiven Formulars für Workfront Fusion {#existing-af-submit-action}
+   ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-fusion-ue.png)
 
-So konfigurieren Sie die Übermittlungsaktion des vorhandenen adaptiven Formulars für Workfront Fusion:
-
-1. Melden Sie sich bei Ihrer AEM-Instanz an. 
-1. Gehen Sie zu **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Wählen Sie ein adaptives Formular aus und öffnen Sie es in einem Bearbeitungsmodus.
-1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
-
-   ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
-
-1. Öffnen Sie die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Wählen Sie die **[!UICONTROL Übermittlungsaktion]** als **[!UICONTROL Aufruf eines Workfront Fusion-Szenarios]**.
 1. Wählen Sie **[!UICONTROL Workfront Fusion Szenario]** aus der Dropdown-Liste.
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+1. Klicken Sie **[!UICONTROL Speichern und schließen]**.
+
+>[!ENDTABS]
 
 ## Best Practices {#best-practices}
 

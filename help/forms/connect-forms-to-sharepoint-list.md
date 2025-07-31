@@ -2,16 +2,16 @@
 Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: Verbinden der SharePoint-Liste für ein adaptives Formular, Senden an SharePoint, Erstellen einer SharePoint-Listenkonfiguration, Verwenden der Übermittlungsaktion „An SharePoint senden“ in einem adaptiven Formular, Verbinden eines adaptiven Formulars mit der Microsoft&reg;-SharePoint-Liste.
-feature: Adaptive Forms, Core Components
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+title: Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
+source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 87%
 
 ---
-
 
 # Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
@@ -22,7 +22,7 @@ So verwenden Sie die Sendeaktion [!UICONTROL An SharePoint senden] in einem adap
 1. [Erstellen einer SharePoint-Listenkonfiguration](#1-create-a-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
 1. [Verwenden von „Senden mit Formulardatenmodell (FDM)“ in einem adaptiven Formular](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
-## 1. Erstellen einer SharePoint-Listenkonfiguration
+## &#x200B;1. Erstellen einer SharePoint-Listenkonfiguration
 
 So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
@@ -44,7 +44,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
 
 
-## 2. Verwenden des Übermittlungsprozesses mit dem Formulardatenmodell (FDM) in einem adaptiven Formular {#use-submit-using-fdm}
+## &#x200B;2. Verwenden des Übermittlungsprozesses mit dem Formulardatenmodell (FDM) in einem adaptiven Formular {#use-submit-using-fdm}
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Liste in einem adaptiven Formular zu verwenden:
 
