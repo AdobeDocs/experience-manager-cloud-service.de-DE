@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1012'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Universeller Editor für Edge Delivery Services for Forms
 
-<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabveröffentlichungskanal</a> verfügbar ist. </span>
 
 Der universelle Editor revolutioniert die Formularerstellung für Adobe Edge Delivery Services, indem er eine einfache, visuelle und intuitive WYSIWYG-Benutzeroberfläche (What You See Is What You Get) bereitstellt. Er wurde für Personen, die Inhalte und Formulare erstellen, entwickelt und vereinfacht die herkömmlichen komplexen Formularerstellungsprozesse, sodass er auch von Benutzenden ohne technischen Hintergrund verwendet werden kann.
 
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Onboarding
 
-<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
+<span class="preview"> Dies ist eine vorab veröffentlichte Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabveröffentlichungskanal</a> verfügbar ist. </span>
 
 ## Häufig gestellte Fragen (FAQ)
 

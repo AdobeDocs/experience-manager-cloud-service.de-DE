@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
    >[!NOTE]
    >
    >* Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
-   >* Dieser Schritt listet sowohl direkte als auch indirekte Referenzen auf. Dies kann sich von der Menge unterscheiden, die im **Umbenennen** des Assistenten sowie von den in der Leiste „Verweise“ gemeldeten Verweisen gemeldet wird, die beide aus Leistungsgründen nur direkte Verweise melden.
+   >* Dieser Schritt listet sowohl direkte als auch indirekte Verweise auf. Die Anzahl kann sich von der Anzahl unterscheiden, die im Schritt **Umbenennen** des Assistenten sowie in der Leiste „Verweise“ gemeldet wurde, da diese beiden Optionen aus Leistungsgründen nur direkte Verweise melden.
 
    ![Erneutes Veröffentlichen einer Seite nach Verschiebung](/help/sites-cloud/authoring/assets/move-page-republish.png)
 

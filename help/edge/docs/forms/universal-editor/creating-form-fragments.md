@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Erstellen wir ein nun einfaches Formular „`Employee Details`“, das Informati
 
    Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert. 
 
-   ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ erfolgreich in ein Mitarbeiterformular im universellen Editor integriert wurde, und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ erfolgreich in ein Mitarbeiterformular im universellen Editor integriert wurde und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    Sie können das Formular in einer Vorschau anzeigen, um zu sehen, wie das Formular im Modus **Vorschau** aussieht.
 

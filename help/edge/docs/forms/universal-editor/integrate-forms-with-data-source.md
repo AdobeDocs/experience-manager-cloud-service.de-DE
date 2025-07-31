@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Wenn Sie ein schemabasiertes Formular erstellen, wird es automatisch mit einer D
 
    Wenn Sie auf **[!UICONTROL Erstellen]** klicken, wird das Formular zwecks Erstellung im universellen Editor geöffnet.
 
-   ![Screenshot des universellen Editors, der ein schemabasiertes Formular mit vorausgefüllten Formularfeldern und den Inhaltsbrowser mit verfügbaren Datenquellenelementen zeigt](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![Screenshot des universellen Editors, der ein schemabasiertes Formular mit vorausgefüllten Formularfeldern und den Inhalts-Browser mit verfügbaren Datenquellenelementen zeigt](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    Das Formular wird mithilfe der Datenelemente aus der zugehörigen Datenquelle erstellt, wobei die Formularfelder eine vorkonfigurierte Datenbindung aufweisen.
 
@@ -131,7 +131,7 @@ Wenn Sie ein nicht schemabasiertes Formular erstellen, wird keine Datenquelle ko
 
    Sie können diese Elemente auch per Drag-and-Drop in das zu erstellende adaptive Formular ziehen. Wenn Sie auf **[!UICONTROL Hinzufügen]** klicken, werden die ausgewählten Elemente auf der Registerkarte **[!UICONTROL Datenquelle]** zu Ihrem Formular hinzugefügt, und vor den hinzugefügten Elementen wird ein Häkchen angezeigt.
 
-   ![Screenshot, der den universellen Editor mit einem Nicht-Schemaformular zeigt, das durch Ziehen und Ablegen von Datenelementen von der Registerkarte „Data Source&quot; in die Formularstruktur erstellt wird](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![Screenshot des universellen Editors mit einem Nicht-Schemaformular, das durch Ziehen und Ablegen von Datenelementen von der Registerkarte „Data Source“ in die Formularstruktur erstellt wird](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 Sie können die Datenbindung in einem Formularfeld hinzufügen, indem Sie sie über die Eigenschaft **Bindungsverweis** auswählen. Fügen wir beispielsweise einen Datenbindungsverweis zum Textfeld **ID** hinzu, das bereits im Formular vorhanden ist.
 Führen Sie die folgenden Schritte aus, um die Datenbindung für das Formularfeld über die Datenquellstruktur auszuwählen:

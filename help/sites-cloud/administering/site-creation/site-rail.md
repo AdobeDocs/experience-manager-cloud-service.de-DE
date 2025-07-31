@@ -1,27 +1,27 @@
 ---
-title: Verwenden des Site-Bedienfelds zum Verwalten Ihres Site-Designs
-description: Lernen Sie die leistungsstarken Funktionen des Site-Bedienfelds kennen, mit denen Sie Ihr Site-Design für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung einfach anpassen und verwalten können.
+title: Verwenden des Panels „Site“ zum Verwalten Ihres Site-Designs
+description: Lernen Sie die leistungsstarken Funktionen des Panels „Site“ kennen, mit denen Sie Ihr Site-Design für traditionelle AEM-Authoring-Projekte einfach mit Veröffentlichungsbereitstellung anpassen und verwalten können.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
 source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
-# Verwenden des Site-Bedienfelds zum Verwalten Ihres Site-Designs {#site-panel}
+# Verwenden des Panels „Site“ zum Verwalten Ihres Site-Designs {#site-panel}
 
 {{traditional-aem}}
 
-Lernen Sie die leistungsstarken Funktionen des Site-Bedienfelds kennen, mit denen Sie Ihr Site-Design für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung einfach anpassen und verwalten können.
+Lernen Sie die leistungsstarken Funktionen des Panels „Site“ kennen, mit denen Sie Ihr Site-Design für traditionelle AEM-Authoring-Projekte einfach mit Veröffentlichungsbereitstellung anpassen und verwalten können.
 
 ## Überblick {#overview}
 
-Im Site-Bedienfeld können Sie die Design- und Vorlagenressourcen Ihrer Site für herkömmliche AEM-Authoring-Projekte mit [Publish-Bereitstellung“ verwalten.](/help/sites-cloud/authoring/author-publish.md) [wie andere Bereiche](/help/sites-cloud/authoring/sites-console/console-side-panel.md) z. B. die Inhaltsstruktur-, Verweis- oder Zeitleisten-Bereiche wird das Site-Bedienfeld in der Sites-Konsole als Bereich ganz links angezeigt, der Informationen zum ausgewählten Element anzeigt. Im Gegensatz zu anderen Bedienfeldern gilt das Site-Bedienfeld aber nur für Site-Stammverzeichnisse.
+Das Panel „Site“ ermöglicht Ihnen die Verwaltung der Design- und Vorlagenressourcen Ihrer Site für herkömmliche AEM-Authoring-Projekte mit [Veröffentlichungsbereitstellung.](/help/sites-cloud/authoring/author-publish.md) [Genau wie andere Panels](/help/sites-cloud/authoring/sites-console/console-side-panel.md), z. B. die Panels „Inhaltsstruktur“, „Verweis“ oder „Timeline“, wird auch das Panel „Site“ in der Sites-Konsole ganz links als Bereich angezeigt, der Informationen zum ausgewählten Element enthält. Im Gegensatz zu anderen Bedienfeldern gilt das Site-Bedienfeld aber nur für Site-Stammverzeichnisse.
 
 Das Site-Bedienfeld wird verwendet, um Informationen zu Designs und Vorlagen für Ihre Site zu verwalten, darunter:
 

@@ -5,9 +5,9 @@ exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: d683051387af5c0de45917a50003c2194d887bc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die bestehende Verwendung des [Assets-HTTP-API](https://experienceleague.adobe.c
 
 >[!CAUTION]
 >
->Standardmäßig ist die OpenAPI für die Inhaltsfragmentverwaltung bei der Veröffentlichung deaktiviert. Stattdessen empfehlen wir für bereitstellungsorientierte Anwendungsfälle die Verwendung der [OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-content-fragment-delivery-with-openapi.md).
+>Standardmäßig ist das OpenAPI für die Inhaltsfragmentverwaltung bei der Veröffentlichung deaktiviert. Stattdessen empfehlen wir für bereitstellungsorientierte Anwendungsfälle die Verwendung des [OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headless/aem-content-fragment-delivery-with-openapi.md).
 
 >[!NOTE]
 >

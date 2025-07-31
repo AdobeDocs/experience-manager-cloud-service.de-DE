@@ -6,9 +6,9 @@ feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: afae63ae84d3807cc3563f6b0fbff73931ff051b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1820'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -153,11 +153,11 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 
 Wählen Sie das Symbol für die Authentifizierungs-Header-Einstellungen aus, wenn Sie [einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke festlegen möchten](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
-![Schaltfläche „Einstellungen für Authentifizierungs-Header“](assets/authentication-header-settings.png)
+![Schaltfläche „Authentifizierungs-Header-Einstellungen“](assets/authentication-header-settings.png)
 
 >[!NOTE]
 >
->Diese Schaltfläche ist standardmäßig ausgeblendet, da sie in den meisten Fällen nur einen begrenzten Wert hat. Falls erforderlich, senden Sie eine E-Mail an Ihren Adobe Customer Success Manager über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse.
+>Diese Schaltfläche ist standardmäßig ausgeblendet, da sie in den meisten Fällen wenig hilfreich ist. Falls Sie die Schaltfläche benötigen, senden Sie eine E-Mail an Ihren Adobe Customer Success Manager über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse.
 
 #### Emulator-Einstellungen {#emulator}
 

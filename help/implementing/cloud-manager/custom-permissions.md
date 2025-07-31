@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1490'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ In diesem Abschnitt werden diese Schritte beschrieben. Möglicherweise helfen Ih
 
 ### Erstellen eines neuen Produktprofils {#create}
 
-Erstellen Sie zunächst ein Produktprofil, dem Sie benutzerdefinierte Berechtigungen zuweisen können.
+Erstellen Sie zunächst ein neues Produktprofil, dem Sie benutzerdefinierte Berechtigungen zuweisen können.
 
 1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an.
 
@@ -174,7 +174,7 @@ Berechtigungselemente beziehen sich auf den Anwendungsumfang der Berechtigung. I
 
 | Berechtigungselementtyp | Beispiel | Beschreibung |
 | --- | --- | --- |
-| Unternehmen | Organisation:companyA | Alle anwendbaren Ressourcen eines Unternehmens. Eine Ressource kann ein Programm, eine Umgebung oder eine Pipeline sein. Wenn Benutzende ein Unternehmen für eine Berechtigung hinzufügen, erhalten auch alle neuen Ressourcen in diesem Unternehmen diese Berechtigung. |
+| Unternehmen | Unternehmen:companyA | Alle anwendbaren Ressourcen eines Unternehmens. Eine Ressource kann ein Programm, eine Umgebung oder eine Pipeline sein. Wenn Benutzende ein Unternehmen für eine Berechtigung hinzufügen, erhalten auch alle neuen Ressourcen in diesem Unternehmen diese Berechtigung. |
 | Programm | Programm A | Alle anwendbaren Ressourcen eines Programms. |
 | Umgebung | Programm A : Umgebung | Anwendbar für eine bestimmte Umgebung. |
 | Pipeline | Programm A : Pipeline | Anwendbar für eine bestimmte Pipeline. |

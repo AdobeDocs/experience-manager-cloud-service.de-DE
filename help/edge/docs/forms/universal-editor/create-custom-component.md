@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1802'
+ht-degree: 100%
 
 ---
 
 # Erstellen benutzerdefinierter Komponenten beim WYSIWYG-Authoring
 
-<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabveröffentlichungskanal</a> verfügbar ist. </span>
 
 
 Edge Delivery Services Forms bietet eine Anpassung, die es Frontend-Entwicklerinnen und -Entwicklern ermöglicht, maßgeschneiderte Formularkomponenten zu erstellen. Diese benutzerdefinierten Komponenten lassen sich nahtlos in das WYSIWYG-Authoring-Erlebnis integrieren und können im Formulareditor einfach hinzugefügt, konfiguriert und verwaltet werden. Mit benutzerdefinierten Komponenten können Sie die Funktionalität verbessern und gleichzeitig einen reibungslosen und intuitiven Authoring-Prozess sicherstellen.
@@ -326,9 +326,9 @@ Nach Abschluss der oben genannten Schritte wird die benutzerdefinierte Komponent
 
 ![Screenshot der Palette der Komponente „Universeller Editor“ mit der benutzerdefinierten Bereichskomponente, die per Drag-and-Drop in Formulare gezogen werden kann](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
-Der folgende Screenshot zeigt die Eigenschaften der Komponente `range` an, die dem Komponentenmodell hinzugefügt wurde, das die Eigenschaften angibt, die bei der Formularerstellung konfiguriert werden können:
+Der folgende Screenshot zeigt die Eigenschaften der Komponente `range` an. Diese wurde dem Komponentenmodell hinzugefügt, das die Eigenschaften angibt, die bei der Formularerstellung konfiguriert werden können:
 
-![Screenshot des Bedienfelds für universelle Editor-Eigenschaften mit konfigurierbaren Einstellungen für die Bereichskomponente, einschließlich grundlegender Eigenschaften, Validierungsregeln und Stiloptionen](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Screenshot des Panels für Eigenschaften des universellen Editors mit konfigurierbaren Einstellungen für die Bereichskomponente, einschließlich grundlegender Eigenschaften, Validierungsregeln und Stiloptionen](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Sie können jetzt das Laufzeitverhalten Ihrer benutzerdefinierten Komponente definieren, indem Sie Formatierung und Funktionen hinzufügen.
 
@@ -392,7 +392,6 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    float: right;
    }
    ```
-
    Mit dem Code können Sie die Formatierung und das visuelle Erscheinungsbild der benutzerdefinierten Komponente definieren.
 
 1. Um die Funktionen hinzuzufügen, navigieren Sie zur Datei `/blocks/form/components/range/range.js` und fügen Sie die folgende Code-Zeile hinzu:

@@ -1,13 +1,13 @@
 ---
 title: Überblick über Edge Delivery Services für AEM Forms
-description: Erstellen und liefern Sie leistungsstarke Formulare in Adobe Experience Manager Edge Delivery Services mit einem Schwerpunkt auf dem Authoring-Ansatz mit dem universellen Editor.
+description: Sie können leistungsstarke Formulare in Adobe Experience Manager Edge Delivery Services mit Betonung auf dem Authoring-Ansatz mit dem universellen Editor erstellen und bereitstellen.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -29,33 +29,33 @@ verwendet einfaches HTML, modernes CSS und Vanilla JavaScript, um außergewöhnl
 ## Auswählen einer Authoring-Methode
 
 
-Adobe Experience Manager (AEM) Edge Delivery Services (EDS) ermöglicht die Bereitstellung von schnellen, hochgradig skalierbaren Web-Erlebnissen direkt am Edge. In diesem Handbuch wird erläutert **wie Sie Formulare für diese Erlebnisse erstellen und** - mit einer klaren Empfehlungshierarchie:
+Adobe Experience Manager (AEM) Edge Delivery Services (EDS) ermöglicht die Bereitstellung von schnellen, hochgradig skalierbaren Web-Erlebnissen direkt am Edge. In diesem Handbuch wird erläutert, **wie Sie Formulare für diese Erlebnisse erstellen und veröffentlichen** – mit einer klaren Empfehlungshierarchie:
 
-* **Universeller Editor (UE) - Beste Wahl für die meisten Teams**
-* **Dokumentenbasiertes Authoring (Dokumente/Blätter) - Ideal für schnelle, einfache Formulare**
-* **Dokumenterstellung (Document Authoring, DA) - Zum Einbetten von Formularen in von der DA erstellte Seiten**
+* **Universeller Editor (UE) – Beste Wahl für die meisten Teams**
+* **Dokumentenbasiertes Authoring (Docs/Sheets) – ideal für schnelle, einfache Formulare**
+* **Dokumenterstellung (Document Authoring, DA) – Zum Einbetten von Formularen in vom DA erstellte Seiten**
 
 Am Ende können Sie die richtige Authoring-Methode auswählen, Übermittlungsoptionen verstehen und die nächsten Schritte in Richtung produktionsbereiter Formulare ausführen.
 
 
-| Team und Anforderung | Empfohlene Methode | Warum |
+| Team und Anforderungen | Empfohlene Methode | Vorteile |
 |--------------------|--------------------|-----|
-| Marketing-Experten und -Designer benötigen visuelle Kontrolle, Bedingungslogik oder AEM-Integrationen | **Universeller Editor** | Drag-and-Drop, erweiterte Regeln, Übermittlungen an FSS oder AEM Publish |
-| Inhaltsautoren, die bereits in Word/Google Docs/Sheets arbeiten; einfache Datenerfassung in Tabellen/E-Mails | **Dokumentenbasiertes Authoring** | Bekannte Tools, schnellster Pfad für grundlegende Formulare |
-| Integrierte Website-Seiten **Dokumenterstellung (Document Authoring, DA)** | **Einbetten** eines UE- oder DOC-basierten Formulars in die DA-Seite | DA erstellt keine Formulare selbst |
+| Marketing- und Design-Fachleute benötigen visuelle Kontrolle, Bedingungslogik oder AEM-Integrationen | **Universeller Editor** | Drag-and-Drop, erweiterte Regeln, Übermittlungen an FSS oder AEM Publish |
+| Autorinnen und Autoren von Inhalten, die bereits in Word/Google Docs/Sheets arbeiten; einfache Datenerfassung in Tabellen/E-Mails | **Dokumentenbasiertes Authoring** | Vertraute Tools, schnellster Weg zu einfachen Formularen |
+| Website-Seiten, die per **Dokumenterstellung (Document Authoring, DA)** erstellt wurden | **Einbetten** eines UE- oder dokumentbasierten Formulars in die DA-Seite | DA erstellt keine Formulare selbst |
 
 
 ## Authoring-Methoden im Detail
 
 ### Universeller Editor
 
-<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabveröffentlichungskanal</a> verfügbar ist. </span>
 
-[Universeller Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ist ein visuelles Drag-and-Drop-Authoring-Tool für Marketing-Experten und Designer, das Geschwindigkeit mit Leistung auf Unternehmensniveau kombiniert:
+[Universeller Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ist ein visuelles Drag-and-Drop-Authoring-Tool für Marketing- und Design-Fachleute, das Geschwindigkeit und Leistung auf Unternehmensniveau vereint:
 
-* Echtzeit-WYSIWYG-Bearbeitung und Gerätevorschau.
+* WYSIWYG-Bearbeitung in Echtzeit und Gerätevorschau.
 * Direkte Integration mit AEM-Assets, Workflows und Formulardatenmodell (FDM).
-* Nahtlose Übergabe an Entwickler für benutzerdefinierte Komponenten in Vanilla JS/CSS.
+* Nahtlose Übergabe an Entwicklung-Teams für benutzerdefinierte Komponenten in Vanilla JS/CSS.
 * Erweiterter Regeleditor zum Erstellen einer komplexen Logik.
 * Server-seitige Erweiterbarkeit für benutzerdefinierte Funktionen.
 * WYSIWYG-Bearbeitungserlebnis für einfache Formularerstellung und -visualisierung.
@@ -65,14 +65,14 @@ Am Ende können Sie die richtige Authoring-Methode auswählen, Übermittlungsopt
 * Integration in verschiedene Datenquellen zum Vorausfüllen von Formularen und zum Übermitteln von Daten.
 * Formulardatenmodell (FDM) zum Definieren der Datenstruktur und der Interaktionen mit verschiedenen Datenquellen.
 * Möglichkeit zur Wahl zwischen mehreren Sendeaktionen für die Verarbeitung von Formularübermittlungen, darunter die Übermittlung von Daten an Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics und viele weiteren Datenquellen.
-* Übermitteln mit Übermittlungsaktionen des Forms Submission Service (FSS) oder der AEM-Veröffentlichung
+* Übermitteln mit Übermittlungsaktionen des Forms Submission Service (FSS) oder der AEM-Veröffentlichungsumgebung
 
-**Empfehlung** Beginnen Sie jedes neue Formularprojekt mit dem universellen Editor, es sei denn, Ihr Team ist zu 100 % dokumentzentriert und das Formular ist sehr einfach.
+**Empfehlung** Beginnen Sie jedes neue Formularprojekt mit dem universellen Editor, es sei denn, Ihr Team arbeitet zu 100 % dokumentenbasiert und das Formular ist sehr einfach.
 
 
-### Dokumentenbasiertes Authoring (mit Microsoft Docs oder Google Sheets)
+### Dokumentenbasiertes Authoring mit Microsoft Excel oder Google Sheets
 
-[Dokumentenbasiertes Authoring](/help/edge/docs/forms/tutorial.md) eignet sich am besten für die Erstellung einfacher, weniger komplexer Formulare mit bekannten Tools wie Microsoft Word, Google Docs oder Google Sheets. Diese Methode eignet sich ideal für Inhalts-Teams, die eine schnelle und unkomplizierte Möglichkeit zum Erstellen von Formularen benötigen.
+[Dokumentenbasiertes Authoring](/help/edge/docs/forms/tutorial.md) eignet sich am besten für die Erstellung einfacher, weniger komplexer Formulare mit bekannten Tools wie Microsoft Word, Google Docs oder Google Sheets. Diese Methode ist ideal für Inhalts-Teams, die eine schnelle und unkomplizierte Möglichkeit zum Erstellen von Formularen benötigen.
 
 * Barrierefreie Komponenten für ein benutzerfreundliches Erlebnis.
 * Standardisierte HTML-Struktur für konsistentes Rendern.
@@ -84,13 +84,13 @@ Am Ende können Sie die richtige Authoring-Methode auswählen, Übermittlungsopt
 * Überwachen der Formularleistung durch betriebliche Telemetrie
 
 
-### Einbetten von Forms in die Dokumenterstellung (DA)
+### Einbetten von Formularen in der Dokumentenerstellung
 
-Die Dokumenterstellung (Document Authoring, DA) ist für die Erstellung strukturierter Seiteninhalte konzipiert und unterstützt nicht die Erstellung nativer Formulare. Um ein Formular zu einer von der geräteübergreifenden Analyse erstellten Seite hinzuzufügen, können Sie das Formular mit dem **universellen Editor** (empfohlen) oder der dokumentbasierten Bearbeitung erstellen und das Formular in die Seite für die Dokumenterstellung einbetten.
+Die Dokumenterstellung (Document Authoring, DA) ist für die Erstellung strukturierter Seiteninhalte. Die Erstellung nativer Formulare wird nicht unterstützt. Um einer mit DA erstellten Seite ein Formular hinzuzufügen, können Sie das Formular mit dem **universellen Editor** (empfohlen) oder dem dokumentenbasierten Authoring erstellen und das Formular in die DA-Seite einbetten.
 
-## Veröffentlichen von Edge Delivery Services Forms {#edge-overview}
+## Veröffentlichen von Edge Delivery Services-Formularen {#edge-overview}
 
-Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Tabellen (dokumentbasiertes Authoring) bearbeiten und mit Edge Delivery Services veröffentlichen können. Außerdem wird die AEM-Veröffentlichungsmethode mit dem WYSIWYG-Authoring-Tool (universeller Editor) angezeigt.
+Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Sheets (dokumentenbasiertes Authoring) bearbeiten und mit Edge Delivery Services veröffentlichen können. Außerdem zeigt es die WYSIWIG-Veröffentlichungsmethode (universeller Editor) in AEM.
 
 ![Veröffentlichen in Edge Delivery Services und AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -113,13 +113,13 @@ Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Tabe
 
 ## Nächste Schritte
 
-* [Funktionen des universellen Editors für Edge Delivery Services für Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Erstellen des ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [Erstellen Sie Ihr erstes Formular mit Google Sheets oder Microsoft Excel](/help/edge/docs/forms/tutorial.md).
-* [Einbetten von Forms in die Dokumenterstellung (Document Authoring, DA)](https://www.aem.live/developer/da-tutorial)
+* [Merkmale und Funktionen des universellen Editors für Edge Delivery Services für Formulare](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Erstellen Ihres ersten Formulars mit dem universellen Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Erstellen Ihres ersten Formulars mit Google Sheets oder Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+* [Einbetten von Formularen in der Dokumentenerstellung](https://www.aem.live/developer/da-tutorial)
 
 
-Jetzt können Sie Ihr erstes Hochleistungsformular mit AEM Edge Delivery Services erstellen.
+Jetzt können Sie Ihr erstes leistungsstarkes Formular mit AEM Edge Delivery Services erstellen.
 
 
 <!-- 

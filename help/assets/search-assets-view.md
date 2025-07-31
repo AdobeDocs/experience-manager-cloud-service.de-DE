@@ -5,9 +5,9 @@ role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2277'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -123,37 +123,37 @@ Entfernen benutzerdefinierter Filter
 
 ## Semantische Suche {#semantic-search}
 
-Die semantische Suche ist eine erweiterte Suchfunktion, die die Bedeutung und den Zweck hinter der Abfrage eines Benutzers versteht, anstatt sich auf exakte Keyword-Übereinstimmungen zu verlassen. Es nutzt künstliche Intelligenz (KI), natürliche Sprachverarbeitung (NLP) und maschinelles Lernen, um genauere und kontextbezogene Ergebnisse zu liefern.
+Die semantische Suche ist eine erweiterte Suchfunktion, die die Bedeutung und den Zweck hinter der Benutzerabfrage versteht, anstatt sich auf exakte Keyword-Übereinstimmungen zu stützen. Sie nutzt künstliche Intelligenz (KI), natürliche Sprachverarbeitung (NLP) und maschinelles Lernen, um genauere und kontextbezogenere Ergebnisse zu liefern.
 
-Im Gegensatz zur herkömmlichen schlüsselwortbasierten Suche, die nach exakten Begriffen sucht, interpretiert die semantische Suche Beziehungen zwischen Wörtern, Konzepten und der Benutzerabsicht. Dadurch wird sichergestellt, dass Benutzende das Gesuchte finden - auch wenn die Abfrage anders formuliert ist, Tippfehler enthält oder in einer anderen Sprache verfasst ist.
+Im Gegensatz zur herkömmlichen Keyword-basierten Suche, die nach exakten Begriffen sucht, interpretiert die semantische Suche Beziehungen zwischen Wörtern, Konzepten und der Benutzerabsicht. Dadurch wird sichergestellt, dass Benutzende das Gesuchte finden – selbst wenn die Abfrage anders formuliert ist, Tippfehler enthält oder in einer anderen Sprache verfasst ist.
 
 Zu den wichtigsten Vorteilen zählen:
 
-* **Mehrsprachiger Support**: Suchen Sie über mehrere Sprachen hinweg, ohne dass genaue Übersetzungen erforderlich sind. Benutzer können relevante Inhalte unabhängig von ihrer Abfragesprache finden.
+* **Mehrsprachiger Support**: Suchen Sie über mehrere Sprachen hinweg, ohne dass genaue Übersetzungen erforderlich sind. Benutzende können relevante Inhalte unabhängig von ihrer Abfragesprache finden.
 
-* **Behandelt Rechtschreibfehler**: Korrigiert oder interpretiert Rechtschreibfehler automatisch und stellt so genaue Ergebnisse auch bei unvollständiger Eingabe sicher.
+* **Behandlung von Rechtschreibfehlern**: Rechtschreibfehler werden automatisch korrigiert oder interpretiert, damit auch bei unvollständiger Eingabe genaue Ergebnisse sichergestellt sind.
 
-* **Versteht Synonyme**: Liefert Ergebnisse für verwandte Begriffe und Ausdrücke, sodass Benutzende nicht das richtige Keyword erraten müssen.
+* **Verständnis von Synonymen**: Ergebnisse für verwandte Begriffe und Ausdrücke werden bereitgestellt, sodass Benutzende nicht das korrekte Keyword erraten müssen.
 
-* **Kontextabhängige Suche**: Erkennt den Zweck einer Abfrage, nicht nur die Wörter.
+* **Kontextabhängige Suche**: Der Zweck einer Abfrage wird erkannt, nicht nur der Wortlaut.
 
-* **Suche basierend auf textbasierten Eingabeaufforderungen**: Experience Manager Assets wendet Filter auf Inhalte an und zeigt geeignete Ergebnisse automatisch basierend auf einfachen textbasierten Eingabeaufforderungen an.
+* **Suche basierend auf textbasierten Prompts**: Experience Manager Assets wendet Filter auf Inhalte an und zeigt geeignete Ergebnisse automatisch basierend auf einfachen textbasierten Prompts an.
 
 >[!IMPORTANT]
 >
-> Geben Sie drei oder mehr als drei Wörter für die semantische Suche an, um geeignete Ergebnisse anzuzeigen.
+> Geben Sie bei der semantischen Suche mindestens drei Wörter ein, um aussagekräftige Ergebnisse zu erzielen.
 
 ### Beispiele für die semantische Suche {#examples-semantic-search}
 
-**Beispiel-Eingabeaufforderung**: *Frau trinkt Kaffee*
+**Beispiel-Prompt**: *Woman drinking coffee*
 
-Die herkömmliche Keyword-basierte Suche sucht nach genauen Übereinstimmungen der Asset-Metadaten wie Frau, Kaffee usw. und gibt Assets zurück, die diese Keywords enthalten.
+Die herkömmliche Keyword-basierte Suche sucht nach genauen Übereinstimmungen der Asset-Metadaten wie Woman, Coffee usw. und gibt Assets zurück, die diese Keywords enthalten.
 
-Die semantische Suche sucht jedoch nach ähnlichen Wörtern wie `Girl`, `Lady` bei `Woman`- und Kaffeeoptionen wie `Cappuccino` und `Latte` bei `Coffee`.
+Die semantische Suche sucht jedoch nach ähnlichen Wörtern wie `Girl` und `Lady` für `Woman` und Kaffeevarianten wie `Cappuccino` und `Latte` für `Coffee`.
 
-Auf ähnliche Weise können Sie diese Eingabeaufforderung auf Spanisch angeben oder `Woman` als `Wman` falsch schreiben und trotzdem die gleichen Ergebnisse erhalten.
+Genauso können Sie diesen Prompt auf Spanisch eingeben oder `Woman` fälschlicherweise als `Wman` schreiben und trotzdem dieselben Ergebnisse erhalten.
 
-![Semantische Suche in der Assets-Ansicht](assets/semantic-search.png)
+![Ansicht der semantischen Suche in AEM Assets](assets/semantic-search.png)
 
 ## Suchen von Assets mithilfe von [!DNL Adobe Firefly] {#search-firefly}
 
@@ -377,6 +377,6 @@ Um Feedback zur Kontextsuche zu geben, klicken Sie auf das Symbol für die ![Kon
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
 
 

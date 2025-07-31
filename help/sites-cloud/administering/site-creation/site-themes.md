@@ -1,14 +1,14 @@
 ---
 title: Site-Designs
-description: Erfahren Sie, wie AEM-Site-Designs verwendet werden können, um den Stil und das Design Ihrer Site für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung anzupassen.
+description: Erfahren Sie, wie Sie mit AEM-Site-Designs den Stil und das Design Ihrer Site für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung anpassen können.
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
 source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 75%
 
 {{traditional-aem}}
 
-Erfahren Sie, wie AEM-Site-Designs verwendet werden können, um den Stil und das Design Ihrer Site für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung anzupassen.
+Erfahren Sie, wie Sie mit AEM-Site-Designs den Stil und das Design Ihrer Site für herkömmliche AEM-Authoring-Projekte mit Veröffentlichungsbereitstellung anpassen können.
 
 ## Überblick {#overview}
 
 Ein AEM-Site-Design ist ein Paket, das die CSS-, JavaScript- und statischen Ressourcen enthält, die das Aussehen Ihrer AEM-Site definieren und die Struktur eines AEM-Site-Designs einhalten.
 
-Sites, die mit AEM-Site-Vorlagen erstellt wurden, ermöglichen das einfache Herunterladen, Anpassen und Neu-Bereitstellen der Designs für herkömmliche AEM-Authoring-Projekte mit [Veröffentlichungsbereitstellung.](/help/sites-cloud/authoring/author-publish.md)
+Sites, die mit AEM-Site-Vorlagen erstellt wurden, ermöglichen das einfache Herunterladen, Anpassen und erneute Bereitstellen der Designs für herkömmliche AEM-Authoring-Projekte mit [Veröffentlichungsbereitstellung](/help/sites-cloud/authoring/author-publish.md).
 
 >[!NOTE]
 >
->AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden](site-templates.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM-Site-Design, um [schnelle Site-Erstellung“ zu ](create-site.md)
+>AEM-Site-Designs sollten nicht mit [AEM-Site-Vorlagen verwechselt werden](site-templates.md). AEM-Site-Designs enthalten nur die Stil-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und beinhalten ein AEM-Site-Design, um die [schnelle Erstellung von Sites](create-site.md) zu ermöglichen.
 
 ## Verwenden von Site-Designs {#using-themes}
 

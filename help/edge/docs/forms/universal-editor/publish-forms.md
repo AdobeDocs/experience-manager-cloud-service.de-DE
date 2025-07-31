@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Veröffentlichen Ihres adaptiven Formulars mit Edge Delivery Services
 
-<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabveröffentlichungskanal</a> verfügbar ist. </span>
 
 
 Wenn Ihr Formular fertig gestellt und einsatzbereit ist, können Sie es veröffentlichen, um es Ihrer Kundschaft zur Datenerfassung und -übermittlung zugänglich zu machen. Durch die Veröffentlichung wird sichergestellt, dass das Formular in Edge Delivery verfügbar ist, sodass die Benutzenden nahtlos damit interagieren können. Auf diese Weise kann Ihre Kundschaft das Formular in Echtzeit ausfüllen und übermitteln. Dadurch wird eine effiziente Datenerfassung und eine optimierte Verarbeitung gewährleistet.
@@ -57,7 +57,6 @@ Um die sichere Formularübermittlung zu gewährleisten, müssen Sie einen **Refe
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **Für die lokale Entwicklung:**
 
 ```js
@@ -80,7 +79,6 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
 Informationen zur lokalen Entwicklung finden Sie in der [Dokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter), um CORS über die **Host-URL Ihrer Entwicklungsbenutzeroberfläche** zu aktivieren.
 
 ### Konfigurieren des Referrer-Filters

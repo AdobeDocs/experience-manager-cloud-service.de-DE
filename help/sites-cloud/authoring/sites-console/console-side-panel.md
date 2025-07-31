@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -99,8 +99,8 @@ Die Ansicht **Verweise** zeigt eine Liste der Verweistypen zu oder von der Resso
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die direkt auf die ausgewählte Seite verweisen, und bietet direkten Zugriff auf **Bearbeiten** eine dieser Seiten, wenn Sie einen bestimmten Link auswählen.
-   * Hier werden nur statische Links angezeigt, nicht dynamisch generierte Links wie aus der Listenkomponente.
+* **Eingehende Links** enthält eine Liste der Seiten, die direkt auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen. 
+   * Hier werden nur statische Links angezeigt. Dynamisch generierte Links, zum Beispiel aus der Listenkomponente, sind nicht enthalten.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) bietet Zugriff auf zugehörige Launches.
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren.
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md) bietet Details und verschiedene Aktionen.

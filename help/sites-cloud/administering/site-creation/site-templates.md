@@ -6,9 +6,9 @@ role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Vorlagen sind leistungsstark, da sie wiederverwendbar und anpassbar sind. Da in 
 >
 >AEM-Site-Vorlagen sollten nicht mit [Seitenvorlagen verwechselt werden](/help/sites-cloud/authoring/page-editor/templates.md). Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
 >
->AEM-Site-Vorlagen sollten nicht mit [AEM Site-Designs verwechselt werden.](site-themes.md) AEM-Site-Designs enthalten nur die Styling-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und enthalten ein AEM-Site-Design, um [schnelle Site-Erstellung“ zu ](create-site.md)
+>AEM-Site-Vorlagen sollten nicht mit [AEM Site-Designs verwechselt werden.](site-themes.md) AEM-Site-Designs enthalten nur die Styling-Informationen für eine AEM-Site. AEM-Site-Vorlagen definieren die Site-Struktur und den anfänglichen Inhalt und beinhalten ein AEM-Site-Design, um die [schnelle Erstellung von Sites](create-site.md) zu ermöglichen.
 
 ### Von Adobe bereitgestellte Site-Vorlagen {#adobe-templates}
 
@@ -72,4 +72,4 @@ Site-Vorlagen sind schlicht Pakete mit einer logischen Struktur, die den Zweck d
 
 ## Entwickeln von Site-Vorlagen {#developing-templates}
 
-Adobe bietet und AEM Site Template Builder als Skriptsatz zum Erstellen neuer Site-Vorlagen. [Der AEM Site Template Builder ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar.](https://github.com/adobe/aem-site-template-builder)
+Adobe stellt AEM Site Template Builder als Satz von Skripten zur Erstellung neuer Site-Vorlagen bereit. [AEM Site Template Builder und die zugehörige Benutzerdokumentation sind auf GitHub verfügbar.](https://github.com/adobe/aem-site-template-builder)

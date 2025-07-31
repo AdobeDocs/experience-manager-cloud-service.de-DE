@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '1247'
+ht-degree: 100%
 
 ---
 
 
 # Responsiver Modus beim WYSIWYG-Authoring
 
-<span class="preview"> Dies ist eine Vorabversion-Funktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal</a> verfügbar ist</span>
+<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabveröffentlichungskanal</a> verfügbar ist. </span>
 
 ## Einführung in responsive Formulare
 

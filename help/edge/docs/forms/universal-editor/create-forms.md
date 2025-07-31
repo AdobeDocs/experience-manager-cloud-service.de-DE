@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -79,14 +79,13 @@ Führen Sie die folgenden Schritte aus, um die Vorlage auszuwählen und das Form
 
    1. Geben Sie den **Namen** und den **Titel** an.
    1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL wie folgt:
-
       `https://github.com/wkndforms/edsforms`
 
    ![Assistent für die Formularerstellung](/help/edge/assets/create-form-wizard.png)
 
    Wenn Sie auf **[!UICONTROL Erstellen]** klicken, wird das Formular zur Erstellung im universellen Editor geöffnet.
 
-   ![Screenshot des universellen Editors, der ein in Bearbeitung befindliches Formular mit der Komponentenpalette auf der linken Seite, der Formulararbeitsfläche in der Mitte und dem Bedienfeld „Eigenschaften“ auf der rechten Seite zeigt](/help/edge/assets/author-form.png)
+   ![Screenshot des universellen Editors, der ein in Bearbeitung befindliches Formular mit der Komponentenpalette auf der linken Seite, der Formulararbeitsfläche in der Mitte und dem Panel „Eigenschaften“ auf der rechten Seite zeigt](/help/edge/assets/author-form.png)
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um das Formular zu erstellen. Jetzt können Sie das [Formular mit dem universellen Editor erstellen](#author-the-form).
 
 >[!TAB Kernkomponentenbasierte Vorlage]
