@@ -4,10 +4,10 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+workflow-type: tm+mt
+source-wordcount: '1923'
+ht-degree: 98%
 
 ---
 
@@ -111,8 +111,8 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 1. Nachdem Sie Ihren Inhaltsordner eingerichtet haben, ist es an der Zeit, ihn mit Ihrem Projekt auf GitHub zu verknüpfen, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben. So richten Sie die Verbindung ein:
 
    1. Wechseln Sie zum GitHub-Repository, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben.
-   1. Öffnen Sie `fstab.yaml` zur Bearbeitung.
-   1. Ersetzen Sie die vorhandene Referenz durch den Pfad zum Ordner, den Sie für die AEM-Benutzerin bzw. den AEM-Benutzer freigegeben haben (forms@adobe.com).
+   1. Fügen Sie die `fstab.yaml` Datei im Stammordner hinzu.
+   1. Fügen Sie den Verweis mit dem Pfad zu dem Ordner hinzu, den Sie für den AEM-Benutzer freigegeben haben (forms@adobe.com).
 
       ![Beispielinhalt auf Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
       Weitere Informationen zum Verwalten von Dateien in Microsoft SharePoint finden Sie unter [Verwenden von Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Übergeben Sie die aktualisierte Datei `fsatb.yaml`, sobald Sie die Referenz aktualisiert haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
+   1. Bestätigen Sie die `fsatb.yaml` Datei, sobald Sie die Referenz hinzugefügt haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
 
       ![Übergeben der aktualisierten Datei fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 

@@ -4,10 +4,10 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms umfasst einen Block, der als adaptiver Formularblock bezeichnet wird u
 ![GitHub-Repository-Workflow](/help/edge/assets/repo-workflow.png){width=auto}
 
 Dieses Tutorial führt Sie durch die Erstellung, Vorschau und Veröffentlichung Ihres eigenen Formulars mit einem neuen oder vorhandenen Adobe Experience Manager Sites-Projekt mithilfe der WYSIWYG-Bearbeitungsfunktion des universellen Editors.
-
 
 ## Voraussetzungen
 
@@ -66,16 +65,16 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
 1. Verknüpfen Sie jetzt das mit der AEM Forms-Bausteinvorlage erstellte GitHub-Repository mit der Authoring-Umgebung Ihres AEM-Projekts. So richten Sie die Verbindung ein:
 
    1. Wechseln Sie zum GitHub-Repository, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben.
-   1. Öffnen Sie die Datei **fstab.yaml**, um sie zu bearbeiten.
+   1. Fügen Sie die **fstab.yaml** im Stammordner hinzu.
 
       ![Öffnen der Datei „fstab.yaml“](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. Bearbeiten Sie die Datei **fstab.yaml**, um den Bereitstellungspunkt Ihres Projekts zu aktualisieren. Ersetzen Sie die URL durch die URL Ihrer AEM as a Cloud Service-Autoreninstanz.
+   1. Fügen Sie den Bereitstellungspunkt Ihres Projekts zur Datei **fstab.yaml** hinzu. Fügen Sie die URL Ihrer AEM as a Cloud Service-Autoreninstanz hinzu.
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![Bearbeiten der Datei „fstab.yaml“ ](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. Übergeben Sie die aktualisierte Datei **fstab.yaml**, sobald Sie die Referenz aktualisiert haben und alles gut aussieht.
+   1. Bestätigen Sie die **fstab.yaml**-Datei, sobald Sie den Verweis hinzugefügt haben und alles gut aussieht.
 
       ![Änderungen übergeben](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
