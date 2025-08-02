@@ -31,7 +31,7 @@ Es ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende 3-minütige 39-Sekunden-Video bietet eine schrittweise Anleitung zum AEM AI Assistant.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470364?learn=on&captions=ger)
 
 >[!IMPORTANT]
 >Sie müssen die Benutzervereinbarung gelesen und eingereicht haben, damit Adobe die KI-Assistentenfunktion aktivieren kann, damit Sie sie testen und am privaten Beta-Programm teilnehmen können.
