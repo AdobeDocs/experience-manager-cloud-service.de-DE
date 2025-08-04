@@ -71,12 +71,12 @@ Beide Modelle können innerhalb desselben Cloud Manager-Programms koexistieren, 
 ## Voraussetzungen {#prerequisites}
 
 1. Onboarding Ihrer Site in Cloud Manager
-- Erforderlich für beide Bereitstellungsmodelle. Begleiten Sie eine AEM-Site.
+&#x200B;- Erforderlich für beide Bereitstellungsmodelle. Begleiten Sie eine AEM-Site.
 
 2. Eigenes Git hinzufügen (BYOG) (optional)
-- Wenn Sie Website-Code außerhalb von Adobe Git speichern, schließen Sie das BYOG-Onboarding ab.
+&#x200B;- Wenn Sie Website-Code außerhalb von Adobe Git speichern, schließen Sie das BYOG-Onboarding ab.
 
 3. Edge Delivery-Lizenz
-- Stellen Sie sicher, dass Ihr Programm für Edge Delivery Services lizenziert ist.
+&#x200B;- Stellen Sie sicher, dass Ihr Programm für Edge Delivery Services lizenziert ist.
 
 
