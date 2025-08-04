@@ -5,10 +5,10 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 100%
+source-wordcount: '1997'
+ht-degree: 95%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->* Die AEM Inhaltsfragmente werden in den Standardarbeitsbereich von Adobe Target exportiert.
->* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) mit Adobe Target integriert werden.
+>AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) mit Adobe Target integriert werden.
 
 Sie können [Inhaltsfragmente](/help/sites-cloud/authoring/fragments/content-fragments.md), die in Adobe Experience Manager as a Cloud Service (AEM) erstellt wurden, nach Adobe Target (Target) exportieren. Diese können dann als Angebote in Target-Aktivitäten verwendet werden, um Erlebnisse in großem Maßstab zu testen und zu personalisieren.
 
@@ -70,50 +69,24 @@ Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für
 
 * die für den Export zu verwendenden Formatoptionen anzugeben
 * einen Target-Arbeitsbereich als Ziel auszuwählen
-* eine Externalizer-Domäne zum Umschreiben von Verweisen im Inhaltsfragment auszuwählen (optional)
 
-Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments (oder von beiden) ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
+Die erforderlichen Optionen können unter **Eigenschaften** des erforderlichen Ordners ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
 
 1. Navigieren Sie zur **Assets**-Konsole.
 
-1. Öffnen Sie die **Seiteneigenschaften** für den entsprechenden Ordner oder das Fragment.
+1. Öffnen Sie **Eigenschaften** für den entsprechenden Ordner.
 
    >[!NOTE]
    >
    >Wenn Sie die Cloud-Konfiguration zum übergeordneten Ordner des Inhaltsfragments hinzufügen, wird die Konfiguration von allen untergeordneten Elementen übernommen.
-   >
-   >Wenn Sie die Cloud-Konfiguration zum Inhaltsfragment hinzufügen, wird die Konfiguration von allen Varianten übernommen.
 
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
 
-1. Wählen Sie unter **Cloud Service-Konfiguration** in der Dropdown-Liste den Eintrag **Adobe Target**.
+1. Wählen Sie unter **Cloud Service** Konfiguration Ihre Zielkonfiguration aus der Dropdown-Liste aus.
 
-   <!-- is this note appropriate? -->
+1. Wählen Sie Ihren Adobe Target-Arbeitsbereich aus.
 
-   >[!NOTE]
-   >
-   >Das JSON-Format des Angebots eines Inhaltsfragments kann angepasst werden. Definieren Sie dazu eine kundenspezifische Inhaltsfragment-Komponente und kommentieren Sie dann, wie die Eigenschaften im Komponenten-Sling-Modell exportiert werden sollen.
-   >
-   >Siehe Kernkomponente: [Kernkomponenten – Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de)
-
-1. Wählen Sie unter **Adobe Target** Folgendes aus:
-
-   * die passende Konfiguration
-   * die Option für das erforderliche Format
-   * einen Adobe Target-Arbeitsbereich
-   * falls erforderlich – die Externalizer-Domain
-
-   >[!CAUTION]
-   >
-   >Die Externalizer-Domain ist optional.
-   >
-   > Ein AEM Externalizer wird konfiguriert, wenn die exportierten Inhalte auf eine bestimmte *publish* Domain verweisen sollen. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
-   >
-   > Beachten Sie außerdem, dass Externalizer-Domänen nur für den Inhalt des Inhaltsfragmentes, das an Target gesendet wird, relevant sind und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
-
-   Zum Beispiel für einen Ordner:
-
-   <!-- need a new screenshot -->
+   Beispiel:
 
    ![Ordner – Cloud Services](assets/cf-target-integration-01.png "Ordner – Cloud Services")
 
@@ -140,7 +113,7 @@ Sie können die Cloud-Konfiguration so konfigurieren, dass Segmente aus Adobe Ta
 Gehen Sie wie folgt vor, um eine Target-Cloud-Konfiguration in AEM zu erstellen:
 
 1. Gehen Sie zu **Legacy Cloud Services**: Über **das AEM-Logo** > **Tools** > **Cloud-Services** zu **Legacy Cloud Services**.
-Zum Beispiel: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Beispiel: ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    Die Übersichtsseite **Adobe Experience Cloud** wird geöffnet.
 
@@ -268,7 +241,7 @@ Ihr Framework wird erstellt. Um das Framework auf der Veröffentlichungsinstanz 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=de).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
