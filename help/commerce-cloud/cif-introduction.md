@@ -61,7 +61,7 @@ CIF unterstützt Sie mit standardisierten Integrationsmustern, die auf Best Prac
    * Kein Zugriff auf bereitgestellte Daten
    * Notwendigkeit von Echtzeit-Produktdaten und -Erlebnissen
 * Eine wachsende digitale Reife führt zu einem Bedarf an Experience Management
-* 
+* &#x200B;
    * CIF bietet Funktionen für das Produkterlebnis-Management, die ohne zusätzlichen Aufwand für die IT schrittweise integriert werden können.
 * Bereit für Omni-Channel
    * CIF unterstützt eine Vielzahl von Touchpoint-Technologien (Server-seitig, Hybrid, Client-seitig) mit Mustern, Accelerators und Kernkomponenten.
