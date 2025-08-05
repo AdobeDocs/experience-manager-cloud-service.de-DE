@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 90%
 
 ---
 
@@ -134,5 +134,29 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden L
 |  | Angeheftete Sammlungen nach Admin | ✓ | − |
 |  | Semantische Suche | ✓ | − |
 |  | Lokalisierte Suche und Anzeige von Metadaten | ✓ | − |
+
+## Wie kann ich ein Repository auswählen, um Assets nur für die ausgewählte Umgebung anzuzeigen? {#select-repository-multiple-environments}
+
+Wenn Sie Content Hub für Produktionsumgebungen und andere untere Umgebungen für dasselbe Programm konfiguriert haben, können Sie das Repository auswählen und die Assets für die ausgewählte Umgebung anzeigen. Führen Sie die folgenden Schritte aus:
+
+1. Klicken Sie auf das Benutzersymbol im rechten Bereich.
+
+1. Wählen Sie im **[!UICONTROL Produkteinstellungen]** die Option **[!UICONTROL Repository auswählen]** aus.
+
+1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Repository]** das Repository aus und klicken Sie zur Bestätigung **[!UICONTROL OK]**.
+
+   Content Hub zeigt jetzt Assets für die ausgewählte Umgebung an.
+
+## Wie kann Content Hub die Miniaturvorschau für den Dateityp .ZIP anzeigen? {#thumbnail-preview-zip-file}
+
+Um eine Miniaturansicht für Dateitypen wie ZIP-Dateien in Content Hub bereitzustellen, können Sie eine Ausgabedarstellung mit dem Namen `cq5dam.preview.jpg` oder `cq5dam.preview.png` zum Stamm des Pfads hinzufügen, unter dem die ZIP-Datei in der Authoring-Umgebung von AEM as a Cloud Service verfügbar ist.
+
+Das Bild, das Sie als Ausgabedarstellung hinzufügen:
+
+* Kann im JPG-, JPEG- oder PNG-Format vorliegen.
+
+* Muss unter 50 MB sein
+
+Sofern verfügbar, zeigt Content Hub das Bild als Vorschauminiatur für die ZIP-Datei in Content Hub an.
 
 

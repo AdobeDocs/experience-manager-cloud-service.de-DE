@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie einzelne oder mehrere Assets und deren Ausgabedarstellungen aus dem Content Hub-Portal herunterladen.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 97%
 
 ---
 
@@ -138,6 +138,10 @@ Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in 
   Ausgabedarstellungen für smartes Zuschneiden werden angezeigt und stehen nur dann zum Download zur Verfügung, wenn Sie Zugriff auf [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) haben. Diese Ausgabedarstellungen sind nur für Bild-Assets verfügbar.
 
   ![Ausgabedarstellungstypen](/help/assets/assets/renditions-types.png)
+
+  >[!NOTE]
+  > 
+  > Im Bedienfeld Herunterladen werden nur benutzerdefinierte statische Ausgabedarstellungen angezeigt. Die standardmäßigen `cq5dam.*`-Miniaturansichten werden in Content Hub nicht angezeigt.
 
 ### Aktivieren von dynamischen Ausgabedarstellungen {#enable-dynamic-media-renditions}
 
