@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
+source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
 workflow-type: tm+mt
-source-wordcount: '6551'
+source-wordcount: '6553'
 ht-degree: 99%
 
 ---
@@ -1017,6 +1017,7 @@ ht-degree: 99%
    + [Häufig gestellte Fragen zu Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [Einführung und Übersicht](/help/commerce-cloud/introduction.md)
+   + [Einführung in CIF](/help/commerce-cloud/cif-introduction.md)
    + [Wesentliche Änderungen an AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + Touren zu Commerce {#journeys}
       + Tour für Inhaltsautorinnen und Inhaltsautoren {#author}
