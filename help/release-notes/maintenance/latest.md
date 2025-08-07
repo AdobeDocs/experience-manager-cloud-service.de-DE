@@ -4,7 +4,7 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 0f16c31a5fea1fc538fbeabe6db182ad3a30560d
+source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 13%
@@ -131,7 +131,7 @@ Die Funktionsaktivierung von 2025.8.0 bietet den vollen Funktionsumfang für die
 
 ### Bekannte Probleme {#known-issues-21772}
 
-* SITES-31791: Inhaltsfragmente GraphQL - Abfrage schlägt fehl mit „Maximale Feldanzahl überschritten“. Siehe [Knowledgebase-Artikel](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27231).
+* SITES-31791: Inhaltsfragmente GraphQL - Abfrage schlägt fehl mit „Maximale Feldanzahl überschritten“. Siehe [Knowledgebase-Artikel](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
 
 ### Eingestellte Funktionen und APIs {#deprecated-21772}
 
@@ -140,7 +140,6 @@ Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im 
 ### Sicherheitskorrekturen {#security-21772}
 
 Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 35 identifizierte Schwachstellen und sorgt somit für einen noch robusteren Systemschutz.
-
 
 ### Eingebettete Technologien {#embedded-tech-21772}
 
@@ -151,5 +150,4 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 | AEM HTL | 1.4.28–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM-Kernkomponenten | 2.29.0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (Standard) | [Unterstützte Node.js-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
+| Node.js | 14 (Standard) | [Unterstützte Node.js-Versionen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
