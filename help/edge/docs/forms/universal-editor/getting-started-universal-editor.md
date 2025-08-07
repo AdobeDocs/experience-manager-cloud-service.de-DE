@@ -53,7 +53,7 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 ### Erforderlicher Zugriff
 
 - **GitHub-Konto** mit Berechtigung zum Erstellen von Repositorys
-- Authoring-Zugriff **** AEM as a Cloud Service
+- Authoring-Zugriff **&#x200B;**&#x200B;AEM as a Cloud Service
 
 ### Technische Anforderungen
 
@@ -184,7 +184,7 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository mit der AEM-Autorenumgebu
 
     >[!NOTE]
     >
->Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
+    >Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
 
 +++
 
