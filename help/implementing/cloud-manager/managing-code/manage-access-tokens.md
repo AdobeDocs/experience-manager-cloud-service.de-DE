@@ -3,16 +3,17 @@ title: Verwalten von Zugriffs-Token externer Repositorys in Cloud Manager
 description: Erfahren Sie, wie Sie Zugriffs-Token anzeigen, bearbeiten und löschen können, die für „Bring Your Own Git“ in AEM Cloud Manager verwendet werden.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
-workflow-type: ht
-source-wordcount: '403'
+source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+workflow-type: tm+mt
+source-wordcount: '366'
 ht-degree: 100%
 
 ---
 
 # Verwalten von Zugriffs-Token für externe Repositorys {#manage-access-tokens}
+
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens" -->
 
 Cloud Manager verwendet Zugriffs-Token, um auf externen Git-Plattformen gehostete Repositorys zu verwalten. Wenn ein Token abgelaufen war, musste das zugehörige Repository zuvor neu integriert werden, um funktionsfähig zu bleiben.
 
@@ -20,9 +21,11 @@ Mit der Funktion **Zugriffs-Token verwalten** können Sie Token jetzt effiziente
 
 Siehe auch [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
+<!--
 >[!NOTE]
 >
->Die in diesem Artikel beschriebenen Funktionen sind nur über das Private Beta-Programm verfügbar. Weitere Informationen und die Möglichkeit, sich für Private Beta anzumelden, finden Sie unter [Bringen Sie Ihren eigenen Git mit](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+-->
 
 ## Anzeigen von Zugriffs-Token {#view-access-tokens}
 
