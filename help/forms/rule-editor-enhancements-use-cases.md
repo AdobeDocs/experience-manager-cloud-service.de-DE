@@ -4,7 +4,9 @@ description: In diesem Artikel werden verschiedene Anwendungsfälle für den Reg
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 4ff533de73fcb91fb2b68cfdb3fd2602645ff7aa
+hide: true
+hidefromtoc: true
+source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -87,7 +89,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt jetzt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt jetzt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
