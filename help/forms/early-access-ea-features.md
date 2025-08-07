@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 25%
+source-wordcount: '2837'
+ht-degree: 22%
 
 ---
 
@@ -116,6 +116,8 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 
 * **Formatflexibilität**: Ausgabe in die Formate PDF, HTML, PCL, PostScript® und ZPL.
 
+* **Regeleditor**: Erstellen Sie dynamische, datengesteuerte Aktionen direkt in Ihren Dokumenten mithilfe einer intuitiven Point-and-Click-Oberfläche. Bedingte Logik einfach definieren, Workflows automatisieren und Inhalte personalisieren, ohne Code zu schreiben.
+
 #### Anwendungsfälle:
 
 * Finanzinstitute, die Kontoauszüge erstellen
@@ -123,7 +125,7 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 
@@ -154,6 +156,38 @@ AEM Forms HTML5 Forms ermöglicht es Ihnen, vorhandene XFA-Formularvorlagen (XML
 * **Entwurfsspeicherung**: Speichern Sie ein HTML5-Formular als Entwurf und füllen Sie es zu einem späteren Zeitpunkt wieder aus.
 
 Bereit zum Start? Die [Einführung in HTML5 Forms](/help/forms/introductionhtml5.md)-Dokumentation bietet einen umfassenden Überblick und eine Anleitung für die ersten Schritte mit dieser Innovation.
+
+### AEM Forms-Strukturvorlagen-CLI für benutzerdefinierte Komponenten
+
+Beschleunigen Sie die Entwicklung von AEM Forms Edge Delivery Services mit dem AEM Forms-CLI-Tool. Diese Befehlszeilenschnittstelle ermöglicht es Ihnen, sofort den Code und die Verkabelung zu generieren, die für den Schnellstart der benutzerdefinierten Komponentenentwicklung erforderlich sind - ohne Textbaustein, ohne Aufwand.
+
+>[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms-custom component-aem-forms development tool)
+
+**Schlüsselfunktionen:**
+
+* **Schnelle Strukturvorlage**: Sofortige Generierung der Struktur und des Codes für neue benutzerdefinierte Komponenten, wodurch die Zeit für die manuelle Einrichtung reduziert wird.
+* **Integrierte Best Practices**: Das Tool folgt den empfohlenen Mustern für AEM Forms Edge Delivery Services und stellt Konsistenz und Wartung sicher.
+* **Entwicklerproduktivität**: Konzentrieren Sie sich auf die Erstellung von Business-Logik und Benutzeroberfläche, während die CLI sich wiederholende Einrichtungsaufgaben übernimmt.
+* **Nahtlose Integration**: Generierte Komponenten können verwendet und in bestehende AEM Forms-Projekte integriert werden.
+
+Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+
+### API-Integrationstool für dynamische Formulardaten
+
+Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente Formulare erstellen, mit denen Daten basierend auf Benutzerinteraktionen automatisch von externen REST-APIs abgerufen und aufgefüllt werden. Durch diese Integrationsfunktion ohne Code werden statische Formulare in responsive Datenerfassungsschnittstellen umgewandelt.
+
+Zu den wichtigsten Funktionen gehören:
+
+* **Visuelle Konfigurationsoberfläche**: Erstellen Sie API-Integrationen über eine intuitive Point-and-Click-Oberfläche ohne benutzerdefinierte Codierung
+* **Echtzeit-Datenpopulation**: Formularfelder werden basierend auf der Benutzereingabe automatisch ausgefüllt (z. B. Stadt und Status automatisch ausfüllen, wenn die Postleitzahl eingegeben wird)
+* **Flexible API-Unterstützung**: Verbinden Sie sich mit jeder öffentlich zugänglichen REST-API mit Unterstützung für GET-/POST-Methoden, Authentifizierung und JSON-/XML-Antworten
+* **Regelbasierte Trigger**: Festlegen, wann API-Aufrufe mithilfe der integrierten Regel-Engine ausgelöst werden (z. B. Feldänderungen, Formularereignisse)
+* **Smart-Datenzuordnung**: Konfigurieren, wie API-Antwortdaten mithilfe der JSON-Analysefunktionen von Adobe bestimmten Formularfeldern zugeordnet werden
+* **Verbessertes Benutzererlebnis**: Reduzieren Sie die manuelle Dateneingabe, verbessern Sie die Datengenauigkeit und erstellen Sie ansprechendere Formularinteraktionen
+
+Dieses Tool ist besonders nützlich für Szenarien wie automatische Vervollständigung von Adressen, dynamische Dropdown-Population, Echtzeit-Validierung anhand externer Datenbanken und die Erstellung kontextbezogener Formularerlebnisse, die sich auf der Grundlage von Benutzereingaben anpassen.
+
+
 
 ## Zusätzliche Early-Access-Innovationen
 

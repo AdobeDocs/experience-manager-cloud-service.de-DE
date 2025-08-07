@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 ### Erforderlicher Zugriff
 
 - **GitHub-Konto** mit Berechtigung zum Erstellen von Repositorys
-- Authoring-Zugriff **&#x200B;**&#x200B;AEM as a Cloud Service
+- Authoring-Zugriff **** AEM as a Cloud Service
 
 ### Technische Anforderungen
 
@@ -182,8 +182,8 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository mit der AEM-Autorenumgebu
 
 **Validierung:** Bestätigen Sie Ihre GitHub-Repository-Verbindung mit AEM.
 
->[!NOTE]
->
+    >[!NOTE]
+    >
 >Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
 
 +++
@@ -399,11 +399,11 @@ Gehen wir die einzelnen Schritte durch:
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **Aktualisieren von .eslintrc.js**
@@ -648,7 +648,7 @@ In einer lokalen Entwicklungsumgebung können Sie Änderungen vornehmen und sofo
    Die AEM-CLI vereinfacht lokale Entwicklungsaufgaben:
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **Klonen Sie Ihr Repository**

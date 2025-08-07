@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1606'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Der Forms Submission Service ist eine gehostete Lösung von Adobe, mit der Formu
 
 >[!NOTE]
 >
->**Early Access-Programm** Diese Funktion ist derzeit über Early Access verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) mit den Namen Ihrer GitHub-Organisation und des Repositorys von Ihrer offiziellen Adresse.
+>**Early Access-Programm** Diese Funktion ist derzeit über Early Access verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) mit den Namen Ihrer GitHub-Organisation und des Repositorys von Ihrer offiziellen Adresse.
 >
 >**Beispiel:** Für Repository-`https://github.com/adobe/abc` senden: Organisation = `adobe`, Repository = `abc`
 
@@ -102,7 +102,7 @@ Wählen Sie eine der unterstützten Plattformen:
 
 >[!TIP]
 >
->**Neu bei Edge Delivery Services?** Sie mit dem [Erste Schritte-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial), um Ihre Projektstiftung einzurichten.
+>**Neu bei Edge Delivery Services?** Sie mit dem [Erste Schritte-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial), um Ihre Projektstiftung einzurichten.
 
 ## Konfigurationsmethoden
 
@@ -119,7 +119,7 @@ Der Forms Submission Service bietet zwei Konfigurationsansätze. Wählen Sie die
 
 Bevor Sie eine dieser Methoden konfigurieren, stellen Sie sicher, dass Ihre AEM Project Foundation bereit ist:
 
-1. **Erstellen oder aktualisieren Sie Ihr AEM-Projekt** mit dem neuesten adaptiven Forms-Block ([Erste Schritte-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Erstellen oder aktualisieren Sie Ihr AEM-Projekt** mit dem neuesten adaptiven Forms-Block ([Erste Schritte-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Aktualisieren von`fstab.yaml`** im Projektstamm:
 
@@ -148,7 +148,7 @@ Erstellen Sie Ihre Formularstruktur mit Google Sheets oder Microsoft Excel.
 1. **Öffnen der Tabellenkalkulationsplattform** (Google Sheets oder Microsoft Excel)
 2. **Neue Tabelle erstellen** für Ihr Formularprojekt
 3. **Benennen Sie Ihr Blatt** (muss entweder `helix-default` oder `shared-aem` sein)
-4. **Definieren Sie Ihre Formularstruktur** mithilfe des [Handbuchs zur Formularerstellung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **Definieren Sie Ihre Formularstruktur** mithilfe des [Handbuchs zur Formularerstellung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Formulardefinition](/help/forms/assets/form-submission-definition.png)
 *Beispiel: Formulardefinition mit Feldtypen, Beschriftungen und Validierungsregeln*
@@ -217,8 +217,8 @@ Gewähren Sie dem Adobe Forms Submission Service Zugriff auf Ihre Tabelle.
 3. **Senden der Freigabeeinladung**
 4. **Tabellenlink kopieren** für den nächsten Schritt
 
-![Freigeben eingehender Arbeitsblätter](/help/forms/assets/form-submission-share-incoming.png)
-*Schritt-für-Schritt-Freigabeprozess für das Gewähren des Zugriffs auf Adobe-Services*
+   ![Freigeben eingehender Arbeitsblätter](/help/forms/assets/form-submission-share-incoming.png)
+   *Schritt-für-Schritt-Freigabeprozess für das Gewähren des Zugriffs auf Adobe-Services*
 
 **Plattformspezifische Anweisungen:**
 
@@ -234,8 +234,8 @@ Gewähren Sie dem Adobe Forms Submission Service Zugriff auf Ihre Tabelle.
 - Setzen Sie die Linkfreigabe auf „Jeder mit dem Link kann bearbeiten“.
 - Kopieren der Freigabe-URL
 
-![Link des eingehenden Blatts kopieren](/help/forms/assets/form-submission-copy-link.png)
-*Beispiel: Kopieren des Freigabe-Links für die Formularkonfiguration*
+  ![Link des eingehenden Blatts kopieren](/help/forms/assets/form-submission-copy-link.png)
+  *Beispiel: Kopieren des Freigabe-Links für die Formularkonfiguration*
 
 **Validierungs-Checkpoint:**
 
@@ -254,8 +254,8 @@ Verknüpfen Sie Ihre Formulardefinition mit dem Übermittlungs-Arbeitsblatt.
 3. **Fügen Sie den kopierten Tabellenlink** das Feld Senden in die Spalte **Aktion** ein
 4. **Speichern Sie die** in Ihrer Formulardefinition
 
-![Verknüpfen einer Tabelle](/help/forms/assets/form-submission-sheet-linking.png)
-*Beispiel: Verbinden der Übermittlungsaktion mit Ihrer Datenerfassungs-Tabelle*
+   ![Verknüpfen einer Tabelle](/help/forms/assets/form-submission-sheet-linking.png)
+   *Beispiel: Verbinden der Übermittlungsaktion mit Ihrer Datenerfassungs-Tabelle*
 
 **Formular veröffentlichen:**
 
@@ -337,29 +337,29 @@ Postman bietet eine benutzerfreundliche Oberfläche zum Testen von API-Übermitt
 
 **Anfragekonfiguration:**
 
-```json
+    „json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Headers:
+Kopfzeilen:
 Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+X-Adobe-Routing: tier=live,bucket=main—your-repo—your-org
 
-Body (JSON):
+Hauptteil (JSON):
 {
-    "data": {
-        "startDate": "2025-01-10",
-        "endDate": "2025-01-25",
-        "destination": "Australia",
-        "class": "First Class",
-        "budget": "2000",
-        "amount": "1000000",
-        "name": "Mary",
-        "age": "35",
-        "subscribe": null,
-        "email": "mary@gmail.com"
-    }
+„data“: {
+„startDate“: „2025-01-10“,
+„endDate“: „2025-01-25“,
+„destination“: „Australia“,
+„class“: „first class“,
+„Haushalt“: „2000“,
+„amount“: „1000000“,
+„name“: „Mary“,
+„Alter“: „35“,
+„Subscribe“: null,
+„email“: &quot;mary@gmail.com&quot;
 }
-```
+}
+&quot;
 
 **Erwartete Antwort:**
 
@@ -387,29 +387,29 @@ Ersetzen Sie die folgenden Platzhalter in den folgenden Befehlen:
 
 ```bash
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
-  --header "Content-Type: application/json" \
+    --header "Content-Type: application/json" \
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
-  --data '{
-    "data": {
-      "startDate": "2025-01-10",
-      "endDate": "2025-01-25",
-      "destination": "Australia",
-      "class": "First Class",
-      "budget": "2000",
-      "amount": "1000000",
-      "name": "Joe",
-      "age": "35",
-      "subscribe": null,
+    --data '{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Joe",
+            "age": "35",
+            "subscribe": null,
       "email": "joe@example.com"
-    }
-  }'
-```
+                }
+            }'
+        ```
 
->[!TAB Windows-Eingabeaufforderung]
-
+>[!TAB Windows Command Prompt]
+     
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
-  --header "Content-Type: application/json" ^
+    --header "Content-Type: application/json" ^
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
   --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
 ```
@@ -436,13 +436,13 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
-### API-Antwort und -Verifizierung
+### API Response & Verification
 
-**Erfolgreiche Antwort:**
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -522,7 +522,7 @@ Solutions:
 
 - **Early Access Issues:** E-Mail [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **API-Dokumentation** [Entwicklerreferenz](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Community-Support:** [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/?profile.language=de)
+- **Community-Support:** [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/)
 
 ## Nächste Schritte
 
@@ -530,7 +530,7 @@ Nachdem Sie nun den Forms-Übermittlungsdienst konfiguriert haben, lesen Sie die
 
 ### **Forms verbessern**
 
-- **[Erweiterte Forms erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Hinzufügen von Validierung, bedingter Logik und benutzerdefiniertem Stil
+- **[Erweiterte Forms erstellen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Hinzufügen von Validierung, bedingter Logik und benutzerdefiniertem Stil
 - **[Handbuch zu Formularkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Verfügbare Formularfeldtypen erkunden
 
 ### **Alternative Übermittlungsmethoden**
