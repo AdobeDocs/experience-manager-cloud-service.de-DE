@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinz
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
 workflow-type: tm+mt
 source-wordcount: '2321'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -68,7 +68,7 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
    | --- | --- |
    | **Repository-Name** | Erforderlich. Ein aussagekräftiger Name für Ihr neues Repository. |
    | **Repository-URL** | Erforderlich. Die URL des Repositorys.<br><br>Wenn Sie ein von GitHub gehostetes Repository verwenden, muss der Pfad mit `.git` enden.<br>Beispiel: *`https://github.com/org-name/repo-name.git`* (URL-Pfad dient nur zu Illustrationszwecken).<br><br>Wenn Sie ein externes Repository verwenden, muss es das folgende URL-Pfadformat verwenden:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> oder <br>`https://self-hosted-domain/org-name/repo-name.git`<br>. Außerdem muss es mit Ihrem Git-Anbieter übereinstimmen. |
-   | **Repository-Typ auswählen** | Erforderlich. Wählen Sie den verwendeten Repository-Typ aus. Wenn der Repository-URL-Pfad den Namen des Git-Anbieters enthält, z. B. GitLab oder Bitbucket, ist der Repository-Typ bereits für Sie vorausgewählt.:<ul><li>**GitHub** (GitHub Enterprise und die selbst gehostete GitHub-Version)</li><li>**GitLab** (sowohl `gitlab.com` als auch die selbst gehostete GitLab-Version) </li><li>**Bitbucket** (nur `bitbucket.org` – Cloud-Version) wird unterstützt. Die selbst gehostete Version von Bitbucket wird seit dem 15. Februar 2024 nicht mehr unterstützt.)</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
+   | **Repository-Typ auswählen** | Erforderlich. Wählen Sie den verwendeten Repository-Typ aus. Wenn der Repository-URL-Pfad den Namen des Git-Anbieters enthält, z. B. GitLab oder Bitbucket, ist der Repository-Typ bereits für Sie vorausgewählt.:<ul><li>**GitHub** (GitHub Enterprise und die selbst gehostete GitHub-Version)</li><li>**GitLab** (sowohl `gitlab.com` als auch die selbst gehostete GitLab-Version) </li><li>**Bitbucket** (nur `bitbucket.org` – Cloud-Version) wird unterstützt. Die selbst gehostete Version von Bitbucket wird seit dem 15. Februar 2024 nicht mehr unterstützt.</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
    | **Beschreibung** | Optional. Eine längere Beschreibung des Repositorys. |
 
 1. Wählen Sie **Speichern**, um das Repository hinzuzufügen.
