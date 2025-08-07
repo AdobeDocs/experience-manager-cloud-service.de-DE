@@ -3,10 +3,10 @@ title: Suchen nach Assets in Content Hub
 description: Informationen zum Suchen nach Assets in [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '630'
-ht-degree: 100%
+source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+workflow-type: tm+mt
+source-wordcount: '642'
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Suchen Sie beispielsweise nach allen **[!UICONTROL JPEG]**-Bildern mit dem Suchb
 
 ## Eingrenzen Ihrer Suchergebnisse mithilfe von Filtern {#narrow-down-search-results}
 
-Verwenden Sie das Bedienfeld „Filter“, um nach auf Metadaten basierenden Assets zu suchen. Sie können Suchergebnisse anhand verschiedener Suchprädikate filtern. Sie können alle passenden Eigenschaften auswählen, um Ihre Suchergebnisse zu minimieren oder einzugrenzen. Wenn Sie mehrere Optionen in einem Filter auswählen, zeigt Content Hub die Assets an, die mit einer der in einem Filter ausgewählten Optionen übereinstimmen. Wenn Sie jedoch mehrere Optionen in verschiedenen Filtern auswählen, zeigt Content Hub nur die Assets an, die mit allen Optionen übereinstimmen, die in allen Filtern ausgewählt wurden, um Ihre Suchergebnisse einzugrenzen.
+Verwenden Sie das Bedienfeld „Filter“, um nach auf Metadaten basierenden Assets zu suchen. Sie können Suchergebnisse anhand verschiedener Suchprädikate filtern. Sie können alle passenden Eigenschaften auswählen, um Ihre Suchergebnisse zu minimieren oder einzugrenzen. Sie können beim Filtern Ihrer Suchergebnisse mehr als 10 Prädikate auswählen. Wenn Sie mehrere Optionen in einem Filter auswählen, zeigt Content Hub die Assets an, die mit einer der in einem Filter ausgewählten Optionen übereinstimmen. Wenn Sie jedoch mehrere Optionen in verschiedenen Filtern auswählen, zeigt Content Hub nur die Assets an, die mit allen Optionen übereinstimmen, die in allen Filtern ausgewählt wurden, um Ihre Suchergebnisse einzugrenzen.
 
 Zu den Standardfiltern gehören „Dateiformat“, „Genehmigt von“, „Datum der Genehmigung“, „Abgelaufene Assets“, „Nicht abgelaufene Assets“ sowie „Ablaufdatum“. Admins können auch die Filter konfigurieren, die in der Filterliste angezeigt werden. Weitere Informationen finden Sie unter [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
