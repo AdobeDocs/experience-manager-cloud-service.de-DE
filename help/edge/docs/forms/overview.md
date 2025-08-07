@@ -49,7 +49,7 @@ Am Ende können Sie die richtige Authoring-Methode auswählen, Übermittlungsopt
 
 ### Universeller Editor
 
-<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">pre-release channel</a>. </span>-->
 
 [Universeller Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ist ein visuelles Drag-and-Drop-Authoring-Tool für Marketing- und Design-Fachleute, das Geschwindigkeit und Leistung auf Unternehmensniveau vereint:
 

@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Formularen in AEM Edge Delivery Services
 
-<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">pre-release channel</a>. </span>-->
 
 Adobe Experience Manager (AEM) Edge Delivery Services (EDS) ermöglicht die Bereitstellung von schnellen, hochgradig skalierbaren Web-Erlebnissen direkt am Edge. In diesem Handbuch wird erläutert, **wie Sie Formulare für diese Erlebnisse erstellen und veröffentlichen** – mit einer klaren Empfehlungshierarchie:
 
