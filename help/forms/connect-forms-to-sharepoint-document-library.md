@@ -5,16 +5,19 @@ keywords: Verbinden der SharePoint-Dokumentbibliothek für ein adaptives Formula
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 63%
+source-wordcount: '981'
+ht-degree: 62%
 
 ---
 
 # Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Dokumentbibliothek {#connect-af-sharepoint-doc-library}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444368/formautomation-productivitytools-adaptiveforms--sharepointintegration-documentlibrary/?quality=12&learn=on)
+
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
+
 
 So verwenden Sie die Sendeaktion **[!UICONTROL An SharePoint-Dokumentbibliothek senden]** in einem adaptiven Formular:
 
@@ -107,13 +110,13 @@ Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Spei
 Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Speicherkonfiguration in einem adaptiven Formular zu verwenden, das im universellen Editor verfasst wurde:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
 Das **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An SharePoint übermitteln]** Übermittlungsaktion aus.
    ![Sharepoint-GIF](/help/forms/assets/submit-to-sharepoint-ue.png)

@@ -5,10 +5,10 @@ Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Mar
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 81%
+source-wordcount: '755'
+ht-degree: 79%
 
 ---
 
@@ -37,6 +37,8 @@ Voraussetzung zur Verwendung der Marketo Engage-Datenquelle mit Formularen:
 ## Konfigurieren eines vorhandenen adaptiven Formulars für eine Marketo Engage-Datenquelle
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
 
 >[!BEGINTABS]
 

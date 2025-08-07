@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # Erstellen einer responsiven Forms mit einem universellen Editor
 
 Benutzer greifen auf Formulare auf einer Vielzahl von Geräten zu, einschließlich Desktops, Tablets und Smartphones. Das Entwerfen responsiver Formulare stellt ein optimales Erlebnis für alle Benutzenden sicher, unabhängig vom Gerät. In diesem Handbuch wird erläutert, wie Sie mit dem universellen Editor Formulare für jede Bildschirmgröße entwerfen, testen und optimieren können.
+
 
 Die Erstellung responsiver Formulare umfasst zwei Hauptaktivitäten:
 

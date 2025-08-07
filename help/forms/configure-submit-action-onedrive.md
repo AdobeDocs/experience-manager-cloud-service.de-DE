@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 73%
+source-wordcount: '882'
+ht-degree: 72%
 
 ---
 
@@ -29,6 +29,8 @@ Einige Vorteile der nahtlosen Integration von AEM Forms und Microsoft® OneDrive
 ## Verbinden von OneDrive mit einem adaptiven Formular
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
 
 Um OneDrive für die Übermittlung von AEM-Formularen zu konfigurieren, führen Sie die folgenden Schritte aus:
 
@@ -110,13 +112,13 @@ Sie können auch das Datensatzdokument (DoR) in OneDrive speichern.
 Führen Sie die folgenden Schritte aus, um die OneDrive-Speicherkonfiguration in einem im universellen Editor erstellten adaptiven Formular zu verwenden:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
 Das **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An OneDrive senden]** aus.
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
 Wenn Sie **Anlagen mit Originalnamen speichern** wählen, werden die Anlagen unter Verwendung ihrer Originaldateinamen im Ordner gespeichert. Sie können auch das Datensatzdokument (DoR) im Azure Blob-Speicher speichern.

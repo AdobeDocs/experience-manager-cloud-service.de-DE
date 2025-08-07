@@ -4,13 +4,13 @@ description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. 
 keywords: Auswählen einer Übermittlungsaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek und Verbinden eines adaptiven Formulars mit einem Formulardatenmodell (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 22%
 
 ---
-
 
 # Übermittlungsaktionen für Edge Delivery Services Forms
 
@@ -33,7 +33,7 @@ Die folgenden Übermittlungsaktionen werden von [im universellen Editor verfasst
 * [Power Automate-Fluss aufrufen](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An SharePoint senden](/help/forms/configure-submit-action-sharepoint.md)
 * [Aufrufen von Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Senden mit Formulardatenmodell (FDM)](/help/forms/using-form-data-model.md)
+* [Senden mit Formulardatenmodell (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [An Azure Blob Storage senden](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [An REST-Endpunkt übermitteln](/help/forms/configure-submit-action-restpoint.md)
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
@@ -59,7 +59,7 @@ You can configure the submit action for forms created in the Universal Editor us
 >[!NOTE]
 >
 > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 ## Übermittlungsaktionen für dokumentbasierte Forms
 
@@ -68,4 +68,3 @@ Dokumentbasierte Forms-Unterstützung nur für die Übermittlung an Tabellen. In
 ## Siehe auch {#see-also}
 
 {{af-submit-action}}
-

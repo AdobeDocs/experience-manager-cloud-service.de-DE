@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -180,14 +180,14 @@ Die **Symbolleiste des universellen Editors** enthält die Bearbeitungs- und Ver
 **Zweck** Formular auf einer neuen Registerkarte ohne Editor-Oberfläche anzeigen\
 **Verwendung:** Für Vollbildtests, Freigabe für Stakeholder zur Überprüfung
 
-    ![Seite öffnen](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![Seite öffnen](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **Veröffentlichen**
 
 **Zweck** Formular live schalten und für Benutzer zugänglich machen\
 **Verwendung:** Nach gründlichen Tests im Vorschau- und responsiven Modus
 
-    ![Veröffentlichen](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![Veröffentlichen](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Validierungs-Checkliste vor der Veröffentlichung:**
 
@@ -216,12 +216,22 @@ Die **Symbolleiste des universellen Editors** enthält die Bearbeitungs- und Ver
 
 **Diese Tools werden für bestimmte Szenarien oder erweiterte Setups verwendet:**
 
-#### **Formulareigenschaften bearbeiten**
+#### **AEM-Formulareigenschaften**
 
 **Zweck:** Konfigurieren von Einstellungen auf Formularebene wie Formulardatenmodell (FDM) und Veröffentlichungsdaten\
 **Verwendung:** Einrichten von Datenintegrationen, Planen der Veröffentlichung
 
 ![Formulareigenschaften](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![Assistent für Formulareigenschaften](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+Das Bedienfeld Formulareigenschaften enthält die folgenden Abschnitte:
+
+- **Übermittlung**: Definieren, was geschieht, nachdem ein Benutzer das Formular gesendet hat. Sie können aus mehreren Übermittlungsaktionen wählen, z. B. zum Senden von Daten per E-Mail, zum Senden an SharePoint, zum Verwenden eines Formulardatenmodells oder zur Integration mit Services wie Adobe Experience Platform oder Microsoft Power Automate. Eine vollständige Liste der unterstützten Übermittlungsaktionen finden Sie im Artikel [Übermittlungsaktion](/help/edge/docs/forms/universal-editor/submit-action.md) .
+
+- **Vorbefüllen**: Konfigurieren, wie Formularfelder automatisch ausgefüllt werden, bevor der Benutzer mit dem Formular interagiert. Sie können eine Verbindung zu Datenquellen herstellen, z. B. einem Formulardatenmodell (FDM), oder URL-Parameter verwenden, um Felder vorauszufüllen, wodurch das Benutzererlebnis verbessert und manuelle Eingaben reduziert werden. Weitere Informationen finden Sie im Artikel [Vorbefüllungsdienst](/help/edge/docs/forms/universal-editor/prefill-form.md) .
+
+- **Vielen Dank**: Passen Sie an, was Benutzer nach dem Absenden des Formulars sehen. Sie können eine Bestätigungsnachricht anzeigen oder auf eine andere Webseite umleiten, um einen reibungslosen und professionellen Abschluss zu gewährleisten. Informationen zum Konfigurieren einer Dankesnachricht für Formulare finden Sie im Artikel [Konfigurieren einer Dankesnachricht](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
 #### **Regeleditor** (früher Zugriff)
 
@@ -521,4 +531,3 @@ Nachdem Sie sich mit der Benutzeroberfläche des universellen Editors vertraut g
 4. **Übergeordneter Regeleditor** - Dynamische Verhaltensweisen mit dem [Handbuch zum Regeleditor“ ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 
 **Denken Sie daran** Der universelle Editor wurde entwickelt, um die Formularerstellung intuitiv zu gestalten. Beginnen Sie mit den Grundlagen und erkunden Sie nach und nach erweiterte Funktionen, wenn Ihre Anforderungen wachsen.
-

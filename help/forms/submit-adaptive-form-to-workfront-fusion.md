@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 89%
+source-wordcount: '1304'
+ht-degree: 88%
 
 ---
 
@@ -30,6 +30,8 @@ AEM Forms as a Cloud Service bietet einen vorkonfigurierten Connector zum Verbin
 <!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
+
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
 
 ## Voraussetzungen für die Integration von AEM Forms mit Adobe Workfront Fusion {#prerequisites}
 
@@ -138,7 +140,7 @@ So fügen Sie eine Verbindung hinzu:
 1. Wählen Sie die erstellte Verbindung **[!UICONTROL Verbindung]** aus der Dropdown-Liste.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL OK]** und speichern Sie die Änderungen für das Szenario.
-1. Um das Szenario zu aktivieren, klicken Sie im Szenario-Editor auf die Umschalt-Schaltfläche „EIN/AUS“.
+1. Um das Szenario zu aktivieren, klicken Sie im Szenario-Editor auf den Umschalter „EIN/AUS“.
 
 >[!NOTE]
 >
@@ -178,13 +180,13 @@ So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basieren
 So konfigurieren Sie die Übermittlungsaktion eines mit dem universellen Editor erstellten adaptiven Formulars:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
 Das **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL Workfront Fusion-Szenario aufrufen]** Übermittlungsaktion.
 
