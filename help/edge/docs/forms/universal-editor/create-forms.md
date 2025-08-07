@@ -107,7 +107,7 @@ Wählen Sie den Workflow basierend auf Ihrer Vorlagenauswahl aus:
    - Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 
 1. **Vorlage auswählen**
-   - Wählen Sie auf der Registerkarte **0}Source** eine **Edge Delivery Services-basierte Vorlage.**
+   - Wählen Sie auf der Registerkarte **0&rbrace;Source** eine **Edge Delivery Services-basierte Vorlage.**
    - Die **Erstellen** wird aktiviert.
 
      ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
@@ -151,7 +151,7 @@ Wählen Sie den Workflow basierend auf Ihrer Vorlagenauswahl aus:
    - Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 
 1. **Vorlage und Design auswählen**
-   - Wählen Sie auf der **** Source **eine (Kernkomponentenbasierte Vorlage**.
+   - Wählen Sie auf der **&#x200B;**&#x200B;Source **eine (Kernkomponentenbasierte Vorlage**.
    - Wählen Sie ein **Design** für die Formatierung aus.
    - Die **Erstellen** wird aktiviert.
 

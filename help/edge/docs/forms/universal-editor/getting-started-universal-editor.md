@@ -53,7 +53,7 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 ### Erforderlicher Zugriff
 
 - **GitHub-Konto** mit Berechtigung zum Erstellen von Repositorys
-- Authoring-Zugriff **** AEM as a Cloud Service
+- Authoring-Zugriff **&#x200B;**&#x200B;AEM as a Cloud Service
 
 ### Technische Anforderungen
 

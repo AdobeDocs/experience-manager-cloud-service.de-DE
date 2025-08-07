@@ -150,13 +150,14 @@ Konfigurieren von Cross-Origin Resource Sharing in der Formularquelle:
 
 2. **Beispielkonfiguration**:
 
-       #-Konfiguration für die Site, auf der das Formular gehostet wird
+       &#x200B;#-Konfiguration für die Site, auf der das Formular gehostet wird
        Kopfzeilen:
        - Pfad: /forms/**
        custom:
        access-control-allow-origin: https://host-domain.com
        access-control-allow-methods: GET, OPTIONS
    
+
 ### Einbettungsschritte
 
 1. **Formular erstellen und veröffentlichen**
