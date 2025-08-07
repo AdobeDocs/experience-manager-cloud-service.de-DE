@@ -506,7 +506,7 @@ Wenn die Probleme bestehen bleiben:
 
 1. Überprüfen Sie den Status des Adobe Experience Cloud-Service.
 2. Lesen Sie die [Dokumentation zu Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=de).
-3. Besuchen Sie [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/).
+3. Besuchen Sie [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/?profile.language=de).
 4. Adobe-Kundenunterstützung kontaktieren.
 
 +++
