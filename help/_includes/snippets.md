@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: ht
-source-wordcount: '1637'
-ht-degree: 100%
+source-git-commit: deffd60c1a77bdfb0dbf939632d4384c74316148
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 # Snippets {#snippets}
@@ -111,10 +111,9 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    </td>
    </tr>
    <tr>
-    <td>ES2022-Unterstützung </td>
-    <td>ES2022 wird noch nicht unterstützt. Die Unterstützung ist auf ES5 JavaScript-Funktionen beschränkt. </td>
-    <td>Unterstützung für moderne JavaScript-Funktionen, z. B. let-Funktionen und Pfeilfunktionen, bis ES2022, ist in benutzerdefinierten Funktionen verfügbar. 
-   </td>
+    <td>Unterstützung der ECMAScript-Version</td>
+    <td>Unterstützt nur ES5 JavaScript-Funktionen.</td>
+    <td>Unterstützt moderne JavaScript-Funktionen (z. B. <code>let</code>, Pfeilfunktionen) in benutzerdefinierten Funktionen.</td>
    </tr>
    </tr>
    <tr>
@@ -222,7 +221,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 
