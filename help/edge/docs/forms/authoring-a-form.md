@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -37,14 +37,14 @@ AEM bietet mehrere Möglichkeiten zum Erstellen interaktiver und ansprechender F
 
 AEM unterstützt mehrere Authoring-Methoden, die jeweils für unterschiedliche Benutzeranforderungen, technische Fähigkeiten und Veröffentlichungsziele geeignet sind.
 
-* [Foundation-Komponenten](/help/forms/create-adaptive-form-tutorial.md): Verwenden Sie Foundation-Komponenten, um herkömmliche, interaktive Formulare zu erstellen. Am besten geeignet für Formulare, die in ältere Systeme integriert oder auf bewährte Workflows angewiesen sind. Formulare, die mit Foundation-Komponenten erstellt wurden, können nur in AEM veröffentlicht werden und sind nicht mit Edge Delivery Services kompatibel.
+- [Foundation-Komponenten](/help/forms/create-adaptive-form-tutorial.md): Verwenden Sie Foundation-Komponenten, um herkömmliche, interaktive Formulare zu erstellen. Am besten geeignet für Formulare, die in ältere Systeme integriert oder auf bewährte Workflows angewiesen sind. Formulare, die mit Foundation-Komponenten erstellt wurden, können nur in AEM veröffentlicht werden und sind nicht mit Edge Delivery Services kompatibel.
 
-* [Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md): Verwenden Sie Kernkomponenten, um moderne, responsive und skalierbare Formulare zu erstellen. Sie unterstützen Wiederverwendbarkeit, Barrierefreiheit und bessere Leistung. Formulare, die mit Kernkomponenten erstellt wurden, können sowohl in AEM als auch in Edge Delivery Services veröffentlicht werden und bieten somit plattformübergreifende Flexibilität.
+- [Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md): Verwenden Sie Kernkomponenten, um moderne, responsive und skalierbare Formulare zu erstellen. Sie unterstützen Wiederverwendbarkeit, Barrierefreiheit und bessere Leistung. Formulare, die mit Kernkomponenten erstellt wurden, können sowohl in AEM als auch in Edge Delivery Services veröffentlicht werden und bieten somit plattformübergreifende Flexibilität.
 
-* [Edge Delivery Services-Formulare](/help/edge/docs/forms/overview.md): Adobe Edge Delivery Services-Formulare verändern die Art und Weise, wie Formulare erstellt, ausgeführt und verarbeitet werden. Durch die Nutzung von Edge Delivery Services können Unternehmen schnelle, sichere und hochverfügbare digitale Formulare erstellen, die das Benutzererlebnis und die betriebliche Effizienz mit einer schnellen Entwicklungsumgebung verbessern. Sie haben zwei Möglichkeiten, Edge Delivery Services-Fomulare zu erstellen:
-   * [WYSIWYG-Authoring](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Verwenden Sie den universellen Editor für die visuelle Drag-and-Drop-Formularerstellung, der sich ideal für Inhaltsverfassende mit eingeschränkten technischen Kenntnissen eignet. Formulare, die mit dem universellen Editor erstellt wurden, werden mit Edge Delivery Services bereitgestellt, um ein schnelles, leichtes Rendern zu ermöglichen.
-   * [Dokumentbasiertes Authoring](/help/edge/docs/forms/tutorial.md): Verwenden Sie Tools wie Microsoft Excel oder Google Sheets, um Formularstruktur und -inhalt zu definieren. Diese Methode ist nützlich für Geschäftsbenutzende, die tabellengesteuerte Eingaben bevorzugen. Diese Formulare werden normalerweise über Edge Delivery Services veröffentlicht und eignen sich für einfache Anwendungsfälle mit hohem Volumen.
-* [Headless-Authoring](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Verwenden Sie APIs, um Formulare für ein beliebiges Frontend als JSON zu rendern, z. B. React, Angular, mobile Apps oder Terminals, ohne von AEM abhängig zu sein. Derzeit unterstützen nur Kernkomponenten die Headless-Bereitstellung. Headless-Formulare eignen sich ideal für Omni-Channel-Anwendungsfälle und werden unabhängig vom Seiten-Rendering von AEM genutzt, was sie flexibel für benutzerdefinierte Frontend-Bereitstellungen macht.
+- [Edge Delivery Services-Formulare](/help/edge/docs/forms/overview.md): Adobe Edge Delivery Services-Formulare verändern die Art und Weise, wie Formulare erstellt, ausgeführt und verarbeitet werden. Durch die Nutzung von Edge Delivery Services können Unternehmen schnelle, sichere und hochverfügbare digitale Formulare erstellen, die das Benutzererlebnis und die betriebliche Effizienz mit einer schnellen Entwicklungsumgebung verbessern. Sie haben zwei Möglichkeiten, Edge Delivery Services-Fomulare zu erstellen:
+   - [WYSIWYG-Authoring](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Verwenden Sie den universellen Editor für die visuelle Drag-and-Drop-Formularerstellung, der sich ideal für Inhaltsverfassende mit eingeschränkten technischen Kenntnissen eignet. Formulare, die mit dem universellen Editor erstellt wurden, werden mit Edge Delivery Services bereitgestellt, um ein schnelles, leichtes Rendern zu ermöglichen.
+   - [Dokumentbasiertes Authoring](/help/edge/docs/forms/tutorial.md): Verwenden Sie Tools wie Microsoft Excel oder Google Sheets, um Formularstruktur und -inhalt zu definieren. Diese Methode ist nützlich für Geschäftsbenutzende, die tabellengesteuerte Eingaben bevorzugen. Diese Formulare werden normalerweise über Edge Delivery Services veröffentlicht und eignen sich für einfache Anwendungsfälle mit hohem Volumen.
+- [Headless-Authoring](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Verwenden Sie APIs, um Formulare für ein beliebiges Frontend als JSON zu rendern, z. B. React, Angular, mobile Apps oder Terminals, ohne von AEM abhängig zu sein. Derzeit unterstützen nur Kernkomponenten die Headless-Bereitstellung. Headless-Formulare eignen sich ideal für Omni-Channel-Anwendungsfälle und werden unabhängig vom Seiten-Rendering von AEM genutzt, was sie flexibel für benutzerdefinierte Frontend-Bereitstellungen macht.
 
 ### Vergleichende Analyse der Authoring-Methoden für AEM-Formulare
 
@@ -99,15 +99,15 @@ Die folgende Tabelle bietet einen detaillierten Vergleich der wichtigsten Funkti
 | **Sign-Integration** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **RTL-Unterstützung** | ❌ | ✅ | 💡 | 💡 | Benutzerdefinierte Implementierung |
 | **Experimente** | ❌ | ❌ | ✅ | ✅ | Benutzerdefinierte Implementierung |
-| **Aufgabenverwaltung über Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **Aufgaben-Management über Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
 | **Personalisierungserweiterung** | ❌ | ❌ | 💡 | ❌ | Benutzerdefinierte Implementierung |
 | **Editoranpassung** | ❌ | ❌ | ✅ (über UI-Erweiterung) | ❌ | Benutzerdefinierte Implementierung |
-| **Übermitteln-Aktion** | ✅ | ✅ | ✅ | Nur Kalkulationstabelle | Benutzerdefinierte Implementierung |
+| **Übermittlungsaktion** | ✅ | ✅ | ✅ | Nur Kalkulationstabelle | Benutzerdefinierte Implementierung |
 
 
 ## Verwandte Artikel
 
-* [Dokumentbasiertes Authoring mit Microsoft Excel oder Google Tabellen](/help/edge/docs/forms/create-forms.md)
-* [Universeller Editor zum WYSIWYG-Authoring](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [Erstellen eines adaptiven Formulars (Foundation-Komponenten)](/help/forms/creating-adaptive-form.md)
-* [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/create-an-adaptive-form.md)
+- [Dokumentbasiertes Authoring mit Microsoft Excel oder Google Tabellen](/help/edge/docs/forms/create-forms.md)
+- [Universeller Editor zum WYSIWYG-Authoring](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [Erstellen eines adaptiven Formulars (Foundation-Komponenten)](/help/forms/creating-adaptive-form.md)
+- [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/create-an-adaptive-form.md)

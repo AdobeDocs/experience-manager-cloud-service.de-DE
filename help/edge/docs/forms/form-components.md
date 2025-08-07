@@ -4,9 +4,9 @@ description: Dieses Dokument bietet einen Überblick über die Formularkomponent
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ Im Folgenden finden Sie einen Überblick über die verfügbaren Komponenten:
 
 ### Eingabefelder
 
-* Alle gültigen HTML5-[Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) und [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Beispiel: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, submit, tel, text, time, url, week.
+- Alle gültigen HTML5-[Eingabetypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) und [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Beispiel: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, submit, tel, text, time, url, week.
 
 ### Auswahl-Steuerelemente
 
-* [Kontrollkästchengruppen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): Zum Auswählen mehrerer Optionen.
-* [Optionsgruppen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): Zum Auswählen einer einzelnen Option aus einer Gruppe.
-* [Dropdown-Menüs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): Zum Anzeigen eines Optionsmenüs. Zum Beispiel ein Dropdown-Feld.
+- [Kontrollkästchengruppen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): Zum Auswählen mehrerer Optionen.
+- [Optionsgruppen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): Zum Auswählen einer einzelnen Option aus einer Gruppe.
+- [Dropdown-Menüs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): Zum Anzeigen eines Optionsmenüs. Zum Beispiel ein Dropdown-Feld.
 
 ### Container
 
-* Bedienfelder/Container: Zum Gruppieren von verwandten Formularelementen für eine bessere Organisation. Es handelt sich um eine Kombination aus [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) und [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+- Bedienfelder/Container: Zum Gruppieren von verwandten Formularelementen für eine bessere Organisation. Es handelt sich um eine Kombination aus [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) und [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Komponenteneigenschaften
@@ -64,8 +64,3 @@ Jede Formularkomponente enthält verschiedene Eigenschaften, mit denen Sie das V
 | Repeatable | Alle | Eine boolesche Eigenschaft für `fieldset`, die angibt, dass ein bestimmter Feldsatz entsprechend dem für `Min` und `Max` angegebenen Wert wiederholt werden kann. Die `Min`-Eigenschaft sollte auf 1 oder höher gesetzt sein. Legen Sie für die `Min`-Eigenschaft nicht den Wert 0 fest. |
 | Sichtbarer Ausdruck | Alle | Ein sichtbarer Ausdruck bezieht sich auf eine Tabellenformel, die mit dem Tag „=“&#39; gekennzeichnet ist und zur Steuerung der Sichtbarkeit eines Felds verwendet wird. In dieser Formel kann nur die Werteigenschaft anderer Felder verwendet werden, sodass eine einfache Verwaltung der Feldsichtbarkeit innerhalb des Systems ermöglicht wird. |
 | Wertausdruck | Alle | Ein Wertausdruck bezieht sich auf eine Tabellenformel, die durch das Tag „=“&#39; gekennzeichnet ist und zur Steuerung des Werts eines Felds verwendet wird. In dieser Formel kann nur die Werteigenschaft anderer Felder verwendet werden, sodass eine einfache Verwaltung des Feldwerts innerhalb des Systems ermöglicht wird. |
-
-
-## Siehe auch
-
-{{see-more-forms-eds}}

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie wiederholbare Abschnitte oder Felder in einem
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1258'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,6 +49,7 @@ Um ein Panel im Formular zu wiederholen oder wiederholbare Panels zu entfernen, 
 ![Registerkarte „Barrierefreiheit“](/help/forms/assets/repeat-panel.png)
 
 Um ein Panel wiederholbar zu machen, führen Sie die folgenden Schritte aus:
+
 1. Wählen Sie einen Panel-Container aus und wählen Sie dann ![cmppr](/help/forms/assets/cmppr.png).
 1. Klicken Sie auf **Panel wiederholen** und schalten Sie den Umschalter auf **Panel wiederholbar machen** um.
 1. Legen Sie die **minimalen Wiederholungen** wie für die Mindestanzahl an wiederholbaren Abschnitten erforderlich fest. Sie können **Mindestwiederholungen** für nicht zu wiederholende Panels auf null setzen oder die wiederholten Panels entfernen. Standardmäßig ist der minimale Wert der Wiederholungen null.
@@ -135,30 +136,9 @@ Das übergeordnete Element des Panels sollte Schaltflächen zum Hinzufügen und 
 >
 >
 
-<!-- 
->For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63_de).      
--->
-
 >[!NOTE]
 >
-> Wenn alle Instanzen eines Bereichs aus einem adaptiven Formular entfernt wurden, können Sie eine Instanz des entfernten Bereichs mithilfe der Syntax _panelName erfassen, um den Instanz-Manager des Bereichs zu erfassen, und die gelöschte Instanz mit der addInstance-API des Instanz-Managers hinzufügen. Beispiel: _panelName.addInstance(). Dies fügt eine Instanz der entfernten Bereichs hinzu.
-
-<!--
-![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)
--->
-
-<!--
-
-## Using the accordion layout for the parent panel &nbsp; {#using-the-accordion-layout-for-the-parent-panel-nbsp}
-
-A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
-
-1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
-
-   Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
-
--->
+> Wenn alle Instanzen eines Bereichs aus einem adaptiven Formular entfernt wurden, können Sie eine Instanz des entfernten Bereichs mithilfe der Syntax _panelName erfassen, um den Instanz-Manager des Bereichs zu erfassen, und die gelöschte Instanz mit der addInstance-API des Instanz-Managers hinzufügen. Beispiel: &#39;_panelName.addInstance()&#39;. Dies fügt eine Instanz der entfernten Bereichs hinzu.
 
 ## Verwenden von wiederholten Teilformularen aus der Formularvorlage (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 

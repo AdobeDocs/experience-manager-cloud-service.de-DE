@@ -4,9 +4,9 @@ description: Erste Schritte mit Edge Delivery Services für AEM Forms. Perfekte 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '807'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '805'
 ht-degree: 100%
 
 ---
@@ -26,9 +26,9 @@ Diese Formulare senden Daten direkt an eine Microsoft Excel- oder Google Tabelle
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
-* Richten Sie ein [AEM-Projekt mit der AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [ein, fügen Sie einen adaptiven Formularblock zu Ihrem bestehenden AEM-Projekt hinzu](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
+- Richten Sie ein [AEM-Projekt mit der AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [ein, fügen Sie einen adaptiven Formularblock zu Ihrem bestehenden AEM-Projekt hinzu](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) und klonen Sie das entsprechende GitHub-Repository auf Ihrem lokalen Computer.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwenden von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+- Stellen Sie sicher, dass Sie Zugriff auf Google Tabellen oder Microsoft SharePoint haben. Informationen zum Einrichten von Microsoft SharePoint als Inhaltsquelle finden Sie unter [Verwenden von Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -54,10 +54,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ Schritt 1: Erstellen Sie ein Formular mit Microsoft Excel oder Google Tabellen.
@@ -105,9 +105,9 @@ So setzen Sie die Formularerstellung fort:
        https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
-   * `<repository>` bezeichnet Ihr GitHub-Repository.
-   * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
+   - `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
+   - `<repository>` bezeichnet Ihr GitHub-Repository.
+   - `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
    Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Konto „wkndform“ befindet und Sie die Verzweigung „main“ verwenden, sieht die URL wie folgt aus:
 
@@ -164,6 +164,3 @@ Bis jetzt haben Sie die Struktur des Formulars vorbereitet. So zeigen Sie nun ei
 [Bereiten Sie die Tabellenkalkulation vor](/help/edge/docs/forms/submit-forms.md), um Daten bei der Formularübermittlung zu akzeptieren.
 
 
-## Siehe auch
-
-{{see-more-forms-eds}}

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 10de700e5e4b352051b8b77dfd0825bb9b6e0219
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 21%
+source-wordcount: '711'
+ht-degree: 20%
 
 ---
 
@@ -93,7 +93,3 @@ Ein adaptives Formular wird erstellt und im Editor für adaptive Formulare geöf
 >
 > Sie können Skripte für XDP-Formularfelder über die Bereichssymbolleiste des hinzugefügten Felds deaktivieren. Erstellen Sie mithilfe des visuellen Regeleditors Logiken für [ hinzugefügten Felder](/help/forms/rule-editor-core-components.md).
 
-## Siehe auch
-
-{{see-also}}
-* [Hinzufügen von dynamischem Verhalten zu Formularen mithilfe des Regeleditors](/help/forms/rule-editor-core-components.md)

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erst
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1401'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1407'
+ht-degree: 97%
 
 ---
 
@@ -24,17 +24,17 @@ Am Ende des Artikels erfahren Sie, wie Sie mit dem universellen Editor Fragmente
 
 ## Funktionen von Edge Delivery Services-Formularfragmenten
 
-* **Gewährleisten von Konsistenz mit Formularfragmenten**
+- **Gewährleisten von Konsistenz mit Formularfragmenten**
 Sie können Fragmente in verschiedene Formulare integrieren, wodurch Sie konsistente Layouts und standardisierte Inhalte beibehalten können. 
 
   >[!NOTE]
   >
   > Mit dem Ansatz „Einmal ändern, überall widerspiegeln“ wird jede Aktualisierung eines Fragments automatisch auf alle Formulare im Vorschaumodus angewendet. Im Veröffentlichungsmodus müssen Sie das Fragment jedoch veröffentlichen oder das Formular erneut veröffentlichen, damit die Änderungen übernommen werden.
 
-* **Mehrfaches Hinzufügen von Formularfragmenten innerhalb eines Formulars**
+- **Mehrfaches Hinzufügen von Formularfragmenten innerhalb eines Formulars**
 Sie können ein Formularfragment mehrmals innerhalb eines Formulars hinzufügen und seine Datenbindungseigenschaften für Datenquellen oder Schemata konfigurieren.
 
-* **Verwenden von Fragmenten in Fragmenten**
+- **Verwenden von Fragmenten in Fragmenten**
 Sie können verschachtelte Formularfragmente erstellen, d. h. ein Fragment in einem anderen Fragment hinzufügen, um eine verschachtelte Fragmentstruktur zu erstellen.
 
   >[!NOTE]
@@ -43,23 +43,23 @@ Sie können verschachtelte Formularfragmente erstellen, d. h. ein Fragment in e
 
 ## Überlegungen bei der Verwendung von Edge Delivery Services-Formularfragmenten
 
-* Sie müssen in dem Fragment sowie in dem Formular, in dem Sie das Fragment verwenden möchten, dieselbe GitHub-URL hinzufügen.
-* Sie können ein Formularfragment nicht in einem Formular bearbeiten. Ändern Sie zum Bearbeiten das eigenständige Formularfragment.
+- Sie müssen in dem Fragment sowie in dem Formular, in dem Sie das Fragment verwenden möchten, dieselbe GitHub-URL hinzufügen.
+- Sie können ein Formularfragment nicht in einem Formular bearbeiten. Ändern Sie zum Bearbeiten das eigenständige Formularfragment.
 
 ## Voraussetzungen
 
-* [Richten Sie Ihr GitHub-Repository so ein](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template), dass eine Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository hergestellt wird.
-* Wenn Sie bereits Edge Delivery Services verwenden, fügen Sie Ihrem GitHub-Repository die neueste Version des [adaptiven Formularblocks](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) hinzu.
-* Die AEM Forms-Autoreninstanz enthält eine Vorlage, die auf Edge Delivery Services basiert. 
-* Halten Sie die URL Ihrer AEM Forms as a Cloud Service-Autoreninstanz und Ihres GitHub-Repositorys bereit.
+- [Richten Sie Ihr GitHub-Repository so ein](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template), dass eine Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository hergestellt wird.
+- Wenn Sie bereits Edge Delivery Services verwenden, fügen Sie Ihrem GitHub-Repository die neueste Version des [adaptiven Formularblocks](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) hinzu.
+- Die AEM Forms-Autoreninstanz enthält eine Vorlage, die auf Edge Delivery Services basiert. 
+- Halten Sie die URL Ihrer AEM Forms as a Cloud Service-Autoreninstanz und Ihres GitHub-Repositorys bereit.
 
 ## Arbeiten mit Edge Delivery Services-Formularfragmenten
 
 Sie können Edge Delivery Services-Formularfragmente im universellen Editor erstellen und die erstellten Fragmente zu Edge Delivery Services-Formularen hinzufügen. Sie können mit Edge Delivery Services-Formularfragmenten die folgenden Aktionen durchführen:
 
-* [Erstellen von adaptiven Formularfragmenten](#creating-form-fragments)
-* [Hinzufügen von Formularfragmenten zu einem Formular](#adding-form-fragments-to-a-form)
-* [Verwalten von Formularfragmenten](#managing-form-fragments)
+- [Erstellen von adaptiven Formularfragmenten](#creating-form-fragments)
+- [Hinzufügen von Formularfragmenten zu einem Formular](#adding-form-fragments-to-a-form)
+- [Verwalten von Formularfragmenten](#managing-form-fragments)
 
 ### Erstellen von adaptiven Formularfragmenten
 
@@ -84,14 +84,14 @@ Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt
 
    ![Zeigt den Modelltyp auf der Registerkarte „Formularmodell“ an](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   * **Formulardatenmodell (FDM)**: Zum Integrieren von Datenmodellobjekten und Diensten aus Datenquellen in Ihr Fragment. Wählen Sie „Formulardatenmodell (FDM)“, wenn Ihr Formular das Lesen und Schreiben von Daten aus mehreren Quellen erfordert.
+   - **Formulardatenmodell (FDM)**: Zum Integrieren von Datenmodellobjekten und Diensten aus Datenquellen in Ihr Fragment. Wählen Sie „Formulardatenmodell (FDM)“, wenn Ihr Formular das Lesen und Schreiben von Daten aus mehreren Quellen erfordert.
 
-   * **JSON-Schema**: Zum Integrieren Ihres Formulars in ein Backend-System, indem Sie ein JSON-Schema verknüpfen, das die Datenstruktur definiert. Damit können Sie dynamische Inhalte mithilfe der Schemaelemente hinzufügen.
-   * **Keine**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
+   - **JSON-Schema**: Zum Integrieren Ihres Formulars in ein Backend-System, indem Sie ein JSON-Schema verknüpfen, das die Datenstruktur definiert. Damit können Sie dynamische Inhalte mithilfe der Schemaelemente hinzufügen.
+   - **Keine**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
 
    >[!NOTE]
    >
-   > Um mehr über die Integration von Formularen oder Fragmenten mit einem Formulardatenmodell (FDM) im universellen Editor zur Verwendung verschiedener Backend-Datenquellen zu erfahren, [klicken Sie hier](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+   > Informationen zum Integrieren von Formularen oder Fragmenten mit einem Formulardatenmodell (FDM) im universellen Editor zur Verwendung verschiedener Backend-Datenquellen finden Sie unter [Integrieren von Formularen in das Formulardatenmodell im universellen Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
 1. (Optional) Geben Sie auf der Registerkarte **Erweitert** das **Veröffentlichungsdatum** oder das **Datum der Aufhebung der Veröffentlichung** für das Fragment an.
 
@@ -211,10 +211,8 @@ Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für Form
 
 ## Best Practices
 
-* Stellen Sie sicher, dass der Fragmentname eindeutig ist. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
-* Alle Ausdrücke, Skripte oder Stile in einem eigenständigen Formularfragment bleiben erhalten, wenn es als Verweis eingefügt oder in ein Formular eingebettet wird.
-* Wenn Sie ein Formular veröffentlichen, werden die Formularfragmente, die als Verweis in das Formular eingefügt wurden, automatisch veröffentlicht.
+- Stellen Sie sicher, dass der Fragmentname eindeutig ist. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
+- Alle Ausdrücke, Skripte oder Stile in einem eigenständigen Formularfragment bleiben erhalten, wenn es als Verweis eingefügt oder in ein Formular eingebettet wird.
+- Wenn Sie ein Formular veröffentlichen, werden die Formularfragmente, die als Verweis in das Formular eingefügt wurden, automatisch veröffentlicht.
 
-## Siehe auch
 
-{{universal-editor-see-also}}

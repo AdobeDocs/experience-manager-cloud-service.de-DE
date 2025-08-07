@@ -1,269 +1,524 @@
 ---
-title: Grundlegendes zum universellen Editor
-description: Dieses Tutorial hilft Ihnen, sich mit der Oberfläche des universellen Editors vertraut zu machen. Es erklärt Ihnen die Benutzeroberfläche, damit Sie Ihre eigenen Edge Delivery Services-Formulare im universellen Editor erstellen können.
+title: Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms
+description: Beherrschen Sie die Benutzeroberfläche des universellen Editors zum Erstellen von AEM Forms mit Edge Delivery Services. In diesem umfassenden Handbuch zur Benutzeroberfläche erfahren Sie mehr über die wichtigsten Tools, Verknüpfungen und Workflows zum effizienten Erstellen von Formularen.
+keywords: Universeller Editor, AEM Forms, Edge-Bereitstellungs-Services, Handbuch zur Benutzeroberfläche, Formularerstellung, WYSIWYG-Editor, Formular-Builder-Tools, Navigation in der Benutzeroberfläche
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: User, Developer, Admin
+level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 12%
+source-wordcount: '2209'
+ht-degree: 4%
 
 ---
 
 
-# Erkunden der Benutzeroberfläche des universellen Editors (WYSIWYG)
+# Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms
 
-Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) bietet eine einfache, visuelle und intuitive WYSIWYG-Benutzeroberfläche (What You See Is What You Get) für Adobe Edge Delivery Services-Formulare. Er verfügt über eine moderne Benutzeroberfläche mit Drag-and-Drop-Funktionalität zur effizienten Formularerstellung.
+Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) bietet eine visuelle Benutzeroberfläche zum Erstellen von AEM Forms mit Edge Delivery Services. Dieses Handbuch hilft Ihnen, die Schnittstelle zum effizienten Erstellen von Formularen zu verstehen.
 
-![Benutzeroberfläche des universellen Editors](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
+![Übersicht über die Benutzeroberfläche des universellen Editors](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Was Sie lernen werden
+## Überblick
 
-Am Ende dieses Tutorials werden Sie:
+Der universelle Editor bietet ein **What You See Is What You Get (WYSIWYG**-Erlebnis, das Benutzern genau anzeigt, wie Ihre Formulare angezeigt werden. Unabhängig davon, ob Sie mit der Erstellung von Formularen noch nicht vertraut sind oder ein erfahrener Entwickler sind, hilft Ihnen dieses Handbuch bei Folgendem:
 
-- Die Hauptkomponenten der Benutzeroberfläche des universellen Editors
-- Sicher durch die verschiedenen Schnittstellenbereiche navigieren
-- Wissen, wie Sie auf wichtige Tools zur Formularerstellung zugreifen und diese verwenden können
-- Vertrautheit mit Tastaturbefehlen, die die Produktivität steigern
+**Grundlegende Kenntnisse erwerben:**
 
-## Grundlegendes zur Benutzeroberfläche des universellen Editors
+- Sicheres und effizientes Navigieren in der Benutzeroberfläche
+- Verwenden der entsprechenden Tools für allgemeine Aufgaben zum Erstellen von Formularen
+- Nutzung von Tastaturbefehlen zur Steigerung der Produktivität
+- Fehlerbehebung bei häufigen Schnittstellenproblemen
 
-Wenn Sie ein Formular mit dem universellen Editor bearbeiten, öffnet die Konsole eine interaktive WYSIWYG-Oberfläche, über die Sie sofort mit der Bearbeitung beginnen können. Diese Benutzeroberfläche bietet während der Arbeit visuelles Feedback in Echtzeit und zeigt Endbenutzern genau, wie Ihr Formular aussieht.
+**Hauptschlüssel-Workflows:**
+
+- Richten Sie Ihren Arbeitsbereich ein, um optimale Produktivität zu erzielen
+- Erstellen von Formularen vom Konzept bis zur Veröffentlichung
+- Testen und Vorschau von Formularen auf allen Geräten
+- Zusammenarbeit mit Team-Mitgliedern bei Formularprojekten
+
+## Schneller Einstieg
+
+**Erstmalige Benutzer:** Beginnen Sie mit [grundlegenden Tools](#essential-tools-for-form-building) um die Kernfunktionen zu lernen, die Sie am häufigsten verwenden werden.
+
+**Erfahrene Benutzer:** Zu [erweiterten Funktionen](#advanced-features-and-integrations) für spezielle Tools und Integrationen wechseln.
+
+**Kurzanleitung:** Verwenden Sie die Abschnitte [Übersicht der Benutzeroberfläche](#interface-overview) und [Tastaturbefehle](#keyboard-shortcuts) für schnelle Suchen.
 
 >[!NOTE]
 >
-> Informationen zum Erstellen von Formularen mit dem universellen Editor finden Sie im Artikel [Erste Schritte mit Edge Delivery Services für AEM Forms mithilfe des universellen Editors (WYSIWYG)](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+> Neu bei der Formularerstellung? Eine [ Anleitung zur Erstellung von Formularen finden Sie unter ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) mit Edge Delivery Services für AEM Forms .
 
-![Benutzeroberfläche des universellen Editors](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
+## Übersicht über die Benutzeroberfläche
 
-Die Benutzeroberfläche des universellen Editors ist in vier logische Teile unterteilt:
+Die Benutzeroberfläche des universellen Editors ist in vier Hauptbereiche unterteilt, von denen jeder für bestimmte Aufgaben entwickelt wurde:
 
-- **[A: Kopfzeile von Experience Cloud](#experience-cloud-header)**
-- **[B: Symbolleiste des universellen Editors](#universal-editor-toolbar)**
-- **[C: Bedienfeld „Eigenschaften“](#properties-panel)**
-- **[D: Editor](#editor)**
+![Schnittstellenlayout des universellen Editors](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
 
-Sehen wir uns die einzelnen Abschnitte im Detail an.
+| **Bereich** | **Zweck** | **Primäre Verwendung** |
+|----------|-------------|----------------|
+| **[A: Kopfzeile von Experience Cloud](#experience-cloud-header)** | Navigation und Kontoverwaltung | Wechseln zwischen Adobe-Tools, Zugriff auf die Hilfe, Verwalten von Benachrichtigungen |
+| **[B: Symbolleiste des universellen Editors](#universal-editor-toolbar)** | Formular bearbeiten und veröffentlichen | Erstellen, Bearbeiten, Anzeigen einer Vorschau und Veröffentlichen von Formularen |
+| **[C: Bedienfeld „Eigenschaften“](#properties-panel)** | Komponentenkonfiguration | Formularfelder konfigurieren, Inhaltsstruktur verwalten und auf erweiterte Funktionen zugreifen |
+| **[D: Editor-Arbeitsfläche](#editor-canvas)** | Visuelle Formularerstellung | Komponenten hinzufügen, Layout anordnen, Echtzeitvorschau anzeigen |
 
-### Experience Cloud-Kopfzeile
+**Schnittstellenfluss:** meisten Benutzer arbeiten hauptsächlich in der **Editor-Arbeitsfläche** (D) und im **Eigenschaftenbereich** (C) und verwenden die **Symbolleiste** (B) für Aktionen wie Vorschau und Veröffentlichung.
 
-Der Experience Cloud-Header wird oben in der Konsole angezeigt und bietet Navigationskontext innerhalb des umfassenderen Adobe Experience Cloud-Ökosystems. Es zeigt Ihren aktuellen Speicherort an und ermöglicht den schnellen Zugriff auf andere Experience Cloud-Programme.
+## Wichtige Tools zum Erstellen von Formularen
 
-![Experience Cloud-Kopfzeile des universellen Editors](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
+Beginnen Sie hier, wenn Sie mit dem universellen Editor noch nicht vertraut sind. Dies sind die wichtigsten Tools, die Sie für die meisten Aufgaben zum Erstellen von Formularen verwenden werden:
 
-Untersuchen wir die einzelnen Komponenten:
+### **1. Arbeitsfläche des Editors - Ihre Haupt-Workspace**
 
-- **Adobe Experience Cloud**
+Auf **Arbeitsfläche des Editors** erstellen Sie Ihre Formulare visuell. Es zeigt genau an, wie das Formular für Benutzende aussieht.
 
-  Durch Klicken auf den Link **Adobe Experience Cloud** auf der linken Bildschirmseite können Sie zum Stammverzeichnis der Experience Manager-Lösung navigieren. Dort können Sie auf andere Tools wie Experience Manager Sites, Experience Manager Assets und Experience Manager Guides zugreifen.
+![Editor-Arbeitsfläche](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
-  ![Adobe Experience Manager](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager.png)
+**Wichtige Aktionen:**
 
-- **Organisationsname**
+- **Komponenten hinzufügen** durch Klicken auf die Schaltfläche **Hinzufügen** im Bedienfeld „Eigenschaften“
+- **Elemente auswählen** indem Sie direkt auf sie auf der Arbeitsfläche klicken
+- **Echtzeit-Änderungen anzeigen** während der Konfiguration von Komponenten
+- **Testinteraktionen** im Vorschaumodus
 
-  Der **Organisationsname** zeigt den Namen der Identity Management System (IMS)-Organisation an, bei der Sie derzeit angemeldet sind. Wenn Sie Zugriff auf mehrere Organisationen haben, können Sie mithilfe dieses Dropdown-Menüs zwischen ihnen wechseln. Im Screenshot zum Beispiel lautet die aktuell ausgewählte IMS-Organisation &quot;AEM Forms Internal01“.
+### **2. Bedienfeld „Eigenschaften“ - Komponenten konfigurieren**
 
-  ![Organisation](/help/edge/docs/forms/universal-editor/assets/universal-editor-organization.png)
+Im **Bedienfeld Eigenschaften** (auf der rechten Seite) können Sie ausgewählte Komponenten anpassen und Ihre Formularstruktur verwalten.
 
-- **Hilfe**
+![Panel „Eigenschaften“](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-  Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen. Dies ist besonders nützlich, wenn Sie auf Herausforderungen stoßen oder Anleitungen zu bestimmten Funktionen benötigen. Sie können Feedback auch über diesen Abschnitt senden.
+**Grundlegende Funktionen:**
 
-  ![Hilfe](/help/edge/docs/forms/universal-editor/assets/ue-help.png)
+- **Eigenschaftenmodus** (`d`): Konfigurieren der ausgewählten Komponenteneinstellungen
+- **Inhaltsstruktur** (`f`) - Navigation in der Formularstruktur
+- **Komponenten hinzufügen** (`a`): Einfügen neuer Formularfelder
+- **Komponentenaktionen** - Duplizieren oder Löschen ausgewählter Elemente
 
-- **Benachrichtigungen**
+### **3. Symbolleiste - Grundlagen - Vorschau und Veröffentlichung**
 
-  Im Abschnitt **Benachrichtigungen** wird die Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen, Anfragen und aktuellen Aufgaben in Ihrer IMS-Organisation angezeigt. Wenn Sie diesen Abschnitt im Auge behalten, behalten Sie den Überblick über Ihren Workflow.
-
-  ![Benachrichtigung](/help/edge/docs/forms/universal-editor/assets/ue-notification.png)
-
-- **Lösungen**
-
-  Das **Lösungen**-Menü ermöglicht den Wechsel zu anderen Adobe Experience Cloud-Lösungen, sodass Sie einfach zwischen verschiedenen Tools in Ihrem Workflow wechseln können.
-
-  ![Lösungen](/help/edge/docs/forms/universal-editor/assets/ue-solutions.png)
-
-- **Benutzerprofil**
-
-  Dieses Symbol zeigt Ihre Profilinformationen zusammen mit dem Namen der IMS-Organisation an, bei der Sie derzeit angemeldet sind. Klicken Sie auf dieses Symbol, um auf Kontoeinstellungen und Abmeldeoptionen zuzugreifen.
-
-  ![Autor](/help/edge/docs/forms/universal-editor/assets/ue-author.png)
-
-### Symbolleiste des universellen Editors
-
-Die Symbolleiste bietet wichtige Navigations- und Bearbeitungswerkzeuge. Damit können Sie zwischen Formularen wechseln, Formulare veröffentlichen oder die Veröffentlichung rückgängig machen, Formulareigenschaften bearbeiten und auf den Regeleditor zugreifen, um dynamische Verhaltensweisen hinzuzufügen.
+Die **Symbolleiste des universellen Editors** bietet wichtige Aktionen zum Testen und Veröffentlichen Ihrer Formulare.
 
 ![Symbolleiste des universellen Editors](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-Die einzelnen Komponenten bieten folgende Neuerungen:
+**Wichtige Tools:**
 
-- **Taste HOME**
+- **Vorschaumodus** (`p`): Testen Sie das Formular so, wie es den Benutzern angezeigt wird
+- **Responsiver Modus** - Überprüfen Sie, wie Ihr Formular auf Mobilgeräten aussieht.
+- **Seite öffnen** (`o`) - Formular auf einer neuen Registerkarte anzeigen
+- **Veröffentlichen** - Formular für Benutzer live schalten
 
-  Die Schaltfläche „Startseite“ kehrt zur Startseite des universellen Editors zurück. Dies ist nützlich, wenn Sie mit der Arbeit an einem anderen Formular beginnen müssen. Sie können auch direkt eine URL in der Adressleiste eingeben, um zu jedem Formular zu navigieren, das Sie bearbeiten möchten.
+### **4. Schnellstart-Workflow**
 
-  ![Startseite des universellen Editors](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
+**Für Ihr erstes Formular:**
 
-- **Speicherortleiste**
+1. **Erstellen beginnen** - Komponenten mithilfe der Schaltfläche **Hinzufügen** hinzufügen (`a`)
+2. **Felder konfigurieren** - Komponenten auswählen und **Eigenschaftenmodus** verwenden (`d`)
+3. **Formular testen** - Verwenden Sie **Vorschaumodus** (`p`), um mit Ihrem Formular zu interagieren
+4. **Ansicht auf Mobilgerät überprüfen** - Zum **responsiven Modus** wechseln, um Mobilgeräte zu testen
+5. **Live schalten** - Klicken Sie auf **Veröffentlichen** wenn Sie bereit sind
 
-  Die **Standortleiste** zeigt die Adresse des Formulars an, das Sie gerade bearbeiten. Um zu einem anderen Formular zu wechseln, klicken Sie einfach auf die Adressleiste und geben Sie die URL ein. Der Tastaturbefehl zum Fokussieren der Positionsleiste ist `l`.
+**Validierungs-Checkpoints:**
 
-  ![Speicherortleiste](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
+- Können Sie Formularfelder hinzufügen und konfigurieren?
+- Funktioniert der Vorschaumodus ordnungsgemäß?
+- Sind alle erforderlichen Felder ordnungsgemäß eingerichtet?
+- Wird das Formular auf Mobilgeräten gut angezeigt?
 
-- **Regeleditor**
+## Experience Cloud-Header
 
-  Der **Regeleditor** ermöglicht es Ihnen, Ihren Formularen über eine intuitive visuelle Benutzeroberfläche dynamische Verhaltensweisen hinzuzufügen. Damit können Sie Bedingungen, Validierungen und Aktionen erstellen, die auf Benutzereingaben reagieren, sodass Ihre Formulare interaktiv und intelligent werden.
+Die Kopfzeile von **Experience Cloud** stellt Tools für die Navigation und Kontoverwaltung bereit. Die meisten Formular-Builder verwenden sie gelegentlich, um zwischen Adobe-Tools zu wechseln oder auf die Hilfe zuzugreifen.
 
-  ![Regeleditor](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
+![Experience Cloud-Kopfzeile](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
-  >[!NOTE]
-  >
-  > - Die Erweiterung „Regeleditor“ ist im universellen Editor nicht standardmäßig aktiviert. Um diese leistungsstarke Funktion zu aktivieren, kontaktieren Sie uns unter [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-Adresse.
-  > - Informationen zum Erstellen und Verwalten von Regeln finden Sie im Artikel [Einführung in den Regeleditor beim WYSIWYG-Authoring](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
+**Schlüsselelemente:**
 
-- **Formulareigenschaften bearbeiten**
+| **Element** | **Zweck** | **Verwendung** |
+|-------------|-------------|----------------|
+| **Adobe Experience Cloud** | Zu anderen Adobe-Tools navigieren | Wechseln zwischen Sites, Assets, Forms |
+| **Organisation** | Wechseln zwischen Organisationen | Szenarien für den Zugriff auf mehrere Organisationen |
+| **Hilfe** | Zugriff auf Dokumentation und Support | Wenn Sie Anleitungen benötigen oder Feedback senden möchten |
+| **Benachrichtigungen** | Zugewiesene Aufgaben und Warnhinweise anzeigen | Überprüfen des Workflow-Status |
+| **Lösungen** | Schneller Zugriff auf andere Adobe-Lösungen | Wechseln zwischen verschiedenen Adobe-Produkten |
+| **Benutzerprofil** | Kontoeinstellungen und Abmeldung | Konto verwalten oder Benutzer wechseln |
 
-  Mit **Option „Formulareigenschaften bearbeiten** können Sie wichtige Formulareinstellungen wie das Formulardatenmodell (FDM) und das Veröffentlichungsdatum konfigurieren. Diese Eigenschaften beeinflussen, wie sich Ihr Formular verhält und mit Backend-Systemen integriert wird.
+**Häufigste Verwendungszwecke:**
 
-  ![Formulareigenschaften bearbeiten](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+- **Hilfe aufrufen** - Klicken Sie auf das Hilfesymbol, um Dokumentation und Support anzuzeigen.
+- **Wechseln der**: Verwenden Sie das Dropdown-Menü „Organisation“, wenn Sie Zugriff auf mehrere Organisationen haben
 
-- **Authentifizierungs-Header-Einstellungen**
+## Symbolleiste des universellen Editors
 
-  Mit **Option „Einstellungen für Authentifizierungs** Header“ können Sie benutzerdefinierte Authentifizierungs-Header für lokale Entwicklungszwecke festlegen. Dies ist besonders beim Testen von Formularen nützlich, für die Authentifizierungsdaten erforderlich sind.
+Die **Symbolleiste des universellen Editors** enthält die Bearbeitungs- und Veröffentlichungstools für Primärformulare. Diese sind nach Häufigkeit der Verwendung und typischem Workflow geordnet.
 
-  ![Authentifizierungs-Header](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
+![Symbolleiste des universellen Editors](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-- **Responsiver Modus**
+### **Tägliche Workflow-Tools**
 
-  Mit **Funktion „Responsive**&quot; können Sie testen, wie Ihr Formular auf verschiedenen Geräten angezeigt wird. Standardmäßig wird der Editor im Desktop-Layout geöffnet. Sie können jedoch zur mobilen Ansicht wechseln, um sicherzustellen, dass Ihr Formular auf kleineren Bildschirmen nützlich und attraktiv bleibt.
+**Diese Tools werden in den meisten Sitzungen zum Erstellen von Formularen verwendet:**
 
-  ![Responsiver Modus](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
+#### **Vorschaumodus** (`p`)
 
-- **Vorschaumodus**
+**Zweck:** Testen Sie Ihr Formular genau so, wie es den Benutzern angezeigt wird\
+**Verwendung:** Vor der Veröffentlichung, nach dem Vornehmen von Änderungen, um die Formularfunktionalität zu testen
 
-  **Vorschaumodus** zeigt das Formular genau so an, wie es bei der Veröffentlichung angezeigt wird. Auf diese Weise können Sie mit dem Formular interagieren, indem Sie auf Links und Schaltflächen klicken, genau wie es Ihre Benutzer tun würden. Dies ist ein wichtiger Schritt vor der Veröffentlichung, um zu überprüfen, ob alles wie erwartet funktioniert. Schalten Sie mithilfe des Tastaturbefehls zwischen Bearbeitungs- und `p` um.
+![Vorschaumodus](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
-  ![Vorschau](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
+**Best Practice:** Vorschau nach jeder größeren Änderung, um Probleme frühzeitig zu erkennen.
 
-- **Seite öffnen**
+#### **Responsiver Modus**
 
-  Mit der **Seite öffnen**-Schaltfläche wird Ihr Formular in einer neuen Browser-Registerkarte für die Vorschau geöffnet. Dadurch erhalten Sie eine Vollbildansicht Ihres Formulars ohne Editor-Oberfläche. Der Tastaturbefehl für diese Aktion ist `o`.
+**Zweck:** Überprüfen Sie, wie das Formular auf Mobilgeräten angezeigt wird.\
+**Verwendung:** Nach dem Erstellen des Formulars, vor der Veröffentlichung
 
-  ![Seite öffnen](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![Responsiver Modus](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-- **Veröffentlichen**
+**Best Practice:** Mobilansicht immer testen - viele Benutzer greifen auf Formulare auf Mobiltelefonen zu.
 
-  Sobald Ihr Formular für Benutzer bereit ist, **Sie es mit der Schaltfläche** Veröffentlichen“ live und für Ihre Zielgruppe verfügbar machen. Dies ist der letzte Schritt in Ihrem Arbeitsablauf zur Formularerstellung.
+#### **Seite öffnen** (`o`)
 
-  ![Veröffentlichen ](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+**Zweck** Formular auf einer neuen Registerkarte ohne Editor-Oberfläche anzeigen\
+**Verwendung:** Für Vollbildtests, Freigabe für Stakeholder zur Überprüfung
 
-- **Menü mit Auslassungspunkten**
+    ![Seite öffnen](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
-  Durch Klicken auf die Auslassungszeichen (…) werden zusätzliche Optionen angezeigt, einschließlich der Möglichkeit **die Veröffentlichung** Formulars rückgängig zu machen, das derzeit live ist. Dies ist nützlich, wenn Sie ein Formular vorübergehend aus dem öffentlichen Zugriff entfernen oder durch eine aktualisierte Version ersetzen müssen.
+#### **Veröffentlichen**
 
-  ![Auslassungspunkte](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
+**Zweck** Formular live schalten und für Benutzer zugänglich machen\
+**Verwendung:** Nach gründlichen Tests im Vorschau- und responsiven Modus
 
-### Bedienfeld „Eigenschaften“
+    ![Veröffentlichen](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
-Das **Eigenschaftenbedienfeld** wird auf der rechten Seite der Benutzeroberfläche angezeigt und zeigt kontextuelle Informationen basierend auf dem an, was Sie im Formular ausgewählt haben. Wenn keine Komponente ausgewählt ist, wird die gesamte Formularstruktur angezeigt.
+**Validierungs-Checkliste vor der Veröffentlichung:**
 
-![Bedienfeld „Eigenschaften“](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+- Im Vorschaumodus getestetes Formular
+- Reaktionsfähigkeit auf Mobilgeräten überprüft
+- Alle erforderlichen Felder konfiguriert
+- Übermittlungsaktionen funktionieren ordnungsgemäß
 
-Sehen wir uns die wichtigsten Komponenten an:
+### **Navigationstools**
 
-- **Eigenschaftenmodus**
+#### **Schaltfläche „Startseite“**
 
-  Der **Eigenschaften**-Modus zeigt Einstellungen und Optionen für die aktuell ausgewählte Komponente an. Hier können Sie die einzelnen Elemente Ihres Formulars an Ihre spezifischen Anforderungen anpassen. Der Tastaturbefehl zum Öffnen der Eigenschaften einer ausgewählten Komponente ist `d`.
+**Zweck:** Zurück zur Startseite des universellen Editors\
+**Verwendung:** Beginn der Arbeit an einem anderen Formular
 
-  ![Eigenschaften](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
+![Schaltfläche „Startseite“](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
 
-- **Inhaltsstruktur**
+#### **Speicherortleiste** (`l`)
 
-  Die **Inhaltsstruktur** zeigt die hierarchische Struktur Ihres Formulars an. Diese visuelle Darstellung hilft Ihnen zu verstehen, wie Komponenten ineinander verschachtelt sind. Wenn Sie auf ein Element in der Struktur klicken, wird es im Editor ausgewählt und zu seiner Position gescrollt. Dies ist besonders bei komplexen Formularen hilfreich. Die Inhaltsstruktur-Ansicht mit dem Tastaturbefehl `f` ein/aus.
+**Zweck:** Direktes Navigieren zu einem Formular über die URL\
+**Verwendung:** Schnelles Wechseln zwischen bestimmten Formularen
 
-  ![Inhaltsstruktur](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
+![Speicherortleiste](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
 
-- **Varianten generieren**
+### **Erweiterte Konfigurationstools**
 
-  Die Funktion **Varianten generieren** nutzt künstliche Intelligenz, um basierend auf bestimmten Eingabeaufforderungen verschiedene Versionen Ihres Formulars zu erstellen. So können Sie mit verschiedenen Ansätzen und Designs experimentieren, ohne jede Variante manuell erstellen zu müssen. Eingabeaufforderungen können von Adobe bereitgestellt oder von Ihnen angepasst werden.
+**Diese Tools werden für bestimmte Szenarien oder erweiterte Setups verwendet:**
 
-  ![Varianten generieren](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
+#### **Formulareigenschaften bearbeiten**
 
-  >[!NOTE]
-  >
-  > Detaillierte Anweisungen zur Verwendung der Funktion „Varianten für Formulare generieren“ finden Sie [ Artikel zum Generieren ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) Varianten .
+**Zweck:** Konfigurieren von Einstellungen auf Formularebene wie Formulardatenmodell (FDM) und Veröffentlichungsdaten\
+**Verwendung:** Einrichten von Datenintegrationen, Planen der Veröffentlichung
 
-- **Experimentieren**
+![Formulareigenschaften](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
 
-  Mit **Funktion „Experimentieren** können Sie kontrollierte Tests durchführen, um verschiedene Formularentwürfe und Layouts zu vergleichen. Indem Sie analysieren, wie Benutzende mit den einzelnen Varianten interagieren, können Sie datengesteuerte Entscheidungen treffen, um die Konversionsraten und das Benutzererlebnis zu optimieren.
+#### **Regeleditor** (früher Zugriff)
 
-  ![Experimentieren](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
+**Zweck** Dynamische Verhaltensweisen, Validierungen und bedingte Logik hinzufügen\
+**Verwendung:** Erstellen interaktiver Formulare mit komplexer Geschäftslogik
 
-- **Personalisierung**
+![Regeleditor](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
-  Die Einstellungen für **Personalization** ermöglichen es Ihnen, Ihre Formulare mit Adobe Experience Platform (AEP) oder externen Anwendungen zu verbinden. Diese Verbindung ermöglicht es Ihnen, auf der Grundlage von Benutzerdaten und Verhaltensweisen maßgeschneiderte Formularerlebnisse zu erstellen, um die Relevanz und Interaktion zu steigern.
+>[!IMPORTANT]
+>
+> **Early-Access-Funktion** Der Regeleditor erfordert einen speziellen Zugriff. Kontaktieren Sie [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um diese Funktion zu aktivieren.
+>
+> **Weitere Informationen:** Detaillierte Anweisungen finden Sie [Handbuch ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) Regeleditor).
 
-  ![Personalisierung](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
+#### **Einstellungen „Kopfzeile für die Authentifizierung“**
 
-- **A/B-Tests**
+**Zweck:** Festlegen benutzerdefinierter Authentifizierungs-Header für Entwicklungstests\
+**Verwendung:** Lokale Entwicklung mit authentifizierungspflichtigen Formularen
 
-  **A/B** Tests helfen Ihnen beim Vergleich bestimmter Varianten Ihres Formulars, um zu ermitteln, welche besser funktioniert. Im Gegensatz zu umfangreicheren Experimenten konzentrieren sich A/B-Tests normalerweise auf den Vergleich bestimmter Elemente oder Änderungen, um die effektivste Option zu ermitteln.
+![Authentifizierungs-Header](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
 
-  ![A/B-Tests](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+#### **Zusätzliche Optionen** (Menü mit Auslassungspunkten)
 
-- **Aufgabenverwaltung**
+**Zweck:** Greifen Sie auf weniger gängige Aktionen wie das Rückgängigmachen der Veröffentlichung zu.\
+**Verwendung:** Offline-Schaltung von Formularen, Zugriff auf erweiterte Optionen
 
-  Die Funktion **Aufgabenverwaltung** optimiert die Zusammenarbeit, indem sie Ihrem Team hilft, Aufgaben im Zusammenhang mit der Formularerstellung und -optimierung zu organisieren, zu verfolgen und auszuführen. Dies sorgt dafür, dass Projekte effizient und mit klarer Rechenschaftspflicht vorangebracht werden.
+![Zusätzliche Optionen](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
 
-  ![Aufgabenverwaltung](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
+## Panel „Eigenschaften“
 
-- **Inhaltsentwürfe**
+Das **Eigenschaftenbedienfeld** (auf der rechten Seite) ist Ihr Kontrollzentrum zum Erstellen und Konfigurieren von Formularen. Er ändert sich je nach Auswahl und bietet verschiedene Tools für verschiedene Aufgaben.
 
-  Mit **Funktion „Inhaltsentwürfe** können Sie vorläufige Versionen von Textelementen in Ihrem Formular erstellen und speichern. Sie können Entwürfe mit vorhandenem Formulartext erstellen oder von Grund auf neu beginnen und sie dann nach Bedarf bearbeiten oder löschen. Standardmäßig werden drei Entwürfe angezeigt. Wenn Sie jedoch auf „Alle **&quot; klicken** werden zusätzliche Entwürfe angezeigt.
+![Panel „Eigenschaften“](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-  ![Inhaltsentwürfe](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+### **Zentrale Tools zur Formularerstellung**
 
-- **Datenquelle**
+**Diese Tools sind für die Erstellung und Organisation Ihrer Formulare unverzichtbar:**
 
-  Source Mit **Option „Daten-**&quot; können Sie die Datenquellen für Ihr Formulardatenmodell (FDM) konfigurieren und auswählen. Durch diese Integration können alle Datenmodellobjekte, Eigenschaften und Services aus den ausgewählten Quellen im Formular verwendet werden, wodurch ein dynamischer Datenabruf und eine dynamische Übermittlung ermöglicht wird.
+#### **Komponenten hinzufügen** (`a`)
 
-  ![Datenquelle](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+**Zweck:** Neue Formularfelder und -elemente einfügen\
+**Funktionsweise:** Zeigt verfügbare Komponenten für den ausgewählten Container an
 
-- **Hinzufügen**
+![Komponenten hinzufügen](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
 
-  Die **Hinzufügen**-Schaltfläche zeigt eine Dropdown-Liste von Komponenten an, die zum aktuell ausgewählten Container hinzugefügt werden können. Wenn beispielsweise ein Abschnitt für ein adaptives Formular ausgewählt ist, zeigt diese Liste alle Komponenten an, die diesem Abschnitt hinzugefügt werden können. Der Tastaturbefehl zum Öffnen dieser Komponentenliste ist `a`.
+**Allgemeine Komponenten:**
 
-  ![Symbol hinzufügen](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
+- Texteingabe, E-Mail, Telefonfelder
+- Dropdown, Optionsfelder, Kontrollkästchen
+- Datei-Upload, Datumsauswahl
+- Bedienfelder und Abschnitte für die Organisation
 
-- **Duplizieren**
+#### **Eigenschaften-Modus** (`d`)
 
-  Mit **Option** Duplizieren“ wird eine exakte Kopie der ausgewählten Komponente erstellt. Dies spart Zeit, wenn Sie mehrere ähnliche Elemente benötigen, da Sie sie duplizieren und dann ändern können, anstatt sie von Grund auf neu zu erstellen.
+**Zweck:** Konfigurieren von Einstellungen für ausgewählte Komponenten\
+**Verwendung:** Nach dem Hinzufügen einer Komponente, um ihr Verhalten anzupassen
 
-  ![Symbol „Duplizieren](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+![Modus „Eigenschaften“](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
 
-- **Löschen**
+**Schlüsseleinstellungen:**
 
-  Mit **Option** Löschen“ wird die ausgewählte Komponente aus dem Formular entfernt. Seien Sie vorsichtig, wenn Sie diese Option verwenden, da sie das Element sofort ohne Bestätigungsaufforderung entfernt.
+- Feldbezeichnungen und Platzhaltertext
+- Validierungsregeln (erforderlich, Format, Länge)
+- Standardwerte und Hilfetext
+- Regeln für bedingte Sichtbarkeit
 
-  ![Löschen](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
+#### **Inhaltsstruktur** (`f`)
 
-### Editor
+**Zweck**: Navigieren und Organisieren der Formularstruktur\
+**Verwendung:** Komplexe Formulare mit mehreren Abschnitten, Suchen spezifischer Komponenten
 
-Der Editor ist der zentrale Arbeitsbereich, in dem Sie Ihr Formular erstellen und ändern. Es zeigt das in der Speicherortleiste angegebene Formular an und bietet ein WYSIWYG-Erlebnis, das Benutzern genau zeigt, wie das Formular aussehen wird. Im Vorschaumodus können Sie mit dem Formular so interagieren, wie es Ihre Benutzer tun würden, indem Sie die Navigation durch Schaltflächen und Links testen.
+![Inhaltsstruktur](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
 
-![Bearbeiter](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+**Vorteile:**
 
-Im Editor verbringen Sie die meiste Zeit mit dem Hinzufügen von Komponenten, dem Konfigurieren ihrer Eigenschaften und dem Anordnen dieser Komponenten, um ein intuitives, effektives Formularerlebnis zu schaffen.
+- Schnellnavigation zu einer beliebigen Komponente
+- Visuelle Formularhierarchie
+- Einfache Neuanordnung von Elementen
 
-## Zusammenfassung der Tastaturbefehle
+#### **Komponenten-Aktionen**
 
-Beachten Sie zur Produktivitätssteigerung die folgenden wichtigen Tastaturbefehle:
+**Zweck:** Verwalten vorhandener Komponenten\
+**Verfügbare Aktionen:**
 
-- `l` - Fokus auf der Positionsleiste
-- `p` - Zwischen Bearbeitungs- und Vorschaumodus wechseln
-- `o` - Formular in einer neuen Registerkarte öffnen
-- `d` - Eigenschaften der ausgewählten Komponente öffnen
-- `f` - Ansicht der Inhaltsstruktur ein/aus
-- `a` - öffnet die Liste der hinzuzufügenden Komponenten
+- **Duplizieren** - Komponenten schnell kopieren ![Duplizieren](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+- **Löschen** - Entfernen von Komponenten (keine Bestätigungsaufforderung) ![Löschen](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
 
+### **Erweiterte Funktionen und Integrationen**
+
+**Diese Tools ermöglichen ausgefeilte Formularfunktionen:**
+
++++Datenintegration
+
+#### **Datenquelle**
+
+**Zweck:** Verbinden von Formularen mit Backend-Datensystemen\
+**Verwendung:** Forms, die in Datenbanken oder externe Dienste lesen/schreiben müssen
+
+![Datenquelle](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+
+**Funktionen:**
+
+- Konfiguration des Formulardatenmodells (FDM)
+- Dynamische Datenpopulation
+- Übermittlung an externe Systeme
+
++++
+
++++KI-gestützte Tools
+
+#### **Varianten generieren**
+
+**Zweck** Verwenden von KI zum Erstellen verschiedener Versionen von Formularinhalten\
+**Verwendung:** Experimentieren mit verschiedenen Texten, Layouts oder Ansätzen
+
+    ![Varianten generieren](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
+
+**Weitere Informationen:** [Handbuch zur Generierung von Varianten](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+
+#### **Inhaltsentwürfe**
+
+**Zweck:** Erstellen und Speichern von vorläufigen Textversionen\
+**Verwendung:** Iterieren beim Kopieren von Formularen, Speichern von Optionen für alternativen Text
+
+![Inhaltsentwürfe](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+
++++
+
++++Tests und Optimierung
+
+#### **A/B-Tests**
+
+**Zweck:** Vergleichen von Formularvarianten zur Leistungsoptimierung\
+**Verwendung:** Konversionsraten optimieren, verschiedene Designs testen
+
+![A/B-Tests](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+
+#### **Experimente**
+
+**Zweck** Durchführen gesteuerter Tests für Formularentwürfe\
+**Verwendung:** Datengesteuerte Formularoptimierung, Benutzererlebnistests
+
+    ![Experimentieren](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
+
++++
+
++++Collaboration-Tools
+
+#### **Aufgaben-Management**
+
+**Zweck:** Team-Workflow für Formularprojekte organisieren\
+**Verwendung:** Entwicklung von Mehrpersonenformularen, Projekt-Tracking
+
+![Aufgaben-Management](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
+
+#### **Personalisierung**
+
+**Zweck:** Verbinden mit Adobe Experience Platform für maßgeschneiderte Erlebnisse\
+**Verwendung:** Erstellen personalisierter Formulare auf der Grundlage von Benutzerdaten
+
+    ![Personalization](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
+
++++
+
+## Arbeitsfläche des Editors
+
+Die **Editor-Arbeitsfläche** ist Ihr Hauptarbeitsbereich, in dem Sie Formulare visuell erstellen. Es zeigt genau an, wie das Formular für Benutzer aussieht, und bietet Echtzeit-Feedback, wenn Sie Änderungen vornehmen.
+
+![Editor-Arbeitsfläche](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+
+**Wichtigste Funktionen:**
+
+- **WYSIWYG-Bearbeitung** - Änderungen sofort bei der Vornahme anzeigen
+- **Direkte Interaktion** - Klicken Sie auf eine beliebige Komponente, um sie auszuwählen und zu bearbeiten
+- **Echtzeitvorschau** - Wechseln Sie in den Vorschaumodus, um die Funktionalität zu testen
+- **Responsive Anzeige** - Schalten Sie Geräteansichten um, um die Kompatibilität von Mobilgeräten zu überprüfen.
+
+**Best Practices:**
+
+- **Mit Struktur beginnen** - Hauptabschnitte vor den detaillierten Komponenten hinzufügen
+- **Häufig testen** - Verwenden Sie den Vorschaumodus regelmäßig, um Probleme frühzeitig zu erkennen
+- **Think mobile-first** - Überprüfen des responsiven Modus während des gesamten Design-Prozesses
+
+## Tastaturbefehle
+
+Beherrschen Sie diese Tastaturbefehle, um Formulare schneller und effizienter zu erstellen:
+
+| **Tastaturbefehl** | **Aktion** | **Verwendung** |
+|--------------|------------|----------------|
+| `a` | Komponentenliste öffnen | Hinzufügen neuer Formularfelder |
+| `d` | Öffnen der Komponenteneigenschaften | Ausgewählte Elemente konfigurieren |
+| `f` | Inhaltsstruktur umschalten | Navigieren in komplexen Formularen |
+| `p` | Vorschaumodus umschalten | Formularfunktionen testen |
+| `o` | Formular in neuer Registerkarte öffnen | Vollbildprüfung |
+| `l` | Fokus-Speicherortleiste | Wechseln zu verschiedenen Formularen |
+
+**Profi-Tipp** Verwenden Sie diese Tastaturbefehle kombiniert - wählen Sie beispielsweise eine Komponente aus, drücken Sie die `d`-Taste zur Konfiguration und `p` Sie dann die Änderungen testen.
+
+## Allgemeine Workflows
+
+### **Erstellen des ersten Formulars**
+
+1. **Struktur hinzufügen** - Verwenden Sie `a`, um ein Bedienfeld für Formularabschnitte hinzuzufügen.
+2. **Felder hinzufügen** - Texteingabe, E-Mail und andere Komponenten einfügen
+3. **Eigenschaften konfigurieren** - Wählen Sie jedes Feld aus und drücken Sie `d`, um Bezeichnungen und Validierungen festzulegen
+4. **Testfunktion**: Drücken Sie die `p`, um das Formular in der Vorschau anzuzeigen und zu testen.
+5. **Mobile Ansicht überprüfen** - Verwenden Sie den responsiven Modus, um die mobile Anzeige zu überprüfen.
+6. **Veröffentlichen** - Klicken Sie auf Veröffentlichen , wenn Sie bereit für die Live-Schaltung sind.
+
+### **Bearbeiten vorhandener Forms**
+
+1. **Navigationsstruktur** - Verwenden Sie die Inhaltsstruktur (`f`), um Komponenten schnell zu finden
+2. **Auswählen und ändern** - Direkt auf Komponenten klicken oder Inhaltsstruktur verwenden
+3. **Teständerungen** - Vorschau (`p`) nach jeder wesentlichen Änderung
+4. **Workflow validieren** - Testen des gesamten Formularflusses vor der erneuten Veröffentlichung
+
+### **Zusammenarbeit mit Teams**
+
+1. **Aufgabenverwaltung verwenden** - Team-Mitgliedern bestimmte Formularabschnitte zuweisen
+2. **Für Überprüfung freigeben** - Verwenden Sie „Seite öffnen“ (`o`), um saubere Vorschauen freizugeben
+3. **Gemeinsam testen** - Verwenden des Vorschaumodus für gemeinsame Testsitzungen
+4. **Fortschritt verfolgen** - Benachrichtigungen auf Aufgabenaktualisierungen überprüfen
+
+## Beheben häufiger Probleme
+
+### **Schnittstellenprobleme**
+
++++Schnittstellenelemente werden nicht geladen
+
+**Problem** Schaltflächen der Symbolleiste, das Bedienfeld „Eigenschaften“ oder andere Elemente der Benutzeroberfläche werden nicht angezeigt
+
+**Lösungen:**
+
+- **Seite aktualisieren** - Eine einfache Browser-Aktualisierung behebt häufig Ladeprobleme
+- **Browser-Kompatibilität überprüfen** - Verwenden von Chrome, Firefox oder Safari
+- **Browsercache löschen** - Entfernt zwischengespeicherte Dateien, die möglicherweise veraltet sind
+- **Berechtigungen überprüfen** - Stellen Sie sicher, dass Sie angemessenen Zugriff haben, um Formulare zu bearbeiten
+
++++
+
++++Komponenten reagieren nicht
+
+**Problem:** Komponenten können nicht ausgewählt werden oder das Bedienfeld „Eigenschaften“ wird nicht aktualisiert
+
+**Lösungen:**
+
+- **Direkt auf Komponenten klicken** - Vermeiden Sie es, auf leere Bereiche zu klicken
+- **Inhaltsstruktur verwenden** - Drücken Sie die `f` und wählen Sie Komponenten aus der Baumstruktur aus.
+- **Auf überlappende Elemente prüfen** - Einige Komponenten blockieren möglicherweise andere.
+- **Formular neu laden** - Verwenden Sie die Adressleiste (`l`), um das aktuelle Formular neu zu laden
+
++++
+
++++Probleme mit dem Vorschaumodus
+
+**Problem** Der Vorschaumodus funktioniert nicht ordnungsgemäß oder zeigt Fehler an
+
+**Lösungen:**
+
+- **Formularvalidierung überprüfen** - Sicherstellen, dass alle erforderlichen Felder ordnungsgemäß konfiguriert sind
+- **Zuerst im Bearbeitungsmodus testen** - Überprüfen, ob die Komponenten vor der Vorschau funktionieren
+- **Browser-Cache löschen** - Zwischengespeicherte Skripte können die Vorschau beeinträchtigen
+- **Komponentenkonfiguration überprüfen** - Einstellungen für den Eigenschaftenmodus auf Fehler überprüfen
+
++++
+
+## Best Practices für die effiziente Formularerstellung
+
+### **Tipps für die Organisation**
+
+- **Beschreibende Namen verwenden** - Komponenten im Eigenschaftenmodus klar beschriften
+- **Gruppieren verwandter Felder** - Verwenden Sie Bedienfelder, um Formularabschnitte logisch zu organisieren
+- **Planen vor dem Erstellen** - skizzieren Sie die Formularstruktur, bevor Sie beginnen.
+- **Einfach halten** - Vermeiden Sie es, Benutzer mit zu vielen Feldern zu überfordern
+
+### **Leistungsoptimierung**
+
+- **Komponenten minimieren** - Nur erforderliche Formularfelder verwenden
+- **Optimieren von Bildern** - Komprimieren Sie alle Bilder, die in Formularen verwendet werden
+- **Test auf Mobilgerät** - Sicherstellen einer guten Leistung bei langsameren Mobilverbindungen
+- **Frühe Validierung** - Richten Sie eine ordnungsgemäße Validierung ein, um Übermittlungsfehler zu vermeiden
+
+### **Anwendererlebnis**
+
+- **Häufig testen** - Verwenden Sie den Vorschaumodus nach jeder größeren Änderung
+- **Wie Benutzer denken** - Das vollständige Ausfüllen des Formulars
+- **Klare Beschriftungen bereitstellen** - Machen Sie die Feldzwecke für die Benutzer*innen offensichtlich.
+- **Hilfreichen Text hinzufügen** - Verwenden Sie Hilfetext für komplexe Felder.
+
+## Nächste Schritte
+
+Nachdem Sie sich mit der Benutzeroberfläche des universellen Editors vertraut gemacht haben:
+
+1. **Üben Sie mit einem einfachen Formular** - Beginnen Sie mit einfachen Feldern, um sich vertraut zu machen
+2. **Erweiterte Funktionen erkunden** - KI-gestützte Tools und Integrationen ausprobieren, wenn sie bereit sind
+3. **Erfahren Sie mehr über das** - Siehe [Erste Schritte](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+4. **Übergeordneter Regeleditor** - Dynamische Verhaltensweisen mit dem [Handbuch zum Regeleditor“ ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+
+**Denken Sie daran** Der universelle Editor wurde entwickelt, um die Formularerstellung intuitiv zu gestalten. Beginnen Sie mit den Grundlagen und erkunden Sie nach und nach erweiterte Funktionen, wenn Ihre Anforderungen wachsen.
 

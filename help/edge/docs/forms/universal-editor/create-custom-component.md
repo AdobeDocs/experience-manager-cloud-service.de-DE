@@ -4,17 +4,14 @@ description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1802'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 98%
 
 ---
 
 # Erstellen benutzerdefinierter Komponenten beim WYSIWYG-Authoring
-
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabveröffentlichungskanal</a> verfügbar ist. </span>
-
 
 Edge Delivery Services Forms bietet eine Anpassung, die es Frontend-Entwicklerinnen und -Entwicklern ermöglicht, maßgeschneiderte Formularkomponenten zu erstellen. Diese benutzerdefinierten Komponenten lassen sich nahtlos in das WYSIWYG-Authoring-Erlebnis integrieren und können im Formulareditor einfach hinzugefügt, konfiguriert und verwaltet werden. Mit benutzerdefinierten Komponenten können Sie die Funktionalität verbessern und gleichzeitig einen reibungslosen und intuitiven Authoring-Prozess sicherstellen.
 
@@ -24,8 +21,8 @@ In diesem Dokument werden die Schritte zum Erstellen benutzerdefinierter Kompone
 
 Bevor Sie mit der Erstellung Ihrer benutzerdefinierten Komponente beginnen, sollten Sie sicherstellen, dass Sie:
 
-* grundlegende Kenntnisse zu [nativen HTML-Komponenten](/help/edge/docs/forms/form-components.md) besitzen
-* wissen, wie Sie [mit der CSS-Auswahl Formularfelder basierend auf dem Feldtyp formatieren](/help/edge/docs/forms/style-theme-forms.md)
+- grundlegende Kenntnisse zu [nativen HTML-Komponenten](/help/edge/docs/forms/form-components.md) besitzen
+- wissen, wie Sie [mit der CSS-Auswahl Formularfelder basierend auf dem Feldtyp formatieren](/help/edge/docs/forms/style-theme-forms.md)
 
 ## Erstellen einer benutzerdefinierten Komponente
 
@@ -52,9 +49,9 @@ Fügen Sie neue Ordner und Dateien für Ihre neue benutzerdefinierte Komponente 
    1. Öffnen Sie Ihr AEM-Projekt und navigieren Sie zu `../blocks/form/components/`.
    1. Fügen Sie unter `../blocks/form/components/<component_name>` einen neuen Ordner für Ihre benutzerdefinierte Komponente hinzu. In diesem Beispiel erstellen wir einen Ordner mit dem Namen `range`.
    1. Navigieren Sie zum neu erstellten Ordner unter `../blocks/form/components/<component_name>`. Navigieren Sie beispielsweise zu `../blocks/form/components/range` und fügen Sie die folgenden Dateien hinzu:
-      * `/blocks/form/components/range/_range.json`: Enthält die Definition der benutzerdefinierten Komponente.
-      * `../blocks/form/components/range/range.css`: Definiert den Stil für die benutzerdefinierte Komponente.
-      * `../blocks/form/components/range/range.js`: Passt die benutzerdefinierte Komponente zur Laufzeit an.
+      - `/blocks/form/components/range/_range.json`: Enthält die Definition der benutzerdefinierten Komponente.
+      - `../blocks/form/components/range/range.css`: Definiert den Stil für die benutzerdefinierte Komponente.
+      - `../blocks/form/components/range/range.js`: Passt die benutzerdefinierte Komponente zur Laufzeit an.
 
         ![Hinzufügen der benutzerdefinierten Komponente zum Authoring](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
@@ -68,12 +65,12 @@ Fügen Sie neue Ordner und Dateien für Ihre neue benutzerdefinierte Komponente 
 
    Um die Definition hinzuzufügen, müssen die folgenden Felder in der Datei `_range.json` hinzugefügt werden:
 
-   * **title**: Der Titel der Komponente, die im universellen Editor angezeigt wird.
-   * **id**: Eine eindeutige Kennung der Komponente.
-   * **fieldType**: Formulare unterstützen verschiedene **fieldType**-Werte zur Erfassung bestimmter Typen von Benutzereingaben. Die [unterstützten fieldType-Werte finden Sie im Abschnitt „Zusätzliches Byte“](#supported-fieldtypes).
-   * **resourceType**: Jeder benutzerdefinierten Komponente ist ein Ressourcentyp auf Grundlage ihres fieldType-Werts zugeordnet. Die [unterstützten fieldType-Werte finden Sie im Abschnitt „Zusätzliches Byte“](#supported-resourcetype).
-   * **jcr:title**: Ähnelt einem Titel, wird jedoch innerhalb der Komponentenstruktur gespeichert.
-   * **fd:viewType**: Stellt den Namen der benutzerdefinierten Komponente dar. Dies ist die eindeutige Kennung für die Komponente. Sie müssen eine benutzerdefinierte Ansicht für die Komponente erstellen.
+   - **title**: Der Titel der Komponente, die im universellen Editor angezeigt wird.
+   - **id**: Eine eindeutige Kennung der Komponente.
+   - **fieldType**: Formulare unterstützen verschiedene **fieldType**-Werte zur Erfassung bestimmter Typen von Benutzereingaben. Die [unterstützten fieldType-Werte finden Sie im Abschnitt „Zusätzliches Byte“](#supported-fieldtypes).
+   - **resourceType**: Jeder benutzerdefinierten Komponente ist ein Ressourcentyp auf Grundlage ihres fieldType-Werts zugeordnet. Die [unterstützten fieldType-Werte finden Sie im Abschnitt „Zusätzliches Byte“](#supported-resourcetype).
+   - **jcr:title**: Ähnelt einem Titel, wird jedoch innerhalb der Komponentenstruktur gespeichert.
+   - **fd:viewType**: Stellt den Namen der benutzerdefinierten Komponente dar. Dies ist die eindeutige Kennung für die Komponente. Sie müssen eine benutzerdefinierte Ansicht für die Komponente erstellen.
 
 Nach dem Hinzufügen der Komponentendefinition sieht die Datei `_range.json` wie folgt aus:
 
@@ -118,17 +115,17 @@ Die benutzerdefinierte Komponente enthält ein Komponentenmodell, das angibt, we
 
    1. **Erstellen eines neuen Modells**
 
-      * Fügen Sie im Modell-Array ein neues Objekt hinzu und legen Sie die `id` des Komponentenmodells so fest, dass dies mit der zuvor in der Komponentendefinition konfigurierten Eigenschaft `fd:viewType` übereinstimmt.
-      * Fügen Sie ein Felder-Array in dieses Objekt ein.
+      - Fügen Sie im Modell-Array ein neues Objekt hinzu und legen Sie die `id` des Komponentenmodells so fest, dass dies mit der zuvor in der Komponentendefinition konfigurierten Eigenschaft `fd:viewType` übereinstimmt.
+      - Fügen Sie ein Felder-Array in dieses Objekt ein.
 
    2. **Definieren von Feldern für das Dialogfeld „Eigenschaft“**
 
-      * Jedes Objekt im Felder-Array sollte eine Komponente vom Typ Container sein, damit es als Registerkarte im Dialogfeld **Eigenschaft** angezeigt wird.
-      * Einige Felder können auf wiederverwendbare Eigenschaften verweisen, die in `models/form-common` verfügbar sind.
+      - Jedes Objekt im Felder-Array sollte eine Komponente vom Typ Container sein, damit es als Registerkarte im Dialogfeld **Eigenschaft** angezeigt wird.
+      - Einige Felder können auf wiederverwendbare Eigenschaften verweisen, die in `models/form-common` verfügbar sind.
 
    3. **Verwenden eines vorhandenen Komponentenmodells als Referenz**
 
-      * Sie können den Inhalt eines vorhandenen Komponentenmodells kopieren, das Ihrer `fieldType`-Auswahl entspricht, und ihn nach Bedarf ändern. Beispielsweise wird die Komponente `number-input` erweitert, um eine **range**-Komponente zu erstellen, sodass wir das Modell-Array aus `models/form-components/_number-input.json` als Referenz verwenden können.
+      - Sie können den Inhalt eines vorhandenen Komponentenmodells kopieren, das Ihrer `fieldType`-Auswahl entspricht, und ihn nach Bedarf ändern. Beispielsweise wird die Komponente `number-input` erweitert, um eine **range**-Komponente zu erstellen, sodass wir das Modell-Array aus `models/form-components/_number-input.json` als Referenz verwenden können.
 
    Nach dem Hinzufügen des Komponentenmodells sieht die Datei `_range.json` wie folgt aus:
 
@@ -186,10 +183,10 @@ Um die benutzerdefinierte Eigenschaft „Step Value“ hinzuzufügen, fügen Sie
 
 Das JSON-Snippet definiert eine benutzerdefinierte Eigenschaft mit der Bezeichnung **Step Value** für die Komponente **Range**. Nachstehend finden Sie eine Aufschlüsselung der einzelnen Felder:
 
-* **component**: Gibt den Typ des Eingabefelds an, das im Dialogfeld „Eigenschaft“ verwendet wird. In diesem Fall gibt `number` an, dass das Feld numerische Werte akzeptiert.
-* **name**: Die Kennung für die Eigenschaft, mit der in der Logik der Komponente darauf verwiesen wird. Hier stellt `stepValue` die Schrittwerteinstellung für den Bereich dar.
-* **label**: Der Anzeigename der Eigenschaft, wie er im Dialogfeld „Eigenschaft“ angezeigt wird.
-* **valueType**: Definiert den für die Eigenschaft erwarteten Datentyp. `number` stellt sicher, dass nur numerische Eingaben zulässig sind.
+- **component**: Gibt den Typ des Eingabefelds an, das im Dialogfeld „Eigenschaft“ verwendet wird. In diesem Fall gibt `number` an, dass das Feld numerische Werte akzeptiert.
+- **name**: Die Kennung für die Eigenschaft, mit der in der Logik der Komponente darauf verwiesen wird. Hier stellt `stepValue` die Schrittwerteinstellung für den Bereich dar.
+- **label**: Der Anzeigename der Eigenschaft, wie er im Dialogfeld „Eigenschaft“ angezeigt wird.
+- **valueType**: Definiert den für die Eigenschaft erwarteten Datentyp. `number` stellt sicher, dass nur numerische Eingaben zulässig sind.
 
 Sie können jetzt `stepValue` als benutzerdefinierte Eigenschaft in den JSON-Eigenschaften von `range.js` verwenden und dynamisches Verhalten basierend auf deren Wert zur Laufzeit implementieren.
 
@@ -263,46 +260,48 @@ So stellen Sie sicher, dass die benutzerdefinierte Komponente beim Erstellen von
 1. Suchen Sie das Komponenten-Array innerhalb des Objekts, das `id="form"` enthält.
 1. Fügen Sie den Wert `fd:viewType` aus `definitions[]` zum Komponenten-Array des Objekts mit `id="form"` hinzu.
 
-```javascript
- "filters": [
-    {
-      "id": "form",
-      "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-    }
-  ]
-```
+   ```javascript
+   "filters": [
+     {
+       "id": "form", 
+       "components": [
+         "captcha",
+         "checkbox",
+         "checkbox-group",
+         "date-input",
+         "drop-down",
+         "email",
+         "file-input",
+         "form-accordion",
+         "form-button",
+         "form-fragment",
+         "form-image",
+         "form-modal",
+         "form-reset-button",
+         "form-submit-button",
+         "number-input",
+         "panel",
+         "plain-text",
+         "radio-group",
+         "rating",
+         "telephone-input",
+         "text-input",
+         "tnc",
+         "wizard",
+         "range"
+       ]
+     }
+   ]
+   ```
 
 ![Komponentenfilter](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
 ### &#x200B;4. Registrieren der benutzerdefinierten Komponente
 
-Damit der Formularblock die benutzerdefinierte Komponente erkennen und beim Formular-Authoring ihre im Komponentenmodell definierten Eigenschaften laden kann, fügen Sie den Wert `fd:viewType` aus der Komponentendefinition zur Datei `mappings.js` hinzu.
+Damit der Formularblock die benutzerdefinierte Komponente erkennen und ihre beim Formular-Authoring im Komponentenmodell definierten Eigenschaften laden kann, fügen Sie den `fd:viewType` aus der Komponentendefinition zur `mappings.js` hinzu.
+
 So registrieren Sie eine Komponente:
+
 1. Navigieren Sie zur Datei `/blocks/form/mappings.js`.
 1. Suchen Sie das Array `customComponents[]`.
 1. Fügen Sie den Wert `fd:viewType` aus dem Array `definitions[]` zum Array `customComponents[]` hinzu.
@@ -347,7 +346,7 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    height: 5px;
    border-radius: 5px;
    border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% * var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps)/var(--total-steps)));
+   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
    }
    
    main .form .range-widget-wrapper.decorated input[type="range"]:focus {
@@ -359,18 +358,18 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
+   background: #00008B; /- Dark Blue */
+   border: 3px solid #00008B; /- Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
+   border-color: #00008B; /- Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
+   color: #00008B; /- Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -392,6 +391,7 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    float: right;
    }
    ```
+
    Mit dem Code können Sie die Formatierung und das visuelle Erscheinungsbild der benutzerdefinierten Komponente definieren.
 
 1. Um die Funktionen hinzuzufügen, navigieren Sie zur Datei `/blocks/form/components/range/range.js` und fügen Sie die folgende Code-Zeile hinzu:
@@ -407,7 +407,7 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
+   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
@@ -460,18 +460,18 @@ Der folgende Screenshot zeigt die aktualisierte Komponente „range“.
 
 ## Häufig gestellte Fragen
 
-* **Wenn ich Formatierungen sowohl in „component.css“ als auch in „forms.css“ hinzufüge, welche erhalten die Priorität?**
+- **Wenn ich Formatierungen sowohl in „component.css“ als auch in „forms.css“ hinzufüge, welche erhalten die Priorität?**
 Wenn Formatierungen in `component.css` und in **forms.css** definiert sind, erhält `component.css` die Priorität. Dies liegt daran, dass Formatierungen auf Komponentenebene spezifischer sind und globale Formatierungen aus `forms.css` überschreiben.
 
-* **Meine benutzerdefinierte Komponente ist im universellen Editor nicht in der Liste der verfügbaren Komponenten sichtbar. Wie kann ich das beheben?**
+- **Meine benutzerdefinierte Komponente ist im universellen Editor nicht in der Liste der verfügbaren Komponenten sichtbar. Wie kann ich das beheben?**
 Wenn Ihre benutzerdefinierte Komponente nicht angezeigt wird, überprüfen Sie die folgenden Dateien, um sicherzustellen, dass die Komponente korrekt registriert wurde:
-   * **component-definition.json**: Überprüfen Sie, ob die Komponente ordnungsgemäß definiert ist.
-   * **component-filters.json**: Stellen Sie sicher, dass die Komponente in den entsprechenden Abschnitten zulässig ist.
-   * **component-models.json**: Überprüfen Sie, ob das Komponentenmodell korrekt konfiguriert ist.
+   - **component-definition.json**: Überprüfen Sie, ob die Komponente ordnungsgemäß definiert ist.
+   - **component-filters.json**: Stellen Sie sicher, dass die Komponente in den entsprechenden Abschnitten zulässig ist.
+   - **component-models.json**: Überprüfen Sie, ob das Komponentenmodell korrekt konfiguriert ist.
 
 ## Best Practices
 
-* Es empfiehlt sich, [eine lokale AEM-Entwicklungsumgebung einzurichten](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment), um benutzerdefinierte Formatierungen und Komponenten lokal zu entwickeln. 
+- Es empfiehlt sich, [eine lokale AEM-Entwicklungsumgebung einzurichten](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment), um benutzerdefinierte Formatierungen und Komponenten lokal zu entwickeln. 
 
 
 ## Zusätzliches Byte
@@ -496,19 +496,17 @@ Wenn Ihre benutzerdefinierte Komponente nicht angezeigt wird, überprüfen Sie d
 ### Unterstützte Feldtypen
 
 Folgende Feldtypen werden für Formulare unterstützt:
-* Texteingabe
-* Zahleneingabe
-* Datumseingabe
-* Bedienfeld
-* Kontrollkästchen
-* Dropdown
-* Optionsfeldgruppe
-* Nur-Text
-* Dateieingabe
-* E-Mail
-* Bild
-* Schaltfläche
 
-## Siehe auch
+- Texteingabe
+- Zahleneingabe
+- Datumseingabe
+- Bedienfeld
+- Kontrollkästchen
+- Dropdown
+- Optionsfeldgruppe
+- Nur-Text
+- Dateieingabe
+- E-Mail
+- Bild
+- Schaltfläche
 
-{{universal-editor-see-also}}

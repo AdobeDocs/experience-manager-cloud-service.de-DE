@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
@@ -23,20 +23,20 @@ Die Formularübermittlung ist der wichtige letzte Schritt der Benutzer-Journey. 
 
 Am Ende dieses Dokuments werden Sie Folgendes beherrschen:
 
-* Konfigurieren verschiedener Arten von Übermittlungsaktionen für Ihre Formulare
-* Einrichten von REST-Endpunktübermittlungen für die Integration mit externen Systemen
-* Konfigurieren von E-Mail-Sendungen für Formularantworten
-* Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Unternehmensanforderungen
-* Bearbeitung der Formularvalidierung und Fehlerszenarien bei der Übermittlung
+- Konfigurieren verschiedener Arten von Übermittlungsaktionen für Ihre Formulare
+- Einrichten von REST-Endpunktübermittlungen für die Integration mit externen Systemen
+- Konfigurieren von E-Mail-Sendungen für Formularantworten
+- Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Unternehmensanforderungen
+- Bearbeitung der Formularvalidierung und Fehlerszenarien bei der Übermittlung
 
 ### Zielgruppe
 
 Dieses Handbuch wurde für folgende Rollen entwickelt:
 
-* **Formularentwicklerinnen und -entwickler**, die Übermittlungslogik implementieren
-* **Systemintegratorinnen und -integratoren**, die Formulare mit Backend-Systemen verknüpfen
-* **Geschäftsanalystinnen und -analysten**, die Formular-Workflows definieren
-* **Technische Architektinnen und Architekten**, die Formularübermittlungsprozesse erstellen
+- **Formularentwicklerinnen und -entwickler**, die Übermittlungslogik implementieren
+- **Systemintegratorinnen und -integratoren**, die Formulare mit Backend-Systemen verknüpfen
+- **Geschäftsanalystinnen und -analysten**, die Formular-Workflows definieren
+- **Technische Architektinnen und Architekten**, die Formularübermittlungsprozesse erstellen
 
 ### Verfügbare Übermittlungsaktionen
 
@@ -49,16 +49,16 @@ Der universelle Editor bietet zwei primäre Arten von Übermittlungsaktionen:
 
 Bevor Sie Übermittlungsaktionen konfigurieren, müssen Sie:
 
-* Zugriff auf den universellen Editor haben
-* Ordnungsgemäße Berechtigungen für die Formularkonfiguration besitzen
-* Den Zielübermittlungsendpunkt oder die E-Mail-Konfiguration verstanden haben
+- Zugriff auf den universellen Editor haben
+- Ordnungsgemäße Berechtigungen für die Formularkonfiguration besitzen
+- Den Zielübermittlungsendpunkt oder die E-Mail-Konfiguration verstanden haben
 
 Eine Übermittlungsaktion gibt das Ziel für die Daten an, die über ein adaptives Formular erfasst werden. Der Übermittlungsprozess beginnt, wenn die Benutzenden im Formular auf die Schaltfläche **[!UICONTROL Senden]** klicken. AEM Forms bietet zwei Arten von Übermittlungsaktionen, die unten beschrieben werden, und ermöglicht es Ihnen, benutzerdefinierte Übermittlungsaktionen zu erstellen und zu verwenden, die Ihre spezifischen Anforderungen erfüllen. Vordefinierte Übermittlungsaktionen:
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [An REST-Endpunkt senden](#rest-endpoint-submission-ue)
-* [E-Mail senden](#email-submission-ue)
+- [An REST-Endpunkt senden](#rest-endpoint-submission-ue)
+- [E-Mail senden](#email-submission-ue)
 
 
 ### An REST-Endpunkt senden {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ Eine Übermittlungsaktion gibt das Ziel für die Daten an, die über ein adaptiv
 Die Aktion „An REST-Endpunkt senden“ wird verwendet, um die übermittelten Formulardaten an einen angegebenen REST-Endpunkt zu senden. Der Endpunkt kann entweder zu einem internen Server gehören, auf dem das Formular gehostet wird, er kann aber auch zu einem externen Server gehören, indem ein relativer Pfad oder ein absoluter Pfad verwendet wird. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an einen Server senden, verwenden Sie den absoluten Pfad.
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,8 +86,8 @@ So konfigurieren Sie einen REST-Endpunkt:
 
 >[!NOTE]
 >
-> * Um Daten an einen internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
-> * Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
+> - Um Daten an einen internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
+> - Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
 
 ### E-Mail senden {#email-submission-ue}
 
@@ -176,11 +176,8 @@ Mit der Option „Beim Senden“ können Sie eine Nachricht für die Übermittlu
 1. Wählen Sie Ihren **[!UICONTROL adaptiven Formularblock]** aus.
 1. Klicken Sie auf das Symbol „Eigenschaften“ ![Eigenschaften](/help/forms/assets/Smock_Properties_18_N.svg).
 1. Beim Klicken wird die folgende Option angezeigt:
-   * **[!UICONTROL Beim Senden]**: Mit „Beim Senden“ können Sie eine Nachricht anpassen, die beim Senden eines Formulars angezeigt werden soll. Standardmäßig bekommen die Benutzenden bei erfolgreicher Übermittlung eines Formulars die benutzerdefinierte Nachricht „Vielen Dank für die Übermittlung des Formulars“ angezeigt.
+   - **[!UICONTROL Beim Senden]**: Mit „Beim Senden“ können Sie eine Nachricht anpassen, die beim Senden eines Formulars angezeigt werden soll. Standardmäßig bekommen die Benutzenden bei erfolgreicher Übermittlung eines Formulars die benutzerdefinierte Nachricht „Vielen Dank für die Übermittlung des Formulars“ angezeigt.
 Sie können die Dankesnachricht bei der Formularübermittlung auch anpassen, indem Sie die Option **[!UICONTROL Nachricht anzeigen]** auswählen und Ihre Nachricht im **Rich-Text-Editor** hinzufügen/bearbeiten.
 
 
-## Siehe auch
-
-{{universal-editor-see-also}}
 

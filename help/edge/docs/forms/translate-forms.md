@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -21,12 +21,12 @@ In Edge Delivery Services umfasst die Formularübersetzung die Übertragung von 
 
 Am Ende des Artikels werden Sie Folgendes gelernt haben:
 
-* [das Übersetzen von Formularen in Google Drive](#translate-form-google-drive)
-* [das Übersetzen von Formularen in einer SharePoint-Site](#translate-form-sharepoint)
+- [das Übersetzen von Formularen in Google Drive](#translate-form-google-drive)
+- [das Übersetzen von Formularen in einer SharePoint-Site](#translate-form-sharepoint)
 
 ## das Übersetzen von Formularen in Google Drive {#translate-form-google-drive}
 
-Die Funktion `GOOGLETRANSLATE` in Google Sheets übersetzt Formulare, indem sie das eingebaute Übersetzungs-Tool nutzt und direkt in einem Google Sheet den Text von einer Sprache in eine andere ändert. So übersetzen Sie Formulare in Google Drive:
+Die Funktion `GOOGLETRANSLATE` in Google Sheets übersetzt Formulare, indem sie das native Übersetzungs-Tool nutzt und direkt in einem Google Sheet den Text von einer Sprache in eine andere ändert. So übersetzen Sie Formulare in Google Drive:
 
 1. Wechseln Sie zu Ihrem AEM-Projektordner auf Google Drive und öffnen Sie Ihr Google Sheet.
 2. Benennen Sie das vorhandene Sheet (`shared-default`) in `shared-en` um.
@@ -68,11 +68,11 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## Bekannte Probleme {#known-issues}
 
-* Die Beschriftungen des Formulars werden in die angegebene lokalisierte Sprache im Sheet `shared-default` hinzugefügt, aber die Fehlermeldungen werden in der Standardsprache des Browsers angezeigt.
+- Die Beschriftungen des Formulars werden in die angegebene lokalisierte Sprache im Sheet `shared-default` hinzugefügt, aber die Fehlermeldungen werden in der Standardsprache des Browsers angezeigt.
 
   ![Fehlermeldung](/help/forms/assets/translate-error-message.png)
 
-* Wenn Sie den Kalender öffnen, wird die Kalender-Dropdown-Liste in der Standardsprache des Browsers angezeigt.
+- Wenn Sie den Kalender öffnen, wird die Kalender-Dropdown-Liste in der Standardsprache des Browsers angezeigt.
 
   ![Fehlermeldung](/help/forms/assets/translate-calender-display.png)
 
@@ -83,16 +83,13 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **A**: Um Text in einer bestimmten lokalisierten Sprache einzugeben, passen Sie die Tastatureinstellungen auf Ihrem Gerät an. Anweisungen dazu finden Sie unter den folgenden Links:
 
-* [Einrichten Ihres Mac für die Eingabe in einer anderen Sprache](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [Einrichten von Windows für die Eingabe in einer anderen Sprache](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [Einrichten Ihres Android-Geräts oder iPhones/iPads für die Eingabe in einer anderen Sprache](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
+- [Einrichten Ihres Mac für die Eingabe in einer anderen Sprache](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [Einrichten von Windows für die Eingabe in einer anderen Sprache](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+- [Einrichten Ihres Android-Geräts oder iPhones/iPads für die Eingabe in einer anderen Sprache](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **F**: Wie kann ich eine Liste der in der `GOOGLETRANSLATE`-Funktion verwendeten Gebietsschemata abrufen?
 
 **A**: Weitere Informationen finden Sie in der [offiziellen Dokumentation zu Google](https://cloud.google.com/translate/docs/languages) für eine umfassende Liste der Gebietsschemata, die in GOOGLETRANSLATE verwendet werden.
 
-## Siehe auch
-
-{{see-more-forms-eds}}
 

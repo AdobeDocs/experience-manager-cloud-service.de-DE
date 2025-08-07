@@ -4,17 +4,17 @@ description: Verwenden von Google reCAPTCHA in einem Formular für Edge Delivery
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 100%
+source-wordcount: '847'
+ht-degree: 97%
 
 ---
 
 
 # Verwenden von reCAPTCHA mit Edge Delivery Services für AEM Forms as a Cloud Service
 
-<span>Die **reCAPTCHA**-Funktion befindet sich im Vorabversionsprogramm. Um Zugriff auf die **reCAPTCHA**-Funktion für Edge Delivery Services für AEM Forms anzufordern, senden Sie eine E-Mail von Ihrer Dienstadresse an mailto:aem-forms-ea@adobe.com.</span>
+<span>Die **reCAPTCHA**-Funktion befindet sich im Vorabversionsprogramm. Um Zugriff auf die Funktion **reCAPTCHA** für Edge Delivery Services für AEM Forms zu erhalten, senden Sie eine E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com.</span>
 
 reCAPTCHA ist ein beliebtes Tool zum Schutz von Websites vor betrügerischen Aktivitäten, Spam und Missbrauch. In Edge Delivery Services bietet der adaptive Formularbaustein die Möglichkeit, Google reCAPTCHA hinzuzufügen, um zwischen Menschen und Bots zu unterscheiden. Mit dieser Funktion können Benutzende ihre Website vor Spam und Missbrauch schützen.
 Denken Sie beispielsweise an ein Anfrageformular, das Daten wie Start- und Endreisedaten, Zimmerbudget, geschätzte Reisekosten und Reiseinformationen erfasst. In solchen Fällen besteht die Gefahr, dass böswillige Personen das Formular für Zwecke wie den Versand von Phishing-E-Mails oder die Überflutung mit irrelevanten oder schädlichen Inhalten durch Spambots nutzen. Die Integration von reCAPTCHA bietet zusätzliche Sicherheit, indem überprüft wird, ob die Sendungen von echten Personen stammen, wodurch Spam-Einträge effektiv minimiert werden.
@@ -27,19 +27,20 @@ Edge Delivery Services unterstützt nur **punktebasiertes reCAPTCHA (v3)** für 
 
 
 Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
-* [Aktivieren von Google reCAPTCHA für ein einzelnes Formular](#enable-google-recaptchas-for-a-single-form)
-* [Aktivieren von reCAPTCHA für alle Formulare auf Ihrer Site](#enable-recaptcha-for-all-the-forms)
+- [Aktivieren von Google reCAPTCHA für ein einzelnes Formular](#enable-google-recaptchas-for-a-single-form)
+- [Aktivieren von reCAPTCHA für alle Formulare auf Ihrer Site](#enable-recaptcha-for-all-the-forms)
 
 ## Voraussetzungen
 
-* Beginnen Sie mit der Entwicklung von Edge Delivery Services-Formularen, indem Sie die unter [Erstellen eines Formulars mithilfe des adaptiven Formularbausteins](/help/edge/docs/forms/create-forms.md) erläuterten Schritte befolgen.
-* Registrieren Sie Ihre Domain bei [Google reCAPTCHA und beziehen Sie die Anmeldeinformationen](https://www.google.com/recaptcha/admin/create).
+- Beginnen Sie mit der Entwicklung von Edge Delivery Services-Formularen, indem Sie die unter [Erstellen eines Formulars mithilfe des adaptiven Formularbausteins](/help/edge/docs/forms/create-forms.md) erläuterten Schritte befolgen.
+- Registrieren Sie Ihre Domain bei [Google reCAPTCHA und beziehen Sie die Anmeldeinformationen](https://www.google.com/recaptcha/admin/create).
 
 ## Aktivieren von Google reCAPTCHA für ein einzelnes Formular {#enable-google-recaptchas-for-a-single-form}
 
 Die Aktivierung von Google reCAPTCHA für ein einzelnes Formular beinhaltet die Integration des reCAPTCHA-Diensts von Google in ein bestimmtes Web-Formular, um automatisierten Missbrauch oder Spam-Übermittlungen zu verhindern.
 
 So aktivieren Sie Google reCAPTCHA für ein einzelnes Formular:
+
 1. [Konfigurieren Sie den geheimen reCAPTCHA-Schlüssel in der Projektkonfigurationsdatei](#configure-secret-key)
 1. [Fügen Sie den reCAPTCHA-Site-Schlüssel zu Ihrem Formular hinzu](#add-site-key)
 
@@ -58,13 +59,13 @@ Das Site-Geheimnis für die bei Google reCAPTCHA registrierte Domain wird hinzug
 
 1. Öffnen Sie die `config`-Datei und fügen Sie ihr den folgenden Schlüssel und die folgenden Wertpaare hinzu:
 
-   * **captcha.secret**: Wert des geheimen Google-reCAPTCHA-Schlüssels
-   * **captcha.type**: reCAPTCHA v2
+   - **captcha.secret**: Wert des geheimen Google-reCAPTCHA-Schlüssels
+   - **captcha.type**: reCAPTCHA v2
 
    >[!NOTE]
    >
-   >  * Sie können die reCAPTCHA-Schlüssel aus der [Google reCAPTCHA-Admin-Konsole](https://www.google.com/recaptcha/admin) abrufen.
-   >  * Sie müssen den Wert von **captcha.type** in der `config`-Datei als **reCAPTCHA v2** angeben.
+   >  - Sie können die reCAPTCHA-Schlüssel aus der [Google reCAPTCHA-Admin-Konsole](https://www.google.com/recaptcha/admin) abrufen.
+   >  - Sie müssen den Wert von **captcha.type** in der `config`-Datei als **reCAPTCHA v2** angeben.
 
    Sehen Sie sich den Screenshot einer Projektkonfigurationsdatei unten an:
 
@@ -80,8 +81,8 @@ Der Site-Schlüssel für eine bei Google reCAPTCHA registrierte Domain wird der 
 
 1. Wechseln Sie in Microsoft® SharePoint oder Google Drive zu Ihrem AEM-Projektordner und öffnen Sie die Kalkulationstabelle. Sie können auch eine neue Kalkulationstabelle für ein Formular erstellen.
 1. Fügen Sie eine Zeile in die Tabelle ein, um ein neues Feld als CAPTCHA hinzuzufügen, wobei Sie die folgenden Details einschließen:
-   * **type**: captcha
-   * **value**: Wert des Google-reCAPTCHA-Site-Schlüssels
+   - **type**: captcha
+   - **value**: Wert des Google-reCAPTCHA-Site-Schlüssels
 
    Im folgenden Screenshot sehen Sie die Tabelle mit dem neuen Zeilentyp CAPTCHA:
 
@@ -129,8 +130,4 @@ Stellen Sie die aktualisierte Datei `recaptcha.js` in Ihrem GitHub-Projekt berei
 Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um die Site in der Vorschau anzuzeigen und zu veröffentlichen.
 
 Das reCAPTCHA-Zeichen wird für alle Formulare auf Ihrer Site angezeigt.
-
-## Siehe auch
-
-{{see-more-forms-eds}}
 

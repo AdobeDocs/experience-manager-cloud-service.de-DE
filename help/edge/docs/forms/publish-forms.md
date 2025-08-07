@@ -4,10 +4,10 @@ description: Veröffentlichen von Edge Delivery Services für AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 78%
+source-wordcount: '585'
+ht-degree: 100%
 
 ---
 
@@ -19,18 +19,18 @@ Sobald Sie bereit sind, Ihr Formular für Ihre Kundschaft zur Datenerfassung ode
 
 ## Voraussetzungen
 
-* Sie verfügen über ein AEM-Projekt, das auf einer [AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) basiert, oder Sie haben [einen adaptiven Formularbaustein zu Ihrem bestehenden AEM-Projekt hinzugefügt.](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
-* Ihr Formular ist vollständig getestet und einsatzbereit.
-* Ihre [Tabelle ist konfiguriert](/help/edge/docs/forms/submit-forms.md), um Daten zu akzeptieren.
+- Sie verfügen über ein AEM-Projekt, das auf einer [AEM Forms-Bausteinvorlage](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) basiert, oder Sie haben [einen adaptiven Formularbaustein zu Ihrem bestehenden AEM-Projekt hinzugefügt](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+- Ihr Formular ist vollständig getestet und einsatzbereit.
+- Ihre [Tabelle ist konfiguriert](/help/edge/docs/forms/submit-forms.md), um Daten zu akzeptieren.
 
 
 ## Veröffentlichen Ihres Formulars
 
-+++ 1. Veröffentlichen Sie Ihre Tabelle
++++ &#x200B;1. Veröffentlichen Sie Ihre Tabelle
 
 1. Öffnen Sie Ihr Microsoft SharePoint- oder Google Drive-Konto und navigieren Sie zu Ihrem AEM Edge Delivery-Projektverzeichnis.
 
-1. Öffnen Sie die Tabelle, die Ihr Formular enthält. Zum Beispiel die Arbeitsmappe [Anfrage](/help/edge/assets/enquiry.xlsx) von Microsoft Excel.
+1. Öffnen Sie die Tabelle, die Ihr Formular enthält. Beispiel: die Microsoft Excel-Arbeitsmappe des Formulars [enquiry](/help/edge/assets/enquiry.xlsx).
 
 1. Verwenden Sie [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content), um eine Vorschau des Blattes anzuzeigen.
 
@@ -47,18 +47,18 @@ Sobald Sie bereit sind, Ihr Formular für Ihre Kundschaft zur Datenerfassung ode
        https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
-   * `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
-   * `<repository>` bezeichnet Ihr GitHub-Repository.
-   * `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
+   - `<branch>` bezieht sich auf die Verzweigung Ihres GitHub-Repositorys.
+   - `<repository>` bezeichnet Ihr GitHub-Repository.
+   - `<owner>` bezieht sich auf den Benutzernamen Ihres GitHub-Kontos, das Ihr GitHub-Repository hostet.
 
-   Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, es sich unter dem Konto „WKNDorm“ befindet und Sie die Verzweigung „Main“ und das Formular als „Anfrage“ verwenden, sieht die URL wie folgt aus:
+   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Konto „wkndform“ befindet und Sie die Verzweigung „main“ sowie das Formular „enquiry“ verwenden, sieht die URL wie folgt aus:
 
    `https://main--wefinance--wkndform.aem.live/enquiry.json`
-&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
-+++ 2. Fügen Sie das Formular zu Ihrer Web-Seite hinzu.
++++ &#x200B;2. Fügen Sie das Formular zu Ihrer Web-Seite hinzu.
 
 Fügen Sie `<form>.json` zu einer Web-Seite hinzu, um die Kundeninteraktion zu erleichtern, indem Benutzende das Formular mühelos auszufüllen und versenden können.
 
@@ -67,11 +67,11 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
 1. Greifen Sie auf Ihr Microsoft SharePoint- oder Google Drive-Konto zu und navigieren Sie zu Ihrem `[AEM Edge Delivery project directory]`.
 
-1. Öffnen Sie eine Dokumentdatei, in die Sie das Formular einbetten möchten. Sie können beispielsweise die Datei &quot;[-form.docx](/help/edge/assets/enquiry-form.docx) öffnen oder alternativ ein neues Dokument erstellen.
+1. Öffnen Sie eine Dokumentdatei, in die Sie das Formular einbetten möchten. Sie können beispielsweise die Datei [enquiry-form.docx](/help/edge/assets/enquiry-form.docx) öffnen oder alternativ ein neues Dokument erstellen.
 
 1. Identifizieren Sie den gewünschten Abschnitt im Dokument, in den Sie das Formular einfügen möchten, und navigieren Sie entsprechend zu diesem Abschnitt.
 
-1. Fügen Sie der Datei einen Block mit dem Namen „Formular“ hinzu. Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, befindet es sich unter dem Kontoinhaber „WKNDorm“ und Sie verwenden die Verzweigung „Main“.
+1. Fügen Sie der Datei einen Block mit dem Namen „Formular“ hinzu. Beispiel: Das Repository Ihres Projekts heißt „wefinance“, es befindet sich unter dem Konto „wkndform“ und Sie verwenden die Verzweigung „main“.
 
    | Formular |
    |---|
@@ -88,7 +88,7 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
    Verwenden Sie die Vorschau-URL (.page-URL) für Entwicklungs- oder Testzwecke oder die Veröffentlichungs-URL (.live) für die Produktion.
 
-   Wenn das Repository Ihres Projekts beispielsweise „WeFinance“ heißt, befindet es sich unter dem Kontoinhaber „WKNDorm“ und Sie verwenden die Verzweigung „Main“.
+   Beispiel: Das Repository Ihres Projekts heißt „wefinance“, es befindet sich unter dem Konto „wkndform“ und Sie verwenden die Verzweigung „main“.
 
    Im Folgenden finden Sie Beispiele für Vorschau- und Veröffentlichungs-URLs:
 
@@ -116,7 +116,7 @@ So fügen Sie das Formular zu Ihrer Web-Seite hinzu:
 
 ## Fehlerbehebung
 
-+++ Daten können nicht an ein Formular gesendet werden.
++++ Daten können nicht an ein Formular gesendet werden
 
 Wenn ein Fehler auftritt, der der folgenden Meldung ähnelt, deutet dies darauf hin, dass die Tabelle noch nicht für das [Akzeptieren der übermittelten](/help/edge/docs/forms/submit-forms.md) Daten konfiguriert ist.
 
@@ -125,6 +125,4 @@ Wenn ein Fehler auftritt, der der folgenden Meldung ähnelt, deutet dies darauf 
 +++
 
 
-## Siehe auch
 
-{{see-more-forms-eds}}

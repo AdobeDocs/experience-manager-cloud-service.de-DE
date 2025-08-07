@@ -4,10 +4,10 @@ description: Die Dropdown-Listenoptionen sind in einer gesonderten Tabelle entha
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 87%
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ Forms enthält häufig Dropdown-Menüs, aus denen Benutzende vordefinierte Optio
 
 Die Vorteile des Ladens von Dropdown-Optionen aus einer separaten Tabelle sind:
 
-* Vereinfachte Verwaltung: Verwaltung von Dropdown-Optionen an einer zentralen Stelle, um Aktualisierungen und Ergänzungen zu erleichtern.
-* Verbesserte Effizienz: Manuelles Hinzufügen langer Optionslisten innerhalb der Formulardefinition ist nicht erforderlich.
+- Vereinfachte Verwaltung: Verwaltung von Dropdown-Optionen an einer zentralen Stelle, um Aktualisierungen und Ergänzungen zu erleichtern.
+- Verbesserte Effizienz: Manuelles Hinzufügen langer Optionslisten innerhalb der Formulardefinition ist nicht erforderlich.
 
 ![Dropdown-Optionen](/help/forms/assets/drop-down-options.png)
 
 
 Am Ende dieses Artikels werden Sie Folgendes gelernt haben:
 
-* [Definieren von Optionen in einer separaten Tabelle](#define-options)
-* [Hinzufügen einer URL, um Dropdown-Listenoptionen zu laden](#add-url)
+- [Definieren von Optionen in einer separaten Tabelle](#define-options)
+- [Hinzufügen einer URL, um Dropdown-Listenoptionen zu laden](#add-url)
 
 ## Definieren von Optionen auf einem separaten Blatt {#define-options}
 
@@ -39,8 +39,8 @@ Definieren von Optionen in einer separaten Kalkulationstabelle
    1. Fügen Sie eine neue Tabelle hinzu. Zum Beispiel „shared-country“ (gemeisames Land).
 1. Definieren Sie die Optionsspalten:
 Fügen Sie zwei Spalten hinzu: „Option“ und „Wert“.
-   * „Option“ definiert den im Dropdown-Menü angezeigten Text.
-   * „Wert“ definiert den Wert, der übertragen wird, wenn die Option ausgewählt wird.
+   - „Option“ definiert den im Dropdown-Menü angezeigten Text.
+   - „Wert“ definiert den Wert, der übertragen wird, wenn die Option ausgewählt wird.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ Geben Sie Ihre Länderoptionen in die Spalte „Option“ (und ggf. in die Spalt
 
 1. Erstellen Sie eine Vorschau und veröffentlichen Sie das Blatt `shared-country` unter Verwendung von [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, befindet es sich unter dem Kontoinhaber „wkdform“ und Sie verwenden die „Haupt“-Verzweigung, die URL, die das `shared-country` anzeigt:
+   Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Konto „wkndform“ befindet und Sie die Verzweigung „main“ verwenden, wird in der URL das Blatt `shared-country` angezeigt:
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
@@ -81,14 +81,9 @@ Um die URL zum Laden der Dropdown-Listenoptionen hinzuzufügen, rufen Sie die [A
 
 Nach der Integration der URL in die Formulardefinition zum Laden der Dropdown-Listenoptionen beginnen die Optionen für die Dropdown-Liste `Destination` aus der URL zu erscheinen.
 
-Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Kontoinhaber „wkdform“ befindet und Sie die „Haupt“-Verzweigung verwenden, zeigt die folgende URL das `enquiry` Formular mit den in der separaten Tabelle gespeicherten Optionen an:
+Wenn das Repository Ihres Projekts beispielsweise „wefinance“ heißt, sich unter dem Konto „wkndform“ befindet und Sie die Verzweigung „main“ verwenden, zeigt die folgende URL das `enquiry`-Formular mit den in dem separaten Blatt gespeicherten Optionen an:
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## Siehe auch
-
-{{see-more-forms-eds}}
 
 

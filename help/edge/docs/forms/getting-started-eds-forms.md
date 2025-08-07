@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie in Adobe Experience Manager Edge Delivery Ser
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
@@ -41,11 +41,11 @@ Am Ende können Sie die richtige Authoring-Methode auswählen, Übermittlungsopt
 
 Der universelle Editor ist ein visuelles Drag-and-Drop-Authoring-Tool für Marketing- und Design-Fachleute, das Geschwindigkeit und Leistung auf Unternehmensniveau vereint:
 
-* WYSIWYG-Bearbeitung in Echtzeit und Gerätevorschau.
-* Erweiterte Regeln und Validierungs-UI – kein Code erforderlich.
-* Direkte Integration mit AEM-Assets, Workflows und Formulardatenmodell (FDM).
-* Nahtlose Übergabe an Entwicklung-Teams für benutzerdefinierte Komponenten in Vanilla JS/CSS.
-* Flexible Übermittlungsziele: Beginnen Sie einfach mit dem **Forms Submission Service (FSS)** oder wechseln Sie bei steigenden Bedarf zu **Übermittlungsaktionen der AEM-Veröffentlichungsumgebung**.
+- WYSIWYG-Bearbeitung in Echtzeit und Gerätevorschau.
+- Erweiterte Regeln und Validierungs-UI – kein Code erforderlich.
+- Direkte Integration mit AEM-Assets, Workflows und Formulardatenmodell (FDM).
+- Nahtlose Übergabe an Entwicklung-Teams für benutzerdefinierte Komponenten in Vanilla JS/CSS.
+- Flexible Übermittlungsziele: Beginnen Sie einfach mit dem **Forms Submission Service (FSS)** oder wechseln Sie bei steigenden Bedarf zu **Übermittlungsaktionen der AEM-Veröffentlichungsumgebung**.
 
 > **Empfehlung**: Beginnen Sie jedes neue Formularprojekt mit dem universellen Editor, es sei denn, Ihr Team arbeitet zu 100 % dokumentenbasiert und das Formular ist sehr einfach.
 
@@ -54,10 +54,10 @@ Der universelle Editor ist ein visuelles Drag-and-Drop-Authoring-Tool für Marke
 
 Dokumentenbasiertes Authoring eignet sich am besten für die Erstellung einfacher, weniger komplexer Formulare mit bekannten Tools wie Microsoft Word, Google Docs oder Google Sheets. Diese Methode ist ideal für Inhalts-Teams, die eine schnelle und unkomplizierte Möglichkeit zum Erstellen von Formularen benötigen.
 
-* Definieren Sie Formularfelder in einer Tabelle (Docs) oder als Zeilen (Sheets).
-* Unterstützt die grundlegende Feldüberprüfung und Google reCAPTCHA für den Spam-Schutz.
-* Formularübermittlungen werden ausschließlich über den Forms Submission Service abgewickelt.
-* Sofortige Veröffentlichung: Alle im Quelldokument vorgenommenen Änderungen werden sofort auf der Site übernommen, ohne dass eine Bereitstellungs-Pipeline erforderlich ist.
+- Definieren Sie Formularfelder in einer Tabelle (Docs) oder als Zeilen (Sheets).
+- Unterstützt die grundlegende Feldüberprüfung und Google reCAPTCHA für den Spam-Schutz.
+- Formularübermittlungen werden ausschließlich über den Forms Submission Service abgewickelt.
+- Sofortige Veröffentlichung: Alle im Quelldokument vorgenommenen Änderungen werden sofort auf der Site übernommen, ohne dass eine Bereitstellungs-Pipeline erforderlich ist.
 
 
 ### Einbetten von Formularen in der Dokumentenerstellung

@@ -4,7 +4,7 @@ description: Edge Delivery Services für AEM Forms wurde für eine optimale Leis
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 100%
@@ -21,16 +21,16 @@ In diesem Artikel erfahren Sie, wie Sie verschiedene Eigenschaften des adaptiven
 
 Regeln sind wie Anweisungen, die uns sagen, was wir in verschiedenen Situationen tun sollen. Eine Regel weist im Allgemeinen die folgenden Konstrukte auf:
 
-* Bedingungen: Diese geben die Umstände an, unter denen die Regel angewendet wird. Betrachten Sie sie als eine Frage, die beantwortet werden muss (ja oder nein).
+- Bedingungen: Diese geben die Umstände an, unter denen die Regel angewendet wird. Betrachten Sie sie als eine Frage, die beantwortet werden muss (ja oder nein).
 
-* Aktionen: Diese definieren, was passiert, wenn die Bedingung erfüllt (true) oder nicht erfüllt (false) ist.
+- Aktionen: Diese definieren, was passiert, wenn die Bedingung erfüllt (true) oder nicht erfüllt (false) ist.
 
 
 Zum Beispiel, um ein E-Mail-Feld anzuzeigen, wenn ein Kontrollkästchen markiert ist:
 
-* Bedingung: Das Kontrollkästchen „Möchten Sie das Magazin und die Aktivitäten abonnieren?“ ist aktiviert. (Ja oder nein?) Diese Bedingung wird in der Eigenschaft `Visible` des Formulars festgelegt.
-* Aktion (True): Das E-Mail-Feld wird angezeigt. (Was passiert, wenn „Ja“ ausgewählt wurde). Die `Visibility Expression` verwenden die für die Eigenschaft `visible` definierte Bedingung, um Felder dynamisch anzuzeigen.
-* Aktion (False): Das E-Mail-Feld ist ausgeblendet. (Was passiert, wenn „Nein“ ausgewählt wurde). Die `Visibility Expression` verwendet die für die `Value` definierte Bedingung, um Felder dynamisch auszublenden.
+- Bedingung: Das Kontrollkästchen „Möchten Sie das Magazin und die Aktivitäten abonnieren?“ ist aktiviert. (Ja oder nein?) Diese Bedingung wird in der Eigenschaft `Visible` des Formulars festgelegt.
+- Aktion (True): Das E-Mail-Feld wird angezeigt. (Was passiert, wenn „Ja“ ausgewählt wurde). Die `Visibility Expression` verwenden die für die Eigenschaft `visible` definierte Bedingung, um Felder dynamisch anzuzeigen.
+- Aktion (False): Das E-Mail-Feld ist ausgeblendet. (Was passiert, wenn „Nein“ ausgewählt wurde). Die `Visibility Expression` verwendet die für die `Value` definierte Bedingung, um Felder dynamisch auszublenden.
 
 Eine detaillierte Schritt-für-Schritt-Anleitung finden Sie unter [Ein-/Ausblenden eines E-Mail-Feldes basierend auf einer Bedingung](#example-1-conditional-email-field)
 
@@ -41,8 +41,8 @@ Eine detaillierte Schritt-für-Schritt-Anleitung finden Sie unter [Ein-/Ausblend
 
 Stellen Sie sich einen Lichtschalter für Ihr Formularfeld vor. Die Eigenschaft `Visible` ist wie ein Schalter, der steuert, ob das Feld beim ersten Laden des Formulars sichtbar ist.
 
-* True (wie wenn der Lichtschalter „an“ ist): Das Feld wird im Formular angezeigt.
-* False (wie wenn der Lichtschalter „aus“ ist): Das Feld wird im Formular ausgeblendet.
+- True (wie wenn der Lichtschalter „an“ ist): Das Feld wird im Formular angezeigt.
+- False (wie wenn der Lichtschalter „aus“ ist): Das Feld wird im Formular ausgeblendet.
 
 Sie können die SpreadSheet-Formel (einschließlich des Tags „=“) verwenden, um mithilfe einer tabellenähnlichen Logik eine Formel zu schreiben, mit der die Sichtbarkeit des Felds bestimmt wird. Sie können die Werte aus anderen Feldern in Ihrem Formular in dieser Formel verwenden. Wenn Benutzende beispielsweise „Kontakt“ in einem Feld für den Registrierungstyp auswählt, können Sie das E-Mail-Feld mithilfe einer Formel ausblenden, die diesen Wert überprüft.
 
@@ -73,10 +73,10 @@ Verwenden Sie `=FORMULATEXT("Address of the corresponding Value property)`, um d
 
 Hier ist eine Analogie zur Festigung dieser Konzepte:
 
-* Sichtbar: Stellen Sie sich ein Formular wie ein Haus vor. Die Eigenschaft „Sichtbar“ entspricht dem Lichtschalter für jeden Raum (Feld). Sie entscheiden, ob der Raum anfänglich beleuchtet (sichtbar) oder dunkel (ausgeblendet) ist, wenn jemand das Haus betritt (das Formular öffnet).
-* Sichtbarer Ausdruck: Dies ist wie ein Lichtschalter mit Bewegungsmelder. Der Raum (Feld) kann anfangs dunkel (ausgeblendet) sein, aber eine Formel (Bewegungsmelder) kann sie aktivieren (Feld anzeigen), wenn jemand vorbeigeht (den Wert in einem anderen Feld ändert).
-* Wert: Dies ist wie ein vordefinierter Dimmschalter für das Licht (Anfangsdaten im Feld). Benutzende können dann die Helligkeit anpassen (den Wert ändern).
-* Wertausdruck: Dies ist wie ein fiktiver Taschenrechner, der in das Preisschild eines Produkts im Haus integriert ist (Formular). Das Preis-Tag (Feld) zeigt den endgültigen Preis auf der Grundlage einer Formel an (z. B. durch Hinzufügen einer Steuer zum Basispreis), die andere Informationen wie den Basispreis (Wert aus einem anderen Feld) verwendet.
+- Sichtbar: Stellen Sie sich ein Formular wie ein Haus vor. Die Eigenschaft „Sichtbar“ entspricht dem Lichtschalter für jeden Raum (Feld). Sie entscheiden, ob der Raum anfänglich beleuchtet (sichtbar) oder dunkel (ausgeblendet) ist, wenn jemand das Haus betritt (das Formular öffnet).
+- Sichtbarer Ausdruck: Dies ist wie ein Lichtschalter mit Bewegungsmelder. Der Raum (Feld) kann anfangs dunkel (ausgeblendet) sein, aber eine Formel (Bewegungsmelder) kann sie aktivieren (Feld anzeigen), wenn jemand vorbeigeht (den Wert in einem anderen Feld ändert).
+- Wert: Dies ist wie ein vordefinierter Dimmschalter für das Licht (Anfangsdaten im Feld). Benutzende können dann die Helligkeit anpassen (den Wert ändern).
+- Wertausdruck: Dies ist wie ein fiktiver Taschenrechner, der in das Preisschild eines Produkts im Haus integriert ist (Formular). Das Preis-Tag (Feld) zeigt den endgültigen Preis auf der Grundlage einer Formel an (z. B. durch Hinzufügen einer Steuer zum Basispreis), die andere Informationen wie den Basispreis (Wert aus einem anderen Feld) verwendet.
 
 Durch die Kombination dieser Eigenschaften mit [Tabellenfunktionen](#spreadsheet-functions-for-rules) können Sie eine breite Palette dynamischer Verhaltensweisen in Ihren Formularen erzielen.
 
@@ -86,19 +86,19 @@ Der adaptive Formularbaustein unterstützt eine Vielzahl von Tabellenfunktionen,
 
 ### Logikfunktionen
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Hiermit wird der logische Status umgekehrt (TRUE wird zu FALSE und umgekehrt).
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Gibt nur TRUE zurück, wenn alle angegebenen Bedingungen TRUE sind.
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Gibt TRUE zurück, wenn mindestens eine der angegebenen Bedingungen TRUE ist.
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Hiermit wird der logische Status umgekehrt (TRUE wird zu FALSE und umgekehrt).
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Gibt nur TRUE zurück, wenn alle angegebenen Bedingungen TRUE sind.
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Gibt TRUE zurück, wenn mindestens eine der angegebenen Bedingungen TRUE ist.
 
 ### Bedingte Funktionen
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Wertet eine Bedingung aus und gibt einen bestimmten Wert zurück, wenn TRUE, oder einen anderen, wenn FALSE.
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Wertet eine Bedingung aus und gibt einen bestimmten Wert zurück, wenn TRUE, oder einen anderen, wenn FALSE.
 
 ### Mathematische Funktionen
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Addiert Werte aus einem bestimmten Zellenbereich auf.
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rundet eine Zahl auf die angegebene Anzahl von Dezimalstellen.
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Gibt den kleinsten der Werte aus einem angegebenen Zellenbereich zurück.
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Addiert Werte aus einem bestimmten Zellenbereich auf.
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rundet eine Zahl auf die angegebene Anzahl von Dezimalstellen.
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Gibt den kleinsten der Werte aus einem angegebenen Zellenbereich zurück.
 
 ## Erstellen einer Regel
 
@@ -156,7 +156,7 @@ Im Folgenden finden Sie einige Beispiele für häufig verwendete Tabellenfunktio
 
 **Logikfunktionen:**
 
-* **NOT():** Kehrt den logischen Zustand um (TRUE wird FALSE und umgekehrt).
+- **NOT():** Kehrt den logischen Zustand um (TRUE wird FALSE und umgekehrt).
 
   Beispiel: Ausblenden eines Feldes „E-Mail bestätigen“, wenn das E-Mail-Feld leer gelassen wird.
 
@@ -170,9 +170,9 @@ Im Folgenden finden Sie einige Beispiele für häufig verwendete Tabellenfunktio
       ![AEM Forms – sichtbare Ausdrucksformel](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND(): Gibt nur TRUE zurück, wenn alle angegebenen Bedingungen TRUE sind.
+- AND(): Gibt nur TRUE zurück, wenn alle angegebenen Bedingungen TRUE sind.
 
-   * Beispiel: Die Schaltfläche „Senden“ wird nur dann aktiviert, wenn alle erforderlichen Felder ausgefüllt sind.
+   - Beispiel: Die Schaltfläche „Senden“ wird nur dann aktiviert, wenn alle erforderlichen Felder ausgefüllt sind.
 
    1. Legen Sie die Eigenschaft `Visible` der Schaltfläche „Senden“ fest:
 
@@ -202,9 +202,9 @@ Im Folgenden finden Sie einige Beispiele für häufig verwendete Tabellenfunktio
 
       Diese Formel zeigt die Schaltfläche „Senden“ (TRUE) nur dann an, wenn alle Felder (Name, E-Mail, Telefon) ausgefüllt sind (NOT(()) liefert jeweils TRUE), andernfalls wird die Schaltfläche ausgeblendet (AND(mehrere FALSES) = FALSE).
 
-* OR(): Gibt TRUE zurück, wenn mindestens eine der angegebenen Bedingungen TRUE ist.
+- OR(): Gibt TRUE zurück, wenn mindestens eine der angegebenen Bedingungen TRUE ist.
 
-   * Beispiel: Anwenden eines Rabatts, wenn eine Benutzerin bzw. ein Benutzer einen der entsprechenden Rabattgutschein-Codes eingibt.
+   - Beispiel: Anwenden eines Rabatts, wenn eine Benutzerin bzw. ein Benutzer einen der entsprechenden Rabattgutschein-Codes eingibt.
 
    1. Setzen Sie die Eigenschaft `Visible` des Feldes „Endbetrag“ auf:
 
@@ -229,9 +229,9 @@ Im Folgenden finden Sie einige Beispiele für häufig verwendete Tabellenfunktio
 
 **Textfunktionen:**
 
-* IF(): Wertet eine Bedingung aus und gibt einen bestimmten Wert zurück, wenn TRUE, oder einen anderen Wert, wenn FALSE.
+- IF(): Wertet eine Bedingung aus und gibt einen bestimmten Wert zurück, wenn TRUE, oder einen anderen Wert, wenn FALSE.
 
-   * Beispiel: Anzeige einer benutzerdefinierten Meldung auf der Grundlage einer ausgewählten Produktkategorie.
+   - Beispiel: Anzeige einer benutzerdefinierten Meldung auf der Grundlage einer ausgewählten Produktkategorie.
 
    1. Legen Sie die Eigenschaft `Value` des Feldes `message` auf `Only upto 7 kg check-in lagguage is allowed!` fest:
 
@@ -264,7 +264,7 @@ Im Folgenden finden Sie einige Beispiele für häufig verwendete Tabellenfunktio
 
 **Mathematische Funktionen:**
 
-* SUM(): Fügt Werte aus einem bestimmten Zellbereich hinzu.
+- SUM(): Fügt Werte aus einem bestimmten Zellbereich hinzu.
 
   Beispiel: Berechnung der Gesamtkosten von Artikeln in einem Warenkorb.
 
@@ -273,7 +273,7 @@ SUM(price * quantity)
 
   Bei dieser Formel wird davon ausgegangen, dass Sie für jedes Element separate Felder für „price“ (Preis) und „quantity“ (Menge) haben. Sie multipliziert diese und verwendet SUM(), um die Gesamtkosten für alle Artikel im Warenkorb zu addieren.
 
-* ROUND(): Rundet eine Zahl auf eine angegebene Anzahl von Dezimalstellen.
+- ROUND(): Rundet eine Zahl auf eine angegebene Anzahl von Dezimalstellen.
 
   Beispiel: Runden eines berechneten Rabattbetrags auf zwei Dezimalstellen.
 
@@ -282,7 +282,7 @@ ROUND(discount, 2)
 
   Diese Formel rundet den Rabattwert auf zwei Dezimalstellen.
 
-* MIN(): Gibt den kleinsten der Werte aus einem bestimmten Zellenbereich zurück.
+- MIN(): Gibt den kleinsten der Werte aus einem bestimmten Zellenbereich zurück.
 
   Beispiel: Ermittlung des erforderlichen Mindestalters für ein Anmeldeformular auf der Grundlage eines ausgewählten Landes.
 
@@ -304,9 +304,9 @@ Der vorkonfigurierte adaptive Formularbaustein bietet Implementierungen für vie
 
 Benutzerdefinierte Funktionen befinden sich in der Datei `[Adaptive form block]/functions.js`. Der Erstellungsprozess umfasst im Allgemeinen die folgenden Schritte:
 
-* Funktionsdeklaration: Definieren der Funktionsnamen und die zugehörigen Parameter (die Eingaben, die akzeptiert werden).
-* Logikimplementierung: Schreiben des Codes, der die spezifischen Berechnungen oder Manipulationen beschreibt, die von der Funktion ausgeführt werden.
-* Funktionsexport: Ermöglichen, dass die Funktion innerhalb Ihrer Regeln zugänglich ist, indem Sie sie aus der entsprechenden Datei exportieren.
+- Funktionsdeklaration: Definieren der Funktionsnamen und die zugehörigen Parameter (die Eingaben, die akzeptiert werden).
+- Logikimplementierung: Schreiben des Codes, der die spezifischen Berechnungen oder Manipulationen beschreibt, die von der Funktion ausgeführt werden.
+- Funktionsexport: Ermöglichen, dass die Funktion innerhalb Ihrer Regeln zugänglich ist, indem Sie sie aus der entsprechenden Datei exportieren.
 
 ### Beispiel: Year-Funktion
 
@@ -315,9 +315,9 @@ In diesem Beispiel werden zwei benutzerdefinierte Funktionen veranschaulicht, mi
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -325,11 +325,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)
