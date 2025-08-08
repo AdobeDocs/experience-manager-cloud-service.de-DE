@@ -1,15 +1,14 @@
 ---
-Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
-Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
+description: Erfahren Sie, wie Sie beim Senden des Formulars Daten aus Ihrem adaptiven Formular an einen SharePoint-Speicher wie eine SharePoint-Liste oder eine Dokumentbibliothek senden.
 keywords: Wie verbinde ich die SharePoint-Liste mit einem adaptiven Formular?, Wie verbinde ich die SharePoint-Dokumentbibliothek mit einem adaptiven Formular, An SharePoint senden, Erstellen einer SharePoint-Dokumentbibliothekskonfiguration, Verwenden der Aktion „An SharePoint senden“ in einem adaptiven Formular, Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?
 role: User, Developer
-source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 100%
+source-wordcount: '252'
+ht-degree: 84%
 
 ---
 

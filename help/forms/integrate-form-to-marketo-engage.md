@@ -1,14 +1,14 @@
 ---
-Title: How to Integrate Marketo Engage with AEM Forms?
-Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
-Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Integration von Marketo Engage mit AEM Forms
+description: Erfahren Sie, wie Sie Ihre Marketo Engage-Instanz mit AEM Forms integrieren.
+keywords: Verbinden einer Marketo-Instanz mit einem Formular , ein Formular mit Marketo verbinden, ein Formular mit Marketo Engage integrieren, ein adaptives Formular mit einer Marketo-Instanz integrieren.
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 7%
+source-wordcount: '794'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 <span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
-Durch die Integration von AEM Forms mit [Adobe Marketo Engage](https://experienceleague.adobe.com/de/docs/marketo/using/home) können Anwender die Funktionen von Marketo Engage nutzen, um Geschäftslogiken aus erfassten Daten zu erstellen und Workflows zu automatisieren, einschließlich intelligenter Kampagnen und der E-Mail-Automatisierung. Das konfigurierte Formular kann erfasste Daten zur Verarbeitung an Marketo Engage senden.
+Durch die Integration von AEM Forms mit [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) können Anwender die Funktionen von Marketo Engage nutzen, um Geschäftslogiken aus erfassten Daten zu erstellen und Workflows zu automatisieren, einschließlich intelligenter Kampagnen und der E-Mail-Automatisierung. Das konfigurierte Formular kann erfasste Daten zur Verarbeitung an Marketo Engage senden.
 
 ## Vorteile der Integration von Marketo Engage mit Forms
 
@@ -52,7 +52,7 @@ In der folgenden Tabelle sind die Gründe aufgeführt, warum Sie AEM Forms gegen
 Überlegungen zur Integration von Marketo Engage mit AEM Forms:
 
 * AEM unterstützt nur die Personen(Leads)-Datenbank unter den verschiedenen Marketo-Datenbanken.
-* Marketo ermöglicht die [Erstellung von 10 benutzerdefinierten Objekten](https://experienceleague.adobe.com/de/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) als benutzerdefinierte Objekte, um spezielle Daten über die Standardfelder hinaus in Leads zu speichern und so individuelle Geschäftsanforderungen zu unterstützen.
+* Marketo ermöglicht die [Erstellung von 10 benutzerdefinierten Objekten](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields) als benutzerdefinierte Objekte, um spezielle Daten über die Standardfelder hinaus in Leads zu speichern und so individuelle Geschäftsanforderungen zu unterstützen.
 * AEM kann nur auf benutzerdefinierte Objekte zugreifen, wenn sie mit der Lead-Datenbank verknüpft sind
 
 ## Voraussetzungen für die Integration von Marketo Engage in Formulare
@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die Gründe aufgeführt, warum Sie AEM Forms gegen
 Im Folgenden finden Sie die Voraussetzungen für die Verbindung von Marketo Engage mit AEM Forms:
 
 * Gültige Adobe Marketo Engage-Lizenz
-* Eine funktionierende Instanz von Marketo Engage zum [ (Abrufen der Client-ID und des Client-](https://experienceleague.adobe.com/de/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)), um eine Cloud-Konfiguration zu erstellen.
+* Eine funktionierende Instanz von Marketo Engage zum [ (Abrufen der Client-ID und des Client-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)), um eine Cloud-Konfiguration zu erstellen.
 
 ## Erstellen einer Cloud-Service-Konfiguration zum Verbinden von AEM Forms (Adaptive Forms) mit Marketo Engage
 

@@ -1,13 +1,13 @@
 ---
-title: Wie konfiguriere ich eine Umleitungsseite oder Dankesnachricht?
+title: Konfigurieren einer Umleitungsseite oder Dankesnachricht
 description: Erfahren Sie, wie Benutzenden eine Dankesnachricht angezeigt oder sie auf eine Webseite weitergeleitet werden können, die Formularautorinnen bzw. -autoren bei der Erstellung des Formulars konfigurieren können.
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 52%
+ht-degree: 50%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können die Übermittlungsaktion für Formulare, die im universellen Editor 
 >[!NOTE]
 >
 >* Wenn das Symbol **Formulareigenschaften** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
->* Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+>* Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 ## Konfigurieren der Umleitung oder Dankesnachricht
 

@@ -1,15 +1,14 @@
 ---
-Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
-Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
+description: Erfahren Sie, wie Sie eine Azure Blob Storage-Konfiguration in AEM Forms erstellen und in Ihrem adaptiven Forms verwenden, um eine effiziente Datenspeicherung zu gewährleisten.
 keywords: Azure Blob Storage-Integration mit AEM Forms, Daten an Azure Storage übermitteln, Azure Storage-Konfiguration in AEM Forms erstellen, Azure Blob Storage in Übermittlungsaktion für adaptive Formulare verwenden
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 title: Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 68%
+source-wordcount: '828'
+ht-degree: 66%
 
 ---
 
@@ -52,8 +51,8 @@ Verbinden von AEM Forms mit den Azure Storage-Containern:
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
@@ -113,13 +112,13 @@ Ordnerstruktur zum Speichern von Daten: `/configuration_container/form_name/year
 Führen Sie die folgenden Schritte aus, um die Azure Storage-Container-Konfiguration in einem im universellen Editor erstellten adaptiven Formular zu verwenden:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
 Das **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An Azure Blob Storage senden]** Übermittlungsaktion aus.
    ![Azure Blob Storage](/help/forms/assets/azure-blob-storage-ue.png)

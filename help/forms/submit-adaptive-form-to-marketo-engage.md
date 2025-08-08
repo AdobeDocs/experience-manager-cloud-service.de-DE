@@ -1,14 +1,14 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Konfigurieren der Übermittlungsaktion für Formulare an Marketo Engage
+description: Erfahren Sie, wie Sie die Übermittlungsaktion von adaptiven Formularen konfigurieren, um Daten an Marketo Engage zu senden.
+keywords: Senden von Daten an Marketo Engage, Konfigurieren der Sendeaktion als Senden an Marketo Engage
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 15%
+source-wordcount: '772'
+ht-degree: 14%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 ![Workflow](/help/forms/assets/workflow-marketo-3.png)
 
-Der Editor für adaptive Forms bietet die Übermittlungsaktion **An Marketo Engage übermitteln** um Daten für adaptive Forms zur Verarbeitung an Adobe Marketo Engage zu senden. Sie können ein vorhandenes adaptives Formular so konfigurieren, dass beim Senden Daten an [Adobe Marketo Engage](https://experienceleague.adobe.com/de/docs/marketo/using/home) gesendet werden.
+Der Editor für adaptive Forms bietet die Übermittlungsaktion **An Marketo Engage übermitteln** um Daten für adaptive Forms zur Verarbeitung an Adobe Marketo Engage zu senden. Sie können ein vorhandenes adaptives Formular so konfigurieren, dass beim Senden Daten an [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) gesendet werden.
 
 Verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen sind verfügbar. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md).
 
@@ -72,13 +72,13 @@ Nachdem Sie die Übermittlungsaktion für das adaptive Formular als &quot;**an M
 Sie können die Übermittlungsaktion eines im universellen Editor erstellten adaptiven Formulars so konfigurieren, dass Daten an Adobe Marketo Engage gesendet werden. Um die Übermittlungsaktion an Marketo Engage zu konfigurieren, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
 Das **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An Marketo Engage übermitteln]** Übermittlungsaktion aus.
 
@@ -97,7 +97,7 @@ Nachdem Sie die Übermittlungsaktion für das adaptive Formular als &quot;**an M
 
 ## Nächster Schritt
 
-Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/de/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
+Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
 
 ## Verwandte Artikel
 

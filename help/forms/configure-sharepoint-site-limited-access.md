@@ -1,14 +1,14 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: Wie wird eine SharePoint-Site mit eingeschränktem Zugriff unter Verwendung des Autorisierungsumfangs konfiguriert?
+description: Erfahren Sie, wie Sie SharePoint Site mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs konfigurieren.
 keywords: Konfigurieren einer SharePoint-Site mit eingeschränktem Zugriff?, Konfigurieren von SharePoint mit eingeschränktem Zugriff, Verwenden des Autorisierungsumfangs zum Beschränken des Zugriffs für die SharePoint-Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 25%
+source-wordcount: '842'
+ht-degree: 24%
 
 ---
 
@@ -37,7 +37,7 @@ Vorteile für eingeschränkten Zugriff auf die SharePoint-Site:
 Gehen Sie wie folgt vor, um SharePoint Sites mit eingeschränktem Zugriff mithilfe von Autorisierungsumfängen zu konfigurieren:
 
 1. [Erstellen eines Programms mit dem ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
-1. [Festlegen des Autorisierungsumfangs auf der AEM-Instanz](#set-the-authorization-scope-at-aem-instance)
+1. [Festlegen des Autorisierungsumfangs bei der AEM-Instanz](#set-the-authorization-scope-at-aem-instance)
 
 ### Erstellen einer Anwendung mit eingeschränkter Berechtigung im Azure-Portal
 
@@ -52,9 +52,9 @@ Informationen zum Abrufen von `Client ID`, `Client Secret` und `Tenant ID` für 
 
 Für die Verwendung der `Sites.Selected` API-Berechtigung ist eine im Azure-Portal registrierte Anwendung mit den entsprechenden Berechtigungen für SharePoint Online Sites erforderlich. Durch diese Einrichtung wird sichergestellt, dass die Anwendung über die erforderliche Autorisierung verfügt, um im definierten Umfang mit der SharePoint-Site zu interagieren, wodurch der erforderliche eingeschränkte Zugriff bereitgestellt wird.
 
-Anweisungen zum Entwickeln von Anwendungen, die `Sites.Selected` Berechtigungen für SharePoint Online Sites verwenden, finden Sie [ Blog-Artikel ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) Entwickeln von Anwendungen, die Sites verwenden.Ausgewählte Berechtigungen für SPO Sites .
+Anweisungen zum Entwickeln von Anwendungen, die [ Berechtigungen für SharePoint Online Sites verwenden, finden Sie ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) Blog-Artikel `Sites.Selected` Entwickeln von Anwendungen, die Sites verwenden.Ausgewählte Berechtigungen für SPO Sites .
 
-### Festlegen des Autorisierungsumfangs auf der AEM-Instanz
+### Festlegen des Autorisierungsumfangs bei der AEM-Instanz
 
 Um den eingeschränkten Zugriff auf eine Microsoft SharePoint-Site zu ermöglichen, muss der Autorisierungsumfang korrekt festgelegt werden. So legen Sie den Autorisierungsumfang fest und verbinden AEM Forms mit Ihrem Microsoft® SharePoint-Speicher:
 

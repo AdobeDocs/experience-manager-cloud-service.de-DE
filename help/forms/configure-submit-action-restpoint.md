@@ -1,15 +1,14 @@
 ---
-Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
-Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
+description: Erfahren Sie, wie Sie beim Senden eines adaptiven Formulars einen REST-Endpunkt einrichten.
 keywords: AEM Forms REST-Endpunkt, An REST-Endpunkt übermitteln, Daten an REST-URL posten, REST-Endpoint-Aktion konfigurieren
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 76%
+source-wordcount: '1481'
+ht-degree: 74%
 
 ---
 
@@ -116,13 +115,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-   +++
++++
 
    +++Konfiguration
 
    Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die für Ihren Service-REST-Endpunkt-Authentifizierungstyp erstellte Konfiguration und die Inhaltstypen auswählen. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Datenquellen konfigurieren](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -131,12 +130,12 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein im universellen Editor erstelltes adaptives Formular:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
 Das **Formulareigenschaften** wird angezeigt.
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An REST-Endpunkt übermitteln]** Übermittlungsaktion aus.
 
    Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
@@ -173,13 +172,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-   +++
++++
 
    +++Konfiguration
 
    Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die für Ihren Service-REST-Endpunkt-Authentifizierungstyp erstellte Konfiguration und die Inhaltstypen auswählen. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Datenquellen konfigurieren](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Klicken Sie **[!UICONTROL Speichern und schließen]**.
 
