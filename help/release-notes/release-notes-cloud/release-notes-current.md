@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2271'
 ht-degree: 50%
 
 ---
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,7 +68,6 @@ Mit AEM Assets können Sie jetzt [die Anzeige von Asset-Titeln in der Karten- od
 
 Sie können jetzt auch KI-generierte Metadaten auf Ordnerebene deaktivieren .
 
-
 ### Neue Funktionen in Content Hub {#new-features-content-hub}
 
 **Verbesserte Branding-Flexibilität in Content Hub**
@@ -89,7 +88,7 @@ Content Hub enthält jetzt die Option **Alle anzeigen** in Filtern, mit der Benu
 
 Profitieren Sie von automatisiertem Hochladen neuer Dateien und Ordner, erweiterten Dateivorgängen, einer intelligenteren Asset-Erkennung und einer nahtlosen Integration mit AEM, wodurch das Content-Management schneller, klarer und intuitiver wird.
 
-Eine vollständige Liste der Funktionen finden Sie unter [Versionshinweise zum Desktop-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/release-notes).
+Eine vollständige Liste der Funktionen finden Sie unter [Versionshinweise zum Desktop-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-with-openapi}
 
@@ -181,6 +180,10 @@ Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente F
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
 
+### Prinzipalansicht für die Berechtigungsverwaltung {#principal-view}
+
+AEM führt die Berechtigungsverwaltung für Benutzende und Gruppen ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter. Weitere Informationen finden [ im ](/help/security/touch-ui-principal-view.md) Artikel .
+
 ### Aktualisierter Prozess zur Abschaffung {#updated-deprecation-process}
 
 Adobe überprüft regelmäßig Funktionen, Bibliotheken, APIs und Konfigurationen, um sicherzustellen, dass sie den Leistungs-, Sicherheits- und Wertstandards entsprechen. Wenn Funktionen diese Standards nicht mehr erfüllen, werden sie als veraltet gekennzeichnet, und ihre Verwendung muss bis zu einem bestimmten Entfernungsdatum eingestellt werden. Bis zu diesem Datum erinnert Adobe die Kundinnen und Kunden mit E-Mail-Benachrichtigungen und Aktionen, die in Cloud Manager durchgeführt werden müssen, bevor sie mit neuen Builds fortfahren oder welche bereitstellen. Wenn die erforderlichen Maßnahmen nicht ergriffen werden, kann es passieren, dass ein Upgrade auf neue Versionen von AEM nicht möglich ist, was sich auf Sicherheit, Leistung, Zuverlässigkeit und Verfügbarkeit auswirken kann.
@@ -222,7 +225,7 @@ OSGi-Eigenschaften:
 
 ### Abschaffung der Java 11-Laufzeit {#java11-runtime-deprecation}
 
-Die **Java 11-*- ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere (Java 21 &#x200B;**-Laufzeitumgebung**.
+Die **Java 11-*- ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere (Java 21 **-Laufzeitumgebung**.
 
 Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Bitte stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **28. August 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
 
@@ -298,7 +301,7 @@ Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen
 
 In Alpha unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-aemcs-rde-support@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com) senden, wenn Interesse besteht, Feedback zu dieser Funktion zu geben.
+aemcs-rde-support@adobe.com Bitte eine E-Mail an [](mailto:aemcs-rde-support@adobe.com) senden, wenn Interesse besteht, Feedback zu dieser Funktion zu geben.
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 
