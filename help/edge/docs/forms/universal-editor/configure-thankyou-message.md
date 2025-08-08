@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Benutzenden eine Dankesnachricht angezeigt oder s
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 52%
@@ -28,7 +28,7 @@ Sie können die Übermittlungsaktion für Formulare, die im universellen Editor 
 >[!NOTE]
 >
 > * Wenn das Symbol **Formulareigenschaften** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 ## Konfigurieren der Umleitung oder Dankesnachricht
 
@@ -56,5 +56,3 @@ So konfigurieren Sie die Umleitungsseite oder die Dankesnachricht:
 ![Danke](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 Menschen, die ein Formular verfassen, können für jedes Formular eine Seite konfigurieren, zu der die Benutzenden nach dem Absenden eines Formulars weitergeleitet werden.
-
-

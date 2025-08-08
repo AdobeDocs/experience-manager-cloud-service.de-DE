@@ -3,10 +3,10 @@ title: Versionshinweise für Version 2025.6.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 2679466939e1c2e25e426c62f0fd6bde1bf90b93
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -70,10 +70,10 @@ Weitere Informationen finden Sie im Artikel zur [Abschaffung](/help/release-note
 
 Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigurationen anzuzeigen, die nicht mehr verwendet werden dürfen. Ausführliche Informationen, einschließlich der Zeitpläne für die Entfernung, finden Sie im Artikel zur Abschaffung.
 
-<details>
-  <summary>Erweitern Sie die Liste, um die veralteten Versionen anzuzeigen</summary>
++++Erweitern um die veralteten Elemente anzuzeigen
 
 Jav-APIs:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -96,7 +96,7 @@ OSGi-Eigenschaften:
 * `org.apache.sling.commons.log.LogManager` (alle Eigenschaften)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
 
-</details>
++++
 
 ### Abschaffung der Java 11-Laufzeit {#java11-runtime-deprecation}
 

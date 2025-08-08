@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Vorbefüllen des adaptiven Formulars, Edge-Bereitstellungsdienste für adaptive Formulare, Automatisches Ausfüllen des adaptiven Formulars
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 4%
@@ -142,7 +142,7 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungs-Service:
 
        >[!NOTE]
        >
-       > Erfahren Sie mehr über das Konfigurieren von FDM[Services in (Arbeiten mit einem Formulardatenmodell (FDM)](/help/forms/work-with-form-data-model.md).
+   > Erfahren Sie mehr über das Konfigurieren von FDM[Services in (Arbeiten mit einem Formulardatenmodell (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ Das Formular sollte basierend auf dem angegebenen Parameter automatisch mit Date
 
     &quot;
     
-    &lbrace;
-    „afBoundData“: &lbrace;
-    „user“: &lbrace;
+    {
+    „afBoundData“: {
+    „user“: {
     „firstName“: „John“,
     „lastName“: „Doe“,
     „email“: &quot;john.doe@example.com&quot;,
     „phone“: &quot;+1-555-0123“
-    &rbrace;
-    &rbrace;,
-    „afUnBoundData“: &lbrace;
+    }
+    },
+    „afUnBoundData“: {
     „additionalInfo“: „Benutzereinstellungen geladen“
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
@@ -432,7 +432,7 @@ Pro Formular kann ein primärer Vorbefüllungs-Service konfiguriert werden. Sie 
 
 +++
 
-
+=
 ## Verwandte Themen
 
 - [Integrieren von Formularen mit dem Formulardatenmodell im universellen Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)

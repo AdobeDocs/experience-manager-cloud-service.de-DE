@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -59,7 +59,7 @@ In der obigen Regel überprüft die Schaltfläche **Weiter**, ob die Felder im A
 
 >[!NOTE]
 >
-> Sie können die Methode **validate()** für Formulare, Fragmente oder einzelne Felder verwenden. Wenn ein Fragment in einem Formular enthalten ist, werden sowohl das Formular als auch das Fragment im Validierungskontext als Optionen angezeigt. In diesem Fall bezieht sich das Fragment auf die darin enthaltenen Felder, während sich das Formular auf das übergeordnete Formular bezieht, in dem das Fragment eingebettet ist.
+>Sie können die Methode **validate()** für Formulare, Fragmente oder einzelne Felder verwenden. Wenn ein Fragment in einem Formular enthalten ist, werden sowohl das Formular als auch das Fragment im Validierungskontext als Optionen angezeigt. In diesem Fall bezieht sich das Fragment auf die darin enthaltenen Felder, während sich das Formular auf das übergeordnete Formular bezieht, in dem das Fragment eingebettet ist.
 
 ## DownloadDoR als OOTB-Funktion im Regeleditor
 
@@ -67,7 +67,7 @@ Mithilfe der **DownloadDor()** vordefinierten Funktion (OOTB) im Regeleditor kö
 
 >[!NOTE]
 >
-> Wenn das Formular nicht für das Datensatzdokument konfiguriert ist, wird eine Fehlermeldung angezeigt, wenn die Regel mit der Funktion **downloadDoR()** auf die Schaltfläche angewendet wird.
+>Wenn das Formular nicht für das Datensatzdokument konfiguriert ist, wird eine Fehlermeldung angezeigt, wenn die Regel mit der Funktion **downloadDoR()** auf die Schaltfläche angewendet wird.
 
 **Szenario**: Eine Regierungsbehörde stellt ein digitales Antragsformular für die Ausstellung von Zertifikaten bereit. Nach dem Absenden des Formulars benötigen Antragsteller oft eine Kopie des ausgefüllten Formulars für ihre Aufzeichnungen oder um es einer anderen Abteilung zur Verfügung zu stellen. Um das Anwendererlebnis zu verbessern, möchte die Agentur Antragstellern die Möglichkeit geben, ein Datensatzdokument (DoR) sofort nach der Einreichung oder zu einem beliebigen Zeitpunkt vor der endgültigen Einreichung herunterzuladen.
 
@@ -89,7 +89,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt jetzt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt jetzt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
