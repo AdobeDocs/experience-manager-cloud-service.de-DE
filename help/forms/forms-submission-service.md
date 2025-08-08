@@ -21,7 +21,7 @@ Der Forms Submission Service ist eine gehostete Lösung von Adobe, mit der Formu
 
 >[!NOTE]
 >
->**Early Access-Programm** Diese Funktion ist derzeit über Early Access verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) mit den Namen Ihrer GitHub-Organisation und des Repositorys von Ihrer offiziellen Adresse.
+>**Early Access-Programm** Diese Funktion ist derzeit über Early Access verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) mit den Namen Ihrer GitHub-Organisation und des Repositorys von Ihrer offiziellen Adresse.
 >
 >**Beispiel:** Für Repository-`https://github.com/adobe/abc` senden: Organisation = `adobe`, Repository = `abc`
 
