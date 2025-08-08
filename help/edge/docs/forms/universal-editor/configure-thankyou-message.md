@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Benutzenden eine Dankesnachricht angezeigt oder s
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 52%
@@ -27,8 +27,8 @@ Sie können die Übermittlungsaktion für Formulare, die im universellen Editor 
 
 >[!NOTE]
 >
-> * Wenn das Symbol **Formulareigenschaften** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+>* Wenn das Symbol **Formulareigenschaften** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
+>* Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 ## Konfigurieren der Umleitung oder Dankesnachricht
 
@@ -37,9 +37,9 @@ Bei der Übermittlung eines Formulars können Sie den Benutzer auf eine andere W
 So konfigurieren Sie die Umleitungsseite oder die Dankesnachricht:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-2. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Guide-Container]**.
-3. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg). Das Dialogfeld der Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
-4. Öffnen Sie die Registerkarte **[!UICONTROL Übermittlung]**. Es werden Optionen zum Konfigurieren einer Umleitungsseite oder einer Nachricht angezeigt:
+1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Guide-Container]**.
+1. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/assets/configure-icon.svg). Das Dialogfeld der Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
+1. Öffnen Sie die Registerkarte **[!UICONTROL Übermittlung]**. Es werden Optionen zum Konfigurieren einer Umleitungsseite oder einer Nachricht angezeigt:
 
    ![Übermittlungsdialog des Guide-Containers zur Konfiguration einer Weiterleitungsseite oder einer Nachricht](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 

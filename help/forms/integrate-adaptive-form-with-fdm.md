@@ -3,7 +3,7 @@ title: Integrieren des Formulardatenmodells (FDM) für ein Formular mit einem ad
 description: Erfahren Sie, wie Sie Formulare basierend auf einem Formulardatenmodell (FDM) zu erstellen. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 31%
@@ -54,6 +54,7 @@ Führen Sie die folgenden Schritte aus, um das Formulardatenmodell basierend auf
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
 1. Wählen Sie aus **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **[Senden mit Formulardatenmodell]**.
+
    ![Senden mit Formulardatenmodell](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. Wählen Sie die erstellte Konfiguration **[!UICONTROL Datenmodell zum Senden]** aus.
@@ -72,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um das Formulardatenmodell mit einem ada
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL Senden mit Formulardatenmodell]** aus.
 

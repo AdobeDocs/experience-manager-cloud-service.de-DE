@@ -8,7 +8,7 @@ badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manage
 hide: false
 index: false
 hidefromtoc: false
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 26%
@@ -26,9 +26,12 @@ Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/
 >
 >Eine Edge Delivery-Pipeline kann erst konfiguriert werden, wenn Folgendes passiert ist:
 >
->* Ein Programm wird erstellt, das eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option **Edge Delivery-Pipeline hinzufügen** in der Benutzeroberfläche deaktiviert angezeigt und in einer QuickInfo werden fehlende Anforderungen erläutert. <!-- CMGR‑69680 -->
+>* Ein Programm wird erstellt, das eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option **Edge Delivery-Pipeline hinzufügen** in der Benutzeroberfläche deaktiviert angezeigt und in einer QuickInfo werden fehlende Anforderungen erläutert.
 >* Das Git-Repository hat mindestens eine Verzweigung.
 >* Die Produktions- und Staging-Umgebungen sind erstellt.
+
+<!-- CMGR‑69680 -->
+
 
 Konfigurieren Sie Ihre Pipeline-Einstellungen über [!UICONTROL Cloud Manager], bevor Sie Code bereitstellen.
 
