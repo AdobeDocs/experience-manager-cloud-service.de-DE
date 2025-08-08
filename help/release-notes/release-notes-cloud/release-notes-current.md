@@ -222,7 +222,7 @@ OSGi-Eigenschaften:
 
 ### Abschaffung der Java 11-Laufzeit {#java11-runtime-deprecation}
 
-Die **Java 11-*- ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere (Java 21 **-Laufzeitumgebung**.
+Die **Java 11-*- ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere (Java 21 &#x200B;**-Laufzeitumgebung**.
 
 Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Bitte stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **28. August 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
 
@@ -298,7 +298,7 @@ Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen
 
 In Alpha unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-aemcs-rde-support@adobe.com Bitte eine E-Mail an [](mailto:aemcs-rde-support@adobe.com) senden, wenn Interesse besteht, Feedback zu dieser Funktion zu geben.
+aemcs-rde-support@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com) senden, wenn Interesse besteht, Feedback zu dieser Funktion zu geben.
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 
