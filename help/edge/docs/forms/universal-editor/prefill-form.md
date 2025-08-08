@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Vorbefüllen des adaptiven Formulars, Edge-Bereitstellungsdienste für adaptive Formulare, Automatisches Ausfüllen des adaptiven Formulars
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1829'
 ht-degree: 4%
 
 ---
@@ -140,9 +140,9 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungs-Service:
 
 6. Klicken Sie **Fertig**, um das Argument zu speichern, und **Speichern**, um das FDM zu speichern
 
-       >[!NOTE]
-       >
-       > Erfahren Sie mehr über das Konfigurieren von FDM[Services in (Arbeiten mit einem Formulardatenmodell (FDM)](/help/forms/work-with-form-data-model.md).
+   >[!NOTE]
+   >
+   > Erfahren Sie mehr über das Konfigurieren von FDM[Services in (Arbeiten mit einem Formulardatenmodell (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -151,35 +151,36 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungs-Service:
 ### Schritt 3: Adaptives Formular erstellen
 
 1. Navigieren Sie zu **Adobe Experience Manager** > **Forms** > **Forms und Dokumente**
-2. Wählen Sie **Erstellen** > **Adaptive Forms**
-3. Wählen Sie auf der Registerkarte **Source** eine Edge Delivery Services-Vorlage aus:
+1. Wählen Sie **Erstellen** > **Adaptive Forms**
+1. Wählen Sie auf der Registerkarte **Source** eine Edge Delivery Services-Vorlage aus:
 
-       ![Edge Delivery Services-Vorlage](/help/edge/assets/create-eds-forms.png)
-   
-4. Klicken Sie **Erstellen**, um den Assistenten **Formular erstellen** zu öffnen
-5. Angeben der Formulardetails:
+   ![Vorlage von Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
+
+1. Klicken Sie **Erstellen**, um den Assistenten **Formular erstellen** zu öffnen
+1. Angeben der Formulardetails:
+
    - **Name**: Geben Sie einen beschreibenden Namen für Ihr Formular ein
    - **Title**: Geben Sie einen benutzerfreundlichen Titel an
    - **GitHub-**: Geben Sie Ihre Repository-URL ein (z. B. `https://github.com/wkndforms/edsforms`)
 
-6. Klicken Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen**.
 
-       ![Schemabasiertes Formular erstellen](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![Erstellen eines schemabasierten Formulars](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 Das Formular wird im universellen Editor zum Erstellen geöffnet.
 
 ### Schritt 4: Konfigurieren von Formulardaten in Source
 
 1. Wählen Sie Ihr Formular aus und klicken Sie auf **Eigenschaften**
 
-       ![Formulareigenschaften auswählen](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![Formulareigenschaften auswählen](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. Öffnen Sie die **Formularmodell** Registerkarte
 3. Wählen Sie aus **Dropdown** Liste „Auswählen aus“ die Option **Formulardatenmodell (FDM)**
 4. Wählen Sie das erstellte Formulardatenmodell (z. B. PetFDM) aus der Dropdown-Liste aus
 
-       ![Registerkarte „Formularmodell auswählen“](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![Registerkarte „Formularmodell auswählen“](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. Klicken Sie auf **Speichern und schließen**.
 6. Öffnen Sie das Formular zur Bearbeitung im universellen Editor
 
@@ -193,6 +194,7 @@ Die Formularelemente aus Ihrem FDM werden auf der Registerkarte **Datenquelle** 
    ![Screenshot des universellen Editors mit schemabasierten Formularen](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. Hinzufügen von Datenbindung zu Formularfeldern:
+
    - Formularfeld auswählen
    - Suchen Sie **Bedienfeld** Eigenschaften“ nach der Eigenschaft **Bindungsverweis**.
    - Wählen Sie die entsprechende Datenbindungsreferenz aus
@@ -208,12 +210,14 @@ Die Formularelemente aus Ihrem FDM werden auf der Registerkarte **Datenquelle** 
 Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert sind:
 
 1. **Erweiterung der AEM-Formulareigenschaften**
+
    - **Extension Manager** im universellen Editor öffnen
    - Aktivieren der Erweiterung **AEM Form Properties**
 
    ![Symbol für Formulareigenschaften](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Data Source-Erweiterung**
+1. **Data Source-Erweiterung**
+
    - Aktivieren Sie **Erweiterung** Datenquelle“, wenn Sie das Symbol **Datenquellen** nicht sehen
 
    ![Screenshot des universellen Editors Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert si
 3. Klicken Sie auf **Registerkarte** Vorbefüllen“
 4. Wählen Sie **Vorbefüllungs-Service für Formulardatenmodell**
 
-       ![Vorbefüllungs-Service auswählen](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![Vorbefüllungs-Service auswählen](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. Klicken Sie auf **Speichern und schließen**.
 
 +++
@@ -247,14 +251,14 @@ Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert si
 3. Wählen Sie **Vorschau als HTML**
 4. Testen des Vorbefüllens durch Anhängen von Parametern an die URL:
 
-       https://your-preview-url.com?&lt;bindreferenceField>=&lt;value>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **Beispiel:**
 
-       https://your-preview-url.com?petid=12345
-       
-       ![Vorbefüllungsformular](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![Formular vorbefüllen](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 Das Formular sollte basierend auf dem angegebenen Parameter automatisch mit Daten ausgefüllt werden.
 
 +++
@@ -267,19 +271,19 @@ Das Formular sollte basierend auf dem angegebenen Parameter automatisch mit Date
 
     &quot;
     
-    &lbrace;
-    „afBoundData“: &lbrace;
-    „user“: &lbrace;
+    {
+    „afBoundData“: {
+    „user“: {
     „firstName“: „John“,
     „lastName“: „Doe“,
     „email“: &quot;john.doe@example.com&quot;,
     „phone“: &quot;+1-555-0123“
-    &rbrace;
-    &rbrace;,
-    „afUnBoundData“: &lbrace;
+    }
+    },
+    „afUnBoundData“: {
     „additionalInfo“: „Benutzereinstellungen geladen“
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
@@ -306,11 +310,11 @@ Die folgenden URLs dienen nur zu Veranschaulichungszwecken und funktionieren nic
 
 **Einfache Vorbefüllungsprüfung:**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **Test mit mehreren Parametern:**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## Fehlerbehebung
@@ -330,21 +334,25 @@ Die folgenden URLs dienen nur zu Veranschaulichungszwecken und funktionieren nic
 +++Debugging-Schritte
 
 1. **Überprüfen der FDM-Konfiguration:**
+
    - Prüfen, ob die Dienste korrekt konfiguriert sind
    - FDM-Services unabhängig testen
    - Überprüfen der Datenquellenkonnektivität
 
 2. **Formularkonfiguration überprüfen:**
+
    - Bestätigen der Verknüpfung des Formulars mit dem richtigen FDM
    - Überprüfen der `bindRef`
    - Testformular ohne Vorbefüllen
 
 3. **Datenfluss testen:**
+
    - Verwenden von Browser-Entwickler-Tools zur Überprüfung von Netzwerkanfragen
    - Überprüfen der Konsole auf JavaScript-Fehler
    - Validieren des Antwortdatenformats
 
 4. **Häufige Fehlermeldungen:**
+
    - „Vorbefüllungs-Service nicht gefunden“: Überprüfen der Service-Konfiguration
    - „Datenbindung fehlgeschlagen“: Überprüfen der `bindRef`
    - „Ungültiges Datenformat“: Stellen Sie sicher, dass die Daten mit dem Schema übereinstimmen
