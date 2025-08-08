@@ -4,10 +4,10 @@ description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -44,11 +44,14 @@ Am Ende dieses Artikels erfahren Sie, wie Sie benutzerdefinierte Komponenten von
 
 Bevor eine benutzerdefinierte Komponente verwendet werden kann, muss sie registriert werden, damit der universelle Editor sie als verfügbare Option erkennt. Dies wird durch eine Komponentendefinition erreicht, die eine eindeutige Kennung, Standardeigenschaften und die Struktur der Komponente enthält. Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Komponente für die Formularerstellung verfügbar zu machen:
 
-1. **Hinzufügen eines neuen Ordners und neuer Dateien**
-Fügen Sie neue Ordner und Dateien für Ihre neue benutzerdefinierte Komponente in Ihrem AEM-Projekt hinzu.
+1. **Neuen Ordner und Dateien hinzufügen**
+
+   Fügen Sie neue Ordner und Dateien für Ihre neue benutzerdefinierte Komponente in Ihrem AEM-Projekt hinzu.
+
    1. Öffnen Sie Ihr AEM-Projekt und navigieren Sie zu `../blocks/form/components/`.
    1. Fügen Sie unter `../blocks/form/components/<component_name>` einen neuen Ordner für Ihre benutzerdefinierte Komponente hinzu. In diesem Beispiel erstellen wir einen Ordner mit dem Namen `range`.
    1. Navigieren Sie zum neu erstellten Ordner unter `../blocks/form/components/<component_name>`. Navigieren Sie beispielsweise zu `../blocks/form/components/range` und fügen Sie die folgenden Dateien hinzu:
+
       - `/blocks/form/components/range/_range.json`: Enthält die Definition der benutzerdefinierten Komponente.
       - `../blocks/form/components/range/range.css`: Definiert den Stil für die benutzerdefinierte Komponente.
       - `../blocks/form/components/range/range.js`: Passt die benutzerdefinierte Komponente zur Laufzeit an.
@@ -358,18 +361,18 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /- Dark Blue */
-   border: 3px solid #00008B; /- Dark Blue */
+   background: #00008B; /* Dark Blue */
+   border: 3px solid #00008B; /* Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /- Dark Blue */
+   border-color: #00008B; /* Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /- Dark Blue */
+   color: #00008B; /* Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -407,7 +410,7 @@ Sie können benutzerdefinierte Komponenten mithilfe von vordefiniertem Markup ä
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
+   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),

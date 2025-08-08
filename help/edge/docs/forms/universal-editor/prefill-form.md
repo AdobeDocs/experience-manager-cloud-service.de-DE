@@ -1,18 +1,17 @@
 ---
-title: Vorausfüllen von Feldern in adaptiven Formularen?
+title: Vorausfüllen von Feldern in adaptiven Formularen
 description: Verwenden Sie vorhandene Daten zum Vorbefüllen von Feldern eines adaptiven Formulars. Benutzer können Formulare mit Standardinformationen vorbefüllen, indem sie sich mit ihrem Social Media-Profil anmelden.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Vorbefüllen des adaptiven Formulars, Edge-Bereitstellungsdienste für adaptive Formulare, Automatisches Ausfüllen des adaptiven Formulars
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 4%
 
 ---
-
 
 # Konfigurieren des Vorbefüllungs-Service in adaptiven Forms mit Edge Delivery Services
 
@@ -37,9 +36,9 @@ Das folgende Diagramm veranschaulicht den automatischen Vorbefüllungsprozess, d
 Der Vorbefüllungsprozess umfasst vier wichtige Schritte:
 
 1. **Benutzer öffnet Formular**: Benutzer greift über eine URL oder Navigation auf ein adaptives Formular zu
-2. **Identifizieren von Daten - Source**: Der Vorbefüllungs-Service bestimmt die konfigurierte Datenquelle (Formulardatenmodell oder Entwurfs-Service)
-3. **Daten abrufen**: Das System ruft relevante Benutzerdaten basierend auf Kontext, Parametern oder Benutzeridentifizierung ab
-4. **Zuordnen und Anzeigen**: Daten werden Formularfeldern mithilfe `bindRef` Eigenschaften zugeordnet und das ausgefüllte Formular wird den Benutzenden angezeigt
+1. **Identifizieren von Daten - Source**: Der Vorbefüllungs-Service bestimmt die konfigurierte Datenquelle (Formulardatenmodell oder Entwurfs-Service)
+1. **Daten abrufen**: Das System ruft relevante Benutzerdaten basierend auf Kontext, Parametern oder Benutzeridentifizierung ab
+1. **Zuordnen und Anzeigen**: Daten werden Formularfeldern mithilfe `bindRef` Eigenschaften zugeordnet und das ausgefüllte Formular wird den Benutzenden angezeigt
 
 Dieser automatisierte Prozess stellt sicher, dass Benutzende ein Formular mit den relevanten Informationen vorausgefüllt sehen, was das Benutzererlebnis und die Formularausfüllungsraten erheblich verbessert.
 
@@ -62,7 +61,6 @@ Das Datenformat muss mit Ihrem Formularmodell übereinstimmen:
 - **JSON-Schemaformulare**: JSON ist mit dem Schema konform
 - **Formulardatenmodell (FDM)-Formulare**: JSON, das mit der FDM-Struktur übereinstimmt
 - **Schemalose Formulare**: Alle Felder sind ungebunden und verwenden ungebundene XML
-
 
 ## Voraussetzungen
 
@@ -106,39 +104,39 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungs-Service:
 
 ## Konfigurieren des Vorbefüllungsdiensts für ein Formular
 
-
 +++Phase 1: Einrichten des Formulardatenmodells
 
 ### Schritt 1: Erstellen Sie ein Formulardatenmodell
 
 1. Anmelden bei der AEM Forms as a Cloud Service-Instanz
-2. Navigieren Sie zu **Adobe Experience Manager** > **Forms** > **Datenintegrationen**
-3. Wählen Sie **Erstellen** > **Formulardatenmodell**
-4. Wählen Sie Ihre **Data Source Configuration** und wählen Sie die konfigurierte **Data Source**
+1. Navigieren Sie zu **Adobe Experience Manager** > **Forms** > **Datenintegrationen**
+1. Wählen Sie **Erstellen** > **Formulardatenmodell**
+1. Wählen Sie Ihre **Data Source Configuration** und wählen Sie die konfigurierte **Data Source**
 
    ![Formulardatenmodell erstellt](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > Detaillierte Anweisungen zum Erstellen von Formulardatenmodellen finden Sie unter [Erstellen eines Formulardatenmodells](/help/forms/create-form-data-models.md).
+   >Detaillierte Anweisungen zum Erstellen von Formulardatenmodellen finden Sie unter [Erstellen eines Formulardatenmodells](/help/forms/create-form-data-models.md).
 
 ### Schritt 2: Konfigurieren von FDM-Services
 
 1. Wechseln Sie zu **Adobe Experience Manager** > **Forms** > **Datenintegrationen**
-2. Öffnen Sie das Formulardatenmodell im Bearbeitungsmodus
-3. Wählen Sie ein Datenmodellobjekt aus und klicken Sie auf **Eigenschaften bearbeiten**
-4. Konfigurieren von **Lese** und **Schreib**-Services für die ausgewählten Datenmodellobjekte
+1. Öffnen Sie das Formulardatenmodell im Bearbeitungsmodus
+1. Wählen Sie ein Datenmodellobjekt aus und klicken Sie auf **Eigenschaften bearbeiten**
+1. Konfigurieren von **Lese** und **Schreib**-Services für die ausgewählten Datenmodellobjekte
 
    ![Konfigurieren des Lese- und Schreibdiensts](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Konfigurieren Sie Service-Argumente:
+1. Konfigurieren Sie Service-Argumente:
+
    - Klicken Sie auf das Bearbeitungssymbol für das Argument des Lesediensts
    - Binden Sie das Argument an **Benutzerprofilattribut**, **Anforderungsattribut** oder **Literalwert**
    - Geben Sie den Bindungswert an (z. B. `petid` für ein Heimtierregistrierungsformular)
 
    ![Konfigurieren des Haustier-ID-Arguments](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Klicken Sie **Fertig**, um das Argument zu speichern, und **Speichern**, um das FDM zu speichern
+1. Klicken Sie **Fertig**, um das Argument zu speichern, und **Speichern**, um das FDM zu speichern
 
    >[!NOTE]
    >
@@ -251,7 +249,7 @@ Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert si
 3. Wählen Sie **Vorschau als HTML**
 4. Testen des Vorbefüllens durch Anhängen von Parametern an die URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Beispiel:**
 
@@ -271,19 +269,19 @@ Das Formular sollte basierend auf dem angegebenen Parameter automatisch mit Date
 
     &quot;
     
-    &lbrace;
-    „afBoundData“: &lbrace;
-    „user“: &lbrace;
+    {
+    „afBoundData“: {
+    „user“: {
     „firstName“: „John“,
     „lastName“: „Doe“,
     „email“: &quot;john.doe@example.com&quot;,
     „phone“: &quot;+1-555-0123“
-    &rbrace;
-    &rbrace;,
-    „afUnBoundData“: &lbrace;
+    }
+    },
+    „afUnBoundData“: {
     „additionalInfo“: „Benutzereinstellungen geladen“
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
