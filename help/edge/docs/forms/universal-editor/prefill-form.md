@@ -142,7 +142,7 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungs-Service:
 
        >[!NOTE]
        >
-   > Erfahren Sie mehr über das Konfigurieren von FDM[Services in (Arbeiten mit einem Formulardatenmodell (FDM)](/help/forms/work-with-form-data-model.md).
+       > Erfahren Sie mehr über das Konfigurieren von FDM[Services in (Arbeiten mit einem Formulardatenmodell (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ Das Formular sollte basierend auf dem angegebenen Parameter automatisch mit Date
 
     &quot;
     
-    {
-    „afBoundData“: {
-    „user“: {
+    &lbrace;
+    „afBoundData“: &lbrace;
+    „user“: &lbrace;
     „firstName“: „John“,
     „lastName“: „Doe“,
     „email“: &quot;john.doe@example.com&quot;,
     „phone“: &quot;+1-555-0123“
-    }
-    },
-    „afUnBoundData“: {
+    &rbrace;
+    &rbrace;,
+    „afUnBoundData“: &lbrace;
     „additionalInfo“: „Benutzereinstellungen geladen“
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
@@ -433,6 +433,7 @@ Pro Formular kann ein primärer Vorbefüllungs-Service konfiguriert werden. Sie 
 +++
 
 =
+
 ## Verwandte Themen
 
 - [Integrieren von Formularen mit dem Formulardatenmodell im universellen Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
