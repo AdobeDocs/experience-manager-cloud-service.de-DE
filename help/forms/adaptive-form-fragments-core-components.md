@@ -6,8 +6,8 @@ keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Fo
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
-workflow-type: ht
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+workflow-type: tm+mt
 source-wordcount: '1479'
 ht-degree: 100%
 
@@ -83,9 +83,11 @@ So fügen Sie einem adaptiven Formular ein adaptives Formularfragment hinzu:
 
    ![Wählen Sie die Option „Adaptive Formularfragmente“ aus](/help/forms/assets/adaptive-form-fragment-basic.png)
 
-<!-- >[!NOTE]
+<!-- 
+   >[!NOTE]
    >
-   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. -->
+   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. 
+-->
 
 Das adaptive Formularfragment wird als Verweis in das adaptive Formular eingefügt und bleibt mit dem eigenständigen adaptiven Formularfragment synchronisiert. Dies bedeutet, dass alle Änderungen am adaptiven Formularfragment über alle Instanzen hinweg gespiegelt werden, in denen das Fragment in adaptive Formulare integriert ist.
 

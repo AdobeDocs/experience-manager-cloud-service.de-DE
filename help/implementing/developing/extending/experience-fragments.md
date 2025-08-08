@@ -4,7 +4,7 @@ description: Erweitern von Experience Fragments für Adobe Experience Manager as
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 100%
@@ -74,12 +74,14 @@ Adobe empfiehlt, den Rewriter mit einer Überlagerung zu konfigurieren. Siehe [�
 >
 >Experience Fragments können nur auf Seiten verwendet werden, die auf bearbeitbaren Vorlagen basieren.
 
-<!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
+<!-- 
+***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
 
 Beim Entwickeln einer neuen Vorlage für Experience Fragments folgen Sie den Standardverfahren für eine bearbeitbare Vorlage.
 
-<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- 
+When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 Um eine Experience Fragment-Vorlage zu erstellen, die vom Assistenten **Erstellen von Experience Fragments** erkannt wird, müssen Sie einen dieser Regelsätze verfolgen:
@@ -99,7 +101,8 @@ Dieses Muster ermöglicht es Benutzenden, Experience Fragments in /content/exper
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!-- 
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->

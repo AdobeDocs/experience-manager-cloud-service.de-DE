@@ -4,7 +4,7 @@ description: Verwenden Sie Designs adaptiver Formulare, um ein adaptives Formula
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 99%
@@ -510,7 +510,8 @@ Mit den folgenden Schritten konfigurieren Sie ein Design für die Verwendung der
 
    Jetzt können Sie sehen, dass die Schriften der Font-Familien-Eigenschaft des Designs hinzugefügt werden.
 
-<!-- >
+<!-- 
+
 ### Listing and selecting fonts in theme editor {#listing-and-selecting-fonts-in-theme-editor}
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
@@ -520,7 +521,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
    ![theme-config](assets/theme-config.png)
 
-1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
+1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. 
+-->
 
 #### Auswählen der Schriftarten im Design-Editor {#selecting-fonts-in-theme-editor}
 

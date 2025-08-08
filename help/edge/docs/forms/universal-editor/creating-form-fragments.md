@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erst
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 97%
@@ -13,9 +13,11 @@ ht-degree: 97%
 
 # Erstellen von Formularfragmenten im universellen Editor
 
-<!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<!--
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features). </span>-->
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+-->
 
 Formulare enthalten häufig allgemeine Abschnitte wie Kontaktinformationen, Identifizierungsangaben oder Einverständniserklärungen. Die Formularentwickelnden erstellen diese Abschnitte jedes Mal, wenn sie ein neues Formular erstellen, was monoton und zeitaufwändig ist.
 Um diesen doppelten Aufwand zu vermeiden, bietet der universelle Editor eine Möglichkeit, wiederverwendbare Formularsegmente wie Panels oder Feldergruppen nur einmal zu erstellen und sie in verschiedenen Formularen wiederzuverwenden. Diese wiederverwendbaren, modularen und unabhängigen Segmente werden als Formularfragmente bezeichnet. Beispielsweise kann dasselbe Fragment für Notfallkontakte in verschiedenen Abschnitten eines Formulars verwendet werden, z. B. für Kontaktdetails von Mitarbeitenden und Vorgesetzten.

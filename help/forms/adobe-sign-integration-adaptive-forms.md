@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
-workflow-type: ht
-source-wordcount: '2195'
-ht-degree: 100%
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 98%
 
 ---
 
@@ -239,7 +239,9 @@ Die Kontaktperson generiert Anmeldeinformationen und teilt Ihnen diese mit. Im n
 
    ![Cloud-Konfiguration für Adobe Acrobat Sign erfolgreich](assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      -->
 
 1. Wählen Sie **[!UICONTROL Erstellen]**, um die Konfiguration zu erstellen.
 
@@ -260,7 +262,7 @@ Standardmäßig überprüfen die [!DNL Adobe Acrobat Sign]-Planungs-Services die
 
 Um das Standardintervall zu ändern, geben Sie einen [Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) für die Eigenschaft **sign.status.exp** der Konfiguration des **Adobe Acrobat Sign-Konfigurationsdienstes** an.
 
-Um beispielsweise den Konfigurationsdienst täglich um 0:00 Uhr auszuführen, setzen Sie die Eigenschaft **sign.status.exp** des **Adobe Sign-Konfigurationsdienstes** auf `0 0 0 1/1 * ? *`. Folgende JSON-Datei zeigt das Beispiel einer täglichen Ausführung des Konfigurations-Service um 0:00 Uhr:
+Um beispielsweise den Konfigurations-Service täglich um 0:00 :00 auszuführen, legen Sie die Eigenschaft **sign.status.exp** der Konfiguration **Adobe Acrobat Sign Configuration Service** fest, um `0 0 0 1/1 * ? *` anzugeben. Die folgende JSON-Datei zeigt das Beispiel für die tägliche Ausführung des Konfigurations-Service um :00 Uhr:
 
 ```json
 {
@@ -268,7 +270,7 @@ Um beispielsweise den Konfigurationsdienst täglich um 0:00 Uhr auszuführen, s
 }
 ```
 
-Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
+Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration in Ihrer Cloud Service-Instanz bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process).
 
 ## Häufig gestellte Fragen
 
