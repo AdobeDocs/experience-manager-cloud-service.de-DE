@@ -193,7 +193,7 @@ Führen Sie die folgenden Schritte aus, um ein adaptives Formular zu erstellen, 
      >* Wenn das Symbol „Datenquellen“ in der Benutzeroberfläche des universellen Editors oder die Eigenschaft „Bindungsverweis“ im rechten Eigenschaftenbereich nicht angezeigt wird, aktivieren Sie die **Datenquelle** in Extension Manager.
      >* Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
      > 
-     > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
+     > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
 
    Der Vorbefüllungsdienst für Formulare im universellen Editor wird derzeit nicht unterstützt.
 
