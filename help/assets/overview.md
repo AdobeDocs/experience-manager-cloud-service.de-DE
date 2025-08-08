@@ -1,13 +1,13 @@
 ---
 title: Einführung in Assets as a Cloud Service für Digital Asset Management in AEM
 description: Einführung in Assets as a Cloud Service für Digital Asset Management in AEM
-source-git-commit: 707c2125b3a5401cd5b0ebe19f3bc9c46302b697
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
 workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 38%
 
 ---
-
 
 # Einführung in Assets as a Cloud Service für Digital Asset Management in AEM {#assets-as-cloud-service-digital-asset-management-aem}
 
@@ -57,11 +57,11 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
    <img alt="Verwenden des AEM-Desktop-Programms" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
       <strong>Verwenden des AEM-Desktop-Programms</strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ AEM Assets bietet Funktionen, die Ihnen den schnellen Zugriff auf das richtige A
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Best Practices für die Metadatenverwaltung" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Best Practices für die Metadatenverwaltung</strong>
       </a>
    </div>
@@ -583,11 +583,11 @@ Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, fin
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integration mit Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integration mit Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, fin
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Integration mit Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Integration mit Commerce</strong>
       </a>
    </div>
@@ -906,5 +906,3 @@ Benutzerinnen und Benutzer mit Zugriff auf die Admin-Ansicht können auch auf di
 DAM-Bibliothekarinnen und -Bibliothekare, -Entwicklungspersonen sowie -Superbenutzerinnen und -Superbenutzer können die Admin-Ansicht weiterhin verwenden oder bei Bedarf zwischen den Benutzeroberflächen wechseln. Sie können das Erlebnis auswählen, das für Ihre Rolle am besten geeignet ist.
 
 Informationen zum Zugriff auf die Assets-Ansicht und einige der Vereinfachungen, die sie gegenüber der Admin-Ansicht bietet, finden Sie unter [Einführung in die Assets-Ansicht](/help/assets/assets-view-introduction.md).
-
-
