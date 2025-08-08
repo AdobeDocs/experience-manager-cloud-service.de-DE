@@ -7,7 +7,7 @@ exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ Außerdem werden Sie durch die folgenden Schritte zum Erstellen und Konfiguriere
 1. Einrichten Ihrer Arbeitsumgebung
 1. Erhalten einer Anwendungs-ID von Adobe
 1. Erstellen einer neuen Ressourcengruppe
-1. Schlüsseltresor erstellen
-1. Adobe Zugriff auf den Schlüsseltresor gewähren
+1. Erstellen eines Schlüsseltresors
+1. Gewähren von Zugriff auf den Schlüsseltresor für Adobe
 1. Erstellen eines Verschlüsselungsschlüssels
 
 Sie müssen die Schlüsseltresor-URL, den Verschlüsselungsschlüsselnamen und Informationen über den Schlüsseltresor für Adobe freigeben.
@@ -50,7 +50,7 @@ Sie müssen die Schlüsseltresor-URL, den Verschlüsselungsschlüsselnamen und I
 
 Einzige Voraussetzung, um den Anweisungen dieses Handbuchs folgen zu können, ist die Azure-Befehlszeilenschnittstelle (CLI). Wenn Sie die Azure-CLI noch nicht installiert haben, befolgen Sie die offiziellen Installationsanweisungen [hier](https://learn.microsoft.com/de-de/cli/azure/install-azure-cli).
 
-Bevor Sie mit dem Rest dieses Handbuchs fortfahren, melden Sie sich mit `az login` bei Ihrer CLI an.
+Bevor Sie mit dem Rest dieses Handbuchs fortfahren, melden Sie sich bitte mit `az login` bei Ihrer CLI an.
 
 >[!NOTE]
 >
@@ -59,19 +59,19 @@ Bevor Sie mit dem Rest dieses Handbuchs fortfahren, melden Sie sich mit `az logi
 
 ## Starten des CMK-Konfigurationsprozesses für AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
-Sie müssen die Konfiguration für kundenverwaltete Schlüssel (CMK) für Ihre AEM as a Cloud Service-Umgebung über die Benutzeroberfläche anfordern. Navigieren Sie dazu zur AEM Home Security-Benutzeroberfläche im Abschnitt **Kundenseitig verwaltete Schlüssel** .
+Sie müssen die Konfiguration für kundenseitig verwaltete Schlüssel (CMK) für Ihre AEM as a Cloud Service-Umgebung über die Benutzeroberfläche anfordern. Navigieren Sie dazu zur Benutzeroberfläche von AEM Home Security im Abschnitt **Kundenseitig verwaltete Schlüssel**.
 Sie können dann den Onboarding-Prozess starten, indem Sie auf die Schaltfläche **Onboarding starten** klicken.
 
-![Beginnen Sie das Onboarding einer Website mithilfe der CMK-Benutzeroberfläche](./assets/cmk/step1.png)
+![Starten des Onboardings einer Website mithilfe der CMK-Benutzeroberfläche](./assets/cmk/step1.png)
 
 
 ## Erhalten einer Anwendungs-ID von Adobe {#obtain-an-application-id-from-adobe}
 
-Nach Beginn des Onboarding-Prozesses wird von Adobe eine Entra-Anwendungs-ID bereitgestellt. Diese Anwendungs-ID ist für den Rest des Handbuchs erforderlich und wird verwendet, um einen Service-Prinzipal zu erstellen, der Adobe den Zugriff auf Ihren Schlüsseltresor ermöglicht. Wenn Sie noch keine Anwendungs-ID haben, müssen Sie warten, bis sie von Adobe bereitgestellt wird.
+Nach Beginn des Onboarding-Prozesses wird von Adobe eine Entra-Anwendungs-ID bereitgestellt. Diese Anwendungs-ID ist für den Rest des Handbuchs erforderlich und wird verwendet, um einen Dienstprinzipal zu erstellen, der Adobe den Zugriff auf Ihren Schlüsseltresor ermöglicht. Wenn Sie noch keine Anwendungs-ID haben, müssen Sie warten, bis sie von Adobe bereitgestellt wird.
 
-![Die Anfrage wird verarbeitet. Warten Sie, bis Adobe die zusätzliche Anwendungs-ID angegeben hat](./assets/cmk/step2.png)
+![Die Anfrage wird verarbeitet; warten Sie, bis Adobe die Entra-Anwendungs-ID bereitstellt](./assets/cmk/step2.png)
 
-Nachdem die Anfrage abgeschlossen ist, können Sie die Anwendungs-ID in der CMK-Benutzeroberfläche sehen.
+Nachdem die Anfrage abgeschlossen ist, wird Ihnen die Anwendungs-ID in der CMK-Benutzeroberfläche angezeigt.
 
 ![Die Entra-Anwendungs-ID wird von Adobe bereitgestellt](./assets/cmk/step3.png)
 
@@ -92,7 +92,7 @@ Wenn Sie bereits über eine Ressourcengruppe verfügen, können Sie stattdessen 
 
 ## Erstellen eines Schlüsseltresors {#create-a-key-vault}
 
-Sie müssen einen Schlüsseltresor erstellen, der Ihren Verschlüsselungsschlüssel enthält. Für den Schlüsseltresor muss der Bereinigungsschutz aktiviert sein. Der Bereinigungsschutz ist erforderlich, um Daten im Ruhezustand von anderen Azure-Services zu verschlüsseln. Der Zugriff auf das öffentliche Netzwerk muss aktiviert sein, damit die Adobe-Services auf den Schlüsseltresor zugreifen können.
+Sie müssen einen Schlüsseltresor erstellen, der Ihren Verschlüsselungsschlüssel enthält. Für den Schlüsseltresor muss der Bereinigungsschutz aktiviert sein. Der Bereinigungsschutz ist erforderlich, um Daten im Ruhezustand von anderen Azure-Services zu verschlüsseln. Der Zugriff auf das öffentliche Netzwerk muss ebenfalls aktiviert sein, damit Adobe-Dienste auf den Schlüsseltresor zugreifen können.
 
 >[!IMPORTANT]
 >Wenn der Schlüsseltresor erstellt wird, während der Zugriff auf das öffentliche Netzwerk deaktiviert ist, wird erzwungen, dass alle Vorgänge im Zusammenhang mit dem Schlüsseltresor, wie Schlüsselerstellung oder -rotation, von einer Umgebung aus ausgeführt werden müssen, die Netzwerkzugriff auf den Schlüsseltresor hat – z. B. eine VM, die auf den Schlüsseltresor zugreifen kann.
@@ -120,7 +120,7 @@ az keyvault create `
 
 In diesem Schritt ermöglichen Sie Adobe den Zugriff auf Ihren Schlüsseltresor über eine Entra-Anwendung. Die ID der Entra-Anwendung sollte bereits von Adobe zur Verfügung gestellt worden sein.
 
-Zunächst müssen Sie einen Service-Prinzipal erstellen, der an die Entra-Anwendung angehängt ist, und ihr die Rollen **Key Vault Reader** und **Key Vault Crypto User** zuweisen. Die Rollen sind auf den in diesem Handbuch erstellten Schlüsseltresor beschränkt.
+Zunächst müssen Sie einen Dienstprinzipal erstellen, der an die Entra-Anwendung angehängt ist und diesem die Rollen **Key Vault Reader** und **Key Vault Crypto User** zuweisen. Die Rollen sind auf den in diesem Handbuch erstellten Schlüsseltresor beschränkt.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -180,9 +180,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
-Geben Sie diese Informationen in der CMK-Benutzeroberfläche an:
-![Füllen Sie die Informationen in der Benutzeroberfläche aus](./assets/cmk/step3a.png)
+Geben Sie diese Informationen auf der CMK-Benutzeroberfläche an:
+![Ausfüllen von Informationen auf der Benutzeroberfläche](./assets/cmk/step3a.png)
 
 ## Auswirkungen eines Widerrufs des Schlüsselzugriffs {#implications-of-revoking-key-access}
 
@@ -192,16 +191,16 @@ Wenn Sie sich entscheiden, den Platform-Zugriff auf Ihre Daten zu widerrufen, k�
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie die erforderlichen Informationen in der CMK-Benutzeroberfläche bereitgestellt haben, startet Adobe den Konfigurationsprozess für Ihre AEM as a Cloud Service-Umgebung. Dieser Vorgang kann einige Zeit in Anspruch nehmen, und Sie werden benachrichtigt, sobald er abgeschlossen ist.
+Nachdem Sie die erforderlichen Informationen auf der CMK-Benutzeroberfläche angegeben haben, startet Adobe den Konfigurationsprozess für Ihre AEM as a Cloud Service-Umgebung. Dieser Vorgang kann einige Zeit in Anspruch nehmen. Sie werden benachrichtigt, sobald er abgeschlossen ist.
 
 ![Warten Sie, bis Adobe die Umgebung konfiguriert hat.](./assets/cmk/step4.png)
 
 
-## CMK-Setup abschließen {#complete-the-cmk-setup}
+## Abschließen der CMK-Einrichtung {#complete-the-cmk-setup}
 
-Sobald der Konfigurationsprozess abgeschlossen ist, können Sie den Status Ihrer CMK-Einrichtung in der Benutzeroberfläche sehen. Sie können auch den Schlüsseltresor und den Verschlüsselungsschlüssel sehen.
+Sobald der Konfigurationsprozess abgeschlossen ist, wird Ihnen der Status Ihrer CMK-Einrichtung auf der Benutzeroberfläche angezeigt. Es wird Ihnen außerdem der Schlüsseltresor und den Verschlüsselungsschlüssel angezeigt.
 ![Der Prozess in ist jetzt abgeschlossen](./assets/cmk/step5.png)
 
-## Fragen und Support {#questions-and-support}
+## Fragen und Unterstützung {#questions-and-support}
 
-Wenden Sie sich an uns, wenn Sie Fragen haben oder Unterstützung beim Einrichten von kundenverwalteten Schlüsseln für AEM as a Cloud Service benötigen. Der Adobe-Support kann Ihnen bei allen Fragen behilflich sein.
+Wenden Sie sich an uns, wenn Sie Fragen haben oder Unterstützung beim Einrichten von kundenseitig verwalteten Schlüsseln für AEM as a Cloud Service benötigen. Der Adobe-Support kann Ihnen bei allen Fragen behilflich sein.
