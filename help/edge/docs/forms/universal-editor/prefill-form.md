@@ -251,7 +251,7 @@ Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert si
 3. Wählen Sie **Vorschau als HTML**
 4. Testen des Vorbefüllens durch Anhängen von Parametern an die URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Beispiel:**
 
@@ -271,19 +271,19 @@ Das Formular sollte basierend auf dem angegebenen Parameter automatisch mit Date
 
     &quot;
     
-    {
-    „afBoundData“: {
-    „user“: {
+    &lbrace;
+    „afBoundData“: &lbrace;
+    „user“: &lbrace;
     „firstName“: „John“,
     „lastName“: „Doe“,
     „email“: &quot;john.doe@example.com&quot;,
     „phone“: &quot;+1-555-0123“
-    }
-    },
-    „afUnBoundData“: {
+    &rbrace;
+    &rbrace;,
+    „afUnBoundData“: &lbrace;
     „additionalInfo“: „Benutzereinstellungen geladen“
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
