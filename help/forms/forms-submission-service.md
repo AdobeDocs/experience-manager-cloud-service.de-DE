@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: b8b5937919dceb83a11b2fe359a9accec7012f81
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1578'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Der Forms Submission Service ist eine gehostete Lösung von Adobe, mit der Formu
 
 >[!NOTE]
 >
->**Early Access-Programm** Diese Funktion ist derzeit über Early Access verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) mit den Namen Ihrer GitHub-Organisation und des Repositorys von Ihrer offiziellen Adresse.
+>**Early Access-Programm** Diese Funktion ist derzeit über Early Access verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) mit den Namen Ihrer GitHub-Organisation und des Repositorys von Ihrer offiziellen Adresse.
 >
 >**Beispiel:** Für Repository-`https://github.com/adobe/abc` senden: Organisation = `adobe`, Repository = `abc`
 
@@ -87,7 +87,6 @@ Bevor Sie den Forms-Übermittlungsdienst einrichten, stellen Sie sicher, dass di
 
 ### **Tabellenkalkulationsplattform einrichten**
 
-
 Wählen Sie eine der unterstützten Plattformen:
 
 - **Google Sheets** - Google-Konto mit Berechtigungen zur Erstellung von Tabellen
@@ -102,7 +101,7 @@ Wählen Sie eine der unterstützten Plattformen:
 
 >[!TIP]
 >
->**Neu bei Edge Delivery Services?** Sie mit dem [Erste Schritte-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial), um Ihre Projektstiftung einzurichten.
+>**Neu bei Edge Delivery Services?** Sie mit dem [Erste Schritte-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial), um Ihre Projektstiftung einzurichten.
 
 ## Konfigurationsmethoden
 
@@ -119,9 +118,8 @@ Der Forms Submission Service bietet zwei Konfigurationsansätze. Wählen Sie die
 
 Bevor Sie eine dieser Methoden konfigurieren, stellen Sie sicher, dass Ihre AEM Project Foundation bereit ist:
 
-1. **Erstellen oder aktualisieren Sie Ihr AEM-Projekt** mit dem neuesten adaptiven Forms-Block ([Erste Schritte-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
-
-2. **Aktualisieren von`fstab.yaml`** im Projektstamm:
+1. **Erstellen oder aktualisieren Sie Ihr AEM-Projekt** mit dem neuesten adaptiven Forms-Block ([Erste Schritte-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Aktualisieren von`fstab.yaml`** im Projektstamm:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -129,8 +127,7 @@ Bevor Sie eine dieser Methoden konfigurieren, stellen Sie sicher, dass Ihre AEM 
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-
-3. **Freigeben des Projektordners** für `forms@adobe.com` (Bearbeitungsberechtigungen erforderlich)
+1. **Freigeben des Projektordners** für `forms@adobe.com` (Bearbeitungsberechtigungen erforderlich)
 
 ## Manuelle Konfiguration
 
@@ -146,9 +143,9 @@ Erstellen Sie Ihre Formularstruktur mit Google Sheets oder Microsoft Excel.
 **Schritte zur Formularerstellung:**
 
 1. **Öffnen der Tabellenkalkulationsplattform** (Google Sheets oder Microsoft Excel)
-2. **Neue Tabelle erstellen** für Ihr Formularprojekt
-3. **Benennen Sie Ihr Blatt** (muss entweder `helix-default` oder `shared-aem` sein)
-4. **Definieren Sie Ihre Formularstruktur** mithilfe des [Handbuchs zur Formularerstellung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+1. **Neue Tabelle erstellen** für Ihr Formularprojekt
+1. **Benennen Sie Ihr Blatt** (muss entweder `helix-default` oder `shared-aem` sein)
+1. **Definieren Sie Ihre Formularstruktur** mithilfe des [Handbuchs zur Formularerstellung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Formulardefinition](/help/forms/assets/form-submission-definition.png)
 *Beispiel: Formulardefinition mit Feldtypen, Beschriftungen und Validierungsregeln*
@@ -177,9 +174,9 @@ Richten Sie ein spezielles Blatt ein, um Formulardaten zur Übermittlung zu empf
 **Datenblatt-Setup:**
 
 1. **Ein neues Blatt hinzufügen** zu Ihrem vorhandenen Arbeitsblatt hinzufügen
-2. **Benennen Sie die Tabelle genau`incoming`** (Groß-/Kleinschreibung beachten)
-3. **Einrichten von Spaltenüberschriften** die Ihren Formularfeldern entsprechen
-4. **Speichern Sie die Tabelle** um sicherzustellen, dass die Änderungen erhalten bleiben
+1. **Benennen Sie die Tabelle genau`incoming`** (Groß-/Kleinschreibung beachten)
+1. **Einrichten von Spaltenüberschriften** die Ihren Formularfeldern entsprechen
+1. **Speichern Sie die Tabelle** um sicherzustellen, dass die Änderungen erhalten bleiben
 
 ![Eingehendes Blatt](/help/forms/assets/form-submission-incoming-sheet.png)
 *Beispiel: Eingehendes Blatt mit Spaltenüberschriften, die mit Formularfeldern übereinstimmen*
@@ -211,14 +208,17 @@ Gewähren Sie dem Adobe Forms Submission Service Zugriff auf Ihre Tabelle.
 **Freigabeprozess:**
 
 1. **Klicken Sie auf die** Freigeben oben rechts im Arbeitsblatt
-2. **Fügen Sie das Adobe-Dienstkonto hinzu:**
+1. **Fügen Sie das Adobe-Dienstkonto hinzu:**
+
    - E-Mail: `forms@adobe.com`
    - Berechtigungsstufe: **Editor** (erforderlich für das Schreiben von Daten)
-3. **Senden der Freigabeeinladung**
-4. **Tabellenlink kopieren** für den nächsten Schritt
+
+1. **Senden der Freigabeeinladung**
+1. **Tabellenlink kopieren** für den nächsten Schritt
 
    ![Freigeben eingehender Arbeitsblätter](/help/forms/assets/form-submission-share-incoming.png)
-   *Schritt-für-Schritt-Freigabeprozess für das Gewähren des Zugriffs auf Adobe-Services*
+
+*Schritt-für-Schritt-Freigabeprozess für das Gewähren des Zugriffs auf Adobe-Services*
 
 **Plattformspezifische Anweisungen:**
 
@@ -250,18 +250,19 @@ Verknüpfen Sie Ihre Formulardefinition mit dem Übermittlungs-Arbeitsblatt.
 **Form-Spreadsheet-Verbindung:**
 
 1. **Öffnen Sie eine Formulardefinitionstabelle** (die mit `helix-default` oder `shared-aem` Blatt)
-2. **Suchen Sie die Zeile „Feld senden** in Ihrer Formulardefinition
-3. **Fügen Sie den kopierten Tabellenlink** das Feld Senden in die Spalte **Aktion** ein
-4. **Speichern Sie die** in Ihrer Formulardefinition
+1. **Suchen Sie die Zeile „Feld senden** in Ihrer Formulardefinition
+1. **Fügen Sie den kopierten Tabellenlink** das Feld Senden in die Spalte **Aktion** ein
+1. **Speichern Sie die** in Ihrer Formulardefinition
 
    ![Verknüpfen einer Tabelle](/help/forms/assets/form-submission-sheet-linking.png)
-   *Beispiel: Verbinden der Übermittlungsaktion mit Ihrer Datenerfassungs-Tabelle*
+
+*Beispiel: Verbinden der Übermittlungsaktion mit Ihrer Datenerfassungs-Tabelle*
 
 **Formular veröffentlichen:**
 
 1. **Öffnen von AEM Sidekick** in Ihrem Browser
-2. **Vorschau des Formulars**, um die Konfiguration zu testen
-3. **Formular veröffentlichen** um es live zu schalten
+1. **Vorschau des Formulars**, um die Konfiguration zu testen
+1. **Formular veröffentlichen** um es live zu schalten
 
 **Endgültige Validierung:**
 
@@ -329,37 +330,38 @@ Postman bietet eine benutzerfreundliche Oberfläche zum Testen von API-Übermitt
 **Setup-Anweisungen:**
 
 1. **Erstellen einer neuen POST-Anfrage** in Postman
-2. **Konfigurieren des Endpunkts:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-3. **Platzhalter ersetzen:**
+1. **Konfigurieren des Endpunkts:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+1. **Platzhalter ersetzen:**
+
    - `{id}` → tatsächlichen Formular-ID
    - `[repository]` → Ihres GitHub-Repository-Namens
    - `[organization]` → GitHub-Organisation/-Benutzername
 
 **Anfragekonfiguration:**
 
-    „json
+```json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Kopfzeilen:
+Headers:
 Content-Type: application/json
-X-Adobe-Routing: tier=live,bucket=main—your-repo—your-org
+x-adobe-routing: tier=live,bucket=main--your-repo--your-org
 
-Hauptteil (JSON):
-&lbrace;
-„data“: &lbrace;
-„startDate“: „2025-01-10“,
-„endDate“: „2025-01-25“,
-„destination“: „Australia“,
-„class“: „first class“,
-„Haushalt“: „2000“,
-„amount“: „1000000“,
-„name“: „Mary“,
-„Alter“: „35“,
-„Subscribe“: null,
-„email“: &quot;mary@gmail.com&quot;
-&rbrace;
-&rbrace;
-&quot;
+Body (JSON):
+{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Mary",
+            "age": "35",
+            "subscribe": null,
+            "email": "mary@gmail.com"
+                }
+}
+```
 
 **Erwartete Antwort:**
 
@@ -403,10 +405,10 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-        ```
+```
 
->[!TAB Windows Command Prompt]
-     
+>[!TAB Windows-Eingabeaufforderung]
+
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
@@ -436,13 +438,13 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-    ```
+```
 
 >[!ENDTABS]
 
-### API Response & Verification
+### API-Antwort und -Verifizierung
 
-**Successful Response:**
+**Erfolgreiche Antwort:**
 
 ```http
 HTTP/1.1 201 Created
@@ -522,7 +524,7 @@ Solutions:
 
 - **Early Access Issues:** E-Mail [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **API-Dokumentation** [Entwicklerreferenz](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Community-Support:** [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/?profile.language=de)
+- **Community-Support:** [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/)
 
 ## Nächste Schritte
 
@@ -530,7 +532,7 @@ Nachdem Sie nun den Forms-Übermittlungsdienst konfiguriert haben, lesen Sie die
 
 ### **Forms verbessern**
 
-- **[Erweiterte Forms erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Hinzufügen von Validierung, bedingter Logik und benutzerdefiniertem Stil
+- **[Erweiterte Forms erstellen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Hinzufügen von Validierung, bedingter Logik und benutzerdefiniertem Stil
 - **[Handbuch zu Formularkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Verfügbare Formularfeldtypen erkunden
 
 ### **Alternative Übermittlungsmethoden**
