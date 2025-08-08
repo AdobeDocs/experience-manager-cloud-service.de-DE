@@ -47,7 +47,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 >[!TAB Foundation-Komponente]
 
-Führen Sie die folgenden Schritte aus, um einen automatisierten Prozess mit [ ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de#extending-aem)AEM-Workflow für ein adaptives Formular einzurichten, das auf Foundation-Komponenten basiert:
+Führen Sie die folgenden Schritte aus, um einen automatisierten Prozess mit [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de#extending-aem)AEM-Workflow für ein adaptives Formular einzurichten, das auf Foundation-Komponenten basiert:
 
 1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
 1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **Übermittlungsaktion** als **[!UICONTROL AEM-Workflow aufrufen]**.
@@ -102,16 +102,16 @@ Gehen Sie wie folgt vor, um einen automatisierten Prozess mit [ Workflow ](https
 
 >[!TAB Universeller Editor]
 
-Führen Sie die folgenden Schritte aus, um einen automatisierten Prozess mit [ ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de#extending-aem)AEM Workflow für ein im universellen Editor erstelltes adaptives Formular einzurichten:
+Führen Sie die folgenden Schritte aus, um einen automatisierten Prozess mit [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de#extending-aem)AEM Workflow für ein im universellen Editor erstelltes adaptives Formular einzurichten:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
 Das **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie die Übermittlungsaktion **[!UICONTROL AEM-Workflow]**.
 
