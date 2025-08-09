@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 33b562182ea6fca22796ec7b73c8f036e021f64d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '6613'
-ht-degree: 98%
+source-wordcount: '6590'
+ht-degree: 97%
 
 ---
 
@@ -1112,21 +1112,21 @@ ht-degree: 98%
    + Erstellen von Formularen {#build-forms}
       + [Überblick](/help/edge/docs/forms/overview.md)
       + WYSIWYG-Authoring {#universal-editor}
-         + [Einführung in den universellen Editor von Forms für Edge Delivery Services – vollständiges Handbuch](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Erste Schritte beim Erstellen mit dem universellen Editor – Schrittweises Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Erstellen Ihres ersten Formulars mit dem universellen Editor – Schrittweises Tutorial](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Benutzerhandbuch nach der Übermittlung: Konfigurieren von Weiterleitungen und Dankesnachrichten im universellen Editor](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [Handbuch zur Benutzeroberfläche des universellen Editors: Erklärung der Tools, Funktionen und Navigation](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Mobiles Arbeiten mit Forms: Responsives Design im universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Entwerfen ansprechender Formulare: Anleitung zur Gestaltung und Themenerstellung für den universellen Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Hinzufügen von dynamischem Verhalten zu Forms: Vollständiges Handbuch zum Regeleditor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Handbuch zum Senden von Formularen: Konfigurieren und Anpassen von Sendeaktionen für Formulare](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Schützen Ihrer Formulare vor Spam: Hinzufügen von reCAPTCHA-Sicherheit](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Veröffentlichen und Bereitstellen von Formularen: Veröffentlichungshandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch für den universellen Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Integration eines Formulardatenmodells: Integrieren von Formularen mit dem Formulardatenmodell](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [Vorbefüllungs-Service konfigurieren: Eine schrittweise Anleitung zum Konfigurieren des Vorbefüllungs-Services finden Sie.](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [Wiederverwendbare, modulare und eigenständige Segmente: Erstellen und Verwenden von Formularfragmenten in Formularen](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Universeller Editor für Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Erste Schritte mit Edge Delivery Services für AEM Forms mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Erstellen und Veröffentlichen von adaptiven Forms mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Erstellen einer responsiven Forms mit einem universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Anpassen des Designs und Stils für Edge Delivery Services für AEM Forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Regeleditor für Dynamic Forms im universellen Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Erstellen von Formularfragmenten für das WYSIWYG-basierte Authoring](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Konfigurieren einer Übermittlungsaktion für ein adaptives Formular](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Konfigurieren einer Umleitungsseite oder Dankesnachricht](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
+         + [Hinzufügen von Google reCAPTCHA zu Forms im universellen Editor](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Wie lässt sich das Formulardatenmodell (FDM) für ein Formular im universellen Editor integrieren?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Vorausfüllen von Feldern in adaptiven Formularen](/help/edge/docs/forms/universal-editor/prefill-form.md)
+         + [Veröffentlichen des adaptiven Formss mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Erstellen benutzerdefinierter Komponenten für ein EDS-Formular](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Fehlerbehebung für Fehler vom Typ „403 – Verboten“ bei der Formularübermittlung in Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)

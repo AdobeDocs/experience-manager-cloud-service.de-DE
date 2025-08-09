@@ -5,788 +5,679 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '3597'
-ht-degree: 23%
+source-wordcount: '2598'
+ht-degree: 1%
 
 ---
 
 
 # Regeleditor für Dynamic Forms im universellen Editor
 
-Mit dem Regeleditor im universellen Editor können Sie intelligente, dynamische Formulare erstellen, die in Echtzeit auf Benutzereingaben reagieren. Sie können statische Formulare in interaktive Erlebnisse mit bedingter Feldsichtbarkeit, automatisierten Berechnungen und komplexer Geschäftslogik umwandeln - und das alles, ohne Code zu schreiben.
+Mit dem Regeleditor können Autoren statische Formulare in responsive, intelligente Erlebnisse umwandeln - ohne Code zu schreiben. Sie können Felder bedingt anzeigen, Berechnungen durchführen, Daten validieren, Benutzer durch Flüsse führen und Geschäftslogik integrieren, die sich je nach Benutzertyp anpasst.
 
+## Lerninhalt
 
-## Lerninhalte
-
-Am Ende dieses Handbuchs werden Sie:
+Am Ende dieses Handbuchs haben Sie folgende Möglichkeiten:
 
 - So funktionieren Regeln und wann verschiedene Regeltypen verwendet werden sollten
 - Aktivieren des Regeleditors im universellen Editor und Zugreifen auf ihn
-- Erstellen einer bedingten Logik zum dynamischen Anzeigen oder Ausblenden von Formularfeldern
+- Erstellen einer bedingten Logik zum dynamischen Anzeigen oder Ausblenden von Feldern
 - Implementieren automatisierter Berechnungen und Datenvalidierung
 - Erstellen benutzerdefinierter Funktionen für komplexe Geschäftsregeln
-- Anwendung von Best Practices für eine optimale Formularleistung
+- Anwendung von Best Practices für Leistung, Wartungsfreundlichkeit und Benutzerfreundlichkeit
 
 ## Wozu dient der Regeleditor?
 
-**Transformieren von statischem Forms in intelligente Erlebnisse:**
+- **Bedingte Logik**: Zeigen Sie relevante Felder nur an, wenn sie benötigt werden, um Lärm und kognitive Belastung zu reduzieren.
+- **Dynamische Berechnungen**: Werte (Summen, Sätze, Steuern) werden je nach Benutzertyp automatisch berechnet.
+- **Datenvalidierung**: Frühzeitige Fehlervermeidung durch Echtzeit-Prüfungen und Löschen von Nachrichten.
+- **Geführte Erlebnisse**: Führen Sie Benutzer durch logische Schritte (Assistenten, Verzweigungen).
+- **Erstellen ohne Code**: Konfigurieren Sie leistungsstarkes Verhalten über eine visuelle Oberfläche.
 
-- **Bedingte Logik**: Anzeigen relevanter Felder basierend auf der Benutzerauswahl
-- **Dynamische Berechnungen**: Werte automatisch als Benutzertyp berechnen
-- **Datenvalidierung**: Bereitstellung von Echtzeit-Feedback und Vermeidung von Fehlern
-- **Verbessertes UX**: Reduzieren Sie die Komplexität von Formularen und führen Sie Benutzer durch logische Flüsse
-- **Keine Codierung erforderlich**: Visuelle Schnittstelle, auf die Nicht-Entwickler zugreifen können
-
-**Häufige Anwendungsfälle:**
-
-- Steuerberechnungsformulare mit bedingten Abzügen
-- Mehrstufige Assistenten mit Verzweigungspfaden
-- Versicherungsformulare mit Tarifberechnungen
-- Umfrageformulare mit bedingten Fragen
-- E-Commerce-Formulare mit dynamischer Preisgestaltung
+Häufige Szenarien sind Steuerrechner, Schätzer für Darlehen und Prämien, Fördermittelflüsse, mehrstufige Anträge und Umfragen mit bedingten Fragen.
 
 ## Funktionsweise von Regeln
 
-Regeln sind automatisierte Anweisungen, die Ihre Formulare intelligent und responsiv machen. Sie legen fest, was passieren soll, wenn bestimmte Bedingungen erfüllt sind.
+Eine Regel definiert, was passieren soll, wenn eine Bedingung erfüllt ist. Grundsätzlich besteht eine Regel aus zwei Teilen:
 
-### **Regelkomponenten**
+- **Bedingung**: Eine Anweisung, die als „true“ oder „false“ ausgewertet wird.
+   - Beispiele: „Einkommen > 50.000“, „Abdeckung = &#39;Ja&#39;&quot;, „Feld ist leer“
+- **Action**: Was passiert, wenn die Bedingung wahr ist (und optional, wenn sie falsch ist).
+   - Beispiele: Ein-/Ausblenden eines Felds, Festlegen/Löschen eines Werts, Validieren der Eingabe, Aktivieren/Deaktivieren einer Schaltfläche
 
-**Bedingung**: Ein logischer Test, der als „true“ oder „false“ ausgewertet wird.
++++ Regellogikmuster
 
-- „Ist das Einkommen des Benutzers größer als 50.000 US-Dollar?“
-- „Hat der Benutzer „Ja“ für den Versicherungsschutz ausgewählt?“
-- „Ist das Formularfeld leer?“
+- **Bedingung → Aktion (Wenn/Dann)**
 
-**Action**: Das Ergebnis, das auftritt, wenn die Bedingung erfüllt ist.
+  ```text
+  WHEN Gross Salary > 50000
+  THEN Show "Additional Deduction"
+  ```
 
-- Formularfelder ein- oder ausblenden
-- Werte automatisch berechnen
-- Validierungsmeldungen anzeigen
-- Aktivieren oder Deaktivieren von Komponenten
+  Am besten geeignet für bedingte Sichtbarkeit und progressive Offenlegung.
 
-### **Regellogikmuster**
+- **Aktion ← Bedingung (wenn/nur wenn festgelegt)**
 
-**1. condition-action (when-then)**
+  ```text
+  SET Taxable Income = Gross Salary - Deductions
+  IF Deductions are applicable
+  ```
 
-```
-WHEN gross salary > 50000
-THEN show "Additional Deduction" field
-```
+  Optimiert für Berechnungen und Datenumwandlungen.
 
-*Am besten geeignet für:* Sichtbarkeit bedingter Felder, dynamische Inhalte
+- **Wenn → dann → Sonst (alternative Aktion)**
 
-**2. action-condition (set-if)**
+  ```text
+  IF Income > 50000
+  THEN Show "High Income" fields
+  ELSE Show "Standard Income" fields
+  ```
 
-```
-SET taxable income = gross salary - deductions
-IF deductions are applicable
-```
+  Optimiert für Verzweigungslogik und sich gegenseitig ausschließende Flüsse.
 
-*Am besten geeignet für:* Berechnungen, Datenumwandlungen
++++
 
-**3. action-condition-alternative (if-then-else)**
-
-```
-IF income > 50000
-THEN show "High Income" fields
-ELSE show "Standard Income" fields
-```
-
-*Am besten geeignet für:* Verzweigungslogik, sich gegenseitig ausschließende Optionen
-
-### **Beispiel aus der Praxis**
-
-**Szenario**: Steuerberechnungsformular
++++ Beispiel aus der Praxis
 
 - **Bedingung**: „Bruttogehalt übersteigt 50.000 $&quot;
-- **Primäre Aktion**: Feld „Zusätzlicher Abzug“ anzeigen
-- **Alternative Aktion**: Feld „Zusätzlicher Abzug“ ausblenden
-- **Ergebnis**: Benutzer sehen nur relevante Felder basierend auf ihrem Einkommensniveau
+- **Primäre Aktion**: „Zusätzlichen Abzug“ anzeigen
+- **Alternative Aktion**: „Zusätzlicher Abzug“ ausblenden
+- **Ergebnis**: Benutzende sehen nur die Felder, die für sie gelten
+
++++
 
 ## Voraussetzungen
 
-Bevor Sie mit dem Regeleditor arbeiten, sollten Sie Folgendes sicherstellen:
 
-### **Zugriffsanforderungen**
++++ Zugriffsanforderungen
 
-- Authoring-Zugriff auf **AEM as a Cloud Service**
-- **Universeller Editor** mit aktivierter Erweiterung für den Regeleditor
-- Berechtigungen zum Bearbeiten von Formularen in Ihrer AEM-Umgebung
+**Grundlegende Berechtigungen und Einrichtung**:
 
-### **Technische Anforderungen**
+- **AEM as a Cloud Service**: Authoring-Zugriff mit Berechtigungen zur Formularbearbeitung
+- **Universeller Editor**: In Ihrer Umgebung installiert und konfiguriert
+- **Erweiterung des Regeleditors**: Aktiviert über [Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+- **Berechtigungen zur Formularbearbeitung**: Möglichkeit zum Erstellen und Ändern von Formularkomponenten im universellen Editor
 
-- **Grundlegende Kenntnisse im Formularentwurf**: Vertrautheit mit Formularkomponenten und deren Eigenschaften
-- **Vertrautheit mit Geschäftslogik**: Fähigkeit zur Definition bedingter Anforderungen
-- **Grundlegende JavaScript-Kenntnisse** (nur für benutzerdefinierte Funktionen erforderlich)
+**Überprüfungsschritte**:
 
-### **Erweiterung des Regeleditors aktivieren**
+1. Bestätigen Sie, dass Sie über Ihre AEM Sites-Konsole auf den universellen Editor zugreifen können
+2. Überprüfen Sie, ob Sie Formularkomponenten erstellen und bearbeiten können
+3. Vergewissern Sie sich, dass bei der Auswahl von Formularkomponenten das Symbol ![Regel-Editor](/help/forms/assets/edit-rules-icon.svg) angezeigt wird
 
-Die Erweiterung „Regeleditor“ ist im universellen Editor nicht standardmäßig aktiviert. Sie können sie über die [Extension Manager aktivieren](/help/implementing/developing/extending/extension-manager.md).
++++
 
-**Nach dem Aktivieren der Erweiterung:**
-Das ![edit-rules](/help/forms/assets/edit-rules-icon.svg) wird in der oberen rechten Ecke angezeigt, wenn Sie Formularkomponenten auswählen.
++++ Technische Anforderungen
+
+**Erforderliche Kenntnisse und Fähigkeiten**:
+
+- **Professionalität des universellen Editors**: Erfahrung beim Erstellen von Formularen mit Texteingaben, Dropdown-Menüs und grundlegenden Feldeigenschaften
+- **Verständnis von Business-**: Möglichkeit, bedingte Anforderungen und Validierungsregeln für Ihren spezifischen Anwendungsfall zu definieren
+- **Vertrautheit** Formularkomponenten: Kenntnisse in Feldtypen (Text, Zahl, Dropdown), Eigenschaften (erforderlich, sichtbar, schreibgeschützt) und Formularstruktur
+
+**Optional für erweiterte Verwendung**:
+
+- **JavaScript-Grundlagen**: Nur zum Erstellen benutzerdefinierter Funktionen (Datentypen, Funktionen, Grundsyntax) erforderlich
+- **JSON-Verständnis**: Hilfreich für komplexe Datenmanipulationen und API-Integrationen
+
+**Bewertungsfragen**:
+
+- Kann man im universellen Editor ein einfaches Formular mit Texteingaben und einer Senden-Schaltfläche erstellen?
+- Verstehen Sie, wann Felder in Ihrem Geschäftskontext erforderlich oder optional sein sollten?
+- Können Sie erkennen, welche Formularelemente in Ihrem Anwendungsfall eine bedingte Sichtbarkeit benötigen?
+
++++
+
++++ Aktivieren der Erweiterung des Regeleditors
+
+**Wichtig**: Die Erweiterung des Regeleditors ist in Umgebungen des universellen Editors nicht standardmäßig aktiviert.
+
+**Aktivierungsschritte**:
+
+1. Navigieren Sie zur [Extension Manager](/help/implementing/developing/extending/extension-manager.md) in Ihrer AEM-Umgebung
+2. Suchen Sie die Erweiterung „Regel-Editor“ in der Liste der verfügbaren Erweiterungen
+3. Klicken Sie auf **Aktivieren** und bestätigen Sie die Aktivierung
+4. Warten Sie, bis das System aktualisiert wurde (kann 1-2 Minuten dauern)
+
+**Verifizierung**:
+
+- Nach der Aktivierung wird das Symbol „Regeleditor“ angezeigt, wenn Sie eine Formularkomponente auswählen: ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
 
 ![Regeleditor für den universellen Editor](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
-*Abbildung: Das Symbol „Regeleditor“ wird angezeigt, wenn Sie Formularkomponenten auswählen*
+Abbildung: Das Symbol „Regeleditor“ wird angezeigt, wenn Sie Formularkomponenten auswählen
 
-**So greifen Sie auf den Regeleditor zu:**
+So öffnen Sie den Regeleditor:
 
-1. Wählen Sie im universellen Editor eine beliebige Formularkomponente aus.
-2. Klicken Sie auf das ![edit-rules](/help/forms/assets/edit-rules-icon.svg)-Symbol, das angezeigt wird.
-3. Die Benutzeroberfläche des Regeleditors wird in einem neuen Bedienfeld geöffnet.
+1. Wählen Sie im universellen Editor eine Formularkomponente aus.
+2. Klicken Sie auf das Symbol Regeleditor .
+3. Der Regeleditor wird in einem Seitenbereich geöffnet.
 
 ![Benutzeroberfläche des Regeleditors](/help/edge/docs/forms/assets/rule-editor-for-field.png)
-*Abbildung: Benutzeroberfläche des Regeleditors zum Bearbeiten von Komponentenregeln*
+Abbildung: Benutzeroberfläche des Regeleditors zum Bearbeiten von Komponentenregeln
 
 >[!NOTE]
 >
-> In diesem Artikel beziehen sich „Formularkomponente“ und „Formularobjekt“ auf die gleichen Elemente (Eingabefelder, Schaltflächen, Bedienfelder usw.).
+> In diesem Artikel verweisen „Formularkomponente“ und „Formularobjekt“ auf dieselben Elemente (z. B. Eingaben, Schaltflächen, Bedienfelder).
 
 ## Übersicht über die Benutzeroberfläche des Regeleditors
 
-Der Regeleditor bietet eine benutzerfreundliche visuelle Oberfläche zum Erstellen und Verwalten von Regeln:
-
 ![Benutzeroberfläche des Regeleditors](/help/edge/docs/forms/assets/rule-editor-interface.png)
-*Abbildung: Vollständige Benutzeroberfläche des Regeleditors mit nummerierten Komponenten*
+Abbildung: Vollständige Benutzeroberfläche des Regeleditors mit nummerierten Komponenten
 
-### **Schnittstellenkomponenten**
+- **Komponententitel und**: Bestätigt die ausgewählte Komponente und den aktiven Regeltyp.
+- **Bedienfeld „Formularobjekte und Funktionen**:
+   - Formularobjekte: Hierarchische Ansicht von Feldern und Containern für Verweise in Regeln
+   - Funktionen: integrierte Hilfsfunktionen für Mathematik, Zeichenfolge, Datum und Validierung
+- **Umschalten des Bedienfelds**: Blenden Sie das Bedienfeld mit den Objekten und Funktionen ein oder aus, um den Arbeitsbereich zu vergrößern
+- **Visual Rule Builder**: Drag &amp; Drop, Dropdown-gesteuerter Regel-Composer
+- **Controls**: Done (save), Cancel (Discard). Regeln immer vor dem Speichern testen.
 
-**1. Komponententitel und Regeltyp**
++++
 
-- **Zweck**: Zeigt den Namen der ausgewählten Komponente und den aktuellen Regeltyp an.
-- **Beispiel**: „Bruttogehalt eingeben“ (Texteingabe) mit ausgewählter „Wenn“-Regel.
-- **Tipp**: Bestätigen Sie immer, dass Sie die richtige Komponente bearbeiten.
++++ Verwalten vorhandener Regeln
 
-**2. Bedienfeld „Formularobjekte und Funktionen“**
+Wenn eine Komponente bereits über Regeln verfügt, können Sie:
 
-- **Registerkarte „Formularobjekte**: Bietet eine hierarchische Ansicht aller Formularkomponenten.
-   - Verwenden Sie für : Verweisen auf andere Felder in Ihren Regeln.
-   - Navigation: Erweitern oder reduzieren, um bestimmte Komponenten zu finden.
-- **Registerkarte &quot;**&quot;: Enthält integrierte mathematische und logische Funktionen.
-   - Verwendung für: Ausführen komplexer Berechnungen und Datenmanipulationen.
-   - Kategorien: Mathematische, String-, Datums- und Validierungsfunktionen.
-
-**3. Umschalter für Bedienfeld**
-
-- **Zweck**: Blendet das Bedienfeld Objekte und Funktionen ein oder aus.
-- **Tipp**: Schalten Sie das Bedienfeld aus, um den Arbeitsbereich für die Regelbearbeitung zu vergrößern.
-- **Tastaturbefehl** Nützlich bei der Arbeit mit komplexen Regeln.
-
-**4. Visual Rule Builder**
-
-- **Zweck**: Der Hauptbereich zum Erstellen der Regellogik.
-- **Funktionen**: Drag-and-Drop-Oberfläche und Dropdown-Selektoren.
-- **Workflow**: Regeltyp auswählen → Bedingungen definieren → Aktionen festlegen.
-
-**5. Steuertasten**
-
-- **Fertig**: Speichert die Regel und schließt den Editor.
-- **Abbrechen**: Verwirft Änderungen und schließt den Editor, ohne zu speichern.
-- **Tipp**: Testen Sie Ihre Regeln immer, bevor Sie auf „Fertig“ klicken.
-
-### **Regelverwaltung**
-
-Wenn Sie den Regeleditor für eine Komponente öffnen, die bereits Regeln enthält:
-
-![Anzeigen der verfügbaren Regeln eines Formularobjekts](/help/edge/docs/forms/assets/rule-editor15.png)
-*Abbildung: Verwalten vorhandener Regeln für eine Formularkomponente*
-
-**Verfügbare Aktionen:**
-
-- **Anzeigen**: Überprüfen von Regelzusammenfassungen und Logik.
-- **Bearbeiten**: Ändern vorhandener Regelbedingungen oder Aktionen.
-- **Neu anordnen**: Ändert die Ausführungsreihenfolge der Regeln (Regeln werden von oben nach unten ausgeführt).
-- **Aktivieren/Deaktivieren**: Regeln zu Testzwecken vorübergehend aktivieren oder deaktivieren.
-- **Löschen**: Regeln dauerhaft entfernen.
+- **Anzeigen**: Siehe Regelzusammenfassungen und Logik
+- **Bearbeiten**: Bedingungen und Aktionen ändern
+- **Neu anordnen**: Ändern der Ausführungsreihenfolge (von oben nach unten)
+- **Aktivieren/Deaktivieren**: Regeln für Tests umschalten
+- **Löschen**: Regeln sicher entfernen
 
 >[!TIP]
 >
-> **Die Reihenfolge der Regelausführung ist wichtig**: Regeln werden von oben nach unten ausgeführt. Geben Sie spezifischere Bedingungen vor allgemeinen.
+> Spezifische Regeln sind wichtiger als allgemeine. Die Ausführung erfolgt von oben nach unten.
+
++++
 
 ## Verfügbare Regeltypen
 
-Der Regeleditor bietet einen umfassenden Satz von Regeltypen, die nach Funktionen geordnet sind. Wählen Sie den entsprechenden Typ basierend auf Ihrem spezifischen Anwendungsfall aus:
+Wählen Sie den Regeltyp aus, der am besten zu Ihrer Absicht passt.
 
-### **Bedingte Logikregeln**
++++ Bedingungslogik
 
-**Wenn**
+- **Wenn**: Primäre Regel für komplexes bedingtes Verhalten (Bedingung → Aktion ± Sonst)
+- **Ausblenden/Anzeigen**: Steuert die Sichtbarkeit basierend auf einer Bedingung (progressive Offenlegung)
+- **Aktivieren/Deaktivieren**: Steuert, ob ein Feld interaktiv ist (deaktiviert beispielsweise „Senden“, bis die erforderlichen Felder gültig sind)
 
-- **Zweck**: Fungiert als primäre bedingte Regel für die Implementierung komplexer Logik.
-- **Anwendungsfall**: Zum Beispiel „Wenn der Benutzer „Verheiratet“ auswählt, Felder für die Informationen zum Ehepartner anzeigen“.
-- **Logikmuster**: Bedingung → Aktion (mit einer optionalen alternativen Aktion)
++++
 
-**Ausblenden/Anzeigen**
++++ Datenmanipulation
 
-- **Zweck**: Steuert die Sichtbarkeit von Feldern basierend auf angegebenen Bedingungen.
-- **Anwendungsfall:** Abschnitte ausblenden oder progressive Offenlegung aktivieren.
-- **Best Practice**: Verwenden Sie , um ein sauberes, fokussiertes Benutzererlebnis zu erstellen.
+- **Wert festlegen von**: Werte automatisch ausfüllen (z. B. Daten, Gesamtwerte, Kopien)
+- **Wert löschen von**: Daten bei Änderung der Bedingungen entfernen
+- **Format**: Umwandeln der Anzeigeformatierung (Währung, Telefon, Datum) ohne Änderung der gespeicherten Werte
 
-**Aktivieren/Deaktivieren**
++++
 
-- **Zweck**: Steuert, ob ein Feld basierend auf Bedingungen interagiert werden kann.
-- **Anwendungsfall**: Deaktivieren Sie die Schaltfläche Senden , bis alle erforderlichen Felder ausgefüllt sind.
-- **Best Practice**: Bieten Sie Benutzern klares visuelles Feedback.
++++ Validierung
 
-### **Regeln zur Datenbearbeitung**
+- **Validate**: Benutzerdefinierte Validierungslogik, einschließlich feldübergreifender Prüfungen und Geschäftsregeln
 
-**Wert festlegen**
++++
 
-- **Zweck**: füllt automatisch Feldwerte aus.
-- **Anwendungsfall**: Legen Sie das heutige Datum fest, berechnen Sie Gesamtwerte oder kopieren Sie Werte zwischen Feldern.
-- **Best Practice**: Verwenden Sie , um den Benutzeraufwand zu reduzieren und die Genauigkeit sicherzustellen.
++++ Kalkulation
 
-**Wert löschen von**
+- **Mathematischer Ausdruck**: Werte in Echtzeit berechnen (Summen, Steuern, Verhältnisse)
 
-- **Zweck**: Entfernt Daten aus Feldern, wenn sich die Bedingungen ändern.
-- **Anwendungsfall**: Löschen abhängiger Felder, wenn sich die Auswahl eines übergeordneten Elements ändert.
-- **Best Practice**: Wahrung der Datenintegrität und Verhinderung verwaister Werte.
++++
 
-**Format**
++++ Benutzeroberfläche
 
-- **Zweck**: Transformiert die Anzeige von Werten.
-- **Anwendungsfall**: Formatieren Sie Währung, Telefonnummern oder Daten.
-- **Best Practice**: Verbessern der Lesbarkeit ohne Änderung der zugrunde liegenden Daten.
+- **Fokus festlegen**: Fokus auf ein bestimmtes Feld verschieben (sparsam verwenden)
+- **Eigenschaft festlegen**: Dynamisches Ändern von Komponenteneigenschaften (Platzhalter, Optionen usw.)
 
-### **Validierungsregeln**
++++
 
-**Validieren**
++++ Formularsteuerelement
 
-- **Zweck**: Implementiert eine benutzerdefinierte Validierungslogik.
-- **Anwendungsfall**: Durchsetzen komplexer Geschäftsregeln oder feldübergreifender Validierung.
-- **Best Practice**: Bereitstellung klarer und umsetzbarer Fehlermeldungen.
+- **Formular senden**: Das Formular programmgesteuert übermitteln (nur nach erfolgreicher Überprüfung)
+- **Formular zurücksetzen**: Löschen und auf Anfangsstatus zurücksetzen (vor der Verwendung bestätigen)
+- **Formular speichern**: Als Entwurf für später speichern (lange Formulare, mehrere Sitzungen)
 
-### **Berechnungsregeln**
++++
 
-**Mathematischer Ausdruck**
++++ Erweitert
 
-- **Zweck**: Führt automatisierte Berechnungen durch.
-- **Anwendungsfall**: Steuerberechnungen, Summen oder Prozentsätze.
-- **Best Practice**: Berechnungen in Echtzeit bei Benutzereingabe aktualisieren.
+- **Service aufrufen**: Externe APIs/Services aufrufen (Laden und Fehler behandeln)
+- **Instanz hinzufügen/entfernen**: Wiederholbare Abschnitte verwalten (z. B. Angehörige, Adressen)
+- **Navigieren zu**: Weiterleiten zu anderen Formularen/Seiten (Daten vor der Navigation beibehalten)
+- **Zwischen Bedienfeldern navigieren**: Schrittnavigation und Überspringen im Assistenten „Steuerelement“
+- **Ereignis auslösen**: Benutzerdefinierte Trigger-Ereignisse für Integrationen oder Analysen
 
-### **Regeln der Benutzeroberfläche**
-
-**Fokus festlegen**
-
-- **Zweck**: lenkt die Aufmerksamkeit der Benutzenden auf bestimmte Felder.
-- **Anwendungsfall:** Sie sich auf Fehlerfelder aus oder führen Sie die Benutzer durch die Schritte des Assistenten.
-- **Best Practice**: Verwenden Sie sparsam, um eine Unterbrechung des Benutzerflusses zu vermeiden.
-
-**Eigenschaft festlegen**
-
-- **Zweck**: Dynamisches Ändern von Komponenteneigenschaften.
-- **Anwendungsfall**: Ändern des Platzhaltertextes oder Ändern von Optionen in einem Dropdown-Menü.
-- **Best Practice**: Verbessern des Benutzererlebnisses durch kontextuelle Änderungen.
-
-### **Formularsteuerungsregeln**
-
-**Formular senden**
-
-- **Zweck**: Trigger übermitteln Formulare programmgesteuert.
-- **Anwendungsfall**: Automatische Übermittlung nach Erfüllung bestimmter Bedingungen.
-- **Best Practice**: Überprüfen Sie das Formular immer vor der Übermittlung.
-
-**Formular zurücksetzen**
-
-- **Zweck**: Löscht alle Formulardaten und setzt das Formular in den Ausgangszustand zurück.
-- **Anwendungsfall**: Funktion „Neu starten“.
-- **Best Practice**: Bestätigen Sie die Aktion mit dem Benutzer, bevor Sie sie zurücksetzen.
-
-**Formular speichern**
-
-- **Zweck**: Speichert das Formular als Entwurf für das spätere Ausfüllen.
-- **Anwendungsfall**: Nützlich für lange Formulare oder Workflows mit mehreren Sitzungen.
-- **Best Practice**: Geben Sie ein klares Feedback zum Speicherstatus.
-
-### **Erweiterte Regeln**
-
-**Dienst aufrufen**
-
-- **Zweck**: Ruft externe APIs oder Services auf.
-- **Anwendungsfall**: Adresssuche, Echtzeitvalidierung oder Datenanreicherung.
-- **Best Practice**: Ladezustände und Fehlerszenarien angemessen handhaben.
-
-**Instanz hinzufügen/**
-
-- **Zweck**: Verwaltet dynamisch wiederholbare Abschnitte.
-- **Anwendungsfall**: Hinzufügen von Familienmitgliedern oder mehreren Adressen.
-- **Best Practice**: Bereitstellung klarer Steuerelemente zum Hinzufügen oder Entfernen von Instanzen.
-
-**Navigieren Sie zu**
-
-- **Zweck**: Leitet Benutzer zu anderen Formularen oder Seiten weiter.
-- **Anwendungsfall**: Workflows mit mehreren Formularen oder bedingtes Routing.
-- **Best Practice**: Formulardaten vor der Navigation beibehalten.
-
-**Navigieren zwischen Bereichen**
-
-- **Zweck**: Steuert die Navigation in Formularen im Assistentenstil.
-- **Anwendungsfall**: Mehrstufige Formulare oder bedingter Schritt-Überspringen.
-- **Best Practice**: Anzeige klarer Fortschrittsanzeigen.
-
-**Dispatch-Ereignis**
-
-- **Zweck**: Benutzerdefinierte Trigger-Ereignisse für erweiterte Integrationen.
-- **Anwendungsfall**: Analytics-Tracking oder Integrationen von Drittanbietern.
-- **Best Practice**: Wird nur für nicht blockierende Aktionen verwendet.
-
++++
 
 ## Schritt-für-Schritt-Tutorial: Erstellen eines intelligenten Steuerrechners
 
-Dieser Abschnitt enthält ein praktisches Beispiel zur Veranschaulichung der Funktionen des Regeleditors. Das Beispiel führt Sie durch den Aufbau eines Steuerberechnungsformulars, das eine bedingte Logik und automatisierte Berechnungen verwendet.
++++ Tutorial-Übersicht
+
+Dieses Beispiel zeigt bedingte Sichtbarkeit und automatische Berechnungen.
 
 ![Screenshot der Benutzeroberfläche des Regeleditors, der die Erstellung einer bedingten Regel mit Wenn-Dann-Logik für die Sichtbarkeit des Formularfelds zeigt](/help/edge/docs/forms/assets/rule-editor-1.png)
-*Abbildung: Steuerberechnungsformular mit intelligenten bedingten Feldern*
+Abbildung: Steuerberechnungsformular mit intelligenten bedingten Feldern
 
-### **Tutorial-Übersicht**
+Sie erstellen ein Formular, das:
 
-In diesem Tutorial erstellen Sie ein Formular, das:
-
-1. **Adaption to user input**: Zeigt relevante Felder basierend auf dem Einkommensniveau an.
-2. **Berechnet automatisch**: Berechnet die Steuerschuld in Echtzeit.
-3. **Validiert Daten**: Stellt genaue Berechnungen und Dateneingabe sicher.
-
-### **Formularstruktur**
-
-| Feldname | Typ | Zweck | Verhalten |
-|------------|------|---------|----------|
-| **Bruttogehalt** | Zahleneingabe | Benutzer gibt Jahreseinkommen ein | Bedingte Logik für Trigger |
-| **zusätzlicher Abzug** | Zahleneingabe | Zusätzliche Abzüge (falls zutreffend) | Wird angezeigt, wenn Gehalt > 50.000 $ |
-| **Steuerpflichtiges Einkommen** | Zahleneingabe | Automatisch berechnet | Aktualisierungen bei Eingabeänderungen |
-| **Steuerpflichtig** | Zahleneingabe | Endgültiger Steuerbetrag | Berechnet mit 10 % Rate |
-
-### **Business-Logik zu implementieren**
-
-**Regel 1: Anzeige bedingter Felder**
-
-```
-WHEN Gross Salary > 50,000
-THEN Show "Additional Deduction" field
-ELSE Hide "Additional Deduction" field
-```
-
-**Regel 2: Berechnung des steuerpflichtigen Einkommens**
-
-```
-SET Taxable Income = Gross Salary - Additional Deduction
-(When Additional Deduction is applicable)
-```
-
-**Regel 3: Steuerberechnung**
-
-```
-SET Tax Payable = Taxable Income × 10%
-(Simplified flat rate for demonstration)
-```
-
-### **Implementierungsschritte**
-
-Führen Sie die folgenden Schritte aus, um Ihr intelligentes Steuerformular zu erstellen:
-
-
-
-+++ 1: Erstellen des Foundation-Formulars
-
-**Ziel**: Erstellen der grundlegenden Formularstruktur mit allen erforderlichen Komponenten
-
-So erstellen Sie ein Steuerberechnungsformular im universellen Editor:
-
-1. **Öffnen des universellen Editors**
-   - Navigieren Sie zu Ihrer AEM Sites-Konsole
-   - Wählen Sie die Seite aus, auf der Sie das Formular hinzufügen möchten
-   - Klicken Sie **Bearbeiten**, um den universellen Editor zu öffnen
-
-2. **Hinzufügen von Formularkomponenten**
-
-   Fügen Sie diese Komponenten in der richtigen Reihenfolge hinzu:
-
-   | Komponente | Typ | Label | Einstellungen |
-   |-----------|------|-------|----------|
-   | Titel | Titel | „Steuerberechnungsformular“ | Überschriftenebene H2 |
-   | Zahleneingabe | Zahleneingabe | „Bruttogehalt“ | Erforderlich: Ja, Platzhalter: „Jahresgehalt eingeben“ |
-   | Zahleneingabe | Zahleneingabe | „Zusätzlicher Abzug“ | Erforderlich: Nein, Platzhalter: „Zusätzliche Abzüge eingeben“ |
-   | Zahleneingabe | Zahleneingabe | „Steuerpflichtiges Einkommen“ | Erforderlich: Nein, Schreibgeschützt: Ja |
-   | Zahleneingabe | Zahleneingabe | „Steuerschuld“ | Erforderlich: Nein, Schreibgeschützt: Ja |
-   | Schaltfläche „Senden“ | Absenden | „Steuer berechnen“ | Typ: Senden |
-
-3. **Ersteinstellungen konfigurieren**
-
-   - **Feld für zusätzlichen Abzug ausblenden**:
-      - Wählen Sie die Komponente „Zusätzlicher Abzug“
-      - Legen Sie im Bedienfeld Eigenschaften **Sichtbar** auf **Nein** fest
-      - Dieses Feld wird abhängig von den Regeln angezeigt
-
-   - **Berechnete Felder als schreibgeschützt festlegen**:
-      - Felder „Steuerpflichtiges Einkommen“ und „Steuerpflichtig“ auswählen
-      - Legen Sie **Schreibgeschützt** in den Eigenschaften **Ja** fest
-
-     ![Screenshot eines Steuerberechnungsformulars mit Eingabefeldern für Bruttogehalt, Familienstand und unterhaltsberechtigte Kinder, auf denen die Formularstruktur vor der Anwendung von Regeln veranschaulicht wird](/help/edge/docs/forms/assets/rule-editor2.png)
-     *Abbildung: Ursprüngliche Formularstruktur mit konfigurierten grundlegenden Komponenten*
-
-**Checkpoint**: Sie sollten jetzt ein Formular mit allen Pflichtfeldern haben, in dem „Zusätzlicher Abzug“ ausgeblendet ist und berechnete Felder schreibgeschützt sind.
+1. Passt sich an Benutzereingaben an, indem relevante Felder angezeigt werden
+2. Berechnet Werte in Echtzeit
+3. Validiert Daten, um die Genauigkeit zu verbessern
 
 +++
 
-+++ &#x200B;2. Eine bedingte Regel für ein Formularfeld hinzufügen
++++ Formularstruktur
 
-Nachdem Sie das Formular erstellt haben, schreiben Sie die erste Regel, damit das Feld `Additional Deduction` nur angezeigt wird, wenn das Bruttogehalt 50.000 US-Dollar überschreitet. So fügen Sie eine bedingte Regel hinzu:
+| Feldname | Typ | Zweck | Verhalten |
+|-------------------------|---------------|--------------------------------|-----------------------------------------|
+| Bruttogehalt | Zahleneingabe | Jahreseinkommen des Nutzers | Bedingte Logik für Trigger |
+| Nachabzug | Zahleneingabe | Zusätzliche Abzüge (falls förderfähig) | Nur sichtbar, wenn Gehalt > 50.000 $ |
+| steuerpflichtiges Einkommen | Zahleneingabe | Berechneter Wert | Schreibgeschützt, Aktualisierungen bei Änderung |
+| Steuerschuld | Zahleneingabe | Berechneter Wert | Schreibgeschützt, pauschal berechnet |
 
-1. Öffnen Sie ein Formular im universellen Editor zur Bearbeitung und wählen Sie in der Inhaltsstruktur das Feld **[!UICONTROL Bruttogehalt]** und dann ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) aus. Alternativ können Sie das Feld **[!UICONTROL Bruttogehalt]** direkt im Bereich **[!UICONTROL Formularobjekt]** auswählen.
-   ![Beispiel1 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor3.png)
-Die Benutzeroberfläche des visuellen Regeleditors wird angezeigt.
-1. Klicken Sie auf **[!UICONTROL Erstellen]**, um Regeln zu erstellen.
-   ![Beispiel2 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor4.png)
-Standardmäßig ist der Regeltyp `Set Value Of` ausgewählt. Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp auszuwählen.\
-   ![Beispiel3 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor5.png)
-1. Öffnen Sie die Dropdown-Liste „Regeltyp“ und wählen Sie den Regeltyp **[!UICONTROL Wenn]** aus.
-   ![Beispiel4 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor6.png)
-1. Wählen Sie die Dropdown-Liste **[!UICONTROL Status auswählen]** und wählen Sie dann **[!UICONTROL Ist größer als]**. Das Feld **[!UICONTROL Zahl eingeben]** wird angezeigt.
-   ![Beispiel5 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor7.png)
-1. Geben Sie im Feld **[!UICONTROL Zahl eingeben]** in der Regel `50000` ein.
-   ![Beispiel6 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor8.png)
-Sie haben die Bedingung als `When Gross Salary is greater than 50000` definiert. Definieren Sie anschließend die Aktion, die ausgeführt werden soll, wenn diese Bedingung `True` ist.
-1. Wählen Sie in der Anweisung `Then` aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** die Option **[!UICONTROL Anzeigen]** aus.
-   ![Beispiel7 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor9.png)
-1. Ziehen Sie das Feld **[!UICONTROL Zusätzlicher Abzug]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Zusätzlicher Abzug]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
-   ![Beispiel8 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor10.png)
-1. Klicken Sie auf **[!UICONTROL Abschnitt „Andernfalls“ hinzufügen]**, um eine weitere Bedingung für das Feld **[!UICONTROL Bruttogehalt]** hinzuzufügen, falls ein Gehalt von weniger als `50000` eingegeben wird.
-   ![Beispiel9 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor11.png)
-1. Wählen Sie in der Anweisung `Else` aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** die Option **[!UICONTROL Ausblenden]** aus.
-   ![Beispiel10 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor12.png)
-1. Ziehen Sie das Feld **[!UICONTROL Zusätzlicher Abzug]** aus der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**. Stattdessen können Sie auch das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** auswählen und das Feld **[!UICONTROL Zusätzlicher Abzug]** aus dem Popup-Menü wählen, in dem sämtliche Formularobjekte im Formular aufgeführt sind.
-   ![Beispiel11 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor13.png)
-1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
-Die Regel wird im Regeleditor wie folgt angezeigt.
-   ![Beispiel12 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor14.png)
++++
+
++++ Business-Logik
+
+- **Regel 1: Bedingte Anzeige**
+
+  ```text
+  WHEN Gross Salary > 50,000
+  THEN Show "Additional Deduction"
+  ELSE Hide "Additional Deduction"
+  ```
+
+- **Regel 2: Berechnung des steuerpflichtigen Einkommens**
+
+  ```text
+  SET Taxable Income = Gross Salary - Additional Deduction
+  (Only when Additional Deduction applies)
+  ```
+
+- **Regel 3: Berechnung der Steuerschuld**
+
+  ```text
+  SET Tax Payable = Taxable Income × 10%
+  (Simplified flat rate)
+  ```
+
++++
+
++++ Schritt 1: Erstellen des Foundation-Formulars
+
+**Ziel**: Erstellen des Basisformulars mit allen Feldern und Anfangseinstellungen.
+
+1. **Universellen Editor öffnen**:
+   - Navigieren Sie zur AEM Sites-Konsole, wählen Sie Ihre Seite aus und klicken Sie auf **Bearbeiten**
+   - Stellen Sie sicher, dass [universeller Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) ordnungsgemäß konfiguriert ist
+
+2. **Fügen Sie Formularkomponenten in dieser Reihenfolge hinzu**:
+   - Titel (H2): „Steuerberechnungsformular“
+   - Zahleneingabe: „Bruttogehalt“ (erforderlich: ja, Platzhalter: „Jahresgehalt eingeben„)
+   - Zahleneingabe: „Zusätzlicher Abzug“ (erforderlich: Nein, Platzhalter: „Zusätzliche Abzüge eingeben„)
+   - Zahleneingabe: „Steuerpflichtiges Einkommen“ (schreibgeschützt: ja)
+   - Zahleneingabe: „Steuerschuld“ (schreibgeschützt: ja)
+   - Senden-Schaltfläche: „Steuer berechnen“
+
+3. **Konfigurieren Sie die anfänglichen Feldeigenschaften**:
+   - „Zusätzlicher Abzug“ ausblenden (Einstellung „Sichtbar: Keine“ im Bedienfeld „Eigenschaften„)
+   - Legen Sie „Steuerpflichtiges Einkommen“ und „Steuerpflichtig“ auf Schreibgeschützt fest: Ja
+
+![Screenshot eines Steuerberechnungsformulars mit Eingabefeldern für Bruttogehalt, Familienstand und unterhaltsberechtigte Kinder, auf denen die Formularstruktur vor der Anwendung von Regeln veranschaulicht wird](/help/edge/docs/forms/assets/rule-editor2.png)
+Abbildung: Anfängliche Formularstruktur mit konfigurierten grundlegenden Komponenten
+
+**Checkpoint**: Sie sollten ein Formular mit allen Pflichtfeldern haben, in denen „Zusätzlicher Abzug“ ausgeblendet ist und berechnete Felder schreibgeschützt sind.
+
++++
+
++++ Schritt 2: Bedingte Sichtbarkeitsregel hinzufügen
+
+**Ziel**: Das Feld „Zusätzlicher Abzug“ wird nur angezeigt, wenn das Bruttogehalt 50.000 USD überschreitet.
+
+1. **Wählen Sie das Feld Bruttogehalt** und klicken Sie auf das Symbol Regel-Editor ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
+2. **Neue Regel erstellen**:
+   - Klicken Sie auf **Erstellen**.
+   - Regeltyp von „Wert festlegen von“ in &quot;**&quot; ändern**
+3. **Konfigurieren Sie die Bedingung**:
+   - Wählen Sie **Dropdown-Liste aus** dass größer als ist
+   - Geben Sie `50000` in das Zahlenfeld ein
+4. **Festlegen der Dann-Aktion**:
+   - Wählen Sie **Dropdown „Aktion**&quot; aus
+   - Ziehen oder wählen Sie **Feld „Zusätzliche**&quot; aus Formularobjekten
+5. **Fügen Sie die Aktion Sonst hinzu**:
+   - Klicken Sie auf **Abschnitt „Sonst hinzufügen“**
+   - Wählen Sie **Dropdown „Aktion auswählen** aus
+   - Wählen Sie **Feld „Zusätzlicher Abzug**
+6. **Regel speichern**: Klicken Sie auf **Fertig**
 
 >[!NOTE]
 >
-> Alternativ können Sie dieses Verhalten auch implementieren, indem Sie eine Anzeige-Regel für das Feld „Zusätzlicher Abzug“ anstelle einer Wenn-Regel für das Feld „Bruttogehalt“ erstellen.
+> Alternativer Ansatz: Sie können dasselbe Ergebnis erzielen, indem Sie eine Regel zum Ein-/Ausblenden direkt im Feld „Zusätzlicher Abzug“ anstelle einer Wenn-Regel für „Bruttogehalt“ erstellen.
 
 +++
 
-+++ &#x200B;3. Hinzufügen von Berechnungsregeln für die Formularfelder
++++ Schritt 3: Berechnungsregeln hinzufügen
 
-Als Nächstes schreiben Sie eine Regel, um das `Taxable Income` zu berechnen. Dies ist die Differenz zwischen `Gross Salary` und `Additional Deduction` (falls vorhanden). Um eine Berechnungsregel für das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** hinzuzufügen, führen Sie die folgenden Schritte aus:
+**Ziel**: Berechnet automatisch „Steuerpflichtiges Einkommen“ und „Steuerpflichtig“ basierend auf der Benutzereingabe.
 
-1. Wählen Sie im Autorenmodus das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** und dann das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) aus. Alternativ können Sie das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** direkt im Bereich **[!UICONTROL Formularobjekt]** auswählen.
-1. Wählen Sie dann **[!UICONTROL Erstellen]** aus, um die Regel zu erstellen.
-   ![Beispiel13 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor16.png)
-1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
-   ![Beispiel14 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor17.png)
+**Konfigurieren der Berechnung des steuerpflichtigen Einkommens**:
 
-1. Gehen Sie im Feld „Mathematischer Ausdruck“ wie folgt vor:
+1. **Wählen Sie das Feld „Steuerpflichtiges Einkommen** und öffnen Sie den Regeleditor
+2. **Mathematischer Ausdruck erstellen**:
+   - Klicken Sie **Erstellen** → wählen Sie **„Mathematischer Ausdruck“**
+   - Ausdruck erstellen: **Bruttogehalt − zusätzlicher Abzug**
+   - „Bruttogehalt“ in das erste Feld ziehen
+   - **Operator „Minus** auswählen
+   - „Zusätzlicher Abzug“ in das zweite Feld ziehen
+3. **Speichern**: Klicken Sie auf **Fertig**
 
-   - Wählen Sie das Feld **[!UICONTROL Bruttogehalt]** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das erste Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**.
+**Konfigurieren Sie die Berechnung der Steuerschuld**:
 
-   - Wählen Sie **[!UICONTROL Minus]** aus dem Feld **[!UICONTROL Operator wählen]**.
-
-   - Wählen Sie das Feld **[!UICONTROL Zusätzlicher Abzug]** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das andere Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**.
-     ![Beispiel15 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor18.png)
-
-1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
-
-   Fügen Sie nun eine Regel für das Feld `Tax Payable ` hinzu, das durch die Multiplikation des steuerpflichtigen Einkommens mit dem Steuersatz bestimmt wird. Zur Einfachheit nehmen wir einen festen Steuersatz von `10%` an.
-
-1. Wählen Sie im Autorenmodus das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** und dann das Symbol ![Regeln bearbeiten](/help/forms/assets/edit-rules-icon.svg) aus. Wählen Sie anschließend **[!UICONTROL Erstellen]** aus, um Regeln zu erstellen.
-   ![Beispiel16 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor19.png)
-1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
-   ![Beispiel17 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor20.png)
-1. Gehen Sie im Feld „Mathematischer Ausdruck“ wie folgt vor:
-
-   - Wählen Sie das Feld **[!UICONTROL Steuerpflichtiges Einkommen]** auf der Registerkarte „Formularobjekt“ aus oder ziehen Sie es in das erste Feld **[!UICONTROL Objekt hier einfügen oder auswählen]**.
-
-   - Wählen Sie **[!UICONTROL Multipliziert mit]** aus dem Feld **[!UICONTROL Operator wählen]**.
-
-   - Wählen Sie **Zahl** aus dem Feld **[!UICONTROL Option auswählen]** und geben Sie den Wert als `10` in das Feld **[!UICONTROL Zahl eingeben]** ein.
-     ![Beispiel18 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor21.png)
-1. Klicken Sie als Nächstes in den hervorgehobenen Bereich um das Ausdrucksfeld und wählen Sie dann **[!UICONTROL Ausdruck erweitern]** aus.
-   ![Beispiel19 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor22.png)
-1. Wählen Sie im Feld für den erweiterten Ausdruck im Feld **[!UICONTROL Operator auswählen]** die Option **[!UICONTROL geteilt durch]** und im Feld **[!UICONTROL Option auswählen]** die Option **[!UICONTROL Zahl]** aus. Geben Sie `100` in das Zahlenfeld ein.
-   ![Beispiel20 für den Regeleditor](/help/edge/docs/forms/assets/rule-editor23.png)
-1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
+1. **Feld „Steuerpflichtig“ auswählen** und Regel-Editor öffnen
+2. **Mathematischer Ausdruck erstellen**:
+   - Klicken Sie **Erstellen** → wählen Sie **„Mathematischer Ausdruck“**
+   - Ausdruck erstellen: **Steuerpflichtiges Einkommen × 10 ÷ 100**
+   - „Steuerpflichtiges Einkommen“ in das erste Feld ziehen
+   - Wählen Sie **Operator „Multipliziert mit**
+   - `10` als Zahl eingeben
+   - Klicken Sie auf **Ausdruck erweitern“**
+   - Wählen Sie **Operator „dividiert durch**
+   - `100` als Zahl eingeben
+3. **Speichern**: Klicken Sie auf **Fertig**
 
 +++
 
-+++ &#x200B;4. Anzeigen der Vorschau eines Formulars
++++ Schritt 4: Testen des Formulars
 
-Wenn Sie jetzt das Formular in der Vorschau anzeigen und das **Bruttogehalt** als `60,000` eingeben, wird das Feld **Zusätzlicher Abzug** angezeigt und **Steuerpflichtiges Einkommen** und **Zu zahlende Steuer** werden entsprechend berechnet.
+**Überprüfen Sie Ihre Implementierung, indem Sie den vollständigen Fluss testen**:
 
-![Auswählen eines Formulars](/help/edge/docs/forms/assets/rule-editor-form.png)
+1. **Vorschau des Formulars**: Klicken Sie im universellen Editor auf den Vorschaumodus.
+2. **Testen der bedingten Logik**:
+   - Bruttogehalt eingeben = `30000` → „Zusätzlicher Abzug“ sollte ausgeblendet bleiben
+   - Bruttogehalt eingeben = `60000` → „Zusätzlicher Abzug“ angezeigt
+3. **Testberechnungen**:
+   - Bei Bruttogehalt = `60000`, zusätzlichen Abzug = `5000` eingeben
+   - Überprüfen des steuerpflichtigen Einkommens = `55000` (60000 - 5000)
+   - Steuerschuld prüfen = `5500` (55000 × 10%)
+
+![Vorschau eines Formulars](/help/edge/docs/forms/assets/rule-editor-form.png)
+Abbildung: Vervollständigter Steuerrechner mit bedingten Feldern und automatischen Berechnungen
+
+**Erfolgskriterien**: Das Formular sollte Felder dynamisch ein-/ausblenden und Werte in Echtzeit berechnen, wenn Benutzertypen dies eingeben.
+
 
 +++
-
-Zusätzlich zu den integrierten Funktionen wie Summe und Durchschnitt können Sie benutzerdefinierte Funktionen erstellen, um komplexe Geschäftslogiken zu implementieren, die auf Ihre spezifischen Anforderungen zugeschnitten sind.
 
 ## Erweitert: Benutzerdefinierte Funktionen
 
-**Verwendung benutzerdefinierter Funktionen:**
+Für komplexe Geschäftslogik, die über die integrierten Funktionen hinausgeht, können Sie benutzerdefinierte JavaScript-Funktionen erstellen, die sich nahtlos in den Regel-Editor integrieren lassen.
 
-- Für komplexe Berechnungen, die über die Möglichkeiten integrierter Funktionen hinausgehen
-- So implementieren Sie geschäftsspezifische Validierungsregeln
-- Für Datenumwandlungen und Formatierungen
-- Integration mit externen Systemen oder APIs
++++ Verwendung benutzerdefinierter Funktionen
 
-**Vorteile:**
+**Ideale Szenarien für benutzerdefinierte**:
 
-- **Wiederverwendbarkeit**: Einmaliges Schreiben der Funktion und ihre Verwendung in mehreren Formularen und Regeln
-- **Wartbarkeit**: Zentralisierte Logik, die einfach zu aktualisieren ist
-- **Performance**: Optimierte Ausführung von JavaScript
-- **Flexibilität**: Fähigkeit zur Verarbeitung komplexer Szenarien, die nicht von Standardregeln abgedeckt werden
+- **Komplexe Berechnungen**: Mehrstufige Berechnungen, die in der Regel für mathematische Ausdrücke nicht einfach ausgedrückt werden können
+- **Geschäftsspezifische Validierungen**: Benutzerdefinierte Validierungslogik, die spezifisch für Ihre Organisation oder Branche ist
+- **Datenumwandlungen**: Formatkonvertierungen, Zeichenfolgenmanipulationen oder Datenanalyse
+- **Externe Integrationen**: Aufrufe an interne APIs oder Services von Drittanbietern (mit Einschränkungen)
 
-### **Erstellen benutzerdefinierter Funktionen**
+**Vorteile benutzerdefinierter Funktionen**:
 
-**Dateispeicherort**: `/blocks/form/functions.js` in Ihrem AEM-Projekt
+- **Wiederverwendbarkeit**: Einmal schreiben, über mehrere Formulare und Regeln hinweg verwenden
+- **Wartbarkeit**: Zentralisierte Logik, die einfacher zu aktualisieren und zu debuggen ist
+- **Performance**: Optimierte JavaScript-Ausführung im Vergleich zu komplexen Regelketten
+- **Flexibilität**: Handhabung von Randfällen und komplexen Szenarien, die nicht von Standardregeln abgedeckt werden
 
-**Entwicklungs-Workflow:**
++++
 
-1. **Funktionsdeklaration**
-   - Klare und beschreibende Funktionsnamen und Parameter definieren
-   - Namen verwenden, die den Zweck der Funktion angeben
-   - Dokumentparameter und Rückgabetypen
++++ Erstellen und Implementieren benutzerdefinierter Funktionen
 
-2. **logische Implementierung**
-   - Schreiben von JavaScript-Code
-   - Handhabung von Edge-Fällen und Fehlerszenarien
-   - Befolgen der Best Practices für die Kodierung
+**Dateispeicherort**: Alle benutzerdefinierten Funktionen müssen in `/blocks/form/functions.js` in Ihrem Edge Delivery Services-Projekt definiert werden.
 
-3. **Funktionsexport**
-   - Exportfunktionen, um sie im Regeleditor verfügbar zu machen
-   - Verwenden benannter Exporte für eine bessere Organisation
-   - Testfunktionen vor der Bereitstellung
+**Entwicklungs-**:
 
-4. **Dokumentation**
-   - Hinzufügen von JSDoc-Kommentaren zur Funktionsdokumentation
-   - Anwendungsbeispiele einschließen
-   - Angeben von Parametertypen und Rückgabewerten
+1. **Funktionsentwurf**
+   - Verwenden Sie beschreibende, aktionsorientierte Funktionsnamen
+   - Definieren Sie klare Parametertypen und Rückgabewerte
+   - Grenzfälle und ungültige Eingaben elegant verarbeiten
 
-Das folgende Beispiel zeigt zwei benutzerdefinierte Funktionen: `getFullName` und `days`.
+2. **Implementierung**
+   - Schreiben Sie saubere, gut kommentierte JavaScript
+   - Eingabevalidierung und Fehlerbehandlung einschließen
+   - Funktionen vor der Integration unabhängig testen
 
-```JavaScript
+3. **Dokumentation**
+   - Hinzufügen umfassender JSDoc-Kommentare
+   - Nutzungsbeispiele und Parameterbeschreibungen einschließen
+   - Dokumentieren von Einschränkungen oder Abhängigkeiten
+
+4. **Bereitstellung**
+   - Funktionen mit benannten Exporten exportieren
+   - Bereitstellen in Ihrem Projekt-Repository
+   - Überprüfen des Build-Abschlusses vor dem Testen
+
+**Beispielimplementierung**:
+
+```javascript
 /**
- - Get Full Name
- - @name getFullName Concats first name and last name
- - @param {string} firstname in Stringformat
- - @param {string} lastname in Stringformat
- - @return {string}
+ * Concatenates first and last name with proper formatting
+ * @name getFullName
+ * @description Combines first and last name, handles edge cases like missing values
+ * @param {string} firstName - The person's first name
+ * @param {string} lastName - The person's last name  
+ * @returns {string} Formatted full name or empty string if both inputs are invalid
  */
-function getFullName(firstname, lastname) {
-  return `${firstname} ${lastname}`.trim();
+function getFullName(firstName, lastName) {
+  // Handle null, undefined, or empty string inputs
+  const first = (firstName || '').toString().trim();
+  const last = (lastName || '').toString().trim();
+  
+  return `${first} ${last}`.trim();
 }
 
 /**
- - Calculate the number of days between two dates.
- - @param {*} endDate
- - @param {*} startDate
- - @name days Calculates the numebr of days between two dates
- - @returns {number} returns the number of days between two dates
+ * Calculates the number of days between two dates
+ * @name days
+ * @description Computes absolute difference in days, handles various date input formats
+ * @param {Date|string} endDate - End date (Date object or ISO string)
+ * @param {Date|string} startDate - Start date (Date object or ISO string)
+ * @returns {number} Number of days between dates, 0 if inputs are invalid
  */
 function days(endDate, startDate) {
+  // Convert string inputs to Date objects
   const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
   const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
 
-  // return zero if dates are valid
+  // Validate date objects
   if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
     return 0;
   }
 
+  // Calculate absolute difference in milliseconds, then convert to days
   const diffInMs = Math.abs(end.getTime() - start.getTime());
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
-// eslint-disable-next-line import/prefer-default-export
+// Export functions for use in Rule Editor
 export { getFullName, days };
 ```
 
-![Hinzufügen einer benutzerdefinierten Funktion](/help/edge/docs/forms/assets/create-custom-function.png)
+![Hinzufügen benutzerdefinierter Funktionen](/help/edge/docs/forms/assets/create-custom-function.png)
+Abbildung: Hinzufügen benutzerdefinierter Funktionen zur Datei „features.js“
 
-### Verwenden einer benutzerdefinierten Funktion im Regeleditor
++++
 
-So verwenden Sie eine benutzerdefinierte Funktion im Regeleditor:
++++ Verwenden benutzerdefinierter Funktionen im Regeleditor
 
-1. **Funktion hinzufügen**: Fügen Sie die benutzerdefinierte Funktion zur `../[blocks]/form/functions.js` hinzu. Stellen Sie sicher, dass Sie sie in die `export`-Anweisung in der Datei aufnehmen.
-2. **Datei bereitstellen**: Stellen Sie die aktualisierte `functions.js`-Datei in Ihrem GitHub-Projekt bereit und bestätigen Sie, dass der Build erfolgreich abgeschlossen wurde.
-3. **Funktionsnutzung**: Greifen Sie im Regeleditor Ihres Formulars auf die Funktion zu, indem Sie die Option `Function Output` im Feld **[!UICONTROL Aktion auswählen]** auswählen.
+**Integrationsschritte**:
 
-   ![Benutzerdefinierte Funktion im Regeleditor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+1. **Funktion zum Projekt hinzufügen**
+   - Erstellen oder Bearbeiten von `/blocks/form/functions.js` im Projekt
+   - Funktion in Exportanweisung aufnehmen
 
-4. **Vorschau des Formulars**: Zeigen Sie eine Vorschau Ihres Formulars an, um zu überprüfen, ob die neu implementierte Funktion erwartungsgemäß funktioniert.
+2. **Bereitstellen und Erstellen**
+   - Übertragen von Änderungen an das Repository
+   - Sicherstellen, dass der Build-Prozess erfolgreich abgeschlossen wurde
+   - Zeit für CDN-Cache-Aktualisierungen zulassen
+
+3. **Zugriff im Regeleditor**
+   - Öffnen des Regeleditors für jede Formularkomponente
+   - Wählen Sie **Funktionsausgabe“** in der Dropdown-Liste **Aktion auswählen**
+   - Wählen Sie Ihre benutzerdefinierte Funktion aus der Liste der verfügbaren Funktionen aus
+   - Konfigurieren von Funktionsparametern mithilfe von Formularfeldern oder statischen Werten
+
+4. **Gründlich testen**
+   - Vorschau des Formulars zur Überprüfung des Funktionsverhaltens
+   - Testen mit verschiedenen Eingabekombinationen, einschließlich Edge-Fällen
+   - Überprüfen der Auswirkungen auf die Leistung beim Laden und Interagieren von Formularen
+
+![Benutzerdefinierte Funktion im Regeleditor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+Abbildung: Auswählen und Konfigurieren von benutzerdefinierten Funktionen in der Benutzeroberfläche des Regeleditors
+
+**Best Practices für die Verwendung von Funktionen**:
+
+- **Fehlerbehandlung**: Fallback-Verhalten bei Funktionsfehlern immer einschließen
+- **Performance**: Profilfunktionen mit realistischen Datenmengen
+- **Sicherheit**: Überprüfen Sie alle Eingaben, um Sicherheitslücken zu vermeiden
+- **Testen**: Erstellen Sie Testfälle für normale und Randfälle
+
++++
 
 ## Best Practices für die Regelentwicklung
 
-### **Leistungsoptimierung**
 
-**Minimieren der Regelkomplexität**
++++ Leistungsoptimierung
 
-- Halten Sie einzelne Regeln einfach und fokussiert.
-- Teilen Sie komplexe Logik in mehrere kleinere Regeln auf.
-- Vermeiden Sie nach Möglichkeit tief verschachtelte Bedingungen.
+- Minimieren der Regelkomplexität; Aufspaltung großer Logik in kleine, fokussierte Regeln
+- Regeln nach Häufigkeit sortieren (am häufigsten zuerst)
+- Regelsätze pro Komponente verwaltbar halten
+- Wiederverwendbare benutzerdefinierte Funktionen sollten dem Duplizieren von Logik vorgezogen werden
 
-**Regelausführung optimieren**
++++
 
-- Platzieren Sie die am häufigsten ausgelösten Regeln zuerst.
-- Verwenden Sie spezifische Bedingungen, um unnötige Auswertungen zu vermeiden.
-- Beachten Sie die Auswirkungen von Regeln auf die Ladezeit des Formulars.
++++ Anwendererlebnis
 
-**Ressourcenverwaltung**
+- Klare Validierung und Inline-Feedback
+- Vermeiden Sie störende visuelle Änderungen. Verwenden Sie sorgfältig ein-/ausblenden.
+- Testen geräteübergreifend und in Layouts
 
-- Begrenzen der Anzahl von Regeln pro Formularkomponente
-- Verwenden Sie benutzerdefinierte Funktionen für wiederholte Logik, anstatt Regeln zu duplizieren.
-- Testen Sie die Leistung mit realistischen Datenmengen.
++++
 
-### **Richtlinien für das Benutzererlebnis**
++++ Entwicklungshygiene
 
-**Klare Rückmeldungen geben**
+- Testen mit Randfällen und bekannten Werten
+- Browser-übergreifend überprüfen
+- Dokumentieren der Absicht hinter komplexen Regeln, nicht nur der Mechanik
+- Verwalten eines Regelinventars für große Formulare
+- Verwenden konsistenter Namen für Komponenten und Regeln
+- Version von benutzerdefinierten Funktionen und Tests in Nicht-Produktionsumgebungen
 
-- Verwenden Sie Validierungsmeldungen, die Benutzer zur korrekten Eingabe führen.
-- Ladeindikatoren für Regeln anzeigen, die externe Dienste beinhalten.
-- Schrittweise Offenlegung implementieren, um die kognitive Belastung zu reduzieren.
++++
 
-**Beibehalten der Formularreaktionsfähigkeit**
+## Fehlerbehebung bei Indizierungsproblemen
 
-- Vermeiden Sie Regeln, die abrupte visuelle Änderungen verursachen.
-- Implementieren Sie reibungslose Übergänge für Einblenden/Ausblenden-Vorgänge.
-- Testen Sie Regeln über verschiedene Geräte und Bildschirmgrößen hinweg.
 
-**Fehlerbehandlung**
++++ Regeln werden nicht ausgelöst
 
-- Fallback-Verhalten bereitstellen, wenn Regeln fehlschlagen.
-- Anzeigen benutzerfreundlicher Fehlermeldungen.
-- Protokollieren Sie Fehler für das Debugging, während Sie ein positives Benutzererlebnis aufrechterhalten.
+- Überprüfen von Komponentennamen und -verweisen
+- Ausführungsreihenfolge überprüfen (von oben nach unten)
+- Bedingungen mit bekannten Werten validieren
+- Überprüfen der Browser-Konsole auf Sperrfehler
 
-### **Best Practices für die Entwicklung**
++++
 
-**Teststrategie**
++++ Falsches Verhalten
 
-- Testen Sie Regeln mit Kantenfällen und Begrenzungswerten.
-- Überprüfen des Regelverhaltens über verschiedene Browser hinweg.
-- Testen Sie die Formularfunktionalität mit und ohne aktiviertem JavaScript.
+- Überprüfen von Benutzern und Gruppierungen (AND/OR)
+- Testen von Ausdrucksfragmenten einzeln
+- Datentypen bestätigen (Zahlen vs. Zeichenfolgen)
 
-**Dokumentation**
++++
 
-- Dokumentieren Sie die Geschäftslogik hinter komplexen Regeln.
-- Regelinventar für große Formulare verwalten
-- Verwenden Sie konsistente Benennungskonventionen für Komponenten und Regeln.
++++ Leistungsprobleme
 
-**Versionskontrolle**
+- Vereinfachen tief verschachtelter Bedingungen
+- Benutzerdefinierte Profilfunktionen
+- Externe Aufrufe innerhalb von Regeln minimieren
+- Verwenden spezifischer Selektoren und Verweise
 
-- Nachverfolgen von Änderungen an benutzerdefinierten Funktionen in der Versionskontrolle.
-- Testen Sie Regeln in einer Entwicklungsumgebung vor der Produktion.
-- Beibehaltung von Sicherungskopien der Arbeitsregelkonfigurationen.
++++
 
-## Beheben häufiger Probleme
++++ Probleme mit benutzerdefinierten Funktionen
 
-### **Probleme bei der Regelausführung**
+- Dateipfad bestätigen: `/blocks/form/functions.js`
+- Stellen Sie sicher, dass benannte Exporte korrekt sind
+- Bestätigen Sie, dass der Build Ihre Änderungen enthält
+- Browser-Cache nach der Bereitstellung löschen
+- Parametertypen und Fehlerbehandlung validieren
 
-**Regeln werden nicht ausgelöst**
++++
 
-- **Komponentennamen überprüfen**: Stellen Sie sicher, dass referenzierte Komponenten vorhanden sind und korrekte Namen haben.
-- **Regelreihenfolge überprüfen** Regeln werden von oben nach unten ausgeführt. Bei Bedarf müssen sie neu angeordnet werden.
-- **Bedingungen validieren**: Testbedingungen mit bekannten Werten zur Überprüfung der Logik.
-- **Browser-**: Suchen Sie nach JavaScript-Fehlern, die die Ausführung blockieren könnten.
++++ Integration des universellen Editors
 
-**Falsches Regelverhalten**
-
-- **Logikoperatoren überprüfen**: Bestätigen Sie, dass UND/ODER-Bedingungen korrekt strukturiert sind.
-- **Mit Beispieldaten testen**: Verwenden Sie bekannte Werte, um Probleme zu isolieren.
-- **Datentypen überprüfen**: Stellen Sie sicher, dass für numerische Vergleiche Zahlen und keine Zeichenfolgen verwendet werden.
-- **Ausdrücke überprüfen**: Testen Sie mathematische Ausdrücke separat.
-
-### **Leistungsprobleme**
-
-**Langsame Formularantwort**
-
-- **Verringern der Regelkomplexität**: Vereinfachen Sie komplexe bedingte Logik.
-- **Benutzerdefinierte Funktionen optimieren**: Profilerstellung und Optimierung von JavaScript-Code.
-- **Externe Aufrufe begrenzen**: Minimieren Sie Service-Aufrufe in Regeln.
-- **Effiziente Selektoren verwenden**: Stellen Sie sicher, dass Formularobjektverweise spezifisch sind.
-
-**Speicherauslastung**
-
-- **Ereignis-Listener bereinigen**: Nicht verwendete Regelbindungen entfernen.
-- **Benutzerdefinierte Funktionen optimieren**: Vermeiden Sie Speicherlecks im JavaScript-Code.
-- **Regelbereich einschränken**: Verwenden Sie zielgerichtete Regeln anstelle von globalen Bedingungen.
-
-### **Probleme mit benutzerdefinierten Funktionen**
-
-**Funktionen nicht verfügbar**
-
-- **Dateipfad überprüfen**: Überprüfen Sie, ob `functions.js` sich am richtigen Speicherort befindet: `/blocks/form/functions.js`.
-- **Exporte überprüfen**: Stellen Sie sicher, dass Funktionen ordnungsgemäß exportiert werden.
-- **Build-Prozess**: Bestätigen Sie, dass der Projekt-Build die aktualisierte Funktionsdatei enthält.
-- **Cache-Leerung**: Löschen des Browser-Cache nach der Bereitstellung neuer Funktionen.
-
-**Funktionsfehler**
-
-- **Parametervalidierung**: Überprüfen Sie, ob die Funktionsparameter den erwarteten Typen entsprechen.
-- **Fehlerbehandlung**: Hinzufügen von try-catch-Blöcken, um Ausnahmen ordnungsgemäß zu behandeln.
-- **Konsolenprotokollierung**: Verwenden Sie console.log für die Ausführung der Debugging-Funktion.
-- **JSDoc-Validierung**: Stellen Sie sicher, dass die Funktionsdokumentation mit der Implementierung übereinstimmt.
-
-### **Integration des universellen Editors**
-
-**Regel-Editor wird nicht angezeigt**
-
-- **Erweiterung aktiviert**: Überprüfen Sie, ob die Erweiterung des Regel-Editors aktiviert ist.
-- **Komponentenauswahl**: Stellen Sie sicher, dass Sie eine unterstützte Formularkomponente ausgewählt haben.
-- **Browserkompatibilität**: Testen Sie in unterstützten Browsern (Chrome, Firefox, Safari).
-- **Zugriffsberechtigungen**: Bestätigen Sie, dass der Benutzer über die erforderlichen AEM-Berechtigungen verfügt.
-
-**Probleme mit der Benutzeroberfläche**
-
-- **Bedienfeld-Sichtbarkeit**: Verwenden Sie die Umschalter-Schaltfläche, um das Bedienfeld „Formularobjekte“ ein- oder auszublenden.
-- **Speichern von Regeln**: Stellen Sie sicher, dass Regeln gespeichert werden, bevor Sie den Editor schließen.
-- **Browser-Zoom**: Setzen Sie den Browser-Zoom auf 100 % zurück, um eine optimale Anzeige auf der Benutzeroberfläche zu gewährleisten.
+- Bestätigen der Aktivierung der Erweiterung des Regeleditors
+- Unterstützte Komponente auswählen
+- Einen unterstützten Browser verwenden (Chrome, Firefox, Safari)
+- Überprüfen Sie, ob die erforderlichen Berechtigungen vorliegen.
 
 ## Wichtige Einschränkungen
 
 >[!IMPORTANT]
 >
-> **Benutzerdefinierte Funktionsbeschränkungen**:
+> Benutzerdefinierte Funktionsbeschränkungen:
 >
-> - Statische und dynamische Importe werden in benutzerdefinierten Funktionsskripten nicht unterstützt.
-> - Der gesamte Code muss direkt in der `/blocks/form/functions.js`-Datei enthalten sein.
-> - Funktionen müssen synchron sein (keine asynchronen/wartenden oder Promises).
-> - Der Zugriff auf Browser-APIs ist aus Sicherheitsgründen eingeschränkt.
+> - Statische/dynamische Importe werden nicht unterstützt
+> - Alle Logiken müssen sich in `/blocks/form/functions.js` befinden
+> - Funktionen müssen synchron sein (keine asynchronen/wartenden oder Promises)
+> - Der Zugriff auf die Browser-API ist eingeschränkt
 
 >[!WARNING]
 >
-> **Überlegungen zur Produktion**:
+> Überlegungen zur Produktion:
 >
-> - Testen Sie alle Regeln gründlich in einer Staging-Umgebung.
-> - Überwachen der Formularleistung nach der Bereitstellung komplexer Regeln.
-> - Einen Rollback-Plan für regelbezogene Probleme haben.
-> - Beachten Sie die Auswirkungen auf Benutzer mit langsamen Netzwerkverbindungen.
+> - In der Staging-Phase gründlich testen
+> - Überwachen der Leistung nach der Bereitstellung
+> - Einen Rollback-Plan für Regelprobleme haben
+> - Betrachten Sie langsame Netzwerke und Geräte mit niedriger Spezifikation
 
 ## Zusammenfassung
 
-Mit dem Regeleditor im universellen Editor können Sie intelligente, dynamische Formulare erstellen, die außergewöhnliche Benutzererlebnisse bieten. Durch die Implementierung von bedingter Logik, automatisierten Berechnungen und benutzerdefinierten Geschäftsregeln haben Sie folgende Möglichkeiten:
+Der Regeleditor im universellen Editor wandelt statische Formulare in intelligente, responsive Erlebnisse um, die sich in Echtzeit an Benutzereingaben anpassen. Durch die Nutzung von bedingter Logik, automatisierten Berechnungen und benutzerdefinierten Geschäftsregeln können Sie anspruchsvolle Formular-Workflows erstellen, ohne Anwendungs-Code zu schreiben.
 
-**Statische Forms transformieren**:
+**Wichtige Funktionen, die Sie gelernt haben**:
 
-- Hinzufügen bedingter Feldsichtbarkeit für sauberere, fokussiertere Schnittstellen.
-- Implementieren Sie Echtzeitberechnungen und Datenvalidierung.
-- Erstellen Sie eine ausgereifte Geschäftslogik ohne Programmierung.
+- **Bedingte Logik**: Felder basierend auf Benutzereingaben anzeigen und ausblenden, um fokussierte, relevante Erlebnisse zu erstellen
+- **Dynamische Berechnungen**: Berechnen Sie automatisch Werte (Steuern, Gesamtsummen, Sätze), wenn Benutzer mit dem Formular interagieren
+- **Datenvalidierung**: Implementieren Sie die Echtzeit-Validierung mit klaren, umsetzbaren Feedback-Nachrichten
+- **Benutzerdefinierte Funktionen**: Erweitern der Funktionen mit JavaScript für komplexe Geschäftslogik und Integrationen
+- **Leistungsoptimierung**: Wenden Sie Best Practices für eine verwaltbare, effiziente Regelentwicklung an
 
-**Verbessern des Benutzererlebnisses**:
+**Wert bereitgestellt**:
 
-- Führen Sie Benutzer durch logische Formularflüsse.
-- Reduzieren Sie Fehler durch intelligente Validierung.
-- Geben Sie sofortiges Feedback und Hilfe.
+- **Verbessertes Benutzererlebnis**: Verringern Sie kognitive Belastung durch progressive Offenlegung und intelligente Formularflüsse
+- **Weniger Fehler**: Verhindern Sie ungültige Übermittlungen durch Echtzeit-Validierung und geführte Eingabe
+- **Verbesserte Effizienz**: Automatisieren von Berechnungen und Dateneingabe zur Minimierung des Benutzeraufwands
+- **Wartbare Lösungen**: Erstellen Sie wiederverwendbare, gut dokumentierte Regeln, die in Ihrem gesamten Unternehmen skaliert werden können
 
-**Steigerung der Effizienz**:
+**Geschäftsauswirkungen**:
 
-- Automatisieren Sie wiederholte Berechnungen und Dateneingabe.
-- Optimieren Sie komplexe Workflows mit intelligentem Routing.
-- Reduzieren Sie den Support-Aufwand durch Self-Service-Funktionen.
+Forms wird zu leistungsstarken Tools für die Datenerfassung, Lead-Qualifizierung und Benutzerinteraktion. Der Regeleditor ermöglicht es technisch nicht versierten Autorinnen und Autoren, eine anspruchsvolle Geschäftslogik zu implementieren, wodurch die Entwicklungskosten gesenkt und gleichzeitig die Formularausfüllungsraten und die Datenqualität verbessert werden.
 
-### **Nächste Schritte**
++++
 
-Sie kennen nun die Grundlagen des Regeleditors:
++++ Nächste Schritte
 
-1. **Einfach beginnen** Beginnen Sie mit den grundlegenden Einblenden-/Ausblenden-Regeln, bevor Sie mit komplexen Berechnungen fortfahren.
-1. **Üben mit Beispielen**: Verwenden Sie das Tutorial zum Steuerrechner als Grundlage.
-1. **Erweiterte Funktionen erkunden**: Experimentieren Sie mit benutzerdefinierten Funktionen für spezielle Anforderungen.
-1. **Gründlich testen**: Regeln immer über verschiedene Szenarien und Geräte hinweg validieren.
-1. **Leistung überwachen**: Stellen Sie sicher, dass Regeln das Benutzererlebnis verbessern, anstatt es zu behindern.
+**Empfohlener Lernpfad**:
+
+1. **Mit den Grundlagen beginnen**: Erstellen einfacher Einblenden-/Ausblenden-Regeln, um die grundlegenden Konzepte zu verstehen
+2. **Üben mit Tutorials**: Verwenden Sie das Beispiel des Steuerrechners als Grundlage für Ihre eigenen Formulare
+3. **Schrittweise Erweiterung**: Mathematische Ausdrücke und Validierungsregeln hinzufügen, wenn Ihre Konfidenz wächst
+4. **Benutzerdefinierte Funktionen implementieren**: JavaScript-Funktionen für spezielle Geschäftsanforderungen entwickeln
+5. **Optimieren und skalieren**: Anwendung von Best Practices bei der Leistung und Pflege der Regeldokumentation
+
+**Zusätzliche**:
+
+- [Dokumentation zum universellen Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) für mehr Kontext
+- [Extension Manager-Handbuch](/help/implementing/developing/extending/extension-manager.md) zur Aktivierung zusätzlicher Funktionen
+- [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md) für eine umfassende Anleitung zur Formularentwicklung
+
++++

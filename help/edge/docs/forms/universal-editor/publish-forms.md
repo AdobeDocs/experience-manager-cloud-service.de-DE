@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [Formulare veröffentlichen, Edge Delivery Services, Formularkonfiguration, CORS, Referrer-Filter]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 2%
 
 ---
 
 # Veröffentlichen des adaptiven Formss mit Edge Delivery Services
-
-## Überblick
 
 Durch das Veröffentlichen eines adaptiven Formulars wird es in Edge Delivery Services für Endbenutzer verfügbar, die darauf zugreifen und es senden möchten. Dieser Prozess umfasst drei Hauptphasen: Veröffentlichen des Formulars, Konfigurieren der Sicherheitseinstellungen und Zugreifen auf das Live-Formular.
 
@@ -28,29 +26,35 @@ Durch das Veröffentlichen eines adaptiven Formulars wird es in Edge Delivery Se
 
 ## Voraussetzungen
 
-- **Formularanforderungen:**
-   - Adaptives Formular, das mithilfe einer Edge Delivery Services-Vorlage erstellt wurde
-   - Formular getestet und produktionsbereit
+- Adaptives Formular, das mithilfe einer Edge Delivery Services-Vorlage erstellt wurde
+- Formular getestet und produktionsbereit
+- AEM Forms-Autorenberechtigungen
+- Zugriff auf Cloud Manager (für Produktionskonfiguration)
+- Entwicklerzugriff auf den Formularblock-Code (für die Einrichtung der Übermittlung)
 
-- **Zugriffsanforderungen:**
-   - AEM Forms-Autorenberechtigungen
-   - Zugriff auf Cloud Manager (für Produktionskonfiguration)
-   - Entwicklerzugriff auf den Formularblock-Code (für die Einrichtung der Übermittlung)
+## Übersicht über den Veröffentlichungsprozess
 
-- **Verwandte Dokumentation:**
-   - [Erstellen von Formularen mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [Konfigurieren von Übermittlungsaktionen](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+Das Veröffentlichen von Formularen in Edge Delivery Services erfolgt in drei Phasen:
 
-## Phase 1: Formular veröffentlichen
+- **Phase 1: Formularveröffentlichung** - Veröffentlichen Sie Ihr Formular im CDN und überprüfen Sie den Veröffentlichungsstatus
+- **Phase 2: Sicherheitskonfiguration** - Einrichten von CORS-Richtlinien und Referrer-Filtern für sichere Übermittlungen
+- **Phase 3: Zugriff und Validierung** - Testen der Formularfunktionalität und Validieren des gesamten Workflows
 
-### Schritt 1: Veröffentlichung starten
+Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstellung zu gewährleisten.
+
+### Phase 1: Formular veröffentlichen
+
++++ Schritt 1: Veröffentlichung starten
 
 1. **Zugriff auf Ihr Formular**: Öffnen Sie Ihr adaptives Formular im universellen Editor
 2. **Veröffentlichung starten**: Klicken Sie auf das Symbol **Veröffentlichen** in der Symbolleiste
 
    ![Klicken Sie auf „Veröffentlichen“](/help/forms/assets/publish-icon-eds-form.png)
 
-### Schritt 2: Überprüfen und bestätigen
++++
+
+
++++ Schritt 2: Überprüfen und bestätigen
 
 1. **Überprüfen und Veröffentlichen von Assets**: Das System zeigt alle Assets an, die veröffentlicht werden, einschließlich Ihres Formulars
 
@@ -61,7 +65,10 @@ Durch das Veröffentlichen eines adaptiven Formulars wird es in Edge Delivery Se
 
    ![Erfolgreiche Veröffentlichung](/help/forms/assets/publish-success.png)
 
-### Schritt 3: Überprüfen des Veröffentlichungsstatus
++++
+
+
++++ Schritt 3: Überprüfen des Veröffentlichungsstatus
 
 **Status überprüfen**: Klicken Sie erneut auf das Symbol **Veröffentlichen**, um den aktuellen Status anzuzeigen
 
@@ -73,7 +80,10 @@ Durch das Veröffentlichen eines adaptiven Formulars wird es in Edge Delivery Se
 - Keine Fehlermeldungen während des Veröffentlichungsprozesses
 - Formular erscheint in der Liste der veröffentlichten Assets
 
-### Verwalten von veröffentlichten Forms
++++
+
+
++++ Verwalten von veröffentlichten Forms
 
 **So heben Sie die Veröffentlichung eines Formulars auf:**
 
@@ -83,9 +93,12 @@ Durch das Veröffentlichen eines adaptiven Formulars wird es in Edge Delivery Se
 
 ![Veröffentlichung von Formular aufheben](/help/forms/assets/unpublish--form.png)
 
-## Phase 2: Sicherheitseinstellungen konfigurieren
++++
 
-### Warum eine Sicherheitskonfiguration erforderlich ist
+
+### Phase 2: Sicherheitseinstellungen konfigurieren
+
++++ Warum eine Sicherheitskonfiguration erforderlich ist
 
 Um sichere Formularübermittlungen zu aktivieren, müssen Sie Sicherheitseinstellungen konfigurieren, die:
 
@@ -98,7 +111,11 @@ Um sichere Formularübermittlungen zu aktivieren, müssen Sie Sicherheitseinstel
 >
 >**Für Produktion erforderlich**: Diese Konfigurationen sind obligatorisch, damit Formularübermittlungen in Produktionsumgebungen funktionieren.
 
-### Schritt 1: Konfigurieren der URL für die Formularübermittlung
++++
+
+
+
++++ Schritt 1: Konfigurieren der URL für die Formularübermittlung
 
 **Zweck**: Direkte Formularübermittlungen an Ihre AEM-Instanz
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - URL entspricht Ihrer Umgebung (Produktion, Staging oder lokal)
 - Kein Schrägstrich in der URL
 
-### Schritt 2: Konfigurieren der CORS-Einstellungen
++++
+
+
+
++++ Schritt 2: Konfigurieren der CORS-Einstellungen
 
 **Zweck**: Formularübermittlungsanfragen von Edge Delivery Services-Domains zulassen
 
@@ -151,7 +172,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [CORS-Konfigurationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [Dokumentation zum Referrer-Filter](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### Schritt 3: Konfigurieren des Referrer-Filters
++++
+
+
+
++++ Schritt 3: Konfigurieren des Referrer-Filters
 
 **Zweck**: Schreib-Vorgänge auf autorisierte Edge Delivery Services-Domains beschränken
 
@@ -198,9 +223,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [Konfigurieren des Referrer-Filters über Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## Phase 3: Zugreifen auf das veröffentlichte Formular
++++
 
-### URL-Struktur für Edge Delivery Services
+
+### Phase 3: Zugreifen auf das veröffentlichte Formular
+
+
+
++++ URL-Struktur für Edge Delivery Services
 
 **Standard-URL-Format:**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### Abschließende Validierungsschritte
++++
+
+
+
++++ Abschließende Validierungsschritte
 
 **Überprüfen der Barrierefreiheit von Formularen:**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - Die Daten werden im konfigurierten Ziel (Arbeitsblatt, E-Mail usw.) angezeigt
 - Keine Konsolenfehler im Zusammenhang mit CORS oder Sicherheitsrichtlinien
 
++++
+
 
 ## Nächste Schritte
 
-**Sofortige Aktionen:**
-
-- Testen des veröffentlichten Formulars sorgfältig
-- Überwachen der Formularübermittlungsdaten
-- Analytics-Tracking bei Bedarf einrichten
-
-**Erweiterte Themen:**
 
 - [Konfigurieren von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Gestalten und Gestalten von Formularen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [Hinzufügen eines reCAPTCHA-Schutzes](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Erstellen von responsiven Formular-Layouts](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## Zusammenfassung
 
-Sie haben erfolgreich:
-
-- Ihr adaptives Formular in Edge Delivery Services veröffentlicht
-- Sicherheitseinstellungen für die Formularübermittlung konfiguriert
-- Einrichten eines korrekten URL-Zugriffs für Endbenutzer
-- Formularfunktionalität und -zugriff überprüft
-
-Ihr Formular ist jetzt live und für die Verwendung in der Produktion bereit.

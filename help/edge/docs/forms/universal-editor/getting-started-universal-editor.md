@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2609'
 ht-degree: 2%
 
 ---
@@ -48,45 +48,47 @@ Wählen Sie den Ansatz aus, der Ihrem Szenario entspricht:
 
 ## Voraussetzungen
 
-Bevor Sie beginnen, stellen Sie Folgendes sicher:
+Um sicherzustellen, dass Edge Delivery Services für AEM Forms mit dem universellen Editor reibungslos und erfolgreich funktioniert, überprüfen und bestätigen Sie die folgenden Voraussetzungen, bevor Sie fortfahren:
 
-### Erforderlicher Zugriff
+### Zugriffsanforderungen
 
-- **GitHub-Konto** mit Berechtigung zum Erstellen von Repositorys
-- Authoring-Zugriff **&#x200B;**&#x200B;AEM as a Cloud Service
+- **GitHub-**: Sie müssen über ein GitHub-Konto mit Berechtigungen zum Erstellen neuer Repositorys verfügen. Dies ist für die Verwaltung Ihres Projekt-Quell-Codes und die Zusammenarbeit mit Ihrem Team von entscheidender Bedeutung.
+- **AEM as a Cloud Service-Autorenzugriff**: Stellen Sie sicher, dass Sie Zugriff auf Ihre AEM as a Cloud Service-Umgebung auf Autorenebene haben. Dieser Zugriff ist erforderlich, um Formulare zu erstellen, zu bearbeiten und zu veröffentlichen.
 
 ### Technische Anforderungen
 
-- **Git-Grundlagen**: Klonen, Übertragen, Push-Vorgänge
-- **Web-Technologien**: HTML, CSS, JavaScript-Grundlagen
-- **Node.js** (ab Version 16 empfohlen) für die lokale Entwicklung
-- **npm** oder **arn** Package Manager
+- **Vertrautheit mit Git**: Sie sollten mit der Durchführung grundlegender Git-Vorgänge wie dem Klonen von Repositorys, dem Übergeben von Änderungen und dem Pushen von Aktualisierungen vertraut sein. Diese Fähigkeiten sind für die Quell-Code-Verwaltung und die Zusammenarbeit bei Projekten von grundlegender Bedeutung.
+- **Grundlegendes zu Web** Technologien: Es werden Kenntnisse in HTML, CSS und JavaScript empfohlen. Diese Technologien bilden die Grundlage für die Anpassung und Fehlerbehebung von Formularen.
+- **Node.js (Version 16 oder höher)**: Node.js ist für die lokale Entwicklung und die Ausführung von Build-Tools erforderlich. Stellen Sie sicher, dass auf Ihrem System Version 16 oder höher installiert ist.
+- **Package Manager (npm oder yarn)**: Sie benötigen entweder npm (Node Package Manager) oder yarn, um die Projektabhängigkeiten und Skripte zu verwalten.
 
-### Empfohlene Kenntnisse
+### Empfohlener Hintergrund
 
-- Grundlegendes zu AEM Sites-Konzepten
-- Vertrautheit mit den Prinzipien des Formularentwurfs
-- Erfahrung mit WYSIWYG-Editoren
+- **AEM Sites-**: Ein grundlegendes Verständnis von AEM Sites, einschließlich Site-Struktur und Inhaltserstellung, hilft Ihnen bei der effektiven Navigation und Integration von Formularen.
+- **Formularentwurfsprinzipien**: Wenn Sie mit den Best Practices im Formularentwurf vertraut sind, wie z. B. Benutzerfreundlichkeit, Barrierefreiheit und Datenvalidierung, können Sie effektive und benutzerfreundliche Formulare erstellen.
+- **Erfahrung mit WYSIWYG-Editoren**: Frühere Erfahrungen mit der Verwendung von What You See Is What You Get (WYSIWYG)-Editoren helfen Ihnen, die visuellen Authoring-Funktionen des universellen Editors effizienter zu nutzen.
 
 >[!TIP]
 >
 > Neu bei AEM? Beginnen Sie mit den ersten Schritten mit dem [Handbuch zu AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=de).
 
-## Pfad A: Neues Projekt mit Forms erstellen
+## Pfad A: Erstellen eines neuen Projekts mit Forms
 
-**Best for:** Neue Implementierungen oder Proof-of-Concepts
+**Empfohlen für** Neue Projekte, Pilotprojekte oder Proof-of-Concept-Initiativen
 
-Das Textbaustein-Tool von AEM Forms bietet eine vorkonfigurierte Vorlage mit integriertem adaptivem Forms-Block.
+Nutzen Sie das Textbaustein-Tool von AEM Forms, um Ihre Projekteinrichtung zu beschleunigen. Dieses Textbausteinmodell bietet eine einsatzbereite Vorlage, die den adaptiven Forms-Block nahtlos integriert, sodass Sie Formulare schnell auf Ihrer AEM-Site erstellen und bereitstellen können.
 
-### Übersicht über die Schritte
+### Überblick
 
-1. Einrichten eines GitHub-Repositorys über die Vorlage
-2. Installieren von AEM Code Sync
-3. Konfigurieren der AEM-Projektverbindung
-4. Erstellen und Veröffentlichen einer AEM-Site
-5. Hinzufügen von Formularen mit dem universellen Editor
+Um Ihr neues Projekt mit integrierten Formularen erfolgreich zu starten, gehen Sie folgendermaßen vor:
 
-Gehen wir die einzelnen Schritte durch:
+1. Erstellen Sie ein GitHub-Repository mit der AEM Forms-Textvorlage.
+2. Richten Sie AEM Code Sync ein, um die Inhaltssynchronisierung zwischen AEM und Ihrem Repository zu automatisieren.
+3. Konfigurieren Sie die Verbindung zwischen Ihrem GitHub-Projekt und Ihrer AEM-Umgebung.
+4. Erstellen und veröffentlichen Sie eine neue AEM-Site.
+5. Hinzufügen und Verwalten von Formularen mit dem universellen Editor.
+
+Die folgenden Abschnitte führen Sie durch jeden Schritt im Detail, um eine reibungslose und effiziente Projekteinrichtung sicherzustellen.
 
 +++Schritt 1: Erstellen eines GitHub-Repositorys aus einer Vorlage
 
@@ -184,7 +186,7 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository mit der AEM-Autorenumgebu
 
     >[!NOTE]
     >
-    >Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
+>Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
 
 +++
 
@@ -320,20 +322,26 @@ Wenn Sie bereits über ein AEM-Projekt mit Edge Delivery Services verfügen, kö
 
 ### Voraussetzungen für Pfad B
 
-- Vorhandenes AEM-Projekt, erstellt mit [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)
-- Einrichten einer lokalen Entwicklungsumgebung
-- Git-Zugriff auf Ihr Projekt-Repository
+Um mit der Integration von Formularen in Ihr bestehendes AEM-Projekt fortzufahren, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-**Mit AEM Forms Textbaustein?** Wenn Ihr Projekt mit dem [AEM Forms-Textbaustein](https://github.com/adobe-rnd/aem-boilerplate-forms) erstellt wurde, sind Formulare bereits integriert. Wechseln Sie zu [Erstes Formular erstellen](#create-your-first-form).
+- Sie haben ein bestehendes AEM-Projekt, das mit dem [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) erstellt wurde.
+- Sie haben eine [lokale Entwicklungsumgebung eingerichtet](#set-up-local-development-environment)
+- Sie verfügen über Git-Zugriff auf Ihr Projekt-Repository, mit dem Sie Änderungen nach Bedarf klonen, ändern und per Push übertragen können.
 
-Gehen wir die einzelnen Schritte durch:
+>[!NOTE]
+>
+> Wenn Ihr Projekt ursprünglich mit dem AEM Forms-Textbaustein [](https://github.com/adobe-rnd/aem-boilerplate-forms) eingerichtet wurde, ist die Formularfunktionalität bereits enthalten. In diesem Fall können Sie mit dem Abschnitt [Erstes Formular erstellen](#create-your-first-form) fortfahren.
 
-### Übersicht über die Schritte
+Das folgende Handbuch bietet einen strukturierten Ansatz zum Hinzufügen von Formularfunktionen zu Ihrem vorhandenen Projekt. Jeder Schritt soll eine nahtlose Integration und optimale Funktionalität in der universellen Editor-Umgebung sicherstellen.
 
-1. Kopieren von adaptiven Forms-Blockdateien
-2. Projektkonfiguration aktualisieren
-3. Konfigurieren von ESLint-Regeln
-4. Änderungen erstellen und bestätigen
+### Überblick
+
+Sie führen die folgenden allgemeinen Schritte aus:
+
+1. Kopieren Sie die adaptiven Forms-Blockdateien in Ihr Projekt.
+2. Aktualisieren Sie die Konfiguration Ihres Projekts, um Formularkomponenten zu erkennen und zu unterstützen.
+3. Passen Sie ESLint-Regeln an, um die neuen Dateien und Codierungsmuster aufzunehmen.
+4. Erstellen Sie Ihr Projekt und übertragen Sie die Änderungen in Ihr Repository.
 
 +++Schritt 1: Forms-Blockdateien kopieren
 
@@ -494,19 +502,31 @@ Gehen wir die einzelnen Schritte durch:
 
 ## Erstellen des ersten Formulars
 
-**Gilt für:** Benutzer von Pfad A und Pfad B
+**Wer sollte diesem Abschnitt folgen:**\
+Dieser Abschnitt ist für Benutzer relevant, die entweder Pfad A (neues Projekt) oder Pfad B (vorhandenes Projekt) folgen.
 
-Nachdem Ihr Projekt mit Formularfunktionen eingerichtet wurde, erstellen wir Ihr erstes Formular mit der WYSIWYG-Oberfläche des universellen Editors.
+Jetzt, da Ihr Projekt für die Formularerstellung vorbereitet ist, können Sie Ihr erstes Formular mit der intuitiven WYSIWYG-Authoring-Umgebung des universellen Editors erstellen. Die folgenden Schritte bieten einen strukturierten Ansatz für das Entwerfen, Konfigurieren und Veröffentlichen eines Formulars innerhalb Ihrer AEM-Site.
 
-### Überblick über den Prozess der Formularerstellung
+### Überblick
 
-1. **Adaptiven Formularblock hinzufügen** auf Ihrer Seite
-2. **Hinzufügen von Formularkomponenten** (Texteingaben, Schaltflächen usw.)
-3. **Konfigurieren von Komponenteneigenschaften**
-4. **Vorschau und Test** des Formulars
-5. **Veröffentlichen** der aktualisierten Seite
+Der Prozess der Erstellung eines Formulars im universellen Editor besteht aus mehreren wichtigen Schritten:
 
-Gehen wir die einzelnen Schritte durch:
+1. **Fügen Sie den adaptiven Formularblock ein**\
+   Fügen Sie zunächst den adaptiven Formularblock zu der ausgewählten Seite hinzu.
+
+2. **Hinzufügen von Formularkomponenten**\
+   Füllen Sie Ihr Formular, indem Sie Komponenten wie Textfelder, Schaltflächen und andere Eingabeelemente einfügen.
+
+3. **Konfigurieren von Komponenteneigenschaften**\
+   Passen Sie die Einstellungen und Eigenschaften jeder Komponente an die Anforderungen Ihres Formulars an.
+
+4. **Vorschau und Testen des Formulars**\
+   Verwenden Sie die Vorschaufunktion, um das Erscheinungsbild und Verhalten Ihres Formulars vor der Veröffentlichung zu überprüfen.
+
+5. **Veröffentlichen Sie die aktualisierte Seite**\
+   Wenn Sie zufrieden sind, veröffentlichen Sie Ihre Seite, um das Formular für Endbenutzer verfügbar zu machen.
+
+Die folgenden Abschnitte führen Sie detailliert durch die einzelnen Schritte, um eine reibungslose und effektive Formularerstellung sicherzustellen.
 
 +++Schritt 1: Adaptiven Formularblock hinzufügen
 

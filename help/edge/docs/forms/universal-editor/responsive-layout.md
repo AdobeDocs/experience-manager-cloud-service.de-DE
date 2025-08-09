@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2383'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 1%
 
 # Erstellen einer responsiven Forms mit einem universellen Editor
 
-Benutzer greifen auf Formulare auf einer Vielzahl von Geräten zu, einschließlich Desktops, Tablets und Smartphones. Das Entwerfen responsiver Formulare stellt ein optimales Erlebnis für alle Benutzenden sicher, unabhängig vom Gerät. In diesem Handbuch wird erläutert, wie Sie mit dem universellen Editor Formulare für jede Bildschirmgröße entwerfen, testen und optimieren können.
+Die moderne Web-Landschaft erfordert Formulare, die über ein immer breiteres Spektrum von Geräten und Bildschirmgrößen hinweg nahtlos funktionieren. Von großen Desktop-Monitoren bis hin zu kompakten Smartphone-Bildschirmen erwarten die Benutzer unabhängig vom gewählten Gerät konsistente, intuitive Erlebnisse. Das Erstellen responsiver Formulare ist nicht mehr optional. Es ist eine grundlegende Voraussetzung für die Bereitstellung professioneller, barrierefreier und konversionsoptimierter digitaler Erlebnisse.
 
+Der universelle Editor bietet umfassende Tools und Methoden zum Entwickeln responsiver Formulare, die sich intelligent an verschiedene Bildschirmabmessungen, Eingabemethoden und Benutzerkontexte anpassen. In diesem Handbuch werden die technischen Grundlagen, Implementierungsstrategien und Optimierungstechniken untersucht, die zum Erstellen von Formularen erforderlich sind, die eine außergewöhnliche Leistung auf allen Geräten erbringen und gleichzeitig die Benutzerfreundlichkeit, Barrierefreiheit und visuelle Attraktivität aufrechterhalten.
 
 Die Erstellung responsiver Formulare umfasst zwei Hauptaktivitäten:
 
@@ -160,115 +161,116 @@ Layout-Muster bestimmen, wie sich der Formularinhalt an verschiedene Bildschirmg
 
 ### Panel-Layout
 
-**Zweck:** Organisiert verwandte Inhalte in visuell unterschiedliche Abschnitte, die gleichzeitig angezeigt werden können.
+Das Bedienfeldlayout organisiert verwandte Inhalte in visuell unterschiedliche Abschnitte, sodass Benutzende mehrere Abschnitte gleichzeitig anzeigen können. Dieses Layout eignet sich ideal für Formulare mit kategorisierten Informationen, die von einer Side-by-Side-Präsentation auf größeren Bildschirmen profitieren.
 
 ![Beispiel für ein Bedienfeld-Layout](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Responsives Verhalten:**
+**Responsives Verhalten**
 
-- **Desktop (1200 px+):** Bedienfelder werden nebeneinander oder in einem Raster angezeigt
-- **Tablet (768px-1199px):** Panels stapeln vertikal mit Abstand
-- **Mobil (320px-767px):** Einspaltiges Layout mit klaren Abschnittsumbrüchen
+- **Desktop (1200 Pixel und höher):** Bedienfelder werden nebeneinander oder in einem Raster angezeigt, um eine maximale Sichtbarkeit zu erzielen.
+- **Tablet (768px-1199px):** Panels werden vertikal mit angemessenem Abstand gestapelt, um die Klarheit zu wahren.
+- **Mobil (320px-767px):** Bedienfelder werden in einem einspaltigen Layout mit einer klaren Trennung zwischen Abschnitten für eine einfache Navigation präsentiert.
 
-**Implementierungsschritte:**
+**Implementierung**
 
-1. Verwenden Sie die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
-2. Gruppieren Sie verwandte Felder in jedem Bedienfeld.
-3. Fügen Sie für jeden Abschnitt klare Überschriften hinzu.
-4. Stellen Sie einen ausreichenden Abstand zwischen den Bereichen sicher.
+1. Fügen Sie die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) zu Ihrem Formular hinzu.
+2. Gruppieren Sie verwandte Felder innerhalb jedes Bedienfelds, um die logische Organisation beizubehalten.
+3. Weisen Sie jedem Bedienfeldabschnitt klare, beschreibende Überschriften zu.
+4. Stellen Sie sicher, dass ausreichend Abstand zwischen den Bereichen vorhanden ist, um visuelle Übersichtlichkeit zu vermeiden.
 
-**Best Practices:**
+**Best Practices**
 
-- Beschränken Sie den Arbeitsbereich auf 3-4 Bedienfelder, um die Benutzer nicht zu überfordern.
-- Verwenden Sie beschreibende Titel für jedes Bedienfeld.
-- Gruppieren Sie verwandte Felder logisch, um die kognitive Belastung zu reduzieren.
-- Navigation im Testfeld auf Touch-Geräten.
+- Begrenzen Sie die Anzahl der Bedienfelder auf dem Desktop auf 3 oder 4, um zu vermeiden, dass Benutzer überfordert werden.
+- Verwenden Sie knappe, beschreibende Titel für jedes Bedienfeld, um das Verständnis der Benutzer zu verbessern.
+- Organisieren Sie Felder in Bedienfeldern logisch, um kognitive Belastung zu minimieren.
+- Testfeld-Navigation auf Touch-Geräten, um die Benutzerfreundlichkeit auf allen Plattformen sicherzustellen.
 
-**Anwendungsbeispiele:**
+**Häufige Anwendungsfälle**
 
-- **Bewerbung:** Persönliche Informationen, Bildung, Erfahrung, Referenzen
-- **Produktregistrierung:** grundlegende Details, technische Spezifikationen, Garantieinformationen
-- **Umfrage Forms:** Demografie, Voreinstellungen, Feedback, Kontakt
+- **Bewerbung:** Abschnitte für persönliche Informationen, Bildung, Erfahrung und Referenzen.
+- **Produktregistrierung:** für grundlegende Details, technische Spezifikationen und Garantieinformationen.
+- **Umfrage Forms:** Gruppierungen für Demografie, Voreinstellungen, Feedback und Kontaktinformationen.
 
 ### Assistenten-Layout
 
-**Zweck:** Führt Benutzer Schritt für Schritt durch komplexe Prozesse, reduziert die kognitive Belastung und verbessert die Abschlussraten.
+Der Assistenten-Layout führt Benutzende durch einen mehrstufigen Prozess und zeigt jeweils einen Abschnitt an. Dieses Layout ist besonders bei komplexen Formularen effektiv, da es die kognitive Belastung reduziert und die Abschlussraten erhöht, indem der Prozess in überschaubare Schritte unterteilt wird.
 
 ![Beispiel für Assistentenlayout](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Responsives Verhalten:**
+**Responsives Verhalten**
 
-- **Alle Geräte:** Behält den Fokus auf einem Schritt bei, um ein optimales mobiles Erlebnis zu gewährleisten.
-- **Schrittinhalt:** passt sich bei jedem Schritt an (Stapeln oder nebeneinander).
-- **Navigation** Touch-optimierte Schaltflächen mit ausreichendem Abstand.
-- **Fortschrittsanzeige:** Skaliert entsprechend der Bildschirmgröße.
+- **Alle Geräte:** Behält den einstufigen Fokus bei, der für mobile Benutzer optimal ist.
+- **Schrittinhalt:** Jeder Schritt passt sich responsiv an, stapelt Felder oder ordnet sie je nach Bildschirmgröße nebeneinander an.
+- **Navigation:** Verfügt über berührungsfreundliche Schaltflächen mit ausreichendem Abstand für eine einfache Interaktion.
+- **Fortschrittsanzeige:** Fortschrittsbalken oder Schrittanzeigen werden für verschiedene Geräte entsprechend skaliert und bieten ein klares Feedback zum Abschlussstatus.
 
-**Implementierungsschritte:**
+**Implementierung**
 
-1. Verwenden Sie die [Assistenten-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
-2. Unterteilen Sie komplexe Formulare in logische Schritte (3-7 Schritte sind optimal).
-3. Schließen Sie Fortschrittsanzeigen zur Benutzerorientierung ein.
-4. Bereitstellen klarer Navigationssteuerelemente (Weiter, Zurück, Speichern).
+1. Fügen Sie die [Assistenten-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) in Ihr Formular ein.
+2. Teilt das Formular in logische Schritte auf, idealerweise zwischen 3 und 7, damit jeder Schritt fokussiert und verwaltbar bleibt.
+3. Fügen Sie Fortschrittsindikatoren hinzu, um Benutzenden zu helfen, ihre Position im Prozess zu verstehen.
+4. Stellen Sie klare Navigationssteuerelemente wie die Schaltflächen „Weiter“, „Zurück“ und „Speichern“ bereit.
 
-**Optimierung für Mobilgeräte:**
+**Tipps zur Optimierung von Mobilgeräten**
 
-- Verwenden Sie große Touch-Targets (mindestens 44 Pixel) für Navigationstasten.
-- Stellen Sie sicher, dass die Schrittanzeigen auf kleinen Bildschirmen klar und sichtbar sind.
-- Anzahl der Felder pro Schritt begrenzen, um den Bildlauf zu reduzieren
-- Aktivieren Sie die automatische Speicherung, um Datenverlust zu vermeiden.
+- Verwenden Sie große Touch-Targets (mindestens 44 Pixel hoch) für Navigationssteuerelemente, um die Barrierefreiheit zu verbessern.
+- Stellen Sie sicher, dass die Schrittmarkierungen auf kleinen Bildschirmen sichtbar und lesbar sind.
+- Begrenzen Sie die Anzahl der Felder pro Schritt, um den Bildlauf zu minimieren und den Fokus zu verbessern.
+- Aktivieren Sie die Funktion zum automatischen Speichern, um Datenverlust zu verhindern, wenn Benutzer das Formular verlassen.
 
-**Best Practices:**
+**Best Practices**
 
-- Sicherstellen des logischen Schrittverlaufs - jeder Schritt sollte auf dem vorherigen aufbauen.
-- Verwenden Sie klare Schritttitel, damit Benutzer wissen, was zu erwarten ist.
-- Validieren Sie die Eingabe bei jedem Schritt, um Fehler frühzeitig zu erkennen.
-- Benutzern die Möglichkeit geben, rückwärts zu navigieren, um Informationen zu überprüfen oder zu bearbeiten.
+- Entwickeln Sie Schritte, um einem logischen Fortschritt zu folgen, wobei jeder Schritt auf dem vorherigen aufbaut.
+- Verwenden Sie klare, beschreibende Titel für jeden Schritt, um die Erwartungen der Benutzenden festzulegen.
+- Überprüfen Sie die Benutzereingabe bei jedem Schritt, um Fehler frühzeitig zu erkennen und Frustration zu reduzieren.
+- Ermöglichen Sie Benutzern, rückwärts zu navigieren, um frühere Informationen zu überprüfen oder zu bearbeiten, ohne Daten zu verlieren.
 
-**Anwendungsbeispiele:**
+**Häufige Anwendungsfälle**
 
-- **Versicherungsansprüche:** Vorfall → Beweismittel → persönliche →
-- **Kontoeinrichtung:** Basic Info → Preferences → Security → Confirmation
-- **Bestellvorgang:** Produkte → Versand → Zahlung → Zusammenfassung
+- **Versicherungsansprüche:** Schritte für Details zu Vorfällen, Übermittlung von Beweismitteln, persönliche Informationen und Überprüfung.
+- **Kontoeinrichtung:** Schritte für grundlegende Informationen, Voreinstellungen, Sicherheitseinstellungen und Bestätigung.
+- **Bestellvorgang:** Schritte für die Produktauswahl, Versandinformationen, Zahlungsdetails und die Bestellübersicht.
 
 ### Akkordeon-Layout
 
-**Zweck:** Platzeinsparung durch die Organisation von Inhalten in ausblendbaren Bereichen, ideal für optionale oder sekundäre Informationen.
+Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten organisiert werden, was es ideal für optionale oder sekundäre Informationen macht. Dieses Layout ist besonders effektiv für Formulare mit Inhalten, die logisch gruppiert werden können und nicht alle gleichzeitig angezeigt werden müssen.
 
 ![Beispiel für ein Akkordeon-Layout](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Responsives Verhalten:**
+**Responsives Verhalten**
 
-- **Hervorragende mobile Leistung:** Es werden nur relevante Inhalte angezeigt.
-- **Touch-optimierte Kopfzeilen:** Einfaches Tippen und Erweitern von Abschnitten.
-- **Smooth Animations** Bieten Sie visuelles Feedback für Interaktionen.
-- **Platzsparend:** Minimiert den Bildlauf auf allen Geräten.
+- **Leistung für Mobilgeräte:** Nur der relevante Abschnitt wird erweitert, wodurch der Bedarf an Scrollen verringert und die Ladezeiten verbessert werden.
+- **Touch-optimierte Kopfzeilen:** Kopfzeilen von Abschnitten können einfach angetippt und erweitert werden, wodurch natürliche Gesten auf Mobilgeräten unterstützt werden.
+- **Smooth Animations** Das Erweitern und Reduzieren von Abschnitten bietet visuelles Feedback für Benutzerinteraktionen.
+- **Platzeffizienz:** ausgeblendete Abschnitte minimieren den vertikalen Platz, sodass das Formular auf allen Geräten einfacher navigiert werden kann.
 
-**Implementierungsschritte:**
+**Implementierung**
 
-1. Verwenden Sie die [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
-2. Gruppieren Sie in jedem Abschnitt verwandte optionale Inhalte.
-3. Verwenden Sie beschreibende Abschnittsüberschriften.
-4. Legen Sie die entsprechenden standardmäßigen offenen/geschlossenen Status fest.
+1. Fügen Sie die [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) zu Ihrem Formular hinzu.
+2. Gruppieren Sie verwandte optionale oder sekundäre Inhalte in jedem Akkordeon-Abschnitt.
+3. Verwenden Sie für jeden Abschnitt klare, beschreibende Kopfzeilen, damit Benutzer verstehen, welche Informationen darin enthalten sind.
+4. Legen Sie die entsprechenden standardmäßigen offenen oder geschlossenen Status für jeden Abschnitt basierend auf Wichtigkeit und Benutzeranforderungen fest.
 
-**Vorteile für Mobilgeräte:**
+**Vorteile für Mobilgeräte**
 
-- Reduziert den Bildlauf durch Reduzieren nicht verwendeter Abschnitte.
-- Touch-freundliche Interaktion mit natürlichen Gesten zum Erweitern/Reduzieren.
-- Schnelleres Laden - nur aktive Inhalte sind sichtbar.
-- Verbesserter Fokus - Benutzer sehen nur das, was sie brauchen.
+- Reduziert den Bildlauf durch Reduzieren nicht verwendeter Abschnitte, sodass sich Benutzende jeweils auf einen Abschnitt konzentrieren können.
+- Die Touch-optimierte Interaktion unterstützt natürliche Gesten zum Erweitern/Reduzieren.
+- Schnelleres Laden, da nur der aktive Inhalt sichtbar ist.
+- Der Fokus wurde verbessert, da Benutzende immer nur die Informationen sehen, die sie zu einem bestimmten Zeitpunkt benötigen.
 
-**Best Practices:**
+**Best Practices**
 
-- Verwenden Sie klare Abschnittsüberschriften, damit Benutzer wissen, was drin ist, bevor sie den Bereich erweitern.
-- Gruppieren Sie verwandte Inhalte logisch in jedem Abschnitt.
-- Legen Sie wichtige Abschnitte fest, um bei Bedarf erweitert zu beginnen.
-- Bieten Sie eine kurze Abschnittsvorschau, die Benutzern bei der Entscheidung hilft, was erweitert werden soll.
+- Verwenden Sie klare Abschnittsüberschriften, damit Benutzer wissen, was sie erwarten können, bevor sie einen Abschnitt erweitern.
+- Gruppieren Sie verwandte Inhalte logisch in jedem Abschnitt, um das Verständnis zu erleichtern.
+- Legen Sie wichtige Abschnitte fest, um mit einem erweiterten Fenster zu beginnen, wenn sofortiges Eingreifen erforderlich ist.
+- Stellen Sie kurze Abschnittsvorschauen oder Zusammenfassungen bereit, damit Benutzende entscheiden können, welche Abschnitte erweitert werden sollen.
 
-**Anwendungsbeispiele:**
+**Häufige Anwendungsfälle**
 
-- **Produktkonfiguration:** Basic → Advanced → Accessories → Support
-- **FAQ Forms:** Account → Billing → Technical → General
-- **Einstellungen Forms:** Privacy →-Benachrichtigungen → Erscheinungsbild → Erweitert
+- **Produktkonfiguration:** Abschnitte für grundlegende Optionen, erweiterte Einstellungen, Zubehör und Support.
+- **FAQ Forms:** Gruppierungen für Konto-, Abrechnungs-, technische und allgemeine Fragen.
+- **Einstellungen Forms:** Abschnitte für Datenschutz, Benachrichtigungen, Darstellung und erweiterte Optionen.
+
 
 ## Teil 3: Best Practices für responsives Design
 
@@ -276,42 +278,42 @@ Layout-Muster bestimmen, wie sich der Formularinhalt an verschiedene Bildschirmg
 
 +++Optimierung für Mobilgeräte (320 Pixel - 767 Pixel)
 
-**Grundlegende Praktiken:**
+**Layout und Interaktion:**
 
-- Verwenden Sie ein einspaltiges Layout für alle Inhalte.
-- Große, Touch-optimierte Tasten (minimale Höhe 44 Pixel).
-- Vereinfachen Sie die Navigation mit klaren Zurück-/Weiter-Optionen.
-- Scrollen Sie in jedem Abschnitt auf ein Minimum.
-- Autofokus auf das erste Feld, das die Tastatur anzeigen soll.
+- Verwenden Sie ein einspaltiges Layout für alle Formularinhalte, um die Lesbarkeit und Benutzerfreundlichkeit zu maximieren.
+- Stellen Sie sicher, dass alle Schaltflächen und interaktiven Elemente mindestens 44 Pixel hoch sind, um eine zuverlässige Touch-Interaktion zu gewährleisten.
+- Bieten Sie eine klare, einfache Navigation mit sichtbaren Schaltflächen für „Zurück“ und „Weiter“.
+- Die langen Formulare müssen nicht in jedem Abschnitt gescrollt werden.
+- Automatisch auf das erste Eingabefeld fokussieren, um die mobile Tastatur anzuzeigen.
 
-**Feldspezifische Richtlinien:**
+**Feldrichtlinien:**
 
-- **Texteingaben:** Breite mit Beispielabstand.
-- **Dropdown-Listen** Verwenden Sie native Auswahlelemente für ein besseres Touch-Erlebnis.
-- **Datumsauswahl:** Verwenden Sie native Datumseingaben für die Mobile-Kompatibilität.
-- **Datei-Uploads** Stellen Sie große, übersichtliche Upload-Bereiche bereit.
+- Textfelder sollten sich über die gesamte Breite des Bildschirms erstrecken und über einen für die Touch-Eingabe ausreichenden Abstand verfügen.
+- Verwenden Sie native Dropdown-/Auswahlelemente für eine optimale Mobile-Nutzung.
+- Native Datumsauswahl für ein konsistentes mobiles Erlebnis implementieren
+- Erstellen Sie große und klar beschriftete Bereiche für den Datei-Upload, um einen einfachen Zugriff zu ermöglichen.
 
 +++
 
 +++Tablet-Optimierung (768px-1199px)
 
-**Layout-Strategien:**
+**Layout und Benutzerfreundlichkeit:**
 
-- Verwenden Sie zweispaltige Layouts für verwandte Felder.
-- Testen Sie sowohl Hoch- als auch Querformat.
-- Unterstützt sowohl Touch- als auch Mausinteraktionen.
-- Bereitstellen größerer Inhaltsbereiche bei Beibehaltung der Lesbarkeit.
+- Verwenden Sie zweispaltige Layouts für verwandte Felder, um mehr Platz auf dem Bildschirm zu nutzen.
+- Testen Sie das Aussehen und die Benutzerfreundlichkeit der Formulare sowohl im Hoch- als auch im Querformat.
+- Design für Touch- und Mauseingabe, sodass alle Bedienelemente leicht zugänglich sind.
+- Vergrößern Sie den Inhaltsbereich unter Beibehaltung einer klaren visuellen Hierarchie und Lesbarkeit.
 
 +++
 
 +++Desktop-Optimierung (1200 px+)
 
-**Erweiterte Funktionen:**
+**Erweiterte Funktionen und Layout:**
 
-- Verwenden Sie mehrspaltige Layouts für eine effiziente Platzierungsnutzung.
-- Bieten Sie Tastaturbefehle für Power-User an.
-- Implementieren Sie Hover-Status für interaktives Feedback.
-- Bieten Sie eine erweiterte Validierung mit detaillierten Fehlermeldungen.
+- Verwenden Sie mehrspaltige Layouts, um horizontalen Platz effizient zu nutzen und den vertikalen Bildlauf zu reduzieren.
+- Bereitstellen von Tastaturbefehlen für häufige Aktionen zur Unterstützung von Power-Benutzern.
+- Implementieren Sie Hover-Status und visuelles Feedback für interaktive Elemente.
+- Bieten Sie eine erweiterte Validierung mit klaren, detaillierten Fehlermeldungen für komplexe Formulare.
 
 +++
 
@@ -321,52 +323,52 @@ Layout-Muster bestimmen, wie sich der Formularinhalt an verschiedene Bildschirmg
 
 +++Umbrüche des Formularlayouts auf Mobilgeräten
 
-**Häufige Ursachen:**
+**Mögliche Ursachen:**
 
-- Elemente fester Breite, die nicht skaliert werden können
-- CSS für Layouts, in denen der Desktop zuerst aufgerufen wird
-- Bilder oder Inhalte, die über ihre Container hinausreichen
+- Elemente mit fester Breite, die sich nicht an kleinere Bildschirme anpassen
+- Desktop-First-CSS, das Mobile-Stile überschreibt
+- Bilder oder Inhalte überlaufen ihre Container
 
-**Lösungen:**
+**Fehlerbehebung:**
 
-- Stellen Sie sicher, dass Bilder und Container an die Bildschirmgröße skaliert werden.
-- Verwenden Sie ein Mobile-First-Design mit progressiver Verbesserung.
-- Testen Sie sowohl mit Geräteemulatoren als auch mit echten Geräten.
-- Flexible Dimensionierung statt fester Abmessungen verwenden.
+- Stellen Sie sicher, dass alle Bilder und Container eine relative oder prozentuale Größe verwenden.
+- Beginnen Sie mit einem Mobile-First-CSS-Ansatz und fügen Sie Verbesserungen für größere Bildschirme hinzu.
+- Testen Sie Formulare mit Geräteemulatoren und echten Geräten.
+- Vermeiden Sie feste Abmessungen und verwenden Sie flexible Layouts.
 
 +++
 
 +++Touch-Ziele zu klein
 
-**Häufige Ursachen:**
+**Mögliche Ursachen:**
 
-- Tasten kleiner als 44 Pixel × 44 Pixel
+- Schaltflächen oder Links kleiner als 44 x 44 Pixel
 - Interaktive Elemente zu nahe beieinander platziert
-- Benutzerdefinierte CSS-Einstellungen überschreiben Touch-optimierte Standardeinstellungen
+- Benutzerdefiniertes CSS zur Reduzierung der standardmäßigen Touch-Zielgröße
 
-**Lösungen:**
+**Fehlerbehebung:**
 
-- Stellen Sie sicher, dass alle interaktiven Elemente mindestens 44 Pixel × 44 Pixel groß sind.
-- Abstand zwischen Schaltflächen und Links hinzufügen.
-- Testen Sie die Touch-Interaktion mit den tatsächlichen Fingern, nicht nur mit der Maus.
-- Erhöhen Sie die Anzahl der Touch-Zielbereiche, um das Tippen zu erleichtern.
+- Stellen Sie sicher, dass jedes interaktive Element mindestens 44 Pixel x 44 Pixel groß ist.
+- Fügen Sie einen ausreichenden Abstand zwischen Schaltflächen, Links und anderen Steuerelementen hinzu.
+- Testen Sie mit echten Touch-Geräten, nicht nur mit einer Maus.
+- Erweitern Sie die Touch-Zielbereiche nach Bedarf für die Barrierefreiheit.
 
 +++
 
 +++Probleme mit Inhaltsüberläufen
 
-**Häufige Ursachen:**
+**Mögliche Ursachen:**
 
 - Langer Text oder Beschriftungen, die nicht umbrechen
-- Container mit fester Breite
-- Bilder, die nicht richtig skaliert werden
+- Behälter mit festen Breiten
+- Bilder, die nicht responsiv skaliert werden
 
-**Lösungen:**
+**Fehlerbehebung:**
 
-- Aktivieren Sie den Textumbruch für langen Inhalt.
-- Verwenden Sie responsive Bilder, die entsprechend skaliert werden.
-- Implementieren Sie flexible Layouts, die sich an Inhalte anpassen.
-- Testen Sie mit verschiedenen Inhaltslängen.
+- Aktivieren Sie den Textumbruch für alle Beschriftungen und Inhalte.
+- Verwenden Sie responsive Bilder, die mit dem Container skaliert werden.
+- Entwerfen Sie flexible Layouts, die sich an unterschiedliche Inhaltslängen anpassen lassen.
+- Testen Sie mit kurzen und langen Inhalten, um die Anpassungsfähigkeit sicherzustellen.
 
 +++
 
@@ -374,18 +376,18 @@ Layout-Muster bestimmen, wie sich der Formularinhalt an verschiedene Bildschirmg
 
 +++Langsames Laden auf Mobilgeräten
 
-**Häufige Ursachen:**
+**Mögliche Ursachen:**
 
-- Große Bilder nicht für Mobilgeräte optimiert
-- Übermäßige Ausführung von JavaScript
+- Große, nicht optimierte Bilder
+- Starkes oder übermäßiges JavaScript
 - Zu viele Formularfelder gleichzeitig geladen
 
-**Lösungen:**
+**Fehlerbehebung:**
 
-- Optimieren Sie Bilder für verschiedene Bildschirmgrößen.
-- Laden Sie nicht kritische Inhalte nur bei Bedarf.
-- Verwenden Sie Techniken, um das Laden auf Mobilgeräten zu beschleunigen.
-- Minimieren Sie Skripte und Widgets von Drittanbietern.
+- Optimieren Sie Bilder für Mobilgeräte und verwenden Sie geeignete Dateiformate.
+- Nicht kritische Inhalte aufschieben oder verzögert laden.
+- Minimieren Sie die Verwendung von Skripten und Widgets von Drittanbietern.
+- Formularfelder optimieren, um nur das zu laden, was erforderlich ist.
 
 +++
 
@@ -393,18 +395,18 @@ Layout-Muster bestimmen, wie sich der Formularinhalt an verschiedene Bildschirmg
 
 +++Emulator im Vergleich zu echten Geräteunterschieden
 
-**Häufige Ursachen:**
+**Mögliche Ursachen:**
 
-- Browser-spezifische Rendering-Unterschiede
-- Unterschiede zwischen Touch- und Mausinteraktion
-- Variationen der Netzwerkgeschwindigkeit
+- Unterschiede bei Browser-Rendering-Engines
+- Touch-Interaktion mit der Maus nicht genau simuliert
+- Diskrepanzen bei der Netzwerkgeschwindigkeit
 
-**Lösungen:**
+**Fehlerbehebung:**
 
-- Tests an tatsächlichen Geräten, wann immer möglich.
-- Verwenden Sie mehrere Browser für das Testen von Emulatoren.
-- Simulieren Sie beim Testen unterschiedliche Netzwerkgeschwindigkeiten.
-- Validieren Sie mit echten Benutzern in Zielumgebungen.
+- Testen Sie immer auf echten Geräten zusätzlich zu den Emulatoren.
+- Verwenden Sie mehrere Browser und Geräte für umfassende Tests.
+- Simulieren Sie verschiedene Netzwerkgeschwindigkeiten, um Leistungsengpässe zu identifizieren.
+- Sammeln Sie Feedback von echten Benutzern in Ihrer Zielgruppe.
 
 +++
 
@@ -412,33 +414,34 @@ Layout-Muster bestimmen, wie sich der Formularinhalt an verschiedene Bildschirmg
 
 +++Wichtige Leistungsindikatoren
 
-**Benutzererlebnismetriken:**
+**Benutzererlebnis:**
 
-- **Formularausfüllungsrate:** Target ab 85 % auf Mobilgeräten
-- **Zeit bis zum Abschluss:** Die mobile Abschlusszeit sollte nicht mehr als 20 % vom Desktop entfernt sein
-- **Fehlerrate:** als 5 % Validierungsfehler
-- **Abbruchpunkte:** Stellen Sie fest, an denen Benutzer abbrechen
+- **Formularausfüllungsrate:** Sie auf Mobilgeräten 85 % oder mehr an.
+- **Zeit bis zum Abschluss:** Benutzer von Mobilgeräten sollten Formulare innerhalb von 20 % der Desktop-Ausführungszeiten ausfüllen.
+- **Fehlerrate:** Validierungsfehler unter 5 %.
+- **Abbruchpunkte:** Identifizieren und Beheben von Schritten, bei denen Benutzer abbrechen.
 
 **Technische Leistung:**
 
-- **Seitenladezeit:** Unter 3 Sekunden in 3G-Netzwerken
-- **Core Web Vitals:** Bestehen Sie alle Google-Leistungsbenchmarks
-- **Barrierefreiheitswert:** WCAG 2.1 AA-Konformität
-- **Browser-übergreifende Kompatibilität:** mehr als 98 % Funktionalität in allen gängigen Browsern
+- **Seitenladezeit:** als 3 Sekunden bei einer 3G-Verbindung.
+- **Core Web Vitals** Die von Google empfohlenen Schwellenwerte erreichen oder überschreiten.
+- **Barrierefreiheit:** Einhaltung der WCAG 2.1 AA-Richtlinien.
+- **Browser-Kompatibilität:** Stellen Sie sicher, dass in allen gängigen Browsern mehr als 98 % Funktionalität verfügbar ist.
 
 +++
 
 +++Checkliste testen
 
-**Vor der Veröffentlichung:**
+**Checkliste vor der Veröffentlichung:**
 
-- Testen Sie das Formular auf tatsächlichen Mobilgeräten.
+- Testen Sie das Formular auf tatsächlichen Mobilgeräten (nicht nur Emulatoren).
 - Stellen Sie sicher, dass alle Touch-Ziele mindestens 44 Pixel × 44 Pixel groß sind.
-- Überprüfen Sie die Lesbarkeit des Textes auf allen Bildschirmgrößen.
-- Überprüfen, ob die Formularvalidierung auf allen Geräten funktioniert.
-- Stellen Sie sicher, dass die Ladezeit auf einem Mobilgerät unter 3 Sekunden liegt.
-- Überprüfen Sie, ob alle interaktiven Elemente verfügbar sind.
+- Überprüfen Sie die Lesbarkeit des Texts in allen unterstützten Bildschirmgrößen.
+- Bestätigen, dass die Formularvalidierung über Geräte und Browser hinweg konsistent funktioniert.
+- Stellen Sie sicher, dass die Ladezeit für Mobilgeräte unter 3 Sekunden liegt.
+- Überprüfen Sie, ob über Tastatur und Bildschirmlesehilfen auf alle interaktiven Elemente zugegriffen werden kann.
 - Übermitteln von Testformularen auf allen unterstützten Geräten
+
 
 +++
 
