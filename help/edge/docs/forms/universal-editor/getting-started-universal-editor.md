@@ -186,7 +186,7 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository mit der AEM-Autorenumgebu
 
     >[!NOTE]
     >
->Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
+    >Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
 
 +++
 
@@ -330,7 +330,7 @@ Um mit der Integration von Formularen in Ihr bestehendes AEM-Projekt fortzufahre
 
 >[!NOTE]
 >
-> Wenn Ihr Projekt ursprünglich mit dem AEM Forms-Textbaustein [](https://github.com/adobe-rnd/aem-boilerplate-forms) eingerichtet wurde, ist die Formularfunktionalität bereits enthalten. In diesem Fall können Sie mit dem Abschnitt [Erstes Formular erstellen](#create-your-first-form) fortfahren.
+> Wenn Ihr Projekt ursprünglich mit dem AEM Forms-Textbaustein [&#128279;](https://github.com/adobe-rnd/aem-boilerplate-forms) eingerichtet wurde, ist die Formularfunktionalität bereits enthalten. In diesem Fall können Sie mit dem Abschnitt [Erstes Formular erstellen](#create-your-first-form) fortfahren.
 
 Das folgende Handbuch bietet einen strukturierten Ansatz zum Hinzufügen von Formularfunktionen zu Ihrem vorhandenen Projekt. Jeder Schritt soll eine nahtlose Integration und optimale Funktionalität in der universellen Editor-Umgebung sicherstellen.
 
