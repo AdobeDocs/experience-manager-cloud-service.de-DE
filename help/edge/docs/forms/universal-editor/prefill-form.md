@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Vorbefüllen des adaptiven Formulars, Edge-Bereitstellungsdienste für adaptive Formulare, Automatisches Ausfüllen des adaptiven Formulars
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1787'
 ht-degree: 4%
 
 ---
@@ -249,7 +249,7 @@ Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert si
 3. Wählen Sie **Vorschau als HTML**
 4. Testen des Vorbefüllens durch Anhängen von Parametern an die URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Beispiel:**
 
@@ -267,40 +267,36 @@ Das Formular sollte basierend auf dem angegebenen Parameter automatisch mit Date
 
 **JSON-Beispiel für ein FDM-basiertes Formular:**
 
-    &quot;
-    
-    &lbrace;
-    „afBoundData“: &lbrace;
-    „user“: &lbrace;
-    „firstName“: „John“,
-    „lastName“: „Doe“,
-    „email“: &quot;john.doe@example.com&quot;,
-    „phone“: &quot;+1-555-0123“
-    &rbrace;
-    &rbrace;,
-    „afUnBoundData“: &lbrace;
-    „additionalInfo“: „Benutzereinstellungen geladen“
-    &rbrace;
-    &rbrace;
-    
-    &quot;
+```
+  {
+    "afBoundData": {
+      "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123"
+      }
+    },
+    "afUnBoundData": {
+      "additionalInfo": "User preferences loaded"
+    }
+  }
+```
 
 **XML-Beispiel für XFA-basierte Formulare:**
 
-    &quot;
-    
-    &lt;?xml version=„1.0“ encoding=„UTF-8“?>
-    &lt;afData>
-    &lt;afBoundData>
-    &lt;user>
-    &lt;firstName>John&lt;/firstName>
-    &lt;lastName>Doe&lt;/lastName>
-    &lt;email>john.doe@example.com&lt;/email>
-    &lt;/user>
-    &lt;/afBoundData>
-    &lt;/afData>
-    
-    &quot;
+```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <afData>
+    <afBoundData>
+      <user>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <email>john.doe@example.com</email>
+      </user>
+    </afBoundData>
+  </afData>
+```
 
 ### Beispiel für Vorbefüllungs-URLs
 
