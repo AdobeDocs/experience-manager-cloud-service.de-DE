@@ -249,7 +249,7 @@ Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert si
 3. Wählen Sie **Vorschau als HTML**
 4. Testen des Vorbefüllens durch Anhängen von Parametern an die URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Beispiel:**
 
