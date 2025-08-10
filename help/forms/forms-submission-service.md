@@ -115,7 +115,7 @@ Wählen Sie eine der unterstützten Plattformen:
 
 >[!TIP]
 >
->**Neu bei Edge Delivery Services?** Sie mit dem [Erste Schritte-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial), um Ihre Projektstiftung einzurichten.
+>**Neu bei Edge Delivery Services?** Sie mit dem [Erste Schritte-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial), um Ihre Projektstiftung einzurichten.
 
 ## Konfigurationsmethoden
 
@@ -135,7 +135,7 @@ Der Forms Submission Service bietet zwei Konfigurationsansätze. Wählen Sie die
 
 Bevor Sie eine dieser Methoden konfigurieren, stellen Sie sicher, dass Ihre AEM Project Foundation bereit ist:
 
-1. **Erstellen oder aktualisieren Sie Ihr AEM-Projekt** mit dem neuesten adaptiven Forms-Block ([Erste Schritte-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Erstellen oder aktualisieren Sie Ihr AEM-Projekt** mit dem neuesten adaptiven Forms-Block ([Erste Schritte-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 1. **Aktualisieren von`fstab.yaml`** im Projektstamm:
 
    ```yaml
@@ -166,7 +166,7 @@ Erstellen Sie Ihre Formularstruktur mit Google Sheets oder Microsoft Excel.
 1. **Öffnen der Tabellenkalkulationsplattform** (Google Sheets oder Microsoft Excel)
 1. **Neue Tabelle erstellen** für Ihr Formularprojekt
 1. **Benennen Sie Ihr Blatt** (muss entweder `helix-default` oder `shared-aem` sein)
-1. **Definieren Sie Ihre Formularstruktur** mithilfe des [Handbuchs zur Formularerstellung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+1. **Definieren Sie Ihre Formularstruktur** mithilfe des [Handbuchs zur Formularerstellung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Formulardefinition](/help/forms/assets/form-submission-definition.png)
 *Beispiel: Formulardefinition mit Feldtypen, Beschriftungen und Validierungsregeln*
@@ -568,7 +568,7 @@ Solutions:
 
 - **Early Access Issues:** E-Mail [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **API-Dokumentation** [Entwicklerreferenz](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Community-Support:** [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/)
+- **Community-Support:** [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/?profile.language=de)
 
 +++
 
@@ -579,7 +579,7 @@ Nachdem Sie nun den Forms-Übermittlungsdienst konfiguriert haben, lesen Sie die
 
 +++ Verbessern von Forms
 
-- **[Erweiterte Forms erstellen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Hinzufügen von Validierung, bedingter Logik und benutzerdefiniertem Stil
+- **[Erweiterte Forms erstellen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Hinzufügen von Validierung, bedingter Logik und benutzerdefiniertem Stil
 - **[Handbuch zu Formularkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Verfügbare Formularfeldtypen erkunden
 
 +++
