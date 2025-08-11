@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 3004d7fe69a0666d5747967519ea08e35ca020a4
 workflow-type: tm+mt
-source-wordcount: '6590'
+source-wordcount: '6592'
 ht-degree: 97%
 
 ---
@@ -674,6 +674,7 @@ ht-degree: 97%
          + [Bereitstellungs-APIs](/help/assets/deliver-assets-apis.md)
          + [Einschränken der Asset-Bereitstellung](/help/assets/restrict-assets-delivery.md)
          + [Integrieren der Remote-Version von AEM Assets mit AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [Vorschau von Assets](/help/assets/preview-assets.md)
          + [Häufig gestellte Fragen](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Konfigurieren einer benutzerdefinierten Domain](/help/assets/configure-custom-domain.md)
    + Arbeiten mit der Assets-Ansicht {#assets-view}
