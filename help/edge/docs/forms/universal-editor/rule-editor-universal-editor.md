@@ -308,7 +308,7 @@ Sie erstellen ein Formular, das:
 
 1. **Universellen Editor öffnen**:
    - Navigieren Sie zur AEM Sites-Konsole, wählen Sie Ihre Seite aus und klicken Sie auf **Bearbeiten**
-   - Stellen Sie sicher, dass [universeller Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) ordnungsgemäß konfiguriert ist
+   - Stellen Sie sicher, dass [universeller Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=de) ordnungsgemäß konfiguriert ist
 
 2. **Fügen Sie Formularkomponenten in dieser Reihenfolge hinzu**:
    - Titel (H2): „Steuerberechnungsformular“
@@ -676,7 +676,7 @@ Forms wird zu leistungsstarken Tools für die Datenerfassung, Lead-Qualifizierun
 
 **Zusätzliche**:
 
-- [Dokumentation zum universellen Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) für mehr Kontext
+- [Dokumentation zum universellen Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=de) für mehr Kontext
 - [Extension Manager-Handbuch](/help/implementing/developing/extending/extension-manager.md) zur Aktivierung zusätzlicher Funktionen
 - [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md) für eine umfassende Anleitung zur Formularentwicklung
 
