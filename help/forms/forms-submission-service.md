@@ -383,8 +383,8 @@ Content-Type: application/json
 X-Adobe-Routing: tier=live,bucket=main—your-repo—your-org
 
 Hauptteil (JSON):
-{
-„data“: {
+&lbrace;
+„data“: &lbrace;
 „startDate“: „2025-01-10“,
 „endDate“: „2025-01-25“,
 „destination“: „Australia“,
@@ -395,8 +395,8 @@ Hauptteil (JSON):
 „Alter“: „35“,
 „Subscribe“: null,
 „email“: &quot;mary@gmail.com&quot;
-}
-}
+&rbrace;
+&rbrace;
 &quot;
 
 **Erwartete Antwort:**
