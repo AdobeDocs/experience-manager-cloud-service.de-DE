@@ -147,6 +147,7 @@ Typografie- und Abstandsvariablen ermöglichen eine umfassende Steuerung der Tex
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ Layout- und Strukturvariablen
@@ -1108,6 +1109,7 @@ Sie können CSS-Auswahlen verwenden, um bestimmte Feldtypen als Ziel auszuwähle
   text-align: center;
 }
 ```
+
 +++
 
 +++ Formatierung basierend auf Feldnamen
