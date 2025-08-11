@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 97%
+source-wordcount: '2557'
+ht-degree: 93%
 
 ---
+
 
 # Metadaten in der Assets-Ansicht {#metadata}
 
@@ -181,7 +182,6 @@ Führen Sie die folgenden Schritte aus, um die Link-Komponente im Metadatenformu
    * Klicken Sie auf ![Symbol „Bearbeiten“](assets/do-not-localize/edit.svg), um die URL zu bearbeiten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-
 ### Arbeiten mit der Komponente „Tags“ im Metadatenformular {#tag-component-metadata-form}
 
 Das Stammelement stellt die Baumstruktur der Tags dar, die Sie mit den Assets verknüpfen können, und identifiziert das Asset anhand des ihm zugewiesenen Tags. Darüber hinaus können Sie beim Konfigurieren des Metadatenformulars im Metadaten-Editor den Zugriff auf eine bestimmte Taxonomie beschränken.
@@ -213,6 +213,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 Um die konfigurierten Stamm-Tags anzuzeigen, gehen Sie zur Seite mit den Asset-Details, wo die Zuordnung zwischen dem Metadatenformular und den Stamm-Tags erfolgt.
+
+## Bearbeiten von Metadaten in Forms {#edit-metadata-forms}
+
+Führen Sie die folgenden Schritte aus, um ein Metadatenformular zu bearbeiten:
+
+1. Navigieren Sie zu [!DNL Assets View] Homepage und wählen Sie **[!DNL Metadata Forms]** aus, um eine Liste der Metadatenformulare anzuzeigen.
+1. Wählen Sie ein Formular aus und klicken Sie **[!UICONTROL Bearbeiten]**, um die [!DNL Metadata Form Editor] zu öffnen. Auf dieser Seite werden Komponenten des Metadatenformulars im linken Bereich, Registerkarten wie „Standard“, „Erweitert“, „Tags“ und mehr im mittleren Bereich sowie das Bedienfeld „Einstellungen“ zum Bearbeiten der Metadateneigenschaften im rechten Bereich angezeigt.
+1. Öffnen Sie eine Registerkarte (**[!DNL Basic]**, **[!DNL Advanced]** oder **[!DNL Tags]**).
+1. Wählen Sie eine Metadateneigenschaft aus, um ihre Einstellungen im Bedienfeld **[!UICONTROL Einstellungen]** zu bearbeiten. Sie können Eigenschaftszuordnungen aktualisieren, Kennzeichnungen umbenennen, Eigenschaftswerte ändern oder hinzufügen und weitere solcher Bearbeitungen im Bedienfeld **[!UICONTROL Einstellungen]** durchführen.
+1. Klicken Sie **[!UICONTROL Vorschau]**, um die Änderungen am Formular zu überprüfen, bevor Sie diese Änderungen speichern.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu anzuwenden.
 
 ## Verbessern der Inhaltssuche mit KI-generierten Metadaten {#ai-smart-tags}
 
@@ -291,4 +302,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
