@@ -4,7 +4,7 @@ description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1789'
 ht-degree: 97%
@@ -504,12 +504,12 @@ Folgende Feldtypen werden für Formulare unterstützt:
 - Zahleneingabe
 - Datumseingabe
 - Bedienfeld
-- Kontrollkästchen
-- Dropdown
-- Optionsfeldgruppe
 - Nur-Text
 - Dateieingabe
 - E-Mail
 - Bild
 - Schaltfläche
+- Kontrollkästchen
+- Dropdown
+- Optionsfeldgruppe
 

@@ -4,9 +4,9 @@ description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. 
 keywords: Auswählen einer Übermittlungsaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek und Verbinden eines adaptiven Formulars mit einem Formulardatenmodell (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: d221959bbf19a874ec65eb414c4c49811df291ca
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 50%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 50%
 | AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Dieser Artikel |
 
-## Überblick
 
 Die Formularübermittlung ist der wichtige letzte Schritt der Benutzer-Journey. Dort werden die erfassten Daten verarbeitet und Aktionen durchgeführt. Dieses Dokument enthält eine umfassende Anleitung zum Konfigurieren und Verwalten von Übermittlungsaktionen für adaptive Formulare im universellen Editor.
 
@@ -77,7 +76,7 @@ Sie können die Übermittlungsaktion für Formulare, die im universellen Editor 
 >[!NOTE]
 >
 > - Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-> - Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+> - Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights}.
 
 
 

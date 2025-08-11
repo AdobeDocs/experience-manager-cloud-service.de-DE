@@ -4,7 +4,7 @@ description: Verwenden Sie den universellen Editor für Edge Delivery Services f
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 99%
@@ -173,11 +173,13 @@ Selbstverständlich. Der universelle Editor unterstützt eine nahtlose Datenbind
 **F: Können die Formularkomponenten angepasst werden?**
 Ja, mit dem universellen Editor können Entwickelnde benutzerdefinierte Komponenten erstellen, die auf spezifische organisatorische Anforderungen zugeschnitten sind. Darüber hinaus können Sie die Funktionalität des Editors durch Benutzeroberflächenerweiterungen und benutzerdefinierte Workflows ausweiten.
 
+**F: Welche Art von Analysen bieten mir Formulare?**
+Der universelle Editor enthält integrierte Analyse- und Tracking-Tools zur Überwachung von Benutzerinteraktionen, Formularübermittlungsraten und Konversionsmetriken. Dank dieser Erkenntnisse können Sie Ihre Formulare leistungsstärker gestalten.
+
 **F: Wie sieht es mit dem universellen Editor und dem Thema Barrierefreiheit aus?**
 Der universelle Editor wurde unter strikter Einhaltung von Barrierefreiheitsstandards, darunter WCAG (Web Content Accessibility Guidelines), entwickelt. Dadurch wird sichergestellt, dass die Formulare für Personen mit Behinderungen nutzbar sind, was ein inklusives Erlebnis ermöglicht.
 
-**F: Welche Art von Analysen bieten mir Formulare?**
-Der universelle Editor enthält integrierte Analyse- und Tracking-Tools zur Überwachung von Benutzerinteraktionen, Formularübermittlungsraten und Konversionsmetriken. Dank dieser Erkenntnisse können Sie Ihre Formulare leistungsstärker gestalten.
+
 
 
 

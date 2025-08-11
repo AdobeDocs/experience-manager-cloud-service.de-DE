@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 5%
@@ -41,10 +41,12 @@ Bevor Sie beginnen, bestimmen Sie, welcher Vorlagentyp Ihren Anforderungen entsp
 
 **Entscheidungshilfe:**
 
+![Vorlagenauswahl-Entscheidung](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - Verwenden Sie **Kernkomponenten** für komplexe Workflows, eine tief greifende AEM-Integration oder die Nutzung vorhandener AEM-Assets.
 - Verwenden Sie **Edge Delivery Services** für Leistung, Einfachheit und moderne Entwicklungsverfahren.
 
-![Vorlagenauswahl-Entscheidung](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *Entscheidungs-Flussdiagramm für die Auswahl des entsprechenden Vorlagentyps*
 
 ## Voraussetzungen
@@ -107,7 +109,7 @@ Wählen Sie den Workflow basierend auf Ihrer Vorlagenauswahl aus:
    - Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 
 1. **Vorlage auswählen**
-   - Wählen Sie auf der Registerkarte **0&rbrace;Source** eine **Edge Delivery Services-basierte Vorlage.**
+   - Wählen Sie auf der Registerkarte **0}Source** eine **Edge Delivery Services-basierte Vorlage.**
    - Die **Erstellen** wird aktiviert.
 
      ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
@@ -151,7 +153,7 @@ Wählen Sie den Workflow basierend auf Ihrer Vorlagenauswahl aus:
    - Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 
 1. **Vorlage und Design auswählen**
-   - Wählen Sie auf der **&#x200B;**&#x200B;Source **eine (Kernkomponentenbasierte Vorlage**.
+   - Wählen Sie auf der **** Source **eine (Kernkomponentenbasierte Vorlage**.
    - Wählen Sie ein **Design** für die Formatierung aus.
    - Die **Erstellen** wird aktiviert.
 
@@ -506,7 +508,7 @@ Wenn die Probleme bestehen bleiben:
 
 1. Überprüfen Sie den Status des Adobe Experience Cloud-Service.
 2. Lesen Sie die [Dokumentation zu Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=de).
-3. Besuchen Sie [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/?profile.language=de).
+3. Besuchen Sie [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/).
 4. Adobe-Kundenunterstützung kontaktieren.
 
 +++

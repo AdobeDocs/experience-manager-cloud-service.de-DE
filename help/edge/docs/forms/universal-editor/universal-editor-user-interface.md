@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 4%
@@ -507,19 +507,19 @@ Beherrschen Sie diese Tastaturbefehle, um Formulare schneller und effizienter zu
 - **Planen vor dem Erstellen** - skizzieren Sie die Formularstruktur, bevor Sie beginnen.
 - **Einfach halten** - Vermeiden Sie es, Benutzer mit zu vielen Feldern zu überfordern
 
-### **Leistungsoptimierung**
-
-- **Komponenten minimieren** - Nur erforderliche Formularfelder verwenden
-- **Optimieren von Bildern** - Komprimieren Sie alle Bilder, die in Formularen verwendet werden
-- **Test auf Mobilgerät** - Sicherstellen einer guten Leistung bei langsameren Mobilverbindungen
-- **Frühe Validierung** - Richten Sie eine ordnungsgemäße Validierung ein, um Übermittlungsfehler zu vermeiden
-
 ### **Anwendererlebnis**
 
 - **Häufig testen** - Verwenden Sie den Vorschaumodus nach jeder größeren Änderung
 - **Wie Benutzer denken** - Das vollständige Ausfüllen des Formulars
 - **Klare Beschriftungen bereitstellen** - Machen Sie die Feldzwecke für die Benutzer*innen offensichtlich.
 - **Hilfreichen Text hinzufügen** - Verwenden Sie Hilfetext für komplexe Felder.
+
+### **Leistungsoptimierung**
+
+- **Komponenten minimieren** - Nur erforderliche Formularfelder verwenden
+- **Optimieren von Bildern** - Komprimieren Sie alle Bilder, die in Formularen verwendet werden
+- **Test auf Mobilgerät** - Sicherstellen einer guten Leistung bei langsameren Mobilverbindungen
+- **Frühe Validierung** - Richten Sie eine ordnungsgemäße Validierung ein, um Übermittlungsfehler zu vermeiden
 
 ## Nächste Schritte
 

@@ -4,292 +4,248 @@ description: Erfahren Sie, wie Benutzenden eine Dankesnachricht angezeigt oder s
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 40%
+source-wordcount: '1133'
+ht-degree: 3%
 
 ---
 
 
 # Konfigurieren von Dankesnachrichten und Umleitungs-URLs
 
-Formularfragmente sind wiederverwendbare Komponenten, mit denen sich wiederholende Entwicklungsarbeiten erübrigen und die Konsistenz der Formulare in Ihrem Unternehmen sicherstellen lassen. Anstatt für jedes Formular gemeinsame Abschnitte wie Kontaktinformationen, Adressdetails oder Einverständniserklärungen neu zu erstellen, können Sie diese Elemente einmal als Fragmente erstellen und sie in mehreren Formularen wiederverwenden.
+Erfahrungen nach der Übermittlung beeinflussen die Benutzerzufriedenheit und die Formularausfüllungsraten erheblich. Der universelle Editor von Adobe bietet umfangreiche Optionen zum Konfigurieren dessen, was Benutzende nach dem Senden von Formularen sehen, sei es durch personalisierte Dankesnachrichten oder strategische Umleitungen zu bestimmten Seiten.
 
-**Was Sie in diesem Artikel erreichen werden:**
-
-- Machen Sie sich mit dem geschäftlichen Nutzen und den technischen Funktionen von Formularfragmenten vertraut
-- Erstellen wiederverwendbarer Formularfragmente mit dem universellen Editor
-- Integrieren von Fragmenten in vorhandene Formulare mit ordnungsgemäßer Konfiguration
-- Verwalten des Lebenszyklus von Fragmenten und Beibehalten der Konsistenz über Formulare hinweg
-
-**Vorteile für Unternehmen:**
-
-- **Verkürzte Entwicklungszeit**: Einmalige Erstellung von allgemeinen Formularabschnitten und Wiederverwendung überall
-- **Verbesserte Konsistenz**: Standardisierte Layouts und Inhalte für alle Formulare
-- **Vereinfachte Wartung**: Aktualisieren Sie ein Fragment einmal, um Änderungen in allen Formularen widerzuspiegeln, die es verwenden
-- **Verbesserte Compliance**: Sicherstellen, dass die regulatorischen Abschnitte konsistent und aktuell bleiben
-
-Formularfragmente in Edge Delivery Services unterstützen erweiterte Funktionen wie verschachtelte Fragmente, mehrere Instanzen innerhalb eines Formulars und die nahtlose Integration in Datenquellen.
-
-## Grundlagen zu Formularfragmenten
-
-Formularfragmente in Edge Delivery Services bieten leistungsstarke Funktionen für die Entwicklung modularer Formulare:
-
-**Kernfunktionen:**
-
-- **Konsistenzmanagement**: Fragmente verwalten identische Layouts und Inhalte in mehreren Formularen. Mit dem Ansatz „Einmal ändern, überall widerspiegeln“ werden Aktualisierungen an einem Fragment automatisch auf alle Formulare im Vorschaumodus angewendet.
-- **Mehrfache Verwendung**: Fügen Sie dasselbe Fragment mehrmals in einem einzelnen Formular hinzu, wobei jedes Fragment eine unabhängige Datenbindung an verschiedene Datenquellen oder Schemaelemente aufweist.
-- **Verschachtelte Strukturen**: Erstellen Sie komplexe Hierarchien, indem Sie Fragmente in andere Fragmente einbetten, um komplexe Formulararchitekturen zu erstellen.
-
-**Technische Anforderungen:**
-
-- **Konsistenz der GitHub-URL**: Sowohl das Fragment als auch jedes Formular, das es verwendet, müssen dieselbe GitHub-Repository-URL angeben
-- **Eigenständige Bearbeitung**: Fragmente können nur in ihrer eigenständigen Form geändert werden. Änderungen können nicht innerhalb des Hostformulars vorgenommen werden.
-
-**Veröffentlichungsverhalten:**
-
->[!IMPORTANT]
->
->Im Vorschaumodus werden Fragmentänderungen sofort in allen Formularen übernommen. Im Veröffentlichungsmodus müssen Sie sowohl das Fragment als auch alle Formulare, die es verwenden, erneut veröffentlichen, um Aktualisierungen anzuzeigen.
-
->[!CAUTION]
->
->Vermeiden Sie rekursive Fragmentverweise (Verschachteln eines Fragments in sich selbst), da dies zu Rendering-Fehlern und unerwartetem Verhalten führt.
+Dieser Artikel enthält detaillierte Anleitungen zur Implementierung von Dankesnachrichten und Umleitungs-URLs, einschließlich technischer Überlegungen, Best Practices und Richtlinien für das Benutzererlebnis, um die Effektivität Ihrer Formularübermittlungen zu maximieren.
 
 ## Voraussetzungen
 
-**Technische Setup-Anforderungen:**
+Bevor Sie Erlebnisse nach der Übermittlung konfigurieren, stellen Sie sicher, dass die folgenden Punkte erfüllt sind:
 
-- [GitHub-Repository konfiguriert](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository hergestellt
-- [Neuester adaptiver Forms-Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) zum GitHub-Repository hinzugefügt (für bestehende Edge Delivery Services-Projekte)
-- AEM Forms-Autoreninstanz mit Edge Delivery Services-Vorlage verfügbar
-- Zugriff auf die URL Ihrer AEM Forms as a Cloud Service-Autoreninstanz und die GitHub-Repository-URL
+**Technische Einrichtung:**
 
-**Erforderliche Kenntnisse und Berechtigungen:**
+- Zugriff auf den universellen Editor mit entsprechenden Berechtigungen
+- Ein vorhandenes adaptives Formular, das im universellen Editor erstellt wurde
+- Informationen zu den Anforderungen Ihres Unternehmens an Umleitungs-URLs
 
-- Grundlegendes zu Konzepten des Formularentwurfs und zur Komponentenhierarchie
-- Vertrautheit mit der Benutzeroberfläche des universellen Editors und den Workflows zur Formularerstellung
-- Berechtigungen auf Autorenebene in AEM Forms zum Erstellen und Verwalten von Formular-Assets
-- Verständnis der Formularstandards Ihres Unternehmens und der wiederverwendbaren Komponentenanforderungen
+**Überlegungen zur Planung:**
 
-## Arbeiten mit Edge Delivery Services-Formularfragmenten
+- **Nachrichtenstrategie**: Definieren Sie den Ton, die Länge und spezifische Informationen, die in Dankesnachrichten aufgenommen werden sollen
+- **Umleitungsstrategie**: Zielseiten identifizieren und sicherstellen, dass sie für Erlebnisse nach dem Ausfüllen des Formulars optimiert sind
+- **Analytics-Integration**: Planen Sie, wie Sie Benutzerinteraktionen mit Dankesnachrichten oder Umleitungszielen verfolgen.
 
-Sie können Edge Delivery Services-Formularfragmente im universellen Editor erstellen und die erstellten Fragmente zu Edge Delivery Services-Formularen hinzufügen. Sie können mit Edge Delivery Services-Formularfragmenten die folgenden Aktionen durchführen:
+## Konfigurieren von Dankesnachrichten
 
-- [Erstellen von adaptiven Formularfragmenten](#creating-form-fragments)
-- [Hinzufügen von Formularfragmenten zu einem Formular](#adding-form-fragments-to-a-form)
-- [Verwalten von Formularfragmenten](#managing-form-fragments)
+Dankesnachrichten bieten eine sofortige Bestätigung einer erfolgreichen Formularübermittlung und können personalisierte Inhalte, nächste Schritte oder wichtige Informationen enthalten, die für die Übermittlung des Benutzers relevant sind.
 
-+++ Erstellen von adaptiven Formularfragmenten
+### Verwendung von Dankesnachrichten
 
-Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt vor:
+Dankesnachrichten funktionieren am besten, wenn:
 
-1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
-1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
-1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
+- **Einfache Bestätigung**: Benutzer benötigen eine Bestätigung ohne zusätzliche Navigationsanforderungen
+- **Anleitungsinhalt**: Sie müssen spezifische nächste Schritte oder wichtige Informationen angeben
+- **Markenkonsistenz**: Die Botschaft kann entsprechend dem Kommunikationsstil Ihres Unternehmens gestaltet werden
+- **Einseitiges Erlebnis**: Benutzer sollten zur Kontinuität des Workflows auf der aktuellen Seite bleiben
 
-   ![Erstellen eines Fragments](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
+### Implementierungsschritte
 
-   Der Assistent zum **Erstellen von adaptiven Formularfragmenten** wird angezeigt.
-1. Wählen Sie auf der Registerkarte **Vorlage auswählen** die auf Edge Delivery Services basierende Vorlage aus und klicken Sie auf **[!UICONTROL Weiter]**.
-   ![Auswählen einer Edge Delivery Services-Vorlage](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
+**1. Zugriff auf Formulareigenschaften**
 
-1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
-1. Geben Sie die **GitHub-URL** an. Wenn sich Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter der `wkndforms` befindet, wird die URL `https://github.com/wkndforms/edsforms`.
+Öffnen Sie Ihr adaptives Formular im universellen Editor und klicken Sie auf das Symbol **Formulareigenschaften bearbeiten** in der Symbolleiste. Dadurch wird das Dialogfeld für die Formulareigenschaften geöffnet.
 
-   ![Allgemeine Eigenschaften](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
+**2. Navigieren Sie zur Dankeskonfiguration**
 
-1. (Optional) Klicken Sie auf die Registerkarte **Formularmodell**, um sie zu öffnen. Wählen Sie dann aus dem Dropdown-Menü **Auswählen** eines der folgenden Fragmentmodelle:
+Wählen Sie im Dialogfeld „Formulareigenschaften“ die Registerkarte **Vielen Dank**, um auf die Konfigurationsoptionen nach der Übermittlung zuzugreifen.
 
-   ![Zeigt den Modelltyp auf der Registerkarte „Formularmodell“ an](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
+**3. Konfigurieren Sie die Nachrichtenanzeige**
 
-   - **Formulardatenmodell (FDM)**: Zum Integrieren von Datenmodellobjekten und Diensten aus Datenquellen in Ihr Fragment. Wählen Sie „Formulardatenmodell (FDM)“, wenn Ihr Formular das Lesen und Schreiben von Daten aus mehreren Quellen erfordert.
+Wählen Sie **Nachricht anzeigen** aus den verfügbaren Optionen aus. Dadurch wird der Nachrichteninhalt-Editor mit Rich-Text-Funktionen aktiviert.
 
-   - **JSON-Schema**: Zum Integrieren Ihres Formulars in ein Backend-System, indem Sie ein JSON-Schema verknüpfen, das die Datenstruktur definiert. Damit können Sie dynamische Inhalte mithilfe der Schemaelemente hinzufügen.
-   - **Keine**: Gibt an, dass das Fragment von Grund auf ohne Formularmodell erstellt werden soll.
+**4. Nachrichteninhalt erstellen**
 
-   >[!NOTE]
-   >
-   > Informationen zum Integrieren von Formularen oder Fragmenten mit einem Formulardatenmodell (FDM) im universellen Editor zur Verwendung verschiedener Backend-Datenquellen finden Sie unter [Integrieren von Formularen in das Formulardatenmodell im universellen Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+Erstellen **im Feld** Nachrichteninhalt“ Ihre Dankesnachricht mit dem Rich-Text-Editor. Der Editor unterstützt:
 
-1. (Optional) Geben Sie auf der Registerkarte **Erweitert** das **Veröffentlichungsdatum** oder das **Datum der Aufhebung der Veröffentlichung** für das Fragment an.
+- **Textformatierung**: Fett, Kursiv, Unterstrichen und Farboptionen
+- **Listen**: Aufzählungs- und nummerierte Listen zum Organisieren von Informationen
+- **Links**: Direkte Links zu relevanten Ressourcen oder nächste Schritte
+- **Bearbeitung im Vollbildmodus**: Klicken Sie auf das Erweiterungssymbol, um einen größeren Bearbeitungsarbeitsbereich anzuzeigen
 
-   ![Registerkarte „Erweitert“](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. Klicken Sie **Erstellen**, um das Fragment zu generieren. Es wird ein Erfolgsdialogfeld mit Bearbeitungsoptionen angezeigt.
+### Technische Überlegungen
 
-   ![Bearbeiten eines Fragments](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
+**Anzeigeverhalten von Nachrichten:**
 
-1. Klicken Sie **Bearbeiten**, um das Fragment im universellen Editor mit angewendeter Standardvorlage zu öffnen.
+- Nachrichten werden unmittelbar nach der Formularübermittlung in einer modalen Überlagerung angezeigt
+- Inhalte unterstützen HTML-Formatierung und behalten responsives Design bei
+- Nachrichten können von Benutzern verworfen oder mit automatisch schließenden Timern konfiguriert werden
 
-   ![Fragment im universellen Editor für das Authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+**Inhaltsrichtlinien:**
 
-1. **Gestalten Ihres Fragmentinhalts**: Fügen Sie Formularkomponenten (Textfelder, Dropdown-Listen, Kontrollkästchen) hinzu, um den wiederverwendbaren Abschnitt zu erstellen. Detaillierte Komponentenanleitungen finden Sie unter [Erste Schritte mit Edge Delivery Services für AEM Forms mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+- Halten Sie die Nachrichten kurz, während Sie die erforderlichen Informationen bereitstellen
+- Gegebenenfalls klare nächste Schritte einschließen
+- Erwägen Sie, Referenznummern oder Bestätigungsdetails einzuschließen
+- Sicherstellen einer mobilfreundlichen Formatierung
 
-1. **Komponenteneigenschaften konfigurieren**: Legen Sie Feldnamen, Validierungsregeln und Standardwerte nach Bedarf für Ihren Anwendungsfall fest.
+### Beispielimplementierung
 
-1. **Speichern und Vorschau**: Speichern Sie das Fragment und verwenden Sie den Vorschaumodus, um das Layout und die Funktionalität zu überprüfen.
+    Vielen Dank für Ihre Übermittlung!
+    
+    Ihre Bewerbung ist eingegangen und erhält die Referenznummer #REF-2024-001234.
+    
+    **Was passiert als Nächstes:**
+    - Sie erhalten innerhalb von 15 Minuten eine Bestätigungs-E-Mail
+    - Unser Team wird Ihre Übermittlung innerhalb von 2 Werktagen überprüfen
+    - Wir werden Sie direkt kontaktieren, wenn zusätzliche Informationen benötigt werden
+    
+    **Hilfe benötigen?** Kontaktieren Sie unser Support-Team unter support@example.com
 
-   ![Screenshot eines ausgefüllten Formularfragments für Kontaktdetails im universellen Editor mit Feldern für Name, Telefon, E-Mail und Adresse, die in mehreren Formularen wiederverwendet werden können](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+## Konfigurieren von Umleitungs-URLs
 
-**Validierungs-Checkpoint:**
+Umleitungs-URLs navigieren Benutzer nach der Formularübermittlung automatisch zu bestimmten Seiten, was eine nahtlose Integration in vorhandene Workflows ermöglicht oder Benutzer zu relevanten Inhalten weiterleitet.
 
-- Fragment wird im universellen Editor fehlerfrei geladen
-- Alle Formularkomponenten werden korrekt gerendert
-- Feldeigenschaften und Validierungsregeln funktionieren ordnungsgemäß
-- Fragment wird gespeichert und ist in der Forms- und Dokumentenkonsole verfügbar
+### Verwendung von Umleitungs-URLs
 
-Sobald Ihr Fragment vollständig ist, können Sie [es in ein beliebiges Edge Delivery Services-Formular integrieren](#adding-form-fragments-to-a-form).
+Umleitungs-URLs sind optimal für:
 
-+++
+- **Workflow-Integration**: Weiterleitung von Benutzern zu Dashboards, Kontoseiten oder zu den nächsten Schritten in einem Prozess
+- **Inhaltsbereitstellung**: Anzeigen relevanter Produkte, Services oder Informationen basierend auf Formularantworten
+- **Analytics-Tracking**: Weiterleitung zu Seiten mit bestimmten Tracking-Implementierungen
+- **Mehrstufige Prozesse**: Übergang von Benutzern zur nächsten Phase komplexer Workflows
 
+### Implementierungsschritte
 
-+++ Hinzufügen von Formularfragmenten zu einem Formular
+**1. Zugriff auf Formulareigenschaften**
 
-Dieses Beispiel zeigt das Erstellen eines `Employee Details` Formulars, das das `Contact Details` Fragment für die Abschnitte „Mitarbeiter“ und „Vorgesetzte“ verwendet. Dieser Ansatz gewährleistet eine konsistente Datenerfassung und reduziert gleichzeitig den Entwicklungsaufwand.
+Öffnen Sie Ihr adaptives Formular im universellen Editor und klicken Sie auf das Symbol **Formulareigenschaften bearbeiten**, um das Dialogfeld für die Formularkonfiguration zu öffnen.
 
-So integrieren Sie ein Formularfragment in Ihr Formular:
+**2. Navigieren Sie zur Dankeskonfiguration**
 
-1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Fügen Sie die Komponente „Formularfragment“ dem Formular hinzu.
-1. Öffnen Sie den Inhalts-Browser und navigieren Sie in der **Inhaltsstruktur** zur Komponente **[!UICONTROL Adaptives Formular]**.
-1. Navigieren Sie zum Abschnitt, in dem ein Fragment hinzugefügt werden soll. Navigieren Sie beispielsweise zum Panel mit den **Mitarbeiterdetails**.
+Wählen Sie die **Vielen Dank** im Dialogfeld Formulareigenschaften , um auf die Optionen für die Umleitungskonfiguration zuzugreifen.
 
-   ![Navigieren zum Abschnitt](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
+**3. Umleitungsfunktion aktivieren**
 
-1. Klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und fügen Sie die Komponente **[!UICONTROL Formularfragment]** aus der Liste der **adaptiven Formularkomponenten** hinzu.
-   ![Hinzufügen eines Formularfragments](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
+Wählen Sie **Umleiten zur URL** aus den verfügbaren Optionen nach der Übermittlung aus.
 
-   Wenn Sie die Komponente **[!UICONTROL Formularfragment]** auswählen, wird das Fragment zu Ihrem Formular hinzugefügt. Sie können die Eigenschaften des hinzugefügten Fragments konfigurieren, indem Sie dessen **Eigenschaften** öffnen. Blenden Sie beispielsweise den Titel des Fragments in seinen **Eigenschaften** aus.
+**4. Konfigurieren der Ziel-URL**
 
-   ![Konfigurieren der Fragmenteigenschaften](/help/edge/docs/forms/universal-editor/assets/fragment-properties.png)
+Geben Sie Ihre Ziel-URL in das bereitgestellte Feld ein. Das System unterstützt mehrere URL-Formate für eine flexible Implementierung.
 
-1. Wählen Sie den **Fragmentverweis** auf der Registerkarte **Allgemein** aus. Je nach Formularmodell werden alle für Ihr Formular verfügbaren Fragmente angezeigt.
+### URL-Konfigurationsoptionen
 
-   Navigieren Sie beispielsweise zu `/content/forms/af` und wählen Sie das Fragment `Contact Details` aus:
+**Absolute URLs**
 
-   ![Auswählen eines Fragments](/help/edge/docs/forms/universal-editor/assets/select-fragment.png)
+Vollständige Web-Adressen, einschließlich Protokoll und Domain:
 
-1. Klicken Sie auf **[!UICONTROL Auswählen]**.
+    https://www.example.com/thank-you
+    https://dashboard.example.com/user/profile
 
-   Das Formularfragment wird per Verweis auf das Formular hinzugefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert.
+**Relative Pfade**
 
-   ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ erfolgreich in ein Mitarbeiterformular im universellen Editor integriert wurde und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+Relative Pfade zu Ihrer aktuellen Domain:
 
-   Sie können das Formular in einer Vorschau anzeigen, um zu sehen, wie das Formular im Modus **Vorschau** aussieht.
+    /thank-you
+    /dashboard/user-profile
+    ../confirmation-page.html
 
-   ![Vorschau](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
+**AEM Sites-Seitenverweise**
 
-   Auf ähnliche Weise können Sie die Schritte 3 bis 7 wiederholen, um das Fragment `Contact Details` für das Panel `Supervisor Details` einzufügen.
+Verweise auf andere Seiten innerhalb Ihrer AEM Sites-Implementierung:
 
-   ![Formular „Mitarbeiterdetails“](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+    /content/mysite/en/thank-you
+    /content/mysite/en/next-step
 
-+++
+### Technische Überlegungen
 
+**Umleitungsverhalten:**
 
+- Umleitungen erfolgen unmittelbar nach erfolgreicher Formularübermittlung
+- Der Browser-Verlauf enthält die Umleitung für eine ordnungsgemäße Backbutton-Funktionalität
+- Der Umleitungs-Timing kann mit optionalen Verzögerungen konfiguriert werden.
 
-+++ Verwalten von Formularfragmenten
+**URL-Validierung:**
 
-Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für Formularfragmente ausführen.
+- Das System überprüft das URL-Format, bevor die Konfiguration zugelassen wird
+- Relative URLs werden für die aktuelle Domain aufgelöst.
+- Externe URLs erfordern bei Bedarf eine ordnungsgemäße CORS-Konfiguration
 
-1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
-1. Wählen Sie **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
+## Best Practices und Empfehlungen
 
-1. Wenn Sie ein Formularfragment auswählen, werden in der Symbolleiste die folgenden Vorgänge angezeigt, die Sie mit dem ausgewählten Fragment durchführen können.
+### Richtlinien für das Benutzererlebnis
 
-   ![Verwalten von Fragmenten](/help/edge/docs/forms/universal-editor/assets/manage-fragment.png)
+**Nachrichtenoptimierung:**
 
-   <table>
-    <tbody>
-    <tr>
-   <td><p><strong>Vorgang</strong></p> </td>
-   <td><p><strong>Beschreibung</strong></p> </td>
-    </tr>
-    <tr>
-   <td><p>Bearbeiten</p> </td>
-   <td><p>Öffnet das Formularfragment im Bearbeitungsmodus.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Eigenschaften</p> </td>
-   <td><p>Bietet Optionen zum Ändern der Eigenschaften des Formularfragments.<br /> <br /> </p> </td>
-    </tr>
-    <td><p>Kopieren</p> </td>
-   <td><p> Bietet Optionen zum Kopieren des Formularfragments und zum Einfügen des Fragments an der gewünschten Position. <br /> <br /> </p> </td>
-    </tr>
-   <tr>
-   <td><p>Vorschau</p> </td>
-   <td><p>Bietet Optionen zum Anzeigen einer HTML-Vorschau des Fragments oder für eine benutzerdefinierte Vorschau des Fragments durch Zusammenführen von Daten aus einer XML-Datei mit dem Fragment. <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Herunterladen</p> </td>
-   <td><p>Lädt das ausgewählte Fragment herunter.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Überprüfung starten/Überprüfung verwalten</p> </td>
-   <td><p>Ermöglicht es, eine Überprüfung des ausgewählten Fragments zu initiieren und zu verwalten.<br /> <br /> </p> </td>
-    </tr>
-    <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
-    <tr>
-   <td><p>Veröffentlichen/Veröffentlichung rückgängig machen</p> </td>
-   <td><p>Veröffentlicht das ausgewählte Fragment bzw. macht die Veröffentlichung rückgängig.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Löschen</p> </td>
-   <td><p>Löscht das ausgewählte Fragment.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Vergleichen</p> </td>
-   <td><p>Vergleicht zwei verschiedene Formularfragmente zu Vorschauzwecken.<br /> <br /> </p> </td>
-    </tr>
-    </tbody>
-    </table>
+- **Klarheit zuerst**: Stellen Sie sicher, dass Benutzer sofort verstehen, dass ihre Übermittlung erfolgreich war
+- **Wertschöpfung**: Bereitstellung von Informationen, die den Benutzern bei den nächsten Schritten helfen
+- **Konsistentes Branding**: Behalten Sie die Stimme und den visuellen Stil Ihres Unternehmens bei
+- **Überlegungen zum Mobilgerät** Testen von Nachrichten in verschiedenen Bildschirmgrößen
 
-+++
+**Umleitungsoptimierung:**
 
-## Best Practices
+- **Seitenoptimierung**: Stellen Sie sicher, dass Umleitungsziele für Post-Formular-Besucher optimiert sind
+- **Leistung wird geladen** Überprüfen Sie, ob Umleitungsseiten schnell geladen werden, um das Benutzererlebnis zu erhalten.
+- **Inhaltsrelevanz**: Stellen Sie sicher, dass der Umleitungsinhalt für den Formularkontext relevant ist
 
-**Design und Benennung von Fragmenten:**
+### Sicherheitsaspekte
 
-- **Verwenden beschreibender, eindeutiger Namen** Wählen Sie Namen aus, die den Zweck des Fragments klar angeben (z. B. „contact-details-with-validation“ anstelle von „fragment1„).
-- **Wiederverwendbarkeit planen**: Entwerfen Sie Fragmente kontextunabhängig, sodass sie über verschiedene Formulartypen hinweg funktionieren
-- **Fragmente fokussiert halten**: Erstellen Sie Fragmente für einen einzigen Zweck anstelle von komplexen, multifunktionalen Komponenten
+**URL-Validierung:**
 
-**Entwicklungs-Workflow:**
+- Gültige Validierung für Umleitungs-URLs implementieren, um bösartige Umleitungen zu verhindern
+- Erwägen von Ansätzen zur Whitelist für zulässige Umleitungs-Domains
+- Überwachen von Umleitungsmustern für ungewöhnliche Aktivitäten
 
-- **Fragmente unabhängig testen**: Überprüfen der Fragmentfunktionalität vor der Integration in Formulare
-- **Konsistente GitHub-URLs beibehalten**: Stellen Sie sicher, dass in allen zugehörigen Fragmenten und Formularen dieselbe Repository-URL verwendet wird
-- **Zweck von Dokumentfragmenten**: Geben Sie klare Beschreibungen und Tags an, damit Team-Mitglieder verstehen können, wann die einzelnen Fragmente verwendet werden sollen
+**Inhaltssicherheit:**
 
-**Veröffentlichung und Wartung:**
+- Bereinigen des Inhalts der Dankesnachricht, um das Einfügen von Skripten zu verhindern
+- Implementieren von korrekten Inhaltssicherheitsrichtlinien für Rich-Text-Inhalte
+- Regelmäßige Sicherheitsüberprüfungen von Umleitungszielen
 
-- **Veröffentlichung koordinieren**: Planen Sie beim Aktualisieren von Fragmenten, alle abhängigen Formulare gleichzeitig erneut zu veröffentlichen
-- **Versionskontrolle**: Verwenden Sie aussagekräftige Commit-Meldungen beim Aktualisieren von Fragmenten, um Änderungen im Laufe der Zeit zu verfolgen
-- **Abhängigkeiten überwachen**: Verfolgen Sie, welche Formulare die einzelnen Fragmente zur Bewertung der Auswirkungen von Aktualisierungen verwenden
+### Analyse und Tracking
 
->[!TIP]
->
->Fragmentstile, Skripte und Ausdrücke werden bei der Einbettung beibehalten. Daher ist bei der Gestaltung diese Vererbung zu berücksichtigen.
+**Überlegungen zur Implementierung:**
 
-## Zusammenfassung
+- **Zielverfolgung**: Einrichten von Analysezielen sowohl für die Ansichten der Dankesnachricht als auch für die Weiterleitung
+- **User Journey Mapping**: Verfolgen Sie, wie Benutzer mit Erlebnissen nach der Übermittlung interagieren
+- **Konversionsoptimierung**: A/B-Test verschiedener Dankesnachrichten und Umleitungsziele
 
-Sie haben gelernt, wie Sie Formularfragmente in Edge Delivery Services nutzen können, um die Entwicklungseffizienz zu verbessern und die Konsistenz zwischen den Formularen Ihres Unternehmens zu gewährleisten.
+**Messstrategien:**
 
-**Wichtigste Ergebnisse:**
+- Überwachen der Besuchszeit für Dankesnachrichten vor der Kündigung
+- Tracking der Klickraten für Links in Dankesnachrichten
+- Analysieren des Benutzerverhaltens auf Umleitungszielseiten
 
-- **Verständnis**: Ermitteln Sie den geschäftlichen Nutzen und die technischen Möglichkeiten von Formularfragmenten
-- **Erstellung**: Erstellen wiederverwendbarer Formularfragmente mit dem universellen Editor mit ordnungsgemäßer Konfiguration
-- **Integration**: Es wurden Fragmente zu Formularen mit korrekter Referenzeinrichtung und Eigenschaftskonfiguration hinzugefügt.
-- **Management**: Durchsuchte Vorgänge des Fragmentlebenszyklus und Wartungs-Workflows
+## Validierungs-Checkpoints
 
-**Nächste Schritte:**
+Nach der Konfiguration des Erlebnisses nach der Übermittlung:
 
-- Erstellen Sie eine Bibliothek häufig verwendeter Fragmente für Ihre Organisation
-- Festlegen von Benennungskonventionen und Governance-Richtlinien für die Fragmentverwendung
-- Erkunden Sie die erweiterte Integration mit [Formulardatenmodellen](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) für dynamische datengesteuerte Fragmente
-- Implementieren von fragmentbasierten Formularvorlagen für konsistente Benutzererlebnisse
+**Konfigurationsüberprüfung:**
 
-Ihre Formulare profitieren jetzt von einer modularen, verwaltbaren Architektur, die effizient über Projekte skaliert werden kann, während gleichzeitig konsistente Benutzererlebnisse sichergestellt werden.
+- Formulareigenschaften zeigen die ausgewählte Dankesoption korrekt an
+- Nachrichteninhalt wird im Vorschaumodus korrekt angezeigt
+- Umleitungs-URLs sind ordnungsgemäß formatiert und zugänglich
+- Alle Links in Nachrichten funktionieren ordnungsgemäß
+
+**Benutzererlebnistests:**
+
+- Senden von Testformularen zur Überprüfung der korrekten Anzeige von Dankesnachrichten
+- Testen der Weiterleitungsfunktion über verschiedene Browser hinweg
+- Überprüfen der mobilen Reaktionsfähigkeit von Dankesnachrichten
+- Überprüfen, ob Umleitungsziele ordnungsgemäß geladen werden
+
+**Analytics-Einrichtung:**
+
+- Trackingcodes für Dankesnachrichten richtig implementiert
+- Tracking des Umleitungsziels konfiguriert
+- Richtige Auslösung von Zielabschlussereignissen
+
+## Nächste Schritte
+
+Nach erfolgreicher Konfiguration des Erlebnisses nach der Übermittlung:
+
+- **Leistung überwachen**: Überprüfen Sie die Analysen, um die Benutzerinteraktion mit Dankesnachrichten oder Umleitungsseiten zu verstehen
+- **Iterieren und verbessern**: Verwenden Sie Benutzer-Feedback und Dateneinblicke, um Ihre Strategie nach der Übermittlung zu verfeinern
+- **Implementierung skalieren**: Wenden Sie erfolgreiche Muster auf andere Formulare in Ihrer Organisation an
+
+**Verwandte Dokumentation:**
+
+- [Konfigurationshandbuch für die Formularübermittlung](submit-action.md)
+- [Best Practices für das Benutzererlebnis](responsive-layout.md)
 

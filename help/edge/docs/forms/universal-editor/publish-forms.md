@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [Formulare veröffentlichen, Edge Delivery Services, Formularkonfiguration, CORS, Referrer-Filter]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: 746
 ht-degree: 2%
@@ -284,7 +284,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [Konfigurieren von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Gestalten und Gestalten von Formularen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [Hinzufügen eines reCAPTCHA-Schutzes](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Erstellen von responsiven Formular-Layouts](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [Hinzufügen eines reCAPTCHA-Schutzes](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 

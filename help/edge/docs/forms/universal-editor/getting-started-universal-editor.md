@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 2%
@@ -186,7 +186,7 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository mit der AEM-Autorenumgebu
 
     >[!NOTE]
     >
-    >Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
+>Haben Sie Build-Probleme? Siehe [Fehlerbehebung für GitHub-Build-Probleme](#troubleshooting-github-build-issues).
 
 +++
 
@@ -330,7 +330,7 @@ Um mit der Integration von Formularen in Ihr bestehendes AEM-Projekt fortzufahre
 
 >[!NOTE]
 >
-> Wenn Ihr Projekt ursprünglich mit dem AEM Forms-Textbaustein [&#128279;](https://github.com/adobe-rnd/aem-boilerplate-forms) eingerichtet wurde, ist die Formularfunktionalität bereits enthalten. In diesem Fall können Sie mit dem Abschnitt [Erstes Formular erstellen](#create-your-first-form) fortfahren.
+> Wenn Ihr Projekt ursprünglich mit dem AEM Forms-Textbaustein [](https://github.com/adobe-rnd/aem-boilerplate-forms) eingerichtet wurde, ist die Formularfunktionalität bereits enthalten. In diesem Fall können Sie mit dem Abschnitt [Erstes Formular erstellen](#create-your-first-form) fortfahren.
 
 Das folgende Handbuch bietet einen strukturierten Ansatz zum Hinzufügen von Formularfunktionen zu Ihrem vorhandenen Projekt. Jeder Schritt soll eine nahtlose Integration und optimale Funktionalität in der universellen Editor-Umgebung sicherstellen.
 
@@ -759,27 +759,6 @@ Wenn „Der Pfad zum Modul &quot;/scripts/lib-franklin.js&quot; kann nicht aufge
 
 +++
 
-+++Probleme mit dem universellen Editor
-
-**Problem:** Formularkomponenten werden nicht im universellen Editor angezeigt
-
-**Lösungen:**
-
-- Überprüfen Sie, ob AEM Code Sync installiert ist und ausgeführt wird
-- Vergewissern Sie sich, dass `fstab.yaml` über die richtige AEM-Autoren-URL verfügt
-- Stellen Sie sicher, dass für Ihre AEM-Instanz der frühzeitige Zugriff aktiviert ist
-- Bestätigen, `component-definition.json` Formularkomponenten enthält
-
-**Problem:** Änderungen nach der Veröffentlichung nicht sichtbar
-
-**Lösungen:**
-
-- Auf CDN-Cache-Aktualisierung warten
-- Browser-Cache überprüfen (im Inkognito-/Privat-Modus versuchen)
-- Überprüfen, ob das richtige URL-Format verwendet wird
-
-+++
-
 +++Probleme mit der Formularfunktionalität
 
 **Problem:** Formularübermittlungen funktionieren nicht
@@ -801,4 +780,27 @@ Wenn „Der Pfad zum Modul &quot;/scripts/lib-franklin.js&quot; kann nicht aufge
 - Testen in der lokalen Entwicklungsumgebung
 
 +++
+
++++Probleme mit dem universellen Editor
+
+**Problem:** Formularkomponenten werden nicht im universellen Editor angezeigt
+
+**Lösungen:**
+
+- Überprüfen Sie, ob AEM Code Sync installiert ist und ausgeführt wird
+- Vergewissern Sie sich, dass `fstab.yaml` über die richtige AEM-Autoren-URL verfügt
+- Stellen Sie sicher, dass für Ihre AEM-Instanz der frühzeitige Zugriff aktiviert ist
+- Bestätigen, `component-definition.json` Formularkomponenten enthält
+
+**Problem:** Änderungen nach der Veröffentlichung nicht sichtbar
+
+**Lösungen:**
+
+- Auf CDN-Cache-Aktualisierung warten
+- Browser-Cache überprüfen (im Inkognito-/Privat-Modus versuchen)
+- Überprüfen, ob das richtige URL-Format verwendet wird
+
++++
+
+
 

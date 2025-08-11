@@ -1,13 +1,13 @@
 ---
 title: Wie lässt sich das Formulardatenmodell (FDM) für ein Formular im universellen Editor integrieren?
-description: Erfahren Sie, wie Sie Formulare basierend auf einem Formulardatenmodell (FDM) zu erstellen. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
+description: Erfahren Sie, wie Sie Formulare für Edge-Bereitstellungs-Services auf der Grundlage eines Formulardatenmodells (FDM) erstellen. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 34%
+source-wordcount: '716'
+ht-degree: 32%
 
 ---
 

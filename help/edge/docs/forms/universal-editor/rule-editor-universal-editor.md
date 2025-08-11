@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -308,7 +308,7 @@ Sie erstellen ein Formular, das:
 
 1. **Universellen Editor öffnen**:
    - Navigieren Sie zur AEM Sites-Konsole, wählen Sie Ihre Seite aus und klicken Sie auf **Bearbeiten**
-   - Stellen Sie sicher, dass [universeller Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=de) ordnungsgemäß konfiguriert ist
+   - Stellen Sie sicher, dass [universeller Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) ordnungsgemäß konfiguriert ist
 
 2. **Fügen Sie Formularkomponenten in dieser Reihenfolge hinzu**:
    - Titel (H2): „Steuerberechnungsformular“
@@ -664,7 +664,7 @@ Forms wird zu leistungsstarken Tools für die Datenerfassung, Lead-Qualifizierun
 
 +++
 
-+++ Nächste Schritte
+## Nächste Schritte
 
 **Empfohlener Lernpfad**:
 
@@ -676,8 +676,7 @@ Forms wird zu leistungsstarken Tools für die Datenerfassung, Lead-Qualifizierun
 
 **Zusätzliche**:
 
-- [Dokumentation zum universellen Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=de) für mehr Kontext
+- [Dokumentation zum universellen Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) für mehr Kontext
 - [Extension Manager-Handbuch](/help/implementing/developing/extending/extension-manager.md) zur Aktivierung zusätzlicher Funktionen
 - [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md) für eine umfassende Anleitung zur Formularentwicklung
 
-+++

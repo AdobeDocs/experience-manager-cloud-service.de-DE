@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Vorbefüllen des adaptiven Formulars, Edge-Bereitstellungsdienste für adaptive Formulare, Automatisches Ausfüllen des adaptiven Formulars
-source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 4%
@@ -249,7 +249,7 @@ Stellen Sie sicher, dass diese Erweiterungen im universellen Editor aktiviert si
 3. Wählen Sie **Vorschau als HTML**
 4. Testen des Vorbefüllens durch Anhängen von Parametern an die URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Beispiel:**
 
@@ -422,17 +422,19 @@ Ja, Sie können beide Arten von Feldern vorbefüllen. Gebundene Felder verwenden
 
 +++
 
++++Kann ich mehrere Vorbefüllungs-Services in einem Formular verwenden?
+
+Pro Formular kann ein primärer Vorbefüllungs-Service konfiguriert werden. Sie können jedoch verschiedene Datenquellen innerhalb eines Formulardatenmodells kombinieren, um ähnliche Funktionen zu erzielen.
+
++++
+
 +++Wie handhabe ich die Authentifizierung für Vorbefüllungs-Services?
 
 Die Authentifizierung hängt von Ihrer Datenquellenkonfiguration ab. Konfigurieren Sie für FDM-basiertes Vorbefüllen die Authentifizierung in Ihren Datenquelleneinstellungen. Für das Vorbefüllen von Entwürfen müssen Benutzende in der Regel angemeldet sein, um auf ihre gespeicherten Entwürfe zugreifen zu können.
 
 +++
 
-+++Kann ich mehrere Vorbefüllungs-Services in einem Formular verwenden?
 
-Pro Formular kann ein primärer Vorbefüllungs-Service konfiguriert werden. Sie können jedoch verschiedene Datenquellen innerhalb eines Formulardatenmodells kombinieren, um ähnliche Funktionen zu erzielen.
-
-+++
 
 ## Verwandte Themen
 
