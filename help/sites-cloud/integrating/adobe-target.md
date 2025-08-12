@@ -42,7 +42,7 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service ist der Replikations-Agent, der Angebote und Aktivitäten von AEM mit Adobe Target synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)-Team, wenn Sie den Replikationsagenten erneut aktivieren müssen.
+>In AEM as a Cloud Service ist der Replikations-Agent, der Angebote und Aktivitäten von AEM mit Adobe Target synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)-Team, wenn Sie den Replikationsagenten erneut aktivieren müssen.
 
 >[!NOTE]
 >
