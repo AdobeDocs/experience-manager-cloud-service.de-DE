@@ -115,6 +115,7 @@ Konfigurieren Sie jetzt den OIDC-Authentifizierungs-Handler. Es können mehrere 
       "storeRefreshToken": false
    }
    ```
+
 1. Konfigurieren Sie dann die Eigenschaften wie folgt:
    * `groupsInIdToken`: Auf „true“ gesetzt, wenn die Gruppen im ID-Token gesendet werden. Wenn der Wert „false“ oder nicht angegeben ist, werden die Gruppen aus dem UserInfo-Endpunkt gelesen.
    * `groupsClaimName`: Name des Anspruchs, der die in AEM zu synchronisierenden Gruppen enthält.
