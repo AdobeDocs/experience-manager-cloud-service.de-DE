@@ -8,7 +8,7 @@ feature: Metadata
 source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
 source-wordcount: '2557'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -68,9 +68,9 @@ Tags können auch in einer Hierarchie verschachtelt werden, um Beziehungen wie K
 >[!CONTEXTUALHELP]
 >id="assets_metadata_forms"
 >title="Metadatenformulare"
->abstract="[!DNL Experience Manager Assets] bietet standardmäßig viele Standard-Metadatenfelder. Organisationen haben zusätzliche Anforderungen bezüglich Metadaten und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen benutzerdefinierte Metadatenfelder zur Seite „Details“ eines Assets hinzufügen. Die geschäftsspezifischen Metadaten verbessern die Verwaltung und Erkennung der Assets."
+>abstract="[!DNL Experience Manager Assets] bietet standardmäßig viele Standard-Metadatenfelder. Organisationen haben zusätzliche Anforderungen bezüglich Metadaten und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen auf der Seite „Details“ eines Assets benutzerdefinierte Metadatenfelder hinzufügen. Die geschäftsspezifischen Metadaten verbessern die Verwaltung und Erkennung der Assets."
 
-Die Assets-Ansicht bietet standardmäßig viele Standard-Metadatenfelder. Unternehmen haben zusätzliche Metadatenanforderungen und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen benutzerdefinierte Metadatenfelder zur Seite [!UICONTROL Details] eines Assets hinzufügen. Die geschäftsspezifischen Metadaten verbessern die Verwaltung und Erkennung der Assets. Sie können Formulare von Grund auf neu erstellen oder ein vorhandenes Formular wiederverwenden.
+Die Assets-Ansicht bietet standardmäßig viele Standard-Metadatenfelder. Unternehmen haben zusätzliche Metadatenanforderungen und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen benutzerdefinierte Metadatenfelder zur Seite [!UICONTROL Details] eines Assets hinzufügen. Unternehmensspezifische Metadaten verbessern die Verwaltung und Erkennung der Assets. Sie können Formulare von Grund auf neu erstellen oder ein vorhandenes Formular wiederverwenden.
 
 Sie können Metadatenformulare für verschiedene Asset-Typen (verschiedene MIME-Typen) konfigurieren. Verwenden Sie denselben Formularnamen wie den MIME-Typ der Datei. Die Assets-Ansicht gleicht den MIME-Typ der hochgeladenen Assets automatisch mit dem Namen des Formulars ab und aktualisiert die Metadaten für die hochgeladenen Assets auf der Grundlage der Formularfelder.
 <!--
@@ -131,10 +131,10 @@ Nachfolgend finden Sie eine Übersicht über die einzelnen Eigenschaftstypen und
 | Kontrollkästchen | Fügt einen booleschen Wert hinzu. Wird als TRUE oder FALSE gespeichert, sobald ein Wert gespeichert wird. |
 | Datum | Fügen Sie eine Datumskomponente hinzu. |
 | Dropdown | Fügt eine Dropdown-Liste hinzu. |
-| Status | Fügen Sie die Repository-Statuseigenschaft hinzu (repo zugeordnet:state) |
-| Asset-Status | Fügen Sie die standardmäßige Asset-Status-Eigenschaft hinzu (der dam zugeordnet ist:assetStatus) |
-| Tags | Fügen Sie ein Tag aus Werten hinzu, die in der Taxonomieverwaltung gespeichert sind (zugeordnet zu xcm:tags). |
-| Keywords | Fügen Sie freie Keywords hinzu (zugeordnet zu dc:subject). |
+| Status | Fügt die Statuseigenschaft des Repositorys hinzu (zugeordnet zu „repo:state“). |
+| Asset-Status | Fügt die standardmäßige Asset-Status-Eigenschaft hinzu (zugeordnet zu „dam:assetStatus“). |
+| Tags | Fügt ein Tag aus den Werten hinzu, die in der Taxonomie-Verwaltung gespeichert sind (zugeordnet zu „xcm:tags“). |
+| Keywords | Fügt Freiform-Keywords hinzu (zugeordnet zu „dc:subject“). |
 | Smart-Tags | Fügt automatisch Metadaten-Tags hinzu, um Suchfunktionen zu ergänzen. |
 
 ### Zuweisen eines Metadatenformulars zu einem Ordner {#assign-metadata-form-folder}

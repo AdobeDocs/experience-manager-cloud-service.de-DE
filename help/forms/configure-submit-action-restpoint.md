@@ -8,13 +8,13 @@ exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 74%
+ht-degree: 98%
 
 ---
 
 # Konfigurieren eines adaptiven Formulars für die REST-Endpunkt-Übermittlungsaktion
 
-<span class="preview"> Die Funktion zum Angeben des REST-Endpunkts mithilfe der -Konfiguration ist ein Early-Adopter-Programm und gilt nur für Kernkomponenten und Edge Delivery Services Forms. Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
+<span class="preview"> Die Funktion zum Angeben des REST-Endpunkts per Konfiguration ist ein Early-Adopter-Programm und gilt nur für Kernkomponenten- und Edge Delivery Services-Formulare. Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
 
 Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen Server (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
 
@@ -35,14 +35,14 @@ Einige Vorteile der Konfiguration der Übermittlungsaktion **[!UICONTROL An REST
 
 >[!TAB Foundation-Komponente]
 
-So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein adaptives Formular auf der Grundlage von Foundation-Komponenten:
+So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein auf Foundation-Komponenten basierendes adaptives Formular:
 
 1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL An REST-Endpunkt übermitteln]**.
 
    ![Aktionskonfiguration für „An REST-Endpunkt übermitteln“](/help/forms/assets/submit-action-restendpoint.png)
 
-   Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche POST-Anfragen werden die Authentifizierungsinformationen der Sendeanfrage verwendet.
+   Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 Mit dieser Option können Sie den Ziel-REST-Endpunkt direkt eingeben.
 Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
    ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Dankeseite](assets/post-enabled-actionconfig.png)
@@ -58,8 +58,8 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagendaten.
-Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** wird verwendet, wenn Sie die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP GET-Anforderung weiterleiten möchten. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
+   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anhangdaten.
+Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** übermittelt die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP-GET-Anfrage. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
    `{fieldName}={request parameter name}`
 
    Wie in der folgenden Abbildung dargestellt, werden `param1` und `param2` als Parameter mit Werten, die aus den Feldern **textbox** und **numericbox** kopiert wurden, für die nächste Aktion weitergeleitet.
@@ -72,7 +72,7 @@ Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** wird ver
 
 >[!TAB Kernkomponente]
 
-So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein adaptives Formular basierend auf Kernkomponenten:
+So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein auf Kernkomponenten basierendes adaptives Formular:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
@@ -105,7 +105,7 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagendaten.
 
-   Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** wird verwendet, wenn Sie die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP GET-Anforderung weiterleiten möchten. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
+   Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** übermittelt die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP-GET-Anfrage. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
 
    `{fieldName}={request parameter name}`
 
@@ -115,13 +115,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-   +++
++++
 
    +++Konfiguration
 
-   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die für Ihren Service-REST-Endpunkt-Authentifizierungstyp erstellte Konfiguration und die Inhaltstypen auswählen. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Datenquellen konfigurieren](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-   +++
++++
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -130,13 +130,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein im universellen Editor erstelltes adaptives Formular:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
-Das **Formulareigenschaften** wird angezeigt.
+1. Klicken Sie im Editor auf die Erweiterung **Formulareigenschaften bearbeiten**.
+Das Dialogfeld **Formulareigenschaften** wird angezeigt.
    >[!NOTE]
    >
-   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
-1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An REST-Endpunkt übermitteln]** Übermittlungsaktion aus.
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+   > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+1. Klicken Sie auf **Übermittlung** und wählen Sie die Übermittlungsaktion **[!UICONTROL An REST-Endpunkt übermitteln]** aus.
 
    Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
@@ -162,7 +162,7 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagendaten.
 
-   Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** wird verwendet, wenn Sie die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP GET-Anforderung weiterleiten möchten. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
+   Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** übermittelt die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP-GET-Anfrage. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
 
    `{fieldName}={request parameter name}`
 
@@ -172,15 +172,15 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-   +++
++++
 
    +++Konfiguration
 
-   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die für Ihren Service-REST-Endpunkt-Authentifizierungstyp erstellte Konfiguration und die Inhaltstypen auswählen. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Datenquellen konfigurieren](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-   +++
++++
 
-1. Klicken Sie **[!UICONTROL Speichern und schließen]**.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 >[!ENDTABS]
 
@@ -205,6 +205,6 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 * Stellen Sie beim Senden von Daten an einen externen Server sicher, dass die URL sicher ist, und konfigurieren Sie den Pfad, um die POST-Anforderung anonym zu verarbeiten und dadurch vertrauliche Informationen zu schützen.
 * Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, und zwar auch dann, wenn die Felder in verschiedene Bereiche platziert wurden.
 
-## Ähnliche Artikel
+## Verwandte Artikel
 
 {{af-submit-action}}

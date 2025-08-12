@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 3004d7fe69a0666d5747967519ea08e35ca020a4
 workflow-type: tm+mt
 source-wordcount: '6592'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -785,12 +785,12 @@ ht-degree: 97%
          + [Arbeiten mit Formulardatenmodellen](/help/forms/work-with-form-data-model.md)
          + [Verwenden von Formulardatenmodellen](/help/forms/using-form-data-model.md)
          + [Entwerfen eines XML-Schemas für ein adaptives Formular](/help/forms/adaptive-form-xml-schema-form-model.md)
-      + Festlegen der Sende-Aktion für ein adaptives Formular {#set-submit-action}
-         + [Von Adaptive Forms unterstützte Übermittlungsaktionen](/help/forms/aem-forms-submit-action.md)
-         + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular basierend auf Foundation-Komponenten](/help/forms/configuring-submit-actions.md)
-         + [Konfigurieren der Übermittlungsaktion für ein adaptives Formular basierend auf Kernkomponenten](/help/forms/configure-submit-actions-core-components.md)
-         + [Konfigurieren der Übermittlungsaktion für Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
-         + [Konfigurieren der Sendeaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
+      + Festlegen einer Übermittlungsaktion für ein adaptives Formular {#set-submit-action}
+         + [Von adaptiven Formularen unterstützte Übermittlungsaktionen](/help/forms/aem-forms-submit-action.md)
+         + [Konfigurieren einer Übermittlungsaktion für ein auf Foundation-Komponenten basierendes Formular](/help/forms/configuring-submit-actions.md)
+         + [Konfigurieren der Übermittlungsaktion für ein auf Kernkomponenten basierendes adaptives Formular](/help/forms/configure-submit-actions-core-components.md)
+         + [Konfigurieren der Übermittlungsaktion für Edge Delivery Services-Formulare](/help/forms/configure-submit-action-eds-forms.md)
+         + [Konfigurieren der Übermittlungsaktion „E-Mail senden“ für ein adaptives Formular](/help/forms/configure-submit-action-send-email.md)
          + [Integrieren eines adaptiven Formulars in das Formulardatenmodell](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + Verbinden eines adaptiven Formulars mit Microsoft® SharePoint{#connect-to-sharepoint}
@@ -798,10 +798,10 @@ ht-degree: 97%
             + [Übermitteln an eine SharePoint-Dokumentbibliothek](/help/forms/connect-forms-to-sharepoint-document-library.md)
             + [Übermitteln an eine SharePoint-Liste](/help/forms/connect-forms-to-sharepoint-list.md)
             + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
-         + [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [Senden eines adaptiven Formulars an Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+         + [Übermitteln eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Übermitteln eines adaptiven Formulars an Azure Blob-Speicher](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
-         + [Senden eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
+         + [Übermitteln eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
          + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
          + [Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
          + Integrieren von adaptiven Formularen mit Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}

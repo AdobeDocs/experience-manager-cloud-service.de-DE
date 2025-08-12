@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distrib
 >[!NOTE]
 >
 >Wenn Sie an Massenveröffentlichungen von Inhalten interessiert sind, erstellen Sie einen Workflow mit dem [Workflow-Schritt für die Strukturaktivierung](#tree-activation), der eine effiziente Verarbeitung umfangreicher Payloads ermöglicht.
->&#x200B;>Es wird nicht empfohlen, für die Massenveröffentlichung Ihren eigenen, benutzerdefinierten Code zu erstellen.
->&#x200B;>Wenn Sie aus irgendeinem Grund Anpassungen vornehmen müssen, können Sie mit diesem Schritt einen Workflow über vorhandene Workflow-APIs auslösen.
->&#x200B;>Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die auch veröffentlicht werden müssen. Achten Sie außerdem darauf, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen hinsichtlich der Menge der Inhalte, die Sie über Workflows mit dem Workflow-Schritt für die Strukturaktivierung senden können.
+>>Es wird nicht empfohlen, für die Massenveröffentlichung Ihren eigenen, benutzerdefinierten Code zu erstellen.
+>>Wenn Sie aus irgendeinem Grund Anpassungen vornehmen müssen, können Sie mit diesem Schritt einen Workflow über vorhandene Workflow-APIs auslösen.
+>>Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die auch veröffentlicht werden müssen. Achten Sie außerdem darauf, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen hinsichtlich der Menge der Inhalte, die Sie über Workflows mit dem Workflow-Schritt für die Strukturaktivierung senden können.
 
 ### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
@@ -271,7 +271,7 @@ Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer se
 
 Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Authoring-Service:
 
-1. Navigieren Sie in [ AEM ](/help/sites-cloud/authoring/basic-handling.md#global-navigation)Globale Navigation) zu **Tools** > **Bereitstellung** > **Verteilung**
+1. Navigieren Sie in der [globalen AEM-Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation) zu **Tools** > **Bereitstellung** > **Verteilung**.
 1. Wählen Sie die Karte **Veröffentlichen** aus
 
    ![Status](assets/publish-status.png "Status")

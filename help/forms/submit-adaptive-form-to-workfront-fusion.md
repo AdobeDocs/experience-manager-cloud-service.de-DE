@@ -9,11 +9,11 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
-# Senden eines adaptiven Formulars an Adobe Workfront Fusion
+# Übermitteln eines adaptiven Formulars an Adobe Workfront Fusion
 
 <span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
@@ -155,10 +155,10 @@ So fügen Sie eine Verbindung hinzu:
 So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basierend auf Foundation-Komponenten für Workfront Fusion:
 
 1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
-1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **[!UICONTROL Workfront Fusion-Szenario aufrufen]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL WorkFront Fusion-Szenario aufrufen]**.
    ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-fusion-fc.png)
 
-1. Wählen Sie **[!UICONTROL Workfront Fusion Szenario]** aus der Dropdown-Liste.
+1. Wählen Sie **[!UICONTROL Workfront Fusion-Szenario]** aus der Dropdown-Liste aus.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 
@@ -169,10 +169,10 @@ So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basieren
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Wählen Sie in **[!UICONTROL Dropdown]** Liste „Übermittlungsaktion“ die Option **[!UICONTROL Workfront Fusion-Szenario aufrufen]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL Workfront Fusion-Szenario aufrufen]**.
 
    ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
-1. Wählen Sie **[!UICONTROL Workfront Fusion Szenario]** aus der Dropdown-Liste.
+1. Wählen Sie **[!UICONTROL Workfront Fusion-Szenario]** aus der Dropdown-Liste aus.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 >[!TAB Universeller Editor]
@@ -180,20 +180,20 @@ So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basieren
 So konfigurieren Sie die Übermittlungsaktion eines mit dem universellen Editor erstellten adaptiven Formulars:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
-Das **Formulareigenschaften** wird angezeigt.
+1. Klicken Sie im Editor auf die Erweiterung **Formulareigenschaften bearbeiten**.
+Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
-   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+   > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
-1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL Workfront Fusion-Szenario aufrufen]** Übermittlungsaktion.
+1. Klicken Sie auf die Registerkarte **Übermittlung** und wählen Sie die Übermittlungsaktion **[!UICONTROL Workfront Fusion-Szenario aufrufen]**.
 
    ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-fusion-ue.png)
 
-1. Wählen Sie **[!UICONTROL Workfront Fusion Szenario]** aus der Dropdown-Liste.
-1. Klicken Sie **[!UICONTROL Speichern und schließen]**.
+1. Wählen Sie **[!UICONTROL Workfront Fusion-Szenario]** aus der Dropdown-Liste aus.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 >[!ENDTABS]
 
@@ -204,6 +204,6 @@ Das **Formulareigenschaften** wird angezeigt.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
 
-## Ähnliche Artikel
+## Verwandte Artikel
 
 {{af-submit-action}}

@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
+title: Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
@@ -7,15 +7,15 @@ role: User, Developer
 source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# Übermittlungsaktion für adaptive Forms basierend auf Foundation-Komponenten
+# Übermittlungsaktion für auf Foundation-Komponenten basierende adaptive Formulare
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=de) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions) |
 | AEM as a Cloud Service (Foundation-Komponenten) | Dieser Artikel |
 | AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | [Hier klicken](/help/forms/configure-submit-action-eds-forms.md) |
@@ -23,11 +23,11 @@ ht-degree: 54%
 <!--
 **Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).-->
 
-Die [Adaptive Forms auf Basis der Foundation](/help/forms/creating-adaptive-form.md)-Komponente unterstützt [vordefinierte Übermittlungsaktionen](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components). Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf **[!UICONTROL Schaltfläche]** Senden“ klickt.
+[Auf Foundation-Komponenten basierende adaptive Formulare](/help/forms/creating-adaptive-form.md) unterstützen [vorkonfigurierte Übermittlungsaktionen](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components). Eine Übermittlungsaktion wird ausgelöst, wenn Benutzende in einem adaptiven Formular auf die Schaltfläche **[!UICONTROL Senden]** klicken. 
 
-## Übermittlungsaktionen für Forms basierend auf Foundation-Komponenten
+## Übermittlungsaktionen für auf Foundation-Komponenten basierende Formulare
 
-Die folgenden Übermittlungsaktionen werden von Adaptive Forms auf Basis von Foundation-Komponenten unterstützt:
+Die folgenden Übermittlungsaktionen werden von auf Foundation-Komponenten basierenden adaptiven Formularen unterstützt:
 
 * [E-Mail senden](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate-Fluss aufrufen](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -39,18 +39,18 @@ Die folgenden Übermittlungsaktionen werden von Adaptive Forms auf Basis von Fou
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
 * [Aufrufen eines AEM-Workflows](/help/forms/configure-submit-action-workflow.md)
 * [An Marketo Engage senden](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [An Adobe Experience Platform (AEP) übermitteln](/help/forms/aem-forms-aep-connector.md)
+* [An Adobe Experience Platform (AEP) senden](/help/forms/aem-forms-aep-connector.md)
 
-Sie können ein adaptives Formular, das auf Foundation-Komponenten basiert, auch an andere Speicherkonfigurationen senden:
+Sie können ein auf Foundation-Komponenten basierendes adaptives Formular auch an andere Speicherkonfigurationen senden:
 
 * [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/aem-forms-salesforce-integration.md)
 * [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-Darüber hinaus können Sie [die standardmäßigen Übermittlungsaktionen anpassen](/help/forms/custom-submit-action-form.md) um sie an die spezifischen organisatorischen Anforderungen anzupassen.
+Darüber hinaus können Sie die [Standard-Übermittlungsaktionen](/help/forms/custom-submit-action-form.md) an bestimmte Unternehmensanforderungen anpassen.
 
-### Konfigurieren einer Übermittlungsaktion für ein Formular basierend auf Foundation-Komponenten
+### Konfigurieren einer Übermittlungsaktion für ein auf Foundation-Komponenten basierendes Formular
 
-Sie können eine Übermittlungsaktion in der Seitenleiste im Bereich **[!UICONTROL Übermittlung]** des Containers für adaptive Formulare konfigurieren.
+Sie können eine Übermittlungsaktion in der Seitenleiste im Bereich **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare konfigurieren.
 
 ![AEM Forms-Übermittlungsaktion](/help/forms/assets/submit-form-foundation-component.png)
 
@@ -132,7 +132,7 @@ You can use the **[!UICONTROL Send Email]** Submit Action to send an email to on
 >[!NOTE]
 >
 > * All the form fields must have different element names, even if the fields are placed on different panels of an Adaptive Form.
-> * AEM as a Cloud Service requires outbound mail to be encrypted. By default, outbound email is disabled. To activate it, submit a support ticket to [Requesting Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email). 
+> * AEM as a Cloud Service requires outbound mail to be encrypted. By default, outbound email is disabled. To activate it, submit a support ticket to [Requesting Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
 
 You can also include attachments and a Document of Record (DoR) to the email. To enable **[!UICONTROL Attach Document of Record]** option, configure the Adaptive Form to generate a Document of Record (DoR). You can enable the option to generate a Document of Record from Adaptive Form properties.
 
@@ -167,7 +167,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de#extending-aem). When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data file, attachments, and Document of Record to the payload location of the workflow or to a variable. If the workflow is marked for external data storage and configured for an external data storage, then only the variable option is available. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data file, attachments, and Document of Record to the payload location of the workflow or to a variable. If the workflow is marked for external data storage and configured for an external data storage, then only the variable option is available. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.
 
 The Submit Action places the following at the payload location of the workflow, or the variable if the workflow is marked for external data storage: 
 
@@ -409,7 +409,7 @@ You can use the created Azure Storage container configuration in an Adaptive For
 When you submit the form, the data is saved in the specified Azure Storage container configuration. 
 Folder structure to save data is `/configuration_container/form_name/year/month/date/submission_id/data`. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 
 ## Submit to Power Automate {#microsoft-power-automate}

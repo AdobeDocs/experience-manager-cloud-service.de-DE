@@ -8,7 +8,7 @@ role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 68%
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ Jetzt können Sie diese OneDrive-Speicherkonfiguration für die Sendeaktion in e
 
 ### Verwenden der OneDrive-Konfiguration in einem adaptiven Formular {#use-onedrive-configuartion-in-af}
 
-Sie können die erstellte OneDrive-Speicherkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einem OneDrive-Ordner zu speichern.
+Sie können die erstellte OneDrive-Speicherkonfiguration in einem adaptiven Formular verwenden, um Daten oder das generierte Datensatzdokument in einem OneDrive-Ordner zu speichern. 
 
 >[!NOTE]
 >
@@ -84,9 +84,9 @@ Sie können die erstellte OneDrive-Speicherkonfiguration in einem adaptiven Form
 Führen Sie die folgenden Schritte aus, um die OneDrive-Speicherkonfiguration in einem auf Foundation-Komponenten basierenden adaptiven Formular zu verwenden:
 
 1. Öffnen Sie das adaptive Formular zur Bearbeitung und navigieren Sie zum Abschnitt **[!UICONTROL Übermittlung]** der Eigenschaften des Containers für adaptive Formulare.
-1. Wählen Sie aus der **[!UICONTROL -Liste]** Aktion übermitteln **[!UICONTROL die Option „An OneDrive senden]**.
-   ![OneDrive GIF](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%,height=50%}
-Sie können auch das Datensatzdokument (DoR) in OneDrive speichern.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL An OneDrive senden]** aus.
+   ![OneDrive-GIF](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%,height=50%}
+Sie können auch einen Nachweis in OneDrive speichern.
 1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
@@ -95,14 +95,14 @@ Die Ordnerstruktur zum Speichern von Daten ist `/folder_name/form_name/year/mont
 
 >[!TAB Kernkomponente]
 
-Führen Sie die folgenden Schritte aus, um die OneDrive-Speicherkonfiguration in einem adaptiven Formular basierend auf der Kernkomponente zu verwenden:
+Führen Sie die folgenden Schritte aus, um die OneDrive-Speicherkonfiguration in einem auf Kernkomponenten basierenden adaptiven Formular zu verwenden:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Wählen Sie aus der **[!UICONTROL -Liste]** Aktion übermitteln **[!UICONTROL die Option „An OneDrive senden]**.
-   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
-Sie können auch das Datensatzdokument (DoR) in OneDrive speichern.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL An OneDrive senden]** aus.
+   ![OneDrive-GIF](/help/forms/assets/onedrive-video.gif)
+Sie können auch einen Nachweis in OneDrive speichern.
 1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Sendeeinstellungen zu speichern.
 
@@ -111,18 +111,18 @@ Sie können auch das Datensatzdokument (DoR) in OneDrive speichern.
 Führen Sie die folgenden Schritte aus, um die OneDrive-Speicherkonfiguration in einem im universellen Editor erstellten adaptiven Formular zu verwenden:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
-Das **Formulareigenschaften** wird angezeigt.
+1. Klicken Sie im Editor auf die Erweiterung **Formulareigenschaften bearbeiten**.
+Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
-   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+   > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An OneDrive senden]** aus.
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
-Wenn Sie **Anlagen mit Originalnamen speichern** wählen, werden die Anlagen unter Verwendung ihrer Originaldateinamen im Ordner gespeichert. Sie können auch das Datensatzdokument (DoR) im Azure Blob-Speicher speichern.
-1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
-1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**
+Wenn Sie **Anhänge mit dem ursprünglichen Namen speichern** auswählen, werden die Anlagen im Ordner unter ihren ursprünglichen Dateinamen gespeichert. Sie können auch einen Nachweis im Azure Blob-Speicher speichern.
+1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]** aus, in der Sie Ihre Daten speichern möchten.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 >[!ENDTABS]
 

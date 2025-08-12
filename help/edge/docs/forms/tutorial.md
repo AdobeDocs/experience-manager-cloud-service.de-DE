@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -111,8 +111,8 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
 1. Nachdem Sie Ihren Inhaltsordner eingerichtet haben, ist es an der Zeit, ihn mit Ihrem Projekt auf GitHub zu verknüpfen, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben. So richten Sie die Verbindung ein:
 
    1. Wechseln Sie zum GitHub-Repository, das Sie zuvor mit dem AEM Forms-Textbaustein erstellt haben.
-   1. Fügen Sie die `fstab.yaml` Datei im Stammordner hinzu.
-   1. Fügen Sie den Verweis mit dem Pfad zu dem Ordner hinzu, den Sie für den AEM-Benutzer freigegeben haben (forms@adobe.com).
+   1. Fügen Sie die Datei `fstab.yaml` im Stammordner hinzu.
+   1. Fügen Sie die Referenz mit dem Pfad zu dem Ordner hinzu, den Sie für die AEM-Benutzerin bzw. den AEM-Benutzer freigegeben haben (forms@adobe.com).
 
       ![Beispielinhalt auf Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres 
       Weitere Informationen zum Verwalten von Dateien in Microsoft SharePoint finden Sie unter [Verwenden von Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Bestätigen Sie die `fsatb.yaml` Datei, sobald Sie die Referenz hinzugefügt haben und alles gut aussieht. Wenn Build-Probleme auftreten, lesen Sie [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
+   1. Wenn Sie die Referenz hinzugefügt haben und alles gut aussieht, übergeben Sie die Datei `fsatb.yaml`, Wenn Build-Probleme auftreten, lesen Sie [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
 
       ![Übergeben der aktualisierten Datei fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 
