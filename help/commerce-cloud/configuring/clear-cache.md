@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: ht
-source-wordcount: '883'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 97%
 
 ---
 
@@ -25,6 +25,7 @@ Dieses Dokument enthält eine umfassende Anleitung zum Aktivieren und Überprüf
 Standardmäßig ist die Funktion zum Löschen des Cache in der CIF-Konfiguration deaktiviert. Um sie zu aktivieren, müssen Sie den entsprechenden Projekten Folgendes hinzufügen:
 
 * Aktivieren Sie das Servlet `/bin/cif/invalidate-cache`, mit dem Sie die Clear-Cache-API mit den entsprechenden Anfragen auslösen können, indem Sie die `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json`-Konfiguration in Ihrem Projekt hinzufügen, wie [hier](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json) dargestellt.
+
   >[!NOTE]
   >
   > Die Konfiguration muss nur für die Autoreninstanzen aktiviert werden.
@@ -32,6 +33,7 @@ Standardmäßig ist die Funktion zum Löschen des Cache in der CIF-Konfiguration
 * Aktivieren Sie den Listener, um den Cache jeder Instanz von AEM (Veröffentlichungs- und Autoreninstanz) zu löschen, indem Sie die Konfiguration `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` in Ihrem Projekt hinzufügen, wie [hier](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json) dargestellt.
    * Die Konfiguration sollte sowohl für die Autoren- als auch für die Veröffentlichungsinstanz aktiviert sein.
    * Aktivieren des Dispatcher-Caches (optional): Sie können die Einstellung „Dispatcher-Cache löschen“ aktivieren, indem Sie in der obigen Konfiguration die Eigenschaft `enableDispatcherCacheInvalidation` auf „true“ festlegen. Dies bietet die Möglichkeit, den Cache vom Dispatcher zu löschen.
+
      >[!NOTE]
      >
      > Dies funktioniert nur mit Veröffentlichungsinstanzen.
@@ -44,11 +46,12 @@ Standardmäßig ist die Funktion zum Löschen des Cache in der CIF-Konfiguration
 
 So überprüfen Sie, ob alles ordnungsgemäß eingerichtet ist:
 
-* Fügen Sie den Trigger des entsprechenden Servlets zur AEM der Autoreninstanz hinzu, z. B. [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache). Sie sollten daraufhin eine HTTP-Antwort von 200 erhalten.
+* Trigger Fügen Sie das entsprechende Servlet dem AEM der Autoreninstanz hinzu, z. B. [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache) und Sie sollten eine HTTP-Antwort von 200 erhalten.
 * Stellen Sie sicher, dass in Autoreninstanzen unter dem folgenden Pfad ein Knoten erstellt wurde: `/var/cif/cacheinvalidation`. Der Knotenname folgt diesem Muster: `cmd_{{timestamp}}`.
 * Stellen Sie sicher, dass in jeder Veröffentlichungsinstanz derselbe Knoten erstellt wurde.
 
 So überprüfen Sie nun, ob die Caches ordnungsgemäß geleert werden:
+
 1. Navigieren Sie zu den entsprechenden PLP- und PDP-Seiten.
 2. Aktualisieren Sie einen Produkt- oder Kategorienamen in der Commerce-Engine. Die Änderungen werden basierend auf Cache-Konfigurationen nicht sofort in AEM übernommen.
 3. Lösen Sie das Servlet-API wie hier gezeigt aus:
@@ -56,7 +59,7 @@ So überprüfen Sie nun, ob die Caches ordnungsgemäß geleert werden:
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -64,6 +67,7 @@ So überprüfen Sie nun, ob die Caches ordnungsgemäß geleert werden:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 Wenn alles gut geht, werden die neuen Änderungen in jeder Instanz widergespiegelt. Wenn die Änderungen nicht in der Veröffentlichungsinstanz sichtbar sind, versuchen Sie, die relevanten PLP- und PDP-Seiten in einem privaten/Inkognito-Browser-Fenster aufzurufen.
 
 >[!NOTE]
@@ -107,7 +111,7 @@ In dieser Tabelle wird die obligatorische Eigenschaft angezeigt, die bei jedem A
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

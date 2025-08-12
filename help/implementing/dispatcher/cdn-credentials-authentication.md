@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 100%
 
@@ -241,6 +241,7 @@ Darüber hinaus enthält die Syntax Folgendes:
    * action – muss „authenticate“ angeben, wobei auf den vorgesehenen Authentifizierer verwiesen wird. In diesem Fall ist dies der einfache Authentifizierer.
 
 >[!NOTE]
+>
 >Die Kennwörter müssen als [Cloud Manager-Umgebungsvariablen vom Typ „secret“](/help/operations/config-pipeline.md#secret-env-vars) konfiguriert werden, bevor die Konfiguration, die auf sie verweist, bereitgestellt wird.
 
 ## Wechseln von Geheimnissen {#rotating-secrets}
@@ -258,6 +259,7 @@ Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge-Schlüssels er
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
+
 1. Wenn Sie den Schlüssel rotieren müssen, erstellen Sie ein neues Cloud Manager-Geheimnis, z. B. `${{CDN_EDGEKEY_041425}}`.
 1. Verweisen Sie in der Konfiguration von `edgeKey2` darauf und stellen Sie es bereit.
 
@@ -279,6 +281,7 @@ Dies kann wie unten dargestellt mithilfe des Beispiels eines Edge-Schlüssels er
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
+
 1. Löschen Sie die Referenz des alten Geheimnisses (`${{CDN_EDGEKEY_052824}}`) aus Cloud Manager aus und nehmen Sie die Bereitstellung vor.
 
 1. Wenn Sie für die nächste Rotation bereit sind, gehen Sie analog vor. Diesmal fügen Sie jedoch `edgeKey1` zu der Konfiguration hinzu, indem Sie auf ein neues Cloud Manager-Umgebungsgeheimnis verweisen, das beispielsweise den Namen `${{CDN_EDGEKEY_031426}}` hat.

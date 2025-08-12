@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 
@@ -47,6 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+
 Eine Beschreibung der Eigenschaften oberhalb des Datenknotens finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert „kind“ sollte *CDN* sein, und die Eigenschaft `version` sollte auf *1* festgelegt werden.
 
 

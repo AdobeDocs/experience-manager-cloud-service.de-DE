@@ -2,10 +2,10 @@
 title: Erste Schritte mit Refaktorierungs-Tools
 description: Erfahren Sie mehr über die ersten Schritte mit den Refaktorierungs-Tools in AEM as a Cloud Service
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
-source-git-commit: c89acee0c5090f32136306b41a669d7241002a37
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=de" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 Verwenden Sie das Refaktorierungs-Tool, um Ihren Code aus Gründen der Kompatibilität mit AEM as a Cloud Service zu migrieren.
 
-1. Wenn Sie kein CAM-Projekt erstellt haben, lesen Sie [Erstellen und Verwalten eines Projekts in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
+1. Wenn Sie noch kein CAM-Projekt erstellt haben, lesen Sie den Abschnitt [Erstellen und Verwalten eines Projekts in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
 1. Klicken Sie auf die Karte **Code-Refaktorierung**, um den Quell-Code hochzuladen.
 
    ![Bild](/help/journey-migration/refactoring-tools/assets/rscam1.png)
@@ -35,8 +35,6 @@ Verwenden Sie das Refaktorierungs-Tool, um Ihren Code aus Gründen der Kompatibi
 1. Wenn Sie zum ersten Mal auf die **Source-Code-Ansicht** zugreifen, wird ein leerer Status mit der Aufforderung angezeigt, Ihren Quell-Code hochzuladen.
 
    ![Bild](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
----
 
 ## Hochladen von Source-Code {#uploading}
 
@@ -68,12 +66,12 @@ Wenn Kundinnen oder Kunden zum ersten Mal auf **Refaktorierungs-Tools** zugreife
    ![Bild](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >Beim Hochladen eines neuen Projekts wird das vorhandene gelöscht. Stellen Sie sicher, dass alle erforderlichen Daten gespeichert werden, bevor Sie fortfahren.
 
 >[!NOTE]
+>
 >Refaktorierungsaufträge können nur ausgeführt werden, wenn das Hochladen des Quell-Codes erfolgreich war.
-
----
 
 ## Refaktorierungsaufträge {#refactoring-jobs}
 
@@ -90,9 +88,8 @@ Wenn Sie auf die Registerkarte **Refaktorierungsauftrag** klicken, wird eine Lis
 ![Bild](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >Sie können einzelne Refaktorierungsaufträge per Trigger auslösen oder alle verfügbaren Tools in einem Schritt ausführen, indem Sie die Option **Alle Tools zusammen** verwenden.
-
----
 
 ### &#x200B;2. Auftragsstatus
 
@@ -111,4 +108,5 @@ Wenn der Auftrag erfolgreich abgeschlossen wurde, wird die Schaltfläche **Herun
 ![Bild](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >Jeder Auftrag kann bis zu 1 Stunde dauern. Wenn der Status nicht aktualisiert wird, wenden Sie sich an den Adobe-Support.

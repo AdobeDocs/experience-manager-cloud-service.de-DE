@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 5%
@@ -19,22 +19,6 @@ ht-degree: 5%
 
 Kunden mit einer Lizenz bei einem Protokollierungsanbieter oder die ein Protokollierungsprodukt hosten, können AEM-Protokolle (einschließlich Apache/Dispatcher) und CDN-Protokolle an das zugehörige Protokollierungsziel weitergeleitet bekommen. AEM as a Cloud Service unterstützt die folgenden Protokollierungsziele:
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder A
 Einige Organisationen entscheiden sich dafür, einzuschränken, welcher Traffic von den Protokollierungszielen empfangen werden kann. Andere benötigen möglicherweise andere Ports als HTTPS (443).  Wenn ja[ müssen ](/help/security/configuring-advanced-networking.md)Erweiterte Netzwerke“ vor der Bereitstellung der Protokollweiterleitungskonfiguration konfiguriert werden.
 
 In der folgenden Tabelle sehen Sie, welche Anforderungen an die erweiterte Netzwerk- und Protokollierungskonfiguration gestellt werden, je nachdem, ob Sie Port 443 verwenden oder nicht und ob Ihre Protokolle über eine feste IP-Adresse angezeigt werden müssen oder nicht.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>Ja</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >Ob Ihre Protokolle von einer einzelnen IP-Adresse aus angezeigt werden, hängt von der gewählten erweiterten Netzwerkkonfiguration ab.  Um dies zu erleichtern, muss ein dedizierter Ausgang verwendet werden.
@@ -270,6 +247,7 @@ data:
 Für CDN-Protokolle können Sie die IP-Adressen auf die Zulassungsliste setzen, wie unter [Fastly-Dokumentation - Öffentliche IP-Liste](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) beschrieben. Wenn diese Liste der freigegebenen IP-Adressen zu groß ist, sollten Sie Traffic an einen HTTPS-Server oder Azure Blob Store (außer Adobe) senden, in den Logiken geschrieben werden können, um die Protokolle von einer bekannten IP an ihr endgültiges Ziel zu senden.
 
 >[!NOTE]
+>
 >Es ist nicht möglich, dass CDN-Protokolle von derselben IP-Adresse aus angezeigt werden, von der Ihre AEM-Protokolle stammen, da Protokolle direkt von Fastly und nicht von AEM Cloud Service gesendet werden.
 
 ## Protokollierungszielkonfiguration {#logging-destinations}
@@ -301,18 +279,18 @@ data:
 
 Um die S3-Protokollweiterleitung zu verwenden, müssen Sie einen AWS IAM-Benutzer mit der entsprechenden Richtlinie für den Zugriff auf Ihren S3-Bucket vorkonfigurieren.  Wie Sie IAM-Benutzeranmeldeinformationen erstellen, erfahren Sie [ der ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)AWS IAM-Benutzerdokumentation.
 
-Die IAM-Richtlinie sollte es dem Benutzer ermöglichen, `s3:putObject` zu verwenden.  Zum Beispiel:
+Die IAM-Richtlinie sollte es dem Benutzer ermöglichen, `s3:putObject` zu verwenden.  Beispiel:
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,9 +490,10 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic HTTPS-API für die A
 ```
 
 >[!NOTE]
+>
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+>aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [ zu ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)New Relic .
 
@@ -538,7 +517,8 @@ Das Bereichsattribut „Protokolle aufnehmen“ ist für das Token erforderlich.
 ```
 
 >[!NOTE]
-> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+>
+> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
 ### Splunk {#splunk}
 
@@ -571,7 +551,7 @@ data:
 
 Die Protokollweiterleitung an Sumo Logic unterstützt AEM- und Dispatcher-Protokolle; CDN-Protokolle werden noch nicht unterstützt.
 
-Bei der Konfiguration der Sumo-Logik für die Datenaufnahme erhalten Sie eine „HTTP-Source-Adresse“, die den Host, den Receiver-URI und den privaten Schlüssel in einer einzigen Zeichenfolge bereitstellt.  Zum Beispiel:
+Bei der Konfiguration der Sumo-Logik für die Datenaufnahme erhalten Sie eine „HTTP-Source-Adresse“, die den Host, den Receiver-URI und den privaten Schlüssel in einer einzigen Zeichenfolge bereitstellt.  Beispiel:
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
 
@@ -630,6 +610,7 @@ Wenn Sie zur Migration bereit sind, konfigurieren Sie einfach die YAML-Datei wie
 Es wird empfohlen, aber nicht erforderlich, dass eine Konfiguration in allen Umgebungen bereitgestellt wird, sodass sie alle unter Selbstbedienungssteuerung stehen. Andernfalls können Sie vergessen, welche Umgebungen von Adobe konfiguriert wurden, im Vergleich zu den Umgebungen, die eigenständig konfiguriert wurden.
 
 >[!NOTE]
+>
 >Die Werte des `sourcetype`, die an Ihren Splunk-Index gesendet werden, haben sich möglicherweise geändert. Passen Sie sie daher entsprechend an.
 >
 >Wenn die Protokollweiterleitung in einer Umgebung bereitgestellt wird, die zuvor vom Adobe-Support konfiguriert wurde, erhalten Sie möglicherweise doppelte Protokolle für bis zu einige Stunden. Dies wird sich schließlich automatisch auflösen.

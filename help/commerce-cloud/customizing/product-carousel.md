@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
-workflow-type: ht
-source-wordcount: '316'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 85%
 
 ---
 
@@ -18,14 +18,19 @@ ht-degree: 100%
 
 Die Produktkarussellkomponente wird im Laufe dieses Tutorials erweitert. Als ersten Schritt fügen Sie der Startseite eine Instanz des Produktkarussells hinzu, um sich mit den Grundfunktionen vertraut zu machen:
 
-1. Navigieren Sie zur Startseite der Site, beispielsweise [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html).
+1. Navigieren Sie zur Startseite der Site, z. B. [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 1. Fügen Sie auf der Seite eine neue Produktkarussellkomponente in den Haupt-Layout-Container ein.
    ![Produktkarussellkomponente](/help/commerce-cloud/assets/product-carousel-component.png)
-1. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie im Dropdown-Menü der Asset-Suche zu **Produkte**.
- ![Karussell für Produkte](/help/commerce-cloud/assets/carousel-products.png)    
+1. Erweitern Sie das seitliche Bedienfeld (falls noch nicht umgeschaltet) und schalten Sie in der Dropdown-Liste der Asset-Suche **Produkte**.
+
+   ![Karussellprodukte](/help/commerce-cloud/assets/carousel-products.png)
+
 1. Nun sollte eine Liste mit verfügbaren Produkten einer verbundenen Adobe Commerce-Instanz angezeigt werden.
+
    ![Verbundene Instanz](/help/commerce-cloud/assets/connected-instance.png)
+
 1. Produkte werden wie folgt mit Standardeigenschaften angezeigt:
+
    ![Angezeigtes Produkt mit Eigenschaften](/help/commerce-cloud/assets/discount.png)
 
 ## Aktualisieren des Sling-Modells {#update-sling-model}
@@ -40,6 +45,7 @@ Sie können die Geschäftslogik des Produktkarussells erweitern, indem Sie ein S
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
+
 1. Erstellen Sie anschließend eine Implementierungsklasse `CustomCarouselImpl.java` bei `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
 Das Delegationsmuster für Sling-Modelle ermöglicht es `CustomCarouselImpl`, durch die Eigenschaft `sling:resourceSuperType` auf das Modell `ProductCarousel` zu verweisen:
 
@@ -49,7 +55,7 @@ Das Delegationsmuster für Sling-Modelle ermöglicht es `CustomCarouselImpl`, du
    private ProductCarousel productCarousel;
    ```
 
-1. Die Anmerkung „@PostConstruct“ stellt sicher, dass diese Methode bei der Initialisierung des Sling-Modells aufgerufen wird. Die GraphQL-Produktabfrage wurde bereits mit der Methode „extendProductQueryWith“ erweitert, um Attribute abzurufen. Aktualisieren Sie die GraphQL-Abfrage, um das Attribut in die partielle Abfrage einzuschließen:
+1. Die Anmerkung „@PostConstruct“ stellt sicher, dass diese Methode bei der Initialisierung des Sling-Modells aufgerufen wird. Die GraphQL-Produktabfrage wurde bereits mit der Methode „extendProductQueryWith“ erweitert, um Attribute abzurufen. Aktualisieren Sie die GraphQL-Abfrage , um das -Attribut in die partielle Abfrage aufzunehmen:
 
    ```
    @PostConstruct

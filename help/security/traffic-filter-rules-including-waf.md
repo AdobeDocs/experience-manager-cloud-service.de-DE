@@ -4,8 +4,8 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -745,8 +745,8 @@ Fügen Sie Ihrer vorhandenen Konfiguration die folgenden Regeln hinzu:
    * Analysieren Sie nach der Bereitstellung dieser Regel sorgfältig die CDN-Protokolle, um sicherzustellen, dass legitime Anfragen nicht falsch markiert werden. Wechseln Sie in den Blockmodus, sobald Sie sicher sind, dass kein legitimer Traffic betroffen ist.
 
 >[!NOTE]
-> Unsere Erfahrung zeigt, dass falsch-positive Ergebnisse im Zusammenhang mit der Markierung ATTACK nur selten auftreten. Daher kann es eine praktische Strategie sein, sofort jeglichen verdächtigen Traffic zu blockieren – selbst wenn die IP-Adresse nicht als bösartig bekannt ist – und anschließend mit der CDN-Protokollanalyse Regeln für legitimen Traffic zu identifizieren und aufzustellen. Jede Organisation sollte ihre eigene Risikotoleranz bewerten und die Vorteile eines besseren Schutzes gegen das Risiko einer unbeabsichtigten Blockierung legitimer Anfragen abwägen.
 >
+> Unsere Erfahrung zeigt, dass falsch-positive Ergebnisse im Zusammenhang mit der Markierung ATTACK nur selten auftreten. Daher kann es eine praktische Strategie sein, sofort jeglichen verdächtigen Traffic zu blockieren – selbst wenn die IP-Adresse nicht als bösartig bekannt ist – und anschließend mit der CDN-Protokollanalyse Regeln für legitimen Traffic zu identifizieren und aufzustellen. Jede Organisation sollte ihre eigene Risikotoleranz bewerten und die Vorteile eines besseren Schutzes gegen das Risiko einer unbeabsichtigten Blockierung legitimer Anfragen abwägen.
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -773,8 +773,7 @@ Fügen Sie Ihrer vorhandenen Konfiguration die folgenden Regeln hinzu:
 
 Vor Juli 2025 empfahl Adobe die unten aufgeführten WAF-Regeln, die weiterhin gültig und beim Schutz vor bösartigem Traffic wirksam sind. Im Tutorial finden Sie weitere Überlegungen bezüglich der Migration zu den neuen empfohlenen Regeln.
 
-<details>
-  <summary>Erweitern, um die älteren empfohlenen WAF-Regeln anzuzeigen.</summary>
++++ Erweitern, um die älteren empfohlenen WAF-Regeln anzuzeigen.
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,7 +798,8 @@ Vor Juli 2025 empfahl Adobe die unten aufgeführten WAF-Regeln, die weiterhin g�
           - PRIVATEFILE
           - NULLBYTE
 ```
-</details>
+
++++
 
 ## Tutorial {#tutorial}
 
@@ -813,7 +813,3 @@ Folgende Tutorials sind verfügbar:
 * Testen von Regeln mit Tools zur Simulation von bösartigem Traffic
 * Analysieren der Ergebnisse mit den Tools für die Protokollanalyse
 * Best Practices
-
-
-
-

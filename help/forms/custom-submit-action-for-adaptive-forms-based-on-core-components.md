@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: 4eb0feecbc5d0f090789bd3023e366ef4eb620db
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 28%
@@ -14,7 +14,7 @@ ht-degree: 28%
 
 # Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Forms (Kernkomponenten)
 
-Mit einer Übermittlungsaktion können Benutzer das Ziel für die in einem Formular erfassten Daten auswählen und zusätzliche Funktionen definieren, die bei der Formularübermittlung ausgeführt werden sollen. AEM-Formular unterstützt mehrere [ Übermittlungsaktionen (OOTB), ](/help/forms/configure-submit-actions-core-components.md). B. das Senden einer E-Mail oder das Speichern von Daten an SharePoint oder OneDrive.
+Mit einer Übermittlungsaktion können Benutzer das Ziel für die in einem Formular erfassten Daten auswählen und zusätzliche Funktionen definieren, die bei der Formularübermittlung ausgeführt werden sollen. AEM Forms unterstützt mehrere [Übermittlungsaktionen (OOTB), ](/help/forms/configure-submit-actions-core-components.md). B. das Senden einer E-Mail oder das Speichern von Daten an SharePoint oder OneDrive.
 
 Sie können auch eine benutzerdefinierte Übermittlungsaktion erstellen, um Funktionen hinzuzufügen, die nicht in den [vordefinierten Optionen“ enthalten ](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). Integrieren Sie beispielsweise die Formulardaten in eine Drittanbieteranwendung oder einen Trigger in einer personalisierten SMS-Benachrichtigung, die auf Benutzereingaben basiert.
 
@@ -81,7 +81,7 @@ Das folgende Diagramm zeigt die Schritte zum Erstellen einer benutzerdefinierten
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: ersetzen &lt;app-id> mit Ihrer tatsächlichen Anwendungs-ID.
+   `Important`: Ersetzen Sie `<app-id>` durch Ihre tatsächliche Anwendungs-ID.
 
 1. Erstellen Sie eine neue Konfigurationsdatei.
 Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.content.xml`.
@@ -134,7 +134,7 @@ Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.con
 
 1. Navigieren Sie in Ihrem `[AEMaaCS project directory]` zum folgenden Verzeichnis:
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: ersetzen &lt;app-id> mit Ihrer tatsächlichen Anwendungs-ID.
+   `Important`: Ersetzen Sie `<app-id>` durch Ihre tatsächliche Anwendungs-ID.
 1. Erstellen Sie eine neue Java-Datei, um den Service für die hinzugefügte Übermittlungsaktion zu implementieren. Fügen Sie beispielsweise eine neue Java-Datei als `CustomSubmitService.java` hinzu.
 
    ![Ordner für benutzerdefinierte Sende-Aktionen](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -204,7 +204,7 @@ Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.con
 
       ![Lokale Bereitstellung](/help/forms/assets/custom-submit-action-local-deployment.png)
 
-**Stellen Sie den Code für die Cloud Service-Umgebung bereit**
+**Bereitstellen des Codes für die Cloud Service-Umgebung**
 
 * Stellen Sie die AEM as a Cloud Service `[AEMaaCS project directory]` in Ihrer Cloud Service-Umgebung bereit. So stellen Sie es in Ihrer Cloud Service-Umgebung bereit:
 

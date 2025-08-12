@@ -5,7 +5,7 @@ keywords: Im Regeleditor können Sie eine benutzerdefinierte Funktion hinzufüge
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 56%
@@ -45,6 +45,7 @@ Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adapti
 Erstellen Sie eine Client-Bibliothek, um benutzerdefinierte Funktionen im Regeleditor aufzurufen. Weitere Informationen finden Sie unter [Verwenden Client-seitiger Bibliotheken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=de#developing).
 
 Die Schritte zum Erstellen benutzerdefinierter Funktionen sind die Folgenden:
+
 1. [Erstellen einer Client-Bibliothek](#create-client-library)
 1. [Hinzufügen einer Client-Bibliothek zu einem adaptiven Formular](#use-custom-function)
 
@@ -232,9 +233,9 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 ## Funktionen von benutzerdefinierten Funktionen
 
-Benutzerdefinierte Funktionen in AEM-Formularen bieten eine robuste Lösung für die Erweiterung und Personalisierung der Funktionalität Ihrer Formulare. Sie können die benutzerdefinierten Funktionen verwenden, um die spezifischen Anforderungen Ihres Unternehmens zu erfüllen.
+Benutzerdefinierte Funktionen in AEM Forms bieten eine robuste Lösung für die Erweiterung und Personalisierung der Funktionalität Ihrer Formulare. Sie können die benutzerdefinierten Funktionen verwenden, um die spezifischen Anforderungen Ihres Unternehmens zu erfüllen.
 
-Diese Funktionen unterstützen verschiedene Funktionen, einschließlich der Arbeit mit bestimmten Feldern, der Verwendung globaler Felder und asynchroner Vorgänge sowie der Integration von Caching-Mechanismen. Durch diese Flexibilität können Formulare an komplexe Anforderungen angepasst werden und ein effizientes, maßgeschneidertes Benutzererlebnis bieten. Durch die Nutzung dieser erweiterten Funktionen können Sie die Formularinteraktionen verbessern und die Leistung optimieren, sodass Ihre AEM-Formulare sowohl funktionsfähiger als auch responsiver werden.
+Diese Funktionen unterstützen verschiedene Funktionen, einschließlich der Arbeit mit bestimmten Feldern, der Verwendung globaler Felder und asynchroner Vorgänge sowie der Integration von Caching-Mechanismen. Durch diese Flexibilität können Formulare an komplexe Anforderungen angepasst werden und ein effizientes, maßgeschneidertes Benutzererlebnis bieten. Durch die Verwendung dieser erweiterten Funktionen können Sie die Formularinteraktionen verbessern und die Leistung optimieren, sodass Ihre AEM-Formulare sowohl funktionsfähiger als auch responsiver werden.
 
 Im Folgenden werden die Merkmale von benutzerdefinierten Funktionen vorgestellt.
 

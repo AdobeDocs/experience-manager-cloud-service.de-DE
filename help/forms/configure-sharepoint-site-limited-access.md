@@ -5,16 +5,16 @@ keywords: Konfigurieren einer SharePoint-Site mit eingeschränktem Zugriff?, Kon
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 24%
 
 ---
 
-<span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
-
 # Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs
+
+<span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 Durch den eingeschränkten oder eingeschränkten Zugriff soll die Sicherheitsverwaltung verbessert werden, indem Admins die Möglichkeit erhalten, den Benutzerzugriff auf eine bestimmte SharePoint-Site oder eine Gruppe von SharePoint-Sites zu steuern. Die Berechtigungsstufe ist nützlich, wenn Sie einem Benutzer oder einer Gruppe Zugriff auf eine bestimmte Site gewähren müssen, ohne ihm das Anzeigen anderer nicht zulässiger SharePoint-Sites zu ermöglichen.
 

@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 100%
 
@@ -63,10 +63,10 @@ Wie bereits erwähnt, wird die Konfiguration für RDEs mit dem [Befehlszeilen-To
 Jede Konfigurationsdatei beginnt mit Eigenschaften, die dem folgenden Beispielausschnitt ähneln:
 
 ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
 ```
 
 | Eigenschaft | Beschreibung | Standard |

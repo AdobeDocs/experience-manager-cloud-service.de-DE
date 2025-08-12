@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 Der visuelle Regeleditor in einem adaptiven Formular unterstützt die Funktion **Dienst aufrufen** mit der Sie einen Dienst aus der Liste der für Ihre Instanz konfigurierten Formulardatenmodelle (FDM) auswählen können. Sie können Formularfelder direkt den Eingabeparametern des Dienstes zuordnen. Um Formularfelder den Ausgabeparametern zuzuordnen, verwenden Sie die Payload-Option für das Ereignis für den angegebenen Formulardatenmodell-Service. Darüber hinaus können Sie mit dem visuellen Regeleditor basierend auf den Ausgabeantworten Regeln für Erfolgs- und **für Vorgänge** Dienst aufrufen“ erstellen. Erfolgs-Handler verwalten die erfolgreiche Ausführung des Vorgangs **Service aufrufen** während Fehler-Handler alle Fehler beheben, die auftreten.
 
-### Vorteile der Verwendung des Service „Invoke“ im Regeleditor des Formulars
+## Vorteile der Verwendung des Service „Invoke“ im Regeleditor des Formulars
 
 Die Verwendung des Vorgangs „Service aufrufen“ im Regeleditor eines adaptiven Formulars bietet folgende Vorteile:
 
@@ -69,7 +69,7 @@ Mit dem Service „Invoke **des visuellen Regeleditors** Sie mehrere nützliche 
 
 In der folgenden Tabelle werden einige Szenarien beschrieben, in denen der **Service aufrufen** verwendet werden kann:
 
-| **Nutzungsszenario** | **Beschreibung** |
+| **Anwendungsfall** | **Beschreibung** |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | **Füllen von Dropdown-Optionen mithilfe der Ausgabe von „Service aufrufen“** | Dynamisches Füllen der Dropdown-Optionen auf der Grundlage der Daten, die aus der Ausgabe des Service aufrufen abgerufen wurden. [Klicken Sie hier](#use-case-1-populate-dropdown-values-using-the-output-of-invoke-service), um die Implementierung zu sehen. |
 | **Festlegen eines wiederholbaren Bereichs mithilfe der Ausgabe von „Service aufrufen“** | Konfiguriert ein wiederholbares Bedienfeld mithilfe von Daten aus der Ausgabe des Aufrufdienstes und ermöglicht so dynamische Bedienfelder. [Klicken Sie hier](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), um die Implementierung zu sehen. |
@@ -151,7 +151,7 @@ Dieses Anwendungsbeispiel zeigt, wie Dropdown-Optionen basierend auf der Ausgabe
 
 #### Implementierung
 
-Erstellen Sie dazu eine Regel im `Pet ID` Textfeld, um den `getPetById`-Service aufzurufen. Legen Sie in der Regel die `enum`-Eigenschaft des `photo-url`-Dropdown-Menüs unter &quot;**[!UICONTROL hinzufügen“ auf `photoUrls` fest]**.
+Erstellen Sie dazu eine Regel im `Pet ID` Textfeld, um den `getPetById`-Service aufzurufen. Legen Sie in der Regel die `enum`-Eigenschaft des `photo-url`-Dropdown-Menüs unter &quot;`photoUrls` hinzufügen“ auf **[!UICONTROL fest]**.
 
 ![Dropdown-Wert festlegen](/help/forms/assets/set-dropdownoption.png)
 

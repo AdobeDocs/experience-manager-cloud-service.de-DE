@@ -2,8 +2,8 @@
 title: Massen-Upload von Prinzipalen in IMS nach Verwendung von CTT
 description: Überblick über Dateien zum Massen-Upload für Gruppen und Benutzende und deren Verwendung in der Admin Console zum Erstellen von Gruppen und Benutzenden.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
-source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 100%
 
@@ -37,9 +37,10 @@ Es gibt einige allgemeine Richtlinien zum Bearbeiten und Verwenden der beiden Ar
 
 ## Massen-Upload von Gruppen {#group-upload}
 
-#### Anwendungsfall: Gruppen wurden nach AEM as a Cloud Service migriert, doch diese Gruppen sind nicht in IMS/in der Admin Console vorhanden und müssen daher über die Admin Console in IMS hochgeladen werden.
+### Anwendungsfall: Gruppen wurden nach AEM as a Cloud Service migriert, doch diese Gruppen sind nicht in IMS/in der Admin Console vorhanden und müssen daher über die Admin Console in IMS hochgeladen werden.
 
 Gehen Sie wie folgt vor, um nach der CTT-/CAM-Migration die Admin Console-Funktion zum Massen-Upload von Gruppen zu verwenden:
+
 1. Herunterladen der Massengruppendatei aus CAM
 
    1. Navigieren Sie in CAM zu **Content-Übertragung** und wählen Sie **Aufnahmeaufträge** aus.

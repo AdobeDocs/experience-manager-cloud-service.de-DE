@@ -4,7 +4,7 @@ description: Anpassen von Design und Stilen für Edge Delivery Services für AEM
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -476,7 +476,7 @@ Dieser Selektor wählt alle Feldsätze mit dem Klassen-Optionsfeldgruppen-Wrappe
 ```
 
 - Das fieldset-Element dient als Bedienfeld-Container mit dem Klassen-Bedienfeld-Wrapper und zusätzlichen Klassen zur Gestaltung basierend auf dem Bedienfeldnamen (Feldanmeldung).
-- Das legend-Element (&lt;legend>) dient als Bedienfeldtitel mit dem Text „Anmeldeinformationen“ und der Klassenfeldbezeichnung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
+- Das Legendenelement (`<legend>`) dient als Bereichstitel mit dem Text „Login Information“ und der Klassenfeldbeschriftung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
 - In diesem Feldsatz stehen mehrere .{Type}-Wrapper-Elemente (in diesem Fall „.text-wrapper“ und „.password-wrapper“) für einzelne Formularfelder im Panel.
 - Jeder Wrapper enthält eine Bezeichnung, ein Eingabefeld und eine Beschreibung, ähnlich wie bei den vorherigen Beispielen.
 
@@ -637,7 +637,6 @@ Die Auswahl gestaltet alle wiederholbaren Bedienfelder und sorgt so für ein ein
   margin-bottom: 10px;
 }
 ```
-
 Diese Auswahl gestaltet alle Feld-Wrapper in einem wiederholbaren Bedienfeld, wobei ein konsistenter Abstand zwischen Feldern beibehalten wird.
 
 - Targeting bestimmter Felder (in einem Bedienfeld):

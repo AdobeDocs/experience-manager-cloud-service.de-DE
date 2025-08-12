@@ -4,10 +4,10 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -241,7 +241,7 @@ Gehen Sie wie folgt vor, um in kürzester Zeit über eine lokale AEM-Entwicklung
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub-Projekt klonen: Klonen Sie Ihr Projekt-Repository von GitHub mithilfe des folgenden Befehls und ersetzen Sie &lt;owner> durch die Repository-Besitzerin bzw. den Repository-Besitzer und &lt;repo> mit dem Repository-Namen:
+1. Klonen Sie Ihr GitHub-Projekt: Klonen Sie Ihr Projekt-Repository aus GitHub mit dem folgenden Befehl, wobei Sie `<owner>` durch den Repository-Eigentümer und `<repo>` durch den Repository-Namen ersetzen:
 
    ```
    git clone https://github.com/<owner>/<repo>
