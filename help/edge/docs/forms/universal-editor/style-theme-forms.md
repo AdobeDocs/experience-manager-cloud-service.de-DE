@@ -4,7 +4,7 @@ description: Passen Sie effektiv das Design und den Stil für AEM Forms-Assets a
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -308,7 +308,7 @@ Der adaptive Formularbaustein bietet eine konsistente HTML-Struktur für verschi
 
 Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kontrollkästchengruppen haben die folgende HTML-Struktur:
 
-#### HTML-Struktur der allgemeinen Komponenten
+### HTML-Struktur der allgemeinen Komponenten
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ Sie können Formularfelder nach dem jeweiligen Typ (`{Type}-wrapper`) oder nach 
 
 Sie können CSS-Auswahlen verwenden, um bestimmte Feldtypen als Ziel auszuwählen und Stile konsistent anzuwenden.
 
-#### HTML-Struktur
+### HTML-Struktur
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ Sie können CSS-Auswahlen verwenden, um bestimmte Feldtypen als Ziel auszuwähle
 
 
 
-#### Beispiel einer CSS-Auswahl
+### Beispiel einer CSS-Auswahl
 
 ```CSS
 /- Primary Pattern: Target all text input fields */

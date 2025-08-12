@@ -4,7 +4,7 @@ description: Sie können leistungsstarke Formulare in Adobe Experience Manager E
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -50,7 +50,7 @@ Am Ende können Sie die richtige Authoring-Methode auswählen, Übermittlungsopt
 ### Universeller Editor
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [Universeller Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ist ein visuelles Drag-and-Drop-Authoring-Tool für Marketing- und Design-Fachleute, das Geschwindigkeit und Leistung auf Unternehmensniveau vereint:
@@ -110,7 +110,6 @@ Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Shee
 | Submit to AEM workflows/FDM | ✅ | – | Via UE embed |
 | Custom components (JS/CSS) | ✅ | ✅ | Via embed |
 | Localization via Sites | ✅ | Manual | Via embed |
-
 -->
 
 ## Nächste Schritte
@@ -124,8 +123,7 @@ Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Shee
 Jetzt können Sie Ihr erstes leistungsstarkes Formular mit AEM Edge Delivery Services erstellen.
 
 
-<!-- 
-
+<!--
 ## Start creating forms
 
 - [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
@@ -137,9 +135,6 @@ Jetzt können Sie Ihr erstes leistungsstarkes Formular mit AEM Edge Delivery Ser
 - [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 - [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 - [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
--->
-
-<!-- 
 
 ## Start creating forms
 

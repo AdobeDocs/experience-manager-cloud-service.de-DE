@@ -4,10 +4,11 @@ description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. 
 keywords: Auswählen einer Übermittlungsaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek und Verbinden eines adaptiven Formulars mit einem Formulardatenmodell (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 50%
+ht-degree: 63%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 50%
 
 | Version | Link zum Artikel |
 |---------|-----------------------------|
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=de) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions) |
 | AEM as a Cloud Service (Foundation-Komponenten) | [Hier klicken](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Dieser Artikel |
@@ -23,7 +24,7 @@ ht-degree: 50%
 
 Die Formularübermittlung ist der wichtige letzte Schritt der Benutzer-Journey. Dort werden die erfassten Daten verarbeitet und Aktionen durchgeführt. Dieses Dokument enthält eine umfassende Anleitung zum Konfigurieren und Verwalten von Übermittlungsaktionen für adaptive Formulare im universellen Editor.
 
-### Lerninhalte
+## Lerninhalte
 
 Am Ende dieses Dokuments werden Sie Folgendes beherrschen:
 
@@ -33,7 +34,7 @@ Am Ende dieses Dokuments werden Sie Folgendes beherrschen:
 - Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Unternehmensanforderungen
 - Bearbeitung der Formularvalidierung und Fehlerszenarien bei der Übermittlung
 
-### Zielgruppe
+## Zielgruppe
 
 Dieses Handbuch wurde für folgende Rollen entwickelt:
 
@@ -75,8 +76,5 @@ Sie können die Übermittlungsaktion für Formulare, die im universellen Editor 
 
 >[!NOTE]
 >
-> - Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-> - Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
-
-
-
+> - Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+> - Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
