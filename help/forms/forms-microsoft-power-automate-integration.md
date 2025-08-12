@@ -6,9 +6,9 @@ keywords: Verbinden von AEM Forms mit Power Automate, Power Automate-Automation,
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
 source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1531'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -223,7 +223,7 @@ Nachdem Sie [Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Aut
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
 1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Wählen Sie die **[!UICONTROL Power Automate-Fluss aufrufen]** aus der Dropdown-Liste Übermittlungsaktion und wählen Sie einen **[!UICONTROL Power Automate-Fluss]**. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
+1. Wählen Sie aus der Dropdown-Liste „Übermittlungsaktion“ die Option **[!UICONTROL Power Automate-Fluss aufrufen]** und wählen Sie einen **[!UICONTROL Power Automate-Fluss]** aus. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
 
    ![Konfigurieren der Übermittlungsaktion](/help/forms/assets/power-automate-cc.png)
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
@@ -297,19 +297,19 @@ Nachdem Sie [Ihre Instanz von Forms as a Cloud Service mit Microsoft® Power Aut
 1. Melden Sie sich bei Ihrer Autoreninstanz an und wählen Sie Ihr adaptives Formular aus.
 1. Suchen Sie im Konfigurations-Container den im Abschnitt [Erstellen einer Cloud-Konfiguration des Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) erstellten Container, wählen Sie ihn und dann **[!UICONTROL Speichern und schließen]** aus.
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
-Das **Formulareigenschaften** wird angezeigt.
+1. Klicken Sie im Editor auf die Erweiterung **Formulareigenschaften bearbeiten**.
+Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
-   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+   > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 
-1. Klicken Sie auf **Übermittlung** und wählen Sie die Übermittlungsaktion **[!UICONTROL Power Automate-Fluss aufrufen]** aus. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
+1. Klicken Sie auf die Registerkarte **Übermittlung** und wählen Sie die Übermittlungsaktion **[!UICONTROL Power Automate-Fluss aufrufen]** aus. Wählen Sie den erforderlichen Fluss aus, und die Daten von adaptiven Formularen werden bei der Übermittlung übermittelt.
 
    ![Konfigurieren der Übermittlungsaktion](/help/forms/assets/power-automate-ue.png)
-1. Klicken Sie **[!UICONTROL Speichern und schließen]**.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 >[!NOTE]
 >

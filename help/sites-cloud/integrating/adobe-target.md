@@ -3,9 +3,9 @@ title: Integrieren mit Adobe Target
 description: Integrieren mit Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: 0af1f7dcc330a2ee5300088f274150a3ea79efe8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -42,19 +42,19 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service ist der Replikations-Agent, der Angebote und Aktivitäten von AEM mit Adobe Target synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)-Team, wenn Sie den Replikationsagenten erneut aktivieren müssen.
+>In AEM as a Cloud Service ist der Replikations-Agent, der Angebote und Aktivitäten von AEM mit Adobe Target synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)-Team, wenn Sie den Replikationsagenten erneut aktivieren müssen.
 
 >[!NOTE]
 >
 >Wenn Sie Target mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche Funktionen von AEM 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient konfiguriert](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator konfiguriert](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert
 >
 
 >[!CAUTION]
 >
->Schützen Sie den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz, damit er für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+>Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 >
 >Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration mit Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=de#securing-the-activity-settings-node).
 

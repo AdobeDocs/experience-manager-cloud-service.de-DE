@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -49,11 +49,11 @@ In einer Umgebung können Sie beide Domains im von AEM verwalteten CDN und in Ih
 
 ## Workflow {#workflow}
 
-Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Für diesen Workflow ist eine Reihe von Schritten zum Installieren, Konfigurieren und Überprüfen benutzerdefinierter Domain-Namen erforderlich. In der folgenden Tabelle sind die erforderlichen Schritte mit Links zu den Dokumentationsressourcen aufgeführt, um diese Schritte abzuschließen.
+Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktion zwischen dem DNS-Service und Cloud Manager. Für diesen Workflow ist eine Reihe von Schritten zum Installieren, Konfigurieren und Überprüfen benutzerdefinierter Domain-Namen erforderlich. In der folgenden Tabelle finden Sie die erforderlichen Schritte, einschließlich Links zur Dokumentation mit Informationen zur Durchführung dieser Schritte.
 
 >[!WARNING]
 >
->Führen Sie Schritt 4 (DNS konfigurieren) *erst dann) aus* wenn Schritt 3 (Domain-Zuordnung hinzufügen) erfolgreich abgeschlossen wurde. Nach dieser Bestellung wird die Domain beim CDN von Adobe registriert und das richtige Routing eingerichtet, um Ihre Site vor Domain-Übernahmen zu schützen.
+>Führen Sie Schritt 4 (DNS konfigurieren) *erst dann aus*, wenn Schritt 3 (Domain-Zuordnung hinzufügen) erfolgreich abgeschlossen wurde. Durch Einhalten dieser Reihenfolge wird die Domain beim CDN von Adobe registriert und das richtige Routing eingerichtet, um Ihre Site vor Domain-Übernahmen zu schützen.
 
 | Schritt | Beschreibung |
 | --- | --- |

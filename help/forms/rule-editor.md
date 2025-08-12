@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6727'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -537,7 +537,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -573,7 +573,7 @@ Syntax: `@private` Eine Private-Funktion ist nicht als benutzerdefinierte Funkti
 
 * **Name**
 Syntax: `@name funcName <Function Name>`
-Alternativ dazu ist es möglich`,` `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
+Alternativ dazu ist es möglich`,``@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
   `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
   `<Function Name>` ist der Anzeigename der Funktion.
 
@@ -599,7 +599,7 @@ Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können m
 * **Return Type** (Rückgabetyp)
 Syntax: `@return {type}`
 Alternativ ist es möglich, `@returns {type}` zu verwenden.
-Fügt Informationen über die Funktion hinzu, z. B. ihr Ziel.
+Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
   {type} gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
    1. Zeichenfolge

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Benutzende mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** 
 
 >[!WARNING]
 >
->Entfernen Sie die DNS-Einträge der Domain bei Ihrem DNS-Anbieter *vor* Löschen der Domain in Cloud Manager. Verworfene (herumhängende) DNS-Einträge können entführt werden und stellen ein Sicherheitsrisiko dar.
+>Entfernen Sie die DNS-Einträge der Domain bei Ihrem DNS-Anbieter, *bevor* Sie die Domain in Cloud Manager löschen. Verworfene (verwaiste) DNS-Einträge können gekapert werden und stellen ein Sicherheitsrisiko dar.
 
 **So löschen Sie einen benutzerdefinierten Domain-Namen aus einer bestimmten Umgebung:**
 
