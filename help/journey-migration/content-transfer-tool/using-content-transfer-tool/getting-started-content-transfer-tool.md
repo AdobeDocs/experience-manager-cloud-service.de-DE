@@ -65,7 +65,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
 >abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/327075/?quality=12&amp;learn=on&amp;captions=ger&captions=ger" text=" Siehe Demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=ger" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service migrieren:
