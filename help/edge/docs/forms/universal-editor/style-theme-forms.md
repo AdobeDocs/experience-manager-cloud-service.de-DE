@@ -1109,6 +1109,7 @@ Sie können CSS-Auswahlen verwenden, um bestimmte Feldtypen als Ziel auszuwähle
   text-align: center;
 }
 ```
+
 +++
 
 +++ Formatierung basierend auf Feldnamen

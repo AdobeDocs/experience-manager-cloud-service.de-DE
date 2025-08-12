@@ -93,7 +93,7 @@ Kunden mit einer Lizenz bei einem Protokollierungsanbieter oder die ein Protokol
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ In der folgenden Tabelle sehen Sie, welche Anforderungen an die erweiterte Netzw
       <td>Ja</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >Ob Ihre Protokolle von einer einzelnen IP-Adresse aus angezeigt werden, hängt von der gewählten erweiterten Netzwerkkonfiguration ab.  Um dies zu erleichtern, muss ein dedizierter Ausgang verwendet werden.
@@ -493,7 +493,7 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic HTTPS-API für die A
 >
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+>aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [ zu ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)New Relic .
 
@@ -518,7 +518,7 @@ Das Bereichsattribut „Protokolle aufnehmen“ ist für das Token erforderlich.
 
 >[!NOTE]
 >
-> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
 ### Splunk {#splunk}
 
