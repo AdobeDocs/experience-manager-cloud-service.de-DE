@@ -115,13 +115,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-+++
+   +++
 
    +++Konfiguration
 
    Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-+++
+   +++
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -172,13 +172,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-+++
+   +++
 
    +++Konfiguration
 
    Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-+++
+   +++
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
