@@ -54,7 +54,7 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 4. September 2
 
      ![Forms-Add-on in Lösungen und Add-ons beim Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Bei der Programmerstellung können Sie das Forms-Add-on innerhalb der Sites-Lösung auswählen.*
 
-     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Programm bearbeiten**wählen Sie das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
+     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Programm bearbeiten**&#x200B;wählen Sie das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
 
      Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -68,10 +68,10 @@ Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
