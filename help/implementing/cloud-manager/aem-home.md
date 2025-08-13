@@ -1,13 +1,13 @@
 ---
 title: Über Experience Hub
-description: Weitere Informationen zur AEM Experience Hub-Seite.
+description: Weitere Informationen zur Adobe Experience Hub-Seite.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f02457a115d00262b61f09769b9ac0e210942059
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 7%
@@ -16,11 +16,11 @@ ht-degree: 7%
 
 # Über Experience Hub {#aem-experience-hub}
 
-Experience Hub bietet einen zentralen Ausgangspunkt für die Verwaltung von Inhalten, Assets und Websites in Adobe Experience Manager. Experience Hub wurde entwickelt, um Ihnen ein personalisiertes Erlebnis zu bieten und ermöglicht Ihnen eine nahtlose Navigation im AEM-Ökosystem entsprechend Ihren Rollen und Zielen. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem klaren, personalgesteuerten Layout bietet Experience Hub schnellen Zugriff auf wichtige Tools und unterstützt ein optimiertes und effektives Erlebnis über alle AEM-Funktionen hinweg.
+Experience Hub bietet einen zentralen Ausgangspunkt für die Verwaltung von Inhalten, Assets und Websites in Adobe Experience Manager. Experience Hub wurde entwickelt, um Ihnen ein personalisiertes Erlebnis zu bieten, und ermöglicht Ihnen eine nahtlose Navigation im AEM-Ökosystem entsprechend Ihren Rollen und Zielen. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem klaren, personalisierten Layout stellt Experience Hub den schnellen Zugriff auf wichtige Tools sicher und unterstützt ein optimiertes und effektives Erlebnis über alle AEM-Funktionen hinweg.
 
 Hier erhalten Sie einen kurzen Überblick über den neu gestalteten Arbeitsbereich von AEM Experience Hub (1 Minute, 27 Sekunden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3463276?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -63,7 +63,7 @@ Im **Authoring-**&quot; werden alle AEM-Umgebungen angezeigt, auf die Sie zugrei
 
 Zu den Navigationselementen gehört Assets Browse , das das Repository der Produktionsumgebung lädt, auf die der Benutzer zugreifen kann.
 
-![Navigationselemente des Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-navigation.png)
+![Experience Hub-Navigationselemente](/help/implementing/cloud-manager/assets/experience-hub-navigation.png)
 
 Wenn keine AEM Cloud Service-Produktionsumgebungen verfügbar sind, erscheinen die Optionen für den Benutzer abgeblendet (nicht verfügbar).
 

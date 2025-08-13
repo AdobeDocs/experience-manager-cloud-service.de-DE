@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Cloud Manager 2025.8.0 in Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
+source-git-commit: c93716b1a2453c26169020b32e66eb4207f13002
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 59%
+source-wordcount: '1377'
+ht-degree: 57%
 
 ---
 
@@ -26,6 +26,12 @@ Die Version 2025.8.0 von Cloud Manager in AEM as a Cloud Service wurde am Freit
 Die Veröffentlichung der nächsten Version ist für den Freitag, 4. September 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
+
+* **Adobe Experience Hub in Kürze verfügbar**
+
+  Ab dem 19. August 2025 beginnt Adobe mit dem schrittweisen Rollout des neuen Experience Hub für alle Adobe Experience Manager-Benutzer.
+
+  Experience Hub ist ein einheitlicher Ausgangspunkt, der personalisierte, kontextuelle Erlebnisse bereitstellt, mit denen Benutzende Ziele schneller erreichen können. Der Rollout endet am 26. August 2025, sodass er für alle Benutzer verfügbar ist. Die neue Experience Hub ist direkt unter [experience.adobe.com](https://experience.adobe.com/) verfügbar. Weitere Informationen finden Sie unter [Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md).
 
 * **Die Edge Delivery Services-Lizenz kann im Self-Service-Modus in ein HIPAA-Programm aufgenommen werden**
 
@@ -48,7 +54,7 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 4. September 2
 
      ![Forms-Add-on in Lösungen und Add-ons beim Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Bei der Programmerstellung können Sie das Forms-Add-on innerhalb der Sites-Lösung auswählen.*
 
-     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Programm bearbeiten**&#x200B;wählen Sie das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
+     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Programm bearbeiten**wählen Sie das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
 
      Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -62,10 +68,10 @@ Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
