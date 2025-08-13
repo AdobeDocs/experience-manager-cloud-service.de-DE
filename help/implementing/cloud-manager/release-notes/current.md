@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Cloud Manager 2025.8.0 in Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c93716b1a2453c26169020b32e66eb4207f13002
+source-git-commit: c6493d05c60c01b4840c8f12d06aa4508bdbb534
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 57%
+source-wordcount: '1403'
+ht-degree: 55%
 
 ---
 
@@ -54,7 +54,7 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 4. September 2
 
      ![Forms-Add-on in Lösungen und Add-ons beim Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Bei der Programmerstellung können Sie das Forms-Add-on innerhalb der Sites-Lösung auswählen.*
 
-     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Programm bearbeiten**&#x200B;wählen Sie das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
+     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Programm bearbeiten**wählen Sie das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
 
      Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -68,10 +68,10 @@ Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
@@ -97,7 +97,12 @@ Siehe [Hinzufügen einer spezialisierten Testumgebung](/help/implementing/cloud-
 
 ![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezialisierte Testumgebung“](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com).
+>[!NOTE]
+>
+>Adobe hat Anfragen zum Beta-Zugriff für spezialisierte Testumgebungen abgeschlossen und eine ausreichende Anzahl von Teilnehmern erreicht. Die Funktion ist jetzt in Vorbereitung auf die allgemeine Verfügbarkeit.
+
+<!--
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ### Eigenes Git hinzufügen (BYOG) {#gitlab-bitbucket-azure-vsts}
@@ -158,7 +163,7 @@ Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Deli
 
 Siehe [Edge Delivery-Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
+Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com).
 
 
 ## Fehlerbehebungen
