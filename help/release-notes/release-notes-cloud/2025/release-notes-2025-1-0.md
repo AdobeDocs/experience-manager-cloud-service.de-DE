@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Video zur Versionsübersicht von Januar 2025 an, das eine Zusammenfassung der Funktionen gibt, die in Version 2025.1.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3456083?quality=12&captions=ger)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
