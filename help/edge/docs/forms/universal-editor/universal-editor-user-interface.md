@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms
 
-Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) bietet eine visuelle Benutzeroberfläche zum Erstellen von AEM Forms mit Edge Delivery Services. Dieses Handbuch hilft Ihnen, die Schnittstelle zum effizienten Erstellen von Formularen zu verstehen.
+Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) bietet eine visuelle Benutzeroberfläche zum Erstellen von AEM Forms mit Edge Delivery Services. Sie bietet ein **What You See Is What You Get-Erlebnis (WYSIWYG**, das Benutzern genau anzeigt, wie Ihre Formulare angezeigt werden.
 
 ![Übersicht über die Benutzeroberfläche des universellen Editors](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Überblick
-
-Der universelle Editor bietet ein **What You See Is What You Get (WYSIWYG**-Erlebnis, das Benutzern genau anzeigt, wie Ihre Formulare angezeigt werden. Unabhängig davon, ob Sie mit der Erstellung von Formularen noch nicht vertraut sind oder ein erfahrener Entwickler sind, hilft Ihnen dieses Handbuch bei Folgendem:
+Dieses Handbuch hilft Ihnen, die Schnittstelle zum effizienten Erstellen von Formularen zu verstehen. Unabhängig davon, ob Sie mit der Erstellung von Formularen noch nicht vertraut sind oder ein erfahrener Entwickler sind, hilft Ihnen dieses Handbuch bei Folgendem:
 
 **Grundlegende Kenntnisse erwerben:**
 
@@ -37,6 +35,8 @@ Der universelle Editor bietet ein **What You See Is What You Get (WYSIWYG**-Erle
 - Erstellen von Formularen vom Konzept bis zur Veröffentlichung
 - Testen und Vorschau von Formularen auf allen Geräten
 - Zusammenarbeit mit Team-Mitgliedern bei Formularprojekten
+
+
 
 ## Schneller Einstieg
 
@@ -323,7 +323,7 @@ Das **Eigenschaftenbedienfeld** (auf der rechten Seite) ist Ihr Kontrollzentrum 
 
 **Diese Tools ermöglichen ausgefeilte Formularfunktionen:**
 
-+++Datenintegration
++++-Datenintegration
 
 #### **Datenquelle**
 

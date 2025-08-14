@@ -1,59 +1,36 @@
 ---
 title: Erstellen und Veröffentlichen von adaptiven Forms mit Edge Delivery Services
-description: Schrittweise Anweisungen zum Erstellen, Verfassen und Veröffentlichen von adaptivem Forms mit Kernkomponenten- oder Edge Delivery Services-Vorlagen in AEM, mit Schwerpunkt auf technischer Genauigkeit und Klarheit.
-keywords: Adaptive Formulare, Edge-Bereitstellungsdienste, Kernkomponenten, universeller Editor, Formularerstellung, AEM Forms, Vorlagenauswahl, Formularveröffentlichung
+description: Schrittweise Anweisungen zum Erstellen, Verfassen und Veröffentlichen von adaptivem Forms mithilfe von Edge Delivery Services-Vorlagen in AEM, mit Schwerpunkt auf technischer Genauigkeit und Klarheit.
+keywords: Adaptive Formulare, Edge-Bereitstellungsdienste, universeller Editor, Formularerstellung, AEM Forms, Formularveröffentlichung
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 5%
+source-wordcount: '1005'
+ht-degree: 4%
 
 ---
 
 
 # Erstellen und Veröffentlichen von adaptiven Forms mit Edge Delivery Services
 
-Dieses Dokument enthält Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von Adaptive Forms in AEM mithilfe von Edge Delivery Services. Es behandelt Kernkomponenten- und Edge Delivery Services-Vorlagen.
+Dieses Dokument enthält schrittweise Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von adaptivem Forms mithilfe von Edge Delivery Services-Vorlagen in AEM. Sie umfasst den gesamten Workflow von der Formularerstellung bis zur Produktionsbereitstellung.
 
 Am Ende dieses Handbuchs erfahren Sie, wie Sie:
 
-- Wählen Sie den entsprechenden Vorlagentyp für Ihren Anwendungsfall aus
-- Erstellen von Formularen mit Kernkomponenten oder Edge Delivery Services-Vorlagen
-- Erstellen von Formularen mit dem richtigen Editor
+- Erstellen von Formularen mit Edge Delivery Services-Vorlagen
+- Erstellen von Formularen mit dem universellen Editor
 - Konfigurieren und Veröffentlichen von Formularen in Edge Delivery Services
 - Zugreifen auf veröffentlichte Formulare und Überprüfen der Bereitstellung
 
-## Vorlagenauswahl
 
-Bevor Sie beginnen, bestimmen Sie, welcher Vorlagentyp Ihren Anforderungen entspricht:
-
-| Kriterien | Kernkomponentenvorlage | Edge Delivery Services-Vorlage |
-|-------------------------|-----------------------------------------|-------------------------------------|
-| Am besten geeignet für | Unternehmens-Workflows, komplexe Integrationen | Öffentliche Formulare mit hoher Leistung |
-| Editor | Editor für adaptive Formulare | Universeller Editor |
-| Publishing | AEM-Veröffentlichung + Edge Delivery Services | Nur Edge Delivery Services |
-| Komplexität | Erweiterte Formularfunktionen | Optimierte, schnelle Formulare |
-| Integration | Vollständiges AEM-Ökosystem | Git-basierte Entwicklung |
-| Lernkurve | Vertrautheit der AEM-Anwender | Moderner, vereinfachter Ansatz |
-
-**Entscheidungshilfe:**
-
-![Vorlagenauswahl-Entscheidung](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
-
-- Verwenden Sie **Kernkomponenten** für komplexe Workflows, eine tief greifende AEM-Integration oder die Nutzung vorhandener AEM-Assets.
-- Verwenden Sie **Edge Delivery Services** für Leistung, Einfachheit und moderne Entwicklungsverfahren.
-
-
-*Entscheidungs-Flussdiagramm für die Auswahl des entsprechenden Vorlagentyps*
 
 ## Voraussetzungen
 
 Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind, bevor Sie fortfahren:
 
-### Technische Anforderungen
 
 - **AEM Forms as a Cloud Service**: Eine aktive Autoreninstanz mit einer Forms-Lizenz.
 - **GitHub-**: Persönliches oder organisatorisches Konto für die Repository-Verwaltung.
@@ -61,18 +38,11 @@ Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind, bevor Sie 
    - **Neues Projekt**: [Erstellen eines neuen AEM-Projekts mit dem Adaptive Forms-Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). Das Repository ist für Edge Delivery Services vorkonfiguriert.
    - **Vorhandenes Projekt**: [Hinzufügen eines adaptiven Forms-Blocks zu einem vorhandenen Repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) und Aktualisieren der Konfiguration.
 
-### Umgebungskonfiguration
-
 - **AEM-GitHub-**: [Herstellen einer Verbindung](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) zwischen Ihrer AEM-Instanz und dem GitHub-Repository.
 - **Edge Delivery Services**: Stellen Sie sicher, dass das Repository für die automatische Bereitstellung konfiguriert ist.
 - **Berechtigungen**: Vergewissern Sie sich, dass Sie über die erforderlichen Zugriffsrechte für die Erstellung und Veröffentlichung von Formularen verfügen.
 
-### Validierung einrichten
-
-
-1. Überprüfen Sie, ob das GitHub-Repository den adaptiven Forms-Block enthält.
-2. Testen Sie die Verbindung zwischen AEM und Ihrem GitHub-Repository.
-3. Stellen Sie sicher, dass Sie Inhalte in Edge Delivery Services veröffentlichen können.
+- Überprüfen Sie, ob das GitHub-Repository den adaptiven Forms-Block enthält.
 
 
 
@@ -80,28 +50,14 @@ Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind, bevor Sie 
 
 Der Prozess umfasst drei Hauptphasen:
 
-- **Phase 1:** [Vorlagenauswahl und Formularerstellung](#step-1-template-selection-and-form-creation)
+- **Phase 1:** [Formularerstellung](#step-1-form-creation)
 - **Phase 2:** [Formularerstellung und -entwurf](#step-2-form-authoring-and-design)
 - **Phase 3:** [Konfiguration und Veröffentlichung](#step-3-configuration-and-publishing)
 
 Jede Phase umfasst Validierungsschritte zur Bestätigung der korrekten Einrichtung.
 
-![Dreistufiger Workflow](/help/edge/docs/forms/universal-editor/assets/three-phase-workflow.svg)
-*Überblick über die drei Hauptphasen bei der Erstellung und Veröffentlichung von Formularen*
 
-### Schritt 1: Vorlagenauswahl und Formularerstellung
-
-Wählen Sie den Workflow basierend auf Ihrer Vorlagenauswahl aus:
-
->[!BEGINTABS]
-
->[!TAB Edge Delivery Services-Vorlage]
-
-**Anwendungsfall:** Hochleistungsformulare und moderne Entwicklungs-Workflows.
-
-**Funktionen:** Bearbeiten im universellen Editor und Edge Delivery Services-Veröffentlichung.
-
-#### Verfahren
+### Schritt 1: Formularerstellung
 
 1. **Zugriff auf die Formularerstellung**
    - Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
@@ -109,7 +65,7 @@ Wählen Sie den Workflow basierend auf Ihrer Vorlagenauswahl aus:
    - Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 
 1. **Vorlage auswählen**
-   - Wählen Sie auf der Registerkarte **0&rbrace;Source** eine **Edge Delivery Services-basierte Vorlage.**
+   - Wählen Sie auf der Registerkarte **0}Source** eine **Edge Delivery Services-basierte Vorlage.**
    - Die **Erstellen** wird aktiviert.
 
      ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
@@ -139,70 +95,8 @@ Wählen Sie den Workflow basierend auf Ihrer Vorlagenauswahl aus:
 
 **Ergebnis:** Das Formular ist für das Authoring im universellen Editor bereit.
 
->[!TAB Kernkomponentenvorlage]
-
-**Anwendungsfall:** Unternehmens-Workflows und komplexe Integrationen.
-
-**Funktionen:** Authoring mit dem Editor für adaptive Forms, Dual Publishing (AEM + Edge Delivery Services), erweiterte Formularfunktionen.
-
-#### Verfahren
-
-1. **Zugriff auf die Formularerstellung**
-   - Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
-   - Gehen Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
-   - Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
-
-1. **Vorlage und Design auswählen**
-   - Wählen Sie auf der **&#x200B;**&#x200B;Source **eine (Kernkomponentenbasierte Vorlage**.
-   - Wählen Sie ein **Design** für die Formatierung aus.
-   - Die **Erstellen** wird aktiviert.
-
-   ![Kernkomponenten-Vorlagenauswahl](/help/forms/assets/core-component-based-template.png)
-
-1. **Optionen konfigurieren (optional)**
-   - **Registerkarte „Data Source**: Wählen Sie bei Bedarf die Datenintegration aus.
-   - **Registerkarte „Übermittlung**: Wählen Sie eine Übermittlungsaktion aus (kann später konfiguriert werden).
-   - **Registerkarte Versand**: Zeitplan für die Veröffentlichung/das Rückgängigmachen der Veröffentlichung festlegen.
-
-1. **Abschließen der Formulareinrichtung**
-   - Klicken Sie **Erstellen**, um den Assistenten für die Formularerstellung zu öffnen.
-   - Geben Sie Folgendes ein:
-      - **Name**: Interne Kennung (keine Leerzeichen, Bindestriche verwenden).
-      - **Titel**: Anzeigename für das Formular.
-      - **Path**: Speicherort im AEM-Repository.
-
-     ![Assistent für die Formularerstellung](/help/forms/assets/create-cc-form.png)
-
-1. **Validierung**
-   - Nachdem Sie auf **Erstellen** geklickt haben, überprüfen Sie:
-      - Das Formular wird im Editor für adaptive Forms geöffnet.
-      - Die Komponenten-Symbolleiste ist verfügbar.
-      - Auf das Bedienfeld Eigenschaften kann zugegriffen werden.
-      - Design-Stile werden angewendet.
-
-     ![Editor für adaptive Formulare](/help/forms/assets/af-editor-form.png)
-
-**Ergebnis:** Das Formular ist für das Authoring im Editor für adaptive Forms bereit.
-
->[!ENDTABS]
-
 ### Schritt 2: Erstellen und Entwerfen von Formularen
 
-Das Authoring-Erlebnis variiert je nach Vorlage:
-
-- **Edge Delivery Services-Vorlage**: Universeller Editor
-- **Kernkomponentenvorlage**: Adaptiver Forms-Editor
-
-![Editor-Vergleich](/help/edge/docs/forms/universal-editor/assets/editor-comparison.svg)
-*Vergleich der Funktionen des universellen Editors mit denen des adaptiven Forms-Editors*
-
->[!BEGINTABS]
-
->[!TAB Universeller Editor (Edge Delivery Services)]
-
-**Schnittstelle** Moderne, optimierte Bearbeitung für optimale Leistung.
-
-#### Hinzufügen von Formularkomponenten
 
 1. **Zugriff auf die Komponentenbibliothek**
    - Öffnen Sie den Inhaltsbrowser im universellen Editor.
@@ -220,7 +114,7 @@ Das Authoring-Erlebnis variiert je nach Vorlage:
 1. **Formular entwerfen**
    - Konfigurieren Sie die Feldeigenschaften im Bedienfeld Eigenschaften .
    - Legen Sie Validierungsregeln und -verhalten fest.
-*s Passen Sie Stil und Layout nach Bedarf an.
+   - Passen Sie Stil und Layout nach Bedarf an.
 
    ![Ausgefülltes Registrierungsformular](/help/edge/assets/contact-us.png)
 
@@ -236,53 +130,9 @@ Das Authoring-Erlebnis variiert je nach Vorlage:
 - [Konfigurieren von Übermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md) für die Datenverarbeitung.
 - [Handbuch zum universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) für erweiterte Funktionen.
 
->[!TAB Editor für adaptive Forms (Kernkomponenten)]
-
-**Benutzeroberfläche:** Bearbeitung mit vollem Funktionsumfang und erweiterten Formularfunktionen.
-
-#### Hinzufügen von Formularkomponenten
-
-1. **Zugriff auf die Komponentenbibliothek**
-   - Klicken Sie im Abschnitt **Komponenten hierher ziehen** auf **Komponente einfügen**.
-
-   ![Bereich zum Einfügen von Komponenten](/help/forms/assets/drag-components-af-editor.png)
-
-2. **Formularfelder hinzufügen**
-   - Durchsuchen Sie die **Adaptive Formularkomponenten** Liste.
-   - Ziehen Sie die gewünschten Komponenten in das Formular.
-   - Verwenden Sie erweiterte Komponenten wie Bedienfelder, Assistenten und Datenintegrationen.
-
-   ![Komponentenbibliothek hinzufügen](/help/forms/assets/add-component-af.png)
-
-3. **Formular entwerfen**
-   - Konfigurieren Sie die Feldeigenschaften im Bedienfeld Eigenschaften .
-   - Festlegen komplexer Validierungsregeln und Geschäftslogik.
-   - Anwenden von Designs und erweiterten Stilen.
-
-   ![Registrierungs-Formular ausgefüllt](/help/forms/assets/af-editor-form.png)
-
-#### Validierung
-
-- Alle erforderlichen Felder sind vorhanden.
-- Komplexe Validierungsregeln werden konfiguriert.
-- Design-Stile werden angewendet.
-- Die Datenintegration funktioniert wie vorgesehen (falls zutreffend).
-
-#### Nächste Schritte
-
-- [Konfigurieren von Übermittlungsaktionen](/help/forms/configure-submit-actions-core-components.md) für erweiterte Workflows.
-- [Handbuch zu Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md) für Unternehmensfunktionen.
-
->[!ENDTABS]
-
 ### Schritt 3: Konfiguration und Veröffentlichung
 
-Konfigurieren Sie Edge Delivery Services und veröffentlichen Sie Ihr Formular. Der Prozess unterscheidet sich je nach Vorlagentyp.
-
-#### Edge Delivery Services-Konfiguration
-
->[!BEGINTABS]
->[!TAB Edge Delivery Services-Vorlage (automatisch)]
+Konfigurieren Sie Edge Delivery Services und veröffentlichen Sie Ihr Formular.
 
 **Konfiguration:** (kein manuelles Setup erforderlich).
 
@@ -296,56 +146,7 @@ Konfigurieren Sie Edge Delivery Services und veröffentlichen Sie Ihr Formular. 
 
 ![Automatische EDS-Konfiguration](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB Kernkomponentenvorlage (manuell)]
-
-**Konfiguration:** manuelles Setup erforderlich.
-
-#### Manuelle Konfigurationsschritte
-
-1. **Zugriffs-Konfigurations-Tools**
-   - Navigieren Sie zu **Tools** > **Cloud Services** > **Edge Delivery Services-Konfiguration**.
-
-   ![EDS-Konfigurationszugriff](/help/edge/assets/select-eds-conf.png)
-
-1. **Konfiguration erstellen**
-   - Wählen Sie den Ordner aus, der dem Namen Ihres Formulars entspricht (z. B. `forms/enrollment-form`).
-   - Klicken Sie **Erstellen** > **Konfiguration**.
-
-   ![Erstellen der EDS-Konfiguration](/help/forms/assets/create-eds-conf.png)
-
-1. **Eigenschaften konfigurieren**
-   - Klicken Sie auf **Edge Delivery Services-**.
-   - Wählen Sie **Eigenschaften** aus, um das Konfigurationsdialogfeld zu öffnen.
-
-   ![Konfigurationseigenschaften](/help/forms/assets/eds-conf.png)
-
-1. **Parameter festlegen**
-   - **Erforderlich:**
-      - **Organisation**: GitHub-Organisationsname.
-      - **Site-**: GitHub-Repository-Name.
-      - **Verzweigung**: Name der Verzweigung (leer lassen für Haupt).
-   - **optional:**
-      - **Edge-Host**: Standard (wird sowohl auf .page als auch auf .live veröffentlicht).
-      - **Site Authentication Token**: Für eine sichere Authentifizierung (falls erforderlich).
-
-1. **Konfiguration speichern**
-   - Klicken Sie auf **Speichern und schließen**.
-
-#### Validierung
-
-- Konfiguration wurde erfolgreich erstellt.
-- GitHub-Organisation und -Repository sind korrekt angegeben.
-- Die Verzweigungseinstellungen stimmen mit der Repository-Struktur überein.
-- Das Formular wird im Konfigurationsordner angezeigt.
-
->[!ENDTABS]
-
 #### Formular veröffentlichen
-
->[!BEGINTABS]
->[!TAB Veröffentlichung im universellen Editor]
-
-**Für Edge Delivery Services-Vorlagen**
 
 1. Klicken Sie im universellen Editor auf **Veröffentlichen**-Schaltfläche (oben rechts).
 2. Bestätigen Sie, dass die Veröffentlichung erfolgreich war, im Dialogfeld.
@@ -354,19 +155,6 @@ Konfigurieren Sie Edge Delivery Services und veröffentlichen Sie Ihr Formular. 
    ![Veröffentlichung im universellen Editor](/help/edge/assets/publish-form.png)
 
 - [Veröffentlichungshandbuch](/help/edge/docs/forms/universal-editor/publish-forms.md)
-
->[!TAB Veröffentlichung des adaptiven Forms-Editors]
-
-1. Wählen Sie in der Experience Manager Forms-Konsole das zu veröffentlichende Formular aus.
-2. Klicken **[!UICONTROL in]** Symbolleiste auf „Veröffentlichen“. Überprüfen Sie die zu veröffentlichenden Referenz-Assets.
-
-![Veröffentlichen eines Formulars im Editor für adaptive Formulare](/help/forms/assets/publish-af-editor.png)
-
->[!NOTE]
->
-> Weitere Informationen [ Sie unter „Veröffentlichung in Experience Manager Forms ](/help/forms/manage-publication.md)&quot;.
-
->[!ENDTABS]
 
 ## Formular-URLs
 
@@ -414,11 +202,6 @@ Beispiel für Formular-`contact-us` im Repository `forms-project` unter `acme-co
 
 - Bereitgestellt: ![Registrierungsformular für bereitgestellte Version](/help/forms/assets/registration-form-staged-version.png)
 - Live: ![Live-Version des Registrierungsformulars](/help/forms/assets/registration-form-live-version.png)
-
-**Kernkomponentenvorlage:**
-
-- Gestaffelt: ![Registrierungsformular für gestaffelte Version](/help/forms/assets/enrollment-form-staged-version.png)
-- Live: ![Live-Version des Registrierungsformulars](/help/forms/assets/enrollment-form-live-version.png)
 
 ## Fehlerbehebung
 
@@ -502,13 +285,13 @@ Im Folgenden finden Sie häufige Probleme und Lösungen für AEM Forms mit Edge 
 
 +++
 
-+++Hilfe anfordern
++++Hilfe
 
 Wenn die Probleme bestehen bleiben:
 
 1. Überprüfen Sie den Status des Adobe Experience Cloud-Service.
 2. Lesen Sie die [Dokumentation zu Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=de).
-3. Besuchen Sie [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/?profile.language=de).
+3. Besuchen Sie [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/).
 4. Adobe-Kundenunterstützung kontaktieren.
 
 +++
@@ -517,19 +300,8 @@ Wenn die Probleme bestehen bleiben:
 
 Beachten Sie nach Abschluss der Formularerstellung und -veröffentlichung Folgendes:
 
-### Sofortige Aktionen
-
-- Testen Sie Ihr Formular mit diesem Handbuch.
-- Überprüfen Sie Ihr GitHub-Repository und Ihre AEM-Verbindung.
-- Beispielformulare überprüfen.
-
-### Fortgeschrittene Themen
-
 - [Konfigurieren von Übermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md): Richten Sie die Datenverarbeitung und Integrationen ein.
-- [Formulardatenmodelle](/help/forms/create-form-data-models.md): Verbinden von Formularen mit Backend-Datenquellen.
-
-### Leistungsoptimierung
-
+- [Formulardatenmodelle](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): Verbinden von Formularen mit Backend-Datenquellen.
 - [Best Practices für Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=de): Maximieren Sie die Leistung.
 - [Formularanalyse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): Verfolgen Sie die Formularleistung und das Benutzerverhalten.
 

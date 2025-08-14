@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1095,7 +1095,6 @@ ht-degree: 97%
          + [Formularfeldvalidierung: Hinzufügen von Fehlerprüfungen zu Ihren Formularen](/help/edge/docs/forms/validate-forms.md)
          + [Entwerfen ansprechender Formulare: Anleitung zur Gestaltung und Anpassung](/help/edge/docs/forms/style-theme-forms.md)
          + [Erstellen von Erfolgsmeldungen: Anpassen der Dankeseite Ihres Formulars](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Anleitung zur Formularübermittlung: Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
          + [Dynamische Formularfelder: Laden von Optionen aus URLs](/help/edge/docs/forms/load-options-from-url.md)
          + [Hinzufügen von intelligentem Verhalten: Anleitung zu Formularregeln und -logik](/help/edge/docs/forms/rules-forms.md)
          + [Erweiterte Formularvalidierung: Anleitung zu regulären Ausdrücken](/help/edge/docs/forms/regex-forms.md)
@@ -1106,6 +1105,7 @@ ht-degree: 97%
          + [Erstellen benutzerdefinierter Formularkomponenten: Entwicklerhandbuch](/help/edge/docs/forms/custom-components-forms.md)
          + [Überwachen der Formularleistung: Handbücher zur betrieblichen Telemetrie](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Konfigurieren der Übermittlung für Edge Delivery Services-Formulare](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Anleitung zur Formularübermittlung: Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
       + [Häufig gestellte Fragen (FAQ)](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Best Practices für die Erstellung von Formularen](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
