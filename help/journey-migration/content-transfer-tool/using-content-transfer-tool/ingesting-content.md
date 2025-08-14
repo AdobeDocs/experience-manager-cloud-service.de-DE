@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
-workflow-type: ht
-source-wordcount: '3467'
-ht-degree: 100%
+source-git-commit: c81e870667d284626a0092775fdd3bab37b99c58
+workflow-type: tm+mt
+source-wordcount: '3577'
+ht-degree: 96%
 
 ---
 
@@ -194,7 +194,7 @@ Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie eini
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Eindeutigkeitsbeschränkung verletzt Eigenschaft [jcr:uuid] mit dem Wert a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
 Jeder Knoten in AEM muss über eine eindeutige UUID verfügen. Dieser Fehler weist darauf hin, dass ein Knoten, der gerade aufgenommen wird, dieselbe UUID hat wie ein Knoten, der in einem anderen Pfad in der Zielinstanz vorhanden ist. Hierfür kann es zwei Gründe geben:
 
@@ -269,6 +269,15 @@ Manchmal kann es unerwartet zeitweise auftretende Probleme aufgrund fehlgeschlag
 >abstract="Die Extraktion, auf die die Aufnahme gewartet hat, wurde nicht erfolgreich abgeschlossen. Die Aufnahme wurde aufgehoben, da sie nicht ausgeführt werden konnte."
 
 Bei einer Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wird geduldig gewartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt normal gestartet. Wenn die Extraktion fehlschlägt oder gestoppt wird, werden die Aufnahme und der dazugehörige Indizierungsvorgang nicht gestartet, sondern zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
+
+### Wartende Aufnahme konnte nicht gestartet werden {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="Wartende Aufnahme nicht gestartet"
+>abstract="Die Aufnahme konnte nicht gestartet werden, nachdem auf den Abschluss einer Extraktion gewartet wurde."
+
+Eine Aufnahme, die mit einer laufenden Extraktion als Quellmigrationssatz erstellt wurde, wartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt versucht die Aufnahme, normal zu starten. Wenn die Aufnahme nicht gestartet werden kann, wird sie als fehlgeschlagen markiert. Mögliche Gründe für das Nicht-Starten sind: In der Zielautorenumgebung wird eine IP-Zulassungsliste konfiguriert, die Zielumgebung ist aus einem anderen Grund nicht verfügbar.  Überprüfen Sie in diesem Fall, warum die Aufnahme nicht gestartet werden konnte, beheben Sie das Problem und starten Sie die Aufnahme erneut (es ist nicht erforderlich, die Extraktion erneut auszuführen).
 
 ### Gelöschtes Asset nach erneuter Aufnahme nicht vorhanden
 
