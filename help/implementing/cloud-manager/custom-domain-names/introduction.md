@@ -5,8 +5,8 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
-workflow-type: ht
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 | 1 | [SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | [Benutzerdefinierte Domain hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | [Domain-Zuordnung hinzufügen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | [DNS konfigurieren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 4 | [DNS konfigurieren](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#config-dns) |
 | 5 | [DNS-Status überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]

@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 99%
+source-wordcount: '1089'
+ht-degree: 91%
 
 ---
 
@@ -39,7 +39,7 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-custom-domain-name-settings}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -75,7 +75,7 @@ Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://`
 
    >[!NOTE]
    >
-   >Wenn Sie Ihr eigenes kundenseitig verwaltetes SSL-Zertifikat (OV/EV oder DV) verwenden, müssen Sie kein SSL-Zertifikat hinzuzufügen. Diese Regel gilt auch, wenn Sie planen, einen ***Anbieter*** eines kundenseitig verwalteten CDNs (Content Delivery Network) zu verwenden. Gehen Sie stattdessen direkt zu [Domain-Zuordnung hinzufügen](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) wenn Sie bereit sind.
+   >Wenn Sie Ihr eigenes kundenseitig verwaltetes SSL-Zertifikat (OV/EV oder DV) verwenden, müssen Sie kein SSL-Zertifikat hinzuzufügen. Diese Regel gilt auch, wenn Sie planen, einen ***Anbieter*** eines kundenseitig verwalteten CDNs (Content Delivery Network) zu verwenden. Gehen Sie stattdessen direkt zu [Hinzufügen einer Domain-Zuordnung](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md), sobald Sie dazu bereit sind.
 
 
 ### Schritte bei verwalteten Adobe-Zertifikaten {#adobe-managed-cert-steps}
@@ -94,13 +94,18 @@ Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ei
 >
 >Bei von Adobe verwalteten CDNs sind bei Verwendung von DV(Domain Validation)-Zertifikaten nur Sites mit ACME-Validierung zulässig.
 
-#### Voraussetzungen {#adobe-managed-cert-dv-requirements}
 
-Sie müssen diese Anforderungen erfüllen, bevor Sie Ihre DNS-Einträge konfigurieren.
+### DNS konfigurieren{#config-dns}
+
+>[!WARNING]
+>
+>Hier gilt der Grundsatz „Registrieren vor der Werbung“. Das heißt, die Konfiguration des DNS sollte nur *werden, nachdem* die Domain-Zuordnung erfolgreich hinzugefügt haben. Dadurch wird sichergestellt, dass Cloud Manager erkennt und überprüft, ob die Domain in seiner eigenen Konfiguration vorhanden ist, bevor es auf Anfragen reagieren kann. Außerdem werden dadurch Domainübernahmeversuche vermieden.
+
+Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen *bevor* dass Sie Ihre DNS-Einträge konfigurieren:
 
 * Identifizieren Sie Ihren Domain-Host oder Ihre Registrierungsstelle, falls Sie sie noch nicht kennen.
 * Sie müssen in der Lage sein, die DNS-Einträge für die Domain Ihres Unternehmens zu ändern, oder sich andernfalls an eine entsprechende Person wenden, die dies kann.
-* Sie müssen Ihren konfigurierten, benutzerdefinierten Domain-Namen bereits überprüft haben, wie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) beschrieben.
+* Sie haben den konfigurierten benutzerdefinierten Domain-Namen bereits überprüft, wie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) beschrieben.
 
 #### CNAME-Eintrag {#adobe-managed-cert-cname-record}
 
