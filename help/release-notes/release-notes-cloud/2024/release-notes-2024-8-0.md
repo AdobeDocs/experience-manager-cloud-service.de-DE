@@ -4,9 +4,9 @@ description: Versionshinweise für Version 2024.8.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Die vorhandene Sites-Funktion [Vererbung](/help/sites-cloud/authoring/universal-
 
 Darüber hinaus werden jetzt die folgenden Seitenverwaltungsfunktionen unterstützt:
 
-* [AEM-Tags](/help/sites-cloud/authoring/sites-console/tags.md) können als [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md) nach Edge Delivery Services exportiert werden.
+* [AEM-Tags](/help/sites-cloud/authoring/sites-console/tags.md) können als [Taxonomie](https://www.aem.live/docs/authoring-taxonomy) nach Edge Delivery Services exportiert werden.
 * [Vorlagen](/help/sites-cloud/authoring/universal-editor/templates.md) für Edge Delivery Services werden bald verfügbar sein.
 
 ### Early-Adopter-Programm {#sites-early-adopter}

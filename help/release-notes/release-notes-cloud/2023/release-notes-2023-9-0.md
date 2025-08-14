@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2023.9.0 von [!DNL Adobe Experience 
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 84%
@@ -40,7 +40,7 @@ Eine Zusammenfassung der in der Version 2023.9.0 hinzugefügten Funktionen finde
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## AEM-Edge Delivery Services {#edge-delivery}
+## AEM Edge Delivery Services {#edge-delivery}
 
 Edge Delivery ist ein neues Paket zusammenstellbarer Services, die darauf ausgerichtet sind, die Wirkung von Inhalten zu maximieren, um messbare Geschäftsergebnisse am Punkt der Kundeninteraktion zu erzielen.
 
@@ -58,9 +58,9 @@ Sie können jetzt einem bestimmten Ordner in Ihrer -Bereitstellung Metadatenform
 
 ### Neue Funktionen in der Admin-Ansicht {#admin-view-features}
 
-* **Integrieren von AEM Assets as a Cloud Service mit der dokumentbasierten Inhaltserstellung für Edge Delivery Services**: Integrieren Sie AEM Assets mit der dokumentbasierten Inhaltserstellung für Edge Delivery Services, damit Website-Autoren ([ in AEM Assets-Repositorys verfügbare Bilder beim Erstellen von Dokumenten in Microsoft Word oder Google Docs) ](/help/edge/using.md#integrate-assets-edge) können.
+* **Integrieren von AEM Assets as a Cloud Service mit dem dokumentbasierten Authoring für Edge Delivery Services**: Integrieren Sie AEM Assets mit dem dokumentbasierten Authoring für Edge Delivery Services, damit Website-Autoren [in AEM Assets-Repositorys verfügbare Bilder beim Authoring von Dokumenten in Microsoft Word oder Google Docs verwenden](/help/edge/overview.md).
 
-* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die im Experience Manager verwaltet werden, und [die Dateien direkt in den Experience Manager zu ](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
+* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die in Experience Manager verwaltet werden, und [die Dateien direkt in Experience Manager ](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
 
   ![Anheften von Elementen für Gruppen](/help/release-notes/assets/extract-archive.png)
 

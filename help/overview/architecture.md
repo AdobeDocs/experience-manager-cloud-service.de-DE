@@ -4,9 +4,9 @@ description: Einführung in die Architektur von Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '2712'
+source-wordcount: '2711'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ Es gibt vier Arten von [Umgebungen](/help/implementing/cloud-manager/manage-envi
 
 * Staging-Umgebung:
 
-   * Eine Staging-Umgebung ist in der Regel in einer 1:1-Beziehung an eine Produktionsumgebung gekoppelt.
+   * Eine Staging-Umgebung ist in der Regel mit einer Produktionsumgebung in einer 1::1-Beziehung verknüpft.
    * Die Staging-Umgebung ist in erster Linie für automatisierte Tests ausgelegt, bevor Änderungen an der Anwendung in die Produktionsumgebung übertragen werden.
       * Dies ist unabhängig von den Änderungen, die entweder von Adobe im Rahmen eines Wartungsupdates oder von Ihren Code-Bereitstellungen initiiert werden.
       * Im Falle einer Code-Bereitstellung können Sie auch manuelle Tests durchführen.
@@ -138,7 +138,7 @@ Es gibt weitere benachbarte Dienste:
 * Der Datendienst:
    * Ist für die Anzeige von Kundendaten wie Lizenzierungsmetriken (z. B. Inhaltsanforderungen, Speicher, Benutzende) oder Nutzungsberichten (z. B. die Anzahl der Uploads und Downloads) zuständig.
    * Die Kundendaten können über APIs und innerhalb von Produktbenutzeroberflächen (z. B. Cloud Manager) bereitgestellt werden.
-* Der operative Telemetrieservice:
+* Der betriebliche Telemetrie-Dienst:
    * Ist für die Erfassung von Schlüsselmetriken aus einem Kundenerlebnis (z. B. Seitenansichten, Web-Lebenszyklen, Konversionsereignisse) und für die Beantwortung verknüpfter Abfragen zuständig (z. B. Top-Seitenansichten für eine bestimmte Domain in den letzten 7 Tagen).
 * Der Asset Compute-Service:
    * ist für die Verarbeitung hochgeladener Bilder, Videos und Dokumente zuständig, z. B. PDF- und Adobe Photoshop-Dateien. Die Verarbeitung kann Adobe Sensei verwenden, um Bild- und Videometadaten (wie beschreibende Tags oder Primärfarbtöne) zu extrahieren und dann Ausgabedarstellungen (wie unterschiedliche Größen oder Formate) mit Zugriff auf APIs wie die Adobe Photoshop- und Adobe Lightroom-APIs zu generieren.
@@ -238,5 +238,5 @@ Die neue Architektur von AEM as a Cloud Service führt einige grundlegende Ände
    * [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
    * [Überblick über AEM as a Cloud Service – mit Edge Delivery Services](/help/edge/overview.md)
-   * [Verwenden von Edge Delivery Services](/help/edge/using.md)
+   * [Verwenden von Edge Delivery Services](/help/edge/overview.md)
    * [Untersuchen der zugrunde liegenden Architektur und wichtiger Teile von AEM as a Cloud Service mithilfe der Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=de)

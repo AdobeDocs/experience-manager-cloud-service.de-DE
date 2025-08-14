@@ -4,10 +4,10 @@ description: Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefini
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ Die `component-definition.json` definiert die Komponenten, die den Inhaltsautore
 
 >[!TIP]
 >
->Einen Überblick über den Inhaltsmodellierungsprozess finden Sie im Dokument [Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Einen Überblick über den Inhaltsmodellierungsprozess finden Sie im Dokument [Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten.](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->Sie müssen keine eigene `component-definition.json` von Grund auf neu erstellen. Das Projekt-Textbaustein, den Sie zum Bootstrapping [ Projekts verwenden](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) enthält eine [voll funktionsfähige `component-definition.json`-Datei](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) die Sie an Ihre Anforderungen anpassen können.
+>Sie müssen keine eigene `component-definition.json` von Grund auf neu erstellen. Das Projekt-Textbaustein, den Sie zum Bootstrapping [ Projekts verwenden](https://www.aem.live/developer/ue-tutorial) enthält eine [voll funktionsfähige `component-definition.json`-Datei](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) die Sie an Ihre Anforderungen anpassen können.
 
 ## Beispiel für eine Komponentendefinition {#example}
 
@@ -87,7 +87,7 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
    * Da es eindeutig ist, kann es z. B. in einer [Filterdefinition“ verwendet werden](/help/implementing/universal-editor/filtering.md) um zu bestimmen, welche Komponenten zu einem Container hinzugefügt werden können.
 * `model` definiert, [Modell](/help/implementing/universal-editor/field-types.md#model-structure) mit der Komponente verwendet wird.
    * Das Modell wird dabei zentral in der Komponentendefinition gepflegt und muss nicht ([ der Instrumentierung) angegeben werden](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * Auf diese Weise können Sie Komponenten über Container hinweg verschieben.
+   * Dies ermöglicht es Ihnen, Komponenten über Container hinweg zu verschieben.
 * `filter` definiert[ welcher ](/help/implementing/universal-editor/filtering.md) mit der Komponente verwendet werden soll.
 
 ## `plugins` {#plugins}

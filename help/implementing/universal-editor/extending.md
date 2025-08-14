@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung 
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 16%
 
 ---
@@ -59,6 +59,6 @@ Mit dem [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/ex
 
 Zusätzlich zur UI-Erweiterbarkeit bietet der universelle Editor viele weitere flexible Erweiterungspunkte, um die nahtlose Integration benutzerdefinierter Geschäftsanforderungen zu ermöglichen.
 
-* **[Blöcke](/help/edge/developer/block-collection.md)**: Im einfachen JSON-Format können Projekte die für die Inhaltserstellung verfügbaren Blöcke und Funktionen anpassen.
+* **[Blöcke](https://www.aem.live/developer/block-collection)**: Im einfachen JSON-Format können Projekte die für die Inhaltserstellung verfügbaren Blöcke und Funktionen anpassen.
 * **[Benutzerdefinierte Benutzeroberfläche](#extending-ui)**: Erweiterungen können die erforderliche Benutzeroberfläche in Seitenbereichen oder modalen Dialogfeldern anzeigen.
 * **[Ereignisse](/help/implementing/universal-editor/events.md)**: Erweiterungen erhalten Ereignisse zu den Aktionen und Auswahlen des Autors auf der Seite, damit sie entsprechend reagieren.

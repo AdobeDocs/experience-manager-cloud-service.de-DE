@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.11.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 99%
+source-wordcount: '1810'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2024.11.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version November 2024:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -47,11 +47,11 @@ Verwandeln Sie schnell eine beliebige Edge Delivery-Seite in eine Seitenvorlage.
 
 **[!DNL Edge Delivery Services]CSV-Importer für das Publishing über eine AEM-Instanz**
 
-Verwalten Sie Ihre Edge Delivery-Tabellenkalkulationsdaten (z. B. Umleitungen) effizient in Ihrem bevorzugten Tabellenkalkulations-Tool und laden Sie sie über den neuen CSV-Importer in AEM hoch. [Weitere Informationen](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+Verwalten Sie Ihre Edge Delivery-Tabellenkalkulationsdaten (z. B. Umleitungen) effizient in Ihrem bevorzugten Tabellenkalkulations-Tool und laden Sie sie über den neuen CSV-Importer in AEM hoch. [Weitere Informationen](https://www.aem.live/docs/authoring-tabular-data).
 
 ### Funktionen in der Vorabversion in AEM Sites
 
-Verbesserte [Referenzierung von Inhaltsfragmenten mit eindeutigen ID-basierten Referenzen](/help/headless/graphql-api/uuid-reference-upgrade.md), wodurch stabile Links sichergestellt werden, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden – sodass Aktualisierungen oder erneutes Veröffentlichen nicht mehr erforderlich sind. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn Seiten in Inhaltsfragmenten referenziert werden, sollte diese Funktion nicht verwendet werden.
+Verbesserte [Verweise auf Inhaltsfragmente mit eindeutigen ID-basierten Verweisen](/help/headless/graphql-api/uuid-reference-upgrade.md), um stabile Links sicherzustellen, die auch dann gültig bleiben, wenn Assets oder Fragmente verschoben werden, sodass keine Aktualisierungen oder erneute Veröffentlichung mehr erforderlich sind. Aktuelle Einschränkung: Seitenverweise werden noch nicht mit eindeutigen IDs unterstützt. Wenn Seiten in Inhaltsfragmenten referenziert werden, sollte diese Funktion nicht verwendet werden.
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die wichtigsten Anwendungsfälle des univer
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '882'
+ht-degree: 99%
 
 ---
 
@@ -40,9 +40,9 @@ Auf diese Weise können Sie die in der Sites-Konsole verfügbaren Tools wie Seit
 
 Falls dies Ihr Anwendungsfall ist, sehen Sie sich als nächsten Schritt die folgenden Dokumente an, um einen vollständigen Überblick über den Einstieg in den universellen Editor in AEM zu erhalten.
 
-1. [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md): Erfahren Sie mehr über die ersten Schritte bei Ihrem ersten universellen Editor-Projekt in AEM
-1. [Erstellen von für den universellen Editor instrumentierten Bausteinen](/help/edge/wysiwyg-authoring/create-block.md): Erfahren Sie, wie Sie Bausteine instrumentieren können, um Ihre Inhalte im universellen Editor bearbeitbar zu machen
-1. [Inhaltsmodellierung für WYSIWYG-Authoring-Projekte mit Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md): Erfahren Sie, wie Bausteine strukturiert sind, um Ihre Inhalte für den universellen Editor effektiv zu modellieren.
+1. [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](https://www.aem.live/developer/ue-tutorial): Erfahren Sie mehr über die ersten Schritte bei Ihrem ersten universellen Editor-Projekt in AEM
+1. [Erstellen von für den universellen Editor instrumentierten Bausteinen](https://www.aem.live/developer/universal-editor-blocks): Erfahren Sie, wie Sie Bausteine instrumentieren können, um Ihre Inhalte im universellen Editor bearbeitbar zu machen
+1. [Inhaltsmodellierung für WYSIWYG-Authoring-Projekte mit Edge Delivery Services](https://www.aem.live/developer/component-model-definitions): Erfahren Sie, wie Bausteine strukturiert sind, um Ihre Inhalte für den universellen Editor effektiv zu modellieren.
 
 Nachdem Sie diese Dokumente gelesen haben, können Sie auf diese Seite zurückkehren, um mehr über den Anwendungsfall „Headless-Authoring“ und die allgemeine Funktionsweise des universellen Editors zu erfahren.
 
@@ -65,7 +65,7 @@ Der universelle Editor ermöglicht es, beliebige Inhalte direkt zu erstellen, un
 Der universelle Editor funktioniert wie folgt.
 
 1. Eine Entwicklungsperson instrumentiert die Anwendung oder Seite für den universellen Editor. Im Rahmen dieser Instrumentierung wird der Editor angewiesen, welcher Inhalt bearbeitet werden kann und wie er beibehalten werden soll.
-   * Wenn Sie der Dokumentation [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) folgen, werden Ihre Seiten automatisch instrumentiert.
+   * Wenn Sie der Dokumentation [Erste-Schritte-Handbuch für Entwickelnde zum WYSIWYG-Authoring mit Edge Delivery Services](https://www.aem.live/developer/ue-tutorial) folgen, werden Ihre Seiten automatisch instrumentiert.
    * Für das Headless-Authoring kann Ihre Anwendung einfach instrumentiert werden.
 1. Die Inhaltsautorin bzw. der Inhaltsautor lädt den universellen Editor, der wiederum Ihre Seite zwecks Bearbeitung lädt. Aufgrund seiner Instrumentierung weiß er, welcher Inhalt bearbeitbar ist und wie dieser dargestellt und beibehalten werden soll.
 1. Die Inhaltsautorin bzw. der Inhaltsautor bearbeitet den Seiteninhalt in einer intuitiven WYSIWYG-Benutzeroberfläche; die Bearbeitung erfolgt dabei direkt.

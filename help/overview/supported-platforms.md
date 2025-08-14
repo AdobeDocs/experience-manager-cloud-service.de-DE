@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Die Adobe Experience Manager-Benutzeroberfläche funktioniert abhängig von der 
 
 * [Universeller Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Seiteneditor](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Dokumentbasiertes Authoring](/help/edge/docs/authoring.md) mithilfe des [Sidekicks](/help/edge/docs/sidekick.md)
+* [Dokumentbasiertes Authoring](https://www.aem.live/docs/aem-authoring) mithilfe des [Sidekicks](https://www.aem.live/docs/sidekick)
 
 Alle Browser werden mit dem Standardsatz von Plug-ins und Add-ons getestet.
 
@@ -64,4 +64,4 @@ Alle Browser werden mit dem Standardsatz von Plug-ins und Add-ons getestet.
 
 Die Browser-Unterstützung für mit AEM gerenderte Websites hängt von der Implementierung der AEM-Seitenvorlagen, den Blöcken, dem Design und der Komponentenausgabe ab. Daher haben die Entwicklerinnen und Entwickler, die Ihr Projekt implementieren, letztendlich die Kontrolle über die Kompatibilität Ihrer Site.
 
-Die AEM-[Bausteinvorlage,](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [Kernkomponenten](/help/implementing/developing/components/overview.md#aem-core-components) und [beispielhafte WKND-Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sind alle mit modernen Browsern kompatibel.
+Die AEM-[Bausteinvorlage,](https://www.aem.live/developer/ue-tutorial#create-github-project) [Kernkomponenten](/help/implementing/developing/components/overview.md#aem-core-components) und [beispielhafte WKND-Site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sind alle mit modernen Browsern kompatibel.

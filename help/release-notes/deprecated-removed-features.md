@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3194'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | ------------ | ------------------ | ----------- |
 | Sites | [Unterstützung von Inhaltsfragmenten in dem Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>zusammen mit<br> [OpenAPIs für das Management von Inhaltsfragmenten und Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Keine |
-| Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/edge/wysiwyg-authoring/authoring.md) zur visuellen Bearbeitung<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung |
+| Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](https://www.aem.live/docs/aem-authoring) zur visuellen Bearbeitung<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Eigenschaften von Experience Fragments für **Social-Media-Status**. | Die Funktion wird in Kürze entfernt werden. |
 | Sites | [Automatisierung der Einrichtung von Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Keine |

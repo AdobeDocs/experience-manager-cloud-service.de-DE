@@ -4,10 +4,10 @@ description: Der SPA-Editor von Adobe wird zwar weiterhin unterstützt, aber nac
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
-workflow-type: ht
-source-wordcount: '914'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '915'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ Die Einstellung bedeutet, dass für die folgenden SDKs keine neuen Funktionen hi
 
 Welcher Ersatz für den SPA-Editor am besten geeignet ist, hängt von Ihren Projektanforderungen ab.
 
-* Der **[universelle Editor](/help/edge/wysiwyg-authoring/authoring.md)** ist der beste direkte Ersatz für den SPA-Editor.
+* **[Der universelle Editor](https://www.aem.live/docs/aem-authoring)** ist der beste direkte Ersatz für den SPA-Editor.
    * Der universelle Editor ist ebenfalls ein visueller Editor und wurde speziell für entkoppelte Implementierungen entwickelt, und dies unter Berücksichtigung der gesamten Erfahrung von Adobe mit dem SPA-Editor.
    * Der universelle Editor wurde ebenfalls [für AEM 6.5 (mit der Version 2024.11.05 von AEM 6.5) veröffentlicht](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) und unterstützt daher neben Cloud-Services auch AMS- und On-Premise-Anwendungsfälle.
 * Der **[Inhaltsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md)** ist eine Alternative für alle, die einen formularbasierten Editor bevorzugen.

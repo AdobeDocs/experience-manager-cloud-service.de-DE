@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Funktion „Varianten generieren“, au
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: ht
-source-wordcount: '1416'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '1417'
 ht-degree: 100%
 
 ---
@@ -198,7 +198,7 @@ Um bestimmten Benutzenden Zugriff zu gewähren, weisen Sie ihr Benutzerkonto dem
 
 ### Zugriff über den AEM Sidekick für dokumentenbasiertes Authoring {#access-aem-sidekick}
 
-Der Zugriff über den AEM Sidekick wird für das [dokumentenbasierte Authoring](/help/edge/wysiwyg-authoring/authoring.md) verwendet.
+Der Zugriff über den AEM Sidekick wird für das [dokumentenbasierte Authoring](https://www.aem.live/docs/aem-authoring) verwendet.
 
 Bevor Sie über den Sidekick (von Edge Delivery Services) auf „Varianten generieren“ zugreifen können, müssen bestimmte Konfigurationen vorgenommen werden.
 
