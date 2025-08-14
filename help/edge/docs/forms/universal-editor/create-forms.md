@@ -65,7 +65,7 @@ Jede Phase umfasst Validierungsschritte zur Bestätigung der korrekten Einrichtu
    - Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 
 1. **Vorlage auswählen**
-   - Wählen Sie auf der Registerkarte **0}Source** eine **Edge Delivery Services-basierte Vorlage.**
+   - Wählen Sie auf der Registerkarte **0&rbrace;Source** eine **Edge Delivery Services-basierte Vorlage.**
    - Die **Erstellen** wird aktiviert.
 
      ![Erstellen von EDS-Formularen](/help/edge/assets/create-eds-forms.png)
