@@ -3,8 +3,8 @@ title: Integrieren des Asset-Wählers mit Adobe-fremden oder Drittanbieteranwend
 description: Integrieren Sie den Asset-Wähler in verschiedene Adobe-, Adobe-fremde- und Drittanbieter-Anwendungen.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
+workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 100%
 
@@ -102,6 +102,7 @@ Der Asset-Wähler wird im Container-Element `<div>` gerendert, wie in *Zeile 74*
         
 
         //function that will render the asset selector
+        function renderAssetSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by asset selector
             }
@@ -113,7 +114,7 @@ Der Asset-Wähler wird im Container-Element `<div>` gerendert, wie in *Zeile 74*
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
