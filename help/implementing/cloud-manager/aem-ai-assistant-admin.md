@@ -6,26 +6,26 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ab8fefe18e43c1fe937d0d16df65b6137fc8a292
+source-git-commit: a216777f6d5bb3dd1afe5d7cdb88ec41435c0500
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '657'
 ht-degree: 4%
 
 ---
 
-# Konfigurieren des AEM-KI-Assistenten - Admin-Einrichtung {#aem-ai-asst-admin-setup}
+# Konfigurieren des KI-Assistenten in Adobe Experience Manager {#aem-ai-asst-admin-setup}
 
-Ein Administrator muss den Zugriff, die Berechtigungen und die Einstellungen konfigurieren, bevor Benutzer in ihrem Unternehmen die Funktionen des AEM-KI-Assistenten verwenden können. In diesem Artikel wird beschrieben, wie Sie den KI-Assistenten für Ihre Organisation aktivieren, die erforderlichen Anmeldeinformationen einrichten und Konfigurationsänderungen speichern.
+Ein Administrator muss den Zugriff, die Berechtigungen und die Einstellungen konfigurieren, bevor Benutzer in ihrem Unternehmen die Funktionen im KI-Assistenten von AEM (Adobe Experience Manager) verwenden können. In diesem Artikel wird beschrieben, wie Sie den KI-Assistenten für Ihre Organisation aktivieren, die erforderlichen Anmeldeinformationen einrichten und Konfigurationsänderungen speichern.
 
 **Überblick über den Konfigurationsprozess des AEM AI-Assistenten**
 
 Der Konfigurationsprozess besteht aus den folgenden Schritten:
 
-1. Erstellen Sie ein neues Produktprofil in Adobe Admin Console.
-1. Aktivieren Sie die Berechtigung „KI-Assistent - Produktwissen“.
-1. Erstellen oder verwenden Sie eine bestehende Benutzergruppe.
-1. Fügen Sie Benutzer zur Benutzergruppe hinzu.
-1. Weisen Sie das Produktprofil der Benutzergruppe zu.
+1. [Erstellen eines neuen Produktprofils in der Adobe Admin Console](#create-profile).
+1. [Aktivieren Sie die Berechtigung KI-Assistent für Produktkenntnisse](#enable-permission).
+1. [Erstellen Sie eine neue Benutzergruppe (oder verwenden Sie eine vorhandene Benutzergruppe)](#create-user-group).
+1. [Benutzer zur Benutzergruppe hinzufügen](#add-users).
+1. [Weisen Sie das Produktprofil der Benutzergruppe zu](#assign-product-profile).
 
 **Voraussetzungen**
 
@@ -34,11 +34,11 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 * Sie müssen mindestens über Produktadministrator-Rechte in der Adobe Admin Console verfügen.
 * Sie verfügen über Kenntnisse der Benutzerverwaltungsstruktur Ihres Unternehmens.
 
-## &#x200B;1. Erstellen eines neuen Produktprofils in Adobe Admin Console{#create-profile}
+## &#x200B;1. Erstellen eines neuen Produktprofils in der Adobe Admin Console{#create-profile}
 
-1. Befolgen Sie die detaillierten Anweisungen unter [Erstellen eines neuen Produktprofils in Adobe Admin Console](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/create-profile) in der Dokumentation zu Experience Platform.
+1. Befolgen Sie die detaillierten Anweisungen unter [Erstellen eines neuen Produktprofils in der Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) in der Dokumentation zu Experience Platform.
 
-1. Verwenden Sie beim Erstellen des neuen Produktprofils die folgenden Beispiele für die Werte, die Sie für den KI-Assistenten verwenden können.
+1. Beim Erstellen des neuen Produktprofils können Sie die folgenden vorgeschlagenen Werte für den KI-Assistenten verwenden.
 
    | Textfeld | Vorgeschlagener Wert |
    | --- | --- |
@@ -50,11 +50,11 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 
 
 
-## &#x200B;2. Berechtigung „KI-Assistent - Produktwissen“ aktivieren{#enable-permission}
+## &#x200B;2. Aktivieren der Berechtigung „KI-Assistent - Produktkenntnisse“{#enable-permission}
 
 Der Prozess zum Zuweisen benutzerdefinierter Berechtigungen zu Produktprofilen folgt dem standardmäßigen Workflow für benutzerdefinierte Berechtigungen in Adobe Cloud Manager.
 
-Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktprofil](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktprofil](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Klicken Sie in der Admin Console auf den Namen Ihres neu erstellten Produktprofils (`AEM AI Assistant`)
 
@@ -68,7 +68,7 @@ Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktp
 
 1. Klicken Sie rechts neben dem Berechtigungsnamen auf ![Bleistiftsymbol oder Bearbeitungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
 
-1. Aktivieren **auf der Seite „Berechtigungen für KI-** bearbeiten“ den Umschalter **KI-Assistent - Produktkenntnisse**.
+1. Aktivieren Sie auf **Seite Berechtigungen für KI-** bearbeiten den Umschalter **KI-Assistent - Produktkenntnisse**.
 
    ![Seite „Berechtigungen bearbeiten“ für die Umschaltoption „KI-Assistent - Produktwissen“](/help/implementing/cloud-manager/assets/ai-assistant-prod-knowledge.png)
 
@@ -77,7 +77,7 @@ Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktp
    Für Ihr Produktprofil ist jetzt die Berechtigung KI-Assistent für Produktwissen aktiviert.
 
 
-## &#x200B;3. Erstellen einer Benutzergruppe (oder Verwenden einer vorhandenen Benutzergruppe){#create-user-group}
+## &#x200B;3. Erstellen Sie eine neue Benutzergruppe (oder verwenden Sie eine vorhandene Benutzergruppe).{#create-user-group}
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -85,7 +85,7 @@ Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktp
 
 >[!TAB Erstellen Sie eine neue Benutzergruppe]
 
-1. Klicken Sie in Admin Console **Benutzer** > **Benutzergruppen**.
+1. Klicken Sie in der Admin Console auf **Benutzer** > **Benutzergruppen**.
 
    ![Benutzergruppen](/help/implementing/cloud-manager/assets/ai-assistant-user-groups.png)
 
@@ -126,7 +126,7 @@ Sie können eine bestehende AEM-Benutzergruppe verwenden, wenn sie die Zugriffsa
 
    ![Die Seite Benutzergruppen des AEM-KI-Assistenten, auf der die Registerkarte Benutzer und die Schaltfläche Benutzer hinzufügen angezeigt werden](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
-1. Suchen Sie auf der **Benutzer zu dieser Benutzergruppe hinzufügen** nach Benutzern, die Zugriff auf den AEM AI-Assistenten benötigen, und wählen Sie diese aus.
+1. Suchen Sie auf der Seite **`Add users to this user group`** nach Benutzern und wählen Sie sie aus, die Zugriff auf den AEM AI-Assistenten benötigen.
 
    ![Benutzer zu dieser Benutzergruppenseite hinzufügen](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
@@ -138,7 +138,7 @@ Sie können die Funktion für den Massen-Upload in der Admin Console verwenden.
 
 1. Bereiten Sie eine CSV-Datei mit Benutzerinformationen vor.
 
-1. Verwenden Sie die Option **Benutzer durch CSV hinzufügen** für eine effiziente Massenhinzufügung.
+1. Verwenden Sie die **`Add users by CSV`** Option für eine effiziente Massenhinzufügung.
 
 >[!ENDTABS]
 
