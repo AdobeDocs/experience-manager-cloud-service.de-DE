@@ -4,7 +4,7 @@ description: Sie können leistungsstarke Formulare in Adobe Experience Manager E
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -50,7 +50,7 @@ Am Ende können Sie die richtige Authoring-Methode auswählen, Übermittlungsopt
 ### Universeller Editor
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [Universeller Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ist ein visuelles Drag-and-Drop-Authoring-Tool für Marketing- und Design-Fachleute, das Geschwindigkeit und Leistung auf Unternehmensniveau vereint:
@@ -121,7 +121,6 @@ Das folgende Diagramm zeigt, wie Sie Inhalte in Microsoft Excel oder Google Shee
 
 
 Jetzt können Sie Ihr erstes leistungsstarkes Formular mit AEM Edge Delivery Services erstellen.
-
 
 <!--
 ## Start creating forms
