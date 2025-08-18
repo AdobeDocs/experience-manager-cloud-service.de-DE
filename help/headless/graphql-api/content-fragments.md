@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
-workflow-type: ht
-source-wordcount: '5981'
-ht-degree: 100%
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+workflow-type: tm+mt
+source-wordcount: '5984'
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ GraphQL ist:
 
   Weitere Informationen finden Sie unter [GraphQL entdecken](https://www.graphql.com).
 
-* *„... eine Datenabfragesprache und -spezifikation, die 2012 intern von Facebook entwickelt wurde, bevor sie 2015 öffentlich als Open Source zur Verfügung gestellt wurde. Sie bietet eine Alternative zu REST-basierten Architekturen mit dem Ziel, die Produktivität von Entwicklern zu erhöhen und die Menge der übertragenen Daten zu minimieren. GraphQL wird von Hunderten von Unternehmen aller Größenordnungen in der Produktion eingesetzt ...“*
+* *„... eine Datenabfragesprache und -spezifikation, die 2012 intern von Facebook entwickelt wurde, bevor sie 2015 öffentlich als Open Source zur Verfügung gestellt wurde. Es bietet eine Alternative zu REST-basierten Architekturen mit dem Ziel, die Produktivität der Entwickler zu erhöhen und die Menge der übertragenen Daten zu minimieren. GraphQL wird von Hunderten von Unternehmen aller Größenordnungen in der Produktion eingesetzt ...“*
 
   Siehe [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -109,7 +109,7 @@ Mit GraphQL können Sie Abfragen für Folgendes durchführen:
 
 * Eine **[Liste von Einträgen](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM bietet Funktionen zum Konvertieren von Abfragen (beide Typen) in [persistente Abfragen, die vom Dispatcher und CDN zwischengespeichert werden können](/help/headless/graphql-api/persisted-queries.md).
+AEM bietet Funktionen zum Konvertieren von Abfragen (beide Typen) in [Persistente Abfragen, die vom Dispatcher und ](/help/headless/graphql-api/persisted-queries.md) CDN zwischengespeichert werden können.
 
 ### Best Practices für GraphQL-Abfragen (Dispatcher und CDN) {#graphql-query-best-practices}
 
@@ -1171,13 +1171,13 @@ Derzeit gelten folgende Einschränkungen:
 
   >[!NOTE]
   >
-  >Die vollständige URL muss dann Client-seitig und basierend auf der [Asset-Bereitstellungs-API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) erstellt werden.
+  >Die vollständige URL muss dann Client-seitig und basierend auf der [Asset-Bereitstellungs-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) erstellt werden.
 
 * Nur *genehmigte* Assets stehen für Verweise aus den Remote-Repositorys zur Verfügung.
 * Wenn ein Asset, auf das verwiesen wird, aus dem Remote-Repository entfernt wird, führt dies zu einer beschädigten Asset-Referenz für Inhaltsfragmente.
 * Alle Repositorys für Bereitstellungs-Assets, auf die Benutzende Zugriff haben, stehen zur Auswahl. Die Liste „Verfügbar“ kann nicht beschränkt werden.
 * Sowohl die AEM-Instanz als auch die Remote-Asset-Repository-Instanz müssen dieselbe Version aufweisen.
-* Über das [Management Sites-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de) und die [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/?lang=de) werden keine Asset-Metadaten verfügbar gemacht. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
+* Über das [Management Sites-API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) und die [Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/?lang=de) werden keine Asset-Metadaten verfügbar gemacht. Sie müssen die Asset-Metadaten-API verwenden, um die Details der Asset-Metadaten abzurufen.
 
 ## GraphQL für AEM – Zusammenfassung der Erweiterungen {#graphql-extensions}
 

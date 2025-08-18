@@ -3,10 +3,10 @@ title: Dynamic Media Prime und Ultimate
 description: Erfahren Sie mehr über Dynamic Media Prime und Ultimate, ihre Vorteile und ihre Unterschiede.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
-workflow-type: ht
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Neben den Dynamic Media Prime-Funktionen wie die AEM Assets-Integration mit Adob
 * [Dynamic Media mit erweiterten OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) wie:
 
    * sichere Bereitstellung von Assets
-   * [intelligenter Zuschnitt, intelligente Bildbearbeitung, Bildvorgaben und zusätzliche Bildmodifikatoren](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+   * [intelligenter Zuschnitt, intelligente Bildbearbeitung, Bildvorgaben und zusätzliche Bildmodifikatoren](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * [Dynamic Media-Lösung in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), die auch die folgenden Schlüsselfunktionen umfasst:
 
