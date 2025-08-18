@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 91%
@@ -39,7 +39,7 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-custom-domain-name-settings}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -95,7 +95,7 @@ Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ei
 >Bei von Adobe verwalteten CDNs sind bei Verwendung von DV(Domain Validation)-Zertifikaten nur Sites mit ACME-Validierung zulässig.
 
 
-### DNS konfigurieren{#config-dns}
+## DNS konfigurieren{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen *bevor* dass 
 * Sie müssen in der Lage sein, die DNS-Einträge für die Domain Ihres Unternehmens zu ändern, oder sich andernfalls an eine entsprechende Person wenden, die dies kann.
 * Sie haben den konfigurierten benutzerdefinierten Domain-Namen bereits überprüft, wie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) beschrieben.
 
-#### CNAME-Eintrag {#adobe-managed-cert-cname-record}
+### CNAME-Eintrag {#adobe-managed-cert-cname-record}
 
 Ein kanonischer Name oder CNAME-Eintrag ist eine Art von DNS-Eintrag, der einen Aliasnamen einem wahren oder kanonischen Domain-Namen zuordnet. CNAME-Datensätze werden normalerweise dazu verwendet, eine Unter-Domain wie `www.example.com` der Domain zuzuordnen, in der der Inhalt dieser Unter-Domain gehostet wird.
 
@@ -117,7 +117,7 @@ Melden Sie sich bei Ihrem DNS-Dienstleister an und erstellen Sie einen `CNAME`-E
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX-Eintrag {#adobe-managed-cert-apex-record}
+### APEX-Eintrag {#adobe-managed-cert-apex-record}
 
 Eine Apex-Domain ist eine benutzerdefinierte Domain, die keine Subdomain enthält, z. B. `example.com`. Eine Apex-Domain wird mit einem `A`-, `ALIAS`- oder `ANAME`-Eintrag über Ihren DNS-Anbieter konfiguriert. Die Apex-Domains müssen auf bestimmte IP-Adressen verweisen.
 
