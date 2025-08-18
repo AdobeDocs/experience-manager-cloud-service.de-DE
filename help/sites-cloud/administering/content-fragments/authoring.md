@@ -176,7 +176,7 @@ Weitere Informationen finden Sie unter [Varianten generieren – in AEM-Editoren
 
 So löschen Sie eine Variante Ihres Inhaltsfragments:
 
-    >[!HINWEIS]
+    >[ !HINWEIS]
     >
     >Sie können die **Hauptversion** nicht löschen.
 
@@ -267,7 +267,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
