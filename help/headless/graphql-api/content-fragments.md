@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 99%
@@ -28,7 +28,7 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 >
 >GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
->* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen bereit.
 
 >[!NOTE]
@@ -375,7 +375,7 @@ Sie können alle GraphQL-Typen für Metadaten anzeigen, wenn Sie das generierte 
 >[!NOTE]
 >
 >**Unterschied zwischen normalen und Array-Metadaten**
->&#x200B;>Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
+>>Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
 >
 >Wenn Sie beispielsweise das Feld `stringMetadata` aufrufen, erhalten Sie ein Array aller im Repository gespeicherten Metadaten als `String` und wenn Sie `stringArrayMetadata` aufrufen, erhalten Sie ein Array aller Metadaten, die im Repository als `String[]` gespeichert wurden.
 
@@ -781,7 +781,7 @@ Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 
 Die Struktur und Syntax sind:
 
-* `format`: eine Auflistung mit allen unterstützten Formaten durch ihre Erweiterung: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL oder WEBPLY
+* `format`: eine Aufzählung mit allen unterstützten Formaten durch ihre Erweiterung: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL oder WEBPLY
 * `seoName`: eine Zeichenfolge, die anstelle des Knotennamens als Dateiname verwendet wird
 * `crop`: eine Rahmenunterstruktur, wenn Breite oder Höhe weggelassen wird, wird die Höhe bzw. Breite als derselbe Wert verwendet
    * `xOrigin`: der x-Ursprung des Rahmens und ist obligatorisch
@@ -791,8 +791,8 @@ Die Struktur und Syntax sind:
 * `size`: eine Unterstruktur der Dimension, wenn die Breite oder Höhe weggelassen wird, wird die Höhe bzw. Breite als derselbe Wert verwendet
    * `width`: die Breite der Dimension
    * `height`: die Höhe der Dimension
-* `rotation`: eine Auflistung aller unterstützten Rotationen: R90, R180, R270
-* `flip`: eine Auflistung von HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `rotation`: eine Aufzählung aller unterstützten Rotationen: R90, R180, R270
+* `flip`: eine Aufzählung von HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: eine Ganzzahl zwischen 1 und 100, die den Prozentsatz der Bildqualität angibt
 * `width`: eine Ganzzahl, die die Breite des Ausgabebilds definiert, aber vom Bildgenerator ignoriert wird
 

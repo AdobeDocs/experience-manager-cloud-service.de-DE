@@ -5,16 +5,16 @@ feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 100%
+source-wordcount: '718'
+ht-degree: 95%
 
 ---
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless-Content Management System (CMS) verwenden.
+Mit Inhaltsfragmenten und der GraphQL-API können Sie Adobe Experience Manager (AEM) as a Cloud Service als Headless-Content-Management-System (CMS) verwenden.
 
 Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM GraphQL-API (eine benutzerdefinierte Implementierung, die auf Standard-GraphQL basiert) erreicht, um strukturierte Inhalte für die Verwendung in Ihren Programmen ohne Probleme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/müssen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
@@ -28,10 +28,10 @@ Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM G
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
->* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/integrating/magento.md).
->* [AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen](/help/headless/graphql-api/content-fragments.md) bereit.
+>* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+>* [AEM-Inhaltsfragmente arbeiten mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) zusammen, um strukturierte Inhalte für die Verwendung in Ihren Programmen bereitzustellen](/help/headless/graphql-api/content-fragments.md).
 
 ## Headless-CMS {#headless-cms}
 

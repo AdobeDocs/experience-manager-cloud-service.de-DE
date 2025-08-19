@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2025.4.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
 source-wordcount: '1828'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Übersichtsvideo zur Version April 2025 an, das eine Zusammenfassung der Funktionen bietet, die in Version 2025.4.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464011?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -86,7 +86,7 @@ Sie können jetzt mithilfe der Assets-Ansicht schnell eine beliebige Version ein
 
 ### Funktionen der Vorabversion
 
-* [Universeller Editor für adaptive Forms und Formularfragmente](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Der universelle Editor unterstützt jetzt die Erstellung von sowohl adaptiven Forms als auch wiederverwendbaren Formularfragmenten. Autorinnen und Autoren können in einer vereinfachten WYSIWYG-Authoring-Umgebung Formulare visuell erstellen, Übermittlungsaktionen konfigurieren und eine reCAPTCHA-Validierung hinzufügen. Diese Funktion beschleunigt die Formularerstellung, erhöht die Konsistenz und verbessert den Schutz vor Spam und automatisiertem Missbrauch.
+* [Universeller Editor für adaptive Formulare und Formularfragmente](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Der universelle Editor unterstützt jetzt die Erstellung sowohl von adaptiven Formularen als auch von wiederverwendbaren Formularfragmenten. Autorinnen und Autoren können in einer vereinfachten WYSIWYG-Authoring-Umgebung Formulare visuell erstellen, Übermittlungsaktionen konfigurieren und eine reCAPTCHA-Validierung hinzufügen. Diese Funktion beschleunigt die Erstellung von Formularen, erhöht die Konsistenz und verbessert den Schutz vor Spam und automatisiertem Missbrauch.
 
 * [SharePoint-Dokumentbibliothek – Anhänge mit Originaldateinamen speichern](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): Sie haben jetzt die Möglichkeit, Formularanhänge unter Verwendung ihrer Originaldateinamen zu speichern, wenn Sie sie in einer SharePoint-Dokumentbibliothek speichern. Diese Verbesserung vereinfacht die Identifizierung und Verwaltung hochgeladener Dateien.
 
@@ -105,15 +105,15 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 #### Integration von Adobe Experience Platform (AEP) mit Forms
 
-* [Integration von AEM Forms mit Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): Der AEM Forms-zu-Adobe Experience Platform-Connector ermöglicht eine nahtlose Integration zwischen Adaptive Forms und Adobe Experience Platform. Mit dieser Funktion können Formulardaten XDM-Schemata zugeordnet und direkt in Echtzeit an AEP gesendet werden. Es optimiert die Datenerfassung für Anwendungsfälle zur Personalisierung und Aktivierung in allen Adobe Experience Cloud-Lösungen.
+* [Integration von AEM Forms mit Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): Der AEM Forms to Adobe Experience Platform-Connector ermöglicht eine nahtlose Integration zwischen adaptiven Formularen und Adobe Experience Platform. Mit dieser Funktion können Formulardaten XDM-Schemata zugeordnet und in Echtzeit direkt an AEP gesendet werden. Sie optimiert die Datenerfassung für Anwendungsfälle in den Bereichen Personalisierung und Aktivierung in allen Adobe Experience Cloud-Lösungen.
 
 ## CIF-Add-on {#cloud-services-cif}
 
 ### Verbesserungen {#enhancements-cif}
 
 * Hinzufügen einer Auswahl von Produktvarianten für CIF-Produktverweis-Datentyp.
-* **Experimentell**: [JSON+LD in CIF-Kernkomponenten in PDPs](/help/commerce-cloud/customizing/json-ld.md)
-* **Experimentell**: [CIF-Möglichkeit, den Cache zu löschen](/help/commerce-cloud/configuring/clear-cache.md)
+* **Experimentell**: [JSON+LD in CIF-Kernkomponenten in PDPs](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **Experimentell**: [CIF-Möglichkeit, den Cache zu löschen](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### Fehlerbehebungen {#bug-fixes-cif}
 
