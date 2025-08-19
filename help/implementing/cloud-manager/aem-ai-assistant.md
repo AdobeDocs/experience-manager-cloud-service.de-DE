@@ -1,46 +1,58 @@
 ---
-title: KI-Assistent in Adobe Experience Manager (Beta)
+title: KI-Assistent in AEM
 description: Verwenden Sie den KI-Assistenten, um Antworten auf die in Adobe Experience Manager verfügbaren Lösungen zu finden und Fehler zu beheben.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Beta" type="Positive"
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 71041c9e4d4afe964f549f193daf8ec72bd97a41
+source-git-commit: 86281f539656ccdcb267a2de3aa0d40c0c8e637d
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 2%
+source-wordcount: '1063'
+ht-degree: 1%
 
 ---
 
-# KI-Assistent in Adobe Experience Manager {#aem-home}
+# KI-Assistent in AEM {#aem-home}
 
 Der KI-Assistent für AEM (Adobe Experience Manager) bietet eine Gesprächsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre Adobe Experience Manager-bezogenen Abfragen zu optimieren. Damit erhalten Sie sofortige Antworten auf Ihre Fragen zum AEM-Produkt *für alle Benutzer verfügbar* und die Erstellung von Support-Tickets (*für Support-Administratoren*).
 
-Während der privaten Beta-Phase unterstützt der AEM AI Assistant AEM as a Cloud Service, einschließlich der folgenden Lösungen:
+Der KI-Assistent unterstützt AEM as a Cloud Service, einschließlich der folgenden Lösungen:
 
+* Experience Hub-Übersichtsseite
+* Edge Delivery Services
 * Sites
 * Assets
+* Formulare
 * Dynamic Media
-* Edge Delivery Services
 * Cloud Manager
-* Forms
+
 
 Es ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud Manager- und Authoring-Benutzeroberfläche aufgerufen werden.
 
-Das folgende 3-minütige 39-Sekunden-Video bietet eine schrittweise Anleitung zum AEM AI Assistant.
+Das folgende 3-minütige 39-Sekunden-Video bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470364?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
+## So erhalten Sie Zugriff auf den KI-Assistenten in AEM{#get-access}
+
+1. [Kunden müssen den Gen AI-Treiber bei Adobe ](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1).
+
+   Der GenAI Rider ist eine rechtliche Vereinbarung zwischen einem Kunden und Adobe, die erforderlich ist, um die meisten KI- und Agentenfunktionen zu verwenden. Wenden Sie sich an die Adobe-Kundenunterstützung, um mehr zu erfahren.
+
+1. Der AEM-Administrator konfiguriert den KI-Assistenten für die Verwendung in der Organisation. Siehe [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
+
+<!--
 >[!IMPORTANT]
->Sie müssen die Benutzervereinbarung gelesen und eingereicht haben, damit Adobe die KI-Assistentenfunktion aktivieren kann, damit Sie sie testen und am privaten Beta-Programm teilnehmen können.
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
 >
->Bei Fragen senden Sie eine E-Mail an [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) von Ihrer mit Ihrer Adobe ID verknüpften E-Mail-Adresse.
+>For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## Umfang {#scope}
 
-Der aktuelle Umfang des AEM AI Assistant konzentriert sich auf die Beantwortung von Fragen zum Produktwissen von Adobe Experience Manager as a Cloud Service. Dieser Umfang umfasst umfassende Unterstützung für wichtige Bereiche wie Sites, Assets, Forms, Edge Delivery Services und Cloud Manager.
+Der aktuelle Umfang des KI-Assistenten in AEM konzentriert sich auf Fragen zum Produktwissen für AEMr.as a Cloud Service. Dieser Umfang umfasst eine umfassende Unterstützung für Schlüsselbereiche. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Oberflächen**: In AEM Experience Hub, der Authoring-Benutzeroberfläche und Cloud Manager verfügbar.
 * **Funktionen**: Produktwissen und erste Anlaufstelle für Fehlerbehebung und Anleitung, automatisierte Erstellung von Support-Tickets und Suche.
@@ -48,18 +60,18 @@ Der aktuelle Umfang des AEM AI Assistant konzentriert sich auf die Beantwortung 
 
 ## Datenschutz, Sicherheit und Governance{#privacy-security-governance}
 
-Der AEM AI-Assistent wurde mit einem Schwerpunkt auf Datenschutz, Sicherheit und Governance entwickelt.
+Der KI-Assistent in AEM ist so konzipiert, dass ein besonderer Schwerpunkt auf Datenschutz, Sicherheit und Governance gelegt wird.
 
-In diesem Artikel werden die Funktionen beschrieben, die Sie vom AEM AI-Assistenten erwarten können, um Vertrauen zu schaffen:
+In diesem Artikel werden die vertrauensorientierten Funktionen beschrieben, die Sie vom KI-Assistenten in AEM erwarten können:
 
-* AEM AI Assistant verwendet keine personenbezogenen Daten, auch nicht für Schulungszwecke.
-* AEM AI Assistant hat keinen Zugriff auf Verbraucherdaten.
-* Für die Interaktion mit dem AEM-KI-Assistenten ist eine explizite Berechtigung erforderlich.
+* KI Assistant verwendet in AEM keine personenbezogenen Daten, auch nicht für Trainingszwecke.
+* Der KI-Assistent in AEM hat keinen Zugriff auf Verbraucherdaten.
+* Für die Interaktion mit dem KI-Assistenten in AEM ist eine explizite Berechtigung erforderlich.
 * Von Benutzenden bereitgestellte Eingabeaufforderungen (Fragen, Abfragen usw.) werden nicht für andere Kundinnen und Kunden freigegeben.
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
-## Lernen Sie den AEM AI-Assistenten für Produktkenntnisse und die automatisierte Erstellung von Support-Tickets kennen. {#ai-prod-insights}
+## Lernen Sie den KI-Assistenten in AEM für Produktkenntnisse und die automatisierte Erstellung von Support-Tickets kennen {#ai-prod-insights}
 
 Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adobe Experience League abgeleitet wurden. Diese Fragen lassen sich in die folgenden Untergruppen einteilen:
 
@@ -69,7 +81,7 @@ Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adob
 | Punktuelles Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar &#x200B;**<br>**Beispiele** |
+| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstellen Sie ein Support-Ticket für mich.</li></ul> |
 | Abrufen des Status des Support-Tickets | <ul><li>Zeigen Sie mir alle Support-Tickets, die ich geöffnet habe.</li><li>Status des Tickets „E“ -----------</li></ul> |
 
@@ -78,11 +90,11 @@ Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adob
 
 ## Wie man effektive Fragen formuliert {#ai-craft-questions}
 
-Um vom AEM AI-Assistenten die genauesten Antworten zu erhalten, ist es wichtig, Ihre Fragen klar und kontextbezogen zu formulieren. Verwenden Sie die folgenden Tipps, um sicherzustellen, dass Ihre Abfragen klar und gut strukturiert sind:
+Um vom KI-Assistenten in AEM die genauesten Antworten zu erhalten, ist es wichtig, Ihre Fragen klar und kontextbezogen zu formulieren. Verwenden Sie die folgenden Tipps, um sicherzustellen, dass Ihre Abfragen klar und gut strukturiert sind:
 
 * Geben Sie Ihre Aufgabe oder Frage klar und prägnant an.
 * Vermeiden Sie mehrdeutige Formulierungen oder eine übermäßig komplexe Syntax, um das Verständnis zu verbessern.
-* Binden Sie relevanten Kontext zu Ihrer Aufgabe oder Frage ein, da dieser Ansatz dem AEM AI-Assistenten hilft, präzisere und relevantere Antworten bereitzustellen.
+* Binden Sie relevanten Kontext zu Ihrer Aufgabe oder Frage ein, da dieser Ansatz dem KI-Assistenten in AEM hilft, präzisere und relevantere Antworten zu liefern.
 In Ihrer Eingabeaufforderung ist es beispielsweise hilfreich, die AEM-Lösung zu benennen, in der Sie arbeiten - Sites, Assets, Dynamic Media, Edge Delivery Services, Cloud Manager oder Forms.
 
 ### Beispiele für nicht unterstützte Fragen {#ai-unsupported-questions}
@@ -94,54 +106,54 @@ In Ihrer Eingabeaufforderung ist es beispielsweise hilfreich, die AEM-Lösung zu
 | Aufgaben und Automatisierung | <ul><li>Konfigurieren Sie eine Code-Qualitäts-Pipeline aus einer Entwicklungsverzweigung für mich.</li></ul> |
 
 
-## Verwenden des AEM AI-Assistenten {#ai-use}
+## Verwenden des KI-Assistenten in AEM {#ai-use}
 
 <!-- UNHIDE AFTER BETA or at GA
-### Enable AEM AI Assistant access through Admin Console 
+### Enable AI Assistant in AEM access through Admin Console 
 
-To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use the AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
-![AEM AI Assistant in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
+![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
 From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
 Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
-### Starten oder Zurücksetzen einer Konversation
+### Starten oder Zurücksetzen eines KI-Assistenten in einer AEM-Konversation
 
-Sie können den AEM-KI-Assistenten zurücksetzen und eine neue Unterhaltung beginnen, wenn Sie Themen ändern möchten. Diese Funktion ist besonders hilfreich bei der Fehlerbehebung bei Abfragen, die fehlschlagen oder falsche Informationen liefern.
+Sie können den KI-Assistenten in AEM zurücksetzen und eine neue Unterhaltung beginnen, wenn Sie Themen ändern möchten. Diese Funktion ist besonders hilfreich bei der Fehlerbehebung bei Abfragen, die fehlschlagen oder falsche Informationen liefern.
 
 ![Schaltfläche „Unterhaltung beginnen“](/help/implementing/cloud-manager/assets/ai-assistant-start-conversation.png)
 
 **So starten oder setzen Sie eine Konversation zurück:**
 
-1. Klicken Sie im KI-Assistenten von AEM auf ![Symbol Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
-1. Um den AEM AI-Assistenten über ein neues Thema oder eine Themenänderung zu informieren, klicken Sie auf **Neue Konversation starten**.
+1. Klicken Sie im KI-Assistenten in AEM auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Um den KI-Assistenten über ein neues Thema oder eine Änderung des Themas zu informieren, klicken Sie auf **Neue Konversation beginnen**.
 
 ### Entdeckbarkeit verwenden
 
-Der AEM-KI-Assistent enthält eine Entdeckungsfunktion, mit der Sie die unterstützten Themen und Kategorien erkunden können.
+Der KI-Assistent in AEM enthält eine Entdeckungsfunktion, mit der Sie die unterstützten Themen und Kategorien erkunden können.
 
 ![IDEA Glühbirnensymbol](/help/implementing/cloud-manager/assets/ai-assistant-idea.png)
 
 **So verwenden Sie Entdeckbarkeit:**
 
-1. Klicken Sie oben rechts im AEM-KI-Assistenten auf ![Lernsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
+1. Klicken Sie in der oberen rechten Ecke des KI-Assistenten auf ![Lernsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 1. Wählen Sie eine Kategorie aus, um eine Liste der zugehörigen Eingabeaufforderungen anzuzeigen.
-1. Wählen Sie eine Eingabeaufforderung aus, um die Arten von Fragen besser zu verstehen, die der AEM-KI-Assistent beantworten kann.
+1. Wählen Sie eine Eingabeaufforderung aus, um die Arten von Fragen besser zu verstehen, die der KI-Assistent in AEM beantworten kann.
 
-### Feedback zum AEM AI-Assistenten geben
+### Feedback zum KI-Assistenten in AEM geben
 
-Ihre Eingabe trägt dazu bei, den AEM AI-Assistenten zu verbessern, um eine bessere Leistung und Genauigkeit zu erzielen.
+Ihre Eingabe trägt dazu bei, den KI-Assistenten in AEM zu verbessern, um eine bessere Leistung und Genauigkeit zu erzielen.
 
-Geben Sie mit dem AEM AI Assistant Feedback zu Ihren Erfahrungen. Verwenden Sie dazu die folgenden Optionen:
+Geben Sie Ihr Feedback zu Ihren Erfahrungen mit dem KI-Assistenten in AEM mithilfe der folgenden Optionen:
 
 ![Symbole „Daumen hoch“, „Daumen runter“ und „Markierung“](/help/implementing/cloud-manager/assets/ai-assistant-feedback.png)
 
@@ -149,58 +161,59 @@ Geben Sie mit dem AEM AI Assistant Feedback zu Ihren Erfahrungen. Verwenden Sie 
 | --- | --- |
 | ![Miniaturansicht nach oben](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Klicken Sie hier, um anzugeben, was gut gelaufen ist, und um positives Feedback zu geben. |
 | ![Miniaturansicht nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Klicken Sie hier, um Verbesserungsvorschläge zu unterbreiten. Fügen Sie spezifische Kommentare zu Ihrem Erlebnis hinzu, die täglich überprüft werden. |
-| ![Flag-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Klicken Sie hier, um Probleme zu melden oder detailliertes Feedback zu Ihrer Interaktion mit dem AEM AI-Assistenten zu geben. |
+| ![Flag-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Klicken Sie hier, um Probleme zu melden oder detailliertes Feedback zu Ihrer Interaktion mit dem KI-Assistenten in AEM zu geben. |
 
-## Häufig gestellte Fragen zum AEM AI Assistant {#ai-faq}
+## Häufig gestellte Fragen zum KI-Assistenten in AEM {#ai-faq}
 
 Im Folgenden finden Sie Antworten auf einige häufig gestellte Fragen zum KI-Assistenten:
 
-* **Werden die Informationen vom AEM AI Assistant in Echtzeit bereitgestellt?**\
+* **Werden die Informationen vom KI-Assistenten in AEM in Echtzeit bereitgestellt?**\
   Nein. Der KI-Assistent bezieht seinen Inhalt aus der Adobe Experience League-Dokumentation. Es kann einige Zeit dauern, bis Aktualisierungen des Inhalts in den Antworten widergespiegelt werden.
-* **Welche Adobe-Programme unterstützt AEM AI Assistant?**\
+* **Welche Adobe-Programme unterstützt AI Assistant in AEM?**\
   Derzeit unterstützt der KI-Assistent Anfragen zu Produktkenntnissen in AEM as a Cloud Service, einschließlich Sites, Assets, Dynamic Media, Cloud Manager und Forms.
-* **Welche Funktionen bietet der AEM AI Assistant?**\
-  Der AEM AI-Assistent wurde entwickelt, um Fragen zu Adobe-Produktkenntnissen zu beantworten.
-* **Verwendet AEM AI Assistant personenbezogene Daten für Schulungsdaten?**\
-  Nein. AEM AI Assistant verwendet keine personenbezogenen Daten für Trainingszwecke. Vermeiden Sie es, persönliche Informationen über sich selbst oder andere, einschließlich Namen oder Kontaktdaten, mit dem AEM AI-Assistenten zu teilen.
+* **Welche Funktionen hat der KI-Assistent in AEM?**\
+  Der KI-Assistent in AEM beantwortet Fragen zu Adobe-Produktkenntnissen.
+* **Verwendet der KI-Assistent in AEM personenbezogene Daten für Trainingsdaten?**\
+  Nein. Der KI-Assistent in AEM verwendet keine personenbezogenen Daten für Trainingszwecke. Vermeiden Sie es, persönliche Informationen über sich selbst oder andere, einschließlich Namen oder Kontaktdaten, mit dem KI-Assistenten in AEM zu teilen.
 
+<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
-## AEM Forms AI-Assistent (Forms Experience Builder) {#ai-forms-builder}
+## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 
-Zusätzlich zum allgemeinen AEM AI-Assistenten für Produktkenntnisse bietet AEM einen speziellen **[AEM Forms AI-Assistenten (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. Dieser erweiterte Assistent kann Sie aktiv bei der Erstellung und Konfiguration von Formularen unterstützen, indem Sie in natürlicher Sprache Aufforderungen erhalten und formularspezifische Fragen beantworten.
+In addition to the general AI Assistant in AEM for product knowledge, AEM offers a specialized **[AEM Forms AI Assistant (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. This enhanced assistant can actively help you create and configure forms through natural language prompts and answer questions specific to forms.
 
-### Schlüsselfunktionen
+### Key capabilities
 
-Der AEM Forms AI-Assistent bietet:
+The AEM Forms AI Assistant provides:
 
-* **Formularerstellung**: Erstellen Sie neue Formulare von Grund auf mithilfe von Beschreibungen in natürlicher Sprache.
-* **Design-Import**: Konvertieren Sie vorhandene Designs (PDF, Figma, Bilder) in funktionale AEM Forms.
-* **Formularkonfiguration**: Felder, Bereiche, Validierungsregeln und bedingte Logik hinzufügen.
-* **Layout-**: Organisieren der Formularstruktur und Optimierung für verschiedene Geräte.
-* **Integrations-Setup**: Konfigurieren von Formularübermittlungen und Datenverarbeitung.
-* **Produktkenntnisse**: Antworten auf Fragen zu den Funktionen und Best Practices von AEM Forms.
+* **Form Creation**: Create new forms from scratch using natural language descriptions.
+* **Design Import**: Convert existing designs (PDF, Figma, images) into functional AEM Forms. 
+* **Form Configuration**: Add fields, panels, validation rules, and conditional logic.
+* **Layout Management**: Organize form structure and optimize for different devices.
+* **Integration Setup**: Configure form submissions and data handling.
+* **Product Knowledge**: Answer questions about AEM Forms features and best practices.
 
-### Zugriffsbereich
+### Where to access
 
-Der AEM Forms AI-Assistent ist in den folgenden Dateien verfügbar:
+The AEM Forms AI Assistant is available in the following:
 
-* **Universeller Editor**: Für Edge Delivery Services-Formulare mit visuellen Bearbeitungsfunktionen.
-* **Adaptiver Forms-Editor**: Für eine detaillierte Formularkonfiguration und erweiterte Funktionen.
-* **Benutzeroberfläche für die Verwaltung von Forms**: Für allgemeine Aufgaben zur Formularerstellung und -verwaltung.
+* **Universal Editor**: For Edge Delivery Services forms with visual editing capabilities.
+* **Adaptive Forms Editor**: For detailed form configuration and advanced features.
+* **Forms Management UI**: For high-level form creation and management tasks.
 
-### Erste Schritte
+### Getting started
 
 >[!NOTE]
 >
-> Der AEM Forms AI-Assistent (Forms Experience Builder) ist im Rahmen des privaten Beta-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com), um den Zugriff anzufordern.
+> The AEM Forms AI Assistant (Forms Experience Builder) is available under the private beta program. Send an email from your work address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access.
 
-Weitere Informationen zur Verwendung des AEM Forms-KI-Assistenten finden Sie in der Dokumentation zum [AEM Forms-KI](/help/edge/docs/forms/forms-ai-assistant.md)Assistenten.
+To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Assistant](/help/edge/docs/forms/forms-ai-assistant.md) documentation.
 
-### Beispiel-Anwendungsfälle
+### Example Use Cases
 
-* **„Erstellen Sie ein Formular für Kunden-Feedback mit den Feldern Name, E-Mail, Bewertung und Kommentare“**
-* **„Konvertieren Sie dieses hochgeladene PDF-Anwendungsformular in ein digitales adaptives Formular“**
-* **„Bedingte Logik hinzufügen, um Ehepartner-Informationen nur dann anzuzeigen, wenn der Familienstand „Verheiratet“ ist“**
-* **„Konfigurieren Sie dieses Formular, um Daten an das Customer Relationship Management-System zu senden“**
+* **"Create a customer feedback form with name, email, rating, and comments fields"**
+* **"Convert this uploaded PDF application form into a digital adaptive form"**  
+* **"Add conditional logic to show spouse information only when marital status is 'Married'"**
+* **"Configure this form to submit data to the Customer Relationship Management system"**
 
-Dieser spezielle AEM Forms-KI-Assistent stellt die nächste Evolution bei der Formularerstellung dar, indem er die Leistungsfähigkeit von KI mit den robusten Formularfunktionen von AEM kombiniert, um Ihren Arbeitsablauf für die Formularerstellung zu optimieren.
+This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
