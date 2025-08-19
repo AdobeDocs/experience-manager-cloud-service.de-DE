@@ -167,11 +167,11 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!IMPORTANT]
 >
 >Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste vorab zu Cloud Manager hinzugefügt wird.
->>[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
->>Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
+>&#x200B;>[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
+>&#x200B;>Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
 >
 >**Cloud Manager-IP-Zulassungsliste**
->>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Hinzufügen von Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#add-cm-allowlist-frontend-pipeline}
@@ -179,7 +179,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!IMPORTANT]
 >
 >Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden bzw. verwenden möchten, muss zuvor die Cloud Manager-IP-Zulassungsliste hinzugefügt werden.
->>Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>&#x200B;>Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## IP-Zulassungslisten und der universelle Editor {#ip-allow-lists-ue}
 
