@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2025.6.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version Juni 2025:
 
->[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3470887?quality=12&captions=ger)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
