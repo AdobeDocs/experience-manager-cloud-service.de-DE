@@ -39,7 +39,7 @@ Gute Passform: Typisches Storefront-Erlebnis mit Adobe Commerce as a Cloud Servi
 
 #### &#x200B;2. Integration mit Adobe Commerce Optimizer (für jede Drittanbieterlösung) {#aco}
 
-Wenn Sie Ihre bestehende Commerce-Lösung integrieren und die Leistung Ihres Katalogs steigern möchten, empfiehlt Adobe, [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) als moderne Integrationsebene zu verwenden. Commerce Optimizer erweitert Ihre Commerce-Lösung mit leistungsstarken SaaS-Services für Katalog und Merchandising. Wie bei Adobe Commerce as a Cloud Service funktioniert [ ](https://experienceleague.adobe.com/developer/commerce/storefront/)Adobe Commerce-Storefront standardmäßig damit.
+Wenn Sie Ihre bestehende Commerce-Lösung integrieren und die Leistung Ihres Katalogs steigern möchten, empfiehlt Adobe, [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) als moderne Integrationsebene zu verwenden. Commerce Optimizer erweitert Ihre Commerce-Lösung mit leistungsstarken SaaS-Services für Katalog und Merchandising. Wie bei Adobe Commerce as a Cloud Service funktioniert [&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/)Adobe Commerce-Storefront standardmäßig damit.
 
 Integrationen in kommerzielle Commerce-Lösungen wie Salesforce Commerce sind verfügbar. Wenden Sie sich an Ihren Adobe-Vertreter.
 
