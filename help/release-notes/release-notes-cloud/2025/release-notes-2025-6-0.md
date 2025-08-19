@@ -3,10 +3,11 @@ title: Versionshinweise für Version 2025.6.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.6.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
+source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 98%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -32,15 +33,11 @@ Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Man
 
 Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Video zur Version {#release-video}
 
-## Release Video {#release-video}
+Eine Zusammenfassung der in der Version 2025.6.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version Juni 2025:
 
-Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +67,7 @@ Weitere Informationen finden Sie im Artikel zur [Abschaffung](/help/release-note
 
 Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigurationen anzuzeigen, die nicht mehr verwendet werden dürfen. Ausführliche Informationen, einschließlich der Zeitpläne für die Entfernung, finden Sie im Artikel zur Abschaffung.
 
-+++Erweitern um die veralteten Elemente anzuzeigen
++++Erweitern Sie die Liste, um die veralteten Versionen anzuzeigen
 
 Jav-APIs:
 
