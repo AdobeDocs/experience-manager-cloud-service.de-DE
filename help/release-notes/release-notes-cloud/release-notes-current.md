@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 50%
+source-wordcount: '2350'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -62,9 +62,9 @@ Sie können jetzt [Shape-Ebenen zu Dynamic Media-Vorlagen hinzufügen](/help/ass
 
 **KI-generierte Metadatenverbesserungen**
 
-Mit AEM Assets können Sie jetzt [die Anzeige von Asset-Titeln in der Karten- oder ](/help/assets/smart-tags.md#configure-ai-generated-titles)) auf der Seite zum Durchsuchen von Assets konfigurieren. Sie können den von Ihnen definierten Asset-Titel anzeigen, den Titel mithilfe von KI generieren oder einen von KI generierten Titel nur verwenden, wenn für das Asset kein Titel vorhanden ist.
+Mit AEM Assets können Sie jetzt [die Anzeige von Asset-Titeln in der Karten- oder ](/help/assets/smart-tags.md#configure-ai-generated-titles)) auf der Seite zum Durchsuchen von Assets konfigurieren. Sie können den von Ihnen definierten Asset-Titel und einen KI-generieren Titel oder nur einen KI-generierten Titel anzeigen, wenn für das Asset kein Titel vorhanden ist.
 
-![KI-generierte Titel konfigurieren](/help/assets/assets/configure-title-ai-generated.png)
+![Konfigurieren von KI-generierten Titeln](/help/assets/assets/configure-title-ai-generated.png)
 
 Sie können jetzt auch KI-generierte Metadaten auf Ordnerebene deaktivieren .
 
@@ -88,7 +88,7 @@ Content Hub enthält jetzt die Option **Alle anzeigen** in Filtern, mit der Benu
 
 Profitieren Sie von automatisiertem Hochladen neuer Dateien und Ordner, erweiterten Dateivorgängen, einer intelligenteren Asset-Erkennung und einer nahtlosen Integration mit AEM, wodurch das Content-Management schneller, klarer und intuitiver wird.
 
-Eine vollständige Liste der Funktionen finden Sie unter [Versionshinweise zum Desktop-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/release-notes).
+Eine vollständige Liste der Funktionen finden Sie unter [Versionshinweise zum Desktop-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-with-openapi}
 
@@ -105,32 +105,44 @@ Alle OpenAPI-Bildanfragen nutzen jetzt die intelligente Bildbearbeitung vollstä
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
-**Universeller Editor für adaptive Forms und Formularfragmente**
+* **Universeller Editor für adaptive Forms und Formularfragmente**
 
-Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) unterstützt jetzt die Erstellung sowohl adaptiver Forms als auch wiederverwendbarer Formularfragmente. Autorinnen und Autoren können in einer vereinfachten WYSIWYG-Authoring-Umgebung Formulare visuell erstellen, Übermittlungsaktionen konfigurieren und eine reCAPTCHA-Validierung hinzufügen. Diese Funktion beschleunigt die Erstellung von Formularen, erhöht die Konsistenz und verbessert den Schutz vor Spam und automatisiertem Missbrauch.
+  Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) unterstützt jetzt die Erstellung sowohl adaptiver Forms als auch wiederverwendbarer Formularfragmente. Autorinnen und Autoren können in einer vereinfachten WYSIWYG-Authoring-Umgebung Formulare visuell erstellen, Übermittlungsaktionen konfigurieren und eine reCAPTCHA-Validierung hinzufügen. Diese Funktion beschleunigt die Erstellung von Formularen, erhöht die Konsistenz und verbessert den Schutz vor Spam und automatisiertem Missbrauch.
 
-![Universeller Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![Universeller Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**Forms Submission Service für Edge Delivery Services Forms**
+* **Forms Submission Service für Edge Delivery Services Forms**
 
-Siehe [Forms-Übermittlungsdienst](/help/forms/forms-submission-service.md). ermöglicht die nahtlose Speicherung von Daten aus Übermittlungen adaptiver Formulare direkt auf gängigen Tabellenplattformen wie Google Sheets, Microsoft OneDrive oder SharePoint. Diese Integration optimiert das Daten-Management durch die Möglichkeit der direkten Übermittlung von Formulardaten an die von Ihnen gewählte Tabelle, wodurch die manuelle Datenübertragung entfällt und Fehler reduziert werden.
+  [Forms Submission Service](/help/forms/forms-submission-service.md) ermöglicht die nahtlose Speicherung von Daten aus Übermittlungen adaptiver Formulare direkt auf gängigen Tabellenkalkulationsplattformen wie Google Sheets, Microsoft OneDrive oder SharePoint. Diese Integration optimiert das Daten-Management durch die Möglichkeit der direkten Übermittlung von Formulardaten an die von Ihnen gewählte Tabelle, wodurch die manuelle Datenübertragung entfällt und Fehler reduziert werden.Zu den wichtigsten Vorteilen gehören:
 
-Zu den wichtigsten Vorteilen gehören:
+   * **Direkte Integration:** Konfigurieren Sie Ihre Formulare, um Daten direkt an eine bestimmte Tabelle zu senden.
+   * **Benutzerdefiniertes Daten-Mapping** Ordnen Sie Formularfelder den entsprechenden Tabellenspalten für die organisierte Speicherung zu.
+   * **Zugriffssteuerung:** Nutzen vorhandener Tabellenberechtigungen, um zu verwalten, wer auf gesendete Daten zugreifen oder diese ändern kann.
 
-* **Direkte Integration:** Konfigurieren Sie Ihre Formulare, um Daten direkt an eine bestimmte Tabelle zu senden.
-* **Benutzerdefiniertes Daten-Mapping** Ordnen Sie Formularfelder den entsprechenden Tabellenspalten für die organisierte Speicherung zu.
-* **Zugriffssteuerung:** Nutzen vorhandener Tabellenberechtigungen, um zu verwalten, wer auf gesendete Daten zugreifen oder diese ändern kann.
+* **Generieren und Synchronisieren von AFP-Ausgabedarstellungen aus dem adaptiven Forms**
 
-**Generieren und Synchronisieren von AFP-Ausgabedarstellungen aus dem adaptiven Forms**
+  Die [AFP Output Sync API](/help/forms/document-generation-afp-api.md) ermöglicht es Administratoren und Benutzern, AFP-Ausgaben (Advanced Function Presentation) von adaptiven Forms zu generieren und die Ausgabe mit externen Systemen oder Speicherorten zu synchronisieren. AFP ist ein leistungsstarkes, für das Drucken optimiertes Dokumentenformat, das häufig in großen Unternehmensumgebungen zum Einsatz kommt.
 
-Die [AFP Output Sync API](/help/forms/document-generation-afp-api.md) ermöglicht es Administratoren und Benutzern, AFP-Ausgaben (Advanced Function Presentation) von adaptiven Forms zu generieren und die Ausgabe mit externen Systemen oder Speicherorten zu synchronisieren. AFP ist ein leistungsstarkes, für das Drucken optimiertes Dokumentenformat, das häufig in großen Unternehmensumgebungen zum Einsatz kommt.
+* **Unterstützung der automatischen Zuordnung für adaptive Formularfragmente**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  Adaptive Forms unterstützen jetzt [automatische Zuordnung von adaptiven Formularfragmenten](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). Mit dieser Verbesserung werden übereinstimmende Fragmente automatisch eingefügt, wenn Schemaobjekte an einer definierten Fragmentstruktur ausgerichtet werden. Dies vereinfacht die Formularerstellung, verbessert die Wiederverwendbarkeit von Fragmenten und stellt die Konsistenz über alle datenintegrierten Formulare hinweg sicher.
+
+* **Titel eines benutzerdefinierten Formulars im Datensatzdokument**
+
+  Autoren können jetzt einen [benutzerdefinierten Formulartitel im Datensatzdokument“ definieren](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) indem sie den benutzerdefinierten Formulartitel bearbeiten. Der benutzerdefinierte Titel wird in der PDF-Kopfzeile, in den Dokumenteigenschaften von PDF und als anfänglicher Ansichtstitel angezeigt, wenn die PDF geöffnet wird, wodurch eine klare Identifizierung und ein konsistentes Branding gewährleistet sind.
+
+* **Verbesserte Fehlerbehandlung für eingeschränkte Dateitypen**
+
+  [Fehlerbehandlung für eingeschränkte Dateitypen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) wird jetzt unterstützt, wodurch nicht unterstützte Datei-Uploads blockiert werden. Wenn Benutzende versuchen, eine Datei zu senden, indem sie deren Typ in ein nicht unterstütztes Format ändern, gibt das Formular während der Übermittlung einen Fehler aus.
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ Die [AFP Output Sync API](/help/forms/document-generation-afp-api.md) ermöglich
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### Neue Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-Das AEM Forms Early Access-Programm bietet Ihnen die einmalige Möglichkeit, exklusiven Zugang zu hochmodernen Innovationen zu erhalten und deren Entwicklung mitzugestalten.
-
-In diesen Versionshinweisen sind die Innovationen aufgeführt, die in der aktuellen Version bereitgestellt werden. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -224,7 +234,7 @@ OSGi-Eigenschaften:
 
 ### Abschaffung der Java 11-Laufzeit {#java11-runtime-deprecation}
 
-Die **Java 11-*- ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere (Java 21 &#x200B;**-Laufzeitumgebung**.
+Die **Java 11-*- ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere (Java 21 **-Laufzeitumgebung**.
 
 Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Bitte stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **28. August 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
 
@@ -300,7 +310,7 @@ Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen
 
 In Alpha unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-aemcs-rde-support@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com) senden, wenn Interesse besteht, Feedback zu dieser Funktion zu geben.
+aemcs-rde-support@adobe.com Bitte eine E-Mail an [](mailto:aemcs-rde-support@adobe.com) senden, wenn Interesse besteht, Feedback zu dieser Funktion zu geben.
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 
