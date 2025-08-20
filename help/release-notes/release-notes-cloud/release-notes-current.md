@@ -134,7 +134,7 @@ Alle OpenAPI-Bildanfragen nutzen jetzt uneingeschränkt die intelligente Bildbea
 
 * **Verbesserte Fehlerbehandlung für eingeschränkte Dateitypen**
 
-  [Fehlerbehandlung für eingeschränkte Dateitypen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) wird jetzt unterstützt, wodurch nicht unterstützte Datei-Uploads blockiert werden. Wenn Benutzende versuchen, eine Datei zu senden, indem sie deren Typ in ein nicht unterstütztes Format ändern, gibt das Formular während der Übermittlung einen Fehler aus.
+  [Fehlerbehandlung für eingeschränkte Dateitypen](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) wird jetzt unterstützt, wodurch nicht unterstützte Datei-Uploads blockiert werden. Wenn Benutzende versuchen, eine Datei zu senden, indem sie deren Typ in ein nicht unterstütztes Format ändern, gibt das Formular während der Übermittlung einen Fehler aus.
 
 
 <!--
