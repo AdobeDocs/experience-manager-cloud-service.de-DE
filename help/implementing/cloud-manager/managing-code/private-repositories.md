@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigen
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
-workflow-type: ht
-source-wordcount: '968'
-ht-degree: 100%
+source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 97%
 
 ---
 
@@ -162,3 +162,4 @@ Validierte private Repositorys können [Full-Stack- und Frontend-Pipelines zugeo
 * Die [Funktion zur Wiederverwendung von Artefakten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) gilt nicht für private Repositorys.
 * Sie können die Überprüfung der Pull-Anfrage nicht mithilfe der GitHub-Prüfung über Cloud Manager anhalten.
 Während der Validierung des GitHub-Repositorys in Cloud Manager versucht Cloud Manager immer, die für dieses Repository erstellten Pull-Anfragen zu validieren.
+* Wenn die GitHub-Organisation IP-Einschränkungen hat, erstellen Sie einen Support-Fall, um die Liste der zuzulassen IP-Adressen zu erhalten.
