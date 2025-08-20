@@ -8,7 +8,7 @@ badge: label="Beta" type="Positive"
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 86281f539656ccdcb267a2de3aa0d40c0c8e637d
+source-git-commit: 99f4e5731d5631981986a783534c820ad8f7088a
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Es ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende 3-minütige 39-Sekunden-Video bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470364?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## So erhalten Sie Zugriff auf den KI-Assistenten in AEM{#get-access}
 
@@ -81,7 +81,7 @@ Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adob
 | Punktuelles Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar &#x200B;**<br>**Beispiele** |
+| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstellen Sie ein Support-Ticket für mich.</li></ul> |
 | Abrufen des Status des Support-Tickets | <ul><li>Zeigen Sie mir alle Support-Tickets, die ich geöffnet habe.</li><li>Status des Tickets „E“ -----------</li></ul> |
 
@@ -121,7 +121,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -217,3 +217,4 @@ To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Ass
 * **"Configure this form to submit data to the Customer Relationship Management system"**
 
 This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
+-->
