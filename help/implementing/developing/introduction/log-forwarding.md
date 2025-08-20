@@ -491,7 +491,7 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic HTTPS-API für die A
 >
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+>aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [ zu ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)New Relic .
 
@@ -516,7 +516,7 @@ Das Bereichsattribut „Protokolle aufnehmen“ ist für das Token erforderlich.
 
 >[!NOTE]
 >
-> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
 ### Splunk {#splunk}
 
