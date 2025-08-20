@@ -20,7 +20,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 21994, die am Mittwoch, 19. August 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21772.
 
-Die Funktionsaktivierung von 2025.8.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Die Funktionsaktivierung von 2025.8.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Neue Funktionen  {#new-features-21994}
 

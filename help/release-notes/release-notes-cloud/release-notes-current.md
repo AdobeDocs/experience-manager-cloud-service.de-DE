@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
 source-wordcount: '2350'
-ht-degree: 48%
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.7.0) ist der Freitag, 7. August 2025. Die nächste Version (2025.8.0) ist für den Freitag, 28. August 2025 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.7.0) ist der 7. August 2025. Die nächste Version (2025.8.0) ist für den 28. August 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,81 +48,81 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Neue Funktion in Experience Manager Sites {#enhancements-sites}
 
-* Sie können jetzt Inhaltsfragmente mit referenzierten Fragmenten (untergeordneten Elementen) in einem Vorgang kopieren. Dies ermöglicht die Wiederverwendung vorhandener Inhaltsfragmentstrukturen für die Erstellung neuer Inhalte.
-* In der Admin-Benutzeroberfläche von Inhaltsfragmenten können Sie jetzt den Workflow-Status für Inhaltsfragmente mit detaillierten Informationen zu vergangenen und derzeit ausgeführten Workflows für ein ausgewähltes Fragment anzeigen.
-* Beim Umbenennen oder Verschieben einer Live Copy-Quellseite wird jetzt der Trigger beim erneuten Veröffentlichen einer entsprechend umbenannten oder verschobenen Live Copy-Seite behoben.
+* Sie können jetzt Inhaltsfragmente mit referenzierten Fragmenten (untergeordneten Elementen) in einem einzigen Vorgang kopieren. Dies ermöglicht die Wiederverwendung vorhandener Inhaltsfragmentstrukturen für die Erstellung neuer Inhalte.
+* In der Admin-Benutzeroberfläche von Inhaltsfragmenten können Sie jetzt den Workflow-Status für Inhaltsfragmente mit detaillierten Informationen zu vergangenen und derzeit laufenden Workflows für ein ausgewähltes Fragment anzeigen.
+* Beim Umbenennen oder Verschieben einer Live Copy-Quellseite wird jetzt die erneute Veröffentlichung einer entsprechend umbenannten oder verschobenen Live Copy-Seite ausgelöst.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Hinzufügen von Shapes zu Dynamic Media-Vorlagen**
+**Hinzufügen von Formen zu Dynamic Media-Vorlagen**
 
-Sie können jetzt [Shape-Ebenen zu Dynamic Media-Vorlagen hinzufügen](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Ähnlich wie Bild- und Textebenen unterstützen Formebenen Parameter für Echtzeit-Updates über die Vorlagen-URL. Sie können auch call-to-action (CTA)-Links zu Shapes in Ihre Vorlagen aufnehmen.
+Sie können jetzt in Experience Manager Assets [Formebenen zu Dynamic Media-Vorlagen hinzufügen](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas). Ähnlich wie Bild- und Textebenen unterstützen Formebenen Parameter für Echtzeit-Updates über die Vorlagen-URL. Sie können auch Links mit Aktionsaufrufen (CTA-Links) zu Formen in Ihre Vorlagen aufnehmen.
 
-![Hinzufügen von Shapes zu Dynamic Media-Vorlagen](/help/assets/assets/enable-uniform-radius-shape.png)
+![Hinzufügen von Formen zu Dynamic Media-Vorlagen](/help/assets/assets/enable-uniform-radius-shape.png)
 
-**KI-generierte Metadatenverbesserungen**
+**Verbesserungen von KI-generierten Metadaten**
 
-Mit AEM Assets können Sie jetzt [die Anzeige von Asset-Titeln in der Karten- oder ](/help/assets/smart-tags.md#configure-ai-generated-titles)) auf der Seite zum Durchsuchen von Assets konfigurieren. Sie können den von Ihnen definierten Asset-Titel und einen KI-generieren Titel oder nur einen KI-generierten Titel anzeigen, wenn für das Asset kein Titel vorhanden ist.
+Mit AEM können Sie auf der Seite „Asset-Suche“ jetzt [die Anzeige von Asset-Titeln in der Karten- oder Listenansicht konfigurieren](/help/assets/smart-tags.md#configure-ai-generated-titles). Sie können wahlweise den von Ihnen definierten Asset-Titel oder den von der KI generierten Titel anzeigen oder den KI-generierten Titel nur verwenden, wenn es noch keinen Titel für das Asset gibt.
 
 ![Konfigurieren von KI-generierten Titeln](/help/assets/assets/configure-title-ai-generated.png)
 
-Sie können jetzt auch KI-generierte Metadaten auf Ordnerebene deaktivieren .
+Sie können jetzt auch KI-generierte Metadaten auf Ordnerebene deaktivieren.
 
 ### Neue Funktionen in Content Hub {#new-features-content-hub}
 
 **Verbesserte Branding-Flexibilität in Content Hub**
 
-Aufbauend auf vorhandenen Personalisierungsfunktionen ermöglicht Content Hub Admins jetzt die weitere Anpassung ihrer Bereitstellung durch das Hinzufügen benutzerdefinierter Logo-Bilder. Das TIFF-Dateiformat wird jetzt sowohl für Banner- als auch für Logo-Bilder unterstützt, was eine größere Designflexibilität ermöglicht.
+Aufbauend auf vorhandenen Personalisierungsfunktionen ermöglicht Content Hub Admins jetzt die weitere Anpassung ihrer Bereitstellung, indem sie benutzerdefinierte Logobilder hinzufügen. Die Unterstützung des TIFF-Dateiformats wurde sowohl für Banner- als auch für Logogbilder hinzugefügt, was die Design-Flexibilität erhöht.
 
 **Intelligentere Freigabe mit benannten Links**
 
-Sie können jetzt beim Generieren eines freigegebenen Links einen Titel hinzufügen - sei es in der Asset-Detailansicht oder nach der Auswahl eines oder mehrerer Assets. Auf diese Weise können Empfängerinnen und Empfänger den Zweck jedes Links leicht identifizieren, insbesondere wenn sie mehrere freigegebene Assets erhalten.
+Sie können jetzt beim Generieren eines freigegebenen Links einen Titel hinzufügen – sowohl in der Asset-Detailansicht als auch nach der Auswahl eines oder mehrerer Assets. Auf diese Weise können die Personen, die den Link bekommen, den Zweck jedes Links leicht identifizieren, insbesondere, wenn sie mehrere freigegebene Assets erhalten.
 
 ![Privater und öffentlicher Link](/help/assets/assets/shared-link-for-assets.png)
 
 **Verbesserte Filternavigation**
 
-Content Hub enthält jetzt die Option **Alle anzeigen** in Filtern, mit der Benutzende alle verfügbaren Facetten zusammen mit der Anzahl der Assets anzeigen können. Die aktuelle Einschränkung der Anzeige beschränkt sich auf bis zu zehn Facetten. Verbesserte Such- und Sortierfunktionen in jedem Filter erleichtern die effizientere Erkennung und Verwaltung von Assets.
+Content Hub enthält jetzt in Filtern die Option **Alle anzeigen**, mit der Benutzende alle verfügbaren Facetten zusammen mit der Anzahl der Assets im Zusammenhang mit der aktuellen Einschränkung auf bis zu zehn Facetten anzeigen können. Verbesserte Such- und Sortierfunktionen in jedem Filter erleichtern die effizientere Erkennung und Verwaltung von Assets.
 
-### AEM-Desktop-Programm Version 3.0.0 {#desktop-app-release-3.0.0}
+### AEM-Desktop-Anwendung Version 3.0.0 {#desktop-app-release-3.0.0}
 
-Profitieren Sie von automatisiertem Hochladen neuer Dateien und Ordner, erweiterten Dateivorgängen, einer intelligenteren Asset-Erkennung und einer nahtlosen Integration mit AEM, wodurch das Content-Management schneller, klarer und intuitiver wird.
+Profitieren Sie von dem automatisierten Hochladen neuer Dateien und Ordner, erweiterten Dateivorgängen, einer intelligenteren Asset-Erkennung und einer nahtlosen Integration in AEM, wodurch das Content Management schneller, klarer und intuitiver wird.
 
-Eine vollständige Liste der Funktionen finden Sie unter [Versionshinweise zum Desktop-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/release-notes).
+Eine vollständige Liste der Funktionen finden Sie unter [Versionshinweise zur Desktop-App](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-with-openapi}
 
 **Vorschau von Assets vor der Veröffentlichung**
 
-[!DNL Dynamic Media with OpenAPI capabilities] können jetzt Assets direkt in [!DNL AEM Sites] Autorenseiten in der Vorschau anzeigen, bevor sie öffentlich verfügbar gemacht werden. Geben Sie Vorschauseiten für Stakeholder frei, um Feedback zur visuellen Qualität und kontextuellen Anpassung zu erhalten. Während des Prüfungszyklus können Sie mehrere Asset-Versionen erstellen und verwalten, bevor Sie sie zur Veröffentlichung fertigstellen.
+[!DNL Dynamic Media with OpenAPI capabilities] können jetzt Assets direkt in [!DNL AEM Sites] Autorenseiten in der Vorschau anzeigen, bevor sie sie öffentlich verfügbar machen. Geben Sie Vorschauseiten für Projektbeteiligte frei, um Feedback zur visuellen Qualität und kontextuellen Anpassung zu erhalten. Während des Überprüfungszyklus können Sie mehrere Asset-Versionen erstellen und verwalten, bevor Sie sie zur Veröffentlichung fertigstellen.
 
-**Verbesserte intelligente Bildbearbeitung für OpenAPI-Bildanforderungen**
+**Verbesserte intelligente Bildbearbeitung für OpenAPI-Bildanfragen**
 
-Alle OpenAPI-Bildanfragen nutzen jetzt die intelligente Bildbearbeitung vollständig mit der automatischen Promotion- und Fallback-Logik. Diese Verbesserung optimiert Bilder basierend auf Geräte- und Netzwerkbedingungen, sorgt für schnellere Seitenladevorgänge und eine reduzierte Bandbreitennutzung - bei gleichzeitiger Aufrechterhaltung der visuellen Qualität.
+Alle OpenAPI-Bildanfragen nutzen jetzt uneingeschränkt die intelligente Bildbearbeitung mit automatischer Promotion und Fallback-Logik. Diese Verbesserung optimiert Bilder basierend auf Geräte- und Netzwerkbedingungen, sorgt für schnellere Seitenladevorgänge und verringert die Bandbreitennutzung – ohne Abstriche bei der visuellen Qualität.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
-* **Universeller Editor für adaptive Forms und Formularfragmente**
+* **Universeller Editor für adaptive Formulare und Formularfragmente**
 
-  Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) unterstützt jetzt die Erstellung sowohl adaptiver Forms als auch wiederverwendbarer Formularfragmente. Autorinnen und Autoren können in einer vereinfachten WYSIWYG-Authoring-Umgebung Formulare visuell erstellen, Übermittlungsaktionen konfigurieren und eine reCAPTCHA-Validierung hinzufügen. Diese Funktion beschleunigt die Erstellung von Formularen, erhöht die Konsistenz und verbessert den Schutz vor Spam und automatisiertem Missbrauch.
+  Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) unterstützt jetzt die Erstellung von adaptiven Formularen und von wiederverwendbaren Formularfragmenten. Autorinnen und Autoren können in einer vereinfachten WYSIWYG-Authoring-Umgebung Formulare visuell erstellen, Übermittlungsaktionen konfigurieren und eine reCAPTCHA-Validierung hinzufügen. Diese Funktion beschleunigt die Erstellung von Formularen, erhöht die Konsistenz und verbessert den Schutz vor Spam und automatisiertem Missbrauch.
 
   ![Universeller Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-* **Forms Submission Service für Edge Delivery Services Forms**
+* **Formularübermittlungsdienst für Edge Delivery Services-Formulare**
 
   [Forms Submission Service](/help/forms/forms-submission-service.md) ermöglicht die nahtlose Speicherung von Daten aus Übermittlungen adaptiver Formulare direkt auf gängigen Tabellenkalkulationsplattformen wie Google Sheets, Microsoft OneDrive oder SharePoint. Diese Integration optimiert das Daten-Management durch die Möglichkeit der direkten Übermittlung von Formulardaten an die von Ihnen gewählte Tabelle, wodurch die manuelle Datenübertragung entfällt und Fehler reduziert werden.Zu den wichtigsten Vorteilen gehören:
 
-   * **Direkte Integration:** Konfigurieren Sie Ihre Formulare, um Daten direkt an eine bestimmte Tabelle zu senden.
-   * **Benutzerdefiniertes Daten-Mapping** Ordnen Sie Formularfelder den entsprechenden Tabellenspalten für die organisierte Speicherung zu.
-   * **Zugriffssteuerung:** Nutzen vorhandener Tabellenberechtigungen, um zu verwalten, wer auf gesendete Daten zugreifen oder diese ändern kann.
+   * **Direkte Integration:** Sie können Ihre Formulare so konfigurieren, dass die Daten direkt an eine festgelegte Kalkulationstabelle übermittelt werden.
+   * **Benutzerdefinierte Datenzuordnung:** Sie können Formularfelder den entsprechenden Spalten in der Tabellenkalkulation zuordnen, um die Datenspeicherung zu organisieren.
+   * **Zugriffskontrolle:** Mit vorhandenen Tabellenberechtigungen können Sie verwalten, wer auf übermittelte Daten zugreifen oder sie bearbeiten kann.
 
-* **Generieren und Synchronisieren von AFP-Ausgabedarstellungen aus dem adaptiven Forms**
+* **Generieren und Synchronisieren von AFP-Ausgabedarstellungen aus adaptiven Formularen**
 
-  Die [AFP Output Sync API](/help/forms/document-generation-afp-api.md) ermöglicht es Administratoren und Benutzern, AFP-Ausgaben (Advanced Function Presentation) von adaptiven Forms zu generieren und die Ausgabe mit externen Systemen oder Speicherorten zu synchronisieren. AFP ist ein leistungsstarkes, für das Drucken optimiertes Dokumentenformat, das häufig in großen Unternehmensumgebungen zum Einsatz kommt.
+  Das [AFP Output Sync-API](/help/forms/document-generation-afp-api.md) ermöglicht es Administratorinnen und Administratoren sowie Benutzerinnen und Benutzern, aus adaptiven Formularen AFP-Ausgaben (Advanced Function Presentation) zu generieren und die Ausgaben mit externen Systemen oder Speicherorten zu synchronisieren. AFP ist ein leistungsstarkes, für das Drucken optimiertes Dokumentformat, das häufig in großen Unternehmensumgebungen zum Einsatz kommt.
 
 * **Unterstützung der automatischen Zuordnung für adaptive Formularfragmente**
 
@@ -134,7 +134,7 @@ Alle OpenAPI-Bildanfragen nutzen jetzt die intelligente Bildbearbeitung vollstä
 
 * **Verbesserte Fehlerbehandlung für eingeschränkte Dateitypen**
 
-  [Fehlerbehandlung für eingeschränkte Dateitypen](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) wird jetzt unterstützt, wodurch nicht unterstützte Datei-Uploads blockiert werden. Wenn Benutzende versuchen, eine Datei zu senden, indem sie deren Typ in ein nicht unterstütztes Format ändern, gibt das Formular während der Übermittlung einen Fehler aus.
+  [Fehlerbehandlung für eingeschränkte Dateitypen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) wird jetzt unterstützt, wodurch nicht unterstützte Datei-Uploads blockiert werden. Wenn Benutzende versuchen, eine Datei zu senden, indem sie deren Typ in ein nicht unterstütztes Format ändern, gibt das Formular während der Übermittlung einen Fehler aus.
 
 
 <!--
@@ -173,19 +173,19 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
 
-**Regeleditor für den Editor für interaktive Kommunikation**
+**Regel-Editor für den Editor für interaktive Kommunikation**
 
-Erstellen Sie dynamische, datengesteuerte Aktionen direkt in Ihren Dokumenten mithilfe einer intuitiven Point-and-Click-Oberfläche. Bedingte Logik einfach definieren, Workflows automatisieren und Inhalte personalisieren, ohne Code zu schreiben.
+In einer intuitiven Point-and-Click-Oberfläche können Sie dynamische, datengesteuerte Aktionen direkt in Ihren Dokumenten erstellen. Sie können bedingte Logik einfach definieren, Workflows automatisieren und Inhalte personalisieren, ohne programmieren zu müssen.
 
 **AEM Forms-Strukturvorlagen-CLI für benutzerdefinierte Komponenten**
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms-custom component-aem-forms development tool)
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
-Beschleunigen Sie die Entwicklung von AEM Forms Edge Delivery Services mit diesem CLI-Tool. Sofortige Generierung des Codes und der Verkabelung, die für den Kickstart der benutzerdefinierten Komponentenentwicklung erforderlich sind - kein Textbaustein, kein Aufwand.
+Beschleunigen Sie die AEM Forms Edge Delivery Services-Entwicklung mit diesem CLI-Tool. Sie können den Code und die Anbindungen, die für den Beginn der Entwicklung von benutzerdefinierten Komponenten erforderlich sind, ohne Boilerplates und großen Aufwand sofort erzeugen.
 
 **API-Integrationstool für dynamische Formulardaten**
 
-Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente Formulare erstellen, mit denen Daten basierend auf Benutzerinteraktionen automatisch von externen REST-APIs abgerufen und aufgefüllt werden. Durch diese Integrationsfunktion ohne Code werden statische Formulare in responsive Datenerfassungsschnittstellen umgewandelt.
+Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente Formulare erstellen, mit denen basierend auf den Aktionen der Benutzenden Daten automatisch von externen REST-APIs abgerufen und ausgefüllt werden. Durch diese No-Code-Integrationsfunktion werden statische Formulare zu responsiven Datenerfassungsschnittstellen.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
 
@@ -234,7 +234,7 @@ OSGi-Eigenschaften:
 
 ### Abschaffung der Java 11-Laufzeit {#java11-runtime-deprecation}
 
-Die **Java 11-*- ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere (Java 21 &#x200B;**-Laufzeitumgebung**.
+Die *Java 11 Runtime* ist jetzt veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere **Java 21 Runtime** aktualisiert.
 
 Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Bitte stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **28. August 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
 
@@ -253,18 +253,18 @@ Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf e
 
 ### Standardmäßige Bereinigung älterer Versionen und Auditprotokolle {#mt-defaults}
 
-Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben- für Inhaltsversionen und Auditprotokolle standardmäßig deaktiviert, sodass keine Daten entfernt werden, es sei denn, diese sind explizit konfiguriert.
+Derzeit sind die zugehörigen Bereinigungs-Wartungsaufgaben in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, außer dies ist explizit konfiguriert.
 
-Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung standardmäßig zu einem künftigen angekündigten Datum aktiviert und dabei den folgenden Richtlinien gefolgt:
+Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung zu einem zukünftigen angekündigten Datum standardmäßig aktiviert, gemäß den folgenden Richtlinien:
 
 #### Inhaltsversionen {#mt-content}
 
-* **Neue Umgebungen*- (erstellt nach einem bevorstehenden Datum (wird später mitgeteilt)
-   * Versionen, die älter als **30 Tage*- sind, werden regelmäßig gelöscht.
+* * *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das später mitgeteilt wird)
+   * Versionen, die älter als *30 Tage* sind, werden regelmäßig gelöscht.
    * Die letzten fünf Versionen der letzten 30 Tage werden zusammen mit der neuesten Version und der aktuellen Version unabhängig von deren Alter beibehalten.
 
-* **Vorhandene Umgebungen*- (vor diesem bevorstehenden Datum erstellt):
-   * Versionen, die älter als **7 Jahre*- sind, werden regelmäßig gelöscht.
+* * *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
+   * Versionen, die älter als *7 Jahre* sind, werden regelmäßig gelöscht.
    * Alle Versionen der letzten 7 Jahre werden beibehalten.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
@@ -272,12 +272,12 @@ Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung standardm�
 
 #### Auditprotokoll {#mt-auditlogs}
 
-* **Neue Umgebungen*- (erstellt nach einem bevorstehenden Datum, das separat kommuniziert wird):
-   * Replikations-, DAM- und Seiten-Audit-Protokolle, die älter als **7 Tage*- sind, werden regelmäßig gelöscht.
+* * *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das separat mitgeteilt wird):
+   * Replikations-, DAM-und Seiten-Auditprotokolle, die älter als *7 Tage* sind, werden regelmäßig gelöscht.
    * Alle Ereignisse werden standardmäßig protokolliert.
 
-* **Vorhandene Umgebungen*- (vor diesem bevorstehenden Datum erstellt):
-   * Replikations-, DAM- und Seiten-Auditprotokolle, die älter als **7 Jahre* sind, werden regelmäßig gelöscht.
+* * *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
+   * Replikations-, DAM-und Seiten-Auditprotokolle, die älter als *7 Jahre* sind, werden regelmäßig gelöscht.
    * Alle Ereignisse werden standardmäßig protokolliert.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
@@ -304,13 +304,13 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel zu [Konfigurations-Pipelines](/help/operations/config-pipeline.md#configurations) beschrieben.
 
-Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, einschließlich CDN-Selektoren für Ursprünge, Antwort- und Anfrageumwandlungen, CDN-Protokollweiterleitung und mehr. Wenden Sie sich mit den Details Ihres Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com).
+Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, darunter CDN-Ursprungs-Selektoren, Antwort- und Anfragetransformationen und CDN-Protokollweiterleitung. Wenden Sie sich mit den Details Ihres Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com).
 
-### Snapshots für RDEs (Alpha-Programm) {#rde-snapshot-beta}
+### Snapshots für schnelle Entwicklungsumgebungen (Alpha-Programm) {#rde-snapshot-beta}
 
-In Alpha unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
+In Alpha unterstützen schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) jetzt eine Funktion, um einen Snapshot des aktuellen Code- und Inhaltsstatus zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-aemcs-rde-support@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com) senden, wenn Interesse besteht, Feedback zu dieser Funktion zu geben.
+Wenn Sie Feedback zu dieser Funktion geben möchten, senden Sie uns eine E-Mail an [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
 
 ### AEM-Protokollweiterleitung an weitere Ziele (Beta-Programm) {#log-forwarding-beta}
 

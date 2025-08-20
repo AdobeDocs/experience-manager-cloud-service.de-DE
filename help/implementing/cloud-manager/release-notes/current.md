@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Cloud Manager 2025.8.0
-description: Erfahren Sie mehr über Cloud Manager 2025.8.0 in Adobe Experience Manager as a Cloud Service.
+description: Erfahren Sie mehr über Version 2025.8.0 von Cloud Manager in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 05cd6bd0a4e4a65ac81053e6058cfd39cbd08148
 workflow-type: tm+mt
 source-wordcount: '1403'
-ht-degree: 55%
+ht-degree: 93%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 55%
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
 
-Erfahren Sie mehr über Cloud Manager 2025.8.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Erfahren Sie mehr über Version 2025.8.0 von Cloud Manager in AEM (Adobe Experience Manager) as a Cloud Service.
 
 Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Veröffentlichungsdaten {#release-date}
 
-Die Version 2025.8.0 von Cloud Manager in AEM as a Cloud Service wurde am Freitag, 7. August 2025 veröffentlicht.
+Die Version 2025.8.0 von Cloud Manager in AEM as a Cloud Service wurde am 7. August 2025 veröffentlicht.
 
-Die Veröffentlichung der nächsten Version ist für den Freitag, 4. September 2025 geplant.
+Die Veröffentlichung der nächsten Version ist für den 4. September 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
@@ -33,34 +33,34 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 4. September 2
 
   Experience Hub ist ein einheitlicher Ausgangspunkt, der personalisierte, kontextuelle Erlebnisse bereitstellt, mit denen Benutzende Ziele schneller erreichen können. Der Rollout endet am 26. August 2025, sodass er für alle Benutzer verfügbar ist. Die neue Experience Hub ist direkt unter [experience.adobe.com](https://experience.adobe.com/) verfügbar. Weitere Informationen finden Sie unter [Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md).
 
-* **Die Edge Delivery Services-Lizenz kann im Self-Service-Modus in ein HIPAA-Programm aufgenommen werden**
+* **Die Edge Delivery Services-Lizenz kann im Self-Service in ein HIPAA-Programm aufgenommen werden**
 
-  Unternehmen mit Anforderungen im Gesundheitswesen oder für vertrauliche Daten können Edge Delivery Services jetzt im Self-Service-Modus verwenden, wodurch die HIPAA-Konformität strengen gesetzlichen Standards entspricht. <!-- CMGR-70016 -->
+  Unternehmen, die Gesundheitsdaten oder vertrauliche Daten schützen müssen, können Edge Delivery Services jetzt im Self-Service verwenden, was die HIPAA-Konformität und die Einhaltung strikter regulatorischer Vorgaben ermöglicht. <!-- CMGR-70016 -->
 
 * **BYOG ist jetzt für Edge Delivery Services verfügbar**
 
-  Mit Cloud Manager können Sie jetzt externe Git-Repositorys konfigurieren, was flexible Code-Management-Workflows ermöglicht. <!--(CMGR‑69010, CMGR‑70988) --> Außerdem können Sie Code aus einem ausgewählten Zweig direkt in der Cloud Manager-Benutzeroberfläche abrufen, wodurch manuelle Repository-Aufgaben reduziert werden. Siehe [Konfigurieren einer Edge Delivery-Site zur Verwendung eines externen Git-Repositorys](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
+  Mit Cloud Manager können Sie jetzt externe Git-Repositorys konfigurieren, was flexible Code-Management-Workflows ermöglicht. <!--(CMGR‑69010, CMGR‑70988) --> Außerdem können Sie Code aus einer ausgewählten Verzweigung direkt in der Cloud Manager-Benutzeroberfläche abrufen, wodurch manuelle Repository-Aufgaben reduziert werden. Siehe [Konfigurieren einer Edge Delivery-Site zur Verwendung eines externen Git-Repositorys](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
 
 * **Automatisierte Bereitstellung für das neue Forms-Add-on**
 
-  Kunden, die nur Sites verwenden, benötigen häufig eine einfache, kostengünstige Methode zum Erstellen von Marketing-Formularen. Das neue AEM Forms Sites-Add-on erfüllt diese Anforderungen, indem es einem Sites-Programm begrenzte Forms-Funktionen hinzufügt. Außerdem wird ein klarer Upgrade-Pfad zum vollständigen AEM Forms-Angebot geschaffen. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  Kundenunternehmen, die nur Sites verwenden, benötigen häufig eine einfache, kostengünstige Methode zum Erstellen von Marketing-Formularen. Das neue AEM Forms Sites-Add-on erfüllt diese Anforderungen, indem es einem Sites-Programm eingeschränkte Forms-Funktionen hinzufügt. Außerdem wird ein klarer Upgrade-Pfad zum vollständigen AEM Forms-Angebot geschaffen. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   Das Add-on:
-   * Wird an ein Sites-Programm angehängt und neben diesem bereitgestellt - kein separates Forms-Programm oder keine Berechtigung.
-   * Targeting einfacher Anwendungsfälle von Marketing-Formularen.
-   * Wird während der Erstellung **Produktionsprogramms oder der Bearbeitung des Produktionsprogramms nur dann in der Liste Lösungen und Add-ons** angezeigt, wenn die IMS-Organisation über verfügbare Forms-Add-on-Lizenzen verfügt.
+   * wird an ein Sites-Programm angehängt und neben diesem bereitgestellt – kein separates Forms-Programm und keine Berechtigung erforderlich.
+   * erfüllt einfache Anwendungsszenarien für Marketing-Formualre.
+   * wird bei der Erstellung oder Bearbeitung eines Produktionsprogramms nur in der Liste **Lösungen und Add-ons** aufgeführt, wenn die IMS-Organisation verfügbare Forms-Add-on-Lizenzen besitzt.
 
-     ![Forms-Add](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png)ons *Das Forms-Add-on kann nur dann im Programm hinzugefügt werden, wenn in Ihrer IMS-Organisation Add-on-Lizenzen für Forms verfügbar sind.*
+     ![Forms-Add-ons](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png) *Das Forms-Add-on kann nur im Programm hinzugefügt werden, wenn in Ihrer IMS-Organisation Lizenzen für das Forms-Add-on verfügbar sind.*
 
-     ![Forms-Add-on in Lösungen und Add-ons beim Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Bei der Programmerstellung können Sie das Forms-Add-on innerhalb der Sites-Lösung auswählen.*
+     ![Forms-Add-on in „Lösungen und Add-ons“ beim Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Bei der Programmerstellung können Sie das Forms-Add-on innerhalb der Sites-Lösung auswählen.*
 
-     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Programm bearbeiten**&#x200B;wählen Sie das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
+     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *Wählen Sie unter **Programm bearbeiten**das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
 
-     Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+     Weitere Informationen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 ## Beta-Programme {#private-beta-program}
 
-Nehmen Sie an den Beta-Programmen von Cloud Manager teil, um vor der allgemeinen Veröffentlichung exklusiven Zugriff auf bevorstehende Funktionen zu erhalten.
+Nehmen Sie am Beta-Programm von Cloud Manager teil, um exklusiven Zugriff auf bevorstehende Funktionen vor ihrer regulären Veröffentlichung zu erhalten.
 
 Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
@@ -68,10 +68,10 @@ Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
@@ -88,10 +88,10 @@ Siehe auch [Wiederherstellung von Content in AEM as a Cloud Service](/help/opera
 
 Cloud Manager unterstützt jetzt das Hinzufügen eines neuen Umgebungstyps namens **Spezialisierte Testumgebung**. Diese Umgebung soll Teams dabei helfen, Funktionen vor der Live-Schaltung unter produktionsnahen Bedingungen zu validieren. Dieser Umgebungstyp unterscheidet sich von *Produktion + Staging*, *Entwicklung* oder *Schnelle Entwicklung* und bietet einen fokussierten Raum für die Ausführung erweiterter Validierungsszenarien.
 
-**Aktuelle Verbesserungen**
+**Neueste Verbesserungen**
 
-* Sie können jetzt eine spezielle Testumgebung für eine produktionsfremde Pipeline durch einen einfacheren, intuitiveren Workflow konfigurieren. Das optimierte Setup beschleunigt den Abschluss und verringert Konfigurationsfehler.
-* **Inhalt kopieren** wird jetzt in speziellen Testumgebungen unterstützt. Sie können **Inhalt kopieren** jetzt sicher in isolierten Testumgebungen ausführen, die die Produktion widerspiegeln. <!-- (CMGR‑68900) -->
+* Sie können jetzt mit einem einfacheren, intuitiveren Workflow spezialisierte Testumgebungen für produktionsfremde Pipelines konfigurieren. Die optimierte Einrichtung beschleunigt die Fertigstellung und reduziert Konfigurationsfehler.
+* **Inhalt kopieren** wird jetzt in speziellen Testumgebungen unterstützt. Sie können **Inhalt kopieren** jetzt sicher in isolierten Testumgebungen ausführen, die die Produktion spiegeln. <!-- (CMGR‑68900) -->
 
 Siehe [Hinzufügen einer spezialisierten Testumgebung](/help/implementing/cloud-manager/specialized-test-environment.md).
 
@@ -105,7 +105,7 @@ Siehe [Hinzufügen einer spezialisierten Testumgebung](/help/implementing/cloud-
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
-### Eigenes Git hinzufügen (BYOG) {#gitlab-bitbucket-azure-vsts}
+### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -128,7 +128,7 @@ Siehe [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing
 |---|---|
 | *Wie kann ein Projekt bei Bedarf zurück zum von Adobe verwalteten Git-Repository wechseln?* | Das Zurückwechseln ist unkompliziert. [Aktualisieren Sie die Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), um auf das Adobe-Repository zu verweisen und entfernen Sie das externe Repository, wenn es nicht mehr benötigt wird. |
 | *Ist es möglich, verschiedene Repositorys für verschiedene Umgebungen zu konfigurieren (z. B. produktionsfremd gegenüber Produktion), um Tests zuerst in produktionsfremden Umgebungen zu ermöglichen?* | Ja, verschiedene Repositorys können für separate Umgebungen konfiguriert werden. Beispielsweise kann die Qualitäts-Pipeline für Entwicklung oder Code auf ein externes Repository verweisen, während die Produktions-Pipeline mit dem Adobe-Repository verbunden bleibt. Stellen Sie sicher, dass der Synchronisationsauftrag zwischen den beiden Repositorys während dieser Konfiguration aktiv bleibt. |
-| *Funktionieren bestehende Einstellungen wie `IP Allow` weiterhin?* | Ja, bestehende `IP Allow` funktionieren weiterhin wie gewohnt. Wenn das externe Git-Repository jedoch durch eine Firewall geschützt ist, müssen die erforderlichen [Adobe-IP-Adressen zur Zulassungsliste hinzugefügt werden](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *Funktionieren bestehende Einstellungen wie `IP Allow`-Listen weiterhin?* | Ja, bestehende `IP Allow`-Listen funktionieren weiterhin wie gewohnt. Wenn das externe Git-Repository jedoch durch eine Firewall geschützt ist, müssen die erforderlichen [Adobe-IP-Adressen zur Zulassungsliste hinzugefügt werden](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
 | *Funktionieren alle GitLab-Repository-URLs? Die verwendete Repository-URL folgt dem Format `https://gitlab_dedicated_url.com/path/repo-name.git`, das sich vom Beispiel in der Dokumentation unterscheidet.* | Ja, jedes GitLab-Repository, das API V3 oder V4 unterstützt, wird unterstützt, einschließlich selbst gehosteter GitLab-URLs wie unter [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`) beschrieben. |
 
 
@@ -144,23 +144,23 @@ Siehe [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-co
 
 Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, sodass diese Funktion über Cloud-Service-Umgebungen hinaus genutzt werden kann. Sie können **Konfigurations-Pipelines** verwenden, um ggf. Einstellungen wie Traffic-Filterregeln und Web Application Firewall (WAF)-Konfigurationen zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
 
-**Letzte Verbesserung**
+**Neueste Verbesserung**
 
-* Edge Delivery Services-Pipelines zeigen jetzt **Konfiguration** in der Spalte **Bereitgestellter Code** an, was die sofortige Identifizierung von Bereitstellungen nur für Konfigurationen ermöglicht. <!-- CMGR‑69681 -->
-* Cloud Manager zeigt **Edge Delivery-Pipeline hinzufügen** sobald ein Programm mindestens eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option deaktiviert angezeigt und in einer QuickInfo werden fehlende Anforderungen erläutert. <!-- CMGR‑69680 -->
+* Edge Delivery Services-Pipelines zeigen in der Spalte **Bereitgestellter Code** jetzt **Konfiguration** an, was die sofortige Identifizierung von Bereitstellungen nur für Konfigurationen ermöglicht. <!-- CMGR‑69681 -->
+* Cloud Manager zeigt **Edge Delivery-Pipeline hinzufügen** an, sobald ein Programm mindestens eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option deaktiviert angezeigt und in einer QuickInfo wird erklärt, welche Voraussetzungen nicht erfüllt sind. <!-- CMGR‑69680 -->
 * Die Registerkarte **Edge Delivery** zeigt ein neues Widget **Edge Delivery-Pipelines**, das den Namen, den Status, das Repository und die Verzweigung jeder Pipeline auflistet. <!-- (CMGR-69052) -->
 
   ![Edge Delivery-Pipeline-Widget, das Pipeline-Namen, -Status, -Repository und -Verzweigung anzeigt](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
 
-* Das Bedienfeld **Filter** fügt einen Abschnitt **Bereitstellungstyp** hinzu, der die Kontrollkästchen **Versand mit Edge** und **Veröffentlichen** enthält. <!-- (CMGR-69682) -->
+* Im Panel **Filter** wird der Abschnitt **Bereitstellungstyp** hinzu, der die Kontrollkästchen **Edge-Bereitstellung** und **Veröffentlichungsbereitstellung** enthält. <!-- (CMGR-69682) -->
 
-  ![Filterbedienfeld, das den neuen Bereitstellungstyp des Edge-Versands und des Veröffentlichungs-Versands anzeigt](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
+  ![Filterbedienfeld, das den neuen Bereitstellungstyp der Edge-Bereitstellung und der Veröffentlichungsbereitstellung anzeigt](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
 ![„Edge Delivery-Pipeline hinzufügen“ in der Dropdown-Liste „Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline über die Seite **Programmübersicht**, Karte **Pipelines**.*
 
 ![Dialogfeld „Edge Delivery-Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Dialogfeld „Edge Delivery-Pipeline hinzufügen“*
 
-Siehe [Edge Delivery-Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+Siehe [Pipeline von Edge Delivery hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
 Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, senden Sie über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com).
 
@@ -169,7 +169,7 @@ Wenn Sie diese neue Funktion testen und uns Ihr Feedback mitteilen möchten, sen
 
 * Pipelines stellen Variablen jetzt nur noch für die aktive Edge Delivery Services-Domain-Konfiguration bereit und überspringen dabei Konfigurationen, die während der Pipeline-Neuerstellung entfernt wurden. <!-- (CMGR‑70039) -->
 * Die Pipeline-Ausführung startet jetzt zuverlässig. Es wurde ein Problem behoben, bei dem einige Pipelines aufgrund interner Fehler bei der Ressourcenverarbeitung nicht gestartet werden konnten. <!-- (CMGR‑58167) -->
-* Die Inhaltskopie überprüft Cloud Manager-Berechtigungen und blockiert Starts, wenn Benutzende keine Bereitstellungs-Manager- oder Administratorrechte haben. <!-- (CMGR‑62097) -->
+* Die Inhaltskopie überprüft Cloud Manager-Berechtigungen und blockiert Starts, wenn Benutzende keine Deployment Manager- oder Administratorrechte haben. <!-- (CMGR‑62097) -->
 
 
 <!-- ## Known issues {#known-issues} -->
