@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 5%
@@ -491,7 +491,7 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic HTTPS-API für die A
 >
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+>aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [ zu ](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)New Relic .
 
@@ -516,7 +516,7 @@ Das Bereichsattribut „Protokolle aufnehmen“ ist für das Token erforderlich.
 
 >[!NOTE]
 >
-> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
+> aemcs-logforwarding-beta@adobe.com Bitte eine E-Mail an [](mailto:aemcs-logforwarding-beta@adobe.com) senden, um Zugriff zu erhalten.
 
 ### Splunk {#splunk}
 
@@ -561,7 +561,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  sumologic:
+  sumoLogic:
     default:
       enabled: true
       collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
