@@ -4,10 +4,10 @@ description: Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
-workflow-type: ht
-source-wordcount: '1321'
-ht-degree: 100%
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+workflow-type: tm+mt
+source-wordcount: '1340'
+ht-degree: 98%
 
 ---
 
@@ -133,6 +133,7 @@ Nachdem ein Content-Set erstellt wurde, können Sie ihn zum Kopieren von Inhalte
       * Produktion
       * Staging  
       * Entwicklung / RDE
+   * Standardmäßig ist die programmübergreifende Inhaltskopie deaktiviert. Auf Kundenanfrage kann sie jedoch aktiviert werden, wodurch ein zusätzliches Eingabefeld **Zielprogramm** verfügbar wird.
 
 1. Falls erforderlich, können Sie auch **Zugriffskontrolllisten** in Ihren Kopiervorgang einbeziehen.
 
@@ -193,7 +194,6 @@ Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkunge
 
 * Inhalte können nicht von einer niedrigeren Umgebung in eine höhere Umgebung kopiert werden.
 * Inhalte können nur aus und in Authoring-Services kopiert werden.
-* Eine programmübergreifende Inhaltskopie ist nicht möglich.
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
 * Pro Content-Set können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
 * Das Inhaltskopie-Tool sollte nicht als Klon- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
