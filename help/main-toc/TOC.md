@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 174e7a7591714e60b508a2d29ffdd4ccddf528db
 workflow-type: tm+mt
-source-wordcount: '6515'
+source-wordcount: '6520'
 ht-degree: 97%
 
 ---
@@ -1194,16 +1194,18 @@ ht-degree: 97%
          + [Grundlagen zum Authoring für Headless mit AEM](/help/journey-headless/author/basics.md)
          + [Erfahren Sie mehr über die Verwendung von Verweisen in Inhaltsfragmenten](/help/journey-headless/author/references.md)
          + [Erfahren Sie mehr über die Definition von Metadaten und Tagging für Inhaltsfragmente](/help/journey-headless/author/metadata-tagging.md)
++ KI-Assistent {#ai-assistant-in-aem}
+   + [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+   + [Über den KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + Generative KI {#generative-ai}
    + [Generative KI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Varianten generieren](/help/generative-ai/generate-variations.md)
-   + [Assistent (eingeschränkte Beta-Version)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [KI-Assistent für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [Erste Schritte mit dem KI-Assistenten für AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Erste Schritte mit dem KI-Assistenten für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [AEM Forms KI-Assistent – Bibliothek für Prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [KI-Assistent in AEM - Einrichten](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [KI-Assistent in AEM (Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [KI-Assistent in AEM Forms (Forms Experience Builder) (Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [KI-Assistent in AEM Forms - Eingabeaufforderungsbibliothek](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [KI-Assistent in AEM Forms - Erste Schritte](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
 + Implementieren {#implementing}
    + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
    + Verwenden von Cloud Manager {#using-cloud-manager}
