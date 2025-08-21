@@ -3,22 +3,23 @@ title: KI-Assistent für AEM Forms (Forms Experience Builder)
 description: Schnelleres Erstellen leistungsstarker Formulare mithilfe von Formularfragmenten
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: ht
-source-wordcount: '1141'
-ht-degree: 100%
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 97%
 
 ---
 
-# KI-Assistent für AEM Forms (Forms Experience Builder)
+
+# Erste Schritte mit dem KI-Assistenten für AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist unter dem **Early-Adopter-Programm** verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Arbeitsadresse an mailto:aem-forms-ea@adobe.com, um Zugriff auf die Funktion anzufordern.
+> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist unter dem **Early-Adopter-Programm** verfügbar. Bei Interesse können Sie eine kurze E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com senden, um Zugriff auf die Funktion zu erhalten.
 
 >[!IMPORTANT]
 >
