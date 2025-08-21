@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 95ef5d2257c6f074ddd1a6a01ec09ab708e88af0
+source-git-commit: 42dc06910f6309fa8ac72c065f908a8cdbe37fb8
 workflow-type: tm+mt
-source-wordcount: '6498'
+source-wordcount: '6500'
 ht-degree: 97%
 
 ---
@@ -129,7 +129,7 @@ ht-degree: 97%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
-         + [2 025,7,0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
+         + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
@@ -1207,6 +1207,7 @@ ht-degree: 97%
    + Verwenden von Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
       + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
+      + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
       + Programme {#programs}
          + [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
