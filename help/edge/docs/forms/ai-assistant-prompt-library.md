@@ -29,7 +29,7 @@ Sammlung wiederverwendbarer Eingabeaufforderungsmuster und Beispiele, die für F
 
 ## Verwenden dieser Eingabeaufforderungsbibliothek
 
-Diese Bibliothek bietet wiederverwendbare Eingabeaufforderungsmuster für gängige Szenarien zur Formularerstellung. Umfassende Best Practices finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [](forms-ai-assistant-getting-started.md#best-practices).
+Diese Bibliothek bietet wiederverwendbare Eingabeaufforderungsmuster für gängige Szenarien zur Formularerstellung. Umfassende Best Practices finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
 
 ### Schnelltipps für diese Bibliothek
 
@@ -1057,6 +1057,6 @@ Verwenden Sie `@fieldName` Syntax, um in Ihren Eingabeaufforderungen auf vorhand
 
 ### Validierungs-Checkliste
 
-Umfassende Best Practices und Validierungsrichtlinien finden Sie im Abschnitt Erste Schritte mit Forms Experience Builder [](forms-ai-assistant-getting-started.md#best-practices).
+Umfassende Best Practices und Validierungsrichtlinien finden Sie im Abschnitt Erste Schritte mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
 
 *Diese Eingabeaufforderungsbibliothek wird laufend auf der Grundlage von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de).*
