@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '2330'
-ht-degree: 98%
+source-wordcount: '2335'
+ht-degree: 97%
 
 ---
 
@@ -171,7 +171,7 @@ Sie können den Wert von dataRef im Fenster **[!UICONTROL Eigenschaften]** einer
 
 Bevor Sie mit dem Aufrufdienst des Regeleditors einen Fehler-Handler hinzufügen:
 
-* [Aktivieren der Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung](enable-adaptive-forms-core-components.md).
+* Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
 * Erfahren Sie, wie Sie [benutzerdefinierte Funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=de#write-rules) erstellen können.
 

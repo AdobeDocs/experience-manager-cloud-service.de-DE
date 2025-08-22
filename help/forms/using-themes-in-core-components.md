@@ -5,10 +5,10 @@ keywords: Kernkomponenten zum Formatieren von adaptiven Formularen. Verwenden ei
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2816'
-ht-degree: 100%
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess des Änderns, Formatiere
 
 ### Einrichten Ihrer Arbeitsumgebung
 
-* [Aktivieren Sie Kernkomponenten für adaptive Formulare](/help/forms/enable-adaptive-forms-core-components.md) für Ihre lokale Bereitstellung und die Cloud Service-Umgebung.
+* Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 * Konfigurieren Sie eine [Frontend-Bereitstellungs-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de) für Ihre Cloud Service-Umgebung. Alternativ können Sie die Pipeline auch später konfigurieren, sodass Sie das Design vor der Einrichtung der Bereitstellungs-Pipeline flexibel priorisieren und verfeinern können.
 
 <!-- 
@@ -96,7 +96,7 @@ Die im Dokument bereitgestellten Beispiele basieren auf dem Design **Canvas**. S
 
 Beginnen wir mit einem Prozess, um mithilfe von Designs ein Branding-Erlebnis für Ihre auf Kernkomponenten basierenden adaptiven Formulare zu erstellen.
 
-#### 1. Klonen eines Designs {#download-a-theme-core-components}
+#### &#x200B;1. Klonen eines Designs {#download-a-theme-core-components}
 
 Um ein Design für die auf Kernkomponenten basierenden adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs aus:
 
@@ -125,7 +125,7 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
    Nach Ausführung des Befehls verfügen Sie über eine lokale Kopie des Designs auf Ihrem Computer im Ordner `aem-forms-theme-canvas`.
 
 
-#### 2. Festlegen des Namens eines Designs {#set-name-of-theme}
+#### &#x200B;2. Festlegen des Namens eines Designs {#set-name-of-theme}
 
 1. Öffnen Sie das Design-Projekt in Ihrer IDE. Um beispielsweise den Ordner `aem-forms-theme-canvas` im Visual Studio Code-Editor zu öffnen.
 
@@ -169,7 +169,7 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
 * Es wird empfohlen, das Design `version` in den Dateien `Package.json` und `Package-lock.json` zu aktualisieren, damit für Ihr Design die im Laufe der Zeit durchgeführten Änderungen und Verbesserungen genau widergespiegelt werden.
 * Hinsichtlich wichtiger Informationen zur Verwendung, Installationsanweisungen und anderer relevanter Details wird empfohlen, den Namen des Designs in der `ReadMe`-Datei zu aktualisieren.
 
-#### 3. Anpassen eines Designs {#customize-the-theme}
+#### &#x200B;3. Anpassen eines Designs {#customize-the-theme}
 
 Sie können einzelne Komponenten anpassen oder Änderungen auf Design-Ebene mithilfe globaler Variablen eines Designs vornehmen. Änderungen an globalen Variablen wirken sich auf alle einzelnen Komponenten aus. Sie können beispielsweise globale Variablen verwenden, um die Rahmenfarbe aller Komponenten eines adaptiven Formulars zu ändern und eine helle Füllfarbe für einen Aktionsaufruf (CTA) mithilfe der Schaltflächenkomponente festzulegen:
 
@@ -211,7 +211,7 @@ Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer b
    >
    > Wenn ein Stil sowohl auf Design- als auch auf Komponentenebene definiert ist, hat der auf Komponentenebene definierte Stil Priorität.
 
-#### 4. Testen eines benutzerdefinierten Designs {#test-the-theme}
+#### &#x200B;4. Testen eines benutzerdefinierten Designs {#test-the-theme}
 
 Um die Änderungen in der lokalen Umgebung in der Vorschau anzuzeigen und zu testen und das Design entsprechend den Anforderungen für verschiedene AEM-Komponenten anzupassen, führen Sie die folgenden Schritte aus:
 
@@ -311,7 +311,7 @@ Sie können das Design auch für das adaptive Formular testen, das auf Ihrer AEM
 
 Sie können eine Vorschau des adaptiven Formulars mit den neuesten Änderungen anzeigen. Sobald Sie mit den Änderungen in einem Design-Ordner zufrieden sind, stellen Sie das Design mithilfe der Frontend-Pipeline in Ihrer AEM Cloud Service-Umgebung bereit.
 
-#### 5. Bereitstellen eines Designs {#deploy-the-theme}
+#### &#x200B;5. Bereitstellen eines Designs {#deploy-the-theme}
 
 So stellen Sie das Design mithilfe der Frontend-Pipeline in Ihrer Cloud Service-Umgebung bereit:
 
@@ -441,12 +441,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
-
-
->[!MORELIKETHIS]
->
->* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -458,4 +453,3 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * [Generieren eines Datensatzdokuments für adaptive Formulare (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Erstellen eines adaptiven Formulars mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
 * [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
-* [Aktivieren der Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service und lokaler Entwicklungsumgebung](/help/forms/enable-adaptive-forms-core-components.md)

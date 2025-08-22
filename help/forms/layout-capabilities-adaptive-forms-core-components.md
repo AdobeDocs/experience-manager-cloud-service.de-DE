@@ -2,13 +2,13 @@
 title: Welche Layout-Funktionen bietet adaptive Forms basierend auf Kernkomponenten?
 description: Layout und Darstellung adaptiver Formulare auf verschiedenen Geräten werden von den Layouteinstellungen geregelt. Machen Sie sich mit den verschiedenen Layouts und ihrer Anwendung vertraut.
 feature: Adaptive Forms, Core Components
-keywords: Layout adaptiver Formulare basierend auf Kernkomponenten, Verschiedene Layouts für Formulare, Layouts für dynamische Formulare AEM, Layouts für AEM Cloud Service-Formulare, Formularlayouttypen in AEM-Kernkomponenten, Layouts adaptiver Formulare
+keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, Layouts für dynamische Formulare in AEM, Formularlayouts für AEM Cloud Service, Formularlayouttypen in AEM-Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
-ht-degree: 7%
+source-wordcount: '2106'
+ht-degree: 22%
 
 ---
 
@@ -27,7 +27,7 @@ Adaptive Forms bietet erstklassige Komponenten zum effektiven Layout und Design 
 
 ## Voraussetzung
 
-Bevor Sie die verschiedenen Funktionen eines Layouts untersuchen, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Detaillierte Anweisungen zum Aktivieren von Kernkomponenten für Ihre Umgebung finden Sie [hier](/help/forms/enable-adaptive-forms-core-components.md).
+Bevor Sie die verschiedenen Funktionen eines Layouts untersuchen, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
 ## Layouttypen für adaptive Forms
 
@@ -42,23 +42,23 @@ Adaptive Formulare, die auf Kernkomponenten basieren, unterstützen die folgende
 
 >[!TAB Bedienfeld-Layout]
 
-Das Bereichslayout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Bereichslayout ordnet Formularkomponenten in separaten Bereichen oder Bereichen in einem adaptiven Formular an.
+Das Bedienfeld-Layout ist nützlich, um verwandte Felder so zu organisieren, dass die Navigation und das Auffinden entsprechender Inhalte erleichtert werden. Das Bereichslayout ordnet Formularkomponenten in separaten Bereichen oder Bereichen in einem adaptiven Formular an.
 
 ![Bedienfeld-Layout](/help/forms/assets/panel-layout.png)
 
-Bedienfeldlayout
+Panel-Layout
 
-Sie können die [Bedienfeld-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) .
+Sie können die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
->[!TAB Assistentenlayout]
+>[!TAB Assistenten-Layout]
 
 Das Assistenten-Layout vereinfacht ein komplexes Formular, indem es in verschiedene Schritte unterteilt wird. Jeder Schritt stellt einen anderen Teil des Prozesses dar, und Benutzende navigieren nacheinander durch die Schritte, häufig mit den Schaltflächen **Weiter** und **Zurück**. Sie können das Assistenten-Layout verwenden, um ein Formular zu erstellen, das mehrere Abschnitte oder Schritte umfasst.
 
-![Assistentenlayout](/help/forms/assets/wizard-layout-compare.gif)
+![Assistenten-Layout](/help/forms/assets/wizard-layout-compare.gif)
 
 Assistenten-Layout
 
-Sie können die Komponente [Assistent](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) verwenden, um das Assistenten-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Assistenten-Komponente finden Sie im Artikel [Assistenten-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) .
+Sie können die [Assistenten-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) verwenden, um das Assistenten-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Assistenten-Komponente finden Sie im Artikel [Assistenten-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB Layout für vertikale Registerkarten]
 
@@ -80,18 +80,18 @@ Das Layout „Horizontale Registerkarten“ wird auch als Layout „Registerkart
 
 Layout horizontaler Registerkarten
 
-Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
 >[!TAB Akkordeon-Layout]
 
-Das Akkordeon-Layout zeigt Inhalte in ausblendbaren Abschnitten oder Bereichen in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt darin angezeigt, während andere Abschnitte reduziert bleiben. Dieses Layout ist ideal für die Anzeige großer Informationsmengen in kompakter Form.
+Das Akkordeon-Layout zeigt Inhalte in reduzierbaren Abschnitten oder Bedienfeldern in einem adaptiven Formular an. Wenn ein Abschnitt erweitert wird, wird der Inhalt darin angezeigt, während andere Abschnitte reduziert bleiben. Dieses Layout eignet sich ideal für das Anzeigen großer Informationsmengen in kompakter Form.
 
 ![Akkordeon-Layout](/help/forms/assets/accordion-layout-compare.gif)
 
 Akkordeon-Layout
 
-Sie können die [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Akkordeon-Komponente finden Sie im Artikel [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) .
+Sie können die [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) verwenden, um das Akkordeon-Layout in einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Akkordeon-Komponente finden Sie im Artikel [Akkordeon-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 >[!ENDTABS]
 
@@ -101,12 +101,12 @@ Informationen zum Einfügen eines Layouts und Hinzufügen von Formularkomponente
 
 Es ist wichtig, das richtige Layout für adaptive Formulare auszuwählen, um das Benutzererlebnis und die Formularfunktionen zu optimieren. Die Tabelle hilft Ihnen, die verschiedenen verfügbaren Layout-Optionen zu verstehen, und führt Sie bei der Auswahl des am besten geeigneten Layouts basierend auf Ihren spezifischen Anforderungen und Anwendungsfällen:
 
-| Funktion | Bedienfeldlayout | Assistenten-Layout | Registerkarten am oberen/vertikalen Registerkarten-Layout | Registerkarten links/horizontal Registerkarten-Layout | Akkordeon-Layout |
+| Funktion | Panel-Layout | Assistenten-Layout | Registerkarten am oberen/vertikalen Registerkarten-Layout | Registerkarten links/horizontal Registerkarten-Layout | Akkordeon-Layout |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
-| **Zweck** | Gruppiert verwandte Inhalte in separate Abschnitte | Führt Benutzer durch einen mehrstufigen Prozess oder ein mehrstufiges Formular | Ermöglicht das Wechseln zwischen Abschnitten/Ansichten auf derselben Seite | Ähnlich wie obere Registerkarten, aber vertikal auf der linken Seite angeordnet | Organisiert Inhalte in ausblendbaren Abschnitten |
-| **Struktur** | Unterschiedliche Abschnitte | Sequenzielle Schritte/Seiten | Horizontale Registerkarten oben | Vertikale Registerkarten links | Reduzierbare Bereiche/Abschnitte |
-| **Navigation** | Klicken Sie auf die Panel-Kopfzeilen, um zu navigieren | - Vorwärts: „Weiter“-Taste<br>- Rückwärts: „Zurück“-Schaltfläche<br>- Optionale Schritte überspringen | Auf Registerkarten klicken, um Abschnitte zu wechseln | Auf Registerkarten klicken, um Abschnitte zu wechseln | Auf Kopfzeilen klicken, um Abschnitte zu erweitern/reduzieren |
-| **Benutzererlebnis** | Organisiert große Inhaltsmengen auf überschaubare Weise | Schritt-für-Schritt-Anleitung zur Verringerung der Überlastung | Übersichtlicher, barrierefreier Wechsel zwischen Ansichten | Effiziente Nutzung von vertikalem Platz, immer sichtbare Registerkarten | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
+| **Zweck** | Gruppiert verwandte Inhalte in unterschiedliche Abschnitte | Führt Benutzende durch einen mehrstufigen Prozess oder ein mehrstufiges Formular | Ermöglicht das Wechseln zwischen Abschnitten/Ansichten auf derselben Seite | Ähnlich wie obere Registerkarten, aber vertikal auf der linken Seite angeordnet | Organisiert Inhalte in reduzierbare Abschnitte |
+| **Struktur** | Unterschiedliche Abschnitte | Sequenzielle Schritte/Seiten | Horizontale Registerkarten oben | Vertikale Registerkarten links | Reduzierbare Bedienfelder/Abschnitte |
+| **Navigation** | Klicken Sie zum Navigieren auf die Bedienfeldkopfzeilen | - Vorwärts: Schaltfläche „Weiter“<br>- Rückwärts: Schaltfläche „Zurück“<br>- Optionales Überspringen von Schritten | Auf Registerkarten klicken, um Abschnitte zu wechseln | Auf Registerkarten klicken, um Abschnitte zu wechseln | Anklickbare Kopfzeilen zum Erweitern/Reduzieren von Abschnitten |
+| **Anwendererlebnis** | Organisiert große Inhaltsmengen auf überschaubare Weise | Schrittweise Anleitung zur Verringerung der Überlastung | Übersichtlicher, barrierefreier Wechsel zwischen Ansichten | Effiziente Nutzung von vertikalem Platz, immer sichtbare Registerkarten | Kompakte Ansicht mit erweiterten/reduzierten Abschnitten |
 | **Nutzungsszenario** | Komplexe Formulare mit kategorisierten Abschnitten | Einrichtungsprozesse, komplexe Formulare | Organisieren von Einstellungen oder Inhaltskategorien | Dashboards, komplexe Datenansichten | Häufig gestellte Fragen, Einstellungsmenüs, detaillierte Inhaltsabschnitte |
 
 
@@ -126,7 +126,7 @@ Betrachten Sie das **IT-Anforderungsformular** das im Abschnitt [Adaptive Forms-
 
 Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und Hinzufügen von Komponenten erläutert. In diesem Beispiel wird ein horizontales Registerkarten-Layout in ein Formular eingefügt.
 
-### 1. Einfügen einer Layout-Komponente in ein Formular
+### &#x200B;1. Einfügen einer Layout-Komponente in ein Formular
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Instanz an.
 1. Wählen Sie oben links **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]**.
@@ -168,7 +168,7 @@ In diesem Fall fügen wir beispielsweise den Namen der horizontalen Registerkart
 
 Nachdem die Layout-Komponente zum Formular hinzugefügt wurde, ändern Sie die Anzahl der Bedienfelder entsprechend den Anforderungen.
 
-### 2. Bedienfelder zum Layout hinzufügen
+### &#x200B;2. Bedienfelder zum Layout hinzufügen
 
 Hinzufügen eines neuen Bedienfelds zur horizontalen Registerkarten-Komponente:
 
@@ -216,7 +216,7 @@ Hinzufügen eines neuen Bedienfelds zur horizontalen Registerkarten-Komponente:
 
 Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Anschließend können Sie jedem Bedienfeld Formularkomponenten hinzufügen.
 
-### 3. Hinzufügen von Formularkomponenten zum Bedienfeld
+### &#x200B;3. Hinzufügen von Formularkomponenten zum Bedienfeld
 
 <!-- You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)

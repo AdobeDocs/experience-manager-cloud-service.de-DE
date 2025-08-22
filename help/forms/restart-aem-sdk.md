@@ -4,9 +4,9 @@ description: Best Practices für den Neustart des AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
-source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '102'
 ht-degree: 100%
 
 ---
@@ -28,4 +28,4 @@ Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu start
 ## Siehe auch
 
 * [Einrichten einer lokalen Entwicklungsumgebung für AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Aktivieren der Kernkomponenten für adaptive Formulare](/help/forms/enable-adaptive-forms-core-components.md)
+

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '3162'
-ht-degree: 100%
+source-wordcount: '3160'
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ Bevor Sie mit der Erstellung eines adaptiven Formulars beginnen, aktivieren Sie 
 
 ### Aktivieren der Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung
 
-Stellen Sie sicher, dass die [Kernkomponenten für adaptive Formulare für Ihre AEM Forms as a Cloud Service-Umgebung aktiviert sind](enable-adaptive-forms-core-components.md).
+Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
 ### Hinzufügen von Client-Bibliotheken für adaptive Formulare zu einer AEM Sites-Seite oder einem Experience Fragment
 

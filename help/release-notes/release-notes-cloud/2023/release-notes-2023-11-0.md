@@ -4,9 +4,9 @@ description: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1282'
 ht-degree: 57%
 
 ---
@@ -149,4 +149,4 @@ Eine vollständige Liste der Versionen von Migrations-Tools finden Sie [hier](/h
 
 * Adaptive Forms kann nicht basierend auf Kernkomponenten gesendet werden. Das Problem tritt bei adaptiven Forms auf, die mit den Kernkomponenten der Versionen 2.0.38 bis 2.0.60 erstellt wurden.
 
-  Um das Problem zu beheben. Sie können zu Kernkomponenten für adaptive Formulare Version 2.0.62 oder höher wechseln. Um eine Version der Kernkomponenten von Adaptive Forms für Ihre Umgebung festzulegen, [legen Sie Versionen der Kernkomponenten „core.forms.components.version“, &quot;core.forms.components.af.version“ und „core.wcm.components.version“ ](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) Abhängigkeiten in Ihrem auf dem Forms as a Cloud Service-Repository oder AEM-Archetyp basierenden Projekt fest und [stellen Sie die Änderungen in Ihrer Forms as a Cloud Service-Umgebung bereit](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Die neueste Version der Abhängigkeiten von adaptiven Forms-Kernkomponenten finden Sie im [Git-Repository für adaptive Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Um das Problem zu beheben. Sie können zu Kernkomponenten für adaptive Formulare Version 2.0.62 oder höher wechseln. Um eine Version der Kernkomponenten von Adaptive Forms für Ihre Umgebung festzulegen, legen Sie Versionen der `core.forms.components.version`-, `core.forms.components.af.version`- und `core.wcm.components.version component`Abhängigkeiten in Ihrem Forms as a Cloud Service-Repository oder Ihrem auf dem AEM-Archetyp basierenden Projekt fest und stellen Sie die Änderungen in Ihrer Forms as a Cloud Service-Umgebung bereit. Die neueste Version der Abhängigkeiten von adaptiven Forms-Kernkomponenten finden Sie im [Git-Repository für adaptive Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components#system-requirements).

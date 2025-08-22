@@ -6,8 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
-workflow-type: ht
+hide: true
+hidefromtoc: true
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
 
@@ -324,7 +326,7 @@ Stellen Sie den aktualisierten Code in Ihren lokalen Entwicklungs- und Cloud Ser
 
 ### Was sind Kernkomponenten? {#core-components}
 
-Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe von standardisierten Web Content Management(WCM)-Komponenten für AEM, die die Entwicklungszeit beschleunigen und die Wartungskosten Ihrer Websites reduzieren.
+Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe standardisierter WCM-Komponenten (Web Content Management) für AEM, mit denen Sie die Entwicklungszeiten verkürzen und die Wartungskosten für Ihre Web-Seiten senken können.
 
 ### Welche Funktionen werden hinzugefügt, wenn Kernkomponenten aktiviert sind? {#core-components-capabilities}
 
