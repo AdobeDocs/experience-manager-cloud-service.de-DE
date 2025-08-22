@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1113'
 ht-degree: 3%
 
 ---
@@ -175,11 +175,9 @@ Forms Experience Builder folgt einem einfachen, dialogorientierten Ansatz:
 Wandeln Sie Ihre vorhandenen Formulare mit KI-gestützter Konvertierung in leistungsstarke digitale Erlebnisse um.
 
 
-### 📄 von PDF auf Digital
+#### PDF forms in Digital Forms umwandeln
 
-**Von statischen Dokumenten zu interaktiven Formularen**
-
-Transformieren Sie PDF forms mit über 50 Feldern in dynamische digitale Erlebnisse mit automatisierten Berechnungen und einem auf Mobilgeräte reagierenden Design.
+Transformieren Sie PDF forms mit mehreren Feldern in dynamische digitale Erlebnisse mit automatisierten Berechnungen und einem auf Mobilgeräte reagierenden Design.
 
 **Wichtigste Vorteile:**
 
@@ -188,17 +186,10 @@ Transformieren Sie PDF forms mit über 50 Feldern in dynamische digitale Erlebni
 - Optimierung des responsiven Layouts für Mobilgeräte
 - 95 % weniger Verarbeitungsfehler
 
-**Am besten geeignet für** Steuerformulare, Behördenanträge, komplexe Geschäftsdokumente
 
-**Zeitersparnis:** 2-3 Stunden → 15 Minuten pro Formular
+#### Modernisierung älterer XFA-basierter Formulare
 
-
-
-### 🏛️ der alten XFA-Modernisierung
-
-**Veraltete Formen mit neuem Leben erfüllen**
-
-Konvertieren Sie komplexe XFA-Anwendungen in moderne mehrstufige Assistenten mit Echtzeit-Validierung und Barrierefreiheit.
+Sie können komplexe XFA-Anwendungen in moderne mehrstufige Assistenten mit Echtzeit-Validierung und Barrierefreiheit konvertieren.
 
 **Wichtigste Vorteile:**
 
@@ -207,37 +198,21 @@ Konvertieren Sie komplexe XFA-Anwendungen in moderne mehrstufige Assistenten mit
 - Integration der staatlichen Datenbank
 - Vollständige Einhaltung der WCAG 2.1-Barrierefreiheit
 
-**Am besten geeignet für:** behördliche Genehmigungen, Unternehmensanwendungen, Compliance-Formulare
 
-**Auswirkung:** 70 % schnellere Fertigstellung, 90 % weniger Fehler
+#### Konvertieren eines Screenshots eines Formulars in ein digitales Formular
 
-
-
-
-### 📱 Screenshot zu Digital
-
-**Wandeln Sie jedes Papierformular in ein digitales Erlebnis um**
-
-Laden Sie ein Bild eines beliebigen Papierformulars hoch und sehen Sie sich an, wie KI Felder extrahiert, das Layout optimiert und integrationsbereite digitale Formulare erstellt.
+Sie können jedes Papierformular in ein digitales Erlebnis verwandeln. AEM Forms optimiert automatisch das Layout und erstellt aus einem Screenshot integrationsbereite digitale Formulare.
 
 **Wichtigste Vorteile:**
 
-- Intelligente Erkennung von Feldtypen (Genauigkeit von 99 % und mehr)
+- Intelligente Erkennung von Feldtypen
 - Optimierte Erzeugung responsiver Layouts
 - Verbesserte Validierung über das Originalpapier hinaus
 - Integrationsfähige Architektur
 
-**Am besten geeignet für:** Papieranwendungen, handschriftliche Formulare, ältere Dokumente
+#### Importieren und Erweitern vorhandener Web-Formulare
 
-**Verarbeitungszeit:** 2 Stunden → 5 Minuten pro Formular
-
-
-
-### 🌐 HTML-Verbesserung
-
-**Aufladen vorhandener Web-Formulare**
-
-Hinzufügen erweiterter Validierung, bedingter Logik und Multi-Channel-Übermittlung zu einfachen HTML-Formularen, ohne die vorhandene Funktionalität zu beeinträchtigen.
+Sie können Ihr vorhandenes Web-Formular importieren und Ihren Formularen erweiterte Validierung, bedingte Logik und Multi-Channel-Übermittlung hinzufügen, ohne die vorhandene Funktionalität zu beeinträchtigen.
 
 **Wichtigste Vorteile:**
 
@@ -245,11 +220,6 @@ Hinzufügen erweiterter Validierung, bedingter Logik und Multi-Channel-Übermitt
 - Verhalten und Workflows von bedingten Feldern
 - Optionen für die Multi-Channel-Übermittlung
 - Integrierte Analyse und Leistungsüberwachung
-
-**Am besten geeignet für:** Kontaktformulare, Registrierungsformulare, einfache Web-Anwendungen
-
-**Konversionsverbesserung:** +40 % mit verbessertem Anwendererlebnis
-
 
 ## Forms Experience Builder im Vergleich zur herkömmlichen Entwicklung
 

@@ -6,13 +6,14 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
+
 
 # Forms Experience Builder - Bibliothek mit Eingabeaufforderung
 
@@ -28,7 +29,7 @@ Sammlung wiederverwendbarer Eingabeaufforderungsmuster und Beispiele, die für F
 
 ## Verwenden dieser Eingabeaufforderungsbibliothek
 
-Diese Bibliothek bietet wiederverwendbare Eingabeaufforderungsmuster für gängige Szenarien zur Formularerstellung. Umfassende Best Practices finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
+Diese Bibliothek bietet wiederverwendbare Eingabeaufforderungsmuster für gängige Szenarien zur Formularerstellung. Umfassende Best Practices finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [](forms-ai-assistant-getting-started.md#best-practices).
 
 ### Schnelltipps für diese Bibliothek
 
@@ -140,7 +141,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **Verwendung:** Wenn Sie neue Formulare erstellen oder vorhandene ändern müssen.
 
-**Verwendung:** Wählen Sie einen von zwei Ansätzen: von Grund auf neu erstellen oder Importieren und Konvertieren (siehe [Erste Schritte](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Verwendung:** Wählen Sie einen von zwei Ansätzen: von Grund auf neu erstellen oder Importieren und Konvertieren (siehe [Erste Schritte](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
 **Beispielaufforderung - Einfache Formularerstellung:**
 
@@ -517,7 +518,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **Verwendung:** Wenn Sie über vorhandene Formulare, Dokumente oder Designs verfügen, die in moderne AEM-Formulare umgewandelt werden sollen.
 
-**Verwendung:** Laden Sie Ihre Quelldatei hoch und beschreiben Sie die Konvertierungsanforderungen (siehe [Importleitfaden](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Verwendung:** Laden Sie Ihre Quelldatei hoch und beschreiben Sie die Konvertierungsanforderungen (siehe [Importleitfaden](forms-ai-assistant-getting-started.md#2-import-and-convert)).
 
 **Beispiel-Prompt – PDF-Formularkonvertierung:**
 
@@ -1056,6 +1057,6 @@ Verwenden Sie `@fieldName` Syntax, um in Ihren Eingabeaufforderungen auf vorhand
 
 ### Validierungs-Checkliste
 
-Umfassende Best Practices und Validierungsrichtlinien finden Sie im Abschnitt Erste Schritte mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
+Umfassende Best Practices und Validierungsrichtlinien finden Sie im Abschnitt Erste Schritte mit Forms Experience Builder [](forms-ai-assistant-getting-started.md#best-practices).
 
 *Diese Eingabeaufforderungsbibliothek wird laufend auf der Grundlage von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de).*
