@@ -444,4 +444,4 @@ Wählen Sie die für Ihre Anforderungen am besten geeignete Erstellungsmethode a
 - Trendanalyse zur Nutzung und Effektivität von Formularen
 - Benchmarking anhand von Branchenstandards und Best Practices
 
-Weitere Anleitungen und ausführliche Beispiele finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [](forms-ai-assistant-getting-started.md) und in der Eingabeaufforderungsbibliothek zu Forms Experience Builder[.](ai-assistant-prompt-library.md)
+Weitere Anleitungen und ausführliche Beispiele finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md) und in der Eingabeaufforderungsbibliothek zu Forms Experience Builder[.](ai-assistant-prompt-library.md)
