@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '6560'
+source-wordcount: '6549'
 ht-degree: 96%
 
 ---
@@ -1206,8 +1206,6 @@ ht-degree: 96%
    + [Generative KI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Varianten generieren](/help/generative-ai/generate-variations.md)
-   + [Assistent (eingeschränkte Beta-Version)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
    + [KI-Assistent für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
    + [Erste Schritte mit dem KI-Assistenten für AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
    + [Erste Schritte mit dem KI-Assistenten für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
@@ -1218,7 +1216,6 @@ ht-degree: 96%
    + [Implementieren von Programmen für AEM as a Cloud Service](/help/implementing/home.md)
    + Verwenden von Cloud Manager {#using-cloud-manager}
       + [Navigation](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
       + Programme {#programs}
          + [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)

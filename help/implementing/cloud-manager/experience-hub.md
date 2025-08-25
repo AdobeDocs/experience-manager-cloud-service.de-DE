@@ -8,9 +8,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 7835fba8383893a961226a8cc77cc9c38d4f2959
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -84,4 +84,4 @@ Wenn keine AEM Cloud Service- oder Managed Services-Produktionsumgebungen vorhan
 
 ## KI-Assistent in AEM
 
-Für Kunden, [ die erforderlichen Kriterien erfüllt haben](/help/implementing/cloud-manager/aem-ai-assistant.md#get-access) steht der AEM AI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/aem-ai-assistant.md).
+Für Kunden, [ die erforderlichen Kriterien erfüllt haben](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).

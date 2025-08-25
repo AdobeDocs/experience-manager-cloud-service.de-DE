@@ -7,9 +7,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d36eb5807718f3d20ea0c3de4491981cb7942b44
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ Es ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende 3-minütige 39-Sekunden-Video bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470364?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Zugriff auf den KI-Assistenten in AEM{#get-access}
 
@@ -44,17 +45,15 @@ Um Benutzenden Zugriff auf den KI-Assistenten in AEM zu gewähren, muss Ihr Adob
 
 KI-Assistentenanfragen in AEM werden über Adobe Identity Management Services (IMS) authentifiziert. Weitere Informationen finden Sie in der [Übersicht über Adobe Identity Management Services](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
->[!NOTE]
-> 
->Kundenorganisationen müssen zusätzliche rechtliche Bedingungen akzeptieren, um den KI-Assistenten zu aktivieren. Weitere Informationen erhalten Sie von Ihrem Adobe-Kundenbetreuer.
-
 **So erhalten Sie Zugriff auf den KI-Assistenten in AEM:**
 
-1. [Kunden müssen den Gen AI-Treiber bei Adobe ](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1).
+1. Kunden müssen über eine zusätzliche Vereinbarung verfügen, um auf die meisten KI-gestützten und agenten Funktionen in Adobe Experience Manager zugreifen zu können. Weitere Informationen erhalten Sie vom Adobe-Support.
 
-   Der GenAI Rider ist eine rechtliche Vereinbarung zwischen einem Kunden und Adobe, die erforderlich ist, um die meisten KI- und Agentenfunktionen zu verwenden. Wenden Sie sich an die Adobe-Kundenunterstützung, um mehr zu erfahren.
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
 
-1. Der AEM-Administrator konfiguriert den KI-Assistenten für die Verwendung in der Organisation. Siehe [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+
+1. Der AEM-Administrator konfiguriert den KI-Assistenten für die Verwendung in der Organisation. Siehe [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
 
 <!--
 >[!IMPORTANT]
@@ -93,7 +92,7 @@ Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adob
 | Punktuelles Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar &#x200B;**<br>**Beispiele** |
+| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstellen Sie ein Support-Ticket für mich.</li></ul> |
 | Abrufen des Status des Support-Tickets | <ul><li>Zeigen Sie mir alle Support-Tickets, die ich geöffnet habe.</li><li>Status des Tickets „E“ -----------</li></ul> |
 
@@ -133,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -148,7 +147,11 @@ Sie können den KI-Assistenten in AEM zurücksetzen und eine neue Unterhaltung b
 
    ![Symbol „KI-Assistent“ in der Symbolleiste](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. Geben Sie im Textfeld **KI** Assistent“ unten Ihre Frage ein und drücken Sie dann die `Enter` oder klicken Sie auf ![Senden-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. Geben Sie im Textfeld **KI** Assistent“ unten Ihre Frage oder Eingabeaufforderung ein und drücken Sie dann die `Enter` oder klicken Sie auf ![Senden-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+
+   >[!NOTE]
+   >
+   >Personenbezogene Daten sollten nicht in Ihre Eingaben aufgenommen werden, da sie für die Verwendung dieses Tools nicht erforderlich sind.
 
    ![Textfeld am unteren Rand des Bedienfelds „KI-Assistent“](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -168,7 +171,7 @@ Der KI-Assistent in AEM enthält eine Entdeckungsfunktion, mit der Sie unterstü
    *Bedienfeld, das die Aufforderungskategorien im KI-Assistenten anzeigt.*
 
 1. Wählen Sie eine Kategorie aus, um eine Liste der zugehörigen Eingabeaufforderungen anzuzeigen.
-1. Wählen Sie eine Eingabeaufforderung aus, um Beispiele für die Fragetypen anzuzeigen, die der AEM-KI-Assistent beantworten kann.
+1. Wählen Sie eine Eingabeaufforderung aus, um Beispiele für die Arten von Fragen anzuzeigen, die der KI-Assistent beantworten kann.
 
 1. Um das Bedienfeld für die Eingabeaufforderungserkennung auszublenden, klicken Sie erneut ![Symbol „Lernen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 

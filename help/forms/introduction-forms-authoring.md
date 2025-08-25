@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 100%
+source-wordcount: '2496'
+ht-degree: 98%
 
 ---
 
@@ -360,6 +360,10 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 * **Symbolleiste**: Ein Container für ein adaptives Formular verfügt über eine zugehörige Symbolleiste, die global für das Formular verfügbar ist. Diese Symbolleiste kann mit der Aktion **[!UICONTROL Symbolleiste hinzufügen]** in der Bearbeitungsleiste hinzugefügt werden. Damit können Autoren Aktionen wie Übermitteln, Speichern, Zurücksetzen usw. hinzufügen.
 
 * **assets**: Dieser Knoten enthält zusätzliche Informationen für das Formular-Authoring. Beispiele: Formularmodelldetails, Lokalisierungsdetails usw.
+
+## KI-Assistent in AEM
+
+Für Kunden, [ die erforderlichen Kriterien erfüllt haben](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## Siehe auch {#see-also}
 

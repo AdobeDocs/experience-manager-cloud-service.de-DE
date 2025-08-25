@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 100%
+source-wordcount: '1693'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 # Navigieren in der Benutzeroberfläche von Cloud Manager {#navigation}
 
 Erfahren Sie, wie die Benutzeroberfläche von Cloud Manager aufgebaut ist und wie Sie Ihre Programme und Umgebungen verwalten.
+
 
 Die Benutzeroberfläche für die Cloud-Verwaltung besteht in erster Linie aus zwei grafischen Schnittstellen:
 
@@ -25,6 +26,12 @@ Die Benutzeroberfläche für die Cloud-Verwaltung besteht in erster Linie aus zw
 >[!TIP]
 >
 >Sehen Sie sich auch die [Tour zur Onboarding-Dokumentation](/help/journey-onboarding/overview.md) an, um einen vollständigen Überblick über den Einstieg in AEM as a Cloud Service mit Cloud Manager zu erhalten.
+
+
+## KI-Assistent in AEM
+
+Für Kunden, [ die erforderlichen Kriterien erfüllt haben](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
 
 ## Konsole „Meine Programme“ {#my-programs-console}
 

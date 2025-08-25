@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie den KI-Assistenten mithilfe der Admin Console
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive"
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: aafd21c894cb909635af285bb833baa9223ae630
+exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1096'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 3%
 # Konfigurieren des KI-Assistenten in AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
+
+<!-- badge: label="Beta" type="Positive" -->
 
 Um den KI-Assistenten in AEM (Adobe Experience Manager) verwenden zu können, muss sich Ihr Unternehmen auf Admin Console-Ebene anmelden. Ein Produktadministrator erstellt (oder wählt) eine Benutzergruppe und gewährt ihr die neue Berechtigung „KI-Assistent“. Jeder, der dieser Gruppe hinzugefügt wird, erhält sofort Zugriff auf den KI-Assistenten in AEM. Wenn das Ziel die unternehmensweite Verfügbarkeit ist, weist der Administrator einfach alle Benutzer dieser Gruppe zu.
 
@@ -50,7 +52,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 
 ## &#x200B;1. Erstellen eines neuen Produktprofils in der Adobe Admin Console{#create-profile}
 
-1. Befolgen Sie die detaillierten Anweisungen unter [Erstellen eines neuen Produktprofils in der Adobe Admin Console](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/create-profile) in der Dokumentation zu Experience Platform.
+1. Befolgen Sie die detaillierten Anweisungen unter [Erstellen eines neuen Produktprofils in der Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) in der Dokumentation zu Experience Platform.
 
 1. Beim Erstellen des neuen Produktprofils können Sie die folgenden vorgeschlagenen Werte für den KI-Assistenten verwenden.
 
@@ -66,7 +68,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 
 Der Prozess zum Zuweisen benutzerdefinierter Berechtigungen zu Produktprofilen folgt dem standardmäßigen Workflow für benutzerdefinierte Berechtigungen in Adobe Cloud Manager.
 
-Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktprofil](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zum neuen Produktprofil](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Klicken Sie in der Admin Console auf den Namen Ihres neu erstellten Produktprofils (`AI Assistant in AEM`)
 
@@ -194,6 +196,6 @@ Bitten Sie einen Benutzer aus der zugewiesenen Gruppe, Folgendes zu tun:
 
 ## Siehe auch
 
-* [KI-Assistent in AEM](/help/implementing/cloud-manager/aem-ai-assistant.md)
-* [Adobe Experience Platform-Zugriffskontrolle](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/overview)
+* [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+* [Adobe Experience Platform-Zugriffskontrolle](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Benutzerdefinierte Cloud Manager-Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
