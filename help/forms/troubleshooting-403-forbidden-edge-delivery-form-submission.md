@@ -3,13 +3,13 @@ title: Fehlerbehebung für 403 Forbidden Errors in Edge Delivery Services Form S
 description: Erfahren Sie, wie Sie 403-Fehler (Forbidden) beim Senden von Formularen von Edge Delivery Services an die AEM-Veröffentlichungsinstanz diagnostizieren und beheben können. In diesem Handbuch werden gängige Ursachen wie CORS, Dispatcher-Regeln und Probleme mit Referrer-Filtern behandelt.
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 3%
 
 ---
-
 
 # Fehlerbehebung für 403 Forbidden Errors in Edge Delivery Services Form Submission {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -169,7 +169,7 @@ Konfigurieren Sie den Referrer-Filter, um Ihre spezifischen Edge Delivery-Site-D
 
 >[!IMPORTANT]
 >
->**Forrepoless-Setups** Sie müssen jede Website-Domain einzeln zum `allow.hosts`-Array hinzufügen. Die Verwendung von nur Regex-Mustern ist möglicherweise nicht für alle Szenarien ausreichend. Schließen Sie sowohl spezifische Domains als auch Regex-Muster für eine umfassende Abdeckung ein.
+>**Bei Repoless-Setups** muss jede Site-Domain einzeln zum `allow.hosts`-Array hinzugefügt werden. Die Verwendung von nur Regex-Mustern ist möglicherweise nicht für alle Szenarien ausreichend. Schließen Sie sowohl spezifische Domains als auch Regex-Muster für eine umfassende Abdeckung ein.
 
 >[!WARNING]
 >
@@ -269,7 +269,7 @@ Befolgen Sie bei Helix-5- und Repoless-Architekturen die folgenden Richtlinien:
 ## Verwandte Themen
 
 - [Konfigurieren von Übermittlungsaktionen](/help/forms/configuring-submit-actions.md)
-- [Forms Submission Service](/help/forms/forms-submission-service.md)
+- [Formularübermittlungsdienst](/help/forms/forms-submission-service.md)
 - [Überblick über Edge Delivery Services](/help/edge/overview.md)
 
 
