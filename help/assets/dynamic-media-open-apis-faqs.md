@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 description: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
+source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 87%
+source-wordcount: '1609'
+ht-degree: 83%
 
 ---
 
@@ -74,7 +74,7 @@ So genehmigen Sie gleichzeitig mehrere Assets in einem Ordner in der Assets-Ansi
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 
-## Wie kann ich die Asset-Bereitstellung sichern und nach den Dynamic Media OpenAPIs suchen? {#secure-asset-delivery}
+## Wie kann ich die Asset-Bereitstellung sichern und mit OpenAPIs nach Dynamic Media suchen? {#secure-asset-delivery}
 
 Die zentrale Asset-Governance in Experience Manager ermöglicht es DAM-Admins oder Markenverantwortlichen, den Zugriff auf Assets zu verwalten. Sie können den Zugriff einschränken, indem sie Rollen konfigurieren oder Aktivierungs- und Deaktivierungszeiten für genehmigte Assets auf der Autorenseite festlegen, insbesondere auf der AEM as a Cloud Service-Autoreninstanz.
 
@@ -104,16 +104,16 @@ Im Folgenden finden Sie einige der wichtigsten Unterschiede zwischen Dynamic Med
 | Dynamic Media mit OpenAPI-Funktionen | Dynamic Media |
 |---|---|
 | [Nur mit Assets as a Cloud Service verfügbar](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Auch mit On-Premise oder Adobe Managed Services mit zusätzlichen Konfigurations- und Bereitstellungsschritten verfügbar. |
-| [Eingeschränkter Satz unterstützter Bildmodifikatoren wie Breite, Höhe, Drehung, Spiegelung, Qualität und Format](/help/assets/deliver-assets-apis.md) | Umfassender Satz verfügbarer Bildmodifikatoren |
+| [Eine Vielzahl unterstützter Bildmodifikatoren wie Breite, Höhe, Drehen, Spiegeln, Qualität und Format](/help/assets/deliver-assets-apis.md) | Umfassender Satz verfügbarer Bildmodifikatoren |
 | [Eingeschränkte Asset-Bereitstellung basierend auf Benutzenden, Rollen, Datum und Uhrzeit](/help/assets/restrict-assets-delivery.md) | In Dynamic Media veröffentlichte Assets stehen allen Benutzenden zur Verfügung |
 | Die meisten Entwickelnden sind mit OpenAPI-Spezifikationen vertraut. Durch Verwendung des [Micro-Frontend-Asset-Wählers](/help/assets/overview-asset-selector.md) lassen sich AEM Assets ganz einfach erweitern. | SOAP-basierte APIs, die bei der Entwicklung von Integrationsanpassungen zu einer Barriere werden. |
 | Alle Änderungen an genehmigten Assets in DAM, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden automatisch in die Bereitstellungs-URLs übernommen. Mit einem niedrigen Time-to-Live(TTL)-Wert von 10 Minuten für die Dynamic Media mit OpenAPI-Funktion per CDN werden Aktualisierungen in weniger als 10 Minuten in allen Authoring- und Publishing-Oberflächen sichtbar. | Empfohlene CDN-TTL von 10 Stunden. Sie können den TTL-Wert mithilfe der Aktion zur Cache-Invalidierung überschreiben. |
 | Für die Asset-Bereitstellung an nachgelagerte Anwendungen sind nur genehmigte Assets verfügbar, sodass in digitalen Erlebnissen nur markenkonforme Assets verwendet werden können. | Alle Aktualisierungen eines von Dynamic Media veröffentlichten Assets werden ohne Genehmigungs-Workflow automatisch veröffentlicht. Hierdurch ist nicht gewährleistet, dass die Assets in digitalen Erlebnissen markenkonform sind. |
 | Auf der Anzahl der bereitgestellten Assets basierende Nutzungsberichte. Diese Funktion ist in Kürze verfügbar. | Nutzungsberichte sind nicht verfügbar. Diese Funktion ist in Kürze verfügbar. |
 | Assets, die im Assets as a Cloud Service-Repository als abgelaufen markiert sind, stehen nachgelagerten Anwendungen nicht mehr zur Verfügung. | Kein inhärenter Asset-Ablauf. Ein Asset bleibt öffentlich, bis es aus dem AEM as a Cloud Service-Repository gelöscht wird. |
-| Bildvorgaben und Funktionen für den intelligenten Zuschnitt von Videos werden nicht unterstützt. | Bildvorgaben und Funktionen für den intelligenten Zuschnitt von Videos werden unterstützt. |
+| Unterstützt keine Funktionen für smartes Zuschneiden von Videos. | Unterstützt intelligente Videozuschnittfunktionen. |
 | Dynamische Videocodierungen, die sicherstellen, dass basierend auf dem Eingabevideo die besten Codierungen bereitgestellt werden. Für die native Videobereitstellung ist keine Einrichtung erforderlich. | Standard-3-Codierungen unabhängig vom Eingabevideo (können sich auf die Leistung der Videobereitstellung auswirken). Sie müssen verschiedene Codierungen für unterschiedliche Video-Bitraten manuell einrichten. |
-| Das Erraten einer auf der Asset-UID basierenden URL ist schwierig (ermöglicht die URL-Verschleierung), dafür bietet sie eine SEO-Optimierung. | Die URL-Verschleierung ist nur für URL-Abfrageparameter verfügbar. Asset-IDs (Asset-Namen) in URLs können erkannt werden. |
+| Ermöglicht sichere, verschleierte URLs unter Verwendung von Asset-UIDs ohne Beeinträchtigung der SEO. | Die URL-Verschleierung ist nur für URL-Abfrageparameter verfügbar. Asset-IDs (Asset-Namen) in URLs können erkannt werden. |
 
 
 ## Wie werden in Dynamic Media mit OpenAPI-Funktionen die Einschränkungen der Funktion „Connected Assets&quot; behoben? {#dynamic-media-openapi-addresses-connected-assets-limitations}
@@ -142,3 +142,9 @@ So aktivieren Sie die Produktionsverwendung von [Modifikatoren in begrenzter Ver
    * IMS-Org
 
    * Liste der zu aktivierenden Modifikatoren
+
+
+## Wie testen Sie experimentelle Modifikatoren? {#modifiers-not-generally-available}
+
+Sie können jeden Modifikator testen, der nicht allgemein über experimentelle APIs verfügbar ist. Beispiel: &lt;/adobe/experimental/advancemodifiers-expires-YYYMMDD/assets>
+Klicken Sie hier, um mehr über die Verwendung der [experimentellen APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) und die [vollständige Liste der Modifikatoren](https://developer.adobe.com/experience-cloud/experience-manager-apis/) zu erfahren.
