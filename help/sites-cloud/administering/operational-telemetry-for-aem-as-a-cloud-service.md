@@ -1,13 +1,13 @@
 ---
-title: Operative Telemetrie für AEM as a Cloud Service
+title: Betriebliche Telemetrie für AEM as a Cloud Service
 description: Erfahren Sie mehr über Operational Telemetry , einen automatisierten Service, mit dem die Client-seitige Datenerfassung überwacht wird.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 63%
+source-wordcount: '974'
+ht-degree: 56%
 
 ---
 
@@ -31,7 +31,7 @@ Die operative Telemetrie hilft Kunden und Adobe zu verstehen, wie Endbenutzer mi
 
 ## Datenabtastung des operativen Telemetrieservice {#operational-telemetry-service-data-sampling}
 
-Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. Der operative Telemetrieservice von AEM erfasst nur Informationen aus einem kleinen Bruchteil der Seitenansichten. Der Dienst ist für Stichproben und zur Anonymisierung gedacht und soll die Analyse nicht ersetzen. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können die Stichprobenrate derzeit nicht erhöhen oder verringern. Um den gesamten Traffic genau zu schätzen, werden für jeweils 100 Seitenansichten Daten von einer Ansicht erfasst, um Ihnen einen zuverlässigen Näherungswert des gesamten Traffics zu liefern.
+Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. Der operative Telemetrieservice von AEM erfasst nur Informationen aus einem kleinen Bruchteil der Seitenansichten. Der Dienst ist für Stichproben und zur Anonymisierung gedacht und soll die Analyse nicht ersetzen. Standardmäßig weisen Seiten ein Stichprobenverhältnis von 1:100 auf. Site-Operatoren können die Stichprobenrate derzeit nicht erhöhen oder verringern. Um den gesamten Traffic genau zu schätzen, werden für jeweils 100 Seitenansichten Daten von einer Ansicht erfasst, um Ihnen einen zuverlässigen Näherungswert des gesamten Traffics zu liefern.
 
 Da die Entscheidung darüber, ob die Daten erfasst werden, jeweils für jede einzelne Seitenansicht erfolgt, ist es praktisch unmöglich, Interaktionen über mehrere Seiten hinweg zu verfolgen. Operative Telemetrie hat standardmäßig kein Konzept von Besuchern oder Sitzungen, sondern nur von Seitenansichten.
 
@@ -42,7 +42,7 @@ Der operative Telemetrieservice wurde entwickelt, um die Datenerfassung zu minim
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`
 * Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs?lang=de`
+* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
 * Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn die Person einem Link gefolgt ist)
 * Eine zufällig generierte ID der Seitenansicht in einem Format, das dem folgenden ähnelt: `2Ac6`
 * Die Gewichtung oder der Kehrwert der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur eine von hundert Seitenansichten aufgezeichnet wird.
@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **Der Pfad `/.rum` ist auf meiner Website blockiert. Wie gehe ich zur Fehlerbehebung vor?**
 
-   Der `/.rum` ist erforderlich, damit die operative Telemetriesammlung funktioniert. Wenn Sie vor AEM as a Cloud Service von Adobe ein CDN verwenden, stellen Sie sicher, dass der Pfad `/.rum` Weiterleitungen zum selben AEM-Ursprung wie Ihre übrigen AEM-Inhalte vornimmt. Stellen Sie außerdem sicher, dass er in keiner Weise angepasst wird.
+   Der `/.rum` ist erforderlich, damit die operative Telemetriesammlung funktioniert. Wenn Sie vor AEM as a Cloud Service von Adobe ein CDN verwenden, stellen Sie sicher, dass der Pfad `/.rum` Weiterleitungen zum selben AEM-Ursprung wie Ihre übrigen AEM-Inhalte vornimmt. Und stellen Sie sicher, dass sie in keiner Weise angepasst wird. Alternativ können Sie den Host, der für die operative Telemetrie verwendet werden soll, in `rum.hlx.page` ändern, indem Sie [in Cloud Manager eine Umgebungsvariable mit ](/help/implementing/cloud-manager/environment-variables.md#add-variables) Namen `AEM_OPTEL_EXTERNAL` auf den Wert `true` festlegen. Wenn Sie zu einem späteren Zeitpunkt wieder zu denselben Domain-Anforderungen wechseln möchten, entfernen Sie einfach diese Umgebungsvariable erneut.
 
 1. **Zählt die Erfassung der betrieblichen Telemetrie für Inhaltsanfragen für vertragliche Zwecke?**
 
@@ -103,4 +103,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe empfiehlt die Verwendung der Betriebstelemetrie aufgrund ihrer erheblichen Vorteile und dass sie es Adobe ermöglicht, Ihnen bei der Optimierung Ihrer digitalen Erlebnisse durch die Verbesserung der Website-Leistung zu helfen. Der Dienst ist nahtlos konzipiert und hat keine Auswirkungen auf die Leistung Ihrer Website.
 
-   Wenn Sie sich davon abmelden, könnten Sie die Chance verpassen, die Traffic-Interaktion auf Ihrer Website zu verbessern. Sollten Sie jedoch auf Probleme stoßen, wenden Sie sich an den Adobe-Support.
+   Wenn Sie sich davon abmelden, könnten Sie die Chance verpassen, die Traffic-Interaktion auf Ihrer Website zu verbessern. Sollten dennoch Probleme auftreten, können Sie die operative Telemetrie deaktivieren, indem Sie [in Cloud Manager eine Umgebungsvariable mit ](/help/implementing/cloud-manager/environment-variables.md#add-variables) Namen `AEM_OPTEL_DISABLED` auf den `true` festlegen. Wenn Sie die operative Telemetrie zu einem späteren Zeitpunkt wieder aktivieren möchten, entfernen Sie einfach diese Umgebungsvariable erneut.

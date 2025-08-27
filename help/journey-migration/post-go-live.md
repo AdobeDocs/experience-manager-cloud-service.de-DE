@@ -4,25 +4,21 @@ description: Erfahren Sie, wie Sie Probleme erkennen und die Leistung verbessern
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 99%
 
 ---
 
 # Nach der Live-Schaltung {#post-go-live}
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Troubleshooting AEM"
->abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
-
--->
+>title="Beheben von Fehlern in AEM"
+>abstract="Lesen Sie die Best Practices für die kontinuierliche Entwicklung und Verwaltung von Protokollen. Erfahren Sie mehr über Tools wie Developer Console und CRXDE Lite, um Probleme mit AEM zu beheben."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Zugreifen auf und Verwalten von Protokollen"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Entwicklungs-Tools für AEM as a Cloud Service"
 
 Diese Tour ist der letzte Teil. Sie lernen, wie Sie Probleme erkennen und die Leistung verbessern, nachdem die Migration abgeschlossen ist. Stellen Sie die Bereinigung temporärer Dateien sicher, lesen Sie die Best Practices für die kontinuierliche Entwicklung und verwalten Sie Protokolle.
 
