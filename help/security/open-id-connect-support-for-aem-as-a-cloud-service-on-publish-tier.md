@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie Open ID Connect (OIDC) für AEM as a Cloud Se
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 4%
 
 ---
 
-# Open ID Connect-Unterstützung für AEM as a Cloud Service auf Veröffentlichungsebene
+# Open ID Connect-Unterstützung für AEM as a Cloud Service auf Veröffentlichungsebene {#open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier}
 
 ## Einführung {#introduction}
 
@@ -157,7 +157,7 @@ Im Folgenden finden Sie einige der relevantesten Attribute, die in DefaultSyncHa
 | `user.enforceDynamicMembership` | Es wird empfohlen, die Durchsetzung der dynamischen Gruppenmitgliedschaft zu aktivieren | Ja |
 | `group.dynamicGroups` | Es wird empfohlen, dynamische Gruppen zu aktivieren | Ja |
 | user.propertyMapping | Die bereitgestellte Implementierung von `UserInfoProcessor` synchronisiert nur wenige Eigenschaften. Sie kann geändert und angepasst werden. | <code>„profile/givenName=profile/given_name“,</code><br><code>„profile/familyName=profile/family_name“,</code><br><code>„rep:fullname=profile/name“,</code><br><code>„profile/email=profile/email“,</code><br><code>„access_token=access_token“,</code><br><code>„refresh_token=refresh_token“</code> |  |
-| `user.membershipNestingDepth` | Gibt die maximale Tiefe der Gruppenverschachtelung zurück, wenn Mitgliedschaftsbeziehungen synchronisiert werden. Der Wert 0 deaktiviert die Suche nach Gruppenmitgliedschaften. Bei einem Wert von 1 werden nur die direkten Gruppen eines Benutzers hinzugefügt. Dieser Wert hat keinerlei Wirkung, wenn beim Synchronisieren der mitgliedsbezogenen Herkunft eines Benutzers nur einzelne Gruppen synchronisiert werden. | 1 |
+| `user.membershipNestingDepth` | Gibt die maximale Tiefe der Gruppenverschachtelung zurück, wenn Mitgliedschaftsbeziehungen synchronisiert werden. Der Wert 0 deaktiviert die Suche nach Gruppenzugehörigkeiten. Bei einem Wert von 1 werden nur die direkten Gruppen eines Benutzers hinzugefügt. Dieser Wert hat keinerlei Wirkung, wenn beim Synchronisieren der mitgliedsbezogenen Herkunft eines Benutzers nur einzelne Gruppen synchronisiert werden. | 1 |
 
 ### Konfigurieren des externen Anmeldemoduls {#configure-the-external-login-module}
 
