@@ -1,14 +1,14 @@
 ---
 title: Über Experience Hub
 description: Weitere Informationen zur Adobe Experience Hub-Seite.
-landing-page-description: Erfahren Sie mehr über Adobe Experience Hub, einen zentralen Ausgangspunkt für den Zugriff auf alle Funktionen von AEM.
+landing-page-description: Erfahren Sie mehr über Experience Hub, einen zentralen Ausgangspunkt für den Zugriff auf alle Funktionen von AEM.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 8bd6fd4a7abcfbf37ba8aa458a9d2a035cca050e
+source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '588'
 ht-degree: 5%
 
 ---
