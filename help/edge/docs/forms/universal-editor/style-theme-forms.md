@@ -7,25 +7,25 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Anpassen des Erscheinungsbilds Ihrer Formulare
 
-Formularstile in Edge Delivery Services für AEM Forms erfordern ein komplexes Verständnis von benutzerdefinierten CSS-Eigenschaften, blockbasierter Architektur und komponentenspezifischen Zielgruppenbestimmungsstrategien. Im Gegensatz zu herkömmlichen Ansätzen zur Formulargestaltung implementiert der adaptive Forms-Block ein systematisches Design-Token-System, das ein konsistentes Design ermöglicht und gleichzeitig die Leistungs- und Barrierefreiheitsvorteile von Edge Delivery Services beibehält.
+Formularstile in Edge Delivery Services für AEM Forms erfordern ein gründliches Verständnis von benutzerdefinierten CSS-Eigenschaften, blockbasierter Architektur und komponentenspezifischen Targeting-Strategien. Im Gegensatz zu herkömmlichen Ansätzen zur Formulargestaltung implementiert der adaptive Formularblock ein systematisches Design-Token-System, das für ein konsistentes Design sorgt und gleichzeitig die Leistungs- und Zugänglichkeitsvorteile von Edge Delivery Services beibehält.
 
-Die Architektur des adaptiven Forms-Blocks generiert standardisierte HTML-Strukturen für alle Formularkomponenten und erstellt vorhersehbare Muster für CSS-Targeting und -Anpassung. Diese Konsistenz ermöglicht es Entwicklerinnen und Entwicklern, umfassende Stilsysteme zu implementieren, die über komplexe Formularimplementierungen hinweg skalierbar sind, während die blockbasierten Leistungsoptimierungen beibehalten werden, die Edge Delivery Services außergewöhnlich schnell machen.
+Die Architektur des adaptiven Formularblocks generiert standardisierte HTML-Strukturen für alle Formularkomponenten und erstellt vorhersehbare Muster für CSS-Targeting und -Anpassung. Diese Konsistenz ermöglicht es Entwickelnden, umfassende Gestaltungssysteme zu implementieren, die über komplexe Formularimplementierungen hinweg skalierbar sind, während die blockbasierten Leistungsoptimierungen, die Edge Delivery Services außergewöhnlich schnell machen, beibehalten werden.
 
-In diesem umfassenden Handbuch werden die technischen Grundlagen der Formularformatierung im Edge Delivery Services-Ökosystem behandelt, einschließlich benutzerdefinierten CSS-Eigenschaftensystemen, Strukturmustern für Komponenten-HTML und erweiterten Stiltechniken. Die Dokumentation bietet sowohl theoretisches Verständnis als auch praktische Implementierungsleitfäden für die Erstellung komplexer, markenbezogener Formularerlebnisse.
+In diesem umfassenden Handbuch werden die technischen Grundlagen der Formularformatierung im Edge Delivery Services-Ökosystem behandelt, einschließlich benutzerdefinierten CSS-Eigenschaftssystemen, Strukturmustern für Komponenten-HTML und erweiterten Stiltechniken. Die Dokumentation bietet sowohl theoretisches Wissen als auch praktische Implementierungsleitfäden für die Erstellung komplexer, markenbezogener Formularerlebnisse.
 
-## Was ihr beherrschen werdet
+## Was Sie lernen werden:
 
 **Beherrschung benutzerdefinierter CSS-Eigenschaften**: Machen Sie sich mit dem vollständigen Variablensystem vertraut, das das Erscheinungsbild von Formularen steuert, einschließlich Farbschemata, Typografie-Skalierungen, Abstandssystemen und Layout-Parametern. Erfahren Sie, wie Sie diese Eigenschaften überschreiben und erweitern können, um umfassende Markenthemen zu implementieren.
 
-**Verständnis der Komponentenarchitektur**: Vertiefen Sie Ihre Kenntnisse über die HTML-Strukturmuster, die von den einzelnen Formularkomponentententypen verwendet werden, und ermöglichen Sie so präzises CSS-Targeting und -Anpassung, ohne die zugrunde liegenden Funktionen oder Barrierefreiheitsfunktionen zu beeinträchtigen.
+**Verständnis der Komponentenarchitektur**: Vertiefen Sie Ihre Kenntnisse über die HTML-Strukturmuster, die von einzelnen Formularkomponentententypen verwendet werden, und ermöglichen Sie so präzises CSS-Targeting und -Anpassung, ohne die zugrunde liegenden Funktionen bzw. Ein-/Ausgabehilfe-Funktionen zu beeinträchtigen.
 
-**Erweiterte Stiltechniken**: Implementieren Sie anspruchsvolle Stilmuster, einschließlich zustandsbasierter Stile, responsiver Designintegration und leistungsoptimierter Anpassungsstrategien, die die Schnellladeeigenschaften von Edge Delivery Services beibehalten.
+**Erweiterte Stiltechniken**: Implementieren Sie anspruchsvolle Stilmuster, einschließlich zustandsbasierter Stile, responsiver Design-Integration und leistungsoptimierter Anpassungsstrategien, die die Schnellladeeigenschaften von Edge Delivery Services beibehalten.
 
 **Professionelle Implementierungsstrategien**: Lernen Sie branchenübliche Ansätze zur Formularformatierung kennen, einschließlich Design-Systemintegration, verwaltbarer CSS-Architektur und Fehlerbehebungstechniken für komplexe Stilszenarien.
 
@@ -53,21 +53,21 @@ Das Verstehen [grundlegender CSS-Konzepte](https://www.w3schools.com/css/css_int
 
 ## Umfassende Formularformatierung mit benutzerdefinierten CSS-Eigenschaften
 
-Der adaptive Forms-Block verwendet eine ausgefeilte CSS-Architektur, die auf benutzerdefinierten Eigenschaften (CSS-Variablen) basiert und systematisches Design und konsistente Formatierung für alle Formularkomponenten ermöglicht. Das Verständnis dieser Struktur ist für eine effektive Formularanpassung und ein effektives Branding unerlässlich.
+Der adaptive Formularblock nutzt eine ausgefeilte CSS-Architektur, die auf benutzerdefinierten Eigenschaften (CSS-Variablen) basiert sowie systematisches Design und konsistente Formatierung für alle Formularkomponenten ermöglicht. Das Verständnis dieser Struktur ist für eine effektive Formularanpassung und ein effektives Branding unerlässlich.
 
-### Grundlegendes zur „forms.css“-Architektur
+### Grundlegendes zur Architektur von forms.css
 
-Die Standardformularstile befinden sich im Projekt-Repository unter `/blocks/form/form.css` und folgen einem strukturierten Ansatz, bei dem die Wartbarkeit, Konsistenz und Anpassungsflexibilität Vorrang haben. Die Architektur besteht aus mehreren Hauptkomponenten:
+Die Standardformularstile befinden sich im Projekt-Repository unter `/blocks/form/form.css` und folgen einem strukturierten Ansatz, bei dem Wartbarkeit, Konsistenz und Anpassungsflexibilität im Vordergrund stehen. Die Architektur besteht aus mehreren Hauptkomponenten:
 
-**CSS Custom Properties Foundation**: Das Stilsystem basiert auf benutzerdefinierten CSS-Eigenschaften, die auf `:root` Ebene definiert sind, und bietet ein zentralisiertes Design-System, das an alle Formularkomponenten kaskadiert. Diese Variablen legen Design-Token für Farben, Typografie, Abstände und Layout-Eigenschaften fest.
+**Foundation für benutzerdefinierte CSS-Eigenschaften**: Das Stilsystem basiert auf benutzerdefinierten CSS-Eigenschaften, die auf der `:root`-Ebene definiert werden, und bietet ein zentralisiertes Formatierungssystem, das an alle Formularkomponenten kaskadiert. Diese Variablen legen Design-Token für Farben, Typografie, Abstand und Layout-Eigenschaften fest.
 
 **Blockbasierte CSS-Struktur**: Edge Delivery Services verwendet eine blockbasierte Architektur, bei der die `.form`-Klasse als primärer Namespace für alle formularbezogenen Stile dient, um eine ordnungsgemäße Isolierung des Bereichs sicherzustellen und CSS-Konflikte mit anderen Seitenkomponenten zu verhindern.
 
-**Komponentenspezifische Formatierung**: Einzelne Formularkomponenten werden mit konsistenten Wrapper-Mustern (`.{Type}-wrapper`) formatiert, die eine vorhersehbare Zielgruppenbestimmung für verschiedene Feldtypen ermöglichen und gleichzeitig die Integrität des gesamten Designsystems wahren.
+**Komponentenspezifische Formatierung**: Einzelne Formularkomponenten werden mit konsistenten Wrapper-Mustern (`.{Type}-wrapper`) formatiert, die ein vorhersehbares Targeting für verschiedene Feldtypen ermöglichen und gleichzeitig die Integrität des gesamten Design-Systems wahren.
 
 ### Referenz zu benutzerdefinierten CSS-Eigenschaften und Anpassung
 
-Das Formularformatierungssystem enthält über 50 benutzerdefinierte CSS-Eigenschaften, die alle Aspekte des Erscheinungsbilds und Verhaltens eines Formulars steuern. Das Verständnis dieser Eigenschaften ermöglicht eine umfassende Anpassung bei gleichzeitiger Wahrung der Designkonsistenz.
+Das Formularformatierungssystem enthält über 50 benutzerdefinierte CSS-Eigenschaften, die alle Aspekte des Erscheinungsbilds und Verhaltens eines Formulars steuern. Das Verständnis dieser Eigenschaften ermöglicht eine umfassende Anpassung bei gleichzeitiger Wahrung der Design-Konsistenz.
 
 +++ Farb- und Design-Variablen
 
@@ -106,13 +106,13 @@ Das Farbsystem bildet mithilfe sorgfältig organisierter benutzerdefinierter Eig
 }
 ```
 
-Diese einzelne Änderung wird auf alle Formularkomponenten angewendet, da das System Variablenverweise anstelle hartcodierter Werte verwendet.
+Diese Einzeländerung wird auf alle Formularkomponenten angewendet, da das System Variablenverweise anstelle hartcodierter Werte verwendet.
 
 +++
 
 +++ Typografie- und Abstandsvariablen
 
-Typografie- und Abstandsvariablen ermöglichen eine umfassende Steuerung der Textdarstellung und des Layoutabstands:
+Typografie- und Abstandsvariablen ermöglichen eine umfassende Steuerung der Textdarstellung und des Layout-Abstands:
 
 ```css
 :root {
@@ -135,7 +135,7 @@ Typografie- und Abstandsvariablen ermöglichen eine umfassende Steuerung der Tex
 }
 ```
 
-**Praxisbeispiel für die Anpassung**: So erstellen Sie ein kompakteres Formular-Layout mit kleinerer Typografie:
+**Praktisches Anpassungsbeispiel**: So erstellen Sie ein kompakteres Formular-Layout mit kleinerer Typografie:
 
 ```css
 :root {
@@ -174,7 +174,7 @@ Layout-Variablen steuern die Formularabmessungen, das Rasterverhalten und die Ko
 }
 ```
 
-**Beispiel für eine praktische Anpassung**: So erstellen Sie ein kartenförmiges Formular mit verbesserter visueller Tiefe:
+**Praktisches Anpassungsbeispiel**: So erstellen Sie ein kartenförmiges Formular mit verbesserter visueller Tiefe:
 
 ```css
 :root {
@@ -199,11 +199,11 @@ Layout-Variablen steuern die Formularabmessungen, das Rasterverhalten und die Ko
 
 ### CSS-Stilmuster und Best Practices
 
-Der adaptive Forms-Block folgt bestimmten CSS-Mustern, die verwaltbare, leistungsstarke und konsistente Stile für alle Komponenten sicherstellen.
+Der adaptive Formularblock folgt bestimmten CSS-Mustern, die verwaltbare, effektive und konsistente Stile für alle Komponenten sicherstellen.
 
 +++ Primäre Stilmuster
 
-**Formular-Container auf Blockebene**: Targeting des primären Formular-Containers für das gesamte Layout und die Hintergrundformatierung:
+**Formular-Container auf Blockebene**: Wählt den primären Formular-Container für das gesamte Layout und die Hintergrundformatierung als Ziel aus:
 
 ```css
 .form {
@@ -216,7 +216,7 @@ Der adaptive Forms-Block folgt bestimmten CSS-Mustern, die verwaltbare, leistung
 }
 ```
 
-**Komponenten-Wrapper-Muster**: Targeting bestimmter Feldtypen mithilfe konsistenter Wrapper-Klassen:
+**Wrapper-Muster für Komponenten**: Wählt bestimmte Feldtypen mithilfe konsistenter Wrapper-Klassen als Ziel aus:
 
 ```css
 /* Text input fields */
@@ -252,11 +252,11 @@ Der adaptive Forms-Block folgt bestimmten CSS-Mustern, die verwaltbare, leistung
 }
 ```
 
-+++
++++ 
 
 +++ Erweiterte Anpassungsmuster
 
-**Feldspezifisches Targeting**: Targeting einzelner Felder nach Namen für eindeutige Stilanforderungen:
+**Feldspezifisches Targeting**: Wählt einzelne Felder nach Namen für einzigartige Formatierungsanforderungen als Ziel aus:
 
 ```css
 /* Style specific fields */
@@ -274,7 +274,7 @@ Der adaptive Forms-Block folgt bestimmten CSS-Mustern, die verwaltbare, leistung
 }
 ```
 
-**Zustandsbasierte Formatierung**: Implementieren des Validierungs- und Interaktionsstatus:
+**Zustandsbasierte Formatierung**: Implementieren von Validierungs- und Interaktionsstatus:
 
 ```css
 /* Validation states */
@@ -368,10 +368,10 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 }
 ```
 
-- `.form .{Type}-wrapper`: Targeting des Feld-Wrapper-Elements basierend auf dem Feldtyp. Beispielsweise ist `.form .text-wrapper` auf alle Textfeld-Container ausgerichtet.
-- `.form .{Type}-wrapper input`: Targeting der tatsächlichen Eingabeelemente im Wrapper. Dies ist das empfohlene Muster für die Formatierung von Formulareingaben.
-- `.form .field-{Name}`: Targeting von Elementen basierend auf dem spezifischen Feldnamen. Beispielsweise zielt `.form .field-first-name` auf den Feld-Container „Vorname“ ab. Verwenden Sie `.form .field-{Name} input` , um das Eingabeelement gezielt anzusprechen.
-- **Vermeiden**: `main .form form .{Type}-wrapper` - Dies führt zu einer unnötigen CSS-Spezifität und ist schwieriger zu pflegen.
+- `.form .{Type}-wrapper`: Wählt das Feld-Wrapper-Element basierend auf dem Feldtyp als Ziel aus. Zum Beispiel wählt `.form .text-wrapper` alle Textfeld-Container als Ziel aus.
+- `.form .{Type}-wrapper input`: Wählt die tatsächlichen Eingabeelemente im Wrapper als Ziel aus. Dies ist das empfohlene Muster für die Formatierung von Formulareingaben.
+- `.form .field-{Name}`: Wählt Elemente basierend auf dem spezifischen Feldnamen als Ziel aus. Beispielsweise wählt `.form .field-first-name` den Feld-Container „Vorname“ als Ziel aus. Verwenden Sie `.form .field-{Name} input` , um das Eingabeelement als Ziel auszuwählen.
+- **Vermeiden**: `main .form form .{Type}-wrapper` – Diese Option führt zu einer unnötigen CSS-Spezifität und ist schwieriger zu pflegen.
 
 **Beispiel einer CSS-Auswahl für allgemeine Komponenten**
 
@@ -763,7 +763,7 @@ Dieser Selektor wählt alle Feldsätze mit dem Klassen-Optionsfeldgruppen-Wrappe
 ```
 
 - Das fieldset-Element dient als Bedienfeld-Container mit dem Klassen-Bedienfeld-Wrapper und zusätzlichen Klassen zur Gestaltung basierend auf dem Bedienfeldnamen (Feldanmeldung).
-- Das Legendenelement (`<legend>`) dient als Bereichstitel mit dem Text „Login Information“ und der Klassenfeldbeschriftung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
+- Das Legendenelement (`<legend>`) dient als Bedienfeldtitel mit dem Text „Anmeldeinformationen“ und der Klassenfeldbezeichnung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
 - In diesem Feldsatz gibt es mehrere.{Type}-Wrapper-Elemente (in diesem Fall „.text-wrapper“ und „.password-wrapper“) für einzelne Formularfelder im Panel.
 - Jeder Wrapper enthält eine Bezeichnung, ein Eingabefeld und eine Beschreibung, ähnlich wie bei den vorherigen Beispielen.
 
@@ -1158,20 +1158,20 @@ main .form .field-otp input {
 }
 ```
 
-Diese CSS-Datei wählt alle Eingabeelemente als Ziel aus, die sich in einem Element mit der Klasse `field-otp` befinden. Die Formularstruktur von Edge Delivery Services folgt den Konventionen für adaptive Forms-Blöcke, bei denen Container mit feldspezifischen Klassen wie „field-otp“ für Felder mit dem Namen „otp“ markiert sind.
+Diese CSS-Datei wählt alle Eingabeelemente als Ziel aus, die sich in einem Element mit der Klasse `field-otp` befinden. Die Formularstruktur von Edge Delivery Services folgt den Konventionen für adaptive Formularblöcke, bei denen Container mit feldspezifischen Klassen wie „field-otp“ für Felder mit dem Namen „otp“ markiert sind.
 
 
-## CSS-Dateistruktur und -implementierung
+## CSS-Dateistruktur und -Implementierung
 
 ### **Referenzimplementierung**
 
-Die vollständige Formularstil-Referenz ist im AEM Forms Boilerplate-Repository verfügbar:
+Die vollständige Referenz zu Formularstilen ist im AEM Forms Boilerplate-Repository verfügbar:
 
 ```
 https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.css
 ```
 
-Diese Datei dient als kanonische Implementierung des benutzerdefinierten CSS-Eigenschaftensystems und bildet die Grundlage für alle Formularstile. Es enthält umfassende Definitionen für alle CSS-Variablen, Komponentenformatierungsmuster und responsive Design-Implementierungen.
+Diese Datei dient als kanonische Implementierung des benutzerdefinierten CSS-Eigenschaftssystems und bildet die Grundlage für alle Formularstile. Sie enthält umfassende Definitionen für alle CSS-Variablen, Komponentenformatierungsmuster und responsive Design-Implementierungen.
 
 +++
 
@@ -1189,7 +1189,7 @@ Implementieren Sie in Ihrem Edge Delivery Services-Projekt die Formularformatier
 
 +++ Implementierungsstrategie
 
-**CSS Custom Property Overrides**: Überschreiben von Formularvariablen in Ihren globalen Stilen, um markenspezifisches Design zu implementieren:
+**Überschreibungen mit benutzerdefinierten CSS-Eigenschaften**: Überschreiben Sie Formularvariablen in Ihren globalen Stilen, um markenspezifisches Design zu implementieren:
 
 ```css
 /* In /styles/styles.css */
@@ -1233,11 +1233,11 @@ Fügen Sie komponentenspezifische Stile hinzu, während Sie das CSS-Variablensys
 
 ### Beispiel für eine vollständige Stilimplementierung
 
-In diesem Abschnitt wird gezeigt, wie Sie mithilfe von benutzerdefinierten CSS-Eigenschaften ein modernes, markenspezifisches Formular erstellen. Die Implementierung ist zur besseren Übersicht und Navigation in übersichtliche Unterabschnitte unterteilt.
+In diesem Abschnitt wird gezeigt, wie Sie mithilfe von benutzerdefinierten CSS-Eigenschaften ein modernes, markenspezifisches Formular erstellen. Die Implementierung ist zur besseren Übersicht und Navigation in einfache Unterabschnitte unterteilt.
 
 
 
-+++ &#x200B;1. Variablen des Markendesigns
++++ &#x200B;1. Variablen des Marken-Designs
 
 Definieren Sie die Farbpalette, den Abstand und die Typografie Ihrer Marke mithilfe von benutzerdefinierten CSS-Eigenschaften.
 
@@ -1274,7 +1274,7 @@ Definieren Sie die Farbpalette, den Abstand und die Typografie Ihrer Marke mithi
 
 +++
 
-+++ &#x200B;2. Formular-Container-Stile
++++ &#x200B;2. Stile für Formular-Container
 
 Wenden Sie einen modernen Hintergrund, einen Rahmenradius und einen Schatten auf den Formular-Container an, um ein visuell ansprechendes Layout zu erzielen.
 
@@ -1298,7 +1298,7 @@ Wenden Sie einen modernen Hintergrund, einen Rahmenradius und einen Schatten auf
 
 +++ &#x200B;3. Formatierung der Eingabefelder
 
-Formatieren Sie Text-, E-Mail- und Zahleneingabefelder für einen sauberen, modernen Look.
+Formatieren Sie Eingabefelder für Text, E-Mail und Zahlen, um einen sauberen, modernen Look zu erhalten.
 
 
 ```css
@@ -1321,7 +1321,7 @@ Formatieren Sie Text-, E-Mail- und Zahleneingabefelder für einen sauberen, mode
 
 +++ &#x200B;4. Zusätzliche Anpassung
 
-Sie können die Formularformatierung weiter erweitern, indem Sie nach Bedarf auf bestimmte Felder, Status oder Komponenten abzielen. Erweiterte Muster finden Sie in früheren Abschnitten.
+Sie können die Formularformatierung zusätzlich erweitern, indem Sie nach Bedarf bestimmte Felder, Status oder Komponenten als Ziel auswählen. Informationen zu erweiterten Mustern finden Sie in früheren Abschnitten.
 
 ```css
 /* Custom brand theme */
@@ -1404,11 +1404,11 @@ Sie können die Formularformatierung weiter erweitern, indem Sie nach Bedarf auf
 }
 ```
 
-Dieser umfassende Ansatz zeigt, wie benutzerdefinierte CSS-Eigenschaften ein anspruchsvolles Design ermöglichen und gleichzeitig die strukturelle Integrität und die Barrierefreiheitsfunktionen des Blocksystems von Adaptive Forms beibehalten.
+Dieser umfassende Ansatz zeigt, wie benutzerdefinierte CSS-Eigenschaften ein anspruchsvolles Design ermöglichen und gleichzeitig die strukturelle Integrität und die Ein-/Ausgabehilfe-Funktionen des adaptiven Formularblocksystems beibehalten.
 
 +++
 
-## Beheben von CSS-Problemen
+## Fehlerbehebung von CSS-Problemen
 
 +++ CSS-Spezifitätsprobleme
 
@@ -1431,7 +1431,7 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Probleme mit der Überschreibung von CSS-Variablen
++++ Probleme beim Überschreiben von CSS-Variablen
 
 ```css
 /- ❌ Problem: Variables not working */
@@ -1447,7 +1447,7 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Formularstatus-Formatierung
++++ Formatierung für Formularstatus
 
 ```css
 /- Validation states */
@@ -1527,7 +1527,7 @@ main .form form .text-wrapper input {
 
 +++
 
-+++ Responsives Formulardesign
++++ Responsives Formular-Design
 
 ```css
 /- Mobile-first approach */
@@ -1549,12 +1549,12 @@ main .form form .text-wrapper input {
 
 ## Zusammenfassung der Best Practices
 
-1. **Benutzerdefinierte CSS-Eigenschaften verwenden**: Variablen für ein konsistentes Design nutzen
-2. **Blockbasierte Architektur befolgen**: `.form` als primären Blockselektor verwenden
+1. **Benutzerdefinierte CSS-Eigenschaften verwenden**: Nutzen Sie Variablen für ein konsistentes Design
+2. **Blockbasierte Architektur befolgen**: Verwenden Sie `.form` als primären Blockselektor
 3. **Überspezifität vermeiden**: Verwenden Sie `main .form form` nicht, es sei denn, dies ist notwendig
-4. **Target-Wrapper**: Verwenden von `.{Type}-wrapper` für das Komponenten-Targeting
+4. **Target-Wrapper**: Verwenden Sie `.{Type}-wrapper`-Muster für das Komponenten-Targeting
 5. **Konsistenz wahren**: Verwenden Sie dieselben Selektormuster im gesamten Projekt
-6. **Geräteübergreifend testen**: Stellen Sie sicher, dass Formulare auf Mobilgeräten, Tablets und Desktop einwandfrei funktionieren
-7. **Barrierefreiheit überprüfen**: Stellen Sie sicher, dass Stile Bildschirmlesehilfen oder die Tastaturnavigation nicht beeinträchtigen
+6. **Geräteübergreifend testen**: Stellen Sie sicher, dass Formulare auf Mobilgeräten, Tablets und Desktops einwandfrei funktionieren
+7. **Ein-/Ausgabehilfe überprüfen**: Stellen Sie sicher, dass Stile Bildschirmlesehilfen oder die Tastaturnavigation nicht beeinträchtigen
 
 

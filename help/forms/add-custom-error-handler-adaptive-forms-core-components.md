@@ -10,7 +10,7 @@ role: User, Developer
 source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
 source-wordcount: '2335'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -200,7 +200,7 @@ Um zu verstehen, wie man einen Standard-Fehler-Handler mit der Aktion [Aufrufdi
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 1. Erstellen Sie eine Bedingung im Abschnitt **Wenn** der Regel. Zum Beispiel: **Wenn [der Name des Feldes Haustier-ID]** geändert wird. Die Auswahl wird aus der Dropdown-Liste **Status auswählen** geändert.
 1. Im Abschnitt **Dann** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **Aktion auswählen.**
-1. Wählen Sie einen **Post-Service** und die zugehörigen Datenbindungen aus dem Abschnitt **Eingabe**. Um beispielsweise die **Haustier-ID** zu validieren, wählen Sie einen **Post-Service** als **GET /pet/{petId}** und wählen Sie **Haustier-ID** Abschnitt **Eingabe** aus.
+1. Wählen Sie einen **Post-Service** und die zugehörigen Datenbindungen aus dem Abschnitt **Eingabe**. Um zum Beispiel **Haustier-ID** zu validieren, wählen Sie einen **Post-Service** als **GET /pet/{petId}** und dann **Haustier-ID** im Abschnitt **Eingabe**.
 1. Wählen Sie die Datenbindungen aus dem Abschnitt **Ausgabe**. Wählen Sie **Haustiername** im Abschnitt **Ausgabe**.
 1. Wählen Sie **[!UICONTROL Standard-Fehler-Handler]** im Abschnitt **Fehler-Handler**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
@@ -310,7 +310,7 @@ So verwenden Sie einen benutzerdefinierten Fehler-Handler mit der Aktion **[!UIC
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 1. Erstellen Sie eine Bedingung im Abschnitt **Wenn** der Regel. Wenn beispielsweise der **[Name des Felds „Haustier-ID“]** geändert wird, wählen Sie in der Dropdown-Liste **Status auswählen** die Option **wird geändert** aus.
 1. Im Abschnitt **Dann** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **Aktion auswählen.**
-1. Wählen Sie einen **Post-Service** und die zugehörigen Datenbindungen aus dem Abschnitt **Eingabe**. Um beispielsweise die **Haustier-ID** zu validieren, wählen Sie einen **Post-Service** als **GET /pet/{petId}** und wählen Sie **Haustier-ID** Abschnitt **Eingabe** aus.
+1. Wählen Sie einen **Post-Service** und die zugehörigen Datenbindungen aus dem Abschnitt **Eingabe**. Um zum Beispiel **Haustier-ID** zu validieren, wählen Sie einen **Post-Service** als **GET /pet/{petId}** und dann **Haustier-ID** im Abschnitt **Eingabe**.
 1. Wählen Sie die Datenbindungen aus dem Abschnitt **Ausgabe**. Wählen Sie beispielsweise **Haustiername** im Abschnitt **Ausgabe**.
 1. Wählen Sie **[!UICONTROL Benutzerdefinierter Fehler-Handler]** im Abschnitt **[!UICONTROL Fehler-Handler]**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.

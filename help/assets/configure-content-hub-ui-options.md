@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
 workflow-type: tm+mt
 source-wordcount: '2265'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -191,7 +191,7 @@ Passen Sie als Admin Ihr [!DNL Content Hub]-Portal an Ihre Branding-Anforderunge
 ![Zurücksetzen des Standards](/help/assets/assets/reset-default-content-hub.png)
 Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die Abschnitte **[!UICONTROL Banner]**, **[!UICONTROL Farben]** und **[!UICONTROL Bannerbild]**, um die folgenden Anpassungen vorzunehmen:
 
-1. [Ändern Sie das Logo-Bild im [!UICONTROL Logo-Bild] .](#Change-the-logo-image)
+1. [Ändern des Logobilds im Abschnitt [!UICONTROL Logobild].](#Change-the-logo-image)
 1. [Ändern Sie das Bannerbild im Abschnitt [!UICONTROL Bannerbild].](#Change-the-banner-image)
 1. [Aktualisieren Sie den Titel und Textkörper des Banners und ändern Sie die Textfarbe im Abschnitt [!UICONTROL Banner].](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Ändern Sie die primäre und sekundäre Farbe aus dem Abschnitt [!UICONTROL Farben], um ein Farbschema anzuwenden, das dem Design Ihrer Marke entspricht](#Change-the-primary-and-secondary-color)
@@ -200,10 +200,10 @@ Wählen Sie die Option **[!UICONTROL Standardeinstellungen zurücksetzen]**, um 
 
 #### Ändern des Logobilds{#change-the-logo-image}
 
-Führen Sie auf ![ Seite ](/help/assets/assets/ColorPalette.svg)Branding **[!UICONTROL Branding]** die folgenden Schritte aus, um das Logo-Image Ihrer [!DNL Content Hub]-Bereitstellung zu ändern:
+Führen Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die folgenden Schritte aus, um das Logobild Ihrer [!DNL Content Hub]-Bereitstellung zu ändern:
 
-1. Klicken Sie auf ![Bild auswählen](/help/assets/assets/Browse.svg) **[!UICONTROL Bild auswählen]**, um ein Logo-Bild im Dialogfeld für die Asset-Auswahl auszuwählen. Der Asset-Wähler zeigt nur genehmigte Bilder an.
-1. Wählen Sie das Bild aus **[!UICONTROL klicken Sie auf]** und anschließend auf **[!UICONTROL Speichern]**, um es als Logo-Bild Ihrer [!DNL Content Hub]-Bereitstellung anzuzeigen.
+1. Klicken Sie auf ![Bild auswählen](/help/assets/assets/Browse.svg) **[!UICONTROL Bild auswählen]**, um im Dialogfeld für die Asset-Auswahl ein Logobild auszuwählen. Der Asset-Wähler zeigt nur genehmigte Bilder an.
+1. Wählen Sie das gewünschte Bild aus, klicken Sie auf **[!UICONTROL Auswählen]** und anschließend auf **[!UICONTROL Speichern]**, um es als Logobild Ihrer [!DNL Content Hub]-Bereitstellung anzuzeigen.
    ![Bannerbild](/help/assets/assets/logo-image-content-hub1.png)
 
 #### Ändern des Bannerbilds{#Change-the-banner-image}
@@ -218,7 +218,7 @@ Führen Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!
 >
 > * Die empfohlene Größe für **Bannerbild** ist `height = 200 to 450px` und `width = 1920 to 2560px`.
 > * Die empfohlene Größe für **Logobild** ist `height = 80 to 120px` und `width = 120 to 200px`.
-> * Die **unterstützten MIME** Typen für Banner- und Logo-Bilder sind `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`.
+> * Die **unterstützten MIME-Typen** für Banner- und Logobilder sind `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'` und `'GIF', value: 'image/gif'`.
 
 #### Fügen Sie dem Banner Titel und Textinhalte hinzu und ändern Sie die Textfarbe{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 

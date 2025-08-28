@@ -8,7 +8,7 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -486,11 +486,11 @@ Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendb
 }
 ```
 
-Das obige Beispiel definiert einen Kundendatensatz, bei dem jede Kundin und jeder Kunde über eine Versand- und eine Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Ort und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
+Das obige Beispiel definiert einen Kundeneintrag, bei dem jede Kundin und jeder Kunde über eine Versand- und Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Ort und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
 
 ## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
 
-Mit der **aem:afProperties**-Eigenschaft können Sie ein JSON-Schemafeld so vorkonfigurieren, dass es einer benutzerdefinierten Komponente eines adaptiven Formulars zugeordnet wird. Ein Beispiel wird unten angezeigt:
+Mit der Eigenschaft **aem:afProperties** können Sie ein JSON-Schemafeld so vorkonfigurieren, dass es einer benutzerdefinierten Komponente des adaptiven Formulars zugeordnet wird. Ein Beispiel wird unten angezeigt:
 
 ```json
 {

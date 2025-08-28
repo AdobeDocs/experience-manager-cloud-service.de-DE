@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,8 +92,8 @@ Alle Formularfelder mit Ausnahme von Dropdown-Listen, Optionsfeldgruppen und Kon
 - Klassen: Das div-Element verfügt über mehrere Klassen, die auf bestimmte Elemente und die Formatierung abzielen. Sie benötigen die Klassen `{Type}-wrapper` oder `field-{Name}` zum Entwickeln einer CSS-Auswahl, um ein Formularfeld zu formatieren:
    - {Type}: Identifiziert die Komponente nach Feldtyp. Zum Beispiel: text (text-wrapper), number (number-wrapper), date (date-wrapper).
    - {Name}: Identifiziert die Komponente anhand des Namens. Der Name des Felds darf nur alphanumerische Zeichen enthalten. Mehrere aufeinander folgende Gedankenstriche im Namen werden durch einen einzigen Bindestrich ersetzt `(-)`, und die Start- und Endabstände in einem Feldnamen werden entfernt. Zum Beispiel: first-name (field-first-name field-wrapper).
-   - {FieldId}: Dies ist eine eindeutige Kennung für das Feld, die automatisch generiert wird
-   - {Required}: Ein boolescher Wert, der angibt, ob das Feld erforderlich ist
+   - {FieldId}: Eine eindeutige Kennung für das Feld, die automatisch generiert wird.
+   - {Required}: Ein boolescher Wert, der angibt, ob das Feld erforderlich ist.
 - Titel: Das Element `label` liefert einen beschreibenden Text für das Feld und ordnet ihn dem Eingabeelement mithilfe des Attributs `for` zu.
 - Eingabe: Das Element `input` definiert den einzugebenden Datentyp. Zum Beispiel : text, number, email.
 - Beschreibung (optional): `div` mit der Klasse `field-description` stellt zusätzliche Informationen oder Anweisungen für Benutzende bereit.
@@ -240,7 +240,7 @@ Bei Dropdown-Menüs wird das `select`-Element anstelle des `input`-Elements verw
 
 Ähnlich wie bei Dropdown-Komponenten haben Optionsfeldgruppen ihre eigene HTML- und CSS-Struktur:
 
-+++ HTML-Struktur der Optionsfeldgruppe
++++ HTML-Struktur der Optionsfeldgruppe 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Dieser Selektor wählt alle Feldsätze mit dem Klassen-Optionsfeldgruppen-Wrappe
 }
 ```
 
-+++
++++ 
 
 ### Kontrollkästchengruppe
 
-+++ HTML-Struktur der Kontrollkästchengruppe
++++ HTML-Struktur der Kontrollkästchengruppe 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Dieser Selektor wählt alle Feldsätze mit dem Klassen-Optionsfeldgruppen-Wrappe
      }
   ```
 
-+++
++++ 
 
 ### Bedienfeld-/Container-Komponenten
 
@@ -476,11 +476,11 @@ Dieser Selektor wählt alle Feldsätze mit dem Klassen-Optionsfeldgruppen-Wrappe
 ```
 
 - Das fieldset-Element dient als Bedienfeld-Container mit dem Klassen-Bedienfeld-Wrapper und zusätzlichen Klassen zur Gestaltung basierend auf dem Bedienfeldnamen (Feldanmeldung).
-- Das Legendenelement (`<legend>`) dient als Bereichstitel mit dem Text „Login Information“ und der Klassenfeldbeschriftung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
+- Das Legendenelement (`<legend>`) dient als Bedienfeldtitel mit dem Text „Anmeldeinformationen“ und der Klassenfeldbezeichnung. Das data-visible=&quot;false&quot;-Attribut kann mit JavaScript verwendet werden, um die Sichtbarkeit des Titels zu steuern.
 - In diesem Feldsatz stehen mehrere .{Type}-Wrapper-Elemente (in diesem Fall „.text-wrapper“ und „.password-wrapper“) für einzelne Formularfelder im Panel.
 - Jeder Wrapper enthält eine Bezeichnung, ein Eingabefeld und eine Beschreibung, ähnlich wie bei den vorherigen Beispielen.
 
-+++
++++ 
 
 +++ Beispiel zur CSS-Auswahl für Bedienfeld-/Container-Komponenten
 
@@ -608,7 +608,7 @@ Jedes Bedienfeld weist dieselbe Struktur wie das Beispiel eines einzelnen Bedien
 
 - Eindeutige IDs und Namen: Jedes Element im Bedienfeld verfügt über eine eindeutige ID (z. B. name-1, email-1) und ein eindeutiges name-Attribut, das auf dem Index des Bedienfelds basiert (z. B. nname=&quot;contacts[0].name&quot;). Dies ermöglicht eine korrekte Datenerfassung bei der Übermittlung mehrerer Bedienfelder.
 
-+++
++++ 
 
 +++ CSS-Auswahl für ein wiederholbares Bedienfeld
 
@@ -698,7 +698,7 @@ Diese Auswahl gestaltet alle Feld-Wrapper in einem wiederholbaren Bedienfeld, wo
 - Die id- und name-Attribute des Eingabeelements stimmen mit dem Dateianhangsnamen (claim_form) überein.
 - Der Abschnitt „files-list“ ist zunächst leer. Er wird dynamisch mit JavaScript aufgefüllt, wenn Dateien hochgeladen werden.
 
-+++
++++ 
 
 +++ CSS-Auswahl für die Dateianhangskomponente
 
@@ -816,7 +816,7 @@ Sie können CSS-Auswahlen verwenden, um bestimmte Feldtypen als Ziel auszuwähle
 - Jedes Feld verfügt über eine entsprechende Beschriftung, ein Eingabeelement und potenzielle zusätzliche Elemente wie Platzhalter und Beschreibungen.
 
 
-+++
++++ 
 
 
 +++ Beispiel einer CSS-Auswahl
@@ -864,7 +864,7 @@ Sie können auch einzelne Felder nach Namen als Ziel auswählen, um eindeutige S
 </div>
 ```
 
-+++
++++ 
 
 +++ Beispiel einer CSS-Auswahl
 
@@ -878,5 +878,5 @@ Sie können auch einzelne Felder nach Namen als Ziel auswählen, um eindeutige S
 
 Diese CSS-Datei wählt alle Eingabeelemente als Ziel aus, die sich in einem Element mit der Klasse `field-otp` befinden. Die HTML-Struktur Ihres Formulars entspricht den Konventionen des adaptiven Formularblocks. Dies bedeutet, dass ein mit der Klasse „field-otp“ markierter Container das Feld mit dem Namen „otp“ enthält.
 
-+++
++++ 
 

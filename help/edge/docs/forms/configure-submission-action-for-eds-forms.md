@@ -7,22 +7,22 @@ exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 13%
+ht-degree: 79%
 
 ---
 
 # Konfigurieren von Übermittlungsaktionen für AEM Forms
 
-Konfigurieren Sie die Handhabung von Formularübermittlungen, um Daten mithilfe von AEM Forms mit Edge Delivery Services an Tabellen, E-Mail oder Backend-Systeme zu leiten.
+Konfigurieren Sie die Handhabung von Formularübermittlungen, um Daten mithilfe von AEM Forms und Edge Delivery Services an Tabellen, E-Mail-Adressen oder Backend-Systeme zu leiten.
 
-## Schnellentscheidungsleitfaden
+## Leitfaden für schnelle Entscheidungen
 
 Wählen Sie Ihre Übermittlungsmethode:
 
 | Methode | Am besten geeignet für | Setup-Komplexität | Anwendungsfälle |
 |--------|----------|------------------|-----------|
-| **Forms-Sendedienst** | Einfache Datenerfassung | Niedrig | Kontaktformulare, Umfragen, grundlegende Datenerfassung |
-| **AEM-Veröffentlichungsübermittlung** | Komplexe Workflows | Hoch | Unternehmensintegrationen, benutzerdefinierte Verarbeitung, Workflows |
+| **Formularübermittlungsdienst** | Einfache Datenerfassung | Niedrig | Kontaktformulare, Umfragen, grundlegende Datenerfassung |
+| **AEM Publish-Übermittlung** | Komplexe Workflows | Hoch | Unternehmensintegrationen, benutzerdefinierte Verarbeitung, Workflows |
 
 ## Voraussetzungen
 
@@ -30,12 +30,12 @@ Bevor Sie Übermittlungsaktionen konfigurieren, müssen Sie:
 
 - AEM Forms as a Cloud Service-Instanz
 - Edge Delivery Services-Projekt konfiguriert
-- Formular, erstellt mithilfe der Dokumenterstellung oder des universellen Editors
-- Erforderliche Berechtigungen für Target-Ziele (Tabellen, E-Mail-Systeme oder AEM)
+- Formular, eingerichtet mithilfe der Dokumenterstellung oder des universellen Editors
+- Erforderliche Berechtigungen für Ziele (Tabellen, E-Mail-Systeme oder AEM)
 
-+++ Methode 1: Forms-Übermittlungsdienst
++++ Methode 1: Formularübermittlungsdienst
 
-Der Forms Submission Service ist ein von Adobe gehosteter Endpunkt, der sich ideal für einfache Datenerfassungsszenarien eignet.
+Der Formularübermittlungsdienst ist ein von Adobe gehosteter Endpunkt, der sich ideal für einfache Datenerfassungsszenarien eignet.
 
 ### Unterstützte Ziele
 
@@ -45,31 +45,31 @@ Der Forms Submission Service ist ein von Adobe gehosteter Endpunkt, der sich ide
 ### Konfigurationsschritte
 
 1. **Einrichten des Zielzugriffs**
-   - Für Kalkulationstabellen: Erteilen Sie Bearbeitungsberechtigungen für `forms@adobe.com` in der Ziel-Kalkulationstabelle
-   - Für E-Mail: Überprüfen, ob Empfänger-E-Mail-Adressen zugänglich sind
+   - Für Tabellen: Erteilen Sie Bearbeitungsberechtigungen für `forms@adobe.com` in der Zieltabelle.
+   - Für E-Mail: Überprüfen Sie, ob E-Mail-Adressen von Empfängerinnen und Empfängern erreichbar sind.
 
-2. **Formularübermittlung konfigurieren**
-   - Öffnen Sie das Formular in der Authoring-Umgebung
-   - Sende-Aktion auf &quot;Forms Submission Service“ festlegen
-   - Ziel-Kalkulationstabellen-URL oder E-Mail-Adressen angeben
-   - Speichern und Veröffentlichen des Formulars
+2. **Konfigurieren der Formularübermittlung**
+   - Öffnen Sie Ihr Formular in der Authoring-Umgebung.
+   - Legen Sie die Übermittlungsaktion auf „Formularübermittlungsdienst“ fest.
+   - Geben Sie die URL der Zieltabelle oder die E-Mail-Adressen an.
+   - Speichern und veröffentlichen Sie das Formular.
 
 3. **Testübermittlung**
-   - Senden von Testdaten über das Formular
-   - Überprüfen, ob die Daten im Ziel angezeigt werden
-   - Fehlerprotokolle überprüfen, wenn die Übermittlung fehlschlägt
+   - Senden Sie Testdaten über das Formular.
+   - Überprüfen Sie, ob die Daten im Ziel angezeigt werden.
+   - Überprüfen Sie Fehlerprotokolle, wenn die Übermittlung fehlschlägt.
 
 ### Wichtige Hinweise
 
-- `forms@adobe.com` des Service-Kontos erfordert Bearbeitungszugriff auf Zieltabellen
+- Das Dienstkonto `forms@adobe.com` erfordert Bearbeitungszugriff auf Zieltabellen
 - E-Mail-Benachrichtigungen werden sofort nach der Formularübermittlung gesendet
-- Die Datenvalidierung erfolgt auf Service-Ebene
+- Die Datenvalidierung erfolgt auf der Dienstebene
 
-![Fluss des Forms-Übermittlungs-Service](/help/forms/assets/eds-fss.png)
+![Ablauf des Formularübermittlungsdiensts](/help/forms/assets/eds-fss.png)
 
 +++
 
-+++ Methode 2: AEM-Veröffentlichungsübermittlung
++++ Methode 2: Übermittlung per AEM Publish
 
 Senden Sie Formulardaten zur komplexen Verarbeitung direkt an Ihre AEM as a Cloud Service-Veröffentlichungsinstanz.
 
@@ -79,12 +79,12 @@ Senden Sie Formulardaten zur komplexen Verarbeitung direkt an Ihre AEM as a Clou
 - Integration des Formulardatenmodells (FDM) in Datenbanken
 - Integration von Drittanbieterdiensten (Marketo, Power Automate, Workfront Fusion)
 - Azure Blob Storage- oder SharePoint-Dokumentbibliotheken
-- Komplexe Server-seitige Validierungs- oder Verarbeitungslogik
+- Komplexe Server-seitige Validierung oder Verarbeitungslogik
 
 ### Verfügbare Übermittlungsaktionen
 
 - [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
-- [E-Mail über AEM-E-Mail-Dienste senden](/help/forms/configure-submit-action-send-email.md)
+- [Per E-Mail senden (mithilfe der E-Mail-Dienste von AEM)](/help/forms/configure-submit-action-send-email.md)
 - [Mit Formulardatenmodell senden](/help/forms/configure-data-sources.md)
 - [AEM-Workflow aufrufen](/help/forms/aem-forms-workflow-step-reference.md)
 - [An SharePoint senden](/help/forms/configure-submit-action-sharepoint.md)
@@ -94,7 +94,7 @@ Senden Sie Formulardaten zur komplexen Verarbeitung direkt an Ihre AEM as a Clou
 - [An Adobe Workfront Fusion Senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 - [An Adobe Marketo Engage senden](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-![Übermittlungsfluss der AEM-Veröffentlichung](/help/forms/assets/eds-aem-publish.png)
+![Ablauf von AEM Publish-Übermittlung](/help/forms/assets/eds-aem-publish.png)
 
 ### Konfigurationsanforderungen
 
@@ -195,10 +195,10 @@ Configure your Edge Delivery CDN to route submissions:
 
 #### &#x200B;4. Konfiguration des Formulars
 
-1. Erstellen eines Formulars im universellen Editor
-2. Konfigurieren der Übermittlungsaktion für die AEM Forms-Zielaktion
-3. Übermittlungsendpunktpfad angeben
-4. Formular auf der Edge Delivery-Site veröffentlichen
+1. Erstellen Sie das Formular im universellen Editor.
+2. Konfigurieren Sie die Übermittlungsaktion für die AEM Forms-Zielaktion.
+3. Geben Sie den Pfad des Übermittlungsendpunkts an.
+4. Veröffentlichen Sie das Formular auf der Edge Delivery-Site.
 
 +++
 <!--
@@ -250,49 +250,49 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 +++-->
 
-+++ Häufige Probleme
++++ Gängige Probleme
 
 | Problem | Lösung |
 |-------|----------|
-| **Formularübermittlung schlägt fehl** | Überprüfen von Konsolenfehlern, Überprüfen der Endpunkt-URL, Bestätigen von Berechtigungen |
-| **Eingebettetes Formular wird nicht angezeigt** | Konfigurieren von CORS-Headern an der Formularquelle, Überprüfen der Formular-URL |
-| **403/401-Fehler bei AEM** | Sling Referrer-Filter aktualisieren, Authentifizierungseinstellungen überprüfen |
-| **Daten erreichen das Arbeitsblatt nicht** | Überprüfen Sie, ob `forms@adobe.com` Bearbeitungszugriff hat, und überprüfen Sie die Tabellen-URL |
-| **CORS-Fehler** | Fügen Sie der Formularquelle die richtigen `Access-Control-Allow-Origin` hinzu |
+| **Formularübermittlung schlägt fehl** | Prüfen Sie Konsolenfehler, überprüfen Sie die Endpunkt-URL und verifizieren Sie Berechtigungen |
+| **Eingebettetes Formular wird nicht angezeigt** | Konfigurieren Sie CORS-Kopfzeilen an der Formularquelle; überprüfen Sie die Formular-URL |
+| **403/401-Fehler bei AEM** | Aktualisieren Sie den Sling Referrer-Filter, überprüfen Sie die Authentifizierungseinstellungen |
+| **Daten erreichen die Tabelle nicht** | Überprüfen Sie, ob `forms@adobe.com` Bearbeitungszugriff hat, und überprüfen Sie die URL der Tabelle |
+| **CORS-Fehler** | Fügen Sie der Formularquelle die richtigen `Access-Control-Allow-Origin`-Kopfzeilen hinzu |
 
 +++
 
 ## Konfigurationsbeispiele
 
-+++ Dokumentenbasiertes Formular mit Tabellenübermittlung
++++ Dokumentenbasiertes Formular mit Tabellen-Übermittlung
 
 1. Erstellen einer Formularstruktur in Google Docs/Sheets
-2. Konfigurieren des Endpunkts für den Forms-Übermittlungsdienst
-3. Zugriff `forms@adobe.com` Bearbeitung auf das Zielarbeitsblatt gewähren
-4. Dokument auf Edge Delivery-Site veröffentlichen
-5. Übermittlung und Datenfluss von Testformularen
+2. Konfigurieren des Endpunkts für den Formularübermittlungsdienst
+3. Erteilen von `forms@adobe.com`-Bearbeitungszugriff auf die Zieltabelle
+4. Veröffentlichen des Dokuments auf der Edge Delivery-Site
+5. Übermittlung von Testformularen und Datenfluss
 
 +++
 
-+++ Universeller Editor für Formulare mit AEM Workflow
++++ Formular im universellen Editor mit AEM Workflow
 
-1. Erstellen eines Formulars im universellen Editor
-2. Konfigurieren der Sendeaktion zum „Aufrufen des AEM-Workflows“
+1. Erstellen von Formular im universellen Editor
+2. Konfigurieren der Übermittlungsaktion zum Aufrufen eines AEM-Workflows
 3. Einrichten von Dispatcher und Referrer-Filter in AEM Publish
 4. Konfigurieren von CDN-Routing-Regeln
-5. Formular veröffentlichen und Workflow-Ausführung testen
+5. Veröffentlichen des Formulars und Testen der Workflow-Ausführung
 
 +++
 
 ## Best Practices
 
-- **Verwenden des Forms Submission Service** für einfache Datenerfassungsszenarien
-- **Wählen Sie &quot;AEM Publish**, wenn komplexe Verarbeitung oder Integrationen erforderlich sind
-- **Gründlicher Test** in der Staging-Umgebung vor der Produktionsbereitstellung
-- **Übermittlungen überwachen** mithilfe von AEM-Protokollen und Konsolenfehlern
-- **ordnungsgemäße Fehlerbehandlung implementieren** bei fehlgeschlagenen Übermittlungen
-- **Daten validieren** sowohl auf Client- als auch auf Serverebene
-- **HTTPS verwenden** für alle Formularübermittlungen und Datenübertragungen
+- **Nutzen Sie den Formularübermittlungsdienst** für einfache Datenerfassungsszenarien
+- **Wählen Sie AEM Publish**, wenn komplexe Verarbeitungsvorgänge oder Integrationen erforderlich sind
+- **Testen Sie gründlich** in der Staging-Umgebung vor der Produktionsbereitstellung
+- **Überwachen Sie Übermittlungen** mithilfe von AEM-Protokollen und Konsolenfehlern
+- **Implementieren Sie eine ordnungsgemäße Fehlerbehandlung** bei fehlgeschlagenen Übermittlungen
+- **Validieren Sie Daten** sowohl auf Client- als auch auf Server-Ebene
+- **Nutzen Sie HTTPS** für alle Formularübermittlungen und Datenübertragungen
 
 ## Verwandte Themen
 
@@ -300,4 +300,4 @@ Configure Cross-Origin Resource Sharing on the form source:
 - [Universeller Editor mit EDS Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 - [AEM Forms-Übermittlungsdienst](/help/forms/forms-submission-service.md)
 - [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
-- [AEM Forms Workflow-Referenz](/help/forms/aem-forms-workflow-step-reference.md)
+- [Referenz für AEM Forms Workflow](/help/forms/aem-forms-workflow-step-reference.md)

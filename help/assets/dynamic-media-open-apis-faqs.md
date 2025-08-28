@@ -6,18 +6,18 @@ exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
 # Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen {#new-dynaminc-media-apis-frequently-asked-questions}
 
-## Sind alle Assets im Experience Manager Assets as a Cloud Service-Repository für die Suche und Bereitstellung mit Dynamic Media mit OpenAPI-Funktionen verfügbar? {#assets-available-for-search}
+## Sind alle Assets im Experience Manager Assets as a Cloud Service-Repository für die Suche und Bereitstellung unter Verwendung von Dynamic Media mit OpenAPI-Funktionen verfügbar? {#assets-available-for-search}
 
-Nein, nur die [genehmigte und die neueste Version der Assets](/help/assets/approve-assets.md) sind für die Suche und Bereitstellung mit Dynamic Media mit OpenAPI-Funktionen verfügbar. Auf diese Weise wird die Markenkonsistenz in allen Kanälen und Anwendungen sichergestellt.
+Nein, nur die [genehmigte und die neueste Version der Assets](/help/assets/approve-assets.md) sind für die Suche und Bereitstellung mit Dynamic Media mit OpenAPI-Funktionen verfügbar. Auf diese Weise wird die Markenkonsistenz über alle Kanäle und Anwendungen hinweg sichergestellt.
 
 
-## Wie können Admins neue und vorhandene Assets, die zu einem Ordner hinzugefügt wurden, als genehmigt markieren? {#add-assets-to-folder-as-approved}
+## Wie können Admins neue und vorhandene Assets, die einem Ordner hinzugefügt wurden, als genehmigt markieren? {#add-assets-to-folder-as-approved}
 
 Der Status eines Assets in Experience Manager Assets wird durch die Eigenschaft `jcr:content/metadata/dam:status` gesteuert. Die Werte dieser Eigenschaft können wie folgt lauten:
 
@@ -49,12 +49,12 @@ Gleichermaßen kennzeichnet Experience Manager Assets den Status „Abgelehnt“
 ![Abgelehnte Assets in der Assets-Ansicht](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-## Wie kann man eine Benutzer- oder Gruppen-ID aus Adobe IMS (Adobe Identity Management Services) erhalten, die zum Festlegen der Rollen für Assets in der Experience Manager Admin View verwendet wird, um das Versand- und Sucherlebnis zu sichern? {#set-roles-secure-delivery-search}
+## Wie können Sie dafür sorgen, dass die Rollen für Assets in der Admin-Ansicht in Experience Manager mithilfe der Benutzer- oder Gruppen-ID von Adobe IMS (Adobe Identity Management Services) festgelegt werden, um das Bereitstellungs- und Sucherlebnis sicher zu gestalten? {#set-roles-secure-delivery-search}
 
 Benutzende, die Zugriff auf die Adobe Experience Manager-Autorenumgebung benötigen, werden in der Admin Console von Adobe als Adobe IMS-Benutzende verwaltet. Informationen darüber, was Adobe IMS-Benutzende sind und wie sie in der Admin Console aufgerufen und verwaltet werden, finden Sie unter [Adobe IMS-Benutzende](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users).
 
 
-## Können mehrere Assets gleichzeitig in einem Ordner genehmigt werden? {#approve-multiple-assets-in-folder}
+## Können Sie mehrere Assets gleichzeitig in einem Ordner genehmigen? {#approve-multiple-assets-in-folder}
 
 Ja, Sie können mehrere Assets in einem Ordner gleichzeitig genehmigen.
 
@@ -93,7 +93,7 @@ Als DAM-Benutzerin oder -Benutzer verfügen Sie möglicherweise nicht über die 
 Dynamic Media mit OpenAPI-Funktionen unterstützt langformatige Videos. Es werden Videos mit bis zu 50 GB und einer Länge von bis zu 2 Stunden unterstützt.
 
 
-## Wie unterscheidet sich Dynamic Media mit OpenAPI-Funktionen von der Dynamic Media-Lösung? {#dynamic-media-and-dynamic-media-with-openapi-differences}
+## Inwiefern unterscheidet sich Dynamic Media mit OpenAPI-Funktionen von der Dynamic Media-Lösung? {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 Dynamic Media mit OpenAPI-Funktionen und Dynamic Media sind unterschiedliche Lösungen, die jeweils spezielle Bereitstellungsfunktionen bieten. Sie müssen Ihre spezifischen Anforderungen unbedingt gründlich prüfen, um die am besten geeignete Lösung zu finden, die Ihren Anforderungen entspricht.
 
@@ -116,7 +116,7 @@ Im Folgenden finden Sie einige der wichtigsten Unterschiede zwischen Dynamic Med
 | Ermöglicht sichere, verschleierte URLs unter Verwendung von Asset-UIDs ohne Beeinträchtigung der SEO. | Die URL-Verschleierung ist nur für URL-Abfrageparameter verfügbar. Asset-IDs (Asset-Namen) in URLs können erkannt werden. |
 
 
-## Wie werden in Dynamic Media mit OpenAPI-Funktionen die Einschränkungen der Funktion „Connected Assets&quot; behoben? {#dynamic-media-openapi-addresses-connected-assets-limitations}
+## Wie geht Dynamic Media mit OpenAPI-Funktionen mit den Einschränkungen der Funktion „Connected Assets“ um? {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden Lösungen aufgeführt:
 
@@ -131,15 +131,15 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden L
 | Alle Änderungen an genehmigten Assets, die in der Remote-DAM-Bereitstellung verfügbar sind, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden innerhalb einer kurzen TTL (Time-to-Live) von 10 Minuten automatisch in der Sites-Instanz übernommen. | Asset-Aktualisierungen in der Remote-DAM-Bereitstellung werden automatisch über Lebenszyklusereignisse verarbeitet. Dies nimmt im Vergleich zu Dynamic Media mit OpenAPI-Funktionen jedoch deutlich mehr Zeit in Anspruch. |
 | Asset-Metadaten im Remote-DAM sind auch in der AEM Sites-Instanz verfügbar. | Asset-Metadaten im Remote-DAM sind nicht in der AEM Sites-Instanz verfügbar. |
 
-## Einige Modifikatoren sind als Eingeschränkte Verfügbarkeit gekennzeichnet. Wie kann ich sie verwenden? {#use-limited-availability-modifiers}
+## Einige Modifikatoren sind mit „Eingeschränkte Verfügbarkeit“ gekennzeichnet. Wie kann ich sie verwenden? {#use-limited-availability-modifiers}
 
-So aktivieren Sie die Produktionsverwendung von [Modifikatoren in begrenzter Verfügbarkeit](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) in Ihrem Konto:
+So aktivieren Sie die Produktionsverwendung von [-Modifikatoren, die mit „Eingeschränkte Verfügbarkeit“ gekennzeichnet sind,](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) in Ihrem Konto:
 
-1. [Erstellen eines Adobe-Support-Falls mit Admin Console](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. [Erstellen Sie mit der Admin Console einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 1. Geben Sie im Adobe-Support-Fall die folgenden Details an:
 
-   * IMS-Org
+   * IMS-Organisation
 
    * Liste der zu aktivierenden Modifikatoren
 

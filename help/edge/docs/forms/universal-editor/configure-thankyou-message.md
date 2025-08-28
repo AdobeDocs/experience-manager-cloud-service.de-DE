@@ -1,115 +1,115 @@
 ---
-title: Konfigurieren einer Umleitungsseite oder Dankesnachricht
-description: Erfahren Sie, wie Benutzenden eine Dankesnachricht angezeigt oder sie auf eine Webseite weitergeleitet werden können, die Formularautorinnen bzw. -autoren bei der Erstellung des Formulars konfigurieren können.
+title: So konfigurieren Sie eine Umleitungsseite oder eine Dankesnachricht
+description: Erfahren Sie, wie den Benutzenden eine Dankesnachricht angezeigt wirds oder wie sie auf eine Webseite weitergeleitet werden können, die Formularautorinnen bzw. -autoren bei der Erstellung des Formulars konfigurieren können.
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
+source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
 workflow-type: tm+mt
 source-wordcount: '1133'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-
 # Konfigurieren von Dankesnachrichten und Umleitungs-URLs
 
-Erfahrungen nach der Übermittlung beeinflussen die Benutzerzufriedenheit und die Formularausfüllungsraten erheblich. Der universelle Editor von Adobe bietet umfangreiche Optionen zum Konfigurieren dessen, was Benutzende nach dem Senden von Formularen sehen, sei es durch personalisierte Dankesnachrichten oder strategische Umleitungen zu bestimmten Seiten.
+Die Erfahrungen im Anschluss an die Übermittlung beeinflussen die Benutzerzufriedenheit und die Formularausfüllungsraten erheblich. Der universelle Editor von Adobe bietet umfangreiche Optionen zum Konfigurieren dessen, was Benutzende nach dem Senden von Formularen zu sehen bekommen, sei es durch personalisierte Dankesnachrichten oder strategische Umleitungen zu bestimmten Seiten.
 
 Dieser Artikel enthält detaillierte Anleitungen zur Implementierung von Dankesnachrichten und Umleitungs-URLs, einschließlich technischer Überlegungen, Best Practices und Richtlinien für das Benutzererlebnis, um die Effektivität Ihrer Formularübermittlungen zu maximieren.
 
 ## Voraussetzungen
 
-Bevor Sie Erlebnisse nach der Übermittlung konfigurieren, stellen Sie sicher, dass die folgenden Punkte erfüllt sind:
+Bevor Sie Erlebnisse im Anschluss an die Übermittlung konfigurieren, müssen Sie über Folgendes verfügen:
 
-**Technische Einrichtung:**
+**Technisches Setup:**
 
 - Zugriff auf den universellen Editor mit entsprechenden Berechtigungen
 - Ein vorhandenes adaptives Formular, das im universellen Editor erstellt wurde
 - Informationen zu den Anforderungen Ihres Unternehmens an Umleitungs-URLs
 
-**Überlegungen zur Planung:**
+**Aspekte bei der Planung:**
 
-- **Nachrichtenstrategie**: Definieren Sie den Ton, die Länge und spezifische Informationen, die in Dankesnachrichten aufgenommen werden sollen
-- **Umleitungsstrategie**: Zielseiten identifizieren und sicherstellen, dass sie für Erlebnisse nach dem Ausfüllen des Formulars optimiert sind
-- **Analytics-Integration**: Planen Sie, wie Sie Benutzerinteraktionen mit Dankesnachrichten oder Umleitungszielen verfolgen.
+- **Nachrichtenstrategie**: Definieren Sie den Ton, die Länge und spezifische Informationen, die in Dankesnachrichten aufgenommen werden sollen.
+- **Umleitungsstrategie**: Identifizieren Sie die Zielseiten und stellen Sie sicher, dass sie für Erlebnisse nach dem Ausfüllen des jeweiligen Formulars optimiert sind.
+- **Analyseintegration**: Planen Sie, wie Sie Benutzerinteraktionen mit Dankesnachrichten oder Umleitungszielen verfolgen können.
 
 ## Konfigurieren von Dankesnachrichten
 
-Dankesnachrichten bieten eine sofortige Bestätigung einer erfolgreichen Formularübermittlung und können personalisierte Inhalte, nächste Schritte oder wichtige Informationen enthalten, die für die Übermittlung des Benutzers relevant sind.
+Dankesnachrichten bieten eine sofortige Bestätigung einer erfolgreichen Formularübermittlung und können personalisierte Inhalte, nächste Schritte oder wichtige Informationen enthalten, die für die Übermittlung der Person relevant sind.
 
 ### Verwendung von Dankesnachrichten
 
-Dankesnachrichten funktionieren am besten, wenn:
+Dankesnachrichten funktionieren am besten bei:
 
-- **Einfache Bestätigung**: Benutzer benötigen eine Bestätigung ohne zusätzliche Navigationsanforderungen
-- **Anleitungsinhalt**: Sie müssen spezifische nächste Schritte oder wichtige Informationen angeben
-- **Markenkonsistenz**: Die Botschaft kann entsprechend dem Kommunikationsstil Ihres Unternehmens gestaltet werden
-- **Einseitiges Erlebnis**: Benutzer sollten zur Kontinuität des Workflows auf der aktuellen Seite bleiben
+- **Einfacher Bestätigung**: Benutzende benötigen eine Bestätigung ohne zusätzliche Navigationsanforderungen.
+- **Anleitenden Inhalten**: Sie müssen spezifische nächste Schritte oder wichtige Informationen angeben.
+- **Markenkonsistenz**: Die Botschaft kann entsprechend dem Kommunikationsstil Ihres Unternehmens gestaltet werden.
+- **Erlebnis auf einer Seite**: Benutzende sollten zur Kontinuität des Workflows auf der aktuellen Seite bleiben.
 
 ### Implementierungsschritte
 
 **1. Zugriff auf Formulareigenschaften**
 
-Öffnen Sie Ihr adaptives Formular im universellen Editor und klicken Sie auf das Symbol **Formulareigenschaften bearbeiten** in der Symbolleiste. Dadurch wird das Dialogfeld für die Formulareigenschaften geöffnet.
+Öffnen Sie Ihr adaptives Formular im universellen Editor und klicken Sie in der Symbolleiste auf das Symbol **Formulareigenschaften bearbeiten**. Dadurch wird das Dialogfeld für die umfassenden Formulareigenschaften geöffnet.
 
-**2. Navigieren Sie zur Dankeskonfiguration**
+**2. Navigieren zur Dankeskonfiguration**
 
 Wählen Sie im Dialogfeld „Formulareigenschaften“ die Registerkarte **Vielen Dank**, um auf die Konfigurationsoptionen nach der Übermittlung zuzugreifen.
 
-**3. Konfigurieren Sie die Nachrichtenanzeige**
+**3. Konfigurieren der Nachrichtenanzeige**
 
-Wählen Sie **Nachricht anzeigen** aus den verfügbaren Optionen aus. Dadurch wird der Nachrichteninhalt-Editor mit Rich-Text-Funktionen aktiviert.
+Wählen Sie **Nachricht anzeigen** aus den verfügbaren Optionen aus. Dadurch wird der Editor für Nachrichteninhalte mit Rich-Text-Funktionen aktiviert.
 
-**4. Nachrichteninhalt erstellen**
+**4. Erstellen des Nachrichteninhalts**
 
-Erstellen **im Feld** Nachrichteninhalt“ Ihre Dankesnachricht mit dem Rich-Text-Editor. Der Editor unterstützt:
+Erstellen Sie im Feld **Nachrichteninhalt** mit dem Rich-Text-Editor Ihre Dankesnachricht. Der Editor unterstützt:
 
-- **Textformatierung**: Fett, Kursiv, Unterstrichen und Farboptionen
+- **Textformatierung**: Fett, kursiv, unterstrichen und Farboptionen
 - **Listen**: Aufzählungs- und nummerierte Listen zum Organisieren von Informationen
-- **Links**: Direkte Links zu relevanten Ressourcen oder nächste Schritte
-- **Bearbeitung im Vollbildmodus**: Klicken Sie auf das Erweiterungssymbol, um einen größeren Bearbeitungsarbeitsbereich anzuzeigen
+- **Links**: Direkte Links zu relevanten Ressourcen oder nächsten Schritten
+- **Bearbeitung im Vollbildmodus**: Klicken Sie auf das Erweiterungssymbol, um einen größeren Bearbeitungsbereich anzuzeigen
 
 ### Technische Überlegungen
 
 **Anzeigeverhalten von Nachrichten:**
 
-- Nachrichten werden unmittelbar nach der Formularübermittlung in einer modalen Überlagerung angezeigt
-- Inhalte unterstützen HTML-Formatierung und behalten responsives Design bei
-- Nachrichten können von Benutzern verworfen oder mit automatisch schließenden Timern konfiguriert werden
+- Nachrichten werden unmittelbar nach der Formularübermittlung in einer modalen Überlagerung angezeigt.
+- Inhalte unterstützen HTML-Formatierung und behalten responsives Design bei.
+- Nachrichten können von Benutzenden verworfen oder mit automatisch schließenden Timern konfiguriert werden.
 
 **Inhaltsrichtlinien:**
 
-- Halten Sie die Nachrichten kurz, während Sie die erforderlichen Informationen bereitstellen
-- Gegebenenfalls klare nächste Schritte einschließen
-- Erwägen Sie, Referenznummern oder Bestätigungsdetails einzuschließen
+- Halten Sie Nachrichten kurz, während Sie die erforderlichen Informationen bereitstellen.
+- Schließen Sie gegebenenfalls klare nächste Schritte ein.
+- Erwägen Sie, Referenznummern oder Bestätigungsdetails einzuschließen.
 - Sicherstellen einer mobilfreundlichen Formatierung
 
 ### Beispielimplementierung
 
-    Vielen Dank für Ihre Übermittlung!
+    Danke für Ihre Übermittlung.
     
     Ihre Bewerbung ist eingegangen und erhält die Referenznummer #REF-2024-001234.
     
-    **Was passiert als Nächstes:**
-    - Sie erhalten innerhalb von 15 Minuten eine Bestätigungs-E-Mail
-    - Unser Team wird Ihre Übermittlung innerhalb von 2 Werktagen überprüfen
-    - Wir werden Sie direkt kontaktieren, wenn zusätzliche Informationen benötigt werden
+    **Was geschieht als Nächstes:**
+    – Sie erhalten innerhalb von 15 Minuten eine Bestätigungs-E-Mail
+    – Unser Team wird Ihre Übermittlung innerhalb von 2 Werktagen überprüfen
+    – Wir werden Sie direkt kontaktieren, wenn zusätzliche Informationen benötigt werden
     
-    **Hilfe benötigen?** Kontaktieren Sie unser Support-Team unter support@example.com
+    **Sie benötigen Hilfe?** Kontaktieren Sie unser Support-Team unter support@example.com
 
 ## Konfigurieren von Umleitungs-URLs
 
-Umleitungs-URLs navigieren Benutzer nach der Formularübermittlung automatisch zu bestimmten Seiten, was eine nahtlose Integration in vorhandene Workflows ermöglicht oder Benutzer zu relevanten Inhalten weiterleitet.
+Umleitungs-URLs navigieren Benutzende nach der Formularübermittlung automatisch zu bestimmten Seiten, was eine nahtlose Integration in vorhandene Workflows ermöglicht oder Benutzende zu relevanten Inhalten weiterleitet.
 
 ### Verwendung von Umleitungs-URLs
 
 Umleitungs-URLs sind optimal für:
 
-- **Workflow-Integration**: Weiterleitung von Benutzern zu Dashboards, Kontoseiten oder zu den nächsten Schritten in einem Prozess
-- **Inhaltsbereitstellung**: Anzeigen relevanter Produkte, Services oder Informationen basierend auf Formularantworten
-- **Analytics-Tracking**: Weiterleitung zu Seiten mit bestimmten Tracking-Implementierungen
-- **Mehrstufige Prozesse**: Übergang von Benutzern zur nächsten Phase komplexer Workflows
+- **Workflow-Integration**: Umleitung von Benutzenden zu Dashboards, Kontoseiten oder den nächsten Schritten in einem Prozess
+- **Inhaltsbereitstellung**: Anzeige relevanter Produkte, Dienstleistungen oder Informationen basierend auf Formularantworten
+- **Analyse-Tracking**: Umleitung zu Seiten mit bestimmten Tracking-Implementierungen
+- **Mehrstufige Prozesse**: Überleitung von Benutzenden zur nächsten Phase komplexer Workflows
 
 ### Implementierungsschritte
 
@@ -117,17 +117,17 @@ Umleitungs-URLs sind optimal für:
 
 Öffnen Sie Ihr adaptives Formular im universellen Editor und klicken Sie auf das Symbol **Formulareigenschaften bearbeiten**, um das Dialogfeld für die Formularkonfiguration zu öffnen.
 
-**2. Navigieren Sie zur Dankeskonfiguration**
+**2. Navigieren zur Dankeskonfiguration**
 
-Wählen Sie die **Vielen Dank** im Dialogfeld Formulareigenschaften , um auf die Optionen für die Umleitungskonfiguration zuzugreifen.
+Wählen Sie die Registerkarte **Vielen Dank** im Dialogfeld „Formulareigenschaften“, um auf die Optionen für die Umleitungskonfiguration zuzugreifen.
 
-**3. Umleitungsfunktion aktivieren**
+**3. Aktivieren der Umleitungsfunktion**
 
-Wählen Sie **Umleiten zur URL** aus den verfügbaren Optionen nach der Übermittlung aus.
+Wählen Sie den Eintrag **Zu URL umleiten** aus den verfügbaren Optionen nach der Übermittlung aus.
 
 **4. Konfigurieren der Ziel-URL**
 
-Geben Sie Ihre Ziel-URL in das bereitgestellte Feld ein. Das System unterstützt mehrere URL-Formate für eine flexible Implementierung.
+Geben Sie Ihre Ziel-URL in das angegebene Feld ein. Das System unterstützt für eine flexible Implementierung verschiedene URL-Formate.
 
 ### URL-Konfigurationsoptionen
 
@@ -146,7 +146,7 @@ Relative Pfade zu Ihrer aktuellen Domain:
     /dashboard/user-profile
     ../confirmation-page.html
 
-**AEM Sites-Seitenverweise**
+**AEM-Sites – Seitenreferenzen**
 
 Verweise auf andere Seiten innerhalb Ihrer AEM Sites-Implementierung:
 
@@ -157,80 +157,80 @@ Verweise auf andere Seiten innerhalb Ihrer AEM Sites-Implementierung:
 
 **Umleitungsverhalten:**
 
-- Umleitungen erfolgen unmittelbar nach erfolgreicher Formularübermittlung
-- Der Browser-Verlauf enthält die Umleitung für eine ordnungsgemäße Backbutton-Funktionalität
-- Der Umleitungs-Timing kann mit optionalen Verzögerungen konfiguriert werden.
+- Umleitungen erfolgen unmittelbar nach erfolgreicher Formularübermittlung.
+- Der Browser-Verlauf enthält die Umleitung für ein ordnungsgemäßes Funktionieren der Schaltfläche „Zurück“.
+- Das Umleitungs-Timing kann mit optionalen Verzögerungen konfiguriert werden.
 
 **URL-Validierung:**
 
-- Das System überprüft das URL-Format, bevor die Konfiguration zugelassen wird
+- Das System überprüft das URL-Format, bevor die Konfiguration zugelassen wird.
 - Relative URLs werden für die aktuelle Domain aufgelöst.
-- Externe URLs erfordern bei Bedarf eine ordnungsgemäße CORS-Konfiguration
+- Externe URLs erfordern bei Bedarf eine ordnungsgemäße CORS-Konfiguration.
 
 ## Best Practices und Empfehlungen
 
-### Richtlinien für das Benutzererlebnis
+### Richtlinien Prototypen für das Benutzererlebnis
 
 **Nachrichtenoptimierung:**
 
-- **Klarheit zuerst**: Stellen Sie sicher, dass Benutzer sofort verstehen, dass ihre Übermittlung erfolgreich war
-- **Wertschöpfung**: Bereitstellung von Informationen, die den Benutzern bei den nächsten Schritten helfen
-- **Konsistentes Branding**: Behalten Sie die Stimme und den visuellen Stil Ihres Unternehmens bei
-- **Überlegungen zum Mobilgerät** Testen von Nachrichten in verschiedenen Bildschirmgrößen
+- **Klarheit zuerst**: Sorgen Sie dafür, dass Benutzende sofort wissen, dass ihre Übermittlung erfolgreich war.
+- **Wertschöpfung**: Stellen Sie Informationen bereit, die Benutzenden bei den nächsten Schritten helfen.
+- **Konsistentes Branding**: Behalten Sie den Ton und den visuellen Stil Ihres Unternehmens bei.
+- **Überlegungen zu Mobilgeräten**: Testen Sie Nachrichten auf verschiedenen Bildschirmgrößen.
 
-**Umleitungsoptimierung:**
+**Optimierte Umleitungen:**
 
-- **Seitenoptimierung**: Stellen Sie sicher, dass Umleitungsziele für Post-Formular-Besucher optimiert sind
-- **Leistung wird geladen** Überprüfen Sie, ob Umleitungsseiten schnell geladen werden, um das Benutzererlebnis zu erhalten.
-- **Inhaltsrelevanz**: Stellen Sie sicher, dass der Umleitungsinhalt für den Formularkontext relevant ist
+- **Seitenoptimierung**: Stellen Sie sicher, dass Umleitungsziele für Besuchende nach einer Formularübermittlung optimiert sind.
+- **Ladeleistung**: Überprüfen Sie, ob Umleitungsseiten schnell geladen werden, um ein gutes Benutzererlebnis zu wahren.
+- **Inhaltsrelevanz**: Stellen Sie sicher, dass der Umleitungsinhalt für den Formularkontext relevant ist.
 
 ### Sicherheitsaspekte
 
 **URL-Validierung:**
 
-- Gültige Validierung für Umleitungs-URLs implementieren, um bösartige Umleitungen zu verhindern
-- Erwägen von Ansätzen zur Whitelist für zulässige Umleitungs-Domains
-- Überwachen von Umleitungsmustern für ungewöhnliche Aktivitäten
+- Implementieren Sie eine angemessene Validierung für Umleitungs-URLs, um bösartige Umleitungen zu verhindern.
+- Erwägen Sie eine Verwendung von Ansätzen mit Zulassungslisten für zulässige Umleitungs-Domains.
+- Überwachen Sie Umleitungsmuster auf ungewöhnliche Aktivitäten.
 
 **Inhaltssicherheit:**
 
-- Bereinigen des Inhalts der Dankesnachricht, um das Einfügen von Skripten zu verhindern
-- Implementieren von korrekten Inhaltssicherheitsrichtlinien für Rich-Text-Inhalte
-- Regelmäßige Sicherheitsüberprüfungen von Umleitungszielen
+- Bereinigen Sie den Inhalt der Dankesnachricht, um ein Injizieren von Skripten zu verhindern.
+- Implementieren Sie angemessene Inhaltssicherheitsrichtlinien für Rich-Text-Inhalte.
+- Nehmen Sie regelmäßig Sicherheitsprüfungen für Umleitungsziele vor.
 
 ### Analyse und Tracking
 
 **Überlegungen zur Implementierung:**
 
-- **Zielverfolgung**: Einrichten von Analysezielen sowohl für die Ansichten der Dankesnachricht als auch für die Weiterleitung
-- **User Journey Mapping**: Verfolgen Sie, wie Benutzer mit Erlebnissen nach der Übermittlung interagieren
-- **Konversionsoptimierung**: A/B-Test verschiedener Dankesnachrichten und Umleitungsziele
+- **Zielverfolgung**: Richten Sie Analyseziele sowohl für Ansichten der Dankesnachricht als auch für die Umleitung ein.
+- **User-Journey-Mapping**: Verfolgen Sie, wie Benutzende mit Erlebnissen nach der Übermittlung interagieren.
+- **Konversionsoptimierung**: Führen Sie A/B-Tests für verschiedene Dankesnachrichten und Umleitungsziele durch.
 
 **Messstrategien:**
 
-- Überwachen der Besuchszeit für Dankesnachrichten vor der Kündigung
-- Tracking der Klickraten für Links in Dankesnachrichten
-- Analysieren des Benutzerverhaltens auf Umleitungszielseiten
+- Überwachen Sie die Besuchsdauer von Dankesnachrichten, bevor diese geschlossen werden.
+- Verfolgen Sie die Clickthrough-Raten für Links in Dankesnachrichten.
+- Analysieren Sie das Benutzerverhalten auf Umleitungszielseiten.
 
 ## Validierungs-Checkpoints
 
-Nach der Konfiguration des Erlebnisses nach der Übermittlung:
+Nach der Konfiguration des Erlebnisses im Anschluss an die Übermittlung:
 
 **Konfigurationsüberprüfung:**
 
 - Formulareigenschaften zeigen die ausgewählte Dankesoption korrekt an
 - Nachrichteninhalt wird im Vorschaumodus korrekt angezeigt
-- Umleitungs-URLs sind ordnungsgemäß formatiert und zugänglich
+- Umleitungs-URLs sind ordnungsgemäß formatiert und aufrufbar
 - Alle Links in Nachrichten funktionieren ordnungsgemäß
 
-**Benutzererlebnistests:**
+**Test des Anwendererlebnisses:**
 
-- Senden von Testformularen zur Überprüfung der korrekten Anzeige von Dankesnachrichten
-- Testen der Weiterleitungsfunktion über verschiedene Browser hinweg
-- Überprüfen der mobilen Reaktionsfähigkeit von Dankesnachrichten
-- Überprüfen, ob Umleitungsziele ordnungsgemäß geladen werden
+- Senden Sie Testformulare zur Überprüfung der korrekten Anzeige von Dankesnachrichten.
+- Testen Sie die Umleitungsfunktion über verschiedene Browser hinweg.
+- Überprüfen Sie die Reaktionsfähigkeit von Dankesnachrichten auf Mobilgeräten.
+- Überprüfen Sie, ob Umleitungsziele ordnungsgemäß geladen werden.
 
-**Analytics-Einrichtung:**
+**Analyse-Setup:**
 
 - Trackingcodes für Dankesnachrichten richtig implementiert
 - Tracking des Umleitungsziels konfiguriert
@@ -238,14 +238,13 @@ Nach der Konfiguration des Erlebnisses nach der Übermittlung:
 
 ## Nächste Schritte
 
-Nach erfolgreicher Konfiguration des Erlebnisses nach der Übermittlung:
+Nach erfolgreicher Konfiguration des Erlebnisses im Anschluss an die Übermittlung:
 
-- **Leistung überwachen**: Überprüfen Sie die Analysen, um die Benutzerinteraktion mit Dankesnachrichten oder Umleitungsseiten zu verstehen
-- **Iterieren und verbessern**: Verwenden Sie Benutzer-Feedback und Dateneinblicke, um Ihre Strategie nach der Übermittlung zu verfeinern
-- **Implementierung skalieren**: Wenden Sie erfolgreiche Muster auf andere Formulare in Ihrer Organisation an
+- **Leistung überwachen**: Überprüfen Sie die Analysen, um die Benutzerinteraktion mit Dankesnachrichten oder Umleitungsseiten genau zu verstehen.
+- **Iterieren und verbessern**: Verwenden Sie Benutzer-Feedback und Datenerkenntnisse, um Ihre Strategie nach der Übermittlung zu verfeinern.
+- **Implementierung skalieren**: Wenden Sie erfolgreiche Muster auf andere Formulare in Ihrem Unternehmen an.
 
 **Verwandte Dokumentation:**
 
 - [Konfigurationshandbuch für die Formularübermittlung](submit-action.md)
 - [Best Practices für das Benutzererlebnis](responsive-layout.md)
-

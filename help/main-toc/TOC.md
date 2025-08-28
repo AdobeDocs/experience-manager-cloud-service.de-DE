@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
 workflow-type: tm+mt
 source-wordcount: '6557'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -1032,7 +1032,7 @@ ht-degree: 97%
       + [Entwickeln einer benutzerdefinierten Komponente für Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Häufig gestellte Fragen zu Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [Einführung und Übersicht](/help/commerce-cloud/introduction.md)
+   + [Einführung und Überblick](/help/commerce-cloud/introduction.md)
    + Edge Delivery Services-Storefront {#edge-storefront}
       + [Einführung](/help/commerce-cloud/edge-storefront/introduction.md)
    + Storefront eines Drittanbieters {#thrid-party-storefront}
