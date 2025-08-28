@@ -247,11 +247,11 @@ Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung zu einem z
 
 #### Inhaltsversionen {#mt-content}
 
-* * *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das später mitgeteilt wird)
+* &#x200B;* *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das später mitgeteilt wird)
    * Versionen, die älter als *30 Tage* sind, werden regelmäßig gelöscht.
    * Die letzten fünf Versionen der letzten 30 Tage werden zusammen mit der neuesten Version und der aktuellen Version unabhängig von deren Alter beibehalten.
 
-* * *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
+* &#x200B;* *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
    * Versionen, die älter als *7 Jahre* sind, werden regelmäßig gelöscht.
    * Alle Versionen der letzten 7 Jahre werden beibehalten.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
@@ -260,11 +260,11 @@ Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung zu einem z
 
 #### Auditprotokoll {#mt-auditlogs}
 
-* * *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das separat mitgeteilt wird):
+* &#x200B;* *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das separat mitgeteilt wird):
    * Replikations-, DAM-und Seiten-Auditprotokolle, die älter als *7 Tage* sind, werden regelmäßig gelöscht.
    * Alle Ereignisse werden standardmäßig protokolliert.
 
-* * *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
+* &#x200B;* *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
    * Replikations-, DAM-und Seiten-Auditprotokolle, die älter als *7 Jahre* sind, werden regelmäßig gelöscht.
    * Alle Ereignisse werden standardmäßig protokolliert.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
