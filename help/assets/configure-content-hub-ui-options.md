@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
+source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 95%
+source-wordcount: '2265'
+ht-degree: 91%
 
 ---
 
@@ -90,7 +90,7 @@ Sie können die Metadatenfelder konfigurieren, die den Benutzenden beim Hochlade
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Eigenschaft klicken, um die Labels zu bearbeiten oder diese Felder mit dem Umschalter **[!UICONTROL Pflichtfeld]** für Benutzende beim Hochladen von Assets als obligatorisch bzw. als nicht obligatorisch festzulegen. Oder klicken Sie auf das Symbol „Löschen“, um eine Metadateneigenschaft zu löschen.
+Ebenso können Sie auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Eigenschaft klicken, um die Beschriftungen zu bearbeiten, diese Felder für Benutzer beim Hochladen von Assets als obligatorisch oder nicht obligatorisch festzulegen, indem Sie den Umschalter **[!UICONTROL Erforderliches Feld]** verwenden, oder auf das Symbol „Löschen“ klicken, um Metadateneigenschaften zu löschen.
 
 Klicken Sie auf den Umschalter **[!UICONTROL Automatische Genehmigung]**, wenn alle Assets, die Sie zum Experience Manager Assets-Repository hinzufügen, automatisch genehmigt werden müssen, damit sie in Content Hub sofort verfügbar sind. Andernfalls müssen DAM-Autorinnen bzw. -Autoren oder DAM-Admins die Assets manuell genehmigen, damit sie in Content Hub verfügbar sind. Der Umschalter ist standardmäßig auf den Status „Aus“ eingestellt.
 
@@ -123,6 +123,20 @@ Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) 
 
 Die auf der Konfigurationsoberfläche aktivierten Filter werden auf der Suchseite angezeigt:
 ![Suchen in Content Hub](assets/content-hub-filters1.png)
+
+#### Massensuche {#bulk-search-configuration}
+
+Gehen Sie wie folgt vor, um die Suche nach mehreren Assets gleichzeitig in [!DNL Content Hub] zu aktivieren:
+
+1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Filter]**.
+
+1. Klicken Sie ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg)verfügbar neben jedem verfügbaren Filter.
+
+1. Aktivieren Sie **[!UICONTROL Umschalter]** Massensuche“. Die Standardtrennzeichen `[ , | \t | \r\n | \r | \n ]` werden automatisch angezeigt. Darüber hinaus können Sie auch zusätzliche Trennzeichen hinzufügen. Geben Sie dazu Trennzeichen im Eingabefeld an, die durch ein `pipe symbol (|)` getrennt sind.
+
+   ![Konfiguration der Massensuche](assets/bulk-search-configuration.png)
+
+1. Klicken Sie **[!UICONTROL Bestätigen]**, um die Änderungen zu speichern. Siehe [Massensuche in Content Hub](search-assets-content-hub.md#bulk-search) in Aktion.
 
 ### Asset-Details {#configure-asset-details-content-hub}
 
@@ -312,3 +326,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
+
