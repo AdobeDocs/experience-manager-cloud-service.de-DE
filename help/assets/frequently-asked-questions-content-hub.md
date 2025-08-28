@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Es gibt einige Konfigurationen dazu, wie Benutzende [!DNL Content Hub] und [!DNL
    >
    >Die Person, die Express- und Assets-Produktprofilen in zwei Admin Consoles zugewiesen ist, muss über dieselbe E-Mail-Adresse verfügen und ein Unternehmenskonto vom Typ **Unternehmen oder Schule** statt des **persönlichen** Kontos verwenden. In der idealen Konfiguration sind beide Admin Consoles als **Federated ID** mit einer vertrauenswürdigen Beziehung zwischen ihnen eingerichtet, damit Benutzende von einem nahtlosen Single Sign-on-Erlebnis profitieren. Einige der Express-Abos (z. B. Express Teams) unterstützen Federated ID/Single Sign-on nicht.
 
-Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[!UICONTROL # /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[#UICONTROL /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Kann ich Content Hub so einrichten, dass die Markenrichtlinien meiner Organisation als Link auf der Startseite angezeigt werden? {#content-hub-setup-brand-guidelines}
 
@@ -137,13 +137,13 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden L
 
 ## Wie kann ich ein Repository auswählen, um Assets nur für die ausgewählte Umgebung anzuzeigen? {#select-repository-multiple-environments}
 
-Wenn Sie Content Hub für Produktionsumgebungen und andere untere Umgebungen für dasselbe Programm konfiguriert haben, können Sie das Repository auswählen und die Assets für die ausgewählte Umgebung anzeigen. Führen Sie die folgenden Schritte aus:
+Wenn Sie Content Hub für Produktionsumgebungen und andere niedrigere Umgebungen für dasselbe Programm konfiguriert haben, können Sie das Repository auswählen und die Assets für die ausgewählte Umgebung anzeigen. Führen Sie die folgenden Schritte aus:
 
 1. Klicken Sie auf das Benutzersymbol im rechten Bereich.
 
-1. Wählen Sie im **[!UICONTROL Produkteinstellungen]** die Option **[!UICONTROL Repository auswählen]** aus.
+1. Wählen Sie im Abschnitt **[!UICONTROL Produkteinstellungen]** die Option **[!UICONTROL Repository auswählen]** aus.
 
-1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Repository]** das Repository aus und klicken Sie zur Bestätigung **[!UICONTROL OK]**.
+1. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Repository]** das Repository aus und klicken Sie zur Bestätigung auf **[!UICONTROL OK]**.
 
    Content Hub zeigt jetzt Assets für die ausgewählte Umgebung an.
 
@@ -155,7 +155,7 @@ Das Bild, das Sie als Ausgabedarstellung hinzufügen:
 
 * Kann im JPG-, JPEG- oder PNG-Format vorliegen.
 
-* Muss unter 50 MB sein
+* Darf maximal 50 MB groß sein
 
 Sofern verfügbar, zeigt Content Hub das Bild als Vorschauminiatur für die ZIP-Datei in Content Hub an.
 

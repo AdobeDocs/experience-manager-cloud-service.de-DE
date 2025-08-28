@@ -5,9 +5,9 @@ feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3071'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ Auf dieser Seite wird auch beschrieben, wie der Dispatcher-Cache invalidiert wir
 
 ## Caching {#caching}
 
-Das Caching von HTTP-Antworten im CDN von AEM as a Cloud Service wird durch die folgenden HTTP-Antwort-Header aus der Quelle gesteuert: `Cache-Control`, `Surrogate-Control` oder `Expires`.
+Das Caching von HTTP-Antworten im CDN von AEM as a Cloud Service wird durch die folgenden HTTP-Antwort-Header der ursprünglichen Elemente `Cache-Control`, `Surrogate-Control` oder `Expires` gesteuert.
 
 Diese Cache-Header werden normalerweise in vhost-Konfigurationen in AEM Dispatcher mithilfe von mod_headers festgelegt, können aber auch in benutzerdefiniertem Java™-Code festgelegt werden, der in AEM Publish selbst ausgeführt wird (siehe [Aktivieren des CDN-Cachings](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
 
 Der Cache-Schlüssel für CDN-Ressourcen enthält die vollständige Anfrage-URL, einschließlich Abfrageparametern, sodass bei jedem unterschiedlichen Abfrageparameter ein anderer Cache-Eintrag erzeugt wird. Entfernen Sie ggf. unerwünschte Abfrageparameter. [Nachstehend](#marketing-parameters) finden Sie Informationen dazu, wie Sie die Cache-Trefferquote verbessern können.
 
-Ursprungsantworten, die `private`, `no-cache` oder `no-store` in `Cache-Control` enthalten, werden nicht vom CDN von AEM as a Cloud Service zwischengespeichert (weitere Informationen finden [So deaktivieren Sie die CDN](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)Zwischenspeicherung).  Zudem werden Antworten, die Cookies setzen, also einen `Set-Cookie`-Antwort-Header aufweisen, nicht vom CDN zwischengespeichert.
+Ursprungsantworten, die `private`, `no-cache` oder `no-store` in `Cache-Control` enthalten, werden nicht vom AEM as a Cloud Service-CDN zwischengespeichert (weitere Informationen unter [Deaktivieren des CDN-Cachings](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)).  Zudem werden Antworten, die Cookies setzen, also einen `Set-Cookie`-Antwort-Header aufweisen, nicht vom CDN zwischengespeichert.
 
 ### HTML/Text {#html-text}
 
@@ -514,7 +514,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -526,9 +526,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/de/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/de/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Client-seitige Bibliotheken und Versionskonsistenz {#content-consistency}
 

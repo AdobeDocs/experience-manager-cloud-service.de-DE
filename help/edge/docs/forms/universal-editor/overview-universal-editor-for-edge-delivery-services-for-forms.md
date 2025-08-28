@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '984'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Unabhängig davon, ob Sie nun einfaches Client-seitiges Rendern ermöglichen, Br
 
 | ![Stile](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Services zum Vorausfüllen](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B-Tests](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Formulare vorbefüllen](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**A/B-Tests**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Vorausgefüllte Formulare](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**A/B-Tests**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Die Formatierung mit CSS ermöglicht es Entwicklerinnen und Entwicklern, das Erscheinungsbild von Formularelementen anzupassen und ein visuell ansprechendes Design zu erstellen, das zur Ästhetik der Website passt. | Services zum Vorausfüllen füllen Formularfelder automatisch mit relevanten Benutzerdaten aus verschiedenen Quellen auf, was weniger manuelle Eingaben erfordert und das Anwendererlebnis verbessert. | A/B-Tests ermöglichen es Organisationen, verschiedene Formularentwürfe, Layouts und Funktionen auszuprobieren, um die Varianten mit der besten Leistung zu ermitteln. |
 
 | ![Analyse und Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Formularfragmente](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Datenbindung](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |

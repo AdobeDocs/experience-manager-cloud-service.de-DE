@@ -5,9 +5,9 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3440'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die 
 
 Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/33376?quality=9&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -105,7 +105,7 @@ Beim Start der neuen Version des Programms, aber vor der Umstellung:
 
 Nach der Umstellung auf die neue Programmversion:
 
-* Alle anderen Inhalte, die über Jackrabbit-Vault definiert werden können. Zum Beispiel:
+* Alle anderen Inhalte, die über Jackrabbit-Vault definiert werden können. Beispiel:
    * Ordner (hinzufügen, ändern, entfernen)
    * Bearbeitbare Vorlagen (hinzufügen, ändern, entfernen)
    * Kontextsensible Konfiguration (alles unter `/conf`) (hinzufügen, ändern, entfernen)

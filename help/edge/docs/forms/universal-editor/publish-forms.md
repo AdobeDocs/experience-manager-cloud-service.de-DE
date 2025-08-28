@@ -1,44 +1,44 @@
 ---
-title: Veröffentlichen des adaptiven Formss mit Edge Delivery Services
-description: Erfahren Sie, wie Sie adaptive Forms mit Edge Delivery Services für die Verwendung in der Produktion veröffentlichen, konfigurieren und aufrufen können.
+title: Veröffentlichen adaptiver Formulare mit Edge Delivery Services
+description: Erfahren Sie, wie Sie adaptive Formulare mit Edge Delivery Services zum Einsatz in der Produktion veröffentlichen, konfigurieren und aufrufen können.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 keywords: Formulare veröffentlichen, Edge Delivery Services, Formularkonfiguration, CORS, Referrer-Filter
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Veröffentlichen des adaptiven Formss mit Edge Delivery Services
+# Veröffentlichen adaptiver Formulare mit Edge Delivery Services
 
-Durch das Veröffentlichen eines adaptiven Formulars wird es in Edge Delivery Services für Endbenutzer verfügbar, die darauf zugreifen und es senden möchten. Dieser Prozess umfasst drei Hauptphasen: Veröffentlichen des Formulars, Konfigurieren der Sicherheitseinstellungen und Zugreifen auf das Live-Formular.
+Durch das Veröffentlichen eines adaptiven Formulars wird es in Edge Delivery Services für Endbenutzerinnen und -benutzer verfügbar, die es aufrufen und versenden möchten. Dieser Prozess beinhaltet drei Hauptphasen: Veröffentlichen des Formulars, Konfigurieren der Sicherheitseinstellungen und Zugreifen auf das Live-Formular.
 
 **Was Sie erreichen werden:**
 
-- Veröffentlichen des Formulars in Edge Delivery Services
-- Sicherheitseinstellungen für die Formularübermittlung konfigurieren
-- Zugreifen auf und Überprüfen des veröffentlichten Formulars
+- Veröffentlichen Ihres Formulars mit Edge Delivery Services
+- Konfigurieren der Sicherheitseinstellungen für die Formularübermittlung
+- Aufrufen und Überprüfen des veröffentlichten Formulars
 - Einrichten von korrektem URL-Routing und CORS-Richtlinien
 
 ## Voraussetzungen
 
-- Adaptives Formular, das mithilfe einer Edge Delivery Services-Vorlage erstellt wurde
+- Ein adaptives Formular, das mithilfe der Vorlage „Edge Delivery Services“ erstellt wurde 
 - Formular getestet und produktionsbereit
 - AEM Forms-Autorenberechtigungen
 - Zugriff auf Cloud Manager (für Produktionskonfiguration)
 - Entwicklerzugriff auf den Formularblock-Code (für die Einrichtung der Übermittlung)
 
-## Übersicht über den Veröffentlichungsprozess
+## Veröffentlichungsprozess – Übersicht
 
 Das Veröffentlichen von Formularen in Edge Delivery Services erfolgt in drei Phasen:
 
-- **Phase 1: Formularveröffentlichung** - Veröffentlichen Sie Ihr Formular im CDN und überprüfen Sie den Veröffentlichungsstatus
-- **Phase 2: Sicherheitskonfiguration** - Einrichten von CORS-Richtlinien und Referrer-Filtern für sichere Übermittlungen
-- **Phase 3: Zugriff und Validierung** - Testen der Formularfunktionalität und Validieren des gesamten Workflows
+- **Phase 1: Formularveröffentlichung** – Veröffentlichen Sie Ihr Formular im CDN und überprüfen Sie den Veröffentlichungsstatus.
+- **Phase 2: Sicherheitskonfiguration** – Richten Sie CORS-Richtlinien und Referrer-Filter für sichere Übermittlungen ein.
+- **Phase 3: Zugriff und Validierung** – Testen Sie die Formularfunktionalität und validieren Sie den gesamten Workflow.
 
 Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstellung zu gewährleisten.
 
@@ -46,52 +46,52 @@ Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstell
 
 +++ Schritt 1: Veröffentlichung starten
 
-1. **Zugriff auf Ihr Formular**: Öffnen Sie Ihr adaptives Formular im universellen Editor
-2. **Veröffentlichung starten**: Klicken Sie auf das Symbol **Veröffentlichen** in der Symbolleiste
+1. **Zugriff auf Ihr Formular**: Öffnen Sie Ihr adaptives Formular im universellen Editor.
+2. **Veröffentlichung starten**: Klicken Sie in der Symbolleiste auf das Symbol **Veröffentlichen**.
 
-   ![Klicken Sie auf „Veröffentlichen“](/help/forms/assets/publish-icon-eds-form.png)
+   ![Klicken auf „Veröffentlichen“](/help/forms/assets/publish-icon-eds-form.png)
 
 +++
 
 
 +++ Schritt 2: Überprüfen und bestätigen
 
-1. **Überprüfen und Veröffentlichen von Assets**: Das System zeigt alle Assets an, die veröffentlicht werden, einschließlich Ihres Formulars
+1. **Zu veröffentlichende Assets prüfen**: Das System zeigt alle Assets an, die veröffentlicht werden sollen, einschließlich Ihres Formulars.
 
    ![Beim Klicken auf „Veröffentlichen“](/help/forms/assets/on-click-publish.png)
 
-2. **Veröffentlichung bestätigen**: Klicken Sie auf **Veröffentlichen**, um fortzufahren
-3. **Erfolg überprüfen**: Suchen Sie nach der Bestätigungsmeldung
+2. **Veröffentlichung bestätigen**: Klicken Sie auf **Veröffentlichen**, um fortzufahren.
+3. **Erfolg überprüfen**: Suchen Sie nach der Bestätigungsmeldung.
 
    ![Erfolgreiche Veröffentlichung](/help/forms/assets/publish-success.png)
 
 +++
 
 
-+++ Schritt 3: Überprüfen des Veröffentlichungsstatus
++++ Schritt 3: Veröffentlichungsstatus überprüfen
 
-**Status überprüfen**: Klicken Sie erneut auf das Symbol **Veröffentlichen**, um den aktuellen Status anzuzeigen
+**Status überprüfen**: Klicken Sie erneut auf das Symbol **Veröffentlichen**, um den aktuellen Status anzuzeigen.
 
 ![Veröffentlichungsstatus](/help/forms/assets/publish-status.png)
 
 **Validierungs-Checkpoint:**
 
-- Das Formular zeigt im Editor den Status „Veröffentlicht“ an
+- Das Formular weist im Editor den Status „Veröffentlicht“ auf
 - Keine Fehlermeldungen während des Veröffentlichungsprozesses
 - Formular erscheint in der Liste der veröffentlichten Assets
 
 +++
 
 
-+++ Verwalten von veröffentlichten Forms
++++ Verwalten von veröffentlichten Formularen
 
 **So heben Sie die Veröffentlichung eines Formulars auf:**
 
-1. Öffnen Sie das Formular im Editor
-2. Klicken Sie auf das Dreipunkt-Menü (⋯) oben rechts
-3. Wählen Sie **Veröffentlichung aufheben** aus
+1. Öffnen Sie das Formular im universellen Editor.
+2. Klicken Sie auf das Dreipunkt-Menü (⋯) oben rechts.
+3. Wählen Sie **Veröffentlichung aufheben** aus.
 
-![Veröffentlichung von Formular aufheben](/help/forms/assets/unpublish--form.png)
+![Heben Sie die Veröffentlichung des Formulars auf.](/help/forms/assets/unpublish--form.png)
 
 +++
 
@@ -100,12 +100,12 @@ Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstell
 
 +++ Warum eine Sicherheitskonfiguration erforderlich ist
 
-Um sichere Formularübermittlungen zu aktivieren, müssen Sie Sicherheitseinstellungen konfigurieren, die:
+Für sichere Formularübermittlungen müssen Sie Sicherheitseinstellungen konfigurieren, die:
 
-- Edge Delivery Services erlauben, Daten an AEM zu senden
-- Verhindern Sie nicht autorisierten Zugriff auf Ihre AEM-Instanz
-- Aktivieren von CORS (Cross-Origin Resource Sharing) für Formularübermittlungen
-- Filtern Sie Anfragen so, dass nur rechtmäßige Edge Delivery-Domains zugelassen werden
+- Es Edge Delivery Services erlauben, Daten an AEM zu senden
+- Nicht autorisierten Zugriff auf Ihre AEM-Instanz verhindern
+- CORS (Cross-Origin Resource Sharing) für Formularübermittlungen aktivieren
+- Anfragen so filtern, dass nur rechtmäßige Edge Delivery-Domains zugelassen werden
 
 >[!IMPORTANT]
 >
@@ -115,7 +115,7 @@ Um sichere Formularübermittlungen zu aktivieren, müssen Sie Sicherheitseinstel
 
 
 
-+++ Schritt 1: Konfigurieren der URL für die Formularübermittlung
++++ Schritt 1: URL für Formularübermittlung konfigurieren
 
 **Zweck**: Direkte Formularübermittlungen an Ihre AEM-Instanz
 
@@ -138,15 +138,15 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 
 - `constant.js` Datei wurde mit der richtigen AEM-Veröffentlichungs-URL aktualisiert
 - URL entspricht Ihrer Umgebung (Produktion, Staging oder lokal)
-- Kein Schrägstrich in der URL
+- Kein abschließender Schrägstrich in der URL
 
 +++
 
 
 
-+++ Schritt 2: Konfigurieren der CORS-Einstellungen
++++ Schritt 2: CORS-Einstellungen konfigurieren
 
-**Zweck**: Formularübermittlungsanfragen von Edge Delivery Services-Domains zulassen
+**Zweck**: Anfragen zur Formularübermittlung von Edge Delivery Services-Domains zulassen
 
 **Implementierung**: Hinzufügen der CORS-Konfiguration zu Ihrer AEM Dispatcher- oder Apache-Konfiguration
 
@@ -163,9 +163,9 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Validierungs-Checkpoint:**
 
-- Auf die Dispatcher-Konfiguration angewendete CORS-Regeln
+- CORS-Regeln auf die Dispatcher-Konfiguration angewendet
 - Alle erforderlichen Domains (localhost, hlx.page, hlx.live) sind enthalten
-- In der Zielumgebung bereitgestellte Konfiguration
+- Konfiguration in der Zielumgebung bereitgestellt
 
 **Referenzdokumentation:**
 
@@ -176,9 +176,9 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 
 
-+++ Schritt 3: Konfigurieren des Referrer-Filters
++++ Schritt 3: Referrer-Filter konfigurieren
 
-**Zweck**: Schreib-Vorgänge auf autorisierte Edge Delivery Services-Domains beschränken
+**Zweck**: Schreibvorgänge auf autorisierte Edge Delivery Services-Domains beschränken
 
 **Implementierungsmethode**: Konfigurieren über Cloud Manager in AEM as a Cloud Service
 
@@ -209,14 +209,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - **`allow.empty`**: Lehnt Anfragen ohne Referrer-Kopfzeilen ab
 - **`allow.hosts.regexp`**: Lässt Anfragen von Edge Delivery Services-Domains zu
-- **`filter.methods`**: Wendet die Filterung auf diese HTTP-Methoden an
+- **`filter.methods`**: Wendet Filterung auf diese HTTP-Methoden an
 - **`exclude.agents.regexp`**: Benutzeragenten von der Filterung ausgeschlossen
 
 **Validierungs-Checkpoint:**
 
 - Konfiguration des Referrer-Filters, bereitgestellt über Cloud Manager
-- Konfiguration aktiv in der AEM-Veröffentlichungsinstanz
-- Die Übermittlung des Testformulars erfolgt über die Edge Delivery Services-Domain
+- Konfiguration in der AEM-Veröffentlichungsinstanz aktiv
+- Übermittlung des Testformulars erfolgt über die Edge Delivery Services-Domain
 - Nicht autorisierte Domains können keine Formulare senden
 
 **Referenzdokumentation:**
@@ -226,7 +226,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 +++
 
 
-### Phase 3: Zugreifen auf das veröffentlichte Formular
+### Phase 3: Das veröffentlichte Formular aufrufen
 
 
 
@@ -241,7 +241,7 @@ https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
 **URL-Komponenten:**
 
 - **`<branch>`**: Name der Git-Verzweigung (normalerweise `main`)
-- **`<repo>`**: Repository-Name
+- **`<repo>`**:Repository-Name
 - **`<owner>`**: GitHub-Organisation oder -Benutzername
 - **`<form_name>`**: Name Ihres Formulars (in Kleinbuchstaben, mit Bindestrich)
 
@@ -261,19 +261,19 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 +++ Abschließende Validierungsschritte
 
-**Überprüfen der Barrierefreiheit von Formularen:**
+**Ein-/Ausgabehilfe von Formularen überprüfen:**
 
-1. **Laden von Formularen testen**: Besuchen Sie Ihre Formular-URL und bestätigen Sie, dass sie ordnungsgemäß geladen wird
-2. **Formularübermittlung testen**: Füllen Sie das Formular aus und senden Sie es, um die Datenverarbeitung zu überprüfen
-3. **Responsives Design überprüfen**: Testformular auf verschiedenen Geräten und Bildschirmgrößen
-4. **Sicherheit überprüfen**: Stellen Sie sicher, dass CORS und Referrer-Filter ordnungsgemäß funktionieren
+1. **Laden von Formularen testen**: Besuchen Sie Ihre Formular-URL und prüfen Sie, ob sie ordnungsgemäß geladen wird.
+2. **Formularübermittlung testen**: Füllen Sie das Formular aus und senden Sie es, um die Datenverarbeitung zu überprüfen.
+3. **Responsives Design prüfen**: Testen Sie das Formular mit verschiedenen Geräten und Bildschirmgrößen.
+4. **Sicherheit überprüfen**: Stellen Sie sicher, dass CORS und Referrer-Filter ordnungsgemäß funktionieren.
 
 **Erwartete Ergebnisse:**
 
 - Formular wird fehlerfrei geladen
 - Alle Formularfelder werden korrekt wiedergegeben
 - Formularübermittlungsprozesse erfolgreich
-- Die Daten werden im konfigurierten Ziel (Arbeitsblatt, E-Mail usw.) angezeigt
+- Daten werden im konfigurierten Ziel (Tabelle, E-Mail usw.) angezeigt
 - Keine Konsolenfehler im Zusammenhang mit CORS oder Sicherheitsrichtlinien
 
 +++
@@ -285,7 +285,7 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - [Konfigurieren von Formularübermittlungsaktionen](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Gestalten und Gestalten von Formularen](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [Erstellen von responsiven Formular-Layouts](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-- [Hinzufügen eines reCAPTCHA-Schutzes](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+- [Hinzufügen von reCAPTCHA-Schutz](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 
 

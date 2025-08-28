@@ -6,9 +6,9 @@ contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2557'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -214,16 +214,16 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 Um die konfigurierten Stamm-Tags anzuzeigen, gehen Sie zur Seite mit den Asset-Details, wo die Zuordnung zwischen dem Metadatenformular und den Stamm-Tags erfolgt.
 
-## Bearbeiten von Metadaten in Forms {#edit-metadata-forms}
+## Bearbeiten von Metadatenformularen {#edit-metadata-forms}
 
-Führen Sie die folgenden Schritte aus, um ein Metadatenformular zu bearbeiten:
+Führen Sie die folgenden Schritte aus, um ein Metadatenformular zu erstellen:
 
-1. Navigieren Sie zu [!DNL Assets View] Homepage und wählen Sie **[!DNL Metadata Forms]** aus, um eine Liste der Metadatenformulare anzuzeigen.
-1. Wählen Sie ein Formular aus und klicken Sie **[!UICONTROL Bearbeiten]**, um die [!DNL Metadata Form Editor] zu öffnen. Auf dieser Seite werden Komponenten des Metadatenformulars im linken Bereich, Registerkarten wie „Standard“, „Erweitert“, „Tags“ und mehr im mittleren Bereich sowie das Bedienfeld „Einstellungen“ zum Bearbeiten der Metadateneigenschaften im rechten Bereich angezeigt.
+1. Navigieren Sie zu [!DNL Assets View]-Homepage und wählen Sie **[!DNL Metadata Forms]** aus, um eine Liste der Metadatenformulare anzuzeigen.
+1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**, um die [!DNL Metadata Form Editor]-Seite zu öffnen. Auf dieser Seite werden Komponenten des Metadatenformulars im linken Bereich, Registerkarten wie „Standard“, „Erweitert“, „Tags“ und mehr im mittleren Bereich sowie das Einstellungsbedienfeld zum Bearbeiten der Metadateneigenschaften im rechten Bereich angezeigt.
 1. Öffnen Sie eine Registerkarte (**[!DNL Basic]**, **[!DNL Advanced]** oder **[!DNL Tags]**).
-1. Wählen Sie eine Metadateneigenschaft aus, um ihre Einstellungen im Bedienfeld **[!UICONTROL Einstellungen]** zu bearbeiten. Sie können Eigenschaftszuordnungen aktualisieren, Kennzeichnungen umbenennen, Eigenschaftswerte ändern oder hinzufügen und weitere solcher Bearbeitungen im Bedienfeld **[!UICONTROL Einstellungen]** durchführen.
-1. Klicken Sie **[!UICONTROL Vorschau]**, um die Änderungen am Formular zu überprüfen, bevor Sie diese Änderungen speichern.
-1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu anzuwenden.
+1. Wählen Sie eine Metadateneigenschaft aus, um ihre Einstellungen im Bedienfeld **[!UICONTROL Einstellungen]** zu bearbeiten. Sie können im Bedienfeld **[!UICONTROL Einstellungen]** Eigenschaftszuordnungen aktualisieren, Labels umbenennen, Eigenschaftswerte ändern oder hinzufügen und weitere solcher Bearbeitungen durchführen.
+1. Klicken Sie auf **[!UICONTROL Vorschau]**, um die Änderungen am Formular zu überprüfen, bevor Sie die Änderungen speichern.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen anzuwenden.
 
 ## Verbessern der Inhaltssuche mit KI-generierten Metadaten {#ai-smart-tags}
 

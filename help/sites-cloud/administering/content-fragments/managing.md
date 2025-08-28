@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
 source-git-commit: bda1ef43d452222036e9df20b6f3acee7bec8855
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2724'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -246,9 +246,9 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 ## Kopieren eines Inhaltsfragments {#copy-a-content-fragment}
 
-**Kopieren** erstellt eine Kopie des ausgewählten Fragments an seinem Speicherort.
+Durch **Kopieren** wird eine Kopie des ausgewählten Fragments am gleichen Speicherort erstellt.
 
-* In der **Kopieren**-Aktion können Sie auswählen, ob **Mit untergeordneten Elementen kopieren** (referenzierte Fragmente) werden sollen. Auf diese Weise können Sie sowohl das ausgewählte Inhaltsfragment als auch alle referenzierten Fragmente kopieren. AEM:
+* In der Aktion **Kopieren** können Sie wählen, ob der Vorgang **Mit untergeordneten Elementen kopieren** (referenzierte Fragmente) erfolgen soll. Auf diese Weise können Sie sowohl das ausgewählte Inhaltsfragment als auch alle referenzierten Fragmente kopieren. AEM:
 
    * Erstellt eine Kopie des ausgewählten Inhaltsfragments an seinem Speicherort.
    * Erstellt Kopien aller Fragmente, auf die das ausgewählte Fragment verweist. Diese werden an denselben Speicherort kopiert wie das ursprünglich referenzierte Fragment.
@@ -257,9 +257,9 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 * Eine tiefe Kopie wird erstellt. Wenn ein referenziertes Inhaltsfragment also auch auf Fragmente verweist, werden diese ebenfalls kopiert.
 
-* Die **Kopieren**-Aktion wirkt sich nicht auf andere referenzierte Inhalte wie Assets oder Bilder aus. Die Referenz (Inhaltsreferenz) wird als Teil des neuen Fragments kopiert, nicht jedoch das Asset/der Bildinhalt selbst.
+* Die Aktion **Kopieren** wirkt sich nicht auf andere referenzierte Inhalte wie Assets oder Bilder aus. Die Referenz (Inhaltsreferenz) wird als Teil des neuen Fragments kopiert, nicht jedoch das Asset/der Bildinhalt selbst.
 
-Also, wenn wir beginnen mit:
+Wenn wir also beginnen:
 
 ```xml
 FolderA 
@@ -271,7 +271,7 @@ FolderB
    FragmentB
 ```
 
-Das Kopieren von FragmentA nach OrdnerC würde zu Folgendem führen:
+FragmentA nach OrdnerC zu kopieren, würde das zu Folgendem führen:
 
 ```xml
 FolderA 
@@ -437,7 +437,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 >
 >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
-### Veröffentlichung {#publishing}
+### Publishing {#publishing}
 
 Sie können Ihre Inhaltsfragmente über die Option **Veröffentlichen** mit folgenden Methoden veröffentlichen:
 
@@ -532,7 +532,7 @@ Auf die Details der übergeordneten Verweise kann über die
 
 Beide stellen einen Link bereit, der ein Dialogfeld öffnet, in dem alle übergeordneten Verweise dieses Fragments aufgelistet werden, einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie im Dialogfeld auf den **Titel** oder auf das Link-Symbol.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cf-managing-console-references-dialog.png)
 
@@ -572,7 +572,7 @@ Der Panel zum Filtern bietet folgende Optionen:
 * die Möglichkeit, Ihre Konfiguration zu **speichern**
 * die Option zum Abrufen eines gespeicherten Suchfilters für die Wiederverwendung
 
-Nach der Auswahl werden die Optionen **Filtern nach** angezeigt (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Zum Beispiel:
+Nach der Auswahl werden die Optionen **Filtern nach** angezeigt (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Beispiel:
 
 ![Inhaltsfragmentkonsole – Filtern](assets/cf-managing-console-filter.png)
 

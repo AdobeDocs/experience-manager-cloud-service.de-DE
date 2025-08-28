@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie einzelne oder mehrere Assets und deren Ausgab
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '831'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in 
 
   >[!NOTE]
   > 
-  > Im Bedienfeld Herunterladen werden nur benutzerdefinierte statische Ausgabedarstellungen angezeigt. Die standardmäßigen `cq5dam.*`-Miniaturansichten werden in Content Hub nicht angezeigt.
+  > Im Bedienfeld „Herunterladen“ werden nur benutzerdefinierte statische Ausgabedarstellungen angezeigt. Die standardmäßigen Miniaturansichten `cq5dam.*` werden in Content Hub nicht angezeigt.
 
 ### Aktivieren von dynamischen Ausgabedarstellungen {#enable-dynamic-media-renditions}
 

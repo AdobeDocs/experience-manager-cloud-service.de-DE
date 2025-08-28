@@ -5,9 +5,9 @@ exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Ereignisse umfassen die Payload der Anfrage und der Antwort und werden ausgelös
 
 ## Ereignisse zur Inhaltsaktualisierung {#content-events}
 
-### Aue:content-add {#content-add}
+### aue:content-add {#content-add}
 
 Das Ereignis `aue:content-add` wird ausgelöst, wenn einem Container eine neue Komponente hinzugefügt wird.
 
@@ -53,7 +53,7 @@ Die Payload sind Inhalte vom universellen Editor-Dienst mit Fallback-Inhalten au
 }
 ```
 
-### Aue:content-details {#content-details}
+### aue:content-details {#content-details}
 
 Das Ereignis `aue:content-details` wird ausgelöst, wenn eine Komponente im Bedienfeld „Eigenschaften“ geladen wird.
 
@@ -70,7 +70,7 @@ Die Payload ist der Inhalt der Komponente sowie optional ihr Schema.
 }
 ```
 
-### Aue:content-move {#content-move}
+### aue:content-move {#content-move}
 
 Das Ereignis `aue:content-move` wird ausgelöst, wenn eine Komponente verschoben wird.
 
@@ -89,7 +89,7 @@ Die Payload ist die Komponente sowie der Quell- und Ziel-Container.
 }
 ```
 
-### Aue:content-patch {#content-patch}
+### aue:content-patch {#content-patch}
 
 Das Ereignis `aue:content-patch` wird ausgelöst, wenn die Daten einer Komponente im Bedienfeld „Eigenschaften“ aktualisiert werden.
 
@@ -108,7 +108,7 @@ Die Payload ist ein JSON-Patch der aktualisierten Eigenschaften.
 }
 ```
 
-### Aue:content-remove {#content-remove}
+### aue:content-remove {#content-remove}
 
 Das Ereignis `aue:content-remove` wird ausgelöst, wenn eine Komponente aus einem Container entfernt wird.
 
@@ -124,7 +124,7 @@ Die Payload ist die Element-ID der entfernten Komponente.
 }
 ```
 
-### Aue:content-update {#content-update}
+### aue:content-update {#content-update}
 
 Das Ereignis `aue:content-update` wird ausgelöst, wenn die Eigenschaften einer Komponente im Kontext aktualisiert werden.
 
@@ -180,7 +180,7 @@ Antwort-Payload:
 
 ## Benutzeroberflächen-Ereignisse {#ui-events}
 
-### Aue:ui-preview {#ui-preview}
+### aue:ui-preview {#ui-preview}
 
 Das Ereignis `aue:ui-preview` wird ausgelöst, wenn der Bearbeitungsmodus der Seite in **Vorschau** geändert wird.
 
@@ -192,7 +192,7 @@ Die Payload für dieses Ereignis ist leer.
 }
 ```
 
-### Aue:ui-edit {#ui-edit}
+### aue:ui-edit {#ui-edit}
 
 Das Ereignis `aue:ui-edit` wird ausgelöst, wenn der Bearbeitungsmodus der Seite in **Bearbeiten** geändert wird.
 
@@ -204,7 +204,7 @@ Die Payload für dieses Ereignis ist leer.
 }
 ```
 
-### Aue:ui-viewport-change {#ui-viewport-change}
+### aue:ui-viewport-change {#ui-viewport-change}
 
 Das Ereignis `aue:ui-viewport-change` wird ausgelöst, wenn die Viewport-Größe geändert wird.
 
@@ -219,7 +219,7 @@ Die Payload sind die Dimensionen des Viewports.
 }
 ```
 
-### Aue:initialized {#initialized}
+### aue:initialized {#initialized}
 
 Das Ereignis `aue:initialized` wird ausgelöst, um der Remote-Seite mitzuteilen, dass sie erfolgreich im universellen Editor geladen wurde.
 

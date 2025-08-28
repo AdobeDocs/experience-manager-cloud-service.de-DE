@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1997'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für
 * die für den Export zu verwendenden Formatoptionen anzugeben
 * einen Target-Arbeitsbereich als Ziel auszuwählen
 
-Die erforderlichen Optionen können unter **Eigenschaften** des erforderlichen Ordners ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
+Die erforderlichen Optionen können in den **Eigenschaften** des erforderlichen Ordners ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
 
 1. Navigieren Sie zur **Assets**-Konsole.
 
-1. Öffnen Sie **Eigenschaften** für den entsprechenden Ordner.
+1. Öffnen Sie die **Eigenschaften** für den entsprechenden Ordner.
 
    >[!NOTE]
    >
@@ -82,7 +82,7 @@ Die erforderlichen Optionen können unter **Eigenschaften** des erforderlichen O
 
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
 
-1. Wählen Sie unter **Cloud Service** Konfiguration Ihre Zielkonfiguration aus der Dropdown-Liste aus.
+1. Wählen Sie unter **Cloud-Service-Konfiguration** in der Dropdown-Liste Ihre Zielkonfiguration.
 
 1. Wählen Sie Ihren Adobe Target-Arbeitsbereich aus.
 
@@ -194,7 +194,7 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
      >
      >Präzise Zielgruppenerfassung bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
      >
-     >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können die präzise Zielgruppenerfassung auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
+     >Die präzise Zielgruppenerfassung ist auf der Autoreninstanz immer aktiviert. In der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud-Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**http://localhost:4502/etc/cloudservices.html**). Sie können die präzise Zielgruppenerfassung auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
      >
      >Wenn Sie ***bereits*** Zielkomponenten erstellt haben und Sie diese Einstellung ändern, wirken sich Ihre Änderungen nicht auf diese Komponenten aus. Sie müssen alle Änderungen an diesen Komponenten direkt vornehmen.
 
@@ -241,7 +241,7 @@ Ihr Framework wird erstellt. Um das Framework auf der Veröffentlichungsinstanz 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=de).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4221'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -363,7 +363,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**: Durch Festlegen dieser Eigenschaft werden nur die ausgewählten Werte von Kontrollkästchen und Optionsfeldern im [!UICONTROL Datensatzdokument] angezeigt.
       * **Trennzeichen für mehrere Werte**: Sie können ein beliebiges Trennzeichen wie Komma oder Zeilenumbruch auswählen, um mehrere Werte anzuzeigen.
       * **Optionenausrichtung**: Sie können die gewünschte Ausrichtung (horizontal, vertikal, wie das adaptive Formular) auswählen, um die Ausrichtung für Felder wie Kontrollkästchen oder Optionsfelder festzulegen, die im [!UICONTROL Datensatzdokument] angezeigt werden sollen. Standardmäßig ist für die Felder im [!UICONTROL Datensatzdokument] die vertikale Ausrichtung festgelegt. Das Festlegen der Eigenschaften über die [!UICONTROL Formularfeldeigenschaften] des Datensatzdokuments überschreibt die Eigenschaften, die in der [!UICONTROL Elementausrichtung] für die Felder in einem adaptiven Formular festgelegt sind. Wenn Sie die Option [!UICONTROL Wie adaptives Formular] auswählen, wird die in der Autoreninstanz des adaptiven Formulars konfigurierte Ausrichtung für Felder des [!UICONTROL Datensatzdokuments] verwendet.
-      * **Anzahl der Optionen für die horizontale Ausrichtung**:You kann die Anzahl der Optionen festlegen, die im Datensatzdokument für die horizontale Ausrichtung angezeigt werden sollen.
+      * **Anzahl der Optionen für die horizontale Ausrichtung**:You: Sie können die Anzahl der Optionen festlegen, die im Nachweis für die horizontale Ausrichtung angezeigt werden sollen.
 
       ![Formularfeldeigenschaften](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -413,8 +413,8 @@ Führen Sie die folgenden Schritte über die Autoreninstanz des Editors für ada
 1. Klicken Sie auf das Symbol ![Symbol konfigurieren](/help/forms/assets/configure-icon.svg), um die **[!UICONTROL Eigenschaften]** des adaptiven Formular-Containers zu öffnen.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Datensatzdokument-Vorlage]** und wählen Sie aus den folgenden Optionen aus:
    * **[!UICONTROL Keine]**: Wenn diese Option ausgewählt ist, wird keine [!UICONTROL Datensatzdokument]-Vorlage für Ihr adaptives Formular erstellt.
-   * **[!UICONTROL Formularvorlage als Dokument aus Datensatzvorlage verknüpfen]**:When Wenn diese Option ausgewählt ist, wird das XFA-Formular als Vorlage für das Datensatzdokument verwendet.
-   * **[!UICONTROL Generieren von Dokument aus Datensatz]**: Wenn diese Option ausgewählt ist, wird die [!UICONTROL Datensatzdokument]-Vorlage automatisch für Ihr adaptives Formular generiert.
+   * **[!UICONTROL Formularvorlage als Dokument aus Datensatzvorlage zuordnen]**:When: Wenn diese Option ausgewählt ist, wird das XFA-Formular als Vorlage für das Datensatzdokument verwendet.
+   * **[!UICONTROL Generieren von Dokument aus Datensatz]**: Wenn diese Option ausgewählt ist, wird die Vorlage für den [!UICONTROL Nachweis] automatisch für Ihr adaptives Formular generiert.
 
 1. Wählen Sie ![Speichern](/help/forms/assets/check-button.png) aus, um die Änderungen zu speichern.
 

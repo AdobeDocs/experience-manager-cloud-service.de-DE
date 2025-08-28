@@ -3,7 +3,7 @@ title: Massen-Upload von Prinzipalen in IMS nach Verwendung von CTT
 description: Überblick über Dateien zum Massen-Upload für Gruppen und Benutzende und deren Verwendung in der Admin Console zum Erstellen von Gruppen und Benutzenden.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2384'
 ht-degree: 100%
 

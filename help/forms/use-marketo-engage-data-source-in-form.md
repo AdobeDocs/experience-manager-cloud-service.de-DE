@@ -1,14 +1,14 @@
 ---
-title: Konfigurieren von Marketo Engage-Daten für adaptive Forms
-description: Erfahren Sie, wie Sie das Marketo Engage-Schema in adaptivem Forms verwenden.
-keywords: Verwenden einer Marketo Engage-Datenquelle in einem adaptiven Forms, Verbinden einer Marketo-Instanz-Datenquelle mit einem Formular , ein Formular mit Marketo verbinden.
+title: Wie lassen sich Marketo Engage-Daten für adaptive Formulare konfigurieren?
+description: Erfahren Sie, wie Sie das Marketo Engage-Schema in adaptiven Formularen verwenden können.
+keywords: Verwenden einer Marketo Engage-Datenquelle in adaptiven Formularen, Verbinden einer Marketo-Instanz-Datenquelle mit einem Formular, Formular mit Marketo verbinden.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
 source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Voraussetzung zur Verwendung der Marketo Engage-Datenquelle mit Formularen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
 
-<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel.</span>
 
 >[!BEGINTABS]
 

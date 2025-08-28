@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Am Ende dieses Artikels erfahren Sie, wie Sie benutzerdefinierte Komponenten von
 
 Bevor eine benutzerdefinierte Komponente verwendet werden kann, muss sie registriert werden, damit der universelle Editor sie als verfügbare Option erkennt. Dies wird durch eine Komponentendefinition erreicht, die eine eindeutige Kennung, Standardeigenschaften und die Struktur der Komponente enthält. Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Komponente für die Formularerstellung verfügbar zu machen:
 
-1. **Neuen Ordner und Dateien hinzufügen**
+1. **Hinzufügen eines neuen Ordners und neuer Dateien**
 
-   Fügen Sie neue Ordner und Dateien für Ihre neue benutzerdefinierte Komponente in Ihrem AEM-Projekt hinzu.
+   Fügen Sie für Ihre neue benutzerdefinierte Komponente in Ihrem AEM-Projekt neue Ordner und Dateien hinzu.
 
    1. Öffnen Sie Ihr AEM-Projekt und navigieren Sie zu `../blocks/form/components/`.
    1. Fügen Sie unter `../blocks/form/components/<component_name>` einen neuen Ordner für Ihre benutzerdefinierte Komponente hinzu. In diesem Beispiel erstellen wir einen Ordner mit dem Namen `range`.
@@ -301,7 +301,7 @@ So stellen Sie sicher, dass die benutzerdefinierte Komponente beim Erstellen von
 
 ### &#x200B;4. Registrieren der benutzerdefinierten Komponente
 
-Damit der Formularblock die benutzerdefinierte Komponente erkennen und ihre beim Formular-Authoring im Komponentenmodell definierten Eigenschaften laden kann, fügen Sie den `fd:viewType` aus der Komponentendefinition zur `mappings.js` hinzu.
+Damit der Formularblock die benutzerdefinierte Komponente erkennen und beim Formular-Authoring ihre im Komponentenmodell definierten Eigenschaften laden kann, fügen Sie den Wert `fd:viewType` aus der Komponentendefinition zur Datei `mappings.js` hinzu.
 
 So registrieren Sie eine Komponente:
 

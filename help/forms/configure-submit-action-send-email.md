@@ -1,14 +1,14 @@
 ---
-title: Senden einer E-Mail bei Übermittlung eines adaptiven Formulars
-description: Erkunden Sie den Prozess zum Einrichten von E-Mail-Benachrichtigungen beim Senden eines adaptiven Formulars.
+title: So senden Sie eine E-Mail beim Übermitteln eines adaptiven Formulars
+description: Erkunden Sie den Prozess zum Einrichten von E-Mail-Benachrichtigungen beim Übermitteln eines adaptiven Formulars.
 keywords: So senden Sie eine E-Mail für ein adaptives Formular, E-Mail-Übermittlungsaktion, E-Mail für adaptive Formulare, E-Mail für Formularübermittlung, E-Mail-Anleitung senden
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

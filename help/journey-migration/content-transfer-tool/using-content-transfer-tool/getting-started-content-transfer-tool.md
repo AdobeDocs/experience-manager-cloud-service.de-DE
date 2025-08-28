@@ -5,9 +5,9 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1654'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 
 SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbindungsprobleme während eines Extraktionsprozesses zu beheben, können Sie die SSL-Protokollierung über die Systemkonsole der AEM-Quellumgebung aktivieren, indem Sie die folgenden Schritte ausführen:
 
-1. Navigieren Sie zur Adobe Experience Manager-Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools > Vorgänge > Web-Konsole** wechseln oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
+1. Navigieren Sie zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools > Vorgänge > Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
 1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extraktions-Service**
 1. Über die Schaltfläche mit dem Stiftsymbol können Sie die Konfigurationswerte bearbeiten
 1. Aktivieren Sie die **SSL-Protokollierung für Extraktion aktivieren** Einstellung festlegen, und drücken Sie dann **Speichern**:
@@ -65,7 +65,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
 >abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/327075/?quality=12&learn=on&captions=ger" text=" Siehe Demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=ger" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service migrieren:
@@ -102,7 +102,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    >[!NOTE]
    >
-   >Der Name muss den Konventionen eines AEM-Knotens entsprechen und darf daher keines dieser Zeichen enthalten: `. / : [ ] | * < > ^ ? { } % # ` sowie keine ungewöhnlichen Symbole oder Emojis.
+   >Der Name muss denselben Konventionen wie bei einem AEM-Knoten entsprechen, d. h., er darf keines der folgenden Zeichen enthalten: `. / : [ ] | * < > ^ ? { } % # ` und auch keine ungewöhnlichen Symbole oder Emojis.
 
 1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Klicken Sie auf Drei-Punkte-Symbol (**…**), um die Dropdown-Liste zu öffnen, und wählen Sie **Extraktionsschlüssel kopieren** aus. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
 

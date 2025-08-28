@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren sowi
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 source-git-commit: 772afa3fa409af63698585e139d1efdc026272d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1586'
 ht-degree: 100%
 

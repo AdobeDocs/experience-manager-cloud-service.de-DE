@@ -6,9 +6,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2197'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,19 +72,19 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
      `https://<shard>/public/oauth/v2`
 
-     Zum Beispiel:
+     Beispiel:
      `https://secure.na1.echosign.com/public/oauth/v2`
 
    * Das Feld **[!UICONTROL Zugriffs-Token-URL]** enthält die Standard-URL, die das Adobe Sign-Datenbank-Shard enthält. Das Format der URL ist:
 
      `https://<shard>/oauth/v2/token`
 
-     Zum Beispiel:
+     Beispiel:
      `https://api.na1.echosign.com/oauth/v2/token`
 
    Hierbei gilt:
 
-   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL &#x200B; Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
+   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL  Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
 
    >[!NOTE]
    >
@@ -213,19 +213,19 @@ Die Kontaktperson generiert Anmeldeinformationen und teilt Ihnen diese mit. Im n
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
 
-     Zum Beispiel:
+     Beispiel:
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
 
    * Das Feld **[!UICONTROL Zugriffs-Token-URL]** enthält die Standard-URL, die das Adobe Sign-Datenbank-Shard enthält. Das Format der URL ist:
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
 
-     Zum Beispiel:
+     Beispiel:
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
 
    Hierbei gilt:
 
-   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL &#x200B; Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
+   **na1** bezieht sich auf die Standarddatenbank-Shard. Sie können den Wert für die Datenbank-Shard ändern. Stellen Sie sicher, dass die [!DNL  Adobe Acrobat Sign]-Cloud-Konfigurationen auf die [korrekte Shard](https://helpx.adobe.com/de/sign/using/identify-account-shard.html) verweisen.
 
    >[!NOTE]
    >
@@ -262,7 +262,7 @@ Standardmäßig überprüfen die [!DNL Adobe Acrobat Sign]-Planungs-Services die
 
 Um das Standardintervall zu ändern, geben Sie einen [Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) für die Eigenschaft **sign.status.exp** der Konfiguration des **Adobe Acrobat Sign-Konfigurationsdienstes** an.
 
-Um beispielsweise den Konfigurations-Service täglich um 0:00 :00 auszuführen, legen Sie die Eigenschaft **sign.status.exp** der Konfiguration **Adobe Acrobat Sign Configuration Service** fest, um `0 0 0 1/1 * ? *` anzugeben. Die folgende JSON-Datei zeigt das Beispiel für die tägliche Ausführung des Konfigurations-Service um :00 Uhr:
+Um beispielsweise den Konfigurationsdienst täglich um 0::00Uhr auszuführen, setzen Sie die Eigenschaft **sign.status.exp** des **Adobe Acrobat Sign-Konfigurationsdienstes** auf `0 0 0 1/1 * ? *`. Folgende JSON-Datei zeigt das Beispiel einer täglichen Ausführung des Konfigurationsdienstes um 0::00 Uhr:
 
 ```json
 {

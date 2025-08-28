@@ -5,52 +5,52 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # Erstellen von Formularfragmenten im universellen Editor
 
-Formularfragmente sind wiederverwendbare Komponenten, mit denen sich wiederholende Entwicklungsarbeiten erübrigen und die Konsistenz der Formulare in Ihrem Unternehmen sicherstellen lassen. Anstatt für jedes Formular gemeinsame Abschnitte wie Kontaktinformationen, Adressdetails oder Einverständniserklärungen neu zu erstellen, können Sie diese Elemente einmal als Fragmente erstellen und sie in mehreren Formularen wiederverwenden.
+Formularfragmente sind wiederverwendbare Komponenten, mit denen sich wiederholende Entwicklungsaufgaben erübrigen und die Konsistenz der Formulare in Ihrem Unternehmen sicherstellen lässt. Anstatt für jedes Formular gemeinsame Abschnitte wie Kontaktdaten, Adressdetails oder Einverständniserklärungen neu zu erstellen, können Sie diese Elemente einmal als Fragmente erstellen und sie dann in verschiedenen Formularen wiederverwenden.
 
 **Was Sie in diesem Artikel erreichen werden:**
 
-- Machen Sie sich mit dem geschäftlichen Nutzen und den technischen Funktionen von Formularfragmenten vertraut
+- Vertrautmachen mit dem geschäftlichen Nutzen und den technischen Funktionen von Formularfragmenten
 - Erstellen wiederverwendbarer Formularfragmente mit dem universellen Editor
 - Integrieren von Fragmenten in vorhandene Formulare mit ordnungsgemäßer Konfiguration
 - Verwalten des Lebenszyklus von Fragmenten und Beibehalten der Konsistenz über Formulare hinweg
 
-**Vorteile für Unternehmen:**
+**Geschäftliche Vorteile:**
 
 - **Verkürzte Entwicklungszeit**: Einmalige Erstellung von allgemeinen Formularabschnitten und Wiederverwendung überall
-- **Verbesserte Konsistenz**: Standardisierte Layouts und Inhalte für alle Formulare
-- **Vereinfachte Wartung**: Aktualisieren Sie ein Fragment einmal, um Änderungen in allen Formularen widerzuspiegeln, die es verwenden
-- **Verbesserte Compliance**: Sicherstellen, dass die regulatorischen Abschnitte konsistent und aktuell bleiben
+- **Höhere Konsistenz**: Standardisierte Layouts und Inhalte für alle Formulare
+- **Vereinfachte Wartung**: Einmaliges Aktualisieren eines Fragments, um Änderungen in allen Formularen widerzuspiegeln, die es verwenden
+- **Verbesserte Compliance**: Sicherstellen, dass regulatorische Abschnitte konsistent und aktuell bleiben
 
-Formularfragmente in Edge Delivery Services unterstützen erweiterte Funktionen wie verschachtelte Fragmente, mehrere Instanzen innerhalb eines Formulars und die nahtlose Integration in Datenquellen.
+Formularfragmente in Edge Delivery Services unterstützen erweiterte Funktionen wie verschachtelte Fragmente, mehrere Instanzen innerhalb eines Formulars und nahtlose Integration mit Datenquellen.
 
-## Grundlagen zu Formularfragmenten
+## Grundlegendes zu Formularfragmenten
 
 Formularfragmente in Edge Delivery Services bieten leistungsstarke Funktionen für die Entwicklung modularer Formulare:
 
 **Kernfunktionen:**
 
-- **Konsistenzmanagement**: Fragmente verwalten identische Layouts und Inhalte in mehreren Formularen. Mit dem Ansatz „Einmal ändern, überall widerspiegeln“ werden Aktualisierungen an einem Fragment automatisch auf alle Formulare im Vorschaumodus angewendet.
+- **Konsistenz-Management**: Fragmente verwalten identische Layouts und Inhalte in verschiedenen Formularen. Mit dem Ansatz „Einmal ändern, überall widerspiegeln“ wird jede Aktualisierung eines Fragments automatisch auf alle Formulare im Vorschaumodus angewendet.
 - **Mehrfache Verwendung**: Fügen Sie dasselbe Fragment mehrmals in einem einzelnen Formular hinzu, wobei jedes Fragment eine unabhängige Datenbindung an verschiedene Datenquellen oder Schemaelemente aufweist.
 - **Verschachtelte Strukturen**: Erstellen Sie komplexe Hierarchien, indem Sie Fragmente in andere Fragmente einbetten, um komplexe Formulararchitekturen zu erstellen.
 
 **Technische Anforderungen:**
 
-- **Konsistenz der GitHub-URL**: Sowohl das Fragment als auch jedes Formular, das es verwendet, müssen dieselbe GitHub-Repository-URL angeben
-- **Eigenständige Bearbeitung**: Fragmente können nur in ihrer eigenständigen Form geändert werden. Änderungen können nicht innerhalb des Hostformulars vorgenommen werden.
+- **Konsistenz der GitHub-URL**: Sowohl das Fragment als auch jedes Formular, das es nutzt, müssen dieselbe GitHub-Repository-URL aufweisen.
+- **Eigenständige Bearbeitung**: Fragmente können nur in ihrer eigenständigen Form geändert werden. Änderungen innerhalb des Host-Formulars sind nicht möglich.
 
 **Veröffentlichungsverhalten:**
 
 >[!IMPORTANT]
 >
->Im Vorschaumodus werden Fragmentänderungen sofort in allen Formularen übernommen. Im Veröffentlichungsmodus müssen Sie sowohl das Fragment als auch alle Formulare, die es verwenden, erneut veröffentlichen, um Aktualisierungen anzuzeigen.
+>Im Vorschaumodus werden Fragmentänderungen sofort in allen Formularen übernommen. Im Veröffentlichungsmodus müssen Sie sowohl das Fragment als auch alle Formulare, die es verwenden, erneut veröffentlichen, um Aktualisierungen widerzuspiegeln.
 
 >[!CAUTION]
 >
@@ -60,17 +60,17 @@ Formularfragmente in Edge Delivery Services bieten leistungsstarke Funktionen f�
 
 **Technische Setup-Anforderungen:**
 
-- [GitHub-Repository konfiguriert](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository hergestellt
-- [Neuester adaptiver Forms-Block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) zum GitHub-Repository hinzugefügt (für bestehende Edge Delivery Services-Projekte)
+- [GitHub-Repository konfiguriert](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) mit hergestellter Verbindung zwischen Ihrer AEM-Umgebung und dem GitHub-Repository
+- [Neuester adaptiver Formularblock](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) zum GitHub-Repository hinzugefügt (für bestehende Edge Delivery Services-Projekte)
 - AEM Forms-Autoreninstanz mit Edge Delivery Services-Vorlage verfügbar
 - Zugriff auf die URL Ihrer AEM Forms as a Cloud Service-Autoreninstanz und die GitHub-Repository-URL
 
 **Erforderliche Kenntnisse und Berechtigungen:**
 
-- Grundlegendes zu Konzepten des Formularentwurfs und zur Komponentenhierarchie
+- Grundlegendes Verständnis der Konzepte des Formularentwurfs und der Komponentenhierarchie
 - Vertrautheit mit der Benutzeroberfläche des universellen Editors und den Workflows zur Formularerstellung
 - Berechtigungen auf Autorenebene in AEM Forms zum Erstellen und Verwalten von Formular-Assets
-- Verständnis der Formularstandards Ihres Unternehmens und der wiederverwendbaren Komponentenanforderungen
+- Verständnis der Formularstandards Ihres Unternehmens und Anforderungen für wiederverwendbare Komponenten
 
 ## Arbeiten mit Edge Delivery Services-Formularfragmenten
 
@@ -95,7 +95,7 @@ Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt
    ![Auswählen einer Edge Delivery Services-Vorlage](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
-1. Geben Sie die **GitHub-URL** an. Wenn sich Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter der `wkndforms` befindet, wird die URL `https://github.com/wkndforms/edsforms`.
+1. Geben Sie die **GitHub-URL** an. Wenn Ihr GitHub-Repository beispielsweise `edsforms` heißt und sich unter dem Konto `wkndforms` befindet, lautet die URL `https://github.com/wkndforms/edsforms`.
 
    ![Allgemeine Eigenschaften](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
@@ -110,26 +110,26 @@ Gehen Sie zum Erstellen eines Formularfragments im universellen Editor wie folgt
 
    >[!NOTE]
    >
-   > Informationen zum Integrieren von Formularen oder Fragmenten mit einem Formulardatenmodell (FDM) im universellen Editor zur Verwendung verschiedener Backend-Datenquellen finden Sie unter [Integrieren von Formularen in das Formulardatenmodell im universellen Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+   > Um mehr über die Integration von Formularen oder Fragmenten mit einem Formulardatenmodell (FDM) im universellen Editor zur Verwendung verschiedener Backend-Datenquellen zu erfahren, konsultieren Sie [Formulare mit Formulardatenmodell im universellen Editor integrieren](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
 1. (Optional) Geben Sie auf der Registerkarte **Erweitert** das **Veröffentlichungsdatum** oder das **Datum der Aufhebung der Veröffentlichung** für das Fragment an.
 
    ![Registerkarte „Erweitert“](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. Klicken Sie **Erstellen**, um das Fragment zu generieren. Es wird ein Erfolgsdialogfeld mit Bearbeitungsoptionen angezeigt.
+1. Klicken Sie auf **Erstellen**, um das Fragment zu generieren. Es wird ein Erfolgsdialogfeld mit Bearbeitungsoptionen angezeigt.
 
    ![Bearbeiten eines Fragments](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
 
-1. Klicken Sie **Bearbeiten**, um das Fragment im universellen Editor mit angewendeter Standardvorlage zu öffnen.
+1. Klicken Sie auf **Bearbeiten**, um das Fragment im universellen Editor mit angewendeter Standardvorlage zu öffnen.
 
-   ![Fragment im universellen Editor für das Authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+   ![Fragment im universellen Editor zum Authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
-1. **Gestalten Ihres Fragmentinhalts**: Fügen Sie Formularkomponenten (Textfelder, Dropdown-Listen, Kontrollkästchen) hinzu, um den wiederverwendbaren Abschnitt zu erstellen. Detaillierte Komponentenanleitungen finden Sie unter [Erste Schritte mit Edge Delivery Services für AEM Forms mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+1. **Gestalten Ihres Fragmentinhalts**: Fügen Sie Formularkomponenten (Textfelder, Dropdown-Listen, Kontrollkästchen) hinzu, um den wiederverwendbaren Abschnitt zu erstellen. Detaillierte Komponentenanleitungen finden Sie unter [Erste Schritte mit Edge Delivery Services für AEM Forms unter Einsatz des universellen Editors](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
-1. **Komponenteneigenschaften konfigurieren**: Legen Sie Feldnamen, Validierungsregeln und Standardwerte nach Bedarf für Ihren Anwendungsfall fest.
+1. **Konfigurieren der Komponenteneigenschaften**: Legen Sie für Ihren Anwendungsfall je nach Bedarf Feldnamen, Validierungsregeln und Standardwerte fest.
 
 1. **Speichern und Vorschau**: Speichern Sie das Fragment und verwenden Sie den Vorschaumodus, um das Layout und die Funktionalität zu überprüfen.
 
-   ![Screenshot eines ausgefüllten Formularfragments für Kontaktdetails im universellen Editor mit Feldern für Name, Telefon, E-Mail und Adresse, die in mehreren Formularen wiederverwendet werden können](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![Screenshot eines ausgefüllten Formularfragments für Kontaktdetails im universellen Editor, mit Feldern für Name, Telefon, E-Mail und Adresse, die in mehreren Formularen wiederverwendet werden können](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
 **Validierungs-Checkpoint:**
 
@@ -145,7 +145,7 @@ Sobald Ihr Fragment vollständig ist, können Sie [es in ein beliebiges Edge Del
 
 +++ Hinzufügen von Formularfragmenten zu einem Formular
 
-Dieses Beispiel zeigt das Erstellen eines `Employee Details` Formulars, das das `Contact Details` Fragment für die Abschnitte „Mitarbeiter“ und „Vorgesetzte“ verwendet. Dieser Ansatz gewährleistet eine konsistente Datenerfassung und reduziert gleichzeitig den Entwicklungsaufwand.
+Dieses Beispiel veranschaulicht das Erstellen eines `Employee Details`-Formulars, das das `Contact Details`-Fragment für die Abschnitte „Mitarbeiterinnen und Mitarbeiter“ und „Vorgesetzte“ verwendet. Dieser Ansatz gewährleistet eine konsistente Datenerfassung und reduziert gleichzeitig den Entwicklungsaufwand.
 
 So integrieren Sie ein Formularfragment in Ihr Formular:
 
@@ -171,7 +171,7 @@ So integrieren Sie ein Formularfragment in Ihr Formular:
 
 1. Klicken Sie auf **[!UICONTROL Auswählen]**.
 
-   Das Formularfragment wird per Verweis auf das Formular hinzugefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert.
+   Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert. 
 
    ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ erfolgreich in ein Mitarbeiterformular im universellen Editor integriert wurde und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -252,44 +252,44 @@ Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für Form
 
 **Design und Benennung von Fragmenten:**
 
-- **Verwenden beschreibender, eindeutiger Namen** Wählen Sie Namen aus, die den Zweck des Fragments klar angeben (z. B. „contact-details-with-validation“ anstelle von „fragment1„).
-- **Wiederverwendbarkeit planen**: Entwerfen Sie Fragmente kontextunabhängig, sodass sie über verschiedene Formulartypen hinweg funktionieren
-- **Fragmente fokussiert halten**: Erstellen Sie Fragmente für einen einzigen Zweck anstelle von komplexen, multifunktionalen Komponenten
+- **Beschreibende, eindeutige Namen verwenden** Wählen Sie Namen, die den Zweck des Fragments klar machen (z. B. „kontaktdetails-mit-validierung“ anstelle von „fragment1“).
+- **Wiederverwendbarkeit planen**: Entwerfen Sie Fragmente kontextunabhängig, sodass sie über verschiedene Formulartypen hinweg funktionieren.
+- **Fragmente fokussiert halten**: Erstellen Sie Fragmente für einen einzigen Zweck anstelle von komplexen, multifunktionalen Komponenten.
 
 **Entwicklungs-Workflow:**
 
-- **Fragmente unabhängig testen**: Überprüfen der Fragmentfunktionalität vor der Integration in Formulare
-- **Konsistente GitHub-URLs beibehalten**: Stellen Sie sicher, dass in allen zugehörigen Fragmenten und Formularen dieselbe Repository-URL verwendet wird
-- **Zweck von Dokumentfragmenten**: Geben Sie klare Beschreibungen und Tags an, damit Team-Mitglieder verstehen können, wann die einzelnen Fragmente verwendet werden sollen
+- **Fragmente unabhängig testen**: Überprüfen Sie die Funktionalität von Fragmenten vor der Integration in Formulare.
+- **Konsistente GitHub-URLs beibehalten**: Stellen Sie sicher, dass in allen zugehörigen Fragmenten und Formularen dieselbe Repository-URL verwendet wird.
+- **Zweck von Dokumentfragmenten**: Geben Sie klare Beschreibungen und Tags an, damit Team-Mitglieder verstehen können, wann einzelne Fragmente verwendet werden sollen.
 
 **Veröffentlichung und Wartung:**
 
-- **Veröffentlichung koordinieren**: Planen Sie beim Aktualisieren von Fragmenten, alle abhängigen Formulare gleichzeitig erneut zu veröffentlichen
-- **Versionskontrolle**: Verwenden Sie aussagekräftige Commit-Meldungen beim Aktualisieren von Fragmenten, um Änderungen im Laufe der Zeit zu verfolgen
-- **Abhängigkeiten überwachen**: Verfolgen Sie, welche Formulare die einzelnen Fragmente zur Bewertung der Auswirkungen von Aktualisierungen verwenden
+- **Veröffentlichung koordinieren**: Planen Sie beim Aktualisieren von Fragmenten, alle abhängigen Formulare gleichzeitig erneut zu veröffentlichen.
+- **Versionskontrolle**: Verwenden Sie beim Aktualisieren von Fragmenten aussagekräftige Commit-Meldungen, um Änderungen im Laufe der Zeit verfolgen zu können.
+- **Abhängigkeiten überwachen**: Verfolgen Sie zur Einschätzung der Auswirkungen von Aktualisierungen, welche Formulare die einzelnen Fragmente verwenden.
 
 >[!TIP]
 >
->Fragmentstile, Skripte und Ausdrücke werden bei der Einbettung beibehalten. Daher ist bei der Gestaltung diese Vererbung zu berücksichtigen.
+>Fragmentstile, Skripte und Ausdrücke werden beim Einbetten beibehalten. Daher ist diese Vererbung bei der Gestaltung zu berücksichtigen.
 
 ## Zusammenfassung
 
-Sie haben gelernt, wie Sie Formularfragmente in Edge Delivery Services nutzen können, um die Entwicklungseffizienz zu verbessern und die Konsistenz zwischen den Formularen Ihres Unternehmens zu gewährleisten.
+Sie haben erfahren, wie Sie Formularfragmente in Edge Delivery Services nutzen können, um die Entwicklungseffizienz zu erhöhen und die Konsistenz zwischen Formularen Ihres Unternehmens zu wahren.
 
-**Wichtigste Ergebnisse:**
+**Schlüsselergebnisse:**
 
-- **Verständnis**: Ermitteln Sie den geschäftlichen Nutzen und die technischen Möglichkeiten von Formularfragmenten
-- **Erstellung**: Erstellen wiederverwendbarer Formularfragmente mit dem universellen Editor mit ordnungsgemäßer Konfiguration
-- **Integration**: Es wurden Fragmente zu Formularen mit korrekter Referenzeinrichtung und Eigenschaftskonfiguration hinzugefügt.
-- **Management**: Durchsuchte Vorgänge des Fragmentlebenszyklus und Wartungs-Workflows
+- **Verständnis**: Ermittlung des geschäftlichen Nutzens und der technischen Möglichkeiten von Formularfragmenten
+- **Erstellung**: Entwicklung von wiederverwendbaren Formularfragmenten mit ordnungsgemäßer Konfiguration unter Einsatz des universellen Editors
+- **Integration**: Hinzufügen von Fragmenten zu Formularen mit korrekter Referenzeinrichtung und Konfiguration von Eigenschaften
+- **Management**: Verständnis der Vorgänge im Fragmentlebenszyklus und der Wartungs-Workflows
 
 **Nächste Schritte:**
 
 - Erstellen Sie eine Bibliothek häufig verwendeter Fragmente für Ihre Organisation
-- Festlegen von Benennungskonventionen und Governance-Richtlinien für die Fragmentverwendung
+- Legen Sie Benennungskonventionen und Governance-Richtlinien für die Fragmentverwendung fest
 - Erkunden Sie die erweiterte Integration mit [Formulardatenmodellen](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) für dynamische datengesteuerte Fragmente
-- Implementieren von fragmentbasierten Formularvorlagen für konsistente Benutzererlebnisse
+- Implementieren Sie fragmentbasierte Formularvorlagen für konsistente Benutzererlebnisse
 
-Ihre Formulare profitieren jetzt von einer modularen, verwaltbaren Architektur, die effizient über Projekte skaliert werden kann, während gleichzeitig konsistente Benutzererlebnisse sichergestellt werden.
+Ihre Formulare profitieren nun von einer modularen, verwaltbaren Architektur, die effizient über Projekte skaliert werden kann. Gleichzeitig werden konsistente Benutzererlebnisse sichergestellt.
 
 

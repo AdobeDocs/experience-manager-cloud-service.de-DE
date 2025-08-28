@@ -5,9 +5,9 @@ role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1258'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ Das übergeordnete Element des Panels sollte Schaltflächen zum Hinzufügen und 
 
 >[!NOTE]
 >
-> Wenn alle Instanzen eines Bereichs aus einem adaptiven Formular entfernt wurden, können Sie eine Instanz des entfernten Bereichs mithilfe der Syntax _panelName erfassen, um den Instanz-Manager des Bereichs zu erfassen, und die gelöschte Instanz mit der addInstance-API des Instanz-Managers hinzufügen. Beispiel: &#39;_panelName.addInstance()&#39;. Dies fügt eine Instanz der entfernten Bereichs hinzu.
+> Wenn alle Instanzen eines Bereichs aus einem adaptiven Formular entfernt wurden, können Sie eine Instanz des entfernten Bereichs mithilfe der Syntax _panelName erfassen, um den Instanz-Manager des Bereichs zu erfassen, und die gelöschte Instanz mit der addInstance-API des Instanz-Managers hinzufügen. Beispiel: „_panelName.addInstance()“. Dies fügt eine Instanz des entfernten Bereichs hinzu.
 
 ## Verwenden von wiederholten Teilformularen aus der Formularvorlage (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 

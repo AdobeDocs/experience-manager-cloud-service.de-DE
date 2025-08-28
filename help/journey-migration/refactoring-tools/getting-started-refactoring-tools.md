@@ -3,9 +3,9 @@ title: Erste Schritte mit Refaktorierungs-Tools
 description: Erfahren Sie mehr über die ersten Schritte mit den Refaktorierungs-Tools in AEM as a Cloud Service
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=de" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -27,7 +27,7 @@ ht-degree: 96%
 
 Verwenden Sie das Refaktorierungs-Tool, um Ihren Code aus Gründen der Kompatibilität mit AEM as a Cloud Service zu migrieren.
 
-1. Wenn Sie noch kein CAM-Projekt erstellt haben, lesen Sie den Abschnitt [Erstellen und Verwalten eines Projekts in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
+1. Wenn Sie noch kein CAM-Projekt erstellt haben, lesen Sie [Erstellen und Verwalten eines Projekts in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
 1. Klicken Sie auf die Karte **Code-Refaktorierung**, um den Quell-Code hochzuladen.
 
    ![Bild](/help/journey-migration/refactoring-tools/assets/rscam1.png)

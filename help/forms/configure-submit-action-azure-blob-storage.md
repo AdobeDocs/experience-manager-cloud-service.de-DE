@@ -1,14 +1,14 @@
 ---
-title: Verbinden von AEM Adaptive Forms mit Azure Blob Storage
-description: Erfahren Sie, wie Sie eine Azure Blob Storage-Konfiguration in AEM Forms erstellen und in Ihrem adaptiven Forms verwenden, um eine effiziente Datenspeicherung zu gewährleisten.
+title: Verbinden von adaptiven Formularen (AEM) mit Azure Blob Storage
+description: Erfahren Sie, wie Sie eine Azure Blob Storage-Konfiguration in AEM Forms erstellen und in Ihren adaptiven Formularen verwenden können, um eine effiziente Datenspeicherung zu gewährleisten.
 keywords: Azure Blob Storage-Integration mit AEM Forms, Daten an Azure Storage übermitteln, Azure Storage-Konfiguration in AEM Forms erstellen, Azure Blob Storage in Übermittlungsaktion für adaptive Formulare verwenden
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ Verbinden von AEM Forms mit den Azure Storage-Containern:
     >[!NOTE]
     >
     > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
-    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de)
-    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=de)
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
     > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
 -->
 
