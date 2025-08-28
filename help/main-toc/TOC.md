@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
+source-git-commit: b6cc9b51ac36cc5f9450a8ccb305b86496f3e7cb
 workflow-type: tm+mt
 source-wordcount: '6552'
 ht-degree: 96%
@@ -1226,34 +1226,34 @@ ht-degree: 96%
       + [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
       + [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Aktivieren des Ruhezustands von Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-   + Erstellen eines AEM-Anwendungsprojekts {#create-application-project}
-      + [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-      + [Projekt-Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-   + [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
-   + [Spezialisierte Testumgebungen (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
-   + Verwalten von Code {#managing-code}
-      + [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-      + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-      + [Hinzufügen eines Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-      + [Hinzufügen eines privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [Hinzufügen eines externen Repositorys (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-      + [Verwalten der Zugriffs-Token externer Repositorys (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-      + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-      + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-      + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-      + [Verwenden mehrerer Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [Einrichten eines Entwicklungs-Teams für Unternehmen](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [Konfiguration der GitHub-Prüfung](/help/implementing/cloud-manager/managing-code/github-check-config.md)
-      + [Anmerkungen zur GitHub-Prüfung](/help/implementing/cloud-manager/managing-code/github-annotations.md)
-   + [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md)
-   + CI/CD-Pipelines in Cloud Manager {#cicd-pipelines}
-      + [Einführung in CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-      + [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-      + [Konfigurieren einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-      + [Konfigurieren einer Edge Delivery-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
-      + [Verwalten von Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-      + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+      + Erstellen eines AEM-Anwendungsprojekts {#create-application-project}
+         + [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [Projekt-Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
+      + [Spezialisierte Testumgebungen (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + Verwalten von Code {#managing-code}
+         + [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+         + [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Hinzufügen eines Adobe-Repositorys](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Hinzufügen eines privaten Repositorys](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Hinzufügen eines externen Repositorys (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Verwalten der Zugriffs-Token externer Repositorys (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Zugreifen auf Repositorys](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Unterstützung von Git-Untermodulen](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Verwenden mehrerer Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Einrichten eines Entwicklungs-Teams für Unternehmen](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Konfiguration der GitHub-Prüfung](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Anmerkungen zur GitHub-Prüfung](/help/implementing/cloud-manager/managing-code/github-annotations.md)
+      + [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md)
+      + CI/CD-Pipelines in Cloud Manager {#cicd-pipelines}
+         + [Einführung in CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Konfigurieren einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Konfigurieren einer Edge Delivery-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+         + [Verwalten von Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Bereitstellen Ihres Codes](/help/implementing/cloud-manager/deploy-code.md)
       + Wissenswertes zu Testergebnissen {#test-results}
          + [Überblick](/help/implementing/cloud-manager/overview-test-results.md)
