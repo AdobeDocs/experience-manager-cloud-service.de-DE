@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 99%
 >id="aemcloud_golive_domains"
 >title="Verwalten von benutzerdefinierten Domain-Namen"
 >abstract="Über die Benutzeroberfläche von Cloud Manager können Sie eine benutzerdefinierte Domain hinzufügen, um Ihre Website selbst mit einem eindeutigen, markenspezifischen Namen zu kennzeichnen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/add-custom-domain-name" text="Hinzufügen eines benutzerdefinierten Domain-Namens"
->additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/managing-custom-domain-names" text="Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Hinzufügen eines benutzerdefinierten Domain-Namens"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens"
 
 Adobe Experience Manager as a Cloud Service wird mit einem standardmäßigen Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Über die Benutzeroberfläche von Cloud Manager können Sie eine benutzerdefinierte Domain hinzufügen, um Ihre Website selbst mit einem eindeutigen, markenspezifischen Namen zu kennzeichnen. Der standardmäßige Domain-Name `*.adobeaemcloud.com` bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen zuordnen.
 

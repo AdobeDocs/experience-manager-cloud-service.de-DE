@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ Erfahren Sie mehr über die Self-Service-Tools, die Cloud Manager Ihnen zur Inst
 >id="aemcloud_golive_sslcert"
 >title="Verwalten von SSL-Zertifikaten"
 >abstract="Erfahren Sie, inwiefern Cloud Manager Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten zur Verfügung stellt, um Ihre Website für Ihre Benutzenden zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die der Kundschaft gehören und von unabhängigen Zertifizierungsstellen bezogen werden."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
->additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="Überprüfen des Status eines SSL-Zertifikats"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Überprüfen des Status eines SSL-Zertifikats"
 
 ## Was sind SSL-Zertifikate? {#overview}
 
