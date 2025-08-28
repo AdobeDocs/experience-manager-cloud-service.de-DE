@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c273b78fe698ef0cdc4bf3999a0479d0509c7ad4
+source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
 workflow-type: tm+mt
-source-wordcount: '6552'
-ht-degree: 96%
+source-wordcount: '6557'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 96%
    + Versionshinweise zu AEMaaCS-Funktionen {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [Versionshinweise für 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [Versionshinweise für 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [Versionshinweise für 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
          + [Versionshinweise für 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
@@ -1086,18 +1087,18 @@ ht-degree: 96%
       + WYSIWYG-Authoring {#universal-editor}
          + [Universeller Editor für Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Erste Schritte mit Edge Delivery Services für AEM Forms mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Erstellen und Veröffentlichen von adaptiven Forms mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Erstellen einer responsiven Forms mit einem universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Erste Schritte mit Edge Delivery Services für AEM Forms mithilfe des universellen Editors](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Erstellen und Veröffentlichen von adaptiven Formularen mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Erstellen von responsiven Formularen mit dem universellen Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Anpassen des Designs und Stils für Edge Delivery Services für AEM Forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Regeleditor für Dynamic Forms im universellen Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Regeleditor für dynamische Formulare im universellen Editor](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [Erstellen von Formularfragmenten für das WYSIWYG-basierte Authoring](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [Konfigurieren einer Übermittlungsaktion für ein adaptives Formular](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Konfigurieren einer Umleitungsseite oder Dankesnachricht](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [Hinzufügen von Google reCAPTCHA zu Forms im universellen Editor](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Wie wird eine Übermittlungsaktion für ein adaptives Formular konfiguriert?](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [So konfigurieren Sie eine Umleitungsseite oder eine Dankesnachricht](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
+         + [Hinzufügen von Google reCAPTCHA zu Formularen im universellen Editor](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Wie lässt sich das Formulardatenmodell (FDM) für ein Formular im universellen Editor integrieren?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [Vorausfüllen von Feldern in adaptiven Formularen](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [Veröffentlichen des adaptiven Formss mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Vorbefüllen von Feldern in adaptiven Formularen](/help/edge/docs/forms/universal-editor/prefill-form.md)
+         + [Veröffentlichen adaptiver Formulare mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Erstellen benutzerdefinierter Komponenten für ein EDS-Formular](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Fehlerbehebung für Fehler vom Typ „403 – Verboten“ bei der Formularübermittlung in Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
@@ -1251,7 +1252,7 @@ ht-degree: 96%
          + [Einführung in CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Konfigurieren einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Konfigurieren einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [Konfigurieren einer Edge Delivery-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+         + [Konfigurieren einer Pipeline von Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [Verwalten von Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Bereitstellen Ihres Codes](/help/implementing/cloud-manager/deploy-code.md)
