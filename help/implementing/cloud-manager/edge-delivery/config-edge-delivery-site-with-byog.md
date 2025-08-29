@@ -5,7 +5,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
 source-git-commit: e1922bd862a2106a274694ea1d3a98da9c186049
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Sie können Ihre Edge Delivery-Site so konfigurieren, dass Code aus einem belieb
 
    Cloud Manager gibt ein einmaliges Geheim-Token zurück. Wenn Sie die Site neu konfigurieren, generiert Cloud Manager ein neues Geheimnis-Token.
 
-1. Kopieren Sie das Token und fügen Sie es der Site-Konfiguration in **helix-admin** hinzu, wie im [BYO Git-Handbuch](ttps://www.aem.live/developer/byo-git) beschrieben.
+1. Kopieren Sie das Token und fügen Sie es der Site-Konfiguration in **helix-admin** hinzu, wie im [BYO Git-Handbuch](https://www.aem.live/developer/byo-git) beschrieben.
 1. Zurück in Cloud Manager klicken Sie auf das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren Site Sie gerade für die Verwendung eines externen Repositorys konfiguriert haben. Klicken Sie dann auf **Code synchronisieren**.
 1. Wählen Sie die zu synchronisierende Verzweigung aus und klicken Sie auf **Synchronisieren**.
 
