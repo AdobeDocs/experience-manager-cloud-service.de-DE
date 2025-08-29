@@ -3,10 +3,10 @@ title: Neue Funktionen in Content Hub
 description: Erfahren Sie mehr über einige der kürzlich eingeführten Content Hub-Funktionen
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: ed1e0773318a0cc30ccb4e4464c2ab833ba97b4f
+source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 51%
+source-wordcount: '699'
+ht-degree: 50%
 
 ---
 
@@ -32,17 +32,23 @@ Das Veröffentlichungsdatum der Content Hub-Funktionsveröffentlichung (2025.8.0
 
 Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit der neuen Funktion für die Massensuche können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben - getrennt durch ein Trennzeichen (z. B. mehrere SKU-IDs) - und sofort alle übereinstimmenden Assets mit einer einzigen Suche abrufen.
 
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+
 ## Funktionen der Version Juli {#july-release-features}
 
 **Verbesserte Branding-Flexibilität in Content Hub**
 
 Aufbauend auf vorhandenen Personalisierungsfunktionen ermöglicht Content Hub Admins jetzt die weitere Anpassung ihrer Bereitstellung, indem sie benutzerdefinierte Logobilder hinzufügen. Die Unterstützung des TIFF-Dateiformats wurde sowohl für Banner- als auch für Logogbilder hinzugefügt, was die Design-Flexibilität erhöht.
 
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+
 **Intelligentere Freigabe mit benannten Links**
 
 Sie können jetzt beim Generieren eines freigegebenen Links einen Titel hinzufügen – sowohl in der Asset-Detailansicht als auch nach der Auswahl eines oder mehrerer Assets. Auf diese Weise können die Personen, die den Link bekommen, den Zweck jedes Links leicht identifizieren, insbesondere, wenn sie mehrere freigegebene Assets erhalten.
 
 ![Privater und öffentlicher Link](/help/assets/assets/shared-link-for-assets.png)
+
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 **Verbesserte Filternavigation**
 
@@ -56,7 +62,7 @@ Mit Content Hub können Sie jetzt den Zugriff auf Sammlungen während der Erstel
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 ## Mai-Veröffentlichungsfunktionen {#may-release-features}
 
@@ -86,7 +92,7 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 
 * Reduziert die Anzahl der Duplikate – verbessert die Integrität der Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ### UI-Branding {#ui-branding}
 
@@ -94,7 +100,7 @@ Content Hub ermöglicht es Administratoren jetzt, die Benutzeroberfläche mit ma
 
 ![UI-Branding](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ### Öffentliche Link-Freigabe {#public-link-sharing}
 
@@ -102,13 +108,13 @@ Content Hub unterstützt jetzt das Generieren von Freigabe-Links, damit externe 
 
 ![UI-Branding](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ### Mehrere Assets als ZIP-Datei herunterladen {#download-multiple-assets-as-zip}
 
 Mit Content Hub können Sie die ausgewählten Assets und ihre Ausgabedarstellungen jetzt auch in einer ZIP-Datei herunterladen und nicht als separate Dateien, was die Dateiverwaltung für Sie vereinfacht.
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Dynamic Media-Ausgabedarstellungen in Content Hub {#dynamic-media-renditions}
 
@@ -116,4 +122,4 @@ Greifen Sie direkt über die Content Hub-Benutzeroberfläche auf alle Dynamic Me
 
 ![Dynamic Media-Ausgabedarstellungen](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
