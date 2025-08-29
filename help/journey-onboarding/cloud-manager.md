@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Si
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
-workflow-type: ht
-source-wordcount: '1033'
-ht-degree: 100%
+source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 84%
 
 ---
 
@@ -42,9 +42,13 @@ Bevor die Team-Mitglieder, denen Sie die Rolle des **Geschäftsinhabers** zugewi
 
    Kehren Sie zum vorherigen Schritt zurück ([Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](assign-profiles-cloud-manager.md)), um weitere Informationen über die Zuweisung der Rolle **Geschäftsinhaber** zum bzw. zur System-Admin zu erhalten.
 
-1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an.
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com/) an.
+1. Klicken Sie in der Schnellzugriffs-Gruppierung auf **Experience Manager**.
+1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
 
-Durch die erfolgreiche Anmeldung als System-Admin mit der Rolle **Geschäftsinhaber** initialisieren Sie Cloud Manager für die Verwendung durch andere Benutzende, die ebenfalls die Rolle **Geschäftsinhaber** haben. Sie erhalten keine Bestätigung oder Nachricht. Die einfache Anmeldung ist ausreichend.
+   ![Cloud Manager in der Konsole](/help/journey-onboarding/assets/consol-cloud-manager.png)
+
+Durch die erfolgreiche Anmeldung als System-Admin mit der Rolle **Geschäftsinhaber** können Sie Cloud Manager für die Verwendung durch andere Benutzende mit der Rolle **Geschäftsinhaber** verwenden. Sie erhalten keine Bestätigung oder Nachricht. Die einfache Anmeldung ist ausreichend.
 
 Solange Sie sich nicht als System-Admin mit der Rolle **Geschäftsinhaber** bei Cloud Manager anmelden, können andere Benutzende mit der Rolle **Geschäftsinhaber** keine Programme in Cloud Manager erstellen. Diese Regel gilt auch dann, wenn ihnen die richtigen Rollen zugewiesen sind.
 
@@ -63,65 +67,66 @@ Personen mit der Rolle **Geschäftsinhaber** erhalten eine Begrüßungs-E-Mail m
 
 1. Sie werden zur Landingpage von Cloud Manager weitergeleitet.
 
-Alternativ können Sie auch von der Adobe Experience Cloud-Startseite zur Seite **Programme und Produkte** in Cloud Manager navigieren, indem Sie die folgenden Schritte ausführen.
+<!-- OLD
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
-1. Gehen Sie direkt zu [Adobe Experience Cloud](https://experience.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
-1. Wählen Sie auf der Adobe Experience Cloud-Startseite die Option **Experience Manager**, um die AEM-Startseite zu öffnen.
+1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
 
-   ![Experience Cloud-Startseite](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. Wählen Sie im Bereich **Cloud Manager** die Option **Start**.
+1. On the **Cloud Manager** tile, select **Launch**.
 
-   ![AEM-Startseite](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM home page](/help/journey-onboarding/assets/setup-resources3.png)
 
-1. Nach erfolgreicher Anmeldung gelangen Sie zur Landingpage von Cloud Manager. Weitere Informationen finden Sie im Abschnitt [Anzeigen der Cloud Manager-Programme](#viewing-programs).
+1. After successfully logging on, you are directed to the Cloud Manager landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) for more details.
 
-Der Zugriff auf Ihre Programme und Produkte über Cloud Manager liegt bei Ihnen und hat keine Auswirkungen auf die Verwendung von Cloud Manager oder die Verwaltung Ihrer Programme.
+How you access your programs and products via Cloud Manager is up to you and has no effect on how you use Cloud Manager or how you manage your programs.
 
 >[!NOTE]
 >
->Je nach den in Cloud Manager zugewiesenen Rollen und dem Programmstatus werden bei der Verwendung der Cloud Manager-Benutzeroberfläche unterschiedliche Bildschirme angezeigt.
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
-## Anzeigen von Programmen {#viewing-programs}
+## Programme anzeigen {#viewing-programs}
 
 Sobald Sie erfolgreich auf den Cloud Manager zugreifen, hängt das, was Sie sehen, vom Status Ihrer Programme ab, wie in den folgenden Abschnitten beschrieben.
 
-### Wenn es keine Programme gibt {#no-programs}
+### Wenn keine Programme vorhanden sind {#no-programs}
 
 Wenn in Ihrer Organisation keine Programme vorhanden sind, werden Sie von Ihrer Landingpage angewiesen, Ihr erstes Programm zu erstellen.
 
-![Keine Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+![Keine Programme](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
 ### Wenn es bereits Programme gibt {#programs-exist}
 
 Wenn in Ihrer Organisation bereits Programme vorhanden sind, zeigt Ihre Landingpage Ihre vorhandenen Programme an und bietet außerdem eine Schaltfläche zum Hinzufügen zusätzlicher Programme.
 
-![Programme sind vorhanden](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+![Programme sind vorhanden](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### Wenn ein Programm vorhanden ist und Sie ein Systemadministrator sind {#programs-exist-sysadmin}
+### Wenn es ein Programm gibt und Sie Systemadministrator sind {#programs-exist-sysadmin}
 
 Wenn in Ihrer Organisation bereits Programme vorhanden sind und Sie System-Admin sind, werden auf Ihrer Landingpage die Schaltfläche **Zugriff verwalten** und die Option **Programm hinzufügen** angezeigt.
 
-![Systemadministratoransicht](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+![Systemadministratoransicht](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
 ## Überprüfen der Benutzerrollen {#verify-user-roles}
 
-Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie verifizieren, dass Ihnen das Produktprofil **Geschäftsinhaber** zugewiesen wurde.
+Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie überprüfen, ob Ihnen das Produktprofil **Geschäftsinhaber** zugewiesen ist.
 
-1. Wählen Sie Ihr Profil oben rechts im Fenster aus.
+1. Klicken Sie oben rechts auf der Seite auf das Symbol **Konto**.
 
-1. Um die Ihren Benutzenden zugewiesenen Rollen anzuzeigen, wählen Sie **Benutzerrollen**.
+1. Klicken Sie **Benutzerrollen**.
 
-   ![Benutzerrollen](/help/journey-onboarding/assets/setup-resources6.png)
+   ![Benutzerrollen](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. Im Dialogfeld sollte bestätigt werden, dass die jeweilige Person über die Rolle **Geschäftsinhaber** verfügt.
+1. Bestätigen Sie **Dialogfeld &quot;**&quot;, dass Ihr Benutzer über die Rolle **Geschäftsinhaber** verfügt.
 
-   ![Liste der Benutzerrollen](/help/journey-onboarding/assets/setup-resources7.png)
+   ![Liste der Benutzerrollen](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Sie haben sich erfolgreich als Geschäftsinhaber bei Cloud Manager angemeldet! Wenn Ihnen die Rolle des **Geschäftsinhabers** nicht zugewiesen wurde, wenden Sie sich an Ihren Systemadministrator.
+Sie haben sich erfolgreich als Geschäftsinhaber bei Cloud Manager angemeldet. Wenn Ihnen die Rolle des **Geschäftsinhabers** nicht zugewiesen wurde, wenden Sie sich an Ihren Systemadministrator.
 
-## So geht es weiter {#whats-next}
+## Wie geht es weiter {#whats-next}
 
 Jetzt, da Sie als System-Admin auf Cloud Manager zugreifen können, können Sie Ihr erstes Programm erstellen.
 
