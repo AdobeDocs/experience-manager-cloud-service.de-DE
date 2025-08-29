@@ -92,7 +92,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
@@ -124,7 +124,7 @@ Das Feld **Gesamtversandkosten** wird dynamisch aktualisiert, um sowohl die Prod
 >[!NOTE]
 >
 > Sie können auch eine Funktion **Wert der Variablen abrufen** in der Wenn-Bedingung hinzufügen.
-> > ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> &#x200B;> ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Dieser Ansatz ermöglicht dynamische Echtzeit-Berechnungen, ohne dem Formular zusätzliche Felder hinzuzufügen, wodurch die Struktur sauber und benutzerfreundlich bleibt.
 
