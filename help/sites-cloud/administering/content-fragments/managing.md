@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 93%
+source-wordcount: '2920'
+ht-degree: 92%
 
 ---
 
@@ -134,6 +134,18 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
    * Wählen Sie die Anzahl aus, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf den **Titel** im Dialogfeld.
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
+
+* **Workflows**
+
+   * Nur Informationen
+
+   * Wählen Sie das Symbol für ein bestimmtes Fragment aus:
+
+     ![Inhaltsfragmentkonsole - Symbol „Workflows“](assets/cf-managing-console-workflows-icon.png)
+
+     So öffnen Sie ein Dialogfeld mit detaillierten Informationen zu Workflows (früher und aktuell) für das Fragment.:
+
+     ![Inhaltsfragmentkonsole - Dialogfeld „Workflows“](assets/cf-managing-console-workflows-dialog.png)
 
 ## Aktionen {#actions}
 
