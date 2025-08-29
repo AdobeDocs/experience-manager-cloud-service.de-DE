@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Si
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 84%
@@ -42,7 +42,7 @@ Bevor die Team-Mitglieder, denen Sie die Rolle des **Geschäftsinhabers** zugewi
 
    Kehren Sie zum vorherigen Schritt zurück ([Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](assign-profiles-cloud-manager.md)), um weitere Informationen über die Zuweisung der Rolle **Geschäftsinhaber** zum bzw. zur System-Admin zu erhalten.
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com/) an.
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
 1. Klicken Sie in der Schnellzugriffs-Gruppierung auf **Experience Manager**.
 1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
 
