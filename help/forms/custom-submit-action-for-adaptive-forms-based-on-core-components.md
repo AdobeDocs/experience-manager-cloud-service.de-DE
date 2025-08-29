@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 28%
+source-wordcount: '1137'
+ht-degree: 26%
 
 ---
 
@@ -268,7 +268,14 @@ Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.con
 
    >[!NOTE]
    >
-   > Um Fehlerprotokolle in der AEM as a Cloud Service-Umgebung anzuzeigen, können Sie Splunk verwenden.
+   > * Um Fehlerprotokolle in der AEM as a Cloud Service-Umgebung anzuzeigen, können Sie Splunk verwenden.
+   > * Wenn ein Dienst für benutzerdefinierte Übermittlungsaktionen auf einen nicht behandelten Fehler stößt, gibt AEM as a Cloud Service eine 502-Fehlerseite für HTML zurück.
+
+
+## Häufig gestellte Fragen
+
+**F: Warum wird in meinem adaptiven Formular nach der Übermittlung eine Fehlerseite „5.x.x“ angezeigt?**
+Der Service für die benutzerdefinierte Übermittlungsaktion ist mit einem nicht behandelten Fehler fehlgeschlagen. AEM Cloud Service gibt dann die Standardfehlerseite zurück.
 
 <!--
 ## Best practices

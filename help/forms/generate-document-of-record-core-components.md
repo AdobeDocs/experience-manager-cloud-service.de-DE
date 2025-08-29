@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument für 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
-workflow-type: ht
-source-wordcount: '3207'
-ht-degree: 100%
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+workflow-type: tm+mt
+source-wordcount: '3244'
+ht-degree: 98%
 
 ---
 
@@ -348,7 +348,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**: Durch Festlegen dieser Eigenschaft werden nur die ausgewählten Werte von Kontrollkästchen und Optionsfeldern im [!UICONTROL Datensatzdokument] angezeigt.
       * **Trennzeichen für mehrere Werte**: Sie können ein beliebiges Trennzeichen wie Komma oder Zeilenumbruch auswählen, um mehrere Werte anzuzeigen.
       * **Optionenausrichtung**: Sie können die gewünschte Ausrichtung (horizontal, vertikal, wie das adaptive Formular) auswählen, um die Ausrichtung für Felder wie Kontrollkästchen oder Optionsfelder festzulegen, die im [!UICONTROL Datensatzdokument] angezeigt werden sollen. Standardmäßig ist für die Felder im [!UICONTROL Datensatzdokument] die vertikale Ausrichtung festgelegt. Das Festlegen der Eigenschaften über die [!UICONTROL Formularfeldeigenschaften] des Datensatzdokuments überschreibt die Eigenschaften, die in der [!UICONTROL Elementausrichtung] für die Felder in einem adaptiven Formular festgelegt sind. Wenn Sie die Option [!UICONTROL Wie adaptives Formular] auswählen, wird die in der Autoreninstanz des adaptiven Formulars konfigurierte Ausrichtung für Felder des [!UICONTROL Datensatzdokuments] verwendet.
-      * **Anzahl der Optionen für die horizontale Ausrichtung**: Sie können die Anzahl der Optionen festlegen, die im Datensatzdokument für die horizontale Ausrichtung angezeigt werden sollen.
+      * **Anzahl der Optionen für die horizontale Ausrichtung**:You: Sie können die Anzahl der Optionen festlegen, die im Nachweis für die horizontale Ausrichtung angezeigt werden sollen.
 
 
 
@@ -415,6 +415,7 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 * **Bereich als Tabelle anzeigen**: Wenn aktiviert, wird der Bereich im Datensatzdokument als Tabelle angezeigt, wenn der Bereich weniger als 6 Felder enthält. Gilt nur für den Bereich.
 * **Titel aus Datensatzdokument ausschließen**: Wenn aktiviert, ist der Titel des Bereichs bzw. der Tabelle im Datensatzdokument nicht enthalten. Gilt nur für Bereiche und Tabellen.
 * **Beschreibung aus Datensatzdokument ausschließen**: Wenn aktiviert, ist die Beschreibung des Bereichs bzw. der Tabelle im Datensatzdokument nicht enthalten. Gilt nur für Bereiche und Tabellen.
+* **Ausgeblendete Felder vom Datensatzdokument ausschließen**: Wenn Sie diese Eigenschaft auswählen, werden ausgeblendete Felder aus dem Datensatzdokument ausgeschlossen. Sie gilt für alle Formularfelder. Standardmäßig ist die Option **Ausgeblendete Felder vom Datensatzdokument ausschließen** nicht ausgewählt.
 
 **Einstellungen auf Formularebene**
 

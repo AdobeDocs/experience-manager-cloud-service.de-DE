@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 2%
 
 ---
@@ -218,6 +218,10 @@ Erstellen Sie eine Regel für das `Pet ID` Textfeld, um den `getPetById`-Service
 Geben Sie `102` in das `Pet ID` Textfeld ein, und die Schaltfläche **Senden** ist ausgeblendet.
 
 ![Ausgabe](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> Sie können [API auch direkt in die Benutzeroberfläche des Regeleditors integrieren](/help/forms/api-integration-in-rule-editor.md) ohne ein vordefiniertes Formulardatenmodell zu verwenden.
 
 ## Häufig gestellte Fragen
 

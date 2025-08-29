@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2598'
-ht-degree: 100%
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+workflow-type: tm+mt
+source-wordcount: '2781'
+ht-degree: 93%
 
 ---
 
@@ -533,6 +533,7 @@ Abbildung: Hinzufügen benutzerdefinierter Funktionen zur Datei „features.js�
 ![Benutzerdefinierte Funktion im Regeleditor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Abbildung: Auswählen und Konfigurieren von benutzerdefinierten Funktionen in der Benutzeroberfläche des Regeleditors
 
+
 **Best Practices für den Einsatz von Funktionen**:
 
 - **Fehlerbehandlung**: Fallback-Verhalten bei Funktionsfehlern immer einschließen
@@ -541,6 +542,56 @@ Abbildung: Auswählen und Konfigurieren von benutzerdefinierten Funktionen in de
 - **Testen**: Testfälle für normale Fälle und Grenzfälle erstellen
 
 +++
+
+
+### Statische Importe für benutzerdefinierte Funktionen
+
+Der Regeleditor des universellen Editors unterstützt statische Importe, sodass Sie wiederverwendbare Logik über mehrere Dateien und Formulare hinweg organisieren können. Anstatt alle benutzerdefinierten Funktionen in einer Datei (/blocks/form/functions.js) zu speichern, können Sie Funktionen aus anderen Modulen importieren.
+Beispiel: Funktionen aus einer externen Datei importieren
+Beachten Sie die folgende Ordnerstruktur:
+
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+Sie können Funktionen aus `commonLib/functions.js` wie unten dargestellt in Ihre `functions.js` importieren:
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### Organisieren von benutzerdefinierten Funktionen in verschiedenen Forms
+
+Sie können verschiedene Funktionssätze in separaten Dateien oder Ordnern erstellen und diese nach Bedarf exportieren:
+
+- Wenn Sie möchten, dass bestimmte Funktionen nur in bestimmten Formularen verfügbar sind, können Sie den Pfad zur Funktionsdatei in der Formularkonfiguration angeben.
+
+- Wenn das Textfeld für den Pfad leer gelassen wird, lädt der Regeleditor standardmäßig Funktionen aus `/blocks/form/functions.js`
+
+![Benutzerdefinierte Funktion in UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
+
+Im obigen Screenshot wird der Pfad der benutzerdefinierten Funktion im Textfeld Benutzerdefinierter Funktionspfad hinzugefügt. Die benutzerdefinierten Funktionen für dieses Formular werden aus der angegebenen Datei geladen (`cc_function.js`).
+
+Dies ermöglicht Flexibilität, da Funktionen über mehrere Formulare hinweg gemeinsam genutzt oder je Formular isoliert werden können.
 
 ## Best Practices für die Regelentwicklung
 

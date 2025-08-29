@@ -4,22 +4,21 @@ description: In diesem Artikel werden verschiedene Anwendungsfälle für den Reg
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
+source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1975'
 ht-degree: 0%
 
 ---
 
 # Verbesserungen des Regeleditors und Anwendungsfälle
 
-<span class="preview"> Dies sind Vorabversionsfunktionen, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal“ verfügbar </a>.
+<span class="preview"> Dies sind Vorabversionsfunktionen, die über unseren <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features">Vorabversionskanal“ verfügbar </a>. Diese Verbesserungen gelten auch für Edge Delivery Services Forms.
 
 In diesem Artikel werden die neuesten Verbesserungen am Regeleditor in Adaptive Forms vorgestellt. Diese Aktualisierungen sollen Ihnen helfen, das Formularverhalten einfacher zu definieren, ohne benutzerdefinierten Code zu schreiben, und dynamischere, reaktionsfähigere und personalisiertere Formularerlebnisse zu erstellen.
 
-In der folgenden Tabelle sind die jüngsten Verbesserungen am Regeleditor in Adaptive Forms zusammen mit einer kurzen Beschreibung und den wichtigsten Vorteilen der einzelnen Funktionen aufgeführt.:
+In der folgenden Tabelle sind die jüngsten Verbesserungen am Regeleditor in Adaptive Forms zusammen mit einer kurzen Beschreibung und den wichtigsten Vorteilen der einzelnen Funktionen aufgeführt:
 
 | Verbesserung | Beschreibung | Vorteile |
 |---|----|---|
@@ -29,6 +28,10 @@ In der folgenden Tabelle sind die jüngsten Verbesserungen am Regeleditor in Ada
 | **Benutzerdefinierte ereignisbasierte Regeln** | Definieren Sie Regeln, die über die standardmäßigen Trigger hinaus auf benutzerspezifische Ereignisse reagieren. | - Unterstützt erweiterte Anwendungsfälle <br> - Bessere Kontrolle darüber, wann und wie Regeln ausgeführt werden <br> - Verbesserte Interaktivität |
 | **Kontextabhängige wiederholbare Bereichsausführung** | Regeln werden jetzt für jeden wiederholten Bereich im richtigen Kontext ausgeführt, anstatt nur für die letzte Instanz. | - Präzise Regelanwendung für jede Wiederholungsinstanz <br> - Reduziert Fehler in dynamischen Abschnitten <br> - Verbessert das Benutzererlebnis mit wiederholten Inhalten |
 | **Unterstützung für Abfragezeichenfolgen-, UTM- und Browser-Parameter** | Erstellen Sie Regeln, die das Formularverhalten basierend auf URL-Parametern oder browserspezifischen Werten anpassen. | - Ermöglicht Personalisierung basierend auf Quell- oder <br> - Nützlich für Marketing- oder Tracking-spezifische Abläufe <br> - keine zusätzliche Skripterstellung oder Anpassung erforderlich |
+
+>[!NOTE]
+>
+> Die Verbesserungen am Regeleditor gelten auch für Edge Delivery Services Forms.
 
 Im Folgenden werden die einzelnen Methoden im Detail mit spezifischen Anwendungsfällen untersucht, um zu verstehen, wie diese Funktionen verwendet werden können, um Benutzern ein personalisiertes Erlebnis zu bieten
 
@@ -89,58 +92,63 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt jetzt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
 * Kann Zwischenwerte oder berechnete Werte enthalten.
 * Kann in bedingter Logik und Aktionen verwendet werden.
 
-**Szenario**: Ein E-Commerce-Unternehmen stellt ein Bestellformular bereit, in dem Benutzer ein Produkt und eine bevorzugte Versandmethode auswählen können. Während der Produktpreis über ein Formularfeld erfasst wird, werden die Versandkosten dynamisch anhand der ausgewählten Methode und des ausgewählten Landes bestimmt.
+**Szenario**: Benutzende können über ein Online-Einkaufsformular ein Produkt auswählen, eine Menge eingeben und ein Land für den Versand auswählen. Der Produktpreis ist ein fester Wert, der über ein Formularfeld erfasst wird, während die Versandkosten je nach ausgewähltem Land dynamisch variieren.
 
-Um die Formularstruktur sauber zu halten und das Hinzufügen unnötiger ausgeblendeter Felder zu vermeiden, möchte das Unternehmen die Versandkosten als temporären Wert behandeln, der die Echtzeit-Berechnung des Gesamtbetrags unterstützt.
+Um das Formular nicht mit ausgeblendeten Feldern zu überladen, entscheidet sich das Unternehmen, die Versandkosten in einer temporären Variablen zu speichern und sie für Echtzeit-Berechnungen zu verwenden.
 
 **Implementierung mithilfe der Funktionen Variablenwert festlegen und Variablenwert abrufen im Regeleditor**
 
-Eine Regel ist konfiguriert, um eine temporäre Variable mit dem Namen **extraCharge** mithilfe der Funktion **Wert der Variablen festlegen** festzulegen. Der Wert dieser Variablen hängt vom ausgewählten Land ab. Wenn der Benutzer beispielsweise „Vereinigte Staaten“ auswählt, wird der Wert auf 50 festgelegt. Für jedes andere Land wird er auf 100 gesetzt.
+Eine Regel wird für das Fragment **Adresse** mit der Funktion **Variablenwert festlegen** konfiguriert, um eine temporäre Variable mit dem Namen **extraCharge** zuzuweisen. Der Wert dieser Variablen ändert sich dynamisch je nach ausgewähltem Land. Beispiel:
+
+* Wenn der Benutzer die Option USA auswählt **wird** extraCharge) auf 500 gesetzt.
+* Für jedes andere Land **extraCharge** auf 100 gesetzt.
 
 ![Variablenwert festlegen](/help/forms/assets/setvalue.png)
 
-Später, bei der Berechnung der gesamten Versandkosten, ruft die Funktion **Variablenwert abrufen** den Wert **Zusatzkosten** basierend auf dem ausgewählten Land ab.
+Später, wenn die **Gesamtkosten der Sendung** berechnet wird, wird die Funktion **Variablenwert abrufen** verwendet, um den Wert von **extraCharge** abzurufen. Dieser Wert wird dem **Produktpreis × Produktmenge) hinzugefügt,** den endgültigen zu zahlenden Betrag beim Klick auf die Schaltfläche zu berechnen.
 
 ![Variablenwert abrufen](/help/forms/assets/getvalue.png)
 
-Dieser Wert wird dann zu den Versandkosten des Produkts hinzugefügt und das Ergebnis wird im Feld **Gesamtversandkosten** angezeigt.
-
+Das Feld **Gesamtversandkosten** wird dynamisch aktualisiert, um sowohl die Produktkosten als auch die Versandkosten widerzuspiegeln, wenn der Benutzer das Land oder die Menge ändert.
 ![Ausgabe](/help/forms/assets/getsetvalue-output.png)
 
-Mit diesem Ansatz können Sie zusätzliche Gebühren dynamisch berechnen und anzeigen, ohne sie in einem sichtbaren Feld zu speichern, was ein sauberes, reaktionsfähiges und Code-freies Benutzererlebnis ermöglicht.
+>[!NOTE]
+>
+> Sie können auch eine Funktion **Wert der Variablen abrufen** in der Wenn-Bedingung hinzufügen.
+> > ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
+Dieser Ansatz ermöglicht dynamische Echtzeit-Berechnungen, ohne dem Formular zusätzliche Felder hinzuzufügen, wodurch die Struktur sauber und benutzerfreundlich bleibt.
 
 ## Unterstützung benutzerdefinierter ereignisbasierter Regeln
 
 Der erweiterte Regeleditor unterstützt die benutzerdefinierte Ereignisbehandlung mit den Funktionen **Dispatch** und **On Trigger Event**. Diese Funktionen ermöglichen es verschiedenen Teilen des Formulars, durch Senden und Abhören benutzerdefinierter Ereignisse zu kommunizieren, was eine sauberere, modulare Logik ermöglicht, ohne Aktionen eng mit bestimmten Feldern zu verknüpfen.
 
-**Szenario**: Ein Bewerbungsformular ist in ein externes HR-System integriert, das eine Hintergrundüberprüfung durchführt. Sobald die Prüfung abgeschlossen ist, aktualisiert das System das Formular mit der **Hintergrundüberprüfung abgeschlossen!Nachricht**. Das Formular muss dynamisch anpassen, was der Antragsteller basierend auf diesem Ergebnis sieht.
+**Szenario**: Ein Anmeldeformular wird mit einem wiederverwendbaren Anmeldefragment erstellt, das die Felder **Benutzername eingeben** und **Kennwort eingeben** enthält. Wenn ein Benutzer gültige Anmeldeinformationen bereitstellt, validiert das Formular die Eingabe und initiiert den **OTP abrufen**-Prozess. Nachdem der Benutzer einen gültigen OTP eingegeben hat, wird er zur entsprechenden Seite weitergeleitet.
 
-Anstatt die Logik direkt an das Feld zu binden, das den Status erhält, verwendet das Formular einen benutzerdefinierten ereignisbasierten Ansatz, um die Modularität und Verwaltbarkeit zu verbessern.
+Anstatt die Logik direkt an die Felder zu binden, verwendet das Formular einen ereignisbasierten Ansatz mit **Dispatch-** und **On Trigger Event**, um die Modularität und Wartbarkeit zu verbessern.
 
 **Implementierung mithilfe des Dispatch-Ereignisses und des On-Trigger-Ereignisses**
 
-Wenn der Status der Hintergrundprüfung aktualisiert wird, verwendet eine Regel **Dispatch-Ereignis** um ein benutzerdefiniertes Ereignis als **bgvmsg** zusammen mit dem Statusergebnis auszugeben. Für dieses Ereignis wird eine separate Regel mithilfe von **Bei Trigger-Ereignis** überwacht.
+Das Anmeldungsfragment wird dem Formular hinzugefügt und enthält vordefinierte Felder für Benutzername und Kennwort. Auf der Schaltfläche **OTP abrufen** wird eine Regel zum Anzeigen des **Validierungsbereichs** konfiguriert, der das Eingabefeld zum Eingeben und Validieren des OTP enthält.
 
-Die folgenden Screenshots zeigen die Regeln, die auf die „Ist die Hintergrundüberprüfung abgeschlossen?“ angewendet wurden Optionsfeld und das Textfeld „BGVMSG“.
+![OTP-Regel abrufen](/help/forms/assets/get-otp-rule.png)
 
-![Dispatch-Ereignis](/help/forms/assets/dispatch-event-rule.png)
+Im **Validierungsbereich** wird eine Regel für die Schaltfläche Validieren konfiguriert. Die API-Integration wird verwendet, um den im Feld „OTP eingeben **eingegebenen OTP zu**. Wenn die Validierung erfolgreich ist **wird ein &quot;**&quot; mit dem Namen **LoggedIn** ausgelöst, wobei die Ereignis-Payload die API-Antwort enthält.
 
-![Bei Trigger-Ereignis](/help/forms/assets/trigger-event-rule.png)
+![Ereignisregel „In Trigger&quot;](/help/forms/assets/trigger-event-rule.png)
 
-Wenn das Ereignis erkannt wird, prüft es den Status und aktualisiert das Formular entsprechend. Beispiel:
+Auf Formularebene wird eine Regel konfiguriert, die auf das „LoggedIn **-Ereignis**. Wenn dieses Ereignis ausgelöst wird, zeigt die Regel die Umleitungsmeldung an und bringt den Benutzer zur Dashboard-Seite.
 
-* Wenn die Hintergrundprüfung bestanden wird, zeigt das Formular eine Bestätigungsmeldung an.
-* Wenn zusätzliche Dokumente benötigt werden, wird im Formular ein Abschnitt angezeigt, in dem der Antragsteller aufgefordert wird, die erforderlichen Informationen hochzuladen, zusammen mit einer Warnmeldung.
+![Dispatch-Ereignisregel](/help/forms/assets/dispatch-event-rule.png)
 
-![Ereignisausgabe auslösen](/help/forms/assets/dispatch-trigger-output.png)
+Wenn der Benutzer das Formular mit den richtigen Anmeldeinformationen und einem gültigen OTP sendet, ist die Anmeldung erfolgreich und der Benutzer wird zu seinem Dashboard weitergeleitet.
 
 Unterstützung benutzerdefinierter Ereignisse, mit denen Entwickelnde benutzerdefinierte Ereignisse erstellen und Trigger erstellen können, die als Bedingungen im Regeleditor verwendet werden können.
 
@@ -192,3 +200,7 @@ Wenn der Parameterwert **utm_source** gleich „google“ ist, wird eine benutze
 Auf diese Weise können Marketing-Fachleute den Benutzenden relevante Inhalte bereitstellen, die auf der Kampagne basieren, mit der sie zum Formular gebracht wurden, ohne dass eine manuelle Feldeingabe oder benutzerdefinierte Skripterstellung erforderlich ist.
 
 Durch diese Verbesserungen werden die Funktionen des Regeleditors für adaptive Forms erheblich erweitert, sodass Entwicklerinnen und Entwickler leistungsstarke Tools erhalten, um dynamischere, interaktivere und intelligentere Formulare zu erstellen. Jede Verbesserung berücksichtigt spezifische Geschäftsanforderungen, erhält dabei aber die Benutzerfreundlichkeit, die den Regeleditor für technische und nicht-technische Benutzende zugänglich macht.
+
+## Zusätzliche Ressourcen
+
+{{see-also-rule-editor}}
