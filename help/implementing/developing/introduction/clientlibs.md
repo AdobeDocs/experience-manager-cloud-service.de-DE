@@ -4,10 +4,10 @@ description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit den
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2497'
-ht-degree: 100%
+source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
+workflow-type: tm+mt
+source-wordcount: '2422'
+ht-degree: 97%
 
 ---
 
@@ -197,7 +197,7 @@ Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Si
 
 * **Name:** dependencies
 * **Typ:** String[]
-* **Werte:** Der Wert der categories-Eigenschaft des cq:ClientLibraryFolder-Knotens, von dem der aktuelle Bibliotheksordner abhängig ist.
+* **Values:** Der Wert der categories-Eigenschaft des cq:ClientLibraryFolder-Knotens, von dem der aktuelle Bibliotheksordner abhängt.
 
 Beispielsweise weist `/etc/clientlibs/myclientlibs/publicmain` eine Abhängigkeit von der `cq.jquery`-Bibliothek auf. Die Seite, die die Haupt-Client-Bibliothek referenziert, erzeugt HTML-Code, der den folgenden Code enthält:
 
@@ -288,7 +288,7 @@ Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.
 
 >[!NOTE]
 >
->Standardmäßig verwendet AEM den YUI Compressor. In der [GitHub-Dokumentation zum YUI Compressor](https://github.com/yui/yuicompressor/issues) finden Sie eine Liste bekannter Probleme. Ein Wechsel zu GCC Compressor für bestimmte Client-Bibliotheken kann einige mit YUI verbundene Probleme beheben.
+>Standardmäßig verwendet AEM den GCC-Kompressor zur Minimierung von JavaScript.
 
 >[!CAUTION]
 >
@@ -299,9 +299,8 @@ Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.
 Sie können die Präprozessorkonfiguration pro Client-Bibliothek oder systemweit festlegen.
 
 * Fügen Sie die multivalue-Eigenschaften `cssProcessor` und `jsProcessor` zum Client-Bibliotheksknoten hinzu.
-* Oder definieren Sie die standardmäßige Systemkonfiguration über die OSGi-Konfiguration im **HTML Library Manager**
 
-Eine Präprozessor-Konfiguration im clientlib-Knoten hat Vorrang vor der OSGi-Konfiguration.
+Die Definition der Systemstandardkonfiguration über die OSGi-Konfiguration {**} HTML Library Manager wird nicht unterstützt.** Sie gilt nur für die lokale SDK und nicht für Full-Stack-Pipeline-Ausführungen.
 
 #### Format und Beispiele {#format-and-examples}
 
@@ -337,7 +336,7 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
@@ -345,11 +344,4 @@ Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](http
 
 #### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 
-YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
-
-1. Rufen Sie Apache Felix Config Manager unter `http://<host>:<port/system/console/configMgr` auf.
-1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
-1. Aktivieren Sie die Option **Minimieren** (wenn nicht bereits aktiviert).
-1. Setzen Sie den Wert **JS-Prozessor-Standardkonfigurationen** auf `min:gcc`.
-   * Optionen können übergeben werden, wenn sie durch Semikolons getrennt sind, z. B `min:gcc;obfuscate=true`.
-1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern.
+Das Festlegen des Systemstandard-Minimierers wird in AEM as a Cloud Service nicht unterstützt.
