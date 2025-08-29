@@ -6,10 +6,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2d2a206fea14d7e786a98e848bc2f2592ac65429
-workflow-type: ht
+source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
+workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -70,10 +70,10 @@ Beide Modelle können innerhalb desselben Cloud Manager-Programms koexistieren, 
 
 ## Voraussetzungen {#prerequisites}
 
-1. Onboarding Ihrer Site in Cloud Manager – Bei beiden Bereitstellungsmodellen erforderlich. Folgen Sie „Onboarding einer AEM-Site“.
+1. Integrieren Sie Ihre Site in Cloud Manager - für beide Bereitstellungsmodelle erforderlich. Folgen Sie „Onboarding einer AEM-Site“.
 
-2. Bring Your Own Git (BYOG) (optional) - Wenn Sie Sitecode außerhalb von Adobe Git speichern, schließen Sie das BYOG-Onboarding ab.
+2. Eigenes Git einbringen (BYOG) (optional) - Wenn Sie Website-Code außerhalb von Adobe-Git speichern, schließen Sie das BYOG-Onboarding ab.
 
-3. Edge Delivery-Lizenz - Stellen Sie sicher, dass Ihr Programm für Edge Delivery Services lizenziert ist.
+3. Edge Delivery-Lizenz : Stellen Sie sicher, dass Ihr Programm für Edge Delivery Services lizenziert ist.
 
 
