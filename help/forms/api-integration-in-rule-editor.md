@@ -5,13 +5,13 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: Integrieren der API im Regeleditor, Aufrufen von Service-Verbesserungen
-source-git-commit: 5d25204516cb46334c4d594c16852b033f3e6c90
+exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
-
 
 # Integrieren der API im Regeleditor
 
@@ -25,7 +25,7 @@ Darüber hinaus können Sie mit dem visuellen Regeleditor beim Aufrufen **Servic
 
 >[!NOTE]
 >
-> Die API-Integration im Regeleditor gilt auch für Edge Delivery Services Forms.
+> Die API-Integration im Regeleditor gilt auch für im universellen Editor erstellte [Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Vergleich: API-Integrationsmethoden
 
@@ -76,6 +76,8 @@ Im folgenden Screenshot sehen Sie das Konfigurationsfenster für die API-Integra
    * **Hinzufügen/Löschen**: Hinzufügen neuer Zuordnungen oder Entfernen vorhandener Zuordnungen.
 
 ## Anwendungsfall: Ausfüllen von Länderfeldern in einem Visumantragsformular
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471606/rule-editor-api-integration/?quality=12&learn=on)
 
 **Szenario**: Eine Regierungsbehörde stellt ein Online-Antragsformular für ein Visum mit den folgenden Feldern bereit:
 

@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 4a1dcc9f069bdf8f5cf8abaa3f784f5ebd4922cc
+source-git-commit: 827077d8dd39520a74992907134e0466b7beb648
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1908'
 ht-degree: 47%
 
 ---
@@ -81,7 +81,9 @@ Erstellen Sie Vanity-URLs für die Asset-Bereitstellung in DM mit OpenAPI und er
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Datums- und Uhrzeiteingabekomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): Eine Datums- und Uhrzeitkomponente ist jetzt verfügbar, sodass Benutzende sowohl Datum als auch Uhrzeit über eine Kalender- und Uhrenschnittstelle auswählen oder Werte in einem unterstützten Format manuell eingeben können.
+### Neue Funktionen in AEM Forms {#forms-new-features}
+
+* [Datums- und Uhrzeiteingabekomponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): Eine Datums- und Uhrzeitkomponente ist jetzt verfügbar, sodass Benutzende sowohl Datum als auch Uhrzeit über eine Kalender- und Uhrenschnittstelle auswählen oder Werte in einem unterstützten Format manuell eingeben können.
 * [Verbesserte Fehlerbehandlung für Datei-Uploads](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): Die Dateianlagenkomponente validiert jetzt den hochgeladenen Dateityp automatisch anhand der Zulassungsliste. Wenn ein(e) Benutzende(r) eine Datei in einem nicht unterstützten Format hochlädt, wird im Formular während der Übermittlung ein Fehler angezeigt. Die Komponente überprüft auch den Dateiinhalt, um seinen Typ zu überprüfen, wodurch die allgemeine Sicherheit des Formulars verbessert wird.
 * [Angegebene Fehlerantwort für benutzerdefinierte Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md): Wenn bei einer benutzerdefinierten Übermittlungsaktion ein nicht behandelter Fehler auftritt, wird der Fehler-Code 502 zurückgegeben. Auf diese Weise können Sie erkennen, dass das Problem mit der benutzerdefinierten Übermittlungsaktion zusammenhängt, was das Debugging erleichtert.
 * [Ausgeblendete Felder vom Datensatzdokument ausschließen](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): Es wurde eine neue Eigenschaft hinzugefügt, die den Ausschluss ausgeblendeter Felder vom Datensatzdokument ermöglicht. Standardmäßig ist diese Option nicht aktiviert und gilt für alle Formularfelder.
@@ -103,7 +105,7 @@ Erstellen Sie Vanity-URLs für die Asset-Bereitstellung in DM mit OpenAPI und er
 
 ### Early-Adopter-Funktionen in AEM Forms
 
-* [Komponente „Freihandsignatur](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): Sie können jetzt die Komponente „Freihandsignatur“ verwenden, um Benutzern beim Hinzufügen ihrer Signaturen zu einem Formular zu helfen, z. B. in einem Vereinbarungsformular. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit der Maus, dem Stift oder dem Touchscreen zu zeichnen.
+* [Komponente „Freihandsignatur](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): Sie können jetzt die Komponente „Freihandsignatur“ verwenden, um Benutzern beim Hinzufügen ihrer Signaturen zu einem Formular zu helfen, z. B. in einem Vereinbarungsformular. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit der Maus, dem Stift oder dem Touchscreen zu zeichnen.
 * [Direkte API-Integration im Regeleditor](/help/forms/api-integration-in-rule-editor.md): Adaptive Forms unterstützen jetzt die direkte API-Integration im visuellen Regeleditor, ohne dass ein Formulardatenmodell erforderlich ist. Autoren können APIs mithilfe eines URL- oder cURL-Imports konfigurieren, Eingabe-/Ausgabeparameter zuordnen und Aufrufe mit Authentifizierung sichern.
 
 <!--

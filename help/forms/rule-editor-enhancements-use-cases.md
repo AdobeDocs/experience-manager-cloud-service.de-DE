@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
@@ -104,6 +104,8 @@ Diese Variablen:
 Um das Formular nicht mit ausgeblendeten Feldern zu überladen, entscheidet sich das Unternehmen, die Versandkosten in einer temporären Variablen zu speichern und sie für Echtzeit-Berechnungen zu verwenden.
 
 **Implementierung mithilfe der Funktionen Variablenwert festlegen und Variablenwert abrufen im Regeleditor**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
 
 Eine Regel wird für das Fragment **Adresse** mit der Funktion **Variablenwert festlegen** konfiguriert, um eine temporäre Variable mit dem Namen **extraCharge** zuzuweisen. Der Wert dieser Variablen ändert sich dynamisch je nach ausgewähltem Land. Beispiel:
 
@@ -122,7 +124,7 @@ Das Feld **Gesamtversandkosten** wird dynamisch aktualisiert, um sowohl die Prod
 >[!NOTE]
 >
 > Sie können auch eine Funktion **Wert der Variablen abrufen** in der Wenn-Bedingung hinzufügen.
-> &#x200B;> ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Dieser Ansatz ermöglicht dynamische Echtzeit-Berechnungen, ohne dem Formular zusätzliche Felder hinzuzufügen, wodurch die Struktur sauber und benutzerfreundlich bleibt.
 
@@ -135,6 +137,9 @@ Der erweiterte Regeleditor unterstützt die benutzerdefinierte Ereignisbehandlun
 Anstatt die Logik direkt an die Felder zu binden, verwendet das Formular einen ereignisbasierten Ansatz mit **Dispatch-** und **On Trigger Event**, um die Modularität und Wartbarkeit zu verbessern.
 
 **Implementierung mithilfe des Dispatch-Ereignisses und des On-Trigger-Ereignisses**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 Das Anmeldungsfragment wird dem Formular hinzugefügt und enthält vordefinierte Felder für Benutzername und Kennwort. Auf der Schaltfläche **OTP abrufen** wird eine Regel zum Anzeigen des **Validierungsbereichs** konfiguriert, der das Eingabefeld zum Eingeben und Validieren des OTP enthält.
 
