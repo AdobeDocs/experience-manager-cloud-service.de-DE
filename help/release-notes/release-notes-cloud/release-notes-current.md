@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 827077d8dd39520a74992907134e0466b7beb648
+source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 47%
+source-wordcount: '1961'
+ht-degree: 48%
 
 ---
 
@@ -81,32 +81,59 @@ Erstellen Sie Vanity-URLs für die Asset-Bereitstellung in DM mit OpenAPI und er
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Neue Funktionen in AEM Forms {#forms-new-features}
+### Neue Funktionen in Experience Manager Forms {#new-features-forms}
 
-* [Datums- und Uhrzeiteingabekomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): Eine Datums- und Uhrzeitkomponente ist jetzt verfügbar, sodass Benutzende sowohl Datum als auch Uhrzeit über eine Kalender- und Uhrenschnittstelle auswählen oder Werte in einem unterstützten Format manuell eingeben können.
-* [Verbesserte Fehlerbehandlung für Datei-Uploads](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): Die Dateianlagenkomponente validiert jetzt den hochgeladenen Dateityp automatisch anhand der Zulassungsliste. Wenn ein(e) Benutzende(r) eine Datei in einem nicht unterstützten Format hochlädt, wird im Formular während der Übermittlung ein Fehler angezeigt. Die Komponente überprüft auch den Dateiinhalt, um seinen Typ zu überprüfen, wodurch die allgemeine Sicherheit des Formulars verbessert wird.
-* [Angegebene Fehlerantwort für benutzerdefinierte Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md): Wenn bei einer benutzerdefinierten Übermittlungsaktion ein nicht behandelter Fehler auftritt, wird der Fehler-Code 502 zurückgegeben. Auf diese Weise können Sie erkennen, dass das Problem mit der benutzerdefinierten Übermittlungsaktion zusammenhängt, was das Debugging erleichtert.
-* [Ausgeblendete Felder vom Datensatzdokument ausschließen](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): Es wurde eine neue Eigenschaft hinzugefügt, die den Ausschluss ausgeblendeter Felder vom Datensatzdokument ermöglicht. Standardmäßig ist diese Option nicht aktiviert und gilt für alle Formularfelder.
+**Eingabekomponente für Datum und Uhrzeit**
+
+Eine [Datums- und Uhrzeitkomponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) ist jetzt verfügbar, sodass Benutzende sowohl Datum als auch Uhrzeit über eine Kalender- und Uhrenschnittstelle auswählen oder Werte in einem unterstützten Format manuell eingeben können.
+
+**Verbesserte Fehlerbehandlung für Datei-Uploads**
+
+Die [Dateianlagenkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) validiert jetzt den hochgeladenen Dateityp automatisch anhand der Zulassungsliste. Wenn ein(e) Benutzende(r) eine Datei in einem nicht unterstützten Format hochlädt, wird im Formular während der Übermittlung ein Fehler angezeigt. Die Komponente überprüft auch den Dateiinhalt, um seinen Typ zu überprüfen, wodurch die allgemeine Sicherheit des Formulars verbessert wird.
+
+**Angegebene Fehlerantwort für benutzerdefinierte Übermittlungsaktion**
+
+Wenn bei [benutzerdefinierten Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md) ein nicht behandelter Fehler auftritt, gibt das System den Fehler-Code 502 zurück. Auf diese Weise können Sie erkennen, dass das Problem mit der benutzerdefinierten Übermittlungsaktion zusammenhängt, was das Debugging erleichtert.
+
+**Ausgeblendete Felder vom Datensatzdokument ausschließen**
+
+Eine neue Eigenschaft ermöglicht den Ausschluss ausgeblendeter Felder aus dem [Datensatzdokument](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). Standardmäßig ist diese Option nicht aktiviert und gilt für alle Formularfelder.
+
 
 ### Vorabversionsfunktionen in AEM Forms
 
-* [Generieren und Synchronisieren von AFP-](/help/forms/document-generation-afp-api.md): Sie können jetzt die AEM Forms-Kommunikations-API verwenden, um eine XDP-Datei in das AFP-Format zu konvertieren. AFP ist ein leistungsstarkes Format, das im Großdruck in Unternehmen weit verbreitet ist.
-* **Verbesserungen im Regeleditor**
-   * [Validate-Methode in der Funktionsliste](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): Die Methoden „Validate“ und „Reset“ unterstützen jetzt die Ausführung auf Bedienfeld-, Feld- und Formularebene. Zuvor wurden sie nur auf Formularebene unterstützt.
-   * [Moderner JavaScript-](/help/forms/rule-editor-core-components-difference-tables.md): Unterstützung für ECMAScript 2019 und neuere Funktionen wurde für benutzerdefinierte Funktionen hinzugefügt, sodass Sie effizienteren, modularen und wiederverwendbaren Code schreiben können
-   * [Download-Datensatzdokument-Option im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): Eine Funktion zum Herunterladen des Datensatzdokuments (DoR) wurde im Regeleditor als vordefinierte Option hinzugefügt.
-     ![Datensatzdokument](/help/forms/assets/document-of-record-rn.gif)
-   * [Dynamische Variablen im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): Sie können jetzt dynamische (temporäre) Variablen im Regeleditor verwenden, um die Flexibilität beim Definieren von Bedingungen und Aktionen zu erhöhen. Ausgeblendete Felder sind nicht mehr zum Speichern temporärer Werte erforderlich.
-   * [Unterstützung benutzerdefinierter ereignisbasierter Regeln](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Sie können jetzt benutzerspezifische Ereignisse und Ereignisregeln definieren, die auf diesen Triggern basieren.
-   * [Kontextabhängige wiederholbare Bereichsregeln](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In wiederholbaren Bereichen werden Regeln jetzt kontextbasiert ausgeführt und nicht mehr nur auf die letzte Bereichsinstanz angewendet.
-   * [Regeln werden durch Parameter ausgelöst](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): Der Regeleditor unterstützt jetzt die Ausführung von Regeln anhand von Abfrageparametern, UTM-Parametern oder Browser-Parametern.
-   * [Formularspezifische benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms unterstützt jetzt formularspezifische benutzerdefinierte Funktionsskripte und bietet so mehr Flexibilität bei der Verwaltung wiederverwendbarer Logiken.
-   * [Statische Importe für benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): Der Regeleditor im universellen Editor unterstützt jetzt statische Importe, sodass Entwicklerinnen und Entwickler Funktionen in mehreren Formularen organisieren, freigeben und wiederverwenden können.
+**Erzeugen und Synchronisieren von AFP-Ausgabedarstellungen**
 
-### Early-Adopter-Funktionen in AEM Forms
+Sie können jetzt die [AEM Forms-Kommunikations-API](/help/forms/document-generation-afp-api.md) verwenden, um eine XDP-Datei in das AFP-Format zu konvertieren. AFP ist ein leistungsstarkes Format, das im Großdruck in Unternehmen weit verbreitet ist.
 
-* [Komponente „Freihandsignatur](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): Sie können jetzt die Komponente „Freihandsignatur“ verwenden, um Benutzern beim Hinzufügen ihrer Signaturen zu einem Formular zu helfen, z. B. in einem Vereinbarungsformular. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit der Maus, dem Stift oder dem Touchscreen zu zeichnen.
-* [Direkte API-Integration im Regeleditor](/help/forms/api-integration-in-rule-editor.md): Adaptive Forms unterstützen jetzt die direkte API-Integration im visuellen Regeleditor, ohne dass ein Formulardatenmodell erforderlich ist. Autoren können APIs mithilfe eines URL- oder cURL-Imports konfigurieren, Eingabe-/Ausgabeparameter zuordnen und Aufrufe mit Authentifizierung sichern.
+**Verbesserungen im Regeleditor**
+
+* [Validate-Methode in der Funktionsliste](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): Die Methoden „Validate“ und „Reset“ unterstützen jetzt die Ausführung auf Bedienfeld-, Feld- und Formularebene. Zuvor wurden sie nur auf Formularebene unterstützt.
+* [Moderner JavaScript-](/help/forms/rule-editor-core-components-difference-tables.md): Unterstützung für ECMAScript 2019 und neuere Funktionen wurde für benutzerdefinierte Funktionen hinzugefügt, sodass Sie effizienteren, modularen und wiederverwendbaren Code schreiben können.
+* [Download-Datensatzdokument-Option im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): Eine Funktion zum Herunterladen des Datensatzdokuments (DoR) wurde im Regeleditor als vordefinierte Option hinzugefügt.
+
+  ![Datensatzdokument](/help/forms/assets/document-of-record-rn.gif)
+
+* [Dynamische Variablen im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): Sie können jetzt dynamische (temporäre) Variablen im Regeleditor verwenden, um die Flexibilität beim Definieren von Bedingungen und Aktionen zu erhöhen. Ausgeblendete Felder sind nicht mehr zum Speichern temporärer Werte erforderlich.
+* [Unterstützung benutzerdefinierter ereignisbasierter Regeln](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Sie können jetzt benutzerspezifische Ereignisse und Ereignisregeln definieren, die auf diesen Triggern basieren.
+* [Kontextabhängige wiederholbare Bereichsregeln](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In wiederholbaren Bereichen werden Regeln jetzt kontextbasiert ausgeführt und nicht mehr nur auf die letzte Bereichsinstanz angewendet.
+* [Regeln werden durch Parameter ausgelöst](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): Der Regeleditor unterstützt jetzt die Ausführung von Regeln anhand von Abfrageparametern, UTM-Parametern oder Browser-Parametern.
+* [Formularspezifische benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms unterstützt jetzt formularspezifische benutzerdefinierte Funktionsskripte und bietet so mehr Flexibilität bei der Verwaltung wiederverwendbarer Logiken.
+* [Statische Importe für benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): Der Regeleditor im universellen Editor unterstützt jetzt statische Importe, sodass Entwicklerinnen und Entwickler Funktionen in mehreren Formularen organisieren, freigeben und wiederverwenden können.
+
+### Neue Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
+
+Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit, einen exklusiven Zugang zu den aktuellen Innovationen zu erhalten und ihre Entwicklung mitzugestalten.
+
+In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
+
+**Freihandsignatur-Komponente**
+
+Sie können jetzt die Komponente [Freihandsignatur](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) verwenden, um Benutzern beim Hinzufügen ihrer Signaturen zu einem Formular zu helfen, z. B. in einem Vereinbarungsformular. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit der Maus, dem Stift oder dem Touchscreen zu zeichnen.
+
+**Direkte API-Integration im Regeleditor**
+
+Adaptive Forms unterstützen jetzt [direkte API-Integration](/help/forms/api-integration-in-rule-editor.md) im visuellen Regeleditor, ohne dass ein Formulardatenmodell erforderlich ist. Autoren können APIs mithilfe eines URL- oder cURL-Imports konfigurieren, Eingabe-/Ausgabeparameter zuordnen und Aufrufe mit Authentifizierung sichern.
 
 <!--
 **Forms Optimization opportunities**
@@ -153,6 +180,7 @@ Verschiedene veraltete APIs zielen auf die Entfernung am 31. August ab und sollt
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+
 </details>
 
 <!--
