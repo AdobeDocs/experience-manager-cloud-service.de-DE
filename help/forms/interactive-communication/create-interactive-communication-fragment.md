@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 1%
+source-wordcount: '294'
+ht-degree: 8%
 
 ---
 
-
 # Erstellen eines interaktiven Kommunikationsfragments
+
+>[!NOTE]
+>
+> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
+
+>[!IMPORTANT]
+>
+> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Eingabeaufforderungen, Beispiele und Best Practices können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
 
 Ein interaktives Kommunikationsfragment ermöglicht es Benutzenden, wiederverwendbare, modulare Inhaltsbausteine wie Kopf- und Fußzeilen oder standardmäßige Haftungsausschlüsse zu erstellen, die in mehreren Kommunikationsdokumenten verwendet werden können. Diese Fragmente tragen dazu bei, beim Erstellen personalisierter, datenintegrierter Kommunikationen die Konsistenz zu wahren, repetitive Aufgaben zu reduzieren und den Design-Prozess zu beschleunigen.
 
@@ -35,7 +42,7 @@ Um ein Fragment für interaktive Kommunikation zu erstellen, führen Sie die fol
 
 1. Bei Auswahl des Fragments Interaktive Kommunikation wird ein Bildschirm angezeigt, in dem Sie wichtige Fragmentdetails wie Titel, Name, Beschreibung, Datenmodell (eine strukturierte Darstellung von Backend-Daten) und Tags definieren.
 
-   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![IC-Dokument suchen](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

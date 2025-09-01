@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 2%
+source-wordcount: '585'
+ht-degree: 6%
 
 ---
 
-
 # Erstellen einer interaktiven Kommunikation
+
+>[!NOTE]
+>
+> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
+
+>[!IMPORTANT]
+>
+> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Eingabeaufforderungen, Beispiele und Best Practices können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
 
 Interaktive Kommunikation ermöglicht Ihnen das Erstellen, Verwalten und Bereitstellen personalisierter und interaktiver Kommunikation, einschließlich Kundendienst, Abrechnung, Onboarding-Dokumenten, Angebotsbriefen, Kontoaktualisierungen und mehr. Sie wurde entwickelt, um alle Szenarien zu unterstützen, in denen dynamische, benutzerspezifische Inhalte das Kommunikationserlebnis branchenübergreifend verbessern.
 
