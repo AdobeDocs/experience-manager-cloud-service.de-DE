@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 38%
+source-wordcount: '632'
+ht-degree: 37%
 
 ---
 
@@ -65,6 +65,8 @@ Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Prob
 ### Bekannte Probleme {#known-issues-21994}
 
 * Apache HTTPD Version 2.4.65 führt Änderungen ein, die sich aufgrund neuer Einschränkungen, die im Rahmen von Sicherheitskorrekturen implementiert wurden, auf bestimmte Konfigurationen auswirken können. Diese Korrekturen beheben Sicherheitslücken, indem sichergestellt wird, dass Anweisungen wie `RequestHeader set`, `edit` und `edit_r`, die zum Ändern der Inhaltstyp-Kopfzeile verwendet werden, jetzt korrekt auf Anfragekopfzeilen beschränkt sind. Diese Änderung verhindert unbeabsichtigte Änderungen an Antwort-Headern, insbesondere für statische Inhalte.
+* Apache HTTPD Version 2.4.65 führt Änderungen in mod_proxy ein, wenn ProxyRemote-Verbindungen verwendet werden. Wenn Probleme auftreten, setzen Sie das Flag „Wiederverwendung deaktivieren“ auf „Ein“.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### Eingestellte Funktionen und APIs {#deprecated-21994}
 
