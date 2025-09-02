@@ -8,14 +8,22 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
+source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 6%
 
 ---
 
 # Einführung in den Editor für interaktive Kommunikation
+
+>[!NOTE]
+>
+> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
+
+>[!IMPORTANT]
+>
+> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Eingabeaufforderungen, Beispiele und Best Practices können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
 
 ## Was ist der Editor für interaktive Kommunikation?
 
@@ -52,7 +60,7 @@ Der Editor für interaktive Kommunikation (IC) wurde für Effizienz, Benutzerfre
 
 ## Onboarding
 
-Die Funktion der interaktiven Kommunikation (IC) ist über das Early Access-Programm (EA) verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-ID mit Ihrer Umgebungs-ID und Organisations-ID. Sobald Adobe Ihre Registrierung bestätigt hat, befolgen Sie die Dokumentation [Einstieg in den Service](/help/forms/setup-forms-cloud-service.md), um die interaktive Kommunikation in Ihrer AEM Forms-Umgebung zu aktivieren.
+Die Funktion der interaktiven Kommunikation (IC) ist über das Early Access-Programm (EA) verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-ID mit Ihrer Umgebungs-ID und Organisations-ID. Sobald Adobe Ihre Registrierung bestätigt hat, befolgen Sie die Dokumentation [Einstieg in den Service](/help/forms/setup-forms-cloud-service.md), um die interaktive Kommunikation in Ihrer AEM Forms-Umgebung zu aktivieren.
 
 ## Nächste Schritte
 
