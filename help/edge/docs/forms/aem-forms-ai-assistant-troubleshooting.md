@@ -198,6 +198,7 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
        - Nachricht (TextArea erforderlich, max. 500 Zeichen)
        - An E-Mail-Benachrichtigung senden
    
+
 ### Probleme mit Layout und Stil
 
 **Symptome:**
@@ -526,7 +527,7 @@ Verwenden Sie diese Eingabeaufforderungen, um detailliertere Informationen zu Fo
 - Verwenden Sie `/help` Befehl gefolgt von bestimmten Fragen.
 - Zugriff auf die kontextuelle Hilfe in der Benutzeroberfläche von Forms Experience Builder
 - Prüfen Sie die Fehlermeldungen sorgfältig auf spezifische Anleitungen.
-- Lesen Sie die Informationen zu den ersten Schritten mit Forms Experience Builder [](forms-ai-assistant-getting-started.md)
+- Lesen Sie die Informationen zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md)
 
 **Dokumentationsressourcen**
 

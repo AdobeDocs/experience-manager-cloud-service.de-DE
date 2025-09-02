@@ -29,7 +29,7 @@ Sammlung wiederverwendbarer Eingabeaufforderungsmuster und Beispiele, die für F
 
 ## Verwenden dieser Eingabeaufforderungsbibliothek
 
-Diese Bibliothek bietet wiederverwendbare Eingabeaufforderungsmuster für gängige Szenarien zur Formularerstellung. Umfassende Best Practices finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [](forms-ai-assistant-getting-started.md#best-practices).
+Diese Bibliothek bietet wiederverwendbare Eingabeaufforderungsmuster für gängige Szenarien zur Formularerstellung. Umfassende Best Practices finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
 
 ### Schnelltipps für diese Bibliothek
 
@@ -156,9 +156,9 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Voreinstellungen:**
     - Leistungsauswahl mit Kostenrechner
     - Voreinstellungen für den Arbeitsplan
-    - Schulungsanforderungen**Validierungsregeln:**Validierung des E-Mail-FormatsValidierungAlter muss 18 oder älter sein**- Alle erforderlichen Dokumente müssen hochgeladen werden
+    - Schulungsanforderungen&#x200B;**Validierungsregeln:**&#x200B;Validierung des E-Mail-FormatsValidierungAlter muss 18 oder älter sein**- Alle erforderlichen Dokumente müssen hochgeladen werden
     
-    - Bedingungen müssen akzeptiert werden**Aktionen senden:**Bestätigungs-E-Mail an neueMitarbeiter senden
+    - Bedingungen müssen akzeptiert werden&#x200B;**Aktionen senden:**&#x200B;Bestätigungs-E-Mail an neueMitarbeiter senden
     - HR- Personalabteilung benachrichtigen
     - Erstellen Sie einen Datensatz in einem HR
      
@@ -170,7 +170,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
      
      
      
--
+&#x200B;-
 **Form Management-Eingabeaufforderungen:**
 
     Importieren Sie dieses PDF-Antragsformular und konvertieren Sie es in ein adaptives Formular mit erweiterter Validierung
@@ -415,7 +415,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
     Verbinden Sie dieses Formular mit dem **CRM-System**, um neue Leads zu erstellen. Ordnen Sie beim Senden des Formulars @firstName FirstName, @email E-Mail zu, legen Sie LeadSource auf „Web-Formular“ und Status 
     
-    Neu“ fest **Workflow-Trigger **. Alle Formulardaten und den Workflow für die Trigger-Genehmigung mit Manager-Benachrichtigung 
+    Neu“ fest **Workflow-Trigger &#x200B;**. Alle Formulardaten und den Workflow für die Trigger-Genehmigung mit Manager-Benachrichtigung 
     
     **Datenbankintegration** übergeben, um Formularübermittlungen als Datensätze zu speichern Erstellen Sie für jede Übermittlung mit hochgeladenen Dokumenten einen neuen Ordner
 
@@ -765,6 +765,6 @@ Verwenden Sie `@fieldName` Syntax, um in Ihren Eingabeaufforderungen auf vorhand
 
 ### Validierungs-Checkliste
 
-Umfassende Best Practices und Validierungsrichtlinien finden Sie im Abschnitt Erste Schritte mit Forms Experience Builder [](forms-ai-assistant-getting-started.md#best-practices).
+Umfassende Best Practices und Validierungsrichtlinien finden Sie im Abschnitt Erste Schritte mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
 
 *Diese Eingabeaufforderungsbibliothek wird laufend auf der Grundlage von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de).*
