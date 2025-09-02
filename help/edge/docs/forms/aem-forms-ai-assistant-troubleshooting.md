@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -197,7 +198,6 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
        - Nachricht (TextArea erforderlich, max. 500 Zeichen)
        - An E-Mail-Benachrichtigung senden
    
-
 ### Probleme mit Layout und Stil
 
 **Symptome:**
@@ -526,7 +526,7 @@ Verwenden Sie diese Eingabeaufforderungen, um detailliertere Informationen zu Fo
 - Verwenden Sie `/help` Befehl gefolgt von bestimmten Fragen.
 - Zugriff auf die kontextuelle Hilfe in der Benutzeroberfläche von Forms Experience Builder
 - Prüfen Sie die Fehlermeldungen sorgfältig auf spezifische Anleitungen.
-- Lesen Sie die Informationen zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md)
+- Lesen Sie die Informationen zu den ersten Schritten mit Forms Experience Builder [](forms-ai-assistant-getting-started.md)
 
 **Dokumentationsressourcen**
 

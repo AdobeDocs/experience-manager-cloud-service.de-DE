@@ -6,7 +6,7 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -444,4 +444,4 @@ Wählen Sie die für Ihre Anforderungen am besten geeignete Erstellungsmethode a
 - Trendanalyse zur Nutzung und Effektivität von Formularen
 - Benchmarking anhand von Branchenstandards und Best Practices
 
-Weitere Anleitungen und ausführliche Beispiele finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md) und in der Eingabeaufforderungsbibliothek zu Forms Experience Builder[.](ai-assistant-prompt-library.md)
+Weitere Anleitungen und ausführliche Beispiele finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [](forms-ai-assistant-getting-started.md) und in der Eingabeaufforderungsbibliothek zu Forms Experience Builder[.](ai-assistant-prompt-library.md)
