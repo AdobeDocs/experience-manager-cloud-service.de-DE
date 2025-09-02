@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
+source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '939'
 ht-degree: 4%
 
 ---
@@ -99,31 +99,38 @@ Forms Experience Builder folgt einem einfachen, dialogorientierten Ansatz:
 
 ## Beispielszenarien:
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=de)
-
-**PDF forms in Digital Forms umwandeln**
-
-Konvertieren von Acroforms, XFA-PDFs oder einfachen PDF-Dokumenten in responsive, interaktive digitale Formulare mit erweiterten Funktionen.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
-
-**Ältere XFA-Forms modernisieren**
-
-Transformieren Sie komplexe XFA-Anwendungen in moderne, barrierefreie digitale Erlebnisse mit verbesserten Benutzer-Workflows.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=de)
-
-**Konvertieren von Screenshots in Digital Forms**
-
-Verwandeln Sie Bilder, Screenshots oder handgezeichnete Formulare in voll funktionsfähige digitale Erlebnisse.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">PDF forms in Digital Forms umwandeln</p>
+                    <p class="is-size-6">Konvertieren von Acroforms, XFA-PDFs oder einfachen PDF-Dokumenten in responsive, interaktive digitale Formulare mit erweiterten Funktionen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernize Legacy XFA Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Ältere XFA-Forms modernisieren</p>
+                    <p class="is-size-6">Transformieren Sie komplexe XFA-Anwendungen in moderne, barrierefreie digitale Erlebnisse mit verbesserten Benutzer-Workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Convert Screenshots to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Konvertieren von Screenshots in Digital Forms</p>
+                    <p class="is-size-6">Verwandeln Sie Bilder, Screenshots oder handgezeichnete Formulare in voll funktionsfähige digitale Erlebnisse.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- #### Import and Enhance Web Forms
 
@@ -148,39 +155,48 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Vorteile für Organisationen
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=de)
-
-**Demokratisierte Formularerstellung**
-
-Nicht-technische Anwender in die Lage versetzen, anspruchsvolle Formulare zu erstellen, ohne Wissen durch Gespräche in natürlicher Sprache zu programmieren.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=de)
-
-**Verkürzte Time-to-Value (TTV)**
-
-Drastische Beschleunigung der Formularentwicklung von Tagen auf Stunden, sodass digitale Initiativen schneller auf den Markt kommen können.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=de)
-
-**Einfachheit der Benutzeroberfläche**
-
-Eliminieren Sie die Lernkurve mit einer intuitiven Gesprächsoberfläche, reduzieren Sie die Schulungszeit und steigern Sie die Akzeptanz.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
-
-**Skalierung der Modernisierungsmaßnahmen**
-
-Modernisieren Sie ältere Formularportfolios effizient, behalten Sie die Geschäftslogik bei und verbessern Sie das Benutzererlebnis in Ihrem gesamten Formularökosystem.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Demokratisierte Formularerstellung</p>
+                    <p class="is-size-6">Nicht-technische Anwender in die Lage versetzen, anspruchsvolle Formulare zu erstellen, ohne Wissen durch Gespräche in natürlicher Sprache zu programmieren.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Reduced Time to Value (TTV)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Verkürzte Time-to-Value (TTV)</p>
+                    <p class="is-size-6">Drastische Beschleunigung der Formularentwicklung von Tagen auf Stunden, sodass digitale Initiativen schneller auf den Markt kommen können.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Interface Simplicity">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Einfachheit der Benutzeroberfläche</p>
+                    <p class="is-size-6">Eliminieren Sie die Lernkurve mit einer intuitiven Gesprächsoberfläche, reduzieren Sie die Schulungszeit und steigern Sie die Akzeptanz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Scaling Modernization Efforts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Skalierung der Modernisierungsmaßnahmen</p>
+                    <p class="is-size-6">Modernisieren Sie ältere Formularportfolios effizient, behalten Sie die Geschäftslogik bei und verbessern Sie das Benutzererlebnis in Ihrem gesamten Formularökosystem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Onboarding
 
