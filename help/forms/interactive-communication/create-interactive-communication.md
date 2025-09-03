@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Interaktive Kommunikation ermöglicht Ihnen das Erstellen, Verwalten und Bereits
 
 Angenommen, Sie müssen Tausenden von Kunden einen Kontoauszug, eine Versicherungspolice oder eine Stromrechnung senden. Jedes hat dasselbe Layout, aber personalisierte Daten. Interaktive Kommunikation (IC) ermöglicht dies effizient.
 
-![IC-Dokument suchen](/help/forms/interactive-communication/assets/Picture1.png)
+![IC-Dokument suchen](/help/forms/interactive-communication/assets/introimg.png)
 
 Die manuelle Erstellung dieser Dokumente kann zeitaufwendig sein und führt oft zu Inkonsistenzen, insbesondere wenn Personalisierung und Datenintegration erforderlich sind. Mit dem Editor für interaktive Kommunikation können Benutzer den Prozess der Erstellung interaktiver Kommunikation optimieren.
 
