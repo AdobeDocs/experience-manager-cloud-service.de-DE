@@ -5,9 +5,9 @@ exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Die Sequenz für das Erhalten eines `Session/ResourceResolver` für einen Dienst
 
 1. Abrufen von Prinzipalnamen von `ServiceUserMapper` => Repository-Anmeldung vor der Authentifizierung, wie unten beschrieben
 1. Abrufen der Benutzer-ID von `ServiceUserMapper`
-1. Auf veraltete `1ServiceUserConfiguration` für die aktuelle Benutzer-ID prüfen
+1. Suchen nach einer veralteten `1ServiceUserConfiguration` für die aktuelle Benutzer-ID
 1. Standardmäßige Sling Service-Anmeldung mit der Benutzer-ID (z. B. eine Sequenz von `createAdministrativeSession` und stellvertretend für die Dienstbenutzer-ID)
 
 Die neue Zuordnung mit Prinzipalnamen führt zur folgenden vereinfachten Repository-Anmeldung:
