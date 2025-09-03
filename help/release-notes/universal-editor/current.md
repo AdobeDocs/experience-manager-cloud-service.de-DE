@@ -1,13 +1,13 @@
 ---
 title: Universeller Editor – Versionshinweise für 2025.08.22
-description: Dies sind die Versionshinweise für die Version 2025.08.22 des universellen Editors.
+description: Dies sind die Versionshinweise für die Version 2025.08.22 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: cd717eac1e4eb6eda3b2a60fc28ad63d92e858ec
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 67%
+ht-degree: 71%
 
 ---
 
@@ -49,5 +49,5 @@ Die Funktionen „Rückgängig“ und „Wiederherstellen“ sind jetzt für Aut
 
 ## Veraltete Funktionen {#deprecations}
 
-* Die `text-input`- und `text-area`-Komponenten sind seit [Version 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md) offiziell veraltet
+* Die Komponenten `text-input` und `text-area` sind seit [Version 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md) offiziell veraltet
    * Verwenden Sie in `model-definition.json` die Textkomponente, um Texteingaben für das Panel „Eigenschaften“ zu erstellen.

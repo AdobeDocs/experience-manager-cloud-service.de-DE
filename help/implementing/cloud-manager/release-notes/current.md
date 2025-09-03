@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -27,11 +27,11 @@ Die Veröffentlichung der nächsten Version ist für den 4. September 2025 gepla
 
 ## Neue Funktionen {#what-is-new}
 
-* **Adobe Experience Hub in Kürze verfügbar**
+* **Adobe Experience Hub demnächst verfügbar**
 
-  Ab dem 19. August 2025 beginnt Adobe mit dem schrittweisen Rollout des neuen Experience Hub für alle Adobe Experience Manager-Benutzer.
+  Ab dem 19. August 2025 beginnt Adobe mit dem schrittweisen Rollout des neuen Experience Hub für alle Adobe Experience Manager-Benutzenden.
 
-  Experience Hub ist ein einheitlicher Ausgangspunkt, der personalisierte, kontextuelle Erlebnisse bereitstellt, mit denen Benutzende Ziele schneller erreichen können. Der Rollout endet am 26. August 2025, sodass er für alle Benutzer verfügbar ist. Die neue Experience Hub ist direkt unter [experience.adobe.com](https://experience.adobe.com/) verfügbar. Weitere Informationen finden Sie unter [Experience Hub](/help/experience-hub.md).
+  Experience Hub ist ein einheitlicher Ausgangspunkt, der personalisierte, kontextuelle Erlebnisse bereitstellt, mit denen Benutzende Ziele schneller erreichen können. Der Rollout endet am 26. August 2025, sodass er für alle Benutzenden verfügbar ist. Die neue Experience Hub ist direkt unter [experience.adobe.com](https://experience.adobe.com/) verfügbar. Weitere Informationen finden Sie unter [Experience Hub](/help/experience-hub.md).
 
 * **Die Edge Delivery Services-Lizenz kann im Self-Service in ein HIPAA-Programm aufgenommen werden**
 
@@ -54,7 +54,7 @@ Die Veröffentlichung der nächsten Version ist für den 4. September 2025 gepla
 
      ![Forms-Add-on in „Lösungen und Add-ons“ beim Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *Bei der Programmerstellung können Sie das Forms-Add-on innerhalb der Sites-Lösung auswählen.*
 
-     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *Wählen Sie unter **Programm bearbeiten**&#x200B;das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
+     ![Forms-Add-on beim Bearbeiten eines Produktionsprogramms](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *Wählen Sie unter **Programm bearbeiten**das Forms-Add-on für das Sites-Programm aus und führen Sie dann die Pipeline aus, um sie in den Umgebungen zu aktivieren.*
 
      Weitere Informationen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -68,10 +68,10 @@ Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
@@ -99,7 +99,7 @@ Siehe [Hinzufügen einer spezialisierten Testumgebung](/help/implementing/cloud-
 
 >[!NOTE]
 >
->Adobe hat Anfragen zum Beta-Zugriff für spezialisierte Testumgebungen abgeschlossen und eine ausreichende Anzahl von Teilnehmern erreicht. Die Funktion ist jetzt in Vorbereitung auf die allgemeine Verfügbarkeit.
+>Adobe hat Anfragen zum Beta-Zugriff für spezialisierte Testumgebungen abgeschlossen und eine ausreichende Anzahl von Teilnehmenden erreicht. Die Funktion ist jetzt in Vorbereitung für die allgemeine Verfügbarkeit.
 
 <!--
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
@@ -158,7 +158,7 @@ Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Deli
 
 ![„Edge Delivery-Pipeline hinzufügen“ in der Dropdown-Liste „Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Hinzufügen einer Edge Delivery-Pipeline über die Seite **Programmübersicht**, Karte **Pipelines**.*
 
-![Dialogfeld „Edge Delivery-Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Dialogfeld „Edge Delivery-Pipeline hinzufügen“*
+![Dialogfeld „Edge Delivery-Pipeline hinzufügen“](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Dialogfeld „Edge Delivery-Pipeline hinzufügen“.*
 
 Siehe [Pipeline von Edge Delivery hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 67%
+ht-degree: 70%
 
 ---
 
@@ -18,7 +18,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 22171 {#22171}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 22171, die am Mittwoch, 2. September 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21994.
+Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 22171, die am Mittwoch, 2. September 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21994.
 
 Die Funktionsaktivierung von 2025.9.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -60,9 +60,9 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM Oak | 1,84,0 | [Oak-API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
+| AEM Oak | 1.84.0 | [Oak-API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2.4.65 | [Apache httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
+| Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | AEM-Kernkomponenten | 2.29.0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (Standard) | [Unterstützte Node.js-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |

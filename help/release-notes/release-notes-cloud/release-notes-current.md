@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -85,7 +85,7 @@ Erstellen Sie Vanity-URLs für die Asset-Bereitstellung in DM mit OpenAPI und er
 
 **Eingabekomponente für Datum und Uhrzeit**
 
-Eine [Datums- und Uhrzeitkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) ist jetzt verfügbar, sodass Benutzende sowohl Datum als auch Uhrzeit über eine Kalender- und Uhrenschnittstelle auswählen oder Werte in einem unterstützten Format manuell eingeben können.
+Eine [Datums- und Uhrzeitkomponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) ist jetzt verfügbar, sodass Benutzende sowohl Datum als auch Uhrzeit über eine Kalender- und Uhrenschnittstelle auswählen oder Werte in einem unterstützten Format manuell eingeben können.
 
 **Verbesserte Fehlerbehandlung für Datei-Uploads**
 
@@ -129,7 +129,7 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 **Freihandsignatur-Komponente**
 
-Sie können jetzt die Komponente [Freihandsignatur](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) verwenden, um Benutzern beim Hinzufügen ihrer Signaturen zu einem Formular zu helfen, z. B. in einem Vereinbarungsformular. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit der Maus, dem Stift oder dem Touchscreen zu zeichnen.
+Sie können jetzt die Komponente [Freihandsignatur](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) verwenden, um Benutzern beim Hinzufügen ihrer Signaturen zu einem Formular zu helfen, z. B. in einem Vereinbarungsformular. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit der Maus, dem Stift oder dem Touchscreen zu zeichnen.
 
 **Direkte API-Integration im Regeleditor**
 
@@ -151,7 +151,7 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### JavaScript-Kompilierungsaktualisierung {#javascript-compilation}
 
