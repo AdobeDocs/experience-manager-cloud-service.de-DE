@@ -3,10 +3,10 @@ title: Vorschau von Assets und ihrer Eigenschaften in  [!DNL the Content Hub]
 description: Erfahren Sie, wie Sie in  [!DNL Content Hub] Assets und Eigenschaften in einer Vorschau anzeigen.
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '636'
-ht-degree: 100%
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 96%
 
 ---
 
@@ -54,46 +54,66 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
      <tr>
       <th><strong>Dateityp</strong></th>
       <th><strong>Unterstützte Formate</strong></th>
+      <th><strong>Größe</strong></th>
      </tr>
      <tr>
-      <td>Bild</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>Video</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>Dokument</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt] (Einfach)</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>Print-Medien</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="4"> Bild </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Maximal 250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Video </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 x 3840 Pixel, maximal 200 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> Maximal 200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Dokument </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (Einfach)</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Print-Medien </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> – </td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### Abgeleitete Eigenschaften {#derived-properties}
 
@@ -105,7 +125,7 @@ Einige Asset-Eigenschaften, die in [!DNL Content Hub] angezeigt werden, werden a
 
 * **Smart-Tags:** [!DNL The Content Hub] verwendet die Smart Content-Dienste von Adobe Sensei, um Assets mithilfe des Erkennungsalgorithmus für die Tags-basierte Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf Assets an.
 
-* **Farb-Tags:** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de) helfen Ihnen dabei, ein Asset anhand von Farben zu erkennen, die mithilfe der KI-Funktionen von Adobe Sensei automatisch in einem Asset identifiziert werden.
+* **Farb-Tags:** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen dabei, ein Asset anhand von Farben zu erkennen, die mithilfe der KI-Funktionen von Adobe Sensei automatisch in einem Asset identifiziert werden.
 
 * Upload-Datum
 

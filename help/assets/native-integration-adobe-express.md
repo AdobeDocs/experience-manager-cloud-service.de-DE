@@ -4,9 +4,9 @@ description: Durch die native Integration von AEM Assets in Adobe Express könne
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '704'
 ht-degree: 92%
 
 ---
@@ -65,7 +65,7 @@ Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sow
 
 7. Klicken Sie auf **[!UICONTROL Hochladen]**, um die Assets in AEM Assets hochzuladen.
 
-## Unterstützte Dateiformate {#supported-formats}
+Weitere Informationen finden Sie unter [Unterstützte Dateiformate](asset-properties-content-hub.md#supported-formats).
 
 [!DNL Content Hub] unterstützt alle Asset-Typen und -Formate, die das zugrunde liegende [!DNL Assets]-Repository unterstützt. In der folgenden Tabelle sind die wichtigsten Dateiformate in [!DNL the Content Hub] aufgeführt, die zusätzliche Unterstützung für eine visuelle Asset-Vorschau bieten:
 
@@ -133,13 +133,13 @@ Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sow
         <td> – </td>
     </tr>
     </tbody>
-   </table>
+</table>
 
 ## Einschränkungen {#limitations}
 
 1. Für den Import und Export wird MP4 als Videodateityp unterstützt.
 
-2. Informationen zum **MP4** Videoimport finden Sie unter [Unterstützte Dateiformate](#supported-formats). Darüber hinaus werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt.
+2. Informationen zum **MP4** Videoimport finden Sie unter [Unterstützte Dateiformate](asset-properties-content-hub.md#supported-formats). Darüber hinaus werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
