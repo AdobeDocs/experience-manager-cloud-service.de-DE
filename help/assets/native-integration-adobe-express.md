@@ -4,10 +4,10 @@ description: Durch die native Integration von AEM Assets in Adobe Express könne
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '635'
-ht-degree: 100%
+source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,6 @@ Dank der nativen Integration von AEM Assets mit Adobe Express können Sie über 
 ## Voraussetzungen {#prerequisites}
 
 Es sind Berechtigungen für den Zugriff auf Adobe Express und mindestens eine Umgebung in AEM Assets erforderlich. Die Umgebung kann eines der Repositorys in Assets as a Cloud Service oder Assets Essentials sein.
-
 
 ## Verwenden von AEM Assets im Adobe Express-Editor {#use-aem-assets-in-express}
 
@@ -66,19 +65,88 @@ Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sow
 
 7. Klicken Sie auf **[!UICONTROL Hochladen]**, um die Assets in AEM Assets hochzuladen.
 
+## Unterstützte Dateiformate {#supported-formats}
+
+[!DNL Content Hub] unterstützt alle Asset-Typen und -Formate, die das zugrunde liegende [!DNL Assets]-Repository unterstützt. In der folgenden Tabelle sind die wichtigsten Dateiformate in [!DNL the Content Hub] aufgeführt, die zusätzliche Unterstützung für eine visuelle Asset-Vorschau bieten:
+
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>Dateityp</strong></th>
+      <th><strong>Unterstützte Formate</strong></th>
+      <th><strong>Größe</strong></th>
+     </tr>
+     <tr>
+        <td rowspan="4"> Bild </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Maximal 250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Video </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 x 3840 Pixel, maximal 200 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> Maximal 200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Dokument </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (Einfach)</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> – </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Print-Medien </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> – </td>
+    </tr>
+    </tbody>
+   </table>
+
 ## Einschränkungen {#limitations}
 
 1. Für den Import und Export wird MP4 als Videodateityp unterstützt.
 
-2. Für den Import von MP4-Videos:
+2. Informationen zum **MP4** Videoimport finden Sie unter [Unterstützte Dateiformate](#supported-formats). Darüber hinaus werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt.
+   <!--
+   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
+   2. The maximum supported resolution is 3840 X 3840 pixels.
+   3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-   1. Die maximal unterstützte Dateigröße beträgt 200 MB. Bei Überschreiten dieses Grenzwerts wird eine Warnmeldung angezeigt.
-   2. Die maximal unterstützte Auflösung beträgt 3840 x 3840 Pixel.
-   3. Videos mit transparentem Hintergrund (Alphakanal) werden nicht unterstützt.
-
-3. Für den Export von MP4-Videos:
-
-   1. Die maximal unterstützte Dateigröße beträgt 200 MB. Bei Überschreiten dieses Grenzwerts wird ein Warnhinweis angezeigt, das Video auf 200 MB oder weniger zu reduzieren oder es nach dem Herunterladen manuell in den Zielordner in AEM Assets hochzuladen.
+3. Für **MP4** Videoexport werden maximal 200 MB Dateigröße unterstützt. Bei Überschreiten dieses Grenzwerts wird ein Warnhinweis angezeigt, das Video auf 200 MB oder weniger zu reduzieren oder es nach dem Herunterladen manuell in den Zielordner in AEM Assets hochzuladen.
 
 
 
