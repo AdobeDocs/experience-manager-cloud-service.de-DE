@@ -1,28 +1,28 @@
 ---
-title: Konfiguration der GitHub-Prüfung für private Repositorys
+title: Pull-Anforderungsprüfungen für private Repositorys
 description: Erfahren Sie, wie Sie die automatisch erstellten Pipelines so steuern, dass sie jede Pull-Anfrage an ein privates Repository validieren.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 100%
+source-wordcount: '296'
+ht-degree: 94%
 
 ---
 
-# Konfiguration der GitHub-Prüfung für private Repositorys {#github-check-config}
+# Pull-Anforderungsprüfungen für private Repositorys {#github-check-config}
 
 Erfahren Sie, wie Sie die automatisch erstellten Pipelines so steuern, dass sie jede Pull-Anfrage an ein privates Repository validieren.
 
-## Konfiguration von GitHub-Prüfungen {#configuration}
+## Konfiguration der Prüfungen des privaten Repositorys {#configuration}
 
 Bei der Verwendung von [privaten Repositorys](private-repositories.md#using) wird automatisch eine [Full-Stack-Code-Qualitäts-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) erstellt. Diese Pipeline wird bei jeder Aktualisierung einer Pull-Anfrage gestartet.
 
 Sie können diese Prüfungen steuern, indem Sie eine Konfigurationsdatei namens `.cloudmanager/pr_pipelines.yml` in der Standardverzweigung des privaten Repositorys erstellen.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:
