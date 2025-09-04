@@ -4,10 +4,10 @@ description: Durch die native Integration von AEM Assets in Adobe Express könne
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 92%
+source-wordcount: '646'
+ht-degree: 91%
 
 ---
 
@@ -50,7 +50,10 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
    ![Speichern von Assets in AEM](assets/adobe-express-share.png)
 
-2. Wählen Sie im rechten Bereich im Abschnitt „Speicher“ **AEM Assets** aus. Adobe Express zeigt das Dialogfeld „Hochladen“ an.
+2. Wählen Sie im **[!UICONTROL Bereich]** Empfohlen“ im rechten Bereich **AEM Assets** aus. Adobe Express zeigt das Dialogfeld „Hochladen“ an.
+
+   ![Speichern von Assets in AEM](assets/adobe-express-aem.png)
+
 3. Wählen Sie entweder **Aktuelle Seite** oder **Alle Seiten** aus. Geben Sie einen Namen und ein Format für die Assets an, die exportiert werden sollen. Sie können die Inhalte der Arbeitsfläche in die folgenden Formate exportieren: PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG. Das Format passt sich basierend auf den Assets automatisch an die Seite(n) der Arbeitsfläche an.
 Durch Auswahl von **Aktuelle Seite** wird das Asset auf Ihrer aktuellen Seite in Ihrem Zielordner gespeichert. Wenn Sie **Alle Seiten** auswählen und das Exportformat nicht „PDF“ lautet, werden alle Seiten der Arbeitsfläche als separate Dateien in einem neuen Ordner in Ihrem Zielordner gespeichert. Wenn das Exportformat „PDF“ lautet, werden alle Seiten der Arbeitsfläche als eine einzige PDF-Datei im Zielordner gespeichert.
 
@@ -65,20 +68,12 @@ Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sow
 
 7. Klicken Sie auf **[!UICONTROL Hochladen]**, um die Assets in AEM Assets hochzuladen.
 
-Weitere Informationen finden Sie unter [Unterstützte Dateiformate](asset-properties-content-hub.md#supported-formats).
-
-[!DNL Content Hub] unterstützt alle Asset-Typen und -Formate, die das zugrunde liegende [!DNL Assets]-Repository unterstützt. In der folgenden Tabelle sind die wichtigsten Dateiformate in [!DNL the Content Hub] aufgeführt, die zusätzliche Unterstützung für eine visuelle Asset-Vorschau bieten:
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>Dateityp</strong></th>
       <th><strong>Unterstützte Formate</strong></th>
       <th><strong>Größe</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> Bild </td>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
@@ -93,44 +88,11 @@ Weitere Informationen finden Sie unter [Unterstützte Dateiformate](asset-proper
         <td> Maximal 250 KB</td>
     </tr>
     <tr>
-        <td rowspan="4"> Video </td>
     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> – </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
         <td> 3840 x 3840 Pixel, maximal 200 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> Maximal 200 MB </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> Dokument </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt] (Einfach)</td>
-        <td> – </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> – </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> – </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> Print-Medien </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> – </td>
     </tr>
     </tbody>
 </table>
@@ -139,7 +101,7 @@ Weitere Informationen finden Sie unter [Unterstützte Dateiformate](asset-proper
 
 1. Für den Import und Export wird MP4 als Videodateityp unterstützt.
 
-2. Informationen zum **MP4** Videoimport finden Sie unter [Unterstützte Dateiformate](asset-properties-content-hub.md#supported-formats). Darüber hinaus werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt.
+2. Beim **MP4-** werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.

@@ -3,10 +3,10 @@ title: Vorschau von Assets und ihrer Eigenschaften in  [!DNL the Content Hub]
 description: Erfahren Sie, wie Sie in  [!DNL Content Hub] Assets und Eigenschaften in einer Vorschau anzeigen.
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 96%
+source-wordcount: '636'
+ht-degree: 99%
 
 ---
 
@@ -54,23 +54,16 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
      <tr>
       <th><strong>Dateityp</strong></th>
       <th><strong>Unterstützte Formate</strong></th>
-      <th><strong>Größe</strong></th>
      </tr>
      <tr>
-        <td rowspan="4"> Bild </td>
+        <td rowspan="3"> Bild </td>
     </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Maximal 250 KB</td>
     </tr>
     <tr>
         <td rowspan="4"> Video </td>
@@ -78,15 +71,12 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
     </tr>
     <tr>
         <td>[!UICONTROL Quicktime]</td>
-        <td> – </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
-        <td> 3840 x 3840 Pixel, maximal 200 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL MPEG]</td>
-        <td> Maximal 200 MB </td>
     </tr>
     <tr>
         <td rowspan="4"> Dokument </td>
@@ -94,15 +84,12 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
     </tr>
     <tr>
         <td>[!UICONTROL txt] (Einfach)</td>
-        <td> – </td>
     </tr>
     <tr>
         <td>[!UICONTROL Doc/Docx]</td>
-        <td> – </td>
     </tr>
     <tr>
         <td>[!UICONTROL XML]</td>
-        <td> – </td>
     </tr>
     <tr>
         <td rowspan="2"> Print-Medien </td>
@@ -110,7 +97,6 @@ Bevor Sie ein Asset verwenden, freigeben oder herunterladen, können Sie es sich
     </tr>
     <tr>
         <td>[!UICONTROL PDF]</td>
-        <td> – </td>
     </tr>
     </tbody>
 </table>
@@ -125,7 +111,7 @@ Einige Asset-Eigenschaften, die in [!DNL Content Hub] angezeigt werden, werden a
 
 * **Smart-Tags:** [!DNL The Content Hub] verwendet die Smart Content-Dienste von Adobe Sensei, um Assets mithilfe des Erkennungsalgorithmus für die Tags-basierte Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf Assets an.
 
-* **Farb-Tags:** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de) helfen Ihnen dabei, ein Asset anhand von Farben zu erkennen, die mithilfe der KI-Funktionen von Adobe Sensei automatisch in einem Asset identifiziert werden.
+* **Farb-Tags:** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen dabei, ein Asset anhand von Farben zu erkennen, die mithilfe der KI-Funktionen von Adobe Sensei automatisch in einem Asset identifiziert werden.
 
 * Upload-Datum
 
