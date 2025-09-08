@@ -4,10 +4,10 @@ description: In diesem Abschnitt wird die Handhabung großer Content-Repositorys
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 100%
+source-wordcount: '1842'
+ht-degree: 97%
 
 ---
 
@@ -195,6 +195,9 @@ Blobs, die vor Auftreten des Fehlers kopiert wurden, werden von AzCopy bei nachf
 
 >[!TIP]
 >Eine Aufnahme kann nun so geplant werden, dass sie unmittelbar nach erfolgreichem Abschluss einer Extraktion automatisch startet. Siehe [Aufnehmen von Inhalten in das Ziel](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) für weitere Informationen.
+
+>[!TIP]
+>Wenn die Blob-Übertragung mit AzCopy eine Weile fortgesetzt wird, dann aber nur für einige Blobs fehlschlägt, führen Sie die Extraktion erneut aus, ohne dass die Optionen „PreCopy“ und „Staging-Container überschreiben“ aktiviert sind. Dadurch werden nur die verbleibenden Blobs migriert, die zuvor nicht übertragen wurden.
 
 #### Für Dateidatenspeicher {#file-data-store-extract}
 
