@@ -4,10 +4,10 @@ description: Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefini
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 2%
+source-wordcount: '606'
+ht-degree: 3%
 
 ---
 
@@ -94,9 +94,9 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
 
 `plugins` definiert, welches Plug-in für die Persistierung der Komponente verantwortlich ist. Zu den gängigen Plug-ins gehören:
 
-* `aem` für AEM as a Cloud Service.
-* `aem5` für AEM 6.5.
-* `xwalk` für das Authoring mit AEM as a Cloud Service WYSIWYG.
+* `aem` für [AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service)
+* `aem65` für [AEM 6.5.](https://experienceleague.adobe.com/de/docs/experience-manager-65)
+* `xwalk` für [Authoring mit AEM Sites für Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` oder `cf` {#page-cf}
 
