@@ -162,7 +162,7 @@ Mit der obigen Konfigurationsdatei wird die AzCopy-Vorabkopierphase als Teil all
 
 >[!NOTE]
 >Wenn AzCopy nicht richtig konfiguriert ist, wird folgende Meldung in den Protokollen angezeigt:
->>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Starten Sie eine Extraktion über die CTT-Benutzeroberfläche. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) und [Extraktionsvorgang](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
