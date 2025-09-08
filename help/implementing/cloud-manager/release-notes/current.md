@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Version 2025.9.0 von Cloud Manager in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
+source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 89%
+source-wordcount: '1137'
+ht-degree: 88%
 
 ---
 
@@ -33,13 +33,13 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 2. Oktober 202
 
   ![Verlängerung des SSL-Zertifikats](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Unterstützung für Azure DevOps für private Repositorys wurde jetzt hinzugefügt**
+* **Unterstützung für Azure DevOps (private Repositorys) wurde hinzugefügt**
 
   Zu den Aktualisierungen der Dokumentation gehören Konfigurationsschritte für Bring Your Own Git with Azure DevOps und die Validierung von Pull-Anfragen. Siehe [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Pull-Anforderungsprüfungen für private Repositorys**
+* **Bringen Sie Ihre eigene Git-Unterstützung (BYOG) auf Konfigurations-Pipelines (private Repositorys) erweitert**
 
-  Cloud Manager unterstützt jetzt Konfigurations-Pipelines mit privaten Repositorys in GitHub, Bitbucket, Azure DevOps und GitLab. Siehe [Pull-Anforderungsprüfungen für private Repositorys](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  Cloud Manager unterstützt jetzt Konfigurations-Pipelines mit privaten Repositorys in GitHub, Bitbucket, Azure DevOps und GitLab. Diese Unterstützung beschleunigt den Entwicklungszyklus weiter. Siehe [Pull-Anforderungsprüfungen für private Repositorys](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,10 +63,10 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
