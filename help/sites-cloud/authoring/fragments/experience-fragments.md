@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 100%
+source-wordcount: '2142'
+ht-degree: 97%
 
 ---
 
@@ -371,7 +371,7 @@ So personalisieren Sie Ihr Fragment:
    >
    >  Oder:
    >
-   >* ein Pfad, der eine Untergruppe der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
+   >* ein Pfad, der eine Teilmenge der Stores enthält, die im für die Seite konfigurierten ContextHub definiert sind
    >
    >Der ausgewählte **Segmentpfad** in der Registerkarte **Personalisierung** muss entweder:
    >
@@ -379,7 +379,7 @@ So personalisieren Sie Ihr Fragment:
    >
    >  oder
    >
-   >* ein Pfad sein, der eine Untergruppe der für die Seite konfigurierten Segmente enthält
+   >* ein Pfad sein, der eine Teilmenge der für die Seite konfigurierten Segmente enthält
 
 ### Definieren des Targetings für Ihr Experience Fragment {#defining-targeting-experience-fragment}
 
@@ -445,6 +445,16 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 Das Veröffentlichen Ihres Experience Fragments ist im Wesentlichen dasselbe wie das Szenario [Veröffentlichen einer Seite](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (allerdings über die Experience Fragments-Konsole oder den Editor) 
 
 Alternativ können Sie auch [In der Vorschau veröffentlichen](/help/sites-cloud/authoring/sites-console/previewing-content.md) (ebenfalls über die Experience Fragments-Konsole oder den Editor).
+
+>[!CAUTION]
+>
+>Standardmäßig wird der Stammordner von Experience Fragments veröffentlicht (direkt unter `/content/experience-fragments`):
+>
+>* Veröffentlicht nur den Container-Ordner selbst
+>* veröffentlicht keine untergeordneten Elemente
+>* Hebt die Veröffentlichung bereits veröffentlichter untergeordneter Elemente auf
+>
+>Für die Veröffentlichung aller Experience Fragments im Ordner muss jedes separat veröffentlicht werden.
 
 ## Exportieren von Experience Fragments {#exporting-experience-fragments}
 
