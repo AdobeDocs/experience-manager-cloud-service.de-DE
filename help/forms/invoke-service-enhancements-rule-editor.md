@@ -6,22 +6,25 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1598'
 ht-degree: 2%
 
 ---
 
-# Verwenden des Aufrufdienstes im visuellen Regeleditor für Formulare, die auf Kernkomponenten basieren
+# Integrieren von externen APIs mit dem visuellen Regeleditor in der Kernkomponente Forms
 
-Der visuelle Regeleditor in einem adaptiven Formular unterstützt die Funktion **Dienst aufrufen** mit der Sie einen Dienst aus der Liste der für Ihre Instanz konfigurierten Formulardatenmodelle (FDM) auswählen können. Sie können Formularfelder direkt den Eingabeparametern des Dienstes zuordnen. Um Formularfelder den Ausgabeparametern zuzuordnen, verwenden Sie die Payload-Option für das Ereignis für den angegebenen Formulardatenmodell-Service. Darüber hinaus können Sie mit dem visuellen Regeleditor basierend auf den Ausgabeantworten Regeln für Erfolgs- und **für Vorgänge** Dienst aufrufen“ erstellen. Erfolgs-Handler verwalten die erfolgreiche Ausführung des Vorgangs **Service aufrufen** während Fehler-Handler alle Fehler beheben, die auftreten.
+Der visuelle Regeleditor in einem adaptiven Formular unterstützt die Funktion **Service aufrufen**, mit der Sie über für Ihre Instanz konfigurierte Formulardatenmodelle (FDM) eine Verbindung zu externen APIs herstellen können. Sie können Formularfelder direkt den Eingabeparametern des Service zuordnen und die Payload-Option „Ereignis“ verwenden, um die Ausgabeparameter zuzuordnen. Mit dem visuellen Regeleditor können Sie auch Regeln für Erfolgs- und Fehlerhandler definieren, die auf der Antwort des Diensts basieren: Erfolgs-Handler verarbeiten erfolgreiche API-Aufrufe, während Fehler-Handler Fehler verwalten.
+
+Auf diese Weise können Sie API-Anfragen aus Ihrem Formular einfach senden, die API-Antworten verarbeiten und die zurückgegebenen Daten dynamisch im Formular anzeigen oder verwenden. Dadurch wird eine nahtlose Integration zwischen Ihrem adaptiven Formular und externen Systemen oder Datenquellen sichergestellt.
+
 
 ## Vorteile der Verwendung des Service „Invoke“ im Regeleditor des Formulars
 
 Die Verwendung des Vorgangs „Service aufrufen“ im Regeleditor eines adaptiven Formulars bietet folgende Vorteile:
 
-* **Optimierte Integration**: Der Visual Rule Editor vereinfacht die Integration externer Services oder APIs in Ihren adaptiven Forms. Durch die Verwendung von **Dienst aufrufen** können Sie Formulare einfach mit verschiedenen Datenquellen und Diensten verbinden, ohne dass eine komplexe Codierung erforderlich ist, was die Formularintegration effizienter macht.
+* **Optimierte API-Integration**: Der Visual Rule Editor vereinfacht die Integration externer Services oder APIs in Ihren adaptiven Forms. Durch die Verwendung von **Dienst aufrufen** können Sie Formulare einfach mit verschiedenen Datenquellen und Diensten verbinden, ohne dass eine komplexe Codierung erforderlich ist, was die Formularintegration effizienter macht.
 
 * **Dynamische Antwortverarbeitung**: Sie können Erfolgs- und Fehlerantworten basierend auf den Ausgabeantworten des **Service aufrufen** verwalten, sodass Formulare dynamisch auf verschiedene Szenarien reagieren können. Dadurch wird sichergestellt, dass Formulare verschiedene Bedingungen ordnungsgemäß verarbeiten, was die Flexibilität und Kontrolle verbessert.
 

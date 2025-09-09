@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit der AFP Output Sync API Ausgabedarstellun
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 14%
 
 ---
@@ -101,4 +101,4 @@ Sie können die .yaml-Datei herunterladen und in Postman hochladen, um die Funkt
 
 Sie können die Antwort speichern und die gespeicherte Datei im AFP-Reader öffnen, um sie anzuzeigen.
 
-![PDF Reader](/help/forms/assets/afp-pdf.png)
+![IC-Dokument suchen](/help/forms/interactive-communication/assets/introimg.png)

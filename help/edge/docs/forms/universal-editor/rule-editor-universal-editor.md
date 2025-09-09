@@ -1,21 +1,21 @@
 ---
-title: Regeleditor für dynamische Formulare im universellen Editor
+title: Regeleditor für Edge Delivery Services Forms
 description: Erstellen Sie mit dem Regeleditor im universellen Editor dynamische, intelligente Formulare. Fügen Sie bedingte Logik, Berechnungen und interaktive Verhaltensweisen ohne Programmierung hinzu.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 93%
+source-wordcount: '2780'
+ht-degree: 92%
 
 ---
 
 
-# Regeleditor für dynamische Formulare im universellen Editor
+# Regeleditor für Edge Delivery Services Forms
 
-Mit dem Regeleditor können Autorinnen und Autoren statische Formulare in responsive, intelligente Erlebnisse umwandeln – ohne Code verfassen zu müssen. Sie können Felder bedingt anzeigen, Berechnungen durchführen, Daten validieren, Benutzerinnen und Benutzer durch Flüsse leiten und Geschäftslogik integrieren, die sich je nach Benutzertyp anpasst.
+Mit dem Regeleditor können Autoren statische Formulare in responsive, intelligente Erlebnisse umwandeln, ohne Code zu schreiben. Sie können Felder bedingt anzeigen, Berechnungen durchführen, Daten validieren, Benutzerinnen und Benutzer durch Flüsse leiten und Geschäftslogik integrieren, die sich je nach Benutzertyp anpasst.
 
 ## Lerninhalt
 
