@@ -3,10 +3,10 @@ title: Dynamic Media Prime und Ultimate
 description: Erfahren Sie mehr über Dynamic Media Prime und Ultimate, ihre Vorteile und ihre Unterschiede.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 99%
+source-wordcount: '421'
+ht-degree: 93%
 
 ---
 
@@ -29,6 +29,10 @@ Zu anderen wichtigen Vorteilen von Dynamic Media Prime gehören:
 * Markenkonsistenz
 * Web-optimierte Bildbereitstellung
 * adaptives Video-Streaming
+
+>[!NOTE]
+>
+>Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kunden von DM Prime nicht.
 
 ### Voraussetzungen {#pre-requisites-dm-prime}
 

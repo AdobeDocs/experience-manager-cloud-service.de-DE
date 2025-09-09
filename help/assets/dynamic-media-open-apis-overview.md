@@ -3,10 +3,10 @@ title: Dynamic Media mit OpenAPI-Funktionen
 description: Erfahren Sie mehr über Schlüsselkonzepte wie die Verwendung von Dynamic Media mit OpenAPI-Funktionen und wie diese aktiviert wird.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 98%
+source-wordcount: '1106'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,13 @@ Dynamic Media mit OpenAPI-Funktionen bietet die folgenden Hauptvorteile:
 * **Dateneinblicke, um fundierte Entscheidungen treffen zu können (anstehende Version)**: Neben Asset-Management und -Bereitstellung werden Versanddateneinblicke in Asset-Sendungen im CDN erfasst, sodass Markenverantwortliche Versandmetriken kanalübergreifend verfolgen können. Es ermöglicht ihnen, datenbasierte Entscheidungen zur kontinuierlichen Optimierung von Asset-Governance und Bereitstellungsstrategien zu treffen.
 
 ![Dynamic Media OpenAPI-Datenflussdiagramm](assets/dm-openapi-dfd.png)
+
+Informationen zu den verfügbaren Dynamic Media-Angeboten und deren Funktionen finden Sie unter [Dynamic Media Prime und Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+>[!NOTE]
+>
+>Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kunden von DM Prime nicht.
+
 
 ## Voraussetzungen für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen {#prerequisites-dynaminc-media-open-apis}
 
