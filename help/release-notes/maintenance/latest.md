@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 22171 {#22171}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 22171, die am Mittwoch, 2. September 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21994.
+Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 22171, die am 2. September 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21994.
 
 Die Funktionsaktivierung von 2025.9.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -32,15 +32,15 @@ Keine.
 
 ### Behobene Probleme {#fixed-issues-22171}
 
-* ASSETS-52510: Die Erkennung doppelter Dateinamen schlägt für Dateinamen mit Unicode-`U+202F` fehl.
-* ASSETS-53489: Beim Löschen von Ordnern aus der Assets-Ansichts-Benutzeroberfläche wird die Genehmigung nicht für alle enthaltenen Assets aufgehoben.
+* ASSETS-52510: Die Erkennung doppelter Dateinamen schlägt für Dateinamen fehl, die Unicode `U+202F` enthalten.
+* ASSETS-53489: Beim Löschen von Ordnern aus der Benutzeroberfläche der Assets-Ansicht wird die Genehmigung nicht für alle enthaltenen Assets aufgehoben.
 * ASSETS-54821: Zeitweise auftretender „Server-Fehler“ in Asset Link.
-* ASSETS-55024: Beschädigtes Bild in der Vorlage „Download per E-Mail“ von AEM Assets.
+* ASSETS-55024: Beschädigtes Bild in der Vorlage „Über E-Mail herunterladen“ von AEM Assets.
 * ASSETS-55325: Statische Dynamic Media-URLs lassen die Dateierweiterung nach dem Umbenennen des Assets weg.
-* ASSETS-55334: Das Dialogfeld Linkfreigabe blinkt kurz und verschwindet oder wird nie angezeigt.
-* ASSETS-55382: Asynchrone Asset-Vorgänge wurden neu gestartet, um einen doppelten Zielordner zu erstellen.
-* ASSETS-55472: Option „Veröffentlichung verwalten“ „Nur bereits veröffentlichte Seiten einbeziehen“ ignoriert.
-* SITES-31600: Die Personalisierung mit ContextHub JS ist fehlerhaft.
+* ASSETS-55334: Das Dialogfeld zur Link-Freigabe blinkt kurz und verschwindet wieder oder wird nie angezeigt.
+* ASSETS-55382: Neu gestartete asynchrone Asset-Vorgänge erstellen einen doppelten Zielordner.
+* ASSETS-55472: Die Option zur Veröffentlichungsverwaltung „Nur bereits veröffentlichte Seiten einbeziehen“ wird ignoriert.
+* SITES-31600: Ein Contexthub-js-Fehler beschädigt die Personalisierung.
 
 Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 

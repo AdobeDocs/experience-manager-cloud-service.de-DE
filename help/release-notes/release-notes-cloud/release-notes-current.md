@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.8.0) ist der Freitag, 28. August 2025. Die nächste Version mit neuen Funktionen (2025.9.0) ist für den Freitag, 25. September 2025 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.8.0) ist der 28. August 2025. Die nächste Version mit neuen Funktionen (2025.9.0) ist für den 25. September 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -40,24 +40,24 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## Experience Hub {#experience-hub}
 
-Die [Experience Hub](/help/experience-hub.md) ist Ihr zentraler Ausgangspunkt für den Zugriff auf alle AEM-Funktionen. Er wird anhand Ihrer Benutzerrolle und der Ihnen zur Verfügung stehenden Lizenzen personalisiert, sodass jeder Benutzer seine Ergebnisse effizient erzielen kann.
+[Experience Hub](/help/experience-hub.md) ist Ihr zentraler Ausgangspunkt für den Zugriff auf alle AEM-Funktionen. Er wird anhand Ihres Benutzertyps und der Ihnen zur Verfügung stehenden Lizenzen personalisiert, sodass jede Benutzerin bzw. jeder Benutzer effizient die gewünschten Ergebnisse erzielen kann.
 
 ## KI-Assistent in AEM {#AI-assistant}
 
-Der [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md) für AEM bietet eine Gesprächsoberfläche, mit der Sie sofortige Antworten auf Ihre produktbezogenen Fragen zu AEM erhalten (*für alle Benutzenden verfügbar* und die Erstellung von Support-Tickets automatisieren können (*für Support-Admins verfügbar*). Es ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud Manager- und Authoring-Benutzeroberfläche aufgerufen werden.
+Der [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md) für AEM bietet eine Dialogoberfläche, über die Sie sofort Antworten auf Ihre produktbezogenen Fragen zu AEM erhalten (*für alle Benutzenden verfügbar*) und die die Erstellung von Support-Tickets automatisiert (*für Support-Admins verfügbar*). Er ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud Manager- und Authoring-Benutzeroberfläche aufgerufen werden.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Neue Funktion in Experience Manager Sites {#enhancements-sites}
 
 * In der Admin-Benutzeroberfläche von Inhaltsfragmenten können Sie jetzt den Workflow-Status für Inhaltsfragmente mit detaillierten Informationen zu vergangenen und derzeit laufenden Workflows für ein ausgewähltes Fragment anzeigen.
-* Die Leistung beim Öffnen von Inhaltsfragmenten im neuen Inhaltsfragment-Editor wurde in gängigen Szenarien um 25 % erhöht, indem Fragmente über UUID statt über den Pfad geöffnet wurden.
+* Die Leistung beim Öffnen von Inhaltsfragmenten im neuen Inhaltsfragmenteditor wurde in gängigen Szenarien um 25 % erhöht, indem Fragmente nun über UUID statt über den Pfad geöffnet werden.
 * Beim Kopieren von Inhaltsfragmenten mit referenzierten Fragmenten werden Kopien der referenzierten Fragmente jetzt am selben Speicherort wie die übergeordnete Fragmentkopie gespeichert.
 * Sie können jetzt einen benutzerdefinierten Arbeitsbereich in den Ordnereinstellungen konfigurieren, um die Inhaltsfragmente in den konfigurierten Arbeitsbereich in Adobe Target zu exportieren.
 
@@ -67,7 +67,7 @@ Der [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md) für
 
 **Massensuche über Filtereigenschaften**
 
-Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit der neuen Funktion für die Massensuche können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben - getrennt durch ein Trennzeichen (z. B. mehrere SKU-IDs) - und sofort alle übereinstimmenden Assets mit einer einzigen Suche abrufen.
+Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit der neuen Massensuchfunktion können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben (getrennt durch ein Trennzeichen, z. B. mehrere SKU-IDs) und sofort alle übereinstimmenden Assets mit einer einzigen Suche abrufen.
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-with-openapi}
 
@@ -77,47 +77,47 @@ Erstellen Sie Vanity-URLs für die Asset-Bereitstellung in DM mit OpenAPI und er
 
 >[!NOTE]
 >
->Diese Funktion wird am 10. September als Funktion für eingeschränkte Verfügbarkeit verfügbar sein. Sie können [einen Adobe-Kunden-Support-Fall erstellen und senden](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um ihn für Ihre Bereitstellung zu aktivieren.
+>Diese Funktion wird am 10. September als Funktion mit eingeschränkter Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in Experience Manager Forms {#new-features-forms}
 
-**Eingabekomponente für Datum und Uhrzeit**
+**Eingabekomponente „Datum und Uhrzeit“**
 
-Eine [Datums- und Uhrzeitkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) ist jetzt verfügbar, sodass Benutzende sowohl Datum als auch Uhrzeit über eine Kalender- und Uhrenschnittstelle auswählen oder Werte in einem unterstützten Format manuell eingeben können.
+Eine Komponente für [Datum und Uhrzeit](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) ist jetzt verfügbar, mit der Benutzende Datum und Uhrzeit in einem Kalender oder einer Uhr auswählen oder Werte in einem unterstützten Format manuell eingeben können.
 
-**Verbesserte Fehlerbehandlung für Datei-Uploads**
+**Verbesserte Fehlerbehebung für Datei-Uploads**
 
-Die [Dateianlagenkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) validiert jetzt den hochgeladenen Dateityp automatisch anhand der Zulassungsliste. Wenn ein(e) Benutzende(r) eine Datei in einem nicht unterstützten Format hochlädt, wird im Formular während der Übermittlung ein Fehler angezeigt. Die Komponente überprüft auch den Dateiinhalt, um seinen Typ zu überprüfen, wodurch die allgemeine Sicherheit des Formulars verbessert wird.
+Die Komponente [Dateianlage](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) validiert jetzt den hochgeladenen Dateityp automatisch anhand der Zulassungsliste. Wenn eine Benutzerin bzw. ein Benutzer eine Datei in einem nicht unterstützten Format hochlädt, wird während der Übermittlung im Formular ein Fehler angezeigt. Die Komponente überprüft auch den Dateiinhalt, um seinen Typ zu überprüfen, wodurch die allgemeine Sicherheit des Formulars verbessert wird.
 
 **Angegebene Fehlerantwort für benutzerdefinierte Übermittlungsaktion**
 
-Wenn bei [benutzerdefinierten Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md) ein nicht behandelter Fehler auftritt, gibt das System den Fehler-Code 502 zurück. Auf diese Weise können Sie erkennen, dass das Problem mit der benutzerdefinierten Übermittlungsaktion zusammenhängt, was das Debugging erleichtert.
+Wenn bei einer [benutzerdefinierten Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md) ein nicht behobener Fehler auftritt, gibt das System den Fehler-Code 502 zurück. Auf diese Weise können Sie erkennen, dass das Problem mit der benutzerdefinierten Übermittlungsaktion zusammenhängt, was das Debugging erleichtert.
 
-**Ausgeblendete Felder vom Datensatzdokument ausschließen**
+**Ausschließen ausgeblendeter Felder vom Datensatzdokument**
 
 Eine neue Eigenschaft ermöglicht den Ausschluss ausgeblendeter Felder aus dem [Datensatzdokument](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). Standardmäßig ist diese Option nicht aktiviert und gilt für alle Formularfelder.
 
 
-### Vorabversionsfunktionen in AEM Forms
+### Vorab veröffentlichte Funktionen in AEM Forms
 
-**Erzeugen und Synchronisieren von AFP-Ausgabedarstellungen**
+**Generieren und Synchronisieren von AFP-Ausgabedarstellungen**
 
-Sie können jetzt die [AEM Forms-Kommunikations-API](/help/forms/document-generation-afp-api.md) verwenden, um eine XDP-Datei in das AFP-Format zu konvertieren. AFP ist ein leistungsstarkes Format, das im Großdruck in Unternehmen weit verbreitet ist.
+Sie können jetzt die [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) verwenden, um eine XDP-Datei in das AFP-Format zu konvertieren. AFP ist ein leistungsstarkes Format, das häufig zum Drucken in großen Mengen in Unternehmen zum Einsatz kommt.
 
-**Verbesserungen im Regeleditor**
+**Verbesserungen des Regeleditors**
 
-* [Validate-Methode in der Funktionsliste](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): Die Methoden „Validate“ und „Reset“ unterstützen jetzt die Ausführung auf Bedienfeld-, Feld- und Formularebene. Zuvor wurden sie nur auf Formularebene unterstützt.
-* [Moderner JavaScript-](/help/forms/rule-editor-core-components-difference-tables.md): Unterstützung für ECMAScript 2019 und neuere Funktionen wurde für benutzerdefinierte Funktionen hinzugefügt, sodass Sie effizienteren, modularen und wiederverwendbaren Code schreiben können.
-* [Download-Datensatzdokument-Option im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): Eine Funktion zum Herunterladen des Datensatzdokuments (DoR) wurde im Regeleditor als vordefinierte Option hinzugefügt.
+* [Validierungsmethode in der Funktionsliste](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): Die Validierungs- und Zurücksetzungsmethoden unterstützen jetzt die Ausführung auf Panel-, Feld- und Formularebene. Zuvor wurden sie nur auf Formularebene unterstützt.
+* [Moderne JavaScript-Unterstützung](/help/forms/rule-editor-core-components-difference-tables.md): Unterstützung für ECMAScript 2019 und neuere Funktionen wurde für benutzerdefinierte Funktionen hinzugefügt, sodass Sie effizienteren, modularen und wiederverwendbaren Code schreiben können.
+* [Option zum Herunterladen des DoR im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): Eine Funktion zum Herunterladen des Datensatzdokuments (Document of Record, DoR) wurde im Regeleditor als vordefinierte Option hinzugefügt.
 
   ![Datensatzdokument](/help/forms/assets/document-of-record-rn.gif)
 
 * [Dynamische Variablen im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): Sie können jetzt dynamische (temporäre) Variablen im Regeleditor verwenden, um die Flexibilität beim Definieren von Bedingungen und Aktionen zu erhöhen. Ausgeblendete Felder sind nicht mehr zum Speichern temporärer Werte erforderlich.
-* [Unterstützung benutzerdefinierter ereignisbasierter Regeln](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Sie können jetzt benutzerspezifische Ereignisse und Ereignisregeln definieren, die auf diesen Triggern basieren.
-* [Kontextabhängige wiederholbare Bereichsregeln](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In wiederholbaren Bereichen werden Regeln jetzt kontextbasiert ausgeführt und nicht mehr nur auf die letzte Bereichsinstanz angewendet.
-* [Regeln werden durch Parameter ausgelöst](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): Der Regeleditor unterstützt jetzt die Ausführung von Regeln anhand von Abfrageparametern, UTM-Parametern oder Browser-Parametern.
+* [Unterstützung von Regeln basierend auf benutzerspezifischen Ereignissen](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Sie können jetzt benutzerspezifische Ereignisse sowie auf diesen Ereignissen basierende Trigger-Regeln definieren.
+* [Kontextabhängige Regeln zu wiederholbaren Panel](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In wiederholbaren Panels werden Regeln jetzt kontextbasiert ausgeführt und nicht mehr nur auf die letzte Panel-Instanz angewendet.
+* [Durch Parameter ausgelöste Regeln](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): Der Regeleditor unterstützt jetzt die Ausführung von Regeln basierend auf Abfrageparametern, UTM-Parametern oder Browser-Parametern.
 * [Formularspezifische benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms unterstützt jetzt formularspezifische benutzerdefinierte Funktionsskripte und bietet so mehr Flexibilität bei der Verwaltung wiederverwendbarer Logiken.
 * [Statische Importe für benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): Der Regeleditor im universellen Editor unterstützt jetzt statische Importe, sodass Entwicklerinnen und Entwickler Funktionen in mehreren Formularen organisieren, freigeben und wiederverwenden können.
 
@@ -127,13 +127,13 @@ Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit,
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
-**Freihandsignatur-Komponente**
+**Komponente „Freihandsignatur“**
 
-Sie können jetzt die Komponente [Freihandsignatur](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) verwenden, um Benutzern beim Hinzufügen ihrer Signaturen zu einem Formular zu helfen, z. B. in einem Vereinbarungsformular. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit der Maus, dem Stift oder dem Touchscreen zu zeichnen.
+Sie können jetzt die Komponente [Freihandsignatur](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) verwenden, um Benutzenden beim Hinzufügen ihrer Signaturen zu einem Formular (z. B. einem Vertragsformular) zu helfen. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit einer Maus, einem Eingabestift oder am Touchscreen zu zeichnen.
 
 **Direkte API-Integration im Regeleditor**
 
-Adaptive Forms unterstützen jetzt [direkte API-Integration](/help/forms/api-integration-in-rule-editor.md) im visuellen Regeleditor, ohne dass ein Formulardatenmodell erforderlich ist. Autoren können APIs mithilfe eines URL- oder cURL-Imports konfigurieren, Eingabe-/Ausgabeparameter zuordnen und Aufrufe mit Authentifizierung sichern.
+Adaptive Formulare unterstützen jetzt [direkte API-Integration](/help/forms/api-integration-in-rule-editor.md) im visuellen Regeleditor, ohne dass ein Formulardatenmodell erforderlich ist. Autorinnen und Autoren können APIs mithilfe eines URL- oder cURL-Imports konfigurieren, Eingabe-/Ausgabeparameter zuordnen und Aufrufe mit Authentifizierung sichern.
 
 <!--
 **Forms Optimization opportunities**
@@ -153,16 +153,16 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### JavaScript-Kompilierungsaktualisierung {#javascript-compilation}
+### Aktualisierung der JavaScript-Kompilierung {#javascript-compilation}
 
-Die standardmäßige Kompilierung der Client-seitigen Bibliothek (clientlibs) für JavaScript zielt jetzt auf ECMASCRIPT_2018 anstelle von ECMASCRIPT5 ab. Diese Aktualisierung war in der Vergangenheit zwar überschreibbar, ermöglicht aber standardmäßig Leistungsverbesserungen, eine moderne JavaScript-Syntax und Funktionen.
+Die standardmäßige JavaScript-Kompilierung der Client-seitigen Bibliothek (clientlibs) zielt jetzt auf ECMASCRIPT_2018 anstelle von ECMASCRIPT5 ab. Die Funktion konnte in der Vergangenheit zwar überschrieben werden, diese Aktualisierung bringt jedoch Leistungsverbesserungen, eine moderne JavaScript-Syntax und standardmäßige Funktionen mit sich.
 
 ### Bevorstehende Einstellung von Java-APIs {#java-api-deprecation}
 
-Verschiedene veraltete APIs zielen auf die Entfernung am 31. August ab und sollten daher nicht mehr referenziert werden. Anfang September werden Benachrichtigungen des Aktionszentrums gesendet, wenn die API-Nutzung erkannt wird, und nach dem 25. September werden während Cloud Manager-Builds Benachrichtigungen angezeigt, um die Bedeutung der Entfernung der Nutzung zu unterstreichen. Ausführliche Informationen finden [ im Artikel ](/help/release-notes/deprecated-removed-features.md#aem-apis)veraltet“, aber zur Vereinfachung sind diese APIs unten aufgeführt:
+Verschiedene veraltete APIs werden am 31. August eingestellt und sollten daher nicht mehr referenziert werden. Anfang September werden vom Aktionszentrum Benachrichtigungen ausgesendet, wenn eine API-Nutzung erkannt wird, und nach dem 25. September werden während Cloud Manager-Builds Benachrichtigungen angezeigt, um zum Beenden der Nutzung aufzufordern. Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
 
 <details>
-  <summary>Erweitern Sie , um die veralteten Java-APIs anzuzeigen</summary>
+  <summary>Zum Anzeigen der veralteten Java-APIs erweitern</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -196,7 +196,7 @@ OSGi properties:
 
 Die *Java 11-Laufzeitumgebung* ist jetzt veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere **Java 21-Laufzeitumgebung** aktualisiert.
 
-Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum 1 **Oktober 2025 abgeschlossen**, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
+Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Bitte stellen Sie sicher, dass alle erforderlichen Aktualisierungen bis zum **1. Oktober 2025** abgeschlossen sind, damit Ihre Umgebung unterbrechungsfrei aktualisiert werden kann.
 
 Hinweis: Die Laufzeitversion ist von der Build-Version Ihres Codes getrennt. Es wird zwar empfohlen, Builds mit Java 21 durchzuführen, aber Java 11-Builds werden derzeit noch unterstützt. Ein separater Hinweis zur Abschaffung von Java 11 für Builds wird in Zukunft freigegeben.
 
@@ -204,14 +204,14 @@ Hinweis: Die Laufzeitversion ist von der Build-Version Ihres Codes getrennt. Es 
 
 Wie in den Versionshinweisen vom April erwähnt, müssen AEM-Java-Protokolle einem Standardformat entsprechen, um eine zuverlässige Überwachung in allen Kundenumgebungen sicherzustellen. Benutzerdefinierte Protokollkonfigurationen – wie etwa Änderungen an der Protokollformatierung, Ausgabedateien oder Standardprotokollebenen – werden nicht mehr unterstützt. Protokolle müssen an die Standarddateien weitergeleitet werden, und die standardmäßigen Protokollebenen für AEM-Produkt-Code müssen beibehalten werden. Ausführliche Informationen finden Sie im [Artikel zur Protokollierung](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Ab **25.** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
+Ab **25 September** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
 
 Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf einem benutzerdefinierten Protokollierungsverhalten basieren. Zum Beispiel:
 
 * Wenn Ihr Protokollweiterleitungssystem ein benutzerdefiniertes Protokollformat erwartet, müssen Sie möglicherweise Ihre Aufnahmeregeln anpassen.
 * Wenn Sie zuvor die Ausführlichkeit des Protokolls durch Ändern der Protokollebenen reduziert haben, beachten Sie, dass eine Rückkehr zu den Standardebenen das Protokollvolumen erhöhen kann.
 
-### Edge Computing (Beta-Programm) {#edge-computing}
+### Edge-Datenverarbeitung (Beta-Programm) {#edge-computing}
 
 Mit der Edge-Datenverarbeitung können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher an die Endbenutzenden heranrückt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse am Edge.
 
@@ -220,7 +220,7 @@ Häufige Anwendungsszenarien umfassen:
 * Authentifizieren von Benutzenden bei einem Identitätsanbieter, bevor Zugriff auf Inhalte gewährt wird
 * Personalisieren von Inhalten basierend auf Geolokalisierung, Gerätetyp oder Benutzerattributen
 * Fungieren als Middleware zwischen dem CDN und Ihrer Herkunft
-* Formatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten) vor ihrer Bereitstellung im Browser
+* Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 * Bereitstellen eines MCP-Servers für LLMs wie ChatGPT und Claude für den Zugriff auf benutzerdefinierte Tools
 
@@ -230,7 +230,7 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Das von Adobe verwaltete CDN bietet flexible Konfigurationsoptionen, wie im Artikel zu [Konfigurations-Pipelines](/help/operations/config-pipeline.md#configurations) beschrieben.
 
-Jetzt in der Beta-Phase können Sie eine Konfigurations-Pipeline für Funktionen bereitstellen, einschließlich CDN-Ursprünge-Selektoren, Antwort- und Anfrageumwandlungen, CDN-Protokollweiterleitung und mehr. Wenden Sie sich mit den Details Ihres Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com).
+Stellen Sie jetzt in der Beta-Phase eine Konfigurations-Pipeline für Funktionen bereit, darunter CDN-Ursprungs-Selektoren, Antwort- und Anfragetransformationen und CDN-Protokollweiterleitung. Wenden Sie sich mit den Details Ihres Anwendungsfalls an [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com).
 
 ### Snapshots für schnelle Entwicklungsumgebungen (Alpha-Programm) {#rde-snapshot-program}
 
