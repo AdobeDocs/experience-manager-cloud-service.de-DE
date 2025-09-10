@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 15f2096221d7c521d6e69fb9e425368e869dea09
+source-git-commit: 365e700b93d52448d1be8c3e0e6eb2185c605b18
 workflow-type: tm+mt
 source-wordcount: '6599'
 ht-degree: 98%
@@ -232,7 +232,7 @@ ht-degree: 98%
       + [Aktuelle Versionshinweise für den erweiterten Connector von Workfront für Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Versionshinweise für die Funktion „Varianten generieren“ {#generate-variations}
       + [Aktuelle Versionshinweise für die Funktion „Varianten generieren“](/help/generative-ai/release-notes-generate-variations.md)
-   + Versionshinweise für den universellen Editor {#univeral-editor}
+   + Versionshinweise für den universellen Editor {#universal-editor}
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [Versionshinweise für 2025.08.22](/help/release-notes/universal-editor/2025/2025-08-22.md)
@@ -524,7 +524,7 @@ ht-degree: 98%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Betriebliche Telemetrie für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)

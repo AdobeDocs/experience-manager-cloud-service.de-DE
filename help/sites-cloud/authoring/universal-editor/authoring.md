@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
-workflow-type: ht
-source-wordcount: '2252'
-ht-degree: 100%
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+workflow-type: tm+mt
+source-wordcount: '2319'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden ihre Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) angezeigt. Sie können den Text auch im Bedienfeld bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details im Bereich [Eigenschaften“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Sie können den Text auch im Bedienfeld bearbeiten.
 
 ![Bearbeiten von Text im Bedienfeld „Eigenschaften“](assets/ue-editing-text-component-rail.png)
 
@@ -172,13 +172,27 @@ Die ausgewählte Komponente wird gelöscht.
 
    ![Neuanordnen von Komponenten](assets/ue-reordering-components.png)
 
-1. Die gezogene Komponente wechselt in der Inhaltsstruktur zu Grau, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente an ihrer neuen Position los, um sie dort zu platzieren.
+1. Die gezogene Komponente wird in der Inhaltsstruktur ausgegraut, während die Einfügemarke durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente an ihrer neuen Position los, um sie dort zu platzieren.
 
 Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet.
 
 >[!NOTE]
 >
 >Komponenten können nur dann zwischen Containern verschoben werden, wenn der [Komponentenfilter](/help/implementing/universal-editor/filtering.md) des Ziel-Containers die ausgewählte Komponente zulässt.
+
+### Rückgängig machen und wiederholen {#undo-redo}
+
+Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen.
+
+![Symbol „Rückgängig“](assets/undo.png)
+![Symbol „Wiederholen“](assets/redo.png)
+
+* Das Rückgängigmachen und Wiederholen kann für Änderungen, die im Kontext vorgenommen werden, für Änderungen, die über das Bedienfeld Eigenschaften vorgenommen werden, sowie für das Hinzufügen, Duplizieren, Verschieben und Löschen von Blöcken durchgeführt werden.
+* Die Funktionen „Rückgängig“ und „Wiederherstellen“ sind auf die aktuelle Browser-Sitzung beschränkt.
+
+>[!TIP]
+>
+>Verwenden Sie die Hotkey-`Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederholen.
 
 ## Vorschau von Inhalten {#previewing-content}
 

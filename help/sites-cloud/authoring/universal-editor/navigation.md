@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
-workflow-type: ht
-source-wordcount: '1782'
-ht-degree: 100%
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+workflow-type: tm+mt
+source-wordcount: '1854'
+ht-degree: 91%
 
 ---
 
@@ -89,15 +89,9 @@ Dadurch wird die Organisation angezeigt, bei der Sie sich derzeit angemeldet hab
 
 ![Organisationsanzeige](assets/organization.png)
 
-#### Lösungen {#solutions}
+#### Hilfezentrum {#help}
 
-Durch Tippen oder Klicken auf den Lösungsumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
-
-![Lösungsumschalter](assets/solutions.png)
-
-#### Hilfe {#help}
-
-Das Hilfesymbol bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
+Das Symbol Hilfezentrum bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
 
 ![Hilfe](assets/help.png)
 
@@ -107,9 +101,15 @@ Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen [Ben
 
 ![Benachrichtigungen](assets/notifications.png)
 
-#### Benutzereigenschaften {#user-properties}
+#### Apps {#solutions}
 
-Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
+Durch Tippen oder Klicken auf den Programmumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
+
+![App Switcher](assets/solutions.png)
+
+#### Konto {#user-properties}
+
+Wählen Sie das Symbol für Ihren Benutzer aus, um auf Ihre Kontoeinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Auf der Startseite können Sie die URL der Site eingeben, die Sie mit dem univer
 >
 >Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [für die Unterstützung des universellen Editors instrumentiert sein](/help/implementing/universal-editor/getting-started.md).
 
+Ein Abschnitt **Schnelllinks** enthält Hilferessourcen und ein Abschnitt **Zuletzt verwendet** enthält Links zu Seiten, die Sie kürzlich mit dem universellen Editor geöffnet haben.
+
 #### Speicherortleiste {#location-bar}
 
 Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wählen Sie sie aus, um die Adresse einer anderen Seite einzugeben, die bearbeitet werden soll.
@@ -149,21 +151,32 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 >
 >Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [für die Unterstützung des universellen Editors instrumentiert sein](/help/implementing/universal-editor/getting-started.md).
 
-#### Authentifizierungs-Header-Einstellungen {#authentication-settings}
+#### Rückgängig machen und wiederholen {#undo-redo}
 
-Wählen Sie das Symbol für die Authentifizierungs-Header-Einstellungen aus, wenn Sie [einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke festlegen möchten](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen. Weitere Informationen finden Sie [ Dokument „Inhaltserstellung mit ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) universellen Editor“.
+
+![Symbol „Rückgängig“](assets/undo.png)
+![Symbol „Wiederholen“](assets/redo.png)
+
+>[!TIP]
+>
+>Verwenden Sie die Hotkey-`Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederholen.
+
+#### Authentifizierungs-Header {#authentication-settings}
+
+Wählen Sie das Symbol Authentifizierungskopfzeilen , wenn Sie [eine benutzerdefinierte Authentifizierungskopfzeile für lokale Entwicklungszwecke festlegen](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Schaltfläche „Authentifizierungs-Header-Einstellungen“](assets/authentication-header-settings.png)
 
-#### Emulator-Einstellungen {#emulator}
+#### Responsiver Modus {#emulator}
 
-Wählen Sie das Emulationssymbol aus, um festzulegen, wie der universelle Editor die Seite rendert.
+Wählen Sie das Symbol Responsive Modus aus, um zu definieren, wie der universelle Editor die Seite rendert.
 
-![Emulator-Symbol](assets/emulator.png)
+![Symbol für responsiven Modus](assets/emulator.png)
 
-Durch Tippen oder Klicken auf das Emulationssymbol werden die Optionen angezeigt.
+Durch Tippen oder Klicken auf das Symbol für den responsiven Modus werden die Optionen angezeigt.
 
-![Emulationsoptionen](assets/emulation-options.png)
+![Optionen im responsiven Modus](assets/emulation-options.png)
 
 Standardmäßig wird der Editor im Desktop-Layout geöffnet, wobei Höhe und Breite automatisch vom Browser definiert werden.
 
@@ -173,7 +186,7 @@ Sie können auch ein Mobilgerät im universellen Editor emulieren:
 * Breite und Höhe definieren
 * Ändern der Ausrichtung
 
-#### Vorschaumodus {#preview-mode}
+#### Vorschau {#preview-mode}
 
 Im Vorschaumodus wird die Seite im Editor so gerendert, wie sie in Ihrem veröffentlichten Dienst angezeigt werden würde. Damit können Inhaltsautorinnen und Inhaltsautoren durch Klicken auf Links usw. durch den Inhalt navigieren.
 

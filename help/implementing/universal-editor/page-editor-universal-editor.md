@@ -4,10 +4,10 @@ description: Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der un
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 16%
+source-wordcount: '1068'
+ht-degree: 15%
 
 ---
 
@@ -63,7 +63,7 @@ Da die Funktionslücke zwischen den beiden Editoren ständig kleiner wird, lesen
 | Block ausschneiden/kopieren/einfügen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE nicht verfügbar]{type=Negative} | Geplant |
 | Anwenden von Stilen | [!BADGE Verfügbar]{type=Positive} | Stile können mithilfe des Stilsystems auf [ Komponenten angewendet werden](/help/sites-cloud/authoring/page-editor/style-system.md) | [!BADGE Verfügbar]{type=Positive} | Stile können mit den Eigenschaften regulärer Komponenten (oder Inhaltsfragmente) angewendet werden. Die gleiche Stilauswahl ist im universellen Editor nicht verfügbar, jedoch kann mit einem multiselect-Widget eine sehr ähnliche Benutzeroberfläche erreicht werden. |
 | Layout anwenden | [!BADGE Verfügbar]{type=Positive} | Sites muss das [responsive Raster von AEM implementieren](/help/implementing/developing/introduction/responsive-design.md) damit Autorinnen und Autoren die Größe von Komponenten über drei vordefinierte Haltepunkte hinweg ändern können. | [!BADGE Verfügbar]{type=Positive} | Layouts können mithilfe regulärer Komponenten- (oder Inhaltsfragment)-Eigenschaften angewendet werden, das responsive Raster wird jedoch nicht unterstützt. |
-| Rückgängig-Wiederholen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE nicht verfügbar]{type=Negative} | Geplant |
+| Rückgängig-Wiederholen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | Veröffentlichen (auch in der Vorschau) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | [Workflow starten](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Verfügbar als Erweiterung |
 | Kommentieren | [!BADGE Verfügbar]{type=Positive} | Verwenden von [Anmerkungen](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE nicht verfügbar]{type=Negative} | Geplant |
@@ -87,7 +87,7 @@ Da die Funktionslücke zwischen den beiden Editoren ständig kleiner wird, lesen
 Der universelle Editor bietet viele Vorteile und ist daher eine hervorragende Lösung für neue Projekte.
 
 * **Visuelle Bearbeitung** Wie beim Seiteneditor können Autoren Inhalte direkt in der Vorschau bearbeiten und sofort sehen, wie sich ihre Änderungen auf das Besuchererlebnis auswirken.
-* **Zukunftssicher:** Die Roadmap von AEM priorisiert den universellen Editor als visuellen Editor. Indem Sie ihn übernehmen, wird der Zugriff auf die neuesten Innovationen und Verbesserungen sichergestellt.
+* **Zukunftssicher:** AEMs Roadmap priorisiert den universellen Editor als visuellen Editor. Indem Sie ihn übernehmen, wird der Zugriff auf die neuesten Innovationen und Verbesserungen sichergestellt.
 * **Einfachere Integration:** Für die Verwendung des universellen Editors ist kein AEM-spezifisches SDK erforderlich, wodurch die Festlegung auf bestimmte Technologiedienste verringert wird.
 * **Eigene App einbringen:** Der universelle Editor unterstützt jedes Web-Framework und jede Architektur, sodass ein Übernehmen ohne komplexe Umgestaltung möglich ist.
 * **Erweiterbarkeit:** Der universelle Editor profitiert von einem robusten [Erweiterungs-Framework](/help/implementing/universal-editor/extending.md), einschließlich Integrationen mit GenAI, Workfront und mehr.

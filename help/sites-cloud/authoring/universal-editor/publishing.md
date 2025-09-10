@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
-workflow-type: ht
-source-wordcount: '555'
-ht-degree: 100%
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
 
 1. Tippen oder klicken Sie im universellen Editor auf das [Symbol **Veröffentlichen** auf der Symbolleiste des universellen Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#publish).
 1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder als **[Vorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (falls verfügbar) oder zum **Veröffentlichen**.
-1. Im Abschnitt **Elemente** werden die Inhalte aufgelistet, die in der Veröffentlichung enthalten sind, einschließlich der folgenden:
+1. Im Abschnitt **Elemente** werden die in der Veröffentlichung enthaltenen Inhalte aufgelistet. Tippen oder klicken Sie auf **Anzeigen**, um die Details anzuzeigen, darunter:
    * **Neue** Elemente, die noch nicht veröffentlicht wurden.
    * **Geänderte** Inhalte, die veröffentlicht, aber seit der letzten Veröffentlichung geändert wurden.
    * **Veröffentlichte** Inhalte, die veröffentlicht und seit dieser Veröffentlichung nicht geändert wurden.
