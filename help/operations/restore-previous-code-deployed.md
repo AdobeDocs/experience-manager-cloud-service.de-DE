@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
-workflow-type: ht
-source-wordcount: '504'
-ht-degree: 100%
+source-git-commit: 650ef846b469337c96e728277af02ca890e85117
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 92%
 
 ---
 
@@ -30,13 +30,15 @@ Verwenden Sie **Zuvor bereitgestellten Code wiederherstellen**, um eine Umgebung
 
 Die Funktion **Zuvor bereitgestellten Code wiederherstellen** ist nur verfügbar, wenn **alle** folgenden Bedingungen erfüllt sind:
 
+* Pro erfolgreicher Pipeline-Ausführung ist nur eine Wiederherstellung zulässig. Schließen Sie zur erneuten Wiederherstellung eine weitere erfolgreiche Pipeline-Ausführung ab.
 * Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung ****. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 * Ihre Organisation ist für das Beta-Programm registriert und das Feature Flag ist aktiviert.
 * Das Programm läuft auf AEM as a Cloud Service.
-* Die ausgewählte Umgebung ist eine `Development`-Umgebung (temporäre Beta-Einschränkung).
+* Die Wiederherstellung des vorherigen Quell-Codes kann in einer `Development`, `Stage` oder einer `Specialized Testng Environment` erfolgen.
 * Die letzte Pipeline für diese Umgebung wurde **innerhalb der letzten 30 Tage** erfolgreich abgeschlossen und ausgeführt.
 * Der Umgebungsstatus lautet *Wird ausgeführt* und es wird keine Pipeline ausgeführt.
 
+Wiederherstellen Die ausgewählte Umgebung ist eine `Development`-, Staging- oder spezielle Testumgebung.
 Sollte eine Überprüfung fehlschlagen, öffnet Cloud Manager das folgende Dialogfeld mit einer Liste der nicht erfüllten Bedingungen. Die Schaltfläche **Bestätigen** ist deaktiviert, um die Wiederherstellung zu verhindern.
 
 ![Fehlerdialogfeld bei der Wiederherstellung zuvor bereitgestellten Codes](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).

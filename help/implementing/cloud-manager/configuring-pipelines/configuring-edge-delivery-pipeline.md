@@ -9,10 +9,10 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 85%
 
 ---
 
@@ -22,13 +22,13 @@ Erfahren Sie, wie Sie Edge Delivery-Pipelines konfigurieren, um Ihren Code zu er
 
 Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** verfügen, um Produktions-Pipelines konfigurieren zu können.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Eine Edge Delivery-Pipeline lässt sich erst konfigurieren, nachdem folgende Aufgaben erledigt wurden:
 >
->* Es wurde ein Programm erstellt, das eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option **Edge Delivery-Pipeline hinzufügen** in der Benutzeroberfläche deaktiviert angezeigt und in einer QuickInfo werden fehlende Anforderungen erläutert.
->* Das Git-Repository hat mindestens eine Verzweigung.
->* Die Produktions- und Staging-Umgebungen sind erstellt.
+>* Es wurde ein Programm erstellt, das eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option **Edge Delivery-Pipeline hinzufügen** in der Benutzeroberfläche deaktiviert angezeigt und in einer QuickInfo werden fehlende Anforderungen erläutert. Siehe [Erstellen einer Edge Delivery-Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+>* Das Git-Repository hat mindestens eine Verzweigung. Siehe [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>* Die Produktions- und Staging-Umgebungen werden erstellt. Siehe [Einführung in CI/CD-](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 <!-- CMGR‑69680 -->
 
@@ -41,7 +41,9 @@ Konfigurieren Sie Ihre Pipeline-Einstellungen über [!UICONTROL Cloud Manager], 
 
 **Hinzufügen einer Pipeline von Edge Delivery:**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die gewünschte Organisation aus.
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/) an und klicken Sie dann im linken Seitenbereich auf **Cloud Manager**.
+
+1. Wählen Sie die gewünschte Organisation aus.
 
 1. Wählen Sie auf der Seite **Meine Programme** das gewünschte Programm aus.
 
