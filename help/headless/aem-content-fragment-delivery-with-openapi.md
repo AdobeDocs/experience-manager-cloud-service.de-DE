@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Bereitstellung von AEM-Inhaltsfragmente
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
-workflow-type: ht
-source-wordcount: '551'
-ht-degree: 100%
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 90%
 
 ---
 
@@ -81,6 +81,14 @@ Die auf der Dispatcher-Konfigurationsseite definierten zulässigen CORS-Ursprün
 Das API ermöglicht neue Anfragen mit einer Rate von bis zu 200 Anfragen pro Sekunde und Umgebung.
 
 Sobald diese Begrenzung überschritten wird, beginnt das API mit dem Senden von [429-Fehlerantworten](https://www.rfc-editor.org/rfc/rfc6585#section-4). Diese Fehler müssen von allen Client-Anwendungen verarbeitet werden, und fehlgeschlagene Anfragen müssen nach einem exponentiellen Backoff-Versuch erneut versucht werden. Die HTTP-Antwort enthält einen bestimmten Header, `Retry-After`, der dem Client angibt, wie lange er warten muss, bevor er die Anfrage erneut sendet.
+
+## Authentifizierte Anfragen {#authenticated-requests}
+
+Die Unterstützung für authentifizierte Anfragen kann mit dem [AEM CDN-Edge-Schlüssel](/help/implementing/dispatcher/cdn-credentials-authentication.md) implementiert werden. Durch die Verwendung des AEM CDN-Edge-Schlüssels können Sie sich auf das AEM-CDN verlassen und sicherstellen, dass nur bestimmte Anfragen basierend auf der bereitgestellten Edge-Schlüsselkopfzeile auf die API zugreifen können.
+
+>[!NOTE]
+>
+>Die Autorisierung auf der Grundlage der Repository-spezifischen ACLs wird derzeit nicht unterstützt.
 
 <!-- 
 ## Limitations {#limitations}
