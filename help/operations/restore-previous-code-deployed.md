@@ -31,7 +31,7 @@ Verwenden Sie **Zuvor bereitgestellten Code wiederherstellen**, um eine Umgebung
 Die Funktion **Zuvor bereitgestellten Code wiederherstellen** ist nur verfügbar, wenn **alle** folgenden Bedingungen erfüllt sind:
 
 * Pro erfolgreicher Pipeline-Ausführung ist nur eine Wiederherstellung zulässig. Schließen Sie zur erneuten Wiederherstellung eine weitere erfolgreiche Pipeline-Ausführung ab.
-* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung ****. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
+* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung **&#x200B;**. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 * Ihre Organisation ist für das Beta-Programm registriert und das Feature Flag ist aktiviert.
 * Das Programm läuft auf AEM as a Cloud Service.
 * Die Wiederherstellung des vorherigen Quell-Codes kann in einer `Development`, `Stage` oder einer `Specialized Testng Environment` erfolgen.
