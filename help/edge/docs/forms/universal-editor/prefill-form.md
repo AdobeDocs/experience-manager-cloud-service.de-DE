@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Vorbefüllen eines adaptiven Formulars, Edge Delivery Services für adaptive Formulare, automatisches Ausfüllen eines adaptiven Formulars
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1787'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 94%
 
 ---
 
@@ -156,6 +156,11 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungsdienst:
    ![Vorlage von Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
 1. Klicken Sie auf **Erstellen**, um den Assistenten für **Formular erstellen** zu öffnen.
+
+   >
+   >
+   > Sie können die Datenquelle über die Registerkarte **Daten** oder höher konfigurieren, indem Sie die Formulareigenschaften bearbeiten.
+
 1. Geben Sie die Formulardetails an:
 
    - **Name**: Geben Sie einen beschreibenden Namen für Ihr Formular ein.
@@ -202,7 +207,7 @@ Die Formularelemente aus Ihrem FDM werden auf der Registerkarte **Datenquelle** 
 
 +++
 
-+++Phase 3: Konfigurieren des Vorbefüllungsdienstes
++++Phase 3: Konfigurieren des Vorbefüllungs-Service
 
 ### Schritt 6: Aktivieren Sie erforderliche Erweiterungen
 
@@ -250,7 +255,7 @@ Stellen Sie sicher, dass folgende Erweiterungen im universellen Editor aktiviert
 3. Wählen Sie **Vorschau als HTML**.
 4. Testen Sie das Vorbefüllen durch Anhängen von Parametern an die URL:
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **Beispiel:**
 
@@ -374,7 +379,7 @@ Die folgenden URLs dienen nur zu Veranschaulichungszwecken und funktionieren nic
 
 +++
 
-+++Sicherheitsüberlegungen
++++Sicherheitsaspekte
 
 - **Eingabeparameter überprüfen**: Sie sollten URL-Parameter stets überprüfen
 - **Daten bereinigen**: Bereinigen Sie Daten, bevor Formulare vorbefüllt werden
@@ -383,7 +388,7 @@ Die folgenden URLs dienen nur zu Veranschaulichungszwecken und funktionieren nic
 
 +++
 
-+++Richtlinien für das Anwendererlebnis
++++Richtlinien Prototypen für das Benutzererlebnis
 
 - **Feedback geben**: Zeigen Sie bei Datenabrufen den Ladestatus an
 - **Mit Fehlern elegant umgehen**: Zeigen Sie hilfreiche Fehlermeldungen an
@@ -400,7 +405,7 @@ Zeigen Sie eine Vorschau Ihres Formulars an und fügen Sie Vorbefüllungsparamet
 
 +++
 
-+++Welche Datenformate werden beim Vorbefüllen von adaptiven Formularen unterstützt?
++++Welche Datenformate werden zum Vorbefüllen von adaptivem Forms unterstützt?
 
 Adaptive Formulare unterstützen je nach Formularmodell verschiedene Formate:
 
@@ -417,19 +422,19 @@ Ja, Sie können beide Arten von Feldern vorbefüllen. Gebundene Felder verwenden
 
 +++
 
-+++Was soll ich tun, wenn nur einige Felder vorbefüllt werden?
++++Was sollte ich tun, wenn nur einige Felder vorausgefüllt sind?
 
 Überprüfen Sie, ob alle Felder richtige `bindRef`-Werte haben, die genau mit Ihrem FDM übereinstimmen. Sorgen Sie dafür, dass Ihre Datenquelle alle erforderlichen Felder enthält und die Datenstruktur mit Ihrem Formularmodellschema übereinstimmt.
 
 +++
 
-+++Kann ich verschiedene Vorbefüllungsdienste in einem Formular verwenden?
++++Kann ich mehrere Vorbefüllungs-Services in einem Formular verwenden?
 
 Pro Formular kann ein primärer Vorbefüllungsdienst konfiguriert werden. Sie können innerhalb eines Formulardatenmodells jedoch verschiedene Datenquellen kombinieren, um ähnliche Funktionen zu erzielen.
 
 +++
 
-+++Wie handhabe ich die Authentifizierung für Vorbefüllungsdienste?
++++Wie handhabe ich die Authentifizierung für Vorbefüllungs-Services?
 
 Die Authentifizierung hängt von Ihrer Datenquellenkonfiguration ab. Konfigurieren Sie für FDM-basiertes Vorbefüllen die Authentifizierung in Ihren Datenquelleneinstellungen. Für das Vorbefüllen von Entwürfen müssen Benutzende in der Regel angemeldet sein, um auf ihre gespeicherten Entwürfe zugreifen zu können.
 

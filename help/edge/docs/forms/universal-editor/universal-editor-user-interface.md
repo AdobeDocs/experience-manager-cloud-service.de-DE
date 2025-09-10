@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 97%
+source-wordcount: '2390'
+ht-degree: 95%
 
 ---
 
@@ -112,11 +112,16 @@ Die **Symbolleiste des universellen Editors** verfügt über wichtige Aktionen z
 
 **Für Ihr erstes Formular:**
 
-1. **Mit dem Erstellen beginnen** – Fügen Sie Komponenten mithilfe der Schaltfläche **Hinzufügen** hinzu(`a`).
-2. **Felder konfigurieren** – Wählen Sie Komponenten aus und nutzen Sie den **Eigenschaftenmodus** (`d`).
-3. **Formular testen** – Nutzen Sie den **Vorschaumodus** (`p`), um mit Ihrem Formular zu interagieren.
-4. **Ansicht auf Mobilgeräten überprüfen** – Wechseln Sie in den **responsiven Modus**, um für Mobilgeräte zu testen.
-5. **Live schalten** – Klicken Sie auf **Veröffentlichen**, sobald Sie bereit sind.
+1. **Komponente eines adaptiven Formulars hinzufügen** - Fügen Sie die `Adaptive Form` Komponente in einen Abschnitt ein.
+2. **Mit dem Erstellen beginnen** – Fügen Sie Komponenten mithilfe der Schaltfläche **Hinzufügen** hinzu(`a`).
+3. **Felder konfigurieren** – Wählen Sie Komponenten aus und nutzen Sie den **Eigenschaftenmodus** (`d`).
+4. **Formular testen** – Nutzen Sie den **Vorschaumodus** (`p`), um mit Ihrem Formular zu interagieren.
+5. **Ansicht auf Mobilgeräten überprüfen** – Wechseln Sie in den **responsiven Modus**, um für Mobilgeräte zu testen.
+6. **Live schalten** – Klicken Sie auf **Veröffentlichen**, sobald Sie bereit sind.
+
+>[!NOTE]
+>
+> Die detaillierten Schritte zum Erstellen von Formularen im universellen Editor finden Sie unter [Erstellen und Veröffentlichen von adaptiven Forms mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Validierungs-Checkpoints:**
 
@@ -218,7 +223,7 @@ Die **Symbolleiste des universellen Editors** enthält die wichtigsten Bearbeitu
 
 #### **AEM-Formulareigenschaften**
 
-**Zweck:** Konfigurieren von Einstellungen auf Formularebene wie Formulardatenmodell (FDM) und Veröffentlichungsdaten.\
+**Zweck:** Konfigurieren von Einstellungen auf Formularebene wie Formulardatenmodell (FDM), Konfigurieren von Sendeaktionen und Veröffentlichungsdaten\
 **Verwendung:** Einrichten von Datenintegrationen, Planen der Veröffentlichung.
 
 ![Formulareigenschaften](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ Das Bedienfeld „Formulareigenschaften“ enthält die folgenden Abschnitte:
 
 Das **Bedienfeld „Eigenschaften“** (auf der rechten Seite) ist Ihr Kontrollzentrum für das Erstellen und Konfigurieren von Formularen. Es ändert sich je nach Auswahl und bietet verschiedene Tools für verschiedene Aufgaben.
 
-![Bedienfeld „Eigenschaften“](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![Bedienfeld „Eigenschaften“](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **Zentrale Tools für die Formularerstellung**
 

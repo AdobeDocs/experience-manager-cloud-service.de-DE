@@ -5,10 +5,10 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
-source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 100%
+source-wordcount: '1139'
+ht-degree: 99%
 
 ---
 
@@ -53,13 +53,19 @@ Dankesnachrichten funktionieren am besten bei:
 
 Öffnen Sie Ihr adaptives Formular im universellen Editor und klicken Sie in der Symbolleiste auf das Symbol **Formulareigenschaften bearbeiten**. Dadurch wird das Dialogfeld für die umfassenden Formulareigenschaften geöffnet.
 
+![Symbol „Formulareigenschaften“](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Navigieren zur Dankeskonfiguration**
 
 Wählen Sie im Dialogfeld „Formulareigenschaften“ die Registerkarte **Vielen Dank**, um auf die Konfigurationsoptionen nach der Übermittlung zuzugreifen.
 
+![Formulareigenschaften des universellen Editors](/help/forms/assets/ue-form-properties.png)
+
 **3. Konfigurieren der Nachrichtenanzeige**
 
-Wählen Sie **Nachricht anzeigen** aus den verfügbaren Optionen aus. Dadurch wird der Editor für Nachrichteninhalte mit Rich-Text-Funktionen aktiviert.
+Wählen Sie **Nachricht anzeigen** aus den verfügbaren Optionen aus.
+
+![Danke](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. Erstellen des Nachrichteninhalts**
 
@@ -117,13 +123,19 @@ Umleitungs-URLs sind optimal für:
 
 Öffnen Sie Ihr adaptives Formular im universellen Editor und klicken Sie auf das Symbol **Formulareigenschaften bearbeiten**, um das Dialogfeld für die Formularkonfiguration zu öffnen.
 
+![Symbol „Formulareigenschaften“](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Navigieren zur Dankeskonfiguration**
 
 Wählen Sie die Registerkarte **Vielen Dank** im Dialogfeld „Formulareigenschaften“, um auf die Optionen für die Umleitungskonfiguration zuzugreifen.
 
+![Formulareigenschaften des universellen Editors](/help/forms/assets/ue-form-properties.png)
+
 **3. Aktivieren der Umleitungsfunktion**
 
 Wählen Sie den Eintrag **Zu URL umleiten** aus den verfügbaren Optionen nach der Übermittlung aus.
+
+![redirect](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. Konfigurieren der Ziel-URL**
 

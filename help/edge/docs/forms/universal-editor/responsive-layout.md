@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2382'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 93%
 
 ---
 
 
-# Erstellen von responsiven Formularen mit dem universellen Editor
+# Erstellen einer responsiven Forms mit dem universellen Editor - Eine vollständige Anleitung
 
 Die moderne Web-Landschaft setzt Formulare voraus, die über ein immer breiteres Spektrum von Geräten und Bildschirmgrößen hinweg nahtlos funktionieren. Von großen Desktop-Monitoren bis hin zu kompakten Smartphone-Bildschirmen erwarten Benutzende unabhängig vom gewählten Gerät konsistente, intuitive Erlebnisse. Die Erstellung responsiver Formulare ist keine Option mehr. Vielmehr ist sie eine grundlegende Voraussetzung für die Bereitstellung professioneller, barrierefreier und konversionsoptimierter digitaler Erlebnisse.
 
@@ -33,20 +33,21 @@ Die Erstellung responsiver Formulare umfasst zwei Hauptaktivitäten:
 - Beheben häufiger Problemen, die bei responsiven Formularen auftreten
 - Optimieren von Formularen für Mobilgeräte
 
-## Warum responsive Formulare wichtig sind
+<!--
+## Why Responsive Forms Are Important
 
-**Auswirkungen auf das Anwendererlebnis:**
+**User Experience Impact:**
 
-- Über 60 % der Benutzenden rufen Formulare auf Mobilgeräten auf
-- Mangelhafte mobile Erlebnisse führen zu einer 67 % höheren Abbruchrate
-- Responsive Formulare können die Fertigstellungsrate um bis zu 25 % erhöhen
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**Geschäftliche Vorteile:**
+**Business Benefits:**
 
-- Höhere Formularausfüllungsraten
-- Höhere Benutzerzufriedenheit
-- Verbesserte Zugänglichkeit
-- Geringere Entwicklungs- und Wartungskosten
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -276,7 +277,7 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 ### Best Practices nach Gerätetyp
 
-+++Optimierung für Mobilgeräte (320 bis 767 px)
++++Optimierung für Mobilgeräte (320 Pixel - 767 Pixel)
 
 **Layout und Interaktion:**
 
@@ -295,18 +296,18 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 +++
 
-+++Tablet-Optimierung (768 bis 1.199 px)
++++Tablet-Optimierung (768px-1199px)
 
 **Layout und Anwenderfreundlichkeit:**
 
-- Verwenden Sie zweispaltige Layouts für verwandte Felder, um zusätzlichen Platz auf dem Bildschirm zu nutzen.
+- Verwenden Sie zweispaltige Layouts für verwandte Felder, um mehr Platz auf dem Bildschirm zu erhalten.
 - Testen Sie das Aussehen und die Anwenderfreundlichkeit von Formularen sowohl im Hoch- als auch im Querformat.
 - Gestalten Sie für die Touch- und Mauseingabe, sodass alle Bedienelemente leicht zugänglich sind.
 - Vergrößern Sie den Inhaltsbereich unter Beibehaltung einer klaren visuellen Hierarchie und Lesbarkeit.
 
 +++
 
-+++Desktop-Optimierung (1.200 px+)
++++Desktop-Optimierung (1200 px+)
 
 **Erweiterte Funktionen und Layout:**
 
@@ -317,11 +318,45 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 +++
 
+## Konfigurieren von benutzerdefinierten Layouts mit Haltepunkten für Medienabfragen
+
+Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms mit dem **universellen Editor** müssen Sie das responsive Verhalten mithilfe von **CSS Media Query Breakpoints** definieren. Dadurch wird sichergestellt, dass Formulare auf verschiedenen Geräten und Bildschirmgrößen korrekt wiedergegeben werden.
+
+**Empfohlene Haltepunkte (basierend auf AEM-Kernkomponenten)**
+
+| **Gerätetyp** | **Empfohlener Breakpoint** |
+|-----------------|---------------------------|
+| **Desktop** | `min-width: 1200px` |
+| **Tablet** | `min-width: 768px and max-width: 1199px` |
+| **Mobilgerät** | `max-width: 767px` |
+
+**Wichtigste Punkte**
+
+- Verwenden Sie diese Haltepunkte, um zu steuern, wie Komponenten die Größe ändern, gestapelt oder auf verschiedenen Geräten ausgeblendet werden.
+- Befolgen Sie die responsiven Design-Richtlinien Ihres Unternehmens für eine konsistente Benutzeroberfläche.
+- Testen Sie Layouts auf mehreren Geräten und Ausrichtungen, um Benutzerfreundlichkeit und Barrierefreiheit zu gewährleisten.
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> Der universelle Editor bietet keine Benutzeroberfläche zum Definieren des responsiven Verhaltens. Die gesamte Layout-Anpassung muss über CSS abgewickelt werden.
+
+
+
 ## Fehlerbehebung
 
 ### Layout-Probleme
 
-+++Umbrüche des Formular-Layouts auf Mobilgeräten
++++Umbrüche des Formularlayouts auf Mobilgeräten
 
 **Mögliche Ursachen:**
 
@@ -355,7 +390,7 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 +++
 
-+++Probleme mit Inhaltsüberläufen
++++Probleme mit Inhaltsüberlauf
 
 **Mögliche Ursachen:**
 
@@ -393,7 +428,7 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 ### Test- und Validierungsprobleme
 
-+++Diskrepanzen zwischen Emulator und echten Geräten
++++Unterschiede zwischen Emulator und tatsächlichem Gerät
 
 **Mögliche Ursachen:**
 
@@ -430,7 +465,7 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 +++
 
-+++Checkliste für das Testen
++++Checkliste für Tests
 
 **Checkliste vor der Veröffentlichung:**
 

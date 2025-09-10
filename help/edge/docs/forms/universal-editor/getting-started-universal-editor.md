@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
+ht-degree: 96%
 
 ---
 
@@ -136,7 +136,7 @@ AEM Code Sync sorgt für eine automatische Synchronisierung von Inhaltsänderung
 
 +++
 
-+++Schritt 3: Konfigurieren der AEM-Integration
++++Schritt 3: AEM-Integration konfigurieren
 
 Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository für die Inhaltssynchronisierung mit der AEM-Authoring-Umgebung.
 
@@ -157,7 +157,10 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository für die Inhaltssynchroni
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **Ersetzen Sie:**
@@ -184,13 +187,13 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository für die Inhaltssynchroni
 
 **Validierung:** Prüfen Sie die Verbindung zwischen Ihrem GitHub-Repository und AEM.
 
-    >[!HINWEIS]
-    >
->Haben Sie Build-Probleme? Siehe [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
+>[!NOTE]
+>
+> Haben Sie Build-Probleme? Siehe [Beheben von Build-Problemen in GitHub](#troubleshooting-github-build-issues).
 
 +++
 
-+++Schritt 4: Erstellen einer AEM-Site, die mit Ihrem GitHub-Repository verbunden ist.
++++Schritt 4: Erstellen Sie eine AEM-Site, die mit Ihrem GitHub-Repository verbunden ist.
 
 1. **Zugriff auf die AEM Sites-Konsole**
    - Melden Sie sich bei Ihrer Authoring-Instanz in AEM as a Cloud Service an.
@@ -258,7 +261,7 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository für die Inhaltssynchroni
 
 +++
 
-+++Schritt 5: Veröffentlichen Ihrer Site
++++Schritt 5: Veröffentlichen der Site
 
 Durch das Veröffentlichen wird Ihre Site in Edge Delivery Services für globalen Zugriff verfügbar.
 
@@ -343,7 +346,7 @@ Sie werden die folgenden übergeordneten Schritte ausführen:
 3. Passen Sie ESLint-Regeln an, um die neuen Dateien und Kodierungsmuster aufzunehmen.
 4. Erstellen Sie Ihr Projekt und übertragen Sie die Änderungen in Ihr Repository.
 
-+++Schritt 1: Kopieren von Formularblock-Dateien
++++Schritt 1: Forms-Blockdateien kopieren
 
 1. **Navigieren Sie zu Ihrem lokalen Projekt.**
 
@@ -462,7 +465,7 @@ Sie werden die folgenden übergeordneten Schritte ausführen:
 
 +++
 
-+++Schritt 4: Erstellen und Bereitstellen
++++Schritt 4: Erstellen und bereitstellen
 
 1. **Installieren von Abhängigkeiten und Aufbauen**
 
@@ -528,7 +531,7 @@ Der Prozess der Erstellung eines Formulars im universellen Editor besteht aus me
 
 Die folgenden Abschnitte werden Sie detailliert durch die einzelnen Schritte führen, um eine reibungslose und effektive Formularerstellung sicherzustellen.
 
-+++Schritt 1: Hinzufügen von adaptivem Formularblock
++++Schritt 1: Adaptiven Formularblock hinzufügen
 
 1. **Öffnen Ihrer Seite im universellen Editor**
    - Navigieren Sie zur **Sites**-Konsole in AEM.
@@ -602,7 +605,7 @@ Die folgenden Abschnitte werden Sie detailliert durch die einzelnen Schritte fü
 
 +++
 
-+++Schritt 3: Veröffentlichen Ihres Formulars
++++Schritt 3: Formular veröffentlichen
 
 1. **Veröffentlichen im universellen Editor**
    - Klicken Sie im universellen Editor auf die Schaltfläche **Veröffentlichen**.
@@ -626,13 +629,13 @@ Die folgenden Abschnitte werden Sie detailliert durch die einzelnen Schritte fü
    Ihr Formular ist jetzt live unter:
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **Beispiel-URL:**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![Live-Formularseite](/help/edge/docs/forms/assets/publish-index-page.png)
@@ -661,7 +664,7 @@ Nachdem Sie nun über ein funktionsfähiges Formular verfügen, können Sie folg
 
 In einer lokalen Entwicklungsumgebung können Sie Änderungen vornehmen und sofort anzeigen, ohne den Veröffentlichungszyklus durchlaufen zu müssen.
 
-+++Einrichten der AEM-CLI und lokalen Entwicklungsumgebung
++++Einrichten von AEM CLI und lokaler Entwicklung
 
 1. **Installieren der AEM-CLI**
 
@@ -715,7 +718,7 @@ In einer lokalen Entwicklungsumgebung können Sie Änderungen vornehmen und sofo
 
 ### Häufige Probleme und Lösungen
 
-+++Build-Probleme in GitHub
++++GitHub-Build-Probleme
 
 **Problem:** Build-Fehler oder Verknüpfungsfehler
 
@@ -759,7 +762,7 @@ Wenn „Der Pfad zum Modul &quot;/scripts/lib-franklin.js&quot; kann nicht aufge
 
 +++
 
-+++Probleme mit der Formularfunktionalität
++++Probleme mit der Formularfunktion
 
 **Problem:** Formularübermittlungen funktionieren nicht
 

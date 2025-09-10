@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -31,7 +31,7 @@ In der folgenden Tabelle sind die jüngsten Verbesserungen am Regeleditor in Ada
 
 >[!NOTE]
 >
-> Die Verbesserungen am Regeleditor gelten auch für Edge Delivery Services Forms.
+> Die Verbesserungen gelten auch für den [Regeleditor von Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Im Folgenden werden die einzelnen Methoden im Detail mit spezifischen Anwendungsfällen untersucht, um zu verstehen, wie diese Funktionen verwendet werden können, um Benutzern ein personalisiertes Erlebnis zu bieten
 
@@ -92,7 +92,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
@@ -124,7 +124,7 @@ Das Feld **Gesamtversandkosten** wird dynamisch aktualisiert, um sowohl die Prod
 >[!NOTE]
 >
 > Sie können auch eine Funktion **Wert der Variablen abrufen** in der Wenn-Bedingung hinzufügen.
-> &#x200B;> ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Dieser Ansatz ermöglicht dynamische Echtzeit-Berechnungen, ohne dem Formular zusätzliche Felder hinzuzufügen, wodurch die Struktur sauber und benutzerfreundlich bleibt.
 

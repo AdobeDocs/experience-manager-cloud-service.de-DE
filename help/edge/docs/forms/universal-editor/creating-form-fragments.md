@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erst
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,12 @@ Formularfragmente in Edge Delivery Services bieten leistungsstarke Funktionen f�
 
 Sie können Edge Delivery Services-Formularfragmente im universellen Editor erstellen und die erstellten Fragmente zu Edge Delivery Services-Formularen hinzufügen. Sie können mit Edge Delivery Services-Formularfragmenten die folgenden Aktionen durchführen:
 
-- [Erstellen von adaptiven Formularfragmenten](#creating-form-fragments)
-- [Hinzufügen von Formularfragmenten zu einem Formular](#adding-form-fragments-to-a-form)
-- [Verwalten von Formularfragmenten](#managing-form-fragments)
+- [Erstellen von Formularfragmenten im universellen Editor](#creating-form-fragments-in-universal-editor)
+   - [Grundlegendes zu Formularfragmenten](#understanding-form-fragments)
+   - [Voraussetzungen](#prerequisites)
+   - [Arbeiten mit Edge Delivery Services-Formularfragmenten](#working-with-edge-delivery-services-form-fragments)
+   - [Best Practices](#best-practices)
+   - [Zusammenfassung](#summary)
 
 +++ Erstellen von adaptiven Formularfragmenten
 
@@ -175,6 +178,10 @@ So integrieren Sie ein Formularfragment in Ihr Formular:
 
    ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ erfolgreich in ein Mitarbeiterformular im universellen Editor integriert wurde und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
+   >[!NOTE]
+   >
+   > Mit **Schaltfläche** Fragment bearbeiten“ können Benutzer zum Bearbeiten direkt zum Formularfragment navigieren.
+
    Sie können das Formular in einer Vorschau anzeigen, um zu sehen, wie das Formular im Modus **Vorschau** aussieht.
 
    ![Vorschau](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
@@ -246,7 +253,7 @@ Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für Form
     </tbody>
     </table>
 
-+++
++++ 
 
 ## Best Practices
 
@@ -285,10 +292,10 @@ Sie haben erfahren, wie Sie Formularfragmente in Edge Delivery Services nutzen k
 
 **Nächste Schritte:**
 
-- Erstellen Sie eine Bibliothek häufig verwendeter Fragmente für Ihre Organisation
-- Legen Sie Benennungskonventionen und Governance-Richtlinien für die Fragmentverwendung fest
+- Erstellen Sie eine Bibliothek häufig verwendeter Fragmente für Ihre Organisation.
+- Legen Sie Benennungskonventionen und Governance-Richtlinien für die Fragmentverwendung fest.
 - Erkunden Sie die erweiterte Integration mit [Formulardatenmodellen](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) für dynamische datengesteuerte Fragmente
-- Implementieren Sie fragmentbasierte Formularvorlagen für konsistente Benutzererlebnisse
+- Implementieren Sie fragmentbasierte Formularvorlagen für konsistente Benutzererlebnisse.
 
 Ihre Formulare profitieren nun von einer modularen, verwaltbaren Architektur, die effizient über Projekte skaliert werden kann. Gleichzeitig werden konsistente Benutzererlebnisse sichergestellt.
 

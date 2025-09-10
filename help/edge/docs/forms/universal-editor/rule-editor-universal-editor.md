@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 92%
+source-wordcount: '2824'
+ht-degree: 90%
 
 ---
 
@@ -165,13 +165,15 @@ Abbildung: Benutzeroberfläche des Regeleditors zum Bearbeiten von Komponentenre
 ![Benutzeroberfläche des Regeleditors](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Abbildung: Vollständige Benutzeroberfläche des Regeleditors mit nummerierten Komponenten
 
-- **Komponententitel und Regeltyp**: Bestätigt die ausgewählte Komponente und den aktiven Regeltyp.
-- **Bedienfeld „Formularobjekte und Funktionen“**
+1. **Komponententitel und Regeltyp**: Bestätigt die ausgewählte Komponente und den aktiven Regeltyp.
+2. **Bedienfeld „Formularobjekte und Funktionen“**
+
    - Formularobjekte: Hierarchische Ansicht von Feldern und Containern für Verweise in Regeln
    - Funktionen: integrierte Hilfsfunktionen für Mathematik, Zeichenfolge, Datum und Validierung
-- **Umschalten von Bedienfeld**: Ein- oder Ausblenden des Bedienfelds für Objekte und Funktionen, um den Arbeitsbereich zu vergrößern
-- **Visueller Regelgenerator**: Drag-and-Drop- sowie Dropdown-gesteuerter Regel-Composer
-- **Steuerungen**: Fertig (Speichern), Abbrechen (Verwerfen). Testen Sie Regeln immer vor dem Speichern.
+
+3. **Umschalten von Bedienfeld**: Ein- oder Ausblenden des Bedienfelds für Objekte und Funktionen, um den Arbeitsbereich zu vergrößern
+4. **Visueller Regelgenerator**: Drag-and-Drop- sowie Dropdown-gesteuerter Regel-Composer
+5. **Steuerungen**: Fertig (Speichern), Abbrechen (Verwerfen). Testen Sie Regeln immer vor dem Speichern.
 
 +++
 
@@ -302,7 +304,7 @@ Sie erstellen ein Formular, das:
 
 +++
 
-+++ Schritt 1: Grundlegendes Formular erstellen
++++ Schritt 1: Formular erstellen
 
 **Ziel**: Erstellen Sie das Basisformular mit allen Feldern und Anfangseinstellungen.
 
@@ -533,6 +535,9 @@ Abbildung: Hinzufügen benutzerdefinierter Funktionen zur Datei „features.js�
 ![Benutzerdefinierte Funktion im Regeleditor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Abbildung: Auswählen und Konfigurieren von benutzerdefinierten Funktionen in der Benutzeroberfläche des Regeleditors
 
+>
+>
+> Die Verbesserungen am Regeleditor, einschließlich benutzerdefinierter ereignisbasierter Regeln, Unterstützung für dynamische Variablen und API-Integration, sind auch für Edge Delivery Services Forms verfügbar. Weitere Informationen zu diesen Verbesserungen und deren Verwendung finden Sie im Artikel [Verbesserungen des Regeleditors und Anwendungsfälle](/help/forms/rule-editor-enhancements-use-cases.md) .
 
 **Best Practices für den Einsatz von Funktionen**:
 

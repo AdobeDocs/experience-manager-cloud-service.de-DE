@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: Formulare veröffentlichen, Edge Delivery Services, Formularkonfiguration, CORS, Referrer-Filter
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstell
 1. **Zugriff auf Ihr Formular**: Öffnen Sie Ihr adaptives Formular im universellen Editor.
 2. **Veröffentlichung starten**: Klicken Sie in der Symbolleiste auf das Symbol **Veröffentlichen**.
 
-   ![Klicken auf „Veröffentlichen“](/help/forms/assets/publish-icon-eds-form.png)
+   ![Klicken auf „Veröffentlichen“](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstell
 
 1. **Zu veröffentlichende Assets prüfen**: Das System zeigt alle Assets an, die veröffentlicht werden sollen, einschließlich Ihres Formulars.
 
-   ![Beim Klicken auf „Veröffentlichen“](/help/forms/assets/on-click-publish.png)
+   ![Beim Klicken auf „Veröffentlichen“](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **Veröffentlichung bestätigen**: Klicken Sie auf **Veröffentlichen**, um fortzufahren.
 3. **Erfolg überprüfen**: Suchen Sie nach der Bestätigungsmeldung.
 
-   ![Erfolgreiche Veröffentlichung](/help/forms/assets/publish-success.png)
+   ![Erfolgreiche Veröffentlichung](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstell
 
 **Status überprüfen**: Klicken Sie erneut auf das Symbol **Veröffentlichen**, um den aktuellen Status anzuzeigen.
 
-![Veröffentlichungsstatus](/help/forms/assets/publish-status.png)
+![Veröffentlichungsstatus](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **Validierungs-Checkpoint:**
 
@@ -91,7 +91,7 @@ Jede Phase baut auf der vorherigen auf, um eine sichere, funktionale Bereitstell
 2. Klicken Sie auf das Dreipunkt-Menü (⋯) oben rechts.
 3. Wählen Sie **Veröffentlichung aufheben** aus.
 
-![Heben Sie die Veröffentlichung des Formulars auf.](/help/forms/assets/unpublish--form.png)
+![Heben Sie die Veröffentlichung des Formulars auf.](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 
