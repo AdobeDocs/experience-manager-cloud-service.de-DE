@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ac2c4511d02433e968519da4c2e1eb13270ea8c4
+source-git-commit: 15f2096221d7c521d6e69fb9e425368e869dea09
 workflow-type: tm+mt
-source-wordcount: '6591'
+source-wordcount: '6599'
 ht-degree: 98%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 98%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
-         + [2 025,8,0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
+         + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
@@ -278,7 +278,7 @@ ht-degree: 98%
    + [Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Kundenseitig verwaltete Schlüssel für Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
-   + [Über Experience Hub](/help/experience-hub.md)
+   + [Informationen zu Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
    + Onboarding-Tour {#journey}
@@ -524,6 +524,7 @@ ht-degree: 98%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Betriebliche Telemetrie für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -1210,7 +1211,7 @@ ht-degree: 98%
          + [Erfahren Sie mehr über die Definition von Metadaten und Tagging für Inhaltsfragmente](/help/journey-headless/author/metadata-tagging.md)
 + KI-Assistent {#ai-assistant}
    + [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-   + [Über den KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+   + [Informationen zum KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + Generative KI {#generative-ai}
    + [Generative KI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
