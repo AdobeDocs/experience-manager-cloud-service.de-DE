@@ -4,9 +4,9 @@ description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ Jetzt wird die benutzerdefinierte Kartenkomponente angezeigt, wie unten dargeste
 
 ![Benutzerdefinierte Kartenkomponente](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Änderungen übertragen und per Push übertragen
+### &#x200B;3. Änderungen übernehmen und per Push übertragen
 
 Nachdem Sie JavaScript und CSS für Ihre benutzerdefinierte Komponente implementiert und lokal überprüft haben, übertragen Sie die Änderungen in Ihr Git-Repository.
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 Sie haben in wenigen einfachen Schritten erfolgreich eine komplexe benutzerdefinierte Kartenauswahlkomponente erstellt.
 
-## Manuelle oder veraltete Methode zum Erstellen benutzerdefinierter Komponenten
++++ ## Manuelle Methode oder Legacy-Methode zum Erstellen benutzerdefinierter Komponenten
 
 Die Legacy-Methode dazu besteht darin, die unten beschriebenen Schritte manuell auszuführen:
 
@@ -522,13 +522,13 @@ Die Legacy-Methode dazu besteht darin, die unten beschriebenen Schritte manuell 
 
 10. **Aktualisieren Sie _component-definition.**: Aktualisieren Sie in `models/_component-definition.json` das Array innerhalb der Gruppe mit `id custom-components` mit einem -Objekt wie folgt:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
+   Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
 
 11. **Build-:json ausführen**: Führen Sie `npm run build:json` aus, um alle Komponenten-JSON-Definitionen zu kompilieren und in einer einzigen Datei zusammenzuführen, die vom Server bereitgestellt wird. Dadurch wird sichergestellt, dass das Schema der neuen Komponente in der zusammengeführten Ausgabe enthalten ist.
 
