@@ -5,7 +5,7 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
+source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 91%
@@ -31,12 +31,12 @@ Verwenden Sie **Zuvor bereitgestellten Code wiederherstellen**, um eine Umgebung
 **Vorherigen Code bereitstellen** wird nur verfügbar, wenn die folgenden Bedingungen erfüllt sind:
 
 * Pro erfolgreicher Pipeline-Ausführung ist nur eine Wiederherstellung zulässig. Schließen Sie zur erneuten Wiederherstellung eine weitere erfolgreiche Pipeline-Ausführung ab.
-* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung **&#x200B;**. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
+* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung ****. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 * Ihre Organisation ist für das Beta-Programm registriert und das Feature Flag ist aktiviert.
 * Das Programm läuft auf AEM as a Cloud Service.
 * Die letzte Pipeline für diese Umgebung wurde **innerhalb der letzten 30 Tage** erfolgreich abgeschlossen und ausgeführt.
 * Der Umgebungsstatus lautet *Wird ausgeführt* und es wird keine Pipeline ausgeführt.
-* **Bereits bereitgestellten Code wiederherstellen** kann in einer `Development`, `Stage` oder einer `Specialized Testng Environment` ausgeführt werden.
+* **Bereits bereitgestellten Code wiederherstellen** kann in einer `Development`, `Stage` oder einer `Specialized Testing Environment` ausgeführt werden.
 
 Sollte eine Überprüfung fehlschlagen, öffnet Cloud Manager das folgende Dialogfeld mit einer Liste der nicht erfüllten Bedingungen. Die Schaltfläche **Bestätigen** ist deaktiviert, um die Wiederherstellung zu verhindern.
 
