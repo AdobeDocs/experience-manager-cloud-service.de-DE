@@ -505,13 +505,13 @@ Die Legacy-Methode dazu besteht darin, die unten beschriebenen Schritte manuell 
 
 10. **Aktualisieren Sie _component-definition.**: Aktualisieren Sie in `models/_component-definition.json` das Array innerhalb der Gruppe mit `id custom-components` mit einem -Objekt wie folgt:
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
+    Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
 
 11. **Build-:json ausführen**: Führen Sie `npm run build:json` aus, um alle Komponenten-JSON-Definitionen zu kompilieren und in einer einzigen Datei zusammenzuführen, die vom Server bereitgestellt wird. Dadurch wird sichergestellt, dass das Schema der neuen Komponente in der zusammengeführten Ausgabe enthalten ist.
 
