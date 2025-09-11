@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
-workflow-type: ht
-source-wordcount: '549'
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
+workflow-type: tm+mt
+source-wordcount: '524'
 ht-degree: 100%
 
 ---
@@ -67,4 +67,3 @@ Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokum
 
 * Um die Vererbung für einzelne Komponenten zurückzusetzen, muss die **AEM-Erweiterung für Multi-Site-Management** aktiviert sein.
 * Um mithilfe von visuellem Feedback zu ermitteln, für welche Komponenten die Vererbung deaktiviert ist und für welche die Vererbung weiterhin beibehalten wird, muss die **AEM-Erweiterung für Multi-Site-Management (MSM)** aktiviert sein.
-* Diese Funktionen sind derzeit auf Komponenten auf Seiten beschränkt und gelten noch nicht für [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md), obwohl diese ebenfalls MSM- und Launch-Funktionen aufweisen.

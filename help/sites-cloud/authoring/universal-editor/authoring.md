@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
-ht-degree: 96%
+source-wordcount: '2422'
+ht-degree: 91%
 
 ---
 
@@ -193,6 +193,24 @@ Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte 
 >[!TIP]
 >
 >Verwenden Sie die Hotkey-`Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederholen.
+
+### Kopieren und Einfügen {#copy-paste}
+
+Sie können Komponenten kopieren und einfügen, die sich in [Containern befinden.](/help/implementing/universal-editor/field-types.md#container) Dies ist nur innerhalb derselben Seite möglich und wenn der [Ziel-Container das Einfügen der Komponente zulässt.](/help/implementing/universal-editor/filtering.md)
+
+![Symbol „Kopieren“](assets/copy.png)
+![Symbol „Einfügen](assets/paste.png)
+
+1. Wählen Sie eine Komponente entweder im Editor oder in der Inhaltsstruktur aus.
+1. Das **Kopieren**-Symbol wird im Bedienfeld [Eigenschaften“ angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) tippen oder klicken Sie darauf.
+1. Das **Einfügen**-Symbol wird im Eigenschaftenbereich angezeigt.
+1. Wählen Sie die Komponente _danach_, in die Sie die kopierte Komponente einfügen möchten.
+1. Tippen oder klicken Sie auf Einfügen.
+1. Die kopierte Komponente wird (_) in_ ausgewählte Komponente eingefügt.
+
+>[!TIP]
+>
+>Verwenden Sie den Hotkey-`Command-C` bzw. die `Command-V` zum Kopieren bzw. Einfügen.
 
 ## Vorschau von Inhalten {#previewing-content}
 

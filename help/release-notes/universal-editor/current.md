@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.09.04
-description: Dies sind die Versionshinweise für die Version 2025.09.04 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.09.11
+description: Dies sind die Versionshinweise für die Version 2025.09.11 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 52%
+source-wordcount: '220'
+ht-degree: 46%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.09.04 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.09.11 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 4. September 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 11. September 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -22,10 +22,9 @@ Dies sind die Versionshinweise für die Version vom 4. September 2025 des univer
 
 ## Neue Funktionen {#what-is-new}
 
-* Kopieren und Einfügen ist für [Early-Adopters“ verfügbar](#copy-paste)
-* [Rückgängig und Wiederholen](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) ist jetzt für Inhaltsautorinnen und -autoren verfügbar.
-   * Das Rückgängigmachen und Wiederholen kann für Änderungen, die im Kontext vorgenommen werden, für Änderungen, die über das Bedienfeld Eigenschaften vorgenommen werden, sowie für das Hinzufügen, Duplizieren, Verschieben und Löschen von Blöcken durchgeführt werden.
-   * Die Funktionen „Rückgängig“ und „Wiederherstellen“ sind auf die aktuelle Browser-Sitzung beschränkt.
+* [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) ist jetzt für Komponenten in Containern auf derselben Seite verfügbar.
+* 6.5 LTS SP1 wird jetzt unterstützt.
+* Der universelle Editor unterstützt jetzt [Vererbung für die Verwaltung mehrerer Websites](/help/sites-cloud/authoring/universal-editor/inheritance.md) für Inhaltsfragmente, einschließlich des automatischen Unterbrechens der Vererbung, wenn ein Live Copy-Inhaltsfragment bearbeitet wird.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -35,11 +34,11 @@ Wenn Sie diese kommenden Funktionen testen und Ihr Feedback teilen möchten, sen
 
 Der neue ProseMirror-RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten Panel verfügbar.
 
-### Kopieren/Einfügen {#copy-paste}
+### Kopieren und Einfügen über Seiten hinweg {#copy-paste}
 
-Das Kopieren und Einfügen von Komponenten innerhalb derselben Seite ist jetzt für Inhaltsautoren verfügbar.
+Das Kopieren und Einfügen ist jetzt auch über Seiten hinweg und innerhalb derselben Seite möglich.
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Der Stil der Editor-Symbolleiste wurde aktualisiert, um ihn besser an den bevorstehenden neuen RTE anzupassen.
-* Die Filter im Dialogfeld für die Asset-Auswahl wurden wiederhergestellt.
+* Für den universellen Editor, der mit AEM als Backend-System arbeitet, wurden mehrere kleine Leistungsverbesserungen implementiert.
+* Inhaltsfragmente werden jetzt mit der Open API veröffentlicht, was Leistungsverbesserungen und Konsistenz mit der Veröffentlichungskonsole des Inhaltsfragment-Editors bringt.
