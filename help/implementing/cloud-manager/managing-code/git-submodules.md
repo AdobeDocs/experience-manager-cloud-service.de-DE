@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Git-Untermodule dazu verwenden können, den I
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: ht
-source-wordcount: '391'
-ht-degree: 100%
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Dies führt zu einer `.gitmodules`-Datei ähnlich der Folgenden:
 
 Weitere Informationen zu Git-Untermodulen finden Sie auch im [Git-Referenzhandbuch](https://git-scm.com/book/de/v2/Git-Tools-Submodules) .
 
-## Nutzungshinweise {#usage-notes}
+## Verwendungsnotizen für Adobe-Repositorys {#usage-notes-recommendations-adobe-repos}
 
 * Die Git-URL muss genau die im vorherigen Abschnitt beschriebene Syntax haben.
 * Es werden nur Untermodule im Stammverzeichnis der Verzweigung unterstützt.
@@ -94,4 +94,4 @@ Nachdem Sie Ihre Datei `pom.xml` eingerichtet haben und die `git submodule`-Bef
 
 * Git-URLs von Untermodulen können im HTTPS- oder SSH-Format vorliegen, müssen aber auf ein GitHub.com-Repository verweisen. Das Hinzufügen eines Adobe-Repository-Untermoduls zu einem GitHub-Aggregator-Repository oder umgekehrt wird nicht unterstützt.
 * Die GitHub-Untermodule müssen für die Adobe-GitHub-App zugänglich sein.
-* [Die Einschränkungen bei der Verwendung von Git-Untermodulen mit von Adobe verwalteten Repositorys](#limitations-recommendations) gelten ebenfalls.
+* [Die Einschränkungen bei der Verwendung von Git-Untermodulen mit von Adobe verwalteten Repositorys](#usage-notes-recommendations-adobe-repos) gelten ebenfalls.
