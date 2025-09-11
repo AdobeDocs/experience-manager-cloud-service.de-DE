@@ -4,7 +4,7 @@ description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 4%
@@ -175,6 +175,8 @@ In diesem Abschnitt erfahren Sie, wie Sie eine benutzerdefinierte Kartenkomponen
 #### 1.1 Dateien und Ordner
 
 Der erste Schritt besteht darin, die erforderlichen Dateien der benutzerdefinierten Komponente einzurichten und sie mit dem Code im Repository zu verbinden. Dieser Vorgang wird automatisch von der **AEM Forms-Strukturvorlagen-CLI** durchgeführt, wodurch die Strukturierung und Verkabelung der erforderlichen Dateien beschleunigt wird.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. Öffnen Sie das Terminal und navigieren Sie zum Stammverzeichnis Ihres Formularprojekts.
 2. Führen Sie die folgenden Befehle aus:
@@ -520,13 +522,13 @@ Die Legacy-Methode dazu besteht darin, die unten beschriebenen Schritte manuell 
 
 10. **Aktualisieren Sie _component-definition.**: Aktualisieren Sie in `models/_component-definition.json` das Array innerhalb der Gruppe mit `id custom-components` mit einem -Objekt wie folgt:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
+   Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
 
 11. **Build-:json ausführen**: Führen Sie `npm run build:json` aus, um alle Komponenten-JSON-Definitionen zu kompilieren und in einer einzigen Datei zusammenzuführen, die vom Server bereitgestellt wird. Dadurch wird sichergestellt, dass das Schema der neuen Komponente in der zusammengeführten Ausgabe enthalten ist.
 
