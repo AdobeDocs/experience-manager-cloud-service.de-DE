@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -21,25 +21,25 @@ Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as
 
 ## Veröffentlichungsdaten {#release-date}
 
-Die Version 2025.9.0 von Cloud Manager in AEM as a Cloud Service wurde am Freitag, 4. September 2025 veröffentlicht.
+Die Version 2025.9.0 von Cloud Manager in AEM as a Cloud Service wurde am 4. September 2025 veröffentlicht.
 
-Die Veröffentlichung der nächsten Version ist für den Freitag, 2. Oktober 2025 geplant.
+Die Veröffentlichung der nächsten Version ist für den 2. Oktober 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
-* **Manuelles Verlängern von Adobe-verwalteten Domain-Validierungszertifikaten**
+* **Manuelles Verlängern von Domain-Validierungszertifikaten, die von Adobe verwaltet werden**
 
   Sie können jetzt fehlgeschlagene DV-Zertifikate (Adobe-Managed Domain Validation) aus Cloud Manager oder der öffentlichen API manuell verlängern, um Zertifikate proaktiv zu aktualisieren. <!-- CMGR-68738 -->
 
-  ![Verlängerung des SSL-Zertifikats](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
+  ![Verlängern von SSL-Zertifikaten](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Unterstützung für Azure DevOps (private Repositorys) wurde hinzugefügt**
+* **Unterstützung für Azure DevOps (private Repositorys) wurde jetzt hinzugefügt**
 
-  Zu den Aktualisierungen der Dokumentation gehören Konfigurationsschritte für Bring Your Own Git with Azure DevOps und die Validierung von Pull-Anfragen. Siehe [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+  Zu den Aktualisierungen der Dokumentation gehören Konfigurationsschritte für Bring Your Own Git mit Azure DevOps und die Validierung von Pull Requests. Siehe [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Bringen Sie Ihre eigene Git-Unterstützung (BYOG) auf Konfigurations-Pipelines (private Repositorys) erweitert**
+* **Bring Your Own Git (BYOG)-Unterstützung wurde auf Konfigurations-Pipelines (private Repositorys) ausgeweitet**
 
-  Cloud Manager unterstützt jetzt Konfigurations-Pipelines mit privaten Repositorys in GitHub, Bitbucket, Azure DevOps und GitLab. Diese Unterstützung beschleunigt den Entwicklungszyklus weiter. Siehe [Pull-Anforderungsprüfungen für private Repositorys](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  Cloud Manager unterstützt jetzt Konfigurations-Pipelines mit privaten Repositorys in GitHub, Bitbucket, Azure DevOps und GitLab. Diese Unterstützung beschleunigt den Entwicklungszyklus weiter. Siehe [Pull-Request-Prüfungen für private Repositorys](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,10 +63,10 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
@@ -135,13 +135,13 @@ Siehe [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-co
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### Edge Delivery-Konfigurations-Pipeline hinzufügen {#add-eds-pipeline}
+### Hinzufügen einer Konfigurations-Pipeline für Edge Delivery {#add-eds-pipeline}
 
 Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, sodass diese Funktion über Cloud-Service-Umgebungen hinaus genutzt werden kann. Sie können **Konfigurations-Pipelines** verwenden, um ggf. Einstellungen wie Traffic-Filterregeln und Web Application Firewall (WAF)-Konfigurationen zu verwalten. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
 
 **Neueste Verbesserung**
 
-* Edge Delivery-Konfigurations-Pipelines unterstützen jetzt über Cloud Manager-Pipeline-Variablen geheime Daten.
+* Konfigurations-Pipelines für Edge Delivery unterstützen jetzt über Cloud Manager-Pipeline-Variablen Geheimnisse.
 * Edge Delivery Services-Pipelines zeigen in der Spalte **Bereitgestellter Code** jetzt **Konfiguration** an, was die sofortige Identifizierung von Bereitstellungen nur für Konfigurationen ermöglicht. <!-- CMGR‑69681 -->
 * Cloud Manager zeigt **Edge Delivery-Pipeline hinzufügen** an, sobald ein Programm mindestens eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option deaktiviert angezeigt und in einer QuickInfo wird erklärt, welche Voraussetzungen nicht erfüllt sind. <!-- CMGR‑69680 -->
 * Die Registerkarte **Edge Delivery** zeigt ein neues Widget **Edge Delivery-Pipelines**, das den Namen, den Status, das Repository und die Verzweigung jeder Pipeline auflistet. <!-- (CMGR-69052) -->
