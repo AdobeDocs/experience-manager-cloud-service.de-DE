@@ -155,7 +155,7 @@ Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular he
 
 >[!NOTE]
 >
-> * Sie können die Vorlage [!UICONTROL Datensatzdokument“ auch ] den Builder für adaptive Formulare oder den Vorlagen-Builder für adaptive Formulare konfigurieren. Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Sie können die Vorlage [!UICONTROL Datensatzdokument“ auch &#x200B;] den Builder für adaptive Formulare oder den Vorlagen-Builder für adaptive Formulare konfigurieren. Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Verknüpfen eines Formulardatenmodellschema mit einer Vorlage {#associating-form-data-model-schema-in-template}
 
