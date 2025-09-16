@@ -95,7 +95,7 @@ Im Folgenden finden Sie eine vollständige, aber einfache `component-definition.
 `plugins` definiert, welches Plug-in für das Persistieren der Komponente verantwortlich ist. Häufige Plug-ins sind:
 
 * `aem` für [AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service)
-* `aem65` für [AEM 6.5.](https://experienceleague.adobe.com/de/docs/experience-manager-65) und [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
+* `aem65` für [AEM 6.5.](https://experienceleague.adobe.com/de/docs/experience-manager-65) und [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts)
 * `xwalk` für [Authoring mit AEM Sites für Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` oder `cf` {#page-cf}

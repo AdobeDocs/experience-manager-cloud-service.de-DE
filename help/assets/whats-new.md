@@ -32,7 +32,7 @@ Das Datum der Content Hub-Funktionsveröffentlichung (2025.8.0) ist der 28. Augu
 
 Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit der neuen Funktion für die Massensuche können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben – getrennt durch ein Trennzeichen (z. B. mehrere SKU-IDs) – und sofort alle übereinstimmenden Assets mit einer einzigen Suche abrufen.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## Funktionen der Juli-Version {#july-release-features}
 

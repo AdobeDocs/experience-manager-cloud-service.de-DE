@@ -767,4 +767,4 @@ Verwenden Sie die `@fieldName`-Syntax, um in Ihren Prompts auf vorhandene Felder
 
 Umfassende Best Practices und Validierungsrichtlinien finden Sie im Handbuch [Forms Experience Builder – Erste Schritte](forms-ai-assistant-getting-started.md#best-practices).
 
-*Diese Prompt-Bibliothek wird auf Basis von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen fortlaufend aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de).*
+*Diese Prompt-Bibliothek wird auf Basis von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen fortlaufend aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de).*

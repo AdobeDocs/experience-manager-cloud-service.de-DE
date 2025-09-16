@@ -532,7 +532,7 @@ Verwenden Sie folgende Prompts, um detailliertere Informationen zu Formularprobl
 
 - [Forms Experience Builder – Prompt-Bibliothek](ai-assistant-prompt-library.md)
 - [Forms Experience Builder – Best Practices](aem-forms-ai-assistant-best-practices.md)
-- [AEM Forms-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de)
+- [AEM Forms-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de)
 
 ### Eskalation und Support
 
@@ -573,4 +573,4 @@ Verwenden Sie folgende Prompts, um detailliertere Informationen zu Formularprobl
 - Schulungen und Wissensaustausch
 - Feedback an das Produkt-Team für Funktionsverbesserungen
 
-Dieses Handbuch zur Fehlerbehebung wird auf Basis von Benutzer-Feedback und neuen Funktionen des KI-Assistenten fortlaufend aktualisiert. Die neuesten Informationen und weitere Ressourcen finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de).
+Dieses Handbuch zur Fehlerbehebung wird auf Basis von Benutzer-Feedback und neuen Funktionen des KI-Assistenten fortlaufend aktualisiert. Die neuesten Informationen und weitere Ressourcen finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de).
