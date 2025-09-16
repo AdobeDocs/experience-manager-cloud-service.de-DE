@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: ht
-source-wordcount: '350'
-ht-degree: 100%
+source-git-commit: d73ccc454c89c7e06752de694af97ac26694be17
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 24%
 
 ---
 
@@ -16,47 +16,83 @@ ht-degree: 100%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 22171 {#22171}
+## Version 22450 {#22450}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 22171, die am 2. September 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 21994.
+Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 22450, die am Mittwoch, 16. September 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 22171.
 
 Die Funktionsaktivierung von 2025.9.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Neue Funktionen  {#new-features-22171}
+### Neue Funktionen {#new-features-22450}
 
-* ASSETS-53136: Vanity-ID-Unterstützung in Dynamic Media mit OpenAPI.
+* SITES-32595: Workflows, die mit übersprungenen oder zurückgewiesenen Fragmenten abgeschlossen werden, können jetzt identifiziert werden. In der Antwort der Workflow-API ist eine neue Eigenschaft verfügbar, die Fragmente auflistet, die aufgrund ungültiger oder ungültiger Verweise ausgeschlossen wurden.
+* SITES-33642: Ein neues API-Ereignis wird jetzt für geänderte Inhaltsfragmente produziert und genutzt.
+* SITES-33320: Es ist jetzt möglich, über die Such-API mithilfe des `technicalName`nach einem Inhaltsfragmentmodell zu suchen.
 
-### Verbesserungen {#enhancements-22171}
+### Verbesserungen {#enhancements-22450}
+
+* SITES-34023: Das Feld `technicalName` wurde den Antworten der Endpunkte des Inhaltsfragmentmodells hinzugefügt, um eine bessere Identifizierung zu ermöglichen.
+* SITES-32766: Die Asset-Verweise in Inhaltsfragmentmodellen unterstützen jetzt eine breitere Palette von binären Dateitypen.
+* SITES-33974: Verbesserte OpenAPI-Dokumentation, die sie genauer und benutzerfreundlicher macht.
+* SITES-9173: Cache-`ContentPolicyStatus`
+* SITES-9290: Verbessern Sie das Caching von `TouchEditContext`.
+* SITES-33355: Neuen CF-Editor auf „Payload anzeigen“ in der Workflow-Konsole öffnen.
+* SITES-33356: Öffnen Sie den neuen CF-Editor auf Erstellen → Öffnen Sie in der Admin-Benutzeroberfläche der Touch-optimierten Benutzeroberfläche.
+* SITES-32952: Inkonsistente Verarbeitung von Standardwerten für CFM-Felder bei Verwendung der Bereitstellungs-API.
+* SITES-31539: Edge Delivery mit universellem Editor: Hinzufügen von Unterstützung für universelle Editor-Konfigurations-Meta-Tags in `head.html`.
+* SITES-20672: Edge Delivery mit universellem Editor: Unterstützung für zusätzliche Bulk-Metadaten-Tabellen beim Authoring hinzufügen.
+* SITES-32963: Edge Delivery mit universellem Editor: Hinzufügen neuer Experimentier-Metadaten für Zieloptimierung, automatische Zuordnung und selbstlernendes Arbeiten.
+* SITES-30847: Version der Kernkomponenten 2.30.0.
+* SITES-29617: Der referenzierte By-Endpunkt wurde aktualisiert, um die ReferenceSearch-Klasse zu verwenden und damit ihre Leistung und Zuverlässigkeit zu verbessern.
+* SITES-19308: Verbesserte Leistung des Seitenlöschvorgangs, indem der Schritt zur Referenzvalidierung optimiert wurde.
+* SITES-34293: Implementiertes verzögertes Laden für vorlagenbasierte Ressourcen, um die Leistung zu verbessern.
+* SITES-33892: Es wurde ein Umschalter für Funktionen hinzugefügt, mit dem Verweisprüfungen für Pseudoseiten übersprungen werden können, was die Leistung verbessern kann.
+
+### Behobene Probleme {#fixed-issues-22450}
+
+* CQ-4360550: Es wurde ein unerwartetes Verschwinden der Sprachkopie behoben, nachdem die Seitenverschiebung in AEM Cloud Service zurückgesetzt wurde.
+* SITES-25232: Für Timewarp-Links zum Festlegen des Datums und zum Beenden ist der Fokus nicht sichtbar.
+* SITES-25258: Der Fokus wird nicht mit dem modalen Dialogfeld „Anmerkung löschen“ verwaltet.
+* SITES-25305: Die demografische Symbolleiste erhält den Fokus nicht in einer logischen Reihenfolge.
+* SITES-25366: Der Ladestatus des Teaser-Modals wird von der Bildschirmlesehilfe nicht angekündigt.
+* SITES-34276: Edge Delivery mit universellem Editor: Die automatisch erstellte CORS-Richtlinie wird nicht auf die Veröffentlichungsebene angewendet.
+* SITES-34811: Edge Delivery mit universellem Editor: Beheben Sie, dass der HLX-Selektor beim Authoring nicht zu Links zu Kalkulationstabellen hinzugefügt wird.
+* SITES-31669: Nicht lokalisierte Zeichenfolgen „Diese Seite leitet zu“ in „Tools“ > „Sites“ > „Launches“.
+* SITES-30879: Nicht lokalisierte Zeichenfolgen in „Sites“ > „Seiten-Editor“ > „Suchkomponente“.
+* SITES-30959: Nicht lokalisierte Zeichenfolgen im Seiteneditor > Bildkomponente.
+* SITES-21743: Nicht lokalisiert „Bitte wählen Sie ein anzuzeigendes Dokument aus.“ Zeichenfolge im Seiten-Editor > PDF Viewer
+* SITES-19785: Zeichenfolgen sind in den Kernkomponenten „Site“ > „Registerkarten“ nicht lokalisiert.
+* SITES-22059: Nicht lokalisierte Zeichenfolge „Dateivorschau nicht verfügbar“ in „Kernkomponenten-Website“ > &quot;PDF-Viewer“.
+* SITES-33360: Nicht lokalisierter „Fehler während des Betriebs. Bereitgestellter Pfad ist keine „Launch“-Zeichenfolge in Launches > Bearbeiten.
+* SITES-32975: Nicht lokalisiertes Datumsformat in der Headless-Benutzeroberfläche > Launches > Launch mit Source vergleichen.
+* SITES-32973: Hartcodierte Zeichenfolgen in der Headless-Benutzeroberfläche > Launches > Rebase.
+* SITES-13540: Nicht lokalisierte Zeichenfolgen in „Launches“ > „Weiterleitung“.
+* SITES-13085: Nicht lokalisierte Fehlerzeichenfolgen auf der Seite „Sites“ > „Launch-Erstellung“.
+* SITES-21499: Nicht lokalisierte Zeichenfolge ist Sites > Launches > Bearbeiten.
+* SITES-14961: Abschneiden von Datumsfeldern im Dialogfeld Sites > Eigenschaften > Blueprint > Rollout .
+* SITES-33764: Launch-Filter (Source-Pfad/Workflow-erstellte Launches) funktionieren nicht.
+* SITES-33884: „Aktuelle Seite und Unterseiten hochstufen“ fördert unbeabsichtigt Seiten, die außerhalb des Bereichs liegen.
+* SITES-33611: Live Copy-Übersicht funktioniert nicht für Märkte mit hohem Volumen.
+* SITES-34331: 503-Timeout beim Laden der Rollout-Überlagerung für Benutzer ohne Administratorrechte.
+* SITES-34403: Beim Herunterfahren in `NullPointerException` `GraphqlClientImpl deactivate()`.
+* SITES-33817: Es wurden Synchronisierungsprobleme zwischen dem Benutzeroberflächenschema und dem JCR-Modell behoben, um Konsistenz sicherzustellen.
+* SITES-31141: Inhaltsverweise, die nicht durch einen Pfad dargestellt werden, werden jetzt korrekt in der API-Antwort zurückgegeben.
+* SITES-34080: Der Erstellungsprozess von Inhaltsfragmenten ist jetzt robuster und schlägt nicht fehl, wenn keine Felder für die Anfrage bereitgestellt werden.
+* SITES-30773: Der reguläre Ausdruck zum Suchen von Wörtern mit „Find and Replace“ wurde verbessert, sodass er nun UTF-8-Zeichen korrekt wiedergibt.
+* SITES-33742: Es wurde ein Fehler behoben, der das erfolgreiche Verschieben eines Inhaltsfragments bei Verwendung der Workflow-API verhinderte.
+
+### Bekannte Probleme {#known-issues-22450}
 
 Keine.
 
-### Behobene Probleme {#fixed-issues-22171}
-
-* ASSETS-52510: Die Erkennung doppelter Dateinamen schlägt für Dateinamen fehl, die Unicode `U+202F` enthalten.
-* ASSETS-53489: Beim Löschen von Ordnern aus der Benutzeroberfläche der Assets-Ansicht wird die Genehmigung nicht für alle enthaltenen Assets aufgehoben.
-* ASSETS-54821: Zeitweise auftretender „Server-Fehler“ in Asset Link.
-* ASSETS-55024: Beschädigtes Bild in der Vorlage „Über E-Mail herunterladen“ von AEM Assets.
-* ASSETS-55325: Statische Dynamic Media-URLs lassen die Dateierweiterung nach dem Umbenennen des Assets weg.
-* ASSETS-55334: Das Dialogfeld zur Link-Freigabe blinkt kurz und verschwindet wieder oder wird nie angezeigt.
-* ASSETS-55382: Neu gestartete asynchrone Asset-Vorgänge erstellen einen doppelten Zielordner.
-* ASSETS-55472: Die Option zur Veröffentlichungsverwaltung „Nur bereits veröffentlichte Seiten einbeziehen“ wird ignoriert.
-* SITES-31600: Ein Contexthub-js-Fehler beschädigt die Personalisierung.
-
-Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Bekannte Probleme {#known-issues-22171}
-
-Keine.
-
-### Eingestellte Funktionen und APIs {#deprecated-22171}
+### Eingestellte Funktionen und APIs {#deprecated-22450}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-22171}
+### Sicherheitskorrekturen {#security-22450}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt sieben identifizierte Schwachstellen und bestärkt dadurch unser Engagement für einen robusten Systemschutz.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion wurden 18 identifizierte Schwachstellen behoben, was für einen noch robusteren Systemschutz sorgt.
 
-### Eingebettete Technologien {#embedded-tech-22171}
+### Eingebettete Technologien {#embedded-tech-22450}
 
 | Technologie | Version | Link |
 |---|---|---|

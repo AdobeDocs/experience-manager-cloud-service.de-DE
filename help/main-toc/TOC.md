@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
+source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
 workflow-type: tm+mt
-source-wordcount: '6618'
-ht-degree: 97%
+source-wordcount: '6624'
+ht-degree: 98%
 
 ---
 
@@ -98,6 +98,7 @@ ht-degree: 97%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Wartungversionshinweise für 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [Wartungversionshinweise für 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [Wartungversionshinweise für 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
          + [Wartungversionshinweise für 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -279,7 +280,7 @@ ht-degree: 97%
    + [Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Kundenseitig verwaltete Schlüssel für Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
-   + [Informationen zu Experience Hub](/help/experience-hub.md)
+   + [Info zu Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
    + [Hier beginnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de)
    + Onboarding-Tour {#journey}
@@ -525,8 +526,8 @@ ht-degree: 97%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
-   + [Betriebliche Telemetrie für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
+   + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
    + [Wesentliche Änderungen in [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -728,7 +729,7 @@ ht-degree: 97%
       + [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Suchen nach Assets in Content Hub](/help/assets/search-assets-content-hub.md)
       + [Asset-Eigenschaften](/help/assets/asset-properties-content-hub.md)
-      + [Attributbasierte Zugriffssteuerung – Übersicht](/help/assets/attribute-based-access-control.md)
+      + [Attributbasierte Zugriffssteuerung](/help/assets/attribute-based-access-control.md)
       + [Freigeben von Assets im Content Hub](/help/assets/share-assets-content-hub.md)
       + [Herunterladen von Assets mit Content Hub](/help/assets/download-assets-content-hub.md)
       + [Verwalten lizenzierter Assets in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -849,7 +850,7 @@ ht-degree: 97%
             + [Erstellen einer benutzerdefinierten Sendeaktion](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Konvertieren adaptiver Formulare basierend auf Foundation-Komponenten in auf Kernkomponenten basierenden Formularen mithilfe des Migrationsdienstprogramm-Tools](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [E-Mail-Vorlagen in adaptiven Formularen](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [Verwalten von Veröffentlichungen in Experience Manager Forms](/help/forms/manage-publication.md)
+            + [Verwalten der Veröffentlichung in Experience Manager Forms](/help/forms/manage-publication.md)
             + Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren{#rule-editor-core-components}
                + [Einführung in den Regeleditor für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components.md)
                + [Benutzeroberfläche des Regeleditors für adaptive Formulare, die auf Kernkomponenten basieren](/help/forms/rule-editor-core-components-user-interface.md)
@@ -961,9 +962,9 @@ ht-degree: 97%
       + [Formularsatz in AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Interaktive Kommunikation {#interactive-communication}
       + [Einführung in den Editor für interaktive Kommunikation](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-      + [Interaktive Kommunikation erstellen](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [Erstellen einer interaktiven Kommunikationsvorlage](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Erstellen eines interaktiven Kommunikationsfragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Erstellen interaktiver Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [Erstellen einer Vorlage für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [Erstellen eines Fragments für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Einführung in die interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
       + [Erstellen Ihrer ersten interaktiven Kommunikation](/help/forms/create-your-first-communication.md)
       + [Häufig gestellte Fragen](/help/forms/interactive-communications-faq.md)
@@ -989,7 +990,7 @@ ht-degree: 97%
       + [Abrechenbare APIs für Transaktionsberichte](/help/forms/transaction-reports-billable-apis.md)
       + [Aufzeichnen einer Transaktion für eine benutzerdefinierte Implementierung](/help/forms/record-transaction-custom-implementation.md)
    + Dashboard zur Wertentwicklung  {#vr-dashboard}
-      + [Verstehen des Dashboards zur Wertentwicklung](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Informationen zum Dashboard zur Wertentwicklung](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Verwenden des Dashboards zur Wertentwicklung zur Analyse der Nutzungs-Trends von Formularen und Dokumenten](/help/forms/using-the-value-realization-dashboard.md)
    + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
       + [API-Referenz für adaptive Formulare](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
@@ -1006,7 +1007,7 @@ ht-degree: 97%
    + [Überblick](/help/ai-in-aem/overview.md)
    + KI-Assistent {#ai-assistant}
       + [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-      + [Informationen zum KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+      + [Info zum KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
    + Varianten generieren {#generate-variations}
       + [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Varianten generieren](/help/generative-ai/generate-variations.md)
@@ -1015,8 +1016,8 @@ ht-degree: 97%
       + [Erste Schritte mit dem KI-Assistenten für AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
       + [Erste Schritte mit dem KI-Assistenten für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
       + [AEM Forms KI-Assistent – Bibliothek für Prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder - Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder - Handbuch zur Fehlerbehebung](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Forms Experience Builder – Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [Forms Experience Builder – Handbuch zur Fehlerbehebung](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Überblick über Screens as a Cloud Service {#overview}
       + [Einführung](/help/screens-cloud/introduction/introduction.md)
@@ -1058,7 +1059,7 @@ ht-degree: 97%
    + [Einführung und Überblick](/help/commerce-cloud/introduction.md)
    + Edge Delivery Services-Storefront {#edge-storefront}
       + [Einführung](/help/commerce-cloud/edge-storefront/introduction.md)
-   + Storefront eines Drittanbieters {#thrid-party-storefront}
+   + Drittanbieter-Storefront {#thrid-party-storefront}
       + [Einführung](/help/commerce-cloud/third-party-storefront/introduction.md)
    + CIF-Storefront {#cif-storefront}
       + [Einführung in CIF](/help/commerce-cloud/cif-storefront/introduction.md)
@@ -1103,7 +1104,7 @@ ht-degree: 97%
       + [Migration](/help/commerce-cloud/cif-storefront/migration.md)
       + [Häufig gestellte Fragen](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Übersicht über Edge Delivery Services](/help/edge/overview.md)
+   + [Edge Delivery Services – Überblick](/help/edge/overview.md)
 {#wysiwyg-authoring}
    + Erstellen von Formularen {#build-forms}
       + [Überblick](/help/edge/docs/forms/overview.md)
@@ -1151,13 +1152,13 @@ ht-degree: 97%
       + [Anleitung zur Formularübermittlung: Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
       + [Konfigurieren der Übermittlung für Edge Delivery Services-Formulare](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Häufig gestellte Fragen (FAQ)](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [Best Practices für die Erstellung von Formularen](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+   + [Best Practices zum Erstellen von Formularen](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [Was ist ein Headless-CMS?](/help/headless/what-is-headless.md)
    + [Einführung in AEM Headless](/help/headless/introduction.md)
    + [Entwicklerportal (zusätzliche Ressourcen)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
    + [Best Practices – Einrichtung und Verwendung](/help/headless/best-practices-setup-use.md)
-   + Einrichtung {#setup}
+   + Setup {#setup}
       + [Einführung](/help/headless/setup/introduction.md)
       + [Konfiguration](/help/headless/setup/create-configuration.md)
       + [Inhaltsfragmentmodell](/help/headless/setup/create-content-model.md)
@@ -1332,7 +1333,7 @@ ht-degree: 97%
       + [Konfigurationen und der Konfigurations-Browser](/help/implementing/developing/introduction/configurations.md)
       + [Technische Grundlagen von AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [API-Referenzmaterial](/help/implementing/developing/reference-materials.md)
-      + [OpenAPI-basierte APIs](/help/implementing/developing/open-api-based-apis.md)
+      + [Auf OpenAPI basierende APIs](/help/implementing/developing/open-api-based-apis.md)
       + [Erstellen von Zugriffs-Token für Server-seitige APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [Erstellen von Zugriffs-Token für Server-seitige APIs (Legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Schnelle Site-Erstellung und Frontend-Anpassung](/help/implementing/developing/introduction/quick-site-creation.md)
