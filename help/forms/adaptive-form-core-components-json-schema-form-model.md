@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
 ht-degree: 100%
 
@@ -462,7 +462,7 @@ Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendb
 }
 ```
 
-Das obige Beispiel definiert einen Kundendatensatz, bei dem jede Kundin und jeder Kunde über eine Versand- und eine Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Ort und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
+Das obige Beispiel definiert einen Kundeneintrag, bei dem jede Kundin und jeder Kunde über eine Versand- und Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Ort und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
 
 <!--
 ## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}

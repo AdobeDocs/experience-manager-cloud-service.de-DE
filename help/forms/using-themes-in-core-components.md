@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess des Änderns, Formatiere
 
 ### Einrichten Ihrer Arbeitsumgebung
 
-* Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
+* Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 * Konfigurieren Sie eine [Frontend-Bereitstellungs-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de) für Ihre Cloud Service-Umgebung. Alternativ können Sie die Pipeline auch später konfigurieren, sodass Sie das Design vor der Einrichtung der Bereitstellungs-Pipeline flexibel priorisieren und verfeinern können.
 
 <!-- 
@@ -358,7 +358,7 @@ Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-S
    git push [name-for-createdrepository]
    ```
 
-   Zum Beispiel:
+   Beispiel:
 
    ```
    git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
@@ -441,7 +441,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 

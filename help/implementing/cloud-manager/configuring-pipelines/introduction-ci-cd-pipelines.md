@@ -7,9 +7,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1489'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Folgende Einschränkungen gelten.
 Achten Sie außerdem darauf, wie sich die Full-Stack-Pipeline verhält, wenn Sie eine [Web-Stufen-Konfigurations-Pipeline](#web-tier-config-pipelines) einführen.
 
 * Die Full-Stack-Pipeline für eine Umgebung ignoriert die Dispatcher-Konfiguration, wenn die entsprechende Web-Stufen-Konfigurations-Pipeline vorhanden ist.
-* Wenn die entsprechende Web-Stufen-Konfigurations-Pipeline für die Umgebung nicht vorhanden ist, kann der Benutzer die Full-Stack-Pipeline so konfigurieren, dass sie die Dispatcher-Konfiguration einschließt oder ignoriert.
+* Wenn die entsprechende Web-Stufen-Konfigurations-Pipeline für die Umgebung nicht vorhanden ist, kann die Benutzerin bzw. der Benutzer die Full-Stack-Pipeline so konfigurieren, dass sie die Dispatcher-Konfiguration berücksichtigt oder ignoriert.
 
 Full-Stack-Pipelines können Pipelines zur Code-Qualitätsprüfung oder für die Bereitstellung sein.
 

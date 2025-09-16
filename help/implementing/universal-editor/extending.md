@@ -1,53 +1,53 @@
 ---
 title: Erweitern des universellen Editors
-description: Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung der Funktionen des universellen Editors, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+description: Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern der Funktionen des universellen Editors, um die Anforderungen Ihrer Inhaltsautorinnen und Inhaltsautoren zu unterstützen.
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 # Erweitern des universellen Editors {#extending}
 
-Erfahren Sie mehr über die verschiedenen Optionen zur Erweiterung der Funktionen des universellen Editors, um die Anforderungen Ihrer Inhaltsautoren zu unterstützen.
+Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern der Funktionen des universellen Editors, um die Anforderungen Ihrer Inhaltsautorinnen und Inhaltsautoren zu unterstützen.
 
 >[!TIP]
 >
->Der universelle Editor bietet außerdem mehrere [Anpassungsoptionen](/help/implementing/universal-editor/customizing.md) mit denen Sie Ihre Projektanforderungen besser erfüllen können.
+>Der universelle Editor bietet außerdem mehrere [Anpassungsoptionen](/help/implementing/universal-editor/customizing.md), mit denen Sie Ihre Projektanforderungen besser erfüllen können.
 
 ## Erweiterungen {#extensions}
 
-Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mithilfe von App Builder und Experience Manager erweitert werden. Adobe bietet viele vorgefertigte Erweiterungen, die über die [Extension Manager](https://experience.adobe.com/aem/extension-manager) verfügbar sind und die Sie für Ihr Projekt verwenden können.
+Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mit App Builder und Experience Manager erweitert werden. Adobe bietet viele vorkonfigurierte Erweiterungen, die Sie über den [Extension Manager](https://experience.adobe.com/aem/extension-manager) für Ihr Projekt verwenden können.
 
 * **[Erweiterung für AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Unterbrechen oder reaktivieren Sie die Vererbung auf Komponentenebene
-* **[Erweiterung der AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)** Seiteneigenschaften: Rufen Sie das Seiteneigenschaftsfenster der Seite im universellen Editor auf
-* **[AEM Site Admin-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Öffnen Sie die Sites-Konsole zum Speicherort der Seite im universellen Editor
-* **[AEM Page Lock Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: Anzeigen und Ändern des Seitensperrstatus im universellen Editor
-* **[AEM Workflows-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Starten Sie Workflows auf der Seite und Seiteninhalte über den universellen Editor
-* **[AEM Universal Editor Dev Login-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Einfache Authentifizierung bei Ihrer lokalen AEM SDK bei der lokalen Entwicklung
-* **[Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md)**: Verwenden Sie generative künstliche Intelligenz (KI), um Varianten für Ihre Inhalte direkt im Eigenschaftenbereich zu erstellen.
-* **[AEM-Produktauswahl für universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrieren Sie Adobe Commerce-Daten, indem Sie Produktdaten aus dem Editor auswählen oder daraus entfernen.
-* **[Inhaltsentwürfe im universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Erstellen, Bearbeiten und Verwalten mehrerer Inhaltsentwürfe.
-* **[Konfigurierbare Asset-Auswahl](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: Aktivieren Sie die Asset-Auswahl aus anderen Repositorys als dem, der von der bearbeiteten Seite verwendet wird.
-* **Forms-Regeleditor**: Dynamisches Verhalten visuell, ohne Kodierung, zu AEM Forms-Feldern hinzufügen.
-* **[Exportieren von Inhaltsfragmenten nach Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: Exportieren Sie Inhaltsfragmente, die in Adobe Experience Manager as a Cloud Service erstellt wurden, nach Adobe Target, um sie als Angebote in Target-Aktivitäten zu verwenden und skaliert zu testen und zu personalisieren.
-* **[Inhaltsfragment-Workflows](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: Starten eines AEM-Workflows für ausgewählte Inhaltsfragmente.
+* **[AEM-Erweiterung für Seiteneigenschaften](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: Greifen Sie im universellen Editor auf das Fenster „Seiteneigenschaften“ einer Seite zu
+* **[AEM Site Admin-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Öffnen Sie im universellen Editor die Sites-Konsole zum Speicherort der Seite
+* **[AEM-Erweiterung für Seitensperren](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: Ermöglicht das Anzeigen und Ändern des Seitensperrstatus im universellen Editor
+* **[AEM-Erweiterung für Workflows](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Starten Sie im universellen Editor Workflows auf der Seite und in Seiteninhalten
+* **[AEM-Erweiterung für Entwickler-Anmeldung im universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Wenn Sie lokal entwickeln, können Sie sich einfach bei Ihrem lokalen AEM-SDK authentifizieren 
+* **[Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md)**: Verwenden Sie generative künstliche Intelligenz (KI), um Varianten für Ihre Inhalte direkt im Panel „Eigenschaften“ zu erstellen.
+* **[AEM-Produktauswahl für den universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrieren Sie Adobe Commerce-Daten, indem Sie Produktdaten im Editor auswählen oder entfernen.
+* **[Inhaltsentwürfe im universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Erstellen, bearbeiten und verwalten Sie mehrere Inhaltsentwürfe.
+* **[Konfigurierbare Asset-Auswahl](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: Aktivieren Sie die Asset-Auswahl aus weiteren Repositorys, die von der bearbeiteten Seite nicht verwendet werden.
+* **Formularregel-Editor**: Fügen Sie AEM Forms-Feldern dynamisches Verhalten visuell ohne Kodierung hinzu.
+* **[Inhaltsfragmente nach Adobe Target exportieren](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: Exportieren Sie Inhaltsfragmente, die in Adobe Experience Manager as a Cloud Service erstellt wurden, nach Adobe Target, um sie als Angebote in Target-Aktivitäten zu verwenden und Erlebnisse im benötigten Umfang zu testen und zu personalisieren.
+* **[Inhaltsfragment-Workflows](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: Starten Sie einen AEM-Workflow für ausgewählte Inhaltsfragmente.
 
-Informationen zum Aktivieren dieser Erweiterungen finden [ in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+Weitere Informationen zum Aktivieren dieser Erweiterungen [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 ## Erweitern der Benutzeroberfläche {#extending-ui}
 
-Die Benutzeroberflächenerweiterungen des universellen Editors sind JavaScript-Programme, die mit Adobe App Builder erstellt wurden. Mit denselben Tools können Sie auch eigene Schaltflächen und Aktionen zum Kopfzeilenmenü und zum Bedienfeld Eigenschaften hinzufügen sowie eigene Ereignisse für den universellen Editor erstellen.
+Die Benutzeroberflächenerweiterungen des universellen Editors sind JavaScript-Anwendungen, die mit Adobe App Builder erstellt wurden. Sie können dem Kopfzeilenmenü und dem Panel „Eigenschaften“ Ihre eigenen Schaltflächen und Aktionen hinzufügen und eigene Ereignisse für den universellen Editor erstellen.
 
-Wenn Sie die Möglichkeiten zum Erstellen Ihrer eigenen Erweiterungen erkunden möchten, lesen Sie die folgenden Ressourcen:
+Wenn Sie die Möglichkeiten zum Erstellen eigener Erweiterungen erkunden möchten, lesen Sie die folgenden Ressourcen:
 
 1. [Erweiterbarkeit der Benutzeroberfläche](https://developer.adobe.com/uix/docs/) – Dies ist die Entwicklerdokumentation für die Benutzeroberflächenerweiterung.
 1. [Anleitung für die Erweiterung der Benutzeroberfläche](https://developer.adobe.com/uix/docs/guides/) – Schritt-für-Schritt-Anleitung zur Entwicklung Ihrer eigenen Erweiterung
-1. [Die Erweiterungspunkte der universellen Editor-Benutzeroberfläche](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - Dokumentation zu universellen Editor-spezifischen Erweiterungspunkten
+1. [Erweiterungspunkte für die UI des universellen Editors](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) – Dokumentation zu den Erweiterungspunkten speziell für den universellen Editor
 
 >[!TIP]
 >
@@ -57,8 +57,8 @@ Mit dem [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/ex
 
 ## Erweiterungspunkte {#extension-points}
 
-Zusätzlich zur UI-Erweiterbarkeit bietet der universelle Editor viele weitere flexible Erweiterungspunkte, um die nahtlose Integration benutzerdefinierter Geschäftsanforderungen zu ermöglichen.
+Neben der UI-Erweiterbarkeit bietet der universelle Editor viele weitere flexible Erweiterungspunkte, um die nahtlose Integration benutzerdefinierter Geschäftsanforderungen zu ermöglichen.
 
 * **[Blöcke](https://www.aem.live/developer/block-collection)**: Im einfachen JSON-Format können Projekte die für die Inhaltserstellung verfügbaren Blöcke und Funktionen anpassen.
-* **[Benutzerdefinierte Benutzeroberfläche](#extending-ui)**: Erweiterungen können die erforderliche Benutzeroberfläche in Seitenbereichen oder modalen Dialogfeldern anzeigen.
-* **[Ereignisse](/help/implementing/universal-editor/events.md)**: Erweiterungen erhalten Ereignisse zu den Aktionen und Auswahlen des Autors auf der Seite, damit sie entsprechend reagieren.
+* **[Benutzerdefinierte Benutzeroberfläche](#extending-ui)**: Erweiterungen können die erforderliche Benutzeroberfläche in Seiten-Panels oder modalen Dialogfeldern anzeigen.
+* **[Ereignisse](/help/implementing/universal-editor/events.md)**: Erweiterungen empfangen Ereignisse zu den von Autorinnen oder Autoren auf der Seite verwendeten Aktionen und Auswahlen und reagieren entsprechend.

@@ -6,9 +6,9 @@ role: Developer, Architect
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
 source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Dies wird durch die Verwendung von Inhaltsfragmenten in Verbindung mit der AEM G
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
->* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
->* [AEM-Inhaltsfragmente arbeiten mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) zusammen, um strukturierte Inhalte für die Verwendung in Ihren Programmen bereitzustellen](/help/headless/graphql-api/content-fragments.md).
+>* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce-cloud/cif-storefront/integrating/magento.md).
+>* [AEM-Inhaltsfragmente verwenden die AEM-GraphQL-API (eine auf Standard-GraphQL basierende benutzerdefinierte Implementierung), um strukturierte Inhalte für die Verwendung in Ihren Anwendungen bereitzustellen](/help/headless/graphql-api/content-fragments.md).
 
 ## Headless-CMS {#headless-cms}
 

@@ -6,9 +6,9 @@ role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ Weitere Informationen finden Sie unter [Varianten generieren – in AEM-Editoren
 
 So löschen Sie eine Variante Ihres Inhaltsfragments:
 
-    >[ !HINWEIS]
+    >[!HINWEIS]
     >
     >Sie können die **Hauptversion** nicht löschen.
 
@@ -222,7 +222,7 @@ Für Felder mit **[mehrzeiligem Text](/help/sites-cloud/administering/content-fr
 * [Statistiken](#statistics-rich-text)
 * [Vergleichen und Synchronisieren](#compare-and-synchronize-rich-text)
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmenteditor – Mehrzeiliger Text – Umschalter im Vollbild](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
@@ -234,7 +234,7 @@ Zum Beispiel:
 
 Der Vollbild-Editor bietet dieselben Bearbeitungsoptionen wie im Textfluss, lässt jedoch mehr Platz für den Text.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmenteditor – Mehrzeiliger Text – Vollbild](assets/cf-authoring-multilinetext-fullscreen.png)
 
@@ -242,7 +242,7 @@ Zum Beispiel:
 
 Die Aktion **Statistik** zeigt eine Reihe von Informationen über den Text in einem mehrzeiligen Feld an.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmenteditor – Statistik](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -267,7 +267,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
@@ -356,7 +356,7 @@ Es gibt einige Einschränkungen beim Verweisen auf Remote-Assets:
 
    * Die einzelnen Asset-Metadaten: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * Abrufen von Massenmetadateninformationen mit der Such-API (experimentell): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
+   * Abrufen von Informationen zu Massenmetadaten mit der Such-API (experimentell): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
@@ -383,13 +383,13 @@ So fügen Sie Verweise zu AEM-Seiten, Experience Fragments oder anderen ähnlich
 
 Durch Auswahl des Link-Symbols in der oberen Symbolleiste wird eine Liste aller übergeordneten Verweise geöffnet.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmenteditor – Verweise anzeigen](assets/cf-authoring-show-references-link.png)
 
 Ein Fenster mit allen zugehörigen Verweisen wird geöffnet. Wählen Sie zum Öffnen eines Verweises den Namen, den Titel oder das Link-Symbol aus.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmenteditor – Verweise anzeigen](assets/cf-authoring-show-references.png)
 
@@ -416,7 +416,7 @@ Auf der Registerkarte „Eigenschaften“(rechter Bereich) können Sie auch Folg
 
 Wenn Sie die **Hauptvariante** ausgewählt haben, wird der Name des zugrunde liegenden Inhaltsfragmentmodells im Abschnitt „Eigenschaften“ angezeigt. Wenn Sie das Symbol „Link“ auswählen, wird das Modell auf einer separaten Registerkarte geöffnet.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmenteditor – Inhaltsfragmentmodell öffnen](assets/cf-authoring-open-model.png)
 
@@ -467,7 +467,7 @@ So stellen Sie eine bestimmte Version wieder her:
 
 Auf der Registerkarte **Spracheigenschaften** werden Details zu zugehörigen Sprachkopien angezeigt. Durch Auswahl eines Link-Symbols wird die Kopie auf einer separaten Registerkarte geöffnet.
 
-Zum Beispiel:
+Beispiel:
 
 ![Inhaltsfragmenteditor – Sprachkopie öffnen](assets/cf-authoring-open-language-copies.png)
 
@@ -543,7 +543,7 @@ Im Bereich **Felder** sind alle Felder im Inhaltsfragment aufgeführt. Das Symbo
    <td><p> <img src="assets/cf-authoring-number-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Boolesch</b></p> </td>
+   <td><p><b>Boolescher Wert</b></p> </td>
    <td><p> <img src="assets/cf-authoring-boolean-icon.png"> </p></td>
   </tr>
   <tr>

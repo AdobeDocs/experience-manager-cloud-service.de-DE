@@ -1,6 +1,6 @@
 ---
-title: Überprüfen und Aktivieren der Kernkomponenten für adaptive Forms in AEM Forms as a Cloud Service
-description: Erfahren Sie, wie Sie überprüfen können, ob Kernkomponenten für adaptive Forms aktiviert sind, und wie Sie sie bei Bedarf in AEM Forms as a Cloud Service aktivieren.
+title: Überprüfen und Aktivieren von Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service
+description: Erfahren Sie, wie Sie überprüfen können, ob Kernkomponenten für adaptive Formulare aktiviert sind, und wie Sie sie bei Bedarf in AEM Forms as a Cloud Service aktivieren.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
@@ -9,36 +9,36 @@ exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
 source-git-commit: 3c1931d67e69d155e777c8761fe2bbbd21461ddf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
-# Aktivieren der Kernkomponenten für adaptive Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Überprüfen und Aktivieren von Kernkomponenten für adaptive Formulare {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Kernkomponenten für adaptive Forms und Headless Adaptive Forms sind für die meisten Kunden von AEM Forms as a Cloud Service bereits aktiviert. Dadurch können Sie auf Kernkomponenten basierende adaptive Forms und Headless-Forms mithilfe Ihrer AEM Forms Cloud Service-Instanzen auf mehreren Kanälen erstellen, veröffentlichen und bereitstellen.
+Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare sind für die meisten Kundinnen und Kunden von AEM Forms as a Cloud Service bereits aktiviert. Dadurch können Sie auf Kernkomponenten basierende adaptive Formulare und Headless-Formulare mithilfe Ihrer AEM Forms Cloud Service-Instanzen auf mehreren Kanälen erstellen, veröffentlichen und bereitstellen.
 
-## Überprüfen, ob Kernkomponenten für adaptive Forms aktiviert sind {#check-if-enabled}
+## Überprüfen, ob Kernkomponenten für adaptive Formulare aktiviert sind {#check-if-enabled}
 
-Bevor Sie Aktivierungsschritte ausführen, überprüfen Sie, ob die Kernkomponenten der adaptiven Forms bereits für Ihre Umgebung aktiviert sind:
+Bevor Sie Aktivierungsschritte ausführen, überprüfen Sie, ob Kernkomponenten für adaptive Formulare bereits für Ihre Umgebung aktiviert sind:
 
 ### Für neue AEM Forms as a Cloud Service-Programme
 
-Wenn Sie ein neues AEM Forms as a Cloud Service-Programm erstellen, sind die Kernkomponenten von Adaptive Forms und Headless Adaptive Forms bereits für Ihre Umgebung aktiviert.
+Wenn Sie ein neues AEM Forms as a Cloud Service-Programm erstellen, sind Kernkomponenten für adaptive Formularen und adaptiven Headless-Formulare bereits für Ihre Umgebung aktiviert.
 
 ### Für bestehende Cloud Service-Umgebungen
 
-Wenn Ihre bestehende Cloud Service-Umgebung die Option [Erstellen einer auf Kernkomponenten basierenden adaptiven Forms](creating-adaptive-form-core-components.md) bereitstellt, sind die Kernkomponenten für adaptive Forms und die Headless-adaptive Forms bereits für Ihre Umgebung aktiviert.
+Wenn Ihre bestehende Cloud Service-Umgebung die Option zum [Erstellen von auf Kernkomponenten basierenden adaptiven Formularen](creating-adaptive-form-core-components.md) bereitstellt, sind Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare bereits für Ihre Umgebung aktiviert.
 
 ### Überprüfen des Repositorys
 
-So bestätigen Sie, dass die Kernkomponenten für adaptive Forms für Ihre Umgebung aktiviert sind:
+So finden Sie heraus, ob Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind:
 
 1. Klonen Sie Ihr AEM Forms as a Cloud Service-Repository.
 
@@ -55,19 +55,19 @@ So bestätigen Sie, dass die Kernkomponenten für adaptive Forms für Ihre Umgeb
 
    ![Suchen Sie das Artefakt „core-forms-components-af-core“ in „all/pom.xml“.](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
-   Wenn diese Abhängigkeiten vorhanden sind, werden die Kernkomponenten der adaptiven Forms für Ihre Umgebung aktiviert.
+   Wenn diese Abhängigkeiten vorhanden sind, sind Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert.
 
 ## Wenn eine manuelle Aktivierung erforderlich ist {#when-manual-enablement-needed}
 
-Nur wenn Sie ein älteres Forms as a Cloud Service-Programm haben, bei dem Kernkomponenten nicht aktiviert sind (bestätigt durch das Kontrollkästchen oben), müssen Sie die Abhängigkeiten von Adaptive Forms-Kernkomponenten manuell zu Ihrem AEM as a Cloud Service-Repository hinzufügen und das Repository in Ihren Cloud Service-Umgebungen bereitstellen.
+Nur wenn Sie über ein älteres Forms as a Cloud Service-Programm verfügen, in dem Kernkomponenten nicht aktiviert sind (bestätigt durch die obige Überprüfung), müssen Sie Ihrem AEM as a Cloud Service-Repository Abhängigkeiten von Kernkomponenten für adaptive Formulare manuell hinzufügen und das Repository in Ihren Cloud Service-Umgebungen bereitstellen.
 
 +++ Manuelle Aktivierungsschritte 
 
 >[!WARNING]
 >
->Führen Sie diese Schritte nur aus, wenn die obige Verifizierungsprüfung bestätigt, dass die Kernkomponenten von Adaptive Forms für Ihre Umgebung NICHT aktiviert sind.
+>Führen Sie diese Schritte nur aus, wenn die obige Verifizierungsprüfung bestätigt, dass Kernkomponenten für adaptive Formulare für Ihre Umgebung NICHT aktiviert sind.
 
-Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um Kernkomponenten von Adaptive Forms und Headless Adaptive Forms für eine AEM Forms as a Cloud Service-Umgebung zu aktivieren:
+Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare für eine AEM Forms as a Cloud Service-Umgebung zu aktivieren:
 
 ![Aktivieren der Kernkomponenten für adaptive Formulare und adaptive Headless-Formulare](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
@@ -370,14 +370,14 @@ Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert si
 * [Benutzerdefinierte Designs für Kernkomponenten-basierte adaptive Formulare erstellen](/help/forms/using-themes-in-core-components.md).
 * [JSON-Darstellungen für Kernkomponenten-basierte adaptive Formulare in Kanälen wie Mobilgeräten, Web- und nativen Apps und Diensten bereitstellen, für die die Headless-Darstellung eines Formulars erforderlich ist](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de).
 
-### Woher weiß ich, ob ich die Kernkomponenten für adaptive Forms manuell aktivieren muss? {#manual-enablement-needed-faq}
+### Woher weiß ich, ob ich Kernkomponenten für adaptive Formulare manuell aktivieren muss? {#manual-enablement-needed-faq}
 
-Bei den meisten Kunden sind die Kernkomponenten für adaptive Forms bereits aktiviert. Sie müssen sie nur manuell aktivieren, wenn:
+Bei den meisten Kundinnen und Kunden sind Kernkomponenten für adaptive Formulare bereits aktiviert. Sie müssen sie nur manuell aktivieren, wenn:
 
-1. Sie haben ein älteres Forms as a Cloud Service-Programm erstellt, bevor Kernkomponenten automatisch einbezogen wurden
-1. Die Verifizierung im Abschnitt [Überprüfen, ob Kernkomponenten der adaptiven Forms aktiviert sind](#check-if-enabled) bestätigt, dass die erforderlichen Abhängigkeiten im Repository fehlen
+1. Sie über ein Forms as a Cloud Service-Programm verfügen, dass erstellt wurde, bevor Kernkomponenten automatisch einbezogen wurden
+1. Die Verifizierung im Abschnitt [Überprüfen, ob Kernkomponenten für adaptive Formulare aktiviert sind](#check-if-enabled) bestätigt, dass die erforderlichen Abhängigkeiten im Repository fehlen
 
-Wenn Sie sich nicht sicher sind, befolgen Sie die Überprüfungsschritte im Abschnitt [Überprüfen, ob Kernkomponenten des adaptiven Forms aktiviert sind](#check-if-enabled) weiter oben.
+Wenn Sie sich nicht sicher sind, befolgen Sie die Verifizierungsschritte im obigen Abschnitt [Überprüfen, ob Kernkomponenten für adaptive Formulare aktiviert sind](#check-if-enabled).
 
 ### Warum können auf Kernkomponenten basierende Formulare nicht in einem Projekt gerendert werden?
 

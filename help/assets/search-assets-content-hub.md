@@ -4,15 +4,15 @@ description: Informationen zum Suchen nach Assets in [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Suchen nach Assets in [!DNL Content Hub] {#search-assets}
 
-Wenn Sie über eine große Anzahl von Assets in Ihrem Repository verfügen, kann die Suche nach dem richtigen Asset zeitaufwendig sein. Mit der Suche in [!DNL The Content Hub] können Sie nach den genehmigten Assets suchen, damit Sie zusätzliche Aktionen für sie ausführen können, z. B. Sammlungen herunterladen, freigeben oder erstellen. Sie können verschiedene Funktionen verwenden, um Ihre Suchergebnisse einzugrenzen, z. B. eine textbasierte Suche, die Verwendung von Filtern, die Ausführung von Tags oder eine für Smart-Tags spezifische Suche, die Suche nach einem bestimmten Dateiformat usw.
+Wenn Sie über eine große Anzahl von Assets in Ihrem Repository verfügen, kann die Suche nach dem richtigen Asset zeitaufwendig sein. Mit der Suche in [!DNL The Content Hub] können Sie nach den genehmigten Assets suchen, damit Sie zusätzliche Aktionen für sie ausführen können, z. B. Sammlungen herunterladen, freigeben oder erstellen. Sie können verschiedene Funktionen nutzen, um Ihre Suchergebnisse einzugrenzen, z. B. die textbasierte Suche, die Verwendung von Filtern, die Durchführung von Tag- oder Smart-Tag-spezifischen Suchen sowie die Suche nach einem bestimmten Dateiformat.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -150,22 +150,22 @@ Zu den Standardfiltern gehören „Dateiformat“, „Genehmigt von“, „Datum
 
 ## Massensuche {#bulk-search}
 
-Die Massensuche von Assets ermöglicht es Ihnen, mehrere Assets gleichzeitig zu suchen, indem Sie eine Liste von Kennungen (wie Namen, Dateiformate, Farben, Tags und mehr) eingeben. Anstatt nach Assets einzeln zu suchen, macht [!DNL Content Hub] Massensuche es schneller, die benötigten Assets zu finden. Mit dieser Funktion können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben - durch ein Trennzeichen getrennt (z. B. mehrere SKU-IDs) - und sofort alle übereinstimmenden Assets mit einer einzigen Suche abrufen.
+Die Massensuche von Assets ermöglicht es Ihnen, mehrere Assets gleichzeitig zu suchen, indem Sie eine Liste von Bezeichnern (wie Namen, Dateiformate, Farben, Tags und mehr) eingeben. Anstatt immer nur hach einem einzigen Asset zu suchen, können Sie mit der Massensuche von [!DNL Content Hub] schneller die benötigten Assets finden. Mit dieser Funktion können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben – durch ein Trennzeichen getrennt (z. B. mehrere SKU-IDs) – und sofort alle übereinstimmenden Assets mit einem einzigen Suchvorgang abrufen.
 
 Um nach mehreren Assets gleichzeitig zu suchen, geben Sie mehrere Werte in eine einzelne Abfrage ein, indem Sie sie durch Trennzeichen ` [ , | \t | \r | \n | \r\n ]` trennen. Je nach Anwendungsfall können Sie auch weitere Trennzeichen hinzufügen. Siehe [Konfigurieren der Massensuche](configure-content-hub-ui-options.md#bulk-search-configuration).
 
-Um die Massensuche in der [!DNL Content Hub] durchzuführen, führen Sie die folgenden Schritte aus:
+Um die Massensuche in [!DNL Content Hub] durchzuführen, gehen Sie wie folgt vor:
 
-1. Sobald die Massensuche [konfiguriert](configure-content-hub-ui-options.md#bulk-search-configuration) ist, kann der Umschalter für die Massensuche in den [!DNL Content Hub] Filtereigenschaften angezeigt werden, die Sie konfiguriert haben. Sie können sie je nach Anforderung aktivieren oder deaktivieren.
+1. Sobald die Massensuche [konfiguriert](configure-content-hub-ui-options.md#bulk-search-configuration) ist, wird in den von Ihnen konfigurierten [!DNL Content Hub]-Filtereigenschaften der Umschalter für die Massensuche angezeigt. Sie können ihn nach Bedarf aktivieren oder deaktivieren.
 
-1. Fügen Sie eine Suchanfrage hinzu, die Trennzeichen enthält, die in der Konfiguration angegeben sind. Die Suchanfrage sollte eine Zeichenfolge zusammen mit mehreren kommagetrennten Werten enthalten.
+1. Fügen Sie eine Suchanfrage mit Trennzeichen hinzu, die in der Konfiguration angegeben sind. Die Suchanfrage sollte eine Zeichenfolge und mehrere kommagetrennte Werte enthalten.
 
-![Benutzeroberfläche für die Massensuche](assets/bulk-search-ui.png)
+![UI der Massensuche](assets/bulk-search-ui.png)
 
 ## Weitere Aktionen bei der Suche {#do-more-with-search}
 
 [!DNL The Content Hub] ist nicht auf die Suche beschränkt, sondern Sie können direkt über die Benutzeroberfläche der Suche oder der Vorschau auch zusätzliche Aktionen ausführen, wie z. B. [Herunterladen](download-assets-content-hub.md), [Freigeben](share-assets-content-hub.md) und [Assets zur Sammlung hinzufügen](collections-content-hub.md). Wählen Sie die Assets auf der Seite mit den Suchergebnissen aus, um diese Optionen anzuzeigen.
 
-Weitere Informationen zum [ von Assets in der  [!DNL Content Hub]](configure-content-hub-ui-options.md).
+Erfahren Sie mehr über das [Konfigurieren von Assets in  [!DNL Content Hub]](configure-content-hub-ui-options.md).
 
 

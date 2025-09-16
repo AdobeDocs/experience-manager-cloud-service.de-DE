@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1653'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -266,5 +266,5 @@ Durch Auswählen der Seite in der [**Spaltenansicht**](/help/sites-cloud/authori
 
 ## KI-Assistent in AEM
 
-Für Kunden, [ die erforderlichen Kriterien erfüllt haben](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Für Kundinnen und Kunden, die die [Voraussetzungen erfüllen](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 

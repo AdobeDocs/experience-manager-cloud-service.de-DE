@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Es gibt vier Arten von [Umgebungen](/help/implementing/cloud-manager/manage-envi
 
 * Staging-Umgebung:
 
-   * Eine Staging-Umgebung ist in der Regel mit einer Produktionsumgebung in einer 1::1-Beziehung verknüpft.
+   * Eine Staging-Umgebung ist in der Regel in einer 1:1-Beziehung an eine Produktionsumgebung gekoppelt.
    * Die Staging-Umgebung ist in erster Linie für automatisierte Tests ausgelegt, bevor Änderungen an der Anwendung in die Produktionsumgebung übertragen werden.
       * Dies ist unabhängig von den Änderungen, die entweder von Adobe im Rahmen eines Wartungsupdates oder von Ihren Code-Bereitstellungen initiiert werden.
       * Im Falle einer Code-Bereitstellung können Sie auch manuelle Tests durchführen.

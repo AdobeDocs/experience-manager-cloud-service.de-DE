@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, bas
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-custom-domain-name-settings}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -95,21 +95,21 @@ Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ei
 >Bei von Adobe verwalteten CDNs sind bei Verwendung von DV(Domain Validation)-Zertifikaten nur Sites mit ACME-Validierung zulässig.
 
 
-## DNS konfigurieren{#config-dns}
+## Konfigurieren des DNS{#config-dns}
 
 >[!WARNING]
 >
->Hier gilt der Grundsatz „Registrieren vor der Werbung“. Das heißt, die Konfiguration des DNS sollte nur *werden, nachdem* die Domain-Zuordnung erfolgreich hinzugefügt haben. Dadurch wird sichergestellt, dass Cloud Manager erkennt und überprüft, ob die Domain in seiner eigenen Konfiguration vorhanden ist, bevor es auf Anfragen reagieren kann. Außerdem werden dadurch Domainübernahmeversuche vermieden.
+>Hier gilt der Grundsatz „Registrierung vor Handlung“. Das heißt, die Konfiguration des DNS sollte erst ausgeführt werden, *nachdem* Sie die Domain-Zuordnung erfolgreich hinzugefügt haben. Dadurch wird sichergestellt, dass Cloud Manager erkennt und überprüft, ob die Domain in seiner eigenen Konfiguration vorhanden ist, bevor er auf Anfragen reagieren kann. Außerdem werden dadurch Domain-Übernahmeversuche vermieden.
 
-Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen *bevor* dass Sie Ihre DNS-Einträge konfigurieren:
+Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, *bevor* Sie Ihre DNS-Einträge konfigurieren:
 
 * Identifizieren Sie Ihren Domain-Host oder Ihre Registrierungsstelle, falls Sie sie noch nicht kennen.
 * Sie müssen in der Lage sein, die DNS-Einträge für die Domain Ihres Unternehmens zu ändern, oder sich andernfalls an eine entsprechende Person wenden, die dies kann.
-* Sie haben den konfigurierten benutzerdefinierten Domain-Namen bereits überprüft, wie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) beschrieben.
+* Sie müssen Ihren konfigurierten, benutzerdefinierten Domain-Namen bereits überprüft haben, wie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) beschrieben.
 
 ### CNAME-Eintrag {#adobe-managed-cert-cname-record}
 
-Ein kanonischer Name oder CNAME-Eintrag ist eine Art von DNS-Eintrag, der einen Aliasnamen einem wahren oder kanonischen Domain-Namen zuordnet. CNAME-Datensätze werden normalerweise dazu verwendet, eine Unter-Domain wie `www.example.com` der Domain zuzuordnen, in der der Inhalt dieser Unter-Domain gehostet wird.
+Ein kanonischer Name oder CNAME-Eintrag ist eine Art von DNS-Eintrag, der einen Aliasnamen einem wahren oder kanonischen Domain-Namen zuordnet. CNAME-Einträge werden normalerweise dazu verwendet, eine Unter-Domain wie `www.example.com` der Domain zuzuordnen, in der der Inhalt dieser Unter-Domain gehostet wird.
 
 Melden Sie sich bei Ihrem DNS-Dienstleister an und erstellen Sie einen `CNAME`-Eintrag, um Ihren benutzerdefinierten Domain-Namen auf das Ziel verweisen zu lassen, wie in der folgenden Tabelle dargestellt.
 

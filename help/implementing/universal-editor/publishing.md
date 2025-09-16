@@ -1,45 +1,45 @@
 ---
-title: Wie der universelle Editor Inhalte veröffentlicht
-description: Erfahren Sie, wie der universelle Editor seine Inhalte veröffentlicht, wie er sich vom Prozess in der Sites-Konsole unterscheidet und Überlegungen bei der Entwicklung eigener Apps, mit denen er arbeiten kann.
+title: Inhaltsveröffentlichung durch den universellen Editor
+description: Erfahren Sie, wie der universelle Editor seine Inhalte veröffentlicht, wie sich das Verfahren von dem der Sites-Konsole unterscheidet und was Sie berücksichtigen müssen, wenn Sie eigene Apps entwickeln, die Sie im universellen Editor bearbeiten möchten.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
-workflow-type: tm+mt
+exl-id: 60f0bb4a-ee60-4f73-83ae-8568735474ad
+source-git-commit: b967a09df7c2e0f5094a6836fcf5311008081dc0
+workflow-type: ht
 source-wordcount: '564'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
+# Inhaltsveröffentlichung durch den universellen Editor {#publishing}
 
-# Wie der universelle Editor Inhalte veröffentlicht {#publishing}
-
-Erfahren Sie, wie der universelle Editor seine Inhalte veröffentlicht, wie er sich vom Prozess in der Sites-Konsole unterscheidet und Überlegungen bei der Entwicklung eigener Apps, mit denen er arbeiten kann.
+Erfahren Sie, wie der universelle Editor seine Inhalte veröffentlicht, wie sich das Verfahren von dem der Sites-Konsole unterscheidet und was Sie berücksichtigen müssen, wenn Sie eigene Apps entwickeln, die Sie im universellen Editor bearbeiten möchten.
 
 >[!TIP]
 >
->Dieser Artikel behandelt Details zum Veröffentlichungsprozess des universellen Editors für Entwickler. Für Inhaltsautorinnen und -autoren [der Prozess der Veröffentlichung Ihrer Inhalte wird hier beschrieben.](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>Dieser Artikel behandelt Details für Entwicklerinnen und Entwickler zum Veröffentlichungsprozess des universellen Editors. Für Inhaltsautorinnen und -autoren [wird der Prozess der Veröffentlichung von Inhalten hier beschrieben](/help/sites-cloud/authoring/universal-editor/publishing.md).
 
 ## Ähnlichkeiten mit dem Prozess der Sites-Konsole {#similarities}
 
-Für Benutzer des [AEM-Seiteneditors](/help/sites-cloud/authoring/page-editor/introduction.md) und der [Sites-Konsole funktioniert ](/help/sites-cloud/authoring/sites-console/introduction.md) Prozess zum Veröffentlichen von Inhalten mit dem universellen Editor wie gewohnt: Bei der Veröffentlichung in AEM wird der Inhalt vom Autoren-Service zum Veröffentlichungs-Service (oder [zum Vorschau-Service) repliziert, ](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar und abhängig von den Optionen, die der Autor beim Veröffentlichen auswählt.
+Für Benutzerinnen und Benutzer des [AEM-Seiteneditors](/help/sites-cloud/authoring/page-editor/introduction.md) und der [Sites-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md) funktioniert der Prozess zum Veröffentlichen von Inhalten mit dem universellen Editor wie gewohnt: Bei der Veröffentlichung in AEM wird der Inhalt vom Autoren-Dienst an den Veröffentlichungsdienst (oder den [Vorschaudienst](/help/sites-cloud/authoring/sites-console/previewing-content.md)) repliziert, je nachdem, welche Optionen, die Autorin oder der Autor beim Veröffentlichen auswählt.
 
 ## Unterschiede {#differences}
 
 Was die Veröffentlichung mit dem universellen Editor geringfügig unterscheidet, ist nicht so sehr der Editor selbst, sondern vielmehr das externe Hosten der App, was durch den universellen Editor möglich gemacht wird.
 
-Wenn die Web-App extern gehostet wird, muss sichergestellt werden, dass Inhalte vom Autoren-Service geladen werden, wenn die App von Autoren im Editor geöffnet wird, und dass sie vom Veröffentlichungs-Service geladen werden, wenn Besuchende auf die App zugreifen.
+Wenn die Web-App extern gehostet wird, muss sichergestellt werden, dass Inhalte vom Autorendienst geladen werden, wenn die App von Autorinnen oder Autoren im Editor geöffnet wird, und dass sie vom Veröffentlichungsdienst geladen werden, wenn Besuchende auf die App zugreifen.
 
-## Erkennen des Service in der App {#detecting}
+## Erkennen des Dienstes in der App {#detecting}
 
-Um zu bestimmen, ob auf den Autoren- oder Veröffentlichungs-Service zugegriffen werden soll, können Sie durch eine einfache bedingte Anweisung in der App festlegen, dass der entsprechende Autoren- oder Veröffentlichungs-Endpunkt ausgewählt wird, wenn festgestellt wird, dass er im Editor geöffnet wird.
+Um zu ermitteln, ob auf den Autoren- oder Veröffentlichungsdienst zugegriffen werden soll, können Sie durch eine einfache bedingte Anweisung in der App festlegen, dass der entsprechende Autoren- oder Veröffentlichungsendpunkt ausgewählt wird, wenn festgestellt wird, dass der Endpunkt im Editor geöffnet wird.
 
-Eine weitere Option besteht darin, die App in zwei verschiedenen Umgebungen bereitzustellen, die unterschiedlich konfiguriert sind, sodass eine Umgebung ihren Inhalt vom Autoren-Service und die andere Umgebung ihn vom Veröffentlichungs-Service abruft. Damit Autorinnen und Autoren die veröffentlichte URL im universellen Editor öffnen können, kann ein kleines Skript erstellt werden, um die URL auf der Veröffentlichungsseite in die entsprechende URL in der Autorenumgebung zu „konvertieren“ (z. B. durch Voranstellen einer `author`-Sub-Domain), sodass die Autorinnen und Autoren automatisch umgeleitet werden.
+Eine andere Möglichkeit besteht darin, die App in zwei verschiedenen Umgebungen bereitzustellen, die unterschiedlich konfiguriert sind, sodass eine Umgebung ihren Inhalt vom Autorendienst und die andere Umgebung ihn vom Veröffentlichungsdienst abruft. Damit Autorinnen und Autoren die veröffentlichte URL im universellen Editor öffnen können, kann ein kleines Skript erstellt werden, um die URL auf der Veröffentlichungsseite in die entsprechende URL in der Autorenumgebung zu „konvertieren“ (z. B. durch Voranstellen einer `author`-Sub-Domain), sodass die Autorinnen und Autoren automatisch umgeleitet werden.
 
 ## Zusammenfassung {#summary}
 
 Ziel des universellen Editors ist es, kein bestimmtes Muster vorzuschreiben, damit die Implementierung ihre Ziele am besten vollständig entkoppelt erreichen kann und dabei alles für die Implementierung einfach und unkompliziert bleibt.
 
-Ebenso stellt der universelle Editor keine Anforderungen daran, wie ein bestimmtes Projekt die Bestimmung durchführt, von welchem Service die Inhalte bereitgestellt werden sollen. Stattdessen bietet er verschiedene Möglichkeiten und ermöglicht es dem Projekt, zu bestimmen, welche Lösung für seine eigenen Anforderungen am besten geeignet ist.
+Gleichermaßen stellt der universelle Editor keine Anforderungen daran, wie ein bestimmtes Projekt die Bestimmung des Dienstes durchführt, von der der Inhalt bereitgestellt werden soll. Stattdessen bietet er verschiedene Möglichkeiten und ermöglicht es dem Projekt, zu bestimmen, welche Lösung für seine eigenen Anforderungen am besten geeignet ist.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

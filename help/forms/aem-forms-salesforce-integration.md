@@ -1,25 +1,25 @@
 ---
 title: Integration von Salesforce mithilfe des OAuth 2.0-Client-Anmeldedatenflusses mit AEM Forms?
-description: Erfahren Sie, wie Sie Salesforce mithilfe des OAuth 2.0-Flusses für Client-Anmeldeinformationen mit AEM Forms integrieren. Es werden Schritte für die Integration von AEM Forms Salesforce angezeigt.
+description: Erfahren Sie, wie Sie Salesforce mithilfe des OAuth 2.0-Client-Anmeldedatenflusses mit AEM Forms integrieren. Es werden Schritte für die Integration von AEM Forms Salesforce angezeigt.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration, AEM Forms Salesforce integration
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# Integrieren eines adaptiven Formulars in Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integrieren eines adaptiven Formulars mit Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Die Integration von Adobe Experience Manager (AEM) Forms mit Salesforce ermöglicht es Unternehmen, Prozesse zu optimieren, indem sie ihre Funktionen zur Formularerstellung und -verwaltung mit der Salesforce-Plattform verbinden. Die Verbindung eines adaptiven Formulars mit Salesforce ermöglicht den nahtlosen Datenaustausch zwischen den beiden Plattformen. Wenn Benutzer Formulare senden, werden die Daten automatisch mit Salesforce synchronisiert. Dadurch wird sichergestellt, dass alle Kundeninformationen innerhalb des Systems aktuell und zentralisiert sind.
+Die Integration von Adobe Experience Manager (AEM) Forms mit Salesforce ermöglicht es Unternehmen, Prozesse zu optimieren, indem sie ihre Funktionen zur Formularerstellung und -verwaltung mit der Salesforce-Plattform verbinden. Die Verbindung eines adaptiven Formulars mit Salesforce ermöglicht den nahtlosen Datenaustausch zwischen den beiden Plattformen. Wenn Benutzerinnen und Benutzer Formulare senden, werden die Daten automatisch mit Salesforce synchronisiert. Dadurch wird sichergestellt, dass alle Kundeninformationen innerhalb des Systems aktuell und zentralisiert sind.
 
 Sie können OAuth 2.0-Client-Anmeldeinformationen verwenden, um AEM Forms in die Salesforce-Anwendung zu integrieren. OAuth 2.0-Client-Anmeldeinformationen sind eine standardmäßige und sichere Methode für die direkte Kommunikation ohne Benutzerbeteiligung.
 
@@ -38,7 +38,7 @@ Die Verwendung von OAuth 2.0-Client-Anmeldeinformationen für die Authentifizie
 
 Tun Sie Folgendes, bevor Sie die Kommunikation zwischen einer Salesforce-Anwendung und einer AEM-Umgebung einrichten:
 
-* Erstellen Sie eine [mit Salesforce verbundene App mit OAuth 2.0 Client Credential Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) sowie eine reine API-Benutzerin bzw. einen reinen API-Benutzer für Ihre Organisation und rufen Sie Consumer Key und Consumer Secret für die App ab.
+* Erstellen Sie eine [mit Salesforce verbundene App mit OAuth 2.0 Client Credential Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) sowie eine reine API-Benutzerin bzw. einen reinen API-Benutzer für Ihre Organisation und rufen Sie Consumer Key und Consumer Secret für die App ab.
 
 * Stellen Sie sicher, dass Ihre Swagger-Datei entsprechend den APIs Ihrer Organisation konfiguriert ist. Sie können auch eine [Swagger-Datei komplett neu erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=de), die auf die Nutzung in Ihrer AEM-Umgebung zugeschnitten ist.
 
@@ -74,7 +74,7 @@ Führen Sie zum Verbinden des adaptiven Formulars mit der Salesforce-Anwendung m
 1. Wenn die Verbindung erfolgreich hergestellt wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
 
-Nach dem Konfigurieren des Salesforce-Programms können Sie die Konfiguration beim Erstellen des Formulardatenmodells (FDM) verwenden. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells (FDM)](create-form-data-models.md). [Konfigurieren Sie die Formulardatenmodell-Übermittlungsaktion](/help/forms/using-form-data-model.md) für ein adaptives Formular, um Daten an Salesforce-Anwendungen zu senden.
+Nachdem Sie die Salesforce-Anwendung konfiguriert haben, können Sie die Konfiguration beim Erstellen von Formulardatenmodellen verwenden. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells (FDM)](create-form-data-models.md). [Konfigurieren Sie die Formulardatenmodell-Übermittlungsaktion](/help/forms/using-form-data-model.md) für ein adaptives Formular, um Daten an Salesforce-Anwendungen zu senden.
 
 Weitere Informationen zur Erstellung und Verwendung eines Formulardatenmodells (FDM) in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).
 

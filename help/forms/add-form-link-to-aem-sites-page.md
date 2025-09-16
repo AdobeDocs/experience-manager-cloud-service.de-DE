@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
 source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '536'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Im Szenario mit der Website einer Bank verbessert die Formularportal-Komponente�
 
 ## Voraussetzung
 
-Bevor Sie die verschiedenen Funktionen einer Formularportal-Komponente erkunden, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
+Bevor Sie die verschiedenen Funktionen einer Formularportal-Komponente erkunden, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
 Nach der Bereitstellung der neuesten Kernkomponenten in Ihrer Umgebung können Sie auf die Formularportal-Komponenten in Ihrer Authoring-Umgebung zugreifen.
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -98,17 +98,17 @@ Senden Sie Formulardaten zur komplexen Verarbeitung direkt an Ihre AEM as a Clou
 
 ### Konfigurationsanforderungen
 
-#### &#x200B;1. Aktualisieren der AEM-Instanz-URL in Edge Delivery
+#### &#x200B;1. Aktualisieren der URL der AEM-Instanz in Edge Delivery
 
-Aktualisieren Sie die URL der AEM Cloud Service-Instanz in der `constant.js`-Datei im `form` unter `submitBaseUrl`. Sie können die URL basierend auf Ihrer Umgebung konfigurieren:
+Aktualisieren Sie die URL der AEM Cloud Service-Instanz in der `constant.js`-Datei im `form`-Block unter `submitBaseUrl`. Sie können die URL basierend auf Ihrer Umgebung konfigurieren:
 
-**Für Cloud Service-Instanz**
+**Für eine Cloud Service-Instanz**
 
 ```js
 export const submitBaseUrl = '<aem-publish-instance-URL>';
 ```
 
-**Für lokale Entwicklung**
+**Für die lokale Entwicklung**
 
 ```js
 export const submitBaseUrl = 'http://localhost:<port-number>';
@@ -148,9 +148,9 @@ Konfigurieren Sie den Referrer-Filter, um Ihre spezifischen Edge Delivery-Site-D
    }
    ```
 
-3. Bereitstellen der Konfiguration über Cloud Manager
+3. Stellen Sie die Konfiguration über Cloud Manager bereit
 
-Weitere Informationen zur Konfiguration des OSGi-Referrer-Filters finden Sie im [Referrer-Filter](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)Handbuch.
+Weitere Informationen zur Konfiguration des OSGi-Referrer-Filters finden Sie im Handbuch zu [Referrer-Filtern](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
 
 #### &#x200B;3. CORS-Probleme (Cross-Origin Resource Sharing)
 
@@ -162,14 +162,14 @@ Konfigurieren Sie CORS-Einstellungen in AEM, um Anfragen von Ihren spezifischen 
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 ```
 
-**Edge Delivery Sites - Jede Site-Domain einzeln hinzufügen**
+**Edge Delivery Sites: Einzelnes Hinzufügen jede Site-Domain**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 ```
 
-**Ältere Franklin-Domains (falls noch in Verwendung)**
+**Veraltete Franklin-Domains (falls noch in Verwendung)**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  

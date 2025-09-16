@@ -1,24 +1,24 @@
 ---
 title: Erstellen und Veröffentlichen von adaptiven Formularen mit Edge Delivery Services
-description: Schrittweise Anweisungen zum Erstellen, Verfassen und Veröffentlichen von adaptivem Forms mithilfe von Edge Delivery Services-Vorlagen in AEM, mit Schwerpunkt auf technischer Genauigkeit und Klarheit.
-keywords: Adaptive Formulare, Edge-Bereitstellungsdienste, universeller Editor, Formularerstellung, AEM Forms, Formularveröffentlichung
+description: Schrittweise Anleitungen zum Erstellen, Verfassen und Veröffentlichen adaptiver Formulare mit Edge Delivery Services-Vorlagen in AEM, wobei der Schwerpunkt auf technischer Genauigkeit und Klarheit liegt.
+keywords: adaptive Formulare, Edge Delivery Services, universeller Editor, Formularerstellung, AEM Forms, Formularveröffentlichung
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # Erstellen und Veröffentlichen von adaptiven Formularen mit Edge Delivery Services
 
-Dieses Dokument enthält schrittweise Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von adaptivem Forms mithilfe von Edge Delivery Services-Vorlagen in AEM. Sie umfasst den gesamten Workflow von der Formularerstellung bis zur Produktionsbereitstellung.
+Dieses Dokument enthält schrittweise Anweisungen zum Erstellen, Konfigurieren und Veröffentlichen von adaptiven Formularen mithilfe von Edge Delivery Services-Vorlagen in AEM. Es umfasst den gesamten Workflow von der Erstellung von Formularen bis zur Bereitstellung in der Produktion.
 
-Am Ende dieses Handbuchs werden Sie Folgendes gelernt haben:
+Am Ende dieses Handbuchs haben Sie Folgendes gelernt:
 
 - Erstellen von Formularen mit Edge Delivery Services-Vorlagen
 - Erstellen von Formularen mit dem universellen Editor
@@ -50,14 +50,14 @@ Stellen Sie sicher, dass folgende Voraussetzungen erfüllt sind, bevor Sie fortf
 
 Der Prozess umfasst drei Hauptphasen:
 
-- **Phase 1:** [Formularerstellung](#step-1-form-creation)
+- **Phase 1:** [Formulareinrichtung](#step-1-form-creation)
 - **Phase 2:** [Formularerstellung und -gestaltung](#step-2-form-authoring-and-design)
 - **Phase 3:** [Konfiguration und Veröffentlichung](#step-3-configuration-and-publishing)
 
 Jede Phase umfasst Validierungsschritte zur Bestätigung der korrekten Einrichtung.
 
 
-### Schritt 1: Formularerstellung
+### Schritt 1: Formulareinrichtung
 
 1. **Aufrufen der Formulareinrichtung**
    - Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Autoreninstanz an.
@@ -132,7 +132,7 @@ Jede Phase umfasst Validierungsschritte zur Bestätigung der korrekten Einrichtu
 
 ### Schritt 3: Konfiguration und Veröffentlichung
 
-Konfigurieren Sie Edge Delivery Services und veröffentlichen Sie Ihr Formular.
+Konfigurieren Sie Edge Delivery Services und veröffentlichen Sie Ihr Formular. 
 
 **Konfiguration:** automatisch (kein manuelles Setup erforderlich).
 
@@ -233,7 +233,7 @@ Im Folgenden finden Sie häufige Probleme und Lösungen für AEM Forms mit Edge 
 
 +++
 
-+++Veröffentlichungsprobleme
++++Probleme bei der Veröffentlichung
 
 **Problem** Änderungen werden nicht auf der Live-Site angezeigt.
 
@@ -291,7 +291,7 @@ Wenn die Probleme bestehen bleiben:
 
 1. Überprüfen Sie den Dienststatus von Adobe Experience Cloud.
 2. Lesen Sie die [Dokumentation zu Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=de).
-3. Besuchen Sie die [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/?profile.language=de).
+3. Besuchen Sie die [Adobe Experience League-Community](https://experienceleaguecommunities.adobe.com/).
 4. Wenden Sie sich an die Adobe-Kundenunterstützung.
 
 +++

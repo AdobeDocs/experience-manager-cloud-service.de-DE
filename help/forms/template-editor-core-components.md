@@ -6,9 +6,9 @@ Keywords: create adaptive form template, create adaptive form template based on 
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
 source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1951'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Voraussetzung
 
-**Aktivieren der Kernkomponenten von Adaptive Forms für Ihre Umgebung**: Wenn Sie ein Programm erstellen, sind die Kernkomponenten von Adaptive Forms bereits für Ihre Umgebung aktiviert. Installieren Sie die neueste Version, um Kernkomponenten von Adaptive Forms für Ihre AEM Cloud Service-Umgebung zu aktivieren.
+**Aktivieren der Kernkomponenten für adaptive Formulare für Ihre Umgebung**: Wenn Sie ein Programm erstellen, sind die Kernkomponenten für adaptive Formulare bereits für Ihre Umgebung aktiviert. Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
 >[!NOTE]
 >

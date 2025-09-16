@@ -5,9 +5,9 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Ein Feldobjekt hat die folgende Typdefinition.
 
 ### Feld „Name“ und Verschachtelung {#nesting}
 
-Das Feld `name` kann direkt auf eine Eigenschaft der aktuellen Ressource verweisen oder im Falle von Komponenten in `cq:Pages` auch einen Pfad zu einer verschachtelten Eigenschaft verwenden. Zum Beispiel:
+Das Feld `name` kann direkt auf eine Eigenschaft der aktuellen Ressource verweisen oder im Falle von Komponenten in `cq:Pages` auch einen Pfad zu einer verschachtelten Eigenschaft verwenden. Beispiel:
 
 ```json
 "name": "teaser/image/fileReference"
@@ -204,7 +204,7 @@ Ein AEM-Inhaltskomponententyp aktiviert eine AEM-Inhaltsauswahl, die zum Auswäh
 
 >[!ENDTABS]
 
-#### Boolesch {#boolean}
+#### Boolescher Wert {#boolean}
 
 Ein boolescher Komponententyp speichert einen einfachen true/false-Wert, der als Umschalter gerendert wird.  Sie bietet einen zusätzlichen Validierungstyp.
 

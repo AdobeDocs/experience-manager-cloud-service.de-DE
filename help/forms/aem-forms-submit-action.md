@@ -1,31 +1,31 @@
 ---
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular?
+title: Wie konfiguriere ich eine Übermittlungsaktion für ein adaptives Formular?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 558e26c6ad1c825498442ef3915fdcdd89ee9039
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
+# Von adaptiven Formularen unterstützte Übermittlungsaktionen
 
-# Von Adaptive Forms unterstützte Übermittlungsaktionen
+Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. Sie bieten eine intuitive Benutzeroberfläche und eine Vielzahl vorkonfigurierter Komponenten zur effizienten Erstellung und Verwaltung von Formularen. Sie können verschiedene Übermittlungsaktionen konfigurieren, um Formulardaten an Services wie OneDrive, SharePoint, Workfront Fusion und mehr zu senden.
 
-Adaptive Formulare bieten Ihnen die Möglichkeit, interaktive, responsive und dynamische adaptive Formulare zu erstellen. Sie bieten eine intuitive Benutzeroberfläche und eine Reihe vordefinierter Komponenten zum effizienten Entwerfen und Verwalten von Formularen. Sie können verschiedene Übermittlungsaktionen konfigurieren, um Formulardaten an Services wie OneDrive, SharePoint, Workfront Fusion und mehr zu senden.
+Eine Übermittlungsaktion wird ausgelöst, wenn Benutzende in einem adaptiven Formular auf die Schaltfläche **[!UICONTROL Senden]** klicken. Forms as a Cloud Service stellt mehrere vorkonfigurierte Übermittlungsaktionen bereit. Diese integrierten Übermittlungsaktionen ermöglichen Ihnen Folgendes:
 
-Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf **[!UICONTROL Schaltfläche]** Senden“ klickt. Forms as a Cloud Service bietet mehrere vorkonfigurierte Übermittlungsaktionen. Die integrierten Übermittlungsaktionen bieten folgende Möglichkeiten:
-
-* Müheloses Senden von Formulardaten per E-Mail
+* Müheloses Senden von Formulardaten per E-Mail.
 * Starten von Microsoft® Power Automate-Abläufen oder AEM-Workflows beim Senden der Daten.
 * Sie können die Formulardaten direkt an Microsoft® SharePoint Server, Microsoft® Azure Blob Storage oder Microsoft® OneDrive übertragen.
 * Nahtloses Senden von Daten an eine konfigurierte Datenquelle mit dem Formulardatenmodell (FDM).
 * Bequemes Senden von Daten an einen REST-Endpunkt.
 
-## Von Adaptive Forms unterstützte Übermittlungsaktionen
+## Von adaptiven Formularen unterstützte Übermittlungsaktionen
 
-AEM Forms bietet die folgenden Übermittlungsaktionen für den sofortigen Einsatz:
+AEM Forms bietet die folgenden vorkonfigurierten Übermittlungsaktionen:
 
 * [E-Mail senden](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate-Fluss aufrufen](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -37,8 +37,8 @@ AEM Forms bietet die folgenden Übermittlungsaktionen für den sofortigen Einsat
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
 * [Aufrufen eines AEM-Workflows](/help/forms/configure-submit-action-workflow.md)
 * [An Marketo Engage senden](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [An Adobe Experience Platform (AEP) übermitteln](/help/forms/aem-forms-aep-connector.md)
-* [An Arbeitsblatt übermitteln](/help/forms/forms-submission-service.md)
+* [An Adobe Experience Platform (AEP) senden](/help/forms/aem-forms-aep-connector.md)
+* [An Tabelle senden](/help/forms/forms-submission-service.md)
 
 Sie können ein adaptives Formular auch an andere Speicherkonfigurationen senden:
 
@@ -47,22 +47,22 @@ Sie können ein adaptives Formular auch an andere Speicherkonfigurationen senden
 
 ## Unterstützung von Übermittlungsaktionen für verschiedene Authoring-Typen
 
-Die nachstehende Tabelle zeigt, welche Übermittlungsaktionen basierend auf der in AEM Forms verwendeten Formularerstellungsmethode unterstützt werden:
+Die nachstehende Tabelle zeigt, welche Übermittlungsaktionen je nach der in AEM Forms verwendeten Formularerstellungsmethode unterstützt werden:
 
-| Sende-Aktion | [Foundation-Komponenten](/help/forms/configuring-submit-actions.md) | [Kernkomponenten](/help/forms/configure-submit-actions-core-components.md) | [Universeller Editor](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [Dokumentbasierte Forms](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
+| Sende-Aktion | [Foundation-Komponenten](/help/forms/configuring-submit-actions.md) | [Kernkomponenten](/help/forms/configure-submit-actions-core-components.md) | [Universeller Editor](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [Dokumentenbasierte Formulare](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
-| Senden einer E-Mail | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| Power Automate-Fluss | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| An SharePoint senden | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| Workfront Fusion | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| Senden mit FDM | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| An AEP senden | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| Azure Blob Storage | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| An REST-Endpunkt übermitteln | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| An Marketo Engage senden | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| An OneDrive senden | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| AEM-Workflow aufrufen | Unterstützte ✅ | Unterstützte ✅ | Unterstützte ✅ |                        |
-| An Arbeitsblatt übermitteln |                        |                  | Unterstützte ✅ | Unterstützte ✅ |
+| E-Mail senden | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| Power Automate-Fluss | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| An SharePoint senden | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| Workfront Fusion | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| Mit benutzerdefiniertem FDM senden | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| An AEP senden | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| Azure Blob Storage | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| An REST-Endpunkt senden | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| An Marketo Engage senden | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| An OneDrive senden | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| AEM-Workflow aufrufen | ✅ Unterstützt | ✅ Unterstützt | ✅ Unterstützt |                        |
+| An Tabelle senden |                        |                  | ✅ Unterstützt | ✅ Unterstützt |
 
 
 ## Server-seitige Überprüfung im adaptiven Formular
@@ -118,4 +118,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## Siehe auch
 
 {{af-submit-action}}
-

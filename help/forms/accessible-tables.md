@@ -10,15 +10,15 @@ exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Zugreifbare komplexe Tabellen in HTML5-Formularen erstellen {#create-accessible-complex-tables-in-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 Die Standardimplementierung von Tabellen in den HTML5-Formularen verwendet HTML DIV-Elemente, um eine neue Tabelle zu rendern. Das Rendern involviert die Verwendung von ARIA-Rollen, um den Anforderungen für den barrierefreien Zugriff gerecht zu werden.

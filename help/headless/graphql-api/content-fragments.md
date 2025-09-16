@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
 source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5984'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) as a Cloud Service verwendet:
 >
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen bereit.
@@ -51,7 +51,7 @@ GraphQL ist:
 
   Weitere Informationen finden Sie unter [GraphQL entdecken](https://www.graphql.com).
 
-* *„... eine Datenabfragesprache und -spezifikation, die 2012 intern von Facebook entwickelt wurde, bevor sie 2015 öffentlich als Open Source zur Verfügung gestellt wurde. Es bietet eine Alternative zu REST-basierten Architekturen mit dem Ziel, die Produktivität der Entwickler zu erhöhen und die Menge der übertragenen Daten zu minimieren. GraphQL wird von Hunderten von Unternehmen aller Größenordnungen in der Produktion eingesetzt ...“*
+* *„... eine Datenabfragesprache und -spezifikation, die 2012 intern von Facebook entwickelt wurde, bevor sie 2015 öffentlich als Open Source zur Verfügung gestellt wurde. Sie bietet eine Alternative zu REST-basierten Architekturen mit dem Ziel, die Produktivität von Entwickler-Teams zu erhöhen und das Volumen der übertragenen Daten zu minimieren. GraphQL wird von Hunderten von Unternehmen aller Größenordnungen in der Produktion eingesetzt ...“*
 
   Siehe [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -109,7 +109,7 @@ Mit GraphQL können Sie Abfragen für Folgendes durchführen:
 
 * Eine **[Liste von Einträgen](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM bietet Funktionen zum Konvertieren von Abfragen (beide Typen) in [Persistente Abfragen, die vom Dispatcher und ](/help/headless/graphql-api/persisted-queries.md) CDN zwischengespeichert werden können.
+AEM bietet Funktionen zum Konvertieren von Abfragen (beide Typen) in [persistente Abfragen, die vom Dispatcher und CDN zwischengespeichert werden können](/help/headless/graphql-api/persisted-queries.md).
 
 ### Best Practices für GraphQL-Abfragen (Dispatcher und CDN) {#graphql-query-best-practices}
 
@@ -257,7 +257,7 @@ GraphQL für AEM unterstützt eine Liste von Typen. Alle unterstützten Datentyp
 | Einzeilentext | `String`, `[String]` | Wird für einfache Zeichenfolgen wie Autorennamen, Ortsnamen usw. verwendet. |
 | Mehrzeilentext | `String`, `[String]` | Wird für die Ausgabe von Text verwendet, z. B. für den Textkörper eines Artikels |
 | Zahl | `Float`, `[Float]` | Wird für die Anzeige von Gleitkommazahlen und regulären Zahlen verwendet |
-| Boolesch | `Boolean` | Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
+| Boolescher Wert | `Boolean` | Wird für die Anzeige von Kontrollkästchen → einfachen Wahr/Falsch-Aussagen verwendet |
 | Datum und Uhrzeit | `Calendar` | Wird verwendet, um Datum und Uhrzeit in einem ISO 8601-Format anzuzeigen. Je nach ausgewähltem Typ gibt es drei Varianten, die in AEM-GraphQL verwendet werden können: `onlyDate`, `onlyTime`, `dateTime` |
 | Aufzählung | `String` | Wird verwendet, um eine Option aus einer Liste von Optionen anzuzeigen, die bei der Modellerstellung definiert wurde |
 | Tags | `[String]` | Wird verwendet, um eine Liste von Zeichenfolgen anzuzeigen, die in AEM verwendete Tags darstellen |
@@ -293,7 +293,7 @@ Der folgende Code zeigt die Pfade aller Inhaltsfragmente an, die auf der Grundla
 }
 ```
 
-Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zuerst dessen Pfad bestimmen. Zum Beispiel:
+Um ein einzelnes Inhaltsfragment eines bestimmten Typs abzurufen, müssen Sie zuerst dessen Pfad bestimmen. Beispiel:
 
 ```graphql
 {
@@ -375,7 +375,7 @@ Sie können alle GraphQL-Typen für Metadaten anzeigen, wenn Sie das generierte 
 >[!NOTE]
 >
 >**Unterschied zwischen normalen und Array-Metadaten**
->&#x200B;>Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
+>>Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
 >
 >Wenn Sie beispielsweise das Feld `stringMetadata` aufrufen, erhalten Sie ein Array aller im Repository gespeicherten Metadaten als `String` und wenn Sie `stringArrayMetadata` aufrufen, erhalten Sie ein Array aller Metadaten, die im Repository als `String[]` gespeichert wurden.
 
@@ -383,7 +383,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage für Metadaten – Liste
 
 #### Varianten {#variations}
 
-Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Zum Beispiel:
+Das Feld `_variations` wurde implementiert, um die Abfrage der Varianten eines Inhaltsfragments zu vereinfachen. Beispiel:
 
 ```graphql
 {
@@ -609,7 +609,7 @@ Die Sortierkriterien:
    * ASC (aufsteigend) oder DESC (absteigend); standardmäßig wird ASC angewendet
    * die Richtung kann pro Feld angegeben werden. Dies bedeutet, dass Sie ein Feld in aufsteigender Reihenfolge sortieren können, ein anderes in absteigender Reihenfolge (name, firstName DESC)
 
-Zum Beispiel:
+Beispiel:
 
 ```graphql
 query {
@@ -641,7 +641,7 @@ Sie können auch ein Feld innerhalb eines verschachtelten Fragments mithilfe des
 >
 >Dies kann sich negativ auf die Leistung auswirken.
 
-Zum Beispiel:
+Beispiel:
 
 ```graphql
 query {
@@ -1358,7 +1358,7 @@ Außerdem müssen Sie Folgendes beachten:
 
       * Diese Felder weisen unterschiedliche Datentypen auf.
 
-   * Zum Beispiel:
+   * Beispiel:
 
       * Wenn zwei (oder mehr) Fragmente mit verschiedenen Modellen (z. B. `M1`, `M2`) als mögliche Verweise (Inhaltsverweis oder Fragmentverweis) aus einem anderen Fragment verwendet werden, z. B. `Fragment1` `MultiField/List`,
       * und diese beiden Fragmente mit verschiedenen Modellen (`M1`, `M2`) Felder mit demselben Namen, aber unterschiedlichen Typen haben.

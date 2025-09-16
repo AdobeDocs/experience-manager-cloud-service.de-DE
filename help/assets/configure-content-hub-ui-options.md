@@ -3,9 +3,9 @@ title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2265'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Sie können die Metadatenfelder konfigurieren, die den Benutzenden beim Hochlade
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-Ebenso können Sie auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Eigenschaft klicken, um die Beschriftungen zu bearbeiten, diese Felder für Benutzer beim Hochladen von Assets als obligatorisch oder nicht obligatorisch festzulegen, indem Sie den Umschalter **[!UICONTROL Erforderliches Feld]** verwenden, oder auf das Symbol „Löschen“ klicken, um Metadateneigenschaften zu löschen.
+Sie können auch auf ![Symbol „Bearbeiten“](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Eigenschaft klicken, um die Labels zu bearbeiten oder diese Felder mit dem Umschalter **[!UICONTROL Pflichtfeld]** für Benutzende beim Hochladen von Assets als obligatorisch bzw. als nicht obligatorisch festzulegen. Alternativ können Sie auf das Symbol „Löschen“ klicken, um eine Metadateneigenschaft zu löschen.
 
 Klicken Sie auf den Umschalter **[!UICONTROL Automatische Genehmigung]**, wenn alle Assets, die Sie zum Experience Manager Assets-Repository hinzufügen, automatisch genehmigt werden müssen, damit sie in Content Hub sofort verfügbar sind. Andernfalls müssen DAM-Autorinnen bzw. -Autoren oder DAM-Admins die Assets manuell genehmigen, damit sie in Content Hub verfügbar sind. Der Umschalter ist standardmäßig auf den Status „Aus“ eingestellt.
 
@@ -130,13 +130,13 @@ Gehen Sie wie folgt vor, um die Suche nach mehreren Assets gleichzeitig in [!DNL
 
 1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Filter]**.
 
-1. Klicken Sie ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg)verfügbar neben jedem verfügbaren Filter.
+1. Klicken Sie auf ![Symbol „Bearbeiten“](assets/do-not-localize/edit_icon.svg)neben jedem verfügbaren Filter.
 
-1. Aktivieren Sie **[!UICONTROL Umschalter]** Massensuche“. Die Standardtrennzeichen `[ , | \t | \r\n | \r | \n ]` werden automatisch angezeigt. Darüber hinaus können Sie auch zusätzliche Trennzeichen hinzufügen. Geben Sie dazu Trennzeichen im Eingabefeld an, die durch ein `pipe symbol (|)` getrennt sind.
+1. Aktivieren Sie den Umschalter **[!UICONTROL Massensuche]**. Die Standardtrennzeichen `[ , | \t | \r\n | \r | \n ]` werden automatisch angezeigt. Darüber hinaus können Sie auch zusätzliche Trennzeichen hinzufügen. Geben Sie dazu Trennzeichen im Eingabefeld an, die durch ein `pipe symbol (|)` getrennt sind.
 
    ![Konfiguration der Massensuche](assets/bulk-search-configuration.png)
 
-1. Klicken Sie **[!UICONTROL Bestätigen]**, um die Änderungen zu speichern. Siehe [Massensuche in Content Hub](search-assets-content-hub.md#bulk-search) in Aktion.
+1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Änderungen zu speichern. Siehe [Massensuche in Content Hub](search-assets-content-hub.md#bulk-search) in Aktion.
 
 ### Asset-Details {#configure-asset-details-content-hub}
 

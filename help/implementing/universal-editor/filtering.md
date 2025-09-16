@@ -1,19 +1,19 @@
 ---
 title: Filtern von Komponenten
-description: Erfahren Sie, wie Sie die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken können.
+description: 'Erfahren Sie, wie Sie die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. '
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # Filtern von Komponenten {#filtering-components}
 
-Erfahren Sie, wie Sie die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken können.
+Erfahren Sie, wie Sie die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. 
 
 ## Filter {#filters}
 

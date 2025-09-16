@@ -1,6 +1,6 @@
 ---
 source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
 ht-degree: 100%
 
@@ -220,7 +220,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 

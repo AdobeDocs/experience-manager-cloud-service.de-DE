@@ -4,45 +4,45 @@ description: Kennzeichnen Sie Assets mit einem Service für künstliche Intellig
 feature: Smart Tags,Tagging
 role: Admin,User
 source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1510'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
 # Training zu Smart-Tags
 
-Mit der Smart-Tags-Schulung können Sie Ihre Tags so trainieren, dass Sie die Details angeben können, wenn die entsprechenden Tags nicht vorhanden sind. Es verwendet ein KI-Framework von [Adobe Sensei](https://business.adobe.com/de/why-adobe/experience-cloud-artificial-intelligence.html), um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+Mit dem Smart-Tags-Training können Sie Ihre Tags trainieren. Sie können Details angeben, wenn die entsprechenden Tags nicht vorhanden sind. Smart-Tags verwenden ein KI-Framework von [Adobe Sensei](https://business.adobe.com/de/why-adobe/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
 
-## Bestimmen der Anforderungen an das Smart-Tags-Training {#smart-tag-training-requirement}
+## Bestimmen der Anforderungen für ein Smart-Tags-Training {#smart-tag-training-requirement}
 
-Smart-Tags-Schulung ist in den folgenden Szenarien erforderlich:
+Ein Smart-Tags-Training ist in den folgenden Szenarien erforderlich:
 
-* So fügen Sie eine automatisierte Beschriftung hinzu, um Wiederholungen des Hinzufügens von Beschriftungen bei jedem Hochladen desselben Assets zu speichern.
+* Hinzufügen einer automatisierten Beschriftung, damit Labels nicht bei jedem Hochladen desselben Assets erneut hinzugefügt werden müssen.
 * Verbessern der Möglichkeit von Assets, relevante Tags anzuwenden.
-* Um die Genauigkeit der Tags zu erhöhen, die für ein Asset angezeigt werden.
-* So fügen Sie nicht verfügbare oder fehlende Bezeichnungen hinzu.
+* Erhöhen der Genauigkeit der Tags, die für ein Asset angezeigt werden.
+* Hinzufügen nicht verfügbarer oder fehlender Label.
 
 
 >[!NOTE]
 >
->Das Trainieren von Smart-Tags gilt nur für ***Bildtyp*** von Assets.
+>Das Trainieren von Smart-Tags gilt nur für ***image-type***-Assets.
 
 ## Schritte zum Trainieren von Smart-Tags
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] generiert die Smart-Tags standardmäßig automatisch für die textbasierten Assets und für Videos. Führen Sie die folgenden Aufgaben aus, um Smart-Tags für Bilder zu trainieren:
+[!DNL Experience Manager] as a [!DNL Cloud Service] generiert die Smart-Tags für textbasierte Assets und Videos standardmäßig automatisch. Führen Sie die folgenden Aufgaben aus, um Smart-Tags für Bilder zu trainieren.
 
 * [Grundlegendes zu Tag-Modellen und Richtlinien](#understand-tag-models-guidelines)
-* [Modell trainieren](#train-model)
-* [Taggen digitaler Assets](#tag-assets)
-* [Verwalten der Tags und Suchvorgänge](#manage-smart-tags-and-searches)
+* [Trainieren des Modells](#train-model)
+* [Tagging der digitalen Assets](#tag-assets)
+* [Verwalten von Tags und Suchvorgängen](#manage-smart-tags-and-searches)
 
 ## Grundlegendes zu Tag-Modellen und Richtlinien {#understand-tag-models-guidelines}
 
-Ein Tag-Modell ist eine Gruppe verwandter Tags, die mit verschiedenen visuellen Aspekten von Bildern verknüpft sind, die mit Tags versehen werden. Tags beziehen sich auf die deutlich unterschiedlichen visuellen Aspekte von Bildern, sodass die Tags beim Suchen nach bestimmten Bildtypen hilfreich sind. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Wenn die Tags angewendet werden, helfen sie dabei, verschiedene Arten von Schuhen zu finden, zum Beispiel nach Design oder nach Verwendung.
+Ein Tag-Modell ist eine Gruppe verwandter Tags, die mit verschiedenen visuellen Aspekten von Bildern verknüpft sind, die mit Tags versehen werden. Tags beziehen sich auf die deutlich unterschiedlichen visuellen Aspekte von Bildern, sodass die Tags beim Suchen nach bestimmten Bildtypen hilfreich sind. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Tags helfen dabei, verschiedene Schuhtypen zu finden, zum Beispiel nach Design oder nach Funktion. 
 
-Bevor Sie ein Tag-Modell erstellen und den Service trainieren, identifizieren Sie einen Satz eindeutiger Tags, die die Objekte in den Bildern im Kontext Ihres Unternehmens am besten beschreiben. Stellen Sie sicher, dass die Assets in Ihrem Satz die [Schulungsrichtlinien“ ](#training-guidelines).
+Bevor Sie ein Tag-Modell erstellen und den Service trainieren, identifizieren Sie einen Satz eindeutiger Tags, die die Objekte in den Bildern im Kontext Ihres Unternehmens am besten beschreiben. Stellen Sie sicher, dass die Assets in Ihrem kuratierten Satz den [Trainings-Richtlinien](#training-guidelines) entsprechen.
 
 ### Trainings-Richtlinien {#training-guidelines}
 
@@ -59,39 +59,39 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
    </tr>
    <tr>
       <td> <b>Kohärenz</b> </td>
-      <td> Stellen Sie sicher, dass die Bilder für ein Tag visuell ähnlich sind. Es wird empfohlen, die Tags derselben visuellen Aspekte (z. B. desselben Objekttyps in einem Bild) zu einem einzigen Tag-Modell zusammenzufassen. Beispielsweise ist es nicht empfehlenswert, alle diese Bilder als "<i>-Party“ (zum </i>) zu kennzeichnen, da sie visuell nicht ähnlich sind. </td>
+      <td> Stellen Sie sicher, dass sich die Bilder für ein Tag visuell ähneln. Es wird empfohlen, die Tags derselben visuellen Aspekte (z. B. desselben Objekttyps in einem Bild) zu einem einzigen Tag-Modell zusammenzufassen. So ist es beispielsweise nicht empfehlenswert, alle diese Bilder mit dem Tag <i>my-party</i> zu versehen (zu Trainings-Zwecken), da sie einander visuell nicht ähnlich sind. </td>
    </tr>
    <tr>
-      <td colspan="2"> <img src="assets/do-not-localize/coherence.png"><br><i>Abbildung: Veranschaulichende Bilder von „Coherence“ als Beispiele für die Richtlinien für das Training</i>
+      <td colspan="2"> <img src="assets/do-not-localize/coherence.png"><br><i>Abbildung: Bilder zur Veranschaulichung von Kohärenz als Beispiele für die Richtlinien für das Training</i>
       </td>
    </tr>
    <tr>
       <td> <b>Abdeckung</b></td>
-      <td> Es sollte eine ausreichende Vielfalt an Bildern im Training vorhanden sein. Der Grundgedanke ist, einige Beispiele bereitzustellen, die jedoch verhältnismäßig vielfältig sind, sodass lernt, sich auf die richtigen Dinge zu konzentrieren. Wenn Sie dasselbe Tag auf visuell unähnliche Bilder anwenden, schließen Sie mindestens fünf Beispiele für jeden Typ ein. Beispiel: Schließen Sie für das Tag <i>model-down-pose</i> mehr Trainings-Bilder ein, die dem hervorgehobenen Bild unten ähnlich sind, sodass der Service ähnliche Bilder beim Hinzufügen von Tags genauer identifizieren kann.</td>
+      <td> Bei den Trainings-Bildern muss eine ausreichende Vielfalt vorhanden sein. Das Prinzip ist, mit wenigen Bildern eine verhältnismäßig vielfältige Auswahl bereitzustellen, damit die KI lernt, sich auf die richtigen Dinge zu konzentrieren. Wenn Sie dasselbe Tag auf visuell unähnliche Bilder anwenden, schließen Sie mindestens fünf Beispiele für jeden Typ ein. Beispiel: Schließen Sie für das Tag <i>model-down-pose</i> mehr Trainings-Bilder ein, die dem hervorgehobenen Bild unten ähnlich sind, sodass der Service ähnliche Bilder beim Hinzufügen von Tags genauer identifizieren kann.</td>
    </tr>
    <tr>
-   <td colspan="2"> <img src="assets/do-not-localize/coverage_1.png"><br><i>Abbildung: Veranschaulichende Bilder der Abdeckung als Beispiele für die Richtlinien für das Training</i>
+   <td colspan="2"> <img src="assets/do-not-localize/coverage_1.png"><br><i>Abbildung: Bilder zur Veranschaulichung von Abdeckung als Beispiele für die Richtlinien für das Training</i>
    </td>
    </tr>
    <tr>
-      <td><b>Ablenkung/Verstopfung</b> </td>
-      <td> Der Service kann besser mit Bildern trainieren, die weniger Ablenkungen enthalten (hervorgehobene Hintergründe, Elemente ohne Bezug wie Objekte/Personen mit dem Hauptsubjekt). Beispiel: Für das Tag <i>casual-shoe</i> ist das zweite Bild kein guter Kandidat für das Training. </td>
+      <td><b>Ablenkung/Verdeckung</b> </td>
+      <td> Der Dienst kann besser mit Bildern trainieren, die weniger Ablenkungen enthalten (hervorgehobenen Hintergründe oder Elemente ohne Bezug wie Objekte/Personen neben dem Hauptsubjekt). Beispiel: Für das Tag <i>casual-shoe</i> ist das zweite Bild kein guter Kandidat für das Training. </td>
    </tr>
    <tr>
-      <td colspan="2"> <img src="assets/do-not-localize/distraction.png"><br><i>Abbildung: Veranschaulichende Bilder von Ablenkung/Verdeckung als Beispiel für die Richtlinien für das Training</i>
+      <td colspan="2"> <img src="assets/do-not-localize/distraction.png"><br><i>Abbildung: Bilder zur Veranschaulichung von Ablenkung/Verdeckung als Beispiel für die Richtlinien für das Training</i>
       </td>
    </tr>
    <tr>
       <td> <b>Vollständigkeit</b> </td>
-      <td> Wenn ein Bild für mehr als ein Tag qualifiziert ist, fügen Sie alle entsprechenden Tags hinzu, bevor Sie das Bild für Trainingszwecke einschließen. Fügen Sie beispielsweise für Tags wie <i>Regenmantel</i> und <i>Modell-Seitenansicht</i> beide Tags für das entsprechende Asset hinzu, bevor Sie es für die Schulung hinzufügen. </td>
+      <td> Wenn ein Bild für mehrere Tags qualifiziert ist, fügen Sie alle entsprechenden Tags hinzu, bevor Sie das Bild für ein Training verwenden. Fügen Sie beispielsweise für Tags wie <i>Regenmantel</i> und <i>Modell-Seitenansicht</i> beide Tags für das entsprechende Asset hinzu, bevor Sie es für die Schulung hinzufügen. </td>
    </tr>
    <tr>
-      <td colspan="2"> <img src="assets/do-not-localize/completeness.png"><br><i>Abbildung: Veranschaulichende Bilder der Vollständigkeit als Beispiele für die Richtlinien für das Training</i>
+      <td colspan="2"> <img src="assets/do-not-localize/completeness.png"><br><i>Abbildung: Bilder zur Veranschaulichung von Vollständigkeit als Beispiele für die Richtlinien für das Training</i>
       </td>
    </tr>
    <tr>
       <td> <b>Anzahl der Tags</b> </td>
-      <td> Adobe empfiehlt, ein Modell mit mindestens zwei verschiedenen Tags und mindestens zehn verschiedenen Bildern für jedes Tag zu trainieren. Fügen Sie in einem einzelnen Tag-Modell nicht mehr als 50 Tags hinzu. </td>
+      <td> Adobe empfiehlt, dass Sie ein Modell mit mindestens zwei verschiedenen Tags und mindestens zehn verschiedenen Bildern für jedes Tag trainieren. Fügen Sie in einem einzelnen Tag-Modell nicht mehr als 50 Tags hinzu. </td>
    </tr>
    <tr>
       <td> <b>Anzahl der Beispiele</b> </td>
@@ -99,7 +99,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
    </tr>
    <tr>
       <td> <b>Vermeiden von falsch positiven Ergebnissen und Konflikten</b> </td>
-      <td> Adobe empfiehlt die Erstellung eines einzelnen Tag-Modells für ein einzelnes visuelles Element. Strukturieren Sie die Tag-Modelle so, dass überlappende Tags zwischen den Modellen vermieden werden. Verwenden Sie beispielsweise keine häufig verwendeten Tags wie <i>Sneaker</i> in zwei verschiedenen Tag-Modellen mit den Namen <i>Schuhe</i> und <i>Schuhe</i>. Der Trainings-Prozess überschreibt ein trainiertes Tag-Modell mit dem anderen für ein gemeinsames Keyword. </td>
+      <td> Adobe empfiehlt die Erstellung eines einzelnen Tag-Modells für ein einzelnes visuelles Element. Strukturieren Sie die Tag-Modelle so, dass überlappende Tags zwischen den Modellen vermieden werden. Verwenden Sie beispielsweise keine allgemeinen Tags wie <i>Sneakers</i> in zwei verschiedenen Tag-Modellen, die <i>Schuhe</i> und <i>Schuhwerk</i> heißen. Der Trainings-Prozess überschreibt ein trainiertes Tag-Modell mit dem anderen für ein gemeinsames Keyword. </td>
    </tr>
 </table>
 
@@ -118,7 +118,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 >[!NOTE]
 >
 >Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Sie können jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell verknüpfen. Es ist möglich, dasselbe Bild mit verschiedenen Tags zu versehen, die zu verschiedenen Tag-Modellen gehören.
->&#x200B;>Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
+>>Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
 
 ## Trainieren des Modelle für Ihre benutzerdefinierten Tags {#train-model}
 
@@ -160,8 +160,8 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 
 >[!NOTE]
 >
->Was passiert, wenn ich Smart-Tags-Schulungen über einen Export von einer Instanz auf eine andere übertragen möchte?
->&#x200B;>Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur gleichen IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in allen IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
+>Kann ich ein Smart-Tags-Training per Export von einer Instanz auf eine andere übertragen?
+>>Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur selben IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in mehreren IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
 
 ## Einschränkungen und Best Practices im Zusammenhang mit Smart-Tags {#limitations-smart-tags-training}
 
@@ -172,4 +172,4 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 >[!NOTE]
 >
 >Die Fähigkeit der Smart-Tags, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab.
->&#x200B;>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
+>>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
