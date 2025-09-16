@@ -4,10 +4,10 @@ description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) f
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '4221'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ Bevor Sie beginnen, lernen Sie die für ein Datensatzdokument erforderlichen Ass
 
 Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen Sie die folgenden Schritte aus, um ein adaptives Formular zu konfigurieren und die XFA-Vorlage (XDP-Datei) als Vorlage für das Datensatzdokument zu verwenden:
 
-1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie im Fenster „Eigenschaften“ die Option **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -63,7 +63,7 @@ Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlag
 
 Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führen Sie die folgenden Schritte aus, um ein adaptives Formular zur Verwendung von Adobe Acrobat-PDF (AcroForm) als Vorlage für das Datensatzdokument zu konfigurieren:
 
-1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie im Fenster „Eigenschaften“ die Option **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -84,7 +84,7 @@ Wenn ein adaptives Formular so konfiguriert ist, dass automatisch ein Datensatzd
 
 Führen Sie die folgenden Schritte aus, um ein adaptives Formular so zu konfigurieren, dass automatisch ein Datensatzdokument erzeugt wird:
 
-1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie im Fenster „Eigenschaften“ die Option **[!UICONTROL Formularmodell]**.
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie in der Dropdown-Liste **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Schema]** oder **[!UICONTROL Ohne]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -101,7 +101,7 @@ Binden Sie Felder adaptiver Formulare mit Vorlagenfeldern, um die erfassten Form
 
 1. Wählen Sie im Eigenschaften-Browser ein Feld aus.
 
-   * Bei Verwendung der AcroForm-Vorlage wählen Sie die Feldeigenschaft für den **[!UICONTROL Bindungsverweis zum Datensatzdokument]**.
+   * Bei Verwendung der AcroForm-Vorlage wählen Sie die Feldeigenschaft für den Bindungsverweis zum **[!UICONTROL Datensatzdokument]**.
    * Bei Verwendung der XFA-Vorlage verwenden Sie die Eigenschaft für den **[!UICONTROL Bindungsverweis zum Datenmodell]**.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
@@ -346,7 +346,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
    1. **Allgemeine Eigenschaften**:
       * **Vorlage**: Wenn Sie eine benutzerdefinierte Vorlage auswählen, navigieren zu einer XDP-Datei auf Ihrem [!DNL AEM Forms]-Server und wählen sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem [!DNL AEM Forms]-Server befindet, müssen Sie die XDP-Datei zuerst auf Ihren [!DNL AEM Forms]-Server hochladen.
-      * **Akzentfarbe**: Die Farbe, in der Kopfzeilentext und Trennlinien im Datensatzdokument-PDF dargestellt werden.
+      * **Akzentfarbe**: Die Farbe, in der Kopfzeilentext und Trennlinien im PDF des archivierbaren Dokuments dargestellt werden.
       * **Schriftfamilie**: Schriftfamilie des Textes im Datensatzdokument-PDF.
 
         >[!NOTE]
@@ -405,9 +405,9 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
 ## Unterstützung von Datensatzdokumenten im Editor für adaptive Formulare {#dor-support-in-adaptiveform}
 
-Sie können die [!UICONTROL Datensatzdokument]-Vorlage direkt über den Editor für adaptive Formulare oder den Vorlagen-Editor für adaptive Formulare konfigurieren.
+Sie können die Vorlage [!UICONTROL Datensatzdokument] direkt über den Builder für adaptive Formulare oder den Vorlagen-Builder für adaptive Formulare konfigurieren.
 
-Führen Sie die folgenden Schritte über die Autoreninstanz des Editors für adaptive Formulare aus:
+Führen Sie in der Autoreninstanz des Builders für adaptive Formulare die folgenden Schritte aus:
 
 1. Wählen Sie die Komponente **[!UICONTROL Adaptiver Formularcontainer (Stamm)]** aus.
 1. Klicken Sie auf das Symbol ![Symbol konfigurieren](/help/forms/assets/configure-icon.svg), um die **[!UICONTROL Eigenschaften]** des adaptiven Formular-Containers zu öffnen.
@@ -422,7 +422,7 @@ Führen Sie die folgenden Schritte über die Autoreninstanz des Editors für ada
 
 >[!NOTE]
 >
->Wenn die [!UICONTROL Datensatzdokument]-Vorlage mit einem Vorlagen-Editor für adaptive Formulare erstellt wird, sind nur zwei Optionen auf der Registerkarte [!UICONTROL Datensatzdokument-Vorlage] verfügbar: [!UICONTROL Keine] und [!UICONTROL Generieren von Datensatzdokument].
+>Wenn die Formularvorlage [!UICONTROL Datensatzdokument] mit einem Vorlagen-Editor für adaptive Formulare erstellt wird, sind nur zwei Optionen auf der Registerkarte [!UICONTROL Datensatzdokument-Vorlage] verfügbar: [!UICONTROL Keine] und [!UICONTROL Generieren von Datensatzdokument].
 
 ## Tabellen- und Spalten-Layouts für Bereiche im Datensatzdokument {#table-and-column-layouts-for-panels-in-document-of-record}
 

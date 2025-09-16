@@ -1,18 +1,19 @@
 ---
-title: Erstellen von adaptiven Formularen
-description: Erfahren Sie, wie Sie ein adaptives Formular erstellen, um die Datenerfassung und -verarbeitung zu optimieren. Lernen Sie außerdem, adaptive Formulare basierend auf einem Formulardatenmodell (FDM) zu erstellen.
+title: 'Formular-Builder: Erstellen von Formularen mit Foundation-Komponenten'
+description: Erfahren Sie, wie Sie mit dem Formular-Builder von AEM Forms adaptive Formulare mit Foundation-Komponenten erstellen. Ideal für Formularersteller, die vorhandene Formulare verwalten oder mit Legacy-Integrationen arbeiten.
+keywords: Formular-Builder, Foundation-Komponenten, Erstellen von Formularen, Formularersteller, adaptive Formulare, Erstellen von Formularen, AEM Forms, Formularersteller
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 100%
+source-wordcount: '1588'
+ht-degree: 90%
 
 ---
 
-# Erstellen eines adaptiven Formulars (Foundation-Komponenten) {#creating-an-adaptive-form}
+# Formular-Builder: Erstellen von Formularen mit Foundation-Komponenten {#creating-an-adaptive-form}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -24,7 +25,7 @@ ht-degree: 100%
 >
 > Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für die Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben.
 
-Mit Adaptive Forms können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet einen benutzerfreundlichen Assistenten, mit dem sich adaptive Formulare schnell erstellen lassen. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+Mit dem Formular-Builder von AEM Forms können Sie Formulare erstellen, die ansprechend, responsiv, dynamisch und adaptiv sind. Unabhängig davon, ob Sie ein Formularersteller sind, der bestehende Foundation-basierte Formulare verwaltet oder schnell Formulare mit etablierten Komponenten erstellen müssen, bietet AEM Forms einen benutzerfreundlichen Assistenten. Der Assistent verfügt über eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können.
 
 Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, die Ihnen zur Verfügung stehen:
 
@@ -146,7 +147,7 @@ To use a Form Data Model for creating an Adaptive Form:
 >
 >You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Build an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
 XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
@@ -179,7 +180,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 >You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
 
-## Bearbeiten der Formularmodelleigenschaften eines adaptiven Formulars {#edit-form-model}
+## Formularmodelleigenschaften eines adaptiven Formulars bearbeiten {#edit-form-model}
 
 Sie können das Formularmodell für ein adaptives Formular (JSON-basiertes oder Formulardatenmodell) ändern. Sie können nicht zwischen Formularmodellen wechseln.
 
@@ -191,9 +192,9 @@ Sie können das Formularmodell für ein adaptives Formular (JSON-basiertes oder 
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Eigenschaften zu speichern.
 
-Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive Formulare oder im Vorlagen-Editor für adaptive Formulare ändern.
+Sie können die Eigenschaften des Formularmodells auch im Builder für adaptive Formulare oder im Vorlagen-Builder für adaptive Formulare ändern.
 
-1. Wählen Sie die Komponente **[!UICONTROL Adaptiver Formular-Container (Stamm)]** aus.
+1. Wählen Sie die Komponente **[!UICONTROL Adaptiver Formularcontainer (Stamm)]** aus.
 1. Klicken Sie auf das Symbol ![Symbol konfigurieren](/help/forms/assets/configure-icon.svg), um die **[!UICONTROL Eigenschaften]** des adaptiven Formular-Containers zu öffnen.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Datenmodell]** und führen Sie eine der folgenden Aktionen aus:
 
@@ -207,7 +208,7 @@ Sie können die Eigenschaften des Formularmodells auch im Editor für adaptive F
 >
 > Sie können auch ein adaptives Formular als Vorlage speichern. Weitere Informationen finden Sie unter [Erstellen einer Vorlage mit einem adaptiven Formular](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
-## Wie erfolgt das Umbenennen eines adaptiven AEM-Formulars? {#rename-an-AEM-Adaptive-Form}
+## Umbenennen eines adaptiven AEM-Formulars {#rename-an-AEM-Adaptive-Form}
 
 Führen Sie zum Umbenennen eines adaptiven Formulars die folgenden Schritte aus:
 

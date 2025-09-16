@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, Layouts für dynamische Formulare in AEM, Formularlayouts für AEM Cloud Service, Formularlayouttypen in AEM-Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 22%
@@ -27,11 +27,12 @@ Adaptive Forms bietet erstklassige Komponenten zum effektiven Layout und Design 
 
 ## Voraussetzung
 
-Bevor Sie die verschiedenen Funktionen eines Layouts untersuchen, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
+Bevor Sie die verschiedenen Funktionen eines Layouts untersuchen, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
 ## Layouttypen für adaptive Forms
 
 Adaptive Formulare, die auf Kernkomponenten basieren, unterstützen die folgenden Layouttypen:
+
 * **Bedienfeld-Layout**
 * **Assistenten-Layout**
 * **Vertikales Layout**
@@ -46,7 +47,7 @@ Das Bedienfeld-Layout ist nützlich, um verwandte Felder so zu organisieren, das
 
 ![Bedienfeld-Layout](/help/forms/assets/panel-layout.png)
 
-Panel-Layout
+Bedienfeld-Layout
 
 Sie können die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) verwenden, um das Bedienfeld-Layout einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren verschiedener Eigenschaften der Bedienfeldkomponente finden Sie im Artikel [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
@@ -80,7 +81,7 @@ Das Layout „Horizontale Registerkarten“ wird auch als Layout „Registerkart
 
 Layout horizontaler Registerkarten
 
-Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
 >[!TAB Akkordeon-Layout]
@@ -136,9 +137,9 @@ Im Folgenden wird der schrittweise Prozess zum Einfügen eines Layouts und Hinzu
 
    Alternativ können Sie auch [neues adaptives Formular erstellen](/help/forms/creating-adaptive-form-core-components.md).
 
-1. Suchen Sie den Abschnitt im Formular-Editor, mit dem Sie ein Layout hinzufügen können.
+1. Suchen Sie den Abschnitt innerhalb des Formular-Builders, mit dem Sie ein Layout hinzufügen können.
 
-   ![Formular-Editor](/help/forms/assets/form-editor.png)
+   ![Formular-Builder](/help/forms/assets/form-editor.png)
 1. Klicken Sie auf das Symbol **Hinzufügen**. Das Symbol ist ein Pluszeichen (+). Es steht für die Option zum Hinzufügen neuer Komponenten.
 
    ![Layout einfügen](/help/forms/assets/insert-layout-add-icon.png)
@@ -342,7 +343,7 @@ Führen Sie die folgenden Schritte aus, um das vorhandene Layout eines Formulars
 
 ## Zusätzliche Bytes
 
-So ziehen Sie Komponenten per Drag-and-Drop in den Formulareditor:
+Um Komponenten per Drag-and-Drop in den Formular-Builder zu ziehen, führen Sie die folgenden Schritte aus:
 
 1. Suchen Sie den Abschnitt, in dem Sie Komponenten hinzufügen können.
 1. Navigieren Sie zum linken Bedienfeld in Ihrer Authoring-Umgebung und klicken Sie auf **Komponenten**.

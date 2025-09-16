@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Sie können [adaptive Formulare](creating-adaptive-form.md) und adaptive Formula
 
    ![create-af-3](assets/create-af-3.png)
 
-   Sobald das auf einem Formulardatenmodell (FDM) basierende adaptive Formular oder Formularfragment erstellt ist, werden Formulardatenmodellobjekte auf der Registerkarte **[!UICONTROL Datenquellen]** des Inhalts-Browsers im Editor für adaptive Formulare angezeigt.
+   Sobald das auf einem Formulardatenmodell (FDM) basierende adaptive Formular oder Formularfragment erstellt ist, werden Formulardatenmodellobjekte auf der Registerkarte **[!UICONTROL Datenquellen]** des Inhaltsbrowsers im Builder für adaptive Formulare angezeigt.
 
    >[!NOTE]
    >

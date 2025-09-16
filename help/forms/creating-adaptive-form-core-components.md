@@ -1,18 +1,19 @@
 ---
-title: So erstellen Sie ein adaptives Formular basierend auf Kernkomponenten
-description: Erfahren Sie, wie Sie ein adaptives Formular mit [!DNL Experience Manager Forms] erstellen können. Adaptive Formulare sind responsive HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Vertiefen Sie Ihre Kenntnisse über die Erstellung adaptiver Formulare auf der Grundlage eines Formulardatenmodells (FDM) und eines XML- oder JSON-Schemas.
+title: 'Formular-Builder: Erstellen von Formularen mit Kernkomponenten'
+description: Erfahren Sie, wie Sie mit dem Formular-Builder von AEM Forms adaptive Formulare mit Kernkomponenten erstellen können. Ideal für Formularersteller, die responsive HTML5-Formulare benötigen, mit denen die Informationserfassung und -verarbeitung optimiert wird.
+keywords: Formular-Builder, Kernkomponenten, Erstellen von Formularen, Formular-Ersteller, adaptive Formulare, Erstellen von Formularen, AEM Forms, Responsive Formulare
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: ht
-source-wordcount: '2340'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '2348'
+ht-degree: 92%
 
 ---
 
-# Erstellen eines adaptiven Formulars (Kernkomponenten) {#creating-an-adaptive-form-core-components}
+# Formular-Builder: Erstellen von Formularen mit Kernkomponenten {#creating-an-adaptive-form-core-components}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -20,7 +21,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | Dieser Artikel |
 
 
-Mit adaptiven Formularen können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet eine Business-Anwender-freundliche Assistenz für die schnelle Erstellung adaptiver Formulare. Der Assistent bietet eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können, um ein adaptives Formular zu erstellen.
+Mit dem Formular-Builder von AEM Forms können Sie Formulare erstellen, die ansprechend, responsiv, dynamisch und adaptiv sind. Unabhängig davon, ob Sie als Formularersteller professionelle Formulare erstellen oder schnell responsive Formulare erstellen müssen, bietet AEM Forms einen benutzerfreundlichen Assistenten. Der Assistent verfügt über eine schnelle Registerkartennavigation, mit der Sie einfach vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen auswählen können.
 
 Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, die Ihnen zur Verfügung stehen:
 
@@ -56,10 +57,10 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
-## Erstellen eines adaptiven Formulars  {#create-an-adaptive-form-core-components}
+## Adaptives Formular erstellen  {#create-an-adaptive-form-core-components}
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager Forms]-Autoreninstanz an. Dabei kann es sich um eine Cloud-Instanz oder eine lokale Entwicklungsinstanz handeln.
 
@@ -152,7 +153,7 @@ Sie können das Formulardatenmodell (FDM) verwenden, um ein Formular mit einer D
 * [Erstellen eines JSON-Schemas und Hochladen in Ihre Umgebung](/help/forms/adaptive-form-json-schema-form-model.md)
 * [Erstellen eines Formulardatenmodells (FDM)](/help/forms/create-form-data-models.md)
 
-### Konfigurieren eines JSON-Schemas oder Formulardatenmodells (FDM) für das Formular
+### Konfigurieren eines JSON-Schemas oder Formulardatenmodells (FDM) für Ihr Formular
 
 So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell (FDM) für Ihr Formular:
 
@@ -176,7 +177,7 @@ Sie können den Vorbefüllungsdienst verwenden, um Felder eines adaptiven Formul
 * [Erstellen eines benutzerdefinierten Vorbefüllungsdienstes](/help/forms/prepopulate-adaptive-form-fields.md)
 * [Verwenden des Vorbefüllungsdienstes für Formulardatenmodelle](#fdm-prefill-service)
 
-### Verwenden des Vorbefüllungsdienstes für Formulardatenmodelle zum Ausfüllen von Feldern eines adaptiven Formulars im Voraus {#fdm-prefill-service}
+### Verwenden des Vorbefüllungs-Service für Formulardatenmodelle zum Vorausfüllen von Feldern eines adaptiven Formulars {#fdm-prefill-service}
 
 Sie können den Vorbefüllungsdienst für Formulardatenmodelle verwenden, um Felder eines adaptiven Formulars mit einem Formulardatenmodell oder einem benutzerdefinierten Vorbefüllungsdienst im Voraus auszufüllen. Der Vorbefüllungsdienst für das Formulardatenmodell verwendet den [Get-Dienst des konfigurierten Formulardatenmodells](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) zum Abrufen von Daten. So verwenden Sie für ein adaptives Formular den Vorbefüllungsdienst für Formulardatenmodelle:
 
@@ -187,7 +188,7 @@ Sie können den Vorbefüllungsdienst für Formulardatenmodelle verwenden, um Fel
 1. Wählen Sie ein Formulardatenmodell (FDM) aus. Öffnen Sie die Registerkarte **[!UICONTROL Allgemein]**. Wählen Sie im Vorbefüllungsdienst die Option **[!UICONTROL Vorbefüllungsdienst für Formulardatenmodell]**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**. Ihr adaptives Formular ist jetzt so konfiguriert, dass es die Vorbefüllung für Formulardatenmodelle verwendet. Sie können nun den [Regeleditor](rule-editor.md) verwenden, um Regeln zu erstellen, nach denen Felder des Formulars vorausgefüllt werden.
 
-## Bearbeiten der Formularmodelleigenschaften eines adaptiven Formulars {#edit-form-model}
+## Formularmodelleigenschaften eines adaptiven Formulars bearbeiten {#edit-form-model}
 
 1. Wählen Sie das adaptive Formular aus und wählen Sie dann ![Seiteninformationen](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Eigenschaften öffnen]**. Die Seite mit den Formulareigenschaften wird geöffnet.
 
@@ -196,7 +197,7 @@ Sie können den Vorbefüllungsdienst für Formulardatenmodelle verwenden, um Fel
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Eigenschaften zu speichern.
 
 
-## Wie erfolgt das Umbenennen eines adaptiven AEM-Formulars? {#rename-an-AEM-Adaptive-Form}
+## Umbenennen eines adaptiven AEM-Formulars {#rename-an-AEM-Adaptive-Form}
 
 Führen Sie zum Umbenennen eines adaptiven Formulars die folgenden Schritte aus:
 

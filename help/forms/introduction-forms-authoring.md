@@ -1,20 +1,20 @@
 ---
-title: Einführung in das Erstellen adaptiver Formulare
-description: AEM Forms bietet eine so benutzerfreundliche wie effektive Benutzeroberfläche zum Erstellen adaptiver Formulare. Es enthält eine Reihe von Komponenten und Werkzeugen, mit denen Sie Formulare erstellen können.
+title: Einführung in das Erstellen von Adaptive Forms
+description: AEM Forms bietet eine benutzerfreundliche und dennoch leistungsstarke Benutzeroberfläche zum Erstellen von adaptivem Forms. Es enthält eine Reihe von Komponenten und Werkzeugen, mit denen Sie Formulare erstellen können.
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '2496'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Editor für adaptive Formulare {#introduction-to-authoring-adaptive-forms}
+# Adaptive Forms Builder {#introduction-to-authoring-adaptive-forms}
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Bei dieser Option wird kein Formularmodell für die Erstellung der adaptiven For
 
   >[!NOTE]
   >
-  > Sie können die Eigenschaften des Formularmodells im Editor für adaptive Formulare oder im Editor für adaptive Formularvorlagen ändern. Detaillierte Anweisungen hierfür finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  > Sie können die Eigenschaften des Formularmodells im Builder für adaptive Formulare oder im Vorlagen-Builder für adaptive Formulare ändern. Detaillierte Anweisungen hierfür finden Sie unter [Formularmodelleigenschaften eines adaptiven Formulars bearbeiten](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Informationen zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](creating-adaptive-form.md).
 

@@ -10,16 +10,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # Verweisen auf adaptive Formularfragmente {#reference-adaptive-form-fragments}
 
-Adaptives Formularfragment steht für eine Gruppe von Feldern oder einen Bereich, der eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag und Drop in ein Formular mit dem Asset-Browser in der Seitenleiste einfügen und es im Formulareditor bearbeiten.
+Adaptives Formularfragment steht für eine Gruppe von Feldern oder einen Bereich, der eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment mithilfe des Asset-Browsers in der Seitenleiste in ein Formular ziehen und dort bearbeiten.
 
 Für Entwicklerinnen und Entwickler adaptiver Formulare werden Referenzfragmente im [!DNL AEM Forms]-Paket [!DNL AEM FORMS] REFERENCE FRAGMENTS bereitgestellt. Es beinhaltet folgende Fragmente:
 

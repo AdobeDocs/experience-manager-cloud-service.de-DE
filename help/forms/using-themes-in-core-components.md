@@ -1,14 +1,14 @@
 ---
-title: Wie können Designs in adaptive Formularen erstellt und verwendet werden?
+title: Erstellen und Verwenden von Designs in adaptiven Forms
 description: Mithilfe von Designs und unter Verwendung von Kernkomponenten können Sie ein adaptives Formular formatieren und ihm eine visuelle Identität verleihen. Ein Design kann für beliebig viele adaptive Formulare gemeinsam genutzt werden.
-keywords: Kernkomponenten zum Formatieren von adaptiven Formularen. Verwenden eines Designs in Kernkomponenten, Formatieren eines adaptiven Formulars, Anpassen von Designs
+keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, Formular-Design-Builder, Formatierung adaptiver Formulare, Anpassen von Designs, Erstellen von Formulardesigns
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '2803'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '2806'
+ht-degree: 99%
 
 ---
 
@@ -441,7 +441,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -449,6 +449,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 ## Siehe auch {#see-also}
 
 {{see-also}}
+
 * [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generieren eines Datensatzdokuments für adaptive Formulare (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Erstellen eines adaptiven Formulars mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)

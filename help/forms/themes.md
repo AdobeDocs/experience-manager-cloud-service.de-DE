@@ -4,10 +4,10 @@ description: Verwenden Sie Designs adaptiver Formulare, um ein adaptives Formula
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -298,7 +298,7 @@ Während Sie eine Komponente gestalten, werden die Stile zwischengespeichert und
 
 In diesem Beispiel wird der Stil für die Feldbeschriftung geändert, und wenn Responsive-Bedienfeldbeschreibung für den Stil ausgewählt ist, wird ein Listeneintrag in der Asset-Bibliothek hinzugefügt. Der Eintrag in der Asset-Bibliothek kann verwendet werden, um den Stil für die Responsive-Bedienfeldbeschreibung zu ändern.
 
-Wenn ein Stil der Asset-Bibliothek hinzugefügt wird, steht er für andere Designs und im [Stilmodus](inline-style-adaptive-forms.md) in der Benutzeroberfläche des Formular-Editors zur Verfügung. Wenn Sie den Stilmodus des Formular-Editors <!-- or interactive communication editor --> verwenden, um eine Komponente zu formatieren, wird der Stil ebenfalls zwischengespeichert und ist in den Designs verfügbar.
+Wenn ein Stil der Asset-Bibliothek hinzugefügt wird, steht er für andere Designs und im [Stil-Modus](inline-style-adaptive-forms.md) der Forms Builder-Benutzeroberfläche zur Verfügung. Wenn Sie den Stilmodus der <!-- or interactive communication editor -->-Benutzeroberfläche von Form Builder verwenden, um eine Komponente zu formatieren, wird der Stil ebenfalls zwischengespeichert und ist in den Designs verfügbar.
 
 Mit der Plus-Schaltfläche in der Asset-Bibliothek können Sie den Stil dauerhaft mit einem angegebenen Namen speichern. Mit der Plus-Schaltfläche wird der Stil gespeichert, auch wenn Sie nicht in der Seitenleiste auf die Schaltfläche „Speichern“ klicken, um den Stil auf eine Komponente anzuwenden. Die Plus-Schaltfläche zum Speichern eines Stils für die spätere Verwendung ist im Stilmodus nicht verfügbar.
 
@@ -504,7 +504,7 @@ Führen Sie die folgenden Schritte aus, um Adobe Fonts in Experience Manager zu 
 
 Mit den folgenden Schritten konfigurieren Sie ein Design für die Verwendung der Adobe Fonts-Konfiguration:
 
-1. Öffnen Sie in der Author-Instanz im Design-Editor ein Design.
+1. Öffnen Sie in der Autoreninstanz im Design-Editor ein Design.
 1. Navigieren Sie im Design-Editor zu **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Konfigurieren]**.
 1. Wählen Sie im Feld **[!UICONTROL Adobe Fonts-Konfiguration]** ein Kit aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -672,10 +672,10 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
 
   Es wird nicht empfohlen, die Layout-Breite des Container-Bereichs zu ändern. Wenn Sie die Breite eines Container-Bereichs angeben, wird er statisch und passt sich nicht mehr an unterschiedliche Displays an.
 
-* **Verwendung des Formular- oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
+* **Verwendung des Formular-Builders oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
 
   Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
-Wenn Sie Informationen wie ein Logo, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie dazu die im Formular-Editor verfügbaren Optionen.
+Wenn Sie Informationen wie ein Logobild, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile angeben möchten, verwenden Sie die Forms Builder-Optionen.
 
 
 ## Siehe auch {#see-also}

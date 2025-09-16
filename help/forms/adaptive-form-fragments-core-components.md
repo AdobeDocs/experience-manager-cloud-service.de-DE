@@ -6,10 +6,10 @@ keywords: Adaptive Formularfragmente hinzufügen, adaptive Formularfragmente, Fo
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -67,7 +67,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Pane
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Wenn Sie außerdem ein XML-Schema als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente per Drag-and-Drop auf das Fragment ziehen. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-Wenn das auf einem Schema oder Formulardatenmodell (FDM) basierende adaptive Formularfragment erstellt ist, werden Formulardatenmodelle (FDM) oder Schemaelemente auf der Registerkarte „Datenquellen“ des Inhalts-Browsers im Editor für adaptive Formulare angezeigt. Sie können per Drag-and-Drop Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus dem zugehörigen Schema beibehalten werden.
+Sobald das auf einem Schema oder Formulardatenmodell (FDM) basierende adaptive Formularfragment erstellt ist, werden Formulardatenmodell (FDM)- oder Schemaelemente auf der Registerkarte „Datenquellen“ des Inhaltsbrowsers im Builder für adaptive Formulare angezeigt. Sie können per Drag-and-Drop Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus dem zugehörigen Schema beibehalten werden.
 
 
 ## Hinzufügen eines Fragments zu einem adaptiven Formular {#insert-a-fragment-in-an-adaptive-form}

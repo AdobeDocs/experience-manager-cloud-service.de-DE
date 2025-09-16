@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 
    1. Wählen Sie den [Konfigurations-Container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der bei der [Integration von [!DNL Adobe Sign] in [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) erstellt wurde.
 
-   Der Konfigurations-Container enthält die für Ihre Umgebung konfigurierten [!DNL Adobe Sign]-Cloud Services. Diese Services stehen im Editor für adaptive Formulare zur Auswahl.
+   Der Konfigurations-Container enthält die für Ihre Umgebung konfigurierten [!DNL Adobe Sign]-Cloud Services. Diese Services können im Builder für adaptive Formulare ausgewählt werden.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodell]** eine der folgenden Optionen:
 
@@ -124,8 +124,8 @@ Gehen Sie wie folgt vor, um einem adaptiven Formular Felder hinzuzufügen und ei
 
    >[!NOTE]
    >
-   >  * Die Verwendung des [!DNL Adobe Sign]-Blocks ist nicht zwingend erforderlich, um [!DNL Adobe Sign] in einem adaptiven Formular zu verwenden. Wenn Sie den [!DNL Adobe Sign]-Block nicht verwenden und Felder für die Empfänger hinzufügen, wird das Standardsignaturfeld unten in den Signaturdokumenten angezeigt.
-   >  * Verwenden Sie den [!DNL Adobe Sign]-Block nur für adaptive Formulare, die automatisch ein Datensatzdokument generieren. Wenn Sie das Datensatzdokument mithilfe einer benutzerdefinierten XDP-Datei generieren oder ein formularvorlagenbasiertes adaptives Formular verwenden, wird der [!DNL Adobe Sign]-Block nicht unterstützt.
+   > * Die Verwendung des [!DNL Adobe Sign]-Blocks ist nicht zwingend erforderlich, um [!DNL Adobe Sign] in einem adaptiven Formular zu verwenden. Wenn Sie den [!DNL Adobe Sign]-Block nicht verwenden und Felder für die Empfänger hinzufügen, wird das Standardsignaturfeld unten in den Signaturdokumenten angezeigt.
+   > * Verwenden Sie den [!DNL Adobe Sign]-Block nur für adaptive Formulare, die automatisch ein Datensatzdokument generieren. Wenn Sie das Datensatzdokument mithilfe einer benutzerdefinierten XDP-Datei generieren oder ein formularvorlagenbasiertes adaptives Formular verwenden, wird der [!DNL Adobe Sign]-Block nicht unterstützt.
 
 
 1. Wählen Sie die Komponente **[!UICONTROL Adobe Sign-Block]** aus und wählen Sie dann das Symbol **[!UICONTROL Bearbeiten]** (![Edit](assets/Smock_Edit_18_N.svg)). Es werden Optionen zum Hinzufügen von Feldern und zum Formatieren der Darstellung von Feldern angezeigt.
@@ -217,7 +217,7 @@ Es kann einen oder mehrere Empfänger für eine Adobe Sign-Vereinbarung geben. W
 
    >[!NOTE]
    >
-   >    * Bei der Authentifizierung über Social Media steht standardmäßig eine Option zum Authentifizieren über Facebook, Google und LinkedIn zur Verfügung. Wenden Sie sich an den [!DNL Adobe Sign]-Support, wenn Sie weitere Anbieter von Authentifizierung über Social Media aktivieren möchten.
+   > * Bei der Authentifizierung über Social Media steht standardmäßig eine Option zum Authentifizieren über Facebook, Google und LinkedIn zur Verfügung. Wenden Sie sich an den [!DNL Adobe Sign]-Support, wenn Sie weitere Anbieter von Authentifizierung über Social Media aktivieren möchten.
    >
 
    * Auszufüllende oder zu unterzeichnende **[!DNL Adobe Sign]Felder**: Wählen Sie die [!DNL Adobe Sign]-Felder für den Empfänger. Ein adaptives Formular kann mehrere [!DNL Adobe Sign]-Felder enthalten. Sie können bestimmte Felder für einen bestimmten Empfänger aktivieren. Das Feld zeigt alle verfügbaren [!DNL Adobe Sign]-Blöcke an. Wenn Sie einen Block auswählen, werden alle Felder des Blocks ausgewählt. Über das X-Symbol können Sie die Auswahl eines Feldes aufheben.

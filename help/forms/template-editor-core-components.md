@@ -1,18 +1,18 @@
 ---
-title: Wie erstellt man eine adaptive Formularvorlage basierend auf einer Kernkomponente?
-description: Erstellen Sie adaptive Formularvorlagen auf Basis einer Kernkomponente, um die Grundstruktur und den anfänglichen Inhalt mit dem Vorlageneditor zu definieren.
+title: Wie wird eine Vorlage für ein adaptives Formular mit Kernkomponenten erstellt?
+description: Erstellen Sie Vorlagen für adaptive Formulare basierend auf Kernkomponenten, um mithilfe des Vorlagen-Editors die grundlegende Struktur und den anfänglichen Inhalt zu definieren.
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
-workflow-type: ht
-source-wordcount: '1951'
-ht-degree: 100%
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
+source-wordcount: '1949'
+ht-degree: 97%
 
 ---
 
-# Erstellen einer adaptiven Formularvorlage basierend auf Kernkomponenten {#adaptive-form-templates}
+# Erstellen einer Vorlage für ein adaptives Formular mit Kernkomponenten {#adaptive-form-templates}
 
 Wenn Sie ein Formular erstellen, fügen Sie Felder und Komponenten hinzu, um Formularstruktur, Inhalt und Aktionen im Editor zu definieren. Sie können Felder und Komponenten im`guideRootPanel` des Formularcontainers hinzufügen. Mit dem Vorlageneditor können Sie eine Vorlage erstellen, die eine grundlegende Struktur und anfänglichen Inhalt enthält, die Autorinnen und Autoren zum Erstellen von Formularen verwenden können.
 
@@ -155,7 +155,7 @@ Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular he
 
 >[!NOTE]
 >
-> * Sie können die Vorlage [!UICONTROL Datensatzdokument] auch direkt im Editor für adaptive Formulare oder Vorlagen-Editor für adaptive Formulare konfigurieren. Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Sie können die Vorlage [!UICONTROL Datensatzdokument“ auch ] den Builder für adaptive Formulare oder den Vorlagen-Builder für adaptive Formulare konfigurieren. Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Verknüpfen eines Formulardatenmodellschema mit einer Vorlage {#associating-form-data-model-schema-in-template}
 
@@ -294,6 +294,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## Siehe auch {#see-also}
 
 {{see-also}}
+
 * [Erstellen von Stilen oder Themen für Ihre Formulare](using-themes-in-core-components.md)
 * [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/creating-adaptive-form-core-components.md)
 

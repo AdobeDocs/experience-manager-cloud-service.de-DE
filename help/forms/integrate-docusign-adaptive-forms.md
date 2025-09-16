@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwend
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ Erstellen eines signaturfähigen adaptiven Formulars:
 
    1. Wählen Sie den [Konfigurations-Container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der bei der [Integration von [!DNL DocuSign] in [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) erstellt wurde.
 
-   Der Konfigurations-Container enthält die für Ihre Umgebung konfigurierten [!DNL DocuSign]-Cloud Services. Diese Services stehen im Editor für adaptive Formulare zur Auswahl.
+   Der Konfigurations-Container enthält die für Ihre Umgebung konfigurierten [!DNL DocuSign]-Cloud Services. Diese Services können im Builder für adaptive Formulare ausgewählt werden.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodell]** eine der folgenden Optionen:
 

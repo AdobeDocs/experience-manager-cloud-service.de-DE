@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Sie können das allgemeine Erscheinungsbild und Design eines adaptiven Formulars
 
 Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formulareditor und ändern Sie den Modus in den Stilmodus. Um den Stilmodus zu aktivieren, wählen Sie in der Symbolleiste der Seite auf ![Arbeitsfläche-Dropdown](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stil]** aus.
+1. Öffnen Sie das Formular im Formular-Builder und ändern Sie den Modus in den Stilmodus . Um den Stilmodus zu aktivieren, wählen Sie in der Symbolleiste der Seite auf ![Arbeitsfläche-Dropdown](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stil]** aus.
 1. Wählen Sie eine Komponente auf der Seite und die Schaltfläche „Bearbeiten“ ![Bearbeiten-Schaltfläche](assets/edit.svg) aus. In der Randleiste geöffnete Stileigenschaften.
 
    Sie können auch Komponenten aus der Hierarchiestruktur in der Seitenleiste auswählen. Die Hierarchiestruktur für das Formular ist als „Formularobjekte“ in der Seitenleiste verfügbar.
