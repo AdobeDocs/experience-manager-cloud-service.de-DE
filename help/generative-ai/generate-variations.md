@@ -2,11 +2,11 @@
 title: Varianten generieren
 description: Erfahren Sie mehr über die Funktion „Varianten generieren“, auf die über AEM as a Cloud Service und das Sidekick von Edge Delivery Services zugegriffen werden kann
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer
-source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: ht
-source-wordcount: '3294'
+source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
+workflow-type: tm+mt
+source-wordcount: '3295'
 ht-degree: 100%
 
 ---
@@ -313,7 +313,7 @@ Wenn die Option ausgewählt ist, wird das Dialogfeld **Prompt speichern** geöff
    1. Bei einem neuen und eindeutigen Namen wird eine neue Prompt-Vorlage erstellt.
    1. Bei einem vorhandenen Namen wird dieser Prompt überschrieben und es wird eine Meldung angezeigt.
 1. Geben Sie optional eine Beschreibung ein.
-1. Aktivieren oder deaktivieren Sie die Option **Im Unternehmen freigegeben**, je nachdem, ob die Eingabeaufforderung für Sie privat sein oder in Ihrer IMS-Organisation verfügbar gemacht werden soll. Dieser Status erscheint auf der [Karte, die in den Prompt-Vorlagen angezeigt wird](#select-prompt).
+1. Aktivieren oder deaktivieren Sie die Option **Im Unternehmen freigegeben**, je nachdem, ob der Prompt für Sie privat sein oder in Ihrer IMS-Organisation verfügbar gemacht werden soll. Dieser Status erscheint auf der [Karte, die in den Prompt-Vorlagen angezeigt wird](#select-prompt).
 1. Sie können den Prompt **speichern** oder die Aktion **abbrechen**.
 
 >[!NOTE]
@@ -363,7 +363,7 @@ Durch Auswahl einer Zielgruppe vom Typ **Adobe Target** im Prompt kann die Inhal
 
 Informationen zum Erstellen einer Zielgruppe in Adobe Target finden Sie unter [Erstellen von Zielgruppen](https://experienceleague.adobe.com/de/docs/target-learn/tutorials/audiences/create-audiences).
 
-### Zielruppe – CSV-Datei {#audience-csv-file}
+### Zielgruppe – CSV-Datei {#audience-csv-file}
 
 Durch Auswahl einer Zielgruppe vom Typ **CSV-Datei** im Prompt kann die Inhaltserstellung für die ausgewählte **Zielgruppe** personalisiert werden.
 
@@ -490,7 +490,7 @@ Weitere Informationen finden Sie auch unter:
 
 * [GenAI – Generieren von Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Experimente mit Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [Generativ in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+* [Generative KI in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## Häufig gestellte Fragen {#faqs}
 
