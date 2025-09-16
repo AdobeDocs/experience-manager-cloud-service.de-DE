@@ -1,6 +1,6 @@
 ---
-title: Forms Experience Builder - Handbuch zur Fehlerbehebung
-description: Umfassendes Handbuch zur Fehlerbehebung in Forms Experience Builder, das allgemeine Probleme, Lösungen und Debugtechniken zur Formularerstellung und -verwaltung behandelt.
+title: Forms Experience Builder – Handbuch zur Fehlerbehebung
+description: Umfassendes Handbuch zur Fehlerbehebung in Forms Experience Builder, das allgemeine Probleme, Lösungen und Debugging-Techniken zur Formularerstellung und -verwaltung behandelt.
 feature: Edge Delivery Services
 hide: true
 index: false
@@ -10,44 +10,44 @@ exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Forms Experience Builder - Handbuch zur Fehlerbehebung
+# Forms Experience Builder – Handbuch zur Fehlerbehebung
 
 >[!NOTE]
 >
-> Der Forms Experience Builder ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
+> Forms Experience Builder ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 >[!IMPORTANT]
 >
-> **Dokumentation kann sich ändern**: Dieses Handbuch zur Fehlerbehebung wird derzeit für das Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Probleme, Lösungen und Debugtechniken können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
+> **Dokumentation kann sich ändern**: Dieses Handbuch zur Problemlösung wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Probleme, Lösungen und Debugging-Techniken können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
 
-Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierung, Diagnose und Lösung häufiger Probleme bei der Arbeit mit Forms Experience Builder. Das Handbuch ist nach Problemkategorien mit schnellen Lösungen und detaillierten Lösungen geordnet.
+Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierung, Diagnose und Lösung häufiger Probleme bei der Arbeit mit Forms Experience Builder. Das Handbuch ist nach Problemkategorien mit Schnellkorrekturen und detaillierten Lösungen geordnet.
 
-## Kurzanleitung - Häufige Probleme
+## Kurzanleitung – Häufige Probleme
 
 | Problem | Schnellkorrektur |
 |-------|-----------|
-| **Schnittstelle wird nicht geladen** | Browser aktualisieren, Internetverbindung prüfen, Frühzugriffsberechtigungen prüfen |
-| **Befehle funktionieren nicht** | Versuchen Sie es `/help` oder verwenden Sie eine natürliche Sprache anstelle von Schrägstrichen |
-| **@fieldName nicht erkannt** | Schreibweise überprüfen, zuerst sicherstellen, dass das Feld vorhanden ist, Feldnamenssyntax überprüfen |
-| **Datei-Upload schlägt fehl** | Verwenden Sie PDF/JPG/PNG unter 10 MB, um die Kompatibilität der Dateiformate zu überprüfen |
-| **Formular sieht falsch aus** | Genauer gesagt: „Mobilgerät benutzerfreundlich machen“ anstelle von „Layout korrigieren“ |
-| **Integration schlägt fehl** | Überprüfen der API-Anmeldeinformationen und -Berechtigungen, Überprüfen der Endpunktverfügbarkeit |
-| **Formular wird nicht gesendet** | Konfiguration der Übermittlungsaktion und Validierungsregeln überprüfen |
-| **Validierungsfehler werden nicht angezeigt** | Überprüfen der Feldüberprüfungseinstellungen und der Platzierung von Fehlermeldungen |
-| **Layoutprobleme für Mobilgeräte** | Überprüfen der responsiven Designeinstellungen und der Feldgröße |
-| **Felder werden nicht angezeigt** | Überprüfen von bedingten Logik- und Sichtbarkeitsregeln |
-| **Fehler beim Importieren** | Überprüfen der Dateiformatkompatibilität und der Größenbeschränkungen |
-| **Leistungsprobleme** | Optimieren Sie die Anzahl der Felder und entfernen Sie unnötige Validierungen |
-| **Probleme mit der Barrierefreiheit** | Feldbezeichnungen, ARIA-Attribute und Registerkartenreihenfolge überprüfen |
+| **Oberfläche wird nicht geladen** | Browser aktualisieren, Internet-Verbindung prüfen, Early-Access-Berechtigungen prüfen |
+| **Befehle funktionieren nicht** | Befehl `/help` versuchen oder natürliche Sprache statt Schrägstrichbefehlen verwenden |
+| **@fieldName nicht erkannt** | Rechtschreibung prüfen, zuerst sicherstellen, dass das Feld vorhanden ist, Syntax des Feldnamens prüfen |
+| **Datei-Upload schlägt fehl** | PDF/JPG/PNG mit weniger als 10 MB verwenden, Kompatibilität des Dateiformats prüfen |
+| **Formular sieht falsch aus** | Spezifischer werden: „Mach es mobilfreundlich“, statt „Repariere das Layout“ |
+| **Integration schlägt fehl** | API-Anmeldeinformationen und -Berechtigungen prüfen, Verfügbarkeit des Endpunkts prüfen |
+| **Formular wird nicht übermittelt** | Konfiguration der Übermittlungsaktion und Validierungsregeln prüfen |
+| **Validierungsfehler werden nicht angezeigt** | Einstellungen der Feldvalidierung und Platzierung von Fehlermeldungen prüfen |
+| **Layout-Probleme bei Mobilgeräten** | Responsive Design-Einstellungen und Feldgröße prüfen |
+| **Felder werden nicht angezeigt** | Bedingte Logik und Sichtbarkeitsregeln prüfen |
+| **Fehler beim Import** | Kompatibilität des Dateiformats und Größenbeschränkungen prüfen |
+| **Leistungsprobleme** | Anzahl der Felder optimieren und unnötige Validierungen entfernen |
+| **Probleme mit der Barrierefreiheit** | Feld-Label, ARIA-Attribute und Registerkartenreihenfolge prüfen |
 
-**Brauchen Sie noch Hilfe?** Geben Sie `/help` ein, gefolgt von Ihrer spezifischen Frage, oder wenden Sie sich an Ihren Systemadministrator, um technische Unterstützung zu erhalten.
+**Brauchen Sie noch Hilfe?** Geben Sie `/help` ein, gefolgt von Ihrer spezifischen Frage, oder wenden Sie sich an Ihren Systemadmin, um technische Unterstützung zu erhalten.
 
-## Zugriffs- und Authentifizierungsanfragen
+## Zugriffs- und Authentifizierungsprobleme
 
 ### Zugriff auf Forms Experience Builder nicht möglich
 
@@ -59,49 +59,49 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 
 **Lösungen:**
 
-1. **Early Access Program Enrollment überprüfen**
-   - Bestätigen Sie, dass Sie für das Early-Adopter-Programm zugelassen wurden
-   - Vergewissern Sie sich, dass Ihre Anforderung von Ihrer offiziellen E-Mail gesendet wurde.
+1. **Early-Access-Programmregistrierung prüfen**
+   - Prüfen, ob Ihre Teilnahme beim Early-Adopter-Programm genehmigt wurde
+   - Sicherstellen, dass Ihre Anfrage von Ihrer offiziellen geschäftlichen E-Mail-Adresse gesendet wurde
    - `aem-forms-ea@adobe.com` kontaktieren, wenn der Zugriff noch aussteht
 
-2. **Überprüfen Sie die Einrichtung der Umgebung**
-   - Überprüfen, ob AEM Forms für Ihre Umgebung aktiviert ist
-   - Stellen Sie sicher, dass Sie einen unterstützten Browser verwenden (Chrome, Firefox, Safari, Edge)
-   - Browser-Cache und Cookies löschen
-   - Deaktivieren von Browser-Erweiterungen, die zu Störungen führen könnten
+2. **Setup der Umgebung prüfen**
+   - Prüfen, ob AEM Forms für Ihre Umgebung aktiviert ist
+   - Sicherstellen, dass Sie einen unterstützten Browser verwenden (Chrome, Firefox, Safari, Edge)
+   - Browsercache leeren und Cookies löschen
+   - Browser-Erweiterungen deaktivieren, die zu Störungen führen könnten
 
-3. **Überprüfen von Benutzerberechtigungen**
-   - Vergewissern Sie sich, dass Sie über geeignete Benutzerrollen und Berechtigungen verfügen
-   - Fragen Sie Ihren Systemadministrator nach Zugriffsrechten
-   - Überprüfen Sie, ob Sie mit dem richtigen Konto angemeldet sind
+3. **Benutzerberechtigungen prüfen**
+   - Sicherstellen, dass Sie über geeignete Benutzerrollen und Berechtigungen verfügen
+   - Beim Systemadmin nach Zugriffsrechten fragen
+   - Sicherstellen, dass Sie mit dem richtigen Konto angemeldet sind
 
 ### Probleme beim Laden der Benutzeroberfläche
 
 **Symptome:**
 
-- Leere oder teilweise geladene Schnittstelle
-- Drehen von Ladeindikatoren, die nicht abgeschlossen werden
+- Leere oder unvollständig geladene Oberfläche
+- Rotierende Ladeanzeigen, die nicht abgeschlossen werden
 - JavaScript-Fehler in der Browser-Konsole
 
 **Lösungen:**
 
-1. **Fehlerbehebung beim Browser**
+1. **Fehlerbehebung im Browser**
    - Seite aktualisieren (Strg+F5 oder Befehl+Umschalt+R)
-   - Verwenden Sie einen anderen Browser oder einen anderen Inkognito-/privaten Modus.
+   - Anderen Browser oder Inkognito-/privaten Modus versuchen
    - Browser-Updates suchen und installieren, falls verfügbar
    - Anzeigenblocker und Datenschutzerweiterungen vorübergehend deaktivieren
 
-2. **Netzwerkkonnektivität**
-   - Überprüfen der stabilen Internetverbindung
-   - Überprüfen, ob die Unternehmens-Firewall erforderliche Domains blockiert
-   - Testen Sie nach Möglichkeit mit einer anderen Netzwerkverbindung
-   - Wenden Sie sich bei Problemen mit der Netzwerkkonfiguration an den IT-Support
+2. **Netzwerkverbindung**
+   - Stabile Internetverbindung sicherstelln
+   - Prüfen, ob die Unternehmens-Firewall erforderliche Domains blockiert
+   - Nach Möglichkeit mit einer anderen Netzwerkverbindung testen
+   - Bei Problemen mit der Netzwerkkonfiguration an den IT-Support wenden
 
 3. **Cache- und Speicherprobleme**
-   - Löschen des Browser-Cache und des lokalen Speichers
+   - Browsercache und lokalen Speicher löschen
    - Browser-Einstellungen auf Standard zurücksetzen
-   - Überprüfen des verfügbaren Speicherplatzes auf dem Gerät
-   - Versuchen Sie, von einem anderen Gerät aus zuzugreifen
+   - Verfügbaren Speicherplatz auf dem Gerät prüfen
+   - Zugriff von einem anderen Gerät aus versuchen
 
 ## Probleme mit Befehlen und Interaktionen
 
@@ -118,46 +118,46 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 1. **Überprüfung der Befehlssyntax**
    - Sicherstellen, dass das Befehlsformat korrekt ist: `/command-name description`
    - Auf Tippfehler in Befehlsnamen prüfen
-   - Alternative: „Kontaktformular erstellen“
-   - `/help` versuchen, die Befehlsverfügbarkeit zu überprüfen
+   - Alternative in natürlicher Sprache verwenden: „Erstelle ein Kontaktformular“
+   - `/help` eingeben, um die Befehlsverfügbarkeit zu prüfen
 
 2. **Kontextspezifische Befehle**
-   - Stellen Sie sicher, dass Sie sich im richtigen Editor-Kontext befinden (universeller Editor vs. adaptiver Forms-Editor)
+   - Sicherstellen, dass Sie sich im richtigen Editor-Kontext befinden (universeller Editor vs. Editor für adaptive Formulare)
    - Einige Befehle funktionieren nur in bestimmten Umgebungen
-   - Überprüfen der Befehlsreferenz auf Kontextanforderungen
+   - Befehlsreferenz auf Kontextanforderungen prüfen
 
 3. **Alternative Ansätze**
-   - Natürliche Sprache anstelle von Schrägstrichen verwenden
-   - Unterteilen komplexer Befehle in kleinere, einfachere Anfragen
-   - Versuchen Sie, ein Formular schrittweise anstelle eines einzelnen komplexen Befehls zu erstellen
+   - Natürliche Sprache anstelle von Schrägstrichbefehlen verwenden
+   - Komplexe Befehle in kleinere, einfachere Anfragen unterteilen
+   - Formular Schritt für Schritt erstellen, statt mit einem einzigen komplexen Befehl
 
 ### Feldverweise funktionieren nicht
 
 **Symptome:**
 
-- `@fieldName` Verweise nicht erkannt
+- `@fieldName`-Verweise nicht erkannt
 - Fehlermeldungen zu unbekannten Feldern
 - Feldänderungen werden nicht korrekt angewendet
 
 **Lösungen:**
 
-1. **Feldnamenüberprüfung**
-   - Überprüfen der exakten Schreibweise von Feldnamen (unter Berücksichtigung von Groß- und Kleinschreibung)
-   - Stellen Sie sicher, dass das Feld vorhanden ist, bevor darauf verwiesen wird
-   - Verwenden Sie den genauen Feldnamen wie erstellt, nicht die Anzeigebezeichnung
-   - Konventionen zur Feldbenennung überprüfen (CamelCase, Snake_Case usw.)
+1. **Überprüfung von Feldnamen**
+   - Exakte Schreibweise von Feldnamen prüfen (unter Berücksichtigung von Groß- und Kleinschreibung)
+   - Sicherstellen, dass das Feld vorhanden ist, bevor darauf verwiesen wird
+   - Den exakten Feldnamen wie erstellt verwenden, nicht das Anzeige-Label
+   - Konventionen zur Feldbenennung prüfen (camelCase, snake_case usw.)
 
-2. **Feldverweissyntax**
-   - Verwenden der richtigen `@fieldName` ohne Leerzeichen
-   - Vermeiden von Sonderzeichen in Feldverweisen
+2. **Syntax von Feldverweisen**
+   - Korrekte `@fieldName`-Syntax ohne Leerzeichen verwenden
+   - Sonderzeichen in Feldverweisen vermeiden
    - Auf unsichtbare Zeichen oder Formatierungsprobleme prüfen
-   - Versuchen Sie, den Feldverweis manuell neu zu erstellen
+   - Feldverweis manuell neu erstellen
 
-3. **Debuggen von Feldverweisen**
-   - Auflisten aller vorhandenen Felder als Erstes: „Alle aktuellen Formularfelder anzeigen“
-   - Erstellen Sie Felder, bevor Sie in Regeln darauf verweisen
-   - Verwenden einfacher Feldnamen ohne komplexe Zeichen
-   - Testfeld verweist jeweils auf einen
+3. **Debugging von Feldverweisen**
+   - Zunächst alle vorhandenen Felder auflisten: „Zeige alle aktuellen Formularfelder an“
+   - Felder erstellen, bevor in Regeln darauf verwiesen wird
+   - Einfache Feldnamen ohne komplexe Zeichen erstellen
+   - Feldverweise einzeln testen
 
 ## Probleme bei der Formularerstellung und dem Design
 
@@ -171,91 +171,90 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 
 **Lösungen:**
 
-1. **Verbessern der Eingabeaufforderungsspezifität**
-   - Ausführlichere Beschreibungen in Formularen
-   - Spezifizieren Sie genaue Feldtypen und Validierungsanforderungen
+1. **Verbessern der Prompt-Spezifität**
+   - Formularbeschreibungen detaillierter formulieren
+   - Exakte Feldtypen und Validierungsanforderungen angeben
    - Layout-Voreinstellungen und Anforderungen an das Benutzererlebnis einschließen
-   - Aufteilen komplexer Formulare in kleinere, inkrementelle Anfragen
+   - Komplexe Formulare in kleinere, inkrementelle Anforderungen unterteilen
 
 2. **Iterativer Entwicklungsansatz**
-   - Beginn mit der allgemeinen Formularstruktur
-   - Inkrementelles Hinzufügen von Feldern und Funktionen
-   - Testen Sie jede Ergänzung, bevor Sie fortfahren
-   - Verfeinern durch Konversation anstelle einer einzelnen komplexen Anfrage
+   - Mit der allgemeinen Formularstruktur beginnen
+   - Felder und Funktionen inkrementell hinzufügen
+   - Jede Ergänzung vor dem Fortfahren testen
+   - Mit Dialog optimieren, statt eine einzelne komplexe Anfrage zu verwenden
 
-3. **Beispiel für bessere Eingabeaufforderungen**
+3. **Beispiel für bessere Prompts**
 
    Anstelle von:
 
-       Erstellen eines Formulars für Kunden
+       Erstelle ein Formular für Kundschaft
    
    Verwenden Sie:
 
-       Erstellen Sie ein Kundenkontaktformular mit:
-       - Vollständiger Name (Pflichtfeld)
-       - E-Mail-Adresse (bei Validierung erforderlich)
-        - Telefonnummer (optional, formatiert)
-       - Nachricht (TextArea erforderlich, max. 500 Zeichen)
-       - An E-Mail-Benachrichtigung senden
+       Erstelle ein Kundenkontaktformular mit:
+       – Vollständiger Name (Pflichtfeld)
+       – E-Mail-Adresse (bei Validierung erforderlich)
+       – Telefonnummer (optional, formatiert)
+       – Nachricht (Textfeld erforderlich, max. 500 Zeichen)
+       – An E-Mail-Benachrichtigung übermitteln
    
-
 ### Probleme mit Layout und Stil
 
 **Symptome:**
 
-- Formular erscheint auf Mobilgeräten fehlerhaft
+- Formular wird auf Mobilgeräten fehlerhaft angezeigt
 - Inkonsistente Abstände oder Ausrichtung
 - Felder werden nicht korrekt angezeigt
-- Schlechte visuelle Hierarchie
+- Schlechte grafische Hierarchie
 
 **Lösungen:**
 
 1. **Reaktionsfähigkeit auf Mobilgeräten**
-   - Mobilgerätespezifische Optimierungen anfordern: „Dieses Formular mobilfreundlich gestalten“
-   - Festlegen von responsiven Design-Anforderungen
-   - Testen auf tatsächlichen Mobilgeräten
-   - Verwenden von einspaltigen Layouts für Mobilgeräte
+   - Mobilgerätespezifische Optimierungen anfordern: „Mach dieses Formular mobilfreundlich“
+   - Anforderungen für responsives Design festlegen
+   - Auf Mobilgeräten testen
+   - Einspaltige Layouts für Mobilgeräte verwenden
 
 2. **Layout-Verbesserungen**
-   - Seien Sie spezifisch bei Layout-Anforderungen: „Adressfelder in zwei Spalten anordnen“
-   - Spezifischen Stil anfordern: „Verwenden Sie professionelle Farben und saubere Typografie“
+   - Spezifische Angaben bei Layout-Anforderungen machen: „Ordne Adressfelder in zwei Spalten an“
+   - Spezifischen Stil anfordern: „Verwende professionelle Farben und saubere Typografie“
    - Abstands- und Ausrichtungsanforderungen festlegen
-   - Nachfragen zur Einhaltung von Barrierefreiheitsvorschriften
+   - Konformität mit Barrierefreiheitsvorschriften fordern
 
 3. **Markenkonsistenz**
-   - Vorbereiten von Markenrichtlinien vor der Formularerstellung
+   - Markenrichtlinien vor der Formularerstellung vorbereiten
    - Bestimmte Farb-Codes und Schriftarten in Anfragen einschließen
-   - Verwenden von konsistenten Stilen in allen Formularen
-   - Erstellen von Markenvorlagen zur Wiederverwendung
+   - Konsistente Stile in allen Formularen verwenden
+   - Markenvorlagen zur Wiederverwendung erstellen
 
-### Bedingte Logikprobleme
+### Probleme mit bedingter Logik
 
 **Symptome:**
 
 - Regeln werden nicht erwartungsgemäß ausgelöst
-- Falsch angezeigte/ausgeblendete Felder
+- Felder werden falsch angezeigt/ausgeblendet
 - Validierungslogik funktioniert nicht
-- Fehlschlagen komplexer Geschäftsregeln
+- Komplexe Geschäftsregeln schlagen fehl
 
 **Lösungen:**
 
 1. **Regelvereinfachung**
-   - Aufspaltung komplexer Regeln in kleinere, einfachere Bedingungen
+   - Komplexe Regeln in kleinere, einfachere Bedingungen aufteilen
    - Jede Regel einzeln testen, bevor sie kombiniert wird
-   - Verwenden Sie klare, spezifische Bedingungen: &quot;@spouseInfo anzeigen, wenn @maritalStatus gleich „Verheiratet“ ist“.
+   - Klare, spezifische Bedingungen verwenden: „Zeige @spouseInfo an, wenn @maritalStatus gleich &#39;Verheiratet&#39; ist“
    - Verschachtelte oder übermäßig komplexe Logik zunächst vermeiden
 
-2. **Regeltests und Debugging**
-   - Testen aller möglichen Benutzerpfade und Szenarien
-   - Überprüfen von Feldnamen und Werten in Bedingungen
-   - Prüfen der Groß-/Kleinschreibung in Regelbedingungen
+2. **Testen und Debugging von Regeln**
+   - Alle möglichen Benutzerpfade und Szenarien testen
+   - Feldnamen und Werte in Bedingungen prüfen
+   - Groß-/Kleinschreibung in Regelbedingungen prüfen
    - Debug-Modus verwenden, um die Regelausführung zu verfolgen
 
-3. **Business-Logik-Implementierung**
-   - Dokumentieren der Geschäftsanforderungen vor der Implementierung
-   - Inkrementelles Implementieren von Regeln und Testen der einzelnen Schritte
-   - Eindeutiges Benutzerfeedback geben, wenn Regeln ausgelöst werden
-   - Handhabung von Edge-Fällen und Ausnahmeszenarien
+3. **Geschäftslogik-Implementierung**
+   - Geschäftsanforderungen vor der Implementierung dokumentieren
+   - Regeln inkrementell implementieren und jeden Schritt testen
+   - Eindeutiges Benutzer-Feedback bereitstellen, wenn Regeln ausgelöst werden
+   - Grenzfälle und Ausnahmeszenarien behandeln
 
 ## Probleme beim Import und bei der Konvertierung von Dateien
 
@@ -264,35 +263,35 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 **Symptome:**
 
 - PDF-Dateien werden nicht hochgeladen oder verarbeitet
-- Konvertierte Formulare ohne Felder oder Inhalt
+- In konvertierten Formularen fehlen Felder oder Inhalte
 - Fehlermeldungen während der PDF-Konvertierung
 - Schlechte Felderkennung durch PDF
 
 **Lösungen:**
 
 1. **Dateiformat und -größe**
-   - Stellen Sie sicher, dass PDF-Dateien unter 10 MB groß sind
-   - Verwenden Sie hochwertige, textbasierte PDFs (keine gescannten Bilder).
-   - Überprüfen Sie, ob PDF kennwortgeschützt oder verschlüsselt ist
-   - Konvertieren von PDF in das Bildformat, wenn die Textextraktion fehlschlägt
+   - Sicherstellen, dass PDF-Dateien unter 10 MB groß sind
+   - Hochwertige, textbasierte PDFs verwenden (keine gescannten Bilder)
+   - Prüfen, ob PDF kennwortgeschützt oder verschlüsselt ist
+   - PDF in Bildformat konvertieren, wenn die Textextraktion fehlschlägt
 
 2. **PDF-Qualitätsoptimierung**
-   - Verwenden von PDFs mit klaren, klar definierten Formularfeldern
-   - Sicherstellen von gutem Kontrast und lesbarem Text
-   - Vermeiden komplexer Layouts oder überlappender Elemente
+   - PDFs mit eindeutigen, klar definierten Formularfeldern verwenden
+   - Guten Kontrast und lesbaren Text sicherstellen
+   - Komplexe Layouts oder überlappende Elemente vermeiden
    - Zusätzlichen Kontext in der Konvertierungsanfrage angeben
 
-3. **Konversionsverbesserung**
-   - Beschreiben Sie die erwartete Formularstruktur im Detail.
-   - Angeben von Feldtypen und Validierungsanforderungen
-   - Spezifische Verbesserungen anfordern: „Reaktionsfähigkeit und Validierung für Mobilgeräte hinzufügen“
-   - Manuelles Überprüfen und Verfeinern konvertierter Formulare
+3. **Verbessern der Konvertierung**
+   - Erwartete Formularstruktur detailliert beschreiben
+   - Feldtypen und Validierungsanforderungen angeben
+   - Spezifische Verbesserungen anfordern: „Füge Reaktionsfähigkeit und Validierung für Mobilgeräte hinzu“
+   - Konvertierte Formulare manuell prüfen und optimieren
 
-### Konvertierungsprobleme von Bildern und Screenshots
+### Konvertierungsprobleme bei Bildern und Screenshots
 
 **Symptome:**
 
-- Schlechte Felderkennung durch Bilder
+- Schlechte Felderkennung bei Bildern
 - Falsche Feldtypen oder Layouts
 - Fehlende Formularelemente
 - Konvertierungsfehler oder Zeitüberschreitungen
@@ -300,22 +299,22 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 **Lösungen:**
 
 1. **Bildqualitätsanforderungen**
-   - Verwenden Sie hochauflösende Bilder (mindestens 300 DPI)
-   - Gute Beleuchtung und Kontrast
-   - Vermeiden von Schatten, Blendung oder Verzerrungen
-   - Bilder beschneiden, damit sie nur auf den Formularinhalt ausgerichtet sind
+   - Hochauflösende Bilder verwenden (mindestens 300 DPI)
+   - Gute Beleuchtung und Kontrast sicherstellen
+   - Schatten, Blendeffekte oder Verzerrungen vermeiden
+   - Bilder zuschneiden, um den Fokus auf die Formularinhalte zu legen
 
 2. **Optimale Bildformate**
-   - Verwenden von PNG- oder JPG-Formaten für optimale Ergebnisse
-   - GIF oder komprimierte Bilder von niedriger Qualität vermeiden
+   - PNG- oder JPG-Format für optimale Ergebnisse verwenden
+   - GIF- oder komprimierte Bilder mit niedriger Qualität vermeiden
    - Sicherstellen, dass der Text im Bild gut lesbar ist
-   - Versuchen Sie bei Bedarf verschiedene Bildausrichtungen
+   - Bei Bedarf verschiedene Bildausrichtungen probieren
 
-3. **Konversionsanleitung**
-   - Angeben detaillierter Beschreibungen der Formularstruktur
-   - Geben Sie Feldtypen und Anforderungen explizit an
+3. **Anleitungen zur Konvertierung**
+   - Detaillierte Beschreibungen der Formularstruktur angeben
+   - Feldtypen und Anforderungen explizit angeben
    - Spezifische Verbesserungen während der Konvertierung anfordern
-   - Seien Sie darauf vorbereitet, nach der Konvertierung manuelle Anpassungen vorzunehmen
+   - Auf manuelle Anpassungen nach der Konvertierung vorbereitet sein
 
 ## Probleme bei Integration und Übermittlung
 
@@ -323,24 +322,24 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 
 **Symptome:**
 
-- Forms wird nicht erfolgreich gesendet
+- Formulare werden nicht erfolgreich übermittelt
 - Fehlermeldungen während der Übermittlung
 - Daten erreichen nicht die beabsichtigten Ziele
-- Zeitüberschreitungsfehler bei Übermittlung
+- Zeitüberschreitungsfehler bei der Übermittlung
 
 **Lösungen:**
 
 1. **Konfiguration der Übermittlungsaktion**
-   - Überprüfen, ob die Sendeaktion ordnungsgemäß konfiguriert ist
-   - API-Endpunkte und Authentifizierungsdaten überprüfen
-   - Testen Sie zunächst mit einfacher E-Mail-Übermittlung
-   - Validieren von Datenformatanforderungen
+   - Ordnungsgemäße Konfiguration der Übermittlungsaktion prüfen
+   - API-Endpunkte und Authentifizierungsdaten prüfen
+   - Zunächst mit einfacher E-Mail-Übermittlung testen
+   - Datenformatanforderungen validieren
 
-2. **Netzwerk und Konnektivität**
-   - Überprüfen der Internetverbindung und Netzwerkstabilität
-   - Überprüfen der Firewall-Einstellungen, um Formularübermittlungen zuzulassen
-   - Testen von verschiedenen Netzwerkverbindungen
-   - Überprüfen auf Unternehmens-Proxy- oder Sicherheitsbeschränkungen
+2. **Netzwerk und Verbindung**
+   - Internetverbindung und Netzwerkstabilität prüfen
+   - Sicherstellen, dass Firewall-Einstellungen Formularübermittlungen zulassen
+   - Verschiedene Netzwerkverbindungen testen
+   - Unternehmens-Proxy- oder Sicherheitsbeschränkungen prüfen
 
 3. **Probleme bei der Datenvalidierung**
    - Sicherstellen, dass alle erforderlichen Felder ausgefüllt sind
@@ -354,56 +353,56 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 
 - REST-API-Endpunkte reagieren nicht
 - Authentifizierungsfehler
-- Datenformat stimmt nicht überein
-- Integrations-Timeouts oder -Fehler
+- Nicht übereinstimmende Datenformate
+- Zeitüberschreitungen oder Fehler bei der Integration
 
 **Lösungen:**
 
-1. **API-Konfigurationsüberprüfung**
-   - Überprüfen, ob API-Endpunkt-URLs korrekt und zugänglich sind
-   - Authentifizierungsdaten und -berechtigungen überprüfen
-   - Testen Sie API-Endpunkte unabhängig voneinander mithilfe von Tools wie Postman
-   - Überprüfen Sie, ob die API das richtige Datenformat akzeptiert (JSON, XML usw.)
+1. **Prüfen der API-Konfiguration**
+   - Prüfen, ob API-Endpunkt-URLs korrekt und zugänglich sind
+   - Authentifizierungsdaten und -berechtigungen prüfen
+   - API-Endpunkte unabhängig voneinander mit Tools wie Postman testen
+   - Prüfen, ob die API das richtige Datenformat akzeptiert (JSON, XML usw.)
 
 2. **Probleme bei der Datenzuordnung**
    - Sicherstellen, dass Formularfeldnamen mit API-Parameteranforderungen übereinstimmen
    - Auf erforderliche Felder prüfen, die möglicherweise fehlen
-   - Überprüfen der Datentypkompatibilität (Zeichenfolgen, Zahlen, Daten)
-   - Testen mit Beispieldaten, um Zuordnungsprobleme zu identifizieren
+   - Datentypkompatibilität (Zeichenfolgen, Zahlen, Daten) prüfen
+   - Mit Beispieldaten testen, um Zuordnungsprobleme zu identifizieren
 
 3. **Fehlerbehandlung und Debugging**
-   - Aktivieren der detaillierten Fehlerprotokollierung für API-Aufrufe
-   - Überprüfen von API-Antwort-Codes und Fehlermeldungen
-   - Implementieren von Wiederholungslogik für temporäre Fehler
+   - Detaillierte Fehlerprotokollierung für API-Aufrufe aktivieren
+   - API-Antwort-Codes und Fehlermeldungen prüfen
+   - Wiederholungslogik für temporäre Fehler implementieren
    - Fallback-Optionen für Benutzende bereitstellen, wenn die API fehlschlägt
 
-### E-Mail-Integrationsprobleme
+### Probleme bei der E-Mail-Integration
 
 **Symptome:**
 
 - Bestätigungs-E-Mails werden nicht gesendet
-- E-Mails an Spam-Ordner
+- E-Mails landen in Spam-Ordnern
 - Falsche E-Mail-Formatierung
 - Fehlende Formulardaten in E-Mails
 
 **Lösungen:**
 
 1. **E-Mail-Konfiguration**
-   - Überprüfen, ob E-Mail-Adressen korrekt formatiert sind
-   - SMTP-Einstellungen und -Authentifizierung überprüfen
+   - Prüfen, ob E-Mail-Adressen korrekt formatiert sind
+   - SMTP-Einstellungen und -Authentifizierung prüfen
    - Zuerst mit einfachen E-Mail-Adressen testen
-   - Überprüfen von E-Mail-Server-Berechtigungen und -Kontingenten
+   - E-Mail-Server-Berechtigungen und -Kontingente prüfen
 
 2. **Optimierung des E-Mail-Versands**
-   - Verwenden von korrekten E-Mail-Kopfzeilen und Absenderinformationen
-   - Vermeiden Sie Spam-Trigger-Wörter in den Betreffzeilen
-   - Einschließen von korrekten Abmeldemechanismen
-   - Testen des E-Mail-Versands an verschiedene Anbieter
+   - Korrekte E-Mail-Kopfzeilen und Absenderinformationen verwenden
+   - Spam-Trigger-Wörter in Betreffzeilen vermeiden
+   - Korrekte Abmeldemechanismen einschließen
+   - E-Mail-Versand an verschiedene Anbieter testen
 
 3. **Inhalt und Formatierung**
-   - Überprüfen, ob Formulardaten in E-Mails ordnungsgemäß formatiert sind
+   - Prüfen, ob Formulardaten in E-Mails ordnungsgemäß formatiert sind
    - Auf Sonderzeichen oder Kodierungsprobleme prüfen
-   - Testen von E-Mail-Vorlagen mit verschiedenen Datenkombinationen
+   - E-Mail-Vorlagen mit verschiedenen Datenkombinationen testen
    - Sicherstellen, dass E-Mail-Inhalte barrierefrei und lesbar sind
 
 ## Leistungs- und Ladeprobleme
@@ -412,8 +411,8 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 
 **Symptome:**
 
-- Das Laden von Forms dauert zu Beginn sehr lange
-- Trägheit bei Benutzerinteraktionen
+- Das Laden von Formularen dauert zu Beginn sehr lange
+- Träge Benutzerinteraktionen
 - Zeitüberschreitungen bei Formularvorgängen
 - Schlechte Leistung auf Mobilgeräten
 
@@ -421,102 +420,102 @@ Dieses umfassende Handbuch zur Fehlerbehebung hilft Ihnen bei der Identifizierun
 
 1. **Formularoptimierung**
    - Anzahl der Felder und Komplexität reduzieren
-   - Implementieren von verzögertem Laden für nicht kritische Abschnitte
-   - Optimieren von Bildern und Assets für die Web-Bereitstellung
-   - Entfernen unnötiger Validierungsregeln oder -logiken
+   - Verzögertes Laden für nicht kritische Abschnitte implementieren
+   - Bilder und Assets für die Web-Bereitstellung optimieren
+   - Unnötige Validierungsregeln oder -logik entfernen
 
 2. **Browser- und Geräteoptimierung**
-   - Browser-Cache und temporäre Dateien löschen
-   - Schließen unnötiger Browser-Registerkarten und Anwendungen
-   - Überprüfen des verfügbaren Gerätespeichers und -speichers
-   - Verwenden verschiedener Browser zum Leistungsvergleich
+   - Browsercache und temporäre Dateien löschen
+   - Unnötige Browser-Registerkarten und Anwendungen schließen
+   - Verfügbaren Gerätespeicher und Speicherplatz prüfen
+   - Verschiedene Browser zum Leistungsvergleich verwenden
 
 3. **Netzwerkoptimierung**
-   - Testen mit verschiedenen Netzwerkverbindungen
-   - Prüfen auf Netzwerküberlastung oder Bandbreitenbeschränkungen
-   - Verwenden Sie nach Möglichkeit Kabelverbindungen anstelle von WLAN.
-   - Wenden Sie sich bei Problemen mit der Netzwerkleistung an den IT-Support
+   - Mit verschiedenen Netzwerkverbindungen testen
+   - Auf Netzwerküberlastung oder Bandbreitenbeschränkungen prüfen
+   - Nach Möglichkeit kabelgebundene Verbindungen anstelle von WLAN verwenden
+   - Bei Problemen mit der Netzwerkleistung an den IT-Support wenden
 
-### Probleme mit der Validierungsleistung
+### Validierung von Leistungsproblemen
 
 **Symptome:**
 
-- Langsame Validierungsantworten
+- Langsame Validierungsreaktionen
 - Verzögerte Anzeige von Fehlermeldungen
-- Einfrieren von Formularen während der Validierung
-- Zeitüberschreitungsfehler bei der Feldüberprüfung
+- Formulare frieren während der Validierung ein
+- Zeitüberschreitungsfehler bei der Feldvalidierung
 
 **Lösungen:**
 
 1. **Validierungsoptimierung**
    - Häufigkeit der Echtzeit-Validierung reduzieren
-   - Implementieren des Bounces für Validierungsaufrufe
-   - Vereinfachung komplexer Validierungsregeln
-   - Verwenden Sie nach Möglichkeit Client-seitige Validierung
+   - Debouncing für Validierungsaufrufe implementieren
+   - Komplexe Validierungsregeln vereinfachen
+   - Nach Möglichkeit Client-seitige Validierung verwenden
 
 2. **Regelvereinfachung**
    - Komplexe Validierung in kleinere Regeln aufteilen
-   - Entfernen von unnötigen feldübergreifenden Validierungen
+   - Unnötige feldübergreifende Validierungen entfernen
    - Bedingte Logik für Leistung optimieren
-   - Cache-Validierungsergebnisse, sofern zutreffend
+   - Validierungsergebnisse zwischenspeichern, wenn möglich
 
-3. **Verbesserungen des Benutzererlebnisses**
+3. **Verbessern der Benutzererlebnisse**
    - Sofortiges Feedback für einfache Validierungen geben
-   - Verwenden Sie für komplexe Regeln progressive Validierung anstelle von Echtzeit
-   - Ladeindikatoren während Validierungsprozessen anzeigen
-   - Benutzern erlauben, während der Validierungsprozesse im Hintergrund fortzufahren
+   - Für komplexe Regeln progressive Validierung anstelle von Echtzeit-Validierung verwenden
+   - Ladeanzeigen während Validierungsprozessen anzeigen
+   - Benutzenden erlauben, während der Hintergrund-Validierungsprozesse fortzufahren
 
 ## Erweiterte Fehlerbehebung
 
 ### Debug-Modus und Diagnose
 
-**Debug-Informationen aktivieren**
+**Aktivieren von Debug-Informationen**
 
-Verwenden Sie diese Eingabeaufforderungen, um detailliertere Informationen zu Formularproblemen zu erhalten:
+Verwenden Sie folgende Prompts, um detailliertere Informationen zu Formularproblemen zu erhalten:
 
-    Debug-Modus aktivieren, um Probleme bei der Formularübermittlung und Feldüberprüfung zu identifizieren
+    Aktiviere den Debug-Modus, um Probleme bei der Formularübermittlung und Feldüberprüfung zu identifizieren
     
-    Formularfehler analysieren: Validierungsregeln, API-Antworten und Benutzereingabemuster überprüfen
+    Analysiere Formularfehler: Prüfe Validierungsregeln, API-Antworten und Benutzereingabemuster
     
-    Detaillierte Informationen zur Formularstruktur und Feldkonfiguration anzeigen
+    Zeige detaillierte Informationen zur Formularstruktur und Feldkonfiguration an
 
-### Techniken zur Fehleranalyse
+### Methoden bei der Fehleranalyse
 
 **Systematischer Debugging-Ansatz**
 
-1. **Isolieren Sie das Problem**
-   - Testen mit minimaler Formularkonfiguration
+1. **Isolieren des Problems**
+   - Mit minimaler Formularkonfiguration testen
    - Komplexe Funktionen vorübergehend entfernen
    - Einzelne Komponenten separat testen
    - Ausschlussverfahren zur Ermittlung der Grundursache verwenden
 
-2. **Sammeln von Diagnoseinformationen**
-   - Überprüfen der Browser-Konsole auf JavaScript-Fehler
-   - Prüfen von Netzwerkanfragen und -antworten
-   - Dokumentieren der genauen Schritte zur Reproduktion des Problems
-   - Erfassen von Screenshots und Fehlermeldungen
+2. **Erfassen von Diagnoseinformationen**
+   - Browser-Konsole auf JavaScript-Fehler prüfen
+   - Netzwerkanfragen und -antworten prüfen
+   - Exakte Schritte zum Reproduzieren des Problems dokumentieren
+   - Screenshots und Fehlermeldungen sammeln
 
-3. **Testumgebungsvariablen**
-   - Verwenden verschiedener Browser und Geräte
-   - Testen mit verschiedenen Benutzerkonten und Berechtigungen
-   - Überprüfen in verschiedenen Netzwerkumgebungen
-   - Vergleich mit Arbeitsformularen oder Konfigurationen
+3. **Testen der Umgebungsvariablen**
+   - Verschiedene Browser und Geräte verwenden
+   - Mit verschiedenen Benutzerkonten und Berechtigungen testen
+   - In verschiedenen Netzwerkumgebungen prüfen
+   - Mit funktionierenden Formularen oder Konfigurationen vergleichen
 
-### Protokollanalyse und -überwachung
+### Analyse und Überwachung protokollieren
 
 **Debugging der Browser-Konsole**
 
 1. Browser-Entwickler-Tools öffnen (F12)
-2. Registerkarte „Konsole“ auf JavaScript-Fehler überprüfen
-3. Registerkarte „Netzwerk“ auf fehlgeschlagene Anfragen überprüfen
-4. Registerkarte „Leistung überwachen“ für langsame Vorgänge
+2. Konsole auf JavaScript-Fehler prüfen
+3. Tab „Netzwerk“ auf fehlgeschlagene Anfragen prüfen
+4. Tab „Leistung“ auf langsame Vorgänge prüfen
 
 **Häufige Fehlermuster**
 
-- **CORS-**: Probleme mit ursprungsübergreifenden Anfragen bei API-Integrationen
+- **CORS-Fehler**: Probleme mit ursprungsübergreifenden Anfragen bei API-Integrationen
 - **Authentifizierungsfehler**: Ungültige Anmeldeinformationen oder abgelaufene Token
-- **Validierungsfehler**: Konflikt bei Regeln für die Feldvalidierung oder Syntaxfehler
-- **Netzwerk-Timeouts**: Langsame oder unzuverlässige Netzwerkverbindungen
+- **Validierungsfehler**: Konflikte bei Regeln für die Feldvalidierung oder Syntaxfehler
+- **Netzwerkzeitüberschreitungen**: Langsame oder unzuverlässige Netzwerkverbindungen
 
 ## Abrufen zusätzlicher Hilfe
 
@@ -524,27 +523,27 @@ Verwenden Sie diese Eingabeaufforderungen, um detailliertere Informationen zu Fo
 
 **Integriertes Hilfesystem**
 
-- Verwenden Sie `/help` Befehl gefolgt von bestimmten Fragen.
-- Zugriff auf die kontextuelle Hilfe in der Benutzeroberfläche von Forms Experience Builder
-- Prüfen Sie die Fehlermeldungen sorgfältig auf spezifische Anleitungen.
-- Lesen Sie die Informationen zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md)
+- Befehl `/help` gefolgt von spezifischen Fragen verwenden
+- Kontextbezogene Hilfe in der Forms Experience Builder-Benutzeroberfläche aufrufen
+- Fehlermeldungen sorgfältig auf spezifische Anleitungen prüfen
+- [Forms Experience Builder – Erste Schritte](forms-ai-assistant-getting-started.md) lesen
 
 **Dokumentationsressourcen**
 
-- [Forms Experience Builder-Eingabeaufforderungsbibliothek](ai-assistant-prompt-library.md)
-- [Best Practices für Forms Experience Builder](aem-forms-ai-assistant-best-practices.md)
-- [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de)
+- [Forms Experience Builder – Prompt-Bibliothek](ai-assistant-prompt-library.md)
+- [Forms Experience Builder – Best Practices](aem-forms-ai-assistant-best-practices.md)
+- [AEM Forms-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de)
 
 ### Eskalation und Support
 
-**Wann sollte ich den Support kontaktieren**
+**Wann sollte ich den Support kontaktieren?**
 
-- Probleme nach dem Ausprobieren dokumentierter Lösungen bestehen
-- Systemweite Probleme, die mehrere Benutzer betreffen
+- Probleme bleiben auch nach Ausprobieren der dokumentierten Lösungen bestehen
+- Systemweite Probleme, die mehrere Benutzende betreffen
 - Bedenken hinsichtlich der Sicherheit oder Datenintegrität
 - Integrationsprobleme, die eine Konfiguration auf Systemebene erfordern
 
-**Zu liefernde Informationen**
+**Bereitzustellende Informationen**
 
 - Detaillierte Beschreibung des Problems und Schritte zur Reproduktion
 - Screenshots oder Bildschirmaufzeichnungen des Problems
@@ -554,24 +553,24 @@ Verwenden Sie diese Eingabeaufforderungen, um detailliertere Informationen zu Fo
 
 **Kontaktmethoden**
 
-- Systemadministrator: Für Probleme mit Umgebung und Zugriff
+- Systemadmin: Für Probleme mit Umgebung und Zugriff
 - Technischer Support: Für komplexe Integrations- und Konfigurationsprobleme
 - EARLY ACCESS-PROGRAMM: `aem-forms-ea@adobe.com` für programmspezifische Fragen
 
 ### Community und Wissensaustausch
 
-**Best Practices für die Problembehebung**
+**Best Practices für die Problemlösung**
 
-- Dokumentenlösungen als Referenz für die Zukunft
-- Austausch erfolgreicher Ansätze zur Fehlerbehebung mit Team-Mitgliedern
-- Beitrag zur organisatorischen Wissensdatenbank
-- Teilnehmen an Benutzergruppen und Foren
+- Lösungen als Referenz für die Zukunft dokumentieren
+- Erfolgreiche Ansätze zur Fehlerbehebung mit Team-Mitgliedern austauschen
+- Beiträge in der Wissensdatenbank des Unternehmens verfassen
+- In Benutzer-Communities und Foren teilnehmen
 
 **Kontinuierliche Verbesserung**
 
-- Regelmäßige Überprüfung häufiger Probleme und Lösungen
-- Aktualisierung der Fehlerbehebungsverfahren auf der Grundlage neuer Erkenntnisse
+- Regelmäßige Überprüfung häufiger Probleme und ihrer Lösungen
+- Aktualisierung der Fehlerbehebungsverfahren auf Grundlage neuer Erkenntnisse
 - Schulungen und Wissensaustausch
-- Feedback an das Produkt-Team zur Verbesserung der Funktionen
+- Feedback an das Produkt-Team für Funktionsverbesserungen
 
-Dieses Handbuch zur Fehlerbehebung wird laufend auf der Grundlage von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen aktualisiert. Die neuesten Informationen und zusätzlichen Ressourcen finden Sie in der Dokumentation zu [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de).
+Dieses Handbuch zur Fehlerbehebung wird auf Basis von Benutzer-Feedback und neuen Funktionen des KI-Assistenten fortlaufend aktualisiert. Die neuesten Informationen und weitere Ressourcen finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de).

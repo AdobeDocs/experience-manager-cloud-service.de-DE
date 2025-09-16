@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
 source-wordcount: '1450'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -146,13 +146,13 @@ Der Kopiervorgang wird gestartet. Der Status des Kopiervorgangs wird für das au
 
 ## Aktivität „Inhalt kopieren“ {#copy-activity}
 
-Sie können den Status der Kopierprozesse auf der Seite **Aktivität „Inhalt kopieren“** überwachen.
+Sie können den Status der Kopierprozesse auf der Seite **Aktivität zum Kopieren von Inhalten** überwachen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
 1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Navigieren Sie im Bildschirm **Umgebungen** zur Seite **Aktivität „Inhalt kopieren“**.
+1. Navigieren Sie im Bildschirm **Umgebungen** zur Seite **Aktivität zum Kopieren von Inhalten**.
 
 ![Aktivität „Inhalt kopieren“](assets/copy-content-activity.png)
 
@@ -171,7 +171,7 @@ Sobald das Kopieren von Inhalten beginnt, kann der Prozess einen der folgenden S
 
 Wenn Sie einen Vorgang zum Kopieren von Inhalten nach dem Starten abbrechen müssen, können Sie ihn optional abbrechen.
 
-Wählen Sie dazu auf der Seite **Inhaltsaktivität kopieren** die Aktion **Abbrechen** aus dem Ellipsenmenü des zuvor gestarteten Kopiervorgangs.
+Wählen Sie dazu auf der Seite **Aktivität zum Kopieren von Inhalten** die Aktion **Abbrechen** aus dem Ellipsenmenü des zuvor gestarteten Kopiervorgangs.
 
 ![Inhaltskopie abbrechen](assets/content-copy-cancel.png)
 
@@ -185,7 +185,7 @@ Wählen Sie dazu auf der Seite **Inhaltsaktivität kopieren** die Aktion **Abbre
 
 Sie können die Protokolle sowohl auf die Quell- als auch auf die Zielumgebung für jeden abgeschlossenen Inhaltskopierprozess überprüfen.
 
-Wählen Sie dazu auf der Seite **Aktivität „Inhalt kopieren“** die Aktion **Protokolle** aus dem Menü mit den Auslassungspunkten des Kopierprozesses aus, für den Sie die Protokolle überprüfen möchten, und wählen Sie dann aus, für welche Umgebung.
+Wählen Sie dazu auf der Seite **Aktivität zum Kopieren von Inhalten** die Aktion **Protokolle** aus dem Menü mit den Auslassungspunkten des Kopierprozesses aus, für den Sie die Protokolle überprüfen möchten, und wählen Sie dann aus, für welche Umgebung.
 
 ![Zugreifen auf Protokolle zum Kopieren von Inhalten](assets/copy-content-logs.png)
 

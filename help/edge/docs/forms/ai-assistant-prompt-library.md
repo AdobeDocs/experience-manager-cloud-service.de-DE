@@ -1,5 +1,5 @@
 ---
-title: Forms Experience Builder - Bibliothek mit Eingabeaufforderung
+title: Forms Experience Builder - Prompt-Bibliothek
 description: Sammlung bewährter Prompt-Muster und Beispiele zum Erstellen von Formularen mit KI-Unterstützung in der Benutzeroberfläche für die Formularverwaltung, im Editor für adaptive Formulare und im universellen Editor.
 feature: Edge Delivery Services
 hide: true
@@ -10,42 +10,42 @@ exl-id: c8f64082-a23f-4919-ad66-042faad77d31
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 13%
+ht-degree: 39%
 
 ---
 
 
-# Forms Experience Builder - Bibliothek mit Eingabeaufforderung
+# Forms Experience Builder - Prompt-Bibliothek
 
-Sammlung wiederverwendbarer Eingabeaufforderungsmuster und Beispiele, die für Forms Experience Builder optimiert wurden. Diese optimierte Bibliothek konzentriert sich auf die beiden Kernerstellungsmethoden „Erstellen von Grund auf“ und „Importieren und Konvertieren“ mit verbesserter Unterstützung für LLM-gestützte intelligente Felder und Markenkonsistenz.
+Eine Sammlung wiederverwendbarer Prompt-Muster und Beispiele, die für Forms Experience Builder optimiert ist. Diese optimierte Bibliothek konzentriert sich auf die beiden wesentlichen Methoden „Von Grund auf neu erstellen“ und „Importieren und konvertieren“ mit verbesserter Unterstützung für LLM-gestützte intelligente Felder und Markenkonsistenz.
 
 >[!NOTE]
 >
-> Der Forms Experience Builder ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
+> Forms Experience Builder ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 >[!IMPORTANT]
 >
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Eingabeaufforderungen, Beispiele und Best Practices können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
+> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
-## Verwenden dieser Eingabeaufforderungsbibliothek
+## Verwenden dieser Prompt-Bibliothek
 
-Diese Bibliothek bietet wiederverwendbare Eingabeaufforderungsmuster für gängige Szenarien zur Formularerstellung. Umfassende Best Practices finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
+Diese Bibliothek bietet wiederverwendbare Prompt-Muster für gängige Szenarien bei der Formularerstellung. Umfassende Best Practices finden Sie im Handbuch [Forms Experience Builder – Erste Schritte](forms-ai-assistant-getting-started.md#best-practices).
 
 ### Schnelltipps für diese Bibliothek
 
-- **Mit Beispielen beginnen** - Verwenden Sie bereitgestellte Eingabeaufforderungen als Vorlagen und passen Sie sie an Ihre Anforderungen an
-- **Zwei Erstellungsmethoden** Wählen Sie Erstellen von Grund auf oder Import- und Konvertierungsansätze
-- **Spezifisch sein** - Fügen Sie allgemeine Beispiele um Ihre eigenen Details
-- **Gründlich testen** - Ergebnisse immer in Ihrer spezifischen Umgebung validieren
+- **Beginnen Sie mit Beispielen**: Verwenden Sie die bereitgestellten Prompts als Vorlagen und passen Sie sie an Ihre Anforderungen an
+- **Zwei Erstellungsmethoden**: Wählen Sie den Ansatz „Von Grund auf neu erstellen“ oder „Importieren und konvertieren“
+- **Seien Sie spezifisch**: Fügen Sie allgemeinen Beispielen eigene Details hinzu
+- **Testen Sie gründlich**: Validieren Sie Ergebnisse immer in Ihrer spezifischen Umgebung
 
 ### Markenvorlagen und -stile
 
-**Bereiten Sie Marken-Assets im Voraus für eine konsistente Formularerstellung vor:**
+**Bereiten Sie Marken-Assets vorab für eine konsistente Formularerstellung vor:**
 
 - **Markenvorlagen** - Bereiten Sie standardisierte Formularvorlagen mit den Farben, Schriftarten und Layout-Mustern Ihres Unternehmens vor
 - **Stilrichtlinien** - Definieren Sie konsistente Feldstile, Schaltflächendesigns und Abstandsstandards, die Forms Experience Builder anwenden kann
 - **Komponentenbibliothek** - Arbeiten Sie mit Ihrem Entwicklungs-Team zusammen, um wiederverwendbare Formularkomponenten vorzubereiten, die Ihrer Markenidentität entsprechen
-- **Visual Assets** - Bereiten Sie Logos, Symbole und Hintergrundelemente für die Formularintegration vor.
+- **Grafik-Assets**: Bereiten Sie Logos, Symbole und Hintergrundelemente für die Formularintegration vor
 
 <!-- **Example Brand Application Prompt:**
 
@@ -100,15 +100,15 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
     Erstellen eines Benutzerregistrierungsformulars mit Bedienfeld für personenbezogene Daten
 
-**Schritt 2: Erforderliche Felder hinzufügen:**
+**Schritt 2 – Kernfelder hinzufügen:**
 
     Felder für @firstName, @lastName, @email und @phoneNumber mit entsprechender Validierung hinzufügen
 
-**Schritt 3: Hinzufügen einer Business-Logik:**
+**Schritt 3 – Business-Logik hinzufügen:**
 
     Regel erstellen: Wenn @age jünger als 18 Jahre ist, Abschnitt mit Informationen zu Eltern/Erziehungsberechtigten anzeigen
 
-**Schritt 4: Verbessern mit Voreinstellungen:**
+**Schritt 4 – Mit Voreinstellungen verbessern:**
 
     Bedienfeld „Voreinstellungen“ mit @newsletterSubscription, @marketingConsent, @termsAccepted hinzufügen
 
@@ -118,11 +118,11 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
 ## Formularerstellung und -verwaltung
 
-**Verwendung:** Wenn Sie neue Formulare erstellen oder vorhandene ändern müssen.
+**Anwendungsfall:** Sie müssen neue Formulare erstellen oder vorhandene ändern.
 
-**Verwendung:** Wählen Sie einen von zwei Ansätzen: von Grund auf neu erstellen oder Importieren und Konvertieren (siehe [Erste Schritte](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
+**Verwendung:** Wählen Sie einen von zwei Ansätzen: „Von Grund auf neu erstellen“ oder „Importieren und konvertieren“ (siehe [Erste Schritte](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
-**Beispielaufforderung - Einfache Formularerstellung:**
+**Beispiel-Prompt – Einfaches Formular erstellen:**
 
     Erstellen Sie ein Formular für Kunden-Feedback mit:
     - Produktbewertung (1-5 Sterne)
@@ -130,7 +130,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     - Kunden-E-Mail (optional)
     - An E-Mail-Benachrichtigung senden
 
-**Beispielaufforderung - Erstellung eines komplexen Formulars:**
+**Beispiel-Prompt – Komplexes Formular erstellen:**
 
     Erstellen eines umfassenden Onboarding-Formulars für Mitarbeiter mit:
     
@@ -156,9 +156,9 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Voreinstellungen:**
     - Leistungsauswahl mit Kostenrechner
     - Voreinstellungen für den Arbeitsplan
-    - Schulungsanforderungen&#x200B;**Validierungsregeln:**&#x200B;Validierung des E-Mail-FormatsValidierungAlter muss 18 oder älter sein**- Alle erforderlichen Dokumente müssen hochgeladen werden
+    - Schulungsanforderungen**Validierungsregeln:**Validierung des E-Mail-FormatsValidierungAlter muss 18 oder älter sein**- Alle erforderlichen Dokumente müssen hochgeladen werden
     
-    - Bedingungen müssen akzeptiert werden&#x200B;**Aktionen senden:**&#x200B;Bestätigungs-E-Mail an neueMitarbeiter senden
+    - Bedingungen müssen akzeptiert werden**Aktionen senden:**Bestätigungs-E-Mail an neueMitarbeiter senden
     - HR- Personalabteilung benachrichtigen
     - Erstellen Sie einen Datensatz in einem HR
      
@@ -170,8 +170,8 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
      
      
      
-&#x200B;-
-**Form Management-Eingabeaufforderungen:**
+-
+**Prompts zur Formularverwaltung:**
 
     Importieren Sie dieses PDF-Antragsformular und konvertieren Sie es in ein adaptives Formular mit erweiterter Validierung
     
@@ -181,15 +181,15 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
 ## Feldverwaltung und -konfiguration
 
-**Verwendung:** Wenn Sie Formularfelder hinzufügen, ändern oder konfigurieren müssen.
+**Anwendungsfall:** Sie müssen Formularfelder hinzufügen, ändern oder konfigurieren.
 
-**Verwendung:** Geben Sie Feldtypen, Validierungsregeln und Anforderungen an das Benutzererlebnis besondere Informationen.
+**Verwendung:** Seien Sie präzise in Bezug auf Feldtypen, Validierungsregeln und Anforderungen an das Benutzererlebnis.
 
-**Beispielaufforderung - Hinzufügen eines einfachen Felds:**
+**Beispiel-Prompt - Einfaches Feld hinzufügen:**
 
     Fügen Sie ein Texteingabefeld für „Firmenname“ mit dem Platzhalter „Geben Sie Ihren Firmennamen ein“
 
-**Beispielaufforderung - Erweiterte Feldkonfiguration:**
+**Beispiel-Prompt – Erweiterte Feldkonfiguration:**
 
     Fügen Sie einen umfassenden Adressabschnitt mit folgender Adresse hinzu:
     
@@ -212,7 +212,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     - Mobile-freundliche Eingabefelder
     - Einhaltung der Barrierefreiheit
 
-**Feldkonfigurationsaufforderungen:**
+**Prompts zur Feldkonfiguration:**
 
     @email Feld mit Echtzeitvalidierung und benutzerdefinierter Fehlermeldung erforderlich machen
     
@@ -222,11 +222,11 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     
     Feld für den Datei-Upload für @resume mit PDF- und DOC-Einschränkungen hinzufügen, max. 5 MB
 
-## LLM-optimierte Smart Fields
+## LLM-optimierte intelligente Felder
 
-**Verwendung:** Wenn Sie Felder mit vorausgefüllten Optionen benötigen, die die Wissensdatenbank der KI nutzen.
+**Anwendungsfall:** Sie benötigen Felder mit vorausgefüllten Optionen, die die Wissensdatenbank der KI nutzen.
 
-**Verwendung:** Anforderungsfelder, für die umfassende Datensätze erforderlich sind - die KI kann Optionen mithilfe ihres integrierten Wissens automatisch ausfüllen.
+**Verwendung:** Fordern Sie Felder an, für die umfassende Datensätze erforderlich sind. Die KI kann Optionen dank des integrierten Wissens automatisch ausfüllen.
 
 ### Geografische Felder und Standortfelder
 
@@ -255,7 +255,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Abteilungsauswahl für große Organisationen einbeziehen
     Feld für professionelle Servicetypen hinzufügen
 
-**Berufsklassifikationen:**
+**Berufsklassifiizierungen:**
 
     Feld für Stellenbezeichnungen mit gemeinsamen Branchenrollen hinzufügen
     Erstellen Sie ein Dropdown-Menü mit professionellen Zertifizierungen nach Feld
@@ -273,7 +273,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Zahlungsmethode-Optionen mit Sicherheitsmerkmalen hinzufügen
     Erstellen Sie eine Auswahl für Bankinstitute nach Land
 
-**Technische Normen:**
+**Technische Standards:**
 
     Dropdown-Liste mit Dateitypen mit Erweiterungen hinzufügen
     Optionen für Netzwerkprotokolle einschließen
@@ -282,7 +282,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
 ### Gesundheitswesen und Medizin
 
-**Medizinische Klassifikationen:**
+**Medizinische Klassifizierungen:**
 
     Feld für medizinische Fachgebiete hinzufügen
     Erstellen Sie eine Dropdown-Liste mit allgemeinen Medikamenten mit generischen Namen
@@ -290,7 +290,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Eine Auswahl für medizinische Notfallkontakte hinzufügen
     Erstellen Sie ein Feld für Ernährungseinschränkungen und Allergien
 
-### Zeit- und Kalenderinformationen
+### Zeit- und Kalenderintelligenz
 
 **Datums- und Uhrzeitfelder:**
 
@@ -300,7 +300,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Feld für die Buchung von Konferenzräumen mit Verfügbarkeit hinzufügen
     Auswahl für Muster wiederkehrender Meetings erstellen
 
-### Produkt- und Servicekategorien
+### Produkt- und Service-Kategorien
 
 **E-Commerce-Klassifizierungen:**
 
@@ -310,7 +310,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Auswahl für Kundenprioritätsstufen hinzufügen
     Feld für Abonnement-Abrechnungszyklen erstellen
 
-**Beispiel: Smart-Feld-Eingabeaufforderungen:**
+**Beispiel-Prompts für intelligente Felder:**
 
     „Ein Feld für Abflughäfen mit allen wichtigen Flughäfen weltweit hinzufügen, einschließlich IATA-Codes und Städtenamen“
     
@@ -324,15 +324,15 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
 ## Regelerstellung und Geschäftslogik
 
-**Verwendung:** Wenn Sie bedingte Logik, Validierungsregeln oder Geschäftsprozesse implementieren müssen.
+**Anwendungsfall:** Sie müssen bedingte Logik, Validierungsregeln oder Geschäftsprozesse implementieren.
 
 **Verwendung:** Beschreiben Sie die Geschäftslogik klar und geben Sie Bedingungen und Aktionen an.
 
-**Beispielaufforderung - Einfache bedingte Logik:**
+**Beispiel-Prompt – Einfache bedingte Logik:**
 
-    Erstellen Sie eine Regel, die @spouseInformation Bedienfeld nur anzeigt, wenn @maritalStatus gleich „Verheiratet“
+    Erstellen Sie eine Regel, die das Panel „@spouseInformation“ nur anzeigt, wenn „@maritalStatus“ gleich „verheiratet“ ist
 
-**Beispielaufforderung - Komplexe Geschäftsregeln:**
+**Beispiel-Prompt –  Komplexe Geschäftsregeln:**
 
     Umfassende Validierung des Kreditantrags implementieren:
     
@@ -384,7 +384,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     
     CRM-Integration zu @applicationForm hinzufügen: Neuen Lead-Datensatz mit @firstName, @lastName, @email erstellen und Status auf „Neue Anwendung“ setzen
 
-**Beispiel-Eingabeaufforderung - Standard-Multi-Channel-Übermittlung:**
+**Beispiel-Prompt – Standardmäßige Multi-Channel-Übermittlung:**
 
 **     Formularübermittlung mit mehreren Datenzielen konfigurieren:
     
@@ -415,7 +415,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
     Verbinden Sie dieses Formular mit dem **CRM-System**, um neue Leads zu erstellen. Ordnen Sie beim Senden des Formulars @firstName FirstName, @email E-Mail zu, legen Sie LeadSource auf „Web-Formular“ und Status 
     
-    Neu“ fest **Workflow-Trigger &#x200B;**. Alle Formulardaten und den Workflow für die Trigger-Genehmigung mit Manager-Benachrichtigung 
+    Neu“ fest **Workflow-Trigger **. Alle Formulardaten und den Workflow für die Trigger-Genehmigung mit Manager-Benachrichtigung 
     
     **Datenbankintegration** übergeben, um Formularübermittlungen als Datensätze zu speichern Erstellen Sie für jede Übermittlung mit hochgeladenen Dokumenten einen neuen Ordner
 
@@ -677,7 +677,7 @@ Set up **performance monitoring** to track form load times and user interactions
 
 ## Befehlsreferenz
 
-### Wesentliche Befehle
+### Wichtige Befehle
 
 | Befehl | Bester Anwendungsfall | Beispiel |
 |---------|---------------|---------|
@@ -692,11 +692,11 @@ Set up **performance monitoring** to track form load times and user interactions
 
 ### Feldverweise
 
-Verwenden Sie `@fieldName` Syntax, um in Ihren Eingabeaufforderungen auf vorhandene Felder zu verweisen:
+Verwenden Sie die `@fieldName`-Syntax, um in Ihren Prompts auf vorhandene Felder zu verweisen:
 
-- `@email` - E-Mail-Referenzfeld
-- `@firstName` - Referenzvornamenfeld
-- `@maritalStatus` - Referenzfeld „Familienstand“
+- `@email`: Verweis auf Feld „E-Mail“
+- `@firstName`: Verweis auf Feld „Vorname“
+- `@maritalStatus`: Verweis auf Feld „Familienstand“
 
 ### Komponententypen
 
@@ -712,26 +712,26 @@ Verwenden Sie `@fieldName` Syntax, um in Ihren Eingabeaufforderungen auf vorhand
 
 **Universelle Eigenschaften (alle Komponenten):**
 
-- **type**: Komponententyp
+- **Typ**: Komponententyp
 - **Name**: Feldkennung für die Formularübermittlung
 - **Label**: Zeigt Text für das Feld an
 - **Beschreibung**: Hilfetext für das Feld
 - **Sichtbar**: Boolescher Wert für anfängliche Sichtbarkeit
 - **Obligatorisch**: Boolescher Wert für erforderliche Felder
 
-**Eingabefeld-Eigenschaften:**
+**Eingabefeldeigenschaften:**
 
 - **Wert**: Standard-/Anfangswert
 - **Platzhalter**: Hinweistext für Eingabefelder
 - **Min**: Mindestwert (für Zahlen/Datumsangaben)
 - **Max**: Höchstwert (für Zahlen/Datumsangaben)
 
-**Eigenschaften für Datei-Uploads:**
+**Datei-Upload-Eigenschaften:**
 
 - **Akzeptieren**: Dateitypen (.pdf, .doc, .docx, .jpg, .png usw.)
 - **Mehrere**: Boolescher Wert für die Auswahl mehrerer Dateien
 
-**Eigenschaften des Auswahlsteuerelements:**
+**Eigenschaften von Auswahlsteuerelementen:**
 
 - **Optionen**: Optionen für Dropdown-Listen (durch Kommas getrennte Liste)
 - **Aktiviert**: Standardauswahl für Kontrollkästchen/Optionsfelder
@@ -757,14 +757,14 @@ Verwenden Sie `@fieldName` Syntax, um in Ihren Eingabeaufforderungen auf vorhand
 - Marketing-Plattformen (Marketo)
 - CRM-Integrationen
 
-### Richtlinien zur Eingabeaufforderungssyntax
+### Richtlinien zur Prompt-Syntax
 
-- **Feldverweise**: `@fieldName` für vorhandene Felder verwenden
-- **Befehle**: `/command` für bestimmte Aktionen verwenden
-- **Natürliche Sprache**: Anforderungen klar und spezifisch beschreiben
+- **Feldverweise**: Verwenden Sie `@fieldName` für vorhandene Felder
+- **Befehle**: Verwenden Sie `/command` für spezifische Aktionen
+- **Natürliche Sprache**: Beschreiben Sie Anforderungen eindeutig und spezifisch
 
 ### Validierungs-Checkliste
 
-Umfassende Best Practices und Validierungsrichtlinien finden Sie im Abschnitt Erste Schritte mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md#best-practices).
+Umfassende Best Practices und Validierungsrichtlinien finden Sie im Handbuch [Forms Experience Builder – Erste Schritte](forms-ai-assistant-getting-started.md#best-practices).
 
-*Diese Eingabeaufforderungsbibliothek wird laufend auf der Grundlage von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de).*
+*Diese Prompt-Bibliothek wird auf Basis von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen fortlaufend aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de).*

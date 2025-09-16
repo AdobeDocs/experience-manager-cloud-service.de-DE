@@ -1,6 +1,6 @@
 ---
-title: Forms Experience Builder - Best Practices
-description: Umfassende Best Practices für die Erstellung effektiver Formulare mit Forms Experience Builder, einschließlich Design, Anwendererlebnis, Leistung und Markenkonsistenz.
+title: Forms Experience Builder – Best Practices
+description: Umfassende Best Practices für die Erstellung effektiver Formulare mit Forms Experience Builder unter Berücksichtigung von Design, Anwendererlebnis, Leistung und Markenkonsistenz.
 feature: Edge Delivery Services
 hide: true
 index: false
@@ -9,271 +9,271 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Forms Experience Builder - Best Practices
+# Forms Experience Builder – Best Practices
 
 >[!NOTE]
 >
-> Der Forms Experience Builder ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
+> Forms Experience Builder ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 >[!IMPORTANT]
 >
-> **Dokumentation kann sich ändern**: Dieses Handbuch mit Best Practices wird derzeit für das Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Best Practices, Empfehlungen und Beispiele können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
+> **Dokumentation kann sich noch ändern**: Diese Best Practices werden derzeit mit dem Produkt getestet und unterliegen Aktualisierungen und Überarbeitungen. Best Practices, Empfehlungen und Beispiele können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
 
 Dieses umfassende Handbuch enthält bewährte Best Practices für die Erstellung effektiver, benutzerfreundlicher Formulare mit Forms Experience Builder. Diese Best Practices stammen aus erfolgreichen Implementierungen und Benutzer-Feedback aus verschiedenen Branchen und Anwendungsfällen.
 
-## Best Practices für den Formularentwurf
+## Best Practices für das Formular-Design
 
-### Einfach halten
+### Halten Sie es einfach
 
-**Beginnen Sie mit den grundlegenden Feldern**
+**Start mit grundlegenden Feldern**
 
-- Beginnen Sie nur mit den wichtigsten Informationen, um die Benutzerüberlastung zu reduzieren.
-- Je nach Benutzeranforderungen und Geschäftsanforderungen schrittweise komplexer gestalten
+- Beginnen Sie mit den wichtigsten Informationen, um die Benutzerüberlastung zu reduzieren.
+- Erhöhen Sie je nach Benutzer- und Geschäftsanforderungen schrittweise die Komplexität
 - Vermeiden Sie es, nach Informationen zu fragen, die Sie eigentlich gar nicht benötigen oder verwenden
-- Berücksichtigen Sie beim Entwerfen von Formularen die Zeit und die kognitive Belastung des Benutzers
+- Berücksichtigen Sie beim Entwerfen von Formularen die Zeit und die kognitive Belastung von Benutzenden
 
-**Verwenden Sie klare, beschreibende Beschriftungen**
+**Verwenden von klaren, beschreibenden Labels**
 
-- Machen Sie die Feldzwecke mit beschreibenden Beschriftungen sofort offensichtlich
-- Vermeiden Sie technischen Jargon oder interne Terminologie, die von Benutzern nicht verstanden wird.
-- Verwenden von einheitlichen Beschriftungskonventionen in Ihren Formularen
-- Kontext bereitstellen, wenn die Feldanforderungen möglicherweise nicht offensichtlich sind
+- Machen Sie den Zweck von Feldern mit beschreibenden Labels sofort offensichtlich
+- Vermeiden Sie technischen Jargon oder interne Terminologie, die Benutzende nicht verstehen
+- Verwenden Sie einheitliche Label-Konventionen in Ihren Formularen
+- Fügen Sie Kontext hinzu, wenn die Feldanforderungen möglicherweise nicht offensichtlich sind
 
-**Hilfreiche Anleitungen geben**
+**Bereitstellen von hilfreichen Anleitungen**
 
-- Hilfetext für komplexe Felder mit Beispielen und Formatierungsanforderungen einschließen
-- Platzhaltertext zur Anzeige der erwarteten Eingabeformate verwenden
-- Klare Anweisungen zum Hochladen von Dateien, einschließlich akzeptierter Formate und Größenbeschränkungen
-- Führen Sie Benutzer durch mehrstufige Prozesse mit Fortschrittsanzeigen
+- Fügen Sie Hilfetext für komplexe Felder mit Beispielen und Formatierungsanforderungen hinzu
+- Verwenden Sie Platzhaltertext zur Anzeige der erwarteten Eingabeformate
+- Formulieren Sie Anweisungen zum Hochladen von Dateien sowie zu akzeptierten Formaten und Größenbeschränkungen klar
+- Führen Sie Benutzende durch mehrstufige Prozesse mit Fortschrittsanzeigen
 
-**Gründlich testen**
+**Gründliches Testen**
 
-- Validieren aller Benutzerpfade und Szenarien vor der Bereitstellung
-- Testen von Formularen mit echten Benutzern aus Ihrer Zielgruppe
-- Überprüfen, ob alle bedingten Logiken erwartungsgemäß funktionieren
-- Sicherstellen, dass die Fehlerbehandlung für klares, umsetzbares Feedback sorgt
+- Überprüfen Sie alle Benutzerpfade und Szenarien vor der Bereitstellung
+- Testen Sie Formulare mit echten Benutzenden aus Ihrer Zielgruppe
+- Überprüfen Sie, ob alle bedingten Logiken erwartungsgemäß funktionieren
+- Stellen Sie sicher, dass die Fehlerbehandlung klares, umsetzbares Feedback zur Verfügung stellt
 
-### progressive Offenlegung
+### Progressive Offenlegung
 
 **Anzeigen relevanter Felder basierend auf dem Kontext**
 
-- Zusätzliche Felder nur anzeigen, wenn sie für die Benutzerauswahl relevant werden
-- Verwenden der bedingten Logik zur Verringerung der kognitiven Belastung und der Formularlänge
-- Gruppieren verwandter Felder in logischen Abschnitten
-- Erweiterte Optionen ausblenden, bis Benutzer angeben, dass sie sie benötigen
+- Zeigen Sie zusätzliche Felder nur an, wenn sie für die Benutzerauswahl relevant werden
+- Verwenden Sie bedingte Logik zur Reduzierung der kognitiven Belastung und der Formularlänge
+- Gruppieren Sie verwandte Felder in logischen Abschnitten
+- Blenden Sie erweiterte Optionen aus, bis Benutzende diese benötigen
 
-**Beispielimplementierung:**
+**Beispiel einer Implementierung:**
 
-    Erstellen Sie eine Regel, die @spouseInformation Bedienfeld nur anzeigt, wenn @maritalStatus gleich „Verheiratet“
+    Erstellen Sie eine Regel, die das Panel „@spouseInformation“ nur anzeigt, wenn „@maritalStatus“ gleich „verheiratet“ ist
 
-**Navigation und Fortschritt löschen**
+**Klare Navigation und klarer Fortschritt**
 
-- Helfen Sie Benutzern zu verstehen, wo sie sich in mehrstufigen Formularen befinden
-- Klare Navigation zwischen Formularabschnitten ermöglichen
-- Fortschrittsanzeigen für längere Formulare
-- Benutzern erlauben, den Fortschritt zu speichern und später zurückzukehren
+- Stellen Sie sicher, dass Benutzende immer wissen, wo sie sich in mehrstufigen Formularen befinden
+- Stellen Sie eine klare Navigation zwischen Formularabschnitten sicher
+- Zeigen Sie Fortschrittsanzeigen für längere Formulare an
+- Ermöglichen Sie es Benutzenden, den Fortschritt zu speichern und später zurückzukehren
 
-## Best Practices für das Benutzererlebnis
+## Best Practices für das Anwendererlebnis
 
 ### Mobile-First-Design
 
-**Responsive Layout-Optimierung**
+**Optimierung des responsiven Layouts**
 
-- Erstellen von Formularen mit mobilen Benutzern als primäre Überlegung
-- Verwenden von einspaltigen Layouts für Mobilgeräte
-- Stellen Sie sicher, dass Touch-Ziele eine angemessene Größe aufweisen (mindestens 44 Pixel).
-- Testformulare in verschiedenen Gerätegrößen und -ausrichtungen
+- Gestalten Sie Formulare mit mobilen Benutzenden als primäre Zielgruppe
+- Verwenden Sie einspaltige Layouts für Mobilgeräte
+- Stellen Sie sicher, dass Touch-Ziele eine angemessene Größe aufweisen (mindestens 44 px)
+- Testen Sie Formulare auf Geräten verschiedener Größen und Ausrichtungen
 
 **Touch-optimierte Interaktionen**
 
-- Implementieren größerer Schaltflächen und Eingabefelder für Touch-Oberflächen
-- Verwenden Sie geeignete Eingabetypen, um Trigger-Tastaturen zu korrigieren
-- Vermeiden von Hover-abhängigen Interaktionen, die auf Touch-Geräten nicht funktionieren
-- Klare visuelle Rückmeldung für Benutzerinteraktionen
+- Implementieren Sie größere Schaltflächen und Eingabefelder für Touch-Oberflächen
+- Verwenden Sie geeignete Eingabetypen, um korrekte Mobiltastaturen auszulösen
+- Vermeiden Sie Interaktionen, die eine Bewegung mit der Maus erfordern, da diese auf Touch-Geräten nicht funktionieren
+- Geben Sie klares visuelles Feedback für Benutzerinteraktionen
 
-### Einhaltung der Barrierefreiheitsanforderungen
+### Compliance mit Barrierefreiheit
 
-**WCAG 2.1-Richtlinien**
+**WCAG 2.1-Richtlinien**
 
-- Befolgen der Richtlinien für barrierefreien Webinhalt für inklusives Design
-- Sicherstellen von angemessenen Farbkontrastverhältnissen (mindestens 4,5 % :1 normalem Text)
-- Alternativtext für alle Bilder und Symbole angeben
-- Implementieren der korrekten Überschriftenstruktur und semantischen HTML
+- Befolgen Sie die Richtlinien für Barrierefreiheit in Webinhalten, um ein inklusives Design zu ermöglichen
+- Achten Sie auf angemessene Farbkontrastverhältnisse (mindestens 4,5:1 für normalen Text)
+- Stellen Sie Alternativtext für alle Bilder und Symbole zur Verfügung
+- Implementieren Sie korrekte Überschriftenstruktur und semantische HTML
 
-**Tastaturnavigation**
+**Navigation über die Tastatur**
 
-- Sicherstellen, dass der Zugriff auf alle Formularelemente über die Tastaturnavigation erfolgt
-- Bereitstellung klarer Fokusindikatoren für alle interaktiven Elemente
-- Implementieren der logischen Registerkartenreihenfolge durch Formularfelder
-- Überspringen von Navigations-Links für komplexe Formulare einschließen
+- Stellen Sie sicher, dass auf alle Formularelemente über die Tastaturnavigation zugegriffen werden kann
+- Stellen Sie klare Fokusindikatoren für alle interaktiven Elemente zur Verfügung
+- Implementieren Sie eine logische Registerkartenreihenfolge durch Formularfelder
+- Implementieren Sie Links zum Überspringend der Navigation für komplexe Formulare
 
-**Screen Reader Support**
+**Unterstützung von Bildschirmlesehilfen**
 
-- Verwenden der richtigen ARIA-Bezeichnungen und -Beschreibungen für Formularfelder
-- Bereitstellung klarer Fehlermeldungen, die an Bildschirmlesehilfen ausgegeben werden
-- Sicherstellen, dass dynamische Inhaltsänderungen ordnungsgemäß angekündigt werden
-- Testen von Formularen mit aktueller Bildschirmlesehilfe-Software
+- Verwenden Sie die richtigen ARIA-Labels und -Beschreibungen für Formularfelder
+- Stellen Sie klare Fehlermeldungen zur Verfügung, die von Bildschirmlesehilfen angekündigt werden
+- Stellen Sie sicher, dass Änderungen des dynamischen Inhalts ordnungsgemäß angekündigt werden
+- Testen Sie Formulare mit aktueller Bildschirmlesehilfe-Software
 
 ### Leistungsoptimierung
 
 **Ladegeschwindigkeit**
 
-- Optimieren der Ladezeiten von Formularen durch Minimieren der anfänglichen Paketgröße
-- Implementieren von verzögertem Laden für nicht kritische Formularabschnitte
-- Optimieren von Bildern und Assets für die Web-Bereitstellung
-- Aktivieren geeigneter Caching-Strategien für statische Ressourcen
+- Optimieren Sie die Ladezeiten von Formularen durch Minimieren der anfänglichen Paketgröße
+- Implementieren Sie verzögertes Laden für nicht kritische Formularabschnitte
+- Bilder und Assets für die Web-Bereitstellung optimieren
+- Aktivieren Sie geeignete Caching-Strategien für statische Ressourcen
 
 **Laufzeitleistung**
 
-- Verwenden Sie einen geeigneten Validierungszeitpunkt, um Benutzererlebnis und Leistung aufeinander abzustimmen.
-- Implementieren des Bounces für die Echtzeit-Validierung, um Server-Anfragen zu reduzieren
-- Häufig aufgerufene Daten und Validierungsergebnisse zwischenspeichern
-- Optimieren der Ausführung von bedingten Logiken für komplexe Formulare
+- Verwenden Sie einen geeigneten Validierungszeitpunkt, um Benutzererlebnis und Leistung aufeinander abzustimmen
+- Implementieren Sie Debouncing für die Echtzeit-Validierung, um Server-Anfragen zu reduzieren
+- Aktivieren Sie Caching von häufig aufgerufenen Daten und Validierungsergebnissen
+- Optimieren Sie die Ausführung von bedingter Logik für komplexe Formulare
 
 **Automatisches Speichern und Datenschutz**
 
-- Automatisches Speichern des Formularfortschritts implementieren, um Datenverlust zu vermeiden
-- Bieten Sie nach Möglichkeit Offline-Funktionen für das Ausfüllen des Formulars.
-- Wiederholungslogik für fehlgeschlagene Übermittlungen einschließen
-- Datenexportoptionen als Backup für Benutzer anbieten
+- Implementieren Sie automatisches Speichern des Formularfortschritts, um Datenverlust zu vermeiden
+- Bieten Sie nach Möglichkeit Offline-Funktionen für das Ausfüllen des Formulars an
+- Implementieren Sie Wiederholungslogik für fehlgeschlagene Übermittlungen
+- Bieten Sie Datenexportoptionen als Backup für Benutzende an
 
 ## Best Practices für die Markenkonsistenz
 
-### Vorbereiten von Brand Assets
+### Vorbereiten von Marken-Assets
 
 **Erstellen von Markenvorlagen**
 
-- Entwicklung standardisierter Formularvorlagen mit der visuellen Identität Ihres Unternehmens
-- Konsistente Farbschemata, Typografie und Layout-Muster einschließen
-- Vorbereiten wiederverwendbarer Komponenten, die Ihren Markenrichtlinien entsprechen
-- Dokumentenstilstandards für eine konsistente Implementierung in allen Teams
+- Entwickeln Sie standardisierter Formularvorlagen mit der visuellen Identität Ihres Unternehmens
+- Achten Sie auf konsistente Farbschemata, Typografie und Layout-Muster
+- Bereiten Sie wiederverwendbarer Komponenten vor, die Ihren Markenrichtlinien entsprechen
+- Dokumentieren Sie Stilstandards, um eine konsistente Implementierung in allen Teams zu gewährleisten
 
 **Definieren von Stilrichtlinien**
 
-- Konsistente Feldstile, Schaltflächenentwürfe und Abstandsstandards
+- Erstellen Sie konsistente Feldstile, Schaltflächen-Designs und Abstandsstandards
 - Erstellen Sie ein Stil-Handbuch, das Farb-Codes, Schriftspezifikationen und Layout-Regeln enthält
-- Definieren von Interaktionsmustern und Animationsrichtlinien
-- Vorbereiten markenspezifischer Fehlermeldungen und Hilfetexte
+- Definieren Sie Interaktionsmustern und Animationsrichtlinien
+- Bereiten Sie markenspezifische Fehlermeldungen und Hilfetexte vor
 
-**Komponentenbibliothek erstellen**
+**Bibliothek mit Bausteinkomponenten**
 
 - Erstellen Sie wiederverwendbare Formularkomponenten, die Ihrer Markenidentität entsprechen
-- Konsistente Navigationsmuster und Elemente der Benutzeroberfläche entwickeln
-- Vorbereiten von Markensymbolen, Logos und visuellen Assets für die Formularintegration
-- Erstellen von Vorlagen für allgemeine Formulartypen (Kontakt, Registrierung, Feedback)
+- Entwickeln Sie konsistente Navigationsmuster und Elemente der Benutzeroberfläche
+- Bereiten Sie Markensymbolen, Logos und visuelle Assets für die Formularintegration vor
+- Erstellen Sie Vorlagen für allgemeine Formulartypen (Kontakt, Registrierung, Feedback)
 
 ### Strategien zur Markenimplementierung
 
-**Stil fordert zur Konsistenz auf**
+**Stil-Prompts für Konsistenz**
 
-Fügen Sie in Ihre Eingabeaufforderungen markenspezifische Anweisungen ein:
+Fügen Sie markenspezifische Anweisungen in Ihre Prompts ein:
 
-    Erstellen Sie ein professionelles Kontaktformular mit:
-    - Unternehmensblau (#003366) für primäre Schaltflächen und Kopfzeilen
-    - Offene Sans-Schriftfamilie für alle Textelemente
-    - Mindestschriftgröße von 16 Pixel für Barrierefreiheit
-    - Konsistenter 24-Pixel-Abstand zwischen Formularabschnitten
-    - Firmenlogo in der Kopfzeile mit korrekter Markenpositionierung
+    Erstellen Sie ein professionelles Kontaktformular unter Verwendung von:
+    – Unternehmensblau (#003366) für primäre Schaltflächen und Kopfzeilen
+    – Schriftfamilie „Open Sans“ für alle Textelemente
+    – Mindestschriftgröße von 16 px zur Compliance mit Barrierefreiheit
+    – Konsistenter Abstand von 24 px zwischen Formularabschnitten
+    – Firmenlogo in der Kopfzeile mit korrekter Markenpositionierung
 
-**Vorlagenbibliotheksverwaltung**
+**Verwaltung der Vorlagenbibliothek**
 
-- Pflegen einer Sammlung von Formularvorlagen mit Branding für gängige Anwendungsfälle
-- Versionskontrolle Ihrer Markenvorlagen zur Sicherstellung der Konsistenz
-- Bereitstellung einer klaren Dokumentation zur Verwendung und Anpassung von Vorlagen
-- Regelmäßige Überprüfung und Aktualisierung der Marken-Assets zur Einhaltung aktueller Standards
+- Pflegen Sie eine Sammlung von Formularvorlagen mit Branding für gängige Anwendungsfälle
+- Verwenden Sie eine Versionskontrolle Ihrer Markenvorlagen zur Sicherstellung der Konsistenz
+- Stellen Sie eine klaren Dokumentation zur Verwendung und Anpassung von Vorlagen zur Verfügung
+- Überprüfen und aktualisieren Sie Marken-Assets zur Einhaltung aktueller Standards regelmäßig
 
 >[!NOTE]
 >
->**Benutzerdefinierte Komponenten**: Koordinieren Sie sich mit Ihrem Entwicklungs-Team, um organisationsspezifische Komponenten und deren Kompatibilität mit Forms Experience Builder zu verwenden, bevor Sie benutzerdefinierte Markenelemente implementieren.
+>**Benutzerdefinierte Komponenten**: Koordinieren Sie sich mit Ihrem Entwicklungs-Team, um organisationsspezifische Komponenten und deren Kompatibilität mit dem Forms Experience Builder zu verwenden, bevor Sie benutzerdefinierte Markenelemente implementieren.
 
 ## Best Practices für Inhalt und Kommunikation
 
 ### Ansätze der Formularerstellung
 
-**Zwei Primäre Methoden**
+**Zwei Hauptmethoden**
 
 Wählen Sie die für Ihre Anforderungen am besten geeignete Erstellungsmethode aus:
 
-1. **Erstellen von Grund auf**: Optimiert für neue Formulare mit spezifischen Anforderungen
+1. **Erstellen von Grund auf**: Ideal für neue Formulare mit spezifischen Anforderungen
 2. **Importieren und Konvertieren**: Ideal für die Modernisierung vorhandener Formulare und Dokumente
 
-**Natürliche Spracheingabe**
+**Prompts in natürlicher Sprache**
 
-- Seien Sie in Ihren Formularbeschreibungen spezifisch und detailliert
-- Verwendung klarer, auf Geschäftsabläufe fokussierter Terminologie anstelle von technischen Begriffen
-- Kontext über den Zweck und die Zielgruppe des Formulars bereitstellen
-- Einschließen von Validierungs- und Geschäftsregelanforderungen in anfängliche Eingabeaufforderungen
+- Formulieren Sie Ihre Formularbeschreibungen spezifisch und detailliert
+- Verwenden Sie klare, auf Geschäftsabläufe fokussierte Terminologie anstelle von technischen Begriffen
+- Stellen Sie Kontext über den Zweck und die Zielgruppe des Formulars zur Verfügung
+- Nehmen Sie Validierungs- und Geschäftsregelanforderungen in anfängliche Prompts auf
 
-### Inkrementelle Entwicklungsstrategie
+### Strategie für inkrementelle Entwicklung
 
-**Einfach anfangen, Komplexität aufbauen**
+**Einfaches Starten, Aufbauen der Komplexität**
 
 - Beginnen Sie mit der grundlegenden Formularstruktur und den wesentlichen Feldern
-- Inkrementelles Hinzufügen von Validierungsregeln und Geschäftslogik
-- Testen Sie jede Ergänzung, bevor Sie mit der nächsten Verbesserung fortfahren.
-- Sammeln von Benutzer-Feedback in jeder Entwicklungsphase
+- Fügen Sie Validierungsregeln und Geschäftslogik schrittweise hinzu
+- Testen Sie jede Änderung, bevor Sie zur nächsten Erweiterung übergehen
+- Sammeln Sie Benutzer-Feedback in jeder Entwicklungsphase
 
 **Beispiel für inkrementellen Ansatz:**
 
-    Schritt 1: „Erstellen eines einfachen Kontaktformulars mit Namen-, E-Mail- und Nachrichtenfeldern“
-    Schritt 2: &quot;@name und @email Pflichtfelder mit entsprechender Validierung machen“
-    Schritt 3: „Platzhaltertext und Hilfetext zur Benutzeranleitung hinzufügen“
-    Schritt 4: „Bedingte Logik auf der Grundlage des Anfragetyps hinzufügen“
+    Schritt 1: „Erstellen Sie ein einfache Kontaktformular mit Namen-, E-Mail- und Nachrichtenfeldern“
+    Schritt 2: „Machen Sie die Felder „@name“ und „@email“ zu Pflichtfeldern mit entsprechender Validierung“
+    Schritt 3: „Fügen Sie Platzhaltertext und Hilfetext zur Benutzeranleitung hinzu“
+    Schritt 4: „Fügen Sie bedingte Logik auf der Grundlage des Anfragetyps hinzu“
 
-### Best Practices für Feldreferenzen
+### Best Practices für Feldverweise
 
 **Konsistente Benennungskonventionen**
 
-- Verwenden Sie klare, beschreibende Feldnamen, die ihrem Zweck entsprechen.
-- Beibehalten konsistenter Benennungsmuster in allen Formularen
-- Verwenden Sie camelCase oder snake_case konsistent in Ihren Formularen.
-- Benennungskonventionen für Dokumentfelder zur Gewährleistung der Team-Konsistenz
+- Verwenden Sie klare, beschreibende Feldnamen, die ihrem Zweck entsprechen
+- Behalten Sie konsistenter Benennungsmuster in allen Formularen bei
+- Verwenden Sie camelCase oder snake_case konsistent in Ihren Formularen
+- Dokumentieren Sie Benennungskonventionen für Felder zur Gewährleistung der Team-Konsistenz
 
 **Effektive Feldverweise**
 
-- `@fieldName` beim Ändern vorhandener Felder verwenden
-- Geben Sie an, auf welche Felder Sie in komplexen Formularen verweisen
-- Gruppieren Sie verwandte Feldänderungen in einzelnen Anfragen.
-- Feldnamen überprüfen, bevor sie in der bedingten Logik verwendet werden
+- Verwenden Sie die Syntax `@fieldName`, wenn Sie vorhandene Felder bearbeiten
+- Geben Sie klar an, auf welche Felder Sie in komplexen Formularen verweisen
+- Gruppieren Sie verwandte Feldbearbeitungen in einzelnen Anfragen
+- Überprüfen Sie Feldnamen, bevor sie Sie in bedingter Logik verwenden
 
 ## Best Practices für Integration und Übermittlung
 
 ### Multi-Channel-Übermittlungsstrategie
 
-**Primäre und Sekundäre Aktionen**
+**Primäre und sekundäre Aktionen**
 
-- Konfigurieren von primären Übermittlungsendpunkten für zentrale Geschäftsprozesse
-- Einrichten sekundärer Aktionen für Benachrichtigungen, Bestätigungen und Datensicherung
-- Implementieren der Fehlerbehandlung und Wiederholungslogik für fehlgeschlagene Übermittlungen
+- Konfigurieren Sie primäre Übermittlungsendpunkten für zentrale Geschäftsprozesse
+- Richten Sie sekundäre Aktionen für Benachrichtigungen, Bestätigungen und Daten-Backup ein
+- Implementieren Sie Fehlerbehandlung und Wiederholungslogik für fehlgeschlagene Übermittlungen
 - Geben Sie Benutzer-Feedback für alle Übermittlungsstatus (Erfolg, Fehler, Verarbeitung)
 
 **Integrationsplanung**
 
-- Beginnen Sie mit der grundlegenden Übermittlungskonfiguration und fügen Sie Integrationen schrittweise hinzu.
-- Testen Sie jede Integration separat, bevor Sie mehrere Endpunkte kombinieren.
-- Document API-Anforderungen und -Authentifizierungsmethoden
-- Planen der Datenumwandlungs- und Zuordnungsanforderungen
+- Beginnen Sie mit der grundlegenden Übermittlungskonfiguration und fügen Sie Integrationen schrittweise hinzu
+- Testen Sie jede Integration separat, bevor Sie mehrere Endpunkte kombinieren
+- Dokumentieren Sie API-Anforderungen und -Authentifizierungsmethoden
+- Planen Sie Datenumwandlungs- und Zuordnungsanforderungen
 
 ### Fehlerbehandlung und Wiederherstellung
 
 **Benutzerfreundliche Fehlermeldungen**
 
-- Bereitstellung klarer, umsetzbarer Fehlermeldungen, die Benutzern beim Lösen von Problemen helfen
-- Vermeiden Sie technische Fehlercodes oder Systemmeldungen in benutzerfreundlichen Inhalten
-- Alternative Aktionen anbieten, wenn die primäre Übermittlung fehlschlägt
-- Kontaktinformationen für Benutzer einschließen, die zusätzliche Hilfe benötigen
+- Formulieren Sie klare, umsetzbare Fehlermeldungen, die Benutzenden beim Lösen von Problemen helfen
+- Vermeiden Sie technische Fehler-Codes oder Systemmeldungen in Inhalten für Benutzende
+- Bieten Sie alternative Aktionen an, wenn die primäre Übermittlung fehlschlägt
+- Geben Sie Benutzenden Kontaktinformationen an, wenn sie zusätzliche Hilfe benötigen
 
-**Datenschutz und Wiederherstellung**
+**Datenschutz und Wiederherstellung von Daten**
 
-- Implementieren des lokalen Datenspeichers für die Formularwiederherstellung nach Fehlern
-- Optionen für Benutzer bereitstellen, um ihre Formulardaten als Backup herunterzuladen
-- Einrichten von Überwachung und Warnhinweisen für fehlgeschlagene Übermittlungen
-- Planen von Wiederherstellungsverfahren bei Systemausfällen oder Wartungsarbeiten
+- Implementieren Sie einen lokalen Datenspeicher für die Formularwiederherstellung nach Fehlern
+- Stellen Sie Optionen für Benutzende bereit, mit denen Sie ihre Formulardaten als Backup herunterladen können
+- Richten Sie eine Überwachung und Warnhinweise für fehlgeschlagene Übermittlungen ein
+- Planen Sie Wiederherstellungsverfahren bei Systemausfällen oder Wartungsarbeiten
 
 ## Best Practices für Leistung und Analyse
 
@@ -281,167 +281,167 @@ Wählen Sie die für Ihre Anforderungen am besten geeignete Erstellungsmethode a
 
 **Wichtige Leistungsmetriken**
 
-- Verfolgen der Formularabschlussraten und -abbruchpunkte
-- Ladezeiten und Interaktionsmuster von Benutzern überwachen
-- Messung der Validierungs-Effektivität und der Fehlerquoten
-- Analysieren des Feedbacks und der Zufriedenheitswerte der Benutzer
+- Verfolgen Sie Formularabschlussraten und -abbruchpunkte
+- Überwachen Sie Ladezeiten und Interaktionsmuster von Benutzenden
+- Messen Sie Validierungseffektivität und Fehlerraten
+- Analysieren Sie Feedback und Zufriedenheitswerte von Benutzenden
 
 **Kontinuierliche Verbesserung**
 
-- Regelmäßige Überprüfung der Formularanalyse zur Ermittlung von Optimierungsmöglichkeiten
-- A/B-Tests verschiedener Formularentwürfe und Benutzerabläufe
-- Sammlung und Analyse von Benutzer-Feedback für iterative Verbesserungen
-- Benchmarking der Leistung anhand von Branchenstandards
+- Überprüfen Sie die Formularanalyse zur Ermittlung von Optimierungsmöglichkeiten regelmäßig
+- Führen Sie A/B-Tests verschiedener Formular-Designs und Benutzerabläufe durch
+- Sammeln und analysieren Sie Benutzer-Feedback für iterative Verbesserungen
+- Führen Sie Benchmarking der Leistung anhand von Branchenstandards durch
 
 ### Datenqualität und -validierung
 
 **Intelligente Validierungsstrategien**
 
-- Echtzeit-Validierung für sofortiges Benutzer-Feedback implementieren
-- Verwenden der progressiven Validierung, um Benutzer durch komplexe Anforderungen zu führen
-- Klare Validierungsmeldungen bereitstellen, die erklären, wie Fehler behoben werden
-- Abwägen der Schärfe der Validierung mit Überlegungen zum Benutzererlebnis
+- Implementieren Sie Echtzeitvalidierung für sofortiges Benutzer-Feedback
+- Verwenden Sie progressive Validierung, um Benutzende durch komplexe Anforderungen zu führen
+- Stellen Sie klare Validierungsmeldungen bereit, die erklären, wie Fehler behoben werden
+- Wägen Sie die Schärfe der Validierung mit Überlegungen zum Anwendererlebnis ab
 
 **Datenintegrität**
 
-- Implementieren von feldübergreifenden Validierungen für Datenkonsistenz
+- Implementieren Sie feldübergreifenden Validierungen für Datenkonsistenz
 - Verwenden Sie geeignete Eingabetypen und Einschränkungen, um ungültige Daten zu verhindern
-- Bereitstellung von Beispielen für Datenformate und Anleitungen für komplexe Felder
-- Regelmäßige Prüfung der Qualität der übermittelten Daten und der Validierungswirksamkeit
+- Stellen Sie Beispiele für Datenformate und Anleitungen für komplexe Felder zur Verfügung
+- Prüfen Sie die Qualität der übermittelten Daten und die Effektivität der Validierung regelmäßig
 
 ## Best Practices für Sicherheit und Compliance
 
 ### Datenschutz
 
-**Datenschutz per Design**
+**Standardmäßiger Datenschutz**
 
 - Sammeln Sie nur die für Ihren Geschäftszweck erforderlichen Mindestdaten
-- Implementieren geeigneter Richtlinien zur Datenaufbewahrung und Löschung
-- Klare Datenschutzhinweise und Einverständnismechanismen bereitstellen
-- Gewährleistung der Einhaltung relevanter Datenschutzbestimmungen (DSGVO, CCPA usw.)
+- Implementieren Sie geeignete Richtlinien zur Datenspeicherung und -löschung
+- Stellen Sie klare Datenschutzhinweise und Einverständnismechanismen bereit
+- Stellen Sie Compliance mit relevanten Datenschutzbestimmungen (DSGVO, CCPA usw.) sicher
 
-**Sicherheitsimplementierung**
+**Implementierung von Sicherheit**
 
-- HTTPS-Verschlüsselung für alle Formularübermittlungen und Datenübertragungen verwenden
-- Implementieren einer ordnungsgemäßen Eingabevalidierung und Bereinigung
-- Einrichten eines sicheren Datei-Uploads mit entsprechenden Einschränkungen und Virenprüfungen
-- Regelmäßige Sicherheits-Audits und Schwachstellenbewertungen
+- Nutzen Sie HTTPS-Verschlüsselung für alle Formularübermittlungen und Datenübertragungen
+- Implementieren Sie eine ordnungsgemäße Eingabevalidierung und -bereinigung
+- Richten Sie sichere Datei-Uploads mit entsprechenden Einschränkungen und Virenprüfungen ein
+- Führen Sie regelmäßige Sicherheitsaudits und Schwachstellenbewertungen durch
 
-### Überlegungen zur Konformität
+### Überlegungen zur Compliance
 
-**Vorschriften**
+**Behördliche Vorschriften**
 
-- Branchenspezifische Compliance-Anforderungen verstehen und implementieren
-- Dokumentieren von Compliance-Maßnahmen zu Auditzwecken
-- Regelmäßige Überprüfung von Änderungen der Rechtsvorschriften und ihrer Auswirkungen auf Formulare
-- Mitarbeiterschulung zu Compliance-Anforderungen und Umsetzung
+- Machen Sie sich mit branchenspezifische Compliance-Anforderungen vertraut und implementieren Sie diese
+- Dokumentieren Sie Compliance-Maßnahmen zu Auditzwecken
+- Überprüfen Sie Änderungen von behördlichen Vorschriften und ihre Auswirkungen auf Formulare regelmäßig
+- Führen Sie Personalschulungen zu Compliance-Anforderungen und -Umsetzung durch
 
-**Barrierefreiheit**
+**Compliance mit Barrierefreiheit**
 
-- Befolgen der WCAG 2.1 AA-Richtlinien für Barrierefreiheit
-- Regelmäßige Zugänglichkeitstests mit Hilfstechnologien
-- Benutzertests mit Menschen mit Behinderungen
-- Dokumentation von Barrierefreiheitsfunktionen und Compliance-Maßnahmen
+- Befolgen Sie WCAG 2.1 AA-Richtlinien für Barrierefreiheit
+- Testen Sie Barrierefreiheit mit Unterstützungstechnologien regelmäßig
+- Führen Sie regelmäßig Benutzertests mit Personen mit Behinderungen durch
+- Dokumentieren Sie Barrierefreiheitsfunktionen und Compliance-Maßnahmen
 
-## Best Practices für Team Collaboration
+## Best Practices für Team-Zusammenarbeit
 
 ### Dokumentation und Wissensaustausch
 
-**Formulardokumentation**
+**Dokumentation für Formulare**
 
-- Klare Dokumentation der Formularzwecke, Anforderungen und Geschäftsregeln
-- Document Integration-Endpunkte, Datenflüsse und Abhängigkeiten
-- Versionsverlauf und Änderungsprotokolle für Formularaktualisierungen aufbewahren
-- Austausch von Best Practices und Erfahrungen über Teams hinweg
+- Pflegen Sie eine klare Dokumentation der Zwecke, Anforderungen und Geschäftsregeln von Formularen
+- Dokumentieren Sie Integrationsendpunkte, Datenflüsse und Abhängigkeiten
+- Pflegen Sie einen Versionsverlauf und Änderungsprotokolle für Formularaktualisierungen
+- Tauschen Sie Best Practices und Erfahrungen über Teams aus
 
 **Schulung und Einführung**
 
-- Bieten Sie Schulungen für Team-Mitglieder zu den Funktionen von Forms Experience Builder an
-- Festlegen von Richtlinien für die konsistente Formularerstellung im gesamten Unternehmen
-- Regelmäßige Wissensaustauschsitzungen für neue Funktionen und Best Practices
-- Mentoring-Programme für neue Benutzer der Plattform
+- Bieten Sie Schulungen für Team-Mitglieder zu den Funktionen des Forms Experience Builder an
+- Legen Sie Richtlinien für die konsistente Formularerstellung im gesamten Unternehmen fest
+- Führen Sie regelmäßige Sitzungen zum Wissensaustausch zu neuen Funktionen und Best Practices durch
+- Stellen Sie Mentoring-Programme für neue Benutzende der Plattform zur Verfügung
 
 ### Qualitätssicherung
 
 **Überprüfungsprozesse**
 
-- Implementieren von Peer-Review-Prozessen für den Formularentwurf und die Implementierung
-- Erstellen von Testprotokollen für Formularfunktionalität und Benutzererlebnis
-- Regelmäßige Prüfungen vorhandener Formulare zur Optimierung
-- Feedback-Sammlung sowohl von internen Benutzern als auch von Endbenutzern
+- Implementieren Sie Peer-Review-Prozesse für Formularentwurf und -implementierung
+- Erstellen Sie Testprotokolle für Formularfunktionalität und Anwendererlebnis
+- Führen Sie regelmäßige Audits vorhandener Formulare zur Optimierung durch
+- Sammeln Sie Feedback sowohl von internen Benutzenden als auch von Endbenutzenden
 
 **Standards und Richtlinien**
 
-- Entwicklung von Organisationsstandards für Formularentwurf und -implementierung
-- Erstellen von Vorlagen und Richtlinien für allgemeine Formulartypen
-- Einrichten von Genehmigungsprozessen für neue Formulare und größere Änderungen
-- Regelmäßige Überprüfung und Aktualisierung von Organisationsstandards
+- Entwickeln Sie Organisationsstandards für Formularentwurf und -implementierung
+- Erstellen Sie Vorlagen und Richtlinien für allgemeine Formulartypen
+- Erstellen Sie Genehmigungsprozessen für neue Formulare und größere Änderungen
+- Überprüfen und aktualisieren Sie Organisationsstandards regelmäßig
 
 ## Erweiterte Best Practices
 
-### LLM-optimierte Smart Fields
+### LLM-optimierte intelligente Felder
 
 **Nutzen von KI-Wissen**
 
-- Nutzen Sie das integrierte Wissen der KI für umfassende Feldoptionen
-- Anfordern intelligenter Felder für geografische Daten, Unternehmensklassifizierungen und Branchenstandards
-- Implementieren einer intelligenten Feldpopulation für ein verbessertes Benutzererlebnis
-- Testen der Genauigkeit und Vollständigkeit von Smart-Feldern für Ihre spezifischen Anwendungsfälle
+- Nutzen Sie das integrierte Wissen von KI für umfassende Feldoptionen
+- Fordern Sie intelligente Felder für geografische Daten, Unternehmensklassifizierungen und Branchenstandards an
+- Implementieren Sie intelligente Feldpopulation für ein verbessertes Anwendererlebnis
+- Testen Sie Genauigkeit und Vollständigkeit von intelligenten Feldern für Ihre spezifischen Anwendungsfälle
 
 **Beispiele für intelligente Felder**
 
-    „Fügen Sie ein Feld Abflughafen mit allen wichtigen Flughäfen weltweit hinzu, einschließlich IATA-Codes“
-    „Erstellen Sie ein umfassendes Branchenfeld mit der standardmäßigen NAICS-Klassifizierung“
-    „Schließen Sie ein Dropdown-Menü für die professionelle Zertifizierung ein, das sich je nach Tätigkeitsfeld anpasst“
+    „Füge ein Feld für Abflughafen mit allen wichtigen Flughäfen weltweit hinzu, einschließlich IATA-Codes“
+    „Erstelle ein Feld für umfassende Branchen mit der standardmäßigen NAICS-Klassifizierung“
+    „Füge ein Dropdown-Menü für professionelle Zertifizierungen hinzu, das sich je nach Tätigkeitsfeld anpasst“
 
 ### Erweiterte Formularlogik
 
 **Komplexe Geschäftsregeln**
 
-- Aufspaltung komplexer Geschäftslogik in kleinere, testbare Komponenten
-- Anforderungen an Geschäftsregeln vor der Implementierung klar dokumentieren
-- Testen Sie Edge-Fälle und Ausnahmeszenarien gründlich
-- Bereitstellung von klarem Benutzer-Feedback für Verstöße gegen Geschäftsregeln
+- Schlüsseln Sie komplexe Geschäftslogik in kleinere, testbare Komponenten auf
+- Dokumentieren Sie Anforderungen an Geschäftsregeln vor der Implementierung klar
+- Testen Sie Grenzfälle und Ausnahmeszenarien gründlich
+- Stellen Sie klares Benutzer-Feedback für Verstöße gegen Geschäftsregeln bereit
 
-**Dynamisches Formularverhalten**
+**Verhalten dynamisch Formulare**
 
-- Progressive Offenlegung verwenden, um relevante Felder basierend auf der Benutzereingabe anzuzeigen
-- Implementieren intelligenter Standardwerte, die von Benutzern überschrieben werden können
-- Erstellen adaptiver Formulare, die sich an das Benutzerverhalten und die Voreinstellungen anpassen
-- Balance zwischen Automatisierung mit Benutzerkontrolle und Transparenz
+- Verwenden Sie progressive Offenlegung, um relevante Felder basierend auf der Benutzereingabe anzuzeigen
+- Implementieren Sie intelligente Standardwerte, die von Benutzenden überschrieben werden können
+- Erstellen Sie adaptive Formulare, die sich an das Benutzerverhalten und die Voreinstellungen anpassen
+- Wägen Sie Automatisierung mit Benutzerkontrolle und Transparenz ab
 
 ## Validierung und Tests
 
-### Umfassende Teststrategie
+### Strategie für umfassende Tests
 
-**Tests auf mehreren Ebenen**
+**Mehrstufige Tests**
 
-- Komponententests für einzelne Formularkomponenten und Validierungsregeln
+- Modultests für einzelne Formularkomponenten und Validierungsregeln
 - Integrationstests für Übermittlungsendpunkte und Datenflüsse
 - Benutzerakzeptanztests mit repräsentativen Benutzergruppen
 - Leistungstests unter verschiedenen Lastbedingungen
 
 **Plattformübergreifende Validierung**
 
-- Testen von Formularen in verschiedenen Browsern und Versionen
-- Mobile Erlebnisse auf verschiedenen Geräten und Bildschirmgrößen validieren
-- Zugänglichkeitstests mit verschiedenen Hilfstechnologien
-- Netzwerkzustandstests für verschiedene Verbindungsgeschwindigkeiten
+- Testen Sie Formulare in verschiedenen Browsern und Versionen
+- Validieren Sie mobile Erlebnisse auf verschiedenen Geräten und Bildschirmgrößen
+- Führen Sie Barrierefreiheitstests mit verschiedenen Unterstützungstechnologien durch
+- Führen Sie Netzwerkzustandstests für verschiedene Verbindungsgeschwindigkeiten durch
 
 ### Qualitätsmetriken
 
 **Erfolgsindikatoren**
 
-- Formularausfüllungsraten über branchenüblichen Benchmarks
-- Niedrige Fehlerquoten und hohe Benutzerzufriedenheit
+- Formularabschlussraten über branchenüblichen Benchmarks
+- Niedrige Fehlerraten und hohe Benutzerzufriedenheitswerte
 - Schnelle Ladezeiten und responsive Benutzerinteraktionen
 - Erfolgreiche Integration mit Backend-Systemen und -Prozessen
 
 **Kontinuierliche Überwachung**
 
-- Regelmäßige Überprüfung der Formularleistungsmetriken und des Benutzer-Feedbacks
+- Regelmäßige Überprüfung von Formularleistungsmetriken und Benutzer-Feedback
 - Proaktive Identifizierung und Lösung von Problemen
 - Trendanalyse zur Nutzung und Effektivität von Formularen
 - Benchmarking anhand von Branchenstandards und Best Practices
 
-Weitere Anleitungen und ausführliche Beispiele finden Sie im Handbuch zu den ersten Schritten mit Forms Experience Builder [&#128279;](forms-ai-assistant-getting-started.md) und in der Eingabeaufforderungsbibliothek zu Forms Experience Builder[.](ai-assistant-prompt-library.md)
+Weitere Anleitungen und ausführliche Beispiele finden Sie im Handbuch zu den [ersten Schritten mit dem Forms Experience Builder](forms-ai-assistant-getting-started.md) und zur [ Prompt-Bibliothek des Forms Experience Builder](ai-assistant-prompt-library.md).

@@ -214,7 +214,7 @@ Um „Varianten generieren“ im Sidekick (von Edge Delivery Services) verwenden
 
    Diese muss mit Ihrer vorhandenen Konfiguration zusammengeführt und dann bereitgestellt werden.
 
-   Zum Beispiel:
+   Beispiel:
 
    ```prompt
    {

@@ -1,21 +1,21 @@
 ---
-title: Betriebliche Telemetrie für AEM as a Cloud Service
-description: Erfahren Sie mehr über Operational Telemetry , einen automatisierten Service, mit dem die Client-seitige Datenerfassung überwacht wird.
+title: Operational Telemetry für AEM as a Cloud Service
+description: Erfahren Sie mehr über Operational Telemetry, einen automatisierten Dienst, der die Überwachung der Client-seitigen Datenerfassung ermöglicht.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
 source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 48%
+ht-degree: 85%
 
 ---
 
-# Operativer Telemetrieservice für AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# Operational Telemetry-Dienst für AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
->Der operative Telemetrieservice, die Client-seitige Datenerfassung, ist ein automatisierter Dienst. Es ist keine Kundeneinrichtung erforderlich.
+>Der Operational Telemetry-Dienst, die Client-seitige Datenerfassung, ist ein automatisierter Dienst. Es ist keine Kundeneinrichtung erforderlich.
 
 >[!INFO]
 >
@@ -23,26 +23,26 @@ ht-degree: 48%
 
 ## Überblick {#overview}
 
-Der operative Telemetrie-Service ist eine Technologie zur Leistungsüberwachung, die den Client-seitigen Traffic auf einer Website oder in einer Anwendung in Echtzeit überwacht. Dieser Dienst konzentriert sich auf die Erfassung von Metriken und Daten, die wichtig für die Leistungsoptimierung sind, indem er Website-Interaktionen und nicht die Benutzenden selbst überwacht. Bei der operativen Telemetrie werden wichtige Leistungsmetriken von der Initiierung der URL bis zur Rücksendung der Anfrage an den Browser verfolgt.
+Der Operational Telemetry-Dienst ist eine Technologie zur Leistungsüberwachung, die den Client-seitigen Traffic auf einer Website oder in einer Anwendung in Echtzeit überwacht. Dieser Dienst konzentriert sich auf die Erfassung von Metriken und Daten, die wichtig für die Leistungsoptimierung sind, indem er Website-Interaktionen und nicht die Benutzenden selbst überwacht. Mit Operational Telemetry werden wichtige Leistungsmetriken direkt von der Initiierung der URL bis zur Rückgabe der Anfrage an den Browser verfolgt.
 
-## Wem kann der operative Telemetrieservice zugutekommen? {#who-can-benefit-from-operational-telemetry-service}
+## Wer kann vom Operational Telemetry-Dienst profitieren? {#who-can-benefit-from-operational-telemetry-service}
 
-Die operative Telemetrie hilft Kunden und Adobe zu verstehen, wie Endbenutzer mit AEM-Sites interagieren. Operative Telemetrie bewahrt die Privatsphäre der Besucher durch begrenzte Datenerfassung und Stichprobenerhebung - nur ein kleiner Teil aller Seitenansichten wird überwacht.
+Operational Telemetry hilft Kundinnen und Kunden sowie Adobe, zu verstehen, wie Endbenutzende mit AEM Sites interagieren. Operational Telemetry wahrt die Privatsphäre der Besucherinnen und Besucher durch eine begrenzte Datenerfassung und Stichproben. Nur ein kleiner Teil der Seitenansichten wird überwacht.
 
-## Datenabtastung des operativen Telemetrieservice {#operational-telemetry-service-data-sampling}
+## Daten-Sampling des Operational Telemetry-Dienstes {#operational-telemetry-service-data-sampling}
 
-Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. Der operative Telemetrieservice von AEM erfasst nur Informationen aus einem kleinen Bruchteil der Seitenansichten. Der Dienst ist für Stichproben und zur Anonymisierung gedacht und soll die Analyse nicht ersetzen. Standardmäßig weisen Seiten ein Stichprobenverhältnis von 1:100 auf. Site-Operatoren können die Stichprobenrate derzeit nicht erhöhen oder verringern. Um den gesamten Traffic genau zu schätzen, werden für jeweils 100 Seitenansichten Daten von einer Ansicht erfasst, um Ihnen einen zuverlässigen Näherungswert des gesamten Traffics zu liefern.
+Herkömmliche Web-Analyse-Lösungen versuchen, Daten zu allen Besucherinnen und Besuchern zu erfassen. Der Operational Telemetry-Dienst von AEM erfasst nur Informationen aus einem kleinen Bruchteil der Seitenansichten. Der Dienst ist für Stichproben und zur Anonymisierung gedacht und soll die Analyse nicht ersetzen. Standardmäßig haben Seiten ein Stichprobenverhältnis von 1:100. Site-Operatoren können die Stichprobenrate derzeit nicht erhöhen oder verringern. Um den gesamten Traffic genau zu schätzen, werden für jeweils 100 Seitenansichten Daten von einer Ansicht erfasst, um Ihnen einen zuverlässigen Näherungswert des gesamten Traffics zu liefern.
 
-Da die Entscheidung darüber, ob die Daten erfasst werden, jeweils für jede einzelne Seitenansicht erfolgt, ist es praktisch unmöglich, Interaktionen über mehrere Seiten hinweg zu verfolgen. Operative Telemetrie hat standardmäßig kein Konzept von Besuchern oder Sitzungen, sondern nur von Seitenansichten.
+Da die Entscheidung darüber, ob die Daten erfasst werden, jeweils für jede einzelne Seitenansicht erfolgt, ist es praktisch unmöglich, Interaktionen über mehrere Seiten hinweg zu verfolgen. Operational Telemetry erfasst keine Erkenntnisse zu Besuchenden oder Sitzungen, sondern nur zu Seitenansichten.
 
 ## Welche Daten werden erfasst? {#what-data-is-being-collected}
 
-Der operative Telemetrieservice wurde entwickelt, um die Datenerfassung zu minimieren. Der vollständige Satz von Informationen, die durch die operative Telemetrie erfasst werden, ist unten aufgeführt:
+Der Operational Telemetry-Dienst wurde für minimale Datenerfassung entwickelt. Im Folgenden finden Sie alle von Operational Telemetry erfassten Daten:
 
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`
 * Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs?lang=de`
+* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
 * Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn die Person einem Link gefolgt ist)
 * Eine zufällig generierte ID der Seitenansicht in einem Format, das dem folgenden ähnelt: `2Ac6`
 * Die Gewichtung oder der Kehrwert der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur eine von hundert Seitenansichten aufgezeichnet wird.
@@ -51,17 +51,17 @@ Der operative Telemetrieservice wurde entwickelt, um die Datenerfassung zu minim
 * Die Zielgruppe oder der Link zu einer externen Seite oder Ressource, mit der die Person für den oben genannten Checkpoint interagiert. Beispiel: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * Die Leistungsmetriken [Core Web Vitals (CWV)](https://web.dev/articles/lcp), [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [First Input Delay (FID)](https://web.dev/articles/inp) und [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), die die Erlebnisqualität der Besucherin bzw. des Besuchers beschreiben.
 
-## Funktionsweise der operativen Telemetrie für einen Kunden {#how-operational-telemetry-works-for-a-customer}
+## Funktionsweise von Operational Telemetry für Kundinnen und Kunden {#how-operational-telemetry-works-for-a-customer}
 
-Operative Telemetrie überwacht automatisch den Client-seitigen Datenverkehr. Als Adobe-Kundin bzw. -Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Da der operative Telemetrieservice allgemein verfügbar ist, profitieren Sie automatisch von dieser neuen Funktion. Der operative Telemetrieservice stellt derzeit keine kundenrelevanten Metriken zur Überwachung bereit. Wir arbeiten daran, Ihnen diese Funktion so schnell wie möglich zur Verfügung zu stellen.
+Operational Telemetry überwacht automatisch den Client-seitigen Datenverkehr. Als Adobe-Kundin bzw. -Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Da der Operational Telemetry-Dienst allgemein verfügbar ist, profitieren Sie automatisch von dieser neuen Funktion. Der Operational Telemetry-Dienst stellt derzeit keine kundenrelevanten Metriken zur Überwachung bereit. Wir arbeiten daran, Ihnen diese Funktion so schnell wie möglich zur Verfügung zu stellen.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## So verwendet Adobe operative Telemetrie {#how-operational-telemetry-data-is-being-used}
+## Verwendung von Operational Telemetry durch Adobe {#how-operational-telemetry-data-is-being-used}
 
-Operative Telemetriedaten werden für folgende Zwecke verwendet:
+Operational Telemetry-Daten werden für folgende Zwecke genutzt:
 
 * Identifizieren und Beheben von Leistungsengpässen bei Kunden-Sites
 * Um zu verstehen, wie AEM mit anderen Skripten (z. B. Analyse, Targeting oder externen Bibliotheken) auf derselben Seite interagiert, und die Kompatibilität zu erhöhen.
@@ -93,17 +93,17 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **Der Pfad `/.rum` ist auf meiner Website blockiert. Wie gehe ich zur Fehlerbehebung vor?**
 
-   Der `/.rum` ist erforderlich, damit die operative Telemetriesammlung funktioniert. Wenn Sie vor AEM as a Cloud Service von Adobe ein CDN verwenden, stellen Sie sicher, dass der Pfad `/.rum` Weiterleitungen zum selben AEM-Ursprung wie Ihre übrigen AEM-Inhalte vornimmt. Und stellen Sie sicher, dass sie in keiner Weise angepasst wird. Alternativ können Sie den Host, der für die operative Telemetrie verwendet werden soll, in `rum.hlx.page` ändern, indem Sie [in Cloud Manager eine Umgebungsvariable mit ](/help/implementing/cloud-manager/environment-variables.md#add-variables) Namen `AEM_OPTEL_EXTERNAL` auf den Wert `true` festlegen. Wenn Sie zu einem späteren Zeitpunkt wieder zu denselben Domain-Anforderungen wechseln möchten, entfernen Sie einfach diese Umgebungsvariable erneut.
+   Der Pfad `/.rum` ist erforderlich, damit die Operational Telemetry-Erfassung funktioniert. Wenn Sie vor AEM as a Cloud Service von Adobe ein CDN verwenden, stellen Sie sicher, dass der Pfad `/.rum` Weiterleitungen zum selben AEM-Ursprung wie Ihre übrigen AEM-Inhalte vornimmt. Stellen Sie außerdem sicher, dass er in keiner Weise geändert wird. Alternativ können Sie den Host, der für Operational Telemetry verwendet werden soll, in `rum.hlx.page` ändern, indem Sie folgende [Umgebungsvariable in Cloud Manager einstellen](/help/implementing/cloud-manager/environment-variables.md#add-variables): Name `AEM_OPTEL_EXTERNAL`, Wert `true`. Wenn Sie zu einem späteren Zeitpunkt wieder zu denselben Domain-Anforderungen wechseln möchten, entfernen Sie diese Umgebungsvariable einfach wieder.
 
-1. **Zählt die Erfassung der betrieblichen Telemetrie für Inhaltsanfragen für vertragliche Zwecke?**
+1. **Zählt die Operational Telemetry-Erfassung zu den vertraglich vereinbarten Inhaltsanfragen?**
 
-   Die Bibliothek für operative Telemetrie und die Sammlung für operative Telemetrie zählen nicht als Inhaltsanfragen und erhöhen nicht die gemeldete Anzahl von Seitenansichten oder API-Aufrufen. Darüber hinaus bildet für Kundinnen und Kunden, die das vordefinierte CDN mit AEM as a Cloud Service verwenden, die [Server-seitige Erfassung](#serverside-collection) die Grundlage für Inhaltsanfragen.
+   Die Operational Telemetry-Bibliothek und die Operational Telemetry-Erfassung zählen nicht zu den Inhaltsanfragen und erhöhen nicht die gemeldete Anzahl von Seitenansichten oder API-Aufrufen. Darüber hinaus bildet für Kundinnen und Kunden, die das vordefinierte CDN mit AEM as a Cloud Service verwenden, die [Server-seitige Erfassung](#serverside-collection) die Grundlage für Inhaltsanfragen.
 
-1. **Wie kann ich die operative Telemetrie deaktivieren?**
+1. **Wie kann ich Operational Telemetry deaktivieren?**
 
-   Adobe empfiehlt die Verwendung der Betriebstelemetrie aufgrund ihrer erheblichen Vorteile und dass sie es Adobe ermöglicht, Ihnen bei der Optimierung Ihrer digitalen Erlebnisse durch die Verbesserung der Website-Leistung zu helfen. Der Dienst ist nahtlos konzipiert und hat keine Auswirkungen auf die Leistung Ihrer Website.
+   Adobe empfiehlt die Verwendung von Operational Telemetry aufgrund seiner signifikanten Vorteile und der Möglichkeit, Ihre digitalen Erlebnisse durch bessere Website-Leistung zu optimieren. Der Dienst ist nahtlos konzipiert und hat keine Auswirkungen auf die Leistung Ihrer Website.
 
-   Wenn Sie sich davon abmelden, könnten Sie die Chance verpassen, die Traffic-Interaktion auf Ihrer Website zu verbessern. Sollten dennoch Probleme auftreten, können Sie die operative Telemetrie deaktivieren, indem Sie [in Cloud Manager eine Umgebungsvariable mit ](/help/implementing/cloud-manager/environment-variables.md#add-variables) Namen `AEM_OPTEL_DISABLED` auf den `true` festlegen. Wenn Sie die operative Telemetrie zu einem späteren Zeitpunkt wieder aktivieren möchten, entfernen Sie einfach diese Umgebungsvariable erneut.
+   Wenn Sie sich davon abmelden, könnten Sie die Chance verpassen, die Traffic-Interaktion auf Ihrer Website zu verbessern. Sollten dennoch Probleme auftreten, können Sie Operational Telemetry deaktivieren, indem Sie folgende [Umgebungsvariable in Cloud Manager einstellen](/help/implementing/cloud-manager/environment-variables.md#add-variables): Name `AEM_OPTEL_DISABLED`, Wert `true`. Wenn Sie Operational Telemetry zu einem späteren Zeitpunkt wieder aktivieren möchten, entfernen Sie diese Umgebungsvariable einfach wieder.
 
 1. **Kann ich eine Content Security Policy mit einer Nonce verwenden?
 

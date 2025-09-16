@@ -6,13 +6,13 @@ exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 76%
+ht-degree: 93%
 
 ---
 
 # Bereitstellungs-APIs {#delivery-apis}
 
-Alle [genehmigten Assets](approve-assets.md) die im Experience Manager Assets-Repository verfügbar sind, können [durchsucht](search-assets-api.md) und dann über eine Bereitstellungs-URL für integrierte nachgelagerte Anwendungen bereitgestellt werden.
+Alle [genehmigten Assets](approve-assets.md), die im Experience Manager-Asset-Repository verfügbar sind, können [durchsucht](search-assets-api.md) und anschließend mithilfe einer Bereitstellungs-URL an integrierte nachgelagerte Anwendungen gesendet werden.
 
 Alle Änderungen an genehmigten Assets in DAM, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden automatisch in die Bereitstellungs-URLs übernommen. Mit einem niedrigen Time-to-Live(TTL)-Wert von 10 Minuten für die Bereitstellung von Assets per CDN werden Aktualisierungen in weniger als 10 Minuten in allen Authoring- und Publishing-Oberflächen sichtbar.
 
@@ -24,18 +24,18 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 
 | Bereitstellungs-API | Beschreibung |
 |---|---|
-| [Web-optimierte binäre Darstellung des Assets im angeforderten Ausgabeformat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) | Gibt die Web-optimierte binäre Darstellung des Assets im angeforderten Ausgabeformat basierend auf der in der Anfrage gesendeten Asset-ID zurück. Darüber hinaus können Sie verschiedene Bildmodifikatoren definieren, z. B. Breite, Höhe, Drehen, Spiegeln, Qualität, Zuschneiden, Format und [smartes Zuschneiden](/help/assets/dynamic-media/image-profiles.md). Informationen zu unterstützten Formaten und Bildmodifikatoren finden Sie unter [API-Details](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).<br>Adobe empfiehlt die Verwendung dieser API für alle Bildformattypen. |
-| [Web-optimierte binäre Darstellung des Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAsset) | Convenience-API, die Standardwerte auf eine Web-optimierte Binärdarstellung des in der Antwort zurückgegebenen Assets anwendet. Die Standardeinstellungen sehen ein standardmäßiges JPEG/WEBP-Format, einen Qualitätswert von 65 und einen Breitenwert von 1024 vor. |
+| [Web-optimierte binäre Darstellung des Assets im angeforderten Ausgabeformat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) | Gibt die Web-optimierte binäre Darstellung des Assets im angeforderten Ausgabeformat basierend auf der in der Anfrage gesendeten Asset-ID zurück. Darüber hinaus können Sie verschiedene Bildmodifikatoren definieren, z. B. Breite, Höhe, Drehung, Spiegelung, Qualität, Zuschnitt, Format und [intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md). Informationen zu unterstützten Formaten und Bildmodifikatoren finden Sie unter [API-Details](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).<br>Adobe empfiehlt die Verwendung dieser API für alle Bildformattypen. |
+| [Web-optimierte binäre Darstellung des Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAsset) | Convenience-API, die die Standardeinstellungen auf eine Web-optimierte binäre Darstellung des in der Antwort zurückgegebenen Assets anwendet. Die Standardeinstellungen sehen ein standardmäßiges JPEG/WEBP-Format, einen Qualitätswert von 65 und einen Breitenwert von 1024 vor. |
 | [Ursprünglich hochgeladene Binärdatei des Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetOriginal) | Gibt die ursprünglich hochgeladenen Binärdateien für das Asset zurück. Adobe empfiehlt die Verwendung dieser API für Dokumentformattypen und SVG-Bilder. |
 | [Vorgenerierte Ausgabedarstellung des Assets, das in der AEM Assets-Authoring-Umgebung verfügbar ist](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetRendition) | Gibt den in der AEM Assets-Authoring-Umgebung verfügbaren Bitstream der Asset-Ausgabedarstellung basierend auf der Asset-ID und dem Namen der Ausgabedarstellung zurück, die beide in der Anfrage gesendet wurden. |
-| [Asset-Metadaten](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata) | Gibt die mit einem Asset verknüpften Eigenschaften zurück, z. B. Titel, Beschreibung, CreateDate, ModifyDate usw. |
+| [Asset-Metadaten](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata) | Gibt die mit einem Asset verknüpften Eigenschaften zurück, z. B. Titel, Beschreibung, Erstellungsdatum, Änderungsdatum usw. |
 | [Player-Container für das Video-Asset](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | Gibt den Player-Container für das Video-Asset zurück. Sie können den Player in ein iFrame-HTML-Element einbetten und das Video abspielen. |
 | [Wiedergabe-Manifeste im ausgewählten Ausgabeformat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | Gibt die Wiedergabe-Manifestdatei für das angegebene Video-Asset im ausgewählten Ausgabeformat zurück. Sie müssen einen benutzerdefinierten Player erstellen, der adaptives Streaming über HLS- oder DASH-Protokolle ermöglicht, um die Wiedergabe-Manifestdatei abzurufen und das Video abzuspielen. |
 
 >[!IMPORTANT]
 >
 >Sie können jeden Modifikator testen, der nicht allgemein über experimentelle APIs verfügbar ist. Zum Beispiel: `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->&#x200B;>Klicken Sie hier, um mehr über die Verwendung der [experimentellen APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) und die [vollständige Liste der Modifikatoren](https://developer.adobe.com/experience-cloud/experience-manager-apis/) zu erfahren.
+>>Klicken Sie hier, um mehr über die Verwendung der [experimentellen APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) und die [vollständige Liste der Modifikatoren](https://developer.adobe.com/experience-cloud/experience-manager-apis/) zu erfahren.
 
 Dynamic Media mit OpenAPI-Funktionen unterstützt auch langformatige Videos. Es werden Videos mit bis zu 50 GB und einer Länge von bis zu 2 Stunden unterstützt.
 
@@ -73,7 +73,7 @@ headers: {
     }
 ```
 
-Zum Aufrufen der Bereitstellungs-APIs ist ein IMS-Token in den `Authorization`-Details erforderlich, um ein eingeschränktes Asset bereitzustellen. Das IMS-Token wird aus einem technischen Konto abgerufen. Informationen zum Erstellen eines neuen technischen Kontos finden Sie unter [Abrufen der Anmeldedaten für AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis). Informationen zum Generieren des IMS-Tokens und zu seiner entsprechenden Verwendung im Anfrage-Header der Bereitstellungs-APIs finden Sie unter [Generieren des Zugriffs-Tokens](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis).
+Zum Aufrufen der Bereitstellungs-APIs ist ein IMS-Token in den `Authorization`-Details erforderlich, um ein eingeschränktes Asset bereitzustellen. Das IMS-Token wird aus einem technischen Konto abgerufen. Informationen zum Erstellen eines neuen technischen Kontos finden Sie unter [Abrufen der Anmeldedaten für AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis). Informationen zum Generieren des IMS-Tokens und zu seiner entsprechenden Verwendung im Anfrage-Header der Bereitstellungs-APIs finden Sie unter [Generieren des Zugriffs-Tokens](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis).
 
 
 Informationen zum Anzeigen von Anfragebeispielen, Antwortbeispielen und Antwort-Codes finden Sie unter [Bereitstellungs-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).

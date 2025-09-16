@@ -7,7 +7,7 @@ exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
 workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 3%
+ht-degree: 96%
 
 ---
 
@@ -17,19 +17,19 @@ Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefinition und dem 
 
 ## Überblick {#overview}
 
-Die `component-definition.json` definiert die Komponenten, die den Inhaltsautoren für das Projekt zur Verfügung stehen. In diesem Dokument wird der Zweck dieser Datei und die Verwendung durch den universellen Editor zur Darstellung der Komponenten zur Seitenerstellung für Ihre Autoren ausführlich erläutert.
+Die Datei `component-definition.json` definiert die Komponenten, die den Inhaltsautorinnen und -autoren für das Projekt zur Verfügung stehen. In diesem Dokument wird der Zweck dieser Datei und seine Verwendung durch den universellen Editor zur Darstellung der Komponenten zur Seitenerstellung für Autorinnen und Autoren ausführlich erläutert.
 
 >[!TIP]
 >
->Einen Überblick über den Inhaltsmodellierungsprozess finden Sie im Dokument [Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten.](https://www.aem.live/developer/component-model-definitions)
+>Einen Überblick über den Inhaltsmodellierungsprozess finden Sie im Dokument zur [Inhaltsmodellierung für das WYSIWYG-Authoring mit Edge Delivery Services-Projekten.](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->Sie müssen keine eigene `component-definition.json` von Grund auf neu erstellen. Das Projekt-Textbaustein, den Sie zum Bootstrapping [ Projekts verwenden](https://www.aem.live/developer/ue-tutorial) enthält eine [voll funktionsfähige `component-definition.json`-Datei](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) die Sie an Ihre Anforderungen anpassen können.
+>Sie müssen keine eigene `component-definition.json`-Datei von Grund auf neu erstellen. Der Projekt-Textbaustein, den Sie zum [Bootstrapping Ihres Projekts](https://www.aem.live/developer/ue-tutorial)verwenden, enthält eine [voll funktionsfähige `component-definition.json`-Datei](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json), die Sie an Ihre Anforderungen anpassen können.
 
-## Beispiel für eine Komponentendefinition {#example}
+## Beispiel einer Komponentendefinition {#example}
 
-Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition.json` als Beispiel.
+Im Folgenden finden Sie eine vollständige, aber einfache `component-definition.json` als Beispiel.
 
 ```json
 {
@@ -72,38 +72,38 @@ Im Folgenden finden Sie ein vollständiges, aber einfaches `component-definition
 
 ## `groups` {#groups}
 
-`groups` definiert die Komponentengruppen, die der Autor im universellen Editor sieht, wenn er auf das Symbol **Hinzufügen** im Eigenschaftenbereich des Editors klickt, um [einer Seite eine neue Komponente hinzuzufügen](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Gruppen helfen beim Organisieren der Komponenten. Häufige Gruppen sind **Allgemeine Komponenten** und **Erweiterte Komponenten**.
+`groups` definiert die Komponentengruppen, die die Autorin bzw. der Autor im universellen Editor sieht, wenn sie bzw. er auf das Symbol **Hinzufügen** im Eigenschaftenbereich des Editors klickt, um [einer Seite eine neue Komponente hinzuzufügen](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Gruppen helfen beim Organisieren der Komponenten. Häufige Gruppen sind **Allgemeine Komponenten** und **Erweiterte Komponenten**.
 
-* `title` wird die textliche Beschreibung der Gruppe definiert, die in der Editor-Benutzeroberfläche angezeigt wird.
+* `title` definiert die Textbeschreibung der Gruppe, die in der Benutzeroberfläche des Editors angezeigt wird.
 * `id` identifiziert die Gruppe eindeutig.
 
 ## `components` {#components}
 
 `components` definiert, welche Komponenten zu einer Gruppe gehören.
 
-* `title` definiert die textliche Beschreibung der Komponente, die in der Benutzeroberfläche angezeigt wird.
+* `title` definiert die Textbeschreibung der Komponente, die in der Benutzeroberfläche angezeigt wird.
 * `id` identifiziert die Komponente eindeutig.
-   * Das [Komponentenmodell](/help/implementing/universal-editor/field-types.md#model-structure) desselben `id` definiert die Felder der Komponente.
-   * Da es eindeutig ist, kann es z. B. in einer [Filterdefinition“ verwendet werden](/help/implementing/universal-editor/filtering.md) um zu bestimmen, welche Komponenten zu einem Container hinzugefügt werden können.
-* `model` definiert, [Modell](/help/implementing/universal-editor/field-types.md#model-structure) mit der Komponente verwendet wird.
-   * Das Modell wird dabei zentral in der Komponentendefinition gepflegt und muss nicht ([ der Instrumentierung) angegeben werden](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Das [Komponentenmodell](/help/implementing/universal-editor/field-types.md#model-structure) derselben `id` definiert die Felder der Komponente.
+   * Da es eindeutig ist, kann es z. B. in einer [Filterdefinition](/help/implementing/universal-editor/filtering.md) verwendet werden, um zu bestimmen, welche Komponenten einem Container hinzugefügt werden können.
+* `model` definiert, welches [Modell](/help/implementing/universal-editor/field-types.md#model-structure) mit der Komponente verwendet wird.
+   * Das Modell wird dabei zentral in der Komponentendefinition verwaltet und muss nicht in [der Instrumentierung angegeben werden](/help/implementing/universal-editor/field-types.md#instrumentation).
    * Dies ermöglicht es Ihnen, Komponenten über Container hinweg zu verschieben.
-* `filter` definiert[ welcher ](/help/implementing/universal-editor/filtering.md) mit der Komponente verwendet werden soll.
+* `filter` definiert welcher[Filter](/help/implementing/universal-editor/filtering.md) mit der Komponente verwendet werden soll.
 
 ## `plugins` {#plugins}
 
-`plugins` definiert, welches Plug-in für die Persistierung der Komponente verantwortlich ist. Zu den gängigen Plug-ins gehören:
+`plugins` definiert, welches Plug-in für das Persistieren der Komponente verantwortlich ist. Häufige Plug-ins sind:
 
 * `aem` für [AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service)
-* `aem65` für [AEM 6.5.](https://experienceleague.adobe.com/de/docs/experience-manager-65) und [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts)
+* `aem65` für [AEM 6.5.](https://experienceleague.adobe.com/de/docs/experience-manager-65) und [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
 * `xwalk` für [Authoring mit AEM Sites für Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` oder `cf` {#page-cf}
 
-Nachdem die `plugin` definiert wurde, müssen Sie angeben, ob sie seitenbezogen oder fragmentbezogen ist.
+Nachdem `plugin` definiert wurde, müssen Sie angeben, ob es seitenbezogen oder fragmentbezogen ist.
 
 * `page` gibt an, dass sich die Komponente auf der aktuellen Seite befindet.
-* `cf` gibt an, dass die Komponente mit Inhalten in einem [Inhaltsfragment“ ](/help/assets/content-fragments/content-fragments.md).
+* `cf` gibt an, dass die Komponente sich auf Inhalten in einem [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) bezieht.
 
 ### `page` {#page}
 
@@ -111,37 +111,37 @@ Wenn es sich bei der Komponente um Inhalt auf der Seite handelt, können Sie die
 
 * `resourceType` definiert den [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md)-`resourceType`, der zum Rendern der Komponente verwendet wird.
 * `template` definiert optionale Schlüssel/Werte, die automatisch in die neu erstellte Komponente geschrieben werden, und definiert, welcher Filter und/oder welches Modell auf die Komponente angewendet werden soll.
-   * Nützlich für erklärenden Text, Beispiel- oder Platzhaltertext.
+   * Nützlich für Erklärungs-, Beispiel- oder Platzhaltertext.
 
 #### `template` {#template}
 
-Durch Bereitstellung optionaler Schlüssel/Wert-Paare können `template` diese automatisch in die neue Komponente schreiben. Darüber hinaus können auch die folgenden optionalen Werte angegeben werden.
+Durch Bereitstellung optionaler Schlüssel-Wert-Paare kann `template` diese automatisch in die neue Komponente schreiben. Darüber hinaus können auch die folgenden optionalen Werte angegeben werden.
 
 ### `cf` {#cf}
 
 Wenn sich die Komponente auf Inhalte in einem Inhaltsfragment bezieht, können Sie die folgenden Informationen bereitstellen.
 
 * `name` definiert einen optionalen Namen, der im JCR für die neu erstellte Komponente gespeichert wird.
-   * Nur informativ, wird aber in der Benutzeroberfläche nicht so angezeigt, wie die `title` ist.
+   * Nur informativ und wird in der Benutzeroberfläche im Gegensatz zu `title` normalerweise nicht angezeigt.
 * `cfModel` definiert das [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md) für die neu erstellte Komponente.
 * `cfFolder` definiert, in welchem Ordner das Inhaltsfragment erstellt werden soll.
 * `title` definiert den Titel des neuen Inhaltsfragments.
 * `description` definiert eine Beschreibung des neuen Inhaltsfragments.
 * `template` definiert optionale Schlüssel/Werte, die automatisch in das neu erstellte Inhaltsfragment geschrieben werden.
-   * Nützlich für erklärenden Text, Beispiel- oder Platzhaltertext.
+   * Nützlich für Erklärungs-, Beispiel- oder Platzhaltertext.
 
 ### `cf` kann impliziert sein {#cf-implied}
 
-Wenn die Seite [instrumentiert) ist](/help/implementing/universal-editor/getting-started.md#instrument-page) um auf ein Referenzfeld zu verweisen, wird die `cf` angenommen.
+Wenn die Seite so [instrumentiert](/help/implementing/universal-editor/getting-started.md#instrument-page), dass sie auf ein Referenzfeld verweist, wird `cf` angenommen.
 
 ```html
 <div data-aue-resource="urn:aem:/content" data-aue-type="container" data-aue-prop="field"></div>
 ```
 
-In diesem Fall wird von `cf` ausgegangen, da der `data-aue-prop` auf ein Referenzfeld verweist. Ohne die `data-aue-prop` geht der universelle Editor von `page` aus, da in diesem Fall die Komponenten nicht über ein Referenzfeld verknüpft sind.
+In diesem Fall wird `cf` angenommen, da `data-aue-prop` auf ein Referenzfeld verweist. Ohne `data-aue-prop` nimmt der universelle Editor `page` an, da in diesem Fall die Komponenten nicht über ein Referenzfeld verknüpft sind.
 
 ```html
 <div data-aue-resource="urn:aem:/content" data-aue-type="container"></div>
 ```
 
-Komponenten sind lediglich Unterknoten unterhalb der Ressource.
+Komponenten sind lediglich Unterknoten unter der Ressource.

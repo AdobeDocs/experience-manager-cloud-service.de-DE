@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 2fafb582ae8fc5e2ecc19157ff34e16be401393a
 workflow-type: tm+mt
 source-wordcount: '3591'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
       * Wenn die Quelle `Author` war, wird empfohlen, sie in die `Author`-Ebene auf dem Ziel aufzunehmen. Wenn die Quelle `Publish` war, sollte das Ziel ebenfalls `Publish` sein.
 
    >[!NOTE]
-   > Wenn es sich bei `Author` um die Zielebene handelt, wird die Authoring-Instanz während der Aufnahmedauer heruntergefahren, sodass sie Benutzenden (wie beispielsweise Autorinnen und Autoren oder anderen, die Wartungsarbeiten durchführen) nicht zur Verfügung steht. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Author-Aufnahme im Ruhezustand befindet.
+   > Wenn es sich bei `Author` um die Zielebene handelt, wird die Autoreninstanz während der Aufnahmedauer heruntergefahren, sodass sie Benutzenden (wie beispielsweise Autorinnen und Autoren oder anderen, die Wartungsarbeiten durchführen) nicht zur Verfügung steht. Dadurch soll das System geschützt werden, und es sollen Änderungen verhindert werden, die verloren gehen oder einen Aufnahmekonflikt verursachen könnten. Stellen Sie sicher, dass Ihr Team sich dieser Tatsache bewusst ist. Beachten Sie außerdem, dass sich die Umgebung während der Author-Aufnahme im Ruhezustand befindet.
 
    >[!NOTE]
    > Wenn die Zielebene `Publish` ist, bleibt die Veröffentlichungsinstanz während der Aufnahme aktiv.  Wenn der Komprimierungsprozess jedoch während der Aufnahme ausgeführt wird, ist ein Konflikt zwischen den beiden Prozessen wahrscheinlich.  Aus diesem Grund deaktiviert der Aufnahmeprozess das Komprimierungszeitintervallskript, sodass die Komprimierung während der Aufnahme nicht gestartet wird, und prüft außerdem, ob die Komprimierung derzeit ausgeführt wird. Falls sie ausgeführt wird, wartet er, bis sie abgeschlossen ist, bevor die Aufnahme fortgesetzt wird.  Wenn die Aufnahme in der Veröffentlichungsinstanz länger als erwartet dauert, überprüfen Sie die Aufnahmeprotokolle auf entsprechende Protokollanweisungen.
@@ -194,7 +194,7 @@ Stellen Sie sicher, dass die Autorenumgebung verfügbar ist, und warten Sie eini
 
 Eine häufige Ursache für einen [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)-Fehler ist ein Konflikt bei Knoten-IDs. Um den Fehler zu identifizieren, laden Sie das Aufnahmeprotokoll über die Benutzeroberfläche von Cloud Acceleration Manager herunter und suchen Sie nach einem Eintrag wie dem Folgenden:
 
->java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Eindeutigkeitsbeschränkung verletzt Eigenschaft [jcr:uuid] mit dem Wert a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
 Jeder Knoten in AEM muss über eine eindeutige UUID verfügen. Dieser Fehler weist darauf hin, dass ein Knoten, der gerade aufgenommen wird, dieselbe UUID hat wie ein Knoten, der in einem anderen Pfad in der Zielinstanz vorhanden ist. Hierfür kann es zwei Gründe geben:
 
@@ -277,7 +277,7 @@ Bei einer Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für d
 >title="Wartende Aufnahme nicht gestartet"
 >abstract="Die Aufnahme konnte nicht gestartet werden, nachdem auf den Abschluss einer Extraktion gewartet wurde."
 
-Eine Aufnahme, die mit einer laufenden Extraktion als Quellmigrationssatz erstellt wurde, wartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt versucht die Aufnahme, normal zu starten. Wenn die Aufnahme nicht gestartet werden kann, wird sie als fehlgeschlagen markiert. Mögliche Gründe für das Nicht-Starten sind: In der Zielautorenumgebung wird eine IP-Zulassungsliste konfiguriert, die Zielumgebung ist aus einem anderen Grund nicht verfügbar.  Überprüfen Sie in diesem Fall, warum die Aufnahme nicht gestartet werden konnte, beheben Sie das Problem und starten Sie die Aufnahme erneut (es ist nicht erforderlich, die Extraktion erneut auszuführen).
+Bei einer Aufnahme, die mit einer laufenden Extraktion als Quellmigrationssatz erstellt wurde, wird gewartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt wird versucht, die Aufnahme normal zu starten. Wenn die Aufnahme nicht gestartet werden kann, wird sie als „fehlgeschlagen“ markiert. Mögliche Gründe dafür, dass sie nicht gestartet werden kann: in der Zielautorenumgebung ist eine IP-Zulassungsliste konfiguriert; die Zielumgebung ist aus einem anderen Grund nicht verfügbar.  Überprüfen Sie in diesem Fall, warum die Aufnahme nicht gestartet werden konnte, beheben Sie das Problem und starten Sie die Aufnahme erneut (es ist nicht erforderlich, die Extraktion erneut auszuführen).
 
 ### Gelöschtes Asset nach erneuter Aufnahme nicht vorhanden
 

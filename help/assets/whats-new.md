@@ -6,7 +6,7 @@ exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 50%
+ht-degree: 99%
 
 ---
 
@@ -24,23 +24,23 @@ Das folgende Video zeigt die wichtigsten Funktionen von Content Hub:
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der Content Hub-Funktionsveröffentlichung (2025.8.0) ist der 28. August 2025 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version mit neuen Funktionen (2025.9.0) ist für den Freitag, 25. September 2025 geplant.
+Das Datum der Content Hub-Funktionsveröffentlichung (2025.8.0) ist der 28. August 2025 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version mit neuen Funktionen (2025.9.0) ist für den 25. September 2025 geplant.
 
 ## Funktionen der August-Version {#august-release-features}
 
 **Massensuche über Filtereigenschaften**
 
-Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit der neuen Funktion für die Massensuche können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben - getrennt durch ein Trennzeichen (z. B. mehrere SKU-IDs) - und sofort alle übereinstimmenden Assets mit einer einzigen Suche abrufen.
+Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit der neuen Funktion für die Massensuche können Sie mehrere Werte für eine beliebige Filtereigenschaft eingeben – getrennt durch ein Trennzeichen (z. B. mehrere SKU-IDs) – und sofort alle übereinstimmenden Assets mit einer einzigen Suche abrufen.
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
-## Funktionen der Version Juli {#july-release-features}
+## Funktionen der Juli-Version {#july-release-features}
 
 **Verbesserte Branding-Flexibilität in Content Hub**
 
 Aufbauend auf vorhandenen Personalisierungsfunktionen ermöglicht Content Hub Admins jetzt die weitere Anpassung ihrer Bereitstellung, indem sie benutzerdefinierte Logobilder hinzufügen. Die Unterstützung des TIFF-Dateiformats wurde sowohl für Banner- als auch für Logogbilder hinzugefügt, was die Design-Flexibilität erhöht.
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 **Intelligentere Freigabe mit benannten Links**
 
@@ -48,23 +48,23 @@ Sie können jetzt beim Generieren eines freigegebenen Links einen Titel hinzufü
 
 ![Privater und öffentlicher Link](/help/assets/assets/shared-link-for-assets.png)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 **Verbesserte Filternavigation**
 
-Content Hub enthält jetzt in Filtern die Option **Alle anzeigen**, mit der Benutzende alle verfügbaren Facetten zusammen mit der Anzahl der Assets im Zusammenhang mit der aktuellen Einschränkung auf bis zu zehn Facetten anzeigen können. Verbesserte Such- und Sortierfunktionen in jedem Filter erleichtern die effizientere Erkennung und Verwaltung von Assets.
+Content Hub enthält jetzt in Filtern die Option **Alle anzeigen**, mit der Benutzende alle verfügbaren Facetten zusammen mit der Asset-Anzahl im Zusammenhang mit der aktuellen Einschränkung auf bis zu zehn Facetten anzeigen können. Verbesserte Such- und Sortierfunktionen in jedem Filter erleichtern die effizientere Erkennung und Verwaltung von Assets.
 
 ## Funktionen der Juni-Version {#june-release-features}
 
 ### Governance von Sammlungen {#collections-governance}
 
-Mit Content Hub können Sie jetzt den Zugriff auf Sammlungen während der Erstellung steuern, sodass nur autorisierte Benutzende gruppierte Assets anzeigen oder verwalten können. Dies sorgt für verbesserte Sicherheit, eine bessere Zusammenarbeit, ein organisiertes Asset-Management und eine vereinfachte Governance.
+Mit Content Hub können Sie jetzt den Zugriff auf Sammlungen während der Erstellung steuern, sodass sichergestellt wird, dass nur autorisierte Benutzende gruppierte Assets anzeigen oder verwalten können. Dies sorgt für verbesserte Sicherheit, eine bessere Zusammenarbeit, ein organisiertes Asset-Management und eine vereinfachte Governance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
-## Mai-Veröffentlichungsfunktionen {#may-release-features}
+## Funktionen der Mai-Version {#may-release-features}
 
 Die Mai-Version von Content Hub umfasst die folgenden Funktionen:
 
@@ -78,9 +78,9 @@ Die Mai-Version von Content Hub umfasst die folgenden Funktionen:
 
 * [Dynamic Media-Ausgabedarstellungen in Content Hub](#dynamic-media-renditions)
 
-### Attributbasierte Zugriffssteuerung (ABAC) {#attribute-based-access-control}
+### Attributbasierte Zugriffssteuerung (Attribute-based Access Control, ABAC) {#attribute-based-access-control}
 
-Mit Content Hub können Sie jetzt regelbasierte Einschränkungen für den Zugriff auf Assets anwenden. Asset-Berechtigungen stellen die Governance sicher und stellen außerdem sicher, dass nur die relevanten Assets für Benutzer zugänglich sind.
+Mit Content Hub können Sie jetzt regelbasierte Einschränkungen für den Zugriff auf Assets anwenden. Asset-Berechtigungen gewährleisten die Governance und stellen außerdem sicher, dass nur die relevanten Assets für Benutzende zugänglich sind.
 
 Die Regeln für die Asset-Einschränkung basieren auf Metadaten. Wenn die Asset-Metadaten den in der Regel definierten Bedingungen entsprechen, wird das Asset den Benutzergruppen angezeigt.
 
@@ -92,34 +92,34 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 
 * Reduziert die Anzahl der Duplikate – verbessert die Integrität der Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ### UI-Branding {#ui-branding}
 
-Content Hub ermöglicht es Administratoren jetzt, die Benutzeroberfläche mit markenspezifischen Elementen anzupassen, einschließlich Bannerbildern, Bannertiteln und Textkörpern sowie Primär- und Sekundärfarben. Diese Verbesserungen tragen dazu bei, Markenkonsistenz zu gewährleisten, das Onboarding von Benutzenden zu vereinfachen und Vertrauen aufzubauen.
+Content Hub ermöglicht es Admins jetzt, die Benutzeroberfläche mit markenspezifischen Elementen anzupassen, einschließlich Bannerbildern, Bannertiteln und des Textkörpers sowie Primär- und Sekundärfarben. Diese Verbesserungen tragen dazu bei, Markenkonsistenz zu gewährleisten, das Onboarding von Benutzenden zu vereinfachen und Vertrauen aufzubauen.
 
 ![UI-Branding](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ### Öffentliche Link-Freigabe {#public-link-sharing}
 
-Content Hub unterstützt jetzt das Generieren von Freigabe-Links, damit externe Benutzende ohne Programmzugriff Asset-Metadaten anzeigen oder Assets herunterladen können.
+Content Hub unterstützt jetzt das Generieren von freigabefähigen Links, damit externe Benutzende ohne Programmzugriff Asset-Metadaten anzeigen oder Assets herunterladen können.
 
 ![UI-Branding](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ### Mehrere Assets als ZIP-Datei herunterladen {#download-multiple-assets-as-zip}
 
-Mit Content Hub können Sie die ausgewählten Assets und ihre Ausgabedarstellungen jetzt auch in einer ZIP-Datei herunterladen und nicht als separate Dateien, was die Dateiverwaltung für Sie vereinfacht.
+Mit Content Hub können Sie jetzt auch die ausgewählten Assets und ihre Ausgabedarstellungen in einer ZIP-Datei herunterladen und nicht als separate Dateien, was die Dateiverwaltung für Sie vereinfacht.
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Dynamic Media-Ausgabedarstellungen in Content Hub {#dynamic-media-renditions}
 
-Greifen Sie direkt über die Content Hub-Benutzeroberfläche auf alle Dynamic Media-Vorgabenausgabedarstellungen und smarten Zuschnitte zum Herunterladen zu.
+Greifen Sie direkt über die Benutzeroberfläche von Content Hub auf alle voreingestellten Dynamic Media-Ausgabedarstellungen und intelligenten Zuschnitte zum Herunterladen zu.
 
 ![Dynamic Media-Ausgabedarstellungen](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE Machen Sie sich mit dieser Funktion vertraut]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}

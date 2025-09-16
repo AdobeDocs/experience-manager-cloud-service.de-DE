@@ -9,18 +9,18 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '2390'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 
 # Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms
 
-Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) bietet eine visuelle Oberfläche zum Erstellen von AEM-Formularen mit Edge Delivery Services. Sie bietet ein **What You See Is What You Get-Erlebnis (WYSIWYG**, das Benutzern genau anzeigt, wie Ihre Formulare angezeigt werden.
+Der [universelle Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) bietet eine visuelle Oberfläche zum Erstellen von AEM-Formularen mit Edge Delivery Services. Sein **What You See Is What You Get (WYSIWYG)**-Erlebnis zeigt genau an, wie Ihre Formulare für Benutzende dargestellt werden. 
 
 ![Überblick über die Benutzeroberfläche des universellen Editors](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-Dieses Handbuch hilft Ihnen, die Schnittstelle zum effizienten Erstellen von Formularen zu verstehen. Unabhängig davon, ob Sie mit der Erstellung von Formularen noch nicht vertraut sind oder bereits Entwicklungserfahrung haben, hilft Ihnen dieses Handbuch bei Folgendem:
+Dieses Handbuch hilft Ihnen, die Oberfläche zum effizienten Erstellen von Formularen besser zu verstehen. Unabhängig davon, ob Sie mit der Erstellung von Formularen noch nicht vertraut sind oder bereits Entwicklungserfahrung haben, hilft Ihnen dieses Handbuch bei Folgendem:
 
 **Erwerben grundlegender Kenntnisse:**
 
@@ -328,7 +328,7 @@ Das **Bedienfeld „Eigenschaften“** (auf der rechten Seite) ist Ihr Kontrollz
 
 **Diese Tools unterstützen ausgefeilte Formularfunktionen:**
 
-+++-Datenintegration
++++Datenintegration
 
 #### **Datenquelle**
 
@@ -383,7 +383,7 @@ Das **Bedienfeld „Eigenschaften“** (auf der rechten Seite) ist Ihr Kontrollz
 
 +++
 
-+++Collaboration-Tools
++++Tools für die Zusammenarbeit
 
 #### **Aufgaben-Management**
 
@@ -464,7 +464,7 @@ Merken Sie sich die folgenden Tastaturbefehle, um Formulare schneller und effizi
 
 ### **Schnittstellenprobleme**
 
-+++Schnittstellenelemente werden nicht geladen
++++Oberflächenelemente werden nicht geladen
 
 **Problem** Schaltflächen der Symbolleiste, das Bedienfeld „Eigenschaften“ oder andere Elemente der Benutzeroberfläche werden nicht angezeigt
 

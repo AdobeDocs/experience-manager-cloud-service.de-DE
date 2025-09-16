@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!NOTE]
 >
 >
-> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist unter dem **Early-Adopter-Programm** verfügbar. Bei Interesse können Sie eine kurze E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com senden, um Zugriff auf die Funktion zu erhalten.
+> Der KI-Assistent für AEM Forms (Forms Experience Builder) ist unter dem **Early-Adopter-Programm** verfügbar. Wenn Sie Interesse haben, senden Sie eine kurze E-Mail von Ihrer Geschäftsadresse an mailto::aem-forms-ea@adobe.com, um Zugriff auf die Funktion anzufordern.
 
 >[!IMPORTANT]
 >
@@ -198,7 +198,7 @@ Laden Sie Dateien hoch, damit die KI genau versteht, wonach Sie suchen:
 |-----------|----------|-------------|
 | **Bilder** (PNG, JPG, GIF) | Formular-Layouts, UI-Mockups, gescannte Papierformulare | „Erstelle ein Formular, das diesem Layout entspricht“ |
 | **PDF-Dateien** | Bestehende Formulare zum Konvertieren, Spezifikationen | „Konvertiere dieses PDF-Formular in ein digitales“ |
-| **Figma-Dateien** | Design-Prototypen, Markenrichtlinien | „Baue dieses Formular aus meinem Figma-Design“ |
+| **Figma-Dateien** | Design-Prototypen, Markenrichtlinien | „Erstelle dieses Formular aus meinem Figma-Design“ |
 | **Design-Dateien** | Visuelle Verweise, Styleguides | „Passe den Stil in diesem Design an“ |
 
 ### Verwendung von Anhängen
@@ -217,7 +217,7 @@ Laden Sie Dateien hoch, damit die KI genau versteht, wonach Sie suchen:
 - **Beschreiben Sie, was Sie wollen** zusammen mit dem Anhang.
 - **Halten Sie die Dateien unter 10 MB** für eine optimale Verarbeitung
 
-## Tipps, um bestmögliche Ergebnisse zu erzielen
+## Tipps für bestmögliche Ergebnisse
 
 ### Einfach starten, dann aufbauen
 
@@ -327,7 +327,7 @@ Verwenden Sie diese Begriffe, um optimale Ergebnisse zu erzielen:
 
 - Überprüfen Sie, ob die Feldnamen genau so geschrieben sind, wie sie angezeigt werden
 - Verwenden Sie die Syntax `@fieldName` für vorhandene Felder
-- Stellen Sie sicher, dass das Feld vorhanden ist, bevor darauf verwiesen wird
+- Sicherstellen, dass das Feld vorhanden ist, bevor darauf verwiesen wird
 
 **Probleme beim Design-Import:**
 
@@ -335,7 +335,7 @@ Verwenden Sie diese Begriffe, um optimale Ergebnisse zu erzielen:
 - Verwenden Sie unterstützte Formate (PDF, PNG, JPG, Figma)
 - Stellen Sie sicher, dass die Dateigröße weniger als 10 MB beträgt
 
-## Informationen und Support
+## Feedback und Support
 
 Helfen Sie uns, den KI-Assistenten zu verbessern:
 
