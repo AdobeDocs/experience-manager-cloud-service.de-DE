@@ -287,11 +287,11 @@ Erste Schritte mit dieser Integration:
 
 ## Zugehörige Ressourcen {#related-resources}
 
-* [Dokumentation zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de)
+* [Dokumentation zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de)
 * [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)
 * [Überblick über XDM-System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)
-* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
-* [Überblick über Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=de)
+* [Überblick über Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de)
 * [Early-Access-Funktionen von AEM Forms](/help/forms/early-access-ea-features.md)
 * [Erstellen adaptiver Formulare mit Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Verwenden des Formulardatenmodells in AEM Forms](/help/forms/using-form-data-model.md)
