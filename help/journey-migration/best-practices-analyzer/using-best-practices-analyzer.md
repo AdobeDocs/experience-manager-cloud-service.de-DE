@@ -46,9 +46,9 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Best
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
 >title="Herunterladen des Best Practices Analyzer"
->abstract="Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über Package Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren."
+>abstract="Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über den Paket-Manager in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren."
 
-Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über [Package Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren.
+Best Practices Analyzer kann als ZIP-Datei vom Software Distribution-Portal heruntergeladen werden. Sie können das Paket über den [Paket-Manager](/help/implementing/developing/tools/package-manager.md) in Ihrer Quellinstanz von Adobe Experience Manager (AEM) installieren.
 
 >[!NOTE]
 >Laden Sie Best Practices Analyzer aus dem [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html)-Portal herunter.
@@ -66,7 +66,7 @@ Die Quell-AEM-Instanz wird möglicherweise hinter einer Firewall ausgeführt, wo
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="Automatisches Hochladen des Best-Practices-Analyzer-Berichts in CAM"
+>title="Automatisches Hochladen des Best Practices Analyzer-Berichts in CAM"
 >abstract="Stellen Sie den BPA-Upload-Schlüssel bereit, um den erstellten BPA-Bericht automatisch in Cloud Acceleration Manager (CAM) hochzuladen."
 
 Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer-Bericht anzeigen können:
@@ -290,4 +290,4 @@ BPA verwendet ein System-Service-Anwenderkonto mit dem Namen `repository-reader-
 
 2. Befolgen Sie die Anweisungen unter [Verwalten von Benutzern und Gruppen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=de#managing-users-and-groups), insbesondere die Anweisungen zum Hinzufügen von Benutzern zu einer Gruppe, um den `repository-reader-service`-Benutzer zur `administrators`-Gruppe hinzuzufügen.
 
-3. Installieren Sie das BPA-Paket über den Package Manager auf Ihrer AEM-Quellinstanz. (Dadurch wird die erforderliche Konfigurationsänderung zur ServiceUserMapper-Konfiguration für den `repository-reader-service`-System-Service-Anwender hinzugefügt.)
+3. Installieren Sie das BPA-Paket über den Paket-Manager auf Ihrer AEM-Quellinstanz. (Dadurch wird die erforderliche Konfigurationsänderung zur ServiceUserMapper-Konfiguration für den `repository-reader-service`-System-Service-Anwender hinzugefügt.)

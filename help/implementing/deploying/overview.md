@@ -5,7 +5,7 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 100%
 
@@ -41,14 +41,14 @@ Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die 
 
 Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/33376?quality=9&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
 -->
 
-## Implementieren eines Inhaltspakets über Cloud Manager und Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
+## Implementieren eines Inhaltspakets über Cloud Manager und den Paket-Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### Implementierungen über Cloud Manager {#deployments-via-cloud-manager}
 
@@ -56,7 +56,7 @@ Das folgende Video bietet einen Überblick über die Bereitstellung von Code fü
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Kundinnen und Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Cloud Manager wandelt lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt um. So wird eine Anwendung auf AEM as a Cloud Service beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Wenn Sie die Pakete in [Package Manager](/help/implementing/developing/tools/package-manager.md) für Cloud-Umgebungen betrachten, können Sie deswegen feststellen, dass der Name „cp2fm“ enthält und alle Metadaten der umgewandelten Pakete entfernt wurden. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie unter [sling-org-apache-sling-feature-cpconverter auf GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Kundinnen und Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Cloud Manager wandelt lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt um. So wird eine Anwendung auf AEM as a Cloud Service beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Wenn Sie die Pakete im [Paket-Manager](/help/implementing/developing/tools/package-manager.md) für Cloud-Umgebungen betrachten, können Sie deswegen feststellen, dass der Name „cp2fm“ enthält und alle Metadaten der umgewandelten Pakete entfernt wurden. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie unter [sling-org-apache-sling-feature-cpconverter auf GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Inhaltspakete, die für Anwendungen auf AEM as a Cloud Service geschrieben wurden, müssen eine saubere Trennung zwischen unveränderlichen und veränderlichen Inhalten aufweisen. Cloud Manager installiert nur die veränderlichen Inhalte und gibt außerdem eine Meldung wie die folgende aus:
 
@@ -114,7 +114,7 @@ Nach der Umstellung auf die neue Programmversion:
 Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinstanzen lässt sich einschränken, indem Sie Pakete unter `/apps` in einen „install.author“- oder „install.publish“-Ordner einbetten. Eine Umstrukturierung, die dieser Trennung Rechnung trägt, wurde in AEM 6.5 vorgenommen. Einzelheiten zur empfohlenen Projektumstrukturierung finden Sie in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de).
 
 >[!NOTE]
->Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über [Package Manager](/help/implementing/developing/tools/package-manager.md) installiert werden.
+>Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über den [Paket-Manager](/help/implementing/developing/tools/package-manager.md) installiert werden.
 
 Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspakete nach deren Anwendung zurückzunehmen. Wenn Kundinnen oder Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
 
@@ -170,27 +170,27 @@ Weitere Einzelheiten über `repoinit` finden Sie in der [Sling-Dokumentation](ht
 
 above appears to be internal, to confirm with Brian -->
 
-### Package Manager-„one-offs“ für Pakete mit veränderlichen Inhalten {#package-manager-oneoffs-for-mutable-content-packages}
+### Paket-Manager-„one-offs“ für Pakete mit veränderlichen Inhalten {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Package Manager – Migrieren von Packages mit veränderlichen Inhalten"
->abstract="Erkunden Sie die Verwendung von Package Manager für Anwendungsfälle, in denen ein Inhaltspaket als „einmalig“ installiert werden soll. Die Installation umfasst den Import spezifischer Inhalte aus der Produktionsumgebung in die Staging-Umgebung, um ein Produktionsproblem zu debuggen, die Übertragung eines kleinen Inhaltspakets aus einer On-Premise-Umgebung in eine AEM Cloud-Umgebung und mehr."
+>title="Paket-Manager – Migrieren von Packages mit veränderlichen Inhalten"
+>abstract="Erkunden Sie die Verwendung vom Paket-Manager für Anwendungsfälle, in denen ein Inhaltspaket als „einmalig“ installiert werden soll. Die Installation umfasst den Import spezifischer Inhalte aus der Produktionsumgebung in die Staging-Umgebung, um ein Produktionsproblem zu debuggen, die Übertragung eines kleinen Inhaltspakets aus einer On-Premise-Umgebung in eine AEM Cloud-Umgebung und mehr."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=de" text="Content Transfer Tool"
 
-Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Zum Beispiel beim Importieren bestimmter Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann [Package Manager](/help/implementing/developing/tools/package-manager.md) in Umgebungen mit AEM as a Cloud Service verwendet werden.
+Es gibt Anwendungsfälle, in denen ein Inhaltspaket als „one off“ (einmalig) installiert werden sollte. Zum Beispiel beim Importieren bestimmter Inhalte aus der Produktions- in die Staging-Umgebung, um ein Problem in der Produktion zu debuggen. Für solche Szenarien kann der [Paket-Manager](/help/implementing/developing/tools/package-manager.md) in Umgebungen mit AEM as a Cloud Service verwendet werden.
 
-Da Package Manager auf einem Laufzeitkonzept basiert, ist es unmöglich, Inhalte oder Code im unveränderlichen Repository zu installieren. Daher dürfen diese Inhaltspakete nur aus veränderlichen Inhalten bestehen (hauptsächlich `/content` oder `/conf`). Wenn das Inhaltspaket gemischte Inhalte enthält, d. h. sowohl veränderliche als auch unveränderliche, werden nur die veränderlichen Inhalte installiert.
+Da der Paket-Manager auf einem Laufzeitkonzept basiert, ist es unmöglich, Inhalte oder Code im unveränderlichen Repository zu installieren. Daher dürfen diese Inhaltspakete nur aus veränderlichen Inhalten bestehen (hauptsächlich `/content` oder `/conf`). Wenn das Inhaltspaket gemischte Inhalte enthält, d. h. sowohl veränderliche als auch unveränderliche, werden nur die veränderlichen Inhalte installiert.
 
 >[!IMPORTANT]
 >
->Die Benutzeroberfläche von Package Manager gibt möglicherweise die Fehlermeldung **undefiniert** zurück, wenn die Installation eines Pakets länger als zehn Minuten dauert.
+>Die Benutzeroberfläche vom Paket-Manager gibt möglicherweise die Fehlermeldung **undefiniert** zurück, wenn die Installation eines Pakets länger als zehn Minuten dauert.
 >
 >Diese Zeit ist nicht auf einen Installationsfehler zurückzuführen, sondern auf eine Zeitüberschreitung, die es bei Cloud Service für alle Anfragen gibt.
 >
 >Wiederholen Sie die Installation nicht, wenn ein solcher Fehler auftritt. Die Installation wird im Hintergrund korrekt ausgeführt. Würden Sie die Installation neu starten, könnten Konflikte durch mehrere gleichzeitige Importprozesse entstehen.
 
-Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderliche als auch unveränderliche) werden in der Benutzeroberfläche von AEM Package Manager mit einem eingefrorenen Status angezeigt. Diese Pakete können nicht neu installiert, neu erstellt oder auch nur heruntergeladen werden. Sie werden mit dem Suffix **cp2fm** aufgeführt, was darauf hinweist, dass ihre Installation von Cloud Manager verwaltet wurde.
+Sämtliche über Cloud Manager installierten Inhaltspakete (sowohl veränderliche als auch unveränderliche) werden in der Benutzeroberfläche des AEM-Paket-Managers mit einem eingefrorenen Status angezeigt. Diese Pakete können nicht neu installiert, neu erstellt oder auch nur heruntergeladen werden. Sie werden mit dem Suffix **cp2fm** aufgeführt, was darauf hinweist, dass ihre Installation von Cloud Manager verwaltet wurde.
 
 ### Einschließen von Drittanbieterpaketen {#including-third-party}
 
@@ -299,7 +299,7 @@ AEM as a Cloud Service hingegen ist eigenwilliger bezüglich der Frage, welche A
 * Die OSGI-Konfigurationslaufmodi müssen auf die RDE-, Entwicklungs-, Staging-, Produktions-Umgebung oder auf Author und Publish für den Service verweisen. Es wird eine Kombination aus `<service>.<environment_type>` unterstützt, wobei diese Umgebungen genau in dieser bestimmten Reihenfolge verwendet werden müssen (z. B. `author.dev` oder `publish.prod`). Die OSGI-Token sollten direkt aus dem Code referenziert werden, anstatt die `getRunModes`-Methode zu verwenden, die den `environment_type` zur Laufzeit nicht mehr enthält. Weitere Informationen finden Sie unter [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Die Ausführungsmodi von OSGi-Bundles sind auf den Service (author, publish) beschränkt. OSGi-Pakete für den Pre-Run-Modus sollten im Inhaltspaket unter `install.author` oder `install.publish` installiert werden.
 
-AEM as a Cloud Service lässt die Verwendung von Ausführungsmodi nicht zu, um Inhalte für bestimmte Umgebungen oder Dienste zu installieren. Wenn eine Entwicklungsumgebung mit Daten oder HTML-Dateien bestückt werden muss, die sich nicht in der Staging- oder Produktionsumgebung befinden, kann Package Manager verwendet werden.
+AEM as a Cloud Service lässt die Verwendung von Ausführungsmodi nicht zu, um Inhalte für bestimmte Umgebungen oder Dienste zu installieren. Wenn eine Entwicklungsumgebung mit Daten oder HTML-Dateien bestückt werden muss, die sich nicht in der Staging- oder Produktionsumgebung befinden, kann der Paket-Manager verwendet werden.
 
 Folgende Konfigurationen für den Ausführungsmodus werden unterstützt:
 
