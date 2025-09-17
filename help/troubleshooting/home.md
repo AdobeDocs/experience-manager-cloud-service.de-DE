@@ -33,22 +33,22 @@ AEM Assets optimiert die Verwaltung, Organisation und Bereitstellung digitaler A
     <td><strong>PDF und Textextraktion</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">Fehler bei der Asset-Verarbeitung für große MP4-Dateien in AEM as a Cloud Service</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639">DAM-Ausgabedarstellungen stimmen nicht mit den Originaldateien überein</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM kürzt extrahierten Text aus großen PDFs nach 100.000-Token</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26610">Fehler bei der Asset-Verarbeitung für große MP4-Dateien in AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26639">DAM-Ausgabedarstellungen stimmen nicht mit den Originaldateien überein</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM kürzt extrahierten Text aus großen PDFs nach 100.000-Token</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916">TIFF-Datei mit ZIP-Komprimierungs-Uploads generieren keine Ausgabedarstellungen</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233">Bilder ohne Miniaturansicht-Ausgabedarstellungen in AEM as a Cloud Service</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518">Einschränkungen bei der Textextraktion für große PDFs in AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-23916">TIFF-Datei mit ZIP-Komprimierungs-Uploads generieren keine Ausgabedarstellungen</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26233">Bilder ohne Miniaturansicht-Ausgabedarstellungen in AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25518">Einschränkungen bei der Textextraktion für große PDFs in AEM as a Cloud Service</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865">Drag-and-Drop eines Asset-Ordners in die AEM Assets-Web-Benutzeroberfläche schlägt fehl</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-21865">Drag-and-Drop eines Asset-Ordners in die AEM Assets-Web-Benutzeroberfläche schlägt fehl</a></td>
     <td></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528">Problem mit der Asset-Rotation macht nachfolgende Rotationen unsichtbar</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26528">Problem mit der Asset-Rotation macht nachfolgende Rotationen unsichtbar</a></td>
   </tr>
   <tr>
-  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450">Erhöhen der Obergrenze für den Asset-Upload für einzelne Teile für die Photoshop Firefly-API-Integration</a></td>
+  <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26450">Erhöhen der Obergrenze für den Asset-Upload für einzelne Teile für die Photoshop Firefly-API-Integration</a></td>
   <td></td>
   <td></td>
   </tr>
@@ -65,29 +65,29 @@ AEM Assets optimiert die Verwaltung, Organisation und Bereitstellung digitaler A
     <td><strong>Versand und Einstellungen</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533">Beheben von Problemen beim Hochladen, Verarbeiten und Rendern von Videos in AEM</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715">Rotationssets bleiben im Verarbeitungsstatus hängen</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628">Ändern der Dynamic Media-URL für Assets</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26533">Beheben von Problemen beim Hochladen, Verarbeiten und Rendern von Videos in AEM</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26715">Rotationssets bleiben im Verarbeitungsstatus hängen</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-17628">Ändern der Dynamic Media-URL für Assets</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677">Fehlende Übereinstimmung der Videominiaturansicht zwischen Dynamic Media- und DAM-Kartenansicht</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873">Ausgabedarstellungen für smartes Zuschneiden werden in AEM as a Cloud Service nicht generiert</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367">Beschädigtes Bildproblem mit smartem Zuschneiden in AEM 6.5</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26677">Fehlende Übereinstimmung der Videominiaturansicht zwischen Dynamic Media- und DAM-Kartenansicht</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26873">Ausgabedarstellungen für smartes Zuschneiden werden in AEM as a Cloud Service nicht generiert</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26367">Beschädigtes Bildproblem mit smartem Zuschneiden in AEM 6.5</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">Fehler bei der Asset-Verarbeitung in AEM Dynamic Media</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637">Problem mit der Hintergrundfarbe für TIFF-Ausgabedarstellungen</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294">Die Seite „Allgemeine Dynamic Media-Einstellungen“ wird nicht geöffnet</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26610">Fehler bei der Asset-Verarbeitung in AEM Dynamic Media</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26637">Problem mit der Hintergrundfarbe für TIFF-Ausgabedarstellungen</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25294">Die Seite „Allgemeine Dynamic Media-Einstellungen“ wird nicht geöffnet</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197">Beheben von Audioproblemen in Videodateien mit Dynamic Media</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885">Fehler bei der Asset-Synchronisierung in Dynamic Media</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461">Beheben von Diskrepanzen bei Asset-Namen in Umgebungen</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26197">Beheben von Audioproblemen in Videodateien mit Dynamic Media</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25885">Fehler bei der Asset-Synchronisierung in Dynamic Media</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26461">Beheben von Diskrepanzen bei Asset-Namen in Umgebungen</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871">Der Dynamic Media-Video-Player funktioniert in niedrigeren Umgebungen nicht</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471">Benutzerempfehlungen für die Dynamic Media-Synchronisierung</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902">Exportieren von Assets und Metadaten aus Dynamic Media mithilfe der -API</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26871">Der Dynamic Media-Video-Player funktioniert in niedrigeren Umgebungen nicht</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25471">Benutzerempfehlungen für die Dynamic Media-Synchronisierung</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26902">Exportieren von Assets und Metadaten aus Dynamic Media mithilfe der -API</a></td>
   </tr>
   </tbody>
 </table>
@@ -102,14 +102,14 @@ AEM Assets optimiert die Verwaltung, Organisation und Bereitstellung digitaler A
     <td><strong>Zugriff und Freigabe</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828">Diskrepanz bei Bildmetadaten in AEM Assets</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925">Automatisches Tagging neu hochgeladener Assets</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26928">Eingeschränktes Kommentieren in der Assets-Ansicht trotz Lesezugriff</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25828">Diskrepanz bei Bildmetadaten in AEM Assets</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25925">Automatisches Tagging neu hochgeladener Assets</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26928">Eingeschränktes Kommentieren in der Assets-Ansicht trotz Lesezugriff</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655">Beheben von Problemen mit der Sichtbarkeit von Metadatenschemata für Benutzer ohne Administratorrechte</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889">Smart-Tags funktionieren nach der Migration von JWT zu OAuth nicht</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903">Beheben von Problemen mit freigegebenen Links in AEM Managed Services</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26655">Beheben von Problemen mit der Sichtbarkeit von Metadatenschemata für Benutzer ohne Administratorrechte</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25889">Smart-Tags funktionieren nach der Migration von JWT zu OAuth nicht</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25903">Beheben von Problemen mit freigegebenen Links in AEM Managed Services</a></td>
   </tr>
 
 </tbody>
@@ -124,18 +124,18 @@ AEM Assets optimiert die Verwaltung, Organisation und Bereitstellung digitaler A
       <td><strong>Lizenzierung und Anpassungen</strong></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922">Adobe Asset Link lässt Links in InDesign nicht zugänglich</a></td>
+      <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26922">Adobe Asset Link lässt Links in InDesign nicht zugänglich</a></td>
       <td>
-        <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26616">Inhaltsfragmente sind nicht in der AEM Assets-Lizenz enthalten</a><br>
+        <a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26616">Inhaltsfragmente sind nicht in der AEM Assets-Lizenz enthalten</a><br>
         </td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562">Beheben von Verbindungsproblemen mit AEM Asset Link in InDesign</a></td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525">Beheben von Problemen bei der Asset-Verarbeitung in AEM as a Cloud Service</a></td>
+      <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25562">Beheben von Verbindungsproblemen mit AEM Asset Link in InDesign</a></td>
+      <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25525">Beheben von Problemen bei der Asset-Verarbeitung in AEM as a Cloud Service</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506">Adobe Asset Link Plug-in-Netzwerkfehler: Server nicht erreichbar</a></td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829">Aktualisieren von benutzerdefinierten Miniaturansichten für Video-Assets in AEM as a Cloud Service</a>
+      <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25506">Adobe Asset Link Plug-in-Netzwerkfehler: Server nicht erreichbar</a></td>
+      <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25829">Aktualisieren von benutzerdefinierten Miniaturansichten für Video-Assets in AEM as a Cloud Service</a>
       </td>
     </tr>
   </tbody>
@@ -187,17 +187,17 @@ AEM Forms as a Cloud Service bietet leistungsstarke Funktionen zum Erstellen und
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md">403 Unzulässige Fehler bei der Formularübermittlung</a></td>
     <td><a href="/help/forms/custom-submit-action-troubleshooting.md">502 Fehler bei benutzerdefinierten Übermittlungsaktionen</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27434">DRM-SAML-Umleitungsfehler</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27434">DRM-SAML-Umleitungsfehler</a></td>
   </tr>
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md#cors-issues">CORS-Konfigurationsprobleme</a></td>
     <td><a href="/help/forms/custom-submit-action-troubleshooting.md#resolution">Nicht behandelte Ausnahmebehandlung</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27075">Senden-Schaltfläche in AEM Sites deaktiviert</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27075">Senden-Schaltfläche in AEM Sites deaktiviert</a></td>
   </tr>
   <tr>
     <td><a href="/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md#referrer-filter-issues">Konfiguration des Referrer-Filters</a></td>
     <td><a href="/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md">Best Practices für benutzerdefinierte Aktionen</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26532">Sichtbarkeit ausgeblendeter Felder nach Upgrades</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26532">Sichtbarkeit ausgeblendeter Felder nach Upgrades</a></td>
   </tr>
   </tbody>
 </table>
@@ -212,19 +212,19 @@ AEM Forms as a Cloud Service bietet leistungsstarke Funktionen zum Erstellen und
     <td><strong>Version und Kompatibilität</strong></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26558">Designer 6.5 wird nach dem Upgrade nicht geöffnet</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27089">Locators können nicht mit JDK 8/11 beginnen</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26862">Probleme mit der AEM Forms-Paketversion (AEMFD)</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26558">Designer 6.5 wird nach dem Upgrade nicht geöffnet</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27089">Locators können nicht mit JDK 8/11 beginnen</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26862">Probleme mit der AEM Forms-Paketversion (AEMFD)</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21018">PDF Generator JPEG 2000-Fehler</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-22689">Konfiguration des JBoss-Protokollpfads</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26846">Falsche Versionsnummern in Windows</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-21018">PDF Generator JPEG 2000-Fehler</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-22689">Konfiguration des JBoss-Protokollpfads</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26846">Falsche Versionsnummern in Windows</a></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27406">Schaltfläche fehlt in der PDF-Ausgabe</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18084">Fehler beim Upgrade von Configuration Manager</a></td>
-    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17339">Problemumgehungen bei Indexbeschädigungen</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27406">Schaltfläche fehlt in der PDF-Ausgabe</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-18084">Fehler beim Upgrade von Configuration Manager</a></td>
+    <td><a href="https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-17339">Problemumgehungen bei Indexbeschädigungen</a></td>
   </tr>
   </tbody>
 </table>
