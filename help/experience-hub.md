@@ -1,19 +1,20 @@
 ---
-title: Informationen zu Experience Hub
+title: Info zu Experience Hub
 description: Erfahren Sie mehr über die Adobe Experience Hub-Seite.
 landing-page-description: Erfahren Sie mehr über Experience Hub, eine zentrale Anlaufstelle für den Zugriff auf alle Funktionen von AEM.
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
+feature-set: Experience Cloud,Experience Manager Sites
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
+source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
-# Informationen zu Experience Hub {#aem-experience-hub}
+# Info zu Experience Hub {#aem-experience-hub}
 
 Experience Hub bietet einen zentralen Ausgangspunkt für die Verwaltung von Inhalten, Assets und Websites in Adobe Experience Manager. Experience Hub wurde entwickelt, um Ihnen ein personalisiertes Erlebnis zu bieten, und ermöglicht Ihnen eine nahtlose Navigation im AEM-Ökosystem entsprechend Ihren Rollen und Zielen. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem klaren, personalisierten Layout stellt Experience Hub den schnellen Zugriff auf wichtige Tools sicher und unterstützt ein optimiertes und effektives Erlebnis über alle AEM-Funktionen hinweg.
 
@@ -82,4 +83,4 @@ Wenn keine AEM Cloud Service- oder Managed Services-Produktionsumgebungen vorhan
 
 ## KI-Assistent in AEM
 
-Für Kunden, [ die erforderlichen Kriterien erfüllt haben](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access) steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Für Kundinnen und Kunden, die die [Voraussetzungen erfüllen](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
