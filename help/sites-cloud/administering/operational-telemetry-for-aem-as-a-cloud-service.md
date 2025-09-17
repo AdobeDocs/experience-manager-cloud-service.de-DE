@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Operational Telemetry, einen automatisierte
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
+source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 85%
@@ -42,7 +42,7 @@ Der Operational Telemetry-Dienst wurde für minimale Datenerfassung entwickelt. 
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`
 * Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs?lang=de`
+* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
 * Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn die Person einem Link gefolgt ist)
 * Eine zufällig generierte ID der Seitenansicht in einem Format, das dem folgenden ähnelt: `2Ac6`
 * Die Gewichtung oder der Kehrwert der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur eine von hundert Seitenansichten aufgezeichnet wird.
@@ -105,7 +105,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Wenn Sie sich davon abmelden, könnten Sie die Chance verpassen, die Traffic-Interaktion auf Ihrer Website zu verbessern. Sollten dennoch Probleme auftreten, können Sie Operational Telemetry deaktivieren, indem Sie folgende [Umgebungsvariable in Cloud Manager einstellen](/help/implementing/cloud-manager/environment-variables.md#add-variables): Name `AEM_OPTEL_DISABLED`, Wert `true`. Wenn Sie Operational Telemetry zu einem späteren Zeitpunkt wieder aktivieren möchten, entfernen Sie diese Umgebungsvariable einfach wieder.
 
-1. **Kann ich eine Content Security Policy mit einer Nonce verwenden?
+1. **Kann ich eine Content Security Policy mit einer Nonce verwenden?**
 
    Die Unterstützung für operative Telemetrie enthält eine experimentelle Funktion zur Unterstützung einer Content Security Policy mit einer Nonce. Diese Funktion kann aktiviert werden, indem [eine Umgebungsvariable in Cloud Manager mit dem ](/help/implementing/cloud-manager/environment-variables.md#add-variables) `AEM_OPTEL_NONCE` auf den Wert `true` festgelegt wird. Wenn Sie dies zu einem späteren Zeitpunkt wieder deaktivieren möchten, entfernen Sie einfach diese Umgebungsvariable erneut.
 
