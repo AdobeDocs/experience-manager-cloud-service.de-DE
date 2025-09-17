@@ -4,28 +4,29 @@ description: Erfahren Sie, wie AEM as a Cloud Service von der Leistung und den p
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
-workflow-type: ht
-source-wordcount: '963'
-ht-degree: 100%
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
 
 # Überblick über Edge Delivery Services {#edge-delivery-services}
 
+>[!TIP]
+>
+>**Wollen Sie sofort beginnen?**
+>
+>Wenn Sie Edge Delivery Services sofort in die Hand nehmen möchten, haben Sie zwei Möglichkeiten.
+>* [Beginnen Sie sofort mit dem Authoring mit einer vorkonfigurierten Tutorial-Umgebung - vollständig konfiguriert und einsatzbereit.](https://www.aem.live/developer/ue-trial)
+>* Sehen Sie sich weitere Details an und richten Sie in weniger als 30 Minuten Ihre eigene Umgebung ein ([ Sie sich das Tutorial auf aem.live an)](https://www.aem.live/developer/ue-tutorial)
+
 ## Was ist Edge Delivery Services? {#what-is-edge}
 
 Edge Delivery Services ist ein modernes Framework zur Inhaltsbereitstellung, das die Erstellung und Bereitstellung von Websites neu definiert und Geschwindigkeit, einfache Bedienung und Skalierbarkeit optimiert. Es ist ein zentraler Bestandteil von Adobe Experience Manager und ermöglicht schnellere digitale Erlebnisse, indem das Rendering und die Bereitstellung Benutzenden am Rand des Netzwerks nähergebracht werden.
 
 Es ist kein Ersatz für ein Content Delivery Network (CDN), sondern lässt sich nahtlos in Ihr eigenes CDN oder das enthaltene [von Adobe verwaltete CDN](/help/implementing/dispatcher/cdn.md) integrieren.
-
->[!TIP]
->
->**Wollen Sie sofort beginnen?**
->
->Wenn Sie sofort praktische Erfahrungen sammeln möchten, können Sie in weniger als 30 Minuten Ihr eigenes Edge Delivery Services-Projekt mit AEM-Authoring starten, indem Sie [sich das Tutorial auf aem.live ansehen.](https://www.aem.live/developer/ue-tutorial)
-
 
 ## Gründe für Edge Delivery Services {#why-edge}
 
