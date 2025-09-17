@@ -4,13 +4,10 @@ description: Erstellen Sie personalisierte, datengesteuerte Kommunikation. Entde
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -18,11 +15,11 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
+> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 >[!IMPORTANT]
 >
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Eingabeaufforderungen, Beispiele und Best Practices können sich ändern, wenn Forms Experience Builder während des Early-Adopter-Programms weiterentwickelt wird.
+> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 Interaktive Kommunikation ermöglicht Ihnen das Erstellen, Verwalten und Bereitstellen personalisierter und interaktiver Kommunikation, einschließlich Kundendienst, Abrechnung, Onboarding-Dokumenten, Angebotsbriefen, Kontoaktualisierungen und mehr. Sie wurde entwickelt, um alle Szenarien zu unterstützen, in denen dynamische, benutzerspezifische Inhalte das Kommunikationserlebnis branchenübergreifend verbessern.
 
