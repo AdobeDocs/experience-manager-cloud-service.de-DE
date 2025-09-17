@@ -3,14 +3,14 @@ title: Info zu Experience Hub
 description: Erfahren Sie mehr über die Adobe Experience Hub-Seite.
 landing-page-description: Erfahren Sie mehr über Experience Hub, eine zentrale Anlaufstelle für den Zugriff auf alle Funktionen von AEM.
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
+source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 14%
+source-wordcount: '568'
+ht-degree: 15%
 
 ---
 
@@ -51,11 +51,11 @@ Die Adobe Experience Manager-Seite wurde mit verbesserter Navigation und interak
 >
 >Die angezeigten Widgets, Tools und Artefakte hängen von der Benutzerrolle, den Berechtigungen und dem AEM-Bereitstellungstyp (AEM as a Cloud Service oder Managed Services 6.5/6.5 LTS) ab.
 
-Diese Lösungen werden jetzt in die Hauptnavigation unter &quot;**&quot;** &quot;**&quot;**. Darüber hinaus bieten neue Navigationselemente schnellen Zugriff auf wichtige Adobe Experience Manager-Funktionen, die für die aktivierten Lösungen spezifisch sind, z. B. Assets, Sites, Forms, Inhaltsfragmente, Launches und vieles mehr.
+Diese Lösungen werden jetzt in die Hauptnavigation unter &quot;**&quot;** &quot;**&quot;**. Neue Navigationselemente bieten schnellen Zugriff auf AEM-Funktionen, die mit Ihren aktivierten Lösungen verknüpft sind. Zu Assets, Sites, Forms, Inhaltsfragmenten, Launches und mehr springen.
 
 ![Experience Hub-Umgebungen](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-Diese Funktionen sind für die primäre Produktionsumgebung verfügbar, auf die Sie Zugriff haben, oder Sie können eine bestimmte Umgebung auswählen, auf die Sie zugreifen möchten, falls Sie Zugriff auf mehrere AEM-Instanzen haben.
+Verwenden Sie diese Funktionen in Ihrer primären Produktionsumgebung. Wenn Sie Zugriff auf mehrere AEM-Instanzen haben, wählen Sie die Umgebung aus, die Sie ansprechen möchten.
 
 ![Produktions- und Staging-Umgebungen](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -67,7 +67,7 @@ Widgets können auch in der Größe angepasst und auf der Seite neu positioniert
 
 ![Experience Hub-Widgets](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-Im **Authoring-**&quot; werden alle AEM-Umgebungen angezeigt, auf die Sie zugreifen können. Für die Lösungen und Seiten stehen spezifische Verknüpfungen zur Verfügung, über die Sie auch bestimmte Umgebungen anheften können, die oben in der Liste angezeigt werden sollen.
+Im **Authoring-**&quot; werden alle AEM-Umgebungen aufgelistet, auf die Sie zugreifen können, sowie Verknüpfungen zu ihren Lösungen und Seiten. Sie können bestimmte Umgebungen anheften, um sie an der Spitze der Liste zu halten.
 
 Im Abschnitt **Zuletzt verwendet** in der Abbildung unten werden die Seiten aufgelistet, die Sie kürzlich in AEM besucht haben. Je nach Lizenzierung Ihres Mandanten kann das Widget Elemente wie Programm, Pipeline-Ausführung, Assets, Seiteneditor und Formulareditor enthalten.
 
