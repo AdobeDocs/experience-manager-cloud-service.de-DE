@@ -134,7 +134,7 @@ Wenn Ihr Benutzer auf die Vanity-URL klickt, ordnet [!DNL Dynamic Media with Ope
 
 ## Skalieren mithilfe von Vanity-URLs{#scale-using-vanity-url}
 
-Mit AEM as a Cloud Service können Sie [ DNS- und CDN-Namen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) Ihren Webadressen anpassen. Verwenden Sie diese AEMCS-Funktionen mit Ihren Vanity-URLs, um sie in eindeutige Web-Adressen umzuwandeln, die sauber, beschreibend, mit Marken versehen und intuitiv sind und die [oben genannten Vorteile](#key-benefits) bieten.
+Mit AEM as a Cloud Service können Sie [ DNS- und CDN-Namen ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) Ihren Webadressen anpassen. Verwenden Sie diese AEMCS-Funktionen mit Ihren Vanity-URLs, um sie in eindeutige Web-Adressen umzuwandeln, die sauber, beschreibend, mit Marken versehen und intuitiv sind und die [oben genannten Vorteile](#key-benefits) bieten.
 
 Siehe die folgende Vanity-URL und ihre anpassbaren Komponenten:
 
@@ -184,7 +184,7 @@ Siehe die folgende Vanity-URL und ihre anpassbaren Komponenten:
 Führen Sie die folgenden Schritte aus, um die CDN-Regeln für den Versand neu zu schreiben:
 
 1. Navigieren Sie zu Ihrem AEM-Repository, um eine YAML-Konfigurationsdatei zu erstellen.
-2. Führen Sie die Schritte im Abschnitt [Setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) aus, um CDN-Regeln zu konfigurieren und die Konfiguration über Ihre Cloud Manager-Konfigurations-Pipeline bereitzustellen.
+2. Führen Sie die Schritte im Abschnitt [Setup](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) aus, um CDN-Regeln zu konfigurieren und die Konfiguration über Ihre Cloud Manager-Konfigurations-Pipeline bereitzustellen.
 Befolgen Sie die [Best Practices](#best-practices) zum Erstellen Ihres Domain-Pfads.
    [Erfahren Sie mehr über CDN-Neuschreibungsregeln](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
