@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
+source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
 workflow-type: tm+mt
-source-wordcount: '6642'
+source-wordcount: '6648'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -1474,6 +1474,7 @@ ht-degree: 98%
    + Bereitstellen für AEM as a Cloud Service {#deploying}
       + [Bereitstellen für AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md)
+      + [Ruhezeiten und Freie Zeiträume aktualisieren](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
       + [Ressourcenzuordnung](/help/implementing/deploying/resource-mapping.md)
    + Autorenebene {#author-tier}

@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Adobe Experience Manager (AEM) as a Cloud Service
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 01de7b0c4e0408a3bbc5322e37db5075d43c4c5f
+workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 100%
 
@@ -38,7 +38,6 @@ Es wird eine [Benachrichtigung über die Cloud Manager-Benutzeroberfläche](/hel
 >[!NOTE]
 >
 > Hinweis: Nicht-intrusive Wartungs-Updates werden im Jahr 2024 schrittweise für alle Kundinnen und Kunden aktiviert.
-
 
 ## Aktualisierungstypen {#update-types}
 
