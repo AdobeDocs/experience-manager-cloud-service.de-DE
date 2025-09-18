@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die Veröffentlichung der nächsten Version ist für den 2. Oktober 2025 geplant
 
 * **Manuelles Verlängern von Domain-Validierungszertifikaten, die von Adobe verwaltet werden**
 
-  Sie können jetzt fehlgeschlagene DV-Zertifikate (Adobe-Managed Domain Validation) aus Cloud Manager oder der öffentlichen API manuell verlängern, um Zertifikate proaktiv zu aktualisieren. <!-- CMGR-68738 -->
+  Sie können jetzt von Adobe verwaltete Domain-Validierungszertifikate (DV) von Cloud Manager oder der öffentlichen API manuell erneuern, um Zertifikate proaktiv zu aktualisieren. <!-- CMGR-68738 -->
 
   ![Verlängern von SSL-Zertifikaten](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
@@ -63,10 +63,10 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
