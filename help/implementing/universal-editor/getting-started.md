@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Zugriff auf den universellen Editor erhalten 
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
-source-wordcount: '981'
+source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
+workflow-type: tm+mt
+source-wordcount: '979'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Verbindungen, die in der App verwendet werden, werden als `<meta>`-Tags im `<hea
    * `system` – Für Verbindungsendpunkte
    * `config` – Zum [Definieren optionaler Konfigurationseinstellungen](#configuration-settings).
 * `<referenceName>` – Dies ist ein Kurzname, der im Dokument zur Identifizierung der Verbindung wiederverwendet wird. Z. B. `aemconnection`
-* `<protocol>` – Dies gibt an, welches Persistenz-Plug-in des Universal Editor Persistence Service verwendet werden soll. Z. B. `aem`
+* `<protocol>` – Dies gibt an, welches Persistenz-Plug-in des universellen Editors Persistence Service verwendet werden soll. Z. B. `aem`
 * `<url>` – Dies ist die URL zum System, in dem die Änderungen persistiert werden sollen. Z. B. `http://localhost:4502`
 
 Die Kennung `urn:adobe:aue:system` stellt die Verbindung des universellen Editors von Adobe dar.
@@ -69,8 +69,6 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ### Beispielverbindung {#example}
 
 ```html
-<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
-
 <html>
 <head>
     <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
@@ -148,7 +146,7 @@ Wenn Inhaltsautorinnen und -autoren bei einem vorhandenen AEM-Projekt, bei dem [
 Sobald diese Konfigurationsschritte abgeschlossen sind, öffnet AEM den universellen Editor für Seiten in der folgenden Reihenfolge.
 
 1. AEM prüft die Zuordnungen unter `Universal Editor Opening Mapping`. Wenn sich der Inhalt unter einem der dort definierten Pfade befindet, wird der universelle Editor dafür geöffnet.
-1. Bei Inhalten, die nicht unter den in `Universal Editor Opening Mapping` definierten Pfaden enthalten sind, prüft AEM, ob der `resourceType` des Inhalts zu den unter **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) definierten gehört. Wenn der Inhalt einem dieser Typen entspricht, wird dafür der universelle Editor unter `${author}${path}.html` geöffnet.
+1. Bei Inhalten, die nicht unter den in `Universal Editor Opening Mapping` definierten Pfaden liegen, überprüft AEM, ob der `resourceType` des Inhalts mit den in **Sling:resourceTypes definierten übereinstimmt, die vom universellen Editor** geöffnet werden sollen. Wenn der Inhalt mit einem dieser Typen übereinstimmt, wird der universelle Editor dafür unter `${author}${path}.html` geöffnet.
 1. Andernfalls öffnet AEM den Seiteneditor.
 
 Die folgenden Variablen stehen zur Definition Ihrer Zuordnungen im Feld **Universal Editor Opening Mapping** (Universeller Editor – Zuordnung zum Öffnen) zur Verfügung.
