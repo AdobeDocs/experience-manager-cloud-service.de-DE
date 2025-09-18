@@ -3,9 +3,9 @@ title: Erstellen von Vanity-URLs mit Dynamic Media mit OpenAPI-Funktionen
 description: Verwenden Sie die OpenAPI-Funktionen von Dynamic Media, um Ihre URLs für die lange Asset-Bereitstellung in kurze, markenspezifische Vanity-URLs umzuwandeln. Eine Vanity-URL ist eine kurze, saubere, leicht zu merkende und lesbare Version Ihrer komplexen Versand-URL. Sie können Ihren Markennamen, Produktnamen und relevante Keywords in die Vanity-URL aufnehmen, um die Sichtbarkeit Ihrer Marke und die Benutzerinteraktion zu verbessern
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: c72966bff9220b681f8c1e4c534f19cb4b950700
+source-git-commit: 73574b3358451dfe135b91011abb5cad372a783e
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Weitere Informationen zu [Metadatenschemata](/help/assets/metadata-schemas.md).
 
      >[!NOTE]
      >
-     > Ein einzelnes Asset kann über mehrere Vanity-IDs verfügen. [Kontaktieren Sie den Adobe](https://helpx.adobe.com/de/contact.html)Support und stellen Sie eine Anfrage zum Generieren der erforderlichen Vanity-IDs.
+     > * Verwenden Sie eindeutige Vanity-IDs für jedes Asset. Stellen Sie immer sicher, dass Assets, die dasselbe Metadatenformular nutzen, eindeutige Vanity-IDs für DM bei OpenAPI-Bereitstellung über Vanity-URLs haben. Wenn zwei Assets dieselbe Vanity-ID verwenden, stellt DM mit OpenAPI das Asset bereit, das diese ID zuletzt erhalten hat, wobei die vorherige Berechtigung der ID für ein anderes Asset überschrieben wird.
+     >
+     > * Ein einzelnes Asset kann über mehrere Vanity-IDs verfügen. [Kontaktieren Sie den Adobe](https://helpx.adobe.com/de/contact.html)Support und stellen Sie eine Anfrage zum Generieren der erforderlichen Vanity-IDs.
 
 Nachdem Sie Ihre Vanity-ID im Asset-Metadatenformular eingerichtet haben[ (ordnen Sie dieses Metadatenfeld dem Bereitstellungsmechanismus des Systems zu](#map-cloud-manager-environment-variable).
 
@@ -132,7 +134,7 @@ Wenn Ihr Benutzer auf die Vanity-URL klickt, ordnet [!DNL Dynamic Media with Ope
 
 ## Skalieren mithilfe von Vanity-URLs{#scale-using-vanity-url}
 
-Mit AEM as a Cloud Service können Sie [ DNS- und CDN-Namen ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) Ihren Webadressen anpassen. Verwenden Sie diese AEMCS-Funktionen mit Ihren Vanity-URLs, um sie in eindeutige Web-Adressen umzuwandeln, die sauber, beschreibend, mit Marken versehen und intuitiv sind und die [oben genannten Vorteile](#key-benefits) bieten.
+Mit AEM as a Cloud Service können Sie [ DNS- und CDN-Namen ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) Ihren Webadressen anpassen. Verwenden Sie diese AEMCS-Funktionen mit Ihren Vanity-URLs, um sie in eindeutige Web-Adressen umzuwandeln, die sauber, beschreibend, mit Marken versehen und intuitiv sind und die [oben genannten Vorteile](#key-benefits) bieten.
 
 Siehe die folgende Vanity-URL und ihre anpassbaren Komponenten:
 
@@ -182,7 +184,7 @@ Siehe die folgende Vanity-URL und ihre anpassbaren Komponenten:
 Führen Sie die folgenden Schritte aus, um die CDN-Regeln für den Versand neu zu schreiben:
 
 1. Navigieren Sie zu Ihrem AEM-Repository, um eine YAML-Konfigurationsdatei zu erstellen.
-2. Führen Sie die Schritte im Abschnitt [Setup](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) aus, um CDN-Regeln zu konfigurieren und die Konfiguration über Ihre Cloud Manager-Konfigurations-Pipeline bereitzustellen.
+2. Führen Sie die Schritte im Abschnitt [Setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) aus, um CDN-Regeln zu konfigurieren und die Konfiguration über Ihre Cloud Manager-Konfigurations-Pipeline bereitzustellen.
 Befolgen Sie die [Best Practices](#best-practices) zum Erstellen Ihres Domain-Pfads.
    [Erfahren Sie mehr über CDN-Neuschreibungsregeln](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
