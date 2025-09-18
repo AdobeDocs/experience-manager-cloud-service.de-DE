@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 91%
+source-wordcount: '2495'
+ht-degree: 89%
 
 ---
 
@@ -80,6 +80,22 @@ Das [Bedienfeld „Eigenschaften“](/help/sites-cloud/authoring/universal-edito
 ![Dialogfeld für die Bearbeitung von Rich-Text](assets/rich-text-canvas.png)
 
 Tippen oder klicken Sie auf **Fertig** oder **Abbrechen**, um die Änderungen zu speichern bzw. zu verwerfen.
+
+#### Rich-Text-Formatierungsoptionen {#formatting-options}
+
+Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, standardmäßige Textformatierungen anzuwenden. Standardmäßig sind die folgenden Optionen verfügbar.
+
+* Absatz (h1, h2, h3 usw.)
+* Fett
+* Kursiv
+* Unterstrichen
+* Hochgestellt
+* Tiefgestellt
+* Aufzählungsliste
+* Nummerierte Liste
+* Link
+
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 

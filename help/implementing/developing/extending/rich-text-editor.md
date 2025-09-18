@@ -5,12 +5,13 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 100%
+source-wordcount: '1892'
+ht-degree: 97%
 
 ---
+
 
 # Konfigurieren des Rich-Text-Editors {#configure-the-rich-text-editor}
 
@@ -23,6 +24,10 @@ Die RTE-Konzepte und -Schritte, die zur Konfiguration erforderlich sind, sind un
 | [Grundlegendes zur Benutzeroberfläche](#understand-rte-ui) | [Grundlegendes zu und Festlegen von Konfigurationsspeicherorten](#understand-the-configuration-paths-and-locations) | [Konfigurieren von Plug-ins](#enable-rte-functionalities-by-activating-plug-ins) |
 | [Arten von Bearbeitungsmodi](#editingmodes) | [Aktivieren von Plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Festlegen von Funktionseigenschaften](#aboutplugins) |
 | [Wissenswertes über Plug-ins](#aboutplugins) | [Konfigurieren der RTE-Symbolleisten](#dialogfullscreen) | [Konfigurieren der Einfügemodi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
+
+>[!NOTE]
+>
+>Der in diesem Dokument beschriebene RTE beschreibt den im Seiteneditor verfügbaren RTE. Wenn Sie den modernen universellen Editor verwenden, finden Sie weitere Informationen im Dokument [Konfigurieren des RTE für den universellen Editor](/help/implementing/universal-editor/configure-rte.md).
 
 ## Grundlegendes zur Benutzeroberfläche, die Autoren zur Verfügung steht {#understand-rte-ui}
 
@@ -137,7 +142,7 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 
 Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeldbearbeitungsmodus verfügbar sind:
 
-* `useFixedInlineToolbar`: Sie können die RTE-Symbolleiste fixieren, anstatt sie frei beweglich zu machen. Legen Sie diese auf dem RTE-Knoten definierte boolesche Eigenschaft mit sling:resourceType= `cq/gui/components/authoring/dialog/richtext` auf `True` fest. Wenn diese Eigenschaft auf `True` festgelegt ist, wird die Bearbeitung von Rich-Text beim Ereignis `foundation-contentloaded` gestartet. Um dies zu verhindern, setzen Sie die Eigenschaft `customStart` auf `True` und lösen Sie das Ereignis `rte-start` zum Starten der RTE-Bearbeitung aus. Wenn diese Eigenschaft `true` ist, startet RTE nicht durch Klicken, und dies ist das Standardverhalten.
+* `useFixedInlineToolbar`: Sie können die RTE-Symbolleiste fixieren, anstatt sie frei beweglich zu machen. Legen Sie diese auf dem RTE-Knoten definierte boolesche Eigenschaft mit :resourceType= `cq/gui/components/authoring/dialog/richtext` auf `True` fest. Wenn diese Eigenschaft auf `True` festgelegt ist, wird die Bearbeitung von Rich-Text beim Ereignis `foundation-contentloaded` gestartet. Um dies zu verhindern, setzen Sie die Eigenschaft `customStart` auf `True` und lösen Sie das Ereignis `rte-start` zum Starten der RTE-Bearbeitung aus. Wenn diese Eigenschaft `true` ist, startet RTE nicht durch Klicken, und dies ist das Standardverhalten.
 
 * `customStart`: Setzen Sie diese boolesche Eigenschaft, die im RTE-Knoten definiert ist, auf `True`, um den RTE-Startzeitpunkt zu steuern, indem Sie das Ereignis `rte-start` auslösen.
 

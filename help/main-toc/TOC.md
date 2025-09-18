@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cd3a2735487b5b7383b24ab56a98d18e4584b4b4
+source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
 workflow-type: tm+mt
-source-wordcount: '6639'
+source-wordcount: '6642'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -1382,17 +1382,18 @@ ht-degree: 98%
          + [Komponentendefinition](/help/implementing/universal-editor/component-definition.md)
          + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
          + [Publishing](/help/implementing/universal-editor/publishing.md)
-         + [SecurBank-Beispiel-App](/help/implementing/universal-editor/securbank.md)
          + [Ereignisse](/help/implementing/universal-editor/events.md)
          + [Filtern von Komponenten](/help/implementing/universal-editor/filtering.md)
+         + [Konfigurieren des RTE](/help/implementing/universal-editor/configure-rte.md)
          + [Anpassung](/help/implementing/universal-editor/customizing.md)
          + [Erweitern](/help/implementing/universal-editor/extending.md)
          + [Architektur](/help/implementing/universal-editor/architecture.md)
          + [Authentifizierung](/help/implementing/universal-editor/authentication.md)
+         + [Aufrufe](/help/implementing/universal-editor/calls.md)
          + [Erste Schritte](/help/implementing/universal-editor/getting-started.md)
          + [Entwicklungsübersicht](/help/implementing/universal-editor/developer-overview.md)
          + [Lokale AEM-Entwicklung](/help/implementing/universal-editor/local-dev.md)
-         + [Aufrufe](/help/implementing/universal-editor/calls.md)
+         + [Beispielanwendung SecurBank](/help/implementing/universal-editor/securbank.md)
       + [Headless-Experience-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=de)
       + Hybrid- und SPA-Entwicklung {#hybrid}
          + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
