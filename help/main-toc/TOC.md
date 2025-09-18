@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6dfcb0712f2c7208e100b52a290dcf4fbfe9d0e4
+source-git-commit: cd3a2735487b5b7383b24ab56a98d18e4584b4b4
 workflow-type: tm+mt
-source-wordcount: '6634'
+source-wordcount: '6639'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -1152,6 +1152,7 @@ ht-degree: 98%
          + [Überwachen der Formularleistung: Handbücher zur betrieblichen Telemetrie](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Anleitung zur Formularübermittlung: Verwenden des Formularübermittlungsdiensts](/help/forms/forms-submission-service.md)
       + [Konfigurieren der Übermittlung für Edge Delivery Services-Formulare](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Adaptive Forms-Blockfeldeigenschaften](/help/edge/docs/forms/eds-form-field-properties.md)
       + [Häufig gestellte Fragen (FAQ)](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Best Practices zum Erstellen von Formularen](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
@@ -1421,7 +1422,7 @@ ht-degree: 98%
       + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
       + [Verwenden von CRXDE Lite](/help/implementing/developing/tools/crxde.md)
-      + [Package Manager](/help/implementing/developing/tools/package-manager.md)
+      + [Paket-Manager](/help/implementing/developing/tools/package-manager.md)
       + [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md)
       + [Der Repository-Browser](/help/implementing/developing/tools/repository-browser.md)
    + Personalisierung {#personalization}

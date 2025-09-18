@@ -4,9 +4,9 @@ description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 4%
 
 ---
@@ -248,7 +248,7 @@ Da das Formular nun die benutzerdefinierte Komponente enthält, können Sie das 
 
 Fügen wir der Komponente für **Formatierung eine Klasse (**) hinzu und fügen Sie für jedes Optionsfeld ein Bild hinzu. Verwenden Sie dazu den folgenden Code.
 
-**Gestalten Sie die benutzerdefinierte Komponente mithilfe der Decorate-Funktion in cards.js**
+**Gestalten Sie die Komponente mit card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**Laufzeitverhalten für die benutzerdefinierte Komponente in cards.css hinzufügen**
+**Laufzeitverhalten mithilfe von cards.css hinzufügen**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ Die Legacy-Methode dazu besteht darin, die unten beschriebenen Schritte manuell 
 
 10. **Aktualisieren Sie _component-definition.**: Aktualisieren Sie in `models/_component-definition.json` das Array innerhalb der Gruppe mit `id custom-components` mit einem -Objekt wie folgt:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
+   Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll
 
 11. **Build-:json ausführen**: Führen Sie `npm run build:json` aus, um alle Komponenten-JSON-Definitionen zu kompilieren und in einer einzigen Datei zusammenzuführen, die vom Server bereitgestellt wird. Dadurch wird sichergestellt, dass das Schema der neuen Komponente in der zusammengeführten Ausgabe enthalten ist.
 
@@ -587,7 +587,7 @@ Beachten Sie die folgenden Punkte, bevor Sie Ihre eigene benutzerdefinierte Komp
 
 ## Verweise
 
-- form-field-types: HTML-Basisstrukturen und -Eigenschaften für alle Feldtypen. [Klicken Sie hier](/help/edge/docs/forms/eds-form-field-properties) um detaillierte Formularfeldstrukturen und -eigenschaften anzuzeigen.
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md): HTML-Basisstrukturen und -Eigenschaften für alle Feldtypen.
 
 - **blöcke/form/models/form-components**: Vorkonfigurierte und benutzerdefinierte Komponenteneigenschaftsdefinitionen.
 
