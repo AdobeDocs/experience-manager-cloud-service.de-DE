@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
+source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
 workflow-type: tm+mt
-source-wordcount: '6648'
-ht-degree: 98%
+source-wordcount: '6665'
+ht-degree: 97%
 
 ---
 
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -1013,12 +1013,16 @@ ht-degree: 98%
       + [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Varianten generieren](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [KI-Assistent für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [Erste Schritte mit dem KI-Assistenten für AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [Erste Schritte mit dem KI-Assistenten für AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [AEM Forms KI-Assistent – Bibliothek für Prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder – Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder – Handbuch zur Fehlerbehebung](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Forms Experience Builder - Übersicht](/help/forms/experience-builder/product-overview.md)
+      + [Erste Schritte mit Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [Bereitstellen und Konfigurieren von Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + Anleitung {#forms-experience-builder-how-to}
+         + [Wie konvertiert man ein Bild in ein Formular?](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + [Konfigurieren von Formularübermittlungen und -integrationen](/help/forms/experience-builder/form-submission-integration.md)
+         + [Wie erstelle ich LLM-erweiterte Smart Fields in Forms Experience Builder?](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + [Wie starte ich eine neue Thread-Konversation in Forms Experience Builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + [Bibliothek der Eingabeaufforderung](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + [Häufig gestellte Fragen (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Überblick über Screens as a Cloud Service {#overview}
       + [Einführung](/help/screens-cloud/introduction/introduction.md)
