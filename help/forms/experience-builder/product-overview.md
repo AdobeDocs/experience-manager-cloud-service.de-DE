@@ -228,7 +228,7 @@ Forms Experience Builder ist derzeit über ein Early Access-Programm verfügbar.
 
    Wenn Sie Hilfe bei der Suche nach Ihrer IMS-Organisations-ID und Programm-ID benötigen, lesen Sie das [Adobe Experience Cloud-Einrichtungshandbuch für ](/help/onboarding/cloud-manager-introduction.md) und die Dokumentation [Programm- und ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)).
 
-2. **Eine Zugriffsanfrage senden**: Senden Sie eine E-Mail [2}aem-forms-ea@adobe.com) mit allen im vorherigen Schritt gesammelten Informationen.](mailto:aem-forms-ea@adobe.com)
+2. **Eine Zugriffsanfrage senden**: Senden Sie eine E-Mail [2&rbrace;aem-forms-ea@adobe.com) mit allen im vorherigen Schritt gesammelten Informationen.](mailto:aem-forms-ea@adobe.com)
 
    Der Zugriff auf Forms Experience Builder ist eingeschränkt und unterliegt der Genehmigung auf der Grundlage der Programmkapazität und der Ausrichtung an den Kriterien für einen frühzeitigen Zugriff.
 

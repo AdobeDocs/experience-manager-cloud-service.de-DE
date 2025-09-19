@@ -135,9 +135,9 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
     Voreinstellungen:**
     - Leistungsauswahl mit Kostenrechner
     - Voreinstellungen für den Arbeitsplan
-    - Schulungsanforderungen**Validierungsregeln:**Validierung des E-Mail-FormatsValidierungAlter muss 18 oder älter sein**- Alle erforderlichen Dokumente müssen hochgeladen werden
+    - Schulungsanforderungen&#x200B;**Validierungsregeln:**&#x200B;Validierung des E-Mail-FormatsValidierungAlter muss 18 oder älter sein**- Alle erforderlichen Dokumente müssen hochgeladen werden
     
-    - Bedingungen müssen akzeptiert werden**Aktionen senden:**Bestätigungs-E-Mail an neueMitarbeiter senden
+    - Bedingungen müssen akzeptiert werden&#x200B;**Aktionen senden:**&#x200B;Bestätigungs-E-Mail an neueMitarbeiter senden
     - HR- Personalabteilung benachrichtigen
     - Erstellen Sie einen Datensatz in einem HR
      
@@ -149,7 +149,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
      
      
      
--
+&#x200B;-
 **Prompts zur Formularverwaltung:**
 
     Importieren Sie dieses PDF-Antragsformular und konvertieren Sie es in ein adaptives Formular mit erweiterter Validierung
@@ -394,7 +394,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
     Verbinden Sie dieses Formular mit dem **CRM-System**, um neue Leads zu erstellen. Ordnen Sie beim Senden des Formulars @firstName FirstName, @email E-Mail zu, legen Sie LeadSource auf „Web-Formular“ und Status 
     
-    Neu“ fest **Workflow-Trigger **. Alle Formulardaten und den Workflow für die Trigger-Genehmigung mit Manager-Benachrichtigung 
+    Neu“ fest **Workflow-Trigger &#x200B;**. Alle Formulardaten und den Workflow für die Trigger-Genehmigung mit Manager-Benachrichtigung 
     
     **Datenbankintegration** übergeben, um Formularübermittlungen als Datensätze zu speichern Erstellen Sie für jede Übermittlung mit hochgeladenen Dokumenten einen neuen Ordner
 
