@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7145e7a4ebf6601670a0721defc411b552aa2e
+source-git-commit: 4f7bca2c4ed4e2d3e02760bc862db0a183a115a4
 workflow-type: tm+mt
 source-wordcount: '6665'
 ht-degree: 97%
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -624,7 +624,7 @@ ht-degree: 97%
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media-Tour: Grundlagen {#dm-journey}
          + [Teil 1: Was ist Dynamic Media – Anwendungsfälle – Wie ein Asset durch das System fließt](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [Teil 2: Anatomie einer Dynamic Media-URL – Grundlagen von Bildvorgaben – Informationen zu Bildsets, Rotationssets und Sets mit gemischten Medien](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [Teil 2: Anatomie einer Dynamic Media-URL – Grundlagen von Bildvorgaben – Informationen zu Bild-Sets, Rotationssets und Sets mit gemischten Medien](/help/assets/dynamic-media/dm-journey-part2.md)
          + [Best Practices für Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Dynamic Media Newsletter-Archiv von Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Einrichten von Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
@@ -1115,11 +1115,7 @@ ht-degree: 97%
       + [Überblick](/help/edge/docs/forms/overview.md)
 
       + WYSIWYG-Authoring {#universal-editor}
-         + Kaskadierende Dropdown-Liste {#cascading-drop-down-list}
-            + [Einführung](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-            + [API-Integration erstellen](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [Erstellen eines Formulars](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
-            + [Universeller Editor für Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Universeller Editor für Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Erste Schritte mit Edge Delivery Services für AEM Forms mithilfe des universellen Editors](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Erstellen und Veröffentlichen von adaptiven Formularen mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1136,6 +1132,10 @@ ht-degree: 97%
          + [Erstellen benutzerdefinierter Komponenten für ein EDS-Formular](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Fehlerbehebung für 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
          + [Erstellen eines Salesforce-Lead-Objekts mithilfe der API-Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + Kaskadierende Dropdown-Liste {#cascading-drop-down-list}
+            + [Einführung](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+            + [API-Integration erstellen](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+            + [Formular erstellen](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
          + [Erstellen von Formularen mit Google Tabellen oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)
