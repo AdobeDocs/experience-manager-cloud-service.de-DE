@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
-workflow-type: ht
-source-wordcount: '2824'
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+workflow-type: tm+mt
+source-wordcount: '2823'
 ht-degree: 100%
 
 ---
@@ -176,9 +176,9 @@ Weitere Informationen finden Sie unter [Varianten generieren – in AEM-Editoren
 
 So löschen Sie eine Variante Ihres Inhaltsfragments:
 
-    >[!HINWEIS]
-    >
-    >Sie können die **Hauptversion** nicht löschen.
+>[!NOTE]
+>
+>Die **Hauptvariante** kann nicht gelöscht werden.
 
 1. Wählen Sie die Variante aus.
 
