@@ -1,26 +1,26 @@
 ---
-title: Konfigurieren einer benutzerdefinierten Domain für die Veröffentlichungsebene
-description: Erfahren Sie, wie Sie eine benutzerdefinierte Domain für die Veröffentlichungsebene in Adobe Cloud Manager konfigurieren.
+title: Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene
+description: Erfahren Sie, wie Sie in Adobe Cloud Manager eine benutzerdefinierte Domain für die Bereitstellungsebene konfigurieren.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
+workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
-# Konfigurieren einer benutzerdefinierten Domain für die Veröffentlichungsebene{#configure-custom-domain}
+# Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene{#configure-custom-domain}
 
 In Adobe Cloud Manager können Sie Ihre Website durch das Hinzufügen einer benutzerdefinierten Domain hervorheben. AEM as a Cloud Service verfügt zwar über eine Standard-Domain, Sie können sie aber nach Bedarf anpassen.
 
 ## Voraussetzungen
 
 * Sie müssen über ein TLS- oder SSL-Zertifikat mit mehreren Subject Alternative Names (SANs) verfügen.
-* Das SSL-Zertifikat sollte über separate SANs für das Zertifikat verfügen, das der Veröffentlichungsebene in derselben Domain zugeordnet ist.
+* Das SSL-Zertifikat sollte über verschiedene SANs für das Zertifikat verfügen, das für die Bereitstellungsebene innerhalb derselben Domain zugeordnet ist.
 * Die Zertifikatsrichtlinie muss entweder der Richtlinie „Extended Validation“ (EV) oder „Organization Validation“ (OV), aber nicht der Richtlinie „Domain Validation“ (DV) entsprechen.
 
 
-## Konfigurieren einer benutzerdefinierten Domain für die Veröffentlichungsebene
+## Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene
 
 1. Navigieren Sie zu **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Programmübersicht]** > **[!UICONTROL SSL-Zertifikate]** und fügen Sie Ihr SSL-Zertifikat hinzu.
    ![Bild](/help/assets/assets/ssl-certificate.png)
