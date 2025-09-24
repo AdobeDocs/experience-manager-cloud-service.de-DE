@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
+source-git-commit: f5f80ffb8524351fa4cdda039671df339fa0742d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 15%
 
 ---
@@ -59,7 +59,7 @@ Verwenden Sie diese Funktionen in Ihrer primären Produktionsumgebung. Wenn Sie 
 
 ![Produktions- und Staging-Umgebungen](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
-Die Experience Hub-Seite, die als zentraler Hub für Adobe Experience Manager dient, wird erweitert und enthält zusätzliche Widgets und Aktionen, die auf jede Benutzerrolle zugeschnitten sind. Die Seite ist vollständig anpassbar und ermöglicht die Auswahl des optimalen Layouts für Ihren Bildschirm. Widgets können so gefiltert werden, dass nur ausgewählte Widgets auf der Hauptseite angezeigt werden, was ein personalisiertes Erlebnis gewährleistet.
+Die Experience Hub-Seite, die als zentraler Hub für Adobe Experience Manager dient, wird erweitert und enthält zusätzliche Widgets und Aktionen, die auf jede Benutzerrolle (Voreinstellung) zugeschnitten sind. Die Seite ist vollständig anpassbar und ermöglicht die Auswahl des optimalen Layouts für Ihren Bildschirm. Widgets können so gefiltert werden, dass nur ausgewählte Widgets auf der Hauptseite angezeigt werden, was ein personalisiertes Erlebnis gewährleistet.
 
 ![Experience Hub angepasst](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 

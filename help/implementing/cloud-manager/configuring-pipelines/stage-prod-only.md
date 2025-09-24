@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -67,7 +68,7 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 ### Erstellen einer Pipeline, die nur für Staging vorgesehen ist {#stage-only}
 
-1. Wählen **im Dialogfeld** Produktionsfremde Pipeline hinzufügen“ auf der Registerkarte **Konfiguration** das Feld **Bereitstellungs-Pipeline** für Ihre Pipeline aus.
+1. Wählen **Dialogfeld Produktionsfremde Pipeline hinzufügen** auf der Registerkarte **Konfiguration** das Feld **Bereitstellungs-Pipeline** für Ihre Pipeline aus.
 1. Geben Sie im Feld Name der produktionsfremden Pipeline einen Freitext-Namen ein.
 1. Wählen Sie die gewünschten Bereitstellungsoptionen aus und klicken Sie dann auf **Weiter**.
 
@@ -81,11 +82,11 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
    ![Registerkarte &quot;Source-Code“ im Dialogfeld „Produktionsfremde Pipeline hinzufügen“](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. Auf der Registerkarte **Experience Audit** ist die angegebene Site-URL die Veröffentlichungs-URL, die von Cloud Manager auf Seitenqualität geprüft wird.
+1. Auf der Registerkarte **Experience Audit** ist die angegebene Site-URL die veröffentlichte URL, die von Cloud Manager auf Seitenqualität geprüft wird.
 
 1. Geben Sie im Feld **Seitenpfad** an, welche Seiten Sie überprüfen möchten, und klicken Sie dann auf **![Symbol hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Seite hinzufügen**.
 
-   Experience Audit analysiert jeden hinzugefügten Pfad auf Leistung, Barrierefreiheit, Progressive Web Apps, Best Practices, SEO und andere Qualitätsprüfungen. Sie können mehrere Pfade hinzufügen und entfernen, indem Sie auf das Symbol ![Cross Size 400“ ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
+   Experience Audit analysiert jeden Pfad, den Sie hinzufügen, auf Leistung, Barrierefreiheit, Progressive Web Apps, Best Practices, SEO und andere Qualitätsprüfungen. Sie können mehrere Pfade hinzufügen und entfernen, indem Sie auf das Symbol ![Cross Size 400“ ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
    ![Registerkarte „Erlebnisprüfung“ im Dialogfeld „Produktionsfremde Pipeline hinzufügen“](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
@@ -94,13 +95,13 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 ### Erstellen einer schreibgeschützten Pipeline {#prod-only}
 
-1. Geben **im Dialogfeld Nur Produktions-Pipeline hinzufügen** im Textfeld **Pipeline-Name** den Freitext-Namen der Pipeline ein.
+1. Geben Sie im Dialogfeld **Nur Produktions-Pipeline hinzufügen** im Textfeld **Pipeline-Name** den Freitext-Namen der Pipeline ein.
 1. Geben Sie **Feld „Name** Pipeline“ den gewünschten Namen ein.
 1. Wählen **unter „Produktionsbereitstellungsoptionen** die Option **Anhalten vor der Bereitstellung in der Produktion** aus.
 
    Mit dieser Option wird direkt vor dem Produktionsschritt ein manuelles Validierungs-Gate eingefügt. Die Pipeline wird angehalten und wartet, bis eine genehmigende Person (z. B. ein Bereitstellungs-Manager oder ein Geschäftsinhaber) die Produktionsbereitstellung genehmigt oder abbricht.
 
-   Verwenden Sie diese Option für Änderungskontrollen oder Prüfungen in letzter Minute.
+   Dient zur Änderungskontrolle oder für Prüfungen in letzter Minute.
 
 1. Klicken Sie **Speichern**, um die produktionsgeschützte Pipeline mit diesen Optionen zu erstellen.
 
@@ -129,7 +130,7 @@ In den Ausführungsdetails wird nach **Testschritten eine Schaltfläche** Build 
 
 ![Ausführen einer reinen Staging-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Wenn Sie auf **Build bewerben** klicken und eine reine Staging-Pipeline vorhanden ist, wird ein Bestätigungsdialogfeld geöffnet, um sie zu starten. Klicken Sie auf **Ausführen**.
+Wenn Sie auf **Build bewerben** klicken, wird ein Dialogfeld geöffnet, in dem Sie die Ausführung der zugehörigen produktionsbezogenen Pipeline bestätigen können. Klicken Sie auf **Ausführen**, um sie zu starten.
 
 ![Dialogfeld „Erstellen - Pipeline ausführen“ ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ Bei einer **-**-Pipeline zeigt Cloud Manager die Quellartefakte an, die für die
 
 
 ![Artefaktdetails](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
