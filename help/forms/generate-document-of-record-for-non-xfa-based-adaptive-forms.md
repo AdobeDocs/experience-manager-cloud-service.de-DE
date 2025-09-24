@@ -4,9 +4,9 @@ description: Lernen Sie, wie Sie eine Vorlage für ein Datensatzdokument (DoR) f
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4221'
+source-wordcount: '4217'
 ht-degree: 99%
 
 ---
@@ -142,7 +142,7 @@ Beim Versenden des adaptiven Formulars wird nun fortan ein aktualisiertes Datens
 
 Beachten Sie beim Arbeiten an einem Datensatzdokument für adaptive Formulare die folgenden Hinweise und Einschränkungen.
 
-* Datensatzdokument-Vorlagen unterstützen keinen Rich-Text. Daher wird jeglicher Rich-Text, der im statischen adaptiven Formular oder in den von den Benutzenden ausgefüllten Informationen enthalten ist, im Datensatzdokument als unformatierter Text angezeigt.
+* **Rich-Text-**: Das Datensatzdokument unterstützt HTML-Markup-Tags in Rich-Text-Feldern. Ausführliche Informationen zu unterstützten Tags und Überlegungen zur Barrierefreiheit finden Sie unter [Unterstützte HTML-Markup-Tags im Datensatzdokument](html-markup-tags-support-in-document-of-record.md).
 * Dokumentfragmente in einem adaptiven Formular werden im Datensatzdokument nicht angezeigt. Adaptive Formularfragmente werden jedoch unterstützt.
 * Das Binden von Inhalten in Datensatzdokumente, die für XML-Schema-basierte adaptive Formulare generiert werden, wird nicht unterstützt.
 * Lokalisierte Versionen des Datensatzdokuments werden für ein Gebietsschema bedarfsgesteuert erstellt, wenn der Benutzer die Darstellung des Datensatzdokuments anfordert. Die Lokalisierung des Datensatzdokuments erfolgt zusammen mit der Lokalisierung des adaptiven Formulars. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -405,9 +405,9 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
 ## Unterstützung von Datensatzdokumenten im Editor für adaptive Formulare {#dor-support-in-adaptiveform}
 
-Sie können die Vorlage [!UICONTROL Datensatzdokument] direkt über den Builder für adaptive Formulare oder den Vorlagen-Builder für adaptive Formulare konfigurieren.
+Sie können die Formularvorlage [!UICONTROL Datensatzdokument] direkt über den Editor für adaptive Formulare oder den Vorlagen-Editor für adaptive Formulare konfigurieren.
 
-Führen Sie in der Autoreninstanz des Builders für adaptive Formulare die folgenden Schritte aus:
+Führen Sie die folgenden Schritte über die Autoreninstanz des Editors für adaptive Formulare aus:
 
 1. Wählen Sie die Komponente **[!UICONTROL Adaptiver Formularcontainer (Stamm)]** aus.
 1. Klicken Sie auf das Symbol ![Symbol konfigurieren](/help/forms/assets/configure-icon.svg), um die **[!UICONTROL Eigenschaften]** des adaptiven Formular-Containers zu öffnen.
