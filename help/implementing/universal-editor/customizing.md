@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +54,14 @@ Für bestimmte Authoring-Workflows muss möglicherweise die Möglichkeit der Inh
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Deaktivieren von Kopieren und Einfügen {#copy-paste}
+
+Bestimmte Authoring-Workflows müssen möglicherweise die Fähigkeit des Inhaltsautors einschränken, Komponenten zu kopieren und einzufügen. Sie können die Symbole [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) deaktivieren, indem Sie die folgenden Metadaten hinzufügen.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## Ändern des Endpunkts {#custom-endpoint}

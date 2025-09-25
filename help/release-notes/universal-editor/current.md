@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.09.18
-description: Dies sind die Versionshinweise für die Version 2025.09.18 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.09.25
+description: Dies sind die Versionshinweise für die Version 2025.09.25 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 67%
+source-wordcount: '224'
+ht-degree: 46%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.09.18 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.09.25 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 18. September 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 25. September 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ Dies sind die Versionshinweise für die Version vom 18. September 2025 des unive
 
 ## Neue Funktionen {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/) wird jetzt als Service-Endpunkt für AMS verwendet, anstatt den Service lokal hosten zu müssen.
-* Zusammengesetzte Mehrfachfelder werden jetzt bei Verwendung von AEM-Authoring unterstützt.
+* [Die Funktion zum Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) kann jetzt [mit einem Meta-Tag deaktiviert) ](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [Bei Verwendung des universellen Editors in gehosteten AEM-Umgebungen (AMS) verwendet ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) universelle Editor jetzt den von AEM gehosteten universellen Editor-Dienst und verlässt sich nicht mehr auf eine lokale AMS-Installation, sodass Sie immer automatisch über den neuesten universellen Editor-Dienst verfügen.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -39,5 +39,5 @@ Kopieren und Einfügen ist jetzt auch über Seiten hinweg möglich (also nicht m
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Für den universellen Editor, der mit AEM als Backend-System arbeitet, wurden mehrere kleine Leistungsverbesserungen implementiert.
-* Inhaltsfragmente werden jetzt mit der OpenAPI veröffentlicht, was Leistungsverbesserungen und Konsistenz beim Veröffentlichen mit dem Editor für Inhaltsfragmente und der Konsole ermöglicht.
+* Die Eigenschaftenleiste bei Verwendung mit der Dokumenterstellung wurde korrigiert.
+* Ein Problem beim Bearbeiten mehrerer Felder eines Inhaltsfragments bei Verwendung von MSM wurde behoben.
