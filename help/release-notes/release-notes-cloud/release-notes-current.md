@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -283,7 +283,7 @@ Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitun
 
 ### Erweiterte Anwendungsleistungsüberwachung (APM) (Alpha-Programm) {#apm-alpha}
 
-Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
+Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
 
 
 ## [!DNL Experience Manager] Guides {#guides}
