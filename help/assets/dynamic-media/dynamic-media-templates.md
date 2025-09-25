@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Vorlagen von [!DNL Dynamic Media] mit einem W
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '3415'
-ht-degree: 100%
+source-git-commit: 97be1d044ae23859e263756116c8bac8701178b4
+workflow-type: tm+mt
+source-wordcount: '3779'
+ht-degree: 88%
 
 ---
 
@@ -96,9 +96,9 @@ Sie müssen folgende Voraussetzungen erfüllen, um eine [!DNL Dynamic Media]-Vor
 Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media]-Vorlage zu erstellen:
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
@@ -177,6 +177,20 @@ Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Textebenen hinzuzu
 
 Zum Neupositionieren, Ändern der Größe, Drehen oder Löschen der Ebene gehen Sie zum [**[!UICONTROL Bedienfeld „Eigenschaften“]**](#reposition-resize-delete-a-layer). Formatieren Sie Schriftart, Größe, Farbe, Stil und Ausrichtung (auf der Ebene) des Textes wie erforderlich, indem Sie die Werte in den entsprechenden Feldern unter dem Abschnitt **[!UICONTROL Text]** des Panels ändern. Das Feld **[!UICONTROL Schriftfamilie]** zeigt die Standardschriftart [!UICONTROL Adobe Sans F2], die neu verarbeiteten vorhandenen Schriftarten sowie die neu hochgeladenen und veröffentlichten Schriftarten an. Weitere Informationen finden Sie unter Punkt 5 im Abschnitt [Bevor Sie beginnen](#prerequisites-for-dynamic-media-wysiwyg-template).
 
+[Anwenden der Formatierung auf Teilzeichenfolgen, um bestimmte Textteile unabhängig voneinander zu formatieren und zu steuern.](#apply-formatting-to-substring)
+
+#### Formatieren von selektivem Text{#apply-formatting-to-substring}
+
+Führen Sie die folgenden Schritte aus, um bestimmte Teile einer Zeichenfolge zu formatieren:
+
+1. Ein oder mehrere Zeichen in der zu formatierenden Zeichenfolge auswählen.
+1. Anwenden von Formatierungen auf die Auswahl mithilfe des [Eigenschaftenbereichs](#properties-panel). Die folgenden Formatierungsoptionen gelten für Teilzeichenfolgen und ihre Teile:
+   * **Schriftstil**: Fett, Kursiv, Unterstrichen, Tiefgestellt und Hochgestellt mit der Option **[!UICONTROL Schriftstil]**.
+   * **Schrifteigenschaften**: Ändern Sie Schriftfamilie, Farbe und Größe mithilfe der entsprechenden Bedienfeldoptionen.
+     ![format-substring](/help/assets/assets/format-substring.png)
+
+[Jeder formatierte Zeichenfolgenteil wird als Teilzeichenfolge im Teilzeichenfolgen-Selektor angezeigt, der im Bedienfeld Parameter verfügbar ist. Fügen Sie diesen formatierten Teilen Parameter hinzu, um sie mithilfe der Bereitstellungs-URL der Vorlage dynamisch zu ](#substring-parameterisation).
+
 ### Hinzufügen von Formen zur Arbeitsfläche {#add-shapes-to-the-canvas}
 
 Führen Sie die folgenden Schritte aus, um der Arbeitsfläche Formen hinzuzufügen:
@@ -240,23 +254,57 @@ Um zwischen dem Bedienfeld „Parameter“ eines Bildes und der Textebene zu wec
 
 Die parametrisierten Eigenschaften können als URL-Parameter in die Vorlagen-URL aufgenommen werden, um die Vorlage mithilfe der URL in Echtzeit zu bearbeiten.
 
-**Bildparameter:**
+##### Ebenenparameter{#layer-parameters}
+
+Im Folgenden finden Sie Ebenenparameter, die sowohl für Bild- als auch für Textebenen gelten.
 
 **[!UICONTROL X]:** Fügen Sie dies ein, um die Ebene horizontal entlang ihrer Mittellinie parallel zur x-Achse der Vorlagenebene zu verschieben, indem der Wert des Parameters in der URL geändert wird.
 **[!UICONTROL Y]:** Fügen Sie dies ein, um die Ebene vertikal entlang ihrer Mittellinie parallel zur y-Achse der Vorlagenebene zu verschieben, indem der Wert des Parameters in der URL geändert wird.
 **[!UICONTROL Breite]:** Fügen Sie dies ein, um die Breite der Ebene anzupassen, indem der Wert des Parameters in der URL geändert wird.
 **[!UICONTROL Höhe]:** Fügen Sie dies ein, um die Höhe der Ebene anzupassen, indem der Wert des Parameters in der URL geändert wird.
-**[!UICONTROL Ausblenden]:** Fügen Sie dies ein, um die Ebene in der Vorlage mit 0 (Einblenden) und 1 (Ausblenden) ein- oder auszublenden.
-**[!UICONTROL Quelle]:** Fügen Sie dies ein, um das Bild der Ebene durch ein neues Bild zu ersetzen, indem der Bildpfad im Wert des Parameters in der URL geändert wird.
+**[!UICONTROL Ausblenden]:** Einschließen, um die Ebene in der Vorlage mit 0 (Anzeigen) und 1 (Ausblenden) ein- oder auszublenden.
 
-**Textformatierungsparameter:**
+##### Bildparameter{#image-parameter}
 
-Schließen Sie die folgenden Parameter ein, um den Text, seine Schriftart, Farbe und Größe aus der URL zu bearbeiten, indem Sie die Werte des Parameters in der URL aktualisieren.
+Source Schließen Sie den Parameter **** ein, um das Ebenenbild durch ein neues Bild zu ersetzen, indem Sie den Bildpfad im Parameterwert in der URL ändern.
+![Bildquellenparameter](/help/assets/assets/image-parameter.png)
+
+##### Textformatierungsparameter{#text-formatting-parameters}
+
+Schließen Sie die folgenden Parameter ein, um den Text, seine Schriftart, Farbe und Größe von der Versand-URL aus zu bearbeiten, indem Sie die Parameterwerte in der URL aktualisieren:
 
 **[!UICONTROL Text]:** Fügen Sie dies ein, um Text in der URL zu aktualisieren.
 **[!UICONTROL Schriftfamilie]:** Fügen Sie dies ein, um die Schriftart des Textes in der URL zu aktualisieren.
 **[!UICONTROL Schriftgröße]:** Fügen Sie dies ein, um die Schriftgröße des Textes in der URL zu aktualisieren.
 **[!UICONTROL Textfarbe]:** Fügen Sie dies ein, um die Schriftfarbe des Textes in der URL zu aktualisieren.
+
+##### Unterzeichenfolgen parametrisieren{#substring-parameterisation}
+
+Scrollen **[!UICONTROL im Bedienfeld]** Parameter“ zum Abschnitt **[!UICONTROL Teilzeichenfolgenparameter]**. Dieser Abschnitt enthält einen **Teilzeichenfolgenselektor** der die vollständige Zeichenfolge (ausgewählte Textebene) mit konsistenter Formatierung oder ihre formatierten Teile als separate Unterzeichenfolgen anzeigt. Wählen Sie eine Teilzeichenfolge aus[ um den Text, die Schriftfamilie, die Schriftgröße und die Farbe zu ](#text-formatting-parameters).
+Verwenden Sie den Teilzeichenfolgenselektor zum [ von ](#split-substring), um einzelne Teile zu parametrisieren, oder [Teilzeichenfolgen zusammenführen](#merge-substring) um einheitliche Parameter anzuwenden.
+
+###### Teilzeichenfolge aufteilen{#split-substring}
+
+Um einen Teil einer Teilzeichenfolge zu parametrisieren, ziehen Sie ihn heraus, um ihn zu einer separaten Teilzeichenfolge für die individuelle Auswahl und Parametrisierung zu machen.
+Führen Sie die folgenden Schritte aus, um eine Teilzeichenfolge in separate Unterzeichenfolgen aufzuteilen:
+
+1. Wählen Sie in der Teilzeichenfolgen-Auswahl die Zeichen innerhalb einer Teilzeichenfolge aus, um sie zu trennen.
+1. Klicken Sie auf ![Teilzeichenfolge aufteilen](/help/assets/assets/unmerge.svg), um sie herauszuziehen und zu einer separaten Teilzeichenfolge innerhalb der **Teilzeichenfolgenauswahl** zu machen.
+   ![Teilzeichenfolge aufteilen](/help/assets/assets/split-a-substring.png)
+Sie können die erforderliche Teilzeichenfolge auswählen, um [den Text, die Schriftfamilie, die Schriftgröße und die Farbe zu parametrisieren](#text-formatting-parameters).
+
+###### Teilzeichenfolge zusammenführen{#merge-substring}
+
+Beim Zusammenführen von Unterzeichenfolgen werden deren vorhandene individuelle Parameter entfernt und Sie können konsistente Parameter auf die neu erstellte Unterzeichenfolge anwenden.
+Führen Sie die folgenden Schritte aus, um zwei benachbarte Teilzeichenfolgen zusammenzuführen, um einheitliche Parameter auf die resultierende Teilzeichenfolge anzuwenden:
+
+1. Wählen Sie in der Teilzeichenfolgenauswahl Zeichen aus zwei benachbarten Teilzeichenfolgen mit derselben Formatierung aus.
+1. Klicken Sie ![Teilzeichenfolge zusammenführen](/help/assets/assets/merge.svg), um die Teilzeichenfolgen zusammenzuführen.
+   ![Identische Unterzeichenfolgen zusammenführen](/help/assets/assets/merge-two-substrings.png)
+Sie können einheitliche Parameter auf die neu gebildete Teilzeichenfolge anwenden.
+   >[!NOTE]
+   >
+   >Nur Teilzeichenfolgen mit identischer Formatierung können zusammengeführt werden.
 
 ### Gruppieren von Ebenen für das gemeinsame Steuern Ihrer Sichtbarkeit{#group-layers}
 
