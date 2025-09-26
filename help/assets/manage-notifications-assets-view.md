@@ -130,7 +130,7 @@ Abmelden:
 
    ![Abonnement von Inhalt kündigen](assets/unsubscribe-assets.png)
 
-Alternativ können Sie den Ordner, das Asset oder die Sammlung unter [!UICONTROL Asset-Management“ ]. Wählen Sie das [abonnierte Asset](#subscribe-to-content) und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
+Alternativ können Sie den Ordner, das Asset oder die Sammlung unter [!UICONTROL Asset-Management“ &#x200B;]. Wählen Sie das [abonnierte Asset](#subscribe-to-content) und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
 
 ## Anzeigen von Benachrichtigungen {#view-notifications}
 
