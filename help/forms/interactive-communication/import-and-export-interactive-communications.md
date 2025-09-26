@@ -39,7 +39,7 @@ Erstellen Sie eine interaktive Kommunikation (IC) in einer Umgebung und verwende
 
 +++&#x200B;1. Exportieren der interaktiven Kommunikation
 
-1.1. Wählen Sie eine [erstellte interaktive Kommunikation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC) aus.
+1.1. Wählen Sie eine [erstellte interaktive Kommunikation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC) aus.
 1.2. Klicken Sie auf die Option **Herunterladen**, um sie als ZIP-Datei zu exportieren.
 1.3. Die heruntergeladene ZIP-Datei enthält die IC zusammen mit ihrer ausgewählten **Vorlage**, **Fragmenten** und **Datenmodell**.
 

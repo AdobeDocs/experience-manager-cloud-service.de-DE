@@ -39,5 +39,5 @@ Mit der Funktion für benutzerdefinierte Schriftarten können Sie das Erscheinun
 
 >[!NOTE]
 >
-> Ausführliche Konfigurationsschritte finden Sie in der Anleitung [Verwenden benutzerdefinierter Schriftarten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> Ausführliche Konfigurationsschritte finden Sie in der Anleitung [Verwenden benutzerdefinierter Schriftarten](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
 > &#x200B;>Nach Abschluss der Schritte und Ausführung der Pipeline sind benutzerdefinierte Schriftarten direkt im Editor für interaktive Kommunikation verfügbar.
