@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
+source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 69%
+source-wordcount: '1905'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,43 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Neue Funktionen in Experience Manager Forms {#new-features-forms}
 
-**Eingabekomponente „Datum und Uhrzeit“**
+**Workflow-Schritt „Formulardatenmodell aufrufen“ für SharePoint-Listenanlagen**
 
-Eine Komponente für [Datum und Uhrzeit](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) ist jetzt verfügbar, mit der Benutzende Datum und Uhrzeit in einem Kalender oder einer Uhr auswählen oder Werte in einem unterstützten Format manuell eingeben können.
-
-**Verbesserte Fehlerbehebung für Datei-Uploads**
-
-Die Komponente [Dateianlage](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) validiert jetzt den hochgeladenen Dateityp automatisch anhand der Zulassungsliste. Wenn eine Benutzerin bzw. ein Benutzer eine Datei in einem nicht unterstützten Format hochlädt, wird während der Übermittlung im Formular ein Fehler angezeigt. Die Komponente überprüft auch den Dateiinhalt, um seinen Typ zu überprüfen, wodurch die allgemeine Sicherheit des Formulars verbessert wird.
-
-**Angegebene Fehlerantwort für benutzerdefinierte Übermittlungsaktion**
-
-Wenn bei einer [benutzerdefinierten Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md) ein nicht behobener Fehler auftritt, gibt das System den Fehler-Code 502 zurück. Auf diese Weise können Sie erkennen, dass das Problem mit der benutzerdefinierten Übermittlungsaktion zusammenhängt, was das Debugging erleichtert.
-
-**Ausschließen ausgeblendeter Felder vom Datensatzdokument**
-
-Eine neue Eigenschaft ermöglicht den Ausschluss ausgeblendeter Felder aus dem [Datensatzdokument](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). Standardmäßig ist diese Option nicht aktiviert und gilt für alle Formularfelder.
-
+Der Workflow-Schritt „Formulardatenmodell aufrufen“ unterstützt jetzt die Verarbeitung von Workflow-seitigen Metadaten für Base64-kodierte Anlagen-Arrays in SharePoint-Listenbasierten Formulardatenmodellen. Mit dieser Verbesserung kann der Workflow-Schritt Metadaten wie Dateinamen, MIME-Typ und benutzerdefinierte Eigenschaften für jeden Anhang übergeben, speichern und abrufen. Diese Funktion ermöglicht ein umfassenderes Daten-Management und ermöglicht eine nahtlose nachgelagerte Integration. Weitere Informationen finden Sie unter [Verbesserte Unterstützung im Workflow-Schritt „Formulardatenmodell aufrufen“ für SharePoint-Listenanhänge](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
 ### Vorab veröffentlichte Funktionen in AEM Forms
 
-**Generieren und Synchronisieren von AFP-Ausgabedarstellungen**
+**Verbesserungen am Regeleditor**
 
-Sie können jetzt die [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) verwenden, um eine XDP-Datei in das AFP-Format zu konvertieren. AFP ist ein leistungsstarkes Format, das häufig zum Drucken in großen Mengen in Unternehmen zum Einsatz kommt.
+Der Regeleditor unterstützt jetzt die erweiterte Navigation und ermöglicht die Verwendung von Funktionen und mathematischen Ausdrücken in Eingabeparametern.
 
-**Verbesserungen des Regeleditors**
+**Verbesserte Navigation mit Unterstützung der Ereignis-Payload**
 
-* [Validierungsmethode in der Funktionsliste](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): Die Validierungs- und Zurücksetzungsmethoden unterstützen jetzt die Ausführung auf Panel-, Feld- und Formularebene. Zuvor wurden sie nur auf Formularebene unterstützt.
-* [Moderne JavaScript-Unterstützung](/help/forms/rule-editor-core-components-difference-tables.md): Unterstützung für ECMAScript 2019 und neuere Funktionen wurde für benutzerdefinierte Funktionen hinzugefügt, sodass Sie effizienteren, modularen und wiederverwendbaren Code schreiben können.
-* [Option zum Herunterladen des DoR im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): Eine Funktion zum Herunterladen des Datensatzdokuments (Document of Record, DoR) wurde im Regeleditor als vordefinierte Option hinzugefügt.
+Die `Navigate To` Aktion in den Handlern zum Aufrufen von Services unterstützt jetzt `EVENT_PAYLOAD` und ermöglicht es Formularautoren, Folgeaktionen basierend auf Ereignisantworten zu konfigurieren. Diese Verbesserung bietet mehr Flexibilität beim Entwerfen von Workflows nach der Übermittlung, wodurch reibungslosere Übergänge und personalisiertere Benutzererlebnisse gewährleistet werden. Weitere Informationen finden Sie unter [Erweiterte Navigation mit Unterstützung der Ereignis-Payload](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
-  ![Datensatzdokument](/help/forms/assets/document-of-record-rn.gif)
+**Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern**
 
-* [Dynamische Variablen im Regeleditor](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): Sie können jetzt dynamische (temporäre) Variablen im Regeleditor verwenden, um die Flexibilität beim Definieren von Bedingungen und Aktionen zu erhöhen. Ausgeblendete Felder sind nicht mehr zum Speichern temporärer Werte erforderlich.
-* [Unterstützung von Regeln basierend auf benutzerspezifischen Ereignissen](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Sie können jetzt benutzerspezifische Ereignisse sowie auf diesen Ereignissen basierende Trigger-Regeln definieren.
-* [Kontextabhängige Regeln zu wiederholbaren Panel](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In wiederholbaren Panels werden Regeln jetzt kontextbasiert ausgeführt und nicht mehr nur auf die letzte Panel-Instanz angewendet.
-* [Durch Parameter ausgelöste Regeln](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): Der Regeleditor unterstützt jetzt die Ausführung von Regeln basierend auf Abfrageparametern, UTM-Parametern oder Browser-Parametern.
-* [Formularspezifische benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms unterstützt jetzt formularspezifische benutzerdefinierte Funktionsskripte und bietet so mehr Flexibilität bei der Verwaltung wiederverwendbarer Logiken.
-* [Statische Importe für benutzerdefinierte Funktionen](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): Der Regeleditor im universellen Editor unterstützt jetzt statische Importe, sodass Entwicklerinnen und Entwickler Funktionen in mehreren Formularen organisieren, freigeben und wiederverwenden können.
+Eingabeparameter unterstützen jetzt sowohl Funktionsaufrufe als auch mathematische Ausdrücke, sodass Formularautoren dynamisch berechnete Werte direkt übergeben können. Diese Verbesserung optimiert die Regelkonfigurationen, macht zusätzliche Felder überflüssig und Formulare anpassbarer an komplexe Logik und berechnungsgesteuerte Szenarien. Weitere Informationen finden Sie unter [Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### Neue Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -134,13 +114,17 @@ Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit,
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
-**Komponente „Freihandsignatur“**
+**PDF-Vorschau im Editor für interaktive Kommunikation**
 
-Sie können jetzt die Komponente [Freihandsignatur](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) verwenden, um Benutzenden beim Hinzufügen ihrer Signaturen zu einem Formular (z. B. einem Vertragsformular) zu helfen. Die Komponente ermöglicht es Benutzenden, ihre Signatur direkt im Formular mit einer Maus, einem Eingabestift oder am Touchscreen zu zeichnen.
+Benutzer können PDFs mit interaktiver Kommunikation ohne Daten, mit lokalen JSON-Datendateien oder mit Daten aus einem Datenmodell in der Vorschau anzeigen, was flexible datengesteuerte Tests ermöglicht. Weitere Informationen finden Sie unter [PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Direkte API-Integration im Regeleditor**
+**Unterstützung benutzerdefinierter Schriftarten in der interaktiven Kommunikation**
 
-Adaptive Formulare unterstützen jetzt [direkte API-Integration](/help/forms/api-integration-in-rule-editor.md) im visuellen Regeleditor, ohne dass ein Formulardatenmodell erforderlich ist. Autorinnen und Autoren können APIs mithilfe eines URL- oder cURL-Imports konfigurieren, Eingabe-/Ausgabeparameter zuordnen und Aufrufe mit Authentifizierung sichern.
+Mit der Funktion für benutzerdefinierte Schriftarten können Benutzende benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten in die interaktive Kommunikation einbetten, um so ein konsistentes und markenübergreifendes PDF-Rendering auf allen Geräten und Plattformen sicherzustellen. Weitere Informationen finden Sie unter [Unterstützung benutzerdefinierter Schriftarten in interaktiver Kommunikation](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+
+**Importieren und Exportieren von interaktiver Kommunikation**
+
+Diese Funktion ermöglicht die Migration und Wiederverwendung interaktiver Kommunikation über verschiedene Umgebungen hinweg. Sie können jetzt eine interaktive Kommunikation zusammen mit den zugehörigen Fragmenten und Datenmodellen aus einer Umgebung exportieren und in eine andere importieren. Weitere Informationen finden Sie unter [Interaktive Kommunikation importieren und exportieren](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
 
 <!--
 **Forms Optimization opportunities**
@@ -173,7 +157,7 @@ Live-Schaltungstage, Live-Ereignisse, Spitzenumsätze - diese Momente sind unver
 >[!NOTE]
 >
 >Verfügbar als Funktion zur eingeschränkten Verfügbarkeit am 25. September.
->&#x200B;>Senden Sie eine E-Mail an [0&rbrace;aemcs-update-free@adobe.com&quot;, um sie in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
+>>Senden Sie eine E-Mail an [0}aemcs-update-free@adobe.com&quot;, um sie in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
 
 ### Neue Version von AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -254,7 +238,7 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Mit der Edge-Authentifizierung können Sie den Zugriff auf Edge Delivery Services-Seiten auf diejenigen beschränken, die sich bei Ihrem Identitätsanbieter (IdP) authentifiziert haben. Dies wird durch die Bereitstellung einer OpenID Connect (OIDC)-YAML-Konfigurationsdatei erreicht.
 
-Bei Interesse senden Sie bitte eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben könnten.
+Bei Interesse senden Sie bitte eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben könnten.
 
 Unabhängig von Edge Delivery Services haben wir Anfang dieses Jahres eine Funktion zum Konfigurieren von Open ID Connect ([ für Projekte der Veröffentlichungsebene von AEM Cloud Service) veröffentlicht](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) um AEM-Seiten zu schützen.
 
@@ -283,7 +267,7 @@ Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitun
 
 ### Erweiterte Anwendungsleistungsüberwachung (APM) (Alpha-Programm) {#apm-alpha}
 
-Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
+Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
 
 
 ## [!DNL Experience Manager] Guides {#guides}
