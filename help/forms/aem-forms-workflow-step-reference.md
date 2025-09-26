@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwendung von AEM-Workflows, Verwendung von Schritten zur Aufgabenzuweisung, Schritt zur Konvertierung in PDF/A, Schritt zur Generierung eines Datensatzdokuments, Verwendung von Workflows, Schritt zur Unterzeichnung eines Dokuments, Schritt zur Generierung einer gedruckten Ausgabe, Schritt zur Generierung einer nicht interaktiven PDF-Ausgabe
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
-source-wordcount: '7370'
-ht-degree: 100%
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+workflow-type: tm+mt
+source-wordcount: '7409'
+ht-degree: 99%
 
 ---
 
@@ -362,7 +362,12 @@ Der Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ enthält folgende Fel
 
    * **[!UICONTROL Relativ zur Nutzlast]**: Verwenden Sie die Option zum Abrufen des Dateianhangs, der in einem Pfad relativ zur Payload gespeichert ist. Wählen Sie die Option aus und geben Sie entweder den Ordnernamen an, der den Dateianhang enthält, oder geben Sie den Dateinamen für den Anhang im Textfeld an.
 
-     Wenn beispielsweise der Ordner „Relativ zur Nutzlast“ im CRX-Repository einen Dateianhang am Speicherort `attachment\attachment-folder` enthält, geben Sie `attachment\attachment-folder` im Textfeld an, nachdem Sie die Option **[!UICONTROL Relativ zur Nutzlast]** ausgewählt haben.
+     >[!NOTE]
+     >
+     > Der Workflow-Schritt **Formulardatenmodell aufrufen** unterstützt Workflow-seitige Metadaten für Base64-kodierte Anlagen-Arrays in [SharePoint-Listenbasierten Formulardatenmodellen](/help/forms/connect-forms-to-sharepoint-list.md) und ermöglicht es Workflows, Metadaten wie Dateinamen, MIME-Typ oder benutzerdefinierte Eigenschaften für die Anlagen zu übergeben, zu speichern und abzurufen.
+     > ![SP-Listenanhänge](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > Der Ordner Relativ zur Payload enthält einen Dateianhang am `attachment` Speicherort. Geben Sie `attachment` im Textfeld an, nachdem Sie die Option **[!UICONTROL Relativ zur Payload]** ausgewählt haben.
 
    * **[!UICONTROL JSON Dot Notation]**: Verwenden Sie die Option, wenn der zu verwendende Wert in einer JSON-Datei enthalten ist. Beispiel: Insurance.customerDetails.emailAddress. Die Option „JSON Dot Notation“ ist nur verfügbar, wenn Zuordnungseingabefelder aus der Eingabe-JSON-Option ausgewählt sind.
    * **[!UICONTROL Zuordnen von Eingabefeldern aus Eingabe-JSON]**: Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Dienstargumente aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Payload bzw. zu einem absoluten Pfad sein oder Sie können ein JSON-Eingabedokument mit einer Variablen vom Typ JSON oder Formulardatenmodell (FDM) auswählen.
@@ -514,7 +519,7 @@ Send a document directly to a printer. It supports the following printing access
 
 Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einer Anwendung verwenden möchten. Wenn sich Ihre Formularentwürfe im Netzwerk, im lokalen Dateisystem oder einem HTTP-Speicherort befinden, verwenden Sie den Vorgang „generatePrintedOutput“.
 
-Beispielsweise erfordert Ihre Anwendung, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten enthalten Hunderte von Datensätzen. Darüber hinaus muss die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den Vorgang „generatePrintedOutput“, um jeden Datensatz mit einem Formularentwurf zusammenzuführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
+Beispielsweise erfordert Ihre Anwendung, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten enthalten Hunderte von Einträgen. Darüber hinaus muss die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den Vorgang „generatePrintedOutput“, um jeden Eintrag mit einem Formularentwurf zusammenzuführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
 
 Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 

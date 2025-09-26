@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -22,12 +22,12 @@ In der folgenden Tabelle sind die jüngsten Verbesserungen am Regeleditor in Ada
 
 | Verbesserung | Beschreibung | Vorteile |
 |---|----|---|
-| **Validierung mithilfe der `validate()` Methode** | In der Funktionsliste verfügbar, um einzelne Felder, Bereiche oder das gesamte Formular zu überprüfen. | - Granulare Validierung auf Bedienfeld-, Feld- oder <br> auf Formularebene - Besseres Benutzererlebnis mit zielgerichtetem <br> für Fehlermeldungen - Verhindert das Fortschreiten bei unvollständigen <br> - Reduziert Fehler bei der Formularübermittlung |
-| **DOR herunterladen** | Im Regeleditor verfügbare vordefinierte Funktion zum Herunterladen des Datensatzdokuments (DoR). | - Keine benutzerdefinierte Entwicklung für das Herunterladen von DoR-<br> erforderlich - Konsistentes Download-Erlebnis in allen Formularen |
-| **Dynamische Variablen** | Erstellen Sie Regeln mithilfe von Variablen, die sich je nach Benutzereingabe oder anderen Bedingungen ändern. | - Ermöglicht flexible Regelbedingungen <br> - Reduziert den Bedarf an doppelten <br> - Beseitigt die Notwendigkeit, ausgeblendete Felder zu erstellen |
-| **Benutzerdefinierte ereignisbasierte Regeln** | Definieren Sie Regeln, die über die standardmäßigen Trigger hinaus auf benutzerspezifische Ereignisse reagieren. | - Unterstützt erweiterte Anwendungsfälle <br> - Bessere Kontrolle darüber, wann und wie Regeln ausgeführt werden <br> - Verbesserte Interaktivität |
-| **Kontextabhängige wiederholbare Bereichsausführung** | Regeln werden jetzt für jeden wiederholten Bereich im richtigen Kontext ausgeführt, anstatt nur für die letzte Instanz. | - Präzise Regelanwendung für jede Wiederholungsinstanz <br> - Reduziert Fehler in dynamischen Abschnitten <br> - Verbessert das Benutzererlebnis mit wiederholten Inhalten |
-| **Unterstützung für Abfragezeichenfolgen-, UTM- und Browser-Parameter** | Erstellen Sie Regeln, die das Formularverhalten basierend auf URL-Parametern oder browserspezifischen Werten anpassen. | - Ermöglicht Personalisierung basierend auf Quell- oder <br> - Nützlich für Marketing- oder Tracking-spezifische Abläufe <br> - keine zusätzliche Skripterstellung oder Anpassung erforderlich |
+| [Validierung mithilfe der validate()-Methode](#validate-method-in-function-list) | In der Funktionsliste verfügbar, um einzelne Felder, Bereiche oder das gesamte Formular zu überprüfen. | - Granulare Validierung auf Bedienfeld-, Feld- oder <br> auf Formularebene - Besseres Benutzererlebnis mit zielgerichtetem <br> für Fehlermeldungen - Verhindert das Fortschreiten bei unvollständigen <br> - Reduziert Fehler bei der Formularübermittlung |
+| [Datensatzdokument herunterladen](#download-document-of-record) | Im Regeleditor verfügbare vordefinierte Funktion zum Herunterladen des Datensatzdokuments (DoR). | - Keine benutzerdefinierte Entwicklung für das Herunterladen von DoR-<br> erforderlich - Konsistentes Download-Erlebnis in allen Formularen |
+| [Dynamische Variablen](#support-for-dynamic-variables-in-rules) | Erstellen Sie Regeln mithilfe von Variablen, die sich je nach Benutzereingabe oder anderen Bedingungen ändern. | - Ermöglicht flexible Regelbedingungen <br> - Reduziert den Bedarf an doppelten <br> - Beseitigt die Notwendigkeit, ausgeblendete Felder zu erstellen |
+| [Benutzerdefinierte ereignisbasierte Regeln](#custom-event-based-rules-support) | Definieren Sie Regeln, die über die standardmäßigen Trigger hinaus auf benutzerspezifische Ereignisse reagieren. | - Unterstützt erweiterte Anwendungsfälle <br> - Bessere Kontrolle darüber, wann und wie Regeln ausgeführt werden <br> - Verbesserte Interaktivität |
+| [Kontextabhängige wiederholbare Bereichsausführung](#context-based-rule-execution-for-repeatable-panels) | Regeln werden jetzt für jeden wiederholten Bereich im richtigen Kontext ausgeführt, anstatt nur für die letzte Instanz. | - Präzise Regelanwendung für jede Wiederholungsinstanz <br> - Reduziert Fehler in dynamischen Abschnitten <br> - Verbessert das Benutzererlebnis mit wiederholten Inhalten |
+| [Unterstützung für Abfragezeichenfolgen-, UTM- und Browser-Parameter](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Erstellen Sie Regeln, die das Formularverhalten basierend auf URL-Parametern oder browserspezifischen Werten anpassen. | - Ermöglicht Personalisierung basierend auf Quell- oder <br> - Nützlich für Marketing- oder Tracking-spezifische Abläufe <br> - keine zusätzliche Skripterstellung oder Anpassung erforderlich |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ In der obigen Regel überprüft die Schaltfläche **Weiter**, ob die Felder im A
 >
 >Sie können die Methode **validate()** für Formulare, Fragmente oder einzelne Felder verwenden. Wenn ein Fragment in einem Formular enthalten ist, werden sowohl das Formular als auch das Fragment im Validierungskontext als Optionen angezeigt. In diesem Fall bezieht sich das Fragment auf die darin enthaltenen Felder, während sich das Formular auf das übergeordnete Formular bezieht, in dem das Fragment eingebettet ist.
 
-## DownloadDoR als OOTB-Funktion im Regeleditor
+## Nachweis herunterladen
 
 Mithilfe der **DownloadDor()** vordefinierten Funktion (OOTB) im Regeleditor können Benutzer das Datensatzdokument herunterladen , wenn das Formular zum Generieren des Datensatzdokuments konfiguriert ist.
 
@@ -92,7 +92,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
@@ -124,7 +124,7 @@ Das Feld **Gesamtversandkosten** wird dynamisch aktualisiert, um sowohl die Prod
 >[!NOTE]
 >
 > Sie können auch eine Funktion **Wert der Variablen abrufen** in der Wenn-Bedingung hinzufügen.
-> &#x200B;> ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Dieser Ansatz ermöglicht dynamische Echtzeit-Berechnungen, ohne dem Formular zusätzliche Felder hinzuzufügen, wodurch die Struktur sauber und benutzerfreundlich bleibt.
 

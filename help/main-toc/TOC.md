@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 94533c74b8254c1a16671ca28ccc021cbdfa903f
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '6680'
+source-wordcount: '6698'
 ht-degree: 97%
 
 ---
@@ -527,7 +527,7 @@ ht-degree: 97%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -967,11 +967,14 @@ ht-degree: 97%
       + [Formularsatz in AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Interaktive Kommunikation {#interactive-communication}
       + [Einführung in den Editor für interaktive Kommunikation](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-      + [Erstellen interaktiver Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Erstellen einer Vorlage für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Erstellen eines Fragments für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Erstellen eines interaktiven Kommunikationsfragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Einführung in die interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
       + [Erstellen Ihrer ersten interaktiven Kommunikation](/help/forms/create-your-first-communication.md)
+      + [Interaktive Kommunikation importieren und exportieren](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
+      + [Hinzufügen benutzerdefinierter Schriftarten zum Editor für interaktive Kommunikation](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
+      + [PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
       + [Häufig gestellte Fragen](/help/forms/interactive-communications-faq.md)
    + Formularzentrierte Workflows {#create-form-centric-workflows}
       + [Einführung in den formularzentrierten Workflow](/help/forms/aem-forms-workflow.md)

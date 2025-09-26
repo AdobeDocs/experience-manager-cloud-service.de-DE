@@ -5,10 +5,10 @@ keywords: Im Regeleditor können Sie eine benutzerdefinierte Funktion hinzufüge
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 56%
+source-wordcount: '1360'
+ht-degree: 55%
 
 ---
 
@@ -28,6 +28,8 @@ Dieser Artikel führt Sie durch die Schritte zum Erstellen benutzerdefinierter F
    * Klassenmethoden
    * Standardparameter
    * Rest-Parameter:
+
+* Die neuesten ECMAScript-Funktionen sind als Early Access (EA) verfügbar, während bis zu ECMAScript 2019 in der allgemeinen Verfügbarkeit unterstützt wird.
 
 ## Voraussetzungen zum Erstellen einer benutzerdefinierten Funktion.
 
@@ -144,10 +146,10 @@ Fügen Sie dem hinzugefügten Client-Bibliotheksordner Folgendes hinzu:
 
 1. Navigieren Sie zur Datei `/ui.apps/src/main/content/META-INF/vault/filter.xml` in Ihrem [AEMaaCS-Projektverzeichnis].
 
-1. Öffnen Sie die Datei und fügen Sie die folgende Zeile am Ende ein:
+2. Öffnen Sie die Datei und fügen Sie die folgende Zeile am Ende ein:
 
    `<filter root="/apps/experience-league" />`
-1. Speichern Sie die Datei.
+3. Speichern Sie die Datei.
 
 ![Benutzerdefinierte Funktion Filter XML](/help/forms/assets/custom-function-filterxml.png)
 
@@ -229,7 +231,7 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 >[!NOTE]
 >
-> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktion](/help/forms/assets//customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe von [Package Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager) in Ihrer AEM-Instanz.
+> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktion](/help/forms/assets//customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe des [Paket-Managers](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager) in Ihrer AEM-Instanz.
 
 ## Funktionen von benutzerdefinierten Funktionen
 

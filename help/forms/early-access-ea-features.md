@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2940'
 ht-degree: 22%
 
 ---
@@ -116,7 +116,12 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 
 * **Formatflexibilität**: Ausgabe in die Formate PDF, HTML, PCL, PostScript® und ZPL.
 
-* **Regeleditor**: Erstellen Sie dynamische, datengesteuerte Aktionen direkt in Ihren Dokumenten mithilfe einer intuitiven Point-and-Click-Oberfläche. Bedingte Logik einfach definieren, Workflows automatisieren und Inhalte personalisieren, ohne Code zu schreiben.
+* **Regeleditor**: Erstellen Sie dynamische, datengesteuerte Aktionen direkt in Ihren Dokumenten mithilfe einer intuitiven Point-and-Click-Oberfläche. Sie können bedingte Logik einfach definieren, Workflows automatisieren und Inhalte personalisieren, ohne programmieren zu müssen.
+
+* **PDF-Vorschau** Vorschau einer interaktiven Kommunikation ohne Daten, lokale JSON-Dateien oder Datenmodelle für flexible, datengesteuerte Tests.
+* **Benutzerdefinierte Schriftarten:** Sie benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten ein, um ein konsistentes, markenspezifisches PDF-Rendering auf allen Geräten sicherzustellen.
+* **Importieren und exportieren:** Nahtlose Migration und Wiederverwendung der interaktiven Kommunikation mit ihren Fragmenten und Datenmodellen über Umgebungen hinweg.
+
 
 #### Anwendungsfälle:
 
@@ -125,7 +130,7 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 
@@ -161,7 +166,7 @@ Bereit zum Start? Die [Einführung in HTML5 Forms](/help/forms/introductionhtml5
 
 Beschleunigen Sie die Entwicklung von AEM Forms Edge Delivery Services mit dem AEM Forms-CLI-Tool. Diese Befehlszeilenschnittstelle ermöglicht es Ihnen, sofort den Code und die Verkabelung zu generieren, die für den Schnellstart der benutzerdefinierten Komponentenentwicklung erforderlich sind - ohne Textbaustein, ohne Aufwand.
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms-custom component-aem-forms development tool)
+>[!VIDEO]&#x200B;(<https://video.tv.adobe.com/v/3470514/aem-forms> Strukturvorlage - aem-custom component generator - aem-forms cli-aem-forms - custom component-aem-forms development tool)
 
 **Schlüsselfunktionen:**
 
@@ -170,11 +175,11 @@ Beschleunigen Sie die Entwicklung von AEM Forms Edge Delivery Services mit dem A
 * **Entwicklerproduktivität**: Konzentrieren Sie sich auf die Erstellung von Business-Logik und Benutzeroberfläche, während die CLI sich wiederholende Einrichtungsaufgaben übernimmt.
 * **Nahtlose Integration**: Generierte Komponenten können verwendet und in bestehende AEM Forms-Projekte integriert werden.
 
-Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### API-Integrationstool für dynamische Formulardaten
 
-Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente Formulare erstellen, mit denen Daten basierend auf Benutzerinteraktionen automatisch von externen REST-APIs abgerufen und aufgefüllt werden. Durch diese Integrationsfunktion ohne Code werden statische Formulare in responsive Datenerfassungsschnittstellen umgewandelt.
+Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente Formulare erstellen, mit denen basierend auf den Aktionen der Benutzenden Daten automatisch von externen REST-APIs abgerufen und ausgefüllt werden. Durch diese No-Code-Integrationsfunktion werden statische Formulare zu responsiven Datenerfassungsschnittstellen.
 
 Zu den wichtigsten Funktionen gehören:
 
@@ -283,6 +288,10 @@ Das Speichern von PDFs im Azure Blob-Speicher ermöglicht die zentralisierte Ver
 * **Verbesserte Sicherheit**: Durch die Nutzung der integrierten Sicherheitsfunktionen von Azure, wie z. B. Verschlüsselung im Ruhezustand und rollenbasierte Zugriffssteuerung (RBAC), bleiben sensible Dokumente während der Speicherung geschützt.
 
 * **Anpassbare Speicherpfade**: Die Möglichkeit, benutzerdefinierte Ordnerpfade zu definieren, stellt sicher, dass generierte PDF-Dateien an organisierten und anwendungsspezifischen Speicherorten gespeichert werden, was das Dateimanagement verbessert.
+
+### Verbesserungen beim visuellen Regeleditor
+
+* Der Visual Rule Editor in Adaptive Forms unterstützt jetzt [direkte API-Integration ohne Formulardatenmodell](/help/forms/api-integration-in-rule-editor.md). Sie können eine Verbindung zu einem API-Endpunkt herstellen, indem Sie dessen JSON-URL eingeben oder die Konfiguration mithilfe eines cURL-Befehls importieren. Nach der Integration kann die API mit der `Invoke Service`-Aktion aufgerufen werden.
 
 ## Siehe auch
 

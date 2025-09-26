@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: 659351c76c53631834d20b032b6dff2a3b017ac4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 79%
+source-wordcount: '2453'
+ht-degree: 77%
 
 ---
 
@@ -231,6 +231,12 @@ Sie können eine kombinierte Regel erstellen, die die Sichtbarkeit des Felds fü
 
 +++
 
+### Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern
+
+Eingabeparameter unterstützen jetzt beide Funktionsausgaben, z. B. concat, trim und join, sowie mathematische Ausdrücke. Diese Verbesserung ermöglicht es Formularautorinnen und -autoren, dynamisch berechnete Werte direkt zu übergeben, optimiert die Regelkonfigurationen, reduziert den Bedarf an zusätzlichen Feldern und macht Formulare besser an komplexe Logik und berechnungsgesteuerte Szenarien anpassbar.
+
+![Funktionsaufruf und Unterstützung mathematischer Ausdrücke](/help/forms/assets/mathematical-function-support.png)
+
 ### Umgang mit fehlerhaften Regeln
 
 Regeln können manchmal fehlschlagen, wenn ein referenziertes Feld verschoben oder gelöscht wird. In diesem Fall markiert der Regeleditor die betroffene Regel mit einem roten Punkt.
@@ -247,7 +253,7 @@ Regeln können manchmal fehlschlagen, wenn ein referenziertes Feld verschoben od
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -349,7 +355,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=de#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]

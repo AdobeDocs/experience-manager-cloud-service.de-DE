@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 2%
+source-wordcount: '1800'
+ht-degree: 3%
 
 ---
 
@@ -64,7 +64,7 @@ Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Si
 
 * Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier ](/help/forms/configure-data-sources.md).
 * Erstellen Sie ein Formulardatenmodell mithilfe der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier](/help/forms/create-form-data-models.md).
-* Stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
+* Stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
 ## Erkunden von Invoke Service durch verschiedene Anwendungsfälle
 
@@ -78,6 +78,7 @@ In der folgenden Tabelle werden einige Szenarien beschrieben, in denen der **Ser
 | **Festlegen eines wiederholbaren Bereichs mithilfe der Ausgabe von „Service aufrufen“** | Konfiguriert ein wiederholbares Bedienfeld mithilfe von Daten aus der Ausgabe des Aufrufdienstes und ermöglicht so dynamische Bedienfelder. [Klicken Sie hier](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), um die Implementierung zu sehen. |
 | **Bereich mithilfe der Ausgabe von „Service aufrufen“** | Legt den Inhalt oder die Sichtbarkeit eines Bedienfelds anhand bestimmter Werte aus der Ausgabe des aufrufenden Services fest. [Klicken Sie hier](#use-case-3-set-panel-using-output-of-invoke-service), um die Implementierung zu sehen. |
 | **Verwenden Sie den Ausgabeparameter von „Service aufrufen“, um andere Felder zu überprüfen** | Verwendet bestimmte Ausgabeparameter aus dem Service „Invoke“, um die Formularfelder zu validieren. [Klicken Sie hier](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields), um die Implementierung zu sehen. |
+| **Verwenden der Ereignis-Payload in der Aktion „Navigieren zu“ im Dienst „Aufrufen“** | Verwendet die Ereignis-Payload, um Erfolgs- und Fehlerantworten zu verarbeiten und während der Navigation Daten an die Aktion „Navigieren zu“ zu übergeben. [Hier klicken](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) um die Implementierung zu sehen. |
 
 Erstellen Sie ein `Get Information` Formular, das Werte basierend auf der Eingabe abruft, die in das Textfeld `Pet ID` eingegeben wurde. Der folgende Screenshot zeigt das Formular, das in diesen Anwendungsfällen verwendet wird:
 
@@ -142,7 +143,6 @@ Posten wir die folgende JSON mit dem Service [addPet](https://petstore.swagger.i
         "status": "available"
     }
 ```
-
 
 Regeln und Logik werden mithilfe der Aktion **Service aufrufen** im Regeleditor im `Pet ID`-Textfeld implementiert, um die erwähnten Anwendungsfälle zu demonstrieren.
 
@@ -222,9 +222,38 @@ Geben Sie `102` in das `Pet ID` Textfeld ein, und die Schaltfläche **Senden** i
 
 ![Ausgabe](/help/forms/assets/output4.png)
 
+### Anwendungsfall 5: Verwenden der Ereignis-Payload in „Zur Aktion navigieren“ im Dienst „aufrufen“
+
+In diesem Anwendungsbeispiel wird gezeigt, wie eine Regel auf der Schaltfläche **Senden** konfiguriert wird, die einen **Service aufrufen** und den Benutzer dann mithilfe der Aktion **Navigieren zu“ zu einer anderen**.
+
+#### Implementierung
+
+Erstellen Sie eine Regel für die Schaltfläche **Senden**, um den `redirect-api`-API-Service aufzurufen. Dieser Service ist für die Weiterleitung des Benutzers zum Formular **Kontakt** verantwortlich.
+
+Sie können eine API mithilfe der unten bereitgestellten JSON-Daten direkt als `redirect-api`-API-Service in Ihren Regeleditor integrieren:
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> Sie können [API auch direkt in die Benutzeroberfläche des Regeleditors integrieren](/help/forms/api-integration-in-rule-editor.md) ohne ein vordefiniertes Formulardatenmodell zu verwenden.
+> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[ klicken Sie ](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
+
+Konfigurieren **[!UICONTROL in &quot;]** hinzufügen“ die Aktion **Navigieren zu**, um den Benutzer mithilfe des **-Parameters zur Seite** Kontaktieren `Event Payload` umzuleiten. Hier kann der Benutzer seine Kontaktdaten übermitteln.
+
+![Ereignis-Payload](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+Optional können Sie einen Fehler-Handler konfigurieren, der eine Fehlermeldung anzeigt, wenn der Service-Aufruf fehlschlägt.
+
+#### Ausgabe
+
+Wenn auf **Senden**-Schaltfläche geklickt wird, wird der `redirect-api`-API-Service aufgerufen. Nach erfolgreicher Ausführung wird der Benutzer zur Seite **Kontakt** weitergeleitet.
+
+![Payload-Ausgabe des Ereignisses](/help/forms/assets/output5.gif)
 
 ## Häufig gestellte Fragen
 
