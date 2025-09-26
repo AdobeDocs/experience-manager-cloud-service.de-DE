@@ -4,10 +4,10 @@ description: Überwachen Sie die Vorgänge, die mit den im Repository verfügbar
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '617'
-ht-degree: 100%
+source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 67%
 
 ---
 
@@ -79,6 +79,8 @@ So abonnieren Sie die Benachrichtigungskategorien:
 
 ## Beobachten oder Nicht-Beobachten von Ordnern, Assets oder Sammlungen {#watch-unwatch-assets}
 
+Sie können Ordner, Assets oder Sammlungen beobachten und die Beobachtung aufheben, um auf dem Laufenden zu bleiben und so eine bessere Zusammenarbeit mit den überwachten Assets zu ermöglichen.
+
 Nachdem Sie [die Benachrichtigungskategorien abonniert haben](#subscribe-to-notification-categories), müssen Sie den Inhalt abonnieren, damit Sie Benachrichtigungen erhalten.
 
 >[!NOTE]
@@ -86,15 +88,49 @@ Nachdem Sie [die Benachrichtigungskategorien abonniert haben](#subscribe-to-noti
 >* Für die Benachrichtigungskategorien **[!UICONTROL Anfragen]** und **[!UICONTROL Mir zugewiesen]** müssen Sie den Inhalt nicht abonnieren, nachdem Sie die Benachrichtigungskategorien abonniert haben. Sie werden automatisch benachrichtigt, wenn Sie eine Anfrage erstellen oder wenn Ihnen eine Aufgabe zugewiesen wird.
 >* Die Assets-Ansicht sendet nur Benachrichtigungen, wenn andere Menschen Aktionen für abonnierte Inhalte ausführen. Sie erhalten keine Benachrichtigungen über die Aktionen, die Sie für den abonnierte Inhalte ausführen.
 
-Um den Inhalt zu abonnieren, wählen Sie den zu abonnierenden Ordner, das zu abonnierende Asset oder die zu abonnierende Kollektion und klicken Sie auf **[!UICONTROL Ansehen]**.
+### Inhalte abonnieren {#subscribe-to-content}
 
-Die Assets-Ansicht zeigt eine Erfolgsmeldung an. Sie können auf **[!UICONTROL Zu den Benachrichtigungseinstellungen gehen]** klicken, was in der Erfolgsmeldung verfügbar ist, um Ihr [Abonnement für Benachrichtigungskategorien](#subscribe-to-notification-categories) zu bearbeiten.
+Führen Sie die folgenden Schritte aus, um Ordner, Assets oder Sammlungen zu abonnieren:
 
-![Benachrichtigungen in der Assets-Ansicht](assets/watch-assets.png)
+1. Durchsuchen Sie den Ordner, das Asset oder die Sammlung, den/die Sie abonnieren möchten, und klicken Sie auf **[!UICONTROL Ansehen]**.
 
-Die Assets-Ansicht sendet jetzt Benachrichtigungen für die abonnierten Kategorien. Sie können auch mehrere Assets, Ordner oder Kollektionen auswählen und auf **[!UICONTROL Ansehen]** klicken, um Zeit zu sparen. Wenn Sie jedoch mehrere Entitäten auswählen, von denen einige bereits abonniert wurden, wird die Option **[!UICONTROL Ansehen]** nicht angezeigt.
+1. Die Assets-Ansicht zeigt eine Erfolgsmeldung an. Sie können in der Erfolgsmeldung auf **[!UICONTROL Zu Benachrichtigungseinstellungen gehen]** klicken, um Ihr [Abonnement für Benachrichtigungskategorien](#subscribe-to-notification-categories) zu bearbeiten.
 
-Um ein Abonnement zu kündigen, wählen Sie das abonnierte Asset, den abonnierten Ordner oder die abonnierte Kollektion aus und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
+   ![Benachrichtigungen in der Assets-Ansicht](assets/watch-assets.png)
+
+Die Assets-Ansicht sendet jetzt Benachrichtigungen für die abonnierten Kategorien. Sie können auch mehrere Assets, Ordner oder Kollektionen auswählen und auf **[!UICONTROL Ansehen]** klicken, um Zeit zu sparen. Wenn Sie jedoch mehrere Elemente auswählen und einige bereits abonniert sind, wird die Option **[!UICONTROL Beobachten]** nicht angezeigt.
+
+### Abonnierte Inhalte anzeigen {#view-subscribed-content}
+
+Gehen Sie wie folgt vor, um abonnierte Inhalte anzuzeigen:
+
+1. Navigieren Sie zu **[!UICONTROL Überwachter Assets]** unter [!UICONTROL Asset-Management].
+
+1. Die Assets-Ansicht zeigt eine Liste der abonnierten Assets an, einschließlich ihres Namens, Typs und Pfads. Wählen Sie ein Asset, einen Ordner oder eine Sammlung aus der Liste aus, um seine Details, seinen Speicherort oder sein [ anzuzeigen](#unsubscribe-to-content).
+
+   ![Abonnierte Inhalte anzeigen](assets/view-watched-assets.png)
+
+### Anzeigen von Inhaltsabonnentinnen und -abonnenten {#view-content-subscribers}
+
+Gehen Sie wie folgt vor, um Ihre Inhaltsabonnentinnen und -abonnenten anzuzeigen:
+
+1. Navigieren Sie im Ordner, Asset oder in der Sammlung und wählen Sie **[!UICONTROL Details]** aus.
+
+1. Klicken Sie ![ Augensymbol ](assets/do-not-localize/eye-icon.png) rechten Bereich, um eine Liste der Beobachter des Inhalts anzuzeigen.
+
+   Klicken Sie alternativ auf ![Kommentarsymbol](assets/do-not-localize/comment-icon.svg) im rechten Bereich, um die Inhaltsbeobachter anzuzeigen.
+
+### Abonnement des Inhalts beenden {#unsubscribe-to-content}
+
+Abmelden:
+
+1. Navigieren Sie **[!UICONTROL Überwachte Assets]** unter [!UICONTROL Asset-Management].
+
+1. Wählen Sie das Asset, den Ordner oder die Kollektion aus, von dem bzw. der Sie das Abonnement kündigen möchten, und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
+
+   ![Abonnement von Inhalt kündigen](assets/unsubscribe-assets.png)
+
+Alternativ können Sie den Ordner, das Asset oder die Sammlung unter [!UICONTROL Asset-Management“ ]. Wählen Sie das [abonnierte Asset](#subscribe-to-content) und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
 
 ## Anzeigen von Benachrichtigungen {#view-notifications}
 
