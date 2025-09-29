@@ -3,13 +3,13 @@ title: Unterstützte HTML-Markup-Tags im Datensatzdokument
 description: Referenzhandbuch für HTML-Markup-Tags, die jetzt bei der Generierung von Datensatzdokumenten unterstützt werden, einschließlich Rendering-Verhalten und Überlegungen zur Barrierefreiheit
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 9%
 
 ---
-
 
 
 # Unterstützte HTML-Markup-Tags im Datensatzdokument
@@ -132,23 +132,10 @@ Diese Tags werden nicht unterstützt und werden nicht ordnungsgemäß gerendert:
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## Verwandte Informationen
+## Verwandte Inhalte
 
-### Dokumentation zu AEM Forms
 
 - [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [Generieren eines Datensatzdokuments für Kernkomponenten](/help/forms/generate-document-of-record-core-components.md)
 - [Anpassung der Datensatzdokument-Vorlage](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### Technische Referenzen
-
-- [XFA-Spezifikation - XHTML- und CSS-Attribute](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf) (Seite 1187)
-- [PDF-Barrierefreiheitsstandards](https://www.w3.org/TR/WCAG21/)
-- [Core Accessibility API-Zuordnungen](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### Handbücher zu Best Practices
-
-- [Erstellen barrierefreier PDFs](https://www.adobe.com/accessibility/pdf.html)
-- [Best Practices für Rich-Text in Formularen](/help/forms/creating-accessible-adaptive-forms.md)
-- [Dokumentstruktur für Barrierefreiheit](/help/forms/creating-accessible-adaptive-forms.md)
 
