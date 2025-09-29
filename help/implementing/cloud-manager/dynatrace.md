@@ -5,10 +5,10 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 01fd825a64e0306f9e569075985bd30e1991634c
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '578'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Im Folgenden finden Sie die für Verbindungsanfragen erforderlichen Details:
 | [!DNL Dynatrace Environment URL] | Die URL Ihrer Dynatrace-Umgebung.<br><br>Für Dynatrace SaaS-Kunden lautet das Format `https://<your-environment-id>.live.dynatrace.com`.<br><br>Für Dynatrace Managed-Kunden lautet das Format `https://<your-managed-url>/e/<environmentId>` |
 | [!DNL Dynatrace Environment ID] | Die ID Ihrer Dynatrace-Umgebung. Lesen Sie [Wie erhalte ich meine Dynatrace-Verbindungsdetails?](#how-do-i-get-my-dynatrace-connection-details) für Informationen zum Erhalten der ID. |
 | [!DNL Dynatrace Environment Token] | Ihr Token für die Dynatrace-Umgebung. Lesen Sie [Wie erhalte ich meine Dynatrace-Verbindungsdetails?](#how-do-i-get-my-dynatrace-connection-details) für Informationen zum Erhalten des Tokens.<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Schützen Sie es zum Beispiel mit einem Passwort auf einer Website wie **zerobin.net**, auf die das Kunden-Support-Ticket verweisen kann. |
-| [!DNL Dynatrace API access token] | Das API-Zugriffs-Token Ihrer Dynatrace-Umgebung. Weitere Informationen zur Erstellung finden Sie unter [Erstellen eines Dynatrace-API-Zugriffs-Tokens](#create-dynatrace-access-token).<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Schützen Sie es zum Beispiel mit einem Passwort auf einer Website wie **zerobin.net**, auf die das Kunden-Support-Ticket verweisen kann.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
+| [!DNL Dynatrace API access token] | Das API-Zugriffs-Token Ihrer Dynatrace-Umgebung. Weitere Informationen zur Erstellung finden Sie unter [Erstellen eines Dynatrace-API-Zugriffs-Tokens](#create-dynatrace-access-token).<br><br>Dieses Token sollte als geheim behandelt werden. Verwenden Sie daher entsprechende Sicherheitsmaßnahmen. Beispielsweise kann es auf einer Website wie &quot;**.net“, auf** das Support-Ticket verweisen kann, zusammen mit dem Kennwort durch ein Passwort geschützt werden.<br> |
 | [!DNL Dynatrace ActiveGate Port] | Ihr Dynatrace ActiveGate-Port, mit dem die AEM-Integration eine Verbindung herstellen soll.<br><br>Hinweis: Dies ist nur für Dynatrace Managed erforderlich. |
 | [!DNL Dynatrace ActiveGate Network Zone] | Ihre [Dynatrace ActiveGate-Netzwerkzone](https://docs.dynatrace.com/docs/manage/network-zones) zur effizienten Weiterleitung von AEM-Überwachungsdaten über Rechenzentren und Netzwerkregionen hinweg.<br><br>Hinweis: Eine Dynatrace ActiveGate-Netzwerkzone ist optional. |
 | [!DNL AEM Environment ID(s)] | Die AEM-Umgebungs-ID(s), die Dynatrace überwachen soll. |
