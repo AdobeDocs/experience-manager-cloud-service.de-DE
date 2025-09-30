@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
+source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 49%
+source-wordcount: '1957'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ Live-Schaltungstage, Live-Ereignisse, Spitzenumsätze - diese Momente sind unver
 >[!NOTE]
 >
 >Verfügbar als Funktion zur eingeschränkten Verfügbarkeit am 25. September.
->&#x200B;>Senden Sie eine E-Mail an [0&rbrace;aemcs-update-free@adobe.com&quot;, um sie in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
+>>Senden Sie eine E-Mail an [0}aemcs-update-free@adobe.com&quot;, um sie in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
 
 ### Neue Version von AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -238,7 +238,7 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Mit der Edge-Authentifizierung können Sie den Zugriff auf Edge Delivery Services-Seiten auf diejenigen beschränken, die sich bei Ihrem Identitätsanbieter (IdP) authentifiziert haben. Dies wird durch die Bereitstellung einer OpenID Connect (OIDC)-YAML-Konfigurationsdatei erreicht.
 
-Bei Interesse senden Sie bitte eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben könnten.
+Bei Interesse senden Sie bitte eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben könnten.
 
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
@@ -248,6 +248,14 @@ The Adobe-Managed CDN offers flexible configuration options, as described in the
 Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
 
 -->
+
+### Canary-Produktionsbereitstellungen, um Code zu testen, bevor Live-Traffic akzeptiert wird (Beta-Programm) {#canary-beta}
+
+Validieren Sie einen Produktions-Build mit reinem Test-Traffic, bevor Sie ihn für Endbenutzer verfügbar machen. Senden Sie an die Produktion, leiten Sie nur den Canary-Traffic weiter (mithilfe einer speziellen Kopfzeile) und überwachen Sie das Verhalten. Leiten Sie dann entweder den Live-Traffic weiter oder setzen Sie ihn zurück, ohne dass sich dies auf die Kunden auswirkt.
+
+Stellen Sie Ihre Code-Versionen für die Produktion bereit, beschränken Sie sie jedoch auf internen Test-Traffic, bevor Sie entscheiden, ob Sie Live-Traffic akzeptieren oder zurücksetzen.
+
+E-Mail [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com), um Zugriff anzufordern und Feedback zu geben.
 
 ### Snapshots für schnelle Entwicklungsumgebungen (Alpha-Programm) {#rde-snapshot-program}
 
@@ -265,7 +273,7 @@ Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitun
 
 ### Erweiterte Anwendungsleistungsüberwachung (APM) (Alpha-Programm) {#apm-alpha}
 
-Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
+Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
 
 
 ## [!DNL Experience Manager] Guides {#guides}
