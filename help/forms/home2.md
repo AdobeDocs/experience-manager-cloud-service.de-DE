@@ -92,7 +92,7 @@ Verbinden von Formularen mit Backend-Systemen während der Design-Phase. Das [Fo
 Implementieren Sie [Bedingungslogik](/help/forms/rule-editor-core-components.md) progressive Offenlegung und adaptive Validierung, um Benutzer durch komplexe Prozesse zu führen. [Mit der Funktion „Speichern und ](/help/forms/save-core-component-based-form-as-draft.md)&quot; können Benutzer Formulare sitzungsübergreifend ausfüllen.
 
 **HTML5 Forms**
-XFA-basierte Formulare für Mobilgeräte und ältere Browser [ ](/help/forms/introductionhtml5.md)HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
+XFA-basierte Formulare für Mobilgeräte und ältere Browser [&#128279;](/help/forms/introductionhtml5.md)HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
 
 **Interaktive Kommunikation**
 Erstellen Sie dokumentorientierte Kommunikationen wie Auszüge, Rechnungen und Benachrichtigungen mit einem visuellen Editor. [Interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md) Kombinieren Sie statische Inhalte mit dynamischen Daten, um personalisierte Kommunikation über Print- und digitale Kanäle zu generieren.
