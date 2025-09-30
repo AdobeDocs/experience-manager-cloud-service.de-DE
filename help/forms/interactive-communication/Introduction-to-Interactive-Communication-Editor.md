@@ -5,12 +5,13 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+source-git-commit: 9f4585ea71c1db2617e7b8ffece5fd55021e222e
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 13%
 
 ---
+
 
 # Einführung in den Editor für interaktive Kommunikation
 
@@ -57,7 +58,7 @@ Der Editor für interaktive Kommunikation (IC) wurde für Effizienz, Benutzerfre
 
 ## Onboarding
 
-Die Funktion der interaktiven Kommunikation (IC) ist über das Early Access-Programm (EA) verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-ID mit Ihrer Umgebungs-ID und Organisations-ID. Sobald Adobe Ihre Registrierung bestätigt hat, befolgen Sie die Dokumentation [Einstieg in den Service](/help/forms/setup-forms-cloud-service.md), um die interaktive Kommunikation in Ihrer AEM Forms-Umgebung zu aktivieren.
+Die Funktion der interaktiven Kommunikation (IC) ist über das Early Access-Programm (EA) verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-ID mit Ihrer Umgebungs-ID und Organisations-ID. Sobald Adobe Ihre Registrierung bestätigt hat, befolgen Sie die Dokumentation [Einstieg in den Service](/help/forms/setup-forms-cloud-service.md), um die interaktive Kommunikation in Ihrer AEM Forms-Umgebung zu aktivieren.
 
 ## Nächste Schritte
 

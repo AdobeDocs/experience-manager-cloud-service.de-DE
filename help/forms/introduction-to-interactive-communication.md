@@ -4,14 +4,15 @@ description: Entwickeln Sie mit AEM Forms Interactive Communications auf einfach
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
-
 
 # Interaktive Kommunikationen
 
@@ -33,7 +34,7 @@ Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 | Funktion | Beschreibung | Verfügbarkeit |
 |------------|-------------|--------------|
 | Benutzerfreundliches Design | Intuitive Point-and-Click-Oberfläche, die nur minimale technische Kenntnisse erfordert | ✅ verfügbar |
-| -Datenintegration | Verbindung zu Schemas, Datenbanken und Web-Services für die Generierung dynamischer Inhalte herstellen | ✅ verfügbar |
+| Datenintegration | Verbindung zu Schemas, Datenbanken und Web-Services für die Generierung dynamischer Inhalte herstellen | ✅ verfügbar |
 | Rich Media | Nahtlose Integration von Text, Bildern und interaktiven Elementen | ✅ verfügbar |
 | Versionskontrolle | Änderungen verfolgen und Dokumentenverlauf verwalten | ✅ verfügbar |
 | Vorlagenunterstützung | Von Grund auf neu erstellen oder Vorlagen für eine effiziente Dokumenterstellung verwenden | ✅ verfügbar |
@@ -41,14 +42,14 @@ Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 | Dokumentfragmente | Wiederverwendung modularer Inhaltsbausteine für mehrere Dokumente, um Konsistenz und Effizienz zu gewährleisten | ✅ verfügbar |
 | Inline-Datenbindung | Binden von Daten direkt in Inhalten für Echtzeit-Personalisierung ohne externe Konfigurationen | ✅ verfügbar |
 | Mehrere Komponenten | Verwenden verschiedener Komponenten zum Erstellen komplexer und ansprechender Dokumente | ✅ verfügbar |
-| Multi-Channel-Design | Einheitliche Erlebnisse für Print- und digitale Formate bei Einhaltung behördlicher Auflagen erstellen | ?? Teilweise verfügbar |
-| Dynamische Inhalte | Generieren personalisierter Inhalte mithilfe von Business-Logik und Datenbindung | ?? Teilweise verfügbar |
-| Formatflexibilität | Ausgabe in die Formate PDF, HTML PostScript, PCL, ®️ und ZPL | ?? Teilweise verfügbar |
+| Multi-Channel-Design | Einheitliche Erlebnisse für Print- und digitale Formate bei Einhaltung behördlicher Auflagen erstellen | 🌓 teilweise verfügbar |
+| Dynamische Inhalte | Generieren personalisierter Inhalte mithilfe von Business-Logik und Datenbindung | 🌓 teilweise verfügbar |
+| Formatflexibilität | Ausgabe in die Formate PDF, HTML PostScript, PCL, ®️ und ZPL | 🌓 teilweise verfügbar |
 | Sprachunterstützung | Erstellen von Kommunikation in mehreren Sprachen mit Unterstützung benutzerdefinierter Schriftarten | ⏳ in Kürze verfügbar |
 
 ## Onboarding
 
-Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
+Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
 
 Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
 

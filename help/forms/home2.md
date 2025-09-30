@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 1%
 
 ---
-
 
 # Einführung in AEM Forms as a Cloud Service {#introduction}
 
@@ -92,10 +92,10 @@ Verbinden von Formularen mit Backend-Systemen während der Design-Phase. Das [Fo
 Implementieren Sie [Bedingungslogik](/help/forms/rule-editor-core-components.md) progressive Offenlegung und adaptive Validierung, um Benutzer durch komplexe Prozesse zu führen. [Mit der Funktion „Speichern und ](/help/forms/save-core-component-based-form-as-draft.md)&quot; können Benutzer Formulare sitzungsübergreifend ausfüllen.
 
 **HTML5 Forms**
-XFA-basierte Formulare für Mobilgeräte und ältere Browser [&#128279;](/help/forms/introductionhtml5.md)HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
+XFA-basierte Formulare für Mobilgeräte und ältere Browser [ ](/help/forms/introductionhtml5.md)HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
 
 **Interaktive Kommunikation**
-Erstellen Sie dokumentorientierte Kommunikationen wie Auszüge, Rechnungen und Benachrichtigungen mit einem visuellen Editor. [Interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md) Kombinieren Sie statische Inhalte mit dynamischen Daten, um personalisierte Kommunikation über Print- und digitale Kanäle zu generieren.
+Erstellen Sie dokumentorientierte Kommunikationen wie Auszüge, Rechnungen und Benachrichtigungen mit einem visuellen Editor. [Interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md) Kombinieren Sie statische Inhalte mit dynamischen Daten, um personalisierte Kommunikation über Print- und digitale Kanäle zu generieren.
 
 ### Governance: Überprüfung und Einhaltung {#govern}
 
@@ -249,7 +249,7 @@ Für komplexe Anforderungen, die mehrere Systeme, Dokumenterstellungs- und Geneh
 **Document Services und Kommunikation:**
 
 1. **[Implementieren von Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)** für die automatisierte Dokumenterstellung
-2. **[Interaktive Kommunikation erstellen](/help/forms/introduction-to-interactive-communication.md)** für personalisierte Anweisungen und Benachrichtigungen
+2. **[Interaktive Kommunikation erstellen](/help/forms/interactive-communication/create-interactive-communication.md)** für personalisierte Anweisungen und Benachrichtigungen
 3. **[Einrichten von Forms Portal](/help/forms/configure-forms-portal.md)** für die zentralisierte Formularverwaltung
 
 ### Enterprise-Bereitstellung: Skalierbarkeit und Governance {#enterprise-deployment}

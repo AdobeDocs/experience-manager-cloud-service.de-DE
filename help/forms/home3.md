@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 2%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ Erstellen Sie Formulare mit dem Authoring-Ansatz, der Ihren Anforderungen und te
 | **Funktion:** Entwerfen Sie personalisierte Kommunikation, die statische Inhalte mit dynamischen Daten für Druck- und Digitalkanäle kombiniert. |
 | **Verwendung:** Kundenauszüge, Rechnungen, Benachrichtigungen, personalisierte Kommunikation, Workflows mit hohem Dokumentaufwand. |
 | 📄 Visual Document Design 📄 Dynamic Data Integration 📄 Mehrkanalausgabe 📄 Personalization |
-| [Erste Schritte mit → für interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md) |
+| [Erste Schritte mit → für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 und Integration {#data-integration}
 
@@ -304,7 +304,7 @@ Wählen Sie Ihren Ausgangspunkt basierend auf Ihren unmittelbaren Anforderungen 
 
 **Für die XFA-Modernisierung:** Mit [HTML5 Forms beginnen](/help/forms/introductionhtml5.md)
 
-**Für die Dokumentkommunikation:** Mit [Interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
+**Für die Dokumentkommunikation:** Mit [Interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### Schnellstart zur Datenintegration {#integration-start}
 
