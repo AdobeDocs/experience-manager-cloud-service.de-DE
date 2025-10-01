@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens di
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 22216d2c045b79b7da13f09ecbe1d56a91f604df
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 100%
+source-wordcount: '2112'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
@@ -71,14 +71,15 @@ Die Anwendung, die Aufrufe an AEM sendet, sollte in der Lage sein, auf die Anmel
 
 Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
 
-Die Anmeldeinformationen für den AEM CS-Service können mithilfe von zu diesem Zweck eingerichteten Client-Bibliotheken gegen ein Zugriffs-Token eingetauscht werden. Die Client-Bibliotheken sind im [öffentlichen GitHub-Repository von Adobe](https://github.com/adobe/aemcs-api-client-lib) verfügbar, das detailliertere Anleitungen und aktuelle Informationen enthält.
+Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[ von ](https://github.com/adobe/aemcs-api-client-lib)Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 
@@ -135,11 +136,11 @@ Zunächst muss in der Adobe Admin Console ein neues Produktprofil erstellt werde
    `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
 
 
-Nachdem Sie den API-Aufruf durchgeführt haben, wird das Produktprofil als Benutzergruppe in der AEM as a Cloud Service-Authoring-Instanz angezeigt, wobei das entsprechende technische Konto Mitglied dieser Gruppe ist.
+Nachdem Sie den API-Aufruf durchgeführt haben, wird das Produktprofil als Benutzergruppe in der AEM as a Cloud Service-Autoreninstanz angezeigt, wobei das entsprechende technische Konto Mitglied dieser Gruppe ist.
 
 Gehen Sie wie folgt vor, um diese Informationen zu überprüfen:
 
-1. Melden Sie sich bei der Authoring-Instanz an.
+1. Melden Sie sich bei der Autoreninstanz an.
 1. Navigieren Sie zu **Tools** > **Sicherheit** und klicken Sie auf die Karte **Gruppen**.
 1. Suchen Sie den Namen des erstellten Profils in der Gruppenliste und klicken Sie darauf:
 
@@ -150,13 +151,13 @@ Gehen Sie wie folgt vor, um diese Informationen zu überprüfen:
    ![Mitglieder-Registerkarte](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
 
 
-Alternativ können Sie auch überprüfen, ob das technische Konto in der Benutzerliste angezeigt wird, indem Sie die folgenden Schritte in der Authoring-Instanz ausführen:
+Alternativ können Sie auch überprüfen, ob das technische Konto in der Benutzerliste angezeigt wird, indem Sie die folgenden Schritte in der Autoreninstanz ausführen:
 
 1. Navigieren Sie zu **Tools** > **Sicherheit** > **Benutzer**.
 1. Überprüfen Sie, ob Ihr technisches Konto in der Benutzerliste aufgeführt ist, und klicken Sie darauf.
 1. Klicken Sie auf die Registerkarte **Gruppen**, um zu überprüfen, ob die Benutzerin bzw. der Benutzer Teil der Gruppe ist, die Ihrem Produktprofil entspricht. Diese Person ist auch Mitglied einer Handvoll anderer Gruppen, einschließlich Mitwirkende:
 
-   ![Gruppenmitgliedschaft](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+   ![Gruppenzugehörigkeit](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >
@@ -166,7 +167,7 @@ Alternativ können Sie auch überprüfen, ob das technische Konto in der Benutze
 
 Konfigurieren Sie abschließend für die Gruppe die entsprechenden Berechtigungen, damit Sie Ihre APIs ordnungsgemäß aufrufen oder sperren können.
 
-1. Melden Sie sich bei der entsprechenden Authoring-Instanz an und navigieren Sie zu **Einstellungen** > **Sicherheit** > **Berechtigungen**
+1. Melden Sie sich bei der entsprechenden Autoreninstanz an und navigieren Sie zu **Einstellungen** > **Sicherheit** > **Berechtigungen**
 1. Suchen Sie im linken Bereich (in diesem Fall „Schreibgeschützte APIs“) nach dem Namen der dem Produktprofil entsprechenden Gruppe und wählen Sie sie aus:
 
    ![Nach Gruppe suchen](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
