@@ -3,9 +3,9 @@ title: Attributbasierte Zugriffssteuerung
 description: Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung aktivieren, um metadatenbasierte Regeln und die Zugriffsebene für in Content Hub verfügbare Assets zu definieren
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
+source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '944'
 ht-degree: 99%
 
 ---
@@ -39,9 +39,13 @@ Klicken Sie auf **Tabelle herunterladen**, um Regeln in einer Tabelle herunterzu
 
 Definieren Sie Regeln in der Tabelle anhand der in diesem Artikel definierten Richtlinien.
 
+<!--
+
 >[!IMPORTANT]
 >
-> Navigieren Sie nach der Definition der Regeln in der Tabelle zum Tabellenblatt **Validierungsfehler** und klicken Sie auf **ABAC-Validierungen ausführen**. Die Meldung **Alle Validierungen erfolgreich** bestätigt, dass Sie Adobe die definierten Regeln bereitstellen können.
+> After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
+
+-->
 
 ## Anwendungsbeispiel für die attributbasierte Zugriffssteuerung {#example-metadata-based-rules}
 
