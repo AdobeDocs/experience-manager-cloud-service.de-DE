@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d73ccc454c89c7e06752de694af97ac26694be17
+source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 24%
+source-wordcount: '425'
+ht-degree: 51%
 
 ---
 
@@ -16,89 +16,61 @@ ht-degree: 24%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 22450 {#22450}
+## Version 22758 {#22758}
 
-Im Folgenden finden Sie eine Zusammenfassung der kontinuierlichen Verbesserungen für die Wartungsversion 22450, die am Mittwoch, 16. September 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 22171.
+Im Folgenden finden Sie eine Zusammenfassung der fortlaufenden Verbesserungen für die Wartungsversion 22758, die am Donnerstag, 1. Oktober 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 22450.
 
-Die Funktionsaktivierung von 2025.9.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Die Funktionsaktivierung von 2025.10.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Neue Funktionen {#new-features-22450}
+### Verbesserungen {#enhancements-22758}
 
-* SITES-32595: Workflows, die mit übersprungenen oder zurückgewiesenen Fragmenten abgeschlossen werden, können jetzt identifiziert werden. In der Antwort der Workflow-API ist eine neue Eigenschaft verfügbar, die Fragmente auflistet, die aufgrund ungültiger oder ungültiger Verweise ausgeschlossen wurden.
-* SITES-33642: Ein neues API-Ereignis wird jetzt für geänderte Inhaltsfragmente produziert und genutzt.
-* SITES-33320: Es ist jetzt möglich, über die Such-API mithilfe des `technicalName`nach einem Inhaltsfragmentmodell zu suchen.
+* ASSETS-56227: Benennen Sie den Modifikator „adobe-countDown-timer“ um.
+* CNTBF-493: Bump content-backflow-Bundle-Version auf 2.0.28.
+* CQ-4361110: Granite-Übersetzungen.
+* CQ-4361112: Neueste AEM-Übersetzungen.
+* GRANITE-56026: Verbessern Sie die API-Status-Code-Antworten für Berechtigungen.
+* GRANITE-61015: Paket `org.apache.commons.io.channels` der öffentlichen exportierten Liste hinzugefügt.
+* GRANITE-61167: Das Felix-Protokoll wurde auf die neueste OSGI-Spezifikation aktualisiert.
+* GRANITE-61167: Felix-Abhängigkeiten aktualisieren.
+* GRANITE-61169: Verbessern Sie die Prüfung auf geschützte Zeichenfolgen.
+* GRANITE-61622: Sling-Abhängigkeiten aktualisieren.
+* GRANITE-61663: `com.adobe.granite.repository.indexdefs-1.0.2` zum Schnellstart hinzufügen.
+* GRANITE-61811: `com.adobe.granite.repository-2.0.0` zum Schnellstart hinzufügen.
+* SITES-32014: Überwachen Sie externe Ereignisse, um Service-Registrierungen zu aktualisieren.
+* SITES-34277: Korrektur blockiert Fehler in Übersetzungs-Workflows für Seiten.
+* SKYOPS-108706: Mit der aktualisierten Version wird das Bundle auf die neueste Version umgeschaltet (eTag-Caching).
+* SKYOPS-114210: Aktualisierung auf die neueste Version des Bundles aem.pss.service .
+* SKYOPS-116171: Update auf Sling ResourceResolver 1.12.12.
+* SKYOPS-119811: Dispatcher-Publish 2.0.258 veröffentlicht.
 
-### Verbesserungen {#enhancements-22450}
+### Behobene Probleme {#fixed-issues-22758}
 
-* SITES-34023: Das Feld `technicalName` wurde den Antworten der Endpunkte des Inhaltsfragmentmodells hinzugefügt, um eine bessere Identifizierung zu ermöglichen.
-* SITES-32766: Die Asset-Verweise in Inhaltsfragmentmodellen unterstützen jetzt eine breitere Palette von binären Dateitypen.
-* SITES-33974: Verbesserte OpenAPI-Dokumentation, die sie genauer und benutzerfreundlicher macht.
-* SITES-9173: Cache-`ContentPolicyStatus`
-* SITES-9290: Verbessern Sie das Caching von `TouchEditContext`.
-* SITES-33355: Neuen CF-Editor auf „Payload anzeigen“ in der Workflow-Konsole öffnen.
-* SITES-33356: Öffnen Sie den neuen CF-Editor auf Erstellen → Öffnen Sie in der Admin-Benutzeroberfläche der Touch-optimierten Benutzeroberfläche.
-* SITES-32952: Inkonsistente Verarbeitung von Standardwerten für CFM-Felder bei Verwendung der Bereitstellungs-API.
-* SITES-31539: Edge Delivery mit universellem Editor: Hinzufügen von Unterstützung für universelle Editor-Konfigurations-Meta-Tags in `head.html`.
-* SITES-20672: Edge Delivery mit universellem Editor: Unterstützung für zusätzliche Bulk-Metadaten-Tabellen beim Authoring hinzufügen.
-* SITES-32963: Edge Delivery mit universellem Editor: Hinzufügen neuer Experimentier-Metadaten für Zieloptimierung, automatische Zuordnung und selbstlernendes Arbeiten.
-* SITES-30847: Version der Kernkomponenten 2.30.0.
-* SITES-29617: Der referenzierte By-Endpunkt wurde aktualisiert, um die ReferenceSearch-Klasse zu verwenden und damit ihre Leistung und Zuverlässigkeit zu verbessern.
-* SITES-19308: Verbesserte Leistung des Seitenlöschvorgangs, indem der Schritt zur Referenzvalidierung optimiert wurde.
-* SITES-34293: Implementiertes verzögertes Laden für vorlagenbasierte Ressourcen, um die Leistung zu verbessern.
-* SITES-33892: Es wurde ein Umschalter für Funktionen hinzugefügt, mit dem Verweisprüfungen für Pseudoseiten übersprungen werden können, was die Leistung verbessern kann.
+* GRANITE-61875: Trigger für „ungültige Ausdrucksauswertung“ beheben - Inhaltsfragmente können nicht gespeichert werden und Assets können nicht heruntergeladen werden.
+* SITES-22059: Beheben eines JS-Fehlers in PDF Viewer-Komponenten. Nicht lokalisierte Zeichenfolge „Dateivorschau nicht verfügbar“ in Kernkomponenten-Website > PDF-Viewer.
+* GRANITE-59704: Behebung von htmllibmanager.debug, das dazu führte, dass der Bearbeitungsmodus fehlschlug.
+* GRANITE-61042: Integrieren Sie FELIX-6796 (ServiceTracker NPE fix) in das AEM Felix Web Console-Bundle.
+* GRANITE-61165: Workspace.copy() löst RepositoryException aus.
+* GRANITE-61875: ui.commons auf 5.10.50 aktualisieren.
 
-### Behobene Probleme {#fixed-issues-22450}
-
-* CQ-4360550: Es wurde ein unerwartetes Verschwinden der Sprachkopie behoben, nachdem die Seitenverschiebung in AEM Cloud Service zurückgesetzt wurde.
-* SITES-25232: Für Timewarp-Links zum Festlegen des Datums und zum Beenden ist der Fokus nicht sichtbar.
-* SITES-25258: Der Fokus wird nicht mit dem modalen Dialogfeld „Anmerkung löschen“ verwaltet.
-* SITES-25305: Die demografische Symbolleiste erhält den Fokus nicht in einer logischen Reihenfolge.
-* SITES-25366: Der Ladestatus des Teaser-Modals wird von der Bildschirmlesehilfe nicht angekündigt.
-* SITES-34276: Edge Delivery mit universellem Editor: Die automatisch erstellte CORS-Richtlinie wird nicht auf die Veröffentlichungsebene angewendet.
-* SITES-34811: Edge Delivery mit universellem Editor: Beheben Sie, dass der HLX-Selektor beim Authoring nicht zu Links zu Kalkulationstabellen hinzugefügt wird.
-* SITES-31669: Nicht lokalisierte Zeichenfolgen „Diese Seite leitet zu“ in „Tools“ > „Sites“ > „Launches“.
-* SITES-30879: Nicht lokalisierte Zeichenfolgen in „Sites“ > „Seiten-Editor“ > „Suchkomponente“.
-* SITES-30959: Nicht lokalisierte Zeichenfolgen im Seiteneditor > Bildkomponente.
-* SITES-21743: Nicht lokalisiert „Bitte wählen Sie ein anzuzeigendes Dokument aus.“ Zeichenfolge im Seiten-Editor > PDF Viewer
-* SITES-19785: Zeichenfolgen sind in den Kernkomponenten „Site“ > „Registerkarten“ nicht lokalisiert.
-* SITES-22059: Nicht lokalisierte Zeichenfolge „Dateivorschau nicht verfügbar“ in „Kernkomponenten-Website“ > &quot;PDF-Viewer“.
-* SITES-33360: Nicht lokalisierter „Fehler während des Betriebs. Bereitgestellter Pfad ist keine „Launch“-Zeichenfolge in Launches > Bearbeiten.
-* SITES-32975: Nicht lokalisiertes Datumsformat in der Headless-Benutzeroberfläche > Launches > Launch mit Source vergleichen.
-* SITES-32973: Hartcodierte Zeichenfolgen in der Headless-Benutzeroberfläche > Launches > Rebase.
-* SITES-13540: Nicht lokalisierte Zeichenfolgen in „Launches“ > „Weiterleitung“.
-* SITES-13085: Nicht lokalisierte Fehlerzeichenfolgen auf der Seite „Sites“ > „Launch-Erstellung“.
-* SITES-21499: Nicht lokalisierte Zeichenfolge ist Sites > Launches > Bearbeiten.
-* SITES-14961: Abschneiden von Datumsfeldern im Dialogfeld Sites > Eigenschaften > Blueprint > Rollout .
-* SITES-33764: Launch-Filter (Source-Pfad/Workflow-erstellte Launches) funktionieren nicht.
-* SITES-33884: „Aktuelle Seite und Unterseiten hochstufen“ fördert unbeabsichtigt Seiten, die außerhalb des Bereichs liegen.
-* SITES-33611: Live Copy-Übersicht funktioniert nicht für Märkte mit hohem Volumen.
-* SITES-34331: 503-Timeout beim Laden der Rollout-Überlagerung für Benutzer ohne Administratorrechte.
-* SITES-34403: Beim Herunterfahren in `NullPointerException` `GraphqlClientImpl deactivate()`.
-* SITES-33817: Es wurden Synchronisierungsprobleme zwischen dem Benutzeroberflächenschema und dem JCR-Modell behoben, um Konsistenz sicherzustellen.
-* SITES-31141: Inhaltsverweise, die nicht durch einen Pfad dargestellt werden, werden jetzt korrekt in der API-Antwort zurückgegeben.
-* SITES-34080: Der Erstellungsprozess von Inhaltsfragmenten ist jetzt robuster und schlägt nicht fehl, wenn keine Felder für die Anfrage bereitgestellt werden.
-* SITES-30773: Der reguläre Ausdruck zum Suchen von Wörtern mit „Find and Replace“ wurde verbessert, sodass er nun UTF-8-Zeichen korrekt wiedergibt.
-* SITES-33742: Es wurde ein Fehler behoben, der das erfolgreiche Verschieben eines Inhaltsfragments bei Verwendung der Workflow-API verhinderte.
-
-### Bekannte Probleme {#known-issues-22450}
+### Bekannte Probleme {#known-issues-22758}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-22450}
+### Eingestellte Funktionen und APIs {#deprecated-22758}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-22450}
+### Sicherheitskorrekturen {#security-22758}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion wurden 18 identifizierte Schwachstellen behoben, was für einen noch robusteren Systemschutz sorgt.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion wurden 13 identifizierte Schwachstellen behoben, was für einen noch robusteren Systemschutz sorgt.
 
-### Eingebettete Technologien {#embedded-tech-22450}
+### Eingebettete Technologien {#embedded-tech-22758}
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM Oak | 1.84.0 | [Oak-API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
+| AEM Oak | 1,86,0 | [Oak 1.86.0-API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html) |
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-Kernkomponenten | 2.29.0 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-Kernkomponenten | 2,30,1 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (Standard) | [Unterstützte Node.js-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
