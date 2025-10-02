@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1024'
-ht-degree: 100%
+source-git-commit: 1d29700d8cbb9cd439ec909687c34db06a8090e4
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 67%
 
 ---
 
@@ -19,44 +19,44 @@ Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a
 
 Eine Cloud Manager-Konfigurations-Pipeline stellt Konfigurationsdateien (die im YAML-Format erstellt wurden) in einer Zielumgebung bereit. Auf diese Weise kann eine Reihe von Funktionen in AEM as a Cloud Service konfiguriert werden, darunter die Protokollweiterleitung, Bereinigungsaufgaben sowie verschiedene CDN-Funktionen.
 
-Konfigurations-Pipelines können über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdateien können mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
+Bei **Veröffentlichungsbereitstellung**-Projekten können Konfigurations-Pipelines über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdateien können mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
+
+Konfigurations-Pipelines können auch über Cloud Manager für **Edge Delivery-Projekte** werden.
 
 In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick über wichtige Informationen dazu, wie Konfigurations-Pipelines verwendet werden können und wie Konfigurationen für diese strukturiert sein sollten. Es werden allgemeine Konzepte beschrieben, die für alle oder eine Teilmenge der von Konfigurations-Pipelines unterstützten Funktionen freigegeben werden.
 
 * [Unterstützte Konfigurationen](#configurations): Eine Liste von Konfigurationen, die mit Konfigurations-Pipelines bereitgestellt werden können
-* [Erstellen und Verwalten von Konfigurations-Pipelines](#creating-and-managing): Erstellen einer Konfigurations-Pipeline.
+* [Erstellen und Verwalten von Konfigurations-](#creating-and-managing): So erstellen Sie eine Konfigurations-Pipeline
 * [Allgemeine Syntax](#common-syntax): Syntax, die über verschiedene Konfigurationen hinweg verwendet wird
 * [Ordnerstruktur](#folder-structure): Beschreibt die für die Konfigurationen erwarteten Strukturkonfigurations-Pipelines
 * [Geheime Umgebungsvariablen](#secret-env-vars): Beispiele für die Verwendung von Umgebungsvariablen, um Geheimnisse in Ihren Konfigurationen nicht offenzulegen
+* [Geheime Pipeline-Variablen](#secret-pipeline-vars) - Beispiele für die Verwendung von Umgebungsvariablen, um geheime Daten nicht in Ihren Konfigurationen für Edge Delivery Services-Projekte offenzulegen
 
 ## Unterstützte Konfigurationen {#configurations}
 
 Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit Links zur entsprechenden Dokumentation, wo die jeweilige Konfigurationssyntax und andere Informationen beschrieben werden.
 
-| Typ | YAML `kind`-Wert | Beschreibung |
-|---|---|---|
-| [Traffic-Filterregeln, einschließlich WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Deklarieren von Regeln zur Verhinderung von schädlichem Traffic |
-| [Anfrageumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form der Traffic-Anforderung |
-| [Reaktionsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form für die Antwort für eine gegebene Anfrage |
-| [Server-seitige Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Deklarieren von Server-seitigen Umleitungen im Stil 301/302 |
-| [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Deklarieren von Regeln, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen |
-| [CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Überschreiben der standardmäßigen Fehlerseite, wenn der AEM-Ursprung nicht erreicht werden kann, und Referenzieren des Speicherorts des selbst-gehosteten statischen Inhalts in der Konfigurationsdatei |
-| [CDN-Bereinigung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Deklarieren der API-Bereinigungsschlüssel für die Bereinigung des CDN |
-| [Kundenseitig verwaltetes CDN-HTTP-Token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Deklarieren des Werts des X-AEM-Edge-Schlüssels, der zum Aufrufen des Adobe CDN von einem Kunden-CDN erforderlich ist |
-| [Standardauthentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Deklarieren Sie die Benutzernamen und Kennwörter für einen einfachen Authentifizierungsdialog, der bestimmte URLs schützt. |
-| [Wartungsaufgabe zur Versionsbereinigung](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Repositorys durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Inhaltsversionen |
-| [Wartungsaufgabe zur Bereinigung des Auditprotokolls](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Auditprotokolls für eine verbesserte Leistung durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Protokollen |
-| [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Konfigurieren Sie die Endpunkte und Anmeldedaten für die Weiterleitung von Protokollen an verschiedene Ziele, einschließlich Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk. |
-| [Registrieren einer Client-ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Beschränken Sie Adobe Developer Console-API-Projekte durch Registrieren der Client-ID auf eine bestimmte AEM-Umgebung. Dies ist bei der Verwendung von OpenAPI-basierten APIs erforderlich, die eine Authentifizierung benötigen. |
+| Typ | YAML `kind`-Wert | Beschreibung | Veröffentlichungsbereitstellung | Edge-Bereitstellung |
+|---|---|---|---|---|
+| [Traffic-Filterregeln, einschließlich WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Deklarieren von Regeln zur Verhinderung von schädlichem Traffic | X | X |
+| [Anfrageumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form der Traffic-Anforderung | X | X |
+| [Reaktionsumwandlungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Deklarieren von Regeln zur Umwandlung der Form für die Antwort für eine gegebene Anfrage | X | X |
+| [Server-seitige Umleitungen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Deklarieren von Server-seitigen Umleitungen im Stil 301/302 | X | X |
+| [Ursprungs-Auswahlen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Deklarieren von Regeln, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen | X | X |
+| [CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Überschreiben der standardmäßigen Fehlerseite, wenn der AEM-Ursprung nicht erreicht werden kann, und Referenzieren des Speicherorts des selbst-gehosteten statischen Inhalts in der Konfigurationsdatei | X |  |
+| [CDN-Bereinigung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Deklarieren der API-Bereinigungsschlüssel für die Bereinigung des CDN | X |  |
+| [Kundenseitig verwaltetes CDN-HTTP-Token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Deklarieren des Werts des X-AEM-Edge-Schlüssels, der zum Aufrufen des Adobe CDN von einem Kunden-CDN erforderlich ist | X |  |
+| [Standardauthentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Deklarieren Sie die Benutzernamen und Kennwörter für einen einfachen Authentifizierungsdialog, der bestimmte URLs schützt. | X | X |
+| [Wartungsaufgabe zur Versionsbereinigung](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Repositorys durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Inhaltsversionen | X |  |
+| [Wartungsaufgabe zur Bereinigung des Auditprotokolls](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Auditprotokolls für eine verbesserte Leistung durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Protokollen | X |  |
+| [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Konfigurieren Sie die Endpunkte und Anmeldedaten für die Weiterleitung von Protokollen an verschiedene Ziele, einschließlich Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk. | X | X |
+| [Registrieren einer Client-ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Beschränken Sie Adobe Developer Console-API-Projekte durch Registrieren der Client-ID auf eine bestimmte AEM-Umgebung. Dies ist bei der Verwendung von OpenAPI-basierten APIs erforderlich, die eine Authentifizierung benötigen. | X |  |
 
 ## Erstellen und Verwalten von Konfigurations-Pipelines {#creating-and-managing}
 
-Informationen zum Erstellen und Konfigurieren von Pipelines finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+Informationen zum Erstellen und Konfigurieren von **Veröffentlichungs-Bereitstellung** Konfigurations-Pipelines finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Achten Sie beim Erstellen einer Konfigurations-Pipeline in Cloud Manager darauf, beim Konfigurieren **Pipeline „Zielgerichtete Bereitstellung** und nicht **Full-Stack-**&quot; auszuwählen. Wie bereits erwähnt, wird die Konfiguration für RDEs mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) und nicht mit einer Pipeline bereitgestellt.
 
-Achten Sie beim Erstellen einer Konfigurations-Pipeline in Cloud Manager darauf, dass Sie beim Konfigurieren der Pipeline eine **zielgerichtete Bereitstellung** anstelle eines **Full-Stack-Codes** auswählen.
-
-Wie bereits erwähnt, wird die Konfiguration für RDEs mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) und nicht mit einer Pipeline bereitgestellt.
-
+Informationen zum Erstellen und Konfigurieren von **Edge Delivery**-Konfigurations-Pipelines finden Sie im Artikel [Hinzufügen einer Edge Delivery-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) .
 
 ## Allgemeine Syntax {#common-syntax}
 
@@ -73,7 +73,7 @@ Jede Konfigurationsdatei beginnt mit Eigenschaften, die dem folgenden Beispielau
 |---|---|---|
 | `kind` | Eine Zeichenfolge, die die Art der Konfiguration bestimmt, z. B. Protokollweiterleitung, Traffic-Filterregeln oder Anfrageumwandlungen. | Erforderlich, kein Standard |
 | `version` | Eine Zeichenfolge, die die Schemaversion darstellt | Erforderlich, kein Standard |
-| `envTypes` | Dieses Zeichenfolgen-Array ist eine untergeordnete Eigenschaft des `metadata`-Knotens. Mögliche Werte sind „Entwicklung“, „Staging“, „Produktion“ oder eine beliebige Kombination, und sie bestimmen, für welche Umgebungstypen die Konfiguration verarbeitet wird. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, selbst wenn die Konfiguration dort bereitgestellt wird. | Alle Umgebungstypen (Entwicklung, Staging, Produktion) |
+| `envTypes` | Dieses Zeichenfolgen-Array ist eine untergeordnete Eigenschaft des `metadata`-Knotens. Für **Veröffentlichungsbereitstellung** sind mögliche Werte dev, stage, prod oder eine beliebige Kombination und sie bestimmt, für welche Umgebungstypen die Konfiguration verarbeitet wird. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, auch wenn die Konfiguration dort bereitgestellt wird. Für **Edge Delivery** sollte nur der Wert `prod` verwendet werden | Alle Umgebungstypen, d. h. (dev, stage, prod) für die Veröffentlichungsbereitstellung oder nur prod für Edge Delivery |
 
 Sie können das Dienstprogramm `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
 
@@ -121,7 +121,7 @@ Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen u
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Mithilfe von Umgebungsvariablen mit geheimen Typen können die [geheimen Eigenschaften](#secret-env-vars) pro Umgebung variieren, wie durch die `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht wird
+Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[ können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht
 
 ```yaml
 kind: "LogForwarding"
@@ -176,9 +176,44 @@ Die Dateistruktur ähnelt dem Folgenden:
 
 Eine Variante dieses Ansatzes besteht darin, für jede Umgebung eine separate Verzweigung zu führen.
 
+### Edge Delivery Services {#yamls-for-eds}
+
+Edge Delivery-Konfigurations-Pipelines verfügen über keine separaten Entwicklungs-, Staging- und Produktionsumgebungen. Im Gegensatz zu Veröffentlichungs-Bereitstellungsumgebungen, in denen Änderungen über die Entwicklungs-, Staging- und Produktebenen vorgenommen werden, wird die über eine Edge Delivery-Konfigurations-Pipeline bereitgestellte Konfiguration direkt auf alle Domain-Zuordnungen angewendet, die in Cloud Manager bei einer Edge Delivery-Site registriert sind.
+
+Stellen Sie daher eine einfache Dateistruktur wie die folgende bereit:
+
+```text
+/config
+  cdn.yaml
+  logForwarding.yaml
+```
+
+Wenn eine Regel pro Edge Delivery-Site unterschiedlich sein muss, verwenden Sie die *wenn*-Syntax, um die Regeln voneinander zu unterscheiden. Beachten Sie beispielsweise, dass die Domain im folgenden Ausschnitt mit dev.example.com übereinstimmt, was von der Domain www.example.com unterschieden werden kann.
+
+```
+kind: "CDN"
+version: "1"
+data:
+  trafficFilters:
+    rules:
+    # Block simple path
+    - name: block-path
+      when:
+        allOf:
+          - reqProperty: domain
+            equals: "dev.example.com"
+          - reqProperty: path
+            equals: '/block/me'
+      action: block
+```
+
+Wenn Sie das Metadatenfeld *envTypes* einschließen, sollte nur der Wert **prod** verwendet werden (das Auslassen des Metadatenfelds envTypes ist ebenfalls in Ordnung). Für die *tier* reqProperty sollte nur der Wert **publish** verwendet werden.
+
 ## Geheime Umgebungsvariablen {#secret-env-vars}
 
 Damit vertrauliche Informationen nicht in der Verwaltung der Quelle gespeichert werden müssen, unterstützen Konfigurationsdateien Cloud Manager-Umgebungsvariablen vom Typ **secret**. Bei einigen Konfigurationen, einschließlich der Protokollweiterleitung, sind geheime Umgebungsvariablen für bestimmte Eigenschaften obligatorisch.
+
+Beachten Sie, dass geheime Umgebungsvariablen für Veröffentlichungs-Bereitstellungsprojekte verwendet werden. Weitere Informationen finden Sie im Abschnitt Geheime Pipeline-Variablen für Edge Delivery Services-Projekte.
 
 Der folgende Ausschnitt zeigt, wie die geheime Umgebungsvariable `${{SPLUNK_TOKEN}}` in der Konfiguration verwendet wird.
 
@@ -197,3 +232,12 @@ data:
 ```
 
 Bitte lesen Sie das Dokument [Cloud Manager-Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md), um zu erfahren, wie Sie Umgebungsvariablen verwenden können.
+
+## Geheime Pipeline-Variablen {#secret-pipeline-vars}
+
+Verwenden Sie für Edge Delivery Services-Projekte Cloud Manager-Pipeline-Variablen vom Typ **secret** sodass vertrauliche Informationen nicht in der Quell-Code-Verwaltung gespeichert werden müssen. Das Auswahlfeld *Schritt angewendet* sollte die Option **Bereitstellen** verwenden.
+
+Die Syntax ist identisch mit dem im vorherigen Abschnitt gezeigten Snippet.
+
+Weitere Informationen zur Verwendung [ Pipeline-Variablen finden Sie ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) Dokument „Pipeline Variablen in Cloud Manager&quot;.
+
