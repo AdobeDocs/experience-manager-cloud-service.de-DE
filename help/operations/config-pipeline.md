@@ -121,7 +121,7 @@ Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen u
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[ können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht
+Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[&#x200B; können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht
 
 ```yaml
 kind: "LogForwarding"
@@ -239,5 +239,5 @@ Verwenden Sie für Edge Delivery Services-Projekte Cloud Manager-Pipeline-Variab
 
 Die Syntax ist identisch mit dem im vorherigen Abschnitt gezeigten Snippet.
 
-Weitere Informationen zur Verwendung [ Pipeline-Variablen finden Sie ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) Dokument „Pipeline Variablen in Cloud Manager&quot;.
+Weitere Informationen zur Verwendung [&#x200B; Pipeline-Variablen finden Sie &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) Dokument „Pipeline Variablen in Cloud Manager&quot;.
 
