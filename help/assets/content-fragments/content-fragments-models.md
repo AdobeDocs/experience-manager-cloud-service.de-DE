@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 98%
+source-wordcount: '3588'
+ht-degree: 97%
 
 ---
 
@@ -25,9 +25,17 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 >[!NOTE]
 >
->Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
+>Inhaltsfragmente sind eine Funktionalität von Sites, werden jedoch als **Assets** gespeichert.
 >
->Inhaltsfragmente und Inhaltsfragmentmodelle werden jetzt hauptsächlich mit der **[Inhaltsfragmente“-](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, Inhaltsfragmente können jedoch weiterhin über die **Assets**-Konsole und Inhaltsfragmentmodelle über die **Tools**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die Konsolen {**}Assets** und **Tools“ beschrieben.**
+>Inhaltsfragmente und Inhaltsfragmentmodelle werden nunmehr hauptsächlich mit der Konsole **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet. Es ist allerdings nach wie vor möglich, Inhaltsfragmente über die Konsole **Assets** und Inhaltsfragmentmodelle über die Konsole **Tools** zu verwalten. In diesem Abschnitt wird die Verwaltung über die Konsole **Assets** und **Tools** beschrieben.
+
+>[!NOTE]
+>
+>Wenn ein Modell mit dem [neuen Modell-Editor“ erstellt wurde](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) sollten Sie immer diesen Editor für das Modell verwenden.
+>
+>Wenn Sie dann das Modell mit diesem (ursprünglichen) Modell-Editor öffnen, wird die Meldung angezeigt:
+>
+>* „Für dieses Modell ist ein benutzerdefiniertes Benutzeroberflächenschema konfiguriert. Die Reihenfolge der in dieser Benutzeroberfläche angezeigten Felder stimmt möglicherweise nicht mit dem Benutzeroberflächenschema überein. Um die Felder anzuzeigen, die mit dem Benutzeroberflächenschema abgestimmt sind, müssen Sie zum neuen Inhaltsfragment-Editor wechseln.“
 
 ## Erstellen eines Inhaltsfragmentmodells {#creating-a-content-fragment-model}
 
@@ -67,6 +75,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    * Links: Felder bereits definiert
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
+   * Oben: Eine Option, um den [neuen Editor“ ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
    >[!NOTE]
    >
@@ -142,17 +151,43 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
 
+* **Fragmentreferenz**
+   * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
+   * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
+      * Direktes Bearbeiten des referenzierten Fragments
+      * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
+      * Erstellen neuer Instanzen des Felds
+   * Die Referenz gibt den Pfad zur referenzierten Ressource an, z. B. `/content/dam/path/to/resource`.
+
+* **Fragmentreferenz (UUID)**
+   * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
+   * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
+      * Direktes Bearbeiten des referenzierten Fragments
+      * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
+      * Erstellen neuer Instanzen des Felds
+   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
+      * Sie müssen die UUID nicht kennen. Sie können im Fragmenteditor zum gewünschten Fragment navigieren.
+
+  >[!NOTE]
+  >
+  >Die UUIDs sind Repository-spezifisch. Wenn Sie das [Inhaltskopie-Tool](/help/implementing/developing/tools/content-copy.md) zum Kopieren von Inhaltsfragmenten verwenden, werden die UUIDs in der Zielumgebung neu berechnet.
+
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
    * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
+   * Die Referenz gibt den Pfad zur referenzierten Ressource an, z. B. `/content/dam/path/to/resource`.
 
-* **Fragmentreferenz**
-   * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Das Feld kann so konfiguriert werden, dass es den Fragmentautorinnen und -autoren Folgendes ermöglicht:
-      * Direktes Bearbeiten des referenzierten Fragments
-      * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
-      * Erstellen neuer Instanzen des Felds
+* **Inhaltsreferenz (UUID)**
+   * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
+   * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
+   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
+   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
+      * Sie müssen die UUID nicht kennen. Sie können im Fragmenteditor zur gewünschten Asset-Ressource navigieren.
+
+  >[!NOTE]
+  >
+  >Die UUIDs sind Repository-spezifisch. Wenn Sie das [Inhaltskopie-Tool](/help/implementing/developing/tools/content-copy.md) zum Kopieren von Inhaltsfragmenten verwenden, werden die UUIDs in der Zielumgebung neu berechnet.
 
 * **JSON-Objekt**
    * Ermöglicht es der Autorin bzw. dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
@@ -260,32 +295,43 @@ Verschiedene Datentypen bieten jetzt die Möglichkeit, Validierungsanforderungen
 
 Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhalte bilden:
 
-* **[Inhaltsreferenz](#content-reference)**
-   * Bietet einen einfachen Verweis auf anderen Content jedes Typs.
-   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
+* [Inhaltsreferenz](#content-reference)
+   * Bietet einen einfachen Verweis auf andere Inhalte eines beliebigen Typs.
+   * Bereitgestellt von den Datentypen:
+      * **Inhaltsreferenz** – pfadbasiert
+      * **Inhaltsreferenz (UUID)** – UUID-basiert
+   * Kann für eine oder mehrere Referenzen konfiguriert werden (im resultierenden Fragment).
 
-* **[Fragmentreferenz](#fragment-reference-nested-fragments)** (verschachtelte Fragmente)
+* [Fragmentreferenz](#fragment-reference-nested-fragments) (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
+   * Bereitgestellt von den Datentypen:
+      * **Fragmentreferenz** – pfadbasiert
+      * **Fragmentreferenz (UUID)** – UUID-basiert
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
 
      >[!NOTE]
      >
-     >Diese Methode ist in Verbindung mit der [Headless-Bereitstellung mithilfe von Inhaltsfragmenten mit GraphQL](/help/assets/content-fragments/content-fragments-graphql.md) besonders interessant.
-   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
+     >Diese Methode ist vor allem bei der Verwendung in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) interessant.
+
+   * Kann für eine oder mehrere Referenzen konfiguriert werden (im resultierenden Fragment).
+
+>[!NOTE]
+>
+>Weitere Informationen zu „Inhaltsreferenz“ bzw. „Fragmentreferenz“ und „Inhaltsreferenz (UUID) bzw. „Fragmentreferenz (UUID)“ sowie zum Aktualisieren auf UUID-basierte Datentypen finden Sie unter [Aktualisieren Ihrer Inhaltsfragmente für UUID-Referenzen](/help/headless/graphql-api/uuid-reference-upgrade.md).
 
 >[!NOTE]
 >
 >AEM bietet einen Wiederholungsschutz für:
 >
 >* Inhaltsreferenzen
->Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+>  >  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
->* Fragmentreferenzen in GraphQL
->Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
+>* Fragmentverweise in GraphQL
+>  >  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
 
 ### Inhaltsreferenz {#content-reference}
 
-Mit der Inhaltsreferenz können Sie Inhalte aus einer anderen Quelle rendern, zum Beispiel ein Bild oder Inhaltsfragment.
+Mit den Datentypen **Inhaltsreferenz** und **Inhaltsreferenz (UUID)** können Sie Inhalte aus einer anderen Quelle rendern, z. B. ein Bild, eine Seite oder ein Experience Fragment.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
@@ -300,7 +346,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 ### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
-Die Fragmentreferenz verweist auf mindestens ein Inhaltsfragment. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrer Anwendung interessant, da sie Ihnen das Abrufen strukturierter Daten mit mehreren Ebenen ermöglicht.
+Die Datentypen **Fragmentreferenz** und **Fragmentreferenz (UUID)** können auf ein oder mehrere Inhaltsfragmente verweisen. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrem Programm interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
 
 Zum Beispiel:
 

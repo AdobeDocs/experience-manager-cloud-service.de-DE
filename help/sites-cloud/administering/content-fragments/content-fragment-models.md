@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 100%
+source-wordcount: '2201'
+ht-degree: 82%
 
 ---
 
@@ -24,6 +24,14 @@ Auf dieser Seite wird beschrieben, wie Sie Ihr Inhaltsfragmentmodell mithilfe de
 >
 >Weitere Informationen finden Sie unter [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten – Einschränkungen](/help/headless/graphql-api/content-fragments.md#limitations).
 
+>[!NOTE]
+>
+>Wenn Sie ein Modell mit diesem neuen Editor erstellen, sollten Sie immer diesen Editor für dieses Modell verwenden.
+>
+>Wenn Sie dann das Modell mit dem [ursprünglichen Modell-Editor](/help/assets/content-fragments/content-fragments-models.md) öffnen, wird die Meldung angezeigt:
+>
+>* „Für dieses Modell ist ein benutzerdefiniertes Benutzeroberflächenschema konfiguriert. Die Reihenfolge der in dieser Benutzeroberfläche angezeigten Felder stimmt möglicherweise nicht mit dem Benutzeroberflächenschema überein. Um die Felder anzuzeigen, die mit dem Benutzeroberflächenschema abgestimmt sind, müssen Sie zum neuen Inhaltsfragment-Editor wechseln.“
+
 ## Definieren des Inhaltsfragmentmodells {#defining-your-content-fragment-model}
 
 Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inhaltsfragmente unter Verwendung unterschiedlicher **[Datentypen](#data-types)**. Mithilfe des Modell-Editors können Sie Instanzen der Datentypen hinzufügen und diese dann so konfigurieren, dass die erforderlichen Felder erstellt werden:
@@ -38,26 +46,46 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
    >
    >Sie können ein Modell auch direkt nach dem [Erstellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) öffnen.
 
-1. Öffnen Sie das zu **bearbeitende** Modell; nutzen Sie dazu entweder die entsprechende Schnellaktion oder wählen Sie das Modell und anschließend die Aktion aus der Symbolleiste aus.
+1. Öffnen Sie das gewünschte Modell für **Bearbeiten** verwenden Sie einen der Schnellzugriff-Links oder wählen Sie das Modell und dann die Aktion in der Symbolleiste aus.
 
-   Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
-
-   * Links: Felder bereits definiert
-   * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
-
-   >[!NOTE]
-   >
-   >Wenn ein Feld als **Pflichtfeld** definiert ist, wird die **Bezeichnung** im linken Bereich mit einem Stern (**&#42;**) markiert.
 
    ![Eigenschaften](assets/cf-cfmodels-empty-model.png)
 
+   Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
+
+   * Oben:
+      * Symbol **Startseite**
+      * Option zum Umschalten zwischen dem [Original](/help/assets/content-fragments/content-fragments-models.md) und neuen Editor
+      * **Abbrechen**
+      * **Speichern**
+
+   * Links: **Datentypen** zum Erstellen von Feldern verfügbar
+
+   * Middle: Felder, die bereits zusammen mit der Option **Hinzufügen** definiert wurden
+
+   * Rechts: Mithilfe der Symbole ganz rechts können Sie zwischen folgenden Optionen wählen:
+
+      * **Eigenschaften**: Definieren und Anzeigen von Eigenschaften für das ausgewählte Feld
+      * **Modelldetails**: Anzeigen des **Aktiviert**-Status, **Modelltitel**, **Tags**, **Beschreibung** und **Vorschau-URL**
+
 1. **So fügen Sie ein Feld hinzu**
 
-   * Ziehen Sie einen erforderlichen Datentyp an die entsprechende Stelle für ein Feld:
+   * Sie haben folgende Möglichkeiten:
 
-     ![Datentyp zum Erstellen eines Felds ziehen](assets/cf-cfmodels-create-field.png)
+      * Ziehen Sie einen Datentyp aus dem linken Bereich an die erforderliche Position für ein Feld im mittleren Bereich.
+      * Wählen Sie das Symbol **+** nach einem Datentyp aus, um es am unteren Rand der Feldliste hinzuzufügen.
+      * Wählen Sie **mittleren Bereich** Hinzufügen“ und dann den erforderlichen Datentyp aus der resultierenden Dropdown-Liste aus, um ein Feld zum Ende der Liste hinzuzufügen.
 
-   * Wenn ein Feld zum Modell hinzugefügt wurde, werden im rechten Bereich die **Eigenschaften** angezeigt, die für diesen speziellen Datentyp definiert werden können. Hier können Sie festlegen, was für dieses Feld erforderlich ist.
+     >[!NOTE]
+     >
+     >**Registerkarten-Platzhalter** Felder müssen immer über den vorhandenen Feldern angezeigt werden.
+
+   * Sie können ein Feld mithilfe der Punktbildung links im Feld neu positionieren:
+
+     ![Feld verschieben](assets/cf-cfmodels-move-field-icon.png)
+
+   * Nachdem ein Feld zum Modell hinzugefügt wurde (und ausgewählt ist), werden im rechten Bereich die **Eigenschaften** angezeigt, die für diesen bestimmten Datentyp definiert werden können. Hier können Sie festlegen, was für die jeweiligen
+Feld.
 
       * Viele Eigenschaften sind selbsterklärend. Weitere Informationen finden Sie unter [Eigenschaften (Datentypen)](#properties).
       * Wenn Sie eine **Feldbeschriftung** eingeben, wird der **Eigenschaftsname** automatisch ausgefüllt, falls das Feld leer ist, und kann anschließend manuell aktualisiert werden.
@@ -72,15 +100,17 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
      ![Feldeigenschaften](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >Wenn ein Feld als &quot;**&quot; definiert**, wird **Beschriftung** im mittleren Bereich mit einem Stern markiert (**&#42;**).
+
 1. **So entfernen Sie ein Feld**
 
-   Wählen Sie das entsprechende Feld aus und wählen Sie das Papierkorb-Symbol aus. Sie werden aufgefordert, die Aktion zu bestätigen.
+   Wählen Sie das Papierkorbsymbol für das entsprechende Feld im mittleren Bereich aus.
 
    ![Entfernen](assets/cf-cfmodels-remove-icon.png)
 
-1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest. Zum Beispiel:
-
-   ![Speichern](assets/cf-cfmodels-save.png)
+1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest.
 
 1. Wählen Sie **Speichern**, um die Definition beizubehalten.
 
@@ -118,6 +148,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 
 * **Tags**
    * Ermöglicht Fragmentautoren den Zugriff auf und die Auswahl von Tag-Bereichen.
+
 * **Fragmentreferenz**
    * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
    * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
@@ -126,18 +157,16 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
       * Erstellen neuer Instanzen des Felds
    * Die Referenz gibt den Pfad zur referenzierten Ressource an, z. B. `/content/dam/path/to/resource`.
 
-* **Fragmentreferenz (UUID)**
-   * Verweist auf andere Inhaltsfragmente. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
-      * Direktes Bearbeiten des referenzierten Fragments
-      * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
-      * Erstellen neuer Instanzen des Felds
-   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
-      * Sie müssen die UUID nicht kennen. Sie können im Fragmenteditor zum gewünschten Fragment navigieren.
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Die UUIDs sind Repository-spezifisch. Wenn Sie das [Inhaltskopie-Tool](/help/implementing/developing/tools/content-copy.md) zum Kopieren von Inhaltsfragmenten verwenden, werden die UUIDs in der Zielumgebung neu berechnet.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Inhaltsreferenz**
    * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
@@ -145,16 +174,16 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
    * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
    * Die Referenz gibt den Pfad zur referenzierten Ressource an, z. B. `/content/dam/path/to/resource`.
 
-* **Inhaltsreferenz (UUID)**
-   * Verweist auf andere Inhalte jeden Typs. Kann zum [Erstellen verschachtelter Inhalte](#using-references-to-form-nested-content) verwendet werden.
-   * Wenn ein Bild referenziert wird, kann wahlweise eine Miniatur angezeigt werden.
-   * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
-   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
-      * Sie müssen die UUID nicht kennen. Sie können im Fragmenteditor zur gewünschten Asset-Ressource navigieren.
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Die UUIDs sind Repository-spezifisch. Wenn Sie das [Inhaltskopie-Tool](/help/implementing/developing/tools/content-copy.md) zum Kopieren von Inhaltsfragmenten verwenden, werden die UUIDs in der Zielumgebung neu berechnet.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **JSON-Objekt**
    * Ermöglicht es der Autorin bzw. dem Autor des Inhaltsfragments, JSON-Syntax in die entsprechenden Elemente eines Fragments einzugeben.
@@ -170,6 +199,8 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
      >[!NOTE]
      >
      >Dieser Datentyp dient ausschließlich zur Formatierung und wird vom GraphQL-Schema von AEM ignoriert.
+     >
+     >**Registerkarten-Platzhalter** Felder müssen immer über den vorhandenen Feldern angezeigt werden.
 
 ## Eigenschaften (Datentypen) {#properties}
 
@@ -258,26 +289,24 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 
 * [Inhaltsreferenz](#content-reference)
    * Bietet einen einfachen Verweis auf andere Inhalte eines beliebigen Typs.
-   * Bereitgestellt von den Datentypen:
-      * **Inhaltsreferenz** – pfadbasiert
-      * **Inhaltsreferenz (UUID)** – UUID-basiert
+   * Wird vom Datentyp **Inhaltsreferenz** bereitgestellt
    * Kann für eine oder mehrere Referenzen konfiguriert werden (im resultierenden Fragment).
 
 * [Fragmentreferenz](#fragment-reference-nested-fragments) (verschachtelte Fragmente)
    * Verweist auf andere Fragmente, abhängig von den angegebenen Modellen.
-   * Bereitgestellt von den Datentypen:
-      * **Fragmentreferenz** – pfadbasiert
-      * **Fragmentreferenz (UUID)** – UUID-basiert
+   * Wird vom Datentyp **Fragmentreferenz** bereitgestellt
    * Ermöglicht das Einschließen/Abrufen strukturierter Daten.
 
      >[!NOTE]
      >
      >Diese Methode ist vor allem bei der Verwendung in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) interessant.
-   * Kann für eine oder mehrere Referenzen konfiguriert werden (im resultierenden Fragment).
+   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
+<!--
 >[!NOTE]
 >
->Weitere Informationen zu „Inhaltsreferenz“ bzw. „Fragmentreferenz“ und „Inhaltsreferenz (UUID) bzw. „Fragmentreferenz (UUID)“ sowie zum Aktualisieren auf UUID-basierte Datentypen finden Sie unter [Aktualisieren Ihrer Inhaltsfragmente für UUID-Referenzen](/help/headless/graphql-api/uuid-reference-upgrade.md).
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
@@ -297,7 +326,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 
 ### Inhaltsreferenz {#content-reference}
 
-Mit den Datentypen **Inhaltsreferenz** und **Inhaltsreferenz (UUID)** können Sie Inhalte aus einer anderen Quelle rendern, z. B. ein Bild, eine Seite oder ein Experience Fragment.
+Mit **Datentyp „Inhaltsreferenz** können Sie Inhalte aus einer anderen Quelle rendern, z. B. Bild, Seite oder Experience Fragment.
 
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
@@ -324,7 +353,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 ### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
-Die Datentypen **Fragmentreferenz** und **Fragmentreferenz (UUID)** können auf ein oder mehrere Inhaltsfragmente verweisen. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrem Programm interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
+Der **Fragmentverweis** Datentyp kann auf ein oder mehrere Inhaltsfragmente verweisen. Diese Funktion ist besonders beim Abrufen von Inhalten für die Verwendung in Ihrem Programm interessant, da sie es Ihnen ermöglicht, strukturierte Daten mit mehreren Ebenen abzurufen.
 
 Zum Beispiel:
 

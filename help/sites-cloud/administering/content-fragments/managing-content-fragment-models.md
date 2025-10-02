@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '2260'
-ht-degree: 100%
+source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+workflow-type: tm+mt
+source-wordcount: '2496'
+ht-degree: 94%
 
 ---
 
@@ -54,8 +54,8 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
 
 * Die obere Symbolleiste
    * Bietet die standardmäßigen AEM-Funktionen
-   * Zeigt auch Ihre IMS-Organisation an
-   * Bietet verschiedene [Aktionen](#actions-unselected)
+   * Zeigt Ihre IMS-Organisation an
+   * Bietet verschiedene [Aktionen](#actions-unselected) die sich [ändern können, wenn Sie ein oder mehrere Modelle auswählen](#actions-selected-content-fragment-models)
 * Das linke Panel
    * Zeigt die [Pfade zu allen Konfigurationen](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) aufgeführt als Ordner an
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
@@ -97,20 +97,29 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 * **Status**
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
-* **Geändert**
+* **Replikationsstatus**
    * Nur Informationen.
+   * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
+* **Vorschau**
+   * Nur Informationen.
+* **Geändert um**
+   * Nur Informationen.
+   * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Geändert von**
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Tags**
    * Nur Informationen.
-   * Zeigt alle Tags an, die sich auf das Modell beziehen.
+   * Öffnet ein Dialogfeld, das alle mit dem Modell verbundenen Tags anzeigt.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Veröffentlicht um**
    * Nur Informationen.
+   * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Herausgeber**
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
+* **Verwendet von**
+   * Öffnet ein Dialogfeld, in dem die auf dem Modell basierenden Inhaltsfragmente aufgelistet werden. Die Liste enthält Links, über die Sie Fragmente direkt öffnen können.
 
 ## Modelleigenschaften {#model-properties}
 
@@ -169,8 +178,9 @@ Bestimmte Aktionen sind über die Konsole verfügbar, nachdem Sie einen Ordner, 
 Wenn Sie ein bestimmtes Modell auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Modell anzeigt. Sie können auch mehrere Modelle auswählen. Die Auswahl der verfügbaren Aktionen wird dann entsprechend angepasst.
 
 * **[Bearbeiten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)**, um Ihr Inhaltsfragmentmodell zu definieren.
-* **Veröffentlichen** entweder auf der [Veröffentlichungs-](/help/implementing/cloud-manager/manage-environments.md#environment-types) oder der [Vorschau](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)-Ebene.
+* **[Veröffentlichen](#publishing-a-content-fragment-model)** und **[Veröffentlichung aufheben](#unpublishing-a-content-fragment-model)** entweder auf der [Veröffentlichen](/help/implementing/cloud-manager/manage-environments.md#environment-types) oder [Vorschau](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) Ebene.
 * **Sperren**/**Entsperren**, um zu steuern, ob eine Person zum Ändern des Modells berechtigt ist.
+* **Kopieren** Sie Ihr Modell.
 * **[Aktivieren](#enabling-a-content-fragment-model)**/**[Deaktivieren](#disabling-a-content-fragment-model)**, um zu steuern, ob eine Person Inhaltsfragmente auf Grundlage dieses Modells erstellen darf.
 
 Wenn Sie ein einzelnes Modell auswählen, werden im rechten Panel auch die [Modelleigenschaften](#properties) angezeigt.
@@ -198,7 +208,7 @@ Der Panel zum Filtern bietet folgende Optionen:
 * the option to retrieve a saved search filter for reuse
 -->
 
-Nach der Auswahl werden die Optionen zum **Filtern nach** angezeigt (oben im Haupt-Panel). Sie können von dort aus abgewählt werden. Zum Beispiel:
+Nach der Auswahl werden die Optionen zum **Filtern nach** angezeigt (oben im Haupt-Panel). Sie können von dort aus abgewählt werden. Beispiel:
 
 ![Inhaltsfragmentkonsole – Filtern von Inhaltsfragmentmodellen](assets/cf-managing-content-fragment-models-filter.png)
 
@@ -317,23 +327,21 @@ Die für einen Ordner zulässigen Inhaltsfragmentmodelle werden wie folgt aufgel
 * Wenn die Vererbungskette kein Ergebnis liefert, prüfen Sie die **Cloud Services**-Konfiguration für diesen Ordner (auch zuerst direkt und dann über Vererbung).
 * Wenn keines der oben genannten Verfahren Ergebnisse liefert, gibt es keine zulässigen Modelle für diesen Ordner.
 
-<!--
-## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
+## Löschen eines Inhaltsfragmentmodells {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
->Deleting a Content Fragment model can impact dependent fragments.
+>Das Löschen eines Inhaltsfragmentmodells kann sich auf abhängige Fragmente auswirken.
 
-To delete a Content Fragment model:
+So löschen Sie ein Inhaltsfragmentmodell:
 
-1. Navigate to, and select your Content Fragment Model. You can select multiple models.
+1. Navigieren Sie zu Ihrem Inhaltsfragmentmodell und wählen Sie dieses aus. Sie können mehrere Modelle auswählen.
 
-1. Select **Delete** from the toolbar.
+1. Wählen Sie **Löschen** in der Symbolleiste aus.
 
    >[!NOTE]
    >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
--->
+   >Wenn das Modell referenziert wird, wird eine Warnung angezeigt, damit Sie entsprechende Maßnahmen ergreifen können.
 
 ## Veröffentlichen eines Inhaltsfragmentmodells {#publishing-a-content-fragment-model}
 
@@ -352,25 +360,25 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
 1. Der Workflow zum Veröffentlichen der ausgewählten Modelle und ihrer Referenzen wird gestartet. Der Status „Veröffentlicht“ wird daraufhin in der Konsole angezeigt.
 
-<!--
-## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
+## Rückgängigmachen der Veröffentlichung eines Inhaltsfragmentmodells {#unpublishing-a-content-fragment-model}
 
-Content Fragment Models can be unpublished if they are not referenced by any fragments.
+Die Veröffentlichung von Inhaltsfragmentmodellen kann rückgängig gemacht werden, sofern sie nicht von Fragmenten referenziert werden.
 
-To unpublish a Content Fragment Model:
+So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
-1. Navigate to, and select your Content Fragment Model.
-1. Select **Unpublish** from the toolbar.
-   The published status is indicated in the console. 
+1. Navigieren Sie zu und wählen Sie Ihr Inhaltsfragmentmodell aus.
+Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
+1. Wählen **in der** die Option Veröffentlichung aufheben aus.
 
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
+1. Wählen Sie im Dialogfeld Veröffentlichung rückgängig machen die Option **Ziel**:
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
+   * **Veröffentlichungs-Service**
+   * **Vorschau-Service**
 
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
--->
+1. Der Workflow zum Rückgängigmachen der Veröffentlichung der ausgewählten Modelle und ihrer Referenzen wird gestartet. Der Status „Veröffentlichung rückgängig gemacht“ wird dann in der Konsole angezeigt.
+
+Wenn Sie versuchen, die Veröffentlichung eines Modells aufzuheben, das aktuell von einem oder mehreren Fragmenten verwendet wird, dann wird Ihnen eine Fehlermeldung angezeigt. In der Meldung wird vorgeschlagen, dass Sie das Bedienfeld [Verweise](/help/sites-cloud/authoring/basic-handling.md#references) überprüfen, um weitere Nachforschungen anzustellen:
 
 ## Gesperrte Inhaltsfragmentmodelle {#locked-content-fragment-models}
 
