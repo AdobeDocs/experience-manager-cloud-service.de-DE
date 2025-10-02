@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Eingeschränkte Verfügbarkeit" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
+source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,10 @@ ht-degree: 0%
 # Ruhezeiten und Freie Zeiträume aktualisieren {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Diese Funktion wird ab dem 25 **September als Funktion** Eingeschränkte Verfügbarkeit“ verfügbar sein. Senden Sie eine E-Mail an [0&rbrace;aemcs-update-free@adobe.com&quot;, um die Funktion in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
+>Diese Funktion wird ab dem 25 **September als Funktion** Eingeschränkte Verfügbarkeit“ verfügbar sein. Senden Sie eine E-Mail an [0}aemcs-update-free@adobe.com&quot;, um die Funktion in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
+
+>[!WARNING]
+>Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ ](/help/implementing/deploying/aem-version-updates.md) sind.
 
 Die [automatischen Wartungs-Updates](/help/implementing/deploying/aem-version-updates.md) von AEM as a Cloud Service stellen sicher, dass Ihre Instanzen sicher sind und mit den neuesten Wartungsversionen auf dem neuesten Stand sind. In einigen Fällen (z. B. bei Go-Live-Ereignissen) müssen Sie diese kritischen Arbeitszeiten jedoch möglicherweise vor potenziellen Unterbrechungen „schützen“. Daher bietet AEM as a Cloud Service die Möglichkeit, einen Zeitrahmen festzulegen, in dem automatische Aktualisierungen für Ihre laufenden Programme nicht vorgenommen werden.
 
