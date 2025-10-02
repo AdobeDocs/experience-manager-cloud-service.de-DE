@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 05531a5c1eca996bd3652d6ce6233b7a960d0bc9
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 100%
+source-wordcount: '1323'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Funktionstests"
->abstract="Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Bereitstellungsprozess von AEM as a Cloud Service integriert sind, um die Qualität und Zuverlässigkeit Ihres Codes sicherzustellen."
+>abstract="Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den AEM as a Cloud Service-Bereitstellungsprozess integriert sind. Die Tests stellen die Qualität und Zuverlässigkeit des Codes sicher."
 
 Lernen Sie die im [AEM as a Cloud Service-Bereitstellungsprozess](/help/implementing/cloud-manager/deploy-code.md) verfügbaren Qualitäts-Gates und die verschiedenen Arten integrierter Funktionstests kennen. Erfahren Sie, wie Sie im Rahmen einer umfassenden Teststrategie ihren Einsatz optimieren können.
 
@@ -105,13 +105,13 @@ Beispiele finden Sie unter [Open-Source-Beispieltests](https://github.com/adobe/
 
 Weitere Informationen finden Sie unter [Testen der benutzerdefinierten Benutzeroberfläche](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
-### Erlebnisprüfung
+### Erlebnis-Audit
 
-Der Experience Audit-Qualitätstest führt [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)-Audits auf der Webseite des Kunden durch.
+Der Erlebnis-Audit-Qualitätstest führt [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)-Audits auf der Webseite des Kunden durch.
 
 Dieser Qualitätstest wird von AEM vordefiniert bereitgestellt, blockiert jedoch nicht die Bereitstellungs-Pipelines. Standardmäßig wird ein Audit für die Stammseite (`/`) der Veröffentlichungsinstanz durchgeführt. Sie können einen Beitrag leisten, indem Sie bis zu 25 benutzerdefinierte Pfade konfigurieren, die für Audits berücksichtigt werden.
 
-Weitere Details finden Sie unter [Testen mit Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+Weitere Details finden Sie unter [Testen mit Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 ### Kundenvalidierungen
 

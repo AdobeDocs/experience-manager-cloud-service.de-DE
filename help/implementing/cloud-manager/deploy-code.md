@@ -5,8 +5,8 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: ht
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
+workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Die **Staging-Testphase** umfasst die folgenden Schritte:
 | Funktionstests für das Produkt | Die Cloud Manager-Pipeline führt Tests für die Staging-Umgebung aus.<br>Siehe auch [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Benutzerdefinierte Funktionstests | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Wenn der Build keine Test-JAR erzeugt, wird der Test automatisch bestanden.<br>Siehe auch [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
 | Benutzerdefinierte Benutzeroberflächentests | Eine optionale Funktion, mit der für benutzerdefinierte Anwendungen erstellte Benutzeroberflächentests automatisch ausgeführt werden.<br>Benutzeroberflächentests sind Selenium-basiert und in einem Docker-Image verpackt, um Flexibilität in Bezug auf Sprachen und Frameworks zu ermöglichen. Mit diesem Ansatz können Sie Java und Maven, Node und WebDriver.io oder ein beliebiges Selenium-basiertes Framework bzw. eine beliebige Selenium-Technologie verwenden.<br>Siehe auch [Benutzerdefinierte Benutzeroberflächentests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Erlebnis-Audit | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Erlebnis-Audit-Schritt eingefügt.<ul><li>Die konfigurierten Seiten werden an den Service übermittelt und ausgewertet.</li><li>Die Ergebnisse sind informativer Natur und zeigen die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen.</li><li>Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.</li></ul>Siehe [Grundlegendes zu Erlebnis-Audit-Ergebnissen](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Erlebnis-Audit | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Erlebnis-Audit-Schritt eingefügt.<ul><li>Die konfigurierten Seiten werden an den Service übermittelt und ausgewertet.</li><li>Die Ergebnisse sind informativer Natur und zeigen die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen.</li><li>Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.</li></ul>Siehe [Grundlegendes zu Erlebnis-Audit-Ergebnissen](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Staging-Tests](assets/stage-testing.png)
 
@@ -149,7 +149,7 @@ Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [die Cloud
 Um eine erneute Ausführung auszulösen, muss eine PUT-Anfrage an den HAL-Link `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` im Status des Produktionsbereitstellungsschritts erfolgen.
 
 * Wenn diese Verknüpfung vorhanden ist, kann die Ausführung von diesem Schritt aus neu gestartet werden.
-* Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht erneut gestartet werden.
+* Wenn dies nicht der Fall ist, kann die Ausführung von diesem Schritt an nicht neu gestartet werden.
 
 Diese Verknüpfung ist immer nur für den Schritt der Produktionsbereitstellung verfügbar.
 

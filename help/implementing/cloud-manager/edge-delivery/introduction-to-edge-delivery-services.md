@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '823'
-ht-degree: 100%
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 93%
 
 ---
 
@@ -40,10 +40,10 @@ Maximieren Sie die Vorteile, die Ihnen Adobe bietet, indem Sie über Cloud Manag
 
 * [Verwenden Sie Ihre Lizenz für das von Ihnen gewünschte Programm](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) oder [aktualisieren Sie andere Programme](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md) oder beides.
 * Nutzen Sie die Vorteile des [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/)-Prinzips bei der Ausführung von CRUD-Vorgängen, also beim Erstellen, Lesen, Aktualisieren und Löschen.
-* [Nutzen Sie das SLA-Reporting](/help/implementing/cloud-manager/sla-reporting.md) (*in Kürze verfügbar*)
+* [Zugriff auf SLA-Berichte](/help/implementing/cloud-manager/reports/report-sla.md)
 * [Nutzen Sie den Adobe-Support](/help/edge/overview.md#support-ticket) für Ihre registrierten Produktionsprogramme.
 
-Wenn Sie über eine Edge Delivery Services(EDS)-Lizenz verfügen, können Sie ein von [Adobe verwaltetes CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) für Ihre Edge Delivery-Site verwenden und Funktionen wie Self-Service-CDN-Verwaltung und automatische Verlängerung von DV-Zertifikaten alle drei Monate nutzen, sofern sie nicht gelöscht wird.
+Wenn Sie über eine Edge Delivery Services (EDS)-Lizenz verfügen, können Sie ein von [Adobe verwaltetes CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) für Ihre Edge Delivery-Site verwenden. Dies ermöglicht die Self-Service-CDN-Verwaltung und DV-Zertifikate, die automatisch alle drei Monate erneuert werden, es sei denn, Sie löschen das Zertifikat.
 
 Wenn Sie alternativ Ihr CDN (d. h. ein nicht von Adobe verwaltetes CDN) unabhängig von Ihrer Edge Delivery Services-Lizenz verwenden möchten, müssen Sie es auf der Plattform `aem.live` konfigurieren. Siehe [BYO-CDN-Einrichtung](https://www.aem.live/docs/byo-cdn-setup).
 
@@ -79,7 +79,7 @@ Die **Aufgabenliste von Edge Delivery** in Cloud Manager ist eine Checkliste fü
 | --- | --- | --- |
 | 1 | Dem Kanal für Produktzusammenarbeit beitreten | Durch Klicken auf **Anfrage jetzt senden** wird eine Anfrage an Adobe gesendet, um einen Kanal für Ihr Unternehmen zu erstellen. Wenn der Kanal bereits vorhanden ist, werden Sie an den Kanal Ihres Unternehmens weitergeleitet. |
 | 2 | Voraussetzungen erfüllen | Weitere Informationen finden Sie im Tutorial [Erste Schritte](https://www.aem.live/developer/tutorial). |
-| 3 | Edge Delivery-Site hinzufügen ODER <br>Site jetzt erstellen | Siehe [Hinzufügen einer Edge Delivery-Site](#eds-add-site).<br>Siehe [Erstellen einer Edge Delivery-Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
+| 3 | Edge Delivery-Site hinzufügen ODER <br>Jetzt eine Site erstellen | Siehe [Hinzufügen einer Edge Delivery-Site](#eds-add-site).<br>Siehe [Erstellen einer Edge Delivery-Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Konfigurieren einer Edge Delivery-Site zur Verwendung eines externen Git-Repositorys | Siehe [Konfigurieren einer Edge Delivery-Site zur Verwendung eines externen Git-Repositorys](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md). |
 | 5 | Domain hinzufügen | Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 6 | SSL-Zertifikat hinzufügen | Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
@@ -87,7 +87,7 @@ Die **Aufgabenliste von Edge Delivery** in Cloud Manager ist eine Checkliste fü
 | 8 | Einrichten der Push-Validierung | Weitere Informationen finden Sie unter [Einrichten der Push-Validierung für eine Edge Delivery-Site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Live-Schaltung | Weitere Informationen finden Sie unter [Checkliste für die Live-Schaltung](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441570?learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Einreichen eines Support-Tickets {#eds-support-ticket}
 

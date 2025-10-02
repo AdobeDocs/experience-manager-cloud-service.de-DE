@@ -1,14 +1,14 @@
 ---
 title: Übersicht über Cloud Manager-Tests
-description: Verschaffen Sie sich einen Überblick über die drei Arten von Tests, die Cloud Manager automatisch durchführt, um die Qualität Ihres benutzerspezifischen Codes sicherzustellen.
+description: Verschaffen Sie sich einen Überblick über die drei Arten von Tests, die Cloud Manager automatisch durchführt, um die Qualität Ihres benutzerdefinierten Codes sicherzustellen.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 100%
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,11 +25,11 @@ Es gibt drei allgemeine Testkategorien, die von Cloud Manager für Cloud Service
 
 1. [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Funktionstests sind Teil der Staging-Testphase einer [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) und optional Teil der Testphase einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * Funktionstests werden während der Staging-Testphase einer [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausgeführt. Optional kann sie auch während der Testphase einer [produktionsfremden Pipeline“ ausgeführt ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Testen mit Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [Testen mit Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
-   * Das Testen mit Erlebnis-Audit ist in allen Cloud Manager-Produktions-Pipelines aktiviert und kann nicht übersprungen werden.
+   * Experience Audit-Tests sind in allen Cloud Manager-Produktions-Pipelines aktiviert und können nicht übersprungen werden.
 
 Diese Tests können folgendermaßen sein:
 

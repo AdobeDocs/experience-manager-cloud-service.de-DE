@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 100%
+source-wordcount: '1466'
+ht-degree: 80%
 
 ---
 
@@ -26,20 +26,22 @@ Zusätzlich zu [Produktions-Pipelines](#configuring-production-pipelines.md), di
 
 Es gibt zwei Arten von produktionsfremden Pipelines:
 
-* **Code-Qualitäts-Pipelines**: Diese Pipelines führen Code-Qualitätsprüfungen für den Code in einer Git-Verzweigung durch und sie führen die Build- und Code-Qualitätsschritte aus.
-* **Bereitstellungs-Pipelines**: Diese Pipelines führen nicht nur wie die Code-Qualitäts-Pipelines die Build- und Code-Qualitätsschritte aus, sondern stellen den Code auch in einer produktionsfremden Umgebung bereit.
+* **Code-Qualitäts-Pipelines**: Diese Pipelines führen Code-Qualitätsprüfungen für den Code in einer Git-Verzweigung durch und die Build- und Code-Qualitätsschritte aus.
+* **Bereitstellungs-Pipelines**: Diese Pipelines führen nicht nur wie die Code-Qualitäts-Pipelines die Build- und Code-Qualitätsschritte aus, sondern stellen den Code auch in einer Nicht-Produktionsumgebung bereit.
 
 >[!NOTE]
 >
->Nach der Ersteinrichtung können Sie [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
+>Nach der Ersteinrichtung können Sie die [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
 ## Hinzufügen einer neuen produktionsfremden Pipeline {#adding-non-production-pipeline}
 
 Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingerichtet und mindestens eine Umgebung haben, können Sie eine produktionsfremde Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
-
-1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
+1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
+1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Wählen Sie die gewünschte Organisation aus.
+1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm.
 
 1. Rufen Sie die Karte **Pipelines** über den Startbildschirm von Cloud Manager auf. Klicken Sie auf **+Hinzufügen** und wählen Sie **Produktionsfremde Pipeline hinzufügen** aus.
 
@@ -56,8 +58,8 @@ Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingericht
 
    * **Bereitstellungsauslöser**: Beim Definieren der Bereitstellungsauslöser für den Start der Pipeline haben Sie die folgenden Optionen.
 
-      * **Manuell**: Verwenden Sie diese Option, um die Pipeline manuell zu starten.
-      * **Bei Git-Änderungen**: Diese Option startet die CI/CD-Pipeline, wenn zur konfigurierten Git-Verzweigung bestätigte Änderungen hinzugefügt werden. Mit dieser Option können Sie die Pipeline bei Bedarf immer noch manuell starten.
+      * **Manuell** - Verwenden Sie diese Option, um die Pipeline manuell zu starten.
+      * **Bei Git-**: Diese Option startet die CI/CD-Pipeline, wenn zur konfigurierten Git-Verzweigung bestätigte Änderungen hinzugefügt werden. Mit dieser Option können Sie die Pipeline bei Bedarf immer noch manuell starten.
 
 1. Wenn Sie eine **Bereitstellungs-Pipeline** erstellen möchten, müssen Sie auch das **Verhalten bei bedeutenden Metrikfehlern** definieren.
 
@@ -103,7 +105,7 @@ Führen Sie die folgenden Schritte aus, um die Konfiguration der produktionsfrem
       * **Funktionstests für das Produkt** – Führen Sie [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) mit der Entwicklungsumgebung durch.
       * **Benutzerdefinierte Funktionstests** – Führen Sie [benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) gegen die Entwicklungsumgebung durch.
       * **Benutzerdefinierte UI-Tests** – Führen Sie [benutzerdefinierte UI-Tests](/help/implementing/cloud-manager/ui-testing.md) für benutzerdefinierte Anwendungen aus.
-      * **Erlebnisprüfung** – Ausführen einer [Erlebnisprüfung](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+      * **Erlebnis-Audit** – Ausführen einer [Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    ![Full-Stack-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -115,17 +117,19 @@ Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können S
 
 Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie auswählen, einen der folgenden Code-Typen **einzuschließen**:
 
-* **Konfiguration** – Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM-Umgebung.
-   * Eine Liste der unterstützten Konfigurationen, einschließlich Protokollweiterleitung, bereinigungsbezogener Wartungsaufgaben und verschiedener CDN-Konfigurationen, sowie Informationen zu deren ordnungsgemäßer Bereitstellung im Repository finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md).
-   * Wenn Sie eine gezielte Bereitstellungs-Pipeline ausführen, werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert sind, die Sie in der Pipeline definiert haben.
+* **Konfig**: Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM-Umgebung.
+   * Unter [Verwenden von Konfigurations](/help/operations/config-pipeline.md)Pipelines“ finden Sie eine Liste der unterstützten Konfigurationen, darunter Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen. Außerdem erfahren Sie, wie Sie diese in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+   * Beim Ausführen einer zielgerichteten Bereitstellungs-Pipeline werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert werden, die Sie in der Pipeline definiert haben.
    * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
+* **Konfigurieren der Edge Delivery Services-Konfigurations**-Pipeline: Edge Delivery-Konfigurations-Pipelines verfügen über keine separaten Entwicklungs-, Staging- und Produktionsumgebungen. In AEM as a Cloud Service durchlaufen die Änderungen Entwicklungs-, Staging- und Produktionsebenen. Eine Edge Delivery-Konfigurations-Pipeline wendet ihre Konfiguration dagegen direkt auf alle in Cloud Manager registrierten Edge Delivery Sites-Domains an. Weitere Informationen finden Sie unter [Hinzufügen einer Edge Delivery-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
    * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
-* **Web-Stufen-Konfiguration** – Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
+* **Web-Stufen-Konfiguration**: Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
    * Weitere Informationen finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
    * Wenn für die ausgewählte Umgebung bereits eine Code-Pipeline auf Web-Ebene vorhanden ist, wird diese Auswahl deaktiviert.
-   * Wenn Sie über eine vorhandene Full-Stack-Pipeline verfügen, die in einer Umgebung bereitgestellt wird, wird beim Erstellen einer Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung die vorhandene Web-Stufen-Konfiguration in der Full-Stack-Pipeline ignoriert.
+   * Wenn eine Full-Stack-Pipeline bereits in einer Umgebung bereitgestellt wird, können Sie dennoch eine Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung erstellen. Dabei ignoriert Cloud Manager die Web-Stufen-Konfiguration in der Full-Stack-Pipeline.
+
 
 >[!NOTE]
 >
@@ -152,13 +156,13 @@ Die Schritte zum Fertigstellen Ihrer produktionsfremden zielgerichteten Bereitst
    * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
-   * **Pipeline**: Bei produktionsfremden Frontend-Pipelines haben Sie die Möglichkeit, das **[Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)** zu aktivieren.
+   * **Pipeline**: Bei produktionsfremden Frontend-Pipelines haben Sie die Möglichkeit, das **[Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)** zu aktivieren.
 
    ![Konfigurations-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Wenn Sie das Erlebnis-Audit aktiviert haben, klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnis-Audit** zu gelangen. Dort können Sie die Pfade definieren, die immer in das Erlebnis-Audit einbezogen werden sollen.
 
-   * Wenn Sie **Erlebnis-Audit** aktiviert haben, finden Sie im Dokument [Erlebnis-Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) Details zur Konfiguration.
+   * Wenn Sie **Erlebnis-Audit** aktiviert haben, finden Sie im Dokument [Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md) Details zur Konfiguration.
    * Wenn nicht, überspringen Sie diesen Schritt.
 
 1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
@@ -167,9 +171,9 @@ Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können 
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 
-Wenn Sie möchten, dass Dispatcher-Pakete als Teil Ihrer Pipeline erstellt werden, sie aber nicht im Build-Speicher veröffentlicht werden sollen, können Sie die Veröffentlichung deaktivieren, was die Laufzeit der Pipeline verkürzen kann.
+Wenn Sie möchten, dass Dispatcher-Pakete in Ihrer Pipeline erstellt, aber nicht in den Build-Speicher hochgeladen werden, deaktivieren Sie die Veröffentlichung. Dadurch kann die Laufzeit der Pipeline verkürzt werden.
 
-Die folgende Konfiguration zum Deaktivieren von Veröffentlichungs-Dispatcher-Paketen muss über die `pom.xml`-Datei Ihres Projekts hinzugefügt werden. Sie basiert auf einer Umgebungsvariablen, die als Markierung dient, welche Sie im Cloud Manager-Build-Container festlegen können, um zu definieren, wann Dispatcher-Pakete ignoriert werden sollen.
+Die folgende Konfiguration zum Deaktivieren von Veröffentlichungs-Dispatcher-Paketen muss über die Datei `pom.xml` Ihres Projekts hinzugefügt werden. Legen Sie eine Umgebungsvariable im Cloud Manager-Build-Container fest, um zu kennzeichnen, wann Dispatcher-Pakete ignoriert werden sollen. Die Pipeline liest dieses Flag und ignoriert sie entsprechend.
 
 ```xml
 <profile>

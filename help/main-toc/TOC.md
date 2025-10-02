@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
+source-git-commit: 7c8d3e78109f7eb8f90dca5f851e354c33943450
 workflow-type: tm+mt
-source-wordcount: '6811'
+source-wordcount: '6816'
 ht-degree: 95%
 
 ---
@@ -132,6 +132,7 @@ ht-degree: 95%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2 025,9,0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
          + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
@@ -530,7 +531,7 @@ ht-degree: 95%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -1313,10 +1314,13 @@ ht-degree: 95%
             + [Überblick über Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
             + [Java Funktionsprüfung](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI-Tests](/help/implementing/cloud-manager/ui-testing.md)
-         + [Erlebnis-Audit-Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Zugreifen auf und Verwalten von Protokollen](/help/implementing/cloud-manager/manage-logs.md)
       + [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
-      + [SLA-Berichte](/help/implementing/cloud-manager/sla-reporting.md)
+      + Berichte {#reports}
+         + [SLA](/help/implementing/cloud-manager/reports/report-sla.md)
+         + [Visueller Vergleich](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
+         + [Konsistenzprüfung](/help/implementing/cloud-manager/reports/report-health-assessment.md)
+         + [Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)

@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1689'
 ht-degree: 98%
 
 ---
@@ -153,7 +153,7 @@ Ein Produktionsprogramm kann so gekennzeichnet sein, dass es zusätzliche Funkti
 * Navigieren zu einer bestimmten ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
 * Öffnen der ![Programmübersicht-Symbol](/help/implementing/cloud-manager/assets/program-overview.svg) [Programmübersicht](#program-overview)
 * ![Bearbeiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -214,7 +214,7 @@ Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und
 * ![Glockensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [Aktivität:](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) Verlauf der Pipeline-Ausführungen des Programms
 * ![Workflow-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [Pipelines:](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) Alle für das Programm konfigurierten Pipelines
 * ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [Repositorys:](/help/implementing/cloud-manager/managing-code/managing-repositories.md) Alle für das Programm konfigurierten Repositorys
-* ![Kreisdiagramm-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Berichte:](/help/implementing/cloud-manager/sla-reporting.md) Metriken wie SLA-Daten
+* ![Kreisdiagramm-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Berichte:](/help/implementing/cloud-manager/reports/report-sla.md) Metriken wie SLA-Daten
 
 **Dienste**
 
@@ -223,7 +223,7 @@ Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und
 * ![Einstellungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain-Einstellungen:](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Verwalten benutzerdefinierter Domain-Namen für das Programm
 * ![Symbol für geschlossenes Schloss](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL-Zertifikate:](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) Verwalten von SSL-Zertifikaten für das Programm
 * ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN-Konfigurationen](/help/implementing/cloud-manager/custom-domain-names/introduction.md): Verwalten von Domain-Zuordnungen
-* ![Aufgabenlisten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP-Zulassungslisten:](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) Definieren von Zulassungslisten für bestimmte IP-Adressen
+* ![Aufgabenlistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Zulassungslisten für bestimmte IP-Adressen definieren
 * ![Kisten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content-Sets:](/help/implementing/developing/tools/content-copy.md) Sets von Inhalten, die für Kopierzwecke erstellt wurden
 * ![Verlaufs-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Aktivität zum Kopieren von Inhalten:](/help/implementing/developing/tools/content-copy.md) Aktivitäten zur Inhaltskopie
 * ![Kanal-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Netzwerkinfrastrukturen:](/help/security/configuring-advanced-networking.md) Verwalten erweiterter Netzwerkoptionen für das Programm

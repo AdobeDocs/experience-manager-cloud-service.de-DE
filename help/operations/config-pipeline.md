@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 1d29700d8cbb9cd439ec909687c34db06a8090e4
+source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 67%
+source-wordcount: '1340'
+ht-degree: 53%
 
 ---
 
-# Verwenden von Konfigurations-Pipelines {#config-pipelines}
+# Konfigurieren von Pipelines {#config-pipelines}
 
 Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a Cloud Service verschiedene Konfigurationen wie Einstellungen für die Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen bereitzustellen.
 
@@ -25,12 +25,12 @@ Konfigurations-Pipelines können auch über Cloud Manager für **Edge Delivery-P
 
 In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick über wichtige Informationen dazu, wie Konfigurations-Pipelines verwendet werden können und wie Konfigurationen für diese strukturiert sein sollten. Es werden allgemeine Konzepte beschrieben, die für alle oder eine Teilmenge der von Konfigurations-Pipelines unterstützten Funktionen freigegeben werden.
 
-* [Unterstützte Konfigurationen](#configurations): Eine Liste von Konfigurationen, die mit Konfigurations-Pipelines bereitgestellt werden können
+* [Unterstützte Konfigurationen](#configurations) - Eine Liste der Konfigurationen, die mit Konfigurations-Pipelines bereitgestellt werden können.
 * [Erstellen und Verwalten von Konfigurations-](#creating-and-managing): So erstellen Sie eine Konfigurations-Pipeline
-* [Allgemeine Syntax](#common-syntax): Syntax, die über verschiedene Konfigurationen hinweg verwendet wird
-* [Ordnerstruktur](#folder-structure): Beschreibt die für die Konfigurationen erwarteten Strukturkonfigurations-Pipelines
-* [Geheime Umgebungsvariablen](#secret-env-vars): Beispiele für die Verwendung von Umgebungsvariablen, um Geheimnisse in Ihren Konfigurationen nicht offenzulegen
-* [Geheime Pipeline-Variablen](#secret-pipeline-vars) - Beispiele für die Verwendung von Umgebungsvariablen, um geheime Daten nicht in Ihren Konfigurationen für Edge Delivery Services-Projekte offenzulegen
+* [Allgemeine Syntax](#common-syntax) - Syntax, die in allen Konfigurationen verwendet wird.
+* [Ordnerstruktur](#folder-structure): Beschreibt die Konfigurationsstruktur, die Pipelines für die Konfigurationen erwarten.
+* [Geheime Umgebungsvariablen](#secret-env-vars) - Beispiele für die Verwendung von Umgebungsvariablen, um Geheimnisse in Ihren Konfigurationen nicht offenzulegen.
+* [Geheime Pipeline-Variablen](#secret-pipeline-vars) - Beispiele für die Verwendung von Umgebungsvariablen, um geheime Daten nicht in Ihren Konfigurationen für Edge Delivery Services-Projekte offenzulegen.
 
 ## Unterstützte Konfigurationen {#configurations}
 
@@ -50,9 +50,9 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 | [Wartungsaufgabe zur Versionsbereinigung](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Repositorys durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Inhaltsversionen | X |  |
 | [Wartungsaufgabe zur Bereinigung des Auditprotokolls](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Auditprotokolls für eine verbesserte Leistung durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Protokollen | X |  |
 | [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Konfigurieren Sie die Endpunkte und Anmeldedaten für die Weiterleitung von Protokollen an verschiedene Ziele, einschließlich Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk. | X | X |
-| [Registrieren einer Client-ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Beschränken Sie Adobe Developer Console-API-Projekte durch Registrieren der Client-ID auf eine bestimmte AEM-Umgebung. Dies ist bei der Verwendung von OpenAPI-basierten APIs erforderlich, die eine Authentifizierung benötigen. | X |  |
+| [Registrieren einer Client-ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Richten Sie Adobe Developer Console-API-Projekte durch Registrierung der Client-ID auf eine bestimmte AEM-Umgebung ein. Wird für die Verwendung von OpenAPI-basierten APIs benötigt, die eine Authentifizierung erfordern | X |  |
 
-## Erstellen und Verwalten von Konfigurations-Pipelines {#creating-and-managing}
+## Konfigurieren von Pipelines {#creating-and-managing}
 
 Informationen zum Erstellen und Konfigurieren von **Veröffentlichungs-Bereitstellung** Konfigurations-Pipelines finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Achten Sie beim Erstellen einer Konfigurations-Pipeline in Cloud Manager darauf, beim Konfigurieren **Pipeline „Zielgerichtete Bereitstellung** und nicht **Full-Stack-**&quot; auszuwählen. Wie bereits erwähnt, wird die Konfiguration für RDEs mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) und nicht mit einer Pipeline bereitgestellt.
 
@@ -73,7 +73,7 @@ Jede Konfigurationsdatei beginnt mit Eigenschaften, die dem folgenden Beispielau
 |---|---|---|
 | `kind` | Eine Zeichenfolge, die die Art der Konfiguration bestimmt, z. B. Protokollweiterleitung, Traffic-Filterregeln oder Anfrageumwandlungen. | Erforderlich, kein Standard |
 | `version` | Eine Zeichenfolge, die die Schemaversion darstellt | Erforderlich, kein Standard |
-| `envTypes` | Dieses Zeichenfolgen-Array ist eine untergeordnete Eigenschaft des `metadata`-Knotens. Für **Veröffentlichungsbereitstellung** sind mögliche Werte dev, stage, prod oder eine beliebige Kombination und sie bestimmt, für welche Umgebungstypen die Konfiguration verarbeitet wird. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, auch wenn die Konfiguration dort bereitgestellt wird. Für **Edge Delivery** sollte nur der Wert `prod` verwendet werden | Alle Umgebungstypen, d. h. (dev, stage, prod) für die Veröffentlichungsbereitstellung oder nur prod für Edge Delivery |
+| `envTypes` | Dieses Zeichenfolgen-Array ist eine untergeordnete Eigenschaft des `metadata`-Knotens. Für **Veröffentlichungsbereitstellung** sind mögliche Werte dev, stage, prod oder eine beliebige Kombination und sie bestimmt, für welche Umgebungstypen die Konfiguration verarbeitet wird. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, auch wenn die Konfiguration dort bereitgestellt wird. Für **Edge Delivery** sollte nur der Wert `prod` verwendet werden. | Alle Umgebungstypen, d. h. (dev, stage, prod) für die Veröffentlichungsbereitstellung oder nur prod für Edge Delivery. |
 
 Sie können das Dienstprogramm `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
 
@@ -88,7 +88,7 @@ Zum Beispiel:
   cdn.yaml
 ```
 
-oder
+Oder
 
 ```text
 /config
@@ -102,9 +102,9 @@ In der Regel werden Konfigurationen für alle Umgebungen bereitgestellt. Wenn al
 
 Die folgenden Abschnitte zeigen einige Strategien zur Strukturierung Ihrer Dateien.
 
-### Eine einzelne Konfigurationsdatei für alle Umgebungen {#single-file}
+### Eine einzige Konfigurationsdatei für alle Umgebungen {#single-file}
 
-Die Dateistruktur ähnelt dem Folgenden:
+Die Dateistruktur sieht ähnlich der folgenden aus:
 
 ```text
 /config
@@ -121,7 +121,7 @@ Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen u
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[&#x200B; können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht
+Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[ können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
 
 ```yaml
 kind: "LogForwarding"
@@ -139,7 +139,7 @@ data:
 
 ### Eine separate Datei pro Umgebungstyp {#file-per-env}
 
-Die Dateistruktur ähnelt dem Folgenden:
+Die Dateistruktur sieht ähnlich der folgenden aus:
 
 ```text
 /config
@@ -151,8 +151,7 @@ Die Dateistruktur ähnelt dem Folgenden:
   logForwarding-prod.yaml
 ```
 
-Verwenden Sie diese Struktur, wenn es Unterschiede bei Eigenschaftswerten geben kann. Es wäre zu erwarten, dass der `envTypes`-Array-Wert in den Dateien dem Suffix entspricht, beispielsweise
-`cdn-dev.yaml` und `logForwarding-dev.yaml` mit dem Wert `["dev"]`, `cdn-stage.yaml` und `logForwarding-stage.yaml` mit dem Wert `["stage"]` usw.
+Verwenden Sie diese Struktur, wenn es Unterschiede bei Eigenschaftswerten geben kann. In den Dateien würde man erwarten, dass der `envTypes` Array-Wert mit dem Suffix übereinstimmt. Beispiel: `cdn-dev.yaml` und `logForwarding-dev.yaml` mit dem Wert `["dev"]`, `cdn-stage.yaml` und `logForwarding-stage.yaml` mit dem Wert `["stage"]` usw.
 
 ### Ein Ordner pro Umgebung {#folder-per-env}
 
@@ -160,7 +159,7 @@ Bei dieser Strategie gibt es einen separaten `config`-Ordner pro Umgebung, wobei
 
 Dieser Ansatz ist besonders dann nützlich, wenn Sie über mehrere Entwicklungsumgebungen mit jeweils eindeutigen Eigenschaftswerten verfügen.
 
-Die Dateistruktur ähnelt dem Folgenden:
+Die Dateistruktur sieht ähnlich der folgenden aus:
 
 ```text
 /config/dev1
@@ -178,7 +177,8 @@ Eine Variante dieses Ansatzes besteht darin, für jede Umgebung eine separate Ve
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Edge Delivery-Konfigurations-Pipelines verfügen über keine separaten Entwicklungs-, Staging- und Produktionsumgebungen. Im Gegensatz zu Veröffentlichungs-Bereitstellungsumgebungen, in denen Änderungen über die Entwicklungs-, Staging- und Produktebenen vorgenommen werden, wird die über eine Edge Delivery-Konfigurations-Pipeline bereitgestellte Konfiguration direkt auf alle Domain-Zuordnungen angewendet, die in Cloud Manager bei einer Edge Delivery-Site registriert sind.
+Edge Delivery-Konfigurations-Pipelines verfügen über keine separaten Entwicklungs-, Staging- und Produktionsumgebungen. In Veröffentlichungs-Bereitstellungsumgebungen schreiten Änderungen durch die Entwicklungs-, Staging- und Produktebenen voran. Eine Edge Delivery-Konfigurations-Pipeline wendet die Konfiguration dagegen direkt auf alle Domain-Zuordnungen an, die in Cloud Manager für eine Edge Delivery-Site registriert sind.
+
 
 Stellen Sie daher eine einfache Dateistruktur wie die folgende bereit:
 
@@ -188,7 +188,7 @@ Stellen Sie daher eine einfache Dateistruktur wie die folgende bereit:
   logForwarding.yaml
 ```
 
-Wenn eine Regel pro Edge Delivery-Site unterschiedlich sein muss, verwenden Sie die *wenn*-Syntax, um die Regeln voneinander zu unterscheiden. Beachten Sie beispielsweise, dass die Domain im folgenden Ausschnitt mit dev.example.com übereinstimmt, was von der Domain www.example.com unterschieden werden kann.
+Wenn eine Regel pro Edge Delivery-Site unterschiedlich sein muss, verwenden Sie die Syntax *wenn*, um die Regeln voneinander zu unterscheiden. Beachten Sie beispielsweise, dass die Domain im folgenden Ausschnitt mit dev.example.com übereinstimmt, was von der Domain www.example.com unterschieden werden kann.
 
 ```
 kind: "CDN"
@@ -215,7 +215,7 @@ Damit vertrauliche Informationen nicht in der Verwaltung der Quelle gespeichert 
 
 Beachten Sie, dass geheime Umgebungsvariablen für Veröffentlichungs-Bereitstellungsprojekte verwendet werden. Weitere Informationen finden Sie im Abschnitt Geheime Pipeline-Variablen für Edge Delivery Services-Projekte.
 
-Der folgende Ausschnitt zeigt, wie die geheime Umgebungsvariable `${{SPLUNK_TOKEN}}` in der Konfiguration verwendet wird.
+Das folgende Snippet ist ein Beispiel dafür, wie die geheime Umgebungsvariable `${{SPLUNK_TOKEN}}` in der Konfiguration verwendet wird.
 
 ```
 kind: "LogForwarding"
@@ -231,7 +231,7 @@ data:
       index: "AEMaaCS"
 ```
 
-Bitte lesen Sie das Dokument [Cloud Manager-Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md), um zu erfahren, wie Sie Umgebungsvariablen verwenden können.
+Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Cloud Manager-Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md).
 
 ## Geheime Pipeline-Variablen {#secret-pipeline-vars}
 
@@ -239,5 +239,4 @@ Verwenden Sie für Edge Delivery Services-Projekte Cloud Manager-Pipeline-Variab
 
 Die Syntax ist identisch mit dem im vorherigen Abschnitt gezeigten Snippet.
 
-Weitere Informationen zur Verwendung [&#x200B; Pipeline-Variablen finden Sie &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) Dokument „Pipeline Variablen in Cloud Manager&quot;.
-
+Weitere Informationen zur Verwendung von Pipeline-Variablen finden Sie unter [Pipeline-Variablen in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).

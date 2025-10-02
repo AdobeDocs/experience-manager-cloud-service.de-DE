@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 100%
+source-wordcount: '1402'
+ht-degree: 86%
 
 ---
 
@@ -36,13 +36,17 @@ Konfigurieren Sie Ihre Pipeline-Einstellungen über [!UICONTROL Cloud Manager], 
 
 ## Hinzufügen einer neuen Produktions-Pipeline {#adding-production-pipeline}
 
-Sobald Sie mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] Ihr Programm eingerichtet und mindestens eine Umgebung haben, können Sie eine Produktions-Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
+Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] verfügen, können Sie eine Produktions-Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 
 >[!TIP]
 >
 >Bevor Sie eine Frontend-Pipeline konfigurieren, lesen Sie die [Tour zur schnellen AEM-Site-Erstellung](/help/journey-sites/quick-site/overview.md). Dort finden Sie eine vollständige Anleitung für das benutzerfreundliche Tool zur schnellen AEM-Site-Erstellung. Diese Tour hilft Ihnen, die Frontend-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM-Backend-Kenntnisse schnell anzupassen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
+1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
+1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Wählen Sie die gewünschte Organisation aus.
+1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -100,17 +104,17 @@ Wenn Sie die ersten Zeichen des Verzweigungsnamens eingeben, findet die Funktion
 
    ![Full-Stack-Code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Klicken Sie auf **Weiter**, um zur Registerkarte **Experience Audit** zu gelangen, auf der Sie die Pfade definieren können, die immer in das Experience Audit einbezogen werden sollen.
+1. Klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnis-Audit** zu gelangen, auf der Sie die Pfade definieren können, die immer in das Erlebnis-Audit einbezogen werden sollen.
 
-   ![Hinzufügen der Erlebnisprüfung](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+   ![Hinzufügen des Erlebnis-Audits](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Geben Sie Pfade an, die in die Erlebnisprüfung aufgenommen werden sollen.
+1. Geben Sie Pfade an, die in das Erlebnis-Audit aufgenommen werden sollen.
 
-   * Einzelheiten hierzu finden Sie unter [Erlebnis-Audit-Tests](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration).
+   * Einzelheiten hierzu finden Sie unter [Erlebnis-Audit-Tests](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration).
 
 1. Klicken Sie auf **Speichern**, um die Pipeline zu speichern.
 
-Bei Ausführung der Pipeline werden für Erlebnis-Audit konfigurierte Pfade basierend auf Leistungs-, Zugänglichkeits-, SEO-, Best Practices- und PWA-Tests gesendet und ausgewertet. Weitere Einzelheiten finden Sie unter [Grundlegendes zu den Ergebnissen eines Erlebnis-Audits](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+Bei Ausführung der Pipeline werden für Erlebnis-Audit konfigurierte Pfade basierend auf Leistungs-, Zugänglichkeits-, SEO-, Best Practices- und PWA-Tests gesendet und ausgewertet. Weitere Einzelheiten finden Sie unter [Grundlegendes zu den Ergebnissen eines Erlebnis-Audits](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
@@ -119,9 +123,10 @@ Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können 
 Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie sich dazu entscheiden, einen der folgenden Code-Typen **einzuschließen**:
 
 * **Konfig**: Konfigurieren Sie Einstellungen für verschiedene Funktionen in Ihrer AEM-Umgebung.
-   * Eine Liste der unterstützten Konfigurationen, einschließlich Protokollweiterleitung, bereinigungsbezogener Wartungsaufgaben und verschiedener CDN-Konfigurationen, sowie Informationen zu deren ordnungsgemäßer Bereitstellung im Repository finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md).
-   * Wenn Sie eine gezielte Bereitstellungs-Pipeline ausführen, werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert sind, die in der Pipeline definiert sind.
+   * Unter [Verwenden von Konfigurations](/help/operations/config-pipeline.md)Pipelines“ finden Sie eine Liste der unterstützten Konfigurationen, darunter Protokollweiterleitung, Bereinigungsaufgaben und verschiedene CDN-Konfigurationen. Außerdem erfahren Sie, wie Sie diese in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+   * Beim Ausführen einer zielgerichteten Bereitstellungs-Pipeline werden Konfigurationen bereitgestellt, sofern sie in der Umgebung, dem Repository und der Verzweigung gespeichert sind, die in der Pipeline definiert sind.
    * Es kann immer nur eine Konfigurations-Pipeline pro Umgebung geben.
+* **Konfigurieren der Edge Delivery Services-Konfigurations**-Pipeline: Edge Delivery-Konfigurations-Pipelines verfügen über keine separaten Entwicklungs-, Staging- und Produktionsumgebungen. In AEM as a Cloud Service durchlaufen die Änderungen Entwicklungs-, Staging- und Produktionsebenen. Eine Edge Delivery-Konfigurations-Pipeline wendet ihre Konfiguration dagegen direkt auf alle in Cloud Manager registrierten Edge Delivery Sites-Domains an. Weitere Informationen finden Sie unter [Hinzufügen einer Edge Delivery-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
    * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
