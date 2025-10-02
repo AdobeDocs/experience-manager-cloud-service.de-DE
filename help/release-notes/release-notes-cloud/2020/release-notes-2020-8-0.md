@@ -140,8 +140,8 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 ### Neue Funktionen {#what-is-new-refactoring}
 
-* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere [ finden Sie unter „Git-Ressource: aio-cli-plugin-aem-cloud-service](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)migration“.
+* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere [&#x200B; finden Sie unter „Git-Ressource: aio-cli-plugin-aem-cloud-service](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)migration“.
 
-* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Weitere [ finden Sie unter „Git-Ressource: AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)Dispatcher-Konvertierer“.
+* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Weitere [&#x200B; finden Sie unter „Git-Ressource: AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)Dispatcher-Konvertierer“.
 
 * AEM Dispatcher Converter wurde in ` node.js ` neu geschrieben und in das AIO-CLI-Plug-in integriert.

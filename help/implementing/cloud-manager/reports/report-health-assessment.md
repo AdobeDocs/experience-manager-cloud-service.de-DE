@@ -27,7 +27,7 @@ Der Health Assessment Service hat folgende Aufgaben:
 
 Bei jeder Ausführung werden Probleme nach Schweregrad, Links zu Anleitungen und empfohlenen Fehlerbehebungen aufgelistet und ein PDF-Export des Berichts unterstützt. Sie können die Ansicht **Neuester Bericht** für den aktuellen Status und **vergangene Berichte)**, um Ausführungen zu vergleichen.
 
-Regeldefinitionen und Details zur [ finden Sie unter ](#ha-patterns)Konsistenzbewertungsmuster“.
+Regeldefinitionen und Details zur [&#x200B; finden Sie unter &#x200B;](#ha-patterns)Konsistenzbewertungsmuster“.
 
 ## Zugriff auf die Seite „Konsistenzbewertung“ {#access-health-assessment}
 
@@ -45,7 +45,7 @@ Regeldefinitionen und Details zur [ finden Sie unter ](#ha-patterns)Konsistenzbe
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Karte Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
 
-   * Klicken Sie im linken Menü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **** aus dem Menü aus.
+   * Klicken Sie im linken Menü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **&#x200B;**&#x200B;aus dem Menü aus.
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Seite Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
 
@@ -116,7 +116,7 @@ Regeldefinitionen und Details zur [ finden Sie unter ](#ha-patterns)Konsistenzbe
 ![Vergangene Berichte überprüfen](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
 * Klicken Sie rechts neben der Überschrift **Frühere Berichte** auf ![Pfeil nach unten oder Dropdown-Menü, um eine andere Umgebung auszuwählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), um vergangene Berichte nach Datum zu sortieren.
-* Ganz rechts neben einem Bericht auf das Symbol mit ![ Auslassungspunkten oder das Symbol Mehr ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und dann auf **Details anzeigen** oder **Herunterladen**.
+* Ganz rechts neben einem Bericht auf das Symbol mit ![&#x200B; Auslassungspunkten oder das Symbol Mehr &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und dann auf **Details anzeigen** oder **Herunterladen**.
 
 
 ## Muster der Gesundheitsbewertung {#ha-patterns}
