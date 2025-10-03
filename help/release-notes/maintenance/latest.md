@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 51%
+source-wordcount: '433'
+ht-degree: 50%
 
 ---
 
@@ -31,9 +31,9 @@ Die Funktionsaktivierung von 2025.10.0 bietet den vollen Funktionsumfang für di
 * GRANITE-56026: Verbessern Sie die API-Status-Code-Antworten für Berechtigungen.
 * GRANITE-61015: Paket `org.apache.commons.io.channels` der öffentlichen exportierten Liste hinzugefügt.
 * GRANITE-61167: Das Felix-Protokoll wurde auf die neueste OSGI-Spezifikation aktualisiert.
-* GRANITE-61167: Felix-Abhängigkeiten aktualisieren.
+* GRANITE-61167: Aktualisieren einer Reihe von Apache Felix-Abhängigkeiten.
 * GRANITE-61169: Verbessern Sie die Prüfung auf geschützte Zeichenfolgen.
-* GRANITE-61622: Sling-Abhängigkeiten aktualisieren.
+* GRANITE-61622: Aktualisieren einer Reihe von Apache Sling-Abhängigkeiten.
 * GRANITE-61663: `com.adobe.granite.repository.indexdefs-1.0.2` zum Schnellstart hinzufügen.
 * GRANITE-61811: `com.adobe.granite.repository-2.0.0` zum Schnellstart hinzufügen.
 * SITES-32014: Überwachen Sie externe Ereignisse, um Service-Registrierungen zu aktualisieren.
