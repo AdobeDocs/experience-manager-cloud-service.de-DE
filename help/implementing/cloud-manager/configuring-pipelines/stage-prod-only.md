@@ -4,19 +4,21 @@ description: Erfahren Sie, wie Sie Staging- und Produktionsbereitstellungen mith
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: f61183c43d9380900b92fe040098e2eb3155979c
+source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 48%
+source-wordcount: '1046'
+ht-degree: 49%
 
 ---
 
 # Aufspaltung von Pipelines nur für Staging und Produktion {#stage-prod-only}
+
+<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
 
 Sie können Staging- und Produktionsbereitstellungen mithilfe dedizierter Pipelines aufteilen.
 
@@ -53,7 +55,7 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 1. Klicken Sie im Fenster **Pipelines** auf **Pipeline hinzufügen**.
 
-   * Wählen Sie **Produktionsfremde Pipeline hinzufügen** aus, um [eine reine Staging-Pipeline zu &#x200B;](#stage-only).
+   * Wählen Sie **Produktionsfremde Pipeline hinzufügen** aus, um [eine reine Staging-Pipeline zu ](#stage-only).
    * Wählen Sie **Nur Produktions-Pipeline hinzufügen** aus, um [eine produktionsgeschützte Pipeline zu erstellen](#prod-only).
 
 ![Erstellen einer reinen Produktions-/Staging-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-stage-pipeline.png)
@@ -86,7 +88,7 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 1. Geben Sie im Feld **Seitenpfad** an, welche Seiten Sie überprüfen möchten, und klicken Sie dann auf **![Symbol hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Seite hinzufügen**.
 
-   Experience Audit analysiert jeden Pfad, den Sie hinzufügen, auf Leistung, Barrierefreiheit, Progressive Web Apps, Best Practices, SEO und andere Qualitätsprüfungen. Sie können mehrere Pfade hinzufügen und entfernen, indem Sie auf das Symbol ![Cross Size 400“ &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
+   Experience Audit analysiert jeden Pfad, den Sie hinzufügen, auf Leistung, Barrierefreiheit, Progressive Web Apps, Best Practices, SEO und andere Qualitätsprüfungen. Sie können mehrere Pfade hinzufügen und entfernen, indem Sie auf das Symbol ![Cross Size 400“ ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
    ![Registerkarte „Erlebnisprüfung“ im Dialogfeld „Produktionsfremde Pipeline hinzufügen“](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
@@ -132,7 +134,7 @@ In den Ausführungsdetails wird nach **Testschritten eine Schaltfläche** Build 
 
 Wenn Sie auf **Build bewerben** klicken, wird ein Dialogfeld geöffnet, in dem Sie die Ausführung der zugehörigen produktionsbezogenen Pipeline bestätigen können. Klicken Sie auf **Ausführen**, um sie zu starten.
 
-![Dialogfeld „Erstellen - Pipeline ausführen“ &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
+![Dialogfeld „Erstellen - Pipeline ausführen“ ](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
 Wenn keine vorhanden ist, werden Sie in einem Dialogfeld zur Einrichtung aufgefordert, eine zu erstellen.
 
