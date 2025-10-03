@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 39615980db6ef985d6baeb5bfd049c4418ab8da8
+source-git-commit: 105eaf079447f6e0e4829d5f9e01893b8251403f
 workflow-type: tm+mt
-source-wordcount: '6821'
+source-wordcount: '6823'
 ht-degree: 95%
 
 ---
@@ -532,8 +532,9 @@ ht-degree: 95%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+   + [Kontextuelles Experiment](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
    + [Wesentliche Änderungen in [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
