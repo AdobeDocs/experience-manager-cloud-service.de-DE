@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 89%
+source-wordcount: '1953'
+ht-degree: 86%
 
 ---
 
@@ -112,6 +112,12 @@ Durch Tippen oder Klicken auf den Programmumschalter können Sie schnell zu ande
 Wählen Sie das Symbol für Ihren Benutzer aus, um auf Ihre Kontoeinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
 
 ![Benutzereigenschaften](assets/user-properties.png)
+
+Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [ dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
+
+![Umgebungs-Umschalter](assets/environment-switcher.png)
+
+Für den universellen Editor ([ Sie über einen Vorschau-Service verfügen](/help/sites-cloud/authoring/sites-console/previewing-content.md) können Sie auch unter der Überschrift „Produkteinstellungen“ zwischen Ihrer Produktions- **der Vorschau-** wechseln.
 
 ### Die Symbolleiste des universellen Editors {#universal-editor-toolbar}
 

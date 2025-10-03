@@ -4,10 +4,10 @@ description: Dies sind die Versionshinweise für die Version 2025.10.02 des uni
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 61%
+source-wordcount: '179'
+ht-degree: 58%
 
 ---
 
@@ -22,7 +22,7 @@ Dies sind die Versionshinweise für die Version vom 2. Oktober 2025 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* Es wurde eine Schaltfläche hinzugefügt, mit der zwischen Vorschau und Produktionsumgebung gewechselt werden kann.
+* [Es wurde eine Option ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Menü **Konto** in der Experience Manager-Kopfzeilensymbolleiste hinzugefügt, um zwischen Vorschau- und Produktionsumgebung zu wechseln.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
