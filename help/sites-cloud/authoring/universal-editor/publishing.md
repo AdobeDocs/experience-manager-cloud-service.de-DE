@@ -46,7 +46,7 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
 
 >[!TIP]
 >
->Wenn Sie in der Vorschau-Umgebung veröffentlichen[ können Sie die Option im Menü **Konto** in ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Kopfzeilen-Symbolleiste von Experience Manager verwenden, um zwischen Vorschau- und Produktionsumgebung zu wechseln.
+>Wenn Sie in der Vorschau-Umgebung veröffentlichen[&#x200B; können Sie die Option im Menü **Konto** in &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Kopfzeilen-Symbolleiste von Experience Manager verwenden, um zwischen Vorschau- und Produktionsumgebung zu wechseln.
 
 >[!NOTE]
 >
