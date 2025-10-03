@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente mit einer Reihe von Met
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 42dbf6138920c4f733d7dc74dfc81504dee1e0ae
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 50%
+source-wordcount: '394'
+ht-degree: 49%
 
 ---
 
@@ -26,6 +26,8 @@ Sie können eine Vorschau Ihres Fragments anzeigen:
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
+
+Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >
@@ -67,7 +69,7 @@ Wenn die URL definiert wurde **[ist die Schaltfläche](/help/sites-cloud/adminis
 
 ## Vorschauinstanz {#preview-instance}
 
-Sie können **Fragment** Ihrer Vorschauinstanz (sowie **Veröffentlichungsinstanz) veröffentlichen und** Veröffentlichung rückgängig machen).
+Sie können **Fragment** und **Veröffentlichung rückgängig machen** in Ihrem **[Vorschau-Service](/help/headless/deployment/architecture.md)** (sowie in Ihrer Veröffentlichungsinstanz) veröffentlichen.
 
 Sie können Ihr Fragment entweder im Editor oder in der Konsole veröffentlichen.
 
