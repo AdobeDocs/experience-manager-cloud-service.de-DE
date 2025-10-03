@@ -3,14 +3,14 @@ title: Kontextuelles Experimentieren in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mit dem Experimentier-Plug-in Ihrer Site Experimentierfunktionen hinzufügen können.
 feature: Administering
 role: Admin
-source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
+source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
 
-# Überblick {#overview}
+# Kontextuelles Experimentieren in AEM as a Cloud Service {#contextual-experimentation}
 
 >[!NOTE]
 >Derzeit ist die Funktion für kontextuelle Experimente nur über das Beta-Programm verfügbar. Wenden Sie sich an den Adobe-Support oder Ihren Account Manager, um Zugriff auf das Beta-Programm zu erhalten.
@@ -31,7 +31,7 @@ Für Sites, die auf Adobe Experience Manager ausgeführt werden, gibt es das „
 
 ## Bevor Sie beginnen {#before-start}
 
-Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [&#x200B; der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
+Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [ der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
 
 Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
 
@@ -55,7 +55,7 @@ Der [Operative Telemetrie](/help/sites-cloud/administering/operational-telemetry
 
 ### Experimentkennung {#experiment-identifier}
 
-Bevor Sie beginnen, sollte jedes Experiment eine eigene Kennung für Tracking- und Analysezwecke haben. Ein guter Ausgangspunkt ist die Erstellung einer guten, eindeutigen Kennung für Ihr Experiment, die als „Experiment-ID“ bezeichnet wird. Experimente werden oft linear nummeriert oder mit ihrer Problem-ID in einem Problem-Tracker oder Management-System korreliert. Experiment-IDs verwenden häufig ein Präfix für das Projekt, z. B.: OPT-0134, EXP0004 oder CCX0076.
+Bevor Sie beginnen, sollte jedes Experiment eine eigene Kennung für Tracking- und Analysezwecke haben. Ein guter Ausgangspunkt ist die Erstellung einer guten, eindeutigen Kennung für Ihr Experiment, die als „Experiment-ID“ bezeichnet wird. Experimente werden oft linear nummeriert oder mit ihrer Problem-ID in einem Problem-Tracker oder Management-System korreliert. Experiment-IDs verwenden oft ein Präfix für das Projekt, z. B.: `OPT-0134`, `EXP0004` oder `CCX0076`.
 
 ### Erstellen einer Challenger-Seite {#create-challenger-page}
 
@@ -91,7 +91,7 @@ Siehe folgendes Beispiel:
 
 Für jedes Experiment wird der Traffic auf alle Varianten (Kontrolle und Herausforderer) aufgeteilt und automatisch auf eine gleichmäßige Verteilung eingestellt. Wenn Sie also einen Herausforderer haben, wird es automatisch eine gerade 50/50-Aufteilung zwischen Kontrolle und dem Herausforderer geben. Wenn Sie zwei Herausforderer haben, sehen Sie automatisch ein Drittel des Traffics, der der Kontrolle zugeordnet ist, und jeden Herausforderer und so weiter.
 
-Sie können die Traffic-Aufteilung außer Kraft setzen, indem Sie die Metadaten konfigurieren. Weitere Informationen zum Anpassen der in Ihren Experimenten verwendeten Metadaten finden Sie auf der folgenden [Seite](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+Sie können die Traffic-Aufteilung außer Kraft setzen, indem Sie die Metadaten konfigurieren. Weitere Informationen zum Anpassen der in Ihren Experimenten verwendeten Metadaten finden Sie auf der folgenden [Seite](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Vorschau und Staging von Experimentvarianten {#preview-stage-experiment}
 
@@ -226,7 +226,7 @@ Nachfolgend finden Sie eine Liste häufig gestellter Fragen:
 
 F: Kann ich das Aufspaltungsverhältnis zwischen den Varianten meines Experiments anpassen, zum Beispiel 10% auf Kontrolle und 90% auf den Herausforderer?
 
-Ja, das Aufspaltungsverhältnis kann über ([) &#x200B;](#configure-experiment) werden.
+Ja, das Aufspaltungsverhältnis kann über ([) ](#configure-experiment) werden.
 
 F: Kann ich sowohl mit Text als auch mit Bildern experimentieren?
 
