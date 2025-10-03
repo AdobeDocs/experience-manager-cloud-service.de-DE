@@ -140,19 +140,19 @@ Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokal
 
 ### Migrationsdienst kann nicht erreicht werden {#unable-to-reach-migration-service}
 
-Nachdem eine Aufnahme angefordert wurde, wird den Benutzenden möglicherweise eine Meldung wie die folgende angezeigt: „Der Migrations-Service in der Zielumgebung ist derzeit nicht erreichbar. Versuchen Sie es später erneut oder kontaktieren Sie den Adobe-Support.“
+Nachdem eine Aufnahme angefordert wurde, wird den Benutzenden möglicherweise eine Meldung wie die folgende angezeigt: „Der Migrationsdienst in der Zielumgebung ist derzeit nicht erreichbar. Versuchen Sie es später erneut oder kontaktieren Sie den Adobe-Support.“
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
-Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lage war, den Migrations-Service der Zielumgebung zu erreichen, um die Aufnahme zu starten. Hierfür kann es verschiedene Gründe geben.
+Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lage war, den Migrationsdienst der Zielumgebung zu erreichen, um die Aufnahme zu starten. Hierfür kann es verschiedene Gründe geben.
 
 >[!NOTE]
 > 
 > Das Feld „Migrations-Token“ wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann die Benutzerin oder der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn das Token bereitgestellt, aber die Meldung weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
 
-* AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrations-Service gelegentlich aus einer Reihe normaler Gründe neu starten. Wenn der Service gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
-* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrations-Service ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
-* Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrations-Service zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste auf die Zulassungsliste setzte während des Aufnahme- und Indizierungsprozesses zu deaktivieren, indem 0.0.0.0/0 vorübergehend zur hinzugefügt werden, während der Aufnahme- und Indizierungsprozess ausgeführt wird.
+* AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrationsdienst gelegentlich aus einer Reihe normaler Gründe neu starten. Wenn der Service gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
+* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrationsdienst ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
+* Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrationsdienst zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste auf die Zulassungsliste setzte während des Aufnahme- und Indizierungsprozesses zu deaktivieren, indem 0.0.0.0/0 vorübergehend zur hinzugefügt werden, während der Aufnahme- und Indizierungsprozess ausgeführt wird.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme oder Indizierung weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
 
 ### AEM-Versionsaktualisierungen und Aufnahmen {#aem-version-updates-and-ingestions}

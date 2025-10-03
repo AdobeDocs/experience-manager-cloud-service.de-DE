@@ -65,7 +65,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
 >abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/327075/?quality=12?learn=on&captions=ger" text=" Siehe Demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=ger" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service migrieren:
@@ -117,7 +117,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="Füllen des Migrationssatzes"
->abstract="Nach dem Erstellen eines Migrationssatzes muss er mit dem Inhalt aus der Quellinstanz gefüllt werden, die in die AEM as a Cloud Service-Umgebung verschoben werden muss. Dazu muss das Inhaltstransfer-Tool in der Quellinstanz installiert sein."
+>abstract="Nach dem Erstellen eines Migrationssatzes muss er mit dem Inhalt aus der Quellinstanz gefüllt werden, die in die AEM as a Cloud Service-Umgebung verschoben werden muss. Dazu muss das Content Transfer Tool in der Quellinstanz installiert sein."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=de" text="Extrahieren von Inhalten"
 
 Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu befüllen, müssen Sie die neueste Content Transfer Tool-Version auf Ihrer Adobe Experience Manager-Quellinstanz (AEM) installieren. In diesem Abschnitt erfahren Sie, wie Sie den Migrationssatz befüllen.

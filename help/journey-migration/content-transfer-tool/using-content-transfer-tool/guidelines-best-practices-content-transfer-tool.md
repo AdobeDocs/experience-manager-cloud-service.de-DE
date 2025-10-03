@@ -22,7 +22,7 @@ ht-degree: 100%
 >id="aemcloud_ctt_guidelines"
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de" text="Important Considerations for using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
@@ -40,7 +40,7 @@ Die folgenden Richtlinien und Best Practices gelten für die neue Version des Co
 
 * Führen Sie eine [Revisionsbereinigung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=de) und [Datenspeicher-Konsistenzprüfungen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=de) auf dem **Quell-Repository** aus, um mögliche Probleme zu identifizieren und die Größe des Repositorys zu reduzieren.
 
-* Adobe empfiehlt, in der Aufnahmephase die Aufnahme mit aktiviertem *Löschmodus* durchzuführen, in dem das vorhandene Repository (Author oder Publish) in der Zielumgebung von Adobe Experience Manager (AEM) Cloud Service gelöscht wird. Aktualisieren Sie dann mit den Migrationssatzdaten. Dieser Modus ist schneller als der Nicht-Löschmodus, bei dem der Migrationssatz zusätzlich zum aktuellen Inhalt angewendet wird.
+* Adobe empfiehlt, in der Aufnahmephase die Aufnahme mit aktiviertem *Löschmodus* durchzuführen, in dem das vorhandene Repository (Author oder Publish) in der Adobe Experience Manager (AEM) Cloud Service-Zielumgebung gelöscht wird. Aktualisieren Sie dann mit den Migrationssatzdaten. Dieser Modus ist schneller als der Nicht-Löschmodus, bei dem der Migrationssatz zusätzlich zum aktuellen Inhalt angewendet wird.
 
 * Nach Abschluss der Aktivität zum Inhaltstransfer ist in der Cloud Service-Umgebung die korrekte Projektstruktur erforderlich, um sicherzustellen, dass der Inhalt in der Cloud Service-Umgebung erfolgreich gerendert wird.
 
