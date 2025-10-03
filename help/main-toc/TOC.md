@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7c8d3e78109f7eb8f90dca5f851e354c33943450
+source-git-commit: c15200c03c86495062393927101e066391709c9b
 workflow-type: tm+mt
-source-wordcount: '6816'
+source-wordcount: '6818'
 ht-degree: 95%
 
 ---
@@ -471,6 +471,7 @@ ht-degree: 95%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analysieren der Struktur](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [Vorschau von Fragmenten](/help/sites-cloud/administering/content-fragments/preview.md)
          + [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Inhaltsfragmente mit Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -531,7 +532,7 @@ ht-degree: 95%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Überblick und neue Funktionen](/help/assets/overview.md)
@@ -629,7 +630,7 @@ ht-degree: 95%
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media-Tour: Grundlagen {#dm-journey}
          + [Teil 1: Was ist Dynamic Media – Anwendungsfälle – Wie ein Asset durch das System fließt](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [Teil 2: Anatomie einer Dynamic Media-URL – Grundlagen von Bildvorgaben – Informationen zu Bild-Sets, Rotationssets und Sets mit gemischten Medien](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [Teil 2: Anatomie einer Dynamic Media-URL – Grundlagen von Bildvorgaben – Informationen zu Bild-Sets, Rotations-Sets und Sets mit gemischten Medien](/help/assets/dynamic-media/dm-journey-part2.md)
          + [Best Practices für Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Dynamic Media Newsletter-Archiv von Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Einrichten von Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
@@ -663,7 +664,7 @@ ht-degree: 95%
       + [Bild-Sets](/help/assets/dynamic-media/image-sets.md)
       + [Panoramabilder](/help/assets/dynamic-media/panoramic-images.md)
       + [Sets für gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)
-      + [Rotationssets](/help/assets/dynamic-media/spin-sets.md)
+      + [Rotations-Sets](/help/assets/dynamic-media/spin-sets.md)
       + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
       + [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md)
       + [Interaktive Bilder](/help/assets/dynamic-media/interactive-images.md)

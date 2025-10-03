@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2459'
 ht-degree: 94%
 
 ---
@@ -132,20 +132,7 @@ Wenn Sie ein bestimmtes Modell auswählen, werden die Eigenschaften dieses Model
 * **Titel**
 * **Tags**
 * **Beschreibung**
-* **Muster für URL-Vorschau**
-
-  Inhaltsfragmentmodelle ermöglichen es Autorinnen und Autoren, ihren Inhalt in einer externen Frontend-Anwendung in der **Vorschau** anzuzeigen. Sobald der **Vorschau-Service** konfiguriert ist, können Sie die URL für die Frontend-Anwendung hinzufügen.
-
-  Die Vorschau-URL sollte diesem Muster entsprechen:
-`https://<preview_url>?param=${expression}`
-
-  Verfügbare Ausdrücke sind:
-
-   * `${contentFragment.path}`
-   * `${contentFragment.model.path}`
-   * `${contentFragment.model.name}`
-   * `${contentFragment.variation}`
-   * `${contentFragment.id}`
+* **[Muster für URL-Vorschau](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**
 
 <!-- CHECK: currently under FT -->
 <!--

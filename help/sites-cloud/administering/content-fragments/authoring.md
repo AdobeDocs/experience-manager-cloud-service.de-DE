@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
 workflow-type: tm+mt
-source-wordcount: '2823'
-ht-degree: 100%
+source-wordcount: '2778'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
 * obere Symbolleiste: für wichtige Informationen und Aktionen
    * ein Link zur Inhaltsfragmentkonsole (Startseiten-Symbol)
    * Informationen zum Modell und Ordner
-   * Links zur [Vorschau (wenn das URL-Standardmuster für die Vorschau für das Modell konfiguriert ist)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+   * Links zu [Vorschau](#preview-content-fragment), wenn das standardmäßige Vorschau-URL-Muster für das Modell konfiguriert ist
    * die Aktionen [Veröffentlichen](#publish-content-fragment) und [Veröffentlichung aufheben](#unpublish-content-fragment)
    * eine Option zum Anzeigen aller **übergeordneten Verweise** (Verknüpfungssymbol)
    * der **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** des Fragments und Informationen über die letzte Speicherung
@@ -497,14 +497,7 @@ Um eine produkt- und kontextbezogene Zusammenarbeit zu ermöglichen, stellt die 
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 
-Der Inhaltsfragmenteditor bietet Autorinnen und Autoren die Möglichkeit, die Vorschau von Bearbeitungen in einer externen Frontend-Anwendung anzuzeigen.
-
-Für die Verwendung dieser Funktion müssen Sie zunächst wie folgt vorgehen:
-
-* Arbeiten Sie mit Ihrem IT-Team zusammen, um die externe Frontend-Anwendung einzurichten, die das Inhaltsfragment rendert, indem sie die JSON-Ausgabe nutzt.
-* Wenn die externe Frontend-Anwendung eingerichtet ist, muss das **Standard-URL-Vorschaumuster** als [-Eigenschaft des entsprechenden Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties) definiert werden.
-
-Wenn die URL definiert wurde, wird die Schaltfläche **Vorschau** aktiv. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
+Der Inhaltsfragment-Editor bietet Autorinnen und Autoren die Möglichkeit, ihre Änderungen in einer externen Frontend-Anwendung in der Vorschau anzuzeigen. Dazu muss das **[Standard-URL-Muster](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** definiert sein, um die Schaltfläche **Vorschau** in der oberen Symbolleiste des Editors zu aktivieren. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
 
 ## Veröffentlichen Ihres Fragments {#publish-content-fragment}
 
