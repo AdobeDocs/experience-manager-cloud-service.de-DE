@@ -31,7 +31,7 @@ Für Sites, die auf Adobe Experience Manager ausgeführt werden, gibt es das „
 
 ## Bevor Sie beginnen {#before-start}
 
-Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [ der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
+Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [&#x200B; der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
 
 Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
 
@@ -226,7 +226,7 @@ Nachfolgend finden Sie eine Liste häufig gestellter Fragen:
 
 F: Kann ich das Aufspaltungsverhältnis zwischen den Varianten meines Experiments anpassen, zum Beispiel 10% auf Kontrolle und 90% auf den Herausforderer?
 
-Ja, das Aufspaltungsverhältnis kann über ([) ](#configure-experiment) werden.
+Ja, das Aufspaltungsverhältnis kann über ([) &#x200B;](#configure-experiment) werden.
 
 F: Kann ich sowohl mit Text als auch mit Bildern experimentieren?
 
