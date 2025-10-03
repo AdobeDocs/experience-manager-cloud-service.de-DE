@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 91%
+source-wordcount: '563'
+ht-degree: 96%
 
 ---
 
@@ -43,10 +43,6 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
    Tippen oder klicken Sie auf den Pfeil nach links neben der Überschrift **Elemente**, um zur Übersicht zurückzukehren.
 
 1. Tippen oder klicken Sie auf **Veröffentlichen**, um zu veröffentlichen, oder auf **Abbrechen**, um den Vorgang abzubrechen.
-
->[!TIP]
->
->Wenn Sie in der Vorschau-Umgebung veröffentlichen[&#x200B; können Sie die Option im Menü **Konto** in &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Kopfzeilen-Symbolleiste von Experience Manager verwenden, um zwischen Vorschau- und Produktionsumgebung zu wechseln.
 
 >[!NOTE]
 >

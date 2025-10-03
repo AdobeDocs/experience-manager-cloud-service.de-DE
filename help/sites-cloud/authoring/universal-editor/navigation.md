@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 86%
 
 ---
@@ -113,11 +113,11 @@ Wählen Sie das Symbol für Ihren Benutzer aus, um auf Ihre Kontoeinstellungen z
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
-Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [&#x200B; dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
+Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [ dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
 
 ![Umgebungs-Umschalter](assets/environment-switcher.png)
 
-Für den universellen Editor ([&#x200B; Sie über einen Vorschau-Service verfügen](/help/sites-cloud/authoring/sites-console/previewing-content.md) können Sie auch unter der Überschrift „Produkteinstellungen“ zwischen Ihrer Produktions- **der Vorschau-** wechseln.
+Für den universellen Editor gibt es unter **Produkteinstellungen** eine Option, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden Vorschauversion zu wechseln.
 
 ### Die Symbolleiste des universellen Editors {#universal-editor-toolbar}
 
@@ -159,7 +159,7 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 
 #### Rückgängig machen und wiederholen {#undo-redo}
 
-Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen. Weitere Informationen finden Sie [&#x200B; Dokument „Inhaltserstellung mit &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) universellen Editor“.
+Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen. Weitere Informationen finden Sie [ Dokument „Inhaltserstellung mit ](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) universellen Editor“.
 
 ![Symbol „Rückgängig“](assets/undo.png)
 ![Symbol „Wiederholen“](assets/redo.png)
@@ -356,7 +356,7 @@ Sie können Komponenten kopieren und einfügen, die sich in [Containern.](/help/
 >
 >Verwenden Sie den Hotkey-`Command-C` bzw. die `Command-V` zum Kopieren bzw. Einfügen.
 
-Weitere Informationen finden Sie [&#x200B; Dokument „Inhaltserstellung mit &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) universellen Editor“.
+Weitere Informationen finden Sie [ Dokument „Inhaltserstellung mit ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) universellen Editor“.
 
 #### Zusätzliche Schaltflächen {#additional-properties-panel-buttons}
 
