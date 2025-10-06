@@ -6,16 +6,20 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Integrieren der API im Regeleditor, Aufrufen von Service-Verbesserungen
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 2%
 
 ---
 
 # Integrieren der API im Regeleditor
 
-<span>Die Integration der API im Regeleditor erfolgt im Rahmen des Early-Adopter-Programms. Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.</span>
+<span>Die Integration der API im Regeleditor erfolgt im Rahmen des Early-Adopter-Programms. Sie können von Ihrer offiziellen E-Mail-ID an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern.</span>
+
+>[!NOTE]
+>
+> Der Visual Rule Editor unterstützt die API-Integration in adaptiven Forms auf der Grundlage von Kernkomponenten und Edge Delivery Services Forms.
 
 Der Visual Rule Editor in Adaptive Forms unterstützt die direkte API-Integration ohne Erstellen eines Formulardatenmodells. Sie können eine Verbindung zu einem API-Endpunkt herstellen, indem Sie entweder die API-URL (im JSON-Format) eingeben oder die Konfiguration über einen cURL-Befehl importieren. Nach der Integration kann **Aktion „Service**&quot; verwendet werden, um die API aufzurufen.
 
