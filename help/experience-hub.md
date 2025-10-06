@@ -7,7 +7,7 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 9e4f2d6424391eef846b858e78ba0ef9dc5142a1
+source-git-commit: 99107ab402b1a361ad2d56c79df8c8bcf00e8979
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 15%
@@ -18,9 +18,9 @@ ht-degree: 15%
 
 Experience Hub bietet einen zentralen Ausgangspunkt für die Verwaltung von Inhalten, Assets und Websites in Adobe Experience Manager. Experience Hub wurde entwickelt, um Ihnen ein personalisiertes Erlebnis zu bieten, und ermöglicht Ihnen eine nahtlose Navigation im AEM-Ökosystem entsprechend Ihren Rollen und Zielen. Es dient als Leitfaden und bietet wichtige Einblicke und empfohlene Maßnahmen, mit denen Sie Ihre Ziele effizient erreichen können. Mit einem klaren, personalisierten Layout stellt Experience Hub den schnellen Zugriff auf wichtige Tools sicher und unterstützt ein optimiertes und effektives Erlebnis über alle AEM-Funktionen hinweg.
 
-Hier erhalten Sie einen kurzen Überblick über den neu gestalteten Arbeitsbereich von AEM Experience Hub (2 Minuten, 39 Sekunden).
+Hier erhalten Sie einen kurzen Überblick über den neu gestalteten Arbeitsbereich von AEM Experience Hub (2 Minuten, 40 Sekunden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475201/?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->

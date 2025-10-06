@@ -5,8 +5,8 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
-workflow-type: ht
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten v
 
 ## Begrenzung der Anzahl installierter SSL-Zertifikate {#limitations}
 
-Cloud Manager unterstützt immer bis zu 50 installierte Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
+Cloud Manager unterstützt immer bis zu 70 installierte Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
 
 Wenn Sie den Grenzwert erreicht haben, überprüfen Sie Ihre Zertifikate und löschen Sie ggf. abgelaufene Zertifikate. Oder gruppieren Sie mehrere Domains im selben Zertifikat, da ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken kann.
 
