@@ -4,10 +4,10 @@ description: Dies sind die Versionshinweise für die Version 2025.10.02 des uni
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 55%
+source-wordcount: '209'
+ht-degree: 49%
 
 ---
 
@@ -18,11 +18,15 @@ Dies sind die Versionshinweise für die Version vom 2. Oktober 2025 des universe
 
 >[!TIP]
 >
+>Wenn Sie die Funktionen **kommenden** universellen Editors testen möchten, bevor sie veröffentlicht werden, lesen Sie die [Versionshinweise zum universellen Editor - Vorschau](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
 >Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
 
 ## Neue Funktionen {#what-is-new}
 
-* [Es wurde eine Option &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Menü **Konto** in der Experience Manager-Kopfzeilensymbolleiste hinzugefügt, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden Vorschauversion zu wechseln.
+* [Es wurde eine Option ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Menü **Konto** in der Experience Manager-Kopfzeilensymbolleiste hinzugefügt, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden Vorschauversion zu wechseln.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
