@@ -44,7 +44,7 @@ In AEM Cloud Service wurden Vorgänge, die die Benutzeroberfläche zuvor blockie
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 -->
 
-Sie können den Status asynchroner Aufträge im Dashboard &quot;[ Vorgänge“ ](/help/operations/asynchronous-jobs.md).
+Sie können den Status asynchroner Aufträge im Dashboard &quot;[&#x200B; Vorgänge“ &#x200B;](/help/operations/asynchronous-jobs.md).
 
 >[!NOTE]
 >
