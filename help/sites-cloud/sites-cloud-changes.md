@@ -5,10 +5,10 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 100%
+source-wordcount: '526'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,11 @@ In AEM Cloud Service wurden Vorgänge, die die Benutzeroberfläche zuvor blockie
 * Verschieben von Seiten
 * Rollout von Seiten
 
-Der Initiator solcher Aktionen kann ihren Status in einer neuen Benutzeroberfläche unter `/mnt/overlay/dam/gui/content/asyncjobs.html` überprüfen.
+<!--
+The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+-->
+
+Sie können den Status asynchroner Aufträge im Dashboard &quot;[ Vorgänge“ ](/help/operations/asynchronous-jobs.md).
 
 >[!NOTE]
 >
