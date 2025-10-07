@@ -4,12 +4,13 @@ description: Erfahren Sie, wie Sie die AEM Developer Tools für Eclipse verwende
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
+source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 99%
+source-wordcount: '1228'
+ht-degree: 47%
 
 ---
+
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
@@ -31,25 +32,24 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
 Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
-* Laden Sie die [Eclipse-IDE für Enterprise Java™-Entwicklerinnen und -Entwickler](https://www.eclipse.org/downloads/packages/) herunter und installieren Sie sie.
-* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre Konfigurationsdatei `eclipse.ini` bearbeiten, wie in den [häufig gestellten Fragen zu Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
+* Herunterladen und Installieren von [Eclipse IDE for Enterprise Java and Web Developers.](https://www.eclipse.org/downloads/packages/)
+   * Die Version 1.4.0 von AEM Developer Tools for Eclipse ist mit Eclipse 2022-12 (4.26) oder höher kompatibel und erfordert die Ausführung von Java 17 oder höher.
+* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei bearbeiten, wie in den häufig gestellten Fragen zu [ beschrieben](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
->Unter macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
+>In macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini` zu finden.
 
 ## Installieren der AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, können Sie das Plug-in wie folgt installieren:
+Wenn Sie die oben genannten [Anforderungen](#requirements) erfüllt haben, können Sie das Plug-in für Entwickler-Tools wie folgt installieren:
 
 1. Durchsuchen Sie die [AEM Developer Tools-Website](https://eclipse.adobe.com/).
 
-<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
-<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
-
 1. Kopieren Sie den **Installations-Link**.
 
-   Alternativ können Sie auch ein Archiv herunterladen, anstatt den Installations-Link zu verwenden. Diese Methode ermöglicht eine Offline-Installation, aber Sie erhalten auf diese Weise keine automatischen Update-Benachrichtigungen.
+   * Alternativ können Sie ein Archiv herunterladen, anstatt den Installations-Link zu verwenden.
+   * Diese Methode ermöglicht eine Offline-Installation, Sie erhalten jedoch keine automatischen Aktualisierungsbenachrichtigungen.
 
 1. Öffnen Sie in Eclipse das Menü **Hilfe**.
 1. Klicken Sie auf **Neue Software installieren**.
@@ -59,15 +59,17 @@ Sobald die oben genannten [Voraussetzungen](#requirements) erfüllt sind, könne
 1. Klicken Sie auf **Hinzufügen**.
 1. Prüfen Sie die beiden Plug-ins für **AEM** und **Sling**.
 1. Klicken Sie auf **Weiter**.
-1. Klicken Sie im Fenster **Installationsdetails** erneut auf **Weiter**.
+1. Überprüfen Sie im Fenster **Installationsdetails** die zu installierenden Elemente und klicken Sie erneut **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
+1. Wählen Sie **angezeigten Dialogfeld** Trust Authorities“ die `https://eclipse.adobe.com` Behörde/Site aus und klicken Sie auf **Trust Selected**.
+1. Wählen Sie im **Trust Artifacts** angezeigten Dialogfeld die Code-Unterzeichner aus und klicken Sie auf **Trust Selected**.
 1. Klicken Sie auf **Jetzt neu starten**, um Eclipse neu zu starten.
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 
-In Eclipse bestimmt eine Perspektive die innerhalb eines Fensters verfügbaren Aktionen und Ansichten und ermöglicht eine aufgabenorientierte Interaktion mit Ressourcen in Eclipse. Weitere Informationen zur Perspektive finden Sie in der [Eclipse-Dokumentation](https://help.eclipse.org/latest/index.jsp).
+In Eclipse bestimmt **Perspektive** die innerhalb eines Fensters verfügbaren Aktionen und Ansichten und ermöglicht eine aufgabenorientierte Interaktion mit Ressourcen in Eclipse. Weitere Informationen zu Perspektiven finden Sie in der [Eclipse-Dokumentation.](https://help.eclipse.org/latest/index.jsp).
 
-_Experience Manager Developer Tools for Eclipse_ bieten eine AEM-Perspektive, die Ihnen volle Kontrolle über Ihre AEM-Projekte und -Instanzen bietet. So öffnen Sie die AEM-Perspektive:
+Die _Experience Manager-Entwicklungs-Tools für Eclipse_ bieten eine AEM-Perspektive, die Ihnen volle Kontrolle über Ihre AEM-Projekte und -Instanzen bietet. So öffnen Sie die AEM-Perspektive:
 
 1. Wählen Sie in der Eclipse-Menüleiste **Fenster** > **Perspektive** > **Perspektive öffnen** > **Andere** aus.
 1. Wählen Sie im Dialogfeld **AEM** aus und klicken Sie auf **Öffnen**.
@@ -76,7 +78,7 @@ _Experience Manager Developer Tools for Eclipse_ bieten eine AEM-Perspektive, di
 
 ## Multi-Modul-Beispielprojekt {#sample-multi-module-project}
 
-_Experience Manager Developer Tools for Eclipse_ enthalten ein Beispielprojekt mit mehreren Modulen, das Ihnen den Einstieg in das Projekt-Setup von Eclipse erleichtert. Es dient auch als Best-Practice-Leitfaden für verschiedene AEM-Funktionen. [Erfahren Sie mehr über den Projektarchetyp](https://github.com/adobe/aem-project-archetype).
+Die _Experience Manager Developer Tools for Eclipse_ enthalten ein Beispielprojekt mit mehreren Modulen, das Ihnen den Einstieg in das Projekt-Setup von Eclipse erleichtert. Es dient auch als Best-Practice-Leitfaden für mehrere AEM-Funktionen, die den [AEM-Projektarchetyp nutzen.](https://github.com/adobe/aem-project-archetype)
 
 Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
@@ -88,11 +90,11 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
    >[!NOTE]
    >
-   >Dieser Schritt kann einen Moment dauern, da m2eclipse die Archetypkataloge scannen muss.
+   >Dieser Schritt kann einen Moment dauern, da [m2eclipse](https://eclipse.dev/m2e/) die Archetypkataloge scannen muss.
 
-1. Wählen Sie im Menü `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` aus und klicken Sie dann auf **Weiter**.
+1. `com.adobe.aem : aem-project-archetype : <highest-number>` sollte automatisch in der Dropdown-Liste **Archetyp** ausgewählt werden. Wählen Sie bei Bedarf eine frühere Version aus. Klicken Sie auf **Weiter**.
 
-   ![Auswählen der Archetypversion &#x200B;](assets/select-archetype.png)
+   ![Auswählen der Archetypversion ](assets/select-archetype.png)
 
 1. Geben Sie in die folgenden Felder Daten für das Beispielprojekt ein:
 
@@ -107,48 +109,56 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
 1. Klicken Sie auf **Weiter**.
 
-1. Anschließend konfigurieren Sie einen AEM-Server, mit dem sich Eclipse verbindet.
-
-   Um die Debugger-Funktion zu verwenden, müssen Sie AEM im Debugging-Modus starten. Dies kann z. B. erreicht werden, indem Sie Folgendes zur Befehlszeile hinzufügen:
-
-   ```text
-       -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
-   ```
+1. Konfigurieren Sie einen AEM-Server, mit dem sich Eclipse verbindet, indem Sie **Neuen Server einrichten** auswählen und einen Servernamen und die erforderlichen Verbindungsdetails angeben.
 
    ![Herstellen einer Verbindung zum AEM-Server](assets/connect-server.png)
 
-1. Klicken Sie auf **Beenden**. Die Projektstruktur wird erstellt.
+   * Um die Debugger-Funktion verwenden zu können, müssen Sie AEM im Debugging-Modus starten, indem Sie den `-agentlib` angeben, z. B.:
 
-   >[!NOTE]
+   ```text
+   $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar
+   ```
+
+   >[!TIP]
    >
-   >Bei einer Neuinstallation (genauer gesagt: wenn die Abhängigkeiten von Maven noch nie heruntergeladen wurden) wird das Projekt möglicherweise mit Fehlern erstellt. Folgen Sie in diesem Fall den Anweisungen unter [Beheben einer ungültigen Projektdefinition](#resolving-invalid-project-definition).
+   >Weitere Informationen zum Debugging Ihres auf einer lokalen AEM-SDK ausgeführten Projekts finden Sie im Dokument [Remote-Debugging der AEM-SDK.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+
+1. Klicken Sie auf **Beenden**.
+
+Die Projektstruktur wird erstellt. Es kann einen Moment dauern, bis die erforderlichen Artefakte zum Projekt heruntergeladen sind.
+
+>[!NOTE]
+>
+>Bei einer Neuinstallation oder wenn die Maven-Abhängigkeiten noch nicht heruntergeladen wurden, meldet Eclipse möglicherweise, dass das Projekt mit Fehlern erstellt wurde. Folgen Sie in diesem Fall den Anweisungen im Abschnitt [Beheben einer ungültigen Projektdefinition.](#resolving-invalid-project-definition)
 
 ## Importieren vorhandener Projekte {#how-to-import-existing-projects}
 
-Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre Anforderungen erstellen:
+Verwenden Sie die Funktion **Neues Projekt**, um die grundlegende Projektstruktur zu erstellen.
 
-1. Folgen Sie den Anweisungen, um ein [Multi-Modul-Beispielprojekt](#sample-multi-module-project) zu erstellen, und es werden die folgenden Projekte für Sie erstellt, die eine sinnvolle Trennung der Belange ermöglichen:
+1. Befolgen Sie die Anweisungen, um ein [Multi-Modul-Beispielprojekt“ zu erstellen](#sample-multi-module-project) das eine grundlegende Projektstruktur mit einer sinnvollen Trennung der Belange erstellt:
 
    * `PROJECT.ui.apps` für `/apps`- und `/etc`-Inhalte
    * `PROJECT.ui.content` für `/content`, der erstellt wird
-   * `PROJECT.core` für Java™-Bundles (diese werden relevant, sobald Sie Java™-Code hinzufügen möchten)
+   * `PROJECT.core` für Java-Bundles
    * `PROJECT.it.launcher` und `PROJECT.it.tests` für Integrationstests
 
 1. Ersetzen Sie den Inhalt Ihres `PROJECT.ui.apps`-Projekts durch die Ordner `apps` und `etc` Ihres Pakets:
 
-   1. Erweitern Sie im Bedienfeld „Projekt-Explorer“ `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
+   1. Erweitern Sie im **Projekt** Explorer-Bedienfeld `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
    1. Klicken Sie mit der rechten Maustaste auf den Ordner `apps` und wählen Sie **Anzeigen in** > **System-Explorer** aus.
-   1. Löschen Sie die Ordner `apps` und `etc`, die jetzt angezeigt werden sollten, und platzieren Sie hier die Ordner `apps` und `etc` Ihres Inhaltspakets.
+   1. Löschen Sie die `apps` und `etc` dort.
+   1. Platzieren Sie die `apps` und `etc` Ordner Ihres Inhaltspakets am selben Speicherort.
    1. Klicken Sie in Eclipse mit der rechten Maustaste auf das Projekt `PROJECT.ui.apps` und wählen Sie **Aktualisieren** aus.
 
 1. Führen Sie dann dasselbe für `PROJECT.ui.content` aus und ersetzen Sie den Inhaltsordner durch den Ordner aus Ihren Paketen:
 
-   1. Erweitern Sie im Bedienfeld „Projekt-Explorer“ `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
+   1. Erweitern Sie im **Projekt** Explorer-Bedienfeld `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
    1. Klicken Sie mit der rechten Maustaste auf den unteren Inhaltsordner und wählen Sie **Anzeigen in** > **System-Explorer** aus.
-   1. Löschen Sie die Inhaltsordner, der jetzt angezeigt werden sollte, und platzieren Sie hier den Inhaltsordner Ihres Inhaltspakets.
+   1. Löschen Sie den Inhaltsordner dort.
+   1. Platzieren Sie den Inhaltsordner Ihres Inhaltspakets am selben Speicherort.
    1. Klicken Sie in Eclipse mit der rechten Maustaste auf das Projekt `PROJECT.ui.content` und wählen Sie **Aktualisieren** aus.
 
-1. Jetzt müssen Sie die `filter.xml`-Dateien dieser beiden Projekte aktualisieren, damit sie dem Inhalt Ihres Inhaltspakets entsprechen. Öffnen Sie dazu die Datei `META-INF/vault/filter.xml` Ihres Inhaltspakets in einem gesonderten Text-/Code-Editor.
+1. Aktualisieren Sie die `filter.xml` dieser beiden Projekte entsprechend dem Inhalt Ihres Inhaltspakets, indem Sie die `META-INF/vault/filter.xml` Datei Ihres Inhaltspakets in einem separaten Text-/Code-Editor öffnen.
 
    * Dies ist ein Beispiel dafür, wie Ihre Datei `filter.xml`aussehen kann:
 
@@ -164,7 +174,7 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
    </workspaceFilter>
    ```
 
-1. Für den Inhalt Ihres Pakets, der in zwei Projekte aufgeteilt wurde, müssen Sie diese Filterregeln ebenfalls in zwei Teile aufteilen und die `filter.xml`-Dateien der beiden Projekte entsprechend aktualisieren.
+1. Für den Inhalt Ihres Pakets, der in zwei Projekte aufgeteilt wurde, müssen Sie diese Filterregeln ebenfalls in zwei Teile aufteilen und die `filter.xml` der beiden Projekte entsprechend aktualisieren.
 
    1. Öffnen Sie in Eclipse `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
    1. Ersetzen Sie den Inhalt des `<workspaceFilter>`-Elements durch die Regeln Ihres Pakets, die mit `/apps` und `/etc` beginnen.
@@ -194,10 +204,11 @@ Mit der Funktion **Neues Projekt** können Sie die richtige Struktur für Ihre A
 
 1. Denken Sie daran, alle Änderungen zu speichern. Sie können diesen neuen Inhalt jetzt mit Ihrer AEM-Instanz synchronisieren.
 
-1. Stellen Sie im Bedienfeld „Server“ sicher, dass die Verbindung hergestellt wurde. Andernfalls starten Sie sie.
+1. Vergewissern Sie **Bedienfeld** Server“, dass Ihre Verbindung gestartet wurde. Falls nicht, starten Sie sie.
+
 1. Klicken Sie auf das Symbol **Bereinigen und veröffentlichen**.
 
-Nach Abschluss des Vorgangs sollte das Paket auf Ihrer Instanz ausgeführt und beim Speichern alle Änderungen automatisch mit der Instanz synchronisiert werden.
+Danach sollte Ihr Paket auf Ihrer Instanz ausgeführt werden. Beim Speichern werden alle Änderungen automatisch mit der Instanz synchronisiert.
 
 Wenn Sie ein Paket aus Ihrem Projekt neu erstellen möchten, klicken Sie mit der rechten Maustaste auf `PROJECT.ui.apps` oder `PROJECT.ui.content` und wählen Sie **Ausführen als** > **Maven-Installation** aus.
 
@@ -219,11 +230,11 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 ## Weitere Informationen {#more-information}
 
-Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
+Die offizielle Website Apache Sling IDE tooling for Eclipse bietet nützliche zusätzliche Informationen:
 
-* Das Benutzerhandbuch[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html) zu **Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
-* Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
-* Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
+* Das [**Benutzerhandbuch zu Apache Sling IDE-Tooling** Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Bereitstellungsfunktionen.
+* [Fehlerbehebung für Apache Sling-IDE-Tools](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
 Die folgende offizielle [Eclipse](https://www.eclipse.org/)-Dokumentation kann dabei helfen, Ihre Umgebung einzurichten:
 
