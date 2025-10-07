@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Integrieren der API im Regeleditor, Aufrufen von Service-Verbesserungen
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 2%
+source-wordcount: '1027'
+ht-degree: 3%
 
 ---
 
@@ -19,17 +19,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Der Visual Rule Editor unterstützt die API-Integration in adaptiven Forms auf der Grundlage von Kernkomponenten und Edge Delivery Services Forms.
+> Der Visual Rule Editor unterstützt die API-Integration in adaptiven Forms auf der Grundlage von Kernkomponenten und [Edge Delivery Services Forms, die im universellen Editor erstellt wurden](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 Der Visual Rule Editor in Adaptive Forms unterstützt die direkte API-Integration ohne Erstellen eines Formulardatenmodells. Sie können eine Verbindung zu einem API-Endpunkt herstellen, indem Sie entweder die API-URL (im JSON-Format) eingeben oder die Konfiguration über einen cURL-Befehl importieren. Nach der Integration kann **Aktion „Service**&quot; verwendet werden, um die API aufzurufen.
 
 Formularfelder können direkt den Eingabeparametern zugeordnet werden, die in der API-Konfiguration definiert sind. Ebenso können Ausgabeparameter mithilfe der Option **Ereignis-Payload“ für die entsprechende API-Antwort Formularfeldern** werden.
 
 Darüber hinaus können Sie mit dem visuellen Regeleditor beim Aufrufen **Services** Erfolgs **und** Fehlerhandler“ definieren. Erfolgs-Handler geben die Aktionen an, die nach einem erfolgreichen API-Aufruf ausgeführt werden sollen, während Fehler-Handler definieren, wie das Formular auf einen Fehler reagieren soll.
-
->[!NOTE]
->
-> Die API-Integration im Regeleditor gilt auch für im universellen Editor erstellte [Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Vergleich: API-Integrationsmethoden
 
@@ -202,7 +198,7 @@ Im obigen Code verwaltet die Funktion **retryHandler** API-Anfragen mit automati
 
 >[!NOTE]
 >
-> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage &#x200B;](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
+> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage ](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
 
 ## Häufig gestellte Fragen
 
