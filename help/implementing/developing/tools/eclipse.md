@@ -92,7 +92,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
 1. Wählen Sie im Menü `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` aus und klicken Sie dann auf **Weiter**.
 
-   ![Auswählen der Archetypversion ](assets/select-archetype.png)
+   ![Auswählen der Archetypversion &#x200B;](assets/select-archetype.png)
 
 1. Geben Sie in die folgenden Felder Daten für das Beispielprojekt ein:
 
@@ -221,7 +221,7 @@ Eclipse lädt die erforderlichen Abhängigkeiten herunter. Das kann einen Moment
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
+* Das Benutzerhandbuch[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html) zu **Apache Sling IDE-Tooling für Eclipse** führt Sie durch die allgemeinen Konzepte, Server-Integrationen und Bereitstellungsfunktionen, die von AEM Developer Tools unterstützt werden.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
