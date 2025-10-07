@@ -198,7 +198,7 @@ Im obigen Code verwaltet die Funktion **retryHandler** API-Anfragen mit automati
 
 >[!NOTE]
 >
-> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage ](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
+> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage &#x200B;](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
 
 ## Häufig gestellte Fragen
 
