@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
+source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 89%
@@ -212,7 +212,7 @@ Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte 
 
 ### Kopieren und Einfügen {#copy-paste}
 
-Sie können Komponenten kopieren und einfügen, die sich in [Containern befinden.](/help/implementing/universal-editor/field-types.md#container) Dies ist nur innerhalb derselben Seite möglich und wenn der [Ziel-Container das Einfügen der Komponente zulässt.](/help/implementing/universal-editor/filtering.md)
+Sie können Komponenten innerhalb von [Containern](/help/implementing/universal-editor/field-types.md#container) auf derselben Browser-Registerkarte kopieren und einfügen. Dies ist nur möglich, wenn [Ziel-Container über keine Filter verfügt.](/help/implementing/universal-editor/filtering.md)
 
 ![Symbol „Kopieren“](assets/copy.png)
 ![Symbol „Einfügen](assets/paste.png)

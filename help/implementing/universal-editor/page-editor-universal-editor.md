@@ -4,9 +4,9 @@ description: Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der un
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 99%
 
 ---
@@ -60,7 +60,7 @@ Da die Funktionslücke zwischen den beiden Editoren ständig kleiner wird, infor
 | [Varianten generieren](/help/generative-ai/generate-variations.md) | [!BADGE Nicht verfügbar]{type=Negative} |  | [!BADGE Verfügbar]{type=Positive} | [Verfügbar als Erweiterung](/help/implementing/universal-editor/extending.md) |
 | Neuen Block einfügen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | Block neu anordnen | [!BADGE Verfügbar]{type=Positive} | Möglich mit Drag-and-Drop im Kontext, aber nicht im Seiten-Panel „Baumansicht“ | [!BADGE Verfügbar]{type=Positive} | Möglich per Drag-and-Drop im Seiten-Panel „Baumansicht“, aber noch nicht im Kontext (geplant) |
-| Block ausschneiden/kopieren/einfügen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Nicht verfügbar]{type=Negative} | Geplant |
+| Block ausschneiden/kopieren/einfügen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | Stile anwenden | [!BADGE Verfügbar]{type=Positive} | Stile können mithilfe des [Stilsystems](/help/sites-cloud/authoring/page-editor/style-system.md) auf  Komponenten angewendet werden. | [!BADGE Verfügbar]{type=Positive} | Stile können mit den Eigenschaften von regulären Komponenten (oder Inhaltsfragmenten) angewendet werden. Der universelle Editor verfügt nicht über dieselbe Stilauswahl. Sie können jedoch mit einem multiselect-Widget ein sehr ähnliches Benutzererlebnis erzielen. |
 | Layout anwenden | [!BADGE Verfügbar]{type=Positive} | Sites muss das [responsive Raster von AEM](/help/implementing/developing/introduction/responsive-design.md) implementieren, damit Autorinnen und Autoren die Größe von Komponenten über drei vordefinierte Haltepunkte hinweg ändern können. | [!BADGE Verfügbar]{type=Positive} | Layouts können mit Eigenschaften von regulären Komponenten (oder Inhaltsfragmenten) angewendet werden, das responsive Raster wird jedoch nicht unterstützt. |
 | Rückgängig/Wiederholen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |

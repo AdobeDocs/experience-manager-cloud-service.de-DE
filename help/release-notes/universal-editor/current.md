@@ -4,10 +4,10 @@ description: Dies sind die Versionshinweise für die Version 2025.10.02 des uni
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 49%
+source-wordcount: '189'
+ht-degree: 44%
 
 ---
 
@@ -26,7 +26,7 @@ Dies sind die Versionshinweise für die Version vom 2. Oktober 2025 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* [Es wurde eine Option &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Menü **Konto** in der Experience Manager-Kopfzeilensymbolleiste hinzugefügt, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden Vorschauversion zu wechseln.
+* [Es wurde eine Option ](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Menü **Konto** in der Experience Manager-Kopfzeilensymbolleiste hinzugefügt, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden Vorschauversion zu wechseln.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -35,10 +35,6 @@ Wenn Sie diese kommenden Funktionen testen und Ihr Feedback teilen möchten, sen
 ### Neuer RTE {#new-rte}
 
 Der neue ProseMirror RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten Panel verfügbar. [Dieser RTE bietet flexible Konfigurationsoptionen.](/help/implementing/universal-editor/configure-rte.md)
-
-### Kopieren und Einfügen über Seiten hinweg {#copy-paste}
-
-Kopieren und Einfügen ist jetzt auch über Seiten hinweg möglich (also nicht mehr nur innerhalb derselben Seite).
 
 ## Andere Verbesserungen {#other-improvements}
 
