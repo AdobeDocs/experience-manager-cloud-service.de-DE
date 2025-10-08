@@ -4,10 +4,10 @@ description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie Ressourcenpfade p
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '630'
-ht-degree: 100%
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 92%
 
 ---
 
@@ -42,7 +42,11 @@ Als Referenz ist die standardmäßige OSGi-Konfiguration für `com.day.cq.common
 >
 >Das Bereitstellen einer benutzerdefinierten Datei `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` für AEM as a Cloud Service, die eine dieser standardmäßigen Domain-Zuordnungen auslässt, kann zu unvorhersehbarem Anwendungsverhalten führen.
 
-Um die Werte `preview` und `publish` zu überschreiben, verwenden Sie Cloud Manager-Umgebungsvariablen, wie im Artikel [Konfigurieren von OSGi für AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) beschrieben, und legen Sie die vordefinierten Variablen `AEM_CDN_DOMAIN_PUBLISH` und `AEM_CDN_DOMAIN_PREVIEW` fest.
+Definieren oder überschreiben Sie die `EXTERNALIZER` Umgebungsvariablen (z. B. `AEM_EXTERNALIZER_AUTHOR`) in Cloud Manager nicht. Wenn Sie stattdessen die `publish`- oder `preview`-Domain-Werte überschreiben müssen, definieren und verwenden Sie die Umgebungsvariablen `AEM_CDN_DOMAIN_PUBLISH` und `AEM_CDN_DOMAIN_PREVIEW` . Diese Variablen werden beim Start automatisch den entsprechenden Feldern in der Externalizer-Konfiguration zugewiesen.
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## Konfigurieren des Externalizer-Service {#configuring-the-externalizer-service}
 
