@@ -5,9 +5,9 @@ keywords: Verwenden einer Marketo Engage-Datenquelle in adaptiven Formularen, Ve
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: ht
-source-wordcount: '797'
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -21,12 +21,6 @@ ht-degree: 100%
 Nachdem Sie die Cloud-Service-Konfiguration erstellt haben, um Marketo Engage mit einer vorhandenen AEM Forms-Version zu integrieren, können Sie die Datenquelle für Formulare konfigurieren.
 
 Durch die Konfiguration der Datenintegration können Benutzende eine Verbindung zu verschiedenen Datenquellen oder Schemata herstellen. Die Integration mit der Marketo Engage-Datenquelle und deren Verwendung in verschiedenen Formularen vereinfacht Vorgänge bei diesen Daten. Die unterstützten vorkonfigurierten Datenquellen für ein adaptives Formular finden Sie im Artikel [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md).
-
-## Aspekte beim Konfigurieren der Marketo Engage-Datenquelle für Formulare
-
-Beim Konfigurieren der Marketo Engage-Datenquelle für Formulare ist Folgendes zu berücksichtigen:
-
-* Es ist nicht möglich, Edge Delivery Services-Formulare mit Marketo Engage zu verbinden.
 
 ## Voraussetzung zur Verwendung der Marketo Engage-Datenquelle für Formulare
 

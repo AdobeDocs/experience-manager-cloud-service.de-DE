@@ -5,10 +5,10 @@ keywords: Verbinden einer Marketo-Instanz mit einem Formular , ein Formular mit 
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 22%
+source-wordcount: '1048'
+ht-degree: 21%
 
 ---
 
@@ -18,15 +18,9 @@ ht-degree: 22%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Nachdem Sie die Cloud-Service-Konfiguration für die Integration von Marketo Engage mit AEM Forms erstellt haben, können Sie ein adaptives Formular für die Integration mit [Adobe Marketo Engage konfigurieren](https://experienceleague.adobe.com/de/docs/marketo/using/home).
+Nachdem Sie die Cloud-Service-Konfiguration für die Integration von Marketo Engage mit AEM Forms erstellt haben, können Sie ein adaptives Formular für die Integration mit [Adobe Marketo Engage konfigurieren](https://experienceleague.adobe.com/en/docs/marketo/using/home).
 
 Sie können Marketo Engage mithilfe des Formular-Assistenten mit einem adaptiven Formular verbinden, wodurch der Konfigurationsprozess vereinfacht wird, indem Sie durch die einzelnen Schritte geführt werden. Dazu gehört die Auswahl von Vorlagen, Stilen und Datenfeldern sowie die Einrichtung der Datenzuordnung, um sicherzustellen, dass Ihr Formular nach der Erstellung für die Kommunikation mit Marketo Engage bereit ist. Mithilfe des Formular-Assistenten können Sie das adaptive Formular auch so konfigurieren, dass Daten bei der Übermittlung direkt an Adobe Marketo Engage gesendet werden.
-
-## Aspekte beim Konfigurieren der Marketo Engage-Datenquelle für Formulare
-
-Beim Konfigurieren der Marketo Engage-Datenquelle für Formulare ist Folgendes zu berücksichtigen:
-
-* Es ist nicht möglich, Edge Delivery Services-Formulare mit Marketo Engage zu verbinden.
 
 ## Voraussetzung für die Verbindung von Marketo Engage mit Formularen
 
@@ -38,7 +32,7 @@ Voraussetzung für die Verbindung von Marketo Engage mit Formularen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
-<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel.</span>
 
 >[!BEGINTABS]
 
@@ -180,7 +174,7 @@ Das adaptive Formular ist jetzt für die Verbindung mit der Marketo Engage-Insta
 
 ## Nächster Schritt
 
-Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/de/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
+Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
 
 ## Verwandte Artikel
 
