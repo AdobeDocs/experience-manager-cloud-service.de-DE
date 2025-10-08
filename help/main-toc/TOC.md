@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: e7f50e7da80927c9b9604f5454e11af8cd712a20
 workflow-type: tm+mt
-source-wordcount: '6830'
+source-wordcount: '6836'
 ht-degree: 95%
 
 ---
@@ -533,7 +533,7 @@ ht-degree: 95%
       + [Exportieren von Inhaltsfragmenten nach Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportieren von Experience Fragments nach Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrieren mit Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=de)
+      + [Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Operational Telemetry für AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [Kontextuelles Experiment](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
@@ -973,25 +973,28 @@ ht-degree: 95%
       + [Skriptunterstützung für HTML5-Formulare](/help/forms/scripting-support.md)
       + [Formularsatz in AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Interaktive Kommunikation {#interactive-communication}
-      + [Einführung in den Editor für interaktive Kommunikation](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-      + [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [Erstellen einer Vorlage für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Erstellen eines interaktiven Kommunikationsfragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [Erstellen der ersten interaktiven Kommunikation](/help/forms/create-your-first-communication.md)
-      + [Textfeld-Objekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
-      + [Bildobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
-      + [Bildfeldobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
-      + [Textfeld-Objekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
-      + [Numerisches Feldobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
-      + [Datums-/Uhrzeitfeldobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
-      + [Datumsfeldobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
-      + [Kontrollkästchenobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
-      + [Optionsfeldobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
-      + [Teilformularobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
-      + [Rechteckobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
-      + [Tabellenobjekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
-      + [LINE-Objekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
-      + [Barcode-Objekt im Editor für interaktive Kommunikation](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + Überblick {#overview}
+         + [Einführung in den Editor für interaktive Kommunikation](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+         + [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
+         + [Erstellen einer Vorlage für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication-template.md)
+         + [Erstellen eines interaktiven Kommunikationsfragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+         + [Einführung in die interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
+         + [Erstellen der ersten interaktiven Kommunikation](/help/forms/create-your-first-communication.md)
+      + Component {#component}
+         + [Textfeldkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
+         + [Bildkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
+         + [Bildfeldkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
+         + [Textfeldkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/text-field-component-in-interactive-communication-editor.md)
+         + [Komponente „Numerisches Feld“ im Editor für interaktive Kommunikation](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
+         + [Datums-/Uhrzeitfeld-Komponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
+         + [Datumsfeldkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
+         + [Kontrollkästchenkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/check-box-component-in-interactive-communication-editor.md)
+         + [Optionsfeldkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/radio-button-component-in-interactive-communication-editor.md)
+         + [Teilformularkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/subform-component-in-interactive-communication-editor.md)
+         + [Rechteckkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/rectangle-component-in-interactive-communication-editor.md)
+         + [Tabellenkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/table-component-in-interactive-communication-editor.md)
+         + [LINE-Komponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/line-component-in-interactive-communication-editor.md)
+         + [Barcode-Komponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/barcode-component-in-interactive-communication-editor.md)
       + [Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
       + [Regelerstellung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
       + [Interaktive Kommunikation importieren und exportieren](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
@@ -1207,7 +1210,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
       + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
