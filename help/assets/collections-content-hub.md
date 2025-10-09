@@ -3,10 +3,10 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 77%
 
 ---
 
@@ -25,6 +25,8 @@ Mit [!DNL Content Hub] können Sie öffentliche Sammlungen erstellen. Diese Samm
 * **Herunterladen**: Laden Sie die Assets herunter.
 * **Entfernen**: Entfernen Sie bestimmte Assets aus einer Sammlung.
 * **Löschen**: Löschen Sie die gesamte Sammlung.
+* **Pin/Unpin**: Sammlung anheften oder lösen.
+* **Favorit**: Sammlung als Favorit markieren.
 
 Dies ermöglicht Benutzenden, auf einfache Weise auf die verschiedenen in [!DNL Content Hub] verfügbaren Assets zuzugreifen und diese zu verwalten.
 
@@ -40,7 +42,7 @@ Sie können wählen, ob Sie [eine neue Sammlung erstellen](#create-new-collectio
 
 Führen Sie die folgenden Schritte aus, um den Zugriff beim Erstellen von Sammlungen zu steuern:
 
-1. Wechseln Sie zu Registerkarte **[!DNL Collections]** und klicken Sie auf **[!UICONTROL Sammlung erstellen]**. Das Fenster „Neue Sammlung“ wird angezeigt.
+1. Wechseln Sie zu Registerkarte **[!DNL Collections]** und klicken Sie auf **[!UICONTROL Sammlung erstellen]**. Ein neues Sammlungsfenster wird angezeigt.
 
 1. Fügen Sie **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** für die Sammlung hinzu.
 
@@ -163,5 +165,39 @@ Die ausgewählten Assets werden erfolgreich aus der Sammlung entfernt.
 
 Nur Admins und erstellende Personen können eine Sammlung löschen. Um eine Sammlung zu löschen, navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]** und klicken Sie auf die Sammlung, die gelöscht werden soll. Klicken Sie auf das Symbol ![Entfernen-Symbol](assets/delete-icon.svg), um die Sammlung zu löschen.
 
+## Sammlung anheften oder lösen {#pin-unpin-collection}
 
+Content Hub-Administratoren können Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem eigenen Abschnitt auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten. Für den Schnellzugriff können Sie eine Sammlung anheften oder entfernen, indem Sie die folgenden Schritte ausführen:
+
+1. Durchsuchen Sie die Sammlungen, die Sie anheften oder entfernen möchten.
+
+1. Klicken Sie auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL An Schnellzugriff anheften]**. Ein Bestätigungsfeld wird angezeigt.
+
+   ![PIN-Sammlung](assets/pin-collection.png)
+
+1. Klicken Sie **[!UICONTROL Pin]** zur Bestätigung. Die Warnmeldung wird angezeigt, wenn Sie eine private Sammlung anheften.
+
+   ![Bestätigen der Pin-Erfassung](assets/confirm-pin-collection.png)
+
+   Die angehefteten Sammlungen werden oben angezeigt, um einen schnellen Zugriff zu ermöglichen. Um die angeheftete Sammlung aufzuheben, klicken Sie alternativ auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Anheften]** aus.
+
+   ![Angeheftete Sammlungen anzeigen](assets/pinned-collections.png)
+
+## Sammlungen als Favoriten markieren {#favorite-collection}
+
+Sie können Sammlungen in Content Hub als Favoriten markieren, was das Organisieren und Abrufen erleichtert. Nach dem Hinzufügen sind Ihre Lieblingssammlungen bequem über die Registerkarte Favoriten auf der Content Hub-Startseite verfügbar. Darüber hinaus können Sie Assets in Favoritensammlungen suchen. Gehen Sie wie folgt vor, um Sammlungen als Favoriten zu markieren:
+
+1. Durchsuchen Sie die Sammlungen, die Sie anheften oder entfernen möchten.
+
+1. Klicken Sie auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Zu Favoriten hinzufügen]** aus, um die Sammlung als Favorit zu markieren.
+
+   ![Sammlungen als Favoriten markieren](assets/mark-favorite-collection.png)
+
+   Sammlungen, die als Favoriten markiert sind, werden jetzt auf **[!UICONTROL Registerkarte „Meine Favoriten]** angezeigt. Alternativ können Sie die Sammlungen aus &quot;**[!UICONTROL Favoriten“]**. Klicken Sie dazu auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Aus Favoriten entfernen]**.
+
+   ![Sammlung als Favorit entfernen](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[Sammlung anheften oder ](#pin-unpin-collection) und Sammlungen [als Favoriten kennzeichnen](#favorite-collection) sind Funktionen mit begrenzter Verfügbarkeit. Sie können einen Fall für den Kunden-Support von Adobe erstellen und senden, um ihn für Ihre Bereitstellung zu aktivieren.
 
