@@ -3,7 +3,7 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 77%
@@ -193,11 +193,11 @@ Sie können Sammlungen in Content Hub als Favoriten markieren, was das Organisie
 
    ![Sammlungen als Favoriten markieren](assets/mark-favorite-collection.png)
 
-   Sammlungen, die als Favoriten markiert sind, werden jetzt auf **[!UICONTROL Registerkarte „Meine Favoriten]** angezeigt. Alternativ können Sie die Sammlungen aus &quot;**[!UICONTROL Favoriten“]**. Klicken Sie dazu auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Aus Favoriten entfernen]**.
+   Als Favorit markierte Sammlungen werden jetzt auf der Registerkarte **[!UICONTROL Meine Favoriten]** angezeigt. Alternativ können Sie die Sammlungen aus &quot;**[!UICONTROL Favoriten“]**. Klicken Sie dazu auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Aus Favoriten entfernen]**.
 
    ![Sammlung als Favorit entfernen](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[Sammlung anheften oder &#x200B;](#pin-unpin-collection) und Sammlungen [als Favoriten kennzeichnen](#favorite-collection) sind Funktionen mit begrenzter Verfügbarkeit. Sie können einen Fall für den Kunden-Support von Adobe erstellen und senden, um ihn für Ihre Bereitstellung zu aktivieren.
+>[Sammlung anheften oder ](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [ Adobe-Support-Fall ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
 
