@@ -199,5 +199,5 @@ Sie können Sammlungen in Content Hub als Favoriten markieren, was das Organisie
 
 >[!NOTE]
 >
->[Sammlung anheften oder ](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [ Adobe-Support-Fall ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
+>[Sammlung anheften oder &#x200B;](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [&#x200B; Adobe-Support-Fall &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
 
