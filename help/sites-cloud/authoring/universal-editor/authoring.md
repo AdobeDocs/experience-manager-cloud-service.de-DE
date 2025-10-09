@@ -51,7 +51,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden ihre Details im Bereich [Eigenschaften“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Sie können den Text auch im Bedienfeld bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details im Bereich [Eigenschaften“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Sie können den Text auch im Bedienfeld bearbeiten.
 
 ![Bearbeiten von Text im Bedienfeld „Eigenschaften“](assets/ue-editing-text-component-rail.png)
 
@@ -95,7 +95,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * Nummerierte Liste
 * Link
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
