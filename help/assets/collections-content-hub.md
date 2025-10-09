@@ -3,9 +3,9 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 77%
 
 ---
@@ -167,7 +167,7 @@ Nur Admins und erstellende Personen können eine Sammlung löschen. Um eine Samm
 
 ## Sammlung anheften oder lösen {#pin-unpin-collection}
 
-Content Hub-Administratoren können Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem eigenen Abschnitt auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten. Für den Schnellzugriff können Sie eine Sammlung anheften oder entfernen, indem Sie die folgenden Schritte ausführen:
+Content Hub-Administratoren können Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem eigenen Abschnitt auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten. Um den Schnellzugriff zu ermöglichen, können Sie eine Sammlung mithilfe der folgenden Schritte anheften oder entfernen:
 
 1. Durchsuchen Sie die Sammlungen, die Sie anheften oder entfernen möchten.
 
@@ -187,17 +187,17 @@ Content Hub-Administratoren können Sammlungen in Content Hub anheften, um schne
 
 Sie können Sammlungen in Content Hub als Favoriten markieren, was das Organisieren und Abrufen erleichtert. Nach dem Hinzufügen sind Ihre Lieblingssammlungen bequem über die Registerkarte Favoriten auf der Content Hub-Startseite verfügbar. Darüber hinaus können Sie Assets in Favoritensammlungen suchen. Gehen Sie wie folgt vor, um Sammlungen als Favoriten zu markieren:
 
-1. Durchsuchen Sie die Sammlungen, die Sie anheften oder entfernen möchten.
+1. Durchsuchen Sie die Sammlungen, die Sie als Favoriten markieren möchten.
 
 1. Klicken Sie auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Zu Favoriten hinzufügen]** aus, um die Sammlung als Favorit zu markieren.
 
    ![Sammlungen als Favoriten markieren](assets/mark-favorite-collection.png)
 
-   Als Favorit markierte Sammlungen werden jetzt auf der Registerkarte **[!UICONTROL Meine Favoriten]** angezeigt. Alternativ können Sie die Sammlungen aus &quot;**[!UICONTROL Favoriten“]**. Klicken Sie dazu auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Aus Favoriten entfernen]**.
+   Als Favoriten markierte Sammlungen werden jetzt auf der Registerkarte **[!UICONTROL Meine Favoriten]** angezeigt. Alternativ können Sie die Sammlungen aus &quot;**[!UICONTROL Favoriten“]**. Klicken Sie dazu auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Aus Favoriten entfernen]**.
 
    ![Sammlung als Favorit entfernen](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[Sammlung anheften oder &#x200B;](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [&#x200B; Adobe-Support-Fall &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
+>[Sammlung anheften oder ](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [ Adobe-Support-Fall ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
 
