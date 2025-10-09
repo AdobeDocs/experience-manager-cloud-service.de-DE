@@ -3,9 +3,9 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: 46f0a532b350e8210bc80795a85b1cae17ff8fa1
+source-git-commit: 1194a7f9abb15ce51b5cebe0b101f9aec3af782e
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 9. Oktober 2025 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 23. Oktober 2025 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauumgebung wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -25,9 +25,11 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 >
 >Der Inhalt der aktuellen Version sowie das Veröffentlichungsdatum können sich ändern.
 
+## Künftige neue Funktionen {#what-is-new}
+
+* Es wurde Unterstützung für mehrere Felder für Aktualisierungen eingeführt.
+
 ## Anstehende Verbesserungen {#other-improvements}
 
-* Es wurde ein Problem behoben, bei dem Benutzer ein Experience Fragment nicht erneut auswählen konnten
-* Durch das Löschen einer Komponente oder eines Blocks in einer Live Copy wird die übergeordnete Vererbung nicht mehr abgebrochen.
-* Durch das Bearbeiten der Seiteneigenschaften über Seitenmetadaten in Live Copies wird die vollständige Seitenvererbung nicht mehr abgebrochen.
-* Eine kleine Regression mit Hotkeys wurde behoben.
+* Der Host in `AemContentFragmentReference` ist jetzt bereinigt.
+* Logik wurde für SSL- und Nicht-SSL-Dispatcher-Konfigurationen hinzugefügt.

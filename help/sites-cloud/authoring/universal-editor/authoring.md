@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
+source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 89%
 
 ---
@@ -51,7 +51,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden ihre Details im Bereich [Eigenschaften“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Sie können den Text auch im Bedienfeld bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details im Bereich [Eigenschaften“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Sie können den Text auch im Bedienfeld bearbeiten.
 
 ![Bearbeiten von Text im Bedienfeld „Eigenschaften“](assets/ue-editing-text-component-rail.png)
 
@@ -95,7 +95,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * Nummerierte Liste
 * Link
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -212,7 +212,7 @@ Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte 
 
 ### Kopieren und Einfügen {#copy-paste}
 
-Sie können Komponenten innerhalb von [Containern](/help/implementing/universal-editor/field-types.md#container) auf derselben Browser-Registerkarte kopieren und einfügen. Dies ist nur möglich, wenn [Ziel-Container über keine Filter verfügt.](/help/implementing/universal-editor/filtering.md)
+Sie können Komponenten innerhalb von [Containern](/help/implementing/universal-editor/field-types.md#container) auf derselben Browser-Registerkarte kopieren und einfügen. Dies ist nur möglich, wenn der Ziel-Container keine [Filter konfiguriert](/help/implementing/universal-editor/filtering.md) oder Filter hat, die das Einfügen der Komponente erlauben.
 
 ![Symbol „Kopieren“](assets/copy.png)
 ![Symbol „Einfügen](assets/paste.png)

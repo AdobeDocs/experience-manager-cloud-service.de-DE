@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.10.02
-description: Dies sind die Versionshinweise für die Version 2025.10.02 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.10.09
+description: Dies sind die Versionshinweise für die Version 2025.10.09 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
+source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 44%
+source-wordcount: '206'
+ht-degree: 40%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.10.02 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.10.09 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 2. Oktober 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version 9. Oktober 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ Dies sind die Versionshinweise für die Version vom 2. Oktober 2025 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* [Es wurde eine Option &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) Menü **Konto** in der Experience Manager-Kopfzeilensymbolleiste hinzugefügt, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden Vorschauversion zu wechseln.
+* [Kopieren und Einfügen von Komponenten](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) ist jetzt zwischen Containern mit konfigurierten Filtern möglich.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -38,4 +38,7 @@ Der neue ProseMirror RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten P
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die Speicherortleiste und ihr Text wurden in der Benutzeroberfläche besser ausgerichtet.
+* Es wurde ein Problem behoben, bei dem Benutzer ein Experience Fragment nicht erneut auswählen konnten
+* Durch das Löschen einer Komponente oder eines Blocks in einer Live Copy wird die übergeordnete Vererbung nicht mehr abgebrochen.
+* Durch das Bearbeiten der Seiteneigenschaften über Seitenmetadaten in Live Copies wird die vollständige Seitenvererbung nicht mehr abgebrochen.
+* Eine kleine Regression mit Hotkeys wurde behoben.
