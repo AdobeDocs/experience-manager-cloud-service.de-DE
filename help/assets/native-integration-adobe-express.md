@@ -4,10 +4,10 @@ description: Durch die native Integration von AEM Assets in Adobe Express könne
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
+source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 91%
+source-wordcount: '777'
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte aus, um mit der Verwendung von AEM Assets im 
 
 3. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Assets]**. Adobe Express zeigt die Liste der Repositorys an, auf die Sie Zugriff haben, zusammen mit der Liste der Assets und Ordner, die auf der Stammebene verfügbar sind.
 
-4. Durchsuchen oder suchen Sie Assets in Ihrem Repository, um sie per Drag-and-Drop auf die Arbeitsfläche zu ziehen. Sie können Assets mit verschiedenen verfügbaren Filtern filtern, wie Dateityp, MIME-Typ und Dimensionen.
+4. Suchen Sie nach Assets im Repository und ziehen Sie sie per Drag-and-Drop auf die Arbeitsfläche. Klicken Sie alternativ auf die Assets, um sie auf der Arbeitsfläche zu platzieren. Sie können Assets auch nach verschiedenen Kriterien filtern, z. B. Dateityp, MIME-Typ und Dimensionen.
 
    >[!NOTE]
    >
@@ -41,6 +41,21 @@ Führen Sie die folgenden Schritte aus, um mit der Verwendung von AEM Assets im 
 
    ![Einschließen von Assets aus dem Assets-Add-on](assets/adobe-express-native-integration.png)
 
+### Ersetzen des Bildes mithilfe des AEM-Uploads {#replace-image-using-aem-upload}
+
+Darüber hinaus können Sie die hinzugefügten Bilder mithilfe von **[!UICONTROL AEM Upload]** ersetzen. Führen Sie dazu die folgenden Schritte aus:
+
+1. Durchsuchen oder suchen von Assets und Ziehen und Ablegen auf der Arbeitsfläche.
+
+1. Wählen Sie das Bild aus, das Sie ersetzen möchten. Klicken Sie **[!UICONTROL Ersetzen]** und wählen Sie **[!UICONTROL AEM Assets]** unter verschiedenen anderen Optionen aus.
+
+   ![AEM ersetzen](assets/aem-replace.png)
+
+1. Das Bedienfeld **[!UICONTROL AEM]** Upload“ wird im linken Navigationsbereich geöffnet. Adobe Express zeigt die Liste der Repositorys an, auf die Sie zugreifen dürfen, sowie die Liste der Assets und Ordner, die auf der Stammebene verfügbar sind. Wählen Sie dort ein Asset aus, um eine Vorschau der Ersetzung auf der Arbeitsfläche anzuzeigen, und klicken Sie dann zur Bestätigung **[!UICONTROL Ersetzen]**.
+
+   >[!NOTE]
+   >
+   > SVG-Dateitypen werden nicht unterstützt.
 
 ## Speichern von Adobe Express-Projekten in AEM Assets {#save-express-projects-in-assets}
 
@@ -77,18 +92,15 @@ Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sow
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
+        <td> 65 MP (z. B. 8K x 8K oder 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 x 8000 Pixel, maximal 40 MB</td>
+        <td> 65 MP (z. B. 8K x 8K oder 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
         <td> Maximal 250 KB</td>
-    </tr>
-    <tr>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
