@@ -113,7 +113,7 @@ Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
-Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [ dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
+Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [&#x200B; dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
 
 ![Umgebungs-Umschalter](assets/environment-switcher.png)
 
