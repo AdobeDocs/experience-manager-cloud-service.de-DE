@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b6c3bfcdf5526e3cfbbcefd2791c77ef359574a7
 workflow-type: tm+mt
 source-wordcount: '6839'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 95%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
-         + [Wartungversionshinweise für 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
+         + [Wartungsversionshinweise für 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [Wartungversionshinweise für 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [Wartungversionshinweise für 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
          + [Wartungversionshinweise für 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -548,7 +548,7 @@ ht-degree: 95%
    + [Aktivieren von Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Fehlerbehebung bei AEM Assets-Problemen](/help/assets/troubleshoot-aem-assets.md)
-   + [Assets-Mitarbeiter-Benutzende](/help/assets/assets-collaborator-users.md)
+   + [Assets-Benutzende mit Status „Mitarbeiter“](/help/assets/assets-collaborator-users.md)
    + Verwalten digitaler Assets {#manage}
       + Micro-Frontend-Asset-Wähler {#asset-selector}
          + [Überblick über den Asset-Wähler](/help/assets/overview-asset-selector.md)
@@ -1013,7 +1013,7 @@ ht-degree: 95%
       + [Einführung in Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-      + [Generieren von AFP-Output mithilfe des AEM Forms-API](/help/forms/document-generation-afp-api.md)
+      + [Generieren von AFP-Output mithilfe der AEM Forms-API](/help/forms/document-generation-afp-api.md)
       + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Verwenden von Forms Designer, um Vorlagen zu erstellen](/help/forms/use-forms-designer.md)
       + [Ändern des Inhalts auf Seite Null in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -1036,7 +1036,7 @@ ht-degree: 95%
       + [Dispatcher- und CDN-Caching](/help/forms/troubleshooting-caching-performance.md)
       + [Neustarten des AEM SDK](/help/forms/restart-aem-sdk.md)
       + [Beheben von Fehlern bei der Formularerstellung](/help/forms/form-creation-failing.md)
-      + [502-Fehlerseite in benutzerdefinierter Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md)
+      + [Seite mit Fehler „502“ in benutzerdefinierter Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md)
 + KI in AEM {#ai-in-aem}
    + [Überblick](/help/ai-in-aem/overview.md)
    + KI-Assistent {#ai-assistant}
@@ -1163,11 +1163,11 @@ ht-degree: 95%
          + [Vorbefüllen von Feldern in adaptiven Formularen](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Veröffentlichen adaptiver Formulare mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Erstellen benutzerdefinierter Komponenten für ein EDS-Formular](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Fehlerbehebung für 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Fehlerbehebung für Fehler vom Typ „403 – Verboten“ bei der Formularübermittlung in Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
          + [Erstellen eines Salesforce-Lead-Objekts mithilfe der API-Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + Kaskadierende Dropdown-Liste {#cascading-drop-down-list}
             + [Einführung](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-            + [API-Integration erstellen](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+            + [Erstellen einer API-Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
             + [Formular erstellen](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
@@ -1211,7 +1211,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
       + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
@@ -1302,7 +1302,7 @@ ht-degree: 95%
          + [Verwenden von Git mit Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Verwenden mehrerer Repositorys](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Einrichten eines Entwicklungs-Teams für Unternehmen](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Pull-Anforderungsprüfungen für private Repositorys](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Pull-Request-Prüfungen für private Repositorys](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [Anmerkungen zur GitHub-Prüfung](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md)
       + CI/CD-Pipelines in Cloud Manager {#cicd-pipelines}
@@ -1548,7 +1548,7 @@ ht-degree: 95%
    + [Infrastruktur- und Service-Überwachung in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Wartungsaufgaben](/help/operations/maintenance.md)
    + [Content wiederherstellen](/help/operations/restore.md)
-   + [Bereits bereitgestellten Code wiederherstellen (Beta)](/help/operations/restore-previous-code-deployed.md)
+   + [Wiederherstellen von zuvor bereitgestelltem Code (Alpha)](/help/operations/restore-previous-code-deployed.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)
    + [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md)
    + [Entfernen des generischen Lucene-Index](/help/operations/removal-generic-lucene-index.md)

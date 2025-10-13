@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Salesforce-Lead-Objekts mithilfe der API-Integration
+title: Erstellen eines Salesforce Lead-Objekts mithilfe der API-Integration
 description: Erfahren Sie, wie Sie ein Salesforce Lead-Objekt mithilfe der API-Integration erstellen.
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
@@ -12,26 +12,26 @@ index: false
 source-git-commit: 3a09a3fa9b8fb3dacef4c900979c4cc256551941
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-# Erstellen eines Salesforce-Lead-Objekts mithilfe der API-Integration
+# Erstellen eines Salesforce Lead-Objekts mithilfe der API-Integration
 
-In diesem Anwendungsbeispiel wird erläutert, wie Sie einen Lead in Salesforce mithilfe der API-Integration erstellen. Am Ende des Prozesses können Sie:
+In diesem Anwendungsbeispiel wird erläutert, wie Sie in Salesforce ein Lead-Objekt mithilfe der API-Integration erstellen. Am Ende dieses Prozesses können Sie:
 
-Richten Sie eine [Connected App in Salesforce&quot; ein](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) um einen sicheren API-Zugriff zu ermöglichen.
+Eine [verbundene App in Salesforce](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) einrichten, um sicheren API-Zugriff zu ermöglichen.
 
-Konfigurieren Sie CORS (Cross-Origin Resource Sharing), damit in einem Webbrowser ausgeführter Code (z. B. JavaScript) mit Salesforce von einem bestimmten Ursprung kommunizieren kann, und fügen Sie der Zulassungsliste den Ursprung hinzu, wie unten dargestellt.
+CORS (Cross-Origin Resource Sharing) konfigurieren, damit in einem Webbrowser ausgeführter Code (z. B. JavaScript) mit Salesforce von einem bestimmten Ursprung kommunizieren kann. Fügen Sie den Ursprung der Zulassungsliste hinzu, wie unten dargestellt.
 
-![CORS](assets/salesforce-cors.png)
+![cors](assets/salesforce-cors.png)
 
-## Einstellungen für verbundene Anwendungen
+## Einstellungen für verbundene Apps
 
 Die folgenden Einstellungen werden in der verbundenen App verwendet. Sie können die OAuth-Bereiche je nach Ihren Anforderungen zuweisen.
 ![connected-app-settings](assets/salesforce-connected-app-settings.png)
 
-## API-Integration erstellen
+## Erstellen einer API-Integration
 
 | Name | Wert |
 |--------------------------------|------------------|
@@ -42,13 +42,13 @@ Die folgenden Einstellungen werden in der verbundenen App verwendet. Sie können
 | URL des Zugriffs-Tokens | https://`<your-domain>`/services/oauth2/token |
 | URL für aktualisiertes Token | https://`<your-domain>`/services/oauth2/token |
 | Autorisierungsumfang | api chatter_api full id openid refresh_token visualforce web |
-| Autorisierungs-Header | Autorisierungs-Träger |
+| Autorisierungs-Header | Autorisierungsträger |
 
-![API-Integration](assets/salesforce-api-integration-create-lead.png)
+![api-integration](assets/salesforce-api-integration-create-lead.png)
 
 ## Eingabe- und Ausgabeparameter
 
-Definieren Sie die Eingabeparameter für den API-Aufruf und ordnen Sie die Ausgabeparameter mithilfe der folgenden JSON zu
+Definieren Sie die Eingabeparameter für den API-Aufruf und ordnen Sie die Ausgabeparameter mithilfe der folgenden JSON zu.
 
 ```json
 {
@@ -57,19 +57,19 @@ Definieren Sie die Eingabeparameter für den API-Aufruf und ordnen Sie die Ausga
 }
 ```
 
-![Input-Output](assets/create-lead-api-integration-input-output.png)
+![input-output](assets/create-lead-api-integration-input-output.png)
 
-## Formular erstellen
+## Erstellen eines Formulars
 
-Erstellen Sie ein einfaches adaptives Formular mit dem universellen Editor, um die Details zum Lead-Objekt zu erfassen, wie unten gezeigt
+Erstellen Sie ein einfaches adaptives Formular mit dem universellen Editor, um die Details zum Lead-Objekt wie unten gezeigt zu erfassen.
 ![lead-object-form](assets/create-lead.png)
 
-Verarbeiten Sie das Klickereignis im Kontrollkästchen Lead erstellen mit dem Regeleditor. Ordnen Sie die Eingabeparameter den Werten der entsprechenden Formularobjekte zu, wie unten dargestellt. Zeigt die ID des neu erstellten Lead-Objekts im `leadid` TextField-Objekt an
-![Regel-Editor](assets/create-leade-rule-editor.png)
+Verwalten Sie das Klickereignis im Kontrollkästchen „Lead erstellen“ mithilfe des Regeleditors. Ordnen Sie die Eingabeparameter wie unten dargestellt den Werten der entsprechenden Formularobjekte zu. Die ID des neu erstellten Lead-Objekts wird im TextField-Objekt `leadid` angezeigt.
+![rule-editor](assets/create-leade-rule-editor.png)
 
 ## Testen der Integration
 
-- Vorschau des Formulars
-- Eingeben aussagekräftiger Werte
-- Aktivieren Sie das Kontrollkästchen `Create Lead` , um den API-Aufruf Trigger
-- Die Lead-ID des neu erstellten Lead-Objekts wird im `Lead ID` Textfeld angezeigt.
+- Zeigen Sie eine Vorschau des Formulars an.
+- Geben Sie einige aussagekräftige Werte ein.
+- Aktivieren Sie das Kontrollkästchen `Create Lead`, um den API-Aufruf auszulösen.
+- Die Lead-ID des neu erstellten Lead-Objekts wird im Textfeld `Lead ID` angezeigt.

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 72%
+ht-degree: 77%
 
 ---
 
@@ -65,7 +65,7 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
    ![Speichern von Assets in AEM](assets/adobe-express-share.png)
 
-2. Wählen Sie im **[!UICONTROL Bereich]** Empfohlen“ im rechten Bereich **AEM Assets** aus. Adobe Express zeigt das Dialogfeld „Hochladen“ an.
+2. Wählen Sie im rechten Bereich im Abschnitt **[!UICONTROL Empfohlen]** **AEM Assets** aus. Adobe Express zeigt das Dialogfeld „Hochladen“ an.
 
    ![Speichern von Assets in AEM](assets/adobe-express-aem.png)
 
@@ -100,11 +100,11 @@ Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sow
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
-        <td> Maximal 250 KB</td>
+        <td> Maximal 250 KB</td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
-        <td> 3840 x 3840 Pixel, maximal 200 MB</td>
+        <td> 3840 x 3840 Pixel, maximal 200 MB</td>
     </tr>
     </tbody>
 </table>
@@ -113,14 +113,14 @@ Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sow
 
 1. Für den Import und Export wird MP4 als Videodateityp unterstützt.
 
-2. Beim **MP4-** werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt.
+2. Beim **MP4-Videoimport** werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
    3. Videos with transparent backgrounds (alpha channel) are not supported.
    -->
 
-3. Für **MP4** Videoexport werden maximal 200 MB Dateigröße unterstützt. Bei Überschreiten dieses Grenzwerts wird ein Warnhinweis angezeigt, das Video auf 200 MB oder weniger zu reduzieren oder es nach dem Herunterladen manuell in den Zielordner in AEM Assets hochzuladen.
+3. Beim **MP4-Videoexport** wird eine Dateigröße von maximal 200 MB unterstützt. Bei Überschreiten dieses Grenzwerts wird ein Warnhinweis angezeigt, das Video auf 200 MB oder weniger zu reduzieren oder es nach dem Herunterladen manuell in den Zielordner in AEM Assets hochzuladen.
 
 
 

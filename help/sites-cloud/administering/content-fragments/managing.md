@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
 source-wordcount: '2920'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -141,11 +141,11 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
    * Wählen Sie das Symbol für ein bestimmtes Fragment aus:
 
-     ![Inhaltsfragmentkonsole - Symbol „Workflows“](assets/cf-managing-console-workflows-icon.png)
+     ![Inhaltsfragmentkonsole – Symbol „Workflows“](assets/cf-managing-console-workflows-icon.png)
 
-     So öffnen Sie ein Dialogfeld mit detaillierten Informationen zu Workflows (früher und aktuell) für das Fragment.:
+     So öffnen Sie ein Dialogfeld mit detaillierten Informationen zu Workflows (früheren und aktuellen) für das Fragment.:
 
-     ![Inhaltsfragmentkonsole - Dialogfeld „Workflows“](assets/cf-managing-console-workflows-dialog.png)
+     ![Inhaltsfragmentkonsole – Dialogfeld „Workflows“](assets/cf-managing-console-workflows-dialog.png)
 
 ## Aktionen {#actions}
 
@@ -307,7 +307,7 @@ FolderC
 
 Durch **Kopieren** wird eine Kopie des ausgewählten Fragments am gleichen Speicherort erstellt.
 
-* In der **Kopieren**-Aktion können Sie auswählen, ob **auch referenzierte Inhaltsfragmente kopieren**. Auf diese Weise können Sie sowohl das ausgewählte Inhaltsfragment als auch alle referenzierten Fragmente kopieren. AEM:
+* In der Aktion **Kopieren** können Sie auswählen, ob **auch referenzierte Inhaltsfragmente kopiert werden sollen**. Auf diese Weise können Sie sowohl das ausgewählte Inhaltsfragment als auch alle referenzierten Fragmente kopieren. AEM:
 
    * Erstellt eine Kopie des ausgewählten Inhaltsfragments an seinem Speicherort.
    * Erstellt Kopien aller Fragmente, auf die das ausgewählte Fragment verweist.
@@ -315,9 +315,9 @@ Durch **Kopieren** wird eine Kopie des ausgewählten Fragments am gleichen Speic
      Die [Speicherorte, in die die referenzierten Fragmente kopiert werden](#locations-that-the-referenced-fragments-are-copied-to) hängen von der ausgewählten Option ab:
 
       * **In den ausgewählten Ordner kopieren**
-Wenn diese Option aktiviert ist, werden die referenzierten Fragmente an dieselbe Position kopiert wie das ursprünglich ausgewählte Fragment.
+Wenn diese Option ausgewählt ist, werden die referenzierten Fragmente an denselben Speicherort kopiert wie das ursprünglich ausgewählte Fragment.
 
-      * **Kopie an ihren ursprünglichen Speicherort**
+      * **An ihre ursprünglichen Speicherorte kopieren**
 Die referenzierten Fragmente werden an denselben Speicherort wie das ursprünglich referenzierte Fragment kopiert. Dies ist die Standardeinstellung und wird verwendet, wenn keine Option ausgewählt ist.
 
 * Die Kopie des ausgewählten Fragments verweist auf die Kopien der referenzierten Fragmente.
@@ -328,13 +328,13 @@ Die referenzierten Fragmente werden an denselben Speicherort wie das ursprüngli
 
 ### Speicherorte, an die die referenzierten Fragmente kopiert werden {#locations-that-the-referenced-fragments-are-copied-to}
 
-Beim Kopieren von Inhaltsfragmenten können Sie mit &quot;**referenzierte Inhaltsfragmente kopieren“** den zugehörigen Optionen angeben, an welche Stelle referenzierte Fragmente kopiert werden sollen:
+Beim Kopieren von Inhaltsfragmenten können Sie mit **Referenzierte Inhaltsfragmente auch kopieren** und den zugehörigen Optionen angeben, an welchen Speicherort referenzierte Fragmente kopiert werden sollen:
 
-![Fragmente kopieren](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+![Kopieren von Fragmenten](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
 
 #### An ihre ursprünglichen Speicherorte kopieren {#copy-to-their-original-locations}
 
-Wenn Sie **An die ursprünglichen Speicherorte kopieren** auswählen, werden die referenzierten Fragmente an dieselbe Position kopiert wie das ursprünglich referenzierte Fragment. Dies ist auch die Standardaktion, wenn keine Auswahl getroffen wird.
+Wenn Sie **An ihre ursprünglichen Speicherorte kopieren** auswählen, werden die referenzierten Fragmente an denselben Speicherort kopiert wie das ursprünglich referenzierte Fragment. Dies ist auch die Standardaktion, wenn keine Auswahl getroffen wird.
 
 Wenn wir also beginnen:
 
@@ -368,7 +368,7 @@ FolderC
 
 #### In den ausgewählten Ordner kopieren {#copy-to-the-selected-folder}
 
-Wenn diese Option aktiviert ist, werden die referenzierten Fragmente an dieselbe Position kopiert wie das ursprünglich ausgewählte Fragment.
+Wenn diese Option ausgewählt ist, werden die referenzierten Fragmente an denselben Speicherort kopiert wie das ursprünglich ausgewählte Fragment.
 
 Wenn wir also beginnen:
 

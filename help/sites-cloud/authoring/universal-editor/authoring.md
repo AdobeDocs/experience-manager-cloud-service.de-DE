@@ -8,7 +8,7 @@ role: User
 source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
 workflow-type: tm+mt
 source-wordcount: '2503'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden ihre Details im Bereich [Eigenschaften“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Sie können den Text auch im Bedienfeld bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details im [Panel „Eigenschaften“](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) angezeigt. Sie können den Text auch im Bedienfeld bearbeiten.
 
 ![Bearbeiten von Text im Bedienfeld „Eigenschaften“](assets/ue-editing-text-component-rail.png)
 
@@ -95,7 +95,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * Nummerierte Liste
 * Link
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -188,7 +188,7 @@ Die ausgewählte Komponente wird gelöscht.
 
    ![Neuanordnen von Komponenten](assets/ue-reordering-components.png)
 
-1. Die gezogene Komponente wird in der Inhaltsstruktur ausgegraut, während die Einfügemarke durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente an ihrer neuen Position los, um sie dort zu platzieren.
+1. Die gezogene Komponente wird in der Inhaltsstruktur grau angezeigt, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente an ihrer neuen Position los, um sie dort zu platzieren.
 
 Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet.
 
@@ -196,37 +196,37 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 >
 >Komponenten können nur dann zwischen Containern verschoben werden, wenn der [Komponentenfilter](/help/implementing/universal-editor/filtering.md) des Ziel-Containers die ausgewählte Komponente zulässt.
 
-### Rückgängig machen und wiederholen {#undo-redo}
+### Rückgängigmachen und Wiederherstellen {#undo-redo}
 
-Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen.
+Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen.
 
 ![Symbol „Rückgängig“](assets/undo.png)
-![Symbol „Wiederholen“](assets/redo.png)
+![Symbol „Wiederherstellen“](assets/redo.png)
 
-* Das Rückgängigmachen und Wiederholen kann für Änderungen, die im Kontext vorgenommen werden, für Änderungen, die über das Bedienfeld Eigenschaften vorgenommen werden, sowie für das Hinzufügen, Duplizieren, Verschieben und Löschen von Blöcken durchgeführt werden.
+* Alle kontextbezogenen Bearbeitungen, Bearbeitungen über das Panel „Eigenschaften“ sowie das Hinzufügen, Duplizieren, Verschieben und Löschen von Blöcken können rückgängig gemacht oder wiederhergestellt werden.
 * Die Funktionen „Rückgängig“ und „Wiederherstellen“ sind auf die aktuelle Browser-Sitzung beschränkt.
 
 >[!TIP]
 >
->Verwenden Sie die Hotkey-`Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederholen.
+>Verwenden Sie den Hotkey `Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederherstellen.
 
 ### Kopieren und Einfügen {#copy-paste}
 
 Sie können Komponenten innerhalb von [Containern](/help/implementing/universal-editor/field-types.md#container) auf derselben Browser-Registerkarte kopieren und einfügen. Dies ist nur möglich, wenn der Ziel-Container keine [Filter konfiguriert](/help/implementing/universal-editor/filtering.md) oder Filter hat, die das Einfügen der Komponente erlauben.
 
 ![Symbol „Kopieren“](assets/copy.png)
-![Symbol „Einfügen](assets/paste.png)
+![Symbol „Einfügen“](assets/paste.png)
 
 1. Wählen Sie eine Komponente entweder im Editor oder in der Inhaltsstruktur aus.
-1. Das **Kopieren**-Symbol wird im Bedienfeld [Eigenschaften“ angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) tippen oder klicken Sie darauf.
-1. Das **Einfügen**-Symbol wird im Eigenschaftenbereich angezeigt.
-1. Wählen Sie die Komponente _danach_, in die Sie die kopierte Komponente einfügen möchten.
-1. Tippen oder klicken Sie auf Einfügen.
-1. Die kopierte Komponente wird (_) in_ ausgewählte Komponente eingefügt.
+1. Das Symbol **Kopieren** wird im Panel [„Eigenschaften“ angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tippen oder klicken Sie darauf.
+1. Das Symbol **Einfügen** wird im Panel „Eigenschaften“ angezeigt.
+1. Wählen Sie die Komponente aus, _nach_ der Sie die kopierte Komponente einfügen möchten.
+1. Tippen oder klicken Sie auf „Einfügen“.
+1. Die kopierte Komponente wird _nach_ der ausgewählten Komponente eingefügt.
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey-`Command-C` bzw. die `Command-V` zum Kopieren bzw. Einfügen.
+>Verwenden Sie den Hotkey `Command-C` bzw. `Command-V` zum Kopieren bzw. Einfügen.
 
 ## Vorschau von Inhalten {#previewing-content}
 

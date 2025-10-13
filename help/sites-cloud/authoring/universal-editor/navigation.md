@@ -8,7 +8,7 @@ exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -91,7 +91,7 @@ Dadurch wird die Organisation angezeigt, bei der Sie sich derzeit angemeldet hab
 
 #### Hilfezentrum {#help}
 
-Das Symbol Hilfezentrum bietet schnellen Zugriff auf Lern- und Support-Ressourcen.
+Das Symbol für das Hilfezentrum bietet Schnellzugriff auf Lern- und Support-Ressourcen.
 
 ![Hilfe](assets/help.png)
 
@@ -103,17 +103,17 @@ Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen [Ben
 
 #### Apps {#solutions}
 
-Durch Tippen oder Klicken auf den Programmumschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
+Durch Tippen oder Klicken auf den App-Umschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
 
-![App Switcher](assets/solutions.png)
+![App-Umschalter](assets/solutions.png)
 
 #### Konto {#user-properties}
 
-Wählen Sie das Symbol für Ihren Benutzer aus, um auf Ihre Kontoeinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
+Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre Kontoeinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
 
 ![Benutzereigenschaften](assets/user-properties.png)
 
-Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [&#x200B; dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
+Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [ dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
 
 ![Umgebungs-Umschalter](assets/environment-switcher.png)
 
@@ -141,7 +141,7 @@ Auf der Startseite können Sie die URL der Site eingeben, die Sie mit dem univer
 >
 >Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [für die Unterstützung des universellen Editors instrumentiert sein](/help/implementing/universal-editor/getting-started.md).
 
-Ein Abschnitt **Schnelllinks** enthält Hilferessourcen und ein Abschnitt **Zuletzt verwendet** enthält Links zu Seiten, die Sie kürzlich mit dem universellen Editor geöffnet haben.
+Der Abschnitt **Direkt-Links** enthält Hilferessourcen und der Abschnitt **Zuletzt verwendet** enthält Links zu Seiten, die Sie kürzlich mit dem universellen Editor geöffnet haben.
 
 #### Speicherortleiste {#location-bar}
 
@@ -157,26 +157,26 @@ Die Speicherortleiste zeigt die Adresse der Seite an, die Sie bearbeiten. Wähle
 >
 >Jede Seite, die Sie mit dem universellen Editor bearbeiten möchten, muss [für die Unterstützung des universellen Editors instrumentiert sein](/help/implementing/universal-editor/getting-started.md).
 
-#### Rückgängig machen und wiederholen {#undo-redo}
+#### Rückgängigmachen und Wiederherstellen {#undo-redo}
 
-Wählen Sie die Schaltflächen Rückgängig oder Wiederholen aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen. Weitere Informationen finden Sie [&#x200B; Dokument „Inhaltserstellung mit &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) universellen Editor“.
+Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen. Weitere Informationen finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo).
 
 ![Symbol „Rückgängig“](assets/undo.png)
-![Symbol „Wiederholen“](assets/redo.png)
+![Symbol „Wiederherstellen“](assets/redo.png)
 
 >[!TIP]
 >
->Verwenden Sie die Hotkey-`Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederholen.
+>Verwenden Sie den Hotkey `Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederherstellen.
 
 #### Authentifizierungs-Header {#authentication-settings}
 
-Wählen Sie das Symbol Authentifizierungskopfzeilen , wenn Sie [eine benutzerdefinierte Authentifizierungskopfzeile für lokale Entwicklungszwecke festlegen](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Wählen Sie das Symbol für die Authentifizierungs-Header aus, wenn Sie [einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke festlegen möchten](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Schaltfläche „Authentifizierungs-Header-Einstellungen“](assets/authentication-header-settings.png)
 
 #### Responsiver Modus {#emulator}
 
-Wählen Sie das Symbol Responsive Modus aus, um zu definieren, wie der universelle Editor die Seite rendert.
+Wählen Sie das Symbol für den responsiven Modus aus, um festzulegen, wie der universelle Editor die Seite rendert.
 
 ![Symbol für responsiven Modus](assets/emulator.png)
 
@@ -347,16 +347,16 @@ Durch Tippen oder Klicken auf die Schaltfläche „Löschen“ [wird die Kompone
 
 ##### Kopieren und Einfügen {#copy-paste}
 
-Sie können Komponenten kopieren und einfügen, die sich in [Containern.](/help/implementing/universal-editor/field-types.md#container)
+Sie können Komponenten kopieren und einfügen, die sich in [Containern](/help/implementing/universal-editor/field-types.md#container) befinden.
 
 ![Symbol „Kopieren“](assets/copy.png)
-![Symbol „Einfügen](assets/paste.png)
+![Symbol „Einfügen“](assets/paste.png)
 
 >[!TIP]
 >
->Verwenden Sie den Hotkey-`Command-C` bzw. die `Command-V` zum Kopieren bzw. Einfügen.
+>Verwenden Sie den Hotkey `Command-C` bzw. `Command-V` zum Kopieren bzw. Einfügen.
 
-Weitere Informationen finden Sie [&#x200B; Dokument „Inhaltserstellung mit &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) universellen Editor“.
+Weitere Informationen finden Sie im Dokument [Inhaltserstellung mit dem universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste).
 
 #### Zusätzliche Schaltflächen {#additional-properties-panel-buttons}
 

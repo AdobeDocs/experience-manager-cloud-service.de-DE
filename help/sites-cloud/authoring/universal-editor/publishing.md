@@ -8,7 +8,7 @@ role: User
 source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn Sie nach dem Erstellen von Inhalten bereit sind, Ihre Inhalte zu veröffent
 
 1. Tippen oder klicken Sie im universellen Editor auf das [Symbol **Veröffentlichen** auf der Symbolleiste des universellen Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#publish).
 1. Wenn ein [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist, können Sie auswählen, wo Sie Ihre Inhalte veröffentlichen möchten, entweder als **[Vorschau](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (falls verfügbar) oder zum **Veröffentlichen**.
-1. Im Abschnitt **Elemente** werden die in der Veröffentlichung enthaltenen Inhalte aufgelistet. Tippen oder klicken Sie auf **Anzeigen**, um die Details anzuzeigen, darunter:
+1. Im Abschnitt **Elemente** werden die Inhalte aufgelistet, die in der Veröffentlichung enthalten sind. Tippen oder klicken Sie auf **Anzeigen**, um die Details anzuzeigen, darunter:
    * **Neue** Elemente, die noch nicht veröffentlicht wurden.
    * **Geänderte** Inhalte, die veröffentlicht, aber seit der letzten Veröffentlichung geändert wurden.
    * **Veröffentlichte** Inhalte, die veröffentlicht und seit dieser Veröffentlichung nicht geändert wurden.

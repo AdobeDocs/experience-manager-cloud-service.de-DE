@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
 workflow-type: tm+mt
 source-wordcount: '2428'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -197,7 +197,7 @@ Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Si
 
 * **Name:** dependencies
 * **Typ:** String[]
-* **Values:** Der Wert der categories-Eigenschaft des cq:ClientLibraryFolder-Knotens, von dem der aktuelle Bibliotheksordner abhängt.
+* **Werte:** Der Wert der Eigenschaft „categories“ des Knotens „cq:ClientLibraryFolder“, von dem der aktuelle Bibliotheksordner abhängig ist.
 
 Beispielsweise weist `/etc/clientlibs/myclientlibs/publicmain` eine Abhängigkeit von der `cq.jquery`-Bibliothek auf. Die Seite, die die Haupt-Client-Bibliothek referenziert, erzeugt HTML-Code, der den folgenden Code enthält:
 
@@ -300,7 +300,7 @@ Sie können die Präprozessorkonfiguration pro Client-Bibliothek oder systemweit
 
 * Fügen Sie die multivalue-Eigenschaften `cssProcessor` und `jsProcessor` zum Client-Bibliotheksknoten hinzu.
 
-Die Definition der Systemstandardkonfiguration über die OSGi-Konfiguration {**} HTML Library Manager wird nicht unterstützt.** Sie gilt nur für die lokale SDK und nicht für Full-Stack-Pipeline-Ausführungen.
+Die Definition der Systemstandardkonfiguration über die OSGi-Konfiguration **HTML Library Manager** wird nicht unterstützt. Sie gilt nur für das lokale SDK und nicht für Full-Stack-Pipeline-Ausführungen.
 
 #### Format und Beispiele {#format-and-examples}
 
@@ -344,4 +344,4 @@ Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](http
 
 #### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 
-Das Festlegen des Systemstandard-Minimierers wird in AEM as a Cloud Service nicht unterstützt.
+Das Festlegen des Standardminimierers des Systems wird in AEM as a Cloud Service nicht unterstützt.

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Der Operational Telemetry-Dienst wurde für minimale Datenerfassung entwickelt. 
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`
 * Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs?lang=de`
+* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
 * Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn die Person einem Link gefolgt ist)
 * Eine zufällig generierte ID der Seitenansicht in einem Format, das dem folgenden ähnelt: `2Ac6`
 * Die Gewichtung oder der Kehrwert der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur eine von hundert Seitenansichten aufgezeichnet wird.
@@ -107,11 +107,11 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **Kann ich eine Content Security Policy mit einer Nonce verwenden?**
 
-   Die Unterstützung für operative Telemetrie enthält eine experimentelle Funktion zur Unterstützung einer Content Security Policy mit einer Nonce. Diese Funktion kann aktiviert werden, indem [eine Umgebungsvariable in Cloud Manager mit dem ](/help/implementing/cloud-manager/environment-variables.md#add-variables) `AEM_OPTEL_NONCE` auf den Wert `true` festgelegt wird. Wenn Sie dies zu einem späteren Zeitpunkt wieder deaktivieren möchten, entfernen Sie einfach diese Umgebungsvariable erneut.
+   Die Unterstützung für operative Telemetrie enthält eine experimentelle Funktion zur Unterstützung einer Inhaltssicherheitsrichtlinie mit einer Nonce. Diese Funktion kann aktiviert werden, indem [eine Umgebungsvariable in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) mit dem Namen `AEM_OPTEL_NONCE` auf den Wert `true` festgelegt wird. Wenn Sie dies zu einem späteren Zeitpunkt wieder deaktivieren möchten, entfernen Sie diese Umgebungsvariable einfach wieder.
 
    Wenn bei dieser Funktion Probleme auftreten, wenden Sie sich an den Adobe-Support.
 
-1. **Wie kann ich die Betriebstelemetrie nur für bestimmte Seiten aktivieren?**
+1. **Wie kann ich die operative Telemetrie nur für bestimmte Seiten aktivieren?**
 
-   Standardmäßig ist die operative Telemetrie für alle Seiten unter dem Ordner `/content` im Repository aktiviert. Durch [Festlegen einer Umgebungsvariablen in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) namens `AEM_OPTEL_INCLUDED_PATHS` auf eine Liste kommagetrennter Pfade im Repository wird die operative Telemetrie nur für diese Seiten aktiviert. Darüber hinaus können Sie `AEM_OPTEL_EXCLUDED_PATHS` auf eine Liste von Pfaden im Repository festlegen, die ausgeschlossen werden sollen. Mit der Kombination dieser beiden Einstellungen können Sie die Einbindung der Operationstelemetrie an Ihre Anforderungen anpassen.
+   Standardmäßig ist die operative Telemetrie für alle Seiten unter dem Ordner `/content` im Repository aktiviert. Durch [Festlegen einer Umgebungsvariablen in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) mit dem Namen `AEM_OPTEL_INCLUDED_PATHS` auf eine Liste kommagetrennter Pfade im Repository wird die operative Telemetrie nur für diese Seiten aktiviert. Darüber hinaus können Sie `AEM_OPTEL_EXCLUDED_PATHS` auf eine Liste von Pfaden im Repository festlegen, die ausgeschlossen werden sollen. Mit der Kombination dieser beiden Einstellungen können Sie die Einbindung der operativen Telemetrie an Ihre Anforderungen anpassen.
 
