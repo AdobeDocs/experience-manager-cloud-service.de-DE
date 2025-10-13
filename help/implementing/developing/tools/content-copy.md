@@ -5,9 +5,9 @@ exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1450'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 87%
 Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen auf AEM as a Cloud Service in niedrigere Umgebungen zu Testzwecken kopieren.
 
 >[!NOTE]
->Während der Kopierfluss für primären Inhalt von höheren Umgebungen in niedrigere Umgebungen erfolgt, ermöglicht eine zusätzliche Funktion - **Vorwärtsfluss** - das Kopieren aus niedrigeren produktionsfremden Umgebungen in höhere produktionsfremde Umgebungen (z. B. Entwicklung → Staging, RDE → Staging). Siehe [Einschränkungen](#limitations) für Details, einschließlich Verfügbarkeitsanforderungen.
+>Während der Kopierfluss für primären Inhalt von höheren Umgebungen in niedrigere Umgebungen erfolgt, ermöglicht die zusätzliche Funktion **Vorwärtsfluss** das Kopieren aus niedrigeren produktionsfremden Umgebungen in höhere produktionsfremde Umgebungen (z. B. Entwicklung → Staging, RDE → Staging). Siehe [Einschränkungen](#limitations) für Details, einschließlich Verfügbarkeitsanforderungen.
 
 ## Einführung {#introduction}
 
@@ -86,7 +86,7 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
 1. Sie können die angegebenen Pfade bei Bedarf bearbeiten.
 
-   1. Klicken Sie auf das X neben den ausgeschlossenen Unterpfaden, um sie zu löschen.
+   1. Klicken Sie auf das „X“ neben den ausgeschlossenen Unterpfaden, um diese zu löschen.
    1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben den Pfaden, um die Optionen **Bearbeiten** und **Löschen** anzuzeigen.
 
    ![Bearbeiten der Pfadliste](assets/add-content-set-excluded-paths.png)
@@ -108,7 +108,7 @@ Bei der Bearbeitung Ihres Content-Sets können Sie die konfigurierten Pfade erwe
 Nachdem ein Content-Set erstellt wurde, können Sie ihn zum Kopieren von Inhalten verwenden. Führen Sie die folgenden Schritte aus, damit Sie Inhalte kopieren können.
 
 >[!NOTE]
-> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [ Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
+> Verwenden Sie keine Inhaltskopie in einer Umgebung, in der gerade eine [Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) ausgeführt wird.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
@@ -195,9 +195,9 @@ Die Protokolle werden auf Ihren lokalen Computer heruntergeladen. Wenn der Downl
 
 Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkungen.
 
-* Das Werkzeug zum Kopieren von Inhalten unterstützt zwei Flussmodi:
-   1. Top-Down-Fluss - Inhalte können aus höheren Umgebungen in niedrigere Umgebungen kopiert werden (z. B. Produktion → Staging, Staging → Entwicklung/RDE).
-   2. Vorwärtsfluss (neue Funktion) - Inhalte können auch von einer niedrigeren produktionsfremden Umgebung in eine höhere produktionsfremde Umgebung kopiert werden (z. B. Entwicklungs- → Staging, RDE → Staging). Diese Funktion ist nur auf ausdrückliche Anfrage verfügbar und bleibt aktiviert, bis explizit eine Deaktivierung angefordert wird. Produktionsumgebungen sind nie gültige Ziele für den Vorwärtsfluss.
+* Das Tool zum Kopieren von Inhalten unterstützt zwei Flussmodi:
+   1. Top-Down-Fluss: Inhalte können aus höheren Umgebungen in niedrigere Umgebungen kopiert werden (z. B. Produktion → Staging, Staging → Entwicklung/RDE).
+   2. Vorwärtsfluss (neue Funktion): Inhalte können auch von einer niedrigeren produktionsfremden Umgebung in eine höhere produktionsfremde Umgebung kopiert werden (z. B. Entwicklung → Staging, RDE → Staging). Diese Funktion ist nur auf ausdrückliche Anfrage verfügbar und bleibt aktiviert, bis explizit eine Deaktivierung angefordert wird. Produktionsumgebungen sind nie gültige Ziele für den Vorwärtsfluss.
 * Inhalte können nur aus und in Authoring-Services kopiert werden.
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
 * Pro Content-Set können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.

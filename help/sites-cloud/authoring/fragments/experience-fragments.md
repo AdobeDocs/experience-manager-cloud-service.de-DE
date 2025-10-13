@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
 source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2142'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -448,13 +448,13 @@ Alternativ können Sie auch [In der Vorschau veröffentlichen](/help/sites-cloud
 
 >[!CAUTION]
 >
->Standardmäßig wird der Stammordner von Experience Fragments veröffentlicht (direkt unter `/content/experience-fragments`):
+>Standardmäßig geschieht bei der Veröffentlichung des Stammordners von Experience Fragments (direkt unter `/content/experience-fragments`) Folgendes:
 >
->* Veröffentlicht nur den Container-Ordner selbst
->* veröffentlicht keine untergeordneten Elemente
->* Hebt die Veröffentlichung bereits veröffentlichter untergeordneter Elemente auf
+>* nur der Container-Ordner selbst wird veröffentlicht
+>* keine untergeordneten Elemente werden veröffentlicht
+>* die Veröffentlichung bereits veröffentlichter untergeordneter Elemente wird aufgehoben
 >
->Für die Veröffentlichung aller Experience Fragments im Ordner muss jedes separat veröffentlicht werden.
+>Um alle Experience Fragments im Ordner zu veröffentlichen, muss jedes separat veröffentlicht werden.
 
 ## Exportieren von Experience Fragments {#exporting-experience-fragments}
 

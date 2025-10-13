@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2608'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Um Ihr neues Projekt mit integrierten Formularen erfolgreich zu starten, gehen S
 
 Die folgenden Abschnitte führen Sie im Detail durch die einzelnen Schritte, um für eine reibungslose und effiziente Projekteinrichtung zu sorgen.
 
-+++Schritt 1: Erstellen eines GitHub-Repositorys aus einer Vorlage
++++Schritt 1: Erstellen eines GitHub-Repositorys aus einer Vorlage
 
 1. **Zugriff auf die AEM Forms-Bausteinvorlage**
    - Navigieren Sie zu [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
@@ -136,7 +136,7 @@ AEM Code Sync sorgt für eine automatische Synchronisierung von Inhaltsänderung
 
 +++
 
-+++Schritt 3: AEM-Integration konfigurieren
++++Schritt 3: Konfigurieren der AEM-Integration
 
 Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository für die Inhaltssynchronisierung mit der AEM-Authoring-Umgebung.
 
@@ -193,7 +193,7 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository für die Inhaltssynchroni
 
 +++
 
-+++Schritt 4: Erstellen Sie eine AEM-Site, die mit Ihrem GitHub-Repository verbunden ist.
++++Schritt 4: Erstellen einer mit Ihrem GitHub-Repository verbundenen AEM-Site.
 
 1. **Zugriff auf die AEM Sites-Konsole**
    - Melden Sie sich bei Ihrer Authoring-Instanz in AEM as a Cloud Service an.
@@ -261,7 +261,7 @@ Die `fstab.yaml`-Datei verbindet Ihr GitHub-Repository für die Inhaltssynchroni
 
 +++
 
-+++Schritt 5: Veröffentlichen der Site
++++Schritt 5: Veröffentlichen Ihrer Site
 
 Durch das Veröffentlichen wird Ihre Site in Edge Delivery Services für globalen Zugriff verfügbar.
 
@@ -346,7 +346,7 @@ Sie werden die folgenden übergeordneten Schritte ausführen:
 3. Passen Sie ESLint-Regeln an, um die neuen Dateien und Kodierungsmuster aufzunehmen.
 4. Erstellen Sie Ihr Projekt und übertragen Sie die Änderungen in Ihr Repository.
 
-+++Schritt 1: Forms-Blockdateien kopieren
++++Schritt 1: Kopieren von Formularblockdateien
 
 1. **Navigieren Sie zu Ihrem lokalen Projekt.**
 
@@ -371,7 +371,7 @@ Sie werden die folgenden übergeordneten Schritte ausführen:
 
 +++
 
-+++Schritt 2: Aktualisieren der Komponentenkonfiguration
++++Schritt 2: Aktualisieren der Komponentenkonfiguration
 
 1. **Aktualisieren von Abschnittsmodell**
 
@@ -400,7 +400,7 @@ Sie werden die folgenden übergeordneten Schritte ausführen:
 
 +++
 
-+++Schritt 3: Konfigurieren von ESLint (optional)
++++Schritt 3: Konfigurieren von ESLint (optional)
 
 **Wozu dient dieser Schritt:** Verhindert Linting-Fehler aus formularspezifischen Dateien und konfiguriert korrekte Validierungsregeln.
 
@@ -465,7 +465,7 @@ Sie werden die folgenden übergeordneten Schritte ausführen:
 
 +++
 
-+++Schritt 4: Erstellen und bereitstellen
++++Schritt 4: Erstellen und Bereitstellen
 
 1. **Installieren von Abhängigkeiten und Aufbauen**
 
@@ -531,7 +531,7 @@ Der Prozess der Erstellung eines Formulars im universellen Editor besteht aus me
 
 Die folgenden Abschnitte werden Sie detailliert durch die einzelnen Schritte führen, um eine reibungslose und effektive Formularerstellung sicherzustellen.
 
-+++Schritt 1: Adaptiven Formularblock hinzufügen
++++Schritt 1: Hinzufügen eines adaptiven Formularblocks
 
 1. **Öffnen Ihrer Seite im universellen Editor**
    - Navigieren Sie zur **Sites**-Konsole in AEM.
@@ -553,7 +553,7 @@ Die folgenden Abschnitte werden Sie detailliert durch die einzelnen Schritte fü
 
 +++
 
-+++Schritt 2: Hinzufügen von Formularkomponenten
++++Schritt 2: Hinzufügen von Formularkomponenten
 
 1. **Navigieren zu Ihrem Formularblock**
    - Suchen Sie in der Inhaltsstruktur den Abschnitt mit dem neu hinzugefügten adaptiven Formular.
@@ -605,7 +605,7 @@ Die folgenden Abschnitte werden Sie detailliert durch die einzelnen Schritte fü
 
 +++
 
-+++Schritt 3: Formular veröffentlichen
++++Schritt 3: Veröffentlichen Ihres Formulars
 
 1. **Veröffentlichen im universellen Editor**
    - Klicken Sie im universellen Editor auf die Schaltfläche **Veröffentlichen**.
@@ -664,7 +664,7 @@ Nachdem Sie nun über ein funktionsfähiges Formular verfügen, können Sie folg
 
 In einer lokalen Entwicklungsumgebung können Sie Änderungen vornehmen und sofort anzeigen, ohne den Veröffentlichungszyklus durchlaufen zu müssen.
 
-+++Einrichten von AEM CLI und lokaler Entwicklung
++++Einrichten der AEM-CLI und lokalen Entwicklungsumgebung
 
 1. **Installieren der AEM-CLI**
 
@@ -718,7 +718,7 @@ In einer lokalen Entwicklungsumgebung können Sie Änderungen vornehmen und sofo
 
 ### Häufige Probleme und Lösungen
 
-+++GitHub-Build-Probleme
++++Build-Probleme in GitHub
 
 **Problem:** Build-Fehler oder Verknüpfungsfehler
 
@@ -762,7 +762,7 @@ Wenn „Der Pfad zum Modul &quot;/scripts/lib-franklin.js&quot; kann nicht aufge
 
 +++
 
-+++Probleme mit der Formularfunktion
++++Probleme mit der Formularfunktionalität
 
 **Problem:** Formularübermittlungen funktionieren nicht
 

@@ -5,9 +5,9 @@ exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,10 +19,10 @@ Durch das Einrichten von Cloud Manager zur Integration in Ihre privaten GitHub C
 >
 >Sie können auch die folgenden Repository-Typen mit Webhooks hinzufügen:
 >
->* GitHub Enterprise Server (selbst gehostete Version von GitHub)-Repositorys .
->* GitLab-Repositorys (sowohl `gitlab.com` als auch selbst gehostete Versionen von GitLab).
->* Bitbucket-Repositorys (sowohl `bitbucket.org` als auch Bitbucket Server, die selbst gehostete Version von BitBucket).
->* Azure DevOps-Repositorys ([dev.azure.com](http://dev.azure.com) und Self-Hosting-Versionen von Azure DevOps).
+>* GitHub Enterprise Server-Repositorys (selbst gehostete GitHub-Version).
+>* GitLab-Repositorys (sowohl `gitlab.com` als auch selbst gehostete GitLab-Versionen).
+>* Bitbucket-Repositorys (sowohl `bitbucket.org` als auch Bitbucket Server, die selbst gehostete Bitbucket-Version).
+>* Azure DevOps-Repositorys ([dev.azure.com](http://dev.azure.com) und selbst gehostete Azure DevOps-Versionen)
 >
 >Siehe [Hinzufügen von externen Repositorys in Cloud Manager – Private Beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -163,4 +163,4 @@ Bei der Verwendung privater Repositorys mit Cloud Manager gelten bestimmte Einsc
 * Pipelines, die private GitHub Cloud-Repositorys und den „On-Commit“-Build-Trigger verwenden, werden nicht automatisch gestartet, wenn ein neuer Commit in die ausgewählte Verzweigung verschoben wird.
 * Die [Funktion zur Wiederverwendung von Artefakten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) gilt nicht für private Repositorys.
 * Sie können die Validierung der Pull-Anfrage nicht mithilfe der GitHub-Prüfung über Cloud Manager anhalten. Während der Validierung des GitHub-Repositorys in Cloud Manager versucht Cloud Manager immer, die für dieses Repository erstellten Pull-Anfragen zu validieren.
-* Wenn Ihre GitHub-Organisation IP-Einschränkungen durchsetzt, öffnen Sie einen Support-Fall, um die Liste der IP-Adressen zu erhalten, die zulässig sein müssen.
+* Wenn Ihre GitHub-Organisation IP-Einschränkungen durchsetzt, erstellen Sie einen Support-Fall, um die Liste der zuzulassen IP-Adressen zu erhalten.

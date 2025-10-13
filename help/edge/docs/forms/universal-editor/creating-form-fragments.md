@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -176,11 +176,11 @@ So integrieren Sie ein Formularfragment in Ihr Formular:
 
    Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert. 
 
-   ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ erfolgreich in ein Mitarbeiterformular im universellen Editor integriert wurde und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ im universellen Editor erfolgreich in ein Mitarbeiterformular integriert wurde und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    >[!NOTE]
    >
-   > Mit **Schaltfläche** Fragment bearbeiten“ können Benutzer zum Bearbeiten direkt zum Formularfragment navigieren.
+   > Mit der Schaltfläche **Fragment bearbeiten** können Benutzende zum Bearbeiten direkt zum Formularfragment navigieren.
 
    Sie können das Formular in einer Vorschau anzeigen, um zu sehen, wie das Formular im Modus **Vorschau** aussieht.
 
@@ -294,7 +294,7 @@ Sie haben erfahren, wie Sie Formularfragmente in Edge Delivery Services nutzen k
 
 - Erstellen Sie eine Bibliothek häufig verwendeter Fragmente für Ihre Organisation.
 - Legen Sie Benennungskonventionen und Governance-Richtlinien für die Fragmentverwendung fest.
-- Erkunden Sie die erweiterte Integration mit [Formulardatenmodellen](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) für dynamische datengesteuerte Fragmente
+- Erkunden Sie die erweiterte Integration mit [Formulardatenmodellen](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) für dynamische datengestützte Fragmente
 - Implementieren Sie fragmentbasierte Formularvorlagen für konsistente Benutzererlebnisse.
 
 Ihre Formulare profitieren nun von einer modularen, verwaltbaren Architektur, die effizient über Projekte skaliert werden kann. Gleichzeitig werden konsistente Benutzererlebnisse sichergestellt.

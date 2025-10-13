@@ -7,14 +7,14 @@ role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2443'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Erstellen einer responsiven Forms mit dem universellen Editor - Eine vollständige Anleitung
+# Erstellen eines responsiven Formulars mit dem universellen Editor – eine vollständige Anleitung
 
 Die moderne Web-Landschaft setzt Formulare voraus, die über ein immer breiteres Spektrum von Geräten und Bildschirmgrößen hinweg nahtlos funktionieren. Von großen Desktop-Monitoren bis hin zu kompakten Smartphone-Bildschirmen erwarten Benutzende unabhängig vom gewählten Gerät konsistente, intuitive Erlebnisse. Die Erstellung responsiver Formulare ist keine Option mehr. Vielmehr ist sie eine grundlegende Voraussetzung für die Bereitstellung professioneller, barrierefreier und konversionsoptimierter digitaler Erlebnisse.
 
@@ -277,7 +277,7 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 ### Best Practices nach Gerätetyp
 
-+++Optimierung für Mobilgeräte (320 Pixel - 767 Pixel)
++++Optimierung für Mobilgeräte (320 bis 767 Px)
 
 **Layout und Interaktion:**
 
@@ -296,18 +296,18 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 +++
 
-+++Tablet-Optimierung (768px-1199px)
++++Optimierung für Tablets (768 bis 1.199 px)
 
 **Layout und Anwenderfreundlichkeit:**
 
-- Verwenden Sie zweispaltige Layouts für verwandte Felder, um mehr Platz auf dem Bildschirm zu erhalten.
+- Verwenden Sie zweispaltige Layouts für verwandte Felder, um zusätzlichen Platz auf dem Bildschirm zu nutzen.
 - Testen Sie das Aussehen und die Anwenderfreundlichkeit von Formularen sowohl im Hoch- als auch im Querformat.
 - Gestalten Sie für die Touch- und Mauseingabe, sodass alle Bedienelemente leicht zugänglich sind.
 - Vergrößern Sie den Inhaltsbereich unter Beibehaltung einer klaren visuellen Hierarchie und Lesbarkeit.
 
 +++
 
-+++Desktop-Optimierung (1200 px+)
++++Optimierung für Desktop (über 1.200 px)
 
 **Erweiterte Funktionen und Layout:**
 
@@ -320,11 +320,11 @@ Das Akkordeon-Layout spart Platz, indem Inhalte in ausblendbaren Abschnitten org
 
 ## Konfigurieren von benutzerdefinierten Layouts mit Haltepunkten für Medienabfragen
 
-Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms mit dem **universellen Editor** müssen Sie das responsive Verhalten mithilfe von **CSS Media Query Breakpoints** definieren. Dadurch wird sichergestellt, dass Formulare auf verschiedenen Geräten und Bildschirmgrößen korrekt wiedergegeben werden.
+Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Formularen mit dem **universellen Editor** müssen Sie das responsive Verhalten mithilfe von **Haltepunkten für CSS-Medienabfragen** definieren. Dadurch wird sichergestellt, dass Formulare auf verschiedenen Geräten und Bildschirmgrößen korrekt gerendert werden.
 
 **Empfohlene Haltepunkte (basierend auf AEM-Kernkomponenten)**
 
-| **Gerätetyp** | **Empfohlener Breakpoint** |
+| **Gerätetyp** | **Empfohlener Haltepunkt** |
 |-----------------|---------------------------|
 | **Desktop** | `min-width: 1200px` |
 | **Tablet** | `min-width: 768px and max-width: 1199px` |
@@ -332,8 +332,8 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms m
 
 **Wichtigste Punkte**
 
-- Verwenden Sie diese Haltepunkte, um zu steuern, wie Komponenten die Größe ändern, gestapelt oder auf verschiedenen Geräten ausgeblendet werden.
-- Befolgen Sie die responsiven Design-Richtlinien Ihres Unternehmens für eine konsistente Benutzeroberfläche.
+- Verwenden Sie diese Haltepunkte, um zu steuern, wie die Größe von Komponenten geändert wird bzw. wie diese gestapelt oder auf verschiedenen Geräten ausgeblendet werden.
+- Befolgen Sie die Richtlinien zum responsiven Design Ihres Unternehmens für eine konsistente Benutzeroberfläche.
 - Testen Sie Layouts auf mehreren Geräten und Ausrichtungen, um Benutzerfreundlichkeit und Barrierefreiheit zu gewährleisten.
 
 ```css
@@ -356,7 +356,7 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms m
 
 ### Layout-Probleme
 
-+++Umbrüche des Formularlayouts auf Mobilgeräten
++++Umbrüche des Formular-Layouts auf Mobilgeräten
 
 **Mögliche Ursachen:**
 
@@ -373,7 +373,7 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms m
 
 +++
 
-+++Touch-Ziele zu klein
++++Zu kleine Touch-Ziele
 
 **Mögliche Ursachen:**
 
@@ -390,7 +390,7 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms m
 
 +++
 
-+++Probleme mit Inhaltsüberlauf
++++Probleme mit Inhaltsüberläufen
 
 **Mögliche Ursachen:**
 
@@ -428,7 +428,7 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms m
 
 ### Test- und Validierungsprobleme
 
-+++Unterschiede zwischen Emulator und tatsächlichem Gerät
++++Unterschiede zwischen Emulator und echten Geräten
 
 **Mögliche Ursachen:**
 
@@ -447,7 +447,7 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms m
 
 ## Erfolgsmetriken für responsive Formulare
 
-+++Wichtige Performance-Indikatoren
++++KPIs
 
 **Anwendererlebnis:**
 
@@ -465,7 +465,7 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Forms m
 
 +++
 
-+++Checkliste für Tests
++++Check-Liste für das Testen
 
 **Checkliste vor der Veröffentlichung:**
 

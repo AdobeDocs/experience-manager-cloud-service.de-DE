@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1281'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -217,7 +217,7 @@ Edge Delivery Services-Formulare unterstützen zwei Google reCAPTCHA-Optionen. V
 
 ## Einrichten von reCAPTCHA Standard
 
-+++Schritt 1: Abrufen von reCAPTCHA-API-Schlüsseln (siehe Details)
++++Schritt 1: Abrufen von reCAPTCHA-API-Schlüsseln (siehe Details)
 
 >[!IMPORTANT]
 >
@@ -255,7 +255,7 @@ Edge Delivery Services-Formulare unterstützen zwei Google reCAPTCHA-Optionen. V
 
 +++
 
-+++Schritt 2: Konfigurieren des AEM-Cloud-Konfigurations-Containers (siehe Details)
++++Schritt 2: Konfigurieren des AEM Cloud-Konfigurations-Containers (siehe Details)
 
 Folgen Sie dem gleichen Prozess wie bei der Einrichtung von Enterprise:
 
@@ -267,7 +267,7 @@ Folgen Sie dem gleichen Prozess wie bei der Einrichtung von Enterprise:
 
 +++
 
-+++Schritt 3: Konfigurieren des reCAPTCHA-Standarddienstes in AEM (siehe Details)
++++Schritt 3: Konfigurieren des reCAPTCHA-Standard-Dienstes in AEM (siehe Details)
 
 ![reCAPTCHA-Standard-Konfigurationsbildschirm](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Abbildung: reCAPTCHA Standard-Konfigurationsoberfläche in AEM*
@@ -312,38 +312,38 @@ Fügen Sie nach dem Konfigurieren des reCAPTCHA-Dienstes den folgenden Schutz f�
 ![Hinzufügen der reCAPTCHA-Komponente zu einem Formular](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Abbildung: Hinzufügen der unsichtbaren CAPTCHA-Komponente zu einem Formular*
 
-+++&#x200B;1. Formular im universellen Editor öffnen
-Wechseln Sie zu Ihrem Formular in AEM Sites und klicken Sie auf Bearbeiten , um es im universellen Editor zu öffnen. Warten Sie, bis der Editor geladen wurde.
++++1. Öffnen des Formulars im universellen Editor
+Navigieren Sie zu Ihrem Formular in AEM Sites und klicken Sie auf „Bearbeiten“, um es im universellen Editor zu öffnen. Warten Sie, bis der Editor geladen wurde.
 
 - Wechseln Sie zu Ihrem Formular in AEM Sites.
 - Klicken Sie auf „Bearbeiten“, um es im universellen Editor zu öffnen.
 - Warten Sie, bis der Editor geladen wurde
 +++
 
-+++&#x200B;2. Suchen Sie die Formularstruktur
-Suchen Sie in der Inhaltsstruktur (linker Bereich) den Abschnitt für Ihr adaptives Formular und erweitern Sie die Formularstruktur, um Einfügepunkte anzuzeigen.
++++2. Suchen der Formularstruktur
+Suchen Sie in der Inhaltsstruktur (linkes Panel) den Abschnitt Ihres adaptiven Formulars und erweitern Sie die Formularstruktur, um Einfügepunkte anzuzeigen.
 
 - Suchen Sie in der Inhaltsstruktur (linker Bereich) den Abschnitt Ihres adaptiven Formulars.
 - Erweitern Sie die Formularstruktur, um Einfügepunkte anzuzeigen.
 +++
 
-+++&#x200B;3. Hinzufügen der reCAPTCHA-Komponente
-Fügen Sie die CAPTCHA-Komponente (unsichtbar) zu Ihrem Formular hinzu.
++++3. Hinzufügen der reCAPTCHA-Komponente
+Fügen Sie Ihrem Formular eine (unsichtbare) Captcha-Komponente hinzu. 
 
 - Klicken Sie auf das Symbol „Hinzufügen“ (+) im Formularabschnitt.
 - Wählen Sie aus der Komponentenliste „Captcha (Unsichtbar)“ aus.
 - Alternativ können Sie die Komponente auch aus dem Bedienfeld „Komponenten“ ziehen.
 +++
 
-+++&#x200B;4. Konfigurieren der Komponente (optional)
-Wählen Sie die neu hinzugefügte CAPTCHA-Komponente aus und überprüfen Sie, ob sie Ihre reCAPTCHA-Konfiguration verwendet.
++++4. Konfigurieren der Komponente (optional)
+Wählen Sie die neu hinzugefügte Captcha-Komponente aus und überprüfen Sie, ob sie Ihre reCAPTCHA-Konfiguration nutzt.
 
 - Wählen Sie die neu hinzugefügte CAPTCHA-Komponente aus.
 - Überprüfen Sie im Bedienfeld „Eigenschaften“, ob Ihre reCAPTCHA-Konfiguration verwendet wird.
 - Für die grundlegende Einrichtung ist keine zusätzliche Konfiguration erforderlich.
 +++
 
-+++&#x200B;5. Veröffentlichen Sie Ihre Änderungen
++++5. Veröffentlichen der Änderungen
 Veröffentlichen Sie Ihre Änderungen und stellen Sie sicher, dass keine Fehler vorliegen.
 
 - Klicken Sie im universellen Editor auf „Veröffentlichen“.

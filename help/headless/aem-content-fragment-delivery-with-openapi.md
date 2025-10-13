@@ -5,9 +5,9 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Sobald diese Begrenzung überschritten wird, beginnt das API mit dem Senden von 
 
 ## Authentifizierte Anfragen {#authenticated-requests}
 
-Die Unterstützung für authentifizierte Anfragen kann mit dem [AEM CDN-Edge-Schlüssel](/help/implementing/dispatcher/cdn-credentials-authentication.md) implementiert werden. Durch die Verwendung des AEM CDN-Edge-Schlüssels können Sie sich auf das AEM-CDN verlassen und sicherstellen, dass nur bestimmte Anfragen basierend auf der bereitgestellten Edge-Schlüsselkopfzeile auf die API zugreifen können.
+Die Unterstützung für authentifizierte Anfragen kann mit dem [AEM-CDN-Edge-Schlüssel](/help/implementing/dispatcher/cdn-credentials-authentication.md) implementiert werden. Durch die Verwendung des AEM-CDN-Edge-Schlüssels können Sie sich auf das AEM-CDN verlassen und sicherstellen, dass nur bestimmte Anfragen basierend auf dem bereitgestellten Edge-Schlüssel-Header auf die API zugreifen können.
 
 >[!NOTE]
 >

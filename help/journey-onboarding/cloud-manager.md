@@ -1,13 +1,13 @@
 ---
 title: Zugreifen auf Cloud Manager
-description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Sie Ihre Projektressourcen einrichten können.
+description: Erfahren Sie, wie Sie auf Cloud Manager zugreifen, damit Sie Ihre Projektressourcen einrichten können.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ Bevor die Team-Mitglieder, denen Sie die Rolle des **Geschäftsinhabers** zugewi
 
    Kehren Sie zum vorherigen Schritt zurück ([Zuweisen von Team-Mitgliedern zu Cloud Manager-Produktprofilen](assign-profiles-cloud-manager.md)), um weitere Informationen über die Zuweisung der Rolle **Geschäftsinhaber** zum bzw. zur System-Admin zu erhalten.
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
-1. Klicken Sie in der Schnellzugriffs-Gruppierung auf **Experience Manager**.
-1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Melden Sie sich unter [experiece.adobe.com](https://experience.adobe.com) bei Cloud Manager an.
+1. Klicken Sie in der Gruppierung „Schnellzugriff“ auf **Experience Manager**.
+1. Klicken Sie im linken Panel auf **Cloud Manager**.
 
-   ![Cloud Manager in der Konsole](/help/journey-onboarding/assets/consol-cloud-manager.png)
+   ![Cloud Manager auf Konsole](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-Durch die erfolgreiche Anmeldung als System-Admin mit der Rolle **Geschäftsinhaber** können Sie Cloud Manager für die Verwendung durch andere Benutzende mit der Rolle **Geschäftsinhaber** verwenden. Sie erhalten keine Bestätigung oder Nachricht. Die einfache Anmeldung ist ausreichend.
+Durch die erfolgreiche Anmeldung als Systemadmin mit der Rolle **Geschäftsinhaber** initialisieren Sie Cloud Manager für die Verwendung durch andere Benutzende, die ebenfalls über die Rolle **Geschäftsinhaber** verfügen. Sie erhalten keine Bestätigung oder Nachricht. Die einfache Anmeldung ist ausreichend.
 
 Solange Sie sich nicht als System-Admin mit der Rolle **Geschäftsinhaber** bei Cloud Manager anmelden, können andere Benutzende mit der Rolle **Geschäftsinhaber** keine Programme in Cloud Manager erstellen. Diese Regel gilt auch dann, wenn ihnen die richtigen Rollen zugewiesen sind.
 
@@ -88,9 +88,9 @@ How you access your programs and products via Cloud Manager is up to you and has
 >
 >Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
-## Programme anzeigen {#viewing-programs}
+## Anzeigen von Programmen {#viewing-programs}
 
-Sobald Sie erfolgreich auf den Cloud Manager zugreifen, hängt das, was Sie sehen, vom Status Ihrer Programme ab, wie in den folgenden Abschnitten beschrieben.
+Sobald Sie erfolgreich auf Cloud Manager zugreifen, hängt das, was Sie sehen, vom Status Ihrer Programme ab, wie in den folgenden Abschnitten beschrieben.
 
 ### Wenn keine Programme vorhanden sind {#no-programs}
 
@@ -98,21 +98,21 @@ Wenn in Ihrer Organisation keine Programme vorhanden sind, werden Sie von Ihrer 
 
 ![Keine Programme](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### Wenn es bereits Programme gibt {#programs-exist}
+### Wenn schon Programme vorhanden sind {#programs-exist}
 
 Wenn in Ihrer Organisation bereits Programme vorhanden sind, zeigt Ihre Landingpage Ihre vorhandenen Programme an und bietet außerdem eine Schaltfläche zum Hinzufügen zusätzlicher Programme.
 
 ![Programme sind vorhanden](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### Wenn es ein Programm gibt und Sie Systemadministrator sind {#programs-exist-sysadmin}
+### Wenn ein Programm vorhanden ist und Sie Systemadmin sind {#programs-exist-sysadmin}
 
 Wenn in Ihrer Organisation bereits Programme vorhanden sind und Sie System-Admin sind, werden auf Ihrer Landingpage die Schaltfläche **Zugriff verwalten** und die Option **Programm hinzufügen** angezeigt.
 
 ![Systemadministratoransicht](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
-## Überprüfen der Benutzerrollen {#verify-user-roles}
+## Überprüfen Ihrer Benutzerrollen {#verify-user-roles}
 
-Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie überprüfen, ob Ihnen das Produktprofil **Geschäftsinhaber** zugewiesen ist.
+Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie überprüfen, ob Ihnen das Produktprofil **Geschäftsinhaber** zugewiesen wurde.
 
 1. Klicken Sie oben rechts auf der Seite auf das Symbol **Konto**.
 
@@ -120,11 +120,11 @@ Nachdem Sie sich erfolgreich bei Cloud Manager angemeldet haben, können Sie üb
 
    ![Benutzerrollen](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. Bestätigen Sie **Dialogfeld &quot;**&quot;, dass Ihr Benutzer über die Rolle **Geschäftsinhaber** verfügt.
+1. Bestätigen Sie im Dialogfeld **Benutzerrollen**, dass Sie über die Rolle **Geschäftsinhaber** verfügen.
 
    ![Liste der Benutzerrollen](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Sie haben sich erfolgreich als Geschäftsinhaber bei Cloud Manager angemeldet. Wenn Ihnen die Rolle des **Geschäftsinhabers** nicht zugewiesen wurde, wenden Sie sich an Ihren Systemadministrator.
+Sie haben sich erfolgreich als Geschäftsinhaberin bzw. -inhaber bei Cloud Manager angemeldet. Wenn Ihnen die Rolle des **Geschäftsinhabers** nicht zugewiesen wurde, wenden Sie sich an Ihre oder Ihren Systemadmin.
 
 ## Wie geht es weiter {#whats-next}
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 39af50d05fcbd22b3f4b4664f2c99590e7fb9da9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitste
 
 **So fügen Sie eine IP-Zulassungsliste hinzu:**
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com/experiencemanager/) an.
+1. Melden Sie sich unter [experiece.adobe.com](https://experience.adobe.com/de/experiencemanager/) bei Cloud Manager an.
 
-1. Klicken Sie im Menü links auf Cloud Manager und wählen Sie dann die entsprechende Organisation aus.
+1. Klicken Sie im linken Menü auf Cloud Manager und wählen Sie dann die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -40,12 +40,12 @@ Benutzerinnen oder Benutzer mit der Rolle **Geschäftsinhaber** oder **Bereitste
 
 1. Geben Sie im Dialogfeld **IP-Zulassungsliste hinzufügen** im Feld **IP-Zulassungslistenname** einen Namen ein, den Sie als Referenz für die IP-Zulassungsliste verwenden möchten. Dieser Name dient nur zu Informationszwecken. Achten Sie darauf, dass er beschreibend genug ist, um Ihnen bei der Identifizierung der Liste zu helfen.
 
-1. Geben Sie im Feld **IP-Adresse / CIDR** bis zu 50 IP-Adressen oder CIDR-Blöcke ein. Sie können sie auf eine der folgenden Arten hinzufügen:
+1. Geben Sie im Feld **IP-Adresse/CIDR** bis zu 50 IP-Adressen oder CIDR-Blöcke. Sie können sie auf eine der folgenden Arten hinzufügen:
 
-   * Jeweils eine Adresse: Geben Sie eine Adresse ein und drücken Sie dann `Enter`. Für jede weitere Adresse wiederholen.
-   * Mehrere gleichzeitig: Geben Sie Adressen ein, die durch Kommas (,) oder Tabulatoren getrennt sind, und drücken Sie dann `Enter`, damit jede Adresse einzeln erkannt wird.
+   * Einzeln: Geben Sie eine Adresse ein und drücken Sie dann `Enter`. Wiederholen Sie dies für jede weitere Adresse.
+   * Mehrere gleichzeitig: Geben Sie Adressen durch Kommata (,) oder Tabulatoren getrennt ein und drücken Sie dann `Enter`, damit jede Adresse einzeln erkannt wird.
 
-1. Nachdem Sie die letzte IP-Adresse oder den letzten CIDR-Block eingegeben haben, drücken Sie `Enter`, um die Eingabe zu bestätigen. Der Eintrag wird erst quittiert, nachdem Sie `Enter` drücken, und die Schaltfläche **Speichern** wird aktiviert.
+1. Nachdem Sie die letzte IP-Adresse oder den letzten CIDR-Block eingegeben haben, drücken Sie `Enter`, um die Eingabe zu bestätigen. Der Eintrag wird erst nach Drücken von `Enter` bestätigt und die Schaltfläche **Speichern** wird aktiviert.
 
 1. Klicken Sie auf **Speichern**.
 

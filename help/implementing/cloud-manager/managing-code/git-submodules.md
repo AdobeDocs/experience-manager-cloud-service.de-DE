@@ -5,9 +5,9 @@ exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Dies führt zu einer `.gitmodules`-Datei ähnlich der Folgenden:
 
 Weitere Informationen zu Git-Untermodulen finden Sie auch im [Git-Referenzhandbuch](https://git-scm.com/book/de/v2/Git-Tools-Submodules) .
 
-## Verwendungsnotizen für Adobe-Repositorys {#usage-notes-recommendations-adobe-repos}
+## Verwendungshinweise für Adobe-Repositorys {#usage-notes-recommendations-adobe-repos}
 
 * Die Git-URL muss genau die im vorherigen Abschnitt beschriebene Syntax haben.
 * Es werden nur Untermodule im Stammverzeichnis der Verzweigung unterstützt.

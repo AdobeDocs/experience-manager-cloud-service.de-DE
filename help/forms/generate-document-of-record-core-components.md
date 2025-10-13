@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3244'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Bevor Sie beginnen, lernen Sie die für ein Datensatzdokument erforderlichen Ass
 
 Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen Sie die folgenden Schritte aus, um ein adaptives Formular zu konfigurieren und die XFA-Vorlage (XDP-Datei) als Vorlage für das Datensatzdokument zu verwenden:
 
-1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus oder erstellen Sie ein adaptives Formular und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie im Fenster „Eigenschaften“ **[!UICONTROL Formularmodell]**.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie im Dropdown-Menü **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keine]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -52,7 +52,7 @@ Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlag
 
 Laden Sie Ihr Adobe Acrobat-PDF (AcroForm) in Ihre AEM Forms-Instanz hoch. Führen Sie die folgenden Schritte aus, um ein adaptives Formular zur Verwendung von Adobe Acrobat-PDF (AcroForm) als Vorlage für das Datensatzdokument zu konfigurieren:
 
-1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus oder wählen Sie **[!UICONTROL Erstellen eines adaptiven Formulars]** und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie im Fenster „Eigenschaften“ **[!UICONTROL Formularmodell]**.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie im Dropdown-Menü **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keine]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -73,7 +73,7 @@ Wenn ein adaptives Formular so konfiguriert ist, dass automatisch ein Datensatzd
 
 Führen Sie die folgenden Schritte aus, um ein adaptives Formular so zu konfigurieren, dass automatisch ein Datensatzdokument erzeugt wird:
 
-1. Klicken Sie in der Experience Manager-Autor-Instanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
+1. Klicken Sie in der Experience Manager-Autoreninstanz auf **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente].**
 1. Wählen Sie ein Formular aus oder erstellen Sie ein adaptives Formular und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie im Fenster „Eigenschaften“ **[!UICONTROL Formularmodell]**.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie im Dropdown-Menü **[!UICONTROL Auswählen aus]** die Option **[!UICONTROL Formulardatenmodell]**, **[!UICONTROL Schema]** oder **[!UICONTROL Keine]** aus. Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
@@ -90,7 +90,7 @@ Binden Sie Felder adaptiver Formulare mit Vorlagenfeldern, um die erfassten Form
 
 1. Wählen Sie im Eigenschaften-Browser ein Feld aus.
 
-   * Bei Verwendung der AcroForm-Vorlage wählen Sie die Feldeigenschaft für den **[!UICONTROL Bindungsverweis zum Datensatzdokument]**.
+   * Bei Verwendung der AcroForm-Vorlage wählen Sie die Feldeigenschaft für den Bindungsverweis zum **[!UICONTROL Datensatzdokument]**.
    * Bei Verwendung der XFA-Vorlage verwenden Sie die Eigenschaft für den **[!UICONTROL Bindungsverweis zum Datenmodell]**.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
@@ -415,7 +415,7 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 * **Bereich als Tabelle anzeigen**: Wenn aktiviert, wird der Bereich im Datensatzdokument als Tabelle angezeigt, wenn der Bereich weniger als 6 Felder enthält. Gilt nur für den Bereich.
 * **Titel aus Datensatzdokument ausschließen**: Wenn aktiviert, ist der Titel des Bereichs bzw. der Tabelle im Datensatzdokument nicht enthalten. Gilt nur für Bereiche und Tabellen.
 * **Beschreibung aus Datensatzdokument ausschließen**: Wenn aktiviert, ist die Beschreibung des Bereichs bzw. der Tabelle im Datensatzdokument nicht enthalten. Gilt nur für Bereiche und Tabellen.
-* **Ausgeblendete Felder vom Datensatzdokument ausschließen**: Wenn Sie diese Eigenschaft auswählen, werden ausgeblendete Felder aus dem Datensatzdokument ausgeschlossen. Sie gilt für alle Formularfelder. Standardmäßig ist die Option **Ausgeblendete Felder vom Datensatzdokument ausschließen** nicht ausgewählt.
+* **Ausgeblendete Felder vom Nachweis ausschließen**: Wenn Sie diese Eigenschaft auswählen, werden ausgeblendete Felder aus dem Nachweis ausgeschlossen. Dies gilt für alle Formularfelder. Standardmäßig ist die Option **Ausgeblendete Felder vom Dokument aus Datensatz ausschließen** nicht ausgewählt.
 
 **Einstellungen auf Formularebene**
 

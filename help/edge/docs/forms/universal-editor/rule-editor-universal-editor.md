@@ -1,21 +1,21 @@
 ---
-title: Regeleditor für Edge Delivery Services Forms
+title: Regeleditor für Edge Delivery Services-Formulare
 description: Erstellen Sie mit dem Regeleditor im universellen Editor dynamische, intelligente Formulare. Fügen Sie bedingte Logik, Berechnungen und interaktive Verhaltensweisen ohne Programmierung hinzu.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Regeleditor für Edge Delivery Services Forms
+# Regeleditor für Edge Delivery Services-Formulare
 
-Mit dem Regeleditor können Autoren statische Formulare in responsive, intelligente Erlebnisse umwandeln, ohne Code zu schreiben. Sie können Felder bedingt anzeigen, Berechnungen durchführen, Daten validieren, Benutzerinnen und Benutzer durch Flüsse leiten und Geschäftslogik integrieren, die sich je nach Benutzertyp anpasst.
+Mit dem Regeleditor können Autorinnen und Autoren statische Formulare in responsive, intelligente Erlebnisse umwandeln, ohne Code schreiben zu müssen. Sie können Felder bedingt anzeigen, Berechnungen durchführen, Daten validieren, Benutzerinnen und Benutzer durch Flüsse leiten und Geschäftslogik integrieren, die sich je nach Benutzertyp anpasst.
 
 ## Lerninhalt
 
@@ -304,7 +304,7 @@ Sie erstellen ein Formular, das:
 
 +++
 
-+++ Schritt 1: Formular erstellen
++++ Schritt 1: Formular erstellen
 
 **Ziel**: Erstellen Sie das Basisformular mit allen Feldern und Anfangseinstellungen.
 
@@ -537,7 +537,7 @@ Abbildung: Auswählen und Konfigurieren von benutzerdefinierten Funktionen in de
 
 >
 >
-> Die Verbesserungen am Regeleditor, einschließlich benutzerdefinierter ereignisbasierter Regeln, Unterstützung für dynamische Variablen und API-Integration, sind auch für Edge Delivery Services Forms verfügbar. Weitere Informationen zu diesen Verbesserungen und deren Verwendung finden Sie im Artikel [Verbesserungen des Regeleditors und Anwendungsfälle](/help/forms/rule-editor-enhancements-use-cases.md) .
+> Die Verbesserungen am Regeleditor, einschließlich benutzerdefinierter ereignisbasierter Regeln, Unterstützung für dynamische Variablen und API-Integration, sind auch für Edge Delivery Services Forms verfügbar. Weitere Informationen zu diesen Verbesserungen und deren Verwendung finden Sie im Artikel [Verbesserungen des Regeleditors und Anwendungsfälle](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Best Practices für den Einsatz von Funktionen**:
 
@@ -552,8 +552,8 @@ Abbildung: Auswählen und Konfigurieren von benutzerdefinierten Funktionen in de
 ### Statische Importe für benutzerdefinierte Funktionen
 
 Der Regeleditor des universellen Editors unterstützt statische Importe, sodass Sie wiederverwendbare Logik über mehrere Dateien und Formulare hinweg organisieren können. Anstatt alle benutzerdefinierten Funktionen in einer Datei (/blocks/form/functions.js) zu speichern, können Sie Funktionen aus anderen Modulen importieren.
-Beispiel: Funktionen aus einer externen Datei importieren
-Beachten Sie die folgende Ordnerstruktur:
+Beispiel: Importieren von Funktionen aus einer externen Datei
+Sehen Sie sich die folgende Ordnerstruktur an:
 
 ```
       form
@@ -565,7 +565,7 @@ Beachten Sie die folgende Ordnerstruktur:
       ┗ functions.js
 ```
 
-Sie können Funktionen aus `commonLib/functions.js` wie unten dargestellt in Ihre `functions.js` importieren:
+Sie können Funktionen aus `commonLib/functions.js` wie unten dargestellt in Ihre Datei `functions.js` importieren:
 
 ```
 `import {days} from './commonLib/functions';
@@ -584,19 +584,19 @@ function getFullName(firstname, lastname) {
 export { getFullName, days};
 ```
 
-### Organisieren von benutzerdefinierten Funktionen in verschiedenen Forms
+### Organisieren von benutzerdefinierten Funktionen in verschiedenen Formularen
 
 Sie können verschiedene Funktionssätze in separaten Dateien oder Ordnern erstellen und diese nach Bedarf exportieren:
 
-- Wenn Sie möchten, dass bestimmte Funktionen nur in bestimmten Formularen verfügbar sind, können Sie den Pfad zur Funktionsdatei in der Formularkonfiguration angeben.
+- Wenn Sie möchten, dass gewisse Funktionen nur in bestimmten Formularen verfügbar sind, können Sie den Pfad zur Funktionsdatei in der Formularkonfiguration angeben.
 
-- Wenn das Textfeld für den Pfad leer gelassen wird, lädt der Regeleditor standardmäßig Funktionen aus `/blocks/form/functions.js`
+- Wenn das Textfeld für den Pfad leer gelassen wird, lädt der Regeleditor standardmäßig Funktionen aus `/blocks/form/functions.js`.
 
 ![Benutzerdefinierte Funktion in UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
 
-Im obigen Screenshot wird der Pfad der benutzerdefinierten Funktion im Textfeld Benutzerdefinierter Funktionspfad hinzugefügt. Die benutzerdefinierten Funktionen für dieses Formular werden aus der angegebenen Datei geladen (`cc_function.js`).
+Im Screenshot oben wird der Pfad der benutzerdefinierten Funktion im Textfeld „Benutzerdefinierter Funktionspfad“ hinzugefügt. Die benutzerdefinierten Funktionen für dieses Formular werden aus der angegebenen Datei geladen (`cc_function.js`).
 
-Dies ermöglicht Flexibilität, da Funktionen über mehrere Formulare hinweg gemeinsam genutzt oder je Formular isoliert werden können.
+Dies ermöglicht Flexibilität, da Funktionen über mehrere Formulare hinweg gemeinsam genutzt oder pro Formular isoliert werden können.
 
 ## Best Practices für die Regelentwicklung
 

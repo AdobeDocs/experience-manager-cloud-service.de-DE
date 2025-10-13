@@ -5,15 +5,15 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
 source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1842'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Handhabung großer Content-Repositorys {#handling-large-content-repositories}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
@@ -162,7 +162,7 @@ Mit der obigen Konfigurationsdatei wird die AzCopy-Vorabkopierphase als Teil all
 
 >[!NOTE]
 >Wenn AzCopy nicht richtig konfiguriert ist, wird folgende Meldung in den Protokollen angezeigt:
->&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Starten Sie eine Extraktion über die CTT-Benutzeroberfläche. Weitere Informationen finden Sie unter [Erste Schritte mit dem Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) und [Extraktionsvorgang](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
@@ -197,7 +197,7 @@ Blobs, die vor Auftreten des Fehlers kopiert wurden, werden von AzCopy bei nachf
 >Eine Aufnahme kann nun so geplant werden, dass sie unmittelbar nach erfolgreichem Abschluss einer Extraktion automatisch startet. Siehe [Aufnehmen von Inhalten in das Ziel](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) für weitere Informationen.
 
 >[!TIP]
->Wenn die Blob-Übertragung mit AzCopy eine Weile fortgesetzt wird, dann aber nur für einige Blobs fehlschlägt, führen Sie die Extraktion erneut aus, ohne dass die Optionen „PreCopy“ und „Staging-Container überschreiben“ aktiviert sind. Dadurch werden nur die verbleibenden Blobs migriert, die zuvor nicht übertragen wurden.
+>Wenn die Blob-Übertragung mit AzCopy eine Weile ausgeführt wird, dann aber nur für einige Blobs fehlschlägt, führen Sie die Extraktion bei deaktivierten Optionen „PreCopy“ und „Staging-Container überschreiben“ aus. Dadurch werden nur die verbleibenden Blobs migriert, die zuvor nicht übertragen wurden.
 
 #### Für Dateidatenspeicher {#file-data-store-extract}
 

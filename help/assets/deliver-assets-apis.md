@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
 source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Die folgende Tabelle zeigt die Verwendung der verschiedenen verfügbaren Bereits
 >[!IMPORTANT]
 >
 >Sie können jeden Modifikator testen, der nicht allgemein über experimentelle APIs verfügbar ist. Zum Beispiel: `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->&#x200B;>Klicken Sie hier, um mehr über die Verwendung der [experimentellen APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) und die [vollständige Liste der Modifikatoren](https://developer.adobe.com/experience-cloud/experience-manager-apis/) zu erfahren.
+>>Klicken Sie hier, um mehr über die Verwendung der [experimentellen APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) zu erfahren und die [vollständige Liste der Modifikatoren](https://developer.adobe.com/experience-cloud/experience-manager-apis/) anzuzeigen.
 
 Dynamic Media mit OpenAPI-Funktionen unterstützt auch langformatige Videos. Es werden Videos mit bis zu 50 GB und einer Länge von bis zu 2 Stunden unterstützt.
 
@@ -43,7 +43,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten und deren Funktionen f
 
 >[!NOTE]
 >
->Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kunden von DM Prime nicht.
+>Kundinnen und Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kundinnen und Kunden von DM Prime nicht.
 
 ## Bereitstellungs-API-Endpunkte {#delivery-apis-endpoint}
 
@@ -73,7 +73,7 @@ headers: {
     }
 ```
 
-Zum Aufrufen der Bereitstellungs-APIs ist ein IMS-Token in den `Authorization`-Details erforderlich, um ein eingeschränktes Asset bereitzustellen. Das IMS-Token wird aus einem technischen Konto abgerufen. Informationen zum Erstellen eines neuen technischen Kontos finden Sie unter [Abrufen der Anmeldedaten für AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis). Informationen zum Generieren des IMS-Tokens und zu seiner entsprechenden Verwendung im Anfrage-Header der Bereitstellungs-APIs finden Sie unter [Generieren des Zugriffs-Tokens](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis).
+Zum Aufrufen der Bereitstellungs-APIs ist ein IMS-Token in den `Authorization`-Details erforderlich, um ein eingeschränktes Asset bereitzustellen. Das IMS-Token wird aus einem technischen Konto abgerufen. Informationen zum Erstellen eines neuen technischen Kontos finden Sie unter [Abrufen der Anmeldedaten für AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis). Informationen zum Generieren des IMS-Tokens und zu seiner entsprechenden Verwendung im Anfrage-Header der Bereitstellungs-APIs finden Sie unter [Generieren des Zugriffs-Tokens](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis).
 
 
 Informationen zum Anzeigen von Anfragebeispielen, Antwortbeispielen und Antwort-Codes finden Sie unter [Bereitstellungs-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).

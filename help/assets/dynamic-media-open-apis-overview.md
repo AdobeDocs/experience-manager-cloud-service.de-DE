@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Schlüsselkonzepte wie die Verwendung von D
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Dynamic Media mit OpenAPI-Funktionen bietet die folgenden Hauptvorteile:
 
 * **Web-optimierte Bereitstellung**: Digitale Assets werden in Web-optimierten Formaten bereitgestellt, um die Core Web Vitals Ihrer digitalen Erlebnisse zu verbessern. Dazu gehören die Unterstützung von WebP-Ausgabedarstellungen für Bilder, das adaptive Streaming über HLS- oder DASH-Protokolle für Videos und Original-Ausgabedarstellungen für Dokumente.
 
-* [Dynamische Asset-Transformation](https://developer.adobe.com/experience-cloud/experience-manager-apis): Unser System ermöglicht die direkte Bildumwandlung mithilfe von URL-Parametern, die als Bildmodifikatoren bezeichnet werden. Beispielsweise Breite, Höhe, Drehen, Spiegeln, Qualität, Zuschneiden, Format und smartes Zuschneiden. Umgewandelte Ausgabedarstellungen werden dynamisch generiert und nahtlos über das CDN bereitgestellt.
+* [Dynamische Asset-Transformation](https://developer.adobe.com/experience-cloud/experience-manager-apis): Unser System ermöglicht die direkte Bildumwandlung mithilfe von URL-Parametern, die als Bildmodifikatoren bezeichnet werden. Zum Beispiel Breite, Höhe, Drehung, Spiegelung, Qualität, Zuschnitt, Format und intelligenter Zuschnitt. Umgewandelte Ausgabedarstellungen werden dynamisch generiert und nahtlos über das CDN bereitgestellt.
 
 * **Sichere Bereitstellung von Assets**: Dynamic Media mit OpenAPI-Funktionen bietet einen Mechanismus zur Steuerung des Zugriffs auf Ihre digitalen Assets. Sie können Benutzerrollen oder Gruppen als Metadaten für zu sichernde Assets angeben und einen vordefinierten Zeitraum festlegen, in dem [nur autorisierte Benutzende auf diese Assets zugreifen können](/help/assets/restrict-assets-delivery.md). Während des eingeschränkten Zeitraums werden die Bereitstellungs-URLs für gesicherte Assets für nicht autorisierte Benutzende nicht aufgelöst.
 
@@ -42,7 +42,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten und deren Funktionen f
 
 >[!NOTE]
 >
->Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kunden von DM Prime nicht.
+>Kundinnen und Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kundinnen und Kunden von DM Prime nicht.
 
 
 ## Voraussetzungen für den Zugriff auf Dynamic Media mit OpenAPI-Funktionen {#prerequisites-dynaminc-media-open-apis}

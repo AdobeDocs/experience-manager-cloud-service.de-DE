@@ -8,9 +8,9 @@ time: 45-60 minutes
 keywords: Vorbefüllen eines adaptiven Formulars, Edge Delivery Services für adaptive Formulare, automatisches Ausfüllen eines adaptiven Formulars
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungsdienst:
 
 ## Konfigurieren eines Vorbefüllungsdienstes für ein Formular
 
-+++Phase 1: Einrichten des Formulardatenmodells
++++Phase 1: Einrichten des Formulardatenmodells
 
 ### Schritt 1: Erstellen Sie ein Formulardatenmodell
 
@@ -145,7 +145,7 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungsdienst:
 
 +++
 
-+++Phase 2: Erstellen und Konfigurieren des adaptiven Formulars
++++Phase 2: Erstellen und Konfigurieren des adaptiven Formulars
 
 ### Schritt 3: Erstellen Sie ein adaptives Formular
 
@@ -159,7 +159,7 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungsdienst:
 
    >
    >
-   > Sie können die Datenquelle über die Registerkarte **Daten** oder höher konfigurieren, indem Sie die Formulareigenschaften bearbeiten.
+   > Sie können die Datenquelle in der Registerkarte **Daten** oder später bei der Bearbeitung der Formulareigenschaften konfigurieren.
 
 1. Geben Sie die Formulardetails an:
 
@@ -207,7 +207,7 @@ Die Formularelemente aus Ihrem FDM werden auf der Registerkarte **Datenquelle** 
 
 +++
 
-+++Phase 3: Konfigurieren des Vorbefüllungs-Service
++++Phase 3: Konfigurieren des Vorbefüllungsdienstes
 
 ### Schritt 6: Aktivieren Sie erforderliche Erweiterungen
 
@@ -246,7 +246,7 @@ Stellen Sie sicher, dass folgende Erweiterungen im universellen Editor aktiviert
 
 +++
 
-+++Phase 4: Testen der Vorbefüllungskonfiguration
++++Phase 4: Testen der Vorbefüllungskonfiguration
 
 ### Schritt 8: Führen Sie eine Vorschau und Tests durch
 
@@ -388,7 +388,7 @@ Die folgenden URLs dienen nur zu Veranschaulichungszwecken und funktionieren nic
 
 +++
 
-+++Richtlinien Prototypen für das Benutzererlebnis
++++Richtlinien zum Anwendererlebnis
 
 - **Feedback geben**: Zeigen Sie bei Datenabrufen den Ladestatus an
 - **Mit Fehlern elegant umgehen**: Zeigen Sie hilfreiche Fehlermeldungen an
@@ -405,7 +405,7 @@ Zeigen Sie eine Vorschau Ihres Formulars an und fügen Sie Vorbefüllungsparamet
 
 +++
 
-+++Welche Datenformate werden zum Vorbefüllen von adaptivem Forms unterstützt?
++++Welche Datenformate werden beim Vorbefüllen von adaptiven Formularen unterstützt?
 
 Adaptive Formulare unterstützen je nach Formularmodell verschiedene Formate:
 
@@ -422,19 +422,19 @@ Ja, Sie können beide Arten von Feldern vorbefüllen. Gebundene Felder verwenden
 
 +++
 
-+++Was sollte ich tun, wenn nur einige Felder vorausgefüllt sind?
++++Was soll ich tun, wenn nur einige Felder vorbefüllt werden?
 
 Überprüfen Sie, ob alle Felder richtige `bindRef`-Werte haben, die genau mit Ihrem FDM übereinstimmen. Sorgen Sie dafür, dass Ihre Datenquelle alle erforderlichen Felder enthält und die Datenstruktur mit Ihrem Formularmodellschema übereinstimmt.
 
 +++
 
-+++Kann ich mehrere Vorbefüllungs-Services in einem Formular verwenden?
++++Kann ich verschiedene Vorbefüllungsdienste in einem Formular verwenden?
 
 Pro Formular kann ein primärer Vorbefüllungsdienst konfiguriert werden. Sie können innerhalb eines Formulardatenmodells jedoch verschiedene Datenquellen kombinieren, um ähnliche Funktionen zu erzielen.
 
 +++
 
-+++Wie handhabe ich die Authentifizierung für Vorbefüllungs-Services?
++++Wie handhabe ich die Authentifizierung für Vorbefüllungsdienste?
 
 Die Authentifizierung hängt von Ihrer Datenquellenkonfiguration ab. Konfigurieren Sie für FDM-basiertes Vorbefüllen die Authentifizierung in Ihren Datenquelleneinstellungen. Für das Vorbefüllen von Entwürfen müssen Benutzende in der Regel angemeldet sein, um auf ihre gespeicherten Entwürfe zugreifen zu können.
 

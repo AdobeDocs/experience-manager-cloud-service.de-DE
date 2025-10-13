@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Dynamic Media Prime und Ultimate, ihre Vort
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Zu anderen wichtigen Vorteilen von Dynamic Media Prime gehören:
 
 >[!NOTE]
 >
->Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kunden von DM Prime nicht.
+>Kundinnen und Kunden von DM Prime können grundlegende Bildmodifikatoren verwenden, einschließlich Drehen, Zuschneiden, Spiegeln, Höhe, Breite und Qualität. Die intelligente Bildbearbeitung unterstützt AVIF für Kundinnen und Kunden von DM Prime nicht.
 
 ### Voraussetzungen {#pre-requisites-dm-prime}
 

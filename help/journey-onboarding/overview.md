@@ -6,9 +6,9 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ Das Ergebnis ist:
 
 Die Onboarding-Journey für AEM as a Cloud Service konzentriert sich auf die folgenden Kernelemente:
 
-* **Vertrag** - Überprüfen Sie Ihren Adobe-Vertrag, um die wichtigsten Details des Onboarding-Prozesses zu verstehen.
-* **Experience Hub** - Verwenden Sie [experience.adobe.com](https://experience.adobe.com/) als zentralen Einstiegspunkt für AEM-Funktionen. Der Experience Hub passt sich an Ihre Rolle und Berechtigungen an, sodass Sie effizient arbeiten können. Navigieren Sie von hier zu:
-   * **Admin Console** - Benutzer verwalten und Rollen zuweisen.
-   * **Cloud Manager** - Richten Sie Programme und Umgebungen ein, greifen Sie auf Git zu und erstellen Sie Pipelines, um benutzerdefinierten Code zu verwalten und bereitzustellen.
-   * **Sites** - Erstellen, Verwalten und Bereitstellen digitaler Erlebnisse. (Lizenzbasierte Berechtigungen)
-   * **Assets** - Organisieren, Speichern und Verteilen digitaler Assets. (Lizenzbasierte Berechtigungen)
-   * **Forms** - Erstellen und Verwalten adaptiver und responsiver Formulare. (Lizenzbasierte Berechtigungen)
+* **Vertrag**: Überprüfen Sie Ihren Adobe-Vertrag, um mehr über die wichtigsten Details des Onboarding-Prozesses zu erfahren.
+* **Experience Hub**: Verwenden Sie [experience.adobe.com](https://experience.adobe.com/) als zentralen Einstiegspunkt für AEM-Funktionen. Der Experience Hub wird an Ihre Persona und Berechtigungen angepasst, sodass Sie effizient arbeiten können. Navigieren Sie von hier zu:
+   * **Admin Console**: Verwalten Sie Benutzende und weisen Sie Rollen zu.
+   * **Cloud Manager**: Richten Sie Programme und Umgebungen ein, greifen Sie auf Git zu und erstellen Sie Pipelines, um benutzerdefinierten Code zu verwalten und bereitzustellen.
+   * **Sites**: Erstellen und verwalten Sie digitale Erlebnisse und stellen Sie diese bereit. (Lizenzbasierte Berechtigung)
+   * **Assets**: Organisieren, speichern und verteilen Sie digitale Assets. (Lizenzbasierte Berechtigung)
+   * **Forms**: Erstellen und verwalten Sie adaptive und responsive Formulare. (Lizenzbasierte Berechtigung)
 
 Diese Konzepte werden in dieser Onboarding-Tour detailliert beschrieben. Das Ziel besteht darin, dass Sie am Ende der Tour:
 
@@ -66,10 +66,10 @@ Die Systemadmins verwalten alle Aspekte der AEMaaCS-Benutzenden ihrer Organisati
 
 | Persona | Beschreibung | Rolle in der Tour |
 | --- | --- | --- |
-| Systemadministrator | Das Ziel dieser Journey ist die erstmalige Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzenden zu den entsprechenden Rollen, basierend auf ihrer beruflichen Verantwortung. | Die Rolle hilft Ihnen bei der Verwaltung aller Aspekte von Benutzern, vom Zugriff bis zu Berechtigungen. |
-| Inhaltsautor | Erstellt und überprüft den Inhalt in AEM. | Sobald der Systemadministrator die Berechtigungen erteilt hat, können Autorinnen und Autoren ihren eigenen Journey beim Erstellen von Inhalten starten. |
-| Entwicklerin oder Entwickler | Entwickelt AEM-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen. | Sobald der Systemadministrator die Berechtigungen erteilt hat, können Entwickler ihren eigenen Journey bei der Entwicklung von Lösungen starten. |
-| Bereitstellungs-Manager | Fügt eine Umgebung hinzu oder aktualisiert sie, führt Pipelines aus und stellt Code für die AEM-Umgebung oder die Code-Qualitätsprüfung bereit. | Sobald der Systemadministrator die Berechtigungen erteilt hat, können Bereitstellungs-Manager ihre eigene Journey starten, um Bereitstellungen zu verwalten. |
+| Systemadministrator | Die Zielgruppe dieser Journey sorgt für die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzenden zu den entsprechenden Rollen auf Grundlage ihrer Auftragszuständigkeiten. | Die Rolle hilft Ihnen bei der Verwaltung aller Aspekte von Benutzenden, vom Zugriff bis zu Berechtigungen. |
+| Inhaltsautorin bzw. -autor | Erstellt und überprüft die Inhalte in AEM. | Sobald die bzw. der Systemadmin die Berechtigungen erteilt hat, können Autorinnen und Autoren ihre eigene Journey starten, um Inhalte zu erstellen |
+| Entwicklerin bzw. Entwickler | Entwickelt AEM-Anwendungen, die Inhalte aus verschiedenen Quellen nutzen. | Sobald die bzw. der Systemadmin die Berechtigungen erteilt hat, können Entwickelnde ihre eigene Journey starten, um Lösungen zu entwickeln. |
+| Bereitstellungs-Manager | Fügt eine Umgebung hinzu oder aktualisiert sie, führt Pipelines aus und stellt Code für die AEM-Umgebung oder die Code-Qualitätsprüfung bereit. | Sobald die bzw. der Systemadmin die Berechtigungen erteilt hat, können Bereitstellungs-Managerinnen bzw. -Manager ihre eigene Journey starten, um Bereitstellungen zu verwalten. |
 
 Dieses Onboarding-Handbuch zeigt den vollständigen Prozess des Onboarding als Systemadministrator. Die Rollen von AEM-Benutzern, Entwicklern und Bereitstellungs-Managern werden kurz als zusätzliche, optionale Teile der Tour erläutert.
 
@@ -83,17 +83,17 @@ In den folgenden Artikeln werden die wichtigsten Onboarding-Konzepte detailliert
 
 | | Artikel | Beschreibung | Zielgruppe |
 | --- | --- | --- | --- |
-| 0 | Onboarding-Tour | Dieses Dokument | Systemadministrator |
-| 1 | [Onboarding-Vorbereitung](preparation.md) | Bevor der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin verstehen muss, bevor er sich beim System anmeldet. | Systemadministrator |
-| 2 | [Terminologie von AEM as a Cloud Service](terminology.md) | Bevor Sie sich zum ersten Mal bei AEMaaCS anmelden, ist es hilfreich, einige Begriffe des Systems und seiner grundlegenden Struktur zu verstehen. | Systemadministrator |
-| 3 | [Die Admin Console](admin-console.md) | Erfahren Sie, was die Admin Console ist, wie Sie sich anmelden und wie Sie Ihr Profil als Systemadministrator überprüfen können. | Systemadministrator |
-| 4 | [Zuweisen von Cloud Manager-Produktprofilen](assign-profiles-cloud-manager.md) | Überprüfen Sie Cloud Manager-Produktprofile und erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen. | Systemadministrator |
-| 5 | [Zugriff auf Experience Hub](/help/experience-hub.md) | Verwenden Sie Experience Hub , das als einheitlicher, personalisierter Einstiegspunkt in das AEM-Ökosystem dient. | AEM-Benutzende |
-| 6 | [Zugreifen auf Cloud Manager](cloud-manager.md) | Erfahren Sie, wie Sie auf Cloud Manager zugreifen können, damit Sie Ihre Projektressourcen einrichten können. | Systemadministrator |
-| 7 | [Erstellen eines Programms](create-program.md) | Erfahren Sie, wie Sie ein Programm mit Cloud Manager erstellen. | Systemadministrator |
-| 8 | [Erstellen von Umgebungen](create-environments.md) | Erfahren Sie, wie Sie mit Cloud Manager eine Umgebung erstellen. | Systemadministrator |
-| 9 | [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) | Erfahren Sie, wie der Systemadministrator Ihre Team-Mitglieder in AEM as a Cloud Service Produktprofilen zuweist. | Systemadmin |
-| 10 | [Aufgaben für Entwickler und Bereitstellungs-Manager](developers.md) | Optional - Erfahren Sie, wie Sie als Entwickler auf Cloud Manager Git zugreifen und es verwalten können. Erfahren Sie, wie Sie als Bereitstellungs-Manager Pipelines einrichten und Code in Cloud Manager bereitstellen. | Entwickelnde und Bereitstellungs-Manager |
+| 0 | Onboarding-Tour | Dieses Dokument | Systemadmin |
+| 1 | [Onboarding-Vorbereitung](preparation.md) | Bevor der Onboarding-Prozess beginnt, gibt es eine Reihe von vorbereitenden Schritten, die der Systemadmin verstehen muss, bevor er sich beim System anmeldet. | Systemadmin |
+| 2 | [Terminologie von AEM as a Cloud Service](terminology.md) | Bevor Sie sich zum ersten Mal bei AEMaaCS anmelden, ist es hilfreich, einige Begriffe des Systems und seiner grundlegenden Struktur zu verstehen. | Systemadmin |
+| 3 | [Die Admin Console](admin-console.md) | Erfahren Sie, was die Admin Console ist, wie Sie sich anmelden und wie Sie Ihr Profil als Systemadministrator überprüfen können. | Systemadmin |
+| 4 | [Zuweisen von Cloud Manager-Produktprofilen](assign-profiles-cloud-manager.md) | Überprüfen Sie die Cloud Manager-Produktprofile und erfahren Sie, wie Sie Team-Mitglieder Cloud Manager-Produktprofilen zuweisen. | Systemadmin |
+| 5 | [Zugreifen auf Experience Hub](/help/experience-hub.md) | Verwenden Sie Experience Hub als einheitlichen, personalisierten Einstiegspunkt in das AEM-Ökosystem. | AEM-Benutzende |
+| 6 | [Zugreifen auf Cloud Manager](cloud-manager.md) | Erfahren Sie, wie Sie auf Cloud Manager zugreifen, damit Sie Ihre Projektressourcen einrichten können. | Systemadmin |
+| 7 | [Erstellen eines Programms](create-program.md) | Erfahren Sie, wie Sie ein Programm mit Cloud Manager erstellen. | Systemadmin |
+| 8 | [Erstellen von Umgebungen](create-environments.md) | Erfahren Sie, wie Sie mit Cloud Manager eine Umgebung erstellen. | Systemadmin |
+| 9 | [Zuweisen von AEM-Produktprofilen](assign-profiles-aem.md) | Erfahren Sie, wie die bzw. der Systemadmin Ihre Team-Mitglieder in AEM as a Cloud Service Produktprofilen zuordnet. | Systemadmin |
+| 10 | [Aufgaben für Entwicklung und Bereitstellungs-Management](developers.md) | Optional: Erfahren Sie, wie Sie als Entwicklerin bzw. Entwickler auf Cloud Manager Git zugreifen und es verwalten. Erfahren Sie, wie Sie als Bereitstellungs-Managerin bzw. -Manager in Cloud Manager Pipelines einrichten und Code bereitstellen. | Entwicklung und Bereitstellungs-Management |
 | 11 | [AEM-Benutzeraufgaben](aem-users.md) | Optional: Als AEM-Autor oder -Autorin erfahren Sie, wie Sie auf eine Instanz von AEM as a Cloud Service zugreifen und sich mit der Inhaltserstellung für AEM as a Cloud Service vertraut machen können. | AEM-Benutzende |
 
 ## Wie geht es weiter {#what-is-next}

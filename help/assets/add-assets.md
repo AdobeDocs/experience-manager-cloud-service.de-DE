@@ -5,9 +5,9 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 967923c621774bcbda65bac9428eaaf18a99a9cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3177'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
 | Upload-Methode | Anwendungsfall | Primärpersonen |
 |---------------------|----------------|-----------------|
 | [Benutzeroberfläche der Assets-Konsole](#upload-assets) | Gelegentliches Hochladen, einfaches Drücken und Ziehen, Finder-Upload. Verwenden Sie sie nicht zum Hochladen vieler Assets. | Alle Benutzer |
-| [Upload-API](#upload-using-apis) | Für dynamische Entscheidungen beim Hochladen. | Entwickler |
+| [Upload-API](#upload-using-apis) | Für dynamische Entscheidungen beim Hochladen. | Entwicklerin bzw. Entwickler |
 | [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) | Asset-Aufnahme mit niedrigem Volumen, jedoch nicht zur Migration. | Administrator, Marketingexperte |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) | Nützlich, wenn Kreative und Marketingexperten mit Assets aus den unterstützten [!DNL Creative Cloud]-Desktop-Programmen arbeiten. | Kreative, Marketingexperte |
 | [Tool zur Asset-Massenaufnahme](#asset-bulk-ingestor) | Empfohlen für umfangreiche Migrationen und gelegentliche Massenaufnahmen. Nur für unterstützte Datenspeicher. | Administrator, Entwickler |
@@ -148,7 +148,7 @@ Verwenden Sie einen der folgenden Ansätze, um eine größere Anzahl von Dateien
 
 Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich eine Video-Anleitung zur Konfiguration und Aufnahme an.
 
->[!VIDEO](https://video.tv.adobe.com/v/341385/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in Experience Manager aus einem Datenspeicher:
 
@@ -384,7 +384,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Der direkte binäre Upload ist eine neue Methode zum Hochladen von Assets. Sie wird standardmäßig von den Produktfunktionen und Clients wie der [!DNL Experience Manager]-Benutzeroberfläche, [!DNL Adobe Asset Link] und dem [!DNL Experience Manager]-Desktop-Programm unterstützt. Jeder benutzerdefinierte Code, der von den technischen Teams des Kunden angepasst oder erweitert wird, muss die neuen Kunde-APIs und Protokolle verwenden.
 
-* [!DNL Experience Manager Assets] unterstützt jetzt Ordner, die eine große Anzahl untergeordneter Assets enthalten. Sobald ein Ordner über 1.000 direkt untergeordnete Elemente (Assets oder Unterordner) enthält, verwendet die Admin-Benutzeroberfläche einen asynchron aktualisierten Index, um die Ordnerinhalte aufzulisten. Daher kann es zu einer kurzen Verzögerung bei der Sichtbarkeit von neu erstellten Ordnern und Assets kommen (in der Regel nur wenige Sekunden). Wenn ein solcher Ordner in der Admin-Ansicht geöffnet wird, wird ein Banner angezeigt, das die Endbenutzer über dieses Verhalten informiert und Folgendes angibt: „Dieses Verzeichnis enthält mehr als 1.000 Elemente. Uploads und die Erstellung neuer Ordner können sich verzögern.“
+* [!DNL Experience Manager Assets] unterstützt jetzt Ordner, die eine große Anzahl untergeordneter Assets enthalten. Sobald ein Ordner über 1.000 direkt untergeordnete Elemente (Assets oder Unterordner) enthält, verwendet die Admin-Benutzeroberfläche einen asynchron aktualisierten Index, um die Ordnerinhalte aufzulisten. Daher kann es zu einer kurzen Verzögerung bei der Sichtbarkeit von neu erstellten Ordnern und Assets kommen (in der Regel nur wenige Sekunden). Wenn ein solcher Ordner in der Admin-Ansicht geöffnet wird, wird ein Banner angezeigt, das die Endbenutzenden über dieses Verhalten informiert und Folgendes angibt: „Dieses Verzeichnis enthält mehr als 1.000 Elemente. Bei Uploads und dem Erstellen neuer Ordner kann es zu Verzögerungen kommen.“
 
 * Wenn Sie die Option **[!UICONTROL Ersetzen]** im Dialogfeld [!UICONTROL Namenskonflikt] auswählen, wird die Asset-ID für das neue Asset neu generiert. Diese ID unterscheidet sich von der ID des vorherigen Assets. Wenn [Asset Insights](/help/assets/assets-insights.md) zur Verfolgung von Impressions oder Klicks mit [!DNL Adobe Analytics] aktiviert ist, werden die für das Asset in [!DNL Analytics] erfassten Daten durch die erneut generierte Asset-ID ungültig.
 

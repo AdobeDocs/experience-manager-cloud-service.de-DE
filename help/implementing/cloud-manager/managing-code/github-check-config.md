@@ -1,17 +1,17 @@
 ---
-title: Pull-Anforderungsprüfungen für private Repositorys
+title: Pull-Request-Prüfungen für private Repositorys
 description: Erfahren Sie, wie Sie die automatisch erstellten Pipelines so steuern, dass sie jede Pull-Anfrage an ein privates Repository validieren.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Pull-Anforderungsprüfungen für private Repositorys {#github-check-config}
+# Pull-Request-Prüfungen für private Repositorys {#github-check-config}
 
 Erfahren Sie, wie Sie die automatisch erstellten Pipelines so steuern, dass sie jede Pull-Anfrage an ein privates Repository validieren.
 

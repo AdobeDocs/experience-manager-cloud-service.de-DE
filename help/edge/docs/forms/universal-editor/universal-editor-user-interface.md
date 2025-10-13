@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Die **Symbolleiste des universellen Editors** verfügt über wichtige Aktionen z
 
 **Für Ihr erstes Formular:**
 
-1. **Komponente eines adaptiven Formulars hinzufügen** - Fügen Sie die `Adaptive Form` Komponente in einen Abschnitt ein.
+1. **Komponente eines adaptiven Formulars hinzufügen** – Fügen Sie die Komponente `Adaptive Form` in einen Abschnitt ein.
 2. **Mit dem Erstellen beginnen** – Fügen Sie Komponenten mithilfe der Schaltfläche **Hinzufügen** hinzu(`a`).
 3. **Felder konfigurieren** – Wählen Sie Komponenten aus und nutzen Sie den **Eigenschaftenmodus** (`d`).
 4. **Formular testen** – Nutzen Sie den **Vorschaumodus** (`p`), um mit Ihrem Formular zu interagieren.
@@ -121,7 +121,7 @@ Die **Symbolleiste des universellen Editors** verfügt über wichtige Aktionen z
 
 >[!NOTE]
 >
-> Die detaillierten Schritte zum Erstellen von Formularen im universellen Editor finden Sie unter [Erstellen und Veröffentlichen von adaptiven Forms mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Die detaillierten Schritte zum Erstellen von Formularen im universellen Editor finden Sie unter [Erstellen und Veröffentlichen von adaptiven Formularen mit Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Validierungs-Checkpoints:**
 
@@ -223,7 +223,7 @@ Die **Symbolleiste des universellen Editors** enthält die wichtigsten Bearbeitu
 
 #### **AEM-Formulareigenschaften**
 
-**Zweck:** Konfigurieren von Einstellungen auf Formularebene wie Formulardatenmodell (FDM), Konfigurieren von Sendeaktionen und Veröffentlichungsdaten\
+**Zweck:** Konfigurieren von Einstellungen auf Formularebene wie Formulardatenmodell (FDM), Konfiguration von Übermittlungsdaten und Veröffentlichungsdaten.\
 **Verwendung:** Einrichten von Datenintegrationen, Planen der Veröffentlichung.
 
 ![Formulareigenschaften](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
