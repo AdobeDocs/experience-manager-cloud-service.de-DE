@@ -131,7 +131,7 @@ Bevorstehende Änderungen an der Container-Infrastruktur für das Ausführen von
 >[!NOTE]
 >
 >Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.
->>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
+>&#x200B;>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
 
 ### Lokale Testausführung {#local-test-execution}
 
