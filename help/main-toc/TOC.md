@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b6c3bfcdf5526e3cfbbcefd2791c77ef359574a7
+source-git-commit: 259fea8d72e2f6bddf390232ad05869ea05e2c3a
 workflow-type: tm+mt
-source-wordcount: '6839'
+source-wordcount: '6845'
 ht-degree: 96%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 96%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Wartungsversionshinweise für 2025.10.0](/help/release-notes/maintenance/2025/2025-10-0.md)
          + [Wartungsversionshinweise für 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [Wartungversionshinweise für 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [Wartungversionshinweise für 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
@@ -1211,7 +1212,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
       + [JSON-Vorschau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
