@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 100%
+source-wordcount: '855'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Mit denselben Tools, die Adobe zum Schreiben von Produktfunktionstests verwendet
 
 Der Code für den benutzerdefinierten Funktionstest ist Java™-Code im Ordner `it.tests` Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist es nicht bestimmbar, welche JAR ausgewählt wird. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Beispieltests finden Sie über den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
 
-Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Authoring-Instanzen, zwei Publishing-Instanzen und eine Dispatcher-Konfiguration umfasst. Dieses Setup bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stapel ausgeführt werden.
+Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Publishing-Instanzen und eine Dispatcher-Konfiguration umfasst. Dieses Setup bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stapel ausgeführt werden.
 
 ### Struktur von Funktionstests {#functional-tests-structure}
 
@@ -131,7 +131,7 @@ Bevorstehende Änderungen an der Container-Infrastruktur für das Ausführen von
 >[!NOTE]
 >
 >Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.
->Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
+>>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
 
 ### Lokale Testausführung {#local-test-execution}
 

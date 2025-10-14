@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '516'
 ht-degree: 36%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 36%
 
 >[!NOTE]
 >
->&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das private Beta-Programm verfügbar. Informationen zur Anmeldung bei Private Beta finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>Die in diesem Artikel beschriebene Funktion ist nur über das private Beta-Programm verfügbar. Informationen zur Anmeldung bei Private Beta finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Die spezialisierte Testumgebung (oder DevXL) ist eine neue Art von Cloud Manager-Umgebung, die Sie erstellen können. Es wurde entwickelt, um erweiterte Anwendungsfälle wie Benutzerakzeptanztests (UAT) und Leistungsvalidierung zu unterstützen. Im Gegensatz zu herkömmlichen Entwicklungs-, Rapid Development- oder Staging-Umgebungen werden DevXL-Umgebungen außerhalb der Produktionsbereitstellungs-Pipeline ausgeführt. Auf diese Weise bieten sie Ihnen mehr Flexibilität bei gleichzeitiger strikter Isolation, um Störungen in Produktions-Workflows zu vermeiden.
 
@@ -35,7 +35,7 @@ DevXL wurde entwickelt, um die Größe, Skalierbarkeit und Konfigurationen einer
 | Inhaltswiederherstellung | Wie die Entwicklungsumgebung. |
 | Zugriffsprotokolle | Wie die Entwicklungsumgebung. |
 | Developer Console | Wie die Entwicklungsumgebung. |
-| IP-Zulassungsliste | Wie die Entwicklungsumgebung. |
+| `IP Allow List` | Wie die Entwicklungsumgebung. |
 | Vernetzung | Identisch mit der Entwicklungsumgebung (Services, Domain-Name, SSL-Zertifikate, erweitertes Netzwerk). |
 
 Siehe auch [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)

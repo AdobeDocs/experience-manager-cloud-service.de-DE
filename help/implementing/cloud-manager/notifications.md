@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 100%
+source-wordcount: '585'
+ht-degree: 83%
 
 ---
 
@@ -45,11 +45,9 @@ Klicken Sie auf die Option **Alle als gelesen markieren** am Ende des Bedienfeld
 
 Sie können einstellen, wie Sie welche Benachrichtigungen erhalten möchten.
 
-Klicken Sie auf das Zahnradsymbol oben in der Benachrichtigungsseitenleiste.
+Klicken Sie auf das Zahnradsymbol oben in der Benachrichtigungsseitenleiste, um das Fenster **Experience Cloud-Einstellungen** zu öffnen. Hier können Sie Ihre Benachrichtigungsabonnements und den Empfang Ihrer Benachrichtigungen definieren.
 
 ![Symbol für Benachrichtigungseinstellungen](assets/notifications-configuration.png)
-
-Dadurch öffnet sich das Fenster **Experience Cloud-Einstellungen**, in dem Sie Benachrichtigungsabonnements auswählen und festlegen können, wie Sie Benachrichtigungen erhalten.
 
 ### Abonnements {#subscriptions}
 
@@ -57,13 +55,13 @@ Mit den Abonnements legen Sie fest, welche Benachrichtigungen Sie für welche Pr
 
 ![Abonnements für Benachrichtigungen](assets/notifications-subscriptions.png)
 
-Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte in der Anwendung und per E-Mail. Klicken Sie auf den Pfeil neben einem Produktnamen, um die detaillierten Optionen anzuzeigen und die Benachrichtigungstypen zu definieren, die Sie für dieses Produkt erhalten möchten. Oder aktivieren oder deaktivieren Sie die Optionen auf Produktebene, um alle Optionen für das Produkt auszuwählen/abzuwählen.
+Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte sowohl in der Anwendung als auch per E-Mail. Klicken Sie auf den Pfeil neben einem Produktnamen, um die detaillierten Optionen anzuzeigen und die Arten von Benachrichtigungen festzulegen, die Sie für dieses Produkt erhalten möchten. Oder aktivieren oder deaktivieren Sie die Optionen auf Produktebene, um alle Optionen für das Produkt auszuwählen/abzuwählen.
 
 ![Anpassung des Benachrichtigungsabonnements](assets/notifications-subscriptions-customize.png)
 
 ### Priorität {#priority}
 
-Prioritätswarnhinweise werden mit einem **HOCH**-Tag gekennzeichnet und können so konfiguriert werden, dass sie ausschließlich als Warnhinweise empfangen werden. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
+Prioritätswarnungen werden mit einem **HOCH**-Tag gekennzeichnet. Sie können sie so konfigurieren, dass sie ausschließlich als Warnhinweise empfangen werden. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
 
 ![Benachrichtigungspriorität](assets/notifications-priority.png)
 
@@ -93,4 +91,4 @@ Standardmäßig werden keine E-Mails versendet. Sie haben für den E-Mail-Empfan
 * Täglich
 * Wöchentlich
 
-Wenn die **sofortige Benachrichtigung** ausgewählt ist, werden für jede Benachrichtigung sofort E-Mails versendet. Bei einer **täglichen Zusammenfassung** können Sie die Uhrzeit und bei einer **wöchentlichen Zusammenfassung** können Sie den Tag und die Uhrzeit des Versands auswählen.
+Wenn Sie **Sofortige Benachrichtigungen** auswählen, werden für jede Benachrichtigung sofort E-Mails gesendet. Bei einer **täglichen Zusammenfassung** können Sie die Uhrzeit und bei einer **wöchentlichen Zusammenfassung** können Sie den Tag und die Uhrzeit des Versands auswählen.
