@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
-workflow-type: ht
-source-wordcount: '2409'
-ht-degree: 100%
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
+workflow-type: tm+mt
+source-wordcount: '2478'
+ht-degree: 95%
 
 ---
 
@@ -23,80 +23,70 @@ Kundinnen und Kunden, die eine Lizenz bei einem Protokollierungsanbieter besitze
   <tbody>
     <tr>
       <th>Protokolltechnologie</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nein</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>Azure Blob Storage</td>
-      <td>Nein</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>Nein</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nein</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>ElasticSearch<br>OpenSearch</td>
-      <td>Nein</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>Nein</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nein</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>Nein</td>
       <td>Ja</td>
       <td>Ja</td>
       <td>Ja</td>
     </tr>
     <tr>
       <td>Sumo Logic</td>
-      <td style="background-color: #ffb3b3;">Ja</td>
       <td>Ja</td>
       <td>Ja</td>
-      <td style="background-color: #ffb3b3;">Nein</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Für Technologien in Private Beta senden Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um den Zugriff anzufordern.
+> Für geplante künftige CDN-Protokolltechnologien senden Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um Interesse zu bekunden.
 
 Die Protokollweiterleitung wird im Self-Service-Modus konfiguriert, indem eine Konfiguration in Git deklariert wird, und kann über Cloud Manager-Konfigurations-Pipelines für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
@@ -247,6 +237,8 @@ Für CDN-Protokolle können Sie die IP-Adressen auf die Zulassungsliste setzen, 
 >[!NOTE]
 >
 >Es ist nicht möglich, dass CDN-Protokolle von derselben IP-Adresse aus angezeigt werden, von der Ihre AEM-Protokolle stammen, da Protokolle direkt von Fastly und nicht von AEM Cloud Service gesendet werden.
+>
+>Aus diesem Grund ist es nicht möglich, die Protokollweiterleitung mit erweiterten Netzwerk-VPN-Konfigurationen zu verwenden.
 
 ## Konfiguration des Protokollierungsziels {#logging-destinations}
 
@@ -293,6 +285,9 @@ Die IAM-Richtlinie sollte dem Benutzenden die Verwendung von `s3:putObject` erm�
 ```
 
 Weitere Informationen zur Implementierung finden Sie in der [Dokumentation zur AWS-Bucket-Richtlinie](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html).
+
+>[!NOTE]
+>CDN-Protokollunterstützung für AWS S3 ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
 
 ### Azure Blob Storage {#azureblob}
 
@@ -491,7 +486,7 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic-HTTPS-API für die A
 >
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->Senden Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um Zugriff anzufordern.
+>Die Unterstützung des CDN-Protokolls für die New Relic-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [New Relic-Dokumentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
@@ -515,8 +510,7 @@ Das Umfangsattribut „Ingest Logs“ ist für das Token erforderlich.
 ```
 
 >[!NOTE]
->
-> Senden Sie eine E-Mail an [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com), um Zugriff anzufordern.
+>Die Unterstützung des CDN-Protokolls für die Dynatrace-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>CDN Log-Unterstützung für SumoLogic ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
+>
 > Sie benötigen ein Sumo Logic Enterprise-Abonnement, um die Indexfeldfunktion nutzen zu können.  Bei Nicht-Enterprise-Abonnements werden die Protokolle standardmäßig an die `sumologic_default`-Partition weitergeleitet.  Weitere Informationen finden Sie in der [Dokumentation zur Sumo Logic-Partitionierung](https://help.sumologic.com/docs/search/optimize-search-partitions/).
 
 ## Protokolleintragsformate {#log-formats}
