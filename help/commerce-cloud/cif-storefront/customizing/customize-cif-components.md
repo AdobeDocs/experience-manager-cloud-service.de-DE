@@ -74,7 +74,7 @@ Die Produkt-Teaser-Komponente wird im Laufe dieses Tutorials erweitert. Als erst
 
 1. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie in der Dropdown-Liste der Asset-Suche zu **Produkte**. Diese Liste sollte eine Liste der verfügbaren Produkte aus einer verbundenen Adobe Commerce-Instanz anzeigen. Wählen Sie ein Produkt aus und ziehen Sie es auf der Seite per **Drag-and-Drop** auf die Komponente **Produkt-Teaser**.
 
-   ![Produkt-Teaser ziehen und ablegen ](../assets/customize-cif-components/drag-drop-product-teaser.png)
+   ![Produkt-Teaser ziehen und ablegen &#x200B;](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
    >[!NOTE]
    >
@@ -284,7 +284,7 @@ Verwenden Sie [eine IDE Ihrer Wahl](https://experienceleague.adobe.com/docs/expe
 
    >[!NOTE]
    >
-   > Die `createdAt()` Methode wurde als Teil der [ implementiert.](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) Die meisten gängigen Schemaattribute wurden implementiert. Verwenden Sie daher nur die `addCustomSimpleField` für wirklich benutzerdefinierte Attribute.
+   > Die `createdAt()` Methode wurde als Teil der [&#x200B; implementiert.](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) Die meisten gängigen Schemaattribute wurden implementiert. Verwenden Sie daher nur die `addCustomSimpleField` für wirklich benutzerdefinierte Attribute.
 
 1. Fügen Sie eine Protokollfunktion hinzu, damit Sie den Java™-Code debuggen können:
 

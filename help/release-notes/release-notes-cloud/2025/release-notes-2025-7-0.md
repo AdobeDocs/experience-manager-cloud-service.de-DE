@@ -179,7 +179,7 @@ Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente F
 
 ### Knotenansicht für die Verwaltung von Berechtigungen {#node-view}
 
-AEM führt die Berechtigungsverwaltung für Knotenansichten ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter. Weitere Informationen finden [ im ](/help/security/touch-ui-principal-view.md) Artikel .
+AEM führt die Berechtigungsverwaltung für Knotenansichten ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter. Weitere Informationen finden [&#x200B; im &#x200B;](/help/security/touch-ui-principal-view.md) Artikel .
 
 ### Aktualisierter Prozess zur Abschaffung {#updated-deprecation-process}
 

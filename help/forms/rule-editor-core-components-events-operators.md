@@ -347,7 +347,7 @@ Ebenso können Sie eine Regel **Navigieren zwischen den Bereichen** schreiben, u
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier &#x200B;](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
 #### [!UICONTROL Async-Funktionsaufruf]
 
@@ -389,7 +389,7 @@ To define a rule based on a form data model:
 
 ## Nächster Schritt
 
-Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) ](/help/forms/rule-editor-core-components-usecases.md).
+Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) &#x200B;](/help/forms/rule-editor-core-components-usecases.md).
 
 ## Siehe auch
 

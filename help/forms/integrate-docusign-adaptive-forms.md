@@ -163,7 +163,7 @@ Jetzt ist Ihre AEM Forms-Umgebung für die Verwendung von DocuSign konfiguriert.
 Sie können [!DNL DocuSign] für ein vorhandenes adaptives Formular aktivieren oder ein [!DNL DocuSign]-fähiges adaptives Formular erstellen. Wählen Sie eine der folgenden Möglichkeiten:
 
 - [Ein  [!DNL DocuSign] -fähiges adaptives Formular erstellen](#create-an-adaptive-form-for-docusign)
-- [ [!DNL DocuSign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
+- [&#x200B; [!DNL DocuSign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
 
 #### Adaptives Formular für DocuSign erstellen {#create-an-adaptive-form-for-docusign}
 

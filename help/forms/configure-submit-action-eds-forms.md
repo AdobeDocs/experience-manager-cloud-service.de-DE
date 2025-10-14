@@ -59,11 +59,11 @@ You can configure the submit action for forms created in the Universal Editor us
 >[!NOTE]
 >
 > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [&#x200B; im Artikel &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
 
 ## Übermittlungsaktionen für dokumentbasierte Forms
 
-Dokumentbasierte Forms-Unterstützung nur für die Übermittlung an Tabellen. Informationen dazu, wie Sie Ihre Kalkulationstabelle für den Empfang gesendeter Daten einrichten, finden Sie in den Anweisungen im Artikel [Einrichten von Google Sheets oder Microsoft Excel-Dateien, um mit dem Akzeptieren von Daten ](/help/edge/docs/forms/submit-forms.md) beginnen“.
+Dokumentbasierte Forms-Unterstützung nur für die Übermittlung an Tabellen. Informationen dazu, wie Sie Ihre Kalkulationstabelle für den Empfang gesendeter Daten einrichten, finden Sie in den Anweisungen im Artikel [Einrichten von Google Sheets oder Microsoft Excel-Dateien, um mit dem Akzeptieren von Daten &#x200B;](/help/edge/docs/forms/submit-forms.md) beginnen“.
 
 ## Siehe auch {#see-also}
 

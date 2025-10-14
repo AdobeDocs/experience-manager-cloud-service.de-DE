@@ -42,7 +42,7 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint-Dokumentbibliotheksp
 
      >[!NOTE]
      >
-     > Sie können die [SharePoint-Sites mit eingeschränktem Zugriff auch ](/help/forms/configure-sharepoint-site-limited-access.md) konfigurieren, indem Sie den Berechtigungsbereich `Sites.Selected` in der Microsoft Graph-API verwenden. `Sites.Selected` ist ein Berechtigungsbereich in der Microsoft Graph-API, der einen stärker granularen und eingeschränkten Zugriff auf SharePoint-Sites ermöglicht.
+     > Sie können die [SharePoint-Sites mit eingeschränktem Zugriff auch &#x200B;](/help/forms/configure-sharepoint-site-limited-access.md) konfigurieren, indem Sie den Berechtigungsbereich `Sites.Selected` in der Microsoft Graph-API verwenden. `Sites.Selected` ist ein Berechtigungsbereich in der Microsoft Graph-API, der einen stärker granularen und eingeschränkten Zugriff auf SharePoint-Sites ermöglicht.
 
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
@@ -116,7 +116,7 @@ Das **Formulareigenschaften** wird angezeigt.
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [ im Artikel ](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [&#x200B; im Artikel &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An SharePoint übermitteln]** Übermittlungsaktion aus.
    ![Sharepoint-GIF](/help/forms/assets/submit-to-sharepoint-ue.png)

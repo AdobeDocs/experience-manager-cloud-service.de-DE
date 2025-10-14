@@ -20,7 +20,7 @@ ht-degree: 71%
 * Abfragen eines [!DNL Salesforce]-Servers nach Daten und Auffüllen adaptiver Formulare.
 * Lesen Sie Daten vom [!DNL Salesforce]-Server.
 
-[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet ](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ ht-degree: 71%
 
 Stellen Sie vor dem Konfigurieren von [!DNL Salesforce]-Cloud-Services sicher, dass Sie die folgenden Aufgaben ausführen:
 
-* [Erstellen Sie eine verbundene OAuth-fähige  [!DNL Salesforce] Anwendung](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Wenn Sie die verbundene [!DNL Salesforce]-Anwendung erstellen, geben Sie die Callback-URL im folgenden Format an:
+* [Erstellen Sie eine verbundene OAuth-fähige  [!DNL Salesforce] Anwendung](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Wenn Sie die verbundene [!DNL Salesforce]-Anwendung erstellen, geben Sie die Callback-URL im folgenden Format an:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html

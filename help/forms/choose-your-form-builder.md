@@ -181,7 +181,7 @@ Nachdem Sie Ihren Formular-Builder ausgewählt haben:
 ### Universeller Editor (Edge Delivery Services)
 
 1. **WYSIWYG-Authoring:** [Erste Schritte mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-2. **Dokumentenbasiertes Authoring:** Erstellen [ ersten Formulars mit Tabellen](/help/edge/docs/forms/tutorial.md)
+2. **Dokumentenbasiertes Authoring:** Erstellen [&#x200B; ersten Formulars mit Tabellen](/help/edge/docs/forms/tutorial.md)
 
 
 ## Benötigen Sie Hilfe bei der Entscheidungsfindung?

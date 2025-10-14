@@ -136,7 +136,7 @@ Der Formularentwickler bindet die Felder des adaptiven Formulars an die entsprec
 
 Beim Versenden des adaptiven Formulars wird nun fortan ein aktualisiertes Datensatzdokument erstellt.
 
-![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit einem Datensatzdokument {#key-considerations-when-working-with-document-of-record}
 

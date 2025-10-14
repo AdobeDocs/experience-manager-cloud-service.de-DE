@@ -34,7 +34,7 @@ Im Folgenden finden Sie einen kurzen Überblick über die erforderlichen Schritt
 
 ## Konfigurieren einer HTML-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) &#x200B;](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
 
 ### Option 1: Eine Datei mit der HTML-Vorlage auswählen
 
@@ -64,7 +64,7 @@ Ihre HTML-Vorlage ist jetzt für das adaptive Formular konfiguriert.
 
 ## Konfigurieren einer Nur-Text-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) &#x200B;](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
 
 ### Option 1: Wählen Sie eine Datei aus, die die Vorlage enthält
 
@@ -159,4 +159,4 @@ Im Folgenden finden Sie ein Beispiel für eine Nur-Text-E-Mail-Vorlage:
 * Verwenden Sie Tools wie Litmus oder Email on Acid, um eine Vorschau Ihrer E-Mail über verschiedene E-Mail-Clients hinweg anzuzeigen.
 * Stellen Sie sicher, dass die Platzhalternamen genau mit den Formularfeldnamen übereinstimmen.
 * Prüfen Sie Ihre HTML-Vorlage auf fehlende oder falsche Tags.
-* Überprüfen Sie, ob [ Übermittlungsaktion ](/help/forms/configure-submit-action-send-email.md)E-Mail senden“ korrekt konfiguriert ist.
+* Überprüfen Sie, ob [&#x200B; Übermittlungsaktion &#x200B;](/help/forms/configure-submit-action-send-email.md)E-Mail senden“ korrekt konfiguriert ist.

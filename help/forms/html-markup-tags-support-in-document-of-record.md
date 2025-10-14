@@ -34,7 +34,7 @@ Sie sollten vertraut sein mit:
 
 ### Überlegungen
 
-Das Datensatzdokument (DoR) kann ein PDF mit Tags sein, wodurch Barrierefreiheit und eine ordnungsgemäße Struktur für Hilfstechnologien sichergestellt werden. Um die Ausgabe mit Tags in PDF zu aktivieren[ setzen Sie die XCI-Eigenschaft `config/present/pdf/tagged` auf `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nachdem Sie Ihre PDF generiert haben, müssen Sie sicherstellen, dass Barrierefreiheits-Tags korrekt angewendet werden. Sie können [Adobe Acrobat verwenden, um Barrierefreiheits-Tags zu ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) und sicherzustellen, dass Ihr Dokument den Barrierefreiheitsstandards entspricht.
+Das Datensatzdokument (DoR) kann ein PDF mit Tags sein, wodurch Barrierefreiheit und eine ordnungsgemäße Struktur für Hilfstechnologien sichergestellt werden. Um die Ausgabe mit Tags in PDF zu aktivieren[&#x200B; setzen Sie die XCI-Eigenschaft `config/present/pdf/tagged` auf `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nachdem Sie Ihre PDF generiert haben, müssen Sie sicherstellen, dass Barrierefreiheits-Tags korrekt angewendet werden. Sie können [Adobe Acrobat verwenden, um Barrierefreiheits-Tags zu &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) und sicherzustellen, dass Ihr Dokument den Barrierefreiheitsstandards entspricht.
 
 ### Neue Funktionen
 

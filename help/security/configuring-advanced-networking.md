@@ -59,7 +59,7 @@ In diesem Artikel wird jede dieser Optionen zunächst im Detail beschrieben und 
 
 >[!CAUTION]
 >
->Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&amp;lang=de#home).
+>Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&lang=de#home).
 >
 >Der Versuch, erweiterte Netzwerke mit einer veralteten Egress-Technologie zu konfigurieren, kann sich auf die Konnektivität der Site auswirken.
 
@@ -738,7 +738,7 @@ Sobald die Netzwerkinfrastruktur für ein Programm erstellt wurde, können nur b
 
 1. Navigieren Sie auf der **Programmübersicht** zur Registerkarte **Umgebungen**.
 1. Klicken Sie im linken Bedienfeld auf **Netzwerkinfrastruktur**.
-1. Klicken Sie ![Mehr-Symbol, ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)) neben der Infrastruktur, die Sie löschen möchten.
+1. Klicken Sie ![Mehr-Symbol, &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)) neben der Infrastruktur, die Sie löschen möchten.
 
    ![Auswählen der Bearbeitung oder Löschung erweiterter Netzwerkkonfigurationen auf Programmebene](assets/advanced-networking-ui-delete-infrastructure.png)
 

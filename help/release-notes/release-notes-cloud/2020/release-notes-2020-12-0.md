@@ -66,9 +66,9 @@ Die Version as a Cloud Service 2020.12.0 von Cloud Manager in Adobe Experience M
 
 ### Neue Funktionen in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für AEM Dispatcher Converter und Repository Modernizer und unterstützt außerdem ein neues Dienstprogramm: Index Converter. Weitere [ zu diesem Plug-in finden ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) unter „Einheitliches“.
+* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für AEM Dispatcher Converter und Repository Modernizer und unterstützt außerdem ein neues Dienstprogramm: Index Converter. Weitere [&#x200B; zu diesem Plug-in finden &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) unter „Einheitliches“.
 
-* Index Converter ist ein Dienstprogramm, mit dem Sie die benutzerdefinierten Oak-Indexdefinitionen eines Kunden in AEM as a Cloud Service-kompatible Oak-Indexdefinitionen umwandeln können. Weitere Informationen finden [ unter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)Index Converter“.
+* Index Converter ist ein Dienstprogramm, mit dem Sie die benutzerdefinierten Oak-Indexdefinitionen eines Kunden in AEM as a Cloud Service-kompatible Oak-Indexdefinitionen umwandeln können. Weitere Informationen finden [&#x200B; unter &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)Index Converter“.
 
 * Neue Funktion zu [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) hinzugefügt, die ein separates Paket `ui.config` erstellt, das alle OSGi-Konfigurationen enthält.
 

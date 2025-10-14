@@ -57,7 +57,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 AEM Commerce ist jetzt in Cloud Service verfügbar.
 
-Weitere [ finden Sie unter „Erste Schritte mit AEM Commerce as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de)&quot;.
+Weitere [&#x200B; finden Sie unter „Erste Schritte mit AEM Commerce as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de)&quot;.
 
 ## Kernkomponenten {#core-components}
 
@@ -139,7 +139,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Frühere Versionen des CRA konnten nicht unter Adobe Experience Manager (AEM) 6.1 ausgeführt werden. Es wurde expliziter Support hinzugefügt, um Benutzer für die Administratorgruppe zuzulassen.
 
-  Weitere [ finden Sie unter „Installieren von CRA ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) AEM 6.1“.
+  Weitere [&#x200B; finden Sie unter „Installieren von CRA &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) AEM 6.1“.
 
 * Der im Zusammenfassungsbericht angezeigte Ablaufzeitstempel war nicht korrekt.
 

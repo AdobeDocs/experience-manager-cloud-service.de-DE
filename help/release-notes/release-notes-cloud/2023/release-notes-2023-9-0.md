@@ -60,7 +60,7 @@ Sie können jetzt einem bestimmten Ordner in Ihrer -Bereitstellung Metadatenform
 
 * **Integrieren von AEM Assets as a Cloud Service mit dem dokumentbasierten Authoring für Edge Delivery Services**: Integrieren Sie AEM Assets mit dem dokumentbasierten Authoring für Edge Delivery Services, damit Website-Autoren [in AEM Assets-Repositorys verfügbare Bilder beim Authoring von Dokumenten in Microsoft Word oder Google Docs verwenden](/help/edge/overview.md).
 
-* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die in Experience Manager verwaltet werden, und [die Dateien direkt in Experience Manager ](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
+* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die in Experience Manager verwaltet werden, und [die Dateien direkt in Experience Manager &#x200B;](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
 
   ![Anheften von Elementen für Gruppen](/help/release-notes/assets/extract-archive.png)
 

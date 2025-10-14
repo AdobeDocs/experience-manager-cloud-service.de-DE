@@ -189,7 +189,7 @@ Führen Sie die folgenden Schritte aus, um bestimmte Teile einer Zeichenfolge zu
    * **Schrifteigenschaften**: Ändern Sie Schriftfamilie, Farbe und Größe mithilfe der entsprechenden Bedienfeldoptionen.
      ![format-substring](/help/assets/assets/format-substring.png)
 
-[Jeder formatierte Zeichenfolgenteil wird als Teilzeichenfolge im Teilzeichenfolgen-Selektor angezeigt, der im Bedienfeld Parameter verfügbar ist. Fügen Sie diesen formatierten Teilen Parameter hinzu, um sie mithilfe der Bereitstellungs-URL der Vorlage dynamisch zu ](#substring-parameterisation).
+[Jeder formatierte Zeichenfolgenteil wird als Teilzeichenfolge im Teilzeichenfolgen-Selektor angezeigt, der im Bedienfeld Parameter verfügbar ist. Fügen Sie diesen formatierten Teilen Parameter hinzu, um sie mithilfe der Bereitstellungs-URL der Vorlage dynamisch zu &#x200B;](#substring-parameterisation).
 
 ### Hinzufügen von Formen zur Arbeitsfläche {#add-shapes-to-the-canvas}
 
@@ -280,8 +280,8 @@ Schließen Sie die folgenden Parameter ein, um den Text, seine Schriftart, Farbe
 
 ##### Unterzeichenfolgen parametrisieren{#substring-parameterisation}
 
-Scrollen **[!UICONTROL im Bedienfeld]** Parameter“ zum Abschnitt **[!UICONTROL Teilzeichenfolgenparameter]**. Dieser Abschnitt enthält einen **Teilzeichenfolgenselektor** der die vollständige Zeichenfolge (ausgewählte Textebene) mit konsistenter Formatierung oder ihre formatierten Teile als separate Unterzeichenfolgen anzeigt. Wählen Sie eine Teilzeichenfolge aus[ um den Text, die Schriftfamilie, die Schriftgröße und die Farbe zu ](#text-formatting-parameters).
-Verwenden Sie den Teilzeichenfolgenselektor zum [ von ](#split-substring), um einzelne Teile zu parametrisieren, oder [Teilzeichenfolgen zusammenführen](#merge-substring) um einheitliche Parameter anzuwenden.
+Scrollen **[!UICONTROL im Bedienfeld]** Parameter“ zum Abschnitt **[!UICONTROL Teilzeichenfolgenparameter]**. Dieser Abschnitt enthält einen **Teilzeichenfolgenselektor** der die vollständige Zeichenfolge (ausgewählte Textebene) mit konsistenter Formatierung oder ihre formatierten Teile als separate Unterzeichenfolgen anzeigt. Wählen Sie eine Teilzeichenfolge aus[&#x200B; um den Text, die Schriftfamilie, die Schriftgröße und die Farbe zu &#x200B;](#text-formatting-parameters).
+Verwenden Sie den Teilzeichenfolgenselektor zum [&#x200B; von &#x200B;](#split-substring), um einzelne Teile zu parametrisieren, oder [Teilzeichenfolgen zusammenführen](#merge-substring) um einheitliche Parameter anzuwenden.
 
 ###### Teilzeichenfolge aufteilen{#split-substring}
 

@@ -169,7 +169,7 @@ Best Practices Analyzer 2.1.8 wurde am 22. März 2021 veröffentlicht.
 
 ### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
-* Neue Funktionen und Verbesserungen für Repository Modernizer. Die [ Version finden Sie unter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)GitHub-Ressource: Repository Modernizer .
+* Neue Funktionen und Verbesserungen für Repository Modernizer. Die [&#x200B; Version finden Sie unter &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)GitHub-Ressource: Repository Modernizer .
    * Normalisieren von OSGi-Konfigurationen (außer RepoInit-Konfigurationen) auf das bevorzugte .cfg.json-Format.
    * Umbenennen von OSGi-Konfigurationsordnern in das angegebene Format.
    * Generieren des Projekts „ui.apps.structure“.

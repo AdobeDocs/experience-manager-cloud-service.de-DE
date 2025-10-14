@@ -53,7 +53,7 @@ Zeigen Sie eine Vorschau der interaktiven Kommunikation ohne Daten, lokale Daten
 
 +++&#x200B;2. Vorschau mit lokalen JSON-Daten
 
-2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[ (FDM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
+2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[&#x200B; (FDM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
 
 2.2. Wechseln Sie im IC-Editor zu **PDF-Vorschau** > Lokale Daten verwenden.
 

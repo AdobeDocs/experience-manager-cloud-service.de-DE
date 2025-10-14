@@ -67,9 +67,9 @@ Um AEM Forms mit dem hCAPTCHA®-Service zu integrieren, führen Sie die folgende
       ![Konfigurieren Sie die Cloud Service, um Ihre AEM Forms-Umgebung mit hCaptcha zu verbinden®](assets/create-hcaptcha-config.png)
 
    >[!NOTE]
-   > Benutzende müssen die Client[seitige JavaScript-Validierungs-URL ](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht ändern, da sie bereits für die hCAPTCHA®-Validierung vorausgefüllt sind.
+   > Benutzende müssen die Client[seitige JavaScript-Validierungs-URL &#x200B;](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht ändern, da sie bereits für die hCAPTCHA®-Validierung vorausgefüllt sind.
 
-   Sobald der hCAPTCHA-Service konfiguriert ist, kann er in einem ([ Formular, das auf Kernkomponenten basiert) verwendet ](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Sobald der hCAPTCHA-Service konfiguriert ist, kann er in einem ([&#x200B; Formular, das auf Kernkomponenten basiert) verwendet &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Verwenden von hCAPTCHA® in einem für adaptive Forms-Kernkomponenten {#using-hCaptcha®-core-components}
 

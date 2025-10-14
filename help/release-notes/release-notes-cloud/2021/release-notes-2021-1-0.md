@@ -76,9 +76,9 @@ Die Version 2021.1.0 von Cloud Manager in AEM as a Cloud Service wurde am 14. J
 
 ### Neue Funktionen in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - den Index Converter. Weitere Informationen [ dieses Plug-in ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#benefits) Sie unter „Einheitliches Erlebnis“.
+* Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält Fehlerbehebungen für den AEM Dispatcher Converter und den Repository Modernizer und unterstützt auch ein neues Dienstprogramm - den Index Converter. Weitere Informationen [&#x200B; dieses Plug-in &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#benefits) Sie unter „Einheitliches Erlebnis“.
 
-* Index Converter ist ein Dienstprogramm, das verwendet werden kann, um die benutzerdefinierten OAK-Indexdefinitionen eines Kunden in mit AEM as a Cloud Service kompatible OAK-Indexdefinitionen umzuwandeln. Weitere Informationen finden [ unter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)Index Converter“.
+* Index Converter ist ein Dienstprogramm, das verwendet werden kann, um die benutzerdefinierten OAK-Indexdefinitionen eines Kunden in mit AEM as a Cloud Service kompatible OAK-Indexdefinitionen umzuwandeln. Weitere Informationen finden [&#x200B; unter &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)Index Converter“.
 
 * Neue Funktion zu [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) hinzugefügt, die ein separates Paket `ui.config` erstellt, das alle OSGi-Konfigurationen enthält.
 

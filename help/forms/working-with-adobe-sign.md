@@ -71,7 +71,7 @@ Konfigurieren von [!DNL Adobe Sign] für ein adaptives Formular:
 Sie können [!DNL Adobe Sign] für ein vorhandenes adaptives Formular aktivieren oder ein [!DNL Adobe Sign]-fähiges adaptives Formular erstellen. Wählen Sie eine der folgenden Möglichkeiten:
 
 * [Ein  [!DNL Adobe Sign] -fähiges adaptives Formular erstellen](#create-an-adaptive-form-for-adobe-sign)
-* [ [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
+* [&#x200B; [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
 
 #### Erstellen eines adaptiven Formulars für Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 

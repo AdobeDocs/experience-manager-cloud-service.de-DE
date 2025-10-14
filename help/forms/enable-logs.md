@@ -30,7 +30,7 @@ Führen Sie die folgenden Schritte aus, um Server-seitige Protokolle zu konfigur
 
 1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf. Suchen Sie die Option *Apache Sling Logging Logger-Konfiguration* und öffnen Sie sie. Folgendes Dialogfeld wird angezeigt:
 
-   ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
+   ![&#x200B; Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
    Apache Sling Logging Logger-Konfigurations-Option
 

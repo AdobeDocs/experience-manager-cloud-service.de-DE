@@ -74,7 +74,7 @@ Experience Manager Assets enthält jetzt [einfache und intuitive Tools zur Video
 
 **Dynamische Ausgabedarstellungen**
 
-Sie können jetzt [ dynamische Ausgabedarstellungen (einschließlich smartes Zuschneiden)](/help/assets/renditions.md) in Experience Manager Assets ansehen und herunterladen. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
+Sie können jetzt [&#x200B; dynamische Ausgabedarstellungen (einschließlich smartes Zuschneiden)](/help/assets/renditions.md) in Experience Manager Assets ansehen und herunterladen. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
 
 ![Dynamische Ausgabedarstellungen](/help/assets/assets/preset_smart_crop.png)
 

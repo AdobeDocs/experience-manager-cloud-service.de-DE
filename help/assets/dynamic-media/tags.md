@@ -150,7 +150,7 @@ Sie müssen die Konfigurationsschritte im Abschnitt [Konfigurieren von Adobe Ana
 
 Nach der ordnungsgemäßen Konfiguration können Sie Experience Platform Tags-Unterstützung zu einer Website mit einem Dynamic Media-Viewer hinzufügen.
 
-Weitere [ zur Verwendung des Einbettungs-Codes für die Experience Platform Tags](https://experienceleague.adobe.com/de/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code)Bibliothek finden Sie unter „Hinzufügen des Einbettungs-Codes für Experience Platform Tags“.
+Weitere [&#x200B; zur Verwendung des Einbettungs-Codes für die Experience Platform Tags](https://experienceleague.adobe.com/de/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code)Bibliothek finden Sie unter „Hinzufügen des Einbettungs-Codes für Experience Platform Tags“.
 
 Weitere Informationen zur Verwendung der Funktion für eingebetteten Code von Experience Manager Dynamic Media finden Sie unter [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/dynamic-media/embed-code.md).
 
@@ -196,7 +196,7 @@ Wenn diese Option aktiviert ist, rendert der Datenelement-Editor ein Formular mi
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Eine Liste [ unterstützten Ereignisse nach Viewer-Typ finden Sie ](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) „Dynamic Media Viewers-Referenzhandbuch“. Konsultieren Sie den Abschnitt zum gewünschten Viewer und klicken Sie auf den Unterabschnitt „Support für Tracking mit Adobe Analytics&quot;. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media Viewers nicht dokumentiert.
+Eine Liste [&#x200B; unterstützten Ereignisse nach Viewer-Typ finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) „Dynamic Media Viewers-Referenzhandbuch“. Konsultieren Sie den Abschnitt zum gewünschten Viewer und klicken Sie auf den Unterabschnitt „Support für Tracking mit Adobe Analytics&quot;. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media Viewers nicht dokumentiert.
 
 Betrachten wir nun den Lebenszyklus des *Datenelements* von Dynamic Media Viewers. Der Wert eines solchen Datenelements wird ausgefüllt, nachdem das entsprechende Dynamic Media-Viewer-Ereignis auf der Seite eintritt. Angenommen, das Datenelement verweist auf das Ereignis **[!UICONTROL LOAD]** und das zugehörige „asset“-Argument. Der Wert eines solchen Datenelements empfängt gültige Daten, nachdem der Viewer das LOAD -Ereignis zum ersten Mal ausführt. Wenn das Datenelement auf das **[!UICONTROL ZOOM]**-Ereignis und das zugehörige „scale“-Argument verweist, bleibt der Wert dieses Datenelements leer, bis der Viewer zum ersten Mal ein **[!UICONTROL ZOOM]**-Ereignis sendet.
 
@@ -669,7 +669,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
 ### Experience Manager IMS konfigurieren {#configuring-aem-ims}
 
-1. Klicken Sie im Experience Manager-Autorenknoten auf ![Hammersymbol, ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg)**Tools**, navigieren Sie dann zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
+1. Klicken Sie im Experience Manager-Autorenknoten auf ![Hammersymbol, &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg)**Tools**, navigieren Sie dann zu **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 

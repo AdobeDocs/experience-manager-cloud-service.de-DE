@@ -161,9 +161,9 @@ Best Practices Analyzer 2.1.2 wurde am 18. Februar 2021 veröffentlicht.
 ### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
 * Neue Version des AIO-CLI-Plug-ins veröffentlicht. Die neueste Version dieses Plug-ins enthält mehrere Fehlerbehebungen für den Repository Modernizer.
-Weitere Informationen [ dieses Plug-in ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#benefits) Sie unter „Einheitliches Erlebnis“.
+Weitere Informationen [&#x200B; dieses Plug-in &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=de#benefits) Sie unter „Einheitliches Erlebnis“.
 
 ### Fehlerbehebungen {#bug-fixes-crt}
 
 * Mehrere Fehlerbehebungen, die im Repository Modernizer vorgenommen wurden.
-Weitere [ finden Sie unter „GitHub-Ressource: aem-cloud-service-source](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)migration“.
+Weitere [&#x200B; finden Sie unter „GitHub-Ressource: aem-cloud-service-source](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)migration“.

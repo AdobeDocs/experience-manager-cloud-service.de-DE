@@ -19,7 +19,7 @@ Hier erfahren Sie, wie Sie Produktkatalogseiten und -vorlagen verwalten.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Content and Commerce Authoring-Journey, Erste [ mit den Authoring-Grundlagen von AEM CIF, ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md) Sie die Grundlagen des CIF-Authorings kennengelernt.
+Im vorherigen Dokument der AEM Content and Commerce Authoring-Journey, Erste [&#x200B; mit den Authoring-Grundlagen von AEM CIF, &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md) Sie die Grundlagen des CIF-Authorings kennengelernt.
 
 Dieser Artikel baut auf diesen Grundlagen auf.
 
@@ -75,7 +75,7 @@ CIF unterstützt mehrere Vorlagen mit nur wenigen Klicks. Um eine andere Vorlage
 
 Wählen Sie die entsprechende Produkt- oder Kategorievorlage aus.
 
-![Erstellen einer Vorlage: Auswählen ](assets/create-template-select.png)
+![Erstellen einer Vorlage: Auswählen &#x200B;](assets/create-template-select.png)
 
 Geben Sie den Titel ein und erstellen Sie die Seite.
 
@@ -95,7 +95,7 @@ Fügen Sie oben auf der Seite ein Bild hinzu.
 
 Die Vorlage kann mit jeder Kategorie/jedem Produkt in der Vorschau angezeigt werden. Öffnen Sie **Seiteninformationen** und wählen Sie dann **Mit Kategorie/Produkt anzeigen**. Wählen Sie das Produkt/die Kategorie aus der Auswahl aus, um eine Vorschau mit diesem Produkt/dieser Kategorie zu erhalten. Wählen Sie die Kategorie **Den Look kaufen**, um eine Vorschau der aktualisierten Vorlage zu erhalten.
 
-![Vorlage erstellen ](assets/create-template-picker.png)
+![Vorlage erstellen &#x200B;](assets/create-template-picker.png)
 
 Nun müssen Sie diese Vorlage der jeweiligen Kategorie zuweisen. Öffnen Sie „Eigenschaften“ im Menü **Seiteninformationen** und wechseln Sie zur Registerkarte „Commerce“. Klicken Sie in der Kategorieauswahl auf das Ordnersymbol, um die Kategorie **Shop the Look** auszuwählen. Es ist möglich, einer Vorlage mehrere Kategorien und auch Unterkategorien zuzuweisen, indem Sie das Kontrollkästchen aktivieren.
 
@@ -119,7 +119,7 @@ Nutzen Sie diese Kenntnisse und fahren Sie mit dem Journey fort, indem Sie als N
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird zwar empfohlen, mit dem nächsten Teil der Journey fortzufahren, indem Sie das Dokument [Verwalten des gestaffelten Produktkatalogs) lesen. Im Folgenden finden Sie ](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Headless-Journey fortzufahren:
+Es wird zwar empfohlen, mit dem nächsten Teil der Journey fortzufahren, indem Sie das Dokument [Verwalten des gestaffelten Produktkatalogs) lesen. Im Folgenden finden Sie &#x200B;](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Headless-Journey fortzufahren:
 
 * [Erstellen mehrerer Kategorie- und Produktseiten](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
 * [Migrationshandbuch für Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md) – Migration von einer alten Version zum AEM Commerce Integration Framework (CIF)-Add-on

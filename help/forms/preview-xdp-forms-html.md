@@ -90,7 +90,7 @@ Der **abgesicherte Modus** ist standardmäßig aktiviert. Behalten Sie dies in P
    >
    >Stellen Sie sicher, dass der AEM Forms-Server läuft. Die HTML-Vorschau stellt eine Verbindung zum CRX-Server her, um eine Vorschau zu *erzeugen*.
 
-   ![AEM Forms Designer-Optionen ](assets/server_options.png)
+   ![AEM Forms Designer-Optionen &#x200B;](assets/server_options.png)
 
    AEM Forms Designer-Optionen
 

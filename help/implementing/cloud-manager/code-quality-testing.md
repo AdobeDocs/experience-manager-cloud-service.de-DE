@@ -29,7 +29,7 @@ Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfiguri
 
 ## Code-Qualitätsregeln {#understanding-code-quality-rules}
 
-Beim Testen der Code-Qualität wird der Quell-Code gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Dieser Schritt wird durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mit OakPAL implementiert. Es gibt mehr als 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige AEM-spezifische Regeln basieren auf Best Practices aus dem AEM Engineering und werden als [benutzerspezifische Code-Qualitätsregeln“ ](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Beim Testen der Code-Qualität wird der Quell-Code gescannt, um sicherzustellen, dass er bestimmte Qualitätskriterien erfüllt. Dieser Schritt wird durch eine Kombination aus SonarQube und der Prüfung auf Inhaltspaketebene mit OakPAL implementiert. Es gibt mehr als 100 Regeln, die generische Java-Regeln und AEM-spezifische Regeln kombinieren. Einige AEM-spezifische Regeln basieren auf Best Practices aus dem AEM Engineering und werden als [benutzerspezifische Code-Qualitätsregeln“ &#x200B;](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 Sie können die aktuelle vollständige Liste von Regeln [über diesen Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen.
 

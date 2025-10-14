@@ -26,7 +26,7 @@ AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzende JavaS
 
 >[!NOTE]
 >
-> Stellen Sie sicher[ dass die ](https://github.com/adobe/aem-core-forms-components)Kernkomponente“ auf die neueste Version eingestellt ist, um die neuesten Funktionen zu verwenden.
+> Stellen Sie sicher[&#x200B; dass die &#x200B;](https://github.com/adobe/aem-core-forms-components)Kernkomponente“ auf die neueste Version eingestellt ist, um die neuesten Funktionen zu verwenden.
 
 ## Vorteile benutzerdefinierter Funktionen {#uses-of-custom-function}
 
@@ -119,7 +119,7 @@ Betrachten Sie das folgende Codefragment, bei dem input2 als optionaler Paramete
 
 Die folgende Abbildung zeigt die Verwendung der benutzerdefinierten Funktion `OptionalParameterFunction` im Regeleditor:
 
-![Optionale oder erforderliche Parameter ](/help/forms/assets/optional-default-params.png)
+![Optionale oder erforderliche Parameter &#x200B;](/help/forms/assets/optional-default-params.png)
 
 Sie können die Regel speichern, ohne einen Wert für die erforderlichen Parameter anzugeben, aber die Regel wird nicht ausgeführt und zeigt eine Warnmeldung als:
 

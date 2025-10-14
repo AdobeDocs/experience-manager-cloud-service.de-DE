@@ -325,7 +325,7 @@ Im Gegensatz zu einfachen Formularanalysetools ermöglicht Adobe Analytics eine 
 
 AEM Forms lässt sich nahtlos mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, um Leistungsmetriken für Ihre veröffentlichten Formulare automatisch zu erfassen und zu verfolgen. Sie können das Verhalten sowohl authentifizierter als auch anonymer Benutzer ohne zusätzliche Konfiguration überwachen.
 
-Stellen Sie vor der Implementierung der Formularanalyse sicher, dass Ihre [AEM Forms-Umgebung ordnungsgemäß konfiguriert ](/help/forms/setup-forms-cloud-service.md) und Sie [Ihre adaptiven Formulare erstellt haben](/help/forms/creating-adaptive-form-core-components.md) entweder mithilfe von Kernkomponenten oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md).
+Stellen Sie vor der Implementierung der Formularanalyse sicher, dass Ihre [AEM Forms-Umgebung ordnungsgemäß konfiguriert &#x200B;](/help/forms/setup-forms-cloud-service.md) und Sie [Ihre adaptiven Formulare erstellt haben](/help/forms/creating-adaptive-form-core-components.md) entweder mithilfe von Kernkomponenten oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md).
 
 **Umfassende Formular-Ereignisverfolgung:**
 
@@ -505,7 +505,7 @@ Bevor Sie mit der Implementierung der Formularanalyse beginnen, stellen Sie sich
 
 - [AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md) oder AEM Forms 6.5+ (lokale/AMS-Installationen)
 - Authoring- und Publishing-Funktionen von Forms aktiviert
-- Stellen Sie sicher, dass die Option [Forms ](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) Ihrer AEM-Umgebung verfügbar ist
+- Stellen Sie sicher, dass die Option [Forms &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) Ihrer AEM-Umgebung verfügbar ist
 - [Kernkomponenten für adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md) verfügbar
 
 **Technische Anforderungen**
@@ -916,7 +916,7 @@ Selbst bei sorgfältiger Implementierung können bei Formularanalysekonfiguratio
 
 >[!TIP]
 >
->Weitere Anleitungen zur Fehlerbehebung finden Sie in unserer [Sammlung zur Fehlerbehebung bei AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) und in [Handbüchern zur Fehlerbehebung bei der ](/help/forms/form-creation-failing.md)).
+>Weitere Anleitungen zur Fehlerbehebung finden Sie in unserer [Sammlung zur Fehlerbehebung bei AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) und in [Handbüchern zur Fehlerbehebung bei der &#x200B;](/help/forms/form-creation-failing.md)).
 
 **Konfigurationsprobleme**
 
@@ -963,7 +963,7 @@ Für die erfolgreiche Implementierung der Formularanalyse sind die Befolgung bew
 
 >[!TIP]
 >
->Stellen Sie vor der Implementierung von Analytics sicher, dass Ihre Formulare ordnungsgemäß konfiguriert sind, indem Sie [Best ](/help/forms/introduction-forms-authoring.md) für AEM Forms und geeignete [Übermittlungsaktionen](/help/forms/configuring-submit-actions.md) verwenden.
+>Stellen Sie vor der Implementierung von Analytics sicher, dass Ihre Formulare ordnungsgemäß konfiguriert sind, indem Sie [Best &#x200B;](/help/forms/introduction-forms-authoring.md) für AEM Forms und geeignete [Übermittlungsaktionen](/help/forms/configuring-submit-actions.md) verwenden.
 
 ### Implementierungsrichtlinien
 

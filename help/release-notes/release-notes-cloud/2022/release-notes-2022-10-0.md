@@ -50,7 +50,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und [ dem integrierten Document Cloud-Viewer in der Vorschau anzeigen](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
+* Mit Experience Manager Assets können Sie jetzt Dokumente in anderen unterstützten Formattypen hochladen und [&#x200B; dem integrierten Document Cloud-Viewer in der Vorschau anzeigen](/help/assets/manage-pdf-documents.md). Zu den unterstützten Formattypen gehören TXT, RTF, DOC, DOCX, PPT, PPTX, XLS und XLSX.
 
   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -87,7 +87,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Autoren-Service) wurde mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und mit allen weiteren Experience Cloud-Anwendungen zu vereinheitlichen. Weitere Informationen finden Sie unter AEM as a [Cloud Service ](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
+* AEM as a Cloud Service (Autoren-Service) wurde mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und mit allen weiteren Experience Cloud-Anwendungen zu vereinheitlichen. Weitere Informationen finden Sie unter AEM as a [Cloud Service &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
 
 * Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ohne Binärdateien), jetzt nicht mehr unterstützt und durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den Workflow [Publish-Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) für empfohlene Ansätze zur Replikation dieser großen Inhaltspakete.
 

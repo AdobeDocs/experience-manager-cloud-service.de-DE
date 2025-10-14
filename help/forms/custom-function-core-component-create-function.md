@@ -192,11 +192,11 @@ Nachdem Sie Ihre Client-Bibliothek in Ihrer Forms CS-Umgebung bereitgestellt hab
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Sie können die benutzerdefinierte Funktion im [Regeleditor eines adaptiven Formulars) ](/help/forms/rule-editor-core-components.md) die [JavaScript-Anmerkungen ](##js-annotations).
+Sie können die benutzerdefinierte Funktion im [Regeleditor eines adaptiven Formulars) &#x200B;](/help/forms/rule-editor-core-components.md) die [JavaScript-Anmerkungen &#x200B;](##js-annotations).
 
 ## Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular
 
-In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) ](/help/forms/rule-editor-core-components.md). Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
+In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) &#x200B;](/help/forms/rule-editor-core-components.md). Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
 
 ```javascript
     /**

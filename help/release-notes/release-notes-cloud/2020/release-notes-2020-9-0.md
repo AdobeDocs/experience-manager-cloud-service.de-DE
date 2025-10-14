@@ -120,8 +120,8 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 * Das AIO-CLI-Plug-in unterstützt Repository Modernizer und ermöglicht es Benutzern, das Tool mit dem Plug-in auszuführen.
 
-  Weitere [ finden Sie unter „Git-Ressource: aio-cli-plugin-aem-cloud-service](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)migration“.
+  Weitere [&#x200B; finden Sie unter „Git-Ressource: aio-cli-plugin-aem-cloud-service](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)migration“.
 
 * Das Dienstprogramm „Repository Modernizer“ kann verwendet werden, um bestehende Projektpakete in Pakete umzustrukturieren, die mit der für AEM as a Cloud Service definierten Projektstruktur kompatibel sind.
 
-  Weitere Informationen finden [ unter „Git](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)Ressource: Repository Modernizer“.
+  Weitere Informationen finden [&#x200B; unter „Git](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)Ressource: Repository Modernizer“.

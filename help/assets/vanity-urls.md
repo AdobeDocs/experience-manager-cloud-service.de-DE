@@ -102,7 +102,7 @@ Weitere Informationen zu [Metadatenschemata](/help/assets/metadata-schemas.md).
      >
      > * Ein einzelnes Asset kann über mehrere Vanity-IDs verfügen. [Kontaktieren Sie den Adobe](https://helpx.adobe.com/de/contact.html)Support und stellen Sie eine Anfrage zum Generieren der erforderlichen Vanity-IDs.
 
-Nachdem Sie Ihre Vanity-ID im Asset-Metadatenformular eingerichtet haben[ (ordnen Sie dieses Metadatenfeld dem Bereitstellungsmechanismus des Systems zu](#map-cloud-manager-environment-variable).
+Nachdem Sie Ihre Vanity-ID im Asset-Metadatenformular eingerichtet haben[&#x200B; (ordnen Sie dieses Metadatenfeld dem Bereitstellungsmechanismus des Systems zu](#map-cloud-manager-environment-variable).
 
 ### Erstellen und Zuordnen einer Cloud Manager-Umgebungsvariablen{#map-cloud-manager-environment-variable}
 
@@ -116,7 +116,7 @@ Führen Sie die folgenden Schritte aus, um eine Umgebungsvariable zu erstellen u
 
 ### Validieren der Assets für die Bereitstellung{#approve-assets-for-delivery}
 
-Nachdem Sie die `ASSET_DELIVERY_VANITY_ID` Variable in Ihrer Cloud Manager-Umgebung der Asset-Metadateneigenschaft zugeordnet haben, die die Vanity-ID enthält, [ Sie Ihre Assets, für die eine Vanity-URL für die Bereitstellung erforderlich ist](/help/assets/manage-organize-assets-view.md#manage-asset-status).
+Nachdem Sie die `ASSET_DELIVERY_VANITY_ID` Variable in Ihrer Cloud Manager-Umgebung der Asset-Metadateneigenschaft zugeordnet haben, die die Vanity-ID enthält, [&#x200B; Sie Ihre Assets, für die eine Vanity-URL für die Bereitstellung erforderlich ist](/help/assets/manage-organize-assets-view.md#manage-asset-status).
 
 ### Vanity-URLs generieren{#generate-vanity-urls}
 
@@ -126,7 +126,7 @@ Nehmen Sie die folgenden Ersetzungen in Ihrer Standard-Versand-URL vor, um sie i
 * `aaid` durch `avid` ersetzen.
 
 Siehe die [URL-Umwandlung von Standard- in Vanity-URL](#standard-urls) oben.
-Erfahren Sie, wie [ Dynamic Media mit OpenAPI-Bereitstellungs](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets)URLs für Ihre Assets kopieren.
+Erfahren Sie, wie [&#x200B; Dynamic Media mit OpenAPI-Bereitstellungs](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets)URLs für Ihre Assets kopieren.
 
 Wenn Ihr Benutzer auf die Vanity-URL klickt, ordnet [!DNL Dynamic Media with OpenAPI] die Vanity-ID zur Aufnahmezeit automatisch der ursprünglichen Asset-UUID zu und löst sie zur Bereitstellungszeit ordnungsgemäß auf, um das Asset ohne Verzögerung an den Benutzer bereitzustellen. Sie können die Vanity-URL in Echtzeit anpassen, ohne die Leistung der Asset-Bereitstellung zu beeinträchtigen.
 
@@ -134,7 +134,7 @@ Wenn Ihr Benutzer auf die Vanity-URL klickt, ordnet [!DNL Dynamic Media with Ope
 
 ## Skalieren mithilfe von Vanity-URLs{#scale-using-vanity-url}
 
-Mit AEM as a Cloud Service können Sie [ DNS- und CDN-Namen ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) Ihren Webadressen anpassen. Verwenden Sie diese AEMCS-Funktionen mit Ihren Vanity-URLs, um sie in eindeutige Web-Adressen umzuwandeln, die sauber, beschreibend, mit Marken versehen und intuitiv sind und die [oben genannten Vorteile](#key-benefits) bieten.
+Mit AEM as a Cloud Service können Sie [&#x200B; DNS- und CDN-Namen &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) Ihren Webadressen anpassen. Verwenden Sie diese AEMCS-Funktionen mit Ihren Vanity-URLs, um sie in eindeutige Web-Adressen umzuwandeln, die sauber, beschreibend, mit Marken versehen und intuitiv sind und die [oben genannten Vorteile](#key-benefits) bieten.
 
 Siehe die folgende Vanity-URL und ihre anpassbaren Komponenten:
 

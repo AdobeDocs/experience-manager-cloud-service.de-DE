@@ -136,7 +136,7 @@ In Fällen, wo der Cache gelöscht werden muss, die aber derzeit nicht von den v
 Wenn Sie beispielsweise das vorhandene Attribut nicht zum Löschen des Cache verwenden möchten, haben Sie die Flexibilität, Ihr eigenes Attribut zu erstellen und die entsprechende Funktionalität zu definieren.
 
 * Wenn Sie nur den Cache aus dem internen Speicher von AEM löschen müssen (die GraphQL-Antwort), müssen Sie [diese Referenz.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java)
-* Wenn Sie den Cache aus dem internen Speicher und dem Dispatcher-Cache löschen müssen, müssen Sie [diese Referenz“ ](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)
+* Wenn Sie den Cache aus dem internen Speicher und dem Dispatcher-Cache löschen müssen, müssen Sie [diese Referenz“ &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)
 
   >[!NOTE]
   >

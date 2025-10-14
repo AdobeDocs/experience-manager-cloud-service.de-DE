@@ -61,7 +61,7 @@ Das Forms-Konvertierungs-Dienstprogramm konvertiert adaptive Forms, die auf ält
    * Entwicklerrolle
    * Administratorrolle
 
-Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unter [ und Berechtigungen](forms-groups-privileges-tasks.md).
+Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unter [&#x200B; und Berechtigungen](forms-groups-privileges-tasks.md).
 
 ## Installieren und Konfigurieren der AEM-Modernisierungs-Tools
 
@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um die AEM-Modernisierungs-Tools in Ihre
 
    `java -jar aem-author-p4502.jar`
 
-1. Klonen Sie das Repository [AEM ](https://github.com/adobe/forms-modernizer)Modernisierungs-Tool&rbrace; in Ihrem lokalen System.
+1. Klonen Sie das Repository [AEM &#x200B;](https://github.com/adobe/forms-modernizer)Modernisierungs-Tool&rbrace; in Ihrem lokalen System.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -142,7 +142,7 @@ Um die AEM-Modernisierungs-Tools für Ihre AEM-Umgebung zu aktivieren und zu ver
 1. Klicken Sie auf **[!UICONTROL Forms]**. Alle Formulare im `source folder` werden auf dem Bildschirm angezeigt.
 1. Wählen Sie das auf Foundation-Komponenten basierende adaptive Forms aus, um es in auf Kernkomponenten basierende Formulare zu konvertieren. Sie können auch mehrere Formulare auswählen.
 
-   ![AEM-Modernisierungs-Tools - Formular ](/help/forms/assets/aem-modernize-tools-select-form.png)
+   ![AEM-Modernisierungs-Tools - Formular &#x200B;](/help/forms/assets/aem-modernize-tools-select-form.png)
 
 1. Klicken Sie auf **[!UICONTROL Auswählen]**.
 1. Klicken Sie **[!UICONTROL Auftrag planen]**, um den Konvertierungsprozess zu starten.

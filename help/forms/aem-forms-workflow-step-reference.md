@@ -351,7 +351,7 @@ Der Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ enthält folgende Fel
 
 * **[!UICONTROL Fehlermeldung in Variable speichern]**: Sie können eine Fehlermeldung in einer [Variablen vom Typ „Zeichenfolge“](variable-in-aem-workflows.md) speichern.
 
-* **[!UICONTROL Fehlerdetails in Variable speichern]**: Sie können Fehlerdetails in einer [Variablen vom Typ ](variable-in-aem-workflows.md)JSON speichern.
+* **[!UICONTROL Fehlerdetails in Variable speichern]**: Sie können Fehlerdetails in einer [Variablen vom Typ &#x200B;](variable-in-aem-workflows.md)JSON speichern.
 
 * **[!UICONTROL Dienst]**: Liste der Dienste, die durch das ausgewählte Formulardatenmodell (FDM) bereitgestellt werden.
 * **[!UICONTROL Eingabe für Services]** > **[!UICONTROL Bereitstellung von Eingabedaten mit Literal, Variable oder Workflow-Metadaten und einer JSON-Datei]**: Ein Service kann mehrere Argumente aufweisen. Wählen Sie die Option zum Abrufen des Werts der Service-Parameter aus einer Workflow-Metadateneigenschaft, einem JSON-Objekt oder einer Variable aus oder geben Sie den Wert direkt in das bereitgestellte Textfeld ein:

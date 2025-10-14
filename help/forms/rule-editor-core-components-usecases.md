@@ -60,7 +60,7 @@ Mit dem Regeleditor können Sie vordefinierte Funktionen wie Summe, Min, Max und
 
 Stellen Sie sich ein Formular mit einem wiederholbaren Bereich vor, in dem jede Bereichsinstanz Informationen über den deklarierten Wert von Assets erfasst.
 
-![Wiederholbare ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![Wiederholbare &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
 Mit der Funktion `Sum` können Sie den Gesamtwert der Assets für alle Bedienfelder automatisch berechnen, sodass keine manuellen Berechnungen mehr erforderlich sind und das Fehlerpotenzial reduziert wird.
 

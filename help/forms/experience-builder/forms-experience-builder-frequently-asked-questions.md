@@ -231,7 +231,7 @@ Ja, Sie können verschiedene Aspekte konfigurieren:
 
 Für zusätzliche Unterstützung:
 
-- Weitere Informationen finden [ im Handbuch „Erste Schritte](forms-experience-builder-getting-started.md)
+- Weitere Informationen finden [&#x200B; im Handbuch „Erste Schritte](forms-experience-builder-getting-started.md)
 - Lesen Sie das [Bereitstellungs- und Konfigurationshandbuch](deploy-forms-experience-builder.md)
 - Wenden Sie sich an Ihren Systemadministrator
 - Wenden Sie sich bei technischen Problemen an den Adobe-Support

@@ -34,7 +34,7 @@ Stellen Sie vor dem Aktivieren der Funktionsumschalter in Ihrem AEM SDK-Setup Fo
 
 * Benutzer ist Mitglied `forms-users` Gruppe.
 
-* Navigieren Sie zu `http://<author-instance-url>:portnumber/system/console/bundles` und überprüfen Sie, ob das Bundle **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** vorhanden ist. Falls nicht vorhanden (laden [ das Bundle über den Link herunter](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Navigieren Sie zu `http://<author-instance-url>:portnumber/system/console/bundles` und überprüfen Sie, ob das Bundle **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** vorhanden ist. Falls nicht vorhanden (laden [&#x200B; das Bundle über den Link herunter](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
 
   ![Feature-Umschalter](/help/forms/assets/aem-web-console-bundle.png)
 
