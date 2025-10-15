@@ -33,7 +33,7 @@ Für Sites, die auf Adobe Experience Manager ausgeführt werden, gibt es das „
 
 Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [&#x200B; der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
 
-Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
+Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/de/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
 
 ## Häufig verwendete Begriffe {#frequently-used-terms}
 
