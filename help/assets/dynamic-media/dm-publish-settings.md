@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 151320e5de3e33ab31ed5ed55826d856d02a8f92
 workflow-type: tm+mt
-source-wordcount: '3356'
-ht-degree: 100%
+source-wordcount: '3353'
+ht-degree: 99%
 
 ---
 
@@ -116,9 +116,9 @@ Diese Einstellungen beziehen sich auf die standardmäßige Darstellung und Ausri
 | **[!UICONTROL Standardhintergrundfarbe für Miniaturansicht]** | Gibt den RGB-Wert an, der zum Ausfüllen des Bereichs eines Ausgabeminiaturbilds verwendet wird, das keine tatsächlichen Bilddaten enthält. Wird nur für Anforderungen von Miniaturansichten (`req=tmb`) verwendet und wenn der **[!UICONTROL Standardtyp für Miniaturansichten]** auf **[!UICONTROL Anpassen]** oder **[!UICONTROL Textur]** festgelegt ist.<br>Siehe auch den Parameter [ThumbBkgColor](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Horizontale Ausrichtung]** | Gibt die horizontale Ausrichtung des Miniaturbilds im Rechteck des Antwortbilds an, angegeben durch die Werte `wid=` und `hei=`.<br>Wird nur für Anforderungen von Miniaturansichten (`req=tmb`) verwendet und wenn der **[!UICONTROL Standardtyp für Miniaturansichten]** auf **[!UICONTROL Anpassen]** festgelegt ist.<br>Es gibt drei horizontale Ausrichtungen zur Auswahl: **[!UICONTROL Ausrichtung zentriert]**, **[!UICONTROL Linksbündig]** und **[!UICONTROL Rechtsbündig]**.<br>Siehe auch den Parameter [ThumbHorizAlign](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Vertikale Ausrichtung]** | Gibt die vertikale Ausrichtung des Miniaturbilds im Rechteck des Antwortbilds an, angegeben durch die Werte `wid=` und `hei=`. Wird nur für Anforderungen von Miniaturansichten (`req=tmb`) verwendet und wenn der **[!UICONTROL Standardtyp für Miniaturansichten]** auf **[!UICONTROL Anpassen]** festgelegt ist.<br>Es gibt drei vertikale Ausrichtungen zur Auswahl: **[!UICONTROL Ausrichtung oben]**, **[!UICONTROL Ausrichtung zentriert]** und **[!UICONTROL Ausrichtung unten]**.<br>Siehe auch den Parameter [ThumbVertAlign](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign) im Dynamic Media Viewer-Referenzhandbuch. |
-| **[!UICONTROL Standard-Cache für Time-to-Live]** | Ein standardmäßiges Ablaufintervall in Stunden wird für den Fall angegeben, dass ein bestimmter Katalogdatensatz kein gültiges Katalogablaufdatum aufweist. Legen Sie die Einstellung auf `-1` fest, damit er niemals abläuft. <br>Siehe auch den Parameter [Ablauf](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration) im Dynamic Media Viewer-Referenzhandbuch. |
-| **[!UICONTROL Standardtyp für Miniaturansichten]** | Ein Standard für den Typ von Miniaturansichten wird für den Fall angegeben, dass ein bestimmter Katalogdatensatz keinen gültigen ThumbType-Katalogwert aufweist. Wird nur für Anfragen von Miniaturansichten verwendet (`req=tmb`).<br>Es gibt drei Typen von Miniaturansichten, aus denen Sie wählen können: **[!UICONTROL Zuschneiden]**, **[!UICONTROL Anpassen]** und **[!UICONTROL Textur]**.<br>Siehe auch den Parameter [ThumbType](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype) im Dynamic Media Viewer-Referenzhandbuch. |
-| **[!UICONTROL Standardauflösung für Miniaturansichten]** | Ein Standardwert für die Objektauflösung für Miniaturansichten wird für den Fall angegeben, dass ein bestimmter Katalogdatensatz keinen gültigen ThumbRes-Katalogwert aufweist. Wird nur für Anfragen von Miniaturansichten verwendet (`req=tmb`) und wenn die Einstellung **[!UICONTROL Standardtyp für Miniaturansichten]** auf **[!UICONTROL Textur]** festgelegt ist.<br>Siehe auch den Parameter [ThumbRes](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres) im Dynamic Media Viewer-Referenzhandbuch. |
+| **[!UICONTROL Standard-Cache für Time-to-Live]** | Ein standardmäßiges Ablaufintervall in Stunden wird für den Fall angegeben, dass ein bestimmter Katalogeintrag kein gültiges Katalogablaufdatum aufweist. Legen Sie die Einstellung auf `-1` fest, damit er niemals abläuft. <br>Siehe auch den Parameter [Ablauf](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration) im Dynamic Media Viewer-Referenzhandbuch. |
+| **[!UICONTROL Standardtyp für Miniaturansichten]** | Ein Standard für den Typ von Miniaturansichten wird für den Fall angegeben, dass ein bestimmter Katalogeintrag keinen gültigen ThumbType-Katalogwert aufweist. Wird nur für Anfragen von Miniaturansichten verwendet (`req=tmb`).<br>Es gibt drei Typen von Miniaturansichten, aus denen Sie wählen können: **[!UICONTROL Zuschneiden]**, **[!UICONTROL Anpassen]** und **[!UICONTROL Textur]**.<br>Siehe auch den Parameter [ThumbType](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype) im Dynamic Media Viewer-Referenzhandbuch. |
+| **[!UICONTROL Standardauflösung für Miniaturansichten]** | Ein Standardwert für die Objektauflösung für Miniaturansichten wird für den Fall angegeben, dass ein bestimmter Katalogeintrag keinen gültigen ThumbRes-Katalogwert aufweist. Wird nur für Anfragen von Miniaturansichten verwendet (`req=tmb`) und wenn die Einstellung **[!UICONTROL Standardtyp für Miniaturansichten]** auf **[!UICONTROL Textur]** festgelegt ist.<br>Siehe auch den Parameter [ThumbRes](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres) im Dynamic Media Viewer-Referenzhandbuch. |
 
 ## Registerkarte „Farbmanagement-Attribute“ {#color-management-attributes-tab}
 
@@ -169,7 +169,7 @@ Aus den folgenden Gründen sollten Sie bei Bedarf eine Staging-Umgebung erstelle
 
 Die meisten Unternehmen betreiben ihr Internet hinter einer Firewall. Der Zugang zum Internet ist über bestimmte Routen und in der Regel über eine begrenzte Anzahl öffentlicher IP-Adressen möglich.
 
-Über Ihr Unternehmensnetzwerk können Sie mithilfe von Websites wie [https://www.whatismyip.com](https://www.whatismyip.com/de/) Ihre IP-Adresse in Erfahrung bringen oder Sie fordern diese Information einfach von Ihrem IT-Unternehmen an.
+Über Ihr Unternehmensnetzwerk können Sie mithilfe verschiedener Websites Ihre öffentliche IP-Adresse ermitteln oder diese Informationen von Ihrem IT-Unternehmen anfordern.
 
 Mit Secure Testing richtet Adobe Dynamic Media einen dedizierten Image-Server für Staging-Umgebungen oder interne Programme ein. Mit einer beliebigen Anfrage an diesen Server wird die Ursprung-IP-Adresse geprüft. Wenn die eingehende Anfrage nicht in der Liste genehmigter IP-Adressen enthalten ist, erfolgt die Antwort mit einer Fehlermeldung. Firmenadmins, die für Adobe Dynamic Media zuständig sind, konfigurieren die Liste der genehmigten IP-Adressen für die Secure Testing-Umgebung der Firma.
 
@@ -186,7 +186,7 @@ Secure Testing-Services unterstützen derzeit die folgenden Asset-Typen und -Fun
 * Bilder.
 * Vignetten (Rendering-Server-Anfragen).
 * Kundinnen und Kunden müssen explizit Rendering-Server-Support anfordern, der verfügbar ist.
-* Sets, einschließlich Bildsets, E-Katalog, Rendering-Sets und Mediensets.
+* Sets, einschließlich Bild-Sets, E-Katalog, Rendering-Sets und Mediensets.
 * Standardmäßige Adobe Dynamic Media-Rich-Media-Viewer.
 * Adobe Dynamic Media-On-Demand-JSP-Seiten.
 * Statische Inhalte wie PDF-Dateien und progressiv bereitgestellte Videos.
