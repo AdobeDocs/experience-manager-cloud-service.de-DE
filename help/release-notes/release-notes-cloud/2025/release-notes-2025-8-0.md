@@ -3,10 +3,10 @@ title: Versionshinweise für Version 2025.8.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 4187f9bb08d8af214054b937a5426e95c1de748d
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 89%
+source-wordcount: '1934'
+ht-degree: 86%
 
 ---
 
@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -69,9 +69,9 @@ Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit d
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-with-openapi}
 
-**SEO-freundliches DM mit OpenAPI-URLs**
+**Bereitstellungs-URLs für markenspezifische und lesbare Assets**
 
-Erstellen Sie Vanity-URLs für die Asset-Bereitstellung in DM mit OpenAPI und ersetzen Sie lange systemgenerierte UUIDs durch kurze, lesbare Kennungen. Dadurch werden Links SEO-freundlich und besser auf Ihre Marke oder Kampagnen abgestimmt. Vanity-URLs werden zur Laufzeit automatisch zur ursprünglichen Asset-UUID aufgelöst, ohne vorhandene Workflows zu unterbrechen.
+Verbessern der Lesbarkeit von Dynamic Media mit OpenAPI-URLs durch Verwendung von Vanity-URLs in Dynamic Media mit OpenAPI. Vanity-URLs ermöglichen es, lange, systemgenerierte, schwer zu speichernde UUIDs in Asset-Bereitstellungs-URLs durch kurze, markengesteuerte IDs zu ersetzen. Dies macht Vanity-URLs kürzer, leichter zu lesen und freizugeben und ermöglicht eine bessere Abstimmung mit Ihrer Marke oder Ihren Kampagnen. Vanity-URLs werden zur Laufzeit automatisch zur ursprünglichen Asset-UUID aufgelöst, ohne vorhandene Workflows zu unterbrechen.
 
 >[!NOTE]
 >
