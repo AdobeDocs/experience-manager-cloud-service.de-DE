@@ -157,7 +157,7 @@ Live-Schaltungstage, Live-Ereignisse, Spitzenumsätze - diese Momente sind unver
 >[!NOTE]
 >
 >Verfügbar als Funktion zur eingeschränkten Verfügbarkeit am 25. September.
->>Senden Sie eine E-Mail an [0}aemcs-update-free@adobe.com&quot;, um sie in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
+>&#x200B;>Senden Sie eine E-Mail an [0&rbrace;aemcs-update-free@adobe.com&quot;, um sie in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
 
 ### Neue Version von AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -238,7 +238,7 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Mit der Edge-Authentifizierung können Sie den Zugriff auf Edge Delivery Services-Seiten auf diejenigen beschränken, die sich bei Ihrem Identitätsanbieter (IdP) authentifiziert haben. Dies wird durch die Bereitstellung einer OpenID Connect (OIDC)-YAML-Konfigurationsdatei erreicht.
 
-Bei Interesse senden Sie bitte eine E-Mail an [](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben könnten.
+Bei Interesse senden Sie bitte eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben könnten.
 
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
@@ -273,7 +273,7 @@ Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitun
 
 ### Erweiterte Anwendungsleistungsüberwachung (APM) (Alpha-Programm) {#apm-alpha}
 
-Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
+Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
 
 
 ## [!DNL Experience Manager] Guides {#guides}
