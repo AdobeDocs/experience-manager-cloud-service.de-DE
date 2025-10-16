@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
+source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 95%
@@ -86,9 +86,11 @@ Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen,
 1. Die Modelle werden aufgelistet. Wählen Sie das Modell aus und öffnen Sie den Editor.
 1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
    ![Inhaltsfragmentmodell-Editor](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
-   1. Im linken Bereich werden die möglichen Datentypen aufgelistet.
-   1. Im rechten Bereich werden die Eigenschaften angezeigt, die für das ausgewählte Feld geeignet sind.
+
+   * Im linken Bereich werden die möglichen Datentypen aufgelistet.
+   * Im rechten Bereich werden die Eigenschaften angezeigt, die für das ausgewählte Feld geeignet sind.
    * Das mittlere Bedienfeld enthält die Felder, die Sie erstellt und definiert haben - oder werden.
+
 1. Wählen Sie eines der Felder des Modells aus. AEM markiert es und die Details dieses Felds werden im rechten Bereich angezeigt.
 1. Die Inhaltsarchitektin bzw. der Inhaltsarchitekt aktiviert das Feld **Übersetzbar** für jedes Feld des Inhaltsmodells, das übersetzt werden muss.
 
