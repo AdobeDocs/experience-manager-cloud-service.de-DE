@@ -21,7 +21,7 @@ Erfahren Sie, wie Sie die GraphQL-API für die Headless-Bereitstellung von Inhal
 
 * Mit der [GraphQL-API](/help/headless/graphql-api/content-fragments.md) können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen. Diese API bietet die zuverlässigsten Funktionen zum Abfragen und Verwenden von Inhaltsfragmentinhalten.
    * Um die API zu verwenden, [definieren Sie Endpunkte und aktivieren Sie sie in AEM](/help/headless/graphql-api/graphql-endpoint.md), und aktivieren Sie gegebenenfalls die [installierte GraphiQL-Oberfläche](/help/headless/graphql-api/graphiql-ide.md).
-* Eine Auswahl von [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte ](/help/headless/apis-headless-and-content-fragments.md) für die Verwendung mit Inhaltsfragmenten verfügbar.
+* Eine Auswahl von [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte &#x200B;](/help/headless/apis-headless-and-content-fragments.md) für die Verwendung mit Inhaltsfragmenten verfügbar.
 
 Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bereitstellung von Inhaltsfragmenten.
 
