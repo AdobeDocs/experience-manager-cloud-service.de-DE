@@ -5,10 +5,10 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 100%
+source-wordcount: '1881'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ In AEM gibt es drei Arten von Umgebungen: Entwicklungs-, Staging- und Produktion
 
 Die Entwicklungsumgebungen (davon können Sie mehrere haben) sind ein sicherer Ort, um Ideen auszuprobieren und zu experimentieren. In der Anfangsphase eines Projekts empfiehlt Adobe die Verwendung der Entwicklungsumgebungen, um Variationen von Inhaltsmodellen auszuprobieren und zu sehen, welche die gewünschte Ausgabe für die Oberflächen liefern.
 
-Die Staging-Umgebung für Headless-Projekte wird verwendet, um neue AEM-Produktversionen zu validieren, bevor sie in die Produktion übergehen. Halten Sie eine aktuelle Liste der Produktions-Inhaltsmodelle dort und eine Untergruppe der Inhalte vor, damit Sie JSON-Dateien zum Vergleich rendern lassen können, die immer noch dieselbe Ausgabe liefern, wenn Sie Änderungen vornehmen oder mit einer AEM-Version Änderungen eingeführt werden.
+Die Staging-Umgebung für Headless-Projekte wird verwendet, um neue AEM-Produktversionen zu validieren, bevor sie in die Produktion übergehen. Halten Sie eine aktuelle Liste der Produktions-Inhaltsmodelle dort und eine Teilmenge der Inhalte vor, damit Sie JSON-Dateien zum Vergleich rendern lassen können, die immer noch dieselbe Ausgabe liefern, wenn Sie Änderungen vornehmen oder mit einer AEM-Version Änderungen eingeführt werden.
 
 In der Produktion erstellen und verwalten Inhaltsautoren ihre eigentlichen Inhalte. Modelländerungen in der Produktion müssen umsichtig und unter Berücksichtigung der Abwärtskompatibilität durchgeführt werden.
 
@@ -132,24 +132,22 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben
 * Kenntnis darüber, welche Tools und AEM-Konfigurationen erforderlich sind
 * Kenntnis der Best Practices, mit denen Sie für reibungslose Headless-Abläufe sorgen, die Inhaltsgenerierung effizient gestalten und die schnelle Bereitstellung von Inhalten sicherstellen können
 
-Ziel ist es, dass Sie auf diesem grundlegenden Wissen aufbauen, um das Potenzial und die Flexibilität von AEM Headless zu verstehen, damit Sie es für Ihre eigenen Projekte nutzen können. Dazu stehen Ihnen unterschiedliche Möglichkeiten zur Verfügung.
+Wir möchten, dass Sie auf diesem grundlegenden Wissen aufbauen, um die Leistungsfähigkeit und Flexibilität von AEM Headless vollständig zu verstehen, damit Sie es für Ihre eigenen Projekte nutzen können.
 
-### Wählen Sie Ihren eigenen Weg {#choose-your-path}
-
-Egal, welcher Lernstil Ihnen liegt: Adobe möchte, dass Sie erfolgreich sind, wenn Sie mit Ihrem AEM Headless-Projekt beginnen.
-
-* Wenn Sie darüber hinaus **mehr über Headless-Konzepte und -Technologien von AEM** erfahren möchten, sollten Sie Ihre AEM Headless-Entwickler-Tour fortsetzen, indem Sie sich das Dokument [Modellieren Ihres Inhalts](model-your-content.md) ansehen. Hier erfahren Sie, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
-* Wenn Sie **praktische Erfahrungen** vorziehen, empfehlen wir Ihnen das praxisnahe Tutorial [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de). Dort können Sie sich direkt mit der AEM Headless-Entwicklung vertraut machen, indem Sie ein einfaches Projekt implementieren, um AEM Headless-Inhalte bereitzustellen.
+Fahren Sie dazu mit der AEM Headless-Journey mit [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle“ fort, ](/help/journey-headless/developer/model-your-content.md) dem Sie lernen, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
 Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fortzufahren, indem Sie das Dokument [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle](model-your-content.md) lesen. Im Folgenden finden Sie jedoch noch zusätzliche optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, aber nicht erforderlich sind, um die Headless-Tour fortzusetzen.
 
+Wenn Sie **praktische Erfahrungen** vorziehen, empfehlen wir Ihnen das praxisnahe Tutorial [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de). Dort können Sie sich direkt mit der AEM Headless-Entwicklung vertraut machen, indem Sie ein einfaches Projekt implementieren, um AEM Headless-Inhalte bereitzustellen.
+
+Weitere Ressourcen:
+
 * [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
 * [Headless-Entwicklung für AEM Sites as a Cloud Service](/help/headless/introduction.md) – eine kurze Einführung in die erforderlichen Funktionen, die AEM Headless-Entwickelnden eine Orientierungshilfe bietet.
 * [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
-* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.
-* [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/de?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
+* [Headless-Content-Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – GitHub-Projekt mit Beispielprogrammen, die auf AEM-GraphQL-APIs eingehen
 * [Einführung in die Architektur von Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) – kompletter Überblick über die AEM-Architektur
 * [Einrichtung von Headless](/help/headless/introduction.md#getting-started) – kurze Einführung in die Headless-Funktionen von AEM für Anwender mit AEM-Vorkenntnissen

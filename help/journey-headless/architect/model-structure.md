@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+source-git-commit: 29c9b47fe10fd4109190ec91990e8ba7a0359f72
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 76%
+source-wordcount: '691'
+ht-degree: 83%
 
 ---
 
@@ -18,77 +18,48 @@ ht-degree: 76%
 
 Am Anfang der [AEM Headless-Inhaltsautoren-Tour](overview.md) wurden in den [Grundlagen der Inhaltsmodellierung für Headless mit AEM](basics.md) die grundlegenden Konzepte und die Terminologie behandelt, die für das Authoring für Headless relevant sind.
 
-Dieser Artikel baut auf diesen Prinzipien auf, damit Sie verstehen, wie Sie Ihre eigenen Inhaltsfragmentmodelle für Ihr AEM Headless-Projekt erstellen.
+Dieser Artikel baut auf diesen Prinzipien auf, damit Sie verstehen, wie Sie Ihre eigenen Inhaltsfragmentmodelle für Ihr AEM Headless-Projekt erstellen können.
 
 ## Ziel {#objective}
 
 * **Zielgruppe**: Anfänger
 * **Ziel**: Konzepte und Methoden zur Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmentmodellen.
 
-<!-- which persona does this? -->
-<!-- and who allows the configuration on the folders? -->
-
-<!--
-## Enabling Content Fragment Models {#enabling-content-fragment-models}
-
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
-
-![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
-
->[!NOTE]
->
->See Additional Resources - Content Fragments in the Configuration Browser
--->
-
 ## Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
 Anschließend können die Inhaltsfragmentmodelle erstellt und die Struktur definiert werden.
 
-1. Wählen Sie in der Inhaltsfragmentkonsole das Bedienfeld für Inhaltsfragmentmodelle aus.
+1. Wählen Sie in der Inhaltsfragmentkonsole das Panel für Inhaltsfragmentmodelle aus.
 
-1. Navigieren Sie zu dem Ordner, der Ihrer Konfiguration bzw. Unterkonfiguration entspricht.
+1. Navigieren Sie zu dem Ordner, der Ihrer Konfiguration oder Unterkonfiguration entspricht.
 
-1. Verwenden **Erstellen** um das Dialogfeld **Neues Inhaltsfragmentmodell** zu öffnen.
+1. Wählen Sie **Erstellen** aus, um das Dialogfeld **Neues Inhaltsfragmentmodell** zu öffnen.
 
    ![Titel und Beschreibung](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-1. Vervollständigen Sie die Details
+1. Vervollständigen Sie die Details.
 
-1. Verwenden Sie **Erstellen**, um das leere Modell zu speichern, oder **Erstellen und öffnen**.
-
-<!--
-Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
-
-![Content Fragment Models in Tools](assets/cfm-tools.png)
-
-After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
-
-The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
-
-![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
-
-Confirm with **Create** and you can then **Open** your model to start defining the structure.
--->
+1. Wählen Sie **Erstellen** aus, um das leere Modell zu speichern, oder verwenden Sie **Erstellen und öffnen**.
 
 ## Definieren von Inhaltsfragmentmodellen {#defining-content-fragment-models}
 
-Wenn Sie ein neues Modell zum ersten Mal öffnen, sehen Sie einen großen leeren Bereich links und eine lange Liste von **Datentypen** rechts:
+Wenn Sie ein neues Modell zum ersten Mal öffnen, sehen Sie einen großen (relativ) leeren Bereich in der Mitte, eine lange Liste von **Datentypen** links und **Eigenschaften** (am Anfang leer, wie sie für das ausgewählte Feld sind) rechts:
 
-![Leeres Modell](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
+![Leeres Modell](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
 Was ist also zu tun?
 
-Sie können Instanzen der **Datentypen** in den linken Bereich ziehen – Sie definieren bereits Ihr Modell!
+Sie können entweder:
 
-![Felder definieren](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
+* Ziehen Sie einen Datentyp aus dem linken Bereich an die erforderliche Position für ein Feld im mittleren Bereich.
+* Wählen Sie das Symbol + nach Datentyp aus, um es am unteren Rand der Feldliste hinzuzufügen.
+* Wählen Sie im mittleren Bereich Hinzufügen und dann den erforderlichen Datentyp aus der angezeigten Dropdown-Liste aus, um ein Feld am Ende der Liste hinzuzufügen.
+
+Sie definieren bereits Ihr Modell!
 
 Nachdem Sie einen Datentyp hinzugefügt haben, müssen Sie die **Eigenschaften** für dieses Feld definieren. Diese Eigenschaften hängen vom verwendeten Typ ab. Zum Beispiel:
 
-![Dateneigenschaften](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
-
-Sie können beliebig viele Felder hinzufügen. Zum Beispiel:
-
-![Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![Dateneigenschaften](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 ### Ihre Inhaltsautoren {#your-content-authors}
 
@@ -105,7 +76,7 @@ Ihre Inhaltsautorinnen und -autoren sehen nicht die tatsächlichen Datentypen un
 Die Verwaltung Ihrer Inhaltsfragmentmodelle umfasst Folgendes:
 
 * Aktivieren (oder Deaktivieren) der Modelle – Dadurch werden sie für Autoren beim Erstellen von Inhaltsfragmenten verfügbar.
-* Löschen - Eine Löschung ist immer erforderlich, aber Sie müssen sich bewusst sein, ob Sie ein Modell löschen, das bereits für Inhaltsfragmente verwendet wird, insbesondere für Fragmente, die bereits veröffentlicht wurden.
+* Löschen – Eine Löschung kann immer erforderlich sein, aber Sie müssen sich bewusst sein, ob Sie ein Modell löschen, das bereits für Inhaltsfragmente verwendet wird. Dies gilt insbesondere für Fragmente, die bereits veröffentlicht wurden.
 
 ## Veröffentlichung {#publishing}
 
@@ -115,7 +86,7 @@ Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlich
 
 >[!NOTE]
 >
->Wenn ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in einer Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
+>Wenn eine Autorin bzw. ein Autor versucht, ein Inhaltsfragment zu veröffentlichen, für das das Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
 Sobald ein Modell veröffentlicht wird, wird es auf der Autoreninstanz in einen SCHREIBGESCHÜTZTEN Modus versetzt und *gesperrt*. Dadurch soll verhindert werden, dass Änderungen zu Fehlern an vorhandenen GraphQL-Schemata und -Abfragen führen, insbesondere in der Veröffentlichungsumgebung. Dies wird in der Konsole durch **Gesperrt** angezeigt.
 

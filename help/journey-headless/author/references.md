@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ Inhaltsverweise tun genau das – sie ermöglichen es Ihnen, auf beliebige ander
 Es gibt zwei Typen:
 
 * **Inhaltsreferenz**
-   * Gibt den Pfad zur referenzierten Ressource an
+   * Gibt den Pfad zur referenzierten Ressource an.
 * **Inhaltsreferenz (UUID)**
-   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
+   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als eine Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
 
 ## Asset-/Medienverweise {#assets-media-references}
 
@@ -83,16 +83,12 @@ Die Repräsentation dieser Beziehungen kann mit Fragmentverweisen erreicht werde
 
 Als Autorin bzw. Autor sind Sie nicht für die Definition dieser Beziehungen verantwortlich (das wird im Rahmen der Inhaltsarchitektur beim Erstellen des Inhaltsfragmentmodells vorgenommen), Sie müssen jedoch wissen, wie Sie die Verweise erkennen und bearbeiten können.
 
-Es gibt zwei Arten:
+Es gibt zwei Typen:
 
 * **Fragmentreferenz**
-   * Gibt den Pfad zur referenzierten Ressource an
+   * Gibt den Pfad zur referenzierten Ressource an.
 * **Fragmentreferenz (UUID)**
-   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
+   * Im Editor gibt die Referenz den Pfad zur referenzierten Ressource an. Intern wird die Referenz als eine Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
 
 ### Bearbeiten verschachtelter Fragmente {#author-nested-fragment}
 

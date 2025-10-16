@@ -5,10 +5,10 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -81,16 +81,15 @@ Der Inhaltsarchitekt wird zu Beginn des Projekts aktiv, um diese Struktur zu def
 
 Da die Inhaltsmodelle die Struktur Ihrer Inhalte definieren, müssen Sie wissen, welche Felder Ihrer Modelle übersetzt werden müssen. Im Allgemeinen arbeiten Sie mit dem Inhaltsarchitekten zusammen, um dies zu definieren. Gehen Sie wie folgt vor, um die Felder Ihrer Inhaltsmodelle durchzugehen.
 
-1. Navigieren Sie zu **Tools** > **Allgemein** > **Inhaltsfragmentmodelle**.
+1. Navigieren Sie zur Inhaltsfragmentkonsole und wählen Sie die Registerkarte für Inhaltsfragmentmodelle aus.
 1. Inhaltsfragmentmodelle werden im Allgemeinen in einer Ordnerstruktur gespeichert. Wählen Sie den Ordner für Ihr Projekt aus.
-1. Die Modelle werden aufgelistet. Wählen Sie das Modell aus, um die Details anzuzeigen.
-   ![Inhaltsfragmentmodelle](assets/content-fragment-models.png)
+1. Die Modelle werden aufgelistet. Wählen Sie das Modell aus und öffnen Sie den Editor.
 1. Der **Inhaltsfragmentmodell-Editor** wird geöffnet.
-   1. Die linke Spalte enthält die Felder des Modells. Diese Spalte interessiert uns.
-   1. Die rechte Spalte enthält die Felder, die dem Modell hinzugefügt werden können. Diese Spalte können wir ignorieren.
-      ![Inhaltsfragmentmodell-Editor](assets/content-fragment-model-editor.png)
-1. Wählen Sie eines der Felder des Modells aus. AEM markiert es und die Details dieses Felds werden in der rechten Spalte angezeigt.
-   ![Details des Inhaltsfragmentmodell-Editors](assets/content-fragment-model-editor-detail.png)
+   ![Inhaltsfragmentmodell-Editor](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
+   1. Im linken Bereich werden die möglichen Datentypen aufgelistet.
+   1. Im rechten Bereich werden die Eigenschaften angezeigt, die für das ausgewählte Feld geeignet sind.
+   * Das mittlere Bedienfeld enthält die Felder, die Sie erstellt und definiert haben - oder werden.
+1. Wählen Sie eines der Felder des Modells aus. AEM markiert es und die Details dieses Felds werden im rechten Bereich angezeigt.
 1. Die Inhaltsarchitektin bzw. der Inhaltsarchitekt aktiviert das Feld **Übersetzbar** für jedes Feld des Inhaltsmodells, das übersetzt werden muss.
 
 >[!TIP]

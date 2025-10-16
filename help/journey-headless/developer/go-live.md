@@ -5,8 +5,8 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 100%
 
@@ -29,11 +29,6 @@ In diesem Dokument erhalten Sie Informationen zur AEM Headless-Veröffentlichung
 * Sichern und skalieren Sie Ihr Programm vor dem Launch.
 * Überwachen Sie Performance- und Debugging-Probleme.
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 Befolgen Sie die unten beschriebenen Best Practices, um Ihr AEM Headless-Programm für den Launch vorzubereiten.
 
 ## Sichern und Skalieren Ihres Headless-Programms vor dem Launch {#secure-and-scale-before-launch}
@@ -70,7 +65,7 @@ Nachdem Sie sichergestellt haben, dass alles getestet wurde und ordnungsgemäß 
 
 Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) in AEM as a Cloud Service bereitgestellt werden.
 
-Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die ausführlich unter [Bereitstellen von Inhaltspaketen über Cloud Manager und Package Manager](/help/implementing/deploying/overview.md) erörtert wird.
+Sie können mit der Bereitstellung Ihres Codes beginnen, indem Sie die CI/CD-Pipeline von Cloud Manager nutzen, die ausführlich unter [Bereitstellen von Inhaltspaketen über Cloud Manager und den Paket-Manager](/help/implementing/deploying/overview.md) erörtert wird.
 
 ## Leistungsüberwachung {#performance-monitoring}
 

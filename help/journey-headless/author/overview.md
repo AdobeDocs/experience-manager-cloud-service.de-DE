@@ -5,8 +5,8 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -64,16 +64,7 @@ Sie können direkt zu einem bestimmten Teil der Tour gehen. Beachten Sie jedoch,
 
 ## So geht es weiter {#what-is-next}
 
-Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Authoring für AEM Headless as a Cloud Service – Einführung](introduction.md) zu lesen.
-
-<!--
-### Choose Your Own Adventure {#choose-your-path}
-
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So, consider these two options.
-
-* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
--->
+Jetzt sind Sie bereit, mit Ihrer Adobe Headless-Tour zu beginnen. Wir empfehlen Ihnen, mit dem nächsten Teil der Tour fortzufahren und den Artikel [Authoring für AEM Headless as a Cloud Service – Einführung](/help/journey-headless/author/introduction.md) zu lesen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

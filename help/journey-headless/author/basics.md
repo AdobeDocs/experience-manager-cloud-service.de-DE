@@ -5,10 +5,10 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
@@ -63,16 +63,10 @@ Sie können dann über das Navigationsfenster auf wichtige Bereiche von AEM zugr
 
 Das Navigationsfenster kann geöffnet werden, indem Sie links oben auf das Adobe-Symbol und dann auf das kleine Kompasssymbol klicken.
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >Inhaltsfragmente sind zwar eine Funktion von AEM **Sites**, sie werden jedoch als **Assets** gespeichert. Dies ist ein technisches Detail, das zwar keinen Einfluss auf Ihre Arbeitsweise hat, es könnte aber dennoch nützlich sein, es zu wissen.
 
-In der Konsole können Sie im linken Bereich Ordner auswählen, um zu Ihrem Inhaltsfragment zu navigieren. Sie können auch danach filtern und/oder suchen.
+In der Inhaltsfragmentkonsole können Sie im linken Bereich Ordner auswählen, um zu Ihrem Inhaltsfragment zu navigieren. Sie können auch danach filtern und/oder suchen.
 
 ![Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -80,20 +74,18 @@ In der Konsole können Sie im linken Bereich Ordner auswählen, um zu Ihrem Inha
 
 In der **Inhaltsfragmentkonsole** stehen in der Symbolleiste mehrere Aktionen für Inhaltsfragmente zur Verfügung:
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **In Assets öffnen**
 * **Erstellen**
 * Die Spalte **Referenziert von** enthält auch einen direkten Link, der alle übergeordneten Verweise dieses Fragments anzeigt. einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten.
 * Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 
-Nach der Auswahl eines Fragments werden alle passenden Aktionen angezeigt:
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+Nach Auswahl des Fragments sind weitere Aktionen verfügbar (sofern zutreffend):
 
 * **Öffnen**
 * **Veröffentlichen** (und **Veröffentlichung rückgängig machen**)
+* **Tags verwalten**
 * **Kopieren**
+* **Ersetzen**
 * **Verschieben**
 * **Umbenennen**
 * **Löschen**
@@ -101,26 +93,6 @@ Nach der Auswahl eines Fragments werden alle passenden Aktionen angezeigt:
 >[!NOTE]
 >
 >Aktionen wie Veröffentlichen, Veröffentlichung aufheben, Löschen, Verschieben, Umbenennen, Kopieren lösen einen asynchronen Vorgang aus. Der Fortschritt dieses Vorgangs kann über die AEM-Benutzeroberfläche für asynchrone Vorgänge überwacht werden.
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## Erstellung von Inhaltsfragmenten {#authoring-content-fragments}
 
