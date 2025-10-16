@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabh
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 75%
 
 ---
 
@@ -19,29 +19,17 @@ Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhal
 
 [Nachdem Sie einen Asset-Ordner erstellt haben](create-assets-folder.md), in dem Ihre Inhaltsfragmente gespeichert werden sollen, können Sie nun Fragmente erstellten.
 
-Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten. Außerdem können Sie Inhalte zur Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorbereiten.
-
-Inhaltsfragmente enthalten strukturierte Inhalte und können im JSON-Format bereitgestellt werden.
+Inhaltsfragmente enthalten strukturierte Inhalte und ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Veröffentlichen von seitenunabhängigen Inhalten. Außerdem können Sie Inhalte zur Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorbereiten.
 
 ## Erstellen eines Inhaltsfragments {#how-to-create-a-content-fragment}
 
-Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das die zentrale Aufgabe, die sie in AEM ausführen. Für die Zwecke dieses Erste-Schritte-Handbuchs brauchen wir nur eines zu erstellen.
+Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Dies ist ihre Hauptaufgabe in AEM.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Navigation** > **Inhaltsfragmente** aus.
+Die Schritte zum Erstellen eines Inhaltsfragments zur Verwendung:
 
-1. Wählen Sie den [zuvor von Ihnen erstellten Ordner](create-assets-folder.md).
-1. Wählen Sie **Erstellen** aus.
-1. Die Erstellung eines Inhaltsfragments wird als Dialogfeld angezeigt.
-Wählen Sie den Speicherort und das Modell aus, das Sie zum Erstellen Ihres Inhaltsfragments verwenden möchten.
-
-   * Die verfügbaren Modelle hängen von der [**Cloud-Konfiguration** ab, die Sie für den Asset-Ordner](create-assets-folder.md) definiert haben, in dem Sie das Inhaltsfragment erstellen.
-   * Wenn Ihr Modell nicht verfügbar ist, überprüfen Sie die Konfiguration Ihres Asset-Ordners.
-
-   Fügen Sie den Titel, den Namen und ggf. eine Beschreibung hinzu.
-
-   ![Dialogfeld „Neues Inhaltsfragment erstellen“](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
-
-1. Wählen Sie **Erstellen** oder **Erstellen und öffnen** aus.
+* [Erstellen des Inhaltsfragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
+* [Erstellen Ihres Inhaltsfragments im neuen Editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* [Veröffentlichen des Inhaltsfragments](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor#publishing)
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 
@@ -53,4 +41,7 @@ Nachdem Sie nun ein Inhaltsfragment erstellt haben, können Sie zum letzten Teil
 
 >[!TIP]
 >
->Ausführliche Informationen zur Verwaltung von Inhaltsfragmenten finden Sie in der [Dokumentation zu Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md).
+>Ausführliche Informationen zur Verwaltung von Inhaltsfragmenten finden Sie unter:
+>
+>* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)   
+>* [Erstellen von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/authoring.md)

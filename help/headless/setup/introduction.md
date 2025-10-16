@@ -4,22 +4,22 @@ description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Fun
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '278'
-ht-degree: 100%
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 86%
 
 ---
 
 # Headless-Einrichtung {#introduction}
 
-Benutzende, die bereits mit AEM und Headless-Technologie vertraut sind, finden im Folgenden eine einfache Anleitung in fünf Schritten zum Erstellen, Verwalten und Bereitstellen von Erlebnissen unter Verwendung von AEM as a Cloud Service. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
+Im Folgenden finden Sie eine einfache Anleitung zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit AEM as a Cloud Service in fünf Schritten für Benutzende, die bereits mit AEM und Headless-Technologie vertraut sind (sodass sie auf die detaillierte Dokumentation verweisen). Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
-1. [Erstellen einer Konfiguration](create-configuration.md)
-1. [Erstellen eines Inhaltsfragmentmodells](create-content-model.md)
-1. [Erstellen eines Asset-Ordners](create-assets-folder.md)
-1. [Erstellen eines Inhaltsfragments](create-content-fragment.md)
-1. [Erstellen einer API-Anfrage](create-api-request.md)
+1. [Erstellen einer Konfiguration](/help/headless/setup/create-configuration.md)
+1. [Erstellen eines Inhaltsfragmentmodells](/help/headless/setup/create-content-model.md)
+1. [Erstellen eines Asset-Ordners](/help/headless/setup/create-assets-folder.md)
+1. [Erstellen eines Inhaltsmodells](/help/headless/setup/create-content-fragment.md)
+1. [Erstellen einer API-Anfrage](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >

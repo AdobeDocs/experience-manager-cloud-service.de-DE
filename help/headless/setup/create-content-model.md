@@ -4,10 +4,10 @@ description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM H
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: b76898409291fef85733e75405e65152424e2d41
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 77%
 
 ---
 
@@ -23,47 +23,14 @@ Inhaltsfragmentmodelle definieren die Struktur der Daten und Inhalte, die Sie in
 
 ## Erstellen eines Inhaltsfragmentmodells {#how-to-create-a-content-fragment-model}
 
-Eine Informationsarchitektin oder ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da neue Modelle erforderlich sind. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Modell erstellen.
+Ein Informationsarchitekt würde diese Aufgaben nur sporadisch ausführen, da neue Modelle benötigt werden.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Werkzeuge**, **Allgemein**, **Inhaltsfragmentmodelle**.
-1. Wählen Sie den Ordner aus, der durch die Erstellung der Konfiguration generiert wurde.
+Die Schritte, die zum Erstellen eines einsatzbereiten Modells erforderlich sind, sind:
 
-   ![Der Ordner „Modelle“](../assets/models-folder.png)
-1. Wählen Sie **Erstellen** aus.
-1. Geben Sie einen **Modell-Titel**, **Tags** und eine **Beschreibung** an. Sie können auch **Modell aktivieren** aus- oder abwählen, um zu steuern, ob das Modell unmittelbar nach der Erstellung aktiviert wird.
-
-   ![Erstellen eines Modells](../assets/models-create.png)
-1. Wählen Sie im Bestätigungsfenster **Öffnen** aus, um Ihr Modell zu konfigurieren.
-
-   ![Bestätigungsfenster](../assets/models-confirmation.png)
-1. Erstellen Sie mit dem **Inhaltsfragmentmodell-Editor** das Inhaltsfragmentmodell, indem Sie Felder aus der Spalte **Datentypen** ziehen und ablegen.
-
-   ![Ziehen und Ablegen von Feldern](../assets/models-drag-and-drop.png)
-
-1. Nachdem Sie ein Feld platziert haben, müssen Sie dessen Eigenschaften konfigurieren. Der Editor wechselt automatisch zur Registerkarte **Eigenschaften** für das hinzugefügte Feld, über die Sie die erforderlichen Felder bereitstellen können.
-
-   ![Konfigurieren von Eigenschaften](../assets/models-configure-properties.png)
-
-1. Wenn Sie mit der Erstellung des Modells fertig sind, wählen Sie **Speichern** aus.
-
-1. Der Modus des erstellten Modells hängt davon ab, ob Sie beim Erstellen des Modells **Modell aktivieren** ausgewählt haben:
-   * ausgewählt – das neue Modell ist bereits **aktiviert**
-   * nicht ausgewählt – das neue Modell wird im Modus **Entwurf** erstellt
-
-1. Wenn nicht bereits aktiviert, muss das Modell **aktiviert** werden, um es zu verwenden.
-   1. Wählen Sie das erstellte Modell und anschließend **Aktivieren** aus.
-
-      ![Aktivieren des Modells](../assets/models-enable.png)
-   1. Bestätigen Sie die Aktivierung des Modells, indem Sie im Bestätigungsdialogfeld auf **Aktivieren** tippen oder klicken.
-
-      ![Dialogfeld zum Bestätigen der Aktivierung](../assets/models-enabling.png)
-1. Das Modell ist jetzt aktiviert und einsatzbereit.
-
-   ![Modell aktiviert](../assets/models-enabled.png)
-
-Der **Inhaltsfragmentmodell-Editor** unterstützt viele verschiedene Datentypen wie einfache Textfelder, Asset-Referenzen, Verweise auf andere Modelle und JSON-Daten.
-
-Sie können mehrere Modelle erstellen. Modelle können auf andere Inhaltsfragmente verweisen. Verwenden Sie [Konfigurationen](create-configuration.md), um Ihre Modelle zu organisieren.
+* [Erstellen eines Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)
+* [Aktivieren des Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-a-content-fragment-model)
+* [Definieren des Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Veröffentlichen des Inhaltsfragmentmodells](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
 ## Nächste Schritte {#next-steps}
 
@@ -71,4 +38,7 @@ Nachdem Sie nun die Strukturen der Inhaltsfragmente durch die Erstellung von Mod
 
 >[!TIP]
 >
->Ausführliche Informationen zu Inhaltsfragmentmodellen finden Sie in der [Dokumentation zu Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+>Ausführliche Informationen zu Inhaltsfragmentmodellen finden Sie unter:
+>
+>* [Verwalten von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [Definieren von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

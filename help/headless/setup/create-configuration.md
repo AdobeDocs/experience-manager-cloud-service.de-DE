@@ -1,17 +1,17 @@
 ---
-title: Erstellen einer Konfiguration – Einrichten von Headless
+title: Erstellen einer Konfiguration - Headless-Einrichtung
 description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM as a Cloud Service zu beginnen.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '325'
-ht-degree: 100%
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 91%
 
 ---
 
-# Erstellen einer Konfiguration – Einrichten von Headless {#creating-configuration}
+# Erstellen einer Konfiguration - Headless-Einrichtung {#create-configuration}
 
 Als ersten Schritt für den Einstieg in Headless in AEM as a Cloud Service müssen Sie eine Konfiguration erstellen.
 
@@ -27,21 +27,7 @@ Wenn Sie mit [Seitenvorlagen in einer Full-Stack-AEM-Implementierung](/help/site
 
 Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen, wenn für die Organisation Ihrer Inhaltsmodelle ein neuer Arbeitsbereich erforderlich ist. Für die Zwecke dieser ersten Schritte müssen wir nur eine Konfiguration erstellen.
 
-1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools > Allgemein > Konfigurations-Browser** aus.
-1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
-   * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst.
-      * Er kann bei Bedarf angepasst werden.
-1. Überprüfen Sie die folgenden Optionen:
-   * **Inhaltsfragmentmodelle**
-   * **GraphQL – Persistente Abfragen**
-
-   ![Konfiguration erstellen](../assets/create-configuration.png)
-
-1. Wählen Sie **Erstellen** aus
-
-Sie können bei Bedarf mehrere Konfigurationen erstellen. Konfigurationen können auch verschachtelt sein.
+Schrittweise Informationen finden Sie unter [Aktivieren der Inhaltsfragmentfunktionen im Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!NOTE]
 >
