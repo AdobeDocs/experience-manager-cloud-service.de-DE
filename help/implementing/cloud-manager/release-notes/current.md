@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Version 2025.10.0 von Cloud Manager in Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 673e6a2403026e33c3bbd225b7296a1fb8877404
+source-git-commit: 302248ade67683712bf1895fd8dfdd8853aae1ac
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 61%
+source-wordcount: '1428'
+ht-degree: 56%
 
 ---
 
@@ -104,13 +104,22 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Betten Sie benutzerdefinierte Erlebnisse in Experience Hub ein, um das Dashboard Ihres Unternehmens zu erweitern und zu personalisieren. Zusätzlich zu den integrierten Widgets von Adobe können Sie Ihre eigenen mit dem [UI Extensibility](https://developer.adobe.com/uix/docs/)-Framework hinzufügen. Erstellen Sie JavaScript-basierte Benutzeroberflächen-Apps und stellen Sie sie Ihren Benutzern zur Verfügung, um geschäftsspezifische Anforderungen und Workflows zu erfüllen.
 
-Sie interessieren sich für die Beta-Version? Senden Sie eine E-[&#x200B; an &#x200B;](mailto:beta_exphubextensibility@adobe.com)beta_exphubextensibility@adobe.commit Ihrer Adobe-OrgID und einer kurzen Beschreibung der Anpassung, die Sie erstellen möchten.
+Sie interessieren sich für die Beta-Version? Senden Sie eine E-[ an ](mailto:beta_exphubextensibility@adobe.com)beta_exphubextensibility@adobe.commit Ihrer Adobe-OrgID und einer kurzen Beschreibung der Anpassung, die Sie erstellen möchten.
 
 ### Schnellere Builds mit Modul-Caching {#quick-build-cm-pipelines}
 
 Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte Repository) mithilfe des Caching auf Modulebene, um die Erstellungszeiten zu verkürzen. Sie gilt für Pipelines in Code-Qualität, mit vollem Stapel und nur Staging.
 
-Interessiert? Senden Sie eine E-Mail an [0&rbrace;beta_quickbuild_cmpipelines@adobe.com&quot; mit Ihrer Adobe-OrgID und Programm-ID.](mailto:beta_quickbuild_cmpipelines@adobe.com)
+![Dialogfeld „Produktionsfremde Pipeline bearbeiten“ mit den beiden Optionen für die Build-Strategie „Vollständiger Build“ und „Intelligenter Build“](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png) *Dialogfeld „Produktionsfremde Pipeline bearbeiten“ mit den beiden Optionen für die Build-Strategie „Vollständiger Build“ und „Intelligenter Build“.*
+
+Im Dialogfeld **Pipeline hinzufügen/bearbeiten** auf der Registerkarte **Source-Code** können Sie mit dem Abschnitt **Erstellen-Strategie** eine der folgenden Build-Optionen auswählen:
+
+* **Vollständiger Build** - Erstellt bei jeder Ausführung alle Module im Repository.
+* **Smarter Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden, was die Erstellungszeit insgesamt verkürzt.
+
+Sie steuern, welche Pipelines „Smart **Build“**. Während der Beta-Phase wird diese Option nur für Pipelines **Code-Qualität** und **Bereitstellung durch Entwicklung** angezeigt.
+
+Interessiert? Senden Sie eine E-Mail an [0}beta_quickbuild_cmpipelines@adobe.com&quot; mit Ihrer Adobe-OrgID und Programm-ID.](mailto:beta_quickbuild_cmpipelines@adobe.com)
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
@@ -120,10 +129,10 @@ Interessiert? Senden Sie eine E-Mail an [0&rbrace;beta_quickbuild_cmpipelines@ad
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ &#x200B;](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
