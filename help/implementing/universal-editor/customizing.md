@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 92%
+source-wordcount: '522'
+ht-degree: 78%
 
 ---
 
@@ -40,6 +40,26 @@ Die Schaltfläche **Vorschau** im Fenster „Veröffentlichen“ kann daher in e
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
+## Deaktivieren der Veröffentlichung in Live Copy {#publish-live}
+
+Bestimmte Authoring-Workflows verhindern möglicherweise die Veröffentlichung im Live-Service.
+
+Die **Live**-Option im Veröffentlichungsfenster kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## Deaktivieren der Veröffentlichung {#unpublish}
+
+Bestimmte Authoring-Workflows erfordern einen Genehmigungsprozess, bevor Inhalte veröffentlicht werden können. In solchen Fällen sollte die Option zum Rückgängigmachen der Veröffentlichung für keine Autorin bzw. keinen Autor verfügbar sein.
+
+Die Schaltfläche **Veröffentlichung aufheben** kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
+```
+
 ## Deaktivieren der Seitenöffnung {#open-page}
 
 Die Schaltfläche **Seite öffnen** kann in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
@@ -70,7 +90,7 @@ Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sonder
 
 ## Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [&#x200B; Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
