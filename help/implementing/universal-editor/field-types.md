@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '1569'
-ht-degree: 100%
+source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+workflow-type: tm+mt
+source-wordcount: '1592'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | `label` | `FieldLabel` | Titel des Felds | Ja |
 | `description` | `FieldDescription` | Beschreibung des Felds | Nein |
 | `placeholder` | `string` | Platzhalter für das Feld | Nein |
-| `value` | `FieldValue` | Standardwert | Nein |
+| `value` | `FieldValue` | Dies ist ein Standardwert, der als Platzhalter dient. Dieser Wert bestimmt keine Inhaltsaktualisierungen. Dies ist nur eine Darstellung in der Benutzeroberfläche. | Nein |
 | `valueType` | `ValueType` | Standardvalidierung, kann `string`, `string[]`, `number`, `date`, `boolean` sein. | Nein |
 | `required` | `boolean` | Ist das Feld erforderlich? | Nein |
 | `readOnly` | `boolean` | Ist das Feld schreibgeschützt? | Nein |
