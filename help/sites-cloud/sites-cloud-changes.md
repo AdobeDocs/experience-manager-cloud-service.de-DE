@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ In AEM Cloud Service wurden Vorgänge, die die Benutzeroberfläche zuvor blockie
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 -->
 
-Sie können den Status asynchroner Aufträge im Dashboard &quot;[&#x200B; Vorgänge“ &#x200B;](/help/operations/asynchronous-jobs.md).
+Sie können den Status asynchroner Aufträge am [Dashboard für Hintergrundvorgänge](/help/operations/asynchronous-jobs.md) einsehen.
 
 >[!NOTE]
 >

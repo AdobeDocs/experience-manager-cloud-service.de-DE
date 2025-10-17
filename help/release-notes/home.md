@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: fcec84197674aefdfa4e305179c3a8f1685ec5cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2 025,9,0 |
+| Version | 2025.9.0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 
@@ -47,7 +47,7 @@ So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 1. [Markieren der Termine im Kalender](#mark-calendars)
 1. [Lesen der Versionshinweise](#release-notes)
 1. [Zugreifen auf und Ausprobieren von bevorstehenden Funktionen](#upcoming-features)
-1. [Schulen der Benutzenden &#x200B;](#train-users)
+1. [Schulen der Benutzenden ](#train-users)
 
 ## Markieren der Termine im Kalender {#mark-calendars}
 
