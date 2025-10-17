@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
 source-wordcount: '1981'
-ht-degree: 44%
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.9.0) ist der Freitag, 25. September 2025. Die nächste Version mit neuen Funktionen (2025.10.0) ist für den Freitag, 30. Oktober 2025 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.9.0) ist der 25. September 2025. Die nächste Version mit neuen Funktionen (2025.10.0) ist für den 30. Oktober 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -40,23 +40,23 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Neue Funktionen in der Vorabversion von Experience Manager Sites {#prerelease-sites}
+### Neue Funktion in der Vorabversion von Experience Manager Sites {#prerelease-sites}
 
-Der Inhaltsmodell-Editor für AEM-Inhaltsfragmente wurde modernisiert, um ihn an andere auf React Spectrum basierende Benutzeroberflächen in AEM anzupassen. Die Implementierung der Benutzeroberfläche und das Erweiterbarkeitsmodell sind jetzt mit dem Inhaltsfragment-Editor und dem universellen Editor konsistent. Der neue Modell-Editor ist jetzt standardmäßig, wenn er über die neue Admin-Benutzeroberfläche des Inhaltsmodells geöffnet wird. Beim Öffnen eines Inhaltsmodells in der Touch-optimierten Benutzeroberfläche wird der Editor für die Touch-optimierte Benutzeroberfläche geöffnet. Außerdem werden Angebote zum Testen des neuen Editors angezeigt.
+Der Inhaltsmodelleditor für AEM-Inhaltsfragmente wurde modernisiert, um ihn an andere auf React Spectrum basierende Benutzeroberflächen in AEM anzupassen. Die Implementierung der Benutzeroberfläche und das Erweiterbarkeitsmodell sind jetzt mit dem Inhaltsfragmenteditor und dem universellen Editor konsistent. Der neue Modelleditor ist jetzt Standard, wenn über die neue Admin-Benutzeroberfläche des Inhaltsmodells geöffnet wird. Beim Öffnen eines Inhaltsmodells in der Touch-optimierten Benutzeroberfläche wird der Editor für die Touch-optimierte Benutzeroberfläche geöffnet und Sie können den neuen Editor ausprobieren.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Neue Funktionen in der Assets-Ansicht {#new-features-assets-view}
 
-**Verbesserte Textformatierung mit Teilzeichenfolgen in Dynamic Media-Vorlagen**
+**Verbesserte Textformatierung mit Unterzeichenfolgen in Dynamic Media-Vorlagen**
 
-Sie können jetzt Formatierungen auf Teilzeichenfolgen in Textebenen von Dynamic Media-Vorlagen anwenden. Ein ausgewähltes Wort oder eine ausgewählte Phrase wird als separate Ebene behandelt, sodass Sie die Schriftart, Schriftgröße, Farbe und mehr anpassen können. Die Ebene der Unterzeichenfolge wird parametrisiert, sodass Sie sie mithilfe der Versand-URL der Vorlage in Echtzeit aktualisieren können
+Sie können jetzt Formatierungen auf Unterzeichenfolgen in Textebenen von Dynamic Media-Vorlagen anwenden. Ein ausgewähltes Wort oder ein ausgewählter Satzteil wird als separate Ebene behandelt, sodass Sie die Schrift, den Schriftgrad, die Farbe und mehr anpassen können. Die Ebene der Unterzeichenfolge wird parametrisiert, sodass Sie sie mithilfe der Versand-URL der Vorlage in Echtzeit aktualisieren können.
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-with-openapi}
 
@@ -66,7 +66,7 @@ Verbessern der Lesbarkeit von Dynamic Media mit OpenAPI-URLs durch Verwendung vo
 
 >[!NOTE]
 >
->Diese Funktion ist nur in begrenztem Umfang verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+>Diese Funktion ist nur eingeschränkt verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
 
 <!--
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,23 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Neue Funktionen in Experience Manager Forms {#new-features-forms}
 
-**Workflow-Schritt „Formulardatenmodell aufrufen“ für SharePoint-Listenanlagen**
+**Workflow-Schritt „Aufrufen von Formulardatenmodell“ für SharePoint-Listenanhänge**
 
-Der Workflow-Schritt „Formulardatenmodell aufrufen“ unterstützt jetzt die Verarbeitung von Workflow-seitigen Metadaten für Base64-kodierte Anlagen-Arrays in SharePoint-Listenbasierten Formulardatenmodellen. Mit dieser Verbesserung kann der Workflow-Schritt Metadaten wie Dateinamen, MIME-Typ und benutzerdefinierte Eigenschaften für jeden Anhang übergeben, speichern und abrufen. Diese Funktion ermöglicht ein umfassenderes Daten-Management und ermöglicht eine nahtlose nachgelagerte Integration. Weitere Informationen finden Sie unter [Verbesserte Unterstützung im Workflow-Schritt „Formulardatenmodell aufrufen“ für SharePoint-Listenanhänge](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
+Der Workflow-Schritt „Aufrufen von Formulardatenmodell“ unterstützt jetzt die Verarbeitung von Workflow-seitigen Metadaten für Base64-kodierte Anhang-Arrays in auf SharePoint-Listen basierten Formulardatenmodellen. Mit dieser Verbesserung kann der Workflow-Schritt Metadaten wie Dateinamen, MIME-Typ und benutzerdefinierte Eigenschaften für jeden Anhang übergeben, speichern und abrufen. Diese Funktion ermöglicht ein umfassenderes Daten-Management und ermöglicht eine nahtlose nachgelagerte Integration. Weitere Informationen finden Sie unter [Verbesserte Unterstützung für Workflow-Schritt „Aufrufen von Formulardatenmodell“ für SharePoint-Listenanhänge](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
 ### Vorab veröffentlichte Funktionen in AEM Forms
 
-**Verbesserungen am Regeleditor**
+**Verbesserungen beim Regeleditor**
 
-Der Regeleditor unterstützt jetzt die erweiterte Navigation und ermöglicht die Verwendung von Funktionen und mathematischen Ausdrücken in Eingabeparametern.
+Der Regeleditor unterstützt jetzt eine verbesserte Navigation und ermöglicht die Verwendung von Funktionen und mathematischen Ausdrücken in Eingabeparametern.
 
 **Verbesserte Navigation mit Unterstützung der Ereignis-Payload**
 
-Die `Navigate To` Aktion in den Handlern zum Aufrufen von Services unterstützt jetzt `EVENT_PAYLOAD` und ermöglicht es Formularautoren, Folgeaktionen basierend auf Ereignisantworten zu konfigurieren. Diese Verbesserung bietet mehr Flexibilität beim Entwerfen von Workflows nach der Übermittlung, wodurch reibungslosere Übergänge und personalisiertere Benutzererlebnisse gewährleistet werden. Weitere Informationen finden Sie unter [Erweiterte Navigation mit Unterstützung der Ereignis-Payload](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+Die Aktion `Navigate To` in den Handlern zum Aufrufen von Diensten unterstützt jetzt `EVENT_PAYLOAD` und ermöglicht es Erstellenden von Formularen, Folgeaktionen basierend auf Ereignisantworten zu konfigurieren. Diese Verbesserung bietet mehr Flexibilität beim Entwerfen von Workflows nach der Übermittlung, wodurch reibungslosere Übergänge und personalisiertere Benutzererlebnisse gewährleistet werden. Weitere Informationen finden Sie unter [Verbesserte Navigation mit Unterstützung der Ereignis-Payload](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
 **Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern**
 
-Eingabeparameter unterstützen jetzt sowohl Funktionsaufrufe als auch mathematische Ausdrücke, sodass Formularautoren dynamisch berechnete Werte direkt übergeben können. Diese Verbesserung optimiert die Regelkonfigurationen, macht zusätzliche Felder überflüssig und Formulare anpassbarer an komplexe Logik und berechnungsgesteuerte Szenarien. Weitere Informationen finden Sie unter [Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+Eingabeparameter unterstützen jetzt sowohl Funktionsaufrufe als auch mathematische Ausdrücke, sodass Erstellende von Formularen dynamisch berechnete Werte direkt übergeben können. Diese Verbesserung optimiert die Regelkonfigurationen, beseitigt die Notwendigkeit zusätzlicher Felder und macht Formulare anpassbarer an komplexe Logik und berechnungsgesteuerte Szenarien. Weitere Informationen finden Sie unter [Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### Neue Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -116,15 +116,15 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 **PDF-Vorschau im Editor für interaktive Kommunikation**
 
-Benutzer können PDFs mit interaktiver Kommunikation ohne Daten, mit lokalen JSON-Datendateien oder mit Daten aus einem Datenmodell in der Vorschau anzeigen, was flexible datengesteuerte Tests ermöglicht. Weitere Informationen finden Sie unter [PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+Benutzende können PDFs mit interaktiver Kommunikation ohne Daten, mit lokalen JSON-Datendateien oder mit Daten aus einem Datenmodell in der Vorschau anzeigen, was flexible datengesteuerte Tests ermöglicht. Weitere Informationen finden Sie unter [PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Unterstützung benutzerdefinierter Schriftarten in der interaktiven Kommunikation**
+**Unterstützung benutzerdefinierter Schriften in der interaktiven Kommunikation**
 
-Mit der Funktion für benutzerdefinierte Schriftarten können Benutzende benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten in die interaktive Kommunikation einbetten, um so ein konsistentes und markenübergreifendes PDF-Rendering auf allen Geräten und Plattformen sicherzustellen. Weitere Informationen finden Sie unter [Unterstützung benutzerdefinierter Schriftarten in interaktiver Kommunikation](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+Mit der Funktion für benutzerdefinierte Schriften können Benutzende benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten in die interaktive Kommunikation einbetten, um so eine konsistente und markenübergreifende PDF-Ausgabe auf allen Geräten und Plattformen sicherzustellen. Weitere Informationen finden Sie unter [Unterstützung benutzerdefinierter Schriften in interaktiver Kommunikation](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
 **Importieren und Exportieren von interaktiver Kommunikation**
 
-Diese Funktion ermöglicht die Migration und Wiederverwendung interaktiver Kommunikation über verschiedene Umgebungen hinweg. Sie können jetzt eine interaktive Kommunikation zusammen mit den zugehörigen Fragmenten und Datenmodellen aus einer Umgebung exportieren und in eine andere importieren. Weitere Informationen finden Sie unter [Interaktive Kommunikation importieren und exportieren](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+Diese Funktion ermöglicht die Migration und Wiederverwendung interaktiver Kommunikation über verschiedene Umgebungen hinweg. Sie können jetzt interaktive Kommunikation zusammen mit den zugehörigen Fragmenten und Datenmodellen aus einer Umgebung exportieren und in eine andere importieren. Weitere Informationen finden Sie unter [Importieren und Exportieren von interaktiver Kommunikation](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
 
 <!--
 **Forms Optimization opportunities**
@@ -145,29 +145,29 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Neue Funktionen in der Versionsverwaltung {#new-features-release-management}
+### Neue Funktionen für die Versionsverwaltung {#new-features-release-management}
 
-**Pausieren der automatischen Wartungsaktualisierungen**
+**Pausieren der automatischen Wartungs-Updates**
 
-Live-Schaltungstage, Live-Ereignisse, Spitzenumsätze - diese Momente sind unvermeidlich. [Unsere neuen Self-Service-Funktionen](/help/implementing/deploying/quiet-hours-update-free-periods.md) stoppen automatische Wartungs-Updates, wenn es darauf ankommt, damit Ihre Teams fokussiert bleiben.
+Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Spitzenumsätze erzielt werden – in diesen Momenten muss alles funktionieren. [Unsere neuen Self-Service-Funktionen](/help/implementing/deploying/quiet-hours-update-free-periods.md) stoppen automatische Wartungs-Updates, wenn dies notwendig ist, damit Ihre Teams fokussiert bleiben.
 
-* Ruhige Stunden: Blockieren Sie die automatische Wartung während der festgelegten Zeiten jeden Tag. Ideal für Arbeitszeiten, nächtliche Abläufe oder morgendliche Umschläge.
-* Update-freier Zeitraum: Blockieren Sie die automatische Wartung für eine ganze Woche. Verwenden Sie ihn für Launches, Promos oder jährliche Einfrierungen.
+* Ruhezeiten: Blockieren Sie die automatische Wartung während jeden Tag während festgelegter Zeiten. Ideal für Arbeitszeiten, nächtliche Ausführungen oder morgendliche Umstellungen.
+* Update-freier Zeitraum: Blockieren Sie die automatische Wartung für eine ganze Woche. Verwenden Sie dies für Launches, Promos oder jährliche Pausen.
 
 >[!NOTE]
 >
->Verfügbar als Funktion zur eingeschränkten Verfügbarkeit am 25. September.
->&#x200B;>Senden Sie eine E-Mail an [0&rbrace;aemcs-update-free@adobe.com&quot;, um sie in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
+>Verfügbar als Funktion mit eingeschränkter Verfügbarkeit am 25. September.
+>>Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
 
-### Neue Version von AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}
+### Neue Version von AEM Developer Tools für Eclipse {#aem-develeper-tools-for-eclipse}
 
-Version 1.4.0 der AEM Developer Tools for Eclipse wurde veröffentlicht. Diese Version unterstützt nun Eclipse IDE 2022-12 oder höher und wurde mit der aktuellen Version validiert (2025-09). Die Tools funktionieren jetzt mit modernen Versionen des AEM-Projektarchetyps und enthalten Verbesserungen von Sling IDE-Tools 1.3.0.
+Version 1.4.0 von AEM Developer Tools für Eclipse wurde veröffentlicht. Diese Version unterstützt nun Eclipse IDE 2022–12 oder höher und wurde mit der aktuellen Version getestet (2025-09). Die Tools funktionieren jetzt mit modernen Versionen des AEM-Projektarchetyps und enthalten Verbesserungen von Sling IDE Tooling 1.3.0.
 
-Installieren Sie vom [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) und lesen Sie die Seite [AEM Developer Tools](https://eclipse.adobe.com) für weitere Details.
+Installieren Sie vom [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) aus. Weitere Details finden Sie auf der [Seite zu den AEM Developer Tools](https://eclipse.adobe.com).
 
 ### Bevorstehende Einstellung von Java-APIs {#java-api-deprecation}
 
-Mehrere veraltete APIs wurden am 31. August zum Entfernen markiert und sollten daher nicht mehr referenziert werden. Sie erhalten Benachrichtigungen des Aktionszentrums, wenn eine veraltete API-Nutzung in Ihrem Code erkannt wird, und nach dem 13. November werden während Cloud Manager-Builds Hinweise angezeigt, die die Bedeutung der Entfernung der Nutzung unterstreichen. Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
+Verschiedene veraltete APIs wurden für die Einstellung am 31. August vorgemerkt und sollten daher nicht mehr referenziert werden. Sie erhalten Benachrichtigungen des Aktionszentrums, wenn die Nutzung einer veralteten API in Ihrem Code erkannt wird, und nach dem 13. November werden während Cloud Manager-Builds Benachrichtigungen angezeigt, die zum Beenden der Nutzung auffordern. Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
 
 +++ Zum Anzeigen der veralteten Java-APIs erweitern
 
@@ -201,19 +201,19 @@ OSGi properties:
 
 ### Abschaffung der Java 11-Laufzeit {#java11-runtime-deprecation}
 
-Die *Java 11-* ist veraltet, und die meisten Umgebungen wurden bereits auf die leistungsfähigere Java 21 **Laufzeitumgebung**.
+Die *Java 11-Laufzeit* ist jetzt veralte und die meisten Umgebungen wurden bereits auf die leistungsfähigere **Java 21-Laufzeit** aktualisiert.
 
-Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Java 21-Laufzeitanforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit den nächsten Schritten erhalten haben. Wie dort beschrieben, hat Adobe am 18. **2025 Ihre** Dev **- und** RDE **-Umgebungen aktualisiert** damit Sie Ihre Site und Ihre Prozesse validieren und Probleme beheben können. Die Upgrades für **Staging** und **Produktion** werden am 14. **2025**.
+Wenn Ihre Umgebung aufgrund nicht unterstützter Abhängigkeiten nicht aktualisiert werden konnte (siehe [Anforderungen für Java 21-Laufzeit](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), sollten Sie eine E-Mail von Adobe mit konkreten nächsten Schritten erhalten haben. Wie dort beschrieben, hat Adobe am **18. September 2025** die **Entwicklungs**- und **RDE**-Umgebungen aktualisiert, damit Sie Ihre Site und Ihre Prozesse validieren und Probleme beheben können. Die Upgrades für **Staging**- und **Produktions**-Umgebungen werden am **14. Oktober 2025** durchgeführt.
 
 >[!NOTE]
 >
->Die Laufzeitversion ist von der Build-Version Ihres Codes getrennt. Obwohl das Erstellen mit Java 21 empfohlen wird, werden Java 11-Builds derzeit noch akzeptiert. Ein separater Hinweis zur Abschaffung von Java 11 für Builds wird in Zukunft freigegeben.
+>Die Laufzeitversion ist unabhängig von der Build-Version Ihres Codes. Es wird zwar empfohlen, Builds mit Java 21 durchzuführen, aber Java 11-Builds werden derzeit noch unterstützt. Ein separater Hinweis zur Abschaffung von Java 11 für Builds wird in Zukunft freigegeben.
 
 ### Durchsetzung der Konfigurationsrichtlinie für AEM-Java-Protokolle {#logconfig-policy}
 
 Wie in den Versionshinweisen vom April erwähnt, müssen AEM-Java-Protokolle einem Standardformat entsprechen, um eine zuverlässige Überwachung in allen Kundenumgebungen sicherzustellen. Benutzerdefinierte Protokollkonfigurationen – wie etwa Änderungen an der Protokollformatierung, Ausgabedateien oder Standardprotokollebenen – werden nicht mehr unterstützt. Protokolle müssen an die Standarddateien weitergeleitet werden, und die standardmäßigen Protokollebenen für AEM-Produkt-Code müssen beibehalten werden. Ausführliche Informationen finden Sie im [Artikel zur Protokollierung](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Ab dem **. Oktober** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
+Ab **30. Oktober** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
 
 Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf einem benutzerdefinierten Protokollierungsverhalten basieren. Zum Beispiel:
 
@@ -236,9 +236,9 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 ### Edge-Authentifizierung für Edge Delivery Services (Beta-Programm) {#edge-authentication}
 
-Mit der Edge-Authentifizierung können Sie den Zugriff auf Edge Delivery Services-Seiten auf diejenigen beschränken, die sich bei Ihrem Identitätsanbieter (IdP) authentifiziert haben. Dies wird durch die Bereitstellung einer OpenID Connect (OIDC)-YAML-Konfigurationsdatei erreicht.
+Mit der Edge-Authentifizierung können Sie den Zugriff auf Edge Delivery Services-Seiten auf diejenigen beschränken, die sich bei Ihrem Identitätsanbieter (IdP) authentifiziert haben. Dies wird durch die Bereitstellung einer YAML-Konfigurationsdatei von OpenID Connect (OIDC) erreicht.
 
-Bei Interesse senden Sie bitte eine E-Mail an [&#128279;](mailto:aemcs-edgecompute-feedback@adobe.com)aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben könnten.
+Bei Interesse senden Sie bitte eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben.
 
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
@@ -249,13 +249,13 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
-### Canary-Produktionsbereitstellungen, um Code zu testen, bevor Live-Traffic akzeptiert wird (Beta-Programm) {#canary-beta}
+### Canary-Produktionsbereitstellungen zum Testen von Code vor Annahme von Live-Traffic (Beta-Programm) {#canary-beta}
 
-Validieren Sie einen Produktions-Build mit reinem Test-Traffic, bevor Sie ihn für Endbenutzer verfügbar machen. Senden Sie an die Produktion, leiten Sie nur den Canary-Traffic weiter (mithilfe einer speziellen Kopfzeile) und überwachen Sie das Verhalten. Leiten Sie dann entweder den Live-Traffic weiter oder setzen Sie ihn zurück, ohne dass sich dies auf die Kunden auswirkt.
+Validieren Sie einen Produktions-Build mit reinem Test-Traffic, bevor Sie ihn für Endbenutzende verfügbar machen. Senden Sie an die Produktion, leiten Sie nur den Canary-Traffic weiter (mithilfe einem speziellen Header) und überwachen Sie das Verhalten. Leiten Sie den Live-Traffic dann entweder weiter oder setzen Sie ihn zurück, ohne dass sich dies auf die Kundinnen und Kunden auswirkt.
 
-Stellen Sie Ihre Code-Versionen für die Produktion bereit, beschränken Sie sie jedoch auf internen Test-Traffic, bevor Sie entscheiden, ob Sie Live-Traffic akzeptieren oder zurücksetzen.
+Stellen Sie Ihre Code-Versionen für die Produktion bereit, beschränken Sie sie jedoch auf internen Test-Traffic, bevor Sie entscheiden, ob Sie Live-Traffic annehmen oder zurücksetzen.
 
-E-Mail [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com), um Zugriff anzufordern und Feedback zu geben.
+Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com), um Zugriff anzufordern und Feedback mitzuteilen.
 
 ### Snapshots für schnelle Entwicklungsumgebungen (Alpha-Programm) {#rde-snapshot-program}
 
@@ -271,9 +271,9 @@ Jetzt in der Beta-Phase können Sie AEM-Protokolle an Amazon S3, Sumo Logic, Dyn
 
 Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md).
 
-### Erweiterte Anwendungsleistungsüberwachung (APM) (Alpha-Programm) {#apm-alpha}
+### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
-Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestellte [New Relic One](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltete [Dynatrace](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Wenn wir Unterstützung für zusätzliche APM-Optionen prüfen, senden Sie uns bitte eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com) mit Ihrem bevorzugten Anbieter oder Ihrer bevorzugten Technologie sowie mit Anwendungsfällen.
+Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestelltes [New Relic One](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltetes [Dynatrace](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Da wir gerade Unterstützung für weitere APM-Optionen prüfen, bitten wir Sie, uns eine E-Mail an [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) zu senden und uns Ihren bevorzugten Anbieter bzw. Ihre bevorzugte Technologie sowie Ihre Anwendungsfälle mitzuteilen.
 
 
 ## [!DNL Experience Manager] Guides {#guides}

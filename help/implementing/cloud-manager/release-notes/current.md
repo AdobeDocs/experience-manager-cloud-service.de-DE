@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8dfe5316db99860ee8fbf5d0be2fa70412e7cce3
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 56%
+ht-degree: 89%
 
 ---
 
@@ -21,9 +21,9 @@ Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as
 
 ## Veröffentlichungsdaten {#release-date}
 
-Die Version 2025.10.0 von Cloud Manager in AEM as a Cloud Service wurde am Freitag, 2. Oktober 2025 veröffentlicht.
+Die Version 2025.10.0 von Cloud Manager in AEM as a Cloud Service wurde am 2. Oktober 2025 veröffentlicht.
 
-Die Veröffentlichung der nächsten Version ist für den Freitag, 6. November 2025 geplant.
+Die Veröffentlichung der nächsten Version ist für den 6. November 2025 geplant.
 
 ## Neue Funktionen {#what-is-new}
 
@@ -33,48 +33,48 @@ Die Veröffentlichung der nächsten Version ist für den Freitag, 6. November 20
 
 * **AEM Cloud Health Assessment Service**
 
-  Adobe führt den AEM Cloud Health Assessment Service ein, ein automatisiertes, nicht-invasives Checkup-Tool, das Ihre AEM as a Cloud Service-Umgebung optimiert, sicher und mit Best Practices abgestimmt hält.
+  Adobe führt den AEM Cloud Health Assessment Service ein, ein automatisiertes, nicht-invasives Prüf-Tool, das Ihre AEM as a Cloud Service-Umgebung optimiert, sichert und mit Best Practices abstimmt.
 
   Dieser Service bietet folgende Funktionen:
 
-   * Durchsucht Umgebungen nach Performance-Engpässen, Ineffizienzen und potenziellen Risiken.
+   * Prüft Umgebungen auf Leistungsengpässe, Ineffizienzen und potenzielle Risiken.
    * Analysiert Inhaltsstrukturen (Blueprints, Live Copies) und benutzerdefinierte Konfigurationen.
-   * Identifiziert veraltete Abhängigkeiten (AEM SDK, Drittanbieterbibliotheken).
+   * Identifiziert veraltete Abhängigkeiten (AEM SDK, Bibliotheken von Drittanbietern).
    * Kennzeichnet Probleme mit der Code-Qualität (falsche Anmerkungen, ineffiziente Muster).
-   * Stellt verwertbare Anleitungen über Dashboards wie **Aktionscenter** bereit.
+   * Stellt verwertbare Anleitungen über Dashboards wie **Aktionszentrum** bereit.
    * Unterstützt die proaktive Optimierung durch frühzeitige Erkennung und Behebung von Problemen.
 
-  Teams können ihre AEM-Umgebungen kontinuierlich überwachen und verbessern, um eine reibungslosere Leistung, mehr Sicherheit und langfristige Wartungsfreundlichkeit zu erzielen.
+  Teams können ihre AEM-Umgebungen kontinuierlich überwachen und verbessern, um eine reibungslose Leistung, mehr Sicherheit und langfristige Wartungsfreundlichkeit zu erzielen.
 
-  Siehe [Health Assessment for Production and Staging Environments](/help/implementing/cloud-manager/reports/report-health-assessment.md).
+  Siehe [Zustandsbewertung für Produktions- und Staging-Umgebungen](/help/implementing/cloud-manager/reports/report-health-assessment.md).
 
-* **Pipeline-Unterstützung konfigurieren**
+* **Unterstützung von Konfigurations-Pipelines**
 
-  Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, sodass diese Funktion über Cloud Service-Umgebungen hinaus genutzt werden kann. Sie können **Konfigurations-Pipelines** verwenden, um Einstellungen wie die CDN-Konfiguration zu verwalten, einschließlich Traffic-Filterregeln und Ursprungsselektoren. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
+  Konfigurations-Pipelines werden jetzt für Sites unterstützt, die mit Edge Delivery Services erstellt wurden, sodass diese Funktion über Cloud Service-Umgebungen hinaus genutzt werden kann. Sie können **Konfigurations-Pipelines** verwenden, um Einstellungen wie die CDN-Konfiguration zu verwalten, einschließlich Traffic-Filterregeln und Herkunftsauswahlen. Siehe [Unterstützte Konfigurationen](/help/operations/config-pipeline.md#configurations).
 
-  Edge Delivery-Konfigurations-Pipelines unterstützen über Cloud Manager-Pipeline-Variablen auch Geheimnisse.
+  Konfigurations-Pipelines für Edge Delivery unterstützen über Cloud Manager-Pipeline-Variablen auch Geheimnisse.
 
-  Siehe [Edge Delivery-Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+  Siehe [Hinzufügen einer Edge Delivery-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
-* **Das Dialogfeld „Domain Mapping-CDN Setup“ wurde optimiert**
+* **Optimierung des Dialogfelds zur Einrichtung des Domain Mapping-CDN**
 
-  Cloud Manager hat den Fluss **Domain zu CDN zuordnen** vereinfacht, um Verwirrung zu stiften und die Konfiguration zu beschleunigen. Das Dialogfeld betont jetzt das von **Adobe verwaltete CDN** (mit dem Badge „Recommended„).
+  Cloud Manager hat den Fluss **Domain einem CDN zuordnen** vereinfacht, um Verwirrung zu reduzieren und die Konfiguration zu beschleunigen. Das Dialogfeld hebt jetzt das von **Adobe verwaltete CDN** hervor (mit dem Hinweis „Empfohlen“).
 
-  ![Dialogfeld „Domain dem CDN zuordnen“ mit aktiviertem Optionsfeld „Von Adobe verwaltetes CDN“](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png).
+  ![Dialogfeld „Domain einem CDN zuordnen“ mit aktiviertem Optionsfeld „Von Adobe verwaltetes CDN“](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png).
 
   Siehe [Hinzufügen einer Domain-Zuordnung](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
-  Das Dialogfeld enthält auch eine einzelne, knappe Checkliste für die Karte **Andere CDN-Anbieter** mit Schwerpunkt auf Anleitungsinhalten mit den folgenden Inhalten:
+  Das Dialogfeld enthält auch eine präzise Check-Liste für die Karte **Anderer CDN-Anbieter** mit Schwerpunkt auf Anleitungen mit den folgenden Inhalten:
 
-   * Verweisen Sie Ihren CDN-Ursprung auf `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`.
-   * Setzen Sie **Host/SNI** auf den ursprünglichen Host.
+   * Verweisen Sie für den CDN-Ursprung auf `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`.
+   * Legen Sie **Host/SNI** auf den ursprünglichen Host fest.
    * Fügen Sie `X-AEM-Edge-Key` hinzu (nach Bereitstellung des Schlüssels in Cloud Manager).
-   * `X-Forwarded-Host` Sie auf Ihre kundenorientierte Domain.
-   * Löschen Sie andere `X-Forwarded-*`, bevor Sie AEM erreichen.
+   * Legen Sie `X-Forwarded-Host` auf Ihre kundenorientierte Domain fest.
+   * Löschen Sie andere `X-Forwarded-*`-Header, bevor Sie AEM erreichen.
 
-  ![Dialogfeld „Domain dem CDN zuordnen“ mit aktiviertem Optionsfeld „Andere CDN-Anbieter“](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
+  ![Dialogfeld „Domain einem CDN zuordnen“ mit aktiviertem Optionsfeld „Andere CDN-Anbieter“](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
 
-  <!-- (no redundant `Origin` field or "Learn more" clutter) -->Die zugehörige Fußzeile enthält zwei hilfreiche Links: Beispielkonfigurationen für gängige CDNs und einen Link zur vollständigen Dokumentation. Eine einzige Bestätigungsschaltfläche - Ich habe mein CDN konfiguriert - vervollständigt den Fluss.
+  <!-- (no redundant `Origin` field or "Learn more" clutter) -->Die zugehörige Fußzeile enthält zwei hilfreiche Links: Beispielkonfigurationen für gängige CDNs und einen Link zur vollständigen Dokumentation. Eine Bestätigungsschaltfläche („Ich habe mein CDN konfiguriert“) vervollständigt den Fluss.
 
   Siehe [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN).
 
@@ -98,17 +98,17 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ### Erweiterbarkeit und Anpassung von Experience Hub {#exp-hub-extensibility}
 
-[Experience Hub](/help/experience-hub.md) dient als Einstiegspunkt für AEM, angepasst an die Anforderungen Ihres Unternehmens. Teilen Sie Adobe Ihre bestehenden Erweiterungen der AEM-Benutzeroberfläche mit, damit Sie sie mit minimalem Aufwand in Experience Hub aktivieren können.
+[Experience Hub](/help/experience-hub.md) dient als Einstiegspunkt für AEM und ist an die Anforderungen Ihres Unternehmens angepasst. Teilen Sie Adobe Ihre bestehenden Erweiterungen der AEM-Benutzeroberfläche mit, damit Sie sie mit minimalem Aufwand in Experience Hub aktivieren können.
 
-![Abbildung des Erweiterbarkeits- und Anpassungs-Workflows von Experience Hub](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+![Diagramm des Erweiterbarkeits- und Anpassungs-Workflows von Experience Hub](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
 
-Betten Sie benutzerdefinierte Erlebnisse in Experience Hub ein, um das Dashboard Ihres Unternehmens zu erweitern und zu personalisieren. Zusätzlich zu den integrierten Widgets von Adobe können Sie Ihre eigenen mit dem [UI Extensibility](https://developer.adobe.com/uix/docs/)-Framework hinzufügen. Erstellen Sie JavaScript-basierte Benutzeroberflächen-Apps und stellen Sie sie Ihren Benutzern zur Verfügung, um geschäftsspezifische Anforderungen und Workflows zu erfüllen.
+Betten Sie benutzerdefinierte Erlebnisse in Experience Hub ein, um das Dashboard Ihres Unternehmens zu erweitern und zu personalisieren. Zusätzlich zu den integrierten Widgets von Adobe können Sie Ihre eigenen mit dem Framework für die [Erweiterbarkeit der Benutzeroberfläche](https://developer.adobe.com/uix/docs/) hinzufügen. Erstellen Sie auf JavaScript basierte Benutzeroberflächen-Apps und stellen Sie sie Ihren Benutzenden zur Verfügung, um geschäftsspezifische Anforderungen und Workflows zu erfüllen.
 
-Sie interessieren sich für die Beta-Version? Senden Sie eine E-[&#x200B; an &#x200B;](mailto:beta_exphubextensibility@adobe.com)beta_exphubextensibility@adobe.commit Ihrer Adobe-OrgID und einer kurzen Beschreibung der Anpassung, die Sie erstellen möchten.
+Sie interessieren sich für die Beta-Version? Senden Sie eine E-Mail an [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) mit Ihrer Adobe-OrgID und einer kurzen Beschreibung der Anpassung, die Sie vornehmen möchten.
 
 ### Schnellere Builds mit Modul-Caching {#quick-build-cm-pipelines}
 
-Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte Repository) mithilfe des Caching auf Modulebene, um die Erstellungszeiten zu verkürzen. Sie gilt für Pipelines in Code-Qualität, mit vollem Stapel und nur Staging.
+Ein neues Build-Modell kompiliert nur geänderte Module (nicht das gesamte Repository) mithilfe des Caching auf Modulebene, um die Erstellungszeiten zu verkürzen. Es kann für Code-Qualitäts-, Full-Stack- und reine Staging-Pipelines angewendet werden.
 
 ![Dialogfeld „Produktionsfremde Pipeline bearbeiten“ mit den beiden Optionen für die Build-Strategie „Vollständiger Build“ und „Intelligenter Build“](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *Dialogfeld „Produktionsfremde Pipeline bearbeiten“ mit den beiden Optionen für die Build-Strategie „Vollständiger Build“ und „Intelligenter Build“.*
@@ -120,7 +120,7 @@ Im Dialogfeld **Pipeline hinzufügen/bearbeiten** auf der Registerkarte **Source
 
 Sie steuern, welche Pipelines „Smart **Build“**. Während der Beta-Phase wird diese Option nur für Pipelines **Code-Qualität** und **Bereitstellung durch Entwicklung** angezeigt.
 
-Interessiert? Senden Sie eine E-Mail an [0&rbrace;beta_quickbuild_cmpipelines@adobe.com&quot; mit Ihrer Adobe-OrgID und Programm-ID.](mailto:beta_quickbuild_cmpipelines@adobe.com)
+Sie sind interessiert? Senden Sie eine E-Mail an [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe-OrgID und Programm-ID.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
@@ -130,10 +130,10 @@ Interessiert? Senden Sie eine E-Mail an [0&rbrace;beta_quickbuild_cmpipelines@ad
 
 Kehren Sie schnell zu einer vorherigen Bereitstellung zurück, wenn der neueste kundenspezifische Quell-Code nicht wie erwartet funktioniert. Dabei ist es nicht erforderlich, die vollständige Pipeline erneut auszuführen oder Commits manuell zurückzusetzen.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ &#x200B;](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**&#x200B;für eine ausgewählte Umgebung wieder her.*
+![Stellen Sie kundenspezifischen Quell-Code über die Karte „Umgebungen“ ](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png)*Karte „Umgebungen“ oben mit der Option **Wiederherstellen**>**Zuvor bereitgestellter Code**für eine ausgewählte Umgebung wieder her.*
 
 ![Dialogfeld „Zuvor bereitgestellten Code wiederherstellen“](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**&#x200B;die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
+*Überprüfen Sie im Dialogfeld **Zuvor bereitgestellten Code wiederherstellen**die aktuell bereitgestellte Version sowie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Bestätigen***.
 
 ![Aktivierung wird wiederhergestellt](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
 *Cloud Manager setzt die Umgebung auf den früheren Build zurück, behält Inhalte und Konfiguration bei und markiert die Umgebung als **Wiederherstellung läuft**, bis die Bereitstellung abgeschlossen ist.*
@@ -205,7 +205,7 @@ Siehe [Verwalten von Zugriffstoken](/help/implementing/cloud-manager/managing-co
 
 ## Fehlerbehebungen {#bug-fixes}
 
-Es gibt keine signifikanten Fehlerbehebungen in der Cloud Manager-Version vom Oktober.
+In der Cloud Manager-Version von Oktober gibt es keine signifikanten Fehlerbehebungen.
 
 
 <!-- ## Known issues {#known-issues} -->

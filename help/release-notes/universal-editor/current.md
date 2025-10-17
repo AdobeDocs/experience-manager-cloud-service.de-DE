@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 31c94576f6cfb0ffff0f37ece33ef1f91f98f356
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 50%
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ Dies sind die Versionshinweise für die Version vom 16. Oktober 2025 des univers
 
 >[!TIP]
 >
->Wenn Sie die Funktionen **kommenden** universellen Editors testen möchten, bevor sie veröffentlicht werden, lesen Sie die [Versionshinweise zum universellen Editor - Vorschau](/help/release-notes/universal-editor/preview.md)
+>Informationen zum Testen von **zukünftigen** Funktionen des universellen Editors vor ihrer Veröffentlichung finden Sie in den [Vorschauversionshinweisen zum universellen Editor](/help/release-notes/universal-editor/preview.md).
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ Wenn Sie diese kommenden Funktionen testen und Ihr Feedback teilen möchten, sen
 
 ### Neuer RTE {#new-rte}
 
-Der neue ProseMirror RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten Panel verfügbar. [Dieser RTE bietet flexible Konfigurationsoptionen.](/help/implementing/universal-editor/configure-rte.md)
+Der neue ProseMirror-RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten Panel verfügbar. [Dieser RTE bietet flexible Konfigurationsoptionen.](/help/implementing/universal-editor/configure-rte.md)
 
 ## Andere Verbesserungen {#other-improvements}
 

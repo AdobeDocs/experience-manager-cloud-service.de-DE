@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1a1eeb3b9aec839677baadf9bea67993a22f9519
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -71,7 +71,7 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 
 | Technologie | Version | Link |
 |---|---|---|
-| AEM Oak | 1,86,0 | [Oak 1.86.0-API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html) |
+| AEM Oak | 1.86.0 | [Oak 1.86.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html) |
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
