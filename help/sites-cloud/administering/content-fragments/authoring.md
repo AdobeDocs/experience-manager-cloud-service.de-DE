@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
+source-git-commit: 117703794c84bebd659294a593ffd98f52ff89a2
 workflow-type: tm+mt
 source-wordcount: '2778'
 ht-degree: 98%
@@ -68,7 +68,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
 
   >[!NOTE]
   >
-  >Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Arten von [Validierung](/help/assets/content-fragments/content-fragments-models.md#validation) unterliegen.
+  >Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Arten von [Validierung](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation) unterliegen.
 
 ![Inhaltsfragmenteditor – Überblick](assets/cf-authoring-overview.png)
 
@@ -126,7 +126,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* [Unter Verwendung der Funktion „Varianten generieren“ &#x200B;](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+* [Unter Verwendung der Funktion „Varianten generieren“ ](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -144,7 +144,7 @@ So erstellen Sie eine Variante Ihres Inhaltsfragments:
    >
    >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante &#x200B;](assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](assets/cf-authoring-create-variation-01.png)
 
 1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
@@ -267,7 +267,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
