@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
-workflow-type: ht
-source-wordcount: '1574'
-ht-degree: 100%
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
+workflow-type: tm+mt
+source-wordcount: '1580'
+ht-degree: 94%
 
 ---
 
@@ -101,4 +101,4 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | Commerce Integration Framework-Aufrufe | Ausgeschlossen | Anfragen an AEM, die an das Commerce Integration Framework weitergeleitet werden. Die URL beginnt mit `/api/graphql`. Um eine doppelte Zählung zu vermeiden, sind sie für den Cloud-Service nicht abrechenbar. |
 | Ausschließen von `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf. Es bietet Informationen zur Installation von Websites auf Desktops oder Mobiltelefonen. Adobe sollte eine JSON-Anfrage an `/etc.clientlibs/*/manifest.json` nicht zählen |
 | Ausschließen von `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, wurde festgestellt, dass in einigen Szenarien wie bei SAML-Authentifizierungsabläufen Favicons als HTML zurückgegeben wurden. Daher werden Favicons explizit aus der Zählung ausgeschlossen. |
-| Experience Fragment (XF) – Wiederverwendung derselben Domain | Ausgeschlossen | Anfragen an XF-Pfade (z. B. `/content/experience-fragments/...`) von Seiten, die auf derselben Domain gehostet werden (wie durch den Referrer-Header identifiziert, der mit dem Anfrage-Host übereinstimmt).<br><br> Beispiel: Eine Homepage auf `aem.customer.com`, die ein XF für ein Banner oder eine Karte aus derselben Domain abruft.<br><br>・ URL stimmt überein mit /content/experience-fragments/…<br>・ Referrer-Domain stimmt überein mit `request_x_forwarded_host`<br><br>**Hinweis:** Wenn der Experience Fragment-Pfad angepasst wird (z. B. mithilfe von `/XFrags/...` oder einem Pfad außerhalb von `/content/experience-fragments/`), wird die Anfrage nicht ausgeschlossen und kann gezählt werden, selbst wenn es sich um dieselbe Domain handelt. Es wird empfohlen, die standardmäßige XF-Pfadstruktur von Adobe zu verwenden, um sicherzustellen, dass die Ausschlusslogik korrekt angewendet wird. |
+| Experience Fragment (XF) – Wiederverwendung derselben Domain | Ausgeschlossen | Anfragen an XF-Pfade (z. B. `/content/experience-fragments/...`) von Seiten, die auf derselben Domain gehostet werden (wie durch die Referrer-Kopfzeile identifiziert, die mit dem Anfrage-Host übereinstimmt).<br><br> Beispiel: Eine Homepage auf `aem.customer.com`, die ein XF für ein Banner oder eine Karte aus derselben Domain abruft.<br><br>・ URL stimmt überein mit /content/experience-fragments/…<br>・ Referrer-Domain stimmt überein `request_x_forwarded_host`<br><br>**Hinweis:** Wenn der Experience Fragment-Pfad angepasst wird (z. B. mithilfe von `/XFrags/...` oder einem Pfad außerhalb von `/content/experience-fragments/`), wird die Anfrage nicht ausgeschlossen und kann gezählt werden. Dieses Ergebnis ist auch dann richtig, wenn es sich um dieselbe Domain handelt. Adobe empfiehlt die Verwendung der standardmäßigen XF-Pfadstruktur von Adobe, um sicherzustellen, dass die Ausschlusslogik korrekt angewendet wird. |

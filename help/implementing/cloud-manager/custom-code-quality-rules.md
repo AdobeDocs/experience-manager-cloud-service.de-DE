@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 100%
+source-wordcount: '4349'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ Im folgenden Abschnitt werden die SonarQube-Regeln beschrieben, die von Cloud Ma
 
 ### Verwenden Sie keine potenziell gefährlichen Funktionen {#do-not-use-potentially-dangerous-functions}
 
-* **Schlüssel**: CQRules:CWE-676
+* **key**: CQRules:CWE-676
 * **Typ**: Sicherheitslücke
 * **Schweregrad**: Hoch
 * **Seit**: Version 2018.4.0
@@ -93,7 +93,7 @@ public class DoThis implements Runnable {
 
 ### Verwenden Sie keine Formatzeichenfolgen, die extern gesteuert werden können {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-* **Schlüssel**: CQRules:CWE-134
+* **key**: CQRules:CWE-134
 * **Typ**: Sicherheitslücke
 * **Schweregrad**: Hoch
 * **Seit**: Version 2018.4.0
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 ### HTTP-Anfragen sollten immer Zeitüberschreitungswerte für Sockets und Verbindungen enthalten {#http-requests-should-always-have-socket-and-connect-timeouts}
 
-* **Schlüssel**: CQRules:ConnectionTimeoutMechanism
+* **key**: CQRules:ConnectionTimeoutMechanism
 * **Typ**: Fehler
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2018.6.0
@@ -188,7 +188,7 @@ public void orDoThis () {
 
 ### ResourceResolver-Objekte immer schließen {#resourceresolver-objects-should-always-be-closed}
 
-* **Schlüssel**: CQRules:CQBP-72
+* **key**: CQRules:CQBP-72
 * **Typ**: `Code Smell`
 * **Schweregrad**: Hoch
 * **Seit**: Version 2018.4.0
@@ -230,12 +230,12 @@ public void orDoThis(Session session) throws Exception {
 
 ### Verwenden Sie keine Sling-Servlet-Pfade zum Registrieren von Servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
 
-* **Schlüssel**: CQRules:CQBP-75
+* **key**: CQRules:CQBP-75
 * **Typ**: `Code Smell`
 * **Schweregrad**: Hoch
 * **Seit**: Version 2018.4.0
 
-Wie in der [Sling-Dokumentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html) beschrieben, sollten Servlets nicht über Pfade verknüpft werden. Pfadgebundene Servlets können keine standardmäßigen JCR-Zugriffssteuerungselemente verwenden, sodass besonders strenge Sicherheitsmaßnahmen erforderlich sind. Statt pfadgebundene Servlets zu verwenden, wird empfohlen, Knoten im Repository zu erstellen und Servlets nach Ressourcentyp zu registrieren.
+Wie in der [`Sling`-Dokumentation beschrieben](https://sling.apache.org/documentation/the-sling-engine/servlets.html) wird von Bindungen von Servlets über Pfade abgeraten. Pfadgebundene Servlets können keine standardmäßigen JCR-Zugriffssteuerungselemente verwenden, sodass besonders strenge Sicherheitsmaßnahmen erforderlich sind. Statt pfadgebundene Servlets zu verwenden, wird empfohlen, Knoten im Repository zu erstellen und Servlets nach Ressourcentyp zu registrieren.
 
 #### Nicht konformer Code {#non-compliant-code-5}
 
@@ -250,7 +250,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 ### Erfasste Ausnahmen sollten entweder protokolliert oder ausgelöst werden, aber nicht beides {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-* **Schlüssel**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
+* **key**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
@@ -292,7 +292,7 @@ public void orDoThis() throws MyCustomException {
 
 ### Throw-Anweisungen sollten möglichst nicht unmittelbar auf Log-Anweisungen folgen {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-* **Schlüssel**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
+* **key**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
@@ -318,7 +318,7 @@ public void doThis() throws Exception {
 
 ### Vermeiden Sie beim Verarbeiten von GET- oder HEAD-Anfragen die Protokollierung bei INFO {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-* **Schlüssel**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
+* **key**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 
@@ -346,7 +346,7 @@ public void doGet() throws Exception {
 
 ### Verwenden Sie nicht Exception.getMessage() als ersten Parameter einer Protokollanweisung {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
-* **Schlüssel**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
+* **key**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
@@ -379,7 +379,7 @@ public void doThis() {
 
 ### Die Protokollierung in Catch-Blöcken sollte auf WARN- oder ERROR-Ebene erfolgen {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-* **Schlüssel**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
+* **key**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
@@ -412,7 +412,7 @@ public void doThis() {
 
 ### Drucken Sie keine Stacktraces in der Konsole {#do-not-print-stack-traces-to-the-console}
 
-* **Schlüssel**: CQRules:CQBP-44---ExceptionPrintStackTrace
+* **key**: CQRules:CQBP-44---ExceptionPrintStackTrace
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
@@ -445,7 +445,7 @@ public void doThis() {
 
 ### Nicht an Standardausgabe oder Standardfehler ausgeben {#do-not-output-to-standard-output-or-standard-error}
 
-* **Schlüssel**: CQRules:CQBP-44—LogLevelConsolePrinters
+* **Key**: CQRules:CQBP-44—LogLevelConsolePrinters
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
@@ -478,12 +478,12 @@ public void doThis() {
 
 ### Vermeiden hartcodierter apps- und libs-Pfade {#avoid-hardcoded-apps-and-libs-paths}
 
-* **Schlüssel**: CQRules:CQBP-71
+* **key**: CQRules:CQBP-71
 * **Typ**: `Code Smell`
 * **Schweregrad**: Gering
 * **Seit**: Version 2018.4.0
 
-Pfade, die mit `/libs` und `/apps` beginnen, sollten im Allgemeinen nicht hartcodiert sein. Diese Pfade werden normalerweise relativ zum Sling-Suchpfad gespeichert, der standardmäßig auf `/libs,/apps` festgelegt ist. Durch die Angabe des absoluten Pfads können geringfügige Fehler entstehen, die erst später im Projektlebenszyklus deutlich werden.
+Pfade, die mit `/libs` und `/apps` beginnen, sollten im Allgemeinen nicht hartcodiert sein. Diese Pfade werden normalerweise relativ zum `Sling` Suchpfad gespeichert, der standardmäßig auf `/libs,/apps` festgelegt ist. Durch die Angabe des absoluten Pfads können geringfügige Fehler entstehen, die erst später im Projektlebenszyklus deutlich werden.
 
 #### Nicht konformer Code {#non-compliant-code-13}
 
@@ -503,14 +503,14 @@ public void doThis(Resource resource) {
 
 ### Sling-Scheduler nicht verwenden {#sonarqube-sling-scheduler}
 
-* **Schlüssel**: CQRules:AMSCORE-554
+* **key**: CQRules:AMSCORE-554
 * **Typ**: `Code Smell`/Cloud-Service-Kompatibilität
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Verwenden Sie den Sling-Scheduler nicht für Aufgaben, die eine garantierte Ausführung erfordern. Über Sling geplante Vorgänge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
+Verwenden Sie den `Sling` nicht für Aufgaben, für die eine garantierte Ausführung erforderlich ist. Über Sling geplante Vorgänge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
 
-Weitere Informationen zum Umgang mit Sling-Vorgängen in Cluster-Umgebungen finden Sie unter [Apache Sling-Ereignisse und -Vorgangsverarbeitung](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
+Weitere Informationen zum Umgang mit Sling[`Apache Sling`Aufträgen in Cluster](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)Umgebungen finden Sie unter Ereignisabwicklung und Auftragsverarbeitung .
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -532,9 +532,9 @@ Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext vera
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.11
 
-Das Apache Sling-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da dies zu einer schlechten Leistung führen kann, wenn sie mit der `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) verwendet wird. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
+Das `Apache Sling`-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da es in Kombination mit dem `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) zu schlechter Leistung führen kann. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Lesen Sie die [Apache Sling-Dokumentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) für weitere Informationen über die empfohlenen Anmerkungen und die Gründe, aus denen diese Empfehlung überhaupt ausgesprochen wurde.
+Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
 
 
 ### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
@@ -1271,11 +1271,11 @@ AEM Cloud Service verbietet die Erstellung von Tokenizern mit falschen Namen in 
 >
 >Beheben Sie dieses Problem so bald wie möglich, da Pipelines hierdurch evtl. ab der [Cloud Manager-Version August 2024](/help/implementing/cloud-manager/release-notes/current.md) fehlschlagen.
 
-### Die Konfiguration von Indexdefinitionen darf keine Leerzeichen enthalten {#oakpal-indexing-definitions-spaces}
+### Die Konfiguration von Indizierungsdefinitionen darf keine Leerzeichen enthalten {#oakpal-indexing-definitions-spaces}
 
 * **Schlüssel**: PathSpacesCheck
 * **Typ**: Verbesserung
 * **Schweregrad**: Gering
 * **Seit**: Version 2024.7.0
 
-AEM Cloud Service verbietet die Erstellung von Indexdefinitionen, die Eigenschaften mit Leerzeichen enthalten.
+AEM Cloud Service verbietet die Erstellung von Indizierungsdefinitionen, die Eigenschaften mit Leerzeichen enthalten.
