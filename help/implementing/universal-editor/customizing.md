@@ -37,7 +37,7 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | Inhaltswert | Beschreibung |
 |---|---|
 | `publish` | Deaktivieren Sie die Schaltfläche [Veröffentlichen](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
-| `publish-live` | Live ([) ](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-live` | Live ([) &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | Vorschauveröffentlichung deaktivieren (wenn der [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist) |
 | `unpublish` | Deaktiviert die Schaltfläche [Veröffentlichung rückgängig machen](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | Deaktiviert die [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
@@ -50,7 +50,7 @@ Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sonder
 
 ## Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [&#x200B; Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
