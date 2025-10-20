@@ -4,9 +4,9 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1588'
 ht-degree: 98%
 
 ---
@@ -94,7 +94,6 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | `name` | `string` | Eigenschaft [oder Pfad](#nesting), in der bzw. dem die Daten beibehalten werden sollen | Ja |
 | `label` | `FieldLabel` | Titel des Felds | Ja |
 | `description` | `FieldDescription` | Beschreibung des Felds | Nein |
-| `placeholder` | `string` | Platzhalter für das Feld | Nein |
 | `value` | `FieldValue` | Dies ist ein Standardwert, der als Platzhalter dient. Dieser Wert bestimmt keine Inhaltsaktualisierungen. Dies ist nur eine Darstellung in der Benutzeroberfläche. | Nein |
 | `valueType` | `ValueType` | Standardvalidierung, kann `string`, `string[]`, `number`, `date`, `boolean` sein. | Nein |
 | `required` | `boolean` | Ist das Feld erforderlich? | Nein |
