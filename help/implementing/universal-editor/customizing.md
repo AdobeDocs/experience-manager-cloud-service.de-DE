@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des universellen
 >
 >Der universelle Editor bietet außerdem viele [Erweiterungspunkte](/help/implementing/universal-editor/extending.md), sodass Sie seine Funktionalität entsprechend Ihren Projektanforderungen erweitern können.
 
-## Deaktivieren der Veröffentlichung {#disable-publish}
+## Verwenden von Meta Config-Tags {#meta-tags}
 
-Bestimmte Authoring-Workflows erfordern, dass Inhalte vor der Veröffentlichung überprüft werden. In solchen Fällen sollte die Option zur Veröffentlichung für Autorinnen und Autoren nicht verfügbar sein.
+Bestimmte Authoring-Workflows erfordern möglicherweise die Verwendung einiger Funktionen des universellen Editors und nicht anderer. Um diese Anwendungsfälle zu unterstützen, stehen Meta-Tags zur Verfügung, mit denen bestimmte Funktionen oder Schaltflächen des Editors konfiguriert oder deaktiviert werden können.
 
-Die Schaltfläche **Veröffentlichen** kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## Deaktivieren der Veröffentlichung in der Vorschau {#publish-preview}
-
-Bestimmte Authoring-Workflows schließen möglicherweise die Veröffentlichung im [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (falls verfügbar) aus.
-
-Die Schaltfläche **Vorschau** im Fenster „Veröffentlichen“ kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
+Verwenden Sie dieses Tag im `<head>` Abschnitt der Seite, um eine oder mehrere Funktionen zu deaktivieren:
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Deaktivieren der Veröffentlichung in Live Copy {#publish-live}
+Wenn Sie mehrere Funktionen deaktivieren möchten, stellen Sie eine kommagetrennte Liste von Werten bereit.
 
-Bestimmte Authoring-Workflows verhindern möglicherweise die Veröffentlichung im Live-Service.
+Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funktionen, die mit Meta-Tags deaktiviert werden können.
 
-Die **Live**-Option im Veröffentlichungsfenster kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## Deaktivieren der Veröffentlichung {#unpublish}
-
-Bestimmte Authoring-Workflows erfordern einen Genehmigungsprozess, bevor Inhalte veröffentlicht werden können. In solchen Fällen sollte die Option zum Rückgängigmachen der Veröffentlichung für keine Autorin bzw. keinen Autor verfügbar sein.
-
-Die Schaltfläche **Veröffentlichung aufheben** kann daher in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## Deaktivieren der Seitenöffnung {#open-page}
-
-Die Schaltfläche **Seite öffnen** kann in einer App vollständig unterdrückt werden, indem die folgenden Metadaten hinzugefügt werden.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## Deaktivieren der Schaltfläche „Duplizieren“ {#duplicate-button}
-
-Für bestimmte Authoring-Workflows muss möglicherweise die Möglichkeit der Inhaltsautorin bzw. des Inhaltsautors eingeschränkt werden, Komponenten zu duplizieren. Sie können das Symbol [Duplizieren](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) deaktivieren, indem Sie die folgenden Metadaten hinzufügen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## Deaktivieren von Kopieren und Einfügen {#copy-paste}
-
-Bestimmte Authoring-Workflows müssen möglicherweise die Fähigkeit des Inhaltsautors einschränken, Komponenten zu kopieren und einzufügen. Sie können die Symbole [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) deaktivieren, indem Sie die folgenden Metadaten hinzufügen.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| Inhaltswert | Beschreibung |
+|---|---|
+| `publish` | Deaktivieren Sie die Schaltfläche [Veröffentlichen](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish-live` | Live ([) ](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-preview` | Vorschauveröffentlichung deaktivieren (wenn der [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist) |
+| `unpublish` | Deaktiviert die Schaltfläche [Veröffentlichung rückgängig machen](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `copy` | Deaktiviert die [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
+| `duplicate` | Deaktiviert die Schaltfläche [Duplizieren](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
+| `header-open-page` | Deaktiviert die Schaltfläche [Seite öffnen](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 
 ## Ändern des Endpunkts {#custom-endpoint}
 
@@ -90,7 +50,7 @@ Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sonder
 
 ## Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [&#x200B; Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
