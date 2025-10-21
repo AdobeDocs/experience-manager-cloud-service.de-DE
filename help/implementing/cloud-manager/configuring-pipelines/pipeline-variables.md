@@ -61,7 +61,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 ## Bearbeiten einer Pipeline-Variablen {#edit-ui}
 
-1. Klicken Sie bei der [Verwaltung Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen bearbeiten möchten.
+1. Klicken Sie bei der [Verwaltung Ihrer Pipelines &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen bearbeiten möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
 
@@ -87,7 +87,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 ## Löschen einer Pipeline-Variablen {#delete-ui}
 
-1. Klicken Sie bei der [Verwaltung Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen löschen möchten.
+1. Klicken Sie bei der [Verwaltung Ihrer Pipelines &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen löschen möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
 
