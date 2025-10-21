@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a429ed24d6e724aa3cc7123982e8d4a24cbef5a9
+source-git-commit: fb180685152a00d520530d21a44337381febba7f
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 96%
+source-wordcount: '637'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
    | --- | --- |
    | Name | Ein eindeutiger Name der Konfigurationsvariablen. Er identifiziert die spezifische Variable, die in der Pipeline verwendet wird, und muss den folgenden Namenskonventionen entsprechen:<ul><li>Variablen dürfen nur alphanumerische Zeichen und einen Unterstrich (`_`) enthalten.</li><li>Die Namen sollten in Großbuchstaben geschrieben sein.</li><li>Pro Pipeline sind maximal 200 Variablen zulässig.</li><li>Jeder Name darf maximal 100 Zeichen lang sein.</li><li>Jede `string`-Variable darf höchstens 2047 Zeichen enthalten.</li><li>Jede Variable des Typs `secretString` darf maximal 500 Zeichen enthalten.</li></ul> |
    | Wert | Der Wert, den die Variable enthält. |
-   | Angewendeter Schritt | Erforderlich. Der Schritt in der Pipeline, für den die Variable gilt:<ul><li>**Build**: Die Variable wird während des Build-Prozesses angewendet.</li><li>**Funktionsprüfung**: Die Variable wird während des Schritts „Funktionsprüfung“ verwendet.</li><li>**UI-Tests** – Die Variable wird während der UI-Testphase verwendet.</li>&lt;li **deploy** - Die Variable wird während des Bereitstellungsschritts verwendet. Verwenden Sie diese Variable beispielsweise für Edge Delivery Services-Pipelines.</li></ul> |
+   | Angewendeter Schritt | Erforderlich. Der Schritt in der Pipeline, für den die Variable gilt:<ul><li>**Build**: Die Variable wird während des Build-Prozesses angewendet.</li><li>**Funktionsprüfung**: Die Variable wird während des Schritts „Funktionsprüfung“ verwendet.</li><li>**UI-Tests** – Die Variable wird während der UI-Testphase verwendet.</li><li>**Bereitstellen** - Die Variable wird während des Bereitstellungsschritts verwendet. Verwenden Sie diese Variable beispielsweise für Edge Delivery Services-Pipelines.</li></ul> |
    | Typ | Wählen Sie aus, ob es sich bei der Variablen um reinen Text handelt oder ob sie als geheim verschlüsselt wurde. |
 
    ![Variable hinzufügen](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
@@ -61,7 +61,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 ## Bearbeiten einer Pipeline-Variablen {#edit-ui}
 
-1. Klicken Sie bei der [Verwaltung Ihrer Pipelines &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen bearbeiten möchten.
+1. Klicken Sie bei der [Verwaltung Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen bearbeiten möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
 
@@ -87,7 +87,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 ## Löschen einer Pipeline-Variablen {#delete-ui}
 
-1. Klicken Sie bei der [Verwaltung Ihrer Pipelines &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen löschen möchten.
+1. Klicken Sie bei der [Verwaltung Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen löschen möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
 
