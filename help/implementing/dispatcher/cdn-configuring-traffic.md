@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
+source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 96%
+source-wordcount: '1698'
+ht-degree: 92%
 
 ---
 
@@ -408,6 +408,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -423,11 +425,13 @@ data:
 In der folgenden Tabelle wird die verfügbare Aktion erläutert.
 
 | Name | Eigenschaften | Bedeutung |
-|-----------|--------------------------|-------------|
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **selectOrigin** | originName | Name eines der definierten Ursprünge. |
-|     | skipCache (optional, Standardeinstellung ist „falsch“) | Markierung, ob Caching für Anfragen verwendet werden soll, die dieser Regel entsprechen. Standardmäßig werden Antworten gemäß dem Antwort-Caching-Header zwischengespeichert (z. B. Cache-Steuerung oder Ablaufdatum). |
+|                     | skipCache (optional, Standardeinstellung ist „falsch“) | Markierung, ob Caching für Anfragen verwendet werden soll, die dieser Regel entsprechen. Standardmäßig werden Antworten gemäß dem Antwort-Caching-Header zwischengespeichert (z. B. Cache-Steuerung oder Ablaufdatum). |
+|                     | Kopfzeilen (optional, Standard ist `{}`) | Schlüssel-Wert-Paare, die zusätzliche HTTP-Header enthalten, die beim Auslösen der Regel an das ausgewählte Backend gesendet werden. Mit Schlüsseln, die Kopfzeilennamen entsprechen, und Werten, die den Kopfzeilenwerten entsprechen |
 | **selectAemOrigin** | originName | Name eines der vordefinierten AEM-Ursprünge (unterstützter Wert: `static`). |
-|     | skipCache (optional, Standardeinstellung ist „falsch“) | Markierung, ob Caching für Anfragen verwendet werden soll, die dieser Regel entsprechen. Standardmäßig werden Antworten gemäß dem Antwort-Caching-Header zwischengespeichert (z. B. Cache-Steuerung oder Ablaufdatum). |
+|                     | skipCache (optional, Standardeinstellung ist „falsch“) | Markierung, ob Caching für Anfragen verwendet werden soll, die dieser Regel entsprechen. Standardmäßig werden Antworten gemäß dem Antwort-Caching-Header zwischengespeichert (z. B. Cache-Steuerung oder Ablaufdatum). |
+|                     | Kopfzeilen (optional, Standard ist `{}`) | Schlüssel-Wert-Paare, die zusätzliche HTTP-Header enthalten, die beim Auslösen der Regel an das ausgewählte Backend gesendet werden. Mit Schlüsseln, die Kopfzeilennamen entsprechen, und Werten, die den Kopfzeilenwerten entsprechen |
 
 **Ursprünge**
 
@@ -445,7 +449,7 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 
 ### Proxys für benutzerdefinierte Domain an die statische AEM-Ebene {#proxy-custom-domain-static}
 
-Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
+Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 
