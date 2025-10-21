@@ -4,10 +4,10 @@ description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud 
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2770'
-ht-degree: 100%
+source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+workflow-type: tm+mt
+source-wordcount: '2768'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Wenn die Primärinstanz im Cluster identifiziert werden muss, kann die Apache Sl
 
 ## Status im Speicher {#state-in-memory}
 
-Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository verbleiben. Andernfalls geht dieser Status möglicherweise verloren, wenn eine Instanz beendet wird.
+Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository verbleiben. Andernfalls geht dieser Status möglicherweise verloren, wenn eine Instanz gestoppt wird.
 
 ## Status im Dateisystem {#state-on-the-filesystem}
 
@@ -111,7 +111,7 @@ Beispielsweise kann das Ändern einer Indexdefinition in einem großen Content-R
 
 Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im Ordner `/crx-quickstart/logs` geschrieben.
 
-In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Festlegen der Protokollebene**
 
@@ -219,7 +219,7 @@ Bei Produktionsprogrammen wird der Zugriff auf die AEM as a Cloud Service Develo
 
 ### Leistungsüberwachung {#performance-monitoring}
 
-Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Anwendungsmetriken können derzeit nicht überwacht werden.
+Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können keine Anwendungsmetriken beobachtet werden.
 
 ## Senden von E-Mails {#sending-email}
 
@@ -247,7 +247,7 @@ E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://expe
 
 Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service:
 
-* Der Hostname des SMTP-Servers sollte auf $[env:AEM_PROXY_HOST;default=proxy.tunnel] eingestellt sein.
+* Der Hostname des SMTP-Servers sollte auf $[env:AEM_PROXY_HOST;default=proxy.tunnel eingestellt sein]
 * Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter „portForwards“ festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
 
 Der SMTP-Server-Port sollte als `portDest`-Wert im portForwards-Parameter festgelegt werden, der im API-Aufruf bei der Konfiguration der erweiterten Vernetzung verwendet wird, und der `portOrig`-Wert sollte ein aussagekräftiger Wert sein, der innerhalb des erforderlichen Bereichs von 30000 bis 30999 liegt. Wenn der SMTP-Server-Port beispielsweise 465 ist, sollte der Port 30465 als `portOrig`-Wert verwendet werden.
