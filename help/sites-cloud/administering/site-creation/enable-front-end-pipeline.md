@@ -5,10 +5,11 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -76,9 +77,9 @@ Die Frontend-Pipeline kann mit der [benutzerdefinierten Domain-Funktion von Clou
 
 ### Statische Frontend-Dateien {#static-files}
 
-Statische Frontend-Assets, die über die Frontend-Pipeline bereitgestellt werden, werden standardmäßig über die vordefinierte statische Domain von Adobe bereitgestellt.
+Statische Frontend-Assets, die über die Frontend-Pipeline bereitgestellt werden, werden standardmäßig aus der vordefinierten statischen Adobe-Domain bereitgestellt.
 
-Wenn Sie eine benutzerdefinierte Domain für Frontend-Assets benötigen, können Sie eine benutzerdefinierte Domain auf der Veröffentlichungsebene installieren und den Dispatcher so konfigurieren, dass bestimmte Pfade (wie `/static/`) zum statischen Hosting-Speicherort von Adobe weitergeleitet werden. Für diese Methode müssen Ihre [Dispatcher-Regeln](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/dispatcher) aktualisiert werden, damit Anfragen für statische Assets ordnungsgemäß weitergeleitet und zwischengespeichert werden können.
+Wenn Sie eine benutzerdefinierte Domain für Frontend-Assets benötigen, können Sie eine benutzerdefinierte Domain auf der Veröffentlichungsebene installieren und die Dispatcher so konfigurieren, dass bestimmte Pfade (wie `/static/`) zum statischen Hosting-Speicherort von Adobe weitergeleitet werden. Für diese Methode müssen Ihre [Dispatcher-Regeln](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/dispatcher) aktualisiert werden, damit Anfragen für statische Assets ordnungsgemäß weitergeleitet und zwischengespeichert werden können.
 
 Nachdem Sie Ihre benutzerdefinierte Domain und den Dispatcher konfiguriert haben, können Sie AEM so konfigurieren, dass Ihre Frontend-Assets von der statischen Domain bereitgestellt werden.
 
@@ -97,7 +98,7 @@ Wenn Sie die Funktion „Benutzerdefinierte Domains“ von Cloud Manager zusamme
    * Dieser Wert kann bei Bedarf auch manuell überschrieben werden.
 1. Überprüfen Sie Ihr Setup.
    1. Vergewissern Sie sich nach der Bereitstellung, dass die Seiten korrekt auf Design-Artefakte aus der benutzerdefinierten Domain verweisen.
-   1. Öffnen Sie die Entwickler-Tools Ihres Browsers und überprüfen Sie die Dateipfade `theme.css` und `theme.js`, um sicherzustellen, dass sie von der richtigen Domain geladen werden.
+   1. Öffnen Sie die Entwickler-Tools Ihres Browsers und überprüfen Sie die `theme.css` und `theme.js` Dateipfade, um sicherzustellen, dass sie von der richtigen Domain geladen werden.
 
 Seiten für die Site verweisen dann auf Design-Artefakte aus dieser aktualisierten URL. Der Dispatcher leitet dann Anfragen für diese Ressourcen an die statische Domain weiter.
 
@@ -105,7 +106,7 @@ Seiten für die Site verweisen dann auf Design-Artefakte aus dieser aktualisiert
 
 Wenn Sie Frontend-Assets lokal entwickeln und testen müssen, bevor Sie sie über die Frontend-Pipeline bereitstellen, berücksichtigen Sie die folgenden Ansätze:
 
-* Verwenden Sie den [Proxy-Modus des Site-Design-Builders](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy), um Design-Artefakte lokal zum Testen zu überschreiben.
+* Verwenden Sie den [Proxymodus des Site-Design-Builders](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) um Design-Artefakte lokal zum Testen zu überschreiben.
 * Stellen Sie Ihre Design-Dateien manuell über einen lokalen Entwicklungs-Server bereit und aktualisieren Sie `prefixPath` in `HtmlPageItemsConfig` in Übereinstimmung mit der lokalen Server-Adresse.
 * Stellen Sie sicher, dass das Browser-Caching während des Tests deaktiviert ist, um Live-Aktualisierungen anzuzeigen.
 
