@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
+source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -49,9 +49,9 @@ Siehe [Zusätzliche Optionen für Produktionsprogramme](#options).
 1. Wählen Sie im Listenfeld **Lösungen und Add-ons** eine oder mehrere Lösungen aus, die im Programm enthalten sein sollen.
 
    * Wenn Sie sich nicht sicher sind, ob Sie ein oder mehrere Programme für die verschiedenen verfügbaren Lösungen benötigen, wählen Sie diejenige aus, die für Sie am interessantesten ist. Sie können zusätzliche Lösungen aktivieren, indem Sie [das Programm später bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Weitere Empfehlungen zur Programmeinrichtung finden Sie im Dokument [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
-   * Sie müssen mindestens eine Lösung für die Programmerstellung auswählen. Sie können beispielsweise **Edge Delivery Services** für eine vollständig verwaltete CDN-Lösung auswählen, die digitale Erlebnisse optimiert. Siehe [Informationen zur Verwendung von Edge Delivery Services zum Bereitstellen Ihres Cloud Manager-Projekts](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+   * Sie müssen mindestens eine Lösung für die Programmerstellung auswählen. Sie können beispielsweise **Edge Delivery Services** auswählen, um eine vollständig verwaltete CDN-Lösung zu erhalten, die digitale Erlebnisse optimiert. Siehe [Informationen zur Verwendung von Edge Delivery Services zum Bereitstellen Ihres Cloud Manager-Projekts](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 
-   ![Lösungen auswählen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
+   ![Auswählen von Lösungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
 
 
@@ -60,7 +60,7 @@ Siehe [Zusätzliche Optionen für Produktionsprogramme](#options).
 
 
 
-   * Klicken Sie ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen. <!-- such as the **Commerce** add-on option under **Sites**. -->
+   * Klicken Sie auf ![Pfeilsymbol Größe 300](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![Add-ons auswählen](assets/setup-prod-commerce.png)
 
@@ -91,7 +91,7 @@ Die Registerkarte **Sicherheit** bietet die Möglichkeit, **HIPAA** und/oder **W
 
 Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial of Service) von Adobe erleichtert die Cloud-basierte Sicherheit als Teil eines mehrschichtigen Ansatzes zum Schutz vor Sicherheitslücken.
 
-* **HIPAA**: Diese Option ermöglicht die Implementierung der Adobe HIPAA-fähigen Lösung.
+* **HIPAA** - Diese Option ermöglicht die Implementierung der HIPAA-fähigen Lösung von Adobe.
    * Hier finden Sie [weitere Informationen](https://www.adobe.com/trust/compliance/hipaa-ready.html) zur Implementierung einer HIPAA-fähigen Lösung von Adobe.
    * Die HIPAA-Option kann nach der Programmerstellung weder aktiviert noch deaktiviert werden.
 * **WAF-DDOS-Schutz**: Diese Option aktiviert die Firewall der Web-Anwendung über Regeln, um Ihre Anwendung zu schützen.
