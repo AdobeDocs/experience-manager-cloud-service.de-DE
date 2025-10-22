@@ -3,10 +3,10 @@ title: Neue Funktionen in Content Hub
 description: Erfahren Sie mehr über einige der kürzlich eingeführten Content Hub-Funktionen
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,21 @@ Das folgende Video zeigt die wichtigsten Funktionen von Content Hub:
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Datum der Content Hub-Funktionsveröffentlichung (2025.8.0) ist der 28. August 2025 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version mit neuen Funktionen (2025.9.0) ist für den 25. September 2025 geplant.
+Das Datum der Content Hub-Funktionsveröffentlichung (2025.9.0) ist der Freitag, 25. September 2025 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version mit neuen Funktionen (2025.10.0) ist für den 30. Oktober 2025 geplant.
+
+## Funktionen der September-Version {#september-release-features}
+
+**Sammlungen als Favoriten markieren**
+
+Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Organisieren und Abrufen erleichtert. Nach dem Hinzufügen sind Ihre Lieblingssammlungen bequem über die Registerkarte **[!UICONTROL Favoriten]** auf der Content Hub-Startseite verfügbar.
+
+**Sammlungen für schnellen Zugriff anheften**
+
+Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
+
+>[!IMPORTANT]
+>
+>Diese Funktionen sind als Funktionen mit begrenzter Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
 
 ## Funktionen der August-Version {#august-release-features}
 

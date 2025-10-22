@@ -3,9 +3,9 @@ title: Versionshinweise für Version 2025.8.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1919'
 ht-degree: 86%
 
 ---
@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -75,7 +75,7 @@ Verbessern der Lesbarkeit von Dynamic Media mit OpenAPI-URLs durch Verwendung vo
 
 >[!NOTE]
 >
->Diese Funktion wird am 10. September als Funktion mit eingeschränkter Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+>Diese Funktion ist nur eingeschränkt verfügbar. Siehe [diesen Artikel](/help/assets/vanity-urls.md), um zu beginnen.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

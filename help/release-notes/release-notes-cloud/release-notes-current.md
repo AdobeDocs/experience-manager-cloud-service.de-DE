@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 96%
+source-wordcount: '2081'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,6 +58,20 @@ Der Inhaltsmodelleditor für AEM-Inhaltsfragmente wurde modernisiert, um ihn an 
 
 Sie können jetzt Formatierungen auf Unterzeichenfolgen in Textebenen von Dynamic Media-Vorlagen anwenden. Ein ausgewähltes Wort oder ein ausgewählter Satzteil wird als separate Ebene behandelt, sodass Sie die Schrift, den Schriftgrad, die Farbe und mehr anpassen können. Die Ebene der Unterzeichenfolge wird parametrisiert, sodass Sie sie mithilfe der Versand-URL der Vorlage in Echtzeit aktualisieren können.
 
+### Neue Funktionen in Content Hub {#new-features-content-hub}
+
+**Sammlungen als Favoriten markieren**
+
+Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Organisieren und Abrufen erleichtert. Nach dem Hinzufügen sind Ihre Lieblingssammlungen bequem über die Registerkarte **[!UICONTROL Favoriten]** auf der Content Hub-Startseite verfügbar.
+
+**Sammlungen für schnellen Zugriff anheften**
+
+Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
+
+>[!IMPORTANT]
+>
+>Diese Funktionen sind als Funktionen mit begrenzter Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-with-openapi}
 
 **Bereitstellungs-URLs für markenspezifische und lesbare Assets**
@@ -66,7 +80,7 @@ Verbessern der Lesbarkeit von Dynamic Media mit OpenAPI-URLs durch Verwendung vo
 
 >[!NOTE]
 >
->Diese Funktion ist nur eingeschränkt verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+>Diese Funktion ist nur eingeschränkt verfügbar. Siehe [diesen Artikel](/help/assets/vanity-urls.md), um zu beginnen.
 
 <!--
 
@@ -82,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +171,7 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 >[!NOTE]
 >
 >Verfügbar als Funktion mit eingeschränkter Verfügbarkeit am 25. September.
->&#x200B;>Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
+>>Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
 
 ### Neue Version von AEM Developer Tools für Eclipse {#aem-develeper-tools-for-eclipse}
 

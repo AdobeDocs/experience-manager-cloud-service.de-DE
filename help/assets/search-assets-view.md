@@ -4,9 +4,9 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
-workflow-type: ht
-source-wordcount: '2277'
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '2255'
 ht-degree: 100%
 
 ---
@@ -136,8 +136,6 @@ Zu den wichtigsten Vorteilen zählen:
 * **Verständnis von Synonymen**: Ergebnisse für verwandte Begriffe und Ausdrücke werden bereitgestellt, sodass Benutzende nicht das korrekte Keyword erraten müssen.
 
 * **Kontextabhängige Suche**: Der Zweck einer Abfrage wird erkannt, nicht nur der Wortlaut.
-
-* **Suche basierend auf textbasierten Prompts**: Experience Manager Assets wendet Filter auf Inhalte an und zeigt geeignete Ergebnisse automatisch basierend auf einfachen textbasierten Prompts an.
 
 >[!IMPORTANT]
 >
@@ -377,6 +375,6 @@ Um Feedback zur Kontextsuche zu geben, klicken Sie auf das Symbol für die ![Kon
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
 
 
