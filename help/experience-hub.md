@@ -7,10 +7,10 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 99107ab402b1a361ad2d56c79df8c8bcf00e8979
+source-git-commit: e317db6747b6a47e2245c2816659188686ca7820
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 15%
+source-wordcount: '914'
+ht-degree: 9%
 
 ---
 
@@ -20,7 +20,7 @@ Experience Hub bietet einen zentralen Ausgangspunkt für die Verwaltung von Inha
 
 Hier erhalten Sie einen kurzen Überblick über den neu gestalteten Arbeitsbereich von AEM Experience Hub (2 Minuten, 40 Sekunden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475201/?learn=on&enablevpops&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -80,6 +80,68 @@ Im Abschnitt **Zuletzt verwendet** in der Abbildung unten werden die Seiten aufg
 Wenn keine AEM Cloud Service- oder Managed Services-Produktionsumgebungen vorhanden sind, erscheinen die Auswahloptionen abgeblendet und nicht verfügbar.
 
 ![Experience Hub ohne Produktionsumgebungen](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
+
+## Häufig gestellte Fragen (FAQ) {#faq}
+
++++**Was ist der Hauptzweck von Adobe Experience Hub in Adobe Experience Manager?**
+
+Adobe Experience Hub dient als zentraler Ausgangspunkt für die Verwaltung von Inhalten, Assets und Websites in Adobe Experience Manager und bietet ein personalisiertes Erlebnis basierend auf Benutzerrollen und Zielen.
+
++++
+
++++**Wie passt sich Experience Hub an verschiedene Benutzerrollen an?**
+
+Experience Hub zeigt rollenbasierte Ansichten und Schnellaktionen für Autoren, Asset-Bibliothekare, Administratoren und IT-Experten. Jede Rolle erhält schnellen Zugriff auf die benötigten Tools und Funktionen.
+
++++
+
++++**Welche Funktionen hat die Navigation und das Layout der Experience Hub?**
+
+Experience Hub verwendet eine einheitliche linke Navigation, um Kernfunktionen von AEM, anpassbare Widgets und Schnellaktionen zu organisieren. Durch dieses Layout wird ein organisierter, effizienter Arbeitsbereich erstellt.
+
++++
+
++++**Wie können Benutzer ihren Experience Hub-Arbeitsbereich personalisieren?**
+
+Benutzer können Widgets hinzufügen, entfernen, ihre Größe ändern und neu anordnen sowie Schnellaktionen anpassen, um den Arbeitsbereich an ihre Bedürfnisse und Präferenzen anzupassen.
+
++++
+
++++**Welche Aktionstypen können mit Experience Hub schnell ausgeführt werden?**
+
+Experience Hub bietet 1-Klick-Tastaturbefehle für wichtige Aufgaben wie das Erstellen von Inhalten, das Hochladen von Assets oder die Verwaltung des Team-Zugriffs, die auf die Rolle des Benutzers zugeschnitten sind.
+
++++
+
++++**Wie erleichtert Experience Hub die Navigation zu verschiedenen AEM-Funktionen?**
+
+Die Hauptnavigation von Experience Hub unter **Tools** oder **Services** bietet schnellen Zugriff auf AEM-Funktionen wie Assets, Sites, Forms, Inhaltsfragmente und Launches.
+
++++
+
++++**Was ist die Bedeutung von Widgets in Experience Hub?**
+
+Widgets in Experience Hub sind anpassbare Elemente, die Benutzenden helfen, ihre Arbeit effizient zu verwalten, z. B. das Tracking aktueller Aktivitäten und das Halten über Produktaktualisierungen.
+
++++
+
++++**Wie können Anwender mithilfe von Experience Hub mehrere AEM-Umgebungen verwalten?**
+
+Benutzer können die Umgebung auswählen, die als Ziel ausgewählt werden soll, und die Favoriten anheften, um sie an der Spitze zu halten. Tastaturbefehle öffnen Sie Lösungen und Seiten innerhalb dieser Umgebungen.
+
++++
+
++++**Welche Rolle spielt der KI-Assistent in AEM?**
+
+Der KI-Assistent in AEM steht Benutzenden zur Verfügung, die vorausgesetzte Kriterien erfüllt haben, und bietet zusätzliche Unterstützung und Einblicke innerhalb des Unternehmens.
+
++++
+
++++**Was passiert, wenn keine Produktions-AEM Cloud Service- oder Managed Services-Umgebungen vorhanden sind?**
+
+Wenn keine Produktionsumgebungen vorhanden sind, erscheinen die Auswahloptionen in Experience Hub abgeblendet und nicht verfügbar.
+
++++
 
 ## KI-Assistent in AEM
 
