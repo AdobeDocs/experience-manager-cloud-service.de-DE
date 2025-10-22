@@ -3,9 +3,9 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 ## Künftige neue Funktionen {#what-is-new}
 
 * Das Kopieren und Einfügen über Browser-Registerkarten hinweg wird jetzt unterstützt.
+   * Beschränkt auf zwischen Registerkarten, die gleichzeitig geöffnet sind.
+   * Das Kopieren von Inhalten und das anschließende Öffnen einer neuen Registerkarte wird nicht unterstützt.
 * Sie können jetzt die Schaltfläche Veröffentlichung rückgängig machen mit einem Meta-Tag deaktivieren.
 
 ## Anstehende Verbesserungen {#other-improvements}
