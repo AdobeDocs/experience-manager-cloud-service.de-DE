@@ -3,13 +3,13 @@ title: KI in AEM as a Cloud Service
 description: Erfahren Sie mehr über KI in Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: a60268de748e795f223465f68ff9cfbaa5f64559
+exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
+source-git-commit: a08abfb5fc156a9f480b0b4ea1003e7597126347
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 81%
+source-wordcount: '408'
+ht-degree: 82%
 
 ---
-
 
 # KI in AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
@@ -56,7 +56,11 @@ Generative KI wird überall in AEM verwendet:
 
 ## Weiterführende Informationen {#further-information}
 
+Es stehen viele Ressourcen zur Verfügung, darunter:
+
 * [Überblick über die Adobe-KI](https://www.adobe.com/de/ai/overview.html)
+
+* [Verantwortungsvolle KI bei Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
 * [Generative KI in Experience Cloud-Produkten](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai)
 
