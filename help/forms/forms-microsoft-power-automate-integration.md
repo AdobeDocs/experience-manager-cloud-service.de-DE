@@ -5,15 +5,20 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: Verbinden von AEM Forms mit Power Automate, Power Automate-Automation, AEM Forms, Integrieren von Power Automate in adaptive Formulare, Senden von Daten von adaptiven Formularen an Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: ht
-source-wordcount: '1531'
-ht-degree: 100%
+source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 99%
 
 ---
 
 
 # Verbinden eines adaptiven Formulars mit Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | Dieser Artikel |
 
 <span class="preview"> Wenn Sie sich in GovCloud befinden und eine Verbindung zu einem GCC(Government Cloud Computing)-Mandanten herstellen müssen, senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com, um den Zugriff über das Early-Adopter-Programm anzufordern. </span>
 

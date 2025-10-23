@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '3143'
-ht-degree: 100%
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+workflow-type: tm+mt
+source-wordcount: '3323'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -85,12 +85,13 @@ Wenn die Option **[!UICONTROL Wenn das Formular die gesamte Breite einer Seite e
 
 ![Die Option „Formular deckt die gesamte Breite einer Seite ab“ ist ausgewählt und das adaptive Formular mit Kernkomponenten wird verwendet](/help/forms/assets/overlaycorecomponent.gif)
 
+**1. Fall: Verwenden separater Sites-Seitenkomponenten**
 
 Fügen Sie die Client-Bibliotheken **Customheaderlibs** und **Customfooterlibs** auf Ihrer AEM Sites-Seite mithilfe der Bereitstellungs-Pipeline ein. Hinzufügen von Client-Bibliotheken:
 
 1. Greifen Sie auf Ihr [AEM Cloud Service-Git-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=de) zu und klonen Sie es.
-1. Öffnen Sie den Ordner „AEM Cloud Service-Git-Repository“ in einem einfachen Texteditor. Beispielsweise Microsoft® Visual Code.
-1. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
+2. Öffnen Sie den Ordner „AEM Cloud Service-Git-Repository“ in einem einfachen Texteditor. Beispielsweise Microsoft® Visual Code.
+3. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
    ```
        //Customheaderlibs.html
@@ -99,7 +100,7 @@ Fügen Sie die Client-Bibliotheken **Customheaderlibs** und **Customfooterlibs**
        </sly> 
    ```
 
-1. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
+4. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
    ```
        //customfooterlibs.html
@@ -108,7 +109,7 @@ Fügen Sie die Client-Bibliotheken **Customheaderlibs** und **Customfooterlibs**
        </sly> 
    ```
 
-1. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
+5. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
    ```
        //Customheaderlibs.html
@@ -117,7 +118,7 @@ Fügen Sie die Client-Bibliotheken **Customheaderlibs** und **Customfooterlibs**
        </sly> 
    ```
 
-1. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
+6. Öffnen Sie die Datei `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
    ```
        //customfooterlibs.html
@@ -126,7 +127,23 @@ Fügen Sie die Client-Bibliotheken **Customheaderlibs** und **Customfooterlibs**
        </sly> 
    ```
 
-1. [Führen Sie die Bereitstellungs-Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=de), um die Client-Bibliotheken in Ihrer AEM as a Cloud Service-Umgebung bereitzustellen.
+7. [Führen Sie die Bereitstellungs-Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=de), um die Client-Bibliotheken in Ihrer AEM as a Cloud Service-Umgebung bereitzustellen.
+
+>[!NOTE]
+>
+> Die benutzerdefinierte Funktion der Client-Bibliothek wird nur dann hartcodiert, wenn sie für alle Formulare erforderlich ist. Fügen Sie Bibliotheken, die sich je nach Formulartyp unterscheiden, über Vorlagenseitenrichtlinien hinzu, wie im nächsten Abschnitt erläutert.
+
+**Fall 2: Verwenden derselben Sites-Seitenkomponente**
+
+Schließen Sie die Laufzeitclientbibliotheken oder die benutzerdefinierten Funktionsbibliotheken in die Seitenrichtlinie der Vorlage ein, die zum Erstellen von Seiten mit Formularen verwendet wird.
+
+1. Öffnen Sie die AEM Sites-Seite oder das Experience Fragment zur Bearbeitung. Um die Seite zur Bearbeitung zu öffnen, wählen Sie die Seite aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+2. Öffnen Sie die Vorlage Ihrer Sites- oder Experience Fragment-Seite. Um die Vorlage zu öffnen, navigieren Sie zu **[!UICONTROL Seiteninformationen]** ![Seiteninformationen](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Vorlage bearbeiten]**. Dadurch wird die entsprechende Vorlage im Vorlageneditor geöffnet.
+3. Gehen Sie zum **[!UICONTROL Seiteninformationen]** ![Seiteninformationen](/help/forms/assets/Smock_Properties_18_N.svg) der Vorlage und wählen Sie die Option **[!UICONTROL Seitenrichtlinie]** aus. Dadurch werden die Eigenschaften der AEM Sites-Vorlage geöffnet, in der Sie benutzerdefinierte Funktionen oder Laufzeit-Client-Bibliotheken definieren können.
+4. Klicken Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um neue benutzerdefinierte Funktionsbibliotheken für die Laufzeitbibliotheken hinzuzufügen.
+5. Klicken Sie auf **[Fertig]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
 
 ### Aktivieren der „Adaptive Formulare – Einbettungskomponente (v2)“ für Ihre AEM Sites-Seite oder ein Experience Fragment
 

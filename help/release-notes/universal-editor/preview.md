@@ -3,17 +3,17 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 23. Oktober 2025 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 30. Oktober 2025 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauumgebung wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,14 +27,9 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige neue Funktionen {#what-is-new}
 
-* Das Kopieren und Einfügen über Browser-Registerkarten hinweg wird jetzt unterstützt.
-   * Beschränkt auf zwischen Registerkarten, die gleichzeitig geöffnet sind.
-   * Das Kopieren von Inhalten und das anschließende Öffnen einer neuen Registerkarte wird nicht unterstützt.
-* Sie können jetzt die Schaltfläche Veröffentlichung rückgängig machen mit einem Meta-Tag deaktivieren.
+* TBD
 
 ## Anstehende Verbesserungen {#other-improvements}
 
-* Der Strukturbaum wurde verbessert.
-* Verknüpfte Bilder werden jetzt unterstützt.
-* An Rückgängig-/Wiederherstellungsvorgängen wurden Verbesserungen vorgenommen.
+* TBD
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
-workflow-type: ht
-source-wordcount: '3160'
-ht-degree: 100%
+source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+workflow-type: tm+mt
+source-wordcount: '3339'
+ht-degree: 95%
 
 ---
 
@@ -76,7 +76,9 @@ Bevor Sie mit der Erstellung eines adaptiven Formulars beginnen, aktivieren Sie 
 
 Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
-### Hinzufügen von Client-Bibliotheken für adaptive Formulare zu einer AEM Sites-Seite oder einem Experience Fragment
+### Hinzufügen von adaptiven Forms-Client-Bibliotheken zu Ihrer AEM Sites-Seite oder Ihrem Erlebnis
+
+**1. Fall: Verwenden separater Sites-Seitenkomponenten**
 
 Um die vollständige Funktionalität der Container-Komponente für adaptive Formulare zu aktivieren, fügen Sie die Client-Bibliotheken „customHeaderlibs“ und „customfooterlibs“ mithilfe der Bereitstellungs-Pipeline zu Ihrer AEM Sites-Seite hinzu. So werden die Bibliotheken hinzugefügt:
 
@@ -121,6 +123,22 @@ Um die vollständige Funktionalität der Container-Komponente für adaptive Form
 
 1. [Führen Sie die Bereitstellungs-Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=de), um die Client-Bibliotheken in Ihrer AEM as a Cloud Service-Umgebung bereitzustellen.
 
+>[!NOTE]
+>
+> Die benutzerdefinierte Funktion der Client-Bibliothek wird nur dann hartcodiert, wenn sie für alle Formulare erforderlich ist. Fügen Sie Bibliotheken, die sich je nach Formulartyp unterscheiden, über Vorlagenseitenrichtlinien hinzu, wie im nächsten Abschnitt erläutert.
+
+**Fall 2: Verwenden derselben Sites-Seitenkomponente**
+
+Schließen Sie die Laufzeitclientbibliotheken oder die benutzerdefinierten Funktionsbibliotheken in die Seitenrichtlinie der Vorlage ein, die zum Erstellen von Seiten mit Formularen verwendet wird.
+
+1. Öffnen Sie die AEM Sites-Seite oder das Experience Fragment zur Bearbeitung. Um die Seite zur Bearbeitung zu öffnen, wählen Sie die Seite aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+2. Öffnen Sie die Vorlage Ihrer Sites- oder Experience Fragment-Seite. Um die Vorlage zu öffnen, navigieren Sie zu **[!UICONTROL Seiteninformationen]** ![Seiteninformationen](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Vorlage bearbeiten]**. Dadurch wird die entsprechende Vorlage im Vorlageneditor geöffnet.
+3. Gehen Sie zum **[!UICONTROL Seiteninformationen]** ![Seiteninformationen](/help/forms/assets/Smock_Properties_18_N.svg) der Vorlage und wählen Sie die Option **[!UICONTROL Seitenrichtlinie]** aus. Dadurch werden die Eigenschaften der AEM Sites-Vorlage geöffnet, in der Sie benutzerdefinierte Funktionen oder Laufzeit-Client-Bibliotheken definieren können.
+4. Klicken Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um neue benutzerdefinierte Funktionsbibliotheken für die Laufzeitbibliotheken hinzuzufügen.
+5. Klicken Sie auf **[Fertig]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
+
 ### Aktivieren des Containers für adaptive Formulare für eine AEM Sites-Seite oder ein Experience Fragment
 
 Um die Komponente [!UICONTROL Container für adaptive Formulare] in der Richtlinie der Vorlage zu aktivieren, führen Sie die folgenden Schritte aus:
@@ -131,8 +149,6 @@ Um die Komponente [!UICONTROL Container für adaptive Formulare] in der Richtlin
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
-
-+++
 
 ## Erstellen eines adaptiven Formulars {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 

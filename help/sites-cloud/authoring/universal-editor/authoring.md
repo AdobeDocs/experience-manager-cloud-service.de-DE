@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '2503'
-ht-degree: 96%
+source-wordcount: '2534'
+ht-degree: 95%
 
 ---
 
@@ -95,7 +95,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * Nummerierte Liste
 * Link
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -212,7 +212,9 @@ Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ au
 
 ### Kopieren und Einfügen {#copy-paste}
 
-Sie können Komponenten innerhalb von [Containern](/help/implementing/universal-editor/field-types.md#container) auf derselben Browser-Registerkarte kopieren und einfügen. Dies ist nur möglich, wenn der Ziel-Container keine [Filter konfiguriert](/help/implementing/universal-editor/filtering.md) oder Filter hat, die das Einfügen der Komponente erlauben.
+Sie können Komponenten kopieren und einfügen, die sich in [Containern befinden.](/help/implementing/universal-editor/field-types.md#container) Dies ist nur möglich, wenn der Ziel-Container über keine [Filter konfiguriert](/help/implementing/universal-editor/filtering.md) oder über Filter verfügt, mit denen die Komponente eingefügt werden kann.
+
+Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwischen Browser-Registerkarten erfolgen, sofern die Registerkarten bereits geöffnet sind. Sie können ein Element nicht kopieren und dann eine neue Browser-Registerkarte öffnen, um es einzufügen.
 
 ![Symbol „Kopieren“](assets/copy.png)
 ![Symbol „Einfügen“](assets/paste.png)
@@ -227,6 +229,8 @@ Sie können Komponenten innerhalb von [Containern](/help/implementing/universal-
 >[!TIP]
 >
 >Verwenden Sie den Hotkey `Command-C` bzw. `Command-V` zum Kopieren bzw. Einfügen.
+
+
 
 ## Vorschau von Inhalten {#previewing-content}
 

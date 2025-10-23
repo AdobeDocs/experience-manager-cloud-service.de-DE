@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.10.16
-description: Dies sind die Versionshinweise für die Version 2025.10.16 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.10.23
+description: Dies sind die Versionshinweise für die Version 2025.10.23 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 31c94576f6cfb0ffff0f37ece33ef1f91f98f356
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 78%
+source-wordcount: '205'
+ht-degree: 63%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.10.16 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.10.23 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 16. Oktober 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 23. Oktober 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,7 +26,10 @@ Dies sind die Versionshinweise für die Version vom 16. Oktober 2025 des univers
 
 ## Neue Funktionen {#what-is-new}
 
-* Es wurde Unterstützung für mehrere Felder für Aktualisierungen eingeführt.
+* [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) über Browser-Registerkarten hinweg wird jetzt unterstützt.
+   * Beschränkt auf zwischen Registerkarten, die gleichzeitig geöffnet sind.
+   * Das Kopieren von Inhalten und das anschließende Öffnen einer neuen Registerkarte wird nicht unterstützt.
+* Sie können jetzt die Schaltfläche Veröffentlichung rückgängig machen mit einem [Meta-Tag.](/help/implementing/universal-editor/customizing.md#meta-tags)
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -38,5 +41,6 @@ Der neue ProseMirror-RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten P
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Der Host in `AemContentFragmentReference` ist jetzt bereinigt.
-* Logik wurde für SSL- und Nicht-SSL-Dispatcher-Konfigurationen hinzugefügt.
+* Der Strukturbaum wurde verbessert.
+* Verknüpfte Bilder werden jetzt unterstützt.
+* An Rückgängig-/Wiederherstellungsvorgängen wurden Verbesserungen vorgenommen.
