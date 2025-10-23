@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: ht
-source-wordcount: '1348'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '1362'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,9 @@ Herzlichen Glückwunsch zur Wahl von AEM as a Cloud Service! Dieses Dokument ist
 
 ## Einführung {#introduction}
 
-Adobe Experience Manager ist eine leistungsstarke Suite zusammenstellbarer Inhaltsdienste, die schnell wirkungsvolle, personalisierte Erlebnisse für alle Kanäle bereitstellen und so Inhalte für alle freigeben. **Edge Delivery Services** ist die neueste Innovation in Adobe Experience Manager, die extrem schnelle Inhalte ermöglicht und außergewöhnliche Erlebnisse bietet. Mehr über die ersten Schritte mit Edge Delivery Services erfahren Sie unter [Überblick über Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview). Informationen zur Verwendung von Edge Delivery Services finden Sie auf der Seite [Entwicklertutorial](https://www.aem.live/developer/tutorial).
+Adobe Experience Manager (AEM) bietet Flexibilität bei der Inhaltsbereitstellung und beim Authoring und ermöglicht es Teams, das beste Modell für ihre Anforderungen auszuwählen.
+
+Verwenden Sie [Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview) für schnelles, iteratives Authoring und eine hohe Inhaltsgeschwindigkeit oder verwenden Sie den herkömmlichen Bereitstellungs-Service für die Veröffentlichung, um ein robustes Modell für die Veröffentlichung im Unternehmen zu erstellen. Mit beiden Ansätzen können Unternehmen außergewöhnliche digitale Erlebnisse auf die Weise bereitstellen, die zu ihnen am besten passt. Die ersten Schritte mit Edge Delivery Services finden Sie in der [Übersicht über Edge Delivery Services](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/overview) und weitere Informationen zu modernen Authoring-Optionen finden Sie im [Authoring-Handbuch](https://www.aem.live/docs/authoring-guide).
 
 Onboarding ist der Vorgang, bei dem benannte Systemadmins AEM as a Cloud Service für Ihre Organisation einrichten. Dieser Prozess umfasst die anfängliche Bereitstellung von Cloud-Ressourcen und die Zuweisung von Benutzenden zu Rollen auf der Grundlage ihrer Aufgabenstellung. Dadurch kann sich jedes Mitglied anmelden und auf seine Ressourcen in AEM as a Cloud Service zugreifen.
 
