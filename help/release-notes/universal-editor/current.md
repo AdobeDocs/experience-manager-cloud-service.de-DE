@@ -1,10 +1,10 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.10.23
-description: Dies sind die Versionshinweise für die Version 2025.10.23 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.10.24
+description: Dies sind die Versionshinweise für die Version 2025.10.24 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 63%
@@ -12,9 +12,9 @@ ht-degree: 63%
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.10.23 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.10.24 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 23. Oktober 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 24. Oktober 2025 des universellen Editors.
 
 >[!TIP]
 >
