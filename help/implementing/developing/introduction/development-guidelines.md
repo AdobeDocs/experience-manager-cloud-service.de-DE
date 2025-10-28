@@ -4,10 +4,10 @@ description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud 
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 99%
+ht-degree: 71%
 
 ---
 
@@ -25,9 +25,9 @@ Dieses Dokument enthält Richtlinien für die Entwicklung von AEM as a Cloud Ser
 
 Code, der in AEM as a Cloud Service ausgeführt wird, muss wissen, dass er immer in einem Cluster ausgeführt wird. Das bedeutet, dass immer mehr als eine Instanz ausgeführt wird. Der Code muss robust sein, insbesondere da eine Instanz jederzeit gestoppt werden kann.
 
-Während der Aktualisierung von AEM as a Cloud Service werden Instanzen mit altem und neuem Code parallel ausgeführt. Daher darf der alte Code nicht mit dem durch den neuen Code erzeugten Inhalt abstürzen, und der neue Code muss mit dem alten Inhalt umgehen können.
+Während der Aktualisierung von AEM as a Cloud Service werden Instanzen mit altem und neuem Code parallel ausgeführt. Daher darf der alte Code nicht mit dem durch den neuen Code erstellten Inhalt abstürzen, und der neue Code muss mit dem alten Inhalt umgehen können.
 
-Wenn die Primärinstanz im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um sie zu erkennen.
+Wenn die primäre Instanz im Cluster identifiziert werden muss, kann die Apache Sling Discovery-API verwendet werden, um sie zu erkennen.
 
 ## Status im Speicher {#state-in-memory}
 
@@ -37,27 +37,27 @@ Der Status darf nicht im Speicher gehalten werden, sondern muss im Repository ve
 
 Verwenden Sie das Dateisystem der Instanz nicht in AEM as a Cloud Service. Der Datenträger ist temporär und wird verworfen, wenn Instanzen recycelt werden. Eine beschränkte Nutzung des Dateisystems für die temporäre Datenspeicherung im Zusammenhang mit der Verarbeitung einzelner Anfragen ist möglich, sollte aber nicht für riesige Dateien missbraucht werden. Dies liegt daran, dass sich dies negativ auf das Ressourcennutzungskontingent auswirken und zu Datenträgerbeschränkungen führen kann.
 
-Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längeren Datenspeicherung an einen externen Dienst gesendet werden.
+Wenn beispielsweise die Nutzung des Dateisystems nicht unterstützt wird, sollte die Veröffentlichungsebene sicherstellen, dass alle Daten, die beibehalten werden müssen, zur längerfristigen Speicherung an einen externen Service gesendet werden.
 
 ## Beobachrung {#observation}
 
-In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse, lokal ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt sowohl für JCR-Ereignisse als auch für Sling-Ressourcen-Ereignisse. Zum Zeitpunkt einer Änderung kann die Instanz heruntergefahren und durch eine andere Instanz ersetzt werden. Andere zu diesem Zeitpunkt aktive Instanzen in der Topologie können auf dieses Ereignis reagieren. In diesem Fall handelt es sich jedoch nicht um ein lokales Ereignis und es kann sogar sein, dass es bei einer zum Zeitpunkt der Veranlassung des Ereignisses laufenden Auswahl der führenden Instanz keine aktive führende Instanz gibt.
+Ebenso kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse, lokal ausgeführt wird. Daher muss man bei der Verwendung vorsichtig sein. Dies gilt sowohl für JCR-Ereignisse als auch für Sling-Ressourcen-Ereignisse. Zum Zeitpunkt einer Änderung kann die Instanz heruntergefahren und durch eine andere Instanz ersetzt werden. Andere zu diesem Zeitpunkt aktive Instanzen in der Topologie können auf dieses Ereignis reagieren. In diesem Fall handelt es sich jedoch nicht um ein lokales Ereignis und es kann sogar sein, dass es bei einer zum Zeitpunkt der Veranlassung des Ereignisses laufenden Auswahl der führenden Instanz keine aktive führende Instanz gibt.
 
 ## Hintergrundaufgaben und Aufträge mit langer Laufzeit {#background-tasks-and-long-running-jobs}
 
-Als Hintergrundaufgaben ausgeführter Code muss davon ausgehen, dass die Instanz, in der er ausgeführt wird, jederzeit heruntergefahren werden kann. Daher muss der Code stabil und vor allem verwendbar sein. Das bedeutet, dass der Code, wenn er erneut ausgeführt wird, nicht von vorne beginnen sollte, sondern eher nahe an der Stelle, an der er abgebrochen wurde. Dies ist zwar keine neue Anforderung für diese Art von Code, aber bei AEM as a Cloud Service ist es wahrscheinlicher, dass eine Instanz heruntergefahren wird.
+Bei Code, der als Hintergrundaufgabe ausgeführt wird, muss davon ausgegangen werden, dass die Instanz, in der er ausgeführt wird, jederzeit heruntergefahren werden kann. Daher muss der Code stabil und vor allem verwendbar sein. Das bedeutet, dass der Code bei einer erneuten Ausführung nicht von vorne beginnen sollte, sondern eher nahe an der Stelle, an der er aufgehört hat. Dies ist zwar keine neue Anforderung für diese Art von Code, aber in AEM as a Cloud Service ist es wahrscheinlicher, dass eine Instanz entfernt wird.
 
 Um die Probleme zu minimieren, sollten Aufträge mit langer Laufzeit nach Möglichkeit vermieden und zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling-Aufträge, die eine Garantie für mindestens einmaliges Ausführen haben und daher, falls sie unterbrochen werden, so schnell wie möglich wieder ausgeführt werden. Aber sie sollten wahrscheinlich nicht wieder von vorne anfangen. Für die Planung solcher Aufträge ist es am besten, die Planung von [Sling-Aufträgen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) zu verwenden, da dies wiederum die mindestens einmalige Ausführung garantiert.
 
-Verwenden Sie für die Planung nicht den Sling Commons Scheduler, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
+Verwenden Sie den Sling Commons Scheduler nicht für die Planung, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
 
-In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher sollte man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Bereitstellungen.
+In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher muss man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Bereitstellungen.
 
 ## Ausgehende HTTP-Verbindungen {#outgoing-http-connections}
 
 Es wird dringend empfohlen, dass alle ausgehenden HTTP-Verbindungen angemessene Verbindungs- und Lesezeitüberschreitungen festlegen. Die vorgeschlagenen Werte sind 1 Sekunde für die Verbindungszeitüberschreitung und 5 Sekunden für die Lesezeitüberschreitung. Die genauen Werte müssen anhand der Leistung des Backend-Systems bestimmt werden, das diese Anfragen verarbeitet.
 
-Für Code, der diese Zeitlimits nicht anwendet, erzwingen AEM-Instanzen, die in AEM as a Cloud Service ausgeführt werden, globale Zeitlimits. Diese Zeitüberschreitungswerte betragen 10 Sekunden für Verbindungsaufrufe und 60 Sekunden für Leseaufrufe für Verbindungen.
+Für Code, der diese Zeitüberschreitungen nicht anwendet, erzwingen AEM-Instanzen, die auf AEM as a Cloud Service ausgeführt werden, eine globale Zeitüberschreitung. Diese Zeitüberschreitungswerte betragen 10 Sekunden für Verbindungsaufrufe und 60 Sekunden für Leseaufrufe für Verbindungen.
 
 Adobe empfiehlt zum Herstellen von HTTP-Verbindungen die Verwendung der bereitgestellten [Apache HttpComponents Client 4.x-Bibliothek](https://hc.apache.org/httpcomponents-client-ga/).
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service unterstützt die Touch-Benutzeroberfläche nur für Kunde
 
 Native Binärdateien und Bibliotheken dürfen nicht in Cloud-Umgebungen bereitgestellt oder installiert werden.
 
-Darüber hinaus sollte der Code nicht versuchen, native Binärdateien oder native Java-Erweiterungen (z. B. JNI) zur Laufzeit herunterzuladen.
+Außerdem sollte der Code nicht versuchen, native Binärdateien oder native Java-Erweiterungen (z. B. JNI) zur Laufzeit herunterzuladen.
 
 ## Keine Streaming-Binärdateien über AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -89,7 +89,7 @@ Auf Binärdateien sollte über das CDN zugegriffen werden, das Binärdateien au�
 
 Verwenden Sie zum Beispiel nicht `asset.getOriginal().getStream()`, wodurch das Herunterladen einer Binärdatei auf den temporären Datenträger des AEM-Service ausgelöst wird.
 
-## Keine Rückwärtsreplikations-Agenten {#no-reverse-replication-agents}
+## Keine Rückwärtsreplikationsagenten {#no-reverse-replication-agents}
 
 Die Rückwärtsreplikation von der Veröffentlichungs- auf die Autoreninstanz wird in AEM as a Cloud Service nicht unterstützt. Wenn eine solche Strategie erforderlich ist, können Sie einen externen Persistenzspeicher verwenden, der von der Farm der Veröffentlichungsinstanzen und möglicherweise vom Autoren-Cluster gemeinsam genutzt wird.
 
@@ -103,15 +103,15 @@ Die Größe von Produktionsumgebungen ist höher, um einen stabilen Betrieb sich
 
 Entwicklungsumgebungen und schnelle Entwicklungsumgebungen sollten auf Entwicklungs-, Fehleranalyse- und Funktionstests beschränkt werden und sind nicht für die Verarbeitung hoher Arbeitslasten oder großer Inhaltsmengen konzipiert.
 
-Beispielsweise kann das Ändern einer Indexdefinition in einem großen Content-Repository in einer Entwicklungsumgebung eine Neuindizierung verursachen, was zu einer zu hohen Verarbeitungsrate führt. Tests, die umfangreiche Inhalte erfordern, sollten in Staging-Umgebungen durchgeführt werden.
+Wenn Sie beispielsweise eine Indexdefinition in einem großen Inhalts-Repository in einer Entwicklungsumgebung ändern, kann dies zu einer Neuindizierung führen, was zu einer zu starken Verarbeitung führt. Tests, die umfangreiche Inhalte erfordern, sollten in Staging-Umgebungen durchgeführt werden.
 
 ## Überwachung und Debugging {#monitoring-and-debugging}
 
 ### Protokolle {#logs}
 
-Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im Ordner `/crx-quickstart/logs` geschrieben.
+Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs` Ordner geschrieben.
 
-In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Festlegen der Protokollebene**
 
@@ -150,7 +150,7 @@ Mithilfe des OSGi-Konfigurations-Targetings im Ausführungsmodus können diskret
 | Staging | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
 | Produktion | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
-Eine Zeile in der Debugdatei beginnt gewöhnlich mit DEBUG, gefolgt von der Angabe der Protokollebene, der Aktion des Installationsprogramms und der Protokollmeldung. Zum Beispiel:
+Eine Zeile in der Debugdatei beginnt normalerweise mit DEBUG, gefolgt von der Protokollebene, der Installationsaktion und der Protokollmeldung. Zum Beispiel:
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -174,7 +174,7 @@ Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit 
 
 Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web-Konsole (`/system/console`).
 
-Bei der lokalen Entwicklung (mit dem SDK) kann direkt in `/apps` und `/libs` geschrieben werden, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
+Bei der lokalen Entwicklung (mit der SDK) können `/apps` und `/libs` direkt geschrieben werden, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
 
 ### Entwicklungs-Tools für AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
@@ -185,11 +185,11 @@ Bei der lokalen Entwicklung (mit dem SDK) kann direkt in `/apps` und `/libs` ges
 >[!NOTE]
 >Einige Kundinnen und Kunden haben die Möglichkeit, ein überarbeitetes Erlebnis für die AEM Cloud Service Developer Console auszuprobieren. Weitere Informationen finden Sie in [diesem Artikel](/help/implementing/developing/introduction/aem-developer-console.md).
 
-Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
+Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
-Stattdessen kann der Repository-Browser von der AEM as a Cloud Service Developer Console aus gestartet werden und bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“. Weitere Informationen finden Sie im [Repository-Browser](/help/implementing/developing/tools/repository-browser.md).
+Stattdessen kann der Repository-Browser von der AEM as a Cloud Service Developer Console aus gestartet werden und bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“. Weitere Informationen finden Sie unter [Repository-Browser](/help/implementing/developing/tools/repository-browser.md).
 
-Eine Reihe von Tools zum Debuggen von AEM as a Cloud Service-Entwicklungsumgebungen sind in der AEM as a Cloud Service Developer Console für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Author- und Publish-Service-URLs wie folgt festgelegt werden:
+Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in AEM as a Cloud Service Developer Console für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt bestimmt werden:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -201,7 +201,7 @@ Weitere Informationen finden Sie in den [Versionsinformationen](/help/release-no
 
 Entwickler können Statusinformationen generieren und verschiedene Ressourcen auflösen.
 
-Wie unten dargestellt, umfassen die verfügbaren Statusinformationen den Status von Paketen, Komponenten, OSGi-Konfigurationen, Oak-Indizes, OSGi-Services und Sling-Jobs.
+Wie unten dargestellt, umfassen die verfügbaren Statusinformationen den Status von Paketen, Komponenten, OSGi-Konfigurationen, Oak-Indizes, OSGi-Services und Sling-Aufträgen.
 
 ![Developer Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -219,7 +219,7 @@ Bei Produktionsprogrammen wird der Zugriff auf die AEM as a Cloud Service Develo
 
 ### Leistungsüberwachung {#performance-monitoring}
 
-Adobe überwacht die Programmleistung und ergreift Maßnahmen, wenn eine Verschlechterung beobachtet wird. Derzeit können keine Anwendungsmetriken beobachtet werden.
+Adobe überwacht die Anwendungsleistung und ergreift Maßnahmen, um festgestellte Leistungseinbußen zu beheben. Derzeit können keine Anwendungsmetriken beobachtet werden.
 
 ## Senden von E-Mails {#sending-email}
 
@@ -233,13 +233,13 @@ In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfig
 
 Standardmäßig sind zum Senden von E-Mails verwendete Ports deaktiviert. Um einen Port zu aktivieren, konfigurieren Sie die [erweiterten Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) und stellen Sie sicher, dass Sie für jede benötigte Umgebung die Regeln für die Port-Weiterleitung des Endpunkts `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` festlegen, die den beabsichtigten Port (z. B. 465 oder 587) einem Proxy-Port zuordnen.
 
-Es wird empfohlen, das erweiterte Netzwerk mit einem auf `flexiblePortEgress` gesetzten `kind`-Parameter zu konfigurieren, da Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie einen `kind`-Parameter von `dedicatedEgressIp`. Wenn Sie bereits aus anderen Gründen ein VPN konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
+Es wird empfohlen, das erweiterte Netzwerk mit einem auf `kind` gesetzten `flexiblePortEgress` zu konfigurieren, da Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie einen `kind`-Parameter von `dedicatedEgressIp`. Wenn Sie bereits aus anderen Gründen ein VPN konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
 
-Sie müssen E-Mails über einen E-Mail-Server und nicht direkt an E-Mail-Clients senden. Andernfalls können die E-Mails blockiert werden.
+Sie müssen eine E-Mail über einen E-Mail-Server und nicht direkt an E-Mail-Clients senden. Andernfalls können die E-Mails blockiert werden.
 
 ### Senden von E-Mails {#sending-emails}
 
-Der [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service) sollte verwendet werden und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
+Der [Day CQ Mail Service OSGI](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service)Service sollte verwendet werden, und E-Mails müssen an den in der Support-Anfrage angegebenen Mailserver und nicht direkt an Empfänger gesendet werden.
 
 ### Konfiguration {#email-configuration}
 
@@ -250,7 +250,7 @@ Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in d
 * Der Hostname des SMTP-Servers sollte auf $[env:AEM_PROXY_HOST;default=proxy.tunnel eingestellt sein]
 * Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter „portForwards“ festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
 
-Der SMTP-Server-Port sollte als `portDest`-Wert im portForwards-Parameter festgelegt werden, der im API-Aufruf bei der Konfiguration der erweiterten Vernetzung verwendet wird, und der `portOrig`-Wert sollte ein aussagekräftiger Wert sein, der innerhalb des erforderlichen Bereichs von 30000 bis 30999 liegt. Wenn der SMTP-Server-Port beispielsweise 465 ist, sollte der Port 30465 als `portOrig`-Wert verwendet werden.
+Der SMTP-Server-Port sollte als `portDest` Wert im portForwards-Parameter festgelegt werden, der im API-Aufruf bei der Konfiguration der erweiterten Vernetzung verwendet wird, und der `portOrig` sollte ein aussagekräftiger Wert sein, der innerhalb des erforderlichen Bereichs von 30000 bis 30999 liegt. Wenn der SMTP-Server-Port beispielsweise 465 ist, sollte der Port 30465 als `portOrig`-Wert verwendet werden.
 
 In diesem Fall und unter der Annahme, dass SSL aktiviert werden muss, in der Konfiguration des **Day CQ Mail Service OSGi**-Services:
 
