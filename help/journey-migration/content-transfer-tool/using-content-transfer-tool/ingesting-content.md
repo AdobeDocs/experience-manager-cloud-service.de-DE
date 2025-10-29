@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 2fafb582ae8fc5e2ecc19157ff34e16be401393a
-workflow-type: ht
-source-wordcount: '3591'
-ht-degree: 100%
+source-git-commit: 54829a232b4b918a525b25f9bca475d7856faa46
+workflow-type: tm+mt
+source-wordcount: '3616'
+ht-degree: 99%
 
 ---
 
@@ -140,19 +140,19 @@ Sie können eine Aufnahme in der Zielumgebung nur initiieren, wenn Sie der lokal
 
 ### Migrationsdienst kann nicht erreicht werden {#unable-to-reach-migration-service}
 
-Nachdem eine Aufnahme angefordert wurde, wird den Benutzenden möglicherweise eine Meldung wie die folgende angezeigt: „Der Migrations-Service in der Zielumgebung ist derzeit nicht erreichbar. Versuchen Sie es später erneut oder kontaktieren Sie den Adobe-Support.“
+Nachdem eine Aufnahme angefordert wurde, wird den Benutzenden möglicherweise eine Meldung wie die folgende angezeigt: „Der Migrationsdienst in der Zielumgebung ist derzeit nicht erreichbar. Versuchen Sie es später erneut oder kontaktieren Sie den Adobe-Support.“
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
-Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lage war, den Migrations-Service der Zielumgebung zu erreichen, um die Aufnahme zu starten. Hierfür kann es verschiedene Gründe geben.
+Diese Meldung weist darauf hin, dass Cloud Acceleration Manager nicht in der Lage war, den Migrationsdienst der Zielumgebung zu erreichen, um die Aufnahme zu starten. Hierfür kann es verschiedene Gründe geben.
 
 >[!NOTE]
 > 
 > Das Feld „Migrations-Token“ wird angezeigt, da in einigen Fällen das Abrufen dieses Tokens tatsächlich nicht zulässig ist. Durch die manuelle Bereitstellung kann die Benutzerin oder der Benutzer die Aufnahme schnell und ohne zusätzliche Hilfe starten. Wenn das Token bereitgestellt, aber die Meldung weiterhin angezeigt wird, war das Abrufen des Tokens nicht das Problem.
 
-* AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrations-Service gelegentlich aus einer Reihe normaler Gründe neu starten. Wenn der Service gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
-* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrations-Service ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
-* Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrations-Service zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während des Aufnahme- und Indizierungsprozesses zu deaktivieren. Fügen Sie dazu 0.0.0.0/0 vorübergehend zur Zulassungsliste hinzu, während der Aufnahme- und Indizierungsprozesses ausgeführt wird.
+* AEM as a Cloud Service verwaltet den Umgebungsstatus und muss den Migrationsdienst gelegentlich aus einer Reihe normaler Gründe neu starten. Wenn der Service gerade neu gestartet wird, ist er nicht erreichbar, wird aber bald wieder verfügbar sein.
+* Möglicherweise wird ein anderer Prozess in der Instanz ausgeführt. Wenn z. B. durch [AEM-Versionsaktualisierungen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) eine Aktualisierung durchgeführt wird, ist das System möglicherweise ausgelastet und der Migrationsdienst ist nicht regelmäßig verfügbar. Sobald dieser Vorgang abgeschlossen ist, kann erneut versucht werden, die Aufnahme zu starten.
+* Wenn eine [IP-Zulassungsliste über Cloud Manager angewendet wurde](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md), hindert sie Cloud Acceleration Manager daran, den Migrationsdienst zu erreichen. Eine IP-Adresse kann nicht für Aufnahmen hinzugefügt werden, da diese Adresse dynamisch ist. Derzeit besteht die einzige Lösung darin, die IP-Zulassungsliste während des Aufnahme- und Indizierungsprozesses zu deaktivieren. Fügen Sie dazu 0.0.0.0/0 vorübergehend zur Zulassungsliste hinzu, während der Aufnahme- und Indizierungsprozesses ausgeführt wird.
 * Es kann andere Gründe geben, die untersucht werden müssen. Wenn die Aufnahme oder Indizierung weiterhin fehlschlägt, wenden Sie sich an die Kundenunterstützung von Adobe.
 
 ### AEM-Versionsaktualisierungen und Aufnahmen {#aem-version-updates-and-ingestions}
@@ -260,6 +260,7 @@ Manchmal kann es unerwartet zeitweise auftretende Probleme aufgrund fehlgeschlag
 * `Exhausted mongo restore retries` – Die Versuche, eine lokale Sicherungskopie des aufgenommenen Migrationssatzinhalts in die Cloud-Datenbank wiederherzustellen, sind ausgeschöpft. Dies weist auf ein allgemeines Konsistenz-/Netzwerkproblem mit MongoDB hin, das sich häufig nach einigen Minuten selbst behebt.
 * `Mongo network error` – Manchmal kann das Herstellen einer Verbindung mit MongoDB fehlschlagen, was dazu führt, dass der Aufnahmeprozess vorzeitig beendet und als fehlgeschlagen gemeldet wird. Es sollte dann einfach ein erneuter Versuch der Aufnahme unternommen werden.
 * `Mongo server selection error` – Dies ist ein seltener Client-seitiger Mongo-Timeout-Fehler, der aus einer Reihe von zugrunde liegenden Gründen auftreten kann. Ein nachfolgender erneuter Versuch wird das Problem höchstwahrscheinlich beheben.
+* `Mongo took too long to start` - In extrem seltenen Fällen kann die im Aufnahme-Workflow verwendete lokale MongoDB fehlschlagen. Ein nachfolgender erneuter Versuch wird das Problem höchstwahrscheinlich beheben.
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 
