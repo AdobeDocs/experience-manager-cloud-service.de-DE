@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 22%
 
 ---
@@ -83,7 +83,7 @@ Wenn jemand ein Formular auf Ihrer Website übermittelt, das mit AEM Adaptive Fo
 
 Durch die Optimierung des Datenübertragungsprozesses kann der Connector Ihnen dabei helfen, die Konversionsraten Ihrer Website zu verbessern. Durch das automatische Senden von Lead-Daten an Marketo können Sie sicherstellen, dass qualifizierte Leads schnell in Ihre Pflegeprogramme eingegeben werden.
 
-Im Wesentlichen hilft Ihnen der Connector von AEM Forms zu Marketo, die Stärken beider Plattformen zu nutzen, um einen effizienteren und effektiveren Marketing-Trichter zu erstellen.
+Im Wesentlichen hilft Ihnen der Connector von AEM Forms zu Marketo, die Stärken beider Plattformen zu nutzen, um eine effizientere und effektivere Marketing-funnel zu schaffen.
 
 Bereit zum Start? Die folgenden Artikel enthalten detaillierte Anweisungen zur Verwendung der Innovation.
 
@@ -122,6 +122,17 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 * **Benutzerdefinierte Schriftarten:** Sie benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten ein, um ein konsistentes, markenspezifisches PDF-Rendering auf allen Geräten sicherzustellen.
 * **Importieren und exportieren:** Nahtlose Migration und Wiederverwendung der interaktiven Kommunikation mit ihren Fragmenten und Datenmodellen über Umgebungen hinweg.
 
+* **Vorlagensperrung**: Sperren Sie Inhalte und Layout-Elemente in Vorlagen, um die Markenintegrität zu wahren und nicht autorisierte Änderungen zu verhindern.
+
+* **Inhaltsüberlauf**: Option „Seitenumbrüche innerhalb von Inhalten zulassen“ für fließende Layouts für eine reibungslose mehrseitige Bearbeitung und eine bessere Textverwaltung für komplexe Dokumente.
+
+* **XDP-Dateibearbeitung**: Sie können jetzt XDP-Dateien in einem Browser bearbeiten, anstatt in Forms Designer, das nur auf dem Microsoft Windows-Desktop ausgeführt wird.
+
+##### Dynamische Seitennummerierung
+
+Auf Musterseiten wird automatisch „Seite ##&quot; angezeigt, um eine klare, konsistente Paginierung über mehrseitige Dokumente hinweg zu gewährleisten.
+
+
 
 #### Anwendungsfälle:
 
@@ -130,13 +141,13 @@ Interaktive Kommunikation in der Cloud ist eine leistungsstarke Lösung für die
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 
 Sie können AEM Forms mit Adobe Experience Platform (AEP) verbinden, um Kundenprofile und Daten für personalisierte Formularerlebnisse und nachgelagerte Trigger-Workflows auf der Grundlage von Formularübermittlungen zu nutzen. Durch das direkte Senden von Formulardaten an AEP-Datensätze können Sie Kundenprofile anreichern und tiefere Einblicke in Benutzerinteraktionen erhalten.
 
-Bereit zum Start? [&#x200B; Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+Bereit zum Start? [ Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
 
 ### AEM FORMS HTML5 FORMS
 
@@ -175,7 +186,7 @@ Beschleunigen Sie die Entwicklung von AEM Forms Edge Delivery Services mit dem A
 * **Entwicklerproduktivität**: Konzentrieren Sie sich auf die Erstellung von Business-Logik und Benutzeroberfläche, während die CLI sich wiederholende Einrichtungsaufgaben übernimmt.
 * **Nahtlose Integration**: Generierte Komponenten können verwendet und in bestehende AEM Forms-Projekte integriert werden.
 
-Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### API-Integrationstool für dynamische Formulardaten
 

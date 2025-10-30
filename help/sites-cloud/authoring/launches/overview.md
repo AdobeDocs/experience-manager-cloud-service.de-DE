@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
-workflow-type: ht
-source-wordcount: '977'
-ht-degree: 100%
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 96%
 
 ---
 
@@ -18,13 +18,11 @@ In Adobe Experience Manager (AEM) as a Cloud Service helfen Ihnen Launches, Inha
 
 Ein *Launch* wird erstellt, damit Sie Änderungen zur Vorbereitung auf spätere Veröffentlichungen vornehmen und gleichzeitig die aktuellen Inhalte pflegen können. Für AEM-Seiten bedeutet dies, dass Sie tatsächlich zwei Versionen gleichzeitig bearbeiten: Seiten, die derzeit veröffentlicht sind, und eine Version dieser Seiten, die zu einem späteren Zeitpunkt veröffentlicht werden soll. Wenn es so weit ist, können Sie die Originalseiten ersetzen und die neuen Versionen veröffentlichen.
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>Launches sind auch für Inhaltsfragmente verfügbar. Die grundlegenden Konzepte sind dieselben, aber es gibt Unterschiede bei ihrer Verwaltung in AEM.
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Ausführliche Informationen finden Sie [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 Erstellen Sie einen *Launch* und leiten Sie Ihre *Launch*-Seiten nach deren Bearbeitung und Aktualisierung wieder an die *Quelle* *zurück*. Sie können dann diese *Quellseiten* (oberste Ebene) aktivieren. Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
 
@@ -115,13 +113,11 @@ Launches ermöglichen Folgendes:
 
 ## Die Konsole „Launches“  {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>Diese Konsole ist nur für Launches für Seiten vorgesehen.
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Informationen zum Verwalten Ihrer Inhaltsfragmente finden Sie [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, auf diese zu reagieren.
 

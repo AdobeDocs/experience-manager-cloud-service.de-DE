@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
+source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
 workflow-type: tm+mt
-source-wordcount: '2920'
-ht-degree: 99%
+source-wordcount: '2927'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,9 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
-   * Neben Inhaltsfragmenten können Sie auch [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) anzeigen. Sie können auch Links zu den Panels komprimieren oder erweitern.
+   * Neben Inhaltsfragmenten haben Sie folgende Möglichkeiten:
+      * Anzeigen [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); Sie können auch Links zu den Bedienfeldern komprimieren oder erweitern
+      * Erstellen und Verwalten von [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.
@@ -201,7 +203,7 @@ Vor der Erstellung des Inhaltsfragments muss das zugrunde liegende Inhaltsfragme
 
 ### Erstellen eines Inhaltsmodells {#creating-a-content-model}
 
-[Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) müssen vor dem Erstellen von Inhaltsfragmenten mit strukturiertem Inhalt aktiviert und erstellt werden.
+[Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) müssen vor dem Erstellen von Inhaltsfragmenten mit strukturierten Inhalten aktiviert und erstellt werden.
 
 ### Erstellen eines Inhaltsfragments {#creating-a-content-fragment}
 

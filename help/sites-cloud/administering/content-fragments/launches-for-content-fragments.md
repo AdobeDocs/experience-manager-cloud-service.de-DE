@@ -3,13 +3,10 @@ title: Launches für Inhaltsfragmente
 description: Erfahren Sie, wie Sie Launches für Inhaltsfragmente in Adobe Experience Manager as a Cloud Service verwenden. Mit Launches können Sie Inhalte für eine zukünftige Veröffentlichung effizient entwickeln und gleichzeitig Ihre aktuellen Inhaltsfragmente beibehalten.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: true
-hidefromtoc: true
-index: false
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 231ce792429347882c93804d370e7a99111ec916
-workflow-type: ht
+source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
+workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 100%
 

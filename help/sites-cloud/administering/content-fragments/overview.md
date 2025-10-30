@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
-workflow-type: ht
-source-wordcount: '2014'
-ht-degree: 100%
+source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
+workflow-type: tm+mt
+source-wordcount: '2021'
+ht-degree: 99%
 
 ---
 
@@ -103,6 +103,7 @@ Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
 * [Analysieren](/help/sites-cloud/administering/content-fragments/analysis.md) der Struktur Ihres Inhaltsfragments mithilfe des Editors
 * [Zugreifen auf Ihre Fragmente mit GraphQL, für eine Headless-Bereitstellung an Ihre Anwendungen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Integrieren und Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+* Erstellen und Verwalten von [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Oder Verwenden Ihrer Fragmente für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -158,9 +159,9 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 Der Versand erfolgt im JSON-Format mit dem JSON-Exporter.
 
-AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierter Inhalt wird in Modellen definiert, die eine Vielzahl von Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Ausdrücke, Datum und Uhrzeit und mehr.
+AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierte Inhalte werden in Modellen definiert, die eine Vielzahl von Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Ausdrücke, Datum und Uhrzeit und mehr.
 
-Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser strukturierte Inhalt dann zur Bereitstellung von AEM-Inhalten auf anderen Kanälen als AEM-Seiten verwendet werden.
+Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten können diese strukturierten Inhalte dann zur Bereitstellung von AEM-Inhalten auf anderen Kanälen als AEM-Seiten verwendet werden.
 
 >[!NOTE]
 >
