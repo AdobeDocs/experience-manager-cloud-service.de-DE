@@ -147,7 +147,7 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 >[!NOTE]
 >
 >Verfügbar als Funktion mit eingeschränkter Verfügbarkeit am 25. September.
->>Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
+>&#x200B;>Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
 
 ### AEM-Protokollweiterleitung an weitere Ziele {#log-forwarding}
 
