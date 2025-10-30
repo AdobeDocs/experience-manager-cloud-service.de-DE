@@ -3,13 +3,13 @@ title: Konfigurieren des RTE für den universellen Editor
 description: Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Editor konfigurieren können.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurieren des RTE für den universellen Editor {#configure-rte}
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Editor konfigur
 
 >[!NOTE]
 >
->Diese Dokumentation bezieht sich auf den neuen RTE für den universellen Editor, der als Early-Adopter-Funktion verfügbar ist. Wenn Sie diese neue Funktion testen möchten, lesen [&#x200B; die Versionshinweise , um weitere Informationen zu erhalten.](/help/release-notes/universal-editor/current.md#new-rte)
+>Diese Dokumentation bezieht sich auf den neuen RTE für den universellen Editor, der als Early-Adopter-Funktion verfügbar ist. Wenn Sie diese neue Funktion testen möchten, lesen [ die Versionshinweise , um weitere Informationen zu erhalten.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Überblick {#overview}
 
@@ -32,7 +32,7 @@ Die RTE-Konfiguration besteht aus zwei Teilen:
 * [`toolbar`](#toolbar): Die Symbolleistenkonfiguration steuert, welche Bearbeitungsoptionen in der Benutzeroberfläche verfügbar sind und wie sie organisiert sind.
 * [`actions`](#actions): Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen.
 
-Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit &#x200B;](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
+Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit ](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
 
 ```json
 [
@@ -73,7 +73,7 @@ Die Konfiguration der Symbolleiste steuert, welche Bearbeitungsoptionen in der B
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ Link-Aktionen unterstützen die Steuerung der Zielattribute zur Verwaltung des L
 * `hideTarget`: `true` - Zielattribut vollständig von Links ausschließen
 
 Die `unlink` Aktion wird nur angezeigt, wenn der Cursor in einem vorhandenen Link positioniert wird. Die Link-Formatierung wird entfernt, während der Textinhalt beibehalten wird.
+
+### Bildaktionen {#image}
+
+Bildaktionen unterstützen das Umbrechen von Bildelementen, um ein responsives Bild-Markup zu generieren. Die folgenden Abschnitte sind verfügbar.
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### Bildkonfigurationsoptionen {#image-options}
+
+* `wrapInPicture`: `false` (Standard) - Generieren einfacher `<img>`
+* `wrapInPicture`: `true` - Umschließen von Bildern in `<picture>` für responsives Design
 
 ### Sonstige Aktionen {#other}
 

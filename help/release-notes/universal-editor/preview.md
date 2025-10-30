@@ -3,10 +3,10 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
@@ -27,15 +27,8 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige neue Funktionen {#what-is-new}
 
-* Bild für neuen RTE einfügen
-* Neuer `/configuration` Endpunkt
+* TBD
 
 ## Anstehende Verbesserungen {#other-improvements}
 
-* Das Aktualisierungsereignis wird jetzt darüber informiert, ob die Aktion rückgängig gemacht wurde.
-* `No results` Zeichenfolge hängt jetzt vom Browsergebietsschema in universellen Editor-Tags ab.
-* Ein zusätzlicher Zeilenumbruch in der Veröffentlichungsschaltfläche des universellen Editors wurde korrigiert.
-* Die Bereinigung wurde für die Patch-API durchgeführt.
-* Die Schaltfläche „Inhalt auswählen“ ist jetzt in Safari sichtbar.
-* RPM-Build wurde korrigiert.
-* CORS-Aktualisierung, um zu vermeiden, dass bearbeiteter Text nach dem Speichern erneut aktualisiert wird.
+* TBD
