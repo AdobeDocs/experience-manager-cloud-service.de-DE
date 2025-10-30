@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 98218684e27e3112007cf3fe646b252b36b1b7e3
+source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
 workflow-type: tm+mt
-source-wordcount: '6850'
-ht-degree: 96%
+source-wordcount: '6877'
+ht-degree: 95%
 
 ---
 
@@ -1004,6 +1004,10 @@ ht-degree: 96%
       + [Interaktive Kommunikation importieren und exportieren](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
       + [Hinzufügen benutzerdefinierter Schriftarten zum Editor für interaktive Kommunikation](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
       + [PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
+      + [Vorlagensperre im Editor für interaktive Kommunikation](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
+      + [Dynamische Seitennummerierung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
+      + [Umgang mit Inhaltsüberläufen im Editor für interaktive Kommunikation](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
+      + [Unterstützung der XDP-Bearbeitung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
       + [Häufig gestellte Fragen](/help/forms/interactive-communications-faq.md)
    + Formularzentrierte Workflows {#create-form-centric-workflows}
       + [Einführung in den formularzentrierten Workflow](/help/forms/aem-forms-workflow.md)
@@ -1116,7 +1120,7 @@ ht-degree: 96%
          + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
          + [Live Search-CIF-Komponente](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
          + [Live Search-Popover-CIF-Komponente](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)
-         + [Drittanbieter-Commerce-Lösung](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
+         + [Drittanbieter-Lösung für den Handel](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
          + [Experience Platform](/help/commerce-cloud/cif-storefront/integrating/aep.md)
       + AEM-Storefront {#storefront}
          + [Erste Schritte](/help/commerce-cloud/cif-storefront/getting-started.md)
@@ -1214,7 +1218,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
