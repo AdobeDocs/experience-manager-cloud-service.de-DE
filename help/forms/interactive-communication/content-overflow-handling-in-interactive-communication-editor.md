@@ -4,10 +4,7 @@ description: Die Handhabung von Inhaltsüberläufen im Editor für interaktive K
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 17%
@@ -27,8 +24,7 @@ ht-degree: 17%
 
 ## Einführung
 
-Die Funktion zur Handhabung von Inhaltsüberläufen im Editor für interaktive Kommunikation verbessert das Verhalten von Text in fließenden und positionierten Layouts.
-Es sorgt für eine reibungslose Inhaltskontinuität für fortlaufende Layouts und bietet visuelle Warnhinweise für positionierte Layouts, sodass Autoren beim Entwerfen von Nachrichten bessere Kontrolle und Flexibilität haben.
+Die Funktion zur Handhabung von Inhaltsüberläufen im Editor für interaktive Kommunikation verbessert das Verhalten von Text in fließenden und positionierten Layouts. Es sorgt für eine reibungslose Inhaltskontinuität für fortlaufende Layouts und bietet visuelle Warnhinweise für positionierte Layouts, sodass Autoren beim Entwerfen von Nachrichten bessere Kontrolle und Flexibilität haben.
 
 ## Schlüsselfunktionen
 
