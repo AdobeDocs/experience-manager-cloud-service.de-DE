@@ -3,10 +3,10 @@ title: Versionshinweise für Version 2025.9.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 Der Workflow-Schritt „Aufrufen von Formulardatenmodell“ unterstützt jetzt die Verarbeitung von Workflow-seitigen Metadaten für Base64-kodierte Anhang-Arrays in auf SharePoint-Listen basierten Formulardatenmodellen. Mit dieser Verbesserung kann der Workflow-Schritt Metadaten wie Dateinamen, MIME-Typ und benutzerdefinierte Eigenschaften für jeden Anhang übergeben, speichern und abrufen. Diese Funktion ermöglicht ein umfassenderes Daten-Management und ermöglicht eine nahtlose nachgelagerte Integration. Weitere Informationen finden Sie unter [Verbesserte Unterstützung für Workflow-Schritt „Aufrufen von Formulardatenmodell“ für SharePoint-Listenanhänge](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
-### Vorab veröffentlichte Funktionen in AEM Forms
-
-**Verbesserungen beim Regeleditor**
-
-Der Regeleditor unterstützt jetzt eine verbesserte Navigation und ermöglicht die Verwendung von Funktionen und mathematischen Ausdrücken in Eingabeparametern.
-
-**Verbesserte Navigation mit Unterstützung der Ereignis-Payload**
-
-Die Aktion `Navigate To` in den Handlern zum Aufrufen von Diensten unterstützt jetzt `EVENT_PAYLOAD` und ermöglicht es Erstellenden von Formularen, Folgeaktionen basierend auf Ereignisantworten zu konfigurieren. Diese Verbesserung bietet mehr Flexibilität beim Entwerfen von Workflows nach der Übermittlung, wodurch reibungslosere Übergänge und personalisiertere Benutzererlebnisse gewährleistet werden. Weitere Informationen finden Sie unter [Verbesserte Navigation mit Unterstützung der Ereignis-Payload](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern**
-
-Eingabeparameter unterstützen jetzt sowohl Funktionsaufrufe als auch mathematische Ausdrücke, sodass Erstellende von Formularen dynamisch berechnete Werte direkt übergeben können. Diese Verbesserung optimiert die Regelkonfigurationen, beseitigt die Notwendigkeit zusätzlicher Felder und macht Formulare anpassbarer an komplexe Logik und berechnungsgesteuerte Szenarien. Weitere Informationen finden Sie unter [Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### Neue Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit,
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
-**PDF-Vorschau im Editor für interaktive Kommunikation**
+* **PDF-Vorschau im Editor für interaktive Kommunikation**
 
-Benutzende können PDFs mit interaktiver Kommunikation ohne Daten, mit lokalen JSON-Datendateien oder mit Daten aus einem Datenmodell in der Vorschau anzeigen, was flexible datengesteuerte Tests ermöglicht. Weitere Informationen finden Sie unter [PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+  Benutzende können PDFs mit interaktiver Kommunikation ohne Daten, mit lokalen JSON-Datendateien oder mit Daten aus einem Datenmodell in der Vorschau anzeigen, was flexible datengesteuerte Tests ermöglicht. Weitere Informationen finden Sie unter [PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Unterstützung benutzerdefinierter Schriften in der interaktiven Kommunikation**
+* **Unterstützung benutzerdefinierter Schriften in der interaktiven Kommunikation**
 
-Mit der Funktion für benutzerdefinierte Schriften können Benutzende benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten in die interaktive Kommunikation einbetten, um so eine konsistente und markenübergreifende PDF-Ausgabe auf allen Geräten und Plattformen sicherzustellen. Weitere Informationen finden Sie unter [Unterstützung benutzerdefinierter Schriften in interaktiver Kommunikation](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+  Mit der Funktion für benutzerdefinierte Schriften können Benutzende benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten in die interaktive Kommunikation einbetten, um so eine konsistente und markenübergreifende PDF-Ausgabe auf allen Geräten und Plattformen sicherzustellen. Weitere Informationen finden Sie unter [Unterstützung benutzerdefinierter Schriften in interaktiver Kommunikation](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
-**Importieren und Exportieren von interaktiver Kommunikation**
+* **Importieren und Exportieren von interaktiver Kommunikation**
 
-Diese Funktion ermöglicht die Migration und Wiederverwendung interaktiver Kommunikation über verschiedene Umgebungen hinweg. Sie können jetzt interaktive Kommunikation zusammen mit den zugehörigen Fragmenten und Datenmodellen aus einer Umgebung exportieren und in eine andere importieren. Weitere Informationen finden Sie unter [Importieren und Exportieren von interaktiver Kommunikation](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+  Diese Funktion ermöglicht die Migration und Wiederverwendung interaktiver Kommunikation über verschiedene Umgebungen hinweg. Sie können jetzt interaktive Kommunikation zusammen mit den zugehörigen Fragmenten und Datenmodellen aus einer Umgebung exportieren und in eine andere importieren. Weitere Informationen finden Sie unter [Importieren und Exportieren von interaktiver Kommunikation](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+
+* **Verbesserungen beim Regeleditor**
+
+  Der Regeleditor unterstützt jetzt eine verbesserte Navigation und ermöglicht die Verwendung von Funktionen und mathematischen Ausdrücken in Eingabeparametern.
+
+   * **Verbesserte Navigation mit Unterstützung der Ereignis-Payload**: Die `Navigate To`-Aktion in den Handlern für das Aufrufen von Services unterstützt jetzt `EVENT_PAYLOAD` und ermöglicht es Formularautoren, Folgeaktionen basierend auf Ereignisantworten zu konfigurieren. Diese Verbesserung bietet mehr Flexibilität beim Entwerfen von Workflows nach der Übermittlung, wodurch reibungslosere Übergänge und personalisiertere Benutzererlebnisse gewährleistet werden. Weitere Informationen finden Sie unter [Verbesserte Navigation mit Unterstützung der Ereignis-Payload](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+
+   * **Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern**: Eingabeparameter unterstützen jetzt sowohl Funktionsaufrufe als auch mathematische Ausdrücke, sodass Formularautoren dynamisch berechnete Werte direkt übergeben können. Diese Verbesserung optimiert die Regelkonfigurationen, beseitigt die Notwendigkeit zusätzlicher Felder und macht Formulare anpassbarer an komplexe Logik und berechnungsgesteuerte Szenarien. Weitere Informationen finden Sie unter [Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 >[!NOTE]
 >
 >Verfügbar als Funktion mit eingeschränkter Verfügbarkeit am 25. September.
->&#x200B;>Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
+>>Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
 
 ### Neue Version von AEM Developer Tools für Eclipse {#aem-develeper-tools-for-eclipse}
 
