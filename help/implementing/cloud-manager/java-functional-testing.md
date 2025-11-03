@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '832'
 ht-degree: 99%
 
 ---
@@ -36,7 +36,7 @@ Mit denselben Tools, die Adobe zum Schreiben von Produktfunktionstests verwendet
 
 Der Code für den benutzerdefinierten Funktionstest ist Java™-Code im Ordner `it.tests` Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist es nicht bestimmbar, welche JAR ausgewählt wird. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Beispieltests finden Sie über den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
 
-Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Publishing-Instanzen und eine Dispatcher-Konfiguration umfasst. Dieses Setup bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stapel ausgeführt werden.
+Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Veröffentlichungsinstanzen und eine Dispatcher-Konfiguration umfasst. Dieses Setup bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stapel ausgeführt werden.
 
 ### Struktur von Funktionstests {#functional-tests-structure}
 
@@ -110,10 +110,6 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 | Zeitüberschreitung | 30 min | Das Zeitlimit, nach dem der Test beendet wird. |
 | Empfohlene Dauer | 15 min | Adobe empfiehlt, Tests so zu schreiben, dass sie diese Dauer nicht überschreiten. |
 
->[!NOTE]
->
-> Wenn Sie weitere Ressourcen benötigen, erstellen Sie einen Fall für die Kundenunterstützung und beschreiben Sie Ihren Anwendungsfall. Das Adobe-Team prüft Ihre Anfrage und leistet angemessene Unterstützung.
-
 #### Abhängigkeiten
 
 * aem-cloud-testing-clients:
@@ -131,7 +127,7 @@ Bevorstehende Änderungen an der Container-Infrastruktur für das Ausführen von
 >[!NOTE]
 >
 >Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.
->&#x200B;>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
+>Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
 
 ### Lokale Testausführung {#local-test-execution}
 
