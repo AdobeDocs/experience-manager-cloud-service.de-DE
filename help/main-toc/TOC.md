@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e5e33c9e5be7882f481d9ec66c84c87093c062a3
+source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
 workflow-type: tm+mt
-source-wordcount: '6886'
+source-wordcount: '6896'
 ht-degree: 95%
 
 ---
@@ -578,6 +578,7 @@ ht-degree: 95%
       + [Veröffentlichung verwalten](/help/assets/manage-publication.md)
       + [Vorschau von 3D-Assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Smart-Tags für Bilder](/help/assets/smart-tags.md)
+      + [Verbessern der Inhaltserkennung mit KI-generierten Metadaten](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [Smart-Tags für Videos](/help/assets/smart-tags-for-videos.md)
       + [Organisieren von Assets](/help/assets/organize-assets.md)
       + [Verwenden von [!DNL Adobe Stock] -Assets](/help/assets/aem-assets-adobe-stock.md)
@@ -717,6 +718,7 @@ ht-degree: 95%
       + [Suchen und Finden von Assets](/help/assets/search-assets-view.md)
       + [Benutzerdefinierte Suchfilter](/help/assets/custom-search-filters.md)
       + [Asset-Management-Aufgaben](/help/assets/manage-organize-assets-view.md)
+      + [KI-generierte Metadaten](/help/assets/ai-generated-metadata-assets-view.md)
       + [Bearbeiten von Bildern](/help/assets/edit-images-assets-view.md)
       + [Bearbeiten von Videos](/help/assets/edit-videos-assets-view.md)
       + [Anzeigen und Verwalten von Ausgabedarstellungen](/help/assets/renditions.md)
@@ -1220,7 +1222,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
