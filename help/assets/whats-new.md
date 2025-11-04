@@ -3,10 +3,10 @@ title: Neue Funktionen in Content Hub
 description: Erfahren Sie mehr über einige der kürzlich eingeführten Content Hub-Funktionen
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 88%
+source-wordcount: '883'
+ht-degree: 82%
 
 ---
 
@@ -24,7 +24,15 @@ Das folgende Video zeigt die wichtigsten Funktionen von Content Hub:
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Datum der Content Hub-Funktionsveröffentlichung (2025.9.0) ist der Freitag, 25. September 2025 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version mit neuen Funktionen (2025.10.0) ist für den 30. Oktober 2025 geplant.
+Das Datum der Content Hub-Funktionsveröffentlichung (2025.10.0) ist der Freitag, 30. Oktober 2025 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version (2025.11.0) ist für den Freitag, 20. November 2025 geplant.
+
+## Funktionen der Oktober-Version {#october-release-features}
+
+**Verbesserungen am Content Hub-Download-Erlebnis**
+
+Content Hub unterstützt jetzt das Herunterladen mehrerer Asset-Ausgabedarstellungen in einer flachen Hierarchie, sodass nicht mehr mehrere Ordner durchsucht werden müssen. Benutzereinstellungen für das Download-Verhalten werden jetzt für ein sitzungsübergreifendes konsistentes Erlebnis beibehalten. Das neue Asset-Download-Erlebnis optimiert das Asset-Management und verbessert die Effizienz, indem heruntergeladene Dateien leichter zu finden und zu organisieren sind.
+
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## Funktionen der September-Version {#september-release-features}
 
@@ -35,6 +43,8 @@ Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Org
 **Sammlungen für schnellen Zugriff anheften**
 
 Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
+
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
