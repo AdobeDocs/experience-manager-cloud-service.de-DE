@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+source-git-commit: 4b09357276be8b57c72f830a39d98ab0a593efb1
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 99%
+source-wordcount: '1595'
+ht-degree: 93%
 
 ---
 
@@ -58,20 +58,16 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
 
 Es gibt zwei Symbolleisten übereinander.
 
-#### Cloud Manager-Kopfzeile {#cloud-manager-header}
+#### Experience Platform - Navigationsleiste oben {#cloud-manager-header}
 
-Die erste ist der Header von Cloud Manager, der bestehen bleibt, wenn Sie in Cloud Manager navigieren. Er ist ein Anker, der Ihnen Zugriff auf Einstellungen und Informationen bietet, die für alle Cloud Manager-Programme gelten.
+Die erste ist die obere Navigationsleiste von Experience Platform, die beim Navigieren durch Cloud Manager persistent ist. Er ist ein Anker, der Ihnen Zugriff auf Einstellungen und Informationen bietet, die für alle Cloud Manager-Programme gelten.
 
-![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
+![Experience Platform-Navigationsleiste oben](assets/experience-cloud-header.png)
 
-1. Klicken Sie auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden), um Zugriff auf verschiedene Registerkarten zu erhalten, über die Sie zu bestimmten Teilen eines Programms gelangen können. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
-1. Durch Klicken auf die Schaltfläche „Adobe Cloud Manager“ gelangen Sie zurück zur Konsole „Meine Programme“ von Cloud Manager, unabhängig davon, wo Sie sich in Cloud Manager befinden.
-1. Klicken Sie auf **Feedback**, um Adobe Feedback zu Cloud Manager zu geben.
-1. Durch Klicken auf die Organisationsauswahl wird die Organisation angezeigt, bei der Sie derzeit angemeldet sind (in diesem Beispiel „Foundation Internal“). Klicken Sie auf diese Option, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
-1. Klicken Sie auf ![Apps-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (Lösungsumschalter), um schnell zu anderen Experience Cloud-Lösungen zu wechseln.
-1. Ein Klicken auf ![Hilfesymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) bietet Schnellzugriff auf Lern- und Support-Ressourcen.
-1. Klicken Sie auf ![Glockensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)), um unter anderem Benachrichtigungen und Mitteilungen anzuzeigen.
-1. Klicken Sie auf das Symbol für die Benutzerin bzw. den Benutzer, um auf Ihre Benutzereinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
+* Über ![ Symbol „Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden) können Sie auf verschiedene Registerkarten zugreifen, mit denen Sie zu bestimmten Teilen eines einzelnen Programms gelangen. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
+* Das ![Glockensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)) bietet Ihnen unter anderem Zugriff auf Benachrichtigungen und Ankündigungen.
+
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Programmsymbolleiste {#program-toolbar}
 
@@ -153,7 +149,7 @@ Ein Produktionsprogramm kann so gekennzeichnet sein, dass es zusätzliche Funkti
 * Navigieren zu einer bestimmten ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
 * Öffnen der ![Programmübersicht-Symbol](/help/implementing/cloud-manager/assets/program-overview.svg) [Programmübersicht](#program-overview)
 * ![Bearbeiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >

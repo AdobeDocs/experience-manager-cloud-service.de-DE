@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 96%
+source-wordcount: '1818'
+ht-degree: 95%
 
 ---
+
 
 # Zugriff auf den und Navigation im universellen Editor {#navigating}
 
@@ -71,49 +72,17 @@ Die Benutzeroberfläche ist in diese Hauptbereiche unterteilt.
 >
 >Der universelle Editor bietet eine Reihe von [Anpassungsoptionen](/help/implementing/universal-editor/customizing.md) und [Erweiterungspunkten](/help/implementing/universal-editor/extending.md), die die Funktionalität des Editors ändern und erweitern können. Aus diesem Grund werden möglicherweise andere Optionen angezeigt als die hier dokumentierten Standardoptionen.
 
-### Die Kopfzeile von Experience Cloud {#experience-cloud-header}
+### Experience Platform - Navigationsleiste oben {#experience-cloud-header}
 
-Die Kopfzeile von Experience Cloud befindet sich immer oben im Bildschirm. Es handelt sich um einen Anker, der Ihnen mitteilt, wo Sie sich in Experience Cloud befinden, und Ihnen dabei hilft, zu anderen Experience Cloud-Apps zu navigieren.
+Die obere Navigationsleiste von Experience Platform befindet sich immer oben im Bildschirm. Es handelt sich um einen Anker, der Ihnen mitteilt, wo Sie sich in Experience Cloud befinden, und Ihnen dabei hilft, zu anderen Experience Cloud-Apps zu navigieren.
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-Wählen Sie links in der Kopfzeile den Adobe Experience Cloud-Link aus, um zum Stammverzeichnis Ihrer Experience Manager-Lösung zu navigieren und auf Tools wie [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) und [Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) zuzugreifen.
-
-![Schaltfläche für „Globale Navigation“](assets/global-navigation.png)
-
-#### Organisation {#organization}
-
-Dadurch wird die Organisation angezeigt, bei der Sie sich derzeit angemeldet haben. Wählen Sie diese Option aus, um zu einer anderen Organisation zu wechseln, wenn Ihre Adobe ID mit mehreren Organisationen verknüpft ist.
-
-![Organisationsanzeige](assets/organization.png)
-
-#### Hilfezentrum {#help}
-
-Das Symbol für das Hilfezentrum bietet Schnellzugriff auf Lern- und Support-Ressourcen.
-
-![Hilfe](assets/help.png)
-
-#### Benachrichtigungen {#notifications}
-
-Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md) gekennzeichnet.
-
-![Benachrichtigungen](assets/notifications.png)
-
-#### Apps {#solutions}
-
-Durch Tippen oder Klicken auf den App-Umschalter können Sie schnell zu anderen Experience Cloud-Lösungen wechseln.
-
-![App-Umschalter](assets/solutions.png)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 
-Wählen Sie das Symbol für Ihre Benutzerin bzw. Ihren Benutzer aus, um auf Ihre Kontoeinstellungen zuzugreifen. Wenn Sie kein Benutzerbild konfiguriert haben, wird ein zufälliges Symbol zugewiesen.
-
-![Benutzereigenschaften](assets/user-properties.png)
-
-Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet. Diese Einstellungen gelten für Cloud Manager im Allgemeinen. Die Funktionen werden [&#x200B; dieser Dokumentation beschrieben](/help/implementing/cloud-manager/navigation.md)
+Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzereinstellungen geöffnet.
 
 ![Umgebungs-Umschalter](assets/environment-switcher.png)
 
