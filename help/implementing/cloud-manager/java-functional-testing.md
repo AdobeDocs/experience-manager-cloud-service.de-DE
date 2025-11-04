@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 99%
 
 ---
+
 
 # Java™-Funktionsprüfung
 
@@ -102,7 +103,6 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 
 1. Die Container-Infrastruktur, die für Funktionstests genutzt wird, ist durch die folgenden Grenzen begrenzt:
 
-
 | Typ | Wert | Beschreibung |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Menge an CPU-Zeit, die pro Testausführung reserviert wird |
@@ -153,8 +153,6 @@ Die Systemeigenschaften lauten wie folgt.
 | `sling.it.instance.adminUser.2` | Auf die Veröffentlichungs-Admin-Benutzenden setzen. | `admin` |
 | `sling.it.instance.adminPassword.2` | Auf das Veröffentlichungs-Admin-Passwort setzen. |                         |
 
-
-
 #### Ausführen aller Tests mit Maven {#using-maven}
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `it.tests` in Ihrem Repository.
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
