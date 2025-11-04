@@ -4,7 +4,7 @@ description: Kennzeichnen Sie Assets mit einem Service für künstliche Intellig
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 100%
@@ -47,7 +47,7 @@ Smart-Tags werden in AEM Assets mithilfe des folgenden Workflows implementiert:
 
 1. Erstellen Sie ein Asset in AEM oder laden Sie es hoch. Vorkonfigurierte Tags werden für Bild-, Video- und textbasierte Assets generiert.
 
-1. Wenn Sie feststellen, dass bestimmte Tags nicht generiert werden, können Sie Ihre Tags vom Typ Bild entsprechend trainieren. Siehe [Smart-Tag-Training](#smart-tags-training.md).
+1. Wenn Sie feststellen, dass bestimmte Tags nicht generiert werden, können Sie Ihre Tags vom Typ Bild entsprechend trainieren. Siehe [Smart-Tag-Training](/help/assets/smart-tags-training.md).
 
 ## Unterstützte Dateiformate für Smart-Tags {#supported-file-formats}
 
@@ -256,7 +256,7 @@ Smart-Tags sind konfigurierbar und können auf jeden Ordner in DAM angewendet we
 
 +++**Woher weiß ich, dass Tagging ein Training erfordert?**
 
-Siehe [Bestimmen der Anforderungen an ein Smart-Tags-Training](#smart-tags-training.md#smart-tag-training-requirement).
+Siehe [Bestimmen der Anforderungen an ein Smart-Tags-Training](/help/assets/smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 

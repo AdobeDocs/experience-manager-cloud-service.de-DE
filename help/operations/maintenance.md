@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2043'
-ht-degree: 100%
+source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+workflow-type: tm+mt
+source-wordcount: '2042'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     <td>Kundin/Kunde</td>
     <td>
     <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie unten in der Tabelle zum Wartungsfenster.</p>
-    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=de#regular-purging-of-workflow-instances">AEM 6.5-Dokumentation zu Wartungsaufgaben</a>.</p>
+    <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Regelmäßiges Bereinigen von Workflow-Instanzen</a>.</p>
   </td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
   <td>
   <p><strong>windowSchedule=daily</strong> (dieser Wert sollte nicht geändert werden)</p>
   <p><strong>windowStartTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
-  <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+  <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem täglichen Wartungsfenster verknüpften Wartungsaufgaben gestoppt werden soll, wenn diese noch nicht abgeschlossen sind.</p>
   <p>Eine Wartungsaufgabe kann während dieses Zeitraums nicht mehr als einmal ausgeführt werden.</p>
   </td> 
   </tr>
@@ -117,7 +117,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     <td>
     <p><strong>windowSchedule=weekly</strong> (dieser Wert sollte nicht geändert werden)</p>
     <p><strong>windowStartTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
-    <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+    <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem wöchentlichen Wartungsfenster verknüpften Wartungsaufgaben gestoppt werden soll, wenn diese noch nicht abgeschlossen sind.</p>
     <p>Eine Wartungsaufgabe kann während dieses Zeitraums nicht mehr als einmal ausgeführt werden.</p>
     <p><strong>windowScheduleWeekdays= Array von zwei Werten von 1–7 (z. B. [5,5])</strong> Der erste Wert des Arrays ist der Starttag, an dem der Auftrag geplant wird, der zweite Wert der Endtag, an dem der Auftrag gestoppt wird. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
     </td>
@@ -129,7 +129,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     <td>
     <p><strong>windowSchedule=monthly</strong> (dieser Wert sollte nicht geändert werden)</p>
     <p><strong>windowStartTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beginnen soll.</p>
-    <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben beendet werden soll, wenn diese noch nicht abgeschlossen sind.</p>
+    <p><strong>windowEndTime = HH:MM</strong> unter Verwendung der 24-Stunden-Zeit. Definiert, wann die Ausführung der mit dem monatlichen Wartungsfenster verknüpften Wartungsaufgaben gestoppt werden soll, wenn diese noch nicht abgeschlossen sind.</p>
     <p>Eine Wartungsaufgabe kann während dieses Zeitraums nicht mehr als einmal ausgeführt werden.</p>
     <p><strong>windowScheduleWeekdays=Array von zwei Werten von 1–7 (z. B. [5,5])</strong>. Der erste Wert des Arrays ist der Starttag, an dem der Auftrag geplant wird, der zweite Wert der Endtag, an dem der Auftrag gestoppt wird. Die genaue Uhrzeit von Anfang und Ende wird durch „windowStartTime“ bzw. „windowEndTime“ angegeben.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0, um in der ersten Woche des Monats zu planen, oder 1, um in der letzten Woche des Monats zu planen. Wird kein Wert angegeben, werden die Aufträge an dem Tag geplant, der durch windowScheduleWeekdays (jeden Monat) festgelegt ist.</p>
@@ -370,7 +370,7 @@ Die Spalten, die *default* angeben, geben die Standardwerte für die Zukunft an,
 
 | Eigenschaften | Zukünftiger Standard für Umgebungen>TBD | Zukünftiger Standard für Umgebungen&lt;=TBD | Erforderlich | Typ | Werte |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| Regeln | - | - | Ja | Objekt | Einer oder mehrere der folgenden Knoten: Replikation, Seiten, DAM. Jeder dieser Knoten definiert Regeln mit den unten aufgeführten Eigenschaften. Alle Eigenschaften müssen deklariert werden. |
+| Regeln | – | – | Ja | Objekt | Einer oder mehrere der folgenden Knoten: Replikation, Seiten, DAM. Jeder dieser Knoten definiert Regeln mit den unten aufgeführten Eigenschaften. Alle Eigenschaften müssen deklariert werden. |
 | maximumAgeDays | 7 Tage | für alle 2557 (7 Jahre + 2 Schalttage) | Ja | Ganzzahl | Bei Replikation, Seiten oder DAM: die Anzahl der Tage, für die die Auditprotokolle aufbewahrt werden. Auditprotokolle, die älter als der konfigurierte Wert sind, werden gelöscht. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Ja | Zeichenfolge | Der Pfad, unter dem die Auditprotokolle für den zugehörigen Typ gelöscht werden. Muss auf &quot;/content&quot; gesetzt sein. |
-| Typen | Alle Werte | Alle Werte | Ja | Array der Auflistung | Für **replication** lauten die aufgezählten Werte: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Für **pages** lauten die aufgezählten Werte: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestoned, PageRolled Out, PageValid, PageInvalid. Für **dam** lauten die aufgezählten Werte: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| Typen | Alle Werte | Alle Werte | Ja | Array der Aufzählung | Für **replication** lauten die aufgezählten Werte: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Für **pages** lauten die aufgezählten Werte: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestoned, PageRolled Out, PageValid, PageInvalid. Für **dam** lauten die aufgezählten Werte: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
