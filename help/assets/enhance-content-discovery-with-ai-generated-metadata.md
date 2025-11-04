@@ -3,15 +3,20 @@ title: Verbessern der Inhaltserkennung mit KI-generierten Metadaten in der Admin
 description: Erfahren Sie, wie Sie die Inhaltssuche mit KI-generierten Metadaten in der Admin-Ansicht verbessern können
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '646'
 ht-degree: 96%
 
 ---
 
 
 # Verbessern der Inhaltssuche mit KI-generierten Metadaten {#ai-smart-tags}
+
+| Benutzeroberflächen | Artikel-Link |
+| -------- | ---------------------------- |
+| Assets-Ansicht | [Hier klicken](/help/assets/ai-generated-metadata-assets-view.md) |
+| Administratoransicht | Dieser Artikel |
 
 Anstatt dass Sie sich auf die manuelle Eingabe verlassen müssen, weist die KI digitalen Assets automatisch beschreibende Tags zu. Diese KI-generierten Tags verbessern die Metadatenqualität und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch das Eliminieren des manuellen Taggings, sondern stellt auch die Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher. Wenn das Asset beispielsweise ein Bild ist, kann die KI Objekte, Szenen, Emotionen oder sogar Markenlogos darin identifizieren und relevante Tags wie „Sonnenuntergang“, „Strand“, „Urlaub“ oder „Lächeln“ generieren. KI-generierte Inhalte können die Suche nach Assets verbessern, indem sie sowohl semantische als auch lexikalische Suchtechniken nutzen. Weitere Informationen finden Sie unter [Suchen von Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
