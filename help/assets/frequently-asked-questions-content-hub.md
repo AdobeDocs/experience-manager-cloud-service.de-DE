@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: cc29a94e4193f7563bb83ad39aa459ea0ba9306a
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 100%
+source-wordcount: '1635'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Durch das Aktivieren von Content Hub in einem Produktionsprogramm wird es als Te
 
 Wenn Sie Ihren Benutzenden Content Hub nach der Bereitstellung nicht zur Verfügung stellen möchten, weisen Sie dem Content Hub-Produktprofil in der Admin Console keine Benutzenden zu. Weitere Informationen finden Sie unter [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile).
 
-## Wie kann ich Content Hub in meinem Unternehmen auswerten angesichts der Tatsache, dass es nur für Produktionsprogramme/Produktions-Authoring-Umgebungen verfügbar ist? {#how-can-i-evaluate-content-hub}
+## Wie kann ich Content Hub in meinem Unternehmen bewerten? {#how-can-i-evaluate-content-hub}
 
 Content Hub ist eine von Adobe bereitgestellte und verwaltete Funktion und verfügt über keinen benutzerdefinierten Code, der eine typische Validierung über Entwicklung/Staging/Produktion erfordern würde. Darüber hinaus wird der Zugriff auf die Funktion für Benutzende vollständig von den Admins gesteuert, sodass Sie sie auswerten können, ohne dies allen Benutzenden zugänglich zu machen.
 
@@ -43,8 +43,6 @@ Sie können Content Hub auswerten, ohne dass sich dies auf Ihre in AEM as a Clou
 * Nachdem die Auswertung abgeschlossen ist, können AEM-Benutzende in der Autoreninstanz die Genehmigung für die Test-Assets entfernen und Produktions-Assets für Content Hub genehmigen. Anschließend kann die bzw. der Admin Console-Admin alle Benutzenden hinzufügen, die Zugriff auf Content Hub und genehmigte Inhalte benötigen. Herzlichen Glückwunsch! Ihr Content Hub ist jetzt live.
 
 Es gibt ein Early-Access-Programm für Content Hub in Sandbox-Programmen und ihren Autorenproduktionsumgebungen. Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Wenden Sie sich an Ihr Adobe-Accountteam, um mehr über das Early-Access-Programm zu erfahren.
-
-Content Hub ist noch nicht für produktionsfremde Umgebungen (Staging und Entwicklung) verfügbar. Die erwartete Verfügbarkeit für die Staging-/Entwicklungsumgebung für Assets Ultimate ist März 2025.
 
 ## Warum werden nach dem Anmelden bei Content Hub keine Assets angezeigt? {#no-assets-in-content-hub}
 

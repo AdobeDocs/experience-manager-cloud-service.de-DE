@@ -3,10 +3,10 @@ title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren sowie Benutzenden mit unterschiedlichen Berechtigungstypen (Assets hochladen, Adobe Express-Benutzende) Zugriff und Administrationsberechtigungen gewähren.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 772afa3fa409af63698585e139d1efdc026272d8
-workflow-type: ht
-source-wordcount: '1586'
-ht-degree: 100%
+source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
+workflow-type: tm+mt
+source-wordcount: '1874'
+ht-degree: 84%
 
 ---
 
@@ -16,7 +16,7 @@ Content Hub ist als Teil von Experience Manager Assets as a Cloud Service für d
 
 Die Assets, die in Experience Manager Assets as a Cloud Service als „Genehmigt“ markiert sind, sind in Content Hub für die Asset-Verteilung verfügbar.
 
-Dieser Artikel enthält einen durchgängigen Arbeitsablauf zur Bereitstellung von Content Hub-Assets für Benutzende, einschließlich der Berechtigungsvarianten basierend auf ihren Anforderungen.
+Dieser Artikel enthält einen durchgängigen Workflow zur Bereitstellung von Content Hub-Assets für Benutzende, einschließlich der Berechtigungsvarianten basierend auf ihren Anforderungen.
 
 In diesem Video erfahren Sie, wie Sie Content Hub für Experience Manager Assets aktivieren:
 
@@ -52,7 +52,7 @@ In der folgenden Tabelle sind die verfügbaren Content Hub-Benutzertypen, ihre B
 
 >[!NOTE]
 >
->[Experience Manager Assets-Benutzende](#experience-manager-assets-users) haben die Möglichkeit, Assets in einer Umgebung von Experience Manager Assets as a Cloud Service zu genehmigen, um diese Assets in Content Hub zur Verfügung zu stellen. Diese Benutzende müssen über die Admin Console unter AEM in der Produktions-Autoreninstanz als AEM-Benutzerprofil hinzugefügt werden.
+>[Experience Manager Assets-Benutzende](#experience-manager-assets-users) haben die Möglichkeit, Assets in einer Experience Manager Assets as a Cloud Service-Umgebung zu genehmigen, um diese Assets in Content Hub zur Verfügung zu stellen. Diese Benutzende müssen über die Admin Console unter AEM in der Produktions-Autoreninstanz als AEM-Benutzerprofil hinzugefügt werden.
 
 ## Schritt 1: Aktivieren von Content Hub für Experience Manager Assets mithilfe von Cloud Manager {#enable-content-hub}
 
@@ -86,10 +86,38 @@ Content Hub ist nun für Experience Manager Assets as a Cloud Service aktiviert.
 
 >[!NOTE]
 >
->Bis zu 250 Content Hub-Benutzende können auf Content Hub zugreifen und dieses Produkt verwenden. Wenden Sie sich bei weiteren Fragen an den Adobe-Support.
+>Sie können Content Hub mit bis zu 250 eingeschränkten Content Hub-Benutzenden für Assets Ultimate und 50 Content Hub-Benutzenden für Assets Prime aufrufen und verwenden. Wenden Sie sich an den Adobe-Support, wenn Sie weitere Fragen haben.
 
 
 Wenn Sie neu bei Experience Manager Assets sind, klicken Sie auf **[!UICONTROL Programm hinzufügen]**, geben Sie dann Programmdetails an (Programmname, für die Produktion eingerichtet) und klicken Sie auf **[!UICONTROL Weiter]**. Anschließend können Sie auf der Registerkarte **[!UICONTROL Lösungen und Add-ons]** die Optionen **[!UICONTROL Assets]** und **[!UICONTROL Content Hub]** auswählen.
+
+### Aktivieren von Content Hub für Umgebungen mit niedrigerem Status {#enable-content-hub-lower-environments}
+
+Die folgenden Content Hub-Credits stehen Ihnen basierend auf der AEM Assets-Lizenz zur Verfügung:
+
+* Assets Ultimate: 3 Content Hub-Credits
+
+* Assets Prime: 1 Content Hub-Guthaben
+
+* Bestehende Kunden von Assets as a Cloud Service: 1 Content Hub-Guthaben
+
+Sie verwenden ein Guthaben, um Content Hub für jede Umgebung zu aktivieren (z. B. Produktion, Entwicklung oder Staging).
+
+So aktivieren Sie Content Hub für niedrigere Umgebungen:
+
+1. [Aktivieren Sie Content Hub für Experience Manager Assets mithilfe von Cloud Manager](#enable-content-hub).
+
+1. Klicken Sie auf die Programmkarte, um die Liste der verfügbaren Umgebungen (Produktion, Entwicklung oder Staging) anzuzeigen.
+
+1. Klicken Sie auf die Umgebung, die Sie aktivieren müssen. Der Abschnitt **[!UICONTROL Content Hub]** wird `Content Hub is available for activation` angezeigt.
+
+   ![Aktivieren von Content Hub für Umgebungen mit niedrigerem Status](assets/enable-content-hub-lower-environments.png)
+
+1. Klicken Sie **[!UICONTROL Zum Aktivieren klicken]**. Klicken Sie **[!UICONTROL zur Bestätigung erneut]** Aktivieren“.
+
+   Content Hub ist für die ausgewählte Umgebung aktiviert.
+
+
 
 ### Content Hub-Instanz und -Produktprofil in der Admin Console{#content-hub-instance-product-profile}
 
@@ -229,3 +257,17 @@ So konfigurieren Sie Experience Manager Assets-Benutzende:
    >[!NOTE]
    >
    > Sie müssen nicht zum [Content Hub-Produktprofil](#onboard-content-hub-users) für Experience Manager Assets-Benutzende hinzugefügt werden.
+
+## Aktivieren von Content Hub für Bestandskunden von Assets as a Cloud Service {#enable-content-hub-exisitng-cs-customers}
+
+Bestehende Assets as a Cloud Service-Kunden verfügen über 250 Content Hub Limited-Benutzer, die in der -Lizenz enthalten sind. Führen Sie die folgenden Schritte aus, um Content Hub zu aktivieren:
+
+1. [Aktivieren Sie Content Hub für Experience Manager Assets mithilfe von Cloud Manager](#enable-content-hub).
+
+1. [Onboarden von Content Hub Limited-](#onboard-content-hub-users). Diese Benutzer können auf im Portal verfügbare Assets zugreifen, jedoch keine neuen Assets hinzufügen oder vorhandene Assets ändern.
+
+1. Wenn die Benutzer Assets zum Content Hub-Portal hinzufügen müssen, fügen Sie sie zum `AEM Users` Produktprofil hinzu. Weitere Informationen finden Sie unter [Integrieren von Content Hub-Benutzern mit Berechtigungen zum Hinzufügen von Assets](#onboard-content-hub-users-add-assets).
+
+1. Wenn die Benutzerinnen und Benutzer auf die Benutzeroberfläche für die Content Hub-Konfiguration zugreifen müssen, fügen Sie sie zum `AEM Administrators` Produktprofil hinzu. Weitere Informationen finden Sie unter [Onboarding Content Hub Administrator](#onboard-content-hub-administrator).
+
+Wenn die Benutzerinnen und Benutzer selbst nach dem Hinzufügen zu den entsprechenden Produktprofilen keine entsprechenden Berechtigungen erhalten, wenden Sie sich an die Adobe-Kontaktperson.
