@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
+source-git-commit: 20bb86d83a1afeda760e7c8d88e4257b8cb65860
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 94%
+source-wordcount: '1918'
+ht-degree: 80%
 
 ---
 
@@ -65,7 +65,7 @@ Informationen zum Anzeigen und Nachverfolgen der Nutzung von Inhaltsanfragen anh
 
 ## Regeln für die Server-seitige Sammlung {#serverside-collection}
 
-AEM as a Cloud Service wendet Server-seitige Regeln an, um Inhaltsanfragen zu zählen. Zu diesen Regeln gehört die Logik, um bekannte Bots (wie Suchmaschinen-Crawler) und Nicht-Benutzer-Traffic wie Überwachungsdienste, die die Site regelmäßig anpingen, auszuschließen.
+AEM as a Cloud Service wendet Server-seitige Sammlungsregeln an, um Inhaltsanfragen zu zählen. Diese Regeln schließen bekannte Bots (wie Suchmaschinen-Crawler) und eine Reihe von Überwachungs-Services aus, die die Website regelmäßig pingen. Anderer synthetischer oder Monitoring-artiger Traffic, der nicht auf dieser Ausschlussliste steht, wird als abrechnungsfähige Inhaltsanfrage gezählt.
 
 In der folgenden Tabelle sind die Typen der eingeschlossenen und ausgeschlossenen Inhaltsanfragen mit jeweils kurzen Beschreibungen aufgeführt.
 
@@ -101,4 +101,33 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | Commerce Integration Framework-Aufrufe | Ausgeschlossen | Anfragen an AEM, die an das Commerce Integration Framework weitergeleitet werden. Die URL beginnt mit `/api/graphql`. Um eine doppelte Zählung zu vermeiden, sind sie für den Cloud-Service nicht abrechenbar. |
 | Ausschließen von `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf. Es bietet Informationen zur Installation von Websites auf Desktops oder Mobiltelefonen. Adobe sollte eine JSON-Anfrage an `/etc.clientlibs/*/manifest.json` nicht zählen |
 | Ausschließen von `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, wurde festgestellt, dass in einigen Szenarien wie bei SAML-Authentifizierungsabläufen Favicons als HTML zurückgegeben wurden. Daher werden Favicons explizit aus der Zählung ausgeschlossen. |
-| Experience Fragment (XF) – Wiederverwendung derselben Domain | Ausgeschlossen | Anfragen an XF-Pfade (z. B. `/content/experience-fragments/...`) von Seiten, die auf derselben Domain gehostet werden (wie durch die Referrer-Kopfzeile identifiziert, die mit dem Anfrage-Host übereinstimmt).<br><br> Beispiel: Eine Homepage auf `aem.customer.com`, die ein XF für ein Banner oder eine Karte aus derselben Domain abruft.<br><br>・ URL stimmt überein mit /content/experience-fragments/…<br>・ Referrer-Domain stimmt überein `request_x_forwarded_host`<br><br>**Hinweis:** Wenn der Experience Fragment-Pfad angepasst wird (z. B. mithilfe von `/XFrags/...` oder einem Pfad außerhalb von `/content/experience-fragments/`), wird die Anfrage nicht ausgeschlossen und kann gezählt werden. Dieses Ergebnis ist auch dann richtig, wenn es sich um dieselbe Domain handelt. Adobe empfiehlt die Verwendung der standardmäßigen XF-Pfadstruktur von Adobe, um sicherzustellen, dass die Ausschlusslogik korrekt angewendet wird. |
+| Experience Fragment (XF) – Wiederverwendung derselben Domain | Ausgeschlossen | Anfragen an XF-Pfade (z. B. `/content/experience-fragments/...`) von Seiten, die auf derselben Domain gehostet werden (wie durch den Referrer-Header identifiziert, der mit dem Anfrage-Host übereinstimmt).<br><br> Beispiel: Eine Homepage auf `aem.customer.com`, die ein XF für ein Banner oder eine Karte aus derselben Domain abruft.<br><br>・ URL stimmt überein mit /content/experience-fragments/…<br>・ Referrer-Domain stimmt überein mit `request_x_forwarded_host`<br><br>**Hinweis:** Wenn der Experience Fragment-Pfad angepasst wird (z. B. mithilfe von `/XFrags/...` oder einem Pfad außerhalb von `/content/experience-fragments/`), wird die Anfrage nicht ausgeschlossen und kann gezählt werden, selbst wenn es sich um dieselbe Domain handelt. Es wird empfohlen, die standardmäßige XF-Pfadstruktur von Adobe zu verwenden, um sicherzustellen, dass die Ausschlusslogik korrekt angewendet wird. |
+
+## Verwalten von Inhaltsanfragen {#managing-content-requests}
+
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+
+### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
+
+* Stellen Sie sicher, dass alle Antworten vom Typ „Seite nicht gefunden“ mit dem HTTP-Status 404 zugestellt werden.  Wenn sie mit dem Status 200 zurückgegeben werden, werden sie für Inhaltsanfragen gezählt.
+* Leiten Sie Konsistenzprüfungs- oder Überwachungs-Tools an die URL /systems/probes/health oder verwenden Sie die HEAD-Methode anstelle von GET, um aufkommende Inhaltsanfragen zu vermeiden.
+* Schaffen Sie ein ausgewogenes Verhältnis zwischen Ihren Anforderungen an die Aktualität von Inhalten und den AEM-Lizenzkosten für jeden benutzerdefinierten Such-Crawler, den Sie in Ihre Site integriert haben.  Ein übermäßig aggressiver Crawler kann viele Inhaltsanfragen verarbeiten.
+* Behandeln Sie alle Weiterleitungen als Server-seitig (Status 301 oder 302) und nicht Client-seitig (Status 200 mit JavaScript-Weiterleitung), um zwei separate Inhaltsanfragen zu vermeiden.
+* Kombinieren oder reduzieren Sie API-Aufrufe, bei denen es sich um JSON-Antworten von AEM handelt, die geladen werden können, um die Seite zu rendern.
+
+### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
+
+* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Sie müssen Ihre Implementierung und Traffic-Muster überprüfen, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [ (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
+
+```
+trafficFilters:
+  rules:
+    - name: block-missing-user-agent
+      when:
+        anyOf:
+          - { reqHeader: user-agent, exists: false }
+          - { reqHeader: user-agent, equals: '' }
+      action: block
+```
+
+* Einige Bots haben eine Seite sehr schwer an einem Tag und verschwinden am nächsten Tag.  Dies kann jeden Versuch vereiteln, eine bestimmte IP-Adresse oder einen Benutzeragenten zu blockieren.  Ein generischer Ansatz besteht in der Einführung einer [Regel für Limits](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Sehen Sie sich die [Beispiele](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) an und erstellen Sie eine Regel, die Ihrer Toleranz für eine schnelle Anfragerate entspricht.  Überprüfen Sie die [Bedingungsstruktur](/help/security/traffic-filter-rules-including-waf.md#condition-structure)-Syntax für alle Ausnahmen, die Sie möglicherweise zulassen möchten, um eine allgemeine Ratenbeschränkung zuzulassen.
