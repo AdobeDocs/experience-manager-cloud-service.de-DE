@@ -67,7 +67,7 @@ Die erste ist die obere Navigationsleiste von Experience Platform, die beim Navi
 * Über ![&#x200B; Symbol „Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden) können Sie auf verschiedene Registerkarten zugreifen, mit denen Sie zu bestimmten Teilen eines einzelnen Programms gelangen. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
 * Das ![Glockensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)) bietet Ihnen unter anderem Zugriff auf Benachrichtigungen und Ankündigungen.
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Programmsymbolleiste {#program-toolbar}
 

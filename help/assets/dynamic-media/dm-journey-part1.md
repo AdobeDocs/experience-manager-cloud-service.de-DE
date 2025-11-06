@@ -285,7 +285,7 @@ _Dynamic Media Help topics_
 _Dynamic Media-Tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=de)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 

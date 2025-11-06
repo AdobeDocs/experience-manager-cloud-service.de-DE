@@ -101,5 +101,5 @@ Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in 
 
 Weitere Informationen zu Protokolldateien in AEM as a Cloud Service finden Sie in den folgenden zusätzlichen Ressourcen:
 
-* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
