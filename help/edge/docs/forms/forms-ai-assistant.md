@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -170,9 +170,11 @@ Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlic
 "Update the layout to match the attached wireframe"
 ```
 
-### Übermittlung und Integration
+<!-- 
 
-**Einfache Übermittlung:**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -180,13 +182,15 @@ Im Folgenden finden Sie echte Beispiele dafür, was Sie mit einfacher, natürlic
 "Redirect to a thank you page"
 ```
 
-**Erweiterte Integration:**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## Arbeiten mit Anlagen
 
@@ -281,8 +285,11 @@ Geben Sie `/` ein, um die verfügbaren Tastaturbefehle anzuzeigen:
 | `/update-field` | Feldeigenschaften ändern | `/update-field @email to be required` |
 | `/create-rule` | Dynamisches Verhalten hinzufügen | `/create-rule show @spouse if married` |
 | `/create-panel` | Feld-Container hinzufügen | `/create-panel Personal Information` |
-| `/configure-submit` | Die Formularübermittlung einrichten | `/configure-submit to email support` |
 | `/help` | Hilfe erhalten | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### Feldverweissyntax
 

@@ -6,10 +6,10 @@ index: false
 hidefromtoc: true
 role: Admin, Developer
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 8%
+source-wordcount: '1048'
+ht-degree: 3%
 
 ---
 
@@ -61,11 +61,10 @@ Erstellen Sie Formulare mit Beschreibungen Ihrer Anforderungen in natürlicher S
 
 **Beispiel:**
 
-    Erstelle ein Formular für Kunden-Feedback mit:
-    – Produktbewertung (1–5 Sterne)
-    – Kommentarfeld für detailliertes Feedback
-    – Kunden-E-Mail (optional)
-    – An E-Mail-Benachrichtigung übermitteln
+    Erstellen Sie ein Formular für Kunden-Feedback mit:
+    - Produktbewertung (1-5 Sterne)
+    - Feld „Kommentar“ für detailliertes Feedback
+    - Kunden-E-Mail (optional)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +74,7 @@ Erstellen Sie Formulare mit Beschreibungen Ihrer Anforderungen in natürlicher S
 
 Umwandeln vorhandener Dokumente in interaktive digitale Formulare.
 
-Laden Sie vor Verwendung dieser Option Ihre PDF-Datei oder ein Bild des Formulars hoch. Die PDF kann entweder ein AcroForm- oder ein XFA-basiertes PDF-Formular sein. Bei [anderen Typen von PDF forms](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) verwenden Sie die Option [Formular vorbereiten](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat, um sie in ein AcroForm zu konvertieren
+Laden Sie vor Verwendung dieser Option Ihre PDF-Datei oder ein Bild des Formulars hoch. Die PDF kann entweder ein AcroForm- oder ein XFA-basiertes PDF-Formular sein. Bei [anderen Typen von PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) verwenden Sie die Option [Formular vorbereiten](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat, um sie in ein AcroForm zu konvertieren
 
 **Verwendung:**
 
@@ -167,10 +166,9 @@ Verwenden Sie `@fieldName`, um auf bestimmte Felder zu verweisen:
 
 Beschreiben Sie, was Sie möchten, in einfachem Englisch:
 
-    &#x200B;- Abschnitt für Firmeninformationen hinzufügen
-    &#x200B;- Dropdown zur Abteilungsauswahl erstellen
-    &#x200B;- Datei-Upload für Wiederaufnahme einschließen
-    &#x200B;- E-Mail-Benachrichtigungen einrichten, wenn das Formular gesendet wird
+    - Abschnitt für Firmeninformationen hinzufügen
+    - Dropdown zur Abteilungsauswahl erstellen
+    - Datei-Upload zur Wiederaufnahme einschließen
 
 ### Inkrementelles Erstellen {#build-incrementally}
 
@@ -190,55 +188,53 @@ Einfach anfangen und schrittweise Komplexität hinzufügen:
 **Basiskontaktformular:**
 
     Erstellen eines Kontaktformulars mit:
-    &#x200B;- Name (erforderlich)
-    &#x200B;- E-Mail (erforderlich, validiert)
-    &#x200B;- Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
-    &#x200B;- Nachricht (erforderlich, mehrzeilig)
-    &#x200B;- Schaltfläche „Senden“
+    - Name (erforderlich)
+    - E-Mail (erforderlich, validiert)
+    - Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
+    - Nachricht (erforderlich, mehrzeilig)
 
 **Formular für Kunden-Feedback:**
 
-    Erstelle ein Formular für Kunden-Feedback mit:
-    – Produktbewertung (1–5 Sterne)
-    – Kommentarfeld für detailliertes Feedback
-    – Kunden-E-Mail (optional)
-    – An E-Mail-Benachrichtigung übermitteln
+    Erstellen Sie ein Formular für Kunden-Feedback mit:
+    - Produktbewertung (1-5 Sterne)
+    - Feld „Kommentar“ für detailliertes Feedback
+    - Kunden-E-Mail (optional)
 
 ### Anmeldeformulare und Onboarding {#registration-onboarding-forms}
 
 **Benutzerregistrierung:**
 
     Erstellen Sie ein Benutzerregistrierungsformular mit:
-    &#x200B;- Persönliche Informationen (Name, E-Mail, Telefon)
-    &#x200B;- Kontovoreinstellungen (Newsletter, Benachrichtigungen)
-    &#x200B;- Annahme der Geschäftsbedingungen
-    &#x200B;- Kennworterstellung mit Stärkenvalidierung
+    - Persönliche Informationen (Name, E-Mail, Telefon)
+    - Kontovoreinstellungen (Newsletter, Benachrichtigungen)
+    - Annahme der Geschäftsbedingungen
+    - Kennworterstellung mit Stärkenvalidierung
 
 **Mitarbeiter-Onboarding:**
 
     Erstellen eines Onboarding-Formulars für Mitarbeiter mit:
-    &#x200B;- Persönliche Daten und Kontaktinformationen
-    &#x200B;- Informationen zur Beschäftigung und zum Startdatum
-    &#x200B;- Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
-    &#x200B;- Auswahl und Voreinstellungen für Vorteile
+    - Persönliche Daten und Kontaktinformationen
+    - Informationen zur Beschäftigung und zum Startdatum
+    - Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
+    - Auswahl und Voreinstellungen für Vorteile
 
 ### Erhebungs- und Bewertungsformulare {#survey-assessment-forms}
 
 **Umfrage zur Kundenzufriedenheit:**
 
     Erstellen Sie eine Umfrage zur Kundenzufriedenheit mit:
-    &#x200B;- Gesamtbewertung (Skala 1-10)
-    &#x200B;- Kategoriebewertungen (Produkt, Service, Support)
-    &#x200B;- Abschnitte mit offenem Feedback
-    &#x200B;- Demografische Informationen (optional)
+    - Gesamtbewertung (Skala 1-10)
+    - Kategoriebewertungen (Produkt, Service, Support)
+    - Abschnitte mit offenem Feedback
+    - Demografische Informationen (optional)
 
 **Kompetenzbewertung:**
 
     Erstellen Sie ein Formular zur Kompetenzbewertung mit:
-    &#x200B;- Kompetenzkategorien mit 
-    &#x200B;- Erlebnisdauer für jede 
-    &#x200B;- Zertifizierungs- und Schulungsinformationen
-    &#x200B;- Selbstbewertung und Ziele
+    - Kompetenzkategorien mit 
+    - Erlebnisdauer für jede 
+    - Zertifizierungs- und Schulungsinformationen
+    - Selbstbewertung und Ziele
 
 ## Tests und Validierung {#testing-validation}
 
@@ -275,21 +271,29 @@ Vor der Bereitstellung eines Formulars:
     Validierung des Dateityps hinzufügen: nur PDF, DOC, DOCX erlaubt für @resume
     Dateigrößenbeschränkung hinzufügen: maximal 5 MB für @resume
 
-## Nächste Schritte {#next-steps}
+<!-- 
 
-Nachdem Sie nun die Grundlagen verstanden haben, sollten Sie sich mit diesen fortgeschrittenen Themen beschäftigen:
+## Next steps {#next-steps}
 
-* **[LLM-optimierte Smart Fields](forms-experience-builder-llm-smart-fields.md)** - Erstellen von Feldern mit vorausgefüllten Optionen mithilfe von KI-Wissen
-* **[KI-gestützte Formularerstellung](forms-experience-builder-prompt-examples-library.md)** - Erweiterte Eingabeaufforderungsmuster und Beispiele
-* **[Intelligenter Import und Konvertierung](intelligent-import-conversion.md)** - Umwandeln vorhandener Dokumente in Formulare
-* **[Formularübermittlung und -integration](form-submission-integration.md)** - Verbinden von Formularen mit Ihren Geschäftssystemen
+Now that you understand the basics, explore these advanced topics:
+
+* **[LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)** - Create fields with pre-populated options using AI knowledge
+* **[AI-powered form creation](forms-experience-builder-prompt-examples-library.md)** - Advanced prompt patterns and examples
+* **[Intelligent import and conversion](intelligent-import-conversion.md)** - Transform existing documents into forms
+* **[Form submission and integration](form-submission-integration.md)** - Connect forms to your business systems
+
+-->
 
 
 ## Verwandte Artikel
 
 * [Übersicht über Forms Experience Builder](product-overview.md)
-* [LLM-optimierte Smart Fields](forms-experience-builder-llm-smart-fields.md)
-* [KI-gestützte Formularerstellung](forms-experience-builder-prompt-examples-library.md)
-* [Intelligente Import- und Konvertierungsfunktionen](intelligent-import-conversion.md)
-* [Formularübermittlung und -integration](form-submission-integration.md)
-* [Häufig gestellte Fragen](forms-experience-builder-frequently-asked-questions.md)
+
+<!-- 
+* [LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)
+* [AI-powered form creation](forms-experience-builder-prompt-examples-library.md)
+* [Intelligent import and conversion](intelligent-import-conversion.md)
+* [Form submission and integration](form-submission-integration.md)
+* [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+-->
