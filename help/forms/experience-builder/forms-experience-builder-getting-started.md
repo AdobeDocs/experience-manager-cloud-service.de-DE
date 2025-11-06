@@ -62,9 +62,9 @@ Erstellen Sie Formulare mit Beschreibungen Ihrer Anforderungen in natürlicher S
 **Beispiel:**
 
     Erstellen Sie ein Formular für Kunden-Feedback mit:
-    - Produktbewertung (1-5 Sterne)
-    - Feld „Kommentar“ für detailliertes Feedback
-    - Kunden-E-Mail (optional)
+    &#x200B;- Produktbewertung (1-5 Sterne)
+    &#x200B;- Feld „Kommentar“ für detailliertes Feedback
+    &#x200B;- Kunden-E-Mail (optional)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -166,9 +166,9 @@ Verwenden Sie `@fieldName`, um auf bestimmte Felder zu verweisen:
 
 Beschreiben Sie, was Sie möchten, in einfachem Englisch:
 
-    - Abschnitt für Firmeninformationen hinzufügen
-    - Dropdown zur Abteilungsauswahl erstellen
-    - Datei-Upload zur Wiederaufnahme einschließen
+    &#x200B;- Abschnitt für Firmeninformationen hinzufügen
+    &#x200B;- Dropdown zur Abteilungsauswahl erstellen
+    &#x200B;- Datei-Upload zur Wiederaufnahme einschließen
 
 ### Inkrementelles Erstellen {#build-incrementally}
 
@@ -188,53 +188,53 @@ Einfach anfangen und schrittweise Komplexität hinzufügen:
 **Basiskontaktformular:**
 
     Erstellen eines Kontaktformulars mit:
-    - Name (erforderlich)
-    - E-Mail (erforderlich, validiert)
-    - Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
-    - Nachricht (erforderlich, mehrzeilig)
+    &#x200B;- Name (erforderlich)
+    &#x200B;- E-Mail (erforderlich, validiert)
+    &#x200B;- Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
+    &#x200B;- Nachricht (erforderlich, mehrzeilig)
 
 **Formular für Kunden-Feedback:**
 
     Erstellen Sie ein Formular für Kunden-Feedback mit:
-    - Produktbewertung (1-5 Sterne)
-    - Feld „Kommentar“ für detailliertes Feedback
-    - Kunden-E-Mail (optional)
+    &#x200B;- Produktbewertung (1-5 Sterne)
+    &#x200B;- Feld „Kommentar“ für detailliertes Feedback
+    &#x200B;- Kunden-E-Mail (optional)
 
 ### Anmeldeformulare und Onboarding {#registration-onboarding-forms}
 
 **Benutzerregistrierung:**
 
     Erstellen Sie ein Benutzerregistrierungsformular mit:
-    - Persönliche Informationen (Name, E-Mail, Telefon)
-    - Kontovoreinstellungen (Newsletter, Benachrichtigungen)
-    - Annahme der Geschäftsbedingungen
-    - Kennworterstellung mit Stärkenvalidierung
+    &#x200B;- Persönliche Informationen (Name, E-Mail, Telefon)
+    &#x200B;- Kontovoreinstellungen (Newsletter, Benachrichtigungen)
+    &#x200B;- Annahme der Geschäftsbedingungen
+    &#x200B;- Kennworterstellung mit Stärkenvalidierung
 
 **Mitarbeiter-Onboarding:**
 
     Erstellen eines Onboarding-Formulars für Mitarbeiter mit:
-    - Persönliche Daten und Kontaktinformationen
-    - Informationen zur Beschäftigung und zum Startdatum
-    - Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
-    - Auswahl und Voreinstellungen für Vorteile
+    &#x200B;- Persönliche Daten und Kontaktinformationen
+    &#x200B;- Informationen zur Beschäftigung und zum Startdatum
+    &#x200B;- Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
+    &#x200B;- Auswahl und Voreinstellungen für Vorteile
 
 ### Erhebungs- und Bewertungsformulare {#survey-assessment-forms}
 
 **Umfrage zur Kundenzufriedenheit:**
 
     Erstellen Sie eine Umfrage zur Kundenzufriedenheit mit:
-    - Gesamtbewertung (Skala 1-10)
-    - Kategoriebewertungen (Produkt, Service, Support)
-    - Abschnitte mit offenem Feedback
-    - Demografische Informationen (optional)
+    &#x200B;- Gesamtbewertung (Skala 1-10)
+    &#x200B;- Kategoriebewertungen (Produkt, Service, Support)
+    &#x200B;- Abschnitte mit offenem Feedback
+    &#x200B;- Demografische Informationen (optional)
 
 **Kompetenzbewertung:**
 
     Erstellen Sie ein Formular zur Kompetenzbewertung mit:
-    - Kompetenzkategorien mit 
-    - Erlebnisdauer für jede 
-    - Zertifizierungs- und Schulungsinformationen
-    - Selbstbewertung und Ziele
+    &#x200B;- Kompetenzkategorien mit 
+    &#x200B;- Erlebnisdauer für jede 
+    &#x200B;- Zertifizierungs- und Schulungsinformationen
+    &#x200B;- Selbstbewertung und Ziele
 
 ## Tests und Validierung {#testing-validation}
 
