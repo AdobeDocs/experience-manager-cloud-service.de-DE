@@ -22,10 +22,10 @@ ht-degree: 100%
 
 Erfahren Sie mehr über ereignisgesteuerte Architektur, Adobe I/O-Ereignisse und benutzerspezifische Ereignisse.
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345711/?captions=ger&quality=12&learn=on)
 
 ## Erstellen ereignisgesteuerter App Builder-Programme
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345712/?captions=ger&quality=12&learn=on)
 
 Erfahren Sie, wie Sie Veröffentlichungen erstellen können, um Ereignisse in einem App Builder-Programm zu nutzen.

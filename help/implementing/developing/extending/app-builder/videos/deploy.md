@@ -20,4 +20,4 @@ ht-degree: 100%
 
 Erfahren Sie, was die Bereitstellung für App Builder bedeutet und wie Sie Ihr App Builder-Programm über die CLI von Adobe I/O bereitstellen.
 
->[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343374/?captions=ger&quality=12&learn=on)

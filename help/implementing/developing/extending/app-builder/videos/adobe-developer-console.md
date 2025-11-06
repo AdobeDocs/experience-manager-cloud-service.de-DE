@@ -20,22 +20,22 @@ ht-degree: 100%
 
 Erfahren Sie, was die Adobe-Entwicklerkonsole ist und wie Sie darauf zugreifen und darin navigieren können.
 
->[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412606/?captions=ger&quality=12&learn=on)
 
 ## Arbeiten mit Projekten und Vorlagen
 
 Erfahren Sie, wie Sie ein App Builder-Projekt mithilfe der App Builder-Vorlage der Adobe-Entwicklerkonsole erstellen.
 
->[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412609/?captions=ger&quality=12&learn=on)
 
 ## Projektanmeldeinformationen
 
 Erfahren Sie, wie Sie die Optionen im Anmeldemenü der Adobe-Entwicklerkonsole und im Genehmigungsprozess verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412608/?captions=ger&quality=12&learn=on)
 
 ## Nutzung von Insights und Kontingenten
 
 Erfahren Sie mehr über Programm-Erkenntnisse und die Verwendung von Kontingenten in App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412605/?captions=ger&quality=12&learn=on)

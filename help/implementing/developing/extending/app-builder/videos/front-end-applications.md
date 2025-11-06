@@ -22,10 +22,10 @@ ht-degree: 100%
 
 Erfahren Sie mehr über App Builder-Frontend-Programme, einschließlich Projektinitialisierungsoptionen und Adobe Spectrum.
 
->[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412081/?captions=ger&quality=12&learn=on)
 
 ## Erstellen von App Builder-Frontend-Programmen
 
 Erfahren Sie, wie Sie mit React ein App Builder-Frontend-Programm erstellen und Adobe Runtime-Aktionen über das Programm verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415762/?captions=ger&quality=12&learn=on)
