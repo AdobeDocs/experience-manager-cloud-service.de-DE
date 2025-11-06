@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 13219970f8621b04230fc371c996da4c56422a70
+source-git-commit: 0b330db401072c19aa3f8e65ffd6fc4a3e6a3d4b
 workflow-type: tm+mt
-source-wordcount: '6899'
+source-wordcount: '6903'
 ht-degree: 95%
 
 ---
@@ -241,6 +241,7 @@ ht-degree: 95%
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + [Vorschau von Versionshinweisen für den universellen Editor](/help/release-notes/universal-editor/preview.md)
       + 2025 {#2025}
+         + [Versionshinweise für 2025.10.30](/help/release-notes/universal-editor/2025/2025-10-30.md)
          + [Versionshinweise für 2025.10.24](/help/release-notes/universal-editor/2025/2025-10-24.md)
          + [Versionshinweise für 2025.10.16](/help/release-notes/universal-editor/2025/2025-10-16.md)
          + [Versionshinweise für 2025.10.09](/help/release-notes/universal-editor/2025/2025-10-09.md)
@@ -1154,11 +1155,9 @@ ht-degree: 95%
       + [Migration](/help/commerce-cloud/cif-storefront/migration.md)
       + [Häufig gestellte Fragen](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery Services – Überblick](/help/edge/overview.md)
-{#wysiwyg-authoring}
+   + [Überblick über Edge Delivery Services](/help/edge/overview.md)
    + Erstellen von Formularen {#build-forms}
       + [Überblick](/help/edge/docs/forms/overview.md)
-
       + WYSIWYG-Authoring {#universal-editor}
          + [Universeller Editor für Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Navigieren in der Benutzeroberfläche des universellen Editors für AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
@@ -1223,7 +1222,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
+source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1820'
 ht-degree: 95%
 
 ---
@@ -61,7 +61,7 @@ Sobald die App für die Verwendung mit dem universellen Editor instrumentiert wu
 
 Die Benutzeroberfläche ist in diese Hauptbereiche unterteilt.
 
-* [Die Kopfzeile von Experience Cloud](#experience-cloud-header)
+* [Die obere Navigationsleiste von Experience Platform](#experience-cloud-header)
 * [Die Symbolleiste des universellen Editors](#universal-editor-toolbar)
 * [Der Editor](#editor)
 * [Das Bedienfeld „Eigenschaften“](#properties-rail)
@@ -78,7 +78,7 @@ Die obere Navigationsleiste von Experience Platform befindet sich immer oben im 
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 

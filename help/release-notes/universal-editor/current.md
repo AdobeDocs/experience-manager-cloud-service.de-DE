@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.10.30
-description: Dies sind die Versionshinweise für die Version 2025.10.30 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.11.06
+description: Dies sind die Versionshinweise für die Version 2025.11.06 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
+source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 58%
+source-wordcount: '256'
+ht-degree: 50%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.10.30 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.11.06 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 30. Oktober 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 6. November 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -23,11 +23,6 @@ Dies sind die Versionshinweise für die Version vom 30. Oktober 2025 des univers
 >[!TIP]
 >
 >Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
-
-## Neue Funktionen {#what-is-new}
-
-* [Der neue RTE](#new-rte) kann jetzt Bilder einfügen.
-   * Diese Funktion ist OTb deaktiviert und muss explizit über eine [Filterdefinition aktiviert werden](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -39,10 +34,12 @@ Der neue ProseMirror-RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten P
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Das Aktualisierungsereignis wird jetzt darüber informiert, ob die Aktion rückgängig gemacht wurde.
-* `No results` Zeichenfolge hängt jetzt vom Browsergebietsschema in universellen Editor-Tags ab.
-* Ein zusätzlicher Zeilenumbruch in der Veröffentlichungsschaltfläche des universellen Editors wurde korrigiert.
-* Die Bereinigung wurde für die Patch-API durchgeführt.
-* Die Schaltfläche „Inhalt auswählen“ ist jetzt in Safari sichtbar.
-* RPM-Build wurde korrigiert.
-* CORS-Aktualisierung, um zu vermeiden, dass bearbeiteter Text nach dem Speichern erneut aktualisiert wird.
+* `og:title` Metadatenfelder können jetzt ordnungsgemäß gelöscht werden.
+* Ein Navigationsproblem wurde behoben, wenn ein Benutzer die Speicherortleiste im Editor oder Browser so bearbeitet, dass diese Änderungen korrekt widergespiegelt werden und der Editor und/oder die App jetzt zur angeforderten URL navigiert.
+* Die Auflösung des Feldmodells wurde korrigiert, und der Editor verwendet ggf. ein Modell aus der Komponente .
+* Die componentId ist jetzt in der Aktion &quot;/add“ enthalten.
+* Die Möglichkeit, einige Metadateneigenschaften zu löschen, die zuvor nicht entfernt werden konnten, wurde behoben.
+* Der Rohabruf wird jetzt bedingt für xwalk durchgeführt, wenn er nicht durch das AEM-Plug-in festgelegt wird.
+* Die Handhabung von Inhaltsfragment-MSM mit RTE wurde korrigiert.
+* Die Bildhervorhebung in einem Bild wird jetzt unterstützt.
+
