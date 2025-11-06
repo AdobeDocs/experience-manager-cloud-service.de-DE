@@ -3,10 +3,10 @@ title: Veröffentlichung verwalten
 description: Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets in Experience Manager Assets, Dynamic Media und Brand Portal
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 100%
 

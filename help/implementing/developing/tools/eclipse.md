@@ -3,8 +3,8 @@ title: AEM Developer Tools for Eclipse
 description: Erfahren Sie, wie Sie die AEM Developer Tools für Eclipse verwenden. Hierbei handelt es sich um ein Eclipse-Plug-in, das auf dem Eclipse-Plug-in für Apache Sling basiert.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 47%
@@ -34,7 +34,7 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
 * Herunterladen und Installieren von [Eclipse IDE for Enterprise Java and Web Developers.](https://www.eclipse.org/downloads/packages/)
    * Die Version 1.4.0 von AEM Developer Tools for Eclipse ist mit Eclipse 2022-12 (4.26) oder höher kompatibel und erfordert die Ausführung von Java 17 oder höher.
-* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei bearbeiten, wie in den häufig gestellten Fragen zu [&#x200B; beschrieben](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
+* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei bearbeiten, wie in den häufig gestellten Fragen zu [ beschrieben](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
 1. `com.adobe.aem : aem-project-archetype : <highest-number>` sollte automatisch in der Dropdown-Liste **Archetyp** ausgewählt werden. Wählen Sie bei Bedarf eine frühere Version aus. Klicken Sie auf **Weiter**.
 
-   ![Auswählen der Archetypversion &#x200B;](assets/select-archetype.png)
+   ![Auswählen der Archetypversion ](assets/select-archetype.png)
 
 1. Geben Sie in die folgenden Felder Daten für das Beispielprojekt ein:
 
@@ -121,7 +121,7 @@ Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
    >[!TIP]
    >
-   >Weitere Informationen zum Debugging Ihres auf einer lokalen AEM-SDK ausgeführten Projekts finden Sie im Dokument [Remote-Debugging der AEM-SDK.](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Weitere Informationen zum Debugging Ihres auf einer lokalen AEM-SDK ausgeführten Projekts finden Sie im Dokument [Remote-Debugging der AEM-SDK.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Klicken Sie auf **Beenden**.
 

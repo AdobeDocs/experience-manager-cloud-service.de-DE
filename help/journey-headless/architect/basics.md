@@ -4,11 +4,11 @@ description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalte
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 Am Anfang der [AEM Headless-Inhaltsarchitekten-Tour](overview.md) wurden in der [Einführung](introduction.md) die grundlegenden Konzepte und die Terminologie behandelt, die für die Modellierung von Inhalten für Headless relevant sind.
 
-Dieser Artikel baut auf diesen Prinzipien auf, damit Sie verstehen, wie Sie Ihre Inhalte für Ihr AEM Headless-Projekt modellieren können.
+Dieser Artikel baut auf diesen Grundlagen auf, damit Sie verstehen, wie Sie Ihre Inhalte für Ihr AEM Headless-Projekt modellieren können.
 
 ## Ziel {#objective}
 
@@ -83,7 +83,7 @@ AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellier
 * Einzeilentext
 * Mehrzeilentext
 * Zahl
-* Boolesch
+* Boolescher Wert
 * Datum und Uhrzeit
 * Aufzählung
 * Tags
@@ -103,11 +103,11 @@ AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellier
 Zwei Datentypen bieten Verweise auf Inhalte außerhalb eines bestimmten Fragments:
 
 * **Inhaltsreferenz**/**Inhaltsreferenz (UUID)**
-Dies bietet einen einfachen Verweis auf andere Inhalte beliebigen Typs.
+Diese bietet eine einfache Referenz zu anderen Inhalten beliebigen Typs.
 Sie können beispielsweise auf ein Bild an einer bestimmten Stelle verweisen.
 
 * **Fragmentreferenz**/**Fragmentreferenz (UUID)**
-Dies bietet Verweise auf andere Inhaltsfragmente.
+Diese bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
    * Direktes Bearbeiten des referenzierten Fragments
@@ -119,7 +119,7 @@ Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglich
 
 >[!NOTE]
 >
->Im Editor geben die UUID-Verweise den Pfad zur referenzierten Ressource an. Intern werden solche Verweise als Universally Unique IDs (UUID) gespeichert, die auf die Ressourcen verweisen.
+>Im Editor geben die UUID-Referenzen den Pfad zur referenzierten Ressource an. Intern wird eine solche Referenz als Universally Unique ID (UUID) gespeichert, die auf die Ressource verweist.
 
 ## Strukturebenen (verschachtelte Fragmente) {#levels-of-structure-nested-fragments}
 

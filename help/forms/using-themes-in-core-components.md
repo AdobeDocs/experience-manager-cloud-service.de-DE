@@ -5,7 +5,7 @@ keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 99%
@@ -207,7 +207,7 @@ Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer b
 
    ![Bearbeiten der CSS-Textbox](/help/forms/assets/edit_color_textbox.png)
 
-   >
+   >[!NOTE]
    >
    > Wenn ein Stil sowohl auf Design- als auch auf Komponentenebene definiert ist, hat der auf Komponentenebene definierte Stil Priorität.
 
@@ -261,7 +261,7 @@ Hierbei handelt es sich um ein „Hot Deployment“. Wann immer Sie also Änderu
 
 ![Proxy-Browser-Synchronisierung](/help/forms/assets/browser_sync.png)
 
-Entsprechend den Beispielen, die sowohl auf Design- als auch auf Komponentenebene für Design-Anpassungen bereitgestellt wurden, werden die Fehlermeldungen eines adaptiven Formulars in die Farbe `blue` geändert, während die Beschriftungsfarbe für die Schaltflächen-Komponente sich in `green` ändert, wenn Sie den Mauszeiger darüber bewegen.
+Entsprechend den Beispielen, die sowohl auf Design- als auch auf Kernkomponentenebene für Design-Anpassungen bereitgestellt wurden, werden die Fehlermeldungen eines adaptiven Formulars in die Farbe `blue` geändert, während die Beschriftungsfarbe für die Schaltflächen-Komponente sich in `green` ändert, wenn Sie den Mauszeiger darüber bewegen.
 
 **Vorschau des Stils auf Design-Ebene**
 
@@ -339,8 +339,8 @@ Sie benötigen ein Repository, um das Design bereitzustellen. Melden Sie sich be
 
    >[!NOTE]
    > 
-   > * Sie können ein einziges Repository für mehrere Designs verwenden.
-   > * Um verschiedene Designs bereitzustellen, müssen Sie separate Frontend-Pipelines erstellen.
+   >* Sie können ein einziges Repository für mehrere Designs verwenden.
+   >* Um verschiedene Designs bereitzustellen, müssen Sie separate Frontend-Pipelines erstellen.
    >* Sie können beispielsweise dasselbe Repository, z. B. `custom-canvas-theme-repo`, für das Canvas-Design, das WKND-Design und das EASEL-Design verwenden. Um die Designs bereitzustellen, müssen Sie jedoch separate Frontend-Pipelines erstellen. Zukünftige Anpassungen für ein bestimmtes Design werden mithilfe der entsprechenden Frontend-Pipeline bereitgestellt.
 
 ##### 5.2. Übertragen von Änderungen in das Repository {#committing-the-changes}
@@ -377,7 +377,7 @@ Das Design wird mithilfe der [Frontend-Pipeline](https://experienceleague.adobe.
 
 1. Melden Sie sich bei Ihrem AEM Cloud Manager-Repository an.
 1. Klicken Sie im Abschnitt **[!UICONTROL Pipelines]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
-1. Wählen Sie je nach Cloud-Service-Umgebung **[!UICONTROL Produktionsfremde Pipeline hinzufügen]** oder **[!UICONTROL Produktions-Pipeline hinzufügen]** aus. Hier ist beispielsweise **[!UICONTROL Produktions-Pipeline hinzufügen]** ausgewählt.
+1. Wählen Sie je nach Cloud Service-Umgebung **[!UICONTROL Produktionsfremde Pipeline hinzufügen]** oder **[!UICONTROL Produktions-Pipeline hinzufügen]** aus. Hier ist beispielsweise **[!UICONTROL Produktions-Pipeline hinzufügen]** ausgewählt.
 1. Geben Sie im Dialogfeld **[!UICONTROL Produktions-Pipeline hinzufügen]** als Teil der **[!UICONTROL Konfigurationsschritte]** den Namen für Ihre Pipeline an. Beispielsweise lautet der Name der Pipeline `customcanvastheme`.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Wählen Sie die Optionen **[!UICONTROL Zielgerichtete Bereitstellung]** > **[!UICONTROL Frontend-Code]** in den Schritten 
@@ -441,7 +441,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 

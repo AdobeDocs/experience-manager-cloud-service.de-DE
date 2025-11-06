@@ -3,9 +3,9 @@ title: Einführung in den universellen Editor
 description: Der universelle Editor ist ein modernes visuelles Authoring-Tool, mit dem Ihre Marketing-Organisation wirkungsvolle Web-Erlebnisse erstellen kann.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Der universelle Editor bietet viele Funktionen zur Unterstützung einer Vielzahl
 * **[Layout](/help/sites-cloud/authoring/universal-editor/templates.md)**: Verwenden Sie Seitenvorlagen, wenden Sie visuelle Stile an und erstellen Sie Layouts mit Blöcken wie Spalten, Karussells und Akkordeons.
 * **[Gerätesimulation](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)**: Zeigen Sie eine Vorschau von Inhalten an und optimieren Sie sie beim Bearbeiten für verschiedene Besuchergeräte.
 * **Omni-Channel**: Verwenden Sie strukturierte und unstrukturierte Inhalte in mehreren Kanälen wieder.
-* **[Lokalisierung](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: Optimieren Sie die Workflows für die Inhaltsübersetzung und verarbeiten Sie die Vererbung von lokalisierten Inhalten mit Multi-Site-Manager effizient.
+* **[Lokalisierung](/help/sites-cloud/authoring/universal-editor/inheritance.md)**: Optimieren Sie die Workflows für die Inhaltsübersetzung und verarbeiten Sie die Vererbung von lokalisierten Inhalten mit Multi-Site Manager effizient.
 * **Konsistenz**: Stellen Sie die Einhaltung von Markenrichtlinien sicher und sorgen Sie für Einheitlichkeit bei allen Inhalten.
 * **Sicherheit**: [Erzwingen Sie eine Zugriffskontrolle](/help/implementing/universal-editor/authentication.md), schützen Sie die Inhaltsintegrität und verfolgen sie Änderungen mit [robuster Versionierung](/help/sites-cloud/authoring/sites-console/page-versions.md) nach.
 * **[Veröffentlichung](/help/sites-cloud/authoring/universal-editor/publishing.md)**: Integrieren Sie Prüfungs-, Genehmigungs- und Veröffentlichungs-Workflows direkt im Editor.

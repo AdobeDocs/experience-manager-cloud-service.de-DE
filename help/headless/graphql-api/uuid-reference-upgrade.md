@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte UUID-Re
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -260,7 +260,7 @@ Content-Length: 1116
 
 +++
 
-+++Beispielhafte Protokolldateien
++++Beispiele für Protokolldateien
 
 Zusätzlich zum Status einer laufenden Inhaltsaktualisierung, die vom HTTP-Endpunkt abgerufen wurde, liefern AEM-Protokolle detaillierte Informationen zum Fortschritt auf Inhaltsebene. Zum Beispiel:
 

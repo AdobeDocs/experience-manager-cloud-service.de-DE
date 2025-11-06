@@ -3,10 +3,10 @@ title: Barrierefreiheit in  [!DNL Experience Manager Assets]
 description: Erfahren Sie, wie Funktionen für Barrierefreiheit in [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service]  Benutzenden mit Behinderungen helfen.
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Benutzer mit Behinderungen verlassen sich häufig auf Hardware und Software, um 
 
 In [!DNL Experience Manager] decken die Funktionen für Barrierefreiheit zwei wichtige Anforderungen von [!DNL Experience Manager]-Benutzern und ihren Kunden ab.
 
-* Für Entwickler und Ersteller von Inhalten gibt es Funktionen zum Erstellen und Veröffentlichen von barrierefreien Inhalten, die wiederum von ihren Kunden und Website-Besuchern genutzt werden. Diese Inhalte können von Menschen mit Behinderungen unter Einsatz von Hilfstechnologien verwendet werden. Weitere Informationen finden Sie unter [Richtlinien für Barrierefreiheit im Web](/help/compliance/accessibility/quick-guide-wcag.md).
+* Für Design- und Entwicklungs-Teams von Inhalten gibt es Funktionen zum Erstellen und Veröffentlichen von barrierefreien Inhalten, die wiederum von ihren Kunden und Website-Besuchern genutzt werden. Diese Inhalte können von Menschen mit Behinderungen unter Einsatz von Hilfstechnologien verwendet werden. Weitere Informationen finden Sie unter [Richtlinien für Barrierefreiheit im Web](/help/compliance/accessibility/quick-guide-wcag.md).
 * Mit [!DNL Experience Manager] können Benutzer und Administratoren mit Behinderungen auch auf Benutzeroberflächen und Steuerelemente zugreifen, um Inhalte zu erstellen und zu verwalten. Menschen mit Behinderungen können mithilfe von Hilfstechnologien die [!DNL Assets]-Funktion navigieren, nutzen und verwalten.
 
 Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werden regelmäßig aktualisiert, um die Erfüllung globaler Standards zu verbessern. Die CRUD-Vorgänge in [!DNL Assets] bieten einen gewissen Grad an Barrierefreiheit. DAM-Workflows wie das Hinzufügen, Verwalten, Suchen und Verteilen von Assets sind durch Tastaturbefehle, Sprachausgaben, Farbkontrast usw. barrierefrei.

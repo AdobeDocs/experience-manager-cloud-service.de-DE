@@ -5,8 +5,8 @@ description: Der Repository-Browser bietet eine schreibgeschützte Ansicht des R
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 100%
@@ -82,7 +82,7 @@ Gehen Sie wie folgt vor, um diese Speicherorte sichtbar zu machen.
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. Suchen Sie Ihre Publishing-Instanz und klicken Sie darauf
+1. Suchen Sie Ihre Veröffentlichungsinstanz und klicken Sie darauf
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 

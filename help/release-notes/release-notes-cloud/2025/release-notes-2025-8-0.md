@@ -3,7 +3,7 @@ title: Versionshinweise für Version 2025.8.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.8.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 86%
@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -84,7 +84,7 @@ Verbessern der Lesbarkeit von Dynamic Media mit OpenAPI-URLs durch Verwendung vo
 * [Angegebene Fehlerantwort für benutzerdefinierte Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md): Wenn bei einer benutzerdefinierten Übermittlungsaktion ein nicht behandelter Fehler auftritt, wird der Fehler-Code 502 zurückgegeben. Auf diese Weise können Sie erkennen, dass das Problem mit der benutzerdefinierten Übermittlungsaktion zusammenhängt, was das Debugging erleichtert.
 * [Ausgeblendete Felder vom Datensatzdokument ausschließen](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): Es wurde eine neue Eigenschaft hinzugefügt, die den Ausschluss ausgeblendeter Felder vom Datensatzdokument ermöglicht. Standardmäßig ist diese Option nicht aktiviert und gilt für alle Formularfelder.
 
-### Vorab veröffentlichte Funktionen in AEM Forms
+### Vorabversionsfunktionen in AEM Forms
 
 * [Generieren und Synchronisieren von AFP-](/help/forms/document-generation-afp-api.md): Sie können jetzt die AEM Forms-Kommunikations-API verwenden, um eine XDP-Datei in das AFP-Format zu konvertieren. AFP ist ein leistungsstarkes Format, das häufig zum Drucken in großen Mengen in Unternehmen zum Einsatz kommt.
 * **Verbesserungen des Regeleditors**
@@ -149,6 +149,7 @@ Verschiedene veraltete APIs werden am 31. August eingestellt und sollten daher 
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+
 </details>
 
 <!--

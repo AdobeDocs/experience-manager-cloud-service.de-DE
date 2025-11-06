@@ -3,9 +3,9 @@ title: Überblick über Experience Fragments
 description: Erweitern von Experience Fragments für Adobe Experience Manager as a Cloud Service
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
-role: Admin, Architect, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Zum Beispiel:
 
 >[!NOTE]
 >
->Links verweisen immer auf die Publishing-Instanz. Sie sind für die Verwendung durch Dritte vorgesehen, sodass der Link immer von der Publishing-Instanz und nicht von der Authoring-Instanz aufgerufen wird.
+>Links verweisen immer auf die Veröffentlichungsinstanz. Sie sind für die Verwendung durch Dritte vorgesehen, sodass der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
 >
 >Weitere Informationen finden Sie unter [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md).
 

@@ -2,11 +2,11 @@
 title: Regeleditor für Edge Delivery Services-Formulare
 description: Erstellen Sie mit dem Regeleditor im universellen Editor dynamische, intelligente Formulare. Fügen Sie bedingte Logik, Berechnungen und interaktive Verhaltensweisen ohne Programmierung hinzu.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 100%
 
@@ -535,7 +535,7 @@ Abbildung: Hinzufügen benutzerdefinierter Funktionen zur Datei „features.js�
 ![Benutzerdefinierte Funktion im Regeleditor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Abbildung: Auswählen und Konfigurieren von benutzerdefinierten Funktionen in der Benutzeroberfläche des Regeleditors
 
->
+>[!NOTE]
 >
 > Die Verbesserungen am Regeleditor, einschließlich benutzerdefinierter ereignisbasierter Regeln, Unterstützung für dynamische Variablen und API-Integration, sind auch für Edge Delivery Services Forms verfügbar. Weitere Informationen zu diesen Verbesserungen und deren Verwendung finden Sie im Artikel [Verbesserungen des Regeleditors und Anwendungsfälle](/help/forms/rule-editor-enhancements-use-cases.md).
 
@@ -716,7 +716,7 @@ Der Regeleditor im universellen Editor wandelt statische Formulare in intelligen
 
 **Geschäftliche Auswirkungen**:
 
-Formulare werden zu effektiven Tools für die Datenerfassung, Lead-Qualifizierung und Benutzerinteraktion. Der Regeleditor ermöglicht es technisch nicht versierten Autorinnen und Autoren, eine ausgeklügelte Geschäftslogik zu implementieren. Dadurch werden die Entwicklungskosten gesenkt und gleichzeitig die Formularausfüllungsraten und die Datenqualität verbessert.
+Formulare werden zu effektiven Tools für die Datenerfassung, Lead-Qualifizierung und Benutzerinteraktion. Der Regeleditor ermöglicht es technisch nicht versierten Autorinnen und Autoren, eine ausgeklügelte Geschäftslogik zu implementieren. Dadurch werden die Entwicklungskosten gesenkt und gleichzeitig die Formularabschlussraten und die Datenqualität verbessert.
 
 +++
 

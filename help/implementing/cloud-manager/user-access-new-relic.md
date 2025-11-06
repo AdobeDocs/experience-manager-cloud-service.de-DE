@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über den APM-Service (Application Performance Mo
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 100%
 
@@ -139,7 +139,7 @@ Nachdem Sie [Ihr New Relic-Konto aktiviert haben](#activate-account), können Si
 
 Wenn Sie während der Anmeldung bei New Relic One aufgefordert werden, Ihre E-Mail-Adresse zu verifizieren, bedeutet dies, dass sie mit mehreren Konten verknüpft ist. Sie können auswählen, auf welches Konto zugegriffen werden soll.
 
-Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzerdatensatz anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
+Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzereintrag anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
 
 Um weitere Hilfe zu erhalten, öffnen Sie ein Support-Ticket über das [AEM Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
@@ -189,7 +189,7 @@ Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für I
 
 Über das Java-Plug-in von New Relic One überwacht Adobe die Autoren-, Veröffentlichungs- und Vorschau-Services (sofern verfügbar) von AEM as a Cloud Service. Adobe ermöglicht benutzerspezifische Telemetrie und Überwachung mit New Relic One APM in Nicht-Produktions- und Produktionsumgebungen in AEM as a Cloud Service.
 
-Ihr New Relic One-Konto ist mit einem primären, von Adobe bereitgestellten Konto verknüpft und erhält von mehreren Anwendungen Daten; je drei Anwendungen pro Umgebung in AEM as a Cloud Service.
+Ihr New Relic One-Konto ist mit einem primären, von Adobe bereitgestellten Konto verknüpft und erhält von mehreren Anwendungen Daten; je drei Anwendungen pro AEM as a Cloud Service-Umgebung.
 
 * Ein Programm für den Autoren-Service pro Umgebung
 * Eine Anwendung für den `Publish`-Service pro Umgebung (einschließlich „Golden Publish“)
@@ -198,7 +198,7 @@ Ihr New Relic One-Konto ist mit einem primären, von Adobe bereitgestellten Kont
 Hinweis:
 
 * Pro Anwendung wird ein Lizenzschlüssel verwendet.
-* Umgebungen in AEM as a Cloud Service senden Berichte nur an ein einziges New Relic One-Konto.
+* AEM as a Cloud Service-Umgebungen senden Berichte nur an ein einziges New Relic One-Konto.
 * Vollständige Überwachungsmetriken und Ereignisse für New Relic One werden drei Monate lang gespeichert. 
 
 +++

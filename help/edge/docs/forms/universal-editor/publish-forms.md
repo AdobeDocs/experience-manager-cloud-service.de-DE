@@ -2,12 +2,12 @@
 title: Veröffentlichen adaptiver Formulare mit Edge Delivery Services
 description: Erfahren Sie, wie Sie adaptive Formulare mit Edge Delivery Services zum Einsatz in der Produktion veröffentlichen, konfigurieren und aufrufen können.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 keywords: Formulare veröffentlichen, Edge Delivery Services, Formularkonfiguration, CORS, Referrer-Filter
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 

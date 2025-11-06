@@ -2,10 +2,10 @@
 title: Inhaltsveröffentlichung durch den universellen Editor
 description: Erfahren Sie, wie der universelle Editor seine Inhalte veröffentlicht, wie sich das Verfahren von dem der Sites-Konsole unterscheidet und was Sie berücksichtigen müssen, wenn Sie eigene Apps entwickeln, die Sie im universellen Editor bearbeiten möchten.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 60f0bb4a-ee60-4f73-83ae-8568735474ad
-source-git-commit: b967a09df7c2e0f5094a6836fcf5311008081dc0
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 100%
 

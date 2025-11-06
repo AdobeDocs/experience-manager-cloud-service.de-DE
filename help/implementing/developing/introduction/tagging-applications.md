@@ -3,8 +3,8 @@ title: Einbinden von Tagging in AEM-Programme
 description: Programmatisch mit Tags oder erweiterten Tags innerhalb eines benutzerdefinierten AEM-Programms arbeiten
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Weitere Informationen zum Tagging finden Sie unter:
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
-Die Implementierung des [Tagging-Frameworks](tagging-framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. `TagManager` stellt sicher, dass Tags, die als Werte in der `cq:tags`String-Array-Eigenschaft eingegeben wurden, nicht dupliziert werden. Er entfernt `TagID`, die auf nicht vorhandene Tags verweisen, und aktualisiert `TagID`für verschobene oder zusammengefügte Tags. `TagManager` verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html):
+Die Implementierung des [Tagging-Frameworks](tagging-framework.md) in AEM ermöglicht die Verwaltung von Tags und Tag-Inhalten mithilfe der JCR-API. `TagManager` stellt sicher, dass Tags, die als Werte in der `cq:tags`String-Array-Eigenschaft eingegeben wurden, nicht dupliziert werden. Er entfernt `TagID`, die auf nicht vorhandene Tags verweisen, und aktualisiert `TagID`für verschobene oder zusammengeführte Tags. `TagManager` verwendet einen JCR Observation Listener, der alle falschen Änderungen zurückgesetzt. Die wichtigsten Klassen befinden sich im Paket [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html):
 
 * `JcrTagManagerFactory` – gibt eine JCR-basierte Implementierung eines `TagManager`s zurück. Es ist die Referenzimplementierung der Tagging-API.
 * `TagManager` – ermöglicht das Auflösen und Erstellen von Tags nach Pfaden und Namen.

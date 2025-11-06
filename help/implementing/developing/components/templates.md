@@ -3,10 +3,10 @@ title: Bearbeitbare Vorlagen
 description: Erfahren Sie, wie bearbeitbare Vorlagen beim Erstellen einer Seite sowie beim Definieren des anfänglichen Inhalts, des strukturierten Inhalts, der Authoring-Richtlinien und des Layouts verwendet werden.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3443'
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '3442'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Beim Erstellen einer Seite müssen Sie eine Vorlage auswählen. Die Seitenvorlag
    * [Seiteneditor](/help/sites-cloud/authoring/page-editor/templates.md) als auch mit dem
    * [universellen Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
 
-Seitenvorlagen zum Erstellen von Seiten, die mit dem universellen Editor bearbeitbar sind, verwenden eine begrenzte Untergruppe bearbeitbarer Vorlagenfunktionen. Daher konzentriert sich der Rest dieses Dokuments auf bearbeitbare Vorlagen, die zum Erstellen von Seiten verwendet werden, die mit dem Seiteneditor bearbeitet werden können.
+Seitenvorlagen zum Erstellen von Seiten, die mit dem universellen Editor bearbeitbar sind, verwenden eine begrenzte Teilmenge bearbeitbarer Vorlagenfunktionen. Daher konzentriert sich der Rest dieses Dokuments auf bearbeitbare Vorlagen, die zum Erstellen von Seiten verwendet werden, die mit dem Seiteneditor bearbeitet werden können.
 
 ## Bearbeitbare Vorlagen und Seiten, die mit dem Seiteneditor bearbeitet wurden {#page-editor}
 
@@ -128,7 +128,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 
 >[!TIP]
 >
->Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internationalisierung werden die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
+>Geben Sie in eine Vorlage nie Informationen ein, die internationalisiert werden müssen. Für die Internationalisierung werden die [Lokalisierungsfunktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) empfohlen.
 
 >[!NOTE]
 >

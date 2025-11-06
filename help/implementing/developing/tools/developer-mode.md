@@ -5,11 +5,11 @@ description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Regist
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,8 +31,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Entwicklermodus:
 >
->* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
->  * Dies gilt bei einer Breite von weniger als 1024 Pixel.
+>* Ist (aufgrund von Platzbeschränkungen) nicht auf Mobilgeräten oder in kleinen Desktop-Fenstern verfügbar. Dies gilt bei einer Breite von weniger als 1024 Pixel.
 >* Ist nur für Benutzer verfügbar, die Mitglieder der Gruppe `administrators` sind.
 
 ## Öffnen des Entwicklermodus {#opening-developer-mode}

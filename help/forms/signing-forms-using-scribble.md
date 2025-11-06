@@ -7,7 +7,7 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 100%
@@ -40,9 +40,8 @@ Sie können die Komponente **Freihandsignatur** verwenden, um eine Signatur (per
 Sobald Sie auf das Symbol „Fertig“ ![aem_forms_save](assets/aem_forms_save.png) im Freihandsignaturfenster klicken, können Sie die Signatur nicht mehr bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option „Pinsel“/„Tastatur“ erneut signieren.
 
 Sie können auf das Symbol **Konfigurieren** ![configure icon](assets/configure.png) klicken, um das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen festzulegen.
+
 * Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für die Freihandsignatur hinzugefügt.
-
-
 * Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihandsignaturen hinzugefügt.
 
 
@@ -53,7 +52,6 @@ Sie können auf das Symbol **Konfigurieren** ![configure icon](assets/configure.
 >[!NOTE]
 >
 >Signaturen werden immer im PNG-Format gespeichert.
->
 
 ## Konfigurieren eines adaptiven Formulars zur Verwendung der Freihandsignatur {#configure-an-adaptive-form-to-use-scribble-signature}
 

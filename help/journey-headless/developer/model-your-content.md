@@ -4,8 +4,8 @@ description: In diesem Teil der Adobe Experience Manager (AEM) Headless-Entwickl
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
@@ -86,7 +86,7 @@ Beispielsweise Werbung für Sonderveranstaltungen für alle Schulen in der Regio
 
 Was Sie beschreiben möchten, wird als **Entitäten** bezeichnet – im Grunde die „Dinge“, über die Informationen gespeichert werden sollen.
 
-Die Informationen, die über sie gespeichert werden sollen, sind die **Attribute** (Eigenschaften), z. B. die Namen und Qualifikationen der Lehrkräfte.
+Die Informationen, die über sie gespeichert werden sollen, sind die **Attribute** (Eigenschaften), z. B. die Namen und Qualifizierungen der Lehrkräfte.
 
 Dann gibt es verschiedene **Beziehungen** zwischen den Entitäten. Beispielsweise hat eine Schule in der Regel nur eine(n) Schulleiter(in) und viele Lehrkräfte (und normalerweise ist der Schulleiter auch Lehrer).
 

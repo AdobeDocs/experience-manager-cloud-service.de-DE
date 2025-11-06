@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2025.5.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2025.5.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version vom Mai 2025:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464359?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ Dank der nativen Integration von AEM Assets mit Figma können Sie über die Figm
 
 **Attributbasierte Zugriffssteuerung (Attribute-based Access Control, ABAC)**
 
-[Mit Content Hub können Sie jetzt regelbasierte Einschränkungen für den Zugriff auf Assets anwenden](/help/assets/attribute-based-access-control.md). Asset-Berechtigungen stellen die Governance sicher und stellen außerdem sicher, dass nur die relevanten Assets für Benutzer zugänglich sind.
+[Mit Content Hub können Sie jetzt regelbasierte Einschränkungen für den Zugriff auf Assets anwenden](/help/assets/attribute-based-access-control.md). Asset-Berechtigungen gewährleisten die Governance und stellen außerdem sicher, dass nur die relevanten Assets für Benutzende zugänglich sind.
 
 Die Regeln für die Asset-Einschränkung basieren auf Metadaten. Wenn die Asset-Metadaten den in der Regel definierten Bedingungen entsprechen, wird das Asset den Benutzergruppen angezeigt.
 
@@ -108,7 +108,7 @@ Greifen Sie [direkt über die Benutzeroberfläche von Content Hub auf alle vorei
 
 [Native Integration von Experience Manager (AEM) Dynamic Media mit Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/combine/aem-dynamic), sodass Marketing-Fachleute AEM Dynamic Media-Assets (Ausgabedarstellung und DM-Vorlage) einfach in AJO-Inhalte einbetten und kanalübergreifend Echtzeit-Updates sowie extrem personalisierte Erlebnisse bereitstellen können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463791/?learn=on&enablevpops=&autoplay=true&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -150,6 +150,7 @@ Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigur
   <summary>Erweitern Sie die Liste, um die veralteten Versionen anzuzeigen</summary>
 
 Jav-APIs:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`

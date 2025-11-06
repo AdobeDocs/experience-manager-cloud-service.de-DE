@@ -3,9 +3,9 @@ title: benutzerdefinierte Fehlerseiten
 description: AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern, der angepasst werden kann.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Um auf Fehler zu reagieren, stellt AEM unter `/libs/sling/servlet/errorhandler` 
 
 >[!NOTE]
 >
->Auf einer Authoring-Instanz ist der [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler antwortet, indem er den vollständigen Stacktrace in die Antwort schreibt.
+>Auf einer Autoreninstanz ist der [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler antwortet, indem er den vollständigen Stacktrace in die Antwort schreibt.
 >
 >In Veröffentlichungsinstanzen ist CQ WCM Debug Filter **immer** deaktiviert (selbst wenn er als aktiviert konfiguriert ist).
 
@@ -77,11 +77,11 @@ Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts iden
 >[!NOTE]
 >
 >In AEM as a Cloud Service gibt das CDN eine allgemeine Fehlerseite aus, wenn vom Backend ein 5XX-Fehler empfangen wird. Damit die tatsächliche Antwort des Backends weitergeleitet werden kann, müssen Sie die folgende Kopfzeile zur Antwort hinzufügen: `x-aem-error-pass: true`.
->>Dies funktioniert nur bei Antworten aus AEM oder der Apache-/Dispatcher-Ebene. Bei anderen unerwarteten Fehlern, die von Zwischeninfrastruktur-Ebenen kommen, wird weiterhin die allgemeine Fehlerseite angezeigt.
+>Dies funktioniert nur bei Antworten aus AEM oder der Apache-/Dispatcher-Ebene. Bei anderen unerwarteten Fehlern, die von Zwischeninfrastruktur-Ebenen kommen, wird weiterhin die allgemeine Fehlerseite angezeigt.
 
 >[!CAUTION]
 >
->Auf einer Authoring-Instanz ist der [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler schreibt daraufhin den vollständigen Stacktrace in die Antwort.
+>Auf einer Autoreninstanz ist der [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) standardmäßig aktiviert. Das Ergebnis ist immer der Antwort-Code 200. Der standardmäßige Fehler-Handler schreibt daraufhin den vollständigen Stacktrace in die Antwort.
 >
 >Für eine individuelle Fehlerverarbeitung sind Antworten mit Code 500 erforderlich. Der [CQ WCM Debug-Filter muss also deaktiviert sein](/help/implementing/deploying/configuring-osgi.md). Dadurch wird sichergestellt, dass der Antwort-Code 500 zurückgegeben wird, was wiederum den richtigen Sling-Fehler-Handler auslöst.
 >

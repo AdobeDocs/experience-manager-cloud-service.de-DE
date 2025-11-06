@@ -2,12 +2,12 @@
 title: Hinzufügen einer Edge Delivery-Site zu Cloud Manager
 description: Erfahren Sie, wie Sie Ihrem Produktions- oder Sandbox-Programm eine Edge Delivery-Site hinzufügen.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 90%
 >[!IMPORTANT]
 >
 >Erfahren Sie, warum Sie Ihre Edge Delivery Services-Site in Cloud Manager integrieren müssen. 
->&#x200B;>Weitere Informationen finden Sie unter [Vorteile des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Weitere Informationen finden Sie unter [Vorteile des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **So fügen Sie eine Edge Delivery-Site zu Cloud Manager hinzu:**
 
 1. Stellen Sie sicher, dass Ihr Programm zuerst mit einer Edge Delivery Services-Lizenz erstellt wird, bevor Sie eine Edge Delivery-Site in Cloud Manager integrieren.
 Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
+1. Melden Sie sich unter [experiece.adobe.com](https://experience.adobe.com) bei Cloud Manager an.
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm.
 1. Führen Sie einen der folgenden Schritte aus:

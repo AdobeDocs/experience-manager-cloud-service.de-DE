@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwendung von AEM-Workflows, Verwendung von Schritten zur Aufgabenzuweisung, Schritt zur Konvertierung in PDF/A, Schritt zur Generierung eines Datensatzdokuments, Verwendung von Workflows, Schritt zur Unterzeichnung eines Dokuments, Schritt zur Generierung einer gedruckten Ausgabe, Schritt zur Generierung einer nicht interaktiven PDF-Ausgabe
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 99%
@@ -177,6 +177,7 @@ Der Schritt „In PDF/A konvertieren“ weist die folgenden Eigenschaften auf:
 **[!UICONTROL Eingabedokument]**: Das Eingabedokument kann relativ zur Payload sein, einen absoluten Pfad haben, selbst Payload sein oder in einer Variablen des Datentyps „Dokument“ gespeichert sein.
 
 **[!UICONTROL Konvertierungsoptionen]**: Mithilfe dieser Eigenschaft werden die Einstellungen zum Konvertieren von PDF-Dokumenten in PDF/A-Dokumente angegeben. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+
 * **[!UICONTROL Compliance]**: Gibt den PDF/A-Standard an, mit dem die Ausgabe des PDF/A-Dokuments kompatibel sein muss. Es unterstützt verschiedene PDF-Standards wie PDF/A-1b, PDF/A-2b oder PDF/A-3b.
 * **[!UICONTROL Ergebnisebene]**: Gibt das Ergebnisniveau als „PassFail“, „Zusammenfassung“ oder „Detailliert“ für die Konversionsausgabe an.
 * **[!UICONTROL Farbraum]**: Gibt den vordefinierten Farbraum als S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED oder SWOP an, der für PDF/A-Ausgabedateien verwendet werden kann.
@@ -255,11 +256,13 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 „DDX-Schritt aufrufen“ hat die folgenden Eigenschaften:
 
 **[!UICONTROL Eingabedokumente]**: Wird zum Festlegen von Eigenschaften eines Eingabedokuments verwendet. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+
 * **[!UICONTROL Verwendung von DDX festlegen]**: Gibt das Eingabedokument relativ zur Payload an, hat einen absoluten Pfad, kann als Payload bereitgestellt oder in einer Variablen des Dokumentdatentyps gespeichert werden.
 * **[!UICONTROL Zuordnung aus Payload erstellen]**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für das Aufrufen der API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
 * **[!UICONTROL Zuordnung des Eingabedokuments]**: Diese Option wird verwendet, um mit der Schaltfläche **[!UICONTROL HINZUFÜGEN]** mehrere Einträge hinzuzufügen. Jeder Eintrag stellt den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments dar.
 
 **[!UICONTROL Umgebungsoptionen]**: Diese Option wird verwendet, um Verarbeitungseinstellungen für den API-Aufruf festzulegen. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+
 * **[!UICONTROL Nur validieren]**: Prüft die Gültigkeit des Eingabe-DDX-Dokuments.
 * **[!UICONTROL Fehlschlagen bei Fehler]**: Boolescher Wert, der angibt, ob der Aufruf des API-Dienstes bei einem Fehler fehlschlägt oder nicht. Standardmäßig ist dieser Wert auf „False“ festgelegt.
 * **[!UICONTROL Erste Bates-Zahl]**: Gibt die Zahl an, die sich selbstständig erhöht. Diese selbstständig inkrementierende Zahl wird automatisch auf jeder aufeinander folgenden Seite angezeigt.
@@ -270,6 +273,7 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 >Umgebungsoptionen werden mit HTTP-APIs synchronisiert.
 
 **[!UICONTROL Ausgabedokumente]**: Gibt den Speicherort für die Ausgabedatei an. Auf dieser Registerkarte stehen verschiedene Optionen zur Verfügung:
+
 * **[!UICONTROL Ausgabe in Payload speichern]**: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, falls die Payload eine Datei ist.
 * **[!UICONTROL Zuordnung des Ausgabedokuments]**: Gibt explizit den Speicherort an, unter dem jede Dokumentdatei gespeichert werden soll, indem ein Eintrag pro Dokument hinzugefügt wird. Jeder Eintrag stellt das Dokument und den Speicherort dar, an dem es gespeichert werden soll. Wenn mehrere Ausgabedokumente vorhanden sind, wird diese Option verwendet.
 
@@ -351,7 +355,7 @@ Der Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ enthält folgende Fel
 
 * **[!UICONTROL Fehlermeldung in Variable speichern]**: Sie können eine Fehlermeldung in einer [Variablen vom Typ „Zeichenfolge“](variable-in-aem-workflows.md) speichern.
 
-* **[!UICONTROL Fehlerdetails in Variable speichern]**: Sie können Fehlerdetails in einer [Variablen vom Typ &#x200B;](variable-in-aem-workflows.md)JSON speichern.
+* **[!UICONTROL Fehlerdetails in Variable speichern]**: Sie können Fehlerdetails in einer [Variablen vom Typ ](variable-in-aem-workflows.md)JSON speichern.
 
 * **[!UICONTROL Dienst]**: Liste der Dienste, die durch das ausgewählte Formulardatenmodell (FDM) bereitgestellt werden.
 * **[!UICONTROL Eingabe für Services]** > **[!UICONTROL Bereitstellung von Eingabedaten mit Literal, Variable oder Workflow-Metadaten und einer JSON-Datei]**: Ein Service kann mehrere Argumente aufweisen. Wählen Sie die Option zum Abrufen des Werts der Service-Parameter aus einer Workflow-Metadateneigenschaft, einem JSON-Objekt oder einer Variable aus oder geben Sie den Wert direkt in das bereitgestellte Textfeld ein:

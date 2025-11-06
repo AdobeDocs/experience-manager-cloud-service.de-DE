@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über Qualitätsregeln für benutzerspezifischen 
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4349'
 ht-degree: 96%
@@ -534,7 +534,7 @@ Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext vera
 
 Das `Apache Sling`-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da es in Kombination mit dem `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) zu schlechter Leistung führen kann. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu &#x200B;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
+Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
 
 
 ### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}

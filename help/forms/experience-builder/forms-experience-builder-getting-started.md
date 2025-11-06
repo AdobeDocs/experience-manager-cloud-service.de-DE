@@ -4,14 +4,14 @@ description: Lernen Sie die Grundlagen der Erstellung Ihres ersten KI-gestützte
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1133'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
-
 
 # Erste Schritte mit Forms Experience Builder {#getting-started-forms-experience-builder}
 
@@ -61,11 +61,11 @@ Erstellen Sie Formulare mit Beschreibungen Ihrer Anforderungen in natürlicher S
 
 **Beispiel:**
 
-    Erstellen Sie ein Formular für Kunden-Feedback mit:
-    &#x200B;- Produktbewertung (1-5 Sterne)
-    &#x200B;- Feld „Kommentar“ für detailliertes Feedback
-    &#x200B;- Kunden-E-Mail (optional)
-    &#x200B;- An E-Mail-Benachrichtigung senden
+    Erstelle ein Formular für Kunden-Feedback mit:
+    – Produktbewertung (1–5 Sterne)
+    – Kommentarfeld für detailliertes Feedback
+    – Kunden-E-Mail (optional)
+    – An E-Mail-Benachrichtigung übermitteln
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +75,7 @@ Erstellen Sie Formulare mit Beschreibungen Ihrer Anforderungen in natürlicher S
 
 Umwandeln vorhandener Dokumente in interaktive digitale Formulare.
 
-Laden Sie vor Verwendung dieser Option Ihre PDF-Datei oder ein Bild des Formulars hoch. Die PDF kann entweder ein AcroForm- oder ein XFA-basiertes PDF-Formular sein. Bei [anderen Typen von PDF forms](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) verwenden Sie die Option [Formular vorbereiten](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat, um sie in ein AcroForm zu konvertieren
+Laden Sie vor Verwendung dieser Option Ihre PDF-Datei oder ein Bild des Formulars hoch. Die PDF kann entweder ein AcroForm- oder ein XFA-basiertes PDF-Formular sein. Bei [anderen Typen von PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) verwenden Sie die Option [Formular vorbereiten](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat, um sie in ein AcroForm zu konvertieren
 
 **Verwendung:**
 
@@ -100,7 +100,7 @@ Erstellen wir ein einfaches Kontaktformular, um den grundlegenden Workflow zu ve
 
 Beginnen Sie mit einer einfachen Formularbeschreibung:
 
-    Erstellen Sie ein einfaches Kontaktformular mit den Feldern Name, E-Mail und Nachricht
+    Erstelle ein simples Kontaktformular mit Feldern für Name, E-Mail, Telefon und Nachricht
 
 Dadurch wird ein Formular mit drei wesentlichen Feldern erstellt.
 
@@ -110,7 +110,7 @@ Dadurch wird ein Formular mit drei wesentlichen Feldern erstellt.
 
 Erweitern des Formulars mit Validierungsregeln:
 
-    Erstellen Sie @name und @email Pflichtfelder mit entsprechender Validierung
+    Erstelle die Pflichtfelder @name und @email mit entsprechender Validierung
 
 Das `@`-Symbol verweist auf bestimmte Felder für zielgerichtete Änderungen.
 
@@ -121,7 +121,7 @@ Das `@`-Symbol verweist auf bestimmte Felder für zielgerichtete Änderungen.
 
 Fügen Sie hilfreichen Platzhaltertext und Anleitungen hinzu:
 
-    Fügen Sie Platzhaltertext hinzu: @name „Ihr vollständiger Name“, @email &quot;your.email@company.com&quot; @message „Sagen Sie uns, wie wir helfen können“
+    Füge Platzhaltertext hinzu: @name „Ihr vollständiger Name“, @email „your.email@company.com“, @message „Wie können wir Ihnen helfen?“
 
 ![Es wurde eine Validierung mithilfe von Eingabeaufforderungen in natürlicher Sprache in Forms Experience Builder hinzugefügt](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
 
@@ -167,10 +167,10 @@ Verwenden Sie `@fieldName`, um auf bestimmte Felder zu verweisen:
 
 Beschreiben Sie, was Sie möchten, in einfachem Englisch:
 
-    &#x200B;- Abschnitt für Firmeninformationen hinzufügen
-    &#x200B;- Dropdown zur Abteilungsauswahl erstellen
-    &#x200B;- Datei-Upload für Wiederaufnahme einschließen
-    &#x200B;- E-Mail-Benachrichtigungen einrichten, wenn das Formular gesendet wird
+    - Abschnitt für Firmeninformationen hinzufügen
+    - Dropdown zur Abteilungsauswahl erstellen
+    - Datei-Upload für Wiederaufnahme einschließen
+    - E-Mail-Benachrichtigungen einrichten, wenn das Formular gesendet wird
 
 ### Inkrementelles Erstellen {#build-incrementally}
 
@@ -190,55 +190,55 @@ Einfach anfangen und schrittweise Komplexität hinzufügen:
 **Basiskontaktformular:**
 
     Erstellen eines Kontaktformulars mit:
-    &#x200B;- Name (erforderlich)
-    &#x200B;- E-Mail (erforderlich, validiert)
-    &#x200B;- Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
-    &#x200B;- Nachricht (erforderlich, mehrzeilig)
-    &#x200B;- Schaltfläche „Senden“
+    - Name (erforderlich)
+    - E-Mail (erforderlich, validiert)
+    - Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
+    - Nachricht (erforderlich, mehrzeilig)
+    - Schaltfläche „Senden“
 
 **Formular für Kunden-Feedback:**
 
-    Erstellen Sie ein Formular für Kunden-Feedback mit:
-    &#x200B;- Produktbewertung (1-5 Sterne)
-    &#x200B;- Feld „Kommentar“ für detailliertes Feedback
-    &#x200B;- Kunden-E-Mail (optional)
-    &#x200B;- An E-Mail-Benachrichtigung senden
+    Erstelle ein Formular für Kunden-Feedback mit:
+    – Produktbewertung (1–5 Sterne)
+    – Kommentarfeld für detailliertes Feedback
+    – Kunden-E-Mail (optional)
+    – An E-Mail-Benachrichtigung übermitteln
 
 ### Anmeldeformulare und Onboarding {#registration-onboarding-forms}
 
 **Benutzerregistrierung:**
 
     Erstellen Sie ein Benutzerregistrierungsformular mit:
-    &#x200B;- Persönliche Informationen (Name, E-Mail, Telefon)
-    &#x200B;- Kontovoreinstellungen (Newsletter, Benachrichtigungen)
-    &#x200B;- Annahme der Geschäftsbedingungen
-    &#x200B;- Kennworterstellung mit Stärkenvalidierung
+    - Persönliche Informationen (Name, E-Mail, Telefon)
+    - Kontovoreinstellungen (Newsletter, Benachrichtigungen)
+    - Annahme der Geschäftsbedingungen
+    - Kennworterstellung mit Stärkenvalidierung
 
 **Mitarbeiter-Onboarding:**
 
     Erstellen eines Onboarding-Formulars für Mitarbeiter mit:
-    &#x200B;- Persönliche Daten und Kontaktinformationen
-    &#x200B;- Informationen zur Beschäftigung und zum Startdatum
-    &#x200B;- Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
-    &#x200B;- Auswahl und Voreinstellungen für Vorteile
+    - Persönliche Daten und Kontaktinformationen
+    - Informationen zur Beschäftigung und zum Startdatum
+    - Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
+    - Auswahl und Voreinstellungen für Vorteile
 
 ### Erhebungs- und Bewertungsformulare {#survey-assessment-forms}
 
 **Umfrage zur Kundenzufriedenheit:**
 
     Erstellen Sie eine Umfrage zur Kundenzufriedenheit mit:
-    &#x200B;- Gesamtbewertung (Skala 1-10)
-    &#x200B;- Kategoriebewertungen (Produkt, Service, Support)
-    &#x200B;- Abschnitte mit offenem Feedback
-    &#x200B;- Demografische Informationen (optional)
+    - Gesamtbewertung (Skala 1-10)
+    - Kategoriebewertungen (Produkt, Service, Support)
+    - Abschnitte mit offenem Feedback
+    - Demografische Informationen (optional)
 
 **Kompetenzbewertung:**
 
     Erstellen Sie ein Formular zur Kompetenzbewertung mit:
-    &#x200B;- Kompetenzkategorien mit 
-    &#x200B;- Erlebnisdauer für jede 
-    &#x200B;- Zertifizierungs- und Schulungsinformationen
-    &#x200B;- Selbstbewertung und Ziele
+    - Kompetenzkategorien mit 
+    - Erlebnisdauer für jede 
+    - Zertifizierungs- und Schulungsinformationen
+    - Selbstbewertung und Ziele
 
 ## Tests und Validierung {#testing-validation}
 

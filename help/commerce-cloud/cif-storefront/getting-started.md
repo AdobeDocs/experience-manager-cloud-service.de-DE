@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 89%
@@ -25,7 +25,7 @@ Um mit Adobe Experience Manager (AEM) Commerce as a Cloud Service beginnen zu k�
 >
 >**Haben Sie Edge Delivery Services in Betracht gezogen?**
 >
->Edge Delivery Services ist die von Adobe bevorzugte Lösung zum Erstellen einer Storefront. Weitere Informationen finden Sie [&#x200B; Dokument „Einführung &#x200B;](/help/commerce-cloud/introduction.md) Übersicht“.
+>Edge Delivery Services ist die von Adobe bevorzugte Lösung zum Erstellen einer Storefront. Weitere Informationen finden Sie [ Dokument „Einführung ](/help/commerce-cloud/introduction.md) Übersicht“.
 
 ## Einstieg {#onboarding}
 
@@ -57,7 +57,7 @@ Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
 ### Über die Benutzeroberfläche von Cloud Manager (Standard) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343434?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Diese Konfiguration kann über ein Dialogfeld auf der Seite „Umgebungsdetails“ erfolgen. Wenn Sie diese Seite für ein Commerce-fähiges Programm anzeigen, wird eine Schaltfläche angezeigt, wenn der Endpunkt derzeit nicht konfiguriert ist:
 
@@ -73,7 +73,7 @@ Nachdem der Endpunkt (und optional ein Authentifizierungs-Header für die Unters
 
 ### Über Adobe I/O CLI  {#adobe-cli}
 
-Gehen Sie wie folgt vor, um AEM über Adobe I/O CLI mit einer E-Commerce-Lösung zu verbinden:
+Gehen Sie wie folgt vor, um AEM über Adobe I/O CLI mit einer Lösung für den Handel zu verbinden:
 
 1. Abrufen der Adobe I/O-CLI mit dem Cloud Manager-Plug-in.
 
@@ -128,14 +128,19 @@ Die folgenden Eigenschaften können konfiguriert werden:
 * GraphQL-Client – Wählen Sie den konfigurierten GraphQL-Client für die Commerce-Backend-Kommunikation aus. Dieser Client sollte normalerweise auf der Standardeinstellung bleiben.
 * Store-Ansicht – die Kennung der Store-Ansicht. Wenn leer, wird die standardmäßige Store-Ansicht verwendet.
 * GraphQL-Proxy-Pfad – der URL-Pfad des GraphQL-Proxy in AEM, der als Proxy für Anfragen an den GraphQL-Endpunkt für das Commerce-Backend verwendet wird.
+
   >[!NOTE]
   >
   > In den meisten Setups darf der Standardwert `/api/graphql` nicht geändert werden. Nur komplexere Setups, die nicht den bereitgestellten GraphQL-Proxy verwenden, sollten diese Einstellung ändern.
+
 * Unterstützung der Catalog-UID aktivieren – aktiviert die Unterstützung für UID anstelle von ID in den Commerce-Backend-GraphQL-Aufrufen.
+
   >[!NOTE]
   >
   > Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie UIDs nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+
 * Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
+
   >[!CAUTION]
   >
   > Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Wenn Ihr Projekt Version 2.0.0 der CIF-Kernkomponenten verwendet, müssen Sie die Unterstützung der Catalog-UID aktivieren und eine gültige Kategorie-UID als „Katalogstamm-Kategorienkennung“ verwenden.

@@ -4,8 +4,8 @@ description: Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistun
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 0c1d930f3fcffc27b6564449db3ff1968b077720
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 100%

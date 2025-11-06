@@ -2,9 +2,9 @@
 title: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 description: Erstellen benutzerdefinierter Komponenten für ein EDS-Formular
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2103'
 ht-degree: 99%
@@ -505,13 +505,13 @@ Die Legacy-Methode besteht darin, die unten beschriebenen Schritte manuell auszu
 
 10. **Aktualisieren Sie „_component-definition.json“**: Aktualisieren Sie in `models/_component-definition.json` das Array innerhalb der Gruppe mit `id custom-components` mit einem Objekt wie folgt:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll.
+   Dadurch wird der Verweis auf die neue Kartenkomponente bereitgestellt, die mit dem Rest der Komponenten erstellt werden soll.
 
 11. **Führen Sie das Build:json-Skript aus**: Führen Sie `npm run build:json` aus, um alle Komponenten-JSON-Definitionen zu kompilieren und in einer einzigen Datei zusammenzuführen, die vom Server bereitgestellt wird. Dadurch wird sichergestellt, dass das Schema der neuen Komponente in der zusammengeführten Ausgabe enthalten ist.
 

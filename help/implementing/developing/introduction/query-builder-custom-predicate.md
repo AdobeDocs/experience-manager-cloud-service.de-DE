@@ -3,9 +3,9 @@ title: Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Qu
 description: Der Query Builder in AEM bietet eine einfache, anpassbare Möglichkeit, das Inhalts-Repository abzufragen.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 100%
 

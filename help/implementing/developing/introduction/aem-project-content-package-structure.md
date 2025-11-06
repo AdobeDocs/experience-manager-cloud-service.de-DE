@@ -3,8 +3,8 @@ title: Struktur von AEM-Projekten
 description: Erfahren Sie, wie Sie Paketstrukturen für die Bereitstellung in Adobe Experience Manager Cloud Service definieren.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2859'
 ht-degree: 100%
@@ -159,7 +159,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Apache Jackrabbit File
 
 ## Markieren von Paketen für die Bereitstellung durch Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pakete. Da jedoch das Container-Paket (`all`) das einzige Implementierungsartefakt ist, das alle Code- und Inhaltspakete enthält, müssen Sie sicherstellen, dass **nur** das Containter-Paket (`all`) bereitgestellt wird. Um dies sicherzustellen, müssen andere Pakete, die der Maven-Build generiert, mit der FileVault Content Package Maven Plug-in-Konfiguration von `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` gekennzeichnet werden.
+Standardmäßig sammelt Adobe Cloud Manager alle vom Maven-Build erstellten Pakete. Da jedoch das Container-Paket (`all`) das einzige Implementierungsartefakt ist, das alle Code- und Inhaltspakete enthält, müssen Sie sicherstellen, dass **nur** das Containter-Paket (`all`) bereitgestellt wird. Um dies sicherzustellen, müssen andere Pakete, die der Maven-Build generiert, mit der FileVault Content Package Maven Plugin-Konfiguration von `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` gekennzeichnet werden.
 
 >[!TIP]
 >
@@ -293,7 +293,7 @@ Um eine ordnungsgemäße Installation der Pakete sicherzustellen, wird empfohlen
 
 Die allgemeine Regel ist, dass Pakete mit veränderlichem Inhalt (`ui.content`) vom unveränderlichen Code (`ui.apps`) abhängen sollten, der die Wiedergabe und Verwendung des veränderlichen Inhalts unterstützt.
 
-Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderliche Code-Paket (`ui.apps` oder jedes andere) __nur__ OSGi-Bundles enthält. Ist dies der Fall sollte kein AEM-Paket eine Abhängigkeit angeben. Der Grund dafür ist, dass unveränderliche Code-Pakete, die __nur__ OSGi-Bundles enthalten, nicht bei AEM [Package Manager](/help/implementing/developing/tools/package-manager.md) registriert sind. Daher hat jedes AEM Paket, das davon abhängig ist, eine nicht erfüllte Abhängigkeit und kann nicht installiert werden.
+Eine wichtige Ausnahme von dieser allgemeinen Regel ist, wenn das unveränderliche Code-Paket (`ui.apps` oder jedes andere) __nur__ OSGi-Bundles enthält. Ist dies der Fall sollte kein AEM-Paket eine Abhängigkeit angeben. Der Grund dafür ist, dass unveränderliche Code-Pakete, die __nur__ OSGi-Bundles enthalten, nicht beim [AEM-Paket-Manager](/help/implementing/developing/tools/package-manager.md) registriert sind. Daher hat jedes AEM Paket, das davon abhängig ist, eine nicht erfüllte Abhängigkeit und kann nicht installiert werden.
 
 >[!TIP]
 >
@@ -628,4 +628,4 @@ Fügen Sie in `all/pom.xml` das Plug-in `maven-clean-plugin` hinzu, das das Ziel
 ## Zusätzliche Ressourcen {#additional-resources}
 
 + [Verwalten von Paketen mithilfe von Maven](/help/implementing/developing/tools/maven-plugin.md)
-+ [FileVault Content Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

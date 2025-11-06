@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Microsoft Dynamics 365 mit Adaptive Forms int
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 16%
@@ -14,7 +14,8 @@ ht-degree: 16%
 
 # Konfigurieren von Microsoft® Dynamics 365 für AEM Forms
 
-Adobe Experience Manager Forms-Datenintegration bietet eine Cloud-Service-Konfiguration für die Integration von Formularen mit dem Microsoft Dynamics-Server. Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen (FDM) basierend auf den im Microsoft Dynamics-Service definierten Entitäten, Attributen und Services. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Forms zu erstellen, die mit dem Microsoft Dynamics-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
+Adobe Experience Manager Forms-Datenintegration bietet eine Cloud-Service-Konfiguration für die Integration von Formularen mit dem Microsoft Dynamics-Server. Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen (FDM) basierend auf den im Microsoft Dynamics-Service definierten Entitäten, Attributen und Services. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Forms zu erstellen, die mit dem Microsoft Dynamics-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Beispiel:
+
 * Abfragen eines Microsoft Dynamics-Servers nach Daten und Auffüllen adaptiver Forms.
 * Schreiben von Daten in Microsoft Dynamics bei Übermittlung von adaptiven Formularen
 * Schreiben von Daten in Microsoft Dynamics durch benutzerdefinierte Entitäten, die im Formulardatenmodell (FDM) definiert sind.
@@ -47,7 +48,9 @@ Stellen Sie vor der Integration von [!DNL Microsoft® Dynamics 365] mit AEM Form
    >[!VIDEO](https://video.tv.adobe.com/v/3444389/)
 
 1. **Erstellen Sie ein Konto im Power Platform Admin Center**
-Erstellen Sie ein Konto im **Power Platform Admin Center**, um:
+
+   Erstellen Sie ein Konto im **Power Platform Admin Center**, um:
+
    * Dataverse hinzufügen
    * Aktivieren von Microsoft Dynamics 365-Anwendungen
 
@@ -63,24 +66,24 @@ Erstellen Sie ein Konto im **Power Platform Admin Center**, um:
 
    >[!NOTE]
    >
-   > * Um die verbundene [!DNL Microsoft® Dynamics 365]-Anwendung zu erstellen, wählen Sie **Web** als Plattform aus und geben Sie den **Umleitungs-URI** im folgenden Format an: `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`.
-   > * Speichern Sie die Client-ID (auch als Anwendungs-ID bezeichnet) und das Client-Geheimnis, um später darauf Bezug nehmen zu können.
+   >* Um die verbundene [!DNL Microsoft® Dynamics 365]-Anwendung zu erstellen, wählen Sie **Web** als Plattform aus und geben Sie den **Umleitungs-URI** im folgenden Format an: `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`.
+   >* Speichern Sie die Client-ID (auch als Anwendungs-ID bezeichnet) und das Client-Geheimnis, um später darauf Bezug nehmen zu können.
 
 ## Forms mit Microsoft® Dynamics 365 verbinden
 
 Nachdem Sie die oben genannten Voraussetzungen konfiguriert haben, können Sie mit der Integration von Adaptive Forms in Microsoft® Dynamics 365 fortfahren. Gehen Sie wie folgt vor, um bei der Übermittlung des Formulars Daten an Microsoft® Dynamics 365 zu senden:
 
-[1. Konfigurieren der Cloud Service-Konfiguration für Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+[&#x200B;1. Konfigurieren der Cloud Service-Konfiguration für Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
 
-[2. Erstellen eines Formulardatenmodells (FDM)](#2-create-form-data-model-fdm)
+[&#x200B;2. Erstellen eines Formulardatenmodells (FDM)](#2-create-form-data-model-fdm)
 
-### 1. Konfigurieren der Cloud Service-Konfiguration für Microsoft Dynamics
+### &#x200B;1. Konfigurieren der Cloud Service-Konfiguration für Microsoft Dynamics
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444370/cloudconfiguration-dataintegration-adobeexperiencemanager-aemforms-microsoftdynamics)
 
 Führen Sie die folgenden Schritte aus, um die [!DNL Microsoft® Dynamics 365] Cloud Service-Konfiguration zu konfigurieren:
 
-1. Navigieren Sie auf [!DNL AEM Forms] Autoreninstanz zu **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Datenquellen]**.
+1. Navigieren Sie auf **[!UICONTROL Autoreninstanz zu]** Tools![ ](assets/hammer.png)hammer **[!UICONTROL >]** Cloud Services **[!UICONTROL >]** Datenquellen[!DNL AEM Forms].
 
    ![Cloud Data-Source auswählen](/help/forms/assets/dynamics-data-source.png)
 1. Wählen Sie einen Konfigurations-Container aus. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
@@ -123,7 +126,7 @@ Sie können die **Umgebungs-URL** aus dem **Power Platform Admin Center** kopier
 1. Melden Sie sich mit Ihren [!DNL Microsoft® Dynamics 365]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud-Service-Konfiguration eine Verbindung zum [!DNL Microsoft® Dynamics 365]-Service herstellt. Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie zur Seite „[!DNL Microsoft® Dynamics 365]-Cloud-Service-Konfiguration“ weitergeleitet, auf der eine Erfolgsmeldung angezeigt wird.
 1. Wählen **[!UICONTROL Erstellen]**, um die Konfiguration zu speichern.
 
-### 2. Erstellen eines Formulardatenmodells (FDM)
+### &#x200B;2. Erstellen eines Formulardatenmodells (FDM)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444367/aemforms-adobeexperiencemanager-formdatamodel--dataintegration-digitalforms)
 
@@ -133,7 +136,7 @@ Sie können das Formulardatenmodell (FDM) mithilfe der erstellten [!DNL Microsof
    ![Erstellen von Formulardatenmodellen](/help/forms/assets/dynamics-create-fdm.png)
 
 1. Klicken Sie **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Formulardatenmodell]** aus.
-   ![Formulardatenmodell auswählen](/help/forms/assets/dynamics-select-fdm.png)
+   ![Auswählen des Formulardatenmodells](/help/forms/assets/dynamics-select-fdm.png)
 
    Der **„Formulardatenmodell erstellen** wird angezeigt.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.

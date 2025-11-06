@@ -2,11 +2,11 @@
 title: Erste Schritte mit Edge Delivery Services für AEM Forms mithilfe des universellen Editors
 description: Erfahren Sie, wie Sie unter Einsatz von Edge Delivery Services mit WYSIWYG-Authoring im universellen Editor leistungsstarke Formulare erstellen und veröffentlichen können.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Um sicherzustellen, dass Edge Delivery Services für AEM Forms mit dem universel
 - **Vertrautheit mit Git**: Sie sollten mit der Durchführung grundlegender Git-Vorgänge wie dem Klonen von Repositorys, dem Übergeben von Änderungen und dem Pushen von Aktualisierungen vertraut sein. Diese Fähigkeiten sind für die Quellenverwaltung und die Zusammenarbeit bei Projekten von grundlegender Bedeutung.
 - **Grundlegendes zu Web-Technologien**: Es werden grundlegende Kenntnisse in HTML, CSS und JavaScript empfohlen. Diese Technologien bilden das Fundament für die Anpassung und Fehlerbehebung bei Formularen.
 - **Node.js (Version 16 oder höher)**: Für die lokale Entwicklung und die Ausführung von Build-Tools ist Node.js erforderlich. Stellen Sie sicher, dass auf Ihrem System Version 16 oder höher installiert ist.
-- **Package Manager (npm oder yarn)**: Sie benötigen entweder npm (Node Package Manager) oder yarn, um Projektabhängigkeiten und Skripte zu verwalten.
+- **Paket-Manager (npm oder yarn)**: Sie benötigen entweder npm (Node Package Manager) oder yarn, um Projektabhängigkeiten und Skripte zu verwalten.
 
 ### Empfohlener Hintergrund
 

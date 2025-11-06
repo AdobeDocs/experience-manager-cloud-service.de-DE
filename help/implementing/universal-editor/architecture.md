@@ -3,8 +3,8 @@ title: Architektur des universellen Editors
 description: Erfahren Sie mehr über die Architektur des universellen Editors und darüber, wie Daten zwischen seinen Diensten und Ebenen fließen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%

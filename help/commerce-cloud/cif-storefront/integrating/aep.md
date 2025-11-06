@@ -6,13 +6,13 @@ version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
-role: Architect, Developer
+role: Developer, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 96%
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 # AEM-CIF-Kernkomponenten und Integration mit Adobe Experience Platform {#aem-cif-aep-integration}
 
-Die Kernkomponenten des [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) bieten eine nahtlose Integration mit [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=de), um Storefront-Ereignisse und deren Daten aus Client-seitigen Interaktionen, z. B. __zum Warenkorb hinzufügen__, weiterzuleiten.
+Die Kernkomponenten des [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) bieten eine nahtlose Integration mit [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html), um Storefront-Ereignisse und deren Daten aus Client-seitigen Interaktionen, z. B. __zum Warenkorb hinzufügen__, weiterzuleiten.
 
 Das Projekt [CIF-Kernkomponenten für AEM](https://github.com/adobe/aem-core-cif-components) stellt eine JavaScript-Bibliothek mit dem Namen [Adobe Experience Platform Connector für Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) zur Verfügung, um Ereignisdaten aus Ihrer Commerce-Storefront zu erfassen. Diese Ereignisdaten werden an Experience Platform gesendet. Dort werden sie in anderen Adobe Experience Cloud-Produkten wie Adobe Analytics und Adobe Target zum Erstellen eines 360-Grad-Profils verwendet, das eine Customer Journey abdeckt. Durch die Verbindung von Commerce-Daten mit anderen Produkten in Adobe Experience Cloud können Sie Aufgaben wie die Analyse des Benutzerverhaltens auf Ihrer Site, AB-Tests und die Erstellung personalisierter Kampagnen durchführen.
 
@@ -46,7 +46,7 @@ Um eine funktionierende lokale Umgebung für __AEM Commerce as a Cloud Service__
 
 ### Lokales Setup
 
-Befolgen Sie die unter [Lokales Setup](/help/commerce-cloud/cif-storefront/develop.md#local-setup) angegebenen Schritte, um eine funktionierende Umgebung für AEM Commerce as a Cloud Service zu erhalten.
+Befolgen Sie die unter [Lokales Setup](/help/commerce-cloud/cif-storefront/develop.md#local-setup) angegebenen Schritte, um eine funktionierende AEM Commerce as a Cloud Service-Umgebung zu erhalten.
 
 ### Projekt-Setup
 
@@ -343,7 +343,7 @@ Um die von den AEM Commerce-Seiten kommenden Ereignisdaten, wie etwa Kategorie u
 
 >[!AVAILABILITY]
 >
->Stellen Sie sicher, dass Sie Teil der korrekten __Produktprofile__ unter __Adobe Experience Platform__ und __Adobe Experience Platform-Datenerfassung__ sind. Arbeiten Sie bei Bedarf mit Ihrem Systemadministrator zusammen, um „Produktprofile“ unter ____ Admin Console [&#x200B; erstellen, zu aktualisieren oder zuzuweisen](https://adminconsole.adobe.com/)
+>Stellen Sie sicher, dass Sie Teil der korrekten __Produktprofile__ unter __Adobe Experience Platform__ und __Adobe Experience Platform-Datenerfassung__ sind. Arbeiten Sie bei Bedarf mit Ihrem Systemadministrator zusammen, um „Produktprofile“ unter ____ Admin Console [ erstellen, zu aktualisieren oder zuzuweisen](https://adminconsole.adobe.com/)
 
 ### Erstellen eines Schemas mit einer Commerce-Feldergruppe {#create-schema}
 
@@ -494,6 +494,6 @@ __Profil-XDM-Ereignisse :__
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- Überblick über [[!DNL Data Connection] &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=de)
+- Überblick über [[!DNL Data Connection] ](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=de)
 - [[!DNL Data Connection] Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=de)
 - [Überblick zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)

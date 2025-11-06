@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: Vorbefüllen eines adaptiven Formulars, Edge Delivery Services für adaptive Formulare, automatisches Ausfüllen eines adaptiven Formulars
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Der Vorbefüllungsprozess umfasst vier wichtige Schritte:
 1. **Abrufen von Daten**: Das System ruft basierend auf Kontext, Parametern oder Benutzeridentifizierung relevante Benutzerdaten ab
 1. **Zuordnen und Anzeigen**: Daten werden Formularfeldern mithilfe von `bindRef`-Eigenschaften zugeordnet und das ausgefüllte Formular wird der Benutzerin bzw. dem Benutzer angezeigt
 
-Dieses automatisierte Verfahren sorgt dafür, dass die Benutzenden ein Formular mit ihren relevanten Daten vorausgefüllt sehen, was das Benutzererlebnis und die Formularausfüllraten erheblich verbessert.
+Dieses automatisierte Verfahren sorgt dafür, dass die Benutzenden ein Formular mit ihren relevanten Daten vorausgefüllt sehen, was das Benutzererlebnis und die Formularabschlussraten erheblich verbessert.
 
 ## Datenstruktur zum Vorbefüllen
 
@@ -157,7 +157,7 @@ Der universelle Editor bietet zwei Optionen für den Vorbefüllungsdienst:
 
 1. Klicken Sie auf **Erstellen**, um den Assistenten für **Formular erstellen** zu öffnen.
 
-   >
+   >[!NOTE]
    >
    > Sie können die Datenquelle in der Registerkarte **Daten** oder später bei der Bearbeitung der Formulareigenschaften konfigurieren.
 

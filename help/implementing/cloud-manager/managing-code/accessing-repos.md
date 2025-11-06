@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie mithilfe der Self-Service-Verwaltung der Git-
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 100%
@@ -66,4 +66,4 @@ Die Funktion **Auf Repository-Informationen zugreifen** ist auch von der Seite [
 
 Sie können jederzeit ein Zugangskennwort sperren lassen.
 
-[Erstellen Sie hierzu für diese Anfrage ein entsprechendes Support-Ticket](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=Experience+Manager&amp;support-tab=home#support). Das Ticket wird mit hoher Priorität behandelt und die Sperrung erfolgt normalerweise innerhalb eines Tages.
+[Erstellen Sie hierzu für diese Anfrage ein entsprechendes Support-Ticket](https://experienceleague.adobe.com/?lang=de&support-solution=Experience+Manager&support-tab=home#support). Das Ticket wird mit hoher Priorität behandelt und die Sperrung erfolgt normalerweise innerhalb eines Tages.

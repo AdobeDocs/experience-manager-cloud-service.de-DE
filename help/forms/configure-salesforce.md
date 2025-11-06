@@ -3,13 +3,13 @@ title: Konfigurieren von vorkonfigurierten Salesforce-Formulardatenmodellen für
 description: Erfahren Sie, wie Sie Salesforce mit Adaptive Forms integrieren.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 71%
 
 ---
-
 
 # Konfigurieren von Salesforce für AEM Forms {#configure-azure-storage}
 
@@ -20,7 +20,7 @@ ht-degree: 71%
 * Abfragen eines [!DNL Salesforce]-Servers nach Daten und Auffüllen adaptiver Formulare.
 * Lesen Sie Daten vom [!DNL Salesforce]-Server.
 
-[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet ](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >
@@ -59,6 +59,7 @@ Führen Sie die folgenden Schritte aus, um den [!DNL Salesforce]-Cloud-Service z
 Ein vorkonfiguriertes [!DNL Salesforce]-Formulardatenmodell (FDM) ist auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms basierend auf einem Experience Manager-Archetyp eingerichtet haben](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 So greifen Sie auf das Formulardatenmodell (FDM) zu:
+
 1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Datenintegrationen]**.
 1. Wählen Sie den Ordnernamen und dann das **[!UICONTROL Salesforce-Datenmodell]** aus, und wählen Sie anschließend das Symbol „Bearbeiten“ ![Bearbeiten](assets/edit.png), um das Formulardatenmodell (FDM) anzuzeigen.
 

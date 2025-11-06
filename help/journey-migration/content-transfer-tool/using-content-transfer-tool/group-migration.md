@@ -2,9 +2,9 @@
 title: Gruppenmigration
 description: Überblick über die Gruppenmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1917'
 ht-degree: 97%
 
 ---
@@ -48,7 +48,7 @@ Die meisten migrierten Gruppen sind so konfiguriert, dass sie von IMS verwaltet 
 
 Beachten Sie, dass migrierte Gruppen nicht mehr als „lokale Gruppen“ von AEM angesehen werden. Sie sind IMS-kompatible Gruppen in AEM, obwohl sie möglicherweise noch nicht in IMS existieren.   Sie müssen in IMS separat neu erstellt werden, damit sie zwischen AEM und IMS synchronisiert werden können.  Gruppen können in IMS unter anderem über die Admin Console einzeln oder massenhaft erstellt werden.  Weitere Informationen zum Erstellen von Gruppen (einzeln oder in großer Anzahl) in der Admin Console finden Sie unter [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
 
-Die Ausnahme von dieser IMS-Konfiguration betrifft Gruppen, die von Assets-Sammlungen und privaten Ordnern erstellt wurden. Wenn eine Sammlung oder ein privater Ordner in AEM erstellt wird, werden Gruppen für den Zugriff auf diese Inhalte erstellt. Diese Gruppen werden in das Cloud-System migriert, sind jedoch nicht für die Verwaltung durch IMS konfiguriert.  Um diesen Gruppen IMS-Benutzende hinzuzufügen, müssen sie auf der Seite „Gruppeneigenschaften“ in der Assets-Benutzeroberfläche entweder einzeln oder gemeinsam als Teil einer anderen IMS-Gruppe hinzugefügt werden.
+Die Ausnahme für diese IMS-Konfiguration sind Gruppen, die von Assets-Sammlungen und privaten Ordnern erstellt wurden. Wenn eine Sammlung oder ein privater Ordner in AEM erstellt wird, werden Gruppen für den Zugriff auf diese Inhalte erstellt. Diese Gruppen werden in das Cloud-System migriert, sind jedoch nicht für die Verwaltung durch IMS konfiguriert.  Um diesen Gruppen IMS-Benutzende hinzuzufügen, müssen sie auf der Seite „Gruppeneigenschaften“ in der Assets-Benutzeroberfläche entweder einzeln oder gemeinsam als Teil einer anderen IMS-Gruppe hinzugefügt werden.
 
 
 ## Deaktivieren der Gruppenmigration {#group-migration-option}
@@ -65,12 +65,14 @@ Wenn diese Einstellung deaktiviert ist, werden keine Gruppen migriert und es gib
 ## Bericht zur Prinzipalmigration und Benutzerbericht {#principal-migration-report}
 
 Wenn bei der Migration Gruppen eingeschlossen werden (Standard), wird ein Bericht zur Prinzipalmigration gespeichert, in dem beschrieben wird, was während der Migration mit den einzelnen Gruppen passiert.  So laden Sie diesen Bericht nach erfolgreicher Aufnahme herunter:
+
 * Navigieren Sie in CAM zu „Content-Übertragung“ und wählen Sie „Aufnahmevorgänge“ aus.
 * Klicken Sie auf die Auslassungspunkte (…) in der Zeile der betreffenden Aufnahme und wählen Sie „Prinzipalzusammenfassung anzeigen“ aus.
 * Wählen Sie im angezeigten Dialogfeld in der Dropdown-Liste unter „Datei herunterladen…“ die Option „Bericht zur Prinzipalmigration“ und klicken Sie auf die Schaltfläche „Herunterladen“.
 * Speichern Sie die resultierende CSV-Datei.
 
 Einige der aufgezeichneten Informationen pro Gruppe sind:
+
 * Bei einer Migration der Pfad zur ersten ACL oder CUG, die zur Migration der Gruppe geführt hat.
 * Ob die Gruppe zuvor migriert wurde. Wenn die aktuelle Aufnahme eine nicht löschende Aufnahme war, wurden einige Gruppen möglicherweise während einer vorherigen Aufnahme migriert.
 * Ob die Gruppe eine integrierte Gruppe ist. Diese Gruppen werden nicht migriert, da sie sich immer in der AEMaaCS-Zielumgebung befinden.
@@ -109,7 +111,7 @@ Weitere Informationen zur Verwaltung von AEM as a Cloud Service-Benutzenden find
 
 * Wenn die Einstellung **Vorhandene Inhalte in der Cloud-Instanz vor der Aufnahme löschen** festgelegt ist, werden bereits übertragene Gruppen in der Cloud Service-Instanz gemeinsam mit dem gesamten existierenden Repository gelöscht, und es wird ein neues Repository erstellt, in das Inhalte aufgenommen werden. Dadurch werden auch alle Einstellungen zurückgesetzt, einschließlich der Berechtigungen für die Cloud Service-Zielinstanz. Dies gilt für alle Benutzenden, die zur Gruppe der **Admins** hinzugefügt wurden. Admin-Benutzende müssen der Gruppe **Admins** erneut hinzugefügt werden, um das Zugriffs-Token für die CTT- bzw. CAM-Aufnahme abrufen zu können.
 * Wenn bei der Durchführung von nicht löschenden Aufnahmen (die Option **Vorhandene Inhalte löschen** ist nicht eingestellt) Inhalte nicht übertragen werden, weil sie sich seit der letzten Übertragung nicht geändert haben, werden auch die mit diesen Inhalten verbundenen Gruppen nicht übertragen. Diese Regel gilt auch dann, wenn sich die Gruppen auf dem Quellsystem zwischenzeitlich geändert haben. Dies liegt daran, dass Gruppen zusammen mit den Inhalten migriert werden, mit denen sie verknüpft sind. Aus diesem Grund werden in diesem Fall keine Gruppen migriert, die Mitglieder einer Gruppe im Quellsystem sind, es sei denn, sie sind Teil einer anderen Gruppe, die migriert wird, oder befinden sich in der ACL anderer Inhalte, die migriert werden. Um diese Gruppen anschließend zu migrieren, sollten Sie Pakete verwenden, Gruppen aus der Zielgruppe löschen und den relevanten Inhalt erneut migrieren oder erneute Migrationen mit einer löschenden Aufnahme durchführen.
-* Wenn während einer nicht löschenden Aufnahme eine Gruppe mit denselben eindeutigkeitsbeschränkten Daten (rep:principalName, rep:authorizableId, jcr:uuid oder rep:externalId) sowohl in der AEM-Quellinstanz als auch in der AEM Cloud Service-Zielinstanz vorhanden ist, wird die betreffende Gruppe _nicht_ migriert und die zuvor vorhandene Gruppe im Cloud-System bleibt unverändert. Dies wird im Bericht zur Prinzipalmigration protokolliert.
+* Wenn während einer Nicht-Löschaufnahme eine Gruppe mit denselben auf Eindeutigkeit beschränkten Daten (rep:principalName, rep:authorizableId, jcr:uuid oder rep:externalId) sowohl in der Quell-AEM-Instanz als auch in der Ziel-AEM Cloud Service-Instanz vorhanden ist, wird die betreffende Gruppe _nicht_ migriert und die zuvor im Cloud-System vorhandene Gruppe bleibt unverändert. Dies wird im Bericht zur Prinzipalmigration protokolliert.
 * Siehe [Migrieren von geschlossenen Benutzergruppen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) für zusätzliche Überlegungen zu Gruppen, die in einer Richtlinie für geschlossene Benutzergruppen (CUG) verwendet werden.
 
 ## Endgültige Zusammenfassung und Bericht

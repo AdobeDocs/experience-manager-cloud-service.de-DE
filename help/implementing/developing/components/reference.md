@@ -3,11 +3,11 @@ title: Komponenten-Referenzhandbuch
 description: Ein Referenzhandbuch für Entwickler zu den Details der Komponenten und ihrer Struktur.
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3481'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '3476'
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
    * Weitere Informationen finden Sie im Abschnitt [Komponentensymbol](#component-icon).
 * **Wichtige untergeordnete Knoten**:
    * `cq:editConfig (cq:EditConfig)` – Definiert die Bearbeitungseigenschaften der Komponente und ermöglicht es, dass die Komponente im Komponenten-Browser aufgeführt wird.
-      * Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponenten-Browser oder Sidekick aufgeführt, selbst wenn die cq:editConfig nicht vorhanden ist.
+      * Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponentenbrowser oder in Sidekick angezeigt, auch wenn das cq:editConfig nicht vorhanden ist.
    * `cq:childEditConfig (cq:EditConfig)` – Steuert Aspekte der Autoren-Benutzeroberfläche für untergeordnete Komponenten, die keine eigene `cq:editConfig` definieren.
    * `cq:dialog (nt:unstructured)` – Dialogfeld für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
    * `cq:design_dialog (nt:unstructured)` – Design-Bearbeitung für diese Komponente.
@@ -352,15 +352,15 @@ Im vorherigen Beispiel ist `model.text` die Variable, die nur dann wahr ist, wen
 
 Eine beispielhafte Verwendung dieser Vorlage ist in den Kernkomponenten zu sehen, [wie z. B. in der Titelkomponente](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
-### Konfigurieren mit untergeordneten cq:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
+### Konfigurieren von mit untergeordneten CQ:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
 
-#### Ablegen von Assets in einem Dialogfeld – cq:dropTargets {#cq-droptargets}
+#### Ablegen von Assets in einem Dialogfeld - CQ:dropTargets {#cq-droptargets}
 
 Der Knoten `cq:dropTargets` (Knotentyp `nt:unstructured`) legt die Ablageziele fest, die eine Ablage von einem Asset aus dem Content Finder akzeptieren können. Er ist ein Knoten vom Typ `cq:DropTargetConfig`.
 
 Der untergeordnete Knoten vom Typ `cq:DropTargetConfig` definiert ein Ablageziel in der Komponente.
 
-### Bearbeitung im Kontext – cq:inplaceEditing {#cq-inplaceediting}
+### Bearbeitung im Kontext - CQ:inplaceEditing {#cq-inplaceediting}
 
 Ein Editor für die Bearbeitung im Kontext ermöglicht es dem Benutzer, Inhalte direkt im Inhaltsfluss zu bearbeiten, ohne dass ein Dialogfeld geöffnet werden muss. Zum Beispiel haben die Standardkomponenten für **Text** und **Titel** beide einen Editor für die Bearbeitung im Kontext.
 
@@ -383,7 +383,7 @@ Die folgende Konfiguration aktiviert die Bearbeitung der Komponente im Kontext u
         editorType="plaintext"/>
 ```
 
-### Handhabung von Feldereignissen – cq:listeners {#cq-listeners}
+### Umgang mit Feldereignissen - CQ:listeners {#cq-listeners}
 
 Die Methode zur Handhabung von Ereignissen in Dialogfeldern wird jetzt mit Listenern in einer benutzerdefinierten [Client-Bibliothek](/help/implementing/developing/introduction/clientlibs.md) ausgeführt.
 

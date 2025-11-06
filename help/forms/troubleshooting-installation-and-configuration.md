@@ -5,7 +5,7 @@ contentOwner: khsingh
 feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 100%
@@ -30,6 +30,7 @@ So aktivieren Sie die Option **[!UICONTROL Formulare]**:
 1. Wählen Sie die Option **[!UICONTROL Formulare]** aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![Wählen Sie die Option „Formulare“ aus](assets/installation-configuration-select-forms-option.png).
+
 1. [Erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=de#how-to-use) Sie sowohl Produktions- als auch Nicht-Produktions-Pipelines und [führen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) Sie sie aus.
 
 Nachdem die Pipeline erstellt und bereitgestellt wurde, die Option **[!UICONTROL Formulare]** auf der Seite **[!UICONTROL Navigation]**.
@@ -60,6 +61,6 @@ Um das Problem zu beheben, öffnen Sie Cloud Manager, wählen Sie die Option **[
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
 1. Starten Sie AEM vollständig und warten Sie, bis alle Pakete verfügbar sind.
-1. Beenden Sie AEM (Strg+C).
+1. Stoppen Sie AEM (Strg+C).
 1. Platzieren Sie die `.far`-Forms-Datei in den Installationsordner.
 1. Starten Sie den AEM-Server neu.

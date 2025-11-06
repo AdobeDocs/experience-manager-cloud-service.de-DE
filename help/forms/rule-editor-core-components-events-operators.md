@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 50%
@@ -169,6 +169,7 @@ Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM
 Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
 Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft auf einen der folgenden Werte festlegen:
+
 * visible (Boolescher Wert)
 * label.value (Zeichenfolge)
 * label.visible (Boolescher Wert)
@@ -347,11 +348,11 @@ Ebenso können Sie eine Regel **Navigieren zwischen den Bereichen** schreiben, u
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier &#x200B;](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
 #### [!UICONTROL Async-Funktionsaufruf]
 
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
+<span class="preview"> Dies ist eine Vorabversionsfunktion, auf die über unseren [Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
 
 Der Regeltyp **[!UICONTROL Aufruf der asynchronen Funktion]** ermöglicht die Ausführung asynchroner Funktionen. Dies ermöglicht es Ihnen, einen Funktionsaufruf zu initiieren, der unabhängig vom Haupt-Ausführungs-Thread ausgeführt wird, sodass andere Prozesse weiter ausgeführt werden können, ohne auf den Abschluss der asynchronen Funktion zu warten.
 
@@ -389,7 +390,7 @@ To define a rule based on a form data model:
 
 ## Nächster Schritt
 
-Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) &#x200B;](/help/forms/rule-editor-core-components-usecases.md).
+Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) ](/help/forms/rule-editor-core-components-usecases.md).
 
 ## Siehe auch
 

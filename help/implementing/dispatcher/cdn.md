@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
@@ -68,7 +68,7 @@ Sie können eine CDN-Fehlerseite konfigurieren, um die (markenfreie) Standardsei
 
 Das Festlegen einer TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. Wenn aktualisierte Inhalte jedoch sofort bereitgestellt werden müssen, kann es von Vorteil sein, den CDN-Cache direkt zu bereinigen.
 
-Lesen Sie mehr über das [Konfigurieren eines Bereinigungs-API-Tokens](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) und das [Bereinigen von zwischengespeicherten CDN-Inhalten](/help/implementing/dispatcher/cdn-cache-purge.md).
+Lesen Sie mehr über das [Konfigurieren eines Bereinigungs-API-Tokens](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) und das [Bereinigen von zwischengespeicherten CDN-Inhalten](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 ### Grundlegende Authentifizierung im CDN {#basic-auth}
 

@@ -3,17 +3,17 @@ title: Erweitern des Multi-Site-Managers
 description: Erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers erweitern können.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2337'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
 # Erweitern des Multi-Site-Managers {#extending-the-multi-site-manager}
 
-In diesem Dokument erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers erweitern können. Es werden die folgenden Themen behandelt.
+In diesem Dokument erfahren Sie, wie Sie die Funktionen des Multi-Site Managers erweitern können. Es werden die folgenden Themen behandelt.
 
 * Erfahren Sie mehr über die wichtigsten MSM-Java-APIs
 * Erstellen Sie eine neue Synchronisierungsaktion, die in einer Rollout-Konfiguration verwendet werden kann
@@ -25,7 +25,7 @@ In diesem Dokument erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers 
 
 >[!CAUTION]
 >
->Der Multi-Site-Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Autorenumgebung gedacht.
+>Der Multi-Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Autorenumgebung gedacht.
 
 ## Überblick über die Java-API {#overview-of-the-java-api}
 
@@ -522,7 +522,7 @@ Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveAc
 
    * **Titel**: Beispiel-Rollout-Konfiguration
    * **Name**: examplerolloutconfig
-   * **cq:trigger**: `publish`
+   * **CQ:trigger**: `publish`
 
 ### Hinzufügen der Live-Aktion zur Rollout-Beispielkonfiguration {#add-the-live-action-to-the-example-rollout-configuration}
 

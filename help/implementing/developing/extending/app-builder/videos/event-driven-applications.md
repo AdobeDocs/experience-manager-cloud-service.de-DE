@@ -4,12 +4,12 @@ description: Erfahren Sie, wie Sie ereignisgesteuerte App Builder-Programme erst
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9458,9479
 thumbnail: 339244.jpg
 exl-id: 6cd06ddc-2ce3-4e59-bd62-baee44763591
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 100%
@@ -22,10 +22,10 @@ ht-degree: 100%
 
 Erfahren Sie mehr über ereignisgesteuerte Architektur, Adobe I/O-Ereignisse und benutzerspezifische Ereignisse.
 
->[!VIDEO](https://video.tv.adobe.com/v/345711/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
 ## Erstellen ereignisgesteuerter App Builder-Programme
 
->[!VIDEO](https://video.tv.adobe.com/v/345712/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
 Erfahren Sie, wie Sie Veröffentlichungen erstellen können, um Ereignisse in einem App Builder-Programm zu nutzen.

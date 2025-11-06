@@ -2,10 +2,10 @@
 title: Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick
 description: Erfahren Sie, wie Sie mit einem Klick auf eine Schaltfläche schnell eine Edge Delivery-Site in Cloud Manager erstellen können.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 100%
 

@@ -2,9 +2,9 @@
 title: Konfigurieren einer Edge Delivery-Site zur Verwendung eines externen Git-Repositorys
 description: Erfahren Sie, wie Sie eine Edge Delivery-Site mit einem privaten oder unternehmensspezifischen Git-Repository verknüpfen können.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: e1922bd862a2106a274694ea1d3a98da9c186049
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 100%

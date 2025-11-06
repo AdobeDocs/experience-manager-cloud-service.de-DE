@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1952'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -280,8 +280,10 @@ So vermeiden Sie diese Situation:
 Dadurch wird der Dispatcher angewiesen, die ursprüngliche URL an AEM weiterzuleiten, sodass doppelte Kodierungen vermieden werden.
 Diese Einstellung funktioniert derzeit nur für die `vhost`-Ebene. Wenn Sie also bereits über Dispatcher-Konfigurationen zum Umschreiben von URLs verfügen (z. B. bei Verwendung gekürzter URLs), benötigen Sie möglicherweise einen separaten `vhost` für persistierte Abfrage-URLs.
 
-   * Senden Sie die Zeichen `/` oder `\` nicht kodiert.
-Stellen Sie beim Aufrufen der persistierten Abfrage-URL sicher, dass alle `/`- oder `\`-Zeichen im Wert persistierter Abfragevariablen unkodiert bleiben.
+   * Senden Sie `/` oder `\` Zeichen unverschlüsselt.
+
+     Stellen Sie beim Aufrufen der persistierten Abfrage-URL sicher, dass alle `/`- oder `\`-Zeichen im Wert persistierter Abfragevariablen unkodiert bleiben.
+
      >[!NOTE]
      >
      >Diese Option wird nur empfohlen, wenn die `DispatcherNoCanonURL`-Lösung aus irgendeinem Grund nicht implementiert werden kann.
@@ -292,7 +294,7 @@ Stellen Sie beim Aufrufen der persistierten Abfrage-URL sicher, dass alle `/`- o
 
 ## Caching persistierter Abfragen {#caching-persisted-queries}
 
-Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](/help/headless/deployment/dispatcher.md)- und CDN-Ebene zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
+Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](/help/headless/deployment/dispatcher.md)- und CDN-Ebene (Content Delivery Network) zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
 
 Standardmäßig macht AEM zwischengespeicherte Inhalte, die auf einer TTL (Time To Live)-Definition basieren, ungültig. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
 
@@ -305,9 +307,9 @@ Standardmäßig macht AEM zwischengespeicherte Inhalte, die auf einer TTL (Time 
 
 {style="table-layout:auto"}
 
-### Authoring-Instanzen {#author-instances}
+### Autoreninstanzen {#author-instances}
 
-Für Authoring-Instanzen sind die Standardwerte:
+Für Autoreninstanzen sind die Standardwerte:
 
 * `max-age` : 60
 * `s-maxage` : 60
@@ -324,7 +326,7 @@ Diese:
 
 ### Veröffentlichungsinstanzen {#publish-instances}
 
-Für Publishing-Instanzen sind die Standardwerte:
+Für Veröffentlichungsinstanzen sind die Standardwerte:
 
 * `max-age` : 60
 * `s-maxage` : 7200
@@ -386,7 +388,7 @@ Um den Cache global zu verwalten, können Sie [die OSGi-Einstellungen](/help/imp
 
 >[!NOTE]
 >
->Für die Cache-Steuerung ist die OSGi-Konfiguration nur für Publishing-Instanzen geeignet. Die Konfiguration ist in Authoring-Instanzen zwar vorhanden, wird jedoch ignoriert.
+>Für die Cache-Steuerung ist die OSGi-Konfiguration nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Autoreninstanzen zwar vorhanden, wird jedoch ignoriert.
 
 >[!NOTE]
 >

@@ -3,8 +3,8 @@ title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit den Konfigurationen von Adobe Experience Manager (AEM) und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 100%

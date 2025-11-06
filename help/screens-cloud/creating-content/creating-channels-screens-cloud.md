@@ -4,7 +4,7 @@ description: Auf dieser Seite wird beschrieben, wie Sie in Screens as a Cloud Se
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 100%
@@ -114,8 +114,9 @@ Mit dieser Funktion können Sie einen standardmäßigen Aktivierungsplan für ei
    ![image](/help/screens-cloud/assets/display/Assignments3.png)
 
 Auf dieser Kachel werden die folgenden Informationen angezeigt:
+
 * Standardpriorität des Kanals im Display.
-* Beginn und Ende der Aktivierung für die Wiedergabe des Kanals.
+* Start- und Enddatum der Aktivierung für die Wiedergabe des Kanals.
 * Synthetische Ansicht des Intervall (stündlich/täglich/wöchentlich/monatlich/jährlich und Name des Intervall).
 
 ### Verwenden der Standardzuweisungsdetails beim Zuweisen zu einem Display {#default-display}

@@ -6,8 +6,8 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 100%
 
@@ -17,11 +17,12 @@ ht-degree: 100%
 
 <span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=de) automatisiert den Prozess für sich wiederholende Aufgaben, wie z. B. Arbeitsabläufe zur Genehmigung von Dokumenten, E-Mail-Filterung und Sortierung, sodass Sie sich auf neue Aufgaben statt auf wiederkehrende Aufgaben konzentrieren können. Adobe Workfront Fusion umfasst mehrere Szenarien. Ein Szenario besteht aus einer Reihe von Modulen, die die Datenübertragung zwischen Anwendungen und Web-Diensten durchführen. In einem Szenario fügen Sie verschiedene Schritte (Module) hinzu, um eine Aufgabe zu automatisieren.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=de) automatisiert den Prozess für sich wiederholende Aufgaben, wie z. B. Workflows zur Genehmigung von Dokumenten, E-Mail-Filterung und Sortierung, sodass Sie sich auf neue Aufgaben statt auf wiederkehrende Aufgaben konzentrieren können. Adobe Workfront Fusion umfasst mehrere Szenarien. Ein Szenario besteht aus einer Reihe von Modulen, die die Datenübertragung zwischen Anwendungen und Web-Diensten durchführen. In einem Szenario fügen Sie verschiedene Schritte (Module) hinzu, um eine Aufgabe zu automatisieren.
 
 Beispielsweise können Sie mit Workfront Fusion ein Szenario erstellen, um Daten mit dem adaptiven Formular zu erfassen, die Daten zu verarbeiten und die Daten zur Archivierung an einen Datenspeicher zu senden. Nachdem ein Szenario eingerichtet wurde, führt Workfront Fusion die Aufgaben automatisch aus, sobald eine Person ein Formular ausfüllt, wodurch der Datenspeicher nahtlos aktualisiert wird.
 
 AEM Forms as a Cloud Service bietet einen vorkonfigurierten Connector zum Verbinden und Senden eines adaptiven Formulars an Adobe Workfront Fusion. Die Übermittlung eines Formulars an Adobe Workfront Fusion kann mehrere Vorteile bieten:
+
 * Sie ermöglicht die nahtlose Übertragung von Formularübermittlungsdaten an Workfront Fusion-Workflows.
 * Dies hilft bei der Automatisierung verschiedener Aufgaben, die durch Formularübermittlungen ausgelöst werden. Dazu können das Initiieren von Projekten, das Zuweisen von Aufgaben zu bestimmten Team-Mitgliedern, das Senden von Benachrichtigungen und das Aktualisieren des Projektstatus gehören – alles ohne manuelles Eingreifen.
 * Alle in Workfront Fusion erfassten Formularübermittlungen bieten eine zentrale Quelle für projektbezogene Informationen.

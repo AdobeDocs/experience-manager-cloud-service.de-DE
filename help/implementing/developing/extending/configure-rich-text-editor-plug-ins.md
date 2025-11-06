@@ -5,11 +5,11 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
-ht-degree: 100%
+source-wordcount: '4302'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Standardmäßig sind die Plug-ins `format`, `link`, `list`, `justify` und `contr
       * ein alternativer Konfigurationsknoten: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * Sie weisen den folgenden Typ auf: **jcr:primaryType** `cq:Widget`
+   * sind vom Typ: **jcr:primaryType** `cq:Widget`
    * Beide verfügen über die folgende Eigenschaft:
 
       * **Name** `name`
@@ -455,12 +455,10 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 1. Fügen Sie unter diesem Knoten (der entsprechend dem Sonderzeichenbereich benannt wurde) die folgenden beiden Eigenschaften hinzu:
 
    * **Name** `rangeStart`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
 
    * **Name** `rangeEnd`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
 
@@ -500,8 +498,8 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
    >* **Typ** `String[]`
    >
    >* **Wert(e):** Nach Bedarf einen oder beide der folgenden Werte:
-   >* `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
-   >* `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
+   >   * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
+   >   * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
 1. Definieren Sie den Speicherort von CSS-Stylesheets, um diese zu referenzieren. Siehe [Festlegen des Stylesheet-Speicherorts](#locationofstylesheet), da dieser derselbe wie bei der Definition der [Textstile](#textstyles) ist. Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
 1. Erstellen Sie unter dem Knoten `table` die folgenden neuen Knoten (nach Bedarf):

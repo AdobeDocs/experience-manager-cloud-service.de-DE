@@ -6,7 +6,7 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: c721a8db801602389822222b08ca4ea1fd2293e4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 100%
@@ -31,6 +31,7 @@ Gruppen werden automatisch in eine CTT/CAM-Migration zu Adobe Experience Manager
 Um CUGs in AEM as a Cloud Service zu verwenden, müssen Benutzende in der Autoreninstanz vorhanden und Mitglieder der entsprechenden CUGs-Gruppen sein.  Dies kann mithilfe von Paketen erreicht werden. Wenn die CUGs-Benutzenden IMS-Benutzende sind, sind sie möglicherweise bereits vorhanden.  CUGs-Benutzende müssen dann Mitglieder der AEM CUGs-Gruppen werden.
 
 Um das CUGs-Verhalten auf der Veröffentlichungsinstanz zu aktivieren,
+
 1. müssen die CUGs-Gruppen aktiviert werden (wodurch sie und ihre Mitglieder in der Veröffentlichungsinstanz repliziert werden),
 1. Die Veröffentlichung *aller* mit CUGs-Richtlinien geschützten Seiten muss rückgängig gemacht werden (um die globale CUGs-Anzahl zu löschen) und
 1. die mit CUGs-Richtlinien geschützten Seiten müssen anschließend veröffentlicht werden (dies ermöglicht die Veröffentlichungsinstanz und das Tracking der Richtlinien).

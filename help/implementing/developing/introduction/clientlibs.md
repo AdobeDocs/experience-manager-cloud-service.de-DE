@@ -3,8 +3,8 @@ title: Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service
 description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code (clientlibs) im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie die einzelnen Code-Kategorien für den Client bereitgestellt werden sollen.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2428'
 ht-degree: 99%
@@ -137,7 +137,7 @@ This is possible. Still need detail.
 
 ## Client-Bibliotheken auf einer Autoreninstanz im Vergleich zur Veröffentlichungsinstanz {#clientlibs-author-publish}
 
-Die meisten Client-seitigen Bibliotheken sind für die AEM-Publishing-Instanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis der Inhalte zu bilden. Bei Client-seitigen Bibliotheken in Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
+Die meisten Client-seitigen Bibliotheken sind für die AEM-Veröffentlichungsinstanz erforderlich. Das bedeutet, dass der Zweck der meisten Client-seitigen Bibliotheken darin besteht, das Endanwendererlebnis der Inhalte zu bilden. Bei Client-seitigen Bibliotheken in Veröffentlichungsinstanzen können [Frontend-Build-Tools](#fed-for-aemaacs) wie oben beschrieben über [Client-Bibliotheksordner](#creating-clientlib-folders) verwendet und bereitgestellt werden.
 
 Es kann jedoch vorkommen, dass Client-Bibliotheken zum Anpassen des Authoring-Erlebnisses erforderlich sind. Beispielsweise kann es zum Anpassen eines Dialogfelds erforderlich sein, kleine CSS- oder JS-Elemente auf der AEM-Autoreninstanz bereitzustellen.
 
@@ -224,7 +224,7 @@ Legen Sie mit der categories-Eigenschaft den Client-Bibliotheksordner fest, den 
 
 #### Minimieren von Anfragen durch Einbetten {#using-embedding-to-minimize-requests}
 
-In einigen Fällen enthält der endgültige HTML-Code, den Ihre Publishing-Instanz für eine typische Seite generiert, möglicherweise eine recht große Anzahl an `<script>`-Elementen.
+In einigen Fällen enthält der endgültige HTML-Code, den Ihre Veröffentlichungsinstanz für eine typische Seite generiert, möglicherweise eine recht große Anzahl an `<script>`-Elementen.
 
 In solchen Fällen kann es nützlich sein, den gesamten benötigten Client-Bibliotheks-Code in einer einzelnen Datei zu kombinieren, um die Anzahl der Anfragen in beide Richtungen beim Laden einer Seite zu reduzieren. Zu diesem Zweck können Sie die erforderlichen Bibliotheken in Ihre App-spezifische Client-Bibliothek einbetten. Nutzen Sie dazu die `embed`-Eigenschaft des `cq:ClientLibraryFolder`-Knotens.
 

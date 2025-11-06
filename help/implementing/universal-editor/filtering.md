@@ -2,10 +2,10 @@
 title: Filtern von Komponenten
 description: 'Erfahren Sie, wie Sie die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. '
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 100%
 

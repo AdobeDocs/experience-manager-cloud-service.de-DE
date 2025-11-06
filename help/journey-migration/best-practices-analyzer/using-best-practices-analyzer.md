@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit Best Practices Analyzer die Bereitschaft 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 100%
@@ -222,6 +222,7 @@ Der Wert „\N“ in einer Spalte für ein einzelnes Ergebnis zeigt an, dass kei
 BPA bietet eine HTTP-Schnittstelle, die als Alternative zur AEM-Benutzeroberfläche verwendet werden kann. Die Schnittstelle unterstützt sowohl HEAD- als auch GET-Befehle. Sie kann zum Generieren des BPA-Berichts und zur Rückgabe in einem der drei folgenden Formate verwendet werden: JSON-, CSV- und tabulatorgetrennte Werte (TSV).
 
 Die folgenden URLs stehen für den HTTP-Zugriff zur Verfügung, wobei `<host>` der Host-Name und gegebenenfalls der Port des Servers ist, auf dem BPA installiert ist:
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` für das JSON-Format
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` für das CSV-Format
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` für das TSV-Format

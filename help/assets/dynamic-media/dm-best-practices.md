@@ -9,10 +9,10 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Zu den wichtigsten Grundsätzen von Dynamic Media gehören die Folgenden:
 
 * **Einzeldatei-Ansatz:** Mit Dynamic Media speichern Sie eine primäre Quelldatei. Alle Größenvarianten und visuellen Effekte werden zum Zeitpunkt der Bereitstellung dynamisch erstellt und optimiert. Dieser Ansatz spart Speicherkosten und beseitigt die Komplexität von Workflows.
 * **Wirklich global:** Die intelligente Bildbearbeitung, die während der Inhaltsbereitstellung angewendet wird, reduziert die Bild- und Seitengröße erheblich, ohne die visuelle Qualität zu beeinträchtigen. Sie ist für Netzwerkbandbreite und gerätespezifische Pixelverhältnisse optimiert.
-* **KI-gestützt:** Das intelligente Zuschneiden, eine KI-gesteuerte Funktion, automatisiert auf Bildern und in Videos das Zuschneiden entsprechend den Interessenschwerpunkten. Die Funktion macht manuelles Arbeiten überflüssig und skaliert effizient für die Verwendung in Unternehmen.
+* **KI-gestützt:** Der intelligente Zuschnitt, eine KI-gesteuerte Funktion, automatisiert auf Bildern und in Videos das Zuschneiden entsprechend den Interessenschwerpunkten. Die Funktion macht manuelles Arbeiten überflüssig und skaliert effizient für die Verwendung in Unternehmen.
 * **Einfaches Video:** Laden Sie Primärvideos in Dynamic Media hoch und streamen Sie sie mit beschreibendem Audio adaptiv über mehrere Sprachen hinweg.
 * **Erlebnis Viewer-Bibliothek:** Passen Sie Erlebnis-Viewer für Bilder und Videos an und versehen Sie sie mit ihrer Marke. Diese Viewer lassen sich nahtlos in Ihre digitalen Erlebnisse integrieren.
 * **Unterstützung neuer Formate:** Dynamic Media ermöglicht die Bereitstellung von 3D- und Panoramaerlebnissen.
@@ -88,8 +88,8 @@ Stellen Sie sicher, dass alle Viewer-Assets mit Dynamic Media synchronisiert sin
 Stellen Sie sicher, dass Assets veröffentlicht werden, bevor Sie sie in den Bereitstellungs-Viewern anzeigen.
 * **Stummgeschaltete automatische Wiedergabe von Videos:**
 Verwenden Sie für die automatische Wiedergabe in Videos stummgeschaltete Videoeinstellungen, da Browser die Wiedergabe von Videos mit Lautstärke einschränken.
-* **Smartes Zuschneiden:**
-Verwenden Sie die Image v3-Komponente für das smarte Zuschneiden, um die Darstellung von Bild-Assets zu verbessern.
+* **Intelligenter Zuschnitt:**
+Verwenden Sie die Image v3-Komponente für den intelligenten Zuschnitt, um die Darstellung von Bild-Assets zu verbessern.
 * **JavaScript-Dateiaufnahme:**
 Schließen Sie nur die primäre Viewer-JavaScript-Datei auf Ihrer Seite ein. Vermeiden Sie es, auf zusätzliche JavaScript-Dateien zu verweisen, die durch die Laufzeitlogik des Viewers heruntergeladen werden könnten. Stellen Sie insbesondere keine direkte Verknüpfung mit der HTML5 SDK `Utils.js`-Bibliothek aus dem Kontextpfad `/s7viewers` her (auch als konsolidiertes SDK-Include bezeichnet). Die Viewer-Logik verwaltet den Speicherort von `Utils.js` oder ähnlichen Laufzeit-Viewer-Bibliotheken, die sich zwischen Versionen ändern können. Adobe speichert ältere Versionen von sekundären Viewer-Includes nicht auf dem Server, sodass ein direkter Verweis auf diese die Viewer-Funktionalität in zukünftigen Updates beeinträchtigen kann.
 * **Einbettungsrichtlinien:**
@@ -200,7 +200,7 @@ Dynamic Media bietet eine Reihe von Befehlen für die dynamische Verbesserung vo
 | --- | --- |
 | **Hochladen und Veröffentlichen des Originalbilds** | <ul><li> Laden Sie zunächst das Originalbild in Dynamic Media hoch.</li><li> Vergewissern Sie sich, dass es veröffentlicht wurde und über eine URL zugänglich ist.</li><li> In diesem Beispiel wird ein Stockbild einer Uhr mit weißem Hintergrund (nennen wir es „Bild X“) in Dynamic Media hochgeladen.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
 | **Erstellen einer Maske** | <ul><li> Entwickeln Sie eine Maske, die das Motiv (den Bereich, in dem Sie Effekte anwenden möchten) und den Hintergrund (den Bereich, den Sie ändern möchten) definiert.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Masken sind in der Regel Graustufenbilder, wobei Weiß das Motiv und Schwarz den Hintergrund darstellt. Sie können Masken mit Tools wie Adobe Photoshop erstellen.<br>Möchten Sie mehr erfahren? Navigieren Sie zu [Erstellen und Bearbeiten einer schnellen Maske in Photoshop](https://helpx.adobe.com/de/photoshop/using/create-temporary-quick-mask.html).</li><li> Erstellen Sie für „Bild X“ eine Maske, die genau das Motiv konturiert, das Sie optimieren möchten. Beispiel: eine Person oder ein Objekt.</li></ul> |
-| **Anwenden von URL-Befehlen in Dynamic Media für Effekte** | Nachdem Sie Ihre Maske erstellt haben, verwenden Sie URL-Befehle, um Effekte wie „Schein nach außen“ anzuwenden oder die Hintergrundfarbe auf „Bild X“ zu ändern. Im Folgenden finden Sie zwei Beispiele:<ul><li> **Effekt „Schein nach außen“:**<br> Um den Effekt „Schein nach außen“ entlang des Motivrands hinzuzufügen, bearbeiten Sie die URL wie folgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In dieser URL erzeugen die Parameter `op_blur`, `op_grow` und `opac` den Effekt „Schein nach außen“.</li><li> **Ändern der Hintergrundfarbe:**<br> Um die Hintergrundfarbe zu ändern, verwenden Sie die URL mit einem anderen Wert für die Hintergrundfarbe:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In diesem Beispiel setzt `color=255,255,0` die Hintergrundfarbe auf Gelb. Ändern Sie für visuelle Auswirkungen den Hintergrund in eine bestimmte Farbe.</li></ul> |
+| **Anwenden von URL-Befehlen in Dynamic Media für Effekte** | Nachdem Sie Ihre Maske erstellt haben, verwenden Sie URL-Befehle, um Effekte wie „Schein nach außen“ anzuwenden oder die Hintergrundfarbe auf „Bild X“ zu ändern. Im Folgenden finden Sie zwei Beispiele:<ul><li> **Effekt „Schein nach außen“:**<br> Um den Effekt „Schein nach außen“ entlang des Motivrands hinzuzufügen, bearbeiten Sie die URL wie folgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In dieser URL erzeugen die Parameter `op_blur`, `op_grow` und `opac` den Effekt „Schein nach außen“.</li><li> **Ändern der Hintergrundfarbe:**<br> Um die Hintergrundfarbe zu ändern, verwenden Sie die URL mit einem anderen Wert für die Hintergrundfarbe:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In diesem Beispiel setzt `color=255,255,0` die Hintergrundfarbe auf Gelb. Ändern Sie für visuelle Auswirkungen den Hintergrund in eine bestimmte Farbe.</li></ul> |
 
 #### Hinzufügen eines Bildrands
 
@@ -208,9 +208,9 @@ Mit Dynamic Media können Sie Bilder direkt über URLs bearbeiten, wodurch es zu
 
 | Aufgabe | Vorgehensweise |
 | --- | --- |
-| **Weißer Rahmen** | Verwenden Sie die folgende URL, um einen weißen Rahmen hinzuzufügen:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>Unter dieser URL legt der Parameter `extend=10,10,10,10` die Rahmengröße von zehn Pixeln an allen Seiten fest. |
-| **Unschärfe entlang des weißen Rahmens** | Um einen Unschärfe-Effekt entlang des weißen Rahmens hinzuzufügen, können Sie die URL wie folgt bearbeiten:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>Unter dieser URL wendet der Parameter `effect=-1` den Unschärfe-Effekt an und `op_blur=60` steuert die Intensität der Unschärfe. |
-| **Schlagschatteneffekt entlang des äußeren Rands** | Verwenden Sie diese URL, um einen Schlagschatteneffekt entlang des äußeren Rands hinzuzufügen:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&amp;color=0,0,0)<br> Der Parameter `$shadow$` erstellt den Schatteneffekt und `color=0,0,0` setzt die Schattenfarbe auf Schwarz. |
+| **Weißer Rahmen** | Verwenden Sie die folgende URL, um einen weißen Rahmen hinzuzufügen:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>Unter dieser URL legt der Parameter `extend=10,10,10,10` die Rahmengröße von zehn Pixeln an allen Seiten fest. |
+| **Unschärfe entlang des weißen Rahmens** | Um einen Unschärfe-Effekt entlang des weißen Rahmens hinzuzufügen, können Sie die URL wie folgt bearbeiten:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>Unter dieser URL wendet der Parameter `effect=-1` den Unschärfe-Effekt an und `op_blur=60` steuert die Intensität der Unschärfe. |
+| **Schlagschatteneffekt entlang des äußeren Rands** | Verwenden Sie diese URL, um einen Schlagschatteneffekt entlang des äußeren Rands hinzuzufügen:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br> Der Parameter `$shadow$` erstellt den Schatteneffekt und `color=0,0,0` setzt die Schattenfarbe auf Schwarz. |
 
 Experimentieren Sie mit diesen URLs, um die gewünschten visuellen Effekte zu erzielen.
 
@@ -222,7 +222,7 @@ Wenn Sie ein Logo oder Symbol als Überlagerung auf einem vorhandenen Bild platz
 | --- | --- |
 | **Hochladen und Veröffentlichen des Basisbilds** | Laden Sie zunächst das Basisbild hoch, das Sie mit dem Logo oder Symbol überlagern möchten, und veröffentlichen Sie es. Sie können jedes Bild als Basis verwenden.<br>Hier ist beispielsweise ein Basisbild:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Hochladen und Veröffentlichen des Logos oder Symbolbilds** | Laden Sie anschließend das Bild hoch, mit dem Sie das Basisbild überlagern möchten, und veröffentlichen Sie es. Dieses Bild sollte eine transparente PNG-Datei mit dem Logo oder Symbol sein, das Sie überlagern möchten.<br>Hier ist das transparente PNG-Bild eines Sternobjekts mit Transparenzeffekten, das überlagert werden soll:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Anwenden der Dynamic Media-URL** | Erstellen Sie jetzt eine Dynamic Media-URL, die das Basisbild mit dem Logo oder Symbolbild kombiniert. Sie können URL-Befehle verwenden, um diesen Effekt zu erzielen.<br>Die URL-Struktur sieht etwa so aus:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>wobei das Asset<ul><li> `hotspotRetailBaseImage` das Basisbild ist.</li><li> `starxp` ist das Logo/Symbolbild.</li><li> `layer=1` gibt an, dass das Logo oder Symbol über dem Basisbild platziert werden soll.</li><li> `scale=1.25` passt die Größe des Logos/Symbols an.</li><li> `posN=0.33,-.25` bestimmt die Position des Logos/Symbols relativ zum Basisbild.</li><li> `fmt=png` stellt sicher, dass die Ausgabe im PNG-Format vorliegt.</li></ul> |
+| **Anwenden der Dynamic Media-URL** | Erstellen Sie jetzt eine Dynamic Media-URL, die das Basisbild mit dem Logo oder Symbolbild kombiniert. Sie können URL-Befehle verwenden, um diesen Effekt zu erzielen.<br>Die URL-Struktur sieht etwa so aus:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>wobei das Asset<ul><li> `hotspotRetailBaseImage` das Basisbild ist.</li><li> `starxp` ist das Logo/Symbolbild.</li><li> `layer=1` gibt an, dass das Logo oder Symbol über dem Basisbild platziert werden soll.</li><li> `scale=1.25` passt die Größe des Logos/Symbols an.</li><li> `posN=0.33,-.25` bestimmt die Position des Logos/Symbols relativ zum Basisbild.</li><li> `fmt=png` stellt sicher, dass die Ausgabe im PNG-Format vorliegt.</li></ul> |
 
 Möchten Sie mehr erfahren? Navigieren Sie zu [src](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src), um mehr über den `src`-Befehl und andere URL-Befehle in Dynamic Media zu erfahren.
 
@@ -234,7 +234,7 @@ Im Folgenden werden die Schritte zum Überlagern eines Bilds mit einer Werbetext
 | Schritt | Vorgehensweise |
 | --- | --- |
 | **Hochladen und Veröffentlichen des Basisbilds** | Laden Sie zunächst das Basisbild hoch, das Sie mit dem Text überlagern möchten, und veröffentlichen Sie es. Sie können jedes beliebige Bild verwenden. Hier finden Sie ein Beispiel für ein Basisbild:<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **Anwenden von Textoperatoren in Dynamic Media** | Mit Dynamic Media können Sie Textoperatoren anwenden, um das Bild direkt mit dynamischem Text zu überlagern. Die folgende Beispiel-URL zeigt diese Fähigkeit:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600) |
+| **Anwenden von Textoperatoren in Dynamic Media** | Mit Dynamic Media können Sie Textoperatoren anwenden, um das Bild direkt mit dynamischem Text zu überlagern. Die folgende Beispiel-URL zeigt diese Fähigkeit:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
 
 #### Größenänderungen und Zuschneiden für verschiedene Anwendungsfälle
 
@@ -264,16 +264,16 @@ Sehen wir uns einen Anwendungsfall mit folgendem Bild eines Wohnzimmers an:
   [https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
 * **Miniaturansicht (200 Pixel x 200 Pixel):**
 Eine kleinere Version, die für schnelles Laden/Anzeigen geeignet ist.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
 * **Miniaturansicht mit Zuschnitt (200 x 200 Pixel):**
 Mit Fokus auf den Bereich mit dem Sofa zugeschnitten.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
 * **Produktanzeigebild (800 x 600 Pixel):**
 Zum Präsentieren des Sofas zugeschnitten und in der Größe angepasst.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
 * **Banner (1720 x 820 Pixel):**
 Abgeleitet vom Originalbild, wobei der Raum betont wird.
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 Probieren Sie diese Varianten für Ihre speziellen Anforderungen ruhig aus.
 Möchten Sie mehr über die Befehle erfahren, die in einer URL verfügbar sind? Navigieren Sie zur [Befehlsreferenz](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
@@ -318,7 +318,7 @@ Nach der Veröffentlichung haben Sie zwei Optionen.
    * **Direktes Verknüpfen:**
 Verwenden Sie die bereitgestellte URL, um eine direkte Verknüpfung zum Video herzustellen. Verknüpfen Sie es entsprechend mit einem Hyperlink auf Ihrer Marketing-Site.
    * **Einbetten des Videos:**
-Kopieren Sie den bereitgestellten eingebetteten Code und fügen Sie ihn in die HTML Ihrer Web-Seite ein, auf der das Video angezeigt werden soll. Hierdurch kann das Video direkt auf Ihrer Site wiedergegeben werden.
+Kopieren Sie den bereitgestellten Einbettungs-Code und fügen Sie ihn in das HTML Ihrer Web-Seite ein, auf der das Video angezeigt werden soll. Hierdurch kann das Video direkt auf Ihrer Site wiedergegeben werden.
 
 Möchten Sie mehr erfahren? Navigieren Sie zu [Video](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -373,7 +373,7 @@ Die Internationalisierung von Videos für den mehrsprachigen Gebrauch ist für d
    * Wenn Sie AEM als Ihr WCM-System (Web Content Management) verwenden, können Sie Ihren Web-Seiten direkt Videos hinzufügen.
    * Wenn Sie das WCM-System eines Drittanbieters verwenden, können Sie Videos mithilfe von URLs oder Einbettungs-Codes auf Ihren Web-Seiten verknüpfen oder einbetten.
 
-Möchten Sie mehr erfahren? Navigieren Sie zu [Über die Unterstützung mehrerer Untertitel und Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
+Möchten Sie mehr erfahren? Navigieren Sie zu [Unterstützung für mehrfache Untertitel und Audiospuren bei Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Bereitstellen von Assets an Kundinnen und Kunden

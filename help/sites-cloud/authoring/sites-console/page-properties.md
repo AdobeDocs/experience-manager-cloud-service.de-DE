@@ -6,8 +6,8 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 100%
 
@@ -35,17 +35,23 @@ Seiteneigenschaften können zahlreiche Aspekte einer Seite steuern, vom Titel un
 ### Titel und Tags {#title-tags}
 
 * **Titel**: Definiert den Meta-Titel der Seite für SEO-Zwecke sowie den im Seiteninhalt angezeigten Titel (sofern nicht überschrieben)
+
    * Der Titel der Seite wird an verschiedenen Stellen in der Benutzeroberfläche von AEM angezeigt, zum Beispiel in den Karten-/Listenansichten **Sites** in der [Sites-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md).
    * Dies ist ein Pflichtfeld.
+
 * **Tags**: Definiert die Meta-Tags der Seite für SEO-Zwecke.
+
    * Sie können Tags zur Seite hinzufügen oder von ihr entfernen, indem Sie die Liste im Auswahlfeld aktualisieren.
    * Verwenden Sie die Dropdown-Funktion, um aus vorhandenen Tags auszuwählen.
    * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
    * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
+
       * Der neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
       * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
+
    * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein „x“ angezeigt, mit dem Sie das Tag für diese Seite löschen können.
    * Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags.](/help/sites-cloud/authoring/sites-console/tags.md)
+
 * **In der Navigation ausblenden**: Gibt an, ob die Seite in der Seitennavigation der resultierenden Site ein- oder ausgeblendet werden soll.
 
 ### Branding {#branding}
@@ -53,9 +59,13 @@ Seiteneigenschaften können zahlreiche Aspekte einer Seite steuern, vom Titel un
 Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
 * **Marken-Slug**
+
    * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
+
       * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte zum **Überschreiben** sind ebenfalls festgelegt.
+
    * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
+
       * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. `Cycling Tuscany | Always ready for the WKND`.
 
 ### HTML-ID {#html-id}
@@ -65,35 +75,39 @@ Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie eine
 ### Weitere Titel und Beschreibungen {#more-titles}
 
 * **Seitentitel**: Ein Titel zur Verwendung auf der Seite. 
+
    * Dieser wird normalerweise von Titelkomponenten verwendet.
    * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
+
 * **Navigationstitel**: Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen). 
+
    * Wenn dies leer gelassen wird, wird der **Seitentitel** verwendet.
+
 * **Untertitel**: Ein Untertitel zur Verwendung auf der Seite.
 * **Beschreibung**: Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
 
 ### Ein-/Ausschaltzeit {#on-off-time}
 
-Die Ein-/Ausschaltzeit für eine Seite ist eine praktische Möglichkeit zum vorübergehenden Ausblenden bereits veröffentlichter Inhalte. Der Inhalt bleibt auf der Veröffentlichungsinstanz, wenn er ausgeschaltet ist. Durch das Ausschalten einer Seite wird die Veröffentlichung des Inhalts nicht rückgängig gemacht.
+Die Ein-/Ausschaltzeit für eine Seite ist eine praktische Möglichkeit zum vorübergehenden Ausblenden bereits veröffentlichter Inhalte. Der Inhalt bleibt auf der Veröffentlichungsinstanz, wenn sie deaktiviert ist. Durch Deaktivieren einer Seite wird die Veröffentlichung des Inhalts nicht rückgängig gemacht.
 
 * **Einschaltzeit**: Zeitpunkt (Datum und Uhrzeit), zu dem die veröffentlichte Seite in der Publishing-Umgebung sichtbar (gerendert) wird. Die Seite muss entweder manuell oder durch vorkonfigurierte automatische Replikation veröffentlicht werden.
 
-   * Wenn diese Seite bereits [veröffentlicht wurde](/help/sites-cloud/authoring/sites-console/publishing-pages.md), ist sie auf der Veröffentlichungsinstanz verfügbar, wird aber bis zum Rendern am angegebenen Zeitpunkt ruhend (ausgeblendet) gehalten.
-   * Wenn die Seite nicht veröffentlicht, aber [für die automatische Replikation](/help/operations/replication.md#on-and-off-times-trigger-configuratio) konfiguriert ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
-   * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn jemand versucht, auf die Seite zuzugreifen.
+   * Wenn sie bereits [veröffentlicht](/help/sites-cloud/authoring/sites-console/publishing-pages.md) wurde, ist diese Seite in der Veröffentlichungsinstanz verfügbar, ruht jedoch (ausgeblendet), bis sie zum angegebenen Zeitpunkt gerendert wird.
+   * Wenn die Seite nicht veröffentlicht und [für die automatische Replikation konfiguriert](/help/operations/replication.md#on-and-off-times-trigger-configuratio) ist, wird sie automatisch veröffentlicht und dann zum festgelegten Zeitpunkt gerendert.
+   * Wenn die Seite nicht veröffentlicht und nicht für die automatische Replikation konfiguriert ist, wird sie nicht automatisch veröffentlicht. Daher wird ein 404-Fehler angezeigt, wenn versucht wird, auf die Seite zuzugreifen.
 
-* **Ausschaltzeit**: Ähnlich wie die **Einschaltzeit** (und häufig in Kombination damit) wird hier der Zeitpunkt festgelegt, zu dem die Veröffentlichungsseite in der Veröffentlichungsumgebung ausgeblendet wird.
+* **Ausschaltzeit**: Ähnlich wie und häufig in Kombination mit der **Einschaltzeit** wird hier der Zeitpunkt festgelegt, zu dem die Veröffentlichungsumgebung auf der Veröffentlichungsseite ausgeblendet wird.
 
-Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen und verfügbar haben möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, solange leer, bis sie deaktiviert werden (der Normalfall).
+Lassen Sie diese Felder (**Einschaltzeit** und **Ausschaltzeit**) für Seiten, die Sie sofort veröffentlichen und verfügbar haben möchten und die in der Veröffentlichungsumgebung verfügbar sein sollen, leer, bis sie deaktiviert werden (der Normalfall).
 
 >[!NOTE]
 >Wenn entweder die **Einschaltzeit** oder die **Ausschaltzeit** in der Vergangenheit liegt und die automatische Replikation konfiguriert ist, wird die entsprechende Aktion sofort ausgelöst.
 
 >[!TIP]
 >
->Ein-/Ausschaltzeiten gelten ausschließlich für bereits veröffentlichte Inhalte (entweder manuell oder über die automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Ein-/Ausschaltzeiten ausgelöst, und Ein-/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Aus diesem Grund sind Ein-/Ausschaltzeiten am besten geeignet, um bereits genehmigte und veröffentlichte Inhalte vorübergehend anzuzeigen bzw. auszublenden.
+>Einschaltzeiten/Ausschaltzeiten gelten ausschließlich für bereits veröffentlichte Inhalte (entweder manuell oder über automatische Replikation). Aus diesem Grund werden Veröffentlichungs-Workflows, wie die zur Genehmigung von Inhalten, nicht durch Einschaltzeiten/Ausschaltzeiten ausgelöst, und Einschaltzeiten/Ausschaltzeiten wirken sich nicht auf den Veröffentlichungsstatus der Seite aus. Aus diesem Grund sind Einschaltzeiten/Ausschaltzeiten am besten geeignet, um bereits genehmigte und veröffentlichte Inhalte vorübergehend anzuzeigen/auszublenden.
 >
->Wenn Sie neue Inhalte mit allen zugehörigen Workflows veröffentlichen oder Inhalte vollständig von Ihrer Site entfernen (d. h. die Veröffentlichung von Inhalten aufheben) möchten, sollten Sie [Ihre Veröffentlichung verwalten](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
+>Wenn Sie neue Inhalte mit allen zugehörigen Workflows veröffentlichen oder Inhalte vollständig von Ihrer Site entfernen (Veröffentlichung rückgängig machen) möchten, sollten Sie die [Verwaltung Ihrer Veröffentlichung](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) in Erwägung ziehen.
 
 ### Vanity-URL {#vanity-url}
 
@@ -103,7 +117,7 @@ Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, wa
 >
 >Vanity-URLs:
 >
->* Sie müssen eindeutig sein
+>* Sie müssen eindeutig sein.
 >* unterstützen keine Regex-Muster.
 >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
@@ -158,19 +172,19 @@ Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, wa
 
 ## SEO {#seo}
 
-* **Kanonische URL**: Wird zum Überschreiben der kanonischen URL der Seite verwendet.
-   * Wenn Sie dieses Feld leer lassen, dient die URL der Seite als ihre kanonische URL
+* **Kanonische URL** – Wird zum Überschreiben der kanonischen URL der Seite verwendet
+   * Wenn Sie das Feld leer lassen, ist die URL der Seite ihre kanonische URL.
 
-* **Robots-Tags**: Verwenden Sie die Dropdown-Liste zum Auswählen der Robots-Tags, um das Verhalten der Suchmaschinen-Crawler zu steuern.
-   * Einige Optionen stehen im Konflikt miteinander, wobei in einem solchen Fall die Option mit größerer Berechtigung Vorrang hat.
+* **Robots-Tags** – Verwenden Sie das Dropdown-Menü zum Auswählen der Robots-Tags, um das Verhalten der Suchmaschinen-Crawler zu steuern.
+   * Einige Optionen stehen im Konflikt miteinander, wobei in diesem Fall die Option mit größerer Berechtigung Vorrang hat.
 
-* **Sitemap generieren**: Wenn ausgewählt, wird eine `sitemap.xml` für diese Seite und ihre Unterseiten generiert.
+* **Sitemap generieren** – Wenn ausgewählt, wird eine `sitemap.xml` für diese Seite und ihre Unterseiten generiert.
 
 ## Bilder {#images}
 
 ### Vorgestelltes Bild {#featured-image}
 
-In diesem Abschnitt wird das anzuzeigende Bild ausgewählt und konfiguriert. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
+In diesem Abschnitt wird das anzuzeigende Bild ausgewählt und konfiguriert. Dies wird in Komponenten verwendet, die auf die Seite verweisen. z. B. Teaser, Seitenlisten usw.
 
 * **Bild**: Sie können ein Asset **auswählen** oder nach einer hochzuladenden Datei suchen und dann das ausgewählte Bild **bearbeiten** oder **löschen**.
 * **Alternativtext**: Ein Text, der die Bedeutung und/oder Funktion des Bildes wiedergibt und häufig von Bildschirmlesehilfen verwendet wird.
@@ -187,9 +201,9 @@ In diesem Abschnitt wird die Miniaturansicht des Bilds für die Seite ausgewähl
 
 ## Cloud Services {#cloud-services}
 
-* **Cloud-Service-Konfigurationen**: Definiert, welche Konfiguration für Cloud-Services für die Seite verwendet wird
-* **Vererbt von**: Für Live Copies und Sprachkopien werden Cloud-Konfigurationen standardmäßig von der Blueprint vererbt.
-   * Deaktivieren Sie dies zum Überschreiben der Vererbung
+* **Cloud-Service-Konfigurationen** - Es wird festgelegt, welche Konfiguration für Cloud-Services für die Seite verwendet werden soll.
+* **Vererbt von** – Für Live Copies und Sprachkopien werden Cloud-Konfigurationen standardmäßig von der Blueprint vererbt.
+   * Zum Überschreiben der Vererbung deaktivieren
 
 ## Personalisierung {#personalization}
 
@@ -230,7 +244,7 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfigurier
 
 ### Quelle {#source}
 
-* Zeigt den Pfad des Blueprints für diese Live Copy an
+* Zeigt den Pfad der Blueprint für diese Live Copy an
 
 ### Status {#status}
 
@@ -238,9 +252,9 @@ Diese Registerkarte ist nur für Seiten sichtbar, die als Live Copys konfigurier
 
 ### Konfiguration {#live-copy-config}
 
-* **Live Copy-Vererbung**: Bei Auswahl dieser Option gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
-* **Rollout-Konfigurationen aus übergeordnetem Element übernehmen**: Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
-* **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus dem Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen aus übergeordnetem Element übernehmen** nicht aktiviert ist.
+* **Live Copy-Vererbung** – Wenn diese Option aktiviert ist, gilt die Live Copy-Konfiguration für alle untergeordneten Elemente.
+* **Rollout-Konfigurationen aus übergeordnetem Element übernehmen** – Wenn diese Option aktiviert ist, wird die Rollout-Konfiguration von der übergeordneten Seite übernommen.
+* **Rollout-Konfiguration auswählen**: Legt fest, unter welchen Umständen Änderungen aus der Blueprint übernommen werden, und ist nur verfügbar, wenn **Rollout-Konfigurationen von übergeordneter Seite erben** nicht aktiviert ist.
 * **Liste der ausgeschlossenen Pfade**
 
 ## Vorschau {#preview}

@@ -5,10 +5,10 @@ keywords: AEM Forms REST-Endpunkt, An REST-Endpunkt übermitteln, Daten an REST-
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -115,13 +115,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-+++
+   +++
 
    +++Konfiguration
 
    Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-+++
+   +++
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -130,12 +130,15 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein im universellen Editor erstelltes adaptives Formular:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor auf die Erweiterung **Formulareigenschaften bearbeiten**.
-Das Dialogfeld **Formulareigenschaften** wird angezeigt.
+1. Klicken Sie im Editor **die Erweiterung** Formulareigenschaften bearbeiten“.
+
+   Das Dialogfeld **Formulareigenschaften** wird angezeigt.
+
    >[!NOTE]
    >
    > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
    > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+
 1. Klicken Sie auf **Übermittlung** und wählen Sie die Übermittlungsaktion **[!UICONTROL An REST-Endpunkt übermitteln]** aus.
 
    Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
@@ -172,13 +175,13 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    Sie können auch **[!UICONTROL POST-Anforderungen aktivieren]** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den AEM-Server, auf dem sich das Formular befindet, zu senden, verwenden Sie einen relativen Pfad entsprechend dem Stammpfad des AEM-Servers. Beispiel: `/content/forms/af/SampleForm.html`. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
-+++
+   +++
 
    +++Konfiguration
 
    Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
 
-+++
+   +++
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 

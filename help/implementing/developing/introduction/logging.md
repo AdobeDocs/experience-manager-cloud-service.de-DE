@@ -3,9 +3,9 @@ title: Protokollieren für AEM as a Cloud Service
 description: Erfahren Sie, wie Sie die Protokollierung für AEM as a Cloud Service verwenden können, um globale Parameter für den zentralen Protokollierungs-Dienst zu konfigurieren, bestimmte Einstellungen für die einzelnen Dienste festzulegen oder die Datenprotokollierung anzufordern.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 100%
 
@@ -158,6 +158,7 @@ Konfigurieren Sie die Java-Protokollierung für benutzerdefinierte Java-Pakete �
 Das Ändern anderer LogManager OSGi-Konfigurationseigenschaften kann zu Verfügbarkeitsproblemen in AEM as a Cloud Service führen.
 
 Wie im vorherigen Abschnitt erwähnt, ist Folgendes erforderlich, um eine effektive Überwachung von Kundenumgebungen sicherzustellen:
+
 * Für die Protokollebene der standardmäßigen Protokollkonfiguration für AEM (Apache Sling-Protokollierungskonfiguration) darf der Standardwert „INFO“ nicht geändert werden.
 * Es ist akzeptabel, die Protokollebenen für einzelne Pakete von Produkt-Code (unter Verwendung von Instanzen der OSGi-Konfigurations-Factory „Apache Sling Logging Logger Configuration“) auf DEBUG zu setzen. Verwenden Sie diese Einstellung jedoch sparsam, um eine Leistungsbeeinträchtigung zu verhindern, und setzen Sie sie wieder auf „INFO“ zurück, sobald nicht mehr benötigt.
 * Es ist akzeptabel, die Protokollebenen für den von der Kundin oder dem Kunden entwickelten Code anzupassen.
@@ -165,8 +166,10 @@ Wie im vorherigen Abschnitt erwähnt, ist Folgendes erforderlich, um eine effekt
 * Die Protokollausgabe muss an die Standarddatei „logs/error.log“ weitergeleitet bleiben. 
 
 Zu diesem Zweck dürfen keine Änderungen an den folgenden OSGi-Eigenschaften vorgenommen werden:
+
 * **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) – *alle Eigenschaften*
 * **Apache Sling Logging Logger Configuration** (werksseitige PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 

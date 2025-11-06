@@ -5,10 +5,10 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3088'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '3086'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Abfragen sind eine Möglichkeit, auf Inhalte zuzugreifen, aber nicht die einzige
 
 Bei der Erstellung der Taxonomie eines Repositorys müssen mehrere Faktoren berücksichtigt werden. Hierzu gehören die Zugriffssteuerung, Lokalisierung, Vererbung von Komponenten- und Seiteneigenschaften und vieles mehr.
 
-In einem Taxonomie-Design, in dem diese Punkte berücksichtigt werden, muss zudem auch die „Durchlauffähigkeit“ des Index-Designs beachtet werden. In diesem Zusammenhang ist die Durchlauffähigkeit die Fähigkeit einer Taxonomie, einen vorhersehbaren Zugriff auf Inhalte auf der Grundlage ihres Pfads zu ermöglichen. Dies ermöglicht ein effizienteres System, das einfacher zu verwalten ist als ein System, für das mehrere Abfragen ausgeführt werden müssen.
+Beim Entwerfen einer Taxonomie, die diese Bedenken berücksichtigt, muss zudem auch die „Durchlauffähigkeit“ des Indizierungs-Designs beachtet werden. In diesem Zusammenhang ist die Durchlauffähigkeit die Fähigkeit einer Taxonomie, einen vorhersehbaren Zugriff auf Inhalte auf der Grundlage ihres Pfads zu ermöglichen. Dies ermöglicht ein effizienteres System, das einfacher zu verwalten ist als ein System, für das mehrere Abfragen ausgeführt werden müssen.
 
 Darüber hinaus muss beim Entwerfen einer Taxonomie bedacht werden, ob eine Sortierung wichtig ist. Wenn auf eine explizite Sortierung verzichtet werden kann und eine große Anzahl gleichgeordneter Knoten erwartet wird, sind unsortierte Knotentypen wie `sling:Folder` oder `oak:Unstructured` vorzuziehen. Ist eine Sortierung erforderlich, wären `nt:unstructured` und `sling:OrderedFolder` besser geeignet.
 
@@ -105,13 +105,14 @@ Die abgerufene Größe des Abfrageergebnisses ist ein wichtiger Faktor für die 
 
 Dies bedeutet auch, dass die Größe der Ergebnismenge nur korrekt bestimmt werden kann, wenn alle Ergebnisse abgerufen werden. Aus diesem Grund sollte die Menge der abgerufenen Ergebnisse immer begrenzt werden, entweder durch Erweiterung der Abfrage (siehe die [JCR-Abfrage-Schnellübersicht](#jcr-query-cheatsheet) in diesem Dokument) oder durch Begrenzung der Lesezugriffe auf die Ergebnisse.
 
-Eine solche Begrenzung verhindert auch, dass die Abfrage-Engine die **Ausnahmegrenze** von 100.000 Knoten erreicht, was zu einem erzwungenen Stopp der Abfrage führt.
+Eine solche Begrenzung verhindert auch, dass die Abfrage-Engine das **Durchlauf-Limit** von 100.000 Knoten erreicht, was zu einem erzwungenen Stopp der Abfrage führt.
 
 Wenn eine potenziell große Ergebnismenge vollständig verarbeitet werden muss, lesen Sie den Abschnitt [Abfragen mit großen Ergebnismengen](#queries-with-large-result-sets) in diesem Dokument.
 
 ## Abfrageleistungs-Werkzeug {#query-performance-tool}
 
 Das Abfrageleistungs-Werkzeug (platziert unter `/libs/granite/operations/content/diagnosistools/queryPerformance.html` und verfügbar über die [Entwicklerkonsole in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=de#queries)) bietet:
+
 * eine Liste aller „langsamen Abfragen“ (derzeit definiert als solche, die mehr als 5000 Zeilen lesen/scannen)
 * eine Liste der „beliebten Abfragen“
 * das Werkzeug „Abfrage erläutern“ zum Verständnis, wie eine bestimmte Abfrage von Oak ausgeführt wird.
@@ -119,6 +120,7 @@ Das Abfrageleistungs-Werkzeug (platziert unter `/libs/granite/operations/content
 ![Abfrageleistungs-Werkzeug](assets/query-performance-tool.png)
 
 Die Tabellen „Langsame Abfragen“ und „Beliebte Abfragen“ umfassen:
+
 * die Abfrageanweisung selbst.
 * Details des letzten Threads, der die Abfrage ausgeführt hat, sodass die Seite oder die Anwendungsfunktion identifiziert werden kann, die die Abfrage ausgeführt hat.
 * einen „Leseoptimierungswert“ für die Abfrage.
@@ -155,6 +157,7 @@ Gehen Sie wie folgt vor, um eine Abfrage zu erläutern:
 
 Nach Auswahl von `Explain`, wird den Benutzenden ein Popup angezeigt, in dem das Ergebnis der Erläuterung der Abfrage (und der Ausführung, falls ausgewählt) beschrieben wird.
 Dieses Popup enthält Details zu:
+
 * den Indizes, die bei der Ausführung der Abfrage verwendet werden (oder kein Index, wenn die Abfrage mit [Repository-Durchlauf](#repository-traversal) ausgeführt wird).
 * der Ausführungszeit (wenn das Kontrollkästchen `Include Execution Time` aktiviert wurde) und Anzahl der gelesenen Ergebnisse (wenn die Kontrollkästchen `Read first page of results` oder `Include Node Count` aktiviert wurden).
 * dem Ausführungsplan, der eine detaillierte Analyse der Ausführung der Abfrage ermöglicht – siehe [Lesen des Abfrageausführungsplans](#reading-query-execution-plan) für die Interpretation.
@@ -172,6 +175,7 @@ Betrachten Sie die folgende Abfrage:
 ```
 
 Sie enthält Folgendes:
+
 * 3 Einschränkungen
    * Knotentyp (`dam:Asset`)
    * Pfad (untergeordnete Elemente von `/content/dam`)
@@ -191,11 +195,12 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 In diesem Abschnitt des Plans wird Folgendes festgestellt:
+
 * Für die Ausführung dieser Abfrage wird ein Index verwendet:
    * In diesem Fall wird der Lucene-Index `/oak:index/damAssetLucene-9` verwendet, sodass die verbleibenden Informationen sich in Lucene-Abfrage-Syntax befinden.
 * Alle 3 Einschränkungen werden vom Index verarbeitet -
    * die Knotentyp-Einschränkung
-      * implizit, weil `damAssetLucene-9` nur Knoten des Typs dam:Asset indiziert.
+      * implizit, da `damAssetLucene-9` nur Knoten vom Typ dam:Asset indiziert.
    * die Pfadbeschränkung
       * weil `+:ancestors:/content/dam` in der Lucene-Abfrage angezeigt wird.
    * Die Eigenschaftsbeschränkung
@@ -212,6 +217,7 @@ Betrachten wir eine andere Abfrage:
 ```
 
 Sie enthält Folgendes:
+
 * 3 Einschränkungen
    * Knotentyp (`dam:Asset`)
    * Pfad (untergeordnete Elemente von `/content/dam`)
@@ -231,9 +237,10 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 In diesem Abschnitt des Plans wird Folgendes festgestellt:
+
 * Nur 2 (der 3) Einschränkungen werden vom Index verarbeitet, nämlich
    * die Knotentyp-Einschränkung
-      * implizit, weil `damAssetLucene-9` nur Knoten des Typs dam:Asset indiziert.
+      * implizit, da `damAssetLucene-9` nur Knoten vom Typ dam:Asset indiziert.
    * die Pfadbeschränkung
       * weil `+:ancestors:/content/dam` in der Lucene-Abfrage angezeigt wird.
 * Die Eigenschaftsbeschränkung `jcr:content/metadata/myProperty = "My Property Value"` wird nicht am Index ausgeführt, sondern als Abfrage-Engine-Filterung auf die Ergebnisse der zugrunde liegenden Lucene-Abfrage angewendet.

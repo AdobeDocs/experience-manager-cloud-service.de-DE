@@ -2,10 +2,10 @@
 title: Definieren von Inhaltsfragmentmodellen
 description: Erfahren Sie, inwiefern Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Inhaltsfragmente dienen, damit Sie strukturierte Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung erstellen können.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 82%
@@ -313,10 +313,10 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >AEM bietet Schutz vor Wiederholungen für:
 >
 >* Inhaltsverweise
->  &#x200B;>  Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
+>  Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
 >
 >* Fragmentreferenzen in GraphQL
->  &#x200B;>  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
+>  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ Mit **Datentyp „Inhaltsreferenz** können Sie Inhalte aus einer anderen Quelle
 Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 * Das **Stammverzeichnis**, das angibt, wo referenzierte Inhalte gespeichert werden sollen
+
   >[!NOTE]
   >
   >Dies ist erforderlich, wenn Sie mit dem Inhaltsfragmenteditor Bilder in diesem Feld direkt hochladen und referenzieren möchten.
@@ -338,6 +339,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
   >Siehe [Bilder referenzieren](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) für weitere Informationen.
 
 * Die Inhaltstypen, auf die verwiesen werden kann
+
   >[!NOTE]
   >
   >Dazu gehören **Bilder**, wenn Sie mit dem Inhaltsfragmenteditor Bilder in diesem Feld direkt hochladen und referenzieren möchten.
@@ -346,6 +348,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
 
 * Einschränkungen bezüglich der Dateigrößen
 * Wenn ein Bild referenziert wird:
+
    * Miniatur anzeigen
    * Bildeinschränkungen hinsichtlich Höhe und Breite
 

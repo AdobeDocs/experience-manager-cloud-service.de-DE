@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 53%
@@ -19,18 +19,19 @@ ht-degree: 53%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzende JavaScript-Funktionen definieren können, um komplexe Geschäftsregeln zu implementieren. Diese benutzerdefinierten Funktionen erweitern die Funktionen von Formularen durch die Erleichterung der Bearbeitung und Verarbeitung der eingegebenen Daten, um bestimmte Anforderungen zu erfüllen. Sie ermöglichen eine dynamische Änderung des Formularverhaltens auf der Grundlage vordefinierter Kriterien. Mit benutzerdefinierten Funktionen können Entwicklerinnen und Entwickler auch komplexe Validierungslogiken durchsetzen, dynamische Berechnungen durchführen und die Anzeige oder das Verhalten von Formularelementen basierend auf Benutzerinteraktionen oder vordefinierten Kriterien steuern.
 
 >[!NOTE]
 >
-> Stellen Sie sicher[&#x200B; dass die &#x200B;](https://github.com/adobe/aem-core-forms-components)Kernkomponente“ auf die neueste Version eingestellt ist, um die neuesten Funktionen zu verwenden.
+> Stellen Sie sicher[ dass die ](https://github.com/adobe/aem-core-forms-components)Kernkomponente“ auf die neueste Version eingestellt ist, um die neuesten Funktionen zu verwenden.
 
 ## Vorteile benutzerdefinierter Funktionen {#uses-of-custom-function}
 
 Die Verwendung benutzerdefinierter Funktionen in adaptiven Formularen bietet folgende Vorteile:
+
 * **Datenverarbeitung**: Benutzerdefinierte Funktionen helfen bei der Verarbeitung der in die Formularfelder eingegebenen Daten.
 * **Datenvalidierung**: Benutzerdefinierte Funktionen ermöglichen Ihnen benutzerdefinierte Überprüfungen von Formulareingaben und das Anzeigen bestimmter Fehlermeldungen.
 * **Dynamisches Verhalten**: Mit benutzerdefinierten Funktionen können Sie das dynamische Verhalten Ihrer Formulare anhand bestimmter Bedingungen steuern. Beispielsweise können Sie Felder ein-/ausblenden, Feldwerte ändern oder die Formularlogik dynamisch anpassen.
@@ -119,7 +120,7 @@ Betrachten Sie das folgende Codefragment, bei dem input2 als optionaler Paramete
 
 Die folgende Abbildung zeigt die Verwendung der benutzerdefinierten Funktion `OptionalParameterFunction` im Regeleditor:
 
-![Optionale oder erforderliche Parameter &#x200B;](/help/forms/assets/optional-default-params.png)
+![Optionale oder erforderliche Parameter ](/help/forms/assets/optional-default-params.png)
 
 Sie können die Regel speichern, ohne einen Wert für die erforderlichen Parameter anzugeben, aber die Regel wird nicht ausgeführt und zeigt eine Warnmeldung als:
 
@@ -217,7 +218,7 @@ Wenn Benutzende der benutzerdefinierten Funktion keine JavaScript-Anmerkungen hi
 
 ## Bekanntes Problem
 
-* Benutzerdefinierte Funktionen unterstützen keine Literale für reguläre Ausdrücke in JavaScript. Die Verwendung von Regex-Literalen in einer benutzerdefinierten Funktion führt zu Fehlern während der Ausführung. Zum Beispiel:
+* Benutzerdefinierte Funktionen unterstützen keine Literale für reguläre Ausdrücke in JavaScript. Die Verwendung von Regex-Literalen in einer benutzerdefinierten Funktion führt zu Fehlern während der Ausführung. Beispiel:
   `const pattern = /^abc$/;`
 
   Um die Kompatibilität zu gewährleisten, verwenden Sie den RegExp-Konstruktor in den benutzerdefinierten Funktionen.

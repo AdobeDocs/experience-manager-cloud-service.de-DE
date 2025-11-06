@@ -5,8 +5,8 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
-source-git-commit: 0fcdea7803110156d589ab6bbf960373f212747d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
 
@@ -87,14 +87,18 @@ Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 Das Fenster für die Massenbearbeitung ist vertikal in zwei Hälften geteilt:
 
 * Auf der linken Seite finden Sie eine Liste der Seiten, die Sie für die Massenbearbeitung ausgewählt haben.
+
    * Sie können die Seiten nach Bedarf auswählen oder die Auswahl aufheben.
    * Standardmäßig sind alle Seiten ausgewählt. 
+
 * Auf der rechten Seite finden Sie eine Liste mit [Eigenschaften, die für die Massenbearbeitung verfügbar sind.](/help/implementing/developing/extending/bulk-editor.md)
+
    * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
    * Eigenschaften, die auf allen ausgewählten Seiten verfügbar sind und explizit als für die Massenbearbeitung verfügbar definiert wurden, sind sichtbar.
    * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
    * Es werden nur Eigenschaften mit einem gemeinsamen Wert angezeigt.
    * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), werden die Werte nur angezeigt, wenn *alle* übereinstimmen. Wenn nur einige übereinstimmen, werden sie nur bei der Bearbeitung angezeigt.
+
 * Für Felder, die häufig vorkommen, aber auf den verschiedenen Seiten unterschiedliche Werte haben, wird ein spezieller Wert angegeben, beispielsweise `<Mixed Entries>`.
 
 Sie können die Werte in den Feldern aktualisieren, die auf den ausgewählten Seiten verfügbar sind. Die neuen Werte werden auf alle ausgewählten Seiten angewendet, wenn Sie **Fertig** wählen. Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
@@ -129,4 +133,4 @@ Wählen Sie **Seite nach Zurücksetzen der Vererbung synchronisieren** aus, um d
 
 >[!TIP]
 >
->Weitere Informationen zur Vererbung finden Sie im Dokument [Multi-Site-Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md).
+>Weitere Informationen zur Vererbung finden Sie im Dokument [Multi-Site Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md).

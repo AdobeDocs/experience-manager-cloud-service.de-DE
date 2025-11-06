@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.11.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 98%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2024.11.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version November 2024:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -118,7 +118,7 @@ In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten
 
 * **HTML5 Forms (XFA-basierte Web-Formulare)**: AEM Forms On-Premise-Kundinnen und -Kunden, die XFA-Technologie verwenden, können jetzt mühelos auf AEM Forms as a Cloud Service umsteigen und gleichzeitig ihr bestehendes Anwendererlebnis mit HTML5 Forms (XFA-basierte Web-Formulare) beibehalten. Diese Funktion ermöglicht die Wiedergabe von XFA-Formularvorlagen im HTML5-Format, sodass Formulare auf Geräten verfügbar sind, die XFA-basierte PDF-Formulare nicht unterstützen.
 
-  ![HTML Forms (XFA-basierte Web-Formulare)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
+  ![HTML-Formulare (XFA-basierte Web-Formulare)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
 
 * **[Base64-codierte Zeichenfolgenunterstützung für Dateianlagen](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: Die Dateianlagenkomponente im adaptiven Formularen, die auf Kernkomponenten basiert, enthält jetzt eine Option zum Senden angehängter Dateien als Base64-codierte Zeichenfolgen.
@@ -173,6 +173,7 @@ Entwickelnde können AEM as a Cloud Service-Funktionen in ihre eigenen Anwendung
 Erfahren Sie mehr über [OpenAPI-basierte AEM-APIs](/help/implementing/developing/open-api-based-apis.md) und probieren Sie ein [End-to-End-Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) aus, in dem Konfiguration und Verwendung veranschaulicht werden.
 
 Konkret sind die unten aufgeführten API-Endpunkte im Rahmen eines Early-Adopter-Programms verfügbar. Wenn Sie daran interessiert sind, senden Sie eine E-Mail an [aem-apis@adobe.com](mailto:aem-apis@adobe.com), in der Sie beschreiben, wie Sie die API-Endpunkte verwenden möchten.
+
 * [Sites-Inhaltsfragmente-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de)
 * [Assets-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * Sites- und Assets-Ordner-APIs

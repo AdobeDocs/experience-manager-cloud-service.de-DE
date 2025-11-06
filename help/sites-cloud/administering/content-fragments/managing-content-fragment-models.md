@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmentmodellen
 description: Erfahren Sie, wie Sie Inhaltsfragmentmodelle verwalten. Sie dienen in AEM als Grundlage für Ihre Inhaltsfragmente, damit Sie strukturierte Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung erstellen können.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 94%

@@ -3,9 +3,9 @@ title: Anzeigen einer benutzerdefinierten Dankesnachricht nach der Formularüber
 description: Erfahren Sie, wie Sie Dankesseiten und Umleitungen für den Formularbaustein konfigurieren, um das Anwendererlebnis zu optimieren und die Journey der Benutzenden zu optimieren.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 100%
 

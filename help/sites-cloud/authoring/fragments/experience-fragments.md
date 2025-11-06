@@ -5,8 +5,8 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 100%
 
@@ -46,6 +46,7 @@ Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für der
 >[!NOTE]
 >
 >**[Inhaltsfragmente](/help/sites-cloud/authoring/fragments/content-fragments.md)** und **Experience Fragments** sind unterschiedliche Funktionen in AEM:
+>
 >* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout. Sie können unter anderem für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Daten verwendet werden.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
@@ -79,8 +80,8 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
 ## Organisieren von Experience Fragments {#organizing-your-experience-fragments}
 
 Folgendes wird empfohlen:
-* verwenden von Ordnern zum Organisieren der Experience Fragments,
 
+* verwenden von Ordnern zum Organisieren der Experience Fragments,
 * [Konfigurieren der zulässigen Vorlagen für diese Ordner](#configure-allowed-templates-folder).
 
 Beim Erstellen von Ordnern können Sie:

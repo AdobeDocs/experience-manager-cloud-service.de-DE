@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '1938'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '1927'
+ht-degree: 99%
 
 ---
 
@@ -1980,10 +1980,10 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 
 | Name | Land | Einwohnerzahl | Kategorien |
 |--- |--- |--- |--- |
-| Basel | Schweiz | 172258 | city:emea |
+| Basel | Schweiz | 172258 | Stadt:emea |
 | Berlin | Deutschland | 3669491 | city:capital<br>city:emea |
 | Bukarest | Rumänien | 1821000 | city:capital<br>city:emea |
 | San Francisco | USA | 883306 | city:beach<br>city:na |
-| San Jose | USA | 102635 | city:na |
-| Stuttgart | Deutschland | 634830 | city:emea |
+| San Jose | USA | 102635 | Stadt:na |
+| Stuttgart | Deutschland | 634830 | Stadt:emea |
 | Zürich | Schweiz | 415367 | city:capital<br>city:emea |

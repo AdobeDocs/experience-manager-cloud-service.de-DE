@@ -3,8 +3,8 @@ title: Eigenschaften des Asset-Wählers für die Anpassung
 description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarstellung von Assets in Ihrer Anwendung zu suchen, zu finden und abzurufen.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 100%
 

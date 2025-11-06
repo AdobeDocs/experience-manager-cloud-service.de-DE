@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Best Practices für Metadaten zur effek
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1384'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -107,11 +107,13 @@ Bei der unternehmensweiten Metadatenverwaltung ist es wichtig, Assets konsistent
 
 Im Folgenden sind einige Best Practices aufgeführt, die Sie befolgen sollten:
 
-* **Vermeiden Sie duplizierte Werte:** Wenn Sie über eine Sammlung von Bildern aus einer Marketing-Kampagne verfügen, verwenden Sie konsistente Namen und vermeiden Sie Duplikate.<br>
-Anstatt beispielsweise duplizierte Namen wie *Kampagne_Bild_001* und *Kampagne_Bild_002* zu verwenden, implementieren Sie eine systematische Namenskonvention wie *Angebotswerbung* und *Produktstart*, um eine eindeutige und geordnete Identifizierung zu gewährleisten.
+* **Vermeiden Sie duplizierte Werte:** Wenn Sie über eine Sammlung von Bildern aus einer Marketing-Kampagne verfügen, verwenden Sie konsistente Namen und vermeiden Sie Duplikate.
 
-* **Setzen Sie kontrolliertes Vokabular effektiv ein:** Implementieren Sie kontrolliertes Vokabular durch die Verwendung standardisierter Begriffe für Tags. Erfahren Sie, wie Sie das [AEM-Tagging-Framework](/help/implementing/developing/introduction/tagging-framework.md) effektiv implementieren.  <br>
-Verwenden Sie beispielsweise beim Taggen von Bildern mit Designs konsistent Begriffe wie *Produktstart* oder *Angebotswerbung*, um eine systematische Sequenz beizubehalten.
+  Anstelle von doppelten Namen wie *campaign_image_001* und *campaign_image_002* implementieren Sie beispielsweise eine systematische Benennungskonvention wie *event_promotion* und *product_launch*, um eine klare und geordnete Identifizierung sicherzustellen.
+
+* **Setzen Sie kontrolliertes Vokabular effektiv ein:** Implementieren Sie kontrolliertes Vokabular durch die Verwendung standardisierter Begriffe für Tags. Erfahren Sie, wie Sie das [AEM-Tagging](/help/implementing/developing/introduction/tagging-framework.md)Framework effektiv implementieren.
+
+  Verwenden Sie beispielsweise konsistent Begriffe wie *product_launch* oder *event_promotion* beim Taggen von Bildern mit Designs, um die systematische Reihenfolge beizubehalten.
 
 * **Achten Sie stets auf richtige und vollständige Angaben:** Damit Metadaten konsistent bleiben, ist es entscheidend, über verschiedene Quellen hinweg richtige, vollständige und aufeinander ausgerichtete Angaben zu machen.
 Überprüfen Sie beispielsweise beim Hinzufügen von Metadaten zu einem PDF-Dokument, ob Details wie Autorennamen und Suchbegriffe richtig und vollständig sind.

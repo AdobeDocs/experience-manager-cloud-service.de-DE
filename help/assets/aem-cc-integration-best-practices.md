@@ -4,10 +4,10 @@ description: Best Practices für die Integration einer Experience Manager-Bereit
 contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3438'
 ht-degree: 100%
 

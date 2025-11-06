@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 100%
+source-wordcount: '1135'
+ht-degree: 98%
 
 ---
 
@@ -25,6 +25,7 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 >Sie müssen [Ihre Endpunkte](/help/headless/graphql-api/graphql-endpoint.md) im [Konfigurations-Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) konfiguriert haben, bevor Sie die GraphiQL-IDE verwenden.
 
 Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
+
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
 * Direkte Eingabe neuer Abfragen
 * Erstellen und Zugreifen auf **[Persistente Abfragen](/help/headless/graphql-api/persisted-queries.md)**
@@ -141,7 +142,7 @@ Dadurch wird die Abfrage in der von Ihnen gewählten Umgebung aktiviert. Sie kö
 
 >[!NOTE]
 >
->Die Definition für den Cache der persistierten Abfrage `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} hat einen Standardwert von 2 Stunden (7200 Sekunden).
+>Für den Cache der persistenten Abfrage `Time To Live` {„cache-control“:„parameter“:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
 
 ## Veröffentlichung persistierte Abfragen aufheben {#unpublishing-persisted-queries}
 
@@ -193,7 +194,7 @@ Nachdem Sie Ihre persistente Abfrage mit GraphiQL entwickelt und getestet haben,
 Es gibt eine Auswahl von Tastaturbefehlen, die direkten Zugriff auf Aktionssymbole in der IDE bieten:
 
 * Abfrage schön machen:  `Shift-Control-P`
-* Abfrage fusionieren:  `Shift-Control-M`
+* Abfrage zusammenführen:  `Shift-Control-M`
 * Abfrage ausführen:  `Control-Enter`
 * Automatisch vervollständigen:  `Control-Space`
 

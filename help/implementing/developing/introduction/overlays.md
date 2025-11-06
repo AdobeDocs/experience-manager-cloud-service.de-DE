@@ -3,11 +3,11 @@ title: Überlagerungen für Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service nutzt das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen zu erweitern und anzupassen.
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ In einer Standardinstanz wird die vordefinierte Funktionalität unter `/libs` ge
 
       * Rekonstruieren Sie die entsprechende `/libs`-Struktur unter `/apps`.
 
-        Bei dieser Umstrukturierung ist keine 1:1-Kopie erforderlich, da der [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) als Querverweis auf die erforderlichen Originaldefinitionen verwendet wird. Der Sling Resource Merger stellt Services für den Zugriff auf und die Zusammenführung von Ressourcen mittels Diff(Differenzierungs)-Mechanismen bereit.
+        Diese Neustrukturierung erfordert keine 1::1-Kopie, da der [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) verwendet wird, um die erforderlichen Originaldefinitionen zu vergleichen. Der Sling Resource Merger stellt Services für den Zugriff auf und die Zusammenführung von Ressourcen mittels Diff(Differenzierungs)-Mechanismen bereit.
 
       * Nehmen Sie unter `/apps` Änderungen vor.
 

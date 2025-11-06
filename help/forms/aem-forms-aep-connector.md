@@ -6,8 +6,8 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2047'
 ht-degree: 100%
 
@@ -193,7 +193,7 @@ Führen Sie die folgenden Schritte aus, um ein adaptives Formular über den univ
      >* Wenn das Symbol „Datenquellen“ in der Benutzeroberfläche des universellen Editors oder die Eigenschaft „Bindungsverweis“ im Panel „Eigenschaften“ auf der rechten Seite nicht angezeigt wird, aktivieren Sie die Erweiterung **Datenquelle** im Extension Manager.
      >* Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
      > 
-     > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+     >* Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
    Der Vorbefüllungsdienst für Formulare im universellen Editor wird derzeit nicht unterstützt.
 
@@ -287,11 +287,11 @@ Erste Schritte mit dieser Integration:
 
 ## Zugehörige Ressourcen {#related-resources}
 
-* [Dokumentation zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de)
+* [Dokumentation zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de)
 * [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)
 * [Überblick über XDM-System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)
-* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=de)
-* [Überblick über Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de)
+* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [Überblick über Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Early-Access-Funktionen von AEM Forms](/help/forms/early-access-ea-features.md)
 * [Erstellen adaptiver Formulare mit Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Verwenden des Formulardatenmodells in AEM Forms](/help/forms/using-form-data-model.md)

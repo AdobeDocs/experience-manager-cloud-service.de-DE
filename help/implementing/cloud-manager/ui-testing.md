@@ -4,8 +4,8 @@ description: Benutzerdefinierte Benutzeroberflächentests sind eine optionale Fu
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 72%
@@ -32,7 +32,7 @@ Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automati
 
 Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[ definierten Konventionen ](#building-ui-tests).
 
 >[!TIP]
 >
@@ -308,7 +308,7 @@ Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
+Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) ](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Hochladen von Dateien {#upload-files}
 

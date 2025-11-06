@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [AEM-APIs für die strukturierte Bereitstellung und Verwaltung von Inhalten](/help/headless/apis-headless-and-content-fragments.md). Dort erhalten Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der beteiligten Konzepte.
+>Weitere Informationen finden Sie unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md). Dort erhalten Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der beteiligten Konzepte.
 
 >[!NOTE]
 >
@@ -375,7 +375,7 @@ Sie können alle GraphQL-Typen für Metadaten anzeigen, wenn Sie das generierte 
 >[!NOTE]
 >
 >**Unterschied zwischen normalen und Array-Metadaten**
->>Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
+>Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
 >
 >Wenn Sie beispielsweise das Feld `stringMetadata` aufrufen, erhalten Sie ein Array aller im Repository gespeicherten Metadaten als `String` und wenn Sie `stringArrayMetadata` aufrufen, erhalten Sie ein Array aller Metadaten, die im Repository als `String[]` gespeichert wurden.
 
@@ -770,6 +770,7 @@ Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 >[!NOTE]
 >
 >Eine **Inhaltsreferenz** kann sowohl für DAM- als auch für Dynamic Media-Assets verwendet werden. Zum Abrufen der entsprechenden URL werden verschiedene Parameter verwendet:
+>
 >* `_dynamicUrl`: ein DAM-Asset
 >* `_dmS7Url`: ein Dynamic Media-Asset
 > 
@@ -784,13 +785,17 @@ Die Struktur und Syntax sind:
 * `format`: eine Aufzählung mit allen unterstützten Formaten durch ihre Erweiterung: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL oder WEBPLY
 * `seoName`: eine Zeichenfolge, die anstelle des Knotennamens als Dateiname verwendet wird
 * `crop`: eine Rahmenunterstruktur, wenn Breite oder Höhe weggelassen wird, wird die Höhe bzw. Breite als derselbe Wert verwendet
+
    * `xOrigin`: der x-Ursprung des Rahmens und ist obligatorisch
    * `yOrigin`: der y-Ursprung des Rahmens und ist obligatorisch
    * `width`: die Breite des Rahmens
    * `height`: die Höhe des Rahmens
+
 * `size`: eine Unterstruktur der Dimension, wenn die Breite oder Höhe weggelassen wird, wird die Höhe bzw. Breite als derselbe Wert verwendet
+
    * `width`: die Breite der Dimension
    * `height`: die Höhe der Dimension
+
 * `rotation`: eine Aufzählung aller unterstützten Rotationen: R90, R180, R270
 * `flip`: eine Aufzählung von HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: eine Ganzzahl zwischen 1 und 100, die den Prozentsatz der Bildqualität angibt
@@ -956,11 +961,11 @@ Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 * Verwenden von `_dmS7Url` für mehrere Verweise; `ImageRef`, `MultimediaRef` und `DocumentRef`
    * Ansehen einer [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Mehrere Verweise](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
-* Verwenden von `_dmS7Url` mit der Funktion für das smarte Zuschneiden
+* Verwenden von `_dmS7Url` mit der Funktion für den intelligenten Zuschnitt
 
-   * Die Eigenschaft `_smartCrops` legt die Konfigurationen für das smarte Zuschneiden offen, die für ein bestimmtes Asset verfügbar sind
+   * Die Eigenschaft `_smartCrops` legt die Konfigurationen für den intelligenten Zuschnitt offen, die für ein bestimmtes Asset verfügbar sind
 
-   * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – mit smartem Zuschneiden](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
+   * Siehe [Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – mit intelligentem Zuschnitt](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -980,6 +985,7 @@ Die Lösung in GraphQL bietet Ihnen folgende Möglichkeiten:
 ### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Bildverweis{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Es folgt eine Beispielabfrage:
+
 * für mehrere Inhaltsfragmente vom Typ `team` und `person`, die einen `ImageRef` zurückgeben
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – Mehrere Verweise{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Es folgt eine Beispielabfrage:
+
 * für mehrere Inhaltsfragmente vom Typ `team` und `person`, die einen `ImageRef`, `MultimediaRef` und `DocumentRef` zurückgeben:
 
 ```graphql
@@ -1045,11 +1052,11 @@ query allTeams {
 }
 ```
 
-### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – mit smartem Zuschneiden {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### Beispielabfrage für die Bereitstellung von Dynamic Media-Assets nach URL – mit intelligentem Zuschnitt {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 Es folgt eine Beispielabfrage:
 
-* zum Anzeigen der für die angeforderten Assets verfügbaren Konfigurationen für das smarte Zuschneiden
+* zum Anzeigen der für die angeforderten Assets verfügbaren Konfigurationen für den intelligenten Zuschnitt
 
 ```graphql
 query allTeams {
@@ -1209,10 +1216,11 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Siehe [Beispielabfrage für mehrere Inhaltsfragmente und deren Varianten eines bestimmten Modells](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >Der Filter `includeVariations` und das vom System generierte Feld `_variation` können nicht zusammen in derselben Abfragedefinition verwendet werden.
 
 * Wenn Sie ein logisches ODER verwenden möchten:
-   * Verwenden Sie ` _logOp: OR`
+   * Verwenden Sie `_logOp: OR`
    * [Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Es gibt ebenfalls ein logisches UND, es ist aber (oft) implizit.

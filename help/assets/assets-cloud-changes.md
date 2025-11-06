@@ -2,10 +2,10 @@
 title: Wesentliche Änderungen in [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Wesentliche Änderungen an [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] im Vergleich zu [!DNL Adobe Experience Manager] 6.5.
 feature: Release Information
-role: User, Leader, Architect, Admin
+role: User, Leader, Developer, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Stellen Sie für eine umfassende Validierung des Codes und des Prozesses, einsch
 | [Ermittlung doppelter Assets](/help/assets/detect-duplicate-assets.md) | Dies funktioniert anders | Hier erfahren Sie mehr zur [Funktionsweise in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/duplicate-detection). |
 | [FPO-Ausgabedarstellungen](/help/assets/configure-fpo-renditions.md) | Dies funktioniert anders | Verarbeitungsprofile verwenden Asset-Microservices zum Erzeugen von FPO-Ausgabedarstellungen. In Experience Manager 6.5 war eine Lösung eines Drittanbieters wie [!DNL ImageMagick] verfügbar, um die Ausgabedarstellungen zu erzeugen. |
 | Metadaten-Writeback | Dies funktioniert anders | Standardmäßig deaktiviert. Aktivieren Sie bei Bedarf den entsprechenden Workflow-Starter. Asset-Microservices verwalten das Writeback. |
-| Verarbeitung der mit Package Manager hochgeladenen Assets | Dies erfordert ein manuelles Eingreifen | Veranlassen Sie die Neuverarbeitung manuell mit der Aktion **[!UICONTROL Assets erneut verarbeiten]**. |
+| Verarbeitung der mit dem Paket-Manager hochgeladenen Assets | Dies erfordert ein manuelles Eingreifen | Veranlassen Sie die Neuverarbeitung manuell mit der Aktion **[!UICONTROL Assets erneut verarbeiten]**. |
 | MIME-Typerkennung | Nicht unterstützt. | Wenn Sie ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung hochladen, wird es möglicherweise nicht wie gewünscht verarbeitet. Benutzer können die Binärdateien weiterhin ohne Erweiterung im DAM speichern. Weitere Informationen finden Sie unter [MIME-Typerkennung in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
 | Teil-Asset-Generierung für zusammengesetzte Assets | Nicht unterstützt. | Abhängige Anwendungsfälle wie Anmerkungen werden möglicherweise nicht unterstützt. Weitere Informationen finden Sie unter [Erstellen von Teil-Assets in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). Die PDF-Vorschau einiger Dateitypen ist ab [Version 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md) verfügbar. |
 | Bearbeiten von Bildern | Nicht unterstützt | Das Bearbeiten von Assets wird in Experience Manager as a Cloud Service nicht unterstützt. Weitere Informationen finden Sie unter [Funktionsweise in Experience Manager 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |

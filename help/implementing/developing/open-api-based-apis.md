@@ -2,10 +2,10 @@
 title: Auf OpenAPI basierende APIs
 description: Erfahren Sie mehr über die AEM as a Cloud Service-Unterstützung für auf OpenAPI basierende APIs
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: 320fe55d652b94cd63dfe82d4165c1f957653a63
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 100%
 

@@ -3,12 +3,12 @@ title: Fehlerbehebung bei SSL-Zertifikatsproblemen
 description: Erfahren Sie, wie Sie Probleme mit SSL-Zertifikaten beheben können, indem Sie häufige Ursachen identifizieren, damit Sie sichere Verbindungen aufrechterhalten können.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >Die Ausgabe dieser beiden Befehle muss genau gleich sein. Wenn Sie keinen passenden privaten Schlüssel zu Ihrem `main/server`-Zertifikat finden können, müssen Sie das Zertifikat neu verschlüsseln, indem Sie eine neue Zertifikatsignaturanforderung (CSR) generieren und/oder ein aktualisiertes Zertifikat von Ihrem SSL-Anbieter anfordern.
 
-+++
++++ 
 
 +++**Entfernen von Client-Zertifikaten**
 
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**Zertifikatgültigkeit
++++**Gültigkeit des Zertifikats
 
 ## Zertifikatgültigkeit {#validity}
 
@@ -138,7 +138,7 @@ Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindesten
 
 +++
 
-+++**Auf meine Domain wird ein falsches SAN-Zertifikat angewendet
++++**Falsches SAN-Zertifikat wird auf meine Domain angewendet
 
 ## Auf meine Domain wird ein falsches SAN-Zertifikat angewendet {#wrong-san-cert}
 

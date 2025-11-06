@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 3%
@@ -62,7 +62,7 @@ Die Funktion **Fehlervalidierung auf dem Server aktivieren** ermöglicht Validie
 
 Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Sie **Service aufrufen** im Regeleditor verwenden:
 
-* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier &#x200B;](/help/forms/configure-data-sources.md).
+* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier ](/help/forms/configure-data-sources.md).
 * Erstellen Sie ein Formulardatenmodell mithilfe der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier](/help/forms/create-form-data-models.md).
 * Stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
@@ -87,6 +87,7 @@ Erstellen Sie ein `Get Information` Formular, das Werte basierend auf der Eingab
 **Formularfelder**
 
 Fügen Sie die folgenden Felder zum Formular hinzu:
+
 * **Haustier-ID eingeben**: textbox
 * **Foto-URLs auswählen**: Dropdown
 * **Tags**: Bedienfeld
@@ -103,6 +104,7 @@ Fügen Sie die folgenden Felder zum Formular hinzu:
 **Konfigurieren von Bedienfeldern**
 
 Legen Sie die Bereiche mit den folgenden Einschränkungen als repetitiv fest:
+
 * Mindestwert: 1
 * Höchstwert: 4
 
@@ -241,7 +243,7 @@ Sie können eine API mithilfe der unten bereitgestellten JSON-Daten direkt als `
 
 >[!NOTE]
 >
-> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[&#x200B; klicken Sie &#x200B;](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
+> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[ klicken Sie ](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
 
 Konfigurieren **[!UICONTROL in &quot;]** hinzufügen“ die Aktion **Navigieren zu**, um den Benutzer mithilfe des **-Parameters zur Seite** Kontaktieren `Event Payload` umzuleiten. Hier kann der Benutzer seine Kontaktdaten übermitteln.
 

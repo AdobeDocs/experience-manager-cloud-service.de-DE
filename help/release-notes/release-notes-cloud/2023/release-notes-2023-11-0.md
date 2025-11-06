@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2023.11.0 von [!DNL Adobe Experience
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 57%
@@ -127,6 +127,7 @@ Erfahren Sie mehr [Traffic-Filterregeln](/help/security/traffic-filter-rules-inc
 ### Early-Adopter-Programm für die Domain-Zuordnung {#cdn-config-early-adopter}
 
 Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln (einschließlich WAF)](/help/security/traffic-filter-rules-including-waf.md) gibt es eine Möglichkeit, die Konfigurations-Pipeline zu verwenden, um andere Arten von CDN-Konfigurationen zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
+
 * 301/302 Client-seitige Umleitungen
 * Weiterleitungs-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen

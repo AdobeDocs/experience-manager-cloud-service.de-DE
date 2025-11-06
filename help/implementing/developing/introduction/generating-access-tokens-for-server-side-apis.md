@@ -3,8 +3,8 @@ title: Generieren von Zugriffs-Token für Server-seitige APIs
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 22216d2c045b79b7da13f09ecbe1d56a91f604df
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 97%
@@ -21,7 +21,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
@@ -53,7 +53,7 @@ Nachdem die Anmeldeinformationen erstellt wurden, erscheinen sie unter der Regis
 
 Benutzende können die Anmeldeinformationen später mit der Aktion „Anzeigen“ einsehen. Darüber hinaus können Benutzende die Anmeldeinformationen für dasselbe technische Konto bearbeiten, wie weiter unten im Artikel beschrieben. Sie führen diese Bearbeitung durch Erstellen eines privaten Schlüssels oder Zertifikats durch, falls das Zertifikat erneuert oder widerrufen werden muss.
 
-Benutzende mit der Rolle eines AEM as a Cloud Service Umgebungs-Admins können später neue Anmeldeinformationen für zusätzliche technische Konten erstellen. Diese Fähigkeit ist nützlich, wenn verschiedene APIs unterschiedliche Zugriffsanforderungen haben. Zum Beispiel Lesezugriff versus Lese- und Schreibzugriff.
+Benutzende mit der Rolle eines AEM as a Cloud Service-Umgebungs-Admins können später neue Anmeldeinformationen für zusätzliche technische Konten erstellen. Diese Fähigkeit ist nützlich, wenn verschiedene APIs unterschiedliche Zugriffsanforderungen haben. Zum Beispiel Lesezugriff versus Lese- und Schreibzugriff.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Die Anwendung, die Aufrufe an AEM sendet, sollte in der Lage sein, auf die Anmel
 
 Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
 
-Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[&#x200B; von &#x200B;](https://github.com/adobe/aemcs-api-client-lib)Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
+Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[ von ](https://github.com/adobe/aemcs-api-client-lib)Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
 
 ```
 /*jshint node:true */

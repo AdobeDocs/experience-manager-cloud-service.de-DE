@@ -5,8 +5,8 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ In einem typischen Szenario mit [!DNL Adobe Acrobat Sign] und adaptiven Formular
 
 ## Verbinden von AEM Forms mit Adobe Acrobat Sign {#adobe-sign}
 
-Um **[!DNL AEM Forms]** mit **[!DNL Adobe Acrobat Sign]** zu verbinden, richten Sie die im Abschnitt „Voraussetzungen“ aufgelistete Software und Konten ein und konfigurieren Sie den Adobe Sign Cloud Service in Ihren Authoring- und Publishing-Instanzen von Forms as a Cloud Service:
+Um **[!DNL AEM Forms]** mit **[!DNL Adobe Acrobat Sign]** zu verbinden, richten Sie die im Abschnitt „Voraussetzungen“ aufgelistete Software und Konten ein und konfigurieren Sie den Adobe Sign Cloud Service in Ihren Authoring- und Veröffentlichungsinstanzen von Forms as a Cloud Service:
 
 ### Voraussetzungen für das Verbinden von AEM Forms mit Adobe Acrobat Sign {#prerequisites-for-adobe-sign}
 
@@ -39,7 +39,7 @@ Um [!DNL Adobe Acrobat Sign] mit [!DNL AEM Forms] zu integrieren, benötigen Sie
 1. Anmeldeinformationen (Client-ID und Client Secret) der [!DNL Adobe Acrobat Sign]-API-Anwendung.
 1. (Nur für Authentifizierung mit amtlichem Lichtbildausweis) [Aktivieren Sie die Authentifizierungsmethode](https://helpx.adobe.com/de/sign/using/adobesign-authentication-government-id.html#AuditReport) für die Authentifizierung mit amtlichem Lichtbildausweis.
 
-### Verbinden von Authoring- und Publishing-Instanzen von AEM Forms mit Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
+### Verbinden von Authoring- und Veröffentlichungsinstanzen von AEM Forms mit Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
 
 Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus, um [!DNL Adobe Acrobat Sign] in der Autoreninstanz mit [!DNL AEM Forms] zu konfigurieren.
 
@@ -89,7 +89,7 @@ Wenn alle Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus,
    >[!NOTE]
    >
    >* Lassen Sie die Seite **Erstellen einer Konfiguration für Adobe Acrobat Sign** geöffnet. Schließen Sie sie nicht. Nachdem Sie die OAuth-Einstellungen für die Anwendung [!DNL Adobe Acrobat Sign] wie in den nächsten Schritten beschrieben konfiguriert haben, können Sie die **Client-ID** und den **geheimen Client-Schlüssel** abrufen.
-   > * Navigieren Sie nach der Anmeldung bei Ihrem Adobe Sign-Konto zu **[!UICONTROL Acrobat Sign-API]** >**[!UICONTROL API-Informationen]** > **[!UICONTROL Dokumentation zu REST-API-Methoden]** > **[!UICONTROL OAuth-Zugriffs-Token]**, um auf Informationen im Zusammenhang mit der Adobe Sign OAuth-URL und der Zugriffs-Token-URL zuzugreifen.
+   >* Navigieren Sie nach der Anmeldung bei Ihrem Adobe Sign-Konto zu **[!UICONTROL Acrobat Sign-API]** >**[!UICONTROL API-Informationen]** > **[!UICONTROL Dokumentation zu REST-API-Methoden]** > **[!UICONTROL OAuth-Zugriffs-Token]**, um auf Informationen im Zusammenhang mit der Adobe Sign OAuth-URL und der Zugriffs-Token-URL zuzugreifen.
 
 1. Konfigurieren Sie OAuth-Einstellungen für das [!DNL Adobe Acrobat Sign]-Programm:
 

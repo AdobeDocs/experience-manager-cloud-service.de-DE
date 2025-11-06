@@ -2,11 +2,11 @@
 title: Verwenden von Inhaltsfragmenten mit Adobe Journey Optimizer
 description: 'Erfahren Sie, wie Sie Inhaltsfragmente mit Adobe Journey Optimizer integrieren und verwenden können. '
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
-source-git-commit: 0fd7b2633488ceb14d34b1978a91a3a830d8762a
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Die Vernetzung von Inhaltsfragmenten mit AJO vereinfacht den Abruf und die Nutzu
 
 Weitere Informationen erhalten Sie in der Dokumentation zu AJO:
 
-* [Verwenden von Inhaltsfragmenten in AEM](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=de#integrations)
+* [Verwenden von Inhaltsfragmenten in AEM](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
 * [Integration von AJO-Angeboten mit Inhaltsfragmenten](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## Dispatcher-Konfiguration {#dispatcher-configuration}

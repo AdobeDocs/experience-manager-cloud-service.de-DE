@@ -4,8 +4,8 @@ description: Erfahren Sie, wie AEM-Projekte mit Maven erstellt werden und welche
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 100%
@@ -119,7 +119,7 @@ Falls zum Beispiel eine einfache Nachricht nur dann ausgegeben werden soll, wenn
 
 Wenn der Build-Prozess von Cloud Manager gestartet wird:
 
-* Das `<servers>`-Element in dieser Datei wird in die von Cloud Manager bereitgestellte Standard-Datei `settings.xml` eingefügt.
+* Das `<servers>`-Element in dieser Datei wird mit der von Cloud Manager bereitgestellte Standard-Datei `settings.xml` zusammengeführt.
    * Server-IDs, die mit `adobe` und `cloud-manager` beginnen, gelten als reserviert. Verwenden Sie sie nicht auf benutzerdefinierten Servern.
    * Cloud Manager spiegelt nur die Server-IDs wider, die bestimmten Präfixen oder der Standard-ID `central` entsprechen. Alle anderen Server-IDs sind von der Spiegelung ausgeschlossen.
 * Wenn diese Datei vorhanden ist, wird die Server-ID von innerhalb eines `<repository>`- und/oder `<pluginRepository>`-Elements in der Datei `pom.xml` referenziert.

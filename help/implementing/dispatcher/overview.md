@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über den Datenfluss bei der Inhaltsbereitstellun
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
@@ -32,6 +32,7 @@ Der Datenfluss sieht wie folgt aus:
 Der HTML-/Text-Inhaltstyp läuft standardmäßig nach 300 Sekunden (5 Minuten) auf der Dispatcher-Ebene ab. Dieser Schwellenwert wird sowohl vom Dispatcher-Cache als auch vom CDN eingehalten. Bei der erneuten Bereitstellung des Publishing-Service wird der Dispatcher-Cache geleert und anschließend aufgewärmt, damit die neuen Veröffentlichungsknoten Traffic akzeptieren.
 
 In den folgenden Abschnitten finden Sie genauere Informationen zur Inhaltsbereitstellung:
+
 * [CDN-Konfiguration](/help/implementing/dispatcher/cdn.md)
 * [Caching](/help/implementing/dispatcher/caching.md)
 

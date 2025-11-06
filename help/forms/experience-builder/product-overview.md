@@ -5,16 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 20%
+ht-degree: 31%
 
 ---
-
-
-
 
 # Überblick
 
@@ -44,7 +42,7 @@ Mit Forms Experience Builder können Sie anspruchsvolle Formulare erstellen, ohn
 
 ## Onboarding und Voraussetzungen
 
-Forms Experience Builder ist derzeit über ein Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie von Ihrer offiziellen E-Mail-ID eine E[Mail an &#x200B;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com.
+Forms Experience Builder ist derzeit über ein Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie von Ihrer offiziellen E-Mail-ID eine E[Mail an ](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com.
 
 Experience Builder erfordert eine AEM Forms as a Cloud Service-Produktions-Autorenumgebung mit [Adaptive Forms-Kernkomponenten](/help/forms/enable-adaptive-forms-core-components.md).
 
@@ -161,7 +159,7 @@ Forms Experience Builder bietet zwei primäre Workflows zum Erstellen leistungss
 
 **Generierung von Formularen in natürlicher Sprache**
 
-Erstellen Sie vollständige Formulare von Grund auf mit einfachen Beschreibungen. Beschreiben Sie einfach Ihre Anforderungen, z. B. „Erstellen eines Kunden-Feedback-Formulars mit Bewertungs- und Kommentarfeldern“, und der Forms Experience Builder generiert die entsprechende Formularstruktur. Mit dem Experience Builder von visuellen Editoren können Sie weitere Felder, Validierungsregeln und Übermittlungslogik hinzufügen.
+Erstellen Sie vollständige Formulare von Grund auf mit einfachen Beschreibungen. Beschreiben Sie einfach Ihre Anforderungen, z. B. „Erstelle ein Kunden-Feedback-Formular mit Bewertungs- und Kommentarfeldern“, und Forms Experience Builder generiert die entsprechende Formularstruktur. Mit dem Experience Builder von visuellen Editoren können Sie weitere Felder, Validierungsregeln und Übermittlungslogik hinzufügen.
 
 **Dynamisches Feld-Management**
 
@@ -169,7 +167,7 @@ Sie können Formularfelder über Dialogbefehle hinzufügen, ändern oder entfern
 
 **Layout-Optimierung**
 
-Aktualisieren Sie Layouts und Konfigurationen von Formularen in natürlicher Sprache. Anforderungsänderungen wie „Formularlayout in Assistentenlayout ändern“ und Forms Experience Builder wendet geeignete Stil- und Layout-Anpassungen an.
+Aktualisieren Sie Layouts und Konfigurationen von Formularen in natürlicher Sprache. Fordere Änderungen wie „Ändere das Formular-Layout in Assistenten-Layout“ und Forms Experience Builder wendet geeignete Stil- und Layout-Anpassungen an.
 
 **Umfassende Konfiguration der Übermittlungsaktion**
 
@@ -187,11 +185,11 @@ Konfigurieren Sie die Formularübermittlung für die Integration mit Ihren vorha
 
 Transformieren vorhandener Dokumente in interaktive digitale Erlebnisse. Forms Experience Builder unterstützt verschiedene Formate und analysiert hochgeladene Inhalte, um Feldtypen zu erkennen, Layouts beizubehalten und Formulare mit responsivem Design und erweiterter Logik zu verbessern. Folgende Formate werden unterstützt:
 
-- **Acroforms**: Interaktive PDF forms mit vorhandenen Feldstrukturen
+- **Acroforms**: Interaktive PDF-Formulare mit vorhandenen Feldstrukturen
 - **XFA-PDFs**: Komplexe XML-basierte Formulararchitekturen
 - **Einfache PDF**: In interaktive Formulare konvertierte statische Dokumente
 - **Bilder und Screenshots**: JPG, PNG-Formate
-- **Handgezeichnetes Forms**: Skizzen und Papierformularbilder
+- **Handgezeichnetes Formulare**: Fotos von Skizzen und Papierformularen
 
 
 
@@ -226,9 +224,9 @@ Forms Experience Builder ist derzeit über ein Early Access-Programm verfügbar.
    - Projektdetails (Zeitleiste, Umfang, Anwendungsfälle)
    - Ihre offizielle geschäftliche E-Mail
 
-   Wenn Sie Hilfe bei der Suche nach Ihrer IMS-Organisations-ID und Programm-ID benötigen, lesen Sie das [Adobe Experience Cloud-Einrichtungshandbuch für &#x200B;](/help/onboarding/cloud-manager-introduction.md) und die Dokumentation [Programm- und &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)).
+   Wenn Sie Hilfe bei der Suche nach Ihrer IMS-Organisations-ID und Programm-ID benötigen, lesen Sie das [Adobe Experience Cloud-Einrichtungshandbuch für ](/help/onboarding/cloud-manager-introduction.md) und die Dokumentation [Programm- und ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)).
 
-2. **Eine Zugriffsanfrage senden**: Senden Sie eine E-Mail [2&rbrace;aem-forms-ea@adobe.com) mit allen im vorherigen Schritt gesammelten Informationen.](mailto:aem-forms-ea@adobe.com)
+2. **Eine Zugriffsanfrage senden**: Senden Sie eine E-Mail [2}aem-forms-ea@adobe.com) mit allen im vorherigen Schritt gesammelten Informationen.](mailto:aem-forms-ea@adobe.com)
 
    Der Zugriff auf Forms Experience Builder ist eingeschränkt und unterliegt der Genehmigung auf der Grundlage der Programmkapazität und der Ausrichtung an den Kriterien für einen frühzeitigen Zugriff.
 

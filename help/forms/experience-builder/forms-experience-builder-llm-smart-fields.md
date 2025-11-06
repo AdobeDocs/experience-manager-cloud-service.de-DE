@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie mithilfe der KI-Wissensdatenbank für geograf
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
-
 
 # LLM-optimierte Smart Fields in Forms Experience Builder {#llm-enhanced-smart-fields}
 
@@ -47,10 +47,10 @@ Erstellen Sie standortbasierte Felder mit umfassenden geografischen Daten und ad
 
 **Internationale Flughäfen mit IATA-Codes:**
 
-    Dropdown für Abflughäfen mit allen wichtigen internationalen Flughäfen hinzufügen
-    Feld „Ankunftsflughafen“ mit IATA-Codes und vollständigen Namen hinzufügen
-    Feld für den nächstgelegenen Flughafen zum Benutzerstandort erstellen
-    Eine Auswahl an Bahnhöfen für europäische Städte hinzufügen
+    Füge eine Dropdown-Liste für Abflughäfen mit allen wichtigen internationalen Flughäfen hinzu
+    Füge ein Feld für Ankunftsflughäfen mit IATA-Codes und vollständigen Namen hinzu
+    Erstelle ein Feld für den nächstgelegenen Flughafen zum Benutzerstandort
+    Füge eine Auswahl an Bahnhöfen europäischer Städte hinzu
 
 **Beispielaufforderungen:**
 
@@ -62,11 +62,11 @@ Erstellen Sie standortbasierte Felder mit umfassenden geografischen Daten und ad
 
 **Länder, Bundesstaaten und Provinzen:**
 
-    Vollständige Liste der US-Bundesstaaten mit Abkürzungen hinzufügen
-    Erstellen Sie eine Dropdownliste mit ISO-Codes und vollständigen Namen
-    Fügen Sie ein Feld für die größten Städte der Welt mit Zeitzonen hinzu
-    Fügen Sie eine Dropdown-Liste der kanadischen Provinzen und Territorien hinzu
-    Fügen Sie ein Feld für britische Countys und Postgebiete hinzu
+    Füge eine vollständige Liste der US-Bundesstaaten mit Abkürzungen hinzu
+    Erstelle eine Dropdown-Liste mit ISO-Codes und vollständigen Namen
+    Füge ein Feld für die größten Städte der Welt mit Zeitzonen hinzu
+    Füge eine Dropdown-Liste der kanadischen Provinzen und Territorien hinzu
+    Füge ein Feld für britische Countys und Postgebiete hinzu
 
 **Beispielaufforderungen:**
 
@@ -83,11 +83,11 @@ Nutzen Sie umfassende Geschäftsklassifizierungen und professionelle Daten für 
 
 **Branchen- und Geschäftsentitätstypen:**
 
-    Feld für die Branchenklassifizierung mit NAICS-Codes hinzufügen
-    Erstellen Sie eine Dropdown-Liste der Typen von Geschäftseinheiten (LLC, Corporation, Partnerschaft usw.)
-    Feld für Unternehmensgrößenkategorien hinzufügen (Start, KMU, Unternehmen)
-    Abteilungsauswahl für große Organisationen einbeziehen
-    Feld für professionelle Servicetypen hinzufügen
+    Füge ein Feld für die Branchenklassifizierung mit NAICS-Codes hinzu
+    Erstelle eine Dropdown-Liste der Typen von Geschäftseinheiten (LLC, Corporation, Partnerschaft usw.)
+    Füge ein Feld für Unternehmensgrößenkategorien hinzu (Startup, KMU, Unternehmen)
+    Füge eine Abteilungsauswahl für große Organisationen hinzu
+    Füge ein Feld für Typen professioneller Dienstleistungen hinzu
 
 **Beispielaufforderungen:**
 
@@ -99,11 +99,11 @@ Nutzen Sie umfassende Geschäftsklassifizierungen und professionelle Daten für 
 
 **Berufsbezeichnungen und Zertifizierungen:**
 
-    Feld für Stellenbezeichnungen mit gemeinsamen Branchenrollen hinzufügen
-    Erstellen Sie ein Dropdown-Menü mit professionellen Zertifizierungen nach Feld
-    Schulungsstufen mit Abschlussarten einbeziehen
-    Feld für jahrelange Erfahrung hinzufügen
-    Erstellen Sie eine Auswahl für Programmiersprachen und Frameworks
+    Füge ein Feld für Stellenbezeichnungen mit üblichen Branchenrollen hinzu
+    Erstelle eine Dropdown-Liste mit professionellen Zertifizierungen nach Feld
+    Füge Ausbildungsstufen mit Abschlussarten hinzu
+    Füge ein Feld für Zeitbereiche für Erfahrung hinzu
+    Erstelle eine Auswahl für Programmiersprachen und Frameworks
 
 **Beispielaufforderungen:**
 
@@ -119,11 +119,11 @@ Zugriff auf standardisierte Codes, Klassifizierungen und behördliche Informatio
 
 **Währungs-, Steuer- und Zahlungsinformationen:**
 
-    Feld für Währungs-Codes mit Symbolen und Wechselkursen hinzufügen
-    Erstellen Sie eine Dropdown-Liste der Steuer-ID-Typen nach Land
-    Feld für juristische Dokumenttypen einschließen
-    Zahlungsmethode-Optionen mit Sicherheitsmerkmalen hinzufügen
-    Erstellen Sie eine Auswahl für Bankinstitute nach Land
+    Füge ein Feld für Währungs-Codes mit Symbolen und Wechselkursen hinzu
+    Erstelle eine Dropdown-Liste mit Steuer-ID-Typen nach Land
+    Füge ein Feld für Typen rechtlicher Dokumente hinzu
+    Füge Optionen für Zahlungsmethoden mit Sicherheitsmerkmalen hinzu
+    Erstelle eine Auswahl für Bankinstitute nach Land
 
 **Beispielaufforderungen:**
 
@@ -135,10 +135,10 @@ Zugriff auf standardisierte Codes, Klassifizierungen und behördliche Informatio
 
 **Dateiformate und Protokolle:**
 
-    Dropdown-Liste mit Dateitypen mit Erweiterungen hinzufügen
-    Optionen für Netzwerkprotokolle einschließen
-    Feld für Datenbanktypen und Versionen hinzufügen
-    Auswahl für API-Authentifizierungsmethoden erstellen
+    Füge eine Dropdown-Liste mit Dateitypen mit Erweiterungen hinzu
+    Füge Optionen für Netzwerkprotokolle hinzu
+    Füge ein Feld für Datenbanktypen und -versionen hinzu
+    Erstelle eine Auswahl für API-Authentifizierungsmethoden
 
 **Beispielaufforderungen:**
 
@@ -154,11 +154,11 @@ Spezialisierte medizinische Daten und Gesundheitsdaten für branchenspezifische 
 
 **Fachgebiete und medizinische Daten:**
 
-    Feld für medizinische Fachgebiete hinzufügen
-    Erstellen Sie eine Dropdown-Liste mit allgemeinen Medikamenten mit generischen Namen
-    Feld für Versicherungsanbietertypen einschließen
-    Eine Auswahl für medizinische Notfallkontakte hinzufügen
-    Erstellen Sie ein Feld für Ernährungseinschränkungen und Allergien
+    Füge ein Feld für medizinische Fachgebiete hinzu
+    Erstelle eine Dropdown-Liste mit gängigen Medikamenten mit generischen Namen
+    Füge ein Feld für Versicherungsanbietertypen hinzu
+    Füge eine Auswahl für Kontakte bei medizinischen Notfällen hinzu
+    Erstelle ein Feld für Ernährungseinschränkungen und Allergien
 
 **Beispielaufforderungen:**
 
@@ -174,11 +174,11 @@ Intelligente Datums- und Zeitfelder mit Geschäftskontext und Planungsintelligen
 
 **Geschäftszeiten und Zeitplan:**
 
-    Feld für Geschäftszeiten mit Zeitzonenverarbeitung hinzufügen
-    Erstellen Sie eine Dropdown-Liste der Feiertage nach Land
-    Saisonale Optionen mit Datumsbereichen einschließen
-    Feld für die Buchung von Konferenzräumen mit Verfügbarkeit hinzufügen
-    Auswahl für Muster wiederkehrender Meetings erstellen
+    Füge ein Feld für Geschäftszeiten mit Zeitzonenverarbeitung hinzu
+    Erstelle eine Dropdown-Liste mit Feiertagen nach Land
+    Füge saisonale Optionen mit Datumsbereichen hinzu
+    Füge ein Feld für die Buchung von Konferenzräumen mit Verfügbarkeit hinzu
+    Erstelle eine Auswahl für Muster wiederkehrender Besprechungen
 
 **Beispielaufforderungen:**
 
@@ -194,11 +194,11 @@ E-Commerce und serviceorientierte Felder mit umfassender Kategorisierung.
 
 **Produkt- und Servicedaten:**
 
-    Feld für Produktkategorien mit Unterkategorien hinzufügen
-    Erstellen eines Dropdown-Menüs der Versandmethoden mit Versandschätzungen
-    Feld für Rückgaberichtlinienoptionen einbeziehen
-    Auswahl für Kundenprioritätsstufen hinzufügen
-    Feld für Abonnement-Abrechnungszyklen erstellen
+    Füge ein Feld für Produktkategorien mit Unterkategorien hinzu
+    Erstelle eine Dropdown-Liste mit Versandmethoden mit Versandschätzungen
+    Füge ein Feld für Optionen für Rückgaberichtlinien hinzu
+    Füge eine Auswahl für Kundenprioritätsstufen hinzu
+    Erstelle ein Feld für Abonnement-Abrechnungszyklen
 
 **Beispielaufforderungen:**
 
@@ -296,4 +296,3 @@ Kombinieren Sie LLM-Wissen mit den Daten Ihres Unternehmens:
 * [KI-gestützte Formularerstellung](forms-experience-builder-prompt-examples-library.md)
 * [Regelerstellung und Geschäftslogik](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [Formularübermittlung und -integration](form-submission-integration.md)
-

@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie die Optionen und Einstellungen der Benutzerob
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurieren der UI-Optionen von Forms Experience Builder
 
@@ -100,7 +100,7 @@ Löscht die aktuelle Unterhaltung unter Beibehaltung des Konversations-Threads:
 Für zusätzliche Unterstützung bei der Konfiguration der Benutzeroberfläche:
 
 - Lesen Sie die [Häufig gestellten Fragen zu Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Lesen Sie [&#x200B; Erste Schritte &#x200B;](forms-experience-builder-getting-started.md)
+- Lesen Sie [ Erste Schritte ](forms-experience-builder-getting-started.md)
 - Wenden Sie sich an Ihren Systemadministrator, um technische Unterstützung zu erhalten
 
 ## Verwandte Artikel

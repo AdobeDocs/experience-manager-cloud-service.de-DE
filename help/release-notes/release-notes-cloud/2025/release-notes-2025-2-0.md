@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2025.2.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 96%
@@ -128,6 +128,7 @@ Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wen
 Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Adobe würde gerne von Ihnen hören, ob Sie diese Technologie als nützlich für AEM Publish Delivery- und Edge Delivery Services-Projekte erachten. Teilen Sie uns bitte außerdem mit, wofür Sie sie voraussichtlich verwenden würden. Diese Information hilft uns bei der Gestaltung der Produkt-Roadmap. 
 
 Verschiedene mögliche Anwendungsfälle:
+
 * Authentifizierung mit einer IdP, um Zugriff auf Inhalte zu erhalten
 * Rendern dynamischer (personalisierter, lokalisierter) Inhalte basierend auf Geolocation, Gerätetyp, Benutzerattributen usw.
 * Erweiterte Bildbearbeitung

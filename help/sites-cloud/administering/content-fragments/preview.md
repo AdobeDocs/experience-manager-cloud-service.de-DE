@@ -2,9 +2,9 @@
 title: Vorschau von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente mit einer Reihe von Methoden in der Vorschau anzeigen können.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 49%
@@ -27,7 +27,7 @@ Sie können eine Vorschau Ihres Fragments anzeigen:
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
 
-Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
+Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >

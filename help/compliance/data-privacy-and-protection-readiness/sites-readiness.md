@@ -1,17 +1,17 @@
 ---
-title: Datenschutzbestimmungen - Einhaltung von AEM Sites
-description: Erfahren Sie mehr über die Unterstützung von Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (CCPA) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
+title: Datenschutzbestimmungen – Einhaltung durch AEM Sites
+description: Erfahren Sie mehr über die Unterstützung von Experience Manager as a Cloud Service Sites für die verschiedenen Datenschutzbestimmungen, darunter die EU-Datenschutz-Grundverordnung (DSGVO), das kalifornische Verbraucherdatenschutzgesetz (Consumer Privacy Act) und die Einhaltung der Vorschriften bei der Implementierung eines neuen Projekts in AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Experience Manager Sites - Einhaltung von Datenschutzbestimmungen {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Experience Manager Sites – Einhaltung der Datenschutzbestimmungen {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -92,7 +92,7 @@ Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-AEM bietet mit ContextHub eine optionale Datenebene. Dadurch werden besucherspezifische Daten im Browser beibehalten, die für eine regelbasierte Personalisierung verwendet werden können.
+AEM bietet mit ContextHub eine optionale Datenschicht. Dadurch werden besucherspezifische Daten im Browser beibehalten, die für eine regelbasierte Personalisierung verwendet werden können.
 
 Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM sendet Regeln an die Datenschicht, um im Browser Personalisierungsentscheidungen zu treffen.
 

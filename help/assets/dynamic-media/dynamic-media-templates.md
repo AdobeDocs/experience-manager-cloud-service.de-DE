@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Vorlagen von [!DNL Dynamic Media] mit einem W
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: d82d40ebb5417dfb7ce37c9995c5cadb74a2fe11
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3780'
 ht-degree: 88%
@@ -83,7 +83,7 @@ In diesem Video erfahren Sie, wie Sie Schritt für Schritt eine [!DNL Dynamic Me
 Sie müssen folgende Voraussetzungen erfüllen, um eine [!DNL Dynamic Media]-Vorlage zu erstellen und ihre Versand-URL zu generieren:
 
 1. Sie haben Zugriff auf [!DNL Dynamic Media].
-1. Auf der [!DNL Assets View]-Homepage befindet sich ein Ordner in **[!UICONTROL Dynamic Media Assets]** zum Speichern der Vorlage. [Erstellen Sie einen Ordner](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**, um diesen Ordner in&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;zu replizieren.
+1. Auf der [!DNL Assets View]-Homepage befindet sich ein Ordner in **[!UICONTROL Dynamic Media Assets]** zum Speichern der Vorlage. [Erstellen Sie einen Ordner](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, um diesen Ordner in**[!UICONTROL  Dynamic Media Assets ]**zu replizieren.
 1. [Die in Ihrer Instanz von  [!DNL AEM Assets]  verfügbaren Bilder müssen mit  [!DNL Dynamic Media]  synchronisiert worden sein, damit sie für die Erstellung der Vorlage verwendet werden können](/help/assets/dynamic-media/config-dm.md).
 1. Veröffentlichen Sie die Bilder, die bei der Erstellung der Vorlage verwendet werden sollen, um nach der Erstellung die Versand-URL der Vorlage zu generieren. Die Bereitstellungs-URL kann in nachgelagerten Anwendungen verwendet werden.
 1. Um eine andere als die standardmäßige Schriftart [!UICONTROL Adobe Sans F2] in der Textebene der Vorlage zu verwenden, [laden Sie die Schriftartdatei gleichzeitig in AEM und Dynamic Media hoch](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Folgende Schriftformate werden unterstützt: AFM, OTF, PFB, PFM, FotoFont, TTC und TTF](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Stellen Sie außerdem sicher, dass vorhandene Schriftarten [erneut verarbeitet](/help/assets/reprocessing-assets-view.md) werden, um sie zu verwenden. Weitere Informationen finden Sie unter [Schriftarten](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
@@ -96,9 +96,9 @@ Sie müssen folgende Voraussetzungen erfüllen, um eine [!DNL Dynamic Media]-Vor
 Führen Sie die folgenden Schritte aus, um eine [!DNL Dynamic Media]-Vorlage zu erstellen:
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [Erstellen einer leeren Arbeitsfläche](#create-a-canvas)
@@ -189,7 +189,7 @@ Führen Sie die folgenden Schritte aus, um bestimmte Teile einer Zeichenfolge zu
    * **Schrifteigenschaften**: Ändern Sie Schriftfamilie, Farbe und Größe mithilfe der entsprechenden Bedienfeldoptionen.
      ![format-substring](/help/assets/assets/format-substring.png)
 
-[Jeder formatierte Zeichenfolgenteil wird als Teilzeichenfolge im Teilzeichenfolgen-Selektor angezeigt, der im Bedienfeld Parameter verfügbar ist. Fügen Sie diesen formatierten Teilen Parameter hinzu, um sie mithilfe der Bereitstellungs-URL der Vorlage dynamisch zu &#x200B;](#substring-parameterisation).
+[Jeder formatierte Zeichenfolgenteil wird als Teilzeichenfolge im Teilzeichenfolgen-Selektor angezeigt, der im Bedienfeld Parameter verfügbar ist. Fügen Sie diesen formatierten Teilen Parameter hinzu, um sie mithilfe der Bereitstellungs-URL der Vorlage dynamisch zu ](#substring-parameterisation).
 
 ### Hinzufügen von Formen zur Arbeitsfläche {#add-shapes-to-the-canvas}
 
@@ -266,7 +266,7 @@ Im Folgenden finden Sie Ebenenparameter, die sowohl für Bild- als auch für Tex
 
 ##### Bildparameter{#image-parameter}
 
-Source Schließen Sie den Parameter **&#x200B;**&#x200B;ein, um das Ebenenbild durch ein neues Bild zu ersetzen, indem Sie den Bildpfad im Parameterwert in der URL ändern.
+Source Schließen Sie den Parameter **** ein, um das Ebenenbild durch ein neues Bild zu ersetzen, indem Sie den Bildpfad im Parameterwert in der URL ändern.
 ![Bildquellenparameter](/help/assets/assets/image-parameter.png)
 
 ##### Textformatierungsparameter{#text-formatting-parameters}
@@ -280,8 +280,8 @@ Schließen Sie die folgenden Parameter ein, um den Text, seine Schriftart, Farbe
 
 ##### Unterzeichenfolgen parametrisieren{#substring-parameterisation}
 
-Scrollen **[!UICONTROL im Bedienfeld]** Parameter“ zum Abschnitt **[!UICONTROL Teilzeichenfolgenparameter]**. Dieser Abschnitt enthält einen **Teilzeichenfolgenselektor** der die vollständige Zeichenfolge (ausgewählte Textebene) mit konsistenter Formatierung oder ihre formatierten Teile als separate Unterzeichenfolgen anzeigt. Wählen Sie eine Teilzeichenfolge aus[&#x200B; um den Text, die Schriftfamilie, die Schriftgröße und die Farbe zu &#x200B;](#text-formatting-parameters).
-Verwenden Sie den Teilzeichenfolgenselektor zum [&#x200B; von &#x200B;](#split-substring), um einzelne Teile zu parametrisieren, oder [Teilzeichenfolgen zusammenführen](#merge-substring) um einheitliche Parameter anzuwenden.
+Scrollen **[!UICONTROL im Bedienfeld]** Parameter“ zum Abschnitt **[!UICONTROL Teilzeichenfolgenparameter]**. Dieser Abschnitt enthält einen **Teilzeichenfolgenselektor** der die vollständige Zeichenfolge (ausgewählte Textebene) mit konsistenter Formatierung oder ihre formatierten Teile als separate Unterzeichenfolgen anzeigt. Wählen Sie eine Teilzeichenfolge aus[ um den Text, die Schriftfamilie, die Schriftgröße und die Farbe zu ](#text-formatting-parameters).
+Verwenden Sie den Teilzeichenfolgenselektor zum [ von ](#split-substring), um einzelne Teile zu parametrisieren, oder [Teilzeichenfolgen zusammenführen](#merge-substring) um einheitliche Parameter anzuwenden.
 
 ###### Teilzeichenfolge aufteilen{#split-substring}
 
@@ -299,8 +299,11 @@ Führen Sie die folgenden Schritte aus, um zwei benachbarte Teilzeichenfolgen zu
 
 1. Wählen Sie in der Teilzeichenfolgenauswahl Zeichen aus zwei benachbarten Teilzeichenfolgen mit derselben Formatierung aus.
 1. Klicken Sie ![Teilzeichenfolge zusammenführen](/help/assets/assets/merge.svg), um die Teilzeichenfolgen zusammenzuführen.
+
    ![Identische Unterzeichenfolgen zusammenführen](/help/assets/assets/merge-two-substrings.png)
-Sie können einheitliche Parameter auf die neu gebildete Teilzeichenfolge anwenden.
+
+   Sie können einheitliche Parameter auf die neu gebildete Teilzeichenfolge anwenden.
+
    >[!NOTE]
    >
    >Nur Teilzeichenfolgen mit identischer Formatierung können zusammengeführt werden.
@@ -324,7 +327,7 @@ Führen Sie diese Schritte aus, um den Parametern zum [!UICONTROL Ausblenden] (!
 
 Führen Sie die folgenden Schritte aus, um die Vorlage in der Vorschau anzuzeigen und zu veröffentlichen und die Bereitstellungs-URL zu kopieren:
 
-1. Klicken Sie auf der Seite „Arbeitsfläche“ auf **[!UICONTROL Vorschau]**. Sie können auch zu **[!UICONTROL Assets-Ansicht]** **>** **[!UICONTROL Dynamic Media-Assets]** **&#x200B;**&#x200B;navigieren, Ihre Vorlage suchen und auswählen und dann **&#x200B;**&#x200B;auf **&#x200B;**&#x200B;Vorlage bearbeiten **&#x200B;**&#x200B;sowie auf **[!UICONTROL Vorschau]** klicken. Auf der Seite „Vorschau“ werden die Vorlage, ihre Parameter (parametrisierte Ebenen und Eigenschaften), der Veröffentlichungsstatus und die Option **[!UICONTROL Veröffentlichen]** angezeigt.
+1. Klicken Sie auf der Seite „Arbeitsfläche“ auf **[!UICONTROL Vorschau]**. Sie können auch zu **[!UICONTROL Assets-Ansicht]** **>** **[!UICONTROL Dynamic Media-Assets]** **** navigieren, Ihre Vorlage suchen und auswählen und dann **** auf **** Vorlage bearbeiten **** sowie auf **[!UICONTROL Vorschau]** klicken. Auf der Seite „Vorschau“ werden die Vorlage, ihre Parameter (parametrisierte Ebenen und Eigenschaften), der Veröffentlichungsstatus und die Option **[!UICONTROL Veröffentlichen]** angezeigt.
 1. Wählen Sie Parameter aus dem Bedienfeld **[!UICONTROL Vorlagenparameter]** aus, um ihre Werte zu bearbeiten und den Inhalt, die Größe, die Position oder die Textformatierung der entsprechenden Vorlagenebene in der Vorschau sofort zu aktualisieren. Beispiel:
    1. Auswählen einer Textebene und Bearbeiten ihres Textes oder
    1. Wählen Sie eine Bildebene aus, klicken Sie auf ![Inhalt spontan erstellen](/help/assets/assets/add-image.svg), wählen Sie ein Bild aus der Asset-Auswahl aus und klicken Sie auf **[!UICONTROL Aktualisieren]**.
@@ -396,8 +399,8 @@ Führen Sie die folgenden Schritte aus, um einer Ebene einen CTA-Link hinzuzufü
     <div class="adobe-dynamicmedia-template-embed-container">
     <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
-    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/de/products.html" alt="Layer with CTA" title="https://business.adobe.com/de/products.html" target="_blank">
-    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/de/products.html" alt="Layer with CTA" title="https://business.adobe.com/de/products.html" target="_blank">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     </map>
     </div>
    ```

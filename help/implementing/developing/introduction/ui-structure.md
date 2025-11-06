@@ -3,8 +3,8 @@ title: Struktur der AEM-UI
 description: Die Benutzeroberfläche von AEM basiert auf bestimmten Prinzipien und besteht aus mehreren Schlüsselelementen
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 100%

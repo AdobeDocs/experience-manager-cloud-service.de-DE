@@ -5,7 +5,7 @@ keywords: Konfigurieren einer SharePoint-Site mit eingeschränktem Zugriff?, Kon
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 24%
@@ -36,7 +36,7 @@ Vorteile für eingeschränkten Zugriff auf die SharePoint-Site:
 
 Gehen Sie wie folgt vor, um SharePoint Sites mit eingeschränktem Zugriff mithilfe von Autorisierungsumfängen zu konfigurieren:
 
-1. [Erstellen eines Programms mit dem &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Erstellen eines Programms mit dem ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Festlegen des Autorisierungsumfangs bei der AEM-Instanz](#set-the-authorization-scope-at-aem-instance)
 
 ### Erstellen einer Anwendung mit eingeschränkter Berechtigung im Azure-Portal
@@ -46,13 +46,14 @@ Erstellen Sie eine Anwendung im [Microsoft Azure](https://portal.azure.com/#home
 ![SharePoint ausgewählte Site](/help/forms/assets/sharepoint-selected-site.png)
 
 Informationen zum Abrufen von `Client ID`, `Client Secret` und `Tenant ID` für `OAuth URL` finden Sie in der [Dokumentation zu Microsoft®](https://learn.microsoft.com/de-de/graph/auth-register-app-v2).
+
 * Fügen Sie im Microsoft® Azure-Portal den Umleitungs-URI als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` hinzu. Ersetzen Sie `[author-instance]` durch die URL Ihrer Autoreninstanz.
 * Fügen Sie den `offline_access` und `Sites.Selected` Berechtigungsbereich in der Graph-API von Microsoft hinzu, um eingeschränkten Zugriff auf Sites zu ermöglichen.
 * Für OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
 Für die Verwendung der `Sites.Selected` API-Berechtigung ist eine im Azure-Portal registrierte Anwendung mit den entsprechenden Berechtigungen für SharePoint Online Sites erforderlich. Durch diese Einrichtung wird sichergestellt, dass die Anwendung über die erforderliche Autorisierung verfügt, um im definierten Umfang mit der SharePoint-Site zu interagieren, wodurch der erforderliche eingeschränkte Zugriff bereitgestellt wird.
 
-Anweisungen zum Entwickeln von Anwendungen, die [&#x200B; Berechtigungen für SharePoint Online Sites verwenden, finden Sie &#x200B;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) Blog-Artikel `Sites.Selected` Entwickeln von Anwendungen, die Sites verwenden.Ausgewählte Berechtigungen für SPO Sites .
+Anweisungen zum Entwickeln von Anwendungen, die [ Berechtigungen für SharePoint Online Sites verwenden, finden Sie ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) Blog-Artikel `Sites.Selected` Entwickeln von Anwendungen, die Sites verwenden.Ausgewählte Berechtigungen für SPO Sites .
 
 ### Festlegen des Autorisierungsumfangs bei der AEM-Instanz
 
@@ -86,11 +87,12 @@ Um den eingeschränkten Zugriff auf eine Microsoft SharePoint-Site zu ermöglich
    >* Standardmäßig ist `forms-ootb-storage-adaptive-forms-submission` auf der ausgewählten SharePoint-Site vorhanden.
    >* Erstellen Sie einen Ordner als `forms-ootb-storage-adaptive-forms-submission`, wenn er nicht bereits in der `Documents`-Bibliothek der ausgewählten SharePoint-Site vorhanden ist, indem Sie auf **Ordner erstellen** klicken.
 
-Jetzt können Sie diese [SharePoint Sites-Konfiguration für die Sendeaktion in einem adaptiven Formular &#x200B;](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af).
+Jetzt können Sie diese [SharePoint Sites-Konfiguration für die Sendeaktion in einem adaptiven Formular ](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af).
 
 ## Zusätzliche Bytes
 
 So rufen Sie den Wert der `SharePoint Site ID` ab:
+
 1. Navigieren Sie zu den [Microsoft Graph Explorer-APIs](https://developer.microsoft.com/en-us/graph/graph-explorer).
 1. Klicken Sie im linken Bereich unter den `SharePoint Sites`-APIs auf `Search for a SharePoint site by keyword`.
 1. Ersetzen Sie den `contoso` durch den tatsächlichen Namen Ihrer SharePoint-Site, um die entsprechende Site-ID abzurufen.

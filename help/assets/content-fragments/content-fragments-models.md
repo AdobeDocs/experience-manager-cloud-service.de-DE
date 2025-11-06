@@ -3,9 +3,9 @@ title: Inhaltsfragmentmodelle (Assets – Inhaltsfragmente)
 description: Erfahren Sie, inwiefern Inhaltsfragmentmodelle als Grundlage für Ihre Headless-Inhalte in AEM dienen und es Ihnen ermöglichen, Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
-role: User, Admin, Architect
+role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 97%
@@ -75,7 +75,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    * Links: Felder bereits definiert
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
-   * Oben: Eine Option, um den [neuen Editor“ &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * Oben: Eine Option, um den [neuen Editor“ ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
    >[!NOTE]
    >
@@ -324,10 +324,10 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >AEM bietet einen Wiederholungsschutz für:
 >
 >* Inhaltsreferenzen
->  &#x200B;>  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+>  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
 >* Fragmentverweise in GraphQL
->  &#x200B;>  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
+>  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
 
 ### Inhaltsreferenz {#content-reference}
 

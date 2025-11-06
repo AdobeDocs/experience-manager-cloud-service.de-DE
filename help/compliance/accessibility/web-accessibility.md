@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service und Richtlinien für barriere
 description: Einführung in Adobe Experience Manager as a Cloud Service und die Richtlinien für barrierefreien Web-Zugang
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%

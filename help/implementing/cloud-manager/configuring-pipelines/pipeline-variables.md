@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Pipeline-Variablen in Cloud Manager verwenden
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: fb180685152a00d520530d21a44337381febba7f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 97%
@@ -61,7 +61,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 ## Bearbeiten einer Pipeline-Variablen {#edit-ui}
 
-1. Klicken Sie bei der [Verwaltung Ihrer Pipelines &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen bearbeiten möchten.
+1. Klicken Sie bei der [Verwaltung Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen bearbeiten möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
 
@@ -87,7 +87,7 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 ## Löschen einer Pipeline-Variablen {#delete-ui}
 
-1. Klicken Sie bei der [Verwaltung Ihrer Pipelines &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen löschen möchten.
+1. Klicken Sie bei der [Verwaltung Ihrer Pipelines ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, für die Sie Pipeline-Variablen löschen möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Variablen anzeigen/bearbeiten**.
 

@@ -2,10 +2,10 @@
 title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Ihre AEM-Inhaltsfragmente über die Konsole und den Editor verwalten, um Inhalte als Grundlage für Ihre Headless-Inhalte oder für die Seitenbearbeitung zu verwalten.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 98%

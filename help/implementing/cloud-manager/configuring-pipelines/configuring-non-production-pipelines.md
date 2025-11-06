@@ -5,8 +5,8 @@ index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 80%
@@ -37,9 +37,9 @@ Es gibt zwei Arten von produktionsfremden Pipelines:
 
 Sobald Sie mit der Benutzeroberfläche von Cloud Manager Ihr Programm eingerichtet und mindestens eine Umgebung haben, können Sie eine produktionsfremde Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
+1. Melden Sie sich unter [experiece.adobe.com](https://experience.adobe.com) bei Cloud Manager an.
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm.
 

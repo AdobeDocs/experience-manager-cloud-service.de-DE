@@ -5,14 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 1%
 
 ---
-
 
 # Formularübermittlung und -integration
 
@@ -312,7 +312,7 @@ Lead-Generierung verarbeiten:
 Bei Integrationsproblemen:
 
 - Lesen Sie die [Häufig gestellten Fragen zu Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Lesen Sie [&#x200B; Erste Schritte &#x200B;](forms-experience-builder-getting-started.md)
+- Lesen Sie [ Erste Schritte ](forms-experience-builder-getting-started.md)
 - Wenden Sie sich an Ihren Systemadministrator, um technische Unterstützung zu erhalten
 - Siehe API-Dokumentation für externe Services
 

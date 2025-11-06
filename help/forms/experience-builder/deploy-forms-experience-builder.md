@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie mit Forms Experience Builder Formulare mit pr
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 32%
+ht-degree: 74%
 
 ---
-
 
 # Bereitstellen und Konfigurieren von Forms Experience Builder
 
@@ -21,7 +21,7 @@ ht-degree: 32%
 
 >[!IMPORTANT]
 >
-> **Dokumentation kann sich ändern**: Diese Dokumentation wird derzeit mit dem Produkt getestet und unterliegt möglichen Aktualisierungen und Überarbeitungen. Funktionen, Befehle und Beispiele können sich ändern, während sich Forms Experience Builder während des Early Access-Programms weiterentwickelt.
+> **Dokumentation kann sich ändern**: Diese Dokumentation wird derzeit mit dem Produkt getestet und unterliegt möglichen Aktualisierungen und Überarbeitungen. Funktionen, Befehle und Beispiele können sich ändern, wenn Forms Experience Builder während des Early-Access-Programms weiterentwickelt wird.
 
 Dieses umfassende Handbuch hilft Ihnen bei den ersten Schritten zum Erstellen und Verwalten von Formularen mit der dialogbasierten KI-Technologie. Ob Sie noch am Anfang stehen und Ihr erstes Formular erstellen möchten oder schon über Erfahrung verfügen und komplexe Funktionen nutzen möchten: Hier finden Sie detaillierte Informationen und praktische Beispiele, die Ihren Weg durch die Funktionen von Forms Experience Builder hilfreich begleiten.
 
@@ -45,7 +45,7 @@ Ihr Einrichtungsprozess hängt von Ihrer AEM Forms-Implementierung ab. Wählen S
 
 **Für Edge Delivery Services**
 
-Wenn Sie Edge Delivery Services Forms verwenden und hauptsächlich den universellen Editor verwenden. [Bereiten Sie Ihr Projekt für Edge Delivery Services Forms &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md). Dies ist eine einmalige Einrichtung zum Aktivieren von Forms Experience Builder.
+Wenn Sie Edge Delivery Services Forms verwenden und hauptsächlich den universellen Editor verwenden. [Bereiten Sie Ihr Projekt für Edge Delivery Services Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md). Dies ist eine einmalige Einrichtung zum Aktivieren von Forms Experience Builder.
 
 **Für Formulare, die auf Kernkomponenten basieren**
 
@@ -79,10 +79,10 @@ Bei Formularen, die über Edge Delivery Services bereitgestellt werden, ist der 
 
 ### Ihr erstes Formular
 
-| Beispiel für eine Unterhaltung |   |
+| Beispiel für eine Konversation |   |
 |--------------------------------------------------------------------------------------------------------------------------------------------|---|
-| **Versuchen Sie diese Konversation, um ein umfassendes Kontaktformular zu erstellen (basierend auf der Summit-Demo):**<br><br>**Sie:** „Erstellen Sie ein Kontaktformular, um persönliche Informationen zu erfassen, einschließlich des vollständigen Namens, der E-Mail-Adresse, der Telefonnummer, des Firmennamens, der Stellenbezeichnung und eines Nachrichtenfelds für Anfragen“<br><br>**KI:** Wählen Sie eine Vorlage<br>    Eine Dropdown-Liste zur Auswahl einer Vorlage <br><br>**KI:** Design auswählen<br>    Ein Dropdown-Menü zur Auswahl eines Designs/<br><br>**:** Formular erstellen | ![Ihr erstes Formular](/help/edge/docs/forms/assets/create-form.png) |
-| <br>**AI:** Erstelltes Formular öffnen | </br> Das Formular wird im Editor erstellt und geöffnet |
+| **Versuchen Sie diese Konversation, um ein umfassendes Kontaktformular zu erstellen (basierend auf der Summit-Demo):**<br><br>**Sie:** „Erstelle ein Kontaktformular zur Erfassung personenbezogener Informationen, einschließlich des vollständigen Namens, der E-Mail-Adresse, der Telefonnummer, des Firmennamens, der Stellenbezeichnung und eines Nachrichtenfelds für Anfragen“<br><br>**KI:** Vorlage auswählen<br>    Eine Dropdown-Liste zur Auswahl einer Vorlage <br><br>**KI:** Design auswählen<br>    Eine Dropdown-Liste zur Auswahl eines Designs/<br><br>**KI:** Formular erstellen | ![Ihr erstes Formular](/help/edge/docs/forms/assets/create-form.png) |
+| <br>**AI:** Erstelltes Formular öffnen | </br> Das Formular wird im Editor erstellt und geöffnet. |
 
 
 ### Grundlegende Befehle
@@ -90,16 +90,16 @@ Bei Formularen, die über Edge Delivery Services bereitgestellt werden, ist der 
 | Symbol | Zweck | Anwendungsbeispiel |
 |--------|---------|---------------|
 | `/` | Schnellaktionen und Tastaturbefehle | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
-| `@` | Referenzieren Sie vorhandene Formularfelder | `@email`, `@firstName`, `Make @phoneNumber required` |
-| Nur Text | Natürlicher Dialog | „Erforderliches Telefonnummernfeld hinzufügen“, „Validierung für E-Mail erstellen“ |
+| `@` | Referenzieren vorhandener Formularfelder | `@email`, `@firstName`, `Make @phoneNumber required` |
+| Nur Text | Natürlicher Dialog | „Füge ein erforderliches Feld für die Telefonnummer hinzu“, „Erstelle eine Validierung für E-Mail“ |
 
 **Spezifische Befehlsbeispiele:**
 
-* `/create-form customer survey` - Erstellt ein neues Kundenumfrageformular
-* `/add-field @email validation`: Fügt Validierungen zu vorhandenem E-Mail-Feld hinzu
-* `/create-rule show @spouse if @maritalStatus equals married` - Erstellt eine bedingte Logik
-* `/configure-submit to email support@company.com` - Richtet die E-Mail-Übermittlung ein
-* `/help multi-step forms` - Erhält Hilfe zur mehrstufigen Formularerstellung
+* `/create-form customer survey`: Erstellt ein neues Kundenumfrageformular
+* `/add-field @email validation`: Fügt Validierungen zu vorhandenem Feld für die E-Mail-Adresse hinzu
+* `/create-rule show @spouse if @maritalStatus equals married`: Erstellt eine bedingte Logik
+* `/configure-submit to email support@company.com`: Richtet die E-Mail-Übermittlung ein
+* `/help multi-step forms`: Bietet Hilfe zur Erstellung mehrstufiger Formulare
 
 ### Tipps für den Erfolg
 
@@ -128,69 +128,69 @@ Beschreiben Sie Ihre Formularanforderungen in natürlicher Sprache und Forms Exp
 
 **Einfache Ergänzungen:**
 
-    👤 You: „Add a section for personal information“
-    👤 You: „Include a file upload for resume“
-    👤 You: „Add a dropdown for country selection“
+    👤 Sie: „Füge einen Abschnitt für personenbezogene Informationen hinzu“
+    👤 Sie: „Füge eine Möglichkeit zum Datei-Upload von Lebensläufen hinzu“
+    👤 Sie: „Füge eine Dropdown-Liste zur Länderauswahl hinzu“
 
 **Detaillierte Spezifikationen:**
 
-    👤 Sie: „Fügen Sie ein Bedienfeld für persönliche Informationen mit Feldern für vollständigen Namen, Geburtsdatum, Telefonnummer und E-Mail-Adresse hinzu“
-    👤 Sie: „Fügen Sie eine sichere Datei-Upload-Komponente für Dokumente hinzu, die auf PDF-Dateien unter 5 MB beschränkt ist“
-    👤 Sie: „Fügen Sie ein Dropdown-Menü für ein Land mit Optionen für die USA, Kanada, Großbritannien und Deutschland hinzu“
+    👤 Sie: „Füge ein Panel für personenbezogene Informationen mit Feldern für vollständigen Namen, Geburtsdatum, Telefonnummer und E-Mail-Adresse hinzu“
+    👤 Sie: „Füge eine Komponente für sicheres Hochladen von Dokumenten hinzu, die auf PDF-Dateien unter 5 MB beschränkt ist“
+    👤 Sie: „Füge eine Dropdown-Liste zur Länderauswahl mit Optionen für die USA, Kanada, Großbritannien und Deutschland hinzu“
 
 #### Dynamisches Verhalten erstellen
 
 **Einfache Logik:**
 
-    👤 You: „Show additional fields when &#39;Other&#39; is selected“
-    🤖 AI: „Created a conditional rule that shows additional fields when &#39;Other&#39; is selected“
+    👤 Sie: „Zeige bei Auswahl von „Sonstiges“ zusätzliche Felder an“
+    🤖 KI: „Eine bedingte Regel wurde erstellt, durch die bei Auswahl von „Sonstiges“ zusätzliche Felder angezeigt werden“
     
-    👤 You: „Make the email field required“
-    🤖 AI: „Updated the email field to be required with validation“
+    👤 Sie: „Lege fest, dass das Feld für die E-Mail-Adresse erforderlich ist“
+    🤖 KI: „Das Feld für die E-Mail-Adresse wurde aktualisiert, sodass es erforderlich ist und dies validiert wird“
     
-    👤 You: „Calculate the total automatically“
-    🤖 AI: „Added calculated logic to automatically compute total“
+    👤 Sie: „Berechne die Gesamtwerte automatisch“
+    🤖 KI: „Berechnungslogik wurde hinzugefügt, durch die Gesamtwerte automatisch berechnet werden“
 
 **Komplexe Geschäftsregeln:**
 
-    👤 Sie: „Die Informationsfelder des Partners nur anzeigen, wenn der Familienstand auf „Verheiratet“ gesetzt ist“
-    🤖 KI: „Bedingte Regel erstellt, die die Felder des Partners basierend auf dem Familienstand anzeigt“
+    👤 Sie: „Zeige die Felder für die Informationen der Partnerin bzw. des Partners nur dann an, wenn als Familienstand „Verheiratet“ festgelegt ist“
+    🤖 KI: „Eine bedingte Regel wurde erstellt, die die Felder zur Partnerin bzw. zum Partners basierend auf dem Familienstand anzeigt“
     
-    👤 Sie: „Berechnen Sie die Gesamtkosten durch Multiplikation von Menge und Preis, dann fügen Sie 10 % Steuer hinzu“
-    🤖 KI: „Hinzugefügte Berechnungslogik mit Quantität, Preis und Steuerberechnung“
+    👤 Sie: „Berechne die Gesamtkosten durch Multiplikation von Menge und Preis und füge dann 10 % Steuer hinzu“
+    🤖 KI: „Berechnungslogik mit Menge, Preis und Steuerberechnung wurde hinzugefügt“
     
-    👤 Sie: „Aktivieren Sie die Senden-Schaltfläche nur, wenn alle erforderlichen Felder ausgefüllt und Bedingungen akzeptiert sind“
-    🤖 KI: „Erstellte Validierungslogik, die die Übermittlung nur ermöglicht, wenn alle Bedingungen erfüllt sind“
+    👤 Sie: „Aktiviere die Schaltfläche „Übermitteln“ nur, wenn alle erforderlichen Felder ausgefüllt und Bedingungen akzeptiert sind“
+    🤖 KI: „Validierungslogik wurde erstellt, die die Übermittlung nur ermöglicht, wenn alle Bedingungen erfüllt sind“
 
 #### Formularlayout und -design
 
 **Änderungen am Layout:**
 
-    👤 You: „Make this a multi-step form“
-    🤖 AI: „Converted the form to a progressive layout with navigation“
+    👤 Sie: „Wandle dies in ein mehrstufiges Formular um“
+    🤖 KI: „Das Formular wurde in ein Formular mit progressivem Layout und Navigation konvertiert“
     
-    👤 You: „Organize fields in two columns“
-    🤖 AI: „Updated the layout to display fields in a two-column Arrangement“
+    👤 Sie: „Ordne Felder in zwei Spalten an“
+    🤖 KI: „Das Layout wurde aktualisiert, sodass Felder in zwei Spalten angezeigt werden“
     
-    👤 You: „Convert to an accordion layout“
-    🤖 AI: „Transformed the form to use accordion-style sections“
+    👤 Sie: „Konvertiere dies in ein Akkordeon-Layout“
+    🤖 KI: „Das Formular wurde so umgewandelt, dass Abschnitte im Akkordeonstil angezeigt werden“
 
 **Design-Verbesserungen:**
 
-    👤 Sie: „Erstellen eines Formulars im Assistentenstil mit drei Schritten: persönliche Informationen, Voreinstellungen und Überprüfung“
-    🤖 KI: „Erstellen eines Assistentenformulars mit drei verschiedenen Schritten und Navigation“
+    👤 Sie: „Erstelle ein Formular mit Assistenten mit drei Schritten: personenbezogene Informationen, Voreinstellungen und Überprüfung“
+    🤖 KI: „Ein Formular mit Assistenten, drei verschiedenen Schritten und Navigation wurde erstellt“
     
-    👤 Sie: „Ordnen Sie die Adressfelder in einem kompakten zweispaltigen Layout an“
-    🤖 KI: „Organisierte Adressfelder in einem kompakten zweispaltigen Format“
+    👤 Sie: „Ordne die Adressfelder in einem kompakten zweispaltigen Layout an“
+    🤖 KI: „Die Adressfelder wurden in einem kompakten zweispaltigen Format angeordnet“
     
-    👤 Sie: „Aktualisieren Sie das Layout, um es dem angehängten Wireframe anzupassen“
+    👤 Sie: „Aktualisiere das Layout, um es dem angehängten Wireframe anzupassen“
     🤖 KI: „Das Layout wurde so geändert, dass es der bereitgestellten Entwurfsreferenz entspricht“
 
 ### Konfiguration senden
 
-Der Forms Experience Builder kann verschiedene Übermittlungsendpunkte konfigurieren, um Ihre Formulare mit externen Systemen und Diensten zu verbinden:
+Forms Experience Builder kann verschiedene Übermittlungsendpunkte konfigurieren, um Ihre Formulare mit externen Systemen und Diensten zu verbinden:
 
-| Übermittlungsaktionstyp | Setup-Befehl | Anwendungsfall |
+| Typ der Übermittlungsaktion | Setup-Befehl | Anwendungsfall |
 |------------------|---------------|----------|
 | **E-Mail** | „Formular an E-Mail senden“ | Benachrichtigungen und Bestätigungen für Formularübermittlungen |
 | **REST-API** | „An REST-Endpunkt senden“ | Benutzerdefinierte Anwendungen und Systeme von Drittanbietern |
@@ -198,17 +198,17 @@ Der Forms Experience Builder kann verschiedene Übermittlungsendpunkte konfiguri
 | **Workflow** | „Mit Power Automate verbinden“ | Automatisierung und Genehmigung von Geschäftsprozessen |
 | **Marketing** | „Mit Marketo integrieren“ | Lead-Management und Marketing-Automatisierung |
 
-**Beispiele für erweiterte Sende-Konfigurationen:**
+**Beispiele für erweiterte Übermittlungskonfigurationen:**
 
-    👤 Sie: „Senden Sie Formularübermittlungen an hr@company.com und erstellen Sie einen Fall in unserem CRM-System“
-    🤖 KI: „Konfigurierte E-Mail-Übermittlung und CRM-Übermittlungsaktion“
+    👤 Sie: „Sende die Formularübermittlungen an „hr@company.com“ und erstelle einen Fall in unserem CRM-System“
+    🤖 KI: „E-Mail-Übermittlung und CRM-Übermittlungsaktion wurden konfiguriert“
     
-    👤 Sie: „Übermitteln Sie Daten an unseren REST-API-Endpunkt und stellen Sie einen Trigger für den neuen Kunden-Workflow her“
-    🤖 KI: „Richten Sie die REST-API-Übermittlung mit Workflow-Triggern ein“
+    👤 Sie: „Übermittle Daten an unseren REST-API-Endpunkt und löse den neuen Kunden-Workflow aus“
+    🤖 KI: „REST-API-Übermittlung mit Workflow-Triggern wurde eingerichtet“
     
-    👤 Sie: „E-Mail-Antworten an das Vertriebsteam und fügen Sie den Lead zu unserer Marketing-Automatisierungsplattform hinzu“
-    🤖 KI: „Konfigurierte Multi-Channel-Übermittlung mit E-Mail- und Marketing-Automatisierung“
-&quot;&quot;&quot;
+    👤 Sie: „Sende Antworten per E-Mail an das Vertriebs-Team und füge den Lead zu unserer Marketing-Automatisierungsplattform hinzu“
+    🤖 KI: „Multi-Channel-Übermittlung mit E-Mail- und Marketing-Automatisierung wurde konfiguriert“
+
 
 
 
@@ -220,13 +220,13 @@ Der Forms Experience Builder kann verschiedene Übermittlungsendpunkte konfiguri
 
 Erstellen Sie eine komplexe Validierungs- und Geschäftslogik, die auf Benutzerinteraktionen reagiert und die Datenintegrität sicherstellt:
 
-    👤 You: „Show the address section only if the user selves &#39;Ship to different address&#39;&quot;
-    🤖 KI: „Created a conditional rule that show/hids the address panel based on checkbox selection“
+    👤 Sie: „Zeige den Adressabschnitt nur dann an, wenn Benutzende „An andere Adresse liefern“ auswählen“
+    🤖 KI: „Eine bedingte Regel wurde erstellt, durch die das Panel für die Adresse basierend auf Kontrollkästchenauswahl angezeigt/ausgeblendet wird“
 
 ### Mehrstufige Formularerstellung
 
-    👤 Sie: „Erstellen eines progressiven Formulars mit 3 Schritten: persönliche Informationen, Voreinstellungen, Bestätigung“
-    🤖 KI: „Erstellen eines progressiven Formulars mit Navigation zwischen Schritten und Validierung in jedem Schritt“
+    👤 Sie: „Erstelle ein progressives Formular mit 3 Schritten: personenbezogene Informationen, Voreinstellungen, Bestätigung“
+    🤖 KI: „Ein progressives Formular mit Navigation zwischen Schritten und Validierung in jedem Schritt wurde erstellt“
 
 ### Erweiterte Feldtypen
 
@@ -239,7 +239,7 @@ Erstellen Sie eine komplexe Validierungs- und Geschäftslogik, die auf Benutzeri
 ### Konvertierung von PDF in Formulare
 
     👤 Sie: „Konvertieren Sie diese PDF in ein interaktives Formular“
-    🤖 KI: „Analysierte die PDF und erstellte ein Formular mit entsprechenden Feldtypen und Validierungen“
+    🤖 KI: „Die PDF wurde analysiert und ein Formular mit entsprechenden Feldtypen und Validierungen wurde erstellt“
 
 
 

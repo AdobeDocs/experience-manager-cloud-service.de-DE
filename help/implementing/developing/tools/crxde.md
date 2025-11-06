@@ -3,11 +3,11 @@ title: Verwenden von CRXDE Lite
 description: CRXDE Lite ist Teil des AEM-Schnellstarts und steht Ihnen zur Verfügung, um auf das Repository in Ihren lokalen Entwicklungsumgebungen im Browser zuzugreifen und es zu ändern.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1678'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '1677'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Die Benutzeroberfläche von CRXDE Lite besteht aus vielen Teilen und Funktionen.
 
 ### Obere Wechselleiste {#top-switcher-bar}
 
-Mit der oberen Umschaltleiste können Sie schnell zwischen CRXDE Lite und dem [Package Manager](package-manager.md) umschalten.
+Mit der oberen Umschaltleiste können Sie schnell zwischen CRXDE Lite und dem [Paket-Manager](package-manager.md) umschalten.
 
 ### Knotenpfad-Widget {#node-path-widget}
 
@@ -121,7 +121,7 @@ Mit der Schaltfläche **Alle speichern** werden alle von Ihnen vorgenommenen Än
 Die Schaltfläche **Erstellen** ist ein Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:
 
 * Knoten: ein Knoten mit einem beliebigen Knotentyp
-* Datei: `nt:file`-Knoten und dessen nt:ressource-Unterknoten
+* Datei : ein `nt:file` und sein nt:resource-Unterknoten
 * Ordner: ein `nt:folder`-Knoten
 
 ### Schaltfläche „Löschen“ {#delete-button}

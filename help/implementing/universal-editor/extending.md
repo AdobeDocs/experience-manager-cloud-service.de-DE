@@ -2,10 +2,10 @@
 title: Erweitern des universellen Editors
 description: Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern der Funktionen des universellen Editors, um die Anforderungen Ihrer Inhaltsautorinnen und Inhaltsautoren zu unterstützen.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 100%
 

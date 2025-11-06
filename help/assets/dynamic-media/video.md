@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
-workflow-type: ht
-source-wordcount: '10070'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '10063'
+ht-degree: 99%
 
 ---
 
@@ -272,7 +272,7 @@ Beachten Sie die folgenden Best Practice-Tipps für die Kodierung von Quellvideo
 <!-- For advice about video encoding, see the following:
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_de). -->
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### Quellvideodateien {#source-video-files}
 
@@ -285,9 +285,9 @@ Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhä
 
 | Größe | Seitenverhältnis | Mindest-Bitrate |
 |--- |--- |--- |
-| 1024 x 768 | 4:3 | 4500 kBit/s für die meisten Videos |
-| 1280 x 720 | 16:9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
-| 1920 x 1080 | 16:9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1024 x 768 | 4 :3 | 4500 kBit/s für die meisten Videos |
+| 1280 x 720 | 16 :9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1920 x 1080 | 16 :9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
@@ -309,12 +309,12 @@ Anhand der folgenden Tabelle können Sie die Formelergebnisse in gängige Seiten
 
 | Formelergebnis | Seitenverhältnis |
 |--- |--- |
-| 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 1,33 | 4 :3 |
+| 0,75 | 3 :4 |
+| 1,78 | 16 :9 |
+| 0,56 | 9 :16 |
 
-Beispiel: Ein Video mit einer Breite von 1440 und einer Höhe von 1080 hat ein Seitenverhältnis von 1440:1080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
+Beispielsweise hat ein Video mit einer Breite × Höhe von 1.440 und einem Seitenverhältnis von 1.440 zu 1.080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
 
 ### Bitrate {#bitrate}
 
@@ -443,7 +443,7 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 Sie können ihn nur dann aktualisieren, wenn das Enddatum des Berichts der aktuelle Tag ist. Dadurch wird sichergestellt, dass Sie das Video-Tracking sehen können, das seit der letzten Ausführung des Berichts vorgenommen wurde.
 
    * Klicken Sie in der Nähe der oberen rechten Ecke auf das Symbol **[!UICONTROL Datumsauswahl]**.
-Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Bericht ausführen]**.
+Geben Sie den Start und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Bericht ausführen]**.
 
    Im Gruppenfeld „Top-Metriken“ werden verschiedene aggregierte Messungen für alle *veröffentlichten* Videos auf der Site angegeben.
 
@@ -456,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -601,7 +601,7 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
    ![Erstellen von Untertiteloptionen.](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *Das Dropdown-Menü „Untertitel erstellen“ bietet drei Optionen: „Dateien hochladen“, „Audiospuren konvertieren“ und „Untertitel übersetzen“.*
 
-+++**Option 1:** *Ich habe meine eigenen bereits vorhandenen Untertiteldateien in den Sprachen, die ich verwenden möchte* (Option **[!UICONTROL Dateien hochladen]**).
+   +++**Option 1:** *Ich habe meine eigenen bereits vorhandenen Untertiteldateien in den Sprachen, die ich verwenden möchte* (Option **[!UICONTROL Dateien hochladen]**).
 
    1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Untertitel erstellen]** > **[!UICONTROL Dateien hochladen]**.
    1. Navigieren Sie zu einer oder mehreren Ihrer bereits vorhandenen `.vtt`-Dateien, wählen Sie sie aus und öffnen Sie sie.
@@ -625,9 +625,9 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
    1. Wenn Sie im vorherigen Schritt **[!UICONTROL Speichern und schließen]** statt **[!UICONTROL Speichern]** ausgewählt haben, können Sie dennoch den Verarbeitungsstatus der hochgeladenen Dateien anzeigen. Siehe [Anzeigen des Lebenszyklusstatus hochgeladener Untertitel- und Audiospurdateien](#lifecycle-status-video).
    1. Fahren Sie mit Schritt 8 fort.
 
-+++
+   +++
 
-+++**Option 2:** *Ich möchte, dass die KI meine Untertiteldateien in mehreren Sprachen generiert.* (Option **[!UICONTROL Audiospuren konvertieren]**).
+   +++**Option 2:** *Ich möchte, dass die KI meine Untertiteldateien in mehreren Sprachen generiert.* (Option **[!UICONTROL Audiospuren konvertieren]**).
 
    1. Klicken Sie in der oberen rechten Ecke der Seite auf **[!UICONTROL Untertitel erstellen]** > **[!UICONTROL Dateien hochladen]**.
 
@@ -659,9 +659,9 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
       Sie können Metadaten von bestimmten Untertiteln später bei Bedarf ändern oder bearbeiten. Bei Veröffentlichung des Videos werden diese Metadatendetails in öffentlichen URLs in veröffentlichten Videos angezeigt.
    1. Fahren Sie mit Schritt 8 fort.
 
-+++
+   +++
 
-+++**Option 3:** *Text in einer Untertiteldatei (`.vtt`) muss korrigiert und neu hochgeladen werden, um die alte `.vtt`-Datei zu ersetzen. Anschließend soll die KI die korrigierte Datei übersetzen* (Option **[!UICONTROL Untertitel übersetzen]**).
+   +++**Option 3:** *Text in einer Untertiteldatei (`.vtt`) muss korrigiert und neu hochgeladen werden, um die alte `.vtt`-Datei zu ersetzen. Anschließend soll die KI die korrigierte Datei übersetzen* (Option **[!UICONTROL Untertitel übersetzen]**).
 
    1. Klicken Sie auf **[!UICONTROL Untertitel erstellen]** > **[!UICONTROL Untertitel übersetzen]**. Diese Option ist verfügbar, wenn eine oder mehrere Untertiteldateien bereits hinzugefügt und verarbeitet wurden.
 
@@ -694,7 +694,7 @@ Hinzugefügte Untertitel werden in den Formaten WebVTT und Adobe VTT unterstütz
 
    1. Fahren Sie mit Schritt 8 fort.
 
-+++
+   +++
 
 1. (Optional) Zeigen Sie vor der Veröffentlichung eine Vorschau des Videos an, um sicherzustellen, dass Untertitel und Audio erwartungsgemäß funktionieren. Siehe [Anzeigen eines Videos mit mehrfachen Untertiteln und Audiospuren in einer Vorschau](#preview-video-audio-subtitle).
 1. Veröffentlichen Sie das Video. Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
@@ -934,7 +934,7 @@ Folgen Sie den Anweisungen auf dem Bildschirm von einer dieser Websites, um Ihre
 >
 >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate `.vtt`-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
-Im Allgemeinen sollte die `.vtt`-Datei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen WCM-System zu automatisieren.
+Im Allgemeinen sollte die `.vtt`-Datei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für das Gebietsschema wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen WCM-System zu automatisieren.
 
 1. Laden Sie in Experience Manager Ihre WebVTT-Untertiteldatei in das DAM hoch.
 1. Navigieren Sie zum *veröffentlichten* Video-Asset, das Sie mit der hochgeladenen Untertiteldatei verbinden möchten.
@@ -1535,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1564,7 +1564,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

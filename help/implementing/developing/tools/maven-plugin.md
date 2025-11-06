@@ -1,21 +1,21 @@
 ---
-title: Adobe Content Package Maven-Plug-in
-description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
+title: Adobe Content Package Maven Plugin
+description: Verwenden Sie das Content Package Maven Plugin, um AEM-Anwendungen bereitzustellen.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 100%
 
 ---
 
-# Adobe Content Package Maven-Plug-in {#adobe-content-package-maven-plugin}
+# Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
 
-Verwenden Sie das Adobe Content Package Maven-Plug-in, um Paketbereitstellungs- und -verwaltungsaufgaben in Ihre Maven-Projekte zu integrieren.
+Verwenden Sie das Adobe Content Package Maven Plugin, um Paketbereitstellungs- und -verwaltungsaufgaben in Ihre Maven-Projekte zu integrieren.
 
-Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package-Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit AEM [Package Manager](/help/implementing/developing/tools/package-manager.md) ausgeführt werden:
+Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package-Maven-Plug-in durchgeführt und ermöglicht die Automatisierung von Aufgaben, die normalerweise mit dem [AEM-Paket-Manager](/help/implementing/developing/tools/package-manager.md) ausgeführt werden:
 
 * Erstellen Sie neue Pakete anhand der Dateien im Dateisystem.
 * Installieren und deinstallieren Sie Pakete in AEM.
@@ -33,7 +33,7 @@ In diesem Dokument wird erläutert, wie Sie diese Aufgaben mit Maven verwalten k
 >
 >Die **Paketerstellung** wird jetzt über das [Apache Jackrabbit FileVault Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/) durchgeführt.
 >
->Dieser Artikel beschreibt die **Bereitstellung** der erstellten Pakete in AEM, die vom Adobe Content Package Maven-Plug-in durchgeführt wird.
+>Dieser Artikel beschreibt die **Bereitstellung** der erstellten Pakete in AEM, die vom Adobe Content Package Maven Plugin durchgeführt wird.
 
 ## Pakete und die AEM-Projektstruktur {#aem-project-structure}
 
@@ -43,11 +43,11 @@ AEM as a Cloud Service hält sich an die neuesten Best Practices für Package-Ma
 >
 >Weitere Informationen finden Sie im Artikel [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der AEM as a Cloud Service-Dokumentation sowie in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de). Beide werden für AEM 6.5 vollständig unterstützt.
 
-## Abrufen des Content Package-Maven-Plug-ins {#obtaining-the-content-package-maven-plugin}
+## Abrufen des Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
 Das Plug-in ist im [Maven Central Repository](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public) verfügbar.
 
-## Ziele und Parameter des Content Package Maven-Plug-ins
+## Ziele und Parameter des Content Package Maven Plugin
 
 Um das Inhaltspaket-Maven-Plug-in zu verwenden, fügen Sie das folgende Plug-in-Element innerhalb des Build-Elements Ihrer POM-Datei hinzu:
 
@@ -98,9 +98,9 @@ Die Parameter in der folgenden Tabelle gelten für alle Ziele, sofern kein entsp
 | `name` | `String` | `build`: Ja, `install`: Nein, `rm`: Ja | `build`: Kein Standard, `install`: Der Wert der Eigenschaft `artifactId` des Maven-Projekts | Der Name des zu bearbeitenden Pakets | Alle Ziele mit Ausnahme von `ls` |
 | `password` | `String` | Ja | `admin` | Das für die Authentifizierung mit AEM verwendete Passwort | Alle Ziele mit Ausnahme von `package` |
 | `serverId` | `String` | Nein | Die Server-ID, über die der Benutzername und das Passwort für die Authentifizierung abgerufen werden | Alle Ziele mit Ausnahme von `package` |
-| `targetURL` | `String` | Ja | `http://localhost:4502/crx/packmgr/service.jsp` | Die URL der HTTP-Service-API von AEM Package Manager | Alle Ziele mit Ausnahme von `package` |
-| `timeout` | `int` | Nein | `5` | Die Verbindungszeitüberschreitung für die Kommunikation mit dem Package Manager-Service in Sekunden | Alle Ziele mit Ausnahme von `package` |
-| `useProxy` | `boolean` | Nein | `true` | Der Wert von `true` veranlasst Maven, die erste aktive Proxy-Konfiguration zu verwenden, die gefunden wurde, um Anforderungen an Package Manager zu senden. | Alle Ziele mit Ausnahme von `package` |
+| `targetURL` | `String` | Ja | `http://localhost:4502/crx/packmgr/service.jsp` | Die URL der HTTP-Service-API des AEM-Paket-Managers | Alle Ziele mit Ausnahme von `package` |
+| `timeout` | `int` | Nein | `5` | Die Verbindungszeitüberschreitung für die Kommunikation mit dem Paket-Manager-Service in Sekunden | Alle Ziele mit Ausnahme von `package` |
+| `useProxy` | `boolean` | Nein | `true` | Der Wert von `true` veranlasst Maven, die erste aktive Proxy-Konfiguration zu verwenden, die gefunden wurde, um Anforderungen an den Paket-Manager zu senden. | Alle Ziele mit Ausnahme von `package` |
 | `userId` | `String` | Ja | `admin` | Der Benutzername zur Authentifizierung bei AEM | Alle Ziele mit Ausnahme von `package` |
 | `verbose` | `boolean` | Nein | `false` | Aktiviert oder deaktiviert die ausführliche Protokollierung | Alle Ziele mit Ausnahme von `package` |
 
@@ -141,7 +141,7 @@ Lesen Sie neben den folgenden Parametern die Beschreibungen im Abschnitt [Allgem
 
 ### ls {#ls}
 
-Führt die in [Package Manager](/help/implementing/developing/tools/package-manager.md) bereitgestellten Pakete auf.
+Führt die im [Paket-Manager](/help/implementing/developing/tools/package-manager.md) bereitgestellten Pakete auf.
 
 #### Parameter {#parameters-2}
 
@@ -149,7 +149,7 @@ Alle Parameter des Ziels „Is“ werden im Abschnitt [Allgemeine Parameter](#co
 
 ### rm {#rm}
 
-Entfernt ein Paket aus [Package Manager](/help/implementing/developing/tools/package-manager.md).
+Entfernt ein Paket aus dem [Paket-Manager](/help/implementing/developing/tools/package-manager.md).
 
 #### Parameter {#parameters-3}
 
@@ -177,7 +177,7 @@ Alle Parameter des Ziels „uninstall“ werden im Abschnitt [Allgemeine Paramet
 
 ## Einbeziehen eines Miniaturbilds oder einer Eigenschaftsdatei im Paket {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Verwenden Sie beispielsweise ein Miniaturbild, um das Paket in [Package Manager](/help/implementing/developing/tools/package-manager.md) zu unterscheiden.
+Ersetzen Sie die standardmäßigen Paketkonfigurationsdateien, um die Paketeigenschaften anzupassen. Verwenden Sie beispielsweise ein Miniaturbild, um das Paket im [Paket-Manager](/help/implementing/developing/tools/package-manager.md) zu unterscheiden.
 
 Die Quelldateien können sich überall in Ihrem Dateisystem befinden. Definieren Sie in der POM-Datei die Build-Ressourcen, um die Quelldateien nach `target/vault-work/META-INF` zu kopieren, um sie ins Paket einzuschließen.
 

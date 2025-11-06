@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie eine Timeline-Ansicht in
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Die folgenden Abschnitte beschreiben diese Schritte detaillierter.
 
 ### Kommentar hinzufügen {#addcomment}
 
-Die über die Timeline verfügbare Kommentierung ermöglicht es Benutzenden, einen zentralisierten und historischen Datensatz für Diskussionen zu erstellen, die über den Kanal, den Speicherort oder einen beliebigen Ordner auf dem Bildschirm stattfinden.
+Die über die Timeline verfügbare Kommentierung ermöglicht es Benutzenden, einen zentralisierten und historischen Eintrag für Diskussionen zu erstellen, die über den Kanal, den Speicherort oder einen beliebigen Ordner auf dem Bildschirm stattfinden.
 Kommentare bieten AEM-Benutzenden eine gute konsolidierte Möglichkeit, sich mit einer Methode zu besprechen, die beibehalten werden kann, sodass andere Personen wichtige Entscheidungen verstehen können.
 
 1. Navigieren Sie zu dem Kanal, für den Sie einen Kommentar hinzufügen möchten.
@@ -51,7 +51,8 @@ Die Informationen in der Timeline werden aktualisiert, um anzugeben, dass der Ko
 
 ### Speichern einer Version {#saveversion}
 
-Durch die Versionierung wird die „Momentaufnahme“ eines Kanals zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
+Durch die Versionierung wird eine „Momentaufnahme“ eines Kanals zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
+
 * Erstellen einer Version eines Kanals.
 * Wiederherstellen einer früheren Version eines Kanals, z. B.:
    * zum Rückgängigmachen einer Änderung an der Seite.
@@ -123,7 +124,7 @@ Beim Authoring können Sie Workflows aufrufen, um auf Ihren Kanälen Maßnahmen 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 * Der anzuwendende Workflow.
-* Optional: Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang einer Benutzerin oder eines Benutzers zu erkennen.
+* Optional ein Titel, der zur Identifizierung der Workflow-Instanz im Posteingang einer Benutzerin oder eines Benutzers dient.
 * Die Workflow-Payload.
 
 #### Starten des Workflows

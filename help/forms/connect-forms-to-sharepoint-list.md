@@ -5,10 +5,10 @@ keywords: Verbinden der SharePoint-Liste für ein adaptives Formular, Senden an 
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 80%
+ht-degree: 84%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel.</span>
 
 So verwenden Sie die Sendeaktion [!UICONTROL An SharePoint senden] in einem adaptiven Formular:
 
@@ -59,6 +59,7 @@ Wenn Sie das Formular absenden, werden die Daten im angegebenen Microsoft® Shar
 >[!NOTE]
 >
 > Die folgenden Spaltentypen werden in der Microsoft® SharePoint-Liste nicht unterstützt:
+>
 > * Bildspalte
 > * Metadatenspalte
 > * Personenspalte

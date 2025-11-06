@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die drei verschiedenen Arten von Funktionst
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 97%
@@ -79,7 +79,7 @@ Sie verwenden JUnit für die Implementierung, werden mithilfe von Maven ausgefü
 
 >[!NOTE]
 >
->Benutzerdefinierte Funktionstests werden in den Produktions-Pipelines und produktionsfremden (Opt-in-)Pipelines ausgeführt, die von den Bereitstellungen der AEM-Anwendungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie spielen eine entscheidende Rolle bei der Sicherstellung der ordnungsgemäßen Funktionsfähigkeit Ihrer Anwendung und bei der Verbesserung der Versionssicherheit. Die Kundenfunktionstests werden auch für jede Kundin und jeden Kunden in internen Validierungs-Pipelines vor der Veröffentlichung ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
+>Benutzerdefinierte Funktionstests werden in den Produktions-Pipelines und produktionsfremden (Opt-in-)Pipelines ausgeführt, die von den Bereitstellungen der AEM-Anwendungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie spielen eine entscheidende Rolle bei der Sicherstellung der ordnungsgemäßen Funktionsfähigkeit Ihrer Anwendung und bei der Verbesserung der Versionssicherheit. Die Kundenfunktionstests werden auch in internen Vorabversion-Validierungs-Pipelines für jede Kundin und jeden Kunden ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
 
 Um effiziente Pipeline-Ausführungen zu gewährleisten, empfiehlt Adobe, sich auf wichtige Funktionen und die Interaktionsflüsse der primären Benutzenden zu konzentrieren und eine funktionale Testlaufzeit von höchstens 15 Minuten anzustreben. Vollständige Funktionstestsuiten, die diese Dauer überschreiten, sollten im Rahmen der allgemeinen Kundenvalidierungs-Pipelines während des Entwicklungsprozesses ausgeführt werden.
 
@@ -95,7 +95,7 @@ Die Tests sind in einem Docker-Image verpackt, das so flexibel wie möglich ist 
 
 >[!NOTE]
 >
->Benutzerdefinierte Benutzeroberflächentests werden in den Produktions-Pipelines und produktionsfremden (Opt-in-)Pipelines ausgeführt, die von den Bereitstellungen der AEM-Anwendungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie sind unerlässlich, um die ordnungsgemäße Funktionsfähigkeit Ihrer Anwendung sicherzustellen und die Versionssicherheit zu erhöhen. Die benutzerdefinierten Benutzeroberflächentests werden auch für jeden Kunden und jede Kundin in internen Validierungs-Pipelines vor der Veröffentlichung ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
+>Benutzerdefinierte Benutzeroberflächentests werden in den Produktions-Pipelines und produktionsfremden (Opt-in-)Pipelines ausgeführt, die von den Bereitstellungen der AEM-Anwendungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie sind unerlässlich, um die ordnungsgemäße Funktionsfähigkeit Ihrer Anwendung sicherzustellen und die Versionssicherheit zu erhöhen. Die benutzerdefinierten Benutzeroberflächentests werden auch in internen Vorabversions-Validierungs-Pipelines für jeden Kunden und jede Kundin ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
 >
 >Nicht-Selenium-Container sollten Tests mithilfe eines HTTP-Proxys ausführen, der auf den Umgebungsvariablen im [UI-Tests-Abschnitt](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) beruht.
 

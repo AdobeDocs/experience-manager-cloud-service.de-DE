@@ -3,8 +3,8 @@ title: Verwenden von Bedingungen zum Ausblenden
 description: Ausblendungsbedingungen können verwendet werden, um zu bestimmen, ob eine Komponentenressource gerendert wird oder nicht.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 100%
@@ -61,7 +61,7 @@ Wenn eine Vorlagenautorin oder ein Vorlagenautor die Option für untergeordnete 
 
    ![Einstellungen der Listenkomponente](assets/hide-conditions-list-settings.png)
 
-1. Im Design-Dialogfeld der Listenkomponente können Vorlagenautoren die Option **Untergeordnete Elemente deaktivieren** auswählen, um zu verhindern, dass Seitenautoren eine Liste mit untergeordneten Seiten angezeigt wird.
+1. Im Design-Dialogfeld der Listen-Kernkomponente können Vorlagenautoren die Option **Untergeordnete Elemente deaktivieren** auswählen, um zu verhindern, dass Seitenautoren eine Liste mit untergeordneten Seiten angezeigt wird.
 
    ![Design-Dialogfeld der Listenkomponente](assets/hide-conditions-list-design.png)
 

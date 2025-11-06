@@ -4,8 +4,8 @@ description: Verwenden Sie den Rich-Text-Editor (RTE) für Fußnoten in adaptive
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -35,6 +35,7 @@ In adaptiven Formularen wird eine [!UICONTROL Fußnote] verwendet, um Informatio
 ## Fußnoten in adaptiven Formularen {#using-footnote-adaptiveforms}
 
 Gehen Sie wie folgt vor, um Fußnoten in adaptiven Formularen hinzuzufügen:
+
 1. Öffnen Sie ein adaptives Formular im **Bearbeitungsmodus**.
 1. Ziehen Sie im Komponenten-Browser per Drag &amp; Drop die Komponente **[!UICONTROL Text]** auf das adaptive Formular.
 1. Wählen Sie die hinzugefügte **[!UICONTROL Textkomponente]** und dann ![cmppr](assets/configure-icon.svg) aus, um ihre Eigenschaften zu bearbeiten.

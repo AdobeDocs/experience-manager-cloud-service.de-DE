@@ -2,12 +2,12 @@
 title: Best Practices für die Gestaltung von leistungsstarken Formularen
 description: Erfahren Sie mehr über die wichtigsten Best Practices für die Erstellung nutzungsfreundlicher, barrierefreier und leistungsstarker Formulare mit AEM Forms. Verbessern Sie die Datenqualität, das Kundenerlebnis und die Erfolgsraten bei der Übermittlung.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Am Ende dieses Dokuments werden Sie Folgendes beherrschen:
 - Optimieren der Formularleistung und der Ladezeiten
 - Verantwortungsvoller und transparenter Umgang mit Benutzerdaten
 - Implementieren einer ordnungsgemäßen Fehlerbehandlung und -validierung
-- Erstellen von Formularen mit hohen Ausfüllraten
+- Erstellen von Formularen mit hohen Abschlussraten
 
 ### Zielgruppe
 
@@ -53,27 +53,23 @@ Die Gestaltung großartiger Formulare geht über technische Aspekte hinaus. Stel
 ## Entwerfen eines einfach zu bedienenden und barrierefreien Formulars
 
 - **Verwenden klarer, sichtbarer Beschriftungen:** Jedes Formularfeld benötigt ein `<label>`. Verwenden Sie nicht ausschließlich Platzhaltertext (Text innerhalb des Eingabefelds), da dieser beim Ausfüllen ausgeblendet wird und nicht barrierefrei ist.
+
    - *Empfohlen:* `<label for="email">Email Address:</label> <input type="email" id="email" placeholder="you@example.com">`
    - *Nicht empfohlen:* `<input type="email" placeholder="Email Address">`
+
 - **Auf Einfachheit setzen:** Verwenden Sie nach Möglichkeit standardmäßige HTML-Eingabetypen (`<input type="date">`, `<input type="tel">`). Diese verfügen häufig über eine bessere Unterstützung für Mobilgeräte und bessere Barrierefreiheit als komplexe benutzerdefinierte Widgets.
 - **Logische Reihenfolge und Gruppierung:** Ordnen Sie die Felder so an, dass sie für Benutzende nachvollziehbar sind. Gruppieren Sie verwandte Felder mithilfe von `<fieldset>` und `<legend>`.
 - **Anweisungen klar und verständlich formulieren:** Stellen Sie für alle möglicherweise unklaren Felder kompakte Hilfetexte oder QuickInfos bereit.
 - **Tastaturnavigation:** Stellen Sie sicher, dass Benutzende nur mit der Tastatur (Tabulatortaste, Umschalt+Tabulatortaste, Eingabetaste, Leertaste) durch das gesamte Formular navigieren können.
 - **Fehlerbearbeitung:** Machen Sie Fehler deutlich erkennbar und einfach zu beheben. Fehlermeldungen sollten neben dem entsprechenden Feld angezeigt werden und verständlich erklären, wie der Fehler behoben werden kann.
-
 - **Sicherstellen, dass Ihre Formulare schnell geladen werden und sichtbar sind**
-
-   - **Formulare deutlich sichtbar positionieren:** Positionieren Sie wichtige Formulare so, dass sie für Benutzende ohne viel Scrollen leicht sichtbar sind (möglichst „im sichtbaren Bereich“). Die Forschung von Adobe, dass viele Formulare zu wenig genutzt werden, weil sie versteckt sind.
-   - **Assets optimieren:** Reduzieren Sie benutzerdefinierte JavaScript- oder CSS-Dateien für Ihre Formulare, um schnelle Ladezeiten zu gewährleisten. Edge Delivery Services unterstützt das Laden der Basisseiten, aber umfangreiche Formularskripte können die Leistung dennoch beeinträchtigen.
-
+- **Formulare deutlich sichtbar positionieren:** Positionieren Sie wichtige Formulare so, dass sie für Benutzende ohne viel Scrollen leicht sichtbar sind (möglichst „im sichtbaren Bereich“). Die Forschung von Adobe, dass viele Formulare zu wenig genutzt werden, weil sie versteckt sind.
+- **Assets optimieren:** Reduzieren Sie benutzerdefinierte JavaScript- oder CSS-Dateien für Ihre Formulare, um schnelle Ladezeiten zu gewährleisten. Edge Delivery Services unterstützt das Laden der Basisseiten, aber umfangreiche Formularskripte können die Leistung dennoch beeinträchtigen.
 - **Verantwortungsvoller Umgang mit Benutzerdaten**
-   - **Fragen Sie nur nach wesentlichen Informationen:** Je weniger personenbezogene Daten Sie anfordern, desto besser. Jedes Feld ist ein potenzieller Grund für Benutzende, das Formular zu verlassen.
-   - **Zeigen Sie Transparenz:** Machen Sie deutlich, *warum* bestimmte Informationen benötigt werden und *wie sie verwendet werden*. Link zu Ihrer Datenschutzrichtlinie. Dies fördert Vertrauen.
-
+- **Fragen Sie nur nach wesentlichen Informationen:** Je weniger personenbezogene Daten Sie anfordern, desto besser. Jedes Feld ist ein potenzieller Grund für Benutzende, das Formular zu verlassen.
+- **Zeigen Sie Transparenz:** Machen Sie deutlich, *warum* bestimmte Informationen benötigt werden und *wie sie verwendet werden*. Link zu Ihrer Datenschutzrichtlinie. Dies fördert Vertrauen.
 - **Verbessern des Kundenerlebnisses: Captcha-Alternativen**
-
-   - **Überdenken Sie sichtbare Captchas:** Tests wie „Geben Sie den wellenförmigen Text ein“ oder „Klicken Sie auf alle Ampeln“ können für Benutzende und insbesondere Menschen mit Behinderung sehr frustrierend sein und führen häufig zu hohen Abbruchraten.
-
+- **Überdenken Sie sichtbare Captchas:** Tests wie „Geben Sie den wellenförmigen Text ein“ oder „Klicken Sie auf alle Ampeln“ können für Benutzende und insbesondere Menschen mit Behinderung sehr frustrierend sein und führen häufig zu hohen Abbruchraten.
 - **Ziehen Sie Alternativen in Betracht:**
    - **Honeypot-Felder:**: Fügen Sie ein ausgeblendetes Feld hinzu, das nur von Bots ausgefüllt wird. Wenn es Daten enthält, ist die Übermittlung wahrscheinlich Spam.
    - **Zeitbasierte Prüfungen:** Messen Sie, wie schnell ein Formular übermittelt wird. Bei zu schnellen Übermittlungen handelt es sich oft um Bots.

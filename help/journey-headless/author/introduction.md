@@ -4,8 +4,8 @@ description: Eine Einführung in die Verwendung der Funktionen von Adobe Experie
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 100%
@@ -21,11 +21,11 @@ In diesem Teil der [AEM Headless-Inhalts-Autoren-Tour](overview.md) klernen Sie 
 * **Zielgruppe**: Anfänger
 * **Ziel**: Einführung der Konzepte und der Terminologie für Headless-Authoring.
 
-## Content Management System (CMS) {#content-management-system}
+## Content-Management-System (CMS) {#content-management-system}
 
-Was ist ein Content Management System?
+Was ist ein Content-Management-System?
 
-Ein Content Management System (CMS) ist genau das, was es sagt – ein Computersystem, das zum Verwalten von Inhalten verwendet wird. Das ist etwas allgemein, genauer gesagt wird es (normalerweise) für die Verwaltung von Inhalten verwendet, die Sie auf Ihren Websites zur Verfügung stellen möchten.
+Ein Content-Management-System (CMS) ist genau das, was es sagt – ein Computersystem, das zum Verwalten von Inhalten verwendet wird. Das ist etwas allgemein, genauer gesagt wird es (normalerweise) für die Verwaltung von Inhalten verwendet, die Sie auf Ihren Websites zur Verfügung stellen möchten.
 
 ## Headless-CMS {#headless-cms}
 
@@ -45,7 +45,7 @@ Das bedeutet, dass Ihre Inhalte auf jedem Gerät und in einer Vielzahl von Forma
 
 Was ist AEM?
 
-Zunächst einmal ist AEM ein Content Management System mit einer Vielzahl von Funktionen, die auch an Ihre Anforderungen angepasst werden können.
+Zunächst einmal ist AEM ein Content-Management-System mit einer Vielzahl von Funktionen, die auch an Ihre Anforderungen angepasst werden können.
 
 Dies bedeutet, dass es wie folgt verwendet werden kann:
 

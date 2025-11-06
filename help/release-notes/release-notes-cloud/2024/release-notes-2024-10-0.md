@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.10.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 100%
+source-wordcount: '1663'
+ht-degree: 99%
 
 ---
 
@@ -44,6 +44,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2024“ an, das eine Zusa
 **Modernisierte Seitenereignisse**
 
 Die folgenden AEM Sites-Seitenereignisse sind jetzt als extern nutzbare Ereignisse verfügbar, die auf der AEM as a Cloud Service Eventing Platform basieren. Die Ereignisse können über Adobe I/O verarbeitet werden, damit sie mit externen Prozessen interagieren.
+
 * Seite veröffentlicht
 * Veröffentlichung der Seite rückgängig gemacht
 * Seite gelöscht
@@ -156,7 +157,7 @@ Um die Formularübermittlung für Coral- oder Foundation-Formulare an bestimmten
 1. **Zulässige Pfade hinzufügen**: Gibt die Pfade an, in denen Formularaktionen zulässig sind.
 1. **Verhalten beschränken**: Bestimmt das Verhalten für eingeschränkte Pfade (Pfade, die nicht in der Zulassungsliste enthalten sind). Sie können zwischen den folgenden Optionen wählen:
    * **Popup** (Standard): Zeigt eine Popup-Benachrichtigung an.
-   * **Verhindern**: Blockiert die Formularübermittlung.
+   * **Verhindern**:Blocks Formularübermittlung.
 
 >[!NOTE]
 >

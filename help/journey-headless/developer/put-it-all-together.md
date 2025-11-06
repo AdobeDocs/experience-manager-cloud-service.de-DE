@@ -4,8 +4,8 @@ description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie S
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 100%
@@ -61,7 +61,7 @@ Git wird für die Versionskontrolle verwendet sowie dazu, die Änderungen in Clo
 
 AEM verwendet Apache Maven zum Erstellen von Projekten, die aus dem AEM-Maven-Projektarchetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
 
-Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM-Projekts verwendet wird. Node.js wird mit npm verteilt, dem eigentlichen Package Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
+Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM-Projekts verwendet wird. Node.js wird mit npm verteilt, dem eigentlichen Paket-Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
 
 ## Komponenten eines AEM-Systems auf einen Blick {#components-of-an-aem-system-at-a-glance}
 
@@ -101,7 +101,7 @@ Nachdem die lokale Entwicklungsumgebung eingerichtet wurde, können Sie die Bere
 
 <!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
-## Wie geht es weiter {#whats-next}
+## So geht es weiter {#whats-next}
 
 Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben, sollten Sie über die folgenden Kenntnisse verfügen:
 

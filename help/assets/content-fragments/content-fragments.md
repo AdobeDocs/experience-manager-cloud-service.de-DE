@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2247'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inha
 
 >[!NOTE]
 >
->Inhaltsfragmente sind eine Sites-Eigenschaft, werden jedoch als **Assets** gespeichert.
+>Inhaltsfragmente sind eine Funktionalität von Sites, werden jedoch als **Assets** gespeichert.
 >
->Inhaltsfragmente und Inhaltsfragmentmodelle werden jetzt hauptsächlich mit der **[Inhaltsfragmente“-](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet, Inhaltsfragmente können jedoch weiterhin über die **Assets**-Konsole und Inhaltsfragmentmodelle über die **Tools**-Konsole verwaltet werden. In diesem Abschnitt wird die Verwaltung über die Konsolen {**}Assets** und **Tools“ beschrieben.**
+>Inhaltsfragmente und Inhaltsfragmentmodelle werden nunmehr hauptsächlich mit der Konsole **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** verwaltet. Es ist allerdings nach wie vor möglich, Inhaltsfragmente über die Konsole **Assets** und Inhaltsfragmentmodelle über die Konsole **Tools** zu verwalten. In diesem Abschnitt wird die Verwaltung über die Konsole **Assets** und **Tools** beschrieben.
 >
 >Es gibt zwei Editoren für die Erstellung von Inhaltsfragmenten. Auch wenn die grundlegende Funktionalität gleich ist, gibt es einige Unterschiede. In diesem Abschnitt wird der ursprüngliche Editor behandelt. Der Zugriff auf diesen erfolgt hauptsächlich über die **Assets**-Konsole. Weitere Informationen zum neuen Editor (der Zugriff erfolgt hauptsächlich über die **Inhaltsfragmentkonsole**) finden Sie in der Sites-Dokumentation [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Beide Editoren verfügen in der oberen Symbolleiste über einen Umschalter, um einen Schnellzugriff auf den jeweils anderen Editor zu ermöglichen.
 
@@ -87,6 +87,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 >[!NOTE]
 >
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)** sind unterschiedliche Funktionen in AEM:
+>
 >* **Inhaltsfragmente** sind redaktionelle Inhalte mit Definition und Struktur, aber ohne zusätzliches visuelles Design und/oder Layout. Sie können unter anderem für den Zugriff auf strukturierte Daten wie Texte, Zahlen und Datumsangaben verwendet werden.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
@@ -106,9 +107,9 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 Der Versand erfolgt im JSON-Format mit dem JSON-Exporter.
 
-AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierter Inhalt wird in Modellen definiert, die eine Vielzahl von Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Werte, Datum und Uhrzeit.
+AEM-Inhaltsfragmente können zur Beschreibung und Verwaltung strukturierter Inhalte verwendet werden. Strukturierte Inhalte werden in Modellen definiert, die eine Vielzahl von Inhaltstypen enthalten können, darunter Text, numerische Daten, boolesche Werte, Datum und Uhrzeit.
 
-Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser strukturierte Inhalt dann zur Bereitstellung von AEM-Inhalten auf anderen Kanälen als AEM-Seiten verwendet werden.
+Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten können diese strukturierten Inhalte dann zur Bereitstellung von AEM-Inhalten auf anderen Kanälen als AEM-Seiten verwendet werden.
 
 >[!NOTE]
 >

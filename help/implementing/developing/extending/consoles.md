@@ -3,11 +3,11 @@ title: Anpassen von Konsolen
 description: Erfahren Sie mehr über die verschiedenen Optionen, die AEM zum Anpassen der Konsolen Ihrer Autoreninstanz bereitstellt.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '515'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Siehe [Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service](/help
 
 ## Überlagerungen {#overlays}
 
-Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) durch Ihre eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/implementing/developing/introduction/sling-resource-merger.md) das Vererben zulässt.
+Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) durch Ihre eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Beim Erstellen einer Überlagerung ist keine 1:1-Kopie des Originals erforderlich, da [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) das Vererben zulässt.
 
 Überlagerungen können auf viele Arten zum Erweitern Ihrer AEM-Konsolen verwendet werden. In den folgenden Abschnitten werden verschieden Beispiele beschrieben.
 

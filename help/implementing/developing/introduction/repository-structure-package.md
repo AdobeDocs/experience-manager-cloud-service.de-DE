@@ -3,8 +3,8 @@ title: Repository-Strukturpaket von AEM-Projekten
 description: Maven-Projekte für Adobe Experience Manager as a Cloud Service erfordern eine Unterpaketdefinition für die Repository-Struktur, deren einziger Zweck darin besteht, die JCR-Repository-Stämme zu definieren, in denen die Code-Unterpakete des Projekts bereitgestellt werden.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
@@ -184,4 +184,4 @@ Dies bedeutet, dass das problematische Code-Paket kein `<repositoryStructurePack
 
 ## Zusätzliche Ressourcen
 
-+ [FileVault Content Package Maven-Plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault Content Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

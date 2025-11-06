@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2023.12.0 von [!DNL Adobe Experience
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 75%
@@ -27,7 +27,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der V
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) ist der Freitag, 14. Dezember 2023. Die nächste Version (2024.1.0) ist für den Donnerstag, 25. Januar 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) ist der Freitag, 14. Dezember 2023. Die nächste Version (2024.1.0) ist für den Donnerstag, 25. Januar 2023 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -108,6 +108,7 @@ Sie können jetzt Inhalte einfach finden, indem Sie ein Bild auswählen und ähn
 ### Early-Adopter-Programm für die Domain-Zuordnung {#cdn-config-early-adopter}
 
 Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), die die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es die Möglichkeit, die Konfigurations-Pipeline zu verwenden, um andere Arten von CDN-Konfigurationen zu deklarieren und bereitzustellen. Wir würden uns über Ihre Anwendungsfälle freuen, einschließlich:
+
 * 301/302 Client-seitige Umleitungen
 * Weiterleitungs-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen

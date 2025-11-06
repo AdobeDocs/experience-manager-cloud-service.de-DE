@@ -4,8 +4,8 @@ description: Versionshinweise für  [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -201,13 +201,13 @@ Die neueste Version von [!DNL Workfront for Experience Manager enhanced connecto
          Stellen Sie sicher, dass der Inhalt zwischen `"objId": "",` und `"url"` der JSON-Antwort entspricht. Die empfohlene Methode dazu besteht darin, dies aus jedem Ereignisabonnement zu kopieren, das über eine `objId` verfügt, und dann die Nummer zu löschen.
 
       1. Notieren Sie die Ereignisabonnement-ID.
-
       1. Löschen Sie das falsche Ereignisabonnement. Führen Sie einen Delete-API-Aufruf für `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>` durch
 
          `200` als Antwort-Code gibt das erfolgreiche Löschen falscher Ereignisabonnements an.
-  >[!NOTE]
-  >
-  >Wenn Sie die falschen Ereignisabonnements bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie den letzten Schritt dieses Verfahrens überspringen.
+
+         >[!NOTE]
+         >
+         >Wenn Sie die falschen Ereignisabonnements bereits gelöscht haben, bevor Sie die in diesem Verfahren genannten Schritte ausführen, können Sie den letzten Schritt dieses Verfahrens überspringen.
 
 ### Version Oktober 2022 {#october-2022-release}
 

@@ -5,8 +5,8 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2830f06817b65a2ae059c1381a9d5588b661d74e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '6649'
 ht-degree: 100%
 
@@ -158,6 +158,7 @@ Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM
 Weitere Informationen zum Konfigurieren von Diensten im Formulardatenmodell (FDM) finden Sie unter [[!DNL Experience Manager Forms] Datenintegration](data-integration.md).
 
 Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft für eines der folgenden Elemente festlegen:
+
 * visible (Boolescher Wert)
 * dorExclusion (Boolescher Wert)
 * chartType (Zeichenfolge)
@@ -327,8 +328,8 @@ So definieren Sie eine auf einem Formulardatenmodell (FDM) basierende Regel:
 
 1. Wählen Sie **[!UICONTROL Service-Ausgabe]** in der Dropdown-Liste aus.
 1. Wählen Sie das Datenmodellobjekt aus.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Wert anzeigen]** eine Datenmodell-Objekteigenschaft aus. Die Anzahl der Kontrollkästchen im adaptiven Formular wird von der Anzahl der Instanzen abgeleitet, die für diese Eigenschaft in der Datenbank definiert wurden.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Wert speichern]** eine Datenmodell-Objekteigenschaft.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Wert anzeigen]** eine Datenmodellobjekt-Eigenschaft aus. Die Anzahl der Kontrollkästchen im adaptiven Formular wird von der Anzahl der Instanzen abgeleitet, die für diese Eigenschaft in der Datenbank definiert wurden.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Wert speichern]** eine Datenmodellobjekt-Eigenschaft.
 
 ![FDM-Set-Optionen](assets/fdm_set_options_new.png)
 
@@ -537,7 +538,7 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 

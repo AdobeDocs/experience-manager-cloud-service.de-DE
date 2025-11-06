@@ -3,11 +3,11 @@ title: Anpassen der Seitenbearbeitung
 description: Erfahren Sie mehr über die Mechanismen, die AEM as a Cloud Service bietet, um die Seitenbearbeitungsfunktionen anzupassen.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Siehe [Verwenden Client-seitiger Bibliotheken für AEM as a Cloud Service](/help
 
 Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) durch Ihre eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern.
 
-Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/implementing/developing/introduction/sling-resource-merger.md) das Vererben zulässt.
+Beim Erstellen einer Überlagerung ist keine 1:1-Kopie des Originals erforderlich, da die [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) das Vererben zulässt.
 
 Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 

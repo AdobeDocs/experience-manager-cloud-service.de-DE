@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2025.4.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Übersichtsvideo zur Version April 2025 an, das eine Zusammenfassung der Funktionen bietet, die in Version 2025.4.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464011?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -164,12 +164,14 @@ Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wen
 Um eine effektive Überwachung von Kundenumgebungen zu gewährleisten, müssen die AEM-Java-Protokolle ein konsistentes Format aufweisen und sollten nicht durch benutzerdefinierte Konfigurationen überschrieben werden. Die Protokollausgabe muss an die Standarddateien weitergeleitet bleiben. Für AEM-Produkt-Code müssen die standardmäßigen Protokollebenen beibehalten werden. Es ist jedoch akzeptabel, die Protokollebenen für den von der Kundin oder dem Kunden entwickelten Code anzupassen.
 
 Zu diesem Zweck sollten keine Änderungen an den folgenden OSGi-Eigenschaften vorgenommen werden:
+
 * **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) – *alle Eigenschaften*
 * **Apache Sling Logging Logger Configuration** (werksseitige PID: `org.apache.sling.commons.log.LogManager.factory.config`):
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 Mitte Mai wird AEM eine Richtlinie durchsetzen, durch die alle benutzerdefinierten Änderungen an diesen Eigenschaften ignoriert werden. Bitte überprüfen und passen Sie Ihre nachgelagerten Prozesse entsprechend an. Wenn Sie beispielsweise die Protokollweiterleitungsfunktion verwenden:
+
 * Wenn Ihr Protokollierungsziel ein benutzerdefiniertes (nicht standardmäßiges) Protokollformat erwartet, müssen Sie möglicherweise Ihre Aufnahmeregeln aktualisieren.
 * Wenn Änderungen an den Protokollebenen die Protokollierbarkeit reduzieren, beachten Sie, dass die standardmäßigen Protokollebenen zu einer erheblichen Steigerung des Protokollierungsvolumens führen können.
 

@@ -2,10 +2,10 @@
 title: Konfigurieren der Inhaltsquelle
 description: Erfahren Sie, wie Sie die Inhaltsquelle für Ihre Edge Delivery-Site konfigurieren. Verwenden Sie „fstab.yaml“ mit der Helix 4-Architektur oder verwenden Sie den geführten Assistenten in Cloud Manager (oder das Konfigurations-Service-API) mit der Helix 5-Architektur.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 71618a5603328990603db2ee7554048c9020a883
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 

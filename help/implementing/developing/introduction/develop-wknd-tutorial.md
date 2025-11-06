@@ -3,9 +3,9 @@ title: Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial
 description: Sind Sie neu bei der Entwicklung mit AEM? Benötigen Sie einen Auffrischungskurs zu Best Practices? Dann sind Sie hier richtig! Ziel dieses mehrteiligen Tutorials ist es, Entwicklerinnen und Entwicklern, die gerade mit AEM beginnen, beizubringen, wie sie in AEM eine Website unter Verwendung der neuesten Standards und Technologien implementieren können.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%

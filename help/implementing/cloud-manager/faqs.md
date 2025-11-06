@@ -4,8 +4,8 @@ description: Hier finden Sie Antworten auf die am häufigsten gestellten Fragen 
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 81%
@@ -107,7 +107,7 @@ Wenn das [Hinzufügen einer OSGi-Konfiguration für RepositoryInitializer](#clou
    * Achten Sie darauf, Ihre Apache- und Dispatcher-Konfigurationen lokal mit dem im SDK enthaltenen Docker-Image zu testen.
    * Informationen zum Einrichten des Dispatcher-Docker-Containers für einfache lokale Tests finden Sie unter [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery).
 
-* Die Bereitstellung könnte aufgrund eines anderen Fehlers während der Replikation der Inhaltspakete (Sling-Verteilung) von den Authoring- zu den Publishing-Instanzen fehlschlagen.
+* Die Bereitstellung könnte aufgrund eines anderen Fehlers während der Replikation der Inhaltspakete (Sling-Verteilung) von den Authoring- zu den Veröffentlichungsinstanzen fehlschlagen.
    * Führen Sie diese Schritte aus, um das Problem bei einem lokalen Setup zu simulieren.
       1. Installieren Sie eine Autoren- und eine Veröffentlichungsinstanz lokal mit den neuesten AEM SDK-JARs.
       1. Melden Sie sich bei der Autoreninstanz an.

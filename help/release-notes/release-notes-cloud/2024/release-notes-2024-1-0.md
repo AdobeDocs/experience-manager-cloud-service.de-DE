@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.1.0 von [!DNL Adobe Experience 
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Video zur Versionsübersicht von Januar 2024 an, das eine Zusammenfassung der Funktionen gibt, die in Version 2024.1.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448938?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -112,7 +112,8 @@ Dynatrace-Kundinnen und -Kunden können ihre AEM-Nutzung überwachen. [Lesen Sie
 
 ### Early-Adopter-Programm für die Domain-Zuordnung {#cdn-config-early-adopter}
 
-Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), welche die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es eine Möglichkeit, die Konfigurations-Pipeline zum Deklarieren und Bereitstellen [anderer Typen von CDN-Konfigurationen](/help/implementing/dispatcher/cdn-configuring-traffic.md) zu verwenden. Wenn Sie am Early-Adopter-Programm teilnehmen möchten, senden Sie eine E-Mail an **aemcs-cdn-config-adopter@adobe.com**, um Zugriff auf Folgendes zu erhalten:
+Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md), welche die optional lizenzierbaren WAF-Regeln (Web Application Firewall) enthalten, gibt es eine Möglichkeit, die Konfigurations-Pipeline zum Deklarieren und Bereitstellen [anderer Typen von CDN-Konfigurationen](/help/implementing/dispatcher/cdn-configuring-traffic.md) zu verwenden. Werden auch Sie Teil des Early-Adopter-Programms, indem Sie eine E-Mail an **`aemcs-cdn-config-adopter@adobe.com`** senden, um Zugriff auf zu erhalten:
+
 * 301/302 Client-seitige Umleitungen
 * Weiterleitungs-Anfragen am Edge zu beliebigen Ursprüngen
 * URL-Transformationen

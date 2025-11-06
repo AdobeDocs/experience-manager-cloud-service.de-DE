@@ -4,8 +4,8 @@ description: Das folgende Tutorial führt Sie durch die Schritte zum Erstellen e
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Die Tutorial-Schritte und Screenshots werden mithilfe von **CRXDE Lite** ausgef�
 
 Der Quell-Code eines Screens-Projekts wird normalerweise als Maven-Projekt mit mehreren Modulen verwaltet. Um das Tutorial zu beschleunigen, wurde ein Projekt mithilfe des [AEM-Projektarchetyps 13](https://github.com/adobe/aem-project-archetype) vorgeneriert. Weitere Informationen zum Erstellen eines Projekts mit dem Maven-AEM-Projektarchetyp finden Sie unter [Projekt-Setup](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=de).
 
-1. Laden Sie die folgenden Pakete mit [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp) herunter und installieren Sie sie:
+1. Laden Sie die folgenden Pakete mit dem [CRX-Paket-Manager](http://localhost:4502/crx/packmgr/index.jsp) herunter und installieren Sie sie:
 
 [Datei abrufen](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
@@ -50,14 +50,14 @@ Der Quell-Code eines Screens-Projekts wird normalerweise als Maven-Projekt mit m
 
 [Datei abrufen](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
-1. Überprüfen Sie in [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp), ob die folgenden beiden Pakete installiert sind:
+1. Überprüfen Sie im [CRX-Paket-Manager](http://localhost:4502/crx/packmgr/index.jsp), ob die folgenden beiden Pakete installiert sind:
 
    1. **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**
    1. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**
 
-   ![Pakete Ui.Apps und Ui.Content für das Screens-Projekt „We.Retail Run“ über CRX Package Manager installiert](assets/crx-packages.png)
+   ![Pakete Ui.Apps und Ui.Content für das Screens-Projekt „We.Retail Run“ über den CRX-Paket-Manager installiert](assets/crx-packages.png)
 
-   Pakete Ui.Apps und Ui.Content für das Screens-Projekt „We.Retail Run“ über CRX Package Manager installiert
+   Pakete Ui.Apps und Ui.Content für das Screens-Projekt „We.Retail Run“ über den CRX-Paket-Manager installiert
 
 1. Das Paket **screens-weretail-run.ui.apps** installiert Code unter `/apps/weretail-run`.
 
@@ -548,7 +548,7 @@ Das folgende Video zeigt die fertige Komponente und wie sie einem Sequenzkanal h
 
 ## Fertiger Code {#finished-code}
 
-Unten finden Sie den fertigen Code aus dem Tutorial. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** und **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sind kompilierte AEM-Pakete. SRC-screens-weretail-run-0.0.1.zip ist der nicht kompilierte Quell-Code, der mithilfe von Maven bereitgestellt werden kann.
+Unten finden Sie den fertigen Code aus dem Tutorial. **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** und **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** sind kompilierte AEM-Pakete. **SRC-screens-weretail-run-0.0.1.zip** ist der nicht kompilierte Quell-Code, der mithilfe von Maven bereitgestellt werden kann.
 
 [Datei abrufen](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

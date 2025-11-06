@@ -2,10 +2,10 @@
 title: Anpassen des Designs und Stils für Edge Delivery Services für AEM Forms
 description: Passen Sie effektiv das Design und den Stil für AEM Forms-Assets an, die über Edge Delivery Services bereitgestellt werden, und sorgen Sie so für ein kohärentes Benutzererlebnis mit Branding.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 100%
 

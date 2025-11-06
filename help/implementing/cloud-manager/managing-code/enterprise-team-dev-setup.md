@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Ihr Entwicklungs-Team für Unternehmen einric
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: cbeb3d8f5fa5cbf1839e1e8c5e651329b06e60a4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%

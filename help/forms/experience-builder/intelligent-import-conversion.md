@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie mithilfe der intelligenten Import- und Konver
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # Intelligente Import- und Konvertierungsfunktionen
 
@@ -260,7 +260,7 @@ Fügt automatisch die entsprechende Validierung hinzu:
 Bei Konvertierungsproblemen:
 
 - Lesen Sie die [Häufig gestellten Fragen zu Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Lesen Sie [&#x200B; Erste Schritte &#x200B;](forms-experience-builder-getting-started.md)
+- Lesen Sie [ Erste Schritte ](forms-experience-builder-getting-started.md)
 - Wenden Sie sich an Ihren Systemadministrator, um technische Unterstützung zu erhalten
 
 ## Verwandte Artikel

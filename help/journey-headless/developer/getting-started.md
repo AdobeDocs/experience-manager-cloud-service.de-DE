@@ -4,8 +4,8 @@ description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr �
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -51,7 +51,7 @@ Nachdem Inhalte in der Autoreninstanz erstellt wurden, müssen sie veröffentlic
 
 ### Vorschau-Service {#preview}
 
-Vor der Veröffentlichung in der Publishing-Instanz können Sie Ihr Inhaltsfragment auch im **Vorschau-Service** zum Testen und Überprüfen veröffentlichen. Dies geschieht über die **Inhaltsfragmentkonsole**.
+Vor der Veröffentlichung in der Veröffentlichungsinstanz können Sie Ihr Inhaltsfragment auch im **Vorschau-Service** zum Testen und Überprüfen veröffentlichen. Dies geschieht über die **Inhaltsfragmentkonsole**.
 
 ### Replikation {#replication}
 
@@ -180,7 +180,7 @@ Planen Sie die Übersetzung ganz am Anfang des Projekts. Betrachten Sie den Übe
 Erstellen Sie einen Plan zur benötigten Übersetzung von Inhalten.
 
 * Benötigen Sie nur verschiedene Sprachen oder auch Sprachvarianten zur Anpassung an regionale Besonderheiten?
-* Müssen Rich-Media-Inhalte wie Bilder oder Videos für verschiedene Länder unterschiedlich sein?
+* Müssen Rich-Media-Inhalte wie Bilder oder Videos für verschiedene Gebietsschemata unterschiedlich sein?
 
 Verschaffen Sie sich Klarheit über Ihren Workflow zur Aktualisierung von Inhalten. Wie sieht der Genehmigungsprozess aus, den das System unterstützen muss? Können AEM-Workflows genutzt werden, um diesen Prozess zu automatisieren?
 
@@ -287,12 +287,12 @@ Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fort
 * [Einführung in AEM als Headless-CMS](/help/headless/introduction.md)
 * Das [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.
-* [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/de?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
+* [Headless-Content-Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
 * [AEM-Handbuch zu WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): Dieses GitHub-Projekt enthält Beispielprogramme zu den AEM-GraphQL-APIs.
 * [Authoring-Konzepte](/help/sites-cloud/authoring/author-publish.md): Technische Dokumentation für die Authoring-Umgebung von AEM einschließlich Details zur Einrichtung von Autoren- und Veröffentlichungsinstanzen.
 * [Veröffentlichen von Seiten](/help/sites-cloud/authoring/sites-console/publishing-pages.md): Technische Dokumentation zur Veröffentlichung von Inhalten auf AEM.
 * [Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md): Technische Dokumentation zu den Seitenbenennungsbeschränkungen in AEM.
-* [Multi Site Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
+* [Multi-Site Manager und Übersetzung](/help/sites-cloud/administering/msm-and-translation.md): Technische Dokumentation zu den leistungsstarken Übersetzungsfunktionen von AEM.
 * [AEM-Workflows](/help/sites-cloud/authoring/workflows/overview.md): Technische Dokumentation zur Automatisierung von Workflows in AEM
 * [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md): Technische Dokumentation für Inhaltsfragmente.
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md): Technische Dokumentation für Inhaltsfragmentmodelle.

@@ -4,8 +4,8 @@ description: Verschaffen Sie sich einen Überblick über die drei Arten von Test
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 62%
@@ -25,7 +25,7 @@ Es gibt drei allgemeine Testkategorien, die von Cloud Manager für Cloud Service
 
 1. [Funktionstests](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Funktionstests werden während der Staging-Testphase einer [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausgeführt. Optional kann sie auch während der Testphase einer [produktionsfremden Pipeline“ ausgeführt &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * Funktionstests werden während der Staging-Testphase einer [Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausgeführt. Optional kann sie auch während der Testphase einer [produktionsfremden Pipeline“ ausgeführt ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 1. [Testen mit Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 

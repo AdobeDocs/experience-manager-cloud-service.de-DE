@@ -3,10 +3,10 @@ title: Entwicklungsrichtlinien für AEM as a Cloud Service
 description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2768'
+source-wordcount: '2767'
 ht-degree: 71%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 71%
 >id="development_guidelines"
 >title="Entwicklungsrichtlinien für AEM as a Cloud Service"
 >abstract="Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet."
->additional-url="https://video.tv.adobe.com/v/330555/?captions=ger" text="Demo zur Paketstruktur"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demo zur Paketstruktur"
 
 Dieses Dokument enthält Richtlinien für die Entwicklung von AEM as a Cloud Service und wichtige Unterschiede zu AEM vor Ort und AEM in AMS.
 
@@ -111,7 +111,7 @@ Wenn Sie beispielsweise eine Indexdefinition in einem großen Inhalts-Repository
 
 Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs` Ordner geschrieben.
 
-In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Festlegen der Protokollebene**
 

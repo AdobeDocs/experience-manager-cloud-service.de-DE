@@ -3,8 +3,8 @@ title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu den Web Content Accessibility Guidelines (WCAG), Version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 100%
@@ -64,8 +64,8 @@ WCAG 2.1 besteht aus vier Grundprinzipien für barrierefreies Design, die manchm
 1. **Robust**: Sind die Webinhalte in der beabsichtigten Weise in einer entsprechend breiten Palette von Browserumgebungen verfügbar, einschließlich älterer und neuer Browserumgebungen?
 
 Zur Erklärung:
-* Zu jedem **Prinzip** gehören eine oder mehrere **Richtlinien**.
 
+* Zu jedem **Prinzip** gehören eine oder mehrere **Richtlinien**.
 * Richtlinien sind als Anweisungen formuliert, die entweder positiv oder negativ sind.
 * Die Richtlinien sind von 1.1 bis 4.1 nummeriert, wobei die erste Zahl dem übergeordneten Prinzip entspricht.
 * Jede Richtlinie besteht aus einem oder mehreren **Erfolgskriterien**.
@@ -83,6 +83,7 @@ Während WCAG 2.1 selbst ein statisches Dokument ist und sich nicht ändern wird
 ### WCAG 2.1-Ressourcen {#wcag-resources}
 
 Diese Liste erhebt keinen Anspruch auf Vollständigkeit, sondern bietet eine Einführung in die verfügbaren Ressourcen:
+
 * [Eine Übersicht über alle zu WCAG gehörigen Dokumente](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Eine Zusammenfassung der verschiedenen Dokumente](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)

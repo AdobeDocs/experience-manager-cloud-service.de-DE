@@ -3,8 +3,8 @@ title: Schnelle Entwicklungsumgebungen
 description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle Entwicklungsiterationen in einer Cloud-Umgebung nutzen können.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: eb87467b1cd3338a409c2aeded74b3bb38d2e58c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5446'
 ht-degree: 98%

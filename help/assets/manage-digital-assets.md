@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über verschiedene Methoden zur Verwaltung und Be
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 100%
 
@@ -59,10 +59,10 @@ Gehen Sie wie folgt vor, um die ZIP-Dateien zu extrahieren:
 
    ![ZIP-Extraktion](assets/zip-extraction.png)
 
->[!NOTE]
->
->* Die maximal unterstützte Größe von ZIP-Dateien beträgt 15 GB.
->* Sie können maximal drei ZIP-Dateien gleichzeitig extrahieren.
+   >[!NOTE]
+   >
+   >* Die maximal unterstützte Größe von ZIP-Dateien beträgt 15 GB.
+   >* Sie können maximal drei ZIP-Dateien gleichzeitig extrahieren.
 
 ## Anzeigen einer Vorschau für Assets {#previewing-assets}
 
@@ -70,7 +70,6 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
 1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort des Assets, für das Sie eine Vorschau anzeigen möchten.
 1. Wählen Sie das gewünschte Asset aus, um es zu öffnen.
-
 1. Im Vorschaumodus sind Zoom-Optionen für [unterstützte Bildtypen](/help/assets/file-format-support.md) verfügbar (mit interaktiver Bearbeitung).
 
    Um ein Asset heranzuzoomen, wählen Sie `+` (oder das Lupensymbol auf dem Asset) aus. Um auszuzoomen, wählen Sie `-` aus. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil „Zoom zurücksetzen“ gelangen Sie zurück zur Originalansicht.
@@ -80,7 +79,6 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 ## Bearbeiten von Eigenschaften {#editing-properties}
 
 1. Navigieren Sie zum Speicherort des Assets, dessen Metadaten Sie bearbeiten möchten.
-
 1. Wählen Sie ein Asset und in der Symbolleiste **[!UICONTROL Eigenschaften]** aus, um die Asset-Eigenschaften anzuzeigen. Wählen Sie alternativ die Schnellaktion **[!UICONTROL Eigenschaften]** auf der Asset-Karte aus.
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein und wählen Sie anschließend die `Enter`-Taste aus. Das neue Tag wird in [!DNL Experience Manager] gespeichert.
 
    YouTube erfordert Tags zur Veröffentlichung und einen YouTube-Link (wenn ein geeigneter Link gefunden werden kann).
 
    >[!NOTE]
    >
-   > Um Tags zu erstellen, müssen Sie über eine Schreibberechtigung für den `/content/cq:tags/default`-Pfad im CRX-Repository verfügen.
+   >Um Tags zu erstellen, müssen Sie über eine Schreibberechtigung für den `/content/cq:tags/default`-Pfad im CRX-Repository verfügen.
 
 1. Wählen Sie **[!UICONTROL Speichern und schließen]**.
-
 1. Navigieren Sie zur Assets-Benutzeroberfläche. Die bearbeiteten Metadateneigenschaften, darunter Titel, Beschreibung und Tags, werden auf der Asset-Karte in der Kartenansicht sowie in den relevanten Spalten der Listenansicht angezeigt.
 
 <!-- TBD: Uncomment after verification for Dec release.
@@ -168,7 +166,7 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
 
    * Geben Sie nach dem Verschieben den Namen für das Asset an. Wählen Sie anschließend **[!UICONTROL Weiter]** aus, um fortzufahren.
 
-   * Wählen Sie **[!UICONTROL Abbrechen]** aus, um den Vorgang abzubrechen.
+   * Wählen Sie **[!UICONTROL Abbrechen]** aus, um den Vorgang zu stoppen.
 
    >[!NOTE]
    >
@@ -190,7 +188,7 @@ Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Ko
    * Aktivieren/deaktivieren Sie in der Spalte **[!UICONTROL Anpassen]** Verweise auf die Assets.
    * Wählen Sie **[!UICONTROL Zurück]** aus, um zum Bildschirm **[!UICONTROL Ziel auswählen]** zurückzukehren.
 
-   * Wählen Sie **[!UICONTROL Abbrechen]**, um den Verschiebevorgang abzubrechen.
+   * Wählen Sie **[!UICONTROL Abbrechen]**, um den Verschiebevorgang zu stoppen.
 
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
@@ -266,7 +264,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
 1. Klicken Sie im Bestätigungsdialogfeld auf:
 
-   * **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen.
+   * **[!UICONTROL Abbrechen]**, um die Aktion zu stoppen.
    * Mit **[!UICONTROL Löschen]** bestätigen Sie die Aktion.
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
@@ -299,7 +297,7 @@ Siehe [Herunterladen von Assets aus [!DNL Experience Manager]](/help/assets/down
 
 1. Wenn ein Asset beim Veröffentlichen auf andere Assets verweist, werden seine Referenzen im Assistenten aufgelistet. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung entweder rückgängig gemacht oder geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
-1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie aufheben möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum aufgehoben werden soll.
+1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie aufheben möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion zu stoppen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum aufgehoben werden soll.
 
 Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit dem Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern vertraut:
 

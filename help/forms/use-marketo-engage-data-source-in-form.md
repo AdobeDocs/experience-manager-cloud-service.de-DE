@@ -5,7 +5,7 @@ keywords: Verwenden einer Marketo Engage-Datenquelle in adaptiven Formularen, Ve
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 100%
@@ -109,8 +109,10 @@ Das Formular ist nun mit der Datenquelle aus der verbundenen Marketo Engage-Inst
 **F: Was passiert, wenn Sie den Connector des Formulars ändern?**\
 **A:** Wenn Sie den Connector des Formulars ändern, werden die vorhandenen Bindungen ungültig.
 
-**F: Welche drei Vorgänge sind im Aufruf-Service des Regeleditors für Formulare verfügbar, die in Marketo Engage integriert sind?**\
+**F: Welche drei Vorgänge sind im Aufruf-Service des Regeleditors für Formulare verfügbar, die in Marketo Engage integriert sind?**
+
 **A:** Die drei folgenden vorkonfigurierten Vorgänge sind im **Aufruf-Service** für Formulare verfügbar, die in Marketo Engage integriert sind:
+
 * Lead synchronisieren
 * Lead nach ID abrufen
 * Lead nach Filtertyp abrufen

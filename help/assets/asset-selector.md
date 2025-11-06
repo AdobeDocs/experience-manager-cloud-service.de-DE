@@ -5,10 +5,10 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '5357'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -165,7 +165,7 @@ Wenn Sie diese Schritte befolgen, können Sie den Asset-Wähler mit Ihrer [!DNL 
 <!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
 +++**ImsAuthProps**
-Die `ImsAuthProps`-Eigenschaften definieren die Authentifizierungsinformationen und den Ablauf, mit dem der Asset-Selektor ein `imsToken` abruft. Durch Festlegen dieser Eigenschaften können Sie steuern, wie sich der Authentifizierungsfluss verhält, und Listener für verschiedene Authentifizierungsereignisse registrieren.
+Die `ImsAuthProps`-Eigenschaften definieren die Authentifizierungsinformationen und den Ablauf, mit dem der Asset-Wähler ein `imsToken` abruft. Durch Festlegen dieser Eigenschaften können Sie steuern, wie sich der Authentifizierungsfluss verhält, und Listener für verschiedene Authentifizierungsereignisse registrieren.
 
 | Eigenschaftsname | Beschreibung |
 |---|---|
@@ -274,8 +274,8 @@ Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler mit eine
 
 Der Asset-Wähler unterstützt die Authentifizierung für das [!DNL Experience Manager Assets]-Repository mit Eigenschaften des Identity Management System (IMS), z. B. `imsScope` oder `imsClientID`, wenn Sie es mit einer Nicht-Adobe-Anwendung integrieren.
 
-+++**Konfigurieren des Asset-Wählers für eine Nicht-Adobe-Anwendung**
-Um den Asset-Wähler für eine Nicht-Adobe-Anwendung zu konfigurieren, müssen Sie zunächst ein Support-Ticket für die Bereitstellung einreichen und dann die Integrationsschritte befolgen.
++++**Asset-Wähler für ein Nicht-Adobe-Programm konfigurieren**
+Um den Asset-Wähler für eine Adobe-fremde Anwendung zu konfigurieren, müssen Sie zunächst ein Support-Ticket für die Bereitstellung einreichen und dann die Integrationsschritte befolgen.
 
 **Einreichen eines Support-Tickets**
 Schritte zum Einreichen eines Support-Tickets über die Admin Console:
@@ -289,7 +289,7 @@ Schritte zum Einreichen eines Support-Tickets über die Admin Console:
 +++
 
 +++**Integrationsschritte**
-Verwenden Sie diese `index.html`-Beispieldatei zur Authentifizierung bei der Integration des Asset-Wählers mit einer Nicht-Adobe-Anwendung.
+Verwenden Sie diese Beispieldatei `index.html` zur Authentifizierung bei der Integration des Asset-Wählers mit einer Adobe-fremden Anwendung.
 
 Greifen Sie mithilfe des `Script`-Tags auf das Asset-Wählerpaket zu, wie in *Zeile 9* bis *Zeile 11* der `index.html`-Beispieldatei dargestellt.
 
@@ -420,8 +420,8 @@ Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder al
 
 +++
 
-+++**Erstellen einer dynamischen Versand-URL anhand genehmigter Assets**
-Nachdem Sie den Asset-Wähler eingerichtet haben, wird ein Objektschema verwendet, um eine dynamische Versand-URL anhand der genehmigten Assets zu erstellen.
++++**Erstellen einer dynamischen Versand-URL aus genehmigten Assets**
+Nachdem Sie den Asset-Wähler eingerichtet haben, wird ein Objektschema verwendet, um eine dynamische Bereitstellungs-URL anhand der genehmigten Assets zu erstellen.
 Hier ist ein Beispiel für ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
 
 ```
@@ -468,12 +468,12 @@ Die dynamische Versand-URL weist die folgende Syntax auf:
 * Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets"`
 * `<asset-id>` ist die Asset-Kennung
 * `/original/as` ist der konstante Teil der OpenAPI-Spezifikation, der angibt, wie die Original-Ausgabedarstellung bezeichnet werden soll
-* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann.
+* `<seo-name>`ist der Name des Assets, das eine Erweiterung aufweisen kann
 
 +++
 
-+++**Auswahlbereite dynamische Versand-URL**
-Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Zum Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
++++**Bereit zur Auswahl der dynamischen Versand-URL**
+Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
 
 | Objekt | JSON |
 |---|---|
@@ -540,7 +540,7 @@ Nach der Integration mit dem Micro-Frontend-Asset-Wähler von Adobe können Sie 
 
 +++
 
-+++**Konfigurieren benutzerdefinierter Filter**
++++**Konfigurieren von benutzerdefinierten Filtern**
 Mit dem Asset-Wähler für Dynamic Media mit OpenAPI-Funktionen können Sie benutzerdefinierte Eigenschaften und die darauf basierenden Filter konfigurieren. Die Eigenschaft `filterSchema` wird zum Konfigurieren solcher Eigenschaften verwendet. Die Anpassung kann als `metadata.<metadata bucket>.<property name>.` verfügbar gemacht werden, womit die Filter konfiguriert werden können. Dabei gilt Folgendes:
 
 * Bei `metadata` handelt es sich um die Informationen eines Assets
@@ -915,7 +915,7 @@ Verwenden Sie das folgende Code-Snippet, um eine Popup-Meldung zur Nutzung eines
 
 Mit dem Asset-Wähler können Sie einen Filter zur Auswahl von Tags hinzufügen. Dies unterstützt eine Tag-Gruppe, die alle relevanten Tags mit einer bestimmten Tagging-Gruppe kombiniert. Darüber hinaus können Sie zusätzliche Tags auswählen, die dem gesuchten Asset entsprechen. Außerdem können Sie unter dem Kontextaufruffilter auch die standardmäßigen Tag-Gruppen festlegen, die Sie hauptsächlich nutzen, damit Sie unterwegs darauf zugreifen können.
 
->
+>[!NOTE]
 >
 > * Sie müssen ein Code-Fragment für kontextbezogene Aufrufe hinzufügen, um den Tagging-Filter bei der Suche zu aktivieren.
 > * Es muss zwingend die Eigenschaft „name“ verwendet werden, die dem Tag-Gruppentyp `(property=xcm:keywords.id=)` entspricht.

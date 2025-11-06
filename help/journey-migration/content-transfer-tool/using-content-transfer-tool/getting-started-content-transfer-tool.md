@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfe
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1653'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
 >abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/327075/?quality=12&learn=on&captions=ger" text=" Siehe Demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service migrieren:
@@ -149,8 +149,10 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
       >Mit der CTT-Version (3.0.24) wurden neue Funktionen in das Content Transfer Tool aufgenommen, die das Ein- und Ausschließen von Pfaden optimieren. Zuvor mussten Pfade einzeln ausgewählt werden, was mühsam und zeitaufwändig war. Benutzende können jetzt Pfade direkt über die Benutzeroberfläche einschließen oder eine CSV-Datei entsprechend ihren Anforderungen hochladen.  Die CSV-Datei darf nur einen Pfad pro Zeile und keine Kommas enthalten.
 
    1. **Einzuschließende Pfade**: Verwenden Sie den Pfad-Browser, um zu migrierende Pfade auszuwählen. Die Pfadauswahl akzeptiert Eingaben durch Eingabe von Text oder Auswahl. Benutzende können nur eine Option zum Einfügen von Pfaden auswählen: entweder über die Benutzeroberfläche oder durch Hochladen einer CSV-Datei.
+
       >[!IMPORTANT]
       >Die folgenden Pfade sind beim Erstellen eines Migrationssatzes eingeschränkt:
+      >
       >* `/apps`
       >* `/libs`
       >* `/home`
