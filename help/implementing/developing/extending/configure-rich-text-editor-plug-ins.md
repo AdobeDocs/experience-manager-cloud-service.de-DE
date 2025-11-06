@@ -363,7 +363,7 @@ Gehen Sie wie folgt vor, um das Plug-in `paraformat` zu aktivieren:
 
 Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 
-1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/paraformat`, den Sie in [ erstellt haben. Dies aktiviert die Dropdown-Auswahl „Format“](#styleselectorlist).
+1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/paraformat`, den Sie in [&#x200B; erstellt haben. Dies aktiviert die Dropdown-Auswahl „Format“](#styleselectorlist).
 1. Erstellen Sie unter dem Knoten `paraformat` einen neuen Knoten, unter dem die Liste der Formate gespeichert werden soll:
 
    * **Name** `formats`

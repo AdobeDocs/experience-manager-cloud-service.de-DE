@@ -286,7 +286,7 @@ Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendoku
 
 Wir erstellen und konfigurieren eine Instanz der **Titelkomponente** auf der Seite: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
-![Bearbeitungsdialogfeld ](assets/components-title-dialog.png)
+![Bearbeitungsdialogfeld &#x200B;](assets/components-title-dialog.png)
 
 Dann sehen wir die Struktur des Inhalts, der innerhalb des Repositorys erstellt wurde:
 

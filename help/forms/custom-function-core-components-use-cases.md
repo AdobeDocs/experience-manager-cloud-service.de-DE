@@ -56,7 +56,7 @@ Anhand der unten stehenden Abbildung können Sie sehen, wo die Optionen der Drop
 
 Im Folgenden erfahren Sie, wie benutzerdefinierte Funktionen mithilfe eines `Contact Us` Formulars Felder und globale Objekte verwenden.
 
-![Kontaktformular ](/help/forms/assets/contact-us-form.png)
+![Kontaktformular &#x200B;](/help/forms/assets/contact-us-form.png)
 
 Fügen Sie den folgenden Code in der benutzerdefinierten Funktion hinzu, wie im Abschnitt [create-custom-function](/help/forms/custom-function-core-component-create-function.md) beschrieben, um das Formularfeld auf `Required` festzulegen.
 
@@ -92,11 +92,11 @@ Erstellen wir eine Regel für die Schaltfläche `Next`, die das Bedienfeld `pers
 
 In der folgenden Abbildung sehen Sie, wie das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Next` validiert wird. Falls alle Felder innerhalb der `personaldetails` validiert werden, wird das Bedienfeld `feedback` angezeigt.
 
-![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/assets/set-property-form-preview.png)
+![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/assets/set-property-form-preview.png)
 
 Wenn Fehler in den Feldern des Bedienfelds `personaldetails` vorhanden sind, werden sie beim Klicken auf die Schaltfläche `Next` auf Feldebene angezeigt und das Bedienfeld `feedback` bleibt unsichtbar.
 
-![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/assets/set-property-panel.png)
+![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/assets/set-property-panel.png)
 
 ## Überprüfen des Felds
 
@@ -527,7 +527,7 @@ Refaktorieren Sie reguläre Ausdrücke so, dass der RegExp-Konstruktor verwendet
 ## Fehlerbehebung
 
 * Wenn der benutzerdefinierte Übermittlungs-Handler in bestehenden AEM-Projekten oder -Formularen nicht wie erwartet funktioniert, führen Sie die folgenden Schritte aus:
-   * Stellen Sie sicher[ dass die Kernkomponentenversion auf Version 3.0.18 und höher aktualisiert ](https://github.com/adobe/aem-core-forms-components). Für bestehende AEM-Projekte und -Formulare müssen jedoch zusätzliche Schritte ausgeführt werden:
+   * Stellen Sie sicher[&#x200B; dass die Kernkomponentenversion auf Version 3.0.18 und höher aktualisiert &#x200B;](https://github.com/adobe/aem-core-forms-components). Für bestehende AEM-Projekte und -Formulare müssen jedoch zusätzliche Schritte ausgeführt werden:
 
    * Für das AEM-Projekt sollte der Benutzer alle Instanzen von `submitForm('custom:submitSuccess', 'custom:submitError')` durch `submitForm()` ersetzen und das Projekt über die Cloud Manager-Pipeline bereitstellen.
 

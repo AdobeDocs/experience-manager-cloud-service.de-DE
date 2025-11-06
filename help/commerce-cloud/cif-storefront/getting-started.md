@@ -25,7 +25,7 @@ Um mit Adobe Experience Manager (AEM) Commerce as a Cloud Service beginnen zu k�
 >
 >**Haben Sie Edge Delivery Services in Betracht gezogen?**
 >
->Edge Delivery Services ist die von Adobe bevorzugte Lösung zum Erstellen einer Storefront. Weitere Informationen finden Sie [ Dokument „Einführung ](/help/commerce-cloud/introduction.md) Übersicht“.
+>Edge Delivery Services ist die von Adobe bevorzugte Lösung zum Erstellen einer Storefront. Weitere Informationen finden Sie [&#x200B; Dokument „Einführung &#x200B;](/help/commerce-cloud/introduction.md) Übersicht“.
 
 ## Einstieg {#onboarding}
 

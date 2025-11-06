@@ -16,7 +16,7 @@ ht-degree: 35%
 
 >[!NOTE]
 >
->>Die in diesem Artikel beschriebene Funktion ist nur über das private Beta-Programm verfügbar. Informationen zur Anmeldung bei Private Beta finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das private Beta-Programm verfügbar. Informationen zur Anmeldung bei Private Beta finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Die spezialisierte Testumgebung (oder DevXL) ist eine neue Art von Cloud Manager-Umgebung, die Sie erstellen können. Es wurde entwickelt, um erweiterte Anwendungsfälle wie Benutzerakzeptanztests (UAT) und Leistungsvalidierung zu unterstützen. Im Gegensatz zu herkömmlichen Entwicklungs-, Rapid Development- oder Staging-Umgebungen werden DevXL-Umgebungen außerhalb der Produktionsbereitstellungs-Pipeline ausgeführt. Auf diese Weise bieten sie Ihnen mehr Flexibilität bei gleichzeitiger strikter Isolation, um Störungen in Produktions-Workflows zu vermeiden.
 

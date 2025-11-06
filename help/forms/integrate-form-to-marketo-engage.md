@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die Gründe aufgeführt, warum Sie AEM Forms gegen
 Im Folgenden finden Sie die Voraussetzungen für die Verbindung von Marketo Engage mit AEM Forms:
 
 * Gültige Adobe Marketo Engage-Lizenz
-* Eine funktionierende Instanz von Marketo Engage zum [ (Abrufen der Client-ID und des Client-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)), um eine Cloud-Konfiguration zu erstellen.
+* Eine funktionierende Instanz von Marketo Engage zum [&#x200B; (Abrufen der Client-ID und des Client-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)), um eine Cloud-Konfiguration zu erstellen.
 
 ## Erstellen einer Cloud-Service-Konfiguration zum Verbinden von AEM Forms (Adaptive Forms) mit Marketo Engage
 

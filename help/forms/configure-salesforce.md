@@ -20,7 +20,7 @@ ht-degree: 71%
 * Abfragen eines [!DNL Salesforce]-Servers nach Daten und Auffüllen adaptiver Formulare.
 * Lesen Sie Daten vom [!DNL Salesforce]-Server.
 
-[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet ](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >

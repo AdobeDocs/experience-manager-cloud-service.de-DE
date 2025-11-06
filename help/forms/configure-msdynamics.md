@@ -83,7 +83,7 @@ Nachdem Sie die oben genannten Voraussetzungen konfiguriert haben, können Sie m
 
 Führen Sie die folgenden Schritte aus, um die [!DNL Microsoft® Dynamics 365] Cloud Service-Konfiguration zu konfigurieren:
 
-1. Navigieren Sie auf **[!UICONTROL Autoreninstanz zu]** Tools![ ](assets/hammer.png)hammer **[!UICONTROL >]** Cloud Services **[!UICONTROL >]** Datenquellen[!DNL AEM Forms].
+1. Navigieren Sie auf **[!UICONTROL Autoreninstanz zu]** Tools![&#x200B; &#x200B;](assets/hammer.png)hammer **[!UICONTROL >]** Cloud Services **[!UICONTROL >]** Datenquellen[!DNL AEM Forms].
 
    ![Cloud Data-Source auswählen](/help/forms/assets/dynamics-data-source.png)
 1. Wählen Sie einen Konfigurations-Container aus. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.
