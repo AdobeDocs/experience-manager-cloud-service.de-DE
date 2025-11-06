@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
+source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 69%
+source-wordcount: '1666'
+ht-degree: 67%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Neue Funktion in Experience Manager Sites {#new-sites}
 
-* Der [Inhaltsmodell-Editor für AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)Inhaltsfragmente wurde modernisiert, um ihn an andere auf React-Spektrum basierende Benutzeroberflächen in AEM anzupassen. Die Implementierung der Benutzeroberfläche und das Erweiterbarkeitsmodell sind jetzt mit dem Inhaltsfragmenteditor und dem universellen Editor konsistent. Der neue Modelleditor ist jetzt Standard, wenn über die neue Admin-Benutzeroberfläche des Inhaltsmodells geöffnet wird. Beim Öffnen eines Inhaltsmodells in der Touch-optimierten Benutzeroberfläche wird der Editor für die Touch-optimierte Benutzeroberfläche geöffnet und Sie können den neuen Editor ausprobieren.
+* [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): Inhaltsautoren können jetzt zukünftige Varianten strukturierter Inhalte mithilfe von Launches für Inhaltsfragmente erstellen und planen. Die neue Inhaltsfragmentkonsole ermöglicht das Erstellen, Bearbeiten, Verwalten und Planen von Inhaltsfragment-Launches als Verzweigungen für zukünftige Inhalte, die mit der Quellverzweigung synchronisiert werden können. Eine neue Vergleichsansicht bietet einen klaren Überblick über alle Inhaltsänderungen, bevor ein Launch zur zukünftigen Veröffentlichung übergeben wird.
 
-* [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): Auf der Registerkarte „Launches“ der Inhaltsfragmentkonsole können Sie Launches erstellen, alle vorhandenen Launches auflisten, die wichtigsten Eigenschaften anzeigen und Aktionen für sie durchführen.
+* Der [Inhaltsmodell-Editor für AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)Inhaltsfragmente wurde modernisiert, um ihn an andere auf React-Spektrum basierende Benutzeroberflächen in AEM anzupassen. Die Implementierung der Benutzeroberfläche und das Erweiterbarkeitsmodell sind jetzt mit dem Inhaltsfragmenteditor und dem universellen Editor konsistent. Der neue Modelleditor ist jetzt Standard, wenn über die neue Admin-Benutzeroberfläche des Inhaltsmodells geöffnet wird. Beim Öffnen eines Inhaltsmodells in der Touch-optimierten Benutzeroberfläche wird der Editor für die Touch-optimierte Benutzeroberfläche geöffnet und Sie können den neuen Editor ausprobieren.
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
