@@ -1,18 +1,18 @@
 ---
-title: Wiederverwenden von Inhalten – Multi Site Manager und Live Copy
-description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden von Inhalten mit den leistungsstarken Live Copies von AEM und den Funktionen von Multi Site Manager.
+title: Wiederverwenden von Inhalten – Multi-Site Manager und Live Copy
+description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden von Inhalten mit den leistungsstarken Live Copies von AEM und den Funktionen von Multi-Site Manager.
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2721'
-ht-degree: 100%
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+workflow-type: tm+mt
+source-wordcount: '2719'
+ht-degree: 98%
 
 ---
 
-# Wiederverwenden von Inhalten: Multi Site Manager und Live Copy {#multi-site-manager-and-live-copy}
+# Wiederverwenden von Inhalten: Multi-Site Manager und Live Copy {#multi-site-manager-and-live-copy}
 
 Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Site-Inhalte an mehreren Standorten. MSM verwendet seine Live Copy-Funktion, um Folgendes zu erreichen.
 
@@ -203,15 +203,15 @@ Im vorherigen Beispiel ist `/content/wknd/language-masters/en` die globale prim�
 >
 >Die Diagramme und Beschreibungen in diesem Abschnitt stellen Momentaufnahmen der potenziellen Live Copies dar. Sie erheben keinen Anspruch auf Vollständigkeit, stellen jedoch einen Überblick bereit, um bestimmte Merkmale hervorzuheben.
 
-Beim erstmaligen Erstellen einer Live Copy werden die ausgewählten Quellseiten 1:1 in der Live Copy wiedergegeben. Danach können neue Ressourcen (Seiten und/oder Absätze) auch direkt innerhalb der Live Copy erstellt werden. Daher ist es hilfreich, sich dieser Varianten und ihrer Auswirkungen auf die Synchronisierung bewusst zu sein. Mögliche Kompositionen umfassen:
+Beim erstmaligen Erstellen einer Live Copy werden die ausgewählten Quellseiten 1::1 in der Live Copy wiedergegeben. Danach können neue Ressourcen (Seiten und/oder Absätze) auch direkt innerhalb der Live Copy erstellt werden. Daher ist es hilfreich, sich dieser Varianten und ihrer Auswirkungen auf die Synchronisierung bewusst zu sein. Mögliche Kompositionen umfassen:
 
 * [Live Copy mit Live Copy-fremden Seiten](#live-copy-with-non-live-copy-pages)
 * [Verschachtelte Live Copies](#nested-live-copies)
 
 Die grundlegende Form einer Live Copy verfügt über:
 
-* Live Copy-Seiten, die die ausgewählten Quellseiten 1:1 wiedergeben
-* Eine Konfigurationsdefinition.
+* Live Copy-Seiten, die die ausgewählten Quellseiten 1::1 widerspiegeln.
+* eine Konfigurationsdefinition
 * Eine zu jeder Ressource festgelegte Live-Beziehung:
    * Verknüpft die Live Copy-Ressource mit ihrem Blueprint/ihrer Quelle.
    * Wird bei der Umsetzung von Vererbung und Rollout verwendet.

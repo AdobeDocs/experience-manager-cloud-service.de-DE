@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die wichtigsten Aspekte von Assets Ultimate
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
 
@@ -91,13 +91,13 @@ In der folgenden Tabelle sind die verfügbaren AEM Assets-Benutzertypen, ihre Be
 
 | Benutzerrolle | Eingeschränkte Benutzende | Mitarbeiter-Benutzende | Power-Benutzende | Admins |
 |---------------|----------|----------|-------------------------|---|
-| **Funktionen** |
+| **Funktionen** |  |  |  |  |
 | Zugriff auf markenkonforme Assets im Content Hub-Portal | ✓ | ✓ | ✓ | ✓ |
 | Erstellung und Bearbeitung von Assets mit integriertem Adobe Expres und Firefly | − | ✓ | ✓ | ✓ |
 | Integration von Assets in Ihrer Organisation mit Adobe- und Adobe-fremden Anwendungen | − | ✓ | ✓ | ✓ |
 | Zugriff auf alle AEM Assets-Funktionen, wie das Management von Assets, Metadaten und der allgemeinen Governance und Automatisierung | − | − | ✓ | ✓ |
 | Verwaltung von Berechtigungen für Inhalte in der AEM Assets-Autorenumgebung | − | − | − | ✓ |
-| **Die Person muss diesen Produktprofilen angehören (Admin Console)** |
+| **Die Person muss diesen Produktprofilen angehören (Admin Console)** |  |  |  |  |
 | AEM > Bereitstellungsinstanz > Eingeschränkte AEM Assets-Benutzende | ✓ | ✓ | ✓ | ✓ |
 | AEM > Produktions-Autoreninstanz > AEM Assets-Mitwirkende-Benutzende | − | ✓ | − | − |
 | AEM > Produktions-Autoreninstanz > AEM Assets-Power-Benutzende | − | − | ✓ | − |

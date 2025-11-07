@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '10063'
 ht-degree: 99%
@@ -272,7 +272,7 @@ Beachten Sie die folgenden Best Practice-Tipps für die Kodierung von Quellvideo
 <!-- For advice about video encoding, see the following:
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_de). -->
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### Quellvideodateien {#source-video-files}
 
@@ -456,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -798,7 +798,7 @@ Alle hochgeladenen Audiospurdateien können jedoch als Standardaudio festgelegt 
 1. Klicken Sie in der Symbolleiste auf ![Info-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Eigenschaften.
 1. Wählen Sie auf der Seite „Eigenschaften“ die Registerkarte **[!UICONTROL Beschriftungen und Audiospuren]** aus.
 1. Wählen Sie unter der Überschrift **Audiospuren** die Audiospurdatei aus, die als Standard für das Video festgelegt werden soll.
-1. Klicken Sie auf ![Audiosymbol &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Als Standard festlegen]**.
+1. Klicken Sie auf ![Audiosymbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Als Standard festlegen]**.
 1. Klicken Sie im Dialogfeld **Als Standard festlegen** auf **[!UICONTROL Ersetzen]**.
 
    ![Die Überschrift „Audiospuren“ mit ausgewähltem Audiospurdateinamen und hervorgehobener Schaltfläche „Als Standard festlegen“](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Festlegen der standardmäßigen Audiospur für ein Video*
@@ -1535,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

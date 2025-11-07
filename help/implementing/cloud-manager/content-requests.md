@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1918'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -95,8 +95,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | Traffic durch DDOS-Angriffe | Ausgeschlossen | DDOS-Schutz. AEM erkennt einige DDOS-Angriffe automatisch und blockiert sie. DDOS-Angriffe, die erkannt werden, sind nicht abrechenbar. |
 | NewRelic-Überwachung für AEM as a Cloud Service | Ausgeschlossen | Globale AEM as a Cloud Service-Überwachung. |
 | URL für Kundinnen und Kunden zur Überwachung ihres Cloud Service-Programms | Ausgeschlossen | Adobe empfiehlt, die URL zu verwenden, um die Verfügbarkeit oder Konsistenzprüfung extern zu überwachen.<br><br>`/system/probes/health` |
-| Pod-Warm-up-Service für AEM as a Cloud Service | Ausgeschlossen |
-| Agent: skyline-service-warmup/1.* |
+| Pod-Warm-up-Service für AEM as a Cloud Service | Ausgeschlossen | Agent: skyline-service-warmup/1.* |
 | Bekannte Suchmaschinen, soziale Netzwerke und HTTP-Bibliotheken (mit Tags von Fastly) | Ausgeschlossen | Bekannte Dienste, die die Site regelmäßig besuchen, um ihren Suchindex oder Dienst zu aktualisieren:<br><br>Beispiele:<br>• AddSearchBot<br>• AhrefsBot<br>• Applebot<br>• Ask Jeeves Corporate Spider<br>• Bingbot<br>• BingPreview<br>• BLEXBot<br>• BuiltWith<br>• Bytespider<br>• CrawlerKengo<br>• Facebookexternalhit<br>• Google AdsBot<br>• Google AdsBot Mobile<br>• Googlebot<br>• Googlebot Mobile<br>• lmspider<br>• LucidWorks<br>• `MJ12bot`<br>• Pinterest<br>• SemrushBot<br>• SiteImprove<br>• StashBot<br>• StatusCake<br>• YandexBot<br>• ContentKing<br>• Claudebot |
 | Commerce Integration Framework-Aufrufe | Ausgeschlossen | Anfragen an AEM, die an das Commerce Integration Framework weitergeleitet werden. Die URL beginnt mit `/api/graphql`. Um eine doppelte Zählung zu vermeiden, sind sie für den Cloud-Service nicht abrechenbar. |
 | Ausschließen von `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf. Es bietet Informationen zur Installation von Websites auf Desktops oder Mobiltelefonen. Adobe sollte eine JSON-Anfrage an `/etc.clientlibs/*/manifest.json` nicht zählen |
@@ -105,7 +104,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
@@ -117,7 +116,7 @@ Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-r
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Sie müssen Ihre Implementierung und Traffic-Muster überprüfen, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [&#x200B; (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
+* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Sie müssen Ihre Implementierung und Traffic-Muster überprüfen, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [ (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
 
 ```
 trafficFilters:

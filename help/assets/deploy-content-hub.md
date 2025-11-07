@@ -3,7 +3,7 @@ title: Bereitstellen [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren sowie Benutzenden mit unterschiedlichen Berechtigungstypen (Assets hochladen, Adobe Express-Benutzende) Zugriff und Administrationsberechtigungen gewähren.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 84%
@@ -38,12 +38,12 @@ In der folgenden Tabelle sind die verfügbaren Content Hub-Benutzertypen, ihre B
 
 | Benutzerrolle | Content Hub-Benutzende | Content Hub-Benutzende mit Berechtigungen zum Hinzufügen von Assets | Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets | Content Hub-Admins |
 |---------------|----------|----------|-------------------------|---|
-| **Funktionen** |
+| **Funktionen** |  |  |  |  |
 | Zugriff auf markenkonforme Assets im Content Hub-Portal | ✓ | ✓ | ✓ | ✓ |
 | Hochladen von Assets aus dem Content Hub-Portal | − | ✓ | ✓ | ✓ |
 | Verwenden der Adobe Express-Integration zum Bearbeiten von Bildern | − | − | ✓ | − |
 | Zugriff auf die Konfigurations-Benutzeroberfläche von Content Hub | − | − | − | ✓ |
-| **Die Person muss diesen Produktprofilen angehören (Admin Console)** |
+| **Die Person muss diesen Produktprofilen angehören (Admin Console)** |  |  |  |  |
 | AEM > Bereitstellungsinstanz > Eingeschränkte AEM Assets-Benutzende | ✓ | ✓ | ✓ | ✓ |
 | AEM > Produktions-Autoreninstanz > AEM-Benutzende | − | ✓ | ✓ | − |
 | AEM > Produktions-Autoreninstanz > AEM-Admins | − | − | − | ✓ |

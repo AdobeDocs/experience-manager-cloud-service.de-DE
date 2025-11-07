@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument für 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 100%
@@ -262,7 +262,7 @@ Im Folgenden sind die Komponenten des adaptiven Formulars sowie die ihnen zugeh�
 | Komponente eines adaptiven Formulars | Zugehörige XFA-Komponente | Anmerkungen |
 |---|---|---|
 | Bild | Bild | Die Komponenten „TextDraw“ und „Image“ (unabhängig davon, ob gebunden oder nicht) werden in dem Datensatzdokument für ein XSD-basiertes adaptives Formular immer angezeigt, es sei denn, sie werden per Einstellungen des Datensatzdokuments ausgeschlossen. |
-| Text | Text |
+| Text | Text |  |
 
 ### Tabellen {#tables}
 

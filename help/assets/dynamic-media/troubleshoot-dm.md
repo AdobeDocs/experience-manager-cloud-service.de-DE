@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 100%
+source-wordcount: '1144'
+ht-degree: 96%
 
 ---
 
@@ -30,14 +30,14 @@ Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob A
 
 | **Eigenschaft** | **Beispiel** | **Beschreibung** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss ausgefüllt werden, um URLs zu Remote-Assets von Dynamic Media zu generieren. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotations-Sets, Bild-Sets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
 
 ### Protokollierung der Synchronisierung {#synchronization-logging}
 
-Synchronisierungsfehler und -probleme werden in der Datei `error.log` (Experience Manager-Server-Verzeichnis `/crx-quickstart/logs/`) protokolliert. Anhand der protokollierten Informationen lassen sich die Hauptursachen der meisten Probleme ermitteln. Sie können die Protokollierung aber auch im Paket `com.adobe.cq.dam.ips` über die Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) auf DEBUG heraufsetzen, um mehr Informationen zu erfassen.
+Synchronisierungsfehler und -probleme werden in der Datei `error.log` (Experience Manager-Server-Verzeichnis `/crx-quickstart/logs/`) protokolliert. Anhand der protokollierten Informationen lassen sich die Hauptursachen der meisten Probleme ermitteln. Sie können die Protokollierung aber auch im `com.adobe.cq.dam.ips`-Paket über die Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) auf DEBUG heraufsetzen, um mehr Informationen zu erfassen.
 
 ### Versionskontrolle {#version-control}
 
@@ -95,7 +95,7 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
    <td>Warten Sie, bis das Asset vom Workflow abgerufen wurde.</td>
   </tr>
   <tr>
-   <td>Bilder oder Sets zeigen weder die Viewer-URL noch den eingebetteten Code an</td>
+   <td>Bilder oder Sets zeigen weder die Viewer-URL noch den Einbettungs-Code an</td>
    <td>Überprüfen Sie, ob die Viewer-Vorgabe veröffentlicht wurde.</td>
    <td><p>Wechseln Sie zu <strong>Tools</strong> &gt; <strong>Assets</strong> &gt; <strong>Viewer-Vorgaben</strong> und veröffentlichen Sie die Viewer-Vorgabe.</p> </td>
   </tr>
@@ -213,7 +213,7 @@ Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchron
 
 1. Gehen Sie zu CRXDE Lite.
 1. Löschen Sie `<sync-folder>/_CSS/_OOTB`.
-1. Navigieren Sie zum CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Navigieren Sie zum CRX-Paket-Manager: `https://localhost:4502/crx/packmgr/`.
 1. Suchen Sie das Viewer-Paket in der Liste; es beginnt mit `cq-dam-scene7-viewers-content`.
 1. Wählen Sie **Neu installieren** aus.
 1. Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.

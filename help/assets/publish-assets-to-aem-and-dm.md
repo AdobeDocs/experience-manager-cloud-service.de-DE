@@ -2,9 +2,9 @@
 title: Quick Publish in  [!DNL AEM and Dynamic Media]
 description: Mit Quick Publish in  [!DNL Assets view]  können Sie Assets gleichzeitig oder separat in  [!DNL AEM and Dynamic Media]  veröffentlichen. Sie können Assets und Ordner auswählen und sich für eine Veröffentlichung in  [!DNL Dynamic Media]  oder  [!DNL AEM] entscheiden.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-feature: Publishing, [!DNL Dynamic Media]
+feature: Publishing
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 92%
@@ -55,7 +55,7 @@ So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der [!UI
 
    ![Datei-Upload – Modus „Unmittelbar“](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
-   Da der [!UICONTROL Veröffentlichungsmodus für Dynamic &#x200B;] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
+   Da der [!UICONTROL Veröffentlichungsmodus für Dynamic ] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
 
 1. Wählen Sie **In AEM veröffentlichen** aus, um die hochgeladenen Assets in [!DNL AEM] zu veröffentlichen, und klicken Sie auf **[!UICONTROL Hochladen]**.
 

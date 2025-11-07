@@ -8,7 +8,7 @@ docset: aem65
 feature: Publishing,Dynamic Media
 role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2946'
 ht-degree: 100%
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Sie können wählen, ob Sie Assets in Adobe Experience Manager oder Dynamic Media veröffentlichen oder die Veröffentlichung aufheben möchten. Sie können dies auf Ordnerebene tun, indem Sie entweder **[!UICONTROL Veröffentlichung verwalten]** oder **[!UICONTROL Quick Publish]** verwenden. Diese Veröffentlichungsmethode ist nützlich, da sie sich nicht nur auf die **[!UICONTROL Dynamic Media-Konfiguration]** stützt, deren Einstellungen für alle Ordner in Ihrer Dynamic Media-Instanz global sind.
 
-Beispielsweise können Sie mit selektiver Veröffentlichung Assets für Produkte bearbeiten, die noch nicht live sind. In einem solchen Fall kann ein Marketing-Team auf Bilder mit smartem Zuschnitt und dynamische Ausgabedarstellungen zugreifen, die mit Dynamic Media synchronisiert werden. Auf diese Weise können Marketing-Experten Werbematerialien erstellen, ohne diese Assets für die globale Bereitstellung in Dynamic Media veröffentlichen zu müssen.
+Beispielsweise können Sie mit selektiver Veröffentlichung Assets für Produkte bearbeiten, die noch nicht live sind. In einem solchen Fall kann ein Marketing-Team auf Bilder mit intelligentem Zuschnitt und dynamische Ausgabedarstellungen zugreifen, die mit Dynamic Media synchronisiert werden. Auf diese Weise können Marketing-Experten Werbematerialien erstellen, ohne diese Assets für die globale Bereitstellung in Dynamic Media veröffentlichen zu müssen.
 
 <!-- 
 >[!IMPORTANT]
@@ -76,7 +76,7 @@ Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, habe
    | --- | --- |
    | **[!UICONTROL Sofort]** | Wenn Assets in diesen Ordner hochgeladen werden, erfasst das System die Assets in Experience Manager und stellt die URL/den Einbettungs-Link sofort bereit. Diese Option ist nur an Experience Manager-Veröffentlichungen gebunden; es ist kein Benutzereingriff erforderlich, wenn Assets veröffentlicht werden sollen.<br>Diese Option ist *nicht* verfügbar, wenn Sie im vorherigen Schritt die Option **[!UICONTROL Alles in diesem Unterbaum des Ordners von der Synchronisation mit Dynamic Media ausschließen]** im **[!UICONTROL Synchronisationsmodus]** ausgewählt haben. |
    | **[!UICONTROL Bei Aktivierung]** | Wenn Assets in diesen Ordner hochgeladen werden, müssen Sie ein Asset zuerst explizit veröffentlichen, bevor eine URL/ein Einbettungs-Link bereitgestellt wird. Diese Option ist nur an Experience Manager-Veröffentlichungen gebunden.<br>Diese Option ist *nicht* verfügbar, wenn Sie im vorherigen Schritt die Option **[!UICONTROL Alles in diesem Unterbaum des Ordners von der Synchronisation mit Dynamic Media ausschließen]** im **[!UICONTROL Synchronisationsmodus]** ausgewählt haben. |
-   | **[!UICONTROL Selektive Veröffentlichung]** | Assets werden für die Bereitstellung im öffentlich zugänglichen Bereich je nach Wahl entweder in Experience Manager oder Dynamic Media veröffentlicht. Beide Veröffentlichungsmethoden schließen sich gegenseitig aus. Das heißt, Sie können Assets in DMS7 veröffentlichen, damit Sie Funktionen wie smartes Zuschneiden oder dynamische Ausgabedarstellungen verwenden können. Oder Sie können Assets ausschließlich in Experience Manager zur sicheren Vorschau veröffentlichen. Diese Assets werden *nicht* in DMS7 veröffentlicht, um sie im öffentlich zugänglichen Bereich bereitzustellen. Diese Option ist nicht verfügbar, wenn Sie im vorherigen Schritt die Option **[!UICONTROL Alles in diesem Unterbaum des Ordners von der Synchronisation mit Dynamic Media ausschließen]** im **[!UICONTROL Synchronisationsmodus]** ausgewählt haben. |
+   | **[!UICONTROL Selektive Veröffentlichung]** | Assets werden für die Bereitstellung im öffentlich zugänglichen Bereich je nach Wahl entweder in Experience Manager oder Dynamic Media veröffentlicht. Beide Veröffentlichungsmethoden schließen sich gegenseitig aus. Das heißt, Sie können Assets in DMS7 veröffentlichen, damit Sie Funktionen wie intelligenten Zuschnitt oder dynamische Ausgabedarstellungen verwenden können. Oder Sie können Assets ausschließlich in Experience Manager zur sicheren Vorschau veröffentlichen. Diese Assets werden *nicht* in DMS7 veröffentlicht, um sie im öffentlich zugänglichen Bereich bereitzustellen. Diese Option ist nicht verfügbar, wenn Sie im vorherigen Schritt die Option **[!UICONTROL Alles in diesem Unterbaum des Ordners von der Synchronisation mit Dynamic Media ausschließen]** im **[!UICONTROL Synchronisationsmodus]** ausgewählt haben. |
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern und schließen]** und dann auf **[!UICONTROL OK]**, um zu Experience Manager Assets zurückzukehren.
 
@@ -115,7 +115,7 @@ Siehe [Erstellen einer Dynamic Media-Konfiguration](#configuring-dynamic-media-c
    | Aktion | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Veröffentlichen]** (in Experience Manager) | Um Assets in Experience Manager für eine sichere Vorschau zu veröffentlichen, wählen Sie diese Option aus. |
-   | **[!UICONTROL In Dynamic Media veröffentlichen]** | Wählen Sie diese Option, um Assets für die Bereitstellung im öffentlich zugänglichen Bereich in Dynamic Media zu veröffentlichen oder um Funktionen wie smartes Zuschneiden oder dynamische Ausgabedarstellungen zu verwenden.<br>Diese Option ist nur verfügbar, wenn in den Eigenschaften des Ordners der **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** auf **[!UICONTROL Selektive Veröffentlichung]** gesetzt ist. |
+   | **[!UICONTROL In Dynamic Media veröffentlichen]** | Wählen Sie diese Option, um Assets für die Bereitstellung im öffentlich zugänglichen Bereich in Dynamic Media zu veröffentlichen oder um Funktionen wie intelligenten Zuschnitt oder dynamische Ausgabedarstellungen zu verwenden.<br>Diese Option ist nur verfügbar, wenn in den Eigenschaften des Ordners der **[!UICONTROL Veröffentlichungsmodus für Dynamic Media]** auf **[!UICONTROL Selektive Veröffentlichung]** gesetzt ist. |
 
 1. Legen Sie unter **[!UICONTROL Zeitplan]** den Zeitpunkt der Veröffentlichung fest.
 
@@ -185,7 +185,7 @@ Für einfache Asset-Aktivierungen können Sie **[!UICONTROL Quick Publish]** ver
 1. Wählen Sie aus dem Listenmenü **[!UICONTROL Quick Publish]** eine der folgenden Optionen aus.
 
    | Option „Quick Publish“ | Funktion |
-   | --- | --- | 
+   | --- | --- |
    | In Experience Manager veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in Experience Manager. |
    | In Brand Portal veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in **[!UICONTROL Brand Portal]**.<br>Diese Option ist nur verfügbar, wenn **[!UICONTROL Brand Portal]** bereits für Ihre Experience Manager Assets-Instanz konfiguriert wurde. |
    | In Dynamic Media veröffentlichen | Veröffentlicht die ausgewählten Assets sofort in Dynamic Media.<br>Ein Asset muss bereits mit Dynamic Media synchronisiert worden sein. Stellen Sie bei Bedarf sicher, dass der **[!UICONTROL Synchronisationsmodus]** in den Eigenschaften eines Ordners schon auf **[!UICONTROL Alles in diesem Unterbaum des Ordners mit Dynamic Media synchronisieren]** gesetzt ist. |

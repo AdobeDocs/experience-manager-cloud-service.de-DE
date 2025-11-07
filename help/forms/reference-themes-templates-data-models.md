@@ -1,10 +1,10 @@
 ---
 title: Wie lassen sich Referenz-Designs und -vorlagen für AEM Forms erhalten?
-description: AEM Forms bietet Beispiel-Designs für adaptive Formulare, Vorlagen und Formulardaten, damit Sie Vorlagen schneller erstellen können.
+description: AEM Forms bietet Beispiel-Designs für adaptive Formulare, Vorlagen und Formulardatenmodelle, damit Sie Vorlagen schneller erstellen können.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 100%
@@ -23,13 +23,13 @@ ht-degree: 100%
 >
 > Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für die Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/creating-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von adaptiven Formularen mithilfe von Foundation-Komponenten beschrieben.
 
-AEM Forms as a Cloud Service bietet mehrere Referenz-Designs, Vorlagen und Formulardatenmodelle (FDM), damit Sie schnell mit der Erstellung adaptiver Formulare beginnen können. Sie können das [Referenzinhaltspaket vom Software-Verteilungs-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) herunterladen und den [Package Manager](/help/implementing/developing/tools/package-manager.md) verwenden, um das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in Ihrer Produktions-, Entwicklungs- oder lokalen Entwicklungsumgebung zu installieren, um diese Referenz-Assets in Ihre Umgebung zu bringen.
+AEM Forms as a Cloud Service bietet mehrere Referenz-Designs, Vorlagen und Formulardatenmodelle (FDM), damit Sie schnell mit der Erstellung adaptiver Formulare beginnen können. Sie können das [Referenzinhaltspaket vom Software-Verteilungs-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) herunterladen und den [Paket-Manager](/help/implementing/developing/tools/package-manager.md) verwenden, um das [Referenzinhaltspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in Ihrer Produktions-, Entwicklungs- oder lokalen Entwicklungsumgebung zu installieren, um diese Referenz-Assets in Ihre Umgebung zu bringen.
 
 Die im Referenzinhaltspaket enthaltenen Designs, Vorlagen und Formulardatenmodelle (FDM) sind:
 
 
 | Designs | Vorlagen | Formulardatenmodell (FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 | Allgemein | Microsoft Dynamics 365 |
 | Tranquil | Leer | Salesforce |
 | Urbane |   |  |
@@ -117,7 +117,7 @@ Die einfache Vorlage hilft Ihnen beim schnellen Erstellen eines Registrierungsfo
 
 ## Referenz-Formulardatenmodell (FDM) {#reference-models}
 
-Die adaptiven Formulare können dann mit Microsoft Dynamics 365- und Salesforce-Servern interagieren, um Geschäftsabläufe zu ermöglichen. Zum Beispiel:
+Die adaptiven Formulare können dann mit Microsoft Dynamics 365- und Salesforce-Servern interagieren, um Geschäfts-Workflows zu ermöglichen. Zum Beispiel:
 
 * Schreiben von Daten in Microsoft Dynamics 365 und Salesforce bei der Übermittlung von adaptiven Formularen.
 * Schreiben von Daten in Microsoft Dynamics 365 und Salesforce durch benutzerdefinierte Entitäten, die im Formulardatenmodell (FDM) definiert sind, und umgekehrt.

@@ -4,7 +4,7 @@ description: Sicherstellen, dass Ihr Code und die Inhalte für die Migration in 
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 100%
@@ -85,7 +85,7 @@ Darüber hinaus haben Sie folgende Möglichkeiten:
 
 * In diesem Video erfahren Sie, wie Sie das Dispatcher-SDK konfigurieren:
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32985?captions=ger)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Ein neuer Denkansatz {#a-change-in-mindset}
 
@@ -146,7 +146,7 @@ Sobald der Zugriff auf einen [Produktionsklon](#proof-of-migration) etabliert wu
 
 | Aktionselement | Wichtige Vorteile |
 |---------|----------|
-| Benutzer, Gruppen und Berechtigungen | Sie müssen die Anzahl der Benutzer, Gruppen und die Komplexität von Mitgliedschaften verstehen. Suchen Sie nach Möglichkeiten, nicht verwendete Benutzer und Gruppen in der Quelle vor der Migration zu bereinigen. |
+| Benutzer, Gruppen und Berechtigungen | Sie müssen die Anzahl der Benutzer, Gruppen und die Komplexität von Zugehörigkeiten verstehen. Suchen Sie nach Möglichkeiten, nicht verwendete Benutzer und Gruppen in der Quelle vor der Migration zu bereinigen. |
 | Unvollständige Asset-Verarbeitung | Versuchen Sie, die Verarbeitung von Assets im Quellsystem abzuschließen, bevor Sie mit der Migration beginnen, um potenzielle Bedenken bei AEM as a Cloud Service nach der Migration zu vermeiden. |
 | Inhaltsstatus | Es wird empfohlen, vor dem Start der Migration nach ungültigen Inhalten zu suchen und diese zu bereinigen. Suchen Sie beispielsweise nach Assets oder Seiten, die keine Originalausgabeformate aufweisen oder die in der Workflow-Verarbeitung hängen bleiben. Siehe auch [Asset-Status](#asset-health). |
 

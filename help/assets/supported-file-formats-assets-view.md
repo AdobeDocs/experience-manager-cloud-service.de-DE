@@ -5,7 +5,7 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -55,10 +55,12 @@ Die verschiedenen Dateitypen werden, wie unten beschrieben, in unterschiedlichem
 
 ## Suchen, Verwenden und Bearbeiten von Assets {#support-to-search-use-edit}
 
+<!--writer - please check RAW files row below. There was an extra column, so I deleted a duplicate section. I think I did it right. -->
+
 | Asset-Typ | [Download](/help/assets/manage-organize-assets-view.md#download) | Drag-and-Drop | [Bildeditor](/help/assets/edit-images-assets-view.md) | [Suchen](/help/assets/search-assets-view.md) | [Smart-Tags](/help/assets/metadata-assets-view.md#tags) | [Umbenennen](/help/assets/manage-organize-assets-view.md) | [Versionen](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Rasterbilder | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Raw-Dateien | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Raw-Dateien | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Ordner | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | Videos | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC-Bibliotheken | − | − | − | − | − | ✓ | ✓ |
