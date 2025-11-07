@@ -55,7 +55,7 @@ So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der [!UI
 
    ![Datei-Upload – Modus „Unmittelbar“](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
-   Da der [!UICONTROL Veröffentlichungsmodus für Dynamic ] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
+   Da der [!UICONTROL Veröffentlichungsmodus für Dynamic &#x200B;] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
 
 1. Wählen Sie **In AEM veröffentlichen** aus, um die hochgeladenen Assets in [!DNL AEM] zu veröffentlichen, und klicken Sie auf **[!UICONTROL Hochladen]**.
 
