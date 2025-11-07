@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 67%
+source-wordcount: '1871'
+ht-degree: 60%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **Universeller Editor für adaptive Formulare und Formularfragmente**
 
-Der universelle Editor bietet jetzt ein einheitliches Authoring-Erlebnis zum Erstellen adaptiver Forms und wiederverwendbarer Formularfragmente. Autorinnen und Autoren können Formulare visuell entwerfen, Übermittlungsaktionen konfigurieren und die reCAPTCHA-Validierung in eine intuitive WYSIWYG-Umgebung integrieren.
+Der universelle Editor bietet jetzt ein einheitliches Authoring-Erlebnis zum Erstellen adaptiver Forms und wiederverwendbarer Formularfragmente. Autorinnen und Autoren können Formulare visuell in einer intuitiven WYSIWYG-Umgebung entwerfen und dabei leistungsstarke Erweiterungen und umfangreiche Übermittlungsfunktionen nutzen. Der Editor integriert die reCAPTCHA-Validierung für erweiterte Sicherheit, bietet Vorbefüllungs-Services zur Reduzierung manueller Eingaben und unterstützt responsives Design auf allen Geräten.
+
+**Verfügbare Erweiterungen:**
+
+* **Regeleditor**: Der visuelle Regeleditor ermöglicht es Formularautorinnen und -autoren, Formularfeldern dynamisches Verhalten ohne Codierung hinzuzufügen, und unterstützt ereignisgesteuerte Regeln, sofortige Validierung und Fehlerbehandlung.
+* **Formulareigenschaften**: Ein Assistent, mit dem Benutzer Übermittlungsaktionen, den Vorbefüllungs-Service, die Dankesnachricht und andere formularbezogene Verhaltensweisen direkt im Editor konfigurieren können.
+* **Formulardatenmodell-Source und Bindungsverweis**: Mit der Datenquellenerweiterung können Formularautoren mit einem Datenmodell verknüpfte Komponenten direkt zu einem adaptiven Formular hinzufügen und einen Bindungsverweis aus einer Baumstrukturauswahl für alle Komponenten auswählen.
+
+**Unterstützte Übermittlungsaktionen:**
+
+Der universelle Editor unterstützt eine umfassende Palette von Übermittlungs-Workflows, einschließlich benutzerdefinierter Übermittlungsaktionen, Übermitteln an Microsoft SharePoint, Übermitteln an Microsoft OneDrive, Übermitteln an Azure Blob Storage, Übermitteln an den REST-Endpunkt, Aufrufen eines AEM-Workflows, Aufrufen eines Power Automate-Flusses, Übermitteln an Marketo Engage, Übermitteln an Adobe Experience Platform (AEP), Übermitteln an eine Tabelle, Übermitteln mit dem Formulardatenmodell (FDM), Übermitteln an Workfront Fusion und Senden von E-Mails.
+
+Ausführliche Informationen finden Sie in der [Dokumentation zum universellen Editor für Edge Delivery Services für Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Informationen zum Konfigurieren von Übermittlungsaktionen finden Sie unter [Übermittlungsaktion für adaptive Formulare](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 <!-- ### Pre-Release features in AEM Forms 
 
