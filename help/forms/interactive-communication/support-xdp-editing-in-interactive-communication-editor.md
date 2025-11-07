@@ -4,9 +4,9 @@ description: Unterstützung der XDP-Bearbeitung im Editor für interaktive Kommu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '433'
 ht-degree: 13%
 
 ---
@@ -25,6 +25,20 @@ ht-degree: 13%
 ## Einführung
 
 Der Editor für interaktive Kommunikation (IC) bietet jetzt nahtlose **Unterstützung für die Bearbeitung von XDP-Dateien (XML-Datenpaket** innerhalb der Authoring-Umgebung. Diese Verbesserung ermöglicht es Autorinnen und Autoren, XDP-Vorlagen mühelos zu verwalten, zu ändern und zu pflegen, ohne auf externe Tools angewiesen zu sein. Mit dieser Funktion können Benutzer XDP-Dateien direkt im IC-Editor hochladen, anzeigen und bearbeiten, was einen einheitlichen und effizienten Workflow vom Entwurf bis zur Bereitstellung ermöglicht.
+
+## Verwenden der XDP-Bearbeitungsunterstützung im Editor für interaktive Kommunikation
+
+![IC-Dokument suchen](/help/forms/interactive-communication/assets/support-xdp.png)
+
+1. Navigieren Sie zu **Forms > Forms und Dokumente**.
+
+1. Laden Sie Ihre XDP-Datei mit der Option **Erstellen > Datei hochladen** hoch.
+
+1. Öffnen Sie die XDP-Datei **Editor für interaktive Kommunikation**.
+
+1. Nehmen Sie **erforderlichen Änderungen am Design oder** vor.
+
+1. Wenn Sie Ihre Änderungen speichern, werden Aktualisierungen automatisch in der Quell-XDP-Datei übernommen.
 
 ## Schlüsselfunktionen
 
@@ -46,18 +60,6 @@ Wenn ein Fragment fehlt, zeigt der Editor eine **Warnmeldung** an, die angibt, d
 - **Wiederverwendung von Fragmenten im Editor:**
 Alle vorhandenen XDP-Fragmente werden im **Bereich „Fragmente** des IC-Editors angezeigt.
 Autoren können **Fragmente direkt** die Arbeitsfläche ziehen und dort ablegen. Die Verweise werden beibehalten, um sicherzustellen, dass Aktualisierungen an Fragmenten über alle XDPs hinweg propagiert werden, die sie verwenden.
-
-## Anwendungsbeispiel
-
-1. Navigieren Sie zu **Forms > Forms und Dokumente**.
-
-1. Laden Sie Ihre XDP-Datei mit der Option **Erstellen > Datei hochladen** hoch.
-
-1. Öffnen Sie die XDP-Datei **Editor für interaktive Kommunikation**.
-
-1. Nehmen Sie **erforderlichen Änderungen am Design oder** vor.
-
-1. Wenn Sie Ihre Änderungen speichern, werden Aktualisierungen automatisch in der Quell-XDP-Datei übernommen.
 
 ## Vorteile
 

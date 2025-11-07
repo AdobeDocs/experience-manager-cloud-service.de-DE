@@ -4,10 +4,10 @@ description: Vorlagensperre im Editor für interaktive Kommunikation bietet den 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '505'
+ht-degree: 10%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 11%
 Mit der Vorlagensperrfunktion im Editor für interaktive Kommunikation (IC) können Vorlagenautoren Änderungen auf bestimmte Elemente einer Kommunikationsvorlage beschränken. Dadurch wird die Konsistenz des Designs sichergestellt, kritische Inhalte geschützt und die Governance in Teams durchgesetzt, die Vorlagen zur Erstellung personalisierter Kommunikation wiederverwenden.
 
 Wenn sie angewendet werden, erscheinen gesperrte Komponenten visuell unterschiedlich und können von nachgelagerten Autoren oder Mitwirkenden nicht geändert werden, abhängig vom festgelegten Sperrtyp. Diese Funktion hilft bei der Aufrechterhaltung von Markenstandards, Datenintegrität und Einheitlichkeit des Layouts in allen abgeleiteten Kommunikationen.
+
+![IC-Dokument suchen](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Sperrtypen
 
@@ -56,15 +58,29 @@ Wenn sie angewendet werden, können Autoren:
 
 - Ändern der Breite oder Höhe des Elements
 
-## &#x200B;3. Verhalten in abgeleiteten Kommunikationen
+## &#x200B;3. Verwenden von Vorlagensperre im Editor für interaktive Kommunikation
 
-- Wenn eine Kommunikation über eine gesperrte Vorlage erstellt wird, werden die gesperrten Elemente im IC-Editor für Kommunikationsautoren als schreibgeschützt angezeigt.
+Gehen Sie wie folgt vor, um Inhalts- oder Layout-Sperren in Ihrer Vorlage für interaktive Kommunikation (IC) anzuwenden:
 
-- Bei Komponenten mit Inhaltssperre können die inneren Eigenschaften oder Bindungen nicht geändert werden.
+1. Öffnen Sie Ihre Vorlage
+Öffnen oder erstellen Sie eine Vorlage, folgen Sie dem Handbuch [Erstellen einer Vorlage für interaktive Kommunikation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- Komponenten mit Layout-Sperre können nicht verschoben oder in der Größe verändert werden.
+1. Komponente auswählen
+Klicken Sie auf die Komponente (Textfeld, Bild oder Teilformular), die Sie einschränken möchten.
 
-Auf diese Weise können Vorlagenersteller die Kontrolle über Design und Struktur behalten und gleichzeitig anderen Benutzern die Möglichkeit geben, sich auf variable Inhalte und datengesteuerte Anpassungen zu konzentrieren.
+1. Optionen für die Zugriffssperre
+Wechseln Sie im Bedienfeld Eigenschaften zum Abschnitt Sperren .
+
+1. Sperren anwenden
+
+   1. Inhaltssperre: Verhindert Änderungen an Text, Stil und Daten.
+
+   1. Layout-Sperre: Schränkt Verschiebung und Größenanpassung ein.
+
+   1. Sie können beide für vollen Schutz aktivieren.
+
+1. Speichern und überprüfen
+Speichern Sie die Vorlage und erstellen Sie eine neue auf ihr basierende ID, um zu bestätigen, dass gesperrte Elemente nicht geändert werden können.
 
 ## 4. Best Practices
 

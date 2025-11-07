@@ -1,10 +1,10 @@
 ---
-title: Numerisches Feldobjekt im Editor für interaktive Kommunikation
-description: Ein numerisches Feldobjekt im Editor für interaktive Kommunikation in AEM Forms ermöglicht es Autorinnen und Autoren, numerische Eingaben von Benutzenden in einem kontrollierten Format zu erfassen.
+title: Komponente „Numerisches Feld“ im Editor für interaktive Kommunikation
+description: Die Komponente „Numerisches Feld“ im Editor für interaktive Kommunikation in AEM Forms ermöglicht es Autorinnen und Autoren, numerische Eingaben von Benutzerinnen und Benutzern in einem kontrollierten Format zu erfassen.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 ---
 
 
-# Numerisches Feldobjekt im Editor für interaktive Kommunikation
+# Komponente „Numerisches Feld“ im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
@@ -130,6 +130,6 @@ Autoren können numerische Felder in Layout-Containern oder Teilformularen platz
 
 - Halten Sie ein konsistentes Erscheinungsbild und Typografie aufrecht, um den Markenrichtlinien zu entsprechen.
 
-Das **numerische Feld**-Objekt im Editor für interaktive Kommunikation ist ein präzises, zuverlässiges Tool für die ziffernbasierte Datenerfassung. Mit robuster Formatierung, Sichtbarkeitssteuerelementen und Datenbindungsoptionen wird sichergestellt, dass numerische Eingaben klar erfasst und nahtlos in digitale Formulare integriert werden. Wenn sie richtig formatiert und konfiguriert sind, werden die Benutzerfreundlichkeit der Formulare und die allgemeine Datengenauigkeit erheblich verbessert.
+Die **Numerisches Feld**-Komponente im Editor für interaktive Kommunikation ist ein präzises, zuverlässiges Tool für die ziffernbasierte Datenerfassung. Mit robuster Formatierung, Sichtbarkeitssteuerelementen und Datenbindungsoptionen wird sichergestellt, dass numerische Eingaben klar erfasst und nahtlos in digitale Formulare integriert werden. Wenn sie richtig formatiert und konfiguriert sind, werden die Benutzerfreundlichkeit der Formulare und die allgemeine Datengenauigkeit erheblich verbessert.
 
 

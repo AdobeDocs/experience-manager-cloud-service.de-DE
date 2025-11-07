@@ -4,10 +4,10 @@ description: Die Handhabung von Inhaltsüberläufen im Editor für interaktive K
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 17%
+source-wordcount: '487'
+ht-degree: 11%
 
 ---
 
@@ -25,6 +25,35 @@ ht-degree: 17%
 ## Einführung
 
 Die Funktion zur Handhabung von Inhaltsüberläufen im Editor für interaktive Kommunikation verbessert das Verhalten von Text in fließenden und positionierten Layouts. Es sorgt für eine reibungslose Inhaltskontinuität für fortlaufende Layouts und bietet visuelle Warnhinweise für positionierte Layouts, sodass Autoren beim Entwerfen von Nachrichten bessere Kontrolle und Flexibilität haben.
+
+![IC-Dokument suchen](/help/forms/interactive-communication/assets/content-overflow.png)
+
+## Verwenden der Handhabung von Inhaltsüberläufen im Editor für interaktive Kommunikation
+
+1. Öffnen Sie den Editor für interaktive Kommunikation
+Öffnen Sie Ihre Kommunikation im IC-Editor, um mit der Bearbeitung des Layouts und Inhalts zu beginnen.
+
+1. Layouttyp auswählen
+Wählen Sie das gewünschte Layout für Ihr Teilformular aus, Fließend oder Positioniert, je nachdem, wie sich die Inhalte verhalten sollen.
+
+1. Für fließende Layouts
+
+   1. Stellen Sie sicher, dass die übergeordnete Teilformularhierarchie auf Fluss festgelegt ist.
+
+   1. Aktivieren Sie im Bedienfeld Eigenschaften die Option Seitenumbrüche innerhalb von Inhalten zulassen (nur sichtbar, wenn die Option „Seitenumbrüche zulassen“ im übergeordneten Teilformular aktiviert ist).
+
+   1. Fügen Sie Text hinzu oder fügen Sie ihn ein, wenn der Inhalt eine Seite überschreitet, wird er automatisch auf der nächsten Seite fortgesetzt.
+
+1. Für positionierte Layouts
+
+   1. Hinzufügen oder Bearbeiten von Text in einem festen Container.
+
+   1. Wenn der Inhalt die Container-Höhe überschreitet, wird unten ein roter Rahmen angezeigt, um einen Überlauf anzuzeigen.
+
+   1. Ändern Sie die Größe des Containers manuell, um den zusätzlichen Inhalt aufzunehmen.
+
+1. Vorschau der Kommunikation
+Verwenden Sie die PDF-Vorschauoption, um zu überprüfen, wie der Inhalt für beide Layout-Typen über Seiten hinweg fließt oder überläuft.
 
 ## Schlüsselfunktionen
 

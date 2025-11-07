@@ -4,10 +4,10 @@ description: Mit der dynamischen Seitennummerierung im Editor für interaktive K
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 19%
+source-wordcount: '404'
+ht-degree: 14%
 
 ---
 
@@ -25,6 +25,25 @@ ht-degree: 19%
 ## Einführung
 
 Mit der Funktion für die dynamische Seitennummerierung in der interaktiven Kommunikation (IC) können Autoren automatisch Seitennummern in ihrer PDF-Ausgabe anzeigen. Die Seitennummerierung kann auf der Masterseitenebene aktiviert werden, um eine konsistente Nummerierung über alle zugehörigen Designseiten hinweg sicherzustellen. Dies hilft, während der mehrseitigen Kommunikation ein klares Seiten-Tracking und ein professionelles Layout beizubehalten.
+
+![IC-Dokument suchen](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## Verwenden der dynamischen Seitennummerierung im Editor für interaktive Kommunikation
+
+1. Öffnen Sie den Editor für interaktive Kommunikation
+Öffnen Sie Ihr Projekt Interaktive Kommunikation im IC-Editor.
+
+1. Zur Hauptseite
+Die Seitennummerierung kann nur auf der Musterseite aktiviert werden. Navigieren Sie zur primären Seite Ihrer Kommunikation.
+
+1. Seitennummerierung aktivieren
+Aktivieren Sie im Bedienfeld Eigenschaften den Umschalter Seitenzahl aktivieren . Dadurch werden automatisch Seitenzahlen zu allen zugehörigen Seiten hinzugefügt.
+
+1. Platzierung anpassen
+Die Seitenzahl-Komponente kann an einer beliebigen Stelle auf der Arbeitsfläche platziert werden, nachdem sie mithilfe von Standardtexteigenschaften abgelegt und angepasst wurde.
+
+1. Vorschau in PDF
+Seitenzahlen werden nur während der PDF-Vorschau angezeigt, wobei die dynamische Nummerierung auf jeder Seite angezeigt wird.
 
 ## Schlüsselfunktionen
 
