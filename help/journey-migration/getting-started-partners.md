@@ -106,7 +106,7 @@ Informationen zur Konfiguration und Bereitstellung in AEM as a Cloud Service-Umg
 > Weitere Hilfe finden Sie unter:
 >
 >1. [Kontaktieren Sie das Experience Manager-Supportteam](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=de).
->1. [Experience Manager-Communities und -Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de)
+>1. [Experience Manager-Communities und -Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de&lang=de)
 
 <br>
 
@@ -219,4 +219,4 @@ In der Phase nach der Live-Schaltung sollten Sie die Bereinigung temporärer Dat
 > Weitere Hilfe finden Sie unter:
 >
 >1. [Kontaktieren Sie das Experience Manager-Supportteam](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=de).
->1. [Experience Manager-Communities und -Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de)
+>1. [Experience Manager-Communities und -Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de&lang=de)
