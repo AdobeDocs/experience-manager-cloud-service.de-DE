@@ -4,10 +4,10 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 100%
+source-wordcount: '2277'
+ht-degree: 98%
 
 ---
 
@@ -33,22 +33,19 @@ Um nach Assets zu suchen:
 
 ## Filtern von Suchergebnissen {#refine-search-results}
 
+Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von ](custom-search-filters.md).
+
+![Suchfilter](assets/filters-panel.gif)
+
 Sie können die Suchergebnisse anhand der folgenden Parameter filtern.
 
-![Suchfilter](assets/filters1.png)
-
-*Abbildung: Filtern gesuchter Assets basierend auf verschiedenen Parametern.*
-
 * Asset-Status: Filtern Sie die Suchergebnisse mithilfe eines der Asset-Status `Approved`, `Rejected` oder `No Status`.
-
 * Dateityp: Filtern von Suchergebnissen nach den unterstützten Dateitypen: `Images`, `Documents` und `Videos`.
 * MIME-Typ: Filtern nach einem oder mehreren der unterstützten Dateiformate. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * Bildgrösse: Geben Sie eine oder mehrere der minimalen und maximalen Abmessungen zum Filtern von Bildern an. Die Größe wird in Pixeln angegeben und ist nicht die Dateigröße der Bilder.
 * Erstellungsdatum: Das Erstellungsdatum des Assets, wie es in den Metadaten angegeben ist. Das verwendete Standarddatumsformat ist `yyyy-mm-dd`.
 * Änderungsdatum: Das Datum der letzten Änderung der Assets. Das verwendete Standarddatumsformat ist `yyyy-mm-dd`.
-
 * Ablaufdatum: Filtern Sie die Suchergebnisse anhand des Asset-Status `Expired`. Darüber hinaus können Sie einen Zeitraum für das Ablaufdatum für Assets angeben, um Ihre Suchergebnisse weiter zu filtern.
-
 * Benutzerdefinierte Filter: [Hinzufügen benutzerdefinierter Filter](#custom-filters) zur Benutzeroberfläche der Assets-Ansicht. Sie können diese benutzerdefinierten Filter zusätzlich zu den Standardfiltern anwenden, um Ihre Suchergebnisse zu verfeinern.
 
 Sie können die gesuchten Assets in aufsteigender oder absteigender Reihenfolge nach `Name`, `Relevance`, `Size`, `Modified` und `Created` sortieren. Die gesuchten Assets werden standardmäßig nach `Relevance` sortiert.
@@ -375,6 +372,7 @@ Um Feedback zur Kontextsuche zu geben, klicken Sie auf das Symbol für die ![Kon
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
+
 
 

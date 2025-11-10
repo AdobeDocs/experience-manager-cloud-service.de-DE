@@ -4,10 +4,10 @@ description: Eine Sammlung ist ein Satz von Assets innerhalb der Experience Mana
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+workflow-type: tm+mt
+source-wordcount: '1084'
+ht-degree: 84%
 
 ---
 
@@ -37,6 +37,8 @@ Sie können die folgenden Aufgaben ausführen, um Sammlungen zu verwalten und zu
 * [Hinzufügen von Assets zu einer Sammlung](#add-assets-to-collection)
 
 * [Entfernen von Assets aus einer Sammlung](#remove-assets-from-collection)
+
+* [Suchen in Sammlungen](#search-collection)
 
 * [Erstellen einer Smart-Sammlung](#create-smart-collection)
 
@@ -93,6 +95,32 @@ Entfernen von Assets aus einer Sammlung
 1. Klicken Sie auf die Sammlung und wählen Sie die Elemente aus, die Sie aus der Sammlung entfernen müssen.
 
 1. Klicken Sie auf **[!UICONTROL Entfernen]**.
+
+## Suchen in Sammlungen {#search-collection}
+
+Sie können innerhalb einer Sammlung suchen, um relevante Assets leicht zu finden. Führen Sie dazu die folgenden Schritte aus:
+
+* Navigieren Sie zu **[!DNL Collections]**. Geben Sie in der Suchleiste einen Suchbegriff ein, um die gewünschte Sammlung zu finden. Die Suchleiste zeigt den Speicherort der ausgewählten Sammlung an.
+
+* Um Ihre Suchergebnisse zu verfeinern, öffnen Sie **[!DNL Filters]** und stellen Sie sicher, dass **[!DNL Collections]** unter **[!DNL Asset Type]** ausgewählt ist.
+
+* Wählen Sie in der Dropdown-Liste **[!DNL Collection Visibility]** eine der folgenden Optionen aus:
+
+   * **[!DNL All]:** Zeigt alle Sammlungen unabhängig von ihrer Sichtbarkeit an.
+   * **[!DNL Public Collection]:** Zeigt nur Sammlungen an, die für alle Benutzer sichtbar sind.
+   * **[!DNL Private Collection]:** Zeigt nur Sammlungen an, die für bestimmte Benutzer oder Gruppen eingeschränkt oder sichtbar sind.
+
+* Wählen Sie in der Dropdown-Liste [!DNL Collection Type] eine der folgenden Optionen aus:
+
+   * **[!DNL All]:** Zeigt sowohl reguläre als auch Smart-Sammlungen an.
+   * **[!DNL Collection]:** Zeigt manuell erstellte Sammlungen an, in denen Assets einzeln hinzugefügt werden.
+   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert ](#manage-smart-collection).
+
+* Mit dem Dropdown-Menü **[!DNL Created Date]** können Sie Sammlungen nach dem Zeitpunkt filtern, zu dem sie erstellt wurden. Sie können einen Datumsbereich angeben, um kürzlich erstellte oder ältere Sammlungen zu finden.
+
+  ![Sammlung durchsuchen](assets/search-collection.png)
+
+Weitere Informationen finden Sie unter [Assets suchen](search-assets-view.md), [Suchergebnisse filtern](search-assets-view.md#refine-search-results) oder [Gespeicherte Suchen verwalten](search-assets-view.md##saved-search).
 
 ## Verwalten einer Smart-Sammlung {#manage-smart-collection}
 

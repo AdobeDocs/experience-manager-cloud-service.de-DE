@@ -3,10 +3,10 @@ title: Benutzerdefinierte Suchfilter
 description: Erfahren Sie mehr über das Anpassen von Suchfiltern in Formularen
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1294'
-ht-degree: 100%
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 85%
 
 ---
 
@@ -18,18 +18,41 @@ Weitere Informationen über die [Suche](search-assets-view.md).
 
 Angepasste Suchfilter in AEM Assets können nur Einträgen in Ihrem durchsuchbaren Eigenschaftsindex zugeordnet werden. Stellen Sie sicher, dass alle benutzerdefinierten Metadaten enthalten sind, bevor Sie Ihr benutzerdefiniertes Filtererlebnis konfigurieren. Mit [!DNL Assets view] können Suchfilter angepasst werden, um den Suchvorgang zu optimieren. Um die benutzerdefinierten Suchfilter von AEM Assets anzupassen, führen Sie die folgenden Schritte aus:
 
-1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
-1. Wechseln Sie zur Registerkarte **[!UICONTROL Suchen]**. Klicken Sie auf **[!UICONTROL Anpassen]**, um Ihr Suchformular zu konfigurieren.
+1. Navigieren Sie **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL Suche]**.
+
+   <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
    ![Einstellungen für benutzerdefinierte Suchfilter](assets/custom-search-filter.png)
 
-1. Das Formular [!UICONTROL Filter konfigurieren] wird angezeigt. Stellen Sie sicher, dass Sie sich im Bearbeitungsmodus befinden, damit Sie Änderungen an der Vorlage vornehmen können. Sie können in den [!UICONTROL Vorschaumodus] wechseln, um die Vorschau eines vorhandenen Suchformulars anzuzeigen.
-1. Legen Sie Filterelemente aus den [benutzerdefinierten Filtern](#available-custom-filters) auf der Arbeitsfläche ab. Sie können die Komponente bei Bedarf per Drag-and-Drop verschieben, um sie neu anzuordnen.
+1. Im Abschnitt **[!UICONTROL Filter]** können Sie Folgendes konfigurieren:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL Dateien]:** Das Konfigurieren von Dateien umfasst Dateitypen, Dateiformate, den Status von Assets, die Dateigröße, Bildabmessungen, das Erstellungsdatum, das Änderungsdatum usw.
+   * **[!UICONTROL Ordner]:** Konfigurieren von Ordnern umfasst das Erstellungsdatum, das Datum, das verworfen wurde, das verworfen wurde usw.
+   * **[!UICONTROL Sammlungen]:** Konfigurieren von Sammlungen umfasst die Sichtbarkeit der Sammlung, den Sammlungstyp, das Erstellungsdatum usw.
 
-1. Klicken Sie auf **[!UICONTROL Vorschaumodus]**, um die Änderungen zu überprüfen.
-1. Klicken Sie zum Speichern auf **[!UICONTROL Bestätigen]**.
+1. Sie können eine Vorschau des Standardformulars **[!UICONTROL Vorgabenfilter]** anzeigen, das für Dateien, Ordner oder Sammlungen verfügbar ist. Sie können dieses bereits vorhandene Formular jedoch nicht anpassen oder löschen. Alternativ können Sie ein benutzerdefiniertes Filterformular erstellen, indem Sie auf **[!UICONTROL Neues Formular hinzufügen]** klicken.
+
+   >[!NOTE]
+   >
+   >Pro Kategorie (Datei, Ordner oder Sammlung) kann nur ein benutzerdefiniertes Filterformular erstellt werden.
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
+
+## Aktionen in einem konfigurierten Formular {#Actions-on-configured-form}
+
+Sie können die folgenden Aktionen in einem konfigurierten Formularfilterformular verwenden:
+
+* **[!UICONTROL Anpassen]:** Klicken Sie, um das Formular hinzuzufügen oder zu ändern. Sie können Filterelemente aus den [benutzerdefinierten Filtern](#available-custom-filters) auf der Arbeitsfläche ablegen oder bei Bedarf neu anordnen.
+
+* **[!UICONTROL Vorschau]:** Klicken Sie, um die Änderungen zu überprüfen.
+
+* **[!UICONTROL Als Standard festlegen]:** Klicken, um das ausgewählte Formular als Standard festzulegen.
+
+* **[!UICONTROL Formular löschen]:** Klicken Sie auf Weitere Optionen ![weitere Optionen](assets/do-not-localize/more-icon.svg) und wählen Sie **[!UICONTROL Formular löschen]**, um die ausgewählten Formularfilter zu löschen.
+
+* **[!UICONTROL Formularbeschriftungen bearbeiten]:** Klicken Sie auf Weitere Optionen ![weitere Optionen](assets/do-not-localize/more-icon.svg) und fügen Sie Ihrem benutzerdefinierten Formularfilter eine neue Beschriftung und Beschreibung hinzu.
+
+  ![Bearbeiten von Formularbeschriftungen](assets/edit-form-labels.png)
 
 ## Verfügbare benutzerdefinierte Filter {#available-custom-filters}
 
@@ -404,6 +427,7 @@ Jedes Filterelement ist mit einer Reihe von Eigenschaften verknüpft. AEM Assets
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## Löschen eines Filterelements {#delete-a-filter-element}
 
