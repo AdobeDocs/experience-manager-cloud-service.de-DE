@@ -22,7 +22,7 @@ Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-bas
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie Zugriff auf die für [ verwendete Umgebung spezifische ](https://developer.adobe.com/console)Adobe Developer Console haben.
+* Stellen Sie sicher, dass Sie Zugriff auf die für [&#x200B; verwendete Umgebung spezifische &#x200B;](https://developer.adobe.com/console)Adobe Developer Console haben.
 * Weisen Sie in der Adobe Admin Console die Rolle Systemadministrator oder Entwickler zu, um den Zugriff auf die Adobe Developer Console zu ermöglichen.
 
 ## Wie wird ein Zugriffs-Token mithilfe der OAuth-Server-zu-Server-Authentifizierung generiert?
@@ -204,7 +204,7 @@ Sie können jetzt das generierte Zugriffstoken verwenden, um API-Aufrufe für En
 
 >[!NOTE]
 >
-> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [ Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
+> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [&#x200B; Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 
 ## Nächste Schritte
 
