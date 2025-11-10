@@ -4,10 +4,10 @@ description: Wie erstelle ich markenorientierte und personalisierte Kommunikatio
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: ht
-source-wordcount: '1706'
-ht-degree: 100%
+source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Mit Kommunikationen können Sie markenorientierte und personalisierte Mitteilung
 
 Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokumenterstellung. Sie können synchrone APIs für die On-Demand-Dokumenterstellung und Batch-APIs (asynchrone APIs) für die geplante Dokumenterstellung verwenden:
 
-* Synchrone APIs eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel zum Generieren eines Dokuments, nachdem ein Anwender ein Formular ausgefüllt hat.
+* Synchrone APIs eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Einträgen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel zum Generieren eines Dokuments, nachdem ein Anwender ein Formular ausgefüllt hat.
 
 * Batch-APIs (asynchrone APIs) eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
 
@@ -32,7 +32,7 @@ Die Kommunikationsfunktion bietet APIs für die On-Demand- und geplante Dokument
 
 ## Batch-Vorgänge {#batch-operations}
 
-Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eines ähnlichen Typs für eine Gruppe von Datensätzen generiert. Ein Batch-Vorgang besteht aus zwei Teilen: Konfiguration (Definition) und Ausführung.
+Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eines ähnlichen Typs für eine Gruppe von Einträgen generiert. Ein Batch-Vorgang besteht aus zwei Teilen: Konfiguration (Definition) und Ausführung.
 
 * **Konfiguration (Definition)**: In einer Batch-Konfiguration werden Informationen zu verschiedenen Assets und Eigenschaften gespeichert, die für generierte Dokumente festgelegt werden sollen. Beispielsweise enthält sie Details zu XDP- oder PDF-Vorlagen und zum Speicherort der zu verwendenden Kundendaten und gibt verschiedene Eigenschaften für Ausgabedokumente an.
 
@@ -48,7 +48,7 @@ Bei einem Batch-Vorgang werden in terminierten Abständen mehrere Dokumente eine
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
-**Datenspeicherung**: Kommunikations-APIs verwenden den kundeneigenen Microsoft Azure Cloud-Speicher, um Kundendatensätze abzurufen und generierte Dokumente zu speichern. Der Microsoft Azure-Speicher wird in der Experience Manager Cloud Service-Konfiguration konfiguriert.
+**Datenspeicherung**: Kommunikations-APIs verwenden den kundeneigenen Microsoft Azure Cloud-Speicher, um Kundeneinträge abzurufen und generierte Dokumente zu speichern. Der Microsoft Azure-Speicher wird in der Experience Manager Cloud Service-Konfiguration konfiguriert.
 
 **Programm**: Ihr benutzerdefiniertes Programm zum Generieren und Verwenden von Dokumenten unter Verwendung der Batch-APIs.
 
@@ -99,7 +99,7 @@ Ihre Experience Manager-Instanz kann jetzt eine Verbindung zum Microsoft Azure-S
 
 ### Erstellen der Batch-Datenspeicherkonfiguration {#create-batch-data-store-configuration}
 
-Die Batch-Datenkonfiguration hilft Ihnen beim Konfigurieren von Containern und Ordnern für Ein- und Ausgabe. Sie bewahren Ihre Kundendatensätze im Quellordner auf, generierte Dokumente werden im Zielordner abgelegt.
+Die Batch-Datenkonfiguration hilft Ihnen beim Konfigurieren von Containern und Ordnern für Ein- und Ausgabe. Sie bewahren Ihre Kundeneinträge im Quellordner auf, generierte Dokumente werden im Zielordner abgelegt.
 
 So erstellen Sie die Konfiguration:
 
@@ -107,7 +107,7 @@ So erstellen Sie die Konfiguration:
 1. Öffnen Sie einen Ordner zum Hosten der Konfiguration und klicken Sie auf „Erstellen“. Verwenden Sie den Ordner „Global“ oder erstellen Sie einen Ordner.
 1. Geben Sie Titel und Namen der Konfiguration an. Wählen Sie unter „Speicher“ die Option „Microsoft Azure-Speicher“ aus.
 1. Suchen Sie unter „Speicherkonfigurationspfad“ die Cloud-Konfiguration, die die Anmeldeinformationen des kundeneigenen Azure-Speicherkontos enthält, und wählen Sie sie aus.
-1. Geben Sie im Quellordner den Pfad des Azure-Speicher-Containers und des Ordners mit Datensätzen an.
+1. Geben Sie im Quellordner den Pfad des Azure-Speicher-Containers und des Ordners mit Einträgen an.
 1. Geben Sie im Zielordner den Pfad des Azure-Speicher-Containers und des Ordners an, in dem die generierten Dokumente gespeichert werden sollen.
 1. Klicken Sie auf „Erstellen“.
 
@@ -154,12 +154,12 @@ Um einen Batch auszuführen, verwenden Sie `POST /config /[configName]/execution
 
 Um den Status eines Batches abzurufen, verwenden Sie `GET /config /[configName]/execution/[execution-identifier]`. Die Ausführungskennung ist im Header der HTTP-Antwort für die Batch-Ausführungsanforderung enthalten.
 
-Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details zum Status des Batch-Vorgangs, zur Anzahl der bereits in der Pipeline befindlichen Datensätze (bereits gelesen und in Verarbeitung) und zum Status jedes outputType/renderType (Anzahl der in Bearbeitung befindlichen, erfolgreichen und fehlgeschlagenen Elemente). Der Status enthält auch Start- und Endzeit des Batch-Vorgangs sowie ggf. Informationen zu Fehlern. Die Endzeit ist -1, bis die Batch-Ausführung tatsächlich abgeschlossen ist.
+Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details zum Status des Batch-Vorgangs, zur Anzahl der bereits in der Pipeline befindlichen Einträge (bereits gelesen und in Verarbeitung) und zum Status jedes outputType/renderType (Anzahl der in Bearbeitung befindlichen, erfolgreichen und fehlgeschlagenen Elemente). Der Status enthält auch Start- und Endzeit des Batch-Vorgangs sowie ggf. Informationen zu Fehlern. Die Endzeit ist -1, bis die Batch-Ausführung tatsächlich abgeschlossen ist.
 
 >[!NOTE]
 >
 >* Wenn Sie mehrere PRINT-Formate anfordern, enthält der Status mehrere Einträge. Beispiel: PRINT/ZPL, PRINT/IPL.
->* Ein Batch-Auftrag liest nicht alle Datensätze gleichzeitig, sondern liest und erhöht die Anzahl der Datensätze nach und nach. Der Status gibt also -1 zurück, bis alle Datensätze gelesen wurden.
+>* Ein Batch-Auftrag liest nicht alle Einträge gleichzeitig, sondern liest und erhöht die Anzahl der Einträge nach und nach. Der Status gibt also -1 zurück, bis alle Einträge gelesen wurden.
 
 ### Anzeigen generierter Dokumente {#view-generated-documents}
 
@@ -181,3 +181,4 @@ Die Dokumentation zur API-Referenz enthält detaillierte Informationen zu allen 
 >* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Kommunikationsverarbeitung - On-Demand-APIs](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

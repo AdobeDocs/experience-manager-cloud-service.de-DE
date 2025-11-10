@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b330db401072c19aa3f8e65ffd6fc4a3e6a3d4b
+source-git-commit: 6496e7e7b3df494f2b5dd5b1b6563783a0c6e43b
 workflow-type: tm+mt
-source-wordcount: '6903'
+source-wordcount: '6918'
 ht-degree: 95%
 
 ---
@@ -1023,9 +1023,13 @@ ht-degree: 95%
       + [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang](/help/forms/manage-applications-inbox.md)
       + [Verwenden der Option „Abwesend“](/help/forms/configure-out-of-office-settings.md)
    + Kommunikations-APIs {#using-communications}
+      + [Übersicht über Kommunikations-APIs](/help/forms/aem-forms-communication-api-overview.md)
       + [Einführung in Kommunikations-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Authentication-OAuth Server-zu-Server](/help/forms/oauth-api-authetication.md)
+      + [JWT-Authentifizierung (JSON Web Token)](/help/forms/jwt-api-authentication.md)
       + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
       + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Kommunikations-APIs - Verarbeitung auf Anfrage](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
       + [Generieren von AFP-Output mithilfe der AEM Forms-API](/help/forms/document-generation-afp-api.md)
       + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Verwenden von Forms Designer, um Vorlagen zu erstellen](/help/forms/use-forms-designer.md)
@@ -1222,7 +1226,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
