@@ -114,7 +114,7 @@ Sie können innerhalb einer Sammlung suchen, um relevante Assets leicht zu finde
 
    * **[!DNL All]:** Zeigt sowohl reguläre als auch Smart-Sammlungen an.
    * **[!DNL Collection]:** Zeigt manuell erstellte Sammlungen an, in denen Assets einzeln hinzugefügt werden.
-   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert ](#manage-smart-collection).
+   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert &#x200B;](#manage-smart-collection).
 
 * Mit dem Dropdown-Menü **[!DNL Created Date]** können Sie Sammlungen nach dem Zeitpunkt filtern, zu dem sie erstellt wurden. Sie können einen Datumsbereich angeben, um kürzlich erstellte oder ältere Sammlungen zu finden.
 
