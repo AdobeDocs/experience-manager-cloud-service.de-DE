@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6496e7e7b3df494f2b5dd5b1b6563783a0c6e43b
+source-git-commit: 1bad40dacdb51b716365a198b3e00c923ae9c6a1
 workflow-type: tm+mt
 source-wordcount: '6918'
 ht-degree: 95%
@@ -1037,7 +1037,7 @@ ht-degree: 95%
       + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
       + [Liste der unterstützten Schriftarten in PDF-Dokumenten](/help/forms/supported-out-of-the-box-fonts.md)
       + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
-   + Transaktionsberichte {#using-communications}
+   + Transaktionsberichte {#transaction-reports}
       + [Abrechenbare APIs für Transaktionsberichte](/help/forms/transaction-reports-billable-apis.md)
       + [Aufzeichnen einer Transaktion für eine benutzerdefinierte Implementierung](/help/forms/record-transaction-custom-implementation.md)
    + Dashboard zur Wertentwicklung  {#vr-dashboard}
@@ -1226,7 +1226,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
