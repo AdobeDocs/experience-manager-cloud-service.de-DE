@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 79%
@@ -104,19 +104,19 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
 * Stellen Sie sicher, dass alle Antworten vom Typ „Seite nicht gefunden“ mit dem HTTP-Status 404 zugestellt werden.  Wenn sie mit dem Status 200 zurückgegeben werden, werden sie für Inhaltsanfragen gezählt.
-* Leiten Sie Konsistenzprüfungs- oder Überwachungs-Tools an die URL /systems/probes/health oder verwenden Sie die HEAD-Methode anstelle von GET, um aufkommende Inhaltsanfragen zu vermeiden.
+* Leiten Sie Konsistenzprüfungs- oder Überwachungs-Tools an die URL unter /system/probes/health oder verwenden Sie die HEAD-Methode anstelle von GET, um aufkommende Inhaltsanfragen zu vermeiden.
 * Schaffen Sie ein ausgewogenes Verhältnis zwischen Ihren Anforderungen an die Aktualität von Inhalten und den AEM-Lizenzkosten für jeden benutzerdefinierten Such-Crawler, den Sie in Ihre Site integriert haben.  Ein übermäßig aggressiver Crawler kann viele Inhaltsanfragen verarbeiten.
 * Behandeln Sie alle Weiterleitungen als Server-seitig (Status 301 oder 302) und nicht Client-seitig (Status 200 mit JavaScript-Weiterleitung), um zwei separate Inhaltsanfragen zu vermeiden.
 * Kombinieren oder reduzieren Sie API-Aufrufe, bei denen es sich um JSON-Antworten von AEM handelt, die geladen werden können, um die Seite zu rendern.
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Sie müssen Ihre Implementierung und Traffic-Muster überprüfen, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [&#x200B; (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
+* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Sie müssen Ihre Implementierung und Traffic-Muster überprüfen, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [ (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
 
 ```
 trafficFilters:
