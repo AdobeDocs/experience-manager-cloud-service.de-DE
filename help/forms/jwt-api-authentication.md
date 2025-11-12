@@ -20,7 +20,7 @@ Die JWT-Authentifizierung in AEM Forms, insbesondere für Server-seitige Integra
 
 ## Überlegung
 
-Das von JWT generierte Zugriffstoken funktioniert nicht, wenn die aktuellen Zertifikate am oder am 1. März 2026 ablaufen, je nachdem, was früher eintritt. Daher müssen Sie Ihre Integration migrieren, um die neuen OAuth [Server-zu-Server-Anmeldedaten) ](/help/forms/oauth-api-authetication.md) verwenden.
+Das von JWT generierte Zugriffstoken funktioniert nicht, wenn die aktuellen Zertifikate am oder am 1. März 2026 ablaufen, je nachdem, was früher eintritt. Daher müssen Sie Ihre Integration migrieren, um die neuen OAuth [Server-zu-Server-Anmeldedaten) &#x200B;](/help/forms/oauth-api-authetication.md) verwenden.
 
 Die Migration Ihrer Projekte auf die OAuth Server-zu-Server-Anmeldedaten ist ein einfacher zweistufiger Prozess, der eine Migration ohne Ausfallzeiten für Ihre Programme und Integrationen ermöglicht. Lesen Sie das [Migrationshandbuch](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration), um zur OAuth-Server-zu-Server-Berechtigung zu migrieren.
 
@@ -29,7 +29,7 @@ Die Migration Ihrer Projekte auf die OAuth Server-zu-Server-Anmeldedaten ist ein
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie Zugriff auf die für [ verwendete Umgebung spezifische ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
+* Stellen Sie sicher, dass Sie Zugriff auf die für [&#x200B; verwendete Umgebung spezifische &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
 * Weisen Sie die Rolle Systemadministrator oder Entwickler für den Zugriff auf Adobe Cloud Manager zu.
 
 ## Wie wird ein Zugriffs-Token mit JWT-Anmeldeinformationen generiert?
