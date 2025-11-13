@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern de
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen
 * **[AEM Site Admin-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Öffnen Sie im universellen Editor die Sites-Konsole zum Speicherort der Seite
 * **[AEM-Erweiterung für Seitensperren](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: Ermöglicht das Anzeigen und Ändern des Seitensperrstatus im universellen Editor
 * **[AEM-Erweiterung für Workflows](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Starten Sie im universellen Editor Workflows auf der Seite und in Seiteninhalten
-* **[AEM-Erweiterung für Entwickler-Anmeldung im universellen Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Wenn Sie lokal entwickeln, können Sie sich einfach bei Ihrem lokalen AEM-SDK authentifizieren 
 * **[Varianten generieren](/help/generative-ai/generate-variations-integrated-editor.md)**: Verwenden Sie generative künstliche Intelligenz (KI), um Varianten für Ihre Inhalte direkt im Panel „Eigenschaften“ zu erstellen.
 * **[AEM-Produktauswahl für den universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrieren Sie Adobe Commerce-Daten, indem Sie Produktdaten im Editor auswählen oder entfernen.
 * **[Inhaltsentwürfe im universellen Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Erstellen, bearbeiten und verwalten Sie mehrere Inhaltsentwürfe.

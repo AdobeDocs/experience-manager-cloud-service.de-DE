@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihren eigenen universellen Editor-Dienst entw
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 100%
+source-wordcount: '981'
+ht-degree: 95%
 
 ---
 
@@ -160,5 +160,7 @@ Mit dem [lokal ausgeführten Dienst „Universeller Editor“](#running-ue) und 
 
 1. Öffnen Sie in Ihrem Browser `https://localhost:8000/ping`.
 1. Weisen Sie Ihren Browser an, [Ihr selbstsigniertes Zertifikat](#ue-https) zu akzeptieren.
-1. Sobald das selbstsignierte Zertifikat als vertrauenswürdig eingestuft wurde, können Sie die Seite mit Ihrem lokalen Dienst, dem „Universeller Editor“, bearbeiten.
+1. Sobald das selbstsignierte Zertifikat als vertrauenswürdig eingestuft wird, wird die Seite mit Ihrem lokalen universellen Editor-Dienst geladen.
+1. Klicken Sie in der Symbolleiste auf [Lokale Entwickleranmeldung](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) und authentifizieren Sie sich bei Ihrer lokalen AEM-Instanz.
 
+Sie können jetzt mit Ihrem lokalen universellen Editor-Dienst Seiten in Ihrer lokalen AEM-Testinstanz bearbeiten.

@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.11.06
-description: Dies sind die Versionshinweise für die Version 2025.11.06 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.11.13
+description: Dies sind die Versionshinweise für die Version 2025.11.13 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
+source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 50%
+source-wordcount: '219'
+ht-degree: 59%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.11.06 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.11.13 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 6. November 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 13. November 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -23,6 +23,14 @@ Dies sind die Versionshinweise für die Version vom 6. November 2025 des univers
 >[!TIP]
 >
 >Auf [dieser Seite](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service.
+
+## Neue Funktionen {#what-is-new}
+
+* Kontextbezogene Aktionen wurden in Dropdown-Menüs verschoben.
+* JSON-Schemata werden nun zur Validierung bereitgestellt.
+* [Lokale Entwickleranmeldung](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) ist jetzt ein Kernbestandteil des universellen Editors und die Erweiterung wird nicht mehr benötigt.
+* Die rechte Leiste wurde zu einer neuen Benutzeroberfläche migriert.
+* Elemente in der Inhaltsstruktur werden jetzt automatisch erweitert.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -34,12 +42,5 @@ Der neue ProseMirror-RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten P
 
 ## Andere Verbesserungen {#other-improvements}
 
-* `og:title` Metadatenfelder können jetzt ordnungsgemäß gelöscht werden.
-* Ein Navigationsproblem wurde behoben, wenn ein Benutzer die Speicherortleiste im Editor oder Browser so bearbeitet, dass diese Änderungen korrekt widergespiegelt werden und der Editor und/oder die App jetzt zur angeforderten URL navigiert.
-* Die Auflösung des Feldmodells wurde korrigiert, und der Editor verwendet ggf. ein Modell aus der Komponente .
-* Die componentId ist jetzt in der Aktion &quot;/add“ enthalten.
-* Die Möglichkeit, einige Metadateneigenschaften zu löschen, die zuvor nicht entfernt werden konnten, wurde behoben.
-* Der Rohabruf wird jetzt bedingt für xwalk durchgeführt, wenn er nicht durch das AEM-Plug-in festgelegt wird.
-* Die Handhabung von Inhaltsfragment-MSM mit RTE wurde korrigiert.
-* Die Bildhervorhebung in einem Bild wird jetzt unterstützt.
-
+* Eine bestimmte Breite für die für das Kontextmenü wurde hinzugefügt.
+* Fehlerkorrektur - Der universelle Editor-Dienst schlägt jetzt nicht mehr aufgrund bestimmter `null` fehl.

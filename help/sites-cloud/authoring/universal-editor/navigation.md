@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '1820'
-ht-degree: 95%
+source-wordcount: '1847'
+ht-degree: 93%
 
 ---
 
@@ -78,7 +78,7 @@ Die obere Navigationsleiste von Experience Platform befindet sich immer oben im 
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 
@@ -142,6 +142,12 @@ Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ au
 Wählen Sie das Symbol für die Authentifizierungs-Header aus, wenn Sie [einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke festlegen möchten](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Schaltfläche „Authentifizierungs-Header-Einstellungen“](assets/authentication-header-settings.png)
+
+#### Lokale Entwickleranmeldung {#local-developer-login}
+
+Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [ (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
+
+![Schaltfläche „Lokale Entwickleranmeldung“](assets/local-developer-login.png)
 
 #### Responsiver Modus {#emulator}
 
