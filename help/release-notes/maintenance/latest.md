@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c58e4645ddc9390728d6ac5cf92588caaeffae01
+source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1195'
 ht-degree: 20%
 
 ---
@@ -106,7 +106,7 @@ Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Prob
 
 ### Bekannte Probleme {#known-issues-23320}
 
-Keine.
+* FORMS-22633: Formularübermittlungen können fehlschlagen, wenn benutzerdefinierter Code verwendet wird, der auf den GuideBridge-APIs (`getData` oder `getDataXML`) basiert. Wenn dieses Problem auftritt, wenden Sie sich bitte an den Adobe-Support.
 
 ### Eingestellte Funktionen und APIs {#deprecated-23320}
 
