@@ -22,7 +22,7 @@ Der Self-Service-Wiederherstellungsprozess von Cloud Manager kopiert Daten aus A
 
 Der Wiederherstellungsprozess wirkt sich nur auf die Inhalte aus, sodass Ihr Code und Ihre Version von AEM unverändert bleiben. Sie können jederzeit einen Wiederherstellungsvorgang für einzelne Umgebungen starten.
 
-Wenn Sie zuvor bereitgestellten Quell-Code einfach und schnell wiederherstellen müssen, ohne eine neue Pipeline-Ausführung starten zu müssen, können Sie [Wiederherstellen des zuvor bereitgestellten Codes ](/help/operations/restore-previous-code-deployed.md).
+Wenn Sie zuvor bereitgestellten Quell-Code einfach und schnell wiederherstellen müssen, ohne eine neue Pipeline-Ausführung starten zu müssen, können Sie [Wiederherstellen des zuvor bereitgestellten Codes &#x200B;](/help/operations/restore-previous-code-deployed.md).
 
 Cloud Manager bietet zwei Arten von Sicherungskopien, mit denen Sie Inhalte wiederherstellen können.
 

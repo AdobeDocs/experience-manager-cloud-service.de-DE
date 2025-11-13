@@ -34,7 +34,7 @@ Siehe auch [Inhalt in AEM as a Cloud Service wiederherstellen](/help/operations/
 **Zuvor bereitgestellten Code wiederherstellen** wird nur verfügbar, wenn die folgenden Bedingungen erfüllt sind:
 
 * Pro erfolgreicher Pipeline-Ausführung ist nur eine Wiederherstellung zulässig. Schließen Sie zur erneuten Wiederherstellung eine weitere erfolgreiche Pipeline-Ausführung ab.
-* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung ****. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
+* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung **&#x200B;**. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 * Das Feature Flag, das diese Funktion schützt, ist aktiviert (ein).
 * Das Programm läuft auf AEM as a Cloud Service.
 * Die letzte Pipeline für diese Umgebung wurde **innerhalb der letzten 30 Tage** erfolgreich abgeschlossen und ausgeführt.
@@ -85,7 +85,7 @@ Wenn Sie nur verloren gegangene, beschädigte oder versehentlich gelöschte Date
 
    ![Aktivierung wird wiederhergestellt](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Klicken Sie oben rechts auf der Seite auf das Glockensymbol ![oder das Benachrichtigungssymbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)**Benachrichtigungen**, um herauszufinden, wann Ihre Wiederherstellung beginnt und endet.
+1. Klicken Sie oben rechts auf der Seite auf das Glockensymbol ![oder das Benachrichtigungssymbol &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)**Benachrichtigungen**, um herauszufinden, wann Ihre Wiederherstellung beginnt und endet.
 
    ![Wiederherstellen früherer Code-Benachrichtigungen beim Starten der Wiederherstellung und nach Abschluss der Wiederherstellung](/help/operations/assets/restore-previous-code-notifications.png)
    *Benachrichtigungen für einen vorherigen Code-Auftrag zum Wiederherstellen.*
