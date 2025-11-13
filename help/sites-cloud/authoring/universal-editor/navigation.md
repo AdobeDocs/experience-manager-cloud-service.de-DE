@@ -78,7 +78,7 @@ Die obere Navigationsleiste von Experience Platform befindet sich immer oben im 
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 
@@ -145,7 +145,7 @@ Wählen Sie das Symbol für die Authentifizierungs-Header aus, wenn Sie [einen b
 
 #### Lokale Entwickleranmeldung {#local-developer-login}
 
-Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [ (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
+Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [&#x200B; (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
 
 ![Schaltfläche „Lokale Entwickleranmeldung“](assets/local-developer-login.png)
 
