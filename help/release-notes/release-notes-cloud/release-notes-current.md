@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
+source-git-commit: 95bebfd554aee90d0066e1d7dea5d5c7e43100e6
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 60%
+source-wordcount: '1887'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -271,9 +271,9 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 Mit KI-Antworten erhalten Ihre Besucher eine neue Möglichkeit, mit Ihren Inhalten zu interagieren. Basierend auf der RAG-Technologie (Retrieval-Augmented Generation) nutzt diese Lösung Ihre von AEM verwalteten Daten, um direkt in Ihren digitalen Erlebnissen präzise, markenkonsistente Antworten bereitzustellen.
 
-Im Rahmen dieser Beta-Version können Sie KI-Antworten in Ihrer AEM Cloud Service-Umgebung sicher untersuchen. Mit diesem Ansatz können Sie die Leistung, Genauigkeit und das Gesamterlebnis überprüfen, bevor Sie ihn für Ihre Live-Zielgruppe verfügbar machen. Nach der Validierung können Sie Ihr KI-Antworterlebnis zur vollständigen Produktion weiterleiten.
+Wir bereiten uns darauf vor, das Beta-Programm für KI-Antworten zu starten, und laden Kunden jetzt ein, ihr Interesse zu registrieren. Da die Kapazität der Beta-Version sehr begrenzt sein wird, werden frühe Anmeldungen vorrangig berücksichtigt. Durch die Teilnahme an der Beta-Version können Sie KI-Antworten in Ihrer AEM Cloud Service-Umgebung untersuchen, die Leistung und Genauigkeit überprüfen und die zukünftige Erfahrung gestalten, bevor sie allgemein verfügbar wird.
 
-Um den Beta-Zugriff anzufordern oder Ihr Feedback zu geben, kontaktieren Sie [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
+Um eine Teilnahme anzufordern oder Updates zu erhalten, wenden Sie sich bitte an [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 
 ### Snapshots für schnelle Entwicklungsumgebungen (Alpha-Programm) {#rde-snapshot-program}
