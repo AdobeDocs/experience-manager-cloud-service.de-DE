@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1bad40dacdb51b716365a198b3e00c923ae9c6a1
+source-git-commit: 92ab49a9cb1ae2af7c36e92e01ff130b8e2d510d
 workflow-type: tm+mt
-source-wordcount: '6918'
+source-wordcount: '6919'
 ht-degree: 95%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 95%
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2 025,10,0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
          + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
          + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
@@ -1226,7 +1227,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1562,7 +1563,7 @@ ht-degree: 95%
    + [Infrastruktur- und Service-Überwachung in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Wartungsaufgaben](/help/operations/maintenance.md)
    + [Content wiederherstellen](/help/operations/restore.md)
-   + [Wiederherstellen von zuvor bereitgestelltem Code (Alpha)](/help/operations/restore-previous-code-deployed.md)
+   + [Bereits bereitgestellten Code wiederherstellen](/help/operations/restore-previous-code-deployed.md)
    + [Asynchrone Aufträge](/help/operations/asynchronous-jobs.md)
    + [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md)
    + [Entfernen des generischen Lucene-Index](/help/operations/removal-generic-lucene-index.md)
