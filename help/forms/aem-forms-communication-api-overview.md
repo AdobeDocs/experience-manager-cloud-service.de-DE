@@ -78,7 +78,7 @@ Alle AEM Forms-APIs sind in zwei Hauptteile unterteilt:
 
 Kommunikations-APIs sind der primäre Fokus für dokumentzentrierte Vorgänge.
 
-In der folgenden Tabelle sind alle [AEM Forms Communications APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
+In der folgenden Tabelle sind alle [AEM Forms Communications APIs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
 
 #### APIs zur Dokumenterstellung
 
