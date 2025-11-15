@@ -4,10 +4,10 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 98%
+source-wordcount: '1887'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ Um nach Assets zu suchen:
 
 ## Filtern von Suchergebnissen {#refine-search-results}
 
-Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von &#x200B;](custom-search-filters.md).
+Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von ](custom-search-filters.md).
 
 ![Suchfilter](assets/filters-panel.gif)
 
@@ -118,33 +118,29 @@ Entfernen benutzerdefinierter Filter
 
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Filter aus der Benutzeroberfläche zu entfernen.
 
-## Semantische Suche {#semantic-search}
+## KI-Suche {#ai-search}
 
-Die semantische Suche ist eine erweiterte Suchfunktion, die die Bedeutung und den Zweck hinter der Benutzerabfrage versteht, anstatt sich auf exakte Keyword-Übereinstimmungen zu stützen. Sie nutzt künstliche Intelligenz (KI), natürliche Sprachverarbeitung (NLP) und maschinelles Lernen, um genauere und kontextbezogenere Ergebnisse zu liefern.
+Die KI-Suche ist eine erweiterte Suchfunktion, die die Bedeutung und den Zweck hinter der Abfrage eines Benutzers versteht, anstatt sich auf exakte Keyword-Übereinstimmungen zu verlassen. Es nutzt künstliche Intelligenz (KI) und maschinelles Lernen, um genauere und kontextbezogene Ergebnisse zu liefern.
 
-Im Gegensatz zur herkömmlichen Keyword-basierten Suche, die nach exakten Begriffen sucht, interpretiert die semantische Suche Beziehungen zwischen Wörtern, Konzepten und der Benutzerabsicht. Dadurch wird sichergestellt, dass Benutzende das Gesuchte finden – selbst wenn die Abfrage anders formuliert ist, Tippfehler enthält oder in einer anderen Sprache verfasst ist.
+Im Gegensatz zur herkömmlichen schlüsselwortbasierten Suche, die nach exakten Begriffen sucht, interpretiert die KI-Suche Beziehungen zwischen Wörtern, Konzepten und der Benutzerabsicht. Dadurch wird sichergestellt, dass Benutzende das Gesuchte finden – selbst wenn die Abfrage anders formuliert ist, Tippfehler enthält oder in einer anderen Sprache verfasst ist.
 
 Zu den wichtigsten Vorteilen zählen:
 
 * **Mehrsprachiger Support**: Suchen Sie über mehrere Sprachen hinweg, ohne dass genaue Übersetzungen erforderlich sind. Benutzende können relevante Inhalte unabhängig von ihrer Abfragesprache finden.
 
-* **Behandlung von Rechtschreibfehlern**: Rechtschreibfehler werden automatisch korrigiert oder interpretiert, damit auch bei unvollständiger Eingabe genaue Ergebnisse sichergestellt sind.
+* **Behandelt Rechtschreibfehler**: Interpretiert Tippfehler und Rechtschreibfehler, um sicherzustellen, dass auch bei unvollständiger Eingabe genaue Ergebnisse vorliegen.
 
 * **Verständnis von Synonymen**: Ergebnisse für verwandte Begriffe und Ausdrücke werden bereitgestellt, sodass Benutzende nicht das korrekte Keyword erraten müssen.
 
-* **Kontextabhängige Suche**: Der Zweck einer Abfrage wird erkannt, nicht nur der Wortlaut.
+* **Kontextabhängige Suche**: Erkennt den Zweck einer Abfrage, nicht nur die genauen Wörter.
 
->[!IMPORTANT]
->
-> Geben Sie bei der semantischen Suche mindestens drei Wörter ein, um aussagekräftige Ergebnisse zu erzielen.
-
-### Beispiele für die semantische Suche {#examples-semantic-search}
+### Beispiele für die KI-Suche {#examples-ai-search}
 
 **Beispiel-Prompt**: *Woman drinking coffee*
 
-Die herkömmliche Keyword-basierte Suche sucht nach genauen Übereinstimmungen der Asset-Metadaten wie Woman, Coffee usw. und gibt Assets zurück, die diese Keywords enthalten.
+Die herkömmliche Keyword-basierte Suche sucht nach exakten Übereinstimmungen mit Asset-Metadaten wie `Woman`, `drinking` und `Coffee` und gibt Assets zurück, die alle diese Begriffe in den Metadaten enthalten.
 
-Die semantische Suche sucht jedoch nach ähnlichen Wörtern wie `Girl` und `Lady` für `Woman` und Kaffeevarianten wie `Cappuccino` und `Latte` für `Coffee`.
+Die KI-Suche gleicht jedoch ähnliche Wörter wie `Girl` ab, `Lady` bei `Woman` und `Cappuccino` und `Latte` bei `Coffee`.
 
 Genauso können Sie diesen Prompt auf Spanisch eingeben oder `Woman` fälschlicherweise als `Wman` schreiben und trotzdem dieselben Ergebnisse erhalten.
 
@@ -280,89 +276,94 @@ Sie können eine Vorschau anzeigen, um das Layout und die Formatierung der Start
 
    ![Vorschau der Startseite für die erste Suche](/help/assets/assets/search-first-preview.gif)
 
-## Kontextsuche {#contextual-search}
 
-Sie können auch im Repository verfügbare Assets durchsuchen, indem Sie Text-Prompts definieren. Experience Manager Assets wandelt diese Text-Prompts automatisch in Suchfilter um und zeigt die Suchergebnisse an. Im Bereich „Filter“ können Sie automatische Filter anzeigen und ändern, um die Suchergebnisse weiter einzugrenzen.
+<!--
 
-### Zugriff auf die Kontextsuche {#access-contextual-search}
+## Contextual Search {#contextual-search}
 
-So greifen Sie auf die Kontextsuche in Experience Manager Assets zu:
+You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-1. Klicken Sie im linken Bereich auf **[!UICONTROL Suchen]**.
+### Access Contextual Search {#access-contextual-search}
 
-   ![Kontextsuche](assets/access-contextual-search.png)
+To access Contextual Search in Experience Manager Assets:
 
-1. Definieren Sie im Textfeld „Suchen“ das Text-Prompt und klicken Sie auf **[!UICONTROL Kontextsuche]**.
+1. Click **[!UICONTROL Search]** in the left pane.
 
-   ![Text-Prompt für die Kontextsuche](/help/assets/assets/wknd-contextual-search.png)
+   ![Contextual Search](assets/access-contextual-search.png)
 
-   [!DNL Experience Manager Assets] zeigt die Suchergebnisse an.
+1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-### Unterstützte Filter {#supported-filters}
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
-Die Kontextsuche unterstützt standardmäßig die folgenden Filter. Stützen Sie Ihr Text-Prompt auf diese Filter, um entsprechende Suchergebnisse anzuzeigen.
+   [!DNL Experience Manager Assets] displays the search results.
 
-* Bildhöhe
+### Supported filters {#supported-filters}
 
-* Bildbreite
+Contextual Search supports the following filters out-of-the-box. Base your text prompts on these filters to view appropriate search results.
 
-* Dateityp: Bild, Dokument, Video oder Ordner.
+* Image height
 
-* MIME-Typ: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX oder XLSX
+* Image width
 
-* Erstellungsdatum
+* File type: image, document, video, or folder.
 
-* Änderungsdatum
+* MIME type: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX or XLSX
 
-* Ablaufdatum
+* Created date
 
-* Asset-Status: „Genehmigt“, „Abgelehnt“ oder alle
+* Modified date
 
-* Abgelaufene Assets
+* Expiration date
 
-### Beispiele für die Text-Prompts {#text-prompts-examples}
+* Asset status: Approved, Rejected, or all
 
-**Beispiel 1**
+* Expired assets
 
-**Text-Prompt**: In diesem Monat erstellte Bilder.
+### Examples for the text prompts {#text-prompts-examples}
 
-[!DNL Experience Manager Assets] wendet die folgenden Filter automatisch an und zeigt die Suchergebnisse an:
+**Example 1**
 
-![Beispiel 1 für eine Kontextsuche](assets/contextual-search-example1.png)
+**Text Prompt**: Images created this month.
 
-**Beispiel 2**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**Text-Prompt**: Bilder, die mindestens 200 px hoch und 100 px breit sind und Strand und klaren Himmel zeigen.
+![Contextual Search Example 1](assets/contextual-search-example1.png)
 
-[!DNL Experience Manager Assets] wendet die folgenden Filter automatisch an und zeigt die Suchergebnisse an:
+**Example 2**
 
-![Beispiel 2 für eine Kontextsuche](assets/contextual-search-example2.png)
+**Text prompt**: Images at least 200px tall and 100px wide with beach and clear sky.
 
-**Beispiel 3**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**Text-Prompt**: Ich benötige Bilder von blauem Himmel mit einer Höhe von 1500 und 2500 Pixel, die im letzten Monat erstellt wurden und genehmigt und noch nicht abgelaufen sind.
+![Contextual Search Example 2](assets/contextual-search-example2.png)
 
-[!DNL Experience Manager Assets] wendet die folgenden Filter automatisch an und zeigt die Suchergebnisse an:
+**Example 3**
 
-![Beispiel 3 für eine Kontextsuche](assets/contextual-search-example3.png)
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that is not expired and approved.
 
-Das folgende Video zeigt den gesamten Vorgang vom Zugriff auf die Benutzeroberfläche für die Kontextsuche über das Definieren des Text-Prompts bis zum Anzeigen der Suchergebnisse.
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 3](assets/contextual-search-example3.png)
+
+The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-### Deaktivieren der Kontextsuche {#disable-contextual-search}
+### Disable Contextual Search {#disable-contextual-search}
 
-Admins haben auch die Möglichkeit, die Kontextsuche für Benutzende in ihrer Organisation zu deaktivieren. Führen Sie dazu die folgenden Schritte aus:
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
 
-1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**.
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
-1. Deaktivieren Sie im Bereich [!UICONTROL Kontextsuche] den Umschalter für **[!UICONTROL Kontextsuche für Ihre Organisation aktivieren]**, um die Kontextsuche für alle Benutzenden in Ihrer Organisation zu deaktivieren.
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
 
-### Feedback zur Kontextsuche {#contextual-search-feedback}
+### Contextual Search feedback {#contextual-search-feedback}
 
-Um Feedback zur Kontextsuche zu geben, klicken Sie auf das Symbol für die ![Kontextsuche](assets/do-not-localize/Smock_Help_18_N.svg) und anschließend auf das Feedback-Symbol. Wählen Sie den Feedback-Typ aus, geben Sie den Betreff und die Beschreibung ein und klicken Sie auf **[!UICONTROL Absenden]**.
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
-![Feedback zur Kontextsuche](assets/contextual-search-feedback.png)
+![Contextual Search feedback](assets/contextual-search-feedback.png)
+
+-->
 
 ## Nächste Schritte {#next-steps}
 
@@ -372,7 +373,7 @@ Um Feedback zur Kontextsuche zu geben, klicken Sie auf das Symbol für die ![Kon
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
 
 
 
