@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Cloud Acceleration Manager Inhalte aus Ih
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 54829a232b4b918a525b25f9bca475d7856faa46
+source-git-commit: 7c0703d746601742a28c3c98f35e69de70f25e05
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 99%
+source-wordcount: '3647'
+ht-degree: 98%
 
 ---
 
@@ -261,6 +261,10 @@ Manchmal kann es unerwartet zeitweise auftretende Probleme aufgrund fehlgeschlag
 * `Mongo network error` – Manchmal kann das Herstellen einer Verbindung mit MongoDB fehlschlagen, was dazu führt, dass der Aufnahmeprozess vorzeitig beendet und als fehlgeschlagen gemeldet wird. Es sollte dann einfach ein erneuter Versuch der Aufnahme unternommen werden.
 * `Mongo server selection error` – Dies ist ein seltener Client-seitiger Mongo-Timeout-Fehler, der aus einer Reihe von zugrunde liegenden Gründen auftreten kann. Ein nachfolgender erneuter Versuch wird das Problem höchstwahrscheinlich beheben.
 * `Mongo took too long to start` - In extrem seltenen Fällen kann die im Aufnahme-Workflow verwendete lokale MongoDB fehlschlagen. Ein nachfolgender erneuter Versuch wird das Problem höchstwahrscheinlich beheben.
+
+#### AZCopy-Probleme {#azcopy-issues}
+
+* `AZCopy critical failure` - In seltenen Fällen kann das AZCopy-Tool, das zum Ausführen des Vorkopieschritts der Aufnahme verwendet wird, unerwartet fehlschlagen. In diesem Fall sollte ein erneuter Versuch der Aufnahme unternommen werden.
 
 ### Aufnahme aufgehoben {#ingestion-rescinded}
 
