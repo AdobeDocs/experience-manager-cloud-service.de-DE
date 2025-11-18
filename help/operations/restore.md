@@ -165,7 +165,7 @@ Wenn Kunden spezifische oder berechtigte Fragen zu regionalen Implementierung, D
 Bei der Bestimmung geeigneter Daten Region das Mapping wendet Adobe Systems mehrere priorisierte Kriterien an:
 
 1. **Verlassen Sie nicht die globale Region**\
-   Die Bereitstellungen erfolgen in einer der wichtigsten globalen Regionen: **APAC,****EMEA** und Nord- und **Südamerika**.
+   Die Bereitstellungen erfolgen in einer der wichtigsten globalen Regionen: **APAC,**&#x200B;**EMEA** und Nord- und **Südamerika**.
 
 2. **Verlassen Sie den Kontinent nicht**\
    Wo immer möglich, bleiben Datenreplikation und Failover auf demselben Kontinent.
