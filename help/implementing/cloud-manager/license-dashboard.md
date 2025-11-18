@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 100%
+source-wordcount: '1026'
+ht-degree: 88%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manager bietet ein Dashboard, über das Sie die Produktberechtigungen für
 
 ## Überblick {#overview}
 
-Das Lizenz-Dashboard von Cloud Manager bietet einfachen Zugriff auf Berechtigungen für Lösungen, die Ihnen für alle Ihre Programme zur Verfügung stehen, einschließlich der verwendeten und der verfügbaren Lösungen. Dazu kommen Verbrauchsmetriken für Inhaltsanfragen mit einer Darstellung der Entwicklung nach Monaten für die Sites-Lösung.
+Das Cloud Manager-Lizenz-Dashboard bietet einfachen Zugriff auf Lösungsberechtigungen, die Ihnen für alle Ihre Programme zur Verfügung stehen, einschließlich der Menge der verwendeten und verfügbaren Lösungen. Dazu kommen Verbrauchsmetriken für Inhaltsanfragen mit einer Darstellung der Entwicklung nach Monaten für die Sites-Lösung.
 
 ## Zugriff auf das Lizenz-Dashboard {#using-dashboard}
 
@@ -67,6 +67,15 @@ In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfüg
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
 Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung Ihrer aktuellen Ressourcennutzung. Wenn Sie darauf klicken, wird ein Bericht oder Dashboard geöffnet, in dem wichtige Metriken zu Ihrer Lizenz angezeigt werden. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Diese Funktion hilft Ihnen, die Einhaltung Ihrer vertraglichen Verpflichtungen zu überwachen und sicherzustellen, und bietet gleichzeitig Einblicke in eine bessere Ressourcenplanung und -optimierung.
+
+Die Schaltfläche **Nutzungsdetails anzeigen** ist *deaktiviert* in den folgenden Fällen deaktiviert:
+
+* Die Lösung ist nicht Teil Ihres Vertrags und verfügt über keine Credits. Die Schaltfläche bleibt verfügbar, wenn Credits vorhanden sind, auch wenn alle Credits konsumiert werden.
+* Für diese Lösung ist kein Cloud Manager-Programm konfiguriert.
+* Eine Feature Flag, das Nutzungsdetails steuert, ist deaktiviert. Sie muss für *Organisation* aktiviert) sein, bevor die Schaltfläche verfügbar wird.
+* Die Verwendung ist für die Lösung explizit deaktiviert. Derzeit gilt diese Situation nur für Edge Delivery Services.
+
+
 
 ### Details zur Site-Nutzung {#sites-usage-details}
 
