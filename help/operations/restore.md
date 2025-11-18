@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mithilfe von Cloud Manager AEM as a Cloud Ser
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+source-git-commit: e6bd71cc56db766fcbab3a925baabb5901c97ee8
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 97%
+source-wordcount: '1610'
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ Der Self-Service-Wiederherstellungsprozess von Cloud Manager kopiert Daten aus A
 
 Der Wiederherstellungsprozess wirkt sich nur auf die Inhalte aus, sodass Ihr Code und Ihre Version von AEM unverändert bleiben. Sie können jederzeit einen Wiederherstellungsvorgang für einzelne Umgebungen starten.
 
-Wenn Sie zuvor bereitgestellten Quell-Code einfach und schnell wiederherstellen müssen, ohne eine neue Pipeline-Ausführung starten zu müssen, können Sie [Wiederherstellen des zuvor bereitgestellten Codes &#x200B;](/help/operations/restore-previous-code-deployed.md).
+Wenn Sie zuvor bereitgestellten Quellcode auf einfache und schnelle Weise wiederherstellen müssen, ohne eine neue Pipelineausführung Beginn zu müssen, können [Sie die Zurück wiederherstellen Symbol bereitgestellt verwenden](/help/operations/restore-previous-code-deployed.md).
 
 Cloud Manager bietet zwei Arten von Sicherungskopien, mit denen Sie Inhalte wiederherstellen können.
 
@@ -150,6 +150,41 @@ Regelmäßige Backups decken das Risiko von versehentlichen Löschungen oder tec
 AEM as a Cloud Service mindert dieses Risiko für alle AEM-Produktionsumgebungen. Das heißt, dass alle AEM-Inhalte kontinuierlich in eine Remote-Region kopiert werden. Durch diesen Prozess steht der Inhalt drei Monate lang zur Wiederherstellung zur Verfügung. Diese Funktion wird als Offsite-Backup bezeichnet.
 
 AEM Service Reliability Engineering stellt während Ausfällen in der Datenregion die Staging- und Produktionsumgebung in AEM Cloud Service von Offsite-Backups wieder her.
+
+## Daten Prinzipien der Regionszuordnung {#data-region-mapping-principles}
+
+Adobe Systems folgt einer Reihe interner Richtlinien zur Festlegung von Daten Region Zuordnungen für **AEM als Cloud Service**. Diese Richtlinien wurden entwickelt, um die betriebliche Effizienz zu unterstützen, die Einhaltung regionaler regulatorischer Anforderungen sicherzustellen und eine konsistente Kundenerlebnis auf den globalen Märkten zu gewährleisten.
+
+### Transparenz für die Regionszuordnung {#region-mapping-transparency}
+
+Adobe Systems veröffentlicht keine detaillierten Region-zu-Region-Zuordnungsinformationen.\
+Wenn Kunden spezifische oder berechtigte Fragen zu regionalen Implementierung, Datenresidenz oder Compliance-Auswirkungen haben, wird empfohlen, sich direkt über den offiziellen Support oder Konto Kanäle an Adobe Systems zu wenden.
+
+### Grundprinzipien für die Zuordnung von Daten Regionen {#core-principles}
+
+Bei der Bestimmung geeigneter Daten Region das Mapping wendet Adobe Systems mehrere priorisierte Kriterien an:
+
+1. **Verlassen Sie nicht die globale Region**\
+   Die Bereitstellungen erfolgen in einer der wichtigsten globalen Regionen: **APAC,****EMEA** und Nord- und **Südamerika**.
+
+2. **Verlassen Sie den Kontinent nicht**\
+   Wo immer möglich, bleiben Datenreplikation und Failover auf demselben Kontinent.
+
+3. **Verlassen Sie das Land nicht**\
+   Soweit technisch möglich, bleiben die Daten innerhalb der gleichen Landesgrenzen.
+
+### Behandlung von Ausnahmen {#handling-exceptions}
+
+Wenn die oben genannten Kriterien aufgrund von technischen oder infrastrukturellen Einschränkungen nicht erfüllt werden können, gelten Adobe Systems zusätzliche Überlegungen:
+
+* **Europa-spezifische Richtlinie**\
+  Backup- oder sekundäre Regionen sollten sich nicht in Nicht-EU-Ländern befinden.\
+  (Das Gegenteil – die Verwendung eines EU-Landes als Backup für eine Nicht-EU-Vorwahl – kann akzeptabel sein, wenn es keine bessere Option für dasselbe Land gibt.)
+
+* **Meiden Sie bestimmte Regionen**\
+  Regionen mit restriktiven Datenrichtlinien oder erhöhtem regulatorischem Risiko sollten als Backup- oder Failover-Standorte vermieden werden.
+
+Wenn Kunden eine Klärung benötigen oder Compliance-bedingte Anforderungen haben, empfiehlt Adobe Systems, sich an die Adobe Systems Konto Team oder die Supportorganisation zu wenden, um eine auf ihr spezifisches Szenario zugeschnittene Beratung zu erhalten.
 
 ## Einschränkungen {#limitations}
 
