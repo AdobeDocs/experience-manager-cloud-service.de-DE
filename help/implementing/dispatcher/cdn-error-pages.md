@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie die standardmäßige Fehlerseite außer Kraft
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 
@@ -37,8 +37,6 @@ Konfigurationsbeispiel:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
