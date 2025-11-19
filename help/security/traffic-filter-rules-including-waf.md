@@ -4,8 +4,8 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -82,8 +82,6 @@ Im Folgenden finden Sie einen allgemein empfohlenen End-to-End-Prozess für die 
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -120,8 +118,6 @@ Im Folgenden finden Sie ein Beispiel für einen Satz von Traffic-Filterregeln, d
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -244,7 +240,7 @@ Die `wafFlags`-Eigenschaft, die in den lizenzierbaren WAF-Traffic-Filterregeln v
 | CMDEXE | Befehlsausführung | Befehlsausführung ist der Versuch, durch beliebige Systembefehle mithilfe von Benutzereingaben die Kontrolle über ein Zielsystem zu erlangen oder ein Zielsystem zu beschädigen. |
 | CMDEXE-NO-BIN | Befehlsausführung, außer für `/bin/` | Gewährleisten Sie das gleiche Schutzniveau wie `CMDEXE`, während falsch positive Ergebnisse für `/bin` aufgrund der AEM-Architektur deaktiviert werden. |
 | XSS | Cross-Site-Scripting | Cross-Site-Scripting ist der Versuch, das Konto einer Benutzerin oder eines Benutzers oder die Webbrowsing-Sitzung durch schädlichen JavaScript-Code zu ersetzen. |
-| TRAVERSAL | Verzeichnistraversierung | Verzeichnistraversierung ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
+| DURCHLAUF | Verzeichnisdurchlauf | Verzeichnisdurchlauf ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
 | USERAGENT | Angriffs-Tooling | Angriffs-Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Anfälligkeit auszunutzen. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Log4Shell-Anfälligkeit](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 auszunutzen. |
 | CVE | CVE | Markierung zur Identifizierung eines CVE. Wird immer mit einer `CVE-<CVE Number>`-Markierung kombiniert. Wenden Sie sich an Adobe, um mehr darüber zu erfahren, vor welchen CVEs Adobe Sie schützt. |
@@ -302,8 +298,6 @@ Diese Regel blockiert Anfragen von der **IP192.168.1.1**:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -320,8 +314,6 @@ Diese Regel blockiert Anfragen auf dem Pfad `/helloworld` bei Veröffentlichung 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -342,8 +334,6 @@ Diese Regel blockiert Anfragen bei der Veröffentlichung, die den Abfrageparamet
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -367,8 +357,6 @@ Diese Regel blockiert Anfragen bei der Veröffentlichung an den Pfad `/block-me`
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -393,8 +381,6 @@ Diese Regel blockiert den Zugriff auf OFAC-Länder:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -449,8 +435,6 @@ Diese Regel blockiert einen Client für 5 Millisekunden, wenn er in den letzten 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -475,8 +459,6 @@ Blockiert Anfragen für 60 Sekunden für den Pfad „/critical/resource“, wenn
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -512,8 +494,6 @@ Die Eigenschaft „Warnhinweis“ kann für alle Aktionstypen (allow, block, log
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -538,8 +518,6 @@ Dieser Warnhinweis ist standardmäßig aktiviert, kann aber durch Festlegen der 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
    defaultTrafficAlerts: false
@@ -578,8 +556,6 @@ Das folgende Beispiel zeigt eine beispielhafte `cdn.yaml` und zwei CDN-Protokoll
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -679,8 +655,6 @@ Beginnen Sie mit diesen Regeln:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
