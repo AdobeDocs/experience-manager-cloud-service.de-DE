@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 95%
@@ -111,8 +111,6 @@ Dieser Artikel ist wie folgt aufgebaut:
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -135,8 +133,6 @@ Es ist möglich, für CDN-Protokolle und AEM-Protokolle (einschließlich Apache/
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -155,8 +151,6 @@ Ein weiteres Szenario besteht darin, die Weiterleitung der CDN-Protokolle oder A
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -218,8 +212,6 @@ Das folgende Beispiel zeigt, wie die Protokollierung an einem Standard-HTTPS-Por
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -254,9 +246,7 @@ Die Protokollweiterleitung an Amazon S3 unterstützt AEM- und Dispatcher-Protoko
 
 ```yaml
 kind: "LogForwarding"
-version: "1.0"
-metadata:
-  envTypes: ["dev"]
+version: "1"
 data:
   awsS3:
     default:
@@ -287,15 +277,13 @@ Die IAM-Richtlinie sollte dem Benutzenden die Verwendung von `s3:putObject` erm�
 Weitere Informationen zur Implementierung finden Sie in der [Dokumentation zur AWS-Bucket-Richtlinie](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html).
 
 >[!NOTE]
->CDN-Protokollunterstützung für AWS S3 ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
+>CDN-Protokollunterstützung für AWS S3 ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
 
 ### Azure Blob Storage {#azureblob}
 
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   azureBlob:
     default:
@@ -364,8 +352,6 @@ Weitere Informationen finden Sie in den Protokolleintragsformaten unter [Protolk
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   datadog:
     default:
@@ -392,8 +378,6 @@ data:
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   elasticsearch:
     default:
@@ -426,8 +410,6 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   https:
     default:
@@ -472,8 +454,6 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic-HTTPS-API für die A
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     newRelic:
       default:
@@ -486,7 +466,7 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic-HTTPS-API für die A
 >
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->Die Unterstützung des CDN-Protokolls für die New Relic-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
+>Die Unterstützung des CDN-Protokolls für die New Relic-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [New Relic-Dokumentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
@@ -499,8 +479,6 @@ Das Umfangsattribut „Ingest Logs“ ist für das Token erforderlich.
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     dynatrace:
       default:
@@ -510,15 +488,13 @@ Das Umfangsattribut „Ingest Logs“ ist für das Token erforderlich.
 ```
 
 >[!NOTE]
->Die Unterstützung des CDN-Protokolls für die Dynatrace-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
+>Die Unterstützung des CDN-Protokolls für die Dynatrace-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
 
 ### Splunk {#splunk}
 
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -552,8 +528,6 @@ Sie müssen den letzten Abschnitt der URL (ohne den vorhergehenden `/`) kopieren
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   sumoLogic:
     default:
@@ -564,7 +538,7 @@ data:
 ```
 
 >[!NOTE]
->CDN Log-Unterstützung für SumoLogic ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
+>CDN Log-Unterstützung für SumoLogic ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0[aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.](mailto:aemcs-logforwarding-beta@adobe.com)
 >
 > Sie benötigen ein Sumo Logic Enterprise-Abonnement, um die Indexfeldfunktion nutzen zu können.  Bei Nicht-Enterprise-Abonnements werden die Protokolle standardmäßig an die `sumologic_default`-Partition weitergeleitet.  Weitere Informationen finden Sie in der [Dokumentation zur Sumo Logic-Partitionierung](https://help.sumologic.com/docs/search/optimize-search-partitions/).
 
