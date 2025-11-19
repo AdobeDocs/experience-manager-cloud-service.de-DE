@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
+source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 53%
+source-wordcount: '1378'
+ht-degree: 50%
 
 ---
 
@@ -63,21 +63,32 @@ Informationen zum Erstellen und Konfigurieren von **Edge Delivery**-Konfiguratio
 Jede Konfigurationsdatei beginnt mit Eigenschaften, die dem folgenden Beispielausschnitt ähneln:
 
 ```yaml
-   kind: "LogForwarding"
+   kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
+   metadata: ...
+   data: ...
 ```
 
 | Eigenschaft | Beschreibung | Standard |
 |---|---|---|
 | `kind` | Eine Zeichenfolge, die die Art der Konfiguration bestimmt, z. B. Protokollweiterleitung, Traffic-Filterregeln oder Anfrageumwandlungen. | Erforderlich, kein Standard |
 | `version` | Eine Zeichenfolge, die die Schemaversion darstellt | Erforderlich, kein Standard |
-| `envTypes` | Dieses Zeichenfolgen-Array ist eine untergeordnete Eigenschaft des `metadata`-Knotens. Für **Veröffentlichungsbereitstellung** sind mögliche Werte dev, stage, prod oder eine beliebige Kombination und sie bestimmt, für welche Umgebungstypen die Konfiguration verarbeitet wird. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, auch wenn die Konfiguration dort bereitgestellt wird. Für **Edge Delivery** sollte nur der Wert `prod` verwendet werden. | Alle Umgebungstypen, d. h. (dev, stage, prod) für die Veröffentlichungsbereitstellung oder nur prod für Edge Delivery. |
+| `metadata` | (Optional) Dieses enthält ein Array von `envTypes`, das bestimmt, für welche Umgebungstypen die Konfiguration verarbeitet wird. Für **Bereitstellung veröffentlichen** sind mögliche Werte `dev`, `stage` und `prod`. Für **Edge Delivery** sollte nur der Wert `prod` verwendet werden. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, auch wenn die Konfiguration dort bereitgestellt wird. | Alle Umgebungstypen, d. h. (dev, stage, prod) für die Veröffentlichungsbereitstellung oder nur prod für Edge Delivery. |
 
 Sie können das Dienstprogramm `yq` verwenden, um die YAML-Formatierung Ihrer Konfigurationsdatei lokal zu überprüfen (z. B. `yq cdn.yaml`).
 
-## Ordnerstruktur {#folder-structure}
+## Veröffentlichungsbereitstellung {#yamls-for-aem}
+
+**Veröffentlichungsbereitstellung** Konfigurationen werden in einer Zielumgebung bereitgestellt. Wenn mehrere Umgebungen als Ziel dienen, können die verschiedenen Dateien auf unterschiedliche Weise organisiert werden. Wenn das Array beispielsweise nur `dev` enthält, wird die Konfiguration nicht in Staging- oder Produktionsumgebungen geladen, auch wenn die Konfiguration dort bereitgestellt wird.
+
+```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+    envType: ["dev"]
+```
+
+### Ordnerstruktur {#folder-structure}
 
 Ein Ordner mit dem Namen `/config` oder einem ähnlichen Namen sollte sich ganz oben in der Struktur befinden, wobei sich eine weitere YAML-Datei in einer Struktur darunter befindet.
 
@@ -115,13 +126,13 @@ Die Dateistruktur sieht ähnlich der folgenden aus:
 Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen und für alle Konfigurationstypen (CDN, Protokollweiterleitung usw.) ausreicht. In diesem Szenario würde die `envTypes`-Array-Eigenschaft alle Umgebungstypen enthalten.
 
 ```yaml
-   kind: "cdn"
+   kind: "CDN"
    version: "1"
    metadata:
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[&#x200B; können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
+Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[ können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
 
 ```yaml
 kind: "LogForwarding"
@@ -175,7 +186,7 @@ Die Dateistruktur sieht ähnlich der folgenden aus:
 
 Eine Variante dieses Ansatzes besteht darin, für jede Umgebung eine separate Verzweigung zu führen.
 
-### Edge Delivery Services {#yamls-for-eds}
+## Edge Delivery Services {#yamls-for-eds}
 
 Edge Delivery-Konfigurations-Pipelines verfügen über keine separaten Entwicklungs-, Staging- und Produktionsumgebungen. In Veröffentlichungs-Bereitstellungsumgebungen schreiten Änderungen durch die Entwicklungs-, Staging- und Produktebenen voran. Eine Edge Delivery-Konfigurations-Pipeline wendet die Konfiguration dagegen direkt auf alle Domain-Zuordnungen an, die in Cloud Manager für eine Edge Delivery-Site registriert sind.
 
@@ -188,7 +199,7 @@ Stellen Sie daher eine einfache Dateistruktur wie die folgende bereit:
   logForwarding.yaml
 ```
 
-Wenn eine Regel pro Edge Delivery-Site unterschiedlich sein muss, verwenden Sie die Syntax *wenn*, um die Regeln voneinander zu unterscheiden. Beachten Sie beispielsweise, dass die Domain im folgenden Ausschnitt mit dev.example.com übereinstimmt, was von der Domain www.example.com unterschieden werden kann.
+Wenn eine Regel pro Edge Delivery-Site unterschiedlich sein muss, verwenden Sie die Syntax *wenn*, um die Regeln voneinander zu unterscheiden. Beachten Sie beispielsweise, dass die Domain im folgenden Ausschnitt mit dev.example.com übereinstimmt, was vom Domain-`www.example.com` unterschieden werden kann.
 
 ```
 kind: "CDN"
@@ -220,8 +231,6 @@ Das folgende Snippet ist ein Beispiel dafür, wie die geheime Umgebungsvariable 
 ```
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
