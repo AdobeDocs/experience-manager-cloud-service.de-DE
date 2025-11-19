@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 100%
 
@@ -46,8 +46,6 @@ Weitere Informationen zur Fehlerbehebung und häufige Fehler finden Sie unter [H
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -151,8 +149,6 @@ Die Syntax ist unten beschrieben:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -203,8 +199,6 @@ Es gilt folgende Syntax:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
