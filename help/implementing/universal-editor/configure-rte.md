@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Ed
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Editor konfigur
 
 >[!NOTE]
 >
->Diese Dokumentation bezieht sich auf den neuen RTE für den universellen Editor, der als Early-Adopter-Funktion verfügbar ist. Wenn Sie diese neue Funktion testen möchten, lesen [&#x200B; die Versionshinweise , um weitere Informationen zu erhalten.](/help/release-notes/universal-editor/current.md#new-rte)
+>Diese Dokumentation bezieht sich auf den neuen RTE für den universellen Editor, der als Early-Adopter-Funktion verfügbar ist. Wenn Sie diese neue Funktion testen möchten, lesen [ die Versionshinweise , um weitere Informationen zu erhalten.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Überblick {#overview}
 
@@ -32,7 +32,7 @@ Die RTE-Konfiguration besteht aus zwei Teilen:
 * [`toolbar`](#toolbar): Die Symbolleistenkonfiguration steuert, welche Bearbeitungsoptionen in der Benutzeroberfläche verfügbar sind und wie sie organisiert sind.
 * [`actions`](#actions): Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen.
 
-Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit &#x200B;](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
+Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit ](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
 
 ```json
 [
@@ -274,10 +274,7 @@ Im Folgenden finden Sie ein Beispiel für eine vollständige Konfiguration.
           "label": "Main Heading"
         }
       }
-    },
-    "components": [
-      "richtext"
-    ]
+    }
   }
 ]
 ```
