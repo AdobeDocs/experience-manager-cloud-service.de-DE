@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 92%
@@ -44,8 +44,6 @@ Bevor Sie Traffic im CDN konfigurieren können, müssen Sie Folgendes tun:
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    ```
 
 1. Platzieren Sie die Datei unter einem Ordner der obersten Ebene mit dem Namen *config* oder ähnlich, wie unter [Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
@@ -79,8 +77,6 @@ Konfigurationsbeispiel:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -227,8 +223,6 @@ Konfigurationsbeispiel:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -313,8 +307,6 @@ Konfigurationsbeispiel:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -397,8 +389,6 @@ Konfigurationsbeispiel:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -449,15 +439,13 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 
 ### Proxys für benutzerdefinierte Domain an die statische AEM-Ebene {#proxy-custom-domain-static}
 
-Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
+Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -483,8 +471,6 @@ Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies 
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -523,8 +509,6 @@ Konfigurationsbeispiel:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
