@@ -4,10 +4,10 @@ description: Bearbeiten Sie Bilder mit von [!DNL Adobe Express] unterstützten O
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 744c76f29a37610313835074f2f13fdd8f098465
+source-git-commit: cbda4b0735190f0fcaaa1c573e4fc327ab903de1
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 96%
+source-wordcount: '1156'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ Gehen Sie wie folgt vor, um Bilder mit dem eingebetteten [!DNL Adobe Express]-Ed
 
 * Unterstützter Dateityp: JPEG oder PNG.
 * Maximal unterstützte Dateigröße: 40 MB.
-* Unterstützter Breiten- und Höhenbereich: 65 MP (z. B. 8K x 8K oder 16K x 4K).
+* Unterstützter Breiten- und Höhenbereich: 65MP (z. B. 8K x 8K oder 16K x 4K).
 * Laden Sie die Seite neu, um das zuletzt gespeicherte neue Asset im Quellordner anzuzeigen.
 
 ### Erstellen neuer Assets in Adobe Express {#create-new-embedded-editor}
@@ -129,8 +129,8 @@ In [!DNL Assets view] können Sie mithilfe des in [!DNL Adobe Express] integrier
 #### Einschränkungen {#limitations}
 
 * Sie können nur Bilder mit den Formattypen `JPEG` und `PNG` ändern.
-* Die Medienelement muss bei Desktop-Geräten weniger als 80 MB und bei Mobilgeräten 40 MB betragen.
-* Der unterstützte Breiten- und Höhenbereich liegt zwischen 50 und 8000 Pixel.
+* Die Asset-Größe muss bei Desktop-Geräten weniger als 80 MB und bei Mobilgeräten weniger als 40 MB betragen.
+* Der unterstützte Breiten- und Höhenbereich beträgt 65 MP (z. B. 8K x 8K oder 16K x 4K).
 * Sie können ein Bild im Format `PDF`, `JPEG` oder `PNG` speichern.
 
 <!--
@@ -154,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/de/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
