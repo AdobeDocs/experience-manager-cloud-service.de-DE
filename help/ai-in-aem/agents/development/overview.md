@@ -1,19 +1,19 @@
 ---
-title: Übersicht über den Experience Development Agent
-description: Erfahren Sie, wie der Experience Development Agent in AEM fehlgeschlagene Pipelines in Cloud Manager analysiert und Protokolle erstellt, um Code-Fehlerbehebungen vorzuschlagen und das Debugging zu beschleunigen.
-feature: Edge Delivery Services, Agentic AI
+title: Übersicht über den Entwicklungsagenten
+description: Erfahren Sie, wie der Entwicklungsagent in AEM fehlgeschlagene Pipelines in Cloud Manager analysiert und Protokolle erstellt, um Code-Fehlerbehebungen vorzuschlagen und das Debugging zu beschleunigen.
+feature: Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 1f20d2825befa0345f9ebde3a9854cab591de0f6
+source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 
-# Übersicht über den Experience Development Agent {#development-agent-overview}
+# Übersicht über den Entwicklungsagenten {#development-agent-overview}
 
-Der Experience Development Agent unterstützt AEM-Entwickler und -Administratoren dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
+Der Entwicklungs-Agent unterstützt AEM-Entwickler und -Administratoren dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
 
 Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten helfen, indem er Fehlerbehebungen vorschlägt und so Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen spart. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
 
@@ -27,11 +27,11 @@ Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-## Zugriff auf den Experience Development Agent über Cloud Manager {#how-to-access-the-agent}
+## Zugriff auf den Entwicklungsagenten über Cloud Manager {#how-to-access-the-agent}
 
-Sie greifen auf den Experience Development Agent über den KI-Assistenten zu, der in Benutzeroberflächen wie Cloud Manager oder Experience Hub zu finden ist.
+Der Zugriff auf den Entwicklungsagenten erfolgt über den KI-Assistenten, der sich in den Benutzeroberflächen, einschließlich Cloud Manager oder Experience Hub, befindet.
 
-**So greifen Sie über Cloud Manager auf den Experience Development Agent zu:**
+**So greifen Sie über Cloud Manager auf den Entwicklungsagenten zu:**
 
 1. Klicken Sie zunächst auf [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home), um die Startseite zu öffnen.
 
@@ -73,7 +73,7 @@ Sie greifen auf den Experience Development Agent über den KI-Assistenten zu, de
 
 ## Berechtigungen {#permissions}
 
-Für die Fehlerbehebung beim Pipeline-Auftrag des Experience Development Agents ist entweder die Rolle Cloud Manager - Entwickler oder die Rolle Cloud Manager - Programm-Manager erforderlich.
+Für die Fehlerbehebung bei der Pipeline des Entwicklungsagenten ist entweder die Rolle Cloud Manager - Entwickler oder die Rolle Cloud Manager - Programm-Manager erforderlich.
 
 
 
