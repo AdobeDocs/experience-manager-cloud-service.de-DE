@@ -3,9 +3,9 @@ title: Kommunikations-Erstellungskompetenz
 description: Erfahren Sie mehr über die Kommunikationsfähigkeiten des Experience Production Agents und wie Sie natürliche Sprache verwenden können, um interaktive Kommunikation zu erstellen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Interaktive Kommunikation sind personalisierte, datengesteuerte Dokumente, die für die Geschäftskorrespondenz entwickelt wurden, z. B. Kontoauszüge, Richtliniendokumente, Rechnungen, Begrüßungs-Kits und Leistungsbescheide. Im Gegensatz zu Formularen, die Eingaben von Benutzern erfassen, generieren interaktive Kommunikationen Ausgabedokumente mit dynamischen, empfängerspezifischen Inhalten.
 
-Die Fähigkeit zur Kommunikationserstellung ist eine Funktion des Experience Production Agent, die darauf ausgelegt ist, interaktive Kommunikation mithilfe von Interaktionen in natürlicher Sprache zu entwickeln. Es ermöglicht Benutzern die Erstellung personalisierter, datengesteuerter Korrespondenz ohne herkömmliche manuelle Prozesse. Diese Fähigkeit eliminiert die Komplexität des Kommunikationsdesigns durch die Interpretation von Gesprächsaufforderungen und die automatische Generierung geeigneter Dokumentstrukturen, Layouts und Datenbindungen. Die Kenntnisse werden durch den KI-Assistenten und Experience Hub vermittelt.
+Die Fähigkeit zur Kommunikationserstellung ist eine Funktion des Experience Production Agents, die dazu konzipiert ist, interaktive Kommunikation mithilfe natürlicher Sprachaufforderungen zu entwickeln. Diese Fähigkeit generiert automatisch personalisierte, datengesteuerte Korrespondenz für den Druck (im PDF-Format). Die Qualifikation wird durch den KI-Assistenten angezeigt.
 
 Zu den wichtigsten Vorteilen der Kommunikationsfähigkeit gehören:
 
@@ -23,13 +23,16 @@ Zu den wichtigsten Vorteilen der Kommunikationsfähigkeit gehören:
 * **Konsistente und markeninterne Korrespondenz**: Erstellen Sie mithilfe genehmigter Vorlagen und Stile Kommunikation, die dem Branding, den Vorlagen und Stilrichtlinien Ihres Unternehmens entspricht.
 * **Geringere technische Hürde**: Ermöglicht es Geschäftsbenutzern, einfach Kommunikation zu erstellen, ohne fortgeschrittenes technisches oder fundiertes Produktwissen zu benötigen.
 
-## Anwendungsbeispiele und Eingabeaufforderungen {#use-cases-prompts}
+## Funktionen {#capabilities}
 
-Mit der Fähigkeit zur Kommunikationserstellung können Sie Markenkorrespondenz erstellen, indem Sie Ihre Anforderungen in einfacher Sprache übermitteln.
+* **Personalisierte Kommunikation mit Klartext-Eingabeaufforderung erstellen**: Sie können Kommunikationsdokumente für den Druck (im PDF-Format) erstellen, indem Sie Ihre Anforderungen in einfacher Sprache übermitteln. Der Agent generiert automatisch die entsprechenden Dokumentstrukturen, Layouts und Datenbindungen basierend auf Ihrer Beschreibung in natürlicher Sprache.
 
-Sie werden aufgefordert, Ihre Vorlage anzugeben, Ihren bevorzugten Pfad zum Speichern der Kommunikation anzugeben und Datenquellendetails anzugeben. Basierend auf diesen Auswahlen generiert die Kommunikationsfertigkeit automatisch das entsprechende Dokument.
+* **Erstellen aus Vorlagen**: Sie können genehmigte Organisationsvorlagen verwenden, um Markenkonsistenz und Compliance-Standards sicherzustellen. Der Agent nutzt Ihre vorhandenen Vorlagen und Stilrichtlinien, um eine markeninterne Korrespondenz zu erstellen, die die gesetzlichen Anforderungen erfüllt.
 
-### Eingabeaufforderungen im Beispiel {#sample-prompts}
+* **Importieren und Konvertieren vorhandener Dokumente in interaktive**: Sie können vorhandene Dokumente importieren und in interaktive Kommunikation umwandeln. Der Agent analysiert hochgeladene Inhalte, um Felder zu erkennen, Layouts beizubehalten und datengesteuerte Korrespondenz mit dynamischen Inhaltsfunktionen zu erstellen. Zu den unterstützten Formaten gehören PDF-, XDP-Dateien, Bilder (JPG, PNG) und handgezeichnete Vorlagen.
+
+
+## Eingabeaufforderungen im Beispiel {#sample-prompts}
 
 * *Erstellen Sie einen Kontoauszug mit Transaktionshistorientabelle und Saldendiagramm*
 * *Erstellen einer Zusammenfassung des Investitionsportfolios mit Leistungsdiagrammen und einer Aufschlüsselung der Vermögenswerte*
@@ -47,6 +50,8 @@ Sie werden aufgefordert, Ihre Vorlage anzugeben, Ihren bevorzugten Pfad zum Spei
 ## Nächste Schritte {#refine-with-ic-editor}
 
 Nachdem Sie Ihre anfängliche Kommunikationsstruktur mit dem KI-Assistenten oder Experience Hub erstellt haben, können Sie den Editor für interaktive Kommunikation verwenden, um Ihr Dokument zu verfeinern und zu verbessern:
+
+* **Felder mit natürlichen Sprachaufforderungen bearbeiten**: Mithilfe von Aufforderungen können Sie mühelos Felder und ihre Eigenschaften in Dokumenten hinzufügen, aktualisieren und entfernen. Der Agent interpretiert Ihre Anweisungen und nimmt die entsprechenden Änderungen an der Dokumentstruktur und den Feldkonfigurationen vor.
 
 * **Inkrementelle Komponentenerstellung**: Fügen Sie einzelne Komponenten wie Text, Bilder, Diagramme, Tabellen und Barcodes über den visuellen Editor hinzu oder ändern Sie sie.
 

@@ -3,9 +3,9 @@ title: Qualifikation zur Formularerstellung
 description: Erfahren Sie mehr über die Fähigkeit des Experience Production Agents zur Formularerstellung und darüber, wie Sie mit natürlicher Sprache Formulare von Grund auf neu erstellen können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Einfache, natürliche Sprachbefehle machen das Erlernen herkömmlicher Produktob
 
 ## Funktionen {#capabilitiess}
 
-* **Erstellen Sie ein neues Formular mit einer Textaufforderung**: Sie können markeninterne Formulare erstellen, indem Sie Ihre Anforderungen in einfacher Sprache übermitteln.
+* **Erstellen eines neuen Formulars mit einer Textaufforderung**: Sie können ein Formular erstellen, indem Sie Ihre Anforderungen in einfacher Sprache übermitteln. Der Agent generiert automatisch die entsprechende Formularstruktur, Feldtypen und Markenerlebnisse basierend auf Ihrer Beschreibung in natürlicher Sprache und der angegebenen Vorlage. Diese Funktion beschleunigt die Formularerstellung und stellt gleichzeitig sicher, dass die Marken- und Compliance-Standards eingehalten werden.
 
-* **Importieren Sie ein PDF oder Bild und konvertieren Sie es in ein Formular**: Sie können ein vorhandenes Bild oder PDF-Dokumente importieren und in Formulare umwandeln. Der Agent analysiert hochgeladene Inhalte, um Feldtypen zu erkennen, Layouts beizubehalten und Formulare mit responsiver Design- und Validierungslogik zu verbessern. Unterstützte Formate sind AcroForms, XFA-PDFs, einfache PDFs, Bilder (JPG, PNG) und handgezeichnete Formularfotos.
+* **Importieren Sie ein PDF oder Bild und konvertieren Sie es in ein Formular**: Sie können ein vorhandenes Bild oder PDF-Dokumente importieren und in Formulare umwandeln. Der Agent analysiert hochgeladene Inhalte, um Feldtypen zu erkennen, Layouts beizubehalten und Formulare mit responsiver Design- und Validierungslogik zu verbessern und gleichzeitig sicherzustellen, dass die Marken- und Compliance-Standards eingehalten werden. Zu den unterstützten Formaten gehören PDF-Dokumente, Bilder (JPG, PNG) und handgezeichnete Formularfotos.
 
   Wenn Sie eine der oben genannten Funktionen verwenden, werden Sie aufgefordert, den zu erstellenden Formulartyp auszuwählen, entweder eine auf Kernkomponenten basierende Vorlage für adaptive Formulare oder eine auf Edge Delivery Services basierende Vorlage für adaptive Formulare anzugeben und Ihren bevorzugten Pfad zum Speichern des Formulars anzugeben. Wenn Sie ein Formular erstellen, das auf Edge Delivery Services basiert, können Sie auch die GitHub-URL Ihres Repositorys angeben.
 
@@ -42,7 +42,7 @@ Einfache, natürliche Sprachbefehle machen das Erlernen herkömmlicher Produktob
 
 ## Nächste Schritte {#refine-with-forms-experience-builder}
 
-Nachdem Sie Ihre anfängliche Formularstruktur mit dem KI-Assistenten erstellt haben, können Sie die Forms Creation-Erweiterung verwenden, um:
+Nachdem Sie Ihre anfängliche Formularstruktur mit dem KI-Assistenten erstellt haben, können Sie den Forms Experience Builder verwenden, um:
 
 * **Formulare aktualisieren**: Felder hinzufügen oder ändern, Feldtypen anpassen und den Stil nach Bedarf über den visuellen Editor aktualisieren.
 
