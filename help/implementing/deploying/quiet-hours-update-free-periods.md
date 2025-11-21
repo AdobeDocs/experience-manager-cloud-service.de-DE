@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Eingeschränkte Verfügbarkeit" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ ht-degree: 0%
 # Ruhezeiten und Freie Zeiträume aktualisieren {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Diese Funktion wird ab dem 25 **September als Funktion** Eingeschränkte Verfügbarkeit“ verfügbar sein. Senden Sie eine E-Mail an [0&rbrace;aemcs-update-free@adobe.com&quot;, um die Funktion in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
+>Diese Funktion wird ab dem 25 **September als Funktion** Eingeschränkte Verfügbarkeit“ verfügbar sein. Senden Sie eine E-Mail an [0}aemcs-update-free@adobe.com&quot;, um die Funktion in Ihren Programmen aktivieren zu lassen.](mailto:aemcs-update-free@adobe.com)
 
 >[!WARNING]
->Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ &#x200B;](/help/implementing/deploying/aem-version-updates.md) sind.
+>Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ ](/help/implementing/deploying/aem-version-updates.md) sind.
 
 Die [automatischen Wartungs-Updates](/help/implementing/deploying/aem-version-updates.md) von AEM as a Cloud Service stellen sicher, dass Ihre Instanzen sicher sind und mit den neuesten Wartungsversionen auf dem neuesten Stand sind. In einigen Fällen (z. B. bei Go-Live-Ereignissen) müssen Sie diese kritischen Arbeitszeiten jedoch möglicherweise vor potenziellen Unterbrechungen „schützen“. Daher bietet AEM as a Cloud Service die Möglichkeit, einen Zeitrahmen festzulegen, in dem automatische Aktualisierungen für Ihre laufenden Programme nicht vorgenommen werden.
 
@@ -27,7 +27,7 @@ Sie können diese Zeitrahmen mithilfe von zwei Planungsoptionen konfigurieren:
 * **Ruhige Stunden** - Sie können ein tägliches Zeitintervall (bis zu 8 Stunden) definieren, in dem keine Aktualisierungen erfolgen.
 * **Freie Zeiträume aktualisieren** - Sie können einen Zeitraum von 7 Tagen definieren, in dem keine Aktualisierungen erfolgen. Sie können innerhalb eines Zeitraums von 12 Monaten bis zu drei kostenlose Aktualisierungszeiträume haben.
 
-Die Funktionen „Freie Zeiträume und Ruhezeiten aktualisieren“ werden „pro Programm“ konfiguriert.
+Die Funktionen „Freie Zeiträume und Ruhezeiten aktualisieren“ werden „pro Programm“ konfiguriert. Denken Sie daran, dass nur Benutzer mit der „Benutzerrolle“ &quot;**Geschäftsinhaber** und **Bereitstellungs-Manager** diese Funktionen anzeigen und verwenden können.
 
 Informationen zu geplanten automatischen AEM as a Cloud Service-Wartungszeiträumen finden Sie auf der Seite [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -76,3 +76,13 @@ Navigieren Sie **Aktivitäten > Automatische Aktualisierungen > Aktualisierungso
 ![Konfiguration freier Zeiträume aktualisieren](assets/update-free-periods.png)
 
 Neben dem derzeit aktiven Zeitraum für die **Aktualisierung wird ein** Aktiv **-Symbol und in der Nähe der abgeschlossenen Zeiträume für die Update-Freie Aktualisierung ein Symbol „Abschließen** angezeigt.
+
+## Ausschlusszeiträume für geplante Wartungen {#planned-maintenance}
+
+Für Adobe sind mehrere Ausschlusszeiträume für Wartungsarbeiten geplant. Diese Zeiträume werden von Adobe definiert, um Risiken im Zusammenhang mit kritischen Ereignissen zu minimieren, und treten in der Regel zwei- oder dreimal pro Jahr auf. Sie können den genauen Zeitplan für die Ausschlusszeiträume für die Wartung auf der Seite [Roadmap für Wartungsversionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) einsehen.
+
+Damit Sie Ihre Zeiträume ohne Updates genau konfigurieren können, werden die Zeiträume für Wartungsausschlüsse auch in der Benutzeroberfläche „Ruhezeiten“ und „Freie Zeiträume aktualisieren“ angezeigt.
+
+![Ausschlusszeiträume für geplante Wartungen](assets/planned-maintenance.png)
+
+Beachten Sie, dass Sie während der Ausschlusszeiträume keinen kostenlosen Aktualisierungszeitraum erstellen können.
