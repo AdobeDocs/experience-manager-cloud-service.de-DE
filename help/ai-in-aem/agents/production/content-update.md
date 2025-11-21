@@ -3,10 +3,10 @@ title: Kenntnisse zum Aktualisieren von Inhalten
 description: Erfahren Sie, was die Inhaltsaktualisierungsfähigkeiten des Experience Production Agents sind und was sie für Sie tun können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -37,15 +37,17 @@ Sie können über den KI-Assistenten auf AEM Business Agents zugreifen.
 
 ![Zugriff auf Discovery Agent](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### Eingabeaufforderungen {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+Um Inhaltsaktualisierungen zu initiieren, können Sie eine Vielzahl von Eingabeaufforderungen in natürlicher Sprache eingeben. Außerdem müssen Sie die öffentlich zugängliche URL der Seite angeben, die Sie aktualisieren möchten. Beispiel:
 
-* Change your headlines
+* Ändern Sie die folgende Seite https://www.your-url.com/sale Aktualisieren Sie die Haupthelden-Überschrift auf „Black Friday Mega Sale - Bis zu 70% Rabatt“, ändern Sie den Countdown-Timer, um „Endet in 48 Hours“ anzuzeigen, entfernen Sie „Für Updates anmelden“, ändern Sie alle „Shop Now“-Schaltflächen auf „Grab the Deal“
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model Aktualisieren Sie die Bannerkopie auf „Save 300 USD Today Only“, Aktualisieren Sie die Preise von 1.299 USD auf 999 USD, Entfernen Sie das Finanzierungsoptionenbanner
+
+* https://www.your-url.com/your-sneaker Aktualisieren Sie den Lagerstatus von „Geringer Lagerbestand“ auf „Zurück auf Lager - Begrenzte Mengen“, ändern Sie die Größenauswahl, um die verfügbaren Größen in grün hervorzuheben, Entfernen Sie das Abzeichen „In Kürze verfügbar“
+
+* https://www.your-url.com/your-sneaker Aktualisieren Sie die Produktbilder, um neue Farbverläufe zu zeigen
 
 >[!NOTE]
 >
@@ -109,7 +111,7 @@ Wenn ein `process` Befehl an den Trigger aktualisiert wird, können die Antworte
 
 ### Aktivierung {#activation}
 
-Um den Produktionsagenten mit Jira zu aktivieren und Zugriff darauf zu erhalten, müssen Sie eine E-Mail an Adobe senden. Für die ersten Schritte wenden Sie sich an:
+Um den Experience Production Agent mit Jira zu aktivieren und Zugriff darauf zu erhalten, müssen Sie eine E-Mail an Adobe senden. Für die ersten Schritte wenden Sie sich an:
 
 * `experience-production-agent@adobe.com`
 * oder wenden Sie sich an Ihr Account-Team

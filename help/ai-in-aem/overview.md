@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über KI in Adobe Experience Manager as a Cloud S
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 016d0f155278d6bde5dd09175ec179b10e6acb75
+source-git-commit: 97b18dfcf30c4a2ea7b25a8bee0fc2e769e2b684
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '441'
 ht-degree: 50%
 
 ---
@@ -24,7 +24,7 @@ Der [KI-Assistent in Adobe Experience Manager](/help/implementing/cloud-manager/
 
 AEM bietet eine Reihe von [Business Agents](/help/ai-in-aem/agents/overview.md) zur Beschleunigung der Inhaltserstellung und automatischen Orchestrierung von Änderungen:
 
-* [Produktionsagent](/help/ai-in-aem/agents/production/overview.md)
+* [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md)
 * [Inhaltsoptimierungs-Agent](/help/ai-in-aem/agents/content-optimization/using.md)
 * [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)
 * [Entwicklungsagent](/help/ai-in-aem/agents/development/overview.md)
