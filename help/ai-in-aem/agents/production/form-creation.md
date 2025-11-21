@@ -3,9 +3,9 @@ title: Qualifikation zur Formularerstellung
 description: Erfahren Sie mehr über die Fähigkeit des Experience Production Agents zur Formularerstellung und darüber, wie Sie mit natürlicher Sprache Formulare von Grund auf neu erstellen können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Einfache, natürliche Sprachbefehle machen das Erlernen herkömmlicher Produktob
 
 * **Erstellen eines neuen Formulars mit einer Textaufforderung**: Sie können ein Formular erstellen, indem Sie Ihre Anforderungen in einfacher Sprache übermitteln. Der Agent generiert automatisch die entsprechende Formularstruktur, Feldtypen und Markenerlebnisse basierend auf Ihrer Beschreibung in natürlicher Sprache und der angegebenen Vorlage. Diese Funktion beschleunigt die Formularerstellung und stellt gleichzeitig sicher, dass die Marken- und Compliance-Standards eingehalten werden.
 
-* **Importieren Sie ein PDF oder Bild und konvertieren Sie es in ein Formular**: Sie können ein vorhandenes Bild oder PDF-Dokumente importieren und in Formulare umwandeln. Der Agent analysiert hochgeladene Inhalte, um Feldtypen zu erkennen, Layouts beizubehalten und Formulare mit responsiver Design- und Validierungslogik zu verbessern und gleichzeitig sicherzustellen, dass die Marken- und Compliance-Standards eingehalten werden. Zu den unterstützten Formaten gehören PDF-Dokumente, Bilder (JPG, PNG) und handgezeichnete Formularfotos.
+* **Importieren eines PDF-Dokuments und Konvertieren in ein Formular**: Sie können vorhandene PDF-Dokumente importieren und in Formulare umwandeln. Der Agent analysiert hochgeladene Inhalte, um Feldtypen zu erkennen, Layouts beizubehalten und Formulare mit responsiver Design- und Validierungslogik zu verbessern und gleichzeitig sicherzustellen, dass die Marken- und Compliance-Standards eingehalten werden.
 
   Wenn Sie eine der oben genannten Funktionen verwenden, werden Sie aufgefordert, den zu erstellenden Formulartyp auszuwählen, entweder eine auf Kernkomponenten basierende Vorlage für adaptive Formulare oder eine auf Edge Delivery Services basierende Vorlage für adaptive Formulare anzugeben und Ihren bevorzugten Pfad zum Speichern des Formulars anzugeben. Wenn Sie ein Formular erstellen, das auf Edge Delivery Services basiert, können Sie auch die GitHub-URL Ihres Repositorys angeben.
 
@@ -40,7 +40,7 @@ Einfache, natürliche Sprachbefehle machen das Erlernen herkömmlicher Produktob
 * *Erstellen Sie ein Kreditkartenantragsformular, indem Sie die PDF-Datei importieren, die unter &quot;https://[aem-author-url]/path/to/pdf/file“ verfügbar ist*
 * *Erstellen Sie ein Feedback-Formular mit dem Textbaustein unter &quot;<https://github.com/wkndforms/wesecure>&quot;*
 
-## Nächste Schritte {#refine-with-forms-experience-builder}
+## Verfeinern des Formulars {#refine-with-forms-experience-builder}
 
 Nachdem Sie Ihre anfängliche Formularstruktur mit dem KI-Assistenten erstellt haben, können Sie den Forms Experience Builder verwenden, um:
 
