@@ -3,9 +3,9 @@ title: Übersicht über den Discovery Agent
 description: Erfahren Sie, wie Sie mit dem Discovery Agent relevante AEM-Inhalte bei Bedarf über natürliche Gesprächsaufforderungen bereitstellen können, um ein optimiertes, klick- und kostenloses Discovery-Erlebnis zu erzielen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
+source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Hinweis: Die Formularerkennung unterstützt derzeit nur Edge Delivery Services-F
 
 ### Assets {#discovery-agent-search-results-assets}
 
-Der Discovery Agent gibt die 20 wichtigsten Ergebnisse für jede Abfrage aus, sortiert nach Relevanz, um sicherzustellen, dass die exakten Übereinstimmungen zuerst angezeigt werden. Der Agent kombiniert metadatengesteuerte Abfragen mit der semantischen Suche, um einen fokussierten Satz wahrscheinlicher Übereinstimmungen zusammenzustellen, und verwendet dann einen LLM, um sie nach der Benutzerabsicht zu ordnen. Dieser gemischte Ansatz liefert genaue, kontextbezogene Ergebnisse, ohne dass dies vollständig von einer direkten Keyword-Übereinstimmung abhängt.
+Der Discovery Agent gibt die wichtigsten Ergebnisse für jede Abfrage aus, sortiert nach Relevanz, um sicherzustellen, dass die exakten Übereinstimmungen zuerst angezeigt werden. Der Agent kombiniert metadatengesteuerte Abfragen mit der semantischen Suche, um einen fokussierten Satz wahrscheinlicher Übereinstimmungen zusammenzustellen, und verwendet dann einen LLM, um sie nach der Benutzerabsicht zu ordnen. Dieser gemischte Ansatz liefert genaue, kontextbezogene Ergebnisse, ohne dass dies vollständig von einer direkten Keyword-Übereinstimmung abhängt.
 
 Jedes Ergebnis enthält den Asset-Namen zusammen mit wichtigen Asset-Metadaten wie den Asset-Pfad, den Ersteller, das Erstellungsdatum, den Titel, die Beschreibung, das Format, den letzten Modifikator, das Datum der letzten Änderung, die Dateigröße, die [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md) und die zugehörigen Tags. Wenn sich ein Asset im Status Genehmigt befindet, umfassen die Ergebnisse auch [Dynamic Media mit OpenAPI-URL](/help/assets/dynamic-media-open-apis-overview.md).
 
@@ -152,11 +152,11 @@ Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asse
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 
-Der Discovery Agent bietet Volltextsuchfunktionen für Inhaltsfragmente, wodurch die 20 besten Ergebnisse zurückgegeben werden, die mit der angegebenen Eingabeaufforderung am besten übereinstimmen. Jedes Ergebnis enthält den Namen des Inhaltsfragments zusammen mit wichtigen Metadatenfeldern wie dem Pfad des Inhaltsfragments, dem Ersteller, dem Erstellungsdatum, Varianten, dem letzten Modifikator und dem Datum der letzten Änderung.
+Der Discovery Agent bietet Volltextsuchfunktionen für Inhaltsfragmente, wobei die besten Ergebnisse zurückgegeben werden, die mit der angegebenen Eingabeaufforderung am besten übereinstimmen. Jedes Ergebnis enthält den Namen des Inhaltsfragments zusammen mit wichtigen Metadatenfeldern wie dem Pfad des Inhaltsfragments, dem Ersteller, dem Erstellungsdatum, Varianten, dem letzten Modifikator und dem Datum der letzten Änderung.
 
 ![Inhaltsfragmente mit dem Discovery-Agenten durchsuchen](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
