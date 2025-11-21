@@ -1,40 +1,51 @@
 ---
 title: KI in AEM as a Cloud Service
 description: Erfahren Sie mehr über KI in Adobe Experience Manager as a Cloud Service
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 016d0f155278d6bde5dd09175ec179b10e6acb75
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 82%
+source-wordcount: '440'
+ht-degree: 50%
 
 ---
 
+
 # KI in AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
-KI ist ein integraler Bestandteil von Adobe Experience Manager as a Cloud Service und wird verwendet, um Benutzende bei der Suche nach Informationen zu unterstützen oder Erlebnisse zu generieren.
+Künstliche Intelligenz (KI) ist ein integraler Bestandteil von Adobe Experience Manager as a Cloud Service, der Benutzende dabei unterstützt, Informationen zu finden oder Erlebnisse zu generieren.
 
 ## KI-Assistent {#ai-assistant}
 
 Der [KI-Assistent in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) bietet eine Gesprächsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre AEM-bezogenen Abfragen zu optimieren.
 
+## Agent AI in AEM {#agentic-ai-in-aem}
+
+AEM bietet eine Reihe von [Business Agents](/help/ai-in-aem/agents/overview.md) zur Beschleunigung der Inhaltserstellung und automatischen Orchestrierung von Änderungen:
+
+* [Produktionsagent](/help/ai-in-aem/agents/production/overview.md)
+* [Inhaltsoptimierungs-Agent](/help/ai-in-aem/agents/content-optimization/using.md)
+* [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)
+* [Entwicklungsagent](/help/ai-in-aem/agents/development/overview.md)
+* [Governance-Agent](/help/ai-in-aem/agents/governance/overview.md)
+
 ## Generative KI in AEM {#generative-ai-in-aem}
 
 Die generative KI von Adobe für Adobe Experience Manager (AEM) as a Cloud Service ermöglicht es Marken, leistungsstarke Erlebnisse sowohl mit der Generierung von Kopien als auch mit der Bildgenerierung in der Bearbeitungsschnittstelle zu erstellen. Mit generativer KI können Sie autonom Inhalte mit folgenden Eigenschaften erstellen:
 
-* Markenbewusstsein: Erstellen Sie Inhalte, die die Tonalität der Marke, Stilrichtlinien und andere spezifische Anforderungen enthalten.
-* Personalisiert nach Zielgruppe: Nutzen Sie granulare Erkenntnisse zur Leistung von Inhalten, um Inhalte für jede Persona auf allen Kanälen anzupassen.
-* Regionsspezifisch: Bieten Sie mehr als nur eine Übersetzung und passen Sie Ihre Inhalte an regionale Präferenzen und Verhaltensmuster an.
-* Kontinuierlich optimiert: Führen Sie Experimente durch, um zu ermitteln, welche Varianten die beste Leistung erbringen, und verwenden Sie Erkenntnisse, um zukünftige KI-generierte Inhalte zu verbessern.
+* **Markenbewusst** - Erstellen Sie Inhalte, die den Markenton, Stilrichtlinien und andere spezifische Anforderungen enthalten.
+* **Personalisiert nach Zielgruppe** - Nutzen Sie granulare Erkenntnisse zur Content-Performance, um Inhalte für jede Rolle auf allen Kanälen anzupassen.
+* **Regionsspezifisch** - Gehen Sie über die Übersetzung hinaus und passen Sie Ihre Inhalte basierend auf regionalen Präferenzen und Verhaltensmustern an.
+* **Kontinuierlich optimiert** - Führen Sie Experimente durch, um zu ermitteln, welche Varianten am besten funktionieren, und verwenden Sie Einblicke, um zukünftige KI-generierte Inhalte zu verbessern.
 
 Generative KI wird überall in AEM verwendet:
 
 * [Varianten generieren – in AEM-Editoren integriert](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  Die Funktion „Varianten generieren“ verwendet generative künstliche Intelligenz (KI), um Inhaltsvarianten basierend auf Ihren Eingaben zu erstellen. Nachdem Sie Varianten erstellt haben, können Sie den Inhalt auf Ihrer Website verwenden und deren Erfolg außerdem mithilfe der Funktionalität „Experimente“ von Edge Delivery Services messen.
+  Varianten generieren verwendet generative KI, um Inhaltsvarianten basierend auf Ihren Eingaben zu erstellen. Nachdem Sie Varianten erstellt haben, können Sie die Inhalte auf Ihrer Website verwenden und ihren Erfolg auch mithilfe der Experimentierfunktion von Edge Delivery Services messen.
 
-   * Und die vorherige Version der Funktion [Varianten generieren](/help/generative-ai/generate-variations.md)
+   * [Die vorherige Version Generate Variations](/help/generative-ai/generate-variations.md) außerhalb des Editors bleibt verfügbar.
 
      >[!NOTE]
      >

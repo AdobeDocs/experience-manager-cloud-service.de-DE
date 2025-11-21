@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 92%
+source-wordcount: '344'
+ht-degree: 89%
 
 ---
 
@@ -21,9 +21,7 @@ Sie können über die Karte **Umgebungen** auf der Seite **Überblick** oder der
 
 Protokolle werden sieben Tage lang aufbewahrt.
 
-## Herunterladen von Protokollen {#download-logs}
-
-Gehen Sie wie folgt vor, um Protokolle herunterzuladen:
+## Protokolle herunterladen {#download-logs}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -49,7 +47,7 @@ Sie können Ihre Protokolle auch über die Seite **Umgebungen** aufrufen.
 
 ![Protokolle aus dem Bildschirm „Umgebungen“](assets/download-logs.png)
 
-## Protokolle über API {#logs-through-api}
+## Protokolle über die API {#logs-through-api}
 
 Abgesehen vom Herunterladen von Protokollen über die Benutzeroberfläche sind die Protokolle auch über die API und die Befehlszeilenschnittstelle verfügbar.
 
@@ -101,5 +99,5 @@ Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in 
 
 Weitere Informationen zu Protokolldateien in AEM as a Cloud Service finden Sie in den folgenden zusätzlichen Ressourcen:
 
-* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
