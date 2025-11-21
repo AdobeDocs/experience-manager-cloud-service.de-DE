@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Einführung in Adobe Experience Manager als Headless-CMS {#introduction-aem-headless}
 
-Erfahren Sie, wie Sie Adobe Experience Manager (AEM) als Headless-CMS (Content Management System) mit Funktionen wie Inhaltsfragmentmodellen, Inhaltsfragmenten und einer GraphQL-API verwenden können, die zusammen Headless-Erlebnisse in großem Umfang ermöglichen.
+Erfahren Sie, wie Sie Adobe Experience Manager (AEM) als Headless-CMS (Content-Management-System) mit Funktionen wie Inhaltsfragmentmodellen, Inhaltsfragmenten und einer GraphQL-API verwenden können, die zusammen Headless-Erlebnisse in großem Umfang ermöglichen.
 
 Sie können eine ausführliche Dokumentation der verschiedenen Funktionen lesen und/oder die Auswahl der [Headless-Touren verfolgen, um einen Überblick über die ersten Schritte zu erhalten](#first-steps).
 
@@ -44,7 +44,7 @@ AEM as a Cloud Service ist ein flexibles Tool für das Headless-Implementierungs
    * Inhaltsfragmente werden von Inhaltsautorinnen und -autoren mit dem AEM-Inhaltsfragment-Editor erstellt.
    * Inhaltsfragmente werden als AEM-Assets gespeichert, können jedoch entweder über die Assets-Konsole oder die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) verwaltet werden.
 1. **Inhalts-API für die Bereitstellung**
-   * Unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
+   * Weitere Informationen finden Sie unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md). Dort erhalten Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der beteiligten Konzepte.
 
    * Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de) möglich.
 

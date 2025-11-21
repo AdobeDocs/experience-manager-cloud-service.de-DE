@@ -47,7 +47,7 @@ So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 1. [Markieren der Termine im Kalender](#mark-calendars)
 1. [Lesen der Versionshinweise](#release-notes)
 1. [Zugreifen auf und Ausprobieren von bevorstehenden Funktionen](#upcoming-features)
-1. [Schulen der Benutzenden &#x200B;](#train-users)
+1. [Schulen der Benutzenden ](#train-users)
 
 ## Markieren der Termine im Kalender {#mark-calendars}
 
