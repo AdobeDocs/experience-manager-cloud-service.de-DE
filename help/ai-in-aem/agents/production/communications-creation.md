@@ -3,15 +3,19 @@ title: Kommunikations-Erstellungskompetenz
 description: Erfahren Sie mehr über die Kommunikationsfähigkeiten des Experience Production Agents und wie Sie natürliche Sprache verwenden können, um interaktive Kommunikation zu erstellen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # Kommunikations-Erstellungskompetenz {#ic-creation-skill}
+
+>[!NOTE]
+>
+> Die Fähigkeit zur Kommunikationserstellung befindet sich derzeit in der Alpha-Phase. Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 Interaktive Kommunikation sind personalisierte, datengesteuerte Dokumente, die für die Geschäftskorrespondenz entwickelt wurden, z. B. Kontoauszüge, Richtliniendokumente, Rechnungen, Begrüßungs-Kits und Leistungsbescheide. Im Gegensatz zu Formularen, die Eingaben von Benutzern erfassen, generieren interaktive Kommunikationen Ausgabedokumente mit dynamischen, empfängerspezifischen Inhalten.
 
@@ -39,7 +43,9 @@ Zu den wichtigsten Vorteilen der Kommunikationsfähigkeit gehören:
 * *Erstellen Sie eine Kommunikation aus der Bilddatei unter https://[aem-author-url]/path/to/image/file*
 * https:// Erstellen Sie einen Brief mit einer PDF-Datei unter [-aem-author-url]/path/to/pdf/file
 
+
 ## Verfeinern der Kommunikation {#refine-with-ic-editor}
+
 
 Nachdem Sie Ihre anfängliche Kommunikationsstruktur mit dem KI-Assistenten erstellt haben, können Sie den Editor für interaktive Kommunikation verwenden, um Ihr Dokument zu verfeinern und zu verbessern. Im Editor für interaktive Kommunikation können Sie Eingabeaufforderungen in natürlicher Sprache bereitstellen, um:
 
@@ -65,4 +71,3 @@ Nachdem Sie Ihre anfängliche Kommunikationsstruktur mit dem KI-Assistenten erst
 * *Ändern Sie den Zeilenabstand im Abschnitt Nutzungsbedingungen auf 1.5*
 
 Weitere Informationen zu den Funktionen des Editors für interaktive Kommunikation finden Sie unter [Dokumentation zu interaktiven Kommunikationen](/help/forms/introduction-to-interactive-communication.md).
-
