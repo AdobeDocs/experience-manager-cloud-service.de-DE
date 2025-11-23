@@ -33,7 +33,7 @@ Um nach Assets zu suchen:
 
 ## Filtern von Suchergebnissen {#refine-search-results}
 
-Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von ](custom-search-filters.md).
+Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von &#x200B;](custom-search-filters.md).
 
 ![Suchfilter](assets/filters-panel.gif)
 
