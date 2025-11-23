@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '6089'
-ht-degree: 97%
+source-wordcount: '5969'
+ht-degree: 96%
 
 ---
 
@@ -149,7 +149,7 @@ Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die a
 
 So können Sie das Ranking bestimmter Assets in den Keywords für das jeweilige Keyword erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3444068/?captions=ger&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
 
@@ -400,44 +400,23 @@ Die KI-Suche gleicht jedoch ähnliche Wörter wie `Girl` ab, `Lady` bei `Woman` 
 Genauso können Sie diesen Prompt auf Spanisch eingeben oder `Woman` fälschlicherweise als `Wman` schreiben und trotzdem dieselben Ergebnisse erhalten.
 
 
+### Aktivieren oder Deaktivieren der KI-Suche in der Admin-Ansicht {#enable-disable-ai-search}
+
+Führen Sie die folgenden Schritte aus, um die KI-Suche in der Admin-Ansicht zu aktivieren oder zu deaktivieren:
+
+1. Navigieren Sie zu **[!UICONTROL Tools]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Assets-Konfigurationen]** >> **[!UICONTROL Assets Omnisearch-Konfiguration]**.
+
+1. Wählen Sie im **[!UICONTROL Suche]** die Option **[!UICONTROL KI-Suche]** aus, um die KI-Suche zu aktivieren, oder **[!UICONTROL Keyword]**, um sie zu deaktivieren.
+
+   ![Aktivieren oder Deaktivieren der KI-Suche](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
 ## Konfigurations- und Verwaltungsaufgaben im Zusammenhang mit Suchfunktionen {#configadmin}
 
 ### Suchindexkonfigurationen {#searchindex}
 
 Die Asset-Erkennung beruht auf der Indizierung von DAM-Inhalten, einschließlich der Metadaten. Die schnellere und präzise Asset-Erkennung beruht auf einer optimierten Indizierung und geeigneten Konfigurationen. Siehe [Indizierung](/help/operations/indexing.md).
-
-### Visuelle Suche oder Ähnlichkeitssuche {#configvisualsearch}
-
-Die visuelle Suche verwendet Smart-Tags. Führen Sie nach dem Konfigurieren der Smart-Tagging-Funktion die folgenden Schritte aus.
-
-1. Fügen Sie in [!DNL Experience Manager] CRXDE im Knoten `/oak:index/lucene` die folgenden Eigenschaften und Werte hinzu und speichern Sie die Änderungen.
-
-   * Eigenschaft `costPerEntry` des Typs `Double` mit dem Wert `10`.
-
-   * Eigenschaft `costPerExecution` des Typs `Double` mit dem Wert `2`.
-
-   * Eigenschaft `refresh` des Typs `Boolean` mit dem Wert `true`.
-
-   Diese Konfiguration ermöglicht die Suche über den entsprechenden Index.
-
-1. Um einen Lucene-Index in CRXDE zu erstellen, erstellen Sie unter `/oak:index/damAssetLucene/indexRules/dam:Asset/properties` den Knoten `imageFeatures` des Typs `nt-unstructured`. Im Knoten `imageFeatures`:
-
-   * Fügen Sie die Eigenschaft `name` des Typs `String` mit dem Wert `jcr:content/metadata/imageFeatures/haystack0` hinzu.
-
-   * Fügen Sie die Eigenschaft `nodeScopeIndex` des Typs `Boolean` mit dem Wert `true` hinzu.
-
-   * Fügen Sie die Eigenschaft `propertyIndex` des Typs `Boolean` mit dem Wert `true` hinzu.
-
-   * Fügen Sie die Eigenschaft `useInSimilarity` des Typs `Boolean` mit dem Wert `true` hinzu.
-
-   Speichern Sie die Änderungen.
-
-1. Greifen Sie auf `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` zu und fügen Sie die Eigenschaft `similarityTags` des Typs `Boolean` mit dem Wert `true` hinzu.
-1. Wenden Sie Smart-Tags auf die Assets in Ihrem Repository [!DNL Experience Manager] an. Siehe [Konfigurieren von Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=de#configuring).
-1. Legen Sie in CRXDE im Knoten `/oak-index/damAssetLucene` die Eigenschaft `reindex` auf `true` fest. Speichern Sie die Änderungen.
-1. (Optional) Wenn Sie ein Suchformular angepasst haben, kopieren Sie den Knoten `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Speichern Sie die Änderungen.
-
-Weitere Informationen finden Sie unter [Grundlegendes zu Smart-Tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=de) und [Verwalten von Smart-Tags](/help/assets/smart-tags.md).
 
 ### Obligatorische Metadaten {#mandatorymetadata}
 

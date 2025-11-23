@@ -4,10 +4,10 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 91%
+source-wordcount: '1938'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ Um nach Assets zu suchen:
 
 ## Filtern von Suchergebnissen {#refine-search-results}
 
-Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von &#x200B;](custom-search-filters.md).
+Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von ](custom-search-filters.md).
 
 ![Suchfilter](assets/filters-panel.gif)
 
@@ -145,6 +145,19 @@ Die KI-Suche gleicht jedoch ähnliche Wörter wie `Girl` ab, `Lady` bei `Woman` 
 Genauso können Sie diesen Prompt auf Spanisch eingeben oder `Woman` fälschlicherweise als `Wman` schreiben und trotzdem dieselben Ergebnisse erhalten.
 
 ![Ansicht der semantischen Suche in AEM Assets](assets/semantic-search.png)
+
+### Aktivieren oder Deaktivieren der KI-Suche in der Assets-Ansicht {#enable-disable-ai-search}
+
+Führen Sie die folgenden Schritte aus, um die KI-Suche zu aktivieren oder zu deaktivieren:
+
+1. Navigieren Sie zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** und wählen Sie die Registerkarte **[!UICONTROL Suche]** aus.
+
+1. Wählen Sie im **[!UICONTROL Suche]** die Option **[!UICONTROL KI-Suche]** aus, um die KI-Suche zu aktivieren, oder **[!UICONTROL Keyword]**, um sie zu deaktivieren.
+
+   ![Ansicht der semantischen Suche in AEM Assets](/help/assets/assets/enable-disable-ai-search.png)
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
 
 ## Suchen von Assets mithilfe von [!DNL Adobe Firefly] {#search-firefly}
 
@@ -373,7 +386,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
 
 
 
