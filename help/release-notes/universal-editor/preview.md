@@ -3,9 +3,9 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige neue Funktionen {#what-is-new}
 
+* Autorisierungs-Header wurden zugunsten der [lokalen Entwickleranmeldung“ deaktiviert](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * Auf der strukturierten Baumstruktur ist jetzt per Rechtsklick ein Kontextmenü verfügbar.
 * Es wurde ein Hotkey zu doppelten Komponenten hinzugefügt.
 
