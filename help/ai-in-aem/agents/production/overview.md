@@ -3,9 +3,9 @@ title: Übersicht über Experience Production Agent
 description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM die Inhaltserstellung beschleunigen und Änderungen automatisch koordinieren können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a8f1adf7972decf1c8dbd060192c0e7d8b76051f
+source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '449'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Der Experience Production Agent automatisiert Aufgaben mit hohem Aufwand und hohem Volumen. Die Stärkung von Teams und die Umwandlung manueller, wochenlanger Prozesse in schnelle, KI-gestützte Workflows, die jedes Erlebnis aktuell und konsistent halten und dem Unternehmen helfen, seine Ziele zu erreichen.
 
-## Jobs {#jobs}
+## Aufträge {#jobs}
 
 Der Agent bietet die folgenden Aufträge:
 
@@ -55,3 +55,35 @@ Der Agent sollte in der Lage sein, mit anderen Agentenfähigkeiten zu arbeiten, 
 ## Verwendung mit anderen Wirkstoffen {#use-with-other-agents}
 
 * Abrufen von Quell-Assets vom Experience Advisory Agent
+
+## Aktivierung {#activation}
+
+Um den Experience Production Agent zu aktivieren und Zugriff auf ihn zu erhalten, müssen Sie sich an Adobe wenden. Für die ersten Schritte wenden Sie sich an:
+
+* `experience-production-agent@adobe.com`
+* oder wenden Sie sich an Ihr Account-Team
+
+Um den Prozess zu beschleunigen, hilft es, die folgenden Informationen bereitzustellen:
+
+* Für AEM as a Cloud Service
+   * Sie müssen Folgendes angeben:
+      * Unternehmens-ID
+      * `product_id`
+      * `profile_id`
+
+   * Diese Werte können mithilfe der folgenden Schritte gefunden werden:
+      * Ihr Administrator muss <https://adminconsole.adobe.com/> besuchen
+      * **Adobe Experience Manager as a Cloud Service**
+      * Auswählen der entsprechenden AEM-Instanz
+      * Wählen Sie das Profil aus, das Lese- und Schreibvorgänge für den betreffenden Inhalt zulässt
+      * Browser-URL erfassen
+      * Extrahieren Sie `product_id` und `profile_id` aus der URL.
+Zum Beispiel: <https://adminconsole.adobe.com/products/profiles/users>
+
+* Edge Delivery-Dokumenterstellung
+   * Geben Sie Ihrem Adobe-Team die folgenden Informationen:
+      * Relevante Domains
+      * Relevante GitHub-Informationen:
+         * Org
+         * Repo
+         * Verzweigung

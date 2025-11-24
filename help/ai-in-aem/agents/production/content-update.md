@@ -3,9 +3,9 @@ title: Kenntnisse zum Aktualisieren von Inhalten
 description: Erfahren Sie, was die Inhaltsaktualisierungsfähigkeiten des Experience Production Agents sind und was sie für Sie tun können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
+source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -109,9 +109,9 @@ Wenn ein `process` Befehl an den Trigger aktualisiert wird, können die Antworte
 
   ![Beispiel Jira unter Verwendung der Inhaltsaktualisierungsfähigkeiten des Experience Production Agents](assets/content-update-jira-example.png)
 
-### Aktivierung {#activation}
+## Aktivierung {#activation}
 
-Um den Experience Production Agent mit Jira zu aktivieren und Zugriff darauf zu erhalten, müssen Sie eine E-Mail an Adobe senden. Für die ersten Schritte wenden Sie sich an:
+Um den Experience Production Agent zu aktivieren und Zugriff auf ihn zu erhalten, müssen Sie sich an Adobe wenden. Für die ersten Schritte wenden Sie sich an:
 
 * `experience-production-agent@adobe.com`
 * oder wenden Sie sich an Ihr Account-Team
