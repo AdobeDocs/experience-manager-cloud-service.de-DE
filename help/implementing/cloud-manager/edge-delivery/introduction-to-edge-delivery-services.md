@@ -87,7 +87,7 @@ Die **Aufgabenliste von Edge Delivery** in Cloud Manager ist eine Checkliste fü
 | 8 | Einrichten der Push-Validierung | Weitere Informationen finden Sie unter [Einrichten der Push-Validierung für eine Edge Delivery-Site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Live-Schaltung | Weitere Informationen finden Sie unter [Checkliste für die Live-Schaltung](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441570?captions=ger&learn=on)
 
 ## Einreichen eines Support-Tickets {#eds-support-ticket}
 
