@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
+source-wordcount: '1263'
+ht-degree: 91%
 
 ---
 
@@ -154,11 +154,17 @@ Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten v
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Begrenzung der Anzahl installierter SSL-Zertifikate {#limitations}
+## Einschränkungen {#limitations}
+
+### Anzahl installierter SSL-Zertifikate {#number-installed-ssl-certs}
 
 Cloud Manager unterstützt immer bis zu 70 installierte Zertifikate. Diese Zertifikate können mit einer oder mehreren Umgebungen in Ihrem Programm verknüpft sein und auch abgelaufene Zertifikate enthalten.
 
 Wenn Sie den Grenzwert erreicht haben, überprüfen Sie Ihre Zertifikate und löschen Sie ggf. abgelaufene Zertifikate. Oder gruppieren Sie mehrere Domains im selben Zertifikat, da ein Zertifikat mehrere Domains (bis zu 100 SANs) abdecken kann.
+
+### Verschlüsseln wir Ratenbeschränkungen für Adobe-verwaltete DV-Zertifikate
+
+Adobe-verwaltete DV-Zertifikate verwenden Let&#39;s Encrypt. Zusätzlich zum Cloud Manager-Limit für installierte Zertifikate erzwingt Let&#39;s Encrypt eigene Ratenbeschränkungen. Ein wichtiges Limit ist **Neue Zertifikate pro exaktem Kennungssatz**: Innerhalb eines Zeitraums von sieben Tagen können bis zu 5 Zertifikate für denselben Hostnamen ausgestellt werden. Wenn diese Grenze erreicht ist, zeigt Cloud Manager den entsprechenden Fehler „Let&#39;s Encrypt“ an und kann erst dann weitere Zertifikate für diesen Hostnamen erstellen, wenn das Ratenbegrenzungsfenster zurückgesetzt wurde. Die neuesten Werte und andere zugehörige Beschränkungen finden Sie in der [Dokumentation zu verschlüsselten Ratenbeschränkungen](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Weitere Informationen {#learn-more}
 
