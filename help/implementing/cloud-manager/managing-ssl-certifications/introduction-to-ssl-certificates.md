@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
+source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1260'
 ht-degree: 91%
 
 ---
@@ -164,7 +164,7 @@ Wenn Sie den Grenzwert erreicht haben, überprüfen Sie Ihre Zertifikate und lö
 
 ### Verschlüsseln wir Ratenbeschränkungen für Adobe-verwaltete DV-Zertifikate
 
-Adobe-verwaltete DV-Zertifikate verwenden Let&#39;s Encrypt. Zusätzlich zum Cloud Manager-Limit für installierte Zertifikate erzwingt Let&#39;s Encrypt eigene Ratenbeschränkungen. Ein wichtiges Limit ist **Neue Zertifikate pro exaktem Kennungssatz**: Innerhalb eines Zeitraums von sieben Tagen können bis zu 5 Zertifikate für denselben Hostnamen ausgestellt werden. Wenn diese Grenze erreicht ist, zeigt Cloud Manager den entsprechenden Fehler „Let&#39;s Encrypt“ an und kann erst dann weitere Zertifikate für diesen Hostnamen erstellen, wenn das Ratenbegrenzungsfenster zurückgesetzt wurde. Die neuesten Werte und andere zugehörige Beschränkungen finden Sie in der [Dokumentation zu verschlüsselten Ratenbeschränkungen](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+Adobe-verwaltete DV-Zertifikate verwenden Let&#39;s Encrypt. Zusätzlich zum Cloud Manager-Limit für installierte Zertifikate erzwingt Let&#39;s Encrypt eigene Ratenbeschränkungen. Ein wichtiges Limit ist **Neue Zertifikate pro exaktem Kennungssatz**: Innerhalb eines Zeitraums von sieben Tagen können bis zu 5 Zertifikate für denselben Hostnamen ausgestellt werden. Wenn diese Grenze erreicht ist, zeigt Cloud Manager einen Fehler an und kann erst dann weitere Zertifikate für diesen Hostnamen erstellen, wenn das Ratenbegrenzungsfenster zurückgesetzt wurde. Die neuesten Werte und andere zugehörige Beschränkungen finden Sie in der [Dokumentation zu verschlüsselten Ratenbeschränkungen](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Weitere Informationen {#learn-more}
 
