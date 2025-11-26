@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
 workflow-type: tm+mt
-source-wordcount: '6970'
+source-wordcount: '6968'
 ht-degree: 94%
 
 ---
@@ -1060,7 +1060,7 @@ ht-degree: 94%
       + [Seite mit Fehler „502“ in benutzerdefinierter Übermittlungsaktion](/help/forms/custom-submit-action-troubleshooting.md)
 + KI in AEM {#ai-in-aem}
    + [Überblick](/help/ai-in-aem/overview.md)
-   + Agenten in AEM {#business-agents}
+   + Agenten in AEM {#agents}
       + [Überblick](/help/ai-in-aem/agents/overview.md)
       + Erlebnisproduktionsagent {#production}
          + [Überblick](/help/ai-in-aem/agents/production/overview.md)
@@ -1069,9 +1069,9 @@ ht-degree: 94%
          + [Site-Migrations-Kenntnisse](/help/ai-in-aem/agents/production/site-migration.md)
          + [Qualifikation zur Formularerstellung](/help/ai-in-aem/agents/production/form-creation.md)
       + Inhaltsoptimierungs-Agent {#content-optimization}
-         + [Verwenden des Inhaltsoptimierungs-Agenten](/help/ai-in-aem/agents/content-optimization/using.md)
+         + [Inhaltsoptimierungs-Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
       + Discovery Agent {#discovery}
-         + [Verwenden des Discovery Agents](/help/ai-in-aem/agents/discovery/using.md)
+         + [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md)
       + Entwicklungsagent {#development}
          + [Überblick](/help/ai-in-aem/agents/development/overview.md)
       + Governance-Agent {#governance}
@@ -1246,7 +1246,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
