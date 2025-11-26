@@ -76,7 +76,7 @@ Sie können über den KI-Assistenten auf die Agenten in AEM zugreifen. Melden Si
 
 ## Häufige Anwendungsfälle und Beispielaufforderungen {#use-cases-prompts}
 
-Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets ](/help/ai-in-aem/agents/discovery/using.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets &#x200B;](/help/ai-in-aem/agents/discovery/using.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **Erstellung von Ausgabedarstellungen mit hoher Auflösung**
 
