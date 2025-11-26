@@ -3,9 +3,9 @@ title: Qualifikation zur Formularerstellung
 description: Erfahren Sie mehr über die Fähigkeit des Experience Production Agents zur Formularerstellung und darüber, wie Sie mit natürlicher Sprache Formulare von Grund auf neu erstellen können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,42 @@ Nachdem Sie Ihre anfängliche Formularstruktur mit dem KI-Assistenten erstellt h
 * **Übermittlung konfigurieren** Konfigurieren Sie, wohin Formulardaten gesendet werden, einschließlich der Einrichtung von E-Mail-Benachrichtigungen, Integrationen mit Workflows oder Verbindungen zu externen Systemen.
 
 Weitere Informationen finden Sie in der Dokumentation zu [Forms Experience Builder](/help/forms/experience-builder/product-overview.md).
+
+
+## Aktivierung {#activation}
+
+Um den Experience Production Agent für Ihr Unternehmen zu aktivieren, muss die Aktivierung über Adobe initiiert werden. Beginnen Sie den Prozess, indem Sie sich an wenden über:
+
+* E-Mail: `experience-production-agent@adobe.com`
+* Oder wenden Sie sich an Ihr persönliches Adobe-Accountteam.
+
+Für ein effizientes Onboarding-Erlebnis sollten Sie die folgenden Details vorbereiten und bereitstellen:
+
+Für **AEM as a Cloud Service** geben Sie die folgenden Kennungen frei:
+
+* Unternehmens-ID
+* `product_id`
+* `profile_id`
+
+Ihr AEM-Administrator kann diese finden, indem er:
+
+1. Navigieren zu <https://adminconsole.adobe.com/>
+1. **Adobe Experience Manager as a Cloud Service wird ausgewählt**
+1. Auswählen der entsprechenden AEM-Instanz in Ihrer Umgebung
+1. Auswählen eines Profils mit Lese-/Schreibberechtigungen für relevante Inhalte
+1. Vollständige Browser-URL von dieser Seite kopieren
+1. Extrahieren der `product_id`- und `profile_id` aus der URL\
+   (z. B. enthält eine URL wie `https://adminconsole.adobe.com/products/profiles/users` diese Parameter).
+
+Für das **Erstellen von Edge Delivery**-Dokumenten stellen Sie Ihrem Adobe-Team Folgendes zur Verfügung:
+
+* Domains für Ihre Edge Delivery Services-Umgebung
+* Entsprechende GitHub-Details:
+   * Organisation (Org)
+   * Repository (Repository)
+   * Verzweigung
+
+Die Bereitstellung vollständiger und genauer Informationen beschleunigt den Aktivierungsprozess und stellt die zeitnahe Bereitstellung des Experience Production Agents sicher.
 
 <!-- 
 #### Import and convert {#import-and-convert}
