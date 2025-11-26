@@ -3,9 +3,9 @@ title: Inhaltsoptimierungs-Agent
 description: Erfahren Sie, wie Sie mit dem Inhaltsoptimierungs-Agenten transformieren können, wie Benutzer Assets verfeinern und anpassen, indem sie Anweisungen in natürlicher Sprache anwenden, um kanalfertige Varianten zu erstellen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -68,16 +68,15 @@ Channel-Marketing-Experten, die Schlüsselrolle für den Content Optimization Ag
 
 Regionale Marketer und Agenturmitarbeiter können auch den Content Optimization Agent verwenden, um schnell kanalfertige Bildvarianten zu generieren, die eine schnellere, konsistentere Inhaltserstellung unterstützen.
 
-
 ## Wie greife ich auf den Content Optimization Agent zu? {#access-content-optimization-agent}
 
-Sie können über den KI-Assistenten auf AEM Business Agents zugreifen. Melden Sie sich bei experience.adobe.com an und Sie können mit dem KI-Assistenten interagieren, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache über das Feld `Ask AI Assistant anything` angeben:
+Sie können über den KI-Assistenten auf die Agenten in AEM zugreifen. Melden Sie sich bei experience.adobe.com an und Sie können mit dem KI-Assistenten interagieren, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache über das Feld `Ask AI Assistant anything` angeben:
 
 ![Zugriff auf Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 ## Häufige Anwendungsfälle und Beispielaufforderungen {#use-cases-prompts}
 
-Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets &#x200B;](/help/ai-in-aem/agents/discovery/using.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets ](/help/ai-in-aem/agents/discovery/using.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **Erstellung von Ausgabedarstellungen mit hoher Auflösung**
 

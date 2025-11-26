@@ -3,9 +3,9 @@ title: Kenntnisse zum Aktualisieren von Inhalten
 description: Erfahren Sie, was die Inhaltsaktualisierungsfähigkeiten des Experience Production Agents sind und was sie für Sie tun können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Sie können auf die Fähigkeit zur Inhaltsaktualisierung zugreifen unter:
 
 ## KI-Assistent {#ai-assistant}
 
-Sie können über den KI-Assistenten auf AEM Business Agents zugreifen.
+Sie können über den KI-Assistenten auf die Agenten in AEM zugreifen.
 
 Öffnen Sie den KI-Assistenten unter experience.adobe.com und beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
 
