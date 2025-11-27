@@ -3,23 +3,21 @@ title: Funktionsunterschiede zwischen HTML5- und PDF-Formularen
 description: Erfahren Sie mehr über die Funktionsunterschiede zwischen HTML5- und PDF-Formularen.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Funktionsunterschiede zwischen HTML5- und PDF-Formularen {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formulare:

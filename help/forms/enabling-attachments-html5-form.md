@@ -2,23 +2,22 @@
 title: Aktivieren von Anlagen für ein HTML5-Formular
 description: Standardmäßig ist die Anlagenunterstützung für HTML5-Formulare deaktiviert.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Aktivieren von Anlagen für ein HTML5-Formular {#enabling-attachments-for-an-html-form}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 Sie können Anlagen mit HTML5-Formularen hochladen, in einer Vorschau anzeigen und übermitteln. Standardmäßig ist die Anlagenunterstützung deaktiviert. Gehen Sie wie folgt vor, um die Unterstützung der Anlage zu aktivieren:
@@ -30,7 +29,7 @@ Sie können Anlagen mit HTML5-Formularen hochladen, in einer Vorschau anzeigen u
    | multiSelect | „true“ oder „false“ (true standardmäßig ausgewählt) |
    | fileSizeLimit | Zahl in MB (standardmäßig 2 MB). Zum Beispiel 5. |
    | buttonText | Schaltflächentext für Popupfenster (standardmäßig „Anhängen“) |
-   | Akzeptieren der Bedingungen | durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf“ standardmäßig) |
+   | Akzeptieren der Bedingungen | durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf“ standardmäßig) |
 
    Beispiel:
 

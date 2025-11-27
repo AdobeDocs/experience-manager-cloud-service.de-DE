@@ -1,28 +1,26 @@
 ---
 title: Einführung in HTML5-Formulare
-description: '„HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die XFA-Formularvorlagen im HTML5-Format rendern kann. '
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: HTML5 Forms ist eine neue Funktion in Adobe Experience Manager-Software, mit der XFA-Formularvorlagen im HTML5-Format gerendert werden können.
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 92%
+source-wordcount: '416'
+ht-degree: 85%
 
 ---
 
 # Einführung in HTML5-Formulare{#introduction-to-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
-„HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die XFA-Formularvorlagen im HTML5-Format rendern kann. Diese Funktion ermöglicht das Rendern von Formularen auf Mobilgeräten und Desktop-Browsern, auf denen XFA-basierte PDF nicht unterstützt werden. „HTML5-Formulare“ unterstützt nicht nur vorhandene Funktionen XFA-basierter Formularvorlagen, sondern bietet auch neue Funktionen für mobile Geräte wie die Scribble-Signatur.
+HTML5 Forms ist eine neue Funktion in Adobe Experience Manager-Software, mit der XFA-Formularvorlagen im HTML5-Format gerendert werden können. Diese Funktion ermöglicht das Rendern von Formularen auf Mobilgeräten und Desktop-Browsern, auf denen XFA-basierte PDF nicht unterstützt werden. „HTML5-Formulare“ unterstützt nicht nur vorhandene Funktionen XFA-basierter Formularvorlagen, sondern bietet auch neue Funktionen für mobile Geräte wie die Scribble-Signatur.
 
-„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plug-ins installiert werden. Weitere Informationen zu unterstützten Browsern finden Sie unter [Unterstützte Client-Plattformen](https://adobe.com/go/learn_aemforms_supportedplatforms_63_de).
+„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plug-ins für die Browser installiert werden. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![HTML5-Formularvorschau](assets/mobile_form_on_an_ipad_date_14.png)
 

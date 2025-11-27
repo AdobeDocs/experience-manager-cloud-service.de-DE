@@ -2,23 +2,22 @@
 title: Erstellen eines benutzerdefinierten Profils für HTML5-Formulare
 description: Ein HTML5-Formularprofil ist ein Ressourcenknoten in Apache Sling. Es enthält eine benutzerdefinierte Version von HTML5-Formular-Render-Diensten.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 96%
+source-wordcount: '680'
+ht-degree: 95%
 
 ---
 
 # Erstellen eines benutzerdefinierten Profils für HTML5-Formulare {#creating-a-custom-profile-for-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 Ein Profil ist ein Ressourcenknoten in [Apache Sling](https://sling.apache.org/). Es enthält eine benutzerdefinierte Version des HTML5-Formularen-Render-Dienstes. Sie können den Render-Service für HTML5-Formulare verwenden, um Erscheinungsbild, Verhalten und Interaktionen von HTML5-Formularen anzupassen. Ein Profilknoten ist im Ordner `/content` im JCR-Repository vorhanden. Sie können den Knoten direkt im Ordner `/content` oder in einem beliebigen Unterordner des Ordners `/content` platzieren.
@@ -67,7 +66,7 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 
 1. Kopieren Sie „node default“ und fügen Sie den Knoten in einen anderen Ordner (*/content/profiles*) mit dem Namen *hrform* ein.
 
-1. Wählen Sie den neuen Knoten *hrform* und fügen Sie eine String-Eigenschaft hinzu: *sling:resourceType* mit dem Wert: *hrform/demo*.
+1. Wählen Sie den neuen Knoten *hrform* aus und fügen Sie eine Zeichenfolgeneigenschaft *sling:resourceType* mit dem Wert *hrform/demo* hinzu.
 
 1. Klicken Sie im Symbolleistenmenü auf Alle speichern, um die Änderungen zu speichern.
 
@@ -85,4 +84,4 @@ Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie Render-Inf
 
 1. Um zu überprüfen, dass das Profil erstellt wurde, rufen Sie die URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html` auf.
 
-Um Ihre Formulare zu überprüfen,**Importieren Sie Ihre Formulare** aus Ihrem lokalen Dateisystem in AEM Forms und[&#x200B; zeigen Sie eine Vorschau des Formulars](/help/forms/previewing-forms.md) in der Autoreninstanz des AEM-Servers an.
+Um Ihre Formulare zu überprüfen,**Importieren Sie Ihre Formulare** aus Ihrem lokalen Dateisystem in AEM Forms und[ zeigen Sie eine Vorschau des Formulars](/help/forms/previewing-forms.md) in der Autoreninstanz des AEM-Servers an.

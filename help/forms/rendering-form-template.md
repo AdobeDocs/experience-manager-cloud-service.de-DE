@@ -2,30 +2,29 @@
 title: Rendern einer Formularvorlage für HTML5-Formulare
 description: HTML5-Formularprofile sind mit Profil-Renderern verknüpft. Profil-Renderer sind JSP-Seiten, auf denen Formulare im HTML-Format generiert werden. Dazu werden Forms OSGi-Dienste aufgerufen.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Rendern einer Formularvorlage für HTML5-Formulare {#rendering-form-template-for-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 ## Rendern des Endpunktes {#render-endpoint}
 
 HTML5-Formulare umfassen das Konzept der **Profile**, die als REST-Endpunkte bereitgestellt werden, um Formularvorlagen auf Mobilgeräten rendern zu können. Diese Profile sind mit einem **Profile Renderer** verknüpft. Es handelt sich um JSP-Seiten, auf denen Formulare im HTML-Format generiert werden. Dazu werden Forms OSGi-Services aufgerufen. Der JCR-Pfad des Profilknotens bestimmt die URL des Render-Endpunktes. Der Standard-Render-Endpunkt des Formulars, der auf das „Standard“-Profil verweist, sieht wie folgt aus:
 
-https://&lt;*Host*>:&lt;*Port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*Pfad des Ordners mit der Formular-XDP*>&amp;template=&lt;*Name der XDP*>
+https://<*Host*>:<*Port*>/content/xfaforms/profiles/default.html?contentRoot=<*Pfad des Ordners mit der Formular-XDP*>&template=<*Name der XDP*>
 
 Beispiel: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

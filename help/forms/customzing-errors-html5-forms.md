@@ -1,22 +1,21 @@
 ---
 title: Anpassen von Fehlermeldungen für HTML5-Formulare
 description: Erfahren Sie, wie Sie die Anzeige von Fehlermeldungen für HTML5-Formulare anpassen, auch wie Sie deren Position und Erscheinungsbild ändern.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Fehlermeldungen für HTML5-Formulare {#customizing-error-messages-for-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 In den HTML5-Formularen haben Fehlermeldungen und Warnungen standardmäßig eine feste Position und ein festgelegtes Erscheinungsbild (Schrift und Farbe). Der jeweilige Fehler wird nur für ein ausgewähltes Feld ausgegeben und es wird nur ein Fehler angezeigt.
@@ -79,7 +78,7 @@ Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfe
 
 1. Speichern und schließen Sie die Datei.
 1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und erstellen Sie ein Archiv der Ordner jcr_root und META-INF. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie Package Manager, um das Paket herunterzuladen und zu installieren.
+1. Verwenden Sie den Paket-Manager, um das Paket herunterzuladen und zu installieren.
 
 ## Anzeigen von Fehlermeldungen für mehrere Felder  {#display-error-messages-for-multiple-fields-nbsp}
 
@@ -117,7 +116,7 @@ Verwenden Sie das beigefügte Paket, um Fehlermeldungen für alle Felder gleichz
 
 1. Speichern und schließen Sie die Datei.
 1. Navigieren Sie zum Ordner „CustomErrorManager-1.0-SNAPSHOT“ und erstellen Sie ein Archiv der Ordner „jcr_root“ und „META-INF“. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie Package Manager, um das Paket herunterzuladen und zu installieren.
+1. Verwenden Sie den Paket-Manager, um das Paket herunterzuladen und zu installieren.
 
 ## Rendern Sie das Formular mit dem neuen Profil.  {#render-the-form-with-the-new-profile-nbsp}
 

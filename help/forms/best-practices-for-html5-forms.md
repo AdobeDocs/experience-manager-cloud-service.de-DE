@@ -2,24 +2,22 @@
 title: Empfohlene Vorgehensweisen für HTML5-Formulare
 description: Stimmen Sie Ihre XFA-basierten HTML5-Formulare für optimale Leistung ab.
 contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 content-type: reference
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 98%
+source-wordcount: '1352'
+ht-degree: 95%
 
 ---
 
 # Empfohlene Vorgehensweisen für HTML5-Formulare{#best-practices-for-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 ## Übersicht {#overview}
@@ -28,7 +26,7 @@ AEM Forms bietet eine Komponente mit dem Namen „HTML5-Formulare“. Auf diese 
 
 Die meisten Mobilgeräte sind bezüglich Verarbeitungsleistung und Arbeitsspeicher begrenzt. Dies trägt dazu bei, dass die Standby-Zeit von Mobilgeräten verbessert wird. Die auf einem Mobilgerät ausgeführten Webbrowser haben Zugriff auf beschränkte Ressourcen (begrenzter Arbeitsspeicher und begrenzte Verarbeitungsfähigkeiten). Sobald das Limit erreicht ist, wird das Browser-Verhalten langsam. Dieses Dokument enthält Empfehlungen, um die Größe eines HTML5-Formulars zu kontrollieren. Ein kleineres Formular bringt den Arbeitsspeicher und die Verarbeitungsleistung eines Geräts nicht an ihre Grenzen und läuft mühelos.
 
-Obwohl die Empfehlungen, die in diesem Artikel diskutiert werden, auf HTML5-Formulare abzielen, gelten diese aber auch für XFA-basierte PDF-Formulare. Diese bewährten Verfahren tragen zusammen zur Gesamtleistung von HTML5-Formularen bei. Es ist eine sorgfältige Planung erforderlich, um effiziente und produktive Formulare zu entwickeln. Erste Schritte:
+Obwohl die Empfehlungen, die in diesem Artikel diskutiert werden, auf HTML5-Formulare abzielen, gelten diese aber auch für XFA-basierte PDF-Formulare. Diese bewährten Verfahren tragen zusammen zur Gesamtleistung von HTML5-Formularen bei. Es ist eine sorgfältige Planung erforderlich, um effiziente und produktive Formulare zu entwickeln. Fangen wir an:
 
 ## Knoten sind die Währung der HTML5-Formulare, also nutzen Sie diese sinnvoll. {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
@@ -47,13 +45,13 @@ Deshalb ist die Reduzierung der Größe der externen Ressourcen und die Verwendu
 
 * Verwenden Sie [komprimierte Bilder](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md). Dies reduziert die Netzwerkaktivität und den erforderlichen Arbeitsspeicher für das Rendern eines Formulars. Deshalb verringert sich die Formularladezeit erheblich.
 * Verwenden Sie die minify-Option im AEM Configuration Manager (Day CQ HTML Library Manager), um JavaScript- und CSS-Dateien zu komprimieren. Weitere Informationen finden Sie unter [OSGi-Konfigurationseinstellungen](/help/implementing/deploying/configuring-osgi.md).
-* Aktivieren Sie die Web-Komprimierung. Die Größe der Anfragen und Antworten von einem Formular werden reduziert. Weitere Informationen finden Sie unter [Leistungsoptimierung für AEM-Formular-Server](https://helpx.adobe.com/de/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Aktivieren Sie die Web-Komprimierung. Dadurch wird die Größe der Anfragen und Antworten reduziert, die aus einem Formular stammen. <!-- For details, see [Performance tuning of AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)-->
 
 ## Das Interesse wachhalten – nur erforderliche Felder zeigen  {#keep-the-interest-alive-show-only-required-fields}
 
 Ein HTML5-Formular kann Hunderte von Seiten umfassen. Ein Formular mit vielen Feldern wird im Browser langsam geladen. Sie können die folgenden Optimierungen in einem XFA-Formular durchführen, um Formulare mit vielen Feldern und Seiten zu optimieren:
 
-* Überlegen Sie, große Formulare ggf. in mehrere Formulare aufzuteilen. Sie können auch einen Formularsatz verwenden, um alle kleineren Formulare zusammen zu gruppieren und sie als eine Einheit zu präsentieren. Ein Formularsatz lädt nur die erforderlichen Formulare. Darüber hinaus können Sie in einem Formularsatz gemeinsame Felder in verschiedenen Formularen so konfigurieren, dass sie Datenbindungen gemeinsam nutzen. Mit den richtigen Datenbindungen müssen Benutzer allgemeine Informationen nur einmal ausfüllen. Diese werden dann in den nachfolgenden Formularen automatisch ausgefüllt. Weitere Informationen zu Formularsätzen finden Sie unter [Formularsatz in AEM Forms](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html).
+* Überlegen Sie, große Formulare ggf. in mehrere Formulare aufzuteilen. Sie können auch einen Formularsatz verwenden, um alle kleineren Formulare zusammen zu gruppieren und sie als eine Einheit zu präsentieren. Ein Formularsatz lädt nur die erforderlichen Formulare. Darüber hinaus können Sie in einem Formularsatz gemeinsame Felder in verschiedenen Formularen so konfigurieren, dass sie Datenbindungen gemeinsam nutzen. Mit den Datenbindungen müssen Benutzer allgemeine Informationen nur einmal ausfüllen. Diese werden dann in nachfolgenden Formularen automatisch ausgefüllt, was zu erheblichen Leistungsverbesserungen führt. <!-- For more details about form sets, see [Form set in AEM forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).-->
 * Erwägen Sie, das Formular in Abschnitte aufzuteilen und jeden Abschnitt auf eine andere Seite zu verschieben. HTML5-Formulare laden jede Seite dynamisch, wenn das Scrollen einer Seite angefordert wird. Nur gescrollte Seiten (die angezeigte Seite und ihre vorherigen Seiten) werden im Arbeitsspeicher gespeichert. Die übrigen Seiten werden nach Bedarf geladen. Indem Sie also Abschnitte erstellen und diese auf eigene Seiten verschieben, reduziert sich die zum Laden eines Formulars erforderliche Zeit. Sie können zudem die erste Seite des Formulars als Landingpage verwenden. Dies ist mit dem Inhaltsverzeichnis eines Buchs vergleichbar. Eine Landingpage des Formulars enthält nur Links zu den anderen Abschnitten des Formulars. Dadurch wird die Ladezeit der ersten Formularseite erheblich verkürzt und das Anwendererlebnis verbessert.
 * Lassen Sie bedingte Abschnitte standardmäßig ausgeblendet. Machen Sie diese Abschnitte nur sichtbar, wenn eine bestimmte Bedingung erfüllt ist. Auf diese Weise können Sie die DOM-Größe auf ein Minimum beschränken. Sie können zur Navigation auch Registerkarten verwenden, um nur jeweils einen Abschnitt anzuzeigen.
 
@@ -64,7 +62,7 @@ HTML5-Formulare können datengesteuerte Felder (Tabellen und Teilformulare) enth
 * Nutzen Sie XFA-Scripting, um eine ausgelagerte Navigation zu ermöglichen und datengesteuerte Felder (Tabellen und Teilformulare) anzuzeigen. Bei der ausgelagerten Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Vorgang des Zeichnens im Browser auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Außerdem sind die Benutzer auf Mobilgeräten nur an einer Teilmenge von Daten interessiert. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen. Beachten Sie auch, dass ausgelagerte Navigation nicht vorkonfiguriert verfügbar ist. Sie können XFA-Scripting verwenden, um eine ausgelagerte Navigation zu entwickeln.
 
 * Überlegen Sie, ggf. mehrere schreibgeschützte Spalten in einer Spalte zusammenzuführen. Dadurch wird der für die Anzeige des Formulars erforderliche Arbeitsspeicher reduziert. Außerdem sollten Sie vermeiden, die Spalten anzuzeigen, für die keine Benutzereingabe erforderlich ist.
-* Überlegen Sie, ggf. das datengesteuerte Formular in einen [Formularsatz](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html) aufzuteilen, wenn die obigen Vorschläge zu keinen deutlichen Verbesserungen führen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jeweils 100 Zeilen in ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[&#x200B; Formularsatz in AEM Forms](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html).
+* Werfen Sie einen Blick auf die Aufteilung des datengesteuerten Formulars in einen Formularsatz, wenn die oben genannten Vorschläge nicht viele Verbesserungen mit sich bringen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jeweils 100 Zeilen in ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. <!--For more information, see [Form set in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).-->
 
 ## Zweierpotenz für ein Datensatzdokument (DoR) {#power-of-two-for-document-of-record-dor}
 

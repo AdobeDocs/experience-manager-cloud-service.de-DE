@@ -3,25 +3,23 @@ title: Architektur von HTML5-Formularen
 description: HTML5-Formulare werden als Paket innerhalb der eingebetteten AEM-Instanz bereitgestellt und stellen die Funktionalität als REST-Endpunkt über HTTP/S unter Verwendung der RESTful-Architektur von Apache Sling zur Verfügung.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 97%
+source-wordcount: '1991'
+ht-degree: 96%
 
 ---
 
 # Architektur von HTML5-Formularen{#architecture-of-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 ## Architektur {#architecture}
@@ -32,11 +30,11 @@ Die HTML5-Formularfunktionen werden als Paket innerhalb der eingebetteten AEM-In
 
 ### Über das Sling Framework {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/) ist ressourcenzentriert. Es verwendet eine Anfrage-URL, um die Ressource zuerst aufzulösen. Jede Ressource verfügt über die Eigenschaft **sling:resourceType** (oder **sling:resourceSuperType**). Basierend auf dieser Eigenschaft, der Anfragemethode und den Eigenschaften der Anfrage-URL wird dann ein Sling-Skript ausgewählt, um die Anfrage zu verarbeiten. Dieses Sling-Skript kann ein JSP oder ein Servlet sein. Im Falle von HTML5-Formulare dienen **Profil**-Knoten als Sling-Ressourcen, und der **Profil-Renderer** dient als Sling-Skript, das die Anforderung bearbeitet, das mobile Formular mit einem bestimmten Profil zu rendern. Ein **Profil-Renderer** ist ein JSP, das Parameter aus einer Anforderung ausliest und den Forms OSGi-Dienst aufruft.
+[Apache Sling](https://sling.apache.org/) ist ressourcenzentriert. Es verwendet eine Anfrage-URL, um die Ressource zuerst aufzulösen. Jede Ressource verfügt über die **sling:resourceType** (oder **sling:resourceSuperType**). Basierend auf dieser Eigenschaft, der Anfragemethode und den Eigenschaften der Anfrage-URL wird dann ein Sling-Skript ausgewählt, um die Anfrage zu verarbeiten. Dieses Sling-Skript kann ein JSP oder ein Servlet sein. Im Falle von HTML5-Formulare dienen **Profil**-Knoten als Sling-Ressourcen, und der **Profil-Renderer** dient als Sling-Skript, das die Anforderung bearbeitet, das mobile Formular mit einem bestimmten Profil zu rendern. Ein **Profil-Renderer** ist ein JSP, das Parameter aus einer Anforderung ausliest und den Forms OSGi-Dienst aufruft.
 
 Weitere Informationen über REST-Endpunkte und unterstützte Anforderungsparameter finden Sie unter [Rendern einer Formularvorlage](/help/forms/rendering-form-template.md).
 
-Wenn Benutzende eine Anfrage von einem Client-Gerät wie einem iOS- oder Android™-Browser starten, löst Sling zuerst den Profilknoten auf Basis der Anfrage-URL auf. Von diesem Profilknoten aus werden **sling:resourceSuperType** und **sling:resourceType** gelesen, um alle verfügbaren Skripte zu ermitteln, die diese Formular-Render-Anfrage verarbeiten können. Anschließend werden Sling-Anfrageselektoren zusammen mit der Anfragemethode verwendet, um das Skript zu identifizieren, das für die Verarbeitung dieser Anfrage am besten geeignet ist. Sobald die Anfrage ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
+Wenn Benutzende eine Anfrage von einem Client-Gerät wie einem iOS- oder Android™-Browser starten, löst Sling zuerst den Profilknoten auf Basis der Anfrage-URL auf. Von diesem Profilknoten aus werden &quot;**&quot;:resourceSuperType** &quot;**&quot;:resourceType**, um alle verfügbaren Skripte zu ermitteln, die diese Formular-Render-Anfrage verarbeiten können. Anschließend werden Sling-Anfrageselektoren zusammen mit der Anfragemethode verwendet, um das Skript zu identifizieren, das für die Verarbeitung dieser Anfrage am besten geeignet ist. Sobald die Anfrage ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
 
 Weitere Informationen zur Sling-Skriptauflösung finden Sie unter [AEM Sling-Spickzettel](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de) oder [Apache Sling-URL-Zerlegung](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
@@ -46,9 +44,9 @@ HTML5-Formulare speichert alle Zwischenobjekte zwischen, die für die Verarbeitu
 
 Formulare für Mobilgeräte verwalten zwei verschiedene Cache-Ebenen: PreRender-Cache und Render-Cache. Der PreRender-Cache enthält alle Fragmente und Bilder einer aufgelösten Vorlage und der Render-Cache enthält gerenderte Inhalte wie HTML.
 
-![Arbeitsablauf für HTML5-Formulare](assets/cacheworkflow.png)
+![Workflow für HTML5-Formulare](assets/cacheworkflow.png)
 
-Arbeitsablauf für HTML5-Formulare
+Workflow für HTML5-Formulare
 
 HTML5-Formulare speichert Vorlagen nicht zwischen, die fehlende Verweise auf Fragmente und Bilder aufweisen. Wenn HTML5-Formulare länger als gewöhnlich lädt, prüfen Sie die Server-Protokolle auf fehlende Verweise und Warnungen. Stellen Sie auch sicher, dass die maximale Größe des Objekts nicht erreicht wurde.
 
@@ -128,7 +126,7 @@ Das Laufzeitpaket enthält die Client-seitigen Bibliotheken, die zum Rendern von
 
 Die XFA-Implementierung von Adobe unterstützt zwei Arten von Skriptsprachen, um die Ausführung der benutzerdefinierten Logik in Formularen zu ermöglichen: JavaScript und FormCalc.
 
-Die Scripting Engine von HTML Forms ist in JavaScript geschrieben, um die XFA-Skript-API in beiden Sprachen zu unterstützen.
+Die Scripting Engine von HTML-Formularen ist in JavaScript geschrieben, um die XFA-Skript-API in beiden Sprachen zu unterstützen.
 
 Während des Renderns wird das FormCalc-Skript auf dem Server in JavaScript übersetzt (und zwischengespeichert), sodass es für die Person, die es verwendet oder gestaltet, transparent ist.
 
@@ -177,7 +175,7 @@ Profile sind die Ressourcenknoten in Sling, die ein Formular oder eine Familie v
 
 #### Profil-Renderer {#profile-renderers}
 
-Der Profilknoten hat eine Eigenschaft **Sling: resourceSuperType** mit dem Wert **xfaforms/profile**. Diese Eigenschaft sendet intern Anforderungen an das Sling-Skript für Profilknoten im Ordner **/libs/xfaforms/profile**. Diese Skripte sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
+Der Profilknoten hat eine -Eigenschaft **sling:resourceSuperType** mit dem Wert **xfaforms/profile**. Diese Eigenschaft sendet intern Anforderungen an das Sling-Skript für Profilknoten im Ordner **/libs/xfaforms/profile**. Diese Skripte sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
 
 * **xfaforms.I18N.&lt;locale>**: Diese Bibliothek enthält lokalisierte Daten.
 * **xfaforms.profile**: Diese Bibliothek enthält die Implementierung für XFA Scripting und für die Layout-Engine.

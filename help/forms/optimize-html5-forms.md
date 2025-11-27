@@ -2,23 +2,22 @@
 title: Optimieren von HTML5-Formularen
 description: Sie können die Ausgabegröße von HTML5-Formularen optimieren.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: HTML5 Forms,Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 91%
+source-wordcount: '310'
+ht-degree: 97%
 
 ---
 
 # Optimieren von HTML5-Formularen {#optimizing-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 HTML5-Formulare rendern Formulare im HTML5-Format. Die Ausgabe kann stark von Faktoren wie der Formulargröße und den Bildern im Formular abhängen. Die empfohlene Vorgehensweise zum Optimieren der Datenübertragung besteht darin, die HTML-Antwort unter Verwendung des Webservers zu komprimieren, über den die Anfrage gestellt wird. Auf diese Weise können die Antwortgröße, der Netzwerkverkehr und die für das Streaming der Daten zwischen dem Server und dem Clientcomputer erforderliche Zeit erheblich verringert werden.

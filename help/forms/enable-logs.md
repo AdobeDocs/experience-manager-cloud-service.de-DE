@@ -3,23 +3,21 @@ title: Aktivieren der Protokollierung für HTML5-Formulare
 description: Das Dienstprogramm der Protokollfunktion aktiviert die Protokollierung von Formularen und hilft beim Debugging von Problemen mit Formularen.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Aktivieren der Protokollierung für HTML5-Formulare{#enable-logging-for-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 Sie können das Dienstprogramm der Protokollfunktion konfigurieren, um mit der Erstellung von Protokollen für HTML5-Formularen zu beginnen. Das Dienstprogramm der Protokollfunktion bietet mehrere Stufen, unter denen Sie die für Ihre Zwecke geeignete wählen können. Für HTML5-Formulare sind Server- und Client-Komponenten vorhanden. Sie können Protokolle für beide Komponenten konfigurieren.
@@ -30,7 +28,7 @@ Führen Sie die folgenden Schritte aus, um Server-seitige Protokolle zu konfigur
 
 1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf. Suchen Sie die Option *Apache Sling Logging Logger-Konfiguration* und öffnen Sie sie. Folgendes Dialogfeld wird angezeigt:
 
-   ![&#x200B; Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
+   ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
    Apache Sling Logging Logger-Konfigurations-Option
 
@@ -172,9 +170,9 @@ Beispiel:
 >[!NOTE]
 >
 >Die Standardprotokollebene für jede Protokollkategorie – a (xfa), b (xfaView) und c (xfaPerf) – ist 2 (ERROR). Entsprechend lauten bei der Protokollkonfiguration 2-b6 die Protokollebenen für die verschiedenen Kategorien wie folgt:
->&#x200B;>a (xfa): 2 (FEHLER der Standardebene)
->&#x200B;>b (xfaView): 6 (vom Benutzer angegebenes TRACE)
->&#x200B;>a (xfaPerf): 2 (FEHLER der Standardebene)
+>a (xfa): 2 (FEHLER der Standardebene)
+>b (xfaView): 6 (vom Benutzer angegebenes TRACE)
+>a (xfaPerf): 2 (FEHLER der Standardebene)
 
 ### Aktivieren der Protokollierung über den Configuration Manager {#enabling-logging-using-configuration-manager}
 

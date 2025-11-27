@@ -1,23 +1,21 @@
 ---
 title: Generieren einer HTML5-Vorschau eines XDP-Formulars
 description: Auf der Registerkarte für die HTML-Vorschau in LiveCycle Designer können Sie das Formular so darstellen, wie es in einem Browser angezeigt würde.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Generieren einer HTML5-Vorschau eines XDP-Formulars{#generate-html-preview-of-an-xdp-form}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die PDF-Ausgabedarstellung eines Formulars, sondern auch eine HTML5-Ausgabedarstellung davon in der Vorschau anzeigen. Sie können die Registerkarte **HTML-Vorschau** verwenden, um ein Formular so wie in einem Browser anzuzeigen.
@@ -38,7 +36,7 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 1. Je nachdem, ob Sie AEM Forms unter OSGi oder JEE ausführen, müssen Sie Folgendes im Feld **Authentifizierungsanforderungen** hinzufügen: 
 
-   * von AEM Forms für JEE
+   *  von AEM Forms für JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
@@ -90,7 +88,7 @@ Der **abgesicherte Modus** ist standardmäßig aktiviert. Behalten Sie dies in P
    >
    >Stellen Sie sicher, dass der AEM Forms-Server läuft. Die HTML-Vorschau stellt eine Verbindung zum CRX-Server her, um eine Vorschau zu *erzeugen*.
 
-   ![AEM Forms Designer-Optionen &#x200B;](assets/server_options.png)
+   ![AEM Forms Designer-Optionen ](assets/server_options.png)
 
    AEM Forms Designer-Optionen
 
@@ -120,9 +118,9 @@ Durch das Testen Ihres Formulars mit einer Beispieldatenquelle wird sichergestel
 
 1. Wählen Sie **Datei > Formulareigenschaften**.
 
-1. Klicken Sie auf die Registerkarte **Vorschau** und geben Sie im Feld „Datendatei“ den vollständigen Pfad zu einer Testdatendatei ein. Sie können auch auf die Schaltfläche „Durchsuchen“ klicken, um zur gewünschten Datei zu gelangen.
+2. Klicken Sie auf die Registerkarte **Vorschau** und geben Sie im Feld „Datendatei“ den vollständigen Pfad zu einer Testdatendatei ein. Sie können auch auf die Schaltfläche „Durchsuchen“ klicken, um zur gewünschten Datei zu gelangen.
 
-1. Klicken Sie auf **OK**. Wenn Sie das nächste Mal eine Vorschau des Formulars auf der Registerkarte **HTML-Vorschau** anzeigen, werden die Datenwerte der XML-Musterdatei in den entsprechenden Objekten dargestellt.
+3. Klicken Sie auf **OK**. Wenn Sie das nächste Mal eine Vorschau des Formulars auf der Registerkarte **HTML-Vorschau** anzeigen, werden die Datenwerte der XML-Musterdatei in den entsprechenden Objekten dargestellt.
 
 ## Vorschau von Formularen in einem Repository {#html-preview-of-forms-in-forms-manager}
 

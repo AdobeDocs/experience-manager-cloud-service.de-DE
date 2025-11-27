@@ -2,26 +2,24 @@
 title: Entwerfen von Formularvorlagen für HTML5-Formulare
 description: AEM Forms ermöglicht das Rendern von XFA-Formularvorlagen im HTML5-Format. Formularentwickler können Formularvorlagen mit Designer entwerfen und die HTML5-Render-Funktion nutzen.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 94%
+source-wordcount: '505'
+ht-degree: 97%
 
 ---
 
 # Entwerfen von Formularvorlagen für HTML5-Formulare{#designing-form-templates-for-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
-Die HTML5-Formularkomponente in AEM ermöglicht das Rendern von XFA-Formularvorlagen im HTML5-Format. Formularentwickler können Formularvorlagen mit [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de) entwerfen und die HTML5-Renderfunktion nutzen. Diese Formularvorlagen können sich zusammen mit ihren Assets im AEM Repository-Dateisystem befinden oder über HTTP bereitgestellt werden. Wenn Sie beabsichtigen, Ihre Formulare mithilfe von Forms Manager zu verwalten, müssen sich die Vorlagen und Assets im AEM-Repository befinden.
+Die HTML5-Formularkomponente in AEM ermöglicht das Rendern von XFA-Formularvorlagen im HTML5-Format. Formularentwickler können Formularvorlagen mit Forms Designer entwerfen und die HTML5-Renderfunktion nutzen. Diese Formularvorlagen können sich zusammen mit ihren Assets im AEM Repository-Dateisystem befinden oder über HTTP bereitgestellt werden. Wenn Sie beabsichtigen, Ihre Formulare mithilfe von Forms Manager zu verwalten, müssen sich die Vorlagen und Assets im AEM-Repository befinden.
 
 Obwohl das Verhalten von HTML5-Formularen und PDF-Formularen sich stark ähnelt, gibt es mehrere Funktionen in beiden Formaten, die nicht im anderen Format verfügbar sind. Beispielsweise ist die Anwendung von Barcodes auf einem PDF-Formular in Adobe Reader und auf einem Formular für Mobilgeräte unterschiedlich, ebenso wie es bei digitalen Signaturen Unterschiede gibt. Weitere Informationen zu diesen Unterschieden finden Sie unter [Funktionsunterschiede zwischen HTML5- und PDF-Formularen](/help/forms/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -35,7 +33,7 @@ Die meisten Schritte um die Entwicklung einer Formularvorlage, wie Schemabindung
 
 #### Anzeigen als HTML-Vorschau {#preview-html}
 
-Die HTML-Vorschau-Registerkarte wurde im Design-Modus für Entwicklerinnen und Entwickler von Formularen hinzugefügt, um eine Vorschau von Formularen im HTML5-Format während des Entwurfsprozesses zu ermöglichen. Weitere Informationen dazu, wie Sie diese Funktion in AEM Forms Designer aktivieren und konfigurieren, finden Sie unter [HTML-Vorschau](/help/forms/preview-xdp-forms-html.md).
+Die HTML-Vorschau-Registerkarte wurde im Design-Modus für Designerinnen und Designer von Formularen hinzugefügt, um eine Vorschau von Formularen im HTML5-Format während des Entwurfsprozesses zu ermöglichen. Weitere Informationen dazu, wie Sie diese Funktion in AEM Forms Designer aktivieren und konfigurieren, finden Sie unter [HTML-Vorschau](/help/forms/preview-xdp-forms-html.md).
 
 #### Scribble-Signatur {#scribble-signature}
 

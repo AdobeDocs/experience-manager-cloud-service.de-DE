@@ -2,23 +2,22 @@
 title: Bildschirmlesehilfen für HTML5-Formulare
 description: Listet die von HTML5-Formularen unterstützten Bildschirmlesehilfen auf.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: HTML5 Forms,Mobile Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Bildschirmlesehilfen für HTML5-Formulare {#screen-readers-for-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 HTML5-Formularkomponenten rendern XFA-Formularvorlagen im HTML5-Format. Diese Formulare können von allen Standard-Browsern wiedergegeben werden, die HTML5 unterstützen. Um ein ähnliches Datenerfassungserlebnis in allen PDF- und HTML5-Formularen zu unterstützen, wird das Layout der PDF-Formulare in HTML5-Formularen beibehalten.

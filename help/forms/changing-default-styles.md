@@ -2,23 +2,21 @@
 title: Ändern von Standardstilen von HTML5-Formularen
 description: Die Stile von HTML5-Formularen basieren auf CSS. Sie können die Standardstile des Formulars ändern.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 93%
+source-wordcount: '391'
+ht-degree: 99%
 
 ---
 
 # Ändern von Standardstilen von HTML5-Formularen{#changing-default-styles-of-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 HTML5-Formulare werden mithilfe von HTML5-Funktionen gerendert. Der Stil des gerenderten Formulars wird mit CSS festgelegt. Das Standarderscheinungsbild von HTML5-Formularen ist der PDF-Darstellung ähnlich. Entwickelnde können benutzerdefinierte CSS verwenden, um das Standarderscheinungsbild von HTML5-Formularen zu ändern.
@@ -53,7 +51,7 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
    1. Suchen Sie auf der Renderer-Seite nach der folgenden Zeile:
 
-      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categories=„xfaforms.profile“ />
 
    1. Fügen Sie Folgendes unter der darüberstehenden Zeile ein, um das Stylesheet einzuschließen:
 
