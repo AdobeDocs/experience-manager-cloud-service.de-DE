@@ -84,4 +84,4 @@ Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie Render-Inf
 
 1. Um zu überprüfen, dass das Profil erstellt wurde, rufen Sie die URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html` auf.
 
-Um Ihre Formulare zu überprüfen,**Importieren Sie Ihre Formulare** aus Ihrem lokalen Dateisystem in AEM Forms und[ zeigen Sie eine Vorschau des Formulars](/help/forms/previewing-forms.md) in der Autoreninstanz des AEM-Servers an.
+Um Ihre Formulare zu überprüfen,**Importieren Sie Ihre Formulare** aus Ihrem lokalen Dateisystem in AEM Forms und[&#x200B; zeigen Sie eine Vorschau des Formulars](/help/forms/previewing-forms.md) in der Autoreninstanz des AEM-Servers an.
