@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 4935fbf5f0eb10f2f17280fb32f07d99f69eb875
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 64%
+source-wordcount: '584'
+ht-degree: 51%
 
 ---
 
@@ -36,28 +36,43 @@ Siehe auch [Von Adobe verwaltetes CDN](https://www.aem.live/docs/byo-cdn-adobe-m
    | CDN-Konfiguration zu einer *vorhandenen* Edge Delivery-Site in Cloud Manager hinzufügen | a. Klicken Sie im linken Seitenmenü unter **Services** auf ![Web-Seiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery-Sites**.<br>b. Klicken Sie in der Edge Delivery-Tabelle am Ende einer Zeile, der keine Domain zugeordnet ist, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Klicken Sie auf **CDN konfigurieren**. |
    | CDN-Konfiguration in Cloud Manager hinzufügen | Klicken Sie im linken Seitenmenü unter **Services** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.<br>b. Klicken Sie oben rechts auf der Seite „Domain-Zuordnungen“ auf **Hinzufügen**. |
 
-1. Wählen Sie **Dialogfeld „Domain** CDN zuordnen“ Ihren CDN-Typ und die zugehörige Konfiguration aus, indem Sie eine der folgenden Optionen auswählen:
+1. Wählen **im Dialogfeld „Domain** CDN zuordnen“ einen der folgenden CDN-Typen aus:
 
-   | CDN-Typ | Konfigurationsdetails |
-   | --- | --- |
-   | In Adobe verwaltetes CDN (empfohlen) | Gehen Sie unter **Konfigurationsdetails** wie folgt vor:<br>a. Wählen Sie in der Dropdown-Liste **Domain** den Domain-Namen aus, der verwendet werden soll.<br>Keine verifizierten Domains in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b.<!-- In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).--> |
-   | Anderer CDN-Anbieter | Wählen Sie diese Option aus, wenn Sie einen eigenen CDN-Anbieter und nicht das für Sie verfügbare von Adobe verwaltete CDN verwenden.<br>Wählen Sie unter **Konfigurationsdetails** in der Dropdown-Liste **Domain** den Domain-Namen aus, der verwendet werden soll.<br>Keine verifizierten Domains in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+   * **Adobe Managed CDN (empfohlen)** - Für diese Konfiguration wird ein von Adobe verwaltetes CDN verwendet. Es umfasst eine automatisierte Einrichtung und Verwaltung sowie integrierte Sicherheitsfunktionen.
+   * **Anderer CDN-**: Für diese Konfiguration wird ein selbstverwaltetes CDN-Provider-Netzwerk verwendet.
 
-   ![Dialogfeld „Domain dem CDN zuordnen“ mit aktiviertem Optionsfeld „Von Adobe verwaltetes CDN“](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
+1. Gehen Sie je nach ausgewähltem CDN-Typ im vorherigen Schritt wie folgt vor:
+
+   * **Adobe Managed CDN**
+
+     ![Dialogfeld „Domain dem CDN zuordnen“ mit aktiviertem Optionsfeld „Von Adobe verwaltetes CDN“](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-adobe-managed.png)
+
+      1. Wählen Sie in **Dropdown** Liste „Herkunft“ eine der folgenden Optionen aus:
+
+         | Dropdown-Liste „Herkunft“ | Beschreibung |
+         | --- | --- |
+         | Sites | Wählen Sie eine Edge Delivery-Site aus. |
+         | Umgebung | Wählen Sie eine bestimmte Cloud Service-Umgebung aus, die im Rahmen Ihrer AEM-Einrichtung als Ziel festgelegt werden soll.<br> Wählen Sie in der Dropdown-Liste **Ebene** eine der folgenden Optionen aus:<br>• Wählen Sie **Veröffentlichen** aus, um eine Live-Produktionsumgebung als Ziel festzulegen, in der Inhalte an Endbenutzende bereitgestellt werden.<br>• Wählen Sie **Vorschau** für Staging- oder produktionsfremde Umgebungen aus, in denen Sie Änderungen testen, bevor sie live geschaltet werden. |
+
+      1. Wählen Sie in **Dropdown** Liste „Domain“ den Domain-Namen aus, den Sie verwenden möchten.<br>Keine verifizierten Domains in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+      1. Wählen **in der Dropdown** Liste „SSL-Zertifikat“ ein Zertifikat aus, das Sie verwenden möchten.<br>Keine SSL-Zertifikate in der Dropdown-Liste verfügbar? Siehe [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+
+      1. Klicken Sie auf **Speichern**.
+
+   * **Anderer CDN-Anbieter**
+
+     ![Dialogfeld „Domain dem CDN zuordnen“ mit aktiviertem Optionsfeld „Von Adobe verwaltetes CDN“](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-other-provider.png)
+
+     Verwenden Sie die aufgelisteten Konfigurationsschritte, um die erforderlichen Einstellungen in Ihrem CDN anzuwenden und die Zuordnung zu bestätigen. Siehe auch [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+      1. Klicken Sie **Ich habe mein CDN konfiguriert**.
 
    <!-- OLD IMAGE/UI (/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)-->
 
-1. Geben Sie im Feld **Domain** den kundenorientierten Host-Namen ein, den Sie bereitstellen möchten (z. B. `www.example.com`)
-1. Wählen Sie in **Dropdown** Liste „Herkunft“ eine der folgenden Optionen aus:
+   <!-- In the **Domain** field, enter the customer-facing hostname you want to serve (for example, `www.example.com`) -->
 
-   | Dropdown-Liste „Herkunft“ | Beschreibung |
-   | --- | --- |
-   | Sites | Wählen Sie eine Edge Delivery-Site aus. |
-   | Umgebung | Wählen Sie eine bestimmte Cloud Service-Umgebung aus, die im Rahmen Ihrer AEM-Einrichtung als Ziel festgelegt werden soll.<br> Wählen Sie in der Dropdown-Liste **Ebene** eine der folgenden Optionen aus:<br>• Wählen Sie **Veröffentlichen** aus, um eine Live-Produktionsumgebung als Ziel festzulegen, in der Inhalte an Endbenutzende bereitgestellt werden.<br>• Wählen Sie **Vorschau** für Staging- oder produktionsfremde Umgebungen aus, in denen Sie Änderungen testen, bevor sie live geschaltet werden. |
-
-1. Klicken Sie **Konfiguration speichern**.
-
-   Adobe empfiehlt, die Domain-Zuordnung zu testen.
+1. Adobe empfiehlt, die Domain-Zuordnung zu testen.
 
 ## Testen der Domain-Zuordnung {#test-domain-mapping}
 
