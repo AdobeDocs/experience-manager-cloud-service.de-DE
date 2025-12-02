@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
+source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1405'
 ht-degree: 50%
 
 ---
@@ -49,6 +49,7 @@ Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit 
 | [Standardauthentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Deklarieren Sie die Benutzernamen und Kennwörter für einen einfachen Authentifizierungsdialog, der bestimmte URLs schützt. | X | X |
 | [Wartungsaufgabe zur Versionsbereinigung](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Repositorys durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Inhaltsversionen | X |  |
 | [Wartungsaufgabe zur Bereinigung des Auditprotokolls](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimieren des AEM-Auditprotokolls für eine verbesserte Leistung durch Deklarieren von Regeln für den Zeitpunkt der Bereinigung von Protokollen | X |  |
+| [Wartungsaufgabe zur Workflow-Bereinigung](/help/operations/maintenance.md) | `MaintenanceTasks` | Minimieren Sie die Anzahl der Workflow-Instanzen, um die Leistung der Workflow-Engine zu steigern.<br><br>Siehe auch [Regelmäßiges Bereinigen von Workflow-Instanzen](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Protokollweiterleitung](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Konfigurieren Sie die Endpunkte und Anmeldedaten für die Weiterleitung von Protokollen an verschiedene Ziele, einschließlich Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk. | X | X |
 | [Registrieren einer Client-ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Richten Sie Adobe Developer Console-API-Projekte durch Registrierung der Client-ID auf eine bestimmte AEM-Umgebung ein. Wird für die Verwendung von OpenAPI-basierten APIs benötigt, die eine Authentifizierung erfordern | X |  |
 
@@ -132,7 +133,7 @@ Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen u
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[&#x200B; können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
+Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[ können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
 
 ```yaml
 kind: "LogForwarding"
