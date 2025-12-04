@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.11.20
-description: Dies sind die Versionshinweise für die Version 2025.11.20 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2025.12.04
+description: Dies sind die Versionshinweise für die Version 2025.12.04 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 73%
+source-wordcount: '166'
+ht-degree: 57%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.11.20 {#release-notes}
+# Universeller Editor – Versionshinweise für 2025.12.04 {#release-notes}
 
-Dies sind die Versionshinweise für die Version 20. November 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 4. Dezember 2025 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ Dies sind die Versionshinweise für die Version 20. November 2025 des universell
 
 ## Neue Funktionen {#what-is-new}
 
-* Popups wurden in eine neue Benutzeroberfläche migriert.
-
-## Funktionen des Early-Adoption-Programms {#early-adopter}
-
-Wenn Sie diese kommenden Funktionen testen und Ihr Feedback teilen möchten, senden Sie bitte über die mit Ihrer Adobe ID verknüpfte E-Mail-Adresse eine E-Mail an Ihren Adobe-Kontakt für Customer Success.
+* Autorisierungs-Header wurden zugunsten der [lokalen Entwickleranmeldung“ deaktiviert](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* Ein Kontextmenü ist jetzt auf der [Strukturbaumstruktur bei Rechtsklick“ verfügbar](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* Ein Hotkey wurde zu [doppelten Komponenten“ hinzugefügt](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### Neuer RTE {#new-rte}
 
@@ -38,7 +36,6 @@ Der neue ProseMirror-RTE mit Seitenauswahl im Link-Dialog ist jetzt im rechten P
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die Verarbeitung von RTE-Werten wurde vereinfacht.
-* Eine seltene Symbolleisten-Wettbewerbsbedingung wurde behoben.
-* Die nicht verwendeten Umschalter für Funktionen wurden entfernt.
-* Abhängigkeiten wurden aktualisiert.
+* Ein Problem mit dem RTE, der nicht ordnungsgemäß auf der Arbeitsfläche gespeichert wurde, wurde behoben.
+* Das Zuschneiden der Ordnerstruktur der Inhaltsauswahl wurde behoben.
+* `componentId` wird jetzt während der Aktion „Hinzufügen“ bereitgestellt.

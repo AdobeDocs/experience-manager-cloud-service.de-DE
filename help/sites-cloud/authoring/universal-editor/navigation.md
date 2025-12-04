@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 93%
+source-wordcount: '1853'
+ht-degree: 92%
 
 ---
 
@@ -78,7 +78,7 @@ Die obere Navigationsleiste von Experience Platform befindet sich immer oben im 
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 
@@ -137,15 +137,9 @@ Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ au
 >
 >Verwenden Sie den Hotkey `Command-Z` bzw. `Shift-Command-Z` zum Rückgängigmachen bzw. Wiederherstellen.
 
-#### Authentifizierungs-Header {#authentication-settings}
-
-Wählen Sie das Symbol für die Authentifizierungs-Header aus, wenn Sie [einen benutzerdefinierten Authentifizierungs-Header für lokale Entwicklungszwecke festlegen möchten](/help/implementing/universal-editor/developer-overview.md#auth-header).
-
-![Schaltfläche „Authentifizierungs-Header-Einstellungen“](assets/authentication-header-settings.png)
-
 #### Lokale Entwickleranmeldung {#local-developer-login}
 
-Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [&#x200B; (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
+Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [ (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
 
 ![Schaltfläche „Lokale Entwickleranmeldung“](assets/local-developer-login.png)
 
@@ -265,6 +259,7 @@ Im Inhaltsstruktur-Modus zeigt das Bedienfeld die Hierarchie des Seiteninhalts a
 
 * Bei der Auswahl eines Elements in der Inhaltsstruktur scrollt der Editor zu diesem Inhalt und wählt ihn aus.
 * Bei Doppelklicken auf ein Element in der Inhaltsstruktur scrollt der Editor zu diesem Inhalt, wählt ihn aus und öffnet auch die zugehörigen Eigenschaften im [Eigenschaftenmodus](#properties-mode).
+* Wenn Sie mit der rechten Maustaste auf ein Element in der Struktur klicken, wird ein Kontextmenü mit den entsprechenden Aktionen für das Element geöffnet.
 
 ![Inhaltsstruktur](assets/content-tree.png)
 
@@ -307,6 +302,10 @@ Wenn Sie eine Komponente innerhalb einer Container-Komponente in der Inhaltsstru
 ![Symbol „Duplizieren“](assets/duplicate.png)
 
 Durch Tippen oder Klicken auf die Schaltfläche „Duplizieren“ [wird die ausgewählte Komponente dupliziert](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
+
+>[!TIP]
+>
+>Verwenden Sie den Hotkey `Command+d`, um eine ausgewählte Komponente aus einem Container zu löschen.
 
 ##### Löschen {#delete}
 
