@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1768'
+ht-degree: 98%
 
 ---
 
@@ -157,6 +157,13 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 ```
 
 Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, der Edge-Authentifizierungskonfiguration und dem Wert des Headers x-forwarded-host. Außerdem identifiziert er, ob ein Edge-Schlüssel festgelegt ist und welcher Schlüssel verwendet wird, falls eine Übereinstimmung vorliegt.
+
+>[!NOTE]
+>
+>Sie können eine schnelle Entwicklungsumgebung (RDE) verwenden, um Ihre Konfiguration bereitzustellen und zu testen:
+>
+>* [Schnelle Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Beispielkonfigurationen von CDN-Anbietern {#sample-configurations}
 

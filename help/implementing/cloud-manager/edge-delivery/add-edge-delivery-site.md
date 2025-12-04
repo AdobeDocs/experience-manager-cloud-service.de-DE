@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihrem Produktions- oder Sandbox-Programm eine
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 92%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -58,6 +58,12 @@ Klicken Sie oben rechts auf der Seite auf ![Link-Symbol oder Hinzufügen](https:
    | **3** | Erstellen Sie eine Pull-Anfrage für die soeben erstellten Änderungen im Git-Repository und führen Sie sie dann mit `main` zusammen, um den Code zu übertragen. |
 
 1. Klicken Sie auf **Überprüfen**.
+
+   >[!NOTE]
+   >
+   >Wenn Ihre Edge Delivery Services-Site die Helix-Authentifizierung verwendet, ist die Verifizierungsproblematik nicht zugänglich. Deaktivieren Sie die Authentifizierung vorübergehend, schließen Sie die Site-Überprüfung ab, und schalten Sie die Authentifizierung dann wieder ein.
+
+
 
 Sobald das Repository verifiziert wurde, wird sein Status in der Tabelle der Edge Delivery-Sites aktualisiert. Der Status wird durch einen grünen Kreis mit weißem Häkchen angegeben.
 

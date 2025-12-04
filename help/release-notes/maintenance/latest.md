@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 39993d115d58d9dfe1f9328c5ceba0d30a78569d
+source-git-commit: 68444ac15513bad7c1eaee97c474e21d36992d49
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 20%
+source-wordcount: '502'
+ht-degree: 42%
 
 ---
 
@@ -16,108 +16,60 @@ ht-degree: 20%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 23385 {#23385}
+## Version 23482 {#23482}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 23385, die am Freitag, 13. November 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 22943.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 23482, die am Donnerstag, 3. Dezember 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 23385.
 
-Die Funktionsaktivierung von 2025.11.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
-
->[!NOTE]
->
->Versionen 23320 und 23122 wurden privat gemacht.
-
-### Verbesserungen {#enhancements-23385}
-
-* CQ-4361363: Neueste AEM und Granite-Übersetzungen.
-* FORMS-21594: Sperren der Vorlage für interaktive Kommunikation und des Inhalts- und Layout-Layouts für Inhaltsautoren aktivieren.
-* FORMS-20385: Unterstützt die XDP-Bearbeitung im Editor für interaktive Kommunikation.
-* FORMS-10883: Unterstützung für JSON mit XHTML-Namespace-Tags in der DoR-Generierung, um ein genaues Rendering von Rich-Text-Daten sicherzustellen, die über APIs übermittelt werden.
-* FORMS-21751: Funktionen der Arbeitsfläche - Textüberlauf, Benutzeroberfläche für Seitenumbruch.
-* FORMS-22049: Editor für interaktive Kommunikation - Migration zu Spectrum 2.
-* FORMS-22050: Unterstützung für dynamische Seitennummerierung im Editor für interaktive Kommunikation.
-* FORMS-21606: Öffentliche OSGi-Render-SPIs für interaktive Kommunikation.
-* FORMS-21613: Transaktionsberichte und Leistungsprotokollierung für Render-SPIs für interaktive Kommunikation.
-* GRANITE-62394: Joda-time auf 2.12.7 aktualisiert.
-* GRANITE-36205: Aktualisieren Sie Oak auf Version 1.88.0.
-* GRANITE-62020: Verbessern der Wiederholungsrichtlinie für `RepositoryServiceHttpClient`.
-* GRANITE-62169: Aktualisieren Sie commons-lang auf 3.19.0.
-* SITES-35092: Inhaltsfragmente - Neues Mixin- und Upgrade-Verfahren für die semantische Suche.
-* SITES-32319: Bereitstellungs-OpenAPI - Support-Seitenverweise.
-* SITES-20123: GraphQL: Unterstützt hochgestellte Elemente in JSON-Antworten.
-* SITES-34744: Neue Eigenschaft „Karte“ in der Antwort des Inhaltsfragments, die Daten enthält, die zum Rendern einer Miniaturansicht verwendet werden können.
-* SITES-34571: Zulassen, dass Auflistungsfelder leer sind.
-* SITES-34812: Es wurde die Möglichkeit hinzugefügt, ein Inhaltsfragment ohne seine Referenzen abzurufen, indem der Parameter „references“ mit dem Wert „none“ verwendet wird.
-* SITES-35176: Das Auschecken eines Inhaltsfragments über die Touch-optimierte Benutzeroberfläche verhindert jetzt die Bearbeitung des Inhaltsfragments im neuen Editor durch andere Benutzer.
-* SITES-30371: Es wurde Unterstützung für UUID-basierte Referenzfelder hinzugefügt.
-* SITES-19309: Beim Öffnen des Assistenten zum Verschieben von Seiten werden maximal 150 Verweise abgerufen.
-* SITES-32515: Edge Delivery mit universellem Editor - Hinzufügen von Unterstützung für Mehrfachfelder und zusammengesetzte Mehrfachfelder (früher Zugriff).
-* SITES-33784: Edge Delivery mit universellem Editor - Hinzufügen von Unterstützung für ld-json in Seitenmetadaten.
-* SITES-34832: Edge Delivery mit universellem Editor - Öffentlichen Pfad einer Seite zur Antwort des Seiteninformations-Servlets hinzufügen.
-* SITES-25893: Edge Delivery mit universellem Editor - Hinzufügen von Unterstützung für „strong“ und Hervorheben des Text-Renderings in Blöcken.
-* SITES-26158: Edge Delivery mit universellem Editor - Hinzufügen von Unterstützung für Tabellen-Markup in Blöcken und Spalten (früher Zugriff).
-* SITES-27949: Edge Delivery mit universellem Editor - Pfadzuordnung optional machen.
-* SITES-35811: Neuen Index in Inhaltsfragmentabfragen verwenden.
-* SKYOPS-120857: Aktualisieren von filevault auf 4.1.4.
-* SKYOPS-118390: JCR-Ressource auf 3.3.6 aktualisieren.
-* SKYOPS-121082: Aktualisieren von Versionen von `org.apache.sling.discovery.standalone`-, `org.apache.sling.jcr.packageinit`- und `org.apache.sling.commons.fsclassloader` Sling-Bundles.
-
-### Behobene Probleme {#fixed-issues-23385}
-
-* ASSETS-58926: Korrigieren Sie die Miniaturbildfunktion für Videoänderungen in DM.
-* ASSETS-58623: Korrigieren Sie NPE in Omnisearch, wenn die Konfiguration vorhanden ist.
-* CQ-4361144: Es wurde ein Problem behoben, bei dem Inhaltsfragmente aus Übersetzungsaufträgen übersprungen wurden.
-* CQ-4355446: Die nicht lokalisierte Zeichenfolge im Übersetzungsprojekt, die im Dialogfeld „Übersetzungsauftrag abbrechen“ auftritt, wurde behoben.
-* CQ-4360747: Es wurde ein Problem behoben, bei dem wiederholbare Übersetzungsaufträge zu oft leere Payloads und Trigger erstellen.
-* GRANITE-61318: Es wurde ein Problem behoben, bei dem der Assistent zur Seitenerstellung nur Pflichtfelder auf der Registerkarte „Allgemein“ hervorhebt.
-* GRANITE-60514: Es wurde ein Problem behoben, bei dem geplante Veröffentlichungen während der Ausführung der Full-Stack-Pipeline angehalten wurden.
-* GRANITE-61019: Problem mit GC beim ersten Ausführen nach einem Neustart von AEM beheben.
-* GRANITE-60456: Problem behoben, das auftrat, wenn ein Administrator die Eigenschaftsseite eines Benutzers öffnet.
-* SITES-34555: GraphQL - QueryValidationError nach Bereitstellungen.
-* SITES-35077: Inhaltsfragmente - Das Aufheben der Veröffentlichung schlägt für Fragmente mit Klammern aufgrund einer falschen URL-Codierung fehl.
-* SITES-35374: Inhaltsfragmente - Bearbeitetes Inhaltsfragment verschwindet nach der Rückkehr.
-* SITES-36130: NPE in `EditorRestrictionsStatusImpl`.
-* SITES-35810: NullPointerException in Launches blockiert die Warteschlange publishEdgeDeliverySubscriber.
-* SITES-34368: AEM CIF generiert 12 GraphQL-Aliase - überschreitet das Limit von Magento 2.4.6-P12 von 10.
-* SITES-36193: Fehlerbehebungen am CCS-Connector.
-* SITES-35169: Es wurde ein Problem behoben, das zu einer falschen Paginierung führte, wenn ungültige Fragmentressourcen von der Suche zurückgegeben wurden.
-* SITES-34574: Es wurde ein Problem behoben, bei dem der Cursor in einigen Fällen nicht von der Inhaltsfragmentsuch-API zurückgegeben wurde.
-* SITES-35520: Es wurde ein Problem behoben, das beim Versuch, Inhalte zu veröffentlichen, zu ClassCastException oder Timeouts führte.
-* SITES-35210: Es wurde eine NullPointerException behoben, die beim Versuch auftrat, ein fehlerhaftes Fragment mit leerem Verweisfilter zu veröffentlichen.
-* SITES-35933: Es wurde ein Fehler behoben, der dazu führte, dass leere „Aktivierungsanfrage“-Workflows nach der Veröffentlichung des Inhaltsfragments ausgelöst wurden.
-* SITES-35925: Es wurde ein Fehler im Zusammenhang mit dem Patchen von Inhaltsfragmentmodellen behoben, durch den die Eigenschaften „übersetzbar“ und „showThumbnail“ aus dem Modell gelöscht wurden.
-* SITES-35409: Es wurde ein Fehler behoben, der die erneute Veröffentlichung angepasster Fragmente beim Verschieben einer Seite verhinderte.
-* SITES-15757: Es wurde ein Fehler behoben, der die erneute Veröffentlichung angepasster Seiten beim Verschieben einer Seite verhinderte.
-* SITES-34638: Es wurde ein Fehler behoben, durch den Eigenschaften von übergeordneten Seiten beim Erstellen neuer Versionen nicht einbezogen wurden.
-* SITES-35226: Es wurde eine Regression behoben, die dazu führte, dass der Asset-Wähler im Seiteneditor unter bestimmten Bedingungen nicht geladen werden konnte.
-* SITES-35071: CSV-Export gibt ungefilterte Ergebnisse zurück, wenn Omnisearch zitierte Phrasen verwendet.
-* SITES-32182: Edge Delivery mit universellem Editor - Beheben von Kodierungsproblemen mit URLs, die bereits kodierte Anforderungsparameter enthalten.
-* SITES-34324: Edge Delivery mit universellem Editor - Fehlerbehebung beim Rendern von Links mit einem tel: -Protokoll.
-* SITES-35333: Edge Delivery mit universellem Editor - Korrigieren Sie die Auswahl der Asset-Ausgabedarstellung für Bilder in Seitenmetadaten.
-* SITES-35549: Edge Delivery mit universellem Editor - Korrigieren Sie doppelt kodierte HTML-Entitäten in Seitenmetadaten.
-
-#### AEM Guides {#guides-23385}
-
-* GUIDES-33597: Wenn ein leeres `prop` ohne Attribute oder Werte zu einer DITAVAL-Datei hinzugefügt wird, können keine zusätzlichen `prop` hinzugefügt werden.
-* GUIDES-33693: Wenn Sie ein bearbeitetes Bild über die Experience Manager Guides-Benutzeroberfläche erneut hochladen, wird die ursprüngliche Ausgabedarstellung des Bildes aktualisiert, aber der zugehörige DITA-Inhalt zeigt weiterhin die vorherige Bildversion an.
-* GUIDES-35607: Fehlerprotokolle, die beim Hochladen eines Assets über die Assets-Benutzeroberfläche oder beim Erstellen einer neuen Datei über die Editor-Benutzeroberfläche generiert werden, verwenden fälschlicherweise den Begriff `predecessor` anstatt in der Protokollmeldung `successor` zu verwenden.
-* GUIDES-37649: Beim Veröffentlichen einer DITA-Zuordnung mit Baseline auf AEM Sites (mit veralteter Komponentenzuordnung) werden auch die Zuordnungselemente mit dem Attribut `processing-role = resource-only` veröffentlicht.
-
-Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Die Funktionsaktivierung von 2025.12.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 
-### Bekannte Probleme {#known-issues-23385}
+### Verbesserungen {#enhancements-23482}
 
-* FORMS-22633: Formularübermittlungen können fehlschlagen, wenn benutzerdefinierter Code verwendet wird, der auf den GuideBridge-APIs (`getData` oder `getDataXML`) basiert. Wenn dieses Problem auftritt, wenden Sie sich bitte an den Adobe-Support.
+* ASSETS-49770: Quarantänebenachrichtigungen für Ergebnisse der Malware-Suche hinzufügen.
+* ASSETS-54079: Benutzerdefiniertes Metadatenformular für Quarantäneordner anwenden.
+* ASSETS-54083: Erstellen eines geplanten Quarantänebereinigungsmechanismus.
+* ASSETS-54278: Entfernen der `dam:avScanTime` aus Assets.
+* ASSETS-57284: Datei-Uploads auf Quarantäne-Ordner beschränken (Ziehen und Ablegen deaktivieren).
+* ASSETS-57428: Quarantäneordner in der Benutzeroberfläche der Assets-Ansicht ausblenden.
+* ASSETS-57626: Verbessern Sie das Wiederholungsverhalten für asynchrone Asset-Aufträge.
+* ASSETS-57879: Zusammenführungsoption für asynchrone Aufträge zum Verschieben/Kopieren von Assets hinzufügen.
+* ASSETS-58099: Fügen Sie die Konfiguration hinzu, um erweiterte Smart-Tags für die gesamte Umgebung zu deaktivieren.
+* ASSETS-58136: Implementieren des Feedbacks zu Seitenumbrüchen in der OpenAPI-Suche.
+* ASSETS-59402: Hinzufügen asynchroner Auftrags-Endpunkte für die Ordnerlöschungs-API: Exportieren von Paketen in eine interne Region.
+* ASSETS-59966: Die Gruppe der Malware-Administratoren in Quarantäne-Administratoren umbenennen.
+* ASSETS-60166: Verwenden Sie VideoViewer.js anstelle von iframe-basierten URLs.
+* GRANITE-61378: Tools zum Debuggen von Berechtigungen - ListPrincipals-API.
+* GRANITE-63235: Abfrage zur Identifizierung von Sites mithilfe `cq:conf` -Eigenschaft, unterstützt die Erkennung alter Seiten/Versionen.
+* SITES-30452: Inhalts-API mit ASO - Vorschläge für Titel und Beschreibungen, XWalk-Unterstützung, JSON-Patch-Vorgänge, IMS-Service-Prinzipalbindung.
 
-### Eingestellte Funktionen und APIs {#deprecated-23385}
+### Behobene Probleme {#fixed-issues-23482}
+
+* ASSETS-57430: Fehlerbehebung beim Hochladen der Assets-Ansicht, Vorverarbeitung wird übersprungen: `repoapi.preprocessing`-Paket exportieren, RAPI auf den neuesten Stand aktualisieren.
+* ASSETS-58190: Reduzieren Sie unnötigerweise hohe Schätzwerte in der Benutzeroberfläche für Sammlungen.
+* ASSETS-58866: Korrigieren Sie den Asset-Titel/die Beschreibung/ID, die in OpenAPI-Antworten zurückgegeben wird.
+* ASSETS-58868: Paginierung korrigieren, wenn in Assets Felder fehlen.
+* ASSETS-58920: Korrektur des Massenimports von Assets, wobei die Vorverarbeitung übersprungen wird.
+* ASSETS-59168: Die Start-/Endzeit für den Scan korrigieren, wenn eine falsche Zeitzone angezeigt wird.
+* ASSETS-59702: Fehlerkorrektur - Die Ereignisreihenfolge wird nicht mehr korrigiert, wenn der Asset-Status auf „Kein Status“ gesetzt ist.
+* ASSETS-59830: Asynchrone Aufträge in die Warteschlange stellen, die beim Beenden des Pod angehalten wurden.
+* ASSETS-49757: Fehlerbehebungen bei Malware Detection Scan Events.
+* GRANITE-61019: Fehlerbehebung `gcMonitor` beim ersten Ausführen nach einem Neustart von AEM nicht benachrichtigt.
+* GRANITE-62717: Beheben `JSafe` Kennwortbehandlung mit Nicht-ASCII-Zeichen.
+* SITES-34331: Rollout-Überlagerung beim Laden mit Timeout 503 für Benutzende ohne Administratorrechte (`cqLiveSyncCancelled index`) wurde behoben.
+
+### Bekannte Probleme {#known-issues-23482}
+
+Keine.
+
+### Eingestellte Funktionen und APIs {#deprecated-23482}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-23385}
+### Sicherheitskorrekturen {#security-23482}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion wurden 31 identifizierte Schwachstellen behoben, was für einen noch robusteren Systemschutz sorgt.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt vier identifizierte Schwachstellen und sorgt somit für einen noch robusteren Systemschutz.
 
-### Eingebettete Technologien {#embedded-tech-23385}
+### Eingebettete Technologien {#embedded-tech-23482}
 
 | Technologie | Version | Link |
 |---|---|---|
@@ -127,3 +79,4 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | AEM-Kernkomponenten | 2,30,2 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (Standard) | [Unterstützte Node.js-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+

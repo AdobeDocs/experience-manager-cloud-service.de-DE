@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 100%
+source-wordcount: '749'
+ht-degree: 93%
 
 ---
 
@@ -29,6 +29,10 @@ Adobe Experience Manager as a Cloud Service wird mit einem standardmäßigen Dom
 Jeder Website ist eine eindeutige, von Computern lesbare, numerische Adresse zugeordnet, z. B. `184.33.123.64`. Das Domain Name System (DNS) ermöglicht es Ihnen, benutzerdefinierte Marken-Domains an Websites anzuhängen, indem numerische Adressen in einprägsame Adressen wie `wknd.com` übersetzt werden.
 
 Es empfiehlt sich, einen Domain-Namen für Ihre Website zu verwenden, der für Ihre Kundschaft einprägsam ist und Ihre Marke widerspiegelt.
+
+>[!IMPORTANT]
+>
+> Standard-Domains unter adobeaemcloud.com **sollten nicht verwendet werden** um Inhalte bereitzustellen, die für SEO-Zwecke wichtig sind. Die Domains und Subdomains von adobeaemcloud.com können von Suchmaschinen nicht indiziert werden, da sie als &quot;[.txt“ ](https://cdn.adobeaemcloud.com/robots.txt), die das Crawling und die Indizierung verhindert. Verwenden Sie stattdessen Ihre eigene benutzerdefinierte Domain, um eine benutzerdefinierte robots.txt bereitzustellen.
 
 Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen kaufen, einer Firma oder Organisation, die Domain-Namen verwaltet und verkauft. Registrierungsstellen für Domain-Namen verwalten Domain-Namen auf DNS-Servern.
 
