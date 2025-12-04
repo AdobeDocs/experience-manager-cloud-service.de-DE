@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
+source-wordcount: '2028'
+ht-degree: 95%
 
 ---
 
@@ -22,13 +22,38 @@ Das von Adobe bereitgestellte CDN verfügt über mehrere Funktionen und Dienste,
 
 Jede dieser Optionen, einschließlich der Konfigurationssyntax, wird in einem eigenen Abschnitt unten beschrieben. 
 
-Es gibt einen Abschnitt über das [Rotieren von Schlüsseln](#rotating-secrets), welches eine gute Sicherheitspraxis ist.
+Umgebungs- oder Pipeline-Geheimnisse (Bereitstellungsschritt) können mit `${{..}}` Syntax referenziert und überall dort verwendet werden, wo in Bedingungen oder Settern ein Literalwert verwendet werden kann.
 
->[!NOTE]
-> Geheimnisse, die als Umgebungsvariablen definiert sind, sollten als unveränderlich betrachtet werden. Anstatt den Wert zu ändern, sollten Sie ein neues Geheimnis mit einem neuen Namen erstellen und in der Konfiguration auf dieses Geheimnis verweisen. Andernfalls erfolgt eine unzuverlässige Aktualisierung der Geheimnisse.
+```
+kind: "CDN"
+version: "1"
+data:
+  originSelectors:
+    rules:
+      - name: select-origin-example
+        when: { reqHeader: "x-auth-header", equals: "${{AUTH_HEADER}}" }
+        action:
+          type: selectOrigin
+          originName: origin-name
+          headers:
+            Authorization: "${{AUTH_HEADER}}"
+    ...
+```
 
->[!WARNING]
->Entfernen Sie nicht die Umgebungsvariablen, auf die in Ihrer CDN-Konfiguration verwiesen wird. Dies kann zu Fehlern beim Aktualisieren Ihrer CDN-Konfiguration führen (z. B. beim Aktualisieren von Regeln oder benutzerdefinierten Domains und Zertifikaten).
+Im Folgenden finden Sie einige Richtlinien, die Sie beim Arbeiten mit geheimen Daten beachten sollten:
+
+* Umgebungsgeheimnisse müssen als eine Umgebungsvariable vom Typ [Cloud Manager-Geheimnis bereitgestellt ](/help/operations/config-pipeline.md#secret-env-vars). Wählen Sie für das Feld Angewendeter Service die Option Alle aus.
+* Geheime Verweise werden nicht innerhalb von Zeichenfolgen interpoliert (z. B. `"Token ${{AUTH_TOKEN}}"` funktioniert nicht)
+* Ein referenziertes Umgebungsgeheimnis sollte nicht entfernt werden, wenn es weiterhin in der Konfiguration referenziert wird.
+
+  >[!WARNING]
+  >Entfernen Sie nicht die Umgebungsvariablen, auf die in Ihrer CDN-Konfiguration verwiesen wird. Dies kann zu Fehlern beim Aktualisieren Ihrer CDN-Konfiguration führen (z. B. beim Aktualisieren von Regeln oder benutzerdefinierten Domains und Zertifikaten).
+
+* Geheimnisse sollten regelmäßig rotiert werden. Es gibt einen Abschnitt über das [Rotieren von Schlüsseln](#rotating-secrets), welches eine gute Sicherheitspraxis ist.
+
+  >[!NOTE]
+  > Geheimnisse, die als Umgebungsvariablen definiert sind, sollten als unveränderlich betrachtet werden. Anstatt den Wert zu ändern, sollten Sie ein neues Geheimnis mit einem neuen Namen erstellen und in der Konfiguration auf dieses Geheimnis verweisen. Andernfalls erfolgt eine unzuverlässige Aktualisierung der Geheimnisse.
+
 
 ## HTTP-Header-Wert des kundenseitig verwalteten CDN {#CDN-HTTP-value}
 
