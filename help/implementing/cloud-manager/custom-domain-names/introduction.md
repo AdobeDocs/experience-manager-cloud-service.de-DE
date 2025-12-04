@@ -32,7 +32,7 @@ Es empfiehlt sich, einen Domain-Namen für Ihre Website zu verwenden, der für I
 
 >[!IMPORTANT]
 >
-> Standard-Domains unter adobeaemcloud.com **sollten nicht verwendet werden** um Inhalte bereitzustellen, die für SEO-Zwecke wichtig sind. Die Domains und Subdomains von adobeaemcloud.com können von Suchmaschinen nicht indiziert werden, da sie als &quot;[.txt“ ](https://cdn.adobeaemcloud.com/robots.txt), die das Crawling und die Indizierung verhindert. Verwenden Sie stattdessen Ihre eigene benutzerdefinierte Domain, um eine benutzerdefinierte robots.txt bereitzustellen.
+> Standard-Domains unter adobeaemcloud.com **sollten nicht verwendet werden** um Inhalte bereitzustellen, die für SEO-Zwecke wichtig sind. Die Domains und Subdomains von adobeaemcloud.com können von Suchmaschinen nicht indiziert werden, da sie als &quot;[.txt“ &#x200B;](https://cdn.adobeaemcloud.com/robots.txt), die das Crawling und die Indizierung verhindert. Verwenden Sie stattdessen Ihre eigene benutzerdefinierte Domain, um eine benutzerdefinierte robots.txt bereitzustellen.
 
 Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen kaufen, einer Firma oder Organisation, die Domain-Namen verwaltet und verkauft. Registrierungsstellen für Domain-Namen verwalten Domain-Namen auf DNS-Servern.
 
