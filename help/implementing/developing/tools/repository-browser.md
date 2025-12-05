@@ -76,7 +76,7 @@ Wenn Sie auf einen Ordner klicken, wird außerdem die URL dynamisch geändert, s
 
 Für die Publishing-Instanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
 
-Verwenden Sie das Produktprofil AEM-Veröffentlichungsadministratoren, um diese Speicherorte sichtbar zu machen. Weitere Informationen finden Sie in der [Dokumentation zu Team- und ](/help/onboarding/aem-cs-team-product-profiles.md).
+Verwenden Sie das Produktprofil AEM-Veröffentlichungsadministratoren, um diese Speicherorte sichtbar zu machen. Weitere Informationen finden Sie in der [Dokumentation zu Team- und &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md).
 
 <!-- Drafting because of CQDOC-23204
 
