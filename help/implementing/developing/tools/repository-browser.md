@@ -6,10 +6,10 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 96%
 
 ---
 
@@ -76,38 +76,42 @@ Wenn Sie auf einen Ordner klicken, wird außerdem die URL dynamisch geändert, s
 
 Für die Publishing-Instanz zeigt der Repository-Browser standardmäßig nur öffentliche Inhalte an, sodass bestimmte Ordner wie `/conf` oder `/home` nicht angezeigt werden.
 
-Gehen Sie wie folgt vor, um diese Speicherorte sichtbar zu machen.
+Verwenden Sie das Produktprofil AEM-Veröffentlichungsadministratoren, um diese Speicherorte sichtbar zu machen. Weitere Informationen finden Sie in der [Dokumentation zu Team- und ](/help/onboarding/aem-cs-team-product-profiles.md).
 
-1. Klicken Sie auf die drei Punkte neben der Umgebung Ihrer Wahl und wählen Sie **Zugriff verwalten**.
+<!-- Drafting because of CQDOC-23204
+
+1. Click the three dots next to the environment of your choice and select **Manage Access**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. Suchen Sie Ihre Veröffentlichungsinstanz und klicken Sie darauf
+1. Find your publish instance, then click it
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Erstellen Sie ein Produktprofil für Veröffentlichungs-Admins. Im folgenden Beispiel wird es **DEV – AEM-Veröffentlichungsadministratoren** genannt.
+1. Create a product profile for publish administrators. In the example below, it is called **DEV - AEM Administrators Publish**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. Fügen Sie dem neuen Produktprofil die entsprechenden Benutzer hinzu, die in der Lage sein sollten, im Browser des Veröffentlichungs-Repositorys mit vollem Zugriff zu navigieren.
+1. Add the appropriate users, corresponding to who should be able to navigate the publish repository browser with full access, to the new product profile
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Warten Sie einige Minuten und öffnen Sie dann die **AEM-Autoren**-Konsole.
-1. Fügen Sie die Gruppe, die dem neuen Produktprofil entspricht, als Mitglied der Admingruppe hinzu, indem Sie auf **„Tools“ > „Sicherheit“ > „Gruppen“ in der Authoring-Instanz** und dann auf die Gruppe **Admins** klicken. Fügen Sie dann die Gruppe wie unten gezeigt hinzu.
+1. Wait for a few minutes, then open the **AEM author** console
+1. Add the group corresponding to the new product profile as a member of the administrator's group by clicking **Tools - Security - Groups on author**, then clicking the **administrators** group. Then, add the group as shown below
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Aktivieren Sie die Gruppe **Administratoren** und die neue Gruppe **DEV – AEM-Veröffentlichungsadministratoren**, damit sie in der Veröffentlichungsinstanz verfügbar werden.
+1. Activate the **administrators** and the new **DEV - AEM Administrators Publish** group so that they become available on publish
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Als bewährte Sicherheitsmaßnahme sollten Sie die neue Gruppe **DEV – AEM-Veröffentlichungsadmins** aus der Admingruppe auf **Authoring** entfernen, sodass die neue Gruppe auf die Veröffentlichung beschränkt ist.
+1. As a good security practice, remove the new **DEV - AEM Administrators Publish** group from the administrator's group on **author** so the new group is isolated to publish 
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. Beim Zugriff auf den Repository-Browser für eine Veröffentlichungsinstanz sind alle Ordner sichtbar, einschließlich `/home` und `/conf`.
+1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
+
+-->
 
 ### Anzeigen der JCR-Eigenschaften {#view-jcr-properties}
 
