@@ -3,9 +3,9 @@ title: Übersicht über den Discovery Agent
 description: Erfahren Sie, wie Sie mit dem Discovery Agent relevante AEM-Inhalte bei Bedarf über natürliche Gesprächsaufforderungen bereitstellen können, um ein optimiertes, klick- und kostenloses Discovery-Erlebnis zu erzielen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -92,13 +92,13 @@ Eingabeaufforderungen im Beispiel:
 * Anzeigen von Assets, die nach dem `Nov 1 2025` in Ordner `WKND` geändert wurden.
 * Auflisten `lifestyle` Bilder im Ordner `WKND`.
 
-**Auflösung und formatbasierte Asset-Erkennung**
+**Formatbasierte Asset-Erkennung**
 
-Der Discovery Agent kann Assets identifizieren, die bestimmte Qualitätsanforderungen erfüllen, z. B. Dateiformat oder Mindestauflösung, sodass Benutzer schnell Produktvisualisierungen finden können, die für eine hochwertige Bereitstellung und Wiederverwendung über verschiedene Kanäle hinweg bereit sind.
+Der Discovery Agent kann Assets identifizieren, die bestimmten Qualitätsanforderungen entsprechen, z. B. dem Dateiformat, sodass Benutzer Produktvisualisierungen, die für eine hochwertige Bereitstellung und Wiederverwendung über verschiedene Kanäle hinweg bereit sind, schnell finden können.
 
 Eingabeaufforderung für Beispiel:
 
-Finden Sie Produktverpackung PNG-Bilder mindestens 2000 px breit.
+Suchen Sie Produktverpackung PNG-Bilder.
 
 **Orientierungsbasierte Inhaltssuche**
 
@@ -152,7 +152,7 @@ Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asse
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 

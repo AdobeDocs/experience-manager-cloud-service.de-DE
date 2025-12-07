@@ -1,9 +1,9 @@
 ---
 title: Verbessern der Inhaltssuche mit KI-generierten Metadaten
 description: Erfahren Sie, wie Sie die Inhaltssuche mit KI-generierten Metadaten verbessern können
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 94%
 
 ---
@@ -21,7 +21,6 @@ So aktivieren Sie KI-generierte Metadaten:
 
 * Die mindestens erforderliche AEM-Release-Version ist `20626`.
 
-* Sie müssen eine GenAI Rider-Vereinbarung unterzeichnen. Weitere Informationen erhalten Sie vom Adobe-Support.
 
 ## Verwenden von KI-generierten Metadaten {#using-ai-generated-smart-tags}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Fähigkeit „Erweiterbarkeit der Benut
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+workflow-type: tm+mt
+source-wordcount: '605'
+ht-degree: 90%
 
 ---
 
@@ -52,9 +52,17 @@ Sie müssen die folgenden Anforderungen erfüllen, um die Erweiterbarkeitskompon
 1. Richten Sie Ihre Anwendung mithilfe der AIO-CLI ein, um die grundlegende Erweiterungsstruktur und den erforderlichen Code zu generieren. Weitere Informationen finden Sie unter [Code-Generierung für die [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
 1. Testen Sie Ihre Erweiterungen lokal, um sicherzustellen, dass sie vor der Bereitstellung wie erwartet funktionieren. Führen Sie Ihre Erweiterung in einer vollständig isolierten Umgebung oder mit teilweiser Isolierung aus und verbinden Sie Ihre Erweiterung zum Testen mit der in der Produktion eingesetzten [!DNL AEM Assets View]. Weitere Informationen finden Sie unter [Fehlerbehebung – Erweiterbarkeit der [!DNL AEM Assets View] ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
 
-## Anpassen der Schnellaktionen und Aktionsleiste in der Assets-Ansicht {#customize-quick-actions-and-actions-bar}
+## Anpassen von Aktionen in der Assets-Ansicht {#customize-actions-assets-view}
 
-Sie können anpassen, welche Aktionen angezeigt werden, wenn Sie ein oder mehrere Assets (Aktionsleiste) in der Assets-Ansicht auswählen. Mit der Assets-Ansicht können Sie auch anpassen, welche Aktionen angezeigt werden, wenn Sie auf „Weitere Optionen“ (…) auf der Asset-Karte klicken. Weitere Informationen finden Sie unter [Ansicht für das Durchsuchen](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+Die AEM Assets-Ansicht ermöglicht es Ihnen, die folgenden Aktionen in der Durchsuchen-Ansicht anzupassen:
+
+* Passen Sie die Aktionen an, die angezeigt werden, wenn Sie ein oder mehrere Assets in der Aktionsleiste auswählen.
+
+* Passen Sie die Aktionen an, die angezeigt werden, wenn Sie auf Weitere Optionen (…) auf der Asset-Karte klicken.
+
+* Passen Sie die im Kopfzeilenmenü verfügbaren Aktionen an.
+
+Weitere Informationen finden Sie unter [Ansicht für das Durchsuchen](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
 
 ## Öffnen benutzerdefinierter Dialogfelder in der Assets-Ansicht {#open-custom-dialogs-assets-view}
 

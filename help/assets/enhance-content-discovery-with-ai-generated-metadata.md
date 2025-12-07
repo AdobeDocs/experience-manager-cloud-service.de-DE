@@ -3,10 +3,10 @@ title: Verbessern der Inhaltserkennung mit KI-generierten Metadaten in der Admin
 description: Erfahren Sie, wie Sie die Inhaltssuche mit KI-generierten Metadaten in der Admin-Ansicht verbessern können
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 96%
+source-wordcount: '594'
+ht-degree: 84%
 
 ---
 
@@ -28,15 +28,13 @@ So aktivieren Sie KI-generierte Metadaten:
 
 * Die mindestens erforderliche AEM-Release-Version ist `20626`.
 
-* Sie müssen eine GenAI Rider-Vereinbarung unterzeichnen. Weitere Informationen erhalten Sie vom Adobe-Support.
-
 ## Konfigurieren KI-generierter Titel {#configure-ai-generated-titles}
 
 Mit AEM können Sie auf der Seite „Asset-Suche“ die Anzeige von Asset-Titeln in der Karten- oder Listenansicht konfigurieren. Sie können den von Ihnen definierten Asset-Titel und einen KI-generieren Titel oder nur einen KI-generierten Titel anzeigen, wenn für das Asset kein Titel vorhanden ist.
 
 So konfigurieren Sie KI-generierte Titel:
 
-1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Asset-Konfiguration > Konfiguration der Smart-Tag-Verbesserung]**.
+1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Assets-Konfigurationen > Smart-Tag-Verbesserungskonfiguration]**.
 
 1. Wählen Sie eine der folgenden Optionen aus:
 
@@ -71,20 +69,12 @@ Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Sc
 
 ## Deaktivieren von KI-generierten Metadaten {#disable-ai-generated-metadata}
 
-Sie können KI-generierte Metadaten auf Ordnerebene deaktivieren. Alle untergeordneten Ordner übernehmen die Eigenschaften des übergeordneten Ordners.
+So deaktivieren Sie KI-generierte Metadaten:
 
-So deaktivieren Sie KI-generierte Metadaten auf Ordnerebene:
+1. Navigieren Sie zu **[!UICONTROL Tools > Assets > Assets-Konfigurationen > Smart-Tag-Verbesserungskonfiguration]**.
 
-1. Navigieren Sie zu **[!UICONTROL Adobe Experience Manager > Assets > Dateien]**.
+1. Wählen Sie **[!UICONTROL Smart-Tag-Verbesserungen deaktivieren]** aus.
 
-1. Wählen Sie den Ordner aus und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
+1. Klicken Sie **[!UICONTROL Speichern]** .
 
-1. Navigieren Sie auf der Registerkarte **[!UICONTROL Asset-Verarbeitung]** zum Ordner **[!UICONTROL Verbesserungen an Smart-Tags für Bilder]**. Wählen Sie einen der folgenden Werte aus der Dropdown-Liste aus:
-
-   * Vererbt – Der Ordner übernimmt die Optionen zum Aktivieren oder Deaktivieren vom übergeordneten Ordner.
-
-   * Aktivieren – Aktiviert KI-generierte Metadaten für den ausgewählten Ordner.
-
-   * Deaktivieren – Deaktiviert KI-generierte Metadaten für den ausgewählten Ordner.
-
-     ![Deaktivieren von KI-generierten Metadaten](assets/disable-ai-generated-metadata.png)
+Die KI-generierten Metadaten sind für die neuen Assets oder Ordner, die Sie in AEM Assets hochladen, deaktiviert. Die vorhandenen Assets oder Ordner, für die bereits KI-generierte Metadatenfelder generiert wurden, zeigen diese Felder weiterhin an.

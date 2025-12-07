@@ -4,10 +4,10 @@ description: Erfahren Sie, wie man in der AEM Assets-Ansicht Assets sucht und fi
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 89%
+source-wordcount: '1621'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ Um nach Assets zu suchen:
 
 ## Filtern von Suchergebnissen {#refine-search-results}
 
-Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von &#x200B;](custom-search-filters.md).
+Sie können die Suchergebnisse verfeinern, um relevante Assets zu finden, indem Sie mehrere Filter anwenden. Diese Filter, die von einem Administrator konfiguriert werden, basieren auf Dateien, Ordnern und Sammlungen. Siehe [Anpassen von ](custom-search-filters.md).
 
 ![Suchfilter](assets/filters-panel.gif)
 
@@ -50,73 +50,77 @@ Sie können die Suchergebnisse anhand der folgenden Parameter filtern.
 
 Sie können die gesuchten Assets in aufsteigender oder absteigender Reihenfolge nach `Name`, `Relevance`, `Size`, `Modified` und `Created` sortieren. Die gesuchten Assets werden standardmäßig nach `Relevance` sortiert.
 
-## Verwalten von benutzerdefinierten Filtern {#custom-filters}
+<!--
+  
+## Manage custom filters {#custom-filters}
 
-**Erforderliche Berechtigungen:**  `Can Edit`, `Owner` oder Administrator.
+**Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-Mit der Assets-Ansicht können Sie auch benutzerdefinierte Filter zur Benutzeroberfläche hinzufügen. Sie können diese benutzerdefinierten Filter dann zusätzlich zu den [Standardfiltern](#refine-search-results) anwenden, um Ihre Suchergebnisse zu verfeinern.
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-Die Assets-Ansicht bietet die folgenden benutzerdefinierten Filter:
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
      <tr>
-      <th><strong>Benutzerspezifischer Filtername</strong></th>
-      <th><strong>Beschreibung</strong></th>
+      <th><strong>Custom filter name</strong></th>
+      <th><strong>Description</strong></th>
      </tr>
      <tr>
-      <td>Titel</td>
-      <td>Filtern Sie Assets unter Verwendung des Asset-Titels. Der Titel, den Sie in den Suchkriterien, die die Groß- und Kleinschreibung berücksichtigen, angeben, muss genau mit dem Titel des Assets übereinstimmen, damit es in den Ergebnissen angezeigt wird.</td>
+      <td>Title</td>
+      <td>Filter assets using the asset title. The title that you specify in the case-sensitive search criteria must match the exact title of the asset to display in the results.</td>
      </tr>
      <tr>
       <td>Name</td>
-      <td>Filtern Sie Assets unter Verwendung des Asset-Dateinamens. Der Name, den Sie in den Suchkriterien, die die Groß- und Kleinschreibung berücksichtigen, angeben, muss genau mit dem Namen des Assets übereinstimmen, damit es in den Ergebnissen angezeigt wird.</td>
+      <td>Filter assets using the asset file name. The name that you specify in the case-sensitive search criteria must match the exact file name of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Asset-Größe</td>
-      <td>Filtern Sie Assets, indem Sie in den Suchkriterien für ein Asset, das in den Ergebnissen angezeigt werden soll, einen Größenbereich in Byte festlegen.</td>
+      <td>Asset Size</td>
+      <td>Filter assets by defining a size range, in bytes, in the search criteria for an asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Prognostizierte Tags</td>
-      <td>Filtern Sie Assets unter Verwendung des Asset-Smart-Tags. Der Smart-Tag-Name, den Sie in den Suchkriterien, die die Groß- und Kleinschreibung berücksichtigen, angeben, muss genau mit dem Smart-Tag-Namen des Assets übereinstimmen, damit es in den Ergebnissen angezeigt wird. Sie können nicht mehrere Smart-Tags in den Suchkriterien angeben.</td>
+      <td>Predicted Tags</td>
+      <td>Filter assets using the asset smart tag. The smart tag name that you specify in the case-sensitive search criteria must match the exact smart tag name of the asset to display in the results. You cannot specify multiple smart tags in search criteria.</td>
      </tr>    
     </tbody>
    </table>
 
-<!--
+   <!--
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
-### Hinzufügen benutzerdefinierter Filter {#add-custom-filters}
+### Add custom filters {#add-custom-filters}
 
-Hinzufügen benutzerdefinierter Filter
+To add custom filters:
 
-1. Klicken Sie auf **[!UICONTROL Filter]**.
+1. Click **[!UICONTROL Filters]**. 
 
-1. Klicken Sie im Abschnitt **[!UICONTROL Benutzerdefinierte Filter]** auf **[!UICONTROL Bearbeiten]** oder auf **[!UICONTROL Filter hinzufügen]**.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]** or **[!UICONTROL Add Filters]**.
 
-   ![Hinzufügen benutzerdefinierter Filter](assets/add-custom-filters.png)
+   ![Add custom filters](assets/add-custom-filters.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Verwaltung benutzerdefinierter Filter]** die Filter aus, die Sie der vorhandenen Filterliste hinzufügen möchten. Wählen Sie **[!UICONTROL Benutzerdefinierte Filter]** aus, um alle Filter auszuwählen.
+1. On the **[!UICONTROL Custom filters management]** dialog box, select the filters that you need to add to the existing list of filters. Select **[!UICONTROL Custom Filters]** to select all filters.
 
-1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Filter zur Benutzeroberfläche hinzuzufügen.
+1. Click **[!UICONTROL Confirm]** to add the filters to the user interface.
 
-### Entfernen benutzerdefinierter Filter {#remove-custom-filters}
+### Remove custom filters {#remove-custom-filters}
 
-Entfernen benutzerdefinierter Filter
+To remove custom filters:
 
-1. Klicken Sie auf **[!UICONTROL Filter]**.
+1. Click **[!UICONTROL Filters]**. 
 
-1. Klicken Sie im Abschnitt **[!UICONTROL Benutzerdefinierte Filter]** auf **[!UICONTROL Bearbeiten]**.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]**.
 
-1. Heben Sie im Dialogfeld **[!UICONTROL Verwaltung benutzerdefinierter Filter]** die Auswahl der Filter auf, die Sie aus der Liste der vorhandenen Filter entfernen möchten.
+1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Filter aus der Benutzeroberfläche zu entfernen.
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## KI-Suche {#ai-search}
 
@@ -193,13 +197,17 @@ So generieren Sie neue Assets mit [!DNL Adobe Firefly]:
 
 1. Klicken Sie auf **Als neues Asset speichern**, um das Asset bzw. die Assets zu speichern.
 
-### Hochladen von Assets {#upload-assets-firefly}
+<!--
 
-So laden Sie das generierte Asset in das Asset-Repository hoch:
+### Upload assets {#upload-assets-firefly}
 
-1. Klicken Sie auf **[!UICONTROL Hochladen]**.
-1. Wählen Sie den Asset-Ordner aus, in den Sie das Asset hochladen müssen, und klicken Sie auf **[!UICONTROL Ordner auswählen]**.
-   ![Hochladen eines Assets](assets/upload-asset-firefly.jpg)
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## Gespeicherte Suchvorgänge {#saved-search}
 
@@ -386,7 +394,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)
 
 
 
