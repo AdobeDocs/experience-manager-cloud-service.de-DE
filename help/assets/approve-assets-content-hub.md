@@ -2,10 +2,10 @@
 title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '1230'
-ht-degree: 100%
+source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 98%
 
 ---
 
@@ -83,10 +83,6 @@ So legen Sie das Genehmigungsziel fest:
 
    Weitere Informationen zu den verfügbaren Optionen finden Sie unter [Standardmäßige Genehmigungsziele und Veröffentlichungsziele für genehmigte Assets](#default-approval-target-options-publish-destinations).
 
-   >[!NOTE]
-   >
-   >Das Festlegen eines Genehmigungsziels ist eine Funktion mit begrenzter Verfügbarkeit. Sie können dies aktivieren oder deaktivieren, indem Sie ein Support-Ticket erstellen. Wenn Sie Dynamic Media mit aktiviertem OpenAPI nutzen, ist es standardmäßig aktiviert.
-
    ![Genehmigungsstatus](/help/assets/assets/approval-status-delivery.png)
 
 1. Geben Sie andere Asset-Eigenschaften an und klicken Sie auf **[!UICONTROL Speichern]**.
@@ -125,13 +121,13 @@ Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene
 1. Ziehen Sie ein **[!UICONTROL einzeiliges Textfeld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Genehmigte Assets_.
-   1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam:status_.
+   1. Aktualisieren Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam :status_.
    1. Ändern Sie den Standardwert in _genehmigt_.
 
 1. Ziehen Sie ein **[!UICONTROL einzeiliges Textfeld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und nehmen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** vor:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Aktivierungsziel_.
-   1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam:activationTarget_.
+   1. Aktualisieren Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/metadata/dam :activationTarget_.
    1. Ändern Sie den Standardwert in _contenthub_.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
