@@ -7,12 +7,13 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
+source-git-commit: 3a4119cfddda5d2d55f9a74848afe59eb0c1b709
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
 
 ---
+
 
 # Interaktive Kommunikationen
 
@@ -25,7 +26,6 @@ Im Gegensatz zu AEM Forms Desktop Designer, das nur auf Windows-Computern instal
 ![Editor für interaktive Kommunikationen](/help/forms/assets/ic-editor.png)
 
 Von Finanzinstituten, die Kontoauszüge generieren, bis hin zu Regierungsbehörden, die Mitteilungen über finanzielle Leistungen optimieren: Interaktive Kommunikation ist das Werkzeug, um hochwertige, sichere und gesetzeskonforme Korrespondenz mit Leichtigkeit und Effizienz zu erstellen.
-
 
 ## Kernfunktionen
 
@@ -49,7 +49,7 @@ Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 
 ## Onboarding
 
-Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
+Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
 
 Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
 

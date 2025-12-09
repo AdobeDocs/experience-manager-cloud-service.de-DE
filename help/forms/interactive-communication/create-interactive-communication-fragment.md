@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '291'
 ht-degree: 18%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 18%
 
 Ein interaktives Kommunikationsfragment ermöglicht es Benutzenden, wiederverwendbare, modulare Inhaltsbausteine wie Kopf- und Fußzeilen oder standardmäßige Haftungsausschlüsse zu erstellen, die in mehreren Kommunikationsdokumenten verwendet werden können. Diese Fragmente tragen dazu bei, beim Erstellen personalisierter, datenintegrierter Kommunikationen die Konsistenz zu wahren, repetitive Aufgaben zu reduzieren und den Design-Prozess zu beschleunigen.
 
-## Voraussetzung
-
-* [Stellen Sie sicher, dass der Autor Mitglied der Gruppe forms-users ist](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [Autor muss Mitglied der Gruppe „forms-users“ sein](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Erstellen eines interaktiven Kommunikationsfragments
 
@@ -41,7 +41,7 @@ Um ein Fragment für interaktive Kommunikation zu erstellen, führen Sie die fol
 
 1. Bei Auswahl des Fragments Interaktive Kommunikation wird ein Bildschirm angezeigt, in dem Sie wichtige Fragmentdetails wie Titel, Name, Beschreibung, Datenmodell (eine strukturierte Darstellung von Backend-Daten) und Tags definieren.
 
-   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![IC-Dokument suchen](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
