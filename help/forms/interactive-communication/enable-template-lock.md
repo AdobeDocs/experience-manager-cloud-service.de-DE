@@ -63,7 +63,7 @@ Wenn sie angewendet werden, können Autoren:
 Gehen Sie wie folgt vor, um Inhalts- oder Layout-Sperren in Ihrer Vorlage für interaktive Kommunikation (IC) anzuwenden:
 
 1. Öffnen Sie Ihre Vorlage
-Öffnen oder erstellen Sie eine Vorlage, folgen Sie dem Handbuch [Erstellen einer Vorlage für interaktive Kommunikation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Öffnen oder erstellen Sie eine Vorlage, folgen Sie dem Handbuch [Erstellen einer Vorlage für interaktive Kommunikation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Komponente auswählen
 Klicken Sie auf die Komponente (Textfeld, Bild oder Teilformular), die Sie einschränken möchten.
