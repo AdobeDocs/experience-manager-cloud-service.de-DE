@@ -112,7 +112,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster, das die **Fehlermeldung**, den **Schritt und den **Fehlerstapel** anzeigt.
+Öffnet ein Fenster, das die **Fehlermeldung**, den **Schritt und den &#x200B;** Fehlerstapel** anzeigt.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
