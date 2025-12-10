@@ -4,9 +4,9 @@ description: Entdecken Sie die zugehörige Benutzeroberfläche im Editor für in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 56e4195016c06177822ea31aa87ed4dfa24dc748
+source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -97,7 +97,7 @@ Der Autor kann die folgenden Schritte ausführen, um eine interaktive Kommunikat
 
 >[!NOTE]
 >
-> Unterstützte Komponenten für Associate.
+> Unterstützte Komponenten für „Verknüpfen“: Datumsfeld, numerisches Feld, Textfeld.
 
 ### IC erstellen
 
