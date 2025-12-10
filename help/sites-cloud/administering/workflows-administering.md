@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 100%
+source-wordcount: '1282'
+ht-degree: 92%
 
 ---
 
@@ -84,7 +84,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    >[!NOTE]
    >
    >
-   >Um einen Workflow zu beenden oder abzubrechen, muss er in einem Zustand sein, in dem auf Benutzerinteraktionen gewartet wird, z. B. in einem Teilnehmerschritt. Der Versuch, einen Workflow abzubrechen, der gerade Vorgänge ausführt (aktive Threads, die gerade ausgeführt werden), führt möglicherweise nicht zu den erwarteten Ergebnissen.
+   >Um einen Workflow zu beenden oder abzubrechen, muss er in einem Zustand sein, in dem auf Benutzerinteraktionen gewartet wird, z. B. in einem Teilnehmerschritt. Der Versuch, einen Workflow abzubrechen, der gerade Aufträge ausführt (aktive Threads, die gerade ausgeführt werden), führt möglicherweise nicht zu den erwarteten Ergebnissen.
 
 
 ## Anzeigen archivierter Workflows {#viewing-archived-workflows}
@@ -116,7 +116,7 @@ Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
-* **Schritt erneut ausführen** Hierdurch wird die Komponenteninstanz „Skriptschritt“ erneut ausgeführt. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
+* **Schritt erneut ausführen** Hierdurch wird die Komponenteninstanz „Skriptschritt“ erneut ausgeführt. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Fehlers in dem Skript, das vom Prozessschritt ausgeführt wird.
 * **Beenden** Beenden Sie den Workflow, wenn der Fehler eine nicht mit dem Workflow zu vereinbarende Situation verursacht hat. So kann der Workflow beispielsweise von Umgebungsbedingungen abhängen, wie zum Beispiel von Informationen im Repository, die nicht mehr für die Workflow-Instanz gelten.
 * **Beenden und erneut versuchen** Dies hat ähnliche Auswirkungen wie **Beenden**, außer dass eine neue Workflow-Instanz mit der ursprünglichen Payload und Beschreibung sowie dem ursprünglichen Titel gestartet wird.
 
@@ -145,39 +145,14 @@ Zum Konfigurieren des Service können Sie die OSGi-Konfigurationsdateien konfigu
 >Da der Service ein Factory-Service ist, erfordert der Name des `sling:OsgiConfig`-Knotens einen ein Kennungssuffix, wie zum Beispiel:
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>Eigenschaftsname (Web-Konsole)</th>
-   <th>OSGi-Eigenschaftsname</th>
-   <th>Beschreibung</th>
-  </tr>
-  <tr>
-   <td>Auftragsname</td>
-   <td>scheduledpurge.name</td>
-   <td>Dies ist ein beschreibender Name für die geplante Bereinigung.</td>
-  </tr>
-  <tr>
-   <td>Workflow-Status</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>Dies ist der Status der zu bereinigenden Workflow-Instanz. Die folgenden Werte sind gültig:</p>
-    <ul>
-     <li>ABGESCHLOSSEN: Abgeschlossene Workflow-Instanzen werden gelöscht.</li>
-     <li>WIRD AUSGEFÜHRT: Aktuell ausgeführte Workflow-Instanzen werden gelöscht.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Zu bereinigende Modelle</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>Dies ist die ID der zu bereinigenden Workflow-Modelle. Die ID ist der Pfad zum Modellknoten, wie zum Beispiel:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Geben Sie keinen Wert zur Bereinigung der Instanzen aller Workflow-Modelle ein.</p> <p>Klicken Sie zum Angeben mehrerer Modelle auf die „+“-Schaltfläche innerhalb der Web-Konsole. </p> </td>
-  </tr>
-  <tr>
-   <td>Workflow-Alter</td>
-   <td>scheduledpurge.daysold</td>
-   <td>Dies gibt das Alter der zu bereinigenden Workflow-Instanz in Tagen an.</td>
-  </tr>
- </tbody>
-</table>
+| Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname | Beschreibung |
+|--- |--- |--- |
+| Vorgangsname  | `scheduledpurge.name` | Dies ist ein beschreibender Name für die geplante Bereinigung. |
+| Workflow-Status | `scheduledpurge.workflowStatus` | Dies ist der Status der zu bereinigenden Workflow-Instanz. Die folgenden Werte sind gültig:<br><br>- ABGESCHLOSSEN: Abgeschlossene Workflow-Instanzen werden gelöscht.<br>- WIRD AUSGEFÜHRT: Laufende Workflow-Instanzen werden gelöscht. |
+| Zu bereinigende Modelle | `scheduledpurge.modelIds` | Die ID der zu löschenden Workflow-Modelle.<br>Die ID ist der Pfad zum Modellknoten, zum Beispiel:<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> Geben Sie keinen Wert an, um Instanzen aller Workflow-Modelle zu bereinigen.<br>Um mehrere Modelle anzugeben, klicken Sie in der Web-Konsole auf die Schaltfläche `+` . |
+| Workflow-Alter | `scheduledpurge.daysold` | Dies gibt das Alter der zu bereinigenden Workflow-Instanz in Tagen an. |
+| Workflow-Payload-Paket | `scheduledpurge.purgePackagePayload` | Gibt an, ob das Payload-Paket gelöscht werden soll (`true` oder `false`). |
+
 
 ## Einstellen der maximalen Größe des Posteingangs {#setting-the-maximum-size-of-the-inbox}
 
@@ -199,7 +174,7 @@ Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (
 
 Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über eine externe Datenspeicherung von Metadaten verfügt. Workflow-Variablen werden nicht für die Workflow-Instanzen der Modelle, die für den externen Speicher markiert sind, in JCR beibehalten.
 
-Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
+Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
 
 Die folgende Illustration zeigt, wie Sie die Hervorhebung in einem Workflow festlegen.
 
