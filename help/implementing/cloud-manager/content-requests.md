@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 77%
+source-wordcount: '1968'
+ht-degree: 76%
 
 ---
 
@@ -76,7 +76,7 @@ In der folgenden Tabelle sind die Typen der eingeschlossenen und ausgeschlossene
 
 | Abfragetyp | Inhaltsanfrage | Beschreibung |
 | --- | --- | --- |
-| HTTP-Code 100–299 | Einschließlich | Umfasst erfolgreiche Anfragen, die HTML- oder JSON-Inhalte vollständig oder teilweise zurückgeben.<br>HTTP-Code 206: Diese Anfragen liefern nur einen Teil des gesamten Inhalts, z. B. ein Video oder ein großes Bild. Partielle Inhaltsanfragen werden eingeschlossen, wenn sie einen Teil einer HTML- oder JSON-Antwort bereitstellen, die beim Rendern des Seiteninhalts verwendet wird. |
+| HTTP-Code 100–299 | Einschließlich | Umfasst erfolgreiche Anfragen, die HTML- oder JSON-Inhalte vollständig oder teilweise zurückgeben.<br>HTTP-Code 206: Diese Anfragen liefern nur einen Teil des gesamten Inhalts, Partielle Anfragen werden einbezogen, wenn sie einen Teil einer HTML- oder JSON-Antwort bereitstellen, die beim Rendern von Seiteninhalten verwendet wird. |
 | HTTP-Bibliotheken für die Automatisierung | Einschließlich | Anfragen durch Tools oder Bibliotheken, die Seiteninhalte abrufen. Beispiele dafür sind: <br>• Amazon CloudFront<br>• Apache Http Client<br>• Asynchronous HTTP Client<br>• Axios<br>• Azureus<br>• Curl<br>• GitHub Node Fetch<br>• Guzzle<br>• Go-http-client<br>• Headless Chrome<br>• Java™ Client<br>• Jersey<br>• Node Oembed<br>• okhttp<br>• Python Requests<br>• Reactor Netty<br>• Wget<br>• WinHTTP<br>• Fast HTTP<br>• GitHub Node Fetch<br>• Reactor Netty |
 | Tools für die Überwachung und Konsistenzprüfung | Einschließlich | Anfragen, die zur Überwachung des Zustands oder der Verfügbarkeit von Seiten verwendet werden.<br>Siehe [Typen von ausgeschlossenen Inhaltsanfragen](#excluded-content-request).<br>Beispiele dafür sind:<br>• `Amazon-Route53-Health-Check-Service`<br>• EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>• Investis-Site24x7<br>• Mozilla/5.0+(compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>• ThousandEyes-Dragonfly-x1<br>• OmtrBot/1.0<br>• WebMon/2.0.0 |
 | `<link rel="prefetch">`-Anfragen | Einschließlich | Wenn Kundinnen und Kunden Inhalte vorab laden oder abrufen (z. B. mit `<link rel="prefetch">`), zählt das System diese Server-seitigen Anfragen. Denken Sie daran: Dadurch kann der Traffic zunehmen, abhängig davon, wie viele dieser Seiten vorab abgerufen werden. |
@@ -104,7 +104,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
@@ -117,7 +117,7 @@ Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-r
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Sie müssen Ihre Implementierung und Traffic-Muster überprüfen, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [&#x200B; (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
+* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Sie müssen Ihre Implementierung und Traffic-Muster überprüfen, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [ (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
 
 ```
 trafficFilters:
