@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 99%
+source-wordcount: '2054'
+ht-degree: 96%
 
 ---
 
@@ -29,6 +29,8 @@ In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartung
 >
 >Adobe behält sich das Recht vor, Konfigurationseinstellungen für Wartungsaufgaben der Kundschaft außer Kraft zu setzen, um Probleme wie Leistungsbeeinträchtigungen zu verhindern.
 
+### Wartungsaufgaben {#maintenance-tasks}
+
 In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
 
 <table style="table-layout:auto">
@@ -47,7 +49,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
   <tr>
     <td>Versionsbereinigung</td>
     <td>Kundin/Kunde</td>
-    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Audit-Protokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
+    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
    </td>
   </td>
   </tr>
@@ -90,6 +92,10 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
   </tr>
   </tbody>
 </table>
+
+### Konfigurationen des Wartungsfensters {#maintenance-window-configurations}
+
+Die folgende Tabelle zeigt die verfügbaren Konfigurationen des Wartungsfensters.
 
 <table style="table-layout:auto">
  <tbody>
@@ -138,15 +144,15 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     </tbody>
 </table>
 
-**Standorte**:
+### Speicherorte {#locations}
 
 * Täglich – /apps/settings/granite/operations/maintenance/granite_daily
 * Wöchentlich – /apps/settings/granite/operations/maintenance/granite_weekly
 * Monatlich – /apps/settings/granite/operations/maintenance/granite_month
 
-**Code-Beispiele**
+### Code-Beispiele {#code-samples}
 
-Code-Beispiel 1 (täglich)
+**Code-Beispiel 1 (täglich)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ Code-Beispiel 1 (täglich)
  />
 ```
 
-Code-Beispiel 2 (wöchentlich)
+**Code-Beispiel 2 (wöchentlich)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ Code-Beispiel 2 (wöchentlich)
    windowStartTime="14:30"/>
 ```
 
-Code-Beispiel 3 (monatlich)
+**Code-Beispiel 3 (monatlich)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,54 +226,54 @@ Deklarieren Sie eine Konfigurationsdatei und stellen Sie sie wie in den folgende
 > 
 >Ebenso müssen Sie den Knoten für die Auditprotokollbereinigung nach der Bereitstellung in der Konfigurationsdatei deklarieren und dürfen ihn nicht entfernen.
 
-**1** Erstellen Sie eine Datei mit dem Namen `mt.yaml` oder ähnlich.
+1. Erstellen Sie eine Datei mit dem Namen `mt.yaml` oder ähnlich.
 
-**2** Platzieren Sie die Datei unter einem Ordner der obersten Ebene mit dem Namen `config` oder ähnlich, wie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
+1. Platzieren Sie die Datei an einer beliebigen Stelle in einem Ordner der obersten Ebene mit dem Namen `config` oder Ähnliches, wie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure) beschrieben.
 
-**3** Deklarieren Sie Eigenschaften in der Konfigurationsdatei, die Folgendes enthalten:
+1. Deklarieren Sie Eigenschaften in der Konfigurationsdatei, einschließlich:
 
-* einige Eigenschaften oberhalb des Datenknotens – eine Beschreibung finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *MaintenanceTasks* sein und die Version auf *1* festgelegt werden.
+   * einige Eigenschaften oberhalb des Datenknotens – eine Beschreibung finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte *MaintenanceTasks* sein und die Version auf *1* festgelegt werden.
 
-* ein Datenobjekt mit den Objekten `versionPurge` und `auditLogPurge`.
+   * ein Datenobjekt mit den Objekten `versionPurge` und `auditLogPurge`.
 
-Siehe die Definitionen und Syntax der Objekte `versionPurge` und `auditLogPurge` unten.
+   Siehe die Definitionen und Syntax der Objekte `versionPurge` und `auditLogPurge` unten.
 
-Strukturieren Sie die Konfiguration ähnlich wie im folgenden Beispiel:
+   Strukturieren Sie die Konfiguration ähnlich wie im folgenden Beispiel:
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-Beachten Sie Folgendes, damit die Konfiguration gültig ist:
+   Beachten Sie Folgendes, damit die Konfiguration gültig ist:
 
-* Alle Eigenschaften müssen definiert sein. Es gibt keine geerbten Standardwerte.
-* Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
+   * Alle Eigenschaften müssen definiert sein. Es gibt keine geerbten Standardwerte.
+   * Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
 
-**4**: Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im [Artikel zu Konfigurations-Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
 
 ### Versionsbereinigung {#version-purge}
 
@@ -308,7 +314,6 @@ Die Spalten, die *default* angeben, geben die Standardwerte für die Zukunft an,
 | maximumVersions | 5 | 0 (kein Limit) | Ja | Ganzzahl | Jede Version, die älter als die n-te neueste Version ist, wird entfernt. Lautet der Wert „0“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt. |
 | minimumVersions | 1 | 1 | Ja | Ganzzahl | Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Es wird immer mindestens eine Version beibehalten. Der Wert muss „1“ oder höher sein. |
 | keepLabeledVersion | false | false | Ja | Boolesch | Bestimmt, ob explizit gekennzeichnete Versionen von der Bereinigung ausgeschlossen werden. Für eine bessere Repository-Optimierung wird empfohlen, diesen Wert auf „false“ festzulegen. |
-
 
 **Interaktion von Eigenschaften**
 
@@ -366,7 +371,6 @@ Umgebungen, die vor Aktivierung der standardmäßigen Bereinigung erstellt wurde
 Die zulässigen Eigenschaften sind im Folgenden aufgeführt.
 
 Die Spalten, die *default* angeben, geben die Standardwerte für die Zukunft an, wenn Standardwerte angewendet werden. *TBD* gibt eine Umgebungs-ID an, die noch nicht ermittelt wurde.
-
 
 | Eigenschaften | Zukünftiger Standard für Umgebungen>TBD | Zukünftiger Standard für Umgebungen&lt;=TBD | Erforderlich | Typ | Werte |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
