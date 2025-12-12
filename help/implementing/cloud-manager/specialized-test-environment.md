@@ -3,28 +3,31 @@ title: Hinzufügen einer speziellen Testumgebung
 description: Erfahren Sie, wie spezialisierte Testumgebungen in Cloud Manager einen dedizierten Raum für die Validierung von Funktionen unter produktionsnahen Bedingungen bieten, der sich ideal für Belastungstests und erweiterte Prüfungen vor der Bereitstellung eignet.
 feature: Cloud Manager, Developing
 role: Admin, Developer
-badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 35%
+source-wordcount: '522'
+ht-degree: 33%
 
 ---
 
 # Hinzufügen einer speziellen Testumgebung{#add-special-test-enviro}
 
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+-->
+
 >[!NOTE]
 >
->&#x200B;>Die in diesem Artikel beschriebene Funktion ist nur über das private Beta-Programm verfügbar. Informationen zur Anmeldung bei Private Beta finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>Spezielle Testumgebungen können jetzt erworben werden. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um eine Bestellung aufzugeben.
 
-Die spezialisierte Testumgebung (oder DevXL) ist eine neue Art von Cloud Manager-Umgebung, die Sie erstellen können. Es wurde entwickelt, um erweiterte Anwendungsfälle wie Benutzerakzeptanztests (UAT) und Leistungsvalidierung zu unterstützen. Im Gegensatz zu herkömmlichen Entwicklungs-, Rapid Development- oder Staging-Umgebungen werden DevXL-Umgebungen außerhalb der Produktionsbereitstellungs-Pipeline ausgeführt. Auf diese Weise bieten sie Ihnen mehr Flexibilität bei gleichzeitiger strikter Isolation, um Störungen in Produktions-Workflows zu vermeiden.
 
-DevXL wurde entwickelt, um die Größe, Skalierbarkeit und Konfigurationen einer typischen Staging-Umgebung widerzuspiegeln. Dieser Ansatz stellt sicher, dass in DevXL durchgeführte Tests realistische Einblicke in die Leistung von Code und Inhalten in produktionsähnlichen Bedingungen liefern können. Die -Umgebung unterstützt auch das direkte Kopieren von Inhalten aus der Produktion oder Staging. Sie bleibt hinsichtlich Bereitstellungs-Workflows, Zugriffssteuerungen und Netzwerkkonfigurationen mit Entwicklungsumgebungen gleichberechtigt.
+Die spezialisierte Testumgebung ist eine neue Art von Cloud Manager-Umgebung, die Sie erstellen können. Es wurde entwickelt, um erweiterte Anwendungsfälle wie Benutzerakzeptanztests (UAT) und Leistungsvalidierung zu unterstützen. Im Gegensatz zu herkömmlichen Entwicklungs-, Rapid Development- oder Staging-Umgebungen werden spezialisierte Testumgebungen außerhalb der Produktionsbereitstellungs-Pipeline ausgeführt. Auf diese Weise bieten sie Ihnen mehr Flexibilität bei gleichzeitiger strikter Isolation, um Störungen in Produktions-Workflows zu vermeiden.
 
-## Wichtige Funktionen und Konfigurationen {#key-features}
+Eine spezielle Testumgebung wurde entwickelt, um die Größe, Skalierbarkeit und Konfigurationen einer typischen Staging-Umgebung widerzuspiegeln. Dieser Ansatz stellt sicher, dass Tests, die in der spezialisierten Testumgebung durchgeführt werden, realistische Einblicke in die Leistung von Code und Inhalten in produktionsähnlichen Bedingungen liefern können. Die -Umgebung unterstützt auch das direkte Kopieren von Inhalten aus der Produktion oder Staging. Sie bleibt hinsichtlich Bereitstellungs-Workflows, Zugriffssteuerungen und Netzwerkkonfigurationen mit Entwicklungsumgebungen gleichberechtigt.
 
-| Kategorie | DevXL-Verhalten |
+## Wichtige Funktionen und Konfigurationen einer spezialisierten Testumgebung {#key-features}
+
+| Kategorie | Verhalten |
 | --- | --- |
 | Zweck | UAT und Leistungstests. |
 | Pipeline-Typ | Nicht in der Produktions-Pipeline. |
@@ -38,7 +41,7 @@ DevXL wurde entwickelt, um die Größe, Skalierbarkeit und Konfigurationen einer
 | `IP Allow List` | Wie die Entwicklungsumgebung. |
 | Vernetzung | Identisch mit der Entwicklungsumgebung (Services, Domain-Name, SSL-Zertifikate, erweitertes Netzwerk). |
 
-Siehe auch [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
+Weitere Informationen finden Sie auch unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Hinzufügen einer speziellen Testumgebung {#add-specialized-testing-environment}
 
@@ -55,7 +58,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
    * Klicken Sie in der **[Meine](/help/implementing/cloud-manager/navigation.md#my-programs)**-Konsole auf der Karte **Umgebungen** auf **Umgebung hinzufügen**.
 Wenn die Option **Umgebung hinzufügen** abgeblendet (deaktiviert) ist, kann dies auf fehlende Berechtigungen oder eine Abhängigkeit von den lizenzierten Ressourcen zurückzuführen sein.
 
-   ![Karte „Umgebungen“](assets/no-environments.png)
+     ![Karte „Umgebungen“](assets/no-environments.png)
 
    * Klicken Sie links im seitlichen Bedienfeld auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen** und dann oben rechts auf der Seite „Umgebungen“ auf **Umgebung hinzufügen**.
 
@@ -66,10 +69,16 @@ Wenn die Option **Umgebung hinzufügen** abgeblendet (deaktiviert) ist, kann die
    * Klicken Sie **Spezialisierte Testumgebung**.
    * Geben Sie einen **Namen** für die Umgebung an. Der Umgebungsname kann nach der Erstellung der Umgebung nicht mehr geändert werden.
    * (Optional) Geben Sie eine **Beschreibung** für die Umgebung an.
-   * Wählen Sie eine **Primäre** aus der Dropdown-Liste aus. Nach der Erstellung ist die primäre Region der DevXL-Umgebung (z. B. *USA (Westen der USA)* gesperrt und kann nicht geändert werden.
+   * Wählen Sie eine **Primäre** aus der Dropdown-Liste aus. Nach der Erstellung ist die primäre Region der spezialisierten Testumgebung (z. B. *Vereinigtes Königreich (Süden)* gesperrt und kann nicht geändert werden.
 
-   ![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezialisierte Testumgebung“](assets/specialized-test-environment.png)
+     ![Dialogfeld „Umgebung hinzufügen“ mit aktiviertem Optionsfeld „Spezialisierte Testumgebung“](assets/specialized-test-environment.png)
 
 1. Klicken Sie auf **Speichern**.
 
    Die Seite **Überblick** zeigt nun auf der Karte **Umgebungen** Ihre neue Umgebung an. Sie können jetzt Pipelines für Ihre neue Umgebung einrichten.
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+* Video: [Grundlegendes zu Umgebungstypen in AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
+

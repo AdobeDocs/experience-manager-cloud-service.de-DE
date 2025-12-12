@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2464'
 ht-degree: 98%
 
 ---
@@ -28,9 +28,11 @@ Benutzende mit den erforderlichen Berechtigungen können die folgenden Umgebungs
 | **Schnelle Entwicklung** | Mit einer schnellen Entwicklungsumgebung (Rapid Development Environment, RDE) können Entwickelnde Änderungen schnell bereitstellen und überprüfen. Dadurch wird der Zeitaufwand für das Testen von Funktionen reduziert, die bereits in einer lokalen Entwicklungsumgebung validiert wurden. Details zur Verwendung einer RDE finden Sie in der [Dokumentation zu schnellen Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md). |
 | **Spezialisierte Testumgebung** | Spezialisierte Testumgebungen bieten einen dedizierten Raum für die Validierung von Funktionen unter produktionsnahen Bedingungen, ideal für Belastungstests und erweiterte Prüfungen vor der Bereitstellung. Siehe [Hinzufügen einer speziellen Testumgebung](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
+<!-- 
 >[!NOTE]
 >
->Die Funktion **Spezialisierte Testumgebung** ist derzeit nur im Rahmen des Private Beta-Programms verfügbar. Informationen zur Anmeldung bei Private Beta finden Sie unter [Spezialisierte Testumgebung](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+-->
 
 Die Fähigkeiten der einzelnen Umgebungen hängen von den Lösungen ab, die im [Programm](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) der Umgebung aktiviert wurden.
 
@@ -85,7 +87,7 @@ Benutzende mit der **Geschäftsinhaber**-Rolle können Produktions- und Staging-
 
 >[!TIP]
 >
->Sie können die [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) verwenden, um eine aktuelle Liste der verfügbaren Regionen abzurufen.
+>Sie können die [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) verwenden, um eine aktuelle Liste der verfügbaren Regionen abzufragen.
 
 ### Hinzufügen mehrerer Veröffentlichungsregionen zu einer neuen Umgebung {#add-regions}
 
