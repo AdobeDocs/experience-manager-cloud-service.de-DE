@@ -1,20 +1,18 @@
 ---
-title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Versionshinweise für Version 2025.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Versionshinweise für Version 2025.11.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: 2cc6f1bea3fc9cd56a20048db0ce5357dbb5ee0e
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 64%
+source-wordcount: '1461'
+ht-degree: 68%
 
 ---
 
-# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service 2025.11.0 {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
+Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der Version 2025.11.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.12.0) ist der Freitag, 11. Dezember 2025. Die nächste Version (2026.1.0) ist für den Freitag, 29. Januar 2026 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.11.0) ist der Freitag, 20. November 2025. Die nächste Version (2025.12.0) ist für den Freitag, 11. Dezember 2025 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -46,7 +44,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## Agenten in AEM {#agents-in-aem}
 
-AEM bietet eine Reihe von Agenten, mit denen Sie die Inhaltserstellung beschleunigen und Änderungen automatisch orchestrieren können. Weitere Informationen finden Sie unter [Übersicht über Agenten in AEM](/help/ai-in-aem/agents/overview.md).
+AEM bietet eine Reihe von Agenten, mit denen Sie die Inhaltserstellung beschleunigen und Änderungen automatisch orchestrieren können. Weitere Informationen finden Sie unter [Übersicht über Agenten](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,7 +109,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Bevorstehende Einstellung von Java-APIs {#java-api-deprecation}
 
-Verschiedene veraltete APIs wurden für die Einstellung am 31. August vorgemerkt und sollten daher nicht mehr referenziert werden. Sie erhalten Benachrichtigungen des Aktionszentrums, wenn eine veraltete API-Nutzung in Ihrem Code erkannt wird. Nach dem 29. Januar werden bei Cloud Manager-Builds Hinweise angezeigt, die darauf hinweisen, dass die Nutzung entfernt werden muss. Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
+Verschiedene veraltete APIs wurden für die Einstellung am 31. August vorgemerkt und sollten daher nicht mehr referenziert werden. Sie erhalten Benachrichtigungen des Aktionszentrums, wenn eine veraltete API-Nutzung in Ihrem Code erkannt wird, und nach dem 3. Dezember werden bei Cloud Manager-Builds Hinweise angezeigt, die die Bedeutung der Entfernung der Nutzung unterstreichen. Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
 
 +++ Zum Anzeigen der veralteten Java-APIs erweitern
 
@@ -156,7 +154,7 @@ Adobe hat **Staging** und **Produktion** Umgebungen am 14. Oktober **2025 auf di
 
 Wie in den Versionshinweisen vom April erwähnt, müssen AEM-Java-Protokolle einem Standardformat entsprechen, um eine zuverlässige Überwachung in allen Kundenumgebungen sicherzustellen. Benutzerdefinierte Protokollkonfigurationen – wie etwa Änderungen an der Protokollformatierung, Ausgabedateien oder Standardprotokollebenen – werden nicht mehr unterstützt. Protokolle müssen an die Standarddateien weitergeleitet werden, und die standardmäßigen Protokollebenen für AEM-Produkt-Code müssen beibehalten werden. Ausführliche Informationen finden Sie im [Artikel zur Protokollierung](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Ab **29.** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
+Ab dem **. Dezember** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
 
 Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf einem benutzerdefinierten Protokollierungsverhalten basieren. Zum Beispiel:
 
@@ -198,6 +196,15 @@ Mit der Edge-Authentifizierung können Sie den Zugriff auf Edge Delivery Service
 
 Bei Interesse senden Sie bitte eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) mit einer kurzen Beschreibung Ihres Anwendungsfalls und allen Fragen, die Sie haben.
 
+<!--
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
 #### Canary-Produktionsbereitstellungen zum Testen von Code vor Annahme von Live-Traffic (Beta-Programm) {#canary-beta}
 
 Validieren Sie einen Produktions-Build mit reinem Test-Traffic, bevor Sie ihn für Endbenutzende verfügbar machen. Senden Sie an die Produktion, leiten Sie nur den Canary-Traffic weiter (mithilfe einem speziellen Header) und überwachen Sie das Verhalten. Leiten Sie den Live-Traffic dann entweder weiter oder setzen Sie ihn zurück, ohne dass sich dies auf die Kundinnen und Kunden auswirkt.
@@ -215,17 +222,17 @@ Wir bereiten uns darauf vor, das Beta-Programm für KI-Antworten zu starten, und
 
 Um eine Teilnahme anzufordern oder Updates zu erhalten, wenden Sie sich bitte an [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
-#### Snapshots für RDEs (Beta-Programm) {#rde-snapshot-program}
-
-In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
-
-Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
-
-#### Beschleunigen der AEM-Entwicklung mit KI (Alpha-Programm) {#ai-dev-alpha}
+#### Beschleunigen der AEM-Entwicklung mit KI (Alpha-Programm)  {#ai-dev-alpha}
 
 AEM-Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie Cursor, Claude Code, Visual Studio und IntelliJ, um die Funktionsbereitstellung zu beschleunigen und die Code-Qualität zu verbessern. Wir sammeln Erfahrungen aus der Praxis, um zukünftige, von Adobe unterstützte KI-Funktionen zu gestalten.
 
 Teilen Sie mit uns per E-Mail [aemcs-java-adopter@adobe.com, was für Ihr Team funktioniert und was Adobe bereitstellen soll](mailto:aemcs-java-adopter@adobe.com).
+
+#### Snapshots für schnelle Entwicklungsumgebungen (Alpha-Programm) {#rde-snapshot-program}
+
+In Alpha unterstützen schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) jetzt eine Funktion, um einen Snapshot des aktuellen Code- und Inhaltsstatus zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
+
+Wenn Sie Feedback zu dieser Funktion geben möchten, senden Sie uns eine E-Mail an [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
