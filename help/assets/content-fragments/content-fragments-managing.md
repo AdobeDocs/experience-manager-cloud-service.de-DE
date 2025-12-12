@@ -5,9 +5,9 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1941'
 ht-degree: 99%
 
 ---
@@ -27,6 +27,9 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 * [Strukturbaum anzeigen](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Anzeigen der JSON-Repräsentation in der Vorschau](/help/assets/content-fragments/content-fragments-json-preview.md)
 
+>[!NOTE]
+>
+>Beachten Sie die [Best Practices](/help/assets/content-fragments/content-fragments.md) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
 
 >[!NOTE]
 >
@@ -136,7 +139,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele sind [Standardaktionen für Assets](/help/assets/manage-digital-assets.md) bzw. das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=de).
+>Viele sind [Standardaktionen für Assets](/help/assets/manage-digital-assets.md) bzw. das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 

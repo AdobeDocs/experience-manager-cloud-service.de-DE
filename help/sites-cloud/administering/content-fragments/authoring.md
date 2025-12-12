@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2819'
+source-wordcount: '2793'
 ht-degree: 96%
 
 ---
@@ -32,6 +32,10 @@ Dieser Editor bietet Folgendes:
 * Fähigkeit zum [Anzeigen von Versionsdetails](#view-version-history) im Editor. Sie können auch eine ausgewählte Version wiederherstellen.
 * Fähigkeit zum [Anzeigen und Öffnen von übergeordneten Verweisen](#view-parent-references).
 * Eine hierarchische Ansicht des Inhaltsfragments und seiner Verweise mithilfe der [Baumstruktur](#structure-tree).
+
+>[!NOTE]
+>
+>Beachten Sie die [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
 
 >[!WARNING]
 >
@@ -89,7 +93,7 @@ Im linken Bereich können Sie Folgendes sehen:
 
 * die Liste der **[Varianten](#variations)**, die für dieses Fragment erstellt wurden:
    * **Haupt** ist die Variante, die beim ersten Erstellen des Inhaltsfragments vorhanden ist. Sie können später weitere hinzufügen
-   * Sie können mit der Funktion „Varianten generieren“ (#generate-variations) eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+   * Sie können [Varianten generieren](#generate-variations-ai) verwenden, um eine auf einer Eingabeaufforderung basierende Vorlage zu verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
    * Sie können auch [eine Variante erstellen](#create-variation)
 * die **Felder** innerhalb des Fragments und dessen Varianten:
    * das Symbol zeigt den [Datentyp](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) an
@@ -126,7 +130,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* [Unter Verwendung der Funktion „Varianten generieren“ &#x200B;](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+* [Unter Verwendung der Funktion „Varianten generieren“ ](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -136,12 +140,6 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 ### Variante erstellen {#create-variation}
 
->[!NOTE]
->
->Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu. Es wird empfohlen, die Anzahl der Varianten auf ein überschaubares Minimum zu beschränken.
->
->Als Best Practice gilt, pro Inhaltsfragment maximal zehn Varianten zu verwenden.
-
 So erstellen Sie eine Variante Ihres Inhaltsfragments:
 
 1. Wählen Sie im linken Bereich das **Pluszeichen** (**Variante erstellen**), das sich rechts von **Varianten** befindet.
@@ -150,7 +148,7 @@ So erstellen Sie eine Variante Ihres Inhaltsfragments:
    >
    >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante &#x200B;](assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](assets/cf-authoring-create-variation-01.png)
 
 1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
@@ -273,7 +271,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 

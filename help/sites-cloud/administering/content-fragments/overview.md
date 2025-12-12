@@ -1,18 +1,18 @@
 ---
-title: Ein Überblick über das Arbeiten mit Inhaltsfragmenten
+title: Ein Überblick über die Konzepte und Best Practices beim Arbeiten mit Inhaltsfragmenten
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service strukturierte Inhalte erstellen und verwenden können – ideal für Headless-Bereitstellung und Seitenerstellung.
 feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 99%
+source-wordcount: '2357'
+ht-degree: 85%
 
 ---
 
-# Ein Überblick über das Arbeiten mit Inhaltsfragmenten {#overview-working-with-content-fragments}
+# Arbeiten mit Inhaltsfragmenten - Konzepte und Best Practices {#working-with-content-fragments-concepts-and-best-practices}
 
 In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen es Ihnen, Inhalte so vorzubereiten, dass sie an mehreren Orten und über mehrere Kanäle verwendet werden können, ideal für die [Headless-Bereitstellung](/help/headless/what-is-headless.md) und die [Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -325,3 +325,47 @@ Das WKND-Projekt umfasst:
 * Inhaltsfragmente (und anderere Inhalte) verfügbar unter:
 
    * `.../assets.html/content/dam/wknd/en`
+
+## Best Practices {#best-practices}
+
+Inhaltsfragmente können verwendet werden, um komplexe Strukturen zu bilden. Adobe bietet Empfehlungen für Best Practices beim Definieren und Verwenden von sowohl Modellen als auch Fragmenten.
+
+### Es einfach halten {#keep-it-simple}
+
+Halten Sie bei der Modellierung strukturierter Inhalte in AEM die Inhaltsstrukturen so einfach wie möglich, um eine starke Systemleistung und optimierte Governance sicherzustellen.
+
+### Anzahl der Modelle {#number-of-models}
+
+Erstellen Sie so viele Inhaltsmodelle wie nötig, aber nicht mehr.
+
+Zu viele Modelle erschweren die Governance und können GraphQL-Abfragen verlangsamen. Eine kleine Anzahl von Modellen, maximal niedrige Zehner, ist in der Regel ausreichend. Wenn Sie sich den hohen Zehnern oder mehr nähern, überdenken Sie Ihre Modellierungsstrategie.
+
+### Verschachteln von Modellen und Fragmenten (sehr wichtig) {#nesting-models-and-fragments}
+
+Vermeiden Sie eine tiefe oder übermäßige Verschachtelung von Inhaltsfragmenten mithilfe von Inhaltsfragmentverweisen, die es Fragmenten ermöglichen, auf andere Fragmente zu verweisen, manchmal über mehrere Ebenen hinweg.
+
+Eine starke Verwendung von Inhaltsfragmentverweisen kann sich erheblich auf die Systemleistung, die Reaktionsfähigkeit der Benutzeroberfläche und die Ausführung von GraphQL-Abfragen auswirken. Ziel ist es, die Verschachtelung auf maximal zehn Ebenen zu belassen.
+
+## Anzahl der Datenfelder und Datentypen pro Modell {#number-of-data-fields-and-types-per-model}
+
+Schließen Sie nur die Datenfelder und Typen ein, die ein Modell wirklich benötigt.
+
+Übermäßig komplexe Modelle führen zu übermäßig komplexen Fragmenten, die das Authoring erschweren und die Leistung des Editors verringern können.
+
+### Rich-Text-Felder {#rich-text-fields}
+
+Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksichtigung von Folgendem.
+
+Begrenzen Sie die Anzahl der Rich-Text-Felder pro Modell. Außerdem die Textmenge, die in jedem Fragment gespeichert ist, und den Umfang der HTML-Formatierung. Sehr große Rich-Text-Inhalte können die Systemleistung beeinträchtigen.
+
+### Anzahl der Varianten {#number-of-variations}
+
+Erstellen Sie so viele Fragmentvarianten wie nötig, aber nicht mehr.
+
+Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu. Es wird empfohlen, die Anzahl der Varianten auf ein überschaubares Minimum zu beschränken.
+
+Als Best Practice gilt, pro Inhaltsfragment maximal zehn Varianten zu verwenden.
+
+### Vor der Produktion testen {#test-before-production}
+
+Erstellen Sie im Zweifelsfall einen Prototyp für die gewünschten Inhaltsstrukturen, bevor Sie sie in die Produktion einführen. Frühzeitige Machbarkeitsstudien sowie angemessene Tests, sowohl in technischer Hinsicht als auch in Bezug auf die Akzeptanz der Benutzer, können dazu beitragen, Probleme zu einem späteren Zeitpunkt zu vermeiden, wenn Produktionstermine eingehalten werden.

@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2217'
 ht-degree: 82%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 82%
 In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service wird die Struktur des Inhalts Ihrer [Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md) definiert. Diese Fragmente können dann für die Seitenbearbeitung oder als Grundlage für Ihre Headless-Inhalte verwendet werden.
 
 Auf dieser Seite wird beschrieben, wie Sie Ihr Inhaltsfragmentmodell mithilfe des dedizierten Editors definieren. Unter [Verwalten Ihrer Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) finden Sie weitere Aufgaben und Optionen, die nach dem Erstellen Ihrer Ihre Fragmente verfügbar sind, einschließlich [Aktionen, die in der Inhaltsfragmentkonsole verfügbar sind](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), dem [Zulassen des Modells für Ihren Ordner](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) und dem [Veröffentlichen Ihres Modells](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
+
+>[!NOTE]
+>
+>Beachten Sie die [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
 
 >[!CAUTION]
 >
