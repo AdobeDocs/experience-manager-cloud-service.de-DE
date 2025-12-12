@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Ed
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Die RTE-Konfiguration besteht aus zwei Teilen:
 * [`toolbar`](#toolbar): Die Symbolleistenkonfiguration steuert, welche Bearbeitungsoptionen in der Benutzeroberfläche verfügbar sind und wie sie organisiert sind.
 * [`actions`](#actions): Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen.
 
-Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit &#x200B;](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
+Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit ](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
 
 ```json
 [
@@ -176,6 +176,44 @@ Bildaktionen unterstützen das Umbrechen von Bildelementen, um ein responsives B
 * `wrapInPicture`: `false` (Standard) - Generieren einfacher `<img>`
 * `wrapInPicture`: `true` - Umschließen von Bildern in `<picture>` für responsives Design
 
+### Konfiguration der Einzüge {#indentation}
+
+Einzüge verfügen über eine Konfiguration auf Funktionsebene, die den Umfang des Einrückungsverhaltens steuert, sowie über individuelle Aktionskonfigurationen für Tastaturbefehle und Beschriftungen.
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### Optionen für Einzugsumfang {#indentation-options}
+
+* `scope`: `all` (Standard) - Einzug/Auszug gilt für alle Inhalte:
+   * Listen: Verschachtelte/verschachtelte Listenelemente
+   * Absätze und Überschriften: Erhöhen/Verringern der allgemeinen Einrückung
+* `scope`: `lists` - Einzug/Auszug gilt nur für Listenelemente:
+   * Listen: Verschachtelte/verschachtelte Listenelemente
+   * Absätze und Überschriften: Keine Einrückung (Schaltflächen für diese deaktiviert)
+
+>[!NOTE]
+>
+>Die Verschachtelung von Listen über die Tabulatortaste/Umschalt+Tabulatortaste funktioniert unabhängig von den allgemeinen Einzugseinstellungen.
+
 ### Sonstige Aktionen {#other}
 
 Alle anderen Aktionen unterstützen grundlegende Anpassungen. Die folgenden Abschnitte sind verfügbar.
@@ -307,6 +345,35 @@ Verwenden Sie `wrapInParagraphs: true` bei Bedarf:
 * Mehrere Absätze pro Listenelement
 * Konsistente Formatierung auf Blockebene
 
+### `wrapInPicture`{#wrapinpicture}
+
+Die Option `wrapInPicture` für Bilder steuert die für Bildinhalte generierte HTML-Struktur.
+
+#### wrapInPicture: false (Standard) {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture: true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+Verwenden Sie `wrapInPicture: true` bei Bedarf:
+
+* Unterstützung responsiver Bilder mit `<source>`.
+* Möglichkeiten der künstlerischen Leitung.
+* Zukunftssicherheit für erweiterte Bildfunktionen.
+* Konsistente Bildelementstruktur.
+
+>[!NOTE]
+>
+>Wenn `wrapInPicture: true` aktiviert ist, können Bilder mit zusätzlichen `<source>` für verschiedene Medienabfragen und Formate erweitert werden, wodurch sie flexibler für responsives Design sind.
+
 ### Optionen für Link-Zielgruppe {#link-target}
 
 Die Option `hideTarget` für Links steuert, ob das Attribut `target` in generierten Links enthalten ist und ob das Dialogfeld für die Link-Erstellung ein Feld für die Zielauswahl enthält.
@@ -318,11 +385,60 @@ Die Option `hideTarget` für Links steuert, ob das Attribut `target` in generier
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### Deaktivieren von Links auf Bildern {#disableforimages}
+
+Die Option `disableForImages` für Links steuert, ob Benutzer Links auf Bildern und Bildelementen erstellen können. Dies gilt sowohl für Inline-`<img>` als auch für `<picture>` auf Blockebene.
+
+#### `disableForImages: false` (Standard) {#disableforimages-false}
+
+Benutzer können Bilder auswählen und sie in Links einschließen.
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages: true {#disableforimages-true}
+
+Die Link-Schaltfläche ist deaktiviert, wenn ein Bild oder Bild ausgewählt wird. Benutzer können nur Links auf Textinhalten erstellen.
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+Verwenden Sie `disableForImages: true`, wenn Sie Folgendes tun möchten:
+
+* Wahrung der visuellen Konsistenz durch Verhinderung von verknüpften Bildern
+* Vereinfachen Sie die Inhaltsstruktur, indem Sie Bilder von der Navigation trennen.
+* Erzwingen von Inhaltsrichtlinien, die die Bildverknüpfung einschränken.
+* Verringern Sie die Komplexität der Barrierefreiheit in Ihren Inhalten.
+
+>[!NOTE]
+>
+>Diese Einstellung wirkt sich nur auf die Möglichkeit aus, neue Links auf Bildern zu erstellen. Vorhandene Links werden nicht aus Bildern im Inhalt entfernt.
 
 ### Tag-Optionen {#tag}
 

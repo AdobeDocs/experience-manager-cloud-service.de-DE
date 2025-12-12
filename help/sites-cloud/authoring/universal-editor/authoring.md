@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 95%
+source-wordcount: '2625'
+ht-degree: 90%
 
 ---
 
@@ -75,11 +75,15 @@ Das Kontextmenü wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundle
 
 #### Das Bedienfeld „Eigenschaften“ {#properties-rail}
 
-Das [Bedienfeld „Eigenschaften“](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) zeigt ein Element für den ausgewählten Text an. Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen, mit der Sie den Text bearbeiten können.
+Der [Eigenschaftenbereich](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) zeigt einen Eintrag für die ausgewählte Rich-Text-Komponente an.
+
+![Rich-Text-Komponente im Bedienfeld „Eigenschaften“](assets/rich-text-properties-panel.png)
+
+Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen und den Rich-Text zu bearbeiten.
 
 ![Dialogfeld für die Bearbeitung von Rich-Text](assets/rich-text-canvas.png)
 
-Tippen oder klicken Sie auf **Fertig** oder **Abbrechen**, um die Änderungen zu speichern bzw. zu verwerfen.
+Tippen oder klicken Sie auf **Abbrechen** oder **Fertig**, um die Änderungen zu verwerfen bzw. zu speichern. Sie können auch die Esc-Taste drücken, um Änderungen zu speichern und das Dialogfeld zu schließen.
 
 #### Rich-Text-Formatierungsoptionen {#formatting-options}
 
@@ -92,10 +96,17 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * Hochgestellt
 * Tiefgestellt
 * Aufzählungsliste
-* Nummerierte Liste
+   * Verwenden Sie die Tabulatortaste zum Einrücken und Umschalt+Tabulatortaste zum Ausrücken
+* Sortierte Liste
+   * Verwenden Sie die Tabulatortaste zum Einrücken und Umschalt+Tabulatortaste zum Ausrücken
 * Link
+* Verknüpfung aufheben
+* Bild
+* Alle Formatierungen entfernen
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Vorhandene Tabellen können mit dem RTE bearbeitet werden, neue Tabellen können jedoch nicht erstellt werden.
+
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -230,7 +241,11 @@ Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwische
 >
 >Verwenden Sie den Hotkey `Command-C` bzw. `Command-V` zum Kopieren bzw. Einfügen.
 
+## Kontextoptionen {#context-options}
 
+Beim Bearbeiten im Kontext bietet der Editor kontextbezogene Optionen mit einem Rechtsklick, z. B. das Duplizieren, Löschen oder Kopieren von Komponenten.
+
+![Kontextmenü](assets/context-options-menu.png)
 
 ## Vorschau von Inhalten {#previewing-content}
 

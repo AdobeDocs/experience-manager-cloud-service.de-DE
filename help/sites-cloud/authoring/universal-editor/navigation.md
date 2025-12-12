@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6efb04369109fcae638b699e1daff09624224098
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 92%
+source-wordcount: '1871'
+ht-degree: 91%
 
 ---
 
@@ -78,7 +78,7 @@ Die obere Navigationsleiste von Experience Platform befindet sich immer oben im 
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 
@@ -139,7 +139,7 @@ Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ au
 
 #### Lokale Entwickleranmeldung {#local-developer-login}
 
-Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [&#x200B; (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
+Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [ (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
 
 ![Schaltfläche „Lokale Entwickleranmeldung“](assets/local-developer-login.png)
 
@@ -224,6 +224,8 @@ Der universelle Editor bietet ein anpassbares und erweiterbares Authoring-Erlebn
 Der Editor nimmt den größten Teil des Fensters ein und ist der Ort, an dem die in der [Speicherortleiste](#location-bar) angegebene Seite gerendert wird.
 
 ![Bearbeiter](assets/editor.png)
+
+Standardmäßig wird der Editor geöffnet, sodass Sie [Inhalte erstellen](/help/sites-cloud/authoring/universal-editor/authoring.md) entweder im Kontext oder mithilfe des [Eigenschaftenbereichs“ ](#properties-rail)
 
 Wenn sich der Editor im [Vorschaumodus](#preview-mode) befindet, können Sie durch den Inhalt navigieren und Links folgen, aber den Inhalt nicht bearbeiten.
 
