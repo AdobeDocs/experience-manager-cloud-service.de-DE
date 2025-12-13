@@ -9,10 +9,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2335'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2489'
+ht-degree: 93%
 
 ---
 
@@ -32,13 +32,37 @@ Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für ver
 
 Sobald eingerichtet, können diese Workflows manuell ausgelöst werden, um einen definierten Prozess durchzuführen, oder programmgesteuert ausgeführt werden, wenn Benutzer ein Formular senden <!-- or [correspondence management](cm-overview.md) letter-->. <!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-Der formularzentrierte Workflow für OSGi erweitert den [AEM-Posteingang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=de#authoring) und stellt zusätzliche Komponenten (Schritte) für den AEM-Workflow-Editor bereit, um Unterstützung für [!DNL AEM Forms]-zentrierte Workflows hinzuzufügen. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=de#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+Der formularzentrierte Workflow für OSGi erweitert den [AEM-Posteingang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=de#authoring) und stellt zusätzliche Komponenten (Schritte) für den AEM-Workflow-Editor bereit, um Unterstützung für [!DNL AEM Forms]-zentrierte Workflows hinzuzufügen. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Alle [!DNL AEM Forms]-Workflow-Schritte unterstützen die Verwendung von Variablen. Variablen ermöglichen es, dass Workflowschritte zur Laufzeit Metadaten speichern und an andere Schritte übergeben. Sie können verschiedene Typen von Variablen zum Speichern unterschiedlicher Datentypen erstellen. Sie können auch Variablensammlungen erstellen, um mehrere Instanzen verwandter Daten vom selben Typ zu speichern. In der Regel verwenden Sie eine Variable oder eine Sammlung von Variablen, wenn eine Entscheidung basierend auf dem Wert der Variablen getroffen werden soll oder wenn Informationen gespeichert werden sollen, die Sie später in einem Prozess benötigen. Weitere Informationen zur Verwendung von Variablen in diesen formularzentrierten Workflow-Komponenten (Schritten) finden Sie unter [Formularzentrierter Workflow in OSGi – Schritt-Referenz](aem-forms-workflow-step-reference.md). Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM-Workflows](variable-in-aem-workflows.md).
 
 Das folgende Diagramm zeigt den kompletten Ablauf zum Erstellen, Ausführen und Überwachen eines formularzentrierten Workflows in OSGi.
 
 ![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Unterstützt AEM Forms Workflows für Versicherungsgenehmigungen?
+
+Ja. AEM Forms unterstützt Workflow-basierte Überprüfungen und Genehmigungen und ermöglicht so Prüfer-, Genehmigungs- und Nachbearbeitungsschleifen als Teil von Versicherungsprozessen.
+
+## Unterstützt AEM Forms Maker-Checker-Prozesse für Versicherungen?
+
+Ja. AEM Forms-Workflows können so konfiguriert werden, dass sie Maker-Checker-Muster unterstützen und so eine Trennung der Aufgaben zwischen Dateneingabe und Genehmigungsrollen sicherstellen.
+
+## Kann AEM Forms den Status von Versicherungsansprüchen oder -anträgen verfolgen?
+
+Ja. Mit AEM Forms-Workflows können Versicherer den Status der Formularübermittlung und -verarbeitung über verschiedene Phasen des Geschäftsprozesses hinweg verfolgen.
+
+## Unterstützt AEM Forms Underwriting-Workflows?
+
+Ja, mit Workflows und Integrationen. AEM Forms unterstützt Workflow-gesteuerte Prozesse und Backend-Integrationen, die es Anwendungsdaten ermöglichen, in Underwriting- und Entscheidungssysteme zu fließen.
+
+## Unterstützt AEM Forms Audit-Trails für Versicherungsprozesse?
+
+Ja. AEM Forms unterstützt die Auditierbarkeit durch Workflow-Verlauf, Zugriffskontrollen und Systemprotokolle, die Versicherungen bei der Erfüllung interner und externer Prüfungsanforderungen unterstützen.
 
 ## Bevor Sie beginnen {#before-you-start}
 
@@ -61,9 +85,9 @@ AEM bietet eine intuitive Benutzeroberfläche zum Erstellen eines Workflow-Model
 
 Genehmigungs- und Überprüfungs-Workflow sind für Aufgaben vorgesehen, bei denen Entscheidungen von Personen getroffen werden müssen.  Im folgenden Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einem oder einer Frontend-Bankmitarbeitenden ausgefüllt werden soll.  Sobald der Antrag ausgefüllt ist, wird er zur Genehmigung übermittelt.  Der genehmigte Antrag wird später zur elektronischen Unterzeichnung mit Adobe Sign an den Antragsteller gesendet.
 
-Das Beispiel ist als Paket verfügbar und ist unten angehängt.  Importieren und installieren Sie das Beispiel mithilfe von Package Manager.  Sie können darüber hinaus die folgenden Schritte ausführen, um das Workflow-Modell für den Antrag manuell zu erstellen:
+Das Beispiel ist als Paket verfügbar und ist unten angehängt.  Importieren und installieren Sie das Beispiel mithilfe des Paket-Managers.  Sie können darüber hinaus die folgenden Schritte ausführen, um das Workflow-Modell für den Antrag manuell zu erstellen:
 
-In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einem oder einer Frontend-Bankmitarbeitenden ausgefüllt werden soll.  Der ausgefüllte Antrag wird zur Genehmigung übermittelt.  Der genehmigte Antrag wird später zur elektronischen Unterzeichnung mit Adobe Sign an die Kundin bzw. den Kunden gesendet.  Sie können das Beispiel mit dem Package Manager importieren und installieren.
+In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt, der von einem oder einer Frontend-Bankmitarbeitenden ausgefüllt werden soll.  Der ausgefüllte Antrag wird zur Genehmigung übermittelt.  Der genehmigte Antrag wird später zur elektronischen Unterzeichnung mit Adobe Sign an die Kundin bzw. den Kunden gesendet.  Sie können das Beispiel mit dem Paket-Manager importieren und installieren.
 
 [Datei laden](assets/example-mortgage-loan-application.zip)
 
@@ -135,7 +159,7 @@ Die Anwendung ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine 
 >
 >Sie müssen Mitglied der Gruppe fd-administrator sein, um Workflow-Anwendungen erstellen und verwalten zu können.
 
-1. Wechseln Sie in Ihrer AEM-Authoring-Instanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Formulare]** > **[!UICONTROL Workflow-Anwendung verwalten]** und tippen Sie auf **[!UICONTROL Erstellen]**.
+1. Wechseln Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Formulare]** > **[!UICONTROL Workflow-Anwendung verwalten]** und tippen Sie auf **[!UICONTROL Erstellen]**.
 1. Geben Sie im Fenster „Workflow-Anwendung erstellen“ die entsprechenden Werte für die folgenden Felder ein und tippen Sie auf **Erstellen**. Eine neue Anwendung wird erstellt und im Bildschirm „Workflow-Anwendungen“ aufgeführt.
 
 <table>

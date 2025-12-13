@@ -10,10 +10,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: ht
-source-wordcount: '1083'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '1181'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,22 @@ Darüber hinaus führt der AEM-Posteingang Benachrichtigungen und Aufgaben aus v
 Die Benutzeroberfläche des Posteingangs bietet Listen- und Kalenderansichten zum Anzeigen von Aufgaben. Sie können außerdem die Einstellungen für die Anzeige konfigurieren. Sie können Aufgaben nach verschiedenen Parametern filtern. Weitere Informationen zum Anzeigen und Filtern finden Sie unter [Ihr Posteingang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=de#inbox-in-the-header).
 
 Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen und zugewiesene Aufgaben verwalten.
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Kann AEM Forms den Status von Versicherungsansprüchen oder -anträgen verfolgen?
+
+Ja. Mit AEM Forms-Workflows können Versicherer den Status der Formularübermittlung und -verarbeitung über verschiedene Phasen des Geschäftsprozesses hinweg verfolgen.
+
+## Unterstützt AEM Forms Audit-Trails für Versicherungsprozesse?
+
+Ja. AEM Forms unterstützt die Auditierbarkeit durch Workflow-Verlauf, Zugriffskontrollen und Systemprotokolle, die Versicherungen bei der Erfüllung interner und externer Prüfungsanforderungen unterstützen.
+
+## Können Kundendienstmitarbeiter Versicherungsformulare im Namen von Kunden einreichen?
+
+Ja. AEM Forms unterstützt das Ausfüllen von Formularen mit Assistenz und Agenten, sodass autorisierte Benutzende Formulare im Namen von Kundinnen und Kunden senden können, während die Prüffähigkeit gewahrt bleibt.
 
 >[!NOTE]
 >

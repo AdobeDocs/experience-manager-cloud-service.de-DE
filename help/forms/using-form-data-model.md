@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 97%
+source-wordcount: '1417'
+ht-degree: 90%
 
 ---
 
@@ -37,6 +37,22 @@ Ein Formulardatenmodell (FDM) ist eine Erweiterung des JSON-Schemas, die Sie fü
 * [Verwenden des Formulardatenmodell-Service](#prefill)
 * [Zurückschreiben von übermittelten adaptiven Formulardaten in Datenquellen](#write-af)
 * [Aufrufen von Services über Regeln für adaptive Formulare](#invoke-services)
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Kann AEM Forms mit Versicherungs-Kernsystemen integriert werden?
+
+Ja. AEM Forms unterstützt die Integration mithilfe von REST- und SOAP-APIs und ermöglicht so die Verbindung zu Richtlinienverwaltungssystemen, Schadenregulierungssystemen und CRMs.
+
+## Kann AEM Forms Formulardaten zurück in Versicherungssysteme schreiben?
+
+Ja. AEM Forms unterstützt das Zurückschreiben von Daten an Backend-Systeme im Rahmen der Formularübermittlung und der Workflow-Ausführung.
+
+## Können Kundinnen und Kunden mit AEM Forms Anspruchsdokumente sicher hochladen?
+
+Ja. AEM Forms unterstützt den sicheren Upload von Dokumenten im Rahmen der Formularübermittlung. Die Zugriffssteuerungen und die sichere Datenverarbeitung sind auf die Sicherheitsanforderungen des Unternehmens abgestimmt.
 
 ## Erstellen adaptiver Formulare und Fragmente {#create-af}
 
@@ -140,7 +156,7 @@ Beim Senden des Formulars werden die Daten für das konfigurierte Datenmodellobj
 >
 > AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen für die Verarbeitung von Formularübermittlungen. Weitere Informationen zu diesen Optionen finden Sie im Artikel [Übermittlungsaktion für adaptive Formulare](/help/forms/configure-submit-actions-core-components.md).
 
-Sie können auch Formularanhänge mit der Objekteigenschaft des binären Datenmodells an eine Datenquelle senden. Führen Sie folgende Schritte aus, um Anlagen an eine JDBC-Datenquelle zu senden:
+Sie können auch Formularanhänge mit der Eigenschaft des binären Datenmodellobjekts an eine Datenquelle senden. Führen Sie folgende Schritte aus, um Anlagen an eine JDBC-Datenquelle zu senden:
 
 1. Fügen Sie dem Formulardatenmodell (FDM) ein Datenmodellobjekt hinzu, das eine binäre Eigenschaft enthält.
 1. Ziehen Sie im adaptiven Formular die Komponente **[!UICONTROL Dateianhang]** per Drag-and-Drop aus dem Komponenten-Browser auf das adaptive Formular.

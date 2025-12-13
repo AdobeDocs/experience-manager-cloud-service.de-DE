@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 92%
+source-wordcount: '2445'
+ht-degree: 89%
 
 ---
 
@@ -31,6 +31,21 @@ Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, 
 
 ![Assistent zum Erstellen eines adaptiven Formulars](/help/release-notes/assets/wizard.png)
 
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Kann AEM Forms sowohl für kundenorientierte als auch für interne Versicherungsprozesse verwendet werden?
+
+Ja. AEM Forms unterstützt kundenorientierte digitale Formulare sowie interne, mitarbeits- oder agentengeführte Prozesse wie Überprüfungen, Genehmigungen und unterstützte Datenerfassung.
+
+## Kann AEM Forms für die Einreichung von Versicherungsansprüchen verwendet werden?
+
+Ja. AEM Forms unterstützt mehrstufige adaptive Formulare, mit denen Versicherungsnehmer Versicherungsansprüche digital einreichen können, einschließlich der Erfassung strukturierter Daten und unterstützender Dokumentation.
+
+## Unterstützt AEM Forms mobile Versicherungsfälle?
+
+Ja. AEM Forms unterstützt responsive und mobilfreundliche Formulare, mit denen Kunden und Agenten Versicherungsinformationen von Mobilgeräten aus übermitteln können.
 
 ## Voraussetzungen
 
@@ -42,7 +57,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 * **Eine adaptive Formularvorlage**: Eine Vorlage liefert eine Grundstruktur und definiert das Erscheinungsbild (Layouts und Stile) eines adaptiven Formulars. Es enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Es bietet außerdem die Optionen zum Definieren eines Designs und einer Übermittlungsaktion. Das Design definiert den Look-and-Feel und die Übermittlungsaktion definiert die Aktion, die bei der Übermittlung eines adaptiven Formulars ausgeführt werden soll. Senden der erfassten Daten an eine Datenquelle. Der Cloud-Service bietet eine OOTB-Vorlage mit leerem Namen:
 
    * Die Vorlage `blank` ist in jedem neuen AEM Forms as a Cloud Service-Programm enthalten.
-   * Sie können das Referenzpaket über Package Manager installieren, um die Vorlage `blank` zu Ihrem AEM Forms as a Cloud Service-Programm hinzuzufügen.
+   * Sie können das Referenzpaket über den Paket-Manager installieren, um die Vorlage `blank` zu Ihrem AEM Forms as a Cloud Service-Programm hinzuzufügen.
    * Daneben gibt es die Möglichkeit, [eine Vorlage für adaptive Formulare (Kernkomponenten) von Grund auf neu zu erstellen](/help/forms/template-editor-core-components.md).
    * Sie können auch [Beispielvorlagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de) in Ihre Umgebung implementieren. Diese helfen Ihnen dabei, Formulare schnell zu erstellen.
 
@@ -57,7 +72,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Adaptives Formular erstellen  {#create-an-adaptive-form-core-components}

@@ -5,10 +5,10 @@ landing-page-description: Erfahren Sie, wie Sie Formulare in AEM as a Cloud Serv
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 100%
+source-wordcount: '1369'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 <div class="version-selector">
   <p><strong>Suchen Sie eine Dokumentation für eine andere Version?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=de">Dokumentation zu AEM 6.5 Forms</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">Dokumentation zu AEM 6.5 Forms</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (Aktuell)</li>
   </ul>
 </div>
@@ -29,6 +29,30 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] bietet eine Cloud-nativ
 Der Service ist immer aktuell, immer verfügbar und lernt ständig dazu. Unternehmen können [!DNL AEM Forms] as a Cloud Service verwenden und alle diese Funktionen in der Cloud nutzen, ohne dass eine lokale Infrastruktur erforderlich ist. Der Service erspart Unternehmen zudem komplexe Upgrade-Zyklen, da er stets mit den neuesten Funktionen aktualisiert wird.
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] ist eine kundenorientierte Lösung, die jeden Schritt der Customer Journey unterstützt:
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Ist AEM Forms für Versicherungsunternehmen geeignet?
+
+Ja. AEM Forms wurde für unternehmensweite und regulierte Anwendungsfälle entwickelt, einschließlich Versicherungen, bei denen sichere Datenerfassung, Workflow-gesteuerte Verarbeitung, Dokumenterstellung und Systemintegration von entscheidender Bedeutung sind.
+
+## Wird AEM Forms für Versicherungs-Workflows verwendet?
+
+Ja. AEM Forms wird häufig verwendet, um Versicherungsprozesse wie Anträge auf Policen, Schadeneinnahmen, Onboarding von Kunden und die Übermittlung von Agentenformularen zu digitalisieren.
+
+## Ist AEM Forms Enterprise-Grade für Versicherungsgeschäfte geeignet?
+
+Ja. AEM Forms bietet Unternehmensfunktionen wie rollenbasierte Zugriffskontrolle, Audit-Protokolle, Workflow-Orchestrierung, Dokumenterstellung und Bereitstellungsflexibilität, die für groß angelegte Versicherungsvorgänge erforderlich sind.
+
+## Wie unterscheidet sich AEM Forms von den einfachen Formular-Buildern für Versicherungen?
+
+AEM Forms wurde für Anwendungsfälle für Unternehmensversicherungen entwickelt und bietet Workflow-Orchestrierung, Dokumenterstellung, Prüfbarkeit und Bereitstellungsflexibilität, die einfache Formular-Builder normalerweise nicht bieten.
+
+## Warum entscheiden sich Versicherer für AEM Forms?
+
+Versicherer entscheiden sich für AEM Forms, um komplexe, regulierte Prozesse mit sicherer Datenerfassung, Workflow-gesteuerter Verarbeitung, Dokumenterstellung und tiefer Integration in Unternehmenssysteme zu digitalisieren.
 
 ## Digitalisierung und Optimierung von Anmelde- und Onboarding-Erlebnissen
 

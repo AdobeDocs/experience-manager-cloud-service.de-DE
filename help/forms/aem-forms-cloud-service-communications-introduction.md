@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
-workflow-type: ht
-source-wordcount: '2663'
-ht-degree: 100%
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+workflow-type: tm+mt
+source-wordcount: '2720'
+ht-degree: 97%
 
 ---
 
@@ -41,6 +41,18 @@ Kommunikations-APIs bieten einen umfassenden Satz an Dokumentverarbeitungsfunkti
 | Erstellen personalisierter Dokumente durch Zusammenführen von Vorlagen mit Daten in verschiedenen Formaten, einschließlich PDF- und Druckformaten | Programmgesteuertes Kombinieren, Neuanordnen und Validieren von PDF-Dokumenten, um neue Dokumentpakete zu erstellen | Extrahieren von Eigenschaften, Metadaten und Inhalte aus PDF-Dokumenten für die weitere Verarbeitung | Konvertieren von Dokumenten zwischen Formaten, einschließlich PDF/A-Compliance-Validierung für Archivierungsanforderungen | Anwenden von digitalen Signaturen, Zertifizierung und Verschlüsselung zum Sichern und Schützen von Dokumenten |
 
 Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und verschiedenen Services, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und sie in Postman hochladen, um die Funktionalität der APIs zu überprüfen.
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Kann AEM Forms Versicherungspolice-Dokumente generieren?
+
+Ja. AEM Forms kann richtlinienbezogene Dokumente mithilfe von Vorlagen und strukturierten Daten generieren, die über Formulare erfasst werden.
+
+## Kann AEM Forms Versicherungsgeschäfte skaliert abwickeln?
+
+Ja. Bei der Bereitstellung mit empfohlenen Architekturen auf Adobe Managed Services oder Private Cloud unterstützt AEM Forms Formularübermittlungen mit hohem Volumen und Arbeitslasten im Unternehmensmaßstab.
 
 ## Dokumenterstellung
 
@@ -178,7 +190,7 @@ Sowohl Signature-APIs als auch Verschlüsselungs-APIs sind [synchrone APIs](#typ
 
 ### Dokumenten-Dienstprogramme {#doc-utility}
 
-Mithilfe von Dokumenten-Dienstprogrammen mit synchronen APIs können Sie Dokumente zwischen den Dateiformaten PDF und XDP konvertieren. Wenden Sie Verwendungsrechte auf ein Dokument an und extrahieren Sie die aktivierten Verwendungsrechte aus einem Dokument. Rufen Sie Informationen zu einem PDF-Dokument ab. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> Details zu den Verwendungsrechte-APIs finden Sie unten:
+Mithilfe von Dokumenten-Dienstprogrammen mit synchronen APIs können Sie Dokumente zwischen den Dateiformaten PDF und XDP konvertieren. Wenden Sie Verwendungsrechte auf ein Dokument an und extrahieren Sie die aktivierten Verwendungsrechte aus einem Dokument. Fragen Sie Informationen zu einem PDF-Dokument ab. <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> Details zu den Verwendungsrechte-APIs finden Sie unten:
 
 #### Verwendungsrechte-APIs (Reader-Erweiterung)
 
@@ -236,7 +248,7 @@ Die verschiedenen Verwendungsrechte-Funktionen für die Erweiterung der PDF Read
 
 Kommunikationen bieten HTTP-APIs für die On-Demand- und Batch-Dokumentgenerierung:
 
-* **[Synchrone APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel das Generieren eines Dokuments, nachdem ein Benutzer ein Formular ausgefüllt hat.
+* **[Synchrone APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Einträgen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel das Generieren eines Dokuments, nachdem ein Benutzer ein Formular ausgefüllt hat.
 
 * **[Batch-APIs (asynchrone APIs)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Damit werden beispielsweise monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, Layouts für dynamische Formulare in AEM, Formularlayouts für AEM Cloud Service, Formularlayouttypen in AEM-Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2176'
 ht-degree: 22%
 
 ---
@@ -24,6 +24,18 @@ ht-degree: 22%
 Adaptive Forms bietet erstklassige Komponenten zum effektiven Layout und Design der Formulare. Das Layout steuert, wie Komponenten in einem Formular angezeigt werden. Adaptive Forms unterstützt verschiedene Layouts: Bedienfeld, Assistent, Akkordeon, Registerkarten oben/horizontal und Registerkarten links/vertikal.
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Unterstützt AEM Forms mehrstufige Formulare für Versicherungsansprüche?
+
+Ja. AEM Forms unterstützt geführte, mehrstufige adaptive Formulare mit Bedingungslogik, mit denen Versicherer Schadeninformationen progressiv basierend auf Schadentyp und Kontext erfassen können.
+
+## Können Kundinnen und Kunden mit AEM Forms Anspruchsdokumente sicher hochladen?
+
+Ja. AEM Forms unterstützt den sicheren Upload von Dokumenten im Rahmen der Formularübermittlung. Die Zugriffssteuerungen und die sichere Datenverarbeitung sind auf die Sicherheitsanforderungen des Unternehmens abgestimmt.
 
 ## Voraussetzung
 
@@ -81,7 +93,7 @@ Das Layout „Horizontale Registerkarten“ wird auch als Layout „Registerkart
 
 Layout horizontaler Registerkarten
 
-Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
 >[!TAB Akkordeon-Layout]
@@ -264,7 +276,7 @@ Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Ans
 1. Klicken Sie **[!UICONTROL Vorschau]** in der oberen rechten Ecke Ihrer Authoring-Umgebung.
    ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
-Sie können die [&#x200B; auch ziehen und ablegen, &#x200B;](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
+Sie können die [ auch ziehen und ablegen, ](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
 
 
 <!-- #### Drag and drop components into a layout's panel 

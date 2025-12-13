@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine Vorlage für ein Datensatzdokument für 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
-ht-degree: 100%
+source-wordcount: '3305'
+ht-degree: 98%
 
 ---
 
@@ -18,6 +18,18 @@ ht-degree: 100%
 Wenn ein Formular ausgefüllt oder übermittelt wird, können Sie das Formular drucken oder als Dokument speichern. Dies wird als Datensatzdokument (DoR) bezeichnet. Es handelt sich dabei um eine druckoptimierte Kopie des gesendeten Formulars. Auch können Sie im Datensatzdokument mittels Verweis Informationen erfassen, die Kunden zu einem späteren Zeitpunkt eingegeben haben, oder mithilfe des Datensatzdokuments Formulare und zugehörige Inhalte gemeinsam im PDF-Format archivieren.
 
 ![Datensatzdokument (Document of Record, DoR)](assets/document-of-record.png)
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Kann AEM Forms Dokumente für Versicherungsansprüche generieren?
+
+Ja. AEM Forms unterstützt die Generierung von Datensatzdokumenten (Document of Record, DoR), sodass Versicherer PDFs und Datensätze basierend auf gesendeten Formulardaten erstellen können.
+
+## Sind von AEM Forms generierte Dokumente für Audits geeignet?
+
+Ja. AEM Forms unterstützt die konsistente Dokumenterstellung, den kontrollierten Zugriff und die Rückverfolgbarkeit, die für Audit- und Compliance-Anforderungen wichtig sind.
 
 Um ein Datensatzdokument zu erstellen, wird eine XFA- oder AcroForm-basierte Vorlage mit Daten zusammengeführt, die über ein adaptives Formular erfasst wurden. Sie können ein Datensatzdokument entweder automatisch oder auf Anfrage generieren. Mit der On-Demand-Option können Sie eine benutzerdefinierte XFA- oder AcroForm-basierte Vorlage angeben, um Ihrem Datensatzdokument ein benutzerdefiniertes Erscheinungsbild zu verleihen.
 

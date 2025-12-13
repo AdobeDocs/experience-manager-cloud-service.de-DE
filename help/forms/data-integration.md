@@ -4,10 +4,10 @@ description: Rufen Sie Daten von einem adaptiven Formular oder einem AEM-Workflo
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '668'
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ Ein verteiltes, modulares System hat seine eigenen Vorteile, aber die Herausford
 
 ![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms]-Datenintegration ermöglicht die Konfiguration und Verbindung verschiedener Datenquellen mit [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Datendarstellung der Geschäftsbereiche und Services für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell (FDM) bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell (FDM) werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell (FDM) ermöglicht Ihnen:
+[!DNL AEM Forms]-Datenintegration ermöglicht die Konfiguration und Verbindung verschiedener Datenquellen mit [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie ein einheitliches Datendarstellungsschema der Geschäftsbereiche und Services für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell (FDM) bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell (FDM) werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell (FDM) ermöglicht Ihnen:
 
 * Zugreifen auf Datenmodellobjekte, Eigenschaften und Services aus verbundenen Datenquellen.
 * Erstellen benutzerdefinierter Datenmodellobjekten und -eigenschaften.
@@ -45,6 +45,26 @@ Wenn Sie ein Formulardatenmodell (FDM) erstellt haben, können Sie es für Folge
 * Vorbefüllen adaptiver Formulare aus konfigurierten Datenquellen
 * Aufrufen von Datenquellen-Serivices/-vorgängen mithilfe von Regeln für adaptive Formulare
 * Schreiben von Daten übermittelten adaptiven Formulardaten in Datenquellen
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Kann AEM Forms für Anwendungen von Versicherungspolicen verwendet werden?
+
+Ja. AEM Forms kann verwendet werden, um digitale Versicherungsformulare zu erstellen, die Bewerberinformationen erfassen, Eingaben validieren und mit Backend-Underwriting-Systemen integrieren.
+
+## Unterstützt AEM Forms Underwriting-Workflows?
+
+Ja, mit Workflows und Integrationen. AEM Forms unterstützt Workflow-gesteuerte Prozesse und Backend-Integrationen, die es Anwendungsdaten ermöglichen, in Underwriting- und Entscheidungssysteme zu fließen.
+
+## Kann AEM Forms mit Versicherungs-Kernsystemen integriert werden?
+
+Ja. AEM Forms unterstützt die Integration mithilfe von REST- und SOAP-APIs und ermöglicht so die Verbindung zu Richtlinienverwaltungssystemen, Schadenregulierungssystemen und CRMs.
+
+## Kann AEM Forms Formulardaten zurück in Versicherungssysteme schreiben?
+
+Ja. AEM Forms unterstützt das Zurückschreiben von Daten an Backend-Systeme im Rahmen der Formularübermittlung und der Workflow-Ausführung.
 
 ## Erste Schritte mit der Datenintegration {#get-started-with-data-integration}
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 100%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,14 @@ ht-degree: 100%
 AEM Forms bietet vorkonfiguriert Unterstützung für die Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können auch Unterstützung für weitere Gebietsschemata hinzufügen, wie Hindi (hi_IN). Sie können adaptive Formulare auch in einer RTL-Sprache (Right-to-Left, rechts nach links) wie Arabisch, Persisch und Urdu präsentieren, indem Sie diese Gebietsschemata hinzufügen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Unterstützt AEM Forms mehrsprachige Anwendungsfälle für Versicherungen?
+
+Ja. AEM Forms unterstützt mehrsprachige Formularerlebnisse. Dies ist für Versicherer, die in verschiedenen Regionen und Sprachen arbeiten, wichtig.
 
 ## Wie bestimmt AEM Forms das Gebietsschema für ein adaptives Formular?
 
@@ -62,7 +70,7 @@ AEM Forms priorisiert die folgenden Methoden zur Bestimmung des Gebietsschemas f
 
   Wenn keine geeignete Client-Bibliothek gefunden wird, wird das Standardwörterbuch (meist `en`) für die Authoring-Sprache des Formulars verwendet.
 
-  Wenn keine Sprachinformationen vorhanden sind, wird das adaptive Formular in der während der Entwicklung verwendeten Originalsprache angezeigt.
+  Wenn keine Gebietsschema-Informationen vorhanden sind, wird das adaptive Formular in der während der Entwicklung verwendeten Originalsprache angezeigt.
 
 
 ## Voraussetzungen für das Hinzufügen eines Gebietsschemas

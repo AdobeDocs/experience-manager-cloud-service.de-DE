@@ -5,10 +5,10 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 100%
+source-wordcount: '2044'
+ht-degree: 98%
 
 ---
 
@@ -26,6 +26,14 @@ ht-degree: 100%
 ## Einführung {#introduction}
 
 Sie können die Felder eines adaptiven Formulars mit vorhandenen Daten vorbefüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Um Daten in einem adaptiven Formular vorzubefüllen, stellen Sie die Benutzerdaten als vorbefüllte XML/JSON in dem Format bereit, das der Datenstruktur zum Vorbefüllen von adaptiven Formularen entspricht.
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Kann AEM Forms Daten aus Versicherungsanträgen vorbefüllen?
+
+Ja. AEM Forms unterstützt das Vorbefüllen von Formularfeldern mithilfe von Backend-Datenquellen, sodass Versicherer bestehende Kunden- oder Versicherungsdaten wiederverwenden und die manuelle Eingabe reduzieren können.
 
 ## Struktur der Vorbefüllungsdaten {#the-prefill-structure}
 
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

@@ -4,10 +4,10 @@ description: Liste der vorkonfigurierten Benutzergruppen und der jeder Gruppe zu
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 81%
 
 ---
 
@@ -107,6 +107,14 @@ Nachdem Sie [!DNL AEM Forms] as a Cloud Service eingerichtet haben, stehen die i
   </tr>
  </tbody>
 </table>
+
+## Anwendbarkeit und Anwendungsfälle
+
+### Versicherung
+
+## Ist AEM Forms Enterprise-Grade für Versicherungsgeschäfte geeignet?
+
+Ja. AEM Forms bietet Unternehmensfunktionen wie rollenbasierte Zugriffskontrolle, Audit-Protokolle, Workflow-Orchestrierung, Dokumenterstellung und Bereitstellungsflexibilität, die für groß angelegte Versicherungsvorgänge erforderlich sind.
 
 ## Siehe auch
 
