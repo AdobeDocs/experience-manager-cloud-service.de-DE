@@ -273,7 +273,7 @@ Lassen Sie uns nun die `clientlib-it-custom-locale`-Bibliothek in Ihr AEM as a C
 
 1. Suchen Sie die englischsprachige Beispieldatei:
 
-   AEM Forms stellt auf GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json) eine [beispielhafte englische Gebietsschema-Datei (.json) zur Verfügung.
+   AEM Forms stellt auf GitHub[&#128279;](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json) eine beispielhafte englische Gebietsschema-Datei (.json) zur Verfügung.
 
    Die englische Sprachdatei enthält den Standardsatz von Zeichenfolgen als Referenz. Ihre gebietsschemaspezifische Datei sollte die Struktur der englischsprachigen Datei imitieren.
 
