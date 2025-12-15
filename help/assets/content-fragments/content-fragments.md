@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
+source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 86%
@@ -344,7 +344,7 @@ Vermeiden Sie eine tiefe oder übermäßige Verschachtelung von Inhaltsfragmente
 
 Eine starke Verwendung von Inhaltsfragmentverweisen kann sich erheblich auf die Systemleistung, die Reaktionsfähigkeit der Benutzeroberfläche und die Ausführung von GraphQL-Abfragen auswirken. Ziel ist es, die Verschachtelung auf maximal zehn Ebenen zu belassen.
 
-## Anzahl der Datenfelder und Datentypen pro Modell {#number-of-data-fields-and-types-per-model}
+### Anzahl der Datenfelder und Typen pro Modell {#number-of-data-fields-and-types-per-model}
 
 Schließen Sie nur die Datenfelder und Typen ein, die ein Modell wirklich benötigt.
 
