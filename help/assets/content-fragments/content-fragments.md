@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 87%
+source-wordcount: '2610'
+ht-degree: 86%
 
 ---
 
@@ -352,9 +352,15 @@ Schließen Sie nur die Datenfelder und Typen ein, die ein Modell wirklich benöt
 
 ### Rich-Text-Felder {#rich-text-fields}
 
-Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksichtigung von Folgendem.
+Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksichtigung von Folgendem:
 
-Begrenzen Sie die Anzahl der Rich-Text-Felder pro Modell. Außerdem die Textmenge, die in jedem Fragment gespeichert ist, und den Umfang der HTML-Formatierung. Sehr große Rich-Text-Inhalte können die Systemleistung beeinträchtigen.
+* Felder
+
+  Begrenzen Sie die Anzahl der Rich-Text-Felder pro Modell. Aus Leistungsgründen wird nicht empfohlen, mehr als zehn Rich-Text-Felder in einem Modell zu haben. Es wird empfohlen, bei Bedarf [verschachtelte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content) zu verwenden.
+
+* Inhalt
+
+  Sie sollten auch die Menge an Text, die in jedem Fragment gespeichert wird, und den Umfang der HTML-Formatierung begrenzen. Sehr große Rich-Text-Inhalte können die Systemleistung beeinträchtigen.
 
 ### Anzahl der Varianten {#number-of-variations}
 
