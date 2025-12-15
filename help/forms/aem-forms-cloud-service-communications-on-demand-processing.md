@@ -6,7 +6,7 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: cb69041ff59ba1ff586e8c1c71090cc2eb9ad453
+source-git-commit: 9401d96bcf5375dc20c33055343a5b895b4e9107
 workflow-type: tm+mt
 source-wordcount: '2573'
 ht-degree: 2%
@@ -520,7 +520,7 @@ In diesem Beispiel generieren wir eine PDF mithilfe der Document Services-APIs u
 
 #### A. Verwenden der Swagger-Benutzeroberfläche für API-Tests
 
-PDF Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Testen von APIs, ohne Code zu schreiben. Verwenden Sie die Funktion &quot;**ausprobieren**, um die Document Service[API zum Generieren von &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) aufzurufen und zu testen.
+PDF Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Testen von APIs, ohne Code zu schreiben. Verwenden Sie die Funktion &quot;**ausprobieren**, um die Document Service[API zum Generieren von ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) aufzurufen und zu testen.
 
 1. Navigieren Sie zur API-Dokumentation
    - Forms-API: [Forms-API-Referenz](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -536,8 +536,8 @@ PDF Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Test
    |--------------|---------------|------------|
    | bucket | AEM-Instanz | AEM-Instanzname ohne den Adobe-Domänennamen (`.adobeaemcloud.com`) Verwenden Sie beispielsweise `p43162-e177398` als Bucket. |
    | Sicherheit | Bearer Token | Verwenden Sie das Zugriffstoken aus den OAuth-Server-zu-Server-Anmeldeinformationen des Adobe Developer Console-Projekts. |
-   | Hauptteil | template | Laden Sie eine XDP-Datei hoch, um das PDF-Formular zu generieren. Sie können beispielsweise &quot;[&#x200B; XDP“ verwenden](/help/forms/assets/ClosingForm.xdp) um eine PDF zu generieren. |
-   | Hauptteil | data | Eine optionale XML-Datei mit den Daten, die mit der Vorlage zusammengeführt werden sollen, um ein vorausgefülltes PDF-Formular zu generieren. Sie können beispielsweise &quot;[&#x200B; XML“ verwenden](/help/forms/assets/ClosingForm.xml) um eine PDF zu generieren. |
+   | Hauptteil | template | Laden Sie eine XDP-Datei hoch, um das PDF-Formular zu generieren. Sie können beispielsweise &quot;[ XDP“ verwenden](/help/forms/assets/ClosingForm.xdp) um eine PDF zu generieren. |
+   | Hauptteil | data | Eine optionale XML-Datei mit den Daten, die mit der Vorlage zusammengeführt werden sollen, um ein vorausgefülltes PDF-Formular zu generieren. Sie können beispielsweise &quot;[ XML“ verwenden](/help/forms/assets/ClosingForm.xml) um eine PDF zu generieren. |
    | Parameter | X-Adobe-Accept-Experimental | 1 |
 
 5. Klicken Sie auf **Senden**, um die API aufzurufen
