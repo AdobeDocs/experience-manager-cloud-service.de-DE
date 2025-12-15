@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 99%
@@ -29,7 +29,7 @@ Der [Inhaltsfragment-Editor](#opening-the-fragment-editor) bietet verschiedene [
 
 >[!NOTE]
 >
->Beachten Sie die [Best Practices](/help/assets/content-fragments/content-fragments.md) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
+>Beachten Sie die [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele sind [Standardaktionen für Assets](/help/assets/manage-digital-assets.md) bzw. das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=de).
+>Viele sind [Standardaktionen für Assets](/help/assets/manage-digital-assets.md) bzw. das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
@@ -230,7 +230,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->Versionen können [über die Zeitleiste auch erstellt, verglichen und zurückgesetzt werden](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+>Versionen können [über die Timeline auch erstellt, verglichen und zurückgesetzt werden](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 Der Editor bietet mehrere Optionen:
 
@@ -292,9 +292,9 @@ Sie können auch Inhalte mit einem Fragment [verknüpfen](/help/assets/content-f
 
 Sie können die Eigenschaften eines Fragments über die Registerkarte [Metadaten](/help/assets/content-fragments/content-fragments-metadata.md) anzeigen und bearbeiten.
 
-## Zeitleiste für Inhaltsfragmente {#timeline-for-content-fragments}
+## Timeline für Inhaltsfragmente {#timeline-for-content-fragments}
 
-Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
+Neben den Standardoptionen enthält die [Timeline](/help/assets/manage-digital-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
 * Anzeigen von Informationen zu Versionen, Kommentaren und Anmerkungen
 * Aktionen für Versionen
@@ -305,7 +305,7 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 
    * **Beschriftung** und/oder **Kommentar** hinzufügen (ein vorhandenes Fragment und eine bestimmte Version auswählen)
 
-   * **Als Version speichern** (ein vorhandenes Fragment und dann den Pfeil nach oben am unteren Rand der Zeitleiste auswählen)
+   * **Als Version speichern** (ein vorhandenes Fragment und dann den Pfeil nach oben am unteren Rand der Timeline auswählen)
 
 * Aktionen für Anmerkungen
 
@@ -316,7 +316,7 @@ Neben den Standardoptionen enthält die [Zeitleiste](/help/assets/manage-digital
 >Kommentare sind:
 >
 >* Standardfunktionen für alle Assets
->* In der Zeitleiste erstellt worden
+>* In der Timeline erstellt worden
 >* mit dem Fragment-Asset verbunden
 >
 >Anmerkungen (für Inhaltsfragmente) sind:
@@ -332,7 +332,7 @@ Zum Beispiel:
 
 ## Vergleichen von Fragment-Versionen {#comparing-fragment-versions}
 
-Die Aktion **Mit aktueller Version vergleichen** ist in der [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
+Die Aktion **Mit aktueller Version vergleichen** ist in der [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.
 
 Dadurch wird Folgendes geöffnet:
 
@@ -362,7 +362,7 @@ Sie werden nebeneinander angezeigt, wobei:
 
 Sie können eine frühere Version Ihres Fragments wiederherstellen.
 
-* Direkt über die [Zeitleiste](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+* Direkt über die [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
   Wählen Sie die gewünschte Version und dann die Aktion **Auf diese Version zurück** aus.
 

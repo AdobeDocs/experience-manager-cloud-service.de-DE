@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '3604'
 ht-degree: 97%
@@ -25,7 +25,7 @@ So verwenden Sie Inhaltsfragmentmodelle:
 
 >[!NOTE]
 >
->Beachten Sie die [Best Practices](/help/assets/content-fragments/content-fragments.md) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
+>Beachten Sie die [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    * Links: Felder bereits definiert
    * Rechts: verfügbare **Datentypen** für das Erstellen von Feldern (und **Eigenschaften**, die für erstellte Felder verwendet werden können)
-   * Oben: Eine Option, um den [neuen Editor“ &#x200B;](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * Oben: Eine Option, um den [neuen Editor“ ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
    >[!NOTE]
    >

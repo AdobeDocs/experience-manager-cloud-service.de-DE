@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 96%
@@ -35,7 +35,7 @@ Dieser Editor bietet Folgendes:
 
 >[!NOTE]
 >
->Beachten Sie die [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
+>Beachten Sie die [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) beim Arbeiten mit Ihren Inhaltsfragmentmodellen und Inhaltsfragmenten.
 
 >[!WARNING]
 >
@@ -130,7 +130,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* [Unter Verwendung der Funktion „Varianten generieren“ &#x200B;](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+* [Unter Verwendung der Funktion „Varianten generieren“ ](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -148,7 +148,7 @@ So erstellen Sie eine Variante Ihres Inhaltsfragments:
    >
    >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante &#x200B;](assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](assets/cf-authoring-create-variation-01.png)
 
 1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
@@ -271,7 +271,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
@@ -497,7 +497,7 @@ Um eine produkt- und kontextbezogene Zusammenarbeit zu ermöglichen, stellt die 
 
 >[!NOTE]
 >
->Diese Kommentare sind weder als [Anmerkungen im Originaleditor](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) noch in der [Zeitleiste der Assets-Konsole](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) sichtbar.
+>Diese Kommentare sind weder als [Anmerkungen im Originaleditor](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) noch in der [Timeline der Assets-Konsole](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) sichtbar.
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 
