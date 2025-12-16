@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 98%
+source-wordcount: '557'
+ht-degree: 77%
 
 ---
 
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**Gültigkeit des Zertifikats
++++Zertifikatgültigkeit
 
 ## Zertifikatgültigkeit {#validity}
 
@@ -138,16 +138,16 @@ Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindesten
 
 +++
 
-+++**Falsches SAN-Zertifikat wird auf meine Domain angewendet
++++Auf meine Domain wird ein falsches SAN-Zertifikat angewendet
 
 ## Auf meine Domain wird ein falsches SAN-Zertifikat angewendet {#wrong-san-cert}
 
 Nehmen wir an, Sie möchten `dev.yoursite.com` und `stage.yoursite.com` mit Ihrer produktionsfremden Umgebung und `prod.yoursite.com` mit Ihrer Produktionsumgebung verknüpfen.
 
-Um das CDN für diese Domains zu konfigurieren, muss für jede Domain ein Zertifikat installiert sein. Installieren Sie daher ein Zertifikat, das `*.yoursite.com` für Ihre produktionsfremden Umgebungen abdeckt, und ein anderes Zertifikat, das zudem `*.yoursite.com` für Ihre Produktions-Domains abdeckt.
+Um das CDN für diese Domains zu konfigurieren, muss für jede Domain ein Zertifikat installiert sein. Daher müssen Sie ein Zertifikat installieren, das die `*.yoursite.com` für Ihre Nicht-Produktions-Domains abdeckt, und ein weiteres, das auch die `*.yoursite.com` für Ihre Produktions-Domains abdeckt.
 
-Diese Konfiguration ist gültig. Da beide Zertifikate denselben SAN-Eintrag abdecken, installiert das CDN bei Aktualisierung eines Zertifikats das neueste Zertifikat auf allen entsprechenden Domains, was unerwartet sein kann.
+Diese Konfiguration ist gültig. Wenn Sie jedoch eines der Zertifikate aktualisieren, decken beide Zertifikate immer noch denselben SAN-Eintrag ab. Daher installiert das CDN das neueste Zertifikat auf allen anwendbaren Domains, was unerwartet erscheinen kann.
 
-Auch wenn dies unerwartet sein kann, ist dies kein Fehler und entspricht dem Standardverhalten des zugrunde liegenden CDNs. Wenn Sie über zwei oder mehr SAN-Zertifikate verfügen, die denselben SAN-Domain-Eintrag abdecken, und diese Domain durch eines der Zertifikate abgedeckt ist und ein anderes aktualisiert wird, wird letzteres nun für die Domain installiert.
+Obwohl dieses Szenario unerwartet sein kann, ist es kein Fehler und das Standardverhalten des zugrunde liegenden CDN. Wenn Sie zwei oder mehr SAN-Zertifikate haben, die denselben SAN-Domäneneintrag abdecken, installiert das CDN das zuletzt aktualisierte Zertifikat für diese Domäne. Diese Situation tritt auch dann auf, wenn ein anderes Zertifikat bereits denselben Domain-Eintrag abdeckt.
 
 +++
