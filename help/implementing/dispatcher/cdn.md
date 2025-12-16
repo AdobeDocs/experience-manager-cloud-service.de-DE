@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
+source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 98%
+source-wordcount: '1772'
+ht-degree: 97%
 
 ---
 
@@ -132,7 +132,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 Der zusätzliche Sprung zwischen dem Kunden-CDN und dem AEM-CDN ist nur im Fall eines Cache-Fehlers erforderlich. Durch die Verwendung der in diesem Artikel beschriebenen Cache-Optimierungsstrategien sollte das Hinzufügen eines Kunden-CDN nur eine vernachlässigbare Latenzzeit verursachen.
 
-Diese kundenspezifische CDN-Konfiguration wird für die Veröffentlichungsebene unterstützt, aber nicht vor der Autorenebene.
+Diese kundenspezifische CDN-Konfiguration wird für die Veröffentlichungs- und Vorschauebene unterstützt, jedoch nicht vor der Autorenebene.
 
 ### Debuggen von Konfigurationen
 
@@ -163,7 +163,7 @@ Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, de
 >Sie können eine schnelle Entwicklungsumgebung (RDE) verwenden, um Ihre Konfiguration bereitzustellen und zu testen:
 >
 >* [Schnelle Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Beispielkonfigurationen von CDN-Anbietern {#sample-configurations}
 
