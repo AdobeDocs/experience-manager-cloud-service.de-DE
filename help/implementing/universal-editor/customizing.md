@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 67%
@@ -37,13 +37,13 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | Inhaltswert | Beschreibung |
 |---|---|
 | `publish` | Deaktivieren Sie alle [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)-Funktionen, d. h. die [Publish](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) und [Unpublish](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
-| `publish-live` | Live ([) &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-live` | Live ([) ](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | Vorschauveröffentlichung deaktivieren (wenn der [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist) |
 | `unpublish` | Deaktivieren Sie die Schaltfläche [Veröffentlichung rückgängig machen](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | Deaktiviert die [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Deaktiviert die Schaltfläche [Duplizieren](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Deaktiviert die Schaltfläche [Seite öffnen](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
-| `dev-login` | Deaktiviert die Schaltfläche [Entwickleranmeldung](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
+| `aem-dev-login` | Deaktiviert die Schaltfläche [Entwickleranmeldung](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
 ## Ändern des Endpunkts {#custom-endpoint}
 
@@ -51,7 +51,7 @@ Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sonder
 
 ## Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [&#x200B; Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 

@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Version 2025.12.11 des uni
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 21%
@@ -28,7 +28,7 @@ Dies sind die Versionshinweise für die Version vom 12. Dezember 2025 des univer
 
 * Vorhandenen Tabellen im (Rich-Text[Editor wurde Unterstützung hinzugefügt](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * Die Tabulatortaste wurde für die Verschachtelung von Listen im [Rich-Text-Editor“ aktiviert](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* Die Entwickleranmeldefunktion kann jetzt über die [Meta-Tag-`dev-login`&quot; deaktiviert werden](/help/implementing/universal-editor/customizing.md#meta-tags)
+* Die Entwickleranmeldefunktion kann jetzt über die [Meta-Tag-`aem-dev-login`&quot; deaktiviert werden](/help/implementing/universal-editor/customizing.md#meta-tags)
 * Ein Rechtsklick auf den Überlagerungsabschnitt zeigt nun ein [Kontextmenü“](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [Eingerückter Einzug](/help/implementing/universal-editor/configure-rte.md#indentation) wird jetzt im [Rich-Text-Editor“ unterstützt](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
