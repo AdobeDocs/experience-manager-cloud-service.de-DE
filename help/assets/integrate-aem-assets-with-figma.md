@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie [!DNL AEM Assets] mit [!DNL Figma] integriere
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 3603a98dfee62db49f3201c8d75aa8eee4909cc1
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+source-git-commit: a9c1f5472092b3b9fa7a5e5570feb92f32e9ef6c
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 72%
 
 ---
 
@@ -21,6 +21,12 @@ Dank der nativen Integration von [!DNL AEM Assets] mit [!DNL Figma] können Entw
 * Die mindestens erforderliche AEM-Version ist `19149`.
 
 * Sie müssen über gültige [!DNL AEM Assets]- und [!DNL Figma]-Lizenzen verfügen, um [!DNL AEM Assets] mit [!DNL Figma] integrieren zu können.
+
+## Unterstützte Dateiformate {#supported-file-formats-integration-figma}
+
+
+* Für den Import von [!DNL AEM]-Assets in Figma werden folgende Formate unterstützt: Bild-Assets (JPEG, PNG), Videodateien (MP4, MOV, WebM), Animationsdateien (GIF) und Vektordateien (SVG).
+* Beim Export von Designs von [!DNL Figma] nach [!DNL AEM Assets] werden die Formate **PNG**, **PDF**, **JPG** und **SVG** unterstützt.
 
 ## Zugriff auf den [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]{#access-aem-assets-connector}
 
@@ -45,7 +51,9 @@ Alternativ können Sie über die [!DNL Figma]-Community auf [[!DNL Adobe Experie
 1. Ziehen Sie das Asset per Drag-and-Drop auf die Arbeitsfläche oder wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Auswählen]**, damit das Asset auf der Arbeitsfläche angezeigt wird.
 
 1. Klicken Sie auf ![drei Punkte](/help/assets/assets/three-dots.svg) im Ordnerpfad, um alle übergeordneten und untergeordneten Ordner in der aktuellen Hierarchie anzuzeigen. Wählen Sie einen Ordner aus, um zu diesem Speicherort zu navigieren.
-   ![drei Punkte](/help/assets/assets/assets-folder-structure.png)
+   ![drei Punkte](/help/assets/assets/figma-v2-plugin.png)
+
+1. [Optional] Klicken Sie auf **[!UICONTROL Nach Updates suchen]**. Die im aktuellen Figma-Dokument verwendeten Assets werden mit den in AEM vorhandenen Assets verglichen. Alle Aktualisierungen werden in einem separaten Fenster aufgelistet. Klicken Sie **[!UICONTROL Aktualisieren]**, um das aktualisierte Asset von AEM in Ihr Figma-Dokument zu übernehmen.
 
 Sobald Ihr Figma-Design fertig ist, können Sie [das Asset in das AEM Assets-Repository exportieren](#export-figma-design-to-aem-assets-folder).
 
@@ -56,12 +64,7 @@ Sobald Ihr Figma-Design fertig ist, können Sie [das Asset in das AEM Assets-Rep
 1. Navigieren Sie zum Zielordner, in dem Sie Ihr [!DNL Figma]-Design speichern möchten. Wenn Sie sich bereits in einem Ordner befinden, klicken Sie auf „Weitere Optionen“ (![drei Punkte](/help/assets/assets/three-dots.svg)) im Ordnerpfad, um einen anderen Zielordner auszuwählen.
 1. Optional: Gruppieren Sie Assets auf der Arbeitsfläche, um sie als eine Einheit zum Hochladen in Ihren Ordner auszuwählen.
 1. Klicken Sie auf ![Datei-Upload](/help/assets/assets/upload-icon.svg) **[!UICONTROL Hochladen]**, um das Dialogfeld **[!UICONTROL Asset hochladen]** anzuzeigen.
-1. Geben Sie im Dialogfeld einen Dateinamen an, wählen Sie ein Dateiformat sowie entweder **[!UICONTROL Ausgewähltes Element]** oder **[!UICONTROL Seite]** aus und klicken Sie auf **[!UICONTROL Hochladen]**, um das ausgewählte Asset oder das gesamte Design in den Zielordner hochzuladen.
+1. Wählen Sie im Dialogfeld entweder **[!UICONTROL Ausgewähltes Element]** oder **[!UICONTROL Seite]** aus, geben Sie einen Datei- oder Seitennamen an, definieren Sie eine Exportkonfiguration und klicken Sie auf **[!UICONTROL Hochladen]**, um das ausgewählte Asset oder das gesamte Design in den Zielordner hochzuladen.
+
+   Die Exportkonfiguration umfasst das Dateiformat, die Skalierung und die Qualität. Wenn Sie beispielsweise JPG als Dateiformat auswählen, können Sie auch die Bildgröße und -qualität definieren. Wenn Sie PNG als Dateiformat auswählen, können Sie auch die Bildgröße definieren.
    ![Hochladen des Figma-Designs](/help/assets/assets/upload-figma-design.png)
-
-## Wichtige Hinweise{#Limitations-of-using-aem-assets-into-figma}
-
-Für diese Integration gelten folgende Einschränkungen:
-
-* Beim Import von [!DNL AEM]-Assets in Figma werden die Formate **JPEG** und **PNG** unterstützt.
-* Beim Export von Designs von [!DNL Figma] nach [!DNL AEM Assets] werden die Formate **PNG**, **PDF**, **JPG** und **SVG** unterstützt.

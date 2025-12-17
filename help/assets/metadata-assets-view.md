@@ -5,9 +5,9 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+source-git-commit: 67f9ec20667639458d8a6b142df3fc76ff574f26
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2236'
 ht-degree: 98%
 
 ---
@@ -118,7 +118,7 @@ Wenn Sie ein vorhandenes Formular wiederzuverwenden wollen, um ein neues Formula
 
 >[!IMPORTANT]
 >
->Das Standard-Metadatenformular verfügt außerdem über eine Registerkarte **[!UICONTROL Kampagne]**, die **[!UICONTROL Kampagnenname]**, **[!UICONTROL Kanäle]** und **[!UICONTROL Region]** mehrwertige schreibgeschützte Felder enthält. ist eine Funktion mit begrenzter Verfügbarkeit. Sie können sie aktivieren lassen, indem Sie ein Support-Ticket erstellen.
+>Das Standard-Metadatenformular verfügt außerdem über eine Registerkarte **[!UICONTROL Kampagne]**, die **[!UICONTROL Kampagnenname]**, **[!UICONTROL Kanäle]** und **[!UICONTROL Region]** mehrwertige schreibgeschützte Felder enthält. Dies ist eine Funktion mit begrenzter Verfügbarkeit. Sie können sie aktivieren lassen, indem Sie ein Support-Ticket erstellen.
 
 ### Eigenschaftskomponenten {#property-components}
 
