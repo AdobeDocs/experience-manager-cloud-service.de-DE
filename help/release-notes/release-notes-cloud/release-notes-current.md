@@ -1,14 +1,14 @@
 ---
-title: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager] as a Cloud Service
 description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 64%
+source-wordcount: '1704'
+ht-degree: 54%
 
 ---
 
@@ -40,13 +40,41 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Agenten in AEM {#agents-in-aem}
+## AEM Beta-Programme {#aem-beta-programs}
 
-AEM bietet eine Reihe von Agenten, mit denen Sie die Inhaltserstellung beschleunigen und Änderungen automatisch orchestrieren können. Weitere Informationen finden Sie unter [Übersicht über Agenten in AEM](/help/ai-in-aem/agents/overview.md).
+Beta-Programme für Adobe Experience Manager (AEM) bieten Kunden eine Möglichkeit, auf Vorabversionsfunktionen und -code zuzugreifen, Feedback zu geben und die Zukunft von AEM zu gestalten.
+
+>[!IMPORTANT]
+>
+>Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (durch Adobe Support Services oder anderweitig). Adobe empfiehlt Kunden, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
+
+**Vorteile der Teilnahme**
+Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, können Kunden und Partner Feedback geben und die Produktentwicklung mitgestalten. Außerdem erhalten sie Unterstützung bei der Vorbereitung auf die Einführung neuer Funktionen vor der allgemeinen Verfügbarkeit.
+
+**Aktuelle Beta-Programme**
+In den folgenden Abschnitten sind aktive Beta-Programme aufgeführt.
+
+### Agenten in AEM (Beta-Programm)
+
+Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [ finden Sie unter „Übersicht über Agenten ](/help/ai-in-aem/agents/overview.md) AEM&quot;.
+
+Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
+
+    * Namen und Adobe ID der Team-Mitglieder, die Agenten aktiv verwenden.
+    * Führen Sie bestimmte Agenten auf, die Sie oder Ihr Team verwenden möchten. Oder sagen Sie einfach „Alle Agenten“
+
+### AEM Foundation (Beta-Programme)
+
+    Siehe [AEM Foundation Beta-Programme](#foundation-early-adopter).
+
+### Cloud Manager (Beta-Programme)
+
+    Siehe [Cloud Manager Beta-Programme](/help/implementing/cloud-manager/release-notes/current.md).
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -219,13 +247,13 @@ Um eine Teilnahme anzufordern oder Updates zu erhalten, wenden Sie sich bitte an
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
 
 #### Beschleunigen der AEM-Entwicklung mit KI (Alpha-Programm) {#ai-dev-alpha}
 
 AEM-Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie Cursor, Claude Code, Visual Studio und IntelliJ, um die Funktionsbereitstellung zu beschleunigen und die Code-Qualität zu verbessern. Wir sammeln Erfahrungen aus der Praxis, um zukünftige, von Adobe unterstützte KI-Funktionen zu gestalten.
 
-Teilen Sie mit uns per E-Mail [aemcs-java-adopter@adobe.com, was für Ihr Team funktioniert und was Adobe bereitstellen soll](mailto:aemcs-java-adopter@adobe.com).
+Teilen Sie per E-Mail [aemcs-java-adopter@adobe.com mit, was für Ihr Team funktioniert und was Adobe bereitstellen soll](mailto:aemcs-java-adopter@adobe.com).
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
