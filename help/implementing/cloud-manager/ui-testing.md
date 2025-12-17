@@ -275,7 +275,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 | Empfohlene Dauer | 15m | Adobe empfiehlt, Tests unter diesem Zeitlimit zu belassen. |
 
 * Wenn das Ziel „Autor/Veröffentlichung“ durch IP-Zulassungsauflistung geschützt ist, muss die Testinfrastruktur der Pipeline-Benutzeroberfläche auf die Zulassungsliste gesetzt werden, da andernfalls Benutzeroberflächentests mit 403 Verboten fehlschlagen können.
-Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistung Auf die Zulassungsliste setzten &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistung Auf die Zulassungsliste setzten &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
