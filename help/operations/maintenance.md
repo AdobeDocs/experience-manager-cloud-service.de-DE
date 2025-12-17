@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Wartungsaufgaben in AEM as a Cloud Service 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
+source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 96%
+source-wordcount: '2057'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +70,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     <td>Ad-hoc-Aufgabenbereinigung</td>
     <td>Kundin/Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den vorkonfigurierten Konfigurationsknoten des Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den vorkonfigurierten Konfigurationsknoten des Wartungsfensters unter <code>/libs</code> durch Erstellen von Eigenschaften im Ordner <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code>.</p>
     <p>Weitere Konfigurationsdetails finden Sie in der Tabelle zum Wartungsfenster. Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten hinzufügen. Benennen Sie ihn <code>granite_TaskPurgeTask</code>, wobei Sie das Attribut <code>sling:resourceType</code> auf <code>granite/operations/components/maintenance/task</code> und das Attribut <code>granite.maintenance.name</code> auf <code>TaskPurge</code> setzen. Konfigurieren Sie die OSGi-Eigenschaften. Eine Liste der Eigenschaften finden Sie unter <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>.</p>
   </td>
   </tr>
@@ -78,7 +78,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     <td>Workflow-Bereinigung</td>
     <td>Kundin/Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie unten in der Tabelle zum Wartungsfenster.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie unten in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_WorkflowPurgeTask</code>). Informationen zum Konfigurieren der OSGi-Eigenschaften finden Sie <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Regelmäßiges Bereinigen von Workflow-Instanzen</a>.</p>
   </td>
   </tr>
@@ -86,7 +86,7 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
     <td>Projektbereinigung</td>
     <td>Kundin/Kunde</td>
     <td>
-    <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie unten in der Tabelle zum Wartungsfenster.</p>
+    <p>Das muss in Git geschehen. Überschreiben Sie den Standardkonfigurationsknoten des Wartungsfensters unter <code>/libs</code>, indem Sie Eigenschaften im Ordner <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> oder <code>granite_monthly</code> erstellen. Weitere Konfigurationsdetails finden Sie unten in der Tabelle zum Wartungsfenster.</p>
     <p>Aktivieren Sie die Wartungsaufgabe, indem Sie unter dem obigen Knoten einen weiteren Knoten mit den entsprechenden Eigenschaften hinzufügen (nennen Sie ihn <code>granite_ProjectPurgeTask</code>). Siehe die Liste der <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi-Eigenschaften</a> zur <b>Bereinigungskonfiguration von Adobe-Projekten</b>.</p>
   </td>
   </tr>
@@ -146,9 +146,9 @@ Die folgende Tabelle zeigt die verfügbaren Konfigurationen des Wartungsfensters
 
 ### Speicherorte {#locations}
 
-* Täglich – /apps/settings/granite/operations/maintenance/granite_daily
-* Wöchentlich – /apps/settings/granite/operations/maintenance/granite_weekly
-* Monatlich – /apps/settings/granite/operations/maintenance/granite_month
+* Täglich - /conf/global/settings/granite/operations/maintenance/granite_daily
+* Wöchentlich - /conf/global/settings/granite/operations/maintenance/granite_weekly
+* Monatlich - /conf/global/settings/granite/operations/maintenance/granite_month
 
 ### Code-Beispiele {#code-samples}
 
