@@ -3,9 +3,9 @@ title: Inhaltsoptimierungs-Agent
 description: Erfahren Sie, wie Sie mit dem Inhaltsoptimierungs-Agenten transformieren können, wie Benutzer Assets verfeinern und anpassen, indem sie Anweisungen in natürlicher Sprache anwenden, um kanalfertige Varianten zu erstellen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ad027974400bdce3428ce96e8804abfe087b48da
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Sie können über den KI-Assistenten auf die Agenten in AEM zugreifen. Melden Si
 
 ## Häufige Anwendungsfälle und Beispielaufforderungen {#use-cases-prompts}
 
-Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets &#x200B;](/help/ai-in-aem/agents/discovery/overview.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets ](/help/ai-in-aem/agents/discovery/overview.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **Erstellung von Ausgabedarstellungen mit hoher Auflösung**
 
@@ -154,6 +154,13 @@ Wenn Sie eine Optimierungsaufforderung angeben, gibt der Inhaltsoptimierungs-Age
 ![Ergebnisse der Inhaltsoptimierung](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
 
 Diese Ergebnisse erleichtern die Überprüfung der optimierten Ausgabe und ihre sofortige Verwendung in nachgelagerten Kanälen oder Workflows.
+
+
+## Einschränkungen {#limitations-content-optimization}
+
+* Der Inhaltsoptimierungs-Agent unterstützt derzeit keine PNG-Assets.
+
+* Das Festlegen der Hintergrundfarbe wird nicht unterstützt.
 
 <!--
 

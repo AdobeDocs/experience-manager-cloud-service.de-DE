@@ -1,7 +1,7 @@
 ---
 title: Verbessern der Inhaltssuche mit KI-generierten Metadaten
 description: Erfahren Sie, wie Sie die Inhaltssuche mit KI-generierten Metadaten verbessern können
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 94%
@@ -43,4 +43,4 @@ Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Sc
 
 1. [Optional] Sie können zusätzliche Tags hinzufügen oder eigene erstellen, wenn Sie der Meinung sind, dass relevante Tags fehlen. Schreiben Sie dazu Ihre Tags in das Feld **[!UICONTROL Generierte Keywords]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
-Informationen zum Deaktivieren von KI-generierten Metadaten finden Sie unter [Deaktivieren von KI-generierten Metadaten](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+Informationen zum Deaktivieren von KI-generierten Metadaten finden Sie unter [Deaktivieren von KI-generierten Metadaten](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata).

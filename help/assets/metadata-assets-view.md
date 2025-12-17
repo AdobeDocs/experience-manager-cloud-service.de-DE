@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 100%
+source-wordcount: '2235'
+ht-degree: 98%
 
 ---
 
@@ -115,6 +115,10 @@ In diesem Video finden Sie die Reihenfolge der Schritte:
 Nachdem ein Formular erstellt wurde, wird es automatisch angewendet, wenn Benutzende ein Asset des entsprechenden MIME-Typs hochladen.
 
 Wenn Sie ein vorhandenes Formular wiederzuverwenden wollen, um ein neues Formular zu erstellen, wählen Sie ein Metadatenformular aus, klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**, geben Sie einen Namen ein und klicken Sie auf **[!UICONTROL Bestätigen]**. Sie können ein Metadatenformular bearbeiten, um es zu ändern. Wenn Sie ein Formular ändern, wird es für Assets verwendet, die nach der Änderung hochgeladen wurden. Die vorhandenen Assets werden nicht geändert.
+
+>[!IMPORTANT]
+>
+>Das Standard-Metadatenformular verfügt außerdem über eine Registerkarte **[!UICONTROL Kampagne]**, die **[!UICONTROL Kampagnenname]**, **[!UICONTROL Kanäle]** und **[!UICONTROL Region]** mehrwertige schreibgeschützte Felder enthält. ist eine Funktion mit begrenzter Verfügbarkeit. Sie können sie aktivieren lassen, indem Sie ein Support-Ticket erstellen.
 
 ### Eigenschaftskomponenten {#property-components}
 
