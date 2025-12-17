@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
+source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2662'
 ht-degree: 69%
 
 ---
@@ -32,7 +32,7 @@ Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automati
 
 Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[ definierten Konventionen ](#building-ui-tests).
 
 >[!TIP]
 >
@@ -187,7 +187,7 @@ Um eine Datei `testing.properties` in das Build-Artefakt aufzunehmen, fügen Sie
 >
 >Falls Ihr Projekt diese Zeile nicht enthält, müssen Sie die Datei bearbeiten, um sich für Tests der Benutzeroberfläche anmelden zu können.
 >
->Die Datei enthält möglicherweise die Zeile &quot;*NICHT*&quot;. Dies ist lediglich eine Warnung aus älteren Vorlagen/Beispielen und hindert *nicht* Sie daran, die für Cloud Manager-Benutzeroberflächentests erforderlichen Opt-in-Änderungen vorzunehmen. Sie können den Hinweis ignorieren. Das heißt, Sie können `assembly-ui-test-docker-context.xml` und `pom.xml` in *Ihr Projekt* bearbeiten, wenn Sie die Opt-in-Schritte ausführen (z. B. um `testing.properties` einzuschließen).
+>Die Datei enthält möglicherweise die Zeile *NICHT ÄNDERN*. Dies ist lediglich eine Warnung aus älteren Vorlagen/Beispielen und hindert *nicht* Sie daran, die für Cloud Manager-Benutzeroberflächentests erforderlichen Opt-in-Änderungen vorzunehmen. Sie können den Hinweis ignorieren; Sie können `assembly-ui-test-docker-context.xml` und `pom.xml` in *Ihrem Projekt“ bearbeiten* wenn Sie die Opt-in-Schritte ausführen (z. B. um `testing.properties` einzuschließen).
 
 Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
 
@@ -275,7 +275,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 | Empfohlene Dauer | 15m | Adobe empfiehlt, Tests unter diesem Zeitlimit zu belassen. |
 
 * Wenn das Ziel „Autor/Veröffentlichung“ durch IP-Zulassungsauflistung geschützt ist, muss die Testinfrastruktur der Pipeline-Benutzeroberfläche auf die Zulassungsliste gesetzt werden, da andernfalls Benutzeroberflächentests mit 403 Verboten fehlschlagen können.
-Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistung Auf die Zulassungsliste setzten &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistung Auf die Zulassungsliste setzten ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -311,7 +311,7 @@ Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
+Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) ](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Hochladen von Dateien {#upload-files}
 
