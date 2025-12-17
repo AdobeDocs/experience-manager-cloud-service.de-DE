@@ -3,10 +3,11 @@ title: Versionshinweise für Version 2025.7.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.7.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 98%
+source-wordcount: '2273'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +39,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -80,7 +81,7 @@ Sie können jetzt beim Generieren eines freigegebenen Links einen Titel hinzufü
 
 **Verbesserte Filternavigation**
 
-Content Hub enthält jetzt in Filtern die Option **Alle anzeigen**, mit der Benutzende alle verfügbaren Facetten zusammen mit der Anzahl der Assets im Zusammenhang mit der aktuellen Einschränkung auf bis zu zehn Facetten anzeigen können. Verbesserte Such- und Sortierfunktionen in jedem Filter erleichtern die effizientere Erkennung und Verwaltung von Assets.
+Content Hub enthält jetzt in Filtern die Option **Alle anzeigen**, mit der Benutzende alle verfügbaren Facetten zusammen mit der Asset-Anzahl im Zusammenhang mit der aktuellen Einschränkung auf bis zu zehn Facetten anzeigen können. Verbesserte Such- und Sortierfunktionen in jedem Filter erleichtern die effizientere Erkennung und Verwaltung von Assets.
 
 ### AEM-Desktop-Anwendung Version 3.0.0 {#desktop-app-release-3.0.0}
 
@@ -175,11 +176,11 @@ Beschleunigen Sie die AEM Forms Edge Delivery Services-Entwicklung mit diesem CL
 
 Mit dem API-Integrations-Tool können Formularautoren dynamische, intelligente Formulare erstellen, mit denen basierend auf den Aktionen der Benutzenden Daten automatisch von externen REST-APIs abgerufen und ausgefüllt werden. Durch diese No-Code-Integrationsfunktion werden statische Formulare zu responsiven Datenerfassungsschnittstellen.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Knotenansicht für die Verwaltung von Berechtigungen {#node-view}
+### Knotenansicht für die Berechtigungsverwaltung {#node-view}
 
-AEM führt die Berechtigungsverwaltung für Knotenansichten ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter. Weitere Informationen finden [&#x200B; im &#x200B;](/help/security/touch-ui-principal-view.md) Artikel .
+AEM führt die Berechtigungsverwaltung für die Knotenansicht ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter. Weitere Informationen finden Sie im [spezifischen Artikel](/help/security/touch-ui-principal-view.md).
 
 ### Aktualisierter Prozess zur Abschaffung {#updated-deprecation-process}
 
@@ -189,7 +190,7 @@ Weitere Informationen finden Sie im Artikel zur [Abschaffung](/help/release-note
 
 #### Veraltete Java-APIs und OSGi-Konfigurationen, deren Entfernungsdatum sich nähert {#deprecated-near-removals}
 
-Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigurationen anzuzeigen, die nicht mehr verwendet werden dürfen. Ausführliche Informationen, einschließlich der Zeitpläne für die Entfernung, finden Sie im Artikel zur Abschaffung.
+Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigurationen anzuzeigen, die nicht mehr verwendet werden dürfen. Ausführliche Informationen, einschließlich der Timelines für die Entfernung, finden Sie im Artikel zur Abschaffung.
 
 <details>
   <summary>Erweitern Sie die Liste, um die veralteten Versionen anzuzeigen</summary>
@@ -241,18 +242,20 @@ Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf e
 
 ### Standardmäßige Bereinigung älterer Versionen und Auditprotokolle {#mt-defaults}
 
-Derzeit sind die zugehörigen Bereinigungs-Wartungsaufgaben in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, außer dies ist explizit konfiguriert.
+Derzeit sind die zugehörigen *Bereinigungs-Wartungsaufgaben* in Inhaltsversionen und Auditprotokollen standardmäßig deaktiviert. Daher werden keine Daten entfernt, außer dies ist explizit konfiguriert.
 
-Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung zu einem zukünftigen angekündigten Datum standardmäßig aktiviert, gemäß den folgenden Richtlinien:
+Um die Repository-Leistung zu optimieren, wird die Bereinigung jedoch standardmäßig zu einem späteren angekündigten Datum aktiviert.
+
+Weitere Details finden Sie im [Artikel zu Wartungsaufgaben](/help/operations/maintenance.md#defaults).
 
 #### Inhaltsversionen {#mt-content}
 
-* &#x200B;* *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das später mitgeteilt wird)
-   * Versionen, die älter als *30 Tage* sind, werden regelmäßig gelöscht.
+* **Neue Umgebungen** (erstellt nach einem bevorstehenden Datum, das später mitgeteilt wird):
+   * Versionen, die älter als 30 Tage sind, werden regelmäßig gelöscht.
    * Die letzten fünf Versionen der letzten 30 Tage werden zusammen mit der neuesten Version und der aktuellen Version unabhängig von deren Alter beibehalten.
 
-* &#x200B;* *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
-   * Versionen, die älter als *7 Jahre* sind, werden regelmäßig gelöscht.
+* **Vorhandene Umgebungen** (vor diesem bevorstehenden Datum erstellt):
+   * Versionen, die älter als 7 Jahre sind, werden regelmäßig gelöscht.
    * Alle Versionen der letzten 7 Jahre werden beibehalten.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
@@ -260,18 +263,16 @@ Um jedoch die Repository-Leistung zu optimieren, wird die Bereinigung zu einem z
 
 #### Auditprotokoll {#mt-auditlogs}
 
-* &#x200B;* *Neue Umgebungen* (erstellt nach einem bevorstehenden Datum, das separat mitgeteilt wird):
-   * Replikations-, DAM-und Seiten-Auditprotokolle, die älter als *7 Tage* sind, werden regelmäßig gelöscht.
+* **Neue Umgebungen** (erstellt nach einem bevorstehenden Datum, das separat kommuniziert wird):
+   * Replikations-, DAM- und Seiten-Audit-Protokolle, die älter als sieben Tage sind, werden regelmäßig gelöscht.
    * Alle Ereignisse werden standardmäßig protokolliert.
 
-* &#x200B;* *Vorhandene Umgebungen* (vor diesem bevorstehenden Datum erstellt):
-   * Replikations-, DAM-und Seiten-Auditprotokolle, die älter als *7 Jahre* sind, werden regelmäßig gelöscht.
+* **Vorhandene Umgebungen** (vor diesem bevorstehenden Datum erstellt):
+   * Replikations-, DAM- und Seiten-Auditprotokolle, die älter als sieben Jahre sind, werden regelmäßig gelöscht.
    * Alle Ereignisse werden standardmäßig protokolliert.
    * Dieser hohe Standardschwellenwert verhindert ein unbeabsichtigtes Entfernen aktueller Daten. Es wird jedoch empfohlen, niedrigere Werte zu konfigurieren, um die Repository-Leistung zu optimieren.
 
 * Sie können diese Standardwerte über die YAML-Konfiguration ändern, die über die Konfigurations-Pipeline bereitgestellt wird.
-
-Weitere Details finden Sie im [Artikel zu Wartungsaufgaben](/help/operations/maintenance.md#defaults).
 
 ### Edge-Datenverarbeitung (Alpha-Programm) {#edge-computing}
 
