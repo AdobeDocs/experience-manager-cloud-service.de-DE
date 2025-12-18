@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
+source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 54%
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,20 +58,20 @@ Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, kö
 **Aktuelle Beta-Programme**
 In den folgenden Abschnitten sind aktive Beta-Programme aufgeführt.
 
-### Agenten in AEM (Beta-Programm)
+### Agenten in AEM (Beta-Programm) {#agents-in-aem-beta-program}
 
-Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [&#x200B; finden Sie unter „Übersicht über Agenten &#x200B;](/help/ai-in-aem/agents/overview.md) AEM&quot;.
+Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [ finden Sie unter „Übersicht über Agenten ](/help/ai-in-aem/agents/overview.md) AEM&quot;.
 
-Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [&#128279;](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
+Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
 
 * Namen und Adobe ID der Team-Mitglieder, die Agenten aktiv verwenden werden.
 * Listen Sie bestimmte Agenten auf, die Sie oder Ihr Team verwenden werden. Oder sagen Sie einfach „Alle Agenten“.
 
-### AEM Foundation (Beta-Programme)
+### AEM Foundation (Beta-Programme) {#aem-foundation-beta-programs}
 
 Siehe [AEM Foundation-Betaprogramme](#foundation-early-adopter).
 
-### Cloud Manager (Beta-Programme)
+### Cloud Manager (Beta-Programme) {#cloud-manager-beta-programs}
 
 Siehe [Cloud Manager-Beta-Programme](/help/implementing/cloud-manager/release-notes/current.md).
 
@@ -206,7 +206,7 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 >Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
 >
 
-#### Edge-Datenverarbeitung (Beta-Programm) {#edge-computing}
+#### Edge-Datenverarbeitung (Beta-Programm)
 
 Mit der Edge-Datenverarbeitung können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher an die Endbenutzenden heranrückt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse am Edge.
 
@@ -247,7 +247,7 @@ Um eine Teilnahme anzufordern oder Updates zu erhalten, wenden Sie sich bitte an
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
 
 #### Beschleunigen der AEM-Entwicklung mit KI (Alpha-Programm) {#ai-dev-alpha}
 

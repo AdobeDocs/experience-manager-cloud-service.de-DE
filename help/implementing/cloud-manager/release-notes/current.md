@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Version 2025.12.0 von Cloud Manager in Adob
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 431c3060b59dca852bdce14b6793dcb5c352139b
+source-git-commit: 7c1f1f1022fd63c190a493d312ab1f355859d15a
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 66%
+source-wordcount: '1149'
+ht-degree: 61%
 
 ---
 
@@ -88,11 +88,15 @@ If you are interested in testing this new feature and sharing your feedback, sen
   Siehe [Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
 
-
-
 ## Beta-Programme {#private-beta-program}
 
 Nehmen Sie am Beta-Programm von Cloud Manager teil, um exklusiven Zugriff auf bevorstehende Funktionen vor ihrer regulären Veröffentlichung zu erhalten.
+
+>[!IMPORTANT]
+>
+>Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (durch Adobe Support Services oder anderweitig). Adobe empfiehlt Kunden, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
+
+Siehe auch [AEM Beta-Programme](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 Derzeit stehen die folgenden Möglichkeiten zur Verfügung:
 <!--
