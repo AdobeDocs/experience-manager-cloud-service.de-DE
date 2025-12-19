@@ -3,10 +3,10 @@ title: Eigenschaften des Micro-Frontend-Inhaltsfragment-Selektors für Adobe Exp
 description: Eigenschaften zum Konfigurieren des Micro-Frontend-Inhaltsfragment-Selektors zum Suchen, Finden und Abrufen von Inhaltsfragmenten in Ihrer Anwendung.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 63%
 
 ---
 
@@ -20,22 +20,28 @@ Sie können mithilfe der folgenden Eigenschaften anpassen, wie der Inhaltsfragme
 
 | Eigenschaft | Typ | Erforderlich | Standard | Beschreibung |
 |--- |--- |--- |--- |--- |
-| `imsToken` | Zeichenfolge | Nein | | Zur Authentifizierung verwendetes IMS-Token. |
-| `repoId` | Zeichenfolge | Nein | | Zur Authentifizierung verwendete Repository-ID. |
-| `orgId` | Zeichenfolge | Ja | | Zur Authentifizierung verwendete Organisations-ID. |
-| `locale` | Zeichenfolge | Nein | | Gebietsschema-Daten. |
-| `env` | Umgebung | Nein | | Bereitstellungsumgebung des Inhaltsfragment-Selektors. |
-| `filters` | Fragmentfilter | Nein | | Für die Liste der Inhaltsfragmente anzuwendende Filter. Standardmäßig werden Fragmente unter `/content/dam` angezeigt. Standardwert: `{ folder: "/content/dam" }` |
-| `isOpen` | Boolesch | Ja | `false` | Markierung, um auszulösen, dass der Selektor geöffnet oder geschlossen wird. |
-| `onDismiss` | () => void | Ja | | Funktion, die aufgerufen werden soll, wenn **Verwerfen** ausgewählt wird. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Ja | | Funktion, die aufgerufen wird, wenn **Auswählen** nach Auswahl eines oder mehrerer Inhaltsfragmente verwendet wird. <br><br>Die Funktion empfängt:<br><ul><li> die ausgewählten Inhaltsfragmente mit den Feldern `id` und `path`</li><li>sowie Domain-Namen, die mit der Programm-ID und der Umgebungs-ID des Repositorys verknüpft sind, die den Status `ready` und „Veröffentlichen“ als `tier` aufweisen</li></ul><br>Wenn keine Domain-Namen vorhanden sind, wird die Veröffentlichungsinstanz als Fallback-Domain verwendet. |
-| `theme` | „hell“ oder „dunkel“ | Nein | | Design des Inhaltsfragment-Selektors. Als Standard-Design ist das Design der UnifiedShell-Umgebung eingestellt. |
-| `selectionType` | „einfach“ oder „mehrfach“ | Nein | `single` | Auswahltyp, der zur Einschränkung der Auswahl für den Fragment-Selektor verwendet werden kann. |
-| `dialogSize` | „fullscreen“ oder „fullscreenTakeover“ | Nein | `fullscreen` | Optionale Eigenschaft zum Steuern der Dialogfeldgröße. |
-| `waitForImsToken` | Boolesch | Nein | `false` | Gibt an, ob der Inhaltsfragment-Selektor im Kontext des SUSI-Flusses gerendert wird und warten muss, bis das `imsToken` bereit ist. |
-| `imsAuthInfo` | ImsAuthInfo | Nein | | Objekt, das die IMS-Authentifizierungsinformationen der bzw. des angemeldeten Benutzenden enthält |
-| `runningInUnifiedShell` | Boolesch | Nein | | Gibt an, ob der Inhaltsfragment-Selektor unter UnifiedShell oder eigenständig ausgeführt wird. |
-| `readonlyFilters` | ResourceReadonlyFiltersField | Nein | | Schreibgeschützte Filter, die auf die Inhaltsliste angewendet und nicht entfernt werden können. |
+| `ref` | fragmentSelectorRef | | | Verweis auf die `ContentFragmentSelector`-Instanz, die den Zugriff auf bereitgestellte Funktionen wie `reload` ermöglicht. |
+| `imsToken` | Zeichenfolge | Nein | | Für die Authentifizierung verwendetes IMS-Token Wenn dies nicht angegeben wird, wird der IMS-Anmeldefluss initiiert. |
+| `repoId` | Zeichenfolge | Nein | | Repository-ID für den Fragmentselektor. Wenn angegeben, stellt der Selektor automatisch eine Verbindung zum angegebenen Repository her, und das Dropdown-Menü des Repositorys wird ausgeblendet. Wenn kein Repository angegeben wird, kann der Benutzer ein Repository aus der Liste der verfügbaren Repositorys auswählen, auf die er Zugriff hat. |
+| `defaultRepoId` | Zeichenfolge | Nein | | Repository-ID, die beim Anzeigen des Repository-Selektors standardmäßig ausgewählt wird. Wird nur verwendet, wenn `repoId` nicht angegeben wird. Wenn `repoId` festgelegt ist, wird der Repository-Selektor ausgeblendet und dieser Wert ignoriert. |
+| `orgId` | Zeichenfolge | Nein | | Für die Authentifizierung verwendete Organisations-ID. Wenn kein Wert angegeben ist, kann der Benutzer ein Repository aus verschiedenen Organisationen auswählen, auf die er Zugriff hat. Wenn der Benutzer keinen Zugriff auf ein Repository oder eine Organisation hat, wird der Inhalt nicht geladen. |
+| `locale` | Zeichenfolge | Nein | „en-US“ | Gebietsschema. |
+| `env` | Zeichenfolge | Nein | | Bereitstellungsumgebung. Siehe den `Env` für zulässige Umgebungsnamen. |
+| `filters` | Fragmentfilter | Nein | `{ folder: "/content/dam" }` | Auf die Liste der Inhaltsfragmente anzuwendende Filter Standardmäßig werden Fragmente unter `/content/dam` angezeigt. |
+| `isOpen` | Boolesch | Nein | `false` | Markierung, um zu steuern, ob der Selektor geöffnet oder geschlossen ist. |
+| `noWrap` | Boolesch | Nein | `false` | Bestimmt, ob der Fragmentselektor ohne Umbruchsdialogfeld gerendert wird. Wenn auf `true` gesetzt, wird der Fragmentselektor direkt in den übergeordneten Container eingebettet. Nützlich für die Integration der -Auswahl in benutzerdefinierte Layouts oder Workflows. |
+| `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nein | | Die Rückruffunktion wird ausgelöst, wenn sich die Auswahl von Inhaltsfragmenten ändert. Stellt die aktuell ausgewählten Fragmente, den Domain-Namen, Mandanteninformationen, Repository-ID und Versand-Repositorys bereit. |
+| `onDismiss` | () => void | Nein | | Rückruffunktion, die ausgelöst wird, wenn die Abweisungsaktion ausgeführt wird (z. B. Schließen des Selektors). |
+| `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nein | | Die Rückruffunktion wird ausgelöst, wenn der Benutzer seine Auswahl bestätigt. Empfängt die ausgewählten Inhaltsfragmente, den Domain-Namen, die Mandanteninformationen, die Repository-ID und die Versand-Repositorys. |
+| `theme` | „hell“ oder „dunkel“ | Nein | | Design für den Fragmentselektor. Standardmäßig ist dies auf das UnifiedShell-Umgebungsdesign festgelegt. |
+| `selectionType` | „einfach“ oder „mehrfach“ | Nein | `single` | Der Auswahltyp kann verwendet werden, um die Auswahl für den Fragmentselektor einzuschränken. |
+| `dialogSize` | „fullscreen“ oder „fullscreenTakeover“ | Nein | `fullscreen` | Optionale Prop zur Steuerung der Dialogfeldgröße. |
+| `runningInUnifiedShell` | Boolesch | Nein | | Ob DestinationSelector unter UnifiedShell oder eigenständig ausgeführt wird. |
+| `readonlyFilters` | ResourceReadonlyFiltersField[] | Nein | | Schreibgeschützte Filter, die auf die Liste der Inhaltsfragmente angewendet werden. Diese Filter können vom Benutzer nicht entfernt werden. |
+| `selectedFragments` | InhaltsfragmentIdentifier[] | Nein | `[]` | Die anfängliche Auswahl von Inhaltsfragmenten, die beim Öffnen des Selektors vorausgewählt werden sollen. |
+| `hipaaEnabled` | Boolesch | Nein | `false` | Gibt an, ob die HIPAA-Konformität aktiviert ist. |
+| `inventoryView` | InventoryViewType | Nein | `table` | Standardansichtstyp des Inventars, der im Selektor verwendet werden soll. |
+| `inventoryViewToggleEnabled` | Boolesch | Nein | `false` | Gibt an, ob der Umschalter für die Bestandsansicht aktiviert ist, sodass Benutzende zwischen Tabellen- und Rasteransichten wechseln können. |
 
 ## ImsAuthProps-Eigenschaften {#imsauthprops-properties}
 
@@ -54,7 +60,7 @@ Die `ImsAuthProps`-Eigenschaften definieren die Authentifizierungsinformationen
 
 ## Eigenschaften von ImsAuthService {#imsauthservice-properties}
 
-Die Klasse `ImsAuthService` regelt den Authentifizierungsfluss für den Ihaltsfragment-Selektor. Sie ist für den Erhalt eines `imsToken` über den Adobe IMS-Authentifizierungsdienst verantwortlich. Das `imsToken` wird verwendet, um die Benutzerin oder den Benutzer zu authentifizieren und den Zugriff auf das Adobe Experience Manager (AEM) CS-Repository zu autorisieren. Der ImsAuthService verwendet die `ImsAuthProps`-Eigenschaften, um den Authentifizierungsfluss zu steuern und Listener für verschiedene Authentifizierungsereignisse zu registrieren. Sie können die praktische Funktion `registerContentFragmentSelectorAuthService` zum Registrieren der Instanz `ImsAuthService` beim Inhaltsfragment-Selektor verwenden. Die folgenden Funktionen sind in der Klasse `ImsAuthService` verfügbar. Wenn Sie jedoch die Funktion `registerContentFragmentSelectorAuthService` verwenden, müssen Sie diese Funktionen nicht direkt aufrufen.
+Die Klasse `ImsAuthService` regelt den Authentifizierungsfluss für den Inhaltsfragment-Selektor. Sie ist für den Erhalt eines `imsToken` über den Adobe IMS-Authentifizierungsdienst verantwortlich. Das `imsToken` wird verwendet, um die Benutzerin oder den Benutzer zu authentifizieren und den Zugriff auf das Adobe Experience Manager (AEM) CS-Repository zu autorisieren. Der ImsAuthService verwendet die `ImsAuthProps`-Eigenschaften, um den Authentifizierungsfluss zu steuern und Listener für verschiedene Authentifizierungsereignisse zu registrieren. Sie können die praktische Funktion `registerContentFragmentSelectorAuthService` zum Registrieren der Instanz `ImsAuthService` beim Inhaltsfragment-Selektor verwenden. Die folgenden Funktionen sind in der Klasse `ImsAuthService` verfügbar. Wenn Sie jedoch die Funktion `registerContentFragmentSelectorAuthService` verwenden, müssen Sie diese Funktionen nicht direkt aufrufen.
 
 | Funktionsname | Beschreibung |
 |--- |--- |
