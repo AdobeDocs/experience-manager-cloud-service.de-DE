@@ -3,9 +3,9 @@ title: Eigenschaften des Micro-Frontend-Inhaltsfragment-Selektors für Adobe Exp
 description: Eigenschaften zum Konfigurieren des Micro-Frontend-Inhaltsfragment-Selektors zum Suchen, Finden und Abrufen von Inhaltsfragmenten in Ihrer Anwendung.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 63%
 
 ---
@@ -25,13 +25,13 @@ Sie können mithilfe der folgenden Eigenschaften anpassen, wie der Inhaltsfragme
 | `repoId` | Zeichenfolge | Nein | | Repository-ID für den Fragmentselektor. Wenn angegeben, stellt der Selektor automatisch eine Verbindung zum angegebenen Repository her, und das Dropdown-Menü des Repositorys wird ausgeblendet. Wenn kein Repository angegeben wird, kann der Benutzer ein Repository aus der Liste der verfügbaren Repositorys auswählen, auf die er Zugriff hat. |
 | `defaultRepoId` | Zeichenfolge | Nein | | Repository-ID, die beim Anzeigen des Repository-Selektors standardmäßig ausgewählt wird. Wird nur verwendet, wenn `repoId` nicht angegeben wird. Wenn `repoId` festgelegt ist, wird der Repository-Selektor ausgeblendet und dieser Wert ignoriert. |
 | `orgId` | Zeichenfolge | Nein | | Für die Authentifizierung verwendete Organisations-ID. Wenn kein Wert angegeben ist, kann der Benutzer ein Repository aus verschiedenen Organisationen auswählen, auf die er Zugriff hat. Wenn der Benutzer keinen Zugriff auf ein Repository oder eine Organisation hat, wird der Inhalt nicht geladen. |
-| `locale` | Zeichenfolge | Nein | „en-US“ | Gebietsschema. |
+| `locale` | Zeichenfolge | Nein | `en-US` | Gebietsschema. |
 | `env` | Zeichenfolge | Nein | | Bereitstellungsumgebung. Siehe den `Env` für zulässige Umgebungsnamen. |
 | `filters` | Fragmentfilter | Nein | `{ folder: "/content/dam" }` | Auf die Liste der Inhaltsfragmente anzuwendende Filter Standardmäßig werden Fragmente unter `/content/dam` angezeigt. |
 | `isOpen` | Boolesch | Nein | `false` | Markierung, um zu steuern, ob der Selektor geöffnet oder geschlossen ist. |
 | `noWrap` | Boolesch | Nein | `false` | Bestimmt, ob der Fragmentselektor ohne Umbruchsdialogfeld gerendert wird. Wenn auf `true` gesetzt, wird der Fragmentselektor direkt in den übergeordneten Container eingebettet. Nützlich für die Integration der -Auswahl in benutzerdefinierte Layouts oder Workflows. |
 | `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nein | | Die Rückruffunktion wird ausgelöst, wenn sich die Auswahl von Inhaltsfragmenten ändert. Stellt die aktuell ausgewählten Fragmente, den Domain-Namen, Mandanteninformationen, Repository-ID und Versand-Repositorys bereit. |
-| `onDismiss` | () => void | Nein | | Rückruffunktion, die ausgelöst wird, wenn die Abweisungsaktion ausgeführt wird (z. B. Schließen des Selektors). |
+| `onDismiss` | () => void | Nein | | Die Rückruffunktion wird ausgelöst, wenn die Aktion zum Verwerfen ausgeführt wird, z. B. durch Schließen des Selektors. |
 | `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Nein | | Die Rückruffunktion wird ausgelöst, wenn der Benutzer seine Auswahl bestätigt. Empfängt die ausgewählten Inhaltsfragmente, den Domain-Namen, die Mandanteninformationen, die Repository-ID und die Versand-Repositorys. |
 | `theme` | „hell“ oder „dunkel“ | Nein | | Design für den Fragmentselektor. Standardmäßig ist dies auf das UnifiedShell-Umgebungsdesign festgelegt. |
 | `selectionType` | „einfach“ oder „mehrfach“ | Nein | `single` | Der Auswahltyp kann verwendet werden, um die Auswahl für den Fragmentselektor einzuschränken. |
