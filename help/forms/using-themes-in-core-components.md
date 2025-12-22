@@ -5,10 +5,10 @@ keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: c0e0a700e85563ff65c703d5d20e6d6c1ff0651c
 workflow-type: tm+mt
-source-wordcount: '2806'
-ht-degree: 99%
+source-wordcount: '2897'
+ht-degree: 95%
 
 ---
 
@@ -389,6 +389,10 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    Wenn die Einrichtung der Pipeline abgeschlossen ist, wird die Karte mit dem Aktionsaufruf aktualisiert.
 
+   >[!NOTE]
+   >
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
+
 1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .
 
@@ -416,6 +420,21 @@ Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
 Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Formulare verwendet, um beim Erstellen eines adaptiven Formulars Stile zu definieren.
 
+## Legen Sie die Node.js-Version auf 20 fest.
+
+So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest:
+
+1. Gehen Sie zum **Pipelines** und suchen Sie Ihre Frontend-Pipeline.
+2. Klicken Sie rechts in der Pipeline auf das Dreipunkt-Menü **⋯** und wählen Sie aus der Dropdown-Liste **Variablen anzeigen/bearbeiten**.
+3. Füllen Sie **Dialogfeld** Variablenkonfiguration“ die Felder wie folgt aus:
+   * **NAME** - NODE_VERSION
+   * **WERT** - 20
+   * **SCHRITT ANGEWENDET** - Build
+   * **TYPE** - Variable
+4. Klicken Sie auf **Speichern**, um die Konfiguration anzuwenden.
+
+![Pipeline-Konfiguration](/help/forms/assets/pipeline-config.png)
+
 ## Best Practices {#best-practices}
 
 * **Vermeiden von Assets aus einem anderen Design**
@@ -441,7 +460,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
