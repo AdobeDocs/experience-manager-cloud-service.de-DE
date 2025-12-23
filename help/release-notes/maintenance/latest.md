@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 19%
 
 ---
@@ -75,7 +75,7 @@ Die Funktionsaktivierung von 2026.1.0 bietet den vollen Funktionsumfang für die
 * SITES-36570: Das Erstellen von Live Copies schlägt nach der Aktivierung des Umschalters „Chunked Create Live Copy“ fehl.
 * SITES-36158: Rollout schlägt aufgrund einer Ausnahme fehl mit Vorgang fehlgeschlagen.
 * SITES-35655: Der neue CF-Editor zeigt die aktive Vererbung an, nachdem sie unterbrochen wurde.
-* SITES-31425: Nicht lokalisierte Fehlermeldung „Fehler: {} Feld ist erforderlich“ wird im Workflow „Starten“ in Sites angezeigt.
+* SITES-31425: Die nicht lokalisierte Fehlermeldung `Error: {} field is required` im Workflow „Starten“ in Sites angezeigt.
 * SITES-19802: QuickInfos sind in den Kernkomponenten „Site“ > „Inhaltsverzeichnis“ nicht lokalisiert.
 * SITES-36543: Es wurde ein Problem behoben, durch das der Administrator ausgecheckte Inhaltsfragmente bearbeiten konnte.
 * SITES-36967: Es wurden NullPointerExceptions behoben, die beim Versuch auftraten, Miniaturdaten für beschädigte Inhaltsfragmente zu generieren.
