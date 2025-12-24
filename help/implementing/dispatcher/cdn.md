@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
+source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
 workflow-type: tm+mt
 source-wordcount: '1772'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Zur Vorbereitung auf die Inhaltsbereitstellung mit dem integrierten CDN von AEM 
 * [Einführung in SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [Konfigurieren eines CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**Beschränken des Traffics**
+### Beschränken des Traffic {#restricting-traffic}
 
 Standardmäßig kann bei einem von AEM verwalteten CDN-Setup der gesamte öffentliche Traffic zum Veröffentlichungs-Service geleitet werden, sowohl für Produktions- als auch für Nicht-Produktions-Umgebungen (Entwicklung und Staging). Über die Benutzeroberfläche von Cloud Manager können Sie den Traffic für eine bestimmte Umgebung auf den Veröffentlichungs-Service beschränken (z. B. die Beschränkung der Staging-Umgebung auf einen Bereich von IP-Adressen).
 
@@ -74,7 +74,7 @@ Lesen Sie mehr über das [Konfigurieren eines Bereinigungs-API-Tokens](/help/imp
 
 Schützen Sie Inhalte für einfache Authentifizierungsfälle, einschließlich Geschäfts-Stakeholdern, die Inhalte überprüfen, indem Sie ein einfaches Authentifizierungsdialogfeld anzeigen lassen, das einen Benutzernamen und ein Kennwort erfordert. [Weitere Informationen](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-## Kundenseitig verwaltetes CDN verweist auf ein von AEM verwaltetes CDN {#point-to-point-CDN}
+## Kundenseitig verwaltetes CDN verweist auf ein von AEM verwaltetes CDN {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -106,7 +106,7 @@ Bevor Sie Live-Traffic akzeptieren, sollten Sie beim Adobe-Support überprüfen,
 
 Nach dem Festlegen des `X-AEM-Edge-Key` können Sie wie folgt testen, ob die Anfrage korrekt weitergeleitet wird.
 
-Unter Linux®:
+Unter Linux:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -136,9 +136,9 @@ Diese kundenspezifische CDN-Konfiguration wird für die Veröffentlichungs- und 
 
 ### Debuggen von Konfigurationen
 
-Um eine BYOCDN-Konfiguration zu debuggen, verwenden Sie die Kopfzeile `x-aem-debug` mit dem Wert `edge=true`. Zum Beispiel:
+Um eine BYOCDN-Konfiguration zu debuggen, verwenden Sie die Kopfzeile `x-aem-debug` mit dem Wert `edge=true`. Beispiel:
 
-Unter Linux®:
+Unter Linux:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
@@ -163,23 +163,23 @@ Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, de
 >Sie können eine schnelle Entwicklungsumgebung (RDE) verwenden, um Ihre Konfiguration bereitzustellen und zu testen:
 >
 >* [Schnelle Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Beispielkonfigurationen von CDN-Anbietern {#sample-configurations}
 
 Im Folgenden werden einige Konfigurationsbeispiele von mehreren führenden CDN-Anbietern vorgestellt.
 
-#### **Akamai** {#byocdn-akamai}
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-#### **Amazon CloudFront** {#byocdn-cloudfront}
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-#### **Cloudflare** {#byocdn-cloudflare}
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -188,15 +188,15 @@ Im Folgenden werden einige Konfigurationsbeispiele von mehreren führenden CDN-A
 
 Die bereitgestellten Beispielkonfigurationen zeigen die grundlegenden erforderlichen Einstellungen an. Eine Kundenkonfiguration kann jedoch andere Einflussregeln haben, welche die Header entfernen, ändern oder neu anordnen, die erforderlich sind, damit AEM as a Cloud Service den Traffic bereitstellt. Im Folgenden finden Sie häufige Fehler, die auftreten, wenn ein kundenseitig verwaltetes CDN so konfiguriert wird, dass es auf AEM as a Cloud Service verweist.
 
-**Weiterleitung zum Endpunkt des Veröffentlichungs-Services**
+#### Weiterleitung an den Endpunkt des Veröffentlichungs-Services {#redirect-publish}
 
 Wenn eine Anfrage eine unzulässige Antwort vom Typ 403 erhält, bedeutet dies, dass in der Anfrage einige erforderliche Header fehlen. Eine häufige Ursache dafür ist, dass das CDN sowohl den Apex- als auch den `www`-Domain-Traffic verwaltet, jedoch nicht den richtigen Header für die `www`-Domain hinzufügt. Dieses Problem kann gelöst werden, indem Sie Ihre CDN-Protokolle in AEM as a Cloud Service überprüfen und die erforderlichen Anforderungs-Header verifizieren.
 
-**Fehler 421 Fehlgeleitete Weiterleitung**
+#### Fehler 421 Fehlgeleitete Umleitung {#error-421}
 
 Ein 421-Fehler mit der Meldung `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` gibt an, dass der HTTP-`Host` mit keinen der im Zertifikat aufgeführten Hosts übereinstimmt. Dieses Problem deutet in der Regel darauf hin, dass entweder der `Host` oder die SNI-Einstellung falsch ist. Stellen Sie sicher, dass sowohl `Host` als auch die SNI-Einstellungen auf den Host publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com verweisen.
 
-**Schleife „Zu viele Umleitungen“**
+#### Schleife mit zu vielen Weiterleitungen {#redirect-loop}
 
 Wenn eine Seite eine Schleife „Zu viele Umleitungen“ erhält, wird im CDN ein Anfrage-Header hinzugefügt, der einer Umleitung entspricht, die die Seite zu sich selbst zurückführt. Zum Beispiel:
 
