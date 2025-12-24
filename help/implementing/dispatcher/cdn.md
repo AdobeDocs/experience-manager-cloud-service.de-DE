@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
+source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 97%
@@ -163,23 +163,23 @@ Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, de
 >Sie können eine schnelle Entwicklungsumgebung (RDE) verwenden, um Ihre Konfiguration bereitzustellen und zu testen:
 >
 >* [Schnelle Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Beispielkonfigurationen von CDN-Anbietern {#sample-configurations}
 
 Im Folgenden werden einige Konfigurationsbeispiele von mehreren führenden CDN-Anbietern vorgestellt.
 
-**Akamai**
+#### **Akamai** {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-**Amazon CloudFront**
+#### **Amazon CloudFront** {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**Cloudflare**
+#### **Cloudflare** {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
