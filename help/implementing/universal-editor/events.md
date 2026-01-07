@@ -31,7 +31,7 @@ Ereignisse umfassen die Payload der Anfrage und der Antwort und werden ausgelös
 
 ## Ereignisse zur Inhaltsaktualisierung {#content-events}
 
-### Aue&amp;Doppelpunkt;content-add {#content-add}
+### Aue&Doppelpunkt;content-add {#content-add}
 
 Das Ereignis `aue:content-add` wird ausgelöst, wenn einem Container eine neue Komponente hinzugefügt wird.
 
@@ -53,7 +53,7 @@ Die Payload sind Inhalte vom universellen Editor-Dienst mit Fallback-Inhalten au
 }
 ```
 
-### use&amp;colon;content-details {#content-details}
+### use&colon;content-details {#content-details}
 
 Das Ereignis `aue:content-details` wird ausgelöst, wenn eine Komponente im Bedienfeld „Eigenschaften“ geladen wird.
 
@@ -70,7 +70,7 @@ Die Payload ist der Inhalt der Komponente sowie optional ihr Schema.
 }
 ```
 
-### Aue&amp;Doppelpunkt;content-move {#content-move}
+### Aue&Doppelpunkt;content-move {#content-move}
 
 Das Ereignis `aue:content-move` wird ausgelöst, wenn eine Komponente verschoben wird.
 
@@ -89,7 +89,7 @@ Die Payload ist die Komponente sowie der Quell- und Ziel-Container.
 }
 ```
 
-### aue&amp;colon;content-patch {#content-patch}
+### aue&colon;content-patch {#content-patch}
 
 Das Ereignis `aue:content-patch` wird ausgelöst, wenn die Daten einer Komponente im Bedienfeld „Eigenschaften“ aktualisiert werden.
 
@@ -108,7 +108,7 @@ Die Payload ist ein JSON-Patch der aktualisierten Eigenschaften.
 }
 ```
 
-### Aue&amp;Doppelpunkt;content-remove {#content-remove}
+### Aue&Doppelpunkt;content-remove {#content-remove}
 
 Das Ereignis `aue:content-remove` wird ausgelöst, wenn eine Komponente aus einem Container entfernt wird.
 
@@ -124,7 +124,7 @@ Die Payload ist die Element-ID der entfernten Komponente.
 }
 ```
 
-### use&amp;colon;content-update {#content-update}
+### use&colon;content-update {#content-update}
 
 Das Ereignis `aue:content-update` wird ausgelöst, wenn die Eigenschaften einer Komponente im Kontext aktualisiert werden.
 
@@ -180,7 +180,7 @@ Antwort-Payload:
 
 ## Benutzeroberflächen-Ereignisse {#ui-events}
 
-### Aue&amp;Doppelpunkt;ui-preview {#ui-preview}
+### Aue&Doppelpunkt;ui-preview {#ui-preview}
 
 Das Ereignis `aue:ui-preview` wird ausgelöst, wenn der Bearbeitungsmodus der Seite in **Vorschau** geändert wird.
 
@@ -192,7 +192,7 @@ Die Payload für dieses Ereignis ist leer.
 }
 ```
 
-### Aue&amp;Doppelpunkt;ui-edit {#ui-edit}
+### Aue&Doppelpunkt;ui-edit {#ui-edit}
 
 Das Ereignis `aue:ui-edit` wird ausgelöst, wenn der Bearbeitungsmodus der Seite in **Bearbeiten** geändert wird.
 
@@ -204,7 +204,7 @@ Die Payload für dieses Ereignis ist leer.
 }
 ```
 
-### Aue&amp;Doppelpunkt;ui-viewport-change {#ui-viewport-change}
+### Aue&Doppelpunkt;ui-viewport-change {#ui-viewport-change}
 
 Das Ereignis `aue:ui-viewport-change` wird ausgelöst, wenn die Viewport-Größe geändert wird.
 
@@ -219,7 +219,7 @@ Die Payload sind die Dimensionen des Viewports.
 }
 ```
 
-### Aue&amp;Doppelpunkt;initialisiert {#initialized}
+### Aue&Doppelpunkt;initialisiert {#initialized}
 
 Das Ereignis `aue:initialized` wird ausgelöst, um der Remote-Seite mitzuteilen, dass sie erfolgreich im universellen Editor geladen wurde.
 
