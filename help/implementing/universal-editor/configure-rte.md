@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Ed
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
+source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,13 @@ Der universelle Editor bietet sowohl im Kontext als auch im Eigenschaftenbereich
 
 Dieser RTE kann mithilfe von [Komponentenfiltern konfiguriert werden.](/help/implementing/universal-editor/filtering.md) In diesem Dokument wird beschrieben, welche Konfigurationsoptionen zusammen mit Beispielen verfügbar sind.
 
+>[!NOTE]
+>
+>Wenn Sie ein universelles Editor-Projekt starten, sind alle Rich-Text-Funktionen, die Ihr Backend unterstützt (AEM mit Edge Delivery- oder Headless-Implementierung), automatisch aktiv.
+>
+>* Sie können die Optionen deaktivieren, die Sie nicht benötigen.
+>* Das Aktivieren von Optionen, die nicht mit Ihrem Projekttyp kompatibel sind, wird nicht unterstützt.
+
 ## Konfigurationsstruktur {#structure}
 
 Die RTE-Konfiguration besteht aus zwei Teilen:
@@ -28,7 +35,7 @@ Die RTE-Konfiguration besteht aus zwei Teilen:
 * [`toolbar`](#toolbar): Die Symbolleistenkonfiguration steuert, welche Bearbeitungsoptionen in der Benutzeroberfläche verfügbar sind und wie sie organisiert sind.
 * [`actions`](#actions): Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen.
 
-Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit &#x200B;](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
+Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit ](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
 
 ```json
 [
