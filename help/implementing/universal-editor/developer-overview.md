@@ -4,7 +4,7 @@ description: Wenn Sie als AEM-Entwicklerin bzw. -entwickler daran interessiert s
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
@@ -118,7 +118,7 @@ Das Anmelde-Token-Cookie wird als Drittanbieter-Domain an AEM gesendet. Daher m�
 
    ![OSGi-Eigenschaft für Cookies auf derselben Site](assets/dev-cross-origin-osgi.png)
 
-1. Ändern Sie die Eigenschaft für das **SameSite-Attribut für das Login-Token-Cookie** in `None`.
+1. Ändern Sie die Eigenschaft für das **SameSite-Attribut für das Login-Token-Cookie** in `Partitioned`.
 
 1. Speichern Sie die Änderungen.
 
