@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f913871da16b44d7a465e0fa00608835524ba7e3
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 99%
+source-wordcount: '2384'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 Mit der [!DNL Experience Manager Forms]-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herstellen. Die folgenden Datenquellen werden standardmäßig unterstützt:
 
-* Relationale Datenbanken – MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL und [!DNL Oracle RDBMS]
+* Relationale Datenbanken - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], PostgreSQL, Azure SQL und [!DNL Oracle RDBMS]
 * RESTful-Webservices
 * SOAP-basierte Webservices
 * OData-Dienste (Version 4.0)
@@ -48,22 +48,93 @@ Bevor Sie relationale Datenbanken mit [!DNL Experience Manager] Web-Konsolenkonf
 
 Sie können relationale Datenbanken mithilfe der [!DNL Experience Manager] Web-Konsolenkonfiguration konfigurieren. Gehen Sie folgendermaßen vor:
 
-1. Gehen Sie zur [!DNL Experience Manager] Web-Konsole unter `https://server:host/system/console/configMgr`.
-1. Suchen Sie die Konfiguration **[!UICONTROL Day Commons JDBC Connections Pools]**. Tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
+**Schritt 1: Klonen Sie das AEM as a Cloud Service-Git-Repository**
 
-   ![JDBC-Verbindungs-Pool](/help/forms/assets/jdbc_connector.png)
+1. Öffnen Sie die Befehlszeile und wählen Sie einen Ordner zum Speichern des AEM as a Cloud Service-Repositorys aus, z. B. `/cloud-service-repository/`.
 
-1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
+2. Führen Sie den folgenden Befehl aus, um das Repository zu klonen:
 
-   * Klassenname von Java™ für den JDBC-Treiber
-   * JDBC-Verbindungs-URI
-   * Benutzername und Passwort zum Herstellen der Verbindung mit dem JDBC-Treiber
-   * Geben Sie eine SQL SELECT-Abfrage im Feld **[!UICONTROL Überprüfungsabfrage]** ein, um Verbindungen aus dem Pool zu validieren. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie je nach Datenbank eine der folgenden Optionen fest:
-      * SELECT 1 (MySQL und MS® SQL)
+   ```
+   git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
+   ```
+
+   **Wo finden Sie diese Informationen?**
+
+   Eine schrittweise Anleitung zum Auffinden dieser Details finden Sie im Adobe Experience League-Artikel [Zugriff auf Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git).
+
+   Wenn der Befehl erfolgreich abgeschlossen wurde, wird in Ihrem lokalen Verzeichnis ein neuer Ordner erstellt. Dieser Ordner ist nach Ihrer Anwendung benannt.
+
+**Schritt 2: Navigieren Sie zum Konfigurationsordner**
+
+1. Öffnen Sie den Repository-Ordner in einem Editor.
+
+1. Navigieren Sie zum folgenden Verzeichnis in Ihrem `<application folder>`, in dem die OSGi-Konfiguration für den JDBC-Pool platziert werden soll:
+
+   ```bash
+   cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
+   ```
+
+**Schritt 3: Erstellen Sie die MySQL-Verbindungskonfigurationsdatei**
+
+1. Erstellen Sie die Datei :
+
+   ```bash
+   com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
+   ```
+
+1. Fügen Sie die folgenden Codezeilen hinzu:
+
+```json
+{
+  "jdbc.driver.class": "com.mysql.cj.jdbc.Driver",
+  "jdbc.connection.uri": "jdbc:mysql://<hostname>:<port>/<database>?useSSL=false",
+  "jdbc.username": "<your-db-username>",
+  "jdbc.password": "<your-db-password>",
+  "datasource.name": "<application folder>-mysql",
+  "datasource.svc.prop.name": "<application folder>-mysql"
+}
+```
+
+> 
+>
+> Ersetzen Sie Platzhalter wie `<application folder>`, `<hostname>`, `<database>`, `<your-db-username>` und `<your-db-password>` durch tatsächliche Werte.
+
+**Schritt 4: Übergeben und Übertragen der Änderungen**
+
+Öffnen Sie das Terminal und führen Sie die folgenden Befehle aus:
+
+```bash
+git add .
+git commit -m "<commit message>"
+git push 
+```
+
+**Schritt 5: Bereitstellen der Änderungen über die Cloud Manager-Pipeline**
+
+1. Anmelden bei **AEM Cloud Manager**.
+1. Navigieren Sie zu Ihrem Projekt und führen Sie die Pipeline aus , um die Änderungen bereitzustellen.
+
+>[!NOTE]
+>
+> Weitere Informationen finden Sie unter [SQL-Verbindungen mit JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=de).
+
+<!--
+1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
+2. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
+
+   ![JDBC Connector Pool](/help/forms/assets/jdbc_connector.png)
+
+3. In the configuration dialog, specify the details for the database you want to configure, such as:
+
+    * Java&trade; class name for the JDBC driver
+    * JDBC connection URI
+    * Username and password to establish connection with the JDBC driver
+    * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+      * SELECT 1 (MySQL and MS&reg; SQL) 
       * SELECT 1 from dual (Oracle)
-   * Name der Datenquelle
+    * Name of the data source
 
-   Beispielzeichenfolgen zum Konfigurieren einer relationalen Datenbank:
+   Sample strings for configuring a relational database:
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -71,13 +142,11 @@ Sie können relationale Datenbanken mithilfe der [!DNL Experience Manager] Web-K
       "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
    ```
 
-   >[!NOTE]
-   >
-   > Weitere Informationen finden Sie unter [SQL-Verbindungen mit JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=de).
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration zu speichern.
+    
+4. Select **[!UICONTROL Save]** to save the configuration.
 
-Jetzt können Sie die konfigurierte relationale Datenbank mit Ihrem Formulardatenmodell (FDM) verwenden.
+Now, you can use the configured relational database with your Form Data Model (FDM). 
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -102,15 +171,15 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## Einstellen des Ordners für Cloud-Service-Konfigurationen {#cloud-folder}
 
-Die Konfiguration des Cloud Services-Ordners ist erforderlich, um Cloud Services für RESTful-, SOAP- und OData-Services zu konfigurieren.
+Die Konfiguration des Cloud-Services-Ordners ist erforderlich, um Cloud-Services für RESTful-, SOAP- und OData-Services zu konfigurieren.
 
-Alle Cloud Service-Konfigurationen in [!DNL Experience Manager] sind im Ordner `/conf` im [!DNL Experience Manager]-Repository zusammengefasst. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud Service-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud Service-Konfigurationen zu erstellen und zu organisieren.
+Alle Cloud-Service-Konfigurationen in [!DNL Experience Manager] sind im Ordner `/conf` im [!DNL Experience Manager]-Repository zusammengefasst. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud-Service-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud-Service-Konfigurationen zu erstellen und zu organisieren.
 
-Konfigurieren des Ordners für Cloud Service-Konfigurationen:
+Konfigurieren des Ordners für Cloud-Service-Konfigurationen:
 
 1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**.
    * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=de).
-1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud Service-Konfigurationen zu erstellen und zu konfigurieren.
+1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud-Service-Konfigurationen zu erstellen und zu konfigurieren.
 
    1. Wählen Sie im **[!UICONTROL Konfigurations-Browser]** den Ordner `global` aus und wählen Sie **[!UICONTROL Eigenschaften]**.
 
@@ -120,7 +189,7 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
 1. Wählen Sie im **[!UICONTROL Konfigurations-Browser]** die Option **[!UICONTROL Erstellen]**.
 1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
-1. Wählen Sie **[!UICONTROL Erstellen]**, um den für Cloud Service-Konfigurationen aktivierten Ordner zu erstellen.
+1. Wählen Sie **[!UICONTROL Erstellen]**, um den für Cloud-Service-Konfigurationen aktivierten Ordner zu erstellen.
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
 
@@ -133,13 +202,13 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
+   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
 1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger URL] zur [!DNL &#x200B; Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
-   * Auf der Grundlage der [!DNL &#x200B; Swagger] Quelleingabe, werden die folgenden Felder mit Werten vorausgefüllt:
+   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
+   * Auf der Grundlage der [!DNL  Swagger] Quelleingabe, werden die folgenden Felder mit Werten vorausgefüllt:
 
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der [!DNL Swagger]-Quelle definiert wurden.
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
@@ -158,13 +227,13 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
+   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
 1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL &#x200B; Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
-   * Basierend auf der [!DNL &#x200B; Swagger]-Quelleingabe werden die Verbindungsinformationen zum Ziel-Server angezeigt.
+   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
+   * Basierend auf der [!DNL  Swagger]-Quelleingabe werden die Verbindungsinformationen zum Ziel-Server angezeigt.
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0 ([Autorisierungs-Code](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldeinformationen](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
@@ -189,7 +258,7 @@ Weitere Informationen finden Sie unter [OpenAPI 3.0-Spezifikation](https://swagg
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
+   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
 1. Wählen Sie **[!UICONTROL Erstellen]** aus, um den Assistenten **[!UICONTROL Datenquellkonfiguration erstellen]** zu öffnen.
 
@@ -260,7 +329,7 @@ Um den SOAP-basierten Webservice in [!DNL Experience Manager] as a Cloud Service
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
+   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](configure-data-sources.md#cloud-folder).
 
 1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL SOAP-Webservice]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie Folgendes für den SOAP-Webservice an:
@@ -301,7 +370,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
+   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
 
 1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den OData-Service an:
@@ -320,7 +389,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

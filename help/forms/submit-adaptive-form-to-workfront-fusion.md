@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 100%
+source-wordcount: '1437'
+ht-degree: 90%
 
 ---
 
@@ -88,7 +88,7 @@ So fügen Sie einen Webhook hinzu:
 
 >[!NOTE]
 >
-> Vergewissern Sie sich, dass das technische Konto ein Mitglied der Gruppe **Forms-Benutzer** ist. Andernfalls schlägt das Hinzufügen eines Webhooks fehl.
+> Stellen Sie sicher, dass das technische Konto Mitglied der Gruppe **forms-users** ist. Andernfalls schlägt das Hinzufügen eines Webhooks fehl. Um das technische Konto zur Gruppe „forms-users“ in AEM hinzuzufügen, [klicken Sie hier](#add-technical-account-to-the-forms-users-group).
 
 #### Hinzufügen einer Verbindung zu einem Webhook {#add-connection}
 
@@ -197,6 +197,27 @@ Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 >[!ENDTABS]
+
+## Hinzufügen eines technischen Kontos zur Gruppe „forms-users“
+
+Um das technische Konto `forms-users` Gruppe in AEM hinzuzufügen, führen Sie die folgenden Schritte aus:
+
+1. Navigieren Sie zu **Tools** > **Sicherheit** > **Benutzer**.
+1. Suchen Sie in der Benutzerliste die E-Mail mit dem technischen Konto für Ihr Unternehmen. Suchen wir beispielsweise nach dem Benutzer als `Workfront-test`.
+1. Klicken Sie auf den Benutzer, um die Benutzerdetails anzuzeigen.
+1. Wählen Sie in den Benutzerdetails die Registerkarte **Gruppen** aus.
+1. Wählen Sie `forms-users` aus der Dropdown **[!UICONTROL Liste Gruppe]**.
+1. Klicken Sie auf **Speichern und schließen**.
+
+![Technisches Konto zu Gruppe hinzufügen](/help/forms/assets/add-technical-account.png)
+
+Sie können auch die Gruppenmitgliedschaft des Benutzers überprüfen:
+
+1. Navigieren Sie **Tools** > **Sicherheit** > **Gruppen**.
+1. Suchen Sie nach der Gruppe `forms-users`.
+1. Öffnen Sie die Gruppe, wechseln Sie zur Registerkarte **Mitglieder** und vergewissern Sie sich, dass der Benutzer in der Liste der Gruppenmitglieder aufgeführt wird.
+
+![verify-group](/help/forms/assets/verify-group.png)
 
 ## Best Practices {#best-practices}
 

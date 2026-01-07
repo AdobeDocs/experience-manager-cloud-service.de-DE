@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,8 @@ Mit dem visuellen Regeleditor können Sie basierend auf den Ausgabeantworten Reg
 
 ![Service-Handler aufrufen](/help/forms/assets/invoke-service-rule-editor.png)
 
+### Hinzufügen von Erfolgs-Handler und Fehler-Handler
+
 Um einen Erfolgs- oder Fehlerhandler hinzuzufügen, klicken Sie **[!UICONTROL Erfolgs-Handler hinzufügen]** bzw **[!UICONTROL auf]** Fehler-Handler hinzufügen.
 
 Wenn Sie auf **[!UICONTROL Add Success Handler]** klicken, wird der Regeleditor **[!UICONTROL Invoke Service Success Handler]** angezeigt, in dem Sie Regeln oder Logiken angeben können, um die Antwort **Invoke Service** zu verwalten, wenn der Vorgang erfolgreich war. Sie können Regeln auch ohne Definition von Bedingungen angeben. Sie können jedoch Bedingungen für den Erfolgshandler hinzufügen, indem Sie auf die Option **[!UICONTROL Bedingung hinzufügen]** klicken.
@@ -62,7 +64,7 @@ Die Funktion **Fehlervalidierung auf dem Server aktivieren** ermöglicht Validie
 
 Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Sie **Service aufrufen** im Regeleditor verwenden:
 
-* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier &#x200B;](/help/forms/configure-data-sources.md).
+* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier ](/help/forms/configure-data-sources.md).
 * Erstellen Sie ein Formulardatenmodell mithilfe der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier](/help/forms/create-form-data-models.md).
 * Stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 
@@ -160,6 +162,10 @@ Erstellen Sie dazu eine Regel im `Pet ID` Textfeld, um den `getPetById`-Service 
 
 ![Dropdown-Wert festlegen](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> Siehe den Abschnitt [Hinzufügen von Erfolgs-Handlern und Fehler-Handlern](#adding-success-handler-and-failure-handler), um zu erfahren, wie Sie Erfolgs- und Fehler-Handler festlegen.
+
 #### Ausgabe
 
 Geben Sie `101` in das Textfeld `Pet ID` ein, um die Dropdown-Optionen basierend auf dem eingegebenen Wert dynamisch zu füllen.
@@ -181,6 +187,10 @@ Erstellen Sie eine Regel für das `Pet ID` Textfeld, um den `getPetById`-Service
 
 ![Regel für wiederholbare Bereiche erstellen](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> Siehe den Abschnitt [Hinzufügen von Erfolgs-Handlern und Fehler-Handlern](#adding-success-handler-and-failure-handler), um zu erfahren, wie Sie Erfolgs- und Fehler-Handler festlegen.
+
 #### Ausgabe
 
 Geben Sie `101` in das Textfeld `Pet ID` ein, um den wiederholbaren Bereich basierend auf dem Eingabewert dynamisch zu füllen.
@@ -199,6 +209,10 @@ Dieser Anwendungsfall zeigt, wie Sie den Wert eines Bedienfelds basierend auf de
 #### Implementierung
 
 Erstellen Sie eine Regel für das `Pet ID` Textfeld, um den `getPetById`-Service aufzurufen. Fügen **[!UICONTROL in &quot;]** hinzufügen“ eine weitere Erfolgshandler-Antwort hinzu. Legen Sie in der Regel den Wert des `categoryname` Textfelds auf `category.name` fest.
+
+>[!NOTE]
+>
+> Siehe den Abschnitt [Hinzufügen von Erfolgs-Handlern und Fehler-Handlern](#adding-success-handler-and-failure-handler), um zu erfahren, wie Sie Erfolgs- und Fehler-Handler festlegen.
 
 ![Regel für wiederholbare Bereiche erstellen](/help/forms/assets/set-panel-values.png)
 
@@ -243,7 +257,7 @@ Sie können eine API mithilfe der unten bereitgestellten JSON-Daten direkt als `
 
 >[!NOTE]
 >
-> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[&#x200B; klicken Sie &#x200B;](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
+> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[ klicken Sie ](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
 
 Konfigurieren **[!UICONTROL in &quot;]** hinzufügen“ die Aktion **Navigieren zu**, um den Benutzer mithilfe des **-Parameters zur Seite** Kontaktieren `Event Payload` umzuleiten. Hier kann der Benutzer seine Kontaktdaten übermitteln.
 
