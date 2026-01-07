@@ -40,7 +40,7 @@ Die Integration von Adaptive Forms mit Azure SQL bietet mehrere Vorteile:
 
   ![Azure DB erstellen](/help/forms/assets/create-azure-db.png)
 
-* Aktivieren [Erweiterte Netzwerke mit einer dedizierten Ausgangs-IP konfiguriert](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) für die erstellte Azure-Datenbank.
+* Aktivieren [Erweiterte Netzwerke mit einer dedizierten Ausgangs-IP konfiguriert](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) für die erstellte Azure-Datenbank.
 
   >[!NOTE]
   >
@@ -84,7 +84,7 @@ Fügen Sie die [SQL-Treiberabhängigkeit](https://central.sonatype.com/artifact/
 
 >[!NOTE]
 >
-> Informationen zum Einschließen der SQL-Abhängigkeit in Ihr Projekt finden Sie im Abschnitt [SQL-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)&quot;.
+> Informationen zum Einschließen der SQL-Abhängigkeit in Ihr Projekt finden Sie im Abschnitt [SQL-](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)&quot;.
 
 **Schritt 3: Hinzufügen der JDBC-Konfiguration**
 
