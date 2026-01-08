@@ -3,7 +3,7 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
+source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 77%
@@ -136,7 +136,7 @@ Erfahren Sie, wie Sie [ein Asset aus [!DNL Content Hub]](download-assets-content
 
 ## Freigeben von in einer Sammlung verfügbaren Assets {#share-assets-available-within-collection}
 
-Sie können auch die in einer Sammlung verfügbaren Assets freigeben. Stellen Sie sicher, dass [die öffentliche Link-Freigabe in Content Hub aktiviert ist](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**. Wählen Sie auf der Sammlungskarte das Symbol ![Freigeben-Symbol](assets/share.svg) aus. Der Freigabe-Link wird kopiert. Sie können den Link an die Empfängerin oder den Empfänger weitergeben. Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
+Sie können auch die in einer Sammlung verfügbaren Assets freigeben. Stellen Sie sicher, dass [die öffentliche Link-Freigabe in Content Hub aktiviert ist](configure-content-hub-ui-options.md#configure-collections-content-hub). Navigieren Sie zur Registerkarte **[!UICONTROL Sammlungen]**. Wählen Sie das Symbol ![Freigabe](assets/share.svg) auf der Asset-Karte aus. Der Freigabe-Link wird kopiert. Sie können den Link an die Empfängerin oder den Empfänger weitergeben. Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
 
 Content Hub Collections bietet umfassende Governance-Tools für ein effektives Asset-Management, einschließlich anpassbarer Freigabeberechtigungen und Zusammenarbeitsfunktionen. Vom schreibgeschützten Zugriff bis hin zur vollständigen administrativen Kontrolle unterstützen diese Einstellungen eine ordnungsgemäße Governance über die Asset-Verteilung. Beim Freigeben eines Assets entweder einzeln oder als Teil einer Sammlung wird der Zugriffsbereich durch die aktuelle Zugriffsebene der Sammlung bestimmt, die der Benutzerin bzw. dem Benutzer zugewiesen ist. Alternativ können Sie keine private Sammlung freigeben.
 
@@ -199,5 +199,5 @@ Sie können Sammlungen in Content Hub als Favoriten markieren, was das Organisie
 
 >[!NOTE]
 >
->[Sammlung anheften oder &#x200B;](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [&#x200B; Adobe-Support-Fall &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
+>[Sammlung anheften oder ](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [ Adobe-Support-Fall ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
 
