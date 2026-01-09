@@ -6,31 +6,24 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '393'
 ht-degree: 5%
 
 ---
 
 
-# JWT-Authentifizierung (JSON Web Token) - veraltet
+# JWT-Server-zu-Server-Authentifizierung (JSON Web Token)
 
-Die JWT-Authentifizierung in AEM Forms, insbesondere für Server-seitige Integrationen mit AEM as a Cloud Service, umfasst einen bestimmten Prozess für die sichere Interaktion mit AEM-Services.
-
-## Überlegung
-
-Das von JWT generierte Zugriffstoken funktioniert nicht, wenn die aktuellen Zertifikate am oder am 1. März 2026 ablaufen, je nachdem, was früher eintritt. Daher müssen Sie Ihre Integration migrieren, um die neuen OAuth [Server-zu-Server-Anmeldedaten) &#x200B;](/help/forms/oauth-api-authetication.md) verwenden.
-
-Die Migration Ihrer Projekte auf die OAuth Server-zu-Server-Anmeldedaten ist ein einfacher zweistufiger Prozess, der eine Migration ohne Ausfallzeiten für Ihre Programme und Integrationen ermöglicht. Lesen Sie das [Migrationshandbuch](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration), um zur OAuth-Server-zu-Server-Berechtigung zu migrieren.
-
+Die JWT-Server-zu-Server-Authentifizierung in AEM Forms, insbesondere für Server-seitige Integrationen mit AEM as a Cloud Service, umfasst einen bestimmten Prozess für die sichere Interaktion mit AEM-Services. Die JWT-Server-zu-Server-Authentifizierung wird von AEM Developer Console unterstützt.
 
 ## Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie Zugriff auf die für [&#x200B; verwendete Umgebung spezifische &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
-* Weisen Sie die Rolle Systemadministrator oder Entwickler für den Zugriff auf Adobe Cloud Manager zu.
+* Stellen Sie sicher, dass Sie Zugriff auf die für [ verwendete Umgebung spezifische ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
+* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Wie wird ein Zugriffs-Token mit JWT-Anmeldeinformationen generiert?
 
@@ -62,7 +55,7 @@ Führen Sie die folgenden Schritte aus, um zu zeigen, wie Sie ein Zugriffs-Token
    ![JWT-Anmeldeinformationen](/help/forms/assets/jwt-credentials.png)
 
 
-3. Erstellen und Speichern von Anmeldeinformationen
+3. **Berechtigungen generieren und speichern**
 
    1. API-Anmeldeinformationen für Einträge
 
@@ -76,7 +69,7 @@ Führen Sie die folgenden Schritte aus, um zu zeigen, wie Sie ein Zugriffs-Token
       Scopes: AdobeID,openid,read_organizations
       ```
 
-4. Erzeugung von Zugriffstoken
+4. **Generieren von Zugriffstoken**
 
    Programmgesteuerte Generierung von Token mithilfe des cURL-Befehls:
 
@@ -120,7 +113,7 @@ Führen Sie die folgenden Schritte aus, um zu zeigen, wie Sie ein Zugriffs-Token
 
 Sie können jetzt das generierte Zugriffstoken verwenden, um API-Aufrufe für Entwicklungs-, Staging- oder Produktionsumgebungen durchzuführen.
 
-## Nächste Schritte
+## Verwandte Artikel
 
 Erfahren Sie, wie Sie eine Umgebung für synchrone (On-Demand) und asynchrone (Batch) Forms Communications-APIs einrichten:
 

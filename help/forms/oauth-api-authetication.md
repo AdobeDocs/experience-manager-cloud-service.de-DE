@@ -6,207 +6,241 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 3%
+source-wordcount: '811'
+ht-degree: 4%
 
 ---
 
 
-# OAuth Server-zu-Server-Authentifizierung - Empfohlen
+# OAuth Server-zu-Server-Authentifizierung
 
-Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-basierten Zugriff auf AEM Forms Communications-APIs, ohne dass eine Benutzerinteraktion erforderlich ist. Diese Methode eignet sich ideal für automatisierte Systeme, Backend-Services und Integrationen, die sich programmgesteuert authentifizieren müssen.
+Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-basierten Zugriff auf AEM Forms Communications-APIs, ohne dass eine Benutzerinteraktion erforderlich ist. Die OAuth-Server-zu-Server-Authentifizierung wird von Adobe Developer Console unterstützt.
 
 ## Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie Zugriff auf die für [&#x200B; verwendete Umgebung spezifische &#x200B;](https://developer.adobe.com/console)Adobe Developer Console haben.
-* Weisen Sie in der Adobe Admin Console die Rolle Systemadministrator oder Entwickler zu, um den Zugriff auf die Adobe Developer Console zu ermöglichen.
+* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
+* [Weisen Sie in der Adobe Admin Console die Rolle „Systemadministrator“ oder „Entwickler“ zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) um den Zugriff auf die Adobe Developer Console zu ermöglichen.
 
 ## Wie wird ein Zugriffs-Token mithilfe der OAuth-Server-zu-Server-Authentifizierung generiert?
 
-Führen Sie die folgenden Schritte aus, um zu zeigen, wie Sie ein Zugriffstoken von der Adobe Developer-Konsole aus generieren und Ihren ersten API-Aufruf über OAuth-Server-zu-Server-Authentifizierung durchführen.
+Gehen Sie wie folgt vor, um ein Zugriffstoken von der Adobe Developer-Konsole aus zu generieren und Ihren ersten API-Aufruf über OAuth-Server-zu-Server-Authentifizierung durchzuführen.
 
+### Adobe Developer Console-Projekteinrichtung
 
 1. Navigieren Sie zu [Adobe Developer Console](https://developer.adobe.com/console)
 2. Mit Adobe ID anmelden
 
 3. Neues Projekt erstellen oder zu Ihrem vorhandenen Projekt navigieren
 
-   **So erstellen Sie ein neues Projekt:**
+>[!BEGINTABS]
 
-   1. Klicken Sie **Abschnitt „Schnellstart** auf **Neues Projekt erstellen**
-   2. Ein neues Projekt wird mit einem Standardnamen erstellt
+>[!TAB So erstellen Sie ein neues Projekt]
 
-      ![ADC-Projekt erstellen](/help/forms/assets/adc-home.png)
+1. Klicken Sie **Abschnitt „Schnellstart** auf **Neues Projekt erstellen**
+2. Ein neues Projekt wird mit einem Standardnamen erstellt
 
-   3. Klicken **oben** auf „Projekt bearbeiten“
+   ![ADC-Projekt erstellen](/help/forms/assets/adc-home.png)
 
-      ![Projekt bearbeiten](/help/forms/assets/adc-edit-project.png)
+3. Klicken **oben** auf „Projekt bearbeiten“
 
-   4. Geben Sie einen aussagekräftigen Namen an (z. B. „FormsProject„)
-   5. Klicken Sie auf **Speichern**.
+   ![Projekt bearbeiten](/help/forms/assets/adc-edit-project.png)
 
-      ![Projektname bearbeiten](/help/forms/assets/adc-edit-projectname.png)
+4. Geben Sie einen aussagekräftigen Namen an (z. B. „FormsProject„)
+5. Klicken Sie auf **Speichern**.
 
+   ![Projektname bearbeiten](/help/forms/assets/adc-edit-projectname.png)
 
-   **So navigieren Sie zu Ihrem vorhandenen Projekt:**
+>[!TAB So navigieren Sie zu Ihrem vorhandenen Projekt]
 
-   1. Klicken Sie **Adobe Developer Console auf** Alle Projekte“
+1. Klicken Sie **Adobe Developer Console auf** Alle Projekte“
 
-      ![Projekte suchen](/help/forms/assets/search-adc-project.png)
+   ![Projekte suchen](/help/forms/assets/search-adc-project.png)
 
-   2. Suchen Sie Ihr Projekt und klicken Sie darauf, um es zu öffnen.
+2. Suchen Sie Ihr Projekt und klicken Sie darauf, um es zu öffnen.
 
-      ![Projekte suchen](/help/forms/assets/locate-adc-project.png)
+   ![Projekte suchen](/help/forms/assets/locate-adc-project.png)
 
+>[!ENDTABS]
 
-      >[!NOTE]
-      >
-      > Sie können die API und die Authentifizierungsmethode zu Ihrem vorhandenen Projekt hinzufügen, indem Sie auf **Zum Projekt hinzufügen** > **API**\
-      > ![API zu vorhandenem Projekt hinzufügen](/help/forms/assets/add-api-existing-project.png)
-      > Um die API und die Authentifizierungsmethode hinzuzufügen, führen Sie dieselben Schritte wie unten für Ihr vorhandenes Projekt beschrieben aus.
+### Hinzufügen von Forms-APIs
 
-4. Fügen Sie je nach Ihren Anforderungen verschiedene AEM Forms Communications-APIs hinzu.
+Fügen Sie Forms-APIs hinzu, je nachdem, was Sie tun möchten:
 
-   **a. Für Document Services-APIs**
+* **AEM Forms Communications APIs**: Wird verwendet, wenn Sie Dokumente (PDF und zugehörige Formate) generieren, konvertieren, zusammenstellen oder sichern müssen.
+* **Adaptive Forms Runtime-APIs** - Wird verwendet, wenn Sie adaptive Forms zur Laufzeit rendern, übermitteln oder verarbeiten müssen.
 
-   1. Klicken Sie auf **API hinzufügen**
+>[!BEGINTABS]
 
-      ![API hinzufügen](/help/forms/assets/adc-add-api.png)
+>[!TAB Für AEM Forms Communications-APIs]
 
-   2. **Forms-Kommunikations-APIs**
-      1. Filtern _im Dialogfeld „API_&quot; nach **Experience Cloud**
-      2. Wählen Sie **Forms-Kommunikations-APIs“**
+1. Klicken Sie auf **API hinzufügen**
 
-         ![Forms-Kommunikations-API hinzufügen](/help/forms/assets/adc-add-forms-api.png)
+   ![API hinzufügen](/help/forms/assets/adc-add-api.png)
 
+2. **Forms-Kommunikations-APIs**
+   1. Filtern _im Dialogfeld „API_&quot; nach **Experience Cloud**
+   2. Wählen Sie **Forms-Kommunikations-APIs“**
 
-   3. Wählen Sie **OAuth Server-zu-Server** Authentifizierungsmethode aus
+      ![Forms-Kommunikations-API hinzufügen](/help/forms/assets/adc-add-forms-api.png)
 
-      ![Authentifizierungsmethode auswählen](/help/forms/assets/adc-add-authentication-method.png)
-
-
-   **b. Für adaptive Forms Runtime-APIs**
-
-   1. **Klicken Sie auf API hinzufügen**
-Klicken Sie in Ihrem Projekt auf die Schaltfläche **API hinzufügen**
-
-      ![API hinzufügen](/help/forms/assets/adc-add-api.png)
-
-   2. **AEM Forms-Bereitstellungs- und Laufzeit-API auswählen**
-      1. Filtern _im Dialogfeld „API_&quot; nach **Experience Cloud**
-      2. Wählen Sie **AEM Forms-Bereitstellungs- und Laufzeit-API“**
-      3. Klicken Sie auf **Weiter**.
-
-   3. **Authentifizierungsmethode**
-Wählen **Authentifizierungsmethode OAuth Server-zu-Server** aus.
-
+   3. Klicken Sie auf **Weiter**.
+   4. Wählen Sie **OAuth Server-zu-Server** Authentifizierungsmethode aus
 
       ![Authentifizierungsmethode auswählen](/help/forms/assets/adc-add-authentication-method.png)
 
-5. **Produktprofil**:
+>[!TAB Für adaptive Forms Runtime-APIs]
 
-   1. Wählen Sie das entsprechende **Produktprofil** basierend auf der erforderlichen Zugriffsebene aus:
+1. **Klicken Sie auf API hinzufügen**
 
-      | Zugriffstyp | Produktprofil |
-      |------------------|----------------------|
-      | Nur-Lese-Zugriff | `AEM Users - author - Program XXX - Environment XXX` |
-      | Lese-/Schreibzugriff | `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` |
-      | Vollständiger administrativer Zugriff | `AEM Administrators - author - Program XXX - Environment XXX` |
+   ![API hinzufügen](/help/forms/assets/adc-add-api.png)
 
-   2. Wählen Sie das **Produktprofil** aus, das Ihrer Autoren-Service-URL (`https://author-pXXXXX-eYYYYY.adobeaemcloud.com`) entspricht. Beispiel: `https://author-pXXXXX-eYYYYY.adobeaemcloud.com` auswählen.
+2. **AEM Forms-Bereitstellungs- und Laufzeit-API auswählen**
+   1. Filtern _im Dialogfeld „API_&quot; nach **Experience Cloud**
+   2. Wählen Sie **AEM Forms-Bereitstellungs- und Laufzeit-API“**
+      ![Forms-Kommunikations-API hinzufügen](/help/forms/assets/adc-add-runtime-api.png)
 
-   3. Klicken Sie auf **Konfigurierte API speichern**. Die API und das Produktprofil werden zu Ihrem Projekt hinzugefügt
+   3. Klicken Sie auf **Weiter**.
+   4. Wählen Sie die Authentifizierungsmethode **OAuth-Server-zu-Server** aus.
+      ![Authentifizierungsmethode auswählen](/help/forms/assets/adc-add-authentication-method.png)
 
-      ![Projektkonfiguration auswählen](/help/forms/assets/adc-add-product-profile.png)
+>[!ENDTABS]
 
-6. Erstellen und Speichern von Anmeldeinformationen
+>[!NOTE]
+>
+> Sie können die API und die Authentifizierungsmethode auch zu Ihrem vorhandenen Projekt hinzufügen, indem Sie auf **Zum Projekt hinzufügen** > **API**\
+> ![API zu vorhandenem Projekt hinzufügen](/help/forms/assets/add-api-existing-project.png)
 
-   1. Navigieren Sie zu Ihrem Projekt in Adobe Developer Console
-   2. Klicken Sie auf **OAuth Server-zu-Server** Anmeldedaten
-   3. Sehen Sie sich den Abschnitt **Anmeldedaten** an
+### Produktprofil hinzufügen
 
-      ![Anzeigen der Anmeldeinformationen](/help/forms/assets/adc-view-credential.png)
+Das Produktprofil stellt Berechtigungen (oder Autorisierung) für Anmeldeinformationen für den Zugriff auf die AEM-Ressourcen bereit.
 
-   4. API-Anmeldeinformationen für Einträge
+1. Wählen Sie das **Produktprofil** aus, das Ihrer AEM-Instanz-URL (`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`) entspricht.
 
-      ```text
-      API Credentials:
-      ================
-      Client ID: <your_client_id>
-      Client Secret: <your_client_secret>
-      Technical Account ID: <tech_account_id>
-      Organization ID: <org_id>
-      Scopes: AdobeID,openid,read_organizations
-      ```
+   * **Service-Typ** - gibt die Services oder Berechtigungen an, die mit der AEM-Instanz verknüpft sind
 
-7. Erzeugung von Zugriffstoken
+   * **Umgebungstyp** - gibt an, ob die Umgebung für den Autoren- oder Veröffentlichungs-Service ist
 
-   **a. Zum Testen**
+   * **Programm XXX** - identifiziert die Cloud Manager-Programm-ID.
 
-   Manuelles Generieren von Zugriffs-Token in Adobe Developer Console:
+   * **Umgebung XXX** - identifiziert die spezifische Umgebungs-ID innerhalb dieses Programms
 
-   1. **Navigieren Sie zu Ihrem Projekt**
-      1. Öffnen Sie in Adobe Developer Console Ihr Projekt
-      2. Klicken Sie auf **OAuth Server-zu-Server**
+   >
+   >
+   > Produktprofile sind an eine bestimmte AEM-Instanz (Programm + Umgebung) gebunden. Wählen Sie immer das Profil aus, das Ihrer Instanz-URL entspricht.
 
-   2. **Zugriffs-Token generieren**
-      1. Klicken Sie im API-Abschnitt Ihres Projekts auf **Schaltfläche** Zugriffs-Token generieren“.
-      2. Kopieren des generierten Zugriffstokens
+2. Klicken Sie auf **Konfigurierte API speichern**. Die API und das Produktprofil werden zu Ihrem Projekt hinzugefügt
 
-      ![Zugriffs-Token generieren](/help/forms/assets/adc-access-token.png)
+   ![Projektkonfiguration auswählen](/help/forms/assets/adc-add-product-profile.png)
 
-      >[!NOTE]
-      >
-      > Das Zugriffs-Token ist nur für **24 Stunden gültig**
+### Erstellen und Speichern von Anmeldeinformationen
 
-   **b. Für die Produktion**
+1. Navigieren Sie zu Ihrem Projekt in Adobe Developer Console
+2. Klicken Sie auf **OAuth Server-zu-Server** Anmeldedaten
+3. Sehen Sie sich den Abschnitt **Anmeldedaten** an
 
-   Programmgesteuerte Generierung von Token mithilfe der Adobe IMS-API:
+   ![Anzeigen der Anmeldeinformationen](/help/forms/assets/adc-view-credential.png)
 
-   **Erforderliche Anmeldedaten:**
+**API-Anmeldeinformationen aufzeichnen**
 
-   * Client-ID
-   * Client-Geheimnis
-   * Bereiche (typischerweise: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+```text
+    API Credentials:
+    ================
+    Client ID: <your_client_id>
+    Client Secret: <your_client_secret>
+    Technical Account ID: <tech_account_id>
+    Organization ID: <org_id>
+    Scopes: AdobeID,openid,read_organizations
+```
 
-   **Token-Endpunkt:**
+### Erzeugung von Zugriffstoken
 
-   ```
-   https://ims-na1.adobelogin.com/ims/token/v3
-   ```
+Erstellen Sie das Zugriffstoken entweder manuell oder programmgesteuert:
 
-   **Beispielanfrage (curl):**
+>[!BEGINTABS]
 
-   ```bash
-   curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
-   -H 'Content-Type: application/x-www-form-urlencoded' \
-   -d 'grant_type=client_credentials' \
-   -d 'client_id=<YOUR_CLIENT_ID>' \
-   -d 'client_secret=<YOUR_CLIENT_SECRET>' \
-   -d 'scope=AdobeID,openid,read_organizations'
-   ```
+>[!TAB Zum Testen]
 
-   **Antwort:**
+Manuelles Generieren von Zugriffs-Token in Adobe Developer Console:
 
-   ```json
-   {
-   "access_token": "eyJhbGciOiJSUz...",
-   "token_type": "bearer",
-   "expires_in": 86399
-   }
-   ```
+1. **Navigieren Sie zu Ihrem Projekt**
+   1. Öffnen Sie in Adobe Developer Console Ihr Projekt
+   2. Klicken Sie auf **OAuth Server-zu-Server**
+
+2. **Zugriffs-Token generieren**
+   1. Klicken Sie im API-Abschnitt Ihres Projekts auf **Schaltfläche** Zugriffs-Token generieren“.
+   2. Kopieren des generierten Zugriffstokens
+
+   ![Zugriffs-Token generieren](/help/forms/assets/adc-access-token.png)
+
+   >[!NOTE]
+   >
+   > Das Zugriffs-Token ist nur für **24 Stunden gültig**
+
+>[!TAB Für die Produktion]
+
+Programmgesteuerte Generierung von Token mithilfe [Adobe IMS](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)-API:
+
+**Erforderliche Anmeldedaten:**
+
+* Client-ID
+* Client-Geheimnis
+* Bereiche (typischerweise: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+
+**Token-Endpunkt:**
+
+```
+https://ims-na1.adobelogin.com/ims/token/v3
+```
+
+**Beispielanfrage (curl):**
+
+```bash
+curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-d 'grant_type=client_credentials' \
+-d 'client_id=<YOUR_CLIENT_ID>' \
+-d 'client_secret=<YOUR_CLIENT_SECRET>' \
+-d 'scope=AdobeID,openid,read_organizations'
+```
+
+**Antwort:**
+
+```json
+    {
+    "access_token": "eyJhbGciOiJSUz...",
+    "token_type": "bearer",
+    "expires_in": 86399
+    }
+```
+
+>[!ENDTABS]
 
 Sie können jetzt das generierte Zugriffstoken verwenden, um API-Aufrufe für Entwicklungs-, Staging- oder Produktionsumgebungen durchzuführen.
 
 >[!NOTE]
 >
-> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [&#x200B; Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
+> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [ Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
+
+## Best Practices: Verwalten von Anmeldeinformationen für Entwicklung, Staging und Produktion
+
+* Verwenden Sie immer separate Anmeldeinformationen für Entwicklung, Staging und Produktion.
+
+* Ordnen Sie jede Berechtigung der richtigen AEM-Umgebungs-URL zu.
+
+* Geheime Daten sicher speichern und niemals in die Quell-Code-Verwaltung übertragen.
+
+* Verfolgen Sie die Gültigkeit des Zugriffs-Tokens, da Token nur für 24 Stunden gültig sind.
 
 ## Nächste Schritte
+
+Informationen zum Einrichten einer Umgebung für synchrone Forms-Kommunikations-APIs finden Sie unter [Synchrone Verarbeitung von AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
+
+
+## Verwandte Artikel
 
 Erfahren Sie, wie Sie eine Umgebung für synchrone (On-Demand) und asynchrone (Batch) Forms Communications-APIs einrichten:
 
