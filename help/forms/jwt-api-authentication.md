@@ -23,7 +23,7 @@ Die JWT-Server-zu-Server-Authentifizierung in AEM Forms, insbesondere für Serve
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
 * Stellen Sie sicher, dass Sie Zugriff auf die für [&#x200B; verwendete Umgebung spezifische &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
-* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Wie wird ein Zugriffs-Token mit JWT-Anmeldeinformationen generiert?
 
