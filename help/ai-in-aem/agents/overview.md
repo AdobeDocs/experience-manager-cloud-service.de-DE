@@ -24,7 +24,7 @@ Diese Agenten sind in Adobe Experience Manager (AEM) as a Cloud Service verfügb
 
 >[!IMPORTANT]
 >
->Um die Agenten verwenden zu können, müssen Sie sich für das Beta-Programm registrieren. Weitere Informationen zum AEM Agents Beta-Programm finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Um die Agenten verwenden zu können, müssen Sie sich für das Beta-Programm registrieren. Weitere Informationen zum AEM Agents Beta-Programm finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Erlebnisproduktionsagent {#experience-production-agent}
 
