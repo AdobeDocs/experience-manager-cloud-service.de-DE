@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
+source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1090'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 19%
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
 ## Version 23862 {#23862}
+
+>[!CAUTION]
+>
+> Version 23862 wurde als privat gekennzeichnet. Eine neue Wartungsversion wird in Kürze bereitgestellt.
 
 Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 23862, die am Mittwoch, 23. Dezember 2025 veröffentlicht wurde. Die vorherige Wartungsversion war Version 23482.
 
