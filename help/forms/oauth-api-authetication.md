@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '817'
 ht-degree: 4%
 
 ---
@@ -22,14 +22,14 @@ Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-bas
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
+* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
 * [Weisen Sie in der Adobe Admin Console die Rolle „Systemadministrator“ oder „Entwickler“ zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) um den Zugriff auf die Adobe Developer Console zu ermöglichen.
 
 ## Wie wird ein Zugriffs-Token mithilfe der OAuth-Server-zu-Server-Authentifizierung generiert?
 
 Gehen Sie wie folgt vor, um ein Zugriffstoken von der Adobe Developer-Konsole aus zu generieren und Ihren ersten API-Aufruf über OAuth-Server-zu-Server-Authentifizierung durchzuführen.
 
-### Adobe Developer Console-Projekteinrichtung
+### &#x200B;1. Adobe Developer Console-Projekteinrichtung
 
 1. Navigieren Sie zu [Adobe Developer Console](https://developer.adobe.com/console)
 2. Mit Adobe ID anmelden
@@ -66,7 +66,7 @@ Gehen Sie wie folgt vor, um ein Zugriffstoken von der Adobe Developer-Konsole au
 
 >[!ENDTABS]
 
-### Hinzufügen von Forms-APIs
+### &#x200B;2. Hinzufügen von Forms-APIs
 
 Fügen Sie Forms-APIs hinzu, je nachdem, was Sie tun möchten:
 
@@ -109,12 +109,10 @@ Fügen Sie Forms-APIs hinzu, je nachdem, was Sie tun möchten:
 
 >[!ENDTABS]
 
->[!NOTE]
->
-> Sie können die API und die Authentifizierungsmethode auch zu Ihrem vorhandenen Projekt hinzufügen, indem Sie auf **Zum Projekt hinzufügen** > **API**\
-> ![API zu vorhandenem Projekt hinzufügen](/help/forms/assets/add-api-existing-project.png)
+Sie können die API und die Authentifizierungsmethode auch zu Ihrem vorhandenen Projekt hinzufügen, indem Sie auf **Zum Projekt hinzufügen** > **API**\
+![API zu vorhandenem Projekt hinzufügen](/help/forms/assets/add-api-existing-project.png)
 
-### Produktprofil hinzufügen
+### &#x200B;3. Produktprofil hinzufügen
 
 Das Produktprofil stellt Berechtigungen (oder Autorisierung) für Anmeldeinformationen für den Zugriff auf die AEM-Ressourcen bereit.
 
@@ -128,7 +126,7 @@ Das Produktprofil stellt Berechtigungen (oder Autorisierung) für Anmeldeinforma
 
    * **Umgebung XXX** - identifiziert die spezifische Umgebungs-ID innerhalb dieses Programms
 
-   >
+   >[!NOTE]
    >
    > Produktprofile sind an eine bestimmte AEM-Instanz (Programm + Umgebung) gebunden. Wählen Sie immer das Profil aus, das Ihrer Instanz-URL entspricht.
 
@@ -136,7 +134,7 @@ Das Produktprofil stellt Berechtigungen (oder Autorisierung) für Anmeldeinforma
 
    ![Projektkonfiguration auswählen](/help/forms/assets/adc-add-product-profile.png)
 
-### Erstellen und Speichern von Anmeldeinformationen
+### &#x200B;4. Erstellen und Speichern von Anmeldeinformationen
 
 1. Navigieren Sie zu Ihrem Projekt in Adobe Developer Console
 2. Klicken Sie auf **OAuth Server-zu-Server** Anmeldedaten
@@ -156,7 +154,7 @@ Das Produktprofil stellt Berechtigungen (oder Autorisierung) für Anmeldeinforma
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### Erzeugung von Zugriffstoken
+### &#x200B;5. Erzeugung von Zugriffstoken
 
 Erstellen Sie das Zugriffstoken entweder manuell oder programmgesteuert:
 
@@ -221,9 +219,9 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
 Sie können jetzt das generierte Zugriffstoken verwenden, um API-Aufrufe für Entwicklungs-, Staging- oder Produktionsumgebungen durchzuführen.
 
->[!NOTE]
 >
-> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [&#x200B; Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
+>
+> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [ Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 
 ## Best Practices: Verwalten von Anmeldeinformationen für Entwicklung, Staging und Produktion
 
