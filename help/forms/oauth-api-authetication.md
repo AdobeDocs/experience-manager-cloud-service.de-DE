@@ -221,7 +221,7 @@ Sie können jetzt das generierte Zugriffstoken verwenden, um API-Aufrufe für En
 
 >
 >
-> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [ Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
+> Weitere Informationen zur OAuth-Server-zu-Server-Implementierung zum Generieren des Zugriffstokens und zum Ausführen von API-Aufrufen [&#x200B; Sie hier](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 
 ## Best Practices: Verwalten von Anmeldeinformationen für Entwicklung, Staging und Produktion
 
