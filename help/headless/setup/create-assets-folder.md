@@ -4,10 +4,10 @@ description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhal
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 86%
+source-wordcount: '267'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten 
 
 [Nachdem Sie nun Inhaltsfragmentmodelle erstellt haben](create-content-model.md), die die Struktur definieren, die Sie für Ihre künftigen Inhaltsfragmente verwenden möchten, würden Sie sicher gern einige Fragmente erstellen.
 
-Zunächst müssen Sie jedoch einen Ordner für Assets erstellen, in dem Sie diese speichern.
+Zunächst müssen Sie jedoch einen Asset-Ordner erstellen, in dem Sie sie speichern.
 
 Asset-Ordner dienen der [Organisation traditioneller Inhalts-Assets](/help/assets/manage-digital-assets.md) wie Bilder und Videos, zusammen mit Inhaltsfragmenten.
 
