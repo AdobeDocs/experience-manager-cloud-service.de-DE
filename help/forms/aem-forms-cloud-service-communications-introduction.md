@@ -93,7 +93,7 @@ Das API zur Dokumentenerstellung gibt das generierte PDF- oder AFP-Dokument zur�
 
 >
 >
-> APIs zur Dokumenterzeugung enthalten Endpunkte zur Batch- und synchronen Ausgabegenerierung. Diese APIs unterstützen die Server-zu-Server-Authentifizierung mit JWT oder OAuth, je nach Endpunkt. Weitere Informationen zu APIs zur Dokumenterstellung finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).
+> APIs zur Dokumenterzeugung enthalten Endpunkte zur Batch- und synchronen Ausgabegenerierung. Diese APIs unterstützen die Server-zu-Server-Authentifizierung mit JWT oder OAuth, je nach Endpunkt. Weitere Informationen zu APIs zur Dokumenterstellung finden Sie [hier &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).
 
 #### Erstellen des Dokuments im Format PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) {#create-PS-PCL-ZPL-documents}
 
@@ -111,7 +111,7 @@ APIs zum Bearbeiten (Umwandeln) von Kommunikationsdokumenten helfen beim Kombini
 
 >
 >
-> APIs zur Dokumentbearbeitung unterstützen die Server-zu-Server-Authentifizierung mithilfe von JWT. Weitere Informationen zu APIs zur Dokumentbearbeitung finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis).
+> APIs zur Dokumentbearbeitung unterstützen die Server-zu-Server-Authentifizierung mithilfe von JWT. Weitere Informationen zu APIs zur Dokumentbearbeitung finden Sie [hier &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis).
 
 ### Wichtige Funktionen für die Dokumentbearbeitung
 
@@ -154,7 +154,7 @@ Der Dokumentenextraktionsdienst bietet Ihnen die Möglichkeit, die Eigenschaften
 
 >
 >
-> APIs zur Dokumentextraktion unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu APIs zum Extrahieren von Dokumenten finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
+> APIs zur Dokumentextraktion unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu APIs zum Extrahieren von Dokumenten finden Sie [hier &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
 >
 
 ## Dokumentkonvertierung
@@ -171,7 +171,7 @@ Konvertiert ein PDF-Dokument in eine XDP-Datei. Damit ein PDF-Dokument in eine X
 
 >
 >
-> Document Conversion-APIs unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu Dokumentkonvertierungs-APIs finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss).
+> Document Conversion-APIs unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu Dokumentkonvertierungs-APIs finden Sie [hier &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss).
 
 ## Dokumentsicherung {#doc-assurance}
 
@@ -192,7 +192,7 @@ Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichke
 
 >
 >
-> Document Assurance-APIs unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu Document Assurance-APIs finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis).
+> Document Assurance-APIs unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu Document Assurance-APIs finden Sie [hier &#x200B;](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis).
 
 ### Verschlüsselungs-APIs
 
