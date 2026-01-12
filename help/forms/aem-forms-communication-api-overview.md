@@ -3,18 +3,15 @@ title: AEM Forms Communications APIs - Übersicht
 description: Übersicht über AEM Forms Communications-APIs einschließlich Authentifizierungsmethoden und vollständiger API-Referenz
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '941'
 ht-degree: 9%
 
 ---
 
 
-# AEM Forms-APIs - Übersicht
+# AEM Forms Communications APIs - Übersicht
 
 AEM Forms-APIs bieten eine umfassende Suite an Cloud-nativen APIs, die Unternehmen bei der Automatisierung von Dokumenten-Workflows unterstützen.
 
@@ -35,9 +32,10 @@ Verschiedene Forms-APIs verwenden je nach Veröffentlichungszeitplan unterschied
 
 Frühere APIs unterstützen die JWT-basierte Server-zu-Server-Authentifizierung, die über die AEM Developer Console konfiguriert und verwaltet wird. Neuere APIs verwenden OAuth-Server-zu-Server-Authentifizierung und werden über die Adobe Developer Console konfiguriert.
 
+<!--
 >[!NOTE]
 >
-> Adobe standardisiert die Authentifizierungsmethode für alle APIs und integriert APIs schrittweise in die Adobe Developer Console, die die OAuth-Server-zu-Server-Authentifizierungsmethode unterstützt.
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
 
 ## Übersicht über die API-Klassifizierung
 
@@ -57,7 +55,7 @@ Alle AEM Forms-APIs sind in zwei Hauptteile unterteilt:
 
 Kommunikations-APIs sind der primäre Fokus für dokumentzentrierte Vorgänge.
 
-In der folgenden Tabelle sind alle [AEM Forms Communications APIs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
+In der folgenden Tabelle sind alle [AEM Forms Communications APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
 
 #### APIs zur Dokumenterstellung
 
@@ -70,9 +68,9 @@ In der folgenden Tabelle sind alle [AEM Forms Communications APIs &#x200B;](http
 | [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/StartBatchRun) | Startet eine Batch-Ausgabegenerierung mithilfe einer Konfiguration. | Asynchron/Batch | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | Ruft den Ausführungsstatus eines Batch-Vorgangs ab. | Asynchron/Batch | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/execution](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Listet alle laufenden Instanzen für eine bestimmte Batch-Konfiguration auf. | Asynchron/Batch | [JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Erzeugt synchron eine PDF-Ausgabe basierend auf Vorlagen und Daten. | Synchron | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Generiert druckfertige Ausgabeformate (z. B. PCL, PostScript). | Synchron | [OAuth](/help/forms/oauth-api-authetication.md) |
-| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Generiert eine AFP-Ausgabe für den Druck großer Volumen. | Synchron | [OAuth](/help/forms/oauth-api-authetication.md) |
+| [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | Erzeugt synchron eine PDF-Ausgabe basierend auf Vorlagen und Daten. | Synchron | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | Generiert druckfertige Ausgabeformate (z. B. PCL, PostScript). | Synchron | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | Generiert eine AFP-Ausgabe für den Druck großer Volumen. | Synchron | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | Rendert ein PDF-Formular (XFA/XDP) mit zusammengeführten Daten. | Synchron | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | Ruft den Status eines PDF-Formulargenerierungsauftrags ab. | Synchron | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/result](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobResult) | Ruft die Ausgabe/das Ergebnis eines abgeschlossenen PDF-Formularauftrags ab. | Synchron | [OAuth](/help/forms/oauth-api-authetication.md) |

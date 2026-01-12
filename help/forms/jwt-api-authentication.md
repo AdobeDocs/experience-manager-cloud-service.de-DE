@@ -3,10 +3,7 @@ title: Wie wird die JWT-Authentifizierung (JSON Web Token) eingerichtet?
 description: Erfahren Sie, wie Sie die JWT-Authentifizierung (JSON Web Token) für Adobe Experience Manager Forms as a Cloud Service konfigurieren
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 5%
@@ -22,8 +19,8 @@ Die JWT-Server-zu-Server-Authentifizierung in AEM Forms, insbesondere für Serve
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie Zugriff auf die für [&#x200B; verwendete Umgebung spezifische &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
-* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Stellen Sie sicher, dass Sie Zugriff auf die für [ verwendete Umgebung spezifische ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
+* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Wie wird ein Zugriffs-Token mit JWT-Anmeldeinformationen generiert?
 

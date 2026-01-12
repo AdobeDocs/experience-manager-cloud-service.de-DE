@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
 workflow-type: tm+mt
-source-wordcount: '2720'
-ht-degree: 97%
+source-wordcount: '2772'
+ht-degree: 94%
 
 ---
 
@@ -91,6 +91,10 @@ Das API zur Dokumentenerstellung gibt das generierte PDF- oder AFP-Dokument zur�
 
 <span class="preview"> Das Hochladen der generierten PDF-Dateien mit der API zur Dokumenterstellung in die Azure Blob Storage-Funktion erfolgt im Rahmen des [Early-Adopter-Programms](/help/forms/early-access-ea-features.md). Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
+>
+>
+> APIs zur Dokumenterzeugung enthalten Endpunkte zur Batch- und synchronen Ausgabegenerierung. Diese APIs unterstützen die Server-zu-Server-Authentifizierung mit JWT oder OAuth, je nach Endpunkt. Weitere Informationen zu APIs zur Dokumenterstellung finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).
+
 #### Erstellen des Dokuments im Format PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) {#create-PS-PCL-ZPL-documents}
 
 Sie können APIs zur Dokumenterstellung verwenden, und zwar von PostScript (PS)-, Printer Command Language (PCL)- und Zebra Printing Language (ZPL)-Dokumenten, die auf einem XDP-Formular-Design oder PDF-Dokument basieren. Diese APIs helfen beim Zusammenführen eines Formular-Designs mit Formulardaten, um ein Dokument zu erzeugen. Sie können das Dokument in einer Datei speichern und einen benutzerdefinierten Prozess entwickeln, um es an einen Drucker zu senden.
@@ -104,6 +108,10 @@ Sie können APIs zum Erzeugen von Dokumenten verwenden, um separate Dokumente f�
 ## Dokumentbearbeitung
 
 APIs zum Bearbeiten (Umwandeln) von Kommunikationsdokumenten helfen beim Kombinieren und Neuanordnen von PDF-Dokumenten. In der Regel erstellen Sie ein DDX und übermitteln es an APIs zur Dokumentenbearbeitung, um ein Dokument zusammenzustellen oder neu anzuordnen. Das [DDX-Dokument](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) enthält Anweisungen dazu, wie die Quelldokumente zum Erzeugen eines Satzes von erforderlichen Dokumenten verwendet werden. Die DDX-Referenzdokumentation enthält detaillierte Informationen zu allen unterstützten Vorgängen. 
+
+>
+>
+> APIs zur Dokumentbearbeitung unterstützen die Server-zu-Server-Authentifizierung mithilfe von JWT. Weitere Informationen zu APIs zur Dokumentbearbeitung finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis).
 
 ### Wichtige Funktionen für die Dokumentbearbeitung
 
@@ -144,7 +152,10 @@ Der Dokumentenextraktionsdienst bietet Ihnen die Möglichkeit, die Eigenschaften
 * Extrahieren der in einem PDF-Dokument aktivierten Verwendungsrechte. Benutzende rufen die Verwendungsrechte ab, die für ein PDF-Dokument für die Adobe Acrobat Reader-Erweiterbarkeit aktiviert oder deaktiviert sind.
 * Abrufen der Metadateninformationen eines PDF-Dokuments. Die Metadaten sind Informationen über das Dokument (unabhängig vom Inhalt des Dokuments, wie z. B. Text und Grafiken). Adobe Extensible Metadata Platform (XMP) ist ein Standard für die Verarbeitung von Dokumentenmetadaten. Der XMP Utilities-Dienst kann XMP-Metadaten aus PDF-Dokumenten abrufen und XMP-Metadaten in PDF-Dokumente exportieren.
 
-Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) enthält detaillierte Informationen zu allen Parametern, Authentifizierungsmethoden und den Diensten, die von APIs bereitgestellt werden. Die Dokumentation zur API-Referenz ist auch im Format .yaml verfügbar. Sie können die .yaml-Datei herunterladen und sie in Postman hochladen, um die Funktionalität von APIs zu überprüfen.
+>
+>
+> APIs zur Dokumentextraktion unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu APIs zum Extrahieren von Dokumenten finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
+>
 
 ## Dokumentkonvertierung
 
@@ -157,6 +168,10 @@ Mithilfe von APIs zur Konvertierung von Kommunikationsdokumenten können Sie ein
 <span class="preview"> Die Funktion zum Konvertieren von PDF in XDP ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 Konvertiert ein PDF-Dokument in eine XDP-Datei. Damit ein PDF-Dokument in eine XDP-Datei konvertiert werden kann, muss es einen XFA-Stream im Wörterbuch enthalten.
+
+>
+>
+> Document Conversion-APIs unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu Dokumentkonvertierungs-APIs finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss).
 
 ## Dokumentsicherung {#doc-assurance}
 
@@ -174,6 +189,10 @@ Signature-APIs ermöglichten Ihrem Unternehmen, die Sicherheit und Vertraulichke
 * Das angegebene Signaturfeld aus einem PDF-Dokument entfernen
 
 <span class="preview"> Die Funktionen zum Entfernen der Signatur aus dem angegebenen Signaturfeld und zum Löschen des angegebenen Signaturfelds aus einem PDF-Dokument sind im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+
+>
+>
+> Document Assurance-APIs unterstützen die Server-zu-Server-Authentifizierung mit OAuth. Weitere Informationen zu Document Assurance-APIs finden Sie [hier ](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis).
 
 ### Verschlüsselungs-APIs
 

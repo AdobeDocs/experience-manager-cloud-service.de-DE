@@ -3,18 +3,15 @@ title: Wie richte ich synchrone APIs für Forms Communications ein?
 description: Einrichten einer Entwicklungsumgebung für synchrone APIs für interaktive Kommunikation für Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
+source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2417'
 ht-degree: 2%
 
 ---
 
 
-# Konfigurieren des OAuth-Server-zu-Server-Zugriffs für synchrone AEM Forms Communications-APIs
+# Konfigurieren des OAuth-Server-zu-Server-Zugriffs für AEM Forms Communications-APIs
 
 Dieses Handbuch enthält Anweisungen zum Konfigurieren und Aufrufen von synchronen AEM Forms Communications-APIs, auf die über die Adobe Developer Console mithilfe der OAuth-Server-zu-Server-Authentifizierung zugegriffen wird.
 
@@ -22,14 +19,19 @@ Dieses Handbuch enthält Anweisungen zum Konfigurieren und Aufrufen von synchron
 
 Um eine Umgebung zum Ausführen und Testen von AEM Forms Communications-APIs einzurichten, stellen Sie Folgendes sicher:
 
+### Aktualisieren der AEM as a Cloud Service-Umgebung
+
+* [AEM-Version 2024.10.18459.20241031T210302Z oder höher](#update-aem-instance)
+* Aktualisieren von Produktprofilen, wenn die Umgebung vor November 2024 erstellt wurde
+
 ### Zugriff und Berechtigungen
 
 Vergewissern Sie sich, dass Sie über die erforderlichen Zugriffsrechte und Berechtigungen verfügen, bevor Sie mit der Konfiguration der Kommunikations-APIs beginnen.
 
 **Benutzer- und Rollenberechtigungen**
 
-- In der Adobe Admin Console zugewiesene Entwicklerrolle
-- Berechtigung zum Erstellen von Projekten in der Adobe Developer Console
+* In der Adobe Admin Console zugewiesene Entwicklerrolle
+* Berechtigung zum Erstellen von Projekten in der Adobe Developer Console
 
 >[!NOTE]
 >
@@ -37,8 +39,8 @@ Vergewissern Sie sich, dass Sie über die erforderlichen Zugriffsrechte und Bere
 
 **Git-Repository-Zugriff**
 
-- Zugriff auf das Cloud Manager-Git-Repository
-- Git-Anmeldeinformationen für das Klonen und Pushen von Änderungen
+* Zugriff auf das Cloud Manager-Git-Repository
+* Git-Anmeldeinformationen für das Klonen und Pushen von Änderungen
 
 >[!NOTE]
 >
@@ -46,20 +48,20 @@ Vergewissern Sie sich, dass Sie über die erforderlichen Zugriffsrechte und Bere
 
 ### Generieren eines Zugriffs-Tokens mithilfe von Adobe Developer Console (ADC)
 
-- Generieren Sie ein Zugriffstoken über die Adobe Developer Console mithilfe der OAuth-Server-zu-Server-Authentifizierung.
-- Abrufen der Client-ID aus der Adobe Developer Console
+* Generieren Sie ein Zugriffstoken über die Adobe Developer Console mithilfe der OAuth-Server-zu-Server-Authentifizierung.
+* Abrufen der Client-ID aus der Adobe Developer Console
 
 >[!NOTE]
 >
-> Weitere Informationen zur OAuth-Server-zu-Server-Authentifizierung mithilfe der Adobe Developer Console finden Sie [hier &#x200B;](/help/forms/oauth-api-authetication.md).
+> Weitere Informationen zur OAuth-Server-zu-Server-Authentifizierung mithilfe der Adobe Developer Console finden Sie [hier ](/help/forms/oauth-api-authetication.md).
 
 ### Entwicklungs-Tools
 
-- **Node.js** zum Ausführen von Beispielanwendungen
-- Neueste Version von **Git**
-- Zugriff auf **Terminal/Befehlszeile**
-- **Texteditor oder IDE** zum Bearbeiten von Konfigurationsdateien (VS Code, IntelliJ usw.)
-- **Postman** oder ein ähnliches Tool für API-Tests
+* **Node.js** zum Ausführen von Beispielanwendungen
+* Neueste Version von **Git**
+* Zugriff auf **Terminal/Befehlszeile**
+* **Texteditor oder IDE** zum Bearbeiten von Konfigurationsdateien (VS Code, IntelliJ usw.)
+* **Postman** oder ein ähnliches Tool für API-Tests
 
 >[!NOTE]
 >
@@ -263,9 +265,9 @@ Programmgesteuerte Generierung von Token mithilfe [Adobe IMS](https://experience
 
 **Erforderliche Anmeldedaten:**
 
-- Client-ID
-- Client-Geheimnis
-- Bereiche (typischerweise: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+* Client-ID
+* Client-Geheimnis
+* Bereiche (typischerweise: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
 **Token-Endpunkt:**
 
@@ -340,16 +342,16 @@ Damit die Client-ID Ihres ADC-Projekts mit der AEM-Instanz kommunizieren kann, m
 
 Im Folgenden werden die Konfigurationsparameter erläutert:
 
-- **kind**: Immer auf `"API"` gesetzt (gibt dies als API-Konfiguration an)
-- **version**: API-Version, normalerweise `"1"` oder `"1.0"`
-- **envTypes**: Array von Umgebungstypen, für die diese Konfiguration gilt
-   - `["dev"]` - Nur Entwicklungsumgebungen
-   - `["stage"]` - Nur Staging-Umgebungen
-   - `["prod"]` - Nur Produktionsumgebungen
-- **allowedClientIDs**: Client-IDs dürfen auf Ihre AEM-Instanz zugreifen
-   - **author**: Client-IDs für die Autorenebene
-   - **publish**: Client-IDs für die Veröffentlichungsebene
-   - **preview**: Client-IDs für die Vorschauebene
+* **kind**: Immer auf `"API"` gesetzt (gibt dies als API-Konfiguration an)
+* **version**: API-Version, normalerweise `"1"` oder `"1.0"`
+* **envTypes**: Array von Umgebungstypen, für die diese Konfiguration gilt
+   * `["dev"]` - Nur Entwicklungsumgebungen
+   * `["stage"]` - Nur Staging-Umgebungen
+   * `["prod"]` - Nur Produktionsumgebungen
+* **allowedClientIDs**: Client-IDs dürfen auf Ihre AEM-Instanz zugreifen
+   * **author**: Client-IDs für die Autorenebene
+   * **publish**: Client-IDs für die Veröffentlichungsebene
+   * **preview**: Client-IDs für die Vorschauebene
 
 ![Konfigurationsdatei wird hinzugefügt](/help/forms/assets/create-api-yaml-file.png)
 
@@ -383,9 +385,9 @@ Im Folgenden werden die Konfigurationsparameter erläutert:
 
 #### 5.2 Pipeline-Typ auswählen
 
-- **Für Entwicklungsumgebungen**: Wählen Sie **Produktionsfremde Pipeline hinzufügen“**. Produktionsfremde Pipelines sind für Entwicklungs- und Staging-Umgebungen vorgesehen
+* **Für Entwicklungsumgebungen**: Wählen Sie **Produktionsfremde Pipeline hinzufügen“**. Produktionsfremde Pipelines sind für Entwicklungs- und Staging-Umgebungen vorgesehen
 
-- **Für Produktionsumgebungen**: Wählen Sie **Produktions-Pipeline hinzufügen“**. Produktions-Pipelines erfordern zusätzliche Genehmigungen
+* **Für Produktionsumgebungen**: Wählen Sie **Produktions-Pipeline hinzufügen“**. Produktions-Pipelines erfordern zusätzliche Genehmigungen
 
 >[!NOTE]
 >
@@ -397,22 +399,22 @@ Auf der Registerkarte **Konfiguration**:
 
 a. **Pipeline-**
 
-- Wählen Sie **Bereitstellungs-Pipeline“**
+* Wählen Sie **Bereitstellungs-Pipeline“**
 
 b. **Name der Pipeline**
 
-- Geben Sie einen beschreibenden Namen an, z. B. benennen Sie die Pipeline wie `api-config-pipieline`
+* Geben Sie einen beschreibenden Namen an, z. B. benennen Sie die Pipeline wie `api-config-pipieline`
 
 c. **Bereitstellungs-Trigger**
 
-- **Manuell**: Bereitstellung nur bei manueller Auslösung (für die Ersteinrichtung empfohlen)
-- **Bei Git-**: Automatische Bereitstellung, wenn Änderungen an die Verzweigung gepusht werden
+* **Manuell**: Bereitstellung nur bei manueller Auslösung (für die Ersteinrichtung empfohlen)
+* **Bei Git-**: Automatische Bereitstellung, wenn Änderungen an die Verzweigung gepusht werden
 
 d. **Verhalten bei bedeutenden Metrikfehlern**
 
-- **Jedes Mal fragen**: Bei Fehlern Aktion anfordern (Standard)
-- **Sofort fehlschlagen**: Pipeline bei Metrikfehlern automatisch fehlschlagen
-- **Sofort fortfahren**: Trotz Fehlern fortfahren
+* **Jedes Mal fragen**: Bei Fehlern Aktion anfordern (Standard)
+* **Sofort fehlschlagen**: Pipeline bei Metrikfehlern automatisch fehlschlagen
+* **Sofort fortfahren**: Trotz Fehlern fortfahren
 
 e. Klicken Sie auf **„Weiter“**, um zur Registerkarte **Source-Code** zu gelangen
 
@@ -424,21 +426,21 @@ Auf der Registerkarte **Source** Code:
 
 a. **Bereitstellungstyp**
 
-- Wählen Sie **Zielgerichtete Bereitstellung“**
+* Wählen Sie **Zielgerichtete Bereitstellung“**
 
 b. **Bereitstellungsoptionen**
 
-- Wählen Sie **„Konfiguration“** (nur Konfigurationsdateien bereitstellen). Dadurch wird Cloud Manager mitgeteilt, dass es sich um eine Konfigurationsbereitstellung handelt.
+* Wählen Sie **„Konfiguration“** (nur Konfigurationsdateien bereitstellen). Dadurch wird Cloud Manager mitgeteilt, dass es sich um eine Konfigurationsbereitstellung handelt.
 
 c. **Geeignete Bereitstellungsumgebung auswählen**
 
-- Wählen Sie die Umgebung aus, in der Sie die Konfiguration bereitstellen möchten. In diesem Fall handelt es sich um eine `dev` Umgebung.
+* Wählen Sie die Umgebung aus, in der Sie die Konfiguration bereitstellen möchten. In diesem Fall handelt es sich um eine `dev` Umgebung.
 
 d. **Definieren von Source-Code-Details**
 
-- **Repository**: Wählen Sie das Repository aus, das Ihre `api.yaml` enthält. Wählen Sie beispielsweise das `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY` Repository aus.
-- **Git-Verzweigung**: Wählen Sie Ihre Verzweigung aus. In diesem Fall wird unser Code beispielsweise in der `main` bereitgestellt.
-- **Code-Speicherort**: Geben Sie den Pfad zu `config` Verzeichnis ein. Da sich `api.yaml` im Stammordner `config` befindet, geben Sie `/config` ein
+* **Repository**: Wählen Sie das Repository aus, das Ihre `api.yaml` enthält. Wählen Sie beispielsweise das `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY` Repository aus.
+* **Git-Verzweigung**: Wählen Sie Ihre Verzweigung aus. In diesem Fall wird unser Code beispielsweise in der `main` bereitgestellt.
+* **Code-Speicherort**: Geben Sie den Pfad zu `config` Verzeichnis ein. Da sich `api.yaml` im Stammordner `config` befindet, geben Sie `/config` ein
 
 e. Klicken Sie auf **„Speichern**, um die Pipeline zu erstellen
 
@@ -462,9 +464,9 @@ Stellen Sie nach der Erstellung der Pipeline Ihre `api.yaml` bereit
 
 #### 6.3 Überprüfen der erfolgreichen Bereitstellung
 
-- Warten Sie, bis die Pipeline abgeschlossen ist.
-   - Wenn dies erfolgreich ist, ändert sich der Status in „Erfolg“ (grünes Häkchen ✓).
-   - Wenn dies fehlschlägt, ändert sich der Status in „Fehlgeschlagen“ (rotes Kreuz ✗). Klicken Sie **Protokolle herunterladen**, um die Fehlerdetails anzuzeigen.
+* Warten Sie, bis die Pipeline abgeschlossen ist.
+   * Wenn dies erfolgreich ist, ändert sich der Status in „Erfolg“ (grünes Häkchen ✓).
+   * Wenn dies fehlschlägt, ändert sich der Status in „Fehlgeschlagen“ (rotes Kreuz ✗). Klicken Sie **Protokolle herunterladen**, um die Fehlerdetails anzuzeigen.
 
      ![Pipeline-Erfolg](/help/forms/assets/pipeline-suceess.png)
 
@@ -480,7 +482,7 @@ Nachdem Ihre Umgebung konfiguriert ist, können Sie mit dem Testen der AEM Forms
 
 Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Testen von APIs, ohne Code zu schreiben. Verwenden Sie die Funktion &quot;**ausprobieren** zum Aufrufen und Testen der Kommunikations-API [Generate PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) von Forms.
 
-1. Navigieren Sie zur [Forms-Kommunikations-API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)Referenz und öffnen Sie die [Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document)Kommunikations-API&rbrace;-Dokumentation in Ihrem Browser.
+1. Navigieren Sie zur [Forms-Kommunikations-API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)Referenz und öffnen Sie die [Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document)Kommunikations-API}-Dokumentation in Ihrem Browser.
 2. Erweitern Sie den Abschnitt **Dokumenterstellung** und wählen Sie [Generiert ein ausfüllbares PDF-Formular aus einer XDP- oder PDF-Vorlage, optional mit Datenzusammenführung](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Klicken Sie im rechten Bereich auf &quot;**ausprobieren**.
 
@@ -491,8 +493,8 @@ Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Testen v
    |--------------|---------------|------------|
    | bucket | AEM-Instanz | AEM-Instanzname ohne den Adobe-Domänennamen (`.adobeaemcloud.com`) Verwenden Sie beispielsweise `pXXXXX-eYYYYY` als Bucket. |
    | Sicherheit | Bearer Token | Verwenden Sie das [Zugriffstoken aus den OAuth-Server-zu-Server-Anmeldeinformationen des Adobe Developer Console-Projekts](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
-   | Hauptteil | template | Laden Sie eine XDP-Datei hoch, um das PDF-Formular zu generieren. Sie können beispielsweise &quot;[&#x200B; XDP“ verwenden](/help/forms/assets/ClosingForm.xdp) um eine PDF zu generieren. |
-   | Hauptteil | data | Eine optionale XML-Datei mit den Daten, die mit der Vorlage zusammengeführt werden sollen, um ein vorausgefülltes PDF-Formular zu generieren. Sie können beispielsweise &quot;[&#x200B; XML“ verwenden](/help/forms/assets/ClosingForm.xml) um eine PDF zu generieren. |
+   | Hauptteil | template | Laden Sie eine XDP-Datei hoch, um das PDF-Formular zu generieren. Sie können beispielsweise &quot;[ XDP“ verwenden](/help/forms/assets/ClosingForm.xdp) um eine PDF zu generieren. |
+   | Hauptteil | data | Eine optionale XML-Datei mit den Daten, die mit der Vorlage zusammengeführt werden sollen, um ein vorausgefülltes PDF-Formular zu generieren. Sie können beispielsweise &quot;[ XML“ verwenden](/help/forms/assets/ClosingForm.xml) um eine PDF zu generieren. |
    | Parameter | X-Adobe-Accept-Experimental | 1 |
 
 5. Klicken Sie auf **Senden**, um die API aufzurufen
@@ -500,10 +502,10 @@ Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Testen v
    ![API senden](/help/forms/assets/api-send.png)
 
 6. Überprüfen Sie die Antwort auf der Registerkarte **Antwort**:
-   - Wenn der Antwort-Code `200` ist, bedeutet dies, dass die PDF erfolgreich erstellt wurde.
-   - Wenn der Antwort-Code `400` ist, bedeutet dies, dass die Anfrageparameter ungültig oder fehlerhaft sind.
-   - Wenn der Antwort-Code `500` ist, bedeutet dies, dass ein interner Server-Fehler vorliegt.
-   - Wenn der Antwort-Code `403` ist, bedeutet dies, dass ein Autorisierungsfehler vorliegt.
+   * Wenn der Antwort-Code `200` ist, bedeutet dies, dass die PDF erfolgreich erstellt wurde.
+   * Wenn der Antwort-Code `400` ist, bedeutet dies, dass die Anfrageparameter ungültig oder fehlerhaft sind.
+   * Wenn der Antwort-Code `500` ist, bedeutet dies, dass ein interner Server-Fehler vorliegt.
+   * Wenn der Antwort-Code `403` ist, bedeutet dies, dass ein Autorisierungsfehler vorliegt.
 
    In diesem Fall lautet der Antwort-Code `200`. Das bedeutet, dass die PDF erfolgreich generiert wurde:
 
@@ -523,11 +525,11 @@ Entwickeln Sie eine Node.js-Anwendung, um ein ausfüllbares PDF-Formular aus ein
 
 **Voraussetzungen**
 
-- Auf Ihrem System installierte Node.js
-- Aktive AEM as a Cloud Service Instanz
-- Bearer-Token für die API-Authentifizierung von Adobe Developer Console
-- XDP-Beispieldatei: [closingForm.xdp](/help/forms/assets/ClosingForm.xdp)
-- XML-Beispieldatei: [closingForm.xml](/help/forms/assets/ClosingForm.xml)
+* Auf Ihrem System installierte Node.js
+* Aktive AEM as a Cloud Service Instanz
+* Bearer-Token für die API-Authentifizierung von Adobe Developer Console
+* XDP-Beispieldatei: [closingForm.xdp](/help/forms/assets/ClosingForm.xdp)
+* XML-Beispieldatei: [closingForm.xml](/help/forms/assets/ClosingForm.xml)
 
 Um die Node.js-Anwendung zu entwickeln, folgen Sie der schrittweisen Entwicklung:
 
@@ -721,62 +723,62 @@ Sie können die [generierte PDF](/help/forms/assets/create-pdf.png) öffnen, um 
 
 **Symptome:**
 
-- API-Anfragen geben `403 Forbidden` zurück
-- Fehlermeldung: *Nicht autorisierter Zugriff*
+* API-Anfragen geben `403 Forbidden` zurück
+* Fehlermeldung: *Nicht autorisierter Zugriff*
 
 **Mögliche Ursache:**
 
-- Client-ID nicht in der `api.yaml` der AEM-Instanz registriert
+* Client-ID nicht in der `api.yaml` der AEM-Instanz registriert
 
 #### Problem 2: 401 Nicht autorisierter Fehler
 
 **Symptome:**
 
-- API-Anfragen geben `401 Unauthorized` zurück
-- Fehlermeldung: *Ungültiges oder abgelaufenes Token*
+* API-Anfragen geben `401 Unauthorized` zurück
+* Fehlermeldung: *Ungültiges oder abgelaufenes Token*
 
 **Mögliche Ursachen:**
 
-- Zugriffstoken abgelaufen (nur für 24 Stunden gültig)
-- Falsche oder nicht übereinstimmende Client-ID und Client-Geheimnis
+* Zugriffstoken abgelaufen (nur für 24 Stunden gültig)
+* Falsche oder nicht übereinstimmende Client-ID und Client-Geheimnis
 
 #### Problem 3: Fehler „404 Nicht gefunden“
 
 **Symptome:**
 
-- API-Anfragen geben `404 Not Found` zurück
-- Fehlermeldung: *Ressource nicht gefunden* oder *API-Endpunkt nicht gefunden*
+* API-Anfragen geben `404 Not Found` zurück
+* Fehlermeldung: *Ressource nicht gefunden* oder *API-Endpunkt nicht gefunden*
 
 **Mögliche Ursache:**
 
-- Falscher Bucket-Parameter (stimmt nicht mit der AEM-Instanzkennung überein)
+* Falscher Bucket-Parameter (stimmt nicht mit der AEM-Instanzkennung überein)
 
 #### Problem 4: Pipeline-Bereitstellung schlägt fehl
 
 **Symptome:**
 
-- Pipeline-Ausführung konfigurieren schlägt fehl
-- Bereitstellungsprotokolle enthalten Fehler im Zusammenhang mit `api.yaml`
+* Pipeline-Ausführung konfigurieren schlägt fehl
+* Bereitstellungsprotokolle enthalten Fehler im Zusammenhang mit `api.yaml`
 
 **Mögliche Ursachen:**
 
-- Ungültige YAML-Syntax (Einzug, Anführungszeichen oder Probleme mit dem Array-Format)
-- `api.yaml` in falschem Verzeichnis platziert
-- Fehlerhafte oder falsche Client-ID in der Konfiguration
-- Ungültiges Client-Geheimnis
+* Ungültige YAML-Syntax (Einzug, Anführungszeichen oder Probleme mit dem Array-Format)
+* `api.yaml` in falschem Verzeichnis platziert
+* Fehlerhafte oder falsche Client-ID in der Konfiguration
+* Ungültiges Client-Geheimnis
 
 #### Problem 5: Forms-Kommunikations-APIs werden nicht ausgeführt
 
 **Symptome:**
 
-- API-Anfragen geben Fehler zurück, die auf nicht unterstützte oder nicht verfügbare Funktionen hinweisen.
-- Die Generierung von PDF mit XDP und XML funktioniert nicht.
-- Die Pipeline-Bereitstellung wurde erfolgreich abgeschlossen, aber API-Aufrufe zur Laufzeit schlagen fehl.
+* API-Anfragen geben Fehler zurück, die auf nicht unterstützte oder nicht verfügbare Funktionen hinweisen.
+* Die Generierung von PDF mit XDP und XML funktioniert nicht.
+* Die Pipeline-Bereitstellung wurde erfolgreich abgeschlossen, aber API-Aufrufe zur Laufzeit schlagen fehl.
 
 **Mögliche Ursache:**
 
 In der AEM-Umgebung wird eine Version ausgeführt, die vor der Einführung oder Unterstützung der Forms-Kommunikations-APIs veröffentlicht wurde.
-Informationen zum Aktualisieren der AEM-Umgebung finden [&#x200B; im Abschnitt &#x200B;](#update-aem-instance)Aktualisieren der AEM-Instanz“.
+Informationen zum Aktualisieren der AEM-Umgebung finden [ im Abschnitt ](#update-aem-instance)Aktualisieren der AEM-Instanz“.
 
 ## Aktualisieren der AEM-Instanz
 
@@ -789,4 +791,4 @@ So aktualisieren Sie die AEM-Instanz, um nach Umgebungsdetails zu suchen:
 
 ## Verwandte Artikel
 
-- Informationen zum Einrichten einer Umgebung für Batch (asynchrone APIs) finden Sie unter [Batch-Verarbeitung in AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+* Informationen zum Einrichten einer Umgebung für Batch (asynchrone APIs) finden Sie unter [Batch-Verarbeitung in AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
