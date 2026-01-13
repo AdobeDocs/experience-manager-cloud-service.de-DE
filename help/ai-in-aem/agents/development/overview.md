@@ -3,7 +3,7 @@ title: Übersicht über den Entwicklungsagenten
 description: Erfahren Sie, wie der Entwicklungsagent in AEM fehlgeschlagene Pipelines in Cloud Manager analysiert und Protokolle erstellt, um Code-Fehlerbehebungen vorzuschlagen und das Debugging zu beschleunigen.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Der Entwicklungs-Agent unterstützt AEM-Entwickler und -Administratoren dabei, C
 
 Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten helfen, indem er Fehlerbehebungen vorschlägt und so Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen spart. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478016?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -77,8 +77,6 @@ Der Zugriff auf den Entwicklungsagenten erfolgt über den KI-Assistenten, der si
 
 Für die Fehlerbehebung bei der Pipeline des Entwicklungsagenten ist entweder die Rolle Cloud Manager - Entwickler oder die Rolle Cloud Manager - Programm-Manager erforderlich.
 
-
-
 ## Eingabeaufforderungen im Beispiel {#sample-prompts}
 
 | Prompt | Ergebnis |
@@ -93,4 +91,3 @@ Die Fehlerbehebung bei Pipelines erfolgt im Build-Schritt der Full-Stack-Pipelin
 Siehe [Zugreifen auf und Herunterladen von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
 
 Die Fehlerbehebung bei Pipelines wird für Programme, die BYOGIT verwenden (bring Your Own Git), nicht unterstützt.
-
