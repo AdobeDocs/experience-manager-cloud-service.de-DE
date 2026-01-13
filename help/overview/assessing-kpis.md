@@ -1,13 +1,13 @@
 ---
-title: Zugriff auf KPIs
-description: Erfahren Sie, wie Sie auf Ihre KPIs zugreifen und den Berichtsprozess definieren können
+title: Bewerten von KPIs
+description: Erfahren Sie, wie Sie Ihre KPIs bewerten und den Reporting-Prozess definieren
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ In einer Studie aus dem Jahr 2018 analysierte IDC den Nutzen, den mehrere große
 
 Um ebenfalls solche enormen Vorteile zu erzielen, muss Ihr Unternehmen sich klare Ziele für seine Experience Manager-Implementierung setzen. Sie brauchen KPIs, damit jeder diese Ziele im Auge behält.
 
-## Zugriff auf KPIs
+## Bewerten von KPIs
 
 Berücksichtigen Sie bei der Bewertung Ihrer KPIs Folgendes:
 
