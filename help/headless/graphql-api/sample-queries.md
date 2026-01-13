@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6f90bfebf2c9898bf8c1ad2643f8edc4ff4dda53
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 99%
@@ -374,7 +374,7 @@ Dann können Sie eine Abfrage verwenden, um Details zu `name` und `tags` aller E
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -390,7 +390,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -1662,7 +1662,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1689,7 +1689,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
@@ -1966,7 +1966,7 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Jobs | Steve | |
+| Aufträge | Steve | |
 
 #### Auszeichnung {#fragment-award}
 
