@@ -3,16 +3,16 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
+source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 77%
+source-wordcount: '1295'
+ht-degree: 78%
 
 ---
 
+
 # Verwalten von Sammlungen in [!DNL Content Hub] {#manage-collections}
 
-<!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Verwalten von Sammlungen](assets/manage-collection.png)
 
 Eine Sammlung bezieht sich auf einen Satz von Assets, die zwischen Benutzenden freigegeben werden können. Eine Sammlung kann Assets von verschiedenen Speicherorten enthalten, wobei die referenzielle Integrität dieser Assets gewahrt bleibt.
@@ -196,8 +196,3 @@ Sie können Sammlungen in Content Hub als Favoriten markieren, was das Organisie
    Als Favoriten markierte Sammlungen werden jetzt auf der Registerkarte **[!UICONTROL Meine Favoriten]** angezeigt. Alternativ können Sie die Sammlungen aus &quot;**[!UICONTROL Favoriten“]**. Klicken Sie dazu auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Aus Favoriten entfernen]**.
 
    ![Sammlung als Favorit entfernen](assets/remove-favorite-collection.png)
-
->[!NOTE]
->
->[Sammlung anheften oder &#x200B;](#pin-unpin-collection) und Sammlungen [als Favoriten markieren](#favorite-collection) sind Funktionen mit eingeschränkter Verfügbarkeit. Sie können [&#x200B; Adobe-Support-Fall &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)erstellen und senden), um ihn für Ihre Bereitstellung zu aktivieren.
-
