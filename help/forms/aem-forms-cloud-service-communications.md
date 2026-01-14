@@ -4,10 +4,10 @@ description: Automatisches Zusammenführen von Daten mit XDP- und PDF-Vorlagen o
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 100%
+source-wordcount: '725'
+ht-degree: 91%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 Forms as a Cloud Service – Mit den Kommunikations-APIs können Sie markenorientierte und personalisierte Texte erstellen, zusammenstellen und bereitstellen, wie z. B.  Geschäftskorrespondenz, Dokumente, Kontoauszüge, Briefe zur Bearbeitung von Ansprüchen, Leistungsbescheide, monatliche Rechnungen oder Begrüßungspakete. Sie können Communications APIs verwenden, um eine Vorlage (XFA oder PDF) mit Kundendaten zu kombinieren und damit Dokumente im PDF-, PS-, PCL-, DPL-, IPL- und ZPL-Format zu generieren.
 
-Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Datensätze mit XML-Daten. Sie können Kommunikations-APIs verwenden, um für jeden Eintrag ein Print-Dokument zu generieren. <!-- You can also combine the records into a single document. --> Das Ergebnis ist ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben.
+Angenommen, Sie haben eine oder mehrere Vorlagen und für jede Vorlage mehrere Einträge mit XML-Daten. Sie können Kommunikations-APIs verwenden, um für jeden Eintrag ein Print-Dokument zu generieren. <!-- You can also combine the records into a single document. --> Das Ergebnis ist ein nicht interaktives PDF-Dokument. Bei einem nicht interaktiven PDF-Dokument können Benutzer keine Daten in die Felder eingeben.
 
 Forms as a Cloud Service Communications bietet On-Demand- und Batch-APIs (asynchrone APIs) für die geplante Dokumenterstellung:
 
-* Synchrone APIs eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Datensätzen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel zum Generieren eines Dokuments, nachdem ein Anwender ein Formular ausgefüllt hat.
+* Synchrone APIs eignen sich für die Dokumenterstellung auf Anfrage, mit geringer Latenz und mit einzelnen Einträgen. Diese APIs eignen sich besser für Anwendungen auf Basis einer Benutzeraktion. Zum Beispiel zum Generieren eines Dokuments, nachdem ein Anwender ein Formular ausgefüllt hat.
 
 * Batch-APIs (asynchrone APIs) eignen sich für Anwendungsfälle für die geplante Erstellung mehrerer Dokumente mit hohem Durchsatz. Diese APIs generieren Dokumente in Stapeln. Beispielsweise werden damit monatliche Telefonrechnungen, Kreditkartenauszüge und Leistungsmitteilungen generiert.
 
@@ -43,7 +43,7 @@ Ein synchroner Vorgang ist ein Prozess, bei dem Dokumente linear generiert werde
 
 Einzelmandant-API-Vorgänge unterstützen zwei Authentifizierungstypen:
 
-* **Einfache Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort „Basic“, gefolgt von einem Leerzeichen und einer base64-kodierten Zeichenfolge „username:password“ enthält. Um beispielsweise als admin / admin zu autorisieren, sendet der Client Basic [base64-kodierte Zeichenfolge Benutzername]: [base64-kodierte Zeichenfolge Kennwort].
+* **Einfache Authentifizierung**: Die einfache Authentifizierung ist ein einfaches Authentifizierungsschema, das in das HTTP-Protokoll integriert ist. Der Client sendet HTTP-Anfragen mit dem Autorisierungs-Header, der das Wort „Basic“ enthält, gefolgt von einem Leerzeichen und einem base64-kodierten Zeichenfolge-Benutzernamen:password. Um beispielsweise als admin / admin zu autorisieren, sendet der Client Basic [base64-kodierte Zeichenfolge Benutzername]: [base64-kodierte Zeichenfolge Kennwort].
 
 * **Token-basierte Authentifizierung:** Die Token-basierte Authentifizierung verwendet ein Zugriffstoken (Bearer-Authentifizierungstoken), um Anfragen an Experience Manager as a Cloud Service zu senden. AEM Forms as a Cloud Service stellt APIs zum sicheren Abrufen des Zugriffstokens bereit. So rufen Sie das Token ab und verwenden es, um eine Anfrage zu authentifizieren:
 
@@ -57,6 +57,9 @@ Einzelmandant-API-Vorgänge unterstützen zwei Authentifizierungstypen:
   >
   >Adobe empfiehlt die Verwendung der Token-basierten Authentifizierung in einer Produktionsumgebung.
 
+  >[!IMPORTANT]
+  >
+  > Weitere Informationen finden Sie unter [OAuth-Server-zu-Server](/help/forms/oauth-api-authetication.md)Authentifizierung und [JWT-Server-zu-Server-Authentifizierung](/help/forms/jwt-api-authentication.md).
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -143,7 +146,7 @@ Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-mana
 
 >[!NOTE]
 >
->Nur Mitglieder der Gruppe „Formularbenutzer“ können auf Communications APIs zugreifen.
+> Die detaillierten Schritte zum Aufrufen von AEM Forms-Kommunikations-APIs finden Sie im Artikel [Aufrufen von AEM Forms-Kommunikations-APIs mithilfe der OAuth-Server-zu-Server-Authentifizierung](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) .
 
 >[!MORELIKETHIS]
 >
@@ -151,3 +154,4 @@ Die [Dokumentation zur API-Referenz](https://developer.adobe.com/experience-mana
 >* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms-Kommunikations-API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

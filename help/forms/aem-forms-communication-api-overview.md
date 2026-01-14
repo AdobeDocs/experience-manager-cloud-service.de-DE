@@ -3,7 +3,7 @@ title: AEM Forms Communications APIs - Übersicht
 description: Übersicht über AEM Forms Communications-APIs einschließlich Authentifizierungsmethoden und vollständiger API-Referenz
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 9%
@@ -55,7 +55,7 @@ Alle AEM Forms-APIs sind in zwei Hauptteile unterteilt:
 
 Kommunikations-APIs sind der primäre Fokus für dokumentzentrierte Vorgänge.
 
-In der folgenden Tabelle sind alle [AEM Forms Communications APIs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
+In der folgenden Tabelle sind alle [AEM Forms Communications APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
 
 #### APIs zur Dokumenterstellung
 
@@ -185,4 +185,4 @@ Erfahren Sie, wie Sie eine Umgebung für synchrone (On-Demand) und asynchrone (B
 >* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [Kommunikationsverarbeitung - On-Demand-APIs](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [Forms-Kommunikations-API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

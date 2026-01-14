@@ -3,10 +3,10 @@ title: Wie richte ich die OAuth Server-zu-Server-Authentifizierung ein?
 description: Erfahren Sie, wie Sie die OAuth-Server-zu-Server-Authentifizierung für Adobe Experience Manager Forms as a Cloud Service konfigurieren
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 4%
+source-wordcount: '833'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-bas
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
+* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
 * [Weisen Sie in der Adobe Admin Console die Rolle „Systemadministrator“ oder „Entwickler“ zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) um den Zugriff auf die Adobe Developer Console zu ermöglichen.
 
 ## Wie wird ein Zugriffs-Token mithilfe der OAuth-Server-zu-Server-Authentifizierung generiert?
@@ -288,4 +288,10 @@ Erfahren Sie, wie Sie eine Umgebung für synchrone (On-Demand) und asynchrone (B
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
+>[!MORELIKETHIS]
+>
+>* [Einführung in die Kommunikationsfunktion von AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service-Architektur für adaptive Formulare und Kommunikations-APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Kommunikationsverarbeitung – synchrone APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Kommunikationsverarbeitung – Batch-APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms-Kommunikations-API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
