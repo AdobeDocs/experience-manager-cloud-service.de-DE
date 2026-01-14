@@ -53,7 +53,7 @@ Vergewissern Sie sich, dass Sie über die erforderlichen Zugriffsrechte und Bere
 
 >[!NOTE]
 >
-> Weitere Informationen zur OAuth-Server-zu-Server-Authentifizierung mithilfe der Adobe Developer Console finden Sie [hier ](/help/forms/oauth-api-authetication.md).
+> Weitere Informationen zur OAuth-Server-zu-Server-Authentifizierung mithilfe der Adobe Developer Console finden Sie [hier &#x200B;](/help/forms/oauth-api-authetication.md).
 
 ### Entwicklungs-Tools
 
@@ -482,7 +482,7 @@ Nachdem Ihre Umgebung konfiguriert ist, können Sie mit dem Testen der AEM Forms
 
 Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Testen von APIs, ohne Code zu schreiben. Verwenden Sie die Funktion &quot;**ausprobieren** zum Aufrufen und Testen der Kommunikations-API [Generate PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) von Forms.
 
-1. Navigieren Sie zur [Forms-Kommunikations-API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)Referenz und öffnen Sie die [Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document)Kommunikations-API}-Dokumentation in Ihrem Browser.
+1. Navigieren Sie zur [Forms-Kommunikations-API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)Referenz und öffnen Sie die [Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document)Kommunikations-API&rbrace;-Dokumentation in Ihrem Browser.
 2. Erweitern Sie den Abschnitt **Dokumenterstellung** und wählen Sie [Generiert ein ausfüllbares PDF-Formular aus einer XDP- oder PDF-Vorlage, optional mit Datenzusammenführung](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Klicken Sie im rechten Bereich auf &quot;**ausprobieren**.
 
@@ -493,8 +493,8 @@ Die Swagger-Benutzeroberfläche bietet eine interaktive Oberfläche zum Testen v
    |--------------|---------------|------------|
    | bucket | AEM-Instanz | AEM-Instanzname ohne den Adobe-Domänennamen (`.adobeaemcloud.com`) Verwenden Sie beispielsweise `pXXXXX-eYYYYY` als Bucket. |
    | Sicherheit | Bearer Token | Verwenden Sie das [Zugriffstoken aus den OAuth-Server-zu-Server-Anmeldeinformationen des Adobe Developer Console-Projekts](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
-   | Hauptteil | template | Laden Sie eine XDP-Datei hoch, um das PDF-Formular zu generieren. Sie können beispielsweise &quot;[ XDP“ verwenden](/help/forms/assets/ClosingForm.xdp) um eine PDF zu generieren. |
-   | Hauptteil | data | Eine optionale XML-Datei mit den Daten, die mit der Vorlage zusammengeführt werden sollen, um ein vorausgefülltes PDF-Formular zu generieren. Sie können beispielsweise &quot;[ XML“ verwenden](/help/forms/assets/ClosingForm.xml) um eine PDF zu generieren. |
+   | Hauptteil | template | Laden Sie eine XDP-Datei hoch, um das PDF-Formular zu generieren. Sie können beispielsweise &quot;[&#x200B; XDP“ verwenden](/help/forms/assets/ClosingForm.xdp) um eine PDF zu generieren. |
+   | Hauptteil | data | Eine optionale XML-Datei mit den Daten, die mit der Vorlage zusammengeführt werden sollen, um ein vorausgefülltes PDF-Formular zu generieren. Sie können beispielsweise &quot;[&#x200B; XML“ verwenden](/help/forms/assets/ClosingForm.xml) um eine PDF zu generieren. |
    | Parameter | X-Adobe-Accept-Experimental | 1 |
 
 5. Klicken Sie auf **Senden**, um die API aufzurufen
@@ -778,7 +778,7 @@ Sie können die [generierte PDF](/help/forms/assets/create-pdf.png) öffnen, um 
 **Mögliche Ursache:**
 
 In der AEM-Umgebung wird eine Version ausgeführt, die vor der Einführung oder Unterstützung der Forms-Kommunikations-APIs veröffentlicht wurde.
-Informationen zum Aktualisieren der AEM-Umgebung finden [ im Abschnitt ](#update-aem-instance)Aktualisieren der AEM-Instanz“.
+Informationen zum Aktualisieren der AEM-Umgebung finden [&#x200B; im Abschnitt &#x200B;](#update-aem-instance)Aktualisieren der AEM-Instanz“.
 
 ## Aktualisieren der AEM-Instanz
 
