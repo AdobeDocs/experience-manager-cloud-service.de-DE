@@ -3,8 +3,8 @@ title: Suchen nach Assets in Content Hub
 description: Informationen zum Suchen nach Assets in [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
-workflow-type: ht
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -140,7 +140,7 @@ Zu den Standardfiltern gehören „Dateiformat“, „Genehmigt von“, „Datum
      </tr>
      <tr>
       <td> Colors </td>
-      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.</td>
+      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's AI capabilities.</td>
       <td>NA</td>
      </tr>  
     </tbody>
@@ -158,7 +158,7 @@ Um die Massensuche in [!DNL Content Hub] durchzuführen, gehen Sie wie folgt vor
 
 1. Sobald die Massensuche [konfiguriert](configure-content-hub-ui-options.md#bulk-search-configuration) ist, wird in den von Ihnen konfigurierten [!DNL Content Hub]-Filtereigenschaften der Umschalter für die Massensuche angezeigt. Sie können ihn nach Bedarf aktivieren oder deaktivieren.
 
-1. Fügen Sie eine Suchanfrage mit Trennzeichen hinzu, die in der Konfiguration angegeben sind. Die Suchanfrage sollte eine Zeichenfolge und mehrere kommagetrennte Werte enthalten.
+1. Fügen Sie eine Suchabfrage mit Trennzeichen hinzu, die in der Konfiguration angegeben sind. Die Suchabfrage sollte eine Zeichenfolge und mehrere kommagetrennte Werte enthalten.
 
 ![UI der Massensuche](assets/bulk-search-ui.png)
 

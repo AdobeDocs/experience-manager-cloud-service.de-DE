@@ -1,19 +1,19 @@
 ---
-title: Automatisches Tagging von Assets mit [!DNL Adobe Sensei] Smart-Service
+title: Automatisches Tagging von Assets mit [!DNL Adobe AI] Smart-Service
 description: Kennzeichnen Sie Assets mit einem Service für künstliche Intelligenz, der kontextbezogene und beschreibende Business-Tags anwendet.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
-workflow-type: ht
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 
 # Training zu Smart-Tags
 
-Mit dem Smart-Tags-Training können Sie Ihre Tags trainieren. Sie können Details angeben, wenn die entsprechenden Tags nicht vorhanden sind. Smart-Tags verwenden ein KI-Framework von [Adobe Sensei](https://business.adobe.com/de/why-adobe/experience-cloud-artificial-intelligence.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+Mit dem Smart-Tags-Training können Sie Ihre Tags trainieren. Sie können Details angeben, wenn die entsprechenden Tags nicht vorhanden sind. Es verwendet ein KI-Framework von [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
 
 ## Bestimmen der Anforderungen für ein Smart-Tags-Training {#smart-tag-training-requirement}
 
@@ -118,7 +118,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 >[!NOTE]
 >
 >Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Sie können jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell verknüpfen. Es ist möglich, dasselbe Bild mit verschiedenen Tags zu versehen, die zu verschiedenen Tag-Modellen gehören.
->>Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
+>Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
 
 ## Trainieren des Modelle für Ihre benutzerdefinierten Tags {#train-model}
 
@@ -161,15 +161,15 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 >[!NOTE]
 >
 >Kann ich ein Smart-Tags-Training per Export von einer Instanz auf eine andere übertragen?
->>Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur selben IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in mehreren IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
+>Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur selben IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in mehreren IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
 
 ## Einschränkungen und Best Practices im Zusammenhang mit Smart-Tags {#limitations-smart-tags-training}
 
 * Verwenden Sie zum Trainieren des Modells die am besten geeigneten Bilder. Das Training kann nicht rückgängig gemacht werden, das Trainings-Modell kann nicht entfernt werden. Ihre Tagging-Genauigkeit hängt von der aktuellen Schulung ab. Gehen Sie daher sorgfältig vor.
-* Es gibt keine Möglichkeit, den Smart-Tagging-Service mit bestimmten Videos zu trainieren. Er funktioniert mit den Standardeinstellungen von [!DNL Adobe Sensei].
+* Es gibt keine Möglichkeit, den Smart-Tagging-Service mit bestimmten Videos zu trainieren. Er funktioniert mit den Standardeinstellungen von [!DNL Adobe AI].
 
 
 >[!NOTE]
 >
 >Die Fähigkeit der Smart-Tags, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab.
->>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
+>Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.

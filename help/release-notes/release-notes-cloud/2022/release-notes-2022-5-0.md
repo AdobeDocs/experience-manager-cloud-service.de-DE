@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 67%
+source-wordcount: '799'
+ht-degree: 64%
 
 ---
 
@@ -51,7 +51,7 @@ Eine Zusammenfassung der in der Version 2022.5.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben zwischen 1 und 40 konfigurieren, mit denen ein Bild getaggt werden kann, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe[ um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags ](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben zwischen 1 und 40 konfigurieren, mit denen ein Bild getaggt werden kann, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -72,7 +72,7 @@ Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um
 
 <!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie einen Aufruf zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen
+* Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie eine call-to-action zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen
 
   ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
@@ -87,7 +87,7 @@ Experience Manager Assets verwendet jetzt die KI-Funktionen von Adobe Sensei, um
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 
-* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Weitere Informationen finden Sie unter [AEM as a Cloud Service &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
+* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Weitere Informationen finden Sie unter [AEM as a Cloud Service ](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation – Sicherheit {#foundation-security}
 

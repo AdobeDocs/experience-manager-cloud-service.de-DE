@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise für Adobe Experience Manager as a Cloud Service 2020.6.0
-description: '[!DNL Adobe Experience Manager] as a Cloud Service-Versionshinweise für 2020.6.0.'
+description: Versionshinweise zu as a Cloud Service für 2020.6.0 [!DNL Adobe Experience Manager].
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 95%
+source-wordcount: '1938'
+ht-degree: 94%
 
 ---
 
@@ -80,9 +80,9 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
   Weitere Details finden Sie unter [SysAdmin-Aufgaben](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#sysadmin-tasks).
 
-* Benutzende mit der SysAdmin-Rolle können jetzt direkt aus Cloud Manager per 1-Klick-Zugriff auf die Authoring-Instanz zugreifen.
+* Benutzende mit der SysAdmin-Rolle können jetzt direkt aus Cloud Manager per 1-Klick-Zugriff auf die Autoreninstanz zugreifen.
 
-  Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf die Authoring-Instanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#manage-access-aem).
+  Weitere Informationen finden Sie unter [Verwalten des Zugriffs auf die Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=de#manage-access-aem).
 
 * Das Erstellungsprotokoll enthält jetzt eine Liste der gefundenen Artefakte, einschließlich übersprungener Inhaltspakete.
 
@@ -106,14 +106,14 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 ## Neue Funktionen in Version [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**Geführtes Benutzererlebnis für optimierte Smart-Tags von Adobe Sensei**
+**Geführtes Benutzererlebnis für erweiterte Smart-Tags auf der Grundlage von Adobe AI**
 
 Mit den optimierten Smart-Tags können Unternehmen Smart-Tagging-Modelle trainieren, um neben generischen Smart-Tags auch Bilder zu erkennen, die auf kundenspezifischen Unternehmens-Tags basieren.
 
 In dieser Version gibt es ein neues, geführtes Benutzererlebnis, mit dessen Hilfe Smart-Tags-Training für Sätze kundenspezifischer Tags eingerichtet und mit Assets trainiert werden kann, die in Zukunft erkannt und mit diesen versehen werden sollen. Das Erlebnis ist jetzt intuitiver.
 Trainieren Sie erweiterte Smart-Tags für ein intuitiveres Training für Smart-Tags. Siehe [Hinzufügen von Smart-Tags zu Assets](/help/assets/smart-tags.md).
 
-**Unterstützung der Erfassung, Vorschau und Bereitstellung von 3D-Inhalten**
+**Unterstützung der Aufnahme, Vorschau und Bereitstellung von 3D-Inhalten**
 
 Organisationen können jetzt 3D-Dateien in AEM Assets speichern und verwenden. Benutzer können eine Vielzahl von 3D-Dateiformaten hochladen, nutzen und in Vorschauen anzeigen, einschließlich .obj-, .stl-, .gltf- und .glb-Dateien. Zusammen mit [!DNL Dynamic Media] können Sie 3D-Erlebnisse mit agnostischen URLs oder Viewern konfigurieren und bereitstellen. Dies umfasst einen [!DNL Dynamic Media] 3D Experience Viewer, eine Sites 3D Viewer-Komponente und die Möglichkeit, 3D-Dateien über [!DNL Dynamic Media] (AR/VR) bereitzustellen. Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
@@ -143,13 +143,13 @@ Die Elemente der Benutzeroberfläche sind für Vorlese-Progrmme benutzerfreundli
 
 * Auf der Assets-Benutzeroberfläche sind die Ansichtseinstellungen nicht über die Tastatur zugänglich. (CQ-4289038)
 
-* Für die gelben Bewertungssymbole ist das Helligkeitsverhältnis kleiner als 3:1. Das ist für Benutzer mit eingeschränktem Sehvermögen oder ohne Farbwahrnehmung nicht hilfreich. Die Bewertungssterne werden auf der Registerkarte in Asset oder in der Kartenansicht angezeigt
+* Das Leuchtdichteverhältnis für die gelb :1 Bewertungssymbole beträgt weniger als 3 %. Das ist für Benutzer mit eingeschränktem Sehvermögen oder ohne Farbwahrnehmung nicht hilfreich. Die Bewertungssterne werden auf der Registerkarte in Asset oder in der Kartenansicht angezeigt
 
 * Farbe und Kontrast einiger Elemente der Benutzeroberfläche werden aktualisiert, sodass Benutzer mit eingeschränkter Sehkraft oder Benutzer ohne Farbwahrnehmung diese Elemente der Benutzeroberfläche unterscheiden können. Beispielsweise wird die Farbe der Symbole für die Bewertung von Sternen im Abschnitt [!UICONTROL Bewertung] auf der Registerkarte [!UICONTROL Erweitert] in den [!UICONTROL Eigenschaften] eines Assets und in der Kartenansicht für einen angemessenen Kontrast geändert. (CQ-4295106)
 
 * Die Vorlese-Programme können nun die Einträge des Popup-Menüs „Liste“ des Kombinationsfelds (in verschiedenen Feldern auf verschiedenen Seiten) als Liste der Optionen lesen. (CQ-4294017)
 
-* Um einen Workflow auf ein Asset anzuwenden, können Sie über eine Tastatur auf den Richtungspfeil in der [!UICONTROL Zeitleiste] zugreifen. (CQ-4289268)
+* Um einen Workflow auf ein Asset anzuwenden, können Sie über eine Tastatur auf den Richtungspfeil in der [!UICONTROL Timeline] zugreifen. (CQ-4289268)
 
 * Benutzer können ausgewählte Tags im Feld [!UICONTROL Tags] auf der Registerkarte [!UICONTROL Standard] auf der Seite [!UICONTROL Eigenschaften] eines Assets mit dem Symbol `x` entfernen. Die Vorlese-Programme geben nun den Zweck und die Anzahl der ausgewählten Tags an (CQ-4273033).
 

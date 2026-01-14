@@ -1,14 +1,14 @@
 ---
 title: Dynamic Media-Videoprofile
-description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch smartes Zuschneiden nutzen.
+description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Sie können für Ihre Videos auch intelligenten Zuschnitt nutzen.
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3694'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -92,37 +92,37 @@ In der folgenden Tabelle finden Sie die Best Practices für die Codierung von Pr
  </tbody>
 </table>
 
-## Informationen zur Verwendung von „Smartes Zuschneiden“ in Videoprofilen {#about-smart-crop-video}
+## Informationen zur Verwendung von „Intelligenter Zuschnitt“ in Videoprofilen {#about-smart-crop-video}
 
-Smartes Zuschneiden für Videos ist eine optionale Funktion, die in Videoprofilen verfügbar ist. Dabei handelt es sich um ein Tool, mit dem Adobe Sensei den Fokus in allen adaptiven oder progressiven Videos, die Sie hochgeladen haben, automatisch erkennt und zuschneidet, unabhängig von der Größe.
+Intelligenter Zuschnitt für Videos ist eine optionale Funktion, die in Videoprofilen verfügbar ist. Dabei handelt es sich um ein Tool, mit dem Adobe AI den Fokus in allen adaptiven oder progressiven Videos, die Sie hochgeladen haben, automatisch erkennt und zuschneidet, unabhängig von der Größe.
 
-Zu den unterstützten Videoformaten für smartes Zuschneiden gehören MP4, MKV, MOV, AVI, FLV und WMV.
+Zu den unterstützten Videoformaten für intelligenten Zuschnitt gehören MP4, MKV, MOV, AVI, FLV und WMV.
 
-Für die maximal unterstützte Videodateigröße beim smarten Zuschneiden gelten folgende Kriterien:
+Für die maximal unterstützte Videodateigröße beim intelligenten Zuschnitt gelten folgende Kriterien:
 
 * Dauer von fünf Minuten.
 * 30 Frames pro Sekunde (FPS).
 * Dateigröße von 300 MB.
 
-Adobe Sensei ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise darf ein 60-FPS-Video maximal 2,5 Minuten lang sein, damit es von Adobe Sensei und smartem Zuschneiden unterstützt werden kann.
+Adobe AI ist auf 9.000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise muss ein 60-FPS-Video zweieinhalb Minuten lang sein, damit es von Adobe AI und smartem Zuschneiden unterstützt werden kann.
 
-![Smartes Zuschneiden für Video](assets/smart-crop-video.png)
+![Intelligenter Zuschnitt für Video](assets/smart-crop-video.png)
 
 >[!IMPORTANT]
 >
->Damit das smarte Zuschneiden für Videos funktioniert, müssen Sie mindestens eine Vorgabe für Videokodierung in Ihr Videoprofil einschließen.
+>Damit der intelligente Zuschnitt für Videos funktioniert, müssen Sie mindestens eine Vorgabe für Videokodierung in Ihr Videoprofil einschließen.
 
-Wenn Sie smartes Zuschneiden für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Smart Crop Ratio]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16x9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9x16 hinzufügen. Andere verfügbare Seitenverhältnisse sind 1x1, 4x3 und 4x5.
+Wenn Sie intelligenten Zuschnitt für Videos verwenden möchten, erstellen Sie ein Profil für adaptive oder progressive Videoverschlüsselung. Verwenden Sie im Rahmen Ihres Profils das Tool **[!UICONTROL Verhältnis für intelligenten Zuschnitt]**, um vordefinierte Seitenverhältnisse auszuwählen. Nachdem Sie Ihre Vorgaben für die Videokodierung definiert haben, können Sie beispielsweise eine Definition für „Mobiles Querformat“ mit einem Seitenverhältnis von 16x9 und eine Definition für „Mobiles Hochformat“ mit einem Seitenverhältnis von 9x16 hinzufügen. Andere verfügbare Seitenverhältnisse sind 1x1, 4x3 und 4x5.
 
-![Bearbeiten von Videokodierungsprofilen mit smartem Zuschneiden](assets/edit-smart-crop-video2.png)
+![Bearbeiten von Videokodierungsprofilen mit intelligentem Zuschnitt](assets/edit-smart-crop-video2.png)
 
-Sie können mit dem Schieberegler rechts neben **[!UICONTROL Smart Crop Ratio]** in der Benutzeroberfläche das smarte Zuschneiden im Videoprofil aktivieren oder deaktivieren.
+Sie können mit dem Schieberegler rechts neben **[!UICONTROL Smart Crop Ratio]** in der Benutzeroberfläche den intelligenten Zuschnitt im Videoprofil aktivieren oder deaktivieren.
 
 Nachdem Sie Ihr Videoprofil erstellt und gespeichert haben, können Sie es auf die gewünschten Ordner anwenden.
 
 Siehe [Anwenden eines Videoprofils auf bestimmte Ordner](#applying-video-profiles-to-specific-folders) oder [Globales Anwenden eines Videoprofils](#applying-a-video-profile-globally).
 
-Siehe auch [Smartes Zuschneiden für Bilder](image-profiles.md).
+Siehe auch [Intelligenter Zuschnitt für Bilder](image-profiles.md).
 
 ## Erstellen eines Videoprofils für adaptives Bit-Rate-Streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
@@ -174,8 +174,8 @@ Klicken Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzl
    * Wiederholen Sie Schritt 4 bis 10, um weitere Kodierungsvorgaben zu erstellen. (Das adaptive Video-Streaming erfordert mehrere Videovorgaben.)
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
-   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligentes Zuschneiden“ auf **[!UICONTROL Neu hinzufügen]**.
+1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, intelligenten Zuschnitt hinzuzufügen:
+   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligenten Zuschnitt“ auf **[!UICONTROL Neu hinzufügen]**.
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -226,9 +226,9 @@ Klicken Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzl
    * Wiederholen Sie Schritt 4 bis 9, um weitere Kodierungsvorgaben zu erstellen.
    * Fahren Sie mit dem nächsten Schritt fort.
 
-1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
+1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, intelligenten Zuschnitt hinzuzufügen:
 
-   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligentes Zuschneiden“ auf **[!UICONTROL Neu hinzufügen]**.
+   * Klicken Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Seitenverhältnis für intelligenten Zuschnitt“ auf **[!UICONTROL Neu hinzufügen]**.
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -339,7 +339,7 @@ Klicken Sie auf das Informationssymbol, um eine Beschreibung des adaptiven Bitr
 1. Geben Sie auf der Seite „Videokodierungsprofil“ einen neuen Namen für das Profil ein.
 1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Klicken Sie auf das Informationssymbol, um eine Beschreibung des adaptiven Bitrate-Streamings abzurufen. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
 
-   Wenn im Hybridmodus von Dynamic Media eine WebM-Videovoreinstellung Teil des Video-Profils ist, ist die Option **[!UICONTROL Für adaptives Streaming kodieren]** nicht möglich, da alle Vorgaben das MP4-Format aufweisen müssen.
+   Wenn im Hybridmodus von Dynamic Media eine WebM-Videovoreinstellung Teil des Videoprofils ist, ist die Option **[!UICONTROL Für adaptives Streaming kodieren]** nicht möglich, da alle Vorgaben das MP4-Format aufweisen müssen.
 1. Unter der Überschrift „Videokodierungsvorgaben“ können Sie die Videokodierungsvorgaben des Profils hinzufügen, bearbeiten oder löschen.
 
    Klicken Sie neben den einzelnen Optionen in den Registerkarten „Allgemein“ und „Erweitert“ auf das Informationssymbol, um die empfohlenen Einstellungen und die Beschreibung anzuzeigen.

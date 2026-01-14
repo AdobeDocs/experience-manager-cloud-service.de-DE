@@ -1,13 +1,13 @@
 ---
-title: Automatisches Tagging von Assets mit [!DNL Adobe Sensei] Smart-Service
+title: Automatisches Tagging von Assets mit [!DNL Adobe AI] Smart-Service
 description: Kennzeichnen Sie Assets mit einem Service für künstliche Intelligenz, der kontextbezogene und beschreibende Business-Tags anwendet.
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2082'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Smart-Tags sind Keywords, die nicht nur im Text vorkommen, sondern das Asset auc
 
 Zum Beispiel sind Wörter, die alphabetisch in einem Wörterbuch angeordnet sind, leichter zu finden als zufällig verstreute. Das Tagging erfüllt einen ähnlichen Zweck. Es organisiert Assets nach Unternehmenstaxonomien und stellt sicher, dass die relevantesten Assets in den Suchergebnissen angezeigt werden. So könnte beispielsweise ein Automobilhersteller Bilder von Autos mit Tags der Modellnamen versehen, sodass beim Erstellen einer Werbekampagne nur relevante Bilder angezeigt werden. Unabhängig davon, ob Sie „Läufer“ oder „Laufschuhe“ mit Tags versehen, brauchen sich die Benutzenden keine Sorgen über Tippfehler, Rechtschreibvarianten oder alternative Suchbegriffe zu machen – Smart-Tags erkennen sie alle.
 
-Im Hintergrund verwendet die Funktion das KI-Framework von [Adobe Sensei](https://business.adobe.com/de/ai/adobe-genai.html), das automatisch – und standardmäßig – Smart-Tags auf hochgeladene Assets anwendet, zusammen mit Text, der an die Unternehmenstaxonomie angepasst ist.
+Im Hintergrund verwendet die Funktion das KI-Framework von [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), das automatisch Smart-Tags auf hochgeladene Assets anwendet - standardmäßig - zusammen mit Text, der an die Unternehmenstaxonomie angepasst ist.
 
 ## Voraussetzungen und Annahmen {#smart-tags-prereqs-config}
 
@@ -27,7 +27,7 @@ Smart-Tags werden automatisch für [!DNL Adobe Experience Manager] as a [!DNL Cl
 
 ## Smart-Tags-Workflow {#smart-tags-workflow}
 
-Die auf [!DNL Adobe Sensei] basierende Funktion für das Versehen mit Smart-Tags verwendet Modelle für künstliche Intelligenz, um Inhalte zu analysieren und Tags zu den Assets hinzuzufügen. Dadurch verringert sich der Zeitaufwand für Benutzerinnen und Benutzer von DAM bei der Bereitstellung vielfältiger Erlebnisse. Die Smart-Tags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score) in den Asset-Eigenschaften angezeigt.
+Die auf [!DNL Adobe AI] basierende Funktion für das Versehen mit Smart-Tags verwendet Modelle für künstliche Intelligenz, um Inhalte zu analysieren und Tags zu den Assets hinzuzufügen. Dadurch verringert sich der Zeitaufwand für Benutzerinnen und Benutzer von DAM bei der Bereitstellung vielfältiger Erlebnisse. Die Smart-Tags werden in absteigender Reihenfolge ihres [Konfidenzwerts](#confidence-score) in den Asset-Eigenschaften angezeigt.
 
 * **Bildbasierte Assets**
 Für Bilder basieren die Smart-Tags auf bestimmten visuellen Aspekten. Bilder in vielen Formaten werden mithilfe von intelligenten Content-Diensten mit Tags versehen. Smart-Tags werden auf die [unterstützten Dateitypen](#supported-file-formats) angewendet, die Ausgabedarstellungen im JPG- und PNG-Format generieren.
@@ -35,7 +35,7 @@ Für Bilder basieren die Smart-Tags auf bestimmten visuellen Aspekten. Bilder in
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **Videobasierte Assets**
-Bei videobasierten Assets ist das Tagging in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] standardmäßig aktiviert. Ebenso wie für bild- und textbasierte Tags werden Videos automatisch mit Tags versehen, wenn Sie neue Videos hochladen oder vorhandene erneut verarbeiten. [!DNL Adobe Sensei] generiert zwei Sätze von Tags für ein Video: Ein Satz entspricht Objekten, Szenen und Attributen in diesem Video, während der andere Satz sich auf Aktionen wie Trinken, Laufen und Joggen bezieht. Siehe auch [Opt-out für Video-Smart-Tagging](#opt-out-video-smart-tagging).
+Bei videobasierten Assets ist das Tagging in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] standardmäßig aktiviert. Ebenso wie für bild- und textbasierte Tags werden Videos automatisch mit Tags versehen, wenn Sie neue Videos hochladen oder vorhandene erneut verarbeiten. [!DNL Adobe AI] generiert zwei Sätze von Tags für ein Video: Ein Satz entspricht Objekten, Szenen und Attributen in diesem Video, während der andere Satz sich auf Aktionen wie Trinken, Laufen und Joggen bezieht. Siehe auch [Opt-out für Video-Smart-Tagging](#opt-out-video-smart-tagging).
 
 * **Textbasierte Assets**
 Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert und für die Suche nach den Assets verwendet wird. Smart-Tags, die auf Keywords im Text basieren, bieten jedoch eine dedizierte, strukturierte und höher priorisierte Suchfacette. Letzteres trägt dazu bei, die Asset-Erkennung im Vergleich zu einem Suchindex zu verbessern.
@@ -74,7 +74,7 @@ Smart-Tags werden in AEM Assets mithilfe des folgenden Workflows implementiert:
 
 ## Vorbereiten eines Assets für vorkonfiguriertes Smart-Tagging
 
-Wenn Sie [Assets in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] hochladen](add-assets.md#upload-assets), werden die hochgeladenen Assets verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Eigenschaften] des Assets. Smart-Tags werden automatisch unter [!UICONTROL Smart Tags] zum Video hinzugefügt. Asset Microservices verwendet [!DNL Adobe Sensei], um diese Smart-Tags zu erstellen.
+Wenn Sie [Assets in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] hochladen](add-assets.md#upload-assets), werden die hochgeladenen Assets verarbeitet. Sobald die Verarbeitung abgeschlossen ist, finden Sie weitere Informationen auf der Registerkarte [!UICONTROL Allgemein] auf der Seite [!UICONTROL Eigenschaften] des Assets. Smart-Tags werden automatisch unter [!UICONTROL Smart Tags] zum Video hinzugefügt. Asset Microservices verwendet [!DNL Adobe AI], um diese Smart-Tags zu erstellen.
 
 ![Smart-Tags werden Videos hinzugefügt und auf der Registerkarte „Allgemein“ der Asset-Eigenschaften angezeigt](assets/smart-tags-added-to-videos.png)
 
@@ -113,7 +113,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -125,7 +125,7 @@ In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, 
 
 >[!NOTE]
 >
->Manuellen Tags wird ein Konfidenzwert von 100 % (maximale Konfidenz) zugewiesen. Wenn es also Assets mit manuellen Tags gibt, die der Suchanfrage entsprechen, werden diese vor den Smart-Tags angezeigt, die der Suchanfrage entsprechen.
+>Manuellen Tags wird ein Konfidenzwert von 100 % (maximale Konfidenz) zugewiesen. Wenn es also Assets mit manuellen Tags gibt, die der Suchabfrage entsprechen, werden diese vor den Smart-Tags angezeigt, die der Suchabfrage entsprechen.
 
 ## Moderieren von Smart-Tags {#moderate-smart-tags}
 
@@ -171,7 +171,7 @@ So moderieren Sie die Smart-Tags Ihrer digitalen Assets:
 
 ### Grundlegendes zu [!DNL Experience Manager]-Suchergebnissen mit Smart-Tags {#understand-search}
 
-Standardmäßig kombiniert [!DNL Experience Manager] die Suchbegriffe mit einer `AND`- oder `OR`-Klausel, um einen der Suchbegriffe in den angewendeten Smart-Tags zu finden. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Standardmäßig kombiniert [!DNL Experience Manager] die Suchbegriffe mit einer `AND`- oder `OR`-Klausel, um einen der Suchbegriffe in den angewendeten Smart-Tags zu finden. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchabfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit den Keywords `woman` und `running` in den Metadaten.
 
@@ -224,7 +224,7 @@ Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen
    * Nicht visuelle, abstrakte Aspekte, wie beispielsweise das Jahr oder die Saison der Produktveröffentlichung, die Stimmung oder die Emotionen, die durch ein Bild hervorgerufen werden, sowie die subjektive Konnotation eines Videos.
    * Feine visuelle Unterschiede bei Produkten wie Hemden mit und ohne Kragen oder kleinen Produkt-Logos, die in Produkte eingebettet sind.
 
-* Nur Videos mit einer Dateigröße von weniger als 300 MB werden automatisch mit Tags versehen. Der [!DNL Adobe Sensei]-Service überspringt Videodateien, die größer sind.
+* Nur Videos mit einer Dateigröße von weniger als 300 MB werden automatisch mit Tags versehen. Der [!DNL Adobe AI]-Service überspringt Videodateien, die größer sind.
 * Verwenden Sie die [!DNL Assets]-Suche (Volltextsuche), um nach Dateien mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
 * Im Vergleich zu allgemeinen Tags sind die Assets, die entsprechend einer Unternehmenstaxonomie getaggt werden, durch Tag-basierte Suchen einfacher zu identifizieren und abzurufen.
 
@@ -232,7 +232,7 @@ Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen
 
 +++**Wie verbessern Smart-Tags das Sucherlebnis eines Assets?**
 
-[!DNL Adobe] Sensei taggt die Assets automatisch, sobald Sie sie hochladen. Der automatisierte Prozess läuft am Backend so schnell, dass schon wenige Sekunden nach Abschluss des Hochladens Tags in Ihren Assets hinzugefügt werden.
+[!DNL Adobe] KI versieht die Assets automatisch mit Tags, sobald Sie sie hochladen. Der automatisierte Prozess läuft am Backend so schnell, dass schon wenige Sekunden nach Abschluss des Hochladens Tags in Ihren Assets hinzugefügt werden.
 
 +++
 

@@ -4,7 +4,7 @@ description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Se
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 90%
@@ -32,7 +32,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]für intelligentes Tagging von Videos**: Durch Anwendung von KI-Modellen zur Analyse von Videoinhalten für objektspezifische und aktionsspezifische Tags müssen DAM-Benutzer weniger Zeit mit dem Hinzufügen von Tags verbringen und haben mehr Zeit für die Nutzung der bereitgestellten, umfassenden Informationen. Im Gegenzug bieten Sie Ihren Kunden das richtige Erlebnis. Siehe [Tagging von Video-Assets mit Smart-Tags](/help/assets/smart-tags-for-videos.md).
+* **[!DNL Adobe AI]für Smart-Tagging von Videos**: Durch Anwendung von KI-Modellen zur Analyse von Videoinhalten für objektspezifische und aktionsspezifische Tags müssen DAM-Benutzer weniger Zeit mit dem Hinzufügen von Tags verbringen und haben mehr Zeit für die Nutzung der bereitgestellten, umfassenden Informationen. Im Gegenzug bieten Sie Ihren Kunden das richtige Erlebnis. Siehe [Tagging von Video-Assets mit Smart-Tags](/help/assets/smart-tags-for-videos.md).
 
 * **Brand Portal-Verbesserungen**: In [!DNL Brand Portal] sind u. a die nachfolgend aufgeführten neuen Funktionen verfügbar. Weitere Details finden Sie in den [[!DNL Brand Portal] Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=de).
 
@@ -57,7 +57,7 @@ Die folgende Version (2020.11.0) wird am 1. Dezember 2020 veröffentlicht.
 
 ### Beta-Funktionen von [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=de) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Kommunikations-APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) helfen Ihnen, eine Vorlage und XML-Daten zu kombinieren, um Dokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus und im Batch-Modus generieren.
 
 Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-Programm anzumelden.
 
@@ -67,7 +67,7 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 
 * Freigabe der CIF Venia-Referenz-Website 2020.10.2, die die neueste Version der CIF-Kernkomponenten v1.4.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2)Referenz-Site .
 
-* Version 1.4.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[&#128279;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0)}CIF-Kernkomponenten.
+* Version 1.4.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[}CIF-Kernkomponenten.](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0)
 
 ### Fehlerbehebungen {#bug-fixes-commerce}
 

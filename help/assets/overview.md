@@ -2,10 +2,10 @@
 title: Assets as a Cloud Service für Digital Asset Management in AEM
 description: Assets as a Cloud Service für Digital Asset Management in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '5078'
-ht-degree: 100%
+source-wordcount: '5075'
+ht-degree: 97%
 
 ---
 
@@ -86,9 +86,9 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
 
 >[!TAB KI-gestützte Funktionen]
 
-**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe Sensei, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
 
-**Intelligente farbbasierte Tags und Suchvorgänge**: AEM Assets verwendet KI-Funktionen von Adobe Sensei, um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
+**Intelligentes farbbasiertes Tagging und Suche**: AEM Assets verwendet Adobe-KI-Funktionen, um zwischen Farben in einem Bild zu unterscheiden und diese Eigenschaften bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
 
 **KI-generierte Metadaten**: AEM Assets verwendet KI zum automatischen Generieren von Metadaten, einschließlich Titel, Beschreibung und Keywords. Diese KI-generierten Felder verbessern die Genauigkeit von Metadaten und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung des manuellen Taggings, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher.
 
@@ -143,7 +143,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
 * *Bilder, die mindestens 200 px hoch und 100 px breit sind und Strand und klaren Himmel zeigen* und
 * *Ich benötige Bilder von blauem Himmel mit einer Höhe von 1500 und 2500 Pixel, die im letzten Monat erstellt wurden und genehmigt und noch nicht abgelaufen sind*.
 
-**Generieren von Assets mit Adobe Firefly in AEM**: Mit AEM Assets können Sie ein Asset mithilfe von Adobe Firefly in Echtzeit generieren, wenn Ihre Suchanfrage keine Ergebnisse zurückgibt. Anschließend können Sie in AEM Assets das generierte Bild aus der AEM Assets-Benutzeroberfläche in das AEM Assets-Repository hochladen.
+**Generieren von Assets mit Adobe Firefly in AEM**: Mit AEM Assets können Sie ein Asset mithilfe von Adobe Firefly in Echtzeit generieren, wenn Ihre Suchabfrage keine Ergebnisse zurückgibt. Anschließend können Sie in AEM Assets das generierte Bild aus der AEM Assets-Benutzeroberfläche in das AEM Assets-Repository hochladen.
 
 **Integration mit Adobe Express**: Dank der nativen Integration von AEM Assets mit Adobe Express können Sie über die Adobe Express-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen. Sie können in Express auch die künstliche Intelligenz von Adobe Firefly verwenden, um Bilder mit einfachen Text-Prompts zu generieren und sie auf der Express-Arbeitsfläche zu platzieren. Sie können dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern.
 
@@ -193,7 +193,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
 
 **Intelligente Bildbearbeitung**: Die intelligente Bildbearbeitung sorgt für eine noch bessere Leistung bei der Bereitstellung von Bild-Assets, indem sie das Format und die Dateigröße eines Bildes je nach Fähigkeiten des Kunden-Browsers optimiert. Sie funktioniert mit Ihren vorhandenen Bildvorgaben und verwendet Intelligenz bei der Bereitstellung. Durch diese Intelligenz wird die Größe der Bilddateien je nach Browser und Geschwindigkeit der Netzwerkverbindung weiter reduziert. 
 
-**Intelligenter Zuschnitt**: Eine KI-Funktion in Adobe Sensei, die den Fokus in einem Bild oder Video automatisch erkennt und es so zuschneidet, dass er erhalten bleibt. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
+**Smartes Zuschneiden**: Eine Adobe-KI-Funktion, mit der der Fokus automatisch in einem Bild oder Video erkannt und zugeschnitten wird, um ihn beizubehalten. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
 
 **KI-generierte Videountertitel**: Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Anwendererlebnis verbessern, indem korrekte Untertitel bereitgestellt werden. Untertitel werden aus dem Originalaudio, zusätzlichen Audiospuren oder zusätzlichen Untertiteln generiert, die auf der Seite mit den Videoeigenschaften in der Registerkarte „`Captions and Audio`“ bereitgestellt werden. Mehr als 60 Sprachen werden unterstützt. Die Untertitel können dabei vor der Veröffentlichung des Videos überprüft und in einer Vorschau angezeigt werden.
 <table>
@@ -270,11 +270,11 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Best Practices für die Metadatenverwaltung" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Best Practices für die Metadatenverwaltung</strong>
       </a>
    </div>
@@ -297,7 +297,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
 </td>
 </table>
 
-**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe Sensei, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
 
 **Asset-Suche**: Sobald Sie die richtigen Metadaten eingerichtet haben, können Sie mit AEM Assets anhand verschiedener Operatoren, Platzhalter, erweiterter Abfragen und benutzerdefinierter Filter suchen.
 
@@ -704,7 +704,7 @@ Dynamic Media bietet die folgenden Hauptfunktionen:
 
 * **Adaptive Videosets**: Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert sind. Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System hochladen. Dynamic Media skaliert bzw. transkodiert dieses Video automatisch in mehrere Videos. Zum Zeitpunkt der Bereitstellung wird dann auf intelligente Weise bestimmt, welcher Videobildschirm, welche Qualität und welches Format verwendet werden sollen, und die Daten werden entweder an das Smartphone, das Tablet oder den Desktop-Computer übertragen.
 
-* **Intelligenter Zuschnitt**: Eine KI-Funktion in Adobe Sensei, die den Fokus in einem Bild oder Video automatisch erkennt und es so zuschneidet, dass er erhalten bleibt. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
+* **Smartes Zuschneiden**: Eine Adobe-KI-Funktion, mit der der Fokus in einem Bild oder Video automatisch erkannt und zugeschnitten wird, um ihn beizubehalten. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
 
 * **Dynamic Media-Vorlagen**: Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mit Vorlagen in Dynamic Media, einem WYSIWYG-Vorlageneditor. Veröffentlichen Sie Ihre Dynamic Media-Vorlage und verwenden Sie sie in nachgelagerten Anwendungen. Eine Dynamic Media-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie Dynamic Media-URLs, um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
 

@@ -4,8 +4,8 @@ description: Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as 
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 967923c621774bcbda65bac9428eaaf18a99a9cc
-workflow-type: ht
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
 source-wordcount: '3177'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Hinzufügen digitaler Assets zu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] akzeptiert viele Arten von digitalen Assets aus vielen Quellen. Es speichert die Binärdateien und die erstellten Ausgabedarstellungen, kann die Asset-Verarbeitung mithilfe einer Vielzahl von Workflows durchführen und [!DNL Adobe Sensei]-Services durchführen und ermöglicht die Verteilung über viele Kanäle auf vielen Oberflächen.
+[!DNL Adobe Experience Manager Assets] akzeptiert viele Arten von digitalen Assets aus vielen Quellen. Es speichert die Binärdateien und die erstellten Ausgabedarstellungen, kann die Asset-Verarbeitung mithilfe einer Vielzahl von Workflows durchführen und [!DNL Adobe AI]-Services durchführen und ermöglicht die Verteilung über viele Kanäle auf vielen Oberflächen.
 
 [!DNL Adobe Experience Manager] In wird der binäre Inhalt der hochgeladenen digitalen Dateien mit Rich-Metadaten, Smart-Tags, Ausgabedarstellungen und anderen DAM (Digital Asset Management)-Services erweitert. Sie können verschiedene Arten von Dateien (z. B. Bilder, Dokumente und Raw-Dateien) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager Assets] hochladen.
 
@@ -148,7 +148,7 @@ Verwenden Sie einen der folgenden Ansätze, um eine größere Anzahl von Dateien
 
 Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich eine Video-Anleitung zur Konfiguration und Aufnahme an.
 
->[!VIDEO](https://video.tv.adobe.com/v/341385/?quality=12&learn=on&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in Experience Manager aus einem Datenspeicher:
 
@@ -221,7 +221,7 @@ Um die Verbindung mit der Datenquelle zu überprüfen, wählen Sie die Konfigura
 
 ### Aufrufen eines Testlaufs für den Massenimportauftrag {#invoke-test-run-bulk-import}
 
-Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Probelauf]**, um einen Testlauf für den Massenimportvorgang aufzurufen. Experience Manager zeigt die folgenden Details zum Massenimportvorgang an:
+Wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Probelauf]**, um einen Testlauf für den Massenimportauftrag aufzurufen. Experience Manager zeigt die folgenden Details zum Massenimportauftrag an:
 
 ![Probelaufergebnis](assets/dry-assets-result.png)
 
@@ -319,7 +319,7 @@ Gehen Sie wie folgt vor, um einen einmaligen oder einen wiederkehrenden Massenim
 1. Wählen Sie die Konfiguration aus und wählen Sie **[!UICONTROL Zeitplan]** aus der Symbolleiste aus.
 1. Legen Sie eine einmalige Aufnahme fest oder erstellen Sie einen stündlichen, täglichen oder wöchentlichen Zeitplan. Klicken Sie auf **[!UICONTROL Senden]**.
 
-   ![Massenaufnahme-Vorgang planen](assets/bulk-ingest-schedule1.png)
+   ![Massenaufnahme-Auftrag planen](assets/bulk-ingest-schedule1.png)
 
 
 #### Anzeigen des Zielordners der Elemente {#view-assets-target-folder}
@@ -328,23 +328,23 @@ Um den Zielspeicherort für Assets anzuzeigen, in den die Assets importiert werd
 
 #### Ausführen des Tools für den Massenimport {#run-bulk-import-tool}
 
-Nach dem [Konfigurieren des Tools für den Massenimport](#configure-bulk-ingestor-tool) und dem optionalen [Verwalten der Konfiguration des Tools für den Massenimport](#manage-bulk-import-configuration) können Sie den Konfigurationsvorgang ausführen, um die Massenaufnahme von Elementen zu starten.
+Nach dem [Konfigurieren des Tools für den Massenimport](#configure-bulk-ingestor-tool) und dem optionalen [Verwalten der Konfiguration des Tools für den Massenimport](#manage-bulk-import-configuration) können Sie den Konfigurationsauftrag ausführen, um die Massenaufnahme von Elementen zu starten.
 
 Um den Massenimport zu starten, navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Massenimport]**, wählen Sie die [Massenimportkonfiguration](#configure-bulk-ingestor-tool) aus und klicken Sie anschließend auf **[!UICONTROL Ausführen]**. Klicken zum Bestätigen erneut auf **[!UICONTROL Ausführen]**.
 
-Experience Manager aktualisiert den Status des Vorgangs auf **Verarbeitung** und dann nach erfolgreichem Abschluss des Vorgangs auf **Erfolgreich**. Um die importierten Assets in Experience Manager anzuzeigen, klicken Sie auf **Assets anzeigen**.
+Experience Manager aktualisiert den Status des Auftrags auf **Verarbeitung** und dann nach erfolgreichem Abschluss des Auftrags auf **Erfolgreich**. Um die importierten Assets in Experience Manager anzuzeigen, klicken Sie auf **Assets anzeigen**.
 
-Wenn der Vorgang ausgeführt wird, können Sie auch die Konfiguration auswählen und auf **Anhalten** klicken, um die Massenaufnahme anzuhalten. Klicken Sie erneut auf **Ausführen**, um den Prozess fortzusetzen. Sie können auch auf **Probelauf** klicken, um die Details der Elemente zu sehen, die noch nicht importiert wurden.
+Wenn der Auftrag ausgeführt wird, können Sie auch die Konfiguration auswählen und auf **Anhalten** klicken, um die Massenaufnahme anzuhalten. Klicken Sie erneut auf **Ausführen**, um den Prozess fortzusetzen. Sie können auch auf **Probelauf** klicken, um die Details der Elemente zu sehen, die noch nicht importiert wurden.
 
-#### Verwalten von Vorgängen nach Ausführung {#manage-jobs-after-execution}
+#### Verwalten von Aufträgen nach Ausführung {#manage-jobs-after-execution}
 
-Mit Experience Manager können Sie den Verlauf der Massenimportiervorgänge anzeigen. Der Vorgangsverlauf umfasst den Status des Vorgangs, die Person, die den Vorgang erstellt hat, Protokolle sowie weitere Details wie Startdatum und -zeit, Erstellungsdatum und -zeit sowie Enddatum und -zeit.
+Mit Experience Manager können Sie den Verlauf der Massenimportieraufträge anzeigen. Der Auftragsverlauf umfasst den Status des Auftrags, die Person, die den Auftrag erstellt hat, Protokolle sowie weitere Details wie Startdatum und -zeit, Erstellungsdatum und -zeit sowie Enddatum und -zeit.
 
-Um auf den Vorgangsverlauf für eine Konfiguration zuzugreifen, wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Vorgangsverlauf]**. Wählen Sie einen Vorgang aus und klicken Sie auf **Öffnen**.
+Um auf den Auftragsverlauf für eine Konfiguration zuzugreifen, wählen Sie die Konfiguration aus und klicken Sie auf **[!UICONTROL Auftragsverlauf]**. Wählen Sie einen Auftrag aus und klicken Sie auf **Öffnen**.
 
-![Planen eines Massenaufnahmevorgangs](assets/job-history-bulk-import.png)
+![Planen eines Massenaufnahmeauftrags](assets/job-history-bulk-import.png)
 
-Experience Manager zeigt den Auftragsverlauf an. Auf der Seite mit dem Verlauf des Massenimportvorgangs können Sie auch auf **Löschen** klicken, um diesen Vorgang aus der Massenimportkonfiguration zu löschen.
+Experience Manager zeigt den Auftragsverlauf an. Auf der Seite mit dem Verlauf des Massenimportauftrags können Sie auch auf **Löschen** klicken, um diesen Auftrag aus der Massenimportkonfiguration zu löschen.
 
 
 ## Hochladen von Assets mit Desktop-Clients {#upload-assets-desktop-clients}
@@ -356,7 +356,7 @@ Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt [!DNL Experience Man
 
 ## Verarbeiten von Assets beim Hochladen {#process-when-uploaded}
 
-Um zusätzliche Verarbeitungsschritte für die hochgeladenen Assets durchzuführen, können Sie Verarbeitungsprofile auf die Upload-Ordner anwenden. Die Profile sind auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners in [!DNL Assets] verfügbar. Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Profil für die Verarbeitung auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin im DAM speichern.
+Um zusätzliche Verarbeitungsschritte für die hochgeladenen Assets durchzuführen, können Sie Verarbeitungsprofile auf die Upload-Ordner anwenden. Die Profile sind auf der Seite **[!UICONTROL Eigenschaften]** eines Ordners in [!DNL Assets] verfügbar. Ein digitales Asset ohne Erweiterung oder mit einer falschen Erweiterung wird nicht wie gewünscht verarbeitet. Beim Hochladen solcher Assets passiert beispielsweise nichts oder es kann ein falsches Verarbeitungsprofil auf das Asset angewendet werden. Benutzer können die Binärdateien weiterhin im DAM speichern.
 
 ![Eigenschaften eines Asset-Ordners mit Optionen zum Hinzufügen eines Verarbeitungsprofils](assets/assets-folder-properties.png)
 
@@ -367,7 +367,7 @@ Die folgenden Registerkarten sind verfügbar:
 
 Wenn [!DNL Dynamic Media] in Ihrer Bereitstellung aktiviert ist, stehen außerdem die folgenden Registerkarten zur Verfügung:
 
-* Mit [[!DNL Dynamic Media] Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
+* Mit [[!DNL Dynamic Media] Bildprofilen](dynamic-media/image-profiles.md) können Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Intelligenter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden.
 * Mit [[!DNL Dynamic Media] Videoprofilen](dynamic-media/video-profiles.md) können Sie bestimmte Videokodierungsprofile (Auflösung, Format, Parameter) anwenden.
 
 >[!NOTE]

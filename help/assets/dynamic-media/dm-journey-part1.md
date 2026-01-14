@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3615'
-ht-degree: 100%
+source-wordcount: '3614'
+ht-degree: 99%
 
 ---
 
@@ -201,7 +201,7 @@ Im Folgenden finden Sie weitere Anwendungsbeispiele.
 
 | **Problem** | **Dynamic Media-Lösung** |
 |---|---|
-| Es ist zeitaufwendig und arbeitsintensiv, Bilder oder Videos manuell zu zeichnen, zu messen und zuzuschneiden, um den Fokuspunkt hervorzuheben und auf allen Bildschirmgrößen und Geräten angemessen anzuzeigen. | Intelligenter Zuschnitt in Dynamic Media nutzt eine Adobe Sensei AI-Funktion, um den Fokus in einem Bild oder Video automatisch zu erkennen und zuzuschneiden, um ihn so zu erhalten. |
+| Es ist zeitaufwendig und arbeitsintensiv, Bilder oder Videos manuell zu zeichnen, zu messen und zuzuschneiden, um den Fokuspunkt hervorzuheben und auf allen Bildschirmgrößen und Geräten angemessen anzuzeigen. | Verwendet smartes Zuschneiden in Dynamic Media, eine Adobe-KI-Funktion, um den Fokus in einem Bild oder Video automatisch zu erkennen und zuzuschneiden, um ihn zu erhalten. |
 | Verlorene Zeit, die besser für die Erstellung wirkungsvoller Erlebnisse genutzt werden könnte. | Erfasst den gewünschten Blickpunkt unabhängig von der Bildschirmgröße. |
 | Assets zur einmaligen Verwendung, die für jedes Erlebnis und jedes Gerät erstellt werden. | Vermeidet mühsame manuelle Aufgaben und liefert hochwertige, schnell ladende Bilder und Videos, die auf jedem Gerät oder Bildschirm gut aussehen. |
 
@@ -285,7 +285,7 @@ _Dynamic Media Help topics_
 _Dynamic Media-Tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=de)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 

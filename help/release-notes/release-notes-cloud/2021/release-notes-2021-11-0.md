@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2021.11.0 von [!DNL Adobe Experience 
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 96%
+source-wordcount: '1059'
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht Dezember 2021](https://video.tv.ado
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Der Smart-Zuschnitt von Dynamic Media-Bildern und Farbfelder basieren jetzt auf den neuesten Sensei-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus bleiben manuelle Bearbeitungen bei der erneuten Verarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
+* Das smarte Zuschneiden von Dynamic Media-Bildern und die Farbfelder basieren jetzt auf den neuesten Adobe-KI-Services, die verbesserte Zuschnitte und Farbfelder generieren. Außerdem wurde eine Verbesserung eingeführt, um unterschiedliche zugeschnittene Inhalte für dasselbe Seitenverhältnis, aber für verschiedene Auflösungen zu erzeugen. Darüber hinaus bleiben manuelle Bearbeitungen bei der erneuten Verarbeitung erhalten, wenn sich die Breite und Höhe des Bildprofils nicht ändern.
 
 ### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#assets-prerelease-features}
 
@@ -115,7 +115,7 @@ Die nächste Version wurde am 09. Dezember 2021 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-nov}
 
-* Bestimmte unorthodoxe Build-Konfigurationen führten dazu, dass unnötige Dateien im Maven-Artefakt-Cache der Pipeline gespeichert wurden, was beim Starten und Beenden des Build-Containers zu überflüssigem Netzwerk-I/O führte.
+* Bestimmte unorthodoxe Build-Konfigurationen führten dazu, dass unnötige Dateien im Maven-Artefakt-Cache der Pipeline gespeichert wurden, was beim Starten und Stoppen des Build-Containers zu überflüssigem Netzwerk-I/O führte.
 
 * Die Pipeline-PATCH-API schlägt fehl, wenn keine Bereitstellungsphase vorhanden ist.
 

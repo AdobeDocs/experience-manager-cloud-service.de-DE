@@ -1,26 +1,26 @@
 ---
 title: Intelligente Bildbearbeitung
-description: 'Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe von Adobe Sensei-KI die individuellen anzeigebezogenen Anwendermerkmale anwendet, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
+description: 'Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe der KI von Adobe die individuellen anzeigebezogenen Benutzermerkmale anwendet, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.'
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 100%
+source-wordcount: '3218'
+ht-degree: 97%
 
 ---
 
 # Intelligente Bildbearbeitung {#smart-imaging}
 
-Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe von Adobe Sensei-KI die individuellen anzeigebezogenen Anwendermerkmale anwendet, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.
+Erfahren Sie, wie die intelligente Bildbearbeitung mithilfe der KI von Adobe die individuellen anzeigebezogenen Benutzermerkmale anwendet, um automatisch die richtigen Bilder für ein optimiertes individuelles Erlebnis zu präsentieren. Das Ergebnis: mehr Leistung und Interaktion.
 
 
 ## Über die intelligente Bildbearbeitung {#about-smart-imaging}
 
-Die intelligente Bildbearbeitung wendet KI-Funktionen von Adobe Sensei an und arbeitet mit vorhandenen „Bildvorgaben“. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
+Die intelligente Bildbearbeitung wendet KI-Funktionen von Adobe an und arbeitet mit vorhandenen „Bildvorgaben“. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
 
 Jetzt erhalten Sie auch eine bessere Google Core Web Vital-Bewertung für LCP (Largest Contentful Paint) mit verbesserter intelligenter Bildbearbeitung, die jetzt sowohl AVIF- als auch WebP-Unterstützung bietet.
 
@@ -129,7 +129,7 @@ Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren a
 
 * Das Google SEO-Ranking für Web-Seiten mit der neuesten intelligenten Bildbearbeitung wurde verbessert.
 * Stellt optimierte Inhalte sofort (zur Laufzeit) bereit.
-* Verwendet Adobe Sensei-Technologie zur Konvertierung gemäß der in der Bildanfrage angegebenen Qualität (`qlt`).
+* Verwendet Adobe-KI-Technologie zur Konvertierung gemäß der in der Bildanforderung angegebenen Qualität (`qlt`).
 * TTL (Time To Live)-unabhängig. Zuvor war eine TTL von mindestens 12 Stunden erforderlich, damit die intelligente Bildbearbeitung funktioniert.
 * Zuvor wurden sowohl das Originalbild als auch abgeleitete Bilder zwischengespeichert. Ein zweistufiger Prozess war erforderlich, um den Cache ungültig zu machen. In der neusten Version der intelligenten Bildbearbeitung werden nur die Ableitungen zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
 * Kundinnen und Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. 

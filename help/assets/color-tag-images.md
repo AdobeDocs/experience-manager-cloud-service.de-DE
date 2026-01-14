@@ -4,10 +4,10 @@ description: Mit Adobe Experience Manager Assets können Sie zwischen Farben in 
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 100%
+source-wordcount: '1243'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![Farb-Tagging-Banner](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets verwendet KI-Funktionen von Adobe Sensei, um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
+Adobe Experience Manager (AEM) Assets verwendet KI-Funktionen von Adobe, um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
 
 Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen eins und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren. Experience Manager Assets wendet die Tags auf Grundlage der Farbabdeckung eines Bildes an. Sie können auch das Anzeigeformat für ein Farb-Tag konfigurieren.
 

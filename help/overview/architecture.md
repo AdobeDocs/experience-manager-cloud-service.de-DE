@@ -4,10 +4,10 @@ description: Einführung in die Architektur von Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '2711'
-ht-degree: 100%
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
+source-wordcount: '2710'
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ Es gibt weitere benachbarte Dienste:
    * Stellt die zugrunde liegende Infrastruktur dar, die für die Ausführung verwendet wird:
       * Funktionstests,
       * UI-Tests: beispielsweise basierend auf Selenium- oder Cypress-Skripten,
-      * Erlebnisprüfungstests: beispielsweise Lighthouse-Bewertungen,
+      * Erlebnis-Audit-Tests: beispielsweise Lighthouse-Bewertungen,
 
      als Teil einer Bereitstellungs-Pipeline in eine AEM-Umgebung oder als Teil einer GitHub-Abrufanfrage an ein Edge-Bereitstellungs-Code-Repository.
 * Der Datendienst:
@@ -141,7 +141,7 @@ Es gibt weitere benachbarte Dienste:
 * Der betriebliche Telemetrie-Dienst:
    * Ist für die Erfassung von Schlüsselmetriken aus einem Kundenerlebnis (z. B. Seitenansichten, Web-Lebenszyklen, Konversionsereignisse) und für die Beantwortung verknüpfter Abfragen zuständig (z. B. Top-Seitenansichten für eine bestimmte Domain in den letzten 7 Tagen).
 * Der Asset Compute-Service:
-   * ist für die Verarbeitung hochgeladener Bilder, Videos und Dokumente zuständig, z. B. PDF- und Adobe Photoshop-Dateien. Die Verarbeitung kann Adobe Sensei verwenden, um Bild- und Videometadaten (wie beschreibende Tags oder Primärfarbtöne) zu extrahieren und dann Ausgabedarstellungen (wie unterschiedliche Größen oder Formate) mit Zugriff auf APIs wie die Adobe Photoshop- und Adobe Lightroom-APIs zu generieren.
+   * ist für die Verarbeitung hochgeladener Bilder, Videos und Dokumente zuständig, z. B. PDF- und Adobe Photoshop-Dateien. Bei der Verarbeitung können Sie mit der KI von Adobe Bild- und Videometadaten (z. B. beschreibende Tags oder Primärfarbtöne) extrahieren und dann Ausgabedarstellungen (z. B. verschiedene Größen oder Formate) generieren, wobei Sie auf APIs wie die Adobe Photoshop- und Adobe Lightroom-APIs zugreifen können.
 * Der Identity Management-Dienst (IMS):
    * Ist die zentrale Stelle, die für die Verwaltung und Authentifizierung von Benutzenden und Benutzergruppen für eine bestimmte Adobe Experience Cloud-Anwendung zuständig ist (z. B. die Cloud Manager- oder AEM-Autoren-Ebene).
    * Der Zugriff erfolgt über die Adobe Admin Console.

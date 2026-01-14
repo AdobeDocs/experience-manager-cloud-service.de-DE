@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience M
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -104,7 +104,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 * Die Anzeigeeinstellungen wurden verbessert, sodass Benutzer eine Standardansicht und einen standardmäßigen Sortierparameter wählen können.
 * Die Funktion für den Linkshare-Download verwendet asynchrone Downloads, die die Download-Geschwindigkeit erhöhen.
 * Benutzer können die Ordner anhand von Eigenschaftsprädikaten suchen und filtern.
-* [!DNL Experience Manager Assets] bettet den von [!DNL Adobe Document Cloud] unterstützten PDF-Viewer ein, um eine Vorschau der unterstützten Dokumente anzuzeigen. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
+* [!DNL Experience Manager Assets] bettet den von [!DNL Adobe Document Cloud] unterstützten PDF-Viewer ein, um die unterstützten Dokumente in der Vorschau anzuzeigen. Mit dieser Funktion können Benutzer eine Vorschau von PDF- und anderen mehrseitigen Dateien ohne komplexe Verarbeitung anzeigen. Dadurch wird die Funktionsparität mit [!DNL Experience Manager] 6.5 verbessert.
 
 ### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed-assets}
 
@@ -128,7 +128,7 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
 * Verbesserte Geschwindigkeit und Genauigkeit bei der automatischen Erkennung logischer Abschnitte in den Quell-PDF-Formularen und Konvertieren dieser Abschnitte in entsprechende Bedienfelder adaptiver Formulare.
 * Eine Aktion zum Verschieben von PDF- oder XDP-Dateien von einem Ordner in einen anderen wurde hinzugefügt.
 
-### Beta-Funktion von [!DNL Forms] {#what-is-new-forms-prerelease}
+### Beta-Funktion von [!DNL Forms]  {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Mithilfe von Kommunikations-APIs können Sie XDP-Vorlagen und XML-Daten kombinieren, um Druckdokumente in verschiedenen Formaten zu erzeugen. Mit dem Service können Sie Dokumente im synchronen Modus erzeugen. Dabei können Sie mit den APIs Anwendungen mit folgenden Funktionen erstellen:
    * Erzeugen fertiger Formulardokumente durch Füllen von Vorlagendateien mit XML-Daten
@@ -172,7 +172,7 @@ Das Veröffentlichungsdatum für AEM Screens as a Cloud Service war 24. Juni 202
 * Neue CIF-Produkt- und Kategoriereferenzdatentypen für Inhaltsfragmente (inkl. Benutzeroberflächenunterstützung für Produkt-/Kategorieauswahl)
 * Neue Commerce-Inhaltsfragment-Kernkomponente
 * Im AEM-Backend unterstützte E-Commerce-Volltext-Suche
-* Commerce-Kernkomponenten unterstützen die Adobe Commerce Sensei Recs-Datenerfassung
+* Commerce-Kernkomponenten unterstützen die Datenerfassung in Adobe Commerce AI Recs .
 * Verbesserte SEO-freundliche URLs für Kategorieseiten
 * Unterstützung benutzerdefinierter HTTP-Header pro Website/Konfiguration
 
@@ -194,7 +194,7 @@ Das Content Transfer Tool 1.5.4 wurde am 28. Juni 2021 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-ctt-latest}
 
-* Beim Beenden einer Aufnahme in der Autoreninstanz hatte die Benutzeroberfläche eine zuvor abgeschlossene Aufnahme in der Veröffentlichungsinstanz für `STOPPED` von `FINISHED` aus überschrieben. Dieses Problem wurde behoben.
+* Beim Stoppen einer Aufnahme in der Autoreninstanz hatte die Benutzeroberfläche eine zuvor abgeschlossene Aufnahme in der Veröffentlichungsinstanz für `STOPPED` von `FINISHED` aus überschrieben. Dieses Problem wurde behoben.
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 

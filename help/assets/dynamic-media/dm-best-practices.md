@@ -9,10 +9,10 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '4049'
-ht-degree: 100%
+source-wordcount: '4048'
+ht-degree: 97%
 
 ---
 
@@ -111,7 +111,7 @@ Verwenden Sie für eine effiziente Asset-Organisation, die Workflows optimiert, 
 Eine effektive Organisation von Assets besteht darin, sie in Ordner zu kategorisieren, ähnlich wie bei der Organisation der Dateien auf einem Computer. Die ordnungsgemäße Benennung, Strukturierung von Unterordnern und Dateiverwaltung innerhalb dieser Ordner sind für eine effiziente Verarbeitung der Assets von entscheidender Bedeutung. Durch die Implementierung systematischer Benennungskonventionen und Metadatenpraktiken wird die Nützlichkeit Ihres digitalen Asset-Repositorys maximiert.
 Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets in Ordnern](/help/assets/organize-assets.md#organize-using-folders).
 * **Organisieren von Assets mithilfe von Tags:**
-Das Tagging von Assets verbessert die Suchbarkeit, Sammlungserstellung und das Ranking von Suchen. Die KI von Adobe Sensei verwendet einen selbstlernenden Algorithmus für präzises Tagging, das den schnellen Abruf von Assets ermöglicht. Außerdem erkennt Adobe Sensei relevante Tags, einschließlich benutzerdefinierter Tags, und weist sie Assets zu, wodurch das Asset-Management mit automatischem, beschreibendem Tagging vereinfacht wird.
+Das Tagging von Assets verbessert die Suchbarkeit, Sammlungserstellung und das Ranking von Suchen. Adobe AI verwendet einen selbstlernenden Algorithmus für präzises Tagging, der einen schnellen Abruf von Assets ermöglicht. Adobe AI erkennt außerdem relevante Tags und weist sie zu, einschließlich benutzerdefinierter Tags, um die Asset-Verwaltung mit automatischem, beschreibendem Tagging zu vereinfachen.
 Möchten Sie mehr erfahren? Navigieren Sie zu [Organisieren von Assets mit Tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organisieren von Assets als Sammlungen:**
 Dynamic Media- und Experience Manager-Assets ermöglichen Benutzenden die effiziente Erstellung, Bearbeitung und Freigabe von Asset-Sammlungen. Sie können verschiedene Sammlungstypen einrichten, einschließlich statischen Listen und dynamischen, suchbasierten Kompilierungen. Diese Sammlungstypen können über verschiedene Standorte hinweg mit anpassbaren Zugriffs- und Bearbeitungsrechten freigegeben werden.
@@ -150,9 +150,9 @@ Möchten Sie es einmal ausprobieren? Navigieren Sie zu [Grundlagen der Erstellu
 
 **Business-Case:** *Sicherstellen, dass der Zielpunkt meiner Bilder oder Videos geräteübergreifend im Fokus bleibt.*
 
-„Intelligenter Zuschnitt“ ist eine Funktion in Dynamic Media, die Adobe Sensei, Adobes KI und ein Framework für maschinelles Lernen verwendet, um das Zuschneiden von Bildern und Videos zu automatisieren. Sie erkennt das Hauptmotiv oder den Zielpunkt eines Bildes oder Videos intelligent und fokussiert darauf. Mit dieser intelligenten Funktion wird sichergestellt, dass der Fokus auf Desktop-Computern und Mobilgeräten mit unterschiedlichen Bildschirmgrößen unverändert bleibt.
+Smartes Zuschneiden ist eine Funktion in Dynamic Media, die Adobe AI, Adobes KI und das maschinelle Lernen-Framework verwendet, um das Zuschneiden von Bildern und Videos zu automatisieren. Sie erkennt das Hauptmotiv oder den Zielpunkt eines Bildes oder Videos intelligent und fokussiert darauf. Mit dieser intelligenten Funktion wird sichergestellt, dass der Fokus auf Desktop-Computern und Mobilgeräten mit unterschiedlichen Bildschirmgrößen unverändert bleibt.
 
-Es empfiehlt sich, mit dem „intelligenten Zuschnitt“ ein Bildprofil zu erstellen. Im Profil können Sie verschiedene Bildschirmgrößen definieren und Adobe Sensei den Rest erledigen lassen. So stellen Sie sicher, dass Ihre Bilder und Videos immer für das Gerät der Betrachtenden optimiert sind.
+Es empfiehlt sich, mit dem „intelligenten Zuschnitt“ ein Bildprofil zu erstellen. Im Profil können Sie verschiedene Bildschirmgrößen definieren und Adobe AI den Rest erledigen lassen, um sicherzustellen, dass Ihre Bilder und Videos immer für das Gerät des Viewers optimiert sind.
 
 Möchten Sie mehr erfahren? Sehen Sie sich [Verwenden des intelligenten Zuschnitts mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 Minuten, 35 Sekunden) und [Verwenden des intelligenten Zuschnitts von Dynamic Media für Videos](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 Minuten, 22 Sekunden) an.
 

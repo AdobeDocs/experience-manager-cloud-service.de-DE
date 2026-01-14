@@ -3,10 +3,10 @@ title: Hochladen Ihrer markenkonformen Assets in [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markenkonformen Assets in Content Hub hochladen
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
-workflow-type: ht
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Zur weiteren Verbesserung der Asset-Suche bietet Content Hub folgende Möglichke
 
 * Generieren Sie bei erfolgreichen Uploads automatisch weitere Eigenschaften für jedes Asset, z. B. Dateigröße, Format, Auflösung und einige andere Eigenschaften.
 
-* Verwenden Sie künstliche Intelligenz, die von [Adobe Sensei](https://www.adobe.com/de/sensei.html) bereitgestellt wird, um automatisch relevante Tags zu allen hochgeladenen Assets hinzuzufügen. Diese Tags, auch Smart-Tags genannt, erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können.
+* Verwenden Sie die von [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) bereitgestellte künstliche Intelligenz, um automatisch relevante Tags zu allen hochgeladenen Assets hinzuzufügen. Diese Tags, auch Smart-Tags genannt, erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können.
 
 Stellen Sie sicher, dass Sie nur [markenkonforme Assets in Content Hub](/help/assets/approve-assets.md) hochladen.
 

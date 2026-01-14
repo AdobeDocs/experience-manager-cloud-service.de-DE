@@ -4,7 +4,7 @@ description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Se
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 93%
@@ -35,7 +35,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Service zur Verarbeitung von Assets. Administratoren können [!DNL Experience Manager] konfigurieren, um anwenderdefinierte Programme aufzurufen, die mit dem [!DNL Asset Compute Service] erstellt wurden. Entwickler können den Service verwenden, um spezielle anwenderdefinierte Programme zu erstellen, die sich für komplexe Anwendungsfälle eignen. Dieser Webservice kann Miniaturen für verschiedene Dateitypen und hochwertige Bilddarstellungen aus Adobe-Dateiformaten erstellen, Videos kodieren (künftig verfügbare Funktion), Metadaten und Volltext zur vorläufigen Indizierung extrahieren und Assets alle verfügbaren [!DNL Sensei]-Services durchlaufen lassen. Siehe [Verwenden von Asset-Microservices und Verarbeitungsprofilen](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] ist ein skalierbarer und erweiterbarer Service zur Verarbeitung von Assets. Administratoren können [!DNL Experience Manager] konfigurieren, um anwenderdefinierte Programme aufzurufen, die mit dem [!DNL Asset Compute Service] erstellt wurden. Entwickler können den Service verwenden, um spezielle anwenderdefinierte Programme zu erstellen, die sich für komplexe Anwendungsfälle eignen. Dieser Webservice kann Miniaturen für verschiedene Dateitypen und hochwertige Bilddarstellungen aus Adobe-Dateiformaten erstellen, Videos kodieren (künftig verfügbare Funktion), Metadaten und Volltext zur vorläufigen Indizierung extrahieren und Assets alle verfügbaren [!DNL AI]-Services durchlaufen lassen. Siehe [Verwenden von Asset-Microservices und Verarbeitungsprofilen](/help/assets/asset-microservices-configure-and-use.md).
 
 * Die ursprüngliche Konfiguration von [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service wurde verbessert, um sie stabiler zu machen. Sie informiert den Administratoren nun über den Fortschritt der Prozesse.
 
@@ -57,7 +57,7 @@ Die Version 2020.7.0 von [!DNL Experience Manager] as a Cloud Service wurde am 
 
 AEM Commerce ist jetzt in Cloud Service verfügbar.
 
-Weitere [&#x200B; finden Sie unter „Erste Schritte mit AEM Commerce as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de)&quot;.
+Weitere [ finden Sie unter „Erste Schritte mit AEM Commerce as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=de)&quot;.
 
 ## Kernkomponenten {#core-components}
 
@@ -127,9 +127,9 @@ Weitere Details finden Sie unter „Verwenden von Java 11-Unterstützung“.
 
 * [Eine statische, dedizierte Ausgangs-IP-Adresse](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) kann für ausgehenden Traffic zugewiesen werden, der in Java-Code programmiert ist, was bei einigen Integrationen nützlich sein kann.
 
-* Die Benutzeroberfläche von AEM Analytics Cloud Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort von AEM Analytics Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM Cloud Services verschoben.
+* Die Benutzeroberfläche von AEM Analytics-Cloud-Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort von AEM Analytics Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM Cloud Services verschoben.
 
-* Die Benutzeroberfläche von AEM Target Cloud Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort des AEM Target Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM Cloud Services verschoben.
+* Die Benutzeroberfläche von AEM Target-Cloud-Service wurde von der klassischen Benutzeroberfläche in die neue AEM-Benutzeroberfläche übertragen. Außerdem wurde der Speicherort des AEM Target Cloud Service im AEM-Repository von `/etc` in `/conf` in Abstimmung mit anderen AEM Cloud Services verschoben.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
@@ -139,7 +139,7 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und die Updates
 
 * Frühere Versionen des CRA konnten nicht unter Adobe Experience Manager (AEM) 6.1 ausgeführt werden. Es wurde expliziter Support hinzugefügt, um Benutzer für die Administratorgruppe zuzulassen.
 
-  Weitere [&#x200B; finden Sie unter „Installieren von CRA &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) AEM 6.1“.
+  Weitere [ finden Sie unter „Installieren von CRA ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=de#installing-on-aem61) AEM 6.1“.
 
 * Der im Zusammenfassungsbericht angezeigte Ablaufzeitstempel war nicht korrekt.
 

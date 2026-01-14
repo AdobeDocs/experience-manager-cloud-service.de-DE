@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -79,9 +79,9 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Das Hinzufügen von Tags zu Assets erleichtert deren Abruf bei einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Verbessern des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe Sensei zur Asset-Erkennung.
+Das Hinzufügen von Tags zu Assets erleichtert deren Abruf während einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Erhöhen des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen der Adobe-KI zur Asset-Erkennung.
 
-[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe Sensei, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
+[!DNL Adobe Experience Manager Assets] verwendet einen selbstlernenden Algorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset mit nur wenigen Klicks finden können. Smart-Tagging nutzt Adobe-KI, künstliche Intelligenz und ein Framework für maschinelles Lernen, das trainiert werden kann, um standardmäßige und geschäftsspezifische Tags zu erkennen und auf Bilder anzuwenden. Smart-Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden.
 
 Im Folgenden werden die Schritte zum Hinzufügen von Tags zu einem Asset beschrieben:
 
