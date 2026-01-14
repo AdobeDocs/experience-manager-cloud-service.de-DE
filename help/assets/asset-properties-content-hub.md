@@ -111,7 +111,7 @@ Einige Asset-Eigenschaften, die in [!DNL Content Hub] angezeigt werden, werden a
 
 * **Smart-Tags:** [!DNL The Content Hub] verwendet die Smart Content Services von Adobe AI, um Assets mithilfe des Erkennungsalgorithmus auf der Tag-basierten Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf Assets an.
 
-* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
+* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
 
 * Upload-Datum
 
