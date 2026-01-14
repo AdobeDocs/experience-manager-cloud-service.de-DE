@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr ](/help/implementing/dispatcher/disp-overview.md#validation-debug) diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, damit Sie sie nutzen können.
+* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug) diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, damit Sie sie nutzen können.
 * Die Benutzeroberfläche für die Strukturreplikation unter der Registerkarte „Verteilen“ des Replikationsagenten sollte als veraltet betrachtet werden und wurde nach dem 30. September 2021 entfernt. [Erfahren Sie mehr](/help/operations/replication.md#tree-activation) über alternative Replikationsstrategien.
 * Das Bundle `org.apache.sling.datasource-1.0.4.jar` für die Unterstützung der Sling-Datenquelle wurde entfernt, da es veraltete Funktionen aufweist und von Kunden nicht verwendet wird.
 
@@ -85,7 +85,7 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* Sie können jetzt den Service für die automatische Formularkonvertierung verwenden, um [PDF forms in französischer, deutscher und spanischer Sprache) in ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=de?#language-specific-meta-model) Formulare zu konvertieren.
+* Sie können jetzt den Service für die automatische Formularkonvertierung verwenden, um [PDF forms in französischer, deutscher und spanischer Sprache) in &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=de?#language-specific-meta-model) Formulare zu konvertieren.
 * Es wurde ein separates Bedienfeld zum Vorlagen-Editor hinzugefügt, um Fehler im Zusammenhang mit Komponenten von adaptiven Formularen anzuzeigen. Dies hilft, alle Fehler in adaptiven Formularen an einem Ort zu konsolidieren und die Auflösungszeit zu verkürzen.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#beta-features-forms}
@@ -195,4 +195,4 @@ Cloud Acceleration Manager ist eine Cloud-basierte Anwendung, die IT-Teams währ
 
 >[!NOTE]
 >
-> Sehen Sie sich dieses Demovideo zu [Cloud Acceleration Manager ](https://video.tv.adobe.com/v/335547).
+> Sehen Sie sich dieses Demovideo zu [Cloud Acceleration Manager &#x200B;](https://video.tv.adobe.com/v/335547).
