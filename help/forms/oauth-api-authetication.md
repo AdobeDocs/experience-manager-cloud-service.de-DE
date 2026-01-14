@@ -19,7 +19,7 @@ Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-bas
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
+* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
 * [Weisen Sie in der Adobe Admin Console die Rolle „Systemadministrator“ oder „Entwickler“ zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) um den Zugriff auf die Adobe Developer Console zu ermöglichen.
 
 ## Wie wird ein Zugriffs-Token mithilfe der OAuth-Server-zu-Server-Authentifizierung generiert?
