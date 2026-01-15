@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 98%
+source-wordcount: '1604'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | `name` | `string` | Eigenschaft [oder Pfad](#nesting), in der bzw. dem die Daten beibehalten werden sollen | Ja |
 | `label` | `FieldLabel` | Titel des Felds | Ja |
 | `description` | `FieldDescription` | Beschreibung des Felds | Nein |
-| `value` | `FieldValue` | Dies ist ein Standardwert, der als Platzhalter dient. Dieser Wert bestimmt keine Inhaltsaktualisierungen. Dies ist nur eine Darstellung in der Benutzeroberfläche. | Nein |
+| `value` | `FieldValue` | Dies ist ein Standardwert, der als Platzhalter dient. Wenn kein Wert festgelegt ist, behält der universelle Editor alles bei, was in der Modelldefinition als `value` definiert ist. Dadurch wird sichergestellt, dass das, was Sie sehen, mit dem übereinstimmt, was im Backend persistiert wird. | Nein |
 | `valueType` | `ValueType` | Standardvalidierung, kann `string`, `string[]`, `number`, `date`, `boolean` sein. | Nein |
 | `required` | `boolean` | Ist das Feld erforderlich? | Nein |
 | `readOnly` | `boolean` | Ist das Feld schreibgeschützt? | Nein |

@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2025.12.12
-description: Dies sind die Versionshinweise für die Version 2025.12.11 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.01.15
+description: Dies sind die Versionshinweise für die Version 2026.01.15 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 21%
+source-wordcount: '204'
+ht-degree: 34%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2025.12.12 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.01.15 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 12. Dezember 2025 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 15. Januar 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,11 +26,10 @@ Dies sind die Versionshinweise für die Version vom 12. Dezember 2025 des univer
 
 ## Neue Funktionen {#what-is-new}
 
-* Vorhandenen Tabellen im (Rich-Text[Editor wurde Unterstützung hinzugefügt](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* Die Tabulatortaste wurde für die Verschachtelung von Listen im [Rich-Text-Editor“ aktiviert](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* Die Entwickleranmeldefunktion kann jetzt über die [Meta-Tag-`aem-dev-login`&quot; deaktiviert werden](/help/implementing/universal-editor/customizing.md#meta-tags)
-* Ein Rechtsklick auf den Überlagerungsabschnitt zeigt nun ein [Kontextmenü“](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
-* [Eingerückter Einzug](/help/implementing/universal-editor/configure-rte.md#indentation) wird jetzt im [Rich-Text-Editor“ unterstützt](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* Unterstützung für das Festlegen und Beibehalten [Standardwerte von Modellfeldern wurden hinzugefügt.](/help/implementing/universal-editor/field-types.md)
+   * Wenn kein Wert festgelegt ist, behält der universelle Editor alles bei, was in der Modelldefinition als `value` definiert ist.
+   * Dadurch wird sichergestellt, dass das, was Sie sehen, mit dem übereinstimmt, was im Backend persistiert wird.
+   * Dies ist eine grundlegende Veränderung.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -40,13 +39,6 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die Eigenschaftenleiste wird jetzt synchronisiert, wenn sich mehrere Felder kontextbezogen ändern.
-* Die Inhaltsfragmentauswahl wird jetzt wie erwartet auf AEM 6.5-Instanzen geöffnet.
-* Mit der Esc-Taste werden jetzt Dialogfelder im Rich-Text-Editor geschlossen.
-* Die Aktion **Komponente entfernen** ist jetzt nur verfügbar, wenn eine Komponente ausgewählt ist.
-* Der richtige (alte oder neue) Inhaltsfragment-Editor wird jetzt basierend auf der verwendeten Instanz geöffnet (wenn der Host-Name das AEM as a Cloud Service-Muster ist, verwenden Sie den neuen Editor, andernfalls verwenden Sie den alten Editor).
-* Die Filtervalidierung wird der doppelten Aktion hinzugefügt.
-* Lange Titel werden jetzt in der Eigenschaftenleiste abgeschnitten.
-* Multi-Site-Manager-Arrays mit mehr als 10 Werten werden jetzt ordnungsgemäß verarbeitet.
-* Konfliktfehler beim Erstellen mehrerer Komponenten mit demselben Namen werden jetzt ordnungsgemäß verarbeitet.
-* Multi-Site-Manager-Array-Handhabung mit Werten >10 wurde hinzugefügt.
+* Die Datenbereinigung wird jetzt beim Inhaltswechsel korrekt ausgeführt.
+* Mehrere Vorgänge in der Aktualisierung von Erweiterungen werden jetzt unterstützt.
+* Die Schaltfläche „Schließen“ für die Entwickleranmeldung verhält sich jetzt erwartungsgemäß.
