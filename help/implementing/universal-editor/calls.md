@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die verschiedenen Arten von Aufrufen, die d
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Für die Entwickelnden kann es jedoch nützlich sein, diese Aufrufe zu verstehen
 * Die **Payload** des Aufrufs enthält Details zu dem, was vom Editor aktualisiert wird, einschließlich der Angabe, was zu aktualisieren ist und wie es zu aktualisieren ist.
 * Die **Antwort** enthält Details darüber, was genau vom Editor-Dienst aktualisiert wurde. Dadurch soll die Aktualisierung des Inhalts im Editor erleichtert werden. In bestimmten Fällen, wie bei einem `move`-Aufruf, muss die gesamte Seite aktualisiert werden.
 
-Nachdem ein Aufruf erfolgreich abgeschlossen wurde, werden Ereignisse mit der Anfrage- und Antwort-Payload ausgelöst, die für Ihre eigene App angepasst werden kann. Weitere Informationen finden Sie unter [Ereignisse des universellen Editors](/help/implementing/universal-editor/events.md).
+Nachdem ein Aufruf erfolgreich abgeschlossen wurde, werden Ereignisse mit der Anfrage- und Antwort-Payload ausgelöst, die für Ihre eigene App angepasst werden kann. Weitere Informationen finden Sie unter [Ereignisse des universellen Editors](/help/implementing/universal-editor/events-universal-editor.md).
 
 Im Folgenden finden Sie eine Liste der Arten von Aufrufen, die der universelle Editor an Ihre App richtet, sowie Beispiele für Payloads und Antworten.
 
@@ -384,5 +384,5 @@ Der universelle Editor durchläuft den Inhalt und generiert eine Liste von Verwe
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Ereignisse des universellen Editors](/help/implementing/universal-editor/events.md)
+* [Ereignisse des universellen Editors](/help/implementing/universal-editor/events-universal-editor.md)
 

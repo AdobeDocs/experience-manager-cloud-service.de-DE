@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dd057b7a5ce9e45cbebd12529e6d199321b24750
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '6932'
 ht-degree: 96%
@@ -1261,7 +1261,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1472,7 +1472,7 @@ ht-degree: 96%
          + [Komponentendefinition](/help/implementing/universal-editor/component-definition.md)
          + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
          + [Publishing](/help/implementing/universal-editor/publishing.md)
-         + [Ereignisse](/help/implementing/universal-editor/events.md)
+         + [Ereignisse](/help/implementing/universal-editor/events-universal-editor.md)
          + [Filtern von Komponenten](/help/implementing/universal-editor/filtering.md)
          + [Konfigurieren des RTE](/help/implementing/universal-editor/configure-rte.md)
          + [Anpassung](/help/implementing/universal-editor/customizing.md)

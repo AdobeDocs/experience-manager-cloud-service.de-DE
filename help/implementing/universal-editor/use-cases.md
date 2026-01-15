@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die wichtigsten Anwendungsfälle des univer
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
@@ -79,7 +79,7 @@ Damit eine Seite oder Anwendung mit dem universellen Editor bearbeitet werden ka
 
 * [Attribute und Typen](/help/implementing/universal-editor/attributes-types.md): Damit eine Anwendung mit dem universellen Editor bearbeitet werden kann, muss sie ordnungsgemäß instrumentiert sein. Dazu gehören auch die korrekten Metadaten, damit der Editor den Inhalt der Anwendung bearbeiten kann.
 * [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md): Sobald die Metadaten für die Bearbeitung einer Komponente vorhanden sind, definieren Sie im Bedienfeld „Eigenschaften“ des Editors, welche Felder und Komponententypen bearbeitet werden können.
-* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events.md): Sie können Ihre App weiter anpassen, indem Sie die Bearbeitungserfahrung in Ihrer App dadurch verbessern, dass sie Ereignisse nutzt, die der universelle Editor für Inhalte oder Benutzeroberflächen ausgibt.
+* [Universelle Editor-Ereignisse](/help/implementing/universal-editor/events-universal-editor.md): Sie können Ihre App weiter anpassen, indem Sie die Bearbeitungserfahrung in Ihrer App dadurch verbessern, dass sie Ereignisse nutzt, die der universelle Editor für Inhalte oder Benutzeroberflächen ausgibt.
 
 Der universelle Editor kann auch an Ihre Projektanforderungen angepasst werden.
 

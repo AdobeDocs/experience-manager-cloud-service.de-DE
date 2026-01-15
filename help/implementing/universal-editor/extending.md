@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern de
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 100%
@@ -60,4 +60,4 @@ Neben der UI-Erweiterbarkeit bietet der universelle Editor viele weitere flexibl
 
 * **[Blöcke](https://www.aem.live/developer/block-collection)**: Im einfachen JSON-Format können Projekte die für die Inhaltserstellung verfügbaren Blöcke und Funktionen anpassen.
 * **[Benutzerdefinierte Benutzeroberfläche](#extending-ui)**: Erweiterungen können die erforderliche Benutzeroberfläche in Seiten-Panels oder modalen Dialogfeldern anzeigen.
-* **[Ereignisse](/help/implementing/universal-editor/events.md)**: Erweiterungen empfangen Ereignisse zu den von Autorinnen oder Autoren auf der Seite verwendeten Aktionen und Auswahlen und reagieren entsprechend.
+* **[Ereignisse](/help/implementing/universal-editor/events-universal-editor.md)**: Erweiterungen empfangen Ereignisse zu den von Autorinnen oder Autoren auf der Seite verwendeten Aktionen und Auswahlen und reagieren entsprechend.
