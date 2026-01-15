@@ -29,7 +29,7 @@ Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-Senden Sie eine E-Mail an [0}aem-devagent@adobe.com&quot; mit Feedback oder Anfragen zum Zugriff auf diesen Agenten.](mailto:aem-devagent@adobe.com)
+Senden Sie eine E-Mail an [0&rbrace;aem-devagent@adobe.com&quot; mit Feedback oder Anfragen zum Zugriff auf diesen Agenten.](mailto:aem-devagent@adobe.com)
 
 ## Zugriff auf den Entwicklungsagenten über Cloud Manager {#how-to-access-the-agent}
 
