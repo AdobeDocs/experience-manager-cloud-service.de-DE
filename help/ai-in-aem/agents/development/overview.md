@@ -3,9 +3,9 @@ title: Übersicht über den Entwicklungsagenten
 description: Erfahren Sie, wie der Entwicklungsagent in AEM fehlgeschlagene Pipelines in Cloud Manager analysiert und Protokolle erstellt, um Code-Fehlerbehebungen vorzuschlagen und das Debugging zu beschleunigen.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Der Entwicklungs-Agent unterstützt AEM-Entwickler und -Administratoren dabei, C
 
 Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten helfen, indem er Fehlerbehebungen vorschlägt und so Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen spart. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478016?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+Senden Sie eine E-Mail an [0}aem-devagent@adobe.com&quot; mit Feedback oder Anfragen zum Zugriff auf diesen Agenten.](mailto:aem-devagent@adobe.com)
 
 ## Zugriff auf den Entwicklungsagenten über Cloud Manager {#how-to-access-the-agent}
 
@@ -81,13 +83,13 @@ Für die Fehlerbehebung bei der Pipeline des Entwicklungsagenten ist entweder di
 
 | Prompt | Ergebnis |
 | --- | --- |
+| *Fehlerbehebung bei fehlgeschlagener Pipeline* | Führt eine Analyse der Gründe für den Pipeline-Fehler durch. Wenn nicht klar ist, auf welche Pipeline verwiesen wird, werden dem Benutzer zusätzliche Fragen gestellt. |
 | *Liste meiner fehlgeschlagenen Pipelines für das Hauptprogramm des Programms.* | Auch wenn die Ergebnisse variieren können, gibt diese Eingabeaufforderung eine Tabelle mit fehlgeschlagenen Pipelines mit einem Folgenachweis zurück, der auf eine bestimmte zu analysierende Pipeline verweist. |
-| *Analysieren Sie meine fehlgeschlagene Pipeline mit dem Namen „Entwicklungs-Pipeline“* | Diese Eingabeaufforderung führt zu einer Analyse der fehlgeschlagenen Pipeline mit Vorschlägen zur Korrektur. |
+| *Analysieren Sie meine fehlgeschlagene Pipeline mit dem Namen „Entwicklungs-Pipeline“* | Diese Eingabeaufforderung führt zu einer Analyse der fehlgeschlagenen Pipeline mit Vorschlägen zur Korrektur. Bei mehreren Fehlern werden dem Benutzer zusätzliche Fragen gestellt. |
+| *Fehlerbehebung bei der Pipeline-Ausführung 1234567* | Durch Angabe einer exakten Pipeline-Ausführungs-ID wird eine Pipeline-Analyse durchgeführt. |
 
 ## Nicht im Umfang enthaltene Funktionen {#out-of-scope-features}
 
 Die Fehlerbehebung bei Pipelines erfolgt im Build-Schritt der Full-Stack-Pipeline. Debuggen Sie bei anderen Pipeline-Typen und -Schritten Fehler, indem Sie die Protokolle herunterladen und überprüfen.
 
 Siehe [Zugreifen auf und Herunterladen von Protokollen](/help/implementing/cloud-manager/manage-logs.md).
-
-Die Fehlerbehebung bei Pipelines wird für Programme, die BYOGIT verwenden (bring Your Own Git), nicht unterstützt.
