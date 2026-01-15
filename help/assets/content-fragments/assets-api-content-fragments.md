@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: ht
-source-wordcount: '1857'
-ht-degree: 100%
+source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
+workflow-type: tm+mt
+source-wordcount: '1856'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente im Assets-HTTP-
 
 >[!NOTE]
 >
->Unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
+>Weitere Informationen finden Sie unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md). Dort erhalten Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der beteiligten Konzepte.
 >
 >Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
 
@@ -87,6 +87,7 @@ Sie verwendet den `/api/assets`-Endpunkt und benötigt für den Zugriff auf das 
 Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreifen, fordern Sie `/api/assets/wknd/en/adventures/cycling-tuscany.json` an.
 
 >[!NOTE]
+>
 >Der Zugriff über:
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
@@ -171,7 +172,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >Weitere Informationen finden Sie unter:
 >
 >* [Erklärung von CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de)
->* [Video: Entwickeln für CORS mit AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=de)
+>* [Video - Entwicklung für CORS mit AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=de)
 >
 
 In Umgebungen mit bestimmten Authentifizierungsanforderungen wird OAuth empfohlen.
@@ -329,7 +330,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
   Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
 
    * Übergeordneter Ordner ist nicht vorhanden (wenn ein Inhaltsfragment per `POST` erstellt wurde)
-   * Es wird kein Inhaltsfragmentmodell bereitgestellt (cq:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
+   * Es wird kein Inhaltsfragmentmodell bereitgestellt (CQ:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
