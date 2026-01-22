@@ -3,9 +3,9 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: 31429cfce9f38a3f492f3852fcfa88a38f9de7dd
+source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 21. Januar 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 29. Januar 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauumgebung wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,13 +27,15 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige neue Funktionen {#what-is-new}
 
-* Textblöcke in der Inhaltsstruktur zeigen kurze Textvorschauen.
-* Nur-Text-Felder unterstützen mehrzeilige Textbereiche.
-* Erweiterungen können die Popup-API verwenden, um produktinterne Benachrichtigungen anzuzeigen.
+* Die Methode „Komponente entfernen“ wurde `editorActions` bereitgestellt.
+* Die Methode „Komponente kopieren“ wurde `editorActions` bereitgestellt.
+* Definitionen waren erweiterbar.
+* Die Methode „Komponente verschieben“ wurde `editorActions` bereitgestellt.
+* Die Methode „Komponente hinzufügen“ wurde `editorActions` bereitgestellt.
+* Blockdetails für V2 implementiert.
 
 ## Anstehende Verbesserungen {#other-improvements}
 
-* Führende Leerzeichen im Rich-Text-Editor werden ordnungsgemäß bereinigt, sodass Layout- und Formatierungsfehler vermieden werden.
-* Durch erneutes korrektes Drücken der Eingabetaste wird die Inline-Bearbeitung erneut Trigger, wodurch das erwartete Bearbeitungsverhalten wiederhergestellt wird.
-* Mehrere Probleme mit der Barrierefreiheit des Browsers wurden behoben.
-* Die Formatierung der Tastaturbefehle wurde vereinheitlicht und die Symbole in der Befehlspalette angepasst, um ein klareres, konsistenteres Erlebnis zu gewährleisten.
+* Die `content`-Erweiterbarkeit wurde in umbenannt, um dem API-Schema zu `details`.
+* Das Verhalten des Kontextmenüs wurde verbessert.
+* Es wurde ein Fehler beim Klicken auf das Badge eines bearbeitbaren Elements behoben, sodass das Kontextmenü ordnungsgemäß geöffnet wird.

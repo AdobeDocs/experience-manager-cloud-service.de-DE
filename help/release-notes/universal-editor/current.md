@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.01.15
-description: Dies sind die Versionshinweise für die Version 2026.01.15 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.01.22
+description: Dies sind die Versionshinweise für die Version 2026.01.22 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 34%
+source-wordcount: '243'
+ht-degree: 29%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.01.15 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.01.22 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 15. Januar 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 22. Januar 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,10 +26,11 @@ Dies sind die Versionshinweise für die Version vom 15. Januar 2026 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* Unterstützung für das Festlegen und Beibehalten [Standardwerte von Modellfeldern wurden hinzugefügt.](/help/implementing/universal-editor/field-types.md)
-   * Wenn kein Wert festgelegt ist, behält der universelle Editor alles bei, was in der Modelldefinition als `value` definiert ist.
-   * Dadurch wird sichergestellt, dass das, was Sie sehen, mit dem übereinstimmt, was im Backend persistiert wird.
-   * Dies ist eine grundlegende Veränderung.
+* Textblöcke wurden in der Inhaltsstruktur [ Beschriftungen (als kurze Textvorschau) ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* TextArea wird jetzt für Textfelder unterstützt.
+* Der config-Endpunkt wird jetzt für Benutzeroberflächenfunktionen verwendet.
+* TextArea aus Inhaltsfragmenten wird jetzt unterstützt.
+* Die Popup-API ist jetzt für Erweiterungen verfügbar.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -39,6 +40,12 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die Datenbereinigung wird jetzt beim Inhaltswechsel korrekt ausgeführt.
-* Mehrere Vorgänge in der Aktualisierung von Erweiterungen werden jetzt unterstützt.
-* Die Schaltfläche „Schließen“ für die Entwickleranmeldung verhält sich jetzt erwartungsgemäß.
+* Ein Problem mit dem Arbeitsflächen-Layout beim Navigieren über die Adressleiste wurde behoben.
+* Führende Leerzeichen wurden im RTE bereinigt.
+* Die Inline-Bearbeitung wurde bei der Eingabe wiederhergestellt.
+* Die Beschriftung wurde zurückgesetzt, sodass nicht der gesamte Inhalt angezeigt wird.
+* Probleme mit der Barrierefreiheit des Browsers wurden behoben.
+* `selectEditables([])` wird jetzt verwendet, um über die Erweiterbarkeit die Auswahl aller Komponenten aufzuheben.
+* Die Metadatentabelle wird jetzt am richtigen Speicherort erstellt.
+* Es wurde ein Problem behoben, bei dem kopierte Inhaltsfragment-Ressourcen auf `/data/undefined` verwiesen.
+

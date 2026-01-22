@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
+source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
 workflow-type: tm+mt
-source-wordcount: '2625'
-ht-degree: 90%
+source-wordcount: '2657'
+ht-degree: 86%
 
 ---
 
@@ -25,11 +25,11 @@ Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautor
 
 >[!NOTE]
 >
->Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie bereits damit vertraut sind, wie Sie auf den universellen Editor zugreifen und darin navigieren. Ist dies nicht der Fall, lesen Sie [Zugreifen auf den und Navigieren im universellen Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
+>Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie bereits damit vertraut sind, wie Sie auf den universellen Editor zugreifen und darin navigieren. Andernfalls finden Sie weitere Informationen unter [Zugreifen auf und Navigieren im universellen Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
 >[!TIP]
 >
->Eine detailliertere Einführung in den universellen Editor finden Sie im Dokument [Einführung in den universellen Editor](/help/implementing/universal-editor/introduction.md).
+>Eine detailliertere Einführung in den universellen Editor finden Sie unter [Einführung in den universellen Editor.](/help/implementing/universal-editor/introduction.md)
 
 ## Bearbeiten von Inhalten {#editing-content}
 
@@ -39,9 +39,13 @@ Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie mit dem Mauszeig
 
 >[!TIP]
 >
->Durch Tippen oder Klicken auf einen Inhalt wird dieser standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+>Durch Tippen oder Klicken auf einen Inhalt wird dieser standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 Je nach ausgewähltem Inhalt können Ihnen unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung stehen. Außerdem sehen Sie möglicherweise zusätzliche Informationen und Optionen für den Inhalt im [Bedienfeld „Eigenschaften“](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+
+Jedes Stück bearbeitbarer Inhalte wird mit dem Inhaltstyp gekennzeichnet. Je nach Inhalt können Sie auf dieses Abzeichen klicken, um schnell auf die Bearbeitungen zuzugreifen.
+
+![Bearbeitbare Badge-Optionen](assets/editable-badge.png)
 
 ### Bearbeiten von einfachem Text {#edit-plain-text}
 
@@ -51,7 +55,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden ihre Details im [Panel „Eigenschaften“](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) angezeigt. Sie können den Text auch im Bedienfeld bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details im Bedienfeld [Eigenschaften“ angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch im Bedienfeld bearbeiten.
 
 ![Bearbeiten von Text im Bedienfeld „Eigenschaften“](assets/ue-editing-text-component-rail.png)
 
@@ -106,7 +110,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 
 Vorhandene Tabellen können mit dem RTE bearbeitet werden, neue Tabellen können jedoch nicht erstellt werden.
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -123,7 +127,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) bearbeiten.
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -251,7 +255,7 @@ Beim Bearbeiten im Kontext bietet der Editor kontextbezogene Optionen mit einem 
 
 Wenn Sie mit der Bearbeitung von Inhalten fertig sind, möchten Sie häufig durch diese navigieren, um zu sehen, wie sie im Inhalt anderer Seiten aussehen. Im [Vorschaumodus](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) können Sie auf Links klicken, um genau wie eine Person, die Ihre Inhalte liest, durch diese zu navigieren. Der Inhalt wird im Editor so wiedergegeben, wie er veröffentlicht werden würde.
 
-Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die gleiche Reaktion erfolgt, wie es bei einer Person, die den Inhalt liest, der Fall wäre. Wenn Sie den Inhalt zum Bearbeiten auswählen möchten, verlassen Sie in den [Vorschaumodus](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die gleiche Reaktion erfolgt, wie es bei einer Person, die den Inhalt liest, der Fall wäre. Wenn Sie den Inhalt zum Bearbeiten auswählen möchten, wechseln Sie in den [Vorschaumodus.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## Bearbeiten der Komponentenvererbung {#inheritance}
 
@@ -261,7 +265,7 @@ Mit dem universellen Editor können Sie die Vererbung für Inhalte abbrechen, in
 
 Wenn die **AEM-Erweiterung für Multi-Site-Management (MSM)** für Ihr Programm aktiviert ist, verfügen Sie über [zusätzliche Symbolleistenoptionen](#inheritance-extension), um den Vererbungsstatus einer einzelnen Komponente im universellen Editor anzuzeigen und zu ändern.
 
-Weitere Informationen zur Funktionsweise der Vererbung mit dem universellen Editor finden Sie im Dokument [Vererbung von Inhalten im universellen Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+Weitere Informationen zur Funktionsweise der Vererbung mit dem universellen Editor finden Sie unter [Inhaltsvererbung im universellen Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 ## Optionale Symbolleistenfunktionen {#toolbar-options}
 
