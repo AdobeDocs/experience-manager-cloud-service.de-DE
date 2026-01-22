@@ -26,7 +26,7 @@ Dies sind die Versionshinweise für die Version vom 22. Januar 2026 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* Textblöcke wurden in der Inhaltsstruktur [ Beschriftungen (als kurze Textvorschau) ](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* Textblöcke wurden in der Inhaltsstruktur [&#x200B; Beschriftungen (als kurze Textvorschau) &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * TextArea wird jetzt für Textfelder unterstützt.
 * Der config-Endpunkt wird jetzt für Benutzeroberflächenfunktionen verwendet.
 * TextArea aus Inhaltsfragmenten wird jetzt unterstützt.
