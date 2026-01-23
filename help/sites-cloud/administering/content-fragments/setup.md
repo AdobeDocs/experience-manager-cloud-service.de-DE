@@ -36,7 +36,7 @@ Das Einrichten Ihrer Instanz ist abgeschlossen:
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ## Aktivieren von Inhaltsfragmentfunktionen im Konfigurations-Browser {#enable-content-fragment-functionality-configuration-browser}
 

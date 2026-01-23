@@ -406,7 +406,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
