@@ -3,9 +3,9 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 * Definitionen waren erweiterbar.
 * Die Methode „Komponente verschieben“ wurde `editorActions` bereitgestellt.
 * Die Methode „Komponente hinzufügen“ wurde `editorActions` bereitgestellt.
-* Blockdetails für V2 implementiert.
+* Version 2.0 der Document Authoring-API wurde veröffentlicht.
 
 ## Anstehende Verbesserungen {#other-improvements}
 
