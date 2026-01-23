@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54566e3ea99c4ac03e266eab52163a516701b611
+source-git-commit: 2684fc43cf667517a404f1ab4937938f42d5103a
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6936'
 ht-degree: 96%
 
 ---
@@ -1264,7 +1264,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1496,7 +1496,6 @@ ht-degree: 96%
          + [SPA-WKND-Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Erste Schritte mit React](/help/implementing/developing/hybrid/getting-started-react.md)
          + [Erste Schritte mit Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-         + [Einzelheiten zu SPAs](/help/implementing/developing/hybrid/deep-dives-gems.md)
          + [Entwickeln von SPAs für AEM](/help/implementing/developing/hybrid/developing.md)
          + [SPA-Editor – Übersicht](/help/implementing/developing/hybrid/editor-overview.md)
          + [SPA-Blueprint](/help/implementing/developing/hybrid/blueprint.md)
