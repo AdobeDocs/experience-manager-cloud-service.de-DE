@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 98%
@@ -84,6 +84,6 @@ Außerdem werden die Standardeigenschaften von Dialogfeldern wie `name`, `fieldL
 
 >[!CAUTION]
 >
->Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt die Verwendung von `uid` oder `urlPath` als Kategoriekennung. Adobe unterstützt `id` und `idAndUrlPath` weiterhin nur für Projekte, die CIF-Kernkomponenten Version 1.x verwenden.
+>Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt `uid` oder `urlPath` als Kategoriekennung. Adobe unterstützt `id` und `idAndUrlPath` weiterhin nur für Projekte, die CIF-Kernkomponenten der Version 1.x verwenden.
 
 Ein umfassendes praktisches Beispiel für `cifcategoryfield` finden Sie im Projekt [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).

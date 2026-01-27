@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 89%
@@ -25,7 +25,7 @@ Um mit Adobe Experience Manager (AEM) Commerce as a Cloud Service beginnen zu k�
 >
 >**Haben Sie Edge Delivery Services in Betracht gezogen?**
 >
->Edge Delivery Services ist die von Adobe bevorzugte Lösung zum Erstellen einer Storefront. Weitere Informationen finden Sie [&#x200B; Dokument „Einführung &#x200B;](/help/commerce-cloud/introduction.md) Übersicht“.
+>Edge Delivery Services ist die von Adobe bevorzugte Lösung zum Erstellen einer Storefront. Weitere Informationen finden Sie [ Dokument „Einführung ](/help/commerce-cloud/introduction.md) Übersicht“.
 
 ## Einstieg {#onboarding}
 
@@ -57,7 +57,7 @@ Es gibt zwei Optionen zum Konfigurieren des Endpunkts:
 
 ### Über die Benutzeroberfläche von Cloud Manager (Standard) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343434?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Diese Konfiguration kann über ein Dialogfeld auf der Seite „Umgebungsdetails“ erfolgen. Wenn Sie diese Seite für ein Commerce-fähiges Programm anzeigen, wird eine Schaltfläche angezeigt, wenn der Endpunkt derzeit nicht konfiguriert ist:
 

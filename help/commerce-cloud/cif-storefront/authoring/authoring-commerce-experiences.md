@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Commerce-bezogene Erlebnisse effizient erstel
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 ## Übersicht {#overview}
 
-Das CIF-Add-on erweitert die Bearbeitung in AEM mit Commerce-spezifischen Funktionen. Dadurch können Autoren Commerce-bezogene Erlebnisse effizient erstellen und verwalten, indem sie auf Produktdaten und Inhalte zugreifen können, ohne den Kontext verlassen zu müssen.
+Das CIF-Add-on erweitert die Bearbeitung in AEM mit Commerce-spezifischen Funktionen. Dadurch können Autoren Commerce-bezogene Erlebnisse effizient erstellen und verwalten, indem sie Zugriff auf Produktdaten und Inhalte erhalten, ohne den Kontext verlassen zu müssen.
 
 ## Auswahloptionen {#pickers}
 

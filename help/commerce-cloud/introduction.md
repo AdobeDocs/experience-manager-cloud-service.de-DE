@@ -5,10 +5,10 @@ thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80f1c9548b8b87dc6280e0e95988d84a8376f7ab
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -33,15 +33,15 @@ Wenn Ihr Unternehmen die schnellste und KI-freundlichste Storefront im Internet 
 
 #### &#x200B;1. Integration mit Adobe Commerce as a Cloud Service {#acaacs}
 
-Adobe empfiehlt, Edge Delivery und die [Adobe Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) als Ausgangspunkt zu verwenden. Die Storefront verfügt über einen Baustein, der mit Adobe Commerce-Services und -APIs vorintegriert ist und eine Vielzahl von Drop-in-Komponenten für Commerce bietet. So können Sie in kürzester Zeit eine Storefront einrichten.
+Adobe empfiehlt, Edge Delivery und die [Adobe Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) als Ausgangspunkt zu verwenden. Die Storefront verfügt über einen Baustein, der mit Adobe Commerce-Services und -APIs vorintegriert ist und eine Vielzahl von Drop-in-Komponenten für Commerce bietet. So können Sie in kürzester Zeit eine Storefront einrichten.
 
 Gut geeignet für: Typisches Storefront-Erlebnis mit Adobe Commerce as a Cloud Service
 
 #### &#x200B;2. Integration mit Adobe Commerce Optimizer (für beliebige Drittanbieterlösungen) {#aco}
 
-Wenn Sie Ihre bestehende Lösung für den Handel integrieren und die Leistung Ihres Katalogs steigern möchten, empfiehlt Adobe, als moderne Integrationsebene [Adobe Commerce Optimizer](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) zu verwenden. Commerce Optimizer erweitert Ihre Lösung für den Handel um leistungsstarke SaaS-Services für Katalog und Merchandising. Wie bei Adobe Commerce as a Cloud Service funktioniert die [Adobe Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de) damit standardmäßig.
+Wenn Sie Ihre bestehende Lösung für den Handel integrieren und die Leistung Ihres Katalogs steigern möchten, empfiehlt Adobe, als moderne Integrationsebene [Adobe Commerce Optimizer](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) zu verwenden. Commerce Optimizer erweitert Ihre Lösung für den Handel um leistungsstarke SaaS-Services für Katalog und Merchandising. Wie bei Adobe Commerce as a Cloud Service funktioniert die [Adobe Commerce-Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) damit standardmäßig.
 
-Integrationen in kommerzielle Lösungen für den Handel wie Salesforce Commerce sind verfügbar. Wenden Sie sich an Ihren Adobe-Vertreter.
+Integrationen in kommerzielle Commerce-Lösungen wie Salesforce Commerce sind verfügbar. Wenden Sie sich an Ihren Adobe-Vertreter.
 
 Gut geeignet für: Typisches Storefront-Erlebnis mit einer vorhandenen Lösung für den Handel
 
@@ -49,11 +49,11 @@ Gut geeignet für: Typisches Storefront-Erlebnis mit einer vorhandenen Lösung f
 
 Adobe empfiehlt zudem die Verwendung von Edge Delivery Services, wenn Sie eine benutzerdefinierte Integration erstellen möchten. Sie können in Ihrer Edge Delivery-Storefront entweder von Grund auf neu beginnen oder vorhandene JS-Framework-Commerce-Komponenten (z. B. für den Transaktionsteil) wiederverwenden. So erhalten Ihre Kundinnen und Kunden ein unglaublich schnelles Einkaufserlebnis, das agentenfreundlich ist, während Sie vorhandene Investitionen wiederverwenden können, um den TTV-Wert zu verbessern. Ihr Ausgangspunkt ist der standardmäßige [Edge Delivery-Baustein](https://www.aem.live/developer/tutorial).
 
-Gut geeignet für: Geringer Nutzen aus der Edge Delivery-Storefront
+Gute Passform: Niedriger Wert aus der Edge Delivery-Storefront
 
 ### Verwenden Ihrer eigenen Storefront (Headless-AEM-Integration) {#own-storefront}
 
-Sie haben eine bestehende Storefront (z. B. mit React JS erstellt) und möchten Adobe Experience Manager für das Content-Management und die Bereitstellung (Inhaltsfragmente), Assets und kontextbezogene Bearbeitung (universeller Editor) verwenden. Ihr Ausgangspunkt für eine Integration ist [Einführung in Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/headless/introduction) und das [CIF-Add-on](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). Das CIF-Add-on ermöglicht eine nahtlose Integration Ihrer Produktdaten in AEM (Suchen, Durchsuchen und Finden von Produkten in der AEM-Benutzeroberfläche), wobei Sie AEM zum Erstellen Commerce-spezifischer Erlebnisse verwenden können.
+Sie haben eine bestehende Storefront (z. B. mit React JS erstellt) und möchten Adobe Experience Manager für das Content-Management und die Bereitstellung (Inhaltsfragmente), Assets und kontextbezogene Bearbeitung (universeller Editor) verwenden. Ihr Ausgangspunkt für eine Integration ist [Einführung in Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/headless/introduction) und das [CIF-Add-on](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). Das CIF-Add-on ermöglicht eine nahtlose Integration Ihrer Produktdaten in AEM (Suchen, Durchsuchen und Finden von Produkten in der AEM-Benutzeroberfläche), wobei Sie AEM zum Erstellen Commerce-spezifischer Erlebnisse verwenden können.
 
 ### AEM CIF-Storefront {#cif}
 
@@ -61,4 +61,4 @@ Adobes Empfehlung und Referenzarchitektur besteht in der Verwendung von Edge Del
 
 >[!NOTE]
 >
->Bestehende Kundschaft, die neue AEM-/Commerce-Funktionen nutzen möchte, sollte ihre Website nach Edge Delivery migrieren. In einem gängigen Muster werden zunächst nur eine Teilmenge der Seiten nach Edge Delivery verschoben und die Edge Delivery- und CIF-Seiten nebeneinander ausgeführt. Es ist auch möglich, AEM CIF-Komponenten durch die neuen [Commerce-Drop-in-Komponenten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=de) zu ersetzen, um neue Commerce-Funktionen zu nutzen.
+>Bestehende Kundschaft, die neue AEM-/Commerce-Funktionen nutzen möchte, sollte ihre Website nach Edge Delivery migrieren. In einem gängigen Muster wird zunächst nur eine Teilmenge der Seiten nach Edge Delivery verschoben und Edge Delivery- und CIF-Seiten nebeneinander ausgeführt. Es ist auch möglich, AEM CIF-Komponenten durch die neuen [Commerce-Drop-in-Komponenten](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) zu ersetzen, um neue Commerce-Funktionen zu nutzen.

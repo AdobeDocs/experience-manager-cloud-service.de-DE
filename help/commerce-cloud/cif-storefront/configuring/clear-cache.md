@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ Standardmäßig ist die Funktion zum Löschen des Cache in der CIF-Konfiguration
 
 So überprüfen Sie, ob alles ordnungsgemäß eingerichtet ist:
 
-* Trigger Fügen Sie das entsprechende Servlet dem AEM der Autoreninstanz hinzu, z. B. [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache) und Sie sollten eine HTTP-Antwort von 200 erhalten.
+* Fügen Sie den Trigger des entsprechenden Servlets zur AEM-Autoreninstanz hinzu, z. B. [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache). Sie sollten daraufhin eine HTTP-Antwort von 200 erhalten.
 * Stellen Sie sicher, dass in Autoreninstanzen unter dem folgenden Pfad ein Knoten erstellt wurde: `/var/cif/cacheinvalidation`. Der Knotenname folgt diesem Muster: `cmd_{{timestamp}}`.
 * Stellen Sie sicher, dass in jeder Veröffentlichungsinstanz derselbe Knoten erstellt wurde.
 
@@ -136,7 +136,7 @@ In Fällen, wo der Cache gelöscht werden muss, die aber derzeit nicht von den v
 Wenn Sie beispielsweise das vorhandene Attribut nicht zum Löschen des Cache verwenden möchten, haben Sie die Flexibilität, Ihr eigenes Attribut zu erstellen und die entsprechende Funktionalität zu definieren.
 
 * Wenn Sie nur den Cache aus dem internen Speicher von AEM löschen müssen (die GraphQL-Antwort), müssen Sie [diese Referenz.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java)
-* Wenn Sie den Cache aus dem internen Speicher und dem Dispatcher-Cache löschen müssen, müssen Sie [diese Referenz“ &#x200B;](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)
+* Wenn Sie den Cache aus dem internen Speicher und dem Dispatcher-Cache löschen müssen, müssen Sie [diese Referenz“ ](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)
 
   >[!NOTE]
   >

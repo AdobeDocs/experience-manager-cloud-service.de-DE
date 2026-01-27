@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 61%
@@ -51,7 +51,7 @@ CIF wurde für kontinuierliche Innovation mit einem stets aktuellen Add-on entwi
 
 ### Integrationen {#integrations}
 
-Verbinden Sie Ihr Ökosystem (z. B. eine Commerce-Lösung) mit Experience Cloud, indem Sie [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), eine auf Micro-Services basierenden PaaS-Lösung ohne Server, und die [CIF-Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-integration-reference) nutzen.
+Verbinden Sie Ihr Ökosystem (z. B. eine Lösung für den Handel) mit Experience Cloud, indem Sie [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), eine auf Micro-Services basierenden PaaS-Lösung ohne Server, und die [CIF-Referenzimplementierung](https://github.com/adobe/commerce-cif-graphql-integration-reference) nutzen.
 
 ## Bewährte Muster und Best Practices {#proven}
 
@@ -62,7 +62,7 @@ CIF unterstützt Sie mit standardisierten Integrationsmustern, die auf Best Prac
    * Kein Zugriff auf bereitgestellte Daten
    * Notwendigkeit von Echtzeit-Produktdaten und -Erlebnissen
 * Eine wachsende digitale Reife führt zu einem Bedarf an Experience Management
-* &#x200B;
+* 
    * CIF bietet Funktionen für das Produkterlebnis-Management, die ohne zusätzlichen Aufwand für die IT schrittweise integriert werden können.
 * Bereit für Omni-Channel
    * CIF unterstützt eine Vielzahl von Touchpoint-Technologien (Server-seitig, Hybrid, Client-seitig) mit Mustern, Accelerators und Kernkomponenten.
