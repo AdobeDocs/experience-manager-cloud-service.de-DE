@@ -89,5 +89,5 @@ Ein adaptives Formular wird erstellt und im Editor für adaptive Formulare geöf
 
 >[!NOTE]
 >
-> Sie können Skripte für XDP-Formularfelder über die Bereichssymbolleiste des hinzugefügten Felds deaktivieren. Erstellen Sie mithilfe des visuellen Regeleditors Logiken für [ hinzugefügten Felder](/help/forms/rule-editor-core-components.md).
+> Sie können Skripte für XDP-Formularfelder über die Bereichssymbolleiste des hinzugefügten Felds deaktivieren. Erstellen Sie mithilfe des visuellen Regeleditors Logiken für [&#x200B; hinzugefügten Felder](/help/forms/rule-editor-core-components.md).
 

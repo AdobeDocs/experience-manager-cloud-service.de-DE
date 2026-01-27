@@ -162,7 +162,7 @@ Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld **Konfigurieren der Komponent
 
 ![Symbol für Entwürfe](assets/drafts-component.png)
 
-Forms Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, ](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
+Forms Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, &#x200B;](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
 
 ![Symbol für Einsendungen](assets/submission-listing.png)
 
@@ -174,7 +174,7 @@ Sie können Formulare auch verwerfen, indem Sie auf die Auslassungspunkte (…) 
 
 ## Nächste Schritte
 
-Im nächsten Artikel erfahren wir, [ Sie mithilfe der Link-Forms-Portal-Komponente Verweise auf Formulare auf der Sites-Seite hinzufügen](/help/forms/add-form-link-to-aem-sites-page.md).
+Im nächsten Artikel erfahren wir, [&#x200B; Sie mithilfe der Link-Forms-Portal-Komponente Verweise auf Formulare auf der Sites-Seite hinzufügen](/help/forms/add-form-link-to-aem-sites-page.md).
 
 ## Verwandte Artikel
 

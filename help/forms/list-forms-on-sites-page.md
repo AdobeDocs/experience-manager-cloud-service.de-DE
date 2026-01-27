@@ -191,7 +191,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## Nächste Schritte
 
-Im nächsten Artikel erfahren Sie, [ Sie Formulare als Entwürfe speichern und auf einer Sites-Seite mithilfe der Forms-Portalkomponente für Entwürfe und Übermittlungen auflisten](/help/forms/save-core-component-based-form-as-draft.md).
+Im nächsten Artikel erfahren Sie, [&#x200B; Sie Formulare als Entwürfe speichern und auf einer Sites-Seite mithilfe der Forms-Portalkomponente für Entwürfe und Übermittlungen auflisten](/help/forms/save-core-component-based-form-as-draft.md).
 
 ## Verwandte Artikel
 
