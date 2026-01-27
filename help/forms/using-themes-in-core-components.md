@@ -5,9 +5,9 @@ keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: c0e0a700e85563ff65c703d5d20e6d6c1ff0651c
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2881'
 ht-degree: 95%
 
 ---
@@ -70,7 +70,6 @@ Das Anpassen eines Designs bezieht sich auf den Prozess des Änderns, Formatiere
 
 ### Einrichten Ihrer Arbeitsumgebung
 
-* Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 * Konfigurieren Sie eine [Frontend-Bereitstellungs-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de) für Ihre Cloud Service-Umgebung. Alternativ können Sie die Pipeline auch später konfigurieren, sodass Sie das Design vor der Einrichtung der Bereitstellungs-Pipeline flexibel priorisieren und verfeinern können.
 
 <!-- 
@@ -391,7 +390,7 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    >[!NOTE]
    >
-   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [&#x200B; die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
 
 1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .
@@ -453,16 +452,6 @@ So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest
 
 **Antwort:** Wenn Anpassungen sowohl auf globaler als auch auf Komponentenebene vorgenommen werden, hat die Anpassung auf Komponentenebene Priorität.
 
-<!--
-
-## See next
-
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
-
--->
 
 
 ## Siehe auch {#see-also}

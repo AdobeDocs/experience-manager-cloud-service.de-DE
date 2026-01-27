@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Formular-Links zur AEM Sites-Seite hinzufüge
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
-workflow-type: ht
-source-wordcount: '536'
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+workflow-type: tm+mt
+source-wordcount: '481'
 ht-degree: 100%
 
 ---
@@ -17,11 +17,6 @@ Im Szenario mit der Website einer Bank verbessert die Formularportal-Komponente�
 
 ![Link-Symbol](/help/forms/assets/link-forms.png)
 
-## Voraussetzung
-
-Bevor Sie die verschiedenen Funktionen einer Formularportal-Komponente erkunden, stellen Sie sicher, dass Kernkomponenten für Ihre Umgebung aktiviert sind. Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
-
-Nach der Bereitstellung der neuesten Kernkomponenten in Ihrer Umgebung können Sie auf die Formularportal-Komponenten in Ihrer Authoring-Umgebung zugreifen.
 
 ## Hinzufügen der Komponente „Link“ zu Ihrer Sites-Seite
 
