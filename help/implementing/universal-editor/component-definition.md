@@ -4,10 +4,10 @@ description: Machen Sie sich mit dem JSON-Vertrag zwischen der Komponentendefini
 feature: Developing
 role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 97%
 
 ---
 
@@ -94,9 +94,9 @@ Im Folgenden finden Sie eine vollständige, aber einfache `component-definition.
 
 `plugins` definiert, welches Plug-in für das Persistieren der Komponente verantwortlich ist. Häufige Plug-ins sind:
 
-* `aem` für [AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service)
-* `aem65` für [AEM 6.5.](https://experienceleague.adobe.com/de/docs/experience-manager-65) und [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts)
+* `aem` für [AEM as a Cloud Service,](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service) [AEM 6.5.,](https://experienceleague.adobe.com/de/docs/experience-manager-65) und [AEM 6.5 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts)
 * `xwalk` für [Authoring mit AEM Sites für Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
+* `da` für [Dokumenterstellung](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` oder `cf` {#page-cf}
 

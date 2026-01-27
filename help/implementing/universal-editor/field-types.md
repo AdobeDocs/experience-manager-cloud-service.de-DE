@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 97%
+source-wordcount: '1617'
+ht-degree: 96%
 
 ---
 
@@ -103,6 +103,10 @@ Ein Feldobjekt hat die folgende Typdefinition.
 | `multi` | `boolean` | Ist das Feld ein Mehrfachfeld<br/>Beachten Sie, dass eine Container-Verschachtelung für Mehrfachfelder im Panel „Eigenschaften“ nicht zulässig ist | Nein |
 | `validation` | `ValidationType` | Validierungsregeln oder Regeln für das Feld | Nein |
 | `raw` | `unknown` | Rohdaten, die von der Komponente verwendet werden können. | Nein |
+
+>[!NOTE]
+>
+>Der Unterstrich (`_`) ist in Feldnamen bei Verwendung der Plug-ins [`aem` oder `xwalk` nicht zulässig.](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### Feld „Name“ und Verschachtelung {#nesting}
 
