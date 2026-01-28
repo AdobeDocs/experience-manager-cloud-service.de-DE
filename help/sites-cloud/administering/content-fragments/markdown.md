@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 84%
 
 ---
 
 # Markdown {#markdown}
 
-Beim [Bearbeiten](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) Ihrer Inhaltsfragmente haben Sie möglicherweise [mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit **Markdown** als dem **Standardtyp** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
+Beim [ (Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) von Inhaltsfragmenten [ möglicherweise (mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit dem **Standardtyp** von **Markdown** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
 
 ![Mehrzeiliges Markdown-Textfeld im Editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Zum Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hash-Tag (#) gibt ein H1-Tag, zwei Hash-Tags (##) für ein H2-Tag usw. an. Sie können bis zu 6 Hashtags verwenden. Beispiel:
 
     `## This is an H2`
 
@@ -40,7 +40,7 @@ Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Übers
 
     `###### This is a H6`
 
-Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Zum Beispiel:
+Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeichen unterstreichen, und eine Ü2, indem Sie den Text mit Minuszeichen unterstreichen. Beispiel:
 
     `This is an H1`
 
@@ -66,7 +66,7 @@ Dies sind Beispiele für eingebundene Links:
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -106,7 +106,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Zum Beispiel:
+Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispiel:
 
     `>This is block quotes`
 
@@ -114,7 +114,7 @@ Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Zum Be
 
     `>asdfahsdlfasdfj`
 
-Sie können verschachtelte Blockzitate nutzen. Zum Beispiel:
+Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
     `> This is the first level of quoting.`
 
@@ -130,7 +130,7 @@ Sie können verschachtelte Blockzitate nutzen. Zum Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Zum Beispiel:
+Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
 
     `* item in list`
 
@@ -138,7 +138,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Zum Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Nummer und danach einen Punkt hinzu. Beispiel:
 
     `1. First item in list.`
 
@@ -150,7 +150,7 @@ Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste 
 
 Sie können den Text kursiv oder fett formatieren.
 
-Sie können Text wie folgt kursiv formatieren:
+Sie können wie folgt Kursiv hinzufügen:
 
     `*single asterisks*`
 
@@ -168,13 +168,13 @@ Sie können Text wie folgt fett formatieren:
 
 Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
 
-Zum Beispiel:
+Beispiel:
 
     ``Use the `printf()` function.``
 
 ## Code-Blöcke {#code-blocks}
 
-Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Zum Beispiel:
+Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschaulichen. Sie können Codeblöcke durch Einrücken des Codes mit Tabulator oder mindestens 4 Leerzeichen erstellen. Beispiel:
 
     `This is a normal paragraph.`
 
@@ -182,7 +182,7 @@ Code-Blöcke werden in der Regel verwendet, um den Quell-Code zu veranschauliche
 
 ## Umgekehrter Schrägstrich als Escape-Zeichen {#backslash-escapes}
 
-Sie können umgekehrte Schrägstriche als Escape-Zeichen verwenden, um tatsächliche Zeichen zu erzeugen, die eine besondere Bedeutung in der Formatierungssyntax haben. Wenn Sie zum Beispiel ein Wort mit tatsächlichen Sternchen umgeben wollten (anstelle eines &lt;em>-HTML-Tags), können Sie umgekehrte Schrägstriche vor den Sternchen wie folgt verwenden:
+Sie können umgekehrte Schrägstriche verwenden, um Literalzeichen zu generieren, die auch in der Formatierungssyntax eine besondere Bedeutung haben. Wenn Sie beispielsweise ein Wort mit literalen Sternchen (anstelle eines HTML &lt;em>-Tags) umgeben möchten, können Sie vor den Sternchen umgekehrte Schrägstriche wie den folgenden verwenden:
 
     `\\*literal asterisks\\*`
 
