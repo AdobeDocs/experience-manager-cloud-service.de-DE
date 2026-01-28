@@ -1,5 +1,5 @@
 ---
-title: Überprüfen und Aktivieren von Kernkomponenten für adaptive Formulare in AEM Forms as a Cloud Service
+title: Kernkomponenten für adaptive Forms in AEM Forms as a Cloud Service
 description: Erfahren Sie, wie Sie überprüfen können, ob Kernkomponenten für adaptive Formulare aktiviert sind, und wie Sie sie bei Bedarf in AEM Forms as a Cloud Service aktivieren.
 contentOwner: Khushwant Singh
 docset: CloudService
@@ -8,14 +8,14 @@ feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 31%
+source-wordcount: '200'
+ht-degree: 20%
 
 ---
 
-# Überprüfen und Aktivieren von Kernkomponenten für adaptive Formulare {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Kernkomponenten für adaptive Forms in AEM Forms as a Cloud Service{#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -31,9 +31,9 @@ Alle **AEM Forms as a Cloud Service**-Umgebungen enthalten native Unterstützung
 Für Umgebungen mit **AEM 6.5 Forms** und **AEM 6.5 LTS Forms** sind die Kernkomponenten für adaptive Forms nicht standardmäßig aktiviert. Sie müssen den AEM-Archetyp verwenden, um Ihrer Umgebung adaptive Forms-Funktionen hinzuzufügen.
 
 Befolgen Sie die entsprechenden Handbücher:
+
 - Für AEM 6.5 Forms: [Aktivieren der Kernkomponenten von Adaptive Forms auf AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de).
-- Für AEM 6.5 LTS Forms: [Aktivieren der Kernkomponenten für adaptive Forms auf AEM 6.5 LTS Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
+- Für AEM 6.5 LTS Forms: [Aktivieren der Kernkomponenten für adaptive Forms auf AEM 6.5 LTS Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **Hinweis:** Wenn Schritte zur Aktivierung der Kernkomponenten für adaptive Forms in älteren AEM 6.5-Umgebungen unklar sind oder umgebungsspezifische Voraussetzungen vorhanden sind, klären Sie diese Anforderungen, bevor Sie die Aktivierung versuchen.
-
 
