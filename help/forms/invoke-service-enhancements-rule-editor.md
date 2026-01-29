@@ -64,7 +64,7 @@ Die Funktion **Fehlervalidierung auf dem Server aktivieren** ermöglicht Validie
 
 Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Sie **Service aufrufen** im Regeleditor verwenden:
 
-* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier ](/help/forms/configure-data-sources.md).
+* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier &#x200B;](/help/forms/configure-data-sources.md).
 * Erstellen Sie ein Formulardatenmodell mithilfe der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier](/help/forms/create-form-data-models.md).
 
 ## Erkunden von Invoke Service durch verschiedene Anwendungsfälle
@@ -260,7 +260,7 @@ Sie können eine API mithilfe der unten bereitgestellten JSON-Daten direkt als `
 
 >[!NOTE]
 >
-> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[ klicken Sie ](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
+> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[&#x200B; klicken Sie &#x200B;](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
 
 Konfigurieren **[!UICONTROL in &quot;]** hinzufügen“ die Aktion **Navigieren zu**, um den Benutzer mithilfe des **-Parameters zur Seite** Kontaktieren `Event Payload` umzuleiten. Hier kann der Benutzer seine Kontaktdaten übermitteln.
 
@@ -341,7 +341,7 @@ Die benutzerdefinierte Funktion gibt ein einfaches Array von Werten zurück.
 
 >[!NOTE]
 >
-> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage ](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
+> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage &#x200B;](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
 
 
 ### Verwenden der Funktion im Regeleditor

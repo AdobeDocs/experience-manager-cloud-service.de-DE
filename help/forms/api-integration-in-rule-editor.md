@@ -125,7 +125,7 @@ Ebenso verwenden **Land der Passausstellung** und **Zielland** denselben API-Auf
 
 >
 >
-> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
+> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
 
 ## Implementieren des Wiederholungsmechanismus bei API-Fehlern
 
