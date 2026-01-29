@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.01.22
-description: Dies sind die Versionshinweise für die Version 2026.01.22 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.01.29
+description: Dies sind die Versionshinweise für die Version 2026.01.29 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
+source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 29%
+source-wordcount: '198'
+ht-degree: 35%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.01.22 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.01.29 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 22. Januar 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 29. Januar 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,11 +26,12 @@ Dies sind die Versionshinweise für die Version vom 22. Januar 2026 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* Textblöcke wurden in der Inhaltsstruktur [&#x200B; Beschriftungen (als kurze Textvorschau) &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* TextArea wird jetzt für Textfelder unterstützt.
-* Der config-Endpunkt wird jetzt für Benutzeroberflächenfunktionen verwendet.
-* TextArea aus Inhaltsfragmenten wird jetzt unterstützt.
-* Die Popup-API ist jetzt für Erweiterungen verfügbar.
+* Die Methode „Komponente entfernen“ wurde `editorActions` bereitgestellt.
+* Die Methode „Komponente kopieren“ wurde `editorActions` bereitgestellt.
+* Die Methode „Komponente verschieben“ wurde `editorActions` bereitgestellt.
+* Die Methode „Komponente hinzufügen“ wurde `editorActions` bereitgestellt.
+* Definitionen wurden für [Erweiterbarkeit“ verfügbar](/help/implementing/universal-editor/extending.md)
+* Version 2.0 der Document Authoring-API wurde veröffentlicht.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -40,12 +41,6 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Ein Problem mit dem Arbeitsflächen-Layout beim Navigieren über die Adressleiste wurde behoben.
-* Führende Leerzeichen wurden im RTE bereinigt.
-* Die Inline-Bearbeitung wurde bei der Eingabe wiederhergestellt.
-* Die Beschriftung wurde zurückgesetzt, sodass nicht der gesamte Inhalt angezeigt wird.
-* Probleme mit der Barrierefreiheit des Browsers wurden behoben.
-* `selectEditables([])` wird jetzt verwendet, um über die Erweiterbarkeit die Auswahl aller Komponenten aufzuheben.
-* Die Metadatentabelle wird jetzt am richtigen Speicherort erstellt.
-* Es wurde ein Problem behoben, bei dem kopierte Inhaltsfragment-Ressourcen auf `/data/undefined` verwiesen.
-
+* Die `content`-Erweiterbarkeit wurde in umbenannt, um dem API-Schema zu `details`.
+* Das Verhalten des Kontextmenüs wurde verbessert.
+* Es wurde ein Fehler beim Klicken auf das Badge eines bearbeitbaren Elements behoben, sodass das Kontextmenü ordnungsgemäß geöffnet wird.

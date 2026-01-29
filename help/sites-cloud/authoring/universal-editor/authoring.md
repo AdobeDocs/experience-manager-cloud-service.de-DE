@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 86%
+source-wordcount: '2710'
+ht-degree: 81%
 
 ---
 
@@ -33,17 +33,25 @@ Zu diesem Zweck bietet der universelle Editor Inhaltsautorinnen und Inhaltsautor
 
 ## Bearbeiten von Inhalten {#editing-content}
 
-Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie mit dem Mauszeiger über einen Inhalt im Editor fahren, werden bearbeitbare Inhalte mit einem dünnen blauen Umriss hervorgehoben.
+Die Bearbeitung von Inhalten ist einfach und intuitiv. Wenn Sie den Mauszeiger über einen Inhalt im Editor bewegen, werden bearbeitbare Inhalte mit einer dünnen, hellblauen Kontur und einem Badge hervorgehoben.
 
-![Bearbeitbare Inhalte werden durch ein blaues Feld hervorgehoben](assets/editable-content.png)
+![Bearbeitbare Inhalte werden durch ein hellblaues Feld hervorgehoben](assets/editable-content.png)
+
+Wenn Sie auf den markierten Inhalt tippen oder klicken, wird der dünne hellblaue Umriss zu einem dunkelblauen Umriss mit einem Badge.
+
+![Ausgewählter Inhalt wird durch ein dunkelblaues Feld hervorgehoben](assets/selected-content.png)
 
 >[!TIP]
 >
 >Durch Tippen oder Klicken auf einen Inhalt wird dieser standardmäßig zur Bearbeitung ausgewählt. Wenn Sie durch das Folgen von Links in Ihren Inhalten navigieren möchten, wechseln Sie zum [Vorschaumodus.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Je nach ausgewähltem Inhalt können Ihnen unterschiedliche Optionen zur Bearbeitung im Kontext zur Verfügung stehen. Außerdem sehen Sie möglicherweise zusätzliche Informationen und Optionen für den Inhalt im [Bedienfeld „Eigenschaften“](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Je nach ausgewähltem Inhalt stehen möglicherweise unterschiedliche Optionen für die Bearbeitung im Kontext sowie zusätzliche Informationen und Optionen für den Inhalt im [Eigenschaftenbereich“ zur Verfügung](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-Jedes Stück bearbeitbarer Inhalte wird mit dem Inhaltstyp gekennzeichnet. Je nach Inhalt können Sie auf dieses Abzeichen klicken, um schnell auf die Bearbeitungen zuzugreifen.
+### Kontextmenü {#context-menu}
+
+Jedes Stück bearbeitbarer Inhalte wird mit dem Inhaltstyp gekennzeichnet.
+
+Sie können auf dieses Badge klicken, um schnell auf ein Kontextmenü mit Bearbeitungsaktionen zuzugreifen. Wenn Sie mit der rechten Maustaste auf ein nicht ausgewähltes bearbeitbares Element klicken, wird es automatisch ausgewählt und das Kontextmenü wird geöffnet.
 
 ![Bearbeitbare Badge-Optionen](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 ![Bearbeiten von Inhalten](assets/editing-content.png)
 
-Der dünne blaue Umriss wird zu einem dicken blauen Umriss, um die Auswahl anzuzeigen, und ein Cursor wird angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
+Der dünne, hellblaue Umriss wird zu einem dunkelblauen Umriss, um die Auswahl anzuzeigen, und es wird ein Cursor angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
 Wenn Sie die Textkomponente auswählen, werden ihre Details im Bedienfeld [Eigenschaften“ angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch im Bedienfeld bearbeiten.
 
@@ -69,9 +77,9 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Zur Vereinfachung sind an zwei Stellen Formatierungsoptionen und Details zu Ihrem Text verfügbar.
 
-#### Das Kontextmenü {#context-menu}
+#### Das Rich-Text-Kontextmenü {#rich-text-context-menu}
 
-Das Kontextmenü wird oberhalb des Rich-Text-Blocks geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen kann es sein, dass einige Optionen hinter der Schaltfläche mit den Auslassungspunkten ausgeblendet werden.
+Ein Kontextmenü wird über dem Rich-Text-Block geöffnet und bietet grundlegende Formatierungsoptionen im Kontext. Aufgrund von Platzbeschränkungen kann es sein, dass einige Optionen hinter der Schaltfläche mit den Auslassungspunkten ausgeblendet werden.
 
 ![Kontextmenü für Rich-Text](assets/rich-text-context-menu.png)
 
@@ -110,7 +118,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 
 Vorhandene Tabellen können mit dem RTE bearbeitet werden, neue Tabellen können jedoch nicht erstellt werden.
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -127,7 +135,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
