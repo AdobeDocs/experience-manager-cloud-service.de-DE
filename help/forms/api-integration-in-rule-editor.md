@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Integrieren der API im Regeleditor, Aufrufen von Service-Verbesserungen
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 3%
+source-wordcount: '1034'
+ht-degree: 4%
 
 ---
 
@@ -123,6 +123,10 @@ Wenn der/die Benutzende beispielsweise **Land der Staatsangehörigkeit** öffnet
 
 Ebenso verwenden **Land der Passausstellung** und **Zielland** denselben API-Aufruf, um konsistente und aktuelle Daten in allen drei Feldern sicherzustellen.
 
+>
+>
+> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
+
 ## Implementieren des Wiederholungsmechanismus bei API-Fehlern
 
 Wenn eine API-Anfrage fehlschlägt, ist es oft nützlich, die Anfrage erneut auszuführen, bevor dem Benutzer ein Fehler gemeldet wird. Sie können einen Abruf- und Wiederholungsmechanismus implementieren, indem Sie benutzerdefinierten Code in die Datei **function.js** schreiben.
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 Im obigen Code verwaltet die Funktion **retryHandler** API-Anfragen mit automatischen Wiederholungsversuchen im Falle eines Fehlers. Es dauert eine Anfragefunktion (requestFn) und versucht die Anfrage bis zu zweimal, wobei für jeden erneuten Versuch Metadaten hinzugefügt werden.
-
->[!NOTE]
->
-> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage &#x200B;](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
 
 ## Häufig gestellte Fragen
 

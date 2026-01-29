@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Die Funktion **Fehlervalidierung auf dem Server aktivieren** ermöglicht Validie
 
 Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Sie **Service aufrufen** im Regeleditor verwenden:
 
-* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier &#x200B;](/help/forms/configure-data-sources.md).
+* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier ](/help/forms/configure-data-sources.md).
 * Erstellen Sie ein Formulardatenmodell mithilfe der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier](/help/forms/create-form-data-models.md).
 
 ## Erkunden von Invoke Service durch verschiedene Anwendungsfälle
@@ -171,6 +171,10 @@ Geben Sie `101` in das Textfeld `Pet ID` ein, um die Dropdown-Optionen basierend
 
 ![Ergebnis](/help/forms/assets/output1.png)
 
+> 
+>
+> Dropdown-Optionen können auch dynamisch ausgefüllt werden, indem ein Service aufgerufen, die JSON-Antwort geparst und benutzerdefinierte Funktionen angewendet werden. Weitere Informationen finden Sie [diesem Abschnitt](#retrieve-property-values-from-a-json-array).
+
 ### Anwendungsfall 2: Festlegen eines wiederholbaren Bereichs mithilfe der Ausgabe von „Service aufrufen“
 
 Dieses Anwendungsbeispiel zeigt, wie wiederholbare Bereiche basierend auf der Ausgabe eines „Service **&quot; dynamisch** werden.
@@ -256,7 +260,7 @@ Sie können eine API mithilfe der unten bereitgestellten JSON-Daten direkt als `
 
 >[!NOTE]
 >
-> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[&#x200B; klicken Sie &#x200B;](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
+> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[ klicken Sie ](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
 
 Konfigurieren **[!UICONTROL in &quot;]** hinzufügen“ die Aktion **Navigieren zu**, um den Benutzer mithilfe des **-Parameters zur Seite** Kontaktieren `Event Payload` umzuleiten. Hier kann der Benutzer seine Kontaktdaten übermitteln.
 
@@ -269,6 +273,123 @@ Optional können Sie einen Fehler-Handler konfigurieren, der eine Fehlermeldung 
 Wenn auf **Senden**-Schaltfläche geklickt wird, wird der `redirect-api`-API-Service aufgerufen. Nach erfolgreicher Ausführung wird der Benutzer zur Seite **Kontakt** weitergeleitet.
 
 ![Payload-Ausgabe des Ereignisses](/help/forms/assets/output5.gif)
+
+## Abrufen von Eigenschaftswerten aus einem JSON-Array
+
+Adaptive Forms unterstützt das Aufrufen eines Services, die Verarbeitung von JSON-Antworten und das dynamische Ausfüllen von Formularfeldern. In diesem Abschnitt wird beschrieben, wie Sie Eigenschaftswerte aus einem JSON-Array extrahieren und an Formularfelder binden.
+
+### JSON-Beispielantwort
+
+Das folgende Beispiel stellt die US-Vertriebsregionen und die Liste der Vertriebsmitarbeiter dar:
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### Benutzerdefinierte Funktion zum Extrahieren von Eigenschaftswerten
+
+<span class="preview"> Dies ist eine Funktion für frühzeitige Benutzende. Bei Interesse können Sie eine kurze E-Mail von Ihrer Geschäftsadresse an mailto:aem-forms-ea@adobe.com senden, um Zugriff auf die Funktion </a>. </span>
+
+Verwenden Sie die folgende benutzerdefinierte Funktion, um Eigenschaftswerte aus dem JSON-Array zu extrahieren.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+Die benutzerdefinierte Funktion akzeptiert:
+
+* **jsonArray**: JSON-Array, das vom Service zurückgegeben wird
+* **propertyName**: Eigenschaft zum Extrahieren des Werts
+
+Die benutzerdefinierte Funktion gibt ein einfaches Array von Werten zurück.
+
+>[!NOTE]
+>
+> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage ](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
+
+
+### Verwenden der Funktion im Regeleditor
+
+So rufen Sie den spezifischen Wert aus dem JSON-Array ab:
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+Das folgende Beispiel zeigt, wie Sie ein `Sales Department` Formular mithilfe dieser Antwort ausfüllen.
+
+Erstellen wir beispielsweise ein `Sales Department` Formular, das die Dropdown-Listen `Select Region` und `Select Sales Representative` enthält.
+
+**Schritt 1: Dienst beim Initialisieren des Formulars aufrufen**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> Informationen zum Integrieren der API ohne Erstellen eines Formulardatenmodells im visuellen Regeleditor finden Sie [hier](/help/forms/api-integration-in-rule-editor.md).
+
+**Schritt 2: Füllen Sie das Dropdown-Menü Region**
+
+Fügen Sie einen Erfolgshandler für den Service-Aufruf hinzu und konfigurieren Sie die folgende Aktion:
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+Diese Regel liest das JSON-Array, extrahiert die `region` Eigenschaftswerte und weist die Werte der `Select Region` Dropdown-Liste zu.
+
+Konfigurieren Sie auf ähnliche Weise die Aktion für das Dropdown-Menü `Select Sales Representative` im Erfolgshandler.
+
+![Ereignis-Payload für JSON-Array](/help/forms/assets/event-payload.png)
+
+Wenn das Formular lädt, werden die JSON-Daten zurückgegeben und die benutzerdefinierte Funktion extrahiert Eigenschaftswerte und die Dropdown-Liste wird automatisch ausgefüllt:
+
+![Payload-Formular für Ereignisse](/help/forms/assets/event-payload-form.png)
 
 ## Häufig gestellte Fragen
 
