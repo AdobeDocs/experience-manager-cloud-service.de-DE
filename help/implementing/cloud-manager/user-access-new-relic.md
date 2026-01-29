@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
+source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 99%
+source-wordcount: '1789'
+ht-degree: 96%
 
 ---
 
@@ -29,13 +29,11 @@ Wenn ein neues Produktionsprogramm erstellt wird, wird automatisch ein mit Ihrem
 
 New Relic One APM für AEM as a Cloud Service hat viele Funktionen.
 
-* Direkter Zugriff auf das dedizierte Konto „New Relic One“
+* Direkter Zugriff auf ein dediziertes New Relic One-Konto.
 
-* Instrumentierter New Relic One APM-Agent, der exakte Methodenaufrufe mit Zeilennummern anzeigt, einschließlich externer Abhängigkeiten und Datenbanken
+* Instrumentierter New Relic One APM-Agent, der exakte Methodenaufrufe mit Zeilennummern anzeigt, einschließlich externer Abhängigkeiten und Datenbanken.
 
-* Ganzheitliche Leistungsoptimierung durch die Kombination von Schlüsselmetriken aus der Überwachung auf Infrastruktur- und Anwendungsebene (Adobe Experience Manager).
-
-* AEM as a Cloud Service stellt Java Management Extensions(JMX)-MBeans und Konsistenzprüfungen direkt in New Relic Insights bereit, sodass Sie die Anwendungsleistung und Konsistenzmetriken eingehend überprüfen können.
+* Ganzheitliche Leistungsoptimierung durch Kombination von Schlüsselmetriken aus der Überwachung auf Infrastrukturebene und der Überwachung der Anwendung (Adobe Experience Manager).
 
 ## Aktivieren Ihres New Relic One-Unterkontos {#activate-sub-account}
 
@@ -172,7 +170,7 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 ## Nutzungshinweise {#usage-notes}
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [&#x200B; New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
