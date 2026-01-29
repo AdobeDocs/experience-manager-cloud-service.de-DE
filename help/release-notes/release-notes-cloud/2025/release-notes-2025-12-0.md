@@ -1,20 +1,18 @@
 ---
-title: Aktuelle Versionshinweise für  [!DNL Adobe Experience Manager] as a Cloud Service
-description: Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Versionshinweise für Version 2025.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Versionshinweise für Version 2025.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 9e81e0f3ed4b3e4ac02655cf4203191c61007b1d
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 38%
+source-wordcount: '1951'
+ht-degree: 48%
 
 ---
 
-# Aktuelle Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Versionshinweise für Version 2025.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle (neueste) Version von [!DNL Experience Manager] as a Cloud Service beschrieben.
+Im folgenden Abschnitt werden die Versionshinweise zu den neuen Funktionen der Version 2025.12.0 von [!DNL Experience Manager] as a Cloud Service beschrieben.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2026.1.0) ist der Freitag, 29. Januar 2026. Die nächste Versionsveröffentlichung (2026.2.0) ist für den Freitag, 26. Februar 2026 geplant.
+Das Veröffentlichungsdatum der aktuellen Version mit neuen Funktionen von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.12.0) ist der Freitag, 11. Dezember 2025. Die nächste Version (2026.1.0) ist für den Freitag, 29. Januar 2026 geplant.
 
 ## Wartungsversionshinweise {#maintenance}
 
@@ -69,8 +67,6 @@ Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [](mailto:aemagent
 * Namen und Adobe ID der Team-Mitglieder, die Agenten aktiv verwenden werden.
 * Listen Sie bestimmte Agenten auf, die Sie oder Ihr Team verwenden werden. Oder sagen Sie einfach „Alle Agenten“.
 
-Kunden, die für die Teilnahme ausgewählt wurden, werden direkt von Adobe benachrichtigt. Die Teilnahme unterliegt bestimmten Eignungskriterien, einschließlich Kundenlizenzierung und begrenzter Programmkapazität. Obwohl zunächst nicht alle Anfragen berücksichtigt werden können, werden in zukünftigen Beta-Schüben möglicherweise weitere Kunden in Betracht gezogen.
-
 ### AEM Foundation (Beta-Programme) {#aem-foundation-beta-programs}
 
 Siehe [AEM Foundation-Betaprogramme](#foundation-early-adopter).
@@ -79,34 +75,26 @@ Siehe [AEM Foundation-Betaprogramme](#foundation-early-adopter).
 
 Siehe [Cloud Manager-Beta-Programme](/help/implementing/cloud-manager/release-notes/current.md).
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Content MCP-Server {#content-MCP}
-
-Chat-Anwendungen (z. B. ChatGPT) und moderne IDEs (z. B. Cursor) können das Model Context Protocol (MCP) verwenden, um ein umfangreiches Sprachmodell (LLM) von einem MCP-Server verfügbar zu machen. Anstatt Code anhand von API-Spezifikationen auf niedriger Ebene zu schreiben, können Sie beschreiben, was Sie in natürlicher Sprache wünschen, und das LLM lässt diese Absicht in die entsprechenden API-Aufrufe übersetzen. Und in einigen Fällen kann eine Eingabeaufforderung bequemer sein als das Navigieren in einer Benutzeroberfläche.
-
-Sie können zum Beispiel ChatGPT auffordern: *Bearbeiten Sie /en/coffee.html in AEM: Ändern Sie den Text Frescopa Coffee im Inhalt auf etwas, das ein 20-Jähriger gerne hätte.*
-
-AEM bietet zwei Content-MCP-Server - **schreibgeschützt** und **lesen/schreiben** - mit Tools zum Arbeiten mit **Pages**, **Content Fragments** und **Assets**. Diese Server können von den folgenden MCP-Clients verwendet werden: **ChatGPT**, **Claude**, **Cursor** und **Microsoft Copilot Studio**.
-
-Weitere Informationen finden Sie unter [Verwenden von MCP mit AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Bei Fragen oder Feedback senden Sie eine E-Mail an [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**KI-Suche**
+**Neue Version des Figma Plugin zur Integration mit AEM Assets ist verfügbar**
 
-Die KI-Suche führt ein intelligentes, kontextbezogenes Sucherlebnis ein, das über den herkömmlichen Keyword-Abgleich hinausgeht, indem es die Bedeutung und den Zweck hinter Benutzerabfragen versteht. Basierend auf KI und maschinellem Lernen liefert sie genauere Ergebnisse, selbst wenn Abfragen unterschiedlich formuliert sind, falsche Schreibweisen enthalten, Synonyme verwenden oder in verschiedenen Sprachen übermittelt werden, sodass Benutzende relevante Inhalte schneller und mit weniger Aufwand finden können.
+* Unterstützung für Videodateien (MP4, MOV, WebM), Animationsdateien (GIF) und Vektordateien (SVG) beim Importieren von Assets aus dem AEM-Repository in das Figma-Dokument.
 
-Weitere Informationen finden Sie unter KI-Suche in der Ansicht [Assets](/help/assets/search-assets-view.md#ai-search) und [Admin](/help/assets/search-assets.md#ai-search).
+* Unterstützung für das Überprüfen, ob die im Figma-Dokument verwendeten Assets aktualisiert wurden, im Vergleich zu den im AEM-Repository vorhandenen Assets, und das Abrufen der neuesten Version der Assets, falls Aktualisierungen vorhanden sind.
 
-**Desktop-Programm Version 3.0.1**
+* Unterstützung für Exportkonfigurationen beim Exportieren der Dateiformate PNG (scale) und JPG (image scale and quality).
 
-[Desktop-Programm 3.0.1 (20. Dezember 2025)](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/release-notes) verbessert die Zuverlässigkeit, Leistung und Stabilität aller wichtigen Workflows. Diese Version stellt eine konsistente Ordnerbenennung sicher, indem sie Synchronisierungsprobleme mit AEM Author behebt, die unterbrechungsfreie Verwendung der App während aktiver Übertragungen ermöglicht, die Reaktionsfähigkeit der Benutzeroberfläche durch asynchrone Verarbeitung verbessert, große Dateiübertragungen mit Paginierung optimiert und Stabilitätsprobleme behebt, einschließlich Neustarts des Autoren-Servers und Abstürze während großer Ordner-Uploads und -Downloads.
+  ![Figma-Plug-in](/help/assets/assets/figma-v2-plugin.png)
 
-**Adobe Asset Link CEP-Version 2026.01.0**
+**Malware-Erkennung für hochgeladene Assets**
 
-[Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) führt eine neue Option Fehlende Links neu verknüpfen in InDesign ein, die automatisch andere fehlende Assets aus demselben AEM-Ordner neu verknüpft. Die Funktion ordnet Assets basierend auf dem Dateinamen zu, wodurch der manuelle Aufwand beim Wiederherstellen defekter Links erheblich reduziert wird.
+AEM Assets bietet jetzt eine automatische Malware-Suche für hochgeladene Dateien, um sicherzustellen, dass verdächtige Assets vor dem Eintritt in das DAM-System unter Quarantäne gestellt werden, um das Repository vor Bedrohungen zu schützen. Administratoren können Sucheinstellungen und Richtlinien zur Quarantäneaufbewahrung konfigurieren, um die Sicherheitskontrollen zu optimieren.
 
+**KI-generierte Metadaten - Eignungsaktualisierung**
+
+KI-generierte Metadaten in AEM Assets erfordern nicht mehr, dass der GenAI-Treiber signiert ist, damit sie aktiviert werden können. Die Funktion ist jetzt sowohl für Kunden verfügbar, die den GenAI-Rider unterzeichnet haben, als auch für Kunden, die noch nicht validiert wurden. Kunden, die sich ausdrücklich gegen die Verwendung von GenAI entschieden haben, haben die Funktion weiterhin deaktiviert. Informationen zum Verwalten der Funktionsaktivierung auf Umgebungsebene finden Sie unter [KI-generierte Metadaten deaktivieren](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). Diese Änderung wird für Kunden ab Version 23482 vorgenommen.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -167,18 +155,11 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Wichtige Hinweise zu [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-notices}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation - Neue Funktionen {#foundation-new}
 
-#### Einstellung von Java-APIs {#java-api-deprecation}
+#### Bevorstehende Einstellung von Java-APIs {#java-api-deprecation}
 
-Die veralteten APIs zum Entfernen von 2/26/2026 sollten nicht mehr im Code verwendet werden. Um Bereitstellungsblöcke zu verhindern, entfernen Sie die API-Nutzung vor dem 26. März 2026. Wichtige Daten:
-
-* **Ab 26. Januar 2026**: Benachrichtigungs-E-Mails zum Aktionscenter werden **wöchentlich pro Umgebung** gesendet, um Sie daran zu erinnern, die Verwendung dieser APIs zu entfernen.
-* **26. Februar 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet, **während** Schritts **Code-Qualität** angehalten. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können das Problem außer Kraft setzen, damit die Pipeline fortgesetzt werden kann.
-* **26. März 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet **schlagen** während des **Code-Qualitäts-**-Schritts fehl **blockieren Bereitstellungen** neuen Codes, bis die Verwendung entfernt wird.
-* **30. April 2026**: Umgebungen, die diese APIs weiterhin verwenden, **möglicherweise keine wichtigen Adobe-Versions-Updates mehr**.
-
-Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
+Verschiedene veraltete APIs wurden für die Einstellung am 31. August vorgemerkt und sollten daher nicht mehr referenziert werden. Sie erhalten Benachrichtigungen des Aktionszentrums, wenn eine veraltete API-Nutzung in Ihrem Code erkannt wird. Nach dem 29. Januar werden bei Cloud Manager-Builds Hinweise angezeigt, die darauf hinweisen, dass die Nutzung entfernt werden muss. Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
 
 +++ Zum Anzeigen der veralteten Java-APIs erweitern
 
@@ -212,7 +193,7 @@ OSGi properties:
 
 #### Abschaffung der Java 11-Laufzeit {#java11-runtime-deprecation}
 
-Adobe hat **Staging** und **Produktion** Umgebungen am 14. Oktober **2025 auf die leistungsfähigere Java 21 Runtime** aktualisiert. Ab **9.** (schrittweiser Rollout bis zum 11. Februar) funktionieren weder die AEM Cloud Service-SDK noch Cloud-Umgebungen mit der Java 11-Laufzeitumgebung.
+Adobe hat **Staging** und **Produktion** Umgebungen am 14. Oktober **2025 auf die leistungsfähigere Java 21 Runtime** aktualisiert. Ab **9.** funktionieren weder die AEM Cloud Service SDK noch Cloud-Umgebungen mit Java 11 Runtime.
 
 >[!NOTE]
 >
@@ -221,9 +202,9 @@ Adobe hat **Staging** und **Produktion** Umgebungen am 14. Oktober **2025 auf di
 
 #### Durchsetzung der Konfigurationsrichtlinie für AEM-Java-Protokolle {#logconfig-policy}
 
-AEM Java-Protokolle müssen einem Standardformat entsprechen, um eine zuverlässige Überwachung in allen Kundenumgebungen sicherzustellen. Benutzerdefinierte Protokollkonfigurationen – wie etwa Änderungen an der Protokollformatierung, Ausgabedateien oder Standardprotokollebenen – werden nicht mehr unterstützt. Protokolle müssen an die Standarddateien weitergeleitet werden, und die standardmäßigen Protokollebenen für AEM-Produkt-Code müssen beibehalten werden. Ausführliche Informationen finden Sie im [Artikel zur Protokollierung](/help/implementing/developing/introduction/logging.md#configuration-loggers).
+Wie in den Versionshinweisen vom April erwähnt, müssen AEM-Java-Protokolle einem Standardformat entsprechen, um eine zuverlässige Überwachung in allen Kundenumgebungen sicherzustellen. Benutzerdefinierte Protokollkonfigurationen – wie etwa Änderungen an der Protokollformatierung, Ausgabedateien oder Standardprotokollebenen – werden nicht mehr unterstützt. Protokolle müssen an die Standarddateien weitergeleitet werden, und die standardmäßigen Protokollebenen für AEM-Produkt-Code müssen beibehalten werden. Ausführliche Informationen finden Sie im [Artikel zur Protokollierung](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen *werden jetzt ignoriert*. Die meisten Kunden waren davon nicht betroffen und Adobe hat sich mit Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
+Ab **29.** werden alle nicht unterstützten benutzerdefinierten Protokollierungsüberschreibungen ignoriert. Nach unserer Analyse ist der Großteil der Kundschaft nicht betroffen, und Adobe hat sich mit Kundinnen und Kunden in Verbindung gesetzt, deren aktuelle Konfiguration möglicherweise betroffen ist.
 
 Bitte überprüfen und aktualisieren Sie alle nachgelagerten Prozesse, die auf einem benutzerdefinierten Protokollierungsverhalten basieren. Zum Beispiel:
 
@@ -245,9 +226,9 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 >Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
 >
 
-#### AEM Edge-Funktionen (Beta-Programm) {#edge-functions}
+#### Edge-Datenverarbeitung (Beta-Programm)
 
-Mit AEM Edge-Funktionen (in früheren Versionshinweisen als *Edge Computing* bezeichnet) können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher am Endbenutzer liegt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse am Edge.
+Mit der Edge-Datenverarbeitung können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher an die Endbenutzenden heranrückt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse am Edge.
 
 Häufige Anwendungsszenarien umfassen:
 
@@ -273,6 +254,7 @@ Stellen Sie Ihre Code-Versionen für die Produktion bereit, beschränken Sie sie
 
 Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com), um Zugriff anzufordern und Feedback mitzuteilen.
 
+
 #### KI-Antworten - Intelligentere, kontextbezogene Antworten für AEM Sites (Beta-Programm) {#ai-answers-beta}
 
 Mit KI-Antworten erhalten Ihre Besucher eine neue Möglichkeit, mit Ihren Inhalten zu interagieren. Basierend auf der RAG-Technologie (Retrieval-Augmented Generation) nutzt diese Lösung Ihre von AEM verwalteten Daten, um direkt in Ihren digitalen Erlebnissen präzise, markenkonsistente Antworten bereitzustellen.
@@ -285,16 +267,13 @@ Um eine Teilnahme anzufordern oder Updates zu erhalten, wenden Sie sich bitte an
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
 
-#### KI-Tools für IDEs für AEM Java und Dispatcher-Entwicklung (Beta-Programm) {#ai-dev-beta}
+#### Beschleunigen der AEM-Entwicklung mit KI (Alpha-Programm) {#ai-dev-alpha}
 
-Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie Cursor, Claude Code, Visual Studio und IntelliJ, um die Funktionsbereitstellung zu beschleunigen und die Code-Qualität zu verbessern. Beta-Version hinzufügen für:
+AEM-Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie Cursor, Claude Code, Visual Studio und IntelliJ, um die Funktionsbereitstellung zu beschleunigen und die Code-Qualität zu verbessern. Wir sammeln Erfahrungen aus der Praxis, um zukünftige, von Adobe unterstützte KI-Funktionen zu gestalten.
 
-* Austausch von Erfahrungen aus der Praxis, um zukünftige von Adobe unterstützte KI-Funktionen zu gestalten
-* Testen Sie IDE-Tools, die von KI-Agenten verwendet werden können, um AEM-Code und Dispatcher-Konfiguration zu generieren und zu debuggen
-
-Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
+Teilen Sie per E-Mail [aemcs-java-adopter@adobe.com mit, was für Ihr Team funktioniert und was Adobe bereitstellen soll](mailto:aemcs-java-adopter@adobe.com).
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
