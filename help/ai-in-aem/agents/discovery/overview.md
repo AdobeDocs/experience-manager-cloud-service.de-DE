@@ -3,9 +3,9 @@ title: Übersicht über den Discovery Agent
 description: Erfahren Sie, wie Sie mit dem Discovery Agent relevante AEM-Inhalte bei Bedarf über natürliche Gesprächsaufforderungen bereitstellen können, um ein optimiertes, klick- und kostenloses Discovery-Erlebnis zu erzielen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -152,7 +152,7 @@ Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asse
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 
@@ -170,3 +170,6 @@ Geben Sie in Ihren Eingabeaufforderungen in natürlicher Sprache präzise Detail
 
 * Verwenden Sie Ihre organisationsspezifischen Metadaten, z. B. Kategorien (Laufschuhe, Elektronik), Jahreszeiten (Herbst, Frühling), Ereignisse (Black Friday, Produkteinführung) und Kanäle (Web, E-Mail, Druck), um Inhalte weiter zu filtern.
 
+## Einschränkungen {#limitations-discovery-agent}
+
+Der Discovery-Agent unterstützt Dimensionsbasierte Eingabeaufforderungen nur für die Formattypen „Bild“ und &quot;SVG&quot;. Beispiel: `Find images wider than 1080px`.
