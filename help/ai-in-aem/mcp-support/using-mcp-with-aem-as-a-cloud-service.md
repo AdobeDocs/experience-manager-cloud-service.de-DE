@@ -3,9 +3,9 @@ title: Verwenden von MCP mit AEM as a Cloud Service
 description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud Service verwenden.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 96ce03c86d0406320223f3fae87beed3552d479f
+source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ Mit der MCP-Integration von AEM können verschiedene Personas um denselben Inhal
 
 * **Entwickler** können Inhaltsvorgänge und Workflows über ihre IDE- oder Chat-Anwendung orchestrieren
 * **Anwender** und Inhaltsarchitekten können Sites, Inhaltsfragmente und Assets mithilfe von KI verwalten und dabei das bestehende Berechtigungsmodell von AEM beibehalten.
+
+>[!IMPORTANT]
+>
+> Bei Szenarien, in denen Inhalte geändert oder gelöscht werden, sollten Anwender die Benutzeroberfläche des KI-Assistenten verwenden, anstatt MCP-Tools direkt aufzurufen, da die vom KI-Assistenten ausgeführten AEM-Agenten integrierte Sicherheitsmaßnahmen enthalten.
+>
 
 In diesem Artikel wird erläutert, was die MCP-Funktionen von AEM bieten, welche MCP-Anwendungen unterstützt werden, wie sie konfiguriert werden und wie sie in der Praxis verwendet werden.
 
