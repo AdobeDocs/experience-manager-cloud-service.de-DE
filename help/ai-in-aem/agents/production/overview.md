@@ -3,9 +3,9 @@ title: Übersicht über Experience Production Agent
 description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM die Inhaltserstellung beschleunigen und Änderungen automatisch koordinieren können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
+source-git-commit: a0a6c14da73ba6881e55aa5089fbde13880f9ec5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '311'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,12 @@ Der Agent bietet die folgenden Aufträge:
 * [Inhaltsaktualisierung](#content-update)
 * [Formularerstellung](#form-creation)
 * [Erstellung von Kommunikationen](#communications-creation)
-* [Site-Migration](#site-migration)
 
 >[!IMPORTANT]
 >
 >KI-generierte Antworten können ungenau oder irreführend sein. Überprüfen Sie unbedingt die vorgeschlagenen Fehlerbehebungen und Antworten.
 >
->Siehe auch [Benutzerhandbücher für die generative KI von Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Siehe auch [Benutzerhandbücher für die generative KI von Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Inhaltsaktualisierung {#content-update}
 
@@ -44,15 +43,11 @@ Die [Communication Creation](/help/ai-in-aem/agents/production/communications-cr
 
 >[!NOTE]
 >
-> Die Fähigkeit zur Kommunikationserstellung befindet sich derzeit in der Alpha-Phase. Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
-
-### Site-Migration {#site-migration}
-
-Die [Site-Migration](/help/ai-in-aem/agents/production/site-migration.md) migriert nahtlos Sites, die nicht von AEM stammen, in AEM-Umgebungen (Experience Delivery Services), um sicherzustellen, dass sie leistungsfähig, konform und agentenbereit sind. Der Agent optimiert die Einrichtung und Umwandlung, wodurch der manuelle Aufwand und die Wertschöpfungszeit reduziert werden.
-
-Der Agent sollte in der Lage sein, mit anderen Agentenfähigkeiten zu arbeiten, Beispiele sind:
+> Die Fähigkeit zur Kommunikationserstellung befindet sich derzeit in der Alpha-Phase. Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
 ## Verwendung mit anderen Wirkstoffen {#use-with-other-agents}
+
+Der Agent kann mit anderen Agentenfähigkeiten arbeiten, Beispiele sind:
 
 * Abrufen von Quell-Assets vom Experience Advisory Agent
 
