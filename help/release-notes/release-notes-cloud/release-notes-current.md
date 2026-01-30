@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 38%
+source-wordcount: '2161'
+ht-degree: 39%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,11 +60,11 @@ In den folgenden Abschnitten sind aktive Beta-Programme aufgeführt.
 
 ### Agenten in AEM (Beta-Programm) {#agents-in-aem-beta-program}
 
-Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [&#x200B; finden Sie unter „Übersicht über Agenten &#x200B;](/help/ai-in-aem/agents/overview.md) AEM&quot;.
+Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [ finden Sie unter „Übersicht über Agenten ](/help/ai-in-aem/agents/overview.md) AEM&quot;.
 
 Dieses Programm dauert in der Regel 4-6 Wochen, kann aber so angepasst werden, dass es Ihre Fähigkeit zur aktiven Teilnahme berücksichtigt.
 
-Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [&#128279;](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
+Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
 
 * Namen und Adobe ID der Team-Mitglieder, die Agenten aktiv verwenden werden.
 * Listen Sie bestimmte Agenten auf, die Sie oder Ihr Team verwenden werden. Oder sagen Sie einfach „Alle Agenten“.
@@ -83,11 +83,16 @@ Siehe [Cloud Manager-Beta-Programme](/help/implementing/cloud-manager/release-no
 
 ### Content MCP-Server {#content-MCP}
 
-Chat-Anwendungen (z. B. ChatGPT) und moderne IDEs (z. B. Cursor) können das Model Context Protocol (MCP) verwenden, um ein umfangreiches Sprachmodell (LLM) von einem MCP-Server verfügbar zu machen. Anstatt Code anhand von API-Spezifikationen auf niedriger Ebene zu schreiben, können Sie beschreiben, was Sie in natürlicher Sprache wünschen, und das LLM lässt diese Absicht in die entsprechenden API-Aufrufe übersetzen. Und in einigen Fällen kann eine Eingabeaufforderung bequemer sein als das Navigieren in einer Benutzeroberfläche.
+AEM Cloud Service enthält jetzt **Content-MCP-Server**, die eine standardisierte Möglichkeit für KI-gestützte Erlebnisse bieten, über MCP-kompatible Tools mit AEM-Inhalten zu arbeiten.
 
-Sie können zum Beispiel ChatGPT auffordern: *Bearbeiten Sie /en/coffee.html in AEM: Ändern Sie den Text Frescopa Coffee im Inhalt auf etwas, das ein 20-Jähriger gerne hätte.*
+Entwickler und Power-User, die in Chat-Apps und Agentenplattformen arbeiten, können AEM mit benutzerdefinierten Kopiloten und Automatisierungen verbinden, sodass die Inhaltsarbeit Teil von End-to-End-Unternehmens-Workflows wird.
 
-AEM bietet zwei Content-MCP-Server - **schreibgeschützt** und **lesen/schreiben** - mit Tools zum Arbeiten mit **Pages**, **Content Fragments** und **Assets**. Diese Server können von den folgenden MCP-Clients verwendet werden: **ChatGPT**, **Claude**, **Cursor** und **Microsoft Copilot Studio**.
+AEM bietet zwei Server:
+
+1. **Schreibgeschützter Content MCP Server** - zum sicheren Abrufen von Inhalten
+1. **Lese-/Schreib-Content-MCP-Server** - für Inhaltsänderungen
+
+Diese MCP-Server umfassen Tools zum Arbeiten mit **Pages**, **Content Fragments** und **Assets** und können von den folgenden MCP-Clients verwendet werden: **ChatGPT**, **Claude**, **Cursor** und **Microsoft Copilot Studio**.
 
 Weitere Informationen finden Sie unter [Verwenden von MCP mit AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Bei Fragen oder Feedback senden Sie eine E-Mail an [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
@@ -95,9 +100,9 @@ Weitere Informationen finden Sie unter [Verwenden von MCP mit AEM Cloud Service]
 
 **KI-Suche**
 
-Die KI-Suche führt ein intelligentes, kontextbezogenes Sucherlebnis ein, das über den herkömmlichen Keyword-Abgleich hinausgeht, indem es die Bedeutung und den Zweck hinter Benutzerabfragen versteht. Basierend auf KI und maschinellem Lernen liefert sie genauere Ergebnisse, selbst wenn Abfragen unterschiedlich formuliert sind, falsche Schreibweisen enthalten, Synonyme verwenden oder in verschiedenen Sprachen übermittelt werden, sodass Benutzende relevante Inhalte schneller und mit weniger Aufwand finden können.
+KI-Suche führt ein intelligentes, kontextbezogenes Sucherlebnis ein, das über den herkömmlichen Keyword-Abgleich hinausgeht, indem es die Bedeutung und den Zweck hinter Benutzerabfragen versteht. Basierend auf KI und maschinellem Lernen liefert sie genauere Ergebnisse, selbst wenn Abfragen unterschiedlich formuliert sind, falsche Schreibweisen enthalten, Synonyme verwenden oder in verschiedenen Sprachen übermittelt werden, sodass Benutzende relevante Inhalte schneller und mit weniger Aufwand finden können.
 
-Weitere Informationen finden Sie unter KI-Suche in der Ansicht [Assets](/help/assets/search-assets-view.md#ai-search) und [Admin](/help/assets/search-assets.md#ai-search).
+Weitere Informationen finden Sie unter KI-Suchen in der Ansicht [Assets](/help/assets/search-assets-view.md#ai-search) und [Admin](/help/assets/search-assets.md#ai-search).
 
 **Desktop-Programm Version 3.0.1**
 
@@ -285,7 +290,7 @@ Um eine Teilnahme anzufordern oder Updates zu erhalten, wenden Sie sich bitte an
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### KI-Tools für IDEs für AEM Java und Dispatcher-Entwicklung (Beta-Programm) {#ai-dev-beta}
 
@@ -294,7 +299,7 @@ Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie C
 * Austausch von Erfahrungen aus der Praxis, um zukünftige von Adobe unterstützte KI-Funktionen zu gestalten
 * Testen Sie IDE-Tools, die von KI-Agenten verwendet werden können, um AEM-Code und Dispatcher-Konfiguration zu generieren und zu debuggen
 
-Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
