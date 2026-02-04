@@ -2,10 +2,10 @@
 title: Assets as a Cloud Service für Digital Asset Management in AEM
 description: Assets as a Cloud Service für Digital Asset Management in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
+source-git-commit: 5606d66dfa9c7d11063eea495088e1263a2cc5fb
 workflow-type: tm+mt
-source-wordcount: '5626'
-ht-degree: 88%
+source-wordcount: '5642'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Zu den wichtigsten Funktionen von Adobe Digital Asset Management gehören:
 
 >[!BEGINTABS]
 
->[!TAB Asset-Aufnahme]
+>[!TAB Aufnahme]
 
 ## Asset-Aufnahme {#asset-ingestion}
 
@@ -239,7 +239,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
 </td>
 </table>
 
->[!TAB Asset-Erkennung]
+>[!TAB Erkennung]
 
 ## Asset-Erkennung {#asset-discovery}
 
@@ -269,11 +269,11 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Best Practices für die Metadatenverwaltung" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Best Practices für die Metadatenverwaltung</strong>
       </a>
    </div>
@@ -346,7 +346,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
 </td>
 </table>
 
->[!TAB Asset-Governance]
+>[!TAB Governance]
 
 ## Asset-Management und -Governance {#asset-management-governance}
 
@@ -518,7 +518,7 @@ Sie können die Asset-Auswahl in Anwendungen von Adobe oder von Drittanbietern i
 
 * **Integration mit Adobe Workfront**: [!DNL Adobe Workfront] ist eine Work-Management-Anwendung, mit der Sie den gesamten Arbeitszyklus an einem Ort verwalten können. Die Integration von [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] ermöglicht es Unternehmen, die Geschwindigkeit von Inhalten und die Zeit bis zur Markteinführung zu verbessern, indem sie Workfront und Digital Asset Management miteinander verbinden. Im Rahmen der Verwaltung ihrer Arbeit in Workfront haben Benutzer Zugriff auf die erforderlichen Dokumente und Bilder.
 
-  Adobe bietet die  [!DNL Adobe Experience Manager Assets] native[&#128279;](https://experienceleague.adobe.com/de/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations) Integration [!DNL Workfront] .
+  Adobe bietet die  [!DNL Adobe Experience Manager Assets] native](https://experienceleague.adobe.com/de/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations) [Integration [!DNL Workfront] .
 
 * **Integration mit Figma**: Dank der nativen Integration von AEM Assets mit Figma können Sie über die Figma-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen. Sie können in AEM Assets verwaltete Inhalte auf der Figma-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern. Um auf den auf der Figma Community-Seite verfügbaren AEM Assets-Connector zuzugreifen, klicken Sie [hier](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -668,10 +668,10 @@ Der **Inhaltsoptimierungs-Agent** hilft beim Verfeinern und Anpassen von Assets 
 
 **Beispielaufforderungen:**
 
-* `Create a 2000px JPEG rendition.`
-* `Sharpen the image.`
-* `Change background color to #ff8932.`
-* `Create a rendition for an Instagram story.`
+* Erstellen Sie eine JPEG-Ausgabedarstellung von 2.000 Pixel.
+* Scharfzeichnen des Bildes.
+* Ändern Sie die Hintergrundfarbe in #ff8932.
+* Erstellen Sie eine Ausgabedarstellung für eine Instagram-Story.
 
 **Einschränkungen** Einige Optimierungen werden für PNG-Assets nicht unterstützt.
 
@@ -697,11 +697,11 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="Übersicht über den Discovery Agent" src="./assets/discovery-agent-overview.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Übersicht über den Discovery Agent" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Übersicht über den Discovery Agent</strong>
       </a>
    </div>
@@ -711,11 +711,11 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Übersicht über die Inhaltsoptimierung" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Inhaltsoptimierungs-Agent - Übersicht</strong>
       </a>
    </div>
@@ -725,11 +725,11 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Governance Agent - Übersicht" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Governance-Agent - Übersicht</strong>
       </a>
    </div>
@@ -743,7 +743,7 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
 
 Auf Agenten kann über den **KI-Assistenten** in AEM Cloud Service zugegriffen werden. Melden Sie sich bei [experience.adobe.com](https://experience.adobe.com/) an und interagieren Sie mit dem KI-Assistenten über natürliche Eingabeaufforderungen.
 
->[!TAB Asset-Aktivierung]
+>[!TAB Aktivierung]
 
 ## Asset-Aktivierung {#asset-activation}
 
