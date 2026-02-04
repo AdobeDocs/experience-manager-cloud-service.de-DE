@@ -2,10 +2,10 @@
 title: Assets as a Cloud Service für Digital Asset Management in AEM
 description: Assets as a Cloud Service für Digital Asset Management in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
 workflow-type: tm+mt
-source-wordcount: '5075'
-ht-degree: 97%
+source-wordcount: '5626'
+ht-degree: 88%
 
 ---
 
@@ -86,9 +86,9 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
 
 >[!TAB KI-gestützte Funktionen]
 
-**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe AI, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
 
-**Intelligentes farbbasiertes Tagging und Suche**: AEM Assets verwendet Adobe-KI-Funktionen, um zwischen Farben in einem Bild zu unterscheiden und diese Eigenschaften bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
+**Intelligentes farbbasiertes Tagging und Suche**: AEM Assets verwendet Adobe AI-Funktionen, um zwischen Farben in einem Bild zu unterscheiden und diese Eigenschaften bei der Aufnahme automatisch als Tags anzuwenden. Diese Tags ermöglichen ein verbessertes Sucherlebnis, das auf der Farbkomposition des Bildes basiert.
 
 **KI-generierte Metadaten**: AEM Assets verwendet KI zum automatischen Generieren von Metadaten, einschließlich Titel, Beschreibung und Keywords. Diese KI-generierten Felder verbessern die Genauigkeit von Metadaten und erleichtern die Suche, Kategorisierung und Empfehlung von Assets. Dieser Ansatz verbessert nicht nur die Effizienz durch die Eliminierung des manuellen Taggings, sondern stellt auch Konsistenz und Skalierbarkeit über große Mengen digitaler Inhalte hinweg sicher.
 
@@ -108,7 +108,6 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
       <em>Erfahren Sie, wie Sie Smart-Tags automatisch auf hochgeladene Assets anwenden.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/color-tag-images.md">
@@ -193,7 +192,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
 
 **Intelligente Bildbearbeitung**: Die intelligente Bildbearbeitung sorgt für eine noch bessere Leistung bei der Bereitstellung von Bild-Assets, indem sie das Format und die Dateigröße eines Bildes je nach Fähigkeiten des Kunden-Browsers optimiert. Sie funktioniert mit Ihren vorhandenen Bildvorgaben und verwendet Intelligenz bei der Bereitstellung. Durch diese Intelligenz wird die Größe der Bilddateien je nach Browser und Geschwindigkeit der Netzwerkverbindung weiter reduziert. 
 
-**Smartes Zuschneiden**: Eine Adobe-KI-Funktion, mit der der Fokus automatisch in einem Bild oder Video erkannt und zugeschnitten wird, um ihn beizubehalten. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
+**Smartes Zuschneiden** Eine Adobe AI-Funktion, mit der der Fokus automatisch in einem Bild oder Video erkannt und beschnitten wird, um ihn beizubehalten. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
 
 **KI-generierte Videountertitel**: Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Intelligenz eingesetzt, um automatisch Untertitel für Videoinhalte zu generieren. Diese Funktion soll die Barrierefreiheit und das Anwendererlebnis verbessern, indem korrekte Untertitel bereitgestellt werden. Untertitel werden aus dem Originalaudio, zusätzlichen Audiospuren oder zusätzlichen Untertiteln generiert, die auf der Seite mit den Videoeigenschaften in der Registerkarte „`Captions and Audio`“ bereitgestellt werden. Mehr als 60 Sprachen werden unterstützt. Die Untertitel können dabei vor der Veröffentlichung des Videos überprüft und in einer Vorschau angezeigt werden.
 <table>
@@ -270,11 +269,11 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Best Practices für die Metadatenverwaltung" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Best Practices für die Metadatenverwaltung</strong>
       </a>
    </div>
@@ -297,7 +296,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
 </td>
 </table>
 
-**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+**Smart-Tags**: Smart-Tags verwenden das KI-Framework von Adobe AI, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. AEM wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
 
 **Asset-Suche**: Sobald Sie die richtigen Metadaten eingerichtet haben, können Sie mit AEM Assets anhand verschiedener Operatoren, Platzhalter, erweiterter Abfragen und benutzerdefinierter Filter suchen.
 
@@ -375,7 +374,6 @@ Sie können auch Asset-Versionen verwalten, den Asset-Status festlegen und das A
       <em>Erfahren Sie, wie Sie einige grundlegende und erweiterte Asset-Management-Aufgaben ausführen.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
@@ -520,7 +518,7 @@ Sie können die Asset-Auswahl in Anwendungen von Adobe oder von Drittanbietern i
 
 * **Integration mit Adobe Workfront**: [!DNL Adobe Workfront] ist eine Work-Management-Anwendung, mit der Sie den gesamten Arbeitszyklus an einem Ort verwalten können. Die Integration von [!DNL Workfront] und [!DNL Adobe Experience Manager Assets] ermöglicht es Unternehmen, die Geschwindigkeit von Inhalten und die Zeit bis zur Markteinführung zu verbessern, indem sie Workfront und Digital Asset Management miteinander verbinden. Im Rahmen der Verwaltung ihrer Arbeit in Workfront haben Benutzer Zugriff auf die erforderlichen Dokumente und Bilder.
 
-  Adobe bietet die  [!DNL Adobe Experience Manager Assets] native[&#128279;](https://experienceleague.adobe.com/de/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations) Integration [!DNL Workfront] .
+  Adobe bietet die  [!DNL Adobe Experience Manager Assets] native](https://experienceleague.adobe.com/de/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations) [Integration [!DNL Workfront] .
 
 * **Integration mit Figma**: Dank der nativen Integration von AEM Assets mit Figma können Sie über die Figma-Benutzeroberfläche direkt auf die in AEM Assets gespeicherten Assets zugreifen. Sie können in AEM Assets verwaltete Inhalte auf der Figma-Arbeitsfläche platzieren und dann neue oder bearbeitete Inhalte in einem AEM Assets-Repository speichern. Um auf den auf der Figma Community-Seite verfügbaren AEM Assets-Connector zuzugreifen, klicken Sie [hier](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -628,6 +626,123 @@ Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, fin
 
 +++
 
+>[!TAB KI-Agenten]
+
+## KI-Agenten {#ai-agents}
+
+AEM as a Cloud Service bietet intelligente **Agenten** zur Verbesserung von Content-Management, Optimierung und Governance. Diese Agenten ermöglichen es Benutzenden, Inhalte schnell zu ermitteln, Kampagnen zu optimieren und die Compliance über digitale Assets hinweg sicherzustellen.
+
+**Discovery Agent**
+
+Der Discovery Agent stellt AEM-Inhalte bei Bedarf über natürliche, dialogorientierte Eingabeaufforderungen für ein optimiertes, klick- und starres Erkennungserlebnis bereit. Es durchsucht intelligent **Assets, Inhaltsfragmente und adaptives Forms**, um relevante Inhalte wie Bilder, Videos, PDFs, Artikel und Formularvorlagen bereitzustellen. Mit natürlicher Sprache können Sie suchen, ohne komplexe Abfragen zu erstellen oder Filter in der AEM Assets-Benutzeroberfläche anzuwenden. Basierend auf Ihrer Eingabeaufforderung gibt der Agent kuratierte Ergebnisse zusammen mit Asset-Metadaten und Bereitstellungs-URLs zurück, die in andere Programme eingebettet werden können.
+
+Zu den wichtigsten Vorteilen von Discovery Agent gehören:
+
+* **Einheitliche Inhaltserkennung:** Greifen Sie auf alle Arten von AEM-Inhalten wie Bilder, Videos, PDF-Dokumente, Artikel und Formulare über eine einzige Gesprächsoberfläche zu.
+* **Schnellere Kampagnenplanung:** Schnelle Erfassung von Visualisierungen und Formularen für Marketing-Kampagnen auf E-Mail-, Web- und Social-Media-Kanälen.
+* **Verbesserte Produktivität:** Reduzieren Sie den Zeitaufwand für das Durchsuchen von Repositorys oder das Filtern von Metadaten durch eine automatisierte, absichtsbasierte Suche.
+* **Konsistente Nutzung von Inhalten:** Sicherstellung der Wiederverwendung freigegebener Assets und Fragmente, wodurch die Markenkonsistenz über alle Kanäle hinweg gewahrt bleibt.
+
+**Kenntnisse:** Erkennung von Inhalten in natürlicher Sprache, Tag-basierte Asset-Erkennung, ordnerbasierte Content-Erkennung, format- und orientierungsbasierte Asset-Erkennung\
+**Personas:** Kampagnen-Manager, Channel-Marketing-Experten, DAM-Bibliothekare, Agenturen und Partner\
+**Zugriff:** über KI-Assistenten in AEM
+
+**Häufige Anwendungsfälle/Beispielaufforderungen:**
+
+* Bilder mit dem Tag „office“ im Ordner „WKND“ anzeigen.
+* Listet alle veröffentlichten Inhaltsfragmente für WKND-Getränke auf.
+* Formulare suchen, um sich für eine Stelle zu bewerben.
+* Assets mit Person in Querformat anzeigen.
+
+**Content Optimization Agent**
+
+Der **Inhaltsoptimierungs-Agent** hilft beim Verfeinern und Anpassen von Assets mithilfe von Aufforderungen in natürlicher Sprache. Es kann neue Ausgabedarstellungen generieren, visuelle Elemente anpassen, Hintergründe ändern und automatisch kanalbereite Varianten erstellen. Funktioniert mit dem Discovery-Agenten und **Dynamic Media mit OpenAPI** für eine nahtlose Optimierung.
+
+**Wichtigste Vorteile:**
+
+* **Mühelose Asset-Umwandlung** Ändern der Größe, Scharfzeichnen, Neufärbung oder Spiegeln von Bildern.
+* **Kanaloptimierte Ausgaben:** Generieren von Ausgabedarstellungen für Instagram, Webbanner und andere Marketing-Kanäle.
+* **Skalierte Creative-Verbesserungen:** Anwenden von Hintergrundänderungen oder -überlagerungen für Workflows mit hohem Volumen.
+
+**Zugriff:** über KI-Assistenten in AEM.
+
+**Beispielaufforderungen:**
+
+* `Create a 2000px JPEG rendition.`
+* `Sharpen the image.`
+* `Change background color to #ff8932.`
+* `Create a rendition for an Instagram story.`
+
+**Einschränkungen** Einige Optimierungen werden für PNG-Assets nicht unterstützt.
+
+**Governance-Agent**
+
+Der Governance-Agent sorgt für die Einhaltung der Vorschriften, die Markenkonsistenz und die Durchsetzung der Richtlinien für alle AEM-Inhalte. Es identifiziert Inhalte, die weder Metadaten noch Barrierefreiheit oder Unternehmensrichtlinien entsprechen.
+
+Zu den wichtigsten Vorteilen von Governance Agent gehören:
+
+* **Compliance Monitoring:** Erkennt Richtlinienverletzungen im Inhalt.
+* **Durchsetzung von Metadaten:** Stellt sicher, dass Assets über die erforderlichen Metadaten für die Governance verfügen.
+* **Markenkonsistenz:** Kennzeichnet Inhalte, die nicht den Unternehmensstandards entsprechen.
+
+**Fähigkeiten:** Richtlinienkonformitätsprüfungen, Metadatenvalidierung, Zugänglichkeitsprüfungen, automatische Warnhinweise für Verstöße\
+**Personas:** DAM-Administratoren, Compliance-Beauftragte, Brand Manager\
+**Zugriff:** über AEM AI Assistant
+
+**Häufige Anwendungsfälle/Beispielaufforderungen:**
+
+* Validieren von Metadaten für alle Assets im WKND-Ordner.
+* Identifizieren Sie Assets, denen Markenrichtlinien fehlen.
+* Prüfen veröffentlichter Inhalte auf Barrierefreiheit.
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Übersicht über den Discovery Agent" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>Übersicht über den Discovery Agent</strong>
+      </a>
+   </div>
+   <p>
+      <em>Überblick über den Discovery Agent und seine Funktionen zur konversativen Inhaltserkennung.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="Übersicht über die Inhaltsoptimierung" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>Inhaltsoptimierungs-Agent - Übersicht</strong>
+      </a>
+   </div>
+   <p>
+      <em>Überblick über den Inhaltsoptimierungsagenten und die unterstützten Optimierungs-Workflows.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="Governance Agent - Übersicht" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong>Governance-Agent - Übersicht</strong>
+      </a>
+   </div>
+   <p>
+      <em>Überblick über den Governance Agent für die Einhaltung und Durchsetzung von Richtlinien.</em>
+   </p>
+</td>
+</table>
+
+### **Zugriff auf Agenten in AEM**
+
+Auf Agenten kann über den **KI-Assistenten** in AEM Cloud Service zugegriffen werden. Melden Sie sich bei [experience.adobe.com](https://experience.adobe.com/) an und interagieren Sie mit dem KI-Assistenten über natürliche Eingabeaufforderungen.
+
 >[!TAB Asset-Aktivierung]
 
 ## Asset-Aktivierung {#asset-activation}
@@ -704,7 +819,7 @@ Dynamic Media bietet die folgenden Hauptfunktionen:
 
 * **Adaptive Videosets**: Ein adaptives Videoset gruppiert Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert sind. Sie beginnen mit Ihrem ursprünglichen, primären Video, das Sie in das System hochladen. Dynamic Media skaliert bzw. transkodiert dieses Video automatisch in mehrere Videos. Zum Zeitpunkt der Bereitstellung wird dann auf intelligente Weise bestimmt, welcher Videobildschirm, welche Qualität und welches Format verwendet werden sollen, und die Daten werden entweder an das Smartphone, das Tablet oder den Desktop-Computer übertragen.
 
-* **Smartes Zuschneiden**: Eine Adobe-KI-Funktion, mit der der Fokus in einem Bild oder Video automatisch erkannt und zugeschnitten wird, um ihn beizubehalten. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
+* **Smartes Zuschneiden** Eine Adobe AI-Funktion, mit der der Fokus in einem Bild oder Video automatisch erkannt und beschnitten wird, um ihn beizubehalten. Der gewünschte Blickpunkt wird unabhängig von der Bildschirmgröße erfasst. So werden mühsame manuelle Aufgaben beseitigt und hochwertige, schnell ladende Bilder und Videos bereitgestellt, die auf jedem Gerät oder Bildschirm gut aussehen.
 
 * **Dynamic Media-Vorlagen**: Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mit Vorlagen in Dynamic Media, einem WYSIWYG-Vorlageneditor. Veröffentlichen Sie Ihre Dynamic Media-Vorlage und verwenden Sie sie in nachgelagerten Anwendungen. Eine Dynamic Media-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie Dynamic Media-URLs, um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
 
