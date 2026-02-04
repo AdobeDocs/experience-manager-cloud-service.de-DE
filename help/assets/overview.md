@@ -269,11 +269,11 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
    <img alt="Best Practices für die Metadatenverwaltung" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
       <strong>Best Practices für die Metadatenverwaltung</strong>
       </a>
    </div>
@@ -697,11 +697,11 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
    <img alt="Übersicht über den Discovery Agent" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Übersicht über den Discovery Agent</strong>
       </a>
    </div>
@@ -711,11 +711,11 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Übersicht über die Inhaltsoptimierung" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Inhaltsoptimierungs-Agent - Übersicht</strong>
       </a>
    </div>
@@ -725,11 +725,11 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Governance Agent - Übersicht" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Governance-Agent - Übersicht</strong>
       </a>
    </div>
