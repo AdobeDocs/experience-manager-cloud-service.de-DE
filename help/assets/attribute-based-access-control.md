@@ -3,7 +3,7 @@ title: Attributbasierte Zugriffssteuerung
 description: Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung aktivieren, um metadatenbasierte Regeln und die Zugriffsebene für in Content Hub verfügbare Assets zu definieren
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 99%
@@ -27,6 +27,8 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 * Ermöglicht es Admins, Assets hochzuladen und Berechtigungsstrukturen rückwirkend zu bestimmen
 
 * Reduziert die Anzahl der Duplikate – verbessert die Integrität der Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Wie wird die attributbasierte Zugriffssteuerung aktiviert? {#enable-attribute-based-access-control}
 

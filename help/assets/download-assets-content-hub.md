@@ -3,7 +3,7 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie ein oder mehrere Assets und deren Ausgabedarstellungen vom Content Hub-Portal herunterladen.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 66%
@@ -13,6 +13,8 @@ ht-degree: 66%
 # Herunterladen von Assets aus Content Hub {#download-assets}
 
 Mit [!DNL Content Hub] können Sie Assets herunterladen und freigeben. Auf der [!DNL Content Hub]-Benutzeroberfläche werden nur genehmigte Assets angezeigt. Bei diesen Assets kann es sich um Bilder, Videos oder andere digitale Inhalte handeln. [!DNL Content Hub] verbessert die Barrierefreiheit und Anpassungsfähigkeit und ermöglicht so eine effektive Asset-Verteilung.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433135/?learn=on){transcript=true}
 
 Sie können mit [!DNL Content Hub] einzelne oder mehrere Assets und ihre verfügbaren Ausgabedarstellungen herunterladen.
 
@@ -29,7 +31,7 @@ Um ein oder mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führe
 Klicken Sie alternativ auf die Asset-Miniaturansicht und dann auf ![Herunterladen](/help/assets/assets/download-icon.svg), um die verfügbaren Ausgabedarstellungen auszuwählen und im Dialogfeld anzuzeigen, bevor Sie sie herunterladen.
 
 * So laden Sie mehrere Assets und ihre Ausgabedarstellungen herunter:
-   1. Wählen Sie die Assets aus![&#x200B; klicken Sie auf &#x200B;](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
+   1. Wählen Sie die Assets aus![ klicken Sie auf ](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
    1. Wählen Sie eine oder mehrere Ausgabedarstellungen aus, um sie als ZIP-Datei herunterzuladen. Wenn Sie **[!UICONTROL Intelligenter Zuschnitt]** und **[!UICONTROL Statische Ausgabedarstellungen]** auswählen, werden für jedes der ausgewählten Assets alle verfügbaren Ausgabedarstellungen heruntergeladen, sowohl die statischen als auch die mit intelligentem Zuschnitt.
    1. Optional: Deaktivieren Sie **[!UICONTROL Für jedes Asset einen separaten Ordner erstellen]**, um die ausgewählten Assets und ihre Ausgabedarstellungen als flache Hierarchie in einem Ordner in der ZIP-Datei herunterzuladen. Standardmäßig lädt [!DNL Content Hub] die ausgewählten Assets und ihre Ausgabedarstellungen in separaten Ordnern in einer ZIP-Datei herunter.
 
@@ -145,7 +147,7 @@ Erfahren Sie mehr über das [Anzeigen und Verwalten von Ausgabedarstellungen in 
 
 * [Dynamische Ausgabedarstellungen](/help/assets/renditions.md#dynamic-renditions): Dynamische Ausgabedarstellungen sind benutzerdefinierte Echtzeitversionen von Assets, um verschiedene Aktionen auszuführen, z. B. die Größenanpassung von Bildern an verschiedene Geräteauflösungen oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Sie personalisierte und optimierte Erlebnisse für breitere Anforderungen anbieten. Dynamische Ausgabedarstellungen von Assets werden in der [!DNL Adobe Experience Manager Assets]-Autorenumgebung erstellt. Informationen zu den Schritten, die zum Aktivieren dynamischer Ausgabedarstellungen erforderlich sind, finden Sie unter [Aktivieren dynamischer Ausgabedarstellungen](#enable-dynamic-media-renditions).
 
-* [Intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Der intelligente Zuschnitt legt den Fokus während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Das smarte Zuschneiden von Dynamic Media nutzt die künstliche Intelligenz, die von der Adobe-KI unterstützt wird, um den Zielpunkt zu verfolgen und sicherzustellen, dass unsere Assets auf allen Bildschirmgrößen optimal aussehen. Der intelligente Zuschnitt in [!DNL Adobe Experience Manager] zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Siehe [Verwenden von intelligentem Zuschnitt mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Intelligenter Zuschnitt](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): Der intelligente Zuschnitt legt den Fokus während des Zuschneidevorgangs ausschließlich auf den wesentlichen Teil eines Assets. Das smarte Zuschneiden von Dynamic Media nutzt die von Adobe AI unterstützte künstliche Intelligenz, um das POI zu verfolgen und sicherzustellen, dass unsere Assets auf allen Bildschirmgrößen optimal aussehen. Der intelligente Zuschnitt in [!DNL Adobe Experience Manager] zeigt die Breite und Höhe von Asset-Ausgabedarstellungen zusammen mit dem Titel an. Siehe [Verwenden von intelligentem Zuschnitt mit AEM Assets Dynamic Media](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   Ausgabedarstellungen für intelligenten Zuschnitt werden angezeigt und stehen nur dann zum Download zur Verfügung, wenn Sie Zugriff auf [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) haben. Ausgabedarstellungen mit intelligentem Zuschnitt sind nur für Bild-Assets verfügbar.
 

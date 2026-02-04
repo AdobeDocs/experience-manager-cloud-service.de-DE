@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Assets mit der neuen Assets-Benutzeroberfläc
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1881'
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+workflow-type: tm+mt
+source-wordcount: '1874'
 ht-degree: 100%
 
 ---
@@ -26,6 +26,8 @@ Sie können Assets aus den folgenden Datenquellen importieren:
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Voraussetzungen {#prerequisites}
 
@@ -96,7 +98,7 @@ Bevor Sie Assets aus Ihrem OneDrive-Konto in AEM Assets importieren können, mü
 
 1. Klicken Sie auf **[!UICONTROL Zertifikat oder Geheimnis hinzufügen]** neben der Option **[!UICONTROL Client-Anmeldeinformationen]**.
 
-1. Klicken Sie auf **[!UICONTROL Neues Client-Geheimnis]**, geben Sie eine Beschreibung für das Client-Geheimnis an und klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Neues Client-Geheimnis]**, geben Sie eine Beschreibung für das Client-Geheimnis und die Gültigkeit an und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
 1. Kopieren Sie nach der Erstellung des Client-Geheimnisses das Feld **[!UICONTROL Wert]** (das Feld „Geheimnis-ID“ nicht kopieren). Dies ist erforderlich, um den Massenimport in AEM Assets zu konfigurieren.
 
@@ -200,7 +202,7 @@ Um die Verbindung mit der Datenquelle zu überprüfen, klicken Sie auf das Symb
 
 ## Führen Sie vor dem Ausführen eines Imports einen Probelauf durch. {#dry-run-bulk-import}
 
-Klicken Sie auf das Symbol ![Mehr](assets/do-not-localize/more-icon.svg) neben dem Konfigurationsnamen und dann auf **[!UICONTROL Probelauf]**, um einen Testlauf für den Massenimportvorgang aufzurufen. Experience Manager Assets zeigt die folgenden Details zum Massenimportvorgang an:
+Klicken Sie auf das Symbol ![Mehr](assets/do-not-localize/more-icon.svg) neben dem Konfigurationsnamen und dann auf **[!UICONTROL Probelauf]**, um einen Testlauf für den Massenimportauftrag aufzurufen. Experience Manager Assets zeigt die folgenden Details zum Massenimportauftrag an:
 
 ![Konsistenzprüfung des Massenimports](assets/bulk-import-dry-run.png)
 
@@ -225,7 +227,3 @@ Klicken Sie auf das Symbol ![Mehr](assets/do-not-localize/more-icon.svg) neben d
 ## Navigieren zu Assets nach einem Massenimport {#view-assets-after-bulk-import}
 
 Um den Asset-Zielspeicherort anzuzeigen, in den die Assets importiert werden, nachdem der Massenimportauftrag ausgeführt wurde, klicken Sie auf das Symbol ![Mehr](assets/do-not-localize/more-icon.svg) neben dem Konfigurationsnamen und dann auf **[!UICONTROL Assets anzeigen]**.
-
-## Video: Massenimport von Assets mithilfe von Assets View
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)

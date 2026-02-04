@@ -2,8 +2,8 @@
 title: Bearbeiten von Bildern in Content Hub mit Adobe Express
 description: Bearbeiten von Bildern in Content Hub mit Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 100%
 
@@ -12,6 +12,8 @@ ht-degree: 100%
 # Bearbeiten von Bildern in Content Hub {#edit-images-content-hub}
 
 Mit Content Hub können Sie neue Inhalte mit Adobe Express erstellen. Sie können vorhandene Inhalte mit anwenderfreundlichen Tools bearbeiten, Markenvarianten mit Vorlagen und Markenelementen erstellen und neue Inhalte mit den neuesten GenAI-Funktionen von Adobe Firefly erstellen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435003/?learn=on){transcript=true}
 
 ## Voraussetzungen {#prereqs-edit-image-content-hub}
 

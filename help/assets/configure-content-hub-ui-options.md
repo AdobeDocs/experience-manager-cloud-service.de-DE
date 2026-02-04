@@ -2,8 +2,8 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
-workflow-type: ht
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+workflow-type: tm+mt
 source-wordcount: '2265'
 ht-degree: 100%
 
@@ -34,6 +34,8 @@ Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von 
 * Branding-Inhalte, die Sie für Ihre Organisation anzeigen müssen.
 
 * alle benutzerspezifischen Links, die Sie zusätzlich zu Assets, Sammlungen und Erkenntnissen in Content Hub einschließen müssen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Voraussetzungen {#prerequisites-configuration-ui}
 

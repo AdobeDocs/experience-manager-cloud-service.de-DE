@@ -3,8 +3,8 @@ title: Freigeben von Assets in [!DNL the Content Hub]
 description: Freigeben von Assets in [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a6d995eddd714c356eadc6c1b668887bdfd011cd
-workflow-type: ht
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -13,6 +13,8 @@ ht-degree: 100%
 # Freigeben von Assets im Content Hub {#search-assets-as-a-link}
 
 Erstellen Sie einen Link zu ausgewählten Assets, um sie einfach für andere freizugeben. Wählen Sie als autorisierte Benutzerin bzw. autorisierter Benutzer von [!DNL Content Hub] ein oder mehrere Assets aus, die in Ihrer [!DNL Content Hub]-Umgebung verfügbar sind, generieren Sie einen Link und senden Sie diesen an andere private oder öffentliche Benutzende.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Voraussetzungen {#prerequisites}
 

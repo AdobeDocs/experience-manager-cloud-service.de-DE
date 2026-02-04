@@ -3,7 +3,7 @@ title: Hochladen Ihrer markenkonformen Assets in [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markenkonformen Assets in Content Hub hochladen
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 97%
@@ -18,6 +18,8 @@ ht-degree: 97%
 >abstract="Fügen Sie genehmigte Assets entweder aus dem lokalen Dateisystem zu Content Hub hinzu oder importieren Sie Assets aus OneDrive- oder Dropbox-Datenquellen. Alle Assets werden unabhängig von der Ordnerstruktur auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern."
 
 [Content Hub-Benutzende mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) können Assets zu Content Hub hinzufügen. Assets können aus dem lokalen Dateisystem hinzugefügt oder aus OneDrive- oder Dropbox-Datenquellen importiert werden. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Die Assets, die in Assets as a Cloud Service als `Approved` markiert sind, sind automatisch in Content Hub verfügbar. Weitere Informationen finden Sie unter [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md).
 
