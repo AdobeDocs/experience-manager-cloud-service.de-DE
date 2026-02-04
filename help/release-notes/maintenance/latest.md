@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
+source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '988'
 ht-degree: 24%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 24%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 24222 {#24222}
+## Version 24288 {#24288}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 24222, die am Mittwoch, 3. Februar 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 23963.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 24288, die am Donnerstag, 4. Februar 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 23963.
 
-Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-24222}
+>[!NOTE]
+>
+>Version 24222 wurde als privat gekennzeichnet.
+
+### Verbesserungen {#enhancements-24288}
 
 * CNTBF-604: Erstellen Sie eine neue Bundle-Version für den Content-Backflow.
 * CQ-4361592: Hinzufügen von TypeHint-Unterstützung für die Projekterstellung und -aktualisierung.
@@ -58,7 +62,7 @@ Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für die
 * SKYOPS-125574: Netcentric AC Tool-Pakete in Schnellstart aktualisieren.
 * SKYOPS-126150: Verbessert den obersten Befehl für Thread-Dumps-Generator-Skript.
 
-### Behobene Probleme {#fixed-issues-24222}
+### Behobene Probleme {#fixed-issues-24288}
 
 * FORMS-23687: Beheben eines SSV-Validierungsfehlers, wenn die Regel „enthält“ ohne Standardwert verwendet wird.
 * GRANITE-48472: Lokalisierungsfehler beim Ändern des Kennworts auf der Registerkarte Benutzereinstellungen bearbeiten.
@@ -75,10 +79,11 @@ Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für die
 * GRANITE-63293: Beheben Sie den Verlust des erforderlichen Sternchens nach dem ersten Authoring.
 * GRANITE-63360: Korrigieren Sie falsche Informationen, die angezeigt werden, wenn mehrere Pfade ausgewählt sind.
 * SITES-36242: Einschränken Sie die GraphQL-Option „Regex ausführen“ ein, um die Umgehung des Dispatcher-Filters zu beheben.
+* SITES-40122: Fehlerbehebung bei der Integration von Edge Delivery mit dem Content-Distribution-Ims-Service.
 * SKYOPS-84379: Verwenden Sie das neueste FACT-Tool, um die ordnungsgemäße Funktionsabfrage durch RDEs zu ermöglichen.
 * SKYOPS-121216: Setzen Sie die Aktualisierung auf die Jackson 2.20.0-Bibliotheken zurück.
 
-#### AEM Guides {#guides-24222}
+#### AEM Guides {#guides-24288}
 
 * GUIDES-38198 : Beim Aktualisieren einer Inline-MathML-Gleichung mit der Option MathML bearbeiten im Kontextmenü wird der aktualisierte Wert erst angezeigt, wenn die Seite aktualisiert wurde.
 * GUIDES-38276: Versionsbezeichnungen können nicht aus dem Bedienfeld „Versionsverlauf“ in der Assets-Benutzeroberfläche entfernt werden.
@@ -88,11 +93,11 @@ Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für die
 
 Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Bekannte Probleme {#known-issues-24222}
+### Bekannte Probleme {#known-issues-24288}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-24222}
+### Eingestellte Funktionen und APIs {#deprecated-24288}
 
 * AEMSRE-2896: Korrigieren Sie die benutzerdefinierte Handhabung der LogManager-Konfiguration.
 * GRANITE-62802: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `granite.auth.saml`.
@@ -109,11 +114,11 @@ Keine.
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-24222}
+### Sicherheitskorrekturen {#security-24288}
 
 Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion wurden 10 identifizierte Schwachstellen behoben, was für einen noch robusteren Systemschutz sorgt.
 
-### Eingebettete Technologien {#embedded-tech-24222}
+### Eingebettete Technologien {#embedded-tech-24288}
 
 | Technologie | Version | Link |
 |---|---|---|
