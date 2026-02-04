@@ -3,9 +3,9 @@ title: Verwenden von MCP mit AEM as a Cloud Service
 description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud Service verwenden.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
+source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Einführung {#introduction}
 
-Viele AEM-Teams arbeiten jetzt in IDEs und Chat-basierten Anwendungen wie Cursor, ChatGPT, Anthropic Claude und Microsoft Copilot Studio. Diese Anwendungen unterstützen das Model Context Protocol (MCP), das es Anwendungen ermöglicht, Backend-Tools standardisiert für große Sprachmodelle (LLMs) verfügbar zu machen.
+Viele Adobe Experience Manager (AEM)-Teams arbeiten jetzt in integrierten Entwicklungsumgebungen (IDEs) und Chat-basierten Anwendungen wie Cursor, ChatGPT, Anthropic Claude und Microsoft Copilot Studio. Diese Anwendungen unterstützen das Model Context Protocol (MCP), das es Anwendungen ermöglicht, Backend-Tools standardisiert für große Sprachmodelle (LLMs) verfügbar zu machen.
 
 Mit der MCP-Integration von AEM können verschiedene Personas um denselben Inhalt herum zusammenarbeiten:
 
@@ -119,19 +119,19 @@ Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwen
 
 **ChatGPT**
 
-![Konfigurieren von ChatGPT, Schritt 1](assets/chatgpt-1.png)
+![Konfigurieren von ChatGPT - Einstellungen](assets/chatgpt-1.png)
 
-![Konfigurieren von ChatGPT, Schritt 2](assets/chatgpt-2.png)
+![Konfigurieren von ChatGPT - Apps und Connectoren - Erweiterte Einstellungen](assets/chatgpt-2.png)
 
-![Konfigurieren von ChatGPT, Schritt 3](assets/chatgpt-3.png)
+![Konfigurieren von ChatGPT - Apps und Connectoren - Entwicklermodus](assets/chatgpt-3.png)
 
-![Konfigurieren von ChatGPT, Schritt 4](assets/chatgpt-4.png)
+![Konfigurieren von ChatGPT - Apps und Connectoren - Erstellen einer App](assets/chatgpt-4.png)
 
-![Konfigurieren von ChatGPT, Schritt 5](assets/chatgpt-5.png)
+![Konfigurieren von ChatGPT - Apps und Connectoren - Neue App](assets/chatgpt-5.png)
 
-![Konfigurieren von ChatGPT, Schritt 6](assets/chatgpt-6.png)
+![Konfigurieren von ChatGPT - Apps und Connectoren - AEM Content MCP Service](assets/chatgpt-6.png)
 
-![Konfigurieren von ChatGPT, Schritt 7](assets/chatgpt-7.png)
+![Konfigurieren von ChatGPT - Fragen Sie den AEM Content MCP Service](assets/chatgpt-7.png)
 
 * Fügen Sie die AEM MCP-Server-URL(s) in dem Bereich hinzu, in dem MCP-Verbindungen oder -Tools konfiguriert sind
 * Erstellen Sie einen Trigger für die Verbindung und melden Sie sich bei der Weiterleitung mit Ihrer Adobe ID an
@@ -141,19 +141,19 @@ Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwen
 
 **Claude**
 
-![Konfigurieren Sie Claude Schritt 1](assets/claude-1.png)
+![Claude konfigurieren - Einstellungen](assets/claude-1.png)
 
-![Konfigurieren Sie Claude Schritt 2](assets/claude-2.png)
+![Claude konfigurieren - Connectoren](assets/claude-2.png)
 
-![Konfigurieren Sie Claude Schritt 3](assets/claude-3.png)
+![Claude konfigurieren - Connectoren - Benutzerdefinierten Connector hinzufügen](assets/claude-3.png)
 
-![Konfigurieren Sie Claude Schritt 4](assets/claude-4.png)
+![Claude konfigurieren - Connectoren - Benutzerdefinierten Connector verbinden](assets/claude-4.png)
 
-![Konfigurieren Sie Claude Schritt 5](assets/claude-5.png)
+![Claude konfigurieren - Connectoren - Benutzerdefinierten Connector konfigurieren](assets/claude-5.png)
 
-![Konfigurieren Sie Claude Schritt 6](assets/claude-6.png)
+![Claude konfigurieren - Connectoren - Benutzerdefinierte Connector-Tool-Berechtigungen](assets/claude-6.png)
 
-![Konfigurieren Sie Claude Schritt 7](assets/claude-7.png)
+![Claude konfigurieren - AEM Content MCP Service fragen](assets/claude-7.png)
 
 * Registrieren Sie in Claudes MCP-Konfiguration die AEM MCP-Server-URL(s)
 * Adobe-Anmeldeablauf abschließen
@@ -163,15 +163,15 @@ Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwen
 
 **Cursor**
 
-![Konfigurieren des Cursors Schritt 1](assets/cursor-1.png)
+![Konfigurieren des Cursors - Einstellungen](assets/cursor-1.png)
 
-![Konfigurieren des Cursors Schritt 2](assets/cursor-2.png)
+![Konfigurieren des Cursors - Tools und MCP - Hinzufügen benutzerdefinierter MCP](assets/cursor-2.png)
 
-![Konfigurieren des Cursors Schritt 3](assets/cursor-3.png)
+![Konfigurieren des Cursors - Hinzufügen benutzerdefinierter MCP-Einstellungen](assets/cursor-3.png)
 
-![Konfigurieren des Cursors Schritt 4](assets/cursor-4.png)
+![Konfigurieren des Cursors - Verbinden](assets/cursor-4.png)
 
-![Konfigurieren des Cursors Schritt 5](assets/cursor-5.png)
+![Konfigurieren des Cursors - Neuen Service fragen](assets/cursor-5.png)
 
 * Erstellen Sie in den MCP-Einstellungen des Cursors einen neuen MCP-Server-Eintrag mit den AEM MCP-URLs
 * Bei Aufforderung mit Ihrer Adobe ID authentifizieren
@@ -180,25 +180,25 @@ Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwen
 
 **Microsoft Copilot Studio**
 
-![Konfigurieren Sie CoPilot Schritt 1](assets/copilot-1.png)
+![Konfigurieren von CoPilot - Agenten](assets/copilot-1.png)
 
-![Konfigurieren von CoPilot Schritt 2](assets/copilot-2.png)
+![Konfigurieren von Copilot - Tool hinzufügen](assets/copilot-2.png)
 
-![Konfigurieren von CoPilot Schritt 3](assets/copilot-3.png)
+![Konfigurieren des Kopiloten - Tool hinzufügen - Modellkontextprotokoll](assets/copilot-3.png)
 
-![Konfigurieren von CoPilot Schritt 4](assets/copilot-4.png)
+![Konfigurieren des Kopiloten - Hinzufügen eines Modell-Kontext-Protokoll-Servers (Vorschau)](assets/copilot-4.png)
 
-![Konfigurieren Sie CoPilot Schritt 5](assets/copilot-5.png)
+![Konfigurieren von Copilot - Tool hinzufügen - Neue Verbindung erstellen](assets/copilot-5.png)
 
-![Konfigurieren Sie CoPilot Schritt 6](assets/copilot-6.png)
+![Konfigurieren von Copilot - Tool hinzufügen - Hinzufügen und Konfigurieren](assets/copilot-6.png)
 
-![Konfigurieren Sie CoPilot Schritt 7](assets/copilot-7.png)
+![Konfigurieren des Kopiloten - Tool hinzufügen - Konfigurieren](assets/copilot-7.png)
 
-![Konfigurieren Sie CoPilot Schritt 8](assets/copilot-8.png)
+![Konfigurieren von Copilot - Verbindung testen](assets/copilot-8.png)
 
-![Konfigurieren von CoPilot Schritt 9](assets/copilot-9.png)
+![Konfigurieren von CoPilot - Verbindungen verwalten](assets/copilot-9.png)
 
-![Konfigurieren Sie CoPilot Schritt 10](assets/copilot-10.png)
+![Konfigurieren von CoPilot - Test Agent](assets/copilot-10.png)
 
 * Erstellen eines neuen Agenten
 * Navigieren Sie zum Abschnitt „Tool“ und klicken Sie auf **Tool hinzufügen**
