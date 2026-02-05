@@ -3,10 +3,10 @@ title: Versionshinweise zur Vorschau des universellen Editors
 description: Dies sind die Versionshinweise für die Vorabversion des universellen Editors.
 feature: Release Information
 role: Admin
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: b03ad4a29c55e6789b82d2da76708c6e31613c5e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,10 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige neue Funktionen {#what-is-new}
 
-* TBD
+* Dynamic Media-Links werden jetzt unterstützt.
 
 ## Anstehende Verbesserungen {#other-improvements}
 
-* TBD
+* Ein Problem mit falschen URLs für Videos wurde behoben.
+* Das Erstellen mehrerer Komponenten mit demselben Namen gibt keine 409 mehr zurück.
+* Die Headless-Arbeitsfläche behält jetzt nachfolgende Aktualisierungen eines Felds im Container bei.
