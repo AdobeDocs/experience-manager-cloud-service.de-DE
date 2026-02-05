@@ -3,7 +3,7 @@ title: Verwenden von MCP mit AEM as a Cloud Service
 description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud Service verwenden.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Dieser Schritt wird von jedem Benutzer (oder, sofern unterstützt, von einem Adm
 
 Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwendung auf einer allgemeinen Ebene aussieht.
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
 ![Konfigurieren von ChatGPT - Einstellungen](assets/chatgpt-1.png)
 
@@ -139,7 +139,7 @@ Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwen
 
   *„Listen Sie mithilfe der konfigurierten AEM-MCP-Tools alle Websites in Ihrer Autorenumgebung auf.“*
 
-**Claude**
+### Claude {#claude}
 
 ![Claude konfigurieren - Einstellungen](assets/claude-1.png)
 
@@ -161,7 +161,7 @@ Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwen
 * Stellen Sie sicher, dass der MCP-Server ausgewählt ist, bevor Sie mit der Konversation beginnen
 * Bitten Sie Claude, AEM-bezogene Aufgaben auszuführen. Claude wählt die vom MCP-Server bereitgestellten AEM-Tools nach Ihrer Aufforderung aus.
 
-**Cursor**
+### Mauszeiger {#cursor}
 
 ![Konfigurieren des Cursors - Einstellungen](assets/cursor-1.png)
 
@@ -178,7 +178,7 @@ Im Folgenden finden Sie Beispiele dafür, wie dies in jeder unterstützten Anwen
 * Optional können Sie einzelne Werkzeuge aktivieren oder deaktivieren, indem Sie auf die Werkzeugnamen klicken. Alle Tools sind standardmäßig aktiviert.
 * Verwenden Sie den Editor oder Chat des Cursors, um AEM-Tools als Teil von Entwicklungs- oder Inhalts-Workflows aufzurufen.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![Konfigurieren von CoPilot - Agenten](assets/copilot-1.png)
 
