@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
+source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 96%
+source-wordcount: '1637'
+ht-degree: 95%
 
 ---
 
@@ -138,6 +138,7 @@ Im Folgenden finden Sie die Komponententypen, die für das Rendern von Feldern v
 | [Auswählen](#select) | `select` |
 | [Registerkarte](#tab) | `tab` |
 | [Text](#text) | `text` |
+| [Textbereich](#textarea) | `textarea` |
 
 #### AEM-Tag {#aem-tag}
 
@@ -906,5 +907,33 @@ Text ermöglicht die Eingabe einer einzelnen Textzeile.   Er enthält zusätzli
 >[!TAB Screenshot]
 
 ![Screenshot eines Textkomponententyps](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### Textbereich {#textarea}
+
+Textbereich ermöglicht mehrere Zeilen mit Texteingabe.
+
+>[!BEGINTABS]
+
+>[!TAB Beispiel]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot des Textbereich-Komponententyps](assets/component-types/textarea.png)
 
 >[!ENDTABS]

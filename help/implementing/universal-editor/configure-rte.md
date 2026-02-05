@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Ed
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Die RTE-Konfiguration besteht aus zwei Teilen:
 * [`toolbar`](#toolbar): Die Symbolleistenkonfiguration steuert, welche Bearbeitungsoptionen in der Benutzeroberfläche verfügbar sind und wie sie organisiert sind.
 * [`actions`](#actions): Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen.
 
-Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit &#x200B;](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
+Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit ](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
 
 ```json
 [
@@ -220,6 +220,28 @@ Einzüge verfügen über eine Konfiguration auf Funktionsebene, die den Umfang d
 >[!NOTE]
 >
 >Die Verschachtelung von Listen über die Tabulatortaste/Umschalt+Tabulatortaste funktioniert unabhängig von den allgemeinen Einzugseinstellungen.
+
+### Als Text einfügen {#paste-as-text}
+
+Die `paste_text`-Editor-Aktion ermöglicht einen standardmäßigen Workflow zum Einfügen als reiner Text .
+
+* **Standardbefehl:** Mod-Shift-V (Befehl+Umschalt+V unter macOS, Strg+Umschalt+V unter Windows/Linux)
+* **Verhalten:** Einfügen aus Text/Nur (Quellformatierung wird ignoriert)
+   * In Listen erstellen Zeilenumbrüche neue Listenelemente.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### Sonstige Aktionen {#other}
 

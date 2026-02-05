@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1874'
 ht-degree: 91%
 
 ---
@@ -78,7 +78,7 @@ Die obere Navigationsleiste von Experience Platform befindet sich immer oben im 
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 
@@ -86,7 +86,7 @@ Durch Tippen oder Klicken auf das Kontosymbol wird ein Menü mit Ihren Benutzere
 
 ![Umgebungs-Umschalter](assets/environment-switcher.png)
 
-Für den universellen Editor gibt es unter **Produkteinstellungen** eine Option, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden Vorschauversion zu wechseln.
+Verwenden Sie für den universellen Editor unter der Überschrift **Produkteinstellungen** die Option **Zur Vorschau-Umgebung wechseln**, um zwischen der aktuellen Produktionsversion des universellen Editors und der kommenden [Vorschauversion“ ](/help/release-notes/universal-editor/preview.md)
 
 ### Die Symbolleiste des universellen Editors {#universal-editor-toolbar}
 
@@ -139,7 +139,7 @@ Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ au
 
 #### Lokale Entwickleranmeldung {#local-developer-login}
 
-Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [&#x200B; (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
+Wählen Sie das Symbol für die lokale Entwickleranmeldung aus, wenn Sie sich bei der lokalen AEM-SDK einfach authentifizieren [ (bei der lokalen Entwicklung)](/help/implementing/universal-editor/local-dev.md)
 
 ![Schaltfläche „Lokale Entwickleranmeldung“](assets/local-developer-login.png)
 
@@ -225,7 +225,7 @@ Der Editor nimmt den größten Teil des Fensters ein und ist der Ort, an dem die
 
 ![Bearbeiter](assets/editor.png)
 
-Standardmäßig wird der Editor geöffnet, sodass Sie [Inhalte erstellen](/help/sites-cloud/authoring/universal-editor/authoring.md) entweder im Kontext oder mithilfe des [Eigenschaftenbereichs“ &#x200B;](#properties-rail)
+Standardmäßig wird der Editor geöffnet, sodass Sie [Inhalte erstellen](/help/sites-cloud/authoring/universal-editor/authoring.md) entweder im Kontext oder mithilfe des [Eigenschaftenbereichs“ ](#properties-rail)
 
 Wenn sich der Editor im [Vorschaumodus](#preview-mode) befindet, können Sie durch den Inhalt navigieren und Links folgen, aber den Inhalt nicht bearbeiten.
 

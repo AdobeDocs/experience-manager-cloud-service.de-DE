@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
+source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
 workflow-type: tm+mt
-source-wordcount: '2710'
-ht-degree: 81%
+source-wordcount: '2835'
+ht-degree: 78%
 
 ---
 
@@ -118,7 +118,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 
 Vorhandene Tabellen können mit dem RTE bearbeitet werden, neue Tabellen können jedoch nicht erstellt werden.
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -135,7 +135,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -202,7 +202,32 @@ Die ausgewählte Komponente wird gelöscht.
 >
 >Verwenden Sie den Hotkey `Shift+Backspace`, um die ausgewählte Komponente aus ihrem Container zu löschen.
 
-### Neuanordnen von Komponenten {#reordering-components}
+### Neuanordnen und Verschieben von Komponenten {#reordering-components}
+
+Sie können Komponenten mithilfe des Kontextmenüs oder der Inhaltsstruktur verschieben und neu anordnen.
+
+#### Verschieben von Komponenten mit dem Kontextmenü {#move-context-menu}
+
+1. Klicken Sie mit der rechten Maustaste auf eine Komponente oder klicken Sie auf das Badge der ausgewählten Komponente, um das [Kontextmenü“ zu öffnen](#context-menu)
+1. Wählen Sie die gewünschte Option Verschieben aus.
+   * Nach ganz oben verschieben
+   * Nach oben verschieben
+   * Nach unten verschieben
+   * Nach ganz unten verschieben
+     ![Optionen im Kontextmenü verschieben](assets/move-options-in-conext-menu.png)
+
+Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
+
+>[!TIP]
+>
+>Verwenden Sie die Hotkeys `Command-U` oder `Shift-Command-U`, um nach oben bzw. nach oben zu gelangen.
+>Verwenden Sie die Hotkeys `Command-J` oder `Shift-Command-J`, um nach unten bzw. unten zu navigieren.
+
+>[!NOTE]
+>
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
+
+#### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 
 1. Wechseln Sie in den [Inhaltsstruktur-Modus](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), falls dieser nicht bereits aktiviert ist.
 1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.

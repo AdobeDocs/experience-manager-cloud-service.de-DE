@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.01.29
-description: Dies sind die Versionshinweise für die Version 2026.01.29 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.02.05
+description: Dies sind die Versionshinweise für die Version 2026.02.05 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 35%
+source-wordcount: '157'
+ht-degree: 45%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.01.29 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.02.05 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 29. Januar 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 5. Februar 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ Dies sind die Versionshinweise für die Version vom 29. Januar 2026 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* Die Methode „Komponente entfernen“ wurde `editorActions` bereitgestellt.
-* Die Methode „Komponente kopieren“ wurde `editorActions` bereitgestellt.
-* Die Methode „Komponente verschieben“ wurde `editorActions` bereitgestellt.
-* Die Methode „Komponente hinzufügen“ wurde `editorActions` bereitgestellt.
-* Definitionen wurden für [Erweiterbarkeit“ verfügbar](/help/implementing/universal-editor/extending.md)
-* Version 2.0 der Document Authoring-API wurde veröffentlicht.
+* Die Verschiebeaktion ist jetzt im [Kontextmenü“ verfügbar](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* Der RTE unterstützt jetzt [als Text einfügen.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -41,6 +37,4 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die `content`-Erweiterbarkeit wurde in umbenannt, um dem API-Schema zu `details`.
-* Das Verhalten des Kontextmenüs wurde verbessert.
-* Es wurde ein Fehler beim Klicken auf das Badge eines bearbeitbaren Elements behoben, sodass das Kontextmenü ordnungsgemäß geöffnet wird.
+* „In Vorschau veröffentlichen“ wurde für AEM 6.5 bei Verwendung des [`xwalk`-Plug-ins aktiviert.](/help/implementing/universal-editor/component-definition.md#plugins)
