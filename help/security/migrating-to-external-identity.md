@@ -363,7 +363,7 @@ Wenn lokale Benutzer und Gruppen bereits im Repository gespeichert wurden und di
 
 >[!IMPORTANT]
 >
->Alle Migrationsschritte müssen mit einem ordnungsgemäß konfigurierten Service-Benutzer (z. B. `group-provisioner`) ausgeführt werden, dem Berechtigungen zum Umgehen des Schutzes für `rep:externalId`- und `rep:externalPrincipalNames` gewährt wurden. Weitere Informationen finden [ unter ](#service-user-configuration)Service-Benutzerkonfiguration“.
+>Alle Migrationsschritte müssen mit einem ordnungsgemäß konfigurierten Service-Benutzer (z. B. `group-provisioner`) ausgeführt werden, dem Berechtigungen zum Umgehen des Schutzes für `rep:externalId`- und `rep:externalPrincipalNames` gewährt wurden. Weitere Informationen finden [&#x200B; unter &#x200B;](#service-user-configuration)Service-Benutzerkonfiguration“.
 
 ### Schritt 1: Externe Gruppenstruktur erstellen {#step-1-create-external-group-structure}
 
