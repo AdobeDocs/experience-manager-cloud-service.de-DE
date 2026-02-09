@@ -4,7 +4,7 @@ description: Technisches Handbuch zum Migrieren lokaler Benutzer und Gruppen zu 
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
 source-wordcount: '2232'
 ht-degree: 1%
@@ -363,7 +363,7 @@ Wenn lokale Benutzer und Gruppen bereits im Repository gespeichert wurden und di
 
 >[!IMPORTANT]
 >
->Alle Migrationsschritte müssen mit einem ordnungsgemäß konfigurierten Service-Benutzer (z. B. `group-provisioner`) ausgeführt werden, dem Berechtigungen zum Umgehen des Schutzes für `rep:externalId`- und `rep:externalPrincipalNames` gewährt wurden. Weitere Informationen finden [&#x200B; unter &#x200B;](#service-user-configuration)Service-Benutzerkonfiguration“.
+>Alle Migrationsschritte müssen mit einem ordnungsgemäß konfigurierten Service-Benutzer (z. B. `group-provisioner`) ausgeführt werden, dem Berechtigungen zum Umgehen des Schutzes für `rep:externalId`- und `rep:externalPrincipalNames` gewährt wurden. Weitere Informationen finden [ unter ](#service-user-configuration)Service-Benutzerkonfiguration“.
 
 ### Schritt 1: Externe Gruppenstruktur erstellen {#step-1-create-external-group-structure}
 
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### Checkliste vor der Migration {#pre-migration-checklist}
 
-* [ ] **Dienstbenutzer konfigurieren**: Erstellen und konfigurieren Sie den Dienstbenutzer (z. B. `group-provisioner`) mit den entsprechenden Berechtigungen
-* [ ] **Externe Prinzipalkonfiguration überprüfen**: Stellen Sie sicher, dass der Dienstbenutzer so konfiguriert ist, dass der Schutz auf `rep:externalId` und `rep:externalPrincipalNames` umgangen wird
-* [ ] **Berechtigungen für Service-** testen: Überprüfen, ob der Service-Benutzer externe Identitätseigenschaften in der Entwicklung festlegen kann
-* [ ] Identifizieren Sie den gesamten benutzerdefinierten Code, der Benutzer oder Gruppen erstellt
-* [ ] Überprüfen und Aktualisieren von benutzerdefiniertem Code zur Verwendung des externen Identitätsmodells
-* [ Testen ] aktualisierten Codes in der Entwicklungsumgebung
-* [ ] Inventar aller zu migrierenden lokalen Benutzer und Gruppen
-* [ ] Testen des Migrationsprozesses in niedrigeren Umgebungen
+* **Dienstbenutzer konfigurieren**: Erstellen und konfigurieren Sie den Dienstbenutzer (z. B. `group-provisioner`) mit den entsprechenden Berechtigungen
+* **Externe Prinzipalkonfiguration überprüfen**: Stellen Sie sicher, dass der Dienstbenutzer so konfiguriert ist, dass der Schutz auf `rep:externalId` und `rep:externalPrincipalNames` umgangen wird
+* **Berechtigungen für Service-Benutzer testen**: Überprüfen, ob der Service-Benutzer externe Identitätseigenschaften in der Entwicklung festlegen kann
+* Identifizieren des gesamten benutzerdefinierten Codes, der Benutzer oder Gruppen erstellt
+* Überprüfen und aktualisieren Sie benutzerdefinierten Code zur Verwendung des externen Identitätsmodells
+* Testen von aktualisiertem Code in der Entwicklungsumgebung
+* Inventarisieren aller zu migrierenden lokalen Benutzer und Gruppen
+* Testen des Migrationsprozesses in niedrigeren Umgebungen
 
 ### Ausführungsschritte {#execution-steps}
 
@@ -773,12 +773,12 @@ Als zusätzliche Sicherheitsebene können Sie CDN-Regeln konfigurieren, um den Z
 
 Vor der Bereitstellung von Migrations-Servlets in der Produktion:
 
-* [ ] Erstellen der IMS-Integration in AEM Developer Console
-* [ ] Konfigurieren von Servlets zur Validierung der ID des technischen Kontos
-* [ ] Testen des Authentifizierungsflusses in Entwicklungs-/Staging-Umgebungen
-* [ ] Erwägen zusätzlicher IP-basierter Einschränkungen auf CDN-Ebene
-* [ ] Plan zum Deaktivieren oder Entfernen von Migrations-Servlets nach Abschluss der Migration
-* [ ] und Protokollieren des gesamten Zugriffs auf Migrationsendpunkte
+* Erstellen der IMS-Integration in AEM Developer Console
+* Konfigurieren von Servlets zur Validierung der ID des technischen Kontos
+* Testen des Authentifizierungsflusses in Entwicklungs-/Staging-Umgebungen
+* Erwägen zusätzlicher IP-basierter Einschränkungen auf CDN-Ebene
+* Planen Sie die Deaktivierung oder Entfernung von Migrationsservlets nach Abschluss der Migration
+* Prüfen und Protokollieren des gesamten Zugriffs auf Migrationsendpunkte
 
 >[!IMPORTANT]
 >
