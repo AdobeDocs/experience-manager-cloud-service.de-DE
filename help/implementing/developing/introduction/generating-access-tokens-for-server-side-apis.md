@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens di
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 97%
+source-wordcount: '2229'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
@@ -71,7 +71,7 @@ Die Anwendung, die Aufrufe an AEM sendet, sollte in der Lage sein, auf die Anmel
 
 Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
 
-Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[&#x200B; von &#x200B;](https://github.com/adobe/aemcs-api-client-lib)Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
+Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[ von ](https://github.com/adobe/aemcs-api-client-lib)Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
 
 ```
 /*jshint node:true */
@@ -224,7 +224,6 @@ Gehen Sie wie folgt vor, um diese Aktualisierungserweiterung zu erreichen:
 
 * Nach dem Drücken der Schaltfläche wird ein Satz von Anmeldeinformationen generiert, der ein neues Zertifikat enthält. Installieren Sie die neuen Anmeldeinformationen auf Ihrem Nicht-AEM-Server und stellen Sie sicher, dass die Verbindung wie erwartet funktioniert, ohne die alten Anmeldeinformationen zu entfernen.
 * Achten Sie darauf, dass beim Generieren des Zugriffs-Tokens die neuen Anmeldeinformationen anstelle der alten verwendet werden.
-* Optional können Sie das vorherige Zertifikat widerrufen (und dann löschen), damit es nicht mehr zur Authentifizierung bei AEM as a Cloud Service verwendet werden kann.
 
 ## Widerrufen der Anmeldeinformationen {#credentials-revocation}
 
@@ -252,3 +251,15 @@ Wenn der private Schlüssel kompromittiert ist, müssen Sie Anmeldeinformationen
    ![Widerrufen der Zertifikatsbestätigung](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. Löschen Sie abschließend das kompromittierte Zertifikat.
+
+### Hinweis zum Widerrufen einzelner Zertifikate {#note-on-recovacting-individual-certificates}
+
+Für den JWT-Handshake (zum Abrufen eines Bearer-Tokens) muss nur Folgendes erfüllt sein:
+
+1. Sie haben den privaten Schlüssel
+1. Unter dem entsprechenden privaten Schlüssel in der Developer Console sind ein oder mehrere aktive Zertifikate vorhanden
+1. Während des Abrufs des Tokens (JWT-Handshake) prüft IMS, ob die JWT-Signatur mit einem gebundenen und aktiven (nicht abgelaufenen) Zertifikat übereinstimmt, das in unserem System aufgezeichnet ist. Dies können Sie in der Konsole sehen.
+
+Wenn Sie ein neues Zertifikat unter einer PK hinzufügen, könnte es so aussehen, als wären widerrufene Zertifikate weiterhin verwendbar. In der Tat sind alle Zertifikate unter einer PK gleichwertig. Wenn eine der Optionen aktiv ist, werden alle als aktiv betrachtet.
+
+Wenn dies ein Sicherheitsproblem darstellt, sollten Sie einen separaten privaten Schlüssel erstellen und alle Zertifikate auf dem alten privaten Schlüssel widerrufen.
