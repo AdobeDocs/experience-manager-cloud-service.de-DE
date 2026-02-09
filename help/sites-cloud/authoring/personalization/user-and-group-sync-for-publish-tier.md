@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 3cc787fe9a0be9a687f7c20744d93f1df4b76f87
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 100%
+source-wordcount: '1487'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Web-Programme bieten häufig Funktionen zur Kontoverwaltung, mit denen sich Enda
 * Registrierung
 * Anmeldung
 * Speichern von Anwenderprofildaten im Profil
-* Gruppenmitgliedschaft
+* Gruppenzugehörigkeit
 * Datensynchronisierung
 
 ## Registrierung {#registration}
@@ -37,7 +37,7 @@ Es kann benutzerdefinierter Registrierungs-Code geschrieben werden, der mindeste
 1. Anzeigen einer benutzerdefinierten AEM-Komponente, die Registrierungsinformationen erfasst
 1. Verwenden eines ordnungsgemäß bereitgestellten Service-Anwenders bei der Übermittlung, um Folgendes zu erreichen:
    1. Mithilfe einer der `findAuthorizables()`-Methoden der UserManager-API überprüfen, ob noch kein Anwender vorhanden ist
-   1. Erstellen eines Anwenderdatensatzes mithilfe einer der `createUser()`-Methoden der UserManager-API
+   1. Erstellen eines Anwendereintrags mithilfe einer der `createUser()`-Methoden der UserManager-API
    1. Beibehalten aller mit den `setProperty()`-Methoden der Authorizable-Schnittstelle erfassten Profildaten
 1. Optionale Abläufe, etwa die Anforderung, dass Anwender ihre E-Mail-Adresse validieren müssen
 
@@ -48,7 +48,7 @@ indem Sie eine Anfrage an den Support senden und darin das entsprechende Program
 
 ### Extern {#external-managed-registration}
 
-In einigen Fällen erfolgte die Registrierung oder Anwendererstellung zuvor in einer Infrastruktur außerhalb von AEM. In diesem Szenario wird der Anwenderdatensatz bei der Anmeldung in AEM erstellt.
+In einigen Fällen erfolgte die Registrierung oder Anwendererstellung zuvor in einer Infrastruktur außerhalb von AEM. In diesem Szenario wird der Anwendereintrag bei der Anmeldung in AEM erstellt.
 
 ## Anmeldung {#login}
 
@@ -76,7 +76,7 @@ Kunden können sich mit Identitätsanbieter zusammenarbeiten, der die Anwender a
 
 **SAML-basiert**
 
-Kunden können über ihren bevorzugten SAML-Identitätsanbieter die SAML-basierte Authentifizierung nutzen. Bei Inanspruchnahme eines IDP in Verbindung mit AEM ist der IDP dafür verantwortlich, die Anmeldeinformationen der Benutzenden zu authentifizieren und die Authentifizierung der Benutzenden mit AEM zu vermitteln, die Benutzerdatensätze nach Bedarf in AEM zu erstellen und die Gruppenmitgliedschaft der Benutzenden in AEM zu verwalten, wie durch die SAML-Assertion beschrieben.
+Kunden können über ihren bevorzugten SAML-Identitätsanbieter die SAML-basierte Authentifizierung nutzen. Bei Inanspruchnahme eines IDP in Verbindung mit AEM ist der IDP dafür verantwortlich, die Anmeldeinformationen der Benutzenden zu authentifizieren und die Authentifizierung der Benutzenden mit AEM zu vermitteln, die Benutzereinträge nach Bedarf in AEM zu erstellen und die Gruppenmitgliedschaft der Benutzenden in AEM zu verwalten, wie durch die SAML-Assertion beschrieben.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Die `com.adobe.granite.auth.oauth.provider`-Schnittstelle kann mit dem OAuth-Anb
 
 **Voraussetzung:**
 
-Als Best Practice sollten Sie sich beim Speichern benutzerspezifischer Daten immer auf den idP (Identitätsanbieter) als Single Point of Truth verlassen. Wenn die zusätzlichen Benutzerinformationen im lokalen Repository gespeichert sind, das nicht zum idP gehört, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization), indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben. Stellen Sie beim SAML-Authentifizierungsanbieter zusätzlich zur [Datensynchronisierung](#data-synchronization-data-synchronization) sicher, dass die [dynamische Gruppenmitgliedschaft](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) aktiviert ist.
+Als Best Practice sollten Sie sich beim Speichern benutzerspezifischer Daten immer auf den idP (Identitätsanbieter) als Single Point of Truth verlassen. Wenn die zusätzlichen Benutzerinformationen im lokalen Repository gespeichert sind, das nicht zum idP gehört, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization), indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben. Stellen Sie beim SAML-Authentifizierungsanbieter zusätzlich zur [Datensynchronisierung](#data-synchronization-data-synchronization) sicher, dass die [dynamische Gruppenzugehörigkeit](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) aktiviert ist.
 
 ### Sticky Sessions und Encapsulated Tokens {#sticky-sessions-and-encapsulated-tokens}
 
@@ -131,24 +131,40 @@ indem Sie eine Anfrage an den Support senden und darin das entsprechende Program
 
 Zugriffsrichtlinien auf Veröffentlichungsebene, auch geschlossene Benutzergruppen (Closed User Groups, CUGs) genannt, werden in der AEM-Authoring-Umgebung definiert, siehe [Erstellen einer geschlossenen Benutzergruppe](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=de#applying-your-closed-user-group-to-content-pages). Um den Zugriff auf bestimmte Abschnitte oder Seiten einer Website für einige Benutzende zu beschränken, wenden Sie die geschlossenen Benutzergruppen nach Bedarf mithilfe der AEM-Authoring-Umgebung wie hier beschrieben an, und replizieren Sie sie auf der Veröffentlichungsebene.
 
-* Wenn sich Anwender mithilfe von SAML bei einem Identitätsanbieter anmelden, identifiziert der Authentifizierungs-Handler die Gruppenmitgliedschaften des Anwenders (die mit den geschlossenen Anwendergruppen auf der Veröffentlichungsebene übereinstimmen sollten) und behält die Verknüpfung zwischen dem Anwender und der Gruppe über einen Repository-Datensatz bei.
+* Wenn sich Anwender mithilfe von SAML bei einem Identitätsanbieter anmelden, identifiziert der Authentifizierungs-Handler die Gruppenmitgliedschaften des Anwenders (die mit den geschlossenen Anwendergruppen auf der Veröffentlichungsebene übereinstimmen sollten) und behält die Verknüpfung zwischen dem Anwender und der Gruppe über einen Repository-Eintrag bei.
 * Wenn die Anmeldung ohne Einbindung eines Identitätsanbieters erfolgt, kann der benutzerdefinierte Code dieselben Repository-Strukturbeziehungen anwenden.
 
-Unabhängig von der Anmeldung kann benutzerdefinierter Code auch die Gruppenmitgliedschaften eines Anwenders beibehalten und verwalten, wie es die spezifischen Anforderungen eines Unternehmens erfordern.
+Unabhängig von der Anmeldung kann benutzerdefinierter Code auch die Gruppenzugehörigkeiten eines Anwenders beibehalten und verwalten, wie es die spezifischen Anforderungen eines Unternehmens erfordern.
 
 ## Datensynchronisierung {#data-synchronization}
 
-Endbenutzende von Websites erwarten bei jeder Website-Anfrage ein konsistentes Erlebnis. Das gilt auch dann, wenn sie sich mit einem anderen Browser anmelden: Selbst wenn sie ihm nicht bekannt sind, werden sie an verschiedene Server-Knoten der Infrastruktur auf Veröffentlichungsebene weitergeleitet. AEM as a Cloud Service erreicht dies durch eine schnelle Synchronisierung der `/home`-Ordnerhierarchie (Benutzerprofilinformationen, Gruppenmitgliedschaft usw.) für alle Knoten der Veröffentlichungsebene.
+Endbenutzende von Websites erwarten bei jeder Website-Anfrage ein konsistentes Erlebnis. Das gilt auch dann, wenn sie sich mit einem anderen Browser anmelden: Selbst wenn sie ihm nicht bekannt sind, werden sie an verschiedene Server-Knoten der Infrastruktur auf Veröffentlichungsebene weitergeleitet. AEM as a Cloud Service erreicht dies durch eine schnelle Synchronisierung der `/home`-Ordnerhierarchie (Benutzerprofilinformationen, Gruppenzugehörigkeit usw.) für alle Knoten der Veröffentlichungsebene.
 
 Anders als bei anderen AEM-Lösungen verfolgt die Anwender- und Gruppenmitgliedssynchronisierung in AEM as a Cloud Service keinen Point-to-Point-Messaging-Ansatz, sondern einen Ansatz, der auf Veröffentlichen/Abonnieren ausgelegt ist und keine Konfiguration durch den Kunden erfordert.
 
 >[!NOTE]
 >
->Standardmäßig ist die Synchronisierung von Anwenderprofilen und Gruppenmitgliedschaften nicht aktiviert, sodass die Daten nicht mit der Veröffentlichungsebene synchronisiert oder gar dauerhaft auf ihr beibehalten werden. Um die Funktion zu aktivieren, senden Sie eine Anfrage an den Kunden-Support, in der das entsprechende Programm und die entsprechenden Umgebung angegeben sind.
+>Standardmäßig ist die Synchronisierung von Anwenderprofilen und Gruppenzugehörigkeiten nicht aktiviert, sodass die Daten nicht mit der Veröffentlichungsebene synchronisiert oder gar dauerhaft auf ihr beibehalten werden. Um die Funktion zu aktivieren, senden Sie eine Anfrage an den Kunden-Support, in der das entsprechende Programm und die entsprechenden Umgebung angegeben sind.
 
 >[!IMPORTANT]
 >
 >Testen Sie die Implementierung ausgiebig, bevor Sie die Datensynchronisierung in der Produktionsumgebung aktivieren. Je nach Anwendungsfall und beibehaltenen Daten können Konsistenz- und Latenzprobleme auftreten.
+
+### Anforderungen an benutzerspezifischen Code und Migration {#custom-code-and-migration-requirements}
+
+Die folgenden Anforderungen gelten nur, wenn benutzerdefinierter Code zum Erstellen lokaler Benutzer oder lokaler Gruppen verwendet wird. Wenn die Datensynchronisation aktiviert ist, muss dieser benutzerdefinierte Code aktualisiert werden, um externe Benutzer und externe Gruppen mit dynamischer Gruppenmitgliedschaft zu erstellen.
+
+**Erforderliche Schritte:**
+
+* **Änderungen am benutzerdefinierten Code**: Jede benutzerdefinierte Logik, die für die Erstellung von Benutzenden oder Gruppen verantwortlich ist, muss aktualisiert werden auf:
+
+   * Erstellen Sie externe Benutzer, indem Sie die `rep:externalId`-Eigenschaft festlegen
+   * Erstellen Sie externe Gruppen, indem Sie die `rep:externalId` Eigenschaft festlegen
+   * Implementieren Sie die dynamische Gruppenmitgliedschaft mit der `rep:externalPrincipalNames`-Eigenschaft anstelle der Verwendung direkter Beziehungen zwischen Benutzer und Gruppe
+
+* **Migration bereits vorhandener Daten**: Alle vorhandenen lokalen Benutzer und Gruppen müssen in das externe Identitätsmodell migriert werden, bevor die Datensynchronisierung in Produktionsumgebungen aktiviert wird.
+
+Detaillierte technische Anleitungen zum Aktualisieren benutzerdefinierter Implementierungen und Migrieren vorhandener Benutzer und Gruppen finden Sie unter [Migrieren zu externer Identität und dynamischer Gruppenmitgliedschaft](/help/security/migrating-to-external-identity.md).
 
 ## Überlegungen zum Cache {#cache-considerations}
 
