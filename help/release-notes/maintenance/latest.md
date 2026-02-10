@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
+source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 24%
+source-wordcount: '999'
+ht-degree: 23%
 
 ---
 
@@ -95,7 +95,7 @@ Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Prob
 
 ### Bekannte Probleme {#known-issues-24288}
 
-Keine.
+* SITES-40408: Der GraphQL-Endpunkt gibt aufgrund der benutzerdefinierten Dispatcher-Neuschreibungsregeln 404 zurück.
 
 ### Eingestellte Funktionen und APIs {#deprecated-24288}
 
