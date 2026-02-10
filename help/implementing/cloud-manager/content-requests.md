@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7bf48596f64dd9682fa2fb3e5d5db513a8a7fbdc
+source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 67%
+source-wordcount: '2084'
+ht-degree: 65%
 
 ---
 
@@ -41,7 +41,7 @@ Inhaltsanfragen werden unabhängig davon gemessen, ob die Antwort vom CDN-Cache 
 
 <!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
@@ -65,7 +65,7 @@ Informationen zum Anzeigen und Nachverfolgen der Nutzung von Inhaltsanfragen anh
 
 ## Regeln für die Server-seitige Sammlung {#serverside-collection}
 
-AEM as a Cloud Service wendet Server-seitige Sammlungsregeln an, um Inhaltsanfragen zu zählen. Diese Regeln schließen bekannte Bots (wie Suchmaschinen-Crawler) aus, einschließlich anerkannter KI-/LLM-Crawler und einer Reihe von Überwachungsdiensten, die regelmäßig Ping an die Website senden. Anderer synthetischer, automatisierter oder Monitoring-artiger Traffic, der nicht auf dieser Ausschlussliste steht, wird als abrechnungsfähige Inhaltsanfrage gezählt.
+AEM as a Cloud Service wendet Server-seitige Sammlungsregeln an, um Inhaltsanfragen zu zählen. Diese Regeln schließen bekannte Bots (wie Suchmaschinen-Crawlers) aus, einschließlich erkannter KI-/LLM-Crawlers und einer Reihe von Überwachungsdiensten, die die Website regelmäßig pingen. Anderer synthetischer, automatisierter oder Monitoring-artiger Traffic, der nicht auf dieser Ausschlussliste steht, wird als abrechnungsfähige Inhaltsanfrage gezählt.
 
 In der folgenden Tabelle sind die Typen der eingeschlossenen und ausgeschlossenen Inhaltsanfragen mit jeweils kurzen Beschreibungen aufgeführt.
 
@@ -97,28 +97,28 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | URL für Kundinnen und Kunden zur Überwachung ihres Cloud Service-Programms | Ausgeschlossen | Adobe empfiehlt, die URL zu verwenden, um die Verfügbarkeit oder Konsistenzprüfung extern zu überwachen.<br><br>`/system/probes/health` |
 | Pod-Warm-up-Service für AEM as a Cloud Service | Ausgeschlossen | Agent: skyline-service-warmup/1.* |
 | Bekannte Suchmaschinen, soziale Netzwerke und HTTP-Bibliotheken (mit Tags von Fastly) | Ausgeschlossen | Bekannte Dienste, die die Site regelmäßig besuchen, um ihren Suchindex oder Dienst zu aktualisieren:<br><br>Beispiele:<br>• AddSearchBot<br>• AhrefsBot<br>• Applebot<br>• Ask Jeeves Corporate Spider<br>• Bingbot<br>• BingPreview<br>• BLEXBot<br>• BuiltWith<br>• Bytespider<br>• CrawlerKengo<br>• Facebookexternalhit<br>• Google AdsBot<br>• Google AdsBot Mobile<br>• Googlebot<br>• Googlebot Mobile<br>• lmspider<br>• LucidWorks<br>• `MJ12bot`<br>• Pinterest<br>• SemrushBot<br>• SiteImprove<br>• StashBot<br>• StatusCake<br>• YandexBot<br>• ContentKing<br>• Claudebot |
-| Bekannte AI/LLM Crawler (markiert von Fastly) | Ausgeschlossen | Anfragen von anerkannten KI-/LLM-Crawlern, die als bekannte Bots identifiziert werden (z. B. durch `User-Agent` oder andere Bot-Klassifizierungssignale). Diese Anfragen sind nicht fakturierbar.<br><br>Wenn ein KI-Agent nicht als bekannter Bot identifiziert wird (z. B. wenn er eine generische Browser-`User-Agent` verwendet), können seine Anfragen als abrechnungsfähige Inhaltsanfragen gezählt werden. |
+| Namhafte AI/LLM Crawler (markiert von Fastly) | Ausgeschlossen | Anfragen von erkannten KI-/LLM-Crawler, die als bekannte Bots identifiziert werden (z. B. durch `User-Agent` oder andere Bot-Klassifizierungssignale). Diese Anfragen sind nicht fakturierbar.<br><br>Beispiele für solche ausgeschlossenen Bots sind: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Mail Proxy, MailHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector und Yahoo Gemini.<br><br>Wenn ein KI-Agent nicht als bekannter Bot identifiziert wird (z. B. wenn er eine generische Browser-`User-Agent` verwendet), können seine Anfragen als abrechnungsfähige Inhaltsanfragen gezählt werden. |
 | Commerce Integration Framework-Aufrufe | Ausgeschlossen | Anfragen an AEM, die an das Commerce Integration Framework weitergeleitet werden. Die URL beginnt mit `/api/graphql`. Um eine doppelte Zählung zu vermeiden, sind sie für den Cloud-Service nicht abrechenbar. |
-| Ausschließen von `manifest.json` | Ausgeschlossen | Manifest ist kein API-Aufruf. Es bietet Informationen zur Installation von Websites auf Desktops oder Mobiltelefonen. Adobe sollte eine JSON-Anfrage an `/etc.clientlibs/*/manifest.json` nicht zählen |
+| Client-Bibliotheken (/etc.clientlibs/*) — ausgeschlossen | Ausgeschlossen | Anfragen unter /etc.clientlibs/* sind Client-Bibliotheks-Assets auf Plattformebene und von AEM verwendete Laufzeitkonfigurationsdateien. Diese Anfragen liefern keine von Kunden erstellten Inhalte oder Geschäftsdaten und zählen daher nicht als Inhaltsanfragen. |
 | Ausschließen von `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, wurde festgestellt, dass in einigen Szenarien wie bei SAML-Authentifizierungsabläufen Favicons als HTML zurückgegeben wurden. Daher werden Favicons explizit aus der Zählung ausgeschlossen. |
 | Experience Fragment (XF) – Wiederverwendung derselben Domain | Ausgeschlossen | Anfragen an XF-Pfade (z. B. `/content/experience-fragments/...`) von Seiten, die auf derselben Domain gehostet werden (wie durch die Referrer-Kopfzeile identifiziert, die mit dem Anfrage-Host übereinstimmt).<br><br> Beispiel: Eine Homepage auf `aem.customer.com`, die ein XF für ein Banner oder eine Karte aus derselben Domain abruft.<br><br>・ URL stimmt überein mit /content/experience-fragments/…<br>・ Referrer-Domain stimmt überein `request_x_forwarded_host`<br><br>**Hinweis:** Wenn der Experience Fragment-Pfad angepasst wird (z. B. mithilfe von `/XFrags/...` oder einem Pfad außerhalb von `/content/experience-fragments/`), wird die Anfrage nicht ausgeschlossen und kann gezählt werden, selbst wenn es sich um dieselbe Domain handelt. Adobe empfiehlt die Verwendung der standardmäßigen XF-Pfadstruktur von Adobe, um sicherzustellen, dass die Ausschlusslogik korrekt angewendet wird. |
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
 * Stellen Sie sicher, dass alle Antworten vom Typ „Seite nicht gefunden“ mit dem HTTP-Status 404 zugestellt werden.  Wenn sie mit dem Status 200 zurückgegeben werden, werden sie für Inhaltsanfragen gezählt.
 * Leiten Sie Konsistenzprüfungs- oder Überwachungs-Tools an die URL unter /system/probes/health oder verwenden Sie die HEAD-Methode anstelle von GET, um aufkommende Inhaltsanfragen zu vermeiden.
-* Schaffen Sie ein ausgewogenes Verhältnis zwischen Ihren Anforderungen an die Aktualität von Inhalten und den AEM-Lizenzkosten für jeden benutzerdefinierten Such-Crawler, den Sie auf Ihrer Site integriert haben.  Ein übermäßig aggressiver Crawler kann viele Inhaltsanfragen verarbeiten.
+* Schaffen Sie ein ausgewogenes Verhältnis zwischen Ihren Anforderungen an die Aktualität von Inhalten und den AEM-Lizenzkosten für alle benutzerdefinierten Such-Crawler, die Sie auf Ihrer Site integriert haben.  Eine übermäßig aggressive Crawler kann viele Inhaltsanfragen verbrauchen.
 * Behandeln Sie alle Weiterleitungen als Server-seitig (Status 301 oder 302) und nicht Client-seitig (Status 200 mit JavaScript-Weiterleitung), um zwei separate Inhaltsanfragen zu vermeiden.
 * Kombinieren oder reduzieren Sie API-Aufrufe, bei denen es sich um JSON-Antworten von AEM handelt, die geladen werden können, um die Seite zu rendern.
 * Stellen Sie sicher, dass der Benutzeragent des Browsers ordnungsgemäß an AEM übergeben wird. Dabei wird die oben beschriebene Ausschlussregel für Inhaltsanfragen von „bekannten Suchmaschinen“ verwendet.  Manchmal geht der ursprüngliche Benutzeragent bei bestimmten Headless-Implementierungen oder CDN-Konfigurationen verloren. In diesem Fall kann der Ausschluss verhindert werden, was zu höheren Inhaltsanfragen führen kann, als wenn der Benutzeragent weitergeleitet würde.
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Überprüfen Sie Ihre Implementierungs- und Traffic-Muster, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [&#x200B; (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
+* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Überprüfen Sie Ihre Implementierungs- und Traffic-Muster, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [ (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
 
 ```
 trafficFilters:
