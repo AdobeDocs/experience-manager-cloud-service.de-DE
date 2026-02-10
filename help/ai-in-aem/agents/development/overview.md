@@ -3,13 +3,13 @@ title: Übersicht über den Entwicklungsagenten
 description: Erfahren Sie, wie der Entwicklungsagent in AEM fehlgeschlagene Pipelines in Cloud Manager analysiert und Protokolle erstellt, um Code-Fehlerbehebungen vorzuschlagen und das Debugging zu beschleunigen.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 30b715d4e43bf83016622e3cf13f100062a1c08d
+exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
+source-git-commit: eeaa119711b480197b5807b85eb9c566a735f270
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
-
 
 # Übersicht über den Entwicklungsagenten {#development-agent-overview}
 
@@ -17,7 +17,7 @@ Der Entwicklungs-Agent unterstützt AEM-Entwickler und -Administratoren dabei, C
 
 Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten helfen, indem er Fehlerbehebungen vorschlägt und so Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen spart. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478016?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -30,6 +30,8 @@ Derzeit kann der Agent Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung 
 -->
 
 Um auf diesen Agenten zuzugreifen, lesen Sie die [Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) für Anweisungen zur Registrierung für das Beta-Programm und stellen Sie sicher, dass Sie Ihr Interesse am Entwicklungs-Agent bekunden. Sie können auch ein E-Mail-Feedback für den Entwicklungsagenten an [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) senden.
+
+[In einem Tutorial erfahren ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
 
 ## Zugriff auf den Entwicklungsagenten über Cloud Manager {#how-to-access-the-agent}
 
