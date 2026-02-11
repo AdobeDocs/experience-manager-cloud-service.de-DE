@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
+source-git-commit: e58e1355b923e1da447e3dbcfd0a81086aee3e66
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1018'
 ht-degree: 23%
 
 ---
@@ -90,6 +90,10 @@ Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für die
 * GUIDES-36641: Beim Generieren der AEM Sites-Ausgabe werden die Zuordnungstitel, die Schlüsselwörter und Thementitel mit `<ph>` enthalten, nicht in die veröffentlichte Ausgabe aufgenommen.
 * GUIDES-37837: Beim Versuch, ein Thema oder eine Zuordnung zu speichern, kann der Vorgang gelegentlich mit dem Fehler Fehler Datei konnte nicht gespeichert werden fehlschlagen, insbesondere während intensiver Asset-Verarbeitungsaufgaben oder Übersetzungs-Workflows, die im Hintergrund ausgeführt werden.
 * GUIDES-27774: Der Bericht Beschädigte Liste enthält fälschlicherweise externe Links, gültige `keyrefs` und Schlüsselwörter, die im Rahmen der aktuellen Zuordnung ordnungsgemäß aufgelöst werden.
+
+>[!NOTE]
+>
+> Es gibt eine grundlegende Änderung in AEM Guides, die Sie beachten sollten: [Verbesserte Handhabung für schreibgeschützte Dateien](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
