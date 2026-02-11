@@ -4,10 +4,10 @@ description: Der Seiteneditor wird weiterhin von Adobe unterstützt, aber der un
 feature: Developing
 role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1a04bebf073ac10100dede9b5e9f835665588cf3
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 100%
+source-wordcount: '1085'
+ht-degree: 98%
 
 ---
 
@@ -74,10 +74,11 @@ Da die Funktionslücke zwischen den beiden Editoren ständig kleiner wird, infor
 | Gerätesimulation | [!BADGE Verfügbar]{type=Positive} | [Konfigurierte Geräte können simuliert werden](/help/sites-cloud/administering/responsive-layout.md), Benutzende können jedoch nicht manuell die Bildschirmabmessungen für die Simulation ändern. | [!BADGE Verfügbar]{type=Positive} | [Alle zu simulierenden Bildschirmabmessungen können manuell eingegeben werden](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator), Standardhaltepunkte können jedoch nicht konfiguriert werden. |
 | [Seitensperren](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Berücksichtigt den in der Sites-Konsole festgelegten Sperrstatus mit der im Editor verfügbaren Erweiterung zum Sperren/Entsperren von Seiten |
 | [Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Verfügbar über Sites Admin, einschließlich Erweiterung zum Zugriff auf die Eigenschaften von Seiten über den Editor |
-| Mehrfachfeldeigenschaften | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Nicht verfügbar]{type=Negative} | Geplant |
+| Mehrfachfeldeigenschaften | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | [Remote-DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
 | [Seitenversionierung](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} |  |
-| [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) und [Differenzansicht](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Nicht verfügbar]{type=Negative} | Geplant |
+| [Vergleichsansicht](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Teilweise verfügbar]{type=Caution} | Verfügbar für Edge Delivery Services-Anwendungsfälle, aber nicht Headless |
+| [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Nicht verfügbar]{type=Negative} | Geplante Versionen sind weiterhin in der Sites-Konsole verfügbar |
 | In Admin anzeigen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Verfügbar]{type=Positive} | Verfügbar als Erweiterung für Seiten |
 | Seitenstatus anzeigen | [!BADGE Verfügbar]{type=Positive} |  | [!BADGE Nicht verfügbar]{type=Negative} | Verfügbar in der Sites-Konsole |
 | Erweiterbarkeit | [!BADGE Verfügbar]{type=Positive} | Als AEM-Überlagerungen | [!BADGE Verfügbar]{type=Positive} | Als klar definierte Erweiterungspunkte mit dem App Builder ohne umfangreiches AEM-spezifisches Wissen |
