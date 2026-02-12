@@ -1,13 +1,13 @@
 ---
 title: Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI
-description: Erfahren Sie mehr über die Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI
+description: Informationen zur Bereitstellung von AEM-Inhaltsfragmenten mit OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
-workflow-type: ht
+source-git-commit: 73bfeb19eebe104a772d1c420fe6471fea3e1225
+workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Die vollständige Dokumentation finden Sie unter [Bereitstellung von AEM-Inhalts
 
 >[!NOTE]
 >
->Unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md) finden Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der damit verbundenen Konzepte.
+>Weitere Informationen finden Sie unter [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md). Dort erhalten Sie einen Überblick über die verschiedenen verfügbaren APIs und einen Vergleich einiger der beteiligten Konzepte.
 
 >[!IMPORTANT]
 >
