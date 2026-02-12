@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 98465743f73f38e2a766657dda8c9ff18ecea856
+source-git-commit: f587a30da747ae3d53848ef5bb30c32a9b5d78e1
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '585'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ Vorlagen stellen die Markenkonsistenz sicher und sparen Zeit für häufig verwen
 
 1. Öffnen Sie die AEM Forms as a Cloud Service-Instanz.
 1. Wechseln Sie zu **Forms > Forms und Dokumente** und klicken Sie auf **Erstellen > Interaktive Kommunikation**.
-1. Wählen Sie im Erstellungsformular **Option** Vorlage aus der Vorlagenauswahl aus.
+1. Wählen Sie im Erstellungsformular **Option** aktivierte Vorlage aus der Auswahl aus.
 1. Füllen Sie andere Details wie Titel, Name, Autor usw. aus.
 1. Klicken Sie **Erstellen**, um Ihre Kommunikation mit der ausgewählten Vorlagenstruktur zu gestalten.
 1. Dadurch wird der IC-Editor geöffnet, in dem Sie mit der Gestaltung Ihrer Kommunikation beginnen können.
