@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4c0a883cc0ccff979db6da89b076a7782cd63d92
+source-git-commit: a0f33b44bf7545652201e9cc9c4feda8642f1014
 workflow-type: tm+mt
-source-wordcount: '6985'
+source-wordcount: '6989'
 ht-degree: 95%
 
 ---
@@ -251,6 +251,7 @@ ht-degree: 95%
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + [Vorschau von Versionshinweisen für den universellen Editor](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Versionshinweise für 2026.02.05](/help/release-notes/universal-editor/2026/2026-02-05.md)
          + [Versionshinweise für 2026.01.29](/help/release-notes/universal-editor/2026/2026-01-29.md)
          + [Versionshinweise für 2026.01.22](/help/release-notes/universal-editor/2026/2026-01-22.md)
          + [Versionshinweise für 2026.01.15](/help/release-notes/universal-editor/2026/2026-01-15.md)
@@ -1276,7 +1277,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

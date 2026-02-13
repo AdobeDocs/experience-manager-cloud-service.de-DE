@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.02.05
-description: Dies sind die Versionshinweise für die Version 2026.02.05 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.02.13
+description: Dies sind die Versionshinweise für die Version 2026.02.13 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
+source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 45%
+source-wordcount: '182'
+ht-degree: 39%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.02.05 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.02.13 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 5. Februar 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 13. Februar 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,8 +26,8 @@ Dies sind die Versionshinweise für die Version vom 5. Februar 2026 des universe
 
 ## Neue Funktionen {#what-is-new}
 
-* Die Verschiebeaktion ist jetzt im [Kontextmenü“ verfügbar](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
-* Der RTE unterstützt jetzt [als Text einfügen.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
+* Dynamic Media-Links werden jetzt unterstützt.
+* Schema und Datentyp für die Erstellung von Blöcken mit [Dokumenterstellung](https://docs.da.live/developers/reference/universal-editor) sind jetzt verfügbar.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -37,4 +37,6 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* „In Vorschau veröffentlichen“ wurde für AEM 6.5 bei Verwendung des [`xwalk`-Plug-ins aktiviert.](/help/implementing/universal-editor/component-definition.md#plugins)
+* Ein Problem mit falschen URLs für Videos wurde behoben.
+* Das Erstellen mehrerer Komponenten mit demselben Namen gibt keine 409 mehr zurück.
+* Die Headless-Arbeitsfläche behält jetzt nachfolgende Aktualisierungen eines Felds im Container bei.
