@@ -43,7 +43,7 @@ Die Entwickler behalten die volle Kontrolle darüber, was ausgeliefert wird. All
 
 ## Navigation {#navigation}
 
-Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen ](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
+Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen &#x200B;](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
 
 ![Startbildschirm der Konsole](assets/console-home.png)
 
