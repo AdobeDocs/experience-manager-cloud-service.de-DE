@@ -3,7 +3,8 @@ title: Experience Modernization Console
 description: Referenzhandbuch für die Benutzeroberfläche und die Funktionen der Experience Modernization Console
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c2f258bfcfff8392af2863d874d4a4235f042193
+exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -42,7 +43,7 @@ Die Entwickler behalten die volle Kontrolle darüber, was ausgeliefert wird. All
 
 ## Navigation {#navigation}
 
-Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen &#x200B;](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
+Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen ](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
 
 ![Startbildschirm der Konsole](assets/console-home.png)
 

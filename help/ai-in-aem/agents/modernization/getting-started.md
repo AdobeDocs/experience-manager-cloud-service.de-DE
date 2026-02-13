@@ -3,9 +3,10 @@ title: Erste Schritte mit dem Experience Modernization Agent
 description: Lernen Sie die ersten Schritte kennen, um mit dem Experience Modernization Agent mithilfe der Experience Modernization Console schnell produktiv zu werden.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c80ce5a9fc5f208fd910d5cef72225085248fb4d
+exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Lernen Sie die ersten Schritte kennen, um mit dem Experience Modernization Agent
 
 1. Wählen Sie ein [Edge Delivery Services](/help/edge/overview.md)-Repository zur Verwendung mit der Experience Modernization Console aus.
    * Dabei kann es sich um ein bestehendes Edge Delivery Services-Projekt handeln. Sie können aber auch nach dem [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) ein neues erstellen, indem Sie das [Textbausteinrepository“ verwenden.](https://github.com/adobe/aem-boilerplate)
-1. Stellen Sie sicher, dass [AEMY GitHub](https://github.com/apps/aem-aemy)App) im Repository installiert ist.
+1. Stellen Sie sicher, dass der [AEM Code Connector](https://github.com/apps/aem-code-connector) im Repository installiert ist.
    * Dadurch kann die Konsole Ihren Code überprüfen.
 1. Stellen Sie sicher, dass die [AEM Code Sync GitHub](https://github.com/apps/aem-code-sync)App im Repository installiert ist.
    * Dadurch kann Edge Delivery Services Ihren Code synchronisieren.
@@ -41,7 +42,7 @@ Die Konsole fordert Sie bei der ersten Anmeldung zur Angabe eines Repositorys au
 ![Erster Anmeldebildschirm der Konsole](assets/first-sign-on.png)
 
 1. Klicken Sie auf **Repository verbinden**.
-1. Dadurch wird die AEM-App auf einer neuen Browser-Registerkarte geöffnet. Klicken Sie **AEM AEMY autorisieren**.
+1. Dadurch wird die AEM Code Connector-App auf einer neuen Browser-Registerkarte geöffnet. Klicken Sie **AEM Code Connector autorisieren**.
 1. Wählen Sie zurück in der Konsole **Inhaber**, **Repository** und **Verzweigungsauswahl** und klicken Sie auf **In Arbeitsbereich auschecken**.
    ![Verbindung zum GitHub-Projekt herstellen](assets/connect-to-github-project.png)
 1. Wenn Sie aufgefordert werden **„Vorhandenen Arbeitsbereich ersetzen**, klicken Sie auf **Arbeitsbereich ersetzen**.
