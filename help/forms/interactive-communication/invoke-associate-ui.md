@@ -24,8 +24,8 @@ Bevor Sie die Benutzeroberfläche „Verknüpfen“ mit Ihrer Anwendung integrie
 
 - Interaktive Kommunikation erstellt und veröffentlicht
 - Browser mit aktivierter Popup-Unterstützung
-- Verknüpfen [Benutzer müssen Teil der Gruppe „forms-Associates“ sein](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Authentifizierung konfiguriert mit einem [von AEM unterstützten Authentifizierungsmechanismus](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (z. B. SAML 2.0, OAuth oder benutzerdefinierte Authentifizierungs-Handler)
+- Verknüpfen [Benutzer müssen Teil der Gruppe „forms-Associates“ sein](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Authentifizierung konfiguriert mit einem [von AEM unterstützten Authentifizierungsmechanismus](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/authentication) (z. B. SAML 2.0, OAuth oder benutzerdefinierte Authentifizierungs-Handler)
 
 >[!NOTE]
 >
