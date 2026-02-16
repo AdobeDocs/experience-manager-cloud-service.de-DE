@@ -4,15 +4,13 @@ description: Erfahren Sie, wie Sie die AEM Forms Associate-Benutzeroberfläche i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-hidefromtoc: true
-source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
+exl-id: f946ccea-86d0-4086-8208-9583b8206244
+source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1074'
 ht-degree: 2%
 
 ---
-
 
 # Integrieren der Associate-Benutzeroberfläche in Ihr Programm
 
@@ -26,13 +24,13 @@ Bevor Sie die Benutzeroberfläche „Verknüpfen“ mit Ihrer Anwendung integrie
 
 - Interaktive Kommunikation erstellt und veröffentlicht
 - Browser mit aktivierter Popup-Unterstützung
-- Verknüpfen [Benutzer müssen Teil der Gruppe „forms-Associates“ sein](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Authentifizierung konfiguriert mit einem [von AEM unterstützten Authentifizierungsmechanismus](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/authentication) (z. B. SAML 2.0, OAuth oder benutzerdefinierte Authentifizierungs-Handler)
+- Verknüpfen [Benutzer müssen Teil der Gruppe „forms-Associates“ sein](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Authentifizierung konfiguriert mit einem [von AEM unterstützten Authentifizierungsmechanismus](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (z. B. SAML 2.0, OAuth oder benutzerdefinierte Authentifizierungs-Handler)
 
 >[!NOTE]
 >
 >- Dieser Artikel zeigt die Authentifizierungskonfiguration mithilfe von SAML 2.0 mit [Microsoft Entra ID (Azure AD) als Identitätsanbieter](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Für die Benutzeroberfläche von Associate sind zusätzliche SAML-Konfigurationen erforderlich, die über die Standardeinrichtung hinausgehen, die im Artikel [SAML 2.0-Authentifizierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) erläutert wird. Weitere Informationen finden Sie [&#x200B; Abschnitt „Zusätzliche SAML-Konfigurationen für &#x200B;](#additional-saml-configurations-for-associate-ui)-Benutzeroberfläche“.
+>- Für die Benutzeroberfläche von Associate sind zusätzliche SAML-Konfigurationen erforderlich, die über die Standardeinrichtung hinausgehen, die im Artikel [SAML 2.0-Authentifizierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) erläutert wird. Weitere Informationen finden Sie [ Abschnitt „Zusätzliche SAML-Konfigurationen für ](#additional-saml-configurations-for-associate-ui)-Benutzeroberfläche“.
 
 ### Zusätzliche SAML-Konfigurationen für die Associate-Benutzeroberfläche
 
@@ -115,7 +113,11 @@ Dieser Abschnitt führt Sie durch den Start der Benutzeroberfläche „Associate
 
 Um schnell zu testen und zu verstehen, wie die Integration der Associate-Benutzeroberfläche funktioniert, verwenden Sie die folgende HTML-Beispielseite. Kopieren Sie diesen Code in eine HTML-Datei und öffnen Sie sie in Ihrem Browser.
 
-Dieses Beispiel bietet eine einfache Formularoberfläche, in der Sie Details zur interaktiven Kommunikation eingeben und die Benutzeroberfläche „Zuordnen“ mit einem Klick starten können.
+>[!NOTE]
+>
+> Dieses Beispiel-HTML erfordert eine IC-ID und einen Vorbefüllungs-Service. Sie können sie mit Ihrer IC-ID und dem Vorbefüllungs-Service „FdmTestData“ testen.
+
+Das HTML-Beispiel bietet eine einfache Formularoberfläche, in der Sie Details zur interaktiven Kommunikation eingeben und die Benutzeroberfläche „Zuordnen“ mit einem Klick starten können.
 
 ```html
 <!DOCTYPE html>
@@ -438,21 +440,28 @@ Jetzt können Sie die Benutzeroberfläche von Associate über die HTML-Beispiels
 
 1. **IC-ID eingeben**: Geben Sie im Feld **IC-ID** die Kennung Ihrer veröffentlichten interaktiven Kommunikation ein. Dies ist das einzige erforderliche Feld.
 
-2. **Vorbefüllungs-Service konfigurieren** (optional): Wenn Sie den IC mit dynamischen Daten vorbefüllen möchten, geben Sie den Namen des Formulardatenmodell-Service in das Feld **Vorbefüllungs-Service** ein. Verwenden Sie beispielsweise `FdmTestData` für Beispieldaten oder `IC-FDM` für Testdaten.
+1. **Vorbefüllungs-Service konfigurieren**: Wenn Sie den IC mit dynamischen Daten vorbefüllen möchten, geben Sie den Namen des Formulardatenmodell-Service in das Feld **Vorbefüllungs-Service** ein. Verwenden Sie beispielsweise `FdmTestData` für Beispieldaten.
 
-3. **Dienstparameter hinzufügen** (optional): Geben Sie im Feld **Dienstparameter (JSON)** ein JSON-Objekt mit den Parametern ein, die für den Vorbefüllungs-Service erforderlich sind. Zum Beispiel:
+   ![Beispiel für die HTML-Benutzeroberfläche](/help/forms/assets/samplehtmlui.png)
+
+1. **Klicken auf Benutzeroberfläche von Launch Associate**: Klicken Sie auf die Schaltfläche **Benutzeroberfläche von Launch Associate**. Ein neues Browser-Fenster mit der Benutzeroberfläche „Verknüpfen“ wird geöffnet, die mit der interaktiven Kommunikation vorgeladen wird.
+
+Geben Sie die Daten ein, und die Benutzeroberfläche „Verknüpfen“ wird wie unten dargestellt angezeigt:
+
+![Benutzeroberfläche zuordnen](/help/forms/assets/associateui.png)
+
+>[!NOTE]
+>
+> Wenn sich das Fenster nicht öffnet, überprüfen Sie, ob Ihr Browser Popups für diese Site zulässt.
+
+
+<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-4. **PDF-Optionen festlegen** (optional): Konfigurieren Sie im Feld **Optionen (JSON)** Rendering-Optionen wie Gebietsschema, Anlagen oder Einstellungen für die Barrierefreiheit.
-
-5. **Klicken auf Benutzeroberfläche von Launch Associate**: Klicken Sie auf die Schaltfläche **Benutzeroberfläche von Launch Associate**. Ein neues Browser-Fenster mit der Benutzeroberfläche „Verknüpfen“ wird geöffnet, die mit der interaktiven Kommunikation vorgeladen wird.
-
->[!NOTE]
->
-> Wenn sich das Fenster nicht öffnet, überprüfen Sie, ob Ihr Browser Popups für diese Site zulässt.
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 ## Fehlerbehebung
 
