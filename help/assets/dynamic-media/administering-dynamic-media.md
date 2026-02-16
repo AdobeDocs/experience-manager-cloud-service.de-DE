@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 8a8f3d7b17d79791a3ebf6b583ffcccfcf214470
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 60%
 
 ---
 
@@ -45,3 +45,20 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
 >* Sobald Sie Adobe [!DNL Experience Manager] eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich in einer aktualisierten Instanz von [!DNL Experience Manager] befinden und Dynamic Media noch nicht verwendet haben, müssen Sie die Assets wahrscheinlich erneut verarbeiten, um Dynamic Media für sie verwenden zu können. Siehe [Neuverarbeitung von Assets in einem Ordner](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+
+## Einmalige DNS-Aktualisierung erforderlich für die Erneuerung von Dynamic Media-Zertifikaten {#dns-update-dynamic-media-certificate-renewals}
+
+Wenn Ihre Domain einen CAA-DNS-Eintrag (Certification Authority Authorization) verwendet, müssen Sie DigiCert autorisieren, die kontinuierliche Erneuerung von TLS/SSL-Zertifikaten zuzulassen, die von Dynamic Media-Hostnamen verwendet werden.
+
+Fügen Sie den folgenden CAA-Eintrag am Stamm (apex) Ihrer Domain hinzu:
+
+```
+<yourdomain> CAA 0 issue "digicert.com"
+```
+
+Dies ist eine einmalige Veränderung.
+
+Sie können mithilfe Ihrer DNS-Provider-Tools oder eines „CAA Lookup Utility“ überprüfen[ ob ein CAA-Eintrag vorhanden ](https://caatest.co.uk/).
+
+Wenn ein CAA-Eintrag vorhanden und DigiCert nicht autorisiert ist, schlägt die Zertifikatsverlängerung fehl, wenn das aktuelle Zertifikat abläuft, was zu Ausfallzeiten bei der Bild- und Videobereitstellung führen kann. Wenn für Ihre Domain kein CAA-Eintrag vorhanden ist, ist keine Aktion erforderlich.
