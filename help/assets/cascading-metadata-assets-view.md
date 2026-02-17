@@ -43,7 +43,7 @@ Wir verwenden ein Dropdown-Feld mit dem Namen `Image` als Beispiel, um Dateien b
 >
 >Sie können Regeln nur basierend auf Dropdown-Feldern erstellen.
 
-Unabhängig vom ausgewählten Asset-Typ müssen Sie die Copyright-Informationen als erforderliches Feld anzeigen. Sie können die [vordefinierten Metadatenkomponenten“ verwenden ](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
+Unabhängig vom ausgewählten Asset-Typ müssen Sie die Copyright-Informationen als erforderliches Feld anzeigen. Sie können die [vordefinierten Metadatenkomponenten“ verwenden &#x200B;](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
 
 ### Erstellen von Metadaten in Forms {#build-metadata-schema-forms}
 
@@ -146,7 +146,7 @@ Gehen Sie wie folgt vor, um ein vorhandenes Metadatenformular zu ändern:
 
 >[!NOTE]
 > 
->Um frühzeitig auf die kaskadierenden Metadaten in Ihrem Assets View-Konto zugreifen zu können[ (erstellen und senden Sie einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>Um frühzeitig auf die kaskadierenden Metadaten in Ihrem Assets View-Konto zugreifen zu können[&#x200B; (erstellen und senden Sie einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Nächste Schritte {#next-steps}
 
