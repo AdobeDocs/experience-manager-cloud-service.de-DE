@@ -60,6 +60,6 @@ Fügen Sie den folgenden CAA-Eintrag am Stamm (apex) Ihrer Domain hinzu:
 
 Dies ist eine einmalige Veränderung.
 
-Sie können mithilfe Ihrer DNS-Provider-Tools oder eines „CAA Lookup Utility“ überprüfen[ ob ein CAA-Eintrag vorhanden ](https://caatest.co.uk/).
+Sie können mithilfe Ihrer DNS-Provider-Tools oder eines „CAA Lookup Utility“ überprüfen[&#x200B; ob ein CAA-Eintrag vorhanden &#x200B;](https://caatest.co.uk/).
 
 Wenn ein CAA-Eintrag vorhanden und DigiCert nicht autorisiert ist, schlägt die Zertifikatsverlängerung fehl, wenn das aktuelle Zertifikat abläuft, was zu Ausfallzeiten bei der Bild- und Videobereitstellung führen kann. Wenn für Ihre Domain kein CAA-Eintrag vorhanden ist, ist keine Aktion erforderlich.
