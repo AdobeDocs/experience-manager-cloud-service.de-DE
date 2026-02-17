@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 98%
+source-wordcount: '2268'
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,9 @@ Gehen Sie wie folgt vor, um ein Metadatenformular zu erstellen:
 
    ![Option für Metadatenformulare in der linken Seitenleiste](assets/metadata-form-new.png)
 
-   *Abbildung: Benutzeroberfläche zur Erstellung von Metadatenformularen mit Optionen zum Hinzufügen von Komponenten und der Option zum Anzeigen einer Vorschau des Formulars.*
+   Verstehen der [Benutzeroberfläche eines Metadatenformulars](cascading-metadata-assets-view.md#build-metadata-forms).
+
+   <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
 1. Geben Sie in der rechten Leiste in den **[!UICONTROL Einstellungen]** für jede Komponente einen Namen für die Zuordnung mit den unterstützten Eigenschaften ein.
 1. Optional können Sie für eine Komponente **[!UICONTROL Erforderlich]** auswählen, damit das Metadatenfeld ein Pflichtfeld wird, und Sie können **[!UICONTROL Schreibgeschützt]** auswählen, damit das Feld auf der Seite [!UICONTROL Details] nicht bearbeitbar ist.
@@ -140,6 +142,9 @@ Nachfolgend finden Sie eine Übersicht über die einzelnen Eigenschaftstypen und
 | Tags | Fügt ein Tag aus den Werten hinzu, die in der Taxonomie-Verwaltung gespeichert sind (zugeordnet zu „xcm:tags“). |
 | Keywords | Fügt Freiform-Keywords hinzu (zugeordnet zu „dc:subject“). |
 | Smart-Tags | Fügt automatisch Metadaten-Tags hinzu, um Suchfunktionen zu ergänzen. |
+| Veröffentlichen  | Fügt den Veröffentlichungsstatus des Assets hinzu. |
+| Link | Sie speichert eine Web-Adresse, die auf eine Online-Ressource verweist, z. B. eine Web-Seite, ein Bild oder einen externen Verweis. |
+| Bewertung | Er fügt einen kategorialen Wert hinzu, der die Qualität eines Assets angibt. |
 
 ### Zuweisen eines Metadatenformulars zu einem Ordner {#assign-metadata-form-folder}
 

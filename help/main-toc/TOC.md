@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 85bfbf70874dd9a7c180e7841454bbefe69e7a2a
+source-git-commit: 35d6f1bf1387273bda1ea8d8a873f47cb3fb64a5
 workflow-type: tm+mt
-source-wordcount: '6989'
+source-wordcount: '6993'
 ht-degree: 95%
 
 ---
@@ -762,6 +762,7 @@ ht-degree: 95%
       + [Erweiterbarkeit der Benutzeroberfläche der AEM Assets-Ansicht](/help/assets/aem-assets-view-ui-extensibility.md)
 
       + [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+      + [Kaskadierende Metadaten - Assets-Ansicht](/help/assets/cascading-metadata-assets-view.md)
    + Content Hub {#content-hub}
       + [Überblick](/help/assets/product-overview.md)
       + [Neue Funktionen in Content Hub](/help/assets/whats-new.md)
@@ -1277,7 +1278,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
