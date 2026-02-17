@@ -139,7 +139,7 @@ Inhaltsfragmente sind Inhaltsstrukturen, die:
 * Sie weisen kein Layout oder Design auf (gewisse Textformatierung ist im Rich-Text-Modus möglich).
 * Enthalten mindestens einen [Bestandteil](#constituent-parts-of-a-content-fragment).
 * [Können Bilder enthalten oder mit Bildern verbunden sein](#fragments-with-visual-assets).
-* Werden als [-Zwischeninhalte verwendet, ](#in-between-content-when-page-authoring-with-content-fragments) auf eine Seite verwiesen wird.
+* Werden als [-Zwischeninhalte verwendet, &#x200B;](#in-between-content-when-page-authoring-with-content-fragments) auf eine Seite verwiesen wird.
 * Sie sind unabhängig vom Bereitstellungsmechanismus (d. h. Seite, Kanal).
 
 ### Fragmente mit visuellen Assets {#fragments-with-visual-assets}
