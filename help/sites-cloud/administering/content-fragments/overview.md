@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 84%
+source-wordcount: '2402'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +18,7 @@ In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfrag
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Edge Delivery Services Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 >[!IMPORTANT]
 >
@@ -122,7 +122,6 @@ Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
 >* [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* Die [OpenAPIs für Inhaltsfragmente und Inhaltsfragmentmodelle](/help/headless/content-fragment-openapis.md) sind ebenfalls verfügbar.
 
-
 ## Hauptteil und Varianten {#main-and-variations}
 
 Varianten sind eine wichtige Funktion von AEM-Inhaltsfragmenten. Sie können damit Kopien des **Haupt-Inhalts** erstellen und bearbeiten, um sie in bestimmten Kanälen und Szenarien zu verwenden. Dadurch wird die Bereitstellung von Headless-Inhalten und die Seitenbearbeitung noch flexibler.
@@ -143,7 +142,7 @@ Varianten sind eine wichtige Funktion von AEM-Inhaltsfragmenten. Sie können dam
 
 * **Varianten**
 
-   * Ausgabedarstellungen von Fragmenttext, eigens zu redaktionellen Zwecken. Diese können mit einem Kanal verbunden sein, doch ist dies nicht obligatorisch; auch für lokale Ad-hoc-Änderungen geeignet;
+   * Ausgabedarstellungen von Fragmenttext, die speziell für redaktionelle Zwecke verwendet werden. Kann mit einem Kanal verknüpft sein, dies ist jedoch nicht obligatorisch. Kann auch für lokale Ad-hoc-Änderungen verwendet werden.
    * Werden als Kopien des **Hauptteils** erstellt, können dann aber nach Bedarf bearbeitet werden, wobei es oft inhaltliche Überschneidungen zwischen den Varianten selbst gibt.
    * Können während der Erstellung von Fragmenten über das linke Bedienfeld definiert werden.
    * Werden im Fragment gespeichert, um zu vermeiden, dass Inhaltskopien verstreut werden.
@@ -160,7 +159,7 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 * Single Page Applications (SPA)
 * native Mobile Apps
-* weitere AEM-externe Kanäle und Touchpoints
+* Andere Kanäle und Touchpoints außerhalb von AEM
 
 Der Versand erfolgt im JSON-Format mit dem JSON-Exporter.
 
@@ -193,7 +192,7 @@ Inhaltsfragmente werden:
 
    * Die [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) steht für Autorinnen und Autoren der Seite zur Verfügung. Sie ermöglicht das Erstellen von Verweisen für sowie das Bereitstellen des erforderlichen Inhaltsfragments im HTML- oder JSON-Format.
 
-Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
+Inhaltsfragmente sind Inhaltsstrukturen, die:
 
 * Sie weisen kein Layout oder Design auf (Textformatierung ist in Textfeldern möglich).
 * Sie sind unabhängig vom Bereitstellungsmechanismus (z. B. Seite oder Kanal).
@@ -249,14 +248,14 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 Um Inhaltsfragmente zu erstellen, benötigen Sie:
 
-* **Inhaltsmodelle**
+* ein **Inhaltsfragmentmodell**
 
-   * Werden [mithilfe des Konfigurations-Browsers aktiviert](/help/sites-cloud/administering/content-fragments/setup.md).
-   * Werden [mithilfe der Inhaltsfragmentkonsole erstellt](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+   * Ist [über den Konfigurations-Browser aktiviert](/help/sites-cloud/administering/content-fragments/setup.md).
+   * Wird [mithilfe der Inhaltsfragmentkonsole erstellt](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
    * Erforderlich zum [Erstellen eines Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
    * Definitionen von Inhaltsfragmentmodellen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional.
-   * Das Modell kann Standardinhalte definieren, sofern anwendbar.
+   * Das Modell kann ggf. Standardinhalte definieren.
    * Autorinnen und Autoren können die definierte Struktur beim Bearbeiten von Fragmentinhalten nicht ändern. Sie können jedoch den Modelleditor über den Fragmenteditor öffnen.
    * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen wurden, können sich auf diese Inhaltsfragmente auswirken.
 
@@ -271,7 +270,7 @@ Um Ihre Inhaltsfragmente für die Bereitstellung von Headless-Inhalten zu verwen
 
 Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie außerdem Folgendes:
 
-* Eine **Inhaltsfragmentkomponente**
+* eine **Inhaltsfragment-Komponente**
 
    * Hilft bei der Bereitstellung des Fragments im HTML- und/oder JSON-Format.
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-cloud/authoring/fragments/content-fragments.md).
@@ -372,9 +371,12 @@ Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksich
 
 Erstellen Sie so viele Fragmentvarianten wie nötig, aber nicht mehr.
 
-Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu. Es wird empfohlen, die Anzahl der Varianten auf ein überschaubares Minimum zu beschränken.
+Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu.
 
-Als Best Practice gilt, pro Inhaltsfragment maximal zehn Varianten zu verwenden.
+Es wird empfohlen, dass Sie:
+
+* Halten Sie die Anzahl der Varianten auf ein überschaubares Minimum beschränkt
+* überschreitet nicht zehn Varianten pro Inhaltsfragment
 
 ### Vor der Produktion testen {#test-before-production}
 

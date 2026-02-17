@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 86%
+source-wordcount: '2627'
+ht-degree: 81%
 
 ---
 
@@ -103,7 +103,7 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 * Single Page Applications (SPA)
 * native Mobile Apps
-* weitere AEM-externe Kanäle und Touchpoints
+* Andere Kanäle und Touchpoints außerhalb von AEM
 
 Der Versand erfolgt im JSON-Format mit dem JSON-Exporter.
 
@@ -134,12 +134,12 @@ Inhaltsfragmente werden:
 
 * Abrufbar mit der [AEM-GraphQL-API](/help/headless/graphql-api/content-fragments.md).
 
-Inhaltsfragmente sind eine Inhaltsstruktur mit folgenden Eigenschaften:
+Inhaltsfragmente sind Inhaltsstrukturen, die:
 
 * Sie weisen kein Layout oder Design auf (gewisse Textformatierung ist im Rich-Text-Modus möglich).
 * Enthalten mindestens einen [Bestandteil](#constituent-parts-of-a-content-fragment).
 * [Können Bilder enthalten oder mit Bildern verbunden sein](#fragments-with-visual-assets).
-* Bei Referenzierung auf einer Seite werden [Übergangsinhalte](#in-between-content-when-page-authoring-with-content-fragments) verwendet.
+* Werden als [-Zwischeninhalte verwendet, ](#in-between-content-when-page-authoring-with-content-fragments) auf eine Seite verwiesen wird.
 * Sie sind unabhängig vom Bereitstellungsmechanismus (d. h. Seite, Kanal).
 
 ### Fragmente mit visuellen Assets {#fragments-with-visual-assets}
@@ -198,7 +198,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * können formatiert werden, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-cloud/authoring/fragments/content-fragments.md);
    * können nur über den Fragment-Editor einem Fragment hinzugefügt, daraus gelöscht oder darin verschoben werden; diese Aktionen können nicht im Seiten-Editor durchgeführt werden;
    * können nur durch das [Rich-Text-Format im Fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) zu einem Fragment hinzugefügt, daraus gelöscht oder darin verschoben werden;
-   * können nur zu mehrzeiligen Textelementen hinzugefügt werden (beliebiger Fragmenttyp);
+   * Kann nur zu mehrzeiligen Textelementen hinzugefügt werden (beliebiger Fragmenttyp).
    * werden mit dem vorangehenden Text (Absatz) verbunden;
 
      >[!CAUTION]
@@ -246,7 +246,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 * **Varianten**
 
-   * sind Ausgabeformate von Fragmenttext, eigens zu einem redaktionellen Zweck. Dieser kann mit einem Kanal verbunden sein, doch ist dies nicht obligatorisch. Auch für lokale Ad-hoc-Änderungen geeignet.
+   * Ausgabedarstellungen von Fragmenttext, die speziell für einen redaktionellen Zweck verwendet werden. Kann mit einem Kanal verbunden sein, dies ist jedoch nicht obligatorisch. Kann auch für lokale Ad-hoc-Änderungen verwendet werden.
    * werden als Kopien von **Vorlagen** erstellt, können aber dann nach Bedarf bearbeitet werden. es gibt Inhaltsüberschneidungen zwischen den Varianten selbst.
    * können beim Erstellen von Fragmenten definiert werden;
    * Werden im Fragment gespeichert, um zu vermeiden, dass Inhaltskopien verstreut werden.
@@ -270,24 +270,24 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
 ### Voraussetzungen für Fragmente {#required-by-fragments}
 
-Das Erstellen von Inhaltsfragmenten erfordert Folgendes:
+Um ein Inhaltsfragment zu erstellen, benötigen Sie Folgendes:
 
-* **Inhaltsmodelle**
+* ein **Inhaltsfragmentmodell**
 
-   * Werden [mithilfe des Konfigurations-Browsers aktiviert](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * Werden [mithilfe von Tools erstellt](/help/assets/content-fragments/content-fragments-models.md).
+   * Ist [über den Konfigurations-Browser aktiviert](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * Wird [mithilfe von Tools erstellt](/help/assets/content-fragments/content-fragments-models.md).
    * Erforderlich zum [Erstellen eines Fragments](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
-   * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional.
-   * Das Modell kann Standardinhalte definieren, sofern anwendbar.
-   * Autoren können die definierte Struktur nicht ändern, wenn sie den Fragmentinhalt erstellen.
+   * Die Modelldefinition erfordert einen Titel und ein Datenelement. Alles andere ist optional.
+   * Das Modell kann ggf. Standardinhalte definieren.
+   * Autorinnen und Autoren können die definierte Struktur beim Bearbeiten von Fragmentinhalten nicht ändern. Sie können jedoch den Modelleditor über den Fragmenteditor öffnen.
    * Änderungen, die nach dem Erstellen von abhängigen Inhaltsfragmenten an einem Modell vorgenommen wurden, können sich auf diese Inhaltsfragmente auswirken.
 
 Um Ihre Inhaltsfragmente zum Erstellen von Seiten zu verwenden, benötigen Sie außerdem Folgendes:
 
-* **Inhaltsfragment-Komponente**
+* die **Inhaltsfragment-Komponente**
 
-   * Hilft bei der Bereitstellung des Fragments im HTML- und/oder JSON-Format.
+   * Hilft bei der Bereitstellung des Fragments im HTML- oder JSON-Format oder in beiden.
    * Erforderlich zum [Referenzieren des Fragments auf einer Seite](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Zuständig für das Layout und die Bereitstellung eines Fragments, d. h. Kanäle.
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
@@ -366,9 +366,12 @@ Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksich
 
 Erstellen Sie so viele Fragmentvarianten wie nötig, aber nicht mehr.
 
-Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu. Es wird empfohlen, die Anzahl der Varianten auf ein überschaubares Minimum zu beschränken.
+Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu.
 
-Als Best Practice gilt, pro Inhaltsfragment maximal zehn Varianten zu verwenden.
+Es wird empfohlen, dass Sie:
+
+* Halten Sie die Anzahl der Varianten auf ein überschaubares Minimum beschränkt
+* überschreitet nicht zehn Varianten pro Inhaltsfragment
 
 ### Vor der Produktion testen {#test-before-production}
 
