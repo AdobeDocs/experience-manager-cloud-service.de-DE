@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e58e1355b923e1da447e3dbcfd0a81086aee3e66
+source-git-commit: a58225edb8ca49db9743db6c9c5b08c786fa0144
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 23%
+source-wordcount: '770'
+ht-degree: 27%
 
 ---
 
@@ -16,113 +16,92 @@ ht-degree: 23%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## Version 24288 {#24288}
+## Version 24464 {#release-24464}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 24288, die am Donnerstag, 4. Februar 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 23963.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 24464, die am Mittwoch, 17. Februar 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 24288.
 
-Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Versions-Roadmap von Experience Manager](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
->[!NOTE]
->
->Version 24222 wurde als privat gekennzeichnet.
+### Verbesserungen {#enhancements-24464}
 
-### Verbesserungen {#enhancements-24288}
-
-* CNTBF-604: Erstellen Sie eine neue Bundle-Version für den Content-Backflow.
-* CQ-4361592: Hinzufügen von TypeHint-Unterstützung für die Projekterstellung und -aktualisierung.
-* CQ-4362198: Neueste Übersetzungen von AEM- und Granite-Paketen.
-* GRANITE-36205: Aktualisieren Sie die interne Oak-Release-Version auf die neueste Version.
-* GRANITE-59211: OPTEL: Nonce-Unterstützung und Self-Service-Konfiguration hinzugefügt.
-* GRANITE-62166: Aktualisieren Sie das Migrationspaket, um die Migrationsstatus aus dem Migrationstool wiederzuverwenden.
-* GRANITE-62598: Redundante Eigenschaft entfernen, die vom Inhaltspaketfilter ausgeschlossen ist.
-* GRANITE-62684: Ein Client-Socket-Timeout kann über skyline-ops konfiguriert werden.
-* GRANITE-62702: Ersetzen Sie die Sling-Erkennung durch eine eigenständige Implementierung für die Online-Migration.
-* GRANITE-62763: Aktualisieren der Guava-Ausnahmeliste für veraltete Inhalte basierend auf ASSETS Rotary.
-* GRANITE-62771: Fehler bei Schnellstart-Builds, wenn neue veraltete Commons-Lang-Abhängigkeiten eingeführt werden.
-* GRANITE-62987: Aktualisieren der Felix-Web-Konsole auf Version 5.0.18.
-* GRANITE-63339: Verbesserter Lease-Mechanismus für Azure-Migrations-Status-Blob.
-* GRANITE-63343: Unterstützung für die neueste Version des Sling-API-Bundles in workflow.core wurde hinzugefügt.
-* GRANITE-63799: Bump OIDC Authentication Bundle-Version.
-* GRANITE-63821: Aktualisieren des Schnellstarts auf die filevault-Version mit der Fehlerbehebung von JCRVLT-831/JCRVLT-839.
-* GRANITE-63827: Aktualisieren Sie den Schnellstart auf die neueste öffentliche Version von Oak (1.90.0).
-* GRANITE-63888: Aktualisieren Sie Quickstart auf Jackrabbit 2.22.3.
-* GRANITE-64030: Hinzufügen von Keywords und Mustern zur Zulassungsliste für den Ausdruckssprachvalidator.
-* GRANITE-64050: Erlauben Sie ausgeblendeten conf-Ordnern das Ausblenden externer Produktfunktionen.
+* AEMARCH-264: Hinzufügen von Unterstützung für die Validierung bedingter Anfragen basierend auf RequestEntity.
+* AEMARCH-269: Anzeigen von JavaEE-Validierungs-APIs für OpenAPI-Implementierungen.
+* AEMARCH-276: Bereitstellen von i18n-Unterstützung über RequestEntity.
+* ASSETS-10995: Legen Sie ein Limit für die Anzahl der Assets im Zip-Download fest.
+* ASSETS-50788: Aktualisieren der Such-API zur Verwendung der Asset-Metadaten-GET-API.
+* ASSETS-50946: Zuordnen des Anfragetexts mithilfe der Metadaten-GET-API zu JCR-Metadaten.
+* ASSETS-55866: Senden Sie keine neue Anfrage für dasselbe Asset, bis die vorherige Verarbeitung abgeschlossen ist.
+* ASSETS-60300: API zum Abrufen des asynchronen Auftragskontexts und -ergebnisses bereitstellen.
+* ASSETS-60574: Unterstützung für die neueste Version des Sling-API-Bundles hinzufügen.
+* ASSETS-61049: Fortsetzung der Entwicklung des Metadaten-Managers für Bundles.
+* ASSETS-61692: Semantische Suche standardmäßig in der Open Search-API durchführen.
+* ASSETS-61696: BAM-Route und MFE-Wrapper in der Asset-Ansicht.
+* ASSETS-61854: Senden Sie die GenStudio-Lösung in einer Aktivierungs-/Deaktivierungsnachricht.
+* ASSETS-61973: Erstellen Sie eine API in AEM zum Verwalten von Eingabeaufforderungen.
+* ASSETS-62182: Asset Compute-Ereignishandler für die C2PA-Manifest-Ausgabedarstellung.
+* ASSETS-62311: Probleme mit der Suchregression.
+* ASSETS-62413: Unterstützung für customModifier-Felder in jeder Ebene in JSON hinzufügen.
+* ASSETS-62432: API-PR zum Löschen von Mergeordnern.
+* ASSETS-62540: Erhöhen Sie die für die Touch-optimierte Benutzeroberfläche in Schnellstart.
+* ASSETS-62622: Verarbeiten Sie den Suchmodus in MatchQuery.
+* ASSETS-62671: Korrigieren Sie den Operator MatchQuery startsWith .
+* ASSETS-62780: Umschalten zwischen Funktionen für die Ordner-API.
+* ASSETS-62988: Ausblenden der C2PA-Manifest-Ausgabedarstellung, sodass sie auf der Registerkarte „Ausgabedarstellungen“ angezeigt wird.
+* ASSETS-63336: Die Vorlagensynchronisierung von AEM mit DM sollte nur für DAM-Metadaten mit Namespace erfolgen.
+* ASSETS-63375: Asset-Upload-Experimentelle OpenAPIs hinter den Funktions-Umschalter stellen.
+* ASSETS-63453: Stellen Sie sicher, dass alle Benutzer die Omnisearch-Konfiguration lesen können.
+* GRANITE-63744: Erlaubt das Verbinden asynchroner Aufträge mit Sling-Aufträgen.
+* GRANITE-64567: Automatische Deaktivierung der semantischen Suche nach SKU-Suchen.
+* GUIDES-41187: Hinzufügen von Kopfzeilen für die Verwendung von Handbüchern.
 * SITES-30452: Inhalts-API mit ASO - Vorschläge für Titel und Beschreibungen.
-* SITES-38099: Aktualisieren Sie `testing-model.txt`, um eine höhere Version von Integritätsprüfungen zu verwenden.
-* SKYOPS-43616: Migrieren von Jenkins-Anmeldeinformationen zu Vault in Dispatcher-Repositorys.
-* SKYOPS-108584: Bump FACT-Tool von 0.6.0 bis 0.6.10.
-* SKYOPS-115691: Aktualisieren Sie das CORS-Filterpaket, um bei PreFlight-Anfragen die Kopfzeile „Vary Origin“ hinzuzufügen.
-* SKYOPS-123094: Aktualisieren von Apache-HTTP-Komponenten in Schnellstart.
-* SKYOPS-123236: `rep:cugPolicy` in das Replikationspaket aufnehmen.
-* SKYOPS-123240: Aktualisieren von CRXDE-Abhängigkeiten in Schnellstart.
-* SKYOPS-123247: Aktualisieren des Sling XSS-Bundles in Schnellstart.
-* SKYOPS-123250: Sling-Sicherheitspaket in Schnellstart aktualisieren.
-* SKYOPS-123327: Java 21 für AEM-CS SDK erforderlich.
-* SKYOPS-125574: Netcentric AC Tool-Pakete in Schnellstart aktualisieren.
-* SKYOPS-126150: Verbessert den obersten Befehl für Thread-Dumps-Generator-Skript.
+* SITES-33116: Pfadüberprüfung korrigieren.
+* SITES-34234: Seiteneditor: Zustand der Inhaltsstruktur beibehalten.
 
-### Behobene Probleme {#fixed-issues-24288}
+### Behobene Probleme {#fixed-issues-24464}
 
-* FORMS-23687: Beheben eines SSV-Validierungsfehlers, wenn die Regel „enthält“ ohne Standardwert verwendet wird.
-* GRANITE-48472: Lokalisierungsfehler beim Ändern des Kennworts auf der Registerkarte Benutzereinstellungen bearbeiten.
-* GRANITE-50286: Layout-Problem in der Statusspalte des Benutzerverwaltungs-Modals behoben.
-* GRANITE-52301: Localize kann Änderungen an der Sitzungszeichenfolge in Sicherheitsgruppen nicht übertragen.
-* GRANITE-52920: Lokalisierungsfehler beim Erstellen eines Benutzers in Sicherheit Neuen Benutzer erstellen.
-* GRANITE-54654: Lokalisieren Sie die Zeichenfolge im Dialogfeld „Sicherheit“ der Adobe IMS-Konfigurationen.
-* GRANITE-56371: Korrigieren Sie das falsche Datenformat im Security Trust Store.
-* GRANITE-62717: Aktualisieren des Crypto-Keystore für die JSafe-Kennwortverarbeitung mit Nicht-ASCII-Zeichen.
-* GRANITE-62789: Aktualisieren Sie messaging-client, um den Modus „Keine weiteren Zustellversuche“ bei der Inhaltsverteilung zu unterstützen.
-* GRANITE-62824: `NullPointerException` beim Zugriff auf die Registerkarte Gruppen im Benutzereditor beheben.
-* GRANITE-63080: Import von `org.slf4j.spi` mit `slf4j 2.x` kompatibel machen.
-* GRANITE-63210: Aktualisieren des Verteilungs-Kerns, um die Dispatcher-Invalidierung beim Start der Veröffentlichung zu beheben.
-* GRANITE-63293: Beheben Sie den Verlust des erforderlichen Sternchens nach dem ersten Authoring.
-* GRANITE-63360: Korrigieren Sie falsche Informationen, die angezeigt werden, wenn mehrere Pfade ausgewählt sind.
-* SITES-36242: Einschränken Sie die GraphQL-Option „Regex ausführen“ ein, um die Umgehung des Dispatcher-Filters zu beheben.
-* SITES-40122: Fehlerbehebung bei der Integration von Edge Delivery mit dem Content-Distribution-Ims-Service.
-* SKYOPS-84379: Verwenden Sie das neueste FACT-Tool, um die ordnungsgemäße Funktionsabfrage durch RDEs zu ermöglichen.
-* SKYOPS-121216: Setzen Sie die Aktualisierung auf die Jackson 2.20.0-Bibliotheken zurück.
+* ASSETS-43198: E-Mails mit Benachrichtigungen zum Ablauf von Assets berücksichtigen nicht die Voreinstellungen der Benutzersprache.
+* ASSETS-51840: Verbesserungen bei der Asset-Verarbeitung.
+* ASSETS-52061: Nach Auswahl der gespeicherten Suche kann nicht zurück navigiert werden.
+* ASSETS-53155: Asset-Inhaltsverbesserungen.
+* ASSETS-53745: Für den Dynamic Media-Download muss die Auswahl des Original-Assets aufgehoben werden, bevor die Web-Vorgabe ausgewählt wird.
+* ASSETS-54260: Asset-Inhaltskorrekturen.
+* ASSETS-54787: Asset-Inhaltsverbesserungen.
+* ASSETS-57391: Asset-Inhaltsaktualisierungen.
+* ASSETS-59213: cq-dynamicmedia-core ist von der veralteten Bibliothek commons-lang abhängig.
+* ASSETS-59214: Die CQ-Scene7-Bildbearbeitung hängt von der veralteten Bibliothek commons-lang ab.
+* ASSETS-59546: cq-remotedam-client-core benötigt veraltete commons-lang-library.
+* ASSETS-59703: cq-dam-core ist von der veralteten Bibliothek „commons-lang“ abhängig.
+* ASSETS-59705: cq-dam-handler hängt von veralteter commons-lang-Bibliothek ab.
+* ASSETS-59707: cq-dam-inDesign ist von der veralteten Bibliothek commons-lang abhängig.
+* ASSETS-59709: cq-scene7-core ist von der veralteten Bibliothek commons-lang abhängig.
+* ASSETS-59929: Der CSV-Export aus Metadaten funktioniert nicht, wenn das Feld ein Zeilenumbruchzeichen enthält.
+* ASSETS-60241: Asynchroner Verschiebungsauftrag schlägt beim Umbenennen des Ordners fehl.
+* ASSETS-61134: Entfernen Sie comparissionVersion-Tags aus POM-Dateien.
+* ASSETS-61309: Interne Verweise werden durch Verschieben/Kopieren von Inhaltsfragmenten nicht mehr aktualisiert.
+* ASSETS-61730: Umleitung zu „Direkter Binärzugriff“ sollte die Asset-Kodierung berücksichtigen.
+* ASSETS-62358: Die CSV-Datei des Assets-Berichts enthält beschädigte Werte im Inhaltspfad.
+* ASSETS-62610: Lizenzschaltfläche für Adobe Stock in der Benutzeroberfläche von Assets deaktiviert.
+* ASSETS-62613: NPE in `downloadasset`/`saveas`.
+* ASSETS-62656: Omnisearch-Datenanzeige wird für Nicht-Assets-KI-Suchen falsch angezeigt.
+* GRANITE-55387: Das Korrigieren von in Anführungszeichen eingeschlossenen Wörtern löscht das gesamte Wort.
+* GRANITE-61240: RCE über gespeicherte XSS in lazycontainer.js.
+* GRANITE-64101: OOTB-Indizes, die in ES konvertiert wurden, wurden beim Neustart wieder auf Lucene zurückgesetzt.
+* SITES-24530: Berührungsziel der Schließen/Entfernen-Schaltflächen im Suchmodal nicht groß genug.
+* SITES-31425: Nicht lokalisierte Fehlermeldung im Workflow „Starten“.
 
-#### AEM Guides {#guides-24288}
+### Bekannte Probleme {#known-issues-24464}
 
-* GUIDES-38198 : Beim Aktualisieren einer Inline-MathML-Gleichung mit der Option MathML bearbeiten im Kontextmenü wird der aktualisierte Wert erst angezeigt, wenn die Seite aktualisiert wurde.
-* GUIDES-38276: Versionsbezeichnungen können nicht aus dem Bedienfeld „Versionsverlauf“ in der Assets-Benutzeroberfläche entfernt werden.
-* GUIDES-36641: Beim Generieren der AEM Sites-Ausgabe werden die Zuordnungstitel, die Schlüsselwörter und Thementitel mit `<ph>` enthalten, nicht in die veröffentlichte Ausgabe aufgenommen.
-* GUIDES-37837: Beim Versuch, ein Thema oder eine Zuordnung zu speichern, kann der Vorgang gelegentlich mit dem Fehler Fehler Datei konnte nicht gespeichert werden fehlschlagen, insbesondere während intensiver Asset-Verarbeitungsaufgaben oder Übersetzungs-Workflows, die im Hintergrund ausgeführt werden.
-* GUIDES-27774: Der Bericht Beschädigte Liste enthält fälschlicherweise externe Links, gültige `keyrefs` und Schlüsselwörter, die im Rahmen der aktuellen Zuordnung ordnungsgemäß aufgelöst werden.
+Keine.
 
->[!NOTE]
->
-> Es gibt eine grundlegende Änderung in AEM Guides, die Sie beachten sollten: [Verbesserte Handhabung für schreibgeschützte Dateien](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
-
-Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Bekannte Probleme {#known-issues-24288}
-
-* SITES-40408: Der GraphQL-Endpunkt gibt aufgrund der benutzerdefinierten Dispatcher-Neuschreibungsregeln 404 zurück.
-
-### Eingestellte Funktionen und APIs {#deprecated-24288}
-
-* AEMSRE-2896: Korrigieren Sie die benutzerdefinierte Handhabung der LogManager-Konfiguration.
-* GRANITE-62802: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `granite.auth.saml`.
-* GRANITE-62805: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `granite.httpcache.core`.
-* GRANITE-62864: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `granite.jobs.async`.
-* GRANITE-62865: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `granite.replication.core`.
-* GRANITE-62868: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `granite.rest.api`.
-* GRANITE-62895: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `translation.connector.msft.core`.
-* GRANITE-63069: `com.adobe.granite.httpcache.core` verwerfen.
-* GRANITE-63179: Entfernen einer veralteten `commons-lang`-Abhängigkeit aus `cq-workflow-impl`.
-* GRANITE-63180: Veralteten `commons.lang`-Export aus `cq-mailer` Bundle entfernen.
-* SKYOPS-123329: Abschaffung der Java 11-Unterstützung für AEM Ethos-Bereitstellungen und Aktualisierung von `commons-lang3`.
-* SKYOPS-124983: Veraltete `nashorn.args` aus AEM-Startskripten entfernen.
+### Eingestellte Funktionen und APIs {#deprecated-24464}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-24288}
+### Sicherheitskorrekturen {#security-24464}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion wurden 10 identifizierte Schwachstellen behoben, was für einen noch robusteren Systemschutz sorgt.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. In dieser Wartungsversion wurden 14 identifizierte Schwachstellen behoben, was für einen noch robusteren Systemschutz sorgt.
 
-### Eingebettete Technologien {#embedded-tech-24288}
+### Eingebettete Technologien {#embedded-tech-24464}
 
 | Technologie | Version | Link |
 |---|---|---|
@@ -130,5 +109,6 @@ Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimi
 | AEM SLING-API | 2.27.6 | [Apache Sling-API 2.27.6-API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28–1.4.0 | [Spezifikation von HTML-Vorlagensprachen](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| AEM-Kernkomponenten | 2,30,2 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-Kernkomponenten | 2,30,4 | [AEM WCM-Kernkomponenten](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (Standard) | [Unterstützte Node.js-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+

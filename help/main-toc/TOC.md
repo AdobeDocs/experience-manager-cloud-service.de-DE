@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+source-git-commit: 1b50c8931f560e7b18fc6372cdc81044c5b31427
 workflow-type: tm+mt
-source-wordcount: '7004'
+source-wordcount: '7010'
 ht-degree: 95%
 
 ---
@@ -103,6 +103,7 @@ ht-degree: 95%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2026 {#2026}
+         + [Neueste Wartungversionshinweise für 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
          + [Neueste Wartungversionshinweise für 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
       + 2025 {#2025}
          + [Wartungsversionshinweise für 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
@@ -1279,7 +1280,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
