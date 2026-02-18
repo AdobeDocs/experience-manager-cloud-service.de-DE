@@ -14,7 +14,7 @@ ht-degree: 77%
 
 # Markdown {#markdown}
 
-Beim [ (Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) von Inhaltsfragmenten [ möglicherweise (mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit dem **Standardtyp** von **Markdown** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
+Beim [&#x200B; (Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) von Inhaltsfragmenten [&#x200B; möglicherweise (mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit dem **Standardtyp** von **Markdown** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
 
 ![Mehrzeiliges Markdown-Textfeld im Editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
