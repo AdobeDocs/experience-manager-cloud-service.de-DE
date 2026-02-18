@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hashtag (#) wird für eine H1 verwendet, zwei Hashtags (##) für eine H2 usw. Sie können bis zu 6 Hashtags verwenden. Beispiel:
+Um eine Kopfzeile zu erstellen, platzieren Sie ein Hash-Symbol (#) vor der Überschrift. Ein Hash-Symbol (#) wird für einen H1, zwei Hash-Symbole (##) für einen H2 usw. verwendet. Sie können bis zu sechs Hash-Symbole verwenden. Beispiel:
 
     `## This is an H2`
 
@@ -116,17 +116,13 @@ Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispi
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -136,7 +132,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
+Um eine ungeordnete Liste zu erstellen, verwenden Sie das Symbol &quot;*&quot; (*) vor den Elementen in der Liste. Beispiel:
 
     `* item in list`
 

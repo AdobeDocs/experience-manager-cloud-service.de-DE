@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 84%
+ht-degree: 77%
 
 ---
 
 # Markdown {#markdown}
 
-Beim [&#x200B; (Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) von Inhaltsfragmenten [&#x200B; möglicherweise (mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit dem **Standardtyp** von **Markdown** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
+Beim [ (Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) von Inhaltsfragmenten [ möglicherweise (mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit dem **Standardtyp** von **Markdown** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
 
 ![Mehrzeiliges Markdown-Textfeld im Editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Hashtags (#) vor der Überschrift. Ein Hash-Tag (#) gibt ein H1-Tag, zwei Hash-Tags (##) für ein H2-Tag usw. an. Sie können bis zu 6 Hashtags verwenden. Beispiel:
+Um eine Kopfzeile zu erstellen, platzieren Sie ein Hash-Symbol (#) vor der Überschrift. Ein Hash-Symbol (#) gibt einen H1-Wert an, zwei Hash-Symbole (##) einen H2-Wert usw. Sie können bis zu sechs Hash-Symbole verwenden. Beispiel:
 
     `## This is an H2`
 
@@ -110,17 +110,13 @@ Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispi
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -130,7 +126,7 @@ Sie können verschachtelte Blockzitate nutzen. Beispiel:
 
 Sie können sowohl sortierte als auch unsortierte Listen erstellen
 
-Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den Elementen in der Liste. Beispiel:
+Um eine ungeordnete Liste zu erstellen, verwenden Sie das Symbol &quot;*&quot; (*) vor den Elementen in der Liste. Beispiel:
 
     `* item in list`
 
