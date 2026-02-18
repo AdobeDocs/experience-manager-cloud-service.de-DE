@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6f919532c9764e4f0c34b89115b058c90545034f
+source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
 workflow-type: tm+mt
-source-wordcount: '6998'
+source-wordcount: '7004'
 ht-degree: 95%
 
 ---
@@ -882,6 +882,7 @@ ht-degree: 95%
             + [Erstellen einer adaptiven Formularvorlage basierend auf Kernkomponenten](/help/forms/template-editor-core-components.md)
             + [Erstellen eines adaptiven Formulars (Kernkomponenten) basierend auf XFA-Formularvorlagen](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Generieren eines Übermittlungs-PDF (ehemals Datensatzdokument) für Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+            + [Automatisch generierte Datensatzdokument-Vorlage anpassen](/help/forms/customize-document-of-record-template.md)
             + [Unterstützte HTML-Markup-Tags in Submission PDF](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [Verwenden einer maschinellen oder menschlichen Übersetzung, um ein adaptives Formular zu übersetzen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -1278,7 +1279,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
