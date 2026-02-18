@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie aus Formularübermittlungen für Kernkomponen
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
+source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
 workflow-type: tm+mt
-source-wordcount: '3233'
-ht-degree: 44%
+source-wordcount: '3208'
+ht-degree: 45%
 
 ---
 
@@ -147,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF generiert.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit der Übermittlungs-PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -166,12 +166,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -354,8 +352,6 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       * **Beschreibung der Bedienfelder ausblenden**: Durch Festlegen dieser Eigenschaft ist die Beschreibung des Bedienfelds/der Tabelle in der PDF für die Übermittlung nicht enthalten. Gilt für Bedienfeld und Tabelle.
 
-
-
    1. **Formularfeldeigenschaften**:
 
       * **Für Kontrollkästchen und Optionsschaltflächenkomponenten nur ausgewählte Werte einblenden**: Durch Festlegen dieser Eigenschaft werden nur die ausgewählten Werte von Kontrollkästchen und Optionsfeldern im [!UICONTROL Datensatzdokument] angezeigt.
@@ -363,35 +359,33 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Optionenausrichtung**: Sie können die gewünschte Ausrichtung (horizontal, vertikal, wie das adaptive Formular) auswählen, um die Ausrichtung für Felder wie Kontrollkästchen oder Optionsfelder festzulegen, die im [!UICONTROL Datensatzdokument] angezeigt werden sollen. Standardmäßig ist für die Felder im [!UICONTROL Datensatzdokument] die vertikale Ausrichtung festgelegt. Das Festlegen der Eigenschaften über die [!UICONTROL Formularfeldeigenschaften] des Datensatzdokuments überschreibt die Eigenschaften, die in der [!UICONTROL Elementausrichtung] für die Felder in einem adaptiven Formular festgelegt sind. Wenn Sie die Option [!UICONTROL Wie adaptives Formular] auswählen, wird die in der Autoreninstanz des adaptiven Formulars konfigurierte Ausrichtung für Felder des [!UICONTROL Datensatzdokuments] verwendet.
       * **Anzahl der Optionen für die horizontale Ausrichtung**:You kann die Anzahl der Optionen festlegen, die auf der Übermittlungs-PDF für die horizontale Ausrichtung angezeigt werden sollen.
 
-
-
    1. **Eigenschaften der primären Seite**:
 
       * **Logo-Bild**: Sie können wahlweise das Logo-Bild aus dem adaptiven Formular verwenden, eines aus DAM auswählen oder eines von Ihrem Computer hochladen.
       * **Formulartitel**: Titel des Datensatzdokuments.
-* **Kopfzeilentext**: Text, der im Kopfzeilenabschnitt der Übermittlungs-PDF angezeigt wird.
-* **Haftungsausschluss-Bezeichnung**: Bezeichnung des Haftungsausschlusses.
-* **Haftungsausschluss**: Text, der den Umfang der Rechte und Pflichten für die Submission PDF angibt.
-* **Text des Haftungsausschlusses**: Text des Haftungsausschlusses.
+      * **Kopfzeilentext**: Text, der im Kopfzeilenabschnitt der Übermittlungs-PDF angezeigt wird.
+      * **Haftungsausschluss-Bezeichnung**: Bezeichnung des Haftungsausschlusses.
+      * **Haftungsausschluss**: Text, der den Umfang der Rechte und Pflichten für die Submission PDF angibt.
+      * **Text des Haftungsausschlusses**: Text des Haftungsausschlusses.
 
-      &lt;!—![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)—>
-     
-     >[!NOTE]
-     >
-     >Wenn Sie eine Vorlage für ein adaptives Formular mit einer Version von Designer vor 6.3 verwenden, müssen Sie sicherstellen, dass in Ihrer Vorlage für das adaptive Formular unter dem Stamm-Unterformular 
-     
-     „xml
-&lt;proto>    &lt;typy=&quot;
-„(    >
-&lt;color=&quot;    =&quot;
-&quot;>    &lt;/full> vorhanden ist value=„4,166,203“/>
-&lt;/edge>    &lt;/proto>
-&quot;     
-      
-      
-      
-      
-  
+      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
+
+      >[!NOTE]
+      >
+      >Wenn Sie eine Vorlage für ein adaptives Formular mit einer Designer-Version vor 6.3 verwenden, müssen Sie sicherstellen, dass im Stamm-Unterformular der Vorlage für das adaptive Formular Folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
+
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
+
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Branding-Änderungen zu speichern.
 
 >[!NOTE]
@@ -444,4 +438,5 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
+
