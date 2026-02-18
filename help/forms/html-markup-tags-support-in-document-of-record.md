@@ -1,24 +1,24 @@
 ---
-title: Unterstützte HTML-Markup-Tags im Datensatzdokument
-description: Referenzhandbuch für HTML-Markup-Tags, die jetzt bei der Generierung von Datensatzdokumenten unterstützt werden, einschließlich Rendering-Verhalten und Überlegungen zur Barrierefreiheit
+title: Unterstützte HTML-Markup-Tags in Submission PDF (ehemals Document of Record)
+description: Referenzhandbuch für HTML-Markup-Tags, die beim Generieren einer Übermittlungs-PDF (ehemals Datensatzdokument) unterstützt werden, einschließlich Überlegungen zum Rendering-Verhalten und zur Barrierefreiheit.
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 9%
+source-wordcount: '454'
+ht-degree: 7%
 
 ---
 
 
-# Unterstützte HTML-Markup-Tags im Datensatzdokument
+# Unterstützte HTML-Markup-Tags in Submission PDF (ehemals Document of Record)
 
 ## Was wird in dieser Referenz behandelt?
 
-AEM Forms unterstützt jetzt HTML-Markup-Tags in Rich-Text-Feldern beim Generieren von Datensatzdokument-PDFs (Document of Record, DoR). In diesem Handbuch wird erläutert, welche HTML-Markup-Tags Sie sicher in adaptiven Forms verwenden können und wie sie in den generierten Dokumenten gerendert werden.
+AEM Forms unterstützt jetzt HTML-Markup-Tags in Rich-Text-Feldern beim Generieren einer PDF-PDF für die Übermittlung (ehemals Datensatzdokument). In diesem Handbuch wird erläutert, welche HTML-Markup-Tags Sie sicher in adaptiven Forms verwenden können und wie sie in der generierten Übermittlungs-PDF gerendert werden.
 
-Wenn Sie Ihren Formularen Rich-Text-Inhalte (z. B. Fettformatierung, Listen oder Links) hinzufügen, ist es wichtig zu verstehen, welche Tags unterstützt werden und welche Einschränkungen sie möglicherweise haben. Mit dieser Referenz können Sie die entsprechenden Tags auswählen, um sicherzustellen, dass Ihr Inhalt korrekt angezeigt wird und im Datensatzdokument verfügbar bleibt.
+Wenn Sie Ihren Formularen Rich-Text-Inhalte (z. B. Fettformatierung, Listen oder Links) hinzufügen, ist es wichtig zu verstehen, welche Tags unterstützt werden und welche Einschränkungen sie möglicherweise haben. Mit dieser Referenz können Sie die entsprechenden Tags auswählen, um sicherzustellen, dass Ihr Inhalt korrekt angezeigt wird und in der Übermittlungs-PDF verfügbar bleibt.
 
 ## Bevor Sie beginnen
 
@@ -27,18 +27,18 @@ Wenn Sie Ihren Formularen Rich-Text-Inhalte (z. B. Fettformatierung, Listen oder
 Sie sollten vertraut sein mit:
 
 - Grundlegende Markup-Syntax in HTML
-- [Grundlagen des Datensatzdokuments](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Grundlagen zur Übermittlung von PDF (ehemals Datensatzdokument)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - Barrierefreiheitsprinzipien und WCAG-Richtlinien
 - Barrierefreiheitsanforderungen für PDF
 - Adaptive Formularkomponenten, die HTML-Markup akzeptieren
 
 ### Überlegungen
 
-Das Datensatzdokument (DoR) kann ein PDF mit Tags sein, wodurch Barrierefreiheit und eine ordnungsgemäße Struktur für Hilfstechnologien sichergestellt werden. Um die Ausgabe mit Tags in PDF zu aktivieren[&#x200B; setzen Sie die XCI-Eigenschaft `config/present/pdf/tagged` auf `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nachdem Sie Ihre PDF generiert haben, müssen Sie sicherstellen, dass Barrierefreiheits-Tags korrekt angewendet werden. Sie können [Adobe Acrobat verwenden, um Barrierefreiheits-Tags zu &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) und sicherzustellen, dass Ihr Dokument den Barrierefreiheitsstandards entspricht.
+Die Übermittlungs-PDF (ehemals Document of Record) kann eine mit Tags versehene PDF sein, die die Barrierefreiheit und ordnungsgemäße Struktur für Hilfstechnologien sicherstellt. Um die Ausgabe mit Tags in PDF zu aktivieren[ setzen Sie die XCI-Eigenschaft `config/present/pdf/tagged` auf `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nachdem Sie Ihre PDF generiert haben, müssen Sie sicherstellen, dass Barrierefreiheits-Tags korrekt angewendet werden. Sie können [Adobe Acrobat verwenden, um Barrierefreiheits-Tags zu ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) und sicherzustellen, dass Ihr Dokument den Barrierefreiheitsstandards entspricht.
 
 ### Neue Funktionen
 
-Die Rich-Text-Unterstützung im Datensatzdokument ist eine kürzlich vorgenommene Verbesserung. Zuvor wurden Rich-Text-Inhalte in generierten Dokumenten als Nur-Text-Inhalte angezeigt. Mit dieser neuen Funktion kann formatierter Inhalt in PDF-Ausgaben ordnungsgemäß gerendert werden.
+Die Rich-Text-Unterstützung in Submission PDF wurde kürzlich verbessert. Zuvor wurden Rich-Text-Inhalte in generierten Dokumenten als Nur-Text-Inhalte angezeigt. Mit dieser neuen Funktion kann formatierter Inhalt in PDF-Ausgaben ordnungsgemäß gerendert werden.
 
 ## Referenz zur Tag-Unterstützung in HTML
 
@@ -46,7 +46,7 @@ Die Rich-Text-Unterstützung im Datensatzdokument ist eine kürzlich vorgenommen
 
 Diese Tags werden mit der ordnungsgemäßen Erstellung von Barrierefreiheits-Knoten vollständig unterstützt:
 
-| HTML-Tag | Beschreibung | Unterstützung für Datensatzdokumente | Barrierefreiheit | Beispiel |
+| HTML-Tag | Beschreibung | Unterstützung für Submission PDF | Barrierefreiheit | Beispiel |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | Absatz | Ja | Vollständig unterstützt - Korrigieren `<P>` Knoten | `<p>This is a paragraph.</p>` |
 | `<br/>` | Zeilenumbruch | Ja | Vollständige Unterstützung - innerhalb `<P>` Knotens | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Diese Tags werden nicht unterstützt und werden nicht ordnungsgemäß gerendert:
 ## Verwandte Inhalte
 
 
-- [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [Generieren eines Datensatzdokuments für Kernkomponenten](/help/forms/generate-document-of-record-core-components.md)
-- [Anpassung der Datensatzdokument-Vorlage](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [Generieren eines Übermittlungs-PDF (ehemals Datensatzdokument) für Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Generieren einer Übermittlungs-PDF für Kernkomponenten](/help/forms/generate-document-of-record-core-components.md)
+- [Anpassung der Übermittlungs-PDF-Vorlage](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 

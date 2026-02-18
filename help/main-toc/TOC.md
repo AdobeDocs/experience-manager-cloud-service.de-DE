@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 35d6f1bf1387273bda1ea8d8a873f47cb3fb64a5
+source-git-commit: 6f919532c9764e4f0c34b89115b058c90545034f
 workflow-type: tm+mt
-source-wordcount: '6993'
+source-wordcount: '6998'
 ht-degree: 95%
 
 ---
@@ -881,8 +881,8 @@ ht-degree: 95%
             + [Erstellen von Designs für ein adaptives Formular – Kernkomponenten](/help/forms/using-themes-in-core-components.md)
             + [Erstellen einer adaptiven Formularvorlage basierend auf Kernkomponenten](/help/forms/template-editor-core-components.md)
             + [Erstellen eines adaptiven Formulars (Kernkomponenten) basierend auf XFA-Formularvorlagen](/help/forms/create-adaptive-form-using-xfa-templates.md)
-            + [Generieren eines Datensatzdokuments für adaptive Formulare](/help/forms/generate-document-of-record-core-components.md)
-            + [Unterstützte HTML-Markup-Tags im Datensatzdokument](/help/forms/html-markup-tags-support-in-document-of-record.md)
+            + [Generieren eines Übermittlungs-PDF (ehemals Datensatzdokument) für Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+            + [Unterstützte HTML-Markup-Tags in Submission PDF](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [Verwenden einer maschinellen oder menschlichen Übersetzung, um ein adaptives Formular zu übersetzen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
@@ -966,7 +966,7 @@ ht-degree: 95%
             + [Hinzufügen von Informationen aus Benutzerdaten zu Formularübermittlungsmetadaten](/help/forms/form-submission-metadata.md)
             + [API zum Aufrufen des Formulardatenmodell(FDM)-Dienstes aus adaptiven Formularen](/help/forms/invoke-form-data-model-services.md)
          + [Vorbefüllen von Feldern in adaptiven Formularen](/help/forms/prepopulate-adaptive-form-fields.md)
-         + [Generieren des Datensatzdokuments (Document of Record, DoR)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Generieren des Übermittlungs-PDF (ehemals Datensatzdokument)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Neue Gebietsschemata zu einem adaptiven Formular hinzufügen](/help/forms/supporting-new-language-localization.md)
          + Hinzufügen oder Verbessern von Metadaten {#manage-metadata}
             + [Hinzufügen, Entfernen oder Bearbeiten von Metadaten eines adaptiven Formulars](/help/forms/manage-form-metadata.md)
@@ -1278,7 +1278,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
