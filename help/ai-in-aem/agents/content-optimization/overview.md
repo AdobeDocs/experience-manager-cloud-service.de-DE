@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit dem Inhaltsoptimierungs-Agenten transform
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 36cc0cd44a77554c58cec13d6478271d5ee4165c
+source-git-commit: af85d06d95cf2676cc558071ac8dfe54b67dc8f1
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 0%
@@ -30,6 +30,8 @@ Zu den wichtigsten Vorteilen der Inhaltsoptimierung gehören:
 >KI-generierte Antworten können ungenau oder irreführend sein. Überprüfen Sie unbedingt die vorgeschlagenen Fehlerbehebungen und Antworten.
 >
 >Siehe auch [Benutzerhandbücher für die generative KI von Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480078)
 
 ## Voraussetzungen {#prerequisites-content-optimization-agent}
 
@@ -76,7 +78,7 @@ Sie können über den KI-Assistenten auf die Agenten in AEM zugreifen. Melden Si
 
 ## Häufige Anwendungsfälle und Beispielaufforderungen {#use-cases-prompts}
 
-Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets &#x200B;](/help/ai-in-aem/agents/discovery/overview.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+Verwenden Sie Eingabeaufforderungen zur Inhaltsoptimierung, indem Sie über den [Discovery-Agent“ nach den richtigen Assets ](/help/ai-in-aem/agents/discovery/overview.md). Sobald die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Siehe die vollständige Liste der verfügbaren Optimierungen](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **Erstellung von Ausgabedarstellungen mit hoher Auflösung**
 
