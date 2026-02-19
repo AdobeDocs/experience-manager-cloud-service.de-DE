@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 18%
+source-wordcount: '277'
+ht-degree: 6%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 18%
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 Vorlagen für interaktive Kommunikation in AEM ermöglichen es Benutzenden, wiederverwendbare Layout-Strukturen wie Kopf- und Fußzeilen, Logos und Standardstile zu definieren. Diese Vorlagen dienen als Grundlage für die Erstellung konsistenter, markenspezifischer und effizienter Kommunikation.
 

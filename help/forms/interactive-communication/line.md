@@ -4,23 +4,19 @@ description: Mit der Linienkomponente im Editor für interaktive Kommunikation i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 11%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
-
 
 # LINE-Komponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -113,5 +109,3 @@ Die LINE-Komponente wird häufig verwendet, um:
 - Unnötige Linien ausblenden, um Ablenkungen zu vermeiden und gleichzeitig den Layout-Abstand beizubehalten.
 
 Die LINE-Komponente im Editor für interaktive Kommunikation ist ein einfaches, aber leistungsstarkes Design-Element. Bei strategischer Verwendung verbessert es die visuelle Struktur von Kommunikationsdokumenten, unterstützt Benutzende dabei, besser durch Inhalte zu navigieren, und sorgt für ein saubereres, klareres Layout.
-
-

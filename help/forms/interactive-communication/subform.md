@@ -4,23 +4,19 @@ description: Mit der Teilformularkomponente im Editor für interaktive Kommunika
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 10%
+source-wordcount: '479'
+ht-degree: 2%
 
 ---
-
 
 # Teilformularkomponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -110,5 +106,3 @@ Teilformulare können auch als Container für die Drag-and-Drop-Design-Ausrichtu
 - Wenden Sie bedingte Sichtbarkeitsregeln an, um das Benutzererlebnis in komplexen Formularen zu optimieren.
 
 Die **Teilformular**-Komponente im Editor für interaktive Kommunikation bietet eine leistungsstarke Möglichkeit, komplexe Formularlayouts zu strukturieren und zu steuern. Unabhängig davon, ob Sie Eingabefelder organisieren, dynamische Inhalte verwalten oder einen modularen Entwurf ermöglichen, verbessern Teilformulare in allen Dokumentvorlagen sowohl die Benutzerfreundlichkeit als auch die Wartungsfreundlichkeit.
-
-

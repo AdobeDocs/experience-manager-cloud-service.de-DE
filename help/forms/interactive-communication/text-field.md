@@ -4,23 +4,19 @@ description: Die Textfeldkomponente im Editor für interaktive Kommunikation in 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 7%
+source-wordcount: '671'
+ht-degree: 2%
 
 ---
-
 
 # Textfeldkomponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -133,5 +129,3 @@ Autoren können das Feld zur Ausrichtung in Teilformularen oder Layout-Rastern p
 - Für einfachere Wartung möglichst direkt an das Datenmodell binden.
 
 Die Textfeldkomponente im IC-Editor ist ein vielseitiger Baustein, der die Datenerfassung optimiert. Durch eine sorgfältige Konfiguration mit gut ausgewählter Typografie, klaren Beschriftungen, ordnungsgemäßer Validierung und solider Datenbindung bietet sie ein nahtloses, benutzerfreundliches Erlebnis und zuverlässige Daten für die nachgelagerte Verarbeitung.
-
-

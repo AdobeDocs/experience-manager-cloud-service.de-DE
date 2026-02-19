@@ -4,23 +4,19 @@ description: Datums-/Uhrzeitfeldkomponente im Editor für interaktive Kommunikat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 8%
+source-wordcount: '676'
+ht-degree: 2%
 
 ---
-
 
 # Datums-/Uhrzeitfeld-Komponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -141,4 +137,3 @@ Autoren können das Feld mit Layout-Containern, Validierungen oder bedingten Reg
 - Binden Sie das Feld an einen gültigen Schemapfad, um eine ordnungsgemäße Datenerfassung und -verarbeitung sicherzustellen.
 
 Die Komponente „Datum/Uhrzeit-Feld“ im Editor für interaktive Kommunikation ist eine leistungsstarke und benutzerfreundliche Komponente, die die zeitbasierte Eingabe optimiert. Mit der richtigen Konfiguration für Stil, Datenverarbeitung und Layout-Steuerelemente ermöglicht es saubere, zuverlässige und intuitive Formularerlebnisse sowohl für Benutzer als auch für Backend-Systeme.
-

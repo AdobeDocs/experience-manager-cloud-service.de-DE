@@ -4,23 +4,19 @@ description: Mit dem Datumsfeldobjekt im Editor für interaktive Kommunikation i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 8%
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
-
 
 # Datumsfeldobjekt im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -139,5 +135,3 @@ Autoren können das Datumsfeld in Layout-Containern oder Teilformularen platzier
 - Dynamisches Ausblenden nicht relevanter Datumsfelder mithilfe von Sichtbarkeitsregeln.
 
 Das **Datumsfeld**-Objekt im Editor für interaktive Kommunikation ist ein leistungsstarkes Tool zur präzisen und einfachen Erfassung zeitkritischer Daten. Wenn sie durchdacht gestaltet und mit aussagekräftigen Datenpfaden verbunden sind, unterstützt sie ein nahtloses Benutzererlebnis und eine effiziente Verarbeitung von zeitbasierten Einträgen.
-
-

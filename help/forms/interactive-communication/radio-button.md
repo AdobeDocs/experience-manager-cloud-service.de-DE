@@ -4,23 +4,19 @@ description: Mit der Optionsschaltflächenkomponente im Editor für interaktive 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 9%
+source-wordcount: '571'
+ht-degree: 2%
 
 ---
-
 
 # Optionsfeldkomponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -118,5 +114,3 @@ Autoren können verwandte Optionsschaltflächen gruppieren und in Layout-Contain
 - Verwenden Sie konsistente Abstände und Ausrichtung für eine bessere visuelle Klarheit, insbesondere in mobilfreundlichen Layouts.
 
 Die Optionsschaltflächen-Komponente im Editor für interaktive Kommunikation ist eine grundlegende Eingabekomponente, die Endbenutzern eine saubere, strukturierte Entscheidungsfindung bietet. Wenn sie mit klaren Bezeichnungen, durchdachten Abständen und Datenbindung konfiguriert ist, sorgt sie für eine zuverlässige Datenerfassung und ein reibungsloseres Benutzererlebnis für Formulare, Umfragen und Onboarding-Workflows.
-
-

@@ -4,23 +4,19 @@ description: Die Rechteckkomponente im Editor für interaktive Kommunikation in 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 12%
+source-wordcount: '447'
+ht-degree: 4%
 
 ---
-
 
 # Rechteckkomponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -112,5 +108,3 @@ Rechtecke können mit anderen Layout-Elementen wie Teilformularen oder Container
 - Blenden Sie Rechtecke aus, wenn sie nur für Entwurfszwecke während der Bearbeitung benötigt werden, aber in der endgültigen Ausgabe nicht erforderlich sind.
 
 Die Rechteckkomponente ist ein nicht interaktives, aber leistungsstarkes Tool im IC-Editor. Wenn sie gestaltet und effektiv positioniert sind, verbessert sie die Layout-Genauigkeit, den visuellen Fluss und das Benutzererlebnis, ohne die Datenbindung oder Interaktivität zu vereinfachen.
-
-

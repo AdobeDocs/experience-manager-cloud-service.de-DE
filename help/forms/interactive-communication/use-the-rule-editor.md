@@ -4,13 +4,13 @@ description: Mit Regeln erstellen im Editor für interaktive Kommunikation könn
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: b2b85d1e802c7f287b875d53a9347ca07ea2b806
+exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 10%
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
-
 
 # Regeleditor im Editor für interaktive Kommunikation
 
@@ -18,11 +18,6 @@ ht-degree: 10%
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 
 ## &#x200B;1. Einführung
@@ -110,6 +105,3 @@ Der Regeleditor wird häufig verwendet, um sicherzustellen, dass Formulare und K
 
 
 Durch die sorgfältige Konfiguration von Regeln können Autoren Kommunikationen erstellen, die intelligent auf Daten und Benutzeraktionen reagieren. So werden Prozesse optimiert, Fehler reduziert und ein nahtloses, personalisiertes Erlebnis bereitgestellt.
-
-
-

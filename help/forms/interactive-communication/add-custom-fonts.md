@@ -4,23 +4,19 @@ description: Fügen Sie im Editor für interaktive Kommunikation benutzerdefinie
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 25%
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
-
 
 # Hinzufügen benutzerdefinierter Schriftarten zum Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 Mit der Funktion für benutzerdefinierte Schriftarten können Sie das Erscheinungsbild Ihrer interaktiven Kommunikation verbessern, indem Sie benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten verwenden. Mit dieser Funktion können Sie Schriftarten in Ihre AEM Forms as a Cloud Service-Umgebung packen und einbetten, um ein konsistentes PDF-Rendering über Geräte und Plattformen hinweg sicherzustellen.
 
@@ -36,5 +32,5 @@ Mit der Funktion für benutzerdefinierte Schriftarten können Sie das Erscheinun
 
 >[!NOTE]
 >
-> Ausführliche Konfigurationsschritte finden Sie in der Anleitung [Verwenden benutzerdefinierter Schriftarten](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> Ausführliche Konfigurationsschritte finden Sie in der Anleitung [Verwenden benutzerdefinierter Schriftarten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
 >Nach Abschluss der Schritte und Ausführung der Pipeline sind benutzerdefinierte Schriftarten direkt im Editor für interaktive Kommunikation verfügbar.

@@ -4,23 +4,19 @@ description: Unterstützung der XDP-Bearbeitung im Editor für interaktive Kommu
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 13%
+source-wordcount: '393'
+ht-degree: 4%
 
 ---
-
 
 # Unterstützung der XDP-Bearbeitung im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## Einführung
 
@@ -76,4 +72,3 @@ Autoren können **Fragmente direkt** die Arbeitsfläche ziehen und dort ablegen.
 - Verwenden Sie die Versionskontrolle, um Aktualisierungen über XDP- und Fragmentabhängigkeiten hinweg zu verwalten.
 
 - Überprüfen Sie die Datenbindungen nach der Bearbeitung, um das korrekte Rendering zu bestätigen.
-

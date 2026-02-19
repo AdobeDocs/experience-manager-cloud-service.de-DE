@@ -4,23 +4,19 @@ description: Mit der Tabellenkomponente im Editor für interaktive Kommunikation
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 8%
+source-wordcount: '608'
+ht-degree: 2%
 
 ---
-
 
 # Tabellenkomponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -118,5 +114,3 @@ Autoren können die Anzahl der Zeilen und Spalten konfigurieren, bedingte Sichtb
 - Verwenden Sie Standardvorlagen, um tabellarische Inhalte für alle Dokumente zu standardisieren.
 
 Die Tabellenkomponente im IC-Editor ist eine flexible, datenfreundliche Komponente, die strukturierte Inhalte in Ihrer Kommunikation unterstützt. Mit anpassbaren Layout-Optionen, Styling-Funktionen und leistungsstarker Datenbindung ermöglicht sie es Autoren, Informationen klar und effektiv darzustellen.
-
-

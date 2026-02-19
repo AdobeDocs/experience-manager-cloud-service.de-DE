@@ -4,23 +4,19 @@ description: Eine Kontrollkästchenkomponente im Editor für interaktive Kommuni
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 8%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
-
 
 # Kontrollkästchenkomponente im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -123,5 +119,3 @@ Kontrollkästchen können in Layout-Rastern oder Bedienfeldern platziert und zur
 - Verwenden Sie Sichtbarkeitsregeln, wenn Kontrollkästchen von vorherigen Eingaben oder Bedingungen abhängig sind.
 
 Die Kontrollkästchenkomponente im Editor für interaktive Kommunikation ist eine einfache, aber wichtige Komponente für binäre Eingaben. Durch die Unterstützung für Formatierung, bedingte Präsenz und flexible Datenbindung spielt sie eine wichtige Rolle bei der Verbesserung der Interaktivität und Benutzerkontrolle in intelligenten digitalen Formularen. Wenn Kontrollkästchen mit durchdachten Beschriftungen, konsistentem Stil und aussagekräftiger Datenintegration implementiert werden, tragen sie erheblich zu einem reibungslosen und intuitiven Formularerlebnis bei.
-
-

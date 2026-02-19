@@ -4,23 +4,19 @@ description: PDF-Vorschau im Editor für interaktive Kommunikation mit verschied
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 14%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
-
 
 # PDF-Vorschau im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 Die PDF-Vorschaufunktion ermöglicht Benutzenden die Vorschau von interaktiver Kommunikation auf drei verschiedene Arten: ohne Daten, mit lokalen JSON-basierten Daten oder mit Beispieldaten aus dem konfigurierten Datenmodell.
 
@@ -50,7 +46,7 @@ Zeigen Sie eine Vorschau der interaktiven Kommunikation ohne Daten, lokale Daten
 
 +++&#x200B;2. Vorschau mit lokalen JSON-Daten
 
-2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[&#x200B; (FDM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
+2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[ (FDM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
 
 2.2. Wechseln Sie im IC-Editor zu **PDF-Vorschau** > Lokale Daten verwenden.
 
@@ -69,4 +65,3 @@ Zeigen Sie eine Vorschau der interaktiven Kommunikation ohne Daten, lokale Daten
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-

@@ -4,23 +4,19 @@ description: Vorlagensperre im Editor für interaktive Kommunikation bietet den 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 10%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
-
 
 # Vorlagensperre im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 ## &#x200B;1. Einführung
 
@@ -63,7 +59,7 @@ Wenn sie angewendet werden, können Autoren:
 Gehen Sie wie folgt vor, um Inhalts- oder Layout-Sperren in Ihrer Vorlage für interaktive Kommunikation (IC) anzuwenden:
 
 1. Öffnen Sie Ihre Vorlage
-Öffnen oder erstellen Sie eine Vorlage, folgen Sie dem Handbuch [Erstellen einer Vorlage für interaktive Kommunikation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Öffnen oder erstellen Sie eine Vorlage, folgen Sie dem Handbuch [Erstellen einer Vorlage für interaktive Kommunikation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Komponente auswählen
 Klicken Sie auf die Komponente (Textfeld, Bild oder Teilformular), die Sie einschränken möchten.

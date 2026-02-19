@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 12%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
-
 
 # Kopieren und Einfügen im Editor für interaktive Kommunikation
 
 >[!NOTE]
 >
 > Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
-
->[!IMPORTANT]
->
-> **Dokumentation kann sich ändern**: Diese Prompt-Bibliothek wird derzeit mit dem Produkt getestet und unterliegt Aktualisierungen und Überarbeitungen. Prompts, Beispiele und Best Practices können sich ändern, da Forms Experience Builder im Verlauf des Early-Adopter-Programms weiterentwickelt wird.
 
 Mit der Funktion zum Kopieren und Einfügen im Editor für interaktive Kommunikation (IC) können Autoren eine vorhandene interaktive Kommunikation duplizieren und sie in einem anderen Ordner oder Speicherort wiederverwenden. Diese Funktion hilft Teams, effizient zu arbeiten, indem mehrere Varianten einer IC aktiviert werden, ohne die Originalversion zu ändern.
 
@@ -88,4 +84,3 @@ Nach dem Einfügen der interaktiven Kommunikation:
 - Überprüfen Sie die Datenbindungen und Ausgabekanäle nach dem Kopieren, um Korrektheit sicherzustellen.
 
 Die Funktion zum Kopieren und Einfügen in der interaktiven Kommunikation vereinfacht die Wiederverwendung und Anpassung, indem sie es Autoren ermöglicht, vorhandene ICs zu duplizieren und unabhängig zu ändern. Sie ermöglicht eine schnellere Entwicklung, sicherere Experimente und eine konsistente Kommunikation - ohne das Risiko von Änderungen an der ursprünglichen interaktiven Kommunikation einzugehen.
-
