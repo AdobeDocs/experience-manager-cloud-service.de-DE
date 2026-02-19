@@ -31,7 +31,7 @@ Dies sind die Versionshinweise für die Version vom 19. Februar 2026 des univers
    * [Das Umschließen von Text in Tabellen mit Absätzen](/help/implementing/universal-editor/configure-rte.md#table-actions) wird jetzt unterstützt.
    * [Nicht unterstützte HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)Tags können jetzt vom RTE beibehalten werden.
    * Die RTE-Logik wird jetzt von einer separaten Datei bereitgestellt.
-   * [Mit dem RTE können jetzt ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) Tabellen erstellt und bearbeitet werden.
+   * [Mit dem RTE können jetzt &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) Tabellen erstellt und bearbeitet werden.
 * Wenn keine Beschriftung festgelegt ist, wird jetzt der Komponententitel aus der Komponentendefinition verwendet.
 * `setEditorMode` ist jetzt über Erweiterungen verfügbar.
 
