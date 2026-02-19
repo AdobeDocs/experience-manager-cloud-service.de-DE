@@ -45,7 +45,7 @@ Der Zugriff auf IC Editor-Funktionen wird durch [Benutzerrollen innerhalb von AE
 | **Formularautor** | Erstellt und bearbeitet interaktive Kommunikationen. | ICs erstellen, bearbeiten, in der Vorschau anzeigen und veröffentlichen. |
 | **Vorlagenerstellung** | Entwirft wiederverwendbare Vorlagen für interaktive Kommunikation. | Erstellen und sperren Sie Vorlagen, definieren Sie Layouts. |
 | **Administrator** | Verwaltet Benutzerzugriff, Berechtigungen und Konfigurationen. | Rollen zuweisen, Vorlagen verwalten, ICs veröffentlichen. |
-| **FDM-Autor** | [Erstellt und verwaltet Formulardatenmodelle (FDM) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) Datenintegration. | Erstellen, Bearbeiten und Konfigurieren von Datenquellen und Modellen. |
+| **FDM-Autor** | [Erstellt und verwaltet Formulardatenmodelle (FDM) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) Datenintegration. | Erstellen, Bearbeiten und Konfigurieren von Datenquellen und Modellen. |
 
 >[!NOTE]
 >
