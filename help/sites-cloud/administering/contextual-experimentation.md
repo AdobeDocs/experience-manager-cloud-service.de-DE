@@ -3,9 +3,11 @@ title: Kontextuelles Experimentieren in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie mit dem Experimentier-Plug-in Ihrer Site Experimentierfunktionen hinzufügen können.
 feature: Administering
 role: Admin
-source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
+source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -31,9 +33,9 @@ Für Sites, die auf Adobe Experience Manager ausgeführt werden, gibt es das „
 
 ## Bevor Sie beginnen {#before-start}
 
-Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [&#x200B; der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
+Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [ der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
 
-Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/de/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
+Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
 
 ## Häufig verwendete Begriffe {#frequently-used-terms}
 
@@ -226,7 +228,7 @@ Nachfolgend finden Sie eine Liste häufig gestellter Fragen:
 
 F: Kann ich das Aufspaltungsverhältnis zwischen den Varianten meines Experiments anpassen, zum Beispiel 10% auf Kontrolle und 90% auf den Herausforderer?
 
-Ja, das Aufspaltungsverhältnis kann über ([) &#x200B;](#configure-experiment) werden.
+Ja, das Aufspaltungsverhältnis kann über ([) ](#configure-experiment) werden.
 
 F: Kann ich sowohl mit Text als auch mit Bildern experimentieren?
 
