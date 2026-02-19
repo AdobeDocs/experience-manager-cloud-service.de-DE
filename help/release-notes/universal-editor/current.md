@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.02.13
-description: Dies sind die Versionshinweise für die Version 2026.02.13 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.02.19
+description: Dies sind die Versionshinweise für die Version 2026.02.19 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 39%
+source-wordcount: '251'
+ht-degree: 28%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.02.13 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.02.19 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 13. Februar 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 19. Februar 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,8 +26,14 @@ Dies sind die Versionshinweise für die Version vom 13. Februar 2026 des univers
 
 ## Neue Funktionen {#what-is-new}
 
-* Dynamic Media-Links werden jetzt unterstützt.
-* Schema und Datentyp für die Erstellung von Blöcken mit [Dokumenterstellung](https://docs.da.live/developers/reference/universal-editor) sind jetzt verfügbar.
+* Der RTE wurde verbessert.
+   * [Ausblenden von Symbolleistenelementen im Kontext von RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options) wird jetzt unterstützt.
+   * [Das Umschließen von Text in Tabellen mit Absätzen](/help/implementing/universal-editor/configure-rte.md#table-actions) wird jetzt unterstützt.
+   * [Nicht unterstützte HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)Tags können jetzt vom RTE beibehalten werden.
+   * Die RTE-Logik wird jetzt von einer separaten Datei bereitgestellt.
+   * [Mit dem RTE können jetzt ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) Tabellen erstellt und bearbeitet werden.
+* Wenn keine Beschriftung festgelegt ist, wird jetzt der Komponententitel aus der Komponentendefinition verwendet.
+* `setEditorMode` ist jetzt über Erweiterungen verfügbar.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -37,6 +43,7 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Ein Problem mit falschen URLs für Videos wurde behoben.
-* Das Erstellen mehrerer Komponenten mit demselben Namen gibt keine 409 mehr zurück.
-* Die Headless-Arbeitsfläche behält jetzt nachfolgende Aktualisierungen eines Felds im Container bei.
+* RTE-Endpunkte werden jetzt für den Editor für die Bearbeitung im Kontext bereitgestellt.
+* Die Bearbeitung verschachtelter Felder führt nicht mehr zum Überschreiben von Peer-Einträgen aus diesen Strukturen.
+* Erforderliche RTE-Felder können nicht mehr als leer gespeichert werden.
+* Die In-Place-Formatierung wird beim Hinzufügen von Links nach der Formatierung nicht mehr falsch angewendet.

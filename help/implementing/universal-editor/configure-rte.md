@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Ed
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Die RTE-Konfiguration besteht aus zwei Teilen:
 * [`toolbar`](#toolbar): Die Symbolleistenkonfiguration steuert, welche Bearbeitungsoptionen in der Benutzeroberfläche verfügbar sind und wie sie organisiert sind.
 * [`actions`](#actions): Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen.
 
-Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit &#x200B;](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
+Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit ](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
 
 ```json
 [
@@ -87,9 +87,29 @@ Die Konfiguration der Symbolleiste steuert, welche Bearbeitungsoptionen in der B
 }
 ```
 
-## Konfiguration von Aktionen {#actions}
+## Aktionskonfiguration {#action}
 
 Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen. Dies sind die verfügbaren Abschnitte.
+
+### Allgemeine Aktionsoptionen {#common-action-options}
+
+Die meisten Aktionen unterstützen die folgenden allgemeinen Optionen:
+
+* `shortcut?`: Zeichenfolge - Überschreibt den standardmäßigen Tastaturbefehl für die Aktion (falls vorhanden)
+* `label?`: Zeichenfolge - Überschreibt die für die Aktion in der Benutzeroberfläche verwendete Beschriftung
+* `hideInline?`: Boolescher Wert - Blendet diese Aktion `true` aus der kontextbezogenen (Inline-)RTE-Editor-Symbolleiste aus.
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Aktionen formatieren {#format}
 
@@ -134,6 +154,56 @@ Listenaktionen unterstützen den Inhaltsumbruch zur Steuerung der HTML-Struktur.
   }
 }
 ```
+
+### Tabellenaktionen {#table-actions}
+
+Tabellenaktionen unterstützen den Inhaltsumbruch zur Steuerung der HTML-Struktur in Tabellenzellen:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Tabellenkonfigurationsoptionen {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (Standard) - Tabellenzellen enthalten nicht umschlossenen Textinhalt
+* `wrapInParagraphs`: `true` - Tabellenzellen umschließen Inhalt in Absatz-Tags
+
+Beispiele:
+
+Wenn `wrapInParagraphs`: `false`:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+Wenn `wrapInParagraphs`: `true`:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>Beim Entpacken von Absätzen (`wrapInParagraphs`: `false`) fügt das Bereinigungsprogramm automatisch `<br>` Tags zwischen mehreren Absätzen ein, um visuelle Zeilenumbrüche beizubehalten. Dies folgt den HTML-Standards und gängigen Verfahren in allen gängigen Rich-Text-Editoren.
 
 ### Aktionen verknüpfen {#link}
 
@@ -487,3 +557,20 @@ Bei den Tastaturbefehlen wird/werden das Format `Mod-Key`(en) verwendet, wobei:
 
 * `Mod` = `Cmd` unter Mac, `Ctrl` unter Windows/Linux
 * Beispiele: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## Nicht unterstützter HTML {#unsupported-html}
+
+Unbekannte HTML-Tags werden standardmäßig entfernt, wenn sie vom Editor analysiert werden. Um sie beizubehalten, melden Sie sich über die `unsupportedHtml` an:
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| Wert  | Verhalten |
+|---|---|
+| `false` (Standard) | Unbekannte HTML-Tags werden beim Analysieren entfernt. |
+| `true` | Unbekannte HTML-Tags werden in einen benutzerdefinierten, nicht unterstützten Blockknoten eingeschlossen, damit Inhalte sicher umgeleitet werden können. |
+
+Wenn diese Option aktiviert ist, rendert der Editor nicht unterstützte Knoten mit einer `rte-unsupported-block`. Consumer-Apps sollten den Stil für diese Klasse bereitstellen (z. B. Rahmen, Abstand, Hintergrund). Die Tag-Kennzeichnung innerhalb des Blocks verwendet `rte-unsupported-label`, die auch angepasst werden kann.

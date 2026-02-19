@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
+source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 78%
+source-wordcount: '2902'
+ht-degree: 76%
 
 ---
 
@@ -101,25 +101,32 @@ Tippen oder klicken Sie auf **Abbrechen** oder **Fertig**, um die Änderungen zu
 
 Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, standardmäßige Textformatierungen anzuwenden. Standardmäßig sind die folgenden Optionen verfügbar.
 
-* Absatz (h1, h2, h3 usw.)
-* Fett
-* Kursiv
-* Unterstrichen
-* Hochgestellt
-* Tiefgestellt
-* Aufzählungsliste
-   * Verwenden Sie die Tabulatortaste zum Einrücken und Umschalt+Tabulatortaste zum Ausrücken
-* Sortierte Liste
-   * Verwenden Sie die Tabulatortaste zum Einrücken und Umschalt+Tabulatortaste zum Ausrücken
-* Link
-* Verknüpfung aufheben
-* Bild
-* Als Text einfügen
-* Alle Formatierungen entfernen
+* **Absatzstil**
+   * Absätze, h1-h6, Code
+* **Fett**
+* **Kursiv**
+* **Unterstreichen**
+* **Durchgestrichen**
+* **Hochgestellt**
+* **Tiefgestellt**
+* **Aufzählungsliste**
+   * Verwenden Sie die Tabulatortaste zum Einrücken und Umschalt+Tabulatortaste zum Ausrücken.
+* **Sortierte Liste**
+   * Verwenden Sie die Tabulatortaste zum Einrücken und Umschalt+Tabulatortaste zum Ausrücken.
+* **Link**
+   * Geben Sie eine URL an oder verwenden Sie den Inhaltsbrowser, um einen Pfad in AEM auszuwählen.
+* **Verknüpfung aufheben**
+   * Link aus dem ausgewählten Text entfernen.
+* **Bild**
+   * Geben Sie eine URL an oder verwenden Sie den [Asset-Selektor](/help/assets/overview-asset-selector.md#using-asset-selector) um ein Asset aus AEM auszuwählen.
+* **Tabelle**
+   * Verwenden Sie die Dropdown-Liste, um eine neue Tabelle mit der ausgewählten Anzahl von Spalten und Zeilen einzufügen oder neue Spalten/Zeilen einzufügen und zu entfernen.
+* **Als Text einfügen**
+   * Formatierung aus dem Text in der Zwischenablage entfernen, bevor er in den universellen Editor eingefügt wird.
+* **Alle Formatierungen entfernen**
+   * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Vorhandene Tabellen können mit dem RTE bearbeitet werden, neue Tabellen können jedoch nicht erstellt werden.
-
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -136,7 +143,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -226,7 +233,7 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
 #### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 
