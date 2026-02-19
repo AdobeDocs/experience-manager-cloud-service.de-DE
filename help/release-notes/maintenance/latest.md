@@ -4,7 +4,7 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a58225edb8ca49db9743db6c9c5b08c786fa0144
+source-git-commit: c1e175128ab6e4b483e3940d9bd86a06540ef40f
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 27%
@@ -18,7 +18,7 @@ Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuel
 
 ## Version 24464 {#release-24464}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 24464, die am Mittwoch, 17. Februar 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 24288.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 24464, die am Donnerstag, 18. Februar 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 24288.
 
 Die Funktionsaktivierung von 2026.2.0 bietet den vollen Funktionsumfang für diese Wartungsversion. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
