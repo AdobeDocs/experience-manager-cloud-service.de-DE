@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigen
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 892339482c009edf9f73560f2a4b66f4317843fe
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 99%
 
 ---
@@ -24,7 +24,7 @@ Durch das Einrichten von Cloud Manager zur Integration in Ihre privaten GitHub C
 >* Bitbucket-Repositorys (sowohl `bitbucket.org` als auch Bitbucket Server, die selbst gehostete Bitbucket-Version).
 >* Azure DevOps-Repositorys ([dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) und selbst gehostete Azure DevOps-Versionen)
 >
->Siehe [Hinzufügen von externen Repositorys in Cloud Manager – Private Beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>Siehe [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
