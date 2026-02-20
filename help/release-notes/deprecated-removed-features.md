@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 45bdc9afeb43e9b9cc2e190d459819f65f091020
+source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
 workflow-type: tm+mt
-source-wordcount: '3707'
-ht-degree: 85%
+source-wordcount: '3842'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Aufnahme werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [Bestimmte Workflow-Schritte &#x200B;](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
 | [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
@@ -343,7 +343,7 @@ In diesem Abschnitt werden APIs aufgelistet, die veraltet sind und entfernt wurd
 
 Dieser Abschnitt enthält Anleitungen zum Entfernen von APIs für verschiedene APIs in den obigen Tabellen.
 
-Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
+Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
 
 Sie sollten zwar alle veralteten APIs im Laufe der Zeit beheben, aber priorisieren Sie alle APIs, die in der Tabelle Veraltete APIs aufgeführt sind, mit dem Zieldatum für die Entfernung am 26. Februar 2026 (oder früher). Im AEM Analyzer-Bericht können diese APIs mit dem Datum der wirksamen Entfernung 8/31/2025 angezeigt werden.
 
@@ -363,7 +363,7 @@ Wenn Sie `org.apache.sling.commons.auth` und/oder `org.apache.sling.commons.auth
 
 Aktionsliste:
 
-* Aktualisieren von ACS AEM Commons auf die neueste Version (mindestens 6.11.0)
+* Wenn Sie ACS AEM Commons verwenden, aktualisieren Sie auf die neueste Version (mindestens 6.11.0) und stellen Sie sicher, dass Sie den `cloud` Classifier verwenden.
 * Migration von `org.apache.sling.commons.auth` und/oder `org.apache.sling.commons.auth.spi` zu `org.apache.sling.auth` bzw. `org.apache.sling.auth.spi`.
 
 ### Entfernung von `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
@@ -381,7 +381,7 @@ Wenn Sie Bestandteile aus dem Paket `org.eclipse.jetty` oder einem seiner Unterp
 Aktionsliste:
 
 * Ersetzen Sie die Verwendung von `org.eclipse.jetty`-Paketen durch andere Drittanbieter-Bibliotheken bzw. eigenen Code oder
-* Wählen Sie die erforderlichen Bundles aus dieser Liste aus und fügen Sie sie zu Ihrem Projekt hinzu:
+* Wählen Sie die erforderlichen Bundles aus dieser Liste aus und fügen Sie sie zu Ihrem Projekt hinzu. Wenn Sie ein Paket hinzufügen, überprüfen Sie die Paket-Importe dieses Bundles, da Sie möglicherweise andere aus dieser Liste hinzufügen müssen, um diese Importe zu erfüllen. Wenn Sie Version 9.x dieser Bundles verwenden möchten, stellen Sie sicher, dass Sie genau die unten stehende Version bereitstellen und diese Pakete nicht *und* einbetten.
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
@@ -408,7 +408,8 @@ Entfernen Sie die Verwendung der Google Guava-Kernbibliotheken oder nehmen Sie e
 
 Aktionsliste:
 
-* Aktualisieren von ACS AEM Commons auf die neueste Version (mindestens 6.11.0)
+* Wenn Sie ACS AEM Commons verwenden, aktualisieren Sie auf die neueste Version (mindestens 6.11.0) und stellen Sie sicher, dass Sie den `cloud` Classifier verwenden.
+* Wenn Sie `io.wcm:io.wcm.caconfig.extensions` verwenden, aktualisieren Sie diese auf mindestens Version 1.9.2
 * Ersetzen der Verwendung der Google Guava-Kernbibliothek durch JDK-Sammlungen oder Apache Commons Collections4
 * Falls weiterhin erforderlich, fügen Sie Ihrem Projekt dieses Paket hinzu (ersetzen Sie die Version durch die neueste verfügbare):
    * `com.google.guava:guava:33.4.8-jre`
@@ -419,7 +420,7 @@ Entfernen Sie die Verwendung der nicht verwalteten Apache Commons-Bibliotheken u
 
 Aktionsliste:
 
-* Aktualisieren von ACS AEM Commons auf die neueste Version (mindestens 6.11.0)
+* Wenn Sie ACS AEM Commons verwenden, aktualisieren Sie auf die neueste Version (mindestens 6.11.0) und stellen Sie sicher, dass Sie den `cloud` Classifier verwenden.
 * Importe von `org.apache.commons.lang*` durch `org.apache.commons.lang3` ersetzen
 * Importe von `org.apache.commons.collections*` durch `org.apache.commons.collecitons4` ersetzen
 
@@ -445,7 +446,7 @@ Logback wird in Cloud Service nicht unterstützt. Es muss vollständig entfernt 
 
 Aktionsliste:
 
-* Aktualisieren von ACS AEM Commons auf die neueste Version (mindestens 6.11.0)
+* Wenn Sie ACS AEM Commons verwenden, aktualisieren Sie auf die neueste Version (mindestens 6.11.0) und stellen Sie sicher, dass Sie den `cloud` Classifier verwenden.
 * Entfernen des Codes mithilfe von Paketen aus `ch.qos.logback`
 
 ### Verwendung von `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
@@ -454,9 +455,10 @@ Wenn Sie `org.slf4j.event` oder `org.slf4j.spi` verwenden, entfernen Sie alle Ve
 
 Aktionsliste:
 
-* Aktualisieren von ACS AEM Commons auf die neueste Version (mindestens 6.11.0)
-* Entfernen des Codes mithilfe von `org.slf4j.event` und `org.slf4j.spi`
+* Wenn Sie ACS AEM Commons verwenden, aktualisieren Sie auf die neueste Version (mindestens 6.11.0) und stellen Sie sicher, dass Sie den `cloud` Classifier verwenden.
 * Wenn Sie den Apache Kafka-Client verwenden und das OSGi-Wrapper-Bundle von Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`) einschließen, ersetzen Sie es durch den [AEM Apache Kafka-Client-Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). Dies ist die gleiche Version wie die von Apache ServiceMix, mit nur der Verwendung dieser beiden Pakete entfernt.
+* Wenn Sie `com.adobe.aio.aem:aio-lib-osgi` Update auf die neueste Version (mindestens 2.0.12) verwenden.
+* Entfernen des Codes mithilfe von `org.slf4j.event` und `org.slf4j.spi`
 
 ### Verwendung von `org.apache.log4j` {#org.apache.log4j}
 
