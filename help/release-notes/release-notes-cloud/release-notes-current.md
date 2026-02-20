@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 087c29ddd1dcfe0fc4bda7428d71a5e6157e1325
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 40%
+source-wordcount: '1888'
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Video zur Versionsübersicht von Januar 2026 an, das eine Zusammenfassung der Funktionen gibt, die in Version 2026.1.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479798/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## AEM Beta-Programme {#aem-beta-programs}
@@ -55,18 +55,20 @@ Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, kö
 **Aktuelle Beta-Programme**
 In den folgenden Abschnitten sind aktive Beta- und Explorer-Programme aufgeführt.
 
-### Agenten in AEM (Explorer-Programm) {#agents-in-aem-beta-program}
+<!--
+### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
-Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [&#x200B; finden Sie unter „Übersicht über Agenten &#x200B;](/help/ai-in-aem/agents/overview.md) AEM&quot;.
+Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
-Dieses Programm dauert in der Regel 4-6 Wochen, kann aber so angepasst werden, dass es Ihre Fähigkeit zur aktiven Teilnahme berücksichtigt.
+This program typically lasts 4-6 weeks, but can be tailored to be flexible around your ability to actively participate. 
 
-Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [&#128279;](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
+To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) and include the following details to the extent possible:
 
-* Namen und Adobe ID der Team-Mitglieder, die Agenten aktiv verwenden werden.
-* Listen Sie bestimmte Agenten auf, die Sie oder Ihr Team verwenden werden. Oder sagen Sie einfach „Alle Agenten“.
+* Names and Adobe ID's of team members who will actively use agents.
+* List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
-Kunden, die für die Teilnahme ausgewählt wurden, werden direkt von Adobe benachrichtigt. Die Teilnahme unterliegt bestimmten Eignungskriterien, einschließlich Kundenlizenzierung und begrenzter Programmkapazität. Obwohl zunächst nicht alle Anfragen berücksichtigt werden können, werden in zukünftigen Beta-Schüben möglicherweise weitere Kunden in Betracht gezogen.
+Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+-->
 
 ### AEM Foundation (Beta-Programme) {#aem-foundation-beta-programs}
 
@@ -122,7 +124,7 @@ Weitere Informationen finden Sie unter KI-Suchen in der Ansicht [Assets](/help/a
 
 **Abrufen von Werten aus einem JSON-Array**
 
-Erweiterte benutzerdefinierte Funktionsfunktionen zum [&#x200B; (Extrahieren von Werten aus JSON-](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)), die über einen API-Aufruf empfangen werden, und direkten Binden an adaptive Formularfelder. Sie können jetzt Geschäftslogik und Regeln mit minimaler manueller Datenzuordnung entwickeln.
+Erweiterte benutzerdefinierte Funktionsfunktionen zum [ (Extrahieren von Werten aus JSON-](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)), die über einen API-Aufruf empfangen werden, und direkten Binden an adaptive Formularfelder. Sie können jetzt Geschäftslogik und Regeln mit minimaler manueller Datenzuordnung entwickeln.
 
 **Ausführen der zugehörigen Benutzeroberfläche auf einer Veröffentlichungsinstanz**
 
@@ -257,7 +259,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### KI-Tools für IDEs für AEM Java und Dispatcher-Entwicklung (Beta-Programm) {#ai-dev-beta}
 
@@ -266,7 +268,7 @@ Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie C
 * Austausch von Erfahrungen aus der Praxis, um zukünftige von Adobe unterstützte KI-Funktionen zu gestalten
 * Testen Sie IDE-Tools, die von KI-Agenten verwendet werden können, um AEM-Code und Dispatcher-Konfiguration zu generieren und zu debuggen
 
-Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 

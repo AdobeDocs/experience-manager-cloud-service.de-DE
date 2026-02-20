@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die in AEM verfügbaren Agenten, um die Inh
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 5e1ae1de0bdeada01f03f3549ab9295ddef139ea
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,6 @@ Diese Agenten sind in Adobe Experience Manager (AEM) as a Cloud Service verfügb
 >
 >* Sie sind derzeit weder für AEM 6.5 noch für AEM 6.5 LTS verfügbar.
 >* Sie sind weder in AEM On-Premise noch in Managed Services verfügbar.
-
->[!IMPORTANT]
->
->Um die Agenten zu verwenden, müssen Sie sich beim Explorer-Programm registrieren. Weitere Informationen zum AEM Agents Explorer-Programm finden Sie [hier](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs).
 
 ## Erlebnisproduktionsagent {#experience-production-agent}
 
