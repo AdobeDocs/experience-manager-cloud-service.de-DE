@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
 workflow-type: tm+mt
-source-wordcount: '4349'
-ht-degree: 96%
+source-wordcount: '4427'
+ht-degree: 95%
 
 ---
 
@@ -49,16 +49,16 @@ Die Methoden `Thread.stop()` und `Thread.interrupt()` können schwer zu reproduz
 ```java
 public class DontDoThis implements Runnable {
   private Thread thread;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     thread.stop();  // UNSAFE!
   }
- 
+
   public void run() {
     while (true) {
         somethingWhichTakesAWhileToDo();
@@ -73,16 +73,16 @@ public class DontDoThis implements Runnable {
 public class DoThis implements Runnable {
   private Thread thread;
   private boolean keepGoing = true;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     keepGoing = false;
   }
- 
+
   public void run() {
     while (this.keepGoing) {
         somethingWhichTakesAWhileToDo();
@@ -125,7 +125,7 @@ Standardmäßig geben sowohl der Java™ HTTP-Client (java.net.HttpUrlConnection
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
@@ -136,15 +136,15 @@ public void dontDoThis() {
 public void dontDoThisEither() {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -154,7 +154,7 @@ public void dontDoThisEither() {
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
@@ -162,9 +162,9 @@ public void doThis() {
     .setSocketTimeout(5000)
     .build();
   builder.setDefaultRequestConfig(requestConfig);
- 
+
   HttpClient httpClient = builder.build();
-   
+
   // do something with the client
 }
 
@@ -173,15 +173,15 @@ public void orDoThis () {
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
   urlConnection.setReadTimeout(5000);
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -508,9 +508,20 @@ public void doThis(Resource resource) {
 * **Schweregrad**: Gering
 * **Seit**: Version 2020.5.0
 
-Verwenden Sie den `Sling` nicht für Aufgaben, für die eine garantierte Ausführung erforderlich ist. Über Sling geplante Vorgänge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
+Verwenden Sie den `Sling` nicht für Aufgaben, für die eine garantierte Ausführung erforderlich ist. Über Sling geplante Aufträge garantieren die Ausführung und eignen sich besser für Umgebungen mit und ohne Cluster.
 
 Weitere Informationen zum Umgang mit Sling[`Apache Sling`Aufträgen in Cluster](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)Umgebungen finden Sie unter Ereignisabwicklung und Auftragsverarbeitung .
+
+### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-api-deprecated}
+
+* **Key**: java:S1874
+* **type**: Kompatibilität mit `Vulnerability` oder `Bug`/Cloud Service
+* **Schweregrad**: Info, Minor oder Major
+* **Seit**: Version 2026.1.0
+
+Die Experience Manager-API-Oberfläche wird ständig überprüft, um APIs zu identifizieren, deren Verwendung gestoppt werden muss. Diese API ist veraltet und mit einem Entfernungsdatum gekennzeichnet.
+
+Je näher das Entfernungsdatum rückt, desto höher ist die Schwere der Verletzung dieser Regel. Die Verwendung einer solchen API muss durch eine sichere Alternative ersetzt werden.
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -534,7 +545,7 @@ Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext vera
 
 Das `Apache Sling`-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da es in Kombination mit dem `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) zu schlechter Leistung führen kann. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu &#x200B;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
+Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
 
 
 ### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
@@ -1082,7 +1093,7 @@ Der Knotentyp `nt:base` kann als „generisch“ betrachtet werden, da alle Kno
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
   - type: lucene
-  - includedPaths: ["/content/dam/"] 
+  - includedPaths: ["/content/dam/"]
   - queryPaths: ["/content/dam/"]
     + indexRules
       - jcr:primaryType: nt:unstructured
