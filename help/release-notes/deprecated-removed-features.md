@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 80%
@@ -35,10 +35,10 @@ Während des Zeitfensters für die Einstellung erinnert Adobe die Kundinnen und 
 >
 >* **Ab 26. Januar 2026**: Benachrichtigungs-E-Mails zum Aktionscenter werden **wöchentlich pro Umgebung** gesendet, um Sie daran zu erinnern, die Verwendung dieser APIs zu entfernen.
 >* **26. Februar 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet, **während** Schritts **Code-Qualität** angehalten. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können das Problem außer Kraft setzen, damit die Pipeline fortgesetzt werden kann.
->* **26. März 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet **schlagen** während des **Code-Qualitäts-**-Schritts fehl **blockieren Bereitstellungen** neuen Codes, bis die Verwendung entfernt wird.
+>* **30. März 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet **schlagen** während des **Code-Qualitäts-**-Schritts fehl **blockieren Bereitstellungen** neuen Codes, bis die Verwendung entfernt wird.
 >* **30. April 2026**: Umgebungen, die diese APIs weiterhin verwenden, **möglicherweise keine wichtigen Adobe-Versions-Updates mehr**.
 >
->Um Bereitstellungsblöcke zu verhindern, entfernen Sie die API-Nutzung vor dem 26. März 2026.
+>Um Bereitstellungsblöcke zu verhindern, entfernen Sie die API-Nutzung vor dem 30. März 2026.
 
 ## Veraltete Funktionalität {#deprecated-features}
 
@@ -55,7 +55,7 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Aufnahme werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [Bestimmte Workflow-Schritte &#x200B;](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
 | [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
@@ -90,10 +90,10 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden bere
 >
 > * **Ab 26. Januar 2026**: Benachrichtigungs-E-Mails zum Aktionscenter werden **wöchentlich pro Umgebung** gesendet, um Sie daran zu erinnern, die Verwendung dieser APIs zu entfernen.
 > * **26. Februar 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet, **während** Schritts **Code-Qualität** angehalten. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können das Problem außer Kraft setzen, damit die Pipeline fortgesetzt werden kann.
-> * **26. März 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet **schlagen** während des **Code-Qualitäts-**-Schritts fehl **blockieren Bereitstellungen** neuen Codes, bis die Verwendung entfernt wird.
-> * **30. April 2026**: Umgebungen, die diese APIs weiterhin verwenden, **möglicherweise keine wichtigen Adobe-Versions-Updates mehr**.
+> * **30. März 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet **schlagen** während des **Code-Qualitäts-**-Schritts fehl **blockieren Bereitstellungen** neuen Codes, bis die Verwendung entfernt wird.
+> * **4. Mai 2026**: Umgebungen, die diese APIs noch verwenden, **möglicherweise keine wichtigen Adobe-Versions-Updates mehr**.
 >
-> Um Bereitstellungsblöcke zu verhindern, entfernen Sie die API-Nutzung vor dem 26. März 2026.
+> Um Bereitstellungsblöcke zu verhindern, entfernen Sie die API-Nutzung vor dem 30. März 2026.
 
 
 <details>
@@ -343,7 +343,7 @@ In diesem Abschnitt werden APIs aufgelistet, die veraltet sind und entfernt wurd
 
 Dieser Abschnitt enthält Anleitungen zum Entfernen von APIs für verschiedene APIs in den obigen Tabellen.
 
-Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
+Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
 
 Sie sollten zwar alle veralteten APIs im Laufe der Zeit beheben, aber priorisieren Sie alle APIs, die in der Tabelle Veraltete APIs aufgeführt sind, mit dem Zieldatum für die Entfernung am 26. Februar 2026 (oder früher). Im AEM Analyzer-Bericht können diese APIs mit dem Datum der wirksamen Entfernung 8/31/2025 angezeigt werden.
 
