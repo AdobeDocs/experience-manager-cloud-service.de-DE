@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 5bccf61158c40f9c6dd84ea91d005da370686781
 workflow-type: tm+mt
-source-wordcount: '3550'
-ht-degree: 100%
+source-wordcount: '2596'
+ht-degree: 92%
 
 ---
 
@@ -54,113 +54,142 @@ Sie können Bildvorgaben in Experience Manager verwalten, indem Sie auf das Adob
 >
 >Das System zeigt verschiedene Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Bildvorgaben erhöhen oder verringern. Siehe [Erhöhen der Anzahl der angezeigten Bildvorgaben](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Dateiformate Adobe Illustrator (AI), PostScript® (EPS) und PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+## Beziehung zwischen Bildvorgaben und Ausgabedarstellungen {#how-image-presets-relate-to-renditions}
 
-Wenn Sie die Aufnahme von AI-, EPS- und PDF-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
+Bildvorgaben definieren, wie Dynamic Media Bilder bereitstellt, einschließlich Größe, Formatierung, Komprimierung und andere Anzeigeparameter. Vorgaben generieren keine Ausgabedarstellungen selbst. Stattdessen sind sie auf Ausgabedarstellungen angewiesen, die bei der Verarbeitung von Assets erstellt werden.
 
-Das Dateiformat von Adobe Illustrator ist eine Variante von PDF. Dies sind die wichtigsten Unterschiede im Hinblick auf Experience Manager Assets:
+### Generieren von Ausgabedarstellungen in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-* Adobe Illustrator-Dokumente bestehen aus einer einzelnen Seite mit mehreren Ebenen. Jede Ebene wird als PNG-Teil-Asset unter dem Illustrator-Haupt-Asset extrahiert.
-* PDF-Dokumente bestehen aus einer oder mehreren Seiten. Jede Seite wird als einseitiges PDF-Teil-Asset unter dem mehrseitigen PDF-Hauptdokument extrahiert.
+In AEM as a Cloud Service werden Ausgabedarstellungen mithilfe von **Asset-Microservices** generiert. Der Workflow DAM-Update-Asset kann in Cloud Service nicht angepasst werden.
 
-Die `Create Sub Asset process`-Komponente erstellt die Teil-Assets im gesamten `DAM Update Asset`-Workflow. Um diese Prozesskomponente innerhalb des Workflows anzuzeigen, klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
+Zu den wichtigen Überlegungen gehören die folgenden:
 
-<!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
+* Ausgabedarstellungen werden beim Hochladen generiert.
+* Änderungen an einem Verarbeitungsprofil betreffen neu hochgeladene Assets. Vorhandene Assets müssen erneut verarbeitet werden, wenn neue Ausgabedarstellungen erforderlich sind.
+* Die Anpassung von Workflow-Modellen wird in AEM as a Cloud Service zur Erzeugung von Ausgabedarstellungen nicht unterstützt.
 
-Sie können die Teil-Assets oder die Seiten anzeigen, wenn Sie das Asset öffnen, auf das Menü „Inhalt“ klicken und **[!UICONTROL Teil-Assets]** oder **[!UICONTROL Seiten]** auswählen. Teil-Assets sind echte Assets. Die Workflow-Komponente `Create Sub Asset` extrahiert die PDF-Seiten. Die Seiten werden dann unter dem Haupt-Asset als `page1.pdf`, `page2.pdf` usw. gespeichert. Nach dem Speichern werden sie vom Workflow `DAM Update Asset` verarbeitet.
+Bildvorgaben verweisen auf verfügbare Ausgabedarstellungen zum Zeitpunkt der Bereitstellung. Stellen Sie sicher, dass die erforderlichen Ausgabedarstellungen vorhanden sind, bevor Sie Bildvorgaben konfigurieren oder verwenden.
 
-Um Dynamic Media zu verwenden und dynamische Ausgabedarstellungen für AI-, EPS- oder PDF-Dateien als Vorschau anzuzeigen oder zu generieren, sind folgende Verarbeitungsschritte erforderlich:
+**So steuern Sie, welche Ausgabedarstellungen generiert werden:**
 
-1. Im Workflow `DAM Update Asset` wird die erste Seite des ursprünglichen Assets mithilfe der konfigurierten Auflösung von der Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` in einem Ausgabeformat `cqdam.preview.png` gerastert.
+1. Erstellen oder bearbeiten Sie [Verarbeitungsprofil](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+2. Konfigurieren Sie die erforderlichen Ausgabedarstellungsdefinitionen.
+3. Wenden Sie das Verarbeitungsprofil auf den entsprechenden Ordner an.
 
-1. Die Prozesskomponente `Dynamic Media Process Image Assets` innerhalb des Workflows optimiert die `cqdam.preview.png`-Ausgabedarstellung in ein PTIFF.
+Wenn Assets in einen Ordner hochgeladen werden, auf den ein Verarbeitungsprofil angewendet wurde, generieren die Asset-Microservices automatisch die definierten Ausgabedarstellungen.
+
+<!--
+### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, review the following information before you create Image Presets.
+
+Adobe Illustrator's file format is a variant of PDF. The main differences, in the context of Experience Manager Assets, are the following:
+
+* Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG subasset under the main Illustrator asset.
+* PDF documents consist of one or more pages. Each page is extracted as a single page PDF subasset under the main multi-page PDF document.
+
+The `Create Sub Asset process` component creates the subassets within the overall `DAM Update Asset` workflow. To see this process component within the workflow, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+
+See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file).
+
+You can view the subassets or the pages when you open the asset, select the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. The `Create Sub Asset` workflow component extracts the PDF pages. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+
+To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
+
+1. In the `DAM Update Asset` workflow, the `Rasterize PDF/AI Image Preview Rendition` process component rasterizes the first page of the original asset &ndash; using the configured resolution &ndash; into a `cqdam.preview.png` rendition.
+
+1. The `Dynamic Media Process Image Assets` process component within the workflow optimizes the `cqdam.preview.png` rendition into a PTIFF.
 
 >[!NOTE]
 >
->Im Workflow „DAM Update Asset“ generiert der Schritt **[!UICONTROL EPS-Miniaturen]** Miniaturen für EPS-Dateien.
+>In the DAM Update Asset workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
-#### Metadateneigenschaften von PDF-/AI-/EPS-Assets {#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS asset metadata properties {#pdf-ai-eps-asset-metadata-properties}
 
-| **Metadateneigenschaft** | **Beschreibung** |
+| **Metadata property** |**Description** |
 |---|---|
-| `dam:Physicalwidthininches` | Dokumentbreite in Zoll. |
-| `dam:Physicalheightininches` | Dokumenthöhe in Zoll. |
+| `dam:Physicalwidthininches` |Document width in inches. |
+| `dam:Physicalheightininches` |Document height in inches. |
 
-Sie können `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponentenoptionen über den Workflow `DAM Update Asset` aufrufen.
+You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Klicken Sie links oben auf „Adobe Experience Manager“ und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.  Wählen Sie auf der Seite „Workflow-Modelle“ die Option **[!UICONTROL DAM-Update-Asset]** aus und dann in der Symbolleiste **[!UICONTROL Bearbeiten]**. Wählen Sie auf der Seite „Workflow DAM-Update-Asset“ die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` doppelt aus, um das Dialogfeld „Schritteigenschaften“ zu öffnen.
+Select Adobe Experience Manager in the upper left, the click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-select the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
-#### PDF-/AI-Bildvorschau-Ausgabedarstellung rastern – Optionen {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![Argumente zum Rastern von PDF- oder AI-Workflows](assets/rasterize_pdf_ai_image_preview.png)
+![Arguments to rasterize PDF or AI workflow](assets/rasterize_pdf_ai_image_preview.png)
 
-Argumente zum Rastern von PDF- oder AI-Workflows
+Arguments to rasterize PDF or AI workflow
 
-| Prozessargument | Standardeinstellung | Beschreibung |
+|Process Argument | Default setting | Description |
 |---|---|---|
-| MIME-Typen | application/pdf<br>application/postscript<br>application/illustrator | Liste der Dokument-MIME-Typen, die als PDF- oder Illustrator-Dokumente gelten. |
-| Max. Breite | 2048 | Maximale Breite der generierten Vorschaudarstellung in Pixel. |
-| Max. Höhe | 2048 | Maximale Höhe der generierten Vorschaudarstellung in Pixel. |
-| Auflösung | 72 | Auflösung zum Rastern der ersten Seite in ppi (Pixel pro Zoll). |
+| Mime Types | application/pdf<br>application/postscript<br>application/illustrator| List of document mime-types that are considered to be PDF or Illustrator documents. |
+| Max Width | 2048 | Maximum width of the generated preview rendition, in pixels.|
+| Max Height | 2048| Maximum height of the generated preview rendition, in pixels. |
+| Resolution | 72 | Resolution to rasterize the first page, in ppi (pixels per inch). |
 
-Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines PDF/AI-Dokuments mit 72 ppi gerastert und das generierte Vorschaubild hat eine Größe von 2048 x 2048 Pixel. Für eine typische Bereitstellung können Sie die Auflösung auf einen Mindestwert von 150 ppi oder mehr erhöhen. Für ein US Letter-Dokument ist z. B. für 300 ppi eine maximale Breite und Höhe von 2550 x 3300 Pixel erforderlich.
+Using the default process arguments, the first page of a PDF/AI document is rasterized at 72 ppi and the generated preview image is sized at 2048 x 2048 pixels. For a typical deployment, you can increase the resolution to a minimum of 150 ppi or more. For example, a US letter size document at 300 ppi requires a maximum width and height of 2550 x 3300 pixels, respectively.
 
-Die max. Breite und die max. Höhe beschränken die Auflösung, in der die Rasterung erfolgt. Wenn beispielsweise die Maximalwerte unverändert bleiben und die Auflösung auf 300 ppi eingestellt ist, wird ein US-Letter-Dokument auf 186 ppi gerastert. Das heißt, das Dokument hat 1581 x 2046 Pixel.
+Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Zu große Bilder können zu einem Überlauf des für die JVM (Java™ Virtual Machine) bereitgestellten Speichers führen. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
 
-### InDesign-Dateiformat (INDD) {#indesign-indd-file-format}
+<!--
+### InDesign (INDD) file format {#indesign-indd-file-format}
 
-Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
+If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, review the following information before you create Image Presets.
 
-Für InDesign-Dateien werden nur dann Teil-Assets extrahiert, wenn der Adobe InDesign Server in Experience Manager integriert ist. Referenzierte Assets werden basierend auf ihren Metadaten verknüpft. Für die Verknüpfung ist InDesign Server nicht erforderlich. Die referenzierten Assets müssen jedoch in Experience Manager vorhanden sein, bevor die InDesign-Dateien verarbeitet werden, damit die Verknüpfungen zwischen den InDesign-Dateien und den referenzierten Assets erstellt werden können.
+For InDesign files, sub assets are extracted only if the Adobe InDesign Server is integrated with Experience Manager. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within Experience Manager before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
-Die Prozesskomponente zum Extrahieren von Medien im Workflow `DAM Update Asset` führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
+The Media Extraction process component in the `DAM Update Asset` workflow runs several pre-configured Extend Scripts to process InDesign files.
 
-![Die ExtendScript-Pfade in den Argumenten des Prozesses zum Extrahieren von Medien](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![The ExtendScript paths in the arguments of Media Extraction process](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Die ExtendScript-Pfade in den Argumenten der Prozesskomponente zum Extrahieren von Medien im Workflow „DAM-Update-Asset“
+The ExtendScript paths in the arguments of the Media Extraction process component in the DAM Update Asset workflow.
 
-Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
+The following scripts are used by Dynamic Media integration:
 
 
-| ExtendScript-Name | Standard | Beschreibung |
+|ExtendScript name | Default | Description |
 |---|---|---|
-| ThumbnailExport.jsx | Ja | Erstellt eine 300 ppi große `thumbnail.jpg`-Ausgabedarstellung, die von der Prozesskomponente `Dynamic Media Process Image Assets` optimiert und in eine PTIFF-Ausgabedarstellung umgewandelt wird. |
-| JPEGPagesExport.jsx | Ja | Generiert für jede Seite ein 300 ppi großes JPEG-Teil-Asset. Das JPEG-Teil-Asset ist ein echtes Asset, das unter dem InDesign-Asset gespeichert wird. Der Workflow `DAM Update Asset` optimiert und wandelt sie in eine PTIFF-Datei um. |
-| PDFPagesExport.jsx | Nein | Generiert für jede Seite ein PDF-Teil-Asset. Das PDF-Teil-Asset wird wie zuvor beschrieben verarbeitet. Da das PDF-Asset nur eine Seite enthält, werden keine Teil-Assets generiert. |
+| ThumbnailExport.jsx | Yes  | Generates a 300 PPI `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
+| JPEGPagesExport.jsx | Yes | Generates a 300 PPI JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. The `DAM Update Asset` workflow optimizes and converts it into a PTIFF. |
+| PDFPagesExport.jsx | No | Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated. |
+-->
 
-### Konfigurieren der Größe von Miniaturbildern {#configuring-image-thumbnail-size}
+<!--
+### Configure the image thumbnail size {#configuring-image-thumbnail-size}
 
-Sie können die Größe von Miniaturen über die Einstellungen im Workflow **[!UICONTROL DAM-Update-Asset]** konfigurieren. Im Workflow sind zwei Schritte enthalten, in denen Sie die Größe der Miniaturen von Bild-Assets konfigurieren können. Einer (**[!UICONTROL Bild-Assets-Prozess für Dynamic Media]**) wird für dynamische Bild-Assets verwendet. Der andere (**[!UICONTROL Prozessminiaturen]**) wird für die Generierung statischer Miniaturen verwendet oder wenn alle anderen Prozesse keine Miniaturen generieren. Unabhängig davon müssen *beide* dieselben Einstellungen haben.
+You can configure the size of thumbnails by configuring those settings in the **[!UICONTROL DAM Update Asset]** workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. One (**[!UICONTROL Dynamic Media Process Image Assets]**) is used for dynamic image assets. The other (**[!UICONTROL Process Thumbnails]**) is used for static thumbnail generation or when all other processes fail to generate thumbnails. Regardless, *both* must have the same settings.
 
-Im Schritt **[!UICONTROL Dynamic Media Process Image Assets]** wird der Bild-Server verwendet, um Miniaturen zu generieren, unabhängig von der Konfiguration, die auf den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** angewendet wird. Das Generieren von Miniaturen mit dem Schritt **[!UICONTROL Miniaturen verarbeiten]** ist das langsamste und speicherintensivste Verfahren zum Erstellen von Miniaturen.
+The **[!UICONTROL Dynamic Media Process Image Assets]** step uses the image server to generate thumbnails, independently of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
-Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL width:height:center]**, z. B. `80:80:false`. Die Breite und die Höhe legen die Größe der Miniatur in Pixel fest. Für den center-Wert ist entweder false oder true festgelegt. Wenn true festgelegt ist, hat das Miniaturbild exakt die in der Konfiguration festgelegte Größe. Wenn das in der Größe angepasste Bild kleiner ist, wird es im Miniaturbildfenster zentriert.
+Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:center]**, for example, `80:80:false`. The width and height determine the size in pixels of the thumbnail. The center value is either false or true. If set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it is centered within the thumbnail.
 
 >[!NOTE]
 >
->* Die Größe der Miniaturen für EPS-Dateien wird im Schritt **[!UICONTROL EPS-Miniaturen]** auf der Registerkarte **[!UICONTROL Argumente]** unter „Miniaturen“ konfiguriert.
+>* Thumbnail sizes for EPS files are configured in the **[!UICONTROL EPS thumbnails]** step, in the **[!UICONTROL Arguments]** tab under Thumbnails.
 >
->* Die Größe der Miniaturen für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
+>* Thumbnail sizes for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
-**So konfigurieren Sie die Größe von Miniaturbildern:**
+**To configure the image thumbnail size:**
 
-1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
-1. Wählen Sie den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** und dann die Registerkarte **[!UICONTROL Miniaturen]** aus. Ändern Sie bei Bedarf die Größe der Miniaturen und klicken Sie auf **[!UICONTROL OK]**.
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Dynamic Media Process Image Assets]** step and select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Wählen Sie den Schritt **[!UICONTROL Miniaturen verarbeiten]** und dann die Registerkarte **[!UICONTROL Miniaturen]** aus. Ändern Sie bei Bedarf die Größe der Miniaturen und klicken Sie auf **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Process Thumbnails]** step, then select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Die Werte im Argument „Miniaturen“ im Schritt **[!UICONTROL Miniaturen verarbeiten]** müssen mit dem Argument „Miniaturen“ im Schritt **[!UICONTROL Bild-Assets-Verarbeitung für Dynamic Media]** übereinstimmen.
+   >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen am Workflow zu speichern.
+1. Select **[!UICONTROL Save]** to save the changes to the workflow.
+-->
 
 ### Erhöhen oder Verringern der Anzahl angezeigter Bildvorgaben {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -168,7 +197,7 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 
 **So erhöhen oder verringern Sie die Anzahl angezeigter Bildvorgaben:**
 
-1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. https://localhost Navigieren Sie zu CRXDE Lite ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -206,9 +235,9 @@ Siehe [Dateiformat InDesign (INDD)](#indesign-indd-file-format).
 
    >[!NOTE]
    >
-   >Damit diese Bildvoreinstellung responsiv wird, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
+   >Damit diese Bildvorgabe responsiv wird, löschen Sie die Werte in den Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** und lassen Sie sie leer.
 
-1. Geben Sie auf der Seite **[!UICONTROL Bildvorgabe bearbeiten]** auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** die entsprechenden Werte (einschließlich eines Namens) ein. Die Optionen werden unter [Bildvoreinstellungsoptionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
+1. Geben Sie auf der Seite **[!UICONTROL Bildvorgabe bearbeiten]** auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** die entsprechenden Werte (einschließlich eines Namens) ein. Die Optionen werden unter [Bildvorgaben-Optionen](#image-preset-options) beschrieben. Vorgaben werden im linken Bereich angezeigt und können nur zusammen mit anderen Assets verwendet werden.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
@@ -218,7 +247,7 @@ Siehe [Dateiformat InDesign (INDD)](#indesign-indd-file-format).
 
 Um eine responsive Bildvorgabe zu erstellen, führen Sie die im Abschnitt [Erstellen von Bildvorgaben](#creating-image-presets) beschriebenen Schritte durch. Löschen Sie die Werte für Höhe und Breite im Fenster **[!UICONTROL Bildvorgabe bearbeiten]** und lassen Sie sie leer.
 
-Dadurch wird diese Vorgabe in Experience Manager als responsiv erkannt. Sie können die anderen Werte nach Bedarf anpassen.
+Dadurch wird diese Bildvorgabe in Experience Manager als responsiv erkannt. Sie können die anderen Werte nach Bedarf anpassen.
 
 >[!NOTE]
 >
@@ -297,7 +326,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul>
     <div>
       Scharfzeichnen wird im Video
-     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=de">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
