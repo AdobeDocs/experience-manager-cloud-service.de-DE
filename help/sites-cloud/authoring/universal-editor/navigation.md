@@ -79,7 +79,7 @@ Die obere Navigationsleiste von Experience Platform befindet sich immer oben im 
 
 ![Die Kopfzeile von Experience Cloud](assets/experience-cloud-header.png)
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur Adobe Experience Platform-Benutzeroberfläche von [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Konto {#user-properties}
 

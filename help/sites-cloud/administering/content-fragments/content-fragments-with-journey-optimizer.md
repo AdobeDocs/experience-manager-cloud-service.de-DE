@@ -26,7 +26,7 @@ Die Vernetzung von Inhaltsfragmenten mit AJO vereinfacht den Abruf und die Nutzu
 
 Weitere Informationen erhalten Sie in der Dokumentation zu AJO:
 
-* [Verwenden von Inhaltsfragmenten in AEM](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
+* [Verwenden von Inhaltsfragmenten in AEM](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=de#integrations)
 * [Integration von AJO-Angeboten mit Inhaltsfragmenten](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## Dispatcher-Konfiguration {#dispatcher-configuration}
