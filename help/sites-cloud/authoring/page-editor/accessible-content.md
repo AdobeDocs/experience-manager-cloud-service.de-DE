@@ -911,7 +911,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.4.5 erfüllen](https://ww
 #### Weitere Informationen: Verschiedene Methoden (2.4.5) {#more-information-multiple-ways}
 
 * [Verstehen der Erfolgskriterien 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
-* [Erfüllen der Erfolgskriterien 2.4.5 ](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+* [Erfüllen der Erfolgskriterien 2.4.5 &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
 ### Überschriften und Beschriftungen (2.4.6)  {#headings-and-labels}
 

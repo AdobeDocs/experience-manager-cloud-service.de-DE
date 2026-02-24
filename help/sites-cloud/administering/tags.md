@@ -225,7 +225,7 @@ Um das Tag in Ihrer Autoreninstanz zu deaktivieren und es aus Ihrer Veröffentli
 
 1. Die Aktion zum Aufheben der Veröffentlichung wird mit einem Dialogfeld **Erfolg** bestätigt.
 
-   ![Dialogfeld „Erfolg“ beim Aufheben der Tag-Veröffentlichung ](assets/unpublish-tag-success.png)
+   ![Dialogfeld „Erfolg“ beim Aufheben der Tag-Veröffentlichung &#x200B;](assets/unpublish-tag-success.png)
 
 Die ausgewählten Tags werden zum Aufheben der Veröffentlichung in die Warteschlange gestellt. Wenn es sich bei dem ausgewählten Tag um ein Container-Tag handelt, werden auch alle zugehörigen untergeordneten Tags in der Autorenumgebung deaktiviert und aus der Veröffentlichungsumgebung entfernt.
 

@@ -126,7 +126,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 **Erweiterungen** ist der Name des Containers, der die Kern-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt Client-seitige Implementierungen, indem „at.js“ verwendet wird, das JavaScript-SDK von Target für das moderne Web. Sie müssen sowohl die **Adobe Target** als auch die **Adobe ContextHub**-Erweiterung hinzufügen.
 
 1. Wählen Sie die Option „Erweiterungskatalog“ aus und suchen Sie im Filter nach Target.
-2. Wählen Sie **Adobe Target**at.js aus und klicken Sie auf die Option „Installieren“.
+2. Wählen Sie **Adobe Target**&#x200B;at.js aus und klicken Sie auf die Option „Installieren“.
    ![Target-Suche](assets/search_ext1.png "Target-Suche")
 3. Klicken Sie auf die Schaltfläche **Konfigurieren**. Beachten Sie das Konfigurationsfenster mit den importierten Target-Anmeldedaten und die at.js-Version für diese Erweiterung.
 4. Wählen Sie **Speichern**, um die Target-Erweiterung zur Experience Platform Launch-Eigenschaft hinzuzufügen. Die Target-Erweiterung sollte unter **Installierte Erweiterungen** aufgeführt sein.

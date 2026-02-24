@@ -25,7 +25,7 @@ Erfahren Sie, wie Sie [die Eigenschaften einer Seite](/help/sites-cloud/authorin
 
 Sie können Seiteneigenschaften an verschiedenen Stellen in AEM bearbeiten.
 
-* [Im ](#from-the-sites-console)
+* [Im &#x200B;](#from-the-sites-console)
 * [Im Seiteneditor](#from-the-page-editor)
 * [Im universellen Editor](#from-the-universal-editor)
 

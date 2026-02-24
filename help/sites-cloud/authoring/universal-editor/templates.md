@@ -45,7 +45,7 @@ Aktivieren Sie zunächst bearbeitbare Vorlagen für die Konfiguration Ihrer Site
 Sobald die Konfiguration aktiviert ist, müssen Sie Vorlagen für Ihre Site zulassen.
 
 1. Verwenden Sie die **Sites**-Konsole und [wählen Sie das Stammverzeichnis Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
-1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol [**Eigenschaften** ](/help/sites-cloud/authoring/sites-console/page-properties.md) in der Symbolleiste.
+1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol [**Eigenschaften** &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md) in der Symbolleiste.
 1. Tippen oder klicken Sie auf der Registerkarte **Erweitert** des Eigenschaftsdialogs unter dem Abschnitt **Vorlageneinstellungen** auf die Schaltfläche **Hinzufügen**.
 1. Fügen Sie in dem neuen, leeren Feld, das unter **Zulässige Vorlagen** angezeigt wird, den Pfad `/conf/<site>/settings/wcm/templates/.*` hinzu.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
@@ -58,7 +58,7 @@ Sie können entweder [eine neue Seite erstellen](/help/sites-cloud/authoring/sit
 
 1. Verwenden Sie die Konsole **Sites**, um [zu der neuen oder vorhandenen Seite zu navigieren](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources), die Sie als Vorlage verwenden möchten, und tippen oder klicken Sie darauf, um sie auszuwählen.
 
-1. Sobald die Seite ausgewählt ist, tippen Sie auf das Symbol [**Eigenschaften** in der Symbolleiste oder klicken Sie auf das Symbol ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
+1. Sobald die Seite ausgewählt ist, tippen Sie auf das Symbol [**Eigenschaften** in der Symbolleiste oder klicken Sie auf das Symbol &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md).
 
 1. Wählen Sie unter dem Abschnitt **Vorlageneinstellungen** im Dialogfeld „Eigenschaften“ auf der Registerkarte **Erweitert** den Umschalter **Seite als Vorlage verwenden** aus.
 

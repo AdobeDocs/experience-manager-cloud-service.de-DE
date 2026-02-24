@@ -29,7 +29,7 @@ Sie können eine Vorschau Ihres Fragments anzeigen:
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
 
-Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ ](/help/sites-cloud/administering/content-fragments/authoring.md).
+Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >

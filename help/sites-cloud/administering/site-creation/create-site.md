@@ -38,7 +38,7 @@ Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Struktur sow
 
 >[!NOTE]
 >
->Verwechseln Sie Site-Vorlagen nicht mit [Seitenvorlagen. ](/help/sites-cloud/authoring/page-editor/templates.md) Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
+>Verwechseln Sie Site-Vorlagen nicht mit [Seitenvorlagen. &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
 
 ### Von Adobe bereitgestellte Site-Vorlagen {#adobe-templates}
 

@@ -37,7 +37,7 @@ Um Ihre Instanz für den Export AEM Experience Fragments nach Adobe Target vorzu
 Danach können Sie:
 
 * [Ein Experience Fragment nach Adobe Target exportieren](#exporting-an-experience-fragment-to-adobe-target)
-* [Ihr Experience Fragments in Adobe Target verwenden ](#using-your-experience-fragments-in-adobe-target)
+* [Ihr Experience Fragments in Adobe Target verwenden &#x200B;](#using-your-experience-fragments-in-adobe-target)
 * Und auch [Ein bereits nach Adobe Target exportiertes Experience Fragment löschen](#deleting-an-experience-fragment-already-exported-to-adobe-target)
 
 Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden.

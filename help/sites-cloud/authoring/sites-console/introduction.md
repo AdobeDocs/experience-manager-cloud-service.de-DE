@@ -82,7 +82,7 @@ Mit der Schaltfläche **Erstellen** können Sie neue Seiten zu Ihrer Site hinzuf
 
 Wird hierauf geklickt, entsprechen die angezeigten Optionen der Konsole/dem Kontext.  Die häufigsten sind:
 
-* [Seite  ](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+* [Seite  &#x200B;](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [Site](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
 * [Launch](/help/sites-cloud/authoring/launches/overview.md)
