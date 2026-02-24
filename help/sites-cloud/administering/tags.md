@@ -1,14 +1,15 @@
 ---
 title: Verwalten von Tags
 description: Erfahren Sie, wie Sie Tags in AEM verwalten, um Ihre Inhalte zu organisieren.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2200'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '2206'
+ht-degree: 99%
 
 ---
 

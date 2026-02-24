@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie Vorlagen erstellen, die zum Erstellen von Sei
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +45,7 @@ Aktivieren Sie zunächst bearbeitbare Vorlagen für die Konfiguration Ihrer Site
 Sobald die Konfiguration aktiviert ist, müssen Sie Vorlagen für Ihre Site zulassen.
 
 1. Verwenden Sie die **Sites**-Konsole und [wählen Sie das Stammverzeichnis Ihrer Site aus](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
-1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol ](/help/sites-cloud/authoring/sites-console/page-properties.md) [**Eigenschaften** in der Symbolleiste.
+1. Sobald das Stammverzeichnis ausgewählt ist, tippen oder klicken Sie auf das Symbol [**Eigenschaften** ](/help/sites-cloud/authoring/sites-console/page-properties.md) in der Symbolleiste.
 1. Tippen oder klicken Sie auf der Registerkarte **Erweitert** des Eigenschaftsdialogs unter dem Abschnitt **Vorlageneinstellungen** auf die Schaltfläche **Hinzufügen**.
 1. Fügen Sie in dem neuen, leeren Feld, das unter **Zulässige Vorlagen** angezeigt wird, den Pfad `/conf/<site>/settings/wcm/templates/.*` hinzu.
 1. Tippen oder klicken Sie auf **Speichern und schließen**.

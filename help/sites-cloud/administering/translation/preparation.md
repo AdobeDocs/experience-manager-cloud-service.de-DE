@@ -3,12 +3,13 @@ title: Vorbereiten von Inhalten für die Übersetzung
 description: Erfahren Sie, wie Sie bei der Entwicklung mehrsprachiger Websites Inhalte für die Übersetzung vorbereiten können.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '756'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 99%
 
 ---
 
@@ -59,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Website für die Übersetzung vo
 
 1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Der Sprachstamm der englischen Beispiel-WKND-Website ist z. B. `/content/wknd/language-masters/en`. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](preparation.md#creating-a-language-root) konfiguriert ist.
 1. Verfassen Sie den Inhalt des Sprach-Masters.
-1. Erstellen Sie den Sprachstamm jeder Sprachkopie für die Website. Der Sprachstamm der französischen Beispiel-WKND-Website ist z. B. /`/content/wknd/language-masters/fr`
+1. Erstellen Sie den Sprachstamm jeder Sprachkopie für die Website. Der Sprachstamm für die französische Sprachkopie der Beispiel-WKND-Website ist z. B. /`/content/wknd/language-masters/fr`
 
 Wenn Sie die Inhalte für die Übersetzung vorbereitet haben, können Sie automatisch fehlende Seiten in den Sprachkopien und zugehörigen Übersetzungsprojekten erstellen. (Siehe [Erstellen eines Übersetzungsprojekts](managing-projects.md).) Einen Überblick über den Prozess der Inhaltsübersetzung in AEM finden Sie unter [Übersetzen von Inhalten für mehrsprachige Websites](overview.md).
 

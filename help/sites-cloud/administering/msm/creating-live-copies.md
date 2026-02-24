@@ -3,12 +3,13 @@ title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren, um Ihre Inhalte auf Ihrer Website wiederzuverwenden.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: ht
-source-wordcount: '4270'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '4276'
+ht-degree: 99%
 
 ---
 
@@ -242,11 +243,11 @@ Führen Sie den Rollout für eine Blueprint-Seite durch, um Inhaltsänderungen a
 
    ![Auswählen von Rollout-Seiten](../assets/select-rollout-pages.png)
 
-1. Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
+1. Geben Sie an, ob der Rollout-Auftrag sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
 
    ![Definieren der Rollout-Zeit](../assets/rollout-now-later.png)
 
-Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [***Status asynchroner Vorgänge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Rollouts werden als asynchrone Aufträge verarbeitet und können auf der Seite [***Status asynchroner Aufträge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Durchführen von Blueprint-Rollouts über die Verweisleiste {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -265,13 +266,13 @@ Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [
 
    * **Zeitplan**:
 
-     Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem späteren Zeitpunkt (**Später**) ausgeführt werden soll.
+     Geben Sie an, ob der Rollout-Auftrag sofort (**Jetzt**) oder zu einem späteren Zeitpunkt (**Später**) ausgeführt werden soll.
 
      ![Definieren des Rollout-Umfangs und des Zeitplans](../assets/rollout-scope-schedule.png)
 
 1. Wählen Sie nach Bestätigung dieser Details die Option **Rollout** aus, um die Aktion durchzuführen.
 
-Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [**Status asynchroner Vorgänge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Rollouts werden als asynchrone Aufträge verarbeitet und können auf der Seite [**Status asynchroner Aufträge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Durchführen von Blueprint-Rollouts über die Live Copy-Übersicht {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -286,11 +287,11 @@ Die [**Rollout**-Aktion ist auch über die Live Copy-Übersicht verfügbar](liv
 
    ![Auswählen von Seiten für den Rollout](../assets/select-rollout-pages.png)
 
-1. Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
+1. Geben Sie an, ob der Rollout-Auftrag sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
 
    ![Definieren des Rollout-Zeitplans](../assets/rollout-now-later.png)
 
-Rollouts werden als asynchrone Vorgänge verarbeitet und können auf der Seite [**Status asynchroner Vorgänge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+Rollouts werden als asynchrone Aufträge verarbeitet und können auf der Seite [**Status asynchroner Aufträge** überprüft werden](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Synchronisieren von Live Copies {#synchronizing-a-live-copy}
 

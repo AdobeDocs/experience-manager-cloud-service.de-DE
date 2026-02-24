@@ -1,14 +1,15 @@
 ---
 title: Seitenvergleich
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, indem sie nebeneinander angezeigt werden und die Unterschiede hervorgehoben sind.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
-workflow-type: ht
-source-wordcount: '635'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 99%
 
 ---
 
@@ -94,7 +95,7 @@ Es gibt Situationen, in denen der Seitenvergleich möglicherweise Unterschiede n
 * Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihrer Inhalte nutzen).
 * Bei Versionen erstellt der Vergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
 * Wenn eine Seite verschoben wird, können Sie keinen Vergleich mehr mit Versionen durchführen, die vor dem Verschieben erstellt wurden.
-   * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-cloud/authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
+   * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 >[!NOTE]
 >

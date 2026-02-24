@@ -1,14 +1,15 @@
 ---
 title: Erstellen von Seiten
 description: Erfahren Sie, wie Sie mithilfe der Sites-Konsole neue Seiten für Ihre Website erstellen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '477'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 99%
 
 ---
 

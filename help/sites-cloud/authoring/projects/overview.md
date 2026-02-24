@@ -1,14 +1,15 @@
 ---
 title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1253'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1259'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +40,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 
 ![Die Projektekonsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
-* Wählen Sie **Zeitleiste** und dann ein Projekt, um seine Zeitleiste anzuzeigen.
+* Wählen Sie **Timeline** und dann ein Projekt, um seine Timeline anzuzeigen.
 * Wählen Sie **Auswählen** aus, um in den Auswahlmodus zu wechseln.
 * Klicken Sie auf **Erstellen**, um Projekte hinzuzufügen.
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
@@ -56,7 +57,7 @@ Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in d
 * Links
 * Projektinformationen
 * Team
-* Landing Pages
+* Landingpages
 * E-Mails
 * Workflows
 * Launches
@@ -68,9 +69,9 @@ In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für e
 
 ![Assets-Kachel](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets, Rotationssets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für Dynamic Media verfügen.
+Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bild-Sets, Rotations-Sets oder gemischte Mediensets erstellen, wenn Sie über das Zusatzmodul für Dynamic Media verfügen.
 
-![Bildset](/help/sites-cloud/authoring/assets/projects-image-sets.png)
+![Bild-Set](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
 ### Asset-Sammlungen {#asset-collections}
 
@@ -173,7 +174,7 @@ Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und s
 
 Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherheits- und Kontrollberechtigungen verwalten können:
 
-| Rolle | Beschreibung | Berechtigungen | Gruppenmitgliedschaft |
+| Rolle | Beschreibung | Berechtigungen | Gruppenzugehörigkeit |
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
 | Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, die zugehörigen Metadaten und Assets; Berechtigungen zum Hochladen einer Aufnahmenliste sowie zum Überprüfen und Genehmigen von Assets; Schreibberechtigung für „/etc/commerce“; Berechtigung zum Ändern für ein bestimmtes Projekt | Gruppe „workflow-users“ |

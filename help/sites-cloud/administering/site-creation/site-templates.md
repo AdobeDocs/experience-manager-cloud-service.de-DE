@@ -3,12 +3,13 @@ title: Site-Vorlagen
 description: Erfahren Sie, wie AEM-Site-Vorlagen verwendet werden können, um die Site-Struktur und den anfänglichen Inhalt vorab zu definieren, damit Sie Sites schnell erstellen können.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 99%
 
 ---
 

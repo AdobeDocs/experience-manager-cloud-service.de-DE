@@ -1,14 +1,15 @@
 ---
 title: Konfigurieren von Layout-Container und Layout-Modus
 description: Erfahren Sie, wie Sie Layout-Container und Layout-Modus konfigurieren, um responsive Layouts für Ihre Inhaltsautorinnen und Inhaltsautoren zu aktivieren.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: ht
-source-wordcount: '1377'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1383'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +59,7 @@ Der [Projekt-Archetyp](https://experienceleague.adobe.com/docs/experience-manage
 
 ## Aktivieren des Layout-Modus für die Website {#activate-layout-mode-for-your-site}
 
-Der **Layout-Modus** ermöglicht es Ihnen, den Emulator zu verwenden, um das Layout Ihrer Inhalte für verschiedene Geräte anzupassen. Die WKND-Beispielseite ist bereits für den **Layout-Modus** aktiviert. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
+Der **Layout-Modus** ermöglicht es Ihnen, den Emulator zu verwenden, um das Layout Ihrer Inhalte für verschiedene Geräte anzupassen. Die WKND-Beispiel-Site ist bereits für den **Layout-Modus** aktiviert. Führen Sie diese Schritte aus, um Ihre eigene Site zu aktivieren.
 
 ### Konfigurieren von Breakpoints {#configure-breakpoints}
 

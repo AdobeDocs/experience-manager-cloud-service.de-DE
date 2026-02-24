@@ -3,12 +3,13 @@ title: Aktivieren der Frontend-Pipeline
 description: Erfahren Sie, wie Sie die Frontend-Pipeline für vorhandene traditionelle AEM-Authoring-Sites mit Veröffentlichungsbereitstellung aktivieren können, um Site-Designs zur schnelleren Anpassung Ihre Site zu nutzen.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '936'
 ht-degree: 90%
 
 ---

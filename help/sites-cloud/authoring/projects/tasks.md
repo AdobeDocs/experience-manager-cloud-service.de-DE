@@ -1,14 +1,15 @@
 ---
 title: Arbeiten mit Aufgaben
 description: Aufgaben stellen zu erledigende Arbeiten am Inhalt dar und werden in Projekten verwendet, um den Grad der Vollständigkeit der laufenden Aufgaben zu bestimmen
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '579'
+ht-degree: 99%
 
 ---
 

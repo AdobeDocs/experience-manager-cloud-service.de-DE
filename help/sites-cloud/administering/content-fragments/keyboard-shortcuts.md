@@ -4,11 +4,12 @@ description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter
 feature: Content Fragments
 role: User, Developer
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 98%
 
 ---
 

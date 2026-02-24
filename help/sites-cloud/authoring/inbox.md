@@ -1,14 +1,15 @@
 ---
 title: Ihr Posteingang
 description: Erfahren Sie, wie Sie Ihre Aufgaben mit den Benachrichtigungen verwalten können, die in Ihrem Posteingang eintreffen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '916'
+ht-degree: 99%
 
 ---
 

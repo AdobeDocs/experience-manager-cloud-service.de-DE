@@ -1,14 +1,15 @@
 ---
 title: Hinzufügen von Seitenanmerkungen
 description: Verwenden Sie den Anmerkungsmodus, um Anmerkungen und Skizzen auf den Seiten zu hinterlassen, so wie Sie Haftnotizen verwenden würden, um Ihren Prozess der Inhaltsüberprüfung zu unterstützen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '682'
+ht-degree: 99%
 
 ---
 

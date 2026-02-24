@@ -3,12 +3,13 @@ title: Integrieren von AEM as a Cloud Service mit Adobe Campaign
 description: Erfahren Sie mehr über die Unterstützung von AEM as a Cloud Service bei Integrationen mit Adobe Campaign.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 99%
+source-wordcount: '154'
+ht-degree: 97%
 
 ---
 

@@ -1,14 +1,15 @@
 ---
 title: Arbeiten mit Seitenversionen
 description: Erfahren Sie, wie Sie verschiedene Versionen Ihrer Seiten erstellen, vergleichen und wiederherstellen können.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
-workflow-type: ht
-source-wordcount: '1620'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1626'
+ht-degree: 99%
 
 ---
 
@@ -37,17 +38,17 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
-* über die [Zeitleiste](#creating-a-new-version-timeline)
+* über die [Timeline](#creating-a-new-version-timeline)
 * mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
 ### Erstellen einer neuen Version – Timeline {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste**.
+1. Öffnen Sie die **Timeline**.
 1. Wählen Sie die Auslassungszeichen neben dem Kommentarfeld aus, um die Optionen anzuzeigen:
 
-   ![Versionen in der Zeitleiste](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
+   ![Versionen in der Timeline](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. Wählen Sie **Als Version speichern**.
 1. Geben Sie gegebenenfalls eine **Beschriftung** und einen **Kommentar** ein.
@@ -72,7 +73,7 @@ Die Timeline wird geöffnet und die Informationen werden aktualisiert, um die ne
 
 Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Methoden, eine ältere Version zu reaktivieren:
 
-* die Option **Auf diese Version zurück** in der [Zeitleiste](/help/sites-cloud/authoring/basic-handling.md#timeline).
+* die Option **Auf diese Version zurück** in der [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline).
 
   Reaktivieren Sie eine frühere Version einer ausgewählten Seite.
 
@@ -104,7 +105,7 @@ So können Sie für die ausgewählte Seite eine frühere Version **wiederherstel
 
 1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
 1. Wählen Sie die Version aus, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
 
    ![Auf diese Version zurück](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -172,7 +173,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
 1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version, die Sie in der Vorschau anzeigen möchten:
 
    ![Vorschau der Version anzeigen](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -183,7 +184,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
    >
    >Wenn eine Seite verschoben wurde, können Sie keine Vorschau von Versionen mehr anzeigen, die vor dem Verschieben erstellt wurden.
    >
-   >Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-cloud/authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
+   >Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 ## Vergleichen einer Version mit der aktuellen Seite {#comparing-a-version-with-current-page}
 
@@ -191,7 +192,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
 1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version aus, die Sie vergleichen möchten.
 
    ![Versionen vergleichen](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -250,4 +251,4 @@ Timewarp bemüht sich nach Kräften, eine Seite zu einem bestimmten Zeitpunkt zu
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Auditprotokoll oder zu rechtlichen Zwecken gedacht.

@@ -1,15 +1,16 @@
 ---
 title: Aktivieren von PWA (Progressive Web App)-Funktionen
 description: AEM Sites ermöglicht es dem Inhaltsautor, PWA (Progressive Web App)-Funktionen für eine Website durch eine einfache Konfiguration anstelle von Kodierung zu aktivieren.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
-workflow-type: ht
-source-wordcount: '1896'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1902'
+ht-degree: 99%
 
 ---
 

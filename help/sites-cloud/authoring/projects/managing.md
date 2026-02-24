@@ -1,14 +1,15 @@
 ---
 title: Verwalten von Projekten
 description: In „Projekte“ können Sie ein Projekt organisieren, indem Sie Ressourcen zu einer Einheit zusammenfassen. Der Zugriff und die Verwaltung erfolgen über die Projektekonsole.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '882'
+ht-degree: 99%
 
 ---
 
@@ -112,11 +113,11 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
 Sie können die Projektstatistiken in der Konsole **Projekte** einsehen.
 
-### Anzeigen einer Projekt-Zeitleiste {#viewing-a-project-timeline}
+### Anzeigen einer Projekt-Timeline {#viewing-a-project-timeline}
 
-Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Wählen Sie zum Anzeigen der Projekt-Timeline die Option **Timeline** aus, aktivieren Sie den Auswahlmodus und wählen Sie das Projekt aus. Die Assets werden im linken Bereich angezeigt. Wählen Sie **Timeline** aus, um zur **Projektkonsole** zurückzukehren.
+Die Projekt-Timeline enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Wählen Sie zum Anzeigen der Projekt-Timeline die Option **Timeline** aus, aktivieren Sie den Auswahlmodus und wählen Sie das Projekt aus. Die Assets werden im linken Bereich angezeigt. Wählen Sie **Timeline** aus, um zur **Projektkonsole** zurückzukehren.
 
-![Projekt-Zeitleiste](/help/sites-cloud/authoring/assets/projects-timeline.png)
+![Projekt-Timeline](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Anzeigen aktiver/inaktiver Projekte {#viewing-active-inactive-projects}
 

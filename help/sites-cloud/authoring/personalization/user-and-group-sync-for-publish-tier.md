@@ -1,13 +1,14 @@
 ---
 title: Registrierung, Anmeldung und Anwenderprofil
 description: In diesem Abschnitt erfahren Sie mehr über Registrierung, Anmeldung, Anwenderdaten und Gruppensynchronisierung für AEM as a Cloud Service.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 3cc787fe9a0be9a687f7c20744d93f1df4b76f87
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1493'
 ht-degree: 90%
 
 ---

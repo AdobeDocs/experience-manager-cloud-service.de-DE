@@ -3,12 +3,13 @@ title: Erstellen einer neuen Site
 description: Erfahren Sie, wie Admins AEM verwenden, um mithilfe von Site-Vorlagen eine Site zu erstellen und den Stil und die Struktur Ihrer Site zu definieren.
 feature: Administering, Authoring
 role: Admin, User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 solution: Experience Manager Sites
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
-workflow-type: ht
-source-wordcount: '125'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 96%
 
 ---
 

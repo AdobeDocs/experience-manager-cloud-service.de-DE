@@ -2,12 +2,13 @@
 title: Exportieren von Inhaltsfragmenten nach Adobe Target
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente nach Adobe Target exportieren können, um Erlebnisse zu testen und zu personalisieren.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 98%
 
 ---
@@ -192,7 +193,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
   >
   >Wenn Sie den Opt-in für den Adobe Target-Konfigurationsassistenten durchführen, wird das „präzise Targeting“ aktiviert.
   >
-  >Präzises Targeting bedeutet, dass für die Cloud Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
+  >Präzises Targeting bedeutet, dass für die Cloud-Service-Konfiguration gewartet wird, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Aus diesem Grund kann hinsichtlich der Leistung eine präzise Zielgruppenbestimmung eine Verzögerung von einigen Millisekunden verursachen, bevor das Laden des Inhalts erfolgt.
   >
   >Das präzise Targeting ist auf der Autoreninstanz immer aktiviert. Auf der Veröffentlichungsinstanz können Sie die präzise Zielgruppenerfassung aber global deaktivieren, indem Sie in der Cloud Service-Konfiguration das Häkchen neben „Präzise Zielgruppenerfassung“ entfernen (**`http://localhost:4502/etc/cloudservices.html`**). Sie können das präzise Targeting auch für einzelne Komponenten aktivieren und deaktivieren, unabhängig von Ihrer Einstellung in der Cloud-Service-Konfiguration.
   >
@@ -241,7 +242,7 @@ Ihr Framework wird erstellt. Um das Framework auf der Veröffentlichungsinstanz 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=de).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

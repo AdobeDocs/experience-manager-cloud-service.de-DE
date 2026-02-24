@@ -1,14 +1,15 @@
 ---
 title: Personalisierung und Content-Targeting
 description: Informationen zum Erstellen von personalisierten, zielgerichteten Inhalten mit AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 99%
 
 ---
 

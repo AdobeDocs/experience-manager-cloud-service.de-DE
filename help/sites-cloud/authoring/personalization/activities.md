@@ -1,14 +1,15 @@
 ---
 title: Verwalten von Aktivitäten
 description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1958'
-ht-degree: 100%
+source-wordcount: '1964'
+ht-degree: 99%
 
 ---
 

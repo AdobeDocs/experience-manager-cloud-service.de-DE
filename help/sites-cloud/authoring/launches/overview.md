@@ -1,13 +1,14 @@
 ---
 title: Launches für Seiten
 description: Erfahren Sie, wie Sie Launches für Seiten in Adobe Experience Manager as a Cloud Service verwenden können. Mit Launches können Sie den Inhalt für eine zukünftige Veröffentlichung effizient entwickeln und gleichzeitig Ihre aktuellen Seiten beibehalten.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1033'
 ht-degree: 96%
 
 ---

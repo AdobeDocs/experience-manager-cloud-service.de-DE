@@ -3,12 +3,13 @@ title: Integrieren von Adobe Analytics mit Experience Cloud Setup Automation
 description: Die Automatisierung der Einrichtung von Experience Cloud bietet eine einfache und automatisierte Möglichkeit, Experience Manager Sites mit Experience Platform Tags und Adobe Analytics über eine einfache Benutzeroberfläche mit Assistenten zu integrieren und zu instrumentieren. Erfahren Sie, wie Sie das automatisierte Setup mit Ihrer eigenen Site verwenden.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 98%
+source-wordcount: '733'
+ht-degree: 99%
 
 ---
 
@@ -61,9 +62,9 @@ Die Umgebung sollte jetzt für die Automatisierung der Einrichtung von Experienc
 
    Die automatisierte Einrichtung erfolgt asynchron. Das **Überprüfen des Integrationsstatus** zeigt den aktuellen Status der Integration an.
 
-   * **In Bearbeitung**: gibt an, dass der Vorgang läuft.
-   * **Integration abgeschlossen**: gibt an, dass der Vorgang des Integrierens von Analytics und Tags, des Einrichtens von Tags-Erweiterungen und Tags-Regeln und des Erstellens der neuen Report Suite in Adobe Analytics abgeschlossen ist.
-   * **Fehlgeschlagen**: gibt an, dass der automatisierte Vorgang nicht erfolgreich abgeschlossen werden konnte. Überprüfen Sie die Protokolldateien für diesen Vorgang, indem Sie auf den Link „Protokolle“ klicken.
+   * **In Bearbeitung**: gibt an, dass der Auftrag läuft.
+   * **Integration abgeschlossen**: gibt an, dass der Auftrag des Integrierens von Analytics und Tags, des Einrichtens von Tags-Erweiterungen und Tags-Regeln und des Erstellens der neuen Report Suite in Adobe Analytics abgeschlossen ist.
+   * **Fehlgeschlagen**: gibt an, dass der automatisierte Auftrag nicht erfolgreich abgeschlossen werden konnte. Überprüfen Sie die Protokolldateien für diesen Auftrag, indem Sie auf den Link „Protokolle“ klicken.
 
 ## Validieren der AEM-Einrichtung
 

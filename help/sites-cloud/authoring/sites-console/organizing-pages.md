@@ -1,14 +1,15 @@
 ---
 title: Organisieren von Seiten
 description: Erfahren Sie, wie Sie Ihre Website mit AEM organisieren.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
-workflow-type: ht
-source-wordcount: '799'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 99%
 
 ---
 

@@ -3,12 +3,13 @@ title: Konfigurieren der Synchronisierung von Live Copies
 description: Erfahren Sie mehr über die leistungsstarken Live Copy-Synchronisierungsoptionen und wie Sie diese für Ihre Projektanforderungen konfigurieren und anpassen können.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2414'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '2420'
+ht-degree: 99%
 
 ---
 
@@ -155,7 +156,7 @@ Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigu
 * **Eigenschaften der übergeordneten Live Copy-Seite:** Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die für die übergeordnete Live Copy-Seite gilt.
 * **[Systemstandard](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):** Wenn die Rollout-Konfiguration der übergeordneten Live Copy-Seite nicht ermittelt werden kann, wird die standardmäßige Rollout-Konfiguration genutzt.
 
-Beispielsweise nutzt ein Blueprint die Seite [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element in der folgenden Liste beschreibt ein anderes Szenario in Bezug auf die Verwendung von Rollout-Konfigurationen:
+Beispielsweise nutzt ein Blueprint die Site [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element in der folgenden Liste beschreibt ein anderes Szenario in Bezug auf die Verwendung von Rollout-Konfigurationen:
 
 * Keine Blueprint-Seiten oder Live Copy-Seiten sind für eine Rollout-Konfiguration konfiguriert. MSM nutzt die standardmäßige Rollout-Konfiguration des Systems für alle Live Copy-Seiten.
 * Die Stammseite der WKND-Site ist für mehrere Rollout-Konfigurationen konfiguriert. MSM nutzt diese Rollout-Konfigurationen für alle Live Copy-Seiten.

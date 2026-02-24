@@ -3,11 +3,12 @@ title: Definieren von Inhaltsfragmentmodellen
 description: Erfahren Sie, inwiefern Inhaltsfragmentmodelle in AEM als Grundlage für Ihre Inhaltsfragmente dienen, damit Sie strukturierte Inhalte für die Headless-Bereitstellung oder für die Seitenbearbeitung erstellen können.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2223'
 ht-degree: 82%
 
 ---
@@ -314,7 +315,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 
 >[!NOTE]
 >
->AEM bietet Schutz vor Wiederholungen für:
+>AEM bietet Schutz vor Intervallen für:
 >
 >* Inhaltsverweise
 >  Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
@@ -409,6 +410,6 @@ Gibt einen Stammpfad für referenzierte Fragmente an.
 
 >[!NOTE]
 >
->Es gibt einen Mechanismus zum Wiederholungsschutz. Er hindert Benutzende daran, das aktuelle Inhaltsfragment in der Fragmentreferenz auszuwählen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
+>Es gibt einen Mechanismus zum Intervallschutz. Er hindert Benutzende daran, das aktuelle Inhaltsfragment in der Fragmentreferenz auszuwählen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
 >
->Es gibt auch einen Wiederholungsschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente hinweg erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.
+>Es gibt auch einen Intervallschutz für Fragmentreferenzen in GraphQL. Wenn Sie eine tiefe Abfrage über zwei Inhaltsfragmente hinweg erstellen, die gegenseitig aufeinander verweisen, wird null zurückgegeben.

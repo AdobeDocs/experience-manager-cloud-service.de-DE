@@ -1,14 +1,15 @@
 ---
 title: Arbeiten mit Projekt-Workflows
 description: Standardmäßig sind zahlreiche vorkonfigurierte Projekt-Workflows verfügbar.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 100%
+source-wordcount: '455'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +29,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 |---|:-:|:-:|
 | Projektgenehmigungs-Workflow | x |  |
 | Launch anfragen | x |  |
-| Einstiegsseite anfragen | x |  |
+| Landingpage anfragen | x |  |
 | E-Mail anfragen | x | |
 | DAM-Sprachkopie erstellen&amp;ast; |  | x |
 | DAM-Sprachkopie erstellen und übersetzen&amp;ast; |   | x |

@@ -3,12 +3,13 @@ title: Integrieren mit Adobe Target
 description: Erfahren Sie, wie Sie Adobe Target in AEM as a Cloud Service integrieren können, indem Sie die Touch-optimierte Benutzeroberfläche und Adobe Launch verwenden.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 solution: Experience Manager Sites
-source-git-commit: e5c529ced09a557585681ebf82f40daafc2c4402
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 98%
+source-wordcount: '1086'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +26,7 @@ Für den Export von Experience Fragments und/oder Inhaltsfragmenten nach Target 
 
 >[!NOTE]
 >
->Kundinnen und Kunden, die kein Target-Konto haben, können Zugriff auf das Target Foundation Pack für Experience Cloud anfordern. Das Foundation Pack ermöglicht eine eingeschränkte Verwendung von Target.
+>Kundinnen und Kunden, die kein Target-Konto haben, können Zugriff auf das Target Foundation Pack für Experience Cloud anfordern. Das Foundation-Paket ermöglicht eine eingeschränkte Verwendung von Target.
 
 >[!NOTE]
 >
@@ -125,7 +126,7 @@ Eine Eigenschaft ist ein Container, der mit Erweiterungen, Regeln und Dateneleme
 **Erweiterungen** ist der Name des Containers, der die Kern-Bibliothekseinstellungen verwaltet. Die Adobe Target-Erweiterung unterstützt Client-seitige Implementierungen, indem „at.js“ verwendet wird, das JavaScript-SDK von Target für das moderne Web. Sie müssen sowohl die **Adobe Target** als auch die **Adobe ContextHub**-Erweiterung hinzufügen.
 
 1. Wählen Sie die Option „Erweiterungskatalog“ aus und suchen Sie im Filter nach Target.
-2. Wählen Sie **Adobe Target**&#x200B;at.js aus und klicken Sie auf die Option „Installieren“.
+2. Wählen Sie **Adobe Target**at.js aus und klicken Sie auf die Option „Installieren“.
    ![Target-Suche](assets/search_ext1.png "Target-Suche")
 3. Klicken Sie auf die Schaltfläche **Konfigurieren**. Beachten Sie das Konfigurationsfenster mit den importierten Target-Anmeldedaten und die at.js-Version für diese Erweiterung.
 4. Wählen Sie **Speichern**, um die Target-Erweiterung zur Experience Platform Launch-Eigenschaft hinzuzufügen. Die Target-Erweiterung sollte unter **Installierte Erweiterungen** aufgeführt sein.

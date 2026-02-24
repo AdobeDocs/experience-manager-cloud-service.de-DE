@@ -1,13 +1,14 @@
 ---
 title: Operational Telemetry für AEM as a Cloud Service
 description: Erfahren Sie mehr über Operational Telemetry, einen automatisierten Dienst, der die Überwachung der Client-seitigen Datenerfassung ermöglicht.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 99%
+source-wordcount: '1140'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +43,7 @@ Der Operational Telemetry-Dienst wurde für minimale Datenerfassung entwickelt. 
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`
 * Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs?lang=de`
+* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
 * Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn die Person einem Link gefolgt ist)
 * Eine zufällig generierte ID der Seitenansicht in einem Format, das dem folgenden ähnelt: `2Ac6`
 * Die Gewichtung oder der Kehrwert der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur eine von hundert Seitenansichten aufgezeichnet wird.

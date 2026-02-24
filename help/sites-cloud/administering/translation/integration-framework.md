@@ -3,12 +3,13 @@ title: Konfigurieren des Frameworks für die Übersetzungsintegration
 description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegration für die Integration mit Übersetzungs-Services von Drittanbietern konfigurieren.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1447'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1453'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +31,7 @@ Einen Überblick über die Funktionen zur Übersetzung von Inhalten in AEM erhal
 
 Erstellen Sie eine Cloud-Konfiguration, die AEM an Ihren Übersetzungsdienstleister anbindet.
 
-AEM enthält die Funktion, standardmäßig eine [Verbindung zu Microsoft® Translator herzustellen](connect-ms-translator.md). Weitere Übersetzungstechnologieanbieter mit AEM-Connectoren, die dem Adobe Exchange-Partnerprogramm angehören, finden Sie [hier](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
+AEM enthält die Funktion, standardmäßig eine [Verbindung zu Microsoft® Translator herzustellen](connect-ms-translator.md). Weitere Übersetzungstechnologieanbieter mit AEM-Connectoren, die dem Adobe Exchange-Partnerprogramm angehören, finden Sie [hier](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft® Translator-Connector finden Sie unter [Integrieren mit Microsoft® Translator](connect-ms-translator.md).
 
@@ -58,7 +59,7 @@ Nachdem Sie ein Framework für die Übersetzungsintegration erstellt haben, kön
 
 Eine einzelne Konfiguration des Frameworks steuert, wie Seiteninhalte und Assets übersetzt werden. So erstellen Sie eine Übersetzungskonfiguration:
 
-1. Wählen Sie im [globalen Navigationsmenü](/help/sites-cloud/authoring/basic-handling.md#global-navigation) **Tools > Cloud-Services > Übersetzungs-Cloud-Services** aus.
+1. Wählen Sie im [globalen Navigationsmenü](/help/sites-cloud/authoring/basic-handling.md#global-navigation)**Tools > Cloud-Services > Übersetzungs-Cloud-Services** aus.
 1. Navigieren Sie zu der Stelle in Ihrer Inhaltsstruktur, an der Sie die Konfiguration erstellen möchten. Diese bezieht sich oft auf eine bestimmte Site oder kann global sein.
 1. Geben Sie die folgenden Informationen in die Felder ein und wählen Sie dann **Erstellen** aus.:
    1. Wählen Sie **Konfigurationstyp** in der Dropdown-Liste aus.

@@ -3,12 +3,13 @@ title: Integration mit Adobe Analytics
 description: Erfahren Sie, wie Sie Adobe Analytics mit AEM as a Cloud Service integrieren können, indem Sie die Touch-optimierte Benutzeroberfläche und Adobe Launch verwenden.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 100%
+source-wordcount: '599'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +45,7 @@ Die im Konfigurationsfenster verfügbaren Felder lauten wie folgt:
 | Titel | Der Konfigurationsname |
 | IMS-Konfiguration | Wählen Sie die IMS-Konfiguration aus (siehe Kapitel unten). |
 | Segment | Option zur Verwendung eines in der aktuellen Report Suite definierten Analytics-Segments. Die Analytics-Berichte werden basierend auf dem Segment gefiltert. Weitere Informationen finden Sie unter [Informationen zu Segmenten](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=de). |
-| Report Suites | Ein Repository, in dem Sie Daten senden und Berichte abrufen können. Eine Report Suite definiert die vollständigen, unabhängigen Berichte für eine bestimmte Website, eine Reihe von Websites oder eine Untergruppe von Website-Seiten. Sie können die Berichte, die aus einer bestimmten Report Suite abgerufen werden, jederzeit entsprechend Ihren Anforderungen anzeigen. |
+| Report Suites | Ein Repository, in dem Sie Daten senden und Berichte abrufen können. Eine Report Suite definiert die vollständigen, unabhängigen Berichte für eine bestimmte Website, eine Reihe von Websites oder eine Teilmenge von Website-Seiten. Sie können die Berichte, die aus einer bestimmten Report Suite abgerufen werden, jederzeit entsprechend Ihren Anforderungen anzeigen. |
 
 ### Adobe Analytics mit IMS-Authentifizierung {#configuration-parameters-ims}
 

@@ -1,14 +1,15 @@
 ---
 title: Verwenden zielgerichteter Inhalte in Multisites
 description: Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse und Angebote auf Ihren Sites verwalten, können Sie hierzu die in AEM integrierte Multisite-Unterstützung für zielgerichtete Inhalte verwenden
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 100%
+source-wordcount: '2850'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +86,7 @@ Durch die Verwendung von Multisite für zielgerichtete Inhalte können Sie Perso
 
 Es gibt vier Geografie-basierte Versionen derselben Site:
 
-* Die Site für die **Vereinigten Staaten** befindet sich oben links und dient als primäre Site. In diesem Beispiel ist sie im Zielgruppen-Modus geöffnet.
+* Die Site für die **Vereinigten Staaten** befindet sich oben links und dient als primäre Site. In diesem Beispiel ist sie im Targeting-Modus geöffnet.
 * Die drei übrigen Versionen sind diejenigen für **Kanada**, **Großbritannien** und **Australien**, wobei es sich bei diesen um Live Copies handelt. Diese Sites sind im Vorschaumodus geöffnet.
 
 ![Multisite-Versionen](/help/sites-cloud/authoring/assets/multisite-versions.png)

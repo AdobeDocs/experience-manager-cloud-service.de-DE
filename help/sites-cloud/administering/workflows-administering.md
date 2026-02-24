@@ -3,11 +3,12 @@ title: Verwalten der Workflow-Instanzen
 description: Erfahren Sie, wie Sie Workflow-Instanzen mithilfe der Workflow-Konsole verwalten
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1288'
 ht-degree: 92%
 
 ---
@@ -112,7 +113,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster, das die **Fehlermeldung**, den **Schritt und den &#x200B;** Fehlerstapel** anzeigt.
+Öffnet ein Fenster, das die **Fehlermeldung**, den **Schritt und den **Fehlerstapel** anzeigt.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 

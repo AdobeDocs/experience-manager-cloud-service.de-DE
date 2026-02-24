@@ -3,18 +3,19 @@ title: Markdown
 description: Erfahren Sie, wie der Inhaltsfragment-Editor die Markdown-Syntax verwendet, um Ihnen die einfache Erstellung von Inhalten für die Seitenbearbeitung und die Headless-Bereitstellung zu ermöglichen.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '565'
 ht-degree: 77%
 
 ---
 
 # Markdown {#markdown}
 
-Beim [&#x200B; (Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) von Inhaltsfragmenten [&#x200B; möglicherweise (mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit dem **Standardtyp** von **Markdown** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
+Beim [ (Authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) von Inhaltsfragmenten [ möglicherweise (mehrzeilige Textfelder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) mit dem **Standardtyp** von **Markdown** definiert. Der Inhaltsfragmenteditor verwendet eine *Markdown*-Syntax, mit der Sie Inhalte für die Seitenbearbeitung und die Headless-Bereitstellung einfach erstellen können:
 
 ![Mehrzeiliges Markdown-Textfeld im Editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 

@@ -1,15 +1,16 @@
 ---
 title: Seiteneigenschaften
 description: Erfahren Sie mehr über die verschiedenen Eigenschaften, die eine Seite haben kann, wie sie das Verhalten der Seite steuern und wie sie verwaltet wird.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2138'
-ht-degree: 100%
+source-wordcount: '2144'
+ht-degree: 99%
 
 ---
 

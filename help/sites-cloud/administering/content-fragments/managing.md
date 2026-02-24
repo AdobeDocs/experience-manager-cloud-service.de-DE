@@ -3,11 +3,12 @@ title: Verwalten von Inhaltsfragmenten
 description: Erfahren Sie, wie Sie Ihre AEM-Inhaltsfragmente über die Konsole und den Editor verwalten, um Inhalte als Grundlage für Ihre Headless-Inhalte oder für die Seitenbearbeitung zu verwalten.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2943'
 ht-degree: 98%
 
 ---
@@ -406,7 +407,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Edge Delivery Services Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 

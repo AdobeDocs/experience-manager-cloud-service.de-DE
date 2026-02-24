@@ -1,14 +1,15 @@
 ---
 title: Veröffentlichen von Seiten über die Sites-Konsole
 description: Erfahren Sie, wie Sie Ihre Seiten über die Sites-Konsole veröffentlichen oder ihre Veröffentlichung rückgängig machen können.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
-workflow-type: ht
-source-wordcount: '1635'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1641'
+ht-degree: 99%
 
 ---
 
@@ -259,9 +260,9 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
   Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-cloud/authoring/basic-handling.md#card-view), [Spalte](/help/sites-cloud/authoring/basic-handling.md#column-view) und [Liste](/help/sites-cloud/authoring/basic-handling.md#list-view) angezeigt.
 
-* in der [Zeitleisten](/help/sites-cloud/authoring/basic-handling.md#timeline)
+* in der [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline)
 
-  ![Veröffentlichungsstatus in der Zeitleisten-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+  ![Veröffentlichungsstatus in der Timeline-Ansicht](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * im Menü [Seiteninformationen](/help/sites-cloud/authoring/page-editor/introduction.md#page-information) beim Bearbeiten einer Seite
 

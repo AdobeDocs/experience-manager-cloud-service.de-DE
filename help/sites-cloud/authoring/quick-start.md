@@ -1,14 +1,15 @@
 ---
 title: Schnellstartanleitung für das Authoring
 description: Beginnen Sie hier mit einer kurzen, allgemeinen Anleitung für die ersten Schritte zum Verfassen von Inhalten mithilfe der Sites-Konsole.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 99%
 
 ---
 

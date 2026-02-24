@@ -1,13 +1,14 @@
 ---
 title: Inhaltserstellung mit dem universellen Editor
 description: Erfahren Sie, wie einfach und intuitiv es für Inhaltsautorinnen und -autoren ist, Inhalte mit dem universellen Editor zu erstellen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2908'
 ht-degree: 76%
 
 ---
@@ -126,7 +127,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * **Alle Formatierungen entfernen**
    * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -143,7 +144,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -233,7 +234,7 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
 #### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 

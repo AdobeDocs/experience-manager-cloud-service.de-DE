@@ -4,11 +4,12 @@ description: Erfahren Sie, wie der Seiteneditor Inhalte veröffentlicht.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: dc11ac02-2a8d-4d82-ae10-e0fb97025063
-source-git-commit: 0fcdea7803110156d589ab6bbf960373f212747d
-workflow-type: ht
-source-wordcount: '345'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 98%
 
 ---
 

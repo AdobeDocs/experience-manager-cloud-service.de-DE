@@ -3,12 +3,13 @@ title: Herstellen einer Verbindung mit Microsoft Translator
 description: Erfahren Sie, wie Sie AEM sofort mit Microsoft Translator verbinden können, um Ihren Übersetzungs-Workflow zu automatisieren.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +30,7 @@ AEM bietet einen integrierten Connector für [Microsoft Translator](https://www.
 
 Mit dem folgenden Verfahren wird eine Microsoft Translator-Konfiguration erstellt.
 
-1. Wählen Sie im [Bedienfeld „Navigation“](/help/sites-cloud/authoring/basic-handling.md#first-steps) **Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
+1. Wählen Sie im [Bedienfeld „Navigation“](/help/sites-cloud/authoring/basic-handling.md#first-steps)**Tools** > **Cloud-Services** > **Übersetzungs-Cloud-Services** aus.
 1. Navigieren Sie zu dem Ort, an dem Sie die Konfiguration erstellen möchten. Normalerweise ist dies in Ihrem Site-Stammverzeichnis oder es kann eine globale Standardkonfiguration sein.
 1. Wählen Sie die Schaltfläche **Erstellen**.
 1. Legen Sie Ihre Konfiguration fest.

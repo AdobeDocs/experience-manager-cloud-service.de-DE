@@ -3,11 +3,12 @@ title: Ein Überblick über die Konzepte und Best Practices beim Arbeiten mit In
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service strukturierte Inhalte erstellen und verwenden können – ideal für Headless-Bereitstellung und Seitenerstellung.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2408'
 ht-degree: 81%
 
 ---
@@ -18,7 +19,7 @@ In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfrag
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Edge Delivery Services Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 >[!IMPORTANT]
 >

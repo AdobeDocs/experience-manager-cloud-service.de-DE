@@ -1,14 +1,15 @@
 ---
 title: Vorlagen zum Erstellen von Seiten, die mit dem Seiteneditor bearbeitet werden können
 description: Sie können den Vorlageneditor verwenden, um Vorlagen zu erstellen, mit denen Ihre Inhaltsautorinnen und -autoren Seiten erstellen können, die sich mit dem Seiteneditor bearbeiten lassen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '4415'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '4421'
+ht-degree: 99%
 
 ---
 
@@ -95,7 +96,7 @@ Gehen Sie zum Erstellen einer bearbeitbaren Vorlage wie folgt vor:
 >
 >Geben Sie niemals Informationen in eine Vorlage ein, die [internationalisiert](/help/implementing/developing/extending/i18n/dev.md) werden müssen.
 >
->Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) nutzen.
+>Bei Vorlagenelementen wie Kopf- und Fußzeilen, die lokalisiert werden müssen, können Sie die [Lokalisierungsfunktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) nutzen.
 
 ### Erstellen eines Vorlagenordners – Administrator {#creating-a-template-folder-admin}
 
@@ -518,7 +519,7 @@ Obwohl der gesamte Inhalt, der im Modus **Struktur** erstellt wird, im Modus **A
 >
 >Der ursprüngliche Inhalt dient zum Vorbereiten von Komponenten und dem Seitenlayout, die als Ausgangspunkt für die Erstellung des Inhalts dienen. Dies soll nicht der eigentliche Inhalt sein, der unverändert bleibt. Aus diesem Grund kann der anfängliche Inhalt nicht übersetzt werden.
 >
->Wenn Sie in Ihre Vorlage übersetzbaren Text aufnehmen möchten, z. B. in Kopf- oder Fußzeilen, können Sie die [Lokalisierungsfunktionen der Hauptkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) verwenden.
+>Wenn Sie in Ihre Vorlage übersetzbaren Text aufnehmen möchten, z. B. in Kopf- oder Fußzeilen, können Sie die [Lokalisierungsfunktionen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=de) verwenden.
 
 ### Bearbeiten einer Vorlage – Layout – Vorlagenautor {#editing-a-template-layout-template-author}
 

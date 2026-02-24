@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie die Eigenschaften einer Seite bearbeiten und 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 99%
 
 ---
 

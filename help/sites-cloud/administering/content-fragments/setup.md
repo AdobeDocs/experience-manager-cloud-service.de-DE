@@ -3,12 +3,13 @@ title: Inhaltsfragmente – Einrichtung
 description: Erfahren Sie, wie Sie Funktionen für Inhaltsfragmente und GraphQL für die Verwendung mit AEM Headless-Bereitstellungsfunktionen und Seitenbearbeitung aktivieren.
 feature: Content Fragments
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 97%
+source-wordcount: '408'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +37,7 @@ Das Einrichten Ihrer Instanz ist abgeschlossen:
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Edge Delivery Services Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ## Aktivieren von Inhaltsfragmentfunktionen im Konfigurations-Browser {#enable-content-fragment-functionality-configuration-browser}
 

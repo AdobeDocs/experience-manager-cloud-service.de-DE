@@ -1,11 +1,12 @@
 ---
 title: Integrieren mit Adobe Target
 description: Integrieren mit Adobe Target
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 0af1f7dcc330a2ee5300088f274150a3ea79efe8
-workflow-type: ht
-source-wordcount: '613'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +43,7 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service ist der Replikations-Agent, der Angebote und Aktivitäten von AEM mit Adobe Target synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)-Team, wenn Sie den Replikationsagenten erneut aktivieren müssen.
+>In AEM as a Cloud Service ist der Replikations-Agent, der Angebote und Aktivitäten von AEM mit Adobe Target synchronisiert, standardmäßig deaktiviert. Wenden Sie sich an das [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)-Team, wenn Sie den Replikationsagenten erneut aktivieren müssen.
 
 >[!NOTE]
 >
@@ -54,7 +55,7 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
 >[!CAUTION]
 >
->Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+>Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 >
 >Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration mit Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=de#securing-the-activity-settings-node).
 

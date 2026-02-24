@@ -1,14 +1,15 @@
 ---
 title: Erstellung barrierefrei zugänglicher Inhalte für Adobe Experience Manager as a Cloud Service (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
 description: Verwenden Sie AEM as a Cloud Service, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
-workflow-type: ht
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
 source-wordcount: '13672'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -433,7 +434,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.3.2 erfüllen](https://ww
 
 #### Zweck: Sensorische Eigenschaften (1.3.3) {#purpose-sensory-characteristics}
 
-Entwickler nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Zugänglichkeit für sehende Benutzer mit kognitiven Zugänglichkeitsanforderungen verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
+Designerinnen und Designer nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Zugänglichkeit für sehende Benutzer mit kognitiven Zugänglichkeitsanforderungen verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
 
 Entsprechend sind Informationen, für die zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von einer Frau oder einem Mann gesprochen werden), für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
 
@@ -479,7 +480,7 @@ So kann beispielsweise jemand mit einer Rot-Grün-Sehschwäche nicht zwischen Gr
 
 Außerdem kann Farbe nicht von Personen wahrgenommen werden, die reine Text-Browser oder monochrome Anzeigegeräte verwenden oder einen Schwarz-Weiß-Ausdruck der Seite betrachten.
 
-Eine weitere Überlegung betrifft den *ausgewählten* Status für ein Schnittstellenelement (z. B. Registerkarten, Umschalttasten usw.), der auf andere Weise als nur mit Farbe und über eine visuelle Darstellung hinaus vermittelt werden muss. Für solche Elemente ist die zusätzliche Verwendung von Mustern, Formen und programmatischen Informationen hilfreich, wenn ein vollständig integratives Kundenerlebnis erstellt werden soll, das nicht auf einem bestimmten Sinn beruht.
+Eine weitere Überlegung betrifft den *ausgewählten* Status für ein Schnittstellenelement (z. B. Registerkarten, Umschalter usw.), der auf andere Weise als nur mit Farbe und über eine visuelle Darstellung hinaus vermittelt werden muss. Für solche Elemente ist die zusätzliche Verwendung von Mustern, Formen und programmatischen Informationen hilfreich, wenn ein vollständig integratives Kundenerlebnis erstellt werden soll, das nicht auf einem bestimmten Sinn beruht.
 
 #### Erfüllen: Verwendung von Farbe (1.4.1) {#how-to-meet-use-of-color}
 
@@ -498,7 +499,7 @@ Wenn Farbe als Hinweis für die Bereitstellung von Informationen verwendet wird,
 
 * Erfolgskriterium 1.4.2
 * Level A
-* Audio-Steuerung: Wenn Audioinhalt auf einer Web-Seite automatisch für mehr als 3 Sekunden abgespielt wird, gibt es entweder einen Mechanismus, um die Wiedergabe zu pausieren oder zu beenden, oder es gibt einen Mechanismus, um die Lautstärke unabhängig von der allgemeinen Systemlautstärke zu regeln.
+* Audio-Steuerung: Wenn Audioinhalt auf einer Web-Seite automatisch für mehr als 3 Sekunden abgespielt wird, gibt es entweder einen Mechanismus, um die Wiedergabe zu pausieren oder zu stoppen, oder es gibt einen Mechanismus, um die Lautstärke unabhängig von der allgemeinen Systemlautstärke zu regeln.
 
 #### Zweck: Audio-Steuerelement (1.4.2) {#purpose-audio-control}
 
@@ -523,8 +524,8 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.4.2 erfüllen](https://ww
 
 * Erfolgskriterium 1.4.3
 * Level AA
-* Kontrast (Minimum): Die visuelle Darstellung von Text und Abbildungen von Text hat ein Kontrastverhältnis von mindestens 4,5:1, mit den folgenden Ausnahmen:
-   * Großer Text: Großformatiger Text und Bilder von großformatigem Text weisen ein Kontrastverhältnis von mindestens 3:1 auf.
+* Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit den folgenden Ausnahmen:
+   * Großer Text: Großformatiger Text und Bilder von großformatigem Text haben ein Kontrastverhältnis von mindestens 3:1.
    * Beiläufig: Für Text oder Textbilder, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, die [reine Dekoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration) darstellen, die für niemanden sichtbar sind oder die Teil eines Bildes sind, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
    * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
 
@@ -547,9 +548,9 @@ Menschen mit bestimmten Sehbehinderungen können möglicherweise nicht zwischen 
 
 Achten Sie darauf, dass der Text einen ausreichenden Kontrast zu seinem Hintergrund aufweist. Die Kontrastverhältnisse hängen von der Größe und dem Stil des jeweiligen Textes ab:
 
-* Für Text mit einer Größe von weniger als 18 Punkt (oder 14 Punkt bei Fettschrift) sollte das Kontrastverhältnis zwischen Text/Bildern mit Text und dem Hintergrund mindestens 4,5:1 betragen.
-* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3:1 betragen.
-* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um jeden Text schattiert werden, sodass das Verhältnis von 4,5:1 bzw. 3:1 beibehalten wird.
+* Bei Text mit einer Größe von weniger als 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis zwischen Text und Bildern von Text und Hintergrund mindestens 4,5 % :1.
+* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3 % :1.
+* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um einen beliebigen Text schattiert werden, sodass das Verhältnis von :1,5 oder :1 beibehalten wird.
 
 >[!NOTE]
 >
@@ -695,11 +696,11 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.2.1 erfüllen](https://ww
 * [Verstehen der Erfolgskriterien 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [Erfüllen der Erfolgskriterien 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### Pausieren, Beenden, Ausblenden (2.2.2)  {#pause-stop-hide}
+### Pausieren, Stoppen, Ausblenden (2.2.2)  {#pause-stop-hide}
 
 * Erfolgskriterium 2.2.2
 * Level A
-* Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
+* Pausieren, Stoppen, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
    * Bewegt, blinkend, rollend: Für bewegte, blinkende oder rollende Informationen, die (a) automatisch gestartet werden, (b) länger als fünf Sekunden dauern und (c) parallel zu anderen Inhalten präsentiert werden, gibt es einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder ausblenden können, es sei denn, die Bewegung, das Blinken oder das Rollen ist ein wesentlicher Teil einer Aktivität.
    * Automatische Aktualisierung: Für alle automatisch aktualisierten Informationen, die (a) automatisch gestartet und (b) parallel zu anderen Inhalten angezeigt werden, gibt es einen Mechanismus, mit dem Benutzende sie anhalten, stoppen oder ausblenden oder die Häufigkeit der Aktualisierung steuern können, es sei denn, die automatische Aktualisierung ist ein wesentlicher Teil einer Aktivität.
 
@@ -710,11 +711,11 @@ Beachten Sie Folgendes:
 1. Für Inhalte, die regelmäßig durch Software aktualisiert werden oder an den Benutzeragenten gestreamt werden, müssen Informationen, die zwischen der Initiierung der Pause und der Wiederaufnahme der Präsentation generiert oder empfangen wurden, nicht beibehalten oder präsentiert werden, da dies möglicherweise technisch nicht möglich ist und in vielen Situationen sogar irreführend sein könnte.
 1. Eine Animation, die im Rahmen einer Vorausladephase oder einer ähnlichen Situation auftritt, kann als wesentlich angesehen werden, wenn während dieser Phase keine Interaktion für alle Benutzenden stattfinden kann und wenn eine Nichtanzeige des Fortschritts die Benutzenden verwirren oder zu der Annahme führen könnte, dass der Inhalt eingefroren oder unterbrochen ist.
 
-#### Zweck - Pausieren, Beenden, Ausblenden (2.2.2) {#purpose-pause-stop-hide}
+#### Zweck - Pausieren, Stoppen, Ausblenden (2.2.2) {#purpose-pause-stop-hide}
 
 Manche Benutzerinnen und Benutzer empfinden Inhalte, die sich bewegen, als störend oder sogar körperlich schmerzhaft und haben Schwierigkeiten, sich auf andere Bereiche der Seite zu konzentrieren. Darüber hinaus sind solche Inhalte für Menschen schwierig, die beim Lesen Probleme haben, bewegtem Text zu folgen.
 
-#### Erfüllen: Pausieren, Beenden, Ausblenden (2.2.2) {#how-to-meet-pause-stop-hide}
+#### Erfüllen: Pausieren, Stoppen, Ausblenden (2.2.2) {#how-to-meet-pause-stop-hide}
 
 Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit sich bewegendem, aufblitzendem oder blinkendem Inhalt die folgenden Empfehlungen beachten:
 
@@ -724,7 +725,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 * Bieten Sie auf der Web-Seite ein Formularsteuerelement an, über das Benutzer sämtliche bewegte oder blinkenden Inhalte auf der Seite deaktivieren können.
 * Wenn einer der oben genannten Punkte nicht möglich ist, geben Sie einen Link zu einer Seite an, die alle Inhalte ohne Bewegung und Blinken zeigt.
 
-#### Weitere Informationen - Pausieren, Beenden, Ausblenden (2.2.2) {#more-information-pause-stop-hide}
+#### Weitere Informationen - Pausieren, Stoppen, Ausblenden (2.2.2) {#more-information-pause-stop-hide}
 
 * [Verstehen des Erfolgskriteriums 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html).
 * [Erfüllen des Erfolgskriteriums 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide).
@@ -1258,11 +1259,11 @@ Ein Mechanismus, der zur Überprüfung, Bestätigung und Korrektur von Informati
 
 #### Zweck: Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
-Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt werden, schwerwiegende Folgen eines Fehlers bei der Ausführung einer Aktion zu vermeiden, die nicht rückgängig gemacht werden kann. Beispielsweise sind der Kauf nicht erstattungsfähiger Flug-Tickets oder die Übermittlung einer Bestellung zum Kauf von Aktien auf einem Maklerkonto Finanztransaktionen mit schwerwiegenden Folgen. Wenn eine Benutzerin oder ein Benutzer beim Datum einer Flugreise einen Fehler gemacht hat, erhält sie bzw. er möglicherweise ein Ticket für den falschen Tag, das nicht umgetauscht werden kann. Wenn die Person einen Fehler bei der Anzahl der zu kaufenden Aktien gemacht hat, könnte sie am Ende mehr Aktien als beabsichtigt kaufen. Beide Arten von Fehlern betreffen Transaktionen, die sofort stattfinden und danach nicht mehr geändert werden und sehr kostspielig sein können. Ebenso kann es sich um einen nicht behebbaren Fehler handeln, wenn Benutzer unbeabsichtigt Daten ändern oder löschen, die in einer Datenbank gespeichert sind, auf die sie später zugreifen müssen, z. B. ihr gesamtes Reiseprofil auf der Website eines Reise-Service. Wenn es um das Ändern oder Löschen von „vom Benutzer steuerbaren“ Daten geht, soll ein Massenverlust von Daten wie das Löschen einer Datei oder eines Datensatzes verhindert werden. Es ist nicht beabsichtigt, eine Bestätigung für jeden Speicherbefehl oder die einfache Erstellung oder Bearbeitung von Dokumenten, Datensätzen oder anderen Daten zu verlangen.
+Mit diesem Erfolgskriterium sollen Benutzer mit Behinderungen dabei unterstützt werden, schwerwiegende Folgen eines Fehlers bei der Ausführung einer Aktion zu vermeiden, die nicht rückgängig gemacht werden kann. Beispielsweise sind der Kauf nicht erstattungsfähiger Flug-Tickets oder die Übermittlung einer Bestellung zum Kauf von Aktien auf einem Maklerkonto Finanztransaktionen mit schwerwiegenden Folgen. Wenn eine Benutzerin oder ein Benutzer beim Datum einer Flugreise einen Fehler gemacht hat, erhält sie bzw. er möglicherweise ein Ticket für den falschen Tag, das nicht umgetauscht werden kann. Wenn die Person einen Fehler bei der Anzahl der zu kaufenden Aktien gemacht hat, könnte sie am Ende mehr Aktien als beabsichtigt kaufen. Beide Arten von Fehlern betreffen Transaktionen, die sofort stattfinden und danach nicht mehr geändert werden und sehr kostspielig sein können. Ebenso kann es sich um einen nicht behebbaren Fehler handeln, wenn Benutzer unbeabsichtigt Daten ändern oder löschen, die in einer Datenbank gespeichert sind, auf die sie später zugreifen müssen, z. B. ihr gesamtes Reiseprofil auf der Website eines Reise-Service. Wenn es um das Ändern oder Löschen von „vom Benutzer steuerbaren“ Daten geht, soll ein Massenverlust von Daten wie das Löschen einer Datei oder eines Eintrags verhindert werden. Es ist nicht beabsichtigt, eine Bestätigung für jeden Speicherbefehl oder die einfache Erstellung oder Bearbeitung von Dokumenten, Einträgen oder anderen Daten zu verlangen.
 
 Benutzer mit Behinderungen machen möglicherweise eher Fehler. Personen mit Leseschwäche können Zahlen und Buchstaben vertauschen und Personen mit motorischen Behinderungen können versehentlich Tasten drücken. Die Möglichkeit, Aktionen rückgängig zu machen, ermöglicht es Benutzenden, einen Fehler zu korrigieren, der schwerwiegende Folgen haben könnte. Durch die Möglichkeit, Informationen zu überprüfen und zu korrigieren, können Benutzende einen Fehler erkennen, bevor sie eine Aktion mit schwerwiegenden Folgen durchführen.
 
-Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Datensatzes früherer Rechnungen von einer Website. Es geht hierbei nicht um Dinge wie Internet-Protokolle und Überwachungsdaten von Suchmaschinen, die Benutzende nicht direkt einsehen oder mit denen sie nicht direkt interagieren können.
+Vom Benutzer steuerbare Daten sind vom Benutzer einsehbare Daten, die der Benutzer durch eine absichtliche Aktion ändern und/oder löschen kann. Beispiele für die Kontrolle solcher Daten durch den Benutzer wären die Aktualisierung der Telefonnummer und Adresse für das Benutzerkonto oder das Löschen eines Eintrags mit früheren Rechnungen von einer Website. Es geht hierbei nicht um Dinge wie Internet-Protokolle und Überwachungsdaten von Suchmaschinen, die Benutzende nicht direkt einsehen oder mit denen sie nicht direkt interagieren können.
 
 #### Erfüllen: Fehlervermeidung (rechtliche, finanzielle, Daten) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 

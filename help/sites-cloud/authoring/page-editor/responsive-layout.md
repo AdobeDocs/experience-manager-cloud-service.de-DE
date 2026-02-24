@@ -1,14 +1,15 @@
 ---
 title: Responsives Layout
 description: AEM ermöglicht das Erstellen eines responsiven Layouts für Ihre Seiten mithilfe der Komponente „Layout-Container“.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1795'
+ht-degree: 99%
 
 ---
 

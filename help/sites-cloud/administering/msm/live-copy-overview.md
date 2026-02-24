@@ -3,12 +3,13 @@ title: Konsole „Live Copy-Übersicht“
 description: Lernen Sie die Grundlagen der Konsole „Live Copy-Übersicht“ kennen, um einen Überblick über den Status Ihrer Live Copys zu erhalten und Inhalte zu synchronisieren.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 99%
 
 ---
 

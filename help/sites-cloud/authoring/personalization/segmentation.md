@@ -1,14 +1,15 @@
 ---
 title: Grundlegendes zur Segmentierung
 description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '542'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +43,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
    * Interessensgebiete auf Ihrer Website, einschließlich besuchter Seiten und gekaufter Produkte
    * Interessensgebiete auf der verweisenden Website, einschließlich verwendeter Suchbegriffe oder Anzeigen, auf die geklickt wurde
    * Interessensgebiete auf anderen Sites, die durch Tools wie Spyjax ermittelt werden
-   * Loyalität der Besucher, Dauer des Besuchs, Häufigkeit der Besuche
+   * Treue der Besucher, Dauer des Besuchs, Häufigkeit der Besuche
 * **Demografische Eigenschaften**: Dabei handelt es sich um ausgewählte Merkmale der Population, darunter:
    * Alter
    * Einkommen

@@ -1,14 +1,15 @@
 ---
 title: Seitliches Bedienfeld des Seiteneditors
 description: Erfahren Sie, wie Sie mit dem seitlichen Bedienfeld im AEM Sites-Editor Komponenten und Assets zu Ihrer Seite hinzufügen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1122'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 99%
 
 ---
 

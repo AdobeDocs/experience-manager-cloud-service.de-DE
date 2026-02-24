@@ -1,14 +1,15 @@
 ---
 title: Erstellen von Launches
 description: Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu ermöglichen.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 100%
+source-wordcount: '1106'
+ht-degree: 99%
 
 ---
 

@@ -1,14 +1,15 @@
 ---
 title: Die Sites-Konsole
 description: Erfahren Sie, wie Sie Ihre AEM-Seiten mit der Sites-Konsole verwalten und organisieren können.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
-workflow-type: ht
-source-wordcount: '1653'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1659'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +42,7 @@ Mit der Auswahl des seitlichen Bedienfelds können Sie zusätzliche Informatione
 
 ![Schaltfläche zur Auswahl des seitlichen Bedienfelds](assets/sites-console-side-panel-button.png)
 
-Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
 ![Beispiel für die Auswahl des seitlichen Bedienfelds](assets/sites-console-side-panel-selector.png)
 

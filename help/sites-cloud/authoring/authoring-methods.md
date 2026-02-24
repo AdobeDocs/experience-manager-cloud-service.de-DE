@@ -2,13 +2,14 @@
 title: Methoden zum Erstellen von Inhalten in AEM
 description: Erfahren Sie mehr über die verschiedenen Möglichkeiten, Inhalte in AEM zu erstellen, und wie sich diese unterscheiden.
 feature: Authoring
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '570'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 99%
 
 ---
 

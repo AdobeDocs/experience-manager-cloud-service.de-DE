@@ -3,11 +3,12 @@ title: Wiederverwenden von Inhalten – Multi-Site Manager und Live Copy
 description: Im Folgenden erhalten Sie eine Einführung in das Wiederverwenden von Inhalten mit den leistungsstarken Live Copies von AEM und den Funktionen von Multi-Site Manager.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2725'
 ht-degree: 98%
 
 ---

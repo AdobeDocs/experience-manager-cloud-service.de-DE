@@ -1,14 +1,15 @@
 ---
 title: Strukturierung von Multisite-Management für zielgerichtete Inhalte
 description: Im Diagramm ist der Aufbau der Multisite-Unterstützung für zielgerichtete Inhalte dargestellt.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 100%
+source-wordcount: '187'
+ht-degree: 97%
 
 ---
 

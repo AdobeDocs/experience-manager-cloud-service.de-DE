@@ -4,11 +4,12 @@ description: Erfahren Sie, wie der universelle Editor die Inhaltsvererbung für 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 99%
 
 ---
 

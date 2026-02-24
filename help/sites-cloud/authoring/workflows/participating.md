@@ -1,14 +1,15 @@
 ---
 title: Teilnehmen an Workflows
 description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 99%
 
 ---
 
@@ -90,9 +91,9 @@ Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen:
 1. Das Dialogfeld **Arbeitselement fertigstellen** wird geöffnet. Gehen Sie in der Dropdown-Auswahl zu **Nächster Schritt** und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Durchführen eines Teilnehmerschritts: Zeitleiste {#completing-a-participant-step-timeline}
+#### Durchführen eines Teilnehmerschritts: Timeline {#completing-a-participant-step-timeline}
 
-Sie können auch die Zeitleiste verwenden, um einen Schritt abzuschließen und zum nächsten Schritt zu gelangen:
+Sie können auch die Timeline verwenden, um einen Schritt abzuschließen und zum nächsten Schritt zu gelangen:
 
 1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus):
 
@@ -149,11 +150,11 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 1. Das Dialogfeld wird geöffnet. Wählen Sie in der Dropdown-Auswahl die Option **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Delegieren eines Teilnehmerschritts: Zeitleiste {#delegating-a-participant-step-timeline}
+#### Delegieren eines Teilnehmerschritts: Timeline {#delegating-a-participant-step-timeline}
 
-Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
+Sie können auch die Timeline verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus).
 1. Wählen Sie das Warnbanner aus, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Bevollmächtigten ändern**:
 
    ![Schritt „Delegieren“](/help/sites-cloud/authoring/assets/workflows-delegate.png)
@@ -199,11 +200,11 @@ Gehen Sie dazu folgendermaßen vor:
 1. Wählen Sie die Option **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Wechseln zu einem vorherigen Teilnehmerschritt: Zeitleiste {#performing-step-back-on-a-participant-step-timeline}
+#### Wechseln zu einem vorherigen Teilnehmerschritt: Timeline {#performing-step-back-on-a-participant-step-timeline}
 
-Sie können auch die Zeitleiste verwenden, um zu einem vorherigen Schritt zurückzukehren:
+Sie können auch die Timeline verwenden, um zu einem vorherigen Schritt zurückzukehren:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus).
 1. Wählen Sie das Warnbanner aus, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Zurücksetzen**:
 
    ![Schritt zurücksetzen](/help/sites-cloud/authoring/assets/workflows-roll-back.png)

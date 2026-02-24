@@ -4,11 +4,12 @@ description: Erfahren Sie mehr über die Erweiterung für externe AJO-Verweise i
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '295'
+ht-degree: 98%
 
 ---
 
