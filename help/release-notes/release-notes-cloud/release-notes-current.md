@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
+source-git-commit: 94207e0c93106cf2b0b9d4fdbbb22af05b8f5ed1
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 43%
@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Video zur Versionsübersicht von Januar 2026 an, das eine Zusammenfassung der Funktionen gibt, die in Version 2026.1.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479798/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## AEM Beta-Programme {#aem-beta-programs}
@@ -124,7 +124,7 @@ Weitere Informationen finden Sie unter KI-Suchen in der Ansicht [Assets](/help/a
 
 **Abrufen von Werten aus einem JSON-Array**
 
-Erweiterte benutzerdefinierte Funktionsfunktionen zum [&#x200B; (Extrahieren von Werten aus JSON-](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)), die über einen API-Aufruf empfangen werden, und direkten Binden an adaptive Formularfelder. Sie können jetzt Geschäftslogik und Regeln mit minimaler manueller Datenzuordnung entwickeln.
+Erweiterte benutzerdefinierte Funktionsfunktionen zum [ (Extrahieren von Werten aus JSON-](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)), die über einen API-Aufruf empfangen werden, und direkten Binden an adaptive Formularfelder. Sie können jetzt Geschäftslogik und Regeln mit minimaler manueller Datenzuordnung entwickeln.
 
 **Ausführen der zugehörigen Benutzeroberfläche auf einer Veröffentlichungsinstanz**
 
@@ -153,7 +153,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Einstellung von Java-APIs {#java-api-deprecation}
 
-Die veralteten APIs zum Entfernen von 2/30/2026 sollten nicht mehr im Code verwendet werden. Um Bereitstellungsblöcke zu verhindern, entfernen Sie die API-Nutzung vor dem 30. März 2026. Wichtige Daten:
+Die veralteten APIs zum Entfernen von 2/26/2026 sollten nicht mehr im Code verwendet werden. Um Bereitstellungsblöcke zu verhindern, entfernen Sie die API-Nutzung vor dem 30. März 2026. Wichtige Daten:
 
 * **Ab 26. Januar 2026**: Benachrichtigungs-E-Mails zum Aktionscenter werden **wöchentlich pro Umgebung** gesendet, um Sie daran zu erinnern, die Verwendung dieser APIs zu entfernen.
 * **26. Februar 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet, **während** Schritts **Code-Qualität** angehalten. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können das Problem außer Kraft setzen, damit die Pipeline fortgesetzt werden kann.
@@ -259,7 +259,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### KI-Tools für IDEs für AEM Java und Dispatcher-Entwicklung (Beta-Programm) {#ai-dev-beta}
 
@@ -268,7 +268,7 @@ Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie C
 * Austausch von Erfahrungen aus der Praxis, um zukünftige von Adobe unterstützte KI-Funktionen zu gestalten
 * Testen Sie IDE-Tools, die von KI-Agenten verwendet werden können, um AEM-Code und Dispatcher-Konfiguration zu generieren und zu debuggen
 
-Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
