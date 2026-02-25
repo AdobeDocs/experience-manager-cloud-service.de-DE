@@ -523,7 +523,7 @@ Die Experience Manager-API-Oberfläche wird ständig überprüft, um APIs zu ide
 
 Je näher das Entfernungsdatum rückt, desto höher ist die Schwere der Verletzung dieser Regel. Die Verwendung solcher APIs muss durch eine sichere Alternative ersetzt werden.
 
-In [ Artikel finden ](/help/release-notes/deprecated-removed-features.md#aem-apis) Anleitungen zum Entfernen veralteter APIs.
+In [&#x200B; Artikel finden &#x200B;](/help/release-notes/deprecated-removed-features.md#aem-apis) Anleitungen zum Entfernen veralteter APIs.
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -547,7 +547,7 @@ Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext vera
 
 Das `Apache Sling`-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da es in Kombination mit dem `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) zu schlechter Leistung führen kann. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
+Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu &#x200B;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
 
 
 ### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
