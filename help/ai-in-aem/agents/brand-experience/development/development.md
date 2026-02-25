@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Der Auftrag kann Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten helfen, indem Fehlerbehebungen vorgeschlagen werden. Dies spart Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478016?captions=ger&quality=12&learn=on)
 
 >[!IMPORTANT]
 >
