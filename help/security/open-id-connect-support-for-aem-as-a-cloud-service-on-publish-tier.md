@@ -400,12 +400,12 @@ Wenn eine ungültige Umleitungs-URL angegeben wird, schlägt die Authentifizieru
 
 ## Migration vom SAML-Authentifizierungs-Handler zum OIDC-Authentifizierungs-Handler
 
-Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
+Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
 
 1. Konfigurieren Sie [OidcAuthenticationHandler](#configure-oidc-authentication-handler) und aktivieren Sie `idpNameInPrincipals` in der Konfiguration [SlingUserInfoProcessor](#configure-slinguserinfoprocessor).
 1. Einrichten [ACL für externe Gruppen](#configure-acl-for-external-groups).
 1. Nach der Anmeldung von Benutzern können die alten Benutzer, die vom SAML-Authentifizierungs-Handler erstellt wurden, gelöscht werden.
 
 >[!NOTE]
->Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
+>Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
 
