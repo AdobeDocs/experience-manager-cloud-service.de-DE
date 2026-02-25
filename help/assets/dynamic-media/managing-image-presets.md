@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 5bccf61158c40f9c6dd84ea91d005da370686781
+source-git-commit: c07c1f7e412e0c68338121d49781e33356f6c640
 workflow-type: tm+mt
-source-wordcount: '2596'
+source-wordcount: '2597'
 ht-degree: 92%
 
 ---
@@ -60,7 +60,7 @@ Bildvorgaben definieren, wie Dynamic Media Bilder bereitstellt, einschließlich 
 
 ### Generieren von Ausgabedarstellungen in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-In AEM as a Cloud Service werden Ausgabedarstellungen mithilfe von **Asset-Microservices** generiert. Der Workflow DAM-Update-Asset kann in Cloud Service nicht angepasst werden.
+In AEM as a Cloud Service werden Ausgabedarstellungen mithilfe von [Asset-Microservices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) generiert. Der Workflow DAM-Update-Asset kann in Cloud Service nicht angepasst werden.
 
 Zu den wichtigen Überlegungen gehören die folgenden:
 
@@ -72,7 +72,7 @@ Bildvorgaben verweisen auf verfügbare Ausgabedarstellungen zum Zeitpunkt der Be
 
 **So steuern Sie, welche Ausgabedarstellungen generiert werden:**
 
-1. Erstellen oder bearbeiten Sie [Verarbeitungsprofil](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+1. Erstellen oder bearbeiten Sie [Verarbeitungsprofil](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
 2. Konfigurieren Sie die erforderlichen Ausgabedarstellungsdefinitionen.
 3. Wenden Sie das Verarbeitungsprofil auf den entsprechenden Ordner an.
 
@@ -326,7 +326,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul>
     <div>
       Scharfzeichnen wird im Video
-     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=de">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
