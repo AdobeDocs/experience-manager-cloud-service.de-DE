@@ -3,7 +3,8 @@ title: Governance Agent - Übersicht
 description: Erfahren Sie, wie der AEM Governance Agent die Markenintegrität und -konformität in AEM schützt
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 9b26cd1f30ad6fa23e28c9f36fe48091e069962e
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
+source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -72,4 +73,3 @@ Mit dem Agenten können Sie Ihre digitalen Assets-Rechte in Ihrem gesamten Conte
 * *Welche Assets sind kürzlich abgelaufen?*
 * *Finde ich Assets ohne Ablaufdatum*
 * *Zeigen Sie mir alle Assets in /content/dam/products, die in den nächsten 14 Tagen ablaufen werden*
-

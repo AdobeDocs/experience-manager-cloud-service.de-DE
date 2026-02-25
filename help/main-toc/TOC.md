@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: 69525a2d667079531a1d5142e888c8ea617bf330
 workflow-type: tm+mt
-source-wordcount: '7012'
+source-wordcount: '7011'
 ht-degree: 95%
 
 ---
@@ -1094,17 +1094,16 @@ ht-degree: 95%
    + [Verwenden von MCP mit AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
    + Agenten in AEM {#agents}
       + [Überblick](/help/ai-in-aem/agents/overview.md)
-      + Erlebnisproduktionsagent {#production}
-         + [Überblick](/help/ai-in-aem/agents/production/overview.md)
-         + [Kommunikations-Erstellungskompetenz](/help/ai-in-aem/agents/production/communications-creation.md)
-         + [Kenntnisse zum Aktualisieren von Inhalten](/help/ai-in-aem/agents/production/content-update.md)
-         + [Qualifikation zur Formularerstellung](/help/ai-in-aem/agents/production/form-creation.md)
-      + Inhaltsoptimierungs-Agent {#content-optimization}
-         + [Inhaltsoptimierungs-Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
-      + Discovery Agent {#discovery}
-         + [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md)
-      + Entwicklungsagent {#development}
-         + [Überblick](/help/ai-in-aem/agents/development/overview.md)
+      + Brand Experience Agent {#brand-experience}
+         + [Übersicht](/help/ai-in-aem/agents/brand-experience/overview.md)
+         + [Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+         + [Kommunikationserstellungsauftrag](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
+         + [Formularerstellungsauftrag](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+         + [Entwicklungsaufgabe](/help/ai-in-aem/agents/brand-experience/development/development.md)
+      + Inhaltsratgeber-Agent {#content-advisor}
+         + [Übersicht](/help/ai-in-aem/agents/content-advisor/overview.md)
+         + [Content Discovery-Vorgang](/help/ai-in-aem/agents/content-advisor/discovery.md)
+         + [Auftrag zur Inhaltsoptimierung](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
       + Governance-Agent {#governance}
          + [Überblick](/help/ai-in-aem/agents/governance/overview.md)
       + Experience Modernization Agent {#modernization}
@@ -1281,7 +1280,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
