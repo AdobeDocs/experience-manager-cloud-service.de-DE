@@ -4,9 +4,9 @@ description: Erfahren Sie, was der Inhaltsaktualisierungsauftrag des Brand Exper
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Der Auftrag zum Aktualisieren von Inhalten des [Brand Experience Agent](/help/ai
 
 Der Auftrag zur Inhaltsaktualisierung aktualisiert vorhandene Inhalte, einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets. Der Auftrag kann Aktionen durchführen, wie z. B. Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
 
-Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und die Agentenkompetenz erledigt Ihre Aufgabe.
+Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und die Agentenkompetenz erledigt Ihre Aufgabe. Bei Verwendung mit Adobe Experience Manager (AEM) as a Cloud Service erstellt der Auftrag einen neuen [Launch](/help/sites-cloud/authoring/launches/overview.md), damit Sie die Aktualisierungen vor der Anwendung überprüfen können. Bei Verwendung mit der Dokumenterstellung erstellt der Auftrag eine neue [Version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Funktionen {#capabilities}
 
@@ -33,25 +33,44 @@ Sie können auf die Fähigkeit zur Inhaltsaktualisierung zugreifen unter:
 
 Sie können über den KI-Assistenten auf den Auftrag in AEM zugreifen.
 
-Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus &#x200B;](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
+Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus ](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
 
 ![Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
-### Eingabeaufforderungen {#sample-prompts}
+### Konfigurieren der Veröffentlichungs-URL {#configuring-the-publish-url}
 
-Um Inhaltsaktualisierungen zu initiieren, können Sie eine Vielzahl von Eingabeaufforderungen in natürlicher Sprache eingeben. Außerdem müssen Sie die öffentlich zugängliche URL der Seite angeben, die Sie aktualisieren möchten. Beispiel:
+Um eine Publishing-URL (öffentlich zugängliche URL) zu verwenden, muss eine einmalige Konfiguration vorgenommen werden:
 
-* Ändern Sie die folgende Seite `https://www.your-url.com/sale` Aktualisieren Sie die Überschrift des Hauptheld auf „Black Friday Mega Sale - Bis zu 70% Rabatt“, ändern Sie den Countdown-Timer, um „Endet in 48 Hours“ anzuzeigen, entfernen Sie „Für Updates anmelden“, ändern Sie alle „Jetzt einkaufen“-Schaltflächen auf „Den Deal packen“
+* Voraussetzungen:
 
-* `https://www.your-url.com/laptops/your-laptop-model` Aktualisieren der Bannerkopie auf „Nur heute 300 USD sparen“, Aktualisieren der Preise von 1.299 USD auf 999 USD, Entfernen der Finanzierungsoption Banner
+   * Um die Konfiguration vorzunehmen, muss der Benutzer über Systemadministrator- oder Produktadministratorrechte verfügen.
 
-* `https://www.your-url.com/your-sneaker` den Lagerstatus von „Geringer Lagerbestand“ auf „Zurück auf Lager - Begrenzte Mengen“ zu aktualisieren, ändern Sie die Größenauswahl, um die verfügbaren Größen in grün zu markieren, Entfernen Sie das Abzeichen „In Kürze verfügbar“
+* Konfiguration:
 
-* `https://www.your-url.com/your-sneaker` Aktualisieren Sie die Produktbilder, um neue Farbverläufe anzuzeigen
+   1. Rufen Sie die Fähigkeit zur Inhaltsaktualisierung auf, indem Sie eine Inhaltsaktualisierung für die URL anfordern.
+   1. Der Assistent führt Sie durch die Konfiguration und stellt Ihnen eine Reihe von Fragen.
+   1. Nach Abschluss des Vorgangs ist die Veröffentlichungs-URL konfiguriert und kann verwendet werden.
+
+Zum Beispiel:
+
+![Kenntnisse zum Aktualisieren von Inhalten - Veröffentlichungs-URL konfigurieren](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+
+### Eingabeaufforderungen {#prompts}
+
+Um Inhaltsaktualisierungen zu initiieren, können Sie eine Vielzahl von Eingabeaufforderungen in natürlicher Sprache eingeben. Sie müssen die URL der öffentlichen Seite (Veröffentlichungs-) oder die URL der Autorenumgebung der Seite angeben, die Sie aktualisieren möchten. Einige, aber nicht alle der unterstützten Verben; ersetzen, aktualisieren, entfernen, ändern, überarbeiten, ändern, anpassen, löschen.
 
 >[!NOTE]
 >
 >Datei-Uploads können bei der Interaktion mit [Jira](#jira) verwendet werden, werden jedoch nicht mit dem KI-Assistenten unterstützt.
+
+### Eingabeaufforderungen {#sample-prompts}
+
+Zu den Beispielaufforderungen gehören:
+
+* auf `<your-publish-URL>` Update „Dein perfekter Kaffee ist noch vier Fragen entfernt!“ zu „Dein Kaffee, dein Weg!“
+* Ersetzen `<your-author-env-URL>` das Bild von „holdingcup.png“ durch „stairhead.png“
+* auf `<your-publish-URL>` Schaltfläche „Take our Coffee Quiz“ in eine ansprechendere Version ändern“
+* entfernt `<your-author-env-URL>` den Abschnitt „Nicht beanspruchte Belohnungen sind ein verpasstes Geschenk!“
 
 ## Jira {#jira}
 
@@ -79,17 +98,11 @@ Erstellen Sie ein Jira-Ticket (beliebiger Typ). Im Feld „Beschreibung **Ihres 
 
 ### Aufrufen des Vorgangs über Ihr Ticket {#invoke-the-job-from-your-ticket}
 
-Um den Auftrag zu verwenden, fügen Sie Ihrem Ticket einen Kommentar hinzu. Geben Sie im Kommentar den Auftrag mit dem Symbol &quot;`@`&quot; zusammen mit dem Befehl an, der ausgeführt werden soll. Beispiel:
+Um den Auftrag zu verwenden, fügen Sie Ihrem Ticket einen Kommentar hinzu. Geben Sie im Kommentar den Auftrag mit dem Symbol &quot;`@`&quot; zusammen mit den Anweisungen an.
 
-* `@aemagent@adobe.com process`
+Zum Beispiel:
 
-Derzeit versteht der Auftrag die Befehle:
-
-* `process` - Anfrage verarbeiten
-* `cancel` - Abbrechen der Verarbeitung einer Anfrage
-* `retry` - Anfrage erneut verarbeiten
-* `feedback` - Wenden Sie Feedback auf eine frühere Generation an
-* `reprocess` - Ursprüngliche Anfrage erneut verarbeiten
+* `@aemagent@adobe.com process this ticket`
 
 ### Interaktion des Auftrags {#how-the-agent-interacts}
 
@@ -109,34 +122,7 @@ Wenn ein `process` Befehl an den Trigger aktualisiert wird, können die Antworte
 
 ## Aktivierung {#activation}
 
-Um den Kommunikationserstellungsauftrag zu aktivieren und Zugriff darauf zu erhalten, müssen Sie sich an Adobe wenden. Zu Beginn haben Sie folgende Möglichkeiten:
-
-* `experience-production-agent@adobe.com`
-* Oder wenden Sie sich an Ihr Account-Team
-
-Um den Prozess zu beschleunigen, hilft es, die folgenden Informationen bereitzustellen:
-
-* Für AEM as a Cloud Service müssen Sie Folgendes angeben:
-   * Unternehmens-ID
-   * `product_id`
-   * `profile_id`
-
-   * Diese Werte finden Sie in den folgenden Schritten:
-      1. Ihr Administrator muss [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) besuchen
-      1. **Adobe Experience Manager as a Cloud Service**
-      1. Auswählen der entsprechenden AEM-Instanz
-      1. Wählen Sie das Profil aus, das Lese- und Schreibvorgänge für den betreffenden Inhalt zulässt
-      1. Browser-URL erfassen
-      1. Extrahieren Sie `product_id` und `profile_id` aus der URL.
-Zum Beispiel: `https://adminconsole.adobe.com/products/profiles/users`
-
-* Edge Delivery-Dokumenterstellung
-   * Geben Sie Ihrem Adobe-Team die folgenden Informationen:
-      * Relevante Domains
-      * Relevante GitHub-Informationen:
-         * Org
-         * Repo
-         * Verzweigung
+Sie können AEM-Agenten über den [Playground](https://www.aem.live/developer/aem-playground) erkunden oder sich mit Ihrem CSM oder TAM verbinden, um den Zugriff über die Agent SKU zu besprechen.
 
 ## Einschränkungen {#limitations}
 
