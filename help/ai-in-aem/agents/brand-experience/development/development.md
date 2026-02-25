@@ -32,7 +32,7 @@ Der Auftrag kann Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fe
 
 Um auf diesen Auftrag zuzugreifen, lesen Sie bitte die [Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs), um Anweisungen zur Registrierung für das Beta-Programm zu erhalten und sicherzustellen, dass Sie Ihr Interesse an dem Entwicklungsauftrag bekunden. Sie können auch auftragsspezifisches Feedback für Entwicklungsaufgaben per E-Mail an [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) senden.
 
-[In einem Tutorial erfahren &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
+[In einem Tutorial erfahren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
 
 ## Zugriff auf den Entwicklungsauftrag über Cloud Manager {#how-to-access-the-job}
 
