@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Open ID Connect (OIDC) für AEM as a Cloud Se
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
+source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 71%
+source-wordcount: '2153'
+ht-degree: 66%
 
 ---
 
@@ -115,7 +115,7 @@ Konfigurieren Sie jetzt den OIDC-Authentifizierungs-Handler. Es können mehrere 
 
 ### Konfigurieren von SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 
-1. Erstellen Sie die Konfigurationsdatei. Für dieses Beispiel verwenden wir `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`. Das Suffix `azure` muss eine eindeutige Kennung sein. Ein Beispiel für die Konfigurationsdatei finden Sie unten:
+1. Erstellen Sie die Konfigurationsdatei. Für dieses Beispiel verwenden wir `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json`. Das Suffix `azure` muss eine eindeutige Kennung sein. Ein Beispiel für die Konfigurationsdatei finden Sie unten:
 
    ```
    {
@@ -208,12 +208,14 @@ Es stehen zwei Hauptansätze zur Verfügung.
 ### Option 1 — Lokale Gruppen
 
 Die externe Gruppe kann als Mitglied einer lokalen Gruppe hinzugefügt werden, die bereits über die erforderlichen ACLs verfügt.
+
 * Die externe Gruppe muss im Repository vorhanden sein. Dies tritt automatisch auf, wenn sich ein Benutzer, der zu dieser Gruppe gehört, zum ersten Mal anmeldet.
 * Diese Option wird im Allgemeinen bevorzugt, wenn geschlossene Benutzergruppen (CUGs) verwendet werden, da die lokale Gruppe sowohl in der Autoren- als auch in der Veröffentlichungsumgebung vorhanden ist.
 
 ### Option 2 - Direkte ACLs für externe Gruppen über RepoInit
 
 ACLs können mithilfe von RepoInit-Skripten direkt auf externe Gruppen angewendet werden.
+
 * Dieser Ansatz ist effizienter und wird bevorzugt, wenn keine CUGs verwendet werden.
 * Das folgende Beispiel zeigt eine RepoInit-Konfiguration, die einer externen Gruppe Leseberechtigungen zuweist. Die Option ermöglicht `ignoreMissingPrincipal` die Erstellung der ACL, auch wenn die Gruppe noch nicht im Repository vorhanden ist:
 
@@ -352,14 +354,58 @@ Der Dateiname, der geändert werden muss, ist `org.apache.sling.auth.oauth_clien
 }
 ```
 
+## Benutzerdefinierte Weiterleitung nach der Authentifizierung {#custom-redirect-after-authentication}
+
+Standardmäßig werden Benutzer nach erfolgreicher OIDC-Authentifizierung zurück zur ursprünglich angeforderten URL geleitet. Sie können dieses Verhalten jedoch mithilfe des `redirect` Abfrageparameters anpassen.
+
+### Verwenden des Weiterleitungsparameters
+
+Beim Initiieren der Authentifizierung können Sie eine benutzerdefinierte Umleitungs-URL angeben, indem Sie den `redirect`-Parameter zu Ihrer Authentifizierungsanfrage hinzufügen:
+
+```
+/content/wknd/us/en/adventures?redirect=/content/wknd/us/en/welcome
+```
+
+In diesem Beispiel wird der Benutzer nach erfolgreicher Authentifizierung an `/content/wknd/us/en/welcome` anstelle der ursprünglich angeforderten Seite weitergeleitet.
+
+### Sicherheitsbeschränkungen
+
+Aus Sicherheitsgründen hat der `redirect`-Parameter die folgenden Einschränkungen:
+
+* **Muss ein relativer Pfad sein**: Die Umleitungs-URL muss mit `/` beginnen (z. B. `/content/mysite/dashboard`)
+* **Keine Site-übergreifenden Weiterleitungen**: Absolute URLs (z. B. `https://external-site.com`) sind nicht zulässig
+* **Keine protokollrelativen URLs**: URLs, die mit `//` beginnen, werden zurückgewiesen, um protokollrelative Weiterleitungen zu verhindern
+
+Wenn eine ungültige Umleitungs-URL angegeben wird, schlägt die Authentifizierung mit einem Fehler fehl.
+
+### Beispiel-Anwendungsfälle
+
+1. **Begrüßungsseite nach der Anmeldung**: Leitet Benutzer nach der ersten Anmeldung zu einer personalisierten Begrüßungsseite um.
+
+   ```
+   /content/mysite/secure-area?redirect=/content/mysite/welcome
+   ```
+
+2. **Dashboard-Umleitung**: Leitet Benutzer nach der Authentifizierung zu einem bestimmten Dashboard weiter
+
+   ```
+   /content/mysite/login?redirect=/content/mysite/user/dashboard
+   ```
+
+3. **Deep-Linking**: Zulassen, dass sich Benutzer authentifizieren und dann auf eine bestimmte Ressource zugreifen
+
+   ```
+   /content/mysite/protected?redirect=/content/mysite/protected/specific-document
+   ```
+
 ## Migration vom SAML-Authentifizierungs-Handler zum OIDC-Authentifizierungs-Handler
 
-Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
+Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
 
 1. Konfigurieren Sie [OidcAuthenticationHandler](#configure-oidc-authentication-handler) und aktivieren Sie `idpNameInPrincipals` in der Konfiguration [SlingUserInfoProcessor](#configure-slinguserinfoprocessor).
 1. Einrichten [ACL für externe Gruppen](#configure-acl-for-external-groups).
 1. Nach der Anmeldung von Benutzern können die alten Benutzer, die vom SAML-Authentifizierungs-Handler erstellt wurden, gelöscht werden.
 
 >[!NOTE]
->Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
+>Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
 
