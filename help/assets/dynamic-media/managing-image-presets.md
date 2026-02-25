@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: c07c1f7e412e0c68338121d49781e33356f6c640
+source-git-commit: 012ce93f65d26d7f59fc874d1b225fbd458cf098
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2598'
 ht-degree: 92%
 
 ---
@@ -60,7 +60,7 @@ Bildvorgaben definieren, wie Dynamic Media Bilder bereitstellt, einschließlich 
 
 ### Generieren von Ausgabedarstellungen in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-In AEM as a Cloud Service werden Ausgabedarstellungen mithilfe von [Asset-Microservices](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) generiert. Der Workflow DAM-Update-Asset kann in Cloud Service nicht angepasst werden.
+In AEM as a Cloud Service werden Ausgabedarstellungen mithilfe von [Asset-Microservices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) generiert. Der Workflow DAM-Update-Asset kann in Cloud Service nicht angepasst werden.
 
 Zu den wichtigen Überlegungen gehören die folgenden:
 
@@ -72,7 +72,7 @@ Bildvorgaben verweisen auf verfügbare Ausgabedarstellungen zum Zeitpunkt der Be
 
 **So steuern Sie, welche Ausgabedarstellungen generiert werden:**
 
-1. Erstellen oder bearbeiten Sie [Verarbeitungsprofil](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+1. Erstellen oder bearbeiten Sie [Verarbeitungsprofil](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
 2. Konfigurieren Sie die erforderlichen Ausgabedarstellungsdefinitionen.
 3. Wenden Sie das Verarbeitungsprofil auf den entsprechenden Ordner an.
 
@@ -191,7 +191,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 -->
 
-### Erhöhen oder Verringern der Anzahl angezeigter Bildvorgaben {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+## Erhöhen oder Verringern der Anzahl angezeigter Bildvorgaben {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie eine Vorschau von Assets anzeigen. Experience Manager zeigt verschiedene dynamische Ausgabedarstellungen an, wenn ein Asset über **[!UICONTROL Detailansicht > Ausgabedarstellungen]** angezeigt wird. Sie können die Anzahl der angezeigten Ausgabedarstellungen erhöhen oder verringern.
 
@@ -210,7 +210,7 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 1. Ändern Sie in der Eigenschaft „limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-### Erstellen von Bildvorgaben {#creating-image-presets}
+## Erstellen von Bildvorgaben {#creating-image-presets}
 
 Erstellen Sie Bildvorgaben, damit Sie bei der Vorschau oder Veröffentlichung Einstellungen konsistent auf alle Bilder anwenden können.
 
@@ -243,7 +243,7 @@ Siehe [Dateiformat InDesign (INDD)](#indesign-indd-file-format).
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-### Erstellen von responsiven Bildvorgaben {#creating-a-responsive-image-preset}
+## Erstellen einer responsiven Bildvorgabe {#creating-a-responsive-image-preset}
 
 Um eine responsive Bildvorgabe zu erstellen, führen Sie die im Abschnitt [Erstellen von Bildvorgaben](#creating-image-presets) beschriebenen Schritte durch. Löschen Sie die Werte für Höhe und Breite im Fenster **[!UICONTROL Bildvorgabe bearbeiten]** und lassen Sie sie leer.
 
@@ -267,7 +267,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 * **[!UICONTROL Scharfzeichnen: Resampling-Modus]**: Wählen Sie **[!UICONTROL Scharf2]** aus.
 
-#### Optionen auf der Registerkarte „Standard“ {#basic-tab-options}
+### Optionen auf der Registerkarte „Standard“ {#basic-tab-options}
 
 | Feld | Beschreibung |
 | --- | --- |
@@ -276,7 +276,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 | **Format** | Wählen Sie im Menü ein Format aus.<br>Bei Auswahl von **JPEG** stehen die folgenden anderen Optionen zur Verfügung:<br>• **Qualität**: Die JPEG-Qualitätsskala ist 1–100. Die Skala ist sichtbar, wenn Sie den Schieberegler bewegen.<br>• **PG-Chrominanz-Downsampling aktivieren**: Da das menschliche Auge weniger empfindlich gegenüber hochfrequenten Farbinformationen als gegenüber hochfrequenter Luminanz ist, teilen JPEG-Bilder die Bildinformationen in Luminanz- und Farbkomponenten auf. Wenn ein JPEG-Bild komprimiert wird, bleibt die Luminanzkomponente in der vollen Auflösung erhalten, während bei den Farbkomponenten ein Downsampling anhand einer Durchschnittsbildung von Pixelgruppen erfolgt. Durch Downsampling wird das Datenvolumen auf die Hälfte oder ein Drittel reduziert, wobei die wahrgenommene Qualität nur minimal beeinträchtigt wird. Das Downsampling ist nicht auf Graustufenbilder anwendbar. Mit dieser Methode wird der Komprimierungsgrad für Bilder mit hohem Kontrast (z. B. Bilder mit überlagertem Text) reduziert.<br><br>Wenn Sie **GIF** oder **GIF mit Alpha** auswählen, erhalten Sie die folgenden zusätzlichen Optionen für die **GIF-Farbquantifizierungsoptionen**:<br>• **Typ**: Wählen Sie **Adaptiv** (Standard), **Web** oder **Macintosh** aus. Wenn Sie **GIF mit Alpha** auswählen, ist die Option „Macintosh“ nicht verfügbar.<br>• **Dithering**: Wählen Sie **Diffus** oder **Aus**.<br>• **Anzahl Farben**: Geben Sie eine Zahl von 2 bis 256 ein.<br>• **Farbliste**: Geben Sie eine kommagetrennte Liste ein. Geben Sie beispielsweise für Weiß, Grau und Schwarz „`000000,888888,ffffff`“ ein.<br><br>Wenn Sie **PDF**, **TIFF** oder **TIFF mit Alpha** auswählen, erhalten Sie die folgende zusätzliche Option:<br>• **Komprimierung**: Wählen Sie einen Komprimierungsalgorithmus. Die Algorithmusoptionen für PDF lauten **Kein**, **ZIP** und **JPEG**. Für TIFF lauten sie **Kein**, **LZW**, **JPEG** und **ZIP**. Für TIFF mit Alpha lauten sie **Kein**, **LZW** und **ZIP**.<br><br>Die Auswahl **PNG**, **PNG mit Alpha** oder **EPS** ergibt keine zusätzlichen Optionen. |
 | **Scharfzeichnen** | Wählen Sie die Option **Einfaches Scharfzeichnen aktivieren**, um einen einfachen Scharfzeichnungsfilter auf das Bild anzuwenden, nachdem die Skalierung abgeschlossen wurde. Mit der Scharfzeichnung können Sie unter Umständen Weichzeichnung kaschieren, die durch die Anzeige eines Bildes in einer anderen Größe entsteht. |
 
-#### Optionen auf der Registerkarte „Erweitert“ {#advanced-tab-options}
+### Optionen auf der Registerkarte „Erweitert“ {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -326,7 +326,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul>
     <div>
       Scharfzeichnen wird im Video
-     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=de">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
@@ -361,7 +361,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
  </tbody>
 </table>
 
-### Definieren von Bildvorgabenoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
+## Definieren von Bildvorgabenoptionen mit Bildmodifikatoren {#defining-image-preset-options-with-image-modifiers}
 
 Zusätzlich zu den auf den Registerkarten „Allgemein“ und „Erweitert“ verfügbaren Optionen können Sie Bildmodifikatoren definieren, damit Sie beim Definieren von Bildvorgaben über mehr Optionen verfügen. Das Rendern von Bildern basiert auf der Dynamic Media Image Rendering-API und wird ausführlich in der [HTTP-Protokollreferenz](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api) beschrieben.
 
@@ -411,7 +411,7 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Bearbeiten von Bildvorgaben {#modifying-image-presets}
+## Bearbeiten von Bildvorgaben {#modifying-image-presets}
 
 1. Klicken Sie in Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 
@@ -420,11 +420,11 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]**. Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
 1. Nehmen Sie Änderungen vor und klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder auf **[!UICONTROL Abbrechen]**, um sie zu verwerfen.
 
-### Veröffentlichen von Bildvorgaben {#publishing-image-presets}
+## Veröffentlichen von Bildvorgaben {#publishing-image-presets}
 
 Bildvorgaben werden automatisch veröffentlicht.
 
-### Löschen von Bildvorgaben {#deleting-image-presets}
+## Löschen von Bildvorgaben {#deleting-image-presets}
 
 1. Klicken Sie in Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und klicken Sie dann auf das Werkzeugsymbol.
 1. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
