@@ -5,9 +5,9 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
+source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
 workflow-type: tm+mt
-source-wordcount: '4427'
+source-wordcount: '4441'
 ht-degree: 95%
 
 ---
@@ -519,9 +519,11 @@ Weitere Informationen zum Umgang mit Sling[`Apache Sling`Aufträgen in Cluster](
 * **Schweregrad**: Info, Minor oder Major
 * **Seit**: Version 2026.1.0
 
-Die Experience Manager-API-Oberfläche wird ständig überprüft, um APIs zu identifizieren, deren Verwendung gestoppt werden muss. Diese API ist veraltet und mit einem Entfernungsdatum gekennzeichnet.
+Die Experience Manager-API-Oberfläche wird ständig überprüft, um APIs zu identifizieren, deren Verwendung gestoppt werden muss. Diese APIs sind veraltet und mit einem Entfernungsdatum gekennzeichnet.
 
-Je näher das Entfernungsdatum rückt, desto höher ist die Schwere der Verletzung dieser Regel. Die Verwendung einer solchen API muss durch eine sichere Alternative ersetzt werden.
+Je näher das Entfernungsdatum rückt, desto höher ist die Schwere der Verletzung dieser Regel. Die Verwendung solcher APIs muss durch eine sichere Alternative ersetzt werden.
+
+In [ Artikel finden ](/help/release-notes/deprecated-removed-features.md#aem-apis) Anleitungen zum Entfernen veralteter APIs.
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -545,7 +547,7 @@ Es gibt jedoch auch Fälle, in denen eine API im Experience Manager-Kontext vera
 
 Das `Apache Sling`-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da es in Kombination mit dem `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) zu schlechter Leistung führen kann. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu &#x200B;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
+Weitere Informationen zu den empfohlenen Anmerkungen und [`Apache Sling`, warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) .
 
 
 ### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
