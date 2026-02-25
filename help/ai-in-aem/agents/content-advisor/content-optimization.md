@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Auftrag zur Inhaltsoptimierung {#content-optimization-job}
 
-Im Rahmen des Content Advisor-Agenten von [AEM transformiert ](/help/ai-in-aem/agents/content-advisor/overview.md) Auftrag zur Inhaltsoptimierung die Art und Weise, wie Benutzende Assets verfeinern und anpassen, indem sie Anweisungen in natürlicher Sprache anwenden, um kanalfertige Varianten zu erstellen. Unabhängig davon, ob neue Ausgabedarstellungen erstellt, visuelle Eigenschaften angepasst, Hintergründe geändert oder Assets für bestimmte digitale Kanäle vorbereitet werden, interpretiert der Vorgang die Benutzerabsicht und führt komplexe Bearbeitungsaufgaben automatisch aus. Es funktioniert nahtlos mit [dem Auftrag zur Inhaltssuche“, ](/help/ai-in-aem/agents/content-advisor/discovery.md) die gefundenen Assets zu nehmen und optimierte Varianten mithilfe von [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) zu erstellen, die Marken-, Kanal- und Kampagnenanforderungen ohne manuellen Design-Aufwand erfüllen.
+Im Rahmen des Content Advisor-Agenten von [AEM transformiert &#x200B;](/help/ai-in-aem/agents/content-advisor/overview.md) Auftrag zur Inhaltsoptimierung die Art und Weise, wie Benutzende Assets verfeinern und anpassen, indem sie Anweisungen in natürlicher Sprache anwenden, um kanalfertige Varianten zu erstellen. Unabhängig davon, ob neue Ausgabedarstellungen erstellt, visuelle Eigenschaften angepasst, Hintergründe geändert oder Assets für bestimmte digitale Kanäle vorbereitet werden, interpretiert der Vorgang die Benutzerabsicht und führt komplexe Bearbeitungsaufgaben automatisch aus. Es funktioniert nahtlos mit [dem Auftrag zur Inhaltssuche“, &#x200B;](/help/ai-in-aem/agents/content-advisor/discovery.md) die gefundenen Assets zu nehmen und optimierte Varianten mithilfe von [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) zu erstellen, die Marken-, Kanal- und Kampagnenanforderungen ohne manuellen Design-Aufwand erfüllen.
 
 Zu den wichtigsten Vorteilen des Auftrags zur Inhaltsoptimierung gehören:
 
@@ -78,7 +78,7 @@ Sie können über den KI-Assistenten auf den Inhaltsoptimierungsauftrag in AEM z
 
 ## Häufige Anwendungsfälle und Beispiel-Eingabeaufforderungen {#use-cases-prompts}
 
-Verwenden Sie den Auftrag zur Inhaltsoptimierung, indem Sie über den Auftrag zur [Inhaltssuche“ nach den richtigen Assets suchen.](/help/ai-in-aem/agents/content-advisor/discovery.md) die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Weitere Informationen finden Sie in der vollständigen Liste ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) verfügbaren Optimierungen.
+Verwenden Sie den Auftrag zur Inhaltsoptimierung, indem Sie über den Auftrag zur [Inhaltssuche“ nach den richtigen Assets suchen.](/help/ai-in-aem/agents/content-advisor/discovery.md) die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Weitere Informationen finden Sie in der vollständigen Liste &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) verfügbaren Optimierungen.
 
 * **Erstellung von Ausgabedarstellungen mit hoher Auflösung**
 
@@ -89,7 +89,7 @@ Verwenden Sie den Auftrag zur Inhaltsoptimierung, indem Sie über den Auftrag zu
 
   Erstellen Sie eine `2000px` Ausgabedarstellung `JPEG` mit `80%`.
 
-  Suchen Sie mithilfe des [Inhaltssuchauftrags“ nach dem richtigen Asset ](/help/ai-in-aem/agents/content-advisor/discovery.md) verwenden Sie dann bei mehreren Suchergebnissen die folgenden Eingabeaufforderungen:
+  Suchen Sie mithilfe des [Inhaltssuchauftrags“ nach dem richtigen Asset &#x200B;](/help/ai-in-aem/agents/content-advisor/discovery.md) verwenden Sie dann bei mehreren Suchergebnissen die folgenden Eingabeaufforderungen:
 
   Erstellen Sie für das dritte Suchergebnis eine `2000px` Ausgabedarstellung `JPEG` mit `80%`.
 
