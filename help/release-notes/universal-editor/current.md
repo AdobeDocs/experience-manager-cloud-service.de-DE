@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.02.19
-description: Dies sind die Versionshinweise für die Version 2026.02.19 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.02.26
+description: Dies sind die Versionshinweise für die Version 2026.02.26 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 28%
+source-wordcount: '221'
+ht-degree: 32%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.02.19 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.02.26 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 19. Februar 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 26. Februar 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,14 +26,9 @@ Dies sind die Versionshinweise für die Version vom 19. Februar 2026 des univers
 
 ## Neue Funktionen {#what-is-new}
 
-* Der RTE wurde verbessert.
-   * [Ausblenden von Symbolleistenelementen im Kontext von RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options) wird jetzt unterstützt.
-   * [Das Umschließen von Text in Tabellen mit Absätzen](/help/implementing/universal-editor/configure-rte.md#table-actions) wird jetzt unterstützt.
-   * [Nicht unterstützte HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)Tags können jetzt vom RTE beibehalten werden.
-   * Die RTE-Logik wird jetzt von einer separaten Datei bereitgestellt.
-   * [Mit dem RTE können jetzt &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) Tabellen erstellt und bearbeitet werden.
-* Wenn keine Beschriftung festgelegt ist, wird jetzt der Komponententitel aus der Komponentendefinition verwendet.
-* `setEditorMode` ist jetzt über Erweiterungen verfügbar.
+* Allen Schemafeldern wurden Beschreibungen hinzugefügt, um Entwicklerinnen und Entwicklern beim Generieren von Modell-/Filter-/Komponentendefinitionsdateien zu helfen.
+* Aktualisierungen an Inhaltsfragmenten mit mehreren Feldern werden jetzt für kontextbezogene Bearbeitungen unterstützt.
+
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -43,7 +38,7 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* RTE-Endpunkte werden jetzt für den Editor für die Bearbeitung im Kontext bereitgestellt.
-* Die Bearbeitung verschachtelter Felder führt nicht mehr zum Überschreiben von Peer-Einträgen aus diesen Strukturen.
-* Erforderliche RTE-Felder können nicht mehr als leer gespeichert werden.
-* Die In-Place-Formatierung wird beim Hinzufügen von Links nach der Formatierung nicht mehr falsch angewendet.
+* Der Editor setzt den Inhalt nicht mehr standardmäßig auf `{}`, bevor der Inhalt eintrifft, wodurch in bestimmten Situationen ein Datenverlust verhindert wird.
+* Die Persistenz von Daten, wenn das Feld im Fokus ist, wurde robuster gemacht.
+* Änderungen gehen in bestimmten Situationen nicht mehr verloren, wenn Sie im linken Bereich bearbeiten und dann im Editor-Fenster ein anderes Element auswählen.
+* Ein Persistenzproblem mit RTE-Feldern für Inhaltsfragmente bei der Verwendung der OpenAPI-Endpunkte wurde behoben.

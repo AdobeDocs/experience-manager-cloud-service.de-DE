@@ -4,12 +4,13 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
+
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
@@ -25,12 +26,11 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 >
 >Der Inhalt der aktuellen Version sowie das Veröffentlichungsdatum können sich ändern.
 
-## Anstehende Verbesserungen {#other-improvements}
+## Künftige Funktionen {#upcoming-features}
 
-* Der Editor setzt den Inhalt nicht mehr standardmäßig auf `{}`, bevor der Inhalt eintrifft, wodurch in bestimmten Situationen ein Datenverlust verhindert wird.
-* Änderungen gehen beim Bearbeiten im linken Bereich und der anschließenden Auswahl eines anderen Elements im Editor-Fenster nicht mehr verloren.
-* Bei Verwendung von `headless-canvas` ist kein manueller CSS-Import mehr erforderlich.
-* Für CORS-Zwecke werden die richtigen Endpunkte für die Staging-, Vorschau- und Produktionsumgebung verwendet.
-* Beschreibung wurde allen Schemafeldern hinzugefügt.
-* Aktualisierungen an Inhaltsfragmenten mit mehreren Feldern werden jetzt für kontextbezogene Bearbeitungen unterstützt.
-* Die Persistenz von Daten, wenn das Feld im Fokus ist, wurde robuster gemacht.
+* Im Kontextmenü ist jetzt eine Komponentenauswahl verfügbar.
+* Es ist jetzt eine Farbauswahl für den RTE verfügbar.
+
+## Anstehende Verbesserungen {#upcoming-improvements}
+
+* Die Optionen für Ausrichtung, Textrichtung und Einzug sind jetzt [standardmäßig im RTE aktiviert](/help/implementing/universal-editor/configure-rte.md) vorausgesetzt, dass Ihr Backend sie unterstützt.
