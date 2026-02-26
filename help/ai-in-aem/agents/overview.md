@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die in AEM verfügbaren Agenten, um die Inh
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,15 @@ Diese Agenten sind in Adobe Experience Manager (AEM) as a Cloud Service verfügb
 >* Sie sind derzeit weder für AEM 6.5 noch für AEM 6.5 LTS verfügbar.
 >* Sie sind weder in AEM On-Premise noch in Managed Services verfügbar.
 
->[!IMPORTANT]
->
->Um die Agenten zu verwenden, müssen Sie sich beim Explorer-Programm registrieren. Weitere Informationen zum AEM Agents Explorer-Programm finden Sie [hier.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
+## Zugreifen auf Agenten {#accessing-agents}
+
+Sie haben drei Möglichkeiten, auf Agenten zuzugreifen.
+
+1. Möglicherweise haben Sie die Möglichkeit, über das Programm &quot;[ vor dem Kauf“, ](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) schrittweise eingeführt wird, auf AEM-Agenten zuzugreifen. Ihr CSM oder TAM kann Ihnen dabei helfen, die Verfügbarkeit für Ihr Unternehmen zu bestätigen.
+1. Erkunden von AEM[Agenten (durch eine Testversion)](https://www.aem.live/developer/aem-playground)
+1. Stellen Sie eine Verbindung zu Ihrem CSM oder TAM her, um den Zugriff über die Agent SKU zu besprechen, wenn dies mit Ihrer Roadmap und Ihren Bewertungsplänen übereinstimmt.
+
+Sobald neue Fähigkeiten im Rahmen der frühzeitigen Veröffentlichung verfügbar werden, werden wir zusätzliche Möglichkeiten zur Teilnahme und zum Austausch von Feedback bieten. Wir empfehlen Ihnen, sich [diese Seite) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) Updates anzusehen.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
