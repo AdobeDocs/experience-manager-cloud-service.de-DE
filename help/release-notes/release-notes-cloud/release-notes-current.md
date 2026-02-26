@@ -128,7 +128,7 @@ Weitere Informationen finden Sie unter KI-Suchen in der Ansicht [Assets](/help/a
 
 **Abrufen von Werten aus einem JSON-Array**
 
-Erweiterte benutzerdefinierte Funktionsfunktionen zum [ (Extrahieren von Werten aus JSON-](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)), die über einen API-Aufruf empfangen werden, und direkten Binden an adaptive Formularfelder. Sie können jetzt Geschäftslogik und Regeln mit minimaler manueller Datenzuordnung entwickeln.
+Erweiterte benutzerdefinierte Funktionsfunktionen zum [&#x200B; (Extrahieren von Werten aus JSON-](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)), die über einen API-Aufruf empfangen werden, und direkten Binden an adaptive Formularfelder. Sie können jetzt Geschäftslogik und Regeln mit minimaler manueller Datenzuordnung entwickeln.
 
 **Ausführen der zugehörigen Benutzeroberfläche auf einer Veröffentlichungsinstanz**
 
@@ -263,7 +263,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### KI-Tools für IDEs für AEM Java und Dispatcher-Entwicklung (Beta-Programm) {#ai-dev-beta}
 
@@ -272,7 +272,7 @@ Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie C
 * Austausch von Erfahrungen aus der Praxis, um zukünftige von Adobe unterstützte KI-Funktionen zu gestalten
 * Testen Sie IDE-Tools, die von KI-Agenten verwendet werden können, um AEM-Code und Dispatcher-Konfiguration zu generieren und zu debuggen
 
-Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
