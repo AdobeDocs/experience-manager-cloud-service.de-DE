@@ -5,9 +5,9 @@ keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: c5bea0d9386617b8ff51309f5cba45e7068f71e8
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2889'
 ht-degree: 95%
 
 ---
@@ -316,7 +316,8 @@ So stellen Sie das Design mithilfe der Frontend-Pipeline in Ihrer Cloud Service-
 
 * 5.1 [Erstellen eines Repositorys für das Design](#create-a-new-theme-repo)
 * 5.2 [Übertragen der Änderungen in das Repository](#committing-the-changes)
-* 5.3. [Ausführen der Frontend-Pipeline](#run-a-frontend-pipeline)
+* 5.3 [Legen Sie die Node.js-Version auf 20 fest](#53-set-the-nodejs-version-to-20)
+* 5.4. [Ausführen der Frontend-Pipeline](#run-a-frontend-pipeline)
 
 ##### 5.1 Erstellen eines Repositorys für das Design{#create-a-new-theme-repo}
 
@@ -368,9 +369,23 @@ Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-S
 
    ![Vorgenommene Änderungen](/help/forms/assets/cmd_git_push.png)
 
+##### 5.3 Legen Sie die Node.js-Version auf 20 fest
+
+So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest:
+
+1. Gehen Sie zum **Pipelines** und suchen Sie Ihre Frontend-Pipeline.
+2. Klicken Sie rechts in der Pipeline auf das Dreipunkt-Menü **⋯** und wählen Sie aus der Dropdown-Liste **Variablen anzeigen/bearbeiten**.
+3. Füllen Sie **Dialogfeld** Variablenkonfiguration“ die Felder wie folgt aus:
+   * **NAME** - NODE_VERSION
+   * **WERT** - 20
+   * **SCHRITT ANGEWENDET** - Build
+   * **TYPE** - Variable
+4. Klicken Sie auf **Speichern**, um die Konfiguration anzuwenden.
+
+![Pipeline-Konfiguration](/help/forms/assets/pipeline-config.png)
 
 
-##### 5.3. Ausführen der Frontend-Pipeline {#run-a-frontend-pipeline}
+##### 5.4. Ausführen der Frontend-Pipeline {#run-a-frontend-pipeline}
 
 Das Design wird mithilfe der [Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de) bereitgestellt. Um das Design bereitzustellen, führen Sie die folgenden Schritte aus:
 
@@ -390,7 +405,7 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    >[!NOTE]
    >
-   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [&#x200B; die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
 
 1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .
@@ -418,21 +433,6 @@ Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 1. Klicken Sie auf **Erstellen**.
 
 Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Formulare verwendet, um beim Erstellen eines adaptiven Formulars Stile zu definieren.
-
-## Legen Sie die Node.js-Version auf 20 fest.
-
-So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest:
-
-1. Gehen Sie zum **Pipelines** und suchen Sie Ihre Frontend-Pipeline.
-2. Klicken Sie rechts in der Pipeline auf das Dreipunkt-Menü **⋯** und wählen Sie aus der Dropdown-Liste **Variablen anzeigen/bearbeiten**.
-3. Füllen Sie **Dialogfeld** Variablenkonfiguration“ die Felder wie folgt aus:
-   * **NAME** - NODE_VERSION
-   * **WERT** - 20
-   * **SCHRITT ANGEWENDET** - Build
-   * **TYPE** - Variable
-4. Klicken Sie auf **Speichern**, um die Konfiguration anzuwenden.
-
-![Pipeline-Konfiguration](/help/forms/assets/pipeline-config.png)
 
 ## Best Practices {#best-practices}
 
