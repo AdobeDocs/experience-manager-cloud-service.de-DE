@@ -5,7 +5,7 @@ keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: c5bea0d9386617b8ff51309f5cba45e7068f71e8
+source-git-commit: 38ccd7f624867cef324c7934647e147532271c0d
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 95%
@@ -316,7 +316,7 @@ So stellen Sie das Design mithilfe der Frontend-Pipeline in Ihrer Cloud Service-
 
 * 5.1 [Erstellen eines Repositorys für das Design](#create-a-new-theme-repo)
 * 5.2 [Übertragen der Änderungen in das Repository](#committing-the-changes)
-* 5.3 [Legen Sie die Node.js-Version auf 20 fest](#53-set-the-nodejs-version-to-20)
+* 5.3 [Legen Sie die Node.js-Version auf 20 fest](#53-set-the-nodejs-version-to-20-set-node)
 * 5.4. [Ausführen der Frontend-Pipeline](#run-a-frontend-pipeline)
 
 ##### 5.1 Erstellen eines Repositorys für das Design{#create-a-new-theme-repo}
@@ -369,7 +369,7 @@ Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-S
 
    ![Vorgenommene Änderungen](/help/forms/assets/cmd_git_push.png)
 
-##### 5.3 Legen Sie die Node.js-Version auf 20 fest
+##### 5.3 Legen Sie die Node.js-Version auf 20 fest {#set-node}
 
 So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest:
 
@@ -405,7 +405,7 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    >[!NOTE]
    >
-   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [&#x200B; die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
 
 1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .
