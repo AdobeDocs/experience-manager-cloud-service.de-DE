@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
+source-git-commit: 6b4c4b92bb726da2f7222dfa0e223aa3d0309c8f
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige Funktionen {#upcoming-features}
 
-* Im Kontextmenü ist jetzt eine Komponentenauswahl verfügbar.
+* Die Komponentenauswahl weist ein neues Design auf.
 * Es ist jetzt eine Farbauswahl für den RTE verfügbar.
 
 ## Anstehende Verbesserungen {#upcoming-improvements}
