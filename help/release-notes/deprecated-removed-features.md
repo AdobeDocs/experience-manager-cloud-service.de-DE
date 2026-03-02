@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 940fc779feb4b042a54b4ac5758377812df64537
+source-git-commit: 608f8d11499579f3f22bcf9b2f0b79699509021f
 workflow-type: tm+mt
-source-wordcount: '4040'
-ht-degree: 77%
+source-wordcount: '4163'
+ht-degree: 74%
 
 ---
 
@@ -55,7 +55,7 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Aufnahme werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [Bestimmte Workflow-Schritte &#x200B;](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
 | [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
@@ -374,7 +374,7 @@ In diesem Abschnitt werden APIs aufgelistet, die veraltet sind und entfernt wurd
 
 Dieser Abschnitt enthält Anleitungen zum Entfernen von APIs für verschiedene APIs in den obigen Tabellen.
 
-Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
+Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
 
 Sie sollten zwar alle veralteten APIs im Laufe der Zeit beheben, aber priorisieren Sie alle APIs, die in der Tabelle Veraltete APIs aufgeführt sind, mit dem Zieldatum für die Entfernung am 26. Februar 2026 (oder früher). Im AEM Analyzer-Bericht können diese APIs mit dem Datum der wirksamen Entfernung 8/31/2025 angezeigt werden.
 
@@ -383,6 +383,8 @@ Sie sollten zwar alle veralteten APIs im Laufe der Zeit beheben, aber priorisier
 ### Allgemeine Richtlinien
 
 Wenn Sie eine Drittanbieterbibliothek verwenden, für die derzeit eine veraltete API erforderlich ist, versuchen Sie, auf eine neuere Version dieser Drittanbieterbibliothek zu aktualisieren.
+
+Wenn Sie sich entscheiden, Ihre eigene Version der veralteten API bereitzustellen, z. B. Ihre eigene Version von Guava, stellen Sie sicher, dass alle Ihre Bundles, die diese API verwenden, mit Ihrer Version verkabelt sind. Wenn Sie dieselbe Hauptversion bereitstellen möchten, die derzeit in Cloud Service enthalten ist, sind keine weiteren Maßnahmen erforderlich. Wenn Sie jedoch den Empfehlungen folgen und die neueste Version bereitstellen, müssen Sie Ihr Maven-Projekt anpassen und diese Bibliothek als neue Abhängigkeit vor dem `aem-sdk-api` einbeziehen. Auf diese Weise wird Ihr Code mit der neuen Version verkabelt. Nachdem Sie die Änderungen vorgenommen haben, stellen Sie mit dem [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) sicher, dass die Verwendung der veralteten API nicht mehr gekennzeichnet ist.
 
 Wenn Sie ACS AEM Commons verwenden, verwenden Sie mindestens Version 6.11.0 (die neueste Version wird empfohlen) und stellen Sie sicher, dass Sie [die Version für Cloud Service einbeziehen](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) indem Sie die Classifier-`cloud` für das Inhaltspaket angeben.
 
