@@ -54,7 +54,7 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Inhalt** | `/content` | Alle Inhaltsvorgänge auf niedriger Ebene, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten, Fragmente und Assets. |
 | **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten, Fragmente und Assets. |
-| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
+| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 

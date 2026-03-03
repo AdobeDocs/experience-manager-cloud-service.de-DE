@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Übersicht über Entwicklungsaufträge {#development-job-overview}
 
-[Als Teil des Brand Experience Agents ](/help/ai-in-aem/agents/brand-experience/overview.md) der Entwicklungsauftrag AEM-Entwicklern und -Administratoren dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
+[Als Teil des Brand Experience Agents &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) der Entwicklungsauftrag AEM-Entwicklern und -Administratoren dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
 
 Der Auftrag kann Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten helfen, indem Fehlerbehebungen vorgeschlagen werden. Dies spart Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
 
@@ -28,7 +28,7 @@ Der Auftrag kann Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fe
 
 >[!NOTE]
 >
->Die Fehlerbehebung bei Pipelines ist auf Full-Stack-Pipelines (Bereitstellung und Code-Qualität) beschränkt, aber die Unterstützung für **Web-Stufen-Konfigurations** Pipeline) ist jetzt in der Beta-Version verfügbar. aem-devagent@adobe.com Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+>Die Fehlerbehebung bei Pipelines ist auf Full-Stack-Pipelines (Bereitstellung und Code-Qualität) beschränkt, aber die Unterstützung für **Web-Stufen-Konfigurations** Pipeline) ist jetzt in der Beta-Version verfügbar. aem-devagent@adobe.com Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -36,7 +36,7 @@ Der Auftrag kann Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fe
 
 Um auf diesen Auftrag zuzugreifen, lesen Sie bitte die [Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs), um Anweisungen zur Registrierung für das Beta-Programm zu erhalten und sicherzustellen, dass Sie Ihr Interesse an dem Entwicklungsauftrag bekunden. Sie können auch auftragsspezifisches Feedback für Entwicklungsaufgaben per E-Mail an [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) senden.
 
-[In einem Tutorial erfahren ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
+[In einem Tutorial erfahren &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
 
 ## Zugriff auf den Entwicklungsauftrag über Cloud Manager {#how-to-access-the-job}
 
@@ -97,4 +97,4 @@ Für den Entwicklungsauftrag ist entweder die Rolle Cloud Manager - Entwickler o
 
 Die Fehlerbehebung bei Pipelines erfolgt im Build- und Unit-Test-Schritt und im Code-Scan-Schritt in Full-Stack-Bereitstellungs- und Code-Qualitäts-Pipelines. Debuggen Sie bei anderen Pipeline-Typen und -Schritten Fehler, indem Sie die Protokolle herunterladen und überprüfen.
 
-Weitere Informationen finden [ unter „Zugreifen auf und Herunterladen ](/help/implementing/cloud-manager/manage-logs.md) Protokollen“.
+Weitere Informationen finden [&#x200B; unter „Zugreifen auf und Herunterladen &#x200B;](/help/implementing/cloud-manager/manage-logs.md) Protokollen“.
