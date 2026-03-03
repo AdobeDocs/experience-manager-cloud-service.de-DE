@@ -4,7 +4,7 @@ description: Erfahren Sie, was der Inhaltsaktualisierungsauftrag des Brand Exper
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: a3b00916c0d949fe9fac50bc0c3056b0a1b05358
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -16,11 +16,11 @@ ht-degree: 2%
 
 Der Auftrag zum Aktualisieren von Inhalten des [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatisiert die Inhaltserstellung, um alltägliche Aufgaben für Adobe Experience Manager (AEM) as a Cloud Service und Edge Delivery Services zu beschleunigen.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Der Auftrag zur Inhaltsaktualisierung aktualisiert vorhandene Inhalte, einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets. Der Auftrag kann Aktionen durchführen, wie z. B. Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
 
-Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und die Agentenkompetenz erledigt Ihre Aufgabe. Bei Verwendung mit Adobe Experience Manager (AEM) as a Cloud Service erstellt der Auftrag einen neuen [Launch](/help/sites-cloud/authoring/launches/overview.md), damit Sie die Aktualisierungen vor der Anwendung überprüfen können. Bei Verwendung mit der Dokumenterstellung erstellt der Auftrag eine neue [Version](https://experienceleague.adobe.com/de/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und die Agentenkompetenz erledigt Ihre Aufgabe. Bei Verwendung mit Adobe Experience Manager (AEM) as a Cloud Service erstellt der Auftrag einen neuen [Launch](/help/sites-cloud/authoring/launches/overview.md), damit Sie die Aktualisierungen vor der Anwendung überprüfen können. Bei Verwendung mit der Dokumenterstellung erstellt der Auftrag eine neue [Version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Funktionen {#capabilities}
 
@@ -33,7 +33,7 @@ Sie können auf die Fähigkeit zur Inhaltsaktualisierung zugreifen unter:
 
 Sie können über den KI-Assistenten auf den Auftrag in AEM zugreifen.
 
-Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus &#x200B;](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
+Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus ](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
 
 ![Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
@@ -118,7 +118,7 @@ Wenn ein `process` Befehl an den Trigger aktualisiert wird, können die Antworte
 
 * Die folgende Abbildung zeigt eine Beispiel-Jira, die den `process`Befehl für den Auftrag zur Inhaltsaktualisierung Trigger:
 
-  ![Beispiel Jira unter Verwendung des Auftrags zur Inhaltsaktualisierung des Experience Production Agents](assets/content-update-jira-example.png)
+  ![Beispiel Jira unter Verwendung des Auftrags zur Inhaltsaktualisierung des Brand Experience Agents](assets/content-update-jira-example.png)
 
 ## Aktivierung {#activation}
 
