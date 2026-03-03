@@ -33,7 +33,7 @@ Sie können auf die Fähigkeit zur Inhaltsaktualisierung zugreifen unter:
 
 Sie können über den KI-Assistenten auf den Auftrag in AEM zugreifen.
 
-Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus ](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
+Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus &#x200B;](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
 
 ![Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
