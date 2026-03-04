@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 21%
+source-wordcount: '3229'
+ht-degree: 20%
 
 ---
 
@@ -143,13 +143,13 @@ Auf Musterseiten wird automatisch „Seite ##&quot; angezeigt, um eine klare, ko
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 
 Sie können AEM Forms mit Adobe Experience Platform (AEP) verbinden, um Kundenprofile und Daten für personalisierte Formularerlebnisse und nachgelagerte Trigger-Workflows auf der Grundlage von Formularübermittlungen zu nutzen. Durch das direkte Senden von Formulardaten an AEP-Datensätze können Sie Kundenprofile anreichern und tiefere Einblicke in Benutzerinteraktionen erhalten.
 
-Bereit zum Start? [&#x200B; Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+Bereit zum Start? [ Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
 
 ### AEM FORMS HTML5 FORMS
 
@@ -193,7 +193,7 @@ not sure what's going on with this video link. cleaned up version below
 * **Entwicklerproduktivität**: Konzentrieren Sie sich auf die Erstellung von Business-Logik und Benutzeroberfläche, während die CLI sich wiederholende Einrichtungsaufgaben übernimmt.
 * **Nahtlose Integration**: Generierte Komponenten können verwendet und in bestehende AEM Forms-Projekte integriert werden.
 
-Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### API-Integrationstool für dynamische Formulardaten
 
@@ -316,6 +316,14 @@ Das Speichern von PDFs im Azure Blob-Speicher ermöglicht die zentralisierte Ver
 * [Unterstützung von Funktionen und mathematischen Ausdrücken in Eingabeparametern](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Eingabeparameter unterstützen jetzt sowohl Funktionsaufrufe als auch mathematische Ausdrücke, sodass Formularautoren dynamisch berechnete Werte direkt übergeben können.
 
 * [Eigenschaftswerte aus einem JSON-Array abrufen](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Rufen Sie eine API mit einer benutzerdefinierten Funktion auf, um Werte aus einem JSON-Array zu extrahieren und sie direkt an Formularfelder zu binden.
+
+### Versionierungsunterstützung in Forms Manager
+
+Forms Manager unterstützt jetzt die Versionierung für adaptive Forms (Kernkomponenten und Foundation-Komponenten), Formularfragmente, Designs, XDP-Vorlagen und binäre Assets. Sie können Versionen erstellen, den Verlauf anzeigen und frühere Status über die Konsole &quot;Forms und Dokumente“ wiederherstellen. Siehe [Verwalten von Formularversionen in Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+### Verbesserte Barrierefreiheit für Formularkomponenten
+
+Adaptive Forms-Kernkomponenten führen WCAG-konformes semantisches Markup für Kontrollkästchen-, Optionsfeld- und Bedienfelder ein. Diese Komponenten nutzen jetzt `<fieldset>`- und `<legend>`-Elemente, um aussagekräftige Beziehungen zwischen Gruppenkennzeichnungen und ihren Optionen für Hilfstechnologien herzustellen. Siehe [Unterstützung von Feldsets und Legenden in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Siehe auch
 

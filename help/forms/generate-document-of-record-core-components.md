@@ -4,14 +4,14 @@ description: Erfahren Sie, wie Sie aus Formularübermittlungen für Kernkomponen
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '3208'
-ht-degree: 45%
+source-wordcount: '3314'
+ht-degree: 43%
 
 ---
 
-# Generieren eines Übermittlungs-PDF (ehemals Datensatzdokument) für Adaptive Forms (Kernkomponenten)
+# Generieren eines Übermittlungs-PDF (Datensatzdokument) für adaptive Forms (Kernkomponenten)
 
 ## Überblick {#overview}
 
@@ -147,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF generiert.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit der Übermittlungs-PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -359,6 +359,12 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Optionenausrichtung**: Sie können die gewünschte Ausrichtung (horizontal, vertikal, wie das adaptive Formular) auswählen, um die Ausrichtung für Felder wie Kontrollkästchen oder Optionsfelder festzulegen, die im [!UICONTROL Datensatzdokument] angezeigt werden sollen. Standardmäßig ist für die Felder im [!UICONTROL Datensatzdokument] die vertikale Ausrichtung festgelegt. Das Festlegen der Eigenschaften über die [!UICONTROL Formularfeldeigenschaften] des Datensatzdokuments überschreibt die Eigenschaften, die in der [!UICONTROL Elementausrichtung] für die Felder in einem adaptiven Formular festgelegt sind. Wenn Sie die Option [!UICONTROL Wie adaptives Formular] auswählen, wird die in der Autoreninstanz des adaptiven Formulars konfigurierte Ausrichtung für Felder des [!UICONTROL Datensatzdokuments] verwendet.
       * **Anzahl der Optionen für die horizontale Ausrichtung**:You kann die Anzahl der Optionen festlegen, die auf der Übermittlungs-PDF für die horizontale Ausrichtung angezeigt werden sollen.
 
+      **Kennzeichnungen für das Mehrfachauswahl-Dropdown-Menü anzeigen**
+
+      <span class="preview"> Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
    1. **Eigenschaften der primären Seite**:
 
       * **Logo-Bild**: Sie können wahlweise das Logo-Bild aus dem adaptiven Formular verwenden, eines aus DAM auswählen oder eines von Ihrem Computer hochladen.
@@ -367,24 +373,6 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
       * **Haftungsausschluss-Bezeichnung**: Bezeichnung des Haftungsausschlusses.
       * **Haftungsausschluss**: Text, der den Umfang der Rechte und Pflichten für die Submission PDF angibt.
       * **Text des Haftungsausschlusses**: Text des Haftungsausschlusses.
-
-      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-
-      >[!NOTE]
-      >
-      >Wenn Sie eine Vorlage für ein adaptives Formular mit einer Designer-Version vor 6.3 verwenden, müssen Sie sicherstellen, dass im Stamm-Unterformular der Vorlage für das adaptive Formular Folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
-
-      ```xml
-      <proto>
-      <font typeface="Arial"/>
-      <fill>
-      <color value="4,166,203"/>
-      </fill>
-      <edge>
-      <color value="4,166,203"/>
-      </edge>
-      </proto>
-      ```
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Branding-Änderungen zu speichern.
 
@@ -428,6 +416,11 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in DoR einbeziehen** Durch Festlegen dieser Eigenschaft werden ungebundene Felder aus dem schemabasierten adaptiven Formular in der Übermittlungs-PDF einbezogen. Diese Option ist standardmäßig aktiviert.
+
+## Häufig gestellte Fragen {#faq}
+
+**F: Änderungen werden nicht in der Übermittlungs-PDF angezeigt.**
+**A:** Öffnen Sie das Formular im Editor für adaptive Forms, nehmen Sie eine kleinere Bearbeitung vor (z. B. Anpassen einer Feldbezeichnung oder Neuanordnung eines Felds) und speichern Sie das Formular. Dadurch wird die Vorlage für die PDF-Übermittlung neu generiert, und die Änderungen werden in der nächsten generierten PDF angezeigt.
 
 ## Siehe auch {#see-also}
 

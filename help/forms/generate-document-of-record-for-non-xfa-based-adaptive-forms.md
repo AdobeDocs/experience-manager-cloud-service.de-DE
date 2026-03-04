@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie aus Formularübermittlungen für adaptive For
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '4117'
-ht-degree: 58%
+source-wordcount: '4202'
+ht-degree: 56%
 
 ---
 
@@ -136,7 +136,7 @@ Der Formularentwickler bindet adaptive Forms-Felder an die entsprechende Vorlage
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF erstellt.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit Submission PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -367,6 +367,12 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       ![Formularfeldeigenschaften](/help/forms/assets/formfieldpropertiesdor.png)
 
+      **Kennzeichnungen für das Mehrfachauswahl-Dropdown-Menü anzeigen**
+
+      <span class="preview"> Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an.
+
    3. **Eigenschaften der primären Seite**:
       * **Logo-Bild**: Sie können wahlweise das Logo-Bild aus dem adaptiven Formular verwenden, eines aus DAM auswählen oder eines von Ihrem Computer hochladen.
       * **Formulartitel**: Titel des Datensatzdokuments.
@@ -377,9 +383,10 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       ![Eigenschaften der Musterseite](/help/forms/assets/masterpagepropertiesdor.png)
 
-   >[!NOTE]
+   <!--
+   [!NOTE]
    >
-   >Wenn Sie eine Vorlage für ein adaptives Formular mit einer Designer-Version vor 6.3 verwenden, müssen Sie sicherstellen, dass im Stamm-Unterformular der Vorlage für das adaptive Formular Folgendes vorhanden ist, damit Akzentfarbe und Schriftfamilie funktionieren:
+   >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
 
    ```xml
    <proto>
@@ -391,7 +398,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```
+   ```-->
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Branding-Änderungen zu speichern.
 
@@ -524,6 +531,11 @@ Mit einer XCI-Datei können Sie verschiedene Eigenschaften eines Dokuments festl
 1. Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
 1. Geben Sie den Pfad der XCI-Datei an und klicken Sie auf **[!UICONTROL Speichern]**.
 
+
+## Häufig gestellte Fragen {#faq}
+
+**F: Änderungen werden nicht in der Übermittlungs-PDF angezeigt.**
+**A:** Öffnen Sie das Formular im Editor für adaptive Forms, nehmen Sie eine kleinere Bearbeitung vor (z. B. Anpassen einer Feldbezeichnung oder Neuanordnung eines Felds) und speichern Sie das Formular. Dadurch wird die Vorlage für die PDF-Übermittlung neu generiert, und die Änderungen werden in der nächsten generierten PDF angezeigt.
 
 ## Siehe auch {#see-also}
 
