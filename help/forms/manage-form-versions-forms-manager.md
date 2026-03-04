@@ -37,7 +37,7 @@ So erstellen Sie eine Version eines Formular-Assets:
 1. Gehen Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Wählen Sie das Formular oder Asset aus.
 1. Wählen Sie im linken Bereich die Option **[!UICONTROL Zeitleiste]**.
-1. Klicken Sie **[!UICONTROL der Zeitleistensymbolleiste]**Als Version speichern“.
+1. Klicken Sie **[!UICONTROL der Zeitleistensymbolleiste]**&#x200B;Als Version speichern“.
    ![Als Version speichern](/help/forms/assets/create-version.png)
 1. Geben Sie einen **[!UICONTROL Titel]** und einen optionalen **[!UICONTROL Kommentar]** ein, um die Änderungen zu beschreiben.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.

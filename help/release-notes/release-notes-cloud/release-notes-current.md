@@ -86,7 +86,7 @@ Siehe [Cloud Manager-Beta-Programme](/help/implementing/cloud-manager/release-no
 
 **Content Advisor für den Zugriff auf AEM Assets in Adobe Express**
 
-[Content Advisor ist jetzt in Adobe Expreß ](/help/assets/native-integration-adobe-express.md) verfügbar und führt die intelligente Asset Discovery für AEM Assets direkt in der Express-Oberfläche ein. Content Advisor bietet kontextbezogene Empfehlungen auf der Grundlage von Leinwand-Content und Kampagnenbeschreibungen, unterstützt KI-gestützte Suche, ermöglicht native Unterstützung für kanalbereite, &quot;on the fly&quot;-Ausgabedarstellungen auf Basis von Dynamic Media und bietet viele weitere Funktionen. Mit Content Advisor könnt ihr genehmigte Assets auf völlig neue Weise erkennen und verwenden. So könnt ihr Inhalte schneller finden und eure Workflows optimieren.
+[Content Advisor ist jetzt in Adobe Expreß &#x200B;](/help/assets/native-integration-adobe-express.md) verfügbar und führt die intelligente Asset Discovery für AEM Assets direkt in der Express-Oberfläche ein. Content Advisor bietet kontextbezogene Empfehlungen auf der Grundlage von Leinwand-Content und Kampagnenbeschreibungen, unterstützt KI-gestützte Suche, ermöglicht native Unterstützung für kanalbereite, &quot;on the fly&quot;-Ausgabedarstellungen auf Basis von Dynamic Media und bietet viele weitere Funktionen. Mit Content Advisor könnt ihr genehmigte Assets auf völlig neue Weise erkennen und verwenden. So könnt ihr Inhalte schneller finden und eure Workflows optimieren.
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI {#dynamic-media-openAPI-new-features}
 
@@ -96,7 +96,7 @@ Die attributbasierte Zugriffssteuerung (ABAC) ermöglicht es Admins, den Zugriff
 
 >[!NOTE]
 >
->Die attributbasierte Zugriffssteuerung (ABAC) für Dynamic Media mit OpenAPI ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>Die attributbasierte Zugriffssteuerung (ABAC) für Dynamic Media mit OpenAPI ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -109,7 +109,7 @@ Dropdownkomponenten mit Mehrfachauswahl in Adaptive Forms rendern jetzt ihre aus
 Adaptive Forms-Kernkomponenten führen WCAG 2.2-kompatibles semantisches Markup für [Kontrollkästchengruppen(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [Optionsfeldgruppen(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) und die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ein. Diese Komponenten verwenden `<fieldset>`- und `<legend>`-HTML-Elemente, um sinnvolle Beziehungen zwischen Gruppenbezeichnungen und ihren Optionen herzustellen. Dies ermöglicht eine präzise Interpretation durch Bildschirmlesehilfen und andere Hilfstechnologien.
 
 **Versionsunterstützung in Forms Manager**
-Forms Manager unterstützt jetzt [ die Versionierung für Adaptive Forms (Core Components und Foundation Components)](/help/forms/manage-form-versions-forms-manager.md), Formularfragmente, Designs, XDP-Vorlagen und binäre Assets. Erstellen Sie Versionen, zeigen Sie den vollständigen Versionsverlauf an und stellen Sie frühere Status Ihrer Formularelemente direkt in der Forms &amp; Dokumente -Konsole wieder her.
+Forms Manager unterstützt jetzt [&#x200B; die Versionierung für Adaptive Forms (Core Components und Foundation Components)](/help/forms/manage-form-versions-forms-manager.md), Formularfragmente, Designs, XDP-Vorlagen und binäre Assets. Erstellen Sie Versionen, zeigen Sie den vollständigen Versionsverlauf an und stellen Sie frühere Status Ihrer Formularelemente direkt in der Forms &amp; Dokumente -Konsole wieder her.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -203,7 +203,7 @@ Weitere Informationen zu [AEM MCP-Servern](/help/ai-in-aem/mcp-support/using-mcp
 
 Die Funktionen [Fehlerbehebung bei Pipelines](/help/ai-in-aem/agents/brand-experience/development/development.md) des Entwicklungsagenten helfen Entwicklerinnen und Entwicklern bei der effizienten Diagnose und Lösung von Problemen in AEM as a Cloud Service-Bereitstellungen. Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web Tier Config-Pipeline** als Teil eines Beta-Programms.
 
-aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 #### IDE-KI-Tools für die Entwicklung von AEM Java und Dispatcher (Beta-Programm) {#ai-dev-beta}
 
@@ -212,13 +212,13 @@ Java-Stack-Teams verwenden zunehmend KI-unterstützte Entwicklung in Tools wie C
 * Austausch von Erfahrungen aus der Praxis, um zukünftige von Adobe unterstützte KI-Funktionen zu gestalten
 * Testen Sie IDE-Tools, die von KI-Agenten verwendet werden können, um AEM-Code und Dispatcher-Konfiguration zu generieren und zu debuggen
 
-Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aemcs-java-adopter@adobe.com)aemcs-java-adopter@adobe.com.
 
 #### IDE AI-Tools für die Migration von AEM 6.5 zu AEM Cloud Service (Alpha-Programm) {#cm-ide-migration}
 
-Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
+Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Für weitere Informationen senden Sie eine E[Mail an ](mailto:aem-devagent@adobe.com)aem-devagent@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aem-devagent@adobe.com)aem-devagent@adobe.com.
 
 #### Edge-Authentifizierung für Edge Delivery Services (Beta-Programm) {#edge-authentication}
 
@@ -238,7 +238,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 

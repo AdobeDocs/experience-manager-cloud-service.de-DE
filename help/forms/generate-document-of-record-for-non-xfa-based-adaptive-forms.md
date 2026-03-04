@@ -136,7 +136,7 @@ Der Formularentwickler bindet adaptive Forms-Felder an die entsprechende Vorlage
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF erstellt.
 
-![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit Submission PDF {#key-considerations-when-working-with-document-of-record}
 
