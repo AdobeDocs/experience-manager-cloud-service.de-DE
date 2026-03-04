@@ -4,7 +4,7 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5f37aea31823e45298cf1cb57461d01b4634b5cf
+source-git-commit: 4b05f571904384521b79dbaf0fa5f4a3a75fef2b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 13%
