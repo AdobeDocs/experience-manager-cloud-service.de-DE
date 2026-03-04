@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4227a30722aadc802ebfd8dada9210d1cf5e7ae
+source-git-commit: 2c70dcda8a85bfc08ca1fd21578057894344c147
 workflow-type: tm+mt
-source-wordcount: '7028'
+source-wordcount: '7034'
 ht-degree: 95%
 
 ---
@@ -1110,6 +1110,7 @@ ht-degree: 95%
          + [Auftrag zur Inhaltsoptimierung](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
       + Governance-Agent {#governance}
          + [Überblick](/help/ai-in-aem/agents/governance/overview.md)
+         + [So importieren Sie eine Markenrichtlinie](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
       + Experience Modernization Agent {#modernization}
          + [Übersicht](/help/ai-in-aem/agents/modernization/overview.md)
          + [Erste Schritte](/help/ai-in-aem/agents/modernization/getting-started.md)
@@ -1284,7 +1285,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

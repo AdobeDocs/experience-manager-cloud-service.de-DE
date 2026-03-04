@@ -4,9 +4,9 @@ description: Erfahren Sie, wie der AEM Governance Agent die Markenintegrität un
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
+source-git-commit: 1f40d8201456f5c1a735e2d92988607c25d34a09
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ Der Governance-Agent kann Inhalte anhand von Markenrichtlinien validieren, um di
 * *Entspricht dies `https://www.website/en.html` den Richtlinien für Markenbotschaften?*
 * *Überprüfen Sie, ob `https://www.website/homepage` den Markenrichtlinien entspricht*
 * *Zeige mir meine Markenrichtlinien*
+
+Der Governance-Agent enthält auch eine KI-gestützte Funktion zum Importieren von Markenrichtlinien, die KI verwendet, um die vorhandenen Dokumente zu Markenrichtlinien von Kunden in strukturierte, durchsetzbare Richtlinienprüfungen umzuwandeln, die die Erstellung konformer Inhalte automatisch steuern, validieren und leiten. Weitere Informationen finden Sie unter [So importieren Sie eine Markenrichtlinie](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
 
 ### Berechtigung und Digital Rights Management {#permission-and-digital-rights-management}
 
