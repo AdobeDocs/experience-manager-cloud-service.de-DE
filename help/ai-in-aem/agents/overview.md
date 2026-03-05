@@ -27,11 +27,11 @@ Diese Agenten sind in Adobe Experience Manager (AEM) as a Cloud Service verfügb
 
 Sie haben drei Möglichkeiten, auf Agenten zuzugreifen.
 
-1. Möglicherweise haben Sie die Möglichkeit, über das Programm &quot;[ vor dem Kauf“, ](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) schrittweise eingeführt wird, auf AEM-Agenten zuzugreifen. Ihr CSM oder TAM kann Ihnen dabei helfen, die Verfügbarkeit für Ihr Unternehmen zu bestätigen.
+1. Möglicherweise haben Sie die Möglichkeit, über das Programm &quot;[&#x200B; vor dem Kauf“, &#x200B;](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) schrittweise eingeführt wird, auf AEM-Agenten zuzugreifen. Ihr CSM oder TAM kann Ihnen dabei helfen, die Verfügbarkeit für Ihr Unternehmen zu bestätigen.
 1. Erkunden von AEM[Agenten (durch eine Testversion)](https://www.aem.live/developer/aem-playground)
 1. Stellen Sie eine Verbindung zu Ihrem CSM oder TAM her, um den Zugriff über die Agent SKU zu besprechen, wenn dies mit Ihrer Roadmap und Ihren Bewertungsplänen übereinstimmt.
 
-Sobald neue Fähigkeiten im Rahmen der frühzeitigen Veröffentlichung verfügbar werden, werden wir zusätzliche Möglichkeiten zur Teilnahme und zum Austausch von Feedback bieten. Wir empfehlen Ihnen, sich [diese Seite) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) Updates anzusehen.
+Sobald neue Fähigkeiten im Rahmen der frühzeitigen Veröffentlichung verfügbar werden, werden wir zusätzliche Möglichkeiten zur Teilnahme und zum Austausch von Feedback bieten. Wir empfehlen Ihnen, sich [diese Seite) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) Updates anzusehen.
 
 ## Brand Experience Agent {#brand-experience-agent}
 

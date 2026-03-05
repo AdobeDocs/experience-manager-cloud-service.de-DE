@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inhaltsoptimierungs-Agent {#content-optimization-agent}
 
-Im Rahmen des Content Advisor-Agenten von [AEM transformiert ](/help/ai-in-aem/agents/content-advisor/overview.md) Inhaltsoptimierungs-Agent die Art und Weise, wie Benutzende Assets verfeinern und anpassen, indem sie Anweisungen in natürlicher Sprache anwenden, um kanalfertige Varianten zu erstellen. Unabhängig davon, ob neue Ausgabedarstellungen erstellt, visuelle Eigenschaften angepasst, Hintergründe geändert oder Assets für bestimmte digitale Kanäle vorbereitet werden, interpretiert der Agent die Benutzerabsicht und führt komplexe Bearbeitungsaufgaben automatisch aus. Es funktioniert nahtlos mit [dem Content Discovery Agent“, nimmt die gefundenen Assets ](/help/ai-in-aem/agents/content-advisor/discovery.md) und erstellt optimierte Varianten mit [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) die ohne manuellen Design-Aufwand Marken-, Kanal- und Kampagnenanforderungen erfüllen.
+Im Rahmen des Content Advisor-Agenten von [AEM transformiert &#x200B;](/help/ai-in-aem/agents/content-advisor/overview.md) Inhaltsoptimierungs-Agent die Art und Weise, wie Benutzende Assets verfeinern und anpassen, indem sie Anweisungen in natürlicher Sprache anwenden, um kanalfertige Varianten zu erstellen. Unabhängig davon, ob neue Ausgabedarstellungen erstellt, visuelle Eigenschaften angepasst, Hintergründe geändert oder Assets für bestimmte digitale Kanäle vorbereitet werden, interpretiert der Agent die Benutzerabsicht und führt komplexe Bearbeitungsaufgaben automatisch aus. Es funktioniert nahtlos mit [dem Content Discovery Agent“, nimmt die gefundenen Assets &#x200B;](/help/ai-in-aem/agents/content-advisor/discovery.md) und erstellt optimierte Varianten mit [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) die ohne manuellen Design-Aufwand Marken-, Kanal- und Kampagnenanforderungen erfüllen.
 
 Zu den wichtigsten Vorteilen des Inhaltsoptimierungsagenten gehören:
 
@@ -78,7 +78,7 @@ Sie können in AEM über den KI-Assistenten auf den Inhaltsoptimierungsagenten z
 
 ## Häufige Anwendungsfälle und Beispiel-Eingabeaufforderungen {#use-cases-prompts}
 
-Verwenden Sie den Inhaltsoptimierungs-Agenten, indem Sie über den Inhaltserkennungs-Agent nach [ richtigen Assets suchen.](/help/ai-in-aem/agents/content-advisor/discovery.md) die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Weitere Informationen finden Sie in der vollständigen Liste ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) verfügbaren Optimierungen.
+Verwenden Sie den Inhaltsoptimierungs-Agenten, indem Sie über den Inhaltserkennungs-Agent nach [&#x200B; richtigen Assets suchen.](/help/ai-in-aem/agents/content-advisor/discovery.md) die relevanten Bilder angezeigt werden, können Benutzer direkt aus den Suchergebnissen optimierte oder kanalspezifische Varianten für ein oder mehrere Assets generieren. Dieser Workflow sorgt für hochwertige Eingaben und durchgängig bessere Optimierungsergebnisse. [Weitere Informationen finden Sie in der vollständigen Liste &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) verfügbaren Optimierungen.
 
 * **Erstellung von Ausgabedarstellungen mit hoher Auflösung**
 
