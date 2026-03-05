@@ -68,7 +68,7 @@ Siehe die Dokumentation [Verwenden von MCP mit AEM as a Cloud Service](/help/ai-
 
 Siehe das Tutorial [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#).
 
-Sie interessieren sich für die Beta-Version? Senden Sie eine E-Mail an [0}GRP-AEM-CM-MCP-FEEDBACK@adobe.com&quot; mit Ihrer Adobe-OrgID und Programm-ID.](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)
+Sie interessieren sich für die Beta-Version? Senden Sie eine E-Mail an [0&rbrace;GRP-AEM-CM-MCP-FEEDBACK@adobe.com&quot; mit Ihrer Adobe-OrgID und Programm-ID.](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)
 
 
 <!--
