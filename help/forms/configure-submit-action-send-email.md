@@ -5,10 +5,10 @@ keywords: So senden Sie eine E-Mail für ein adaptives Formular, E-Mail-Übermit
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 88%
 
 ---
 
@@ -56,6 +56,11 @@ So konfigurieren Sie eine Übermittlungsaktion des Typs „E-Mail senden“ für
 1. Fügen Sie eine E-Mail-Vorlage hinzu, um die Sendeaktion „E-Mail senden“ zu konfigurieren.
    * Sie können den Pfad zur externen E-Mail-Vorlage angeben, die in Ihren AEM-Assets gespeichert ist, indem Sie die Option **[!UICONTROL Externer Vorlagenpfad]** verwenden.
    * Sie können auch eine benutzerdefinierte E-Mail-Vorlage für die Formularübermittlung im Textfeld **[!UICONTROL E-Mail-Vorlage]** hinzufügen.
+
+   >[!NOTE]
+   >
+   > Sie können auch **[!UICONTROL HTML-Vorlage verwenden]** aktivieren, um E-Mails mit einem benutzerdefinierten HTML-Layout anstelle der Standardvorlage zu senden. Wenn diese Option aktiviert ist, geben Sie die HTML-Datei im Feld **Pfad für externe Vorlage** an. Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -76,6 +81,11 @@ So konfigurieren Sie die Übermittlungsaktion „E-Mail senden“ für die Kernk
 1. Fügen Sie eine E-Mail-Vorlage hinzu, um die Sendeaktion „E-Mail senden“ zu konfigurieren.
    * Sie können den Pfad zur externen E-Mail-Vorlage angeben, die in Ihren AEM-Assets gespeichert ist, indem Sie die Option **[!UICONTROL Externer Vorlagenpfad]** verwenden.
    * Sie können auch eine benutzerdefinierte E-Mail-Vorlage für die Formularübermittlung im Textfeld **[!UICONTROL E-Mail-Vorlage]** hinzufügen.
+
+   >[!NOTE]
+   >
+   > Sie können auch **[!UICONTROL HTML-Vorlage verwenden]** aktivieren, um E-Mails mit einem benutzerdefinierten HTML-Layout anstelle der Standardvorlage zu senden. Wenn diese Option aktiviert ist, geben Sie die HTML-Datei im Feld **Pfad für externe Vorlage** an. Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -104,6 +114,7 @@ Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 1. Fügen Sie eine E-Mail-Vorlage hinzu, um die Sendeaktion „E-Mail senden“ zu konfigurieren.
    * Sie können den Pfad zur externen E-Mail-Vorlage angeben, die in Ihren AEM-Assets gespeichert ist, indem Sie die Option **[!UICONTROL Externer Vorlagenpfad]** verwenden.
    * Sie können auch eine benutzerdefinierte E-Mail-Vorlage für die Formularübermittlung im Textfeld **[!UICONTROL E-Mail-Vorlage]** hinzufügen.
+
 1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 

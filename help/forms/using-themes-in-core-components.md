@@ -5,10 +5,10 @@ keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, For
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 38ccd7f624867cef324c7934647e147532271c0d
+source-git-commit: 105f68be315e527c513c923e23d8415a49fe8e88
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 95%
+source-wordcount: '3011'
+ht-degree: 91%
 
 ---
 
@@ -54,6 +54,10 @@ Forms as a Cloud Service bietet die folgenden Designs zum Formatieren adaptiver 
 * [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
 
 Sie können [jedes dieser Designs anpassen, um ein neues Design zu erstellen](#customize-a-theme-core-components).
+
+>[!NOTE]
+>
+>Wenn Ihre adaptive Forms in AEM Sites-Seiten eingebettet sind, können Sie ein einziges Design für die Site und die Formulare verwenden, indem Sie ein adaptives Forms-Design in Ihr Site-Design einbetten. Siehe [Einbetten eines adaptiven Forms-Designs in ein AEM Sites-Design](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
 
 ![Workflow für die Design-Anpassung](/help/forms/assets/workflow-of-customization-of-theme.png)
 
@@ -125,6 +129,10 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
 
 
 #### &#x200B;2. Festlegen des Namens eines Designs {#set-name-of-theme}
+
+>[!NOTE]
+>
+>Dieser Schritt gilt, wenn Sie das Design als **eigenständiges**-Paket über die Frontend-Pipeline bereitstellen (z. B. ein dediziertes Forms-Design-Repository). Wenn Sie **Forms** Design stattdessen in Ihr AEM Sites-Design einbetten, müssen Sie keinen separaten Design-Namen oder keine separate Version für das Formular-Design festlegen. Der Site-Design-Name wird verwendet. Siehe [Einbetten eines adaptiven Forms-Designs in ein AEM Sites-Design](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
 
 1. Öffnen Sie das Design-Projekt in Ihrer IDE. Um beispielsweise den Ordner `aem-forms-theme-canvas` im Visual Studio Code-Editor zu öffnen.
 
@@ -405,7 +413,7 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    >[!NOTE]
    >
-   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [&#x200B; die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
 
 1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .
@@ -458,6 +466,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 
 {{see-also}}
 
+* [Einbetten eines adaptiven Forms-Designs in ein AEM Sites-Design](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
 * [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generieren eines Datensatzdokuments für adaptive Formulare (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Erstellen eines adaptiven Formulars mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
