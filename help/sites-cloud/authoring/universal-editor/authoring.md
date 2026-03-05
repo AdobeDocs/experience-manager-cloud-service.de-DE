@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 76%
+source-wordcount: '2990'
+ht-degree: 73%
 
 ---
 
@@ -100,14 +100,17 @@ Tippen oder klicken Sie auf **Abbrechen** oder **Fertig**, um die Änderungen zu
 
 #### Rich-Text-Formatierungsoptionen {#formatting-options}
 
-Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, standardmäßige Textformatierungen anzuwenden. Standardmäßig sind die folgenden Optionen verfügbar.
+Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, standardmäßige Textformatierungen anzuwenden. Die folgenden Optionen sind verfügbar.
 
 * **Absatzstil**
-   * Absätze, h1-h6, Code
+   * Absatz, h1-h6, Code
 * **Fett**
 * **Kursiv**
 * **Unterstreichen**
 * **Durchgestrichen**
+* **Textfarbe**
+   * Öffnet eine Farbpalette, in der Sie eine Farbe auswählen oder einen Hexadezimalwert angeben können
+   * Nur im modalen Editor verfügbar, nicht im Kontext
 * **Hochgestellt**
 * **Tiefgestellt**
 * **Aufzählungsliste**
@@ -122,12 +125,21 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
    * Geben Sie eine URL an oder verwenden Sie den [Asset-Selektor](/help/assets/overview-asset-selector.md#using-asset-selector) um ein Asset aus AEM auszuwählen.
 * **Tabelle**
    * Verwenden Sie die Dropdown-Liste, um eine neue Tabelle mit der ausgewählten Anzahl von Spalten und Zeilen einzufügen oder neue Spalten/Zeilen einzufügen und zu entfernen.
+* **Ausrichtung**
+   * **Linksbündig ausrichten**
+   * **Zentriert ausrichten**
+   * **Rechts ausrichten**
+   * **Ausrichtung Blocksatz**
+* **Von rechts nach links**
+* **Von links nach rechts**
+* **Einzug**
+* **Ausrücken**
 * **Als Text einfügen**
    * Formatierung aus dem Text in der Zwischenablage entfernen, bevor er in den universellen Editor eingefügt wird.
 * **Alle Formatierungen entfernen**
    * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -144,7 +156,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -178,7 +190,13 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 
    ![Auswählen des Symbols „Hinzufügen“](assets/add-icon.png)
 
-1. Wenn mehr als eine Komponente für den Container zulässig ist, wählen Sie aus der Dropdown-Liste die Komponente aus, die Sie einfügen möchten. Wenn nur eine Komponente zulässig ist, wird sie automatisch eingefügt.
+1. Das Dialogfeld für die Komponentenauswahl wird geöffnet.
+   * Verwenden Sie die linke Spalte, um Komponenten nach Kategorie zu filtern, oder verwenden Sie die Suche, um nach Name zu filtern.
+   * Klicken Sie auf den Komponentennamen in der rechten Spalte, um ihn in den Container einzufügen.
+   * Wenn nur eine Komponente im Container zulässig ist, wird sie automatisch eingefügt.
+   * Klicken Sie außerhalb der Auswahl, um das Einfügen der Komponente abzubrechen.
+
+   ![Komponentenauswahl](assets/component-picker.png)
 
 Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet werden.
 
@@ -234,7 +252,7 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
 #### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 

@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 6b4c4b92bb726da2f7222dfa0e223aa3d0309c8f
+source-git-commit: fc73e3dd01d22ece3c2e2c55a5f62d04ee8564a9
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 26. Februar 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 12. März 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,9 +28,4 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige Funktionen {#upcoming-features}
 
-* Die Komponentenauswahl weist ein neues Design auf.
-* Es ist jetzt eine Farbauswahl für den RTE verfügbar.
-
-## Anstehende Verbesserungen {#upcoming-improvements}
-
-* Die Optionen für Ausrichtung, Textrichtung und Einzug sind jetzt [standardmäßig im RTE aktiviert](/help/implementing/universal-editor/configure-rte.md) vorausgesetzt, dass Ihr Backend sie unterstützt.
+* Eine Option zum Hinzufügen von Komponenten wurde im Kontextmenü hinzugefügt.

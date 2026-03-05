@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.02.26
-description: Dies sind die Versionshinweise für die Version 2026.02.26 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.03.05
+description: Dies sind die Versionshinweise für die Version 2026.03.05 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 32%
+source-wordcount: '178'
+ht-degree: 39%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.02.26 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.03.05 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 26. Februar 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 5. März 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ Dies sind die Versionshinweise für die Version vom 26. Februar 2026 des univers
 
 ## Neue Funktionen {#what-is-new}
 
-* Allen Schemafeldern wurden Beschreibungen hinzugefügt, um Entwicklerinnen und Entwicklern beim Generieren von Modell-/Filter-/Komponentendefinitionsdateien zu helfen.
-* Aktualisierungen an Inhaltsfragmenten mit mehreren Feldern werden jetzt für kontextbezogene Bearbeitungen unterstützt.
-
+* [Die Komponentenauswahl](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) weist ein neues Design auf.
+* [Eine Farbauswahl](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) für den RTE ist jetzt verfügbar.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -38,7 +37,5 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Der Editor setzt den Inhalt nicht mehr standardmäßig auf `{}`, bevor der Inhalt eintrifft, wodurch in bestimmten Situationen ein Datenverlust verhindert wird.
-* Die Persistenz von Daten, wenn das Feld im Fokus ist, wurde robuster gemacht.
-* Änderungen gehen in bestimmten Situationen nicht mehr verloren, wenn Sie im linken Bereich bearbeiten und dann im Editor-Fenster ein anderes Element auswählen.
-* Ein Persistenzproblem mit RTE-Feldern für Inhaltsfragmente bei der Verwendung der OpenAPI-Endpunkte wurde behoben.
+* Die Optionen für Ausrichtung, Textrichtung und Einzug sind jetzt [standardmäßig im RTE aktiviert](/help/implementing/universal-editor/configure-rte.md) vorausgesetzt, dass Ihr Backend sie unterstützt.
+* Registerkarten werden jetzt gerendert, wenn ein Inhaltsfragment mit offener API und einem Benutzeroberflächenschema verwendet wird.
