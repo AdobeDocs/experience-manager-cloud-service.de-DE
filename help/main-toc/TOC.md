@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c9c157aad774212405e1bf54f6ff5404fca3e6bb
+source-git-commit: 8f0aa7c04b4ff6d584abec1b2440e1773ad3cb18
 workflow-type: tm+mt
 source-wordcount: '7058'
 ht-degree: 95%
@@ -133,7 +133,7 @@ ht-degree: 95%
       + 2023 {#2023}
          + [Wartungsversionshinweise für 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
          + [Wartungversionshinweise für 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
-         + [Wartungversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [Neueste Wartungversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
          + [Wartungversionshinweise für 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
          + [Wartungversionshinweise für 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md)
          + [Wartungversionshinweise für 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md)
@@ -1292,7 +1292,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
