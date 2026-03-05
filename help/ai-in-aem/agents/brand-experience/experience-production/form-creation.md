@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über den Auftrag zum Erstellen von Formularen du
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Formularerstellungsauftrag {#form-creation-job}
 
-Der Vorgang der Formularerstellung ist eine Funktion des [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) die entwickelt wurde, um Formulare mithilfe von Eingabeaufforderungen in natürlicher Sprache zu entwickeln. Dieser Auftrag generiert automatisch die entsprechende Formularstruktur und die entsprechenden Feldtypen. Der Auftrag wird über den KI-Assistenten angezeigt.
+Der Formularerstellungsauftrag ist Teil des [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) der für die Entwicklung von Formularen mithilfe von Eingabeaufforderungen in natürlicher Sprache konzipiert wurde. Dieser Auftrag generiert automatisch die entsprechende Formularstruktur und die entsprechenden Feldtypen. Der Auftrag wird über den KI-Assistenten angezeigt.
 
 Zu den wichtigsten Vorteilen der Formularerstellung gehören:
 

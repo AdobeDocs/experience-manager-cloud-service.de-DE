@@ -4,7 +4,7 @@ description: Erfahren Sie, was der Inhaltsaktualisierungsauftrag des Brand Exper
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: a3b00916c0d949fe9fac50bc0c3056b0a1b05358
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 # Auftrag zur Inhaltsaktualisierung {#content-update}
 
-Der Auftrag zum Aktualisieren von Inhalten des [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatisiert die Inhaltserstellung, um alltägliche Aufgaben für Adobe Experience Manager (AEM) as a Cloud Service und Edge Delivery Services zu beschleunigen.
+Der Auftrag zum Aktualisieren von Inhalten des [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatisiert die Inhaltserstellung, um alltägliche Aufgaben für Adobe Experience Manager (AEM) as a Cloud Service und Edge Delivery Services zu beschleunigen.
 
 ## Überblick {#overview}
 
 Der Auftrag zur Inhaltsaktualisierung aktualisiert vorhandene Inhalte, einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets. Der Auftrag kann Aktionen durchführen, wie z. B. Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
 
-Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und die Agentenkompetenz erledigt Ihre Aufgabe. Bei Verwendung mit Adobe Experience Manager (AEM) as a Cloud Service erstellt der Auftrag einen neuen [Launch](/help/sites-cloud/authoring/launches/overview.md), damit Sie die Aktualisierungen vor der Anwendung überprüfen können. Bei Verwendung mit der Dokumenterstellung erstellt der Auftrag eine neue [Version](https://experienceleague.adobe.com/de/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und die Agentenkompetenz erledigt Ihre Aufgabe. Bei Verwendung mit Adobe Experience Manager (AEM) as a Cloud Service erstellt der Auftrag einen neuen [Launch](/help/sites-cloud/authoring/launches/overview.md), damit Sie die Aktualisierungen vor der Anwendung überprüfen können. Bei Verwendung mit der Dokumenterstellung erstellt der Auftrag eine neue [Version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Funktionen {#capabilities}
 
@@ -33,7 +33,7 @@ Sie können auf die Fähigkeit zur Inhaltsaktualisierung zugreifen unter:
 
 Sie können über den KI-Assistenten auf den Auftrag in AEM zugreifen.
 
-Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus &#x200B;](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
+Öffnen Sie den KI-Assistenten von [`experience.adobe.com` aus ](https://experience.adobe.com) beginnen Sie dann mit der Interaktion, indem Sie Ihre Eingabeaufforderung in natürlicher Sprache mithilfe des Felds `Ask AI Assistant anything` angeben:
 
 ![Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 

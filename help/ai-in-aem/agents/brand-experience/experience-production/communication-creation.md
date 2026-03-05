@@ -1,18 +1,18 @@
 ---
 title: Kommunikationserstellungsauftrag
-description: Erfahren Sie mehr über den Kommunikationserstellungsauftrag von Brand Experience Agents und darüber, wie Sie mit natürlicher Sprache interaktive Kommunikation erstellen können.
+description: Erfahren Sie mehr über den Kommunikationserstellungsauftrag von Experience Production Agents und wie Sie mit natürlicher Sprache interaktive Kommunikation erstellen können.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Kommunikations-Erstellungskompetenz {#ic-creation-skill}
+# Kommunikationserstellungsauftrag {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [Interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md) sind personalisierte, datengesteuerte Dokumente, die für die Geschäftskorrespondenz entwickelt wurden, z. B. Kontoauszüge, Richtliniendokumente, Rechnungen, Begrüßungs-Kits und Mitteilungen über finanzielle Leistungen. Im Gegensatz zu Formularen, die Eingaben von Benutzern erfassen, generieren interaktive Kommunikationen Ausgabedokumente mit dynamischen, empfängerspezifischen Inhalten.
 
-Der Kommunikationserstellungsauftrag ist eine Funktion des [Markenerlebnisagenten](/help/ai-in-aem/agents/brand-experience/overview.md) die zur Entwicklung interaktiver Kommunikationen mithilfe natürlicher Sprachaufforderungen entwickelt wurde. Dieser Auftrag generiert automatisch personalisierte, datengesteuerte Korrespondenz für den Druck (im PDF-Format). Der Auftrag wird über den KI-Assistenten angezeigt.
+Der Kommunikationserstellungsauftrag ist Teil des [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) der für die Entwicklung interaktiver Kommunikationen mithilfe natürlicher Sprachaufforderungen entwickelt wurde. Dieser Auftrag generiert automatisch personalisierte, datengesteuerte Korrespondenz für den Druck (im PDF-Format). Der Auftrag wird über den KI-Assistenten angezeigt.
 
 Zu den wichtigsten Vorteilen der Schaffung von Kommunikationsjobs gehören:
 
