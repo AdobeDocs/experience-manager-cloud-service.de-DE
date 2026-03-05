@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: efeff3f2f26da28027cc3f79a0cab5ba8a8ba957
+source-git-commit: c9c157aad774212405e1bf54f6ff5404fca3e6bb
 workflow-type: tm+mt
-source-wordcount: '7053'
-ht-degree: 94%
+source-wordcount: '7058'
+ht-degree: 95%
 
 ---
 
@@ -143,10 +143,13 @@ ht-degree: 94%
          + [Neueste Wartungversionshinweise für 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Versionshinweise für Cloud Manager {#cloud-manager}
       + [Aktuell](/help/implementing/cloud-manager/release-notes/current.md)
+      + 2026 {#2026}
+         + [2026.2.0](/help/implementing/cloud-manager/release-notes/2026/2026-2-0.md)
+         + [2026.1.0](/help/implementing/cloud-manager/release-notes/2026/2026-1-0.md)
       + 2025 {#2025}
-         + [2 025,12,0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
-         + [2 025,11,0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
-         + [2 025,10,0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
+         + [2025.12.0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
+         + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
+         + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
          + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
          + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
@@ -1289,7 +1292,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

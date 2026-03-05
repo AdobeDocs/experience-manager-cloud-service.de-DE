@@ -1,19 +1,19 @@
 ---
 title: Das Inhaltskopie-Tool
-description: Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen auf AEM as a Cloud Service in niedrigere Umgebungen zu Testzwecken kopieren.
+description: Mit dem Inhaltskopie-Werkzeug können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu Testzwecken in niedrigere Umgebungen kopieren.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 100%
+source-wordcount: '1502'
+ht-degree: 75%
 
 ---
 
 # Das Inhaltskopie-Tool {#content-copy}
 
-Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen auf AEM as a Cloud Service in niedrigere Umgebungen zu Testzwecken kopieren.
+Mit dem Inhaltskopie-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu Testzwecken in niedrigere Umgebungen kopieren.
 
 >[!NOTE]
 >Während der Kopierfluss für primären Inhalt von höheren Umgebungen in niedrigere Umgebungen erfolgt, ermöglicht die zusätzliche Funktion **Vorwärtsfluss** das Kopieren aus niedrigeren produktionsfremden Umgebungen in höhere produktionsfremde Umgebungen (z. B. Entwicklung → Staging, RDE → Staging). Siehe [Einschränkungen](#limitations) für Details, einschließlich Verfügbarkeitsanforderungen.
@@ -22,7 +22,7 @@ Mit dem Inhaltskopier-Tool können Benutzende veränderbare Inhalte bei Bedarf a
 
 Aktuelle, echte Daten sind für Tests, Validierung und Benutzerakzeptanz nützlich. Mit dem Inhaltskopie-Tool können Sie Inhalte aus einer AEM as a Cloud Service-Produktionsumgebung in eine Staging-, Entwicklungs- oder [schnelle Entwicklungsumgebung (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) für solche Tests kopieren.
 
-Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Content-Set besteht aus einer Liste von JCR-Pfaden, die den veränderlichen Inhalt enthalten, der aus einer Quell-Authoring-Service-Umgebung in eine Ziel-Authoring-Service-Umgebung innerhalb desselben Cloud Manager-Programms kopiert werden soll. Die folgenden Pfade sind in einem Content-Set zulässig.
+Ein Content-Set definiert die zu kopierenden Inhalte. Ein Content-Set besteht aus einer Liste von JCR-Pfaden. Diese Pfade enthalten den veränderlichen Inhalt, der aus einer Quell-Authoring-Service-Umgebung in eine Ziel-Authoring-Service-Umgebung innerhalb desselben Cloud Manager-Programms kopiert werden soll. Die folgenden Pfade sind in einem Content-Set zulässig:
 
 ```text
 /content
@@ -34,7 +34,7 @@ Der zu kopierende Inhalt wird durch ein Content-Set definiert. Ein Content-Set b
 
 Beim Kopieren von Inhalten ist die Quellumgebung die Datenquelle.
 
-* Wenn der Inhalt in der Zielumgebung geändert wurde, wird er durch den Inhalt in der Quelle überschrieben, wenn die Pfade übereinstimmen.
+* Wenn die Quell- und Zielpfade übereinstimmen, überschreibt der Inhalt aus der Quelle den geänderten Inhalt in der Zielumgebung.
 * Wenn die Pfade unterschiedlich sind, wird der Inhalt der Quelle mit dem Inhalt des Ziels zusammengeführt.
 
 ## Berechtigungen {#permissions}
@@ -75,8 +75,8 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
 1. Wenn Sie Ihre Content-Sets verfeinern oder einschränken möchten, können Sie Unterpfade ausschließen.
 
-   1. Tippen oder klicken Sie in der Liste der enthaltenen Pfade auf das Symbol **Ausschluss-Unterpfade hinzufügen** neben dem Pfad, den Sie einschränken möchten.
-   1. Geben Sie den Unterpfad ein, der unterhalb des ausgewählten Pfads ausgeschlossen werden soll.
+   1. Klicken Sie in der Liste der enthaltenen Pfade auf die Option **Ausschluss-Unterpfade hinzufügen** neben dem Pfad, den Sie einschränken möchten.
+   1. Geben Sie den Unterpfad ein, der aus dem ausgewählten Pfad ausgeschlossen werden soll.
    1. Wählen Sie den **Auschlusspfad** aus.
    1. Wählen Sie erneut **Ausschluss-Unterpfade hinzufügen** aus, um bei Bedarf weitere Pfade zum Ausschluss hinzuzufügen.
       * Ausgeschlossene Pfade müssen relativ zum eingeschlossenen Pfad sein.
@@ -97,38 +97,40 @@ Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwend
 
 ## Bearbeiten eines Content-Sets {#edit-content-set}
 
-Hierbei führen Sie ähnliche Schritte wie beim Erstellen eines Content-Sets aus. Anstatt auf **Content-Set hinzufügen** zu klicken, wählen Sie einen vorhandenen Satz in der Konsole aus und wählen Sie **Bearbeiten** aus dem Ellipsenmenü.
+1. Hierbei führen Sie ähnliche Schritte wie beim Erstellen eines Content-Sets aus. Anstatt auf **Content-Set hinzufügen** zu klicken, wählen Sie einen vorhandenen Satz in der Konsole aus und wählen Sie **Bearbeiten** aus dem Ellipsenmenü.
 
 ![Bearbeiten des Content-Sets](assets/edit-content-set.png)
 
-Bei der Bearbeitung Ihres Content-Sets können Sie die konfigurierten Pfade erweitern, um die ausgeschlossenen Unterpfade anzuzeigen.
+1. Bei der Bearbeitung Ihres Content-Sets können Sie die konfigurierten Pfade erweitern, um die ausgeschlossenen Unterpfade anzuzeigen.
 
 ## Kopieren von Inhalten {#copy-content}
 
-Nachdem ein Content-Set erstellt wurde, können Sie ihn zum Kopieren von Inhalten verwenden. Führen Sie die folgenden Schritte aus, damit Sie Inhalte kopieren können.
+Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten verwenden.
 
 >[!NOTE]
-> Verwenden Sie keine Inhaltskopie in einer Umgebung, in der gerade eine [Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) ausgeführt wird.
+> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [ Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
+
+**So kopieren Sie Inhalte:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Navigieren Sie auf **Seite**&#x200B;Überblick“ zu **Umgebungen** > **Content-Sets**.
 
-1. Navigieren Sie vom Bildschirm **Umgebungen** zur Seite **Content-Sets**.
+1. Wählen Sie in der Konsole ein Content-Set aus.
 
-1. Wählen Sie ein Content-Set aus der Konsole aus, und wählen Sie im Menü mit den Auslassungspunkten **Inhalt kopieren**.
+1. Klicken Sie im Menü mit den Auslassungspunkten auf **Inhalt kopieren**.
 
    ![Inhaltskopie](assets/copy-content.png)
 
    >[!NOTE]
    >
-   >Eine Umgebung ist unter Umständen nicht auswählbar, wenn:
+   >Eine Umgebung kann möglicherweise nicht ausgewählt werden, wenn einer der folgenden Punkte zutrifft:
    >
    >* die Benutzenden nicht über die entsprechenden Berechtigungen verfügen.
    >* in der Umgebung eine laufende Pipeline oder ein Vorgang zum Kopieren von Inhalten in Bearbeitung ist.
    >* Die Umgebung befindet sich im Ruhezustand oder fährt hoch.
 
-1. Geben Se im Dialog **Inhalt kopieren** die Quelle und das Ziel für die Inhaltskopie-Aktion an.
+1. Geben Sie im Dialogfeld **Inhalt kopieren** die Quelle und das Ziel für die Inhaltskopie-Aktion an.
 
    ![Kopieren von Inhalten](assets/copying-content.png)
 
@@ -138,13 +140,16 @@ Nachdem ein Content-Set erstellt wurde, können Sie ihn zum Kopieren von Inhalte
       * Entwicklung/RDE
    * Standardmäßig ist die programmübergreifende Inhaltskopie deaktiviert. Auf Kundenanfrage kann sie jedoch aktiviert werden, wodurch ein zusätzliches Eingabefeld **Zielprogramm** verfügbar wird.
 
-1. Falls erforderlich, können Sie auch **Zugriffskontrolllisten** in Ihren Kopiervorgang einbeziehen.
+1. (Optional) Legen Sie bei Bedarf Folgendes fest:
 
-1. Wählen Sie **Kopieren**.
+   * **Zugriffssteuerungslisten einschließen** - Wählen Sie diese Option aus, wenn Sie die Zugriffssteuerungsberechtigungen des Inhalts zusammen mit dem Inhalt kopieren möchten.
+   * **Löschen** - Wählen Sie diese Option aus, um den vorhandenen Inhalt am Ziel zu löschen, bevor Sie mit dem Import beginnen, sodass Sie von vorne anfangen und Konflikte mit bereits vorhandenen Inhalten vermeiden können. Wenn Sie die Option **Löschen** deaktiviert lassen, importiert Cloud Manager den neuen Inhalt zusätzlich zum vorhandenen Zielinhalt. Bevor das Löschen beginnt, wird eine Bestätigungsaufforderung angezeigt, und Cloud Manager protokolliert die Löschaktion und Importdetails, um die Rückverfolgbarkeit zu gewährleisten.
+
+1. Klicken Sie auf **Kopieren**.
 
 Der Kopiervorgang wird gestartet. Der Status des Kopiervorgangs wird für das ausgewählte Content-Set in der Konsole angezeigt.
 
-## Aktivität „Inhalt kopieren“ {#copy-activity}
+## Inhaltskopie-Aktivität {#copy-activity}
 
 Sie können den Status der Kopierprozesse auf der Seite **Aktivität zum Kopieren von Inhalten** überwachen.
 
@@ -161,11 +166,11 @@ Sie können den Status der Kopierprozesse auf der Seite **Aktivität zum Kopiere
 Sobald das Kopieren von Inhalten beginnt, kann der Prozess einen der folgenden Status haben.
 
 | Status | Beschreibung |
-|---|---|
-| In Bearbeitung | Die Inhaltskopie wird gerade durchgeführt |
-| Fehlgeschlagen | Die Inhaltskopie ist fehlgeschlagen |
-| Abgeschlossen | Die Inhaltskopie wurde erfolgreich abgeschlossen |
-| Abgebrochen | Benutzende, die einen Vorgang zum Kopieren von Inhalten abbrechen, nachdem sie ihn gestartet haben |
+| --- | --- |
+| In Bearbeitung | Die Inhaltskopie wird gerade durchgeführt. |
+| Fehlgeschlagen | Der Vorgang der Inhaltskopie ist fehlgeschlagen. |
+| Abgeschlossen | Die Inhaltskopie wurde erfolgreich abgeschlossen. |
+| Abgebrochen | Ein Benutzer bricht einen Vorgang zum Kopieren von Inhalten ab, nachdem er ihn gestartet hat. |
 
 ### Abbrechen eines Kopiervorgangs {#canceling}
 
@@ -181,15 +186,19 @@ Wählen Sie dazu auf der Seite **Aktivität zum Kopieren von Inhalten** die Akti
 >
 >Wenn sich Ihre Umgebung aufgrund einer Stornierung in einem solchen Zustand befindet, wenden Sie sich bitte an die Adobe-Kundenunterstützung, um Unterstützung zu erhalten.
 
-### Abrufen von Protokollen {#accessing-logs}
+### Zugriffsprotokolle {#accessing-logs}
 
 Sie können die Protokolle sowohl auf die Quell- als auch auf die Zielumgebung für jeden abgeschlossenen Inhaltskopierprozess überprüfen.
 
-Wählen Sie dazu auf der Seite **Aktivität zum Kopieren von Inhalten** die Aktion **Protokolle** aus dem Menü mit den Auslassungspunkten des Kopierprozesses aus, für den Sie die Protokolle überprüfen möchten, und wählen Sie dann aus, für welche Umgebung.
+**Zugreifen auf Protokolle:**
+
+1. Klicken Sie auf der **Aktivität „Inhalt kopieren** im Menü mit den Auslassungspunkten auf **Protokolle** für den Kopiervorgang, den Sie überprüfen möchten. Wählen Sie dann die Umgebung aus.
 
 ![Zugreifen auf Protokolle zum Kopieren von Inhalten](assets/copy-content-logs.png)
 
-Die Protokolle werden auf Ihren lokalen Computer heruntergeladen. Wenn der Download nicht gestartet wird, überprüfen Sie Ihre Popup-Blocker-Einstellungen.
+Die Protokolle werden auf Ihren lokalen Computer heruntergeladen.
+
+1. Wenn der Download nicht gestartet wird, überprüfen Sie Ihre Popup-Blocker-Einstellungen.
 
 ## Einschränkungen {#limitations}
 
