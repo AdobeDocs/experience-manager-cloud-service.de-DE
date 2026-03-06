@@ -3,10 +3,10 @@ title: Herunterladen von Assets aus Content Hub
 description: Erfahren Sie, wie Sie ein oder mehrere Assets und deren Ausgabedarstellungen vom Content Hub-Portal herunterladen.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 66%
+source-wordcount: '1367'
+ht-degree: 46%
 
 ---
 
@@ -31,7 +31,7 @@ Um ein oder mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führe
 Klicken Sie alternativ auf die Asset-Miniaturansicht und dann auf ![Herunterladen](/help/assets/assets/download-icon.svg), um die verfügbaren Ausgabedarstellungen auszuwählen und im Dialogfeld anzuzeigen, bevor Sie sie herunterladen.
 
 * So laden Sie mehrere Assets und ihre Ausgabedarstellungen herunter:
-   1. Wählen Sie die Assets aus![&#x200B; klicken Sie auf &#x200B;](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
+   1. Wählen Sie die Assets aus![ klicken Sie auf ](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
    1. Wählen Sie eine oder mehrere Ausgabedarstellungen aus, um sie als ZIP-Datei herunterzuladen. Wenn Sie **[!UICONTROL Intelligenter Zuschnitt]** und **[!UICONTROL Statische Ausgabedarstellungen]** auswählen, werden für jedes der ausgewählten Assets alle verfügbaren Ausgabedarstellungen heruntergeladen, sowohl die statischen als auch die mit intelligentem Zuschnitt.
    1. Optional: Deaktivieren Sie **[!UICONTROL Für jedes Asset einen separaten Ordner erstellen]**, um die ausgewählten Assets und ihre Ausgabedarstellungen als flache Hierarchie in einem Ordner in der ZIP-Datei herunterzuladen. Standardmäßig lädt [!DNL Content Hub] die ausgewählten Assets und ihre Ausgabedarstellungen in separaten Ordnern in einer ZIP-Datei herunter.
 
@@ -178,6 +178,43 @@ So aktivieren Sie dynamische Ausgabedarstellungen:
    >[!NOTE]
    > 
    > Dynamische Ausgabedarstellungen sind nur für Bild-Assets verfügbar.
+
+## Häufig gestellte Fragen {#faqs-download-assets-content-hub}
+
+### Wie lade ich ein einzelnes Asset oder mehrere Assets aus AEM Assets Content Hub herunter?
+
+Um ein einzelnes Asset herunterzuladen, klicken Sie auf der Asset-Karte auf das Symbol Herunterladen . Wählen Sie mehrere Assets aus und klicken Sie in der Aktionsleiste auf Herunterladen . Content Hub beginnt mit dem Herunterladen der Assets in ihrer ursprünglichen Ausgabedarstellung, wenn Downloads von Ihrem Administrator aktiviert wurden. Wenn Asset-Ausgabedarstellungen verfügbar sind, können Sie bestimmte Ausgabedarstellungen vor dem Herunterladen auswählen.
+
+### Gibt es eine vom Administrator verwaltete Konfiguration in AEM Assets Content Hub, die es Benutzenden ermöglicht, Original-Assets herunterzuladen oder die Verfügbarkeit von Ausgabedarstellungen zu aktivieren?
+
+Ja, Administratoren können die Optionen **Verfügbarkeit von Ausgabedarstellungen aktivieren** und **Download von Original-Assets zulassen** auf der Registerkarte **Ausgabedarstellungen** der Konfigurations-Benutzeroberfläche aktivieren, um den Download von Original-Assets zu verwalten oder die Verfügbarkeit von Ausgabedarstellungen in AEM Assets Content Hub zu aktivieren.
+
+### Was sind Asset-Ausgabedarstellungen und welche Typen sind in AEM Assets Content Hub verfügbar?
+
+Asset-Ausgabedarstellungen sind verschiedene Darstellungen der ursprünglichen Asset-Datei, die für verschiedene Anwendungsfälle zugeschnitten sind. Zu den Typen gehören statische Ausgabedarstellungen (z. B. Miniaturansichten, Web- oder Mobile-optimierte Versionen oder hochauflösende Dateien für den Druck), benutzerdefinierte statische Ausgabedarstellungen und dynamische Ausgabedarstellungen (einschließlich Versionen für smartes Zuschneiden). Statische Ausgabedarstellungen werden vorab generiert, während dynamische Ausgabedarstellungen in Echtzeit auf Anfrage erstellt werden.
+
+### Wie funktioniert smartes Zuschneiden mit Assets in AEM Assets Content Hub?
+
+Smartes Zuschneiden ist eine KI-gestützte Funktion, die den wichtigsten Teil eines Bildes identifiziert und es intelligent zuschneidet. Dadurch wird sichergestellt, dass die Grafiken auf verschiedenen Bildschirmen und Formaten gut dargestellt werden. Ausgabedarstellungen für smartes Zuschneiden sind für Bild-Assets verfügbar, wenn Ihr Unternehmen Dynamic Media-Funktionen unterstützt.
+
+### Wie aktiviere ich dynamische Ausgabedarstellungen in AEM Assets Content Hub?
+
+So aktivieren Sie dynamische Ausgabedarstellungen:
+
+* Stellen Sie sicher, dass Dynamic Media mit OpenAPI-Funktionen aktiviert ist. Genehmigte Assets sind dann für die öffentliche Bereitstellung verfügbar.
+
+* Legen Sie die Zielgruppe für die Asset-Genehmigung auf Content Hub fest.
+
+* Wechseln Sie in der Konfigurations-UI zur Registerkarte Ausgabedarstellungen und aktivieren Sie die Verfügbarkeit von Ausgabedarstellungen.
+
+* Wenn Sie mit OpenAPI neu in Dynamic Media integriert haben, speichern Sie bestehende Bildvorgaben über Admin View > Tools > Assets > Bildvorgaben (Bearbeiten > Speichern) erneut.
+
+Dynamische Ausgabedarstellungen werden nur für Bild-Assets unterstützt.
+
+### Wie kann ich Asset-Ausgabedarstellungen in Content Hub herunterladen?
+
+Um Ausgabedarstellungen herunterzuladen, wählen Sie das Asset aus und klicken Sie auf die Aktion Herunterladen . Wenn Ausgabedarstellungen vom Administrator aktiviert wurden, wird ein Dialogfeld angezeigt, in dem Sie auswählen können, welche Ausgabedarstellungen heruntergeladen werden sollen. Akzeptieren Sie die Lizenzbedingungen für lizenzierte Assets, bevor Sie sie herunterladen. Wählen Sie für mehrere Assets die Assets aus, wählen Sie Ausgabedarstellungen aus und laden Sie sie als ZIP-Datei herunter. Sie können alle verfügbaren Ausgabedarstellungen oder bestimmte Ausgabedarstellungen wie statische oder dynamische Ausgabedarstellungen auswählen.
+
 
 
 

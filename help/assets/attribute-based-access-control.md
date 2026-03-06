@@ -3,10 +3,10 @@ title: Attributbasierte Zugriffssteuerung
 description: Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung aktivieren, um metadatenbasierte Regeln und die Zugriffsebene für in Content Hub verfügbare Assets zu definieren
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 99%
+source-wordcount: '1391'
+ht-degree: 68%
 
 ---
 
@@ -28,7 +28,7 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 
 * Reduziert die Anzahl der Duplikate – verbessert die Integrität der Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475423/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Wie wird die attributbasierte Zugriffssteuerung aktiviert? {#enable-attribute-based-access-control}
 
@@ -102,3 +102,34 @@ Auf diese Weise können Sie einfache und ausdrucksvolle Regeln schreiben, wie et
 * Erfassen Sie die geschäftliche Absicht der Regel im Kommentar, unabhängig davon, ob die Bedingung korrekt geschrieben wurde, da der Zweck uns dabei hilft, die Logik bei Bedarf zu validieren und zu korrigieren.
 
 * Die PDF-Lizenzdateien, die für DRM festgelegt sind, müssen für alle sichtbar sein, damit die Benutzer sie sehen können, wenn sie das Asset mit der Lizenz herunterladen.
+
+## Häufig gestellte Fragen {#faqs-attribute-based-access-control-content-hub}
+
+### Was ist die attributbasierte Zugriffssteuerung (ABAC) in AEM Assets Content Hub?
+
+Mit der attributbasierten Zugriffssteuerung (ABAC) in AEM Assets Content Hub können Admins metadatenbasierte Regeln definieren, um die Zugriffsebene verschiedener Benutzergruppen auf digitale Assets zu steuern. Der Zugriff wird davon bestimmt, ob die Metadaten des Assets mit den in den Regeln angegebenen Bedingungen übereinstimmen, was eine granulare und dynamische Verwaltung der Asset-Sichtbarkeit ermöglicht.
+
+### Wie definieren Administratoren Zugriffsregeln mithilfe von ABAC in AEM Assets Content Hub?
+
+Admins definieren Zugriffsregeln, indem sie Bedingungen basierend auf Asset-Metadaten wie Marke oder Region erstellen und diese mit bestimmten Benutzergruppen-IDs verknüpfen. Diese Regeln verwenden logische Operatoren (AND, OR) und Vergleichsoperatoren (gleich, nicht gleich), um genau anzugeben, welche Assets für welche Benutzergruppen sichtbar sind.
+
+### Was sind die Hauptvorteile der Verwendung von ABAC gegenüber herkömmlichen ordnerbasierten Berechtigungen?
+
+ABAC beseitigt die Abhängigkeit von Ordnerstrukturen bei Berechtigungen, ermöglicht es Administratoren, Assets rückwirkend hochzuladen und Berechtigungen zuzuweisen, und reduziert die Anzahl der benötigten doppelten Assets. Dies verbessert die Asset-Integrität und vereinfacht die Berechtigungsverwaltung, insbesondere wenn Assets für mehrere Gruppen freigegeben werden müssen.
+
+### Können Administratoren ABAC-Regeln direkt in der Benutzeroberfläche von AEM Assets Content Hub einrichten?
+
+Nein, derzeit können Administratoren ABAC-Regeln nicht direkt in der Content Hub-Oberfläche erstellen. Stattdessen müssen sie eine Tabellenkalkulationsvorlage (Downloadlink in diesem Artikel) herunterladen, dort ihre Regeln definieren und sie über ein Support-Ticket zur Implementierung an den Adobe-Support senden.
+
+### Welche Arten von Metadatenbedingungen können beim Einrichten von ABAC-Regeln in AEM Assets Content Hub verwendet werden?
+
+ABAC-Regeln in AEM Assets Content Hub können logische Operatoren wie UND und ODER sowie Vergleichsoperatoren wie Gleich und Nicht Gleich verwenden. Metadateneigenschaften, die in den Regeln verwendet werden, müssen korrekt definiert und in den AEM-Metadatenschemata verfügbar sein und können Felder wie Region, Marke oder Veröffentlichungsstatus enthalten.
+
+### Warum ist AEM Assets Content Hub ABAC besonders für Unternehmen mit großen Teams und unterschiedlichem Asset-Bedarf nützlich?
+
+ABAC ist für Unternehmen mit großen Teams nützlich, da es einen granularen, regelbasierten Zugriff auf Assets basierend auf Benutzerrollen, Regionen oder Marken ermöglicht. Dadurch wird sichergestellt, dass Benutzende nur Assets sehen, die für ihre Zuständigkeiten relevant sind, ohne manuelle Zugriffsberechtigungen oder übermäßige Duplizierung von Assets.
+
+### Wie sollten Administratoren die ABAC-Tabelle vorbereiten, bevor sie sie an den Adobe-Support senden?
+
+Administratoren sollten Benutzergruppen in der Adobe Admin Console erstellen, ihre Gruppen-IDs notieren und die Berechtigungen und Bedingungen für jede Gruppe in der Tabelle klar definieren. Sie sollten sicherstellen, dass alle Metadateneigenschaften den entsprechenden Schemata korrekt zugeordnet sind, und die Spalte „Kommentare“ verwenden, um den geschäftlichen Zweck jeder Regel zu verdeutlichen, was es Adobe erleichtert, die Regeln zu validieren und zu implementieren.
+

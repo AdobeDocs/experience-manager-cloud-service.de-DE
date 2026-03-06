@@ -3,10 +3,10 @@ title: Verwalten von Sammlungen in Content Hub
 description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 78%
+source-wordcount: '1914'
+ht-degree: 55%
 
 ---
 
@@ -30,7 +30,7 @@ Mit [!DNL Content Hub] können Sie öffentliche Sammlungen erstellen. Diese Samm
 
 Dies ermöglicht Benutzenden, auf einfache Weise auf die verschiedenen in [!DNL Content Hub] verfügbaren Assets zuzugreifen und diese zu verwalten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445309/?captions=ger&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Voraussetzungen {#prerequisites}
 
@@ -198,3 +198,54 @@ Sie können Sammlungen in Content Hub als Favoriten markieren, was das Organisie
    Als Favoriten markierte Sammlungen werden jetzt auf der Registerkarte **[!UICONTROL Meine Favoriten]** angezeigt. Alternativ können Sie die Sammlungen aus &quot;**[!UICONTROL Favoriten“]**. Klicken Sie dazu auf **[!UICONTROL Mehr Aktionen]** ![Mehr Aktionen-Symbol](assets/do-not-localize/more-actions.png) und wählen Sie **[!UICONTROL Aus Favoriten entfernen]**.
 
    ![Sammlung als Favorit entfernen](assets/remove-favorite-collection.png)
+
+## Häufig gestellte Fragen {#faqs-manage-collections-content-hub}
+
+### Was bezeichnen Sie in AEM Assets Content Hub als Sammlungen?
+
+Eine Sammlung in AEM Assets Content Hub bezieht sich auf eine Reihe von Assets, die von Benutzenden gemeinsam genutzt werden können. Sammlungen können Assets aus verschiedenen Speicherorten enthalten, während ihre referenzielle Integrität gewahrt bleibt. Sie schaffen einen gemeinsamen Raum, in dem Benutzende effizient auf Inhalte zugreifen und diese nutzen können.
+
+### Wie kann ich in AEM Assets Content Hub eine neue Sammlung erstellen?
+
+Um eine neue Sammlung in AEM Assets Content Hub zu erstellen, wechseln Sie zur Registerkarte Sammlungen und klicken Sie auf **Sammlung erstellen**. Fügen Sie im neuen Sammlungsfenster einen Titel und eine Beschreibung hinzu, wählen Sie den Zugriffssteuerungstyp unter der Dropdown-Liste **Wer Zugriff hat** und klicken Sie auf **Erstellen**. Anschließend können Sie der Sammlung Assets hinzufügen.
+
+### Welche Arten von Zugriffssteuerung sind beim Erstellen einer Sammlung verfügbar?
+
+Es gibt drei Zugriffssteuerungstypen: **Privat** - Nur der Ersteller und Administratoren können bearbeiten und zugreifen, **Öffentlich** - Nur anzeigen - Jeder kann anzeigen, aber nur Ersteller und Administratoren können bearbeiten, und **Öffentlich** - Anzeigen und bearbeiten - Jeder kann ohne Einschränkungen auf die Sammlung zugreifen und sie bearbeiten.
+
+### Wer kann in Content Hub Aktionen für Sammlungen durchführen?
+
+Content Hub-Benutzer können Aktionen ausführen, z. B. Sammlungen erstellen, anzeigen, freigeben, herunterladen, entfernen, löschen, anheften und als Favoriten markieren. Admins verfügen über zusätzliche Berechtigungen, z. B. zum Anzeigen aller Zugriffsoptionen und zum Löschen von Sammlungen.
+
+### Wie füge ich Assets zu einer bestehenden Sammlung in AEM Assets Content Hub hinzu?
+
+Wählen Sie die Assets aus, die Sie hinzufügen möchten, klicken Sie auf **Zu Sammlung hinzufügen** und wählen Sie die Sammlung aus der Liste aus. Sie können auch über die Suchleiste nach Sammlungen suchen. Klicken Sie **Zu Sammlung hinzufügen**, um die Aktion zu bestätigen.
+
+### Können Sammlungen in AEM Assets Content Hub gefiltert und durchsucht werden?
+
+Ja, Sammlungen können in AEM Assets Content Hub nach Name, Zugriffsberechtigungen oder Ersteller gefiltert und durchsucht werden. Filter umfassen Optionen wie **Alle Sammlungen**, **Nur ich**, **Jeder kann anzeigen**, **Jeder kann bearbeiten**, **Von jedem erstellt** und **Von mir erstellt**.
+
+### Wie lade ich Assets aus einer Sammlung in AEM Assets Content Hub herunter?
+
+Um Assets aus einer Sammlung in AEM Assets Content Hub herunterzuladen, gehen Sie zur Registerkarte **Sammlungen** und klicken Sie auf der Sammlungskarte auf das Symbol Herunterladen , um alle Assets herunterzuladen. Sie können auch die Sammlung öffnen, einzelne Assets auswählen und auf &quot;**&quot; klicken** um sie separat herunterzuladen.
+
+### Wie können Assets aus einer Sammlung in AEM Assets Content Hub freigegeben werden?
+
+Assets kann freigegeben werden, indem die Freigabe öffentlicher Links in Content Hub aktiviert wird. Wählen Sie auf der Asset-Karte das Symbol Freigeben aus, um den Freigabe-Link zu kopieren, der dann an die Empfänger gesendet werden kann. Private Sammlungen können nicht freigegeben werden.
+
+### Wer kann Assets aus einer Sammlung in AEM Assets Content Hub entfernen?
+
+Sammlungseigentümer, Administratoren oder Benutzer ohne Administratorrechte mit Bearbeitungsrechten können einzelne oder mehrere Assets aus einer Sammlung entfernen. Um Assets zu entfernen, wählen Sie die Assets aus und klicken **auf „Aus Sammlung**&quot; und bestätigen Sie dann die Entfernung.
+
+### Wer darf eine Sammlung aus AEM Assets Content Hub löschen und wie geht das vor?
+
+Nur Administratoren und der Ersteller einer Sammlung können sie löschen. Um sie zu löschen, gehen Sie zur Registerkarte Sammlungen , wählen Sie die Sammlung aus und klicken Sie auf das Symbol Löschen . Die Sammlung wird aus AEM Assets Content Hub entfernt.
+
+### Welche Optionen kann ein Administrator für Sammlungen in AEM Assets Content Hub konfigurieren?
+
+Der -Administrator kann die folgenden Optionen für Sammlungen in AEM Assets Content Hub aktivieren oder deaktivieren:
+
+* Aktivieren Sie den **Nur Sammlungen anzeigen**-Umschalter, um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur vom Ersteller und Administrator bearbeitet werden können.
+
+* Aktivieren Sie den Umschalter **Öffentliche Sammlungen**, um Sammlungen zuzulassen, die für alle zugänglich und bearbeitbar sind. Wenn die Umschalter **Nur schreibgeschützte Sammlungen** und **Öffentliche Sammlungen** deaktiviert sind, können Benutzende ohne Administratorrechte standardmäßig nur private Sammlungen erstellen.
+

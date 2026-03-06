@@ -3,10 +3,10 @@ title: Anzeigen von Assets Insights in Content Hub
 description: Erfahren Sie, wie Sie Asset Insights in [!DNL Content Hub] anzeigen können
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '278'
-ht-degree: 100%
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 60%
 
 ---
 
@@ -50,3 +50,25 @@ Sie können außerdem Folgendes anzeigen:
 * **[!UICONTROL Assets nach Kampagnen]**: Asset-Anzahl und der jeweilige Prozentsatz basierend auf Kampagnen.
 * **[!UICONTROL Assets nach Kanälen]**: Asset-Anzahl und der jeweilige Prozentsatz basierend auf den verwendeten Kanälen.
 * **[!UICONTROL Assets nach Regionen]**: Asset-Anzahl und der jeweilige Prozentsatz basierend auf den Regionen der Asset-Verwendung.
+
+## Häufig gestellte Fragen {#faqs-assets-insights-content-hub}
+
+### Was benötigen wir Assets Insights in AEM Assets Content Hub?
+
+Assets Insights in AEM Assets Content Hub bietet wertvolle Daten zur Asset-Nutzungsstatistik für Kampagnen, Kanäle und Regionen und hilft Marketing-Stakeholdern, die Asset-Leistung und -Beliebtheit zu verstehen, um das Anwendererlebnis zu verbessern.
+
+### Wer kann auf die in Assets Insights beschriebenen Funktionen zugreifen?
+
+Content Hub-Benutzende können die im Abschnitt &quot;Assets Insights“ erwähnten Aktionen ausführen und auf die Funktionen zugreifen.
+
+### Welche Asset Insights sind auf der Registerkarte Insights verfügbar?
+
+Sie können die Anzahl der Assets im Repository, die Anzahl der Sammlungen, Assets-Uploads nach Jahr, Monat oder Tag, aktive Benutzende nach Tag oder Monat und die Asset-Klassifizierung anhand von Dateiformaten anzeigen.
+
+### Wie kann ich Statistiken für hochgeladene Assets in AEM Assets Content Hub anzeigen?
+
+Sie können Statistiken für hochgeladene Assets und Sammlungen anzeigen, indem Sie zur Registerkarte Insights navigieren, wo Sie den Upload-Verlauf nach Jahr, Monat oder Tag verfolgen können.
+
+### Welche Metriken kann ich bezüglich der Benutzeraktivität in Content Hub analysieren?
+
+Sie können die Anzahl der aktiven Benutzenden nach Tag oder Monat analysieren, was durch ein Liniendiagramm visuell dargestellt wird.

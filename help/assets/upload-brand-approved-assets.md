@@ -3,10 +3,10 @@ title: Hochladen Ihrer markenkonformen Assets in [!DNL Content Hub]
 description: Erfahren Sie, wie Sie Ihre markenkonformen Assets in Content Hub hochladen
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 97%
+source-wordcount: '1123'
+ht-degree: 66%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 [Content Hub-Benutzende mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) können Assets zu Content Hub hinzufügen. Assets können aus dem lokalen Dateisystem hinzugefügt oder aus OneDrive- oder Dropbox-Datenquellen importiert werden. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445388/?captions=ger&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Die Assets, die in Assets as a Cloud Service als `Approved` markiert sind, sind automatisch in Content Hub verfügbar. Weitere Informationen finden Sie unter [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md).
 
@@ -77,3 +77,30 @@ Ob die mit Content Hub hochgeladenen Assets angezeigt werden, hängt davon ab, o
 * Wenn der Umschalter **[!UICONTROL Automatische Genehmigung]** deaktiviert ist, werden die Assets, die Sie mit Content Hub hochladen, nicht automatisch angezeigt. Die Assets sind im Ordner `hydrated-assets` Ihrer Assets as a Cloud Service-Umgebung verfügbar. Navigieren Sie zu dem Ordner und ändern Sie die Status dieser Assets [gemeinsam](#bulk-approve-assets-content-hub) in `Approved`, damit diese Assets in Content Hub angezeigt werden.
 
 ![Content Hub-Genehmigungsprozess](/help/assets/assets/content-hub-approval.png)
+
+## Häufig gestellte Fragen {#faqs-content-hub-upload-assets}
+
+### Welche Asset-Typen kann ich in Content Hub hochladen und von wo aus? {#asset-types-upload-to-content-hub}
+
+Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets können markenbestätigte Assets aus ihrem lokalen Dateisystem hochladen. Alle hochgeladenen Assets werden unabhängig von ihrer ursprünglichen Ordnerstruktur in Content Hub auf der obersten Ebene angezeigt, um die Suchfunktionen zu verbessern.
+
+### Wie verbessert Content Hub die Asset-Suche und -Organisation? {#search-content-hub}
+
+Content Hub verbessert die Asset-Suche und -Organisation, indem es Benutzenden ermöglicht, Schlüsseldetails für jeden Upload zu definieren, wie z. B. Kampagnenname, Schlüsselwörter, Kanäle, Zeitrahmen und Region. Außerdem werden automatisch zusätzliche Eigenschaften für jedes Asset generiert (z. B. Dateigröße, Format und Auflösung) und Adobe AI zum Anwenden von Smart-Tags verwendet, wodurch das Auffinden relevanter Assets einfacher und schneller wird.
+
+### Hochladen von Assets aus meinem lokalen Dateisystem in Content Hub {#upload-assets-content-hub}
+
+Um Assets aus Ihrem lokalen Dateisystem hochzuladen, klicken Sie auf **Assets hinzufügen**, um das Upload-Dialogfeld zu öffnen. Sie können Dateien oder Ordner per Drag-and-Drop verschieben oder manuell durchsuchen, um sie auszuwählen. Sie müssen Ihre Assets unter einem Kampagnennamen gruppieren. Zur besseren Organisation wird empfohlen, andere Felder wie Schlüsselwörter, Kanäle, Zeitrahmen und Region auszufüllen. Klicken Sie anschließend auf **Hochladen**, überprüfen Sie die Details und bestätigen Sie, dass Sie mit dem Hochladen beginnen möchten.
+
+### Wie funktioniert der Asset-Genehmigungsprozess in Content Hub? {#asset-approval-content-hub}
+
+Wenn der Umschalter Automatische Genehmigung aktiviert ist, sind mit Content Hub hochgeladene Assets automatisch verfügbar. Wenn sie deaktiviert ist, werden hochgeladene Assets im Ordner **hydrated-assets** in Assets as a Cloud Service abgelegt, und Sie müssen ihren Status manuell per Massenbearbeitung in **Genehmigt** ändern, damit sie in Content Hub angezeigt werden.
+
+### Kann ich die Felder konfigurieren, die beim Hochladen von Assets in Content Hub obligatorisch oder optional sind? {#available-fields-while-uploading-assets-to-content-hub}
+
+Admins können über die Konfigurations-Benutzeroberfläche die Felder definieren, die beim Hochladen von Assets in Content Hub obligatorisch oder optional sind.
+
+### Was sollte ich tun, wenn meine hochgeladenen Assets nicht automatisch in Content Hub angezeigt werden? {#assets-do-not-display-in-content-hub}
+
+Wenn Assets nicht automatisch angezeigt werden, bedeutet dies, dass der Umschalter für die automatische Genehmigung deaktiviert ist. Die Assets befinden sich im Ordner **hydrated** Ihrer Assets as a Cloud Service-Umgebung. Sie müssen ihren Status stapelweise in &quot;**&quot;**, damit sie in Content Hub angezeigt werden.
+

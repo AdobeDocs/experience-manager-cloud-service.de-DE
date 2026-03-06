@@ -3,10 +3,10 @@ title: Vorschau von Assets und ihrer Eigenschaften in  [!DNL the Content Hub]
 description: Erfahren Sie, wie Sie in  [!DNL Content Hub] Assets und Eigenschaften in einer Vorschau anzeigen.
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 93%
+source-wordcount: '971'
+ht-degree: 61%
 
 ---
 
@@ -109,9 +109,9 @@ Einige Asset-Eigenschaften, die in [!DNL Content Hub] angezeigt werden, werden a
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Smart-Tags:** [!DNL The Content Hub] verwendet die Smart Content Services von Adobe AI, um Assets mithilfe des Erkennungsalgorithmus auf der Tag-basierten Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf Assets an.
+* **Smart-Tags:** [!DNL The Content Hub] verwendet den Smart Content Services von Adobe AI, um Assets mithilfe des Erkennungsalgorithmus auf der Tag-basierten Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf Assets an.
 
-* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
+* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
 
 * Upload-Datum
 
@@ -135,3 +135,27 @@ Admins können auch die Eigenschaften konfigurieren, die für jedes Asset angeze
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
+
+## Häufig gestellte Fragen {#faqs-asset-properties-content-hub}
+
+### Warum sehen Sie sich Assets und ihre Eigenschaften in AEM Assets Content Hub in der Vorschau an?
+
+Die Vorschau von Assets und deren Eigenschaften in Content Hub ermöglicht es Benutzenden, Asset-Details genau anzuzeigen, die für eine effiziente Asset-Verteilung und -Verwaltung unerlässlich sind. Mit zunehmender digitaler Information wird das einfache Verlassen auf Dateinamen und Miniaturansichten unskalierbar. Das Anzeigen detaillierter Eigenschaften hilft beim Kategorisieren von Assets, macht sie zugänglicher, einfacher zu bearbeiten und stellt sicher, dass die Informationen für alle Benutzer vollständig sind.
+
+### Wie kann ich die Eigenschaften eines Assets in AEM Assets Content Hub anzeigen und mit ihnen interagieren?
+
+Um die Eigenschaften eines Assets in Content Hub anzuzeigen, navigieren Sie zum Asset oder suchen Sie nach dem Asset und klicken Sie darauf, um die zugehörige Eigenschaftsseite zu öffnen. Hier können Sie die Vorschau ein- oder auszoomen, das Zoomen rückgängig machen, zum vorherigen oder nächsten Asset wechseln, das Asset herunterladen, mit Adobe Express bearbeiten, es zu einer Sammlung hinzufügen oder die Vorschau schließen. Die Eigenschaftenseite zeigt detaillierte Informationen wie Titel, Format, Größe, Auflösung, Tags, Farb-Tags und Smart-Tags an.
+
+### Was sind abgeleitete Eigenschaften in AEM Assets Content Hub und wie werden sie generiert?
+
+Abgeleitete Eigenschaften in Content Hub werden automatisch generiert, wenn Assets hochgeladen und genehmigt werden. Beispiele sind die Größe des Assets, Smart-Tags und Farb-Tags. Smart-Tags verwenden die Smart Content Services von Adobe AI, um relevante Tags automatisch zu erkennen und anzuwenden und so die Asset-Auffindbarkeit zu verbessern. Farb-Tags werden auch automatisch mit KI identifiziert, sodass Benutzende Assets anhand ihrer hervorgehobenen Farben erkennen können.
+
+### Können Admins anpassen, welche Asset-Eigenschaften in Content Hub sichtbar sind?
+
+Ja, Administratoren haben die Möglichkeit, zu konfigurieren, welche Eigenschaften für jedes Asset in der Content Hub angezeigt werden. Dies kann sowohl für die Asset-Vorschau-Benutzeroberfläche als auch für Asset-Karten in Suchergebnissen oder Sammlungen getan werden, um sicherzustellen, dass die Benutzer die relevantesten Informationen basierend auf den Anforderungen sehen.
+
+### Welche Dateiformate werden für die Vorschau von Assets unterstützt?
+
+Zu den unterstützten Dateiformaten gehören JPEG und PNG für Bilder, Quicktime, MP4 und MPEG für Videos, TXT, DOC/DOCX und XML für Dokumente sowie PDF für Druckmedien.
+
+

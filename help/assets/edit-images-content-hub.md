@@ -2,10 +2,10 @@
 title: Bearbeiten von Bildern in Content Hub mit Adobe Express
 description: Bearbeiten von Bildern in Content Hub mit Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 54%
 
 ---
 
@@ -50,3 +50,37 @@ So bearbeiten Sie Bilder mit Content Hub:
 1. Klicken Sie auf **[!UICONTROL Als neues Asset speichern]**, um das Asset zu speichern.
 
 Admins können auch die obligatorischen und optionalen Felder konfigurieren, die beim Hinzufügen von Assets zu Content Hub angezeigt werden, z. B. Kampagnenname, Keywords, Kanäle usw. Weitere Informationen finden Sie unter [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
+
+## Häufig gestellte Fragen {#faqs-edit-images-content-hub}
+
+### Wer kann Bilder in AEM Assets Content Hub bearbeiten?
+
+Benutzende mit Berechtigungen für den Zugriff auf Adobe Express und AEM Assets Content Hub, die über die Berechtigung zum Remixen von Assets für neue Varianten verfügen, können Bilder mit Content Hub bearbeiten.
+
+### Wie bearbeite ich ein Bild mit Adobe Express in AEM Assets Content Hub?
+
+Um ein Bild zu bearbeiten, klicken **auf der Asset** Karte des Bildes auf „In Adobe Express öffnen“ oder öffnen Sie die Bilddetails und klicken Sie auf das Adobe Express-Logo. Dadurch wird der eingebettete Adobe Express-Editor in AEM Assets Content Hub geladen, sodass Sie Ihre Änderungen vornehmen können, ohne die Plattform verlassen zu müssen.
+
+### Welche Bearbeitungsfunktionen bietet Adobe Express in AEM Assets Content Hub?
+
+Adobe Express bietet eine Vielzahl von Bildbearbeitungsfunktionen, darunter das Ändern der Bildgröße, das Entfernen oder Ändern der Hintergrundfarbe, das Zuschneiden von Bildern und die Kombination mit KI-generierten Bildern oder Text.
+
+### Welche Dateiformate kann ich bearbeiten, wie in AEM Assets Content Hub?
+
+Sie können Ihre bearbeiteten Bilder im PNG-Format (gute Qualität), im JPG-Format (für kleine Dateien) oder im PDF-Format (für Dokumente) speichern.
+
+### Welche Felder sollte ich beim Speichern eines bearbeiteten Bildes in Content Hub ausfüllen?
+
+Beim Speichern eines bearbeiteten Bildes sollten Sie einen Namen für das Asset im Feld **Speichern unter** und einen Kampagnennamen **Feld Kampagnenname** angeben. Adobe empfiehlt außerdem, Werte in zusätzlichen Feldern wie Schlüsselwörtern, Kanälen, Zeitrahmen und Region anzugeben, um die Durchsuchbarkeit und Organisation zu verbessern.
+
+### Kann ich meine Änderungen als neues Asset in Content Hub speichern?
+
+Ja, nach der Bearbeitung können Sie auf **Als neues Asset speichern** klicken, um Ihre Änderungen als neues Asset in Content Hub zu speichern.
+
+### Können Admins die Felder beim Hochladen von Assets in AEM Assets Content Hub anpassen?
+
+Ja, Admins können konfigurieren, welche Felder obligatorisch oder optional sind, wenn sie Assets zu AEM Assets Content Hub hinzufügen, z. B. Kampagnenname, Schlüsselwörter und Kanäle, um den Anforderungen des Unternehmens zu entsprechen. Verwenden Sie die **Importieren** auf der Konfigurations-Benutzeroberfläche, um die Felder zu konfigurieren.
+
+
+
+

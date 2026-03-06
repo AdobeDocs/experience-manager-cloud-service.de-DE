@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 100%
+source-wordcount: '2815'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +35,7 @@ Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von 
 
 * alle benutzerspezifischen Links, die Sie zusätzlich zu Assets, Sammlungen und Erkenntnissen in Content Hub einschließen müssen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472955/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Voraussetzungen {#prerequisites-configuration-ui}
 
@@ -329,3 +329,59 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 Erfahren Sie mehr über das [Freigeben von Assets in [!DNL Content Hub]](share-assets-content-hub.md).
 
+## Häufig gestellte Fragen {#faqs-content-hub-upload-assets}
+
+### Wer kann auf die Benutzeroberflächeneinstellungen von AEM Assets Content Hub zugreifen und sie konfigurieren?
+
+Nur Benutzende mit Content Hub-Administratorrechten können auf die Einstellungen der Content Hub-Benutzeroberfläche zugreifen und sie konfigurieren. Administratorberechtigungen müssen über die Adobe Admin Console erteilt werden, bevor auf die Konfigurationsoberfläche zugegriffen werden kann.
+
+### Was können Administratoren in der Benutzeroberfläche von AEM Assets Content Hub konfigurieren?
+
+Administratoren können die folgenden Einstellungen in der Benutzeroberfläche für die Konfiguration von AEM Assets Content Hub konfigurieren:
+
+* Importieren von Metadatenfeldern (einschließlich Pflichtfelder und Einstellungen für die automatische Genehmigung)
+
+* Auf der Suchseite angezeigte Suchfilter
+
+* Durchsuchbare Metadatenfelder für die Indizierung
+
+* Metadaten der Asset-Karte (bis zu sechs Felder auf Karten)
+
+* Asset-Detailansicht - Eigenschaften
+
+* Branding-Elemente (Logo, Bannertext, Farben, Bannerbild)
+
+* Regeln für die Asset-Sichtbarkeit (einschließlich des Verhaltens abgelaufener Assets)
+
+* Optionen für Ausgabedarstellung und Download
+
+* Benutzerdefinierte Navigations-Links (externe Registerkarten)
+
+* Sammlungs- und Freigabeeinstellungen (öffentliche Links und Berechtigungen)
+
+Diese Einstellungen steuern das visuelle Erlebnis und das funktionale Verhalten von Content Hub für Endbenutzer.
+
+
+### Wie können Administratoren neue Metadatenfelder für Asset-Uploads in AEM Assets Content Hub hinzufügen?
+
+Admins können neue Metadatenfelder für Asset-Uploads hinzufügen, indem sie auf der Registerkarte **Metadaten hinzufügen** klicken, die Beschriftung **Importieren** angeben, sie der entsprechenden Eigenschaft aus dem Metadatenschema zuordnen, den Eingabetyp auswählen und entscheiden, ob das Feld erforderlich oder optional ist. Nach der Bestätigung und dem Speichern steht das neue Feld während des Asset-Uploads Benutzern zur Verfügung.
+
+### Was ist die Einstellung für die automatische Genehmigung für Assets in AEM Assets Content Hub und wie funktioniert sie?
+
+Wenn die Einstellung für die automatische Genehmigung aktiviert ist, sind neue Assets beim Hochladen sofort in Content Hub verfügbar. Standardmäßig ist diese Einstellung deaktiviert, sodass AEM-Autoren oder -Administratoren neue Assets manuell genehmigen müssen, bevor sie im Content Hub-Portal angezeigt werden.
+
+### Wie konfigurieren Administratoren Filter für die Asset-Suche in AEM Assets Content Hub?
+
+Admins können Filter für die Asset-Suche konfigurieren, indem sie auf **Filter hinzufügen** klicken, die Filterbezeichnung angeben, sie der entsprechenden Metadateneigenschaft zuordnen, den Datentyp auswählen und das Hinzufügen bestätigen. Filter werden in der Benutzeroberfläche verfügbar, sobald mindestens ein Asset den Filterkriterien entspricht. Änderungen werden durch Klicken auf &quot;**&quot;**.
+
+### Welche Asset-Eigenschaften können in der Ansicht „Asset-Details“ angezeigt werden und wie werden sie in AEM Assets Content Hub konfiguriert?
+
+Asset-Eigenschaften wie Dateiname, Titel, Format, Größe und benutzerdefinierte Felder wie Kategorien können in der Asset-Detailansicht angezeigt werden. Admins fügen diese Eigenschaften hinzu, indem sie auf **Metadaten hinzufügen** klicken, die Bezeichnung angeben, sie dem Metadatenschema zuordnen, den Datentyp auswählen, bestätigen und die Änderungen speichern.
+
+### Wie können Admins die Metadatendetails anpassen, die auf Asset-Karten in AEM Assets Content Hub angezeigt werden?
+
+Admins können die auf den Asset-Karten angezeigten Metadatendetails anpassen, indem sie in den Einstellungen für die Asset-Karte auf **Metadaten hinzufügen** klicken, die Bezeichnung (z. B. Dateiformat) angeben, sie der entsprechenden Eigenschaft im Metadatenschema zuordnen und das Hinzufügen bestätigen. Auf Asset-Karten können bis zu sechs Metadatenfelder angezeigt werden.
+
+### Können Administratoren Ihr AEM Assets Content Hub-Portal an die Branding-Anforderungen Ihres Unternehmens anpassen?
+
+Ja. Admins können das Erscheinungsbild von AEM Assets Content Hub personalisieren, indem sie den Titel und den Haupttext für das Hauptbanner bearbeiten, Textfarben über eine Farbauswahl oder einen Hexadezimalcode auswählen und sekundäre und primäre Farben für Hintergrund, Text und Symbole festlegen.

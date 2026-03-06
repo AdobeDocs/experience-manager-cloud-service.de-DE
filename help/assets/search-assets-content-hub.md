@@ -3,10 +3,10 @@ title: Suchen nach Assets in Content Hub
 description: Informationen zum Suchen nach Assets in [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 81%
 
 ---
 
@@ -167,5 +167,20 @@ Um die Massensuche in [!DNL Content Hub] durchzuführen, gehen Sie wie folgt vor
 [!DNL The Content Hub] ist nicht auf die Suche beschränkt, sondern Sie können direkt über die Benutzeroberfläche der Suche oder der Vorschau auch zusätzliche Aktionen ausführen, wie z. B. [Herunterladen](download-assets-content-hub.md), [Freigeben](share-assets-content-hub.md) und [Assets zur Sammlung hinzufügen](collections-content-hub.md). Wählen Sie die Assets auf der Seite mit den Suchergebnissen aus, um diese Optionen anzuzeigen.
 
 Erfahren Sie mehr über das [Konfigurieren von Assets in  [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+## Häufig gestellte Fragen {#faqs-deploy-content-hub}
+
+### Wie kann ich meine Suchergebnisse in AEM Assets Content Hub eingrenzen?
+
+Sie können die Suchergebnisse in Content Hub mithilfe der textbasierten Suche eingrenzen, verschiedene Filter (wie Dateiformat, Genehmigungsstatus, Änderungsdatum usw.) anwenden, nach Tags oder Smart-Tags suchen und das Bedienfeld „Filter“ verwenden. Die Kombination mehrerer Prädikate oder Filteroptionen hilft Ihnen, die benötigten Assets genau anzusprechen.
+
+### Kann ich in AEM Assets Content Hub eine Massensuche nach mehreren Assets gleichzeitig durchführen?
+
+Ja, Sie können in Content Hub eine Massensuche durchführen, indem Sie mehrere Werte (z. B. Namen, Dateiformate, Tags) eingeben, die durch angegebene Trennzeichen getrennt sind. Die Funktion für die Massensuche ermöglicht es Ihnen, schnell mehrere Assets in einer einzigen Abfrage zu finden, was sie effizienter macht, als Assets einzeln zu suchen.
+
+
+### Können Admins die in der AEM Assets Content Hub-Suche verfügbaren Filter anpassen?
+
+Ja, Administratoren können die Benutzeroberfläche für die Konfiguration von AEM Assets Content Hub verwenden, um zu konfigurieren, welche Filter in der Suchoberfläche verfügbar sind. Während Standardfilter das Dateiformat, den Genehmigungsstatus, das Ablaufdatum und mehr umfassen, können Admins diese Optionen an die Anforderungen Ihres Unternehmens anpassen.
 
 

@@ -2,10 +2,10 @@
 title: Verwalten lizenzierter Assets in Content Hub
 description: Erfahren Sie, wie Sie ein Lizenzfeld zum Metadatenformular für Assets hinzufügen, die Metadateneigenschaft „Lizenz“ auf Asset-Ordner anwenden und Assets mit Lizenzen zur Nutzung genehmigen.
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '251'
-ht-degree: 100%
+source-git-commit: bfa7ceeb839574ff1b80ffc25b6519a629247385
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 41%
 
 ---
 
@@ -22,3 +22,37 @@ Führen Sie die folgenden Schritte aus:
 1. Wählen Sie das Asset aus und klicken Sie auf **Details**, um seine Eigenschaften anzuzeigen. Definieren Sie im in Schritt 1 hinzugefügten Lizenzfeld den absoluten Pfad für die Asset-Lizenz, die in Schritt 3 oder bereits zuvor genehmigt wurde. Der absolute Pfad zu Content Hub folgt diesem Standardmuster: `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`. Zum Beispiel: /content/dam/teamA/projects/documents/file1.pdf
    ![Absoluter Pfad](/help/assets/assets/absolute-path.png)
 1. Genehmigen Sie das Asset, um es in Content Hub verfügbar zu machen, und klicken Sie auf **Speichern**. Informationen zum Genehmigen eines Assets finden Sie unter [Festlegen des Asset-Status](/help/assets/manage-organize-assets-view.md#set-asset-status).
+
+## Häufig gestellte Fragen {#faqs-manage-licensed-assets-content-hub}
+
+### Welchen Zweck hat die Verwaltung lizenzierter Assets in AEM Assets Content Hub?
+
+Durch die Verwaltung lizenzierter Assets auf Content Hub können Admins sicherstellen, dass nur genehmigte Assets mit gültigen Lizenzen verwendet werden können. So bleiben die Compliance und das ordnungsgemäße Metadaten-Tracking in der AEM-Autorenumgebung gewahrt.
+
+### Wie kann ich in Experience Manager as a Cloud Service ein Lizenzfeld zu den Asset-Eigenschaften hinzufügen?
+
+Sie können ein Lizenzfeld zu den Asset-Eigenschaften hinzufügen, indem Sie das Metadatenformular bearbeiten, um ein neues Textfeld einzuschließen, das der `dc:license`-Eigenschaft zugeordnet ist. Dieses Feld wird dann in den Asset-Eigenschaften in der AEM Assets-Autorenumgebung angezeigt.
+
+### Wie wird ein Metadatenformular auf einen Asset-Ordner angewendet, um das Lizenzfeld in die Asset-Eigenschaften aufzunehmen?
+
+Bearbeiten Sie das Metadatenformular, um das Lizenzfeld einzuschließen. Wenden Sie dieses Metadatenformular auf den gewünschten Asset-Ordner an, um sicherzustellen, dass die neuen Einstellungen für alle Assets in diesem Ordner integriert werden.
+
+### Wie gebe ich die Lizenzdetails für ein Asset an?
+
+Um die Lizenzdetails anzugeben, wählen Sie das Asset aus **klicken Sie auf „Details**, um seine Eigenschaften anzuzeigen, und geben Sie den absoluten Pfad der genehmigten Asset-Lizenz in das Lizenzfeld ein, das zum Metadatenformular hinzugefügt wurde.
+
+### Welches Format muss der absolute Pfad von Content Hub für eine Asset-Lizenz haben?
+
+Der absolute Pfad von Content Hub sollte dem Muster folgen: /content/dam/(Die Ordnerhierarchie des Assets im DAM-Repository)/(asset_name).(file_extension). Beispiel: `/content/dam/teamA/projects/documents/file1.pdf`.
+
+### Warum ist es wichtig, sowohl das Asset als auch seine Lizenz zu genehmigen, um sie in AEM Assets Content Hub verfügbar zu machen?
+
+Durch die Genehmigung von sowohl Asset als auch Lizenz wird sichergestellt, dass nur ordnungsgemäß lizenzierte und autorisierte Assets in AEM Assets Content Hub verfügbar sind, wodurch die Compliance und die korrekten Verwendungsrechte gewährleistet bleiben.
+
+### Wie stelle ich ein Asset in AEM Assets Content Hub nach der Genehmigung seiner Lizenz zur Verfügung?
+
+Nachdem Sie den Lizenzpfad in den Eigenschaften des Assets definiert haben, genehmigen Sie das Asset und klicken Sie auf Speichern . Durch diese Aktion wird das lizenzierte Asset in AEM Assets Content Hub verfügbar gemacht.
+
+### Wer ist für die Verwaltung lizenzierter Assets in Content Hub verantwortlich?
+
+Admins sind in Content Hub für die Bearbeitung von Metadatenformularen, die Zuweisung zu Asset-Ordnern und die Genehmigung von Assets und deren Lizenzen verantwortlich.
