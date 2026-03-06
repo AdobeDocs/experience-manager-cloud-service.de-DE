@@ -30,7 +30,7 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
 >[!NOTE]
 >
->**Designname:** Wenn Sie ein Forms-Design in Ihr Site-Design einbetten und es über die Frontend-Pipeline bereitstellen, **Sie „keinen Designnamen ändern**. Die Formularstile werden Teil Ihres vorhandenen Site-Designs, das mit seinem aktuellen Namen erstellt und bereitgestellt wird. Das Ändern des Design-Namens (z. B. in `package.json`) ist nur erforderlich, wenn Sie ein **eigenständiges** Forms-Design über ein dediziertes Design-Repository bereitstellen. Dieses Szenario wird unter [Verwenden von Designs zum Gestalten von auf Kernkomponenten basierenden adaptiven Forms&quot; ](/help/forms/using-themes-in-core-components.md).
+>**Designname:** Wenn Sie ein Forms-Design in Ihr Site-Design einbetten und es über die Frontend-Pipeline bereitstellen, **Sie „keinen Designnamen ändern**. Die Formularstile werden Teil Ihres vorhandenen Site-Designs, das mit seinem aktuellen Namen erstellt und bereitgestellt wird. Das Ändern des Design-Namens (z. B. in `package.json`) ist nur erforderlich, wenn Sie ein **eigenständiges** Forms-Design über ein dediziertes Design-Repository bereitstellen. Dieses Szenario wird unter [Verwenden von Designs zum Gestalten von auf Kernkomponenten basierenden adaptiven Forms&quot; &#x200B;](/help/forms/using-themes-in-core-components.md).
 
 ## Schritt 1: Erstellen des Ordners für adaptive Formularkomponenten {#step-1-create-folder}
 
