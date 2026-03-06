@@ -5,17 +5,17 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 100%
+source-wordcount: '1123'
+ht-degree: 94%
 
 ---
 
 
 # Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-custom-domain-name}
 
-Erfahren Sie, wie Sie in Cloud Manager mithilfe der **Domain-Einstellungen** einen benutzerdefinierten Domain-Namen hinzufügen.
+Sie können einen benutzerdefinierten Domain-Namen mithilfe von **Domain-Einstellungen** in Cloud Manager hinzufügen.
 
 ## Voraussetzungen {#requirements}
 
@@ -35,9 +35,13 @@ In Cloud Manager können Sie einen benutzerdefinierten Domain-Namen über die Se
 
 Beim Hinzufügen eines benutzerdefinierten Domain-Namens wird die Domain mit dem spezifischsten der gültigen Zertifikate bereitgestellt. Wenn mehrere Zertifikate dieselbe Domain haben, wird die zuletzt aktualisierte ausgewählt. Adobe empfiehlt, Zertifikate so zu verwalten, dass es keine überlappenden Domains gibt.
 
-Die Schritte, die in diesem Dokument für beide Methoden beschrieben werden, basieren auf Fastly. Wenn Sie ein anderes CDN (Content Delivery Network) verwenden, konfigurieren Sie die Domain mit dem entsprechenden CDN.
+Die Schritte für jede in diesem Artikel beschriebene Methode basieren auf Fastly. Wenn Sie ein anderes CDN (Content Delivery Network) verwenden, konfigurieren Sie die Domain mit dem entsprechenden CDN.
 
 ## Hinzufügen eines benutzerdefinierten Domain-Namens {#adding-custom-domain-name-settings}
+
+Siehe auch [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) für *Edge Delivery Services*.
+
+**So fügen Sie einen benutzerdefinierten Domain-Namen hinzu:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -59,9 +63,11 @@ Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://`
 
 1. Klicken Sie auf **Erstellen**.
 
+1. Klicken Sie auf der **Domain** Einstellungen“ rechts neben dem Domain-Namen auf ![Auslassungszeichen - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und anschließend auf **Überprüfen**.
+
 1. Wählen Sie im Dialogfeld **Domain verifizieren** aus der Dropdown-Liste **Welchen Zertifikatstyp möchten Sie mit dieser Domain verwenden?** eine der folgenden Optionen aus:
 
-   | Option für den Zertifikatstyp | Beschreibung |
+   | Zertifikatstyp | Beschreibung |
    | --- | --- |
    | Von Adobe verwaltetes SSL-Zertifikat (DV) | Wählen Sie diesen Zertifikatstyp aus, wenn Sie ein DV(Domain Validation)-Zertifikat verwenden möchten. Diese Option eignet sich in den meisten Fällen hervorragend, da sie eine grundlegende Domain-Validierung ermöglicht. Adobe verwaltet und erneuert das Zertifikat automatisch. |
    | Kundenseitig verwaltetes SSL-Zertifikat (OV/EV) | Wählen Sie diesen Zertifikatstyp aus, wenn zum Schutz der Domain ein EV/OV-SSL-Zertifikat verwendet werden soll. Diese Option bietet eine verbesserte Sicherheit mit OV (Organization Validation) oder EV (Extended Validation). Verwenden Sie sie, wenn eine strengere Überprüfung, eine höhere Vertrauensebene oder eine benutzerdefinierte Kontrolle über die Zertifikate erforderlich sind. |
