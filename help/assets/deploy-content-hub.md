@@ -20,7 +20,7 @@ Dieser Artikel enthält einen durchgängigen Workflow zur Bereitstellung von Con
 
 In diesem Video erfahren Sie, wie Sie Content Hub für Experience Manager Assets aktivieren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472944/?captions=ger&learn=on){transcript=true}
 
 Zu den verschiedenen Berechtigungen für Content Hub gehören:
 

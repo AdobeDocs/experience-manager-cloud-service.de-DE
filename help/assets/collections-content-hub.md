@@ -30,7 +30,7 @@ Mit [!DNL Content Hub] können Sie öffentliche Sammlungen erstellen. Diese Samm
 
 Dies ermöglicht Benutzenden, auf einfache Weise auf die verschiedenen in [!DNL Content Hub] verfügbaren Assets zuzugreifen und diese zu verwalten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445309/?captions=ger&learn=on){transcript=true}
 
 ## Voraussetzungen {#prerequisites}
 
