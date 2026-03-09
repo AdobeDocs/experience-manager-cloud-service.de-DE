@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '7105'
+source-wordcount: '7111'
 ht-degree: 94%
 
 ---
@@ -1121,6 +1121,7 @@ ht-degree: 94%
          + Experience Modernization Agent {#modernization}
             + [Übersicht](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
             + [Erste Schritte](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+            + [Erste Schritte mit AEM-Authoring-Projekten](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
             + [Modernisierungs-Konsole](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [Anleitung zur Eingabeaufforderung](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
             + [AOE-Bereitstellungsmodell](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
@@ -1302,7 +1303,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

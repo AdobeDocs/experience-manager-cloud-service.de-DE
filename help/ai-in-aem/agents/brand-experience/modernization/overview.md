@@ -4,9 +4,9 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Erfahren Sie, wie der Experience Modernization Agent mithilfe von KI Websites in
 
 ## Einführung {#introduction}
 
-[Als Teil des Brand Experience Agents erschließt &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernization Agent den vollen Wert von Edge Delivery Services (einschließlich AEM-Authoring), indem er Website-Migrationen und die laufende Weiterentwicklung schnell und reibungslos macht.
+[Als Teil des Brand Experience Agents erschließt ](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernization Agent den vollen Wert von Edge Delivery Services (einschließlich AEM-Authoring), indem er Website-Migrationen und die laufende Weiterentwicklung schnell und reibungslos macht.
 
 Es kombiniert [Site-Creation und Migration](#creation-migration) für anfängliches Onboarding von Websites und [Blockentwicklungsfunktionen](#block-development) für die kontinuierliche Erlebnisentwicklung (Stilaktualisierungen, Vorlagenverfeinerungen, Landingpage-Erstellung). Darüber hinaus bietet sie die [Experience Modernization Console](#console) als gehostete KI-unterstützte Entwicklungsumgebung, die Ihnen direkt zur Verfügung steht. Während Benutzer den Agenten direkt über diese Konsole betreiben können, behalten Entwickler die volle Kontrolle darüber, was ausgeliefert wird.
 
@@ -63,6 +63,11 @@ Der Experience Modernization Agent stellt eine gehostete KI-unterstützte Entwic
 * Die Unternehmens-Governance wird durchgesetzt, da Entwickler über den üblichen GitHub-Prüfungs- und Genehmigungsprozess die volle Kontrolle darüber behalten, was ausgeliefert wird.
 
 Die Self-Service-Konsole zur Erlebnismodernisierung ist allgemein verfügbar. Interessierte Benutzer können Zugriff erhalten, um ein reibungsloses Onboarding sicherzustellen.
+
+Erste Schritte mit der Experience Modernization Console!
+
+* Wenn Sie Ihre Site durch die Erstellung von Dokumenten modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* Wenn Sie Ihre Site durch das Authoring mit AEM modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## Versandmodell {#delivery-model}
 

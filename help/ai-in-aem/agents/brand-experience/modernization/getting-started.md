@@ -4,9 +4,9 @@ description: Lernen Sie die ersten Schritte kennen, um mit dem Experience Modern
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Lernen Sie die ersten Schritte kennen, um mit dem Experience Modernization Agent
 >Wenn Sie an der Verwendung der Experience Modernization Console interessiert sind, können Sie Zugriff anfordern, um ein reibungsloses Onboarding-Erlebnis zu gewährleisten.
 
 ## Vorbereiten eines Edge Delivery GitHub-Repositorys {#prepare-repo}
+
+>[!NOTE]
+>
+>Verwenden eines AEM Sites- und universellen Editor-Projekts? Führen [ die Einrichtungsschritte unter „Erste Schritte mit dem AEM Sites](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)universellen Editor“ aus.
 
 1. Wählen Sie ein [Edge Delivery Services](/help/edge/overview.md)-Repository zur Verwendung mit der Experience Modernization Console aus.
    * Dabei kann es sich um ein bestehendes Edge Delivery Services-Projekt handeln. Sie können aber auch nach dem [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) ein neues erstellen, indem Sie das [Textbausteinrepository“ verwenden.](https://github.com/adobe/aem-boilerplate)
@@ -77,6 +81,10 @@ Jetzt haben Sie sowohl den Inhalt als auch die Stile in die Konsole importiert.
 >[Lesen Sie die Anleitung zur Eingabeaufforderung](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) um weitere Ideen dazu zu erhalten, wie der Agent aufgefordert werden kann und welche Fähigkeiten er haben kann.
 
 ## Inhalt hochladen {#upload-content}
+
+>[!TIP]
+>
+>Wenn Sie an einem AEM Sites- und einem universellen Editor-Projekt arbeiten, funktioniert das Hochladen von Inhalten in AEM etwas anders. Spezifische Upload-[ finden Sie unter „Erste Schritte mit dem Experience Modernization Agent für AEM Sites/Universal Editor ](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content)&quot;.
 
 So laden Sie Ihre Inhalte in [Dokumenterstellung](https://da.live) hoch:
 
