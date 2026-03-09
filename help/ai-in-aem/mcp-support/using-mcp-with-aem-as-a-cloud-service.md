@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
+source-git-commit: 2cbbb53c1bf5277ab54e6731152c0400b4e67aba
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 1%
@@ -54,7 +54,7 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Inhalt** | `/content` | Alle Inhaltsvorgänge auf niedriger Ebene, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten, Fragmente und Assets. |
 | **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten, Fragmente und Assets. |
-| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
+| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
@@ -146,8 +146,8 @@ Im Folgenden finden Sie schrittweise Anleitungen für jedes unterstützte Progra
 
 #### Chat-Anwendungen (Web und Desktop) {#setup-chat-applications}
 
-* [Claude Anthropica](setup-claude.md)
-* [OpenAI ChatGPT](setup-chatgpt.md)
+* [Claude Anthropica](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 
 #### Entwickler-Tools (IDE-Erweiterungen, Desktop-Programme, CLIs) {#setup-developer-tools}
 
@@ -155,7 +155,7 @@ Im Folgenden finden Sie schrittweise Anleitungen für jedes unterstützte Progra
 * Erweiterungs-Code (CLI, JetBrains, VS-Code, Cursor)
 * Erweitern der Einrückung für Desktop-Programm
 * Cline (JetBrains, VS Code, Cursor)
-* [Mauszeiger](setup-cursor.md)
+* [Mauszeiger](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * GitHub-Copilot (VS-Code)
 * Kiro (Desktop-Programm, CLI)
 * OpenAI-Codex (Desktop-Programm)
@@ -164,7 +164,7 @@ Im Folgenden finden Sie schrittweise Anleitungen für jedes unterstützte Progra
 
 #### Unternehmensplattformen {#setup-enterprise-platforms}
 
-* [Microsoft Copilot Studio](setup-microsoft-copilot-studio.md)
+* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ## Authentifizierung {#authentication}
 
