@@ -21,5 +21,5 @@ Die Integration erfolgt durch den Import des Inhaltsfragment-Selektor-Pakets und
 
 Sie können eine Authentifizierung durchführen, ohne einige der IMS-Eigenschaften zu definieren, wenn Sie:
 
-* eine Adobe-Anwendung in ([ Shell) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
+* eine Adobe-Anwendung in ([&#x200B; Shell) &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
 * Für die Authentifizierung bereits ein IMS-Token generiert haben
