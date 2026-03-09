@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Erste Schritte mit dem Experience Modernization Agent für AEM-Authoring-Projekte {#getting-started-aem-authoring}
 
-Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die Vorbereitung des Experience Modernization Agent vom standardmäßigen Edge Delivery-Ablauf. In diesem Dokument werden diese Einrichtungsunterschiede behandelt. Sobald die folgenden Schritte abgeschlossen sind, folgen Sie dem [ „Erste Schritte mit dem Experience ](getting-started.md)&quot;.
+Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die Vorbereitung des Experience Modernization Agent vom standardmäßigen Edge Delivery-Ablauf. In diesem Dokument werden diese Einrichtungsunterschiede behandelt. Sobald die folgenden Schritte abgeschlossen sind, folgen Sie dem [&#x200B; „Erste Schritte mit dem Experience &#x200B;](getting-started.md)&quot;.
 
 ## Erstellen des Edge Delivery Services-Projekt-Repositorys {#create-repo}
 
@@ -36,8 +36,8 @@ Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die V
 1. Klicken Sie auf **Erstellen**.
    * Sie werden zur Sites-Seite weitergeleitet.
    * Aktualisieren Sie die Seite, wenn die neue Site nicht sofort angezeigt wird.
-1. Wenn Sie dies noch nicht beim [Einrichten des Repositorys“ getan haben, aktualisieren ](#create-repo) `fstab.yaml` so, dass es auf Ihren AEM-Host, Ihren Git-Eigentümer und Ihr Git-Repository verweist, und übertragen Sie diese Änderungen in `main`.
-   * Anweisungen finden [ unter „Konfigurieren ](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) Inhaltsquelle“.
+1. Wenn Sie dies noch nicht beim [Einrichten des Repositorys“ getan haben, aktualisieren &#x200B;](#create-repo) `fstab.yaml` so, dass es auf Ihren AEM-Host, Ihren Git-Eigentümer und Ihr Git-Repository verweist, und übertragen Sie diese Änderungen in `main`.
+   * Anweisungen finden [&#x200B; unter „Konfigurieren &#x200B;](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) Inhaltsquelle“.
 
 ## Fahren Sie mit den standardmäßigen Schritten für erste Schritte fort {#continue}
 
