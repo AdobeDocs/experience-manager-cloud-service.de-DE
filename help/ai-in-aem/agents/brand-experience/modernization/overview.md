@@ -4,9 +4,9 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Erfahren Sie, wie der Experience Modernization Agent mithilfe von KI Websites in
 
 ## Einführung {#introduction}
 
-[Als Teil des Brand Experience Agents erschließt &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernization Agent den vollen Wert von Edge Delivery Services (einschließlich AEM-Authoring), indem er Website-Migrationen und die laufende Weiterentwicklung schnell und reibungslos macht.
+[Als Teil des Brand Experience Agents erschließt ](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernization Agent den vollen Wert von Edge Delivery Services (einschließlich AEM-Authoring), indem er Website-Migrationen und die laufende Weiterentwicklung schnell und reibungslos macht.
 
 Es kombiniert [Site-Creation und Migration](#creation-migration) für anfängliches Onboarding von Websites und [Blockentwicklungsfunktionen](#block-development) für die kontinuierliche Erlebnisentwicklung (Stilaktualisierungen, Vorlagenverfeinerungen, Landingpage-Erstellung). Darüber hinaus bietet sie die [Experience Modernization Console](#console) als gehostete KI-unterstützte Entwicklungsumgebung, die Ihnen direkt zur Verfügung steht. Während Benutzer den Agenten direkt über diese Konsole betreiben können, behalten Entwickler die volle Kontrolle darüber, was ausgeliefert wird.
 
@@ -101,3 +101,7 @@ Die folgenden Anforderungen werden nicht durch dedizierte Automatisierungsfähig
 * Multisite-Vererbung (MSM)
 * Benutzerdefinierte Funktionen (z. B. Taschenrechner, Konfiguratoren)
 * Benutzerdefinierte Geschäftslogik
+
+## Nächste Schritte {#next-steps}
+
+Erste Schritte beim Migrieren einer Site mit dem Dokument [Erste Schritte mit dem Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)

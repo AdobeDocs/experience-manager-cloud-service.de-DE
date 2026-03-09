@@ -4,9 +4,9 @@ description: Referenzhandbuch für die Benutzeroberfläche und die Funktionen de
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Die Entwickler behalten die volle Kontrolle darüber, was ausgeliefert wird. All
 
 ## Navigation {#navigation}
 
-Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen &#x200B;](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
+Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen ](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
 
 ![Startbildschirm der Konsole](assets/console-home.png)
 
@@ -145,5 +145,14 @@ Mit der Einstellungsansicht können Sie die grundlegenden Einstellungen der Kons
 
 ![Einstellungsansicht](assets/settings-view.png)
 
-* **Anmeldeinformationen** ermöglicht es Ihnen, ein persönliches Zugriffstoken für Figma anzugeben, damit die Konsole auf Designblöcke für Ihr Projekt zugreifen kann.
+* **Anmeldeinformationen** ermöglicht es Ihnen, ein persönliches Zugriffstoken für Figma anzugeben, damit die [Konsole auf Designblöcke für Ihr Projekt zugreifen kann.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+   * Das Token erfordert die folgenden schreibgeschützten Bereiche:
+      * `file_content:read`
+      * `file_metadata:read`
+      * `library_assets:read`
+      * `library_content:read`
+      * `team_library_content:read`
+      * `file_dev_resources:read`
+      * `projects:read`
+   * [Weitere Informationen zum Einrichten persönlicher Zugriffstoken finden Sie ](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) der Figma-Dokumentation .
 * **Arbeitsbereich zurücksetzen** setzt die Konsole auf ihren Startstatus zurück und alle nicht gepushten oder nicht hochgeladenen Änderungen gehen verloren.

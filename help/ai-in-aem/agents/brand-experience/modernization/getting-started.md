@@ -4,9 +4,9 @@ description: Lernen Sie die ersten Schritte kennen, um mit dem Experience Modern
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ Jetzt, da Ihre Konsole auf Ihren Code zugreifen kann, können Sie mit der Eingab
 
 Jetzt haben Sie sowohl den Inhalt als auch die Stile in die Konsole importiert.
 
+>[!TIP]
+>
+>[Lesen Sie die Anleitung zur Eingabeaufforderung](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) um weitere Ideen dazu zu erhalten, wie der Agent aufgefordert werden kann und welche Fähigkeiten er haben kann.
+
 ## Inhalt hochladen {#upload-content}
 
 So laden Sie Ihre Inhalte in [Dokumenterstellung](https://da.live) hoch:
@@ -136,5 +140,6 @@ Wenn Sie den Code an eine andere Verzweigung als `main` gepusht haben, werden di
 Die folgenden Dokumente können nützlich sein, wenn Sie den Experience Modernization Agent und seine Konsole weiter erkunden.
 
 * [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details zur Konsole, ihren Ansichten, Optionen und Funktionen
+* [Prompting Guide for Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Ideen, wie der Agent aufgefordert werden kann und was seine Fähigkeiten tun können
 * [Edge Delivery Services-Entwickler-](https://www.aem.live/developer/tutorial): Nützlich, wenn Sie neu bei AEM- und Edge Delivery Services-Projekten sind
 * [Dokumenterstellung](https://da.live) Nützlich, wenn Sie mit der Dokumenterstellung für das Content-Management noch nicht vertraut sind
