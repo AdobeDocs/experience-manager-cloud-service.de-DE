@@ -1,14 +1,14 @@
 ---
 title: Micro-Frontend-Inhaltsfragment-Selektor für Adobe Experience Manager as a Cloud Service
 description: Verwenden Sie den Micro-Frontend-Inhaltsfragment-Selektor, um Inhaltsfragmente in Ihrer Anwendung zu suchen, zu finden und abzurufen.
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
-workflow-type: ht
-source-wordcount: '743'
-ht-degree: 100%
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 87%
 
 ---
-
 
 # Micro-Frontend-Inhaltsfragment-Selektor {#micro-frontend-content-fragment-selector}
 
@@ -69,9 +69,11 @@ Verwenden Sie die Komponente `ContentFragmentSelector`. Es gibt verschiedene Ins
 
 Sobald der Inhaltsfragment-Selektor zur Verwendung mit Ihrer AEM as a Cloud Service-Anwendung eingerichtet und authentifiziert wurde, können Sie Inhaltsfragmente auswählen oder verschiedene andere Vorgänge ausführen, um im Repository nach Ihren Fragmenten zu suchen:
 
-![Der Inhaltsfragment-Selektor](/help/headless/assets/content-fragment-selector-using.png)
+![Der Inhaltsfragment-Selektor](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* Über den Selektor **Repository** oben rechts können Sie das zu verwendende Repository auswählen.
+* In der oberen Symbolleiste haben Sie folgende Möglichkeiten:
+   * Verwenden Sie den **Repository**-Selektor oben rechts, um das gewünschte Repository auszuwählen
+   * Format auswählen (Liste oder Raster)
 * Im Panel ganz links können Sie:
    * Ordner aus dem ausgewählten Repository aus- oder einblenden
    * einen bestimmten Ordner auswählen, um Inhaltsfragmente in diesem Ordner anzuzeigen
@@ -81,6 +83,9 @@ Sobald der Inhaltsfragment-Selektor zur Verwendung mit Ihrer AEM as a Cloud Serv
    * die aktuelle Liste nach verschiedenen Spalten in auf- oder absteigender Reihenfolge sortieren
    * den Indikator für das Anzeigeformat sehen
    * Filter ein- bzw. ausblenden und festlegen
+* Im Bereich ganz rechts haben Sie folgende Möglichkeiten:
+   * Eigenschaften anzeigen
+   * Verweise anzeigen
 
 ### Panel zum Aus-/Einblenden {#hide-show-panel}
 
@@ -96,7 +101,7 @@ Sie können das gewünschte Repository aus der Dropdown-Liste **Repository** aus
 
 Die in der Dropdown-Liste verfügbaren Repository-Optionen basieren auf der Eigenschaft `repositoryId`, die in der Datei `index.html` definiert ist. Diese Eigenschaft basiert auf der Umgebung der ausgewählten IMS-Organisation, auf die die aktuell angemeldete Person zugreift.
 
-Nutzerinnen und Nutzer können eine bevorzugte `repositoryID` übergeben, um Fragmente aus einem bestimmten Repository zu rendern, und das Rendern des Repository-Umschalters beenden.
+Nutzerinnen und Nutzer können eine bevorzugte `repositoryID` übergeben, um Fragmente aus einem bestimmten Repository zu rendern, und das Rendern des Repository-Umschalters stoppen.
 
 ### Inhaltsfragmentordner {#content-fragments-folders}
 
@@ -130,3 +135,16 @@ Sie können Fragmente im Inhaltsfragment-Selektor nach verschiedenen Eigenschaft
 Mit dem Inhaltsfragment-Selektor können Sie das Fragment in der folgenden Ansicht anzeigen:
 
 * **Tabellenansicht**
+* **Rasteransicht**
+
+Die gewünschte Ansicht kann über die Symbole in der oberen Symbolleiste ausgewählt werden:
+
+![Der Inhaltsfragmentselektor - Ansichtstyp](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integrieren des Inhaltsfragment-Selektors mit Programmen {#integrate-the-content-fragment-selector-with-applications}
+
+Sie können den Inhaltsfragment-Selektor in verschiedene Programme integrieren, z. B.:
+
+* [Integrieren der Inhaltsfragmentauswahl in ein Adobe-Programm](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [Integrieren des Inhaltsfragment-Selektors mit Nicht-Adobe- oder Drittanbieterprogrammen](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Integrieren des Inhaltsfragment-Selektors mit Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
