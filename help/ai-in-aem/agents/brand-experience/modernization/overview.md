@@ -4,9 +4,9 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Erfahren Sie, wie der Experience Modernization Agent mithilfe von KI Websites in
 
 ## Einführung {#introduction}
 
-[Als Teil des Brand Experience Agents erschließt &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernization Agent den vollen Wert von Edge Delivery Services (einschließlich AEM-Authoring), indem er Website-Migrationen und die laufende Weiterentwicklung schnell und reibungslos macht.
+[Als Teil des Brand Experience Agents erschließt ](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernization Agent den vollen Wert von Edge Delivery Services (einschließlich AEM-Authoring), indem er Website-Migrationen und die laufende Weiterentwicklung schnell und reibungslos macht.
 
 Es kombiniert [Site-Creation und Migration](#creation-migration) für anfängliches Onboarding von Websites und [Blockentwicklungsfunktionen](#block-development) für die kontinuierliche Erlebnisentwicklung (Stilaktualisierungen, Vorlagenverfeinerungen, Landingpage-Erstellung). Darüber hinaus bietet sie die [Experience Modernization Console](#console) als gehostete KI-unterstützte Entwicklungsumgebung, die Ihnen direkt zur Verfügung steht. Während Benutzer den Agenten direkt über diese Konsole betreiben können, behalten Entwickler die volle Kontrolle darüber, was ausgeliefert wird.
 
@@ -66,13 +66,9 @@ Die Self-Service-Konsole zur Erlebnismodernisierung ist allgemein verfügbar. In
 
 ## Versandmodell {#delivery-model}
 
-Für komplexe Migrationen oder beschleunigte Ergebnisse bietet Adobe das Bereitstellungsmodell von Agentic Outcome Engineer (AOE). Dies ist ein optionaler Service, bei dem Adobe-Techniker die KI-Tools in Ihrem Namen ausführen.
+Für komplexe Migrationen oder beschleunigte Ergebnisse bietet Adobe das Bereitstellungsmodell von Agentic Outcome Engineer (AOE). Dies ist ein optionaler Service, bei dem Adobe-Techniker die KI-Tools in Ihrem Namen ausführen. Weitere Informationen zu diesem Versandmodell finden Sie im Dokument [Versandmodell des Erlebnismodernisierungsagenten.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
 
-* Die AOEs von Adobe betreiben gemeinsam mit Ihnen den Agenten und kombinieren die KI-Automatisierung mit kompetenter Beratung, um im großen Maßstab produktionsbereite Ergebnisse zu liefern.
-* Dies bietet eine strategische Zurücksetzungsoption für Unternehmen, die mit Verzögerungen bei Implementierungen oder mit Herausforderungen bei der Modernisierung konfrontiert sind.
-* Das AOE-Modell bietet einen schnelleren, risikoärmeren Weg voran, der die KI-Automatisierung nutzt und gleichzeitig Governance, Qualität und erfolgreiche Ergebnisse sicherstellt.
-
-Weitere Informationen zum AOE-Bereitstellungsmodell finden Sie unter:
+Wenn Sie am AOE-Modell für Ihre nächste Migration interessiert sind:
 
 * Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter oder Ihr Account-Team, um die Berechnung und Planung einzuleiten.
 * Adobe bestätigt die Eignung, schätzt die Interaktion und schlägt einen Interaktionsplan vor.
@@ -94,7 +90,7 @@ Der Agent unterstützt die folgenden Ziele nicht.
    * Die Kenntnisse beziehen sich nur auf Edge Delivery Services.
 * Headless-Bereitstellungsmuster wie „Nur API“- oder SPA-basierte Bereitstellung (z. B. Next.js)
 
-Die folgenden Anforderungen werden noch nicht durch dedizierte Automatisierungsfähigkeiten abgedeckt und erfordern manuellen Aufwand.
+Die folgenden Anforderungen werden nicht durch dedizierte Automatisierungsfähigkeiten abgedeckt und erfordern manuellen Aufwand.
 
 * Strenge Pixelperfektion
    * Nur die praktische Designtreue wird automatisiert
