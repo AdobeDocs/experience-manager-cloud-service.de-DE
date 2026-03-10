@@ -4,11 +4,12 @@ description: Erfahren Sie mehr über die Bereitstellung von HTTP2-Inhalten und d
 contentOwner: Rick Brough
 feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 100%
+source-wordcount: '804'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +19,7 @@ Adobe freut sich, die Möglichkeit zur Bereitstellung von Inhalten per HTTP/2 be
 
 >[!NOTE]
 >
->Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager – Dynamic Media enthaltene vorkonfigurierte CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager – Dynamic Media enthaltene vorkonfigurierte Content Delivery Network verwenden. Andere benutzerdefinierte Content Delivery Networks werden von dieser Funktion nicht unterstützt.
 
 ## Was ist HTTP/2? {#what-is-http}
 

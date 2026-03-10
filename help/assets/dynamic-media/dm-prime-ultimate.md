@@ -2,11 +2,12 @@
 title: Dynamic Media Prime und Ultimate
 description: Erfahren Sie mehr über Dynamic Media Prime und Ultimate, ihre Vorteile und ihre Unterschiede.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: ht
-source-wordcount: '421'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 99%
 
 ---
 

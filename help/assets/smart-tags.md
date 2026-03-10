@@ -3,11 +3,12 @@ title: Automatisches Tagging von Assets mit [!DNL Adobe AI] Smart-Service
 description: Kennzeichnen Sie Assets mit einem Service für künstliche Intelligenz, der kontextbezogene und beschreibende Business-Tags anwendet.
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 98%
+source-wordcount: '2088'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +20,7 @@ Smart-Tags sind Keywords, die nicht nur im Text vorkommen, sondern das Asset auc
 
 Zum Beispiel sind Wörter, die alphabetisch in einem Wörterbuch angeordnet sind, leichter zu finden als zufällig verstreute. Das Tagging erfüllt einen ähnlichen Zweck. Es organisiert Assets nach Unternehmenstaxonomien und stellt sicher, dass die relevantesten Assets in den Suchergebnissen angezeigt werden. So könnte beispielsweise ein Automobilhersteller Bilder von Autos mit Tags der Modellnamen versehen, sodass beim Erstellen einer Werbekampagne nur relevante Bilder angezeigt werden. Unabhängig davon, ob Sie „Läufer“ oder „Laufschuhe“ mit Tags versehen, brauchen sich die Benutzenden keine Sorgen über Tippfehler, Rechtschreibvarianten oder alternative Suchbegriffe zu machen – Smart-Tags erkennen sie alle.
 
-Im Hintergrund verwendet die Funktion das KI-Framework von [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), das automatisch Smart-Tags auf hochgeladene Assets anwendet - standardmäßig - zusammen mit Text, der an die Unternehmenstaxonomie angepasst ist.
+Im Hintergrund verwendet die Funktion das KI-Framework von [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), das automatisch Smart-Tags auf hochgeladene Assets anwendet - standardmäßig - und Text, der an die Unternehmenstaxonomie angepasst ist.
 
 ## Voraussetzungen und Annahmen {#smart-tags-prereqs-config}
 

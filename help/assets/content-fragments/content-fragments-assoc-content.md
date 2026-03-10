@@ -1,14 +1,15 @@
 ---
 title: Zugehörige Inhalte (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie die Funktion der zugehörigen Inhalte für AEM-Inhaltsfragmente die Verbindung herstellt, damit Assets optional mit dem Fragment verwendet werden können.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '298'
+ht-degree: 98%
 
 ---
 

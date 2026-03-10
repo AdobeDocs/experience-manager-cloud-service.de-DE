@@ -4,10 +4,11 @@ description: Dynamic Media enthält bereits das vordefinierte Profil „Adaptive
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3700'
 ht-degree: 98%
 
 ---
@@ -104,7 +105,7 @@ Für die maximal unterstützte Videodateigröße beim intelligenten Zuschnitt ge
 * 30 Frames pro Sekunde (FPS).
 * Dateigröße von 300 MB.
 
-Adobe AI ist auf 9.000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise muss ein 60-FPS-Video zweieinhalb Minuten lang sein, damit es von Adobe AI und smartem Zuschneiden unterstützt werden kann.
+Adobe AI ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise muss ein 60-FPS-Video zweieinhalb Minuten lang sein, damit es von Adobe AI und smartem Zuschneiden unterstützt wird.
 
 ![Intelligenter Zuschnitt für Video](assets/smart-crop-video.png)
 

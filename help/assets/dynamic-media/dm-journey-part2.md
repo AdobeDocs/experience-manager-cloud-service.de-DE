@@ -10,11 +10,12 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 100%
+source-wordcount: '2629'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +27,7 @@ Willkommen bei der Dynamic Media-Tour: Grundlagen, Teil II, bei der Sie Folgende
 
 * Anatomie einer Dynamic Media-URL und wie Dynamic Media Inhalte bereitstellt.
 * Grundlagen zum Erstellen von Bildvorgaben zum Rendern von Assets.
-* Bildsets, Rotationssets und Sets mit gemischten Medien.
+* Bild-Sets, Rotations-Sets und Sets mit gemischten Medien.
 
 Siehe auch [Dynamic Media-Tour; Grundlagen, Teil I](/help/assets/dynamic-media/dm-journey-part1.md).
 
@@ -49,26 +50,26 @@ Die Asset-ID oder der Name, `AdobeStock_28563982`, ist grün. Beachten Sie, dass
 
 Und schließlich gibt es einige Bildverarbeitungsparameter, `?wid=1000&fmt=jpeg&qlt=85`, die am Ende in gelb angezeigt werden.
 
-Der gesamte URL-Pfad ist live. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
+Der gesamte URL-Pfad ist live. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85){target="_blank"}.
 
 Wenn Ihr Browserfenster immer noch für die Dynamic Media-URL und das Bild der Armbanduhr geöffnet ist, schauen wir uns näher an, wie Sie Bildausgabedarstellungen erstellen können, indem Sie einfach die URL ändern.
 
 ### Rendern des Bildes der Armbanduhr über die URL
 
-Beginnen Sie, indem Sie nur die Bildverarbeitungsregeln im URL-Pfad manuell löschen. Behalten Sie den Servernamen, den Kontonamen und die Asset-ID oder den Bildnamen bei. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
+Beginnen Sie, indem Sie nur die Bildverarbeitungsregeln im URL-Pfad manuell löschen. Behalten Sie den Servernamen, den Kontonamen und die Asset-ID oder den Bildnamen bei. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
 
-Fügen Sie nun am Ende der URL einen Bildverarbeitungsparameter hinzu. Geben Sie im Feld URL rechts neben dem Bildnamen `?wid=500` ein und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
+Fügen Sie nun am Ende der URL einen Bildverarbeitungsparameter hinzu. Geben Sie im Feld URL rechts neben dem Bildnamen `?wid=500` ein und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
 
 Beachten Sie, dass eine neue Ausgabedarstellung der Uhr erzeugt wird. Eine wichtige Erkenntnis aus dieser einfachen Übung, die Breite des Bildes zu ändern, ist, dass das betrachtete Bild zu 100 % dynamisch erzeugt wird.
 
-Ändern Sie jetzt den Breitenwert von `500` Pixel zu `1000` Pixel und drücken Sie dann die **[!UICONTROL Eingabe]**. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
+Ändern Sie jetzt den Breitenwert von `500` Pixel zu `1000` Pixel und drücken Sie dann die **[!UICONTROL Eingabe]**. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=„_blank}.
 In dem Moment, in dem Sie die **[!UICONTROL Eingabetaste]** drücken, kehrt der Browser zum Dynamic Media-Bildserver zurück. Er erzeugt eine brandneue Ausgabedarstellung der Uhr, basierend auf dem neuen Breitenwert, den Sie gerade eingegeben haben, und stellt dann das neue Bild zurück zum Browser bereit und speichert es im Cache.
 
 Dynamic Media verfügt über zahlreiche Bildverarbeitungsparameter, mit denen Sie Ihre Bild-Assets auf Webseiten optimieren können. [Eine Liste davon können Sie hier einsehen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=de).
 
-Versuchen Sie jetzt, dem Bild der Uhr einen Rotationsparameter hinzuzufügen. Geben Sie am Ende des URL-Pfads, unmittelbar nach `wid=1000`, `&rotate=90` ein, und drücken Sie die **[!UICONTROL Eingabetaste]**. [Jetzt ausprobieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
+Versuchen Sie jetzt, dem Bild der Uhr einen Rotationsparameter hinzuzufügen. Geben Sie am Ende des URL-Pfads, unmittelbar nach `wid=1000`, `&rotate=90` ein, und drücken Sie die **[!UICONTROL Eingabetaste]**. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
-Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Jetzt probieren](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
+Die Uhr ist immer noch leicht nach links geneigt. Ändern Sie den Drehwert von `90` nach `92`und drücken Sie dann die **[!UICONTROL Eingabetaste]**. [Jetzt testen](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9){target="_blank"}.
 
 Auch hier wird in dem Moment, in dem Sie die **[!UICONTROL Eingabetaste]** drücken, fast augenblicklich eine neue Ausgabedarstellung der Uhr erzeugt. Sie können die Leistung, die Sie erhalten, nachvollziehen, wenn Sie verstehen, dass Dynamic Media an einem arbeitsreichen Wochenende oder an einem großen Feiertag mehr als 800.000 Bildanfragen _pro Sekunde_ liefern kann.
 
@@ -103,7 +104,7 @@ _Best Practice: eine Datei mit mehreren Ausgabedarstellungen, z. B. `Search_Gri
 * Suchmaske,
 * Miniaturansicht,
 * Einkaufskarte oder
-* Hero-Bild,
+* Hero Image,
 
 Sie möchten, dass diese Bilder mit denselben Parametern bereitgestellt werden, wo auch immer sie verwendet werden.
 
@@ -130,7 +131,7 @@ Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder 
 ![Anwenden der Bildvorgabe *Medium*, um eine Ausgabedarstellung eines Bildes zu erzeugen](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Anwenden der Bildvorgabe „Medium“, um eine Ausgabedarstellung eines Bildes zu erzeugen._
 
-Kopieren Sie die URL und fügen Sie sie dann in Ihren Browser ein, um das Erscheinungsbild des Bildes zu überprüfen. [Jetzt ausprobieren](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
+Kopieren Sie die URL und fügen Sie sie dann in Ihren Browser ein, um das Erscheinungsbild des Bildes zu überprüfen. [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
 
 Beachten Sie in Ihrem Browser den Namen der Bildvorgabe _Medium_ im vollständigen URL-Pfad.
 
@@ -150,36 +151,36 @@ _Bearbeiten der Breite und Höhe des `Cart` Bildvorgabe._
 
 Nachdem Sie Ihre Bildvorgabe geändert und den Cache geleert haben, werden alle Bilder aktualisiert, und alle URLs, die mit dieser Vorgabe verwendet werden, ändern sich _nicht_ mehr. Das bedeutet, dass keine fehlerhaften Links und keine Umleitungen auf Webseiten erforderlich sind.
 
-## Bildsets, Rotationssets und Sets mit gemischten Medien {#dm-journey-f}
+## Bild-Sets, Rotations-Sets und Sets mit gemischten Medien {#dm-journey-f}
 
-Zu den beliebtesten Einsatzbereichen von Dynamic Media gehört die Möglichkeit, Bildsets, Rotationssets und Sets mit gemischten Medien zu erstellen.
+Zu den beliebtesten Einsatzbereichen von Dynamic Media gehört die Möglichkeit, Bild-Sets, Rotations-Sets und Sets mit gemischten Medien zu erstellen.
 
-Bildsets bestehen normalerweise aus einer Reihe von Bild-Assets, die als einzelne Entität dargestellt werden. Diese Art von Sets bietet Benutzerinnen und Benutzern ein integriertes Betrachtungserlebnis, bei dem die Benutzerinnen und Benutzer durch Klicken auf ein Miniaturbild verschiedene Ansichten eines Elements sehen können. Mit Bildsets können Sie alternative Ansichten eines Elements darstellen. Dabei bietet der Viewer Zoomtools, mit denen Bilder genauer betrachtet werden können. [Anzeigen eines Bildsets namens „Laufen“, das den Flyout-Viewer verwendet](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
+Bild-Sets bestehen normalerweise aus einer Reihe von Bild-Assets, die als einzelne Entität dargestellt werden. Diese Art von Sets bietet Benutzerinnen und Benutzern ein integriertes Betrachtungserlebnis, bei dem die Benutzerinnen und Benutzer durch Klicken auf ein Miniaturbild verschiedene Ansichten eines Elements sehen können. Mit Bild-Sets können Sie alternative Ansichten eines Elements darstellen. Dabei bietet der Viewer Zoomtools, mit denen Bilder genauer betrachtet werden können. [Anzeigen eines Bild-Sets namens „Laufen“, das den Flyout-Viewer verwendet](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Hier in Dynamic Media können Sie mehrere Bilder von Laufschuhen sehen. Es handelt sich um eine Produktserie, von der Vertrieb und Marketing wollen, dass die Kundinnen und Kunden sie als eine einzige Präsentation sehen, als ein Bildset.
+Hier in Dynamic Media können Sie mehrere Bilder von Laufschuhen sehen. Es handelt sich um eine Produktserie, von der Vertrieb und Marketing wollen, dass die Kundinnen und Kunden sie als eine einzige Präsentation sehen, als ein Bild-Set.
 
 ![Erstellen eines Bildsets](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Der Beginn der Erstellung eines Bildsets._
 
-Um das Bildset zu erstellen, wählen Sie **[!UICONTROL Bildset]** aus dem Pulldown-Menü **[!UICONTROL Erstellen]**. Beachten Sie, dass im Menü auch Optionen zum Erstellen eines **[!UICONTROL Sets mit gemischten Medien]**, **[!UICONTROL Rotationssets]** und **[!UICONTROL Karussellsets]** vorhanden sind. Sie erstellen diese Sets auf ähnliche Weise wie Bildsets.
+Um das Bild-Set zu erstellen, wählen Sie **[!UICONTROL Bild-Set]** aus dem Pulldown-Menü **[!UICONTROL Erstellen]**. Beachten Sie, dass im Menü auch Optionen zum Erstellen eines **[!UICONTROL Sets mit gemischten Medien]**, **[!UICONTROL Rotations-Sets]** und **[!UICONTROL Karussell-Sets]** vorhanden sind. Sie erstellen diese Sets auf ähnliche Weise wie Bild-Sets.
 
-Ein Set mit gemischten Medien kann Bilder, Mustersets, Rotationssets, Videos und Sets mit adaptiven Videos enthalten. [Probieren Sie es jetzt aus](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Ein Rotationsset simuliert das Drehen eines Gegenstands zur genaueren Untersuchung. Rotationssets ermöglichen es, wichtige visuelle Details aus jedem Blickwinkel anzuzeigen. [Jetzt ausprobieren](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
+Ein Set mit gemischten Medien kann Bilder, Mustersets, Rotations-Sets, Videos und Sets mit adaptiven Videos enthalten. [Probieren Sie es jetzt aus](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Ein Rotations-Set simuliert das Drehen eines Gegenstands zur genaueren Untersuchung. Rotations-Sets ermöglichen es, wichtige visuelle Details aus jedem Blickwinkel anzuzeigen. [Probieren Sie es jetzt aus](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}.
 
-Das Erstellen eines Bildsets ist unkompliziert. Fügen Sie einfach die Bild-Assets hinzu, die Sie in das Set aufnehmen möchten.
+Das Erstellen eines Bild-Sets ist unkompliziert. Fügen Sie einfach die Bild-Assets hinzu, die Sie in das Set aufnehmen möchten.
 
 ![Erstellen eines Bildsets](/help/assets/dynamic-media/assets/dm-create-image-set-add-assets.png)
 _Mit dem Bildset-Editor können Sie Bild-Assets hinzufügen und ihre Darstellung im Set neu anordnen._
 
 Sie müssen dem Set einen Namen geben. Wählen Sie den Namen sorgfältig aus, da Sie ihn später nicht mehr bearbeiten können! Im obigen Beispiel wird der Satz `Running` genannt. Wenn Sie fertig sind, speichern Sie das Set.
 
-Und hier ist das Bildset `Running` in Experience Manager Assets.
+Und hier ist das Bild-Set `Running` in Experience Manager Assets.
 
 ![Das Bildset „Laufen“ in Experience Manager Assets, Kartenansicht](/help/assets/dynamic-media/assets/dm-image-set.png)
 _Das Bildset `Running` in Experience Manager Assets, Kartenansicht._
 
-Unabhängig davon, ob Sie ein Bildset, ein Set mit gemischten Medien, ein Rotationsset oder ein anderes interaktives Medium erstellt haben, sollten Sie sehen, wie es nach dem Erstellen des Sets aussieht und sich für einen Kunden verhält. Dynamic Media verfügt über zahlreiche integrierte Viewer, mit denen Sie genau das tun können.
+Unabhängig davon, ob Sie ein Bild-Set, ein Set mit gemischten Medien, ein Rotations-Set oder ein anderes interaktives Medium erstellt haben, sollten Sie sehen, wie es nach dem Erstellen des Sets aussieht und sich für einen Kunden verhält. Dynamic Media verfügt über zahlreiche integrierte Viewer, mit denen Sie genau das tun können.
 
-Wählen Sie zunächst das erstellte Bildset aus, um es wie im folgenden Beispiel in einer Vorschau zu öffnen.
+Wählen Sie zunächst das erstellte Bild-Set aus, um es wie im folgenden Beispiel in einer Vorschau zu öffnen.
 
 ![Das Bildset „Laufen“ in der Vorschau, mit ausgewählter Option „Viewer“](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
 _Das Bildset `Running` in der Vorschau, mit ausgewählter Option „Viewer“._
@@ -189,24 +190,24 @@ Beachten Sie in der Vorschau, dass Sie die Muster für Laufschuhe auswählen und
 ![Das Bildset „Laufen“, auf das der Flyout-Viewer angewendet wurde](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _Das Bildset `Running`, auf das der Flyout-Viewer angewendet wurde._
 
-In diesem Fall wurde der Viewer `Flyout` ausgewählt. An dieser Stelle können Sie eine Vorschau des Bildsets im Viewer anzeigen. Es ist jedoch am besten, es in Ihrem Browser zu sehen, soe wie es auch ein Kunde sieht. Wählen Sie **[!UICONTROL URL]** in der linken unteren Ecke aus, kopieren Sie die URL und fügen Sie sie in Ihren Browser ein. [Jetzt ausprobieren](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
+In diesem Fall wurde der Viewer `Flyout` ausgewählt. An dieser Stelle können Sie eine Vorschau des Bild-Sets im Viewer anzeigen. Es ist jedoch am besten, es in Ihrem Browser zu sehen, soe wie es auch ein Kunde sieht. Wählen Sie **[!UICONTROL URL]** in der linken unteren Ecke aus, kopieren Sie die URL und fügen Sie sie in Ihren Browser ein. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
 
-Mit der einzelnen URL können Sie das Bildset und den Viewer verwenden, wo Sie sie auf Ihrer Website benötigen. Im vorherigen Beispiel haben Sie möglicherweise bemerkt, dass **[!UICONTROL Einbetten]** rechts neben der URL-Schaltfläche steht. Durch Auswahl von **[!UICONTROL Einbetten]** können Sie den Code für dieses Bildset / diesen Viewer kopieren und zu einer Web-Seite oder Experience Manager Sites-Komponente hinzufügen.
+Mit der einzelnen URL können Sie das Bild-Set und den Viewer verwenden, wo Sie sie auf Ihrer Website benötigen. Im vorherigen Beispiel haben Sie möglicherweise bemerkt, dass **[!UICONTROL Einbetten]** rechts neben der URL-Schaltfläche steht. Durch Auswahl von **[!UICONTROL Einbetten]** können Sie den Code für dieses Bild-Set / diesen Viewer kopieren und zu einer Web-Seite oder Experience Manager Sites-Komponente hinzufügen.
 
-Der Flyout-Viewer ist ein standardmäßiger, vorkonfigurierter Viewer, dessen Eigenschaften Sie bearbeiten können. Sie können aber auch, genau wie bei der Erstellung einer Bildvorlage, einen eigenen, benutzerdefinierten Viewer erstellen.
+Der Flyout-Viewer ist ein standardmäßiger, vorkonfigurierter Viewer, dessen Eigenschaften Sie bearbeiten können. Sie können aber auch, genau wie bei der Erstellung einer Bildvorgabe, einen eigenen, benutzerdefinierten Viewer erstellen.
 
-Angenommen, Ihrem Verkaufs- und Marketing-Team gefällt der Flyout-Viewer nicht. Sie mögen die Zoom-Funktion, möchten aber, dass Kunden den Zoom-Effekt direkt über den Schuhen sehen. In diesem Fall wenden Sie einfach den Viewer InlineZoom auf das Bildset an und kopieren und fügen die URL in Ihren Browser ein, um zu sehen, wie es sich verhält. [Jetzt ausprobieren](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+Angenommen, Ihrem Verkaufs- und Marketing-Team gefällt der Flyout-Viewer nicht. Sie mögen die Zoom-Funktion, möchten aber, dass Kunden den Zoom-Effekt direkt über den Schuhen sehen. In diesem Fall wenden Sie einfach den Viewer InlineZoom auf das Bild-Set an und kopieren und fügen die URL in Ihren Browser ein, um zu sehen, wie es sich verhält. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 Wenn Sie den Mauszeiger über den Schuh bewegen, zoomen Sie in das Bild ein, und Sie können mehr Details sehen, wenn Sie den Mauszeiger hin und her bewegen. Der Grund dafür ist einfach die Größe des Bildes, das ursprünglich in Dynamic Media hochgeladen wurde.
 
 Wenn man über sein Leben als Verbraucher nachdenkt, oder wenn man in seiner täglichen Rolle arbeitet, und wenn man auf verschiedene Websites geht, sieht man Dinge wie diese. Denken Sie darüber nach, wie das gemacht wird und wie Sie die Leistung von Dynamic Media in Ihrer eigenen Arbeit und auf der Website Ihres Unternehmens nutzen können.
 
-Sie haben sich gerade über Bildsätze und Viewer informiert. Sehen wir uns einige andere Viewer an und probieren sie für einzelne Assets aus. Um den Viewer zurückzusetzen, klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** in der linken unteren Ecke.
+Sie haben sich gerade über Bild-Sets und Viewer informiert. Sehen wir uns einige andere Viewer an und probieren sie für einzelne Assets aus. Um den Viewer zurückzusetzen, klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]** in der linken unteren Ecke.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* Viewer `ZoomVertical_dark`, der auf ein Bild-Asset angewendet wwurde. [Jetzt ausprobieren](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}.
-* Viewer `Zoom_light`, der auf ein Bild angewendet wurde. [Jetzt ausprobieren](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}.
+* Viewer `ZoomVertical_dark`, der auf ein Bild-Asset angewendet wwurde. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* Viewer `Zoom_light`, der auf ein Bild angewendet wurde. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light){target="_blank"}.
 
 ## Optional – Weitere Informationen
 
@@ -216,7 +217,7 @@ Wenn Sie mehr darüber erfahren möchten, was Sie gerade gelesen haben, nutzen S
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=de) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -226,7 +227,7 @@ _Dynamic Media Help topics_
 _Dynamic Media-Tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=de)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 

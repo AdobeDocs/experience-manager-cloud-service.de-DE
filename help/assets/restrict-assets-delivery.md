@@ -2,11 +2,12 @@
 title: Beschränken der Bereitstellung von Assets mit Dynamic Media mit OpenAPI-Funktionen
 description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktionen einschränken können.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1098'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1100'
+ht-degree: 97%
 
 ---
 
@@ -50,11 +51,11 @@ Sie können auch in der Assets-Ansicht das Asset auswählen und auf **[!UICONTRO
 Das Feld ist im Standard-Metadatenformular verfügbar. Wenn Ihr Asset nicht auf dem Standard-Metadatenschema basiert und die Felder „Einschaltzeit“ und „Ausschaltzeit“ in den Asset-Eigenschaften nicht verfügbar sind, führen Sie die folgenden Schritte in der Admin-Ansicht aus:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenschemata]**.
-1. Wählen Sie das Metdadatenschema aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie das Metadatenschema aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Fügen Sie über den Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite ein Feld **[!UICONTROL Datum]** zum Abschnitt „Metadaten“ des Formulars hinzu.
 1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in **Einschaltzeit** oder **Ausschaltzeit**.
-   1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/onTime_ für das Feld **Einschaltzeit** und auf _./jcr:content/offTime_ für das Feld **Ausschaltzeit**.
+   1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/onTime_ für **Einschaltzeit** Feld und _./jcr:content/offTime_ für das Feld **Ausschaltzeit**.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Wenn Ihr Asset in der Assets-Ansicht nicht auf dem Standard-Metadatenschema basiert und die Felder „Einschaltzeit“ und „Ausschaltzeit“ in den Asset-Eigenschaften nicht verfügbar sind, führen Sie die folgenden Schritte aus:
@@ -63,7 +64,7 @@ Wenn Ihr Asset in der Assets-Ansicht nicht auf dem Standard-Metadatenschema basi
 1. Wählen Sie das Metadatenformular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Fügen Sie über den Abschnitt **[!UICONTROL Komponenten]** im linken Bereich ein Feld **[!UICONTROL Datum]** zum Formular hinzu.
 1. Klicken Sie auf das neu hinzugefügte Feld und ändern Sie die **[!UICONTROL Bezeichnung]** in **Einschaltzeit** oder **Ausschaltzeit**.
-1. Aktualisieren Sie die **[!UICONTROL Metadateneigenschaft]** auf _./jcr:content/onTime_ für das Feld **Einschaltzeit** und auf _./jcr:content/offTime_ für das Feld **Ausschaltzeit**.
+1. Aktualisieren Sie die **[!UICONTROL Metadateneigenschaft]** auf _./jcr:content/onTime_ für **Einschaltzeit** Feld und _./jcr:content/offTime_ für das Feld **Ausschaltzeit**.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 
@@ -88,9 +89,9 @@ Bei Autoren-Services von AEM Cloud Service sowie beim Asset-Wähler wird das IMS
 1. Fügen Sie bei der Durchführung der API-Anfragen [Suchen](search-assets-api.md) und [Bereitstellen](deliver-assets-apis.md) das abgerufene IMS-Bearer-Token zum Header **[!UICONTROL Autorisierung]** der HTTP-Anfrage hinzu (stellen Sie sicher, dass dessen Wert mit dem Präfix **[!UICONTROL Bearer]** versehen ist).
 
 1. Um die Zugriffsbeschränkung zu überprüfen, initiieren Sie eine Bereitstellungs-API-Anfrage einmal mit und einmal ohne Header **[!UICONTROL Autorisierung]**.
-   * Die Antwort gibt den Fehlerstatus-Code `404` aus, wenn kein IMS-Bearer-Token vorhanden ist oder das bereitgestellte IMS-Bearer-Token nicht zu der Person gehört, der (entweder direkt oder über die Gruppenmitgliedschaft) Zugriff auf das Asset gewährt wurde.
+   * Die Antwort gibt den Fehlerstatus-Code `404` aus, wenn kein IMS-Bearer-Token vorhanden ist oder das bereitgestellte IMS-Bearer-Token nicht zu der Person gehört, der (entweder direkt oder über die Gruppenzugehörigkeit) Zugriff auf das Asset gewährt wurde.
    * Die Antwort gibt einen Erfolgsstatus-Code `200` mit dem binären Inhalt des Assets aus, wenn das IMS-Bearer-Token eine der Personen oder Gruppen ist, denen Zugriff auf das Asset gewährt wurde.
 
 ### Bereitstellung für benutzerdefinierte Identitätsanbieter im Veröffentlichungs-Service {#delivery-custom-identity-provider}
 
-Lizenzen für AEM Sites, AEM Assets und Dynamic Media mit OpenAPI können gemeinsam verwendet werden, um die Konfiguration der beschränkten Bereitstellung von Assets auf Websites zu ermöglichen, die auf dem AEM Veröffentlichungs- oder Vorschau-Service gehostet werden. Der sichere Bereitstellungsfluss nutzt Browser-Cookies, um den Zugriff der Person festzustellen und über eine benutzerdefinierte Domain für die Bereitstellungsebene zu verfügen, die eine Subdomain der Veröffentlichungs-Domain ist. Dies ist eine Voraussetzung für die Implementierung dieses Anwendungsfalls. Falls die Veröffentlichungs- und Vorschau-Services von AEM Sites so konfiguriert sind, dass sie einen [benutzerdefinierten Identitätsanbieter (IdP)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) verwenden, muss nach der Authentifizierung der Person ein neues Cookie mit dem Namen `delivery-token` für die Veröffentlichungs-Domain festgelegt werden, das die Gruppenmitgliedschaft der Person enthält. Die Bereitstellungsebene extrahiert das Autorisierungsmaterial aus dem sicheren Cookie und validiert den Zugriff. Reichen Sie ein [Support-Ticket für Unternehmen](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) ein, um weitere Informationen zu erhalten.
+Lizenzen für AEM Sites, AEM Assets und Dynamic Media mit OpenAPI können gemeinsam verwendet werden, um die Konfiguration der beschränkten Bereitstellung von Assets auf Websites zu ermöglichen, die auf dem AEM Veröffentlichungs- oder Vorschau-Service gehostet werden. Der sichere Bereitstellungsfluss nutzt Browser-Cookies, um den Zugriff der Person festzustellen und über eine benutzerdefinierte Domain für die Bereitstellungsebene zu verfügen, die eine Subdomain der Veröffentlichungs-Domain ist. Dies ist eine Voraussetzung für die Implementierung dieses Anwendungsfalls. Falls die Veröffentlichungs- und Vorschau-Services von AEM Sites so konfiguriert sind, dass sie einen [benutzerdefinierten Identitätsanbieter (IdP)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) verwenden, muss nach der Authentifizierung der Person ein neues Cookie mit dem Namen `delivery-token` für die Veröffentlichungs-Domain festgelegt werden, das die Gruppenzugehörigkeit der Person enthält. Die Bereitstellungsebene extrahiert das Autorisierungsmaterial aus dem sicheren Cookie und validiert den Zugriff. Reichen Sie ein [Support-Ticket für Unternehmen](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) ein, um weitere Informationen zu erhalten.

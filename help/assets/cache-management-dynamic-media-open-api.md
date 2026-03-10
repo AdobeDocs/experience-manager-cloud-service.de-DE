@@ -2,11 +2,12 @@
 title: Cache-Verwaltung in Dynamic Media mit offenen APIs
 description: Cache-Verwaltung in Dynamic Media mit offenen APIs
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
-source-git-commit: 8c9e59108d28ee02a4609c58bf7a2543783f47e2
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 1%
+source-wordcount: '598'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +19,7 @@ Längeres Caching in Dynamic Media mit offenen APIs besteht aus [CDN-Ebenen-Cach
 
 ## CDN-Ebenen-Caching {#cdn-layer-caching}
 
-Die Antworten auf die Asset-Bereitstellung werden über einen längeren Zeitraum im [Adobe Managed CDN](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) zwischengespeichert, um die Leistung zu maximieren und die Auslastung der Quelle zu minimieren. Diese Zwischenspeicherung wird vollständig von Adobe verwaltet, um Endbenutzern ein einheitlich hochwertiges Erlebnis zu gewährleisten. Die Aufbewahrungsfrist im Cache ist absichtlich leistungsoptimiert und kann von Benutzenden nicht angepasst werden, um die Zuverlässigkeit und effiziente Bereitstellung von Inhalten für alle Kundinnen und Kunden zu gewährleisten.
+Die Antworten auf die Asset-Bereitstellung werden über einen längeren Zeitraum im [Adobe Managed CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) zwischengespeichert, um die Leistung zu maximieren und die Auslastung der Quelle zu minimieren. Diese Zwischenspeicherung wird vollständig von Adobe verwaltet, um Endbenutzern ein einheitlich hochwertiges Erlebnis zu gewährleisten. Die Aufbewahrungsfrist im Cache ist absichtlich leistungsoptimiert und kann von Benutzenden nicht angepasst werden, um die Zuverlässigkeit und effiziente Bereitstellung von Inhalten für alle Kundinnen und Kunden zu gewährleisten.
 
 Alle Versand-URLs werden über einen längeren Zeitraum am Edge (Fastly) zwischengespeichert, um eine optimale Leistung zu gewährleisten. Die zwischengespeicherten Versandobjekte umfassen statische Ausgabedarstellungen, Videos, Binärdateien für Originalbilder und dynamisch umgewandelte Bilder wie skalierte oder neu formatierte Assets, die über URL-Parameter generiert wurden. <!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
@@ -28,7 +29,7 @@ Die Antworten zur Asset-Bereitstellung enthalten eine `Cache-Control`-Kopfzeile 
 
 ### Anpassen von Cache-Control-Kopfzeilen {#customizing-cache-control-headers}
 
-Wenn Sie die Cache-Zeit bis zum Erreichen der Live-Werte über die Standardkonfiguration hinaus erhöhen, erhöht sich die Wahrscheinlichkeit, veraltete Inhalte bereitzustellen, was die Sichtbarkeit von Inhaltsaktualisierungen im Endbenutzererlebnis verzögern kann. Wenn Sie das Verhalten der Cache-Steuerung für Ihren spezifischen Anwendungsfall ändern müssen, können Sie benutzerdefinierte CDN-Regeln konfigurieren, um Antwort-Header anzupassen. Auf diese Weise können Sie je nach Ihren Anforderungen unterschiedliche Aufbewahrungsfristen im Cache festlegen. Siehe [Benutzerdefinierte CDN-Regeln von AEM für Antwort-Header](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
+Wenn Sie die Cache-Zeit bis zum Erreichen der Live-Werte über die Standardkonfiguration hinaus erhöhen, erhöht sich die Wahrscheinlichkeit, veraltete Inhalte bereitzustellen, was die Sichtbarkeit von Inhaltsaktualisierungen im Endbenutzererlebnis verzögern kann. Wenn Sie das Verhalten der Cache-Steuerung für Ihren spezifischen Anwendungsfall ändern müssen, können Sie benutzerdefinierte CDN-Regeln konfigurieren, um Antwort-Header anzupassen. Auf diese Weise können Sie je nach Ihren Anforderungen unterschiedliche Aufbewahrungsfristen im Cache festlegen. Siehe [Benutzerdefinierte CDN-Regeln von AEM für Antwort-Header](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
 
 ```
 responseTransformations:
@@ -54,7 +55,7 @@ Jedes Mal, wenn ein Asset aktualisiert, gelöscht oder geändert wird (alle Meta
 
 ### Manuelle Cache-Bereinigung {#manual-cache-purging}
 
-Wenn zwischengespeicherte Inhalte manuell gelöscht werden müssen, können Sie dies mithilfe der Cache-Invalidierungsfunktionen von AEM tun. Detaillierte Anweisungen zum Bereinigen bestimmter Cache-URLs finden Sie unter [AEM CDN Cache Invalidation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
+Wenn zwischengespeicherte Inhalte manuell gelöscht werden müssen, können Sie dies mithilfe der Cache-Invalidierungsfunktionen von AEM tun. Detaillierte Anweisungen zum Bereinigen bestimmter Cache-URLs finden Sie unter [AEM CDN Cache Invalidation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
 
 ## Häufig gestellte Fragen{#faq-cache-management}
 

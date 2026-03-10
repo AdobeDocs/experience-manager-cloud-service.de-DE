@@ -2,12 +2,13 @@
 title: Unterstützung für Adobe Experience Manager as a Cloud Service-Inhaltsfragmente in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in Adobe Experience Manager.
 feature: Content Fragments, Assets HTTP API
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 98%
+source-wordcount: '1862'
+ht-degree: 97%
 
 ---
 

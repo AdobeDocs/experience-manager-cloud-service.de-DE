@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Rotations-Sets arbeiten
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 100%
+source-wordcount: '1962'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    >[!IMPORTANT]
    >
-   >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
+   >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Aufnahme erstellt.
 
 1. [Laden Sie die Bilder für mehrere Ansichten hoch](#uploading-assets-for-spin-sets).
 
@@ -110,7 +111,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotations-Sets erstellen.
 
 >[!NOTE]
 >
->Sie können Rotations-Sets auch automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/config-dm.md) erstellen. **Wichtig:** Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
+>Sie können Rotations-Sets auch automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/config-dm.md) erstellen. **Wichtig:** Stapelsätze werden vom IPS (Image Production System) bei der Asset-Aufnahme erstellt.
 >
 >Siehe „Erstellen von Batch-Satz-Vorgaben zum automatischen Erzeugen von Bild- und Rotations-Sets“ unter [Konfigurieren von Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 

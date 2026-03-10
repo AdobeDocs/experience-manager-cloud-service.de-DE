@@ -4,17 +4,18 @@ description: Verarbeiten Sie Ihre digitalen Assets mit Cloud-nativen und skalier
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 100%
+source-wordcount: '843'
+ht-degree: 99%
 
 ---
 
-# Übersicht über die Erfassung und Verarbeitung von Assets mit Asset-Microservices {#asset-microservices-overview}
+# Übersicht über die Aufnahme und Verarbeitung von Assets mit Asset-Microservices {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] bietet eine Cloud-native Möglichkeit, Experience Manager-Programme und -Funktionen zu nutzen. Eines der Schlüsselelemente dieser neuen Architektur ist die auf Asset-Microservices basierende Erfassung und Verarbeitung von Assets. Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud Services. Adobe verwaltet die Cloud Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Die wichtigsten Vorteile von Cloud-nativen Asset-Microservices sind:
+Adobe Experience Manager as a [!DNL Cloud Service] bietet eine Cloud-native Möglichkeit, Experience Manager-Programme und -Funktionen zu nutzen. Eines der Schlüsselelemente dieser neuen Architektur ist die auf Asset-Microservices basierende Aufnahme und Verarbeitung von Assets. Asset-Microservices bieten eine skalierbare und widerstandsfähige Verarbeitung von Assets mithilfe von Cloud-Services. Adobe verwaltet die Cloud-Services für eine optimale Handhabung verschiedener Asset-Typen und Verarbeitungsoptionen. Die wichtigsten Vorteile von Cloud-nativen Asset-Microservices sind:
 
 * Skalierbare Architektur, die eine nahtlose Verarbeitung für ressourcenintensive Vorgänge ermöglicht.
 * Effiziente Indizierung und Textextraktion, die die Leistung Ihrer Experience Manager-Umgebungen nicht beeinträchtigen.
@@ -29,16 +30,16 @@ Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Met
 
 ## Umfangreiche Architektur {#asset-microservices-architecture}
 
-Ein Architekturdiagramm zeigt die Schlüsselelemente für die Erfassung und Verarbeitung von Assets sowie den Fluss von Assets im gesamten System.
+Ein Architekturdiagramm zeigt die Schlüsselelemente für die Aufnahme und Verarbeitung von Assets sowie den Fluss von Assets im gesamten System.
 
 <!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Erfassung und Verarbeitung von Assets mit Asset-Microservices](assets/asset-microservices-overview.png "Erfassung und Verarbeitung von Assets mit Asset-Microservices")
+![Aufnahme und Verarbeitung von Assets mit Asset-Microservices](assets/asset-microservices-overview.png "Aufnahme und Verarbeitung von Assets mit Asset-Microservices")
 
-Die wichtigsten Schritte der Erfassung und Verarbeitung mithilfe von Asset-Microservices sind:
+Die wichtigsten Schritte der Aufnahme und Verarbeitung mithilfe von Asset-Microservices sind:
 
 * Clients wie Webbrowser oder Adobe Asset Link senden eine Upload-Anfrage an [!DNL Experience Manager] und beginnen mit dem Hochladen der Binärdatei direkt in den binären Cloud-Speicher.
 * Nach Abschluss des direkten binären Uploads benachrichtigt der Client [!DNL Experience Manager].
@@ -47,7 +48,7 @@ Die wichtigsten Schritte der Erfassung und Verarbeitung mithilfe von Asset-Micro
 * Die Ergebnisse der Verarbeitung, z. B. Ausgabedarstellungen, werden im binären Cloud-Speicher gespeichert.
 * Experience Manager wird benachrichtigt, dass die Verarbeitung abgeschlossen ist und direkte Verweise auf die generierten Binärdateien (Ausgabedarstellungen) vorhanden sind. Die generierten Ausgabedarstellungen sind in [!DNL Experience Manager] für das hochgeladene Asset verfügbar.
 
-Dies ist der grundlegende Fluss der Asset-Erfassung und -Verarbeitung. Falls konfiguriert, kann Experience Manager auch ein benutzerdefiniertes Workflow-Modell starten, um die Nachbearbeitung des Assets durchzuführen. Führen Sie beispielsweise benutzerdefinierte Schritte aus, die spezifisch für Ihre Umgebung sind, wie z. B. das Abrufen von Informationen aus einem Unternehmenssystem und das Hinzufügen von Asset-Eigenschaften.
+Dies ist der grundlegende Fluss der Asset-Aufnahme und -Verarbeitung. Falls konfiguriert, kann Experience Manager auch ein benutzerdefiniertes Workflow-Modell starten, um die Nachbearbeitung des Assets durchzuführen. Führen Sie beispielsweise benutzerdefinierte Schritte aus, die spezifisch für Ihre Umgebung sind, wie z. B. das Abrufen von Informationen aus einem Unternehmenssystem und das Hinzufügen von Asset-Eigenschaften.
 
 Der Aufnahme- und Verarbeitungsfluss sind Schlüsselkonzepte der Asset-Microservices-Architektur für Experience Manager.
 

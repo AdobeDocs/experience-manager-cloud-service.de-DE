@@ -2,11 +2,12 @@
 title: Anzeigen einer Vorschau von Assets vor deren Verwendung auf AEM Sites-Seiten
 description: Dynamic Media mit OpenAPI-Funktionen ermöglicht die Vorschau von Assets auf Vorschauseiten von Adobe Experience Manager (AEM) Sites. Diese Asset-Vorschau ermöglicht es Ihnen und Ihren Stakeholdern, die Aktualisierungen Ihrer Assets zu überprüfen und zu validieren, bevor Sie die Authoring-Seiten (mit aktualisierten Assets) für den öffentlichen Gebrauch veröffentlichen.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
-source-git-commit: 3f3e091d09b94418fc2cda0bd3b3ce950555b7a9
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '737'
+ht-degree: 99%
 
 ---
 

@@ -3,13 +3,14 @@ title: Verbessern der Inhaltserkennung mit KI-generierten Metadaten in der Admin
 description: Erfahren Sie, wie Sie die Inhaltssuche mit KI-generierten Metadaten in der Admin-Ansicht verbessern können
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
+exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 76%
+source-wordcount: '675'
+ht-degree: 75%
 
 ---
-
 
 # Verbessern der Inhaltssuche mit KI-generierten Metadaten {#ai-smart-tags}
 

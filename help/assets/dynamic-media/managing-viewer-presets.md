@@ -4,11 +4,12 @@ description: In diesem Abschnitt erfahren Sie, wie Dynamic Media-Viewer-Vorgaben
 contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4301'
-ht-degree: 100%
+source-wordcount: '4309'
+ht-degree: 99%
 
 ---
 
@@ -78,7 +79,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
 <table>
  <tbody>
   <tr>
-   <td><strong>Karussellset</strong><br /> </td>
+   <td><strong>Karussell-Set</strong><br /> </td>
    <td><p>Hotspots, Imagemaps oder beide werden zu einer Serie von mindestens zwei Bildern hinzugefügt. Kunden können einen Bildschwenk nach links oder rechts durchführen und dann auf einen Hotspot auf einem Bild klicken, um weitere Details aufzurufen oder direkt über eine Landingpage, Kategorieseite oder Homepage einer Website zu kaufen.</p> </td>
   </tr>
     <tr>
@@ -94,8 +95,8 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
    <td>Zeigt ein Bild des gezoomten Bereichs im Original-Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll.</td>
   </tr>
   <tr>
-   <td><strong>Bildset</strong></td>
-   <td>Im Bildset-Viewer können Benutzer unterschiedliche Ansichten oder Farbvariationen eines Elements sehen, indem sie auf eine Miniatur klicken. Dieser Viewer bietet auch Zoomtools, mit denen Bilder genauer untersucht werden können.</td>
+   <td><strong>Bild-Set</strong></td>
+   <td>Im Bild-Set-Viewer können Benutzer unterschiedliche Ansichten oder Farbvariationen eines Elements sehen, indem sie auf eine Miniatur klicken. Dieser Viewer bietet auch Zoomtools, mit denen Bilder genauer untersucht werden können.</td>
   </tr>
   <tr>
    <td><strong>Interaktives Bild</strong></td>
@@ -103,11 +104,11 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Interaktives Video</strong></td>
-   <td>Miniaturen werden Zeitleistensegmenten in einem Video hinzugefügt, auf die ein Kunde anschließend klicken kann, um mehr Informationen zu erhalten oder den Kauf direkt über eine Landingpage, Kategorieseite oder Homepage einer Website vorzunehmen.</td>
+   <td>Miniaturen werden Timeline-Segmenten in einem Video hinzugefügt, auf die ein Kunde anschließend klicken kann, um mehr Informationen zu erhalten oder den Kauf direkt über eine Landingpage, Kategorieseite oder Homepage einer Website vorzunehmen.</td>
   </tr>
   <tr>
    <td><strong>Gemischte Medien</strong></td>
-   <td>Zeigt unterschiedliche Medientypen in einem Viewer an. Dort können Sie Rotationssets, Bildsets, Bilder und Videos aufnehmen.</td>
+   <td>Zeigt unterschiedliche Medientypen in einem Viewer an. Dort können Sie Rotations-Sets, Bild-Sets, Bilder und Videos aufnehmen.</td>
   </tr>
   <tr>
    <td><strong>Panoramabild</strong></td>
@@ -118,11 +119,11 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
     </ul> <p>Sowohl das Kriterium für das Seitenverhältnis als auch das für die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente für „Panoramamedien“.</p></td>
   </tr>
     <tr>
-   <td><strong>Smartes Zuschneiden von Videos</strong><br /> </td>
+   <td><strong>Intelligenter Zuschnitt von Videos</strong><br /> </td>
    <td><p>Verwenden Sie diesen Viewer, um den Fokus in einem Videos automatisch zu erkennen und das Video entsprechend zuzuschneiden.</p> </td>
   </tr>
   <tr>
-   <td><strong>Rotationsset</strong></td>
+   <td><strong>Rotations-Set</strong></td>
    <td>Stellt mehrere Ansichten eines Bildes bereit, sodass Benutzer den Gegenstand drehen können, um ihn von allen Seiten zu betrachten.</td>
   </tr>
   <tr>
@@ -200,12 +201,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ImageSet_dark</td>
-   <td>Bildset</td>
+   <td>Bild-Set</td>
    <td><code>html5_zoomviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>ImageSet_light</td>
-   <td>Bildset</td>
+   <td>Bild-Set</td>
    <td><code>html5_zoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -374,7 +375,7 @@ Experience Manager zeigt viele verschiedene Viewer-Vorgaben, wenn Sie ein Asset 
 
 **So erhöhen Sie die Anzahl angezeigter Viewer-Vorgaben:**
 
-1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. https://localhost Navigieren Sie zu CRXDE Lite ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten mit der Viewer-Vorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
    ![chlimage_1-221](/help/assets/dynamic-media/assets/chlimage_1-221.png)
@@ -540,9 +541,9 @@ Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon 
 **So aktivieren oder deaktivieren Sie Viewer-Vorgaben:**
 
 1. Klicken Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und wählen Sie dann links in der Leiste **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]**.
-1. Klicken Sie auf der Seite „Viewer-Vorgabe“ unter der Spaltenüberschrift **[!UICONTROL Status]** auf die Umschaltfläche zum Aktivieren bzw. Deaktivieren einer Viewer-Vorgabe.
+1. Klicken Sie auf der Seite „Viewer-Vorgabe“ unter der Spaltenüberschrift **[!UICONTROL Status]** auf den Umschalter zum Aktivieren bzw. Deaktivieren einer Viewer-Vorgabe.
 
-   Bei aktivierten Viewer-Vorgaben wird die Umschaltfläche rechts in einem blauen Feld angezeigt; bei deaktivierten Viewer-Vorgaben wird die Umschaltfläche links in einem hellgrauen Feld angezeigt.
+   Bei aktivierten Viewer-Vorgaben wird die Umschaltfläche rechts in einem blauen Feld angezeigt; bei deaktivierten Viewer-Vorgaben wird den Umschalter links in einem hellgrauen Feld angezeigt.
 
 ## Veröffentlichen von Viewer-Vorgaben {#publishing-viewer-presets}
 

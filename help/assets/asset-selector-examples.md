@@ -2,11 +2,12 @@
 title: Asset-Wähler für [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Beispiele zur Verwendung des Asset-Wählers für Anpassungen gemäß den Anforderungen.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 98%
 
 ---
 

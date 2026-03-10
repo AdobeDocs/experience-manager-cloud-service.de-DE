@@ -1,13 +1,14 @@
 ---
 title: Anzeigen und Verwalten von Ausgabedarstellungen in Experience Manager Assets
 description: Erfahren Sie, wie AEM Assets und Dynamic Media die effektive Bildverwaltung mit statischen und dynamischen Bild-Ausgabedarstellungen vereinfachen.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '646'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 99%
 
 ---
 
@@ -62,14 +63,14 @@ Gehen Sie folgendermaßen vor, um dynamische Ausgabedarstellungen von Bildern in
 
 1. Klicken Sie auf das Asset, das Sie anzeigen möchten, und klicken Sie auf **[!UICONTROL Details]**.
 
-1. Klicken Sie im rechten Menü auf das Symbol **[!UICONTROL Dynamic Media]**. Im Bedienfeld **[!UICONTROL Dynamic Media]** werden Dynamic Media-Ausgabedarstellungen und Ausgabedarstellungen für smartes Zuschneiden angezeigt.
+1. Klicken Sie im rechten Menü auf das Symbol **[!UICONTROL Dynamic Media]**. Im Bedienfeld **[!UICONTROL Dynamic Media]** werden Dynamic Media-Ausgabedarstellungen und Ausgabedarstellungen für intelligenten Zuschnitt angezeigt.
 
    ![Dynamische Ausgabedarstellungen](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Wählen Sie die Ausgabedarstellung für die Vorschau aus und klicken Sie auf **URL kopieren**, um die URL der ausgewählten Ausgabedarstellung zu kopieren. Klicken Sie auf **Ausgabedarstellung herunterladen**, um die Ausgabedarstellungen der Bild-Assets herunterzuladen.
-1. Wählen Sie die Ausgabedarstellung für das smarte Zuschneiden aus, um eine Vorschau anzuzeigen, und klicken Sie auf **URL kopieren**, um die URL der ausgewählten Ausgabedarstellung zu kopieren.
-1. Klicken Sie auf das ![Download-Symbol](assets/do-not-localize/download-icon.png), um alle verfügbaren Ausgabedarstellungen für smartes Zuschneiden als einzelne ZIP-Datei herunterzuladen.
+1. Wählen Sie die Ausgabedarstellung für den intelligenten Zuschnitt aus, um eine Vorschau anzuzeigen, und klicken Sie auf **URL kopieren**, um die URL der ausgewählten Ausgabedarstellung zu kopieren.
+1. Klicken Sie auf das ![Download-Symbol](assets/do-not-localize/download-icon.png), um alle verfügbaren Ausgabedarstellungen für intelligenten Zuschnitt als einzelne ZIP-Datei herunterzuladen.
    ![Download-Symbol](/help/assets/assets/smartcrop-rendition.png)
 
    >[!NOTE]

@@ -3,17 +3,18 @@ title: Automatisches Tagging von Assets mit [!DNL Adobe AI] Smart-Service
 description: Kennzeichnen Sie Assets mit einem Service für künstliche Intelligenz, der kontextbezogene und beschreibende Business-Tags anwendet.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
+exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1516'
 ht-degree: 98%
 
 ---
 
-
 # Training zu Smart-Tags
 
-Mit dem Smart-Tags-Training können Sie Ihre Tags trainieren. Sie können Details angeben, wenn die entsprechenden Tags nicht vorhanden sind. Es verwendet ein KI-Framework von [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
+Mit dem Smart-Tags-Training können Sie Ihre Tags trainieren. Sie können Details angeben, wenn die entsprechenden Tags nicht vorhanden sind. Es verwendet ein KI-Framework von [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf hochgeladene Assets an.
 
 ## Bestimmen der Anforderungen für ein Smart-Tags-Training {#smart-tag-training-requirement}
 

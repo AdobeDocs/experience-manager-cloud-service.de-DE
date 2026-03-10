@@ -3,10 +3,11 @@ title: Integrieren Sie [!DNL AEM Assets] mit [!DNL Figma].
 description: Erfahren Sie, wie Sie [!DNL AEM Assets] mit [!DNL Figma] integrieren, um auf die Assets Ihres Unternehmens in Ihrem  [!DNL Figma] -Design-Workflow zuzugreifen und sie zu verwenden.
 hide: false
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: a9c1f5472092b3b9fa7a5e5570feb92f32e9ef6c
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '552'
 ht-degree: 72%
 
 ---

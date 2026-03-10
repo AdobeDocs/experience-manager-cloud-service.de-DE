@@ -4,11 +4,12 @@ description: Dieser Newsletter soll Ihnen helfen, sich mit Dynamic Media und Dyn
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '947'
+ht-degree: 99%
 
 ---
 
@@ -65,7 +66,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Entdecken Sie, wie Sie die Zuschneidefunktion von Dynamic Media verwenden.
    * Nutzen Sie ein kostenloses Audit von Adobe, um Dynamic Media Classic optimal einzusetzen.
    * Informieren Sie sich über die neue Benutzeroberfläche von Dynamic Media Classic.
-   * Treffen Sie `Georgia Myers`, Manager of Success Manager für Adobe Experience Cloud.
+   * Treffen Sie `Georgia Myers`, Manager of Customer Success für Adobe Experience Cloud.
 
 * **[Januar 2020, Ausgabe 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=de)**
 
@@ -138,7 +139,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Sehen Sie sich wichtige Anleitungsvideos in Experience League an.
    * Erfahren Sie mehr über die bevorstehende Adobe Insider Tour.
    * Informieren Sie sich darüber, wie Sie digitale Assets vor Piraterie schützen können.
-   * Erfahren Sie mehr über die KI-gesteuerte Funktion für das smarte Zuschneiden von Bildern.
+   * Erfahren Sie mehr über die KI-gesteuerte Funktion für den intelligenten Zuschnitt von Bildern.
    * Treffen Sie `Alex Thiers`, eine der treibenden Kräfte hinter vielen der großartigen Funktionen und Innovationen in Dynamic Media und Dynamic Media Classic.
 
 * **[Mai 2019, Ausgabe 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=de)**
@@ -149,7 +150,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Sehen Sie sich wichtige Anleitungsvideos in Experience League an.
    * Informieren Sie sich über die bevorstehende Adobe Insider Tour.
    * Lesen Sie eine dreiteilige Blog-Serie, um Ihre Rich-Media-Strategie zu aktualisieren.
-   * Erfahren Sie mehr über die KI-gesteuerte Funktion für das smarte Zuschneiden von Videos.
+   * Erfahren Sie mehr über die KI-gesteuerte Funktion für den intelligenten Zuschnitt von Videos.
 
 * **[April 2019, Ausgabe 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=de)**
 

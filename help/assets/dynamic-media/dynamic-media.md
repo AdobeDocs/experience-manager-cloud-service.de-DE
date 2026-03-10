@@ -4,11 +4,12 @@ description: Informationen zu Dynamic Media und dazu, wie Sie Dynamic Media zum 
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
-source-wordcount: '655'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +45,7 @@ Funktionen, die nur für Dynamic Media vorgesehen sind:
 * [Interaktive Videos](interactive-videos.md)
 * [Sets für gemischte Medien](mixed-media-sets.md)
 * [Panoramabilder](panoramic-images.md)
-* [Rotationssets](spin-sets.md)
+* [Rotations-Sets](spin-sets.md)
 * [Video](video.md)
 * [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
 * [Verwalten von Assets](managing-assets.md)
@@ -66,7 +67,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 Anhand der folgenden Merkmale können Sie erkennen, ob Dynamic Media aktiviert ist:
 
 * Dynamische Ausgabedarstellungen sind beim Herunterladen oder Anzeigen von Assets in der Vorschau verfügbar.
-* Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar.
+* Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar.
 * PTIFF-Ausgabedarstellungen werden erstellt.
 
 Wenn Sie auf ein Bild-Asset klicken, sieht die Ansicht des Assets mit aktivierter Dynamic Media-Funktion anders aus. Dynamic Media nutzt die On-Demand-HTML5-Viewer.
@@ -77,9 +78,9 @@ Dynamische Ausgabedarstellungen wie Bild- und Viewer-Vorgaben (unter **[!UICONTR
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### Bildsets, Rotationssets und Sets für gemischte Medien in Dynamic Media {#image-sets-spins-sets-mixed-media-sets}
+### Bild-Sets, Rotationssets und Sets für gemischte Medien in Dynamic Media {#image-sets-spins-sets-mixed-media-sets}
 
-Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar, wenn Dynamic Media aktiviert ist.
+Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar, wenn Dynamic Media aktiviert ist.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 

@@ -3,13 +3,14 @@ title: Kaskadierende Metadaten
 description: In diesem Artikel wird beschrieben, wie Sie kaskadierende Metadaten für Assets in der Asset-Ansicht definieren.
 feature: Metadata
 role: Admin, User
-source-git-commit: 2bb309afc372fe18ce274a2813ed25cba22eb4de
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1220'
 ht-degree: 29%
 
 ---
-
 
 # Kaskadierende Metadaten - Assets-Ansicht{#cascading-metadata-assets-view}
 
@@ -43,7 +44,7 @@ Wir verwenden ein Dropdown-Feld mit dem Namen `Image` als Beispiel, um Dateien b
 >
 >Sie können Regeln nur basierend auf Dropdown-Feldern erstellen.
 
-Unabhängig vom ausgewählten Asset-Typ müssen Sie die Copyright-Informationen als erforderliches Feld anzeigen. Sie können die [vordefinierten Metadatenkomponenten“ verwenden &#x200B;](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
+Unabhängig vom ausgewählten Asset-Typ müssen Sie die Copyright-Informationen als erforderliches Feld anzeigen. Sie können die [vordefinierten Metadatenkomponenten“ verwenden ](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
 
 ### Erstellen von Metadaten in Forms {#build-metadata-schema-forms}
 
@@ -146,7 +147,7 @@ Gehen Sie wie folgt vor, um ein vorhandenes Metadatenformular zu ändern:
 
 >[!NOTE]
 > 
->Um frühzeitig auf die kaskadierenden Metadaten in Ihrem Assets View-Konto zugreifen zu können[&#x200B; (erstellen und senden Sie einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>Um frühzeitig auf die kaskadierenden Metadaten in Ihrem Assets View-Konto zugreifen zu können[ (erstellen und senden Sie einen Adobe-Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Nächste Schritte {#next-steps}
 
@@ -157,4 +158,3 @@ Gehen Sie wie folgt vor, um ein vorhandenes Metadatenformular zu ändern:
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
-

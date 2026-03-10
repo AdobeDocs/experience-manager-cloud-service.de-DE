@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie in Dynamic Media Regelsätze bereitstellen, u
 contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 95%
+source-wordcount: '700'
+ht-degree: 99%
 
 ---
 

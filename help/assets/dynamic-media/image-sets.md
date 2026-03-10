@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie in Dynamic Media mit Bild-Sets arbeiten.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 100%
+source-wordcount: '2151'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +50,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    >[!IMPORTANT]
    >
-   >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
+   >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Aufnahme erstellt.
 
 1. [Laden Sie die Primärquellen-Bilder für mehrere Ansichten hoch](#uploading-assets-in-image-sets).
 
@@ -128,7 +129,7 @@ Sie können Bild-Sets über die Benutzeroberfläche oder die API erstellen.
 >[!NOTE]
 >
 >Sie können Bild-Sets auch automatisch über [Stapelsatzvorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md) erstellen.
->**Wichtig:** Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt.
+>**Wichtig:** Stapelsätze werden vom IPS (Image Production System) bei der Asset-Aufnahme erstellt.
 
 Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Anordnung oder Sortierung der Assets manuell ändern, nachdem sie hinzugefügt wurden.
 
@@ -198,7 +199,7 @@ Sie können Bild-Sets entweder in der Benutzeroberfläche oder automatisch über
 
 >[!IMPORTANT]
 >
->Stapelsätze werden vom IPS [Image Production System] bei der Asset-Erfassung erstellt.
+>Stapelsätze werden vom IPS [Image Production System] bei der Asset-Aufnahme erstellt.
 
 Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberfläche angezeigt. Sie können diese Sets auf drei verschiedene Arten anzeigen. (Diese Methoden sind auch verfügbar, wenn Sie die Bild-Sets in der Benutzeroberfläche erstellt haben.)
 

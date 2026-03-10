@@ -2,13 +2,14 @@
 title: Erneutes Verarbeiten digitaler Assets
 description: Erfahren Sie mehr über verschiedene Methoden zur Neuverarbeitung digitaler Assets
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '682'
+ht-degree: 99%
 
 ---
 
@@ -70,9 +71,9 @@ Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging digitaler A
 
 Lesen Sie mehr zum [Erneuten Verarbeiten von Farb-Tags für vorhandene Bilder in DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de#color-tags-existing-images).
 
-### Smartes Zuschneiden {#reprocessing-smart-crop}
+### Intelligenter Zuschnitt {#reprocessing-smart-crop}
 
-Lesen Sie mehr zum [Smarten Zuschneiden in Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de), womit Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Smarter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden können.
+Lesen Sie mehr zum [Intelligenter Zuschnitt in Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de), womit Sie bestimmte Zuschneidefunktionen (**[!UICONTROL Intelligenter Zuschnitt]** und Pixelzuschnitt) und Scharfzeichnungskonfigurationen auf die hochgeladenen Assets anwenden können.
 
 ### Metadaten {#reprocessing-metadata}
 

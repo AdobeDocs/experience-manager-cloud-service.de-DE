@@ -4,11 +4,12 @@ description: Berichte über Ihre Assets in  [!DNL Adobe Experience Manager Asset
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '973'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 98%
 
 ---
 
@@ -156,7 +157,7 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 
 1. Fügen Sie den Eigenschaftspfad mit der Auswahl für den Eigenschaftspfad im `jcr:content`-Knoten in CRXDE hinzu. Alternativ können Sie den Pfad im Feld „Eigenschaftspfad“ eingeben.
 
-   ![Den Eigenschaftspfad in den Pfaden in jcr:content zuordnen](assets/property_picker.png)
+   ![Ordnen Sie den Eigenschaftspfad den Pfaden in JCR zu:content](assets/property_picker.png)
 
    Klicken Sie auf **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte oben, um weitere benutzerdefinierte Spalten hinzuzufügen.
 

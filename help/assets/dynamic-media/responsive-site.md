@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie mit der responsiven Code-Funktion optimierte 
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '338'
+ht-degree: 98%
 
 ---
 

@@ -4,11 +4,12 @@ description: Von [!DNL Experience Manager Assets] as a [!DNL Cloud Service] unte
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 100%
+source-wordcount: '1088'
+ht-degree: 99%
 
 ---
 
@@ -270,7 +271,7 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#suppor
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif | |
 | STL | Stereolithografie | application/vnd.ms-pki.stl | |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung der Erfassung und Erstellung von Miniaturansichten; 3D-Vorschau wird noch nicht unterstützt.* USDZ ist ein 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung der Aufnahme und Erstellung von Miniaturansichten; 3D-Vorschau wird noch nicht unterstützt.* USDZ ist ein 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
 
 **Siehe auch**
 

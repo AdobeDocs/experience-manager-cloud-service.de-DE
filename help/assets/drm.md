@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1368'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1374'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +30,7 @@ Sie können den Ablaufstatus eines Assets an den folgenden Stellen einsehen:
 
 * **Kartenansicht**: Ein abgelaufenes Asset ist entsprechend auf der Karte gekennzeichnet.
 * **Listenansicht**: Für abgelaufene Assets zeigt die Spalte **[!UICONTROL Status]** das Banner **[!UICONTROL Abgelaufen]** an.
-* **Zeitleiste**: Sie können den Ablaufstatus eines Assets in der Zeitleiste einsehen. Wählen Sie das Asset und anschließend „Zeitleiste“ aus.
+* **Timeline**: Sie können den Ablaufstatus eines Assets in der Timeline einsehen. Wählen Sie das Asset und anschließend „Timeline“ aus.
 * **Leiste „Verweise“**: Sie können außerdem den Ablaufstatus von Assets in der Leiste **[!UICONTROL Verweise]** einsehen. Hier werden der Asset-Ablaufstatus und die Beziehungen zwischen ebenenübergreifenden Assets und referenzierten Teil-Assets, Sammlungen und Projekten verwaltet.
 
 Gehen Sie wie folgt vor, um referenzierende Webseiten und ebenenübergreifende Assets für ein Asset anzuzeigen:

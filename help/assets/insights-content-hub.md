@@ -2,10 +2,11 @@
 title: Anzeigen von Assets Insights in Content Hub
 description: Erfahren Sie, wie Sie Asset Insights in [!DNL Content Hub] anzeigen können
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '471'
 ht-degree: 60%
 
 ---

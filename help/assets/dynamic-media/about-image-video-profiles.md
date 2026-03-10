@@ -4,11 +4,12 @@ description: Ein Bildprofil oder ein Videoprofil ist ein Rezept dafür, welche O
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1397'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +41,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 
 Sie können Assets in einem Ordner, der bereits über ein später von Ihnen geändertes Dynamic Media-Bildprofil oder ein Dynamic Media-Videoprofil verfügt, neu verarbeiten.
 
-Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für smartes Zuschneiden hinzuzufügen. Anstatt nun die Assets auszuwählen und erneut in den Ordner hochzuladen, führen Sie einfach den Workflow *Dynamic Media Reprocess* aus.
+Angenommen, Sie haben ein Dynamic Media-Bildprofil erstellt und es einem Ordner zugewiesen. Bei allen Bild-Assets, die Sie in den Ordner hochgeladen haben, wurde automatisch das Bildprofil auf die Assets angewendet. Später entscheiden Sie sich jedoch, dem Profil ein neues Verhältnis für intelligenten Zuschnitt hinzuzufügen. Anstatt nun die Assets auszuwählen und erneut in den Ordner hochzuladen, führen Sie einfach den Workflow *Dynamic Media Reprocess* aus.
 
 Sie können den Neuverarbeitungs-Workflow für ein Asset ausführen, bei dem die Verarbeitung beim ersten Mal fehlgeschlagen ist. Selbst wenn Sie kein Bildprofil oder Videoprofil bearbeitet haben oder bereits ein Bildprofil oder ein Videoprofil angewendet haben, können Sie den Workflow zur erneuten Verarbeitung auch dann jederzeit für einen Asset-Ordner ausführen.
 
@@ -72,7 +73,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
    * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
 
-1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Zeitleiste]**.
+1. Wählen Sie links oben auf der Seite aus dem Dropdown-Menü die Option **[!UICONTROL Timeline]**.
 1. Klicken Sie unten links auf der Seite rechts neben dem [!UICONTROL Kommentarfeld] auf das Caret-Symbol (**^**).
 
    ![Screenshot von Assets in Experience Manager, der einen ausgewählten Ordner mit Assets zeigt. Die Dropdown-Liste „Timeline“ ist hervorgehoben, die Schaltfläche „Workflow starten“ ist hervorgehoben, und das Karat-Symbol rechts neben dem Kommentarfeld ist ebenfalls hervorgehoben](/help/assets/dynamic-media/assets/reprocess-assets1.png).

@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie Dynamic Media-Video- oder -Bild-Assets in ein
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '384'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +49,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Website](respo
 1. Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
 1. Klicken Sie auf **[!UICONTROL Einbetten]**.
 1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und klicken Sie dann auf **[!UICONTROL Schließen]**.
-1. Fügen Sie den Integrations-Code in die Web-Seiten ein.
+1. Fügen Sie den Einbettungs-Code in die Web-Seiten ein.
 
 ## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 

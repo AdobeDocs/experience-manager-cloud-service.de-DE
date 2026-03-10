@@ -4,11 +4,12 @@ description: '[!DNL Experience Manager Assets] und Media Library für das Asset-
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Developer, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 99%
 
 ---
 
@@ -82,7 +83,7 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Zugriff auf Query Builder (API), um die Suchfunktion zu erweitern.
 * Erstellen von statischen Tags.
 * Erstellen von Projekten und Aufgaben.
-* Aktivitäts-Stream (Zeitleiste).
+* Aktivitäts-Stream (Timeline).
 * Kommentare und Anmerkungen.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?

@@ -2,13 +2,14 @@
 title: Wie können Sie die Assets-Ansicht in AEM nutzen?
 description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht in AEM.  Adobe nutzt sein Know-how bei der Unterstützung von Marketing- und Kreativ-Profis und bietet damit ein völlig neues Anwendungserlebnis.
 mini-toc-levels: 3
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
-workflow-type: ht
-source-wordcount: '966'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 99%
 
 ---
 
@@ -99,7 +100,7 @@ Richten Sie mithilfe der Assets-Ansicht schnell eine Ordnerstruktur für Ihre Or
 
 ### Search-First-Ansatz für mehr Effizienz {#search-first}
 
-Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie müssen nicht mehr mühevoll unzählige Dateien und Ordner manuell durchgehen. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Search-First-Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smarttags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
+Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation durch Suchvorgänge mit modernsten Funktionen. Sie müssen nicht mehr mühevoll unzählige Dateien und Ordner manuell durchgehen. Alle Benutzenden können sofort das perfekte Bild, Video oder Dokument für beeindruckende Marketing-Kampagnen, faszinierende Präsentationen und ansprechende Inhalte finden. Mit unserer Search-First-Suchmaschine können Sie mühelos durch Asset-Typen, Metadaten, Smart-Tags und sogar den Inhalt selbst navigieren, ohne das genaue Keyword zu kennen. Nutzen Sie die Zukunft des DAM mit unserem Search-First-Ansatz und schöpfen Sie das volle Potenzial Ihrer digitalen Asset-Bibliothek aus.
 
 ![Search-First-Ansatz](assets/search-first.gif)
 

@@ -5,11 +5,12 @@ contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4277'
-ht-degree: 100%
+source-wordcount: '4283'
+ht-degree: 99%
 
 ---
 
@@ -397,20 +398,20 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
 -->
 
-## Zeitleiste {#timeline}
+## Timeline {#timeline}
 
-In der Zeitleiste können Sie diverse Ereignisse für ein ausgewähltes Objekt ansehen, wie z. B. aktive Workflows für ein Asset, Kommentare/Anmerkungen, Aktivitätsprotokolle und Versionen.
+In der Timeline können Sie diverse Ereignisse für ein ausgewähltes Objekt ansehen, wie z. B. aktive Workflows für ein Asset, Kommentare/Anmerkungen, Aktivitätsprotokolle und Versionen.
 
-![Sortieren von Zeitleisten-Einträgen für ein Asset](assets/sort_timeline.gif)
-*Abbildung: Sortieren von Zeitleisten-Einträgen für ein Asset*
-
->[!NOTE]
->
->In der [Konsole für Sammlungen](/help/assets/manage-collections.md#navigate-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Zeitleiste nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
+![Sortieren von Timeline-Einträgen für ein Asset](assets/sort_timeline.gif)
+*Abbildung: Sortieren von Timeline-Einträgen für ein Asset*
 
 >[!NOTE]
 >
->Die Zeitleiste enthält mehrere [inhaltsfragmentspezifische Optionen](content-fragments/content-fragments.md).
+>In der [Konsole für Sammlungen](/help/assets/manage-collections.md#navigate-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Timeline nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
+
+>[!NOTE]
+>
+>Die Timeline enthält mehrere [inhaltsfragmentspezifische Optionen](content-fragments/content-fragments.md).
 
 ## Kommentieren von Assets {#annotating}
 
@@ -430,7 +431,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
    <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
-1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Zeitleiste einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
+1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
 <!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
@@ -487,11 +488,11 @@ Sie können immer nur eine Anmerkung auf einmal anzeigen.
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
-1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Zeitleiste **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
+1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Timeline **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
-   Wählen Sie im Bedienfeld **[!UICONTROL Zeitleiste]** einen Kommentar aus, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
+   Wählen Sie im Bedienfeld **[!UICONTROL Timeline]** einen Kommentar aus, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
@@ -513,13 +514,13 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus wählen Sie das Symbol **[!U
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um alle Anmerkungen und den Prüfungsstatus zu drucken, überspringen Sie Schritt 3 und fahren Sie direkt mit Schritt 4 fort.
-   * Zum Drucken bestimmter Anmerkungen und des Prüfungsstatus öffnen Sie die [Zeitleiste](/help/assets/manage-digital-assets.md#timeline) und fahren Sie mit Schritt 3 fort.
+   * Zum Drucken bestimmter Anmerkungen und des Prüfungsstatus öffnen Sie die [Timeline](/help/assets/manage-digital-assets.md#timeline) und fahren Sie mit Schritt 3 fort.
 
-1. Zum Drucken bestimmter Anmerkungen wählen Sie die Anmerkungen aus der Zeitleiste aus.
+1. Zum Drucken bestimmter Anmerkungen wählen Sie die Anmerkungen aus der Timeline aus.
 
    <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
-   Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Zeitleiste aus.
+   Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Timeline aus.
 
    <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
@@ -581,7 +582,7 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 
    <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
-1. Um die neue Version anzuzeigen, öffnen Sie in der Zeitleiste die Liste **[!UICONTROL Alle anzeigen]** auf der Detailseite für Assets oder der Assets-Benutzeroberfläche und wählen Sie **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden auf der Registerkarte „Zeitleiste“ aufgeführt. Sie können die Liste filtern, sodass Versionen angezeigt werden, indem Sie auf den Dropdown-Pfeil klicken und **[!UICONTROL Versionen]** aus der Liste auswählen.
+1. Um die neue Version anzuzeigen, öffnen Sie auf der Seite mit den Asset-Details oder in der Benutzeroberfläche „Assets“ die Liste **[!UICONTROL Alle anzeigen]** und wählen Sie **[!UICONTROL Versionen]** aus. Alle für ein Asset erstellten Versionen werden auf der Registerkarte „Timeline“ aufgeführt. Sie können die Liste filtern, sodass Versionen angezeigt werden, indem Sie auf den Dropdown-Pfeil klicken und **[!UICONTROL Versionen]** aus der Liste auswählen.
 
    ![versions_option](assets/versions_option.png)
 
@@ -599,7 +600,7 @@ Mit der Versionierungsfunktion können Sie Folgendes tun:
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. Wählen Sie in der Zeitleiste die Version aus, die Sie vergleichen wollen, und ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu setzen.
+1. Wählen Sie in der Timeline die Version aus, die Sie vergleichen wollen, und ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu setzen.
 
    ![compare_versions](assets/compare_versions.png)
 

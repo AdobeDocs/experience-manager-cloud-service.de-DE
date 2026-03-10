@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie eine Vorschau von Assets in Dynamic Media anz
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 100%
+source-wordcount: '1234'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +19,7 @@ Mit der Vorschau können Sie prüfen, wie ein von Ihnen hochgeladenes digitales 
 
 Ein Viewer ist eine Sammlung verschiedener Einstellungen oder „Vorgaben“. Beispielsweise die Viewer-Anzeigegröße, das Zoom-Verhalten, Farbschemas, Rahmen und Schriftarten, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computer-Bildschirmen und Mobilgeräten sehen.
 
-Sie können die dedizierte Vorschaufunktion für Videos, Rotationssets und Bildsets verwenden, Assets aber auch über von Ihnen erstellte Viewer-Vorgaben in der Vorschau anzeigen. Alternativ dazu können Sie auch Bildvorgaben verwenden, um Ausgabedarstellungen von Bildern anzuzeigen.
+Sie können die dedizierte Vorschaufunktion für Videos, Rotations-Sets und Bild-Sets verwenden, Assets aber auch über von Ihnen erstellte Viewer-Vorgaben in der Vorschau anzeigen. Alternativ dazu können Sie auch Bildvorgaben verwenden, um Ausgabedarstellungen von Bildern anzuzeigen.
 
 * [Anwenden von Bildvorgaben](/help/assets/dynamic-media/image-presets.md)
 * [Anwenden von Viewer-Vorgaben](/help/assets/dynamic-media/viewer-presets.md)
@@ -86,7 +87,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
         </ul> </td>
       </tr>
       <tr>
-      <td>Bildset</td>
+      <td>Bild-Set</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
@@ -95,7 +96,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
         </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild zum ursprünglichen Zoom zurückzusetzen, klicken Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild schrittweise hineinzoomen. Wenn Sie den maximalen Zoom erreichen, wählen Sie erneut das Bild doppelt aus, um den Zoom-Status zurückzusetzen. Ziehen Sie den Cursor über das Bild, um es zu schwenken.</p></td>
       </tr>
       <tr>
-      <td>Rotationsset</td>
+      <td>Rotations-Set</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><p><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong></p>
@@ -113,7 +114,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
         </ul> <p>Mit den Symbolen <strong>+</strong> und <strong>-</strong> können Sie den Zoom des gewählten Bildes erhöhen bzw. verkleinern. Um das Bild zum ursprünglichen Zoom zurückzusetzen, klicken Sie auf <strong>Zurücksetzen</strong>.<br /> Mit einem Touchscreen können Sie durch Doppeltippen auf das Bild schrittweise hineinzoomen. Wenn Sie den maximalen Zoom erreichen, wählen Sie erneut das Bild doppelt aus, um den Zoom-Status zurückzusetzen. Ziehen Sie den Cursor über das Bild, um es zu schwenken.</p> </td>
       </tr>
       <tr>
-      <td>Karussellsatz</td>
+      <td>Karussell-Setz</td>
       <td>Nein</td>
       <td>Ja</td>
       <td><strong>Vorschau eines Assets in einem bestimmten Viewer anzeigen</strong>

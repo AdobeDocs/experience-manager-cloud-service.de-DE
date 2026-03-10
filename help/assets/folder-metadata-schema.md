@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie ein Metadatenschema für Asset-Ordner in [!DN
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1066'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 99%
 
 ---
 
@@ -135,7 +136,7 @@ Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadaten
 
 Sie können ein Ordner-Metadatenschema über die Seite „Ordner-Metadatenschema-Formulare“ oder bei der Ordnererstellung einem Ordner zuordnen.
 
-Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in der Eigenschaft `folderMetadataSchema` des Ordnerknotens unter */jcr:content* gespeichert.
+Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in der Eigenschaft `folderMetadataSchema` des Ordnerknotens unter */jcr:content*.
 
 ### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“ {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
@@ -144,7 +145,7 @@ Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in d
 1. Wählen Sie in der Symbolleiste **[!UICONTROL Auf Ordner anwenden]** aus.
 
 1. Wählen Sie den Ordner aus, auf den Sie das Schema anwenden möchten, und wählen Sie anschließend **[!UICONTROL Anwenden]** aus. Wenn bereits ein Metadatenschema auf den Ordner angewendet wurde, wird eine Warnung dazu angezeigt, dass das bestehende Schema überschrieben wird. Wählen Sie **[!UICONTROL Überschreiben]** aus.
-1. Öffnen Sie die Metadateneigenschaften für den Ordner, auf den Sie das Schema angewendet haben.
+1. Öffnen Sie die Metadateneigenschaften für den Ordner, auf den Sie das Metadatenschema angewendet haben.
 
    ![Ordnereigenschaften](assets/folder_properties.png)
 
@@ -162,7 +163,7 @@ Sie können beim Erstellen eines Ordners ein Ordner-Metadatenschema zuweisen. We
 
    ![select_schema](assets/select_schema.png)
 
-1. Öffnen Sie die Metadateneigenschaften für den Ordner, auf den Sie das Schema angewendet haben.
+1. Öffnen Sie die Metadateneigenschaften für den Ordner, auf den Sie das Metadatenschema angewendet haben.
 1. Wählen Sie zum Anzeigen der Felder der Ordnermetadaten die Registerkarte **[!UICONTROL Ordnermetadaten]** aus.
 
 ## Verwenden des Ordner-Metadatenschemas {#use-the-folder-metadata-schema}

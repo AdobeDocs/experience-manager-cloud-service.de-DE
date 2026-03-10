@@ -4,11 +4,12 @@ description: Erfahren Sie mehr über die Verwendung von 360-Grad- und Virtual Re
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 

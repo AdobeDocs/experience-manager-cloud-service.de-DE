@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie digitale Assets mit gemeinsamen Attributen ve
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
-source-git-commit: 41ac6c5c18d1acb094f1107bd4a477df058ea55a
-workflow-type: ht
-source-wordcount: '532'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 99%
 
 ---
 

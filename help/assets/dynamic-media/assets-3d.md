@@ -7,11 +7,12 @@ topic-tags: introduction
 content-type: reference
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 100%
+source-wordcount: '2258'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +41,7 @@ Siehe auch [Unterstützte 3D-Formate in Experience Manager Assets](/help/assets/
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Erfassung unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Aufnahme unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
 
 Die 3D-Medien-WCM-Komponente und die 3D-Vorschau auf der Detailseite eines Assets sind nicht mit der neuesten Version von Chrome (97.x) kompatibel. Verwenden Sie stattdessen Firefox oder Safari oder eine frühere Version von Chrome (96.x), um mit 3D-Assets zu arbeiten.
 

@@ -1,14 +1,15 @@
 ---
 title: Vorschau − JSON-Darstellung (Assets − Inhaltsfragmente)
 description: Erfahren Sie, wie Sie ganz einfach eine Vorschau einer JSON-Repräsentation Ihrer Inhaltsfragmente anzeigen können, wenn Sie Ihre AEM Headless-Lösung implementieren.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 97%
 
 ---
 

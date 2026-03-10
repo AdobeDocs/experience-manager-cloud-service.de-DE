@@ -4,11 +4,12 @@ description: In diesem Abschnitt erfahren Sie, wie Sie Inhalte im CDN (Content D
 contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 100%
+source-wordcount: '677'
+ht-degree: 99%
 
 ---
 

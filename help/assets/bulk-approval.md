@@ -4,11 +4,12 @@ description: Richten Sie Prüfungs-Workflows für Assets innerhalb eines Ordners
 contentOwner: AG
 feature: Collections, Collaboration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 99%
 
 ---
 

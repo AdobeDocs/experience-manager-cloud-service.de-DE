@@ -4,11 +4,12 @@ description: Erfahren Sie mehr über Best Practices zur Optimierung der Qualitä
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 100%
+source-wordcount: '1654'
+ht-degree: 99%
 
 ---
 
@@ -126,7 +127,7 @@ Erhöhen Sie den Wert schrittweise von 1,75 auf maximal 4. Wenn die Scharfzeichn
 
 Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 
-### Best Practices für JPEG-Komprimierung (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
+### Best Practices für JPEF-Komprimierung (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * Dieser Parameter steuert die Qualität der JPG-Kodierung. Ein höherer Wert führt zu einer höheren Bildqualität, aber auch zu einer größeren Datei. Ein niedrigerer Wert dagegen bedeutet eine niedrigere Bildqualität, aber auch eine kleinere Datei. Der Bereich für diesen Parameter liegt zwischen 0 und 100.
 * Um die Qualität zu optimieren, setzen Sie den Parameterwert nicht auf 100. Der Unterschied zwischen einer Einstellung von 90 oder 95 und 100 ist fast nicht wahrnehmbar.  Und trotzdem wird mit 100 die Größe der Bilddatei auf unnötige Weise erhöht. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt= value` auf 90 oder 95.
@@ -139,7 +140,7 @@ Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 
 Verwenden Sie als Best Practice für die JPG-Komprimierung `&qlt=85,0`.
 
-## Best Practices für die JPEG-Skalierung (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Best Practices für die Dimensionierung in JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 Der Parameter `jpegSize` ist nützlich, wenn Sie garantieren möchten, dass ein Bild eine bestimmte Größe für die Bereitstellung an Geräten mit begrenztem Speicher nicht übersteigt.
 

@@ -4,11 +4,12 @@ description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und 
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '2634'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '2640'
+ht-degree: 99%
 
 ---
 
@@ -76,7 +77,7 @@ Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bea
 
 1. Wählen Sie auf der Seite [!UICONTROL Metadatenschema-Formulare] ein Formular aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
-1. Passen Sie auf der Seite **[!UICONTROL Metadatenschema-Formular-Editor]** das Metadaten-Formular an. Ziehen Sie die erforderlichen Komponenten von der Registerkarte **[!UICONTROL Formular erstellen]** auf eine der Registerkarten.
+1. Passen Sie auf der Seite **[!UICONTROL Metadatenschema-Formular-Editor]** das Metadatenformular an. Ziehen Sie die erforderlichen Komponenten von der Registerkarte **[!UICONTROL Formular erstellen]** auf eine der Registerkarten.
 
    ![Metadatenschema-Editor zum Anpassen der Asset-Eigenschaftsseite](assets/metadata-schema-editor.png)
 

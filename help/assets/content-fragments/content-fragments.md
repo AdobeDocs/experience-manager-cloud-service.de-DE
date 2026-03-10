@@ -1,13 +1,14 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten (Assets – Inhaltsfragmente)
 description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Seitenerstellung und die Headless-Bereitstellung eignen.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2627'
+source-wordcount: '2633'
 ht-degree: 81%
 
 ---
@@ -139,7 +140,7 @@ Inhaltsfragmente sind Inhaltsstrukturen, die:
 * Sie weisen kein Layout oder Design auf (gewisse Textformatierung ist im Rich-Text-Modus möglich).
 * Enthalten mindestens einen [Bestandteil](#constituent-parts-of-a-content-fragment).
 * [Können Bilder enthalten oder mit Bildern verbunden sein](#fragments-with-visual-assets).
-* Werden als [-Zwischeninhalte verwendet, &#x200B;](#in-between-content-when-page-authoring-with-content-fragments) auf eine Seite verwiesen wird.
+* Werden als [-Zwischeninhalte verwendet, ](#in-between-content-when-page-authoring-with-content-fragments) auf eine Seite verwiesen wird.
 * Sie sind unabhängig vom Bereitstellungsmechanismus (d. h. Seite, Kanal).
 
 ### Fragmente mit visuellen Assets {#fragments-with-visual-assets}

@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie in Dynamic Media URLs mit einer Web-Anwendung
 contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 100%
+source-wordcount: '1287'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +71,7 @@ Es gibt mehrere Möglichkeiten, eine URL-Zeichenfolge zu erhalten. Die folgenden
 
      ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Wenn Sie ein Rotationsset, Bildset, Karussellset oder Video ausgewählt haben, wählen Sie im Dropdown-Menü **[!UICONTROL Viewer]** aus.
+   * Wenn Sie ein Rotations-Set, Bild-Set, Karussellset oder Video ausgewählt haben, wählen Sie im Dropdown-Menü **[!UICONTROL Viewer]** aus.
 
      Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
 
