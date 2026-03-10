@@ -528,7 +528,7 @@ Sie können den Fortschritt und auch die fehlgeschlagene Kodierung/YouTube-Verö
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr} mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
+   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr&rbrace; mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
