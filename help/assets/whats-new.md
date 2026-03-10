@@ -35,7 +35,7 @@ In Content Hub stellt der AEM Governance Agent sicher, dass nur die richtigen Pe
 
 ![Übersicht über die Berechtigungsverwaltung](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funktionen der Oktober-Version {#october-release-features}
@@ -56,7 +56,7 @@ Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Org
 
 Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
