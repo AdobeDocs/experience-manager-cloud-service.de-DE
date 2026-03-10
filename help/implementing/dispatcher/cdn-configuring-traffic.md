@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 92%
+source-wordcount: '1932'
+ht-degree: 81%
 
 ---
 
@@ -437,9 +437,13 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 | **forwardAuthorization** (optional, Standardeinstellung ist „false“) | Wenn die Eigenschaft auf „true“ gesetzt ist, wird die „Autorisierung“-Kopfzeile aus der Client-Anforderung an das Backend übergeben, andernfalls wird die Kopfzeile „Autorisierung“ entfernt. |
 | **timeout** (optional, in Sekunden, Standardeinstellung ist „60“) | Anzahl der Sekunden, die das CDN darauf warten soll, dass ein Backend-Server das erste Byte eines HTTP-Antworttextes bereitstellt. Dieser Wert wird auch als Timeout zwischen Bytes zum Backend-Server verwendet. |
 
+>[!IMPORTANT]
+>
+>Der **domain**-Wert darf keine `.adobeaemcloud.com` enthalten. Ein direkter Proxy für eine adobeaemcloud.com-Domain ist nicht möglich. Diese Einschränkung schützt vor unerwünschten Anfrageschleifen. Um den Traffic an Ihre AEM as a Cloud Service-Umgebung weiterzuleiten, verwenden Sie stattdessen eine [benutzerdefinierte Domain](#proxying-to-aemaacs) die in Ihrer AEMaaCS-Umgebung als Ursprungs-Backend installiert ist.
+
 ### Proxys für benutzerdefinierte Domain an die statische AEM-Ebene {#proxy-custom-domain-static}
 
-Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
+Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 
@@ -494,6 +498,41 @@ data:
 >[!NOTE]
 >
 >Da das von Adobe verwaltete CDN verwendet wird, konfigurieren Sie die Push-Invalidierung im **verwalteten** Modus. Befolgen Sie dazu die [Dokumentation zum Einrichten der Push-Invalidierung](https://www.aem.live/docs/byo-dns#setup-push-invalidation) für Edge Delivery Services.
+
+
+### Proxy für AEMaaCS-Umgebung {#proxying-to-aemaacs}
+
+Sie können eine `adobeaemcloud.com` Domain nicht direkt als Ursprung in Ihrer CDN-Konfiguration verwenden. Dies wird zum Schutz vor unerwünschten Anfrageschleifen abgelehnt (Domain darf keine `.adobeaemcloud.com` enthalten). Dies gilt auch für das Routing von einer Domain, die für eine Edge Delivery-Site installiert ist.
+
+Wenn Ihre benutzerdefinierte Domain (`www.example.com`) bereits in einer AEMaaCS-Umgebung installiert ist, wird das Standard-Routing ohne CDN-Regel zum AEM-Backend weitergeleitet. Verwenden Sie Ursprünge-Selektoren, wenn Sie umgebungsübergreifend (z. B. von `pXXXX-eYYYY` zu `pXXXX-eZZZZ`) oder von einer Edge Delivery-Site zu einer AEMaaCS-Umgebung routen müssen.
+
+Um in solchen Fällen Traffic an Ihre AEM as a Cloud Service-Umgebung weiterzuleiten (z. B. um bestimmte Pfade wie `/graphql` an ein Backend zu leiten), installieren Sie eine benutzerdefinierte Domain in Ihrer AEMaaCS-Umgebung und verwenden Sie diese benutzerdefinierte Domain als Ursprung in Ihrer CDN-Konfiguration.
+
+**Beispiel:** Wenn Ihre AEM-Veröffentlichungsebene unter `publish-pXXXXX-eYYYYY.adobeaemcloud.com` erreichbar ist, verwenden Sie diese Domain nicht in `originSelectors`. Stattdessen:
+
+1. Installieren Sie eine benutzerdefinierte Domain in Ihrer AEMaaCS-Umgebung (z. B. `aem-publish-origin.example.com`), die auf Ihren Veröffentlichungs-Service verweist.
+2. Definieren Sie in Ihrer CDN-Konfiguration einen Ursprung mit dieser benutzerdefinierten Domain und leiten Sie die gewünschten Pfade (z. B. `/graphql`) dorthin weiter.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## Server-seitige Umleitungen {#server-side-redirectors}
