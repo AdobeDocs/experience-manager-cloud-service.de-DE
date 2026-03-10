@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 2cbbb53c1bf5277ab54e6731152c0400b4e67aba
+source-git-commit: b3704dad066b66b103fdec849879f889e895c09d
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1761'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Inhalt** | `/content` | Alle Inhaltsvorgänge auf niedriger Ebene, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten, Fragmente und Assets. |
 | **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten, Fragmente und Assets. |
-| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
+| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
@@ -142,7 +142,7 @@ Jeder Benutzer führt diesen Schritt aus oder ein Administrator der MCP-Client-A
 1. Überprüfen der erkannten Tools
    * Nach der Authentifizierung erkennt die Anwendung die MCP-Tools vom Server. Anschließend können Sie den LLM auffordern, AEM-Vorgänge auszuführen.
 
-Im Folgenden finden Sie schrittweise Anleitungen für jedes unterstützte Programm:
+Im Folgenden finden Sie die unterstützten Programme, von denen einige auf schrittweise Anleitungen verweisen:
 
 #### Chat-Anwendungen (Web und Desktop) {#setup-chat-applications}
 
