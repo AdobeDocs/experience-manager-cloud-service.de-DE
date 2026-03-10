@@ -91,7 +91,7 @@ Das Verarbeitungsprofil kann eine FPO-Wiedergabe (nur für Platzierung) enthalte
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/33384?captions=ger&quality=9)
 -->
 
 <!-- This image was removed per cqdoc-15624, as requested by engineering.
