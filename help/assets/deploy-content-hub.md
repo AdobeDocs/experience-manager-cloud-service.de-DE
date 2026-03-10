@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren sowi
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '2564'
+source-wordcount: '2603'
 ht-degree: 61%
 
 ---
@@ -21,7 +21,7 @@ Dieser Artikel enthält einen durchgängigen Workflow zur Bereitstellung von Con
 
 In diesem Video erfahren Sie, wie Sie Content Hub für Experience Manager Assets aktivieren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472944/?captions=ger&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 Zu den verschiedenen Berechtigungen für Content Hub gehören:
 
@@ -274,9 +274,9 @@ Wenn die Benutzerinnen und Benutzer selbst nach dem Hinzufügen zu den entsprech
 
 ## Häufig gestellte Fragen {#faqs-deploy-content-hub}
 
-### Wie erhalten Anwender Zugriff auf Content Hub und welche Berechtigungen können zugewiesen werden?
+### Wie erhalten Anwender Zugriff auf AEM Assets Content Hub und welche Berechtigungen können zugewiesen werden?
 
-Benutzer können über die Adobe Admin Console zu Content Hub hinzugefügt werden, indem sie dem entsprechenden Produktprofil für Content Hub zugewiesen werden.
+Benutzende können über die Adobe Admin Console zu AEM Assets Content Hub hinzugefügt werden, indem sie dem entsprechenden Produktprofil für Content Hub zugewiesen werden.
 
 Die folgenden Berechtigungen stehen den Benutzern zur Verfügung:
 
@@ -288,9 +288,9 @@ Die folgenden Berechtigungen stehen den Benutzern zur Verfügung:
 
 * Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets haben Zugriff auf Adobe Express (sofern Sie über Adobe Express-Berechtigungen verfügen) sowie auf markengenehmigte Assets im Content Hub-Portal.
 
-### Welche Produktprofile stehen für verschiedene Benutzertypen in Content Hub zur Verfügung?
+### Welche Produktprofile stehen für verschiedene Benutzertypen in AEM Assets Content Hub zur Verfügung?
 
-Die Produktprofile sind für verschiedene Benutzertypen in Content Hub verfügbar:
+Die Produktprofile sind für verschiedene Benutzertypen in AEM Assets Content Hub verfügbar:
 
 * Content Hub-Benutzer: AEM Assets Eingeschränkte Benutzer
 
@@ -300,9 +300,9 @@ Die Produktprofile sind für verschiedene Benutzertypen in Content Hub verfügba
 
 * Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets: AEM Assets Limited Users + AEM Users
 
-### Wie können Administratoren Content Hub für ihre Organisation aktivieren?
+### Wie können Administratoren AEM Assets Content Hub für ihr Unternehmen aktivieren?
 
-Administratoren müssen sich bei Cloud Manager anmelden, ihr Programm auswählen (oder erstellen), Assets und Content Hub auf der Registerkarte „Lösungen und Add-ons“ aktivieren und das Programm aktualisieren. Dadurch wird eine Content Hub-Instanz in der Adobe Admin Console erstellt, in der der Benutzerzugriff verwaltet werden kann.
+Um AEM Assets Content Hub für ihr Unternehmen zu aktivieren, müssen sich Administratoren bei Cloud Manager anmelden, ihr Programm auswählen (oder erstellen), Assets und Content Hub auf der Registerkarte Lösungen und Add-ons aktivieren und das Programm aktualisieren. Dadurch wird eine Content Hub-Instanz in der Adobe Admin Console erstellt, in der der Benutzerzugriff verwaltet werden kann.
 
 ### Wie viele Content Hub Limited-Benutzende sind in AEM Assets enthalten? {#content-hub-limited-users-with-aem-assets}
 
@@ -318,29 +318,29 @@ Die Anzahl der verfügbaren Content Hub-Credits hängt von Ihrer AEM Assets-Lize
 
 * Bestehende Assets as a Cloud Service-Kunden erhalten eine Content Hub-Gutschrift.
 
-### Wie werden Content Hub-Credits verwendet?
+### Wie werden AEM Assets Content Hub-Credits verwendet?
 
 Für jede Umgebung, in der Content Hub aktiviert ist, wird ein Content Hub-Guthaben verbraucht. Die Aktivierung von Content Hub in Produktions-, Entwicklungs- und Staging-Umgebungen erfordert beispielsweise drei Credits.
 
 ### Kann ich Content Hub in niedrigeren Umgebungen aktivieren?
 
-Ja. Sie können Content Hub in niedrigeren Umgebungen wie Entwicklung oder Staging aktivieren, sofern Sie über verfügbare Content Hub-Credits verfügen. Jede aktivierte untere Umgebung verbraucht ein Guthaben.
+Ja. Sie können AEM Assets Content Hub in niedrigeren Umgebungen wie Entwicklung oder Staging aktivieren, sofern Sie über verfügbare Content Hub-Credits verfügen. Jede aktivierte untere Umgebung verbraucht ein Guthaben.
 
-### Wie kann ich über die Rechte für den Zugriff auf genehmigte Assets in Content Hub verfügen?
+### Wie kann ich über die Rechte für den Zugriff auf genehmigte Assets in AEM Assets Content Hub verfügen?
 
-Content Hub-Benutzer können über das Content Hub-Portal auf markenbestätigte Assets zugreifen. Sie müssen dem Produktprofil AEM Eingeschränkte Benutzer hinzugefügt werden, um Content Hub-Benutzer zu sein.
+AEM Assets Content Hub-Benutzer können über das Content Hub-Portal auf markenbestätigte Assets zugreifen. Sie müssen dem Produktprofil AEM Eingeschränkte Benutzer hinzugefügt werden, um Content Hub-Benutzer zu sein.
 
-### Wie kann ich über die Rechte zum Hochladen von Assets in Content Hub verfügen?
+### Wie kann ich über die Rechte zum Hochladen von Assets in AEM Assets Content Hub verfügen?
 
-Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets können Assets in Content Hub hochladen und nicht nur auf markengenehmigte Assets im Content Hub-Portal zugreifen. Sie müssen den Produktprofilen AEM Eingeschränkte Benutzer und AEM-Benutzer hinzugefügt werden, um Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets zu sein.
+AEM Assets Content Hub-Benutzende mit Berechtigungen zum Hinzufügen von Assets können Assets in Content Hub hochladen und zusätzlich auf markengenehmigte Assets über das Content Hub-Portal zugreifen. Sie müssen den Produktprofilen AEM Eingeschränkte Benutzer und AEM-Benutzer hinzugefügt werden, um Content Hub-Benutzer mit Berechtigungen zum Hinzufügen von Assets zu sein.
 
-### Wie kann ich über die Berechtigungen für den Zugriff auf die Konfigurations-Benutzeroberfläche in Content Hub verfügen?
+### Wie kann ich über die Berechtigungen für den Zugriff auf die Konfigurations-Benutzeroberfläche in AEM Assets Content Hub verfügen?
 
-Content Hub-Administratoren haben zusätzlich zum Zugriff auf markenbestätigte Assets, zum Hochladen von Assets in Content Hub und zur Adobe Express-Integration Zugriff auf die Konfigurations-Benutzeroberfläche in Content Hub, um Bilder zu bearbeiten (wenn Sie über Adobe Express-Berechtigungen verfügen). Sie müssen den Produktprofilen AEM Eingeschränkte Benutzer und AEM-Administratoren hinzugefügt werden, um ein Content Hub-Administrator zu sein.
+AEM Assets Content Hub-Administratoren haben zusätzlich zum Zugriff auf markenbestätigte Assets, zum Hochladen von Assets in Content Hub und zur Adobe Express-Integration Zugriff auf die Konfigurations-Benutzeroberfläche in Content Hub, um Bilder zu bearbeiten (wenn Sie über Adobe Express-Berechtigungen verfügen). Sie müssen den Produktprofilen AEM Eingeschränkte Benutzer und AEM-Administratoren hinzugefügt werden, um ein Content Hub-Administrator zu sein.
 
-### Wie kann ich über die Rechte zum Bearbeiten von Bildern mit Adobe Express auf Content Hub verfügen?
+### Wie kann ich über die Rechte zum Bearbeiten von Bildern mit Adobe Express in AEM Assets Content Hub verfügen?
 
-Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets haben Zugriff auf Adobe Express (sofern Sie über Adobe Express-Berechtigungen verfügen) sowie auf markengenehmigte Assets im Content Hub-Portal. Sie müssen den Produktprofilen AEM Eingeschränkte Benutzer und AEM-Benutzer hinzugefügt werden, um Content Hub-Benutzer mit Berechtigungen zum Remixen von Assets zu sein.
+AEM Assets Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets haben Zugriff auf Adobe Express (sofern Sie über Adobe Express-Berechtigungen verfügen) sowie auf markengenehmigte Assets im Content Hub-Portal. Sie müssen den Produktprofilen AEM Eingeschränkte Benutzer und AEM-Benutzer hinzugefügt werden, um Content Hub-Benutzer mit Berechtigungen zum Remixen von Assets zu sein.
 
 
 

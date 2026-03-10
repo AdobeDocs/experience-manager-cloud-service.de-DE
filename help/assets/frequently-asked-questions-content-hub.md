@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 99%
+source-wordcount: '1635'
+ht-degree: 67%
 
 ---
 
@@ -14,25 +14,29 @@ ht-degree: 99%
 
 ![Häufig gestellte Fragen zu Content Hub](assets/content-hub-faqs.png)
 
-## Was ist Content Hub? {#what-is-content-hub}
+## Was ist AEM Assets Content Hub? {#what-is-content-hub}
 
-Content Hub ist eine Funktion von Adobe Experience Manager Assets as a Cloud Service.
+AEM Assets Content Hub ist eine Funktion von Adobe Experience Manager Assets as a Cloud Service.
 
 Mit Content Hub können größere Teams relevante, genehmigte Assets ganz einfach über ein intuitives Portal entdecken und schnell an ihre Anforderungen anpassen.  Darüber hinaus bietet Content Hub einen Aufnahmemechanismus, der es diesen Benutzenden ermöglicht, beim Hochladen von Assets in das DAM einfach den Self-Service zu nutzen. Auf diese Weise können Unternehmen Inhalte schneller erstellen und gleichzeitig die Markenkonsistenz und die Einhaltung entsprechender Schutzmaßnahmen wahren.
 
-## Warum kann ich Content Hub nicht in meinem Cloud Manager-Programm bzw. meiner Cloud Manager-Umgebung aktivieren? {#cannot-enable-content-hub}
+<!--
 
-Content Hub ist derzeit nur für AEM Cloud Manager-Produktionsprogramme verfügbar, die eine Assets-Lizenz enthalten (Assets Cloud Service, Assets Ultimate, Assets Prime). Wenn Sie auf [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) klicken, um es zu aktivieren, wird es bereitgestellt und der Autorenproduktionsumgebung von AEM in diesem Programm zugeordnet. Weitere Informationen und Voraussetzungen finden Sie unter [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md).
+## Why cannot I enable Content Hub on my Cloud Manager program/environment? {#cannot-enable-content-hub}
 
-## Ich habe Content Hub in meinem Produktionsprogramm oder meiner Produktionsumgebung aktiviert. Kann ich es deaktivieren? {#can-i-disable-content-hub}
+Content Hub is at this point is only available on AEM Cloud Manager Production programs, which include an Assets license (Assets Cloud Service, Assets Ultimate, Assets Prime). When you click [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) to enable it, it is deployed and associated with the author production environment of AEM in that program. See [Deploy Content Hub](/help/assets/deploy-content-hub.md) for details and prerequisites.
 
-Durch das Aktivieren von Content Hub in einem Produktionsprogramm wird es als Teil der Produktionsinfrastruktur bereitgestellt. AEM Cloud Manager lässt nicht zu, dass Produktionsinfrastrukturen entfernt oder deaktiviert werden, um das Risiko menschlicher Fehler bei der Produktionsnutzung zu minimieren.
+-->
+
+## Ich habe AEM Assets Content Hub in meinem Produktionsprogramm/meiner Produktionsumgebung aktiviert. Kann ich es deaktivieren? {#can-i-disable-content-hub}
+
+Durch die Aktivierung von AEM Assets Content Hub in einem Produktionsprogramm wird es als Teil der Produktionsinfrastruktur bereitgestellt. AEM Cloud Manager lässt nicht zu, dass Produktionsinfrastrukturen entfernt oder deaktiviert werden, um das Risiko menschlicher Fehler bei der Produktionsnutzung zu minimieren.
 
 Wenn Sie Ihren Benutzenden Content Hub nach der Bereitstellung nicht zur Verfügung stellen möchten, weisen Sie dem Content Hub-Produktprofil in der Admin Console keine Benutzenden zu. Weitere Informationen finden Sie unter [Bereitstellen von Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile).
 
-## Wie kann ich Content Hub in meinem Unternehmen bewerten? {#how-can-i-evaluate-content-hub}
+## Wie kann ich AEM Assets Content Hub in meiner Organisation auswerten? {#how-can-i-evaluate-content-hub}
 
-Content Hub ist eine von Adobe bereitgestellte und verwaltete Funktion und verfügt über keinen benutzerdefinierten Code, der eine typische Validierung über Entwicklung/Staging/Produktion erfordern würde. Darüber hinaus wird der Zugriff auf die Funktion für Benutzende vollständig von den Admins gesteuert, sodass Sie sie auswerten können, ohne dies allen Benutzenden zugänglich zu machen.
+AEM Assets Content Hub ist eine Funktion, die von Adobe bereitgestellt und gepflegt wird. Sie verfügt über keinen benutzerdefinierten Code, der eine typische Validierung über Entwicklung/Staging/Produktion erfordern würde. Darüber hinaus wird der Zugriff auf die Funktion für Benutzende vollständig von den Admins gesteuert, sodass Sie sie auswerten können, ohne dies allen Benutzenden zugänglich zu machen.
 
 Sie können Content Hub auswerten, ohne dass sich dies auf Ihre in AEM as a Cloud Service Assets verwalteten Benutzenden/Produktionsinhalte auswirkt. Ein Auswertungsverfahren könnte wie folgt aussehen:
 
@@ -45,21 +49,21 @@ Sie können Content Hub auswerten, ohne dass sich dies auf Ihre in AEM as a Clou
 
 Es gibt ein Early-Access-Programm für Content Hub in Sandbox-Programmen und ihren Autorenproduktionsumgebungen. Weitere Informationen finden Sie unter [Einführung in Sandbox-Programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Wenden Sie sich an Ihr Adobe-Accountteam, um mehr über das Early-Access-Programm zu erfahren.
 
-## Warum werden nach dem Anmelden bei Content Hub keine Assets angezeigt? {#no-assets-in-content-hub}
+## Warum sehe ich nach der Anmeldung bei AEM Assets Content Hub keine Assets? {#no-assets-in-content-hub}
 
 Die Assets, die in Assets as a Cloud Service als genehmigt markiert sind, sind automatisch in Content Hub verfügbar. Wenn Sie nach dem Anmelden bei Content Hub keine Assets sehen können, genehmigen Sie Assets mithilfe der AEM as a Cloud Service-Autorenumgebung, um sie in Content Hub verfügbar zu machen. Weitere Informationen finden Sie unter [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md).
 
-## Warum werden mir keine Assets angezeigt, die ich entweder direkt mit Content Hub hochlade oder aus Dropbox- oder OneDrive-Konten mit Content Hub importiere? {#no-assets-uploaded-from-content-hub}
+## Warum sehe ich meine Assets nicht, die ich entweder direkt mit AEM Assets Content Hub hochlade oder sie mit Content Hub aus Dropbox- oder OneDrive-Konten importiere? {#no-assets-uploaded-from-content-hub}
 
-Das Anzeigen von Assets, die mit Content Hub hochgeladen wurden, hängt davon ab, ob Sie den Umschalter [Automatische Genehmigung](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) auf der Benutzeroberfläche „Konfiguration“ aktiviert haben:
+Welche Assets mit AEM Assets Content Hub hochgeladen werden, hängt davon ab, ob Sie den Umschalter [Automatische Genehmigung](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) in der Benutzeroberfläche „Konfiguration“ aktiviert haben:
 
 * Wenn der Umschalter **Automatische Genehmigung** aktiviert ist, sind die Assets, die Sie mit Content Hub hochladen, automatisch verfügbar.
 
-* Wenn der Umschalter **Automatische Genehmigung** deaktiviert ist, werden die Assets, die Sie mit Content Hub hochladen, nicht automatisch angezeigt. Die Assets sind im Ordner `hydrated-assets` Ihrer Assets as a Cloud Service-Umgebung verfügbar. Navigieren Sie zu dem Ordner und ändern Sie die Status dieser Assets [gemeinsam](/help/assets/approve-assets-content-hub.md) zu `Approved`, damit diese Assets in Content Hub angezeigt werden.
+* Wenn der Umschalter **Automatische Genehmigung** deaktiviert ist, werden die Assets, die Sie mit Content Hub hochladen, nicht automatisch angezeigt. Die Assets sind im Ordner `hydrated-assets` Ihrer Assets as a Cloud Service-Umgebung verfügbar. Navigieren Sie zu dem Ordner und ändern Sie die Status dieser Assets [gemeinsam](/help/assets/approve-assets-content-hub.md) in `Approved`, damit diese Assets in Content Hub angezeigt werden.
 
-## Wie kann ich schnell nach Assets suchen, die mit Content Hub in der AEM as a Cloud Service-Umgebung hochgeladen wurden? {#find-uploaded-assets-on-aem-cloud}
+## Wie kann ich mit AEM Assets Content Hub in der AEM as a Cloud Service-Umgebung hochgeladene Assets schnell finden? {#find-uploaded-assets-on-aem-cloud}
 
-So können Sie schnell nach Assets suchen, die mit Content Hub in der AEM as a Cloud Service-Umgebung hochgeladen wurden:
+Sie können mit AEM Assets Content Hub in der AEM as a Cloud Service-Umgebung hochgeladene Assets schnell finden, indem Sie:
 
 1. Navigieren Sie zum Ordner `hydrated-assets`.
 
@@ -67,9 +71,9 @@ So können Sie schnell nach Assets suchen, die mit Content Hub in der AEM as a C
 
 1. Sortieren Sie Assets mit dem Feld **[!UICONTROL Änderungsdatum]**.
 
-## Warum wird auf meiner Asset-Karte nicht die Option zum Bearbeiten mit Adobe Express angezeigt, damit ich Assets zum Erstellen neuer Varianten remixen kann? {#edit-using-express-not-available}
+## Warum sehe ich die Option Mit Adobe Express bearbeiten auf meiner Asset-Karte nicht, um Assets neu mischen zu können, um mit AEM Assets Content Hub neue Varianten zu erstellen? {#edit-using-express-not-available}
 
-Um die Option zum **Bearbeiten mit Adobe Express** auf der Asset-Karte anzuzeigen, müssen Benutzende zusätzlich zu den Berechtigungen für [Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets in neue Varianten](#onboard-content-hub-users-add-assets) über Adobe Express Enterprise- oder Teams-Berechtigungen verfügen (siehe [Abos](https://www.adobe.com/de/express/pricing)). 
+Um die Option **Bearbeiten mit Adobe Express** auf der Asset-Karte in AEM Assets Content Hub anzuzeigen, muss der Benutzer über eine Berechtigung für Adobe Express Enterprise oder Teams verfügen (siehe [Pläne](https://www.adobe.com/de/express/pricing)) sowie über Berechtigungen für [Content Hub-Benutzer mit Berechtigungen zum Remixen von Assets in neue Varianten](#onboard-content-hub-users-add-assets).
 
 Es gibt einige Konfigurationen dazu, wie Benutzende [!DNL Content Hub] und [!DNL Adobe Express] zugewiesen werden:
 
@@ -83,24 +87,24 @@ Es gibt einige Konfigurationen dazu, wie Benutzende [!DNL Content Hub] und [!DNL
    >
    >Die Person, die Express- und Assets-Produktprofilen in zwei Admin Consoles zugewiesen ist, muss über dieselbe E-Mail-Adresse verfügen und ein Unternehmenskonto vom Typ **Unternehmen oder Schule** statt des **persönlichen** Kontos verwenden. In der idealen Konfiguration sind beide Admin Consoles als **Federated ID** mit einer vertrauenswürdigen Beziehung zwischen ihnen eingerichtet, damit Benutzende von einem nahtlosen Single Sign-on-Erlebnis profitieren. Einige der Express-Abos (z. B. Express Teams) unterstützen Federated ID/Single Sign-on nicht.
 
-Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[!UICONTROL # /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[#UICONTROL /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
-## Kann ich Content Hub so einrichten, dass die Markenrichtlinien meiner Organisation als Link auf der Startseite angezeigt werden? {#content-hub-setup-brand-guidelines}
+## Kann ich AEM Assets Content Hub so einrichten, dass die Markenrichtlinien meines Unternehmens als Link auf der Startseite angezeigt werden? {#content-hub-setup-brand-guidelines}
 
-Sie können zusätzlich zu den Standardregisterkarten „Alle Assets“, „Sammlungen“ und „Erkenntnisse“ benutzerspezifische Links als separate Registerkarten auf der Startseite von Content Hub hinzufügen. Informationen zum Einrichten finden Sie unter [Benutzerspezifische Links](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
+Zusätzlich zu den standardmäßigen Registerkarten „Alle Assets&quot;, „Sammlungen“ und „Einblicke“ auf der AEM Assets Content Hub-Startseite können Sie benutzerdefinierte Links als separate Registerkarten hinzufügen. Informationen zum Einrichten finden Sie unter [Benutzerspezifische Links](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
 
-## Gibt es Pläne, bestehende Brand Portal-Kundschaft nach Content Hub zu migrieren? {#migration-brand-portal}
+## Gibt es Pläne für die Migration von Bestandskunden von Brand Portal zu AEM Assets Content Hub? {#migration-brand-portal}
 
-Adobe bietet Unterstützung bei der Migration von Brand Portal nach Content Hub. Öffnen Sie hierzu ein Adobe-Support-Ticket.
+Adobe bietet Migrationsunterstützung von Brand Portal zu AEM Assets Content Hub, die Sie durch die Erstellung eines Adobe-Support-Tickets verwenden können.
 
-## Warum kann ich die Option „Produkteinstellungen/Konfiguration“ in Content Hub nicht sehen? {#ui-configuration-option-missing}
+## Warum wird die Option Produkteinstellungen/-konfiguration in AEM Assets Content Hub nicht angezeigt? {#ui-configuration-option-missing}
 
-Um auf die [Konfigurationsoberfläche](/help/assets/configure-content-hub-ui-options.md) zugreifen zu können, müssen Sie [Content Hub-Admin](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator) sein. Wenn Sie dem Produktprofil für AEM-Admins in der Produktions-Autoreninstanz in der Adobe Admin Console zugewiesen sind und die Konfigurationsoption trotzdem nicht angezeigt wird, stellen Sie sicher, dass das Produktprofil für AEM-Admins nicht umbenannt wurde. Weitere Informationen finden Sie unter [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
+Um auf die [Konfigurations-Benutzeroberfläche](/help/assets/configure-content-hub-ui-options.md) in AEM Assets Content Hub zugreifen zu können, müssen Sie [Content Hub-Administrator sein](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Wenn Sie dem Produktprofil für AEM-Admins in der Produktions-Autoreninstanz in der Adobe Admin Console zugewiesen sind und die Konfigurationsoption trotzdem nicht angezeigt wird, stellen Sie sicher, dass das Produktprofil für AEM-Admins nicht umbenannt wurde. Weitere Informationen finden Sie unter [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Wie geht Content Hub mit den Einschränkungen von Brand Portal um? {#content-hub-brand-portal-comparison}
+## Wie geht AEM Assets Content Hub mit den Einschränkungen von Brand Portal um? {#content-hub-brand-portal-comparison}
 
 
-In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden Lösungen aufgeführt:
+In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen AEM Assets Content Hub und Brand Portal aufgeführt:
 
 | Bereich | Funktion | Content Hub | Brand Portal |
 |---|---|----|----|
@@ -134,9 +138,9 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden L
 |  | Semantische Suche | ✓ | − |
 |  | Lokalisierte Suche und Anzeige von Metadaten | ✓ | − |
 
-## Wie kann ich ein Repository auswählen, um Assets nur für die ausgewählte Umgebung anzuzeigen? {#select-repository-multiple-environments}
+## Wie kann ich ein Repository auswählen, um Assets nur für die ausgewählte Umgebung in AEM Assets Content Hub anzuzeigen? {#select-repository-multiple-environments}
 
-Wenn Sie Content Hub für Produktionsumgebungen und andere niedrigere Umgebungen für dasselbe Programm konfiguriert haben, können Sie das Repository auswählen und die Assets für die ausgewählte Umgebung anzeigen. Führen Sie die folgenden Schritte aus:
+Wenn Sie AEM Assets Content Hub für Produktionsumgebungen und andere untere Umgebungen für dasselbe Programm konfiguriert haben, können Sie das Repository auswählen und die Assets für die ausgewählte Umgebung anzeigen. Führen Sie die folgenden Schritte aus:
 
 1. Klicken Sie auf das Benutzersymbol im rechten Bereich.
 
@@ -146,9 +150,9 @@ Wenn Sie Content Hub für Produktionsumgebungen und andere niedrigere Umgebungen
 
    Content Hub zeigt jetzt Assets für die ausgewählte Umgebung an.
 
-## Wie kann Content Hub die Miniaturvorschau für den Dateityp .ZIP anzeigen? {#thumbnail-preview-zip-file}
+## Wie kann AEM Assets Content Hub die Miniaturvorschau für den Dateityp .ZIP anzeigen? {#thumbnail-preview-zip-file}
 
-Um eine Miniaturansicht für Dateitypen wie ZIP-Dateien in Content Hub bereitzustellen, können Sie eine Ausgabedarstellung mit dem Namen `cq5dam.preview.jpg` oder `cq5dam.preview.png` zum Stamm des Pfads hinzufügen, unter dem die ZIP-Datei in der Authoring-Umgebung von AEM as a Cloud Service verfügbar ist.
+Um eine Miniaturansicht für Dateitypen wie ZIP-Dateien in AEM Assets Content Hub bereitzustellen, können Sie eine Ausgabedarstellung mit dem Namen `cq5dam.preview.jpg` oder `cq5dam.preview.png` zum Stamm des Pfads hinzufügen, unter dem die ZIP-Datei in der Authoring-Umgebung von AEM as a Cloud Service verfügbar ist.
 
 Das Bild, das Sie als Ausgabedarstellung hinzufügen:
 

@@ -4,9 +4,9 @@ description: Informationen zum Suchen nach Assets in [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 81%
 
 ---
@@ -173,11 +173,11 @@ Erfahren Sie mehr über das [Konfigurieren von Assets in  [!DNL Content Hub]](co
 
 ### Wie kann ich meine Suchergebnisse in AEM Assets Content Hub eingrenzen?
 
-Sie können die Suchergebnisse in Content Hub mithilfe der textbasierten Suche eingrenzen, verschiedene Filter (wie Dateiformat, Genehmigungsstatus, Änderungsdatum usw.) anwenden, nach Tags oder Smart-Tags suchen und das Bedienfeld „Filter“ verwenden. Die Kombination mehrerer Prädikate oder Filteroptionen hilft Ihnen, die benötigten Assets genau anzusprechen.
+Sie können die Suchergebnisse in AEM Assets Content Hub einschränken, indem Sie die textbasierte Suche verwenden, verschiedene Filter (wie Dateiformat, Genehmigungsstatus, Änderungsdatum usw.) anwenden, nach Tags oder Smart-Tags suchen und das Bedienfeld „Filter“ verwenden. Die Kombination mehrerer Prädikate oder Filteroptionen hilft Ihnen, die benötigten Assets genau anzusprechen.
 
 ### Kann ich in AEM Assets Content Hub eine Massensuche nach mehreren Assets gleichzeitig durchführen?
 
-Ja, Sie können in Content Hub eine Massensuche durchführen, indem Sie mehrere Werte (z. B. Namen, Dateiformate, Tags) eingeben, die durch angegebene Trennzeichen getrennt sind. Die Funktion für die Massensuche ermöglicht es Ihnen, schnell mehrere Assets in einer einzigen Abfrage zu finden, was sie effizienter macht, als Assets einzeln zu suchen.
+Ja, Sie können in AEM Assets Content Hub eine Massensuche durchführen, indem Sie mehrere Werte (z. B. Namen, Dateiformate, Tags) eingeben, die durch angegebene Trennzeichen getrennt sind. Die Funktion für die Massensuche ermöglicht es Ihnen, schnell mehrere Assets in einer einzigen Abfrage zu finden, was sie effizienter macht, als Assets einzeln zu suchen.
 
 
 ### Können Admins die in der AEM Assets Content Hub-Suche verfügbaren Filter anpassen?

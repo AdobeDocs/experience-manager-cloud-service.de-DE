@@ -4,9 +4,9 @@ description: Freigeben von Assets in [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '931'
 ht-degree: 44%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 44%
 
 Erstellen Sie einen Link zu ausgewählten Assets, um sie einfach für andere freizugeben. Wählen Sie als autorisierte Benutzerin bzw. autorisierter Benutzer von [!DNL Content Hub] ein oder mehrere Assets aus, die in Ihrer [!DNL Content Hub]-Umgebung verfügbar sind, generieren Sie einen Link und senden Sie diesen an andere private oder öffentliche Benutzende.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474928/?captions=ger&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Voraussetzungen {#prerequisites}
 
@@ -74,7 +74,7 @@ Durch die Freigabe von Assets in AEM Assets Content Hub können autorisierte Ben
 
 ### Wie kann ich Assets oder Sammlungen mithilfe von AEM Assets Content Hub für andere freigeben?
 
-Um Assets oder Sammlungen in Content Hub freizugeben, gehen Sie zur Content Hub-Homepage, wählen Sie ein oder mehrere Assets aus (oder gehen Sie zur Registerkarte „Sammlungen“ für Sammlungen) und klicken Sie auf das Symbol Freigeben . Im Dialogfeld Freigeben können Sie eine Vorschau der Assets anzeigen, bei Bedarf entfernen, einen Titel und eine Beschreibung hinzufügen, auswählen, wer auf den Link (privat oder öffentlich) zugreifen kann, einen Ablaufzeitraum festlegen und dann auf Link abrufen klicken, um die freigabefähige URL zu generieren und zu kopieren. Der Link kann dann an Team-Mitglieder oder Stakeholder gesendet werden.
+Um Assets oder Sammlungen in AEM Assets Content Hub freizugeben, gehen Sie zur Startseite von Content Hub, wählen Sie ein oder mehrere Assets aus (oder gehen Sie zur Registerkarte „Sammlungen“ für Sammlungen) und klicken Sie auf das Symbol Freigeben . Im Dialogfeld Freigeben können Sie eine Vorschau der Assets anzeigen, bei Bedarf entfernen, einen Titel und eine Beschreibung hinzufügen, auswählen, wer auf den Link (privat oder öffentlich) zugreifen kann, einen Ablaufzeitraum festlegen und dann auf Link abrufen klicken, um die freigabefähige URL zu generieren und zu kopieren. Der Link kann dann an Team-Mitglieder oder Stakeholder gesendet werden.
 
 ### Welche Zugriffsoptionen stehen beim Freigeben von Assets in AEM Assets Content Hub zur Verfügung und worin unterscheiden sie sich?
 
@@ -86,11 +86,11 @@ Ja, Administratoren können den Umschalter **Öffentlichen Link aktivieren** auf
 
 ### Kann ich in AEM Assets Content Hub Ablaufdaten für freigegebene Asset-Links festlegen und warum ist dies wichtig?
 
-Ja, Sie können in Content Hub Ablaufdaten für private und öffentliche freigegebene Links festlegen. Bei öffentlichen Links können Sie aus Vorgaben wie 24 Stunden bis zu einer Woche auswählen, während Sie mit privaten Links aus Vorgaben auswählen oder ein benutzerdefiniertes Ablaufdatum festlegen können. Ablaufdaten sind wichtig, da der Link nach Ablauf nicht mehr zum Zugreifen auf oder Herunterladen der Assets verwendet werden kann, was die Sicherheit und Kontrolle Ihres Inhalts unterstützt.
+Ja, Sie können in AEM Assets Content Hub Ablaufdaten für private und öffentliche freigegebene Links festlegen. Bei öffentlichen Links können Sie aus Vorgaben wie 24 Stunden bis zu einer Woche auswählen, während Sie mit privaten Links aus Vorgaben auswählen oder ein benutzerdefiniertes Ablaufdatum festlegen können. Ablaufdaten sind wichtig, da der Link nach Ablauf nicht mehr zum Zugreifen auf oder Herunterladen der Assets verwendet werden kann, was die Sicherheit und Kontrolle Ihres Inhalts unterstützt.
 
 ### Was können Empfänger mit dem freigegebenen Asset-Link tun, der mit AEM Assets Content Hub erstellt wurde, und gibt es Optionen zum Herunterladen verschiedener Ausgabedarstellungen?
 
-Empfänger, die einen freigegebenen Asset-Link erhalten, können diesen in ihrem Browser öffnen, um die bereitgestellten Assets in der Vorschau anzuzeigen, auszuwählen und herunterzuladen. Wenn Asset-Ausgabedarstellungen in Content Hub aktiviert sind, können Empfängerinnen und Empfänger auswählen, welche Ausgabedarstellungen (z. B. original oder statisch) sie herunterladen möchten. Die Assets und Ausgabedarstellungen werden als ZIP-Datei heruntergeladen, und die Metadaten können durch Klicken auf die Miniaturansicht des Assets angezeigt werden. Der Link bleibt bis zum festgelegten Ablaufdatum funktionsfähig.
+Empfänger, die einen freigegebenen Asset-Link erhalten, können diesen in ihrem Browser öffnen, um die bereitgestellten Assets in der Vorschau anzuzeigen, auszuwählen und herunterzuladen. Wenn Asset-Ausgabedarstellungen in AEM Assets Content Hub aktiviert sind, können Empfängerinnen und Empfänger auswählen, welche Ausgabedarstellungen (z. B. original oder statisch) sie herunterladen möchten. Die Assets und Ausgabedarstellungen werden als ZIP-Datei heruntergeladen, und die Metadaten können durch Klicken auf die Miniaturansicht des Assets angezeigt werden. Der Link bleibt bis zum festgelegten Ablaufdatum funktionsfähig.
 
 
 

@@ -3,10 +3,10 @@ title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 69%
+source-wordcount: '1741'
+ht-degree: 67%
 
 ---
 
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Erstellen]**.
 1. Fügen Sie einen Profiltitel hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Das Metadatenprofil wird erstellt.
-1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**&#x200B;wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**&#x200B;ist hervorgehoben.
+1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**ist hervorgehoben.
 1. Ziehen Sie ein **[!UICONTROL einzeiliges Textfeld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Genehmigte Assets_.
@@ -157,39 +157,39 @@ Ob die mit Content Hub hochgeladenen Assets angezeigt werden, hängt davon ab, o
 
 ## Häufig gestellte Fragen {#faqs-content-hub-approved-assets}
 
-### Was ist der Zweck der Genehmigung von Assets für Content Hub in Experience Manager as a Cloud Service? {#approving-assets-content-hub}
+### Welchen Zweck haben Assets für AEM Assets Content Hub in Experience Manager as a Cloud Service? {#approving-assets-content-hub}
 
-Durch die Genehmigung von Assets wird sichergestellt, dass nur die neuesten und genehmigten Versionen für die Verwendung in Content Hub verfügbar sind. So wird eine strikte Markenkonsistenz über alle Kanäle und Anwendungen hinweg gewährleistet. Dieser kontrollierte Prozess optimiert das Asset-Management für Brand Manager und Marketing-Experten.
+Durch die Genehmigung von Assets wird sichergestellt, dass nur die neuesten und genehmigten Versionen für die Verwendung in AEM Assets Content Hub verfügbar sind. So wird eine strikte Markenkonsistenz über alle Kanäle und Anwendungen hinweg gewährleistet. Dieser kontrollierte Prozess optimiert das Asset-Management für Brand Manager und Marketing-Experten.
 
-### Welche Voraussetzungen müssen erfüllt sein, um Assets für Content Hub zu genehmigen?
+### Welche Voraussetzungen müssen erfüllt sein, um Assets für AEM Assets Content Hub zu genehmigen?
 
 Sie müssen Zugriff auf AEM Assets as a Cloud Service und Schreibberechtigungen haben, um Asset-Metadaten zu bearbeiten, insbesondere das Feld **Status** in den Asset-Eigenschaften.
 
-### Wie validiert man ein einzelnes Asset mithilfe der Assets-Ansicht in AEM as a Cloud Service?
+### Wie validiert man ein einzelnes Asset mithilfe der Assets-Ansicht in AEM as a Cloud Service, sodass es in AEM Assets Content Hub verfügbar ist?
 
-Wählen Sie das Asset aus **klicken Sie auf** Symbolleiste, navigieren Sie zur Registerkarte **Allgemein**, wählen Sie **Genehmigt** aus der Dropdown-Liste **Status** und klicken Sie auf **Speichern**. Das Asset wird in Content Hub zur Verfügung gestellt.
+Wählen Sie das Asset aus **klicken Sie auf** Symbolleiste, navigieren Sie zur Registerkarte **Allgemein**, wählen Sie **Genehmigt** aus der Dropdown-Liste **Status** und klicken Sie auf **Speichern**. Das Asset wird in AEM Assets Content Hub zur Verfügung gestellt.
 
-### Können Assets stapelweise für Content Hub genehmigt werden, und wenn ja, wie?
+### Können Assets für AEM Assets Content Hub stapelweise genehmigt werden, und wenn ja, wie?
 
-Ja, Assets können in großen Mengen genehmigt werden. Wählen Sie in der Assets-Ansicht mehrere Assets aus, klicken Sie auf **Massenbearbeitung von Metadaten** wählen Sie **Genehmigt** im Feld **Status** unter Eigenschaften aus und klicken Sie auf **Speichern**. Alle ausgewählten Assets sind in Content Hub verfügbar.
+Ja, Assets können in großen Mengen genehmigt werden. Wählen Sie in der Assets-Ansicht mehrere Assets aus, klicken Sie auf **Massenbearbeitung von Metadaten** wählen Sie **Genehmigt** im Feld **Status** unter Eigenschaften aus und klicken Sie auf **Speichern**. Alle ausgewählten Assets sind in AEM Assets Content Hub verfügbar.
 
-### Wie funktioniert der Asset-Genehmigungsprozess in Content Hub? {#asset-approval-content-hub}
+### Wie funktioniert der Asset-Genehmigungsprozess in AEM Assets Content Hub? {#asset-approval-content-hub}
 
-Wenn der Umschalter Automatische Genehmigung aktiviert ist, sind mit Content Hub hochgeladene Assets automatisch verfügbar. Wenn sie deaktiviert ist, werden hochgeladene Assets im Ordner **hydrated-assets** in Assets as a Cloud Service abgelegt, und Sie müssen ihren Status manuell per Massenbearbeitung in **Genehmigt** ändern, damit sie in Content Hub angezeigt werden.
+Wenn der Umschalter Automatische Genehmigung aktiviert ist, sind mit AEM Assets Content Hub hochgeladene Assets automatisch verfügbar. Wenn sie deaktiviert ist, werden hochgeladene Assets im Ordner **hydrated-assets** in Assets as a Cloud Service abgelegt, und Sie müssen ihren Status manuell per Massenbearbeitung in **Genehmigt** ändern, damit sie in Content Hub angezeigt werden.
 
-### Was ist das Feld Validierungsziel und wie wirkt es sich auf die Asset-Veröffentlichung aus?
+### Was ist das Feld Validierungsziel in der AEM Assets-Ansicht und wie wirkt es sich auf die Asset-Veröffentlichung aus?
 
-Im Feld **Validierungsziel** auf der Seite Asset-Details können Sie auswählen, wo genehmigte Assets veröffentlicht werden sollen. Die Optionen umfassen **Bereitstellung** (wird mit OpenAPI und Content Hub sowohl in Dynamic Media veröffentlicht) oder nur **Content Hub**. Wenn keine Option ausgewählt ist, wird der Standard für Ihre Assets as a Cloud Service-Umgebung angewendet. Weitere [&#x200B; finden Sie unter „Standardmäßige Genehmigungszielgruppe und Veröffentlichungsziele &#x200B;](#default-approval-target-options-publish-destinations) genehmigte Assets“.
+Im Feld **Validierungsziel** auf der Seite Asset-Details können Sie auswählen, wo genehmigte Assets veröffentlicht werden sollen. Die Optionen umfassen **Bereitstellung** (wird mit OpenAPI und Content Hub sowohl in Dynamic Media veröffentlicht) oder nur **Content Hub**. Wenn keine Option ausgewählt ist, wird der Standard für Ihre Assets as a Cloud Service-Umgebung angewendet. Weitere [ finden Sie unter „Standardmäßige Genehmigungszielgruppe und Veröffentlichungsziele ](#default-approval-target-options-publish-destinations) genehmigte Assets“.
 
 
-### Was passiert, wenn das Feld Validierungsziel auf der Detailseite des Assets-Assets nicht angezeigt wird?
+### Was passiert, wenn das Feld Validierungsziel auf der Detailseite des AEM Assets-Assets nicht angezeigt wird?
 
 Wenn das Feld **Validierungsziel** auf der Detailseite für Assets-Asset anzeigen fehlt, sollten Sie Ihr Metadatenformular bearbeiten, das Feld **Validierung für** aus den verfügbaren Komponenten in Ihr Formular ziehen und auf **Speichern** klicken. Auf diese Weise können Sie Validierungsziele für Assets festlegen.
 
-### Wie kann die Genehmigung für neu aufgenommene Assets in der Admin-Ansicht automatisiert werden?
+### Wie kann die Genehmigung für neu aufgenommene Assets in der AEM Assets Admin-Ansicht automatisiert werden?
 
 Erstellen Sie einen Ordner in der Autorenumgebung, navigieren Sie zu **Tools** > **Assets** > **Metadatenprofile** und erstellen und bearbeiten Sie ein Metadatenprofil. Fügen Sie ein einzeiliges Textfeld hinzu, beschriften Sie es mit **Approved Assets**, ordnen Sie es &#39; zu./jcr:content/metadata/dam:status&#39; festgelegt und seinen Standardwert auf `approved` festgelegt. Wenden Sie das Metadatenprofil auf den Ordner an. Dadurch werden neue Assets, die zum Ordner hinzugefügt werden, automatisch genehmigt.
 
-### Wer kann auf genehmigte Assets in Content Hub zugreifen und welche Steuerelemente sind vorhanden?
+### Wer kann auf genehmigte Assets in AEM Assets Content Hub zugreifen und welche Steuerelemente sind vorhanden?
 
-Genehmigte Assets stehen Benutzenden zur Verfügung, die derselben Organisation in Content Hub angehören. Strenge Kontrollen gewährleisten, dass nur die neuesten, genehmigten Versionen verfügbar sind, was zur Aufrechterhaltung der Markenkonsistenz und -sicherheit beiträgt.
+Genehmigte Assets stehen Benutzenden zur Verfügung, die derselben Organisation in AEM Assets Content Hub angehören. Strenge Kontrollen gewährleisten, dass nur die neuesten, genehmigten Versionen verfügbar sind, was zur Aufrechterhaltung der Markenkonsistenz und -sicherheit beiträgt.

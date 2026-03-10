@@ -3,10 +3,10 @@ title: Verwalten lizenzierter Assets in Content Hub
 description: Erfahren Sie, wie Sie ein Lizenzfeld zum Metadatenformular für Assets hinzufügen, die Metadateneigenschaft „Lizenz“ auf Asset-Ordner anwenden und Assets mit Lizenzen zur Nutzung genehmigen.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 41%
+source-wordcount: '639'
+ht-degree: 40%
 
 ---
 
@@ -28,21 +28,21 @@ Führen Sie die folgenden Schritte aus:
 
 ### Welchen Zweck hat die Verwaltung lizenzierter Assets in AEM Assets Content Hub?
 
-Durch die Verwaltung lizenzierter Assets auf Content Hub können Admins sicherstellen, dass nur genehmigte Assets mit gültigen Lizenzen verwendet werden können. So bleiben die Compliance und das ordnungsgemäße Metadaten-Tracking in der AEM-Autorenumgebung gewahrt.
+Durch die Verwaltung lizenzierter Assets in AEM Assets Content Hub können Administratoren sicherstellen, dass nur genehmigte Assets mit gültigen Lizenzen verwendet werden können. Dies gewährleistet die Einhaltung von Richtlinien und eine ordnungsgemäße Metadatenverfolgung in der AEM-Autorenumgebung.
 
 ### Wie kann ich in Experience Manager as a Cloud Service ein Lizenzfeld zu den Asset-Eigenschaften hinzufügen?
 
-Sie können ein Lizenzfeld zu den Asset-Eigenschaften hinzufügen, indem Sie das Metadatenformular bearbeiten, um ein neues Textfeld einzuschließen, das der `dc:license`-Eigenschaft zugeordnet ist. Dieses Feld wird dann in den Asset-Eigenschaften in der AEM Assets-Autorenumgebung angezeigt.
+In der AEM Assets-Ansicht können Sie ein Lizenzfeld zu den Asset-Eigenschaften hinzufügen, indem Sie das Metadatenformular bearbeiten, um ein neues Textfeld einzuschließen, das der `dc:license`-Eigenschaft zugeordnet ist. Dieses Feld wird dann in den Asset-Eigenschaften in der AEM Assets-Autorenumgebung angezeigt.
 
-### Wie wird ein Metadatenformular auf einen Asset-Ordner angewendet, um das Lizenzfeld in die Asset-Eigenschaften aufzunehmen?
+### Wie wird ein Metadatenformular auf einen Asset-Ordner angewendet, um das Lizenzfeld in die Asset-Eigenschaften in AEM Assets aufzunehmen?
 
-Bearbeiten Sie das Metadatenformular, um das Lizenzfeld einzuschließen. Wenden Sie dieses Metadatenformular auf den gewünschten Asset-Ordner an, um sicherzustellen, dass die neuen Einstellungen für alle Assets in diesem Ordner integriert werden.
+Bearbeiten Sie in der AEM Assets-Ansicht das Metadatenformular, um das Lizenzfeld einzuschließen. Wenden Sie dieses Metadatenformular auf den gewünschten Asset-Ordner an, um sicherzustellen, dass die neuen Einstellungen für alle Assets in diesem Ordner integriert werden.
 
-### Wie gebe ich die Lizenzdetails für ein Asset an?
+### Wie gebe ich die Lizenzdetails für ein Asset in der AEM Assets-Ansicht an?
 
 Um die Lizenzdetails anzugeben, wählen Sie das Asset aus **klicken Sie auf „Details**, um seine Eigenschaften anzuzeigen, und geben Sie den absoluten Pfad der genehmigten Asset-Lizenz in das Lizenzfeld ein, das zum Metadatenformular hinzugefügt wurde.
 
-### Welches Format muss der absolute Pfad von Content Hub für eine Asset-Lizenz haben?
+### Welches Format muss der absolute Pfad von AEM Assets Content Hub für eine Asset-Lizenz haben?
 
 Der absolute Pfad von Content Hub sollte dem Muster folgen: /content/dam/(Die Ordnerhierarchie des Assets im DAM-Repository)/(asset_name).(file_extension). Beispiel: `/content/dam/teamA/projects/documents/file1.pdf`.
 
@@ -54,6 +54,6 @@ Durch die Genehmigung von sowohl Asset als auch Lizenz wird sichergestellt, dass
 
 Nachdem Sie den Lizenzpfad in den Eigenschaften des Assets definiert haben, genehmigen Sie das Asset und klicken Sie auf Speichern . Durch diese Aktion wird das lizenzierte Asset in AEM Assets Content Hub verfügbar gemacht.
 
-### Wer ist für die Verwaltung lizenzierter Assets in Content Hub verantwortlich?
+### Wer ist für die Verwaltung lizenzierter Assets in AEM Assets Content Hub verantwortlich?
 
-Admins sind in Content Hub für die Bearbeitung von Metadatenformularen, die Zuweisung zu Asset-Ordnern und die Genehmigung von Assets und deren Lizenzen verantwortlich.
+Admins sind in AEM Assets Content Hub für die Bearbeitung von Metadatenformularen, die Zuweisung zu Asset-Ordnern und die Genehmigung von Assets und deren Lizenzen verantwortlich.

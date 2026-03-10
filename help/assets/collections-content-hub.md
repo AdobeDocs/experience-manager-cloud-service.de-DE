@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 55%
+source-wordcount: '1953'
+ht-degree: 54%
 
 ---
 
@@ -31,7 +31,7 @@ Mit [!DNL Content Hub] können Sie öffentliche Sammlungen erstellen. Diese Samm
 
 Dies ermöglicht Benutzenden, auf einfache Weise auf die verschiedenen in [!DNL Content Hub] verfügbaren Assets zuzugreifen und diese zu verwalten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445309/?captions=ger&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Voraussetzungen {#prerequisites}
 
@@ -210,17 +210,17 @@ Eine Sammlung in AEM Assets Content Hub bezieht sich auf eine Reihe von Assets, 
 
 Um eine neue Sammlung in AEM Assets Content Hub zu erstellen, wechseln Sie zur Registerkarte Sammlungen und klicken Sie auf **Sammlung erstellen**. Fügen Sie im neuen Sammlungsfenster einen Titel und eine Beschreibung hinzu, wählen Sie den Zugriffssteuerungstyp unter der Dropdown-Liste **Wer Zugriff hat** und klicken Sie auf **Erstellen**. Anschließend können Sie der Sammlung Assets hinzufügen.
 
-### Welche Arten von Zugriffssteuerung sind beim Erstellen einer Sammlung verfügbar?
+### Welche Arten von Zugriffssteuerung sind beim Erstellen einer Sammlung in AEM Assets Content Hub verfügbar?
 
-Es gibt drei Zugriffssteuerungstypen: **Privat** - Nur der Ersteller und Administratoren können bearbeiten und zugreifen, **Öffentlich** - Nur anzeigen - Jeder kann anzeigen, aber nur Ersteller und Administratoren können bearbeiten, und **Öffentlich** - Anzeigen und bearbeiten - Jeder kann ohne Einschränkungen auf die Sammlung zugreifen und sie bearbeiten.
+In AEM Assets Content Hub gibt es drei Zugriffssteuerungstypen: **Privat** - Nur die erstellende Person und die Administratoren können bearbeiten und darauf zugreifen, **Öffentlich** - Nur anzeigen - Alle können anzeigen, aber nur die erstellende Person und die Administratoren können bearbeiten, und **Öffentlich** - Anzeigen und Bearbeiten - Alle können ohne Einschränkungen auf die Sammlung zugreifen und sie bearbeiten.
 
-### Wer kann in Content Hub Aktionen für Sammlungen durchführen?
+### Wer kann in AEM Assets Content Hub Aktionen für Sammlungen durchführen?
 
-Content Hub-Benutzer können Aktionen ausführen, z. B. Sammlungen erstellen, anzeigen, freigeben, herunterladen, entfernen, löschen, anheften und als Favoriten markieren. Admins verfügen über zusätzliche Berechtigungen, z. B. zum Anzeigen aller Zugriffsoptionen und zum Löschen von Sammlungen.
+Benutzende von AEM Assets Content Hub können Aktionen ausführen, z. B. Sammlungen erstellen, anzeigen, freigeben, herunterladen, entfernen, löschen, anheften und als Favoriten markieren. Admins verfügen über zusätzliche Berechtigungen, z. B. zum Anzeigen aller Zugriffsoptionen und zum Löschen von Sammlungen.
 
 ### Wie füge ich Assets zu einer bestehenden Sammlung in AEM Assets Content Hub hinzu?
 
-Wählen Sie die Assets aus, die Sie hinzufügen möchten, klicken Sie auf **Zu Sammlung hinzufügen** und wählen Sie die Sammlung aus der Liste aus. Sie können auch über die Suchleiste nach Sammlungen suchen. Klicken Sie **Zu Sammlung hinzufügen**, um die Aktion zu bestätigen.
+Um Assets zu einer bestehenden Sammlung in AEM Assets Content Hub hinzuzufügen, wählen Sie die hinzuzufügenden Assets aus, klicken auf **Zu Sammlung hinzufügen** und wählen Sie die Sammlung aus der Liste aus. Sie können auch über die Suchleiste nach Sammlungen suchen. Klicken Sie **Zu Sammlung hinzufügen**, um die Aktion zu bestätigen.
 
 ### Können Sammlungen in AEM Assets Content Hub gefiltert und durchsucht werden?
 
@@ -232,11 +232,11 @@ Um Assets aus einer Sammlung in AEM Assets Content Hub herunterzuladen, gehen Si
 
 ### Wie können Assets aus einer Sammlung in AEM Assets Content Hub freigegeben werden?
 
-Assets kann freigegeben werden, indem die Freigabe öffentlicher Links in Content Hub aktiviert wird. Wählen Sie auf der Asset-Karte das Symbol Freigeben aus, um den Freigabe-Link zu kopieren, der dann an die Empfänger gesendet werden kann. Private Sammlungen können nicht freigegeben werden.
+Assets kann freigegeben werden, indem die Freigabe öffentlicher Links in AEM Assets Content Hub aktiviert wird. Wählen Sie auf der Asset-Karte das Symbol Freigeben aus, um den Freigabe-Link zu kopieren, der dann an die Empfänger gesendet werden kann. Private Sammlungen können nicht freigegeben werden.
 
 ### Wer kann Assets aus einer Sammlung in AEM Assets Content Hub entfernen?
 
-Sammlungseigentümer, Administratoren oder Benutzer ohne Administratorrechte mit Bearbeitungsrechten können einzelne oder mehrere Assets aus einer Sammlung entfernen. Um Assets zu entfernen, wählen Sie die Assets aus und klicken **auf „Aus Sammlung**&quot; und bestätigen Sie dann die Entfernung.
+Sammlungseigentümer, Administratoren oder Benutzer ohne Administratorrechte mit Bearbeitungsrechten können einzelne oder mehrere Assets aus einer Sammlung in AEM Assets Content Hub entfernen. Um Assets zu entfernen, wählen Sie die Assets aus und klicken **auf „Aus Sammlung**&quot; und bestätigen Sie dann die Entfernung.
 
 ### Wer darf eine Sammlung aus AEM Assets Content Hub löschen und wie geht das vor?
 
