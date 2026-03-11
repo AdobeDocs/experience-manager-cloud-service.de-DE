@@ -30,7 +30,7 @@ Der neue Video Viewer ist für Unternehmen gedacht, die ein verbessertes und erw
 
 > **HINWEIS**
 >
-> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 
 ## Funktionsweise des neuen Video-Viewers {#how-it-works}
@@ -98,10 +98,10 @@ Führen Sie die folgenden Schritte aus, um ein Video mithilfe der Dynamic Media-
 Führen Sie die folgenden Schritte aus, um die Viewer-Vorgabe zu konfigurieren:
 
 1. Wählen Sie die **Dynamic Media** auf der Seite aus.
-2. Klicken Sie **der Komponenten**Symbolleiste auf „Konfigurieren“.
+2. Klicken Sie **der Komponenten**&#x200B;Symbolleiste auf „Konfigurieren“.
    ![Dynamic Media-Einstellungen öffnen](assets/configure-asset.png)
 
-3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**Vorgabe .
+3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**&#x200B;Vorgabe .
    ![Viewer-Vorgabe „Video auswählen (neu)“](assets/viewer-preset.jpeg)
 
 4. Geben Sie alle erforderlichen Modifikatoren in das Feld **Viewer** ein (z. B. `autoplay=true&muted=true`).
