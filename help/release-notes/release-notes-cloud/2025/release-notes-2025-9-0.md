@@ -3,9 +3,10 @@ title: Versionshinweise für Version 2025.9.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.9.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: ecc32b6b501be4a53bf26f170e501dc1407d1a57
+exl-id: b39198d9-97ca-4cf9-acd5-ff8c778ab386
+source-git-commit: 2e7072043a6b8e5dbaa5f9b6a0579de3d6509c85
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2082'
 ht-degree: 89%
 
 ---
@@ -38,7 +39,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -165,7 +166,7 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 
 >[!NOTE]
 >
->Verfügbar als Funktion mit eingeschränkter Verfügbarkeit am 25. September.
+>Verfügbar als Haftungsfunktion am 25. September.
 >Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
 
 ### Neue Version von AEM Developer Tools für Eclipse {#aem-develeper-tools-for-eclipse}
