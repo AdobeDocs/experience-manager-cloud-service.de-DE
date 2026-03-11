@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
+source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 80%
+source-wordcount: '2962'
+ht-degree: 74%
 
 ---
 
@@ -35,7 +35,7 @@ Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von 
 
 * alle benutzerspezifischen Links, die Sie zusätzlich zu Assets, Sammlungen und Erkenntnissen in Content Hub einschließen müssen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472955/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Voraussetzungen {#prerequisites-configuration-ui}
 
@@ -84,7 +84,7 @@ Sie können die Metadatenfelder konfigurieren, die den Benutzenden beim Hochlade
 
 1. Klicken Sie auf **[!UICONTROL Metadaten hinzufügen]**.
 
-1. Geben Sie ein Label für die Eigenschaft an, ordnen Sie sie mithilfe des Felds **[!UICONTROL Metadaten]** einer Eigenschaft zu und wählen Sie den Eingabetyp für die neuen Asset-Metadaten aus.
+1. Geben Sie eine Beschriftung für die Eigenschaft an, ordnen Sie sie einer Eigenschaft mithilfe des Felds **[!UICONTROL Metadaten]** zu und wählen Sie den entsprechenden Eingabetyp für die neuen Asset-Metadaten aus. Die Beschriftungen des Eingabetyps werden aktualisiert, um sie an Adobe Experience Manager (AEM) anzupassen. Zu den verfügbaren Eingabetypen gehören Text, Tags, Datum, Zahl, Dropdown, Text mit mehreren Werten, Smart-Tags und Smart-Farb-Tags. Bei bestimmten Metadatenfeldern (XCM:colorDistribution, XCM:machineKeywords) wird der Eingabetyp automatisch zugewiesen und kann nicht geändert werden.
 
 1. Klicken Sie auf den Umschalter **[!UICONTROL Pflichtfeld]**, um das neue Metadatenfeld für Benutzende beim Hochladen neuer Assets als obligatorisch festzulegen.
 
@@ -98,7 +98,7 @@ Klicken Sie auf den Umschalter **[!UICONTROL Automatische Genehmigung]**, wenn a
 
 Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
 
-![Upload-Details in der Konfigurationsoberfläche in Content Hub](/help/assets/assets/import-content-hub1.png)
+![Upload-Details in der Konfigurationsoberfläche in Content Hub](assets/filter-new.png)
 
 Auf der Konfigurationsoberfläche aktivierte Metadaten werden auf der Seite zum Hochladen von Assets angezeigt:
 ![Hochladen von Metadaten auf Content Hub](assets/add-assets-for-approval1.png)
@@ -108,12 +108,9 @@ Auf der Konfigurationsoberfläche aktivierte Metadaten werden auf der Seite zum 
 Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Assets angezeigt werden. Führen Sie die folgenden Schritte aus, um einen neuen Filter hinzuzufügen:
 
 1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Filter]**.
-
 1. Klicken Sie auf **[!UICONTROL Filter hinzufügen]**.
-
-1. Geben Sie ein Label für den Filter an, ordnen Sie ihn mithilfe des Felds **[!UICONTROL Metadaten]** einer Eigenschaft zu und wählen Sie den Eingabetyp für den neuen Filter aus.
+1. Geben Sie eine Beschriftung für den Filter an, ordnen Sie ihn einer Eigenschaft mithilfe des Felds **[!UICONTROL Metadaten]** zu und wählen Sie den entsprechenden Eingabetyp für den neuen Filter aus. Die Beschriftungen des Eingabetyps werden aktualisiert, um sie an Adobe Experience Manager (AEM) anzupassen. Zu den verfügbaren Eingabetypen gehören Text, Tags, Datum, Zahl, Dropdown, Text mit mehreren Werten, Smart-Tags und Smart-Farb-Tags. Bei bestimmten Metadatenfeldern (XCM:colorDistribution, XCM:machineKeywords) wird der Eingabetyp automatisch zugewiesen und kann nicht geändert werden.
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**. Der neue Filter wird in der Liste der vorhandenen Filter angezeigt.
-
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen anzuwenden, sodass der neue Filter beim Filtern von Assets auf der Suchseite angezeigt wird.
 
    >[!NOTE]
@@ -121,7 +118,7 @@ Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Asse
    >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
 
 Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jedem verfügbaren Filter klicken, um die Labels zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um einen vorhandenen Filter zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
-![Filter in der Konfigurationsoberfläche in Content Hub](assets/configuration-filter1.png)
+![Filter in der Konfigurationsoberfläche in Content Hub](assets/add-filters.png)
 
 Die auf der Konfigurationsoberfläche aktivierten Filter werden auf der Suchseite angezeigt:
 ![Suchen in Content Hub](assets/content-hub-filters1.png)
@@ -136,7 +133,7 @@ Gehen Sie wie folgt vor, um die Suche nach mehreren Assets gleichzeitig in [!DNL
 
 1. Aktivieren Sie den Umschalter **[!UICONTROL Massensuche]**. Die Standardtrennzeichen `[ , | \t | \r\n | \r | \n ]` werden automatisch angezeigt. Darüber hinaus können Sie auch zusätzliche Trennzeichen hinzufügen. Geben Sie dazu Trennzeichen im Eingabefeld an, die durch ein `pipe symbol (|)` getrennt sind.
 
-   ![Konfiguration der Massensuche](assets/bulk-search-configuration.png)
+   ![Konfiguration der Massensuche](assets/edit-filter-new.png)
 
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**, um die Änderungen zu speichern. Siehe [Massensuche in Content Hub](search-assets-content-hub.md#bulk-search) in Aktion.
 
@@ -147,15 +144,14 @@ Sie können auch die Asset-Eigenschaften konfigurieren, die für jedes Asset ang
 1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Asset-Details]**.
 
 1. Klicken Sie auf **[!UICONTROL Metadaten hinzufügen]**.
-
-1. Geben Sie ein Label für die Eigenschaft an, ordnen Sie sie mithilfe des Felds **[!UICONTROL Metadaten]** einer Eigenschaft zu und wählen Sie den Eingabetyp für die neuen Asset-Metadaten aus.
+1. Geben Sie eine Beschriftung für die Eigenschaft an, ordnen Sie sie einer Eigenschaft mithilfe des Felds **[!UICONTROL Metadaten]** zu und wählen Sie den entsprechenden Eingabetyp für die neuen Asset-Metadaten aus. Die Beschriftungen des Eingabetyps werden aktualisiert, um sie an Adobe Experience Manager (AEM) anzupassen. Zu den verfügbaren Eingabetypen gehören Text, Tags, Datum, Zahl, Dropdown, Text mit mehreren Werten, Smart-Tags und Smart-Farb-Tags. Bei bestimmten Metadatenfeldern (XCM:colorDistribution, XCM:machineKeywords) wird der Eingabetyp automatisch zugewiesen und kann nicht geändert werden.
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**. Die neuen Metadaten werden in der Liste der vorhandenen Asset-Eigenschaften angezeigt.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen anzuwenden, sodass die neue Eigenschaft auf der Seite „Asset-Details“ angezeigt wird.
 
 Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Eigenschaft klicken, um die Labels zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um vorhandene Asset-Details zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
 
-![Asset-Details in der Konfigurationsoberfläche in Content Hub](assets/configuration-asset-details.png)
+![Asset-Details in der Konfigurationsoberfläche in Content Hub](assets/asset-detailsn.png)
 
 Die auf der Konfigurationsoberfläche aktivierten Eigenschaften werden auf der Seite „Asset-Details“ angezeigt:
 
