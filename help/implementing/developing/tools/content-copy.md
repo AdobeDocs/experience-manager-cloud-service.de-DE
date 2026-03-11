@@ -4,10 +4,10 @@ description: Mit dem Inhaltskopie-Werkzeug können Benutzende veränderbare Inha
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
+source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 75%
+source-wordcount: '1574'
+ht-degree: 71%
 
 ---
 
@@ -108,7 +108,7 @@ Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwend
 Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten verwenden.
 
 >[!NOTE]
-> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [&#x200B; Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
+> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [ Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
 
 **So kopieren Sie Inhalte:**
 
@@ -143,7 +143,14 @@ Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten
 1. (Optional) Legen Sie bei Bedarf Folgendes fest:
 
    * **Zugriffssteuerungslisten einschließen** - Wählen Sie diese Option aus, wenn Sie die Zugriffssteuerungsberechtigungen des Inhalts zusammen mit dem Inhalt kopieren möchten.
-   * **Löschen** - Wählen Sie diese Option aus, um den vorhandenen Inhalt am Ziel zu löschen, bevor Sie mit dem Import beginnen, sodass Sie von vorne anfangen und Konflikte mit bereits vorhandenen Inhalten vermeiden können. Wenn Sie die Option **Löschen** deaktiviert lassen, importiert Cloud Manager den neuen Inhalt zusätzlich zum vorhandenen Zielinhalt. Bevor das Löschen beginnt, wird eine Bestätigungsaufforderung angezeigt, und Cloud Manager protokolliert die Löschaktion und Importdetails, um die Rückverfolgbarkeit zu gewährleisten.
+   * **Löschen** - Wählen Sie diese Option aus, um den vorhandenen Inhalt am Ziel zu löschen, bevor Sie mit dem Import beginnen, sodass Sie in einem sauberen Zustand beginnen und Konflikte mit bereits vorhandenen Inhalten vermeiden können. Wenn Sie die Option **Löschen** deaktiviert lassen, importiert Cloud Manager den neuen Inhalt zusätzlich zum vorhandenen Zielinhalt. Bevor das Löschen beginnt, wird eine Bestätigungsaufforderung angezeigt, und Cloud Manager protokolliert die Löschaktion und Importdetails, um die Rückverfolgbarkeit zu gewährleisten.
+     ![Kopieren von Inhalten](assets/content_copy_wipe-destination.png)
+      * Wenn Sie die Option **Ziel vor Import löschen** auswählen und auf **Kopieren** klicken, wird ein Popup mit einer Warnung angezeigt, in dem Sie folgende Optionen haben:
+         * **Abbrechen** (in diesem Fall wird der **Inhaltskopie** Fluss nicht gestartet)
+         * **Bestätigen** (der **Inhaltskopie**-Fluss wird gestartet und der Inhalt auf dem Ziel wird gelöscht)
+           ![Kopieren von Inhalten](assets/content-copy-wipe-destination-warning.png)
+
+      * Wenn Sie nicht &quot;**vor dem Import löschen“ wählen** funktioniert **Fluss** Inhalt kopieren“ wie zuvor.
 
 1. Klicken Sie auf **Kopieren**.
 
