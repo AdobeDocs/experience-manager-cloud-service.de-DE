@@ -104,7 +104,7 @@ Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Managem
 
 1. Melden Sie sich beim [!DNL AEM Forms]-Server an.
 1. Wählen Sie **Adobe Experience Manager** in der Menüleiste für globale Navigation aus.
-1. Wählen Sie ![ Werkzeuge](assets/tools.png) und dann **Formulare** aus.
+1. Wählen Sie ![&#x200B; Werkzeuge](assets/tools.png) und dann **Formulare** aus.
 1. Wählen Sie **Correspondence Management Assets veröffentlichen** aus.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)

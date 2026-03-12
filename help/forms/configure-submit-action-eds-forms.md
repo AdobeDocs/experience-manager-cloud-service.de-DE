@@ -64,7 +64,7 @@ You can configure the submit action for forms created in the Universal Editor us
 
 ## Übermittlungsaktionen für dokumentbasierte Forms
 
-Dokumentbasierte Forms-Unterstützung nur für die Übermittlung an Tabellen. Informationen dazu, wie Sie Ihre Kalkulationstabelle für den Empfang gesendeter Daten einrichten, finden Sie in den Anweisungen im Artikel [Einrichten von Google Sheets oder Microsoft Excel-Dateien, um mit dem Akzeptieren von Daten ](/help/edge/docs/forms/submit-forms.md) beginnen“.
+Dokumentbasierte Forms-Unterstützung nur für die Übermittlung an Tabellen. Informationen dazu, wie Sie Ihre Kalkulationstabelle für den Empfang gesendeter Daten einrichten, finden Sie in den Anweisungen im Artikel [Einrichten von Google Sheets oder Microsoft Excel-Dateien, um mit dem Akzeptieren von Daten &#x200B;](/help/edge/docs/forms/submit-forms.md) beginnen“.
 
 ## Siehe auch {#see-also}
 

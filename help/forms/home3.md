@@ -309,7 +309,7 @@ Wählen Sie Ihren Ausgangspunkt basierend auf Ihren unmittelbaren Anforderungen 
 
 ### Schnellstart zur Datenintegration {#integration-start}
 
-**Für mehrere Datenquellen:** Mit ([) ](/help/forms/create-form-data-models.md)
+**Für mehrere Datenquellen:** Mit ([) &#x200B;](/help/forms/create-form-data-models.md)
 
 **Für Salesforce CRM:** Mit [Salesforce-Connector beginnen](/help/forms/configure-salesforce.md)
 
