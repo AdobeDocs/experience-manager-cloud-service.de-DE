@@ -26,7 +26,7 @@ Dies sind die Versionshinweise für die Version vom 12. März 2026 des universel
 
 ## Neue Funktionen {#what-is-new}
 
-* Komponenten können jetzt über das [Kontextmenü“ von Containern ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) werden.
+* Komponenten können jetzt über das [Kontextmenü“ von Containern &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) werden.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
