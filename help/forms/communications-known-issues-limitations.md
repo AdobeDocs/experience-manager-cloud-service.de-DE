@@ -1,13 +1,14 @@
 ---
 title: Was sind Überlegungen, bekannte Probleme und Best Practices in AEM Forms?
 description: Überlegungen zu bekannten Problemen und Best Practices für Kommunikations-APIs von AEM Forms.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 100%
+source-wordcount: '1739'
+ht-degree: 99%
 
 ---
 

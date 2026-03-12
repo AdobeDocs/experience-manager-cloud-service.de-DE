@@ -3,12 +3,13 @@ title: So senden Sie eine E-Mail beim Übermitteln eines adaptiven Formulars
 description: Erkunden Sie den Prozess zum Einrichten von E-Mail-Benachrichtigungen beim Übermitteln eines adaptiven Formulars.
 keywords: So senden Sie eine E-Mail für ein adaptives Formular, E-Mail-Übermittlungsaktion, E-Mail für adaptive Formulare, E-Mail für Formularübermittlung, E-Mail-Anleitung senden
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 88%
+source-wordcount: '959'
+ht-degree: 87%
 
 ---
 

@@ -3,10 +3,11 @@ title: Konfigurieren von vorkonfigurierten Salesforce-Formulardatenmodellen für
 description: Erfahren Sie, wie Sie Salesforce mit Adaptive Forms integrieren.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '495'
 ht-degree: 71%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 71%
 * Abfragen eines [!DNL Salesforce]-Servers nach Daten und Auffüllen adaptiver Formulare.
 * Lesen Sie Daten vom [!DNL Salesforce]-Server.
 
-[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet &#x200B;](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Salesforce] Cloud-Services und das Formulardatenmodell (FDM) sind vorkonfiguriert auf dem [!DNL AEM Forms]-Server verfügbar, nachdem Sie [ein Entwicklungsprojekt für Forms auf der Grundlage des Experience Manager-Archetyps eingerichtet ](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 >[!NOTE]
 >

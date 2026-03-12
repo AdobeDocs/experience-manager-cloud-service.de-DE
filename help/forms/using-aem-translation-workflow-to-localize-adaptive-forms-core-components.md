@@ -2,18 +2,19 @@
 title: Wie übersetzen wir ein auf Kernkomponenten basierendes adaptives Formular?
 description: Erfahren Sie, wie Sie ein Formulardatenmodell (FDM) in AEM Forms erstellen, das Modell mit Beispieldaten und -diensten testen und verschiedene Optionen für ein Modell konfigurieren.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 99%
 
 ---
 
 # Verwenden Sie maschinelle Übersetzung oder menschliche Übersetzung, um ein auf Kernkomponenten basierendes adaptives Formular zu übersetzen. {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und die entsprechenden Datensatzdokumente lokalisieren. Sie können zum Lokalisieren adaptiver Formulare **maschinelle Übersetzung** nutzen oder **Übersetzer** beauftragen.
+Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und die entsprechenden archivierbaren Dokumente lokalisieren. Sie können zum Lokalisieren adaptiver Formulare **maschinelle Übersetzung** nutzen oder **Übersetzer** beauftragen.
 
 ## Übersetzen eines adaptiven Formulars und Datensatzdokuments mithilfe maschineller Übersetzung {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 

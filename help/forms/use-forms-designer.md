@@ -3,11 +3,12 @@ title: Wie können wir Forms Designer zum Erstellen von Datensatzdokument-Vorlag
 description: Verwenden Sie den  [!DNL AEM Forms]  Designer, um Datensatzdokument-Vorlagen und Formularfragmente zu erstellen.
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '129'
+ht-degree: 96%
 
 ---
 

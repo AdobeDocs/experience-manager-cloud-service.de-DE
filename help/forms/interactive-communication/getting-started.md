@@ -4,10 +4,11 @@ description: Interaktive Kommunikation ermöglicht es Unternehmen, personalisier
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '707'
 ht-degree: 7%
 
 ---
@@ -29,7 +30,7 @@ Um die interaktive Kommunikation zu verwenden, stellen Sie sicher, dass Ihre AEM
 
 ### Browser überprüfen
 
-Um die unterstützten Browser und Client-Plattformen zu erfahren, folgen Sie dem verknüpften Artikel [Unterstützte Client-Plattformen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Um die unterstützten Browser und Client-Plattformen zu erfahren, folgen Sie dem verknüpften Artikel [Unterstützte Client-Plattformen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ Der Zugriff auf IC Editor-Funktionen wird durch [Benutzerrollen innerhalb von AE
 | **Formularautor** | Erstellt und bearbeitet interaktive Kommunikationen. | ICs erstellen, bearbeiten, in der Vorschau anzeigen und veröffentlichen. |
 | **Vorlagenerstellung** | Entwirft wiederverwendbare Vorlagen für interaktive Kommunikation. | Erstellen und sperren Sie Vorlagen, definieren Sie Layouts. |
 | **Administrator** | Verwaltet Benutzerzugriff, Berechtigungen und Konfigurationen. | Rollen zuweisen, Vorlagen verwalten, ICs veröffentlichen. |
-| **FDM-Autor** | [Erstellt und verwaltet Formulardatenmodelle (FDM) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) Datenintegration. | Erstellen, Bearbeiten und Konfigurieren von Datenquellen und Modellen. |
+| **FDM-Autor** | [Erstellt und verwaltet Formulardatenmodelle (FDM) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) Datenintegration. | Erstellen, Bearbeiten und Konfigurieren von Datenquellen und Modellen. |
 
 >[!NOTE]
 >

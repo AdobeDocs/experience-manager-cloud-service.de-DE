@@ -5,10 +5,11 @@ keywords: Vergleich adaptiver Formulare, Kernkomponenten, Foundation-Komponenten
 role: Architect, Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1959'
 ht-degree: 10%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 10%
 
 Adobe Experience Manager (AEM) Forms bietet drei verschiedene Ansätze zum Erstellen von Datenerfassungserlebnissen: Adaptive Forms auf der Grundlage von Kernkomponenten, Edge Delivery Services Forms und Adaptive Forms auf der Grundlage von Foundation-Komponenten. Jeder Ansatz verfügt über eine andere Architektur, ein anderes Rendering-Modell und einen anderen Zielanwendungsfall. Dieser Artikel enthält einen technischen Vergleich, der Lösungsarchitekten, Entwicklern und AEM-Kunden bei der Auswahl des geeigneten Ansatzes für ihre Anforderungen unterstützt.
 
-## Übersicht
+## Überblick
 
 Alle drei Formulartypen dienen dem Zweck der Erfassung von Benutzerdaten und der Integration mit Backend-Systemen. Sie unterscheiden sich jedoch in ihrer zugrunde liegenden Architektur, wo Formulare gerendert werden, wie sie bereitgestellt werden und welche Funktionen sie unterstützen.
 

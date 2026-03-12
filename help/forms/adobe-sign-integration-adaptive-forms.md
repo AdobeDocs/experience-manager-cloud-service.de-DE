@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie Adobe Acrobat Sign für [!DNL AEM Forms] as a
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 100%
+source-wordcount: '2203'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +29,7 @@ In einem typischen Szenario mit [!DNL Adobe Acrobat Sign] und adaptiven Formular
 
 ## Verbinden von AEM Forms mit Adobe Acrobat Sign {#adobe-sign}
 
-Um **[!DNL AEM Forms]** mit **[!DNL Adobe Acrobat Sign]** zu verbinden, richten Sie die im Abschnitt „Voraussetzungen“ aufgelistete Software und Konten ein und konfigurieren Sie den Adobe Sign Cloud Service in Ihren Authoring- und Veröffentlichungsinstanzen von Forms as a Cloud Service:
+Um **[!DNL AEM Forms]** mit **[!DNL Adobe Acrobat Sign]** zu verbinden, richten Sie die im Abschnitt „Voraussetzungen“ aufgelistete Software und Konten ein und konfigurieren Sie den Adobe Sign Cloud Service in Ihren Authoring- und Publishing-Instanzen von Forms as a Cloud Service:
 
 ### Voraussetzungen für das Verbinden von AEM Forms mit Adobe Acrobat Sign {#prerequisites-for-adobe-sign}
 

@@ -5,10 +5,11 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: Service-Verbesserungen in VRE aufrufen, Dropdown-Optionen mit Service aufrufen, wiederholbares Bedienfeld mit Ausgabe von Service aufrufen festlegen, Bedienfeld mit Ausgabe von Service aufrufen, Ausgabeparameter von Service aufrufen verwenden, um andere Felder zu validieren.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2156'
 ht-degree: 2%
 
 ---
@@ -64,7 +65,7 @@ Die Funktion **Fehlervalidierung auf dem Server aktivieren** ermöglicht Validie
 
 Im Folgenden finden Sie die Voraussetzungen, die Sie erfüllen müssen, bevor Sie **Service aufrufen** im Regeleditor verwenden:
 
-* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier &#x200B;](/help/forms/configure-data-sources.md).
+* Stellen Sie sicher, dass Sie eine Datenquelle konfiguriert haben. Anweisungen zum Konfigurieren einer Datenquelle finden Sie [hier ](/help/forms/configure-data-sources.md).
 * Erstellen Sie ein Formulardatenmodell mithilfe der konfigurierten Datenquelle. Eine Anleitung zum Erstellen eines Formulardatenmodells finden Sie [hier](/help/forms/create-form-data-models.md).
 
 ## Erkunden von Invoke Service durch verschiedene Anwendungsfälle
@@ -260,7 +261,7 @@ Sie können eine API mithilfe der unten bereitgestellten JSON-Daten direkt als `
 
 >[!NOTE]
 >
-> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[&#x200B; klicken Sie &#x200B;](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
+> Um zu erfahren, wie Sie die -API direkt in die Benutzeroberfläche des Regeleditors integrieren können[ klicken Sie ](/help/forms/api-integration-in-rule-editor.md) hier, ohne ein vordefiniertes Formulardatenmodell zu verwenden.
 
 Konfigurieren **[!UICONTROL in &quot;]** hinzufügen“ die Aktion **Navigieren zu**, um den Benutzer mithilfe des **-Parameters zur Seite** Kontaktieren `Event Payload` umzuleiten. Hier kann der Benutzer seine Kontaktdaten übermitteln.
 
@@ -341,7 +342,7 @@ Die benutzerdefinierte Funktion gibt ein einfaches Array von Werten zurück.
 
 >[!NOTE]
 >
-> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage &#x200B;](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
+> Ausführliche Anweisungen zum Hinzufügen benutzerdefinierter Funktionen finden Sie im Artikel [Einführung in benutzerdefinierte Funktionen für adaptive Forms auf der Grundlage ](/help/forms/create-and-use-custom-functions.md) Kernkomponenten“.
 
 
 ### Verwenden der Funktion im Regeleditor

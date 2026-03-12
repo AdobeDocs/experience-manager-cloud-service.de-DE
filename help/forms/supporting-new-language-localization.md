@@ -2,12 +2,13 @@
 title: Wie füge ich einem adaptiven Formular, das auf Foundation-Komponenten basiert, Unterstützung für neue Gebietsschemata hinzu?
 description: Bei adaptiven Formularen können Sie Gebietsschemata für weitere Sprachen zusätzlich zu den vorkonfigurierten Sprachen hinzufügen.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1220'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für ein neues Gebiets
 
 ### Hinzufügen von Lokalisierungsunterstützung für nicht unterstützte Gebietsschemata {#add-localization-support-for-non-supported-locales}
 
-AEM Forms unterstützt die Lokalisierung von Inhalten in adaptiven Formulare in den Sprachumgebungen Englisch (en), Spanisch (es), Französisch (fr), Italianisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR).
+AEM Forms unterstützt die Lokalisierung von Inhalten in adaptiven Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italianisch (it), Deutsch (de), Japanisch (ja), brasilianisches Portugiesisch (pt-BR), Chinesisch (zh-CN), Chinesisch – Taiwan (zh-TW) und Koreanisch (ko-KR).
 
 So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für ein neues Gebietsschema hinzu:
 
@@ -53,14 +54,14 @@ So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für 
 1. [Fügen Sie Gebietsschema-Unterstützung für das Wörterbuch hinzu.](#add-locale-support-for-the-dictionary)
 1. [Übertragen Sie die Änderungen im Repository und stellen Sie die Pipeline bereit.](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. Klonen Sie das Repository. {#clone-the-repository}
+#### &#x200B;1. Klonen Sie das Repository. {#clone-the-repository}
 
 1. Navigieren Sie über die Befehlszeile an die Stelle, an der Sie das Forms Cloud Service-Repository klonen möchten.
 1. Führen Sie den Befehl aus, den Sie [von Cloud Manager abgerufen haben](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git). Er sieht in etwa so aus: `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Verwenden Sie den Git-Benutzernamen und das Passwort, um das Repository zu klonen.
 1. Öffnen Sie den geklonten Forms Cloud Service-Repository-Ordner im Editor Ihrer Wahl.
 
-#### 2. Fügen Sie ein Gebietsschema zum Handbuch-Lokalisierungsdienst hinzu. {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. Fügen Sie ein Gebietsschema zum Handbuch-Lokalisierungsdienst hinzu. {#add-a-locale-to-the-guide-localization-service}
 
 1. Suchen Sie die Datei `Guide Localization Service.cfg.json` und fügen Sie das gewünschte Gebietsschema in die Liste der unterstützten Gebietsschemata ein.
 
@@ -68,7 +69,7 @@ So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für 
    >
    > Erstellen Sie eine Datei mit dem Namen `Guide Localization Service.cfg.json`, falls noch nicht vorhanden.
 
-#### 3. Fügen Sie die Client-Bibliothek für Ordner mit Gebietsschema-spezifischen Namen hinzu {#add-locale-name-specific-folder}
+#### &#x200B;3. Fügen Sie die Client-Bibliothek für Ordner mit Gebietsschema-spezifischen Namen hinzu {#add-locale-name-specific-folder}
 
 1. Erstellen Sie im Ordner „UI.content“ den Ordner `etc/clientlibs`.
 1. Erstellen Sie außerdem einen Ordner mit dem Namen `locale-name` unter `etc/clientlibs`, der als Container für xfa- und af-clientlibs dient.
@@ -98,7 +99,7 @@ I18N.js
      LogMessages.js
    ```
 
-#### 4. Fügen Sie Gebietsschema-Unterstützung für das Wörterbuch hinzu. {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. Fügen Sie Gebietsschema-Unterstützung für das Wörterbuch hinzu. {#add-locale-support-for-the-dictionary}
 
 Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufügen möchten, nicht unter den Gebietsschemata `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` oder `ko-kr` ist.
 
@@ -117,7 +118,7 @@ Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufü
 
 Bevor Sie die Änderungen in das AEM Git-Repository übernehmen, müssen Sie auf Ihre [Git-Repository-Informationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git) zugreifen.
 
-#### 5. Übertragen Sie die Änderungen an das Repository und stellen Sie die Pipeline bereit. {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. Übertragen Sie die Änderungen an das Repository und stellen Sie die Pipeline bereit. {#commit-changes-in-repo-deploy-pipeline}
 
 Übertragen Sie die Änderungen an das GIT-Repository, nachdem Sie eine Gebietsschema-Unterstützung hinzugefügt haben. Stellen Sie Ihren Code mithilfe der Full-Stack-Pipeline bereit. Erfahren Sie, wie Sie [eine Pipeline einrichten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline), um Unterstützung für ein neues Gebietsschema hinzuzufügen.
 Sobald die Pipeline-Einrichtung abgeschlossen ist, wird das neu hinzugefügte Gebietsschema in der AEM-Umgebung angezeigt.

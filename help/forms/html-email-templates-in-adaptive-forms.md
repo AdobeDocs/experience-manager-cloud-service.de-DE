@@ -1,20 +1,22 @@
 ---
-title: HTML von E-Mail-Vorlagen in Adaptive Forms auf Forms as a Cloud Service
+title: HTML-E-Mail-Vorlagen in Adaptive Forms in Forms as a Cloud Service
 description: Erfahren Sie, wie Sie E-Mail-Vorlagen mit adaptiven Formularen verwenden.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 4%
+source-wordcount: '759'
+ht-degree: 13%
 
 ---
 
-# E-Mail-Vorlagen in Adaptive Forms
+# E-Mail-Vorlagen in adaptiven Formularen
 
-Adaptive Forms ermöglicht die Verwendung von HTML- und E-Mail-Vorlagen im Klartext. HTML-E-Mail-Vorlagen ermöglichen es Ihnen, beim Senden eines Formulars ansprechende, personalisierte und visuell ansprechende E-Mails zu senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei Adaptive Forms können Sie entweder eine Datei hochladen, die eine HTML-Vorlage enthält, oder einen Texteditor verwenden, um diese Vorlagen zu erstellen.
+Adaptive Forms ermöglicht die Verwendung von HTML und E-Mail-Vorlagen im Klartext. Mit HTML-E-Mail-Vorlagen können Sie beim Übermitteln eines Formulars umfangreiche, personalisierte und visuell ansprechende E-Mails senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei adaptiven Formularen können Sie entweder eine Datei mit einer HTML-Vorlage hochladen oder diese Vorlagen mit einem Texteditor erstellen.
 
 ![HTML-E-Mail-Vorlagen](/help/forms/assets/html-email.png)
 
@@ -34,7 +36,7 @@ Im Folgenden finden Sie einen kurzen Überblick über die erforderlichen Schritt
 
 ## Konfigurieren einer HTML-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) &#x200B;](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
 
 ### Option 1: Eine Datei mit der HTML-Vorlage auswählen
 
@@ -47,7 +49,7 @@ Bevor Sie fortfahren, stellen Sie sicher, dass Sie die HTML-Vorlage in Ihre AEM 
    ![Übermittlungsaktion E-Mail senden](/help/forms/assets/send-email-action.png)
 
 1. Aktivieren Sie die Option **Externe Vorlage verwenden**.
-1. Aktivieren Sie die **HTML-Vorlage verwenden**.
+1. Aktivieren Sie die Option **HTML-Vorlage verwenden**.
 1. Klicken Sie auf das Ordnersymbol für die Option Pfad für externe Vorlage und wählen Sie Ihre HTML-Vorlage aus.
 1. Klicken Sie **Fertig**, um die Konfiguration zu speichern.
 
@@ -58,13 +60,13 @@ Ihre HTML-Vorlage ist jetzt für das adaptive Formular konfiguriert.
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
 1. Wechseln Sie zum **Inhaltsbrowser**, wählen Sie den **Guide-Container** und tippen Sie auf das Symbol Eigenschaften . Ein Dialogfeld mit dem Titel &quot;`Adaptive Form Container`&quot; wird angezeigt.
 1. Wechseln Sie zur Registerkarte **Übermittlung** und wählen Sie die Übermittlungsaktion **E-Mail senden** aus.
-1. Aktivieren Sie die **HTML-Vorlage verwenden**.
+1. Aktivieren Sie die Option **HTML-Vorlage verwenden**.
 1. Geben Sie Ihren HTML-Code direkt in das bereitgestellte Feld **E-Mail-Vorlage** ein.
 
 
 ## Konfigurieren einer Nur-Text-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) &#x200B;](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
 
 ### Option 1: Wählen Sie eine Datei aus, die die Vorlage enthält
 
@@ -88,13 +90,13 @@ Ihre Vorlage ist jetzt für das adaptive Formular konfiguriert.
 
 ## Verwenden von Formulardaten in E-Mail-Vorlagen
 
-Sie können Formulardaten mithilfe von Platzhaltern in Ihre E-Mail-Vorlagen einfügen. Diese Platzhalter werden beim Senden der E-Mail dynamisch durch die tatsächlichen Formularfeldwerte ersetzt. Zum Beispiel:
+Sie können Formulardaten mithilfe von Platzhaltern in Ihre E-Mail-Vorlagen einfügen. Diese Platzhalter werden beim Senden der E-Mail dynamisch durch die tatsächlichen Formularfeldwerte ersetzt. Beispiel:
 
 * ${name}: Der Wert des Felds mit dem Namen „name“.
 * ${email}: Der Wert des Felds mit dem Namen „email“.
 * ${message}: Der Wert des Felds mit dem Namen „message“.
 
-### Beispiel einer HTML-E-Mail-Vorlage
+### HTML-E-Mail-Beispielvorlage
 
 Im Folgenden finden Sie ein Beispiel für eine HTML-E-Mail-Vorlage, die Platzhalter für Formulardaten verwendet:
 
@@ -152,11 +154,11 @@ Im Folgenden finden Sie ein Beispiel für eine Nur-Text-E-Mail-Vorlage:
     Your Team
 ```
 
-## Best Practices für das HTML von E-Mail-Vorlagen
+## Best Practices für E-Mail-Vorlagen in HTML
 
 * Stellen Sie sicher, dass Ihre Stile inline sind, um eine bessere Kompatibilität mit E-Mail-Clients zu gewährleisten.
 * Gestalten Sie Ihre Vorlage responsiv, um ein besseres Erlebnis auf Mobilgeräten zu erzielen.
 * Verwenden Sie Tools wie Litmus oder Email on Acid, um eine Vorschau Ihrer E-Mail über verschiedene E-Mail-Clients hinweg anzuzeigen.
 * Stellen Sie sicher, dass die Platzhalternamen genau mit den Formularfeldnamen übereinstimmen.
 * Prüfen Sie Ihre HTML-Vorlage auf fehlende oder falsche Tags.
-* Überprüfen Sie, ob [&#x200B; Übermittlungsaktion &#x200B;](/help/forms/configure-submit-action-send-email.md)E-Mail senden“ korrekt konfiguriert ist.
+* Überprüfen Sie, ob [ Übermittlungsaktion ](/help/forms/configure-submit-action-send-email.md)E-Mail senden“ korrekt konfiguriert ist.

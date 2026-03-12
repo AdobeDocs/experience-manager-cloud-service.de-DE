@@ -4,10 +4,11 @@ description: AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Ben
 keywords: Im Regeleditor können Sie eine benutzerdefinierte Funktion hinzufügen, eine benutzerdefinierte Funktion verwenden, eine benutzerdefinierte Funktion erstellen oder eine benutzerdefinierte Funktion verwenden.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1366'
 ht-degree: 55%
 
 ---
@@ -192,11 +193,11 @@ Nachdem Sie Ihre Client-Bibliothek in Ihrer Forms CS-Umgebung bereitgestellt hab
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-Sie können die benutzerdefinierte Funktion im [Regeleditor eines adaptiven Formulars) &#x200B;](/help/forms/rule-editor-core-components.md) die [JavaScript-Anmerkungen &#x200B;](##js-annotations).
+Sie können die benutzerdefinierte Funktion im [Regeleditor eines adaptiven Formulars) ](/help/forms/rule-editor-core-components.md) die [JavaScript-Anmerkungen ](##js-annotations).
 
 ## Verwenden einer benutzerdefinierten Funktion in einem adaptiven Formular
 
-In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) &#x200B;](/help/forms/rule-editor-core-components.md). Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
+In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor) ](/help/forms/rule-editor-core-components.md). Fügen wir der JavaScript-Datei (`Function.js`-Datei) folgenden Code hinzu, um das Alter auf der Grundlage des Geburtsdatums (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:
 
 ```javascript
     /**

@@ -4,11 +4,12 @@ description: Die Automatisierung der Experience Cloud-Einrichtung hilft Ihnen, A
 keywords: Aktivieren von Adobe Analytics für ein adaptives Formular mithilfe der Automatisierung der Einrichtung von Experience Cloud, Aktivieren von Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms Analytics Integration, Forms und Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
-workflow-type: ht
-source-wordcount: '1596'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1602'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +48,7 @@ Adobe Analytics bietet eine umfassende Palette von Leistungsmetriken für adapti
 
 * **Die Benutzeraktivität in den Top-Formularen** bietet Einblicke in Feldbesuche, Formularwiedergaben, Validierungsfehler, abgebrochene Formulare und Formularübermittlungen, sodass Sie das Benutzerverhalten analysieren können.
 
-* **Zeitleiste für die mit Formularen verbrachte Zeit**, welche eine zeitleistenbasierte Ansicht der Benutzerinteraktion mit Ihren Formularen bietet.
+* **Timeline für die mit Formularen verbrachte Zeit**, welche eine Timeline-basierte Ansicht der Benutzerinteraktion mit Ihren Formularen bietet.
 
 * **Bereiche, die Besucherunterstützung benötigen**: Metriken, die Hilfeansichten, Validierungsfehler und die Häufigkeit von Besuchen eines Feldes umfassen, zeigen auf, wo Benutzende beim Ausfüllen von Formularen möglicherweise Hilfe benötigen.
 
@@ -75,7 +76,7 @@ Um zu überprüfen, ob die oben genannten Funktionen für Ihre Forms as a Cloud 
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=de)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Konfigurieren von Adobe Analytics {#configure-adobe-analytics}

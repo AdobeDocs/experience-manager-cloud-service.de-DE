@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie Salesforce mithilfe des OAuth 2.0-Client-Anme
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration, AEM Forms Salesforce integration
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
-workflow-type: ht
-source-wordcount: '552'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +48,7 @@ Tun Sie Folgendes, bevor Sie die Kommunikation zwischen einer Salesforce-Anwendu
 
 Führen Sie zum Verbinden des adaptiven Formulars mit der Salesforce-Anwendung mithilfe der Einstellungen des OAuth 2.0-Client-Anmeldedatenflusses folgende Schritte aus:
 
-1. Melden Sie sich bei Ihrer Authoring-Instanz an.
+1. Melden Sie sich bei Ihrer Autoreninstanz an.
 1. Wechseln Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Datenquellen]**.
 1. Wählen Sie den Konfigurationsordner aus.
 1. Klicken Sie auf **[!UICONTROL Erstellen]** und das Bedienfeld **[!UICONTROL Datenquellenkonfiguration erstellen]** erscheint.

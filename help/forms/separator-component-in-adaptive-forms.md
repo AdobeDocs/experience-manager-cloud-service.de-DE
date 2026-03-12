@@ -3,11 +3,12 @@ title: Was ist eine Trennzeichenkomponente in adaptiven Formularen?
 description: Die Trennzeichenkomponente in adaptiven Formularen hilft, Abschnitte eines Formulars visuell zu trennen.
 feature: Adaptive Forms, Foundation Components
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 100%
+source-wordcount: '319'
+ht-degree: 98%
 
 ---
 

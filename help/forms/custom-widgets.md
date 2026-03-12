@@ -7,19 +7,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 95%
+source-wordcount: '668'
+ht-degree: 99%
 
 ---
 
 # Erstellen von benutzerspezifischen Erscheinungsbildern in HTML5-Formularen{#create-custom-appearances-in-html-forms}
 
-<span class="preview"> Die HTML5 Forms-Funktion wird als Teil des Early Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 Sie können mit Mobile-Formularen benutzerdefinierte Widgets einsetzen.  Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. Die XFA-Engine verwendet verschiedene Widgets. Detaillierte Informationen finden Sie unter [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](/help/forms/custom-widgets.md).
@@ -79,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrieren von benutzerdefinierten Widgets mit XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wenn der Code des benutzerdefinierten Widgets fertig ist, registrieren Sie das Widget mit der Skripterstellungs-Engine, indem Sie die `registerConfig`-API für [Form Bridge](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
+Wenn der Code des benutzerdefinierten Widgets fertig ist, registrieren Sie das Widget mit der Skripterstellungs-Engine, indem Sie die `registerConfig`-API für [Form Bridge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

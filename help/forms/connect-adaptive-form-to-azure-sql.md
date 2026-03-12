@@ -4,9 +4,11 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '607'
 ht-degree: 16%
 
 ---
@@ -27,20 +29,20 @@ Die Integration von Adaptive Forms mit Azure SQL bietet mehrere Vorteile:
 * **Echtzeit-Dateninteraktion:** Ermöglicht das Lesen und Schreiben von Daten zwischen Formularen und der Azure-Datenbank.
 * **Skalierbarkeit:** Azure SQL bietet eine skalierbare Datenbankleistung, die für Anwendungen auf Unternehmensebene geeignet ist.
 * **Zentrale Datenspeicherung:** Sichere Speicherung von Formularübermittlungen und abgerufenen Daten an einem zentralen Ort.
-* **Sicherheitskonformität:** Nutzt die integrierten Netzwerk-, Firewall- und Verschlüsselungsoptionen von Azure, um eine sichere Kommunikation zu gewährleisten.
+* **Sicherheitskompatibilität:** Nutzt die integrierten Netzwerk-, Firewall- und Verschlüsselungsoptionen von Azure, um eine sichere Kommunikation zu gewährleisten.
 * **Cloud-native Integration:** Ideal für moderne Cloud-First-Architekturen unter Verwendung von AEM as a Cloud Service.
 
 ## Voraussetzungen
 
-* Erstellen Sie [Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal)Datenbank und stellen Sie sicher, **Proxy-Verbindung** aktiviert ist.
+* [Azure SQL-](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) erstellen und sicherstellen, **Proxy-Verbindung** aktiviert ist.
 
   >[!NOTE]
   >
   > Navigieren Sie zu: `Azure Portal → SQL Server → Security → Networking → Connectivity` , um **Proxy-Verbindung“** aktivieren.
 
-  ![Azure DB erstellen](/help/forms/assets/create-azure-db.png)
+  ![Azure-DB erstellen](/help/forms/assets/create-azure-db.png)
 
-* Aktivieren [Erweiterte Netzwerke mit einer dedizierten Ausgangs-IP konfiguriert](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) für die erstellte Azure-Datenbank.
+* Aktivieren [Erweiterte Netzwerke mit einer dedizierten Ausgangs-IP konfiguriert](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) für die erstellte Azure-Datenbank.
 
   >[!NOTE]
   >
@@ -50,7 +52,7 @@ Die Integration von Adaptive Forms mit Azure SQL bietet mehrere Vorteile:
 
 * Festlegen der Port-Weiterleitung in der Cloud-Umgebung mit:
    * **portOrigin**: Zwischen `30000–30999`
-   * **portDest**: `1433` (Standardport für Azure SQL)
+   * **portDest**: `1433` (Standard-Port für Azure SQL)
 Beispiel: `portOrigin: 30433 → portDest: 1433`
 
      >
@@ -84,7 +86,7 @@ Fügen Sie die [SQL-Treiberabhängigkeit](https://central.sonatype.com/artifact/
 
 >[!NOTE]
 >
-> Informationen zum Einschließen der SQL-Abhängigkeit in Ihr Projekt finden Sie im Abschnitt [SQL-](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)&quot;.
+> Informationen zum Einschließen der SQL-Abhängigkeit in Ihr Projekt finden Sie im Abschnitt [SQL-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)&quot;.
 
 **Schritt 3: Hinzufügen der JDBC-Konfiguration**
 
@@ -94,7 +96,7 @@ Fügen Sie die [SQL-Treiberabhängigkeit](https://central.sonatype.com/artifact/
    cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
    ```
 
-**Schritt 4: Erstellen Sie die Azure SQL-Verbindungskonfigurationsdatei**
+**Schritt 4: Erstellen Sie die Konfigurationsdatei für die Azure SQL-Verbindung**
 
 1. Erstellen Sie die Datei :
 

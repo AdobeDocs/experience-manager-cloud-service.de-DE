@@ -1,14 +1,15 @@
 ---
 title: Was sind die Unterschiede zwischen AEM 6.5 Forms und AEM Cloud Services?
 description: Vergleichen Sie AEM 6.5 Forms und AEM Cloud Services und lernen Sie die wichtigsten Änderungen kennen, bevor Sie ein Upgrade durchführen oder zu Cloud Service migrieren.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 100%
+source-wordcount: '1331'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +63,7 @@ Adobe Experience Manager Forms as a Cloud Service enthält einige wichtige Ände
 
 * **Dienst für die automatische Formularkonvertierung**: Der Dienst stellt kein Metamodell für den Dienst für die automatische Formularkonvertierung bereit. Sie können dieses [aus der Dokumentation zum Dienst für die automatische Formularkonvertierung herunterladen](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=de#default-meta-model).
 
-* **XSD-basierte adaptive Formulare**: Sie können eine XDP-Vorlage verwenden, um eine Vorlage für das Datensatzdokument zu entwerfen. Der Dienst unterstützt keine XFA-basierten adaptiven Formulare
+* **XSD-basierte adaptive Formulare:** Sie können eine XDP-Vorlage verwenden, um eine Vorlage für das archivierbare Dokument zu entwerfen. Der Dienst unterstützt keine XFA-basierten adaptiven Formulare
 
 * **Komponenten**: Der Dienst unterstützt keinen formularinternen Unterzeichnungsvorgang und enthält nicht die Zusammenfassungs- und Überprüfungskomponenten für adaptive Formulare.
 

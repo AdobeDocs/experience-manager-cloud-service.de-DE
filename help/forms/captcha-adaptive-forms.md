@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 100%
+source-wordcount: '1748'
+ht-degree: 99%
 
 ---
 
@@ -59,7 +60,7 @@ Formularautorinnen und -autoren können den reCAPTCHA-Service von Google nutzen,
       1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
       1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
-1. Konfigurieren Sie den Cloud Service für [!DNL reCAPTCHA Enterprise].
+1. Konfigurieren Sie den Cloud-Service für [!DNL reCAPTCHA Enterprise].
 
    1. Gehen Sie in der Experience Manager-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Wählen Sie **[!UICONTROL reCAPTCHA]** aus. Die Konfigurationsseite öffnet sich. Wählen Sie den erstellten Konfigurations-Container aus und wählen Sie dann **[!UICONTROL Erstellen]**.
@@ -88,7 +89,7 @@ Sobald der reCAPTCHA Enterprise-Dienst aktiviert ist, kann er in adaptiven Formu
       1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
       1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
-1. Konfigurieren Sie den Cloud Service für reCAPTCHA v2.
+1. Konfigurieren Sie den Cloud-Service für reCAPTCHA v2.
 
    1. Navigieren Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **Cloud-Services**.
    1. Wählen Sie **[!UICONTROL reCAPTCHA]** aus. Die Konfigurationsseite öffnet sich. Wählen Sie den erstellten Konfigurations-Container aus und wählen Sie dann **[!UICONTROL Erstellen]**.
@@ -108,7 +109,7 @@ So verwenden Sie Google-reCAPTCHA in einem adaptiven Formular:
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass der beim Erstellen des adaptiven Formulars ausgewählte Konfigurations-Container den reCAPTCHA-Cloud Service enthält. Sie können auch adaptive Formulareigenschaften bearbeiten, um den Konfigurationscontainer zu ändern, der dem Formular zugeordnet ist.
+   >Stellen Sie sicher, dass der beim Erstellen des adaptiven Formulars ausgewählte Konfigurations-Container den reCAPTCHA-Cloud-Service enthält. Sie können auch adaptive Formulareigenschaften bearbeiten, um den Konfigurationscontainer zu ändern, der dem Formular zugeordnet ist.
 
 1. Ziehen Sie die **CAPTCHA**-Komponente im Komponenten-Browser in das adaptive Formular und legen Sie sie dort ab.
 
@@ -336,7 +337,7 @@ public interface GuideCaptchaValidator {
 
 Der reCAPTCHA-Service verwendet `https://www.recaptcha.net/` als Standard-Domain. Sie können die Einstellungen ändern, um `https://www.google.com/` oder einen beliebigen benutzerdefinierten Domain-Namen zum Laden, Rendern und Validieren des reCAPTCHA-Service festzulegen.
 
-Legen Sie die Eigenschaft **[!UICONTROL af.cloudservices.recaptcha.domain]** der Konfiguration **[!UICONTROL Adaptives Formular und Webkanal für interaktive Kommunikation]** fest, um `https://www.google.com/` oder einen anderen benutzerdefinierten Domain-Namen anzugeben. Folgende JSON-Datei zeigt ein Beispiel:
+Legen Sie die Eigenschaft **[!UICONTROL af.cloudservices.recaptcha.domain]** der Konfiguration **[!UICONTROL Adaptives Formular und Web-Kanal für interaktive Kommunikation]** fest, um `https://www.google.com/` oder einen anderen benutzerdefinierten Domain-Namen anzugeben. Folgende JSON-Datei zeigt ein Beispiel:
 
 ```json
 {

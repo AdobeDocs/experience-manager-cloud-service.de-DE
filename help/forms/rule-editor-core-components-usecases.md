@@ -4,10 +4,11 @@ description: In diesem Artikel werden verschiedene Anwendungsfälle für einen R
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e10451553692b6ad957421783e176409b36b642b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1567'
 ht-degree: 42%
 
 ---
@@ -19,7 +20,7 @@ Lassen Sie uns nun die verschiedenen Implementierungen für einen Regeleditor be
 
 ## Fokus auf ein anderes Bedienfeld legen, wenn beim Klicken auf die Schaltfläche das erste Bedienfeld gültig ist
 
-<span class="preview"> Dies ist eine Vorabveröffentlichungsfunktion, auf die über unseren [Vorabveröffentlichungskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
+<span class="preview"> Dies ist eine Vorabversionsfunktion, auf die über unseren [Vorabversionskanal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features) zugegriffen werden kann. </span>
 
 Mit dem Regeleditor können Sie Bereichslayouts wie horizontale Registerkarten, vertikale Registerkarten, Akkordeons oder Assistenten beim Klicken auf eine Schaltfläche überprüfen und den Fokus auf ein Formularobjekt in einem anderen Bereich setzen. Sie können diese Funktion verwenden, um die Formularnavigation und das Benutzererlebnis zu verbessern.
 
@@ -60,7 +61,7 @@ Mit dem Regeleditor können Sie vordefinierte Funktionen wie Summe, Min, Max und
 
 Stellen Sie sich ein Formular mit einem wiederholbaren Bereich vor, in dem jede Bereichsinstanz Informationen über den deklarierten Wert von Assets erfasst.
 
-![Wiederholbare &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![Wiederholbare ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
 Mit der Funktion `Sum` können Sie den Gesamtwert der Assets für alle Bedienfelder automatisch berechnen, sodass keine manuellen Berechnungen mehr erforderlich sind und das Fehlerpotenzial reduziert wird.
 

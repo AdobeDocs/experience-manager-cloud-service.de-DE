@@ -3,12 +3,13 @@ title: Aktuelle Early-Access-Funktionen von  [!DNL Adobe Experience Manager Form
 description: Aktuelle Early-Access-Funktionen von  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3235'
 ht-degree: 20%
 
 ---
@@ -143,13 +144,13 @@ Auf Musterseiten wird automatisch „Seite ##&quot; angezeigt, um eine klare, ko
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 
 Sie können AEM Forms mit Adobe Experience Platform (AEP) verbinden, um Kundenprofile und Daten für personalisierte Formularerlebnisse und nachgelagerte Trigger-Workflows auf der Grundlage von Formularübermittlungen zu nutzen. Durch das direkte Senden von Formulardaten an AEP-Datensätze können Sie Kundenprofile anreichern und tiefere Einblicke in Benutzerinteraktionen erhalten.
 
-Bereit zum Start? [&#x200B; Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+Bereit zum Start? [ Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
 
 ### AEM FORMS HTML5 FORMS
 
@@ -193,7 +194,7 @@ not sure what's going on with this video link. cleaned up version below
 * **Entwicklerproduktivität**: Konzentrieren Sie sich auf die Erstellung von Business-Logik und Benutzeroberfläche, während die CLI sich wiederholende Einrichtungsaufgaben übernimmt.
 * **Nahtlose Integration**: Generierte Komponenten können verwendet und in bestehende AEM Forms-Projekte integriert werden.
 
-Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### API-Integrationstool für dynamische Formulardaten
 

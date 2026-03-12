@@ -1,14 +1,15 @@
 ---
 title: Welche Workflow-Schritte sind für den AEM Forms-Cloud-Service verfügbar, um einen Workflow zu erstellen, oder für die Automatisierung von Geschäftsprozessen (Business Process Automation, BPM)?
 description: Mit Forms-zentrierten Workflows können Sie schnell auf adaptiven Formularen basierende Workflows erstellen. Mit Adobe Sign können Sie Dokumente elektronisch signieren, formularbasierte Geschäftsprozesse erstellen, Daten abrufen und an mehrere Datenquellen senden sowie E-Mail-Benachrichtigungen senden.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwendung von AEM-Workflows, Verwendung von Schritten zur Aufgabenzuweisung, Schritt zur Konvertierung in PDF/A, Schritt zur Generierung eines Datensatzdokuments, Verwendung von Workflows, Schritt zur Unterzeichnung eines Dokuments, Schritt zur Generierung einer gedruckten Ausgabe, Schritt zur Generierung einer nicht interaktiven PDF-Ausgabe
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7409'
+source-wordcount: '7415'
 ht-degree: 99%
 
 ---
@@ -355,7 +356,7 @@ Der Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ enthält folgende Fel
 
 * **[!UICONTROL Fehlermeldung in Variable speichern]**: Sie können eine Fehlermeldung in einer [Variablen vom Typ „Zeichenfolge“](variable-in-aem-workflows.md) speichern.
 
-* **[!UICONTROL Fehlerdetails in Variable speichern]**: Sie können Fehlerdetails in einer [Variablen vom Typ &#x200B;](variable-in-aem-workflows.md)JSON speichern.
+* **[!UICONTROL Fehlerdetails in Variable speichern]**: Sie können Fehlerdetails in einer [Variablen vom Typ ](variable-in-aem-workflows.md)JSON speichern.
 
 * **[!UICONTROL Dienst]**: Liste der Dienste, die durch das ausgewählte Formulardatenmodell (FDM) bereitgestellt werden.
 * **[!UICONTROL Eingabe für Services]** > **[!UICONTROL Bereitstellung von Eingabedaten mit Literal, Variable oder Workflow-Metadaten und einer JSON-Datei]**: Ein Service kann mehrere Argumente aufweisen. Wählen Sie die Option zum Abrufen des Werts der Service-Parameter aus einer Workflow-Metadateneigenschaft, einem JSON-Objekt oder einer Variable aus oder geben Sie den Wert direkt in das bereitgestellte Textfeld ein:

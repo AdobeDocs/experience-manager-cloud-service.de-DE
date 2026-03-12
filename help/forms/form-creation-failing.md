@@ -1,13 +1,14 @@
 ---
 title: Wie können Fehler bei der Formularerstellung behoben werden?
-description: Fehlerbehebung bei Fehlern bei der Formularerstellung in der AEM Forms as a Cloud Service-Umgebung.
+description: Fehlerbehebung bei Fehlern bei der Erstellung von Formularen in der AEM Forms as a Cloud Service-Umgebung.
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 5%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
@@ -28,9 +29,9 @@ Das Problem tritt auf, weil der Autor das Formular veröffentlicht, ohne **darin
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
 1. Stellen Sie sicher, dass die Vorlage, die Sie im Formular verwenden, nicht die `jcr:uuid` und andere systemgenerierte geschützte Eigenschaften am `<template-path>/initial/jcr:content node` hat.
-1. Publish verwendet die Vorlage explizit in der Vorlagenkonsole.
+1. Veröffentlichen Sie die Vorlage explizit mithilfe der Vorlagenkonsole.
 1. Versuchen Sie jetzt nach der Veröffentlichung Ihrer Vorlage, neue Formulare mithilfe der Vorlage zu erstellen.
-1. Wenn die von Ihnen verwendete Vorlage in zukünftigen Versionen aktualisiert wird, führen Sie die Publish-Vorlage erneut aus (wie in Schritt 2 angegeben), um Probleme mit der Formularerstellung zu vermeiden.
+1. Wenn die von Ihnen verwendete Vorlage in zukünftigen Versionen aktualisiert wird, veröffentlichen Sie die Vorlage erneut (wie in Schritt 2 angegeben), um Probleme mit der Formularerstellung zu vermeiden.
 
 
 <!--

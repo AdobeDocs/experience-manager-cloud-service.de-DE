@@ -5,12 +5,13 @@ keywords: Im Regeleditor können Sie eine benutzerdefinierte Funktion hinzufüge
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 53%
+source-wordcount: '1342'
+ht-degree: 52%
 
 ---
 
@@ -19,14 +20,14 @@ ht-degree: 53%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 AEM Forms unterstützt benutzerdefinierte Funktionen, mit denen Benutzende JavaScript-Funktionen definieren können, um komplexe Geschäftsregeln zu implementieren. Diese benutzerdefinierten Funktionen erweitern die Funktionen von Formularen durch die Erleichterung der Bearbeitung und Verarbeitung der eingegebenen Daten, um bestimmte Anforderungen zu erfüllen. Sie ermöglichen eine dynamische Änderung des Formularverhaltens auf der Grundlage vordefinierter Kriterien. Mit benutzerdefinierten Funktionen können Entwicklerinnen und Entwickler auch komplexe Validierungslogiken durchsetzen, dynamische Berechnungen durchführen und die Anzeige oder das Verhalten von Formularelementen basierend auf Benutzerinteraktionen oder vordefinierten Kriterien steuern.
 
 >[!NOTE]
 >
-> Stellen Sie sicher[&#x200B; dass die &#x200B;](https://github.com/adobe/aem-core-forms-components)Kernkomponente“ auf die neueste Version eingestellt ist, um die neuesten Funktionen zu verwenden.
+> Stellen Sie sicher[ dass die ](https://github.com/adobe/aem-core-forms-components)Kernkomponente“ auf die neueste Version eingestellt ist, um die neuesten Funktionen zu verwenden.
 
 ## Vorteile benutzerdefinierter Funktionen {#uses-of-custom-function}
 
@@ -120,7 +121,7 @@ Betrachten Sie das folgende Codefragment, bei dem input2 als optionaler Paramete
 
 Die folgende Abbildung zeigt die Verwendung der benutzerdefinierten Funktion `OptionalParameterFunction` im Regeleditor:
 
-![Optionale oder erforderliche Parameter &#x200B;](/help/forms/assets/optional-default-params.png)
+![Optionale oder erforderliche Parameter ](/help/forms/assets/optional-default-params.png)
 
 Sie können die Regel speichern, ohne einen Wert für die erforderlichen Parameter anzugeben, aber die Regel wird nicht ausgeführt und zeigt eine Warnmeldung als:
 

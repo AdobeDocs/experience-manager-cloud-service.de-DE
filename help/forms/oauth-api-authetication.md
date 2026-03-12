@@ -3,13 +3,14 @@ title: Wie richte ich die OAuth Server-zu-Server-Authentifizierung ein?
 description: Erfahren Sie, wie Sie die OAuth-Server-zu-Server-Authentifizierung für Adobe Experience Manager Forms as a Cloud Service konfigurieren
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 7%
 
 ---
-
 
 # OAuth Server-zu-Server-Authentifizierung
 
@@ -19,7 +20,7 @@ Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-bas
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
+* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
 * [Weisen Sie in der Adobe Admin Console die Rolle „Systemadministrator“ oder „Entwickler“ zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) um den Zugriff auf die Adobe Developer Console zu ermöglichen.
 
 ## Wie wird ein Zugriffs-Token mithilfe der OAuth-Server-zu-Server-Authentifizierung generiert?

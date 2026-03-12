@@ -7,10 +7,11 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
-source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '924'
 ht-degree: 6%
 
 ---
@@ -28,18 +29,18 @@ Am Ende der Schulung sind Sie in der Lage:
 * Erstellen von Geschäftsregeln mit dem Regeleditor für adaptive Formulare
 * Vorausfüllen von Feldern in adaptiven Formularen
 * Hinzufügen von E-Signaturen zu einem Formular
-* Protect des Formulars von Bots mit Google reCAPTCHA
+* Schützen des Formulars vor Bots mithilfe von Google reCAPTCHA
 * Lokalisieren Sie Ihr adaptives Formular in verschiedene Sprachen
 * Konfigurieren des Formulars zur Erstellung strukturierter Daten
 * Einrichten des Formulars zum Senden von Daten an einen REST-Endpunkt
-* Publish des adaptiven Formulars
+* Adaptives Formular veröffentlichen
 
 
 ## Warum sollten auf Kernkomponenten basierende Formulare erstellt werden?
 
 AEM Forms stellt Foundation-Komponenten und Kernkomponenten zum Erstellen von Forms-Erlebnissen bereit. Kernkomponenten sind der moderne und empfohlene Ansatz zum Erstellen jedes neuen Forms-Erlebnisses. Warum sollten Sie Kernkomponenten verwenden? Diese Komponenten sind einfach, Open-Source-Komponenten (auf GitHub verfügbar), bieten einen hervorragenden Wert für Google Lighthouse und Web Vitals, sind mit der Barrierefreiheit kompatibel und bieten alle bekannten Funktionen von AEM Sites (wie Versionierung und Lokalisierung). Darüber hinaus sind diese Komponenten einfacher zu gestalten. Sie können ihr Erscheinungsbild einfach gemäß den Branding-Richtlinien Ihres Unternehmens anpassen. Diese weisen keine Abhängigkeiten von Drittanbietern auf. Jeder Entwickler mit Kenntnissen in JavaScript und CSS kann diese Komponenten einfach anpassen.
 
-![Warum sollten Sie auf Kernkomponenten basierende adaptive Forms erstellen? Diese Komponenten sind leicht, einfacher zu gestalten, bieten eine hohe Lighthouse-Punktzahl, unterstützen Standards für die Barrierefreiheit, leicht anpassbar, Open-Source-Komponenten, auf GitHub verfügbar, keine Abhängigkeit von Drittanbieterbibliotheken und haben fast keine Lernkurve für AEM-Entwickler und AEM-Autoren Darüber hinaus verfügen AEM Forms-Kernkomponenten über alle Funktionen von AEM WCM-Kernkomponenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![Warum sollten Sie auf Kernkomponenten basierende adaptive Forms erstellen? Diese Komponenten sind leicht, einfacher zu gestalten, bieten eine hohe Lighthouse-Punktzahl, unterstützen Standards für die Barrierefreiheit, leicht anpassbar, Open-Source-Komponenten, auf GitHub verfügbar, keine Abhängigkeit von Drittanbieterbibliotheken und haben fast keine Lernkurve für AEM-Entwickler und AEM-Autoren Darüber hinaus verfügen AEM Forms-Kernkomponenten über alle Funktionen der AEM WCM-Kernkomponenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Anwendungsfall: Optimierte Vorqualifizierung für Heimdarlehen mit Adaptive Forms
 
@@ -57,7 +58,7 @@ Nach Abschluss des Tutorials würde Ihr Formular wie das folgende Formular ausse
 
 ## Einrichten einer Entwicklungsumgebung
 
-Sie können das adaptive Formular direkt auf Ihrem lokalen Computer erstellen und testen, bevor Sie es in einer Cloud Service-Umgebung bereitstellen. Adobe stellt eine AEM SDK für lokale Entwicklung bereit, mit der Sie
+Sie können das adaptive Formular direkt auf Ihrem lokalen Computer erstellen und testen, bevor Sie es in einer Cloud Service-Umgebung bereitstellen. Adobe bietet eine AEM SDK für lokale Entwicklung, mit der Sie
 
 * Lokales Erstellen, Anpassen und Testen von Formularen.
 * Designs für Formulare entwerfen und Konfigurationen lokal erstellen,
@@ -70,20 +71,20 @@ Lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwicklungs
 
 1. [Einrichten von Entwicklungstools für AEM-Projekte](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): Laden Sie die neueste Version von [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#node-js) und [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=de#install-maven) herunter und installieren Sie sie. Wenn Sie auch einen Nur-Text-Editor installieren, basieren die Beispiele in diesem Tutorial auf Visual Studio Code.
 
-1. [AEM SDK installieren](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Laden Sie die neueste Version der AEM SDK herunter und installieren Sie sie. Damit stehen die wesentlichen Instrumente für die AEM-Entwicklung zur Verfügung. Notieren Sie sich die Version von AEM SDK.
+1. [AEM SDK installieren](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): Laden Sie die neueste Version von AEM SDK herunter und installieren Sie sie. Dies stellt die wichtigsten Tools für die Entwicklung von AEM bereit. Notieren Sie sich die Version von AEM SDK.
 
    ![Software-Distribution](/help/forms/assets/software-distribution.png)
 
    ![Installieren von AEM SDK](/help/forms/assets/start-aem-sdk.png)
 
-1. [AEM Forms-Add-on hinzufügen](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Laden Sie das AEM Forms-Add-on, das der Version Ihrer AEM-SDK entspricht, vom [Software Distribution](https://experience.adobe.com/#/downloads)Portal herunter und installieren Sie es.
+1. [Add-on für AEM Forms hinzufügen](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Laden Sie das AEM Forms-Add-on, das der Version Ihres AEM-SDK entspricht, vom [Software Distribution](https://experience.adobe.com/#/downloads)Portal herunter und installieren Sie es.
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
    +++Installieren des AEM Forms-Add-ons:
 
    So installieren Sie das AEM Forms-Add-on:
 
-   1. AEM SDK stoppen.
+   1. Beenden Sie AEM SDK.
    1. Fügen Sie die AEM Forms-Add-on-Datei (.far) zum `AEM SDK/crx-quickstart/install` hinzu.
    1. Starten Sie AEM SDK neu.
 
@@ -92,11 +93,11 @@ Lokale Entwicklung mit AEM SDK spart Ihnen Zeit und vereinfacht den Entwicklungs
 1. [Konfigurieren von Benutzerberechtigungen](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Erstellen Sie Benutzer mit Entwicklungs-, Authoring- und anderen Berechtigungen und fügen Sie diese Benutzer vordefinierten Formulargruppen hinzu.
 
 
-1. [Adaptive Forms-Vorlagen hinzufügen](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Verwenden Sie AEM-Archetypen 48 oder höher, um ein neues AEM-Projekt zu erstellen und es in Ihrer AEM-SDK bereitzustellen. Das Projekt fügt Ihrer AEM-SDK Vorlagen für adaptive Forms hinzu.
+1. [Adaptive Forms-Vorlagen hinzufügen](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Verwenden Sie AEM-Archetypen 48 oder höher, um ein neues AEM-Projekt zu erstellen und es in Ihrer AEM SDK bereitzustellen. Das Projekt fügt Ihrem AEM SDK Vorlagen für adaptive Forms hinzu.
 
    ![Adaptive Formularvorlagen](/help/forms/assets/adaptive-forms-templates.png)
 
-   +++Hinzufügen von Vorlagen für adaptive Forms zu Ihrer AEM-SDK:
+   +++Hinzufügen von Vorlagen für adaptive Forms zu AEM SDK:
 
    1. Führen Sie den folgenden Befehl aus, um ein AEM-Projekt zu erstellen.
 

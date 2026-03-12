@@ -3,13 +3,14 @@ title: Einführung in HTML5-Formulare
 description: HTML5 Forms ist eine neue Funktion in Adobe Experience Manager-Software, mit der XFA-Formularvorlagen im HTML5-Format gerendert werden können.
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 85%
+source-wordcount: '422'
+ht-degree: 84%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 85%
 
 HTML5 Forms ist eine neue Funktion in Adobe Experience Manager-Software, mit der XFA-Formularvorlagen im HTML5-Format gerendert werden können. Diese Funktion ermöglicht das Rendern von Formularen auf Mobilgeräten und Desktop-Browsern, auf denen XFA-basierte PDF nicht unterstützt werden. „HTML5-Formulare“ unterstützt nicht nur vorhandene Funktionen XFA-basierter Formularvorlagen, sondern bietet auch neue Funktionen für mobile Geräte wie die Scribble-Signatur.
 
-„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plug-ins für die Browser installiert werden. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63_de).-->
+„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plug-ins für die Browser installiert werden. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![HTML5-Formularvorschau](assets/mobile_form_on_an_ipad_date_14.png)
 

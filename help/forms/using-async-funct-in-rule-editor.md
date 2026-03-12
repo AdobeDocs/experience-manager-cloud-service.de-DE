@@ -4,11 +4,12 @@ description: Asynchrone Funktionsaufrufe im visuellen Regeleditor
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
-workflow-type: ht
-source-wordcount: '1409'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1415'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +54,7 @@ Die folgende Abbildung zeigt die Schritte zum Verwenden des Regeltyps für **[!U
 
 ![Workflow zum Hinzufügen asynchroner Funktionen](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
 
-### 1. Schreiben einer benutzerdefinierten Funktion für den asynchronen Vorgang in die JS-Datei
+### &#x200B;1. Schreiben einer benutzerdefinierten Funktion für den asynchronen Vorgang in die JS-Datei
 
 >[!NOTE]
 >
@@ -99,7 +100,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 Der Code definiert eine `matchOTP()`-Funktion, die eine Zusage zur asynchronen Validierung eines OTP generiert. Zur Simulation des Abgleichvorgangs für das OTP wird eine `asyncOperationForOTPMatch()`-Funktion verwendet. Die Funktion prüft, ob das angegebene OTP gleich `111` ist. Wenn das eingegebene OTP korrekt ist, erfolgt ein Rückruf mit null für den Fehler und einem Objekt `({'valid':'true'})`, das angibt, dass das OTP gültig ist. Wenn das OTP ungültig ist, erfolgt ein Rückruf mit einem Fehlerobjekt `({'valid':'false'})` und null für das Ergebnis.
 
-### 2. Konfigurieren der asynchronen Funktion im Regeleditor
+### &#x200B;2. Konfigurieren der asynchronen Funktion im Regeleditor
 
 Führen Sie die folgenden Schritte aus, um die asynchrone Funktion im Regeleditor zu konfigurieren:
 

@@ -3,10 +3,11 @@ title: Aktivieren des Funktionsumschalters, um Early-Adopter- und Vorabversionsf
 description: Der Funktionsumschalter ist eine Funktion in AEM, mit der Admins neue Funktionen in einer Laufzeitumgebung aktivieren können.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
-source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '410'
 ht-degree: 45%
 
 ---

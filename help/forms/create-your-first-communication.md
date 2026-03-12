@@ -1,19 +1,20 @@
 ---
-title: Erstellen der ersten interaktiven Kommunikation
+title: Erstellen Ihrer ersten interaktiven Kommunikation
 description: Entwickeln Sie mit AEM Forms Interactive Communications auf einfache Weise dynamische, datengesteuerte Kommunikationen
 feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 52%
+source-wordcount: '767'
+ht-degree: 53%
 
 ---
 
-
-# Erstellen der ersten interaktiven Kommunikation
+# Erstellen Ihrer ersten interaktiven Kommunikation
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444094/)

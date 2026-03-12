@@ -1,13 +1,14 @@
 ---
 title: Wie können wir Variablen zu AEM-Workflow-Schritten hinzufügen?
 description: Erfahren Sie, wie Sie eine Variable erstellen, einen Wert für die Variable festlegen und sie in  [!DNL AEM Forms] -Workflow-Schritten verwenden.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 100%
+source-wordcount: '1936'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +38,7 @@ Variablen sind eine Erweiterung der vorhandenen [MetaDataMap](https://helpx.adob
 Variablen erstellen Sie mithilfe des Abschnitts „Variablen“ im Sidekick des Workflow-Modells. AEM-Workflow-Variablen unterstützen die folgenden Datentypen:
 
 * **Primitive Datentypen**: Long, Double, Boolesch, Datum und Zeichenfolge
-* **Komplexe Datentypen**: [Dokument](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)-, [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)-, [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)- und Formulardatenmodell-Instanz.
+* **Komplexe Datentypen**: [Dokument](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)-, [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)-, [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)- und Formulardatenmodell-Instanz.
 
 >[!NOTE]
 >

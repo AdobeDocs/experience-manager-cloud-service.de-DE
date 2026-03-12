@@ -3,11 +3,12 @@ title: Wie konfiguriert man Azure-Speicher?
 description: Erfahren Sie, wie Sie Formulare mit dem Azure-Speicher-Server integrieren.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '597'
+ht-degree: 99%
 
 ---
 
@@ -90,11 +91,11 @@ So fügen Sie [!DNL Azure]-Services hinzu:
     </tbody>
    </table>
 
-### Definieren einer Datenmodell-Objekteigenschaft als Suchschlüssel {#define-data-model-object-as-metadata}
+### Definieren einer Datenmodellobjekt-Eigenschaft als Suchschlüssel {#define-data-model-object-as-metadata}
 
-Definieren einer Datenmodell-Objekteigenschaft als Suchschlüssel
+Definieren einer Datenmodellobjekt-Eigenschaft als Suchschlüssel
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Modell]** die Datenmodell-Objekteigenschaft aus und dann **[!UICONTROL Eigenschaften bearbeiten]**.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Modell]** die Datenmodellobjekt-Eigenschaft aus und dann **[!UICONTROL Eigenschaften bearbeiten]**.
 1. Schalten Sie die Umschaltoption **[!UICONTROL Suchschlüssel]** in den Status „EIN“. Diese Option ist nur für primäre Datentypen verfügbar.
 1. Wählen Sie **[!UICONTROL Fertig]** und anschließend **[!UICONTROL Speichern]**, um das Formulardatenmodell (FDM) zu speichern.
 

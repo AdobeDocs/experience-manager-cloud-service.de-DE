@@ -1,15 +1,13 @@
 ---
 title: Einführung in das Erstellen von Adaptive Forms
 description: AEM Forms bietet eine benutzerfreundliche und dennoch leistungsstarke Benutzeroberfläche zum Erstellen von adaptivem Forms. Es enthält eine Reihe von Komponenten und Werkzeugen, mit denen Sie Formulare erstellen können.
-content-type: reference
-topic-tags: author, introduction
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8e57406d97b3019a3c3530390d1fd52c836fcdeb
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2502'
 ht-degree: 98%
 
 ---
@@ -154,7 +152,7 @@ Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Form
   </tr>
   <tr>
    <td>E-Mail</td>
-   <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente überprüft standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Fügt ein Feld zum Erfassen der E-Mail-Adresse hinzu. Die E-Mail-Komponente überprüft standardmäßig E-Mail-Adressen mit dem folgenden regulären Ausdruck.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Dateianhang</td>

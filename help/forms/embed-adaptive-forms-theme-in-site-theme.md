@@ -4,17 +4,18 @@ description: Erfahren Sie, wie Sie ein adaptives Forms-Design (z. B. Arbeitsflä
 keywords: Design für adaptive Formulare, Site-Design, AEM Sites-Design, Formulardesignintegration, Frontend-Pipeline, Design-Einbettung
 feature: Adaptive Forms, Core Components
 role: Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0607e11c-84d2-42cb-be9f-acd7c328a342
-source-git-commit: e1593d26beea79ffd7d8c5075b99d84c6a98c3b0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # Einbetten eines adaptiven Forms-Designs in ein AEM Sites-Design
 
-Sie können ein adaptives Forms-Design (z. B. das [AEM Forms Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)) in Ihr AEM Sites-Design einbetten. Auf diese Weise steuert ein einzelnes Design sowohl Ihre Website-Seiten als auch alle adaptiven Forms, die auf diesen Seiten eingebettet sind, mit einem Build und einer Bereitstellung über die [AEM-Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=de).
+Sie können ein adaptives Forms-Design (z. B. das [AEM Forms Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)) in Ihr AEM Sites-Design einbetten. Auf diese Weise steuert ein einzelnes Design sowohl Ihre Website-Seiten als auch alle adaptiven Forms, die auf diesen Seiten eingebettet sind, mit einem Build und einer Bereitstellung über die [AEM-Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
 
 Dieser Artikel richtet sich an Entwicklerinnen und Entwickler, die das standardmäßige (oder benutzerdefinierte) AEM Sites-Design verwalten oder anpassen und adaptive Formularstile einbeziehen möchten, ohne eine separate Forms-Design-Bereitstellung verwalten zu müssen.
 
@@ -22,7 +23,7 @@ Dieser Artikel richtet sich an Entwicklerinnen und Entwickler, die das standardm
 
 Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
-* **AEM as a Cloud Service** mit der [Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=de) konfiguriert für Ihr Site-Design.
+* **AEM as a Cloud Service** mit der [Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) konfiguriert für Ihr Site-Design.
 * **Site-Design** Quellen - z. B. das [Standard-Site-Vorlagen-Design](https://github.com/adobe/aem-site-template-standard) (das Repository, das `theme/` mit `src/theme.scss`, `src/components/` usw. enthält).
 * **Forms-Design-**: Das [AEM Forms Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas) (oder ein anderes kompatibles adaptives Forms-Design) wurde lokal geklont oder heruntergeladen.
 * **Node.js und npm** - zum Erstellen des Site-Designs (unterstützte Versionen finden Sie in der README-Datei zum Design).
@@ -209,7 +210,7 @@ Dies ist die einzige Änderung, die in der vorhandenen Site-Design-Struktur erfo
 
    ![Build ausführen](/help/forms/assets/theme-mpm-run-build.png)
 
-2. Bereitstellen über Ihre vorhandene [Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=de). Nach der Bereitstellung gilt dasselbe Design-CSS sowohl für Sites-Seiten als auch für eingebettete adaptive Forms.
+2. Bereitstellen über Ihre vorhandene [Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html). Nach der Bereitstellung gilt dasselbe Design-CSS sowohl für Sites-Seiten als auch für eingebettete adaptive Forms.
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -224,4 +225,4 @@ Dies ist die einzige Änderung, die in der vorhandenen Site-Design-Struktur erfo
 ## Siehe auch {#see-also}
 
 * [Verwenden Sie Designs, um auf Kernkomponenten basierende adaptive Forms zu gestalten](/help/forms/using-themes-in-core-components.md)
-* [Entwickeln mit Frontend-Pipelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=de)
+* [Entwickeln mit Frontend-Pipelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)

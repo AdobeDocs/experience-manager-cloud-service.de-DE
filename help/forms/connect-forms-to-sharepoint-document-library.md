@@ -4,11 +4,12 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Verbinden der SharePoint-Dokumentbibliothek für ein adaptives Formular, Senden an SharePoint, Erstellen einer SharePoint-Dokumentbibliothek, Verwenden der Übermittlungsaktion „An SharePoint senden“ in einem adaptiven Formular, AEM Forms-Datenmodell SharePoint-Dokumentbibliothek, Forms-Datenmodell SharePoint-Dokumentbibliothek, Integrieren des Forms-Datenmodells in die SharePoint-Dokumentbibliothek
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 62%
+source-wordcount: '997'
+ht-degree: 70%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 62%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444368/formautomation-productivitytools-adaptiveforms--sharepointintegration-documentlibrary/?quality=12&learn=on)
 
-<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel</span>
+<span> Dieses Video gilt nur für Kernkomponenten. Informationen zu UE/Foundation-Komponenten finden Sie im Artikel.</span>
 
 
 So verwenden Sie die Sendeaktion **[!UICONTROL An SharePoint-Dokumentbibliothek senden]** in einem adaptiven Formular:
@@ -42,7 +43,7 @@ So verbinden Sie AEM Forms mit Ihrem Microsoft® Sharepoint-Dokumentbibliotheksp
 
      >[!NOTE]
      >
-     > Sie können die [SharePoint-Sites mit eingeschränktem Zugriff auch &#x200B;](/help/forms/configure-sharepoint-site-limited-access.md) konfigurieren, indem Sie den Berechtigungsbereich `Sites.Selected` in der Microsoft Graph-API verwenden. `Sites.Selected` ist ein Berechtigungsbereich in der Microsoft Graph-API, der einen stärker granularen und eingeschränkten Zugriff auf SharePoint-Sites ermöglicht.
+     > Sie können die [SharePoint-Sites mit eingeschränktem Zugriff auch ](/help/forms/configure-sharepoint-site-limited-access.md) konfigurieren, indem Sie den Berechtigungsbereich `Sites.Selected` in der Microsoft Graph-API verwenden. `Sites.Selected` ist ein Berechtigungsbereich in der Microsoft Graph-API, der einen stärker granularen und eingeschränkten Zugriff auf SharePoint-Sites ermöglicht.
 
    * Verwenden der OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
@@ -110,18 +111,18 @@ Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Spei
 Führen Sie die folgenden Schritte aus, um eine SharePoint Document Library-Speicherkonfiguration in einem adaptiven Formular zu verwenden, das im universellen Editor verfasst wurde:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung**&#x200B;Formulareigenschaften bearbeiten“.
-Das **Formulareigenschaften** wird angezeigt.
+1. Klicken Sie im Editor auf die Erweiterung **Formulareigenschaften bearbeiten**.
+Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
-   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [&#x200B; im Artikel &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+   > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL An SharePoint übermitteln]** Übermittlungsaktion aus.
    ![Sharepoint-GIF](/help/forms/assets/submit-to-sharepoint-ue.png)
-1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
-1. Klicken Sie **[!UICONTROL Speichern&amp;Schließen]**, um die Sendeeinstellungen zu speichern.
+1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]** aus, in der Sie Ihre Daten speichern möchten.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Übermitllungseinstellungen zu speichern.
 
 >[!NOTE]
 >

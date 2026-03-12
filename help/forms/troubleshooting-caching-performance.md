@@ -4,11 +4,12 @@ description: Fehlerbehebung bei Caching-bezogenen Problemen für AEM Forms as a 
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 98%
 
 ---
 
@@ -24,9 +25,9 @@ Um das Problem zu beseitigen, heben Sie nach dem Veröffentlichen der Bilder und
 
 ## Einige adaptive Formulare, die Inhaltsfragmente oder Experience Fragments enthalten, werden nicht automatisch im Dispatcher-Cache ungültig {#content-fragments-experience-fragments-not-invalidated}
 
-Sie können einem adaptiven Formular ein Content- oder Erlebnisfragment hinzufügen. Wenn diese Fragmente unabhängig bearbeitet und veröffentlicht werden, wird die zwischengespeicherte Version eines adaptiven Formulars, das diese Fragmente enthält, nicht automatisch ungültig. Das adaptive Formular zeigt weiterhin ältere Fragmente an.
+Sie können einem adaptiven Formular ein Inhaltsfragment oder Experience Fragment hinzufügen. Wenn diese Fragmente unabhängig bearbeitet und veröffentlicht werden, wird die zwischengespeicherte Version eines adaptiven Formulars, das diese Fragmente enthält, nicht automatisch ungültig. Das adaptive Formular zeigt weiterhin ältere Fragmente an.
 
-Um das Problem zu beseitigen, heben Sie nach dem Veröffentlichen der aktualisierten Content- oder Experience-Fragmente die Veröffentlichung des adaptiven Formulars, das diese Assets verwendet, explizit auf und veröffentlichen Sie es erneut.
+Um das Problem zu beseitigen, heben Sie nach dem Veröffentlichen der aktualisierten Inhaltsfragmente oder Experience Fragments die Veröffentlichung des adaptiven Formulars, das diese Assets verwendet, explizit auf und veröffentlichen Sie es erneut.
 
 ## Es wird nur die erste Instanz von adaptiven Formularen zwischengespeichert {#only-first-instance-cached}
 

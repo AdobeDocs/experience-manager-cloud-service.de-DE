@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie ein Formulardatenmodell (FDM) erstellen und D
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
-source-wordcount: '1537'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1543'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +43,7 @@ Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im For
 
    * Geben Sie einen Namen für das Formulardatenmodell (FDM) an.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell (FDM) an.
-   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und dann den Konfigurationsknoten aus, in dem sich die Cloud-Services für die Datenquellen befinden, die verwendet werden sollen. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
+   * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Wählen Sie das Häkchensymbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und dann den Konfigurationsknoten, in dem sich die Cloud Services für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. [!DNL Experience Manager]-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten angezeigt.
 
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 

@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie ein adaptives Formular in eine Website einbet
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 99%
 
 ---
 
@@ -159,8 +160,8 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Web-Seite 
 
 * Stellen Sie sicher, dass die Formatierungsregeln im Web-Seiten-CSS nicht mit dem Formularobjekt-CSS in Konflikt stehen. Um Konflikte zu vermeiden, können Sie das Web-Seiten-CSS im Design für das adaptive Formular mithilfe der AEM-Client-Bibliothek wiederverwenden. Weitere Informationen zur Verwendung der Client-Bibliothek in den Designs für adaptive Formulare finden Sie unter [Designs in AEM Forms](/help/forms/themes.md).
 * Verwenden Sie für den Formular-Container auf der Web-Seite die gesamte Fensterbreite. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formular-Container nicht die gesamte Fensterbreite einnimmt, müssen Sie ein benutzerdefiniertes CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
-* Verwenden Sie die API `[getData](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/GuideBridge.html)`, um die XML- oder JSON-Darstellung der Formulardaten im Client abzurufen.
-* Verwenden Sie die API `[unloadAdaptiveForm](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/GuideBridge.html)`, um das adaptive Formular aus HTML DOM zu entfernen.
+* Verwenden Sie die API `[getData](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)`, um die XML- oder JSON-Darstellung der Formulardaten im Client abzurufen.
+* Verwenden Sie die API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)`, um das adaptive Formular aus HTML DOM zu entfernen.
 * Richten Sie den Header „access-control-origin“ ein, wenn Sie eine Antwort von einem AEM-Server senden.
 
 ## Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site durch AEM Forms {#cross-site}

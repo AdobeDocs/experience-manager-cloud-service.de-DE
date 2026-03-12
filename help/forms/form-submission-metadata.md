@@ -6,11 +6,12 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 100%
+source-wordcount: '699'
+ht-degree: 99%
 
 ---
 

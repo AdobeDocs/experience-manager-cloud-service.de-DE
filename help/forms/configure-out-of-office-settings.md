@@ -1,13 +1,14 @@
 ---
 title: Konfigurieren von Abwesenheitseinstellungen in AEM Forms
 description: Delegieren Sie Aufgaben während Ihrer Abwesenheit oder wenn Sie nicht im Büro sind, um eine nahtlose Workflow-Ausführung zu ermöglichen.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 100%
 
 Für geplante Abwesenheitszeiten können Sie festlegen, was während dieser Zeit mit den Ihnen zugeordneten Elementen passieren soll.
 
-Sie haben die Möglichkeit, ein Anfangs- und Enddatum sowie eine Anfangs- und Enduhrzeit für die Gültigkeit der Abwesenheitseinstellungen anzugeben. Wenn Sie sich in einer anderen Zeitzone als der des Servers aufhalten, wird die Zeitzone des Client verwendet.
+Sie haben die Möglichkeit, ein Start- und Enddatum sowie eine Anfangs- und Enduhrzeit für die Gültigkeit der Abwesenheitseinstellungen anzugeben. Wenn Sie sich in einer anderen Zeitzone als der des Servers aufhalten, wird die Zeitzone des Client verwendet.
 
 Sie können eine Person festlegen, an die Ihre Elemente standardmäßig gesendet werden. Zudem können Sie Ausnahmen für Elemente aus speziellen Prozessen festlegen, die an einen anderen Benutzer gesendet oder bis zu Ihrer Rückkehr in Ihrem Posteingang bleiben sollen. Wenn die angegebene Person ebenfalls abwesend ist, wird das Element an den von dieser Person angegebenen Vertreter weitergeleitet. Sind alle Benutzer abwesend, denen das Element zugewiesen werden könnte, bleibt es im Posteingang.
 

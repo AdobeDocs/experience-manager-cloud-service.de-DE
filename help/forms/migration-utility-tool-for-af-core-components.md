@@ -6,12 +6,13 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 8%
+source-wordcount: '1074'
+ht-degree: 9%
 
 ---
 
@@ -54,14 +55,14 @@ Das Forms-Konvertierungs-Dienstprogramm konvertiert adaptive Forms, die auf ält
 ## Voraussetzungen für die Verwendung der AEM-Modernisierungs-Tools
 
 * [Einrichten einer lokalen Entwicklungsumgebung für AEM Forms](/help/forms/setup-local-development-environment.md).
-* Installieren Sie die neueste Version von , um adaptive Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung zu aktivieren.
+* Installieren Sie die neueste Version, um Kernkomponenten für adaptive Formulare für Ihre AEM Cloud Service-Umgebung zu aktivieren.
 * Fügen Sie Ihre Benutzer zur [!DNL forms-users] hinzu. Die Mitglieder der Gruppe [!DNL forms-users] sind berechtigt, ein adaptives Formular zu erstellen.
 * Benutzende mit den folgenden Rollen sind berechtigt, die AEM-Modernisierungs-Tools in einer AEM-Umgebung zu installieren:
 
    * Entwicklerrolle
    * Administratorrolle
 
-Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unter [&#x200B; und Berechtigungen](forms-groups-privileges-tasks.md).
+Eine detaillierte Liste der formularspezifischen Benutzergruppen finden Sie unter [ und Berechtigungen](forms-groups-privileges-tasks.md).
 
 ## Installieren und Konfigurieren der AEM-Modernisierungs-Tools
 
@@ -79,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um die AEM-Modernisierungs-Tools in Ihre
 
    `java -jar aem-author-p4502.jar`
 
-1. Klonen Sie das Repository [AEM &#x200B;](https://github.com/adobe/forms-modernizer)Modernisierungs-Tool&rbrace; in Ihrem lokalen System.
+1. Klonen Sie das Repository [AEM ](https://github.com/adobe/forms-modernizer)Modernisierungs-Tool} in Ihrem lokalen System.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -142,11 +143,11 @@ Um die AEM-Modernisierungs-Tools für Ihre AEM-Umgebung zu aktivieren und zu ver
 1. Klicken Sie auf **[!UICONTROL Forms]**. Alle Formulare im `source folder` werden auf dem Bildschirm angezeigt.
 1. Wählen Sie das auf Foundation-Komponenten basierende adaptive Forms aus, um es in auf Kernkomponenten basierende Formulare zu konvertieren. Sie können auch mehrere Formulare auswählen.
 
-   ![AEM-Modernisierungs-Tools - Formular &#x200B;](/help/forms/assets/aem-modernize-tools-select-form.png)
+   ![AEM-Modernisierungs-Tools - Formular ](/help/forms/assets/aem-modernize-tools-select-form.png)
 
 1. Klicken Sie auf **[!UICONTROL Auswählen]**.
 1. Klicken Sie **[!UICONTROL Auftrag planen]**, um den Konvertierungsprozess zu starten.
-1. Klicken Sie **&#x200B;**&#x200B;Dialogfeld **[!UICONTROL Seiten konvertieren]** auf „Konvertieren“.
+1. Klicken Sie **** Dialogfeld **[!UICONTROL Seiten konvertieren]** auf „Konvertieren“.
 
    ![AEM-Modernisierungs-Tools Konvertieren von Seiten](/help/forms/assets/aem-modernize-tools-convert-form.png)
 
@@ -165,5 +166,5 @@ Sie können jetzt sehen, dass das adaptive Formular, das auf Foundation-Komponen
 
 ## Best Practices {#best-practices}
 
-* Stellen Sie sicher, dass Ihre auf Foundation-Komponenten basierenden Formulare nur die Komponenten verwenden, für die entsprechende [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) verfügbar sind. Wenn Sie Foundation-Komponenten verwenden, die keine entsprechende Kernkomponente haben, wird die Foundation-Komponente nicht konvertiert. Daher funktioniert es beim Erstellen eines Formulars nicht ordnungsgemäß
+* Stellen Sie sicher, dass Ihre auf Foundation-Komponenten basierenden Formulare nur die Komponenten verwenden, für die entsprechende [Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) verfügbar sind. Wenn Sie Foundation-Komponenten verwenden, die keine entsprechende Kernkomponente haben, wird die Foundation-Komponente nicht konvertiert. Daher funktioniert es beim Erstellen eines Formulars nicht ordnungsgemäß
 * Stellen Sie sicher, dass die Regeln zum Konvertieren der Foundation-Komponenten in Kernkomponenten in XML formatiert sind.

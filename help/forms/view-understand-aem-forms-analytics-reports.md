@@ -6,11 +6,12 @@ topic-tags: develop
 feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
-workflow-type: ht
-source-wordcount: '984'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '990'
+ht-degree: 99%
 
 ---
 
@@ -75,11 +76,11 @@ Dies hilft Ihnen, wertvolle Einblicke in die Besucheraktivität auf Ihren Formul
 
 ![Gerätetyp](assets/device-type.png){width="100%"}
 
-### **Geografische Aufgliederung** {#geographical-breakdown}
+### **Geografische Aufschlüsselung** {#geographical-breakdown}
 
 Sie zeigt den Standort an, von dem aus auf die Formulare zugegriffen wird. Sie enthält regionsspezifische Informationen zu Benutzerinnen und Benutzern von Formularen. Sie können beispielsweise sehen, dass eine regionsspezifische Information über eine Person Indien ist, wie in der Abbildung dargestellt.
 
-![Geografische Aufgliederung](assets/geographical-breakdown.png){width="100%"}
+![Geografische Aufschlüsselung](assets/geographical-breakdown.png){width="100%"}
 
 ### **Top-Quellen für Traffic und beliebte Formulare** {#top-sources-of-traffic-and-popular-forms}
 
@@ -93,7 +94,7 @@ Eine umfassende Ansicht der Benutzerinteraktion mit Feldbesuchen, Formularwieder
 
 ![Benutzeraktivität](assets/user-activity.png){width="100%"}
 
-### **Zeitleiste für die Formularbesuchszeit** {#timeline-for-time-spent-on-forms}
+### **Timeline für die Formularbesuchszeit** {#timeline-for-time-spent-on-forms}
 
 Es handelt sich um die Zeit, die Benutzende im Zeitverlauf auf Ihren Formularen verbringen, um Interaktionsmuster zu identifizieren.
 

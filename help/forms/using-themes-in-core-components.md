@@ -4,10 +4,11 @@ description: Mithilfe von Designs und unter Verwendung von Kernkomponenten könn
 keywords: Formular-Builder-Designs, Kernkomponenten für adaptive Formulare, Formular-Design-Builder, Formatierung adaptiver Formulare, Anpassen von Designs, Erstellen von Formulardesigns
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 105f68be315e527c513c923e23d8415a49fe8e88
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3011'
+source-wordcount: '3017'
 ht-degree: 91%
 
 ---
@@ -413,7 +414,7 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    >[!NOTE]
    >
-   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [&#x200B; die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
 
 1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .

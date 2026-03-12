@@ -3,11 +3,12 @@ title: Wie können SOM-Ausdrücke in adaptiven Formularen verwendet werden?
 description: Erfahren Sie, wie Sie SOM-Ausdrücke eines Bereichs in adaptiven Formularen extrahieren.
 feature: Adaptive Forms, Foundation Components
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '350'
+ht-degree: 98%
 
 ---
 

@@ -4,10 +4,11 @@ description: Der Regeleditor für adaptive Forms unterstützt verschiedene Typen
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2333'
 ht-degree: 50%
 
 ---
@@ -348,7 +349,7 @@ Ebenso können Sie eine Regel **Navigieren zwischen den Bereichen** schreiben, u
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier &#x200B;](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
 #### [!UICONTROL Async-Funktionsaufruf]
 
@@ -390,7 +391,7 @@ To define a rule based on a form data model:
 
 ## Nächster Schritt
 
-Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) &#x200B;](/help/forms/rule-editor-core-components-usecases.md).
+Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) ](/help/forms/rule-editor-core-components-usecases.md).
 
 ## Siehe auch
 

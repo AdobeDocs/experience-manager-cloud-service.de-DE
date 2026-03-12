@@ -8,11 +8,12 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1328'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 99%
 
 ---
 
@@ -195,6 +196,6 @@ Aktivieren der Authentifizierung für Ihre Formulare:
 1. Öffnen Sie in Ihrem Browser „configMgr“ in der Veröffentlichungsinstanz.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Klicken Sie auf der Seite „Adobe Experience Manager Web Console-Konfigurationen“ auf **Apache Sling-Authentifizierungs-Service**, um diesen Service zu konfigurieren.
+1. Klicken Sie auf der Seite „Konfiguration der Adobe Experience Manager-Web-Konsole“ auf **Apache Sling-Authentifizierungs-Service**, um diesen Service zu konfigurieren.
 1. Fügen Sie im daraufhin angezeigten Dialogfeld „Apache Sling-Authentifizierungs-Service“ mithilfe der Schaltfläche **+** die gewünschten Pfade hinzu.\
    Wenn Sie einen Pfad hinzufügen, wird der Authentifizierungs-Service für Formulare unter diesem Pfad aktiviert.

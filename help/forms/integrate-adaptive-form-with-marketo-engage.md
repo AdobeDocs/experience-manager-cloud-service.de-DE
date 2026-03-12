@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie mithilfe des Formular-Assistenten Ihre Market
 keywords: Verbinden einer Marketo-Instanz mit einem Formular , ein Formular mit Marketo verbinden, ein Formular mit Marketo Engage integrieren, ein adaptives Formular mit einer Marketo-Instanz integrieren.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1054'
 ht-degree: 21%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 21%
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Nachdem Sie die Cloud-Service-Konfiguration für die Integration von Marketo Engage mit AEM Forms erstellt haben, können Sie ein adaptives Formular für die Integration mit [Adobe Marketo Engage konfigurieren](https://experienceleague.adobe.com/de/docs/marketo/using/home).
+Nachdem Sie die Cloud-Service-Konfiguration für die Integration von Marketo Engage mit AEM Forms erstellt haben, können Sie ein adaptives Formular für die Integration mit [Adobe Marketo Engage konfigurieren](https://experienceleague.adobe.com/en/docs/marketo/using/home).
 
 Sie können Marketo Engage mithilfe des Formular-Assistenten mit einem adaptiven Formular verbinden, wodurch der Konfigurationsprozess vereinfacht wird, indem Sie durch die einzelnen Schritte geführt werden. Dazu gehört die Auswahl von Vorlagen, Stilen und Datenfeldern sowie die Einrichtung der Datenzuordnung, um sicherzustellen, dass Ihr Formular nach der Erstellung für die Kommunikation mit Marketo Engage bereit ist. Mithilfe des Formular-Assistenten können Sie das adaptive Formular auch so konfigurieren, dass Daten bei der Übermittlung direkt an Adobe Marketo Engage gesendet werden.
 
@@ -174,7 +175,7 @@ Das adaptive Formular ist jetzt für die Verbindung mit der Marketo Engage-Insta
 
 ## Nächster Schritt
 
-Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/de/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
+Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
 
 ## Verwandte Artikel
 

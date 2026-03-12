@@ -2,11 +2,12 @@
 title: Generieren eines Übermittlungs-PDF (ehemals Datensatzdokument) für AEM Forms
 description: Erfahren Sie, wie Sie aus Formularübermittlungen für adaptive Forms eine Übermittlungs-PDF generieren. Erstellen Sie eine PDF des gesendeten Formulars zur Archivierung oder Referenz.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '4202'
+source-wordcount: '4208'
 ht-degree: 56%
 
 ---
@@ -136,7 +137,7 @@ Der Formularentwickler bindet adaptive Forms-Felder an die entsprechende Vorlage
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF erstellt.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit Submission PDF {#key-considerations-when-working-with-document-of-record}
 

@@ -3,11 +3,12 @@ title: Wie wird eine Vorlage für ein adaptives Formular mit Kernkomponenten ers
 description: Erstellen Sie Vorlagen für adaptive Formulare basierend auf Kernkomponenten, um mithilfe des Vorlagen-Editors die grundlegende Struktur und den anfänglichen Inhalt zu definieren.
 feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1910'
 ht-degree: 95%
 
 ---
@@ -151,7 +152,7 @@ Ein Formular funktioniert mit seiner Vorlage. Wenn Sie ein adaptives Formular he
 
 >[!NOTE]
 >
-> * Sie können die Vorlage [!UICONTROL Datensatzdokument“ auch &#x200B;] den Builder für adaptive Formulare oder den Vorlagen-Builder für adaptive Formulare konfigurieren. Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Sie können die Vorlage [!UICONTROL Datensatzdokument“ auch ] den Builder für adaptive Formulare oder den Vorlagen-Builder für adaptive Formulare konfigurieren. Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Verknüpfen eines Formulardatenmodellschema mit einer Vorlage {#associating-form-data-model-schema-in-template}
 

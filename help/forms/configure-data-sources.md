@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie RESTful-Web-Dienste, SOAP-basierte Web-Dienst
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f913871da16b44d7a465e0fa00608835524ba7e3
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2390'
 ht-degree: 94%
 
 ---
@@ -207,8 +208,8 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
 1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger URL] zur [!DNL &#x200B; Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
-   * Auf der Grundlage der [!DNL &#x200B; Swagger] Quelleingabe, werden die folgenden Felder mit Werten vorausgefüllt:
+   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
+   * Auf der Grundlage der [!DNL  Swagger] Quelleingabe, werden die folgenden Felder mit Werten vorausgefüllt:
 
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der [!DNL Swagger]-Quelle definiert wurden.
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
@@ -232,8 +233,8 @@ RESTful-Webservices können mithilfe von [Swagger-Spezifikationen](https://swagg
 1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Service]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 1. Geben Sie folgende Details für den RESTful-Service an:
 
-   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL &#x200B; Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
-   * Basierend auf der [!DNL &#x200B; Swagger]-Quelleingabe werden die Verbindungsinformationen zum Ziel-Server angezeigt.
+   * Wählen Sie eine URL oder Datei aus der Dropdown-Liste [!UICONTROL Swagger-Quelle] aus und geben Sie dementsprechend die [!DNL Swagger 3.0 URL] zur [!DNL  Swagger]-Definitionsdatei an oder laden Sie die [!DNL Swagger]-Datei aus Ihrem lokalen Dateisystem hoch.
+   * Basierend auf der [!DNL  Swagger]-Quelleingabe werden die Verbindungsinformationen zum Ziel-Server angezeigt.
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0 ([Autorisierungs-Code](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldeinformationen](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
@@ -389,7 +390,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=de#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

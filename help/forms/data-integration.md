@@ -3,10 +3,11 @@ title: Verbinden einer Datenbank mit [!DNL AEM Forms] as a Cloud Service
 description: Rufen Sie Daten von einem adaptiven Formular oder einem AEM-Workflow ab und speichern Sie sie in RESTful-Web-Services, SOAP-basierten Web-Services und OData-Services.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '674'
 ht-degree: 81%
 
 ---

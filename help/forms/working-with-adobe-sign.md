@@ -5,10 +5,11 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3243'
+source-wordcount: '3249'
 ht-degree: 99%
 
 ---
@@ -71,7 +72,7 @@ Konfigurieren von [!DNL Adobe Sign] für ein adaptives Formular:
 Sie können [!DNL Adobe Sign] für ein vorhandenes adaptives Formular aktivieren oder ein [!DNL Adobe Sign]-fähiges adaptives Formular erstellen. Wählen Sie eine der folgenden Möglichkeiten:
 
 * [Ein  [!DNL Adobe Sign] -fähiges adaptives Formular erstellen](#create-an-adaptive-form-for-adobe-sign)
-* [&#x200B; [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
+* [ [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
 
 #### Erstellen eines adaptiven Formulars für Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 

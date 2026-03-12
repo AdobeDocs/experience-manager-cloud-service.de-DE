@@ -1,22 +1,23 @@
 ---
-title: Konfigurieren einer Übermittlungsaktion für ein adaptives Formular
+title: Wie wird eine Übermittlungsaktion für ein adaptives Formular konfiguriert?
 description: Ein adaptives Formular bietet verschiedene Übermittlungsaktionen. Eine Übermittlungsaktion bestimmt die Verarbeitung eines adaptiven Formulars nach dem Senden. Sie können integrierte Übermittlungsaktionen verwenden oder eigene erstellen.
-keywords: Auswählen einer Übermittlungsaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek und Verbinden eines adaptiven Formulars mit einem Formulardatenmodell (FDM)
+keywords: Anleitung zum Auswählen einer Übermittlungsaktion für ein adaptives Formular, Verbinden eines adaptiven Formulars mit einer SharePoint-Liste, Verbinden eines adaptiven Formulars mit einer SharePoint-Dokumentbibliothek, Verbinden eines adaptiven Formulars mit einem Formulardatenmodell (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 22%
+source-wordcount: '377'
+ht-degree: 66%
 
 ---
 
 # Übermittlungsaktionen für Edge Delivery Services Forms
 
-| Version | Link zum Artikel |
+| Version | Artikel-Link |
 |---------|-----------------------------|
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=de) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions) |
 | AEM as a Cloud Service (Foundation-Komponenten) | [Hier klicken](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Kernkomponenten) | [Hier klicken](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Dieser Artikel |
@@ -27,20 +28,20 @@ Sie können Edge Delivery Services Forms entweder mit dem [universellen Editor](
 
 ## Übermittlungsaktionen für Forms, die im universellen Editor erstellt wurden
 
-Die folgenden Übermittlungsaktionen werden von [im universellen Editor verfassten adaptiven Forms&quot; unterstützt](/help/edge/docs/forms/universal-editor/create-forms.md):
+Die folgenden Übermittlungsaktionen werden von[im universellen Editor verfassten adaptiven Formularen](/help/edge/docs/forms/universal-editor/create-forms.md) unterstützt:
 
 * [E-Mail senden](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate-Fluss aufrufen](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An SharePoint senden](/help/forms/configure-submit-action-sharepoint.md)
-* [Aufrufen von Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Workfront Fusion aufrufen](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Senden mit Formulardatenmodell (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [An Azure Blob Storage senden](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [An REST-Endpunkt übermitteln](/help/forms/configure-submit-action-restpoint.md)
+* [An REST-Endpunkt senden](/help/forms/configure-submit-action-restpoint.md)
 * [An OneDrive senden](/help/forms/configure-submit-action-onedrive.md)
 * [Aufrufen eines AEM-Workflows](/help/forms/configure-submit-action-workflow.md)
 * [An Marketo Engage senden](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 * [An Adobe Experience Platform (AEP) senden](/help/forms/aem-forms-aep-connector.md)
-* [An Arbeitsblatt übermitteln](/help/forms/forms-submission-service.md)
+* [An Tabelle senden](/help/forms/forms-submission-service.md)
 
 <!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
@@ -58,12 +59,12 @@ You can configure the submit action for forms created in the Universal Editor us
 
 >[!NOTE]
 >
-> * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-> * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [&#x200B; im Artikel &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+> * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+> * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 ## Übermittlungsaktionen für dokumentbasierte Forms
 
-Dokumentbasierte Forms-Unterstützung nur für die Übermittlung an Tabellen. Informationen dazu, wie Sie Ihre Kalkulationstabelle für den Empfang gesendeter Daten einrichten, finden Sie in den Anweisungen im Artikel [Einrichten von Google Sheets oder Microsoft Excel-Dateien, um mit dem Akzeptieren von Daten &#x200B;](/help/edge/docs/forms/submit-forms.md) beginnen“.
+Dokumentbasierte Forms-Unterstützung nur für die Übermittlung an Tabellen. Informationen dazu, wie Sie Ihre Kalkulationstabelle für den Empfang gesendeter Daten einrichten, finden Sie in den Anweisungen im Artikel [Einrichten von Google Sheets oder Microsoft Excel-Dateien, um mit dem Akzeptieren von Daten ](/help/edge/docs/forms/submit-forms.md) beginnen“.
 
 ## Siehe auch {#see-also}
 

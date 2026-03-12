@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie SharePoint Site mit eingeschränktem Zugriff 
 keywords: Konfigurieren einer SharePoint-Site mit eingeschränktem Zugriff?, Konfigurieren von SharePoint mit eingeschränktem Zugriff, Verwenden des Autorisierungsumfangs zum Beschränken des Zugriffs für die SharePoint-Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 24%
 
 ---
@@ -36,12 +37,12 @@ Vorteile für eingeschränkten Zugriff auf die SharePoint-Site:
 
 Gehen Sie wie folgt vor, um SharePoint Sites mit eingeschränktem Zugriff mithilfe von Autorisierungsumfängen zu konfigurieren:
 
-1. [Erstellen eines Programms mit dem &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Erstellen eines Programms mit dem ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Festlegen des Autorisierungsumfangs bei der AEM-Instanz](#set-the-authorization-scope-at-aem-instance)
 
 ### Erstellen einer Anwendung mit eingeschränkter Berechtigung im Azure-Portal
 
-Erstellen Sie eine Anwendung im [Microsoft Azure](https://portal.azure.com/#home)Portal mit dem `Sites.Selected` Berechtigungsbereich in der Graph-API von Microsoft.
+Erstellen Sie eine Anwendung im [Microsoft](https://portal.azure.com/#home)Azure-Portal mit dem `Sites.Selected` Berechtigungsbereich in der Microsoft-Graph-API.
 
 ![SharePoint ausgewählte Site](/help/forms/assets/sharepoint-selected-site.png)
 
@@ -51,9 +52,9 @@ Informationen zum Abrufen von `Client ID`, `Client Secret` und `Tenant ID` für 
 * Fügen Sie den `offline_access` und `Sites.Selected` Berechtigungsbereich in der Graph-API von Microsoft hinzu, um eingeschränkten Zugriff auf Sites zu ermöglichen.
 * Für OAuth-URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Ersetzen Sie `<tenant-id>` durch die `tenant-id` Ihrer App aus dem Microsoft® Azure-Portal.
 
-Für die Verwendung der `Sites.Selected` API-Berechtigung ist eine im Azure-Portal registrierte Anwendung mit den entsprechenden Berechtigungen für SharePoint Online Sites erforderlich. Durch diese Einrichtung wird sichergestellt, dass die Anwendung über die erforderliche Autorisierung verfügt, um im definierten Umfang mit der SharePoint-Site zu interagieren, wodurch der erforderliche eingeschränkte Zugriff bereitgestellt wird.
+Für die Verwendung der `Sites.Selected`-API-Berechtigung ist eine im Azure-Portal registrierte Anwendung mit den entsprechenden Berechtigungen für SharePoint Online Sites erforderlich. Durch diese Einrichtung wird sichergestellt, dass die Anwendung über die erforderliche Autorisierung verfügt, um im definierten Umfang mit der SharePoint-Site zu interagieren, wodurch der erforderliche eingeschränkte Zugriff bereitgestellt wird.
 
-Anweisungen zum Entwickeln von Anwendungen, die [&#x200B; Berechtigungen für SharePoint Online Sites verwenden, finden Sie &#x200B;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) Blog-Artikel `Sites.Selected` Entwickeln von Anwendungen, die Sites verwenden.Ausgewählte Berechtigungen für SPO Sites .
+Anweisungen zum Entwickeln von Anwendungen, die [ Berechtigungen für SharePoint Online Sites verwenden, finden Sie ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) Blog-Artikel `Sites.Selected` Entwickeln von Anwendungen, die Sites verwenden.Ausgewählte Berechtigungen für SPO Sites .
 
 ### Festlegen des Autorisierungsumfangs bei der AEM-Instanz
 
@@ -87,7 +88,7 @@ Um den eingeschränkten Zugriff auf eine Microsoft SharePoint-Site zu ermöglich
    >* Standardmäßig ist `forms-ootb-storage-adaptive-forms-submission` auf der ausgewählten SharePoint-Site vorhanden.
    >* Erstellen Sie einen Ordner als `forms-ootb-storage-adaptive-forms-submission`, wenn er nicht bereits in der `Documents`-Bibliothek der ausgewählten SharePoint-Site vorhanden ist, indem Sie auf **Ordner erstellen** klicken.
 
-Jetzt können Sie diese [SharePoint Sites-Konfiguration für die Sendeaktion in einem adaptiven Formular &#x200B;](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af).
+Jetzt können Sie diese [SharePoint Sites-Konfiguration für die Sendeaktion in einem adaptiven Formular ](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af).
 
 ## Zusätzliche Bytes
 

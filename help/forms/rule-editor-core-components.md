@@ -4,10 +4,11 @@ description: Der Regeleditor für adaptive Formulare ermöglicht es Ihnen, ohne 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1180'
 ht-degree: 66%
 
 ---

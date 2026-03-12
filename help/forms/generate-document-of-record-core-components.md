@@ -2,11 +2,12 @@
 title: Generieren eines Übermittlungs-PDF (ehemals Datensatzdokument) für adaptive Forms
 description: Erfahren Sie, wie Sie aus Formularübermittlungen für Kernkomponenten von Adaptive Forms eine Übermittlungs-PDF generieren. Erstellen Sie eine PDF des gesendeten Formulars zur Archivierung oder Referenz.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3320'
 ht-degree: 43%
 
 ---
@@ -147,7 +148,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF generiert.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit der Übermittlungs-PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -363,7 +364,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       <span class="preview"> Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; &#x200B;](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
    1. **Eigenschaften der primären Seite**:
 

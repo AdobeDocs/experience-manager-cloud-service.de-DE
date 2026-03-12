@@ -5,10 +5,11 @@ keywords: Senden eines adaptiven Formulars an Adobe Workfront Fusion, Integratio
 topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1443'
 ht-degree: 90%
 
 ---

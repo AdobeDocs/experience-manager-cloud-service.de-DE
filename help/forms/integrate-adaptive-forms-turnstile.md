@@ -1,14 +1,15 @@
 ---
 title: Verwenden von Drehkreuz in einem adaptiven Formular von AEM
-description: Verbessern Sie die Formularsicherheit mit dem Drehkreuz-Service mühelos. Schrittweise Anleitung enthalten!
+description: Mit dem Turnstile-Service können Sie die Formularsicherheit verbessern. Schrittweise Anleitung enthalten.
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 26%
+source-wordcount: '958'
+ht-degree: 51%
 
 ---
 
@@ -26,19 +27,19 @@ AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
 ## Integrieren der AEM Forms-Umgebung mit Turnstile Captcha
 
-Cloudflare&#39;s Turnstile Captcha ist eine Sicherheitsmaßnahme, die darauf abzielt, Formulare und Websites vor automatischen Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem Sie überprüfen können, ob es sich um menschliche Daten handelt, bevor Sie ihnen das Senden des Formulars ermöglichen. AEM Forms as a Cloud Service unterstützt Drehkreuz-Captcha in adaptivem Forms.
+Turnstile Captcha von Cloudflare bietet eine Sicherheitsmaßnahme zum Schutz von Formularen vor automatisierten Bots, bösartigen Angriffen, Spams und unerwünschtem automatisierten Traffic. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem Sie überprüfen können, ob es sich um menschliche Daten handelt, bevor Sie ihnen das Senden des Formulars ermöglichen. AEM Forms as a Cloud Service unterstützt Drehkreuz-Captcha in adaptivem Forms.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
 ### Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
 
-Um das Drehkreuz für AEM Forms zu konfigurieren, müssen Sie den [Standortschlüssel und geheimen Schlüssel des Drehkreuzes](https://developers.cloudflare.com/turnstile/get-started/) von der Website des Drehkreuzes abrufen.
+Um Turnstile für AEM Forms zu konfigurieren, müssen Sie den [Site-Schlüssel von Turnstile sowie den geheimen Schlüssel](https://developers.cloudflare.com/turnstile/get-started/) von der Turnstile-Website abrufen.
 
 ### Schritte zum Konfigurieren des Drehkreuzes für AEM Forms{#steps-to-configure-turnstile}
 
 1. Erstellen Sie einen Konfigurations-Container in Ihrer AEM Forms as a Cloud Service-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden wird. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit Turnstile zu verbinden:
    1. Öffnen Sie Ihre AEM Forms as a Cloud Service-Instanz.
-   1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
+   1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
    1. Im Konfigurations-Browser können Sie einen vorhandenen Ordner auswählen oder einen Ordner erstellen. Sie können einen Ordner erstellen und die Option Cloud-Konfigurationen dafür aktivieren oder die Option Cloud-Konfigurationen für einen vorhandenen Ordner aktivieren:
 
       * **So erstellen Sie einen Ordner und aktivieren die Option Cloud-Konfigurationen**:
@@ -52,17 +53,15 @@ Um das Drehkreuz für AEM Forms zu konfigurieren, müssen Sie den [Standortschl�
 
 1. Konfigurieren des Cloud-Service:
    1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL Drehkreuz]**.
-
       ![Drehkreuz in der Benutzeroberfläche](assets/turnstile-in-ui.png)
-   1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
-
-      ![Konfigurations-Drehkreuz](assets/config-hcaptcha.png)
+   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
+      ![Konfiguration von Turnstile](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Widget-Typ]** als verwaltet an. Der Widget-Typ kann sich ändern, was von dem Schlüssel abhängt, der in den Voraussetzungen **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für den Drehkreuz-Dienst [erhalten in Voraussetzung](#prerequisite) wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
-      ![Konfigurieren Sie den Cloud Service, um Ihre AEM Forms-Umgebung mit Turnstile zu verbinden](assets/config-turntstile.png)
+      ![Konfigurieren des Cloud-Services für die Verbindung Ihrer AEM Forms-Umgebung mit Turnstile](assets/config-turntstile.png)
 
 >[!NOTE]
-> Benutzende müssen die Client-seitige JavaScript-Validierungs-URL und die Server-seitige Validierungs-URL nicht ändern, da sie bereits für die Drehkreuz-Validierung vorausgefüllt sind.
+> Benutzende brauchen die Client-seitige JavaScript-Validierungs-URL und die Server-seitige Validierungs-URL nicht zu ändern, da sie bereits für die Turnstile-Validierung vorausgefüllt sind.
 
 Sobald der Service „Drehkreuz-CAPTCHA“ konfiguriert ist, kann er in einem adaptiven Formular verwendet werden.
 
@@ -77,7 +76,7 @@ Sobald der Service „Drehkreuz-CAPTCHA“ konfiguriert ist, kann er in einem ad
    ![Auswählen eines Konfigurations-Containers](/help/forms/assets/captcha-properties.png)
 
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. Das adaptive Formular wird im Editor für adaptive Formulare geöffnet.
-1. Ziehen Sie die **[!UICONTROL CAPTCHA]**-Komponente im Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
+1. Ziehen Sie die **[!UICONTROL Captcha]**-Komponente im Komponenten-Browser in das adaptive Formular und legen Sie sie dort ab.
 1. Wählen Sie die **[!UICONTROL CAPTCHA]**-Komponente aus und klicken Sie auf das Symbol ![Eigenschaften](assets/configure-icon.svg). Dadurch wird das Dialogfeld „Eigenschaften“ geöffnet.
 
    ![Einstellungen](assets/turnstile-setting-v1.png)
@@ -94,7 +93,7 @@ Sobald der Service „Drehkreuz-CAPTCHA“ konfiguriert ist, kann er in einem ad
 
      >[!NOTE]
      >
-     > Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit Turnstile](#connect-your-forms-environment-with-turnstile-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem Turnstile-Service verbindet.
+     > Es kann sein, dass Sie für ähnliche Zwecke über mehrere Cloud-Konfigurationen in Ihrer Umgebung verfügen. Wählen Sie den Service daher sorgfältig aus. Wenn kein Service aufgeführt ist, lesen Sie [Verbinden Ihrer AEM Forms-Umgebung mit Turnstile](#connect-your-forms-environment-with-turnstile-service), um zu erfahren, wie Sie einen Cloud-Service erstellen, der Ihre AEM Forms-Umgebung mit dem Turnstile-Service verbindet.
 
    * **Fehlermeldung:** Geben Sie die Fehlermeldung an, die Benutzern angezeigt werden soll, wenn die CAPTCHA-Übermittlung fehlschlägt.
    * **CAPTCHA-Größe** Sie wählen die Anzeigegröße des Dialogfelds „Drehkreuz-Herausforderung“ aus. Verwenden Sie die Option **[!UICONTROL Kompakt]**, um eine kleine Größe anzuzeigen, und die Option **[!UICONTROL Normal]**, um ein relativ großes Dialogfeld für die Drehkreuz-Herausforderung anzuzeigen.
@@ -103,16 +102,16 @@ Sobald der Service „Drehkreuz-CAPTCHA“ konfiguriert ist, kann er in einem ad
      >[!NOTE]
      >Dies gilt für den Widget-Typ „Verwaltet“ und „Nicht interaktiv“. Wenn der Widget-Typ nicht sichtbar ist, ist die Größeneigenschaft nicht erforderlich und sie ist deaktiviert.
 
-1. Wählen Sie **[!UICONTROL Fertig]**.
+1. Wählen Sie **[!UICONTROL Fertig]** aus.
 
-Für die Formularübermittlung sind jetzt nur noch Formulare zulässig, in denen der Formularbenutzer die vom Dienst „Drehkreuz“ ausgehende Herausforderung erfolgreich löscht.
+Jetzt sind nur legitime Formulare zur Übermittlung zulässig, bei denen die Person, die das Formular ausfüllt, die vom Turnstile-Service ausgehende Herausforderung erfolgreich löst.
 
-![Turnstile Challenge](assets/turnstile-challenge.png)
+![Turnstile-Challenge](assets/turnstile-challenge.png)
 
 ## Häufig gestellte Fragen
 
-* **F: Kann ich mehr als eine CAPTCHA-Komponente in einem adaptiven Formular verwenden?**
-* **A:** Die Verwendung von mehr als einer CAPTCHA-Komponente in einem adaptiven Formular wird nicht unterstützt. Außerdem wird nicht empfohlen, eine CAPTCHA-Komponente in einem Fragment oder einem Bereich zu verwenden, der für verzögertes Laden markiert ist.
+* **F: Kann ich mehr als eine Captcha-Komponente in einem adaptiven Formular verwenden?**
+* **Antwort:** Die Verwendung von mehr als einer Captcha-Komponente in einem adaptiven Formular wird nicht unterstützt. Außerdem wird davon abgeraten, eine Captcha-Komponente in einem Fragment oder einem Bereich zu verwenden, das bzw. der für verzögertes Laden markiert ist.
 
 ## Siehe auch {#see-also}
 

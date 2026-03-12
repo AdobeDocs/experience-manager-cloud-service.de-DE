@@ -6,15 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2803'
-ht-degree: 99%
+source-wordcount: '2809'
+ht-degree: 98%
 
 ---
 
@@ -27,7 +28,7 @@ Ihre Kunden müssen oft mehrere Formulare senden, um sich bei einem Dienst oder 
 
 Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die zusammen gruppiert sind und den Benutzenden als einzelner Formularsatz präsentiert wird. Wenn der Benutzer ein Formularsatz ausfüllt, werden diese Informationen von einem Formular zu einem anderen übertragen. Am Ende können sie alle Formulare mit nur einem Klick absenden.
 
-AEM Forms bietet eine intuitive Benutzeroberfläche zum Erstellen, Konfigurieren und Verwalten von Formularsätzen. Als Autor können Sie Formulare in einer bestimmten Reihenfolge anfordern, in der Endanwender sie ausfüllen sollen. Sie können auch Bedingungen oder Berechtigungsausdrücke in einzelnen Formularen verwenden, um ihre Sichtbarkeit aufgrund Benutzereingaben zu steuern. Beispielsweise können Sie das Formular zum Ehepartner so konfigurieren, dass es nur dann angezeigt wird, wenn der Familienstand als „Verheiratet“ angegeben wurde.
+AEM Forms bietet eine intuitive Benutzeroberfläche zum Erstellen, Konfigurieren und Verwalten von Formularsätzen. Als Autor können Sie Formulare in einer bestimmten Reihenfolge anfordern, in der Endanwender sie ausfüllen sollen. Sie können auch Bedingungen oder Eignungsausdrücke in einzelnen Formularen verwenden, um ihre Sichtbarkeit aufgrund Benutzereingaben zu steuern. Beispielsweise können Sie das Formular zum Ehepartner so konfigurieren, dass es nur dann angezeigt wird, wenn der Familienstand als „Verheiratet“ angegeben wurde.
 
 Darüber hinaus können Sie allgemeine Felder in unterschiedlichen Formularen konfigurieren, um allgemeine Datenbindungen zu teilen. Mit den richtigen Datenbindungen müssen Benutzende allgemeine Informationen nur einmal ausfüllen. Diese werden dann in den nachfolgenden Formularen automatisch ausgefüllt.
 
@@ -37,7 +38,7 @@ Formularsätze werden auch in der AEM Forms-App unterstützt, sodass etwa Ihr Au
 
 Sie können mehrere XDPs oder Formularvorlagen, die unter Verwendung von Designer erstellt wurden, in einen Formularsatz zuordnen. Formularsätze können dann selektiv verwendet werden, um die XDPs zu rendern, basierend auf den Werten, die von den Benutzern in den anfänglichen Formularen und deren Profilen eingegeben wurden.
 
-Verwenden Sie die [AEM Forms-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms), um alle Formulare, Formularsätze und zugehörigen Assets zu verwalten.
+Verwenden Sie die [AEM Forms-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms), um alle Formulare, Formularsätze und zugehörigen Assets zu verwalten.
 
 ### Erstellen eines Formularsatzes {#create-a-form-set}
 
@@ -67,13 +68,13 @@ Gehen Sie wie folgt vor, um einen Formularsatz zu erstellen:
 1. Auf der Seite „Formular(e) konfigurieren“ haben Sie folgende Möglichkeiten:
 
    * Reihenfolge der Formulare: Ziehen Sie die Formulare per Drag&amp;Drop, um die Anordnung zu ändern. Dieses Formular definiert die Reihenfolge, in der die Formulare dem Endbenutzer in der AEM Forms-App und in der eigenständigen Ausgabedarstellung angezeigt werden.
-   * Formular-ID: Gibt eine eindeutige ID an, damit die Formulare in den Berechtigungsausdrücken verwendet werden können.
-   * Datenstamm: Die Autorin oder der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im übermittelten XML-Code positioniert werden. Standardmäßig ist der Wert „/“. Wenn alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. Weitere Informationen zur XML-Struktur von Formularsätzen finden Sie unter [Vorausfüllen von XML für Formularsätze](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
-   * Berechtigungsausdruck: Gibt einen JavaScript-Ausdruck an, der einen booleschen Wert auswertet und anzeigt, ob ein Formular im Formularsatz zum Ausfüllen zulässig ist. Wenn dies „false“ ist, wird der Benutzer nicht gefragt und es wird ihm auch nicht das Formular zum Ausfüllen angezeigt. Der Ausdruck basiert normalerweise auf den Werten der Felder, die in den diesem Formular vorangehenden Formularen erfasst werden. Darüber hinaus enthalten Ausdrücke auch Aufrufe von „fs.valueOf“ in der Formularsatz-API, um die von der Benutzerin oder dem Benutzer im entsprechenden Feld eines Formulars im Formularsatz eingegebenen Werte abzurufen:
+   * Formular-ID: Gibt eine eindeutige ID an, damit die Formulare in den Eignungsausdrücken verwendet werden können.
+   * Datenstamm: Die Autorin oder der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im übermittelten XML-Code positioniert werden. Standardmäßig ist der Wert „/“. Wenn alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. Weitere Informationen zur XML-Struktur von Formularsätzen finden Sie unter [Vorausfüllen von XML für Formularsätze](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Eignungsausdruck: Gibt einen JavaScript-Ausdruck an, der einen booleschen Wert auswertet und anzeigt, ob ein Formular im Formularsatz zum Ausfüllen zulässig ist. Wenn dies „false“ ist, wird der Benutzer nicht gefragt und es wird ihm auch nicht das Formular zum Ausfüllen angezeigt. Der Ausdruck basiert normalerweise auf den Werten der Felder, die in den diesem Formular vorangehenden Formularen erfasst werden. Darüber hinaus enthalten Ausdrücke auch Aufrufe von „fs.valueOf“ in der Formularsatz-API, um die von der Benutzerin oder dem Benutzer im entsprechenden Feld eines Formulars im Formularsatz eingegebenen Werte abzurufen:
 
    *fs.valueOf(&lt;Formularkennung>, &lt;fieldSom-Ausdruck>) > &lt;Wert>*
 
-   Beispielsweise können Sie bei zwei Formularen im Formularsatz – Geschäftsausgaben und Reisekosten – ein JavaScript-Snippet im Feld „Berechtigungsausdruck“ für beide Formulare hinzufügen, sodass bei beiden Formularen auf die Benutzereingabe für die Kostenart geprüft wird. Wenn der Benutzer Geschäftsausgaben wählt, wird das Formular „Geschäftsausgaben“ für den Endbenutzer gerendert. Wenn der Benutzer „Reisekosten“ wählt, wird ein anderes Formular gerendert und angezeigt. Weitere Informationen finden Sie unter „Berechtigungsausdruck“.
+   Beispielsweise können Sie bei zwei Formularen im Formularsatz – Geschäftsausgaben und Reisekosten – ein JavaScript-Snippet im Feld „Eignungsausdruck“ für beide Formulare hinzufügen, sodass bei beiden Formularen auf die Benutzereingabe für die Kostenart geprüft wird. Wenn der Benutzer Geschäftsausgaben wählt, wird das Formular „Geschäftsausgaben“ für den Endbenutzer gerendert. Wenn der Benutzer „Reisekosten“ wählt, wird ein anderes Formular gerendert und angezeigt. Weitere Informationen finden Sie unter „Eignungsausdruck“.
 
    Darüber hinaus hat die Autorin oder der Autor die Möglichkeit, ein Formular mithilfe des Löschsymbols am rechten Ende jeder Zeile aus dem Formularsatz zu entfernen oder mithilfe des Symbols „**+**“ in der Symbolleiste einen weiteren Formularsatz hinzuzufügen. Über das Symbol „**+**“ gelangt die Benutzerin oder der Benutzer zurück zum vorherigen Schritt des Assistenten, d. h. zur Formularauswahl. Die bestehende Auswahl bleibt erhalten. Zusätzlich ausgewählte Formulare müssen dem Formularsatz über das Symbol „Zum Formularsatz hinzufügen“ auf dieser Seite hinzugefügt werden.
 
@@ -110,7 +111,7 @@ Gehen Sie wie folgt vor, um Formularsätze zu bearbeiten:
    * Formular-Reihenfolge 
    * Formularkennung
    * Datenstamm
-   * Berechtigungsausdruck
+   * Eignungsausdruck
 
    Sie können auch auf das entsprechende Lösch-Symbol klicken, um das Formular aus dem Formularsatz zu löschen.
 
@@ -130,15 +131,15 @@ Nachdem Sie einen Formularsatz in der AEM Forms Management-Benutzeroberfläche e
 
 1. Wählen Sie einen Formularsatz aus und klicken Sie auf „OK“.
 
-## Berechtigungsausdrücke {#eligibility-expressions}
+## Eignungsausdrücke {#eligibility-expressions}
 
-Mithilfe von Berechtigungsausdrücken können Sie die Formulare, die für bestimmte Benutzer angezeigt werden sollen, definieren und dynamisch steuern. So können Sie beispielsweise festlegen, dass ein bestimmtes Formular nur für Benutzer angezeigt werden soll, die zu einer bestimmten Altersgruppe gehören. Geben Sie mithilfe von Forms Manager einen Berechtigungsausdruck an und bearbeiten Sie ihn.
+Mithilfe von Eignungsausdrücken können Sie die Formulare, die für bestimmte Benutzer angezeigt werden sollen, definieren und dynamisch steuern. So können Sie beispielsweise festlegen, dass ein bestimmtes Formular nur für Benutzer angezeigt werden soll, die zu einer bestimmten Altersgruppe gehören. Geben Sie mithilfe von Forms Manager einen Eignungsausdruck an und bearbeiten Sie ihn.
 
-Ein Berechtigungsausdruck kann jede gültige JavaScript-Anweisung sein, die einen booleschen Wert zurückgibt. Die letzte Anweisung im JavaScript-Codesnippet wird als boolescher Wert behandelt, der die Berechtigung des Formulars anhand der Verarbeitung im Rest (vorherige Zeilen) des JavaScript-Codesnippets bestimmt. Wenn der Wert des Ausdrucks „wahr“ ist, bedeutet dies, dass das Formular für den Benutzer angezeigt werden soll. Solche Formulare werden als berechtigte Formulare bezeichnet.
+Ein Eignungsausdruck kann jede gültige JavaScript-Anweisung sein, die einen booleschen Wert zurückgibt. Die letzte Anweisung im JavaScript-Codesnippet wird als boolescher Wert behandelt, der die Eignung des Formulars anhand der Verarbeitung im Rest (vorherige Zeilen) des JavaScript-Codesnippets bestimmt. Wenn der Wert des Ausdrucks „wahr“ ist, bedeutet dies, dass das Formular für den Benutzer angezeigt werden soll. Solche Formulare werden als berechtigte Formulare bezeichnet.
 
 >[!NOTE]
 >
->Der Berechtigungsausdruck für das erste Formular im Formularsatz wird nicht ausgeführt. Das erste Formular wird unabhängig vom Berechtigungsausdruck immer angezeigt.
+>Der Eignungsausdruck für das erste Formular im Formularsatz wird nicht ausgeführt. Das erste Formular wird unabhängig vom Eignungsausdruck immer angezeigt.
 
 Neben der normalen JavaScript-Funktion wird im Formularsatz die fs.valueOf-API genutzt, die Zugriff auf den Wert eines Formularfelds in einem Formularsatz bietet. Verwenden Sie diese API, um auf den Wert eines Formularfelds in einem Formularsatz zuzugreifen. Die API-Syntax lautet fs.valueOf (formUid, fieldSOM), wobei:
 

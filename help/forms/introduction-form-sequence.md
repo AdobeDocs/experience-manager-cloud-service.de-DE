@@ -4,11 +4,12 @@ description: Mit  [!DNL Experience Manager Forms] können Sie eine Sequenz von F
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '543'
+ht-degree: 99%
 
 ---
 

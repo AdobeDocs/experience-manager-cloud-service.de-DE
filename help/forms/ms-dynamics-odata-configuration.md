@@ -4,13 +4,14 @@ description: Erfahren Sie, wie Sie Formulardatenmodelle (FDM) basierend auf den 
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
-workflow-type: ht
-source-wordcount: '1012'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1018'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 100%
 
 ![data-integeration](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] ist eine CRM (Customer Relationship Management)- und ERP (Enterprise Resource Planning)-Software, die Unternehmenslösungen für das Erstellen und Verwalten von Kundenkonten, Kontakten, Leads, Chancen und Fällen bereitstellt. [[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine OData-Cloud Service-Konfiguration für die Integration von Forms mit online und lokal installierten [!DNL Microsoft Dynamics]-Servern. Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen (FDM) basierend auf den im [!DNL Microsoft Dynamics]-Dienst definierten Entitäten, Attributen und Diensten. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Formulare zu erstellen, die mit dem [!DNL Microsoft Dynamics]-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
+[!DNL Microsoft Dynamics] ist eine CRM (Customer Relationship Management)- und ERP (Enterprise Resource Planning)-Software, die Unternehmenslösungen für das Erstellen und Verwalten von Kundenkonten, Kontakten, Leads, Chancen und Fällen bereitstellt. [[!DNL Experience Manager Forms] Datenintegration](data-integration.md) bietet eine OData-Cloud-Service-Konfiguration für die Integration von Forms mit online und lokal installierten [!DNL Microsoft Dynamics]-Servern. Dies ermöglicht Ihnen das Erstellen von Formulardatenmodellen (FDM) basierend auf den im [!DNL Microsoft Dynamics]-Dienst definierten Entitäten, Attributen und Diensten. Das Formulardatenmodell (FDM) kann verwendet werden, um adaptive Formulare zu erstellen, die mit dem [!DNL Microsoft Dynamics]-Server interagieren, um Unternehmens-Workflows zu ermöglichen. Zum Beispiel:
 
 * Abfragen eines [!DNL Microsoft Dynamics]-Servers nach Daten und Auffüllen adaptiver Formulare
 * Schreiben von Daten in [!DNL Microsoft Dynamics] bei Übermittlung von adaptiven Formularen
@@ -51,7 +52,7 @@ Bevor Sie mit dem Einrichten und Konfigurieren von [!DNL Microsoft Dynamics] beg
    * [!DNL Microsoft Dynamics] 365 On-Premises
    * [!DNL Microsoft Dynamics] 2016 On-Premises
 
-* [Das Programm wurde für den [!DNL Microsoft Dynamics] -Online-Service mit [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) registriert. Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden beim [Konfigurieren des Cloud Service für Ihren  [!DNL Microsoft Dynamics] -Service](#configure-cloud-service-for-your-microsoft-dynamics-service) verwendet.
+* [Das Programm wurde für den [!DNL Microsoft Dynamics] -Online-Service mit [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/de-de/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) registriert. Notieren Sie sich die Werte für die Client-ID (die auch als Anwendungs-ID bezeichnet wird) und den geheimen Clientschlüssel für den registrierten Service. Diese Werte werden beim [Konfigurieren des Cloud-Service für Ihren  [!DNL Microsoft Dynamics] -Service](#configure-cloud-service-for-your-microsoft-dynamics-service) verwendet.
 
 ## Festlegen einer Antwort-URL für ein registriertes [!DNL Microsoft Dynamics]-Programm {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -104,7 +105,7 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem AD FS (
    Dabei ist:
 
    * `Client-ID` eine Client-ID, die Sie mit einem beliebigen GUID-Generator generieren können.
-   * `redirect-uri` die URL zu dem [!DNL Microsoft Dynamics]-OData-Cloud Service auf [!DNL Experience Manager Forms]. Der mit [!DNL Experience Manager Forms] installierte standardmäßige Cloud Service wird unter der folgenden URL bereitgestellt:
+   * `redirect-uri` die URL zu dem [!DNL Microsoft Dynamics]-OData-Cloud-Service auf [!DNL Experience Manager Forms]. Der mit [!DNL Experience Manager Forms] installierte standardmäßige Cloud-Service wird unter der folgenden URL bereitgestellt:
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Führen Sie den folgenden Befehl aus, um Zugriff auf den AD FS-Computer zu gewähren:
@@ -117,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem AD FS (
 
 1. [!DNL Microsoft Dynamics] verwendet das HTTPS-Protokoll. Um AD FS-Endpunkte aus dem [!DNL Forms]-Server aufzurufen, installieren Sie das [!DNL Microsoft Dynamics]-Site-Zertifikat im Java-Zertifikatspeicher mit dem Befehl `keytool` auf dem Computer, auf dem [!DNL Experience Manager Forms] ausgeführt wird.
 
-## Konfigurieren des Cloud Service für Ihren [!DNL Microsoft Dynamics]-Service {#configure-cloud-service-for-your-microsoft-dynamics-service}
+## Konfigurieren des Cloud-Service für Ihren [!DNL Microsoft Dynamics]-Service {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
 Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen OData-Service in [!DNL Experience Manager] as a Cloud Service zu konfigurieren, müssen Sie sicherstellen, dass Sie über die Service-Stamm-URL für den Service verfügen. Gehen Sie dann wie folgt vor:
 
@@ -129,7 +130,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Wählen Sie den Ordner aus, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
+   Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
 
 1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Service]** aus der **[!UICONTROL Dropdown-Liste „Service-Typ“]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
 Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
@@ -145,9 +146,9 @@ Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
       ![Authentifizierungseinstellungen](assets/dynamics_authentication_settings_new.png)
 Formulardatenmodell (FDM)
 1. Klicken Sie auf **[!UICONTROL Mit OAuth verbinden]**. Sie werden zur Anmeldungsseite von [!DNL Microsoft Dynamics] umgeleitet.
-1. Melden Sie sich mit Ihren [!DNL Microsoft Dynamics]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud Service-Konfiguration eine Verbindung zum [!DNL Microsoft Dynamics]-Service herstellt. Es ist eine einmalige Aufgabe, das Formulardatenmodell (FDM), den Cloud-Service und den Dienst zu erstellen.
+1. Melden Sie sich mit Ihren [!DNL Microsoft Dynamics]-Anmeldeinformationen an und lassen Sie zu, dass die Cloud-Service-Konfiguration eine Verbindung zum [!DNL Microsoft Dynamics]-Service herstellt. Es ist eine einmalige Aufgabe, das Formulardatenmodell (FDM), den Cloud-Service und den Dienst zu erstellen.
 
-   Sie gelangen auf die Seite für das Formulardatenmodell und die Cloud Service-Konfiguration, auf der eine Meldung angezeigt wird, die besagt, dass die OData-Konfiguration erfolgreich gespeichert wurde.
+   Sie gelangen auf die Seite für das Formulardatenmodell und die Cloud-Service-Konfiguration, auf der eine Meldung angezeigt wird, die besagt, dass die OData-Konfiguration erfolgreich gespeichert wurde.
 
 Der MS Dynamics OData-Cloud Service (OData Service) ist konfiguriert und mit Ihrem Dynamics-Service verbunden. Formulardatenmodell (FDM)
 

@@ -3,12 +3,13 @@ title: Wie fügt man Tabellen zu einem adaptiven Formular hinzu?
 description: Verwenden Sie die Tabellenkomponente, um einem adaptiven Formular Tabellen hinzuzufügen. Neben der Unterstützung des responsiven Layouts ermöglicht die Tabellenkomponente das Hinzufügen von XDP-Tabellenelementen.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 100%
+source-wordcount: '2487'
+ht-degree: 98%
 
 ---
 
@@ -103,8 +104,8 @@ Im adaptiven Formular können Sie die Daten in einer Tabelle nach einer beliebig
 Die Sortierung kann auf Tabellenspalten angewendet werden, die Folgendes enthalten:
 
 * Statischer Text
-* Datenmodell-Objekteigenschaften
-* Kombination von statischem Text und Datenmodell-Objekteigenschaften
+* Datenmodellobjekt-Eigenschaften
+* Kombination von statischem Text und Datenmodellobjekt-Eigenschaften
 
 Um eine Sortierung auf Tabellenspalten anzuwenden, müssen die Zellen der Tabellenspalten eine der folgenden Komponenten enthalten: Numerisches Feld, numerische Schritte, Datumseingabefeld, Datumsauswahl, Text oder Textfeld.
 
@@ -133,7 +134,7 @@ Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle f
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Inhalt]** die **[!UICONTROL Tabellenkomponente]** und tippen Sie auf das Symbol „Konfigurieren“ (![Konfigurieren](assets/configure-icon.svg)).
 
-1. Um die Proportionalbreite jeder Spalte der Tabelle festzulegen, müssen die jeweiligen Werte als durch Kommas getrennte Liste in das Feld **[!UICONTROL Spaltenbreite]** eingetragen werden. Beispiel: Für eine Tabelle mit 3 Spalten führt die Eingabe des Werts „2,4,6“ in das **[!UICONTROL Spaltenbreite]**-Feld dazu, dass die Spaltenbreite für die erste Spalte auf 2/12, für die zweite auf 4/12 und für die dritte auf 6/12 eingestellt wird. 2/12 als Spaltenbreite für die erste Spalte entspricht einem Sechstel der Tabellenbreite. Parallel dazu wird mit dem Wert 4/12 die Breite der zweiten Spalte auf ein Drittel der Tabellenbreite und mit 6/12 die Breite der dritten Spalte auf die Hälfte der Tabellenbreite eingestellt.
+&#x200B;1. Um die Proportionalbreite jeder Spalte der Tabelle festzulegen, müssen die jeweiligen Werte als durch Kommas getrennte Liste in das Feld **[!UICONTROL Spaltenbreite]** eingetragen werden. Beispiel: Für eine Tabelle mit 3 Spalten führt die Eingabe des Werts „2,4,6“ in das **[!UICONTROL Spaltenbreite]**-Feld dazu, dass die Spaltenbreite für die erste Spalte auf 2/12, für die zweite auf 4/12 und für die dritte auf 6/12 eingestellt wird. 2/12 als Spaltenbreite für die erste Spalte entspricht einem Sechstel der Tabellenbreite. Parallel dazu wird mit dem Wert 4/12 die Breite der zweiten Spalte auf ein Drittel der Tabellenbreite und mit 6/12 die Breite der dritten Spalte auf die Hälfte der Tabellenbreite eingestellt.
 
 ## Konfigurieren des Tabellenstils {#configure}
 
@@ -300,7 +301,7 @@ Die XML-Datei, die Daten im folgenden Format enthält:
 
 In der XML-Beispieldatei werden die Daten für eine Zeile durch die `<Row1>`-Tags definiert, die den Elementnamen für die Zeile in der Tabelle festlegen. Innerhalb des `<Row1>`-Tags werden die Daten für die einzelnen Zellen innerhalb des Tags für dessen Elementnamen definiert (z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`).
 
-Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *https://localhost:4502/myForms/bankTransaction.html* und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* befinden, können Sie die Tabelle mit Daten unter folgender URL abrufen:
+Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Beispiel: Wenn sich das adaptive Formular unter *https://localhost:4502/myForms/bankTransaction.html* befindet und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* gespeichert ist, können Sie die Tabelle mit Daten unter folgender URL abrufen:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

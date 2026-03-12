@@ -6,11 +6,12 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 0%
+source-wordcount: '896'
+ht-degree: 1%
 
 ---
 
@@ -141,7 +142,7 @@ Verbinden von Formularen mit Geschäftsprozess-Workflows:
 
 ### Schritt 4: Konfigurieren des Cloud-Speichers
 
-**Azure Blob Storage-Einrichtung:**
+**Einrichtung von Azure Blob Storage:**
 
     Speichern von Formularübermittlungen in Azure:
     - Container: form-submissions
@@ -312,7 +313,7 @@ Lead-Generierung verarbeiten:
 Bei Integrationsproblemen:
 
 - Lesen Sie die [Häufig gestellten Fragen zu Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Lesen Sie [&#x200B; Erste Schritte &#x200B;](forms-experience-builder-getting-started.md)
+- Lesen Sie [ Erste Schritte ](forms-experience-builder-getting-started.md)
 - Wenden Sie sich an Ihren Systemadministrator, um technische Unterstützung zu erhalten
 - Siehe API-Dokumentation für externe Services
 

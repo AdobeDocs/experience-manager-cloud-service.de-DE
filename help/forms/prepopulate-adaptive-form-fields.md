@@ -3,11 +3,12 @@ title: Vorausfüllen von Feldern in adaptiven Formularen?
 description: Verwenden Sie vorhandene Daten, um Felder eines adaptiven Formulars vorab auszufüllen. Benutzende können grundlegende Informationen in einem Formular vorab ausfüllen, indem sie sich mit ihren Social-Media-Profilen anmelden.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2050'
 ht-degree: 98%
 
 ---
@@ -400,4 +401,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

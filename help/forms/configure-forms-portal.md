@@ -2,12 +2,13 @@
 title: Erstellen eines Formularportals auf einer Experience Manager Sites-Seite
 description: Erfahren Sie, wie Sie ein Formularportal erstellen und vordefinierte Kernkomponenten auf einer AEM Sites-Seite verwenden.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 100%
+source-wordcount: '365'
+ht-degree: 98%
 
 ---
 

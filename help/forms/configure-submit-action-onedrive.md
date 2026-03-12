@@ -3,12 +3,13 @@ title: Übermitteln von Daten aus einem adaptiven Formular an Microsoft&reg; One
 description: Erkunden Sie den optimierten Prozess der Verbindung von AEM Forms mit Microsoft&reg; OneDrive unter Einsatz der Übermittlungsaktion „An OneDrive senden“. Nutzen Sie die Schritt-für-Schritt-Anleitung zum Konfigurieren von OneDrive und Einrichten von Übermittlungsaktionen für eine effiziente Datenspeicherung und einen effizienten Datenabruf.
 keywords: AEM Forms OneDrive-Integration, Verbindung zu Microsoft OneDrive, OneDrive-Konfigurationseinstellungen mit AEM-Formularen
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 100%
+source-wordcount: '927'
+ht-degree: 99%
 
 ---
 

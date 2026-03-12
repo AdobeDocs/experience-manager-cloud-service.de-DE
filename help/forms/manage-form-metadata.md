@@ -2,12 +2,13 @@
 title: Wie können Metadaten für AEM Forms verwaltet werden?
 description: Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 100%
+source-wordcount: '1738'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 100%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=de) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 Metadaten ermöglichen eine einfachere Kategorisierung und Organisation der Assets und erleichtern Benutzern die Suche nach einem bestimmten Asset.
@@ -294,11 +295,11 @@ Ein Tool (Metadatenschema-Editor) wird bereitgestellt, um das Schema für das Me
 1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
    1. Geben Sie eine Feldbeschriftung an, die als Anzeigename über dem im Schema platzierten Feld verwendet werden soll (z. B.: Department)
-   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie den Namen „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel: „./jcr:content/metadata/department“)
+   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie den Namen „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel: „./jcr:content/metadata/department„)
 
       >[!NOTE]
       >
-      >Ändern Sie nicht das Präfix „./jcr:content/metadata/“, da es den Pfad definiert, in dem die Eigenschaft gespeichert ist.
+      >Ändern Sie nicht das Präfix „./jcr:content/metadata/&#39; wie er den Pfad definiert, in dem die Eigenschaft gespeichert ist.
       >
       >Außerdem muss der Eigenschaftsname eindeutig sein, um zu vermeiden, dass Werte für zwei oder mehr Eigenschaften am selben Speicherort im Repository geschrieben werden. Daher wird empfohlen, den Wert „default“ zu ändern.
 

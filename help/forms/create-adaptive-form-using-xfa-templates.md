@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie ein adaptives Formular mit XFA [!DNL Experien
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '689'
 ht-degree: 20%
 
 ---
@@ -89,5 +90,5 @@ Ein adaptives Formular wird erstellt und im Editor für adaptive Formulare geöf
 
 >[!NOTE]
 >
-> Sie können Skripte für XDP-Formularfelder über die Bereichssymbolleiste des hinzugefügten Felds deaktivieren. Erstellen Sie mithilfe des visuellen Regeleditors Logiken für [&#x200B; hinzugefügten Felder](/help/forms/rule-editor-core-components.md).
+> Sie können Skripte für XDP-Formularfelder über die Bereichssymbolleiste des hinzugefügten Felds deaktivieren. Erstellen Sie mithilfe des visuellen Regeleditors Logiken für [ hinzugefügten Felder](/help/forms/rule-editor-core-components.md).
 

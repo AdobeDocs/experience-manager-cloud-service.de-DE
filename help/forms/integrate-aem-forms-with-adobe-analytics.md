@@ -3,12 +3,13 @@ title: Formularanalyse mit Adobe Analytics und AEM Forms - vollständiges Handbu
 seo-title: "Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms"
 description: Vollständige Anleitung zur Formularanalyse mit Adobe Analytics und AEM Forms. Verfolgen Sie die Formularleistung, analysieren Sie das Benutzerverhalten, reduzieren Sie Abbrüche und optimieren Sie Konversionen.
 keywords: Formularanalyse, Tracking der Formularleistung, Analyse des Formularabbruchs, Konversionsoptimierung, Benutzerverhaltensanalyse, Adobe Analytics Forms, AEM Forms Analytics
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7898'
+source-wordcount: '7904'
 ht-degree: 18%
 
 ---
@@ -70,7 +71,7 @@ Effektive Formularanalyse konzentriert sich auf Metriken, die sich direkt auf Ge
 
 **Erweiterte**
 
-- **Konversionstrichter-Analyse**: Benutzer-Journey durch mehrstufige Formulare und zeigt Progressions- und Abfallmuster an
+- **Konversions-Funnel-Analyse**: Benutzer-Journey durch mehrstufige Formulare, wobei Fortschritt und Abbruchmuster angezeigt werden
 - **Geräte- und Browser-**: Technische Faktoren, die sich in verschiedenen Benutzerumgebungen auf die Fertigstellung auswirken
 - **Benutzerinteraktionstiefe**: Besuchszeit für Formulare, Feldinteraktionsmuster und Indikatoren für die Benutzeraufmerksamkeit
 
@@ -325,7 +326,7 @@ Im Gegensatz zu einfachen Formularanalysetools ermöglicht Adobe Analytics eine 
 
 AEM Forms lässt sich nahtlos mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, um Leistungsmetriken für Ihre veröffentlichten Formulare automatisch zu erfassen und zu verfolgen. Sie können das Verhalten sowohl authentifizierter als auch anonymer Benutzer ohne zusätzliche Konfiguration überwachen.
 
-Stellen Sie vor der Implementierung der Formularanalyse sicher, dass Ihre [AEM Forms-Umgebung ordnungsgemäß konfiguriert &#x200B;](/help/forms/setup-forms-cloud-service.md) und Sie [Ihre adaptiven Formulare erstellt haben](/help/forms/creating-adaptive-form-core-components.md) entweder mithilfe von Kernkomponenten oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md).
+Stellen Sie vor der Implementierung der Formularanalyse sicher, dass Ihre [AEM Forms-Umgebung ordnungsgemäß konfiguriert ](/help/forms/setup-forms-cloud-service.md) und Sie [Ihre adaptiven Formulare erstellt haben](/help/forms/creating-adaptive-form-core-components.md) entweder mithilfe von Kernkomponenten oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md).
 
 **Umfassende Formular-Ereignisverfolgung:**
 
@@ -353,7 +354,7 @@ Adobe Analytics erfasst automatisch ein vollständiges Bild der Benutzerformular
 
 - **Geschäftsspezifische Metriken**: Definieren Sie benutzerdefinierte Ereignisse mit dem Regeleditor, um organisationsspezifische Formularinteraktionen zu verfolgen
 - **User Journey Mapping**: Erstellen Sie benutzerspezifische Ereignisse, um komplexe Benutzerpfade in mehrstufigen Formularen zu verfolgen
-- **Konversionstrichter-Analyse**: Richten Sie benutzerdefinierte Ereignisse ein, um bestimmte Konversionspunkte und Abbruchphasen zu messen
+- **Conversion Funnel Analysis**: Richten Sie benutzerdefinierte Ereignisse ein, um bestimmte Konversionspunkte und Abbruchphasen zu messen
 - **Integrationsereignisse**: Verfolgen von Formularinteraktionen mit externen Systemen und APIs
 
 ### Erweiterte Reporting-Funktionen
@@ -362,7 +363,7 @@ Adobe Analytics bietet Reporting-Funktionen auf Unternehmensniveau für die Form
 
 - **Echtzeit-Dashboards**: Überwachen der Formularleistung und der Benutzerinteraktionen bei ihrem Auftreten
 - **Segmentierungsanalyse** Analysieren der Formularleistung in verschiedenen Benutzergruppen, Traffic-Quellen und Demographien
-- **Trichtervisualisierung**: Visualisieren des Benutzerfortschritts durch mehrstufige Formulare und Ermitteln von Optimierungsmöglichkeiten
+- **Funnel-Visualisierung**: Visualisieren Sie den Fortschritt der Benutzer mithilfe mehrstufiger Formulare und ermitteln Sie Optimierungsmöglichkeiten.
 - **Kohortenanalyse**: Verfolgen Sie Verbesserungen der Formularleistung im Zeitverlauf und messen Sie die Wirkung der Optimierung
 - **Geräteübergreifendes Tracking**: Erfahren Sie, wie Benutzer auf verschiedenen Geräten und Sitzungen mit Formularen interagieren
 
@@ -465,12 +466,12 @@ Forms, die in weniger als 3 Sekunden geladen werden, haben 70 % höhere Abschlus
 - **Benutzertypanalyse**: Leistung zwischen neuen und wiederkehrenden Benutzenden vergleichen
 - **Demografische Einblicke**: Verstehen, wie verschiedene Benutzergruppen mit Formularen interagieren
 
-**Konversionstrichter-Analyse**
+**Konversions-Funnel-Analyse**
 
 - **Mehrstufiger Formularfortschritt**: Verfolgen Sie das Fortschreiten Ihrer Benutzer durch komplexe Formulare
 - **Staging-Konversion**: Messen Sie die Abschlussraten bei jedem Formularschritt
-- **Trichteroptimierung**: Erkennung und Behebung von Engpässen beim Formularfortschritt
-- **A/B-Testintegration**: Die Trichterleistung zwischen Formularvarianten vergleichen
+- **Funnel-Optimierung**: Erkennung und Behebung von Engpässen beim Formularfortschritt
+- **A/B-Testintegration**: Vergleichen der funnel-Leistung über Formularvarianten hinweg
 
 **Metriken zur Geschäftswirkung**
 
@@ -505,7 +506,7 @@ Bevor Sie mit der Implementierung der Formularanalyse beginnen, stellen Sie sich
 
 - [AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md) oder AEM Forms 6.5+ (lokale/AMS-Installationen)
 - Authoring- und Publishing-Funktionen von Forms aktiviert
-- Stellen Sie sicher, dass die Option [Forms &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) Ihrer AEM-Umgebung verfügbar ist
+- Stellen Sie sicher, dass die Option [Forms ](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) Ihrer AEM-Umgebung verfügbar ist
 - [Kernkomponenten für adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md) verfügbar
 
 **Technische Anforderungen**
@@ -850,7 +851,7 @@ Für eine erfolgreiche Optimierung ist es von entscheidender Bedeutung, zu verst
 
 **Dashboard für wichtige Leistungsindikatoren (KPIs)**
 
-- **Formularkonversionstrichter**: Visualisieren des Benutzerfortschritts durch den Formularausfüllungsprozess
+- **Formularkonvertierungs-Funnel**: Visualisieren des Benutzerfortschritts durch den Formularausfüllungsprozess
 - **Abbruchsanalyse**: Identifizieren Sie bestimmte Punkte, an denen Benutzer Formulare unvollständig lassen
 - **Leistungstrends**: Verfolgen Sie Änderungen der Formularleistung im Zeitverlauf und identifizieren Sie Muster
 - **Vergleichende Analyse**: Leistung über verschiedene Formulare, Zeiträume und Benutzersegmente hinweg vergleichen
@@ -916,7 +917,7 @@ Selbst bei sorgfältiger Implementierung können bei Formularanalysekonfiguratio
 
 >[!TIP]
 >
->Weitere Anleitungen zur Fehlerbehebung finden Sie in unserer [Sammlung zur Fehlerbehebung bei AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) und in [Handbüchern zur Fehlerbehebung bei der &#x200B;](/help/forms/form-creation-failing.md)).
+>Weitere Anleitungen zur Fehlerbehebung finden Sie in unserer [Sammlung zur Fehlerbehebung bei AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) und in [Handbüchern zur Fehlerbehebung bei der ](/help/forms/form-creation-failing.md)).
 
 **Konfigurationsprobleme**
 
@@ -963,7 +964,7 @@ Für die erfolgreiche Implementierung der Formularanalyse sind die Befolgung bew
 
 >[!TIP]
 >
->Stellen Sie vor der Implementierung von Analytics sicher, dass Ihre Formulare ordnungsgemäß konfiguriert sind, indem Sie [Best &#x200B;](/help/forms/introduction-forms-authoring.md) für AEM Forms und geeignete [Übermittlungsaktionen](/help/forms/configuring-submit-actions.md) verwenden.
+>Stellen Sie vor der Implementierung von Analytics sicher, dass Ihre Formulare ordnungsgemäß konfiguriert sind, indem Sie [Best ](/help/forms/introduction-forms-authoring.md) für AEM Forms und geeignete [Übermittlungsaktionen](/help/forms/configuring-submit-actions.md) verwenden.
 
 ### Implementierungsrichtlinien
 
@@ -1021,7 +1022,7 @@ In diesem umfassenden FAQ-Abschnitt werden häufig gestellte Fragen zur Implemen
 
 **F: Was ist der Unterschied zwischen der Formularanalyse und der allgemeinen Website-Analyse?**
 
-A.: Die Formularanalyse konzentriert sich speziell auf Benutzerinteraktionen innerhalb von Formularen und bietet detaillierte Einblicke in das Verhalten auf Feldebene, Fertigstellungsmuster und Abbruchpunkte. Während mit der allgemeinen Website-Analyse Seitenansichten und allgemeine Benutzer-Journey verfolgt werden, bietet die Formularanalyse granulare Daten zu formularspezifischen Benutzererlebnissen, Validierungsfehlern, Feldausfüllungszeiten und Konversionstrichter-Analysen in den Formularen selbst.
+A.: Die Formularanalyse konzentriert sich speziell auf Benutzerinteraktionen innerhalb von Formularen und bietet detaillierte Einblicke in das Verhalten auf Feldebene, Fertigstellungsmuster und Abbruchpunkte. Während mit der allgemeinen Website-Analyse Seitenansichten und allgemeine Benutzer-Journey verfolgt werden, bietet die Formularanalyse granulare Daten zu formularspezifischen Benutzererlebnissen, Validierungsfehlern, Feldausfüllungszeiten und Konversions-funnel-Analysen innerhalb von Formularen selbst.
 
 **F: Benötige ich technische Expertise, um die Formularanalyse mit Adobe Analytics zu implementieren?**
 
@@ -1043,7 +1044,7 @@ A: Ja, Adobe Analytics unterstützt die domänenübergreifende Formularverfolgun
 
 **F: Wie handhabe ich die Formularanalyse für mehrstufige oder assistentenartige Formulare?**
 
-A: Mehrstufige Formulare erfordern eine spezielle Konfiguration, um den Fortschritt durch jeden Schritt zu verfolgen. Benutzerdefinierte Ereignisse für den Abschluss von Schritten implementieren, Trichteranalyse konfigurieren, um Ablagepunkte zwischen Schritten zu visualisieren, und benutzerdefinierte Variablen verwenden, um Benutzerpfade durch den Formularassistenten zu verfolgen. Adobe Analytics bietet spezifische Anleitungen für die mehrseitige Formularverfolgung.
+A: Mehrstufige Formulare erfordern eine spezielle Konfiguration, um den Fortschritt durch jeden Schritt zu verfolgen. Benutzerdefinierte Ereignisse für den Abschluss von Schritten implementieren, funnel-Analyse konfigurieren, um Abbruchpunkte zwischen Schritten zu visualisieren, und benutzerdefinierte Variablen verwenden, um Benutzerpfade im Formular-Assistenten zu verfolgen. Adobe Analytics bietet spezifische Anleitungen für die mehrseitige Formularverfolgung.
 
 **F: Was passiert mit Analytics-Daten, wenn ein Formular offline oder mit deaktivierter JavaScript ausgefüllt wird?**
 
@@ -1083,7 +1084,7 @@ A: SPAs erfordern eine spezielle Konfiguration für die Formularanalyse, da herk
 
 **F: Was sollte ich tun, wenn sich die Formularanalyse auf die Seitenladeleistung auswirkt?**
 
-A: Optimieren Sie die Analytics-Implementierung, indem Sie Analytics-Skripte asynchron laden, verzögertes Laden für das nicht kritische Tracking implementieren, die Anzahl der benutzerdefinierten Variablen und Ereignisse reduzieren, effiziente Regelkonfigurationen in Adobe Launch verwenden und die wichtigsten Web Vitals überwachen, um sicherzustellen, dass die Analyse keine negativen Auswirkungen auf das Benutzererlebnis hat.
+A: Optimieren Sie die Analytics-Implementierung, indem Sie Analytics-Skripte asynchron laden, verzögertes Laden für das unkritische Tracking implementieren, die Anzahl der benutzerdefinierten Variablen und Ereignisse reduzieren, effiziente Regelkonfigurationen in Adobe Launch verwenden und Core Web Vitals überwachen, um sicherzustellen, dass die Analyse keine negativen Auswirkungen auf das Benutzererlebnis hat.
 
 **F: Wie stelle ich die Einhaltung der Datenschutzbestimmungen durch die Formularanalyse sicher?**
 

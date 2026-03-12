@@ -5,10 +5,11 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: Integrieren der API im Regeleditor, Aufrufen von Service-Verbesserungen
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1040'
 ht-degree: 4%
 
 ---
@@ -125,7 +126,7 @@ Ebenso verwenden **Land der Passausstellung** und **Zielland** denselben API-Auf
 
 >
 >
-> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
+> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
 
 ## Implementieren des Wiederholungsmechanismus bei API-Fehlern
 

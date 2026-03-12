@@ -6,12 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 role: User, Developer
-source-git-commit: bcd3a2a813833d7c1705e45829bcf769645cd154
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 100%
+source-wordcount: '2156'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +54,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder einen Be
 
    ![Erstellen eines adaptiven Formulars mit einer Formularvorlage als Modell](assets/form-template-model.png)
 
-   Die Teilformulare, die als Fragmente in der ausgewählten Vorlage markiert sind, werden ebenfalls angezeigt. Sie können ein Teilformular für ein adaptives Formularfragment aus der Dropdown-Liste wählen.
+   Die Teilformulare, die als Fragmente in der ausgewählten Formularvorlage markiert sind, werden ebenfalls angezeigt. Sie können ein Teilformular für ein adaptives Formularfragment aus der Dropdown-Liste wählen.
 
    ![Auswählen von Teilformularen aus der angegebenen Formularvorlage](assets/fragment-subform.png)
 
@@ -105,7 +106,7 @@ Wenn Sie **/** als Fragmentmodellstamm auswählen, wird die vollständige XSD-St
 
    * **XSD-Ref**: Diese Option ist nur in XSD-basierten adaptiven Formularen verfügbar. Sie zeigt den Ort des XML-Schemas an.
 
-   * **XDP-Ref**: Diese Option ist nur in XDP-basierten adaptiven Formularen verfügbar. Es wird der Speicherort der XDP-Vorlage angezeigt.
+   * **XDP-Ref**: Diese Option ist nur in XDP-basierten adaptiven Formularen verfügbar. Es wird der Speicherort der XDP-Formularvorlage angezeigt.
 
    ![save-fragment](assets/save-fragment.png)
 

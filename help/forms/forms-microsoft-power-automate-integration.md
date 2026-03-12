@@ -1,13 +1,14 @@
 ---
 title: Integrieren eines adaptiven Formulars mit Microsoft® Power Automate
 description: Integrieren Sie ein adaptives Formular mit Microsoft® Power Automate.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: Verbinden von AEM Forms mit Power Automate, Power Automate-Automation, AEM Forms, Integrieren von Power Automate in adaptive Formulare, Senden von Daten von adaptiven Formularen an Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 94%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 94%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Dieser Artikel |
 
 <span class="preview"> Wenn Sie sich in GovCloud befinden und eine Verbindung zu einem GCC(Government Cloud Computing)-Mandanten herstellen müssen, senden Sie eine E-Mail von Ihrer offiziellen Adresse an aem-forms-ea@adobe.com, um den Zugriff über das Early-Adopter-Programm anzufordern. </span>
@@ -145,7 +146,7 @@ Ihre Instanz von Forms as a Cloud Service ist jetzt mit Microsoft® Power Automa
 >
 >Token, die für die Microsoft® Power Automate-Verbindung verwendet werden, laufen nach 90 Tagen ab.
 >
-> Führen Sie die Schritte aus, die unter [Veröffentlichen der Cloud-Konfigurationen von Microsoft® Power Automate Dataverse und Microsoft® Power Automate Flow Service dokumentiert sind, bevor oder nach Ablauf des Tokens der Vorgang fortgesetzt wird, um die Integration zu funktionieren und sowohl die Cloud-Konfigurationen des Microsoft® Power Automate Dataverse als auch des Microsoft® Power Automate Flow Service erneut zu authentifizieren und &#x200B;](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+> Führen Sie die Schritte aus, die unter [Veröffentlichen der Cloud-Konfigurationen von Microsoft® Power Automate Dataverse und Microsoft® Power Automate Flow Service dokumentiert sind, bevor oder nach Ablauf des Tokens der Vorgang fortgesetzt wird, um die Integration zu funktionieren und sowohl die Cloud-Konfigurationen des Microsoft® Power Automate Dataverse als auch des Microsoft® Power Automate Flow Service erneut zu authentifizieren und ](#publish-microsoft-power-automate-dataverse-cloud-configuration).
 >
 > Details zu Token-Lebensdauerrichtlinien finden Sie in der [Microsoft Entra-Dokumentation zu konfigurierbaren Token-Lebensdauern](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). Wenn das Token nicht erneuert wird, können Formularübermittlungen an Power Automate fehlschlagen.
 

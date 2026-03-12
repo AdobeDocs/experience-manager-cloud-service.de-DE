@@ -5,11 +5,12 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 100%
+source-wordcount: '2053'
+ht-degree: 99%
 
 ---
 
@@ -287,11 +288,11 @@ Erste Schritte mit dieser Integration:
 
 ## Zugehörige Ressourcen {#related-resources}
 
-* [Dokumentation zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de)
+* [Dokumentation zu AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de)
 * [Dokumentation zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)
 * [Überblick über XDM-System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)
-* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=de)
-* [Überblick über Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de)
+* [Streaming-Aufnahme in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [Überblick über Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Early-Access-Funktionen von AEM Forms](/help/forms/early-access-ea-features.md)
 * [Erstellen adaptiver Formulare mit Kernkomponenten](/help/forms/creating-adaptive-form-core-components.md)
 * [Verwenden des Formulardatenmodells in AEM Forms](/help/forms/using-form-data-model.md)

@@ -1,13 +1,14 @@
 ---
 title: Wie können benutzerdefinierte Schriftarten in AEM Forms verwendet werden?
 description: Erfahren Sie, wie Sie benutzerdefinierte Schriftarten zu einer Forms as a Cloud Service-Umgebung hinzufügen.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 99%
 
 ---
 

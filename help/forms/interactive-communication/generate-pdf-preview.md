@@ -4,11 +4,12 @@ description: PDF-Vorschau im Editor für interaktive Kommunikation mit verschied
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 3%
+source-wordcount: '333'
+ht-degree: 4%
 
 ---
 
@@ -46,7 +47,7 @@ Zeigen Sie eine Vorschau der interaktiven Kommunikation ohne Daten, lokale Daten
 
 +++&#x200B;2. Vorschau mit lokalen JSON-Daten
 
-2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[&#x200B; (FDM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
+2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[ (FDM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
 
 2.2. Wechseln Sie im IC-Editor zu **PDF-Vorschau** > Lokale Daten verwenden.
 

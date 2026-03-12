@@ -5,11 +5,12 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 3%
+source-wordcount: '1054'
+ht-degree: 4%
 
 ---
 
@@ -62,9 +63,9 @@ Erstellen Sie Formulare mit Beschreibungen Ihrer Anforderungen in natürlicher S
 **Beispiel:**
 
     Erstellen Sie ein Formular für Kunden-Feedback mit:
-    &#x200B;- Produktbewertung (1-5 Sterne)
-    &#x200B;- Feld „Kommentar“ für detailliertes Feedback
-    &#x200B;- Kunden-E-Mail (optional)
+    - Produktbewertung (1-5 Sterne)
+    - Feld „Kommentar“ für detailliertes Feedback
+    - Kunden-E-Mail (optional)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -74,7 +75,7 @@ Erstellen Sie Formulare mit Beschreibungen Ihrer Anforderungen in natürlicher S
 
 Umwandeln vorhandener Dokumente in interaktive digitale Formulare.
 
-Laden Sie vor Verwendung dieser Option Ihre PDF-Datei oder ein Bild des Formulars hoch. Die PDF kann entweder ein AcroForm- oder ein XFA-basiertes PDF-Formular sein. Bei [anderen Typen von PDF forms](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) verwenden Sie die Option [Formular vorbereiten](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat, um sie in ein AcroForm zu konvertieren
+Laden Sie vor Verwendung dieser Option Ihre PDF-Datei oder ein Bild des Formulars hoch. Die PDF kann entweder ein AcroForm- oder ein XFA-basiertes PDF-Formular sein. Bei [anderen Typen von PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) verwenden Sie die Option [Formular vorbereiten](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat, um sie in ein AcroForm zu konvertieren
 
 **Verwendung:**
 
@@ -166,9 +167,9 @@ Verwenden Sie `@fieldName`, um auf bestimmte Felder zu verweisen:
 
 Beschreiben Sie, was Sie möchten, in einfachem Englisch:
 
-    &#x200B;- Abschnitt für Firmeninformationen hinzufügen
-    &#x200B;- Dropdown zur Abteilungsauswahl erstellen
-    &#x200B;- Datei-Upload zur Wiederaufnahme einschließen
+    - Abschnitt für Firmeninformationen hinzufügen
+    - Dropdown zur Abteilungsauswahl erstellen
+    - Datei-Upload zur Wiederaufnahme einschließen
 
 ### Inkrementelles Erstellen {#build-incrementally}
 
@@ -188,53 +189,53 @@ Einfach anfangen und schrittweise Komplexität hinzufügen:
 **Basiskontaktformular:**
 
     Erstellen eines Kontaktformulars mit:
-    &#x200B;- Name (erforderlich)
-    &#x200B;- E-Mail (erforderlich, validiert)
-    &#x200B;- Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
-    &#x200B;- Nachricht (erforderlich, mehrzeilig)
+    - Name (erforderlich)
+    - E-Mail (erforderlich, validiert)
+    - Dropdown-Liste „Betreff“ (Allgemein, Support, Vertrieb, Partnerschaft)
+    - Nachricht (erforderlich, mehrzeilig)
 
 **Formular für Kunden-Feedback:**
 
     Erstellen Sie ein Formular für Kunden-Feedback mit:
-    &#x200B;- Produktbewertung (1-5 Sterne)
-    &#x200B;- Feld „Kommentar“ für detailliertes Feedback
-    &#x200B;- Kunden-E-Mail (optional)
+    - Produktbewertung (1-5 Sterne)
+    - Feld „Kommentar“ für detailliertes Feedback
+    - Kunden-E-Mail (optional)
 
 ### Anmeldeformulare und Onboarding {#registration-onboarding-forms}
 
 **Benutzerregistrierung:**
 
     Erstellen Sie ein Benutzerregistrierungsformular mit:
-    &#x200B;- Persönliche Informationen (Name, E-Mail, Telefon)
-    &#x200B;- Kontovoreinstellungen (Newsletter, Benachrichtigungen)
-    &#x200B;- Annahme der Geschäftsbedingungen
-    &#x200B;- Kennworterstellung mit Stärkenvalidierung
+    - Persönliche Informationen (Name, E-Mail, Telefon)
+    - Kontovoreinstellungen (Newsletter, Benachrichtigungen)
+    - Annahme der Geschäftsbedingungen
+    - Kennworterstellung mit Stärkenvalidierung
 
 **Mitarbeiter-Onboarding:**
 
     Erstellen eines Onboarding-Formulars für Mitarbeiter mit:
-    &#x200B;- Persönliche Daten und Kontaktinformationen
-    &#x200B;- Informationen zur Beschäftigung und zum Startdatum
-    &#x200B;- Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
-    &#x200B;- Auswahl und Voreinstellungen für Vorteile
+    - Persönliche Daten und Kontaktinformationen
+    - Informationen zur Beschäftigung und zum Startdatum
+    - Dokument-Uploads (Lebenslauf, ID, Steuerformulare)
+    - Auswahl und Voreinstellungen für Vorteile
 
 ### Erhebungs- und Bewertungsformulare {#survey-assessment-forms}
 
 **Umfrage zur Kundenzufriedenheit:**
 
     Erstellen Sie eine Umfrage zur Kundenzufriedenheit mit:
-    &#x200B;- Gesamtbewertung (Skala 1-10)
-    &#x200B;- Kategoriebewertungen (Produkt, Service, Support)
-    &#x200B;- Abschnitte mit offenem Feedback
-    &#x200B;- Demografische Informationen (optional)
+    - Gesamtbewertung (Skala 1-10)
+    - Kategoriebewertungen (Produkt, Service, Support)
+    - Abschnitte mit offenem Feedback
+    - Demografische Informationen (optional)
 
 **Kompetenzbewertung:**
 
     Erstellen Sie ein Formular zur Kompetenzbewertung mit:
-    &#x200B;- Kompetenzkategorien mit 
-    &#x200B;- Erlebnisdauer für jede 
-    &#x200B;- Zertifizierungs- und Schulungsinformationen
-    &#x200B;- Selbstbewertung und Ziele
+    - Kompetenzkategorien mit 
+    - Erlebnisdauer für jede 
+    - Zertifizierungs- und Schulungsinformationen
+    - Selbstbewertung und Ziele
 
 ## Tests und Validierung {#testing-validation}
 

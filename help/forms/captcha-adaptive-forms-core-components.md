@@ -5,11 +5,12 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA-Dienst, adaptive Formulare, CAPTCHA-Herausforderung, Bot-Prävention, Kernkomponenten, Formularübermittlungssicherheit, Spam-Prävention für Formulare
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: ht
-source-wordcount: '1418'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1424'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +50,7 @@ Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um 
       1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
       1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
-1. Konfigurieren Sie den Cloud Service für [!DNL reCAPTCHA Enterprise].
+1. Konfigurieren Sie den Cloud-Service für [!DNL reCAPTCHA Enterprise].
 
    1. Gehen Sie in der Experience Manager-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Wählen Sie **[!UICONTROL reCAPTCHA]** aus. Die Konfigurationsseite öffnet sich. Wählen Sie den erstellten Konfigurations-Container aus und wählen Sie dann **[!UICONTROL Erstellen]**.

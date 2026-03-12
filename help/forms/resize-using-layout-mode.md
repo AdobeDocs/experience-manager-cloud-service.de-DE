@@ -4,11 +4,12 @@ description: Definieren Sie die Position der AEM Forms-Komponenten, erfahren Sie
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1138'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +32,7 @@ Sie können den Layout-Modus verwenden, um die Größe von Komponenten für alle
 
 Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben in der Authoring-Oberfläche für adaptive Formulare neben der Option **[!UICONTROL Vorschau]** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 
-1. Melden Sie sich bei der [!DNL Adobe Experience Manager]-Autorinstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
+1. Melden Sie sich bei der [!DNL Adobe Experience Manager]-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Erstellen Sie ein neues oder öffnen Sie ein vorhandenes [adaptives Formular](creating-adaptive-form.md).
 1. Wählen Sie **[!UICONTROL Layout]** aus der Dropdownliste, die oben neben der Option **[!UICONTROL Vorschau]** angezeigt wird. Das Formular wird im Layout-Modus angezeigt.
 

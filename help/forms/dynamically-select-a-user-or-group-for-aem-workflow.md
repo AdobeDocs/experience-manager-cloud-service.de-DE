@@ -1,17 +1,18 @@
 ---
 title: Wie wählt man Benutzende im AEM-Workflow aus?
-description: Erfahren Sie, wie Sie zur Laufzeit eine Benutzerin bzw. einen Benutzer oder eine Gruppe für einen  [!DNL AEM Forms] -Arbeitsablauf auswählen.
+description: Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen  [!DNL AEM Forms] -Workflow auswählen.
 content-type: troubleshooting
 topic-tags: publish
 feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 97%
 
 ---
 
@@ -39,9 +40,9 @@ ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstel
 
 1. Fügen Sie den Anzeigenamen des Skripts hinzu. Dieser Name wird in den Workflow-Schritten angezeigt. Eingeben des Namens:
 
-   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
+   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den **[!UICONTROL jcr:content]**-Knoten und klicken Sie auf **[!UICONTROL Mixins]**.
    1. Fügen Sie die Eigenschaft `mix:title` im Dialogfeld „Mixins bearbeiten“ hinzu und klicken Sie auf **OK**.
-   1. Fügen Sie folgende Eigenschaft zum Knoten „jcr:content“ des Skripts hinzu:
+   1. Fügen Sie dem jcr:content-Knoten des Skripts die folgende Eigenschaft hinzu:
 
       | Name | Typ | Wert |
       |--- |--- |--- |
@@ -230,7 +231,7 @@ Sie benötigen die Dateien [[!DNL AEM Forms] Client SDK](https://experienceleagu
 
    `mvn clean install`
 
-1. Laden Sie das Bundle auf einen [!DNL AEM Forms]-Server hoch. Sie können AEM Package Manager verwenden, um das Paket in einen [!DNL AEM Forms]-Server zu importieren.
+1. Laden Sie das Bundle auf einen [!DNL AEM Forms]-Server hoch. Sie können den AEM-Paket-Manager verwenden, um das Paket in einen [!DNL AEM Forms]-Server zu importieren.
 
 Nachdem das Bundle importiert wurde, ist die Option für die Auswahl der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder einer Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuweisen“ verfügbar.
 

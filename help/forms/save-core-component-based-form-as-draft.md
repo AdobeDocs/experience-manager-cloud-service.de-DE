@@ -3,10 +3,11 @@ title: So speichern Sie das auf Kernkomponenten basierende adaptive Formular als
 description: Erfahren Sie, wie Sie auf Kernkomponenten basierende adaptive Formulare als Entwurf speichern. Erfahren Sie außerdem, wie Sie mit der Komponente „Drafts and Submissions“ Entwürfe und Sendungen für angemeldete Benutzer auflisten können.
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 14%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 14%
 
 # Speichern von Formularen als Entwürfe und Auflisten auf der Sites-Seite
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Erwägen Sie einen Benutzer, der mit dem Ausfüllen eines Formulars beginnt, aber später anhalten und zurückkehren muss. AEM bietet eine `save-as-draft` Option, mit der Benutzende das Formular als Entwurf für den zukünftigen Abschluss speichern können. Um dies zu erleichtern, stellt AEM die Forms **Portalkomponente „Entwürfe und Übermittlungen** bereit, die Entwürfe und Übermittlungen auf AEM Sites-Seiten anzeigt. Die Komponente listet Formulare auf, die als Entwürfe für den späteren Abschluss gespeichert wurden, sowie die gesendeten Formulare. Nur angemeldete Benutzer können ihre Entwürfe bearbeiten oder ihre gesendeten Formulare anzeigen. Wenn ein anonymer Benutzer jedoch mithilfe der Komponente **Suche und Auflister** durch die Liste der Formulare navigiert und ein Formular als Entwurf speichert, wird dieser Entwurf nicht durch die Komponente **Entwürfe und Sendungen** aufgeführt. Um Entwürfe und Übermittlungen anzuzeigen, müssen Benutzer zum Zeitpunkt der Formularübermittlung angemeldet sein.
 
@@ -26,18 +27,18 @@ Erwägen Sie einen Benutzer, der mit dem Ausfüllen eines Formulars beginnt, abe
 
 ### Konfigurieren von Azure Storage und Unified Storage Connector für die Forms Portal-Komponente für Entwürfe und Übermittlungen
 
-Die **Drafts &amp; Submissions**-Komponente benötigt eine Speichereinrichtung zum Speichern und Auflisten von Entwürfen auf der AEM Sites-Seite. Unified Storage Connector bietet ein Framework zur Verknüpfung von AEM mit externem Speicher. Um das Formular als Entwurf zu speichern, stellen Sie sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf das [!DNL Azure]-Speicherkonto zu autorisieren. Sobald Sie über ein Azure-Speicherkonto und den Zugriffsschlüssel verfügen, führen Sie die folgenden Schritte aus, um eine Azure Storage-Konfiguration zu erstellen:
+Die **Drafts &amp; Submissions**-Komponente benötigt eine Speichereinrichtung zum Speichern und Auflisten von Entwürfen auf der AEM Sites-Seite. Unified Storage Connector bietet ein Framework zur Verknüpfung von AEM mit externem Speicher. Um das Formular als Entwurf zu speichern, stellen Sie sicher, dass Sie über ein Azure-Speicherkonto und einen Zugriffsschlüssel verfügen, um den Zugriff auf das [!DNL Azure]-Speicherkonto zu autorisieren. Nachdem Sie über ein Azure-Speicherkonto und den Zugriffsschlüssel verfügen, führen Sie die folgenden Schritte aus, um eine Azure-Speicherkonfiguration zu erstellen:
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure-Speicher]**.
 
-   ![Azure-Speicherkartenauswahl](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Auswahl der Azure-Speicherkarte](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Wählen Sie einen Konfigurationsordner aus, um die Konfiguration zu erstellen, und wählen Sie **[!UICONTROL Erstellen]**.
 
-   ![Azure Storage-Konfigurationsordner auswählen](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Azure-Speicherkonfigurationsordner auswählen](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
-1. Geben Sie den Namen des [!DNL Azure] Speicherkontos in den Feldern **[!UICONTROL Azure-Speicherkonto]** und **[!UICONTROL Azure-]**) an.
+1. Geben Sie den Namen des [!DNL Azure]-Speicherkontos in den Feldern **[!UICONTROL Azure-]** und **[!UICONTROL Azure-Zugriffsschlüssel]** an.
 
    ![Azure Storage-Konfiguration](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
@@ -47,9 +48,9 @@ Die **Drafts &amp; Submissions**-Komponente benötigt eine Speichereinrichtung z
 
    >[!NOTE]
    >
-   > Sie können das **[!UICONTROL Azure-Speicherkonto]** und den **[!UICONTROL Azure-Zugriffsschlüssel]** über das [Microsoft Azure-Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) abrufen.
+   > Sie können das **[!UICONTROL Azure-Speicherkonto]** und den **[!UICONTROL Azure-Zugriffsschlüssel]** über das [Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) abrufen.
 
-   Nachdem Sie die Azure Storage-Konfiguration erfolgreich erstellt haben, konfigurieren Sie Unified Storage Connector für Forms Portal wie folgt:
+   Nachdem Sie die Azure-Speicherkonfiguration erfolgreich erstellt haben, konfigurieren Sie Unified Storage Connector für Forms Portal, indem Sie die folgenden Schritte ausführen:
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
 
@@ -66,7 +67,7 @@ Die **Drafts &amp; Submissions**-Komponente benötigt eine Speichereinrichtung z
 >
 > Wenn Sie eine andere Speicheroption als Azure konfigurieren müssen, schreiben Sie <aem-forms-ea@adobe.com> von Ihrer offiziellen E-Mail-Adresse mit Ihren detaillierten Anforderungen.
 
-Nachdem Sie Azure Storage und Unified Storage Connector erfolgreich zum Speichern der Entwürfe und gesendeten Formulare konfiguriert haben, fügen Sie die Komponente **Drafts &amp; Submissions** auf der AEM Sites-Seite hinzu.
+Nachdem Sie Azure Storage und Unified Storage Connector erfolgreich zum Speichern der Entwürfe und gesendeten Formulare konfiguriert haben, fügen Sie die Komponente **Entwürfe und Übermittlungen** auf der Seite AEM Sites hinzu.
 
 ## Wie fügt man die Komponente „Drafts &amp; Submissions“ zu einer AEM Sites-Seite hinzu?
 
@@ -162,7 +163,7 @@ Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld **Konfigurieren der Komponent
 
 ![Symbol für Entwürfe](assets/drafts-component.png)
 
-Forms Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, &#x200B;](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
+Forms Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, ](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
 
 ![Symbol für Einsendungen](assets/submission-listing.png)
 
@@ -174,7 +175,7 @@ Sie können Formulare auch verwerfen, indem Sie auf die Auslassungspunkte (…) 
 
 ## Nächste Schritte
 
-Im nächsten Artikel erfahren wir, [&#x200B; Sie mithilfe der Link-Forms-Portal-Komponente Verweise auf Formulare auf der Sites-Seite hinzufügen](/help/forms/add-form-link-to-aem-sites-page.md).
+Im nächsten Artikel erfahren wir, [ Sie mithilfe der Link-Forms-Portal-Komponente Verweise auf Formulare auf der Sites-Seite hinzufügen](/help/forms/add-form-link-to-aem-sites-page.md).
 
 ## Verwandte Artikel
 

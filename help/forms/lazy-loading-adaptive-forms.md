@@ -4,11 +4,12 @@ description: Erfahren Sie, wie Sie die Leistung umfangreicher Formulare durch ve
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 100%
+source-wordcount: '1069'
+ht-degree: 99%
 
 ---
 

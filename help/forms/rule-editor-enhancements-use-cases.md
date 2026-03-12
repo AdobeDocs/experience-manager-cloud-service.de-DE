@@ -4,11 +4,12 @@ description: In diesem Artikel werden verschiedene Anwendungsfälle für den Reg
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 0%
+source-wordcount: '1981'
+ht-degree: 1%
 
 ---
 
@@ -92,7 +93,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
@@ -124,7 +125,7 @@ Das Feld **Gesamtversandkosten** wird dynamisch aktualisiert, um sowohl die Prod
 >[!NOTE]
 >
 > Sie können auch eine Funktion **Wert der Variablen abrufen** in der Wenn-Bedingung hinzufügen.
-> &#x200B;> ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> ![Funktion „Variablenwert abrufen“ in Wenn](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Dieser Ansatz ermöglicht dynamische Echtzeit-Berechnungen, ohne dem Formular zusätzliche Felder hinzuzufügen, wodurch die Struktur sauber und benutzerfreundlich bleibt.
 

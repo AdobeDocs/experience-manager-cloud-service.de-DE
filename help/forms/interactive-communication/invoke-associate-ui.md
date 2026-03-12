@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie die AEM Forms Associate-Benutzeroberfläche i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1080'
 ht-degree: 2%
 
 ---
@@ -24,13 +25,13 @@ Bevor Sie die Benutzeroberfläche „Verknüpfen“ mit Ihrer Anwendung integrie
 
 - Interaktive Kommunikation erstellt und veröffentlicht
 - Browser mit aktivierter Popup-Unterstützung
-- Verknüpfen [Benutzer müssen Teil der Gruppe „forms-Associates“ sein](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Authentifizierung konfiguriert mit einem [von AEM unterstützten Authentifizierungsmechanismus](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/authentication) (z. B. SAML 2.0, OAuth oder benutzerdefinierte Authentifizierungs-Handler)
+- Verknüpfen [Benutzer müssen Teil der Gruppe „forms-Associates“ sein](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Authentifizierung konfiguriert mit einem [von AEM unterstützten Authentifizierungsmechanismus](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (z. B. SAML 2.0, OAuth oder benutzerdefinierte Authentifizierungs-Handler)
 
 >[!NOTE]
 >
 >- Dieser Artikel zeigt die Authentifizierungskonfiguration mithilfe von SAML 2.0 mit [Microsoft Entra ID (Azure AD) als Identitätsanbieter](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Für die Benutzeroberfläche von Associate sind zusätzliche SAML-Konfigurationen erforderlich, die über die Standardeinrichtung hinausgehen, die im Artikel [SAML 2.0-Authentifizierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) erläutert wird. Weitere Informationen finden Sie [&#x200B; Abschnitt „Zusätzliche SAML-Konfigurationen für &#x200B;](#additional-saml-configurations-for-associate-ui)-Benutzeroberfläche“.
+>- Für die Benutzeroberfläche von Associate sind zusätzliche SAML-Konfigurationen erforderlich, die über die Standardeinrichtung hinausgehen, die im Artikel [SAML 2.0-Authentifizierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) erläutert wird. Weitere Informationen finden Sie [ Abschnitt „Zusätzliche SAML-Konfigurationen für ](#additional-saml-configurations-for-associate-ui)-Benutzeroberfläche“.
 
 ### Zusätzliche SAML-Konfigurationen für die Associate-Benutzeroberfläche
 

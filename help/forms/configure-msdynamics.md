@@ -3,10 +3,11 @@ title: Konfigurieren von vorkonfigurierten Microsoft Dynamics 365-Formulardatenm
 description: Erfahren Sie, wie Sie Microsoft Dynamics 365 mit Adaptive Forms integrieren.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '921'
 ht-degree: 16%
 
 ---
@@ -58,7 +59,7 @@ Stellen Sie vor der Integration von [!DNL Microsoft® Dynamics 365] mit AEM Form
 
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
-1. **Registrieren einer Anwendung für [!DNL Microsoft® Dynamics 365] in Azure Active Directory**
+1. **Registrieren einer Anwendung für die [!DNL Microsoft® Dynamics 365] in Azure Active Directory**
 
    Gehen Sie wie im Video beschrieben vor, um eine Anwendung für die [!DNL Microsoft® Dynamics 365] in Azure Active Directory zu registrieren.
 
@@ -83,7 +84,7 @@ Nachdem Sie die oben genannten Voraussetzungen konfiguriert haben, können Sie m
 
 Führen Sie die folgenden Schritte aus, um die [!DNL Microsoft® Dynamics 365] Cloud Service-Konfiguration zu konfigurieren:
 
-1. Navigieren Sie auf **[!UICONTROL Autoreninstanz zu]** Tools![&#x200B; &#x200B;](assets/hammer.png)hammer **[!UICONTROL >]** Cloud Services **[!UICONTROL >]** Datenquellen[!DNL AEM Forms].
+1. Navigieren Sie auf **[!UICONTROL Autoreninstanz zu]** Tools![ ](assets/hammer.png)hammer **[!UICONTROL >]** Cloud Services **[!UICONTROL >]** Datenquellen[!DNL AEM Forms].
 
    ![Cloud Data-Source auswählen](/help/forms/assets/dynamics-data-source.png)
 1. Wählen Sie einen Konfigurations-Container aus. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.

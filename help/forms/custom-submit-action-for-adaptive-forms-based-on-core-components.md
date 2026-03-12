@@ -4,19 +4,20 @@ description: Erfahren Sie, wie Sie eine benutzerdefinierte Übermittlungsaktion 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1143'
 ht-degree: 26%
 
 ---
 
 # Erstellen einer benutzerdefinierten Übermittlungsaktion für adaptive Forms (Kernkomponenten)
 
-Mit einer Übermittlungsaktion können Benutzer das Ziel für die in einem Formular erfassten Daten auswählen und zusätzliche Funktionen definieren, die bei der Formularübermittlung ausgeführt werden sollen. AEM Forms unterstützt mehrere [Übermittlungsaktionen (OOTB), &#x200B;](/help/forms/configure-submit-actions-core-components.md). B. das Senden einer E-Mail oder das Speichern von Daten an SharePoint oder OneDrive.
+Mit einer Übermittlungsaktion können Benutzer das Ziel für die in einem Formular erfassten Daten auswählen und zusätzliche Funktionen definieren, die bei der Formularübermittlung ausgeführt werden sollen. AEM Forms unterstützt mehrere [Übermittlungsaktionen (OOTB), ](/help/forms/configure-submit-actions-core-components.md). B. das Senden einer E-Mail oder das Speichern von Daten an SharePoint oder OneDrive.
 
-Sie können auch eine benutzerdefinierte Übermittlungsaktion erstellen, um Funktionen hinzuzufügen, die nicht in den [vordefinierten Optionen“ enthalten &#x200B;](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). Integrieren Sie beispielsweise die Formulardaten in eine Drittanbieteranwendung oder einen Trigger in einer personalisierten SMS-Benachrichtigung, die auf Benutzereingaben basiert.
+Sie können auch eine benutzerdefinierte Übermittlungsaktion erstellen, um Funktionen hinzuzufügen, die nicht in den [vordefinierten Optionen“ enthalten ](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). Integrieren Sie beispielsweise die Formulardaten in eine Drittanbieteranwendung oder einen Trigger in einer personalisierten SMS-Benachrichtigung, die auf Benutzereingaben basiert.
 
 <!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->

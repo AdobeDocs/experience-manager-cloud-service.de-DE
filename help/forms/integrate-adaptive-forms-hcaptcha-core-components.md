@@ -4,11 +4,12 @@ description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimi
 topic-tags: Adaptive Forms, author
 keywords: CAPTCHA&reg; -Service, Adaptive Forms, CAPTCHA-Herausforderung, Bot-Prävention, Kernkomponenten, Sicherheit bei der Formularübermittlung, Spam-Abwehr bei Formularen
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '967'
 ht-degree: 63%
 
 ---
@@ -68,7 +69,7 @@ Um AEM Forms mit dem hCAPTCHA®-Service zu integrieren, führen Sie die folgende
    >[!NOTE]
    > Benutzende brauchen die [Client-seitige JavaScript-Validierungs-URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) und die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht zu ändern, da sie bereits für die hCaptcha®-Validierung vorausgefüllt sind.
 
-   Sobald der hCAPTCHA-Service konfiguriert ist, kann er in einem ([&#x200B; Formular, das auf Kernkomponenten basiert) verwendet &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Sobald der hCAPTCHA-Service konfiguriert ist, kann er in einem ([ Formular, das auf Kernkomponenten basiert) verwendet ](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Verwenden von hCAPTCHA® in Kernkomponenten von Adaptive Forms {#using-hCaptcha&reg;-core-components}
 

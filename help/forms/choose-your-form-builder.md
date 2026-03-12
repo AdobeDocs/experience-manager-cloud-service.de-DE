@@ -5,10 +5,11 @@ keywords: Form Builder, AEM Forms, Formularersteller, Erstellen von Formularen, 
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: choose-form-builder-guide
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '954'
 ht-degree: 9%
 
 ---
@@ -181,7 +182,7 @@ Nachdem Sie Ihren Formular-Builder ausgewählt haben:
 ### Universeller Editor (Edge Delivery Services)
 
 1. **WYSIWYG-Authoring:** [Erste Schritte mit dem universellen Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-2. **Dokumentenbasiertes Authoring:** Erstellen [&#x200B; ersten Formulars mit Tabellen](/help/edge/docs/forms/tutorial.md)
+2. **Dokumentenbasiertes Authoring:** Erstellen [ ersten Formulars mit Tabellen](/help/edge/docs/forms/tutorial.md)
 
 
 ## Benötigen Sie Hilfe bei der Entscheidungsfindung?

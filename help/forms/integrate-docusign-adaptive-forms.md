@@ -1,12 +1,13 @@
 ---
 title: Wie lässt sich DocuSign in ein adaptives Formular integrieren?
 description: Erfahren Sie, wie Sie DocuSign mit einem adaptiven Formular verwenden können, um E-Signaturen einzuholen.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1540'
 ht-degree: 99%
 
 ---
@@ -163,7 +164,7 @@ Jetzt ist Ihre AEM Forms-Umgebung für die Verwendung von DocuSign konfiguriert.
 Sie können [!DNL DocuSign] für ein vorhandenes adaptives Formular aktivieren oder ein [!DNL DocuSign]-fähiges adaptives Formular erstellen. Wählen Sie eine der folgenden Möglichkeiten:
 
 - [Ein  [!DNL DocuSign] -fähiges adaptives Formular erstellen](#create-an-adaptive-form-for-docusign)
-- [&#x200B; [!DNL DocuSign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
+- [ [!DNL DocuSign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
 
 #### Adaptives Formular für DocuSign erstellen {#create-an-adaptive-form-for-docusign}
 

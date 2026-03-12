@@ -3,13 +3,14 @@ title: AEM Forms Communications APIs - Übersicht
 description: Übersicht über AEM Forms Communications-APIs einschließlich Authentifizierungsmethoden und vollständiger API-Referenz
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 9%
+source-wordcount: '947'
+ht-degree: 10%
 
 ---
-
 
 # AEM Forms Communications APIs - Übersicht
 
@@ -55,7 +56,7 @@ Alle AEM Forms-APIs sind in zwei Hauptteile unterteilt:
 
 Kommunikations-APIs sind der primäre Fokus für dokumentzentrierte Vorgänge.
 
-In der folgenden Tabelle sind alle [AEM Forms Communications APIs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
+In der folgenden Tabelle sind alle [AEM Forms Communications APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
 
 #### APIs zur Dokumenterstellung
 

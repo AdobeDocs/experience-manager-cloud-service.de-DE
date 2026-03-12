@@ -3,10 +3,11 @@ title: Mühelose Massen-PDF-Erstellung – Meistern Sie die Kunst der Stapelvera
 description: Wie erstelle ich markenorientierte und personalisierte Kommunikationen?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1716'
 ht-degree: 99%
 
 ---
@@ -154,7 +155,7 @@ Um einen Batch auszuführen, verwenden Sie `POST /config /[configName]/execution
 
 Um den Status eines Batches abzurufen, verwenden Sie `GET /config /[configName]/execution/[execution-identifier]`. Die Ausführungskennung ist im Header der HTTP-Antwort für die Batch-Ausführungsanforderung enthalten.
 
-Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details zum Status des Batch-Vorgangs, zur Anzahl der bereits in der Pipeline befindlichen Einträge (bereits gelesen und in Verarbeitung) und zum Status jedes outputType/renderType (Anzahl der in Bearbeitung befindlichen, erfolgreichen und fehlgeschlagenen Elemente). Der Status enthält auch Start- und Endzeit des Batch-Vorgangs sowie ggf. Informationen zu Fehlern. Die Endzeit ist -1, bis die Batch-Ausführung tatsächlich abgeschlossen ist.
+Die Antwort der Statusanfrage enthält den Statusabschnitt. Sie enthält Details zum Status des Batch-Auftrags, zur Anzahl der bereits in der Pipeline befindlichen Einträge (bereits gelesen und in Verarbeitung) und zum Status jedes outputType/renderType (Anzahl der in Bearbeitung befindlichen, erfolgreichen und fehlgeschlagenen Elemente). Der Status enthält auch Start- und Endzeit des Batch-Auftrags sowie ggf. Informationen zu Fehlern. Die Endzeit ist -1, bis die Batch-Ausführung tatsächlich abgeschlossen ist.
 
 >[!NOTE]
 >

@@ -3,10 +3,12 @@ title: Integrieren des Formulardatenmodells (FDM) für ein Formular mit einem ad
 description: Erfahren Sie, wie Sie Formulare basierend auf einem Formulardatenmodell (FDM) zu erstellen. Erstellen und bearbeiten Sie Beispieldaten für Datenmodellobjekte im FDM.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+exl-id: f08fb365-8750-4b81-9877-c382e7aebba0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 31%
+source-wordcount: '670'
+ht-degree: 44%
 
 ---
 
@@ -68,20 +70,20 @@ Führen Sie die folgenden Schritte aus, um das Formulardatenmodell mit einem ada
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
 1. Klicken Sie im Editor **die Erweiterung** Formulareigenschaften bearbeiten“.
 
-   Das **Formulareigenschaften** wird angezeigt.
+   Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 
    >[!NOTE]
    >
-   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** in der Extension Manager.
-   > * Informationen zum Aktivieren oder Deaktivieren von Erweiterungen im universellen Editor finden [&#x200B; im Artikel &#x200B;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager-Feature-Highlights&rbrace;.
+   > * Wenn das Symbol **Formulareigenschaften bearbeiten** in der Benutzeroberfläche des universellen Editors nicht angezeigt wird, aktivieren Sie die Erweiterung **Formulareigenschaften bearbeiten** im Extension Manager.
+   > * Informationen zum Aktivieren und Deaktivieren von Erweiterungen im universellen Editor finden Sie im Artikel [Extension Manager – Highlights der Funktionen](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 1. Klicken Sie auf **Übermittlung** und wählen Sie **[!UICONTROL Senden mit Formulardatenmodell]** aus.
 
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
-Wenn Sie **Anlagen mit Originalnamen speichern** wählen, werden die Anlagen unter Verwendung ihrer Originaldateinamen im Ordner gespeichert. Sie können auch das Datensatzdokument (DoR) im Azure Blob-Speicher speichern.
+Wenn Sie **Anhänge mit dem ursprünglichen Namen speichern** auswählen, werden die Anlagen im Ordner unter ihren ursprünglichen Dateinamen gespeichert. Sie können auch einen Nachweis im Azure Blob-Speicher speichern.
 
-1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]**, in der Sie Ihre Daten speichern möchten.
-1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**
+1. Wählen Sie die **[!UICONTROL Speicherkonfiguration]** aus, in der Sie Ihre Daten speichern möchten.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 Detaillierte Anweisungen zum Integrieren von im universellen Editor erstellten Formularen finden Sie im Artikel [Integrieren von Forms mit dem Formulardatenmodell im universellen Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 

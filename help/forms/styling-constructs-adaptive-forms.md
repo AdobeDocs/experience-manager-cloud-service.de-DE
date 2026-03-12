@@ -3,11 +3,12 @@ title: Wie kann das Erscheinungsbild von adaptiven Formularen angepasst werden?
 description: Verwenden Sie das LESS-Framework für adaptive Formulare, um das Erscheinungsbild adaptiver Formulare anzupassen.
 feature: Adaptive Forms, Foundation Components
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 100%
+source-wordcount: '2313'
+ht-degree: 99%
 
 ---
 

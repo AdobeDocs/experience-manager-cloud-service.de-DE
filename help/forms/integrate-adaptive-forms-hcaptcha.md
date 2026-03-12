@@ -1,15 +1,16 @@
 ---
 title: Wie wird hCAPTCHA&reg; in einem adaptiven AEM-Formular verwendet?
-description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimieren. Schrittweise Anleitung enthalten!
+description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimieren. Schrittweise Anleitung enthalten.
 topic-tags: Adaptive Forms, author
 keywords: CAPTCHA&reg; -Service, Adaptive Forms, CAPTCHA-Herausforderung, Bot-Vermeidung, Sicherheit bei der Formularübermittlung, Spam-Verhinderung von Formularen
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 33%
+source-wordcount: '987'
+ht-degree: 52%
 
 ---
 
@@ -29,7 +30,7 @@ AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
 Der hCaptcha®-Dienst schützt Ihre Formulare vor Bots, Spam und automatisiertem Missbrauch. Er führt einen Kontrollkästchen-Widget-Test durch und ermittelt anhand der Benutzerantwort, ob ein Mensch oder ein Bot mit dem Formular interagiert. Dabei wird verhindert, dass Benutzende fortfahren, wenn der Test fehlschlägt. Dies erhöht die Sicherheit von Online-Transaktionen, indem Bots keinen Spam senden oder andere bösartige Aktivitäten durchführen können.
 
-AEM Forms as a Cloud Service unterstützt hCAPTCHA® in Adaptive Forms. Sie können damit beim Übermitteln eines Formulars eine Herausforderung für ein Kontrollkästchen-Widget darstellen.
+AEM Forms as a Cloud Service unterstützt hCAPTCHA® in Adaptive Forms. Sie können es verwenden, um bei der Formularübermittlung eine Herausforderung mit einem Kontrollkästchen-Widget zu präsentieren.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
@@ -41,7 +42,7 @@ Um hCAPTCHA® mit AEM Forms zu konfigurieren, müssen Sie den [hCAPTCHA®-SiteKe
 
 1. Erstellen Sie einen Konfigurations-Container in Ihrer AEM Forms as a Cloud Service-Umgebung. Ein Konfigurations-Container enthält Cloud-Konfigurationen, mit denen AEM mit externen Diensten verbunden wird. So erstellen und konfigurieren Sie einen Konfigurations-Container, um Ihre AEM Forms-Umgebung mit hCAPTCHA zu verbinden®:
    1. Öffnen Sie Ihre AEM Forms as a Cloud Service-Instanz.
-   1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
+   1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Konfigurations-Browser]**.
    1. Im Konfigurations-Browser können Sie einen vorhandenen Ordner auswählen oder einen Ordner erstellen. Sie können einen Ordner erstellen und die Option Cloud-Konfigurationen dafür aktivieren oder die Option Cloud-Konfigurationen für einen vorhandenen Ordner aktivieren:
 
       * **So erstellen Sie einen Ordner und aktivieren die Option Cloud-Konfigurationen**:
@@ -55,21 +56,19 @@ Um hCAPTCHA® mit AEM Forms zu konfigurieren, müssen Sie den [hCAPTCHA®-SiteKe
 
 1. Konfigurieren des Cloud-Service:
    1. Wechseln Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL hCaptcha®]**.
-
       ![hCaptcha® in der Benutzeroberfläche](assets/hcaptcha-in-ui.png)
-   1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
-
+   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
       ![Konfiguration hCAPTCHA®](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für den hCAPTCHA®-Service [erhalten in PREREQUISITE](#prerequisite). Wählen Sie **[!UICONTROL Erstellen]** aus.
 
-      ![Konfigurieren Sie die Cloud Service, um Ihre AEM Forms-Umgebung mit hCaptcha zu verbinden®](assets/create-hcaptcha-config.png)
+      ![Konfigurieren des Cloud-Service für die Verbindung Ihrer AEM Forms-Umgebung mit hCaptcha®](assets/create-hcaptcha-config.png)
 
 >[!NOTE]
-> Benutzende müssen die Client[seitige JavaScript-Validierungs-URL &#x200B;](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht ändern, da sie bereits für die hCAPTCHA®-Validierung vorausgefüllt sind. Für einige Länder können die Endpunkte unterschiedlich sein. Weitere Informationen finden Sie in [hCaptcha® &#x200B;](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) FAQs).
+> Benutzende müssen die Client[seitige JavaScript-Validierungs-URL ](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht ändern, da sie bereits für die hCAPTCHA®-Validierung vorausgefüllt sind. Für einige Länder können die Endpunkte unterschiedlich sein. Weitere Informationen finden Sie in [hCaptcha® ](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) FAQs).
 
 Sobald der CAPTCHA-Dienst konfiguriert ist, kann er in einem adaptiven Formular verwendet werden.
 
-## Verwenden von hCAPTCHA® in einem adaptiven Formular{#using-hCaptcha®-foundation-components}
+## Verwenden von hCaptcha® in einem adaptiven Formular{#using-hCaptcha&reg;-foundation-components}
 
 1. Öffnen Sie Ihre AEM Forms as a Cloud Service-Instanz.
 1. Gehen Sie zu **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
@@ -80,7 +79,7 @@ Sobald der CAPTCHA-Dienst konfiguriert ist, kann er in einem adaptiven Formular 
    ![Auswählen eines Konfigurations-Containers](/help/forms/assets/captcha-properties.png)
 
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. Das adaptive Formular wird im Editor für adaptive Formulare geöffnet.
-1. Ziehen Sie die **[!UICONTROL CAPTCHA]**-Komponente im Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
+1. Ziehen Sie die **[!UICONTROL Captcha]**-Komponente im Komponenten-Browser in das adaptive Formular und legen Sie sie dort ab.
 1. Wählen Sie die **[!UICONTROL CAPTCHA]**-Komponente aus und klicken Sie auf das Symbol ![Eigenschaften](assets/configure-icon.svg). Dadurch wird das Dialogfeld „Eigenschaften“ geöffnet.
 
    ![Alt-Text](assets/hcaptcha-properties.png)
@@ -97,21 +96,21 @@ Sobald der CAPTCHA-Dienst konfiguriert ist, kann er in einem adaptiven Formular 
 
      >[!NOTE]
      >
-     > Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit hCAPTCHA®](#connect-your-forms-environment-with-hcaptcha-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem hCAPTCHA®-Service verbindet.
+     > Es kann sein, dass Sie für ähnliche Zwecke über mehrere Cloud-Konfigurationen in Ihrer Umgebung verfügen. Wählen Sie den Service daher sorgfältig aus. Wenn kein Service aufgeführt ist, lesen Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) nach, wie Sie einen Cloud-Service erstellen, der Ihre AEM Forms-Umgebung mit dem hCaptcha®-Service verbindet.
 
    * **Fehlermeldung:** Geben Sie die Fehlermeldung an, die Benutzern angezeigt werden soll, wenn die CAPTCHA-Übermittlung fehlschlägt.
    * **CAPTCHA-Größe** Sie wählen die Anzeigegröße des Dialogfelds „hCAPTCHA®-Herausforderung“ aus. Verwenden Sie die **[!UICONTROL Compact]**-Option zum Anzeigen einer kleinen Größe und die **[!UICONTROL Normal]**-Option zum Anzeigen eines relativ großen hCAPTCHA®-Dialogfelds oder **[!UICONTROL Unsichtbar]** zum Überprüfen von hCAPTCHA®, ohne das Kontrollkästchen-Widget auf der Benutzeroberfläche explizit zu rendern.
 
-1. Wählen Sie **[!UICONTROL Fertig]**.
+1. Wählen Sie **[!UICONTROL Fertig]** aus.
 
-Jetzt sind nur noch legitime Formulare für die Formularübermittlung zulässig, bei denen der Formularausfüller die vom hCAPTCHA®-Service ausgehende Herausforderung erfolgreich löscht.
+Jetzt sind nur legitime Formulare zur Übermittlung zulässig, bei denen die Person, die das Formular ausfüllt, die vom hCaptcha®-Service ausgehende Herausforderung erfolgreich löst.
 
 **hCaptcha® ist eine eingetragene Marke von Intuition Machines, Inc.**
 
 ## Häufig gestellte Fragen
 
-* **F: Kann ich mehr als eine CAPTCHA-Komponente in einem adaptiven Formular verwenden?**
-* **A:** Die Verwendung von mehr als einer CAPTCHA-Komponente in einem adaptiven Formular wird nicht unterstützt. Außerdem wird nicht empfohlen, eine CAPTCHA-Komponente in einem Fragment oder einem Bereich zu verwenden, der für verzögertes Laden markiert ist.
+* **F: Kann ich mehr als eine Captcha-Komponente in einem adaptiven Formular verwenden?**
+* **Antwort:** Die Verwendung von mehr als einer Captcha-Komponente in einem adaptiven Formular wird nicht unterstützt. Außerdem wird davon abgeraten, eine Captcha-Komponente in einem Fragment oder einem Bereich zu verwenden, das bzw. der für verzögertes Laden markiert ist.
 
 ## Siehe auch {#see-also}
 

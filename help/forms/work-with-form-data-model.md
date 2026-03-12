@@ -4,11 +4,12 @@ description: Fügen Sie Datenmodellobjekte und Dienste hinzu, erstellen Sie Date
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '4146'
-ht-degree: 100%
+source-wordcount: '4152'
+ht-degree: 99%
 
 ---
 
@@ -88,7 +89,7 @@ So erstellen Sie ein Datenmodellobjekt ohne Datenquellen:
 
 1. Melden Sie sich bei der [!DNL Experience Manager]-Autoreninstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell (FDM), in dem Sie ein Datenmodellobjekt oder eine Entität erstellen möchten.
 1. Wählen Sie **[!UICONTROL Entität erstellen]**.
-1. Geben Sie im Dialog [!UICONTROL Datenmodell erstellen] einen Namen für das Datenmodell ein und wählen Sie **[!UICONTROL Hinzufügen]**. Ein Datenmodellobjekt wird zum Formulardatenmodell (FDM) hinzugefügt. Das neu hinzugefügte Datenmodellobjekt ist nicht an eine Datenquelle gebunden und weist keine Eigenschaften auf, wie in folgender Abbildung dargestellt.
+1. Geben Sie im Dialog [!UICONTROL Datenmodell erstellen] einen Namen für das Datenmodellobjekt ein und wählen Sie **[!UICONTROL Hinzufügen]**. Ein Datenmodellobjekt wird zum Formulardatenmodell (FDM) hinzugefügt. Das neu hinzugefügte Datenmodellobjekt ist nicht an eine Datenquelle gebunden und weist keine Eigenschaften auf, wie in folgender Abbildung dargestellt.
 
    ![new-entity](assets/new-entity.png)
 
@@ -393,7 +394,7 @@ Gehen Sie wie folgt vor, um Beispieldaten zu generieren und zu bearbeiten:
 
 1. Öffnen Sie ein Formulardatenmodell (FDM) und wählen Sie **[!UICONTROL Beispieldaten bearbeiten]**. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
 
-   ![Generieren von Musterdaten](assets/form_data_model_generate_sample_data_new.png)
+   ![Generieren von Beispieldaten](assets/form_data_model_generate_sample_data_new.png)
 
 1. Bearbeiten Sie im Fenster **[!UICONTROL Beispieldaten bearbeiten]** die Daten nach Bedarf und wählen Sie **[!UICONTROL Speichern]**.
 

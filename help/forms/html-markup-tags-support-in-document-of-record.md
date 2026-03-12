@@ -3,10 +3,11 @@ title: Unterstützte HTML-Markup-Tags in Submission PDF (ehemals Document of Rec
 description: Referenzhandbuch für HTML-Markup-Tags, die beim Generieren einer Übermittlungs-PDF (ehemals Datensatzdokument) unterstützt werden, einschließlich Überlegungen zum Rendering-Verhalten und zur Barrierefreiheit.
 feature: Adaptive Forms
 role: Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '460'
 ht-degree: 7%
 
 ---
@@ -34,7 +35,7 @@ Sie sollten vertraut sein mit:
 
 ### Überlegungen
 
-Die Übermittlungs-PDF (ehemals Document of Record) kann eine mit Tags versehene PDF sein, die die Barrierefreiheit und ordnungsgemäße Struktur für Hilfstechnologien sicherstellt. Um die Ausgabe mit Tags in PDF zu aktivieren[&#x200B; setzen Sie die XCI-Eigenschaft `config/present/pdf/tagged` auf `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nachdem Sie Ihre PDF generiert haben, müssen Sie sicherstellen, dass Barrierefreiheits-Tags korrekt angewendet werden. Sie können [Adobe Acrobat verwenden, um Barrierefreiheits-Tags zu &#x200B;](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) und sicherzustellen, dass Ihr Dokument den Barrierefreiheitsstandards entspricht.
+Die Übermittlungs-PDF (ehemals Document of Record) kann eine mit Tags versehene PDF sein, die die Barrierefreiheit und ordnungsgemäße Struktur für Hilfstechnologien sicherstellt. Um die Ausgabe mit Tags in PDF zu aktivieren[ setzen Sie die XCI-Eigenschaft `config/present/pdf/tagged` auf `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Nachdem Sie Ihre PDF generiert haben, müssen Sie sicherstellen, dass Barrierefreiheits-Tags korrekt angewendet werden. Sie können [Adobe Acrobat verwenden, um Barrierefreiheits-Tags zu ](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) und sicherzustellen, dass Ihr Dokument den Barrierefreiheitsstandards entspricht.
 
 ### Neue Funktionen
 

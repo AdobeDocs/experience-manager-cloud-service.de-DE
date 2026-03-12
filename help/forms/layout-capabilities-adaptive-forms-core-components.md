@@ -4,10 +4,11 @@ description: Layout und Darstellung adaptiver Formulare auf verschiedenen Gerät
 feature: Adaptive Forms, Core Components
 keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschiedene Layouts für Formulare, Layouts für dynamische Formulare in AEM, Formularlayouts für AEM Cloud Service, Formularlayouttypen in AEM-Kernkomponenten, Layouts für adaptive Formulare
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2148'
 ht-degree: 21%
 
 ---
@@ -90,7 +91,7 @@ Das Layout „Horizontale Registerkarten“ wird auch als Layout „Registerkart
 
 Layout horizontaler Registerkarten
 
-Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
 >[!TAB Akkordeon-Layout]
@@ -273,7 +274,7 @@ Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Ans
 1. Klicken Sie **[!UICONTROL Vorschau]** in der oberen rechten Ecke Ihrer Authoring-Umgebung.
    ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
-Sie können die [&#x200B; auch ziehen und ablegen, &#x200B;](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
+Sie können die [ auch ziehen und ablegen, ](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
 
 
 <!-- #### Drag and drop components into a layout's panel 
