@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.03.05
-description: Dies sind die Versionshinweise für die Version 2026.03.05 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.03.12
+description: Dies sind die Versionshinweise für die Version 2026.03.12 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 39%
+source-wordcount: '151'
+ht-degree: 47%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.03.05 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.03.12 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 5. März 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 12. März 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ Dies sind die Versionshinweise für die Version vom 5. März 2026 des universell
 
 ## Neue Funktionen {#what-is-new}
 
-* [Die Komponentenauswahl](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) weist ein neues Design auf.
-* [Eine Farbauswahl](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) für den RTE ist jetzt verfügbar.
+* Komponenten können jetzt über das [Kontextmenü“ von Containern ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) werden.
 
 ## Funktionen des Early-Adoption-Programms {#early-adopter}
 
@@ -37,5 +36,4 @@ Wenn Sie die unten aufgeführten Funktionen testen und Ihr Feedback geben möcht
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die Optionen für Ausrichtung, Textrichtung und Einzug sind jetzt [standardmäßig im RTE aktiviert](/help/implementing/universal-editor/configure-rte.md) vorausgesetzt, dass Ihr Backend sie unterstützt.
-* Registerkarten werden jetzt gerendert, wenn ein Inhaltsfragment mit offener API und einem Benutzeroberflächenschema verwendet wird.
+* Es wurde ein Problem behoben, bei dem Unterelemente zur Dokumenterstellung nicht den n-ten untergeordneten Regeln entsprachen.
