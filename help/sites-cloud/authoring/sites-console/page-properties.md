@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2b8dc10dd3fbf3f38985f8cba376d8aa19184880
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 99%
+source-wordcount: '2211'
+ht-degree: 96%
 
 ---
 
@@ -161,11 +161,17 @@ Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, wa
 
 * **Aktivieren**: Aktiviert die Verwendung der Authentifizierung für den Zugriff auf die Seite.
 
->[!NOTE]
->
->Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
+  >[!NOTE]
+  >
+  >Geschlossene Benutzergruppen (CUGs) für die Seite werden auf der Registerkarte **[Berechtigungen](#permissions)** definiert.
 
 * **Anmeldeseite** - Die für die Anmeldung zu verwendende Seite
+
+  >[!WARNING]
+  >
+  >Die angegebene Anmeldeseite **darf nicht** auf eine Seite verweisen, die selbst durch eine **Authentifizierungspflicht)** ist. Sie müssen sicherstellen, dass die Anmeldeseite eine öffentliche, ungeschützte Seite ist. Beispiel: eine dedizierte Seite wie `/content/<mysite>/en/login` ohne **Authentifizierungspflicht** aktiviert.
+  >
+  >Wenn auf der konfigurierten Anmeldeseite die Option **Aktivieren** aktiviert ist, kann die Authentifizierungspflicht auf dieser Seite beim Start unbeaufsichtigt entfernt werden, wodurch sie öffentlich zugänglich wird.
 
 ### Export {#export}
 
