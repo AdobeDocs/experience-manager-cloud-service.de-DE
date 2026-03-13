@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
+source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 73%
+source-wordcount: '3002'
+ht-degree: 69%
 
 ---
 
@@ -139,7 +139,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * **Alle Formatierungen entfernen**
    * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -156,7 +156,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -186,9 +186,15 @@ Je nach den Anforderungen Ihres Workflows können Sie das Inhaltsfragment im uni
 
    ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-add-component.png)
 
-1. Wählen Sie dann das Symbol „Hinzufügen“ im Bedienfeld „Eigenschaften“ aus.
+1. Sie haben dann folgende Möglichkeiten:
 
-   ![Auswählen des Symbols „Hinzufügen“](assets/add-icon.png)
+   * Wählen Sie das **Hinzufügen** im Bedienfeld „Eigenschaften“ aus.
+
+     ![Auswählen des Symbols „Hinzufügen“](assets/add-icon.png)
+
+   * Wählen Sie **Kontextmenü die** Hinzufügen“ aus.
+
+     ![Hinzufügen aus dem Kontextmenü](assets/add-from-context-menu.png)
 
 1. Das Dialogfeld für die Komponentenauswahl wird geöffnet.
    * Verwenden Sie die linke Spalte, um Komponenten nach Kategorie zu filtern, oder verwenden Sie die Suche, um nach Name zu filtern.
@@ -207,21 +213,28 @@ Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet we
 ### Duplizieren von Komponenten in Containern {#duplicating-components}
 
 1. Wählen Sie eine Komponente in einem Container mithilfe der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder des Editors aus.
-1. Wählen Sie dann das Symbol **Duplizieren** im Bedienfeld „Eigenschaften“ aus.
 
-   ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-duplicate-component.png)
-1. Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingefügt.
+1. Sie haben dann folgende Möglichkeiten:
 
-Die Komponente wird in den Container eingefügt und kann im Editor bearbeitet werden.
+   * Wählen Sie **Eigenschaftenbedienfeld das** „Duplizieren“ aus.
+
+     ![Auswählen einer Komponente zum Hinzufügen zu einem Container](assets/ue-duplicate-component.png)
+
+   * Wählen Sie die **Duplizieren** aus dem Kontextmenü aus.
+
+     ![Duplizieren aus dem Kontextmenü](assets/duplicate-from-context-menu.png)
+
+Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingefügt.
 
 ### Löschen von Komponenten aus Containern {#deleting-components}
 
-1. Wählen Sie eine Container-Komponente in der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
-1. Wählen Sie das Pfeilsymbol des Containers aus, um seinen Inhalt in der Inhaltsstruktur zu erweitern.
-1. Wählen Sie dann in der Inhaltsstruktur eine Komponente im Container aus.
-1. Wählen Sie das Löschsymbol im Bedienfeld „Eigenschaften“ aus.
+1. Wählen Sie eine Komponente in einem Container in der [Inhaltsstruktur](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) oder im Editor aus.
+1. Sie haben dann folgende Möglichkeiten:
+   * Wählen Sie **Eigenschaftenbedienfeld das** „Löschen“ aus.
 
-   ![Löschen einer Komponente](assets/ue-delete-component.png)
+     ![Löschen einer Komponente](assets/ue-delete-component.png)
+   * Wählen Sie **Kontextmenü die Option**Löschen“ aus.
+     ![Löschen aus dem Kontextmenü](assets/delete-from-context-menu.png)
 
 Die ausgewählte Komponente wird gelöscht.
 
@@ -252,7 +265,7 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
 #### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 
@@ -295,21 +308,23 @@ Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwische
 ![Symbol „Einfügen“](assets/paste.png)
 
 1. Wählen Sie eine Komponente entweder im Editor oder in der Inhaltsstruktur aus.
-1. Das Symbol **Kopieren** wird im Panel [„Eigenschaften“ angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tippen oder klicken Sie darauf.
-1. Das Symbol **Einfügen** wird im Panel „Eigenschaften“ angezeigt.
+1. Sie haben dann folgende Möglichkeiten:
+   * Klicken Sie auf **Kopieren**-Symbol im [Eigenschaftenbereich.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![Aus Bedienfeld kopieren](assets/copy-from-panel.png)
+   * Wählen Sie **Kontextmenü die Option**Kopieren“ aus.
+     ![Aus Kontextmenü kopieren](assets/copy-from-context-menu.png)
 1. Wählen Sie die Komponente aus, _nach_ der Sie die kopierte Komponente einfügen möchten.
-1. Tippen oder klicken Sie auf „Einfügen“.
-1. Die kopierte Komponente wird _nach_ der ausgewählten Komponente eingefügt.
+1. Sie haben dann folgende Möglichkeiten:
+   * Tippen oder klicken Sie **Einfügen** im Eigenschaftenbereich.
+     ![Aus Bedienfeld einfügen](assets/paste-from-panel.png)
+   * Wählen **im** „Einfügen“ aus.
+     ![Einfügen aus dem Kontextmenü](assets/paste-from-context-menu.png)
+
+Die kopierte Komponente wird _nach_ der ausgewählten Komponente eingefügt.
 
 >[!TIP]
 >
 >Verwenden Sie den Hotkey `Command-C` bzw. `Command-V` zum Kopieren bzw. Einfügen.
-
-## Kontextoptionen {#context-options}
-
-Beim Bearbeiten im Kontext bietet der Editor kontextbezogene Optionen mit einem Rechtsklick, z. B. das Duplizieren, Löschen oder Kopieren von Komponenten.
-
-![Kontextmenü](assets/context-options-menu.png)
 
 ## Vorschau von Inhalten {#previewing-content}
 

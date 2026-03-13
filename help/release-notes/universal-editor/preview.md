@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: fc73e3dd01d22ece3c2e2c55a5f62d04ee8564a9
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,13 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige Funktionen {#upcoming-features}
 
-* Eine Option zum Hinzufügen von Komponenten wurde im Kontextmenü hinzugefügt.
+* Die Elemente in der rechten Leiste können jetzt auf dem Startbildschirm reduziert werden.
+* Der Asset-Selektor unterstützt jetzt Filterdefinitionen.
+* Wenn für das ausgewählte Element keine Aktionen verfügbar sind, wird im Kontextmenü kein Pfeil mehr für den Zugriff auf Aktionen angezeigt.
+
+## Anstehende Verbesserungen {#upcoming-improvements}
+
+* Wenn eine Modell-/Filter-/Komponentendefinition vorhanden ist, wird sie beim Wechsel von einer App zu einer anderen im Editor erneut abgerufen.
+* Wenn Sie ein Bild entfernen, bleiben keine Bild-Tags mehr leer, wenn Sie DAM als Backend verwenden.
+* Klassen in Blöcken werden jetzt bei Verwendung von DA als Backend ordnungsgemäß verarbeitet.
+* Die Open API speichert jetzt Remote-Assets ordnungsgemäß als -Objekte.

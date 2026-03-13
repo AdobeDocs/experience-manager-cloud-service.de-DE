@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7114'
 ht-degree: 94%
 
 ---
@@ -257,6 +257,7 @@ ht-degree: 94%
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + [Vorschau von Versionshinweisen für den universellen Editor](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Versionshinweise für 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
          + [Versionshinweise für 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
          + [Versionshinweise für 2026.02.19](/help/release-notes/universal-editor/2026/2026-02-19.md)
          + [Versionshinweise für 2026.02.13](/help/release-notes/universal-editor/2026/2026-02-13.md)
@@ -1124,7 +1125,7 @@ ht-degree: 94%
             + [Erste Schritte mit AEM-Authoring-Projekten](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
             + [Modernisierungs-Konsole](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [Anleitung zur Eingabeaufforderung](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
-            + [AOE-Bereitstellungsmodell](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
+            + [AOE-Bereitstellung](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [Entwicklungsagent](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Inhaltsratgeber-Agent {#content-advisor}
          + [Überblick](/help/ai-in-aem/agents/content-advisor/overview.md)
@@ -1303,7 +1304,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
