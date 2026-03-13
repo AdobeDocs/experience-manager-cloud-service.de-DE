@@ -7,7 +7,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 2b8dc10dd3fbf3f38985f8cba376d8aa19184880
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
 source-wordcount: '2211'
 ht-degree: 96%
@@ -171,7 +171,7 @@ Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, wa
   >
   >Die angegebene Anmeldeseite **darf nicht** auf eine Seite verweisen, die selbst durch eine **Authentifizierungspflicht)** ist. Sie müssen sicherstellen, dass die Anmeldeseite eine öffentliche, ungeschützte Seite ist. Beispiel: eine dedizierte Seite wie `/content/<mysite>/en/login` ohne **Authentifizierungspflicht** aktiviert.
   >
-  >Wenn auf der konfigurierten Anmeldeseite die Option **Aktivieren** aktiviert ist, kann die Authentifizierungspflicht auf dieser Seite beim Start unbeaufsichtigt entfernt werden, wodurch sie öffentlich zugänglich wird.
+  >Wenn auf der konfigurierten Anmeldeseite die Option **Aktivieren** aktiviert ist, wird die Authentifizierungspflicht auf dieser Seite beim Start im Hintergrund entfernt, sodass sie öffentlich zugänglich ist.
 
 ### Export {#export}
 
