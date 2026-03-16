@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die betrieblichen Auswirkungen automatischer 
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
+source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -14,14 +14,14 @@ ht-degree: 0%
 # Ruhezeiten und Freie Zeiträume aktualisieren {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ &#x200B;](/help/implementing/deploying/aem-version-updates.md) sind.
+>Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ ](/help/implementing/deploying/aem-version-updates.md) sind.
 
 Die [automatischen Wartungs-Updates](/help/implementing/deploying/aem-version-updates.md) von AEM as a Cloud Service stellen sicher, dass Ihre Instanzen sicher sind und mit den neuesten Wartungsversionen auf dem neuesten Stand sind. In einigen Fällen (z. B. bei Go-Live-Ereignissen) müssen Sie diese kritischen Arbeitszeiten jedoch möglicherweise vor potenziellen Unterbrechungen „schützen“. Daher bietet AEM as a Cloud Service die Möglichkeit, einen Zeitrahmen festzulegen, in dem automatische Aktualisierungen für Ihre laufenden Programme nicht vorgenommen werden.
 
 Sie können diese Zeitrahmen mithilfe von zwei Planungsoptionen konfigurieren:
 
 * **Ruhige Stunden** - Sie können ein tägliches Zeitintervall (bis zu 8 Stunden) definieren, in dem keine Aktualisierungen erfolgen.
-* **Freie Zeiträume aktualisieren** - Sie können einen Zeitraum von 7 Tagen definieren, in dem keine Aktualisierungen erfolgen. Sie können innerhalb eines Zeitraums von 12 Monaten bis zu drei kostenlose Aktualisierungszeiträume haben.
+* **Freie Zeiträume aktualisieren** - Sie können einen Zeitraum von 7 Tagen definieren, in dem keine Aktualisierungen erfolgen. Sie können innerhalb eines unverankerten 365-Tage-Fensters bis zu drei kostenlose Aktualisierungszeiträume haben.
 
 Die Funktionen „Freie Zeiträume und Ruhezeiten aktualisieren“ werden „pro Programm“ konfiguriert. Denken Sie daran, dass nur Benutzer mit der „Benutzerrolle“ &quot;**Geschäftsinhaber** und **Bereitstellungs-Manager** diese Funktionen anzeigen und verwenden können.
 
