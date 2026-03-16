@@ -399,7 +399,7 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    >[!NOTE]
    >
-   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#54-set-the-nodejs-version-to-20).
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [&#x200B; die Node.js-Version auf 20](#54-set-the-nodejs-version-to-20).
 
 ##### 5.4 Legen Sie die Node.js-Version auf 20 fest.
 
