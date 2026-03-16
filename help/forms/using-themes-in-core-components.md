@@ -6,14 +6,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: d1e7f305c91f65ffe0bb043944310867e5947a02
 workflow-type: tm+mt
-source-wordcount: '3017'
-ht-degree: 91%
+source-wordcount: '3033'
+ht-degree: 90%
 
 ---
 
-# Verwenden von Designs zum Formatieren von auf Kernkomponenten basierenden adaptiven Formularen{#themes-for-af-using-core-components}
+# Verwenden von Designs zum Formatieren von auf Kernkomponenten basierenden adaptiven Formularen
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -54,7 +54,7 @@ Forms as a Cloud Service bietet die folgenden Designs zum Formatieren adaptiver 
 * [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
 
-Sie können [jedes dieser Designs anpassen, um ein neues Design zu erstellen](#customize-a-theme-core-components).
+Sie können [jedes dieser Designs anpassen, um ein neues Design zu erstellen](#customize-a-theme).
 
 >[!NOTE]
 >
@@ -62,11 +62,11 @@ Sie können [jedes dieser Designs anpassen, um ein neues Design zu erstellen](#c
 
 ![Workflow für die Design-Anpassung](/help/forms/assets/workflow-of-customization-of-theme.png)
 
-## Anpassen eines Designs {#customize-a-theme-core-components}
+## Anpassen eines Designs
 
 Das Anpassen eines Designs bezieht sich auf den Prozess des Änderns, Formatierens und Personalisierens des Erscheinungsbilds eines Designs. Wenn Sie ein Design anpassen, ändern Sie dessen Design-Elemente, Layout, Farben, Typografie und manchmal den zugrunde liegenden Code. Auf diese Weise können Sie ein einzigartiges und maßgeschneidertes Erscheinungsbild für Ihre Website oder Anwendung erstellen und dabei die grundlegende Struktur und Funktionalität des Designs beibehalten.
 
-### Voraussetzungen {#prerequisites-to-customize}
+### Voraussetzungen
 
 * Wenn Sie sich mit dem [Einrichten einer Pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline) vertraut machen und über grundlegende Kenntnisse zum Einrichten einer Pipeline verfügen, können Sie Ihre Design-Anpassungen effizient verwalten und bereitstellen.
 * Erfahren Sie, wie [Benutzende mit der Rolle „Mitwirkende“ konfiguriert werden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=de). Wenn Sie wissen, wie Sie Benutzende mit der Rolle „Mitwirkende“ konfigurieren, können Sie die erforderlichen Berechtigungen für die Design-Anpassung erteilen.
@@ -86,21 +86,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 Nachdem Sie die Voraussetzungen kennengelernt und die Entwicklungsumgebung konfiguriert haben, sind Sie nun gut darauf vorbereitet, Ihr Design an Ihre spezifischen Anforderungen anzupassen bzw. es entsprechend zu formatieren.
 
-### Anpassen eines Designs {#steps-to-customize-a-theme-core-components}
+### Anpassen eines Designs
 
 Das Anpassen eines Designs ist ein mehrstufiger Prozess. Um das Design anzupassen, führen Sie die Schritte in der angegebenen Reihenfolge aus:
 
-1. [Klonen eines Designs](#download-a-theme-core-components)
-1. [Festlegen des Namens eines Designs](#set-name-of-theme)
-1. [Anpassen eines Designs](#customize-the-theme)
-1. [Testen eines Designs](#test-the-theme)
-1. [Bereitstellen eines Designs](#deploy-the-theme)
+1. [Klonen eines Designs](#1-clone-a-theme)
+1. [Festlegen des Namens eines Designs](#2-set-name-of-a-theme)
+1. [Anpassen eines Designs](#3-customize-a-theme)
+1. [Testen eines Designs](#4-test-a-customized-theme)
+1. [Bereitstellen eines Designs](#5-deploy-a-theme)
 
 Die im Dokument bereitgestellten Beispiele basieren auf dem Design **Canvas**. Sie müssen aber beachten, dass Sie jedes Design klonen und es mit denselben Anweisungen anpassen können. Diese Anweisungen gelten für jedes Design, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
 
 Beginnen wir mit einem Prozess, um mithilfe von Designs ein Branding-Erlebnis für Ihre auf Kernkomponenten basierenden adaptiven Formulare zu erstellen.
 
-#### &#x200B;1. Klonen eines Designs {#download-a-theme-core-components}
+#### &#x200B;1. Klonen eines Designs
 
 Um ein Design für die auf Kernkomponenten basierenden adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs aus:
 
@@ -129,7 +129,7 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
    Nach Ausführung des Befehls verfügen Sie über eine lokale Kopie des Designs auf Ihrem Computer im Ordner `aem-forms-theme-canvas`.
 
 
-#### &#x200B;2. Festlegen des Namens eines Designs {#set-name-of-theme}
+#### &#x200B;2. Festlegen des Namens eines Designs
 
 >[!NOTE]
 >
@@ -177,15 +177,15 @@ Gehen Sie wie folgt vor, um ein Design zu klonen:
 * Es wird empfohlen, das Design `version` in den Dateien `Package.json` und `Package-lock.json` zu aktualisieren, damit für Ihr Design die im Laufe der Zeit durchgeführten Änderungen und Verbesserungen genau widergespiegelt werden.
 * Hinsichtlich wichtiger Informationen zur Verwendung, Installationsanweisungen und anderer relevanter Details wird empfohlen, den Namen des Designs in der `ReadMe`-Datei zu aktualisieren.
 
-#### &#x200B;3. Anpassen eines Designs {#customize-the-theme}
+#### &#x200B;3. Anpassen eines Designs
 
 Sie können einzelne Komponenten anpassen oder Änderungen auf Design-Ebene mithilfe globaler Variablen eines Designs vornehmen. Änderungen an globalen Variablen wirken sich auf alle einzelnen Komponenten aus. Sie können beispielsweise globale Variablen verwenden, um die Rahmenfarbe aller Komponenten eines adaptiven Formulars zu ändern und eine helle Füllfarbe für einen Aktionsaufruf (CTA) mithilfe der Schaltflächenkomponente festzulegen:
 
-* [Festlegen von Stilen auf Design-Ebene](#theme-customization-global-level)
+* [Festlegen von Stilen auf Design-Ebene](#set-theme-level-styles)
 
-* [Festlegen von Stilen auf Komponentenebene](#component-based-customization)
+* [Festlegen von Stilen auf Komponentenebene](#set-component-level-styles)
 
-##### Festlegen von Stilen auf Design-Ebene{#theme-customization-global-level}
+##### Festlegen von Stilen auf Design-Ebene
 
 Die Datei `variable.scss` enthält die globalen Variablen des Designs. Durch Aktualisieren dieser Variablen können Sie stilbezogene Änderungen auf Design-Ebene vornehmen. Gehen Sie wie folgt vor, um Stile der Design-Ebene anzuwenden:
 
@@ -197,7 +197,7 @@ Die Datei `variable.scss` enthält die globalen Variablen des Designs. Durch Akt
 
 Auf ähnliche Weise können Sie die Datei `variable.scss` verwenden, um Schriftfamilie und -typ, Design- und Schriftfarben, Schriftgröße, Design-Abstand, Fehlersymbol, Design-Rahmenstile und weitere Variablen festzulegen, die sich auf mehrere adaptive Formularkomponenten auswirken.
 
-##### Festlegen von Stilen auf Komponentenebene {#component-based-customization}
+##### Festlegen von Stilen auf Komponentenebene
 
 Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer bestimmten Kernkomponente eines adaptiven Formulars ändern. Beispiele: Schaltfläche, Kontrollkästchen, Container, Fußzeile usw. Sie können eine Schaltfläche oder ein Kontrollkästchen formatieren, indem Sie die CSS-Datei der jeweiligen Komponente bearbeiten und sie an den Stil Ihrer Organisation anpassen. So passen Sie einen Stil einer Komponente an:
 
@@ -219,14 +219,14 @@ Sie können auch Schriftart, Farbe, Größe und andere CSS-Eigenschaften einer b
    >
    > Wenn ein Stil sowohl auf Design- als auch auf Komponentenebene definiert ist, hat der auf Komponentenebene definierte Stil Priorität.
 
-#### &#x200B;4. Testen eines benutzerdefinierten Designs {#test-the-theme}
+#### &#x200B;4. Testen eines benutzerdefinierten Designs
 
 Um die Änderungen in der lokalen Umgebung in der Vorschau anzuzeigen und zu testen und das Design entsprechend den Anforderungen für verschiedene AEM-Komponenten anzupassen, führen Sie die folgenden Schritte aus:
 
-* 4.1 [Konfigurieren der lokalen Umgebung für Tests](#rename-env-file-theme-folder)
-* 4.2 [Testen des Designs anhand einer lokalen Umgebung](#start-a-local-proxy-server)
+* 4.1 [Konfigurieren der lokalen Umgebung für Tests](#41-configure-a-local-environment-for-testing)
+* 4.2 [Testen des Designs anhand einer lokalen Umgebung](#42-test-the-theme-using-a-local-environment)
 
-##### 4.1. Konfigurieren der lokalen Umgebung für Tests {#rename-env-file-theme-folder}
+##### 4.1. Konfigurieren der lokalen Umgebung für Tests
 
 1. Öffnen Sie das Design-Projekt in Ihrer IDE. Öffnen Sie beispielsweise den Ordner `aem-forms-theme-canvas` im Visual Studio Code-Editor.
 1. Benennen Sie im Design-Ordner die `env_template`-Datei in eine `.env`-Datei um und fügen Sie die folgenden Parameter hinzu:
@@ -251,7 +251,7 @@ Um die Änderungen in der lokalen Umgebung in der Vorschau anzuzeigen und zu tes
 
    ![Canvas-Design-Struktur](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2 Testen des Designs anhand einer lokalen Umgebung {#start-a-local-proxy-server}
+##### 4.2 Testen des Designs anhand einer lokalen Umgebung
 
 1. Navigieren Sie zum Stammverzeichnis des Design-Ordners. In diesem Fall lautet der Name des Design-Odners `aem-forms-theme-canvas`.
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal.
@@ -260,7 +260,7 @@ Um die Änderungen in der lokalen Umgebung in der Vorschau anzuzeigen und zu tes
 
    >[!NOTE]
    >
-   > Wenn während der Ausführung des Befehls `npm run live` ein Fehler auftritt, führen Sie die folgenden Befehle vor dem Befehl `npm run live` aus:
+   > Wenn während der Ausführung des `npm run live`-Befehls ein Fehler auftritt, führen Sie die folgenden Befehle vor `npm run live` Befehl aus:
    >
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
@@ -319,16 +319,17 @@ Sie können das Design auch für das adaptive Formular testen, das auf Ihrer AEM
 
 Sie können eine Vorschau des adaptiven Formulars mit den neuesten Änderungen anzeigen. Sobald Sie mit den Änderungen in einem Design-Ordner zufrieden sind, stellen Sie das Design mithilfe der Frontend-Pipeline in Ihrer AEM Cloud Service-Umgebung bereit.
 
-#### &#x200B;5. Bereitstellen eines Designs {#deploy-the-theme}
+#### &#x200B;5. Bereitstellen eines Designs
 
 So stellen Sie das Design mithilfe der Frontend-Pipeline in Ihrer Cloud Service-Umgebung bereit:
 
-* 5.1 [Erstellen eines Repositorys für das Design](#create-a-new-theme-repo)
-* 5.2 [Übertragen der Änderungen in das Repository](#committing-the-changes)
-* 5.3 [Legen Sie die Node.js-Version auf 20 fest](#53-set-the-nodejs-version-to-20-set-node)
-* 5.4. [Ausführen der Frontend-Pipeline](#run-a-frontend-pipeline)
+* 5.1 [Erstellen eines Repositorys für das Design](#51-create-a-repository-for-theme)
+* 5.2 [Übertragen der Änderungen in das Repository](#52-push-the-changes-to-the-repository)
+* 5.3 [Frontend-Pipeline hinzufügen](#53-add-the-frontend-pipeline)
+* 5.4 [Legen Sie die Node.js-Version auf 20 fest](#54-set-the-nodejs-version-to-20)
+* 5.5. [Ausführen der Frontend-Pipeline](#55-run-the-frontend-pipeline)
 
-##### 5.1 Erstellen eines Repositorys für das Design{#create-a-new-theme-repo}
+##### 5.1 Erstellen eines Repositorys für das Design
 
 Sie benötigen ein Repository, um das Design bereitzustellen. Melden Sie sich bei Ihrem [AEM Cloud Manager-Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git) an und fügen Sie ein neues Repository für Ihr Design hinzu.
 
@@ -352,7 +353,7 @@ Sie benötigen ein Repository, um das Design bereitzustellen. Melden Sie sich be
    >* Um verschiedene Designs bereitzustellen, müssen Sie separate Frontend-Pipelines erstellen.
    >* Sie können beispielsweise dasselbe Repository, z. B. `custom-canvas-theme-repo`, für das Canvas-Design, das WKND-Design und das EASEL-Design verwenden. Um die Designs bereitzustellen, müssen Sie jedoch separate Frontend-Pipelines erstellen. Zukünftige Anpassungen für ein bestimmtes Design werden mithilfe der entsprechenden Frontend-Pipeline bereitgestellt.
 
-##### 5.2. Übertragen von Änderungen in das Repository {#committing-the-changes}
+##### 5.2. Übertragen von Änderungen in das Repository
 
 Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-Service übertragen.
 
@@ -378,23 +379,7 @@ Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-S
 
    ![Vorgenommene Änderungen](/help/forms/assets/cmd_git_push.png)
 
-##### 5.3 Legen Sie die Node.js-Version auf 20 fest {#set-node}
-
-So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest:
-
-1. Gehen Sie zum **Pipelines** und suchen Sie Ihre Frontend-Pipeline.
-2. Klicken Sie rechts in der Pipeline auf das Dreipunkt-Menü **⋯** und wählen Sie aus der Dropdown-Liste **Variablen anzeigen/bearbeiten**.
-3. Füllen Sie **Dialogfeld** Variablenkonfiguration“ die Felder wie folgt aus:
-   * **NAME** - NODE_VERSION
-   * **WERT** - 20
-   * **SCHRITT ANGEWENDET** - Build
-   * **TYPE** - Variable
-4. Klicken Sie auf **Speichern**, um die Konfiguration anzuwenden.
-
-![Pipeline-Konfiguration](/help/forms/assets/pipeline-config.png)
-
-
-##### 5.4. Ausführen der Frontend-Pipeline {#run-a-frontend-pipeline}
+##### 5.3 Hinzufügen der Frontend-Pipeline
 
 Das Design wird mithilfe der [Frontend-Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=de) bereitgestellt. Um das Design bereitzustellen, führen Sie die folgenden Schritte aus:
 
@@ -414,12 +399,30 @@ unter **[!UICONTROL Quell-Code]** aus.
 
    >[!NOTE]
    >
-   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [&#x200B; die Node.js-Version auf 20](#set-the-nodejs-vesrion-to-20).
+   > Um sicherzustellen, dass Ihre Frontend-Pipeline in Cloud Manager nicht fehlschlägt, setzen [ die Node.js-Version auf 20](#54-set-the-nodejs-version-to-20).
 
-1. Klicken Sie mit der rechten Maustaste auf die erstellte Pipeline.
+##### 5.4 Legen Sie die Node.js-Version auf 20 fest.
+
+So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest:
+
+1. Gehen Sie zum **Pipelines** und suchen Sie Ihre Frontend-Pipeline.
+2. Klicken Sie rechts in der Pipeline auf das Dreipunkt-Menü **⋯** und wählen Sie aus der Dropdown-Liste **Variablen anzeigen/bearbeiten**.
+3. Füllen Sie **Dialogfeld** Variablenkonfiguration“ die Felder wie folgt aus:
+   * **NAME** - NODE_VERSION
+   * **WERT** - 20
+   * **SCHRITT ANGEWENDET** - Build
+   * **TYPE** - Variable
+4. Klicken Sie auf **Speichern**, um die Konfiguration anzuwenden.
+
+![Pipeline-Konfiguration](/help/forms/assets/pipeline-config.png)
+
+
+##### 5.5. Ausführen der Frontend-Pipeline
+
+1. Gehen Sie zum **Pipelines** und suchen Sie Ihre Frontend-Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .
 
-   ![run-a-pipeline](/help/forms/assets/canvas-theme-run-pipeline.png)
+   ![Run-a-pipeline](/help/forms/assets/canvas-theme-run-pipeline.png)
 
 Sobald die Erstellung abgeschlossen ist, steht das Design in der Autoreninstanz zur Verwendung zur Verfügung. Es wird unter der Registerkarte **[!UICONTROL Stil]** im Assistenten zur Erstellung adaptiver Formulare beim Erstellen eines adaptiven Formulars angezeigt.
 
@@ -427,7 +430,7 @@ Sobald die Erstellung abgeschlossen ist, steht das Design in der Autoreninstanz 
 
 Das angepasste Design hilft beim Erstellen eines Markenerlebnisses für auf Kernkomponenten basierende adaptive Formulare.
 
-## Anwenden eines Designs auf ein adaptives Formular {#using-theme-in-adaptive-form}
+## Anwenden eines Designs auf ein adaptives Formular
 
 Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
@@ -443,7 +446,7 @@ Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
 Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Formulare verwendet, um beim Erstellen eines adaptiven Formulars Stile zu definieren.
 
-## Best Practices {#best-practices}
+## Best Practices
 
 * **Vermeiden von Assets aus einem anderen Design**
 
@@ -455,7 +458,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 
   Es wird nicht empfohlen, die Layout-Breite des Container-Bereichs zu ändern. Wenn Sie die Breite eines Container-Bereichs angeben, wird er statisch und passt sich nicht mehr an unterschiedliche Displays an.
 
-## Häufig gestellte Fragen {#faq}
+## Häufig gestellte Fragen
 
 **Frage:** Welche Anpassung hat Vorrang, wenn Anpassungen in einem Design-Ordner sowohl auf der globalen Ebene als auch auf der Komponentenebene vorgenommen werden?
 
@@ -463,7 +466,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 
 
 
-## Siehe auch {#see-also}
+## Siehe auch
 
 {{see-also}}
 
