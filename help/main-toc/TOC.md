@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
+source-git-commit: 79011514e523b6b3ab7964172fd56773eba699c4
 workflow-type: tm+mt
-source-wordcount: '7114'
+source-wordcount: '7117'
 ht-degree: 94%
 
 ---
@@ -709,6 +709,7 @@ ht-degree: 94%
       + [Sets für gemischte Medien](/help/assets/dynamic-media/mixed-media-sets.md)
       + [Rotations-Sets](/help/assets/dynamic-media/spin-sets.md)
       + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
+      + [Neuer Video-Viewer](/help/assets/dynamic-media/new-video-viewer.md)
       + [Karussellbanner](/help/assets/dynamic-media/carousel-banners.md)
       + [Interaktive Bilder](/help/assets/dynamic-media/interactive-images.md)
       + [Interaktive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -1304,7 +1305,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

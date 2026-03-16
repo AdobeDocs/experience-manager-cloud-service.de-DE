@@ -3,7 +3,7 @@ title: Neuer Video-Viewer
 description: Der neue Video-Viewer in Dynamic Media bietet ein verbessertes Videowiedergabeerlebnis
 role: User
 exl-id: null
-source-git-commit: 0a9d4ef72a6bc5037f87c22915bc75312bbd52d7
+source-git-commit: 8dd1771f667666883ef5fc727efea1e0ea9a3d95
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Der neue Video Viewer ist für Unternehmen gedacht, die ein verbessertes und erw
 
 > **HINWEIS**
 >
-> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 
 ## Funktionsweise des neuen Video-Viewers {#how-it-works}
@@ -98,10 +98,10 @@ Führen Sie die folgenden Schritte aus, um ein Video mithilfe der Dynamic Media-
 Führen Sie die folgenden Schritte aus, um die Viewer-Vorgabe zu konfigurieren:
 
 1. Wählen Sie die **Dynamic Media** auf der Seite aus.
-2. Klicken Sie **der Komponenten**&#x200B;Symbolleiste auf „Konfigurieren“.
+2. Klicken Sie **der Komponenten**Symbolleiste auf „Konfigurieren“.
    ![Dynamic Media-Einstellungen öffnen](assets/configure-asset.png)
 
-3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**&#x200B;Vorgabe .
+3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**Vorgabe .
    ![Viewer-Vorgabe „Video auswählen (neu)“](assets/viewer-preset.jpeg)
 
 4. Geben Sie alle erforderlichen Modifikatoren in das Feld **Viewer** ein (z. B. `autoplay=true&muted=true`).
@@ -167,7 +167,7 @@ Der neue Video-Viewer sendet während Videointeraktionen wiedergabebezogene Nach
 
 Um diese Ereignisse zu verarbeiten, muss die übergeordnete Anwendung auf Browser-Nachrichtenereignisse warten und den Nachrichtenursprung validieren, bevor die Daten verarbeitet werden.
 
-Die Ereignis-Payload enthält Informationen wie den Ereignistyp, den Wiedergabestatus, die aktuelle Wiedergabedauer und zusätzliche Metadaten. Diese Ereignisse können zur Unterstützung von Analytics-Tracking, benutzerdefinierten Interaktionen oder der Integration mit externen Systemen verwendet werden
+Die Ereignis-Payload enthält Informationen wie den Ereignistyp, den Wiedergabestatus, die aktuelle Wiedergabedauer und zusätzliche Metadaten. Diese Ereignisse können verwendet werden, um das Analytics-Tracking, benutzerdefinierte Interaktionen oder die Integration mit externen Systemen zu unterstützen.
 
 Adobe empfiehlt, den Nachrichtenursprung zu validieren, um sicherzustellen, dass Ereignisse nur von vertrauenswürdigen Dynamic Media-Domains verarbeitet werden.
 
