@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über einige der kürzlich eingeführten Content 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 621ae9a93ee8bd7d5f1b35387d4022072bfc46c6
+source-git-commit: 6aeab06b4dc48249e69dd265eefb99db9d45d6c3
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '964'
 ht-degree: 74%
 
 ---
@@ -35,7 +35,7 @@ In Content Hub stellt der AEM Governance Agent sicher, dass nur die richtigen Pe
 
 ![Übersicht über die Berechtigungsverwaltung](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funktionen der Oktober-Version {#october-release-features}
@@ -56,11 +56,7 @@ Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Org
 
 Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
-
->[!IMPORTANT]
->
->Diese Funktionen sind als Funktionen mit begrenzter Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funktionen der August-Version {#august-release-features}
 
