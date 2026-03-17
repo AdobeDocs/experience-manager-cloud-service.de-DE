@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Content Discovery Agent relevante AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '2066'
 ht-degree: 1%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # Content Discovery Agent {#discovery-agent}
 
-Als Teil des AEM [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) stellt der Content Discovery Agent AEM-Inhalte nach Bedarf über natürliche, konversative Eingabeaufforderungen für ein optimiertes, klick- und kostenloses Discovery-Erlebnis bereit. Es durchsucht intelligent Assets, Inhaltsfragmente und adaptives Forms, um relevante Materialien wie Bilder, Videos, PDF-Dokumente, Artikel und Formularvorlagen bereitzustellen. Mit natürlicher Sprache können Sie auf der AEM Assets-Benutzeroberfläche nach Inhalten suchen, ohne komplexe Abfragen zu erstellen oder Filter anzuwenden. Basierend auf Ihrer Eingabeaufforderung gibt der Agent kuratierte Ergebnisse zusammen mit Asset-Metadaten und Bereitstellungs-URLs zurück, die in andere Programme eingebettet werden können.
+Als Teil des AEM [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) stellt der Content Discovery Agent AEM-Inhalte nach Bedarf über natürliche, konversative Eingabeaufforderungen für ein optimiertes, klick- und kostenloses Discovery-Erlebnis bereit. Es durchsucht intelligent Assets, Inhaltsfragmente, AEM Sites-Seiten und adaptives Forms, um relevante Materialien wie Bilder, Videos, PDF-Dokumente, Artikel und Formularvorlagen bereitzustellen. Mit natürlicher Sprache können Sie auf der AEM Assets-Benutzeroberfläche nach Inhalten suchen, ohne komplexe Abfragen zu erstellen oder Filter anzuwenden. Basierend auf Ihrer Eingabeaufforderung gibt der Agent kuratierte Ergebnisse zusammen mit Asset-Metadaten und Bereitstellungs-URLs zurück, die in andere Programme eingebettet werden können.
 
 Zu den wichtigsten Vorteilen des Content Discovery Agent gehören:
 
-* **Einheitliche Inhaltserkennung**: Greifen Sie auf alle Arten von AEM-Inhalten wie Bilder, Videos, PDF-Dokumente, Artikel und Formulare über eine einzige Gesprächsoberfläche zu.
+* **Einheitliche Inhaltserkennung**: Greifen Sie auf alle Arten von AEM-Inhalten wie Bilder, Videos, PDF-Dokumente, Artikel, Seiten und Formulare über eine einzige Gesprächsoberfläche zu.
 
 * **Schnellere Kampagnenplanung**: Schnelle Erfassung von Visualisierungen und Formularen für Marketing-Kampagnen auf E-Mails, im Web und in sozialen Kanälen.
 
@@ -38,12 +38,15 @@ Zu den wichtigsten Vorteilen des Content Discovery Agent gehören:
 
 Der Content Discovery Agent bietet die folgenden Fähigkeiten:
 
-* **Inhaltssuche für natürliche Sprachen**\
-  Der Content Discovery Agent ermöglicht es Benutzenden, relevante Assets, Inhaltsfragmente und adaptive Formulare in Adobe Experience Manager (AEM) mithilfe einfacher natürlicher Sprachaufforderungen zu finden, ohne dass komplexe Suchabfragen erforderlich sind.
+* **Inhaltssuche für natürliche Sprachen**
 
-* **Tag-basierte Asset-Erkennung**
+  Der Content Discovery Agent ermöglicht es Benutzenden, relevante Assets, Inhaltsfragmente, adaptive Formulare und AEM Sites-Seiten innerhalb von Adobe Experience Manager (AEM) mithilfe einfacher natürlicher Sprachaufforderungen zu finden, ohne dass komplexe Suchabfragen erforderlich sind.
 
-  Der Content Discovery Agent verwendet natürliche Sprachaufforderungen, um Assets zu finden, die mit bestimmten Tags im AEM-Repository verknüpft sind, sodass Benutzende schnell auf Inhalte zugreifen können, die gemäß der Taxonomie des Unternehmens organisiert oder nicht organisiert sind.
+* **Metadatenbasierte Asset-Erkennung**
+
+  Der Content Discovery Agent sucht anhand von Metadaten, die für Assets in AEM verfügbar sind, anhand von Eingabeaufforderungen in natürlicher Sprache. Benutzer können Assets mithilfe von Metadaten wie Tags, Autoren- oder Herausgeber-E-Mail-IDs, Veröffentlichungs- oder Änderungsdaten, MIME-Typ, Asset-Typ, Status, benutzerdefinierten Metadateneigenschaften, die in Metadatenformularen in der Assets- oder Admin-Ansicht definiert sind, usw. ermitteln. Siehe [Häufige Anwendungsfälle und Beispielaufforderungen](#use-cases-prompts) für eine vollständige Liste.
+
+  Sie können auch mehrere Metadatenfilter in einer einzigen Eingabeaufforderung kombinieren, um die Suchergebnisse zu verfeinern.
 
 * **Ordnerbasierte Inhaltserkennung:**\
   Der Content Discovery Agent kann Assets identifizieren, indem er Eingabeaufforderungen in natürlicher Sprache interpretiert, die auf Ordnernamen in AEM verweisen. Benutzer können den Ordner einfach in ihrer Eingabeaufforderung erwähnen, ohne manuell durch das Repository zu navigieren, was die Anzahl der Klicks, die zum Auffinden des richtigen Inhalts erforderlich sind, erheblich reduziert.
@@ -78,13 +81,30 @@ Informationen zum MCP-Endpunkt für den Zugriff auf den Content Discovery Agent 
 
 ### Assets {#discovery-agent-use-cases-assets}
 
-**Tag-basierte Asset-Erkennung**
+**Metadatenbasierte Asset-Erkennung**
 
-Der Content Discovery Agent verwendet natürliche Sprachaufforderungen, um Assets zu finden, die mit bestimmten Tags im AEM-Repository verknüpft sind, sodass Benutzende schnell auf Inhalte zugreifen können, die gemäß der Taxonomie ihres Unternehmens organisiert sind.
+Der Content Discovery Agent sucht anhand von Metadaten, die für Assets in AEM verfügbar sind, anhand von Eingabeaufforderungen in natürlicher Sprache. Benutzer können Assets mithilfe der folgenden Metadateneigenschaften ermitteln: Tags, Erstellt nach E-Mail-ID, Geändert nach E-Mail-ID, Veröffentlicht nach E-Mail-ID, Erstellungsdatum, Änderungsdatum, Veröffentlichungsdatum, MIME-Typ, Asset-Typ, Status, Dateiformat, Dateigröße, Bildbreite, Bildhöhe und mehrere Metadatenfilter innerhalb einer einzigen Eingabeaufforderung.
 
-Eingabeaufforderung für Beispiel:
+Der Content Discovery Agent durchsucht auch die benutzerdefinierten Eigenschaften, die in Metadatenschemata für die Admin-Ansicht und in Metadatenformularen für die Assets-Ansicht verfügbar sind. Sie können Ihre Eingabeaufforderungen entsprechend den Suchwerten ändern, die in diesen benutzerdefinierten Asset-Eigenschaften verfügbar sind.
 
-Bilder mit Tags `office` Ordner `WKND` anzeigen.
+>[!NOTE]
+>
+>Um die Erkennungsleistung zu verbessern, indizieren Sie relevante benutzerdefinierte Metadateneigenschaften. Indizierte Eigenschaften ermöglichen es dem Agenten, übereinstimmende Inhalte schneller abzurufen, wenn Benutzer diese Eigenschaften in ihre Eingabeaufforderungen einschließen.
+
+
+Eingabeaufforderungen im Beispiel:
+
+* **Suche basierend auf Tags**: Zeigt Bilder mit Tags `office` Ordner `WKND` an.
+* **Suche basierend auf Dateiformat, Asset-Typ, Asset-Status und „Veröffentlicht per E-Mail-ID**: Zeigt Bilder im `.PNG`-Format an, die `approved` und `published by <user email ID>` sind.
+* **Suche basierend auf Dateiformat, Asset-Typ, Asset-Status und Erstellt per E-Mail-ID**: Zeigt Videos im `.mp4` Format an, die genehmigt und `created by <user email ID>` wurden.
+* **Suche basierend auf Dateiformat, Asset-Typ, Asset-Status und Erstellungsdatum**: Zeigt Bilder im `.PNG` an, die nach dem 1. Januar 2025 und `published by <user email ID>` erstellt wurden
+* **Suche basierend auf MIME-Typ, Erstellungsdatum und Veröffentlicht durch E-Mail-ID**: `image/jpeg` anzeigen, die nach `January 1, 2025` und `published by <user email ID>` erstellt wurden.
+* **Suche basierend auf Dateiformat und benutzerdefinierten Metadateneigenschaften**: Zeigt Bilder im `.JPEG` Format an, die `Product SKU ID as <SKU value>` haben.
+
+* **Nach Assets mit fehlenden Metadaten suchen**: „Assets anzeigen, die in den letzten 90 Tagen erstellt wurden, mit `<Name of metadata property including custom properties>` ist leer“.
+
+* **Suche nach Assets mithilfe von Dateigröße, Bildbreite und Bildhöhe**: Zeigt Bilder an, die größer als 5 MB sind, eine Breite von mehr als 2.000 Pixel und eine Höhe von mehr als 1.200 Pixel haben.
+
 
 **Ordnerbasierte Inhaltserkennung:**\
 Der Content Discovery Agent kann Assets identifizieren, indem er Eingabeaufforderungen in natürlicher Sprache interpretiert, die auf Ordnernamen in AEM verweisen. Benutzer können den Ordner einfach in ihrer Eingabeaufforderung erwähnen, ohne manuell durch das Repository zu navigieren, was die Anzahl der Klicks, die zum Auffinden des richtigen Inhalts erforderlich sind, erheblich reduziert.
@@ -94,6 +114,18 @@ Eingabeaufforderungen im Beispiel:
 * Gibt es SVGs im Ordner `WKND`?
 * Anzeigen von Assets, die nach dem `Nov 1 2025` in Ordner `WKND` geändert wurden.
 * Auflisten `lifestyle` Bilder im Ordner `WKND`.
+
+**Zusätzliche Fragen zur Aktivierung der ordnerbasierten Inhaltssuche**
+
+Wenn ein Ordnername in einer Eingabeaufforderung enthalten ist (ohne den vollständigen Asset-Pfad), prüft der Content Discovery-Agent zunächst im Stammpfad `/content/dam/<folder-name>`, ob ein übereinstimmender Ordner vorhanden ist.
+
+Wenn auf der Stammebene kein übereinstimmender Ordner gefunden wird, schlägt der Agent alternative Ordnerpfade vor, bei denen der angegebene Ordnername im Repository vorhanden ist. Dies hilft Benutzenden, den richtigen Speicherort schnell zu identifizieren, ohne die Ordnerstruktur manuell zu durchsuchen.
+
+Beispielsweise wurde der Pfad `/content/dam/<folder-name>` nicht gefunden. Meintest du eine davon?
+
+* Option 1
+
+* Option 2
 
 **Formatbasierte Asset-Erkennung**
 
@@ -111,6 +143,34 @@ Eingabeaufforderung für Beispiel:
 
 Assets mit Person in Querformat anzeigen.
 
+**Suchergebnisse erweitern**
+
+Der Content Discovery Agent gibt für eine Eingabeaufforderung die 20 relevantesten Ergebnisse pro Inhaltstyp zurück. Wenn zusätzliche übereinstimmende Ergebnisse verfügbar sind, können Benutzer den nächsten Satz anfordern, indem sie eine Folgenachricht eingeben, z. B. `show me more`. Der Agent ruft dann den nächsten Ergebnissatz aus der ursprünglichen Suche ab, sodass Benutzende nach und nach größere Ergebnissätze durchsuchen können, ohne die Eingabeaufforderung zu verfeinern.
+
+**Suchen ähnlicher Assets**
+
+Mit dem Content Discovery Agent können Benutzer Assets finden, die einem bestimmten in den Suchergebnissen zurückgegebenen Ergebnis ähneln. Nachdem der Agent die wichtigsten Ergebnisse für eine Eingabeaufforderung angezeigt hat, können Sie ähnliche Assets anfordern, indem Sie auf die Position eines Elements in der Ergebnisliste verweisen. Beispielsweise wird der Agent durch eine Eingabeaufforderung wie `find assets similar to the 3rd result` angewiesen, andere relevante Assets im Zusammenhang mit diesem Element zu identifizieren und zurückzugeben. Dies hilft Benutzenden, verwandte Inhalte schnell zu finden, ohne eine neue Suchaufforderung zu erstellen.
+
+**Sortieren von Suchergebnissen**
+
+Mit dem Content Discovery Agent können Benutzer Suchergebnisse direkt innerhalb ihrer Eingabeaufforderungen in natürlicher Sprache sortieren. Benutzer können Sortierkriterien wie Änderungsdatum, Erstellungsdatum oder Asset-Name angeben und auf- oder absteigende Reihenfolge wählen.
+
+Eingabeaufforderungen im Beispiel:
+
+* Ermitteln Sie Berg-Bilder, sortiert nach Änderungsdatum in absteigender Reihenfolge (zeigt zuerst die zuletzt geänderten Assets an).
+
+* Bergbilder sortiert nach Namen in aufsteigender Reihenfolge anzeigen (zeigt die Bildnamen beginnend mit dem Buchstaben A, gefolgt von B usw.).
+
+### AEM Sites-Seiten {#content-discovery-agent-aem-sites-pages}
+
+Der Content Discovery Agent hilft Benutzenden, relevante AEM Sites-Seiten schnell zu finden, indem er die Eingabeaufforderungen in natürlicher Sprache interpretiert, die auf Seitenthemen, Kampagnen oder andere kontextuelle Schlüsselwörter verweisen. Der Agent führt eine Volltextsuche anhand der Keywords in der Eingabeaufforderung durch, um übereinstimmende Seiten im AEM-Repository zu identifizieren, sodass Sie die Sites-Struktur nicht manuell durchsuchen müssen.
+
+Eingabeaufforderungen für Beispiel:
+
+* Suchen Sie alle AEM Sites-Seiten für die Sommerkampagne.
+
+* Suchen nach AEM Sites-Seiten mit einem Kaffee-Design.
+
 ### Inhaltsfragmente {#discovery-agent-use-cases-content-fragments}
 
 Der Content Discovery Agent hilft Benutzenden, schnell die richtigen Inhaltsfragmente zu finden, indem er natürliche Sprachverweise auf Kampagnennamen, Produktmarken, den Veröffentlichungsstatus und die aktuelle Erstellungsaktivität interpretiert. Damit können Teams kampagnenbereite Fragmente aufdecken und markenspezifische Inhalte anzeigen, ohne manuell durch Ordner zu navigieren oder mehrere Filter in AEM anzuwenden.
@@ -127,7 +187,7 @@ Eingabeaufforderungen im Beispiel:
 
 ### Forms {#discovery-agent-use-cases-forms}
 
-Der Content Discovery Agent hilft Ihnen, adaptive Formulare mithilfe natürlicher Eingabeaufforderungen schnell zu finden. Sie durchsucht den Formularinhalt und die Metadaten, um Übereinstimmungen auf der Grundlage von Schlüsselwörtern in Ihren Eingabeaufforderungen zu finden. Das bedeutet, dass Sie relevante Formulare erfolgreich finden können, auch wenn Ihre Suchbegriffe nicht im Titel oder in der Beschreibung des Formulars enthalten sind.
+Der Content Discovery Agent hilft Ihnen, adaptive Formulare mithilfe von Eingabeaufforderungen in natürlicher Sprache schnell zu finden. Sie durchsucht den Formularinhalt und die Metadaten, um Übereinstimmungen auf der Grundlage von Schlüsselwörtern in Ihren Eingabeaufforderungen zu finden. Das bedeutet, dass Sie relevante Formulare erfolgreich finden können, auch wenn Ihre Suchbegriffe nicht im Titel oder in der Beschreibung des Formulars enthalten sind.
 
 Eingabeaufforderungen im Beispiel:
 
@@ -155,7 +215,7 @@ Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asse
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 
@@ -175,4 +235,8 @@ Geben Sie in Ihren Eingabeaufforderungen in natürlicher Sprache präzise Detail
 
 ## Einschränkungen {#limitations-discovery-agent}
 
-Der Content Discovery Agent unterstützt nur dimensionsbasierte Eingabeaufforderungen für die Formattypen „Bild“ und &quot;SVG&quot;. Beispiel: `Find images wider than 1080px`.
+* Der Content Discovery Agent unterstützt nur dimensionsbasierte Eingabeaufforderungen für die Formattypen „Bild“ und &quot;SVG&quot;. Beispiel: `Find images wider than 1080px`.
+
+* Content Hub-Administratoren können über das Content Hub-Portal auf den Content Discovery Agent zugreifen. Die Ergebnisse werden jedoch nur von der AEM-Autoreninstanz abgerufen. Benutzende mit Content Hub Limited können derzeit nicht von den Vorteilen des Content Discovery Agent profitieren (in Kürze verfügbar).
+
+* Die Funktion „Ähnliche suchen“ funktioniert nur für Bilder mit [Smart-Tags-Verbesserungen](/help/assets/ai-generated-metadata-assets-view.md).
