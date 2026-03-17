@@ -1,14 +1,13 @@
 ---
 title: Neuer Video-Viewer
-description: Der neue Video-Viewer in Dynamic Media bietet ein verbessertes Videowiedergabeerlebnis mit verbesserter Leistung, Barrierefreiheit und Konfigurierbarkeit.
+description: Der neue Video-Viewer in Dynamic Media bietet ein verbessertes Videowiedergabeerlebnis
 role: User
-source-git-commit: f069e2cfaaa3c82a1d2391403b23f1ccf1ec2866
+source-git-commit: 1ee4f1352a0fe1e8d1f2fd7b79555ad4144bb02c
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1443'
 ht-degree: 2%
 
 ---
-
 
 # Neuer Video-Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
@@ -29,7 +28,7 @@ Der neue Video Viewer ist für Unternehmen gedacht, die ein verbessertes und erw
 
 > **HINWEIS**
 >
-> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 
 ## Funktionsweise des neuen Video-Viewers {#how-it-works}
@@ -74,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um den neuen Video-Viewer auf der Seite 
 3. Klicken Sie im linken Bedienfeld auf **Viewer**.
 4. Wählen Sie im **Viewer**-Bedienfeld **Video (neu)** aus.
 5. Klicken Sie auf **URL**, um den Vorschau-Link zu kopieren.
-   ![URL kopieren](/help/assets/assets/Copy-url1.jpg)
+   ![URL kopieren](assets/Copy-url1.jpg)
 
 ## Verwenden des neuen Video-Viewers in Sites {#use-in-sites}
 
@@ -90,21 +89,21 @@ Führen Sie die folgenden Schritte aus, um ein Video mithilfe der Dynamic Media-
 4. Klicken Sie auf die Komponente, um den Asset-Wähler zu öffnen.
 5. Wählen Sie ein Video-Asset.
 
-![Ziehen Sie die Dynamic Media-Komponente](/help/assets/assets/drag-component.jpeg)
+![Ziehen Sie die Dynamic Media-Komponente](assets/drag-component.jpeg)
 
 ### Viewer konfigurieren
 
 Führen Sie die folgenden Schritte aus, um die Viewer-Vorgabe zu konfigurieren:
 
 1. Wählen Sie die **Dynamic Media** auf der Seite aus.
-2. Klicken Sie **der Komponenten**&#x200B;Symbolleiste auf „Konfigurieren“.
-   ![Dynamic Media-Einstellungen öffnen](/help/assets/assets/configure-asset.png)
+2. Klicken Sie **der Komponenten**Symbolleiste auf „Konfigurieren“.
+   ![Dynamic Media-Einstellungen öffnen](assets/configure-asset.png)
 
-3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**&#x200B;Vorgabe .
-   ![Viewer-Vorgabe „Video auswählen (neu)“](/help/assets/assets/viewer-preset.jpeg)
+3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**Vorgabe .
+   ![Viewer-Vorgabe „Video auswählen (neu)“](assets/viewer-preset.jpeg)
 
 4. Geben Sie alle erforderlichen Modifikatoren in das Feld **Viewer** ein (z. B. `autoplay=true&muted=true`).
-   ![Viewer-Modifikatoren](/help/assets/assets/additional-modifiers.jpeg)
+   ![Viewer-Modifikatoren](assets/additional-modifiers.jpeg)
 
 5. Speichern Sie die Änderungen.
 
