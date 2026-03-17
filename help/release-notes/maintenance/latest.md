@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 2a7b83b99547637e02ec7cef9c92c5dd794a9adc
+source-git-commit: b83d8736d47778ed133e0cc07207e02e581bbc69
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 36%
 
 ---
@@ -29,7 +29,7 @@ Die Funktionsaktivierung von 2026.3.0 bietet den vollen Funktionsumfang für die
 * GRANITE-57035: Verwenden Sie Bouncy Castle als standardmäßigen Sicherheitsanbieter.
 * GRANITE-59249: Vermeiden Sie es, einen Sicherheitsanbieter in JVM zu registrieren.
 * GRANITE-61564: Anzeigeeinstellungen für `/security/users.html` können nicht für Administratoren geöffnet werden.
-* GRANITE-64748: OIDC: konfigurierbares sling.oauth-request-key Cookie-Ablaufdatum.
+* GRANITE-64748: OIDC: konfigurierbar `sling.oauth-request-key` Ablauf von Cookies.
 * SITES-39767: Unterstützt den Nonce-Wert über das Anforderungsattribut (CSP).
 * SKYOPS-129301: Setzen Sie die JavaDoc-Konformitätsstufe der APIs auf 17.
 * GRANITE-64962: Aktualisieren Sie Apache Jackrabbit Oak auf 1.92.0.
