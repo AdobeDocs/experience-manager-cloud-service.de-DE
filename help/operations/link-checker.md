@@ -70,7 +70,7 @@ Der Prüfer für externe Links ist auf eine Reihe von Diensten angewiesen. Wenn 
 1. Wenn eine Inhaltsautorin oder ein Inhaltsautor einen Link zu einer Seite speichert, wird ein Ereignis-Handler ausgelöst.
 1. Der Ereignis-Handler durchläuft alle Inhalte unter `/content` und sucht nach neuen oder aktualisierten Links und fügt sie einem Cache für den Link-Prüfer hinzu.
 1. Der **Adobe AEM Link Checker Service** wird dann nach einem regulären Zeitplan ausgeführt, um die Einträge im Cache auf gültige Syntax zu überprüfen.
-1. Die durch die Syntax validierten Links erscheinen dann im Fenster [Prüfer für externe Links. ](#external-using) Sie befinden sich jedoch im Status **Ausstehend**.
+1. Die durch die Syntax validierten Links erscheinen dann im Fenster [Prüfer für externe Links. &#x200B;](#external-using) Sie befinden sich jedoch im Status **Ausstehend**.
 1. Die **Adobe AEM Link Checker Task** wird dann regelmäßig ausgeführt, um die Links durch einen GET-Aufruf zu validieren.
 1. Die **Adobe AEM Link Checker Task** aktualisiert dann die Einträge im Fenster [Externer-Link-Checker](#external-using) mit den Ergebnissen der GET-Aufrufe.
 
