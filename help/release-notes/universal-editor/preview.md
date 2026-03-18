@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
+source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 * Wenn Sie ein Bild entfernen, bleiben keine Bild-Tags mehr leer, wenn Sie DAM als Backend verwenden.
 * Klassen in Blöcken werden jetzt bei Verwendung von DA als Backend ordnungsgemäß verarbeitet.
 * Die Open API speichert jetzt Remote-Assets ordnungsgemäß als -Objekte.
+
+## Bevorstehende grundlegende Änderung {#breaking-change}
+
+* Alle Erweiterungen sollten auf `@adobe/uix-guest` >= `1.1.7` aktualisiert werden, um die Stabilität zu verbessern.
