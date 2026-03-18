@@ -4,9 +4,9 @@ description: Lernen Sie die ersten Schritte kennen, um mit dem Experience Modern
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 283608acebab0704532ee2a2d856f248a818f671
+source-git-commit: 22a8260bf760ca4501813348c90bfc96c74e2224
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Erfahren Sie mehr über die ersten Schritte mit dem Experience Modernization Age
 
 >[!NOTE]
 >
->Verwenden eines AEM Sites- und universellen Editor-Projekts? Führen [&#x200B; die Einrichtungsschritte unter „Erste Schritte mit dem AEM Sites](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)universellen Editor“ aus.
+>Verwenden eines AEM Sites- und universellen Editor-Projekts? Führen [ die Einrichtungsschritte unter „Erste Schritte mit dem AEM Sites](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)universellen Editor“ aus.
 
 1. Wählen Sie ein [Edge Delivery Services](/help/edge/overview.md)-Repository zur Verwendung mit der Experience Modernization Console aus.
    * Dabei kann es sich um ein bestehendes Edge Delivery Services-Projekt handeln. Sie können aber auch nach dem [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) ein neues erstellen, indem Sie das [Textbausteinrepository“ verwenden.](https://github.com/adobe/aem-boilerplate)
@@ -47,8 +47,8 @@ Die Konsole fordert Sie bei der ersten Anmeldung zur Angabe eines Repositorys au
 
 1. Klicken Sie auf **Repository verbinden**.
 1. Dadurch wird die AEM Code Connector-App auf einer neuen Browser-Registerkarte geöffnet. Klicken Sie **AEM Code Connector autorisieren**.
-1. Wählen Sie zurück in der Konsole **Inhaber**, **Repository** und **Verzweigungsauswahl** und klicken Sie auf **In Arbeitsbereich auschecken**.
-   ![Verbindung zum GitHub-Projekt herstellen](assets/connect-to-github-project.png)
+1. Geben Sie zurück in der Konsole die Vorschau-URL der Site an. Die Vorschau-URL kann durch Vorschau eines beliebigen Dokuments auf der Website oder durch Erstellen aus einer Verzweigung, einem Site-Namen und einer Organisation abgerufen werden. Das System ruft das zugehörige GitHub-Projekt automatisch ab. In einigen Fällen werden Sie möglicherweise auch aufgefordert, die GitHub-Koordinaten anzugeben.
+   ![Verbindung zum GitHub-Projekt herstellen](assets/connect-site-and-github.png)
 1. Wenn Sie aufgefordert werden **„Vorhandenen Arbeitsbereich ersetzen**, klicken Sie auf **Arbeitsbereich ersetzen**.
    ![Vorhandenen Arbeitsbereich ersetzen](assets/replace-existing-workspace.png)
 
@@ -84,7 +84,7 @@ Jetzt haben Sie sowohl den Inhalt als auch die Stile in die Konsole importiert.
 
 >[!TIP]
 >
->Wenn Sie an einem AEM Sites- und einem universellen Editor-Projekt arbeiten, funktioniert das Hochladen von Inhalten in AEM etwas anders. Spezifische Upload-[&#x200B; finden Sie unter „Erste Schritte mit dem Experience Modernization Agent für AEM Sites/Universal Editor &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content)&quot;.
+>Wenn Sie an einem AEM Sites- und einem universellen Editor-Projekt arbeiten, funktioniert das Hochladen von Inhalten in AEM etwas anders. Spezifische Upload-[ finden Sie unter „Erste Schritte mit dem Experience Modernization Agent für AEM Sites/Universal Editor ](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content)&quot;.
 
 So laden Sie Ihre Inhalte in [Dokumenterstellung](https://da.live) hoch:
 
