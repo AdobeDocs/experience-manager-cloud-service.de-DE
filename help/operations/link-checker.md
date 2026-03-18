@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der Link-Prüfer Autorinnen und Autoren dabei hil
 feature: Operations
 role: Admin
 exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
-source-git-commit: 33545945881caf2276d47a9fed987edda2ff3586
-workflow-type: ht
+source-git-commit: 08771212329423a2bf182ff2cdaf63be8cc37f80
+workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -69,10 +69,10 @@ Der Prüfer für externe Links ist auf eine Reihe von Diensten angewiesen. Wenn 
 
 1. Wenn eine Inhaltsautorin oder ein Inhaltsautor einen Link zu einer Seite speichert, wird ein Ereignis-Handler ausgelöst.
 1. Der Ereignis-Handler durchläuft alle Inhalte unter `/content` und sucht nach neuen oder aktualisierten Links und fügt sie einem Cache für den Link-Prüfer hinzu.
-1. Der **Day CQ Link Checker Service** wird dann nach einem regulären Zeitplan ausgeführt, um die Einträge im Cache auf gültige Syntax zu überprüfen.
+1. Der **Adobe AEM Link Checker Service** wird dann nach einem regulären Zeitplan ausgeführt, um die Einträge im Cache auf gültige Syntax zu überprüfen.
 1. Die durch die Syntax validierten Links erscheinen dann im Fenster [Prüfer für externe Links. ](#external-using) Sie befinden sich jedoch im Status **Ausstehend**.
-1. Die **Day CQ Link Checker Task** wird dann regelmäßig ausgeführt, um die Links durch einen GET-Aufruf zu validieren.
-1. Die **Day CQ Link Checker Task** aktualisiert dann die Einträge im Fenster [Prüfer für externe Links](#external-using) mit den Ergebnissen der GET-Aufrufe.
+1. Die **Adobe AEM Link Checker Task** wird dann regelmäßig ausgeführt, um die Links durch einen GET-Aufruf zu validieren.
+1. Die **Adobe AEM Link Checker Task** aktualisiert dann die Einträge im Fenster [Externer-Link-Checker](#external-using) mit den Ergebnissen der GET-Aufrufe.
 
 ### Verwenden des Prüfers für externe Links {#external-using}
 
@@ -109,12 +109,12 @@ Alle anderen Symbole im Fenster „Prüfer für externe Links“ sind inaktiv.
 
 Der Link-Checker ist in AEM automatisch vorkonfiguriert verfügbar. Es gibt jedoch verschiedene OSGi-Konfigurationen, die geändert werden können, um sein Verhalten zu ändern:
 
-* **Day CQ Link Checker Info Storage Service**: Dieser Dienst definiert die Größe des Link-Checker-Cache im Repository.
-* **Day CQ Link Checker Service**: Dieser Dienst führt eine asynchrone Überprüfung der Syntax externer Links durch. 
+* **Adobe AEM Link Checker Info Storage Service** - Dieser Dienst definiert die Größe des Link-Checker-Caches im Repository.
+* **Adobe AEM Link Checker Service**: Dieser Dienst führt eine asynchrone Überprüfung der Syntax von externen Links durch.
    * Sie können unter anderem den Prüfzeitraum festlegen und festlegen, welche Links vom Prüfer übersprungen werden sollen.
-* **Day CQ Link Checker Task**: Dieser Dienst führt die GET-Validierung externer Links durch.
+* **Adobe AEM Link Checker Task** - Dieser Dienst führt die GET-Validierung von externen Links durch.
    * Er ermöglicht unter anderem separate Definitionen von Intervallen, um fehlerhafte und gute Links zu überprüfen.
-* **Day CQ Link Checker Transformer**: Dieser Dienst konvertiert Links basierend auf einem benutzerdefinierten Regelsatz.
+* **Adobe AEM Link Checker Transformer**: Dieser Dienst konvertiert Links basierend auf einem benutzerdefinierten Regelsatz.
 
 Weitere Informationen zum Ändern von OSGi-Einstellungen finden Sie unter [Konfigurieren von OSGi](/help/implementing/deploying/configuring-osgi.md).
 
@@ -123,7 +123,7 @@ Weitere Informationen zum Ändern von OSGi-Einstellungen finden Sie unter [Konfi
 Sie können den Link-Checker vollständig deaktivieren. Gehen Sie dazu wie folgt vor:
 
 1. Öffnen Sie die OSGi-Konsole.
-1. Bearbeiten Sie den **Day CQ Link Checker Transformer**.
+1. Bearbeiten Sie den **Adobe AEM Link Checker Transformer**
 1. Markieren Sie die Option(en), die Sie deaktivieren möchten:
    * **Überprüfung deaktivieren**: zur Deaktivierung der Validierung von Links
    * **Umschreiben deaktivieren**: zur Deaktivierung von Linktransformationen
