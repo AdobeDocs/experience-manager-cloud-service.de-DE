@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 3b935114d543a0bf99f3c03a2840942862396216
+source-git-commit: 3f65f818ae3dd70030a56c04982a037536575ddd
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Viele Adobe Experience Manager (AEM)-Teams arbeiten jetzt in integrierten Entwic
 Mit der MCP-Integration von AEM können verschiedene Personas um denselben Inhalt herum zusammenarbeiten:
 
 * **Entwickler** können Inhaltsvorgänge und Workflows über ihre IDE- oder Chat-Anwendung orchestrieren
-* **Anwender** und Inhaltsarchitekten können Sites, Inhaltsfragmente und Assets mithilfe von KI verwalten und dabei das bestehende Berechtigungsmodell von AEM beibehalten.
+* **Anwender** und Inhaltsarchitekten können Sites und Inhaltsfragmente verwalten und Assets importieren. Dabei wird sie von KI unterstützt, während sie sich im bestehenden Berechtigungsmodell von AEM befinden.
 
 >[!IMPORTANT]
 >
@@ -52,9 +52,9 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 
 | **MCP-Server** | **Endpunkt** | **Beschreibung** |
 |---|---|----------------------------------------------------------------------------------------------------------------------|
-| **Inhalt** | `/content` | Alle Inhaltsvorgänge auf niedriger Ebene, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten, Fragmente und Assets. |
-| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten, Fragmente und Assets. |
-| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
+| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import. |
+| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten und Inhaltsfragmente. |
+| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
@@ -64,7 +64,7 @@ Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden,
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#x200B; und im &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)Cloud Manager MCP Server-.
+Weitere Informationen zu [ Funktionen und deren Verwendung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[ und im ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 
@@ -177,7 +177,7 @@ Zu den repräsentativen Szenarien gehören:
    * Erstellen neuer Fragmente
    * Vorhandene Fragmente aktualisieren, wenn sich Campaign-Messaging ändert
 
-* **Assets-Verwaltung**
+* **Asset-Import**
    * Assets mit Statusprüfung importieren
 
 ### Beispiel-Workflows {#example-workflows}
