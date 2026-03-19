@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7fb59fe2eb125d4936803c650135871a2a381a7b
+source-git-commit: e926ce5b20866497dd9f11a163ee4142f33778d0
 workflow-type: tm+mt
-source-wordcount: '7123'
+source-wordcount: '7129'
 ht-degree: 94%
 
 ---
@@ -258,6 +258,7 @@ ht-degree: 94%
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + [Vorschau von Versionshinweisen für den universellen Editor](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Versionshinweise für 2026.03.12](/help/release-notes/universal-editor/2026/2026-03-12.md)
          + [Versionshinweise für 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
          + [Versionshinweise für 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
          + [Versionshinweise für 2026.02.19](/help/release-notes/universal-editor/2026/2026-02-19.md)
@@ -1306,7 +1307,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1521,8 +1522,9 @@ ht-degree: 94%
          + [Modelldefinitionen, Felder und Komponententypen](/help/implementing/universal-editor/field-types.md)
          + [Publishing](/help/implementing/universal-editor/publishing.md)
          + [Ereignisse](/help/implementing/universal-editor/events-universal-editor.md)
-         + [Filtern von Komponenten](/help/implementing/universal-editor/filtering.md)
+         + [Filter](/help/implementing/universal-editor/filtering.md)
          + [Konfigurieren des RTE](/help/implementing/universal-editor/configure-rte.md)
+         + [Konfigurieren der Assets-Auswahl](/help/implementing/universal-editor/configure-assets-selector.md)
          + [Anpassung](/help/implementing/universal-editor/customizing.md)
          + [Erweitern](/help/implementing/universal-editor/extending.md)
          + [Architektur](/help/implementing/universal-editor/architecture.md)
