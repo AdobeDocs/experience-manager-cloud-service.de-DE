@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Content Discovery Agent relevante AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2073'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ Eingabeaufforderungen im Beispiel:
 * **Suche basierend auf Dateiformat, Asset-Typ, Asset-Status und Erstellt per E-Mail-ID**: Zeigt Videos im `.mp4` Format an, die genehmigt und `created by <user email ID>` wurden.
 * **Suche basierend auf Dateiformat, Asset-Typ, Asset-Status und Erstellungsdatum**: Zeigt Bilder im `.PNG` an, die nach dem 1. Januar 2025 und `published by <user email ID>` erstellt wurden
 * **Suche basierend auf MIME-Typ, Erstellungsdatum und Veröffentlicht durch E-Mail-ID**: `image/jpeg` anzeigen, die nach `January 1, 2025` und `published by <user email ID>` erstellt wurden.
-* **Suche basierend auf Dateiformat und benutzerdefinierten Metadateneigenschaften**: Zeigt Bilder im `.JPEG` Format an, die `Product SKU ID as <SKU value>` haben.
+* **Suche basierend auf Dateiformat und benutzerdefinierten Metadateneigenschaften**: Zeigt Bilder im `.JPEG` Format an, die `Product SKU ID = <SKU value>` haben (muss in der Metadateneigenschaft = Werteformat sein).
 
 * **Nach Assets mit fehlenden Metadaten suchen**: „Assets anzeigen, die in den letzten 90 Tagen erstellt wurden, mit `<Name of metadata property including custom properties>` ist leer“.
 
@@ -215,7 +215,7 @@ Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asse
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 
@@ -235,7 +235,7 @@ Geben Sie in Ihren Eingabeaufforderungen in natürlicher Sprache präzise Detail
 
 ## Einschränkungen {#limitations-discovery-agent}
 
-* Der Content Discovery Agent unterstützt nur dimensionsbasierte Eingabeaufforderungen für die Formattypen „Bild“ und &quot;SVG&quot;. Beispiel: `Find images wider than 1080px`.
+* Der Content Discovery Agent unterstützt nur dimensionsbasierte Eingabeaufforderungen für die Formattypen „Bild“ und &quot;SVG&quot;. Zum Beispiel: `Find images wider than 1080px`.
 
 * Content Hub-Administratoren können über das Content Hub-Portal auf den Content Discovery Agent zugreifen. Die Ergebnisse werden jedoch nur von der AEM-Autoreninstanz abgerufen. Benutzende mit Content Hub Limited können derzeit nicht von den Vorteilen des Content Discovery Agent profitieren (in Kürze verfügbar).
 
