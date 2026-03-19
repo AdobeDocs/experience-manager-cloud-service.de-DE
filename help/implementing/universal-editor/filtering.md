@@ -74,7 +74,7 @@ Um den Filter zu verwenden, müssen Sie auf die Filterdefinition verweisen. Gehe
   data-aue-filter="container-filter"
   ```
 
-* Referenzieren des Filters aus Ihrer [Komponentendefinition ](/help/implementing/universal-editor/component-definition.md) Übergeben der ID des Filters.
+* Referenzieren des Filters aus Ihrer [Komponentendefinition &#x200B;](/help/implementing/universal-editor/component-definition.md) Übergeben der ID des Filters.
 
   ```json
   {
