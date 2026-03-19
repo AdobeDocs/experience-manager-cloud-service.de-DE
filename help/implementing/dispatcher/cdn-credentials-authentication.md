@@ -272,7 +272,7 @@ Darüber hinaus enthält die Syntax Folgendes:
    * type – muss `basic` sein.
    * ein Array von bis zu 10 Anmeldeinformationen, die jeweils die folgenden Name/Wert-Paare enthalten, die Endbenutzende im Dialogfeld der einfachen Authentifizierung eingeben können:
       * user – der Name der Benutzerin bzw. des Benutzers.
-      * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ ](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
+      * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ &#x200B;](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet und welche Ressourcen geschützt werden sollen. Jede Regel umfasst:
    * name – eine beschreibende Zeichenfolge
    * when – eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax im Artikel [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) beurteilt werden soll. Typischerweise umfasst dies einen Vergleich der Veröffentlichungsstufe oder bestimmter Pfade.
