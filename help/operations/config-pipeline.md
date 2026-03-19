@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
+source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 47%
+source-wordcount: '1491'
+ht-degree: 43%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a
 
 Eine Cloud Manager-Konfigurations-Pipeline stellt Konfigurationsdateien (die im YAML-Format erstellt wurden) in einer Zielumgebung bereit. Auf diese Weise kann eine Reihe von Funktionen in AEM as a Cloud Service konfiguriert werden, darunter die Protokollweiterleitung, Bereinigungsaufgaben sowie verschiedene CDN-Funktionen.
 
-Bei **Veröffentlichungsbereitstellung**-Projekten können Konfigurations-Pipelines über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdateien können mithilfe von [Befehlszeilen-Tools“ in schnellen Entwicklungsumgebungen (RDEs) bereitgestellt &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Verwenden Sie eine zielgerichtete Bereitstellung [**Veröffentlichungs-Bereitstellungs**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) Pipeline ([Produktion](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) oder [Produktionsfremd](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)), wenn Sie Traffic für eine Domain konfigurieren müssen, die an eine Veröffentlichungs-Bereitstellungsumgebung angehängt ist.
+Bei **Veröffentlichungsbereitstellung**-Projekten können Konfigurations-Pipelines über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdateien können mithilfe von [Befehlszeilen-Tools“ in schnellen Entwicklungsumgebungen (RDEs) bereitgestellt ](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Verwenden Sie eine zielgerichtete Bereitstellung [**Veröffentlichungs-Bereitstellungs**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) Pipeline ([Produktion](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) oder [Produktionsfremd](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)), wenn Sie Traffic für eine Domain konfigurieren müssen, die an eine Veröffentlichungs-Bereitstellungsumgebung angehängt ist.
 
 Konfigurations-Pipelines können auch über Cloud Manager für **Edge Delivery-Projekte** werden. Verwenden Sie eine [**Edge Delivery**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) Pipeline, wenn die Domain mit einer **Edge Delivery-Site verbunden**.
 
@@ -133,7 +133,7 @@ Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen u
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[&#x200B; können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
+Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[ können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
 
 ```yaml
 kind: "LogForwarding"
@@ -221,13 +221,11 @@ data:
 
 Wenn Sie das Metadatenfeld *envTypes* einschließen, sollte nur der Wert **prod** verwendet werden (das Auslassen des Metadatenfelds envTypes ist ebenfalls in Ordnung). Für die *tier* reqProperty sollte nur der Wert **publish** verwendet werden.
 
-## Geheime Umgebungsvariablen {#secret-env-vars}
+## Konfigurationsgeheimnisse  {#secret-in-configuration}
 
-Damit vertrauliche Informationen nicht in der Verwaltung der Quelle gespeichert werden müssen, unterstützen Konfigurationsdateien Cloud Manager-Umgebungsvariablen vom Typ **secret**. Bei einigen Konfigurationen, einschließlich der Protokollweiterleitung, sind geheime Umgebungsvariablen für bestimmte Eigenschaften obligatorisch.
+Damit vertrauliche Informationen nicht in der Quell-Code-Verwaltung gespeichert werden müssen, unterstützen Konfigurationsdateien den Verweis auf geheime Daten aus den Konfigurations-Pipeline-Variablen oder aus Umgebungsvariablen. Bei einigen Konfigurationen, einschließlich der Protokollweiterleitung, sind geheime Variablen für bestimmte Eigenschaften obligatorisch. Siehe [Konfigurieren von CDN-Anmeldeinformationen und -Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md) für Details zur Verwendung von geheimen Daten in der CDN-Konfiguration.
 
-Beachten Sie, dass geheime Umgebungsvariablen für Veröffentlichungs-Bereitstellungsprojekte verwendet werden. Weitere Informationen finden Sie im Abschnitt Geheime Pipeline-Variablen für Edge Delivery Services-Projekte.
-
-Das folgende Snippet ist ein Beispiel dafür, wie die geheime Umgebungsvariable `${{SPLUNK_TOKEN}}` in der Konfiguration verwendet wird.
+Das folgende Snippet ist ein Beispiel dafür, wie die geheime Variable `${{SPLUNK_TOKEN}}` in der Konfiguration verwendet wird.
 
 ```
 kind: "LogForwarding"
@@ -241,12 +239,22 @@ data:
       index: "AEMaaCS"
 ```
 
-Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Cloud Manager-Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md).
 
-## Geheime Pipeline-Variablen {#secret-pipeline-vars}
 
-Verwenden Sie für Edge Delivery Services-Projekte Cloud Manager-Pipeline-Variablen vom Typ **secret** sodass vertrauliche Informationen nicht in der Quell-Code-Verwaltung gespeichert werden müssen. Das Auswahlfeld *Schritt angewendet* sollte die Option **Bereitstellen** verwenden.
+### Geheime Pipeline-Variablen {#secret-pipeline-vars}
 
-Die Syntax ist identisch mit dem im vorherigen Abschnitt gezeigten Snippet.
+Die **bevorzugte Methode** besteht darin, Cloud Manager-Pipeline-Variablen vom Typ **secret** zu verwenden, sodass vertrauliche Informationen nicht in der Quell-Code-Verwaltung gespeichert werden müssen. Das Auswahlfeld **Schritt angewendet** sollte die Option **Bereitstellen** verwenden.
 
 Weitere Informationen zur Verwendung von Pipeline-Variablen finden Sie unter [Pipeline-Variablen in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+
+### Geheime Umgebungsvariablen {#secret-env-vars}
+
+Verwenden Sie geheime Umgebungsvariablen, wenn Sie unterschiedliche geheime Werte pro Umgebung haben möchten.
+
+Weitere Informationen zur Verwendung von Umgebungsvariablen finden Sie unter [Cloud Manager-Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md).
+
+>[!NOTE]
+>Die Verwendung geheimer Umgebungsvariablen ist aufwändiger und erfordert eine strikte Disziplin: Umgebungsvariablen werden nicht zusammen mit der Konfigurations-Pipeline bereitgestellt. Sie müssen sie bereitstellen, bevor Sie die Pipeline ausführen, und Sie dürfen sie nicht entfernen, während die Pipeline-Konfiguration noch auf sie verweist. Aus diesem Grund werden Pipeline-Geheimnisse bevorzugt.
+
+

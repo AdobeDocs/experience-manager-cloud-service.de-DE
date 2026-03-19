@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
+source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 95%
+source-wordcount: '2181'
+ht-degree: 88%
 
 ---
 
@@ -40,9 +40,28 @@ data:
     ...
 ```
 
+## Bereitstellen von Geheimnissen: Umgebungsvariablen im Vergleich zu Pipeline-Variablen {#deploying-secrets}
+
+Sie können geheime Daten, die in der CDN-Konfiguration verwendet werden, auf zwei Arten bereitstellen:
+
+* **Pipeline-Geheimnisvariablen** - In Cloud Manager als [Pipeline-Variablen](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) vom Typ **Geheimnis** konfiguriert, wobei **Schritt angewendet** auf **Bereitstellen** gesetzt ist. Diese sind als Konfiguration auf Pipeline-Ebene verfügbar.
+
+* **Umgebungsgeheimnisvariablen** - In Cloud Manager als [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md) vom Typ **Geheimnis** konfiguriert und **Service angewendet** auf **All** gesetzt. Diese sind als Konfiguration auf Umgebungsebene verfügbar.
+
+**Bevorzugt: Pipeline-Geheimnis-Variablen.** Verwenden Sie nach Möglichkeit geheime Pipeline-Variablen, da sie zusammen mit Ihrer Konfiguration im selben Pipeline-Durchgang bereitgestellt werden. Dadurch werden Geheimnisse und Konfiguration synchron gehalten und Rollouts vereinfacht.
+
+Sie können Pipeline-Geheimnisse nicht mit Umgebungsgeheimnissen für dieselbe Konfiguration mischen. Wenn geheime Pipeline-Variablen für den Bereitstellungsschritt definiert sind, werden sie bevorzugt verwendet.
+
+Die folgende Abbildung zeigt, wie Sie Pipeline-Geheimnis-Variablen in Cloud Manager konfigurieren:
+
+![Konfigurieren von Pipeline-Geheimnis-Variablen](/help/implementing/dispatcher/assets/pipeline-secrets-configuration.png)
+
+Ausführliche Informationen zum Hinzufügen, Bearbeiten und Verwalten von Pipeline-Variablen (einschließlich geheimer Daten) finden Sie unter [Pipeline-Variablen in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+## Richtlinien für das Arbeiten mit geheimen Daten {#secrets-guidelines}
+
 Im Folgenden finden Sie einige Richtlinien, die Sie beim Arbeiten mit geheimen Daten beachten sollten:
 
-* Umgebungsgeheimnisse müssen als eine Umgebungsvariable vom Typ [Cloud Manager-Geheimnis bereitgestellt &#x200B;](/help/operations/config-pipeline.md#secret-env-vars). Wählen Sie für das Feld Angewendeter Service die Option Alle aus.
 * Geheime Verweise werden nicht innerhalb von Zeichenfolgen interpoliert (z. B. `"Token ${{AUTH_TOKEN}}"` funktioniert nicht)
 * Ein referenziertes Umgebungsgeheimnis sollte nicht entfernt werden, wenn es weiterhin in der Konfiguration referenziert wird.
 
@@ -253,7 +272,7 @@ Darüber hinaus enthält die Syntax Folgendes:
    * type – muss `basic` sein.
    * ein Array von bis zu 10 Anmeldeinformationen, die jeweils die folgenden Name/Wert-Paare enthalten, die Endbenutzende im Dialogfeld der einfachen Authentifizierung eingeben können:
       * user – der Name der Benutzerin bzw. des Benutzers.
-      * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ &#x200B;](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
+      * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ ](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet und welche Ressourcen geschützt werden sollen. Jede Regel umfasst:
    * name – eine beschreibende Zeichenfolge
    * when – eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax im Artikel [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) beurteilt werden soll. Typischerweise umfasst dies einen Vergleich der Veröffentlichungsstufe oder bestimmter Pfade.
