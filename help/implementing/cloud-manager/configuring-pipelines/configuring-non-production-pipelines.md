@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
+source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 33%
@@ -210,7 +210,7 @@ Der Leistungsgewinn durch die Verwendung von Smart Build hängt von mehreren Fak
 * Häufigkeit und Umfang von Code-Änderungen.
 * Die Verteilung von Abhängigkeiten über Module hinweg.
 
-Im Allgemeinen weisen Projekte mit vielen unabhängigen Modulen die größten Verbesserungen auf.
+Im Allgemeinen können Projekte mit vielen unabhängigen Modulen die größte Verbesserung verzeichnen.
 
 ### Opt-out aus dem Cache pro Modul{#smart-build-cache-optout}
 
