@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e926ce5b20866497dd9f11a163ee4142f33778d0
+source-git-commit: 79f98664a3c4fddade7ed2ad1aa45ae6c3b501ce
 workflow-type: tm+mt
-source-wordcount: '7129'
-ht-degree: 94%
+source-wordcount: '7158'
+ht-degree: 93%
 
 ---
 
@@ -1107,12 +1107,13 @@ ht-degree: 94%
    + MCP-Unterstützung {#mcp-support}
       + [Verwenden von MCP mit AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
       + Chat-Anwendungen (Web und Desktop) {#chat-applications}
-         + [Claude Anthropica](/help/ai-in-aem/mcp-support/setup-claude.md)
-         + [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+         + [Anthropic Claude mit AEM MCP einrichten](/help/ai-in-aem/mcp-support/setup-claude.md)
+         + [Einrichten von OpenAI ChatGPT mit AEM MCP](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
       + Entwickler-Tools (IDE-Erweiterungen, Desktop-Programme, CLIs) {#developer-tools}
-         + [Mauszeiger](/help/ai-in-aem/mcp-support/setup-cursor.md)
+         + [Einrichten des Cursors mit AEM MCP](/help/ai-in-aem/mcp-support/setup-cursor.md)
       + Unternehmensplattformen {#enterprise-platforms}
-         + [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+         + [Einrichten von Microsoft Copilot Studio mit AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+         + [Einrichten von JetBrains mit GitHub Copilot und AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
    + Agenten in AEM {#agents}
       + [Überblick](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
@@ -1307,7 +1308,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

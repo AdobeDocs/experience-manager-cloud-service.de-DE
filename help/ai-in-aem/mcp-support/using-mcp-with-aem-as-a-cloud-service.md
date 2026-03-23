@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 3f65f818ae3dd70030a56c04982a037536575ddd
+source-git-commit: 6c2061cd6e6aee26c32935f4d33417a1f945665d
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import. |
 | **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten und Inhaltsfragmente. |
-| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
+| **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. <br><br>*Dieser MCP-Server befindet sich jetzt in der **Betaversion**. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aemcs-mcp-feedback@adobe.com)aemcs-mcp-feedback@adobe.com) mit einer Beschreibung Ihres Anwendungsfalls.* |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
@@ -64,7 +64,7 @@ Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden,
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#x200B; und im &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)Cloud Manager MCP Server-.
+Weitere Informationen zu [ Funktionen und deren Verwendung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[ und im ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 
@@ -82,7 +82,7 @@ Die MCP-Server von AEM sind für die Verwendung mit einer Reihe von MCP-kompatib
 * Erweitern der Einrückung für Desktop-Programm
 * Cline (JetBrains, VS Code, Cursor)
 * Mauszeiger
-* GitHub-Copilot (VS-Code)
+* GitHub-Copilot (JetBrains, VS-Code)
 * Kiro (Desktop-Programm, CLI)
 * OpenAI-Codex (Desktop-Programm)
 * OpenAI Codex CLI
@@ -104,6 +104,7 @@ Eine schrittweise Anleitung zu beiden Schritten finden Sie unter:
 * [Claude Anthropica](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Mauszeiger](/help/ai-in-aem/mcp-support/setup-cursor.md)
+* [JetBrains mit GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ### AEM-Konfiguration {#aem-configuration}
@@ -116,11 +117,11 @@ Alle Anwendungen, die unter [Unterstützte MCP-Anwendungen](#supported-mcp-appli
 
 #### Einschränken von MCP-Servern {#restricting-mcp-servers}
 
-Auf die Zulassungsliste setzen Alle MCP-Server sind standardmäßig aktiviert. Als Administrator haben Sie die Möglichkeit, den Zugriff auf bestimmte MCP-Server auf Organisations-, Programm- oder Umgebungsebene einzuschränken. Durch diese Einschränkung erhalten Sie eine granulare Kontrolle darüber, welche MCP-Funktionen Benutzern in Ihrer Organisation zur Verfügung stehen.
+Alle MCP-Server sind standardmäßig aktiviert. Als Administrator haben Sie die Möglichkeit, den Zugriff auf bestimmte MCP-Server auf Organisations-, Programm- oder Umgebungsebene einzuschränken. Durch diese Einschränkung erhalten Sie eine granulare Kontrolle darüber, welche MCP-Funktionen Benutzern in Ihrer Organisation zur Verfügung stehen.
 
 #### Verwalten des MCP-Client-Zugriffs {#managing-mcp-client-access}
 
-Administratoren können auch den Zugriff für bestimmte MCP-Client-Anwendungen deaktivieren, wenn die Richtlinien Ihrer Organisation dies erfordern. Wenn Sie möchten, dass Adobe die Unterstützung für weitere MCP-Client-Produkte aktiviert, senden Sie einen Link zur -Produkt-Website. Auf die Zulassungsliste setzen Wenn Sie einen benutzerdefinierten MCP-Client ändern müssen, wenden Sie sich auch an .
+Administratoren können auch den Zugriff für bestimmte MCP-Client-Anwendungen deaktivieren, wenn die Richtlinien Ihrer Organisation dies erfordern. Wenn Sie möchten, dass Adobe die Unterstützung für weitere MCP-Client-Produkte aktiviert, senden Sie einen Link zur -Produkt-Website. Wenn Sie einen benutzerdefinierten MCP-Client ändern müssen, wenden Sie sich auch an .
 
 Für alle Anfragen zum MCP-Server wenden Sie sich bitte an uns unter **aemcs-mcp-feedback@adobe.com**
 
