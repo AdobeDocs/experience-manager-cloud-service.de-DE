@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
+source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -108,7 +108,7 @@ Die ausgewählten Regionen gelten sowohl für Produktions- als auch für Staging
 
 Wenn Sie keine zusätzlichen Regionen angeben, [können Sie dies auch später tun, nachdem die Umgebungen erstellt wurden](#edit-regions).
 
-Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) für das Programm bereitstellen möchten, wird empfohlen, diese Bereitstellung vor dem Hinzufügen zusätzlicher Veröffentlichungsregionen zu den Umgebungen mithilfe der Cloud Manager-API durchzuführen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
+Wenn Sie für das Programm [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md) bereitstellen möchten, wird empfohlen, diese Bereitstellung durchzuführen, bevor Sie den Umgebungen mithilfe der Cloud Manager-API zusätzliche Veröffentlichungsregionen hinzufügen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
 
 ### Bearbeiten mehrerer Veröffentlichungsregionen {#edit-regions}
 
@@ -130,7 +130,7 @@ Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können 
 
 Änderungen an der Produktionsumgebung gelten sowohl für die Produktions- als auch für die Staging-Umgebung. Änderungen an mehreren Veröffentlichungsregionen können nur in der Produktionsumgebung bearbeitet werden.
 
-Wenn Sie [erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) für das Programm bereitstellen möchten, wird empfohlen, diese Bereitstellung vor dem Hinzufügen zusätzlicher Veröffentlichungsregionen zu den Umgebungen durchzuführen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
+Wenn Sie für das Programm [erweiterte Vernetzung](/help/security/configuring-advanced-networking.md) bereitstellen möchten, wird empfohlen, diese Bereitstellung durchzuführen, bevor Sie zusätzliche Veröffentlichungsregionen zu den Umgebungen hinzufügen. Andernfalls wird der Traffic der zusätzlichen Veröffentlichungsregionen über den Proxy der primären Region geleitet.
 
 ## Anzeigen von Details einer Umgebung {#viewing-environment}
 
@@ -304,7 +304,7 @@ Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte 
 
 1. Klicken Sie auf der Karte **Umgebungen** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Entwicklerkonsole**.
 
-In Ihrem Browser wird eine neue Registerkarte mit der Anmeldeseite für die **Developer Console** geöffnet.
+In Ihrem Browser wird eine neue Registerkarte mit der Anmeldeseite der **Developer Console** geöffnet.
 
 ![Anmelden bei der Developer Console](assets/environ-devconsole.png)
 
