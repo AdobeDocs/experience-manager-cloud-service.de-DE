@@ -15,7 +15,7 @@ ht-degree: 74%
 
 >[!TIP]
 >
->Machen Sie sich mit der grundlegenden [Verwendung des AEM-Projektarchetyps](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview#) und dem [FileVault Content Maven-Plug-in](/help/implementing/developing/tools/maven-plugin.md) vertraut, da dieser Artikel auf diesen Erkenntnissen und Konzepten aufbaut.
+>Machen Sie sich mit der grundlegenden [Verwendung des AEM-Projektarchetyps](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview#) und dem [FileVault Content Maven-Plug-in](/help/implementing/developing/tools/maven-plugin.md) vertraut, da dieser Artikel auf diesen Erkenntnissen und Konzepten aufbaut.
 
 In diesem Artikel werden die Änderungen erläutert, die erforderlich sind, damit Adobe Experience Manager Maven-Projekte mit AEM as a Cloud Service kompatibel sind, indem sichergestellt wird, dass sie die Aufteilung in veränderliche und unveränderliche Inhalte berücksichtigen. Darüber hinaus werden Abhängigkeiten festgelegt, um nicht widersprüchliche, deterministische Implementierungen zu erstellen, und sie werden in einer bereitstellbaren Struktur verpackt.
 
@@ -62,7 +62,7 @@ Die empfohlene Bereitstellungsstruktur für Programme lautet wie folgt:
 + Die Jar-Datei des OSGi-Pakets wird generiert und direkt in das gesamte Projekt eingebettet.
 
 + Das `ui.apps`-Paket enthält den ganzen bereitzustellenden Code und wird nur für `/apps` bereitgestellt. Zu den gebräuchlichen Elementen des `ui.apps`-Pakets gehören unter anderem:
-   + [Komponentendefinitionen und HTL](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview#)-Skripte
+   + [Komponentendefinitionen und HTL](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/overview#)-Skripte
       + `/apps/my-app/components`
    + JavaScript und CSS (über [Client-Bibliotheken](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ Die empfohlene Bereitstellungsstruktur für Programme lautet wie folgt:
       + `/apps/settings`
    + ACLs (Berechtigungen)
       + Alle `rep:policy` für einen Pfad unter `/apps`
-   + [Vorkompilierte Paket-Skripte](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
+   + [Vorkompilierte Paket-Skripte](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
 
 >[!NOTE]
 >
