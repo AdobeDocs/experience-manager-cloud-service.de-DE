@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Version 2026.3.0 von Cloud Manager in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 23%
+source-wordcount: '731'
+ht-degree: 22%
 
 ---
 
@@ -68,7 +68,7 @@ Siehe die Dokumentation [Verwenden von MCP mit AEM as a Cloud Service](/help/ai-
 
 Siehe das Tutorial [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#).
 
-Sie interessieren sich für die Beta-Version? Senden Sie eine E-Mail an [0&rbrace;GRP-AEM-CM-MCP-FEEDBACK@adobe.com&quot; mit Ihrer Adobe-OrgID und Programm-ID.](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)
+Sie interessieren sich für die Beta-Version? Senden Sie eine E-Mail an [0}GRP-AEM-CM-MCP-FEEDBACK@adobe.com&quot; mit Ihrer Adobe-OrgID und Programm-ID.](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)
 
 
 <!--
@@ -95,7 +95,9 @@ Im Dialogfeld **Pipeline hinzufügen/bearbeiten** auf der Registerkarte **Source
 * **Vollständiger Build** - Erstellt bei jeder Ausführung alle Module im Repository.
 * **Smarter Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden, was die Erstellungszeit insgesamt verkürzt.
 
-Sie steuern, welche Pipelines „Smart **Build“**. Während der Beta-Phase wird diese Option nur für Pipelines **Code-Qualität** und **Bereitstellung durch Entwicklung** angezeigt.
+Sie steuern, welche Pipelines „Smart **Build“**. Während der Beta-Phase wird diese Option nur für Pipelines **Code-Qualität** und **Entwicklung Full Stack-Bereitstellung** angezeigt.
+
+Siehe [Informationen zur Verwendung von Smart Build in einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) und [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
 Sie sind interessiert? Senden Sie eine E-Mail an [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe-OrgID und Programm-ID.
 
