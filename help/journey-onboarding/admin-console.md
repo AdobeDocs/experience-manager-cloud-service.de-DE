@@ -4,7 +4,7 @@ description: Sobald Sie mit den erforderlichen Vorbereitungsschritten für das O
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 8ed13eb6f476bab07da07549a83ab9ac16bdea72
+source-git-commit: 9f237747f19ee537fbc51f39e935472c6a023328
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 55%
@@ -110,7 +110,7 @@ Sollten Sie Probleme haben, erhalten Sie über die Admin Console Zugang zum Adob
 
 Nachdem Sie dieses Dokument gelesen haben, sollten Sie:
 
-* Verstehen, was eine Adobe ID ist.
+* Sie verstehen, was eine Adobe ID ist.
 * Möglichkeit zur Anmeldung bei der Admin Console.
 * Erfahren Sie, wie Sie Ihre Berechtigungen als Systemadministrator mit der Admin Console überprüfen können.
 * Sie wissen, wie Sie den Adobe-Support um Hilfe bitten können.
@@ -123,6 +123,6 @@ Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den In
 
 * [Übersicht über die Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) – ein umfassender Überblick
 * [Erstellen oder Aktualisieren der Adobe ID](https://helpx.adobe.com/de/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) – Erfahren Sie, wie Sie eine Adobe ID erstellen, ändern und mehrere Adobe-IDs verwalten.
-* [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) – AEM wird mit einem SAML-Authentifizierungs-Handler geliefert. Dieser Handler unterstützt das SAML 2.0-Authentifizierungsanfrageprotokoll (Web-SSO-Profil), das die HTTP POST-Bindung verwendet.
+* [SAML 2.0-Authentifizierungs-Handler](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) – AEM wird mit einem SAML-Authentifizierungs-Handler geliefert. Dieser Handler unterstützt das SAML 2.0-Authentifizierungsanfrageprotokoll (Web-SSO-Profil), das die HTTP POST-Bindung verwendet.
 * [Administratorrollen](https://helpx.adobe.com/de/enterprise/using/admin-roles.html) – Mithilfe der Adobe Admin Console können Unternehmen eine flexible Verwaltungshierarchie definieren, die eine differenzierte Verwaltung des Zugriffs und der Verwendung von Adobe-Produkten ermöglicht.
-* [Support und Expertensitzungen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Erfahren Sie, wie Sie auf die Support-Optionen in der Admin Console zugreifen, Ihre Support-Anfragen verwalten, eine Expertensitzung planen und vieles mehr.
+* [Support und Expertensitzungen](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Erfahren Sie, wie Sie auf die Support-Optionen in der Admin Console zugreifen, Ihre Support-Anfragen verwalten, eine Expertensitzung planen und vieles mehr.
