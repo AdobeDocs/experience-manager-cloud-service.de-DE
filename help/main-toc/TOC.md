@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 79f98664a3c4fddade7ed2ad1aa45ae6c3b501ce
+source-git-commit: 605ba43b498041198b62df26b83f7a4f1f5966ac
 workflow-type: tm+mt
-source-wordcount: '7158'
+source-wordcount: '7176'
 ht-degree: 93%
 
 ---
@@ -258,6 +258,7 @@ ht-degree: 93%
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + [Vorschau von Versionshinweisen für den universellen Editor](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Versionshinweise für 2026.03.19](/help/release-notes/universal-editor/2026/2026-03-19.md)
          + [Versionshinweise für 2026.03.12](/help/release-notes/universal-editor/2026/2026-03-12.md)
          + [Versionshinweise für 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
          + [Versionshinweise für 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
@@ -589,19 +590,7 @@ ht-degree: 93%
    + [Fehlerbehebung bei AEM Assets-Problemen](/help/assets/troubleshoot-aem-assets.md)
    + [Assets-Benutzende mit Status „Mitarbeiter“](/help/assets/assets-collaborator-users.md)
    + Verwalten digitaler Assets {#manage}
-      + Micro-Frontend-Asset-Wähler {#asset-selector}
-         + [Überblick über den Asset-Wähler](/help/assets/overview-asset-selector.md)
-         + Asset-Wähler-Integrationen {#asset-selector-integration}
-            + [Überblick über die Asset-Wähler-Integrationen](/help/assets/integrate-asset-selector.md)
-            + [Integrieren des Asset-Wählers mit einer Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-         + [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
-         + [Beispiele für den Asset-Wähler](/help/assets/asset-selector-examples.md)
-         + [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
-         + [Hochladen des Asset-Wählers](/help/assets/asset-selector-upload.md)
-         + [Sammlungen des Asset-Wählers](/help/assets/asset-selector-collections.md)
-      + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
+      + [Content Advisor für den Zugriff auf AEM-Inhalte in Adobe-Programmen](/help/assets/content-advisor-adobe-applications.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Erneutes Verarbeiten von Assets](/help/assets/reprocessing.md)
       + [Erkennung von Malware](/help/assets/malware-detection.md)
@@ -636,6 +625,19 @@ ht-degree: 93%
       + [Verarbeiten von Assets mithilfe von [!DNL Creative Cloud] -APIs](/help/assets/cc-api-integration.md)
       + [Farb-Tags für Bilder](/help/assets/color-tag-images.md)
       + [PDF-Dokumente verwalten](/help/assets/manage-pdf-documents.md)
+      + Micro-Frontend-Asset-Wähler {#asset-selector}
+         + [Überblick über den Asset-Wähler](/help/assets/overview-asset-selector.md)
+         + Asset-Wähler-Integrationen {#asset-selector-integration}
+            + [Überblick über die Asset-Wähler-Integrationen](/help/assets/integrate-asset-selector.md)
+            + [Integrieren des Asset-Wählers mit einer Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
+         + [Beispiele für den Asset-Wähler](/help/assets/asset-selector-examples.md)
+         + [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
+         + [Hochladen des Asset-Wählers](/help/assets/asset-selector-upload.md)
+         + [Sammlungen des Asset-Wählers](/help/assets/asset-selector-collections.md)
+      + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
    + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
       + [Erkennen doppelter Assets](/help/assets/detect-duplicate-assets.md)
       + [Verweise auf Entwicklerdokumente und APIs](/help/assets/developer-reference-material-apis.md)
@@ -1114,6 +1116,7 @@ ht-degree: 93%
       + Unternehmensplattformen {#enterprise-platforms}
          + [Einrichten von Microsoft Copilot Studio mit AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
          + [Einrichten von JetBrains mit GitHub Copilot und AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
+   + [Lokale Entwicklung mit KI-Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
    + Agenten in AEM {#agents}
       + [Überblick](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
@@ -1308,7 +1311,7 @@ ht-degree: 93%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
