@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480408/?captions=ger&quality=12)
 
 -->
 
@@ -165,7 +165,7 @@ Forms Manager [unterstützt jetzt die Versionierung für adaptive Forms (Kernkom
 
 #### Cloud Manager MCP-Server {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480351/?captions=ger&quality=12)
 
 Moderne IDEs verwenden das Model Context Protocol (MCP), um umfangreichen Sprachmodellen (LLMs) das Aufrufen von Tools zu ermöglichen, die von MCP-Servern bereitgestellt werden. Anstatt direkt in allgemeine API-Spezifikationen zu integrieren, können Entwickler ihre Absicht einfach in natürlicher Sprache beschreiben.
 
