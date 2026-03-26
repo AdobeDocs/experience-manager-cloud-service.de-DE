@@ -233,13 +233,13 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Die Funktionen [Fehlerbehebung bei Pipelines](/help/ai-in-aem/agents/brand-experience/development/development.md) des Entwicklungsagenten helfen Entwicklerinnen und Entwicklern bei der effizienten Diagnose und Lösung von Problemen in AEM as a Cloud Service-Bereitstellungen. Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web Tier Config-Pipeline** als Teil eines Beta-Programms.
 
-aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 #### IDE AI-Tools für die Migration von AEM 6.5 zu AEM Cloud Service (Alpha-Programm) {#cm-ide-migration}
 
-Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
+Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-ai-ide-tools-feedback@adobe.com)aemcs-ai-ide-tools-feedback@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aemcs-ai-ide-tools-feedback@adobe.com)aemcs-ai-ide-tools-feedback@adobe.com.
 
 #### Edge-Authentifizierung für Edge Delivery Services (Beta-Programm) {#edge-authentication}
 
@@ -259,7 +259,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
