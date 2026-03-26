@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern de
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 92%
 
 ---
 
@@ -54,10 +54,13 @@ Wenn Sie die Möglichkeiten zum Erstellen eigener Erweiterungen erkunden möchte
 
 Mit dem [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/) können Sie Ihre Erweiterungen auf Instanzbasis aktivieren oder deaktivieren, auf Erweiterungen von Adobe zugreifen, einschließlich der Erweiterungen für den universellen Editor, und vieles mehr.
 
-## Erweiterungspunkte {#extension-points}
+### Erweiterungspunkte {#extension-points}
 
-Neben der UI-Erweiterbarkeit bietet der universelle Editor viele weitere flexible Erweiterungspunkte, um die nahtlose Integration benutzerdefinierter Geschäftsanforderungen zu ermöglichen.
+Eine vollständige Liste der in der Benutzeroberfläche des universellen Editors verfügbaren Erweiterungspunkte finden Sie in der Adobe Developer-Dokumentation [Die Erweiterungspunkte des universellen Editors.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+Zusätzlich zur UI-Erweiterbarkeit bietet der universelle Editor weitere Anpassungsoptionen, um die nahtlose Integration benutzerdefinierter Geschäftsanforderungen zu ermöglichen.
 
 * **[Blöcke](https://www.aem.live/developer/block-collection)**: Im einfachen JSON-Format können Projekte die für die Inhaltserstellung verfügbaren Blöcke und Funktionen anpassen.
-* **[Benutzerdefinierte Benutzeroberfläche](#extending-ui)**: Erweiterungen können die erforderliche Benutzeroberfläche in Seiten-Panels oder modalen Dialogfeldern anzeigen.
 * **[Ereignisse](/help/implementing/universal-editor/events-universal-editor.md)**: Erweiterungen empfangen Ereignisse zu den von Autorinnen oder Autoren auf der Seite verwendeten Aktionen und Auswahlen und reagieren entsprechend.
