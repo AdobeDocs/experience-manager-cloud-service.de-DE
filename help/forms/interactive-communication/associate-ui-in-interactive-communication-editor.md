@@ -6,10 +6,10 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 3%
+source-wordcount: '639'
+ht-degree: 4%
 
 ---
 
@@ -57,7 +57,7 @@ Verantwortlich für die Systemeinrichtung, Governance, Backend-Integrationen und
 
 ### &#x200B;2. Autor
 
-Entwirft und verwaltet die interaktive Kommunikation über die Benutzeroberfläche „Verknüpfen“. ß
+Entwirft und verwaltet die interaktive Kommunikation und konfiguriert sie für die Associate-Benutzeroberfläche (einschließlich Aktivierung der Associate-Ansicht und optionalem Workflow).
 
 | Verantwortung | Fokus |
 |---------------|-------|
@@ -78,7 +78,7 @@ Verwendet die Associate-Benutzeroberfläche, um Kunden zu unterstützen, Informa
 
 >[!NOTE]
 >
-> Der Associate-Partner muss Teil der Gruppe **forms-Associates** sein.
+> Associates müssen Teil der Gruppe **forms-Associates** sein. Für Autoren, die auch über die Benutzeroberfläche „Verknüpfen“ in der Autoreninstanz übermitteln, fügen Sie sie **workflow-users** hinzu.
 
 ## Dynamische Anwendungsfälle
 
@@ -92,36 +92,22 @@ Die Associate-Benutzeroberfläche unterstützt die sofortige Erstellung personal
 | **Öffentlicher Sektor** | Erstellen von Polizeiprüfungsberichten, Belegen des Bürgerdienstes, Beschwerdebriefen und Zusammenfassungen der Fallaktualisierung vor Ort. |
 | **Regierung** | Erstellen Sie Zusammenfassungen zum Antragsstatus, Service-Genehmigungsschreiben und Echtzeit-Kommunikation für Registrierungen für Sozialhilfesysteme. |
 
-## Aktivieren des Workflows „Benutzeroberfläche verknüpfen“
+## Aktivieren der Associate-Benutzeroberfläche
 
-Der Autor kann die folgenden Schritte ausführen, um eine interaktive Kommunikation (IC) für den Zugriff auf die Associate-Benutzeroberfläche zu konfigurieren und zu veröffentlichen:
+Autoren aktivieren die Benutzeroberfläche „Verknüpfen“ und konfigurieren in „Einstellungen für interaktive Kommunikation **optional einen Workflow für Übermittlungen**:
 
->[!NOTE]
->
-> Unterstützte Komponenten für Zuordnung: Datumsfeld, numerisches Feld, Textfeld, DateTimeField, DateField, Checkbox, Optionsfeld, Dropdown.
+1. **Verknüpfte Ansicht aktivieren** - Markieren Sie unter **Eigenschaften verknüpfen** die Option **Bearbeitung verknüpfter Ansichten aktivieren**, klicken Sie dann auf **Änderungen anwenden** und speichern Sie das Dokument.
+2. **Workflow konfigurieren (optional)** - Aktivieren Sie **Workflow** **„Workflow für Update konfigurieren**, wählen Sie ein Workflow-Modell aus und legen Sie optional eine Erfolgsmeldung und eine Umleitungs-URL fest.
+3. **Bearbeitbare Felder konfigurieren** - Aktivieren Sie die Felder, die Verknüpfungen bearbeiten und Validierungen festlegen können.
+4. **Veröffentlichen und freigeben** - Veröffentlichen Sie die IC und teilen Sie den Link mit Partnern.
 
-### IC erstellen
-
-Entwerfen und konfigurieren Sie die interaktive Kommunikation, um sicherzustellen, dass Branding, Datenbindungen, Compliance-Regeln und Integrationen korrekt festgelegt sind.
-
-### Aktivieren der Associate-Benutzeroberfläche
-
-Aktivieren Sie in der oberen Aktionsleiste die Option Benutzeroberfläche verknüpfen , um die Benutzeroberfläche für verknüpfungsgesteuerte Ereignisse verfügbar zu machen.
-
-### Aktivieren der Benutzeroberfläche „Verknüpfen“ in der Komponente
-
-### Konfigurieren bearbeitbarer Felder
-
-Aktivieren Sie im Abschnitt Erforderliche Felder die Felder, die Verknüpfungen bearbeiten können.
-Legen Sie Validierungen fest, um eine genaue und kontrollierte Dateneingabe zu gewährleisten.
-
-### IC veröffentlichen
-
-Nachdem Sie alle Konfigurationen abgeschlossen haben, veröffentlichen Sie die interaktive Kommunikation, um sicheren Zugriff zu erhalten.
-
-### Freigeben der veröffentlichten ID für Associates
-
-Stellen Sie dem Associate den veröffentlichten IC-Link zur Verfügung, über den er sich authentifizieren, kundenspezifische Informationen eingeben und die endgültige Kommunikation mit gültigen Eingaben generieren kann.
+Schrittweise Anweisungen mit Screenshots und dem Verhalten bei Übermittlung/Workflow (Autor in Autor vs. Verknüpfen in Veröffentlichung) finden Sie unter [Aktivieren und Konfigurieren der Benutzeroberfläche „Verknüpfen“ für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md). Informationen zum Erstellen eines Workflows, der PDF aus IC-Übermittlungen generiert, finden Sie unter [Übermittlungs-Workflow für die Associate-Benutzeroberfläche - IC-Generierung der PDF-Ausgabe](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md).
 
 Die **Associate-Benutzeroberfläche** schließt die Lücke zwischen der strukturierten Inhaltserstellung und der Echtzeit-Kundeninteraktion.\
 Durch die Kombination von intuitivem Design, robuster Backend-Konfiguration und strikter Compliance-Kontrolle können Unternehmen **schnelle, genaue und personalisierte Kommunikation** skaliert bereitstellen.
+
+## Siehe auch
+
+- [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
+- [Übermittlungs-Workflow für Associate UI - IC-Generierung der PDF-Ausgabe](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
