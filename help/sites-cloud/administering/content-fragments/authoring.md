@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 2807f3e0890bc291d4005b70c303659f7a3f643e
+source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 95%
@@ -58,6 +58,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
      >[!WARNING]
      >
      >Der ursprüngliche Editor wird auf derselben Registerkarte geöffnet. Es wird nicht empfohlen, beide Editoren gleichzeitig geöffnet zu haben.
+
    * Alle Warnungen, die für das Fragment und Ihr Konto gültig sind. Wenn Sie beispielsweise nicht über die erforderlichen Berechtigungen zum Bearbeiten des Fragments verfügen oder ein anderer Benutzer die Fragmente [ausgecheckt](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in) haben Sie nur Lesezugriff.
 
 * linker Bereich: zeigt die **[Varianten](#variations)** für das Inhaltsfragment und dessen **Felder** an:
@@ -132,7 +133,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* [Unter Verwendung der Funktion „Varianten generieren“ &#x200B;](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+* [Unter Verwendung der Funktion „Varianten generieren“ ](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -150,7 +151,7 @@ So erstellen Sie eine Variante Ihres Inhaltsfragments:
    >
    >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante &#x200B;](assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](assets/cf-authoring-create-variation-01.png)
 
 1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
@@ -273,7 +274,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
