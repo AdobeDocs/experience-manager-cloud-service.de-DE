@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 98%
+source-wordcount: '3342'
+ht-degree: 86%
 
 ---
 
@@ -93,6 +93,9 @@ Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist
 
 Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von Informationen zu Ihren Inhaltsfragmenten. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
 
+* **Titel**
+   * Ein Schlosssymbol gibt an, dass das Fragment [ausgecheckt](#check-out-and-check-in) und von einem Benutzer gesperrt wurde. Wenn Sie das Schlosssymbol auswählen, werden Details zu dem Konto angezeigt, das das Fragment ausgecheckt hat.
+   * Das Informationssymbol (i) bietet schnellen Zugriff auf zusätzliche fragmentspezifische Informationen im rechten Bedienfeld.
 * **Name**
    * Stellt einen Link zum Öffnen des Fragments im Editor bereit.
 * **Modell**
@@ -187,8 +190,8 @@ Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, d
 * **[Ersetzen](#find-and-replace)**
 * **Verschieben**
 * **Umbenennen**
+* **[Auschecken und Einchecken](#check-out-and-check-in)**
 * **[Löschen](#deleting-a-fragment)** (nur für nicht veröffentlichte Fragmente verfügbar)
-
 
 >[!NOTE]
 >
@@ -407,7 +410,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
@@ -481,6 +484,64 @@ Vor dem Ersetzen werden die Validierungskriterien überprüft und Sie werden üb
 >Wenn Sie mehr als 20 Inhaltsfragmente auswählen, wird die Nachricht **Suchen und Ersetzen ist nicht möglich** angezeigt.
 
 ![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
+
+## Auschecken und Einchecken {#check-out-and-check-in}
+
+AEM bietet Ihnen folgende Möglichkeiten:
+
+* [Auschecken](#check-out-a-content-fragment) eines Inhaltsfragments, das andere Benutzer daran hindert, am Fragment zu arbeiten
+* [Einchecken](#check-in-a-content-fragment) von Inhaltsfragmenten, damit andere Benutzer die Arbeit mit dem Fragment fortsetzen können
+
+Beim Auschecken eines Fragments wird es gesperrt (`jcr:lock`). Ein Schlosssymbol in der Spalte **Titel** zeigt ein gesperrtes Fragment an. Wenn Sie das Vorhängeschloss-Symbol auswählen, erhalten Sie Details zu dem Konto, das das Fragment ausgecheckt hat.
+
+Sie können gesperrte Fragmente bearbeiten, veröffentlichen, die Veröffentlichung aufheben, verschieben oder löschen. Andere Benutzer können diese Aktionen erst dann für das Fragment ausführen, wenn Sie das Fragment eingecheckt haben. Sie können jedoch weiterhin die Metadaten für das gesperrte Fragment ändern.
+
+Mit dieser Funktion können Konflikte verhindert werden, wenn mehrere Benutzende beim Bearbeiten von Fragmenten zusammenarbeiten.
+
+>[!NOTE]
+>
+>Um ein Inhaltsfragment ein- oder auschecken zu können, benötigen Sie Schreibzugriff.
+
+>[!CAUTION]
+>
+>Es ist möglich, einen Ordner zu löschen, der ein ausgechecktes Inhaltsfragment enthält.
+>
+>Stellen Sie vor dem Löschen eines Ordners sicher, dass er keine Inhaltsfragmente (oder andere digitale Assets) enthält, die von Benutzenden ausgecheckt wurden.
+
+>[!NOTE]
+>
+>Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ ](/help/assets/check-out-and-submit-assets.md).
+
+### Auschecken eines Inhaltsfragments {#check-out-a-content-fragment}
+
+So checken Sie ein Fragment aus:
+
+1. Navigieren **in der** „Inhaltsfragmente“ zum Speicherort des Inhaltsfragments.
+1. Wählen Sie das Fragment aus.
+1. Wählen **Auschecken** aus der Symbolleiste aus.
+1. Bestätigen Sie die Aktion **Auschecken** .
+
+   * Ein Schlosssymbol in der Spalte **Titel** gibt an, dass das Fragment gesperrt ist und nur von Ihnen bearbeitet werden kann.
+   * Wenn ein(e) andere(r) Benutzende(r) das Fragment zur Bearbeitung öffnet, wird eine Meldung angezeigt, die besagt, dass er/sie sich im schreibgeschützten Modus befindet.
+
+### Einchecken eines Inhaltsfragments {#check-in-a-content-fragment}
+
+So checken Sie ein Fragment in aus:
+
+1. Navigieren **in der** „Inhaltsfragmente“ zum Speicherort des Inhaltsfragments.
+1. Wählen Sie das Fragment aus.
+1. Wählen **Einchecken** in der Symbolleiste aus.
+1. Bestätigen Sie die Aktion **Einchecken**.
+
+## Erzwungenes Einchecken (Administrator) {#forced-adminstrator-check-in}
+
+Es kann vorkommen, dass der Benutzer, der ein Inhaltsfragment ausgecheckt hat, nicht zum Einchecken des Fragments verfügbar ist.
+
+In solchen Fällen kann ein Administrator den Vorgang **Einchecken** ausführen.
+
+>[!NOTE]
+>
+>Siehe auch Assets [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 
