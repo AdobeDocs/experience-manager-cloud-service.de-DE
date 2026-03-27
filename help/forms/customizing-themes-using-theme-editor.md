@@ -208,7 +208,7 @@ Sie können verschiedene Stile für verschiedene Gerätegrößen definieren, dam
 
    ![Geräteemulator im Design-Editor - Lineal- und Geräteoptionen (Desktop, Tablet, iPad, kleinerer Bildschirm)](/help/forms/assets/custom-theme-emulator.png)
 
-Ein Design kann daher je nach Gerät unterschiedliche Abstände, Schriftgrößen oder layoutbezogene Stile aufweisen, die dem Verhalten des [Design-Editors für AEM 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=de) responsiven Stilen entsprechen.
+Ein Design kann daher je nach Gerät unterschiedliche Abstände, Schriftgrößen oder layoutbezogene Stile aufweisen, die dem Verhalten des [Design-Editors für AEM 6.5 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=de) responsiven Stilen entsprechen.
 
 ## Erweiterte CSS-Überschreibungen verwenden {#use-advanced-css-overrides}
 
