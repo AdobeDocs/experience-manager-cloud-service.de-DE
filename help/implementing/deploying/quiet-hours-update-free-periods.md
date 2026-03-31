@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die betrieblichen Auswirkungen automatischer 
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
+source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 # Ruhezeiten und Freie Zeiträume aktualisieren {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ &#x200B;](/help/implementing/deploying/aem-version-updates.md) sind.
+>Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ ](/help/implementing/deploying/aem-version-updates.md) sind.
 
-Die [automatischen Wartungs-Updates](/help/implementing/deploying/aem-version-updates.md) von AEM as a Cloud Service stellen sicher, dass Ihre Instanzen sicher sind und mit den neuesten Wartungsversionen auf dem neuesten Stand sind. In einigen Fällen (z. B. bei Go-Live-Ereignissen) müssen Sie diese kritischen Arbeitszeiten jedoch möglicherweise vor potenziellen Unterbrechungen „schützen“. Daher bietet AEM as a Cloud Service die Möglichkeit, einen Zeitrahmen festzulegen, in dem automatische Aktualisierungen für Ihre laufenden Programme nicht vorgenommen werden.
+Die [automatischen Wartungs-Updates](/help/implementing/deploying/aem-version-updates.md) von AEM as a Cloud Service stellen sicher, dass Ihre Instanzen sicher sind und mit den neuesten Wartungsversionen auf dem neuesten Stand sind. In einigen Fällen (z. B. bei Go-Live-Ereignissen) müssen Sie diese kritischen Arbeitszeiten jedoch möglicherweise vor potenziellen Unterbrechungen „schützen“. AEM as a Cloud Service bietet Optionen zur Auswahl von Zeiträumen, in denen die automatischen Wartungsaktualisierungen für Ihre Programme angehalten werden. Dadurch werden nicht alle Infrastrukturaktivitäten verhindert. Plattformänderungen auf niedrigerer Ebene außerhalb von Wartungs-Updates können dennoch stattfinden (z. B. IMS).
 
 Sie können diese Zeitrahmen mithilfe von zwei Planungsoptionen konfigurieren:
 
