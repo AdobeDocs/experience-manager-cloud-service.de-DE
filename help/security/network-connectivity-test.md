@@ -43,11 +43,11 @@ Hintergrundinformationen zur Bereitstellung von VPN, dedizierter Ausgangs-IP ode
 1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und öffnen Sie Ihr Unternehmen und Ihr Programm.
 1. Öffnen Sie die **Umgebungen** für das Programm. Wählen Sie in der linken Seitenleiste **Netzwerkinfrastruktur** aus.
 
-1. Suchen Sie auf **Seite &quot;**&quot; Ihre Infrastruktur in der Tabelle. Wählen Sie entweder eine Zeile aus, um das Testerlebnis zu öffnen, oder öffnen Sie das Menü für Zeilenaktionen (![Adobe Spectrum Small More icon für das Menü mit den horizontalen ](assets/ellipsis.svg)) und wählen Sie **Test**.
+1. Suchen Sie auf **Seite &quot;**&quot; Ihre Infrastruktur in der Tabelle. Wählen Sie entweder eine Zeile aus, um das Testerlebnis zu öffnen, oder öffnen Sie das Menü für Zeilenaktionen (![Adobe Spectrum Small More icon für das Menü mit den horizontalen &#x200B;](assets/ellipsis.svg)) und wählen Sie **Test**.
 
    ![Cloud Manager-Programmumgebungen mit dem Menü Netzwerkinfrastrukturtabelle, Infrastrukturzeilen und Zeilenaktionen , das zum Starten des Netzwerkkonnektivitätstests verwendet wird](assets/network-connectivity-test-cloud-manager-open-test-from-infrastructure-list.png)
 
-1. Das **Netzwerktest** wird geöffnet. Geben Sie **Host** und **Port** ein, wählen Sie **Test** aus und überprüfen Sie die DNS-Auflösung, das Öffnen des Ports, die HTTP-Konnektivität und die Erreichbarkeit im Ergebnisbereich. Optionale Aktionen wie **In Zwischenablage kopieren** und der aktuelle Testverlauf werden im Dialogfeld angezeigt. Informationen [ Interpretation der einzelnen ](#understanding-results) finden Sie unter „Grundlegendes zu Ergebnissen“.
+1. Das **Netzwerktest** wird geöffnet. Geben Sie **Host** und **Port** ein, wählen Sie **Test** aus und überprüfen Sie die DNS-Auflösung, das Öffnen des Ports, die HTTP-Konnektivität und die Erreichbarkeit im Ergebnisbereich. Optionale Aktionen wie **In Zwischenablage kopieren** und der aktuelle Testverlauf werden im Dialogfeld angezeigt. Informationen [&#x200B; Interpretation der einzelnen &#x200B;](#understanding-results) finden Sie unter „Grundlegendes zu Ergebnissen“.
 
    ![Testdialogfeld für Cloud Manager-Netzwerkkonnektivität mit Host- und Port-Feldern, Testaktion und Ergebnissen für DNS-Auflösung, Port-Öffnung, HTTP-Konnektivität und Erreichbarkeit](assets/network-connectivity-test-cloud-manager-results-dialog.png)
 
