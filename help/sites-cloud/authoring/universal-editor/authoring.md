@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '3002'
+source-wordcount: '3020'
 ht-degree: 69%
 
 ---
@@ -92,7 +92,9 @@ Der [Eigenschaftenbereich](/help/sites-cloud/authoring/universal-editor/navigati
 
 ![Rich-Text-Komponente im Bedienfeld „Eigenschaften“](assets/rich-text-properties-panel.png)
 
-Tippen Sie auf den Eintrag, um ein Dialogfeld mit einer größeren Arbeitsfläche zu öffnen und den Rich-Text zu bearbeiten.
+#### Der Modal-Editor {#modal-editor}
+
+Tippen Sie auf den Eintrag im [Bedienfeld Eigenschaften](#properties-rail), um einen modalen Editor zu öffnen, der eine größere Arbeitsfläche zum Bearbeiten von Rich-Text bietet.
 
 ![Dialogfeld für die Bearbeitung von Rich-Text](assets/rich-text-canvas.png)
 
@@ -136,10 +138,12 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * **Ausrücken**
 * **Als Text einfügen**
    * Formatierung aus dem Text in der Zwischenablage entfernen, bevor er in den universellen Editor eingefügt wird.
+* **Sonderzeichen**
+   * Fügen Sie ein Sonderzeichen in Ihren Text ein.
 * **Alle Formatierungen entfernen**
    * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -156,7 +160,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -233,7 +237,7 @@ Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingef
    * Wählen Sie **Eigenschaftenbedienfeld das** „Löschen“ aus.
 
      ![Löschen einer Komponente](assets/ue-delete-component.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Löschen“ aus.
+   * Wählen Sie **Kontextmenü die Option**Löschen“ aus.
      ![Löschen aus dem Kontextmenü](assets/delete-from-context-menu.png)
 
 Die ausgewählte Komponente wird gelöscht.
@@ -265,7 +269,7 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
 #### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 
@@ -311,7 +315,7 @@ Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwische
 1. Sie haben dann folgende Möglichkeiten:
    * Klicken Sie auf **Kopieren**-Symbol im [Eigenschaftenbereich.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![Aus Bedienfeld kopieren](assets/copy-from-panel.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Kopieren“ aus.
+   * Wählen Sie **Kontextmenü die Option**Kopieren“ aus.
      ![Aus Kontextmenü kopieren](assets/copy-from-context-menu.png)
 1. Wählen Sie die Komponente aus, _nach_ der Sie die kopierte Komponente einfügen möchten.
 1. Sie haben dann folgende Möglichkeiten:

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor (RTE) im universellen Ed
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Dieser RTE kann mithilfe von [Komponentenfiltern konfiguriert werden.](/help/imp
 
 >[!NOTE]
 >
->Wenn Sie ein universelles Editor-Projekt starten, sind alle Rich-Text-Funktionen, die Ihr Backend unterstützt (AEM mit Edge Delivery- oder Headless-Implementierung), automatisch aktiv.
+>Wenn Sie ein universelles Editor-Projekt starten, sind alle Rich-Text-Funktionen, die Ihr Backend unterstützt (AEM mit Edge Delivery- oder Headless-Implementierung), automatisch aktiviert und [im modalen Editor-Fenster des RTE verfügbar.](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* Sie können die Optionen deaktivieren, die Sie nicht benötigen.
 >* Das Aktivieren von Optionen, die nicht mit Ihrem Projekttyp kompatibel sind, wird nicht unterstützt.
@@ -36,7 +36,7 @@ Die RTE-Konfiguration besteht aus zwei Teilen:
 * [`toolbar`](#toolbar): Die Symbolleistenkonfiguration steuert, welche Bearbeitungsoptionen in der Benutzeroberfläche verfügbar sind und wie sie organisiert sind.
 * [`actions`](#actions): Die Aktionskonfiguration ermöglicht es Ihnen, das Verhalten und das Erscheinungsbild einzelner Bearbeitungsaktionen anzupassen.
 
-Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit &#x200B;](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
+Diese Konfigurationen können als Teil eines [Komponentenfilters“ mit ](/help/implementing/universal-editor/filtering.md) Eigenschaft `rte` definiert werden.
 
 ```json
 [
@@ -77,7 +77,7 @@ Die Konfiguration der Symbolleiste steuert, welche Bearbeitungsoptionen in der B
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -292,6 +292,82 @@ Einzüge verfügen über eine Konfiguration auf Funktionsebene, die den Umfang d
 >
 >Die Verschachtelung von Listen über die Tabulatortaste/Umschalt+Tabulatortaste funktioniert unabhängig von den allgemeinen Einzugseinstellungen.
 
+### Sonderzeichen {#special-characters}
+
+Die `special_characters` Einfügeaktion öffnet ein Popover zur Zeichenauswahl, in dem Sonderzeichen (Symbole, mathematische Operatoren, Währungszeichen, Satzzeichen, Pfeile usw.) an der Cursorposition eingefügt werden können.
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+Ein Standardsatz von 44 häufig verwendeten Zeichen ist standardmäßig enthalten. Die Zeichenliste kann über zwei Konfigurationsoptionen angepasst werden:
+
+* `appendCharacters` - Dem Standardsatz Zeichen hinzufügen
+* `characters` - Standardsatz vollständig ersetzen
+
+Jeder Zeicheneintrag hat `character` (das Unicode-Zeichen) und `title` (QuickInfo / barrierefreier Name).
+
+#### Zeichen an Standardwerte anhängen {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### Standard-Sonderzeichen ersetzen {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### Beide Optionen zusammen {#both-special-character-options}
+
+In diesem Beispiel wird `characters` als Basis verwendet und dann werden zusätzliche Zeichen mithilfe von `appendCharacters` angehängt.
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### Als Text einfügen {#paste-as-text}
 
 Die `paste_text`-Editor-Aktion ermöglicht einen standardmäßigen Workflow zum Einfügen als reiner Text .
@@ -364,7 +440,9 @@ Im Folgenden finden Sie ein Beispiel für eine vollständige Konfiguration.
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -401,6 +479,17 @@ Im Folgenden finden Sie ein Beispiel für eine vollständige Konfiguration.
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {
