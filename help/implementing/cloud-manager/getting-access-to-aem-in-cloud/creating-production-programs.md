@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 99%
+source-wordcount: '1510'
+ht-degree: 67%
 
 ---
 
@@ -46,36 +46,56 @@ Siehe [Zusätzliche Optionen für Produktionsprogramme](#options).
 
 1. Klicken Sie auf **Weiter**.
 
+1. Wählen Sie auf **Registerkarte** die Sicherheitsoptionen aus, die Sie verwenden möchten. Siehe [Sicherheit](#security).
+
+   ![Registerkarte „Sicherheit“ im Assistenten „Für Produktion einrichten“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+
+1. Klicken Sie auf **Weiter**.
+
 1. Wählen Sie im Listenfeld **Lösungen und Add-ons** eine oder mehrere Lösungen aus, die im Programm enthalten sein sollen.
 
    * Wenn Sie sich nicht sicher sind, ob Sie ein oder mehrere Programme für die verschiedenen verfügbaren Lösungen benötigen, wählen Sie diejenige aus, die für Sie am interessantesten ist. Sie können zusätzliche Lösungen aktivieren, indem Sie [das Programm später bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Weitere Empfehlungen zur Programmeinrichtung finden Sie im Dokument [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
-   * Sie müssen mindestens eine Lösung für die Programmerstellung auswählen. Sie können beispielsweise **Edge Delivery Services** auswählen, um eine vollständig verwaltete CDN-Lösung zu erhalten, die digitale Erlebnisse optimiert. Siehe [Informationen zur Verwendung von Edge Delivery Services zum Bereitstellen Ihres Cloud Manager-Projekts](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+   * Sie müssen mindestens eine Lösung für die Programmerstellung auswählen. Sie können beispielsweise **Edge Delivery Services** auswählen, um eine vollständig verwaltete CDN-Lösung zu erhalten, die digitale Erlebnisse optimiert. Siehe [Informationen zur Verwendung von Edge Delivery Services zur Bereitstellung Ihres Cloud Manager-Projekts](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-   ![Auswählen von Lösungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
+   * Klicken Sie auf ![Pfeilsymbol Größe 300](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
+<!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
 
+    >[!NOTE]
+    >
+    >Wenn Ihr Programm Edge Delivery Services für die Bereitstellung verwendet, ist möglicherweise keine Veröffentlichungsebene erforderlich. Mit der Funktion „Flexible Veröffentlichungsebene“ (Beta) können Sie konfigurieren, ob auf der Registerkarte „Lösungen und Add-ons“ eine Veröffentlichungsebene bereitgestellt werden soll. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+    
+    ![Lösungen auswählen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
+
+1. Klicken Sie auf **Weiter**.
+
+1. Beachten Sie **dass die Registerkarte** Bereitstellungstyp“ auf der Grundlage der im vorherigen Schritt ausgewählten Lösungen und Add-ons bereits ausgefüllt ist. Wenn Sie **AEM Publish** auswählen, können Sie diese später bei Bedarf bereitstellen.
+
+   ![Registerkarte Versandtyp](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
 
    <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
 
+1. Klicken Sie auf **Weiter**.
 
+1. Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkarte **SLA** als zweite oder dritte Registerkarte im Dialogfeld &quot;**`Set up for production`**&quot; angezeigt. Siehe [SLA](#sla).
 
-   * Klicken Sie auf ![Pfeilsymbol Größe 300](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen. <!-- such as the **Commerce** add-on option under **Sites**. -->
+   ![SLA-Optionen](assets/create-production-program-sla.png)
 
-   ![Add-ons auswählen](assets/setup-prod-commerce.png)
+   Sites und Forms bieten standardmäßig 99,9 % service level agreement (SLA).
 
-1. Wenn Sie mit der Auswahl Ihrer Lösungen und Add-ons fertig sind, klicken Sie auf **Fortsetzen**.
+1. Klicken Sie auf **Weiter**.
 
-1. Geben Sie auf der Registerkarte **Tag der Veröffentlichung** das Datum ein, an dem Ihr Produktionsprogramm veröffentlicht werden soll.
+1. Geben **auf der Registerkarte** Tag der Live-Schaltung“ das Datum ein, an dem Ihr Produktionsprogramm veröffentlicht werden soll.
 
-   ![Geplanten Tag der Live-Schaltung definieren](assets/set-up-go-live.png)
+   ![Geplanten Tag der Live-Schaltung definieren](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-go-live-date.png)
 
    * Sie können dieses Datum jederzeit bearbeiten.
    * Das Datum dient zu Informationszwecken und löst das Go Live-Widget auf der Seite [**Programmübersicht** aus](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview). Diese Funktion bietet zeitnah produktinterne Links zu Best Practices für AEM as a Cloud Service, um ein reibungsloses Live-Erlebnis zu gewährleisten.
 
 1. Klicken Sie auf **Erstellen**. Cloud Manager erstellt Ihr Programm und zeigt es zur Auswahl auf der Landingpage an.
 
-   ![Übersicht über Cloud Manager](assets/navigate-cm.png)
+   ![Übersicht über Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-my-programs.png)
 
 ## Zusätzliche Optionen für Produktionsprogramme {#options}
 
@@ -85,18 +105,57 @@ Je nachdem, welche Berechtigungen Ihrer Organisation verfügbar sind, stehen Ihn
 
 Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkarte **Sicherheit** als erste Registerkarte im Dialogfeld **`Set up for production`** angezeigt.
 
-![Sicherheitsoptionen](assets/create-production-program-security.png)
+![Sicherheitsoptionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
 
 Die Registerkarte **Sicherheit** bietet die Möglichkeit, **HIPAA** und/oder **WAF-DDOS-Schutz** oder beide Optionen für Ihr Produktionsprogramm zu aktivieren.
 
 Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial of Service) von Adobe erleichtert die Cloud-basierte Sicherheit als Teil eines mehrschichtigen Ansatzes zum Schutz vor Sicherheitslücken.
 
 * **HIPAA** - Diese Option ermöglicht die Implementierung der HIPAA-fähigen Lösung von Adobe.
-   * Hier finden Sie [weitere Informationen](https://www.adobe.com/trust/compliance/hipaa-ready.html) zur Implementierung einer HIPAA-fähigen Lösung von Adobe.
+   * Hier finden Sie [weitere Informationen](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) zur Implementierung einer HIPAA-fähigen Lösung von Adobe.
    * Die HIPAA-Option kann nach der Programmerstellung weder aktiviert noch deaktiviert werden.
 * **WAF-DDOS-Schutz**: Diese Option aktiviert die Firewall der Web-Anwendung über Regeln, um Ihre Anwendung zu schützen.
    * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
    * Unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) finden Sie Informationen dazu, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+
+### Flexible Veröffentlichungsebene (Beta) {#flexible-publish-tier}
+
+>[!NOTE]
+>
+>Die hier beschriebene flexible Veröffentlichungsebene befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+
+Wenn für Ihr Unternehmen die Funktion „Flexible Veröffentlichungsebene“ aktiviert ist, können Sie konfigurieren, ob für die Umgebungen Ihres Programms eine Veröffentlichungsebene erforderlich ist. Diese Option wird auf der Registerkarte **Bereitstellungstyp** im Dialogfeld **Für Produktion einrichten** angezeigt (während der [Programmerstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)).
+
+![Registerkarte Versandtyp im Assistenten „Für Produktion einrichten“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+
+Es wird auch im Dialogfeld **Programm bearbeiten** angezeigt (wenn Sie [Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)).
+
+![Das Dialogfeld „Programm bearbeiten“ mit den Optionen für den Versandtyp wird angezeigt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-delivery-type.png)
+
+Nicht alle Architekturen erfordern eine Veröffentlichungsebene. Die folgende Tabelle zeigt, welche Architekturen eine Veröffentlichungsebene erfordern und welche nicht:
+
+| Architektur | Veröffentlichungsebene |
+| --- | --- |
+| Traditionelles AEM Sites | Erforderlich |
+| Headless/API-First | Erforderlich |
+| Edge Delivery Services | Nicht erforderlich |
+
+Indem Sie die Veröffentlichungsebene nur bei Bedarf aktivieren, können Teams Folgendes tun:
+
+* Schnellere Bereitstellung von Umgebungen.
+* Vereinfachung der Infrastruktur.
+* Reduzierung unnötiger Komponenten.
+
+**Funktionsweise**
+Wenn die Funktion für die flexible Veröffentlichungsebene für Ihre Organisation aktiviert ist:
+
+* Alle neuen Umgebungen im Programm werden standardmäßig nur mit der **Autorenebene** bereitgestellt. Eine Informationsmeldung, die auf der Benutzeroberfläche angezeigt wird, bestätigt dieses Verhalten.
+* Wenn der/die Benutzende während **Programmerstellung die Option** AEM-Veröffentlichung“ auswählt, wird die Veröffentlichungsebene aktiviert und mit &quot;*Umgebungen“*.
+* Die Veröffentlichungsebene kann auch später durch Bearbeiten des Programms aktiviert werden. Siehe [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+
+>[!NOTE]
+>
+>Wenn Ihr Programm Edge Delivery Services für die Bereitstellung von Inhalten und AEM Author für die Inhaltserstellung verwendet, ist keine Veröffentlichungsebene erforderlich. Inhalte werden über Edge Delivery bereitgestellt und durchlaufen nicht die AEM-Veröffentlichungsebene. Siehe Informationen zu Edge Delivery Services mit AEM-Authoring (Beta).
 
 ### SLA {#sla}
 
@@ -119,7 +178,7 @@ Zusätzlich zu den erforderlichen Berechtigungen umfasst die Verwendung des SLA 
 * Sowohl 99,99 % SLA als auch zusätzliche Berechtigungen für die Veröffentlichungsregion müssen der Organisation zur Verfügung stehen, wenn 99,99 % SLA auf das Programm angewendet wird.
 * Cloud Manager überprüft, ob eine nicht verwendete Berechtigung für [zusätzliche Veröffentlichungsregion](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) verfügbar ist, bevor 99,99 % SLA auf das Programm angewendet wird.
 * Wenn ein Programm bereits eine Produktionsumgebung mit mindestens einer zusätzlichen Veröffentlichungsregion enthält, prüft Cloud Manager beim Bearbeiten nur die Verfügbarkeit einer SLA-Berechtigung von 99,99 %.
-* Damit 99,99 % SLA und die Berichterstellung aktiviert werden können, muss die [Produktions-/Staging-Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-environments) erstellt worden sein und es muss mindestens eine zusätzliche Veröffentlichungsregion auf die Produktions-/Staging-Umgebung angewendet worden sein.
+* Für die Aktivierung von 99,99 % SLA und die Berichterstellung muss [Produktions-/Staging](/help/implementing/cloud-manager/manage-environments.md#adding-environments)Umgebung erstellt und mindestens eine zusätzliche Veröffentlichungsregion auf die Produktions-/Staging-Umgebung angewendet worden sein.
    * Wenn Sie ein [erweitertes Netzwerk](/help/security/configuring-advanced-networking.md) verwenden, stellen Sie sicher, dass Sie die Empfehlungen im Dokument [Hinzufügen mehrerer Veröffentlichungsregionen zu einer neuen Umgebung](/help/implementing/cloud-manager/manage-environments.md#adding-regions) befolgen, damit die Konnektivität im Falle eines regionalen Ausfalls erhalten bleibt.
 * Ihr SLA-Programm von 99,99 % muss immer mindestens eine zusätzliche Veröffentlichungsregion umfassen. Benutzende dürfen den letzten verbleibenden zusätzlichen Veröffentlichungsbereich nicht aus dem Programm löschen.
 * Ihr SLA von 99,99 % wird für Produktionsprogramme unterstützt, für die die Sites- oder Forms-Lösung aktiviert ist.

@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
+source-git-commit: 7663af90b17e4b9d9567041c3bed8e20465c87d9
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 33%
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um die Konfiguration der produktionsfremden Full-Stack-
    * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus der die Pipeline erstellen soll. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
    * **Strategie erstellen**
       * **Vollständiger Build**: Erstellt jedes Mal alle Module im Repository.
-      * BETA **Smart Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build).
+      * BETA **Smart Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
 
         >[!IMPORTANT]
         >
@@ -180,7 +180,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
 
-## Über die Verwendung von Smart Build in einer produktionsfremden Pipeline{#about-smart-build}
+## Über die Verwendung von Smart Build in einer produktionsfremden Pipeline{#about-smart-build-non-production-pipeline}
 
 **Smart Build** in Cloud Manager ist eine optimierte Build-Strategie für produktionsfremde Pipelines. Smartes Erstellen reduziert Build-Zeiten, indem Module zwischengespeichert und nur die Module neu erstellt werden, die seit der letzten erfolgreichen Ausführung geändert wurden. Unveränderte Module werden aus dem Cache wiederverwendet, während nur geänderte Module und ihre Abhängigkeiten neu erstellt werden, was die Effizienz für Workflows für die iterative Entwicklung verbessert.
 
@@ -194,11 +194,13 @@ Smart Build ist derzeit nur für Folgendes verfügbar:
 >Die erste Ausführung nach der Aktivierung von Smart Build verhält sich wie ein vollständiger Build, da der Cache leer ist.
 
 Smartes Erstellen wird empfohlen, wenn Folgendes zutrifft:
+
 * Sie entwickeln aktiv und nehmen häufige inkrementelle Änderungen vor.
 * Ihr Projekt enthält mehrere Maven-Module.
 * Vollständige Builds beanspruchen viel Zeit.
 
 Smartes Erstellen ist nicht immer ideal, wenn Folgendes zutrifft:
+
 * Ihr Build beruht in hohem Maße auf Plug-ins, die Vorgänge außerhalb des Abhängigkeitsdiagramms von Maven durchführen.
 * Sie benötigen bei jeder Ausführung eine vollständige Neuaufbauvalidierung.
 
@@ -251,7 +253,7 @@ Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für 
 | Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Überprüfen Sie, ob die meisten Module häufig wechseln. |
 | Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb der Maven-Abhängigkeitsverfolgung liegen.<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
 
-Siehe [Hinzufügen einer produktionsfremden Pipeline](#adding-non-production-pipeline) Aktivieren von Smart Build.
+Siehe [Hinzufügen einer produktionsfremden Pipeline](#adding-non-production-pipeline) um die intelligente Erstellung zu aktivieren.
 
 
 

@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 87%
+source-wordcount: '1903'
+ht-degree: 62%
 
 ---
 
@@ -42,7 +42,7 @@ Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung m
 >
 >Bevor Sie eine Frontend-Pipeline konfigurieren, lesen Sie die [Tour zur schnellen AEM-Site-Erstellung](/help/journey-sites/quick-site/overview.md). Dort finden Sie eine vollständige Anleitung für das benutzerfreundliche Tool zur schnellen AEM-Site-Erstellung. Diese Tour hilft Ihnen, die Frontend-Entwicklung Ihrer AEM-Site zu optimieren und Ihre Site ohne AEM-Backend-Kenntnisse schnell anzupassen.
 
-1. Melden Sie sich unter [experiece.adobe.com](https://experience.adobe.com) bei Cloud Manager an.
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
 1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
@@ -71,14 +71,14 @@ Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung m
 
 1. Legen Sie auf der Registerkarte **Quell-Code** fest, welche Art von Code von der Pipeline verarbeitet werden soll.
 
-   * **[Konfigurieren einer Full-Stack-Pipeline](#full-stack-code)**
+   * **[Ich verwende den Full-Stack-Code](#full-stack-code)**
    * **[Konfigurieren einer zielgerichteten Bereitstellungs-Pipeline](#targeted-deployment)**
 
 Weitere Informationen zu diesem Pipeline-Typ finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 Die Schritte zum Abschluss der Erstellung Ihrer Produktions-Pipeline variieren je nach dem von Ihnen gewählten Typ von Quell-Code. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
 
-### Konfigurieren einer Full-Stack-Code-Pipeline {#full-stack-code}
+### Ich verwende einen Full-Stack-Code {#full-stack-code}
 
 Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code-Builds bereit, die ein oder mehrere AEM-Server-Programme zusammen mit der HTTPD-/Dispatcher-Konfiguration enthalten.
 
@@ -96,8 +96,14 @@ Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code
    > 
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-   * **Git-Verzweigung**: Diese Option legt fest, von welcher Verzweigung die ausgewählte Pipeline den Code abrufen soll.
-Wenn Sie die ersten Zeichen des Verzweigungsnamens eingeben, findet die Funktion zum automatischen Vervollständigen dieses Feldes die entsprechenden Verzweigungen, um Ihnen bei der Auswahl zu helfen.
+   * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus der die Pipeline erstellen soll. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
+   * **Strategie erstellen**
+      * **Vollständiger Build**: Erstellt jedes Mal alle Module im Repository.
+      * BETA **Smart Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
+
+        >[!IMPORTANT]
+        >
+        >Smarter Build ist nur für Code-Qualitäts-Pipelines und Bereitstellungs-Pipelines für Entwicklungs-Full-Stack-Code verfügbar.
    * **Konfiguration der Web-Stufe ignorieren**: Wenn diese Option aktiviert ist, stellt die Pipeline Ihre Web-Stufenkonfiguration nicht bereit.
    * **Vor Bereitstellung in Produktion pausieren**: Setzt die Pipeline vor der Bereitstellung in der Produktion aus.
    * **Geplant**: Ermöglicht Benutzenden die Aktivierung der geplanten Produktionsbereitstellung.
@@ -118,7 +124,7 @@ Bei Ausführung der Pipeline werden für Erlebnis-Audit konfigurierte Pfade basi
 
 Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-### Konfigurieren einer zielgerichteten Bereitstellungs-Pipeline {#targeted-deployment}
+### Ich verwende eine zielgerichtete Bereitstellung. {#targeted-deployment}
 
 Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile Ihrer AEM-Anwendung bereitgestellt. In einer solchen Bereitstellung können Sie sich dazu entscheiden, einen der folgenden Code-Typen **einzuschließen**:
 
@@ -167,7 +173,81 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 1. Klicken Sie auf **Speichern**.
 
-Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
+Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
+
+## BETA: Über die Verwendung von Smart Build in einer Produktions-Pipeline{#about-smart-build-production-pipeline}
+
+**Smart Build** in Cloud Manager ist eine optimierte Build-Strategie für Produktions-Pipelines. Smartes Erstellen reduziert Build-Zeiten, indem Module zwischengespeichert und nur die Module neu erstellt werden, die seit der letzten erfolgreichen Ausführung geändert wurden. Unveränderte Module werden aus dem Cache wiederverwendet, während nur geänderte Module und ihre Abhängigkeiten neu erstellt werden, was die Effizienz für Workflows für die iterative Entwicklung verbessert.
+
+>[!NOTE]
+>
+>Interessiert an dieser Beta-Version? Senden Sie eine E-Mail an [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe-OrgID und Programm-ID.
+
+>[!IMPORTANT]
+>
+>Die erste Ausführung nach der Aktivierung von Smart Build verhält sich wie ein vollständiger Build, da der Cache leer ist.
+
+Smartes Erstellen wird empfohlen, wenn Folgendes zutrifft:
+
+* Sie entwickeln aktiv und nehmen häufige inkrementelle Änderungen vor.
+* Ihr Projekt enthält mehrere Maven-Module.
+* Vollständige Builds beanspruchen viel Zeit.
+
+Smartes Erstellen ist nicht immer ideal, wenn Folgendes zutrifft:
+
+* Ihr Build beruht in hohem Maße auf Plug-ins, die Vorgänge außerhalb des Abhängigkeitsdiagramms von Maven durchführen.
+* Sie benötigen bei jeder Ausführung eine vollständige Neuaufbauvalidierung.
+
+### Grundlegendes zur Build-Leistung{#smart-build-performance}
+
+Der Leistungsgewinn durch die Verwendung von Smart Build hängt von mehreren Faktoren ab, darunter den folgenden:
+
+* Die Anzahl der Module im Projekt.
+* Häufigkeit und Umfang von Code-Änderungen.
+* Die Verteilung von Abhängigkeiten über Module hinweg.
+
+Im Allgemeinen können Projekte mit vielen unabhängigen Modulen die größte Verbesserung verzeichnen.
+
+### Opt-out aus dem Cache pro Modul{#smart-build-cache-optout}
+
+Smart Build bietet eine differenzierte Steuerung, mit der Sie das Caching für bestimmte Module deaktivieren können. Diese Funktion ist nützlich, wenn bestimmte Module:
+
+* Verwenden Sie Plug-ins wie `exec-maven-plugin` oder `maven-antrun-plugin`.
+* Führen Sie Dateivorgänge aus, die nicht von Maven-Abhängigkeiten verfolgt werden.
+* Zwischengespeicherte Inhalte führen zu inkonsistenten Ergebnissen.
+
+### Deaktivieren der Zwischenspeicherung für ein Modul{#smart-build-disable-caching}
+
+Sie können die folgende Eigenschaft zum `pom.xml` des betroffenen Moduls hinzufügen:
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+Diese Syntax zwingt das Modul bei jeder Pipeline-Ausführung neu zu erstellen, während andere Module weiterhin vom Caching profitieren.
+
+### Einschränkungen und Überlegungen bei der Verwendung von Smart Build{#smart-build-limitations}
+
+Beachten Sie bei der Verwendung von Smart Build Folgendes:
+
+* Smarter Build beruht auf Maven-Abhängigkeitsanalyse.
+* Bei Änderungen außerhalb des Abhängigkeitsdiagramms werden Trigger-Neuaufbauten möglicherweise nicht unterstützt.
+* Einige Plug-ins sind möglicherweise nicht vollständig mit der Zwischenspeicherung kompatibel.
+* Sie können jederzeit wieder zu **Vollständiger Build** wechseln, indem Sie die Produktions-Pipeline bearbeiten.
+
+Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für bestimmte Module deaktivieren oder Ihre Build-Strategie vorübergehend auf **Vollständiger Build** umstellen.
+
+### Fehlerbehebung bei Problemen mit Smart Build{#smart-build-troubleshoot}
+
+| Problem | Lösungsvorschläge |
+| --- | --- |
+| Buildergebnisse sind inkonsistent | ・ Deaktiviert die Zwischenspeicherung für betroffene Module.<br>・ Überprüfen des Plug-in-Verhaltens (insbesondere `exec`/`antrun` Plug-ins). |
+| Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Überprüfen Sie, ob die meisten Module häufig wechseln. |
+| Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb der Maven-Abhängigkeitsverfolgung liegen.<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
+
+Siehe [Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline) um die intelligente Erstellung zu aktivieren.
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

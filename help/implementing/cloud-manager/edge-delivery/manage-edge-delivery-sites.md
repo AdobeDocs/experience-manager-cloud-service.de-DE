@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie einer Edge Delivery-Site eine CDN-Konfigurati
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 100%
+source-wordcount: '1103'
+ht-degree: 64%
 
 ---
 
@@ -39,8 +39,53 @@ Klicken Sie auf **Umbenennen**.
 Klicken Sie in der Edge Delivery-Site-Tabelle auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) am Ende einer Zeile, deren Site umbenannt werden soll. Klicken Sie auf **Umbenennen**.
 
 1. Geben Sie im Dialogfeld **Edge Delivery-Site bearbeiten** den neuen Namen der Site in das Feld **Site-Name** ein.
-
 1. Klicken Sie auf **Bearbeiten**.
+
+
+## Aktivieren der Veröffentlichungsebene für eine Edge Delivery-Site (Beta) {#activate-publish-tier-for-eds}
+
+>[!NOTE]
+>
+>Die hier beschriebene Veröffentlichungsfunktion befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+
+Diese Funktion gilt nur für Edge Delivery-Sites, die mit der Option **AEM Authoring** in Programmen erstellt wurden, bei denen die Funktion für die flexible Veröffentlichungsebene aktiviert ist.
+
+Wenn Ihre Edge Delivery-Site das Authoring mit AEM verwendet, wird die Veröffentlichungsebene nicht standardmäßig bereitgestellt, da Edge Delivery die Inhaltsbereitstellung übernimmt. Sie können die Veröffentlichungsebene jedoch jederzeit aktivieren, wenn dies für Ihre Site erforderlich ist. Dies ist beispielsweise der Fall, wenn Sie die herkömmliche Veröffentlichung von AEM zusammen mit Edge Delivery unterstützen möchten.
+
+Nachdem Ihre Edge Delivery-Site erstellt wurde und ihr Status in Cloud Manager **Verifiziert** angezeigt wird, können Sie Inhalte mit dem universellen Editor von AEM erstellen und veröffentlichen.
+
+**So greifen Sie über Cloud Manager auf den universellen Editor zu:**
+
+1. Suchen Sie auf der Registerkarte Edge Delivery in der Liste Edge Delivery Sites Ihre Site.
+
+   ![Veröffentlichen von Inhalten von der AEM-Autoreninstanz in Edge Delivery.](/help/implementing/cloud-manager/edge-delivery/assets/eds-content-source-link.png)
+
+1. Klicken Sie auf **Link** Content Source&quot; in der Zeile der Site. Der Link öffnet die Seite des universellen Editors von AEM, in der Sie Inhalte für Ihre Site erstellen und bearbeiten können.—>
+
+**So aktivieren Sie die Veröffentlichungsebene für eine Edge Delivery-Site:**
+
+1. Klicken Sie auf der **Programmübersicht** auf der Registerkarte **Versand veröffentlichen** auf der Karte **Umgebung** auf das Informationssymbol.
+
+1. Wählen Sie im Informations-Popup unter **Veröffentlichungs-URL** die Option **Zum Aktivieren klicken** aus, um die Bereitstellung der Veröffentlichungsebene in der Cloud Manager-Benutzeroberfläche zu aktivieren.
+
+   ![Klicken Sie, um die Bereitstellung der Veröffentlichungsebene zu aktivieren](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
+
+1. Klicken Sie im Dialogfeld Veröffentlichungsebene aktivieren auf **Aktivieren**.
+
+   ![Dialogfeld „Veröffentlichungsebene aktivieren“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
+
+   Nach der Aktivierung wird die Veröffentlichungsebene automatisch bereitgestellt. Alternativ kann die Veröffentlichungsebene automatisch bereitgestellt werden, wenn der Autor versucht, Inhalte direkt über die AEM-Benutzeroberfläche zu veröffentlichen.
+
+   Nachdem die Veröffentlichungsebene aktiviert und erfolgreich bereitgestellt wurde, wird der Link **Zum Aktivieren klicken** abgeblendet/nicht verfügbar.
+
+* **Von AEM-**: Klicken Sie in der Authoring-Oberfläche von AEM auf **Quick Publish**, um Inhalte direkt auf Ihrer Edge Delivery-Site zu veröffentlichen. Die Veröffentlichungsebene ist für diesen Vorgang nicht erforderlich, wenn die Bereitstellung von Edge Delivery verarbeitet wird.
+
+Nach der Veröffentlichung können Sie eine Vorschau Ihres Inhalts unter der `.page` URL Ihrer Site anzeigen oder ihn live unter der `.live` URL anzeigen.—>
+
+>[!NOTE]
+>
+>Durch das Aktivieren der Veröffentlichungsebene wird eine Veröffentlichungsinfrastruktur zu Ihrer Umgebung hinzugefügt. Diese Funktion kann den Ressourcenverbrauch Ihres Programms beeinträchtigen. Informationen zum Konfigurieren, ob die Veröffentlichungsebene auf Programmebene erforderlich ist, finden Sie unter [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
 
 ## Löschen einer Edge Delivery-Site {#delete-edge-delivery-site}
 
