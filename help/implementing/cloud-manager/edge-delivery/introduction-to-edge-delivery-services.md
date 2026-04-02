@@ -38,7 +38,7 @@ Darüber hinaus steht Ihnen ein einheitliches Erlebnis bei der Verwaltung aller 
 
 >[!NOTE]
 >
->Die hier beschriebenen Funktionen der flexiblen Veröffentlichungsebene und des AEM-Authoring-Crosswalk befinden sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebenen Funktionen der flexiblen Veröffentlichungsebene und des AEM-Authoring-Crosswalk befinden sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Moderne Web-Erlebnisse erfordern eine leistungsstarke Bereitstellung, aber viele Unternehmen verlassen sich auch auf etablierte AEM-Authoring-Workflows, Governance und Muster für die Wiederverwendung von Inhalten. Um Ihre Teams bei der Modernisierung des Versands zu unterstützen, ohne das Authoring zu unterbrechen, führt Cloud Manager Funktionen ein, die Ihnen Folgendes ermöglichen:
 

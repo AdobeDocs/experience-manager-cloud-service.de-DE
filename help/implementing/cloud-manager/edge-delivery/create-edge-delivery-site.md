@@ -97,7 +97,7 @@ Siehe auch [Veröffentlichen von Inhalten von AEM Author in Edge Delivery](#publ
 
 >[!NOTE]
 >
->Die hier beschriebene Veröffentlichungsfunktion befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebene Veröffentlichungsfunktion befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Diese Funktion ist nur für Edge Delivery-Sites verfügbar, die mit der Authoring-Option von AEM erstellt wurden.
 
@@ -115,7 +115,7 @@ Nachdem Ihre Edge Delivery-Site in Cloud Manager erstellt und **verifiziert** k�
 
 * **Von Cloud Manager** -
 
-   1. Klicken Sie auf **** Registerkarte **Bereitstellung veröffentlichen** der Seite auf der Karte **Umgebungen** auf das hervorgehobene Symbol ![Info oder Informationen](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg).
+   1. Klicken Sie auf **&#x200B;**&#x200B;Registerkarte **Bereitstellung veröffentlichen** der Seite auf der Karte **Umgebungen** auf das hervorgehobene Symbol ![Info oder Informationen](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg).
 
    1. Wählen Sie im Informations-Popup die Option **Zum Aktivieren klicken** aus, um die Bereitstellung der Veröffentlichungsebene in der Benutzeroberfläche von Cloud Manager zu aktivieren.
 

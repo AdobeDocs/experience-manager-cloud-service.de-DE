@@ -46,7 +46,7 @@ Klicken Sie in der Edge Delivery-Site-Tabelle auf ![Mehr-Symbol](https://spectru
 
 >[!NOTE]
 >
->Die hier beschriebene Veröffentlichungsfunktion befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebene Veröffentlichungsfunktion befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Diese Funktion gilt nur für Edge Delivery-Sites, die mit der Option **AEM Authoring** in Programmen erstellt wurden, bei denen die Funktion für die flexible Veröffentlichungsebene aktiviert ist.
 
