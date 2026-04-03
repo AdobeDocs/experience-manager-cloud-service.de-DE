@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Caching-Grundlagen in AEM as a Cloud Se
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 3066c9eeef93a337892f086dd6cbf81f42ddd200
 workflow-type: tm+mt
-source-wordcount: '3071'
-ht-degree: 100%
+source-wordcount: '3335'
+ht-degree: 91%
 
 ---
 
@@ -94,7 +94,7 @@ Diese Methode kann beispielsweise nützlich sein, wenn die Geschäftslogik eine 
 ### Client-seitige Bibliotheken (js, css) {#client-side-libraries}
 
 * Bei Verwendung des Client-seitigen Bibliotheks-Frameworks von AEM wird JavaScript- und CSS-Code so generiert, dass Browser ihn unbegrenzt zwischenspeichern können, da alle Änderungen als neue Dateien mit einem eindeutigen Pfad manifestiert werden. Mit anderen Worten: HTML-Code, der auf die Client-Bibliotheken verweist, wird nach Bedarf erstellt, damit Kundinnen und Kunden neue Inhalte gleich nach der Veröffentlichung erleben können. Die Cache-Steuerung ist bei älteren Browsern, die den Wert „unveränderlich“ nicht berücksichtigen, auf „unveränderlich“ oder auf 30 Tage eingestellt.
-* Weitere Informationen finden Sie im Abschnitt [Client-seitige Bibliotheken und Versionskonsistenz](#content-consistency).
+* Weitere Informationen finden Sie [ Abschnitt „Client-seitige Bibliotheken und Versionskonsistenz](#content-consistency) , einschließlich [Fallback zu kurzen Cache-Client-Bibliotheken-URLs](#clientlib-shortcache-fallback) wenn zwischengespeicherte HTML weiterhin auf URLs mit langem Cache verweist, die nicht mehr verfügbar sind.
 
 ### Bilder und alle Inhalte, die groß genug sind, um im Blob-Speicher gespeichert zu werden {#images}
 
@@ -512,7 +512,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -524,9 +524,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/de/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/de/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Client-seitige Bibliotheken und Versionskonsistenz {#content-consistency}
 
@@ -546,13 +546,13 @@ Die standardmäßigen clientlib-Includes auf einer HTML-Seite sehen wie im folge
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.css" type="text/css">
 ```
 
-Wenn die strikte Clientlib-Versionierung aktiviert ist, wird der Client-Bibliothek ein langfristiger Hash-Schlüssel als Selektor hinzugefügt. Daher sieht der clientlib-Verweis wie folgt aus:
+Wenn die strikte Clientlib-Versionierung aktiviert ist, wird der Client-Bibliothek ein langfristiger Hash-Schlüssel als Selektor hinzugefügt. Daher sieht die Clientlib-Referenz wie folgt aus:
 
 ```
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-Die strikte Clientlib-Versionierung ist standardmäßig in allen AEM as a Cloud Service-Umgebungen aktiviert.
+Die strikte Clientlib-Versionierung ist in AEM as a Cloud Service standardmäßig aktiviert.
 
 Führen Sie die folgenden Aktionen aus, um die strikte Clientlib-Versionierung im lokalen SDK-Schnellstart zu aktivieren:
 
@@ -562,3 +562,18 @@ Führen Sie die folgenden Aktionen aus, um die strikte Clientlib-Versionierung i
    * Geben Sie in das Feld für den **langfristigen Client-seitigen Cache-Schlüssel** den Wert /.*;hash ein.
 1. Speichern Sie die Änderungen. Beachten Sie, dass es nicht notwendig ist, diese Konfiguration in der Versionskontrolle zu speichern, da AEM as a Cloud Service diese Konfiguration in Entwicklungs-, Staging- und Produktionsumgebungen automatisch aktiviert.
 1. Bei jeder Änderung des Inhalts der Client-Bibliothek wird ein neuer Hash-Schlüssel generiert und der HTML-Verweis aktualisiert.
+
+### Fallback zu URLs mit kurzem Cache, wenn Client-Bibliotheken mit langem Cache nicht verfügbar sind {#clientlib-shortcache-fallback}
+
+Zwischen-Caches (z. B. das Adobe-CDN oder ein Browser-Cache) können nach der Veröffentlichung neuer Inhalte noch eine Weile lang eine **ältere HTML**-Antwort bereitstellen. Dass zwischengespeicherte HTML weiterhin auf Client-Bibliotheks-URLs mit langem Cache verweisen können (das `lc-`-Selektormuster), die auf der Veröffentlichungsebene nicht mehr vorhanden sind, da eine Bereitstellung diese Artefakte ersetzt hat.
+
+In diesem Fall gibt AEM as a Cloud Service eine **HTTP-Umleitung** an eine **short-cache**-ClientLib-URL aus. URLs mit kurzem Cache verwenden ein `sc-` Selektormuster und ein zeitbasiertes Segment, damit die Anfrage auf die **neueste** Version der Client-Bibliothek aufgelöst werden kann, die derzeit verfügbar ist.
+
+```
+<link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.sc-7c8c5d228445ff48ab49a8e3c865c562-1756969000-sc.css" type="text/css">
+```
+
+Sowohl die **Umleitung** zur URL für den kurzen Cache als auch die **Antwort für die kurze Clientlib** selbst sind kurzlebig: Antworten verwenden ein **maximales Cache-Alter von 60 Sekunden** (`max-age=60`). **Downstream-Caches** (ein vom Kunden verwaltetes CDN, Proxys oder Ähnliches) sollten diese Antworten **länger zwischenspeichern**. Vermeiden Sie benutzerdefinierte Cache-Regeln, die die TTLs erhöhen, oder behandeln Sie URLs mit kurzen Caches als unveränderliche langfristige Assets, da dies dazu führen kann, dass Benutzer auf veralteten JS- oder CSS-Dateien stranden.
+
+Dieses Verhalten impliziert, dass **Client-Bibliotheken abwärtskompatibel“ mit** HTML bleiben müssen, die möglicherweise noch so lange aus dem Cache bereitgestellt werden, wie Ihre HTML zwischengespeichert wird. In der Praxis ist dies selten ein Problem, wenn das Caching in HTML bescheidene TTLs verwendet (einschließlich der oben beschriebenen [](#html-text)). Wenn Sie **sehr lange** HTML-Cache-Lebensdauern konfigurieren, sollten Sie die Möglichkeit berücksichtigen, dass Benutzerinnen und Benutzer älteres Markup zusammen mit neueren JS- und CSS-Dateien laden können, die über den kurzen Cache-Fallback bereitgestellt werden.
+
