@@ -85,11 +85,11 @@ Aktivieren [&#x200B; in „Benutzeroberfläche von Associate aktivieren und konf
 
 ![Einstellungen für interaktive Kommunikation - Workflow-Konfiguration für die Benutzeroberfläche von Associate](/help/forms/assets/associate-ui-configure-workflow.png)
 
-Wenn **Workflow-Datenspeicher externalisieren** aktiviert ist, konfigurieren Sie den Externalizer so, dass Workflow-Daten in Ihrem externen Speicher (z. B. Azure) gespeichert werden. Siehe [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html).
+Wenn **Workflow-Datenspeicher externalisieren** aktiviert ist, konfigurieren Sie den Externalizer so, dass Workflow-Daten in Ihrem externen Speicher (z. B. Azure) gespeichert werden. Siehe [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=de).
 
 ## Siehe auch
 
 - [Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+- [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=de)

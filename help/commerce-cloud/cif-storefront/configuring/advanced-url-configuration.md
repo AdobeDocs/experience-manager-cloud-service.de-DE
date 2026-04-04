@@ -258,5 +258,5 @@ Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-
 ## Zusätzliche Ressourcen {#additional}
 
 * [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
