@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eine Umgebung ohne Pipeline-Ausführung auf d
 feature: Operations
 role: Admin
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 80%
@@ -13,11 +13,13 @@ ht-degree: 80%
 
 # Wiederherstellen des zuvor bereitgestellten Quell-Codes in AEM as a Cloud Service {#restore-previous-code-deployed}
 
-<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 
 >[!NOTE]
 >
->The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+-->
 
 Verwenden Sie **Zuvor bereitgestellten Code wiederherstellen**, um eine Umgebung sofort – ohne Pipeline-Ausführung – auf den letzten erfolgreichen Build zurückzusetzen.
 
@@ -34,7 +36,7 @@ Siehe auch [Inhalt in AEM as a Cloud Service wiederherstellen](/help/operations/
 **Zuvor bereitgestellten Code wiederherstellen** wird nur verfügbar, wenn die folgenden Bedingungen erfüllt sind:
 
 * Pro erfolgreicher Pipeline-Ausführung ist nur eine Wiederherstellung zulässig. Schließen Sie zur erneuten Wiederherstellung eine weitere erfolgreiche Pipeline-Ausführung ab.
-* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung **&#x200B;**. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
+* Sie verfügen über die Berechtigung zum Wiederherstellen einer Umgebung ****. Weitere Informationen zum Verwalten von Berechtigungen finden Sie unter [Benutzerdefinierte Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md).
 * Das Feature Flag, das diese Funktion schützt, ist aktiviert (ein).
 * Das Programm läuft auf AEM as a Cloud Service.
 * Die letzte Pipeline für diese Umgebung wurde **innerhalb der letzten 30 Tage** erfolgreich abgeschlossen und ausgeführt.
@@ -85,7 +87,7 @@ Wenn Sie nur verloren gegangene, beschädigte oder versehentlich gelöschte Date
 
    ![Aktivierung wird wiederhergestellt](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Klicken Sie oben rechts auf der Seite auf das Glockensymbol ![oder das Benachrichtigungssymbol &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)**Benachrichtigungen**, um herauszufinden, wann Ihre Wiederherstellung beginnt und endet.
+1. Klicken Sie oben rechts auf der Seite auf das Glockensymbol ![oder das Benachrichtigungssymbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg)**Benachrichtigungen**, um herauszufinden, wann Ihre Wiederherstellung beginnt und endet.
 
    ![Wiederherstellen früherer Code-Benachrichtigungen beim Starten der Wiederherstellung und nach Abschluss der Wiederherstellung](/help/operations/assets/restore-previous-code-notifications.png)
    *Benachrichtigungen für einen vorherigen Code-Auftrag zum Wiederherstellen.*

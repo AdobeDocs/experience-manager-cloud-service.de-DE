@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 99%
@@ -61,7 +61,8 @@ Wichtige Überlegungen zum Arbeiten mit Quellbildern:
 
 Wenn Sie diese umsichtigen Entscheidungen auf Quellebene treffen, können Sie erheblich zur Gesamtqualität Ihres visuellen Inhalts beitragen.
 
-<!-- REMOVED TOPIC AS PER CQDOC-21594
+<!--
+ REMOVED TOPIC AS PER CQDOC-21594
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
@@ -71,7 +72,8 @@ Wenn Sie diese umsichtigen Entscheidungen auf Quellebene treffen, können Sie er
 * JPG often compresses photographic images with better fidelity than synthetic images with sharp edges and contrast.
 * If your images contain transparency, use PNG because JPG does not support transparency.
 
-As a best practice for image format, start with the most common setting `&fmt=JPG`. -->
+As a best practice for image format, start with the most common setting `&fmt=JPG`.
+-->
 
 ## Best Practices für die Bildgröße {#best-practices-for-image-size}
 

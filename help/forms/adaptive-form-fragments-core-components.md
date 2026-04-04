@@ -7,10 +7,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,8 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Pane
 
 1. Klicken Sie auf **Erstellen** und dann auf **Öffnen**, um das Fragment mit einer Standardvorlage im Bearbeitungsmodus zu öffnen. Im Bearbeitungsmodus können Sie dem Fragment eine beliebige Komponente des adaptiven Formulars hinzufügen.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Wenn Sie außerdem ein XML-Schema als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente per Drag-and-Drop auf das Fragment ziehen. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Wenn Sie außerdem ein XML-Schema als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Damit können Sie Formularmodellelemente per Drag-and-Drop auf das Fragment ziehen.
+<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 Sobald das auf einem Schema oder Formulardatenmodell (FDM) basierende adaptive Formularfragment erstellt ist, werden Formulardatenmodell (FDM)- oder Schemaelemente auf der Registerkarte „Datenquellen“ des Inhaltsbrowsers im Builder für adaptive Formulare angezeigt. Sie können per Drag-and-Drop Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus dem zugehörigen Schema beibehalten werden.
 
@@ -92,11 +93,13 @@ So fügen Sie einem adaptiven Formular ein adaptives Formularfragment hinzu:
 
 Das adaptive Formularfragment wird als Verweis in das adaptive Formular eingefügt und bleibt mit dem eigenständigen adaptiven Formularfragment synchronisiert. Dies bedeutet, dass alle Änderungen am adaptiven Formularfragment über alle Instanzen hinweg gespiegelt werden, in denen das Fragment in adaptive Formulare integriert ist.
 
-<!--### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
+<!--
+### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
 
 You can choose to embed an Adaptive Form fragment in an Adaptive Form by clicking the ![Embed](assets/Smock_Import_18_N.svg) icon the panel toolbar of the added fragment
 
-The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.-->
+The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.
+-->
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}

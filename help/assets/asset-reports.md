@@ -6,7 +6,7 @@ feature: Asset Reports, Asset Management
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 98%
@@ -44,7 +44,8 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 * Dateien
 * Link-Freigabe
 
-<!-- Removed download report.
+<!--
+ Removed download report.
 * Upload
 * Download
 * Expiration
@@ -125,7 +126,8 @@ Wenn ein Bericht generiert wird, werden Sie über <!-- through an email (optiona
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
-<!-- Remove download report.
+<!--
+ Remove download report.
 * Upload
 * Download
 * Expiration
@@ -163,7 +165,8 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung weist darauf hin, dass die Berichtgenerierung eingeleitet wurde.
 
-<!-- TBD: How to configure purge now? Is it using OSGi configurations?
+<!--
+ TBD: How to configure purge now? Is it using OSGi configurations?
 
 ## Configure purging service {#configure-purging-service}
 
@@ -179,7 +182,8 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 * Wenn der [!UICONTROL Bericht zur Speichernutzung] nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.
 
-<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+<!--
+ These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
 TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
@@ -187,7 +191,8 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
 -->
 
-<!-- Removed download report.
+<!--
+ Removed download report.
    >[!NOTE]
    >
    >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.

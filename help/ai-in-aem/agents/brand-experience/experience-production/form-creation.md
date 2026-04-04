@@ -1,10 +1,10 @@
 ---
 title: Formularerstellungsauftrag
-description: Erfahren Sie mehr über den Auftrag zum Erstellen von Formularen durch den Brand Experience Agent und wie Sie Formulare von Grund auf in natürlicher Sprache erstellen können.
+description: Erfahren Sie mehr über den Vorgang der Formularerstellung in Brand Experience Agent und wie Sie Formulare von Grund auf in natürlicher Sprache erstellen können.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%

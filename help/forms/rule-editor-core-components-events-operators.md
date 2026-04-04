@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2333'
 ht-degree: 50%
@@ -47,7 +47,8 @@ Der Regeleditor bietet die folgenden logischen Operatoren und Ereignisse, mit de
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ### Verfügbare Typen von Regeln im Regeleditor {#available-rule-types-in-rule-editor}
 
@@ -136,7 +137,8 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 Wenn bei Feldern mit Mehrfachauswahl in der Wenn-Bedingung Probleme auftreten, führen Sie die Schritte zur Fehlerbehebung wie folgt aus:
 
@@ -349,7 +351,7 @@ Ebenso können Sie eine Regel **Navigieren zwischen den Bereichen** schreiben, u
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier &#x200B;](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+Weitere Informationen zum Erstellen einer Regel für die Navigation in einem Bedienfeld finden Sie [hier ](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
 #### [!UICONTROL Async-Funktionsaufruf]
 
@@ -387,11 +389,12 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## Nächster Schritt
 
-Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) &#x200B;](/help/forms/rule-editor-core-components-usecases.md).
+Im Folgenden werden verschiedene [Beispiele für einen Regeleditor für ein auf Kernkomponenten basierendes adaptives Formular) ](/help/forms/rule-editor-core-components-usecases.md).
 
 ## Siehe auch
 

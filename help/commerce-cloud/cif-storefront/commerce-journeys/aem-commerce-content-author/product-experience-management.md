@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 95%
@@ -27,7 +27,7 @@ In diesem Dokument erfahren Sie, wie Sie Produktinhalte und Erlebnisse erstellen
 
 ## Produkt Experience Management {#management}
 
-Product Experience Management ist die Disziplin, Produktdaten (die einer PIM-Lösung oder Commerce-Lösung gehören) mit Marketing-Inhalten in AEM zu dekorieren. Diese angereicherten Produktdaten mit Inhalten können dann auf verschiedenen Kanälen verwendet werden, um ein immersives Einkaufserlebnis zu schaffen.
+Product Experience Management ist die Disziplin, Produktdaten (die einer PIM-Lösung oder Lösung für den Handel gehören) mit Marketing-Inhalten in AEM zu dekorieren. Diese angereicherten Produktdaten mit Inhalten können dann auf verschiedenen Kanälen verwendet werden, um ein immersives Einkaufserlebnis zu schaffen.
 
 In AEM können Sie verschiedene Inhaltstypen erstellen und mit dem Produktkatalog verknüpfen. Zugehörige Inhalte können leicht erkannt und verwendet werden, was zu einer hohen Produktivität führt.
 

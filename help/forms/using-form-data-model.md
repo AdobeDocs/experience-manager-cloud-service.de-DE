@@ -6,10 +6,10 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -83,7 +83,8 @@ Sie können [adaptive Formulare](creating-adaptive-form.md) und adaptive Formula
 
    Indem Sie Datenmodellobjekte in das adaptive Formular oder Fragment ziehen und dort ablegen, können Sie Formularfelder hinzufügen. Die hinzugefügten Formularfelder behalten die Metadateneigenschaften und die Bindung mit den Datenmodellobjekteigenschaften bei. Durch die Bindung wird sichergestellt, dass die Feldwerte bei der Formularübermittlung in den entsprechenden Datenquellen aktualisiert und vorausgefüllt werden, wenn das Formular gerendert wird.
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## Vorschau mit Beispieldaten {#preview-ic}
 
 Mit dem Formulardatenmodelleditor können Sie Beispieldaten für Datenmodellobjekte im Formulardatenmodell (FDM) generieren und bearbeiten. Sie können diese Daten zur Vorschau und zum Testen adaptiver <!--interactive communications and-->-Formulare verwenden. Sie müssen die Beispieldaten vor der Vorschau generieren, wie beschrieben unter [Arbeiten mit einem Formulardatenmodell](work-with-form-data-model.md#sample).
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ Mit dem Formulardatenmodelleditor können Sie Beispieldaten für Datenmodellobje
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen Sie das Formular im Autorenmodus und wählen Sie **[!UICONTROL Vorschau]**.
 
 ## Vorbefüllen mit dem Formulardatenmodell-Service {#prefill}
 
-[!DNL Experience Manager Forms] bietet einen vorkonfigurierten Vorbefüllungsdienst für Formulardatenmodelle, den Sie für adaptive Formulare <!--and interactive communications--> auf Grundlage eines Formulardatenmodells (FDM) aktivieren können. Der Vorbefüllungs-Service fragt Datenquellen nach Datenmodellobjekten im adaptiven Formular <!--and interactive communication--> ab und befüllt dementsprechend Daten, während das Formular oder die Kommunikation gerendert wird.
+[!DNL Experience Manager Forms] bietet einen vorkonfigurierten Vorbefüllungsdienst für Formulardatenmodelle, den Sie für adaptive Formulare <!--and interactive communications--> auf Grundlage eines Formulardatenmodells (FDM) aktivieren können. Der Vorbefüllungs-Service fragt Datenquellen nach Datenmodellobjekten im adaptiven Formular ab und befüllt dementsprechend Daten, während das Formular oder die Kommunikation gerendert wird.
 
 Um den Vorbefüllungs-Service für ein adaptives Formular zu aktivieren, öffnen Sie die Eigenschaften des Containers für ein adaptives Formular und wählen Sie **[!UICONTROL Vorbefüllungs-Service für Formulardatenmodell]** aus der Dropdown-Liste **[!UICONTROL Vorbefüllungs-Service]** im Akkordeon „Standard“ aus. Speichern Sie anschließend die Eigenschaften.
 
 ![prefill-service](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## Schreiben von übermittelten adaptiven Formulardaten in Datenquellen {#write-af}
 

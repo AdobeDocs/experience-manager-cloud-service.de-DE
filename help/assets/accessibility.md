@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 100%
@@ -43,7 +43,8 @@ Possible topics to cover in this article are below.
 
 Einen Bericht mit Details zum Grad der Konformität finden Sie auf der Seite [Konformitätsbericht zur Barrierefreiheit](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
-<!-- TBD: Add link after release.
+<!--
+ TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
 -->
 
@@ -68,9 +69,10 @@ Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werd
 
 ## Unterstützung für die Verwendung der Tastatur {#keyboard-use}
 
-Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bearbeitet werden können, können auch mit der Tastatur genutzt werden. Mithilfe einer Tastatur können Benutzer auf Elemente der Benutzeroberfläche fokussieren und eine gewünschte Aktion ausführen. Benutzer können direkt Tastaturbefehle verwenden, um einen Befehl oder eine Aktion auszulösen, ohne sich auf UI-Elemente konzentrieren zu müssen. Beispielsweise können Benutzer die Zeitleiste eines Assets auf der linken Seite öffnen, indem sie mit der Tastatur zum Steuerelement der Benutzeroberfläche navigieren, `Return` und anschließend den Tastaturbefehl `Alt + 2` auswählen.
+Viele Elemente der Benutzeroberfläche, die mit einem Zeiger angeklickt oder bearbeitet werden können, können auch mit der Tastatur genutzt werden. Mithilfe einer Tastatur können Benutzer auf Elemente der Benutzeroberfläche fokussieren und eine gewünschte Aktion ausführen. Benutzer können direkt Tastaturbefehle verwenden, um einen Befehl oder eine Aktion auszulösen, ohne sich auf UI-Elemente konzentrieren zu müssen. Beispielsweise können Benutzer die Timeline eines Assets auf der linken Seite öffnen, indem sie mit der Tastatur zum Steuerelement der Benutzeroberfläche navigieren, `Return` und anschließend den Tastaturbefehl `Alt + 2` auswählen.
 
-<!-- TBD items:
+<!--
+ TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -90,7 +92,7 @@ Die folgenden Aktionen in [!DNL Assets] funktionieren mit den aufgelisteten Tast
 | [!DNL Assets]-Konsole |  | Seitenleisten umschalten |
 | [!DNL Assets]-Konsole | `Alt + 1` | Öffnen Sie die Inhaltsstruktur. |
 | [!DNL Assets]-Konsole | `Alt + 2` | Öffnen Sie die linke Leiste [!UICONTROL Navigation]. |
-| [!DNL Assets]-Konsole | `Alt + 3` | Zeigen Sie die [!UICONTROL Zeitleiste] eines ausgewählten Assets an. |
+| [!DNL Assets]-Konsole | `Alt + 3` | Zeigen Sie die [!UICONTROL Timeline] eines ausgewählten Assets an. |
 | [!DNL Assets]-Konsole | `Alt + 4` | Öffnen Sie Live Copy-Verweise des ausgewählten Assets. |
 | [!DNL Assets]-Konsole | `Alt + 5` | Rufen Sie die Suche auf und suchen Sie im ausgewählten Ordner. |
 | Asset oder Ordner ist ausgewählt | Rücktaste | Löschen Sie das ausgewählte Asset oder den ausgewählten Ordner. |
@@ -113,7 +115,8 @@ Nach der Anmeldung können DAM-Benutzer über die Tastatur in der [!DNL Assets]-
 
 Wenn ein Benutzer die Hilfs- oder Benutzerprofiloption im Menü erweitert, werden die entsprechende Option bzw. der entsprechende Status von der Sprachausgabe vorgetragen. Wenn ein Benutzer die Benutzerprofiloption erweitert, können die verfügbaren Optionen über eine Tastatur ausgewählt werden. Ein Administrator kann beispielsweise die Identität eines anderen Benutzers annehmen. Wenn ein Benutzer über die Option [!UICONTROL Hilfe] nach einer Zeichenfolge sucht, gibt die Sprachausgabe „Hilfe bei der Suche“ aus, um anzugeben, dass eine Suche ausgeführt wird.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+ TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -124,7 +127,8 @@ Wenn ein Benutzer die Hilfs- oder Benutzerprofiloption im Menü erweitert, werde
 
 In der [!DNL Assets]-Benutzeroberfläche können Benutzer die Tastatur verwenden, um die Liste vorhandener digitaler Assets im DAM-Repository zu durchsuchen, ein Asset als Vorschau anzuzeigen oder herunterzuladen, die erzeugten Ausgabedarstellungen anzuzeigen, Ansichten zu wechseln, die Chronik und den Versionsverlauf anzuzeigen, Kommentare und Verweise anzuzeigen sowie Metadaten anzuzeigen und zu verwalten.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+ TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -147,10 +151,11 @@ Beim Durchsuchen des Asset-Repositorys wird Barrierefreiheit durch folgende Funk
 * Wenn Sie zum Durchsuchen die Tastatur verwenden, weisen die hervorgehobenen ausführbaren Optionen der Benutzeroberfläche einen auffälligeren visuellen Fokus mit erhöhtem Kontrast auf. Dadurch wird der fokussierte Bereich für den Benutzer leichter erkennbar.
 * Bei Verwendung der `Esc`-Taste zum Entfernen der Schnellzugriffssymbole aus der Miniatur wird der Tastaturfokus nicht vom zuletzt fokussierten Element entfernt.
 * Wenn ein Asset ausgewählt ist, wird durch Auswahl des Tastaturbefehls `Alt + 4` die Liste [!UICONTROL Referenzen] in der linken Leiste geöffnet. Mithilfe der `Tab`-Taste können Benutzer durch die Referenzeinträge navigieren, die nicht gleich null sind. Wenn Sie nur die Referenzeinträge durchsuchen, die nicht gleich null sind, sparen Sie auch Arbeitsaufwand und Tastenanschläge.
-* Kommentare zu einem Asset sind in der Asset-Zeitleiste verfügbar. Sie ist verfügbar, wenn über eine Tastatur oder einen Tastaturbefehl auf die linke Leiste zugegriffen wird.
+* Kommentare zu einem Asset sind in der Asset-Timeline verfügbar. Sie ist verfügbar, wenn über eine Tastatur oder einen Tastaturbefehl auf die linke Leiste zugegriffen wird.
 * Die [!UICONTROL Anzeigeeinstellungen] in [!DNL Experience Manager] sind über eine Tastatur zugänglich. Benutzer können mithilfe der Pfeiltasten durch die verfügbaren Kartengrößen sowie durch die Registerkarten navigieren und in der Ansicht „Anzeigeeinstellungen“ andere Elemente auswählen.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+ TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -195,7 +200,8 @@ Beim Filtern der Suchergebnisse:
 
 ## Freigeben von Assets {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 Beim Freigeben von Assets verbessern folgende Funktionen die Barrierefreiheit:

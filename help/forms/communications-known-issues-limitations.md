@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 99%
@@ -76,8 +76,10 @@ Stellen Sie immer sicher, dass Sie die richtige XDC-Datei für den Drucker verwe
 
 Ein Formular-Design, das mit den Kommunikations-APIs verwendet wird, kann Skripte enthalten, die auf dem Server ausgeführt werden. Stellen Sie sicher, dass ein Formular-Design keine Skripte enthält, die auf dem Client ausgeführt werden. Weitere Informationen zum Erstellen von Formular-Design-Skripten finden Sie in der [Hilfe zu Designer](use-forms-designer.md).
 
-<!-- #### Working with Fonts
- Document Considerations for Working with Fonts>> -->
+<!--
+ #### Working with Fonts
+ Document Considerations for Working with Fonts>>
+ -->
 
 ### Schriftzuordnung {#font-mapping}
 
@@ -196,13 +198,15 @@ Sie können den AEM Forms Output-Service verwenden, um eine Vorlage (XFA oder PD
 
 Im Vergleich zur On-Premise-Umgebung bietet Cloud Service zusätzliche Vorteile durch automatische Skalierung und Kosteneffizienz.
 
-<!--**Where is data processed?**
+<!--
+**Where is data processed?**
 
 **Who has access to data?**
 
 **Is data encrypted?**
 
-**Where is data hosted?** -->
+**Where is data hosted?**
+-->
 
 **Kann ich mehrere Batch-Vorgänge gleichzeitig ausführen?**
 Ja, Sie können mehrere Batch-Vorgänge gleichzeitig ausführen. Verwenden Sie immer unterschiedliche Quell- und Zielordner für jeden Vorgang, um Konflikte zu vermeiden.

@@ -5,8 +5,8 @@ keywords: Anleitung zum Auswählen einer Übermittlungsaktion für ein adaptives
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Am Ende dieses Dokuments werden Sie Folgendes beherrschen:
 - Konfigurieren verschiedener Arten von Übermittlungsaktionen für Ihre Formulare
 - Einrichten von REST-Endpunktübermittlungen für die Integration mit externen Systemen
 - Konfigurieren von E-Mail-Sendungen für Formularantworten
-- Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Unternehmensanforderungen
+- Implementieren benutzerdefinierter Übermittlungsaktionen für bestimmte Geschäftsanforderungen
 - Bearbeitung der Formularvalidierung und Fehlerszenarien bei der Übermittlung
 
 ## Zielgruppe
@@ -60,10 +60,12 @@ Die folgenden Übermittlungsaktionen werden von[im universellen Editor verfasste
 - [An Adobe Experience Platform (AEP) senden](/help/forms/aem-forms-aep-connector.md)
 - [An Tabelle senden](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 Sie können die Übermittlungsaktion für Formulare, die im universellen Editor erstellt wurden, über die Registerkarte **Übermittlung** der Erweiterung **Formulareigenschaften bearbeiten** konfigurieren.
 

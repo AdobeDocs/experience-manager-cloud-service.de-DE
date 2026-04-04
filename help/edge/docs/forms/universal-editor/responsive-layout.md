@@ -6,8 +6,8 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '2443'
 ht-degree: 100%
 
@@ -47,7 +47,8 @@ Die Erstellung responsiver Formulare umfasst zwei Hauptaktivitäten:
 - Higher form completion rates
 - Improved user satisfaction
 - Enhanced accessibility compliance
-- Lower development and maintenance costs-->
+- Lower development and maintenance costs
+-->
 
 >[!TIP]
 >
@@ -194,7 +195,7 @@ Das Bedienfeld-Layout organisiert verwandte Inhalte in visuell unterschiedliche 
 
 ### Assistenten-Layout
 
-Das Assistenten-Layout führt Benutzende durch einen mehrstufigen Prozess und zeigt jeweils einen Abschnitt an. Dieses Layout eignet sich besonders für komplexe Formulare, da es die kognitive Belastung reduziert und die Fertigstellungsraten erhöht, indem der Prozess in überschaubare Schritte unterteilt wird.
+Das Assistenten-Layout führt Benutzende durch einen mehrstufigen Prozess und zeigt jeweils einen Abschnitt an. Dieses Layout eignet sich besonders für komplexe Formulare, da es die kognitive Belastung reduziert und die Abschlussraten erhöht, indem der Prozess in überschaubare Schritte unterteilt wird.
 
 ![Beispiel für Assistenten-Layout](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
@@ -451,7 +452,7 @@ Beim Erstellen benutzerdefinierter Layouts für Komponenten in adaptivem Formula
 
 **Anwendererlebnis:**
 
-- **Formularausfüllungsrate:** Zielen Sie bei Mobilgeräten auf 85 % oder mehr ab.
+- **Formularabschlussrate:** Zielen Sie bei Mobilgeräten auf 85 % oder mehr ab.
 - **Dauer bis zum Abschluss:** Benutzende von Mobilgeräten sollten Formulare innerhalb von 20 % der Desktop-Ausführungszeiten ausfüllen.
 - **Fehlerrate:** Sorgen Sie dafür, dass Validierungsfehler unter 5 % bleiben.
 - **Abbruchpunkte:** Ermitteln und optimieren Sie Schritte, bei denen Benutzende gerne abbrechen.

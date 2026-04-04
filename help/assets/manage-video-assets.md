@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4995'
 ht-degree: 98%
@@ -37,8 +37,10 @@ Gehen Sie wie folgt vor, um ein Video-Asset hochzuladen:
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Dateien]**. <br>Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen.
 In [!DNL Experience Manager Assets] finden Sie weitere Informationen zum [Hochladen von Assets](manage-digital-assets.md#uploading-assets).
 
-<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
-1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+<!--
+ 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
+-->
 
 ### Vorschau von Video-Assets
 
@@ -206,7 +208,8 @@ Falls Sie die Standard-Tags in Experience Manager verwenden möchten, können Si
 >
 >Nach der Konfiguration des Cloud-Service ist keine weitere Konfiguration nötig, um den Replikationsagenten für die YouTube-Veröffentlichung zu aktivieren. Dieser wurde bereits beim Speichern der Cloud Service-Konfiguration aktiviert.
 
-<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
+<!--
+ ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, select **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
@@ -214,7 +217,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. On the Agents of Author page, select **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, select **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Select **[!UICONTROL OK]**. -->
+1. Select **[!UICONTROL OK]**.
+-->
 
 ### Einrichten von YouTube in Experience Manager {#setting-up-youtube-in-aem}
 
@@ -528,7 +532,7 @@ Sie können den Fortschritt und auch die fehlgeschlagene Kodierung/YouTube-Verö
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr&rbrace; mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
+   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr} mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
@@ -546,7 +550,8 @@ Sie können den Fortschritt und auch die fehlgeschlagene Kodierung/YouTube-Verö
 
 1. Sie erhalten E-Mail-Benachrichtigungen über abgebrochene oder fehlgeschlagene Workflow-Aufträge. Diese E-Mail-Benachrichtigungen können von einem Administrator konfiguriert werden. Siehe [Konfigurieren von E-Mail-Benachrichtigungen](#configuring-e-mail-notifications).
 
-<!-- EMAIL NOT AVAILABLE IN SKYLINE
+<!--
+ EMAIL NOT AVAILABLE IN SKYLINE
 
 #### Configuring e-mail notifications {#configuring-e-mail-notifications}
 

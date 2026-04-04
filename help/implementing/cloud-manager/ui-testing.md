@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2662'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI-Tests"
->abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt sind, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen. Wie Java und Maven, Node und WebDriver.io oder jedes andere Framework und jede Technologie, die auf Selenium aufbauen."
+>abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen. Dazu gehören Java und Maven, Node und WebDriver.io oder jedes andere Framework und jede andere Technologie, die auf Selenium basieren."
 
 Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann.
 
@@ -32,7 +32,7 @@ Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automati
 
 Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[ definierten Konventionen ](#building-ui-tests).
 
 >[!TIP]
 >
@@ -240,8 +240,10 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 Die Adobe-Testbeispiele bieten Hilfsfunktionen für den Zugriff auf die Konfigurationsparameter:
 
 Cypress: Verwenden der Standardfunktion `Cypress.env('VARIABLE_NAME')`
-<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
-* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
+<!--
+ BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+-->
 
 ### Generieren von Testberichten {#generate-test-reports}
 
@@ -275,7 +277,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 | Empfohlene Dauer | 15m | Adobe empfiehlt, Tests unter diesem Zeitlimit zu belassen. |
 
 * Wenn das Ziel „Autor/Veröffentlichung“ durch IP-Zulassungsauflistung geschützt ist, muss die Testinfrastruktur der Pipeline-Benutzeroberfläche auf die Zulassungsliste gesetzt werden, da andernfalls Benutzeroberflächentests mit 403 Verboten fehlschlagen können.
-Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistung Auf die Zulassungsliste setzten &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistungen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -307,11 +309,13 @@ Die von Adobe bereitgestellten Testbeispiele erstellen standardmäßig Screensho
 
 Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 
-<!-- BOTH URLS ARE 404
+<!--
+  BOTH URLS ARE 404
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+-->
 
-Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
+Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) ](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Hochladen von Dateien {#upload-files}
 
@@ -323,10 +327,12 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Ber
    * Entspricht `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Informationen zum Ausführen einer solchen HTTP-Anfrage finden Sie in der Dokumentation und in den Bibliotheken der im Docker-Image verwendeten Programmiersprache.
 
-   <!-- BOTH URLS ARE 404
+   <!--
+    BOTH URLS ARE 404
    * The Adobe test samples provide helper functions for uploading files:
      * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
-     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
+     -->
 
 1. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück. 
    * Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle.

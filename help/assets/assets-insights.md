@@ -6,7 +6,7 @@ feature: Asset Insights, Asset Reports
 role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 99%
@@ -77,7 +77,8 @@ Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets i
 1. Klicken Sie auf die Option **[!UICONTROL Layout]** und wählen Sie **[!UICONTROL Insights-Ansicht]** aus.
 1. Auf der Seite werden Nutzungsbewertungen für die Assets angezeigt. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Schedule background job {#scheduling-background-job}
 

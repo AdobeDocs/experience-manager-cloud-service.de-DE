@@ -8,7 +8,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
@@ -232,7 +232,7 @@ Ja, Sie können verschiedene Aspekte konfigurieren:
 
 Für zusätzliche Unterstützung:
 
-- Weitere Informationen finden [&#x200B; im Handbuch „Erste Schritte](forms-experience-builder-getting-started.md)
+- Weitere Informationen finden [ im Handbuch „Erste Schritte](forms-experience-builder-getting-started.md)
 - Lesen Sie das [Bereitstellungs- und Konfigurationshandbuch](deploy-forms-experience-builder.md)
 - Wenden Sie sich an Ihren Systemadministrator
 - Wenden Sie sich bei technischen Problemen an den Adobe-Support

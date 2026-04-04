@@ -12,7 +12,7 @@ thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 96%
@@ -28,7 +28,7 @@ ht-degree: 96%
 
 Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Bei vielen Implementierungen werden diese URLs zwecks Suchmaschinen-Optimierung (Search Engine Optimization, SEO) angepasst. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
->[!VIDEO](https://video.tv.adobe.com/v/38581/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Konfiguration {#configuration}
 
@@ -258,5 +258,5 @@ Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-
 ## Zusätzliche Ressourcen {#additional}
 
 * [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

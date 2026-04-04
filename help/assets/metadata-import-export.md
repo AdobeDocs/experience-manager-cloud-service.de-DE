@@ -6,7 +6,7 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 99%
@@ -44,7 +44,8 @@ Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung 
    * Das Datumsformat hängt von der Spaltenüberschrift und dem darin verwendeten Format ab. Wenn das Datum beispielsweise im Format `yyyy-MM-dd'T'HH:mm:ssXXX` vorliegt, muss die entsprechende Spaltenüberschrift `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` sein.
    * Das standardmäßige Datumsformat ist `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
-<!-- Hidden via cqdoc-17869>
+<!--
+ Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >

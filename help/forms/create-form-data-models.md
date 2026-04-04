@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,8 @@ Die [!DNL Experience Manager Forms]-Datenintegration bietet eine intuitive Benut
 
 * **Vorkonfigurierte Datenquellen verwenden**: Wenn Sie Datenquellen wie in [Konfigurieren von Datenquellen](configure-data-sources.md) beschrieben konfiguriert haben, können Sie diese beim Erstellen eines Formulardatenmodells (FDM) auswählen. Es werden alle Datenmodellobjekte, Eigenschaften und Dienste aus den ausgewählten Datenquellen zur Verwendung im Formulardatenmodell (FDM) zur Verfügung gestellt.
 
-* **Ohne Datenquellen**: Wenn Sie keine Datenquellen für Ihr Formulardatenmodell (FDM) konfiguriert haben, können Sie es auch ohne Datenquellen erstellen. Sie können das Formulardatenmodell (FDM) verwenden, um adaptive Formulare <!--and interactive communication--> zu verfassen und sie anhand von Beispieldaten zu testen. Wenn Datenquellen verfügbar sind, können Sie das Formulardatenmodell (FDM) an Datenquellen binden, was sich automatisch in den zugehörigen adaptiven Formularen reflektiert<!--and interactive communications-->.
+* **Ohne Datenquellen**: Wenn Sie keine Datenquellen für Ihr Formulardatenmodell (FDM) konfiguriert haben, können Sie es auch ohne Datenquellen erstellen. Sie können das Formulardatenmodell (FDM) verwenden, um adaptive Formulare <!--and interactive communication--> zu verfassen und sie anhand von Beispieldaten zu testen. Wenn Datenquellen verfügbar sind, können Sie das Formulardatenmodell (FDM) an Datenquellen binden, die automatisch in der zugehörigen adaptiven Forms reflektiert werden.
+  <!--and interactive communications-->
 
 >[!NOTE]
 >

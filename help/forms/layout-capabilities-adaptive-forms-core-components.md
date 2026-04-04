@@ -6,7 +6,7 @@ keywords: Layout des adaptiven Formulars basierend auf Kernkomponenten, verschie
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2148'
 ht-degree: 21%
@@ -91,7 +91,7 @@ Das Layout „Horizontale Registerkarten“ wird auch als Layout „Registerkart
 
 Layout horizontaler Registerkarten
 
-Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
 >[!TAB Akkordeon-Layout]
@@ -229,9 +229,11 @@ Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Ans
 
 ### &#x200B;3. Hinzufügen von Formularkomponenten zum Bedienfeld
 
-<!-- You can employ one of the following method to add form components to the panel:
+<!--
+ You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
-* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
+* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+-->
 
 1. Suchen Sie den Abschnitt innerhalb des Bedienfelds, in dem Sie Komponenten hinzufügen können.
 1. Klicken Sie auf das Symbol **Hinzufügen**. Das Symbol ist ein Pluszeichen (+). Es steht für die Option zum Hinzufügen neuer Komponenten.
@@ -274,10 +276,11 @@ Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Ans
 1. Klicken Sie **[!UICONTROL Vorschau]** in der oberen rechten Ecke Ihrer Authoring-Umgebung.
    ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
-Sie können die [&#x200B; auch ziehen und ablegen, &#x200B;](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
+Sie können die [ auch ziehen und ablegen, ](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
 
 
-<!-- #### Drag and drop components into a layout's panel 
+<!--
+ #### Drag and drop components into a layout's panel 
 
 1. Locate the section within the panel that allows you to add components. 
 2. Navigate to the left panel within your authoring environment and click **Components**.

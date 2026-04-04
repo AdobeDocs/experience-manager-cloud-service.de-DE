@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2899'
 ht-degree: 99%
@@ -21,7 +21,8 @@ Mit Asset-Microservices können Sie eine [breite Palette von Dateitypen](/help/a
 
 Die Asset-Verarbeitung hängt von der Konfiguration in **[!UICONTROL Verarbeitungsprofilen]** ab. Experience Manager bietet eine einfache Standardeinrichtung und ermöglicht es Admins, spezifischere Asset-Verarbeitungskonfigurationen hinzuzufügen. Administratoren können die Konfigurationen von Nachbearbeitungs-Workflows erstellen, verwalten und ändern, einschließlich optionaler Anpassungen. Durch Anpassen der Workflows können Entwickler das Standardangebot erweitern.
 
-<!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -42,7 +43,8 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 | [Benutzerdefinierte Konfiguration](#standard-config) | Wird von Admins über die Benutzeroberfläche konfiguriert. Durch Erweitern der Standardoption werden weitere Optionen für die Generierung von Ausgabedarstellungen bereitgestellt. Erweitert die vordefinierte Option, um verschiedene Formate und Ausgabedarstellungen bereitzustellen. | <ul><li>FPO-Ausgabedarstellung (nur für Platzierung). </li> <li>Dateiformat und Auflösung von Bildern ändern</li> <li> Bedingte Anwendung auf konfigurierte Dateitypen. </li> </ul> |
 | [Benutzerdefiniertes Profil](#custom-config) | Von Administratoren über die Benutzeroberfläche konfiguriert, um benutzerdefinierten Code über benutzerdefinierte Programme zum Aufrufen des [Asset Compute-Service](https://experienceleague.adobe.com/de/docs/asset-compute/using/introduction) zu verwenden. Unterstützt komplexere Anforderungen in einer Cloud-nativen und skalierbaren Methode. | Siehe [Zulässige Anwendungsfälle](#custom-config). |
 
-<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+<!--
+ To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
 ## Unterstützte Dateiformate {#supported-file-formats}
@@ -55,12 +57,13 @@ Einige Standardwerte sind vorkonfiguriert, um sicherzustellen, dass die in Exper
 
 Bei der Standardkonfiguration wird nur das einfachste Verarbeitungsprofil konfiguriert. Solch ein Verarbeitungsprofil ist in der Benutzeroberfläche nicht sichtbar und kann nicht geändert werden. Es wird immer ausgeführt, um hochgeladene Assets zu verarbeiten. Mit einem standardmäßigen Verarbeitungsprofil wird sichergestellt, dass die von [!DNL Experience Manager] benötigte grundlegende Verarbeitung für alle Assets durchgeführt wird.
 
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!--
+ ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
 ## Standardkonfiguration {#standard-config}
 
-[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate gemäß den Anforderungen der Benutzenden. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Smartphone und Tablet generieren. [In diesem Video erfahren Sie, wie Sie [!UICONTROL Verarbeitungsprofile“ erstellen und anwenden &#x200B;] auf die erstellten Ausgabedarstellungen zugreifen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/content-automation/creative-operations).
+[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate gemäß den Anforderungen der Benutzenden. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Smartphone und Tablet generieren. [In diesem Video erfahren Sie, wie Sie [!UICONTROL Verarbeitungsprofile“ erstellen und anwenden ] auf die erstellten Ausgabedarstellungen zugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations).
 
 * **Breite und Höhe der Ausgabedarstellung**: Das Angeben der Breite und Höhe der Ausgabedarstellung sorgt für die maximale Größe des generierten Ausgabebilds. Asset-Microservices versuchen, die größtmögliche Ausgabedarstellung zu erstellen, dessen Breite und Höhe nicht größer als die angegebene Breite bzw. Höhe sind. Das Seitenverhältnis wird beibehalten, d. h. es entspricht dem Original. Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen des Originals berücksichtigt werden.
 
@@ -87,14 +90,16 @@ Das Verarbeitungsprofil kann eine FPO-Wiedergabe (nur für Platzierung) enthalte
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+<!--
+ TBD: Update the video link when a new video is available from Tech Marketing.
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/33384?captions=ger&quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
-<!-- This image was removed per cqdoc-15624, as requested by engineering.
+<!--
+ This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -286,7 +291,8 @@ Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordne
 >* [So erstellen Sie benutzerdefinierte Programme](https://experienceleague.adobe.com/de/docs/asset-compute/using/extend/develop-custom-application).
 >* [Interstützte MIME-Typen für verschiedene Anwendungsfälle](/help/assets/file-format-support.md).
 
-<!-- TBD: 
+<!--
+ TBD: 
 * How/where can admins check what's already configured and provisioned.
 * How/where to request for new provisioning/purchase.
 -->

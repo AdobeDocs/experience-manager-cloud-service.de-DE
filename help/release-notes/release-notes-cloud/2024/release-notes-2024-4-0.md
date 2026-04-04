@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.4.0 von [!DNL Adobe Experience 
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 95%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Übersichtsvideo zur Version April 2024 an, das eine Zusammenfassung der Funktionen bietet, die in Version 2024.4.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446318?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -74,7 +74,7 @@ Experience Manager Assets enthält jetzt [einfache und intuitive Tools zur Video
 
 **Dynamische Ausgabedarstellungen**
 
-Sie können jetzt [&#x200B; dynamische Ausgabedarstellungen (einschließlich smartes Zuschneiden)](/help/assets/renditions.md) in Experience Manager Assets ansehen und herunterladen. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
+Sie können jetzt [ dynamische Ausgabedarstellungen (einschließlich intelligentem Zuschnitt)](/help/assets/renditions.md) in Experience Manager Assets ansehen und herunterladen. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
 
 ![Dynamische Ausgabedarstellungen](/help/assets/assets/preset_smart_crop.png)
 
@@ -168,7 +168,7 @@ Operational Telemetry Service bietet eine präzisere Reflektion der Benutzerinte
 
   Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com` sowie Ihren Domain-Namen für jede Umgebung, für die Sie operative Telemetrie aktivieren möchten, über Ihre mit Ihrer Adobe ID verknüpfte E-Mail-Adresse. Das Produkt-Team von Adobe wird dann den operativen Telemetrieservice für Sie aktivieren.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Domain-Zuordnung {#cdn-config}
 
@@ -196,9 +196,9 @@ Die kürzlich veröffentlichten [Traffic-Filterregeln](/help/security/traffic-fi
 
 Sie können jetzt eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>** senden, um dem Early-Adopter-Programm beizutreten, damit Sie benachrichtigt werden, sobald Ihre Traffic-Filterregeln ausgelöst werden. Aktionszentrum-E-Mail-Benachrichtigungen informieren Sie darüber, wann bestimmte Traffic-Bedingungen eintreten, damit Sie geeignete Maßnahmen treffen können.
 
-#### Apache/Dispatcher-Laufzeiterfassung von Rewrite-Zuordnungen (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
+#### Apache/Dispatcher-Laufzeitaufnahme von Rewrite-Zuordnungen (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
 
-Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository platziert werden, und laden sie, ohne dass eine Pipeline auf der Web-Ebene ausgeführt werden muss. Dies eröffnet Business-Anwenderinnen und -Anwendern die Möglichkeit, Umleitungen über eine Benutzeroberfläche zu deklarieren, z. B. durch ACS Commons Redirect Map Manager. Bitte wenden Sie sich an **<aemcs-cdn-config-adopter@adobe.com>** für weitere Informationen.
+Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository platziert werden, und laden sie, ohne dass eine Pipeline-Ausführung auf der Web-Ebene nötig ist. Dies eröffnet Business-Anwenderinnen und -Anwendern die Möglichkeit, Umleitungen über eine Benutzeroberfläche zu deklarieren, z. B. durch ACS Commons Redirect Map Manager. Bitte wenden Sie sich an **<aemcs-cdn-config-adopter@adobe.com>** für weitere Informationen.
 
 #### Edge Side Includes (ESI) für das Laden dynamischer Inhalte (Early-Adopter-Programm) {#esi-early-adopter}
 

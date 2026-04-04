@@ -4,7 +4,7 @@ description: Nutzen Sie das Aktionszentrum, um bequem auf Vorfälle und andere w
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 100%
@@ -88,7 +88,7 @@ In der folgenden Tabelle sind die Benachrichtigungsarten aufgeführt, die derzei
 | Fehlende JCR-Inhalte | Proaktiv | Fügen Sie den fehlenden JCR-Inhaltsknoten hinzu. Siehe die [Dokumentation zu Assets Content Validator](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/acv) |
 | Abgeschlossene Workflows werden nicht bereinigt | Proaktiv | Minimieren Sie die Anzahl der Workflow-Instanzen und optimieren Sie die Leistung, indem Sie mehr als 90 Tage alte Workflow-Instanzen bereinigen. Erfahren Sie, wie Sie [Wartungsaufgaben konfigurieren](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance). |
 | Fehlender Sling-Ressourcentyp in Seite | Proaktiv | Fügen Sie den Knoten des fehlenden Sling-Ressourcentyps hinzu. Siehe die [Dokumentation zu Assets Content Validator](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/acv) |
-| Langsame Abfrage | Proaktiv | Beheben Sie langsame Abfragen, indem Sie die richtigen Indexdefinitionen definieren, wie in der [JCR-Abfrage-Schnellübersicht](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=de) vorgeschlagen. |
+| Langsame Abfrage | Proaktiv | Beheben Sie langsame Abfragen, indem Sie die richtigen Indexdefinitionen definieren, wie in der [JCR-Abfrage-Schnellübersicht](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) vorgeschlagen. |
 | Abfrage ohne Index | Proaktiv | Vermeiden Sie die Ausführung von Abfragen, die keinen Index verwenden – [Link zur Indizierungsdokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/indexing) |
 | Warnung zu veralteten Bibliotheken | Proaktiv | Ersetzen Sie veraltete Pakete durch ihre empfohlenen neueren Versionen, wie im Artikel [Einstellung](/help/release-notes/deprecated-removed-features.md) beschrieben, um die Sicherheit und Leistung Ihrer Anwendung zu gewährleisten |
 | Warnung zu veralteten Konfigurationen | Proaktiv | Ersetzen Sie veraltete Konfigurationen durch ihre empfohlenen neueren Versionen, wie im Artikel [Einstellung](/help/release-notes/deprecated-removed-features.md) beschrieben, um die Sicherheit und Leistung Ihrer Anwendung zu gewährleisten |

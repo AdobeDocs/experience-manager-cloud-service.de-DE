@@ -4,7 +4,7 @@ description: Versionshinweise für [!DNL Adobe Experience Manager] as a Cloud Se
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 88%
@@ -37,7 +37,8 @@ Die folgende Version (2021.4.0) wird am 29. April 2021 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Assets] {#what-is-new-assets}
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+<!--
+ TBD: refine this list of features and enh. for Feb release.
 
 Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
@@ -45,7 +46,8 @@ Indicators for expired, approved, and rejected statuses now available for assets
 
 Ability to select a root path. select if a minimum number of tags is required. 
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+Add a Boolean or radio widget type to metadata schema setup.
+-->
 
 * [!DNL Experience Manager] erweitert die Funktion „Connected Assets“, um die Verwendung von [!DNL Dynamic Media]-Bildern in den unterstützten Kernkomponenten zu unterstützen. Siehe [Verwenden von Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 * Experience Manager-Administratoren können die Aufnahme von Assets zu einem bestimmten Zeitpunkt planen. Administratoren können außerdem wiederkehrende Aufnahmevorgänge basierend auf Datum und Uhrzeit planen. Siehe [Massenaufnahme von Assets](/help/assets/add-assets.md#asset-bulk-ingestor).
@@ -62,7 +64,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Onboarding- und Registrierungserlebnisse zu bieten. Diese Erlebnisse haben Unternehmen dabei geholfen, Leads in Käufe umzuwandeln, erfasste Kundendaten zu verarbeiten, responsive Erlebnisse basierend auf dem Zielgruppenprofil bereitzustellen und vieles mehr. AEM Forms ist jetzt as a Cloud Service verfügbar.
+AEM Forms hat im Laufe der Jahre vielen Unternehmen dabei geholfen, großartige Onboarding- und Registrierungserlebnisse zu bieten. Diese Erlebnisse haben Unternehmen dabei geholfen, Leads in Käufe umzuwandeln, erfasste Kundendaten zu verarbeiten, responsive Erlebnisse basierend auf dem Zielgruppenprofil bereitzustellen und vieles mehr. AEM Forms ist jetzt als Cloud-Service verfügbar.
 
 Sie können [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=de) verwenden, um digitale Formulare zu erstellen, Formulare mit vorhandenen Datenquellen zu verbinden, Formulare mit Adobe Sign zu integrieren, E-Signaturen zu Formularen hinzuzufügen und um Datensatzdokumente (DoR) zu generieren, um gesendete Formulare als PDF-Dateien zu archivieren. Der Service kann auch Ihre bestehenden PDF-Formulare in digitale Formulare konvertieren. Zusätzlich zu den standardmäßigen AEM Forms-Funktionen bietet der Service mehrere Cloud-native Funktionen wie automatische Skalierung, keine Ausfallzeiten bei Upgrades und Cloud-native Entwicklungsumgebungen.
 
@@ -78,7 +80,7 @@ Sie können sich an Ihren Adobe-Kundenbetreuer wenden, um eine Demo zu erhalten 
 
 * Freigabe der CIF Venia-Referenz-Website 2021.03.25, die die aktuelle CIF-Kernkomponenten Version 1.9.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)Referenz-Site .
 
-* Version 1.9.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[&#128279;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)}CIF-Kernkomponenten.
+* Version 1.9.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[}CIF-Kernkomponenten.](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)
 
 
 ## Cloud Manager {#cloud-manager}
@@ -92,7 +94,7 @@ Die nächste Version ist für den 08. April 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-march}
 
-* Zulassungsliste Kunden mit Umgebungen mit bereits bestehenden Konfigurationen für benutzerdefinierte Domain-Namen für [IP-](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL-](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) und [benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre bereits bestehenden Konfigurationen und können diese über die Benutzeroberfläche selbst verwalten.
+* Kunden mit Umgebungen mit bereits bestehenden Konfigurationen für benutzerdefinierte Domain-Namen für [IP-](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL-](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) und [benutzerdefinierte Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) erhalten eine Meldung über ihre bereits bestehenden Konfigurationen und können diese über die Benutzeroberfläche selbst verwalten.
 
 * Benutzer mit den erforderlichen Berechtigungen können jetzt ein Programm bearbeiten, sodass sie Folgendes selbstständig ausführen können:
 
@@ -130,7 +132,7 @@ Die nächste Version ist für den 08. April 2021 geplant.
 
 * Gelegentlich wird dem Benutzer neben einer IP-Zulassungsliste möglicherweise ein grüner „aktiver“ Status angezeigt, auch wenn diese Konfiguration nicht bereitgestellt wurde.
 
-* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Experience Audit-Schritt aktiviert.
+* Alle vorhandenen Produktions-Pipelines werden automatisch mit dem Erlebnis-Audit-Schritt aktiviert.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -169,7 +171,7 @@ Best Practices Analyzer 2.1.8 wurde am 22. März 2021 veröffentlicht.
 
 ### Neue Funktionen in den Code-Refaktorierungs-Tools {#what-is-new-crt}
 
-* Neue Funktionen und Verbesserungen für Repository Modernizer. Die [&#x200B; Version finden Sie unter &#x200B;](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)GitHub-Ressource: Repository Modernizer .
+* Neue Funktionen und Verbesserungen für Repository Modernizer. Die [ Version finden Sie unter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)GitHub-Ressource: Repository Modernizer .
    * Normalisieren von OSGi-Konfigurationen (außer RepoInit-Konfigurationen) auf das bevorzugte .cfg.json-Format.
    * Umbenennen von OSGi-Konfigurationsordnern in das angegebene Format.
    * Generieren des Projekts „ui.apps.structure“.

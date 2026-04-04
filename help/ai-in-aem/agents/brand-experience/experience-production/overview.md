@@ -2,9 +2,9 @@
 title: Übersicht über Experience Production Agent
 description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM die Inhaltserstellung beschleunigen und Änderungen automatisch koordinieren können.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 2%

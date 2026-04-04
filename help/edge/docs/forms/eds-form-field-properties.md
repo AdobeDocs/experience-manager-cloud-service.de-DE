@@ -2,13 +2,13 @@
 title: Meistern der Feldeigenschaften von adaptiven Forms-Blöcken
 description: Erstellen Sie leistungsstarke Formulare schneller mithilfe von Tabellen und adaptiven Forms-Blockfeldeigenschaften! In diesem Handbuch werden alle vom EDS Forms Block unterstützten Eigenschaften aufgelistet.
 feature: Edge Delivery Services
-source-git-commit: ccc6439f68d8199154d4cd664b9cdb6428460a64
+exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 4%
 
 ---
-
 
 # Adaptive Forms-Blockfeldeigenschaften
 
@@ -27,7 +27,7 @@ Jedes Feld im JSON-Schema verfügt über eine `fieldType`-Eigenschaft, die besti
 
 Wenn der `fieldType` einem bestimmten Typ entspricht, wird **benutzerdefinierter Renderer** verwendet. Andernfalls wird er als **Standardeingabetyp“**.
 
-In den folgenden Abschnitten finden Sie [vollständige HTML-Struktur und &#x200B;](#common-html-structure) für jeden Feldtyp.
+In den folgenden Abschnitten finden Sie [vollständige HTML-Struktur und ](#common-html-structure) für jeden Feldtyp.
 
 ## Von Feldern verwendete allgemeine Eigenschaften
 
@@ -368,7 +368,8 @@ Zum Beispiel:
 Weitere Informationen finden Sie in der Implementierung in `blocks/form/form.js` und `blocks/form/util.js`.
 
 
-<!--Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
+<!--
+Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
 
 Think of your form as a table in a spreadsheet, where each line represents a different question or piece of information you want to collect. The table headings tell you what kind of answers you can expect for each section.
 
@@ -393,5 +394,5 @@ This table details all the properties you can use to customize your Adaptive For
 | **Multiple** | Allow multiple file selections | `true`, `false` |
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
-| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
-
+| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |
+-->

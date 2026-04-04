@@ -4,7 +4,7 @@ description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie Ressourcenpfade p
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 92%
@@ -44,9 +44,11 @@ Als Referenz ist die standardmäßige OSGi-Konfiguration für `com.day.cq.common
 
 Definieren oder überschreiben Sie die `EXTERNALIZER` Umgebungsvariablen (z. B. `AEM_EXTERNALIZER_AUTHOR`) in Cloud Manager nicht. Wenn Sie stattdessen die `publish`- oder `preview`-Domain-Werte überschreiben müssen, definieren und verwenden Sie die Umgebungsvariablen `AEM_CDN_DOMAIN_PUBLISH` und `AEM_CDN_DOMAIN_PREVIEW` . Diese Variablen werden beim Start automatisch den entsprechenden Feldern in der Externalizer-Konfiguration zugewiesen.
 
-<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+<!--
+ Alexandru: hiding this. See CQDOC-23014 for more details
 
-To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables.
+-->
 
 ## Konfigurieren des Externalizer-Service {#configuring-the-externalizer-service}
 

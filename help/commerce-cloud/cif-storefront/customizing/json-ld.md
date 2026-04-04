@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 79%
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,7 @@ In diesem Handbuch wird erläutert, wie Sie die JSON+LD-Funktion in AEM CIF akti
 
 ## Aktivieren von JSON+LD in der CIF-Konfiguration {#enabling}
 
-Standardmäßig ist das Kontrollkästchen **JSON+LD aktivieren** in der CIF-Konfiguration nicht sichtbar. Um diese Funktion zu aktivieren, muss das Projekt die erforderliche OSGi-Konfiguration enthalten, mit der das Kontrollkästchen angezeigt werden kann. Diese Konfiguration ermöglicht es Benutzenden, die JSON+LD-Skriptunterstützung auf Produktseiten umzuschalten.
+Standardmäßig ist das Kontrollkästchen **JSON+LD aktivieren** in der CIF-Konfiguration nicht sichtbar. Um diese Funktion zu aktivieren, muss das Projekt die erforderliche OSGi-Konfiguration enthalten, mit der das Kontrollkästchen angezeigt werden kann. Diese Konfiguration ermöglicht es Benutzenden, die Unterstützung von JSON+LD-Skripten auf Produktseiten ein- oder auszuschalten.
 
 Um das Kontrollkästchen **JSON+LD aktivieren** in der CIF-Konfiguration verfügbar zu machen, fügen Sie die folgende OSGi-Konfiguration zu Ihrem Projekt hinzu:
 

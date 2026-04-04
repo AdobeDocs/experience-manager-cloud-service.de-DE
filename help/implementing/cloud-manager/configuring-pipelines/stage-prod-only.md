@@ -8,7 +8,7 @@ hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 89%
@@ -17,8 +17,10 @@ ht-degree: 89%
 
 # Aufspalten in reine Staging- und reine Produktions-Pipelines {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 Sie können Staging- und Produktionsbereitstellungen mithilfe von dedizierten Pipelines aufspalten.
 
@@ -113,7 +115,8 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 Sie können die neuen Pipelines [wie jede andere Pipeline starten](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). Sie können eine reine Produktions-Pipeline auch direkt von den Ausführungsdetails einer reinen Staging-Pipeline aus auslösen.
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -124,7 +127,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### Ausführen reiner Staging-Pipelines {#stage-only-run}
 

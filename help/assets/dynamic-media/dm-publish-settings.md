@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3359'
 ht-degree: 99%
@@ -19,8 +19,10 @@ ht-degree: 99%
 
 # Konfigurieren des Veröffentlichungs-Setups von Dynamic Media für Bild-Server
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+ hide: yes
+hidefromtoc: yes
+-->
 
 {{work-with-dynamic-media}}
 

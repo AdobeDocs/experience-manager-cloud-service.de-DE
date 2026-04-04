@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.3.0 von [!DNL Adobe Experience 
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 93%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Werfen Sie einen Blick auf das Video „Versionsübersicht März 2024“ für eine Zusammenfassung der neuen Funktionen in der Version 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450368?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ AEM Sites kann jetzt als Inhaltsquelle für Edge Delivery Services verwendet wer
 
 ![AEM-Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=de#M43905?lang=de)
+Weitere Informationen finden Sie in der [Dokumentation](/help/edge/overview.md) und durch Ansehen von [AEM Gems – Erste Schritte mit AEM-Authoring und Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905?lang=de)
 
 **Universeller Editor für Headless-Implementierungen**
 
@@ -191,7 +191,7 @@ Operational Telemetry Service bietet eine präzisere Reflektion der Benutzerinte
 
   Wenn Sie diese neue Funktion testen und Ihr Feedback geben möchten, senden Sie bitte eine E-Mail an `aemcs-rum-adopter@adobe.com` sowie Ihren Domain-Namen für jede Umgebung, für die Sie operative Telemetrie aktivieren möchten, über Ihre mit Ihrer Adobe ID verknüpfte E-Mail-Adresse. Das Produkt-Team von Adobe wird dann den operativen Telemetrieservice für Sie aktivieren.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] als Fundament {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Early-Adopter-Programm {#foundation-early-adopter}
 
@@ -211,9 +211,9 @@ Zusätzlich zu den kürzlich veröffentlichten [Traffic-Filterregeln](/help/secu
 * Festlegen oder Ändern von Anfragen- oder Antwortkopfzeilen
 * benutzerdefinierte Fehlerseiten, wenn das CDN AEM nicht erreichen kann
 
-#### Apache/Dispatcher-Laufzeiterfassung von Rewrite-Zuordnungen (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
+#### Apache/Dispatcher-Laufzeitaufnahme von Rewrite-Zuordnungen (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
 
-Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository platziert werden, und laden sie, ohne dass eine Pipeline auf der Web-Ebene ausgeführt werden muss. Dies eröffnet Business-Anwenderinnen und -Anwendern die Möglichkeit, Umleitungen über eine Benutzeroberfläche zu deklarieren, z. B. durch ACS Commons Redirect Map Manager. Bitte wenden Sie sich an **<aemcs-cdn-config-adopter@adobe.com>** für weitere Informationen.
+Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository platziert werden, und laden sie, ohne dass eine Pipeline-Ausführung auf der Web-Ebene nötig ist. Dies eröffnet Business-Anwenderinnen und -Anwendern die Möglichkeit, Umleitungen über eine Benutzeroberfläche zu deklarieren, z. B. durch ACS Commons Redirect Map Manager. Bitte wenden Sie sich an **<aemcs-cdn-config-adopter@adobe.com>** für weitere Informationen.
 
 #### Edge Side Includes (ESI) für das Laden dynamischer Inhalte (Early-Adopter-Programm) {#esi-early-adopter}
 

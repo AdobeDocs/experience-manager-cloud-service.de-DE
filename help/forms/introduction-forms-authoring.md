@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 8e57406d97b3019a3c3530390d1fd52c836fcdeb
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 98%
@@ -58,9 +58,11 @@ Wenn Sie ein vorhandenes adaptives Formular erstellen oder bearbeiten, verwenden
 * [Komponenten-Symbolleiste](#component-toolbar)
 * [Seite mit adaptivem Formular](#af-page)
 
-<!-- ![Adaptive Form authoring UI](assets/formeditor.png)
+<!--
+ ![Adaptive Form authoring UI](assets/formeditor.png)
 
-**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page -->
+**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page
+-->
 
 ### Seitenleiste {#sidebar}
 
@@ -75,9 +77,11 @@ Die Seitenleiste ermöglicht Ihnen Folgendes:
 
 **A.** Inhalt-Browser **B.** Eigenschaften-Browser **C.** Assets-Browser **D.** Komponenten-Browser
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 Die Seitenleiste enthält folgende Browser:
 

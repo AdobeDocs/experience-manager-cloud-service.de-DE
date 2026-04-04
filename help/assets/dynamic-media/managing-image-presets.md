@@ -6,7 +6,7 @@ feature: Image Presets,Viewers,Renditions
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 92%
@@ -61,7 +61,7 @@ Bildvorgaben definieren, wie Dynamic Media Bilder bereitstellt, einschließlich 
 
 ### Generieren von Ausgabedarstellungen in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-In AEM as a Cloud Service werden Ausgabedarstellungen mithilfe von [Asset-Microservices](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) generiert. Der Workflow DAM-Update-Asset kann in Cloud Service nicht angepasst werden.
+In AEM as a Cloud Service werden Ausgabedarstellungen mithilfe von [Asset-Microservices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) generiert. Der Workflow DAM-Update-Asset kann in Cloud Service nicht angepasst werden.
 
 Zu den wichtigen Überlegungen gehören die folgenden:
 
@@ -73,7 +73,7 @@ Bildvorgaben verweisen auf verfügbare Ausgabedarstellungen zum Zeitpunkt der Be
 
 **So steuern Sie, welche Ausgabedarstellungen generiert werden:**
 
-1. Erstellen oder bearbeiten Sie [Verarbeitungsprofil](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+1. Erstellen oder bearbeiten Sie [Verarbeitungsprofil](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
 2. Konfigurieren Sie die erforderlichen Ausgabedarstellungsdefinitionen.
 3. Wenden Sie das Verarbeitungsprofil auf den entsprechenden Ordner an.
 
@@ -133,7 +133,8 @@ Using the default process arguments, the first page of a PDF/AI document is rast
 
 Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
+-->
 
 <!--
 ### InDesign (INDD) file format {#indesign-indd-file-format}
@@ -327,7 +328,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul>
     <div>
       Scharfzeichnen wird im Video
-     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=de">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Verwenden des Scharfzeichnens von Bildern mit Experience Manager Dynamic Media</a>, im Online-Hilfethema <a href="https://experienceleague.adobe.com/de/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Scharfzeichnen eines Bildes</a> und im herunterladbaren PDF <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Best Practices zum Scharfzeichnen von Bildern in Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 16%
@@ -35,7 +35,8 @@ AEM as a Cloud Service bietet verschiedene vordefinierte Übermittlungsaktionen 
 
 >[!NOTE]
 >
->Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.-->
+>Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.
+-->
 
 ## Voraussetzungen
 
@@ -84,7 +85,7 @@ Nachdem Sie die oben genannten Voraussetzungen konfiguriert haben, können Sie m
 
 Führen Sie die folgenden Schritte aus, um die [!DNL Microsoft® Dynamics 365] Cloud Service-Konfiguration zu konfigurieren:
 
-1. Navigieren Sie auf **[!UICONTROL Autoreninstanz zu]** Tools![&#x200B; &#x200B;](assets/hammer.png)hammer **[!UICONTROL >]** Cloud Services **[!UICONTROL >]** Datenquellen[!DNL AEM Forms].
+1. Navigieren Sie auf **[!UICONTROL Autoreninstanz zu]** Tools![ ](assets/hammer.png)hammer **[!UICONTROL >]** Cloud Services **[!UICONTROL >]** Datenquellen[!DNL AEM Forms].
 
    ![Cloud Data-Source auswählen](/help/forms/assets/dynamics-data-source.png)
 1. Wählen Sie einen Konfigurations-Container aus. Die Konfiguration wird im ausgewählten Konfigurations-Container gespeichert.

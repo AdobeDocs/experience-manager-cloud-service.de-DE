@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Inhaltssuche und -indizierung in AEM as
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
-workflow-type: ht
-source-wordcount: '2918'
-ht-degree: 100%
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 
 2. Anpassung eines vorkonfigurierten Index. Um einen vorkonfigurierten Index anzupassen, hängen Sie `-custom-` an, gefolgt von einer Zahl. So ist beispielsweise `/oak:index/damAssetLucene-8-custom-1` die Anpassung des vorkonfigurierten Index `/oak:index/damAssetLucene-8`. Eine Anpassung ist in der Regel eine Kopie des vorkonfigurierten Index sowie zusätzlicher Eigenschaften, die indiziert werden müssen.
 
-3. Vollständig benutzerdefinierter Index: Es ist möglich, einen völlig neuen Index von Grund auf neu zu erstellen. Diese Indizes müssen ebenfalls mit `-custom-` und einer Versionsnummer enden. Um Namenskonflikte zu vermeiden, sollten Sie außerdem ein Präfix im Indexnamen verwenden. Zum Beispiel: `/oak:index/acme.product-1-custom-2`, wobei `acme.` das Präfix ist.
+3. Vollständig benutzerdefinierter Index: Sie können wirklich einen völlig neuen Index von Grund auf neu erstellen. Diese Indizes müssen ebenfalls mit `-custom-` und einer Versionsnummer enden. Um Namenskonflikte zu vermeiden, sollten Sie außerdem ein Präfix im Indexnamen verwenden. Zum Beispiel: `/oak:index/acme.product-1-custom-2`, wobei `acme.` das Präfix ist.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Eine Indexdefinition kann in eine der folgenden Kategorien unterteilt werden:
 
 >[!NOTE]
 >
->Wenn Sie einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE Package Manager (`/crx/packmgr/`). Benennen Sie sie in `damAssetLucene-8-custom-1` (oder höher) um und fügen Sie Ihre Anpassungen in die XML-Datei ein. Wenn der Index in der Cloud-Umgebung vom Typ `elasticsearch` ist, sind zusätzliche Änderungen erforderlich: Ändern Sie die Eigenschaft `type` in `lucene`, ändern Sie die Eigenschaft `async` in `[async,nrt]` und ändern Sie die Eigenschaft `similarityTags` in `true`. Dadurch wird sichergestellt, dass erforderliche Konfigurationen nicht versehentlich entfernt werden. Beispiel: der Knoten `tika` unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
+>Wenn Sie einen vorkonfigurierten Index anpassen, z. B. `damAssetLucene-8`, kopieren Sie die neueste vorkonfigurierte Indexdefinition aus einer *Cloud Service-Umgebung* mithilfe des CRX DE-Paket-Managers (`/crx/packmgr/`). Benennen Sie sie in `damAssetLucene-8-custom-1` (oder höher) um und fügen Sie Ihre Anpassungen in die XML-Datei ein. Wenn der Index in der Cloud-Umgebung vom Typ `elasticsearch` ist, sind zusätzliche Änderungen erforderlich: Ändern Sie die Eigenschaft `type` in `lucene`, ändern Sie die Eigenschaft `async` in `[async,nrt]` und ändern Sie die Eigenschaft `similarityTags` in `true`. Dadurch wird sichergestellt, dass erforderliche Konfigurationen nicht versehentlich entfernt werden. Beispiel: der Knoten `tika` unter `/oak:index/damAssetLucene-8/tika` ist in dem angepassten Index erforderlich, der in einer AEM Cloud Service-Umgebung bereitgestellt wird, aber nicht im lokalen AEM SDK vorhanden ist.
 
 Bereiten Sie für Anpassungen eines vorkonfigurierten Index ein neues Paket vor, das die angepasste oder benutzerdefinierte Indexdefinition enthält. Der Indexname muss dem folgenden Benennungsmuster entsprechen:
 
@@ -79,12 +79,14 @@ Bereiten Sie für einen vollständig angepassten Index ein neues Indexdefinition
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
-Wie in den Abschnitten zu den Einschränkungen erwähnt, muss der `type` der angepassten Indexdefinition immer auf `lucene` festgelegt werden, auch wenn die extrahierte Indexdefinition unter Verwendung von Package Manager einen anderen Typ aufweist (z. B. `elasticsearch`).
+Wie in den Abschnitten zu den Einschränkungen erwähnt, muss der `type` der angepassten Indexdefinition immer auf `lucene` festgelegt werden, auch wenn die extrahierte Indexdefinition unter Verwendung vom Paket-Manager einen anderen Typ aufweist (z. B. `elasticsearch`).
 Die Eigenschaft `async` muss ebenfalls geändert werden, wenn die extrahierte Indexdefinition auf `elastic-async` festgelegt ist. Die Eigenschaft `async` muss für die angepasste Indexdefinition auf eine der folgenden Eigenschaften festgelegt werden: `[async]`, `[async,nrt]` oder `[fulltext-async]`.
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >

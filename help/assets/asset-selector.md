@@ -6,7 +6,7 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5363'
 ht-degree: 99%
@@ -30,7 +30,8 @@ Der Asset-Selektor bietet viele Vorteile, z. B.:
 * Möglichkeit, innerhalb einer IMS-Organisation zur Asset-Auswahl zwischen Repositorys zu wechseln.
 * Möglichkeit, Assets nach Namen, Abmessungen und Größe zu sortieren und in der Listen-, Raster-, Galerie- oder Wasserfallansicht anzuzeigen.
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -473,7 +474,7 @@ Die dynamische Versand-URL weist die folgende Syntax auf:
 
 +++
 
-+++**Bereit zur Auswahl der dynamischen Versand-URL**
++++ **Bereit zur Auswahl der dynamischen Versand-URL**
 Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, die als JSON-Objekt fungiert. Beispiel: `JsonObj`. Die dynamische Versand-URL wird durch die Kombination der folgenden Carrier erstellt:
 
 | Objekt | JSON |
@@ -523,6 +524,8 @@ Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PD
   Das Code-Fragment im obigen Screenshot ist ein Beispiel für ein Video-Asset. Es enthält das Array der Ausgabedarstellungs-Links. `selection[5]` im Auszug ist das Beispiel für die Miniaturansicht eines Bildes, die als Platzhalter für die Miniaturansicht eines Videos im Zielerlebnis verwendet werden kann. `selection[5]` im Array der Ausgabedarstellungen ist für den Video-Player vorgesehen. Dies dient als HTML und kann als `src` des iFrames festgelegt werden. Es unterstützt das Streaming mit adaptiver Bitrate (die Web-optimierte Bereitstellung des Videos).
 
   Im obigen Beispiel lautet die URL des Video-Players wie folgt: `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
+
++++
 
 +++**Benutzeroberfläche des Asset-Wählers für Dynamic Media mit OpenAPI-Funktionen**
 
@@ -795,7 +798,7 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 | *repo:id* | Zeichenfolge | Eindeutige Kennung für das Asset. |
 | *repo:assetClass* | Zeichenfolge | Die Klassifizierung des Assets (z. B. Bild oder Video, Dokument). |
 | *repo:name* | Zeichenfolge | Der Name des Assets, einschließlich der Dateierweiterung. |
-| *repo:size* | Number (Zahl) | Die Größe des Assets in Bytes. |
+| *repo:size* | number | Die Größe des Assets in Bytes. |
 | *repo:path* | Zeichenfolge | Der Speicherort des Assets im Repository. |
 | *repo:ancestors* | `Array<string>` | Ein Array von Vorgängerelementen für das Asset im Repository. |
 | *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht). |
@@ -821,10 +824,12 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 
 Mit dem Asset-Wähler können Sie die Verwendung eines abgelaufenen Assets steuern. Sie können das abgelaufene Asset mit dem Zeichen **Läuft bald ab** anpassen, sodass Sie im Voraus wissen, welche Assets innerhalb von 30 Tagen ab dem aktuellen Datum ablaufen werden. Darüber hinaus kann dies entsprechend den Anforderungen angepasst werden. Sie können auch die Auswahl eines abgelaufenen Assets auf der Arbeitsfläche zulassen oder umgekehrt. Die Anpassung eines abgelaufenen Assets kann mithilfe einiger Code-Snippets auf verschiedene Weise durchgeführt werden:
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -845,7 +850,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 #### Festlegen der Dauer eines abgelaufenen Assets {#set-duration-of-expired-asset}
 

@@ -12,7 +12,7 @@ hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3620'
 ht-degree: 99%
@@ -281,12 +281,13 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
+-->
 
 _Dynamic Media-Tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=de)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 

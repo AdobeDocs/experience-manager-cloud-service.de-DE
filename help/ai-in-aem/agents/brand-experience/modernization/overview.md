@@ -2,9 +2,9 @@
 title: Übersicht über den Experience Modernization Agent
 description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von KI neue Websites in Edge Delivery Services integriert.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Erfahren Sie, wie der Experience Modernization Agent mithilfe von KI Websites in
 
 ## Einführung {#introduction}
 
-[Als Teil des Brand Experience Agents beschleunigt &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) Experience Modernization Agent das Onboarding in Edge Delivery Services, indem er Website-Migrationen und die Einrichtung grundlegender Websites automatisiert.
+[Im Rahmen der Brand Experience Agent ](/help/ai-in-aem/agents/brand-experience/overview.md) der Experience Modernization Agent das Onboarding für Edge Delivery Services durch die Automatisierung von Website-Migrationen und die Einrichtung grundlegender Websites.
 
 Es kombiniert [Site-Creation und Migration](#creation-migration) für anfängliches Onboarding von Websites und [Blockentwicklungsfunktionen](#block-development) um die Site-Erstellung und Migrations-Workflows zu unterstützen. Darüber hinaus bietet sie die [Experience Modernization Console](#console) als Web-basierte KI-unterstützte Entwicklungsumgebung, die Ihnen direkt zur Verfügung steht. Während Benutzer den Agenten direkt über diese Konsole betreiben können, behalten Entwickler die volle Kontrolle darüber, was ausgeliefert wird.
 
-Für komplexe Migrationen oder Migrationen mit hoher Priorität bietet Adobe das [Agent Outcome Engineer (AOE)-Bereitstellungsmodell, &#x200B;](#aoe-delivery) einen Engineering-geführten Service, der entwickelt wurde, um produktionsbereite Edge Delivery-Sites mithilfe des Experience Modernization Agent bereitzustellen.
+Für komplexe Migrationen oder Migrationen mit hoher Priorität bietet Adobe das [Agent Outcome Engineer (AOE)-Bereitstellungsmodell, ](#aoe-delivery) einen Engineering-geführten Service, der entwickelt wurde, um produktionsbereite Edge Delivery-Sites mithilfe des Experience Modernization Agent bereitzustellen.
 
 ## Vorteile {#benefits}
 
@@ -66,8 +66,8 @@ Die Self-Service-Konsole zur Erlebnismodernisierung ist allgemein verfügbar. In
 
 Erste Schritte mit der Experience Modernization Console!
 
-* Wenn Sie Ihre Site durch die Erstellung von Dokumenten modernisieren möchten, [&#x200B; Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-* Wenn Sie Ihre Site durch das Authoring mit AEM modernisieren möchten, [&#x200B; Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+* Wenn Sie Ihre Site durch die Erstellung von Dokumenten modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* Wenn Sie Ihre Site durch das Authoring mit AEM modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## Versand durch Agent Outcome Engineer (AOE) {#aoe-delivery}
 

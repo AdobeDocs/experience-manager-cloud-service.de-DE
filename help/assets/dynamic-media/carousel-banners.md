@@ -6,7 +6,7 @@ feature: Carousel Banners
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4498'
 ht-degree: 99%
@@ -49,7 +49,8 @@ So schaffen Sie einen schnellen Einstieg:
 
    Ermitteln Sie zunächst die dynamischen Variablen, die von der vorhandenen Schnellansichtsimplementierung verwendet werden. So geben Sie die Daten zu Hotspots und Imagemaps beim Erstellen von Karussellbannern in Experience Manager Assets korrekt ein.
 
-<!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
+<!--
+ LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
    >[!NOTE]
    >
@@ -100,7 +101,8 @@ Ermitteln Sie zunächst die dynamischen Variablen, die von der vorhandenen Schne
 
 Wenn Sie Hotspots oder Imagemaps zu einem Bannerbild hinzufügen, weisen Sie eine SKU (Stock Keeping Unit) zu. Sie können allen Hotspots oder Imagemaps optional zusätzliche Variablen zuweisen. Mithilfe dieser Variablen werden Hotspots oder Imagemaps später Schnellansichtsinhalte zugeordnet.
 
-<!-- LEAVE; COMMERCE BEING ADDED LATER
+<!--
+ LEAVE; COMMERCE BEING ADDED LATER
 
 >[!NOTE]
 >
@@ -148,10 +150,10 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
    <td>Einzelne SKU, befindet sich in der Abfragezeichenfolge.</td>
    <td><p>Die aufgezeichneten Schnellansichts-URLs enthalten Folgendes:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>Der einzige variable Teil der URL ist der Wert des Abfrageparameters <code>productId=</code> und es ist offensichtlich ein SKU-Wert. Daher müssen Sie nur die SKU-Felder der Hotspots oder Imagemaps ausfüllen, etwa mit folgenden Werten: <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -167,9 +169,9 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
    <td>SKU und Kategorie-ID in der Abfragezeichenfolge.</td>
    <td><p>Die aufgezeichneten Schnellansichts-URLs enthalten Folgendes:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>In diesem Fall liegen zwei abweichende Teile in der URL vor. Die SKU wird im Parameter <code>prodId</code> gespeichert, während die Kategorie-ID im Parameter <code>category=</code> gespeichert wird.</p> <p>Bei den Hotspot- oder Imagemap-Definitionen selbst handelt es sich um Paare. Also einen SKU-Wert und eine zusätzliche Variable mit dem Namen <code>categoryId</code>. Die resultierenden Paare lauten wie folgt:</p>
     <ul>
      <li><p>Die SKU lautet <strong><code>305466</code></strong> und <code>categoryId</code> lautet <code>1100004</code>.</p> </li>

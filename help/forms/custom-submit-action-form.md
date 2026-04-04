@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1703'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -102,8 +102,11 @@ Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgende
 * **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Übermittlungsaktion mit dem adaptiven Formular zu registrieren, sodass sie im Dialogfeld für die Bearbeitung des adaptiven Formulars angezeigt wird, fügen Sie diese Eigenschaften zu `sling:Folder` hinzu:
 
    * **guideComponentType** vom Typ „String“ mit dem Wert **fd/af/components/guidesubmittype**
-   * **guideDataModel** vom Typ „String“ und der Angabe, für welchen Typ von adaptiven Formularen die Sende-Aktion gilt. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** wird für adaptive XSD-basierte Formulare unterstützt. **basic** wird für adaptive Formulare unterstützt, die weder XDP noch XSD verwenden. Um die Aktion in mehreren Typen adaptiver Formulare anzuzeigen, fügen Sie die entsprechenden Zeichenfolgen hinzu. Trennen Sie die Zeichenfolgen durch Kommas. Um beispielsweise eine Aktion in adaptiven <!--XFA- and -->XSD-basierten Formularen anzuzeigen, geben Sie den Wert <!--**xfa** and--> **xsd** an.
-
+   * **guideDataModel** vom Typ „String“ und der Angabe, für welchen Typ von adaptiven Formularen die Sende-Aktion gilt. **xsd** wird für adaptive XSD-basierte Formulare unterstützt. **basic** wird für adaptive Formulare unterstützt, die weder XDP noch XSD verwenden. Um die Aktion in mehreren Typen adaptiver Formulare anzuzeigen, fügen Sie die entsprechenden Zeichenfolgen hinzu. Trennen Sie die Zeichenfolgen durch Kommas. Um beispielsweise eine Aktion in einem XSD-basierten adaptiven Forms anzuzeigen, geben Sie den Wert als **xsd** an.
+  <!--
+    Replace above?
+    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. **xfa** is supported for XFA-based Adaptive Forms while **xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based Adaptive Forms, specify the value as <**xfa** and **xsd**.
+    -->
    * **jcr:description** vom Typ „String“. Der Wert dieser Eigenschaft wird im Dialogfeld für die Bearbeitung adaptiver Formulare auf der Registerkarte „Aktionen übermitteln“ in der Liste „Aktion übermitteln“ angezeigt. Die vordefinierten Aktionen befinden sich im CRX-Repository im Verzeichnis **/libs/fd/af/components/guidesubmittype**.
 
    * **submitService** vom Typ „String“. Weitere Informationen finden Sie unter [Planen der Übermittlung adaptiver Formulare für benutzerdefinierte Aktionen](#schedule-adaptive-form-submission).

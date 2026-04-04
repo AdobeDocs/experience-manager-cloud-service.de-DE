@@ -7,7 +7,7 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: 3a4119cfddda5d2d55f9a74848afe59eb0c1b709
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -44,12 +44,12 @@ Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 | Mehrere Komponenten | Verwenden verschiedener Komponenten zum Erstellen komplexer und ansprechender Dokumente | ✅ verfügbar |
 | Multi-Channel-Design | Einheitliche Erlebnisse für Print- und digitale Formate bei Einhaltung behördlicher Auflagen erstellen | 🌓 teilweise verfügbar |
 | Dynamische Inhalte | Generieren personalisierter Inhalte mithilfe von Business-Logik und Datenbindung | 🌓 teilweise verfügbar |
-| Formatflexibilität | Ausgabe in die Formate PDF, HTML PostScript, PCL, ®️ und ZPL | 🌓 teilweise verfügbar |
+| Formatflexibilität | Ausgabe in die Formate PDF, HTML, PCL, ®️ und ZPL | 🌓 teilweise verfügbar |
 | Sprachunterstützung | Erstellen von Kommunikation in mehreren Sprachen mit Unterstützung benutzerdefinierter Schriftarten | ⏳ in Kürze verfügbar |
 
 ## Onboarding
 
-Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
+Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
 
 Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
 

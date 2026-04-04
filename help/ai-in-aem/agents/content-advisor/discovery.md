@@ -2,9 +2,9 @@
 title: Content Discovery Agent
 description: Erfahren Sie, wie Sie mit dem Content Discovery Agent relevante AEM-Inhalte bei Bedarf über natürliche Gesprächsaufforderungen bereitstellen können, um ein optimiertes, klick- und kostenloses Discovery-Erlebnis zu erzielen.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 1%
@@ -215,7 +215,7 @@ Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asse
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 

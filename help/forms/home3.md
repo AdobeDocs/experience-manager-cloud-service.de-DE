@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1938'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Exklusiver Zugriff auf hochmoderne AEM Forms-Innovationen:
 - **🔗Direct API Integration** - Verbinden mit APIs ohne Formulardatenmodell-Setup
 - **📊Forms Optimization** - KI-gestützte Leistungsanalyse und Konversionsverbesserungen
 
-[→ anfordern](mailto:aem-forms-ea@adobe.com) | [Weitere Informationen →](/help/forms/early-access-ea-features.md)
+[Zugriff anfordern →](mailto:aem-forms-ea@adobe.com) | [Weitere Informationen →](/help/forms/early-access-ea-features.md)
 
 ## 📋 Formularerstellung und -erstellung {#form-creation}
 
@@ -127,7 +127,7 @@ Verbinden von Formularen mit Backend-Systemen und Datenquellen für einen nahtlo
 | **Funktion:** ermöglichen direkte API-Aufrufe von Formularen über Übermittlungsaktionen oder Datenintegration für die Echtzeit-Konnektivität zu Web-Services. |
 | **Verwendung:** Benutzerdefinierte API-Integration, Web-Service-Konnektivität, Echtzeit-Datenaustausch, Integration von Drittanbieter-Services. |
 | 🌐 Direkte API-Aufrufe 🌐 Echtzeit-Konnektivität 🌐 Flexible Integration 🌐 Unterstützung benutzerdefinierter Services |
-| [Konfigurieren von REST-Endpunkten →](/help/forms/configure-submit-action-restpoint.md) \| [→ zur Datenintegration](/help/forms/data-integration.md) |
+| [Konfigurieren von REST-Endpunkten →](/help/forms/configure-submit-action-restpoint.md) \| [Setup-→ für die Datenintegration](/help/forms/data-integration.md) |
 
 ### Salesforce-Connector {#salesforce-connector}
 
@@ -309,7 +309,7 @@ Wählen Sie Ihren Ausgangspunkt basierend auf Ihren unmittelbaren Anforderungen 
 
 ### Schnellstart zur Datenintegration {#integration-start}
 
-**Für mehrere Datenquellen:** Mit ([) &#x200B;](/help/forms/create-form-data-models.md)
+**Für mehrere Datenquellen:** Mit ([) ](/help/forms/create-form-data-models.md)
 
 **Für Salesforce CRM:** Mit [Salesforce-Connector beginnen](/help/forms/configure-salesforce.md)
 

@@ -3,7 +3,8 @@ title: Versionshinweise für Version 2025.12.0 von [!DNL Adobe Experience Manage
 description: Versionshinweise für Version 2025.12.0 von [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 552d967edb81a8c586dc0a6a8a9bc9902342014c
+exl-id: 61f93179-ad43-40eb-88ef-86299a87b827
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 51%
@@ -38,7 +39,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,11 +59,11 @@ In den folgenden Abschnitten sind aktive Beta-Programme aufgeführt.
 
 ### Agenten in AEM (Beta-Programm) {#agents-in-aem-beta-program}
 
-Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [&#x200B; finden Sie unter „Übersicht über Agenten &#x200B;](/help/ai-in-aem/agents/overview.md) AEM&quot;.
+Frühzeitiger Zugriff auf leistungsstarke, neue AEM-Funktionen für Produktion, Governance, Optimierung, Erkennung und Entwicklung. Ihr Feedback prägt direkt die Roadmap und die endgültigen Funktionen von Adobe. Weitere [ finden Sie unter „Übersicht über Agenten ](/help/ai-in-aem/agents/overview.md) AEM&quot;.
 
 Dieses Programm dauert in der Regel 4-6 Wochen, kann aber so angepasst werden, dass es Ihre Fähigkeit zur aktiven Teilnahme berücksichtigt.
 
-Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [&#128279;](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
+Um an diesem Programm teilzunehmen, senden Sie eine E-Mail an [](mailto:aemagentsteam@adobe.com)aemagentsteam@adobe.com. Geben Sie dabei so weit wie möglich die folgenden Details an:
 
 * Namen und Adobe ID der Team-Mitglieder, die Agenten aktiv verwenden werden.
 * Listen Sie bestimmte Agenten auf, die Sie oder Ihr Team verwenden werden. Oder sagen Sie einfach „Alle Agenten“.
@@ -98,7 +99,8 @@ KI-generierte Metadaten in AEM Assets erfordern nicht mehr, dass der GenAI-Treib
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+<!--
+ ### Pre-Release features in AEM Forms 
 
 **Rule Editor Enhancements**
 
@@ -110,7 +112,8 @@ The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYL
 
 **Function and Mathematical Expression Support in Input Parameters**
  
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+-->
 
 ### Neue Early-Access-Funktionen in AEM Forms {#forms-new-early-access-features}
 
@@ -259,7 +262,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com&quot;, wenn Sie diese Funktion verwenden und Feedback dazu geben möchten.
 
 #### Beschleunigen der AEM-Entwicklung mit KI (Alpha-Programm) {#ai-dev-alpha}
 

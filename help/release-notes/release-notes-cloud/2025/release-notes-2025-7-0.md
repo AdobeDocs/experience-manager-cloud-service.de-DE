@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2025.7.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
-source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2273'
 ht-degree: 96%
@@ -39,7 +39,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -125,7 +125,8 @@ Die wichtigsten Vorteile sind:
 
 Das [AFP Output Sync-API](/help/forms/document-generation-afp-api.md) ermöglicht es Administratorinnen und Administratoren sowie Benutzerinnen und Benutzern, aus adaptiven Formularen AFP-Ausgaben (Advanced Function Presentation) zu generieren und die Ausgaben mit externen Systemen oder Speicherorten zu synchronisieren. AFP ist ein leistungsstarkes, für das Drucken optimiertes Dokumentformat, das häufig in großen Unternehmensumgebungen zum Einsatz kommt.
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+<!--
+ ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
@@ -147,7 +148,8 @@ Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit,
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
 
-<!-- **Forms Optimization opportunities**
+<!--
+ **Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -160,7 +162,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+-->
 
 **Regel-Editor für den Editor für interaktive Kommunikation**
 

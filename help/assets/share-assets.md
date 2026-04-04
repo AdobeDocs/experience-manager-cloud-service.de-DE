@@ -5,7 +5,7 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 99%
@@ -280,7 +280,8 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld �
     * SMTP password: email server password
 -->
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 ### Configure maximum data size {#maxdatasize}
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
@@ -319,7 +320,8 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
+<!--
+ TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
 
 **Siehe auch**

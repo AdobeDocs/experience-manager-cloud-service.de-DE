@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2021.10.0 von [!DNL Adobe Experience 
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 93%
@@ -50,7 +50,8 @@ Sehen Sie sich das Video [Versionsübersicht Oktober 2021](https://video.tv.adob
 
 * Smart-Tags werden automatisch über Asset-Microservices anstatt über Smart Content Services auf die Assets angewendet. Das zugrunde liegende Modell wird aktualisiert, um die Tagging-Ergebnisse zu verbessern und Verzerrungen zu reduzieren. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-<!-- Leave this commented.
+<!--
+ Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.

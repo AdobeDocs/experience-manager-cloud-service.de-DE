@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens di
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2229'
 ht-degree: 91%
@@ -17,11 +17,13 @@ Einige Architekturen müssen AEM as a Cloud Service von einer Programm aufrufen,
 
 Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfachten Fluss für die Entwicklung. Die [Entwicklerkonsole](development-guidelines.md#crxde-lite-and-developer-console) von AEM as a Cloud Service dient dazu, Token zu generieren, die für den Authentifizierungsprozess benötigt werden.
 
-<!-- Alexandru: hiding this until the tutorials reflect the new UI
+<!--
+ Alexandru: hiding this until the tutorials reflect the new UI
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+-->
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
 
@@ -71,7 +73,7 @@ Die Anwendung, die Aufrufe an AEM sendet, sollte in der Lage sein, auf die Anmel
 
 Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
 
-Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[&#x200B; von &#x200B;](https://github.com/adobe/aemcs-api-client-lib)Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
+Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[ von ](https://github.com/adobe/aemcs-api-client-lib)Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
 
 ```
 /*jshint node:true */

@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 99%
@@ -75,7 +75,8 @@ Sie können die Planung mit den folgenden Eigenschaften konfigurieren:
 * Die maximale Anzahl von abgelaufenen Assets in einer Iteration der Planung ist der Wert der Eigenschaft `asset_expired_limit`.
 * Um den Auftrag regelmäßig auszuführen, setzen Sie den Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.istimebased` auf `false` und setzen den Wert der Eigenschaft `cq.dam.expiry.notification.scheduler.period.rule` auf die Zeit in Sekunden.
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

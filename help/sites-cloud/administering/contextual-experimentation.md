@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -33,9 +33,9 @@ Für Sites, die auf Adobe Experience Manager ausgeführt werden, gibt es das „
 
 ## Bevor Sie beginnen {#before-start}
 
-Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [&#x200B; der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
+Das Experimentier-Plug-in wird im Kontext von [Edge Delivery Services](/help/edge/overview.md) verwendet. Sie benötigen daher ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie [AEM Sidekick](https://www.aem.live/docs/sidekick). Weitere Informationen finden Sie [ der Seite „Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial) und [Erste Schritte - Entwickler-Tutorial](https://www.aem.live/developer/tutorial).
 
-Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/de/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
+Nachdem Sie alles eingerichtet haben, sehen **sich dieses Video mit** Titel [Sofortiges Experimentieren](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) an, um eine kurze Demonstration zur Funktionsweise des Experimentier-Plug-ins zu erhalten.
 
 ## Häufig verwendete Begriffe {#frequently-used-terms}
 
@@ -99,9 +99,11 @@ Sie können die Traffic-Aufteilung außer Kraft setzen, indem Sie die Metadaten 
 
 Sobald Sie bereit sind, Ihr Experiment in der Vorschau anzuzeigen und zu inszenieren, klicken Sie im Sidekick oben links auf Vorschau . Bei jeder Vorschau einer Seite mit einem laufenden Experiment wird die Experimentier-Überlagerung in der `.aem.page` Vorschau-Umgebung angezeigt. Mit der Experimentier-Überlagerung können Sie zwischen den Experimentvarianten wechseln und erhalten außerdem Traffic-Daten.
 
-<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--
+- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
+-->
 
 Die Datenerfassung zur Messung der Effektivität jeder Variante basiert auf dem [Operational Telemetry Service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
@@ -117,7 +119,8 @@ Nachfolgend finden Sie mehrere Anwendungsbeispiele für Experimentvarianten. Im 
 
 Sie verwenden ein ganzseitiges Experiment, um zwischen zwei Varianten derselben Seite zu testen. Dies ist eine vollständige Seitenvariante eines A/B-Tests, bei dem Sie über eine Kontroll- und eine Challenger-Seite verfügen. Sie ersetzen den gesamten Inhalt der „ursprünglichen“ Kontrollseite in der Challenger-Variante durch einen anderen Inhaltstyp. Beachten Sie, dass der Kunden-Traffic standardmäßig gleichmäßig aufgeteilt wird (50/50). Sie können jedoch bei Bedarf benutzerdefinierte Aufspaltungen erstellen.
 
-<!--The metadata on the control page should look like this:
+<!--
+The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -185,7 +188,8 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
+-->
 
 ## Weitere Überlegungen {#other-considerations}
 
@@ -228,7 +232,7 @@ Nachfolgend finden Sie eine Liste häufig gestellter Fragen:
 
 F: Kann ich das Aufspaltungsverhältnis zwischen den Varianten meines Experiments anpassen, zum Beispiel 10% auf Kontrolle und 90% auf den Herausforderer?
 
-Ja, das Aufspaltungsverhältnis kann über ([) &#x200B;](#configure-experiment) werden.
+Ja, das Aufspaltungsverhältnis kann über ([) ](#configure-experiment) werden.
 
 F: Kann ich sowohl mit Text als auch mit Bildern experimentieren?
 

@@ -4,7 +4,7 @@ description: OAuth2-Unterstützung für den E-Mail-Service in Adobe Experience M
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
@@ -30,8 +30,10 @@ Weitere Informationen zum AEM as a Cloud Service E-Mail-Service finden Sie unter
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
 1. Wechseln Sie zur erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. Wählen Sie die folgenden Berechtigungen für Ihre Anwendung aus und klicken Sie dann auf **Berechtigung hinzufügen**:
 
    >[!NOTE]

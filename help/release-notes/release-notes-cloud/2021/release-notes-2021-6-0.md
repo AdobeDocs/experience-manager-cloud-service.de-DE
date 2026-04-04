@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2021.6.0 von [!DNL Adobe Experience M
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 97%
@@ -96,7 +96,8 @@ Die nächste Version ist für den 15. Juli 2021 geplant.
    * Unterstützung für [!DNL Assets Essentials].
    * Die Möglichkeit, automatisch eine Verbindung zu [!DNL Experience Manager] as a [!DNL Cloud Service] oder [!DNL Assets Essentials] herzustellen.
 
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+<!--
+ TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
 ### Neue Funktionen im Kanal der Vorabversion von [!DNL Assets] {#beta-features-assets}

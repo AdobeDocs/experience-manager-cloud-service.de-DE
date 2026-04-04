@@ -4,7 +4,7 @@ description: Erfahren Sie, wie spezialisierte Testumgebungen in Cloud Manager ei
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 33%
@@ -13,7 +13,8 @@ ht-degree: 33%
 
 # Hinzufügen einer speziellen Testumgebung{#add-special-test-enviro}
 
-<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 -->
 
 >[!NOTE]
@@ -79,6 +80,6 @@ Wenn die Option **Umgebung hinzufügen** abgeblendet (deaktiviert) ist, kann die
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* Video: [Grundlegendes zu Umgebungstypen in AEM Cloud Manager](https://experienceleague.adobe.com/de/perspectives/cloud-manager-environment-types)
+* Video: [Grundlegendes zu Umgebungstypen in AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
 

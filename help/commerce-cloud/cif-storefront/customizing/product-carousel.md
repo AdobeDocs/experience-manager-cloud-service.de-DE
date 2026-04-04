@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 76%
+ht-degree: 85%
 
 ---
 
@@ -26,9 +26,9 @@ Die Produktkarussellkomponente wird im Laufe dieses Tutorials erweitert. Als ers
 
    ![Produktkarussellkomponente](/help/commerce-cloud/cif-storefront/assets/product-carousel-component.png)
 
-1. Erweitern Sie das seitliche Bedienfeld (falls noch nicht umgeschaltet) und schalten Sie in der Dropdown-Liste der Asset-Suche **Produkte**.
+1. Erweitern Sie das seitliche Bedienfeld (falls noch nicht geschehen) und wechseln Sie im Dropdown-Menü der Asset-Suche zu **Produkte**.
 
-   ![Karussellprodukte](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)
+    ![Karussell für Produkte](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)    
 
 1. Nun sollte eine Liste mit verfügbaren Produkten einer verbundenen Adobe Commerce-Instanz angezeigt werden.
 
@@ -61,7 +61,7 @@ Sie können die Geschäftslogik des Produktkarussells erweitern, indem Sie ein S
    private ProductCarousel productCarousel;
    ```
 
-1. Die Anmerkung `@PostConstruct` stellt sicher, dass diese Methode aufgerufen wird, wenn das Sling-Modell initialisiert wird. Die GraphQL-Produktabfrage wurde bereits mit der Methode „extendProductQueryWith“ erweitert, um Attribute abzurufen. Aktualisieren Sie die GraphQL-Abfrage , um das -Attribut in die partielle Abfrage aufzunehmen:
+1. Die Anmerkung `@PostConstruct` stellt sicher, dass diese Methode aufgerufen wird, wenn das Sling-Modell initialisiert wird. Die GraphQL-Produktabfrage wurde bereits mit der Methode „extendProductQueryWith“ erweitert, um Attribute abzurufen. Aktualisieren Sie die GraphQL-Abfrage, um das Attribut in die partielle Abfrage einzuschließen:
 
    ```javascript
    @PostConstruct

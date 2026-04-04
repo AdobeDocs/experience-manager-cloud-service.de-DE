@@ -7,7 +7,7 @@ feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 60%
@@ -20,7 +20,8 @@ ht-degree: 60%
 
 Mithilfe von [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie Assets verwalten, indem Sie umfassende visuelle Merchandising- und Marketing-Assets bei Bedarf übermitteln, und zwar automatisch skaliert für die Verwendung im Web, auf Mobilgeräten und in Social Media. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
 
-<!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
+<!--
+ OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 >[!NOTE]
 >
@@ -61,6 +62,6 @@ Fügen Sie den folgenden CAA-Eintrag am Stamm (apex) Ihrer Domain hinzu:
 
 Dies ist eine einmalige Veränderung.
 
-Sie können mithilfe Ihrer DNS-Provider-Tools oder eines „CAA Lookup Utility“ überprüfen[&#x200B; ob ein CAA-Eintrag vorhanden &#x200B;](https://caatest.co.uk/).
+Sie können mithilfe Ihrer DNS-Provider-Tools oder eines „CAA Lookup Utility“ überprüfen[ ob ein CAA-Eintrag vorhanden ](https://caatest.co.uk/).
 
 Wenn ein CAA-Eintrag vorhanden und DigiCert nicht autorisiert ist, schlägt die Zertifikatsverlängerung fehl, wenn das aktuelle Zertifikat abläuft, was zu Ausfallzeiten bei der Bild- und Videobereitstellung führen kann. Wenn für Ihre Domain kein CAA-Eintrag vorhanden ist, ist keine Aktion erforderlich.

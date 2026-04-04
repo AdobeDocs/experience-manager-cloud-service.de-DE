@@ -2,8 +2,8 @@
 title: Erste Schritte mit Refaktorierungs-Tools
 description: Erfahren Sie mehr über die ersten Schritte mit den Refaktorierungs-Tools in AEM as a Cloud Service
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 100%
 
@@ -13,12 +13,13 @@ ht-degree: 100%
 
 ## Verfügbarkeit {#availability}
 
-<!-- Alexandru: duplicate contextualhelp id, drafting this for now
+<!--
+ Alexandru: duplicate contextualhelp id, drafting this for now
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=de" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->

@@ -6,7 +6,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 98%
@@ -140,7 +140,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele sind [Standardaktionen für Assets](/help/assets/manage-digital-assets.md) bzw. das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=de).
+>Viele sind [Standardaktionen für Assets](/help/assets/manage-digital-assets.md) bzw. das [AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
@@ -225,7 +225,8 @@ Einige Funktionen in der oberen Symbolleiste stehen in mehreren Modi zur Verfüg
    * **[Veröffentlichung verwalten](#publishing-and-referencing-a-fragment)**
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required.
+-->
 
 ## Speichern, Schließen und Versionen {#save-close-and-versions}
 

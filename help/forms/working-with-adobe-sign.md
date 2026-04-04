@@ -7,7 +7,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3249'
 ht-degree: 99%
@@ -72,7 +72,7 @@ Konfigurieren von [!DNL Adobe Sign] für ein adaptives Formular:
 Sie können [!DNL Adobe Sign] für ein vorhandenes adaptives Formular aktivieren oder ein [!DNL Adobe Sign]-fähiges adaptives Formular erstellen. Wählen Sie eine der folgenden Möglichkeiten:
 
 * [Ein  [!DNL Adobe Sign] -fähiges adaptives Formular erstellen](#create-an-adaptive-form-for-adobe-sign)
-* [&#x200B; [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
+* [ [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
 
 #### Erstellen eines adaptiven Formulars für Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
@@ -294,7 +294,8 @@ Optional können Sie auch eine „bindref“ mit einer Vereinbarungs-ID (agreeme
       </afData>
 ```
 
-<!-- Remove when forms portal goes live
+<!--
+ Remove when forms portal goes live
 >[!NOTE]
 >
 >Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 

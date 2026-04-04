@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 99%
@@ -79,7 +79,8 @@ Sie können ein oder mehrere Assets oder Ordner oder eine Kombination aus beiden
 ## Asset-Versionierung {#versions-of-assets}
 
 <!-- 
-TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
+TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed?
+-->
 
 [!DNL Assets view] versioniert die Assets, wenn die Assets, die aktualisiert oder bearbeitet werden, erneut hochgeladen werden. Sie können den Versionsverlauf und frühere Versionen anzeigen und eine frühere Version von Assets als neueste Version wiederherstellen, die bei Bedarf auf eine frühere Version zurückgesetzt wird. Asset-Versionen werden in den folgenden Szenarien erstellt:
 
@@ -117,13 +118,15 @@ Anzeigen und Vergleichen von Versionen:
 
    ![Vergleichen von Asset-Versionen](/help/assets/assets/version-compare2.png)
 
-<!-- old content
+<!--
+ old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
 Wählen Sie die neueste Version aus und klicken Sie auf **[!UICONTROL Neue Version]**, um eine neue Kopie des Assets aus Ihrem lokalen Dateisystem hochzuladen und eine Asset-Version zu erstellen.
 
-<!-- old content
+<!--
+ old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
 
 ![View versions of an asset](assets/view-asset-versions1.png)
@@ -218,7 +221,7 @@ Sie können Assets auch nach einem Asset-Status filtern. Weitere Informationen f
 
 **Erforderliche Berechtigungen:** Administrator
 
-Die Assets-Ansicht bietet standardmäßig viele Standard-Metadatenfelder. Unternehmen haben zusätzliche Metadatenanforderungen und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen benutzerdefinierte Metadatenfelder zur Seite [!UICONTROL Details] eines Assets hinzufügen. Die geschäftsspezifischen Metadaten verbessern die Verwaltung und Erkennung der Assets.
+Die Assets-Ansicht bietet standardmäßig viele Standard-Metadatenfelder. Unternehmen haben zusätzliche Metadatenanforderungen und benötigen mehr Metadatenfelder, um geschäftsspezifische Metadaten hinzuzufügen. Mit Metadatenformularen können Unternehmen benutzerdefinierte Metadatenfelder zur Seite [!UICONTROL Details] eines Assets hinzufügen. Unternehmensspezifische Metadaten verbessern die Verwaltung und Erkennung der Assets.
 
 Weitere Informationen zum Hinzufügen zusätzlicher Metadatenfelder zum Metadatenformular finden Sie unter [Metadaten-Formulare](metadata-assets-view.md#metadata-forms).
 

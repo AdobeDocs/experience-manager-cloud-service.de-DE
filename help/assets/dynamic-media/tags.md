@@ -6,7 +6,7 @@ feature: Asset Reports
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '6673'
 ht-degree: 99%
@@ -17,9 +17,11 @@ ht-degree: 99%
 
 ## Worum geht es bei der Integration von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Tags? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+<!--
+ Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
 
-name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection
+-->
 
 Die Erweiterung *Dynamic Media Viewers* für Experience Platform Tags ist für Dynamic Media Viewers 5.13 geeignet. Damit kann Adobe Analytics- und Experience Platform Tags-Kundschaft Dynamic Media Viewers-Ereignisse und -Daten in ihren Tag-Konfigurationen verwenden. 
 

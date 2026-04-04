@@ -2,9 +2,9 @@
 title: Inhaltsratgeber-Agent
 description: Erfahren Sie, wie der Content Advisor-Agent die Reibungspunkte bei der Entwicklung von Inhalten beseitigt, indem er die umfangreiche operative Arbeit hinter der Inhaltserkennung und -optimierung absorbiert und Teams dabei unterstützt, Änderungen schneller und mit größerer Zuversicht für die heutige KI-Ära bereitzustellen.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%

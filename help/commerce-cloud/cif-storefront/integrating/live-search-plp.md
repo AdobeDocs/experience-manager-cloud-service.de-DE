@@ -5,7 +5,7 @@ exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 87%
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 # [!DNL Live Search]-CIF-Komponente {#live-search-cif-component}
 
-Live Search für Adobe Commerce bietet ein schnelles, relevantes und intuitives Sucherlebnis ohne zusätzliche Kosten. Die Live Search-Funktion von Adobe AI nutzt Algorithmen der künstlichen Intelligenz und des maschinellen Lernens, um eine umfassende Analyse aggregierter Besucherdaten durchzuführen. Wenn diese Daten mit Ihrem Adobe Commerce-Katalog kombiniert werden, führen sie zu relevanten und personalisierten Einkaufserlebnissen.
+Live Search für Adobe Commerce bietet ein schnelles, relevantes und intuitives Sucherlebnis ohne zusätzliche Kosten. Die Live Search-Funktion von Adobe AI nutzt Algorithmen der künstlichen Intelligenz und des maschinellen Lernens, um aggregierte Besucherdaten eingehend zu analysieren. Wenn diese Daten mit Ihrem Adobe Commerce-Katalog kombiniert werden, führen sie zu relevanten und personalisierten Einkaufserlebnissen.
 
 In diesem Thema wird beschrieben, wie Sie mit einer AEM-CIF-Komponente das [!DNL Live Search] Product Listing Page-Widget (PLP) in Ihre AEM-Site implementieren.
 

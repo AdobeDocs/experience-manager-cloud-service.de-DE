@@ -6,7 +6,7 @@ feature: Asset Management, Publishing
 role: User, Developer, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 99%
@@ -56,7 +56,8 @@ Media Library deckt im Großen und Ganzen die folgenden Anwendungsfälle ab:
 * Mit [!DNL Adobe Experience Manager Screens] erstellte digitale Bildschirmerlebnisse.
 * [!DNL Assets]-HTTP-REST-APIs für Headless-Vorgänge.
 
-<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
+<!--
+ TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
 
@@ -86,7 +87,8 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Aktivitäts-Stream (Timeline).
 * Kommentare und Anmerkungen.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+ TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->

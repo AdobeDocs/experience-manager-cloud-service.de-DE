@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Grundlagen und Best Practices für die 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Um benutzerdefinierten Code für eine interne Version zu entwickeln, sollte die 
 
 Das folgende Video bietet einen Überblick über die Bereitstellung von Code für AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/33376?quality=9&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -52,9 +52,11 @@ Das folgende Video bietet einen Überblick über die Bereitstellung von Code fü
 
 ### Implementierungen über Cloud Manager {#deployments-via-cloud-manager}
 
-<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+<!--
+ Alexandru: temporarily commenting this out, until I get some clarification from Brian 
 
-![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8)
+-->
 
 Kundinnen und Kunden können benutzerspezifischen Code in Cloud-Umgebungen über Cloud Manager bereitstellen. Cloud Manager wandelt lokal assemblierte Inhaltspakete nach dem Sling-Funktionsmodell in ein Artefakt um. So wird eine Anwendung auf AEM as a Cloud Service beschrieben, wenn sie in einer Cloud-Umgebung ausgeführt wird. Wenn Sie die Pakete im [Paket-Manager](/help/implementing/developing/tools/package-manager.md) für Cloud-Umgebungen betrachten, können Sie deswegen feststellen, dass der Name „cp2fm“ enthält und alle Metadaten der umgewandelten Pakete entfernt wurden. Mit ihnen kann nicht interagiert werden; d. h. sie lassen nicht herunterladen, replizieren oder öffnen. Eine ausführliche Dokumentation zum Konvertierer finden Sie unter [sling-org-apache-sling-feature-cpconverter auf GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
@@ -116,7 +118,7 @@ Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinst
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über den [Paket-Manager](/help/implementing/developing/tools/package-manager.md) installiert werden.
 
-Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspakete nach deren Anwendung zurückzunehmen. Wenn Kundinnen oder Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
+Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspakete nach deren Anwendung zurückzusetzen. Wenn Kundinnen oder Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
 
 Für alle enthaltenen Pakete von Drittanbietern muss die Kompatibilität mit AEM as a Cloud Service validiert werden, andernfalls führt ihre Einbeziehung zu einem Bereitstellungsfehler.
 
@@ -166,9 +168,11 @@ Gehen Sie wie folgt vor, um weitere `repoinit`-Anweisungen zu erstellen:
 
 Weitere Einzelheiten über `repoinit` finden Sie in der [Sling-Dokumentation](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
-<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+<!--
+ ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
-above appears to be internal, to confirm with Brian -->
+above appears to be internal, to confirm with Brian
+-->
 
 ### Paket-Manager-„one-offs“ für Pakete mit veränderlichen Inhalten {#package-manager-oneoffs-for-mutable-content-packages}
 
@@ -327,9 +331,11 @@ Bei der lokalen Entwicklung wird ein Ausführungsmodus-Startparameter `-r` verwe
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-<!-- ### Performance Monitoring {#performance-monitoring}
+<!--
+ ### Performance Monitoring {#performance-monitoring}
 
-Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
+Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager.
+-->
 
 ## Konfiguration von Wartungsaufgaben in der Quell-Code-Verwaltung {#maintenance-tasks-configuration-in-source-control}
 

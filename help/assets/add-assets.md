@@ -5,7 +5,7 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3195'
 ht-degree: 99%
@@ -36,7 +36,8 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
 
 ## Hochladen von Assets {#upload-assets}
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
@@ -49,11 +50,13 @@ Sie können sich auch dafür entscheiden, die hochgeladenen Assets zusätzlich z
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!--
+ #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -88,7 +91,8 @@ Darüber hinaus zeigt die [!DNL Assets]-Benutzeroberfläche das zuletzt hochgela
 >
 >Informationen zum Hochladen verschachtelter Ordnerhierarchien finden Sie unter [Massen-Upload von Assets](#bulk-upload).
 
-<!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
+<!--
+ #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
 ### Serial uploads {#serialuploads}
 
@@ -154,7 +158,7 @@ Verwenden Sie einen der folgenden Ansätze, um eine größere Anzahl von Dateien
 
 Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich eine Video-Anleitung zur Konfiguration und Aufnahme an.
 
->[!VIDEO](https://video.tv.adobe.com/v/341385/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in Experience Manager aus einem Datenspeicher:
 
@@ -401,7 +405,8 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 * Die Massenimportmethode importiert die gesamte Ordnerstruktur so, wie sie in der Datenquelle vorhanden ist. Allerdings werden nur die nicht leeren Ordner in [!DNL Experience Manager] erstellt.
 
 
-<!-- TBD: Link to file name handling in DA docs when it is documented. 
+<!--
+ TBD: Link to file name handling in DA docs when it is documented. 
 -->
 
 **Siehe auch**

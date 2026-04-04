@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit einem Klick auf eine Schaltfläche schnel
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 62%
@@ -17,9 +17,11 @@ Das Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick wurde entwickelt, 
 
 Diese Automatisierung trägt dazu bei, den manuellen Aufwand bei der Einrichtung Ihrer ersten Site zu reduzieren. Auf diese Weise werden nicht nur nahtlose Workflows sowie Skalierbarkeit sichergestellt, sondern auch die Leistung Ihrer Teams bei der Verwaltung von Inhalten am Edge verbessert.
 
-<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+<!--
+ Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
->[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
+-->
 
 
 
@@ -97,7 +99,7 @@ Siehe auch [Veröffentlichen von Inhalten von AEM Author in Edge Delivery](#publ
 
 >[!NOTE]
 >
->Die hier beschriebene Veröffentlichungsfunktion befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebene Veröffentlichungsfunktion befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Diese Funktion ist nur für Edge Delivery-Sites verfügbar, die mit der Authoring-Option von AEM erstellt wurden.
 
@@ -115,7 +117,7 @@ Nachdem Ihre Edge Delivery-Site in Cloud Manager erstellt und **verifiziert** k�
 
 * **Von Cloud Manager** -
 
-   1. Klicken Sie auf **&#x200B;**&#x200B;Registerkarte **Bereitstellung veröffentlichen** der Seite auf der Karte **Umgebungen** auf das hervorgehobene Symbol ![Info oder Informationen](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg).
+   1. Klicken Sie auf **** Registerkarte **Bereitstellung veröffentlichen** der Seite auf der Karte **Umgebungen** auf das hervorgehobene Symbol ![Info oder Informationen](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg).
 
    1. Wählen Sie im Informations-Popup die Option **Zum Aktivieren klicken** aus, um die Bereitstellung der Veröffentlichungsebene in der Benutzeroberfläche von Cloud Manager zu aktivieren.
 

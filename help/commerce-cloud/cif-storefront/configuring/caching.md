@@ -5,7 +5,7 @@ exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 99%
@@ -60,7 +60,7 @@ Das Caching von AEM-Seiten oder -Fragmenten in [AEM Dispatcher](https://experien
 
 Neben den rein von AEM verwalteten Inhalten kann eine CIF-Seite in der Regel Commerce-Daten anzeigen, die dynamisch über GraphQL von Adobe Commerce abgerufen werden. Zwar ändert sich die Seitenstruktur selbst möglicherweise nie, aber dafür kann sich der Commerce-Inhalt möglicherweise ändern. Wenn sich beispielsweise Produktdaten wie Name und Preis in Adobe Commerce ändern.
 
-Um sicherzustellen, dass CIF-Seiten für eine begrenzte Zeit im AEM Dispatcher zwischengespeichert werden, empfiehlt Adobe die Verwendung von [zeitbasierter Cache-Invalidierung](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) (bezeichnet als TTL-basierte Zwischenspeicherung) beim Zwischenspeichern von CIF-Seiten im AEM Dispatcher. Diese Funktion kann AEM mit dem zusätzlichen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Paket konfiguriert werden.
+Um sicherzustellen, dass CIF-Seiten für eine begrenzte Zeit im AEM Dispatcher zwischengespeichert werden, empfiehlt Adobe die Verwendung von [zeitbasierter Cache-Invalidierung](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) (bezeichnet als TTL-basierte Zwischenspeicherung) beim Zwischenspeichern von CIF-Seiten im AEM Dispatcher. Diese Funktion kann AEM mit dem zusätzlichen [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Paket konfiguriert werden.
 
 Beim TTL-basierten Caching definiert ein Entwickler normalerweise eine oder mehrere Caching-Dauerangaben für bestimmte AEM-Seiten. Durch diese Dauer wird sichergestellt, dass CIF-Seiten nur bis zur konfigurierten Dauer in AEM Dispatcher zwischengespeichert werden und die Inhalte häufig aktualisiert werden.
 

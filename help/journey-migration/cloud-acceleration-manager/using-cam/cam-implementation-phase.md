@@ -4,7 +4,7 @@ description: Diese Seite bietet einen Überblick über die Implementierungsphase
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 100%
@@ -111,11 +111,12 @@ In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstrans
 
 1. Laden Sie das Content Transfer Tool herunter und installieren Sie es, um den Migrationssatz zu füllen und die Extraktionsphase des Inhaltstransfers abzuschließen. Lesen Sie [Erste Schritte mit dem Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de), um zu erfahren, wie man das Content Transfer Tool verwendet.
 
-1. Um Inhalte aus dem Migrationssatz in eine Umgebung von AEM as a Cloud Service aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**. Lesen Sie [Aufnehmen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md), um zu erfahren, wie Sie die Aufnahmephase des Inhaltstransfers abschließen.
+1. Um Inhalte aus dem Migrationssatz in eine Umgebung von AEM as a Cloud Service aufzunehmen, müssen Sie eine Aufnahme starten. Navigieren Sie zu **Aufnahmeaufträge** und klicken Sie auf **Neue Aufnahme**. Lesen Sie [Aufnehmen von Inhalten in Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md), um zu erfahren, wie Sie die Aufnahmephase des Inhaltstransfers abschließen.
 
-   ![Aufnahmevorgänge](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+   ![Aufnahmeaufträge](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
-<!--### Estimating Content Transfer Time {#calculating}
+<!--
+### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
@@ -126,7 +127,8 @@ A Content Transfer Tool calculator has been provided to estimate how long it cou
 
 To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
-You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`. -->
+You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+-->
 
 ## So geht es weiter {#whats-next}
 

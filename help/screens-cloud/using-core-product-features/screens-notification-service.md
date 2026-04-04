@@ -5,10 +5,10 @@ index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '202'
+ht-degree: 81%
 
 ---
 
@@ -35,4 +35,4 @@ In der AEM Screens-Cloud können Kundinnen und Kunden einen Bericht zum Status d
 
 ### Anwendungsbeispiel
 
-Wenn Sie die Berichtszeit auf 5:00 Uhr und das Ping-Timeout auf 1 Stunde setzen, erhalten Sie, falls Ihr Screens-Gerät zwischen 4:00 Uhr und 5:00 Uhr nicht pingt, eine E-Mail-Benachrichtigung, mit der die Inaktivität des Geräts bestätigt wird.
+Wenn Sie die Berichtszeit auf 5 Uhr und die Ping-Zeitüberschreitung auf 1 Stunde festlegen und Ihr Screens-Gerät nicht zwischen 4 :00 und 5 :00 pingt, erhalten Sie eine E-Mail-Benachrichtigung, die die Geräteinaktivität bestätigt.

@@ -2,12 +2,12 @@
 title: Adaptive Forms-Kernkomponenten vs. Edge Delivery Services Forms vs. Foundation-Komponenten
 description: Technischer Vergleich der Authoring-Ansätze von AEM Forms - Kernkomponenten, Edge Delivery Services Forms und Foundation-Komponenten. Architektur, Rendering, Funktionen und Anwendungsfälle.
 keywords: Vergleich adaptiver Formulare, Kernkomponenten, Foundation-Komponenten, Edge-Bereitstellungs-Services und Formulare, Vergleich von AEM-Formularen, Vergleich von Forms Builder
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 10%

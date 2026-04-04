@@ -7,7 +7,7 @@ feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3444'
 ht-degree: 99%
@@ -74,7 +74,8 @@ Festlegen der zu verwendenden Funktion
 | Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop des Benutzers auf die Experience Manager-Bereitstellung über das Netzwerk erforderlich | Zugriff vom Desktop des Benutzers auf die Experience Manager-Bereitstellung über das Netzwerk erforderlich | Adobe Asset Link gibt keine Netzwerk-Proxy-Umgebung frei. |
 
 
-<!-- Removing this row from table as migration guide is not yet final.
+<!--
+ Removing this row from table as migration guide is not yet final.
 | Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
 -->
 
@@ -104,7 +105,8 @@ Zur Unterstützung von Nutzungsszenarien für die Asset-Verteilung haben Sie die
 
 ### Überlegungen zur Integration von Experience Manager und Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
-<!--incomplete and TBD: 
+<!--
+incomplete and TBD: 
 
 * DA2.0 best practices: See troubleshooting.md
 * Stock integration: See ?

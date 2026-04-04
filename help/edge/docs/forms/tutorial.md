@@ -4,7 +4,7 @@ description: In diesem Tutorial lernen Sie alles über ein neues Adobe Experienc
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 100%
@@ -72,9 +72,11 @@ Die AEM Forms-Bausteinvorlage ermöglicht einen schnellen Einstieg in ein AEM-Pr
 
 ### Verknüpfen Ihrer eigenen Inhaltsquelle
 
-<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+<!--
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
+-->
 
 Kopieren des Beispielinhalts in Ihren eigenen Inhaltsordner und Verweisen Ihres GitHub-Repositorys auf Ihren eigenen Inhaltsordner:
 
@@ -266,7 +268,8 @@ Herzlichen Glückwunsch! Sie haben Ihre lokale Entwicklungsumgebung erfolgreich 
 ## Hinzufügen eines adaptiven Formularblocks zu Ihrem bestehenden AEM-Projekt
 
 <!--
->[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)
+-->
 
 Wenn Sie über ein vorhandenes AEM-Projekt verfügen, können Sie den adaptiven Formularblock in Ihr aktuelles Projekt integrieren, um mit der Formularerstellung zu beginnen.
 

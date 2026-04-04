@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 86%
@@ -300,7 +300,7 @@ Wenn wir also beginnen:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -312,7 +312,7 @@ FragmentA nach OrdnerC zu kopieren, würde das zu Folgendem führen:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -321,7 +321,7 @@ FolderB
 
 FolderC
     Copy_of_FragmentA
-    | 
+    |
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
@@ -334,7 +334,7 @@ Wenn wir also beginnen:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 
@@ -347,7 +347,7 @@ FragmentA nach OrdnerC zu kopieren, würde das zu Folgendem führen:
 ```xml
 FolderA 
     FragmentA (inside FolderA) 
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA) 
 
 FolderB 
@@ -356,7 +356,7 @@ FolderB
 
 FolderC
    Copy_of_FragmentA
-   | 
+   |
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
@@ -410,7 +410,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
 >[!TIP]
 >
->Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
@@ -510,7 +510,7 @@ Mit dieser Funktion können Konflikte verhindert werden, wenn mehrere Benutzende
 
 >[!NOTE]
 >
->Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ &#x200B;](/help/assets/check-out-and-submit-assets.md).
+>Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ ](/help/assets/check-out-and-submit-assets.md).
 
 ### Auschecken eines Inhaltsfragments {#check-out-a-content-fragment}
 

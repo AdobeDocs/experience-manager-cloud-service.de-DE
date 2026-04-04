@@ -6,7 +6,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2198'
 ht-degree: 99%
@@ -37,7 +37,7 @@ Um Ihre Instanz für den Export AEM Experience Fragments nach Adobe Target vorzu
 Danach können Sie:
 
 * [Ein Experience Fragment nach Adobe Target exportieren](#exporting-an-experience-fragment-to-adobe-target)
-* [Ihr Experience Fragments in Adobe Target verwenden &#x200B;](#using-your-experience-fragments-in-adobe-target)
+* [Ihr Experience Fragments in Adobe Target verwenden ](#using-your-experience-fragments-in-adobe-target)
 * Und auch [Ein bereits nach Adobe Target exportiertes Experience Fragment löschen](#deleting-an-experience-fragment-already-exported-to-adobe-target)
 
 Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden.
@@ -160,7 +160,8 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+   <!--
+    Can this still occur?
 
    >[!NOTE]
    >
@@ -187,7 +188,8 @@ Sie können jetzt die neue Konfiguration zur Bearbeitung auswählen.
 
    * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für das Reporting für bestimmte Inhalte verwenden.
 
-     <!-- Is this needed?
+     <!--
+      Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -271,7 +273,7 @@ Ihr Framework wird erstellt. Um das Framework auf der Veröffentlichungsinstanz 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=de).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

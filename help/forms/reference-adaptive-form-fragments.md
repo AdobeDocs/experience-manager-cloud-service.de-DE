@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 92%
@@ -45,9 +45,11 @@ Enthält Felder, um die Postadresse anzugeben. Die verfügbaren Felder sind Stra
 
 ![Adressfragment](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Kontaktangaben {#contact-information}
 
@@ -55,9 +57,11 @@ Enthält Felder zum Erfassen einer Telefonnummer und E-Mail-Adresse.
 
 ![Kontaktangabenfragment](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Kreditkartenangaben {#credit-card-information}
 
@@ -70,9 +74,11 @@ Enthält Felder zur Erfassung aktueller Beschäftigungsdetails wie Beschäftigun
 
 ![Fragment zu aktueller Beschäftigung](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Informationen zu abhängigen Familienmitgliedern {#dependents-information}
 
@@ -80,9 +86,11 @@ Enthält Felder für Informationen über ein oder mehrere abhängige Familienmit
 
 ![Fragment zu abhängigen Familienmitgliedern](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Beschäftigungshistorie {#employment-history}
 
@@ -90,9 +98,11 @@ Enthält Felder zur Erfassung der Beschäftigungshistorie. Es ermöglicht das Hi
 
 ![Fragment für Beschäftigungshintergrund](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Einkommen und Ausgaben {#income-expenditure}
 
@@ -100,9 +110,11 @@ Enthält Felder zur Erfassung von monatlichen Cashflows und Ausgaben. Formulare,
 
 ![Umsatz- und Ausgabenfragment](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Name {#name}
 
@@ -110,9 +122,11 @@ Enthält Felder zum Angeben von Titel, Vorname, zweitem Vornamen und Nachname.
 
 ![Namensfragment](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Nutzungsbedingungen {#terms-conditions}
 
@@ -120,9 +134,11 @@ Gibt Nutzungsbedingungen an, die vom Benutzer akzeptiert werden müssen, bevor e
 
 ![Fragment für Nutzungsbedingungen](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Nutzungsbedingungen mit Scribble {#terms-conditions-with-scribble}
 
@@ -130,6 +146,8 @@ Gibt Nutzungsbedingungen an, die vom Benutzer akzeptiert und abgezeichnet werden
 
 ![Nutzungsbedingungen mit Scribble](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

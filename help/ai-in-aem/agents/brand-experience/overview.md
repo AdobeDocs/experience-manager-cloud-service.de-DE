@@ -1,10 +1,10 @@
 ---
 title: Brand Experience Agent
-description: Erfahren Sie, wie der Brand Experience Agent die Modernisierung und Weiterentwicklung digitaler Erlebnisse beschleunigt, indem er Inhaltsaktualisierungen, die Site-Transformation und die technische Fehlerbehebung automatisiert, sodass Marken die Geschwindigkeit der KI kontinuierlich verbessern und anpassen können.
+description: Erfahren Sie, wie Brand Experience Agent die Modernisierung und Weiterentwicklung digitaler Erlebnisse beschleunigt, indem es Inhaltsaktualisierungen, die Site-Umwandlung und die technische Fehlerbehebung automatisiert, sodass Marken die Geschwindigkeit der KI kontinuierlich verbessern und anpassen können.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 # Brand Experience Agent {#brand-experience-agent}
 
-Der Brand Experience Agent beschleunigt die Modernisierung und Weiterentwicklung digitaler Erlebnisse durch Automatisierung von Inhaltsaktualisierungen, Site-Transformationen und technischer Fehlerbehebung, sodass Marken die Geschwindigkeit der KI kontinuierlich verbessern und anpassen können.
+Brand Experience Agent beschleunigt die Modernisierung und Weiterentwicklung digitaler Erlebnisse durch Automatisierung von Inhaltsaktualisierungen, Site-Transformationen und technischer Fehlerbehebung, sodass Marken die Geschwindigkeit der KI kontinuierlich verbessern und anpassen können.
 
 ## Agenten {#agents}
 
-Der Brand Experience Agent liefert seine Ergebnisse über die folgenden Agenten, die jeweils auf eine bestimmte Reihe von Aufträgen spezialisiert sind:
+Brand Experience Agent liefert seine Ergebnisse über die folgenden Agenten, die jeweils auf eine bestimmte Reihe von Aufträgen spezialisiert sind:
 
 * [Experience Modernization Agent](#experience-modernization) - Migriert Websites in Cloud-fähige Formate
 * [Experience Production Agent](#experience-production) - Verkürzt die Time-to-Market durch Inhaltsaktualisierungen, Formularerstellung und Kommunikation
 * [Entwicklungsagent](#development) - Bietet KI-unterstützte Fehlerbehebung und Build-Automatisierung
 
-Mit diesen Agenten übernimmt der Brand Experience Agent die umfangreiche operative Arbeit, die hinter Updates und Modernisierungen steckt, und hilft Teams, Änderungen schneller und mit größerem Vertrauen in die heutige KI-Ära bereitzustellen.
+Durch diese Agenten übernimmt die Brand Experience Agent die umfangreiche operative Arbeit, die hinter Updates und Modernisierungen steckt, und hilft Teams, Änderungen schneller und mit größerem Vertrauen in die heutige KI-Ära zu liefern.
 
 >[!IMPORTANT]
 >

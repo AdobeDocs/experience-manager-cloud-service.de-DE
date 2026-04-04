@@ -6,7 +6,7 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 99%
@@ -25,13 +25,16 @@ Der Dynamic Media Newsletter von Experience League soll Ihnen helfen, sich mit D
 
 In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wissensaufbau, wie z. B. Anleitungsvideos und Lösungsübersichten, alles an einem Ort. Außerdem werden wichtige Funktionen und Möglichkeiten wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt.
 
-<!-- ## Get inspired. Stay informed.
+<!--
+ ## Get inspired. Stay informed.
 
-[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox.
+-->
 
 ## Dynamic Media-Newsletter-Archiv
 
-<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!--
+ * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
     In this issue:
 
@@ -44,7 +47,8 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
     * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
-    * Fast-track your Adobe expertise with Adobe Experience League. -->
+    * Fast-track your Adobe expertise with Adobe Experience League.
+    -->
 
 * **[April 2020, Ausgabe 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html?lang=de)**
 

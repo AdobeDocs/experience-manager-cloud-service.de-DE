@@ -2,19 +2,18 @@
 title: Erste Schritte mit dem Experience Modernization Agent für AEM-Authoring-Projekte
 description: Erfahren Sie mehr über die spezifischen Einrichtungsschritte, die für AEM-Authoring-Projekte erforderlich sind, wenn Sie mit dem Experience Modernization Agent unter Verwendung der Experience Modernization Console beginnen.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
-source-git-commit: df23c3a4c497943135f8719425225526ae14aa92
+role: User, Admin, Developer
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
 
 ---
 
-
 # Erste Schritte mit dem Experience Modernization Agent für AEM-Authoring-Projekte {#getting-started-aem-authoring}
 
-Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die Vorbereitung des Experience Modernization Agent vom standardmäßigen Edge Delivery-Ablauf. In diesem Dokument werden diese Einrichtungsunterschiede behandelt. Sobald die folgenden Schritte abgeschlossen sind, folgen Sie dem [&#x200B; „Erste Schritte mit dem Experience &#x200B;](getting-started.md)&quot;.
+Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die Vorbereitung des Experience Modernization Agent vom standardmäßigen Edge Delivery-Ablauf. In diesem Dokument werden diese Einrichtungsunterschiede behandelt. Sobald die folgenden Schritte abgeschlossen sind, folgen Sie dem [ „Erste Schritte mit dem Experience ](getting-started.md)&quot;.
 
 ## Erstellen des Edge Delivery Services-Projekt-Repositorys {#create-repo}
 
@@ -36,8 +35,8 @@ Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die V
 1. Klicken Sie auf **Erstellen**.
    * Sie werden zur Sites-Seite weitergeleitet.
    * Aktualisieren Sie die Seite, wenn die neue Site nicht sofort angezeigt wird.
-1. Wenn Sie dies noch nicht beim [Einrichten des Repositorys“ getan haben, aktualisieren &#x200B;](#create-repo) `fstab.yaml` so, dass es auf Ihren AEM-Host, Ihren Git-Eigentümer und Ihr Git-Repository verweist, und übertragen Sie diese Änderungen in `main`.
-   * Anweisungen finden [&#x200B; unter „Konfigurieren &#x200B;](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) Inhaltsquelle“.
+1. Wenn Sie dies noch nicht beim [Einrichten des Repositorys“ getan haben, aktualisieren ](#create-repo) `fstab.yaml` so, dass es auf Ihren AEM-Host, Ihren Git-Eigentümer und Ihr Git-Repository verweist, und übertragen Sie diese Änderungen in `main`.
+   * Anweisungen finden [ unter „Konfigurieren ](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) Inhaltsquelle“.
 
 ## Fahren Sie mit den standardmäßigen Schritten für erste Schritte fort {#continue}
 

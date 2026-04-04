@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Übermittlung und Workflow für die Associate-Ben
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
-source-git-commit: a41459520feb03594212b91e68cfd8e2b1e610c4
+exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 4%
@@ -20,7 +20,8 @@ ht-degree: 4%
 
 In diesem Artikel wird erläutert, wie Übermittlung und Workflow funktionieren, wenn Sie einen Workflow für die Benutzeroberfläche „Verknüpfen“ aktivieren. Anschließend wird erläutert, wie ein Übermittlungs-Workflow konfiguriert wird. In der exemplarischen Vorgehensweise wird das Generieren einer PDF aus der IC-Payload (Interactive Communication) als Beispiel verwendet. Sie können die Schritte für andere Workflow-Typen anpassen.
 
-<!--## Submission and workflow behavior {#submission-and-workflow-behavior}
+<!--
+## Submission and workflow behavior {#submission-and-workflow-behavior}
 
 When you enable **Configure Workflow for Update** for an Associate UI, submissions from the Associate UI can trigger an AEM workflow. The following explains where workflows run, who uses which environment, and how to plan for data and access.
 
@@ -38,7 +39,8 @@ Authors can open the Associate UI on the Author instance—for example, to test 
 
 ### When an associate submits from the Publish instance
 
-Associates open the Associate UI on the Publish instance, using the integration you set up. When they submit, the submission is sent to the Author instance and the workflow runs on Author. Associates sign in on Publish (for example, via [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) and do not need access to Author. To set up how associates open the Associate UI on Publish, see [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md).-->
+Associates open the Associate UI on the Publish instance, using the integration you set up. When they submit, the submission is sent to the Author instance and the workflow runs on Author. Associates sign in on Publish (for example, via [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) and do not need access to Author. To set up how associates open the Associate UI on Publish, see [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md).
+-->
 
 ## Übermittlungs-Workflow konfigurieren
 
@@ -79,15 +81,15 @@ Der Workflow erhält eine JSON-Payload. Das **communicationDom**-Feld enthält d
 
 ### Workflow mit der Benutzeroberfläche verknüpfen
 
-Aktivieren [&#x200B; in „Benutzeroberfläche von Associate aktivieren und konfigurieren](/help/forms/interactive-communication/enable-configure-associate-ui.md) die Option „Ansicht verknüpfen“ und **Workflow** legen Sie **Workflow für Aktualisierung konfigurieren** auf „Ein“ fest und wählen Sie dieses Workflow-Modell aus. Veröffentlichen Sie die IC und [integrieren Sie die Associate-Benutzeroberfläche](/help/forms/interactive-communication/invoke-associate-ui.md) sodass Übermittlungen den Trigger für diesen Workflow bilden.
+Aktivieren [ in „Benutzeroberfläche von Associate aktivieren und konfigurieren](/help/forms/interactive-communication/enable-configure-associate-ui.md) die Option „Ansicht verknüpfen“ und **Workflow** legen Sie **Workflow für Aktualisierung konfigurieren** auf „Ein“ fest und wählen Sie dieses Workflow-Modell aus. Veröffentlichen Sie die IC und [integrieren Sie die Associate-Benutzeroberfläche](/help/forms/interactive-communication/invoke-associate-ui.md) sodass Übermittlungen den Trigger für diesen Workflow bilden.
 
 ![Einstellungen für interaktive Kommunikation - Workflow-Konfiguration für die Benutzeroberfläche von Associate](/help/forms/assets/associate-ui-configure-workflow.png)
 
-Wenn **Workflow-Datenspeicher externalisieren** aktiviert ist, konfigurieren Sie den Externalizer so, dass Workflow-Daten in Ihrem externen Speicher (z. B. Azure) gespeichert werden. Siehe [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=de).
+Wenn **Workflow-Datenspeicher externalisieren** aktiviert ist, konfigurieren Sie den Externalizer so, dass Workflow-Daten in Ihrem externen Speicher (z. B. Azure) gespeichert werden. Siehe [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html).
 
 ## Siehe auch
 
 - [Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=de)
+- [Workflow-Daten externalisieren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)

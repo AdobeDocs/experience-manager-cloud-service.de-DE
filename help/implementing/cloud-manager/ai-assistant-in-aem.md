@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 5%
@@ -31,7 +31,7 @@ Er ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende 3-minütige 25-Sekunden-Video bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475367/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Zugriff auf den KI-Assistenten in AEM{#get-access}
 
@@ -83,7 +83,7 @@ Das Produktwissen umfasst Konzepte und Themen, die aus der Dokumentation zu Adob
 | Punktuelles Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar &#x200B;**<br>**Beispiele** |
+| **Support-Ticket-Erstellung** | **Nur für Support-Administratoren verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstellen Sie ein Support-Ticket für mich.</li></ul> |
 | Abrufen des Status des Support-Tickets | <ul><li>Zeigen Sie mir alle Support-Tickets, die ich geöffnet habe.</li><li>Status des Tickets „E“ -----------</li></ul> |
 
@@ -110,7 +110,8 @@ In Ihrer Eingabeaufforderung ist es beispielsweise hilfreich, die AEM-Lösung, i
 
 ## Verwenden des KI-Assistenten in AEM {#ai-use}
 
-<!-- UNHIDE AFTER BETA or at GA
+<!--
+ UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
 To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -123,9 +124,10 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+-->
 
 
 ### Starten eines KI-Assistenten in einer AEM-Unterhaltung
@@ -193,7 +195,8 @@ Im Folgenden finden Sie Antworten auf einige häufig gestellte Fragen zum KI-Ass
 * **Verwendet der KI-Assistent in AEM personenbezogene Daten für Trainingsdaten?**\
   Nein. Der KI-Assistent in AEM verwendet keine personenbezogenen Daten für Trainingszwecke. Vermeiden Sie es, persönliche Informationen über sich selbst oder andere, einschließlich Namen oder Kontaktdaten, mit dem KI-Assistenten in AEM zu teilen.
 
-<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
+<!--
+ IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
 ## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 

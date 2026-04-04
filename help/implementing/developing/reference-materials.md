@@ -4,7 +4,7 @@ description: AEM verfügt über umfangreiche und leistungsstarke APIs, die Sie f
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 100%
@@ -25,9 +25,11 @@ Die folgenden APIs sind zentraler Bestandteil von AEM.
 | [Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Open Web Stack von Adobe mit verschiedenen wichtigen Komponenten (die 6.5 Granite-Materialien gelten für AEMaaCS) |
 | [Coral-Benutzeroberfläche](https://opensource.adobe.com/coral-spectrum/documentation/) | Der visuelle Stil von Adobe für Cloud-Benutzeroberflächen und ein konsistentes Benutzererlebnis |
 
-<!---
+<!--
+-
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
---->
+-
+-->
 
 >[!NOTE]
 >

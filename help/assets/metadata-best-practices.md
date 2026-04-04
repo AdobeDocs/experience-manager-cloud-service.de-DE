@@ -5,17 +5,19 @@ role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 95%
 
 ---
 
-<!-- Keywords to focus on:
+<!--
+ Keywords to focus on:
 metadata best practices
 aem metadata 
-experience manager metadata-->
+experience manager metadata
+-->
 
 # Metadatenverwaltung und Best Practices {#metadata-best-practices}
 

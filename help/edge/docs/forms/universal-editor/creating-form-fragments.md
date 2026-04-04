@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erst
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 100%
 
@@ -234,10 +234,12 @@ Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für Form
    <td><p>Überprüfung starten/Überprüfung verwalten</p> </td>
    <td><p>Ermöglicht es, eine Überprüfung des ausgewählten Fragments zu initiieren und zu verwalten.<br /> <br /> </p> </td>
     </tr>
-    <!--<tr>
+    <!--
+    <tr>
    <td><p>Add Dictionary</p> </td>
    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
+    </tr>
+    -->
     <tr>
    <td><p>Veröffentlichen/Veröffentlichung rückgängig machen</p> </td>
    <td><p>Veröffentlicht das ausgewählte Fragment bzw. macht die Veröffentlichung rückgängig.<br /> <br /> </p> </td>

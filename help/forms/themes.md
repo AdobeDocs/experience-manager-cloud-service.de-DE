@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Sie können Designs erstellen und anwenden, um ein adaptives Formular<!-- or an interactive communication--> zu formatieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Das Design wird unabhängig, ohne Verweis auf ein adaptives Formular<!-- or interactive communication -->, verwaltet.
+Sie können Designs erstellen und anwenden, um ein adaptives Formular<!-- or an interactive communication--> zu formatieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Das Design wird unabhängig, ohne Verweis auf ein adaptives Formular, verwaltet.
 
 Sie können das [!DNL AEM Forms]-Referenzinhaltspaket vom [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html) herunterladen und installieren, um Referenz-Designs und Vorlagen in Ihre Umgebung zu importieren.
 
@@ -166,7 +166,8 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
    <td>Ja</td>
    <td>Eine Beschriftung am Design zur Kennzeichnung, um die Suche zu erleichtern.</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## Informationen zum Design-Editor {#about-the-theme-editor}
 
-Beim Design-Editor handelt es sich um eine benutzerfreundliche Oberfläche für Geschäftskunden und Web-Designer/Entwickler mit Funktionen zur einfachen Festlegung der Formatierung verschiedener Elemente adaptiver Formulare <!-- and interactive communication -->. Wenn Sie ein Design erstellen, wird es wie Formulare <!--  , interactive communications, letters, document fragments, and data dictionaries--> als separate Entität gespeichert.
+Beim Design-Editor handelt es sich um eine benutzerfreundliche Oberfläche für Geschäftskunden und Web-Designer/Entwickler mit Funktionen zur einfachen Festlegung der Formatierung verschiedener Elemente adaptiver Formulare <!-- and interactive communication -->. Wenn Sie ein Design erstellen, wird es wie Formulare als separate Entität gespeichert.
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 Mit dem Design-Editor können Sie Stile der in einem Design formatierten Komponenten anpassen. Sie können festlegen, wie ein Formular <!-- or interactive communication --> auf einem Gerät angezeigt wird.
 
 Der Design-Editor ist in zwei Bereiche unterteilt:
 
-* **Arbeitsfläche** – Wird auf der rechten Seite angezeigt. Hier wird ein Muster für ein adaptives Formular <!--  or interactive communication --> angezeigt, in dem alle Formatierungsänderungen sofort dargestellt werden. Sie können Objekte auch direkt auf der Arbeitsfläche auswählen, um die damit verknüpften Stile anzuzeigen und diese Stile zu bearbeiten. Ein Lineal für die Geräteauflösung an der Oberseite steuert die Arbeitsfläche. Durch Auswahl eines Auflösungshaltepunktes auf dem Lineal wird die Vorschau des Musterformulars <!--  or interactive communication --> für die jeweilige Auflösung angezeigt. Die Arbeitsfläche wird im Detail weiter [unten](themes.md#using-canvas) beschrieben.
+* **Arbeitsfläche** – Wird auf der rechten Seite angezeigt. Hier wird ein Muster für ein adaptives Formular <!--  or interactive communication --> angezeigt, in dem alle Formatierungsänderungen sofort dargestellt werden. Sie können Objekte auch direkt auf der Arbeitsfläche auswählen, um die damit verknüpften Stile anzuzeigen und diese Stile zu bearbeiten. Ein Lineal für die Geräteauflösung an der Oberseite steuert die Arbeitsfläche. Wenn Sie auf dem Lineal einen Auflösungshaltepunkt auswählen, wird die Vorschau des Musterformulars für die jeweilige Auflösung angezeigt. Die Arbeitsfläche wird im Detail weiter [unten](themes.md#using-canvas) beschrieben.
 
 * :**Seitenleiste**: Wird auf der linken Seite angezeigt. Sie umfasst die folgenden Elemente:
 
@@ -281,7 +284,9 @@ Verwenden Sie Design-Editor-Haltepunkte, um alternative Stile für verschiedene 
 
 >[!NOTE]
 >
->Das Design wird zuerst mithilfe eines Formulars<!-- or interactive communication--> erstellt und dann auf verschiedene Formulare<!-- or interactive communications--> angewendet. Die bei der Erstellung des Designs verwendeten Haltepunkte können sich von dem Formular<!-- or interactive communication --> unterscheiden, auf das das Design angewendet wird. Die CSS-Medienabfragen basieren auf dem Formular<!-- or interactive communication -->, das bei der Designerstellung verwendet wird, und nicht auf dem Formular<!-- or interactive communication -->, auf das das Design angewendet wird.
+>Das Design wird zuerst mithilfe eines Formulars erstellt und dann auf verschiedene Formulare angewendet. Die bei der Erstellung des Designs verwendeten Haltepunkte können sich von dem Formular unterscheiden, auf das das Design angewendet wird. Die CSS-Medienabfragen basieren auf dem Formular, das bei der Designerstellung verwendet wird, und nicht auf dem Formular, auf das das Design angewendet wird.
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### Kontextänderungen der Formatierungseigenschaften in der Seitenleiste bei der Auswahl der Objekte {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -349,7 +354,7 @@ Anpassen der Gestaltung für den Erfolgsstatus der Komponente Widget „Textfeld
 
 ### Verwenden der Arbeitsfläche {#using-canvas}
 
-Das Design wird entweder mit dem gebrauchsfertigen Formular oder mit einem Formular <!-- or interactive communication --> Ihrer Wahl erstellt. Die Arbeitsfläche zeigt die Vorschau des Formulars oder der <!-- interactive communication -->, die zum Erstellen des Designs verwendet werden, mit den im Design festgelegten Anpassungen an. Das Lineal über dem Formular wird verwendet, um das Layout entsprechend der Größe der Anzeige auf Ihrem Gerät zu bestimmen.
+Das Design wird entweder mit dem gebrauchsfertigen Formular oder mit einem Formular <!-- or interactive communication --> Ihrer Wahl erstellt. Die Arbeitsfläche zeigt die Vorschau des Formulars oder der , die zum Erstellen des Designs verwendet werden, mit den im Design angegebenen Anpassungen an. Das Lineal über dem Formular wird verwendet, um das Layout entsprechend der Größe der Anzeige auf Ihrem Gerät zu bestimmen.
 
 In der Symbolleiste der Arbeitsflächen sehen Sie Folgendes:
 
@@ -487,7 +492,7 @@ Ein Haltepunkt steht für ein Mobilgerät und dessen Displaygröße.
 1. Verwenden Sie die Seitenleiste, um die Formatierung von Komponenten des Formulars <!-- or interactive communication --> im Design für die ausgewählte Displaygröße anzupassen.
 1. Stellen Sie sicher, dass die Anpassung gespeichert wird.
 
-Sie können Komponenten von Formularen <!-- or interactive communication --> für verschiedene Geräte formatieren. Komponenten von Formularen <!-- and interactive communication --> für Desktops und Mobilgeräte können völlig unterschiedliche Stile aufweisen.
+Sie können Komponenten von Formularen <!-- or interactive communication --> für verschiedene Geräte formatieren. Formularkomponenten für Desktops und Mobilgeräte können völlig unterschiedliche Stile aufweisen.
 
 ### Verwenden von Web Fonts in einem Design {#using-web-fonts-in-a-theme}
 
@@ -567,14 +572,16 @@ So wenden Sie ein Design auf ein adaptives Formular an:
 
 Zudem können Sie während der Erstellung eines adaptives Formulars ein Design definieren.
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### Ändern des Designs eines Formulars zur Laufzeit {#change-theme-of-a-form-at-runtime}
 
@@ -641,7 +648,8 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
 
 * Es können Probleme im aktuellen Design auftreten, wenn ein Asset aus einem anderen Design hinzugefügt und dieses andere Design später verschoben oder gelöscht wird. Wir empfehlen daher, keine Assets aus anderen Designs zu suchen und hinzuzufügen.
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -653,7 +661,8 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     Sie können auch ein Design erstellen, Kopien davon anfertigen und dann die in den kopierten Designs enthaltenen Stile für ähnliche Anwendungsfälle abändern.
     Siehe [Kreieren eines bestimmten Erscheinungsbildes mithilfe von Designs](#specific-af-appearance)
     
@@ -665,9 +674,11 @@ Zum Anzeigen der generierten CSS-Datei stehen die folgenden Optionen zur Verfüg
     
      Während der Bearbeitung eines Formulars können Sie Komponenten mithilfe des Formatierungsmodus im Multikanal-Editor für das Formular &lt;!-- oder die interaktive Kommunikation --> gestalten. Wenn der Formatierungsmodus verwendet wird, um die Formularkomponentenformatierung zu ändern, wird die Formatierung, die im Design angegeben ist, überschrieben. Wenn Sie Formatierungen für bestimmte Komponenten eines bestimmten Formulars ändern möchten, finden Sie weitere Informationen unter [Inline-Formatierung von Komponenten](inline-style-adaptive-forms.md).
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **Ändern der Layout-Breite des Container-Bereichs**
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3320'
 ht-degree: 43%
@@ -148,7 +148,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF generiert.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit der Übermittlungs-PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -159,7 +159,8 @@ Beachten Sie die folgenden Hinweise und Einschränkungen bei der Arbeit mit der 
 * Die Inhaltsbindung wird in der für XML-Schema-basierte adaptive Formulare generierten Übermittlungs-PDF nicht unterstützt.
 * Die lokalisierte Version der Übermittlungs-PDF wird für ein Gebietsschema bei Bedarf erstellt, wenn Benutzende die Darstellung der Übermittlungs-PDF anfordern. Die Lokalisierung des Übermittlungs-PDF erfolgt zusammen mit der Lokalisierung des adaptiven Formulars. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -172,7 +173,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## Zuordnen von adaptiven Formularelementen {#mapping-of-adaptive-form-elements}
 
@@ -364,7 +366,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       <span class="preview"> Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; &#x200B;](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
    1. **Eigenschaften der primären Seite**:
 

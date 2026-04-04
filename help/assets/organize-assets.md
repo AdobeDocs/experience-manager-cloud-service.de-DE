@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 93%
@@ -24,7 +24,8 @@ Alle digitalen Assets, Metadaten und Inhalte von Microsoft® Office- und PDF-Dok
 
 [!DNL Experience Manager Assets] unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch anhand von Ordnern oder in ungeordneter Ad-hoc-Manier organisieren, wobei zum Beispiel Tags verwendet werden können. Benutzer können Tags im DAM-Asset-Editor bearbeiten, in dem Teil-Assets, Ausgabedarstellungen und Metadaten angezeigt werden.
 
-<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+<!--
+ Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
 
 When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.

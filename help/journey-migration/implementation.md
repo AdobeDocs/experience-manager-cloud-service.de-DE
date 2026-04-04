@@ -4,7 +4,7 @@ description: Sicherstellen, dass Ihr Code und die Inhalte für die Migration in 
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 100%
@@ -85,7 +85,7 @@ Darüber hinaus haben Sie folgende Möglichkeiten:
 
 * In diesem Video erfahren Sie, wie Sie das Dispatcher-SDK konfigurieren:
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32985?captions=ger)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Ein neuer Denkansatz {#a-change-in-mindset}
 
@@ -153,7 +153,7 @@ Sobald der Zugriff auf einen [Produktionsklon](#proof-of-migration) etabliert wu
 ## Erfassen von Daten {#gathering-data}
 
 >[!NOTE]
-> Im Abschnitt [Strategie für die Migration von Inhalten und zeitlicher Ablauf](#content-strategy-and-timeline) wird genauer beschrieben, wie Sie die gesammelten Daten extrapolieren und einen Migrationsplan erstellen.
+> Im Abschnitt [Strategie für die Migration von Inhalten und Timeline](#content-strategy-and-timeline) wird genauer beschrieben, wie Sie die gesammelten Daten extrapolieren und einen Migrationsplan erstellen.
 
 Die Datenerfassung kann Ihnen bei der Planung der Migrationsaktivitäten und der damit verbundenen Aufgaben helfen. Die Extraktions- und Aufnahmezeiten sind besonders nützlich, da die Datenpunkte einer bestimmten Größe des Migrationssatzes zugeordnet werden können. So können diese Datenpunkte extrapoliert werden, um einen Plan zu erstellen:
 
@@ -163,7 +163,8 @@ Die Datenerfassung kann Ihnen bei der Planung der Migrationsaktivitäten und der
 * Gesamtdauer der [Auffüllaufnahme](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
 
-<!-- Alexandru: hiding this for now
+<!--
+ Alexandru: hiding this for now
 
 One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
@@ -203,7 +204,7 @@ Sie können die Migrationsverfolgung verwenden, um die Zeiten sowohl für die an
 
 Die Verfolgung hilft Ihnen auch bei Folgendem:
 
-* Identifizieren Sie alle Abweichungen vom Planer, die Anpassungen im Plan oder in den Zeitplänen für die Live-Schaltung erfordern.
+* Identifizieren Sie alle Abweichungen vom Planer, die Anpassungen im Plan oder in den Timelines für die Live-Schaltung erfordern.
 * Geben Sie einen realistischen Status an, der in allen notwendigen Kommunikationen verwendet werden kann.
 * Planen der anfänglichen oder künftigen Auffüllmigrationen
 
@@ -213,9 +214,9 @@ Die folgende Tabelle zeigt eine funktionale Migrationsverfolgung:
 |---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |
 
-## Strategie für die Migration von Inhalten und zeitlicher Ablauf {#content-strategyand-timeline}
+## Strategie für die Migration von Inhalten und Timeline {#content-strategyand-timeline}
 
-Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben beschrieben, die zur Formulierung einer Inhaltsmigrationsstrategie und eines Zeitplans verwendet werden können.
+Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben beschrieben, die zur Formulierung einer Inhaltsmigrationsstrategie und einer Timeline verwendet werden können.
 
 ![Schritte zum Formulieren einer Migrationsstrategie](/help/journey-migration/assets/content-migration2.png)
 

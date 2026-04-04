@@ -3,13 +3,13 @@ title: Anpassen der Designs für adaptive Formulare mithilfe des Design-Editors
 description: Erfahren Sie, wie Sie mit dem Design-Editor visuelle Designs für das auf Kernkomponenten basierende adaptive Forms in Adobe Experience Manager erstellen und anpassen können.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f1b318803b9b854ec2ce800670f6484799113599
+exl-id: 4a541c11-38e9-4dbc-8464-38be6b1ee94d
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 2%
 
 ---
-
 
 # Anpassen von Formulardesigns {#customizing-form-themes}
 
@@ -113,14 +113,16 @@ Von links nach rechts bietet die Symbolleiste:
 * **D: Emulator**: Wählen Sie ein Gerät oder einen Haltepunkt (z. B. Desktop, Tablet oder Mobilgerät) aus, um das Formular in dieser Bildschirmgröße in der Vorschau anzuzeigen. Die Größe der Formularvorschau wird an den ausgewählten Haltepunkt angepasst. Alle Stile, die Sie beim Auswählen eines Haltepunkts festlegen, gelten nur für diesen Haltepunkt, sodass Sie responsive Stile definieren können. Weitere Informationen finden Sie unter [Formatierung für verschiedene Bildschirmgrößen](#styling-for-different-screen-sizes).
 * **E: Bearbeiten/Vorschau**: Wechseln zwischen zwei Modi. **Bearbeiten** ist der Standardwert: Sie können auf der Arbeitsfläche auf Komponenten klicken, um sie auszuwählen und ihren Stil in der Seitenleiste zu ändern. **Vorschau** zeigt das Formular so an, wie es ein Endbenutzer ohne Auswahlrahmen, Komponentenbeschriftungen oder die Formatierungsseitenleiste sehen würde, damit Sie vor der Veröffentlichung überprüfen können, wie das Formular mit Designs aussieht und sich verhält.
 
-<!--**3. Bottom of the sidebar: Simulate Error and Simulate Success**
+<!--
+**3. Bottom of the sidebar: Simulate Error and Simulate Success**
 
 When you style components by state (for example, Error or Success), you can preview that look without submitting the form. In AEM Forms as a Cloud Service, **Simulate Error** and **Simulate Success** are available at the **bottom of the left sidebar**. Scroll down in the sidebar if you don’t see them; they appear when you have a component selected and let you toggle the preview to match the Error or Success state.
 
 * **Simulate Error**: Show the form as if a field failed validation, so you can see your **[!UICONTROL Error]** state styling.
 * **Simulate Success**: Show the form as if validation passed, so you can see your **[!UICONTROL Success]** state styling.
 
-Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).-->
+Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).
+-->
 
 ### Gestalten einer Komponente
 
@@ -151,7 +153,8 @@ So wenden Sie einen Stil an:
 
    ![Anwenden eines Stils](/help/forms/assets/custom-theme-applying-style.png)
 
-<!--#### Style by component state {#style-by-state}
+<!--
+#### Style by component state {#style-by-state}
 
 Components can have different visual states (for example, default, focus, hover, disabled, error, success). You can style each state separately so the form looks correct during user interaction and validation.
 
@@ -162,7 +165,8 @@ Components can have different visual states (for example, default, focus, hover,
 
    ![State dropdown in sidebar for styling Default, Focus, Error, Success, and other states](/help/forms/assets/custom-theme-state-dropdown.png)
 
-The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.-->
+The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.
+-->
 
 ### Stile auf Formularebene {#form-level-styling}
 
@@ -208,7 +212,7 @@ Sie können verschiedene Stile für verschiedene Gerätegrößen definieren, dam
 
    ![Geräteemulator im Design-Editor - Lineal- und Geräteoptionen (Desktop, Tablet, iPad, kleinerer Bildschirm)](/help/forms/assets/custom-theme-emulator.png)
 
-Ein Design kann daher je nach Gerät unterschiedliche Abstände, Schriftgrößen oder layoutbezogene Stile aufweisen, die dem Verhalten des [Design-Editors für AEM 6.5 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=de) responsiven Stilen entsprechen.
+Ein Design kann daher je nach Gerät unterschiedliche Abstände, Schriftgrößen oder layoutbezogene Stile aufweisen, die dem Verhalten des [Design-Editors für AEM 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=de) responsiven Stilen entsprechen.
 
 ## Erweiterte CSS-Überschreibungen verwenden {#use-advanced-css-overrides}
 

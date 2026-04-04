@@ -7,7 +7,7 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 99%
@@ -143,7 +143,7 @@ Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Me
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Voraussetzungen {#prereqs-dynamic-media-delivery-reports}
@@ -248,10 +248,13 @@ Klicken Sie auf **[!UICONTROL Erkenntnisse]** im linken Navigationsbereich, um d
 
 * **Uploads**: Die Anzahl der Assets, die in den letzten 30 Tagen oder 12 Monaten in die Assets-Ansichtsumgebung hochgeladen wurden, dargestellt als Liniendiagramm.
   ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
+
+<!--
+* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
 * **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
 ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+-->
 <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->

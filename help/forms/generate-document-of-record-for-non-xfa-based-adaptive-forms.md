@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4208'
 ht-degree: 56%
@@ -137,7 +137,7 @@ Der Formularentwickler bindet adaptive Forms-Felder an die entsprechende Vorlage
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF erstellt.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit Submission PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -148,7 +148,8 @@ Beachten Sie die folgenden Hinweise und Einschränkungen bei der Arbeit mit der 
 * Die Inhaltsbindung in der Übermittlungs-PDF, die für XML-Schema-basierte adaptive Formulare generiert wird, wird nicht unterstützt.
 * Die lokalisierte Version der Übermittlungs-PDF wird für ein Gebietsschema bei Bedarf erstellt, wenn Benutzende die Darstellung der Übermittlungs-PDF anfordern. Die Lokalisierung des Übermittlungs-PDF erfolgt zusammen mit der Lokalisierung des adaptiven Formulars. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -163,7 +164,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## Zuordnen von adaptiven Formularelementen {#mapping-of-adaptive-form-elements}
 
@@ -399,7 +401,8 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```-->
+   ```
+   -->
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Branding-Änderungen zu speichern.
 

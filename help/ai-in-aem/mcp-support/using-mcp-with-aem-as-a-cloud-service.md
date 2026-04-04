@@ -2,9 +2,9 @@
 title: Verwenden von MCP mit AEM as a Cloud Service
 description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud Service verwenden.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 07c3f271ad288f3eed7207dfb4f324c96c5b0b8e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden,
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#x200B; und im &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)Cloud Manager MCP Server-.
+Weitere Informationen zu [ Funktionen und deren Verwendung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[ und im ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 

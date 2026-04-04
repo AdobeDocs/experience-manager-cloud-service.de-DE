@@ -5,7 +5,7 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 97%
@@ -102,7 +102,8 @@ To smart tag assets, or folders (including subfolders) of assets that exist in a
 
 1. Select the assets and click ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
 
-![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)-->
+![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)
+-->
 
 ## Konfidenzwert {#confidence-score}
 

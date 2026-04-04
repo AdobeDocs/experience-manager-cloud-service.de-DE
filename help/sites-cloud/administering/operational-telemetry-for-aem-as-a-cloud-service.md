@@ -5,7 +5,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 98%
@@ -43,7 +43,7 @@ Der Operational Telemetry-Dienst wurde für minimale Datenerfassung entwickelt. 
 * Der Host-Name der besuchten Site, beispielsweise: `experienceleague.adobe.com`
 * Der allgemeine Benutzeragenten-Typ und das zur Anzeige der Seite verwendete Betriebssystem, z. B. `desktop:windows` oder `mobile:ios`
 * Der Zeitpunkt der Datenerfassung, z. B.: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs?lang=de`
+* Die URL der besuchten Seite, z. B.: `https://experienceleague.adobe.com/docs`
 * Die Referrer-URL (die URL der Seite, die mit der aktuellen Seite verknüpft ist, wenn die Person einem Link gefolgt ist)
 * Eine zufällig generierte ID der Seitenansicht in einem Format, das dem folgenden ähnelt: `2Ac6`
 * Die Gewichtung oder der Kehrwert der Stichprobenrate, beispielsweise: `100`. Das bedeutet, dass nur eine von hundert Seitenansichten aufgezeichnet wird.
@@ -56,9 +56,11 @@ Der Operational Telemetry-Dienst wurde für minimale Datenerfassung entwickelt. 
 
 Operational Telemetry überwacht automatisch den Client-seitigen Datenverkehr. Als Adobe-Kundin bzw. -Kunde müssen Sie keine zusätzlichen Schritte ausführen, da dieser Dienst nahtlos in Ihre bestehende Einrichtung integriert ist. Da der Operational Telemetry-Dienst allgemein verfügbar ist, profitieren Sie automatisch von dieser neuen Funktion. Der Operational Telemetry-Dienst stellt derzeit keine kundenrelevanten Metriken zur Überwachung bereit. Wir arbeiten daran, Ihnen diese Funktion so schnell wie möglich zur Verfügung zu stellen.
 
-<!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
+<!--
+ Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
-If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
+If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+-->
 
 ## Verwendung von Operational Telemetry durch Adobe {#how-operational-telemetry-data-is-being-used}
 
@@ -82,7 +84,8 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 ## Häufig gestellte Fragen {#faq}
 
-<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+<!--
+ REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the Operational Telemetry service scripts with third-party systems like Dynatrace?**
 
    Yes.

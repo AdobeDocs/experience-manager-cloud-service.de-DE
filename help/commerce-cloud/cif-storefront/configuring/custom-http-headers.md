@@ -5,7 +5,7 @@ exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 90%
@@ -36,7 +36,7 @@ Sie können die Werte der HTTP-Kopfzeilen auf der Seite „Cloud Service-Konfigu
 1. Öffnen Sie eine vorhandene Konfiguration oder erstellen Sie eine neue.
 1. Wechseln Sie zur Registerkarte „Erweitert“ und suchen Sie das Multi-Feld „Anwenderdefinierte HTTP-Kopfzeilen“. Sie können die zuvor definierten Kopfzeilen auswählen und ihnen Werte zuweisen.
 
-Die Komponenten, die die obige Cloud Service-Konfiguration verwenden, senden diese HTTP-Kopfzeilen mit jeder GraphQL-Anfrage.
+Die Komponenten, die die obige Cloud-Service-Konfiguration verwenden, senden diese HTTP-Kopfzeilen mit jeder GraphQL-Anfrage.
 
 ## Einschränkungen {#restrictions}
 

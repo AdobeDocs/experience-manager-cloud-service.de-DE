@@ -8,8 +8,8 @@ exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 100%
 
@@ -158,7 +158,7 @@ Von diesem Punkt an [beginnen und verwalten Sie Ihren Übersetzungsauftrag genau
 
 Herzlichen Glückwunsch! Sie haben die AEM Sites-Übersetzungs-Tour abgeschlossen! Sie sollten jetzt:
 
-* über ein grundlegendes Verständnis der Inhaltsverwaltungsfunktionen in AEM verfügen.
+* über ein grundlegendes Verständnis der Content-Management-Funktionen in AEM verfügen.
 * verstehen, wie die Übersetzungsfunktionen von AEM funktionieren und wie sie mit den Inhalten Ihrer Website zusammenhängen.
 * Beginnen Sie mit der Übersetzung Ihrer eigenen Inhalte.
 

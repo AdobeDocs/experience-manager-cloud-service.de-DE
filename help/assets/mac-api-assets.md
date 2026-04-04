@@ -6,7 +6,7 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 99%
@@ -121,7 +121,8 @@ Die [!DNL Assets]-HTTP-API bietet die folgenden Funktionen:
 >
 >Zur besseren Lesbarkeit der folgenden Beispiele wird die vollständige cURL-Notation weggelassen. Die Notation korreliert mit [Resty](https://github.com/micha/resty), einem Skript-Wrapper für cURL.
 
-<!-- TBD: The Console Manager is not available now. So how to configure the below? 
+<!--
+ TBD: The Console Manager is not available now. So how to configure the below? 
 
 **Prerequisites**
 

@@ -4,7 +4,7 @@ description: Verwenden Sie den Asset-Wähler, um die Metadaten und Ausgabedarste
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 99%
@@ -28,7 +28,8 @@ Der Asset-Selektor bietet viele Vorteile, z. B.:
 * Möglichkeit, innerhalb einer IMS-Organisation zur Asset-Auswahl zwischen Repositorys zu wechseln.
 * Möglichkeit, Assets nach Namen, Abmessungen und Größe zu sortieren und in der Listen-, Raster-, Galerie- oder Wasserfallansicht anzuzeigen.
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -48,8 +49,10 @@ Sie müssen die folgenden Kommunikationsmethoden sicherstellen:
 * Die Host-Anwendung wird unter HTTPS ausgeführt.
 * Sie können die Anwendung nicht auf `localhost` ausführen. Wenn Sie den Asset-Wähler auf Ihrem lokalen Computer integrieren möchten, müssen Sie eine benutzerdefinierte Domain erstellen, z. B. `[https://<your_campany>.localhost.com:<port_number>]`, und diese benutzerdefinierte Domain in der `redirectUrl list` hinzufügen.
 * Sie können die Client-ID konfigurieren und sie zur AEM Cloud Service-Umgebungsvariablen mit der entsprechenden `imsClientId` hinzufügen.
-<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
-![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
+<!--
+* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)
+-->
 * Die Liste der IMS-Bereiche muss in der Umgebungskonfiguration definiert werden.
 * Die URL der Anwendung befindet sich in der Zulassungsliste der Umleitungs-URLs des IMS-Clients.
 * Der IMS-Anmeldefluss wird mithilfe eines Popup-Fensters im Webbrowser konfiguriert und gerendert. Daher sollten Popup-Fenster im Ziel-Browser aktiviert oder zugelassen werden.
@@ -203,7 +206,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 

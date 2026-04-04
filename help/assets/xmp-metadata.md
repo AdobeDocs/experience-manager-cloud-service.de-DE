@@ -6,7 +6,7 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 99%
@@ -115,7 +115,8 @@ Um diesen Workflow nur einmal auf ein Asset anzuwenden, wenden Sie den Workflow 
 
 Um den Workflow auf die hochgeladenen Assets anzuwenden, fügen Sie den Workflow einem Nachbearbeitungsprofil hinzu.
 
-<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
+<!--
+ Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
 

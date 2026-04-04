@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4152'
 ht-degree: 99%
@@ -110,7 +110,7 @@ Erstellen einer untergeordneten Eigenschaft:
 
 1. Wählen Sie **[!UICONTROL Fertig]**, um die untergeordnete Eigenschaft zu speichern, und dann **[!UICONTROL Speichern]**, um das Formulardatenmodell (FDM) zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
 
-Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin adaptive Formulare <!--and interactive communications--> auf Grundlage des Formulardatenmodells (FDM) erstellen. Wenn später Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell (FDM) mit Datenquellen verknüpfen. Die Bindung wird in zugeordneten adaptiven Formularen automatisch aktualisiert <!--and interactive communications-->. Weitere Informationen zum Erstellen adaptiver Formulare <!--and interactive communications--> mithilfe des Formulardatenmodells (FDM) finden Sie unter [Verwenden eines Formulardatenmodells](using-form-data-model.md).
+Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin adaptive Formulare <!--and interactive communications--> auf Grundlage des Formulardatenmodells (FDM) erstellen. Wenn später Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell (FDM) mit Datenquellen verknüpfen. Die Bindung wird in zugehörigen adaptiven Forms automatisch aktualisiert. Weitere Informationen zum Erstellen von adaptiven Forms mithilfe des Formulardatenmodells (FDM) finden Sie [Verwenden eines Formulardatenmodells](using-form-data-model.md).
 
 ### Binden von Datenmodellobjekten und -eigenschaften {#bind-data-model-objects-and-properties}
 

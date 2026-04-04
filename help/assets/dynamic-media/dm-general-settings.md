@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 99%
@@ -19,8 +19,10 @@ ht-degree: 99%
 
 # Konfigurieren allgemeiner Einstellungen für Dynamic Media
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+ hide: yes
+hidefromtoc: yes
+-->
 
 {{work-with-dynamic-media}}
 
@@ -56,7 +58,7 @@ Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Op
    * Registerkarte [Illustrator](#illustrator-tab)
 
    Seite ![Allgemeine Dynamic Media-Einstellungen](/help/assets/assets-dm/dm-general-settings.png)
-   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**&#x200B;ausgewählt ist.*<br><br>
+   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**ausgewählt ist.*<br><br>
 
 1. Wenn Sie fertig sind, wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus. 
 

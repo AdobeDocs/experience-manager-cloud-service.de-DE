@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 65%
@@ -39,9 +39,11 @@ Anfragen für statische Assets wie JavaScript-Dateien, CSS-Stylesheets und Bilde
 
 Inhaltsanfragen werden unabhängig davon gemessen, ob die Antwort vom CDN-Cache bereitgestellt oder an die ursprüngliche AEM-Umgebung weitergeleitet wurde.
 
-<!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
+<!--
+ REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement.
+-->
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
@@ -105,7 +107,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
@@ -118,7 +120,7 @@ Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-r
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Überprüfen Sie Ihre Implementierungs- und Traffic-Muster, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [&#x200B; (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
+* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Überprüfen Sie Ihre Implementierungs- und Traffic-Muster, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [ (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
 
 ```
 trafficFilters:

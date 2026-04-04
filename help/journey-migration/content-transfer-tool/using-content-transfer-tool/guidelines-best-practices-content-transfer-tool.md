@@ -4,7 +4,7 @@ description: Lernen Sie die Richtlinien und Best Practices für die Verwendung d
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 100%
@@ -16,13 +16,14 @@ ht-degree: 100%
 
 ## Richtlinien und Best Practices {#best-practices}
 
-<!-- Alexandru: hiding for now
+<!--
+ Alexandru: hiding for now
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de" text="Important Considerations for using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
@@ -70,7 +71,7 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung des Cont
 
 * Um eine Aufnahme zu starten, müssen Sie der lokalen **AEM-Admin-Gruppe** in der Cloud Service-Instanz angehören, an die Sie Inhalte übertragen. Unberechtigte Personen können die Aufnahme nicht starten, ohne das Migrations-Token manuell angeben zu müssen.
 
-* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Erfassung löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Admins, die der Gruppe **Admins** hinzugefügt werden. Benutzende müssen erneut zur **Admin-Gruppe** hinzugefügt werden, um das Zugriffs-Token für das Content Transfer Tool abrufen zu können.
+* Wenn die Einstellung **Vorhandenen Inhalt in der Cloud-Instanz vor der Aufnahme löschen** aktiviert ist, wird das gesamte vorhandene Repository gelöscht und ein neues Repository erstellt, in dem Inhalte erfasst werden. Das bedeutet, dass alle Einstellungen einschließlich der Berechtigungen für die Cloud Service-Zielinstanz zurückgesetzt werden. Dies gilt auch für Admins, die der Gruppe **Admins** hinzugefügt werden. Benutzende müssen erneut zur **Admin-Gruppe** hinzugefügt werden, um das Zugriffs-Token für das Content Transfer Tool abrufen zu können.
 
 * Der Extraktionsschlüssel ist 14 Tage nach seiner Erstellung/Erneuerung gültig. Er kann jederzeit erneuert werden. Wenn der Extraktionsschlüssel abgelaufen ist, können Sie keine Extraktion durchführen.
 

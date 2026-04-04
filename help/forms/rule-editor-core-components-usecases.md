@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 42%
@@ -61,7 +61,7 @@ Mit dem Regeleditor können Sie vordefinierte Funktionen wie Summe, Min, Max und
 
 Stellen Sie sich ein Formular mit einem wiederholbaren Bereich vor, in dem jede Bereichsinstanz Informationen über den deklarierten Wert von Assets erfasst.
 
-![Wiederholbare &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![Wiederholbare ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
 Mit der Funktion `Sum` können Sie den Gesamtwert der Assets für alle Bedienfelder automatisch berechnen, sodass keine manuellen Berechnungen mehr erforderlich sind und das Fehlerpotenzial reduziert wird.
 
@@ -115,11 +115,13 @@ Wenn der Benutzer angibt, dass er seit weniger als 36 Monaten an seiner derzeiti
 
 ![Mehr Nachweise erforderlich](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ### Aufrufen des Formulardatenmodell-Service {#invoke}
 
@@ -147,11 +149,13 @@ Wenn Sie eine Wenn-Regel für das Optionsfeld schreiben, um dieses Verhalten zu 
 
 In der Beispielregel ist die Anweisung im Abschnitt „Wenn“ die Bedingung. Wenn diese „True“ zurückgibt, werden die im Abschnitt „Dann“ angegebenen Aktionen ausgeführt.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Verwenden einer Funktionsausgabe in einer Regel {#using-a-function-output-in-a-rule}
 

@@ -5,7 +5,7 @@ role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 10%
@@ -36,7 +36,8 @@ Frühere APIs unterstützen die JWT-basierte Server-zu-Server-Authentifizierung,
 <!--
 >[!NOTE]
 >
-> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.
+ -->
 
 ## Übersicht über die API-Klassifizierung
 
@@ -56,7 +57,7 @@ Alle AEM Forms-APIs sind in zwei Hauptteile unterteilt:
 
 Kommunikations-APIs sind der primäre Fokus für dokumentzentrierte Vorgänge.
 
-In der folgenden Tabelle sind alle [AEM Forms Communications APIs &#x200B;](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
+In der folgenden Tabelle sind alle [AEM Forms Communications APIs ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/) ihre unterstützten Authentifizierungsmethoden und Ausführungsmodelle aufgeführt:
 
 #### APIs zur Dokumenterstellung
 

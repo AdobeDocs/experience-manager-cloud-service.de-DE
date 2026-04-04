@@ -7,7 +7,7 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4283'
 ht-degree: 99%
@@ -65,7 +65,7 @@ Gehen Sie wie folgt vor, um die ZIP-Dateien zu extrahieren:
    >* Die maximal unterstützte Größe von ZIP-Dateien beträgt 15 GB.
    >* Sie können maximal drei ZIP-Dateien gleichzeitig extrahieren.
 
-## Anzeigen einer Vorschau für Assets {#previewing-assets}
+## Vorschau von Assets {#previewing-assets}
 
 Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
@@ -109,7 +109,8 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 1. Wählen Sie **[!UICONTROL Speichern und schließen]**.
 1. Navigieren Sie zur Assets-Benutzeroberfläche. Die bearbeiteten Metadateneigenschaften, darunter Titel, Beschreibung und Tags, werden auf der Asset-Karte in der Kartenansicht sowie in den relevanten Spalten der Listenansicht angezeigt.
 
-<!-- TBD: Uncomment after verification for Dec release.
+<!--
+ TBD: Uncomment after verification for Dec release.
 
 ## View asset usage and references {#usage-and-references}
 
@@ -342,7 +343,8 @@ Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je
 * Touch-Geräte: Tippen und halten. Auf einem iPad können Sie zum Beispiel ein Asset auswählen und gedrückt halten, damit die Schnellaktionen angezeigt werden.
 * Nicht-Touch-Geräte: Mit Mauszeiger darüberfahren. Auf einem Desktop-Gerät wird beispielsweise eine Schnellzugriffsleiste angezeigt, wenn Sie mit dem Mauszeiger über die Miniatur des Assets fahren.
 
-<!-- Hiding this topic via cqdoc-18707
+<!--
+ Hiding this topic via cqdoc-18707
 
 ## Edit images {#editing-images}
 

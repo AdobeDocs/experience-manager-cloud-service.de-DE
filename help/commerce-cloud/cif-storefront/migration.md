@@ -5,7 +5,7 @@ exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 73%
@@ -44,7 +44,7 @@ Im Vergleich zu AEM 6.5-Bereitstellungen gibt es zwei wesentliche Unterschiede:
 
 ## Produktkatalog {#product-catalog}
 
-Das Importieren von Produktkatalogdaten wird nicht mehr unterstützt. Die Verwendung der CIF-Add-on-Prinzipale für Produkt- und Kataloganforderungen erfolgt über Echtzeit-Aufrufe an eine externe Commerce-Lösung. Wechseln Sie zum Kapitel über Integration, um mehr über die Integration von Commerce-Lösungen zu erfahren.
+Das Importieren von Produktkatalogdaten wird nicht mehr unterstützt. Die Verwendung der CIF-Add-on-Prinzipale für Produkt- und Kataloganforderungen erfolgt über Echtzeit-Aufrufe an eine externe Lösung für den Handel. Wechseln Sie zum Kapitel über Integration, um mehr über die Integration von Lösungen für den Handel zu erfahren.
 
 >[!TIP]
 >
@@ -52,8 +52,8 @@ Das Importieren von Produktkatalogdaten wird nicht mehr unterstützt. Die Verwen
 
 ## Produktkatalog-Erlebnisse mit AEM-Rendering {#aem-rendering}
 
-Wenn Sie die Katalog-Blueprint mit dem klassischen CIF verwenden, müssen Sie den Workflow für den Produktkatalog aktualisieren. Das CIF-Add-on rendert Produktkatalog-Erlebnisse mithilfe von AEM-Katalogvorlagen nun direkt. Das Replizieren von Produktdaten oder Produktseiten ist nicht mehr erforderlich.
+Wenn Sie die Katalog-Blueprint mit dem klassischen CIF verwenden, müssen Sie den Workflow für den Produktkatalog aktualisieren. Das CIF-Add-on rendert Produktkatalog-Erlebnisse mithilfe von AEM-Katalogvorlagen nun direkt. Die Replikation von Produktdaten oder Produktseiten ist nicht mehr erforderlich.
 
 ## Nicht Cache-taugliche Daten und Shopping-Interaktionen {#non-cacheable}
 
-Client-seitige Anforderungen für nicht Cache-taugliche Daten und Interaktionen (z. B. Warenkorb-Interaktionen, Suchen) sollten direkt über das CDN bzw. den Dispatcher an den Commerce-Endpunkt (entweder Commerce-Lösung oder Integrationsschicht) gesendet werden. Entfernen Sie alle Aufrufe, bei denen AEM nur als Proxy fungierte.
+Client-seitige Anforderungen für nicht Cache-taugliche Daten und Interaktionen (z. B. Warenkorb-Interaktionen, Suchen) sollten direkt über das CDN bzw. den Dispatcher an den Commerce-Endpunkt (entweder Lösung für den Handel oder Integrationsschicht) gesendet werden. Entfernen Sie alle Aufrufe, bei denen AEM nur als Proxy fungierte.

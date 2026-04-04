@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2533'
 ht-degree: 99%
@@ -133,7 +133,8 @@ Adobe Experience Manager bietet verschiedene Suchfilter, mit denen Sie Ihre Such
 ![Bedienfeld „Filter“](assets/filters.png)
 
 Sie können einen oder mehrere Filter auswählen, um Ihre Suche in Adobe Experience Manager zu verfeinern.
-<!--The following filters are available out of the box for all the users of Experience Manager:
+<!--
+The following filters are available out of the box for all the users of Experience Manager:
 
 * File Type Search Filters  
 * File Size Search Filters 
@@ -151,7 +152,8 @@ Sie können einen oder mehrere Filter auswählen, um Ihre Suche in Adobe Experie
 * Content fragment model 
  -->
 
-<!--**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
+<!--
+**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
  
 To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
 
@@ -271,7 +273,8 @@ Sie gelangen darüber zur Sammlung von Assets mit ähnlichen Farben und Metadate
 
 Mit Suchfacetten in Adobe Experience Manager können Sie auf verschiedene Arten nach Assets suchen, anstatt in einer einzigen, vorher festgelegten oder taxonomischen Reihenfolge. Sie können Suchfacetten anpassen und Prädikate gemäß Ihren Anforderungen hinzufügen. Lesen Sie [Suchfacetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=de#) für eine schrittweise Anleitung zum Hinzufügen eines benutzerdefinierten Prädikats.
 
-<!--**Scenario 10: Search assets based on Sku ID**
+<!--
+**Scenario 10: Search assets based on Sku ID**
 to be added later
 -->
 

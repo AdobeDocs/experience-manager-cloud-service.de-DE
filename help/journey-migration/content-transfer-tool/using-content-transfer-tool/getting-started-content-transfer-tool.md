@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfe
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 100%
@@ -65,7 +65,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
 >abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/327075/?captions=ger&quality=12&learn=on" text=" Siehe Demo"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service migrieren:
@@ -94,7 +94,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem entsprechende Warnungen auf der Projektkarte und in den Tabellenzeilen für den Migrationsvorgang über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
+   Das folgende Dialogfeld wird angezeigt. Beachten Sie, dass ein Migrationssatz nach einer längeren Inaktivitätsdauer abläuft. Nachdem entsprechende Warnungen auf der Projektkarte und in den Tabellenzeilen für den Migrationsauftrag über einen bestimmten Zeitraum angezeigt wurden, läuft der Migrationssatz ab, und die zugehörigen Daten sind nicht mehr verfügbar. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
 
    Bei der Erstellung des Migrationssatzes können Sie die geografische Region auswählen, in der die temporären Migrationsdaten gespeichert werden.  Es wird empfohlen, die Region auszuwählen, die Ihrer Cloud-Zielumgebung am nächsten ist, um eine optimale Leistung bei der Aufnahme sicherzustellen.  Die Region kann nach der Erstellung des Migrationssatzes nicht mehr geändert werden. Um eine andere Region zu verwenden, müssen Sie einen neuen Migrationssatz erstellen.
 
@@ -182,7 +182,8 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
 
 1. Klicken Sie auf **Speichern**, nachdem Sie alle Felder im Bildschirm **Migrationssatz erstellen** ausgefüllt haben.
 
-<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
+<!--
+ 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
@@ -194,7 +195,8 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
 
 1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   -->
 
 ### Bestimmen der Größe des Migrationssatzes {#migration-set-size}
 
@@ -224,11 +226,13 @@ Gehen Sie wie folgt vor, um eine Größenüberprüfung durchzuführen:
 
 1. Wenn die Ergebnisse des Prozesses **Größe überprüfen** darauf hindeuten, dass entweder nicht genügend Speicherplatz vorhanden ist und/oder der Migrationssatz die Produktbeschränkungen überschreitet, wird der Status **WARNUNG** angezeigt.
 
-<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+<!--
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
    Below is an example of **Check Size** results with warnings.
  
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+   -->
 
 
 ## Wie geht es weiter {#whats-next}

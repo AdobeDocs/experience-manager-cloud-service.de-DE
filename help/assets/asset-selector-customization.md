@@ -4,7 +4,7 @@ description: Verwenden Sie Funktionen zum Anpassen des Asset-Wählers in Ihrer A
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 99%
@@ -175,7 +175,7 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 | *repo:id* | Zeichenfolge | Eindeutige Kennung für das Asset. |
 | *repo:assetClass* | Zeichenfolge | Die Klassifizierung des Assets (z. B. Bild oder Video, Dokument). |
 | *repo:name* | Zeichenfolge | Der Name des Assets, einschließlich der Dateierweiterung. |
-| *repo:size* | Number (Zahl) | Die Größe des Assets in Bytes. |
+| *repo:size* | number | Die Größe des Assets in Bytes. |
 | *repo:path* | Zeichenfolge | Der Speicherort des Assets im Repository. |
 | *repo:ancestors* | `Array<string>` | Ein Array von Vorgängerelementen für das Asset im Repository. |
 | *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht). |
@@ -236,10 +236,12 @@ Die Syntax zum Deaktivieren einer Auswahl ist wie folgt:
 
 Mit dem Asset-Wähler können Sie die Verwendung eines abgelaufenen Assets steuern. Sie können das abgelaufene Asset mit dem Zeichen **Läuft bald ab** anpassen, sodass Sie im Voraus wissen, welche Assets innerhalb von 30 Tagen ab dem aktuellen Datum ablaufen werden. Darüber hinaus kann dies entsprechend den Anforderungen angepasst werden. Sie können auch die Auswahl eines abgelaufenen Assets auf der Arbeitsfläche zulassen oder umgekehrt. Die Anpassung eines abgelaufenen Assets kann mithilfe einiger Code-Snippets auf verschiedene Weise durchgeführt werden:
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -260,7 +262,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 ### Festlegen der Dauer eines abgelaufenen Assets {#set-duration-of-expired-asset}
 

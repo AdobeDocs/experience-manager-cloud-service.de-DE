@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 99%
@@ -32,7 +32,8 @@ Asset-Microservices helfen dabei, die Notwendigkeit von Rendering-Tools und -Met
 
 Ein Architekturdiagramm zeigt die Schlüsselelemente für die Aufnahme und Verarbeitung von Assets sowie den Fluss von Assets im gesamten System.
 
-<!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -74,7 +75,8 @@ Nachbearbeitungs-Workflows sind reguläre [!DNL Experience Manager]-Workflow-Mod
 
 Adobe Experience Manager kann so konfiguriert werden, dass die Workflows nach Abschluss der Asset-Verarbeitung automatisch ausgelöst werden.
 
-<!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
+<!--
+ TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
 
 **Siehe auch**
