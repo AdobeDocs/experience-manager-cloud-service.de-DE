@@ -43,7 +43,7 @@ Siehe auch [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) 
 
 **So fügen Sie einen benutzerdefinierten Domain-Namen hinzu:**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 

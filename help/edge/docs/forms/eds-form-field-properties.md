@@ -27,7 +27,7 @@ Jedes Feld im JSON-Schema verfügt über eine `fieldType`-Eigenschaft, die besti
 
 Wenn der `fieldType` einem bestimmten Typ entspricht, wird **benutzerdefinierter Renderer** verwendet. Andernfalls wird er als **Standardeingabetyp“**.
 
-In den folgenden Abschnitten finden Sie [vollständige HTML-Struktur und ](#common-html-structure) für jeden Feldtyp.
+In den folgenden Abschnitten finden Sie [vollständige HTML-Struktur und &#x200B;](#common-html-structure) für jeden Feldtyp.
 
 ## Von Feldern verwendete allgemeine Eigenschaften
 

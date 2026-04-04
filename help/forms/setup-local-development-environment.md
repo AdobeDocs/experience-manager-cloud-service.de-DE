@@ -14,7 +14,7 @@ ht-degree: 99%
 
 # Einrichten einer lokalen Entwicklungsumgebung für AEM Forms {#overview}
 
-Wenn Sie eine [!DNL  Adobe Experience Manager Forms]-as-a-[!DNL  Cloud Service]-Umgebung einrichten und konfigurieren, richten Sie Entwicklungs-, Staging- und Produktionsumgebungen in der Cloud ein. Darüber hinaus können Sie auch eine lokale Entwicklungsumgebung einrichten und konfigurieren.
+Wenn Sie eine [!DNL &#x200B; Adobe Experience Manager Forms]-as-a-[!DNL &#x200B; Cloud Service]-Umgebung einrichten und konfigurieren, richten Sie Entwicklungs-, Staging- und Produktionsumgebungen in der Cloud ein. Darüber hinaus können Sie auch eine lokale Entwicklungsumgebung einrichten und konfigurieren.
 
 Sie können die lokale Entwicklungsumgebung verwenden, um die folgenden Aktionen durchzuführen, ohne sich bei der Cloud-Entwicklungsumgebung anzumelden:
 

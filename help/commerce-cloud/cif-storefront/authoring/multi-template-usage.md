@@ -39,4 +39,4 @@ Weitere Informationen zu diesem Thema finden Sie in den folgenden Ressourcen:
 
 ## Verwandte Ressourcen {#related}
 
-Es ist auch möglich, bestimmte Bereiche einer Seite dynamisch anzusprechen und dieselbe Vorlage wiederzuverwenden. Erfahren Sie, wie [ Produktdaten mit zugehörigen AEM-Inhalten anreichern](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
+Es ist auch möglich, bestimmte Bereiche einer Seite dynamisch anzusprechen und dieselbe Vorlage wiederzuverwenden. Erfahren Sie, wie [&#x200B; Produktdaten mit zugehörigen AEM-Inhalten anreichern](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
