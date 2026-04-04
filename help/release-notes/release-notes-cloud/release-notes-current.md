@@ -38,7 +38,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Werfen Sie einen Blick auf das Video „Versionsübersicht März 2026“ für eine Zusammenfassung der neuen Funktionen in der Version 2026.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483069/?captions=ger&quality=12)
 
 ## AEM Beta-Programme {#aem-beta-programs}
 
