@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Funktionstests"
->abstract="Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den AEM as a Cloud Service-Bereitstellungsprozess integriert sind. Die Tests stellen die Qualität und Zuverlässigkeit des Codes sicher."
+>abstract="Erfahren Sie mehr über die drei verschiedenen Arten von Funktionstests, die in den Bereitstellungsprozess von AEM as a Cloud Service integriert sind. Die Tests stellen die Qualität und Zuverlässigkeit Ihres Codes sicher."
 
 Lernen Sie die im [AEM as a Cloud Service-Bereitstellungsprozess](/help/implementing/cloud-manager/deploy-code.md) verfügbaren Qualitäts-Gates und die verschiedenen Arten integrierter Funktionstests kennen. Erfahren Sie, wie Sie im Rahmen einer umfassenden Teststrategie ihren Einsatz optimieren können.
 
