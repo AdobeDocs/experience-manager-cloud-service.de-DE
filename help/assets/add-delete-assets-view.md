@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 99%
@@ -32,7 +32,7 @@ Nachdem Sie die Dateien ausgewählt haben, sehen Sie ein Bestätigungsdialogfeld
 
 Sobald alle Dateien in die Warteschlange gestellt sind, klicken Sie auf **[!UICONTROL Hochladen]**.
 
-![Hochladen von Dateien und Ordnern](assets/upload-browse-files-folders.png)
+![Hochladen von Dateien und Ordnern](assets/upload-files.png)
 
 *Abbildung: Vor dem Hochladen der ausgewählten Assets können Sie Assets zur Warteschlange hinzufügen oder daraus entfernen.*
 
@@ -48,13 +48,13 @@ Um den Upload-Fortschritt zu verfolgen, klicken Sie in der Symbolleiste auf die 
 
 Um eine Teilmenge von Assets basierend auf dem Upload-Fortschritt oder -Status anzuzeigen, verwenden Sie den Filter in der Seitenleiste **[!UICONTROL Upload-Fortschritt]**. Die verschiedenen Filter umfassen die Anzeige aller Assets, abgeschlossener Uploads, laufender Uploads, hochzuladender Assets in der Warteschlange, angehaltener Uploads, doppelter Assets und Assets, die nicht hochgeladen werden konnten.
 
-![Filtern des Upload-Fortschritts nach dem Upload-Status](assets/filter-upload-progress.png)
+![Filtern des Upload-Fortschritts nach dem Upload-Status](assets/filter-progress.png)
 
 *Abbildung: Filtern der Assets, die Sie hochzuladen versucht haben, nach ihrem Upload-Status oder Upload-Fortschritt.*
 
 Unmittelbar nach dem Hochladen der Assets verarbeitet [!DNL Assets view] die Assets, um Miniaturansichten zu generieren und Metadaten zu verarbeiten. Bei vielen Assets dauert die Verarbeitung einige Zeit. Wenn keine Miniaturansicht angezeigt wird und eine Verarbeitungsmeldung an der Platzhalter-Miniaturansicht angezeigt wird, überprüfen Sie den Ordner nach einigen Minuten erneut. Während der Verarbeitung generiert [!DNL Assets view] u. a. die Ausgabedarstellungen, fügt Smart-Tags hinzu und indiziert die Asset-Details für die Suche.
 
-![Assets werden beim Hochladen verarbeitet und die Kachel zeigt die Verarbeitung an](assets/upload-processing.png)
+![Assets werden beim Hochladen verarbeitet und die Kachel zeigt die Verarbeitung an](assets/upload-process.png)
 
 *Abbildung: Hochgeladene Assets zeigen auf der Kachel an, dass sie verarbeitet werden.*
 
@@ -70,17 +70,17 @@ Unmittelbar nach dem Hochladen der Assets verarbeitet [!DNL Assets view] die Ass
 
 Wenn das Hochladen eines unterstützten Assets aus irgendeinem Grund fehlschlägt, klicken Sie im Bereich [!UICONTROL Upload-Fortschritt] auf **[!UICONTROL Wiederholen]**.
 
-![Fehlgeschlagenen Upload wiederholen](assets/upload-retry.png)
+![Fehlgeschlagenen Upload wiederholen](assets/upload-failed.png)
 
 *Abbildung: Wiederholung, wenn eine unterstützte Datei aus irgendeinem Grund nicht hochgeladen werden konnte.*
 
 Wenn Sie versuchen, doppelte Assets hochzuladen, werden die Assets erst hochgeladen, nachdem Sie den Upload ausdrücklich bestätigt haben. Zunächst werden die doppelten Assets als fehlgeschlagene Uploads markiert. Um dieses Problem zu beheben, können Sie einfach eine Version erstellen, die vorhandenen Assets löschen und ersetzen oder ein Duplikat erstellen, indem Sie das Asset umbenennen. Sie können solche Fehler einzeln für jeweils ein Asset beheben oder diesen Vorgang in einem Schritt für alle fehlgeschlagenen Duplikate durchführen.
 
-![Doppelte Assets einzeln behandeln](assets/uploads-manage-duplicates.png)
+![Doppelte Assets einzeln behandeln](assets/duplicate-new.png)
 
 *Abbildung: Beheben Sie das Problem bei doppelten Assets, die standardmäßig nicht hochgeladen werden konnten, einzeln.*
 
-![Alle fehlgeschlagenen Uploads im Batch behandeln](assets/upload-progress-manage-failed-uploads.png)
+![Alle fehlgeschlagenen Uploads im Batch behandeln](assets/manage-duplicate.png)
 
 *Abbildung: Beheben Sie bei doppelten Assets, die standardmäßig nicht hochgeladen werden können, die Probleme bei allen Assets gleichzeitig.*
 
@@ -98,7 +98,7 @@ Benutzer können nicht mehr benötigte einzelne Assets oder Ordner löschen. Fü
 
 * Verwenden Sie die Option, die auf der Miniaturansicht eines Assets oder Ordners verfügbar ist.
 
-  ![Optionen für die Asset-Miniaturansicht zum Verwalten eines Assets](assets/options-on-thumbnail.png)
+  ![Optionen für die Asset-Miniaturansicht zum Verwalten eines Assets](assets/delete-new.png)
 
   *Abbildung: Aktionen für Dateien und Ordner sind auf der Asset- oder Ordnerkachel verfügbar.*
 
@@ -112,4 +112,4 @@ Benutzer können nicht mehr benötigte einzelne Assets oder Ordner löschen. Fü
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General&lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General&lang=de#support)

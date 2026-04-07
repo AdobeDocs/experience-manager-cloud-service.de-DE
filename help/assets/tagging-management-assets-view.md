@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 99%
@@ -199,7 +199,7 @@ Die Assets-Ansicht bietet die Möglichkeit, blockierte Tags aus einer Datenquell
 1. Wählen Sie die CSV-Datei von Ihrem Gerät aus. Klicken Sie auf **[!UICONTROL Datei auswählen]**, um über Ihr Gerät zur Datei zu navigieren. Alternativ können Sie die CSV-Datei per Drag-and-Drop von Ihrem Gerät ziehen.
 1. Klicken Sie auf **[!UICONTROL Hochladen]**. Die Tags aus der CSV-Datei werden in der Liste der blockierten Tags aufgeführt.
 
-   ![Importieren der Liste der blockierten Tags](assets/import-blocked-tags.png)
+   ![Importieren der Liste der blockierten Tags](assets/import-csv-new.png)
 
 Falls Sie eine Vorlage für blockierte Tags herunterladen möchten, gehen Sie wie folgt vor:
 
