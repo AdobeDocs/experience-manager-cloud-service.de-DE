@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 99%
+source-wordcount: '707'
+ht-degree: 82%
 
 ---
 
@@ -71,25 +71,27 @@ Gehen Sie folgendermaßen vor, um dynamische Ausgabedarstellungen von Bildern in
 1. Wählen Sie die Ausgabedarstellung für die Vorschau aus und klicken Sie auf **URL kopieren**, um die URL der ausgewählten Ausgabedarstellung zu kopieren. Klicken Sie auf **Ausgabedarstellung herunterladen**, um die Ausgabedarstellungen der Bild-Assets herunterzuladen.
 1. Wählen Sie die Ausgabedarstellung für den intelligenten Zuschnitt aus, um eine Vorschau anzuzeigen, und klicken Sie auf **URL kopieren**, um die URL der ausgewählten Ausgabedarstellung zu kopieren.
 1. Klicken Sie auf das ![Download-Symbol](assets/do-not-localize/download-icon.png), um alle verfügbaren Ausgabedarstellungen für intelligenten Zuschnitt als einzelne ZIP-Datei herunterzuladen.
-   ![Download-Symbol](/help/assets/assets/smartcrop-rendition.png)
+   ![Download-Symbol](/help/assets/assets/download-op.png)
 
    >[!NOTE]
    >
    >Diese Ausgabedarstellungen sind nur für Bild-Assets verfügbar.
 
-## Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen {#dm-with-openapi-renditions}
+## Dynamic Media mit OpenAPI-Funktionen für Ausgabeformate {#dm-with-openapi-renditions}
 
 ### Voraussetzungen {#prereqs-dm-with-openapi-renditions}
 
 * Sie müssen eine Benutzerin bzw. ein Benutzer mit AEM Dynamic Media-Lizenz sein.
-* Assets müssen für die Anzeige von Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen genehmigt werden. Weitere Informationen finden Sie unter [Genehmigen von Assets in Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets).
+* Assets muss für die öffentliche Verwendung genehmigt sein, um Dynamic Media mit OpenAPI-Funktionen für Ausgabedarstellungen anzuzeigen. Weitere Informationen finden Sie unter [Genehmigen von Assets in Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets).
 * Dynamic Media mit OpenAPI-Funktionen muss in Ihrer AEM as a Cloud Service-Instanz aktiviert sein.
 
 ### Anzeigen von Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen {#view-download-dm-with-openapi-renditions}
 
 1. Wählen Sie das Asset aus und klicken Sie auf **Details**.
-1. Klicken Sie auf das Symbol „Dynamic Media“ im rechten Bedienfeld. Im Dynamic Media-Bedienfeld wird die Ausgabedarstellung durch Dynamic Media mit OpenAPI-Funktionen für alle Asset-Typen angezeigt.
-   ![Download-Symbol](/help/assets/assets/dm-with-open-api-copy-url.png)
-1. Wählen Sie die Option **Dynamic Media mit OpenAPI** und klicken Sie dann auf **URL kopieren**, um die Bereitstellungs-URL des Assets zu kopieren.
+1. Klicken Sie auf das Dynamic Media-Symbol im rechten Bedienfeld. Das Dynamic Media-Bedienfeld zeigt basierend auf Ausgabedarstellungen, dynamische Ausgabedarstellungen und Ausgabedarstellungen für smartes Zuschneiden für unterstützte Asset-Typen an.
+   ![Download-Symbol](/help/assets/assets/new-new1.png)
+1. Wählen Sie **Basisausgabe** und klicken Sie auf **URL kopieren**, um die Bereitstellungs-URL des Assets zu kopieren, oder klicken Sie auf **Ausgabedarstellung herunterladen**, um das Asset herunterzuladen.
 
+Wenn sowohl Scene7 (Dynamic Media) als auch Dynamic Media mit OpenAPI-Funktionen für das Repository aktiviert sind, ist in der Benutzeroberfläche eine Umschaltoption verfügbar, mit der zwischen den beiden Optionen gewechselt werden kann. Die angezeigten Ausgabedarstellungen und die generierten URLs werden basierend auf der ausgewählten Konfiguration aktualisiert.
 
+![Option ein/aus](/help/assets/assets/new-new2.png)
