@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
+source-git-commit: 087285bf1023f844fe8d63817e0202276e01c411
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 96%
+source-wordcount: '2274'
+ht-degree: 71%
 
 ---
 
@@ -34,6 +34,8 @@ New Relic One APM für AEM as a Cloud Service hat viele Funktionen.
 * Instrumentierter New Relic One APM-Agent, der exakte Methodenaufrufe mit Zeilennummern anzeigt, einschließlich externer Abhängigkeiten und Datenbanken.
 
 * Ganzheitliche Leistungsoptimierung durch Kombination von Schlüsselmetriken aus der Überwachung auf Infrastrukturebene und der Überwachung der Anwendung (Adobe Experience Manager).
+
+* Automatische Änderungsverfolgung für Cloud Manager-Pipeline-Ausführungen, AEM-Upgrades und Code-Wiederherstellungsvorgänge. Mit diesen Trackern können Teams Bereitstellungen direkt in New Relic One mit Änderungen der Anwendungsleistung korrelieren.
 
 ## Aktivieren Ihres New Relic One-Unterkontos {#activate-sub-account}
 
@@ -79,7 +81,7 @@ Führen Sie diese Schritte aus, um die Benutzenden Ihres New Relic One-Unterkont
 
    ![Hinzufügen von Benutzenden](assets/newrelic-add-users.png)
 
-1. Um New Relic One-Benutzende zu entfernen, klicken Sie am rechten Ende der Zeile für die jeweilige Person auf die Schaltfläche „Löschen“.
+1. Um einen New Relic One-Benutzer zu entfernen, klicken Sie auf die Schaltfläche Löschen am rechten Ende der Zeile für den Benutzer.
 
 1. Klicken Sie auf **Speichern**, um die-Benutzenden zu erstellen.
 
@@ -87,11 +89,11 @@ Sobald die Benutzenden definiert sind, sendet New Relic eine Bestätigungs-E-Mai
 
 >[!NOTE]
 >
->Wenn Sie die Benutzenden von New Relic One verwalten, müssen Sie sich auch selbst als Benutzerin bzw. Benutzer hinzufügen, um ebenfalls Zugriff zu haben. Die Rolle als **Geschäftsinhaber** oder **Bereitstellungs-Manager** reicht nicht aus, um Zugriff auf New Relic One zu erhalten. Sie müssen auch sich selbst als Benutzerin bzw. Benutzer erstellen.
+>Wenn Sie die New Relic One-Benutzer verwalten, müssen Sie sich auch selbst als Benutzer hinzufügen. Die Rolle als **Geschäftsinhaber** oder **Bereitstellungs-Manager** reicht nicht aus, um Zugriff auf New Relic One zu erhalten.
 
 ## Aktivieren Ihres New Relic One-Benutzerkontos {#activate-user-account}
 
-Nachdem ein New Relic One-Benutzerkonto, wie im vorigen Abschnitt [Verwalten von New Relic One-Benutzenden](#manage-users) beschrieben, erstellt wurde, sendet New Relic diesen Benutzenden eine Bestätigungs-E-Mail an die angegebene Adresse. Um diese Konten verwenden zu können, müssen Benutzende zunächst ihre Konten bei New Relic aktivieren, indem sie ihre Kennwörter zurücksetzen.
+Nachdem ein New Relic One-Benutzerkonto, wie in [Verwalten von New Relic One-Benutzern](#manage-users) beschrieben, erstellt wurde, sendet New Relic diesen Benutzern eine Bestätigungs-E-Mail an die angegebene Adresse. Um diese Konten verwenden zu können, müssen Benutzende zunächst ihre Konten bei New Relic aktivieren, indem sie ihre Kennwörter zurücksetzen.
 
 **Aktivieren Ihres New Relic One-Benutzerkontos**
 
@@ -129,7 +131,7 @@ Nachdem Sie [Ihr New Relic-Konto aktiviert haben](#activate-account), können Si
 
 **So greifen Sie direkt auf New Relic One zu:**
 
-1. Navigieren Sie zur Anmeldeseite von New Relic unter [`https://login.newrelic.com/login`](https://login.newrelic.com/login)
+1. Zur Anmeldeseite von [New Relic](https://login.newrelic.com/login).
 
 1. Melden Sie sich bei New Relic One an.
 
@@ -140,6 +142,66 @@ Wenn Sie während der Anmeldung bei New Relic One aufgefordert werden, Ihre E-Ma
 Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzereintrag anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
 
 Um weitere Hilfe zu erhalten, öffnen Sie ein Support-Ticket über das [AEM Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+
+## Änderungs-Tracker verwenden {#change-tracker}
+
+Cloud Manager sendet automatisch Änderungs-Tracker an New Relic One, wenn unterstützte Pipeline-Ausführungen, AEM-Upgrades und die Code-Wiederherstellung abgeschlossen sind. Diese Tracker werden als Änderungsereignisse in der Ansicht **Änderungsverfolgung** von New Relic angezeigt, sodass Ihr Team Bereitstellungen mit Änderungen bei der Anwendungsleistung, den Fehlerquoten und dem Durchsatz korrelieren kann.
+
+<!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
+
+### Unterstützte Pipelines und Flüsse {#supported-pipelines}
+
+Die folgenden Cloud Manager-Pipelines und die beiden letzten Flusstypen generieren in New Relic One Änderungs-Tracker:
+
+| Pipeline-/Flusstyp | Beschreibung |
+|---|---|
+| **Full-Stack (CI_CD-Bereitstellung)** | Full-Stack-Pipeline-Ausführungen Die Ablaufverfolgung enthält den Pipeline-Namen und die Ausführungs-ID. |
+| **Web-Stufen-Konfiguration** | Web-Stufen-Konfigurations-Pipeline-Ausführungen. Die Ablaufverfolgung enthält den Pipeline-Namen und die Ausführungs-ID. |
+| **Frontend** | Frontend-Pipeline-Ausführungen. Die Ablaufverfolgung enthält den Pipeline-Namen und die Ausführungs-ID. |
+| **config** | Pipeline-Ausführungen konfigurieren. Die Ablaufverfolgung enthält den Pipeline-Namen und die Ausführungs-ID. |
+| **AEM-Update** | AEM-Versionsaktualisierungen. Beispielsweise von Version {} zu Version {}. Tracker werden erstellt, wenn das Änderungsereignis der Umgebung abgeschlossen ist. |
+| **Code wiederherstellen** | Der Code stellt Vorgänge aus einem bestimmten Repository und einer bestimmten Verzweigung wieder her. |
+
+>[!NOTE]
+>
+>Änderungs-Tracker werden derzeit nur für Skyline-Umgebungen unterstützt. Pipelines, die außerhalb des Bereichs liegen, wie z. B. Hochskalierungs-Pipelines und Service Pack-Pipelines, generieren keine Tracker.
+
+### Anzeigen von Änderungs-Trackern in New Relic One {#view-change-trackers}
+
+Nach Abschluss der Ausführung einer unterstützten Pipeline können Sie den entsprechenden Änderungs-Tracker in New Relic One anzeigen.
+
+**So zeigen Sie Änderungs-Tracker in New Relic One an:**
+
+1. [Greifen Sie über ](#accessing-new-relic) Cloud Manager oder direkt auf New Relic One zu.
+1. Navigieren Sie zu **APM und Services** und wählen Sie die Anwendung für die entsprechende Umgebung aus.
+1. Suchen Sie auf der Seite Anwendungszusammenfassung nach den Indikatoren für die Änderungsnachverfolgung im Diagramm. Bewegen Sie den Mauszeiger über einen Tracker, um Bereitstellungsdetails anzuzeigen.
+
+   ![Ändern von Tracker-Indikatoren im Zeitdiagramm für Web-Transaktionen](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
+
+1. Klicken Sie auf ein beliebiges Änderungsereignis in der Tabelle, um eine Detailansicht zu öffnen.
+
+   ![Bedienfeld „Bereitstellungsattribute“ mit hervorgehobener DeepLink](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png)URL <i>Detailansicht eines Änderungsereignisses.</i>
+
+   Das **Details ändern** auf der rechten Seite zeigt unter anderem die Entität, den Zeitstempel, die Epoche, die Kategorie, die Bereitstellungs-ID und den API-Typ an.
+
+   Für jeden Änderungs-Tracker, den Cloud Manager an New Relic One sendet **werden im Bedienfeld „Bereitstellungsattribute** unten rechts die folgenden Attribute angezeigt:
+
+   | Attribut | Beschreibung |
+   |---|---|
+   | **version** | Eine Beschreibungszeichenfolge, die den Pipeline-Namen und die Ausführungs-ID enthält. |
+   | **changelog** | Reserviert für zukünftige Verwendung. |
+   | **commit** | Reserviert für zukünftige Verwendung. |
+   | **deepLink** | Klicken Sie auf die URL, um zur Seite „Pipeline-Ausführung“ in Cloud Manager zurückzukehren. |
+
+1. Um eine vollständige Liste der Änderungs-Tracker anzuzeigen, klicken Sie in der linken Seitenleiste unter **Ereignisse** auf **Änderungs-Tracking**.
+
+   Die **Änderungsereignisse** Tabelle zeigt jede Bereitstellung mit ihrem Zeitstempel und ihrer Versionsbeschreibung.
+
+   ![Tracking-Option für Änderungen mit Anzeige der Tabelle mit Änderungsereignissen](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
+
+>[!TIP]
+>
+>Verwenden Sie Änderungs-Tracker zusammen mit den Leistungsindikatoren von New Relic One **Antwortzeit** und **Durchsatz**. Anhand dieser Indikatoren können Sie erkennen, ob eine bestimmte Bereitstellung Leistungsregressionen oder Verbesserungen mit sich gebracht hat. Sie können Metriken von vor und nach einer Bereitstellung direkt auf der Seite mit den Details zum Änderungsereignis vergleichen.
 
 ## Fehlerbehebung beim Benutzerzugriff auf New Relic One {#troubleshooting}
 
@@ -170,7 +232,7 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 ## Nutzungshinweise {#usage-notes}
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [&#x200B; New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
