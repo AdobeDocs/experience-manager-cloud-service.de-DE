@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: 96e80f49c6e01a266aa5cf1a69cd67045277c8c6
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 68%
@@ -38,7 +38,7 @@ Darüber hinaus steht Ihnen ein einheitliches Erlebnis bei der Verwaltung aller 
 
 >[!NOTE]
 >
->Die hier beschriebenen Funktionen der flexiblen Veröffentlichungsebene und des AEM-Authoring-Crosswalk befinden sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebenen Funktionen der flexiblen Veröffentlichungsebene und des AEM-Authoring-Crosswalk befinden sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Moderne Web-Erlebnisse erfordern eine leistungsstarke Bereitstellung, aber viele Unternehmen verlassen sich auch auf etablierte AEM-Authoring-Workflows, Governance und Muster für die Wiederverwendung von Inhalten. Um Ihre Teams bei der Modernisierung des Versands zu unterstützen, ohne das Authoring zu unterbrechen, führt Cloud Manager Funktionen ein, die Ihnen Folgendes ermöglichen:
 
@@ -48,7 +48,7 @@ Moderne Web-Erlebnisse erfordern eine leistungsstarke Bereitstellung, aber viele
 
 Mit diesen Funktionen können Unternehmen die moderne Bereitstellung schrittweise umsetzen, ohne vorhandene Workflows zu opfern.
 
-### Authoring-Optionen für Edge Delivery Sites
+### Authoring-Optionen für Edge Delivery Sites {#authoring-options-eds}
 
 Wenn Sie eine Edge Delivery-Site in Cloud Manager erstellen, können Sie Ihren bevorzugten Authoring-Ansatz wählen:
 
@@ -57,7 +57,7 @@ Wenn Sie eine Edge Delivery-Site in Cloud Manager erstellen, können Sie Ihren b
 
 Unternehmen können je nach ihren Workflow-Voreinstellungen zwischen diesen Ansätzen wählen oder beide inkrementell verwenden. Siehe [Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
-### Flexible Veröffentlichungsebene
+### Flexible Veröffentlichungsebene {#flexible-publish-tier}
 
 Mit Cloud Manager können Sie konfigurieren, ob für die Umgebungen Ihres Programms eine Veröffentlichungsebene bereitgestellt wird. Nicht alle Architekturen erfordern eine Veröffentlichungsebene, wie in der folgenden Tabelle dargestellt:
 
@@ -83,7 +83,7 @@ Wenn Sie über eine Edge Delivery Services (EDS)-Lizenz verfügen, können Sie e
 Wenn Sie alternativ Ihr CDN (d. h. ein nicht von Adobe verwaltetes CDN) unabhängig von Ihrer Edge Delivery Services-Lizenz verwenden möchten, müssen Sie es auf der Plattform `aem.live` konfigurieren. Siehe [BYO-CDN-Einrichtung](https://www.aem.live/docs/byo-cdn-setup).
 
 
-## Über das Hinzufügen von Edge Delivery Services zu einem Produktions- oder Sandbox-Programm
+## Über das Hinzufügen von Edge Delivery Services zu einem Produktions- oder Sandbox-Programm {#about-adding-eds-to-prod-sandbox}
 
 Je nachdem, wie ein Projekt aufgesetzt wurde oder wann Sie die Site erstellen möchten, können Edge Delivery Services auf verschiedene Weise hinzugefügt werden.
 
@@ -123,7 +123,7 @@ Die **Aufgabenliste von Edge Delivery** in Cloud Manager ist eine Checkliste fü
 | 8 | Einrichten der Push-Validierung | Weitere Informationen finden Sie unter [Einrichten der Push-Validierung für eine Edge Delivery-Site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Live-Schaltung | Weitere Informationen finden Sie unter [Checkliste für die Live-Schaltung](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441570?captions=ger&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Einreichen eines Support-Tickets {#eds-support-ticket}
 
