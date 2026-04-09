@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihrem Produktions- oder Sandbox-Programm eine
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 81%
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/h
    >
    >Wenn Sie eine neue Edge Delivery-Site erstellen möchten, die das AEM-Authoring mit dem universellen Editor verwendet, anstatt eine vorhandene Site zu registrieren, finden Sie weitere Informationen unter [Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). Bei Programmen, die Edge Delivery für die Bereitstellung verwenden, ist möglicherweise keine Veröffentlichungsebene erforderlich. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-1. Melden Sie sich unter [experiece.adobe.com](https://experience.adobe.com) bei Cloud Manager an.
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
 1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
