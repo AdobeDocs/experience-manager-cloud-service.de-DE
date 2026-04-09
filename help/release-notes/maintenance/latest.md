@@ -4,10 +4,10 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e035c1c27f652af231034588eb1359354182dcb0
+source-git-commit: 881e7788c2ae8fd01fbe2c0af08228fd96179733
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 62%
+source-wordcount: '562'
+ht-degree: 42%
 
 ---
 
@@ -41,6 +41,17 @@ Die Funktionsaktivierung von 2026.4.0 bietet den vollen Funktionsumfang für die
 * ASSETS-65187: CSV-Vorschau in der Cloud, wenn Spaltendaten Escape-Kommas enthalten.
 * ASSETS-63441: Stellen Sie sicher, dass alle Benutzenden über Berechtigungen zum Lesen der Assets Omnisearch-Konfiguration verfügen.
 * SITES-40095: Metadaten-Editor: Verweise auf lokale Inhaltsfragmente, die mehr als 10 Einträge umfassen.
+
+#### AEM Guides {#guides-25194}
+
+* GUIDES-38412 : Beim Bearbeiten einer Schematron-`(*.sch)` und bei Verwendung der Funktion zum Suchen und Ersetzen wird das Bedienfeld „Suchen und Ersetzen“ unten teilweise außerhalb des Bildschirms angezeigt, wodurch der Zugriff auf die Eingabefelder und Steuerelemente verhindert wird.
+* GUIDES-37806: Wenn dasselbe Thema in mehreren Zuordnungen mit unterschiedlichen bedingten Vorgaben wiederverwendet wird, überschreibt die Veröffentlichung der neuesten Zuordnung in Salesforce den Themeninhalt, was dazu führt, dass Benutzenden zuvor veröffentlichter Zuordnungen falsche Daten angezeigt werden.
+* GUIDES-39394: Wenn ein Bild, das ursprünglich als sprachspezifisches Asset mit einer bestimmten Version (z. B. unter `/en/`) verwaltet wurde, in einen globalen Ordner mit einer aktualisierten Version verschoben und ein Baseline-Export durchgeführt wird, verweist die neue Baseline weiterhin auf veraltete sprachspezifische Versionen dieses Bildes, was zu einem fehlgeschlagenen Baseline-Export führt.
+* GUIDES-39054: Beim Erstellen einer dynamischen Baseline reagiert der Editor manchmal aufgrund mehrerer gleichzeitiger API-Anfragen nicht mehr, wodurch alle anderen Vorgänge angehalten werden.
+* GUIDES-37781: Wenn Sie einen Benutzer einer Prüfungsaufgabe zuweisen, werden in der Dropdown-Liste alle Benutzer und nicht nur die mit den ausgewählten Projekten verknüpften aufgelistet. Dies führt zu ungültigen Benutzeroptionen.
+* GUIDES-39385: Beim Öffnen eines Berichts für eine Zuordnung tritt beim Laden des Bedienfelds „Filter“ eine Verzögerung auf.
+
+Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekannte Probleme {#known-issues-25194}
 
