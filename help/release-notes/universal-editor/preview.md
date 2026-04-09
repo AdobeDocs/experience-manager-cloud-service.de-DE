@@ -28,4 +28,4 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige Funktionen {#upcoming-features}
 
-* Es wurde ein Problem behoben[ bei dem das -Element hinter dem Badge eines ](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) Elements in einigen Situationen verdeckt wurde.
+* Es wurde ein Problem behoben[&#x200B; bei dem das -Element hinter dem Badge eines &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) Elements in einigen Situationen verdeckt wurde.
