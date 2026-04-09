@@ -4,10 +4,10 @@ description: Erfahren Sie anhand von Beispielen mehr über Felder und die Kompon
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
+source-git-commit: 486b192f4ac427156028bc50bb41364f8690724a
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -623,7 +623,13 @@ Ein Mehrfachauswahl-Komponententyp zeigt mehrere Elemente zur Auswahl in einer D
 
 #### Zahl {#number}
 
-Ein Zahl-Komponententyp ermöglicht die Eingabe einer Zahl.  Er bietet zusätzliche Validierungstypen.
+Ein Zahl-Komponententyp ermöglicht die Eingabe einer Zahl.  Er bietet eine zusätzliche Konfiguration.
+
+| Konfiguration | Werttyp | Beschreibung | Erforderlich |
+|---|---|---|---|
+| `valueFormat` | `string` | Der Typ der zu speichernden Zahl kann `long` (Standard) oder `double` sein. | Nein |
+
+Es bietet auch zusätzliche Validierungstypen.
 
 | Validierungstyp | Werttyp | Beschreibung | Erforderlich |
 |---|---|---|---|

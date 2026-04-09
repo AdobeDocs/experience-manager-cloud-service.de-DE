@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e509c9a426399a22733e537f6747c0c20ab633ea
+source-git-commit: a5f3b703706beab106591477372328e45f881b44
 workflow-type: tm+mt
-source-wordcount: '7221'
+source-wordcount: '7225'
 ht-degree: 93%
 
 ---
@@ -259,6 +259,7 @@ ht-degree: 93%
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + [Vorschau von Versionshinweisen für den universellen Editor](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Versionshinweise für 2026.04.02](/help/release-notes/universal-editor/2026/2026-04-02.md)
          + [Versionshinweise für 2026.03.26](/help/release-notes/universal-editor/2026/2026-03-26.md)
          + [Versionshinweise für 2026.03.19](/help/release-notes/universal-editor/2026/2026-03-19.md)
          + [Versionshinweise für 2026.03.12](/help/release-notes/universal-editor/2026/2026-03-12.md)
@@ -1143,11 +1144,11 @@ ht-degree: 93%
             + [AOE-Bereitstellung](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [Entwicklungsagent](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Inhaltsratgeber-Agent {#content-advisor}
-         + [Überblick](/help/ai-in-aem/agents/content-advisor/overview.md)
+         + [Übersicht](/help/ai-in-aem/agents/content-advisor/overview.md)
          + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
          + [Inhaltsoptimierungs-Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
       + Brand Governance Agent {#governance}
-         + [Überblick](/help/ai-in-aem/agents/governance/overview.md)
+         + [Übersicht](/help/ai-in-aem/agents/governance/overview.md)
          + [So importieren Sie eine Markenrichtlinie](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
    + KI-Assistent {#ai-assistant}
       + [Konfigurieren des KI-Assistenten in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
@@ -1319,7 +1320,7 @@ ht-degree: 93%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

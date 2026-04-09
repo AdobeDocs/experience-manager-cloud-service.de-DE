@@ -1,20 +1,20 @@
 ---
-title: Universeller Editor – Versionshinweise für 2026.04.02
-description: Dies sind die Versionshinweise für die Version 2026.04.02 des universellen Editors.
+title: Universeller Editor – Versionshinweise für 2026.04.09
+description: Dies sind die Versionshinweise für die Version 2026.04.09 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
+source-git-commit: a5f3b703706beab106591477372328e45f881b44
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 60%
+source-wordcount: '138'
+ht-degree: 48%
 
 ---
 
 
-# Universeller Editor – Versionshinweise für 2026.04.02 {#release-notes}
+# Universeller Editor – Versionshinweise für 2026.04.09 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 2. April 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version 9. April 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,8 +26,6 @@ Dies sind die Versionshinweise für die Version vom 2. April 2026 des universell
 
 ## Neue Funktionen {#what-is-new}
 
-* [Eine konfigurierbare Option](/help/implementing/universal-editor/configure-rte.md#special-characters) zum [Hinzufügen von Sonderzeichen](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) wurde zur Symbolleiste des Rich-Text-Editors (RTE) hinzugefügt.
-
-## Andere Verbesserungen {#other-improvements}
-
-* Tag-Felder werden vom OpenAPI-Adapter nicht mehr fälschlicherweise als Mehrfachfelder zurückgegeben.
+* [Die Option Bild hinzufügen in der Rich-Text-Editor (RTE)-Symbolleiste](/help/implementing/universal-editor/configure-rte.md#image) wird jetzt für [Projekte unterstützt, die Inhalte in AEM as a Cloud Service erstellen und beibehalten.](https://www.aem.live/docs/aem-authoring)
+* [Das Eigenschaftenbedienfeld](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) ist jetzt ausblendbar, wenn Sie vom Editor zurück zum [Startbildschirm“ navigieren](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+   * Wenden Sie sich an die Adobe-Kundenunterstützung, wenn Sie diese Funktion verwenden möchten.
