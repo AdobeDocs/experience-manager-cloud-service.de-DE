@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Ereignisse, die der unive
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: 3e6487b6d37f698a91b07f1ca02aec140d14d1a2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 94%
+source-wordcount: '580'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ Ereignisse umfassen die Payload der Anfrage und der Antwort und werden ausgelös
 
 ## Ereignisse zur Inhaltsaktualisierung {#content-events}
 
-### Aue&Doppelpunkt;content-add {#content-add}
+### Aue&amp;Doppelpunkt;content-add {#content-add}
 
 Das Ereignis `aue:content-add` wird ausgelöst, wenn einem Container eine neue Komponente hinzugefügt wird.
 
@@ -53,7 +53,7 @@ Die Payload sind Inhalte vom universellen Editor-Dienst mit Fallback-Inhalten au
 }
 ```
 
-### use&colon;content-details {#content-details}
+### use&amp;colon;content-details {#content-details}
 
 Das Ereignis `aue:content-details` wird ausgelöst, wenn eine Komponente im Bedienfeld „Eigenschaften“ geladen wird.
 
@@ -70,7 +70,7 @@ Die Payload ist der Inhalt der Komponente sowie optional ihr Schema.
 }
 ```
 
-### Aue&Doppelpunkt;content-move {#content-move}
+### Aue&amp;Doppelpunkt;content-move {#content-move}
 
 Das Ereignis `aue:content-move` wird ausgelöst, wenn eine Komponente verschoben wird.
 
@@ -89,7 +89,7 @@ Die Payload ist die Komponente sowie der Quell- und Ziel-Container.
 }
 ```
 
-### aue&colon;content-patch {#content-patch}
+### aue&amp;colon;content-patch {#content-patch}
 
 Das Ereignis `aue:content-patch` wird ausgelöst, wenn die Daten einer Komponente im Bedienfeld „Eigenschaften“ aktualisiert werden.
 
@@ -108,7 +108,7 @@ Die Payload ist ein JSON-Patch der aktualisierten Eigenschaften.
 }
 ```
 
-### Aue&Doppelpunkt;content-remove {#content-remove}
+### Aue&amp;Doppelpunkt;content-remove {#content-remove}
 
 Das Ereignis `aue:content-remove` wird ausgelöst, wenn eine Komponente aus einem Container entfernt wird.
 
@@ -124,7 +124,7 @@ Die Payload ist die Element-ID der entfernten Komponente.
 }
 ```
 
-### use&colon;content-update {#content-update}
+### use&amp;colon;content-update {#content-update}
 
 Das Ereignis `aue:content-update` wird ausgelöst, wenn die Eigenschaften einer Komponente im Kontext aktualisiert werden.
 
@@ -180,7 +180,7 @@ Antwort-Payload:
 
 ## Benutzeroberflächen-Ereignisse {#ui-events}
 
-### Aue&Doppelpunkt;ui-preview {#ui-preview}
+### Aue&amp;Doppelpunkt;ui-preview {#ui-preview}
 
 Das Ereignis `aue:ui-preview` wird ausgelöst, wenn der Bearbeitungsmodus der Seite in **Vorschau** geändert wird.
 
@@ -192,7 +192,7 @@ Die Payload für dieses Ereignis ist leer.
 }
 ```
 
-### Aue&Doppelpunkt;ui-edit {#ui-edit}
+### Aue&amp;Doppelpunkt;ui-edit {#ui-edit}
 
 Das Ereignis `aue:ui-edit` wird ausgelöst, wenn der Bearbeitungsmodus der Seite in **Bearbeiten** geändert wird.
 
@@ -204,7 +204,7 @@ Die Payload für dieses Ereignis ist leer.
 }
 ```
 
-### Aue&Doppelpunkt;ui-viewport-change {#ui-viewport-change}
+### Aue&amp;Doppelpunkt;ui-viewport-change {#ui-viewport-change}
 
 Das Ereignis `aue:ui-viewport-change` wird ausgelöst, wenn die Viewport-Größe geändert wird.
 
@@ -219,7 +219,7 @@ Die Payload sind die Dimensionen des Viewports.
 }
 ```
 
-### Aue&Doppelpunkt;initialisiert {#initialized}
+### Aue&amp;Doppelpunkt;initialisiert {#initialized}
 
 Das Ereignis `aue:initialized` wird ausgelöst, um der Remote-Seite mitzuteilen, dass sie erfolgreich im universellen Editor geladen wurde.
 
@@ -229,6 +229,39 @@ Die Payload für dieses Ereignis ist leer.
 {
     details: {}
 }
+```
+
+### Aue&amp;Doppelpunkt;Navigation {#navigate}
+
+Die CORS-Bibliothek des universellen Editors (`@aem-sites/universal-editor-cors`) sendet ein abbrechbares `aue:navigate`-Ereignis, bevor die Navigation an die Shell des universellen Editors weitergeleitet wird.
+
+Die Payload ist die URL des Navigationsziels.
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+Dieses Ereignis ermöglicht Seitenskripten Folgendes:
+
+* **Ändern** Sie die Navigations-URL (z. B. fügen Sie `.html` Erweiterung an), indem Sie `event.detail.href` ändern.
+* **Abbrechen** Navigation vollständig über `event.preventDefault()`.
+
+Beispielverwendung:
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
 ```
 
 ## Fallback-Ereignis-Listener {#fallback-listeners}
