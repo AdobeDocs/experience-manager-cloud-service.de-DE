@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 96e80f49c6e01a266aa5cf1a69cd67045277c8c6
+source-git-commit: 71d514b2eaf83732cc0856f6b508ab814fe7f469
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 68%
+source-wordcount: '1426'
+ht-degree: 53%
 
 ---
 
@@ -22,11 +22,11 @@ Edge Delivery Services ist ein zusammenstellbarer Satz von Services, der eine ho
 
 Sie können sowohl das AEM-Content-Management und WYSIWYG-Authoring mit dem universellen Editor als auch das dokumentenbasierte Authoring verwenden.
 
-Mit Cloud Manager in AEM as a Cloud Service können Sie Edge Delivery Services für Ihr Projekt aktivieren.
+Mit Cloud Manager in AEM as a Cloud Service können Sie den Edge Delivery-Service für Ihr Projekt aktivieren.
 
 >[!TIP]
 >
->Weitere Informationen zu Edge Delivery Services und zur Verwendung mit AEM finden Sie unter [Überblick über Edge Delivery Services](/help/edge/overview.md).
+>Weitere Informationen zu Edge Delivery Services und zur Verwendung mit AEM finden Sie unter [Überblick über Edge Delivery Services](/help/edge/overview.md#how-does-it-work).
 
 ## Über Edge Delivery Services in Cloud Manager {#edge-in-cloud-manager}
 
@@ -34,11 +34,33 @@ Wenn Sie Edge Delivery Services als Teil von Adobe Experience Manager Sites lize
 
 Darüber hinaus steht Ihnen ein einheitliches Erlebnis bei der Verwaltung aller AEM-Eigenschaften offen, bei gleichzeitiger Konsistenz wichtiger Workflows. Diese Workflows umfassen die Verwaltung von Domain-Namen, SSL-Zertifikaten und CDN-Zuordnungen.
 
+Cloud Manager bietet zwei Bereitstellungstypen für Edge Delivery Services im von Adobe verwalteten CDN mit unterschiedlichen Funktionen. [Weitere Informationen](#edge-delivery-deployment-options)
+
+>[!NOTE]
+>
+>Edge Delivery Services kann auch mithilfe der Konfigurations-Pipeline und der Ursprungsauswahl in bestehende AEM Sites as a Cloud Service-Umgebungen integriert werden. Weitere Informationen finden Sie unter [Proxys für Edge Delivery Services](/help/implementing/dispatcher/cdn-configuring-traffic.md#proxying-to-edge-delivery) und [Einrichten eines Proxys aus einer bestehenden Umgebung](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment).
+
+## Edge Delivery Services-Bereitstellungsoptionen im von Adobe verwalteten CDN {#edge-delivery-deployment-options}
+
+Es gibt zwei Bereitstellungstypen für Edge Delivery Services im von Adobe verwalteten CDN:
+
+1. **Mit einer bestehenden AEMaaCS-Umgebung** - Richten Sie einen HTTP-Proxy aus einer bestehenden AEM Sites as a Cloud Service-Umgebung ein. Dieser Ansatz wird in der Regel verwendet, wenn Sie bereits über eine bestehende Umgebung verfügen und einen Teil einer Site nach Edge Delivery Services migrieren möchten. Siehe [Einrichten eines Proxys aus einer vorhandenen Umgebung](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment).
+
+1. **Ohne bestehende AEMaaCS-Umgebung (Edge-Umgebung)** - Richten Sie eine neue Edge Delivery-Site unabhängig von einer AEM Sites as a Cloud Service-Umgebung ein. Dieser Ansatz wird verwendet, wenn Sie keine AEM-Autoren- oder Veröffentlichungsumgebung haben und Edge Delivery Services allein verwenden möchten. Siehe [Einrichten einer Edge Delivery-Site ohne vorhandene Umgebung](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment).
+
+Diese beiden Optionen bieten auch verschiedene Funktionen:
+
+* **Konfigurations-**) ist für AEM as a Cloud Service-Umgebungen verfügbar.
+* **Konfigurations-Pipeline** ist derzeit nur über das eingeschränkte Beta-Programm für Edge-Umgebungen verfügbar.
+
+Vollständige Einrichtungsanweisungen finden Sie unter [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)
+
+
 ## Über Edge Delivery Services mit AEM-Authoring (Beta) {#eds-aem-authoring}
 
 >[!NOTE]
 >
->Die hier beschriebenen Funktionen der flexiblen Veröffentlichungsebene und des AEM-Authoring-Crosswalk befinden sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebenen Funktionen der flexiblen Veröffentlichungsebene und des AEM-Authoring-Crosswalk befinden sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Moderne Web-Erlebnisse erfordern eine leistungsstarke Bereitstellung, aber viele Unternehmen verlassen sich auch auf etablierte AEM-Authoring-Workflows, Governance und Muster für die Wiederverwendung von Inhalten. Um Ihre Teams bei der Modernisierung des Versands zu unterstützen, ohne das Authoring zu unterbrechen, führt Cloud Manager Funktionen ein, die Ihnen Folgendes ermöglichen:
 
@@ -74,8 +96,10 @@ Durch die Aktivierung der Veröffentlichungsebene nur bei Bedarf können Teams U
 Maximieren Sie die Vorteile, die Ihnen Adobe bietet, indem Sie über Cloud Manager auf Ihre Edge Delivery Services-Lizenz zugreifen und diese nutzen. Dadurch profitieren Sie von verschiedenen wichtigen Vorzügen.
 
 * [Verwenden Sie Ihre Lizenz für das von Ihnen gewünschte Programm](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) oder [aktualisieren Sie andere Programme](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md) oder beides.
+* [Verwenden Sie ein externes Git-Repository](/help/implementing/cloud-manager/managing-code/external-repositories.md) (bringen Sie Ihr eigenes Git mit), um Ihren Edge Delivery Services-Site-Code zu synchronisieren und bereitzustellen. Um diese Funktion nutzen zu können, müssen Sie zunächst [Ihre Site in Cloud Manager integrieren](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) <!-- NEW from CQDOC-22867 -->
+* [Verwenden Sie die Edge Delivery Config](/help/implementing/dispatcher/cdn-configuring-traffic.md)Pipeline, um in Adobe verwaltete CDN-Einstellungen für Ihre Edge Delivery-Site zu konfigurieren, indem Sie Regeln wie Traffic-Filter, Herkunftsselektoren und Umleitungen definieren. <!-- NEW from CQDOC-22867 -->
 * Nutzen Sie die Vorteile des [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/)-Prinzips bei der Ausführung von CRUD-Vorgängen, also beim Erstellen, Lesen, Aktualisieren und Löschen.
-* [Zugriff auf SLA-Berichte](/help/implementing/cloud-manager/reports/report-sla.md)
+* [Zugriff auf SLA-](/help/implementing/cloud-manager/reports/report-sla.md).
 * [Nutzen Sie den Adobe-Support](/help/edge/overview.md#support-ticket) für Ihre registrierten Produktionsprogramme.
 
 Wenn Sie über eine Edge Delivery Services (EDS)-Lizenz verfügen, können Sie ein von [Adobe verwaltetes CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) für Ihre Edge Delivery-Site verwenden. Dies ermöglicht die Self-Service-CDN-Verwaltung und DV-Zertifikate, die automatisch alle drei Monate erneuert werden, es sei denn, Sie löschen das Zertifikat.
@@ -123,7 +147,7 @@ Die **Aufgabenliste von Edge Delivery** in Cloud Manager ist eine Checkliste fü
 | 8 | Einrichten der Push-Validierung | Weitere Informationen finden Sie unter [Einrichten der Push-Validierung für eine Edge Delivery-Site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Live-Schaltung | Weitere Informationen finden Sie unter [Checkliste für die Live-Schaltung](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441570?captions=ger&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Einreichen eines Support-Tickets {#eds-support-ticket}
 
