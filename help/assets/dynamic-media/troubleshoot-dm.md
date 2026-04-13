@@ -6,10 +6,10 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 96%
+source-wordcount: '1260'
+ht-degree: 87%
 
 ---
 
@@ -200,7 +200,7 @@ Gehen Sie in CRXDE Lite wie folgt vor:
 1. Navigieren Sie zum `<sync-folder>/_CSS/_OOTB`-Ordner im Synchronisierungsordner für Dynamic Media (z. B. `/content/dam/_CSS/_OOTB`).
 1. Suchen Sie den Metadaten-Knoten des problematischen Assets (z. B. `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Prüfen Sie, ob die Eigenschaften `dam:scene7*` vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, sehen Sie, dass für `dam:scene7FileStatus` der Wert **PublishComplete** festgelegt ist.
-1. Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufragen, indem Sie die Werte der folgenden Eigenschaften und Zeichenfolgen verketten:
+1. Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufordern, indem Sie die Werte der folgenden Eigenschaften und Zeichenfolgenliterale verketten:
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -220,6 +220,34 @@ Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchron
 1. Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.
 1. Nehmen Sie keine Änderungen vor und klicken Sie auf **Speichern**.
 Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.
+
+### Problem: Fehler #2046 beim Öffnen der Registerkarte „Bandbreite und Speicher“ {#error-2046-bandwidth-storage}
+
+**Vorgehensweise beim Debugging**
+
+![Fehler #2046 auf der Registerkarte „Bandbreite und Speicher“ in Dynamic Media Classic angezeigt](assets/2046-error.png)
+
+* Benutzer stoßen beim Öffnen der Registerkarte „Bandbreite und Speicher“ im Dynamic Media Classic (Scene7)-Desktop-Programm auf #2046.
+* Das Problem wird durch ein abgelaufenes digitales Signaturzertifikat in einer zwischengespeicherten RSL (Runtime Shared Library) verursacht, die vom Adobe AIR-Framework verwendet wird.
+* Der Fehler tritt während der erneuten lokalen Zertifikatüberprüfung auf.
+
+**Lösung**
+
+Löschen Sie den lokalen Cache, um Adobe AIR zu zwingen, die aktualisierte RSL (Runtime Shared Library) herunterzuladen.
+
+**macOS**
+
+1. Gehen Sie zu:
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. Löschen Sie alle `.swz` und `.heu` Dateien.
+
+**Windows**
+
+1. Gehen Sie zu:
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. Löschen Sie alle Dateien im Ordner .
+
+Starten Sie die Anwendung neu, nachdem Sie den Cache gelöscht haben.
 
 ### Problem: Die Bildvorschau wird beim Bearbeiten von Viewer-Vorgaben nicht geladen {#image-preview-not-loading}
 
