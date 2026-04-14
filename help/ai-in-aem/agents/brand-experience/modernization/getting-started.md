@@ -4,9 +4,9 @@ description: Lernen Sie die ersten Schritte kennen, um mit dem Experience Modern
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4b1da46f6739f43d38bc05584c246371340a966
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Erfahren Sie mehr über die ersten Schritte mit dem Experience Modernization Age
 
 >[!NOTE]
 >
->Verwenden eines AEM Sites- und universellen Editor-Projekts? Führen [&#x200B; die Einrichtungsschritte unter „Erste Schritte mit dem AEM Sites](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)universellen Editor“ aus.
+>Verwenden eines AEM Sites- und universellen Editor-Projekts? Führen [ die Einrichtungsschritte unter „Erste Schritte mit dem AEM Sites](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)universellen Editor“ aus.
 
 1. Wählen Sie ein [Edge Delivery Services](/help/edge/overview.md)-Repository zur Verwendung mit der Experience Modernization Console aus.
    * Dabei kann es sich um ein bestehendes Edge Delivery Services-Projekt handeln. Sie können aber auch nach dem [Entwickler-Tutorial](https://www.aem.live/developer/tutorial) ein neues erstellen, indem Sie das [Textbausteinrepository“ verwenden.](https://github.com/adobe/aem-boilerplate)
@@ -84,7 +84,7 @@ Jetzt haben Sie sowohl den Inhalt als auch die Stile in die Konsole importiert.
 
 >[!TIP]
 >
->Wenn Sie an einem AEM Sites- und einem universellen Editor-Projekt arbeiten, funktioniert das Hochladen von Inhalten in AEM etwas anders. Spezifische Upload-[&#x200B; finden Sie unter „Erste Schritte mit dem Experience Modernization Agent für AEM Sites/Universal Editor &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content)&quot;.
+>Wenn Sie an einem AEM Sites- und einem universellen Editor-Projekt arbeiten, funktioniert das Hochladen von Inhalten in AEM etwas anders. Spezifische Upload-[ finden Sie unter „Erste Schritte mit dem Experience Modernization Agent für AEM Sites/Universal Editor ](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content)&quot;.
 
 So laden Sie Ihre Inhalte in [Dokumenterstellung](https://da.live) hoch:
 
@@ -142,6 +142,16 @@ Herzlichen Glückwunsch! Ihre migrierten Inhalte und Stile sind jetzt in der AEM
 ![Veröffentlichte Vorschauinhalte](assets/published-preview.png)
 
 Wenn Sie den Code an eine andere Verzweigung als `main` gepusht haben, werden die Stile in der aus der Dokumenterstellung geöffneten Vorschau nicht angezeigt. Wechseln Sie zur Verzweigung, indem Sie die URL der Vorschau aktualisieren, damit Ihre Stile angezeigt werden.
+
+## Fehlerbehebung {#troubleshooting}
+
+### Zulassungsliste von IP-Adressen {#allowlist-ip-addresses}
+
+Wenn sich Ihre Site hinter einer Firewall oder Zugriffsbeschränkungen befindet, können Sie die folgenden IP-Adressen ändern, damit die Backend-Services Ihre Site durchsuchen können:
+
+* `34.228.136.112`
+* `54.90.51.39`
+* `3.224.194.242`
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
