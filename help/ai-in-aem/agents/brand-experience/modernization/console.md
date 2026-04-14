@@ -4,9 +4,9 @@ description: Referenzhandbuch für die Benutzeroberfläche und die Funktionen de
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Referenzhandbuch für die Benutzeroberfläche und die Funktionen der Experience 
 >
 >Wenn Sie an der Verwendung der Experience Modernization Console interessiert sind, können Sie Zugriff anfordern, um ein reibungsloses Onboarding-Erlebnis zu gewährleisten.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Experience Modernization Console ist eine gehostete, KI-unterstützte Entwicklungsumgebung für Edge Delivery Services, die als Web-Oberfläche unter [`aemcoder.adobe.io` bereitgestellt wird.](https://aemcoder.adobe.io) Nachdem Sie eine Verbindung zu ihrem GitHub-Projekt hergestellt haben, können Sie sofort damit beginnen, Änderungen in natürlicher Sprache einzufordern, ohne dass Sie weitere Einrichtungs- oder lokale Umgebungskonfigurationen durchführen müssen.
 
@@ -43,7 +43,7 @@ Die Entwickler behalten die volle Kontrolle darüber, was ausgeliefert wird. All
 
 ## Navigation {#navigation}
 
-Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen &#x200B;](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
+Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen ](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
 
 ![Startbildschirm der Konsole](assets/console-home.png)
 
@@ -157,12 +157,18 @@ Beim Pushen von Änderungen müssen Sie zunächst gestaffelte Änderungen in die
 
 ## Einstellungsansicht {#settings-view}
 
-Mit der Einstellungsansicht können Sie die grundlegenden Einstellungen der Konsole verwalten.
+Die Einstellungsansicht ermöglicht die Verwaltung der grundlegenden Einstellungen der Konsole und ist in die folgenden Abschnitte unterteilt.
 
 ![Einstellungsansicht](assets/settings-view.png)
 
+Wenn Sie einen Wert in einem der Abschnitte ändern, klicken Sie auf **Speichern**, um diese Änderungen im jeweiligen Abschnitt zu speichern.
+
 * **Projekt** ermöglicht Ihnen das Anzeigen und Bearbeiten von Projekteinstellungen, z. B. das Anpassen der Bibliotheks-URL.
-* **Support** ermöglicht es Ihnen, Hilfe vom AEM-Supportteam anzufordern.
+   * **Bibliotheks-URL** - Diese URL verweist auf eine Datei „library.json“, die verfügbare Blöcke, ihre Varianten und Beispielinhalte definiert.
+   * **Site-Basis-URL** - Die Ursprungs-URL der migrierten Website
+* **Agentenberechtigungen** - Zulassen, dass der Agent auf Konfigurationsoptionen zugreift
+   * **Zulassen, dass LLM in meinem Namen auf admin.hlx.page zugreift** - Wenn diese Option aktiviert ist, kann der KI-Assistent Site-Konfigurationen und Metadaten mithilfe Ihrer IMS-Anmeldeinformationen aus Adobe Experience Manager abrufen.
+   * **Benutzerdefiniertes IMS-Token** - Sie können ein benutzerdefiniertes IMS-Token bereitstellen, das anstelle Ihres standardmäßigen Sitzungs-Tokens verwendet werden soll.
 * **Anmeldeinformationen** ermöglicht es Ihnen, ein persönliches Zugriffstoken für Figma anzugeben, damit die [Konsole auf Designblöcke für Ihr Projekt zugreifen kann.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * Das Token erfordert die folgenden schreibgeschützten Bereiche:
       * `file_content:read`
@@ -172,5 +178,8 @@ Mit der Einstellungsansicht können Sie die grundlegenden Einstellungen der Kons
       * `team_library_content:read`
       * `file_dev_resources:read`
       * `projects:read`
-   * [Weitere Informationen zum Einrichten persönlicher Zugriffstoken finden Sie &#x200B;](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) der Figma-Dokumentation .
-* **Arbeitsbereich zurücksetzen** setzt die Konsole auf ihren Startstatus zurück und alle nicht gepushten oder nicht hochgeladenen Änderungen gehen verloren.
+   * [Weitere Informationen zum Einrichten persönlicher Zugriffstoken finden Sie ](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) der Figma-Dokumentation .
+* **Support** fasst Informationen zusammen, die bei einer Support-Anfrage an das Adobe-Supportteam weitergegeben werden.
+   * **Support anfordern** - Klicken Sie hier, um eine Support-Anfrage von Adobe zu starten, ohne die Konsole zu verlassen.
+* **Gefahrenbereich** enthält Einstellungen, die Ihren Arbeitsbereich zurücksetzen können.
+   * **Arbeitsbereich zurücksetzen** - Klicken Sie darauf, um den Arbeitsbereich auf den Ausgangszustand zurückzusetzen. Dies kann nicht rückgängig gemacht werden.
