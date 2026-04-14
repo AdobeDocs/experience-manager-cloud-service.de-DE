@@ -43,7 +43,7 @@ Die Entwickler behalten die volle Kontrolle darüber, was ausgeliefert wird. All
 
 ## Navigation {#navigation}
 
-Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen ](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
+Nach der Anmeldung bei der Konsole unter [`aemcoder.adobe.io` gelangen &#x200B;](https://aemcoder.adobe.io) zum Startbildschirm der Konsole.
 
 ![Startbildschirm der Konsole](assets/console-home.png)
 
@@ -178,7 +178,7 @@ Wenn Sie einen Wert in einem der Abschnitte ändern, klicken Sie auf **Speichern
       * `team_library_content:read`
       * `file_dev_resources:read`
       * `projects:read`
-   * [Weitere Informationen zum Einrichten persönlicher Zugriffstoken finden Sie ](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) der Figma-Dokumentation .
+   * [Weitere Informationen zum Einrichten persönlicher Zugriffstoken finden Sie &#x200B;](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) der Figma-Dokumentation .
 * **Support** fasst Informationen zusammen, die bei einer Support-Anfrage an das Adobe-Supportteam weitergegeben werden.
    * **Support anfordern** - Klicken Sie hier, um eine Support-Anfrage von Adobe zu starten, ohne die Konsole zu verlassen.
 * **Gefahrenbereich** enthält Einstellungen, die Ihren Arbeitsbereich zurücksetzen können.
