@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung aktivi
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: ec259b3ec1b420140e45e0eb279fe867fc996113
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 67%
+source-wordcount: '1420'
+ht-degree: 66%
 
 ---
 
@@ -29,7 +29,7 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 
 * Reduziert die Anzahl der Duplikate – verbessert die Integrität der Assets. Duplikate sind in ordnerbasierten Berechtigungen erforderlich, wenn dieselben Assets für verschiedene Gruppen freigegeben werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475423/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Wie wird die attributbasierte Zugriffssteuerung aktiviert? {#enable-attribute-based-access-control}
 
@@ -41,6 +41,10 @@ Klicken Sie auf **Tabelle herunterladen**, um Regeln in einer Tabelle herunterzu
 
 
 Definieren Sie Regeln in der Tabelle anhand der in diesem Artikel definierten Richtlinien.
+
+>[!IMPORTANT]
+>
+>Mit dem [AEM Governance Agent können Sie auch attributbasierte Zugriffssteuerungsregeln ](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-content-hub).
 
 <!--
 
