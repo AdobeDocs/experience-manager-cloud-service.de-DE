@@ -44,7 +44,7 @@ Definieren Sie Regeln in der Tabelle anhand der in diesem Artikel definierten Ri
 
 >[!IMPORTANT]
 >
->Mit dem [AEM Governance Agent können Sie auch attributbasierte Zugriffssteuerungsregeln ](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-content-hub).
+>Mit dem [AEM Governance Agent können Sie auch attributbasierte Zugriffssteuerungsregeln &#x200B;](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-content-hub).
 
 <!--
 
