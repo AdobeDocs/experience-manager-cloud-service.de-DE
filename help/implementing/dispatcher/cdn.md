@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das AEM-verwaltete CDN verwenden und wie Sie 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
+source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 96%
+source-wordcount: '1786'
+ht-degree: 94%
 
 ---
 
@@ -91,11 +91,11 @@ Wenn Kundinnen oder Kunden ihr bestehendes CDN (oder jede Art von Reverse-Proxy,
 
 Konfigurationsanweisungen:
 
-1. Verweisen Sie in Ihrem CDN auf den Eingang des Adobe-CDN als Ursprungs-Domain. Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Verweisen Sie in Ihrem CDN auf den Eingang des Adobe-CDN als Ursprungs-Domain. Zum Beispiel: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Setzen Sie die SNI auf den Eingang des Adobe CDN.
 1. Legen Sie die Host-Kopfzeile auf die Ursprungs-Domain fest. Beispiel: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Legen Sie die Kopfzeile `X-Forwarded-Host` mit dem Domain-Namen fest, damit AEM die Host-Kopfzeile ermitteln kann. Beispiel: `X-Forwarded-Host:example.com`.
-1. Satz `X-AEM-Edge-Key`. Der Wert sollte mithilfe einer Cloud Manager-Konfigurations-Pipeline konfiguriert werden, wie in [diesem Artikel](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value) beschrieben.
+1. Satz `X-AEM-Edge-Key`. Der Wert sollte zuerst mithilfe einer Cloud Manager-Konfigurations-Pipeline konfiguriert werden. Anschließend sollte derselbe Edge-Schlüssel im Kunden-CDN konfiguriert werden, wie in [diesem Artikel](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value) beschrieben.
 
    * Erforderlich, damit das Adobe-CDN die Quelle der Anfragen validieren und die `X-Forwarded-*`-Header an die AEM-Applikation weitergeben kann. Beispielsweise wird `X-Forwarded-For` verwendet, um die Client-IP zu bestimmen. Somit liegt es in der Verantwortung des vertrauenswürdigen Aufrufers (d. h. des kundenseitig verwalteten CDN), die Korrektheit der `X-Forwarded-*`-Header sicherzustellen (siehe Hinweis unten).
    * Optional kann der Zugriff auf den Eingang zum Adobe CDN blockiert werden, wenn kein `X-AEM-Edge-Key` vorhanden ist. Bitte informieren Sie Adobe, wenn Sie direkten Zugriff auf den Eingang zum Adobe-CDN benötigen (der blockiert werden soll).
@@ -163,7 +163,7 @@ Dieser Prozess ermöglicht die Überprüfung von Details wie den Host-Werten, de
 >Sie können eine schnelle Entwicklungsumgebung (RDE) verwenden, um Ihre Konfiguration bereitzustellen und zu testen:
 >
 >* [Schnelle Entwicklungsumgebung](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Verwenden der schnellen Entwicklungsumgebung](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Beispielkonfigurationen von CDN-Anbietern {#sample-configurations}
 
