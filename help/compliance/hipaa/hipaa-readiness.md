@@ -37,7 +37,7 @@ Unter HIPAA ist eine abgedeckte Stelle ein Gesundheitsdienstleister, ein Gesundh
 
 ### Bereitstellen von PHI für Adobe {#providing-phi-to-adobe}
 
-Adobe fungiert als Business Associate für seine HIPAA-fähigen Services, die unter [HIPAA-Bereitschaft von Services in AEM as a Cloud Service&quot; aufgeführt ](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
+Adobe fungiert als Business Associate für seine HIPAA-fähigen Services, die unter [HIPAA-Bereitschaft von Services in AEM as a Cloud Service&quot; aufgeführt &#x200B;](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
 
 Kunden, die einen Adobe HIPAA-fähigen Service zur Verarbeitung von PHI lizenzieren **müssen** über die richtige Lizenz verfügen und einen unterzeichneten BAA mit Adobe besitzen.
 
@@ -115,7 +115,7 @@ Beim Kauf von Extended Security for Healthcare besteht die Anforderung, dass:
 * Für jedes Produkt wurde ein erweiterter Schutz für *erworben* wodurch eine ausreichende Anzahl von Cloud Manager-Credits sichergestellt wird.
 * Erweiterte Sicherheit für das Gesundheitswesen wird zum Zeitpunkt der Programmerstellung angewendet.
 
-Wenn die Anforderungen erfüllt sind, kann die erweiterte Sicherheit für das Gesundheitswesen bei der Erstellung des AEM-Programms angewendet werden. Weitere Informationen finden [ unter &quot;](#setup)&quot;.
+Wenn die Anforderungen erfüllt sind, kann die erweiterte Sicherheit für das Gesundheitswesen bei der Erstellung des AEM-Programms angewendet werden. Weitere Informationen finden [&#x200B; unter &quot;](#setup)&quot;.
 
 >[!NOTE]
 >
