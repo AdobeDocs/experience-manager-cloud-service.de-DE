@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Open ID Connect (OIDC) für AEM as a Cloud Se
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
+source-git-commit: 70687e4f2ea0df923e44237bc20635745c46323a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 66%
+source-wordcount: '2610'
+ht-degree: 53%
 
 ---
 
@@ -195,7 +195,303 @@ Schließlich müssen Sie das externe Anmeldemodul konfigurieren.
 
 ### Optional: Implementieren eines benutzerdefinierten UserInfoProcessor {#implement-a-custom-userinfoprocessor}
 
-Benutzende werden durch ein ID-Token authentifiziert und zusätzliche Attribute werden in dem für den IDP definierten `userInfo`-Endpunkt abgerufen. Wenn zusätzliche, nicht standardmäßige Vorgänge ausgeführt werden müssen, ist eine benutzerdefinierte Implementierung von [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) die Standardimplementierung von Sling.
+Der Benutzer wird durch ein ID-Token authentifiziert und zusätzliche Attribute werden von dem für die ID definierten `userInfo`-Endpunkt abgerufen. Der `UserInfoProcessor` ist für die Umwandlung der vom Identitätsanbieter empfangenen Daten in Anmeldeinformationen und Attribute verantwortlich, die AEM für die Benutzersynchronisierung verwenden kann.
+
+#### Erstellen eines benutzerdefinierten UserInfoProcessor {#when-to-create-custom-userinfoprocessor}
+
+Der standardmäßige [SlingUserInfoProcessorImpl](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) verarbeitet OIDC-Standardansprüche und Gruppensynchronisierung. Möglicherweise benötigen Sie eine benutzerdefinierte Implementierung, wenn Sie Folgendes tun müssen:
+
+* Extrahieren und Verarbeiten von benutzerdefinierten Ansprüchen aus der ID-Token- oder UserInfo-Antwort
+* Umwandeln oder Zuordnen von Ansprüchen in verschiedene Attributnamen
+* Implementieren einer benutzerdefinierten Logik für die Gruppenextraktion aus verschachtelten Ansprüchen
+* Hinzufügen zusätzlicher Benutzerattribute, die nicht Teil des standardmäßigen OIDC-Profils sind
+* Verarbeiten von Zugriffstoken oder Aktualisieren von Token für bestimmte Anwendungsfälle
+* Integration mit externen Systemen zur Anreicherung von Benutzerdaten während der Authentifizierung
+
+#### Grundlegendes zur Benutzeroberfläche von UserInfoProcessor {#understanding-userinfoprocessor-interface}
+
+Die `UserInfoProcessor` aus dem `org.apache.sling.auth.oauth_client.spi` definiert zwei Methoden:
+
+```java
+public interface UserInfoProcessor {
+    /**
+     * Process the UserInfo and token response to create OIDC credentials
+     *
+     * @param userInfo - JSON response from the UserInfo endpoint (may be null)
+     * @param tokenResponse - JSON response from the token endpoint
+     * @param oidcSubject - The subject claim from the ID token
+     * @param idp - The configured IDP name
+     * @return OidcAuthCredentials containing user attributes and group memberships
+     */
+    @NotNull OidcAuthCredentials process(
+        @Nullable String userInfo,
+        @NotNull String tokenResponse,
+        @NotNull String oidcSubject,
+        @NotNull String idp
+    );
+
+    /**
+     * @return The name of the OIDC connection this processor is associated with
+     */
+    @NotNull String connection();
+}
+```
+
+Mit dem zurückgegebenen `OidcAuthCredentials` können Sie:
+* Benutzerattribute über `setAttribute(key, value)` festlegen - diese werden basierend auf den `DefaultSyncHandler` Eigenschaftenzuordnungen synchronisiert
+* Hinzufügen von Gruppenmitgliedschaften über `addGroup(groupName)` : Diese Gruppen werden in AEM erstellt/synchronisiert
+
+#### Beispiel: Benutzerdefinierte UserInfoProcessor-Implementierung {#custom-userinfoprocessor-implementation}
+
+Im Folgenden finden Sie ein vollständiges Beispiel für die Implementierung eines benutzerdefinierten `UserInfoProcessor`:
+
+```java
+package com.mycompany.aem.auth;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
+import org.apache.sling.auth.oauth_client.spi.OidcAuthCredentials;
+import org.apache.sling.auth.oauth_client.spi.UserInfoProcessor;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.metatype.annotations.AttributeDefinition;
+import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+/**
+ * Custom UserInfoProcessor that extracts additional claims from the ID token
+ * and adds custom user attributes and group memberships.
+ */
+@Component(service = UserInfoProcessor.class, property = {"service.ranking:Integer=50"})
+@Designate(ocd = CustomUserInfoProcessor.Config.class, factory = true)
+public class CustomUserInfoProcessor implements UserInfoProcessor {
+
+    private static final Logger logger = LoggerFactory.getLogger(CustomUserInfoProcessor.class);
+
+    @ObjectClassDefinition(name = "Custom UserInfo Processor")
+    @interface Config {
+        @AttributeDefinition(name = "Connection Name", description = "OIDC Connection Name")
+        String connection();
+    }
+
+    private final String connection;
+
+    @Activate
+    public CustomUserInfoProcessor(Config config) {
+        this.connection = config.connection();
+        logger.info("CustomUserInfoProcessor activated for connection: {}", connection);
+    }
+
+    @Override
+    public @NotNull OidcAuthCredentials process(
+            @Nullable String userInfo,
+            @NotNull String tokenResponse,
+            @NotNull String oidcSubject,
+            @NotNull String idp) {
+
+        // Parse the token response to extract tokens
+        JsonObject tokenJson = JsonParser.parseString(tokenResponse).getAsJsonObject();
+        String accessToken = tokenJson.has("access_token") ?
+            tokenJson.get("access_token").getAsString() : null;
+        String idToken = tokenJson.has("id_token") ?
+            tokenJson.get("id_token").getAsString() : null;
+
+        logger.debug("Processing authentication for subject: {}", oidcSubject);
+
+        // Decode and extract claims from ID Token
+        JsonObject claims = null;
+        if (idToken != null) {
+            claims = decodeJwtPayload(idToken);
+            logger.debug("Extracted claims from ID token: {}", claims);
+        }
+
+        // Create credentials object
+        OidcAuthCredentials credentials = new OidcAuthCredentials(oidcSubject, idp);
+        credentials.setAttribute(".token", "");
+
+        // Extract standard profile attributes
+        if (claims != null) {
+            // Standard OIDC claims
+            setAttributeIfPresent(credentials, claims, "given_name", "profile/given_name");
+            setAttributeIfPresent(credentials, claims, "family_name", "profile/family_name");
+            setAttributeIfPresent(credentials, claims, "email", "profile/email");
+            setAttributeIfPresent(credentials, claims, "name", "profile/name");
+
+            // Custom claims from your IdP
+            setAttributeIfPresent(credentials, claims, "department", "profile/department");
+            setAttributeIfPresent(credentials, claims, "employee_id", "profile/employeeId");
+            setAttributeIfPresent(credentials, claims, "job_title", "profile/jobTitle");
+        }
+
+        // Extract group memberships from claims
+        if (claims != null && claims.has("groups")) {
+            if (claims.get("groups").isJsonArray()) {
+                claims.get("groups").getAsJsonArray().forEach(group -> {
+                    credentials.addGroup(group.getAsString());
+                });
+            }
+        }
+
+        // Optionally store tokens if needed for later API calls
+        // Note: Only store tokens if your application needs to call external APIs
+        // on behalf of the user. Tokens are encrypted before storage.
+        if (accessToken != null) {
+            credentials.setAttribute("access_token", accessToken);
+        }
+
+        return credentials;
+    }
+
+    @Override
+    public @NotNull String connection() {
+        return connection;
+    }
+
+    /**
+     * Helper method to set attribute if present in claims
+     */
+    private void setAttributeIfPresent(OidcAuthCredentials credentials,
+                                      JsonObject claims,
+                                      String claimName,
+                                      String attributeName) {
+        if (claims.has(claimName) && !claims.get(claimName).isJsonNull()) {
+            String value = claims.get(claimName).getAsString();
+            if (value != null && !value.isEmpty()) {
+                credentials.setAttribute(attributeName, value);
+            }
+        }
+    }
+
+    /**
+     * Decode JWT payload (middle part) to extract claims
+     */
+    private JsonObject decodeJwtPayload(String jwt) {
+        try {
+            String[] parts = jwt.split("\\.");
+            if (parts.length != 3) {
+                logger.warn("Invalid JWT format");
+                return null;
+            }
+
+            // Decode the payload (second part)
+            String payload = parts[1];
+            // Add padding if needed
+            payload = payload + "====".substring(0, (4 - payload.length() % 4) % 4);
+            // Replace URL-safe characters
+            payload = payload.replace('-', '+').replace('_', '/');
+
+            byte[] decoded = Base64.getDecoder().decode(payload);
+            String json = new String(decoded, StandardCharsets.UTF_8);
+            return JsonParser.parseString(json).getAsJsonObject();
+        } catch (Exception e) {
+            logger.error("Failed to decode JWT payload", e);
+            return null;
+        }
+    }
+}
+```
+
+#### Konfiguration {#custom-userinfoprocessor-configuration}
+
+Erstellen Sie unter eine Konfigurationsdatei für Ihre benutzerdefinierte `UserInfoProcessor` in Ihrem AEM-Projekt`ui.config/src/main/content/jcr_root/apps/myapp/osgiconfig/config.publish/`
+
+**com.mycompany.aem.auth.CustomUserInfoProcessor~azure.cfg.json**
+
+```json
+{
+  "connection": "azure"
+}
+```
+
+Die Konfiguration muss mit dem Verbindungsnamen übereinstimmen, der in Ihrer `OidcConnectionImpl`-Konfiguration definiert ist. Die `service.ranking`-Eigenschaft in der `@Component` (im Beispiel auf `50` gesetzt) bestimmt die Priorität, wenn mehrere Prozessoren für dieselbe Verbindung registriert sind. Höhere Rankings haben Vorrang vor dem standardmäßigen `SlingUserInfoProcessorImpl` (der ein Ranking von `0` hat).
+
+#### Abhängigkeiten {#custom-userinfoprocessor-dependencies}
+
+Fügen Sie die folgenden Abhängigkeiten zum `pom.xml` Ihres Kernmoduls hinzu:
+
+```xml
+<dependency>
+    <groupId>org.apache.sling</groupId>
+    <artifactId>org.apache.sling.auth.oauth-client</artifactId>
+    <version>0.1.7</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.9</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+#### Synchronisieren von Attributen mit DefaultSyncHandler {#synchronizing-custom-attributes}
+
+Um sicherzustellen, dass Ihre benutzerdefinierten Attribute auf Benutzerknoten im JCR beibehalten werden, aktualisieren Sie Ihre `DefaultSyncHandler`-Konfiguration, um Eigenschaftszuordnungen einzuschließen:
+
+**org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json**
+
+```json
+{
+  "user.expirationTime": "1h",
+  "user.membershipExpTime": "1h",
+  "user.propertyMapping": [
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
+    "profile/email=profile/email",
+    "profile/department=profile/department",
+    "profile/employeeId=profile/employeeId",
+    "profile/jobTitle=profile/jobTitle",
+    "access_token=access_token"
+  ],
+  "user.pathPrefix": "azure",
+  "handler.name": "azure"
+}
+```
+
+Das Format lautet `jcrPropertyPath=credentialAttributeName`. Auf der linken Seite wird die Eigenschaft im Benutzerknoten unter `/home/users` gespeichert, und auf der rechten Seite wird der Attributname angezeigt, den Sie im `UserInfoProcessor` mithilfe von `credentials.setAttribute()` festgelegt haben.
+
+#### Bereitstellung und Tests {#custom-userinfoprocessor-deployment}
+
+1. **Erstellen und Bereitstellen** Ihres AEM-Projekts mit den benutzerdefinierten `UserInfoProcessor`:
+
+   ```bash
+   mvn clean install -PautoInstallPackage
+   ```
+
+2. **Registrierung überprüfen** in der OSGi-Konsole unter `/system/console/components`:
+   * Suchen Sie nach dem Namen der benutzerdefinierten Prozessorklasse
+   * Stellen Sie sicher, dass die Komponente aktiv und die Verbindungskonfiguration korrekt ist
+
+3. **Authentifizierungsfluss testen**:
+   * Zugreifen auf einen geschützten Pfad, der in Ihrem `OidcAuthenticationHandler` konfiguriert ist
+   * Überprüfen Sie nach erfolgreicher Authentifizierung den Benutzerknoten in CRXDE unter `/home/users/<prefix>/<username>`
+   * Überprüfen, ob benutzerdefinierte Attribute synchronisiert sind
+   * Gruppenmitgliedschaften unter &quot;`/home/groups`&quot; überprüfen
+
+4. **Debug-Protokollierung aktivieren** um Probleme zu beheben:
+
+   ```
+   Logger: com.mycompany.aem.auth
+   Log Level: DEBUG
+   ```
+
+#### Best Practices {#custom-userinfoprocessor-best-practices}
+
+* **Token-Speicher minimieren**: Speichern Sie nur Zugriffstoken oder Aktualisierungstoken, wenn Ihre Anwendung API-Aufrufe an externe Services im Namen von Benutzern durchführen muss. Token sind verschlüsselt, verursachen aber trotzdem zusätzlichen Aufwand.
+* **Ansprüche validieren**: Vor der Verarbeitung immer überprüfen, ob Ansprüche existieren und nicht null sind.
+* **Fehlerbehandlung**: Fehler ordnungsgemäß protokollieren, aber sicherstellen, dass der Authentifizierungsfluss auch dann abgeschlossen werden kann, wenn optionale Ansprüche fehlen.
+* **Leistung**: Die Verarbeitungslogik sollte möglichst schlank sein, da sie bei jeder Authentifizierung ausgeführt wird.
+* **Sicherheit**: Protokollieren Sie niemals vertrauliche Informationen wie vollständige Token oder Benutzerkennwörter. Verwenden Sie `substring()`, wenn Sie Token zum Debugging protokollieren.
+* **Testen**: Testen Sie mit verschiedenen Benutzerprofilen Ihrer IDp, um sicherzustellen, dass alle Anspruchsvarianten korrekt verarbeitet werden.
 
 ### Konfigurieren von ACL für externe Gruppen {#configure-acl-for-external-groups}
 
@@ -400,12 +696,12 @@ Wenn eine ungültige Umleitungs-URL angegeben wird, schlägt die Authentifizieru
 
 ## Migration vom SAML-Authentifizierungs-Handler zum OIDC-Authentifizierungs-Handler
 
-Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
+Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
 
 1. Konfigurieren Sie [OidcAuthenticationHandler](#configure-oidc-authentication-handler) und aktivieren Sie `idpNameInPrincipals` in der Konfiguration [SlingUserInfoProcessor](#configure-slinguserinfoprocessor).
 1. Einrichten [ACL für externe Gruppen](#configure-acl-for-external-groups).
 1. Nach der Anmeldung von Benutzern können die alten Benutzer, die vom SAML-Authentifizierungs-Handler erstellt wurden, gelöscht werden.
 
 >[!NOTE]
->Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
+>Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
 
