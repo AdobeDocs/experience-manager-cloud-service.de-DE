@@ -8,10 +8,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: adab3053853551b10a6f808782acf8f75ba7c1f7
 workflow-type: tm+mt
-source-wordcount: '2325'
-ht-degree: 99%
+source-wordcount: '2433'
+ht-degree: 93%
 
 ---
 
@@ -200,9 +200,13 @@ Um zu verstehen, wie man einen Standard-Fehler-Handler mit der Aktion [Aufrufdi
 1. Erstellen Sie eine Bedingung im Abschnitt **Wenn** der Regel. Zum Beispiel: **Wenn [der Name des Feldes Haustier-ID]** geändert wird. Die Auswahl wird aus der Dropdown-Liste **Status auswählen** geändert.
 1. Im Abschnitt **Dann** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **Aktion auswählen.**
 1. Wählen Sie einen **Post-Service** und die zugehörigen Datenbindungen aus dem Abschnitt **Eingabe**. Um zum Beispiel **Haustier-ID** zu validieren, wählen Sie einen **Post-Service** als **GET /pet/{petId}** und dann **Haustier-ID** im Abschnitt **Eingabe**.
-1. Wählen Sie die Datenbindungen aus dem Abschnitt **Ausgabe**. Wählen Sie **Haustiername** im Abschnitt **Ausgabe**.
-1. Wählen Sie **[!UICONTROL Standard-Fehler-Handler]** im Abschnitt **Fehler-Handler**.
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+1. Klicken Sie **[!UICONTROL Erfolgshandler hinzufügen]**. Der **[!UICONTROL Invoke Service Success Handler]**-Regeleditor wird geöffnet.
+1. Fügen Sie im Abschnitt **[!UICONTROL Dann]** eine Regel hinzu, um den Wert von **[!UICONTROL Haustiername]** mithilfe der Payload-Ereignisdaten auf **`name`** festzulegen.
+1. Klicken Sie **[!UICONTROL Fertig]**, um den Editor **[!UICONTROL Service Success Handler aufrufen]** zu schließen.
+1. Klicken Sie **[!UICONTROL Fehler-Handler hinzufügen]**. Der **[!UICONTROL Handler für Dienstfehler aufrufen]** Regeleditor wird geöffnet.
+1. Wählen Sie im **[!UICONTROL Dann]**-Abschnitt **[!UICONTROL Funktionsausgabe]** und wählen Sie **[!UICONTROL Standardfehler-Handler]**.
+1. Klicken Sie **[!UICONTROL Fertig]**, um den Editor **[!UICONTROL Service-Fehlerhandler aufrufen]** zu schließen.
+1. Klicken Sie **[!UICONTROL Fertig]**, um die Regel zu speichern.
 
 ![Hinzufügen eines Standard-Fehler-Handlers für Feldvalidierungsprüfungen in einem Formular](/help/forms/assets/default-error-handler.png)
 
@@ -310,12 +314,15 @@ So verwenden Sie einen benutzerdefinierten Fehler-Handler mit der Aktion **[!UIC
 1. Erstellen Sie eine Bedingung im Abschnitt **Wenn** der Regel. Wenn beispielsweise der **[Name des Felds „Haustier-ID“]** geändert wird, wählen Sie in der Dropdown-Liste **Status auswählen** die Option **wird geändert** aus.
 1. Im Abschnitt **Dann** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **Aktion auswählen.**
 1. Wählen Sie einen **Post-Service** und die zugehörigen Datenbindungen aus dem Abschnitt **Eingabe**. Um zum Beispiel **Haustier-ID** zu validieren, wählen Sie einen **Post-Service** als **GET /pet/{petId}** und dann **Haustier-ID** im Abschnitt **Eingabe**.
-1. Wählen Sie die Datenbindungen aus dem Abschnitt **Ausgabe**. Wählen Sie beispielsweise **Haustiername** im Abschnitt **Ausgabe**.
-1. Wählen Sie **[!UICONTROL Benutzerdefinierter Fehler-Handler]** im Abschnitt **[!UICONTROL Fehler-Handler]**.
-1. Klicken Sie auf **[!UICONTROL Fertig]**.
+1. Klicken Sie **[!UICONTROL Erfolgshandler hinzufügen]**. Der **[!UICONTROL Invoke Service Success Handler]**-Regeleditor wird geöffnet.
+1. Fügen Sie im Abschnitt **[!UICONTROL Dann]** eine Regel hinzu, um den Wert von **[!UICONTROL Haustiername]** mithilfe der Payload-Ereignisdaten auf **`name`** festzulegen.
+1. Klicken Sie **[!UICONTROL Fertig]**, um den Editor **[!UICONTROL Service Success Handler aufrufen]** zu schließen.
+1. Klicken Sie **[!UICONTROL Fehler-Handler hinzufügen]**. Der **[!UICONTROL Handler für Dienstfehler aufrufen]** Regeleditor wird geöffnet.
+1. Wählen Sie im **[!UICONTROL Dann]**-Abschnitt **[!UICONTROL Funktionsausgabe]** und wählen Sie **[!UICONTROL Benutzerdefinierte Fehler-Handler-Funktion]**.
+1. Klicken Sie **[!UICONTROL Fertig]**, um den Editor **[!UICONTROL Service-Fehlerhandler aufrufen]** zu schließen.
+1. Klicken Sie **[!UICONTROL Fertig]**, um die Regel zu speichern.
 
 ![Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem Formular, um Fehlerantworten zu verarbeiten](/help/forms/assets/custom-error-handler.png)
-
 
 Aufgrund dieser Regel werden die Werte, die Sie für **Haustier-ID** eingeben, bei der Validierung von **Haustiername** über einen externen Dienst überprüft, der über einen REST-Endpunkt aufgerufen wird. Wenn die auf der Datenquelle basierenden Validierungskriterien nicht erfüllt werden, werden die Fehlermeldungen auf Feldebene angezeigt.
 
