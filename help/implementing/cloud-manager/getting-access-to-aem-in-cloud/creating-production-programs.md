@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
+source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 67%
+source-wordcount: '1521'
+ht-degree: 66%
 
 ---
 
@@ -112,7 +112,7 @@ Die Registerkarte **Sicherheit** bietet die Möglichkeit, **HIPAA** und/oder **W
 Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial of Service) von Adobe erleichtert die Cloud-basierte Sicherheit als Teil eines mehrschichtigen Ansatzes zum Schutz vor Sicherheitslücken.
 
 * **HIPAA** - Diese Option ermöglicht die Implementierung der HIPAA-fähigen Lösung von Adobe.
-   * Hier finden Sie [weitere Informationen](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) zur Implementierung einer HIPAA-fähigen Lösung von Adobe.
+   * Erfahren Sie mehr über [HIPAA-Bereitschaft für Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) und die Implementierung der [Adobe HIPAA-fähigen Lösung](https://www.adobe.com/trust/compliance/hipaa-ready.html).
    * Die HIPAA-Option kann nach der Programmerstellung weder aktiviert noch deaktiviert werden.
 * **WAF-DDOS-Schutz**: Diese Option aktiviert die Firewall der Web-Anwendung über Regeln, um Ihre Anwendung zu schützen.
    * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
@@ -122,7 +122,7 @@ Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial 
 
 >[!NOTE]
 >
->Die hier beschriebene flexible Veröffentlichungsebene befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebene flexible Veröffentlichungsebene befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Wenn für Ihr Unternehmen die Funktion „Flexible Veröffentlichungsebene“ aktiviert ist, können Sie konfigurieren, ob für die Umgebungen Ihres Programms eine Veröffentlichungsebene erforderlich ist. Diese Option wird auf der Registerkarte **Bereitstellungstyp** im Dialogfeld **Für Produktion einrichten** angezeigt (während der [Programmerstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)).
 

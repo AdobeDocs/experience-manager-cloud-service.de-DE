@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: 048592f83d313c2db8f5ae88ea0466d111dfe741
 workflow-type: tm+mt
-source-wordcount: '7228'
+source-wordcount: '7231'
 ht-degree: 93%
 
 ---
@@ -1321,7 +1321,7 @@ ht-degree: 93%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1668,6 +1668,8 @@ ht-degree: 93%
    + [Link-Prüfer](/help/operations/link-checker.md)
 + Compliance {#compliance}
    + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
+   + HIPAA {#hipaa}
+      + [HIPAA-Bereitschaft](/help/compliance/hipaa/hipaa-readiness.md)
    + Einhaltung von Datenschutzbestimmungen {#data-privacy}
       + [AEM – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [AEM Foundation – Einhaltung von Datenschutzbestimmungen](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
