@@ -5,16 +5,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
+source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 2%
 
 ---
 
 # Verwenden von Content Advisor für den Zugriff auf AEM-Inhalte in Adobe-Programmen{#content-advisor-aem-assets-adobe-applications}
 
-Der Content Advisor bietet ein einheitliches Erlebnis zur Inhaltserkennung in allen Adobe-Programmen. Der Content Advisor ist nativ in Anwendungen wie Adobe Workfront (in Kürze verfügbar), AJO B2C (in Kürze verfügbar), AEM Sites und anderen integriert und führt Inhalte (Assets und Inhaltsfragmente) in einer einzigen, intelligenten Benutzeroberfläche zusammen. Damit können Sie mühelos die relevantesten Inhalte direkt in Ihrem Workflow entdecken, durchsuchen und wiederverwenden, sodass Sie schneller arbeiten können, ohne den Kontext zu beschädigen.
+Der Content Advisor bietet ein einheitliches Erlebnis zur Inhaltserkennung in allen Adobe-Programmen. Der Content Advisor ist nativ in Anwendungen wie Adobe Workfront, AJO B2C (in Kürze verfügbar), AEM Sites und andere integriert und führt Inhalte (Assets und Inhaltsfragmente) in einer einzigen, intelligenten Benutzeroberfläche zusammen. Damit können Sie mühelos die relevantesten Inhalte direkt in Ihrem Workflow entdecken, durchsuchen und wiederverwenden, sodass Sie schneller arbeiten können, ohne den Kontext zu beschädigen.
 
 >[!IMPORTANT]
 > 
@@ -118,7 +118,7 @@ Dynamic Media-Ausgabedarstellungen bieten einsatzbereite, kanaloptimierte Versio
 
 Sie können Dynamic Media-Modifikatoren auch anwenden, um Anpassungen in Echtzeit anzuzeigen, bevor Sie die Ausgabedarstellung für das Adobe-Host-Programm auswählen, was eine schnellere Auswahl der am besten geeigneten Ausgabedarstellung ermöglicht und dabei die Konsistenz und Qualität des Assets wahrt.
 
-Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder &#x200B;](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) &#x200B;](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
+Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder ](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) ](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
 
 Sie müssen über eine gültige AEM Dynamic Media-Lizenz verfügen, um die Registerkarte „Dynamic Media“ anzeigen zu können.
 
@@ -196,7 +196,9 @@ Die folgende Tabelle zeigt die Unterstützung der Content Advisor-Funktionen in 
 
 | Programm | Unterstützung für einen kurzen Upload zur Suche in Assets | Unterstützung für das Bedienfeld „Empfohlene Inhalte“ bei der Suche nach Assets | Unterstützung für das Dynamic Media-Bedienfeld bei der Suche nach Assets | Unterstützung für die Suche nach Inhaltsfragmenten |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| AEM Sites (Document-Based Authoring) | ✓ | − | ✓ | − |
-| AEM Sites (Dokumenterstellung) | ✓ | ✓ | ✓ | − |
+| [AEM Sites - Dokumenterstellung](https://www.aem.live/docs/authoring-guide#document-authoring) | ✓ | ✓ | ✓ | − |
+| [AEM Sites - Universeller Editor](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites) | ✓ | ✓ | ✓ | − |
+| AEM Sites - [GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[Sharepoint-Authoring](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) | ✓ | − | ✓ | − |
 | AEM Sites (Inhaltsfragment-Editor) | ✓ | ✓ | ✓ | − |
-| AEM Sites (universeller Editor) | ✓ | ✓ | ✓ | − |
+| Adobe Workfront-Workflow | ✓ | ✓ | − | ✓ |
+| Adobe Workfront-Planung | ✓ | ✓ | − | ✓ |
