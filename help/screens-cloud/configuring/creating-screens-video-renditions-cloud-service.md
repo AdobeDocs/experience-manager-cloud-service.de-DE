@@ -4,10 +4,10 @@ description: Auf dieser Seite wird beschrieben, wie Sie Video-Ausgabedarstellung
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 210997fa8568245ab9e4e5d44d7faf99bc108ee3
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 100%
+source-wordcount: '342'
+ht-degree: 95%
 
 ---
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um von Screens Content Provider aus Video-Ausgabedarste
    >Verwenden Sie den Codierungsnamen, der mit „screens-“ beginnt. Nur bei diesen Videoausgabedarstellungen wird davon ausgegangen, dass sie das Videoerlebnis in Screens as a Cloud Service wiedergeben. Geben Sie die Bitrate ein, mit der Ihre Videos funktionieren (2500 kbps für Videos mit 720 px und 5000 kbps für 1080 px).
 
    >[!NOTE]
-   >Für Ihre Videos können mehrere Video-Ausgabedarstellungen mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden. Alle „screens-“-Ausgabedarstellungen werden von den Screens-Geräten heruntergeladen, auch wenn das Gerät nur Video-Ausgabedarstellungen wiedergibt.
+   >Für Videos können mehrere Videoausgabedarstellungen mit unterschiedlicher Breite/Höhe/Bitrate hinzugefügt werden.
 
 1. Klicken Sie auf **Speichern**.
 
