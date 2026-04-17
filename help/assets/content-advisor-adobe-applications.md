@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
+source-git-commit: 2ae4533890cbf01183df8b5283109fff0b9eae60
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1945'
 ht-degree: 2%
 
 ---
@@ -23,6 +23,8 @@ Der Content Advisor bietet ein einheitliches Erlebnis zur Inhaltserkennung in al
 Content Advisor integriert intelligente, kontextbezogene Erkennung direkt in das Authoring-Erlebnis, sodass Sie schnell relevante, genehmigte Inhalte finden können, die auf Ihrer Absicht basieren. Mit Funktionen wie intelligenten Vorschlägen, Dynamic Media-Ausgabedarstellungen und detaillierten Asset-Metadaten können Sie Inhalte effizient bewerten und wiederverwenden, ohne die Benutzeroberfläche des Programms verlassen zu müssen, was die Inhaltserstellung beschleunigt und gleichzeitig die Markenkonsistenz wahrt.
 
 ![Content Advisor-Bannerbild](assets/content-advisor-banner-image-updated.png)
+
+Adobe Experience Manager (AEM) Assets lässt sich auch nativ mit Adobe Express integrieren, sodass Sie Assets aus AEM Assets mithilfe von Content Advisor direkt in der Express-Oberfläche identifizieren, darauf zugreifen und sie verwenden können. Weitere Informationen finden Sie unter [Verwenden von Content Advisor für den Zugriff auf AEM Assets in Adobe Express](/help/assets/native-integration-adobe-express.md).
 
 
 ## Voraussetzungen {#prerequisites}
@@ -118,7 +120,7 @@ Dynamic Media-Ausgabedarstellungen bieten einsatzbereite, kanaloptimierte Versio
 
 Sie können Dynamic Media-Modifikatoren auch anwenden, um Anpassungen in Echtzeit anzuzeigen, bevor Sie die Ausgabedarstellung für das Adobe-Host-Programm auswählen, was eine schnellere Auswahl der am besten geeigneten Ausgabedarstellung ermöglicht und dabei die Konsistenz und Qualität des Assets wahrt.
 
-Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder &#x200B;](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) &#x200B;](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
+Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder ](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) ](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
 
 Sie müssen über eine gültige AEM Dynamic Media-Lizenz verfügen, um die Registerkarte „Dynamic Media“ anzeigen zu können.
 
