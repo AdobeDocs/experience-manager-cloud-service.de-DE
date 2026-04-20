@@ -4,20 +4,14 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
+source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1423'
 ht-degree: 1%
 
 ---
 
 # Lokale Entwicklung mit KI-Tools {#local-development-with-ai-tools}
-
->[!IMPORTANT]
->
->Die in diesem Artikel beschriebenen Funktionen sind **Beta**. Durch frühzeitigen Zugriff auf Funktionen, die Adobe entwickelt, können Kunden und Partner Feedback geben (per E-Mail an [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) und die Produktentwicklung mitgestalten. Außerdem erhalten sie Unterstützung bei der Vorbereitung auf die Einführung neuer Funktionen vor der allgemeinen Verfügbarkeit.
->
->Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (durch Adobe Support Services oder anderweitig). Adobe empfiehlt Kunden, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
 
 >[!NOTE]
 >
@@ -52,7 +46,7 @@ Vier einander ergänzende Komponenten befassen sich damit:
 
 Kenntnisse sind Befehlssätze, die mehrstufige Entwicklungs-Workflows kodieren. Wenn die KI aufgerufen wird, folgt sie dem Verfahren der Qualifikation, anstatt sich ausschließlich auf allgemeine Kenntnisse zu verlassen, was konsistente, konforme Ergebnisse liefert.
 
-Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)**-Repository auf der `beta` Verzweigung, da diese Funktion noch nicht allgemein verfügbar ist:
+Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)**-Repository:
 
 | SKILL | Zweck |
 |---|---|
@@ -202,6 +196,12 @@ Jeder MCP-Client kann eine Verbindung herstellen, indem er mit einem `http://loc
 >Der Wert `Basic YWRtaW46YWRtaW4=` ist die Base64-Codierung von `admin:admin`, der Standardberechtigung für einen lokalen Schnellstart. Verwenden Sie dies nicht in nicht-lokalen Umgebungen.
 
 ## Dispatcher MCP-Server {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>Diese Funktion ist **Beta**. Durch frühzeitigen Zugriff auf Funktionen, die Adobe entwickelt, können Kunden und Partner Feedback geben (per E-Mail an [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) und die Produktentwicklung mitgestalten. Außerdem erhalten sie Unterstützung bei der Vorbereitung auf die Einführung neuer Funktionen vor der allgemeinen Verfügbarkeit.
+>
+>Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (durch Adobe Support Services oder anderweitig). Adobe empfiehlt Kunden, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
 
 Der Dispatcher MCP-Server ist im Paket mit dem AEM Dispatcher SDK enthalten. Dadurch können KI-Tools die Dispatcher- und Apache-HTTPD-Konfiguration überprüfen, die Verarbeitung von Trace-Anfragen verfolgen und das Cacheverhalten mit einer Dispatcher-Instanz überprüfen, die lokal in Docker ausgeführt wird.
 
