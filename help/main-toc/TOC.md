@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 048592f83d313c2db8f5ae88ea0466d111dfe741
+source-git-commit: 50baca76cdc6566570f33771f100b7e6e9cc150d
 workflow-type: tm+mt
-source-wordcount: '7231'
+source-wordcount: '7234'
 ht-degree: 93%
 
 ---
@@ -1321,7 +1321,7 @@ ht-degree: 93%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1496,6 +1496,7 @@ ht-degree: 93%
       + [Anpassen von Site-Vorlagen und Designs](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [Headful und Headless in AEM](/help/implementing/developing/headful-headless.md)
       + [Deaktivieren der Serialisierung von ResourceResolvers über den Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
+      + [AEM Edge-Funktionen](/help/implementing/developing/introduction/edge-functions.md)
       + Full-Stack-AEM-Entwicklung {#full-stack}
          + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [Struktur der AEM-UI](/help/implementing/developing/introduction/ui-structure.md)
