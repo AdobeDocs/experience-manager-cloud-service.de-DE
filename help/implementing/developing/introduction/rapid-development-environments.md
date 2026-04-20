@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 161d6be186a6124840d93672470de91399481f20
 workflow-type: tm+mt
-source-wordcount: '5446'
-ht-degree: 98%
+source-wordcount: '5835'
+ht-degree: 91%
 
 ---
 
@@ -707,6 +707,74 @@ Sie können die RDE auch direkt auf der Seite **Übersicht** auf der Karte **Umg
 ![RDE über die Karte „Umgebungen“ zurücksetzen](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umgebungen finden Sie in der [Dokumentation zu Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
+
+## Momentaufnahmen {#snapshots}
+
+>[!NOTE]
+>
+>Diese Funktion ist in Beta verfügbar. Wenn Sie an der Verwendung dieser neuen Funktion und der Weitergabe Ihres Feedbacks interessiert sind, senden Sie eine E-Mail an [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com), in der Ihr Anwendungsfall beschrieben wird.
+
+RDEs unterstützen die Erstellung einer Momentaufnahme des aktuellen Status von Code und Inhalt, die zu einem späteren Zeitpunkt wiederhergestellt werden kann. Momentaufnahmen sind nützlich, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt eines Snapshots als bekannten Ausgangspunkt für Tests wiederherzustellen.
+
+Jede RDE-Umgebung verfügt über maximal sieben Momentaufnahmen. Momentaufnahmen, die zur Löschung markiert sind, aber noch innerhalb des siebentägigen Aufbewahrungszeitraums liegen, werden weiterhin für dieses Limit gezählt, bis sie vollständig entfernt werden. Wenn Sie das Limit erreichen und sofort Kapazität für einen neuen Schnappschuss benötigen, verwenden Sie das erzwungene Löschen wie in [Löschen eines Schnappschusses](#delete-snapshot) beschrieben anstelle eines standardmäßigen Löschvorgangs.
+
+Die unterstützten Befehle werden unten beschrieben. Um eine vollständige Liste der Markierungen und Optionen zu erhalten, verwenden Sie `aio aem rde snapshot --help` oder verwenden Sie `aio aem rde snapshot <subcommand> --help`, um Hilfe zu einem bestimmten Unterbefehl zu erhalten.
+
+### Auflisten von Momentaufnahmen {#list-snapshots}
+
+Sie können alle Momentaufnahmen in Ihrer Organisation auflisten, indem Sie Folgendes ausführen:
+
+`aio aem rde snapshot`
+
+Dadurch wird eine Tabelle der verfügbaren Momentaufnahmen zurückgegeben, die mithilfe des `-s`-Flags sortiert werden kann:
+
+`aio aem rde snapshot -s <column-header>`
+
+Der Spaltenüberschrift ein Minuszeichen für die umgekehrte Sortierung voranstellen. Die `--json` globale Markierung wird ebenfalls unterstützt.
+
+### Snapshot erstellen {#create-snapshot}
+
+Um einen Schnappschuss des aktuellen Status der RDE zu erstellen, einschließlich Inhalt und Bereitstellung, führen Sie Folgendes aus:
+
+`aio aem rde snapshot create <name>`
+
+Dabei ist `<name>` ein eindeutiger Name für den Schnappschuss in der Umgebung. Geben Sie optional eine kurze Beschreibung mit dem `-d`-Flag ein:
+
+`aio aem rde snapshot create <name> -d "description of the snapshot"`
+
+### Wiederherstellen eines Snapshots {#restore-snapshot}
+
+Um einen Snapshot in der aktuellen RDE wiederherzustellen, führen Sie Folgendes aus:
+
+`aio aem rde snapshot restore <name>`
+
+Um nur den veränderlichen Inhalt eines Snapshots wiederherzustellen (ohne die Bereitstellung wiederherzustellen), verwenden Sie das `--only-mutable-content`-Flag:
+
+`aio aem rde snapshot restore <name> --only-mutable-content`
+
+### Löschen eines Schnappschusses {#delete-snapshot}
+
+Wenn Sie einen Schnappschuss zum Löschen markieren, wird er nicht sofort entfernt. Der Snapshot wird nach 7 Tagen gelöscht, sodass Sie bei Bedarf Zeit haben, seinen Löschvorgang rückgängig zu machen.
+
+Um einen Schnappschuss zum Löschen zu markieren, führen Sie Folgendes aus:
+
+`aio aem rde snapshot delete <name>`
+
+Um alle Momentaufnahmen gleichzeitig als gelöscht zu markieren, verwenden Sie das `-a`-Flag:
+
+`aio aem rde snapshot delete -a`
+
+Um einen Schnappschuss sofort zu löschen (wobei die Aufbewahrungsfrist übersprungen wird, sodass er nicht mehr für das Umgebungs-Schnappschuss-Limit zählt), fügen Sie das `-f`-Flag (oder `--force`) hinzu:
+
+`aio aem rde snapshot delete <name> -f`
+
+Das erzwungene Löschen kann mit `undelete` nicht rückgängig gemacht werden. Verwenden Sie `aio aem rde snapshot delete --help`, um alle Optionen beim Kombinieren von Flags anzuzeigen (z. B. Löschen aller Momentaufnahmen mit Gewalt).
+
+### Löschen eines Schnappschusses aufheben {#undelete-snapshot}
+
+Um eine ausstehende Löschung abzubrechen und einen Schnappschuss beizubehalten, führen Sie Folgendes aus:
+
+`aio aem rde snapshot undelete <name>`
 
 ## Befehle, die die JSON-Ausgabe unterstützen {#json-commands}
 
