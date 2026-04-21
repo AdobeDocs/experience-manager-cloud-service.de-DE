@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 99%
+source-wordcount: '1784'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ Ein *Launch* wird erstellt, damit Sie Änderungen zur Vorbereitung auf spätere 
 >
 >Ausführliche Informationen finden Sie unter [Launches für Seiten](/help/sites-cloud/authoring/launches/overview.md).
 
-Erstellen Sie einen *Launch* und bearbeiten und aktualisieren Sie dann Ihre Inhaltsfragmente in Ihrem *Launch*. Wenn in dieser Phase Änderungen an den *Quellfragmenten* vorgenommen werden, können Sie diese mit dem Vorgang *Rebase ausführen* in den *Launch* kopieren. Wenn er bereit ist, wird der Launch-Inhalt über *Bewerben* zurück an die Quelle dupliziert. Anschließend können Sie die Quellfragmente entweder manuell oder automatisch aktivieren (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden). Sie können auch angeben, ob referenzierte Fragmente in diesen Prozess einbezogen werden sollen.
+Erstellen Sie einen *Launch* und bearbeiten und aktualisieren Sie dann Ihre Inhaltsfragmente in Ihrem *Launch*. Wenn in dieser Phase Änderungen an den *Source*-Fragmenten vorgenommen werden, können Sie die *Source* (einschließlich Änderungen) mit dem Vorgang *Rebase* in **[Launch](#rebase-a-launch-from-source)** kopieren. Wenn er bereit ist, wird der Launch-Inhalt über *Bewerben* zurück an die Quelle dupliziert. Anschließend können Sie die Quellfragmente entweder manuell oder automatisch aktivieren (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden). Sie können auch angeben, ob referenzierte Fragmente in diesen Prozess einbezogen werden sollen.
 
 Die Fragmente für saisonale Produkte in Ihrem Online-Shop werden beispielsweise einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartalaktualisierung können Sie einen Launch der relevanten Fragmente erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
 
@@ -88,9 +88,9 @@ Im rechten Panel haben Sie folgende Möglichkeiten:
 
    * **Bereit für die Veröffentlichung**: Durch Aktivieren dieses Umschalters werden die Fragmente automatisch veröffentlicht, wenn der Launch zur Quelle weitergeleitet wird.
 
-* Definieren Sie außerdem:
+* Datum **Uhrzeit der** definieren: wenn der [Launch automatisch beworben werden soll](#promote-automatically)
 
-   * Ein **Datum und eine Uhrzeit für die Weiterleitung**: Wenn der [Launch automatisch weitergeleitet werden soll](#promote-automatically)
+* Anzeigen von ausgeführten **[Aufträgen](#jobs-history)** und Durchführen weiterer Aktionen (**Launch mit Source vergleichen**)
 
 ## Erstellen eines Launch {#create-a-launch}
 
@@ -203,7 +203,6 @@ Es wird empfohlen, vor jeder Aktion der Typs „Rebase ausführen“ oder „Bew
          * Quelle: Blau
          * Launch: Rosa
          * Konflikte: Gelb
-   * Die Aktionen [Bewerben](#promote-a-launch-to-source) und [Rebase ausführen](#rebase-a-launch-from-source) sind oben rechts verfügbar.
    * **Aktualisierungen gefunden**: Links oben wird eine Zusammenfassung aller Aktualisierungen angezeigt. Die Anzahl der Quellaktualisierungen in blau, die Anzahl der Launch-Aktualisierungen in rosa und die Aktualisierungen von beiden (Konflikte) in gelb.
       * Mit den Augensymbolen können Sie die tatsächlichen Inhaltsaktualisierungen anzeigen oder ausblenden, um einen klareren Überblick zu erhalten.
    * Mit den Schiebereglern bezüglich **Einschlüssen** können Sie die Inhaltsfragmente definieren, die in den nachfolgenden Vorgängen des Typs „Bewerben“ oder „Rebase ausführen“ eingeschlossen werden sollen:
@@ -217,11 +216,38 @@ Es wird empfohlen, vor jeder Aktion der Typs „Rebase ausführen“ oder „Bew
    * Inhaltsfragmente werden auf Feldebene angezeigt (Inhaltsfragmentelement-/Datentypebene), wobei die Änderungen durch Hervorhebungen angezeigt werden.
    * Wählen Sie **Anzeigen**, um die Unterschiede neu zu berechnen.
 
+1. Die Aktionen [Bewerben](#promote-a-launch-to-source) und [Rebase ausführen](#rebase-a-launch-from-source) sind oben rechts verfügbar.
+
+1. **Zurück** kehrt zur Konsole zurück. Wenn Sie diese spezifischen Unterschiede erneut überprüfen möchten, können Sie die Einträge **[Aufträge](#jobs-history)** anzeigen.
+
    ![Vergleichen von Quelle und Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Vorgangsverlauf {#jobs-history}
+
+So zeigen Sie Details zu früheren **mit Source vergleichen** ausgeführten Aufträgen an:
+
+1. Navigieren Sie zur Inhaltsfragmentkonsole.
+
+1. Öffnen Sie die Registerkarte **Launches**.
+
+1. Wählen Sie Ihren Launch aus. Das Informationsfenster wird auf der rechten Seite geöffnet.
+
+1. Im Abschnitt **Aufträge** sehen Sie **launchDifferences**-Einträge für jeden der **mit Source vergleichen** ausgeführten Aufträge:
+
+   ![Vorgangsverlauf](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. Klicken Sie auf:
+
+   * Das Lupensymbol zum Öffnen vollständiger Details für eine bestimmte Aufgabe.
+Dadurch wird die Ansicht **[Launch mit Source vergleichen](#compare-launch-to-source)** mit den verfügbaren Aktionen zurückgegeben.
+   * **Protokoll anzeigen** um eine Übersicht über die Details für alle Aufträge anzuzeigen.
+Hier können Sie auch einen bestimmten Auftrag auswählen und dann die **Ergebnisse** anzeigen. Dadurch gelangen Sie zurück zur Ansicht **[Launch mit Source vergleichen](#compare-launch-to-source)** mit den verfügbaren Aktionen.
+
+   Beide Aktionen führen Sie zum entsprechenden Auftrag **Launch mit Source vergleichen**. Von hier aus können Sie **[Launch](#rebase-a-launch-from-source)** oder **[bewerben](#promote-a-launch-to-source)** wie zu diesem Zeitpunkt.
 
 ## Ausführen eines Rebase eines Launch (von einer Quelle) {#rebase-a-launch-from-source}
 
-Wenn Aktualisierungen an den Quellfragmenten vorgenommen wurden und Sie diese Änderungen in Ihren Launch kopieren möchten:
+Wenn Aktualisierungen an den Quellfragmenten vorgenommen wurden, können Sie die Quelle (einschließlich Änderungen) mit der Aktion &quot;**&quot; in** Launch kopieren:
 
 1. Navigieren Sie zur Inhaltsfragmentkonsole.
 
