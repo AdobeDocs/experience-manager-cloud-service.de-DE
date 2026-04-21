@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 86%
+source-wordcount: '1851'
+ht-degree: 81%
 
 ---
 
@@ -187,7 +187,7 @@ So verwalten Sie die Inhaltsfragmente in Ihrem Launch und bearbeiten ihre Inhalt
 
 ## Vergleichen von Launch mit Quelle {#compare-launch-to-source}
 
-Es wird empfohlen, vor jeder Aktion der Typs „Rebase ausführen“ oder „Bewerben“ immer die Quelle und den Launch zu vergleichen, um die Änderungen und ihre Auswirkungen auf Ihren Inhalt zu bestätigen (beide Aktionen überschreiben den Zielinhalt):
+Es wird empfohlen, vor jeder **[Rebase](#rebase-a-launch-from-source)**- oder **[Promote](#promote-a-launch-to-source)**-Aktion immer die Quelle und den Launch zu vergleichen, um die Änderungen und ihre Auswirkungen auf Ihren Inhalt zu bestätigen (beide Aktionen überschreiben den Zielinhalt):
 
 1. Navigieren Sie zur Inhaltsfragmentkonsole.
 
@@ -261,9 +261,17 @@ Wenn Aktualisierungen an den Quellfragmenten vorgenommen wurden, können Sie die
 >
 >Sie könne einen **Rebase** eines Launch auch von **[Launch mit Quelle vergleichen](#compare-launch-to-source)** aus ausführen.
 
+>[!NOTE]
+>
+>Es wird empfohlen, vor jeder **Rebase**- oder **Promote**-Aktion immer [Quelle und Launch vergleichen](#compare-launch-to-source) zu bestätigen, um die Änderungen und ihre Auswirkungen auf Ihren Inhalt zu bestätigen - da beide Aktionen den Zielinhalt überschreiben.
+
 ## Weiterleiten eines Launch (an die Quelle) {#promote-a-launch-to-source}
 
 Wenn Ihr Launch zur Veröffentlichung bereit ist, sollte er in die Quelle kopiert werden. Sie können dies entweder in der Konsole tun oder die Einstellungen so konfigurieren, dass dies automatisch zu einem bestimmten Datum und zu einer bestimmten Uhrzeit geschieht.
+
+>[!NOTE]
+>
+>Es wird empfohlen, vor jeder **Rebase**- oder **Promote**-Aktion immer [Quelle und Launch vergleichen](#compare-launch-to-source) zu bestätigen, um die Änderungen und ihre Auswirkungen auf Ihren Inhalt zu bestätigen - da beide Aktionen den Zielinhalt überschreiben.
 
 ### Manuelles Weiterleiten {#promote-manually}
 
