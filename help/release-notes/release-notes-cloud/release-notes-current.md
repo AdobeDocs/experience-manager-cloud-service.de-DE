@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9820b642af32960c532b238e00267cb4d880535f
+source-git-commit: c9ab1fefa8170a1397eb5801f26128e82e7cd4ca
 workflow-type: tm+mt
 source-wordcount: '2180'
 ht-degree: 29%
@@ -34,11 +34,11 @@ Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Man
 
 Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/maintenance/latest.md).
 
-&lt;## Versions-Video {#release-video}
+## Video zur Version {#release-video}
 
 Werfen Sie einen Blick auf das Video „Versionsübersicht März 2026“ für eine Zusammenfassung der neuen Funktionen in der Version 2026.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483069/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 
 ## AEM Beta-Programme {#aem-beta-programs}
 
@@ -148,7 +148,7 @@ Bald verfügbar - Unterstützung von Content Advisor für Adobe Workfront- und A
 Mehrfachauswahl-Dropdown-Komponenten in adaptiver Forms rendern jetzt ihre ausgewählten Anzeigebeschriftungen in der [generierten Übermittlungs-PDF](/help/forms/generate-document-of-record-core-components.md), um sicherzustellen, dass das Dokument genau das widerspiegelt, was Benutzende im Formular sehen.
 
 **Verbesserte Barrierefreiheit für Kontrollkästchen-, Optionsfeld- und Bedienfeldkomponenten**
-Adaptive Forms-Kernkomponenten führen WCAG 2.2-konformes semantisches Markup für [Kontrollkästchen-Gruppen (v2)](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [Optionsfeldgruppen (v2)](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) und die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ein. Diese Komponenten nutzen `<fieldset>` und `<legend>` HTML-Elemente, um aussagekräftige Beziehungen zwischen Gruppenbeschriftungen und ihren Optionen herzustellen und so eine genaue Interpretation durch Bildschirmlesehilfen und andere Hilfstechnologien zu ermöglichen.
+Adaptive Forms-Kernkomponenten führen WCAG 2.2-konformes semantisches Markup für [Kontrollkästchen-Gruppen (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [Optionsfeldgruppen (v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) und die [Bedienfeldkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ein. Diese Komponenten nutzen `<fieldset>` und `<legend>` HTML-Elemente, um aussagekräftige Beziehungen zwischen Gruppenbeschriftungen und ihren Optionen herzustellen und so eine genaue Interpretation durch Bildschirmlesehilfen und andere Hilfstechnologien zu ermöglichen.
 
 **Versionierungsunterstützung in Forms Manager**
 Forms Manager [unterstützt jetzt die Versionierung für adaptive Forms (Kernkomponenten und Foundation-Komponenten](/help/forms/manage-form-versions-forms-manager.md), Formularfragmente, Designs, XDP-Vorlagen und binäre Assets. Erstellen Sie Versionen, zeigen Sie den vollständigen Versionsverlauf an und stellen Sie frühere Status Ihrer Formular-Assets direkt über die Konsole Forms und Dokumente wieder her.
@@ -163,7 +163,7 @@ Forms Manager [unterstützt jetzt die Versionierung für adaptive Forms (Kernkom
 
 #### Cloud Manager MCP-Server {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480351/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Moderne IDEs verwenden das Model Context Protocol (MCP), um umfangreichen Sprachmodellen (LLMs) das Aufrufen von Tools zu ermöglichen, die von MCP-Servern bereitgestellt werden. Anstatt direkt in allgemeine API-Spezifikationen zu integrieren, können Entwickler ihre Absicht einfach in natürlicher Sprache beschreiben.
 
@@ -231,13 +231,13 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Die Funktionen [Fehlerbehebung bei Pipelines](/help/ai-in-aem/agents/brand-experience/development/development.md) des Entwicklungsagenten helfen Entwicklerinnen und Entwicklern bei der effizienten Diagnose und Lösung von Problemen in AEM as a Cloud Service-Bereitstellungen. Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web Tier Config-Pipeline** als Teil eines Beta-Programms.
 
-aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 #### IDE AI-Tools für die Migration von AEM 6.5 zu AEM Cloud Service (Alpha-Programm) {#cm-ide-migration}
 
-Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
+Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Für weitere Informationen senden Sie eine E[Mail an &#x200B;](mailto:aemcs-ai-ide-tools-feedback@adobe.com)aemcs-ai-ide-tools-feedback@adobe.com.
+Für weitere Informationen senden Sie eine E[Mail an ](mailto:aemcs-ai-ide-tools-feedback@adobe.com)aemcs-ai-ide-tools-feedback@adobe.com.
 
 #### Edge-Authentifizierung für Edge Delivery Services (Beta-Programm) {#edge-authentication}
 
@@ -257,7 +257,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion, um einen Schnappschuss des aktuellen Status von Code und Inhalten zu erstellen, der zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
