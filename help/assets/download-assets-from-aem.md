@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1087'
 ht-degree: 99%
 
 ---
@@ -106,32 +106,6 @@ Wenn Benutzer Assets über freigegebene Links herunterladen, verwendet [!DNL Ass
 Der Verarbeitungsstatus jedes Archivs wird im [!UICONTROL Download-Posteingang] angezeigt. Nach Abschluss der Verarbeitung können Sie die Archive aus dem Posteingang herunterladen.
 
 ![Posteingang herunterladen](assets/link-sharing-download-inbox.png)
-
-## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
-
-Das Standard-Servlet in [!DNL Experience Manager] ermöglicht es authentifizierten Benutzern, beliebig große, gleichzeitige Download-Anfragen zur Erstellung von ZIP-Dateien von Assets zu stellen. Die Vorbereitung des Herunterladens kann sich auf die Leistung auswirken oder sogar den Server und das Netzwerk überlasten. Um solche potenziellen DoS-ähnlichen Risiken zu reduzieren, die durch diese Funktion verursacht werden, ist die `AssetDownloadServlet`-OSGi-Komponente für Veröffentlichungsinstanzen standardmäßig deaktiviert. Wenn Sie die Download-Funktion nicht in Autoreninstanzen benötigen, deaktivieren Sie das Servlet in der Autoreninstanz.
-
-Um das Herunterladen von Assets aus Ihrem DAM zu ermöglichen (z. B. bei Verwendung von Asset Share Commons oder einer anderen portalähnlichen Implementierung), aktivieren Sie das Servlet manuell über eine OSGi-Konfiguration. Adobe empfiehlt, die zulässige Download-Größe so gering wie möglich zu halten, ohne dass dabei die täglichen Download-Anforderungen beeinträchtigt werden. Ein hoher Wert kann sich auf die Leistung auswirken.
-
-1. Erstellen Sie einen Ordner mit einer Namenskonvention, die auf den Veröffentlichungsausführungsmodus zielt, d. h. `config.publish`:
-
-   `/apps/<your-app-name>/config.publish`
-
-1. Erstellen Sie im Konfigurationsordner eine neue Datei des Typs `nt:file` mit dem Namen `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Füllen Sie `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` wie folgt. Legt eine maximale Größe (in Byte) für den Download als Wert von `asset.download.prezip.maxcontentsize` fest. Im folgenden Beispiel wird die maximale Größe des ZIP-Downloads auf 100 KB begrenzt.
-
-   ```java
-   enabled=B"true"
-   asset.download.prezip.maxcontentsize=I"102400"
-   ```
-
-## Deaktivieren des Asset-Download-Servlets {#disable-asset-download-servlet}
-
-Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet, um DoS-ähnliche Risiken zu vermeiden. Das `Asset Download Servlet` kann in einer [!DNL Experience Manager]-Autoren- und -Veröffentlichungsinstanz deaktiviert werden, indem die Dispatcher-Konfiguration so aktualisiert wird, dass sie alle Asset-Download-Anfragen blockiert. Das Servlet kann auch manuell direkt über die OSGi-Konsole deaktiviert werden.
-
-1. Um Asset-Download-Anfragen über eine Dispatcher-Konfiguration zu blockieren, bearbeiten Sie die Konfiguration `dispatcher.any` und fügen Sie dem [Filterabschnitt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring) eine neue Regel hinzu.
-
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 ## OnTime- oder OffTime-Ausgabedarstellung {#on-off-time-rendition}
 

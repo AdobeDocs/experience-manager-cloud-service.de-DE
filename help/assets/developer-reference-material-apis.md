@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 99%
+source-wordcount: '1916'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,11 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 | Ordner lesen | – | ✓ | – | ✓ | – | - |
 | Ordner löschen | ✓ | ✓ | – | ✓ | – | - |
 | Ordner kopieren | ✓ | ✓ | – | ✓ | – | - |
-| Ordner verschieben | ✓ | ✓ | – | ✓ | – | - |
+| Ordner verschieben | ✓ | ✓ | – | ✓ | – | – |
+
+>[!NOTE]
+>
+> Adobe rät vom Hochladen von Asset-Paketen ab, da dies gegen unsere Best Practices verstößt, die Binärdatenverarbeitung in AEM zu vermeiden. Das Hochladen von Assets über JCR-Pakete führt nicht dazu, dass die Verarbeitung dieser Assets in AEM as a Cloud Service ausgelöst wird.
 
 ## Asset-Upload {#asset-upload}
 
@@ -122,7 +126,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 }
 ```
 
-* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://[aem_server]:[port]/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens &#x200B;](#complete-upload).
+* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://[aem_server]:[port]/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
 * `folderPath` (Zeichenfolge): Vollständiger Pfad zum Ordner, in den die Binärdatei hochgeladen wird.
 * `(files)` (Array): Eine Liste der Elemente, deren Länge und Reihenfolge mit der Länge und Reihenfolge der Liste der binären Informationen übereinstimmen, die in der Anfrage zum Initiieren bereitgestellt werden.
 * `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie in der Anfrage zum Initiieren angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.
