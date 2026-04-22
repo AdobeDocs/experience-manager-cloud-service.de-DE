@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 5%
 
 ---
@@ -45,17 +45,19 @@ Der Editor für interaktive Kommunikation (IC) wurde für Effizienz, Benutzerfre
 
 | **Funktion** | **Schlüsselfunktionen** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **WYSIWYG-Editor** | - Pixel-Perfektion für präzise <br> - Schriftschnitt-Steuerelemente <br> - Flexibles Layout für professionelles Design |
-| **Layout-Steuerung** | - Positionierung (absolut und fließend) <br> - Einfache Drag-and-Drop-Funktion <br> - Verwenden Sie Musterseiten, um konsistente Layouts zu definieren |
-| **Komponenten** | - Zugriff auf neu eingeführte Komponenten, einschließlich Tabellen, Diagrammen und Barcodes <br> - Gebrauchsfertige Komponenten für ein schnelleres Design |
-| **Datenbindung** | - Direktes Verknüpfen von Komponenten mit Datenquellen <br> - Automatisches Vorbefüllen von Feldern für personalisierte Kommunikation |
-| **Regel-Editor** | - Konfigurieren dynamischer Validierungen <br> - Hinzufügen von Berechnungen und bedingter Logik für die Interaktivität |
-| **Fragmentbibliothek** | - Modulare Bausteine (Kopf- und Fußzeilen, Haftungsausschlüsse, Symbole) erstellen <br> - Konsistenz über mehrere Kommunikationen hinweg gewährleisten |
-| **Vorlagen** | - Sicherstellung einer einheitlichen Markendarstellung und Struktur in der gesamten Kommunikation |
+| **WYSIWYG-Editor** | - Pixel-Perfektion für akkurate <br> - [Font Styling Controls](/help/forms/interactive-communication/add-custom-fonts.md) <br> - Flexibles Layout für professionelles Design |
+| [**Layout-Steuerung**](/help/forms/interactive-communication/handle-content-overflow.md) | - Positionierung (absolut und fließend) <br> - Einfache Drag-and-Drop-Funktion <br> - Verwenden Sie Musterseiten, um konsistente Layouts zu definieren |
+| **Komponenten** | - Zugriff auf neu eingeführte Komponenten, [Tabellen](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md) Diagramme und [Barcodes](/help/forms/interactive-communication/barcode.md) <br> - Gebrauchsfertige Komponenten für ein schnelleres Design |
+| [**Datenbindung**](/help/forms/interactive-communication/configure-data-binding.md) | - Direktes Verknüpfen von Komponenten mit Datenquellen <br> - Automatisches Vorbefüllen von Feldern für personalisierte Kommunikation |
+| [**Regel-Editor**](/help/forms/interactive-communication/use-the-rule-editor.md) | - Konfigurieren dynamischer Validierungen <br> - Hinzufügen von Berechnungen und bedingter Logik für die Interaktivität |
+| [**Fragmentbibliothek**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) | - Modulare Bausteine (Kopf- und Fußzeilen, Haftungsausschlüsse, Symbole) erstellen <br> - Konsistenz über mehrere Kommunikationen hinweg gewährleisten |
+| [**Vorlagen**](/help/forms/interactive-communication/create-interactive-communication-template.md) | - Sicherstellung einer einheitlichen Markendarstellung und Struktur in der gesamten Kommunikation |
 
 ## Onboarding
 
-Die Funktion der interaktiven Kommunikation (IC) ist über das Early Access-Programm (EA) verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-ID mit Ihrer Umgebungs-ID und Organisations-ID. Sobald Adobe Ihre Registrierung bestätigt hat, befolgen Sie die Dokumentation [Einstieg in den Service](/help/forms/setup-forms-cloud-service.md), um die interaktive Kommunikation in Ihrer AEM Forms-Umgebung zu aktivieren.
+Die Funktion der interaktiven Kommunikation (IC) ist über das Early Access-Programm (EA) verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen E-Mail-ID mit Ihrer Umgebungs-ID und Organisations-ID. Sobald Adobe Ihre Registrierung bestätigt hat, befolgen Sie die Dokumentation [Einstieg in den Service](/help/forms/setup-forms-cloud-service.md), um die interaktive Kommunikation in Ihrer AEM Forms-Umgebung zu aktivieren.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Nächste Schritte
 
