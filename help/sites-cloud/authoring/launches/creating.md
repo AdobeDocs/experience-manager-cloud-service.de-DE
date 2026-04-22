@@ -6,7 +6,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 7baad256dfbf978e294b0ca66f7cf9205ac8648f
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 99%
@@ -85,7 +85,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autorinnen und Autoren aussagekräftig sein.
    * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
-   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Dies erfolgt, indem diese Option den Launch zu einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) macht. Standardmäßig ist diese Option aktiviert.-->
+   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Dies erfolgt, indem diese Option den Launch zu einer [Live Copy](/help/sites-cloud/administering/msm/overview.md) macht. Standardmäßig ist diese Option aktiviert.
    * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Markierung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Launch-Eigenschaften](/help/sites-cloud/authoring/assets/launches-properties.png)
