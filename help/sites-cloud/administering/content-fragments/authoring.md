@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 95%
@@ -33,6 +33,11 @@ Dieser Editor bietet Folgendes:
 * Fähigkeit zum [Anzeigen von Versionsdetails](#view-version-history) im Editor. Sie können auch eine ausgewählte Version wiederherstellen.
 * Fähigkeit zum [Anzeigen und Öffnen von übergeordneten Verweisen](#view-parent-references).
 * Eine hierarchische Ansicht des Inhaltsfragments und seiner Verweise mithilfe der [Baumstruktur](#structure-tree).
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+-->
 
 >[!NOTE]
 >
@@ -77,7 +82,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
   >
   >Abhängig von den Definitionen im zugrunde liegenden Modell können Felder bestimmten Arten von [Validierung](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation) unterliegen.
 
-![Inhaltsfragmenteditor – Überblick](assets/cf-authoring-overview.png)
+![Inhaltsfragmenteditor – Überblick](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## In der Inhaltsfragmentstruktur navigieren {#navigate-structure}
 
@@ -107,13 +112,13 @@ Im linken Bereich können Sie Folgendes sehen:
 
 Das Link-Symbol wird in verschiedenen Bereichen des Editors angezeigt. Dieses Symbol kann verwendet werden, um das angezeigte Element zu öffnen, z. B. ein Inhaltsfragmentmodell, einen übergeordneten Verweis oder ein Fragment, auf das verwiesen wird:
 
-![Inhaltsfragmenteditor – Link-Symbol](assets/cf-authoring-link-icon.png)
+![Inhaltsfragmenteditor – Link-Symbol](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-link-icon.png)
 
 ### Strukturbaum {#structure-tree}
 
 Öffnen Sie die Registerkarte **Baumstruktur** über die Editor-Symbolleiste, um die hierarchische Struktur des Inhaltsfragments und dessen Verweise anzuzeigen. Verwenden Sie die Link-Symbole, um zu den Verweisen zu navigieren.
 
-![Inhaltsfragmenteditor – Baumstruktur](assets/cf-authoring-structure-tree.png)
+![Inhaltsfragmenteditor – Baumstruktur](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
@@ -133,7 +138,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* [Unter Verwendung der Funktion „Varianten generieren“ &#x200B;](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+* [Unter Verwendung der Funktion „Varianten generieren“ ](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -151,11 +156,11 @@ So erstellen Sie eine Variante Ihres Inhaltsfragments:
    >
    >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante &#x200B;](assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
-   ![Inhaltsfragmenteditor – Dialogfeld „Variante erstellen“](assets/cf-authoring-create-variation-02.png)
+   ![Inhaltsfragmenteditor – Dialogfeld „Variante erstellen“](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-02.png)
 
 1. **Erstellen** Sie die Variante. Sie wird in der Liste angezeigt.
 
@@ -191,7 +196,7 @@ So löschen Sie eine Variante Ihres Inhaltsfragments:
 
 1. Wählen Sie im Bereich **Variante** das Symbol „Löschen“ (Papierkorb) aus:
 
-   ![Inhaltsfragmenteditor – Symbol „Variante löschen“](assets/cf-authoring-delete-variation.png)
+   ![Inhaltsfragmenteditor – Symbol „Variante löschen“](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-delete-variation.png)
 
 1. Ein Dialogfeld wird geöffnet. Wählen Sie **Löschen** aus, um die Aktion zu bestätigen.
 
@@ -205,7 +210,7 @@ So löschen Sie eine Variante Ihres Inhaltsfragments:
 
 Bei Feldern, die als Nur-Text- oder Markdown-Felder definiert sind, handelt es sich um einfache Textfelder ohne Formatierungsoptionen (auf dem Bildschirm):
 
-![Inhaltsfragmenteditor – Mehrzeiliger Text – Vollbild](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![Inhaltsfragmenteditor – Mehrzeiliger Text – Vollbild](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## Bearbeiten mehrzeiliger Textfelder – Rich-Text {#edit-multi-line-text-fields-rich-text}
 
@@ -231,7 +236,7 @@ Für Felder mit **[mehrzeiligem Text](/help/sites-cloud/administering/content-fr
 
 Beispiel:
 
-![Inhaltsfragmenteditor – Mehrzeiliger Text – Umschalter im Vollbild](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![Inhaltsfragmenteditor – Mehrzeiliger Text – Umschalter im Vollbild](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
@@ -243,7 +248,7 @@ Der Vollbild-Editor bietet dieselben Bearbeitungsoptionen wie im Textfluss, läs
 
 Beispiel:
 
-![Inhaltsfragmenteditor – Mehrzeiliger Text – Vollbild](assets/cf-authoring-multilinetext-fullscreen.png)
+![Inhaltsfragmenteditor – Mehrzeiliger Text – Vollbild](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Statistiken – Rich-Text {#statistics-rich-text}
 
@@ -251,7 +256,7 @@ Die Aktion **Statistik** zeigt eine Reihe von Informationen über den Text in ei
 
 Beispiel:
 
-![Inhaltsfragmenteditor – Statistik](assets/cf-authoring-multilinetext-statistics.png)
+![Inhaltsfragmenteditor – Statistik](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-statistics.png)
 
 ### Vergleichen und Synchronisieren – Rich-Text {#compare-and-synchronize-rich-text}
 
@@ -274,13 +279,13 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
 Beispiel: ein Szenario, in dem der Varianteninhalt vollständig umgeschrieben wurde, sodass eine Synchronisierung diesen neuen Inhalt durch den Inhalt aus der **Hauptvariante** ersetzt:
 
-![Inhaltsfragmenteditor – Vergleichen und Synchronisieren](assets/cf-authoring-multilinetext-compare.png)
+![Inhaltsfragmenteditor – Vergleichen und Synchronisieren](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-compare.png)
 
 ## Verweise verwalten {#manage-references}
 
@@ -333,7 +338,7 @@ Um auf ein lokales Asset zu verweisen, haben Sie folgende Möglichkeiten:
 * ziehen Sie die neue Asset-Datei direkt (z. B. aus Ihrem Dateisystem) in das Feld **Inhaltsverweis**
 * verwenden Sie die Aktion **Asset hinzufügen** und wählen Sie anschließend entweder **Assets durchsuchen** oder **Hochladen** aus, um die entsprechende Auswahl zu öffnen, die Sie verwenden möchten:
 
-  ![Inhaltsfragmenteditor – Asset-Optionen hinzufügen](assets/cf-authoring-add-asset-options.png)
+  ![Inhaltsfragmenteditor – Asset-Optionen hinzufügen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
 ##### Verweisen auf Remote-Assets {#reference-remote-assets}
 
@@ -341,11 +346,11 @@ So verweisen Sie auf Remote-Assets:
 
 1. Geben Sie beim Suchen nach Assets das Remote-**Repository** an:
 
-   ![Inhaltsfragmenteditor – Asset remote auswählen](assets/cf-authoring-remote-asset-01.png)
+   ![Inhaltsfragmenteditor – Asset remote auswählen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
 
 2. Nach der Auswahl wird der Speicherort in den Asset-Informationen angezeigt:
 
-   ![Inhaltsfragmenteditor – Asset aus Remote-Repository](assets/cf-authoring-remote-asset-02.png)
+   ![Inhaltsfragmenteditor – Asset aus Remote-Repository](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
 
 ###### Remote-Assets – Einschränkungen {#remote-assets-limitations}
 
@@ -392,13 +397,32 @@ Durch Auswahl des Link-Symbols in der oberen Symbolleiste wird eine Liste aller 
 
 Beispiel:
 
-![Inhaltsfragmenteditor – Verweise anzeigen](assets/cf-authoring-show-references-link.png)
+![Inhaltsfragmenteditor – Verweise anzeigen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references-link.png)
 
 Ein Fenster mit allen zugehörigen Verweisen wird geöffnet. Wählen Sie zum Öffnen eines Verweises den Namen, den Titel oder das Link-Symbol aus.
 
 Beispiel:
 
-![Inhaltsfragmenteditor – Verweise anzeigen](assets/cf-authoring-show-references.png)
+![Inhaltsfragmenteditor – Verweise anzeigen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel inheritance
+
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Revert to inheritance (if inheritance is already canceled)
+
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+-->
 
 ## Anzeigen von Eigenschaften und Tags {#view-properties-tags}
 
@@ -407,7 +431,9 @@ Auf der Registerkarte „Eigenschaften“des rechten Bereichs können Eigenschaf
 * für das **Inhaltsfragment** – wenn derzeit die **Hauptvariante** ausgewählt ist
 * für eine bestimmte **Variante**
 
-![Inhaltsfragmenteditor – Eigenschaften](assets/cf-authoring-properties.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Inhaltsfragmenteditor – Eigenschaften](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png)
 
 ### Bearbeiten von Eigenschaften und Tags {#edit-properties-tags}
 
@@ -417,7 +443,9 @@ Auf der Registerkarte „Eigenschaften“(rechter Bereich) können Sie auch Folg
 * **Beschreibung**
 * **Tags**: über die Dropdown-Liste oder das Dialogfeld „Auswahl“
 
-  ![Inhaltsfragmenteditor – Tags verwalten](assets/cf-authoring-edit-tags.png)
+  <!-- CQDOC-23473 - new screenshot? -->
+
+  ![Inhaltsfragmenteditor – Tags verwalten](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png)
 
 ### Öffnen des Inhaltsfragmentmodells {#open-content-fragment-model}
 
@@ -425,7 +453,7 @@ Wenn Sie die **Hauptvariante** ausgewählt haben, wird der Name des zugrunde lie
 
 Beispiel:
 
-![Inhaltsfragmenteditor – Inhaltsfragmentmodell öffnen](assets/cf-authoring-open-model.png)
+![Inhaltsfragmenteditor – Inhaltsfragmentmodell öffnen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
 ## Anzeigen des Versionsverlaufs {#view-version-history}
 
@@ -435,7 +463,9 @@ Auf der Registerkarte **Versionsverlauf** im rechten Bereich werden Details zu d
 >
 >Eine neue Version wird erstellt, wenn das Inhaltsfragment veröffentlicht wird.
 
-![Inhaltsfragmenteditor – Überblick über den Versionsverlauf](assets/cf-authoring-version-history-overview.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Inhaltsfragmenteditor – Überblick über den Versionsverlauf](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### Vergleichen der Version {#compare-version}
 
@@ -447,7 +477,9 @@ So vergleichen Sie eine frühere Version mit der aktuellen:
 
 1. Wählen Sie **Vergleichen**.
 
-![Inhaltsfragmenteditor – Versionsverlaufs-Vergleich](assets/cf-authoring-version-history-compare.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Inhaltsfragmenteditor – Versionsverlaufs-Vergleich](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 Es wird eine Ansicht geöffnet, die Unterschiede zwischen der aktuellen Version und der ausgewählten vorherigen Version des Inhaltsfragments anzeigt. Aus der Dropdown-Liste **Varianten mit Änderungen** können Sie auswählen, ob Sie Unterschiede zum Hauptinhalt und/oder zum Inhalt einer Variante anzeigen möchten.
 
@@ -456,7 +488,9 @@ Unterschiede sind farblich gekennzeichnet:
 * Grün zeigt an, dass Inhalte (zur aktuellen Version) hinzugefügt wurden
 * Rot zeigt an, dass Inhalte (aus der aktuellen Version) entfernt wurden
 
-![Inhaltsfragmenteditor – Versionsverlauf-Vergleich](assets/cf-authoring-version-history-compare-versions.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Inhaltsfragmenteditor – Versionsverlauf-Vergleich](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Auf eine Version zurücksetzen {#revert-version}
 
@@ -468,7 +502,9 @@ So stellen Sie eine bestimmte Version wieder her:
 
 1. Wählen Sie **Wiederherstellen** aus.
 
-![Inhaltsfragmenteditor – Versionsverlauf wiederherstellen](assets/cf-authoring-version-history-revert.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Inhaltsfragmenteditor – Versionsverlauf wiederherstellen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
 ## Anzeigen der Sprachkopien {#view-language-copies}
 
@@ -476,7 +512,9 @@ Auf der Registerkarte **Spracheigenschaften** werden Details zu zugehörigen Spr
 
 Beispiel:
 
-![Inhaltsfragmenteditor – Sprachkopie öffnen](assets/cf-authoring-open-language-copies.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Inhaltsfragmenteditor – Sprachkopie öffnen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
@@ -496,7 +534,9 @@ Um eine produkt- und kontextbezogene Zusammenarbeit zu ermöglichen, stellt die 
 * Vorhandene Kommentare bearbeiten
 * Kommentare löschen
 
-![Inhaltsfragmenteditor – Registerkarte „Kommentare“](assets/cf-authoring-comments.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Inhaltsfragmenteditor – Registerkarte „Kommentare“](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 50baca76cdc6566570f33771f100b7e6e9cc150d
+source-git-commit: 507e5eccb71cffdc8996f5320d31321d6c7f8aeb
 workflow-type: tm+mt
-source-wordcount: '7234'
+source-wordcount: '7239'
 ht-degree: 93%
 
 ---
@@ -316,7 +316,7 @@ ht-degree: 93%
 + Sicherheit {#security}
    + [Sicherheitsüberblick für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
    + [Konfigurieren der erweiterten Netzwerkfunktionen für AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
-   + [Netzwerkverbindungstest](/help/security/network-connectivity-test.md)
+   + [Network Connectivity Test](/help/security/network-connectivity-test.md)
    + [IMS-Unterstützung für AEM as a Cloud Service](/help/security/ims-support.md)
    + [Änderungen bei der Synchronisierung von Benutzergruppen und Produktprofilen](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [Migration zur externen Identität und zur dynamischen Gruppenmitgliedschaft](/help/security/migrating-to-external-identity.md)
@@ -518,6 +518,7 @@ ht-degree: 93%
          + [Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analysieren der Struktur](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Vorschau von Fragmenten](/help/sites-cloud/administering/content-fragments/preview.md)
+         + [Wiederverwenden von Inhaltsfragmenten mit MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Inhaltsfragmente mit Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -1036,7 +1037,7 @@ ht-degree: 93%
       + [Erste Schritte](/help/forms/interactive-communication/getting-started.md)
       + [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Erstellen einer interaktiven Kommunikationsvorlage](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Erstellen eines interaktiven Kommunikationsfragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Einführung in die interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
       + [Erstellen der ersten interaktiven Kommunikation](/help/forms/create-your-first-communication.md)
    + Component {#component}
@@ -1068,8 +1069,8 @@ ht-degree: 93%
       + [Kopieren und Einfügen von interaktiver Kommunikation](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [Workflow in interaktiver Kommunikation starten](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [Dynamische Tabelle erstellen](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
-   + Benutzeroberfläche verknüpfen {#associateui}
-      + [Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+   + Associate UI {#associateui}
+      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [Übermittlungs-Workflow für Associate UI - IC-Generierung der PDF-Ausgabe](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
@@ -1086,7 +1087,7 @@ ht-degree: 93%
    + [AEM Forms Communications-APIs](/help/forms/aem-forms-communication-api-overview.md)
    + [Kommunikations-APIs – Synchrone Verarbeitung](/help/forms/aem-forms-cloud-service-communications.md)
    + [Kommunikations-APIs – Batch-Verarbeitung](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-   + [Forms Communications-APIs - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+   + [Forms Communications APIs - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
    + [Generieren von AFP-Output mithilfe der AEM Forms-API](/help/forms/document-generation-afp-api.md)
    + [OAuth Server-zu-Server-Authentifizierung](/help/forms/oauth-api-authetication.md)
    + [JWT(JSON Web Token) Server-zu-Server-Authentifizierung](/help/forms/jwt-api-authentication.md)
@@ -1130,7 +1131,7 @@ ht-degree: 93%
       + [Überblick](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
          + [Überblick](/help/ai-in-aem/agents/brand-experience/overview.md)
-         + Erlebnisproduktionsagent {#experience-production}
+         + Experience Production Agent {#experience-production}
             + [Überblick](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
             + [Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
             + [Kommunikationserstellungsauftrag](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
@@ -1278,7 +1279,7 @@ ht-degree: 93%
          + Kaskadierende Dropdown-Liste {#cascading-drop-down-list}
             + [Einführung](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [Erstellen einer API-Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [Formular erstellen](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+            + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + Dokumentenbasiertes Authoring {#getting-started-edge-delivery-services-forms}
          + [Erstellen des ersten Formulars: Schnellstartanleitung mit Google Tabellen und Excel](/help/edge/docs/forms/tutorial.md)
          + [Erstellen von Formularen mit Google Tabellen oder Excel: Schrittweise Anleitung](/help/edge/docs/forms/create-forms.md)
@@ -1321,14 +1322,14 @@ ht-degree: 93%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
       + [Inhaltsfragment-Selektor – Verwandte Eigenschaften](/help/headless/content-fragment-selector/properties.md)
       + [Integration mit einem Adobe-Programm](/help/headless/content-fragment-selector/integrate-adobe-application.md)
-      + [Integration mit Nicht-Adobe- oder Drittanbieterprogrammen](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
-      + [Integrieren des Inhaltsfragment-Selektors mit Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
+      + [Integrate with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+      + [Integrate Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
    + [AEM-APIs für die Bereitstellung und Verwaltung strukturierter Inhalte](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL-API {#graphql-api}
       + [GraphQL-API für Inhaltsfragmente](/help/headless/graphql-api/content-fragments.md)

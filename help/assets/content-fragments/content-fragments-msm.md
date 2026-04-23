@@ -1,12 +1,12 @@
 ---
 title: Wiederverwenden von Inhaltsfragmenten mit MSM und Live Copies
 description: Erfahren Sie, wie Sie mit der Live Copy-Funktion von MSM dieselben oder ähnliche Inhaltsfragmentinhalte an mehreren Stellen verwenden können, während sie mit dem Quellinhalt synchronisiert werden.
-badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 99%
@@ -38,11 +38,21 @@ Mit MSM für Inhaltsfragmente können Sie:
 
 Mit MSM für Inhaltsfragmente in Verbindung mit Funktionen im Inhaltsfragmenteditor können Sie die Vererbung auf Feldebene unterbrechen und reaktivieren.
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!CAUTION]
 >
 >MSM für Inhaltsfragmente ist nur verfügbar, wenn Inhaltsfragmente über die **Assets**-Konsole verwendet werden.
 >
 >Die MSM-Funktionalität ist *nicht* verfügbar, wenn die **Inhaltsfragmentkonsole** verwendet wird.
+
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
 
 ## Anleitung {#how-to}
 
