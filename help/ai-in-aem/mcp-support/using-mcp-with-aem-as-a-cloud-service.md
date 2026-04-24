@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c7c8a616e00a7e97ac9b8ab50411c0a9e9417273
+source-git-commit: 5056eefbc6d6e40a94adfce3c64b7745f38b96b7
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Die wichtigsten Vorteile sind:
 
 * **Interaktion in natürlicher Sprache statt API-Programmierung**
 MCP-Tools beschreiben, welche Vorgänge verfügbar sind und wie diese aufgerufen werden können. Das LLM verwendet diese Schemata, um zu entscheiden, welche Tools aufgerufen werden sollen und mit welchen Parametern.
-* **Einheitliches Erlebnis über Anwendungen hinweg**
+* **Anwendungsübergreifendes konsistentes Erlebnis**
 Dieselben AEM MCP-Tools können von mehreren MCP-kompatiblen Programmen aus verwendet werden, sodass Teams dort arbeiten können, wo sie am produktivsten sind, während sie dieselben zugrunde liegenden AEM-Funktionen aufrufen.
 * **Sicherheit und Governance erhalten**
 Anfragen an AEM MCP-Tools werden unter der Identität des authentifizierten Benutzers ausgeführt, und jedes Tool erzwingt die bestehenden AEM-Berechtigungen des Benutzers. KI-gestützte Vorgänge folgen denselben Zugriffsregeln wie manuelle Arbeit in AEM.
@@ -52,10 +52,10 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 
 | **MCP-Server** | **Endpunkt** | **Beschreibung** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Inhalt** | `/content` | Alle Inhaltsvorgänge auf niedriger Ebene, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten, Fragmente und Assets. |
-| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten, Fragmente und Assets. |
+| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import. |
+| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten und Inhaltsfragmente. |
 | **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. |
-| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Kunden müssen sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en), um auf den Experience Governance MCP zugreifen zu können. |
+| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Kunden müssen sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz ](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en), um auf den Experience Governance MCP zugreifen zu können. |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
@@ -65,7 +65,7 @@ Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden,
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#x200B; und im &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)Cloud Manager MCP Server-.
+Weitere Informationen zu [ Funktionen und deren Verwendung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im [Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 
