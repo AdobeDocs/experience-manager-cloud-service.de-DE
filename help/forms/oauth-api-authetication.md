@@ -5,10 +5,13 @@ role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 7%
+source-wordcount: '908'
+ht-degree: 11%
 
 ---
 
@@ -20,7 +23,7 @@ Die OAuth Server-zu-Server-Authentifizierung ermöglicht den sicheren, Token-bas
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
+* Stellen Sie sicher, dass Sie [Zugriff auf die Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) speziell für die von Ihnen verwendete Umgebung haben.
 * [Weisen Sie in der Adobe Admin Console die Rolle „Systemadministrator“ oder „Entwickler“ zu](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) um den Zugriff auf die Adobe Developer Console zu ermöglichen.
 
 ## Wie wird ein Zugriffs-Token mithilfe der OAuth-Server-zu-Server-Authentifizierung generiert?
@@ -107,40 +110,40 @@ Fügen Sie Forms-APIs hinzu, je nachdem, was Sie tun möchten:
 
 >[!ENDTABS]
 
-Sie können die API und die Authentifizierungsmethode auch zu Ihrem vorhandenen Projekt hinzufügen, indem Sie auf **Zum Projekt hinzufügen** > **API**\
-![API zu vorhandenem Projekt hinzufügen](/help/forms/assets/add-api-existing-project.png)
+You can also  add the API and authentication method to your existing project by clicking **Add to Project** > **API**\
+![Add API to existing Project](/help/forms/assets/add-api-existing-project.png)
 
-### &#x200B;3. Produktprofil hinzufügen
+### 3. Add Product Profile
 
-Das Produktprofil stellt Berechtigungen (oder Autorisierung) für Anmeldeinformationen für den Zugriff auf die AEM-Ressourcen bereit.
+Product profile provides permissions (or authorization) for credentials to access the AEM resources.
 
-1. Wählen Sie das **Produktprofil** aus, das Ihrer AEM-Instanz-URL (`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`) entspricht.
+1. Select the **Product Profile** that matches your AEM instance URL (`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`).
 
-   * **Service-Typ** - gibt die Services oder Berechtigungen an, die mit der AEM-Instanz verknüpft sind
+   * **Service Type** –  specifies services or permissions associated with the AEM instance
 
-   * **Umgebungstyp** - gibt an, ob die Umgebung für den Autoren- oder Veröffentlichungs-Service ist
+   * **Environment Type** – specifies whether the envrionment is for Author or Publish service
 
-   * **Programm XXX** - identifiziert die Cloud Manager-Programm-ID.
+   * **Program XXX** – identifies the Cloud Manager program ID
 
-   * **Umgebung XXX** - identifiziert die spezifische Umgebungs-ID innerhalb dieses Programms
+   * **Environment XXX** – identifies the specific environment ID within that program
 
    >[!NOTE]
    >
-   > Produktprofile sind an eine bestimmte AEM-Instanz (Programm + Umgebung) gebunden. Wählen Sie immer das Profil aus, das Ihrer Instanz-URL entspricht.
+   > Product profiles are tied to a specific AEM instance (program + environment). Always choose the profile that matches your instance URL.
 
-2. Klicken Sie auf **Konfigurierte API speichern**. Die API und das Produktprofil werden zu Ihrem Projekt hinzugefügt
+2. Klicken Sie auf **Konfigurierte API speichern**. The API and Product Profile are added to your project
 
-   ![Projektkonfiguration auswählen](/help/forms/assets/adc-add-product-profile.png)
+   ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
 
-### &#x200B;4. Erstellen und Speichern von Anmeldeinformationen
+### 4. Generate and Save Credentials
 
-1. Navigieren Sie zu Ihrem Projekt in Adobe Developer Console
-2. Klicken Sie auf **OAuth Server-zu-Server** Anmeldedaten
-3. Sehen Sie sich den Abschnitt **Anmeldedaten** an
+1. Navigate to your project in Adobe Developer Console
+2. Click **OAuth Server-to-Server** credential
+3. View the **Credential details** section
 
    ![Anzeigen der Anmeldeinformationen](/help/forms/assets/adc-view-credential.png)
 
-**API-Anmeldeinformationen aufzeichnen**
+**Record API Credentials**
 
 ```text
     API Credentials:
@@ -152,19 +155,19 @@ Das Produktprofil stellt Berechtigungen (oder Autorisierung) für Anmeldeinforma
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### &#x200B;5. Erzeugung von Zugriffstoken
+### 5. Access Token Generation
 
-Erstellen Sie das Zugriffstoken entweder manuell oder programmgesteuert:
+Generate the Access token either manually or programmatically:
 
 >[!BEGINTABS]
 
->[!TAB Zum Testen]
+>[!TAB For Testing]
 
-Manuelles Generieren von Zugriffs-Token in Adobe Developer Console:
+Generate access tokens manually in Adobe Developer Console:
 
-1. **Navigieren Sie zu Ihrem Projekt**
-   1. Öffnen Sie in Adobe Developer Console Ihr Projekt
-   2. Klicken Sie auf **OAuth Server-zu-Server**
+1. **Navigate to your Project**
+   1. In Adobe Developer Console, open your project
+   2. Click **OAuth Server-to-Server**
 
 2. **Zugriffs-Token generieren**
    1. Klicken Sie im API-Abschnitt Ihres Projekts auf **Schaltfläche** Zugriffs-Token generieren“.

@@ -1,59 +1,62 @@
 ---
-title: Wie wird die JWT-Authentifizierung (JSON Web Token) eingerichtet?
-description: Erfahren Sie, wie Sie die JWT-Authentifizierung (JSON Web Token) für Adobe Experience Manager Forms as a Cloud Service konfigurieren
+title: How to set up JWT (JSON Web Token) Authentication?
+description: Learn how to configure JWT (JSON Web Token) authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 12%
+source-wordcount: '478'
+ht-degree: 13%
 
 ---
 
-# JWT-Server-zu-Server-Authentifizierung (JSON Web Token)
+# JWT (JSON Web Token) Server-to-Server Authentication
 
-Die JWT-Server-zu-Server-Authentifizierung in AEM Forms, insbesondere für Server-seitige Integrationen mit AEM as a Cloud Service, umfasst einen bestimmten Prozess für die sichere Interaktion mit AEM-Services. Die JWT-Server-zu-Server-Authentifizierung wird von AEM Developer Console unterstützt.
+JWT server-to-server authentication in AEM Forms, particularly for server-side integrations with AEM as a Cloud Service, involves a specific process to securely interact with AEM services. JWT server-to-server authentication is supported by AEM Developer Console.
 
 ## Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie Zugriff auf die für [&#x200B; verwendete Umgebung spezifische &#x200B;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)Adobe Cloud Manager haben.
-* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Ensure that you have access to the [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specific to the environment you use.
+* Assign the [System Administrator or Developer role to access Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
-## Wie wird ein Zugriffs-Token mit JWT-Anmeldeinformationen generiert?
+## How to Generate an Access Token Using JWT Credentials?
 
-Führen Sie die folgenden Schritte aus, um zu zeigen, wie Sie ein Zugriffs-Token aus den JWT-Anmeldeinformationen generieren.
+Follow the steps below which shows you how to generate an access token from the JWT credentials.
 
 1. **Adobe Cloud Manager**
 
-   1. Melden Sie sich bei Ihrem [Cloud Manager-Konto an](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
-   2. Klicken Sie im ausgewählten Programm auf **[!UICONTROL Programmübersicht]**.
+   1. Log in to your [Cloud Manager account](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html).
+   2. On your selected program, click **[!UICONTROL Program Overview]**.
 
-      ![Cloud Manager-Konto](/help/forms/assets/jwt-cloud-manager-landing.png)
+      ![Cloud Manager Account](/help/forms/assets/jwt-cloud-manager-landing.png)
 
-   3. Klicken Sie in Ihrem Programm auf das Dreipunkt-Menü und wählen Sie **[!UICONTROL Developer Console]**.
+   3. On your program, click three-dots menu and select **[!UICONTROL Developer Console]**.
 
       ![Entwicklerkonsole](/help/forms/assets/jwt-developer-console.png)
 
 2. **AEM Developer Console**
-   1. Anmelden bei AEM Developer Console
-   2. Klicken Sie **[!UICONTROL der oberen Menüleiste auf]** Integrationen“.
+   1. Login in AEM Developer Console
+   2. Click **[!UICONTROL Integrations]** located on the upper menu bar.
 
       ![Integrationen](/help/forms/assets/jwt-integrations.png)
 
-   3. Klicken Sie auf die Option **[!UICONTROL Neues technisches Konto erstellen]**.
+   3. Click the option to **[!UICONTROL Create new technical account]**.
 
-      ![Neues technisches Konto erstellen](/help/forms/assets/jwt-creae-new-tech-account.png)
+      ![Create new technical account](/help/forms/assets/jwt-creae-new-tech-account.png)
 
-   Wenn Sie auf Neues technisches Konto erstellen klicken, werden die erforderlichen Informationen zum Generieren des Zugriffs-Tokens wie Client-ID und Client-Geheimnis zusammen mit anderen technischen Kontoinformationen wie privatem Schlüssel, öffentlichem Schlüssel und Ablaufdatum generiert.
+   Once you click on create a new technical account, required information to generate access token such as client id and client secret along with other technical account information including private key, public key, expiration date generates.
 
-   ![JWT-Anmeldeinformationen](/help/forms/assets/jwt-credentials.png)
+   ![JWT  Credentials](/help/forms/assets/jwt-credentials.png)
 
 
-3. **Berechtigungen generieren und speichern**
+3. **Generate and Save Credentials**
 
    1. API-Anmeldeinformationen für Einträge
 
