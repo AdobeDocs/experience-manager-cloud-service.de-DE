@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die neue Touch-Benutzeroberfläche, die die
 feature: Security
 role: Admin
 exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
-source-git-commit: bdc5249a7a48224007c1ab697343245001e03168
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+source-git-commit: 99632006310beebe13c5d5885a8e9e7937c8f627
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 86%
 
 ---
 
@@ -65,7 +65,7 @@ Berechtigungen können hinzugefügt werden, indem Sie mithilfe des Textfelds suc
 >
 >Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie unter [Verwaltung von Benutzenden, Gruppen und Zugriffsrechten](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
-![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie neuen Eintrag für „dam-users“ hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad gezeigt.](assets/image2019-3-21_0-6-53.png)
+![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie einen neuen Eintrag für „dam-users“ hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad angezeigt.](assets/image2019-3-21_0-6-53.png)
 
 Nachdem die Liste der Berechtigungen ausgewählt wurde, lässt sich der Berechtigungstyp auswählen: „Ablehnen“ oder „Zulassen“, wie unten dargestellt.
 
@@ -126,7 +126,7 @@ Sie können auf die Berechtigungsansicht auf der Touch-optimierten Benutzeroberf
 
 Sobald Sie die Berechtigungsansicht gestartet haben, können Sie je nach Ihren bevorzugten Anzeigeoptionen auf **Knotenansicht** oder **Gefilterte Ansicht** in der rechten oberen Ecke klicken.
 
-#### Knotenansicht
+#### Knotenansicht {#node-view}
 
 In dieser Ansicht werden ACLs für jeden einzelnen Knoten (Pfad) angezeigt. Hier finden Sie Informationen zu folgenden Themen:
 
@@ -136,14 +136,17 @@ Benutzende haben die Möglichkeit, ACLs hinzuzufügen, zu entfernen oder zu aktu
 
 ![Knotenansicht](assets/image-2025-2-5_15-26-2.png)
 
-#### Gefilterte Ansicht
+#### Audit-Ansicht {#audit-view}
 
-In dieser Ansicht können Benutzende effizient nach Berechtigungen für einen angegebenen Pfad und Prinzipale suchen. In dieser Ansicht können Benutzende einfach die Art der Berechtigungen bestimmen, die einer Gruppe von Prinzipalen für den ausgewählten Pfad gewährt werden.
-Darüber hinaus bietet die gefilterte Ansicht Einblicke in effektive ACLs. Es werden die mit dem übergeordneten Knoten des ausgewählten Pfads verknüpften ACLs angezeigt, wobei der ausgewählte Prinzipal und alle allgemeinen Prinzipale berücksichtigt werden.
+In dieser Ansicht können Benutzer effizient nach angewendeten Berechtigungen unter einem angegebenen Pfad und ausgewählten Prinzipalen suchen. In dieser Ansicht können Benutzer die Art der Berechtigungen, die einem oder mehreren Prinzipalen für den ausgewählten Pfad gewährt wurden, eindeutig identifizieren.
 
-![Filteransicht](assets/FilteredView.png)
+Die Gruppenmitgliedschaft kann optional durch Aktivieren des entsprechenden Kontrollkästchens angezeigt werden. Wenn diese Option aktiviert ist, werden bei der Berechtigungsprüfung alle Gruppen des Prinzipals berücksichtigt, nicht nur der ausgewählte Prinzipal.
 
-### Berechtigungsansicht im Repository-Browser {#the-repository-browser-permissions-view}
+Darüber hinaus bietet die Audit-Ansicht Einblicke in effektive ACLs. Es werden die mit dem übergeordneten Knoten des ausgewählten Pfads verknüpften ACLs angezeigt, wobei der ausgewählte Prinzipal sowie alle allgemeinen Prinzipale berücksichtigt werden.
+
+![Filteransicht](assets/audit-view.png)
+
+### Die Repository-Browser-Berechtigungen und die Audit-Ansicht {#the-repository-browser-permissions-and-audit-view}
 
 Sie können auch über den [Repository-Browser](/help/implementing/developing/tools/repository-browser.md) auf die Berechtigungsansicht zugreifen.
 
@@ -155,7 +158,11 @@ Sie können wie folgt darauf zugreifen:
 
 1. Klicken Sie im Repository-Browser auf die Registerkarte **Berechtigungen**.
 
-   ![Registerkarte „Berechtigungen“](assets/image-2025-2-5_15-29-33.png)
+   ![Registerkarte „Berechtigungen“](/help/security/assets/permissions-tab.png)
+
+1. Die Audit-Ansicht ermöglicht es Benutzenden, auf effiziente Weise nach angewendeten Berechtigungen unter einem angegebenen Pfad und ausgewählten Prinzipalen zu suchen. Die Gruppenmitgliedschaft kann optional durch Aktivieren des entsprechenden Kontrollkästchens angezeigt werden.
+
+   ![Registerkarte „Audit“](/help/security/assets/audit-tab.png)
 
 **Hinweis**: Sie benötigen Administratorrechte zum Anzeigen der Berechtigungen. Befolgen Sie die [hier](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) erwähnten Schritte, um auf die Berechtigungen zuzugreifen.
 
