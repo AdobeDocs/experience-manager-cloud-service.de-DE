@@ -4,9 +4,9 @@ description: Versionshinweise für Adobe Experience Manager (AEM) as a Cloud Ser
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 8b477bea40eec0b0c5aadea68f5b40577a2aa294
+source-git-commit: a1fc361dd4d060bf2aa4a085188ddc28d996c62a
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '678'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Produkt | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2026,3,0 |
+| Version | 2026.4.0 |
 | Typ | Kontinuierliche Aktualisierungen |
 | Verfügbarkeitsdatum | Kontinuierliche Aktualisierung |
 
@@ -26,7 +26,7 @@ Durch das kontinuierliche Versionsmodell in [!DNL Adobe Experience Manager] as a
 
 * **Funktionsveröffentlichungen** erfolgen in einem vorhersehbaren monatlichen Rhythmus und konzentrieren sich auf neue Funktionen und Produktinnovationen.
    * In den [aktuellen Versionshinweisen](/help/release-notes/release-notes-cloud/release-notes-current.md) finden Sie Informationen zu den neuesten veröffentlichten Funktionen.
-* **Wartungsversionen** werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen. 
+* **Wartungsversionen** werden häufig veröffentlicht und konzentrieren sich auf Sicherheits-Updates, Fehlerbehebungen und Leistungsverbesserungen.
    * Dadurch wird sichergestellt, dass [!DNL Adobe Experience Manager] as a Cloud Service mit allen wichtigen Korrekturen stets auf dem neuesten Stand ist.
    * In den [aktuellen Wartungsversionshinweisen](/help/release-notes/maintenance/latest.md) finden Sie Informationen zur neuesten Wartungsversion.
 
@@ -47,7 +47,7 @@ So bereiten Sie sich auf die Veröffentlichung einer Version vor:
 1. [Markieren der Termine im Kalender](#mark-calendars)
 1. [Lesen der Versionshinweise](#release-notes)
 1. [Zugreifen auf und Ausprobieren von bevorstehenden Funktionen](#upcoming-features)
-1. [Schulen der Benutzenden &#x200B;](#train-users)
+1. [Schulen der Benutzenden](#train-users)
 
 ## Markieren der Termine im Kalender {#mark-calendars}
 
@@ -75,7 +75,7 @@ Weitere Informationen zum Verfügbarmachen bevorstehender Funktionen finden Sie 
 * Wenn sie Teil eines Alpha- oder Beta-Programms ist oder es sich um eine Funktion mit eingeschränkter Verfügbarkeit handelt, müssen Sie sich in der Regel für die Aktivierung der Funktion an Adobe wenden, wie in den Versionshinweisen beschrieben.
 * Wenn sie Teil des Vorabversionskanals ist, müssen Sie [den Vorabversionskanal in einer Entwicklungs- oder Sandbox-Umgebung aktivieren.](/help/release-notes/prerelease.md)
 
-## Schulung von Benutzenden  {#train-users}
+## Schulung von Benutzenden {#train-users}
 
 Nachdem Sie die bevorstehenden Funktionen getestet und entschieden haben, sie in Ihren Projekten zu nutzen, müssen Sie Ihre Benutzerinnen und Benutzer schulen.
 

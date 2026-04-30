@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e1142a763f44a2c797f1859c2ad44807bc2935b9
+source-git-commit: 6e0455e325e7988a9f7081878dff6e568479c322
 workflow-type: tm+mt
-source-wordcount: '7245'
-ht-degree: 93%
+source-wordcount: '7384'
+ht-degree: 90%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 93%
    + Versionshinweise zu AEMaaCS-Funktionen {#release-notes}
       + [Aktuelle Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [Versionshinweise für 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
          + [Versionshinweise für 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [Versionshinweise für 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
       + 2025 {#2025}
@@ -106,10 +107,10 @@ ht-degree: 93%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2026 {#2026}
-         + [Neueste Wartungversionshinweise für 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
-         + [Neueste Wartungversionshinweise für 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
-         + [Neueste Wartungversionshinweise für 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
-         + [Neueste Wartungversionshinweise für 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
+         + [Wartungsversionshinweise für 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
+         + [Wartungsversionshinweise für 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
+         + [Wartungsversionshinweise für 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
+         + [Wartungsversionshinweise für 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
       + 2025 {#2025}
          + [Wartungsversionshinweise für 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
          + [Wartungsversionshinweise für 2025.11.0](/help/release-notes/maintenance/2025/2025-11-0.md)
@@ -136,7 +137,7 @@ ht-degree: 93%
       + 2023 {#2023}
          + [Wartungsversionshinweise für 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
          + [Wartungversionshinweise für 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
-         + [Neueste Wartungversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [Wartungsversionshinweise für 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
          + [Wartungversionshinweise für 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
          + [Wartungversionshinweise für 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md)
          + [Wartungversionshinweise für 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md)
@@ -260,17 +261,18 @@ ht-degree: 93%
       + [Aktuelle Versionshinweise für den universellen Editor](/help/release-notes/universal-editor/current.md)
       + [Vorschau von Versionshinweisen für den universellen Editor](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
-         + [Versionshinweise für 2026.04.02](/help/release-notes/universal-editor/2026/2026-04-02.md)
-         + [Versionshinweise für 2026.03.26](/help/release-notes/universal-editor/2026/2026-03-26.md)
-         + [Versionshinweise für 2026.03.19](/help/release-notes/universal-editor/2026/2026-03-19.md)
-         + [Versionshinweise für 2026.03.12](/help/release-notes/universal-editor/2026/2026-03-12.md)
-         + [Versionshinweise für 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
-         + [Versionshinweise für 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
-         + [Versionshinweise für 2026.02.19](/help/release-notes/universal-editor/2026/2026-02-19.md)
-         + [Versionshinweise für 2026.02.13](/help/release-notes/universal-editor/2026/2026-02-13.md)
-         + [Versionshinweise für 2026.02.05](/help/release-notes/universal-editor/2026/2026-02-05.md)
-         + [Versionshinweise für 2026.01.29](/help/release-notes/universal-editor/2026/2026-01-29.md)
-         + [Versionshinweise für 2026.01.22](/help/release-notes/universal-editor/2026/2026-01-22.md)
+         + [Versionshinweise 2026.04.09](/help/release-notes/universal-editor/2026/2026-04-09.md)
+         + [Versionshinweise zu 2026.04.02](/help/release-notes/universal-editor/2026/2026-04-02.md)
+         + [Versionshinweise 2026.03.26](/help/release-notes/universal-editor/2026/2026-03-26.md)
+         + [Versionshinweise zu 2026.03.19](/help/release-notes/universal-editor/2026/2026-03-19.md)
+         + [Versionshinweise zu 2026.03.12](/help/release-notes/universal-editor/2026/2026-03-12.md)
+         + [Versionshinweise 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
+         + [Versionshinweise 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
+         + [Versionshinweise zu 2026.02.19](/help/release-notes/universal-editor/2026/2026-02-19.md)
+         + [Versionshinweise 2026.02.13](/help/release-notes/universal-editor/2026/2026-02-13.md)
+         + [Versionshinweise 2026.02.05](/help/release-notes/universal-editor/2026/2026-02-05.md)
+         + [Versionshinweise 2026.01.29](/help/release-notes/universal-editor/2026/2026-01-29.md)
+         + [Versionshinweise 2026.01.22](/help/release-notes/universal-editor/2026/2026-01-22.md)
          + [Versionshinweise für 2026.01.15](/help/release-notes/universal-editor/2026/2026-01-15.md)
       + 2025 {#2025}
          + [Versionshinweise für 2025.12.12](/help/release-notes/universal-editor/2025/2025-12-12.md)
@@ -494,7 +496,7 @@ ht-degree: 93%
          + [Arbeiten mit Workflows](/help/sites-cloud/authoring/workflows/overview.md)
          + [Anwenden von Workflows auf Seiten](/help/sites-cloud/authoring/workflows/applying.md)
          + [Teilnehmen an Workflows](/help/sites-cloud/authoring/workflows/participating.md)
-      + Personalisierung    {#personalization}
+      + Personalisierung {#personalization}
          + [Übersicht über die Personalisierung](/help/sites-cloud/authoring/personalization/overview.md)
          + [Vorschau von Seiten mit ContextHub-Daten](/help/sites-cloud/authoring/personalization/contexthub.md)
          + [Verfassen zielgerichteter Inhalte im Targeting-Modus](/help/sites-cloud/authoring/personalization/targeted-content.md)
@@ -567,6 +569,7 @@ ht-degree: 93%
             + [Assistent „Sprachkopie erstellen“](/help/sites-cloud/administering/translation/wizard.md)
             + [Identifizieren zu übersetzender Inhalte](/help/sites-cloud/administering/translation/rules.md)
             + [Konfigurieren des Frameworks für die Übersetzungsintegration](/help/sites-cloud/administering/translation/integration-framework.md)
+            + [Konfigurieren der KI-Übersetzungsintegration](/help/sites-cloud/administering/translation/ai-translation-integration.md)
             + [Herstellen einer Verbindung mit Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [Best Practices für die Übersetzung](/help/sites-cloud/administering/translation/best-practices.md)
       + [Verwalten von Tags](/help/sites-cloud/administering/tags.md)
@@ -596,7 +599,6 @@ ht-degree: 93%
    + [Fehlerbehebung bei AEM Assets-Problemen](/help/assets/troubleshoot-aem-assets.md)
    + [Assets-Benutzende mit Status „Mitarbeiter“](/help/assets/assets-collaborator-users.md)
    + Verwalten digitaler Assets {#manage}
-      + [Content Advisor für den Zugriff auf AEM-Inhalte in Adobe-Programmen](/help/assets/content-advisor-adobe-applications.md)
       + [Freigeben von Assets](/help/assets/share-assets.md)
       + [Erneutes Verarbeiten von Assets](/help/assets/reprocessing.md)
       + [Erkennung von Malware](/help/assets/malware-detection.md)
@@ -631,18 +633,6 @@ ht-degree: 93%
       + [Verarbeiten von Assets mithilfe von [!DNL Creative Cloud] -APIs](/help/assets/cc-api-integration.md)
       + [Farb-Tags für Bilder](/help/assets/color-tag-images.md)
       + [PDF-Dokumente verwalten](/help/assets/manage-pdf-documents.md)
-      + Micro-Frontend-Asset-Wähler {#asset-selector}
-         + [Überblick über den Asset-Wähler](/help/assets/overview-asset-selector.md)
-         + Asset-Wähler-Integrationen {#asset-selector-integration}
-            + [Überblick über die Asset-Wähler-Integrationen](/help/assets/integrate-asset-selector.md)
-            + [Integrieren des Asset-Wählers mit einer Adobe-Anwendung](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integrieren des Asset-Wählers mit einer Nicht-Adobe-Anwendung](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integrieren des Asset-Wählers in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-         + [Eigenschaften des Asset-Wählers](/help/assets/asset-selector-properties.md)
-         + [Beispiele für den Asset-Wähler](/help/assets/asset-selector-examples.md)
-         + [Anpassungen des Asset-Wählers](/help/assets/asset-selector-customization.md)
-         + [Hochladen des Asset-Wählers](/help/assets/asset-selector-upload.md)
-         + [Sammlungen des Asset-Wählers](/help/assets/asset-selector-collections.md)
       + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
    + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
       + [Erkennen doppelter Assets](/help/assets/detect-duplicate-assets.md)
@@ -665,7 +655,13 @@ ht-degree: 93%
    + Freigeben und Verteilen von Assets {#brand-portal}
       + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Veröffentlichen von Assets in  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Veröffentlichen von Assets von [!DNL Brand Portal] zu [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
+      + [Veröffentlichen von Assets von [!DNL Brand Portal] bis [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de)
+
+   + Content-Beratung {#content-advisor}
+      + [Content Advisor für den Zugriff auf AEM-Inhalte in Adobe und Nicht-Adobe-Programmen](/help/assets/integrate-adobe-non-adobe-applications.md)
+      + [Eigenschaften von Content Advisor](/help/assets/content-advisor-properties.md)
+      + [Anpassungen von Content Advisor](/help/assets/content-advisor-customization.md)
+      + [Integrieren in Dynamic Media mit OpenAPI-Funktionen](/help/assets/integrate-dynamic-media-open-api.md)
    + Inhaltsfragmente {#content-fragments}
       + [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
       + [Headless-Bereitstellung mit Inhaltsfragmenten und GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -705,8 +701,8 @@ ht-degree: 93%
       + [Verwalten von Viewer-Vorgaben für Dynamic Media](/help/assets/dynamic-media/managing-viewer-presets.md)
       + [Anwenden von Viewer-Vorgaben für Dynamic Media](/help/assets/dynamic-media/viewer-presets.md)
       + [Stapelsatz-Vorgaben](/help/assets/dynamic-media/batch-set-presets-dm.md)
-      + [Invalidierung des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-      + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+      + [Ungültig machen des CDN-Cache mithilfe von Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+      + [Ungültig machen des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Intelligente Bildbearbeitung](/help/assets/dynamic-media/imaging-faq.md)
       + [Intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis](/help/assets/dynamic-media/client-side-dpr.md)
       + [Bereitstellen von Dynamic Media-Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
@@ -874,14 +870,14 @@ ht-degree: 93%
          + [Integrieren eines adaptiven Formulars in das Formulardatenmodell](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Integrieren eines adaptiven Formulars mit Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + Verbinden eines adaptiven Formulars mit Microsoft® SharePoint{#connect-to-sharepoint}
-            + [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Verbinden eines adaptiven Formulars mit Microsoft® SharePoint](/help/forms/configure-submit-action-sharepoint.md)
             + [Übermitteln an eine SharePoint-Dokumentbibliothek](/help/forms/connect-forms-to-sharepoint-document-library.md)
             + [Übermitteln an eine SharePoint-Liste](/help/forms/connect-forms-to-sharepoint-list.md)
             + [Konfigurieren von SharePoint-Sites mit eingeschränktem Zugriff mithilfe des Autorisierungsumfangs](/help/forms/configure-sharepoint-site-limited-access.md)
          + [Übermitteln eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Übermitteln eines adaptiven Formulars an Azure Blob-Speicher](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
-         + [Übermitteln eines adaptiven Formulars an Microsoft](/help/forms/configure-submit-action-onedrive.md)
+         + [Senden eines adaptiven Formulars an Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
          + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
          + [Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
          + Integrieren von adaptiven Formularen mit Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
@@ -945,9 +941,9 @@ ht-degree: 93%
                + [Hinzufügen von Links zu einer Sites-Seite mithilfe der Komponente „Link“](/help/forms/add-form-link-to-aem-sites-page.md)
       + Foundation-Komponenten {#authoring-adaptive-forms-foundation-components}
          + Konvertieren von PDF-Formularen in adaptive Formulare {#afcs}
-            + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
-            + [Konvertieren eines vorhandenen PDF-Formulars in ein adaptives Formular](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=de)
-            + [Überprüfen und Korrigieren von konvertierten Formularen](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=de#welcome-to-review-and-correct-editor)
+            + [Einführung in den Dienst für die automatische Formularkonvertierung (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=de)
+            + [Konvertieren eines bestehenden PDF-Formulars in ein adaptives Formular](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=de)
+            + [Überprüfen und Korrigieren konvertierter Formulare](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=de#welcome-to-review-and-correct-editor)
          + Erstellen eines adaptiven Formulars {#create-an-adaptive-form-on-forms-cs}
             + [Einführung in das Authoring eines adaptiven Formulars](/help/forms/introduction-forms-authoring.md)
             + [Verfassen von kontextsensitiver Hilfe für Formularfelder](/help/forms/authoring-in-field-help.md)
@@ -1105,10 +1101,10 @@ ht-degree: 93%
       + [Informationen zum Dashboard zur Wertentwicklung](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Verwenden des Dashboards zur Wertentwicklung zur Analyse der Nutzungs-Trends von Formularen und Dokumenten](/help/forms/using-the-value-realization-dashboard.md)
    + Entwickler-API-Referenz {#aem-forms-developer-api-reference}
-      + [API-Referenz für adaptive Formulare](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
-      + [Kommunikations-API-Referenz zu AEM Forms Cloud Service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [JavaScript-API-Referenz zu AEM Forms Cloud Service](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Java-API-Referenz zu AEM Forms Cloud Service](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
+      + [API-Referenz für adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [AEM Forms Cloud Service Communications API-Referenz](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [AEM Forms Cloud Service JavaScript API-Referenz](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM Forms Cloud Service Java API-Referenz](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + Fehlerbehebung {#troubleshooting-aem-forms-cloud-service}
       + [Installation und Konfiguration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher- und CDN-Caching](/help/forms/troubleshooting-caching-performance.md)
@@ -1317,13 +1313,13 @@ ht-degree: 93%
       + [Inhaltsfragment](/help/headless/setup/create-content-fragment.md)
       + [GraphQL-Endpunkt](/help/headless/setup/create-api-request.md)
    + Inhaltsfragmente {#content-fragments}
-      + [Übersicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=de)
+      + [Überblick](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=de)
       + [Inhaltsfragmentmodelle](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=de)
       + [Verwalten von Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=de)
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1446,7 +1442,7 @@ ht-degree: 93%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)
-      + [Erweiterte Netzwerke](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=de)
+      + [Erweiterte Netzwerkfunktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=de)
       + Edge Delivery-Sites {#edge-delivery-sites}
          + [Einführung in Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Hinzufügen einer Edge Delivery-Site zu Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
@@ -1551,9 +1547,9 @@ ht-degree: 93%
          + [Entwicklungsübersicht](/help/implementing/universal-editor/developer-overview.md)
          + [Lokale AEM-Entwicklung](/help/implementing/universal-editor/local-dev.md)
          + [Beispielanwendung SecurBank](/help/implementing/universal-editor/securbank.md)
-      + [Headless-Experience-Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=de)
+      + [Management von Headless-Erlebnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=de)
       + Hybrid- und SPA-Entwicklung {#hybrid}
-         + [Hybrid-Architektur und SPAs mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [Hybrid und SPA mit AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=de)
          + [Einstellung des SPA-Editors](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Einführung in SPAs und exemplarische Anleitung](/help/implementing/developing/hybrid/introduction.md)
