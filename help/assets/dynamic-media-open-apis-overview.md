@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Schlüsselkonzepte wie die Verwendung von D
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 99%
+source-wordcount: '1127'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ Dynamic Media mit OpenAPI-Funktionen stellt das DAM in den Mittelpunkt eines agi
 
 Dynamic Media mit OpenAPI-Funktionen bietet die folgenden Hauptvorteile:
 
-* **Nahtlose Integrationen**: Dynamic Media mit OpenAPI-Funktionen bietet einen umfassenden Satz von Such- und Bereitstellungs-APIs. Dadurch können Ihre Entwickelnden die [Bereitstellung von Assets ganz einfach in ihre Anwendungen integrieren](/help/assets/integrate-dynamic-media-open-apis.md). Zu den Anwendungen gehören Adobe-Anwendungen sowie Anwendungen von Drittanbietern. Es bietet eine [Benutzeroberfläche für die Auswahl der Mikro-Frontend-Assets](/help/assets/overview-asset-selector.md) zum Suchen und Auswählen genehmigter Assets. Die Auswahl kann mühelos in jede Anwendung integriert werden, die auf JavaScript-Frameworks wie React JS, Angular JS und Vanilla JS basiert.
+* **Nahtlose Integrationen**: Dynamic Media mit OpenAPI-Funktionen bietet einen umfassenden Satz von Such- und Bereitstellungs-APIs. Dadurch können Ihre Entwickelnden die [Bereitstellung von Assets ganz einfach in ihre Anwendungen integrieren](/help/assets/integrate-dynamic-media-open-apis.md). Zu den Anwendungen gehören Adobe-Anwendungen sowie Anwendungen von Drittanbietern. Sie bietet eine [Content Advisor-Oberfläche](/help/assets/integrate-adobe-non-adobe-applications.md) zum Suchen und Auswählen genehmigter Assets. Die Auswahl kann mühelos in jede Anwendung integriert werden, die auf JavaScript-Frameworks wie React JS, Angular JS und Vanilla JS basiert.
 
 * **Zentralisierte Verwaltung digitaler Assets**: DAM ist die zentrale Datenquelle für alle digitalen Assets. Ihre digitalen Assets werden zentral in AEM Assets verwaltet und verarbeitenden Anwendungen durch Verweise über Bereitstellungs-URLs bereitgestellt, ohne Asset-Binärdateien zu kopieren.
 
@@ -108,16 +108,16 @@ Nachdem Sie das Support-Ticket übermittelt haben, aktiviert Adobe Dynamic Media
       </a>
    </div>
    <p>
-      <em>Sie können Ihre eigene benutzerdefinierte Benutzeroberfläche mit dem Experience Manager Assets-Repository integrieren, indem Sie die Such- und Bereitstellungs-APIs verwenden, oder nutzen Sie den Micro-Frontend-Asset-Wähler von Adobe.</em>
+      <em>Integrieren Sie Ihre eigene benutzerdefinierte Benutzeroberfläche mit dem Experience Manager Assets-Repository mithilfe der Such- und Bereitstellungs-APIs oder verwenden Sie den Content Advisor von Adobe.</em>
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Asset-Wähler von Adobe" src="./assets/asset-selector-prereqs.png" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Adobe Content Advisor" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Micro-Frontend-Asset-Wähler von Adobe</strong>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Adobes Inhaltsberater</strong>
       </a>
    </div>
    <p>
@@ -136,7 +136,7 @@ Nachdem Sie das Support-Ticket übermittelt haben, aktiviert Adobe Dynamic Media
    </a>
    <div>
       <a href="/help/assets/search-assets-api.md">
-      <strong>Suchen von Assets im Experience Manager Assets-Repository</strong>
+      <strong>Suche nach Assets im Experience Manager Assets-Repository</strong>
       </a>
    </div>
    <p>
@@ -178,7 +178,7 @@ Nachdem Sie das Support-Ticket übermittelt haben, aktiviert Adobe Dynamic Media
    </a>
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
-      <strong>Integrieren der Remote-Version von AEM Assets mit AEM Sites</strong>
+      <strong>Integrieren von Remote AEM Assets mit AEM Sites</strong>
       </a>
    </div>
    <p>
@@ -204,7 +204,7 @@ Nachdem Sie das Support-Ticket übermittelt haben, aktiviert Adobe Dynamic Media
    </a>
    <div>
       <a href="/help/assets/configure-custom-domain.md">
-      <strong>Konfigurieren einer benutzerdefinierten Domain</strong>
+      <strong>Benutzerdefinierte Domain konfigurieren</strong>
       </a>
    </div>
    <p>

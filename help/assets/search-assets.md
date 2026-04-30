@@ -7,15 +7,15 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '5973'
-ht-degree: 95%
+source-wordcount: '6103'
+ht-degree: 91%
 
 ---
 
 
-# Suchen nach Assets in AEM  {#search-assets-in-aem}
+# Suchen nach Assets in AEM {#search-assets-in-aem}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -35,7 +35,7 @@ Die Asset-Suche in AEM unterstützt die folgenden Anwendungsfälle. Dieser Artik
 | [Such-Ranking und -Optimierung](#searchrank) | [Benutzerdefinierte Prädikate](#custompredicates) | [Smart-Sammlungen](#collections) |
 | [Erweiterte Suche: Filtern und Suchbereich](#scope) | | [Wissenswertes zu und Fehlerbehebung bei unerwarteten Ergebnissen](#unexpected-results) |
 | [Suche aus anderen Lösungen und Apps heraus](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-Desktop-Programm](#desktop-app)</li><li>[Adobe Stock-Fotos](#adobe-stock)</li><li>[Dynamic Media-Assets](#search-dynamic-media-assets)</li></ul> | | |
-| [Asset-Wähler](#asset-picker) | | |
+| [Inhaltsratgeber](#asset-picker) | | |
 | [Einschränkungen](#limitations) und [Tipps](#tips) | | |
 | [Illustrierte Beispiele](#samples) | | |
 
@@ -51,8 +51,8 @@ Machen Sie sich mit der Asset-Suchoberfläche und den verfügbaren Aktionen vert
 <!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 -->
-![Wissenswertes über die Benutzeroberfläche für Experience Manager Assets-Suchergebnisse](assets/aem-search-interface.png)
-*Abbildung: Grundlagen [!DNL Experience Manager Assets] Benutzeroberfläche für Suchergebnisse.*
+![Wissenswertes zur Benutzeroberfläche für Suchergebnisse von Experience Manager Assets](assets/aem-search-interface.png)
+*Abbildung: Wissenswertes [!DNL Experience Manager Assets] Benutzeroberfläche für Suchergebnisse.*
 
 **A.** Suche als Smart-Sammlung speichern.
 **B.** Filter oder Prädikate zur Eingrenzung der Suchergebnisse.
@@ -150,7 +150,7 @@ Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die a
 
 So können Sie das Ranking bestimmter Assets in den Keywords für das jeweilige Keyword erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3444068/?captions=ger&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
 
@@ -217,14 +217,14 @@ Anhand exakter Werte bestimmter Metadatenfelder wie Titel, Beschreibung und Erst
 | Ablaufdatum | Läuft ab:YYYY-MM-DDTHH |
 | Einschaltzeit | rechtzeitig:YYYY-MM-DDTHH |
 | Ausschaltzeit | offtime:YYYY-MM-DDTHH |
-| Zeitraum (expires dateontime,offtime) | facet field : lowerbound.upperbound |
+| Zeitraum (expires dateontime,offtime) | Facettenfeld : lowerbound.upperbound |
 | Pfad | /content/dam/&lt;folder name> |
 | PDF-Titel | pdftitle:„Adobe Document“ |
 | Betreff | subject:„Training“ |
 | Tags | tags:„Location And Travel“ |
 | Typ | type:&quot;image\png&quot; |
-| Bildbreite | Breite:lowerbound..upperbound |
-| Bildhöhe | Höhe:lowerbound..upperbound |
+| Bildbreite | width:lowerbound..upperBound |
+| Bildhöhe | height:lowerbound..upperbound |
 | Person | Person :John |
 
 Die Eigenschaften `path`, `limit`, `size` und `orderby` können nicht mit dem Operator `OR` mit einer anderen Eigenschaft kombiniert werden.
@@ -277,31 +277,25 @@ Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Asse
 
 Die [!DNL Experience Manager]-Suchfunktionen erlauben die Suche nach Sammlungen sowie die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/manage-collections.md).
 
-## Asset-Wähler {#asset-picker}
+## Content-Beratung {#asset-picker}
 
-Mit dem [AEM Asset-Wähler](/help/assets/overview-asset-selector.md) (Asset-Auswahl in älteren Versionen von [!DNL Adobe Experience Manager]) können Sie DAM-Assets auf besondere Weise suchen, filtern und durchsuchen. Der Asset-Wähler ist verfügbar unter `https://[aem_server]:[port]/aem/assetpicker.html`. Sie können die Metadaten der Assets, die Sie über den Asset-Wähler auswählen, abrufen. Sie können ihn mit unterstützten Anfrageparametern wie dem Asset-Typ (Bild, Video, Text) und dem Auswahlmodus (eine oder mehrere Auswahlen) starten. Diese Parameter legen den Kontext des Asset-Wählers für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt.
+Mit [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) (in früheren Versionen von [!DNL Adobe Experience Manager] als Asset-Auswahl bezeichnet) können Sie DAM-Assets auf besondere Weise suchen, filtern und durchsuchen. Content Advisor ist unter `https://[aem_server]:[port]/aem/assetpicker.html` verfügbar. Sie können die Metadaten von Assets, die Sie auswählen, mit dem Inhaltsratgeber abrufen. Sie können ihn mit unterstützten Anfrageparametern wie dem Asset-Typ (Bild, Video, Text) und dem Auswahlmodus (eine oder mehrere Auswahlen) starten. Diese Parameter legen den Kontext des Content Advisor für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt.
 
-Der Asset-Wähler verwendet die HTML5-Meldung `Window.postMessage`, um Daten für das ausgewählte Asset an den Empfänger zu senden. Er funktioniert nur im Durchsuchen-Modus und nur mit der Omnisearch-Ergebnisseite.
+Content Advisor verwendet die HTML5-`Window.postMessage`, um Daten für das ausgewählte Asset an die Empfängerin bzw. den Empfänger zu senden. Er funktioniert nur im Durchsuchen-Modus und nur mit der Omnisearch-Ergebnisseite.
 
-Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset-Wähler in einem bestimmten Kontext zu starten:
+Übergeben Sie die folgenden Anfrageparameter in einer URL, um Content Advisor in einem bestimmten Kontext zu starten:
 
 | Name | Werte | Beispiel | Zweck |
 |---|---|---|---|
-| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Zum Starten des Asset-Wählers mit einem bestimmten Ordner, z. B. `/content/dam/we-retail/en/activities` als ausgewähltem Ordner, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
-| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | Im Modus „multiple“ können Sie mit dem Asset-Wähler mehrere Assets gleichzeitig auswählen. |
-| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Verwenden Sie diese Parameter, um den Asset-Wähler als Granite-Dialogfeld zu öffnen. Diese Option ist nur relevant, wenn Sie den Asset-Wähler per Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
-| `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
-| `viewmode` | Suchen | | Dies startet den Asset-Wähler im Suchmodus mit den Parametern `assettype` und `mimetype`. |
+| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Um Content Advisor mit einem bestimmten Ordner zu starten, z. B. mit ausgewähltem `/content/dam/we-retail/en/activities`, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Start des Inhaltsberaters ein bestimmter Ordner ausgewählt sein soll, übergeben Sie ihn als Ressourcensuffix. |
+| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | Im Modus „multiple“ können Sie mit dem Content Advisor mehrere Assets gleichzeitig auswählen. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Verwenden Sie diese Parameter, um das Dialogfeld „Content Advisor as Granite“ zu öffnen. Diese Option ist nur relevant, wenn Sie den Inhaltsratgeber über das Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
+| `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Content Advisor anzugeben. In diesem Fall können Sie mit dem Inhaltsratgeber nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
+| `viewmode` | Suchen | | So starten Sie den Content Advisor im Suchmodus mit `assettype`- und `mimetype`. |
 | `assettype` | Bilder, Dokumente, Multimedia, Archive. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Verwenden Sie diese Option, um die Asset-Typen basierend auf dem angegebenen Wert zu filtern. |
 | `mimetype` | MIME-Typ (`/jcr:content/metadata/dc:format`) eines Assets (Platzhalter wird ebenfalls unterstützt). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Verwenden Sie diese Option zum Filtern von Assets anhand von MIME-Typen. |
 
-Wechseln Sie für den Zugriff auf die Benutzeroberfläche des Asset-Wählers zu `https://[aem_server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im OmniSearch-Feld nach dem gewünschten Asset suchen, je nach Bedarf filtern und das Asset dann auswählen.
-
-![Asset im Asset-Wähler durchsuchen und auswählen](assets/select-asset.png)
-
-<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
-
-*Abbildung: Asset im Asset-Wähler durchsuchen und auswählen*
+Wechseln Sie für den Zugriff auf die Benutzeroberfläche „Inhaltsratgeber“ zu `https://[aem_server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im OmniSearch-Feld nach dem gewünschten Asset suchen, je nach Bedarf filtern und das Asset dann auswählen.
 
 ## Einschränkungen {#limitations}
 
@@ -357,7 +351,7 @@ Verwenden Sie doppelte Anführungszeichen um Keywords, um Assets zu finden, die 
 
 *Abbildung: Illustration der Nutzung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels.*
 
-**Suchen mit Fragezeichen als Platzhalter**: Verwenden Sie zur Erweiterung der Suche ein oder mehrere Fragezeichen („?“), um Treffer mit der genauen Zeichenzahl zu erhalten. So gilt beispielsweise in der folgenden Illustration:
+**Suche mit Fragezeichen als Platzhalter**: Verwenden Sie zur Erweiterung der Suche ein oder mehrere &#39;?&#39;-Zeichen, um die genaue Anzahl der Zeichen abzugleichen. So gilt beispielsweise in der folgenden Illustration:
 
 * Abfrage `run???` stimmt mit keinem Asset überein.
 

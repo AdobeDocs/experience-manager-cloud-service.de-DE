@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 69%
+source-wordcount: '3101'
+ht-degree: 68%
 
 ---
 
@@ -64,7 +64,7 @@ Sie können den Text direkt bearbeiten, indem Sie auf die Komponente doppelklick
 
 Der dünne, hellblaue Umriss wird zu einem dunkelblauen Umriss, um die Auswahl anzuzeigen, und es wird ein Cursor angezeigt. Nehmen Sie die gewünschten Änderungen vor und drücken Sie die Eingabetaste oder wählen Sie etwas außerhalb des Textfelds aus, um Ihre Änderungen zu speichern.
 
-Wenn Sie die Textkomponente auswählen, werden ihre Details im Bedienfeld [Eigenschaften“ angezeigt.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch im Bedienfeld bearbeiten.
+Wenn Sie die Textkomponente auswählen, werden ihre Details im Bedienfeld [Eigenschaften“ angezeigt](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Sie können den Text auch im Bedienfeld bearbeiten.
 
 ![Bearbeiten von Text im Bedienfeld „Eigenschaften“](assets/ue-editing-text-component-rail.png)
 
@@ -124,7 +124,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * **Verknüpfung aufheben**
    * Link aus dem ausgewählten Text entfernen.
 * **Bild**
-   * Geben Sie eine URL an oder verwenden Sie den [Asset-Selektor](/help/assets/overview-asset-selector.md#using-asset-selector) um ein Asset aus AEM auszuwählen.
+   * Geben Sie eine URL an oder verwenden Sie [Inhaltsratgeber](/help/assets/integrate-adobe-non-adobe-applications.md) um ein Asset aus AEM auszuwählen.
 * **Tabelle**
    * Verwenden Sie die Dropdown-Liste, um eine neue Tabelle mit der ausgewählten Anzahl von Spalten und Zeilen einzufügen oder neue Spalten/Zeilen einzufügen und zu entfernen.
 * **Ausrichtung**
@@ -143,7 +143,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * **Alle Formatierungen entfernen**
    * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -152,7 +152,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 ![Bearbeiten von Medien](assets/ue-edit-media.png)
 
 1. Tippen oder klicken Sie auf die Vorschau des ausgewählten Bildes im Bedienfeld „Eigenschaften“.
-1. Das Fenster [Asset-Selektor](/help/assets/overview-asset-selector.md#using-asset-selector) wird geöffnet, in dem Sie ein Asset auswählen können.
+1. Das [Inhaltsratgeber](/help/assets/integrate-adobe-non-adobe-applications.md)-Fenster wird geöffnet, in dem Sie ein Asset auswählen können.
 1. Wählen Sie diese Option, um ein neues Asset auszuwählen.
 1. Wählen Sie **Auswählen**, um zum Bedienfeld „Eigenschaften“ zurückzukehren, in dem das Asset ersetzt wurde.
 
@@ -160,7 +160,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -237,7 +237,7 @@ Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingef
    * Wählen Sie **Eigenschaftenbedienfeld das** „Löschen“ aus.
 
      ![Löschen einer Komponente](assets/ue-delete-component.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Löschen“ aus.
+   * Wählen Sie **Kontextmenü die Option**Löschen“ aus.
      ![Löschen aus dem Kontextmenü](assets/delete-from-context-menu.png)
 
 Die ausgewählte Komponente wird gelöscht.
@@ -269,7 +269,7 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
 #### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 
@@ -293,7 +293,7 @@ Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu ange
 Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ aus, um die letzte Bearbeitung im Editor rückgängig zu machen oder wiederherzustellen.
 
 ![Symbol „Rückgängig“](assets/undo.png)
-![Symbol „Wiederherstellen“](assets/redo.png)
+![Symbol „Wiederholen“](assets/redo.png)
 
 * Alle kontextbezogenen Bearbeitungen, Bearbeitungen über das Panel „Eigenschaften“ sowie das Hinzufügen, Duplizieren, Verschieben und Löschen von Blöcken können rückgängig gemacht oder wiederhergestellt werden.
 * Die Funktionen „Rückgängig“ und „Wiederherstellen“ sind auf die aktuelle Browser-Sitzung beschränkt.
@@ -304,18 +304,18 @@ Wählen Sie die Schaltflächen „Rückgängig“ oder „Wiederherstellen“ au
 
 ### Kopieren und Einfügen {#copy-paste}
 
-Sie können Komponenten kopieren und einfügen, die sich in [Containern befinden.](/help/implementing/universal-editor/field-types.md#container) Dies ist nur möglich, wenn der Ziel-Container über keine [Filter konfiguriert](/help/implementing/universal-editor/filtering.md) oder über Filter verfügt, mit denen die Komponente eingefügt werden kann.
+Sie können Komponenten kopieren und einfügen, die sich in [Containern](/help/implementing/universal-editor/field-types.md#container) befinden. Dies ist nur möglich, wenn der Ziel-Container keine [Filter konfiguriert](/help/implementing/universal-editor/filtering.md) oder Filter hat, die das Einfügen der Komponente erlauben.
 
 Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwischen Browser-Registerkarten erfolgen, sofern die Registerkarten bereits geöffnet sind. Sie können ein Element nicht kopieren und dann eine neue Browser-Registerkarte öffnen, um es einzufügen.
 
 ![Symbol „Kopieren“](assets/copy.png)
-![Symbol „Einfügen“](assets/paste.png)
+![Symbol „Einfügen](assets/paste.png)
 
 1. Wählen Sie eine Komponente entweder im Editor oder in der Inhaltsstruktur aus.
 1. Sie haben dann folgende Möglichkeiten:
-   * Klicken Sie auf **Kopieren**-Symbol im [Eigenschaftenbereich.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * Klicken Sie auf **Kopieren** im Bedienfeld [Eigenschaften“.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![Aus Bedienfeld kopieren](assets/copy-from-panel.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Kopieren“ aus.
+   * Wählen Sie **Kontextmenü die Option**Kopieren“ aus.
      ![Aus Kontextmenü kopieren](assets/copy-from-context-menu.png)
 1. Wählen Sie die Komponente aus, _nach_ der Sie die kopierte Komponente einfügen möchten.
 1. Sie haben dann folgende Möglichkeiten:
@@ -338,7 +338,7 @@ Beachten Sie, dass im Vorschaumodus beim Tippen oder Klicken auf den Inhalt die 
 
 ## Bearbeiten der Komponentenvererbung {#inheritance}
 
-Vererbung ist der Mechanismus, durch den Inhalte so verknüpft werden können, dass Inhaltsänderungen automatisch übernommen werden. 
+Vererbung ist der Mechanismus, durch den Inhalte so verknüpft werden können, dass Inhaltsänderungen automatisch übernommen werden.
 
 Mit dem universellen Editor können Sie die Vererbung für Inhalte abbrechen, indem Sie den Inhalt einfach aktualisieren. Der Editor deaktiviert automatisch die Vererbung für alle Änderungen, die von Autorinnen und Autoren auf dieser Seite vorgenommen werden. Dadurch wird sichergestellt, dass geänderte Inhalte beibehalten werden, wenn Aktualisierungen aus dem Blueprint synchronisiert werden.
 

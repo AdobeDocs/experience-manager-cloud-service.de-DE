@@ -4,10 +4,10 @@ description: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 99%
+source-wordcount: '1673'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ Im Folgenden finden Sie einige der wichtigsten Unterschiede zwischen Dynamic Med
 | [Nur mit Assets as a Cloud Service verfügbar](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Auch mit On-Premise oder Adobe Managed Services mit zusätzlichen Konfigurations- und Bereitstellungsschritten verfügbar. |
 | [Umfangreicher Satz unterstützter Bildmodifikatoren wie Breite, Höhe, Drehung, Spiegelung, Qualität und Format](/help/assets/deliver-assets-apis.md) | Umfassender Satz verfügbarer Bildmodifikatoren |
 | [Eingeschränkte Asset-Bereitstellung basierend auf Benutzenden, Rollen, Datum und Uhrzeit](/help/assets/restrict-assets-delivery.md) | In Dynamic Media veröffentlichte Assets stehen allen Benutzenden zur Verfügung |
-| Die meisten Entwickelnden sind mit OpenAPI-Spezifikationen vertraut. Durch Verwendung des [Micro-Frontend-Asset-Wählers](/help/assets/overview-asset-selector.md) lassen sich AEM Assets ganz einfach erweitern. | SOAP-basierte APIs, die bei der Entwicklung von Integrationsanpassungen zu einer Barriere werden. |
+| Die meisten Entwickelnden sind mit OpenAPI-Spezifikationen vertraut. Die Erweiterbarkeit von AEM Assets wird durch die Verwendung von [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) erheblich vereinfacht. | SOAP-basierte APIs, die bei der Entwicklung von Integrationsanpassungen zu einer Barriere werden. |
 | Alle Änderungen an genehmigten Assets in DAM, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden automatisch in die Bereitstellungs-URLs übernommen. Mit einem niedrigen Time-to-Live(TTL)-Wert von 10 Minuten für die Dynamic Media mit OpenAPI-Funktion per CDN werden Aktualisierungen in weniger als 10 Minuten in allen Authoring- und Publishing-Oberflächen sichtbar. | Empfohlene CDN-TTL von 10 Stunden. Sie können den TTL-Wert mithilfe der Aktion zur Cache-Invalidierung überschreiben. |
 | Für die Asset-Bereitstellung an nachgelagerte Anwendungen sind nur genehmigte Assets verfügbar, sodass in digitalen Erlebnissen nur markenkonforme Assets verwendet werden können. | Alle Aktualisierungen eines von Dynamic Media veröffentlichten Assets werden ohne Genehmigungs-Workflow automatisch veröffentlicht. Hierdurch ist nicht gewährleistet, dass die Assets in digitalen Erlebnissen markenkonform sind. |
 | Auf der Anzahl der bereitgestellten Assets basierende Nutzungsberichte. Diese Funktion ist in Kürze verfügbar. | Nutzungsberichte sind nicht verfügbar. Diese Funktion ist in Kürze verfügbar. |
@@ -128,7 +128,7 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen den beiden L
 | Unterstützung aller Asset-Formattypen, die von AEM Assets unterstützt werden. | Keine Unterstützung für Videos. |
 | Sie können Dynamic Media in der lokalen Sites-Bereitstellung verwenden, während Sie Assets aus der Remote-DAM-Bereitstellung abrufen. | Dynamic Media ist in der lokalen Sites-Bereitstellung schreibgeschützt. |
 | Die Anzahl der mit einer Remote-DAM-Bereitstellung verbundenen AEM Sites-Instanzen ist nicht beschränkt. Sie können den Zugriff auf Assets in der Sites-Instanz einschränken, indem Sie [Rollen für genehmigte Assets im Remote-DAM konfigurieren](/help/assets/restrict-assets-delivery.md). | Die Verbindung von AEM Sites-Instanzen mit der Remote-DAM-Bereitstellung ist auf maximal 4 AEM Sites-Instanzen beschränkt. Eine höhere Anzahl erfordert zusätzliche Tests. |
-| Sowohl der Asset-Wähler als auch Dynamic Media mit OpenAPI-Funktionen sind erweiterbar, um benutzerdefinierte Integrationen zu ermöglichen. | Connected Assets-APIs sind nicht erweiterbar, um benutzerdefinierte Integrationen zuzulassen. |
+| Sowohl Content Advisor als auch Dynamic Media mit OpenAPI-Funktionen sind erweiterbar, um benutzerdefinierte Integrationen zu ermöglichen. | Connected Assets-APIs sind nicht erweiterbar, um benutzerdefinierte Integrationen zuzulassen. |
 | Alle Änderungen an genehmigten Assets, die in der Remote-DAM-Bereitstellung verfügbar sind, einschließlich Versionsaktualisierungen und Metadatenänderungen, werden innerhalb einer kurzen TTL (Time-to-Live) von 10 Minuten automatisch in der Sites-Instanz übernommen. | Asset-Aktualisierungen in der Remote-DAM-Bereitstellung werden automatisch über Lebenszyklusereignisse verarbeitet. Dies nimmt im Vergleich zu Dynamic Media mit OpenAPI-Funktionen jedoch deutlich mehr Zeit in Anspruch. |
 | Asset-Metadaten im Remote-DAM sind auch in der AEM Sites-Instanz verfügbar. | Asset-Metadaten im Remote-DAM sind nicht in der AEM Sites-Instanz verfügbar. |
 
@@ -147,5 +147,5 @@ So aktivieren Sie die Produktionsverwendung von [-Modifikatoren, die mit „Eing
 
 ## Wie teste ich experimentelle Modifikatoren? {#modifiers-not-generally-available}
 
-Sie können jeden Modifikator testen, der nicht allgemein über experimentelle APIs verfügbar ist. Beispiel: &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
+Sie können jeden Modifikator testen, der nicht allgemein über experimentelle APIs verfügbar ist. Beispiel: &lt;/adobe/experimental/advancemodifiers-expires-YYYMMDD/assets>
 Klicken Sie hier, um mehr über die Verwendung der [experimentellen APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) zu erfahren und die [vollständige Liste der Modifikatoren](https://developer.adobe.com/experience-cloud/experience-manager-apis/) anzuzeigen.

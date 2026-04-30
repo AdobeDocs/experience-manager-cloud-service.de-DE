@@ -3,23 +3,23 @@ title: Konfigurieren der Assets-Auswahl für den universellen Editor
 description: Erfahren Sie, wie Sie den Asset-Wähler für die Verwendung mit dem universellen Editor konfigurieren können.
 feature: Developing
 role: Admin, Developer
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
-
 
 # Konfigurieren der Assets-Auswahl für den universellen Editor {#configure-assets-selector}
 
 Erfahren Sie, wie Sie den Asset-Wähler für die Verwendung mit dem universellen Editor konfigurieren können.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Der universelle Editor verwendet [die Asset-Auswahl](/help/assets/overview-asset-selector.md#using-asset-selector), damit Autoren Assets durchsuchen und auswählen können, die in ihren Inhalt eingefügt werden sollen.
+Der universelle Editor verwendet die Asset-Auswahl, damit Autoren Assets durchsuchen und auswählen können, die in ihren Inhalt eingefügt werden sollen.
 
-Der Asset-Wähler kann im universellen Editor mithilfe von [Komponentenfiltern“ konfiguriert werden.](/help/implementing/universal-editor/filtering.md) In diesem Dokument wird beschrieben, welche Konfigurationsoptionen verfügbar sind.
+Der Asset-Wähler kann im universellen Editor mithilfe von [Komponentenfiltern“ konfiguriert werden](/help/implementing/universal-editor/filtering.md) In diesem Dokument wird beschrieben, welche Konfigurationsoptionen verfügbar sind.
 
 >[!NOTE]
 >
@@ -93,6 +93,10 @@ Das folgende Beispiel enthält die meisten Optionen zu Veranschaulichungszwecken
 ]
 ```
 
-## Zusätzliche Ressourcen {#additional-resources}
+<!--
 
-Weitere Informationen zum Asset-Selektor finden Sie im Dokument [Micro-Frontend-Asset-Selektor](/help/assets/overview-asset-selector.md#using-asset-selector) in der Assets-Dokumentation.
+## Additional Resources {#additional-resources}
+
+For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->

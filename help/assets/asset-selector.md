@@ -6,10 +6,10 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 2b801c084305873790fa313ce42cb8af34db1069
 workflow-type: tm+mt
-source-wordcount: '5363'
-ht-degree: 99%
+source-wordcount: '5462'
+ht-degree: 96%
 
 ---
 
@@ -131,7 +131,7 @@ Wenden Sie die folgenden Voraussetzungen an, wenn Sie den Asset-Wähler mit eine
 
 Das folgende Beispiel zeigt die Verwendung des Asset-Wählers bei Ausführung einer [!DNL Adobe]-Anwendung unter Unified Shell oder wenn Sie bereits `imsToken` für die Authentifizierung generiert haben.
 
-Fügen Sie das Asset-Wähler-Paket mit dem `script`-Tag in Ihren Code ein, wie in _Zeilen 6 bis 15_ des folgenden Beispiels zu sehen. Sobald das Skript geladen ist, kann die globale Variable `PureJSSelectors` verwendet werden. Definieren Sie die [Eigenschaften](#asset-selector-properties) des Asset-Wählers wie in _Zeilen 16 bis 23_ zu sehen. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung in der Adobe-Anwendung erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Um den Asset-Wähler zu rendern, rufen Sie die `renderAssetSelector`-Funktion wie in _Zeile 17_ erwähnt auf. Der Asset-Wähler wird im Container-Element `<div>` angezeigt, wie in _Zeilen 21 und 22_ zu sehen.
+Fügen Sie das Asset-Wähler-Paket mit dem `script`-Tag in Ihren Code ein, wie in _Zeilen 6 bis 15_ des folgenden Beispiels zu sehen. Sobald das Skript geladen ist, kann die globale Variable `PureJSSelectors` verwendet werden. Definieren Sie die [Eigenschaften](/help/assets/content-advisor-properties.md) des Asset-Wählers wie in _Zeilen 16 bis 23_ zu sehen. Die Eigenschaften `imsOrg` und `imsToken` sind beide für die Authentifizierung in der Adobe-Anwendung erforderlich. Die `handleSelection`-Eigenschaft wird verwendet, um die ausgewählten Assets zu behandeln. Um den Asset-Wähler zu rendern, rufen Sie die `renderAssetSelector`-Funktion wie in _Zeile 17_ erwähnt auf. Der Asset-Wähler wird im Container-Element `<div>` angezeigt, wie in _Zeilen 21 und 22_ zu sehen.
 
 Wenn Sie diese Schritte befolgen, können Sie den Asset-Wähler mit Ihrer [!DNL Adobe]-Anwendung verwenden.
 
@@ -279,8 +279,8 @@ Der Asset-Wähler unterstützt die Authentifizierung für das [!DNL Experience M
 +++**Asset-Wähler für ein Nicht-Adobe-Programm konfigurieren**
 Um den Asset-Wähler für eine Adobe-fremde Anwendung zu konfigurieren, müssen Sie zunächst ein Support-Ticket für die Bereitstellung einreichen und dann die Integrationsschritte befolgen.
 
-**Einreichen eines Support-Tickets**
-Schritte zum Einreichen eines Support-Tickets über die Admin Console:
+**Support-Ticket erstellen**
+Schritte zum Erstellen eines Support-Tickets über die Admin Console:
 
 1. Fügen Sie **Asset-Wähler mit AEM Assets** zum Titel des Tickets hinzu.
 
@@ -418,7 +418,7 @@ Die Eigenschaften `rootPath` und `path` sollten nicht Teil von Dynamic Media mit
 aemTierType:[1: "delivery"]
 ```
 
-Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie im Abschnitt [Eigenschaften des Asset-Wählers](#asset-selector-properties) unter der Eigenschaft `aemTierType`.
+Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder als flache Struktur anzeigen. Weitere Informationen finden Sie im Abschnitt [Eigenschaften des Asset-Wählers](/help/assets/content-advisor-properties.md) unter der Eigenschaft `aemTierType`.
 
 +++
 
@@ -463,8 +463,8 @@ Dabei gilt Folgendes:
 
 **API für die Bereitstellung genehmigter Assets für die Original-Ausgabedarstellung**
 
-Die dynamische Versand-URL weist die folgende Syntax auf:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, wobei Folgendes gilt:
+Die URL des dynamischen Versands weist die folgende Syntax auf:
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, wobei
 
 * Der Host ist `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * Der API-Stamm für die Bereitstellung der Original-Ausgabedarstellung lautet `"/adobe/assets"`
@@ -490,7 +490,7 @@ Im Folgenden werden die beiden Möglichkeiten zum Durchlaufen des JSON-Objekts b
 
 * **Miniaturansicht:** Bei Miniaturansichten kann es sich um Bilder und Assets wie PDF, Videos usw. handeln. Sie können jedoch die Höhe- und Breitenattribute der Miniaturansicht eines Assets als Ausgabedarstellung für die dynamische Bereitstellung verwenden.
 Der folgende Satz von Ausgabedarstellungen kann für Assets vom Typ PDF verwendet werden:
-Sobald eine PDF-Datei im Sidekick ausgewählt ist, bietet der Auswahlkontext die folgenden Informationen. Nachstehend wird beschrieben, wie Sie das JSON-Objekt durchlaufen:
+Sobald eine PDF-Datei im Sidekick ausgewählt wurde, bietet der Auswahlkontext die folgenden Informationen. Nachstehend wird beschrieben, wie Sie das JSON-Objekt durchlaufen:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
 
@@ -561,7 +561,7 @@ Um den Namen abzurufen, muss eine einmalige Aktivität durchgeführt werden. Fü
 
 >[!ENDTABS]
 
-## Eigenschaften des Asset-Wählers {#asset-selector-properties}
+## Eigenschaften des Asset-Wählers {#content-advisor-properties}
 
 Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des Asset-Wählers anzupassen. In der folgenden Tabelle sind die Eigenschaften aufgeführt, mit denen Sie den Asset-Wähler anpassen und verwenden können.
 
@@ -576,7 +576,7 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *selectedAssets* | Array `<Object>` | Nein |                 | Geben Sie ausgewählte Assets an, wenn der Asset-Wähler gerendert wird. Es ist ein Array von Objekten erforderlich, das eine ID-Eigenschaft der Assets enthält. Zum Beispiel: `[{id: 'urn:234}, {id: 'urn:555'}]` Ein Asset muss im aktuellen Verzeichnis verfügbar sein. Wenn Sie ein anderes Verzeichnis verwenden müssen, geben Sie auch einen Wert für die Eigenschaft `path` an. |
 | *acvConfig* | Objekt | Nein | | Asset Collection View-Eigenschaft, die ein Objekt enthält, das eine benutzerdefinierte Konfiguration enthält, um Standardwerte zu überschreiben. Diese Eigenschaft wird auch mit der Eigenschaft `rail` verwendet, um die Leistenansicht des Asset-Wählers zu aktivieren. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nein |                 | Wenn die vorkonfigurierten Übersetzungen für die Bedürfnisse Ihrer Anwendung unzureichend sind, können Sie eine Schnittstelle bereitstellen, über die Sie Ihre eigenen lokalisierten Werte durch die Eigenschaft `i18nSymbols` übergeben können. Wenn Sie über diese Schnittstelle einen Wert übergeben, werden die bereitgestellten Standardübersetzungen überschrieben und stattdessen Ihre eigenen verwendet. Um die Überschreibung vorzunehmen, müssen Sie ein gültiges [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor)-Objekt an den Schlüssel von `i18nSymbols` übergeben, den Sie überschreiben möchten. |
-| *intl* | Objekt | Nein | | Der Asset-Wähler bietet standardmäßige, vorkonfigurierte Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschema-Zeichenfolge durch die `intl.locale`-Eigenschaft bereitstellen. Zum Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen den [ISO 639 – Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung von Namen von Sprachen. </br></br> Liste der unterstützten Gebietsschemata: Englisch: „en-us“ (Standard), Spanisch: „es-es“, Deutsch: „de-de“, Französisch: „fr-fr“, Italienisch: „it-it“, Japanisch: „ja-jp“, Koreanisch: „ko-kr“, Portugiesisch: „pt-br“, Chinesisch (Vereinfacht): „zh-cn“, Chinesisch (Taiwan): „zh-tw“ |
+| *intl* | Objekt | Nein | | Der Asset-Wähler bietet standardmäßige, vorkonfigurierte Übersetzungen. Sie können die Übersetzungssprache auswählen, indem Sie eine gültige Gebietsschema-Zeichenfolge durch die `intl.locale`-Eigenschaft bereitstellen. Beispiel: `intl={{ locale: "es-es" }}` </br></br> Die unterstützten Gebietsschema-Zeichenfolgen folgen den [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) für die Darstellung von Namen von Sprachen. </br></br> Liste der unterstützten Gebietsschemata: Englisch: „en-us“ (Standard), Spanisch: „es-es“, Deutsch: „de-de“, Französisch: „fr-fr“, Italienisch: „it-it“, Japanisch: „ja-jp“, Koreanisch: „ko-kr“, Portugiesisch: „pt-br“, Chinesisch (Vereinfacht): „zh-cn“, Chinesisch (Taiwan): „zh-tw“ |
 | *repositoryId* | Zeichenfolge | Nein | &#39;&#39; | Repository, aus dem der Asset-Wähler den Inhalt lädt. |
 | *additionalAemSolutions* | `Array<string>` | Nein | [ ] | Damit können Sie eine Liste mit zusätzlichen AEM-Repositorys hinzufügen. Wenn in dieser Eigenschaft keine Informationen bereitgestellt werden, werden nur die Medienbibliothek oder AEM Assets-Repositorys berücksichtigt. |
 | *hideTreeNav* | Boolesch | Nein |  | Gibt an, ob die Navigationsseitenleiste der Asset-Baumstruktur ein- oder ausgeblendet werden soll. Sie wird nur in der modalen Ansicht verwendet und daher gibt es keine Auswirkung dieser Eigenschaft in der Leistenansicht. |
@@ -588,8 +588,8 @@ Sie können die Asset-Wähler-Eigenschaften verwenden, um die Darstellung des As
 | *onClose* | Funktion | Nein | | Wird aufgerufen, wenn die `Close`-Schaltfläche in der modalen Ansicht gedrückt wird. Dies wird nur in der `modal`-Ansicht aufgerufen und in der `rail`-Ansicht nicht beachtet. |
 | *onFilterSubmit* | Funktion | Nein | | Wird mit Filterelementen aufgerufen, wenn Benutzende andere Filterkriterien ändern. |
 | *selectionType* | Zeichenfolge | Nein | Einzeln | Konfiguration für `single`- oder `multiple`-Auswahl von Assets auf einmal. |
-| *dragOptions.allowList* | Boolesch | Nein | | Die Eigenschaft wird verwendet, um das Drag-and-Drop von nicht auswählbaren Assets zuzulassen oder zu verweigern. |
-| *aemTierType* | Zeichenfolge | Nein |  | Sie können damit festlegen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder beiden Ebenen angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Wenn zum Beispiel beide Ebenen `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für Author und Bereitstellung an. |
+| *dragOptions.allowList* | Boolesch | Nein | | Die Eigenschaft wird verwendet, um das Ziehen von nicht auswählbaren Assets zuzulassen oder zu verweigern. |
+| *aemTierType* | Zeichenfolge | Nein |  | Damit können Sie auswählen, ob Assets aus der Bereitstellungsebene, der Autorenebene oder aus beiden angezeigt werden sollen. <br><br> Syntax: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Wenn beispielsweise beide `["author","delivery"]` verwendet werden, zeigt der Repository-Umschalter Optionen für Autor und Versand an. |
 | *handleNavigateToAsset* | Funktion | Nein | | Es handelt sich um eine Rückruffunktion, die die Auswahl eines Assets verarbeitet. |
 | *noWrap* | Boolesch | Nein | | Die Eigenschaft *noWrap* hilft beim Rendern des Asset-Wählers im Bedienfeld der Seitenleiste. Wenn diese Eigenschaft nicht erwähnt wird, wird standardmäßig die *Dialogfeldansicht* gerendert. |
 | *dialogSize* | Klein, mittelgroß, groß, Vollbild oder Vollbild-Übernahme | Zeichenfolge | Optional | Sie können das Layout kontrollieren, indem Sie dessen Größe mithilfe der angegebenen Optionen festlegen. |
@@ -798,7 +798,7 @@ Die folgende Tabelle beschreibt einige der wichtigen Eigenschaften des ausgewäh
 | *repo:id* | Zeichenfolge | Eindeutige Kennung für das Asset. |
 | *repo:assetClass* | Zeichenfolge | Die Klassifizierung des Assets (z. B. Bild oder Video, Dokument). |
 | *repo:name* | Zeichenfolge | Der Name des Assets, einschließlich der Dateierweiterung. |
-| *repo:size* | number | Die Größe des Assets in Bytes. |
+| *repo:size* | Number (Zahl) | Die Größe des Assets in Bytes. |
 | *repo:path* | Zeichenfolge | Der Speicherort des Assets im Repository. |
 | *repo:ancestors* | `Array<string>` | Ein Array von Vorgängerelementen für das Asset im Repository. |
 | *repo:state* | Zeichenfolge | Aktueller Status des Assets im Repository (z. B. aktiv, gelöscht). |
@@ -980,7 +980,7 @@ Die `handleSelection`-Eigenschaft wird verwendet, um einzelne oder mehrere Auswa
 
 ## Deaktivieren der Auswahl von Assets {#disable-selection}
 
-Die Funktion „disableSelection“ wird verwendet, um die Möglichkeit zur Auswahl der Assets oder Ordner auszublenden bzw. zu deaktivieren. Dabei wird das Kontrollkästchen „Auswählen“ auf der Karte oder im Asset ausgeblendet und eine Auswahl verhindert. Um diese Funktion zu verwenden, können Sie die Position eines in einem Array zu deaktivierenden Assets oder Ordners deklarieren. Wenn Sie z. B. die Auswahl eines Ordners deaktivieren möchten, der an der ersten Position angezeigt wird, können Sie den folgenden Code hinzufügen:
+Die Funktion „disableSelection“ wird verwendet, um die Möglichkeit zur Auswahl der Assets oder Ordner auszublenden bzw. zu deaktivieren. Dabei wird das Kontrollkästchen „Auswählen“ auf der Karte oder im Asset ausgeblendet und eine Auswahl verhindert. Um diese Funktion zu verwenden, können Sie die Position eines in einem Array zu deaktivierenden Assets oder Ordners deklarieren. Wenn Sie beispielsweise die Auswahl eines Ordners an der ersten Position deaktivieren möchten, können Sie den folgenden Code hinzufügen:
 `disableSelection: [0]:folder`
 
 Sie können dem Array eine Liste von MIME-Typen (z. B. Bild, Ordner, Datei oder andere MIME-Typen wie Bild/jpeg) bereitstellen, die deaktiviert werden sollen. Die von Ihnen deklarierten MIME-Typen werden den Attributen `data-card-type` und `data-card-mimetype` eines Assets zugeordnet.
@@ -1022,7 +1022,7 @@ Sobald der Asset-Selektor eingerichtet ist und Sie für die Verwendung mit Ihrem
 * **G**: [Sortierung nach auf- oder absteigender Reihenfolge](#sorting)
 * **H**: [Ansicht](#types-of-view)
 
-### Bedienfeld aus-/einblenden {#hide-show-panel}
+### Panel zum Aus-/Einblenden {#hide-show-panel}
 
 Um Ordner im linken Navigationsbereich auszublenden, klicken Sie auf das Symbol **[!UICONTROL Ordner ausblenden]**. Um die Änderungen rückgängig zu machen, klicken Sie erneut auf das Symbol **[!UICONTROL Ordner ausblenden]**.
 
