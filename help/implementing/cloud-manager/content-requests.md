@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4a423ab3dcb176db5cd3f0d3b8d586a1afced535
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 65%
+source-wordcount: '2276'
+ht-degree: 59%
 
 ---
 
@@ -47,7 +47,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
-Inhaltsanfragen können Abweichungen von den Analyseberichts-Tools einer Organisation aufweisen, die in der folgenden Tabelle zusammengefasst sind. Vermeiden Sie im Allgemeinen die Verwendung von Analyse-Tools, die auf eine Client-seitige Instrumentation angewiesen sind, um die Anzahl der Inhaltsanfragen für eine Site zu melden. Bei diesen Tools wird häufig ein großer Teil des Traffics verpasst, da ihre Aktivierung von einer Benutzerzustimmung abhängt. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen. 
+Inhaltsanfragen können Abweichungen von den Analyseberichts-Tools einer Organisation aufweisen, die in der folgenden Tabelle zusammengefasst sind. Vermeiden Sie im Allgemeinen die Verwendung von Analyse-Tools, die auf eine Client-seitige Instrumentation angewiesen sind, um die Anzahl der Inhaltsanfragen für eine Site zu melden. Bei diesen Tools wird häufig ein großer Teil des Traffics verpasst, da ihre Aktivierung von einer Benutzerzustimmung abhängt. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
@@ -78,7 +78,7 @@ In der folgenden Tabelle sind die Typen der eingeschlossenen und ausgeschlossene
 
 | Abfragetyp | Inhaltsanfrage | Beschreibung |
 | --- | --- | --- |
-| HTTP-Code 100–299 | Einschließlich | Umfasst erfolgreiche Anfragen, die HTML- oder JSON-Inhalte vollständig oder teilweise zurückgeben.<br>HTTP-Code 206: Diese Anfragen liefern nur einen Teil des gesamten Inhalts, Partielle Anfragen werden einbezogen, wenn sie einen Teil einer HTML- oder JSON-Antwort bereitstellen, die beim Rendern von Seiteninhalten verwendet wird. |
+| HTTP-Code 100–299 | Einschließlich | Umfasst erfolgreiche Anfragen, die vollständige oder teilweise HTML- oder JSON-Inhalte zurückgeben<br>HTTP-Code 206: Diese Anfragen liefern nur einen Teil des gesamten Inhalts. Partielle Anfragen werden einbezogen, wenn sie einen Teil einer HTML- oder JSON-Antwort bereitstellen, die beim Rendern von Seiteninhalten verwendet wird. |
 | HTTP-Bibliotheken für die Automatisierung | Einschließlich | Anfragen durch Tools oder Bibliotheken, die Seiteninhalte abrufen. Beispiele sind: <br>・ Amazon CloudFront<br>・ Apache HTTP Client<br>・ Asynchroner HTTP Client<br>・ Axios<br>・ Azureus<br>・ cURL<br>・ GitHub Node Fetch<br>・ Guzzle<br>・ Go-HTTP-Client<br>・ Headless Chrome<br>・ Java™ Client<br>・ Jersey<br>・ Oembed<br>・ Python-Anfragen<br> Reactor Netty<br>・ WGET<br> WinHTTP<br>・ Schneller HTTP<br>・ GitHub Node Fetch<br> Reactor Netty<br><br><br> Es kann auch benutzerdefinierte Agenten oder KI-gesteuerte Automatisierung enthalten, wenn der Traffic nicht als bekannter Bot klassifiziert ist. |
 | Tools für die Überwachung und Konsistenzprüfung | Einschließlich | Anfragen, die zur Überwachung des Zustands oder der Verfügbarkeit von Seiten verwendet werden.<br>Siehe [Typen von ausgeschlossenen Inhaltsanfragen](#excluded-content-request).<br>Beispiele dafür sind:<br>• `Amazon-Route53-Health-Check-Service`<br>• EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>• Investis-Site24x7<br>• Mozilla/5.0+(compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>• ThousandEyes-Dragonfly-x1<br>• OmtrBot/1.0<br>• WebMon/2.0.0 |
 | `<link rel="prefetch">`-Anfragen | Einschließlich | Wenn Kundinnen und Kunden Inhalte vorab laden oder abrufen (z. B. mit `<link rel="prefetch">`), zählt das System diese Server-seitigen Anfragen. Denken Sie daran: Dadurch kann der Traffic zunehmen, abhängig davon, wie viele dieser Seiten vorab abgerufen werden. |
@@ -99,15 +99,15 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 | URL für Kundinnen und Kunden zur Überwachung ihres Cloud Service-Programms | Ausgeschlossen | Adobe empfiehlt, die URL zu verwenden, um die Verfügbarkeit oder Konsistenzprüfung extern zu überwachen.<br><br>`/system/probes/health` |
 | Pod-Warm-up-Service für AEM as a Cloud Service | Ausgeschlossen | Agent: skyline-service-warmup/1.* |
 | Bekannte Suchmaschinen, soziale Netzwerke und HTTP-Bibliotheken (mit Tags von Fastly) | Ausgeschlossen | Bekannte Dienste, die die Site regelmäßig besuchen, um ihren Suchindex oder Dienst zu aktualisieren:<br><br>Beispiele:<br>• AddSearchBot<br>• AhrefsBot<br>• Applebot<br>• Ask Jeeves Corporate Spider<br>• Bingbot<br>• BingPreview<br>• BLEXBot<br>• BuiltWith<br>• Bytespider<br>• CrawlerKengo<br>• Facebookexternalhit<br>• Google AdsBot<br>• Google AdsBot Mobile<br>• Googlebot<br>• Googlebot Mobile<br>• lmspider<br>• LucidWorks<br>• `MJ12bot`<br>• Pinterest<br>• SemrushBot<br>• SiteImprove<br>• StashBot<br>• StatusCake<br>• YandexBot<br>• ContentKing<br>• Claudebot |
-| Namhafte AI/LLM Crawler (markiert von Fastly) | Ausgeschlossen | Anfragen von erkannten KI-/LLM-Crawler, die als bekannte Bots identifiziert werden (z. B. durch `User-Agent` oder andere Bot-Klassifizierungssignale). Diese Anfragen sind nicht fakturierbar.<br><br>Beispiele für solche ausgeschlossenen Bots sind: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Mail Proxy, MailHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector und Yahoo Gemini.<br><br>Wenn ein KI-Agent nicht als bekannter Bot identifiziert wird (z. B. wenn er eine generische Browser-`User-Agent` verwendet), können seine Anfragen als abrechnungsfähige Inhaltsanfragen gezählt werden. |
+| Namhafte AI/LLM Crawler (markiert von Fastly) | Ausgeschlossen | Anfragen von erkannten KI-/LLM-Crawler, die als bekannte Bots identifiziert werden (z. B. durch `User-Agent` oder andere Bot-Klassifizierungssignale). Diese Anfragen sind nicht fakturierbar.<br><br>Beispiele für solche ausgeschlossenen Bots sind: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Mail Proxy, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector und Yahoo Gemini.<br><br>Wenn ein KI-Agent nicht als bekannter Bot identifiziert wird (z. B. wenn er einen generischen Browser-`User-Agent` verwendet), können seine Anfragen als abrechnungsfähige Inhaltsanfragen gezählt werden. |
 | Commerce Integration Framework-Aufrufe | Ausgeschlossen | Anfragen an AEM, die an das Commerce Integration Framework weitergeleitet werden. Die URL beginnt mit `/api/graphql`. Um eine doppelte Zählung zu vermeiden, sind sie für den Cloud-Service nicht abrechenbar. |
 | Client-Bibliotheken (/etc.clientlibs/*) — ausgeschlossen | Ausgeschlossen | Anfragen unter /etc.clientlibs/* sind Client-Bibliotheks-Assets auf Plattformebene und von AEM verwendete Laufzeitkonfigurationsdateien. Diese Anfragen liefern keine von Kunden erstellten Inhalte oder Geschäftsdaten und zählen daher nicht als Inhaltsanfragen. |
 | Ausschließen von `favicon.ico` | Ausgeschlossen | Obwohl der zurückgegebene Inhalt nicht HTML oder JSON sein sollte, wurde festgestellt, dass in einigen Szenarien wie bei SAML-Authentifizierungsabläufen Favicons als HTML zurückgegeben wurden. Daher werden Favicons explizit aus der Zählung ausgeschlossen. |
-| Experience Fragment (XF) – Wiederverwendung derselben Domain | Ausgeschlossen | Anfragen an XF-Pfade (z. B. `/content/experience-fragments/...`) von Seiten, die auf derselben Domain gehostet werden (wie durch die Referrer-Kopfzeile identifiziert, die mit dem Anfrage-Host übereinstimmt).<br><br> Beispiel: Eine Homepage auf `aem.customer.com`, die ein XF für ein Banner oder eine Karte aus derselben Domain abruft.<br><br>・ URL stimmt überein mit /content/experience-fragments/…<br>・ Referrer-Domain stimmt überein `request_x_forwarded_host`<br><br>**Hinweis:** Wenn der Experience Fragment-Pfad angepasst wird (z. B. mithilfe von `/XFrags/...` oder einem Pfad außerhalb von `/content/experience-fragments/`), wird die Anfrage nicht ausgeschlossen und kann gezählt werden, selbst wenn es sich um dieselbe Domain handelt. Adobe empfiehlt die Verwendung der standardmäßigen XF-Pfadstruktur von Adobe, um sicherzustellen, dass die Ausschlusslogik korrekt angewendet wird. |
+| Experience Fragment (XF) – Wiederverwendung derselben Domain | Ausgeschlossen | Anfragen an XF-Pfade (z. B. `/content/experience-fragments/...`) von Seiten, die auf derselben Domain gehostet werden (wie durch die Referrer-Kopfzeile identifiziert, die mit dem Anfrage-Host übereinstimmt).<br><br> Beispiel: Eine Homepage beim `aem.customer.com` Abrufen einer XF für ein Banner oder eine Karte aus derselben Domain.<br><br>・ URL stimmt überein mit /content/experience-fragments/…<br>・ Referrer-Domain stimmt überein `request_x_forwarded_host`<br><br>**Hinweis:** Wenn der Experience Fragment-Pfad angepasst wird (z. B. mithilfe von `/XFrags/...` oder einem Pfad außerhalb von `/content/experience-fragments/`), wird die Anfrage nicht ausgeschlossen und kann gezählt werden, auch wenn es sich um dieselbe Domain handelt. Adobe empfiehlt die Verwendung der standardmäßigen XF-Pfadstruktur von Adobe, um sicherzustellen, dass die Ausschlusslogik korrekt angewendet wird. |
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
@@ -120,17 +120,47 @@ Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-r
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-* Ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden.  Überprüfen Sie Ihre Implementierungs- und Traffic-Muster, um festzustellen, ob der leere Benutzeragent nützlich ist oder nicht.  Wenn Sie diesen Traffic blockieren möchten, wird folgende [&#x200B; (Syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) empfohlen:
+Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
 
+**Dinge, die Sie beobachten und protokollieren sollten:**
+
+* Kundenländer
+* Client-Netzwerke (autonomes System / AS)
+* Client-IPs
+* User-Agent und Bot-Kategorie
+
+Sie können Anfragetransformationen verwenden, um Eigenschaften zum Anfrageprotokoll hinzuzufügen, damit sie in CDN-Protokollen und Dashboards angezeigt werden. So protokollieren Sie beispielsweise den Bot-Namen und das Client-Netzwerk (AS-Name) für die Analyse:
+
+```yaml
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: bot_name
+          value: { reqProperty: botName }
+        - type: set
+          logProperty: cli_network
+          value: { reqProperty: clientAsName }
 ```
+
+Nachdem Sie unerwünschten Traffic (nach Land, Netzwerk, Bot oder anderen Signalen) identifiziert haben, können Sie ihn mit Traffic-Filterregeln blockieren. Beispielregel, die nach Client-Land, Netzwerk oder Bot-Namen blockiert:
+
+```yaml
 trafficFilters:
   rules:
-    - name: block-missing-user-agent
+    - name: block-bad-client-traffic
       when:
         anyOf:
+          - { reqProperty: clientCountry, equals: "XX" }
+          - { reqProperty: clientAsName, equals: "UnwantedClientNetwork" }
+          - { reqProperty: botName, equals: "UnwantedBot" }
           - { reqHeader: user-agent, exists: false }
           - { reqHeader: user-agent, equals: '' }
       action: block
 ```
+
+Ersetzen Sie die Beispielwerte durch den Länder-Code, den Netzwerk- oder Bot-Namen, den Sie sperren möchten. Siehe [Syntax von Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) und [Bedingungsstruktur](/help/security/traffic-filter-rules-including-waf.md#condition-structure) für weitere Optionen.
 
 * Einige Bots haben eine Seite sehr schwer an einem Tag und verschwinden am nächsten Tag. Eine solche Funktionalität kann jeden Versuch, eine bestimmte IP-Adresse oder einen Benutzeragenten zu blockieren, vereiteln.  Ein generischer Ansatz besteht in der Einführung einer [Regel für Limits](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Sehen Sie sich die [Beispiele](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) an und erstellen Sie eine Regel, die Ihrer Toleranz für eine schnelle Anfragerate entspricht.  Überprüfen Sie die [Bedingungsstruktur](/help/security/traffic-filter-rules-including-waf.md#condition-structure)-Syntax für alle Ausnahmen, die Sie möglicherweise zulassen möchten, um eine allgemeine Ratenbeschränkung festzulegen.
