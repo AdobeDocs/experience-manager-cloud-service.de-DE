@@ -277,7 +277,7 @@ Die IAM-Richtlinie sollte dem Benutzenden die Verwendung von `s3:putObject` erm�
 Weitere Informationen zur Implementierung finden Sie in der [Dokumentation zur AWS-Bucket-Richtlinie](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html).
 
 >[!NOTE]
->CDN-Protokollunterstützung für AWS S3 ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.[
+>CDN-Protokollunterstützung für AWS S3 ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[&#128279;](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.
 
 ### Azure Blob Storage {#azureblob}
 
@@ -466,7 +466,7 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic-HTTPS-API für die A
 >
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->Die Unterstützung des CDN-Protokolls für die New Relic-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.[
+>Die Unterstützung des CDN-Protokolls für die New Relic-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[&#128279;](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [New Relic-Dokumentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
@@ -488,7 +488,7 @@ Das Umfangsattribut „Ingest Logs“ ist für das Token erforderlich.
 ```
 
 >[!NOTE]
->Die Unterstützung des CDN-Protokolls für die Dynatrace-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.[
+>Die Unterstützung des CDN-Protokolls für die Dynatrace-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[&#128279;](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.
 
 ### Splunk {#splunk}
 
