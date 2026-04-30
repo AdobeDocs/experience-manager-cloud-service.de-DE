@@ -120,7 +120,7 @@ Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-r
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
+Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
 
 **Dinge, die Sie beobachten und protokollieren sollten:**
 
