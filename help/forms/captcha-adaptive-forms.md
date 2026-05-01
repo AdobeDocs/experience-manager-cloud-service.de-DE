@@ -27,7 +27,7 @@ ht-degree: 89%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
-| Gilt für | Adaptives Formular basierend auf Foundation-Komponenten. <br> Klicken Sie für ein adaptives Formular, das auf Kernkomponenten [, hier ](/help/forms/captcha-adaptive-forms-core-components.md). |
+| Gilt für | Adaptives Formular basierend auf Foundation-Komponenten. <br> Klicken Sie für ein adaptives Formular, das auf Kernkomponenten [, hier &#x200B;](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
