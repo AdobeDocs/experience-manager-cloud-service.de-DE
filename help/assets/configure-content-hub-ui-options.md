@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
+source-git-commit: 7e0c34627aa3ac873aa94f836fe1c30d70389e19
 workflow-type: tm+mt
-source-wordcount: '2962'
-ht-degree: 74%
+source-wordcount: '3050'
+ht-degree: 68%
 
 ---
 
@@ -35,7 +35,7 @@ Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von 
 
 * alle benutzerspezifischen Links, die Sie zusätzlich zu Assets, Sammlungen und Erkenntnissen in Content Hub einschließen müssen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472955/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Voraussetzungen {#prerequisites-configuration-ui}
 
@@ -100,7 +100,7 @@ Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu
 
 ![Upload-Details in der Konfigurationsoberfläche in Content Hub](assets/filter-new.png)
 
-Auf der Konfigurationsoberfläche aktivierte Metadaten werden auf der Seite zum Hochladen von Assets angezeigt:
+Metadaten, die in der Benutzeroberfläche „Konfiguration“ aktiviert sind, werden auf der Seite „Asset-Upload“ angezeigt:
 ![Hochladen von Metadaten auf Content Hub](assets/add-assets-for-approval1.png)
 
 ### Filter {#configure-filters-content-hub}
@@ -120,8 +120,8 @@ Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Asse
 Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jedem verfügbaren Filter klicken, um die Labels zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um einen vorhandenen Filter zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.
 ![Filter in der Konfigurationsoberfläche in Content Hub](assets/add-filters.png)
 
-Die auf der Konfigurationsoberfläche aktivierten Filter werden auf der Suchseite angezeigt:
-![Suchen in Content Hub](assets/content-hub-filters1.png)
+Die in der Konfigurations-Benutzeroberfläche aktivierten Filter werden auf der Seite „Suchen“ angezeigt:
+![Suche in Content Hub](assets/content-hub-filters1.png)
 
 #### Massensuche {#bulk-search-configuration}
 
@@ -160,19 +160,23 @@ Die auf der Konfigurationsoberfläche aktivierten Eigenschaften werden auf der S
 ### Asset-Karte {#asset-card}
 
 Sie können auch die wichtigsten Metadateneigenschaften (maximal 6 Felder) konfigurieren, die auf der **Asset-Karte** angezeigt werden sollen.
-![Wichtigste Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-metadata.png)
-Führen Sie die folgenden Schritte aus, um die Metadateneigenschaften so zu konfigurieren, dass sie auf der **[!UICONTROL Asset-Karte]** angezeigt werden:
+![Schlüssel-Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-metadata.png)
+Führen Sie die folgenden Schritte aus, um die Metadateneigenschaften zu konfigurieren und sie auf der **[!UICONTROL Asset-Karte“ anzuzeigen]**:
 
 1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **Asset-Karte**.
 2. Klicken Sie auf **Metadaten hinzufügen**. Das Dialogfeld **Asset-Karten-Metadaten hinzufügen** wird angezeigt.
 3. Geben Sie den Metadatennamen im Feld **Label** an und wählen Sie eine Metadateneigenschaft im Feld **Metadaten** aus.
 4. Klicken Sie auf **Bestätigen** und dann auf **Speichern**, um die Änderungen anzuwenden, sodass die neue Eigenschaft auf der Seite „Asset-Details“ angezeigt wird.
    ![Asset-Karte](/help/assets/assets/configuration-asset-card1.png)
-Sie können auch neben jeder verfügbaren Eigenschaft auf ![Bearbeiten](/help/assets/assets/edit-content-hub.svg) klicken, um erforderliche Änderungen vorzunehmen, oder auf ![Löschen](/help/assets/assets/delete-content-hub.svg), um eine vorhandene Metadateneigenschaft zu löschen. Klicken Sie auf **Speichern**, um alle vorgenommenen Änderungen zu übernehmen.
+Klicken Sie auf ähnliche Weise ![Bearbeiten](/help/assets/assets/edit-content-hub.svg), das neben jeder verfügbaren Eigenschaft verfügbar ist, um die erforderlichen Änderungen vorzunehmen, oder klicken Sie auf ![Löschen](/help/assets/assets/delete-content-hub.svg), um eine vorhandene Metadateneigenschaft zu löschen. Klicken Sie auf **Speichern**, um alle vorgenommenen Änderungen zu übernehmen.
 
 ### Suchen {#configure-metadata-search-content-hub}
 
 Admins können die Metadatenfelder definieren, die durchsucht werden, wenn jemand ein Suchkriterium in Content Hub angibt. Führen Sie die folgenden Schritte aus:
+
+>[!CAUTION]
+>
+>Es wird empfohlen, die als durchsuchbar markierten Felder sorgfältig auszuwählen. Nur Felder einbeziehen, nach denen Benutzende wahrscheinlich suchen und die dabei helfen, aussagekräftige Ergebnisse zurückzugeben. Felder wie Daten und Zahlen eignen sich besser zum Filtern und Sortieren als durchsuchbare Inhalte. Wenn Sie zu viele Felder als durchsuchbar markieren, kann dies die Qualität und Leistung der Suchergebnisse beeinträchtigen.
 
 1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Metadaten hinzufügen]**.
 
@@ -186,8 +190,8 @@ Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-loca
 ### Branding {#configure-branding-content-hub}
 
 Passen Sie als Admin Ihr [!DNL Content Hub]-Portal an Ihre Branding-Anforderungen an.
-![Zurücksetzen des Standards](/help/assets/assets/reset-default-content-hub.png)
-Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die Abschnitte **[!UICONTROL Banner]**, **[!UICONTROL Farben]** und **[!UICONTROL Bannerbild]**, um die folgenden Anpassungen vorzunehmen:
+![Standard zurücksetzen](/help/assets/assets/reset-default-content-hub.png)
+Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die Abschnitte **[!UICONTROL Banner]**, **[!UICONTROL Farben]** und **[!UICONTROL Bannerbild]**, um die folgenden Anpassungen auszuführen:
 
 1. [Ändern des Logobilds im Abschnitt [!UICONTROL Logobild].](#Change-the-logo-image)
 1. [Ändern Sie das Bannerbild im Abschnitt [!UICONTROL Bannerbild].](#Change-the-banner-image)
@@ -227,8 +231,8 @@ Klicken Sie auf das quadratische Feld neben **[!UICONTROL Bannertextfarbe]**, um
 #### Ändern der primären und sekundären Farbe{#Change-the-primary-and-secondary-color}
 
 Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** den Abschnitt **[!UICONTROL Farben]**, um primäre und sekundäre Farben festzulegen, indem Sie diese entweder mit dem Farbwähler auswählen oder den Hexadezimal-Code der Farbe definieren. Diese Farben legen die Hintergrund-, Text- und Symbolfarben von Benutzeroberflächenelementen fest, um Ihre [!DNL Content Hub]-Benutzeroberfläche an das Design Ihrer Marke anzupassen.
-![Primäre und sekundäre Farbe](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Primäre Farbe]:** Das Primärfarbschema gilt für Auswahlaktionen, interaktive Elemente wie Kontrollkästchen, Suchleisten und Umschalter in [!DNL Content Hub] einschließlich der [!DNL Content Hub]-Startseite und der Seite [!UICONTROL Konfiguration]. Dies gilt auch für Aktionsoptionen, die auf primären [!DNL Content Hub]-Oberflächen verfügbar sind, z. B. Optionen auf den Seiten **[!UICONTROL Alle Assets]** und **[!UICONTROL Sammlungen]**.
+![Primär- und Sekundärfarbe](/help/assets/assets/primary-secondary-color-content-hub1.png)
+**[!UICONTROL Primäre Farbe]:** Das Primärfarbschema gilt für Auswahlaktionen, interaktive Elemente wie Kontrollkästchen, Suchleisten und Umschalter in [!DNL Content Hub], einschließlich [!DNL Content Hub] Startseite und [!UICONTROL Konfigurationsseite]. Dies gilt auch für Aktionsoptionen, die auf primären [!DNL Content Hub]-Oberflächen verfügbar sind, z. B. Optionen auf den Seiten **[!UICONTROL Alle Assets]** und **[!UICONTROL Sammlungen]**.
 
 **[!UICONTROL Sekundäre Farbe]:** Auf der [!DNL Content Hub]-Startseite gilt das sekundäre Farbschema für Benutzeroberflächenoptionen und Eingabefelder, die in Dialogfeldern verfügbar sind. Dies gilt für alle Konfigurationsmenüoptionen auf der Seite [!UICONTROL Konfiguration] mit Ausnahme von Auswahlaktionen, Kontrollkästchen, Suchleisten und Umschaltern.
 
