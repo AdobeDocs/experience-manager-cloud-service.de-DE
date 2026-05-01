@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '2396'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,7 @@ In der folgenden Tabelle sind die jüngsten Verbesserungen am Regeleditor in Ada
 | [Dynamische Variablen](#support-for-dynamic-variables-in-rules) | Erstellen Sie Regeln mithilfe von Variablen, die sich je nach Benutzereingabe oder anderen Bedingungen ändern. | - Ermöglicht flexible Regelbedingungen <br> - Reduziert den Bedarf an doppelten <br> - Beseitigt die Notwendigkeit, ausgeblendete Felder zu erstellen |
 | [Benutzerdefinierte ereignisbasierte Regeln](#custom-event-based-rules-support) | Definieren Sie Regeln, die über die standardmäßigen Trigger hinaus auf benutzerspezifische Ereignisse reagieren. | - Unterstützt erweiterte Anwendungsfälle <br> - Bessere Kontrolle darüber, wann und wie Regeln ausgeführt werden <br> - Verbesserte Interaktivität |
 | [Kontextabhängige wiederholbare Bereichsausführung](#context-based-rule-execution-for-repeatable-panels) | Regeln werden jetzt für jeden wiederholten Bereich im richtigen Kontext ausgeführt, anstatt nur für die letzte Instanz. | - Präzise Regelanwendung für jede Wiederholungsinstanz <br> - Reduziert Fehler in dynamischen Abschnitten <br> - Verbessert das Benutzererlebnis mit wiederholten Inhalten |
+| [Kombiniert Wenn -Bedingungen mit der Komponente „Dateianhang“](#combined-when-conditions-with-the-file-attachment-component) | Erstellen Sie eine Wenn-Regel für die Dateianhang-Komponente mit der Logik Bedingung hinzufügen und UND/oder , damit der Anhang zusammen mit anderen Validierungen ausgewertet wird. | - Aktionen werden nur ausgeführt, wenn der Anlagenstatus und andere Prüfungen wie vorgesehen ausgewertet werden <br> - Weniger verkettete Regeln für Upload-Szenarien <br> - Klarere Bearbeitung für Formulare, für die Dateien und validierte Eingaben zusammen erforderlich sind |
 | [Unterstützung für Abfragezeichenfolgen-, UTM- und Browser-Parameter](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Erstellen Sie Regeln, die das Formularverhalten basierend auf URL-Parametern oder browserspezifischen Werten anpassen. | - Ermöglicht Personalisierung basierend auf Quell- oder <br> - Nützlich für Marketing- oder Tracking-spezifische Abläufe <br> - keine zusätzliche Skripterstellung oder Anpassung erforderlich |
 
 >[!NOTE]
@@ -93,7 +94,7 @@ Wenn das Formular für die DoR-Generierung konfiguriert ist, generiert diese Fun
 
 ## Unterstützung dynamischer Variablen in Regeln
 
-Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und**&#x200B;**Variablenwert abrufen** festgelegt werden.
+Der erweiterte Regeleditor unterstützt die Erstellung und Verwendung dynamischer (temporärer) Variablen. Diese Variablen können während des gesamten Lebenszyklus des Formulars mithilfe der integrierten Funktionen **Variablenwert festlegen“ und****Variablenwert abrufen** festgelegt werden.
 Diese Variablen:
 
 * werden nicht mit den Formulardaten gesendet.
@@ -139,7 +140,6 @@ Anstatt die Logik direkt an die Felder zu binden, verwendet das Formular einen e
 
 **Implementierung mithilfe des Dispatch-Ereignisses und des On-Trigger-Ereignisses**
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 Das Anmeldungsfragment wird dem Formular hinzugefügt und enthält vordefinierte Felder für Benutzername und Kennwort. Auf der Schaltfläche **OTP abrufen** wird eine Regel zum Anzeigen des **Validierungsbereichs** konfiguriert, der das Eingabefeld zum Eingeben und Validieren des OTP enthält.
@@ -158,6 +158,10 @@ Wenn der Benutzer das Formular mit den richtigen Anmeldeinformationen und einem 
 
 Unterstützung benutzerdefinierter Ereignisse, mit denen Entwickelnde benutzerdefinierte Ereignisse erstellen und Trigger erstellen können, die als Bedingungen im Regeleditor verwendet werden können.
 
+### Vereinfachte Grammatik für OOTB- und benutzerdefinierte Ereignisse {#simplified-grammar-for-ootb-and-custom-events}
+
+Der erweiterte Regeleditor enthält eine **vereinfachte Grammatik** für ereignisbasierte Regeln, die **Dispatch-Ereignis** und **Bei Trigger-Ereignis** verwenden. Zuvor galt diese Grammatik nur für **benutzerspezifische** Ereignisse. Vordefinierte Ereignisse wurden nicht unterstützt, für die häufig **Wenn**-Regeln für vordefinierte Trigger und **Bei Trigger-Ereignis**-Regeln für benutzerdefinierte Ereignisse erforderlich waren. OOTB-Ereignisse werden jetzt mit derselben vereinfachten Grammatik unterstützt, was ein konsistentes Bearbeitungsmuster ermöglicht, ohne zwischen **Wenn** und **Bei Trigger** zu wechseln, je nachdem, ob der Trigger OOTB oder benutzerdefiniert ist.
+
 ## Kontextbasierte Regelausführung für wiederholbare Bereiche
 
 Adaptive Forms unterstützt die kontextabhängige Regelausführung für wiederholbare Bereiche. Auf diese Weise können Regeln speziell auf die Bedienfeldinstanz angewendet werden, in der der Benutzer interagiert, anstatt alle Instanzen zu beeinflussen oder auf die letzte zu verweisen.
@@ -175,6 +179,26 @@ Im folgenden Screenshot wird die Regel für das Feld **Number of Product** im Be
 Wenn die Menge geändert wird, ruft die Regel den Stückpreis des ausgewählten Produkts ab und berechnet nur die Gesamtkosten für dieses Bedienfeld.
 
 ![Kontextabhängige Regelausgabe](/help/forms/assets/context-aware-rule-output.png)
+
+## Kombination der Wenn-Bedingungen mit der Dateianlagenkomponente {#combined-when-conditions-with-the-file-attachment-component}
+
+Der erweiterte Regeleditor unterstützt Wenn **Regeln** die die Komponente **Dateianhang** mit anderen Bedingungen kombinieren, indem **AND** oder **OR** Logik verwendet wird. **Bedingung hinzufügen** in der **Wenn**-Klausel kann den Status der Dateianlage zusammen mit Prüfungen anderer Felder oder der Überprüfung des Bedienfelds enthalten, sodass eine Aktion nur ausgeführt wird, wenn jede ausgewählte Bedingung erfüllt ist.
+
+**Szenario**: Ein Haustierregistrierungsformular sammelt **Haustier-ID**, **Haustiername** und **Haustierkategorie** und enthält eine **Foto hinzufügen** Dateianlage. Das Formular führt eine Aktion aus, z. B. Löschen oder Aktualisieren **Foto hinzufügen**, wenn sich der Anhang ändert **und** konfigurierten Bedingungen für die anderen Felder (ihre Werte) erfüllt sind.
+
+**Implementierung mithilfe von Wenn-Bedingungen mit der Komponente Dateianhang im Regeleditor**
+
+Für das Zielobjekt wird eine Regel konfiguriert (z. B. **Foto hinzufügen**). Der **Wenn**-Abschnitt verwendet **Bedingung hinzufügen**, um den Dateianhang-Trigger mit Bedingungen in einem oder mehreren anderen Feldern zu kombinieren, sodass die Aktion sowohl von dem Anhang als auch von diesen Feldwerten abhängt.
+
+Im folgenden Screenshot wird die Bedingung **Wenn** mit mehreren Bedingungen und den Optionen **Bedingung hinzufügen** angezeigt:
+
+![Wenn-Regel mit mehreren Bedingungen und Bedingung hinzufügen](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+Wenn die **Wenn**-Klausel für die konfigurierte **AND**- oder **OR**-Logik als „true“ ausgewertet wird, führt die Regel die konfigurierte Aktion aus.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+Wenn **Haustier-ID** `101` enthält, wird der Anhang **Foto hinzufügen** gelöscht. Wenn **Haustiername** `a` enthält, wird der Anhang ebenfalls gelöscht.
 
 ## Auf URL- und Browser-Parametern basierende Regeln in Adaptive Forms
 

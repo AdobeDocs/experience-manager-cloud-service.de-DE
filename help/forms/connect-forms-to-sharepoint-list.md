@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 83%
+source-wordcount: '782'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ So verwenden Sie die Sendeaktion [!UICONTROL An SharePoint senden] in einem adap
 1. [Erstellen einer SharePoint-Listenkonfiguration](#1-create-a-sharepoint-list-configuration): Dadurch wird AEM Forms mit Ihrem Microsoft® Sharepoint-Listenspeicher verbunden.
 1. [Verwenden von „Senden mit Formulardatenmodell (FDM)“ in einem adaptiven Formular](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): Dadurch wird Ihr adaptives Formular mit dem konfigurierten Microsoft® SharePoint verbunden.
 
-## &#x200B;1. Erstellen einer SharePoint-Listenkonfiguration
+## &#x200B;1. Erstellen einer Microsoft SharePoint-Listenkonfiguration
 
 So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
@@ -45,12 +45,49 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 1. Wählen Sie **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für die Microsoft® SharePoint-Liste zu erstellen.
 
+### Zertifikatbasierte Authentifizierung {#certificate-based-authentication}
 
-## &#x200B;2. Verwenden des Übermittlungsprozesses mit dem Formulardatenmodell (FDM) in einem adaptiven Formular {#use-submit-using-fdm}
+<span class="preview"> Zertifikatbasierte Authentifizierung für die SharePoint-Listenkonfiguration wird vom Early-Adopter-Programm unterstützt. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+
+Im Konfigurationsassistenten SharePoint-Liste :
+
+1. Legen Sie **[!UICONTROL Authentifizierungstyp]** auf **Zertifikatbasierte Authentifizierung** fest.
+1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Client-ID]**, **[!UICONTROL Zertifikatalias]**, **[!UICONTROL Mandanten-ID]** und **[!UICONTROL Mandantenname]**.
+1. Geben Sie die **[!UICONTROL SharePoint-Site]** URL ein, überprüfen Sie bei Bedarf die Site-Verbindung und wählen Sie die **[!UICONTROL SharePoint-Liste]**.
+1. Klicken Sie auf **[!UICONTROL Verbinden]**, um die Verbindung zu überprüfen, und klicken Sie dann auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern.
+
+Im folgenden Screenshot wird die Konfiguration der SharePoint-Liste mit **zertifikatbasierter Authentifizierung** angezeigt:
+
+![Konfiguration der SharePoint-Liste mit zertifikatbasierter Authentifizierung](/help/forms/assets/sharepoint-list-certificate-auth-configuration.png){width=50%, height=50%, align=center}
+
+Um das Zertifikat für AEM und Microsoft Azure vorzubereiten, führen Sie die folgenden Schritte in AEM aus und registrieren Sie dann das öffentliche Zertifikat in Microsoft Azure.
+
+**In AEM**
+
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
+1. Suchen Sie nach **[!UICONTROL fd-cloudservice]**, wählen Sie den Benutzer aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
+1. Öffnen Sie die **[!UICONTROL Keystore]** . Wenn noch kein KeyStore erstellt wurde, klicken Sie auf **[!UICONTROL KeyStore erstellen]** und füllen Sie die Eingabeaufforderungen aus, um das KeyStore-Kennwort festzulegen.
+1. Fügen Sie den privaten Schlüssel zum Keystore hinzu: Erweitern Sie **[!UICONTROL Privaten Schlüssel aus Keystore-Datei hinzufügen]** und laden Sie Ihre **.jks-** hoch.
+1. Geben Sie einen **[!UICONTROL Alias]** ein, der dem **[!UICONTROL Zertifikatalias]** in der SharePoint-Listenkonfiguration entspricht, senden Sie das Schlüsselmaterial und klicken Sie dann auf **[!UICONTROL Speichern und schließen]**.
+
+Der Screenshot zeigt den KeyStore, nachdem das Zertifikat hinzugefügt wurde. Der **[!UICONTROL Alias]** muss mit dem **[!UICONTROL Zertifikatalias]** in der Cloud-Konfiguration der SharePoint-Liste übereinstimmen:
+
+![fd-cloudservice-user-Keystore mit Zertifikatalias](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}
+
+**In Microsoft Azure**
+
+1. Öffnen Sie Ihre Anwendungsregistrierung und navigieren Sie zu **Zertifikate und Geheimnisse** > **Zertifikate**.
+1. Wählen Sie **Zertifikat hochladen** und laden Sie die Zertifikatdatei (öffentlichen Schlüssel) hoch, der Azure für das Programm vertrauen muss.
+
+Der Screenshot zeigt die Registerkarte **Zertifikate** im Azure-Portal, wo Sie das Zertifikat für die App-Registrierung hochladen:
+
+![Zertifikate und Geheimnisse für die Registrierung der Azure-App](/help/forms/assets/azure-app-registration-sharepoint-certificates.png){width=50%, height=50%, align=center}
+
+## &#x200B;2. Verwenden von Senden mit Formulardatenmodell (FDM) in einem adaptiven Formular {#use-submit-using-fdm}
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Liste in einem adaptiven Formular zu verwenden:
 
-1. [Erstellen eines Formulardatenmodells (FDM) mithilfe von Microsoft](/help/forms/create-form-data-models.md)
+1. [Erstellen eines Formulardatenmodells (FDM) mithilfe einer Microsoft® SharePoint-Listenkonfiguration](/help/forms/create-form-data-models.md)
 1. [Konfigurieren des Formulardatenmodells (FDM) zum Abrufen und Senden von Daten](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Erstellen eines adaptiven Formulars](/help/forms/creating-adaptive-form-core-components.md)
 1. [Konfigurieren einer Sendeaktion mit einem Formulardatenmodell (FDM)](/help/forms/using-form-data-model.md)
@@ -66,6 +103,6 @@ Wenn Sie das Formular absenden, werden die Daten im angegebenen Microsoft® Shar
 > * Personenspalte
 > * Externe Datenspalte
 
-## Ähnliche Artikel
+## Verwandte Artikel
 
 {{af-submit-action}}

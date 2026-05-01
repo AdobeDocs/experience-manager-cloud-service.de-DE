@@ -9,10 +9,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 23a6c298df67355160d3ec4b2519f6d1bde2b254
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 99%
+source-wordcount: '2147'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
-| Gilt für | Adaptives Formular basierend auf Foundation-Komponenten. <br> Für adaptive Formulare, die auf Kernkomponenten basieren, [klicken Sie hier](/help/forms/captcha-adaptive-forms-core-components.md). |
+| Gilt für | Adaptives Formular basierend auf Foundation-Komponenten. <br> Klicken Sie für ein adaptives Formular, das auf Kernkomponenten [, hier ](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
@@ -56,9 +56,9 @@ Formularautorinnen und -autoren können den reCAPTCHA-Service von Google nutzen,
 
    1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**.
    1. Wählen Sie einen Ordner aus oder erstellen Sie einen Ordner und aktivieren Sie ihn für Cloud-Konfigurationen, indem Sie folgende Schritte ausführen:
-      1. Wählen Sie im Konfigurations-Browser den Ordner aus und wählen Sie dann **[!UICONTROL Eigenschaften]**.
+      1. Wählen Sie im Konfigurations-Browser den Ordner aus und wählen Sie **[!UICONTROL Eigenschaften]**.
       1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
-      1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
+      1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Konfigurieren Sie den Cloud-Service für [!DNL reCAPTCHA Enterprise].
 
@@ -85,9 +85,9 @@ Sobald der reCAPTCHA Enterprise-Dienst aktiviert ist, kann er in adaptiven Formu
 1. Erstellen Sie einen Konfigurations-Container für Cloud-Dienste.
    1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**.
    1. Wählen Sie einen Ordner aus oder erstellen Sie einen Ordner und aktivieren Sie ihn für Cloud-Konfigurationen, indem Sie folgende Schritte ausführen:
-      1. Wählen Sie im Konfigurations-Browser den Ordner aus und wählen Sie dann **[!UICONTROL Eigenschaften]**.
+      1. Wählen Sie im Konfigurations-Browser den Ordner aus und wählen Sie **[!UICONTROL Eigenschaften]**.
       1. Aktivieren Sie im Dialogfeld „Konfigurationseigenschaften“ die Option **[!UICONTROL Cloud-Konfigurationen]**.
-      1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
+      1. Wählen Sie **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Konfigurieren Sie den Cloud-Service für reCAPTCHA v2.
 
@@ -347,6 +347,64 @@ Legen Sie die Eigenschaft **[!UICONTROL af.cloudservices.recaptcha.domain]** der
 ```
 
 Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process) in Ihrer Cloud Service-Instanz bereit.
+
+## Überschreiben der reCAPTCHA-Cloud-Konfiguration mit OSGi {#override-recaptcha-osgi}
+
+Um verschiedene Projekt-IDs, Site-Schlüssel oder Geheimnisse pro Umgebung zu verwenden, fügen Sie eine OSGi-Konfiguration für **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi-Konfiguration]** hinzu.
+
+### Hinzufügen der OSGi-Überschreibung in Ihrem Projekt {#override-recaptcha-steps}
+
+1. Klonen Sie das Cloud Manager-Git-Repository für Ihr AEM-Projekt.
+
+   ```shell
+   git clone <your-cloud-manager-repository-url>
+   ```
+
+1. Öffnen Sie das geklonte Repository in einem Texteditor.
+
+1. Wechseln Sie zum `ui.config` Ordner unter Ihrem Programm (ersetzen Sie `<your-application-folder>` durch den Ordnernamen unter `/apps` in Ihrem Projekt):
+
+   * **Für Autor:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.author`
+   * **Für Veröffentlichung:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.publish`
+
+   >[!NOTE]
+   >
+   > Erstellen Sie die `osgiconfig`-, `config.author`- und `config.publish`, falls noch nicht vorhanden.
+
+1. Erstellen Sie die OSGi-Überschreibungsdatei in beiden Ausführungsmodus-Ordnern und verwenden Sie in den einzelnen Ordnern denselben Dateinamen:
+
+   * **Für Autor:** Sie im `config.author` Ordner `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+   * **Für die Veröffentlichung** Erstellen Sie im `config.publish` Ordner `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+
+1. Fügen Sie die folgende JSON-Datei in jede Datei ein (oder passen Sie bei Bedarf die Autoren- und Veröffentlichungsinhalte separat an). Ersetzen Sie `<environment-name>` in jedem Pfad unter `overrides` durch den Namen Ihrer reCAPTCHA Enterprise-Cloud-Konfiguration. Verwenden Sie [Sling-Überschreibungssyntax](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax).
+
+   ```json
+   {
+     "enabled": true,
+     "description": "recaptchaITOverrideConfig",
+     "overrides": [
+       "cloudconfigs/recaptcha/<environment-name>/projectId=\"$[env:projectId]\"",
+       "cloudconfigs/recaptcha/<environment-name>/secretKey=\"$[secret:secretKey]\"",
+       "cloudconfigs/recaptcha/<environment-name>/siteKey=\"$[env:siteKey]\""
+     ]
+   }
+   ```
+
+   >[!NOTE]
+   >
+   >Fügen Sie `projectId`, `siteKey` und `secretKey` als Umgebungsvariablen und Geheimnisse in Cloud Manager hinzu, sodass sie für **author**, **preview** und **publish** gelten (verwenden Sie **Step Applied** im **Umgebungskonfiguration** Dialogfeld). Siehe [Umgebungsvariablen in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
+   ![reCAPTCHA-Überschreibung](/help/forms/assets/recaptcha-override.png)
+
+1. Übergeben und Übertragen von Änderungen:
+
+   ```shell
+   git add ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/
+   git commit -m "Add reCAPTCHA context-aware configuration OSGi overrides"
+   git push origin <your-branch-name>
+   ```
+
+1. Führen Sie die Cloud Manager-Pipeline aus, die dieses Repository bereitstellt. Nach der Bereitstellung liefert die Überschreibung `projectId`, `siteKey` und `secretKey` aus den Variablen und Geheimnissen, die für diese Umgebung definiert sind.
 
 ## Siehe auch {#see-also}
 
