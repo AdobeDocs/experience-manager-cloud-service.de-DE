@@ -177,7 +177,7 @@ ABAC kann auch bei folgenden Szenarien helfen:
 
 >[!IMPORTANT]
 >
->Standardmäßig wird allen anderen Benutzergruppen, die nicht mit Regeln im [Arbeitsblatt“ angegeben ](#configure-abac-spreadsheet), der Zugriff verweigert. Wenn ein(e) Benutzende(r) nicht zu einer Gruppe gehört, für die ABAC-Regeln definiert sind, kann er/sie nicht auf Assets zugreifen. Wenn einige Benutzende Zugriff auf alle Assets haben müssen, z. B. Administratoren, schließen Sie eine Gruppe mit einer Gruppen-ID in die Tabelle ein und geben Sie an, dass die Gruppe Zugriff auf alle Assets benötigt, damit Adobe sie entsprechend konfigurieren kann.
+>Standardmäßig wird allen anderen Benutzergruppen, die nicht mit Regeln im [Arbeitsblatt“ angegeben &#x200B;](#configure-abac-spreadsheet), der Zugriff verweigert. Wenn ein(e) Benutzende(r) nicht zu einer Gruppe gehört, für die ABAC-Regeln definiert sind, kann er/sie nicht auf Assets zugreifen. Wenn einige Benutzende Zugriff auf alle Assets haben müssen, z. B. Administratoren, schließen Sie eine Gruppe mit einer Gruppen-ID in die Tabelle ein und geben Sie an, dass die Gruppe Zugriff auf alle Assets benötigt, damit Adobe sie entsprechend konfigurieren kann.
 
 ## Unterstützte Regelkonstrukte {#supported-rule-constructs}
 
