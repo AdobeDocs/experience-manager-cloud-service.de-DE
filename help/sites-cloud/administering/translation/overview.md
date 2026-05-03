@@ -6,10 +6,10 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a27d861061d4ee41bdfc080bc50a942de60f593b
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 98%
+source-wordcount: '340'
+ht-degree: 85%
 
 ---
 
@@ -19,6 +19,7 @@ Automatisieren Sie die Übersetzung von Seiteninhalten und Assets, um mehrsprach
 
 * **Menschliche Übersetzung:** Inhalte werden an Ihren Übersetzungsdienstleister gesendet und von professionellen Übersetzern übersetzt. Wenn die Inhalte übersetzt wurden, werden sie zurückgesendet und in AEM importiert. Ist Ihr Übersetzungsdienstleister in AEM integriert, werden die Inhalte automatisch von AEM an den Übersetzungsdienstleister gesendet.
 * **Maschinelle Übersetzung:** Der maschinelle Übersetzungs-Service übersetzt sofort Ihre Inhalte.
+* **Agentenübersetzung (KI-Übersetzungsintegration):** Verbinden Sie AEM über Übersetzungs-Cloud-Services mit einem großen Sprachmodell und verwenden Sie dieselben Übersetzungsprojekte und -Workflows wie bei anderen Anbietern. Sie können Style Guides hochladen, damit AEM Übersetzungsregeln pro Gebietsschema generiert. Siehe [Konfigurieren der KI-Übersetzungsintegration](ai-translation-integration.md).
 
 >[!TIP]
 >
