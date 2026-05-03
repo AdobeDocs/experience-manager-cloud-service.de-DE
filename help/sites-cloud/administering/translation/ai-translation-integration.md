@@ -66,7 +66,7 @@ Nachdem die Cloud-Konfiguration gespeichert wurde, registrieren Sie **agentische
 
 ## Ausführen von Übersetzungsprojekten {#run-translation-projects}
 
-Sobald die KI-Übersetzung konfiguriert und mit Ihren Seiten verknüpft ist, [ Sie Übersetzungsprojekte auf ](managing-projects.md) gleiche Weise wie bei anderen Übersetzungsdienstleistern erstellen und ausführen. Inhalte von Seiten, Inhaltsfragmenten und Assets entsprechen Ihren Übersetzungsregeln und Framework-Einstellungen.
+Sobald die KI-Übersetzung konfiguriert und mit Ihren Seiten verknüpft ist, [&#x200B; Sie Übersetzungsprojekte auf &#x200B;](managing-projects.md) gleiche Weise wie bei anderen Übersetzungsdienstleistern erstellen und ausführen. Inhalte von Seiten, Inhaltsfragmenten und Assets entsprechen Ihren Übersetzungsregeln und Framework-Einstellungen.
 
 >[!NOTE]
 >
