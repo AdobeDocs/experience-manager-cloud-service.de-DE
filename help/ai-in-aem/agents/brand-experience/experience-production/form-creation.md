@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über den Vorgang der Formularerstellung in Brand
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ Zu den wichtigsten Vorteilen der Formularerstellung gehören:
 * **Importieren eines PDF-Dokuments und Konvertieren in ein Formular**: Sie können vorhandene PDF-Dokumente importieren und in Formulare umwandeln. Die Fähigkeit analysiert hochgeladene Inhalte, um Feldtypen zu erkennen, Layouts beizubehalten und Formulare mit responsiver Design- und Validierungslogik zu verbessern, während sichergestellt wird, dass Marken- und Compliance-Standards eingehalten werden.
 
 Wenn Sie eine dieser Funktionen verwenden, werden Sie aufgefordert, den Typ des zu erstellenden Formulars auszuwählen. Geben Sie entweder eine auf Kernkomponenten basierende Vorlage für adaptive Formulare oder eine auf Edge Delivery Services basierende Vorlage für adaptive Formulare an und geben Sie Ihren bevorzugten Pfad zum Speichern des Formulars an. Wenn Sie ein Formular erstellen, das auf Edge Delivery Services basiert, können Sie auch die GitHub-URL Ihres Repositorys angeben.
-
 
 ### Eingabeaufforderungen {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
+
+* Sie können auch die [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) für angeleitete, praktische Anweisungen verwenden.
