@@ -137,7 +137,7 @@ Erfahren Sie mehr über [Lokale Entwicklung mit KI](/help/ai-in-aem/local-develo
 
 Der Experience Governance MCP-Server ist jetzt allgemein verfügbar (GA). Es lässt sich mit KI-Entwickler-Tools und Chatbots integrieren, die das Model Context Protocol (MCP) unterstützen, sodass Sie die Markenintegrität und -konformität mithilfe natürlicher Sprachaufforderungen in Ihrem Chatbot oder Ihrer IDE schützen können. Sie können Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenverwaltung auswerten und Markenkonfigurationen und verfügbare Governance-Prüfungen abrufen.
 
-Erfahren Sie mehr über [AEM MCP-](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) und den [Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Erfahren Sie mehr über [AEM MCP-](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) und den [Governance Agent](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
