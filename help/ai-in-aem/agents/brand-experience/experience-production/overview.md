@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM di
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: b6f9448b0c7e22277b1efba79a10b22f1126392a
+source-git-commit: 83657ae78fb376f3f55b9f8922deac19b01329a7
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 5%
 
 ---
@@ -56,4 +56,4 @@ Der Agent kann mit anderen Agentenfähigkeiten arbeiten, Beispiele sind:
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.live/brand-visibility/l339/) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://bit.ly/4ndjsJ0) für angeleitete, praktische Anweisungen verwenden.
