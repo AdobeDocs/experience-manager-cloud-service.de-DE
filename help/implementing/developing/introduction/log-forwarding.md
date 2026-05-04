@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Weiterleitung von Protokollen an Protok
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: e3785c9d8c5f1a8576c93d566d332cd718820bd7
+source-git-commit: ac4ce2421cdeb29aec7183f515ae32bfca37e82f
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 93%
+source-wordcount: '2560'
+ht-degree: 92%
 
 ---
 
@@ -277,7 +277,7 @@ Die IAM-Richtlinie sollte dem Benutzenden die Verwendung von `s3:putObject` erm�
 Weitere Informationen zur Implementierung finden Sie in der [Dokumentation zur AWS-Bucket-Richtlinie](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html).
 
 >[!NOTE]
->CDN-Protokollunterstützung für AWS S3 ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[&#128279;](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.
+>CDN-Protokollunterstützung für AWS S3 ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.[
 
 ### Azure Blob Storage {#azureblob}
 
@@ -466,7 +466,7 @@ Die Protokollweiterleitung an New Relic nutzt die New Relic-HTTPS-API für die A
 >
 >Die Protokollweiterleitung an New Relic ist nur für kundeneigene New Relic-Konten verfügbar.
 >
->Die Unterstützung des CDN-Protokolls für die New Relic-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[&#128279;](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.
+>Die Unterstützung des CDN-Protokolls für die New Relic-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.[
 >
 >New Relic bietet regionsspezifische Endpunkte, je nachdem, wo Ihr New Relic-Konto bereitgestellt wird.  Weitere Informationen finden Sie in der [New Relic-Dokumentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
@@ -488,7 +488,7 @@ Das Umfangsattribut „Ingest Logs“ ist für das Token erforderlich.
 ```
 
 >[!NOTE]
->Die Unterstützung des CDN-Protokolls für die Dynatrace-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an &lbrace;0[&#128279;](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.
+>Die Unterstützung des CDN-Protokolls für die Dynatrace-Protokoll-API ist für die Zukunft geplant. Bitte senden Sie eine E-Mail an {0](mailto:aemcs-logforwarding-beta@adobe.com)aemcs-logforwarding-beta@adobe.com), um Interesse zu registrieren.[
 
 ### Splunk {#splunk}
 
@@ -516,8 +516,6 @@ data:
 > [Bei der Migration](#legacy-migration) von der alten Protokollweiterleitung zu diesem Self-Service-Modell haben sich die Werte des Felds `sourcetype`, die an Ihren Splunk-Index gesendet werden, möglicherweise geändert. Passen Sie sie daher entsprechend an.
 
 ### Sumo Logic {#sumologic}
-
-Die Protokollweiterleitung an Sumo Logic unterstützt AEM- und Dispatcher-Protokolle; CDN-Protokolle werden noch nicht unterstützt.
 
 Bei der Konfiguration der Sumo-Logik für die Datenaufnahme erhalten Sie eine „HTTP Source Address“, die den Host, den Receiver-URI und den privaten Schlüssel in einer einzigen Zeichenfolge bereitstellt.  Beispiel:
 
