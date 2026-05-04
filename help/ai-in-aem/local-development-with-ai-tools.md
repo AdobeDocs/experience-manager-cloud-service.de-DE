@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
+source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 1%
+source-wordcount: '1601'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +27,8 @@ Vier einander ergänzende Komponenten befassen sich damit:
 | **Agentenkenntnisse** | Wiederverwendbare Befehlssätze für wiederkehrende Entwicklungsaufgaben wie Komponentenerstellung und Dispatcher-Konfiguration |
 | **AEM-Schnellstart für lokalen MCP-Server** | Zeigt Live-Laufzeitdaten aus einer lokalen AEM SDK-Instanz zur Fehlerbehebung an |
 | **Lokaler Dispatcher-MCP-Server** | Ermöglicht die Laufzeitvalidierung und -überprüfung einer lokalen Dispatcher-Instanz |
+
+In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
 
 >[!NOTE]
 >
@@ -57,7 +59,7 @@ Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](http
 
 ### Kenntnisse installieren {#install-skills}
 
-Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar.
+Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [ Anleitung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
 
 #### Claude Code {#claude-code}
 
@@ -120,6 +122,8 @@ CTA Link (ctaLink) - Pathfield
 ```
 
 Der Agent wiederholt die Feldspezifikation zur Bestätigung und generiert dann alle Komponentendateien. Zu den unterstützten Mustern gehören Mehrfachfeld- mit zusammengesetzten verschachtelten Elementen, bedingte Einblenden-/Ausblenden-Logik, Kernkomponenten-Erweiterung über Sling Resource Merger und JUnit 5-Tests mit AEM Mocks.
+
+Weitere Informationen erhalten Sie im Abschnitt [Komponentenentwicklung mit dem Tutorial zu den Kenntnissen von AEM-Agenten](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Dispatcher-Kenntnisse verwenden {#use-the-dispatcher-skill}
 
@@ -189,7 +193,7 @@ Navigieren Sie zu **Tools > GitHub-Kopilot > Model Context Protocol (MCP)** und 
 
 #### Andere IDEs {#other-ides}
 
-Jeder MCP-Client kann eine Verbindung herstellen, indem er mit einem `http://localhost:4502/bin/mcp` auf `Authorization: Basic YWRtaW46YWRtaW4=` verweist. Konfigurieren Sie benutzerdefinierte Header mithilfe der MCP-Einstellungen Ihrer IDE.
+Jeder MCP-Client kann eine Verbindung herstellen, indem er mit einem `Authorization: Basic YWRtaW46YWRtaW4=` auf `http://localhost:4502/bin/mcp` verweist. Konfigurieren Sie benutzerdefinierte Header mithilfe der MCP-Einstellungen Ihrer IDE.
 
 >[!NOTE]
 >
