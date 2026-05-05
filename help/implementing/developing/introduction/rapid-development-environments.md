@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 161d6be186a6124840d93672470de91399481f20
+source-git-commit: 1548c70e63dcccd545d8d5838a1249ef6909f6a2
 workflow-type: tm+mt
-source-wordcount: '5835'
+source-wordcount: '6011'
 ht-degree: 91%
 
 ---
@@ -106,7 +106,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    Die Anmeldeinformationen (Token) werden in der globalen AIO-Konfiguration gespeichert und unterstützen daher nur eine einzige Anmeldung und Organisation. Wenn Sie mehrere RDEs verwenden möchten, die unterschiedliche Anmeldungen oder Organisationen benötigen, folgen Sie dem Beispiel unten, wo Kontexte eingeführt werden.
 
    <details><summary>Beispiel zum Einrichten eines lokalen Kontexts für eine Ihrer RDE-Anmeldungen</summary>
-   Führen Sie die folgenden Schritte aus, um in einem bestimmten Kontext die Anmeldeinformationen lokal in einer .aio-Datei im aktuellen Verzeichnis zu speichern. Ein Kontext ist auch eine geschickte Möglichkeit, um eine CI/CD-Umgebung oder ein Skript einzurichten.  Um diese Funktion nutzen zu können, stellen Sie sicher, dass Sie mindestens die aio-cli-Version 10.3.1 verwenden. Führen Sie mit „npm install -g @adobe/aio-cli“ eine Aktualisierung durch.
+   Führen Sie die folgenden Schritte aus, um in einem bestimmten Kontext die Anmeldeinformationen lokal in einer .aio-Datei im aktuellen Verzeichnis zu speichern. Ein Kontext ist auch eine geschickte Möglichkeit, um eine CI/CD-Umgebung oder ein Skript einzurichten.  Um diese Funktion zu verwenden, stellen Sie sicher, dass Sie mindestens aio-cli Version 10.3.1 verwenden. Aktualisieren Sie sie mit „npm install -g @adobe/aio-cli“.
 
    Erstellen Sie einen Kontext namens „m`ycontext`“, der dann mithilfe des auth-Plug-ins als Standardkontext festgelegt wird, bevor Sie den Anmeldebefehl aufrufen.
 
@@ -715,6 +715,8 @@ Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umge
 >Diese Funktion ist in Beta verfügbar. Wenn Sie an der Verwendung dieser neuen Funktion und der Weitergabe Ihres Feedbacks interessiert sind, senden Sie eine E-Mail an [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com), in der Ihr Anwendungsfall beschrieben wird.
 
 RDEs unterstützen die Erstellung einer Momentaufnahme des aktuellen Status von Code und Inhalt, die zu einem späteren Zeitpunkt wiederhergestellt werden kann. Momentaufnahmen sind nützlich, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt eines Snapshots als bekannten Ausgangspunkt für Tests wiederherzustellen.
+
+Beachten Sie, dass ein Snapshot einer bestimmten RDE nicht in einer anderen RDE wiederhergestellt werden kann.
 
 Jede RDE-Umgebung verfügt über maximal sieben Momentaufnahmen. Momentaufnahmen, die zur Löschung markiert sind, aber noch innerhalb des siebentägigen Aufbewahrungszeitraums liegen, werden weiterhin für dieses Limit gezählt, bis sie vollständig entfernt werden. Wenn Sie das Limit erreichen und sofort Kapazität für einen neuen Schnappschuss benötigen, verwenden Sie das erzwungene Löschen wie in [Löschen eines Schnappschusses](#delete-snapshot) beschrieben anstelle eines standardmäßigen Löschvorgangs.
 
