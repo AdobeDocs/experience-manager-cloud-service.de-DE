@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6e0455e325e7988a9f7081878dff6e568479c322
+source-git-commit: 6ddc4857295bc8251894ee3aebb5ea2643959d5e
 workflow-type: tm+mt
-source-wordcount: '7384'
+source-wordcount: '7386'
 ht-degree: 90%
 
 ---
@@ -1319,7 +1319,7 @@ ht-degree: 90%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1574,6 +1574,7 @@ ht-degree: 90%
       + [Inhaltskopie](/help/implementing/developing/tools/content-copy.md)
       + [Maven-Plug-in für Inhaltspakete](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+      + [Web-Konsole](/help/implementing/developing/tools/web-console.md)
       + [Verwenden von CRXDE Lite](/help/implementing/developing/tools/crxde.md)
       + [Paket-Manager](/help/implementing/developing/tools/package-manager.md)
       + [Externalisieren von URLs](/help/implementing/developing/tools/externalizer.md)

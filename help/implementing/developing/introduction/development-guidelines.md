@@ -4,12 +4,13 @@ description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud 
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
 workflow-type: tm+mt
-source-wordcount: '2767'
-ht-degree: 71%
+source-wordcount: '2890'
+ht-degree: 69%
 
 ---
+
 
 # Entwicklungsrichtlinien für AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
@@ -111,11 +112,11 @@ Wenn Sie beispielsweise eine Indexdefinition in einem großen Inhalts-Repository
 
 Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs` Ordner geschrieben.
 
-In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Festlegen der Protokollebene**
 
-Um die Protokollierungsstufen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollstufe schneller zu ändern.
+Um die Protokollierungsebenen für Cloud-Umgebungen zu ändern, sollte die OSGi-Konfiguration für die Sling-Protokollierung geändert und anschließend vollständig neu bereitgestellt werden. Da dies nicht sofort geschieht, sollten Sie vorsichtig sein, ausführliche Protokolle über Produktionsumgebungen zu aktivieren, die viel Traffic erhalten. In Zukunft wird es möglicherweise Mechanismen geben, um die Protokollstufe schneller zu ändern.
 
 >[!NOTE]
 >
@@ -172,28 +173,26 @@ Thread-Dumps in Cloud-Umgebungen werden laufend gesammelt, können aber derzeit 
 
 ### Lokale Entwicklung {#local-development}
 
-Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf CRXDE Lite (`/crx/de`) und die AEM Web-Konsole (`/system/console`).
+Für die lokale Entwicklung haben Entwickler uneingeschränkten Zugriff auf [CRXDE Lite](/help/implementing/developing/tools/crxde.md) (`/crx/de`) und die [Web-Konsole](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
-Bei der lokalen Entwicklung (mit der SDK) können `/apps` und `/libs` direkt geschrieben werden, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
+Für die lokale Entwicklung (mit der SDK) können `/apps` und `/libs` direkt geschrieben werden, was sich von Cloud-Umgebungen unterscheidet, in denen diese Ordner der obersten Ebene unveränderlich sind.
 
 ### Entwicklungs-Tools für AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->Die AEM as a Cloud Service Developer Console sollte nicht mit der ähnlich benannten [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) verwechselt werden.
 >
-
->[!NOTE]
->Einige Kundinnen und Kunden haben die Möglichkeit, ein überarbeitetes Erlebnis für die AEM Cloud Service Developer Console auszuprobieren. Weitere Informationen finden Sie in [diesem Artikel](/help/implementing/developing/introduction/aem-developer-console.md).
+>* Einige Kundinnen und Kunden haben die Möglichkeit, ein überarbeitetes Erlebnis für die AEM Cloud Service Developer Console auszuprobieren. Weitere Informationen finden Sie in [diesem Artikel](/help/implementing/developing/introduction/aem-developer-console.md).
+>* Die AEM as a Cloud Service Developer Console sollte nicht mit der ähnlich benannten [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) verwechselt werden.
 
 Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
 
 Stattdessen kann der Repository-Browser von der AEM as a Cloud Service Developer Console aus gestartet werden und bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“. Weitere Informationen finden Sie unter [Repository-Browser](/help/implementing/developing/tools/repository-browser.md).
 
-Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in AEM as a Cloud Service Developer Console für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt bestimmt werden:
+Eine Reihe von Tools zum Debugging von AEM as a Cloud Service-Entwicklungsumgebungen sind in der [AEM as a Cloud Service-Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) für RDE-, Entwicklungs-, Staging- und Produktionsumgebungen verfügbar. Die URL kann durch Anpassen der Autoren- oder Veröffentlichungs-Service-URLs wie folgt bestimmt werden:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-Als Abkürzung kann der folgende Cloud Manager CLI-Befehl verwendet werden, um die AEM als Cloud Service Developer Console auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
+Als Abkürzung kann der folgende Cloud Manager CLI-Befehl verwendet werden, um die AEM as a Cloud Service Developer Console auf der Grundlage eines unten beschriebenen Umgebungsparameters zu starten:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -233,7 +232,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie E-Mails anfordern, konfig
 
 Standardmäßig sind zum Senden von E-Mails verwendete Ports deaktiviert. Um einen Port zu aktivieren, konfigurieren Sie die [erweiterten Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) und stellen Sie sicher, dass Sie für jede benötigte Umgebung die Regeln für die Port-Weiterleitung des Endpunkts `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` festlegen, die den beabsichtigten Port (z. B. 465 oder 587) einem Proxy-Port zuordnen.
 
-Es wird empfohlen, das erweiterte Netzwerk mit einem auf `kind` gesetzten `flexiblePortEgress` zu konfigurieren, da Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie einen `kind`-Parameter von `dedicatedEgressIp`. Wenn Sie bereits aus anderen Gründen ein VPN konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
+Es wird empfohlen, das erweiterte Netzwerk mit einem auf `flexiblePortEgress` gesetzten `kind` zu konfigurieren, da Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann. Wenn eine eindeutige Ausgangs-IP-Adresse erforderlich ist, wählen Sie einen `kind`-Parameter von `dedicatedEgressIp`. Wenn Sie bereits aus anderen Gründen ein VPN konfiguriert haben, können Sie auch die eindeutige IP-Adresse verwenden, die von dieser erweiterten Netzwerkvariante bereitgestellt wird.
 
 Sie müssen eine E-Mail über einen E-Mail-Server und nicht direkt an E-Mail-Clients senden. Andernfalls können die E-Mails blockiert werden.
 
@@ -243,9 +242,9 @@ Der [Day CQ Mail Service OSGI](https://experienceleague.adobe.com/docs/experienc
 
 ### Konfiguration {#email-configuration}
 
-E-Mails in AEM sollten mit dem [Day CQ-E-Mail-Service-OSGi-Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service) gesendet werden.
+E-Mails in AEM sollten mit dem [Day CQ Mail Service OSGI-Service) gesendet ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service).
 
-Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service:
+Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService` OSGi-Dienst:
 
 * Der Hostname des SMTP-Servers sollte auf $[env:AEM_PROXY_HOST;default=proxy.tunnel eingestellt sein]
 * Der SMTP-Server-Port sollte auf den Wert des ursprünglichen Proxy-Ports gesetzt werden, der im Parameter „portForwards“ festgelegt ist, der beim Konfigurieren des erweiterten Netzwerks im API-Aufruf verwendet wird. Beispiel: 30465 (anstatt 465)
@@ -254,7 +253,7 @@ Der SMTP-Server-Port sollte als `portDest` Wert im portForwards-Parameter festge
 
 In diesem Fall und unter der Annahme, dass SSL aktiviert werden muss, in der Konfiguration des **Day CQ Mail Service OSGi**-Services:
 
-* `smtp.port` wird auf `30465` gesetzt
+* Setzen Sie `smtp.port` auf `30465`
 * Setzen Sie `smtp.ssl` auf `true`
 
 Wenn der Ziel-Port 587 ist, sollte alternativ ein `portOrig`-Wert von 30587 verwendet werden. Und unter der Annahme, dass SSL deaktiviert sein sollte, ist die Konfiguration des Day CQ Mail Service OSGI-Services:
@@ -269,7 +268,7 @@ Der E-Mail-Service kann optional mit OAuth2-Unterstützung konfiguriert werden. 
 
 ### Alte E-Mail-Konfiguration {#legacy-email-configuration}
 
-Vor der Version 2021.9.0 wurde E-Mail über eine Anfrage an den Support konfiguriert. Beachten Sie die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService OSGI`-Service:
+Vor der Version 2021.9.0 wurde E-Mail über eine Anfrage an den Support konfiguriert. Beachten Sie die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService` OSGi-Dienst:
 
 AEM as a Cloud Service erfordert, dass E-Mails über den Port 465 versendet werden. Wenn ein Mailserver Port 465 nicht unterstützt, kann Port 587 verwendet werden, solange die TLS-Option aktiviert ist.
 
@@ -283,7 +282,7 @@ und wenn Port 587 angefordert wurde:
 * `smtp.port` auf `587` festlegen
 * `smtp.ssl` auf `false` festlegen
 
-Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGi-Konfiguration festgelegten `smtp.starttls`-Werten.
+Die `smtp.starttls`-Eigenschaft wird von AEM as a Cloud Service zur Laufzeit automatisch auf einen entsprechenden Wert eingestellt. Wenn `smtp.ssl` auf „true“ gesetzt ist, wird `smtp.startls` ignoriert. Wenn `smtp.ssl` auf „false“ gesetzt ist, wird `smtp.starttls` auf „true“ gesetzt. Dies gilt unabhängig von den in Ihrer OSGi-Konfiguration festgelegten `smtp.starttls`.
 
 Der SMTP-Server-Host sollte auf den Host Ihres E-Mail-Servers eingestellt werden.
 

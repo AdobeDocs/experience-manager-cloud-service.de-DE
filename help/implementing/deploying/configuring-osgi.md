@@ -4,10 +4,10 @@ description: OSGi-Konfiguration mit geheimen Werten und umgebungsspezifischen We
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '3321'
-ht-degree: 100%
+source-git-commit: ce0158b1f4d1a1cf9f6102a79c1ca29ee7edd3b5
+workflow-type: tm+mt
+source-wordcount: '3437'
+ht-degree: 91%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 100%
 
 [OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von Adobe Experience Manager (AEM). OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfigurationen verwendet.
 
-OSGi bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einem Programm zusammengefügt und bereitgestellt werden. Dies ermöglicht die einfache Verwaltung von OSGi-Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente ist in einem der verschiedenen Bundles enthalten. Weitere Informationen finden Sie in der [OSGi-Spezifikation](https://help.eclipse.org/latest/index.jsp).
+OSGi bietet standardisierte Grundbausteine – kleine, wiederverwendbare, gemeinsame genutzte Komponenten. Diese Komponenten können zu einem Programm zusammengefügt und bereitgestellt werden. Dies ermöglicht die einfache Verwaltung von OSGi-Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente ist in einem der verschiedenen Bundles enthalten. Weitere Informationen finden Sie in der [OSGi-Spezifikation.](https://help.eclipse.org/latest/index.jsp)
 
 Sie können die Konfigurationseinstellungen für OSGi-Komponenten mithilfe von Konfigurationsdateien verwalten, die Teil eines AEM-Code-Projekts sind.
 
 >[!TIP]
 >
->Sie können Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation [hier](/help/implementing/cloud-manager/environment-variables.md).
+>Sie können Cloud Manager verwenden, um Umgebungsvariablen zu konfigurieren. Weitere Informationen finden Sie in der Dokumentation [hier.](/help/implementing/cloud-manager/environment-variables.md)
 
 ## OSGi-Konfigurationsdateien {#osgi-configuration-files}
 
@@ -32,7 +32,7 @@ Konfigurationsänderungen werden in den Code-Paketen (`ui.config`) des AEM-Proje
 
 Das Format der OSGi-Konfigurationsdateien ist JSON-basiert und verwendet das im Apache Sling-Projekt definierte `.cfg.json`-Format.
 
-OSGi-Konfigurationen zielen auf OSGi-Komponenten über ihre PID (Persistent Identity) ab, die standardmäßig den Java-Klassennamen der OSGi-Komponente verwendet. Um zum Beispiel eine OSGi-Konfiguration für einen von
+OSGi-Konfigurationen zielen auf OSGi-Komponenten über ihre Persistente Identität (PID) ab, die standardmäßig auf den Java-Klassennamen der OSGi-Komponente festgelegt ist. Um zum Beispiel eine OSGi-Konfiguration für einen von
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
@@ -48,15 +48,17 @@ nach dem `cfg.json` OSGi-Konfigurationsformat definiert.
 
 >[!NOTE]
 >
->Die OSGi-Konfigurationen werden nicht wie typische AEM-Instanzen in Cloud unter /apps gespeichert, sondern an einem externen Speicherort. Überprüfen Sie in der [Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) von Cloud Manager die OSGi-Konfigurationen.
+>In AEM as a Cloud Service werden die OSGi-Konfigurationen nicht unter `/apps` gespeichert. Überprüfen Sie in der [Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) von Cloud Manager die OSGi-Konfigurationen.
 
 ## Ausführungsmodus-Auflösung {#runmode-resolution}
 
->[!TIP]
->
->AEM 6.x unterstützt benutzerdefinierte Ausführungsmodi, AEM as a Cloud Service jedoch nicht. AEM as a Cloud Service unterstützt einen [exakten Satz von Ausführungsmodi](./overview.md#runmodes). Jede Änderung der OSGi-Konfigurationen zwischen Umgebungen in AEM as a Cloud Service muss mit [Variablen der OSGi-Konfigurationsumgebung](#environment-specific-configuration-values) vorgenommen werden.
+AEM as a Cloud Service unterstützt einen [exakten Satz von Ausführungsmodi.](./overview.md#runmodes) Jede Änderung der OSGi-Konfigurationen zwischen AEM as a Cloud Service-Umgebungen muss mit Variablen der [OSGi-Konfigurationsumgebung“ vorgenommen werden](#environment-specific-configuration-values)
 
-Spezifische OSGi-Konfigurationen können mithilfe von Ausführungsmodi auf bestimmte AEM-Instanzen ausgerichtet werden. Um den Ausführungsmodus zu verwenden, erstellen Sie unter `/apps/example` (wobei „example“ Ihr Projektname ist) Konfigurationsordner im folgenden Format:
+>[!NOTE]
+>
+>AEM 6.x unterstützt benutzerdefinierte Ausführungsmodi, AEM as a Cloud Service jedoch nicht.
+
+Spezifische OSGi-Konfigurationen können mithilfe von Ausführungsmodi auf bestimmte AEM-Instanzen ausgerichtet werden. Um einen Ausführungsmodus zu verwenden, erstellen Sie unter `/apps/example` (wobei „example“ Ihr Projektname ist) Konfigurationsordner im folgenden Format:
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
@@ -80,7 +82,7 @@ $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 
 ### Überprüfen der Ausführungsmodi
 
-Ausführungsmodi von AEM as a Cloud Service sind basierend auf dem Umgebungstyp und Service klar definiert. Überprüfen Sie die [vollständige Liste der verfügbaren Ausführungsmodi von AEM as a Cloud Service](./overview.md#runmodes).
+Ausführungsmodi von AEM as a Cloud Service sind basierend auf dem Umgebungstyp und Service klar definiert. Überprüfen Sie die [vollständige Liste der verfügbaren AEM as a Cloud Service-Ausführungsmodi.](./overview.md#runmodes)
 
 Die vom Ausführungsmodus bestimmten OSGi-Konfigurationswerte können wie folgt überprüft werden:
 
@@ -91,7 +93,6 @@ Die vom Ausführungsmodus bestimmten OSGi-Konfigurationswerte können wie folgt 
 1. Auswählen der Schaltfläche __Status abrufen__
 
 In der resultierenden Ansicht werden alle OSGi-Komponentenkonfigurationen für die ausgewählte(n) Ebene(n) mit den entsprechenden OSGi-Konfigurationswerten angezeigt. Diese Werte können mit den OSGi-Konfigurationswerten im Quellcode des AEM-Projekts unter `/apps/example/osgiconfig/config.<runmode(s)>` abgeglichen werden.
-
 
 So überprüfen Sie, ob die entsprechenden OSGi-Konfigurationswerte angewendet werden:
 
@@ -152,7 +153,7 @@ In den folgenden Anleitungen wird beschrieben, wann nicht geheime und geheime um
 
 Inline-Konfigurationswerte werden als Standardansatz betrachtet und sollten nach Möglichkeit verwendet werden. Inline-Konfigurationen bieten folgende Vorteile:
 
-* Sie werden mit Governance und Versionsverlauf in Git aufbewahrt.
+* Sie werden mit Governance und Versionsverlauf in Git gepflegt.
 * Werte sind implizit an Code-Bereitstellungen gebunden.
 * Sie erfordern keine zusätzlichen Überlegungen zur Bereitstellung oder Koordinierung.
 
@@ -180,22 +181,18 @@ Es gibt zwei Möglichkeiten, OSGi-Konfigurationen zu erstellen, wie unten beschr
 OSGi-Konfigurationsdateien im JSON-Format können manuell direkt im AEM-Projekt geschrieben werden. Dies ist häufig die schnellste Möglichkeit, OSGi-Konfigurationen für bekannte OSGi-Komponenten und insbesondere benutzerdefinierte OSGi-Komponenten zu erstellen, die von demselben Entwickler entworfen und entwickelt wurden, der die Konfigurationen definiert. Dieser Ansatz kann auch genutzt werden, um Konfigurationen für dieselbe OSGi-Komponente in verschiedenen Ausführungsmodus-Ordnern zu kopieren, einzufügen und zu aktualisieren.
 
 1. Öffnen Sie in Ihrer IDE das `ui.apps`-Projekt, suchen oder erstellen Sie den Konfigurationsordner (`/apps/.../config.<runmode>`), der für die Ausführungsmodi bestimmt ist, auf die die neue OSGi-Konfiguration wirken soll.
-1. Erstellen Sie in diesem Konfigurationsordner eine `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Normalerweise ist dies der vollständige Klassenname der OSGi-Komponentenimplementierung. Zum Beispiel:
+1. Erstellen Sie in diesem Konfigurationsordner eine `<PID>.cfg.json`-Datei. Die PID ist die persistente Identität der OSGi-Komponente. Normalerweise ist dies der vollständige Klassenname der OSGi-Komponentenimplementierung. Beispiel:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 Die Werksdateinamen der OSGi-Konfiguration verwenden die `<factoryPID>-<name>.cfg.json`-Namenskonvention.
 1. Öffnen Sie die neue `.cfg.json`-Datei und definieren Sie die Schlüssel/Wert-Kombinationen für die OSGi-Eigenschafts- und -Wertpaare entsprechend dem [JSON OSGi-Konfigurationsformat](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git
 
-### Generieren von OSGi-Konfigurationen mit AEM SDK QuickStart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### Generieren von OSGi-Konfigurationen mithilfe der Web-Konsole {#generating-osgi-configurations-using-the-web-console}
 
-Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Komponenten zu konfigurieren und OSGi-Konfigurationen als JSON zu exportieren. Dies ist nützlich, um von AEM bereitgestellte OSGi-Komponenten zu konfigurieren, deren OSGi-Eigenschaften und deren Werteformate vom Entwickler, der die OSGi-Konfigurationen im AEM-Projekt definiert, möglicherweise nicht gut verstanden werden.
+Mit der AEM SDK [Web-Konsole](/help/implementing/developing/tools/web-console.md) können OSGi-Komponenten konfiguriert und OSGi-Konfigurationen als JSON exportiert werden. Dies ist nützlich, um von AEM bereitgestellte OSGi-Komponenten zu konfigurieren, deren OSGi-Eigenschaften und deren Werteformate vom Entwickler, der die OSGi-Konfigurationen im AEM-Projekt definiert, möglicherweise nicht gut verstanden werden.
 
->[!NOTE]
->
->Die Konfigurationsoberfläche der AEM Web-Konsole schreibt `.cfg.json`-Dateien in das Repository. Beachten Sie daher diesen Workflow, um potenziell unerwartetes Verhalten während der lokalen Entwicklung zu vermeiden, wenn die vom AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können.
-
-1. Melden Sie sich bei der AEM-Web-Konsole von AEM SDK Quickstart Jar unter `https://<host>:<port>/system/console` als Admin-Benutzerin bzw. -Benutzer an.
+1. Melden Sie sich bei der Web-Konsole von AEM SDK unter `https://<host>:<port>/system/console` als Admin an
 1. Navigieren Sie zu **OSGi** > **Konfiguration**
 1. Zur Konfiguration suchen Sie die OSGi-Komponente und wählen Sie den Titel zum Bearbeiten aus.
    ![OSGi-Konfiguration](./assets/configuring-osgi/configuration.png)
@@ -213,6 +210,9 @@ Die AEM Web-Konsole von AEM SDK QuickStart Jar kann verwendet werden, um OSGi-Ko
 1. Speichern Sie Ihre Änderungen in der neuen `.cfg.json`-Datei.
 1. Fügen Sie Ihre neue OSGi-Konfigurationsdatei hinzu und übertragen Sie sie auf Git.
 
+>[!WARNING]
+>
+>Die Konfigurationsoberfläche der Web-Konsole schreibt `.cfg.json` Dateien in das Repository. Beachten Sie dies, um potenzielles unerwartetes Verhalten während der lokalen Entwicklung zu vermeiden, wenn die vom AEM-Projekt definierten OSGi-Konfigurationen von den generierten Konfigurationen abweichen können.
 
 ## OSGi-Konfigurationseigenschaftsformate {#osgi-configuration-property-formats}
 
@@ -349,9 +349,9 @@ config
 <td>
 <pre>
 { 
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“: „val“,
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -363,9 +363,9 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“ : "$[env:my_var1]"
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -392,9 +392,9 @@ config.stage
 <td>
 <pre>
 { 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“: „val1“,
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -406,9 +406,9 @@ config.prod
 <td>
 <pre>
 { 
- "my_var1": "val2",
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“: „val2“,
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -420,9 +420,9 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“ : "$[env:my_var1]"
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -449,9 +449,9 @@ config
 <td>
 <pre>
 { 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“: „val1“,
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -463,9 +463,9 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“ : "$[env:my_var1]"
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -490,9 +490,9 @@ config
 <td>
 <pre>
 { 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“: „val1“,
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>
@@ -504,9 +504,9 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1": "$[env:my_var1;default=val1]"
- "my_var2": "abc",
- "my_var3": 500
+ „my_var1“: "$[env:my_var1;default=val1]"
+ „my_var2“: „abc“,
+ „my_var3“: 500
 }
 </pre>
 </td>

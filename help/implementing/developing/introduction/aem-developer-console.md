@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über AEM as a Cloud Service Developer Console un
 feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: 51c14ba3c15e0136911003752253d21ed673a0eb
+source-git-commit: 4d8131d6734baeb8c0c50af911cbf9d636c38e1f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1191'
 ht-degree: 15%
 
 ---
@@ -30,6 +30,7 @@ AEM as a Cloud Service Developer Console enthält eine Reihe schreibgeschützter
 >Die Developer Console ist schreibgeschützt. Wenn Sie an der lokalen Entwicklung mit der SDK arbeiten und OSGi-Einstellungen oder Repository-Inhalte ändern müssen, können Sie Folgendes verwenden:
 >
 >* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+>* [Die Web-Konsole](/help/implementing/developing/tools/web-console.md)
 
 <!--
 There are multiple ways of accessing it:
@@ -79,7 +80,7 @@ Die **Java-Pakete** bietet ein Suchfeld, um nach Paketen zu suchen, die im OSGi-
 * Sie können sehen, welches Bundle das Paket exportiert (oder bereitstellt), und Sie können sehen, welche Bundles das Paket importieren (oder verwenden).
 * Sie können auch nach doppelten Paketen (dasselbe Paket, verschiedene Versionen) suchen, die in einigen Fällen Probleme verursachen können.
 
-**Anwendungsbeispiel:** Angenommen, ein benutzerdefinierter Dienst, der den [dynamischen Klassenlader) verwendet, &#x200B;](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) eine Klasse, ohne eine Version anzugeben. Da mehrere Bundles verschiedene Versionen exportieren, variiert die Implementierung, was zu Verhaltensänderungen führt. Sie möchten überprüfen, welche Pakete sich in der Umgebung befinden, ohne das Funktionsmodell zu analysieren. Auf dieser Registerkarte können Sie nach dem Paket suchen und alle exportierten Versionen anzeigen. Anschließend können Sie einen besseren Versionsbereich verwenden.
+**Anwendungsbeispiel:** Angenommen, ein benutzerdefinierter Dienst, der den [dynamischen Klassenlader) verwendet, ](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) eine Klasse, ohne eine Version anzugeben. Da mehrere Bundles verschiedene Versionen exportieren, variiert die Implementierung, was zu Verhaltensänderungen führt. Sie möchten überprüfen, welche Pakete sich in der Umgebung befinden, ohne das Funktionsmodell zu analysieren. Auf dieser Registerkarte können Sie nach dem Paket suchen und alle exportierten Versionen anzeigen. Anschließend können Sie einen besseren Versionsbereich verwenden.
 
 ## Registerkarte „Konfigurationen“ {#configurations}
 
@@ -130,6 +131,6 @@ Auf **Registerkarte „Status-Dumps/**&quot; können Sie einen Volltext- oder JS
 
 ![Registerkarte „Status-Dumps/Abfragen“ in der Developer Console-Benutzeroberfläche](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
 
-Sie können auch das Tool [Abfrageleistung“ &#x200B;](/help/operations/query-and-indexing-best-practices.md#query-performance-tool)
+Sie können auch das Tool [Abfrageleistung“ ](/help/operations/query-and-indexing-best-practices.md#query-performance-tool)
 
 * **Anwendungsbeispiel:** Diese Registerkarte ist besonders nützlich, wenn Sie auf einen unerwarteten Status stoßen und ihn für andere Entwickler kommunizieren oder dokumentieren möchten. Durch Herunterladen des Speicher-Dumps erhalten Sie einen Status-Schnappschuss zur künftigen Referenz.
