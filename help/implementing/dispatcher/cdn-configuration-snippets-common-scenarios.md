@@ -96,7 +96,7 @@ data:
 
 ### Ändern des Cache-Schlüssels {#cache-key}
 
-Das CDN stellt kein separates Feld „Cache-Schlüssel“ zur Verfügung. Da die URL an der Zwischenspeicherung beteiligt ist, können Sie Cache-Einträge aufteilen, indem Sie die URL ändern - z. B. indem Sie einen Abfrageparameter über eine [Anfragetransformation“ ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
+Das CDN stellt kein separates Feld „Cache-Schlüssel“ zur Verfügung. Da die URL an der Zwischenspeicherung beteiligt ist, können Sie Cache-Einträge aufteilen, indem Sie die URL ändern - z. B. indem Sie einen Abfrageparameter über eine [Anfragetransformation“ &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
 
 ```yaml
 kind: "CDN"

@@ -27,7 +27,7 @@ Wenn das CDN nicht in der Lage ist, seinen Ursprung zu erreichen, können Sie au
 
 Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der Cloud Manager-[Konfigurations-Pipeline](/help/operations/config-pipeline.md) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich Traffic-Filterregeln, 100 KB nicht überschreiten darf.
 
-Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
+Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
 
 ## Reihenfolge der Auswertung {#order-of-evaluation}
 
@@ -386,7 +386,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 Sie können das AEM-CDN nutzen, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen (möglicherweise pro Pfad oder Subdomain).
 
-Die Anfrageeigenschaften `originalPath` und `originalUrl` sind der unveränderliche ursprüngliche Pfad (ohne Abfrageparameter) bzw. die vollständige URL (einschließlich Abfrageparameter), die jeweils vor einer CDN-[Anfrageumwandlung) ](#request-transformations). Verwenden Sie sie unter `when` Bedingungen, wenn Sie Regeln für das verankern müssen, was der Client ursprünglich gesendet hat, und nicht für Werte, die zuvor in der Auswertungssequenz möglicherweise neu geschrieben wurden. Verwenden Sie `originalPath` für den reinen Pfadabgleich. Verwenden Sie `originalUrl`, wenn die Abfragezeichenfolge Teil der Bedingung sein muss (z. B. Routing oder Filterung nach einer bestimmten anfänglichen Anfrage-URL).
+Die Anfrageeigenschaften `originalPath` und `originalUrl` sind der unveränderliche ursprüngliche Pfad (ohne Abfrageparameter) bzw. die vollständige URL (einschließlich Abfrageparameter), die jeweils vor einer CDN-[Anfrageumwandlung) &#x200B;](#request-transformations). Verwenden Sie sie unter `when` Bedingungen, wenn Sie Regeln für das verankern müssen, was der Client ursprünglich gesendet hat, und nicht für Werte, die zuvor in der Auswertungssequenz möglicherweise neu geschrieben wurden. Verwenden Sie `originalPath` für den reinen Pfadabgleich. Verwenden Sie `originalUrl`, wenn die Abfragezeichenfolge Teil der Bedingung sein muss (z. B. Routing oder Filterung nach einer bestimmten anfänglichen Anfrage-URL).
 
 Konfigurationsbeispiel:
 
@@ -447,7 +447,7 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 
 ### Proxys für benutzerdefinierte Domain an die statische AEM-Ebene {#proxy-custom-domain-static}
 
-Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
+Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 
