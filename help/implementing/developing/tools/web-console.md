@@ -22,7 +22,7 @@ Erfahren Sie, wie Sie mit der Web-Konsole von Adobe Experience Manager (AEM) OSG
 
 AEM as a Cloud Service behandelt [Konfiguration und Code zur Laufzeit als unveränderlich.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) Das bedeutet, dass alle Konfigurationen so bereitgestellt werden müssen, wie Sie es in einer Produktionsumgebung tun würden. Für Produktionsinstanzen stellt dies sicher, dass Quality Gates bestanden werden, und bietet ein Maß an Stabilität und Klarheit Ihrer aktuellen Umgebung.
 
-Zu Entwicklungszwecken sind jedoch häufig OSGi-Konfigurationsaktualisierungen und Bundle-Änderungen erforderlich, um Ad-hoc-Entwicklungsänderungen zu testen. Im Rahmen von AEM as a Cloud Service SDK ermöglicht die Web-Konsole Folgendes. Weitere Informationen [ OSGi-Konfigurationen für AEM as a Cloud Service finden Sie ](/help/implementing/deploying/configuring-osgi.md) Dokument Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service .
+Zu Entwicklungszwecken sind jedoch häufig OSGi-Konfigurationsaktualisierungen und Bundle-Änderungen erforderlich, um Ad-hoc-Entwicklungsänderungen zu testen. Im Rahmen von AEM as a Cloud Service SDK ermöglicht die Web-Konsole Folgendes. Weitere Informationen [&#x200B; OSGi-Konfigurationen für AEM as a Cloud Service finden Sie &#x200B;](/help/implementing/deploying/configuring-osgi.md) Dokument Konfigurieren von OSGi für Adobe Experience Manager as a Cloud Service .
 
 Der Zugriff auf die Konsole ist über `http://<host>:<port>/system/console` möglich
 
@@ -138,4 +138,4 @@ Klicken Sie auf den Namen einer bestimmten Komponente, um weitere Informationen 
 
 Die Web-Konsole kann verwendet werden, um OSGi-Komponenten zu konfigurieren und OSGi-Konfigurationen als JSON zu exportieren. Dies ist nützlich, um von AEM bereitgestellte OSGi-Komponenten zu konfigurieren, deren OSGi-Eigenschaften und deren Werteformate vom Entwickler, der die OSGi-Konfigurationen im AEM-Projekt definiert, möglicherweise nicht gut verstanden werden.
 
-Weitere Informationen finden Sie [ Dokument „Konfigurieren von OSGi ](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console) Adobe Experience Manager as a Cloud Service&quot;.
+Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren von OSGi &#x200B;](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console) Adobe Experience Manager as a Cloud Service&quot;.
