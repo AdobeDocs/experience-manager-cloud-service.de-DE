@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, u
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 43%
+source-wordcount: '1530'
+ht-degree: 44%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie Konfigurations-Pipelines verwenden können, um in AEM as a
 
 Eine Cloud Manager-Konfigurations-Pipeline stellt Konfigurationsdateien (die im YAML-Format erstellt wurden) in einer Zielumgebung bereit. Auf diese Weise kann eine Reihe von Funktionen in AEM as a Cloud Service konfiguriert werden, darunter die Protokollweiterleitung, Bereinigungsaufgaben sowie verschiedene CDN-Funktionen.
 
-Bei **Veröffentlichungsbereitstellung**-Projekten können Konfigurations-Pipelines über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdateien können mithilfe von [Befehlszeilen-Tools“ in schnellen Entwicklungsumgebungen (RDEs) bereitgestellt &#x200B;](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Verwenden Sie eine zielgerichtete Bereitstellung [**Veröffentlichungs-Bereitstellungs**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) Pipeline ([Produktion](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) oder [Produktionsfremd](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)), wenn Sie Traffic für eine Domain konfigurieren müssen, die an eine Veröffentlichungs-Bereitstellungsumgebung angehängt ist.
+Bei **Veröffentlichungsbereitstellung**-Projekten können Konfigurations-Pipelines über Cloud Manager für Entwicklungs-, Staging- und Produktionsumgebungstypen bereitgestellt werden. Die Konfigurationsdateien können mit dem [Befehlszeilen-Tool](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden. Verwenden Sie eine zielgerichtete Bereitstellung [**Veröffentlichungs-Bereitstellungs**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) Pipeline ([Produktion](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) oder [Produktionsfremd](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)), wenn Sie Traffic für eine Domain konfigurieren müssen, die an eine Veröffentlichungs-Bereitstellungsumgebung angehängt ist.
 
 Konfigurations-Pipelines können auch über Cloud Manager für **Edge Delivery-Projekte** werden. Verwenden Sie eine [**Edge Delivery**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) Pipeline, wenn die Domain mit einer **Edge Delivery-Site verbunden**.
 
@@ -35,6 +35,8 @@ In den folgenden Abschnitten dieses Dokuments erhalten Sie einen Überblick übe
 ## Unterstützte Konfigurationen {#configurations}
 
 Die folgende Tabelle enthält eine umfassende Liste solcher Konfigurationen mit Links zur entsprechenden Dokumentation, wo die jeweilige Konfigurationssyntax und andere Informationen beschrieben werden.
+
+Informationen zu CDN-Konfigurationen finden Sie zusätzlich zum verknüpften Artikel in der Tabelle auch im Artikel [CDN-Konfigurations-Snippets für gängige Szenarien](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) .
 
 | Typ | YAML `kind`-Wert | Beschreibung | Veröffentlichungsbereitstellung | Edge-Bereitstellung |
 |---|---|---|---|---|
@@ -93,7 +95,7 @@ Sie können das Dienstprogramm `yq` verwenden, um die YAML-Formatierung Ihrer Ko
 
 Ein Ordner mit dem Namen `/config` oder einem ähnlichen Namen sollte sich ganz oben in der Struktur befinden, wobei sich eine weitere YAML-Datei in einer Struktur darunter befindet.
 
-Zum Beispiel:
+Beispiel:
 
 ```text
 /config
@@ -133,7 +135,7 @@ Verwenden Sie diese Struktur, wenn dieselbe Konfiguration für alle Umgebungen u
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[&#x200B; können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
+Bei Verwendung von Umgebungsvariablen vom Typ „Geheime Daten“ (oder Pipeline[ können die &quot;](#secret-env-vars)&quot; je nach Umgebung variieren, wie in der folgenden `${{SPLUNK_TOKEN}}`-Referenz veranschaulicht.
 
 ```yaml
 kind: "LogForwarding"

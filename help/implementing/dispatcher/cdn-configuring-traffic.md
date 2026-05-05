@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 81%
+source-wordcount: '2051'
+ht-degree: 77%
 
 ---
 
@@ -26,6 +26,8 @@ Ebenfalls im CDN konfigurierbar sind Traffic-Filterregeln (einschließlich WAF),
 Wenn das CDN nicht in der Lage ist, seinen Ursprung zu erreichen, können Sie außerdem eine Regel schreiben, die auf eine selbstgehostete benutzerdefinierte Fehlerseite verweist (die dann gerendert wird). Weitere Informationen hierzu finden Sie im Artikel [Konfigurieren von CDN-Fehlerseiten](/help/implementing/dispatcher/cdn-error-pages.md).
 
 Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der Cloud Manager-[Konfigurations-Pipeline](/help/operations/config-pipeline.md) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich Traffic-Filterregeln, 100 KB nicht überschreiten darf.
+
+Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
 
 ## Reihenfolge der Auswertung {#order-of-evaluation}
 
@@ -384,6 +386,8 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 Sie können das AEM-CDN nutzen, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen (möglicherweise pro Pfad oder Subdomain).
 
+Die Anfrageeigenschaften `originalPath` und `originalUrl` sind der unveränderliche ursprüngliche Pfad (ohne Abfrageparameter) bzw. die vollständige URL (einschließlich Abfrageparameter), die jeweils vor einer CDN-[Anfrageumwandlung) ](#request-transformations). Verwenden Sie sie unter `when` Bedingungen, wenn Sie Regeln für das verankern müssen, was der Client ursprünglich gesendet hat, und nicht für Werte, die zuvor in der Auswertungssequenz möglicherweise neu geschrieben wurden. Verwenden Sie `originalPath` für den reinen Pfadabgleich. Verwenden Sie `originalUrl`, wenn die Abfragezeichenfolge Teil der Bedingung sein muss (z. B. Routing oder Filterung nach einer bestimmten anfänglichen Anfrage-URL).
+
 Konfigurationsbeispiel:
 
 ```
@@ -393,7 +397,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -443,7 +447,7 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 
 ### Proxys für benutzerdefinierte Domain an die statische AEM-Ebene {#proxy-custom-domain-static}
 
-Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
+Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 
@@ -524,7 +528,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -552,13 +556,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage

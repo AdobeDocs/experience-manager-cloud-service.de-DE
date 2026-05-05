@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6ddc4857295bc8251894ee3aebb5ea2643959d5e
+source-git-commit: d0ee13cfe94ea7eef196cc70676418e4d075c049
 workflow-type: tm+mt
-source-wordcount: '7386'
+source-wordcount: '7392'
 ht-degree: 90%
 
 ---
@@ -1319,7 +1319,7 @@ ht-degree: 90%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1641,6 +1641,7 @@ ht-degree: 90%
       + [Validieren und Debuggen mit den alten Dispatcher Tools](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Konfigurieren von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [CDN-Konfigurations-Snippets für gängige Szenarien](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)
       + [Pipeline-freie URL-Umleitungen](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
       + [Konfigurieren der CDN-Anmeldeinformationen und der Authentifizierung](/help/implementing/dispatcher/cdn-credentials-authentication.md)
