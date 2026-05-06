@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Content Discovery Agent relevante AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -99,11 +99,38 @@ Eingabeaufforderungen im Beispiel:
 * **Suche basierend auf Dateiformat, Asset-Typ, Asset-Status und Erstellt per E-Mail-ID**: Zeigt Videos im `.mp4` Format an, die genehmigt und `created by <user email ID>` wurden.
 * **Suche basierend auf Dateiformat, Asset-Typ, Asset-Status und Erstellungsdatum**: Zeigt Bilder im `.PNG` an, die nach dem 1. Januar 2025 und `published by <user email ID>` erstellt wurden
 * **Suche basierend auf MIME-Typ, Erstellungsdatum und Veröffentlicht durch E-Mail-ID**: `image/jpeg` anzeigen, die nach `January 1, 2025` und `published by <user email ID>` erstellt wurden.
-* **Suche basierend auf Dateiformat und benutzerdefinierten Metadateneigenschaften**: Zeigt Bilder im `.JPEG` Format an, die `Product SKU ID = <SKU value>` haben (muss in der Metadateneigenschaft = Werteformat sein).
 
 * **Nach Assets mit fehlenden Metadaten suchen**: „Assets anzeigen, die in den letzten 90 Tagen erstellt wurden, mit `<Name of metadata property including custom properties>` ist leer“.
 
 * **Suche nach Assets mithilfe von Dateigröße, Bildbreite und Bildhöhe**: Zeigt Bilder an, die größer als 5 MB sind, eine Breite von mehr als 2.000 Pixel und eine Höhe von mehr als 1.200 Pixel haben.
+
+**Unterstützung natürlicher Sprachen für benutzerdefinierte Metadaten**
+
+Der Content Discovery Agent unterstützt das Abfragen benutzerdefinierter Metadateneigenschaften, die in Metadatenschemata definiert sind. Sie können Metadatenwerte direkt in Ihren Eingabeaufforderungen referenzieren, ohne sie mithilfe eines strikten Schlüssel-Wert-Formats angeben zu müssen. Der Agent interpretiert Absicht und gleicht relevante Metadatenfelder automatisch ab.
+
+Eingabeaufforderungen im Beispiel:
+
+* **Suche nach Assets, die einen Eigenschaftswert aufweisen, ist nicht festgelegt**: Suchen Sie nach Assets, deren Kampagnenname nicht festgelegt ist (die Eigenschaft muss für geeignete Ergebnisse indiziert werden).
+
+* **Suche nach Assets mit festgelegtem Eigenschaftswert**: Suchen Sie nach Assets, deren Kampagnenname festgelegt ist (die Eigenschaft muss für geeignete Ergebnisse indiziert werden).
+
+* **Suchen nach Assets, für die ein Eigenschaftswert auf X gesetzt ist**: Suchen Sie nach Assets, deren Kampagnenname „Kaffeetag“ lautet.
+
+* **Suchen nach Assets, für die ein Eigenschaftswert auf einen Wertesatz X, Y** gesetzt ist: Suchen Sie nach Assets, deren Kampagnenname „Coffee-day“ lautet, sowie Assets, deren Kampagnenname „Tea-Day“ ist.
+
+* **Wert eines bestimmten Eigenschaftsfelds anzeigen**: „Abrufen von Kaffee-Assets“ zeigt mir auch den Kampagnennamen dieser Assets an.
+
+* **Nach Assets suchen, die einer datumsbasierten Eigenschaftsbedingung entsprechen**: Abrufen von Assets, deren Lizenz nicht abgelaufen ist.
+
+
+
+
+
+
+
+
+
+
 
 
 **Ordnerbasierte Inhaltserkennung:**\
@@ -161,6 +188,10 @@ Eingabeaufforderungen im Beispiel:
 
 * Bergbilder sortiert nach Namen in aufsteigender Reihenfolge anzeigen (zeigt die Bildnamen beginnend mit dem Buchstaben A, gefolgt von B usw.).
 
+**Kontextabhängige Umgebungserkennung**
+
+In der Admin-Ansicht erkennt der Content Discovery Agent automatisch die Authoring-Umgebung und verwendet sie, um Eingabeaufforderungen aufzulösen, ohne die Autoren-URL explizit angeben zu müssen.
+
 ### AEM Sites-Seiten {#content-discovery-agent-aem-sites-pages}
 
 Der Content Discovery Agent hilft Benutzenden, relevante AEM Sites-Seiten schnell zu finden, indem er die Eingabeaufforderungen in natürlicher Sprache interpretiert, die auf Seitenthemen, Kampagnen oder andere kontextuelle Schlüsselwörter verweisen. Der Agent führt eine Volltextsuche anhand der Keywords in der Eingabeaufforderung durch, um übereinstimmende Seiten im AEM-Repository zu identifizieren, sodass Sie die Sites-Struktur nicht manuell durchsuchen müssen.
@@ -203,19 +234,21 @@ Hinweis: Die Formularerkennung unterstützt derzeit nur Edge Delivery Services-F
 
 ### Assets {#discovery-agent-search-results-assets}
 
-Der Content Discovery Agent gibt die wichtigsten Ergebnisse für jede Abfrage zurück, sortiert nach Relevanz, um sicherzustellen, dass die exakten Übereinstimmungen zuerst angezeigt werden. Der Agent kombiniert metadatengesteuerte Abfragen mit der semantischen Suche, um einen fokussierten Satz wahrscheinlicher Übereinstimmungen zusammenzustellen, und verwendet dann einen LLM, um sie nach der Benutzerabsicht zu ordnen. Dieser gemischte Ansatz liefert genaue, kontextbezogene Ergebnisse, ohne dass dies vollständig von einer direkten Keyword-Übereinstimmung abhängt.
+Der Content Discovery Agent gibt die wichtigsten Ergebnisse für jede Abfrage aus, sortiert nach Relevanz, um sicherzustellen, dass die exakten Übereinstimmungen zuerst angezeigt werden. Der Agent kombiniert metadatengesteuerte Abfragen mit der semantischen Suche, um einen fokussierten Satz wahrscheinlicher Übereinstimmungen zusammenzustellen, und verwendet dann einen LLM, um sie nach der Benutzerabsicht zu ordnen. Dieser gemischte Ansatz liefert genaue, kontextbezogene Ergebnisse, ohne dass dies vollständig von einer direkten Keyword-Übereinstimmung abhängt.
 
-Jedes Ergebnis enthält den Asset-Namen zusammen mit wichtigen Asset-Metadaten wie den Asset-Pfad, den Ersteller, das Erstellungsdatum, den Titel, die Beschreibung, das Format, den letzten Modifikator, das Datum der letzten Änderung, die Dateigröße, die [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md) und die zugehörigen Tags. Wenn sich ein Asset im Status Genehmigt befindet, umfassen die Ergebnisse auch [Dynamic Media mit OpenAPI-URL](/help/assets/dynamic-media-open-apis-overview.md).
+Jedes Ergebnis wird als Asset-Karte angezeigt, die den Asset-Namen, die Vorschau und wichtige Metadaten wie Beschreibung und Format enthält. Sie können auf das Informationssymbol auf einer Karte klicken, um zusätzliche Asset-Eigenschaften anzuzeigen.
 
-Sie können auf den Asset-Pfad klicken, um nahtlos zum Asset-Speicherort in AEM zu navigieren.
+Verwenden Sie die Option **Tabelle anzeigen**, um Ergebnisse in einem tabellarischen Format anzuzeigen. Klicken Sie **Alle Ergebnisse anzeigen**, um den vollständigen Satz von 20 abgerufenen Assets im rechten Bereich anzuzeigen.
 
-![Suchen nach Assets mit dem Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+Jedes Ergebnis enthält auch wichtige Asset-Metadaten wie den Asset-Pfad, die Größe, das Erstellungsdatum und das Erstellungsdatum sowie das Änderungsdatum zusammen mit dem Benutzer, der das Asset geändert hat, das Format und die Beschreibung. Wenn sich ein Asset im Status Genehmigt befindet, umfassen die Ergebnisse auch [Dynamic Media mit OpenAPI-URL](/help/assets/dynamic-media-open-apis-overview.md). Sie können auf den Asset-Pfad klicken, um nahtlos zum Asset-Speicherort in AEM zu navigieren.
+
+![Suchen nach Assets mit dem Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asset die Anforderungen erfüllt, ohne zu jedem Asset navigieren zu müssen, um diese Details anzuzeigen.
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 
