@@ -84,7 +84,7 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 >[!TIP]
 >
->Weitere Informationen [ OSGi-Konfigurationen finden ](/help/implementing/deploying/configuring-osgi.md) unter „Konfigurieren von OSGi für“.
+>Weitere Informationen [&#x200B; OSGi-Konfigurationen finden &#x200B;](/help/implementing/deploying/configuring-osgi.md) unter „Konfigurieren von OSGi für“.
 
 ## Bundles {#bundles}
 
@@ -139,4 +139,4 @@ Klicken Sie auf den Namen einer bestimmten Komponente, um weitere Informationen 
 
 Die Web-Konsole kann verwendet werden, um OSGi-Komponenten zu konfigurieren und OSGi-Konfigurationen als JSON zu exportieren. Dies ist nützlich, um von AEM bereitgestellte OSGi-Komponenten zu konfigurieren, mit deren OSGi-Eigenschaften und -Wertformaten Sie möglicherweise nicht vertraut sind, wenn Sie OSGi-Konfigurationen in Ihrem AEM-Projekt definieren.
 
-Weitere Informationen finden Sie [ Dokument „Konfigurieren von OSGi ](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console) Adobe Experience Manager as a Cloud Service&quot;.
+Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren von OSGi &#x200B;](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console) Adobe Experience Manager as a Cloud Service&quot;.
