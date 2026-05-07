@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: f3ba70f276ab534e0becea47390fe58bf8a825d2
+source-git-commit: a622916de4edd29b5ecbbd0e0e7f4b2d87ff0511
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 7. Mai 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 14. Mai 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -26,14 +26,7 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 >
 >Der Inhalt der aktuellen Version sowie das Veröffentlichungsdatum können sich ändern.
 
-## Künftige Funktionen {#upcoming-features}
-
-* Ein Service Worker wurde eingeführt, um die Latenz zwischen der Benutzeroberfläche des universellen Editors und den Backend-Systemen zu reduzieren.
-* Alle Adapter für Inhaltsfragmente (AEM 6.5, OpenAPI und GraphQL) enthalten jetzt Filter für den Asset-Wähler, um Konsistenz zu gewährleisten und Benutzenden zu ermöglichen, nur zulässige Assets auszuwählen.
-* `content:patch` Absicht wird jetzt bereitgestellt.
-* Um die Barrierefreiheit zu verbessern, wurden Autorenfluss und Orientierungspunkte definiert.
-
 ## Weitere bevorstehende Verbesserungen {#other-improvements}
 
-* Unnötige Typbestätigungen in `assignImageDimensionFields` wurden entfernt.
-* Es wurde ein Problem behoben, bei dem bei der Server-seitigen Verarbeitung des `add` der Zeichenfolgenwert iteriert und als -Objekt anstelle eines Patches behandelt wurde.
+* Das Arbeitsflächen-Bedienfeld wird jetzt standardmäßig geöffnet.
+* [Erweiterungssymbole wurden zu Spectrum 2 migriert.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)

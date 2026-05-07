@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '3101'
-ht-degree: 68%
+source-wordcount: '3159'
+ht-degree: 67%
 
 ---
 
@@ -143,7 +143,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * **Alle Formatierungen entfernen**
    * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -160,7 +160,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -237,7 +237,7 @@ Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingef
    * Wählen Sie **Eigenschaftenbedienfeld das** „Löschen“ aus.
 
      ![Löschen einer Komponente](assets/ue-delete-component.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Löschen“ aus.
+   * Wählen Sie **Kontextmenü die Option**Löschen“ aus.
      ![Löschen aus dem Kontextmenü](assets/delete-from-context-menu.png)
 
 Die ausgewählte Komponente wird gelöscht.
@@ -248,7 +248,18 @@ Die ausgewählte Komponente wird gelöscht.
 
 ### Neuanordnen und Verschieben von Komponenten {#reordering-components}
 
-Sie können Komponenten mithilfe des Kontextmenüs oder der Inhaltsstruktur verschieben und neu anordnen.
+Sie können Komponenten per Drag-and-Drop, über das Kontextmenü oder über die Inhaltsstruktur verschieben und neu anordnen.
+
+>[!NOTE]
+>
+>Komponenten können nur dann zwischen Containern verschoben werden, wenn der [Komponentenfilter](/help/implementing/universal-editor/filtering.md) des Ziel-Containers die ausgewählte Komponente zulässt.
+
+#### Verschieben von Komponenten per Drag &amp; Drop {#drag-and-drop-move}
+
+1. Klicken Sie auf die Komponente, die Sie verschieben möchten, und ziehen Sie sie.
+   * Wenn Sie den Mauszeiger über das Ziel bewegen, zeigt der Editor an, wo die Komponente platziert wird, wenn Sie sie mit einer horizontalen blauen Linie ablegen.
+     ![Ziehen Sie eine Komponente per Drag-and-Drop, um sie zu verschieben](assets/drag-and-drop-component-move.png)
+1. Legen Sie die Komponente ab, um sie zu verschieben.
 
 #### Verschieben von Komponenten mit dem Kontextmenü {#move-context-menu}
 
@@ -269,9 +280,9 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
-#### Neuanordnen von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
+#### Verschieben von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 
 1. Wechseln Sie in den [Inhaltsstruktur-Modus](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), falls dieser nicht bereits aktiviert ist.
 1. Wählen Sie eine Container-Komponente in der Inhaltsstruktur oder im Editor aus.
@@ -283,10 +294,6 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 1. Die gezogene Komponente wird in der Inhaltsstruktur grau angezeigt, während der Einfügepunkt durch eine blaue Linie dargestellt wird. Lassen Sie die Komponente an ihrer neuen Position los, um sie dort zu platzieren.
 
 Die Komponenten werden sowohl in der Inhaltsstruktur als auch im Editor neu angeordnet.
-
->[!NOTE]
->
->Komponenten können nur dann zwischen Containern verschoben werden, wenn der [Komponentenfilter](/help/implementing/universal-editor/filtering.md) des Ziel-Containers die ausgewählte Komponente zulässt.
 
 ### Rückgängigmachen und Wiederherstellen {#undo-redo}
 
@@ -315,7 +322,7 @@ Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwische
 1. Sie haben dann folgende Möglichkeiten:
    * Klicken Sie auf **Kopieren** im Bedienfeld [Eigenschaften“.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![Aus Bedienfeld kopieren](assets/copy-from-panel.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Kopieren“ aus.
+   * Wählen Sie **Kontextmenü die Option**Kopieren“ aus.
      ![Aus Kontextmenü kopieren](assets/copy-from-context-menu.png)
 1. Wählen Sie die Komponente aus, _nach_ der Sie die kopierte Komponente einfügen möchten.
 1. Sie haben dann folgende Möglichkeiten:
