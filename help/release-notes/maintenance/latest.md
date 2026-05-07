@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
+source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '783'
 ht-degree: 30%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## 25821 {#release-25821}
+## 25892 {#release-25892}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 25821, die am 5. Mai 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 25520.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 25892, die am 7. Mai 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 25520.
 
 Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssatz für diese Wartungsversion bereit. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-25821}
+>[!NOTE]
+>
+>Version 25821 wurde als privat gekennzeichnet.
+
+### Verbesserungen {#enhancements-25892}
 
 * CQ-4362304: Erstellen Sie Richtlinien für das Frontend und aktualisieren Sie die LLM-Konfigurations-Benutzeroberfläche.
 * GRANITE-39546: Aktualisieren von Apache Tika auf 3.x.
@@ -52,7 +56,7 @@ Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssa
 * SKYOPS-138356: `com.adobe.granite.oauth.server` auf 1.1.36 aktualisieren.
 * SKYOPS-138739: SnakeYAML auf 2.6 aktualisieren.
 
-### Behobene Probleme {#fixed-issues-25821}
+### Behobene Probleme {#fixed-issues-25892}
 
 * ASSETS-59546: Entfernen von Abhängigkeiten von veralteten Bibliotheken für „commons-lang“.
 * ASSETS-64831: AssetProcessorProcess - Zurücksetzen der Anzahl von Verarbeitungsversuchen verursacht blockierte Assets.
@@ -67,7 +71,7 @@ Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssa
 * SITES-39267: PagePath in Beziehungsketteneinträgen wiederherstellen.
 * SITES-43715: Die Berechtigungsprüfung schlägt beim Lesen des Ressourcenstatus fehl.
 
-#### AEM Guides {#guides-25821}
+#### AEM Guides {#guides-25892}
 
 * GUIDES-45110: Wenn Sie ein Bild im Editor über das Dialogfeld **Datei auswählen** auswählen, werden nur Rasterformate (wie JPG, PNG und GIF) angezeigt. Vektordateien (z. B. `.ai` und `.eps`) werden nicht angezeigt und können nicht ausgewählt werden.
 * GUIDES-41938: Wenn Sie ein Thema in einem Ordner mit Leerzeichen im Namen erstellen, wird fälschlicherweise ein doppelter Ordner erstellt, in dem Leerzeichen durch Bindestriche ersetzt werden, und das Thema wird dort anstelle des ursprünglichen Ordners gespeichert.
@@ -77,19 +81,19 @@ Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssa
 
 Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Bekannte Probleme {#known-issues-25821}
+### Bekannte Probleme {#known-issues-25892}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-25821}
+### Eingestellte Funktionen und APIs {#deprecated-25892}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-25821}
+### Sicherheitskorrekturen {#security-25892}
 
 Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 19 identifizierte Schwachstellen und verstärkt unser Engagement für zuverlässigen Systemschutz.
 
-### Eingebettete Technologien {#embedded-tech-25821}
+### Eingebettete Technologien {#embedded-tech-25892}
 
 | Technologie | Version | Link |
 |---|---|---|
