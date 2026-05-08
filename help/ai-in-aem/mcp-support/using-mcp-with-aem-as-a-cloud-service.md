@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
+source-git-commit: a596f02b7b2e70cfff9eba6e74a65f28aaf65020
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -55,17 +55,17 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 | **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import und Asset-Suche.                                                                          <br>Senden Sie eine E-Mail an `aemagentsteam@adobe.com`, um die **Asset-Suche** für Sie zu aktivieren. Fügen Sie den Organisationsnamen zusammen mit dem Anwendungsfall in die E-Mail ein. |
 | **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten und Inhaltsfragmente sowie die Asset-Suche.                                                                             <br>Senden Sie eine E-Mail an `aemagentsteam@adobe.com`, um die **Asset-Suche** für Sie zu aktivieren. Fügen Sie den Organisationsnamen zusammen mit dem Anwendungsfall in die E-Mail ein. |
 | **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. |
-| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Kunden müssen sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en), um auf den Experience Governance MCP zugreifen zu können. |
+| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Kunden müssen sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz ](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en), um auf den Experience Governance MCP zugreifen zu können. |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
 ```
-"List all AEM MCP tools available from this server and describe what they do."
+"List all AEM tools available from this server and describe what they do."
 ```
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#128279;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im Cloud Manager MCP Server-.
+Weitere Informationen zu [ Funktionen und deren Verwendung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im [Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 
@@ -97,12 +97,12 @@ Die MCP-Server von AEM sind für die Verwendung mit einer Reihe von MCP-kompatib
 
 Die Konfiguration von MCP für AEM umfasst zwei Hauptbestandteile:
 
-1. **Konfiguration in jeder MCP-Client-Anwendung** sodass die Anwendung weiß, wie eine Verbindung zu den AEM-MCP-Servern hergestellt und eine OAuth-Anmeldung durchgeführt werden soll
+1. **Konfiguration in jeder MCP-Client** Anwendung, damit die Anwendung weiß, wie eine Verbindung zu den MCP-Servern von AEM hergestellt und eine OAuth-Anmeldung durchgeführt werden soll
 1. **Wählen Sie den MCP-Server aus** bevor Sie mit der Eingabeaufforderung beginnen, damit der MCP-Client ihn verwenden kann.
 
 Eine schrittweise Anleitung zu beiden Schritten finden Sie unter:
 
-* [Claude Anthropica](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [Anthropic Claude (sowohl für die manuelle Konfiguration von MCP-Servern als auch für die Installation des AEM Claude-Connectors)](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Mauszeiger](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [JetBrains mit GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
@@ -130,10 +130,10 @@ Für alle Anfragen zum MCP-Server wenden Sie sich bitte an uns unter **aemcs-mcp
 
 Jeder Benutzer führt diesen Schritt aus oder ein Administrator der MCP-Client-Anwendung kann ihn ausführen, wo er unterstützt wird. Konfigurationsdetails variieren geringfügig zwischen den Programmen. MCP-Clients entwickeln sich schnell weiter, und die Unterstützung für Remote-MCP-Server wird aktiv entwickelt. Möglicherweise müssen Sie den Entwicklermodus aktivieren, um auf die Funktionalität zum Hinzufügen von Remote-Servern zuzugreifen. Der allgemeine Prozess ist jedoch:
 
-1. Eine oder mehrere AEM MCP-Server-URLs hinzufügen
+1. Eine oder mehrere MCP-Server-URLs hinzufügen
    * Konfigurieren Sie einen oder mehrere MCP-Endpunkte aus der obigen Tabelle. Beispiel:`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
 1. Trigger der Verbindung
-   * Speichern oder aktivieren Sie die Konfiguration, damit die MCP-Client-Anwendung versucht, eine Verbindung zum AEM MCP-Server herzustellen
+   * Speichern oder aktivieren Sie die Konfiguration, damit die MCP-Client-Anwendung versucht, eine Verbindung zum MCP-Server herzustellen
 1. Mit Adobe ID anmelden
    * Wenn Sie dazu aufgefordert werden, schließen Sie den Anmeldevorgang für Adobe ab, damit die Anwendung OAuth-Token abrufen kann, die mit Ihrer Adobe ID verknüpft sind
 1. Überprüfen der erkannten Tools
@@ -145,7 +145,7 @@ Unter [Unterstützte MCP-Anwendungen](#supported-mcp-applications) finden Sie ei
 
 Die von Adobe gehosteten MCP-Server implementieren OAuth und sind in das Identitätssystem von Adobe integriert.
 
-* Wenn eine MCP-Client-Anwendung eine Verbindung zu einem AEM-MCP-Server herstellt, sehen die Benutzer ein Adobe-Anmeldedialogfeld und authentifizieren sich bei ihrer **Adobe ID**
+* Wenn eine MCP-Client-Anwendung eine Verbindung zu einem MCP-Server herstellt, sehen die Benutzer ein Adobe-Anmeldedialogfeld und authentifizieren sich bei ihrer **Adobe ID**
 * Nach erfolgreicher Anmeldung überprüft das System, ob die MCP-Client-Anwendung in Ihrer Organisation zulässig ist und ob der angeforderte MCP-Server zulässig ist. Wenn eine der Prüfungen fehlschlägt, wird eine Fehlermeldung angezeigt.
 
 ![Fehler „MCP-Client nicht erlaubt“](assets/MCP-Client-not-permitted.png)
