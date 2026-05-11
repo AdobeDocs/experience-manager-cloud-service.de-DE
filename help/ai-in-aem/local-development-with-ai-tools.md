@@ -4,12 +4,13 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
+source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
+
 
 # Lokale Entwicklung mit KI-Tools {#local-development-with-ai-tools}
 
@@ -23,22 +24,22 @@ Vier einander ergänzende Komponenten befassen sich damit:
 
 | Komponente | Zweck |
 |---|---|
-| **AGENTS.md** | Eine projektspezifische Kontextdatei, die für jede Sitzung die KI in Ihrem AEM Cloud Service-Projekt bestimmt |
+| **AGENTS.md** | Eine projektspezifische Kontextdatei, die für jede Sitzung die KI in Ihrem AEM as a Cloud Service-Projekt bestimmt |
 | **Agentenkenntnisse** | Wiederverwendbare Befehlssätze für wiederkehrende Entwicklungsaufgaben wie Komponentenerstellung und Dispatcher-Konfiguration |
 | **AEM-Schnellstart für lokalen MCP-Server** | Zeigt Live-Laufzeitdaten aus einer lokalen AEM SDK-Instanz zur Fehlerbehebung an |
 | **Lokaler Dispatcher-MCP-Server** | Ermöglicht die Laufzeitvalidierung und -überprüfung einer lokalen Dispatcher-Instanz |
 
-In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
+In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
 
->[!NOTE]
+>[!TIP]
 >
-> Nützlich für die lokale Entwicklung, aber nicht in diesem Artikel behandelt werden, sind die Remote-MCP-Server von AEM Cloud Service. Weitere Informationen dazu finden Sie im Artikel [Verwenden von MCP mit Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+>Die Remote-MCP-Server von AEM Cloud Service sind auch für die lokale Entwicklung nützlich. Weitere Informationen dazu finden Sie im Artikel [Verwenden von MCP mit Cloud Service].(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
-`AGENTS.md` ist eine Markdown-Datei im Stammverzeichnis Ihres AEM-Projekts, die KI-Kodierungs-Tools automatisch zu Beginn jeder Sitzung laden, um die Grundlagen für die grundlegende Java-Stack-Domain-Kompetenz von AEM Cloud Service zu schaffen (und nicht für andere AEM-Lösungen wie AEM 6.5 oder Edge Delivery Services).
+`AGENTS.md` ist eine Markdown-Datei im Stammverzeichnis Ihres AEM-Projekts. KI-Kodierungs-Tools laden diese Datei automatisch zu Beginn jeder Sitzung, um sich auf das erforderliche Java-Stack-Domain-Know-how von AEM Cloud Service (und nicht auf andere AEM-Lösungen wie AEM 6.5 oder Edge Delivery Services) zu stützen.
 
-`AGENTS.md` ist keine statische Datei, die Sie kopieren - sie wird durch die im nächsten Abschnitt beschriebene `ensure-agents-md` generiert. Die Kenntnis liest Ihre `pom.xml`, um den Projektnamen aufzulösen, Module zu entdecken und installierte Add-ons zu erkennen, wodurch eine auf Ihr spezifisches Projekt zugeschnittene Datei erstellt wird.
+`AGENTS.md` ist keine statische Datei, die Sie kopieren. Es wird durch die `ensure-agents-md` Kenntnisse generiert, die im nächsten Abschnitt dieses Dokuments beschrieben werden. Die Kenntnis liest Ihre `pom.xml`, um den Projektnamen aufzulösen, Module zu entdecken und installierte Add-ons zu erkennen, wodurch eine auf Ihr spezifisches Projekt zugeschnittene Datei erstellt wird.
 
 >[!NOTE]
 >
@@ -55,11 +56,11 @@ Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](http
 | `ensure-agents-md` | Bootstrapping `AGENTS.md` und `CLAUDE.md` auf die eigentliche Modulstruktur des Projekts zugeschnitten |
 | `create-component` | Strukturvorlagen ermöglichen eine vollständige AEM-Komponente: Komponentendefinition, XML-Dialogfeld, HTL-Vorlage, Sling-Modell, Komponententests und Client-Bibliotheken |
 | `dispatcher` | KI-gestützter Dispatcher- und Apache HTTPD-Konfigurationsassistent, der die Konfigurationserstellung, technische Beratung, die Reaktion auf Vorfälle, Leistungsoptimierung und die Sicherheitsabsicherung behandelt. |
-| `workflow` | Ein zentraler Einstiegspunkt für alle AEM as a Cloud Service Workflow-Fähigkeiten. Behandelt das Design von Workflow-Modellen, die Entwicklung benutzerdefinierter Prozessschritte und Teilnehmerauswahlen, die Starterkonfiguration, die Workflow-Auslösung und die Produktionsunterstützung, einschließlich des Debuggens blockierter/fehlgeschlagener Workflows, des Auslösens von Vorfällen mit Cloud Manager-Protokollen, der Thread-Pool-Analyse und der Sling-Auftragsdiagnose für die Granite Workflow-Engine. |
+| `workflow` | Dies ist der zentrale Einstiegspunkt für alle AEM as a Cloud Service Workflow-Fähigkeiten. Es behandelt das Design von Workflow-Modellen, die Entwicklung benutzerdefinierter Prozessschritte und Teilnehmerauswahlen, die Starterkonfiguration, das Auslösen von Workflows und die Produktionsunterstützung, einschließlich des Debuggens blockierter/fehlgeschlagener Workflows, des Auslösens von Vorfällen mit Cloud Manager-Protokollen, der Thread-Pool-Analyse und der Sling-Auftragsdiagnose für die Granite Workflow-Engine. |
 
 ### Kenntnisse installieren {#install-skills}
 
-Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [&#x200B; Anleitung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
+Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [ Anleitung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
 
 #### Claude Code {#claude-code}
 
@@ -85,16 +86,16 @@ npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-servic
 gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
 ### Use the Ensure-agents-md SKILL {#use-the-ensure-agents-md-skill}
 
-Öffnen Sie nach der Installation der Kenntnisse Ihren KI-Assistenten in jedem AEM Cloud Service-Projekt, das noch keine `AGENTS.md` hat. Die Kenntnisse werden automatisch vor der Verarbeitung Ihrer ersten Anfrage ausgeführt, sodass beide Dateien im Projektstamm erstellt werden, ohne dass ein expliziter Aufruf erforderlich ist.
+Öffnen Sie nach der Installation der Kenntnisse Ihren KI-Assistenten in jedem AEM as a Cloud Service-Projekt, das noch keine `AGENTS.md` hat. Die Kenntnisse werden automatisch vor der Verarbeitung Ihrer ersten Anfrage ausgeführt, sodass beide Dateien im Projektstamm erstellt werden, ohne dass ein expliziter Aufruf erforderlich ist.
 
 ### Verwenden der Create-component Skill {#use-the-create-component-skill}
 
-Bei der ersten Verwendung erkennt die Kenntnis automatisch `project`, `package` und `group` aus `pom.xml` und vorhandenen Komponenten, fordert Sie auf, die erkannten Werte zu bestätigen, und erstellt dann `.aem-skills-config.yaml` im Projektstamm. Vor der ersten Verwendung ist keine manuelle Konfiguration erforderlich.
+Bei der ersten Verwendung erkennt die Kenntnis automatisch `project`, `package` und `group` aus `pom.xml` und vorhandenen Komponenten und fordert Sie auf, die erkannten Werte zu bestätigen. Anschließend wird `.aem-skills-config.yaml` im Projektstamm erstellt. Vor der ersten Verwendung ist keine manuelle Konfiguration erforderlich.
 
 Wenn Sie die Datei lieber vorab erstellen möchten, platzieren Sie `.aem-skills-config.yaml` im Projektstamm mit der folgenden Struktur:
 
@@ -123,7 +124,7 @@ CTA Link (ctaLink) - Pathfield
 
 Der Agent wiederholt die Feldspezifikation zur Bestätigung und generiert dann alle Komponentendateien. Zu den unterstützten Mustern gehören Mehrfachfeld- mit zusammengesetzten verschachtelten Elementen, bedingte Einblenden-/Ausblenden-Logik, Kernkomponenten-Erweiterung über Sling Resource Merger und JUnit 5-Tests mit AEM Mocks. Das Design kann aus verschiedenen Quellen stammen, darunter eine Textbeschreibung, ein Bild oder eine Figma Design URL unter Verwendung des MCP-Servers von Figma.
 
-Weitere Informationen erhalten Sie im Abschnitt [Komponentenentwicklung mit dem Tutorial zu den Kenntnissen von AEM-Agenten](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Dispatcher-Kenntnisse verwenden {#use-the-dispatcher-skill}
 
@@ -140,11 +141,11 @@ Rufen Sie die Dispatcher-Kenntnisse für alle Dispatcher- oder Apache HTTPD-Konf
 
 Bei allgemeinen oder erstmaligen Anfragen beginnen Sie mit der `workflow-orchestrator` Unterqualifikation. Beschreiben Sie für zielgerichtete Arbeiten das spezifische Anliegen und die Qualifikationswege zum entsprechenden Spezialisten.
 
-Die Dispatcher-Kenntnisse umfassen die Orchestrierung und Beratung. Der Dispatcher MCP-Server, wie unten beschrieben, stellt die sieben Validierungs- und Laufzeitwerkzeuge bereit, die die Qualifikation verwendet, wenn sie lokale Beweise benötigt.
+Die Dispatcher-Kenntnisse umfassen die Orchestrierung und Beratung. Der Dispatcher MCP-Server, der im folgenden Abschnitt beschrieben wird, stellt die sieben Validierungs- und Laufzeittools bereit, die die Qualifikation verwendet, wenn sie lokale Beweise benötigt.
 
 ## AEM QuickStart MCP-Server {#aem-quickstart-mcp-server}
 
-Das Model Context Protocol (MCP) ist ein offener Standard, der es KI-Kodierungstools ermöglicht, eine Verbindung zu externen Datenquellen und Services herzustellen. Der AEM Quickstart-MCP-Server ist ein Inhaltspaket, das nach der Installation in einer lokalen AEM SDK-Instanz Laufzeitdaten direkt mit verbundenen KI-Tools bereitstellt. Dadurch können Agenten Protokolle abrufen, OSGi-Fehler diagnostizieren und die Anforderungsverarbeitung überprüfen, ohne die IDE verlassen zu müssen.
+Das Model Context Protocol (MCP) ist ein offener Standard, der es KI-Kodierungstools ermöglicht, eine Verbindung zu externen Datenquellen und Services herzustellen. Der AEM QuickStart MCP-Server ist ein Inhaltspaket, das Laufzeitdaten direkt über verbundene KI-Tools verfügbar macht, sobald es in einer lokalen AEM SDK-Instanz installiert ist. Dadurch können Agenten Protokolle abrufen, OSGi-Fehler diagnostizieren und die Anforderungsverarbeitung überprüfen, ohne die IDE verlassen zu müssen.
 
 ### Installieren des Inhaltspakets {#install-the-content-package}
 
