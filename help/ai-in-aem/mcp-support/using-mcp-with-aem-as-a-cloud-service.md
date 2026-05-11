@@ -47,10 +47,10 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 
 | MCP-Server | Endpunkt | Beschreibung |
 |---|---|---|
-| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import und Asset-Suche.<br>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
-| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten und Inhaltsfragmente sowie die Asset-Suche.<br>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
+| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import und Asset-Suche.<br>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
+| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten und Inhaltsfragmente sowie die Asset-Suche.<br>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
 | **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. |
-| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
+| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
@@ -60,7 +60,7 @@ Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden,
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im Cloud Manager MCP Server-.
+Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#128279;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 
