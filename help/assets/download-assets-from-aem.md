@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
+source-git-commit: d2f264ed2c7cb701a66e6d4e226cd697a586c2d5
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 99%
+source-wordcount: '1285'
+ht-degree: 91%
 
 ---
 
@@ -47,6 +47,15 @@ Standardmäßig löst [!DNL Experience Manager] eine Benachrichtigung im [[!DNL 
 
 ![Benachrichtigung im Posteingang](assets/inbox-notification-for-large-downloads.png)
 
+Wenn ein(e) Benutzende(r) einen Download anfordert, der Ordner oder Sammlungen enthält, führt AEM eine schnelle Schätzung der Anzahl der Elemente (Assets, Ordner oder Ausgabedarstellungen) unter den heruntergeladenen Ordnern oder Sammlungen durch, um sicherzustellen, dass der angeforderte Download innerhalb unserer unterstützten Grenzen liegt. Standardmäßig werden Downloads mit mehr als 50.000 Elementen blockiert, und AEM zeigt die `The selected items are larger than the configured maximum download limit` an.
+
+Sie können die Download-Größenbeschränkung erhöhen, indem Sie eine der unten gezeigten OSGi-Konfigurationen zu Ihrem Programm-Code hinzufügen und [über eine Cloud Manager-Pipeline bereitstellen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi):
+
+```
+com.adobe.cq.dam.download.impl.DownloadConfiguration   
+downloadMaxItems = 100000
+```
+
 
 ### Aktivieren von E-Mail-Benachrichtigungen für große Downloads {#enable-emails-for-large-downloads}
 
@@ -83,7 +92,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
    | **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** | Wählen Sie diese Option aus, um für jedes Asset einen Ordner mit allen heruntergeladenen Ausgabedarstellungen für das Asset herunterzuladen. Wenn die Auswahl aufgehoben wird, sind alle Assets (und deren Ausgabedarstellungen, sofern für den Download ausgewählt) im übergeordneten Ordner des generierten Archivs enthalten. |
    | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um einem anderen Benutzer eine E-Mail-Benachrichtigung (mit einem Link zu Ihrem Download) zu senden. Der angemeldete Benutzer muss Mitglied der Gruppe `dam-users` sein. Standardmäßige E-Mail-Vorlagen finden Sie in folgenden Ordnern:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Vorlagen, die Sie während der Bereitstellung anpassen, stehen an den folgenden Speicherorten zur Verfügung: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Sie können mandantenspezifische benutzerdefinierte Vorlagen in folgenden Ordnern speichern:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Wählen Sie diese Option, um das Asset in seiner Originalform herunterzuladen.<br>Die Option „Teilassets“ ist verfügbar, wenn das Asset Teil-Asset enthält. |
-   | **[!UICONTROL Ausgabedarstellung(en)]** | Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. Assets verfügen über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Sie können außerdem mehrere Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabedarstellungen auswählen, die heruntergeladen werden sollen. Die verfügbaren Ausgabedarstellungen hängen vom ausgewählten Asset ab. |
+   | **[!UICONTROL Ausgabedarstellung(en)]** | Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. Assets verfügen über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Sie können eine beliebige Anzahl von Darstellungen aufweisen. <br> Mit dieser Option können Sie die Ausgabedarstellungen auswählen, die Sie herunterladen möchten. Die verfügbaren Ausgabedarstellungen hängen vom ausgewählten Asset ab. |
    | **[!UICONTROL Intelligenter Zuschnitt]** | Wählen Sie diese Option aus, um alle Ausgabedarstellungen des ausgewählten Assets, die mit der Funktion „Intelligenter Zuschnitt“ erstellt wurden, aus [!DNL Experience Manager] herunterzuladen. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Intelligenter Zuschnitt“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
    | **[!UICONTROL Dynamische Ausgabedarstellung(en)]** | Wählen Sie diese Option, um eine Reihe von alternativen Ausgabedarstellungen in Echtzeit zu erstellen. Wenn Sie diese Option wählen, wählen Sie durch Auswahl aus der Liste [Bildvorgabe](/help/assets/dynamic-media/image-presets.md) auch die Ausgabedarstellungen, die Sie dynamisch erstellen möchten. <br>Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
