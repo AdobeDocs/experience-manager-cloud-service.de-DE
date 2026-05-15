@@ -4,9 +4,9 @@ description: Dieses Handbuch enthält Tipps für eine effektive Eingabeaufforder
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '3121'
 ht-degree: 0%
 
 ---
@@ -104,10 +104,10 @@ Verwenden Sie diese Eingabeaufforderung, um viele Seiten derselben Vorlage nach 
 
 Der empfohlene Workflow ist iterativ: Validieren Sie ihn zuerst in kleinen Mengen und skalieren Sie dann die Anwendung.
 
-1. **Führen Sie zuerst eine Migration auf einer einzelnen Seite aus.** : Migrieren Sie eine repräsentative Seite für die Vorlage, die Sie in großen Mengen importieren möchten.
+1. **Führen Sie zuerst eine Einzelseitenmigration aus.** - Migrieren Sie eine repräsentative Seite für die Vorlage, die Sie per Massenimport importieren möchten.
    * Dadurch wird die erforderliche Importinfrastruktur erstellt.
 1. **Führen Sie den Massenimport auf einer kleinen Gruppe von Seiten aus.** - Bitten Sie den Agenten, den Massenimport auszuführen, und geben Sie eine kurze Liste der URLs an, die derselben Vorlage folgen.
-1. **Überprüfen und verfeinern Sie die Ergebnisse.** - Überprüfen Sie die importierten Seiten.
+1. **Überprüfen und verfeinern Sie die Ergebnisse.** - Überprüfen der importierten Seiten.
    * Wenn etwas falsch aussieht, bitten Sie den Agenten, Parser, Transformatoren oder Importlogik anzupassen.
 1. **Hochskalieren.** - Wenn die Ergebnisse korrekt aussehen, geben Sie die vollständige Liste der URLs an.
    * Der Agent verwendet dieselbe Importlogik wieder und führt Massenimporte skaliert durch.
@@ -245,7 +245,7 @@ Beachten Sie, dass Sie Ihre Figma-Details in [Experience Modernization Console](
    1. **Zuordnung zu vorhandenen Blöcken** - Der Agent identifiziert den Block in der Blockbibliothek Ihres Projekts, der am ehesten damit übereinstimmt, und erstellt eine benutzerdefinierte Variante.
    1. **CSS-Generierung** - Der Agent schreibt Stile, die auf die extrahierten benutzerdefinierten CSS-Eigenschaften verweisen, und stellt so die Konsistenz des Designs sicher.
    1. **Asset-**: Der Agent speichert Bilder und Symbole aus Figma im Arbeitsbereich der gehosteten Umgebung.
-   1. **Edge Delivery Services-Inhaltserstellung** - Der Agent erstellt die Markdown-Datei entsprechend der EDS-Blockstruktur
+   1. **Edge Delivery Services-Inhaltserstellung** - Der Agent erstellt die Markdown-Datei entsprechend der Edge Delivery Services-Blockstruktur
    1. **Ausgabevalidierung** - Der Agent zeigt eine Vorschau des Ergebnisses an und führt einen visuellen Vergleich mit dem ursprünglichen Figma-Design durch.
 * Die Kenntnis liest zunächst Metadaten (Schritt 1), um die Struktur zu verstehen, und extrahiert dann einen detaillierten Design-Kontext (Schritte 2-5).
    * Dieser stufenweise Ansatz verhindert Probleme mit großen oder komplexen Figma-Dateien.
@@ -253,6 +253,60 @@ Beachten Sie, dass Sie Ihre Figma-Details in [Experience Modernization Console](
    * Alle Stile werden als benutzerdefinierte CSS-Eigenschaften (Design-Token) extrahiert, bevor CSS geschrieben wird.
    * Dadurch wird sichergestellt, dass der migrierte Block konsistent mit Ihrem Design-System bleibt.
 * Die Eingabeaufforderung erfordert die Figma-URL (mit `fileKey` und optionalem `node-id`) oder einen Figma-Dateischlüssel direkt als Eingabe.
+
+### Umgestalten der Migration mithilfe von FIGMA-abgeleiteten Blöcken {#figma-redesign-migration}
+
+Verwenden Sie diese Eingabeaufforderung, wenn eine vorhandene Website in ein neu gestaltetes Erlebnis migriert wird.
+
+In diesem Workflow erstellen Sie zunächst die Zielblocksammlung aus Figma. Die Site-Migration erfolgt dann gegen die Live-Quell-Website und ordnet Quellinhalte den Blöcken zu, die aus Figma erstellt wurden.
+
+* **Figma** ist die Zieldesign- und Blockbibliotheksquelle.
+* **Die Live-Website** bleibt die Inhaltsquelle.
+
+#### Beispiel-Eingabeaufforderungen {#example-figma-redesign}
+
+1. Erstellen Sie die Blocksammlung aus Figma:
+
+   * „Erstellen Sie die Edge Delivery Services-Blocksammlung aus diesen Figma-Komponenten: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+1. Migrieren Sie Quellinhalte in diese Blöcke:
+
+   * „Migrieren Sie diese Seiten und ordnen Sie den Inhalt der aus Figma abgeleiteten Blocksammlung zu: URL1, URL2, URL3“
+
+#### Was Sie wissen sollten {#wtk-figma-redesign}
+
+* Figma wird zuerst verwendet, um den neu gestalteten Blocksatz zu erstellen.
+* Die Site-Migration ordnet dann echten Website-Inhalt diesem Blocksatz zu.
+* **Inhaltsvalidierung** wird für die Quell-Website durchgeführt.
+* **Visuelle Validierung** wird anhand des von Figma abgeleiteten Blockerfassungs- und Designsystems durchgeführt.
+* Neue Blockvarianten sollten nur erstellt werden, wenn vorhandene, aus Figma abgeleitete Blöcke den Quellinhalt nicht darstellen können.
+
+#### Empfohlener Workflow {#figma-redesign-workflow}
+
+1. Identifizieren Sie die Figma-Komponenten, die für die neu gestaltete Site benötigt werden.
+1. Migrieren dieser Komponenten in Edge Delivery Services-Blöcke oder -Varianten.
+1. Überprüfen Sie die generierten Blockerfassungs- und Design-Token.
+1. Führen Sie die Site-Migration auf repräsentativen Quellseiten aus.
+1. Ordnen Sie Quellinhalte den aus Figma abgeleiteten Blöcken zu.
+1. Validieren von Inhalten anhand der Quell-Website
+1. Validieren Sie die visuelle Ausgabe anhand des Zielfiguren-Designs.
+1. Verfeinern Sie Blöcke oder Zuordnungen und skalieren Sie sie dann auf weitere Seiten.
+
+### Erstellen einer neuen Seite aus Figma {#figma-new-page-from-figma}
+
+Verwenden Sie diese Eingabeaufforderung, wenn die Seite noch nicht auf einer Quell-Website vorhanden ist und eine Figmaseite oder ein Frame die Erstellung einer neuen Edge Delivery Services-Seite fördern soll.
+
+#### Beispiel-Eingabeaufforderungen {#example-figma-new-page}
+
+* „Migrieren Sie diese Figmaseite nach Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+#### Was Sie wissen sollten {#wtk-figma-new-page}
+
+* Diese Eingabeaufforderung funktioniert am besten mit einem **bestimmten Figma-Frame oder einer bestimmten Seite** und nicht mit einer ganzen Datei.
+* Der Rahmen sollte in (**Seitenabschnitte)**.
+* Abschnitte werden vorhandenen Blöcken, Standardinhalten oder neuen Varianten zugeordnet.
+* Text und Assets stammen aus Figma.
+* Dynamische Funktionen wie Suche, Taschenrechner, Personalisierung oder Store-Locators erfordern möglicherweise eine **separate Blockentwicklung** die über die Ergebnisse der Figma-Migration hinausgeht.
 
 ### Navigations-Setup {#navigation-setup}
 
@@ -413,3 +467,9 @@ Verwenden Sie diese Eingabeaufforderung, um Probleme mit Blöcken, Bildern, CSS 
    1. Blockcode
    1. Browser-Konsole
 * Der Agent hat die Möglichkeit, lokale Vorschauen auf `http://localhost:3000` zu überprüfen.
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
