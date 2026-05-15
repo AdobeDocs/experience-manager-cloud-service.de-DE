@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: a622916de4edd29b5ecbbd0e0e7f4b2d87ff0511
+source-git-commit: b6a8b340f89e079047db668d6418e7952185a41f
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 14. Mai 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 21. Mai 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -26,7 +26,6 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 >
 >Der Inhalt der aktuellen Version sowie das Veröffentlichungsdatum können sich ändern.
 
-## Weitere bevorstehende Verbesserungen {#other-improvements}
+## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Das Arbeitsflächen-Bedienfeld wird jetzt standardmäßig geöffnet.
-* [Erweiterungssymbole wurden zu Spectrum 2 migriert.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
+* Kleinere Verbesserungen und Fehlerbehebungen

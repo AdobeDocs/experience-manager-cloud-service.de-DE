@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise zum universellen Editor 2026.05.07
-description: Dies sind die Versionshinweise für die Version 2026.05.07 des universellen Editors.
+title: Versionshinweise zum universellen Editor 2026.05.14
+description: Dies sind die Versionshinweise für die Version 2026.05.14 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: 409ec2536b650f5b7135fc8009d955f54079dff8
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 12%
+source-wordcount: '123'
+ht-degree: 20%
 
 ---
 
 
-# Versionshinweise zum universellen Editor 2026.05.07 {#release-notes}
+# Versionshinweise zum universellen Editor 2026.05.14 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 7. Mai 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 14. Mai 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,13 +26,9 @@ Dies sind die Versionshinweise für die Version vom 7. Mai 2026 des universellen
 
 ## Neue Funktionen {#what-is-new}
 
-* Sie können jetzt [Komponenten per Drag-and-Drop in den Editor ziehen, um sie zu verschieben.](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
-* Ein Service Worker wurde eingeführt, um die Latenz zwischen der Benutzeroberfläche des universellen Editors und den Backend-Systemen zu reduzieren.
-* Alle Adapter für Inhaltsfragmente (AEM 6.5, OpenAPI und GraphQL) enthalten jetzt Filter für den Asset-Wähler, um Konsistenz zu gewährleisten und Benutzenden zu ermöglichen, nur zulässige Assets auszuwählen.
-* `content:patch` Absicht wird jetzt bereitgestellt.
-* Um die Barrierefreiheit zu verbessern, wurden Autorenfluss und Orientierungspunkte definiert.
+* [Der Bereich „Eigenschaften](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) wird jetzt standardmäßig geöffnet.
+* [Erweiterungssymbole wurden zu Spectrum 2 migriert.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
 
-## Weitere bevorstehende Verbesserungen {#other-improvements}
+## Andere Verbesserungen {#other-improvements}
 
-* Unnötige Typbestätigungen in `assignImageDimensionFields` wurden entfernt.
-* Es wurde ein Problem behoben, bei dem bei der Server-seitigen Verarbeitung des `add` der Zeichenfolgenwert iteriert und als -Objekt anstelle eines Patches behandelt wurde.
+* URLs mit Leerzeichen und/oder Sonderzeichen werden jetzt beim Speichern im Rich-Text-Editor ordnungsgemäß prozentual kodiert.
