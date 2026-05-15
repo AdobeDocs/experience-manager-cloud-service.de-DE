@@ -437,7 +437,7 @@ Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud-Service zu kon
 Sie können die Konfiguration jetzt testen, indem Sie den Verteilungsagenten überprüfen und Assets in Brand Portal veröffentlichen.
 
 **Zulassungsliste der Egress-IPs in SPS, wenn die sichere Vorschau aktiviert ist**
-Wenn Sie Dynamic Media-Scene7 mit [sicherer Vorschau aktiviert](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) für ein Unternehmen verwenden, wird empfohlen, dass der Scene7-Unternehmensadministrator [ die öffentlichen Ausgangs-IPs ](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) die entsprechenden Regionen mithilfe der SPS (Scene7 Publishing System)-Flash-Benutzeroberfläche auf die Zulassungsliste setzt.
+Wenn Sie Dynamic Media-Scene7 mit [sicherer Vorschau aktiviert](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) für ein Unternehmen verwenden, wird empfohlen, dass der Scene7-Unternehmensadministrator [&#x200B; die öffentlichen Ausgangs-IPs &#x200B;](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) die entsprechenden Regionen mithilfe der SPS (Scene7 Publishing System)-Flash-Benutzeroberfläche auf die Zulassungsliste setzt.
 Die Egress-IPs lauten wie folgt:
 
 | **Region** | **Egress-IP** |

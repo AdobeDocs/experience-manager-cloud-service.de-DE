@@ -49,7 +49,7 @@ Die Kernfunktionen des Editors für interaktive Kommunikation sind:
 
 ## Onboarding
 
-Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
+Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um von Ihrer offiziellen Adresse aus Zugriff auf Ihre E-Mail-Adresse, Ihre Organisations-ID und Programmdetails für Ihre Forms as a Cloud Service-Bereitstellungen an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) anzufordern.
 
 Sobald Ihnen Zugriff gewährt wurde, beginnen Sie mit [Erstellen Ihrer ersten Korrespondenz](https://video.tv.adobe.com/v/3444094/).
 
