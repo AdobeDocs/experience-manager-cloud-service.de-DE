@@ -3,10 +3,9 @@ title: Kontextuelles Experimentieren in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie Ihrer Site mithilfe der Experimentierleiste Experimentierfunktionen hinzufügen können.
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ Beachten Sie vor der Einrichtung von Experimenten, dass Sie AEM Sites als Inhalt
 1. Klicken Sie auf das A/B-Symbol, um die Experimenterweiterung zu öffnen.
 
 >[!NOTE]
->Wenn Sie Probleme beim Einrichten von Experimenten für Ihr Projekt haben, wenden Sie sich an [aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com).
+>Wenn Sie Probleme beim Einrichten von Experimenten für Ihr Projekt haben, wenden Sie sich bitte an `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
 >Weitere Informationen zum Einrichten und Konfigurieren der Experimentier-Engine finden Sie im Dokumentationsabschnitt des folgenden [Repositorys](https://github.com/adobe/aem-experimentation/tree/v2-ui) .
