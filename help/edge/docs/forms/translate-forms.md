@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 89%
 
 ---
 
@@ -43,7 +43,7 @@ Sehen Sie sich die [Tabelle](/help/forms/assets/enquirytranslate.xlsx) an, die d
 
 ![Abfrage – übersetztes Formular](/help/forms/assets/translate-form-french.png)
 
-Anhand der folgenden URL können Sie das Formular mit der französischen Übersetzung anzeigen:
+Der unten stehenden URL können Sie entnehmen, wo sich das Formular mit der französischen Übersetzung befindet:
 https://main--portal--wkndforms.hlx.live/enquirytranslate
 
 ## das Übersetzen von Formularen in einer SharePoint-Site{#translate-form-sharepoint}
@@ -55,7 +55,7 @@ Um die Formulare auf der Microsoft® SharePoint-Site zu übersetzen, müssen Sie
 3. Fügen Sie ein Sheet mit dem Namen `shared-default` hinzu. Das Sheet `shared-default` enthält den Inhalt für die Lokalisierung in eine bestimmte Sprache.
 4. Fügen Sie den lokalisierten Inhalt im Sheet `shared-default` manuell ein.
 
-   ![Abfrage – Kalkulationstabelle übersetzen](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
+   ![Abfrage – Tabelle übersetzen](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
 
 5. Erstellen Sie eine Vorschau und veröffentlichen Sie das Sheet mit [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
@@ -63,7 +63,7 @@ Sehen Sie sich die [Kalkulationstabelle](/help/forms/assets/enquirytranslate-sp.
 
 ![Abfrage – übersetztes Formular](/help/forms/assets/translate-form-french.png)
 
-Anhand der folgenden URL können Sie das Formular mit der französischen Übersetzung anzeigen:
+Der unten stehenden URL können Sie entnehmen, wo sich das Formular mit der französischen Übersetzung befindet:
 https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## Bekannte Probleme {#known-issues}
@@ -83,9 +83,9 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **A**: Um Text in einer bestimmten lokalisierten Sprache einzugeben, passen Sie die Tastatureinstellungen auf Ihrem Gerät an. Anweisungen dazu finden Sie unter den folgenden Links:
 
-- [Einrichten Ihres Mac für die Eingabe in einer anderen Sprache](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [Mac so einrichten, dass Eingaben in einer anderen Sprache erfolgen](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
 - [Einrichten von Windows für die Eingabe in einer anderen Sprache](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-- [Einrichten Ihres Android-Geräts oder iPhones/iPads für die Eingabe in einer anderen Sprache](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
+- [Android oder iPhones/iPads so einrichten, dass Eingaben in einer anderen Sprache erfolgen](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **F**: Wie kann ich eine Liste der in der `GOOGLETRANSLATE`-Funktion verwendeten Gebietsschemata abrufen?

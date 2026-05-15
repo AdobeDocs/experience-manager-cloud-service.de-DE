@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '330'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Möglicherweise sind unterschiedliche Typen von Benutzern mit unterschiedlichen 
 ## Angeben von Benutzergruppen für Zugriff auf Regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Melden Sie sich als Administrator bei [!DNL Experience Manager Forms] an.
-1. Klicken Sie in der Autoreninstanz auf ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer-icon.svg) > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**. Die Webkonsole wird in einem neuen Fenster geöffnet.
+1. Klicken Sie in der Autoreninstanz auf ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer-icon.svg) > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**. Die Web-Konsole wird in einem neuen Fenster geöffnet.
 
    ![1–2](assets/1-2.png)
 

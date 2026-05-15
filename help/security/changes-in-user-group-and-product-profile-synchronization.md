@@ -6,8 +6,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
-workflow-type: ht
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Wenn sich Benutzende bei AEM as a Cloud Service anmelden oder ein Zugriffs-Token verwendet wird, werden Benutzergruppen, Produktprofile und Produktprofildienste von Adobe Admin Console als Gruppen im AEM-Repository synchronisiert.
 
-Ab der AEM-Wartungsversion 19149 ändert sich das Verhalten bei der Gruppensynchronisierung, um die Benutzeroberfläche übersichtlicher zu gestalten und die Leistung zu optimieren. Insbesondere wird die Benutzergruppenmitgliedschaft für die beiden folgenden AEM-Gruppenkategorien nicht mehr synchronisiert:
+Ab der AEM-Wartungsversion 19149 ändert sich das Verhalten bei der Gruppensynchronisierung, um die Benutzeroberfläche übersichtlicher zu gestalten und die Leistung zu optimieren. Insbesondere wird die Benutzergruppenzugehörigkeit für die beiden folgenden AEM-Gruppenkategorien nicht mehr synchronisiert:
 
 1. AEM-Gruppen mit dem Suffix `GROUP_NAME_SUFFIX`. Diese Gruppen werden nicht in der Adobe Developer Console, sondern wie unten dargestellt im AEM-Bildschirm „Gruppenverwaltung“ angezeigt. Falls Ihre AEM-Anwendung auf diese Gruppen verweist, sollten Sie stattdessen unbedingt auf Adobe Admin Console-Benutzergruppen ohne dieses Suffix verweisen.
 
@@ -44,4 +44,4 @@ Dadurch navigieren Sie zur Adobe Admin Console, wie im folgenden Screenshot darg
 
 Falls Ihre AEM-Anwendung auf eine Gruppe verweist, die nicht mehr in AEM angezeigt wird, stellen Sie sicher, dass Sie stattdessen entweder i) ein Produktprofil aus der richtigen AEM-Instanz oder ii) eine Adobe Admin Console-Benutzergruppe verwenden.
 
-Die Gruppenmitgliedschaften der Benutzenden werden synchronisiert, wenn sie sich bei der Umgebung anmelden; sie werden aus Gruppen entfernt, die nicht mit der aktuellen Umgebung zusammenhängen. Die Gruppen selbst bleiben bestehen und umfassen Benutzende, die sich seit der Aktivierung der Funktion nicht mehr angemeldet haben.
+Die Gruppenzugehörigkeiten der Benutzenden werden synchronisiert, wenn sie sich bei der Umgebung anmelden; sie werden aus Gruppen entfernt, die nicht mit der aktuellen Umgebung zusammenhängen. Die Gruppen selbst bleiben bestehen und umfassen Benutzende, die sich seit der Aktivierung der Funktion nicht mehr angemeldet haben.

@@ -2,13 +2,12 @@
 title: Konfigurieren von Übersetzungsregeln
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%
@@ -24,7 +23,7 @@ Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalt
 Im vorherigen Dokument der AEM Sites-Übersetzungs-Tour, [Konfigurieren des Übersetzungs-Connectors](configure-connector.md), haben Sie gelernt, wie Sie Ihren Übersetzungs-Connector installieren und konfigurieren, und sollten jetzt:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
-* in der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungs-Service einzurichten.
+* In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
 Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um herauszufinden, welche Inhalte übersetzt werden müssen.
 
@@ -52,7 +51,7 @@ AEM erstellt automatisch Übersetzungsregeln für Seiten von Websites. Da jedoch
 
 ## Erstellen von Übersetzungsregeln {#creating-rules}
 
-Es können mehrere Regeln erstellt werden, um komplexe Übersetzungsanforderungen zu unterstützen. Beispielsweise müssen für ein Projekt, an dem Sie arbeiten, alle Seiteninformationen übersetzt werden. Auf einer anderen Seite dürfen jedoch nur Beschreibungen übersetzt werden, während Titel unübersetzt bleiben.
+Sie können mehrere Regeln erstellen, um komplexe Übersetzungsanforderungen zu unterstützen. Beispielsweise müssen für ein Projekt, an dem Sie arbeiten, alle Seiteninformationen übersetzt werden. Auf einer anderen Seite dürfen jedoch nur Beschreibungen übersetzt werden, während Titel unübersetzt bleiben.
 
 Übersetzungsregeln sind für solche Szenarien konzipiert. In diesem Beispiel veranschaulichen wir jedoch, wie Regeln erstellt werden, indem wir uns auf eine einfache, einzelne Konfiguration konzentrieren.
 
@@ -106,4 +105,4 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre Übersetzungs-Tour durch AEM
 
 Es wird zwar empfohlen, mit dem nächsten Teil der Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Übersetzen von Inhalten](translate-content.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen, aber nicht erforderlich sind, um die Tour fortzusetzen.
 
-* [Ermitteln der zu übersetzenden Inhalte](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Sie mit Übersetzungsregeln Inhalte ermitteln können, die übersetzt werden müssen.
+* [Ermitteln von zu übersetzenden Inhalten](/help/sites-cloud/administering/translation/rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.

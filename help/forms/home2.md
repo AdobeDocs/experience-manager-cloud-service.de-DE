@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2397'
 ht-degree: 1%
 
 ---
@@ -67,12 +67,12 @@ AEM Forms unterstützt das vollständige Journey digitaler Formulare, von der er
 
 **AEM Forms Workflow-Journey:**
 
-    ERSTELLEN → STEUERN → VERÖFFENTLICHEN → ERFASSEN → PROZESSES → INTEGRIEREN → VERFOLGEN → ARCHIVIEREN → VERBESSERN
-    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓ 
-     Design   Überprüfung   Bereitstellen   einsammeln   Handgriff   Verbinden   Monitorspeicher   Optimieren
-    ↑                                                                              ↓
-    ←←←←←←←←←←←←←←← Continuous Improvement Loop ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
-
+    ERSTELLEN → STEUERN → VERÖFFENTLICHEN → ERFASSEN → PROZESS → INTEGRIEREN → VERFOLGEN → ARCHIVIEREN → VERBESSERN
+    ↓ ↓ ↓ ↓ ↓ ↓ ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← ↓ ↓ ↓
+    Design Review Bereitstellen von Collect Handle Connect Monitor Store Optimieren
+    ↑ ↓
+    
+ ←←←←←←←←←←←←←←← Kontinuierliche Verbesserungsschleife
 ### Erstellen: Formularentwurf und -entwicklung {#create}
 
 Erstellen Sie adaptive Formulare mithilfe mehrerer Authoring-Ansätze, die auf verschiedene Anforderungen und technische Anforderungen zugeschnitten sind.
@@ -90,10 +90,10 @@ Beschleunigen Sie die Formularerstellung mithilfe vordefinierter [Vorlagen](/hel
 Verbinden von Formularen mit Backend-Systemen während der Design-Phase. Das [Formulardatenmodell](/help/forms/create-form-data-models.md) bietet eine einheitliche Schnittstelle für mehrere Datenquellen, die [Vorausfüllen](/help/forms/prepopulate-adaptive-form-fields.md), [Validierungsregeln](/help/forms/rule-editor-core-components.md) und einen nahtlosen Datenfluss zwischen Formularen und Geschäftssystemen ermöglicht.
 
 **Validierungen und Bedingungslogik**
-Implementieren Sie [Bedingungslogik](/help/forms/rule-editor-core-components.md) progressive Offenlegung und adaptive Validierung, um Benutzer durch komplexe Prozesse zu führen. [Mit der Funktion „Speichern und &#x200B;](/help/forms/save-core-component-based-form-as-draft.md)&quot; können Benutzer Formulare sitzungsübergreifend ausfüllen.
+Implementieren Sie [Bedingungslogik](/help/forms/rule-editor-core-components.md) progressive Offenlegung und adaptive Validierung, um Benutzer durch komplexe Prozesse zu führen. [Mit der Funktion „Speichern und ](/help/forms/save-core-component-based-form-as-draft.md)&quot; können Benutzer Formulare sitzungsübergreifend ausfüllen.
 
 **HTML5 Forms**
-XFA-basierte Formulare für Mobilgeräte und ältere Browser [&#x200B; &#x200B;](/help/forms/introductionhtml5.md)HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
+XFA-basierte Formulare für Mobilgeräte und ältere Browser ](/help/forms/introductionhtml5.md) [HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
 
 **Interaktive Kommunikation**
 Erstellen Sie dokumentorientierte Kommunikationen wie Auszüge, Rechnungen und Benachrichtigungen mit einem visuellen Editor. [Interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md) Kombinieren Sie statische Inhalte mit dynamischen Daten, um personalisierte Kommunikation über Print- und digitale Kanäle zu generieren.
@@ -103,7 +103,7 @@ Erstellen Sie dokumentorientierte Kommunikationen wie Auszüge, Rechnungen und B
 Einführung von Aufsichts- und Genehmigungsprozessen, um sicherzustellen, dass die Formulare den organisatorischen Standards und rechtlichen Anforderungen entsprechen.
 
 **Workflow-basierte Genehmigungen**
-Routing von Formularentwürfen durch mehrstufige Prüfprozesse mit rollenbasierten Zuweisungen. Stakeholder können Formulare [überprüfen](/help/forms/create-reviews-forms.md) [&#x200B; (kommentieren](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) und genehmigen, bevor sie veröffentlicht werden. Dabei bleiben Qualitätskontrolle und Compliance-Überwachung mithilfe von [AEM-Workflows](/help/forms/aem-forms-workflow.md).
+Routing von Formularentwürfen durch mehrstufige Prüfprozesse mit rollenbasierten Zuweisungen. Stakeholder können Formulare [überprüfen](/help/forms/create-reviews-forms.md) [ (kommentieren](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) und genehmigen, bevor sie veröffentlicht werden. Dabei bleiben Qualitätskontrolle und Compliance-Überwachung mithilfe von [AEM-Workflows](/help/forms/aem-forms-workflow.md).
 
 **Versionsverwaltung**
 Verfolgen Sie Formularversionen und pflegen Sie Audit-Trails zur Einhaltung von Vorschriften. Die integrierte [Versionierung](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) stellt sicher, dass Sie Änderungen zurücksetzen, Iterationen vergleichen und historische Datensätze für Compliance-Audits verwalten können.
@@ -119,7 +119,7 @@ Stellen Sie Formulare über mehrere Kanäle und Touchpoints bereit, um Benutzer 
 Veröffentlichen von Formularen in [AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md), eigenständigen Webseiten, mobilen Anwendungen oder [Einbetten in Drittanbietersysteme](/help/forms/embed-adaptive-form-core-components-external-web-page.md). Single-Source-Publishing sorgt für Konsistenz bei gleichzeitiger Anpassung an unterschiedliche Kanalanforderungen.
 
 **Lokalisierung und Personalization**
-Stellen Sie Formulare mithilfe der Übersetzungs-Workflows von [AEM in mehreren Sprachen bereit](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) wobei sowohl [von links nach rechts als auch von rechts nach links unterstützt &#x200B;](/help/forms/right-left-languages.md). Integration mit Adobe Target zur Personalisierung von Formularerlebnissen basierend auf Benutzersegmenten, Verhalten oder kontextuellen Daten.
+Stellen Sie Formulare mithilfe der Übersetzungs-Workflows von [AEM in mehreren Sprachen bereit](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) wobei sowohl [von links nach rechts als auch von rechts nach links unterstützt werden](/help/forms/right-left-languages.md). Integration mit Adobe Target zur Personalisierung von Formularerlebnissen basierend auf Benutzersegmenten, Verhalten oder kontextuellen Daten.
 
 **Leistungsoptimierung**
 Nutzen Sie Edge Delivery Services für extrem schnelles Laden von Formularen und optimale SEO-Leistung. Netzwerke zur Inhaltsbereitstellung sorgen für globale Barrierefreiheit mit minimaler Latenz.
@@ -147,7 +147,7 @@ Verarbeiten Sie Formularübermittlungen mit robusten Verarbeitungs-, Validierung
 **Datenvalidierung und -verarbeitung**
 Stellen Sie die Datenintegrität durch Server-seitige Validierung und automatisierte Verarbeitungsregeln sicher. Transformieren, Validieren und Weiterleiten gesendeter Daten beim Generieren von Quittungen, Bestätigungen oder Folgematerialien für Benutzer.
 
-**Kommunikations-API**
+**Kommunikations-APIs**
 Programmgesteuertes Generieren, Bearbeiten und Schützen von Dokumenten über [RESTful-APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md). Erstellen Sie PDFs, druckfertige Formate, stellen Sie Dokumente zusammen, wenden Sie digitale Signaturen an und verarbeiten Sie umfangreiche [Batch-Vorgänge](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) für Dokumenten-Workflows im Unternehmensmaßstab.
 
 **Datensatzdokument**
@@ -167,9 +167,9 @@ Verbinden von Formularen mit vorhandenen Geschäftssystemen und Datenquellen fü
 Native Integration mit [Salesforce](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) und Adobe Experience Cloud-Lösungen. Vorkonfigurierte Connectoren verkürzen die Entwicklungszeit und sorgen gleichzeitig für eine zuverlässige Datensynchronisation.
 
 **RESTful-API-Integration**
-Stellen Sie über RESTful-APIs über [Übermittlungsaktionen) oder &#x200B;](/help/forms/configure-submit-action-restpoint.md)Datenintegration[&#x200B; eine Verbindung zu einem Service her, auf &#x200B;](/help/forms/data-integration.md) über Web zugegriffen werden kann. Das Formulardatenmodell abstrahiert die Integrationskomplexität und bietet eine konsistente Schnittstelle unabhängig von der zugrunde liegenden Systemarchitektur.
+Stellen Sie über RESTful-APIs über [Übermittlungsaktionen) oder ](/help/forms/configure-submit-action-restpoint.md)Datenintegration](/help/forms/data-integration.md) eine Verbindung zu einem Service her, auf [ über Web zugegriffen werden kann. Das Formulardatenmodell abstrahiert die Integrationskomplexität und bietet eine konsistente Schnittstelle unabhängig von der zugrunde liegenden Systemarchitektur.
 
-**Echtzeit-Datenaustausch**
+**Datenaustausch in Echtzeit**
 Bidirektionalen Datenfluss zwischen Formularen und Geschäftssystemen aktivieren. Formulare aus vorhandenen Datensätzen vorab ausfüllen, mit Live-Daten validieren und mehrere Systeme gleichzeitig bei der Übermittlung durch umfassende [Datenintegration](/help/forms/data-integration.md) aktualisieren
 
 ### Tracking: Analyse und Leistungsüberwachung {#track}

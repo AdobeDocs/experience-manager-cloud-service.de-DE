@@ -9,10 +9,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 20%
+source-wordcount: '257'
+ht-degree: 28%
 
 ---
 
@@ -34,7 +34,7 @@ Für Umgebungen mit **AEM 6.5 Forms** und **AEM 6.5 LTS Forms** sind die Kernkom
 Befolgen Sie die entsprechenden Handbücher:
 
 - Für AEM 6.5 Forms: [Aktivieren der Kernkomponenten von Adaptive Forms auf AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de).
-- Für AEM 6.5 LTS Forms: [Aktivieren der Kernkomponenten für adaptive Forms auf AEM 6.5 LTS Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
+- Für AEM 6.5 LTS Forms: [Aktivieren der Kernkomponenten für adaptive Forms auf AEM 6.5 LTS Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **Hinweis:** Wenn Schritte zur Aktivierung der Kernkomponenten für adaptive Forms in älteren AEM 6.5-Umgebungen unklar sind oder umgebungsspezifische Voraussetzungen vorhanden sind, klären Sie diese Anforderungen, bevor Sie die Aktivierung versuchen.
 

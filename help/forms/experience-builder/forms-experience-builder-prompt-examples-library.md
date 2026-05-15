@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 98%
+source-wordcount: '2192'
+ht-degree: 97%
 
 ---
 
@@ -228,11 +228,11 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
 **Unternehmensklassifizierungen:**
 
-    Füge ein Feld für die Branchenklassifizierung mit NAICS-Codes hinzu
-    Erstelle eine Dropdown-Liste der Typen von Geschäftseinheiten (LLC, Corporation, Partnerschaft usw.)
-    Füge ein Feld für Unternehmensgrößenkategorien hinzu (Startup, KMU, Unternehmen)
-    Füge eine Abteilungsauswahl für große Organisationen hinzu
-    Füge ein Feld für Typen professioneller Dienstleistungen hinzu
+    Feld für die Branchenklassifizierung mit NAICS-Codes hinzufügen
+    Erstellen Sie eine Dropdown-Liste der Typen von Geschäftseinheiten (LLC, Corporation, Partnerschaft usw.)
+    Feld für die Kategorien der Unternehmensgröße (Start, KMU, Unternehmen)
+    Abteilungsauswahl für große Organisationen einbeziehen
+    Feld für professionelle Servicetypen hinzufügen
 
 **Berufsklassifizierungen:**
 
@@ -394,7 +394,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
     Verbinde dieses Formular mit dem **CRM-System**, um neue Leads zu erstellen. Ordne @firstName dem Vornamen und @email der E-Mail-Adresse zu, lege LeadSource auf „Web-Formular“ und Status auf „Neu“ fest
     
-    Richte einen **Workflow-Trigger &#x200B;** beim Übermitteln des Formulars ein. Übergib alle Formulardaten und löse den Genehmigungs-Workflow für die Manager-Benachrichtigung aus
+    Richte einen **Workflow-Trigger ** beim Übermitteln des Formulars ein. Übergib alle Formulardaten und löse den Genehmigungs-Workflow für die Manager-Benachrichtigung aus
     
     Konfiguriere die **Datenbankintegration**, um Formularübermittlungen als Einträge zu speichern. Erstelle für jede Übermittlung mit hochgeladenen Dokumenten einen neuen Ordner
 
@@ -492,4 +492,4 @@ Verwenden Sie die `@fieldName`-Syntax, um in Ihren Prompts auf vorhandene Felder
 
 Umfassende Best Practices und Validierungsrichtlinien finden Sie im Handbuch [Forms Experience Builder – Erste Schritte](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
-*Diese Prompt-Bibliothek wird auf Basis von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen fortlaufend aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de).*
+*Diese Prompt-Bibliothek wird auf Basis von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen fortlaufend aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de).*

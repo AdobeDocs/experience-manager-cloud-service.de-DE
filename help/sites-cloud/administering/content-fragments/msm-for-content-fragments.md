@@ -8,10 +8,11 @@ solution: Experience Manager Sites
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85b72909597a95531aea51719c841bc5db9c1a21
+exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 28%
+source-wordcount: '950'
+ht-degree: 29%
 
 ---
 
@@ -141,7 +142,7 @@ So erstellen Sie einen Trigger für einen Rollout, bei dem die Quellaktualisieru
 
 1. Navigieren Sie in der Inhaltsfragmentkonsole zum Speicherort der Live Copy des Fragments.
 1. Wählen Sie Ihr Fragment aus.
-1. Wählen **Rollout** in der Symbolleiste aus. Der Assistent wird geöffnet, um Sie durch den Prozess zu führen.
+1. Wählen Sie in der Symbolleiste die Option **Rollout** aus. Der Assistent wird geöffnet, um Sie durch den Prozess zu führen.
 1. Wählen Sie die Live Copies aus, die in den Rollout eingeschlossen werden sollen, und **Sie**.
 1. Planen Sie den Rollout für sofort (**Jetzt**) oder **Später**.
 1. **Weiter** soweit erforderlich.
@@ -154,7 +155,7 @@ Vererbung ist der Mechanismus, bei dem Inhalte automatisch von einer Komponente 
 
 Sie können die Vererbung im Inhaltsfragment-Editor abbrechen (und dann wiederherstellen). Je nach Kontext kann dies für eine Variante oder ein einzelnes Feld verfügbar sein, wenn das Fragment Teil einer Live Copy ist.
 
-Beispiel:
+Zum Beispiel:
 
 * Abbrechen der Vererbung
 

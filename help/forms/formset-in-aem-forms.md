@@ -12,10 +12,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 98%
+source-wordcount: '2856'
+ht-degree: 97%
 
 ---
 
@@ -38,14 +38,14 @@ Formularsätze werden auch in der AEM Forms-App unterstützt, sodass etwa Ihr Au
 
 Sie können mehrere XDPs oder Formularvorlagen, die unter Verwendung von Designer erstellt wurden, in einen Formularsatz zuordnen. Formularsätze können dann selektiv verwendet werden, um die XDPs zu rendern, basierend auf den Werten, die von den Benutzern in den anfänglichen Formularen und deren Profilen eingegeben wurden.
 
-Verwenden Sie die [AEM Forms-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms), um alle Formulare, Formularsätze und zugehörigen Assets zu verwalten.
+Verwenden Sie die [AEM Forms-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms), um alle Formulare, Formularsätze und zugehörigen Assets zu verwalten.
 
 ### Erstellen eines Formularsatzes {#create-a-form-set}
 
 Gehen Sie wie folgt vor, um einen Formularsatz zu erstellen:
 
 1. Wählen Sie „Formulare“ > „Formulare und Dokumente“ aus.
-1. Klicken Sie auf „Erstellen“ > „Formularsatz“. 
+1. Klicken Sie auf „Erstellen“ > „Formularsatz“.
 
 1. Fügen Sie auf der Seite „Eigenschaften hinzufügen“ die folgenden Angaben hinzu und klicken Sie auf „Weiter“.
 
@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um einen Formularsatz zu erstellen:
 
    * Reihenfolge der Formulare: Ziehen Sie die Formulare per Drag&amp;Drop, um die Anordnung zu ändern. Dieses Formular definiert die Reihenfolge, in der die Formulare dem Endbenutzer in der AEM Forms-App und in der eigenständigen Ausgabedarstellung angezeigt werden.
    * Formular-ID: Gibt eine eindeutige ID an, damit die Formulare in den Eignungsausdrücken verwendet werden können.
-   * Datenstamm: Die Autorin oder der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im übermittelten XML-Code positioniert werden. Standardmäßig ist der Wert „/“. Wenn alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. Weitere Informationen zur XML-Struktur von Formularsätzen finden Sie unter [Vorausfüllen von XML für Formularsätze](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Datenstamm: Die Autorin oder der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im übermittelten XML-Code positioniert werden. Standardmäßig ist der Wert „/“. Wenn alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. Weitere Informationen zur XML-Struktur von Formularsätzen finden Sie unter [Vorausfüllen von XML für Formularsätze](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Eignungsausdruck: Gibt einen JavaScript-Ausdruck an, der einen booleschen Wert auswertet und anzeigt, ob ein Formular im Formularsatz zum Ausfüllen zulässig ist. Wenn dies „false“ ist, wird der Benutzer nicht gefragt und es wird ihm auch nicht das Formular zum Ausfüllen angezeigt. Der Ausdruck basiert normalerweise auf den Werten der Felder, die in den diesem Formular vorangehenden Formularen erfasst werden. Darüber hinaus enthalten Ausdrücke auch Aufrufe von „fs.valueOf“ in der Formularsatz-API, um die von der Benutzerin oder dem Benutzer im entsprechenden Feld eines Formulars im Formularsatz eingegebenen Werte abzurufen:
 
    *fs.valueOf(&lt;Formularkennung>, &lt;fieldSom-Ausdruck>) > &lt;Wert>*
@@ -108,7 +108,7 @@ Gehen Sie wie folgt vor, um Formularsätze zu bearbeiten:
 1. Suchen Sie nach dem Formularsatz, den Sie bearbeiten möchten. Bewegen Sie den Cursor darüber und wählen Sie „Bearbeiten“ ( ![editicon](assets/editicon.png)).
 1. Auf der Seite „Formular(e) konfigurieren“ können Sie Folgendes bearbeiten:
 
-   * Formular-Reihenfolge 
+   * Formular-Reihenfolge
    * Formularkennung
    * Datenstamm
    * Eignungsausdruck
@@ -173,15 +173,18 @@ Sie haben beispielsweise drei Formulare (form1, form2 und form3) im Formularsatz
 
 form1
 
-Field form1field
+field
+form1field
 
 form2
 
-Field form2field
+field
+form2field
 
 form3
 
-Field form3field
+field
+form3field
 
 Jedes Formular verfügt über ein Feld mit einem gängigen Namen wie „Feld“ und einem einzigartig benannten Feld namens „Formularfeld&lt;i>“.
 
@@ -361,7 +364,7 @@ Die folgenden Datenmuster werden im Formularsatz nicht vollständig unterstützt
 <table>
  <tbody>
   <tr>
-   <td><strong>Muster werden nicht vollständig in Formularsätzen unterstützt </strong></td>
+   <td><strong>Muster werden nicht vollständig in Formularsätzen unterstützt</strong></td>
    <td><strong>Beispiel</strong></td>
   </tr>
   <tr>

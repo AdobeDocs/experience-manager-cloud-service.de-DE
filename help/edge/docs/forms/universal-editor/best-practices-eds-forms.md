@@ -6,10 +6,10 @@ role: Admin, Developer
 hide: true
 hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 100%
+source-wordcount: '780'
+ht-degree: 99%
 
 ---
 
@@ -95,5 +95,5 @@ Dieses Handbuch bietet einen Überblick über die Verwendung von Formularen mit 
 
 - [Dokumentenbasiertes Authoring mit Edge Delivery Services-Formularen.](/help/edge/docs/forms/tutorial.md)
 - [Universeller Editor mit Edge Delivery Services-Formularen.](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-- [Dokumentenerstellung und Einbetten von Inhalten](https://www.aem.live/developer/da-tutorial)
+- [Dokumenterstellung (Document Authoring, DAM) und Einbetten von Inhalten](https://www.aem.live/developer/da-tutorial)
 - [AEM Forms-Übermittlungsdienst](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

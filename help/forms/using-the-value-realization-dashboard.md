@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '887'
 ht-degree: 99%
 
 ---
@@ -124,7 +124,7 @@ Dieser Abschnitt bietet Erkenntnisse bezüglich der Verwendung von Formularfragm
    - **Aktion:** Untersuchen Sie potenzielle Ursachen wie Ausfallzeiten von Formularen, Probleme mit der Benutzerfreundlichkeit oder einen Rückgang des Traffics zur Landingpage des Formulars.
 - **Szenario:** Der Wert „Wiederverwenden von Formularfragmenten“ ist niedrig.
    - **Aktion:** Bewerben Sie die Vorteile der Verwendung von Formularfragmenten in Ihrem Team. Stellen Sie sicher, dass Fragmente gut organisiert und einfach zu finden sind, und bieten Sie Schulungen zum effektiven Erstellen und Wiederverwenden von Fragmenten an.
-- **Szenario:** Es gibt eine signifikante Verzögerung zwischen „Erstellte Formulare“ und „Veröffentlichte Formulare“. 
+- **Szenario:** Es gibt eine signifikante Verzögerung zwischen „Erstellte Formulare“ und „Veröffentlichte Formulare“.
    - **Aktion:** Überprüfen Sie Ihren Formulargenehmigungs- und -bereitstellungsprozess, um Engpässe zu identifizieren und zu beseitigen.
 
 

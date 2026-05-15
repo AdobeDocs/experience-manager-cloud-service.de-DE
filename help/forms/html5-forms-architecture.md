@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 96%
+source-wordcount: '2069'
+ht-degree: 94%
 
 ---
 
 # Architektur von HTML5-Formularen{#architecture-of-html-forms}
 
-<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (Arbeits-)E-Mail-ID an aem-forms-ea@adobe.com.
+<span class="preview"> Die HTML5-Formularfunktion wird als Teil des Early-Access-Programms angeboten. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen (geschäftlichen) E-Mail-ID an aem-forms-ea@adobe.com.
 </span>
 
 ## Architektur {#architecture}
@@ -97,7 +97,7 @@ HTML5-Formulare verwendet eine Zwischenspeicherung, um den Durchsatz zu maximier
   </tr>
   <tr>
    <td>Aggressiv</td>
-   <td>Den gerenderten HTML-Inhalt zwischenspeichern<br />Es werden alle Artefakte gespeichert, die in der Ebene „Konservativ“ zwischengespeichert wurden.<br /> <strong>Hinweis</strong>: Diese Strategie führt zur besten Leistung, verbraucht jedoch mehr Speicher zum Speichern der zwischengespeicherten Artefakte.</td>
+   <td>Gerenderte HTML-Inhalte zwischenspeichern<br /> Alle Artefakte zwischenspeichern, die in der Ebene „Konservativ“ zwischengespeichert wurden.<br /> <strong>Hinweis</strong>: Diese Strategie führt zur besten Leistung, verbraucht jedoch mehr Speicher zum Speichern der zwischengespeicherten Artefakte.</td>
   </tr>
  </tbody>
 </table>

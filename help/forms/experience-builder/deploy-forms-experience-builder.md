@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1428'
 ht-degree: 74%
 
 ---
@@ -46,7 +46,7 @@ Ihr Einrichtungsprozess hängt von Ihrer AEM Forms-Implementierung ab. Wählen S
 
 **Für Edge Delivery Services**
 
-Wenn Sie Edge Delivery Services Forms verwenden und hauptsächlich den universellen Editor verwenden. [Bereiten Sie Ihr Projekt für Edge Delivery Services Forms &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md). Dies ist eine einmalige Einrichtung zum Aktivieren von Forms Experience Builder.
+Wenn Sie Edge Delivery Services Forms verwenden und hauptsächlich den universellen Editor verwenden. [Bereiten Sie Ihr Projekt für Edge Delivery Services Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md). Dies ist eine einmalige Einrichtung zum Aktivieren von Forms Experience Builder.
 
 **Für Formulare, die auf Kernkomponenten basieren**
 
@@ -106,7 +106,7 @@ Bei Formularen, die über Edge Delivery Services bereitgestellt werden, ist der 
 
 * **Seien Sie spezifisch**: „Ein erforderliches E-Mail-Feld mit Validierung hinzufügen“ funktioniert besser als „E-Mail hinzufügen“
 * **Referenzieren Sie vorhandene Felder**: Verwenden Sie `@fieldName` beim Ändern von Formularen
-* **Bitten Sie um Hilfe**: Geben Sie `/help` gefolgt von Ihrer Frage ein 
+* **Bitten Sie um Hilfe**: Geben Sie `/help` gefolgt von Ihrer Frage ein
 * **Iterieren Sie**: Führen Sie jeweils nur eine Änderung durch, um optimale Ergebnisse zu erzielen
 
 

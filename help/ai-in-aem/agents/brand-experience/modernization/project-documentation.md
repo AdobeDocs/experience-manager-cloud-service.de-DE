@@ -2,14 +2,14 @@
 title: Projektdokumentations-Kenntnisse
 description: Erfahren Sie, wie Sie mit den Dokumentationsfähigkeiten des Experience Modernization Agents die Projektübergabe beschleunigen können.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 90fb75c7febc8a8138e13a2f3ff872f38eeb3baa
+role: User, Admin, Developer
+exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
-
 
 # Projektdokumentations-Kenntnisse {#project-documentation}
 
@@ -55,7 +55,7 @@ Sie können die PDF direkt speichern, um sie Ihren Teams bereitzustellen, oder s
 
 >[!NOTE]
 >
->Wenn Sie nicht berechtigt sind, auf die Edge Delivery Services Admin-API zuzugreifen oder die Option **LLM erlauben, in meinem Auftrag auf admin.hlx.page zuzugreifen** [&#x200B; in den Einstellungen der Konsole.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) nicht aktiviert ist, generiert der Agent die Dokumentation basierend auf der Code-Basis, auf die er zugreifen kann.
+>Wenn Sie nicht berechtigt sind, auf die Edge Delivery Services Admin-API zuzugreifen oder die Option **LLM erlauben, in meinem Namen auf admin.hlx.page zuzugreifen** [ in den Einstellungen der Konsole.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) nicht aktiviert ist, erstellt der Agent die Dokumentation basierend auf der Code-Basis, auf die er zugreifen kann.
 
 ## Fehlerbehebung {#troubleshooting}
 

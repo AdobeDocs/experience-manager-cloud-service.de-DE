@@ -2,15 +2,14 @@
 title: AEM Sites-Übersetzungs-Tour
 description: Beginnen Sie hier mit einer geführten Tour durch die Übersetzung Ihrer AEM Sites-Inhalte mit den leistungsstarken Übersetzungs-Tools in AEM.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '940'
 ht-degree: 100%
 
 ---
@@ -37,11 +36,11 @@ Wenn Sie wissen möchten, wie Adobe empfiehlt, Geschäftsfälle für Websites mi
 
 ## Zielgruppe {#audience}
 
-Diese Tour richtet sich an die Rolle des Übersetzungsspezialisten, oft auch als Übersetzungsprojektmanager oder TPM (Translation Project Manager) bezeichnet. In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Übersetzung von AEM Sites-Inhalten beschrieben. In der Tour können zusätzliche Rollen definiert werden, mit denen der Übersetzungsspezialist interagieren muss, aber der Blickwinkel für die Tour ist der des Übersetzungsspezialisten.
+Diese Tour richtet sich an die Perona des Übersetzungsspezialisten, oft auch als Übersetzungsprojektmanager oder TPM (Translation Project Manager) bezeichnet. In dieser Tour werden die Anforderungen, Schritte und Ansätze zur Übersetzung von AEM Sites-Inhalten beschrieben. In der Tour können zusätzliche Rollen definiert werden, mit denen der Übersetzungsspezialist interagieren muss, aber der Blickwinkel für die Tour ist der des Übersetzungsspezialisten.
 
 Bei dieser Tour wird davon ausgegangen, dass der Leser Erfahrung mit der Übersetzung von Inhalten in einem großen CMS-System hat, es werden jedoch keine Kenntnisse über AEM vorausgesetzt.
 
-Im Folgenden finden Sie die Rollen, die in dieser Tour interagieren.
+Im Folgenden finden Sie die Personas, die in dieser Tour interagieren.
 
 | Persona | Beschreibung | Rolle in der Tour |
 |---|---|---|
@@ -80,4 +79,4 @@ In diesen zusätzlichen Ressourcen finden Sie weitere Informationen darüber, wi
 * [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) – Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können.
 * [AEM Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) – Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Entwicklungsprojekt nutzen können.
 * [AEM as a Cloud Service – Technische Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de) – Wenn Sie bereits über ein solides Verständnis von AEM und Headless-Technologien verfügen, können Sie direkt unsere ausführlichen technischen Dokumente hinzuziehen.
-* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Programmen auf der Grundlage von AEM Headless behandelt wird.
+* [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) – Wenn Sie es vorziehen, durch praktisches Arbeiten zu lernen, und technisch versiert sind, können Sie unsere nach API und Framework geordneten praktischen Tutorials nutzen, in denen die Erstellung und Verwendung von Anwendungen auf der Grundlage von AEM Headless behandelt wird.

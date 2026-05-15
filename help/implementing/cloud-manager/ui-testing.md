@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 70%
+source-wordcount: '2888'
+ht-degree: 72%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automati
 
 Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[ definierten Konventionen ](#building-ui-tests).
 
 >[!TIP]
 >
@@ -164,7 +164,6 @@ Der Build sollte entweder 0 oder 1 Archiv erzeugen. Wenn kein Archiv erzeugt wir
 Damit Cloud Manager Ihre Benutzeroberflächentests erstellen und ausführen kann, müssen Sie diese Funktion aktivieren, indem Sie eine Datei zu Ihrem Repository hinzufügen.
 
 * Der Dateiname muss `testing.properties` lauten.
-
 * Der Inhalt der Datei muss `ui-tests.version=1` lauten.
 * Die Datei muss sich unter dem Maven-Submodul für Benutzeroberflächentests neben der `pom.xml`-Datei des Submoduls für Benutzeroberflächentests befinden.
 * Die Datei muss sich im Stammverzeichnis der erstellten `tar.gz`-Datei befinden.
@@ -277,7 +276,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 | Empfohlene Dauer | 15m | Adobe empfiehlt, Tests unter diesem Zeitlimit zu belassen. |
 
 * Wenn das Ziel „Autor/Veröffentlichung“ durch IP-Zulassungsauflistung geschützt ist, muss die Testinfrastruktur der Pipeline-Benutzeroberfläche auf die Zulassungsliste gesetzt werden, da andernfalls Benutzeroberflächentests mit 403 Verboten fehlschlagen können.
-Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistungen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistungen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -315,7 +314,7 @@ Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 -->
 
-Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
+Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) ](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Hochladen von Dateien {#upload-files}
 
@@ -334,7 +333,7 @@ Tests müssen manchmal Dateien in das zu testende Programm hochladen. Um die Ber
      * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
      -->
 
-1. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück. 
+1. Wenn der Upload erfolgreich war, gibt die Anfrage eine `200 OK`-Antwort vom Typ `text/plain` zurück.
    * Der Inhalt der Antwort ist ein undurchsichtiges Datei-Handle.
    * Sie können dieses Handle in einem `<input>`-Element anstelle eines Dateipfads verwenden, um das Hochladen von Dateien in Ihrem Programm zu testen.
 

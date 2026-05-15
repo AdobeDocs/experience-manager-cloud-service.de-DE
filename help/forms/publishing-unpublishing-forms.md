@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1341'
 ht-degree: 99%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 Mit [!DNL AEM Forms] können Sie Formulare mühelos erstellen, veröffentlichen und die Veröffentlichung rückgängig machen. Der [!DNL AEM Forms]-Server umfasst zwei Instanzen: die Autoren- und die Veröffentlichungsinstanz. Der Autoreninstanz dient dem Erstellen und Verwalten von Formular-Assets und -Ressourcen. Die Veröffentlichungsinstanz dient der Aufbewahrung von Assets und den zugehörigen Ressourcen, die für Endbenutzende verfügbar sind.
 
-## Unterstützte Assets  {#supported-assets-nbsp}
+## Unterstützte Assets   {#supported-assets-nbsp}
 
 [!DNL AEM Forms] unterstützt die folgenden Asset-Typen:
 
@@ -104,7 +104,7 @@ Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Managem
 
 1. Melden Sie sich beim [!DNL AEM Forms]-Server an.
 1. Wählen Sie **Adobe Experience Manager** in der Menüleiste für globale Navigation aus.
-1. Wählen Sie ![&#x200B; Werkzeuge](assets/tools.png) und dann **Formulare** aus.
+1. Wählen Sie ![ Werkzeuge](assets/tools.png) und dann **Formulare** aus.
 1. Wählen Sie **Correspondence Management Assets veröffentlichen** aus.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
@@ -140,7 +140,7 @@ Führen Sie folgende Schritte aus, um das Datum und die Uhrzeit für die Veröff
    1. Bewegen Sie den Mauszeiger über ein Asset und wählen Sie **[!UICONTROL Veröffentlichung rückgängig machen]**![unpublish](assets/unpublish.png) aus.
    1. Führen Sie einen der folgenden Schritte aus und wählen Sie „Veröffentlichung rückgängig machen“ aus:
 
-      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]**![aem6forms_check-circle](assets/aem6forms_check-circle.png) und dann das Asset aus. Das Asset wird ausgewählt.
+      * Wenn Sie sich in der Kartenansicht befinden, wählen Sie **[!UICONTROL Auswahl eingeben]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und dann das Asset aus. Das Asset wird ausgewählt.
 
       * Wenn Sie sich in der Listenansicht befinden, bewegen Sie den Mauszeiger über ein Asset und wählen Sie ![selectassetcheckmark](assets/selectassetcheckmark.png) aus. Das Asset wird ausgewählt.
 

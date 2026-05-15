@@ -1,5 +1,5 @@
 ---
-title: 'XFA-Unterstützung in XDP-basierten adaptiven Formularen '
+title: XFA-Unterstützung in XDP-basierten adaptiven Formularen
 description: Auflistung unterstützter XFA-Ereignisse, -Eigenschaften, -Skripte und -Validierungen in adaptiven Formularen.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
@@ -10,14 +10,14 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '695'
 ht-degree: 99%
 
 ---
 
-# XFA-Unterstützung in XDP-basierten adaptiven Formularen {#xfa-support-in-xdp-based-adaptive-forms}
+# XFA-Unterstützung in XDP-basierten adaptiven Formularen{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Einführung {#introduction}
 
@@ -53,15 +53,15 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wird, können Sie ei
   </tr>
   <tr>
    <td><p>Listenfeld </p> </td>
-   <td><p>Dropdownliste</p> </td>
+   <td><p>Dropdown-Liste</p> </td>
   </tr>
   <tr>
    <td><p>Datum-/Uhrzeitfeld </p> </td>
    <td><p>Datumsauswahl</p> </td>
   </tr>
   <tr>
-   <td><p>Unterschrift freihändig</p> </td>
    <td><p>Freihändige Unterschrift</p> </td>
+   <td><p>Freihandsignatur</p> </td>
   </tr>
   <tr>
    <td><p>Numerisches Feld </p> </td>
@@ -76,7 +76,7 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wird, können Sie ei
    <td><p>Textfeld</p> </td>
   </tr>
   <tr>
-   <td><p>Kennwortfeld </p> </td>
+   <td><p>Kennwort-Feld </p> </td>
    <td><p>Kennwortfeld</p> </td>
   </tr>
   <tr>
@@ -89,11 +89,11 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wird, können Sie ei
   </tr>
   <tr>
    <td><p>Teilformular </p> </td>
-   <td><p>Bereich</p> </td>
+   <td><p>Bedienfeld</p> </td>
   </tr>
   <tr>
    <td><p>Bereich (Gruppe)</p> </td>
-   <td><p>Bereich</p> </td>
+   <td><p>Bedienfeld</p> </td>
   </tr>
   <tr>
    <td><p>Teilformularsatz </p> </td>
@@ -206,7 +206,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Dieses Skript wird zur Laufzeit ausgeführt und kann im adaptiven Formular nicht überschrieben werden.<br /> </p> </td>
   </tr>
   <tr>
-   <td><p>exit </p> </td>
+   <td><p>Beenden </p> </td>
    <td><p>Dieses Skript wird zur Laufzeit ausgeführt und kann im adaptiven Formular nicht überschrieben werden.</p> </td>
   </tr>
   <tr>

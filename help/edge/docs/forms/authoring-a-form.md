@@ -7,10 +7,10 @@ exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ AEM bietet mehrere Möglichkeiten zum Erstellen interaktiver und ansprechender F
 | **Anforderungen bezüglich Wiederverwendbarkeit** | Werden Teile des Formulars in verschiedenen Formularen oder Projekten wiederverwendet? |
 | **Design-Flexibilität** | Benötigen Sie vollständige Kontrolle über Layout, Designs und Stil? |
 | **Integrationsanforderungen** | Muss das Formular mit Datenmodellen, Workflows oder externen Systemen verbunden werden? |
-| **Benutzerfreundlichkeit**  | Ist die Plattform intuitiv für das technische Kompetenzniveau Ihres Teams? |
+| **Benutzerfreundlichkeit** | Ist die Plattform intuitiv für das technische Kompetenzniveau Ihres Teams? |
 | **Leistung und Skalierbarkeit** | Wird das Formular im großen Maßstab oder in Umgebungen mit hohem Traffic verwendet? |
 | **Omni-Channel-Bereitstellung** | Wird das Formular auf Websites, in mobilen Apps, an Terminals oder auf mehreren Kanälen verwendet? |
 | **Veröffentlichungsflexibilität** | Wo werden die Formulare in AEM, Edge Delivery oder benutzerdefinierten Programmen veröffentlicht? |
@@ -110,6 +110,6 @@ Die folgende Tabelle bietet einen detaillierten Vergleich der wichtigsten Funkti
 ## Verwandte Artikel
 
 - [Dokumentbasiertes Authoring mit Microsoft Excel oder Google Tabellen](/help/edge/docs/forms/create-forms.md)
-- [Universeller Editor zum WYSIWYG-Authoring](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [Universeller Editor für das WYSIWYG-Authoring](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
 - [Erstellen eines adaptiven Formulars (Foundation-Komponenten)](/help/forms/creating-adaptive-form.md)
 - [Erstellen eines adaptiven Formulars (Kernkomponenten)](/help/forms/create-an-adaptive-form.md)

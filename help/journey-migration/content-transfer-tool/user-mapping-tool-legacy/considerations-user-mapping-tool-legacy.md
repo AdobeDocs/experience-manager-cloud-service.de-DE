@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -29,9 +29,9 @@ Die folgenden spezifischen Fälle sind protokolliert:
 
 1. Falls die Benutzenden deaktiviert sind, werden sie ebenso behandelt, als wären sie nicht deaktiviert. Sie werden wie üblich zugeordnet und migriert, bleiben jedoch in der Cloud-Instanz deaktiviert.
 
-1. Falls in der AEM Cloud Service-Zielinstanz eine Person mit demselben Benutzernamen (rep:principalName) wie eine oder einer der Benutzenden in der AEM-Quellinstanz existiert, wird die Person oder Gruppe nicht migriert.
+1. Wenn auf der AEM Cloud Service-Zielinstanz ein Benutzer mit demselben Benutzernamen (rep:principalName) wie einer der Benutzer auf der AEM-Quellinstanz vorhanden ist, wird der Benutzer oder die Gruppe nicht migriert.
 
-1. Wenn Benutzende migriert werden, ohne zunächst über die Benutzerzuordnung zugeordnet zu werden, können sie sich auf dem Cloud-Zielsystem nicht mit ihrer IMS-ID anmelden. Sie können sich gegebenenfalls mit der herkömmlichen AEM-Methode anmelden, jedoch wird dies normalerweise nicht gewünscht oder erwartet.
+1. Wenn Benutzende migriert werden, ohne zunächst über die Benutzerzuordnung zugeordnet zu werden, können sie sich auf dem Cloud-Zielsystem nicht mit ihrer IMS-ID anmelden. Sie können sich gegebenenfalls mit der herkömmlichen AEM-Methode anmelden, jedoch wird dieser Workflow normalerweise nicht gewünscht oder erwartet.
 
 ## Zusätzliche Überlegungen {#additional-considerations}
 

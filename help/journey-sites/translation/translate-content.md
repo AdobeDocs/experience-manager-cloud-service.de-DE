@@ -2,15 +2,14 @@
 title: Inhalte übersetzen
 description: Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Inhalte zu übersetzen.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2535'
 ht-degree: 100%
 
 ---
@@ -33,7 +32,7 @@ Nachdem Ihr Connector und die Übersetzungsregeln eingerichtet sind, führt Sie 
 In diesem Dokument erfahren Sie, wie Sie AEM-Übersetzungsprojekte zusammen mit dem Connector und Ihren Übersetzungsregeln verwenden können, um Inhalte zu übersetzen. Nach dem Lesen dieses Dokuments sollten Sie Folgendes können:
 
 * Verstehen, was ein Übersetzungsprojekt ist.
-* neue Übersetzungsprojekte erstellen können.
+* Neue Übersetzungsprojekte erstellen können.
 * Verwenden Sie Übersetzungsprojekte, um Ihre AEM Sites-Inhalte zu übersetzen.
 
 ## Übersetzungsprojekt erstellen {#creating-translation-project}
@@ -277,7 +276,7 @@ Die menschliche Übersetzung sprengt den Rahmen dieser Tour zur Lokalisierung. W
 
 Nachdem Sie nun diesen Teil der AEM Sites-Übersetzungs-Tour abgeschlossen haben, sollten Sie:
 
-* verstehen, was ein Übersetzungsprojekt ist.
+* Verstehen, was ein Übersetzungsprojekt ist.
 * Neue Übersetzungsprojekte erstellen können.
 * Ihre Inhalte mithilfe von Übersetzungsprojekten übersetzen können.
 

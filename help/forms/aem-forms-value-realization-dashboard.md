@@ -6,10 +6,10 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
-workflow-type: ht
-source-wordcount: '511'
-ht-degree: 100%
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 94%
 
 ---
 
@@ -58,9 +58,9 @@ Mit diesem Dashboard können Sie datengestützte Entscheidungen zu Ihren Formula
 
 Lassen Sie uns diese Ergebnisse in umsetzbare Schritte übersetzen!
 
-* **Wenig Übermittlungen?** Prüfen Sie die Klarheit und Benutzerfreundlichkeit des Formulars. Ist es zu lang oder enthält es verwirrende Fragen? Erwägen Sie eine Überarbeitung für ein besseres Benutzererlebnis.
-* **Hohe Erstellungszeiten?** Unterteilen Sie den Erstellungsprozess. Gibt es unnötige Schritte oder Funktionen, die nicht effektiv genutzt werden? Verwenden Sie zeitsparende Funktionen wie Vorlagen.
-* **Selten genutzte Fragmente?** Stellen Sie sicher, dass Fragmente gut organisiert, durchsuchbar und leicht verständlich sind. Erwägen Sie, die Verwendung von Fragmenten in Ihrem Team zu fördern.
+* **Niedrige Einreichungen?** Überprüfen Sie die Klarheit und Benutzerfreundlichkeit des Formulars. Ist es zu lang oder enthält es verwirrende Fragen? Erwägen Sie eine Überarbeitung für ein besseres Benutzererlebnis.
+* **Hohe Erstellungszeiten?** Schlüsseln Sie den Erstellungsprozess auf. Gibt es unnötige Schritte oder Funktionen, die nicht effektiv genutzt werden? Verwenden Sie zeitsparende Funktionen wie Vorlagen.
+* **Nicht genutzte Fragmente?** Stellen Sie sicher, dass Fragmente gut organisiert, durchsuchbar und leicht verständlich sind. Erwägen Sie, die Verwendung von Fragmenten in Ihrem Team zu fördern.
 
 Durch die Analyse dieser Trends können Sie bessere Formulare erstellen, Zeit bei der Erstellung sparen und wiederverwendbare Komponenten nutzen. Dies führt zu einem reibungsloseren Arbeitsablauf, zufriedeneren Benutzerinnen und Benutzern und letztendlich zu einer höheren Rendite.
 

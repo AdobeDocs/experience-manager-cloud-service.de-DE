@@ -10,17 +10,17 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 99%
+source-wordcount: '2567'
+ht-degree: 85%
 
 ---
 
 # Konfigurieren allgemeiner Einstellungen für Dynamic Media
 
 <!--
- hide: yes
+ hide: true
 hidefromtoc: yes
 -->
 
@@ -57,10 +57,10 @@ Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Op
    * Registerkarte [PDF](#pdf-tab)
    * Registerkarte [Illustrator](#illustrator-tab)
 
-   Seite ![Allgemeine Dynamic Media-Einstellungen](/help/assets/assets-dm/dm-general-settings.png)
-   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**&#x200B;ausgewählt ist.*<br><br>
+   ![ Seite „Allgemeine Dynamic Media-Einstellungen“](/help/assets/assets-dm/dm-general-settings.png)
+   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**ausgewählt ist.*<br><br>
 
-1. Wenn Sie fertig sind, wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus. 
+1. Wenn Sie fertig sind, wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus.
 
 ## Server {#server-general-setting}
 
@@ -104,10 +104,10 @@ Bei dem Effekt „Unscharf maskieren“ werden dieselben Optionen wie im Filter 
 
 | Optionen für „Unscharf maskieren“ | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Stärke]** | Erforderlich.<br>Steuert die auf die Kanten-Pixel angewendete Kontraststärke.<br>Betrachten Sie dies als Intensität des Effekts. Die Werte für „Unscharf maskieren“ unterscheiden sich zwischen Adobe Dynamic Media und Adobe Photoshop. Photoshop bietet einen Bereich von 1 % bis 500 %. In Adobe Dynamic Media liegt der Wertebereich dagegen zwischen `0.0` und `5.0`. Ein Wert von 5,0 in Adobe Dynamic Media entspricht 500 % in Photoshop. Ein Wert von 0,9 entspricht 90 % usw. |
+| **[!UICONTROL Stärke]** | Erforderlich.<br>Es steuert den Kontrastwert, der auf die Kanten-Pixel angewendet wird.<br>Betrachten Sie dies als Intensität des Effekts. Die Werte für „Unscharf maskieren“ unterscheiden sich zwischen Adobe Dynamic Media und Adobe Photoshop. Photoshop bietet einen Bereich von 1 % bis 500 %. In Adobe Dynamic Media liegt der Wertebereich dagegen zwischen `0.0` und `5.0`. Ein Wert von 5,0 in Adobe Dynamic Media entspricht 500 % in Photoshop. Ein Wert von 0,9 entspricht 90 % usw. |
 | **[!UICONTROL Radius]** | Erforderlich.<br>Steuert den Radius des Effekts.<br>Der Wertebereich ist von `0` bis `250`. Der Effekt wird auf alle Pixel in einem Bild angewendet und verbreitet sich in alle Richtungen. Der Radius wird in Pixel gemessen. Um beispielsweise einen ähnlichen Scharfzeichnungseffekt für ein Bild mit 2000 x 2000 Pixel und ein Bild mit 500 x 500 Pixel zu erhalten, legen Sie einen Radius von zwei Pixel auf dem Bild mit 2000 x 2000 Pixel fest. Legen Sie dann einen Radius-Wert von einem Pixel auf dem Bild mit 500 x 500 Pixel fest. Ein größerer Wert wird für ein Bild mit mehr Pixel verwendet. |
-| **[!UICONTROL Schwelle]** | Erforderlich.<br>Beschreibt den Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert wird. Das ist wichtig, damit kein Bildrauschen entsteht, wenn dieser Filter verwendet wird. Der Wertebereich reicht von `0` bis `255`. Diese Werte stehen für die Anzahl der Helligkeitsschritte in einem Graustufenbild. `0`= Schwarz, `128`= 50 % Grau und `255`= Weiß.<br>Zum Beispiel werden bei einem Schwellenwert von `12` geringfügige Abweichungen in der Helligkeit des Hauttons ignoriert, um Bildrauschen zu vermeiden, während der Kantenkontrast in kontrastreichen Bereichen verstärkt wird, wie etwa an Stellen, wo Wimpern auf Haut treffen.<br>Wenn Sie ein Foto von jemandes Gesicht haben, wirkt sich die Unschärfemaske auf die kontrastreichen Teile des Bildes aus. Zum Beispiel, wo Wimpern und Haut sich treffen, was einen offensichtlichen Kontrastbereich schafft, und die glatte Haut selbst. Selbst die glatteste Haut weist geringfügige Änderungen bei den Helligkeitswerten auf. Wenn Sie keinen Schwellenwert verwenden, akzentuiert der Filter diese geringfügigen Änderungen in den Haut-Pixeln. Dadurch entsteht ein verrauschter und unerwünschter Effekt, während der Kontrast an den Wimpern verstärkt und die Schärfe intensiviert wird.<br>Zur Vermeidung dieses Problems wird ein Schwellenwert verwendet, der den Filter anweist, die Pixel zu ignorieren, die den Kontrast nicht wesentlich ändern, beispielsweise bei glatter Haut.<br>Beachten Sie in der weiter oben gezeigten Reißverschlussgrafik die Textur neben dem Reißverschluss. Hier ist Bildrauschen erkennbar, weil die Schwellenwerte zu niedrig waren, um das Bildrauschen zu unterdrücken. |
-| **[!UICONTROL Monochrom]** | Wählen Sie diese Option aus, um die Unschärfemaske auf die Bildhelligkeit (Intensität) anzuwenden.<br>Deaktivieren Sie diese Unteroption, um die Unschärfemaske auf jede Farbkomponente einzeln anzuwenden. |
+| **[!UICONTROL Schwelle]** | Erforderlich.<br>Schwellenwert ist ein Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert wird. Das ist wichtig, damit kein Bildrauschen entsteht, wenn dieser Filter verwendet wird. Der Wertebereich reicht von `0` bis `255`. Diese Werte stehen für die Anzahl der Helligkeitsschritte in einem Graustufenbild. `0`=Schwarz, `128`=50% Grau und `255`=Weiß.<br>Bei einem Schwellenwert von `12` werden geringfügige Abweichungen in der Hauttonhelligkeit ignoriert, um Bildrauschen zu vermeiden, aber trotzdem wird der Kantenkontrast in kontrastreichen Bereichen verstärkt, z. B. wo Wimpern auf Haut treffen.<br>Wenn Sie ein Foto von jemandes Gesicht haben, wirkt sich die Unschärfemaske auf die kontrastreichen Teile des Bildes aus. Zum Beispiel, wo Wimpern und Haut sich treffen, was einen offensichtlichen Kontrastbereich schafft, und die glatte Haut selbst. Selbst die glatteste Haut weist geringfügige Änderungen bei den Helligkeitswerten auf. Wenn Sie keinen Schwellenwert verwenden, akzentuiert der Filter diese geringfügigen Änderungen in den Haut-Pixeln. Dadurch entsteht ein verrauschter und unerwünschter Effekt, während der Kontrast an den Wimpern verstärkt und die Schärfe intensiviert wird.<br>Zur Vermeidung dieses Problems wird ein Schwellenwert verwendet, der den Filter anweist, die Pixel zu ignorieren, die den Kontrast nicht wesentlich ändern, beispielsweise bei glatter Haut.<br>Beachten Sie in der weiter oben gezeigten Reißverschlussgrafik die Textur neben dem Reißverschluss. Hier ist Bildrauschen erkennbar, weil die Schwellenwerte zu niedrig waren, um das Bildrauschen zu unterdrücken. |
+| **[!UICONTROL Monochrom]** | Wählen Sie diese Option aus, um die Unschärfemaske auf die Bildhelligkeit (Intensität) anzuwenden<br>Deaktivieren Sie diese Option, um die Unschärfemaske auf jede Farbkomponente einzeln anzuwenden. |
 
 Siehe auch [Scharfzeichnen von Bildern in Adobe Dynamic Media und Image Server](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=de).
 
@@ -124,7 +124,7 @@ Wenn Sie PostScript (EPS)-Bilddateien hochladen, können Sie diese auf verschied
 | **[!UICONTROL Verarbeitung]** | Wählen Sie „Rastern“, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | **[!UICONTROL Transparenten Hintergrund in gerenderten Bildern beibehalten]** | Dient der Beibehaltung der Hintergrundtransparenz der Datei. |
 | **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
-| **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |
+| **[!UICONTROL Farbraum]** | ・ **[!UICONTROL Automatisch erkennen]** - Behält den Farbraum der Datei bei.<br>・ **[!UICONTROL Immer als RGB]** - Konvertiert in den RGB-Farbraum.<br>・ **[!UICONTROL Immer als CMYK]** - Konvertiert in den CMYK-Farbraum.<br>・ **[!UICONTROL Immer als Graustufen]** - Konvertiert in den Graustufen-Farbraum. |
 
 ### Registerkarte „Photoshop“ {#photoshop-tab}
 
@@ -136,7 +136,7 @@ Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalt
 | **[!UICONTROL Erstellen von Vorlagen]** | Erstellt eine Vorlage aus den Ebenen der PSD-Datei. |
 | **[!UICONTROL Text extrahieren]** | Extrahiert den Text, damit Benutzer den Text in einem Viewer suchen können. |
 | **[!UICONTROL Ebenen auf Hintergrundgröße ausdehnen]** | Erweitert die Größe aufgeteilter Bildebenen auf die Größe der Hintergrundebene. |
-| **[!UICONTROL Ebenenbenennung]** | Erweitert die Größe aufgeteilter Bildebenen auf die Größe der Hintergrundebene.<br>• **[!UICONTROL Ebenenname]**: Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach den zugehörigen Ebenennummern in der PSD-Datei benannt. <br>• **[!UICONTROL Photoshop und Ebenennummer]**: Benennt die Bilder nach den zugehörigen Ebenennummern in der PSD-Datei, wobei die ursprünglichen Ebenennamen ignoriert werden. Bilder werden mit dem Photoshop-Dateinamen und einer angefügten Ebenennummer benannt. Zum Beispiel erhält die zweite Ebene der Datei `Spring Ad.psd` den Namen `Spring Ad_2`, selbst wenn sie in Photoshop keinen Standardnamen hatte. <br>• **[!UICONTROL Photoshop und Ebenenname]**: Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der Ebenennummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Beispielsweise erhält eine Ebene namens `Price Tag` in einer PSD-Datei namens `SpringAd` den Namen `Spring Ad_Price Tag`. Eine Ebene mit dem Standardnamen „Ebene 2“ erhält den Namen `Spring Ad_2`. |
+| **[!UICONTROL Ebenenbenennung]** | Erweitert die Größe aufgeteilter Bildebenen auf die Größe der Hintergrundebene.<br>・ **[!UICONTROL Ebenenname]** - Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach den zugehörigen Ebenennummern in der PSD-Datei benannt. <br>• **[!UICONTROL Photoshop und Ebenennummer]**: Benennt die Bilder nach den zugehörigen Ebenennummern in der PSD-Datei, wobei die ursprünglichen Ebenennamen ignoriert werden. Bilder werden mit dem Photoshop-Dateinamen und einer angefügten Ebenennummer benannt. Zum Beispiel erhält die zweite Ebene der Datei `Spring Ad.psd` den Namen `Spring Ad_2`, selbst wenn sie in Photoshop keinen Standardnamen hatte.<br>・ **[!UICONTROL Photoshop und Ebenenname]** - Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der Ebenennummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Beispielsweise erhält eine Ebene namens `Price Tag` in einer PSD-Datei namens `SpringAd` den Namen `Spring Ad_Price Tag`. Eine Ebene mit dem Standardnamen „Ebene 2“ erhält den Namen `Spring Ad_2`. |
 | **[!UICONTROL Anker]** | Geben Sie an, wie Bilder in Vorlagen, die aus der Komposition der Ebenen aus der PSD-Datei erstellt werden, verankert werden. Der Anker ist standardmäßig zentriert. Ein zentrierter Anker eignet sich am besten zum Auffüllen desselben Raums mit Ersatzbildern, unabhängig vom Seitenverhältnis der Ersatzbilder. Bilder mit einem anderen Seitenverhältnis, die dieses Bild ersetzen, nehmen effektiv denselben Raum ein, wenn auf die Vorlage verwiesen und die Parameterersetzung durchgeführt wird. Wechseln Sie zu einer anderen Einstellung, wenn Ihre Applikation erfordert, dass die Ersatzbilder den zugewiesenen Platz in der Vorlage ausfüllen. |
 
 ### Registerkarte „PDF“ {#pdf-tab}
@@ -147,10 +147,10 @@ Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, die Auflös
 
 | Option „PDF“ | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Verarbeitung]** | • **[!UICONTROL Keine]**: Die PDF wird nicht verarbeitet.<br>• **[!UICONTROL Miniatur]**: Teilt die PDF-Datei in einzelne Seite auf und konvertiert diese in ein Miniaturbild.<br> • **[!UICONTROL Rastern]**: Teilt die PDF-Datei in einzelne Seiten auf und konvertiert Vektorgrafiken in Bitmap-Bilder. Wählen Sie diese Option, um einen E-Katalog zu erstellen. |
-| **[!UICONTROL Extrahieren]** | • **[!UICONTROL Keine]**: Es werden keine Suchbegriffe oder Links aus der PDF-Datei extrahiert.<br>• **[!UICONTROL Suchbegriffe]**: Das System extrahiert Suchbegriffe aus der PDF-Datei, um die Suche nach Schlüsselwörtern in einem E-Katalog-Viewer zu ermöglichen.<br>• **[!UICONTROL Links]**: Extrahiert Links aus den PDF-Dateien und konvertiert die PDF-Dateien in Imagemaps, die in einem E-Katalog-Viewer verwendet werden.<br>• **[!UICONTROL Suchbegriffe und Links]**: Extrahiert Suchbegriffe und Links zur Verwendung in einem E-Katalog-Viewer. |
+| **[!UICONTROL Verarbeitung]** | ・ **[!UICONTROL Keine]** - Die PDF wird nicht verarbeitet.<br>・ **[!UICONTROL Miniatur]** - Teilt die PDF-Datei in einzelne Seite auf und konvertiert diese in ein Miniaturbild.<br> • **[!UICONTROL Rastern]**: Teilt die PDF-Datei in einzelne Seiten auf und konvertiert Vektorgrafiken in Bitmap-Bilder. Wählen Sie diese Option, um einen E-Katalog zu erstellen. |
+| **[!UICONTROL Extrahieren]** | ・ **[!UICONTROL None]** - Es werden keine Suchbegriffe oder Links aus der PDF extrahiert.<br>・ **[!UICONTROL Suchbegriffe]** - Das System extrahiert Suchbegriffe aus der PDF-Datei und ermöglicht so die Keyword-Suche in einem E-Katalog-Viewer.<br>・ **[!UICONTROL Links]** - Extrahiert Links aus den PDF-Dateien und konvertiert sie in Imagemaps, die in einem E-Katalog-Viewer verwendet werden.<br>・ **[!UICONTROL Suchbegriffe und Links]** - Extrahiert Suchbegriffe und Links zur Verwendung in einem E-Katalog-Viewer. |
 | **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
-| **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der PDF-Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |
+| **[!UICONTROL Farbraum]** | ・ **[!UICONTROL Automatisch erkennen]** - Behält den Farbraum der PDF-Datei bei.<br>・ **[!UICONTROL Immer als RGB]** - Konvertiert in den RGB-Farbraum.<br>・ **[!UICONTROL Immer als CMYK]** - Konvertiert in den CMYK-Farbraum.<br>・ **[!UICONTROL Immer als Graustufen]** - Konvertiert in den Graustufen-Farbraum. |
 
 ### Registerkarte „Illustrator“ {#illustrator-tab}
 
@@ -166,4 +166,4 @@ Wenn Sie Illustrator (AI)-Bilddateien hochladen, können Sie diese auf verschied
 | **[!UICONTROL Verarbeitung]** | Wählen Sie „Rastern“, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | **[!UICONTROL Transparenten Hintergrund in gerenderten Bildern beibehalten]** | Dient der Beibehaltung der Hintergrundtransparenz der Datei. |
 | **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
-| **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |
+| **[!UICONTROL Farbraum]** | ・ **[!UICONTROL Automatisch erkennen]** - Behält den Farbraum der Datei bei.<br>・ **[!UICONTROL Immer als RGB]** - Konvertiert in den RGB-Farbraum.<br>・ **[!UICONTROL Immer als CMYK]** - Konvertiert in den CMYK-Farbraum.<br>・ **[!UICONTROL Immer als Graustufen]** - Konvertiert in den Graustufen-Farbraum. |

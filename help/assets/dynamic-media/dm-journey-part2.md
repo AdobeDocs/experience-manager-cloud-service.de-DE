@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 99%
+source-wordcount: '2853'
+ht-degree: 91%
 
 ---
 
@@ -90,8 +89,8 @@ Das Kreativ-Team müsste alle neuen statischen Bilder erneut aufnehmen.
 
 Mit Dynamic Media können Sie jedoch, wenn Sie verschiedene Bildvorgaben haben, diese Bilder überall dort verwenden, wo Sie sie benötigen. Mit den Bildvorgaben werden Standards durchgesetzt.
 
-![Ansatz der primären Datei](/help/assets/dynamic-media/assets/dm-onefile.png)
-_Best Practice: eine Datei mit mehreren Ausgabedarstellungen, z. B. `Search_Grid` und `Thumbnail`, die dynamisch mithilfe von Bildvorgaben erstellt werden._
+![Primärer Dateiansatz](/help/assets/dynamic-media/assets/dm-onefile.png)
+_Best Practice: eine Datei mit mehreren Ausgabedarstellungen, z. B. `Search_Grid` und `Thumbnail`, die dynamisch mithilfe von Bildvorgaben erstellt werden._
 
 | **Wozu dienen Bildvorgaben?** | |
 |---|---|
@@ -119,7 +118,7 @@ Die Bildvorgabe _Medium_ hat eine Breite von 500 Pixel und eine Höhe von 800 Pi
 
 Wenn Sie die Registerkarte **[!UICONTROL Erweitert]** wählen, erhalten Sie Optionen für den Farbraum des Assets. Je nach dem Format, das Sie in der Registerkarte **[!UICONTROL Allgemein]** ausgewählt haben – im obigen Beispiel wurde JPEG ausgewählt – können Sie Assets in RGB, Graustufen oder CMYK bereitstellen. Aus dem Pulldown-Menü **[!UICONTROL Farbprofil]** können Sie auswählen, wie ein CMYK-Bild-Asset zum Drucken bereitgestellt werden soll. Beachten Sie auch, dass es zusätzliche Parameter gibt, die Sie für das Scharfzeichnen Ihrer Bilder anwenden können. In diesem Fall wurde die **[!UICONTROL Unschärfemaske]** angewendet.
 
-![Erstellen einer Bildvorgabe durch Auswahl von Optionen auf der Registerkarte „Erweitert“](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
+![Erstellen einer Bildvorgabe durch Auswahl von Optionen auf der Registerkarte Erweitert](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _Erstellen einer Bildvorgabe durch Auswahl von Optionen auf der Registerkarte „Erweitert“._
 
 Sie erinnern sich, dass Sie in [Anatomie einer Dynamic Media URL](#dm-journey-d) bereits über die Dynamic Media URL gelesen haben und darüber, wie diese aufgebaut ist. In das Textfeld **[!UICONTROL Bildmodifikator]** können Sie alle gewünschten zusätzlichen Bildverarbeitungsparameter eingeben. Wenn Ihre Bilder bereitgestellt werden, werden die Parameter unter Verwendung der Vorgabe in den Vorgabenamen der URL aufgenommen. Im obigen Screenshot wurde der Parameter `bgc=451B15` hinzugefügt. Das heißt, es wurde eine dunkelbraune Hintergrundfarbe hinzugefügt.
@@ -128,8 +127,8 @@ Sie können sich eine Bildvorgabe als Rezept für Ihre Bilder vorstellen. Alle B
 
 Wenn Sie fertig sind, speichern Sie die Vorgabe. Jetzt ist sie für alle Bilder verfügbar, die Sie haben. In diesem Fall möchten Sie die Bildvorgabe _Medium_ auf das Bild einer Schüssel mit flüssiger Schokolade anwenden.
 
-![Anwenden der Bildvorgabe *Medium*, um eine Ausgabedarstellung eines Bildes zu erzeugen](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
-_Anwenden der Bildvorgabe „Medium“, um eine Ausgabedarstellung eines Bildes zu erzeugen._
+![Anwenden der Bildvorgabe *Medium* zum Erzeugen einer Ausgabedarstellung eines Bildes](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
+_Anwenden der Bildvorgabe Medium zum Erzeugen einer Ausgabedarstellung eines Bildes._
 
 Kopieren Sie die URL und fügen Sie sie dann in Ihren Browser ein, um das Erscheinungsbild des Bildes zu überprüfen. [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
 
@@ -147,7 +146,7 @@ _Statische und dynamische Bildvorgaben. Das Bild der Uhr wurde mit der `PDP-page
 Aber was ist, wenn Sie ein Bild auf Ihrer Website ändern müssen? Angenommen, Sie haben einige Tests durchgeführt und festgestellt, dass Sie das Bild von 120 x 120 (die `Cart`-Bildvorgabe) nicht so erhalten, wie Sie dachten. Sie müssen das Bild vergrößern, indem Sie die Breite und die Höhe auf 175 Pixel erhöhen. Traditionell müssten Sie in Adobe Photoshop gehen und all diese Warenkorbbilder neu erstellen. Mit Dynamic Media bearbeiten Sie jedoch einfach die Bildvorgabe, indem Sie die Werte für Breite und Höhe auf 175 ändern und die Vorgabe speichern, wie im folgenden Beispiel gezeigt.
 
 ![Bearbeiten einer Bildvorgabe](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
-_Bearbeiten der Breite und Höhe des `Cart` Bildvorgabe._
+_Bearbeiten der Breite und Höhe der `Cart` Bildvorgabe._
 
 Nachdem Sie Ihre Bildvorgabe geändert und den Cache geleert haben, werden alle Bilder aktualisiert, und alle URLs, die mit dieser Vorgabe verwendet werden, ändern sich _nicht_ mehr. Das bedeutet, dass keine fehlerhaften Links und keine Umleitungen auf Webseiten erforderlich sind.
 
@@ -176,19 +175,19 @@ Sie müssen dem Set einen Namen geben. Wählen Sie den Namen sorgfältig aus, da
 Und hier ist das Bild-Set `Running` in Experience Manager Assets.
 
 ![Das Bildset „Laufen“ in Experience Manager Assets, Kartenansicht](/help/assets/dynamic-media/assets/dm-image-set.png)
-_Das Bildset `Running` in Experience Manager Assets, Kartenansicht._
+_Das `Running` Bildset in Experience Manager Assets, Kartenansicht._
 
 Unabhängig davon, ob Sie ein Bild-Set, ein Set mit gemischten Medien, ein Rotations-Set oder ein anderes interaktives Medium erstellt haben, sollten Sie sehen, wie es nach dem Erstellen des Sets aussieht und sich für einen Kunden verhält. Dynamic Media verfügt über zahlreiche integrierte Viewer, mit denen Sie genau das tun können.
 
 Wählen Sie zunächst das erstellte Bild-Set aus, um es wie im folgenden Beispiel in einer Vorschau zu öffnen.
 
 ![Das Bildset „Laufen“ in der Vorschau, mit ausgewählter Option „Viewer“](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
-_Das Bildset `Running` in der Vorschau, mit ausgewählter Option „Viewer“._
+_Das `Running` Bildset in der Vorschau, mit ausgewählter Option „Viewer“._
 
 Beachten Sie in der Vorschau, dass Sie die Muster für Laufschuhe auswählen und die Schuhe vergrößern und verkleinern können. Um einen Viewer auf das Set anzuwenden, wählen Sie aus dem Pulldown-Menü **[!UICONTROL Viewer]** aus.
 
 ![Das Bildset „Laufen“, auf das der Flyout-Viewer angewendet wurde](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
-_Das Bildset `Running`, auf das der Flyout-Viewer angewendet wurde._
+_Das `Running` Bildset, auf das der Flyout-Viewer angewendet wurde._
 
 In diesem Fall wurde der Viewer `Flyout` ausgewählt. An dieser Stelle können Sie eine Vorschau des Bild-Sets im Viewer anzeigen. Es ist jedoch am besten, es in Ihrem Browser zu sehen, soe wie es auch ein Kunde sieht. Wählen Sie **[!UICONTROL URL]** in der linken unteren Ecke aus, kopieren Sie die URL und fügen Sie sie in Ihren Browser ein. [Probieren Sie es jetzt aus](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
 
@@ -217,7 +216,7 @@ Wenn Sie mehr darüber erfahren möchten, was Sie gerade gelesen haben, nutzen S
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=de) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -228,7 +227,7 @@ _Dynamic Media Help topics_
 _Dynamic Media-Tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=de)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 

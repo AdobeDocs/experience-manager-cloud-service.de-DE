@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 6%
+source-wordcount: '1035'
+ht-degree: 14%
 
 ---
 
@@ -130,7 +130,7 @@ Nach dem Konfigurieren der Entwicklungsumgebung können Sie ein adaptives Formul
 
 * Erstellen eines adaptiven Formulars aus der leeren Vorlage
 * Layout-Felder zum Anzeigen und einfachen Akzeptieren von Informationen.
-* Vorschau des Formulars anzeigen.
+* Zeigen Sie das Formular in einer Vorschau an.
 
 <!-- 
 

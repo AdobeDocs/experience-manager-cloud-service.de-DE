@@ -4,10 +4,10 @@ description: Dynamic Media mit OpenAPI-Funktionen ermöglichen es Ihnen, in Adob
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: video-smartcrop-dmwoapi
-source-git-commit: 8ddd2ade491069e4592becf3b77c04e6bbb2c06a
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 7%
+source-wordcount: '409'
+ht-degree: 8%
 
 ---
 
@@ -48,7 +48,10 @@ Um smartes Zuschneiden für Videos zu aktivieren, konfigurieren Sie das Metadate
 
 Die **Erstellen von Video-**&quot; ist jetzt im Metadatenformular für Video-Assets verfügbar.
 
-![Feld Video-SmartCrop erstellen](/help/assets/assets/video-smartcrop-metadata-field.png)
+<!--
+broken link
+![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## Anwenden von smartem Zuschneiden für Videos auf genehmigte Videos {#apply-video-smart-crops}
 

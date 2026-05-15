@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 1%
+source-wordcount: '912'
+ht-degree: 2%
 
 ---
 
@@ -166,7 +166,7 @@ Formular für Kunden-Feedback senden an:
 1. E-Mail-<support@company.com> mit Formulardetails
 2. POST an CRM-API zur Erstellung eines Kundendatensatzes
 3. Workflow zur Erstellung von Trigger-Support-Tickets
-4. Dankesmail an Kunden senden
+4. Dankesnachricht an Kunden senden
 
 ### Onboarding-Formular für Mitarbeiter
 
@@ -180,7 +180,7 @@ Formular für Kunden-Feedback senden an:
 **Implementierung:**
 Onboarding von Mitarbeitern verarbeiten:
 1. E-Mail-<hr@company.com> mit Mitarbeiterdetails
-2. Hochladen von Dokumenten in den Mitarbeiterordner von SharePoint
+2. Dokumente in den Mitarbeiterordner von SharePoint hochladen
 3. Starten des Onboarding-Workflows in Power Automate
 4. Erstellen von Konten in HR-System, E-Mail und anderen Tools
 
@@ -198,7 +198,7 @@ Lead-Generierung verarbeiten:
 1. POST-Lead-Daten an Marketo-API
 2. Lead-Datensatz in Salesforce erstellen
 3. E-Mail an Vertriebsteam mit Lead-Details
-4. Starten einer automatisierten E-Mail-Pflegesequenz
+4. Automatisierte E-Mail-Pflegesequenz starten
 
 ## Erweiterte Integrationsszenarien
 
@@ -313,7 +313,7 @@ Lead-Generierung verarbeiten:
 Bei Integrationsproblemen:
 
 - Lesen Sie die [Häufig gestellten Fragen zu Forms Experience Builder](forms-experience-builder-frequently-asked-questions.md)
-- Lesen Sie [&#x200B; Erste Schritte &#x200B;](forms-experience-builder-getting-started.md)
+- Lesen Sie [ Erste Schritte ](forms-experience-builder-getting-started.md)
 - Wenden Sie sich an Ihren Systemadministrator, um technische Unterstützung zu erhalten
 - Siehe API-Dokumentation für externe Services
 

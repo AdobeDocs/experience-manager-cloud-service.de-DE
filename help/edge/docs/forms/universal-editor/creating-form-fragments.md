@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Formularfragmente im universellen Editor erst
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1706'
 ht-degree: 100%
 
 ---
@@ -174,7 +174,7 @@ So integrieren Sie ein Formularfragment in Ihr Formular:
 
 1. Klicken Sie auf **[!UICONTROL Auswählen]**.
 
-   Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert. 
+   Das Formularfragment wird als Verweis in das Formular eingefügt und bleibt mit dem eigenständigen Formularfragment synchronisiert.
 
    ![Screenshot, der zeigt, wie das Fragment „Kontaktdetails“ im universellen Editor erfolgreich in ein Mitarbeiterformular integriert wurde und wie Fragmente ihre Struktur beibehalten, wenn sie wiederverwendet werden](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -236,8 +236,8 @@ Auf der Benutzeroberfläche von AEM Forms können Sie mehrere Aktionen für Form
     </tr>
     <!--
     <tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+    <td><p>Add Dictionary</p> </td>
+    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
     </tr>
     -->
     <tr>

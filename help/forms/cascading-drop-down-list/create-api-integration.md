@@ -1,105 +1,105 @@
 ---
-title: API-Integration erstellen
+title: Erstellen einer API-Integration
 description: Verwenden Sie adaptive Formularausdrücke, um automatische Überprüfung und Berechnung hinzuzufügen sowie die Sichtbarkeit eines Abschnitts zu aktivieren oder zu deaktivieren.
 feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 7%
+source-wordcount: '410'
+ht-degree: 100%
 
 ---
 
 
-# API-Integration erstellen
+# Erstellen einer API-Integration
 
-In diesem Tutorial werden zwei API-Integrationen erstellt
+In diesem Tutorial werden zwei API-Integrationen erstellt.
 
-- GetAllCountries gibt eine Liste von Ländern zurück
-- GetChildren - Gibt unmittelbar untergeordnete Elemente des Landes oder Staates zurück, der durch die geonameId repräsentiert wird.
+- GetAllCountries gibt eine Liste von Ländern zurück.
+- GetChildren gibt unmittelbar untergeordnete Elemente des Landes oder der Region zurück, die von der geonameId repräsentiert werden.
 
-## GetAllCountries - API-Integrationskonfiguration
+## GetAllCountries – Konfiguration der API-Integration
 
 - Konfiguration der API-Integration
 
-   - Anzeigename: GetAllCountries → eine Bezeichnung für diese API in Ihrem System.
+   - Anzeigename: GetAllCountries → ein Label für diese API in Ihrem System.
 
-   - API-URL: `https://secure.geonames.org/countryInfoJSON` - der aufrufende Endpunkt.
+   - API-URL: `https://secure.geonames.org/countryInfoJSON` → der aufgerufene Endpunkt.
 
-   - HTTP-Methode: GET - Sie stellen eine einfache GET-Anfrage.
+   - HTTP-Methode: GET → Sie stellen eine einfache GET-Anfrage.
 
-   - Content-Typ: JSON - Antwort wird im JSON-Format erwartet.
+   - Content-Typ: JSON → Antwort wird im JSON-Format erwartet.
 
 - Optionen:
 
-   - Verschlüsselung erforderlich deaktiviert - keine Verschlüsselungsschicht über HTTPS hinaus.
+   - „Verschlüsselung erforderlich“ deaktiviert → keine Verschlüsselungsschicht über HTTPS hinaus.
 
-   - Ausführen beim Client aktiviert - der Aufruf wird vom Client/Browser ausgeführt, nicht Server-seitig.
+   - „Ausführen vom Client“ aktiviert → der Aufruf wird vom Client/Browser ausgeführt, nicht Server-seitig.
 - Authentifizierungstyp
-   - Keine- da die GeoNames-API keine OAuth- oder API-Schlüssel in Kopfzeilen erfordert
+   - Keiner: Da die GeoNames-API keine OAuth- oder API-Schlüssel in Headern erfordert.
 - Eingabe:
-   - Im Eingabeabschnitt wird definiert, was an die API gesendet wird
-   - **username** →: Zeichenfolge, in der Abfrage gesendet, Standard: gbedekar.
-   - Jede Anfrage hängt ?username=gbedekar an die URL an
+   - Im Abschnitt „Eingabe“ wird definiert, was an die API gesendet wird.
+   - **username** → Typ: Zeichenfolge, in der Abfrage gesendet, Standard: gbedekar.
+   - Jede Anfrage hängt „?username=gbedekar“ an die URL an.
 - Ausgabe
    - Die Ausgabe definiert, welche Felder aus der JSON-Antwort extrahiert und verwendet werden sollen.
 Die GeoNames-Antwort sieht wie folgt aus:
 
   ![json-response](assets/geonames-data.png)
-   - Zwei Felder aus dem GeoNames-Array zugeordnet:
+   - Zwei Felder aus dem Array „geonames“ werden zugeordnet:
 
      geonames[*].geonameId → als Zahl
 
-     geonames[*].countryName als Zeichenfolge →
+     geonames[*].countryName → als Zeichenfolge
 
-     Das [*] bedeutet, dass es sich für jedes Land im Array wiederholt.
+     [*] bedeutet, dass es für jedes Land im Array wiederholt wird.
 
 
 
-![Alle Länder](assets/api-integration.png)
+![get-all-countries](assets/api-integration.png)
 
 
 ## GetChildren
 
-GeoNames werden nach den unmittelbar untergeordneten Elementen des Ortes gefragt, dessen geonameId als Abfrageparameter übergeben wird
+GeoNames wird nach den unmittelbar untergeordneten Elementen des Ortes gefragt, dessen geonameId als Abfrageparameter übergeben wird.
 
 - Konfiguration der API-Integration
 
-   - Anzeigename: GetAllCountries → eine Bezeichnung für diese API in Ihrem System.
+   - Anzeigename: GetAllCountries → ein Label für diese API in Ihrem System.
 
-   - API-URL: `https://secure.geonames.org/children` → den aufgerufenen Endpunkt.
+   - API-URL: `https://secure.geonames.org/children` → der aufgerufene Endpunkt.
 
-   - HTTP-Methode: GET → Sie eine einfache GET-Anfrage stellen.
+   - HTTP-Methode: GET → Sie stellen eine einfache GET-Anfrage.
 
-   - Inhaltstyp: JSON-→-Antwort wird im JSON-Format erwartet.
+   - Content-Typ: JSON → Antwort wird im JSON-Format erwartet.
 
 - Optionen:
 
-   - Verschlüsselung erforderlich deaktiviert → keine Verschlüsselungsschicht über HTTPS hinaus.
+   - „Verschlüsselung erforderlich“ deaktiviert → keine Verschlüsselungsschicht über HTTPS hinaus.
 
-   - Ausführen beim Client, → überprüft wurde, ob der Aufruf vom Client/Browser ausgeführt wird, nicht serverseitig.
+   - „Ausführen vom Client“ aktiviert → der Aufruf wird vom Client/Browser ausgeführt, nicht Server-seitig.
 - Authentifizierungstyp
-   - Keine- da die GeoNames-API keine OAuth- oder API-Schlüssel in Kopfzeilen erfordert
+   - Keiner: Da die GeoNames-API keine OAuth- oder API-Schlüssel in Headern erfordert.
 - Eingabe:
-   - Definiert, was an die API gesendet wird
-   - **username** →: Zeichenfolge, in der Abfrage gesendet, Standard: gbedekar.
-   - Jede Anfrage hängt ?username=gbedekar an die URL an
-   - **geonameId** -> Typ: Zeichenfolge. Gibt die untergeordneten Elemente des Landes bzw. Bundeslandes zurück, das durch die geonameId repräsentiert wird
-   - **type** =>String. Wenn auf JSON gesetzt wird, wird die Antwort im JSON-Format zurückgegeben.
+   - Definiert, was an die API gesendet wird.
+   - **username** → Typ: Zeichenfolge, in der Abfrage gesendet, Standard: gbedekar.
+   - Jede Anfrage hängt „?username=gbedekar“ an die URL an.
+   - **geonameId** → Typ: Zeichenfolge. Gibt unmittelbar untergeordnete Elemente des Landes/der Region zurück, die von der geonameId repräsentiert werden.
+   - **type** → Zeichenfolge. Wenn dies auf JSON festgelegt wird, wird die Antwort im JSON-Format zurückgegeben.
 - Ausgabe
    - Definiert, welche Felder aus der JSON-Antwort extrahiert und verwendet werden sollen.
 Die GeoNames-Antwort sieht wie folgt aus:
 
   ![json-response](assets/child-elements-data.png)
-   - Zwei Felder aus dem GeoNames-Array zugeordnet:
+   - Zwei Felder aus dem Array „geonames“ werden zugeordnet:
 
      geonames[*].geonameId → als Zahl
 
-     geoNames[*].name → als Zeichenfolge
+     geonames[*].countryName → als Zeichenfolge
 
-     Das [*] bedeutet, dass es sich für jedes Land im Array wiederholt.
+     [*] bedeutet, dass es für jedes Land im Array wiederholt wird.
 
 
 ![get-children](assets/get-children-api-integration.png)

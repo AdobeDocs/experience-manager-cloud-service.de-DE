@@ -1,14 +1,13 @@
 ---
 title: Integrieren Sie [!DNL AEM Assets] mit [!DNL Figma].
 description: Erfahren Sie, wie Sie [!DNL AEM Assets] mit [!DNL Figma] integrieren, um auf die Assets Ihres Unternehmens in Ihrem  [!DNL Figma] -Design-Workflow zuzugreifen und sie zu verwenden.
-hide: false
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 72%
+source-wordcount: '580'
+ht-degree: 69%
 
 ---
 
@@ -36,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um auf den [!UICONTROL Adobe Experience 
 1. Klicken Sie auf Ihrer [!DNL Figma]-Startseite in der Symbolleiste unten auf der Arbeitsfläche auf **[!UICONTROL Aktionen]** und suchen Sie in der Suchleiste im Dialogfeld nach [!DNL Adobe Experience Manager (AEM) Assets Connector].
 1. Wählen Sie [!DNL Adobe Experience Manager (AEM) Assets Connector] aus, um das Panel [!DNL Adobe Experience Manager (AEM) Assets Connector] anzuzeigen. [Importieren Sie [!DNL AEM] Assets über dieses Panel in Ihre [!DNL Figma] Arbeitsfläche](#import-aem-assets-into-figma-workflow).
    ![Aktionen](/help/assets/assets/actions-on-figma.png)
-Alternativ können Sie über die [!DNL Figma]-Community auf [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) zugreifen, indem Sie auf **[!UICONTROL In … öffnen]** klicken, eine kürzlich erstellte Datei auswählen oder eine neue Datei erstellen und auf **[!UICONTROL Ausführen]** klicken, um das Panel [!DNL Adobe Experience Manager (AEM) Assets Connector] aufzurufen.
+Alternativ können Sie auf die in [!DNL Figma] Community verfügbaren [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) zugreifen, auf **[!UICONTROL Öffnen in…]** klicken, eine aktuelle Datei auswählen oder eine neue Datei erstellen und auf **[!UICONTROL Ausführen]** klicken, um auf das [!DNL Adobe Experience Manager (AEM) Assets Connector] zuzugreifen.
    ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]

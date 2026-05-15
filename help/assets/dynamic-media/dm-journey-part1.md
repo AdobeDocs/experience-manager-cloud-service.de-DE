@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
-ht-degree: 99%
+source-wordcount: '3692'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +48,7 @@ _Teil 2_
 * Bild-Sets, Rotations-Sets und Sets mit gemischten Medien
 
 **_Zielgruppe_**
-Die Zielgruppe, die am besten zu den Lesern dieser Tour passt, sind die folgenden Personen, die noch nicht mit Dynamic Media in Experience Manager vertraut sind:
+Die Zielgruppe, die am besten zu den Lesern dieser Journey passt, sind die folgenden Personen, die noch nicht mit Dynamic Media auf Experience Manager vertraut sind:
 
 * Administrator
 * Geschäftsanalyst
@@ -82,8 +81,8 @@ Diese einzigartige Bereitstellungsmethode stellt sicher, dass unabhängig von Gr
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media stellt dasselbe Primärbild für verschiedene Medien in unterschiedlichen Größen und Formaten bereit](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media stellt sicher, dass unabhängig von Größe und Bandbreite für jeden Bildschirm konsistente, qualitativ hochwertige Erlebnisse bereitgestellt werden._
+![Adobe Dynamic Media liefert dasselbe Primärbild für verschiedene Medien in unterschiedlichen Größen und Formaten](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Adobe Dynamic Media sorgt für konsistente, hochwertige Erlebnisse auf jedem Bildschirm, unabhängig von Größe und Bandbreite._
 
 Wenn Sie weiterlesen, erfahren Sie mehr darüber, warum dieses Konzept der „Einen primären Asset-Datei mit unendlichen Möglichkeiten“ wichtig ist.
 
@@ -145,12 +144,12 @@ Einer der wichtigsten Anwendungsfälle für Dynamic Media ist auch einer der off
 Im Folgenden sehen Sie ein typisches Erlebnis oder eine Webseite. Etwa 90 % einer Seite bestehen aus Rich-Media-Inhalten wie Bildern und Videos, bei denen es sich in der Regel um sehr umfangreiche Dateien handelt.
 
 ![Inhaltsseitengröße](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
-_Inhaltsseitengröße einer typischen Webseite._
+_Inhaltsseitengröße einer typischen Web-Seite._
 
 Die restlichen 10 % sind HTML, CSS-Code und bestimmte Tags. Sie wollen den Umfang der 90 % der Seite optimieren, und Dynamic Media hilft Ihnen dabei. Vorhin haben Sie über das Konzept der _Einen primären Bestandsdatei mit unendlichen Möglichkeiten_ gelesen. Dieser Ansatz trägt wesentlich zur Verringerung der Gesamtseitengröße bei. Die Möglichkeit, ein primäres Asset auf einer Produktdetailseite, einer Miniaturansichtsseite, Ihrem Warenkorb und Ihrem Suchraster zu verwenden, bedeutet eine große Zeitersparnis. Und sie sorgt auch für Konsistenz über Erlebnisse hinweg.
 
-![Ansatz der primären Datei](/help/assets/dynamic-media/assets/dm-onefile.png)
-_Bei der Uhr handelt es sich um eine primäre Asset-Datei, von der jedoch spontan mehrere Ausgabedarstellungen – keine Kopien – erstellt werden._
+![Primärer Dateiansatz](/help/assets/dynamic-media/assets/dm-onefile.png)
+_Bei der Uhr handelt es sich um eine primäre Asset-Datei, von der jedoch spontan mehrere Ausgabedarstellungen - keine Kopien - erstellt werden._
 
 Sehen wir uns die Probleme näher an, die Dynamic Media mit der einen Datei löst, und einige der Lösungen für diesen Ansatz.
 
@@ -165,7 +164,7 @@ Sehen wir uns die Probleme näher an, die Dynamic Media mit der einen Datei lös
 
 Wenn Sie an eine Datei denken, erstellen Sie ein Asset für jede Art von Erlebnis. Sie haben vielleicht ein Ausgangsbild, und dann müssen Sie 20, 30 oder 40 Variationen dieses Bildes erstellen, die Sie schließlich speichern und für deren Speicherung Sie bezahlen müssen.
 
-Dann müssen Sie sicherstellen, dass das richtige Bild verwendet wird, und das kann sich auf Ihre Fähigkeit auswirken, die Konsistenz Ihrer Marken zu gewährleisten.  Und wenn Sie ein Bild nicht finden können, müssen Sie zurückgehen und diese Assets duplizieren.
+Dann müssen Sie sicherstellen, dass das richtige Bild verwendet wird, und das kann sich auf Ihre Fähigkeit auswirken, die Konsistenz Ihrer Marken zu gewährleisten. Und wenn Sie ein Bild nicht finden können, müssen Sie zurückgehen und diese Assets duplizieren.
 
 Mit Dynamic Media können Sie ausgehend von einem Ausgangsbild in Echtzeit Variationen von Bildern erstellen. So können Sie mit diesem primären Asset kreativ sein und müssen nicht ständig mit Ihrem Grafikdesigner oder Fotostudio zusammenarbeiten, um zusätzliche Inhalte zu erstellen. Und das spart Geld und Zeit.
 
@@ -253,17 +252,17 @@ Neben der manuellen Veröffentlichung von Assets können Sie Dynamic Media so ko
 
 Nach dem Hochladen gibt es verschiedene Möglichkeiten, die Ausgabedarstellungen eines Assets in Dynamic Media in der Vorschau anzuzeigen. Die Vorschau von Ausgabedarstellungen kann Ihnen dabei helfen, eine Vorstellung davon zu erhalten, was ein Kunde sieht. Eine gängige Vorschaumethode besteht darin, ein Asset auszuwählen und dann seine Ausgabedarstellungen anzuzeigen, indem Sie eine _Bildvorgabe_ wie im Folgenden auswählen.
 
-![Anzeigen einer Asset-Ausgabedarstellung basierend auf der Bildvorgabe „Groß“](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
-_Vorschau einer Asset-Ausgabedarstellung basierend auf der ausgewählten Bildvorgabe „Groß“. Es wurde auf die Schaltfläche „URL“ geklickt. Der resultierende URL-Pfad enthält den Namen der Bildvorgabe „Groß“ und kann in einer Webseite verwendet werden._
+![Vorschau einer Asset-Ausgabedarstellung basierend auf der Bildvorgabe „Groß“](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+_Anzeigen einer Asset-Ausgabedarstellung basierend auf der ausgewählten Bildvorgabe „Groß“. Es wurde auf die Schaltfläche „URL“ geklickt. Der resultierende URL-Pfad enthält den Namen der Bildvorgabe „Groß“ und kann in einer Webseite verwendet werden._
 
 Die obige URL ist jetzt live! [Jetzt testen](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Eine andere Methode zur Vorschau eines Assets besteht darin, das Bild-Asset auszuwählen und dann eine _Viewer_-Vorgabe zu wählen, wie im Folgenden dargestellt.
 
 ![Vorschau eines Assets basierend auf der Viewer-Vorgabe „Vertikales Licht zoomen“](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_Vorschau eines Assets basierend auf der ausgewählten Viewer-Vorgabe „Vertikales Licht zoomen“. Der Mauszeiger (`+`) wurde über die Uhr bewegt, um hineinzuzoomen. Beachten Sie die Schaltflächen „URL“ und „Einbetten“._
+_Vorschau eines Assets basierend auf der ausgewählten Viewer-Vorgabe „ZoomVertical_light“. Der Mauszeiger (`+`) wurde über die Uhr bewegt, um hineinzuzoomen. Beachten Sie die Schaltflächen „URL“ und „Einbetten“._
 
-Die obige Ausgabedarstelleung ist jetzt live! [Jetzt testen](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
+Die obige Ausgabedarstelleung ist jetzt live! [Probieren Sie es jetzt aus](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Optional – Weitere Informationen
 
@@ -287,7 +286,7 @@ _Dynamic Media Help topics_
 _Dynamic Media-Tutorials_
 
 * [Verwenden von Dynamic Media mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=de)
-* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
+* [Adobe Experience Manager-Inhaltsbibliothek](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager) (Suche in _Dynamic Media_)
 
 _Dynamic Media-Viewer_
 

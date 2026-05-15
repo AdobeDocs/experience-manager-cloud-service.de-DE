@@ -7,10 +7,10 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 99%
+source-wordcount: '1530'
+ht-degree: 98%
 
 ---
 
@@ -143,7 +143,7 @@ Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Me
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Voraussetzungen {#prereqs-dynamic-media-delivery-reports}
@@ -153,7 +153,7 @@ Sie sollten über eine Dynamic Media-Lizenz verfügen, um diesen Bericht zu erst
 >[!IMPORTANT]
 > 
 >* Berichte werden für Assets bereitgestellt, die über Dynamic Media geliefert werden.
->* Berichte werden für die ersten 1 Million Zeilen erstellt. Wenn Sie alle Dateien innerhalb dieses Limits erfassen möchten, können Sie für kleinere Ordner die Referrer-Spalte mit einbeziehen.
+>* Berichte werden für die erste Million Zeilen generiert. Um alle Dateien innerhalb dieses Limits zu erfassen, sollten Sie die Referrer-Spalte für kleinere Ordner einbeziehen.
 >* Berichte können nur für die letzten 3 Monate erstellt werden.
 
 ### Erstellen eines Dynamic Media-Bereitstellungsberichts{#create-dynamic-media-delivery-report}

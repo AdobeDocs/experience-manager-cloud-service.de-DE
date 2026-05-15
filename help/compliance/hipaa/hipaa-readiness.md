@@ -2,11 +2,12 @@
 title: HIPAA-Bereitschaft für Adobe Experience Manager as a Cloud Service
 description: Erfahren Sie mehr über die Unterstützung von Experience Manager as a Cloud Service für die HIPAA-Vorschriften und darüber, wie Sie sie bei der Implementierung eines neuen AEM as a Cloud Service-Projekts einhalten können.
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 6%
 >* [HIPAA und Adobe Produkte und Services](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) im Adobe Trust Center
 >* [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html)
 
-Für Adobe Experience Manager (AEM) as a Cloud Service stellt Adobe Dokumentationen bereit, die Ihnen dabei helfen, die HIPAA-Bereitschaft zu verstehen. Dies kann Ihnen helfen, diese Vorschriften einzuhalten.
+Für Adobe Experience Manager (AEM) as a Cloud Service stellt Adobe Dokumentationen bereit, die Ihnen dabei helfen, die HIPAA-Bereitschaft zu verstehen. Dies kann Ihnen dabei helfen, diese Vorschriften einzuhalten.
 
 ## Health Insurance Portability and Accountability Act (HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -33,11 +34,11 @@ Für Adobe Experience Manager (AEM) as a Cloud Service stellt Adobe Dokumentatio
 
 Die HIPAA-Regeln für Datenschutz, Sicherheit und Verletzungsbenachrichtigung legen wichtige Schutzbestimmungen für individuell identifizierbare Gesundheitsinformationen fest, die als geschützte Gesundheitsinformationen (Protected Health Information, PHI) bezeichnet werden.
 
-Unter HIPAA ist eine abgedeckte Stelle ein Gesundheitsdienstleister, ein Gesundheitsplan oder eine Clearingstelle für Gesundheitsdienstleistungen. Ein Geschäftspartner ist eine Einheit, die Dienstleistungen für eine abgedeckte Einheit erbringt, die Zugang zu PHI beinhaltet. Die HIPAA-Datenschutz- und Sicherheitsvorschriften verlangen, dass ein abgedecktes Unternehmen schriftliche Zusicherungen von einem Geschäftspartner in Form einer Geschäftspartnervereinbarung (Business Associate Agreement, BAA) erhält, in der der Geschäftspartner verpflichtet ist, die Privatsphäre und Sicherheit des PHI des abgedeckten Unternehmens zu schützen.
+Unter HIPAA ist eine abgedeckte Stelle ein Gesundheitsdienstleister, ein Gesundheitsplan oder eine Clearingstelle für Gesundheitsdienstleistungen. Ein Geschäftspartner ist eine Einheit, die Dienstleistungen für eine abgedeckte Einheit erbringt, die Zugang zu PHI beinhaltet. Die HIPAA-Datenschutz- und Sicherheitsvorschriften verlangen, dass ein abgedecktes Unternehmen schriftliche Zusicherungen von einem Geschäftspartner in Form einer Geschäftspartnervereinbarung (Business Associate Agreement, BAA) erhält, die den Geschäftspartner verpflichtet, die Privatsphäre und Sicherheit des PHI des abgedeckten Unternehmens zu schützen.
 
 ### Bereitstellen von PHI für Adobe {#providing-phi-to-adobe}
 
-Adobe fungiert als Business Associate für seine HIPAA-fähigen Services, die unter [HIPAA-Bereitschaft von Services in AEM as a Cloud Service&quot; aufgeführt &#x200B;](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
+Adobe fungiert als Business Associate für seine HIPAA-fähigen Services, die unter [HIPAA-Bereitschaft von Services in AEM as a Cloud Service&quot; aufgeführt ](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
 
 Kunden, die einen Adobe HIPAA-fähigen Service zur Verarbeitung von PHI lizenzieren **müssen** über die richtige Lizenz verfügen und einen unterzeichneten BAA mit Adobe besitzen.
 
@@ -91,7 +92,7 @@ In der folgenden Tabelle wird beschrieben, welche AEM-Services HIPAA-fähig sind
 | AEM Forms | AEM Forms, Authentication Facade Service, PDF Utility-Service | HIPAA-fähig |
 | AEM CIF | Commerce Integration Framework | Nicht HIPAA-fähig |
 | AEM Cloud Manager | AEM Cloud Manager, Release Orchestrator, Release-Umschalter, Release-Validator | HIPAA-fähig |
-| AEM Cloud Manager | Software-Verteilung | Nicht HIPAA-bereit<br>[1] Kann einem erweiterten Sicherheitsprogramm hinzugefügt werden, wenn kein PHI eingeführt wird. |
+| AEM Cloud Manager | Software Distribution | Nicht HIPAA-bereit<br>[1] Kann einem erweiterten Sicherheitsprogramm hinzugefügt werden, wenn kein PHI eingeführt wird. |
 |   |   |   |
 | AEM Guides  | AEM Guides  | Nicht HIPAA-fähig |
 |   |   |   |
@@ -115,7 +116,7 @@ Beim Kauf von Extended Security for Healthcare besteht die Anforderung, dass:
 * Für jedes Produkt wurde ein erweiterter Schutz für *erworben* wodurch eine ausreichende Anzahl von Cloud Manager-Credits sichergestellt wird.
 * Erweiterte Sicherheit für das Gesundheitswesen wird zum Zeitpunkt der Programmerstellung angewendet.
 
-Wenn die Anforderungen erfüllt sind, kann die erweiterte Sicherheit für das Gesundheitswesen bei der Erstellung des AEM-Programms angewendet werden. Weitere Informationen finden [&#x200B; unter &quot;](#setup)&quot;.
+Wenn die Anforderungen erfüllt sind, kann die erweiterte Sicherheit für das Gesundheitswesen bei der Erstellung des AEM-Programms angewendet werden. Weitere Informationen finden [ unter &quot;](#setup)&quot;.
 
 >[!NOTE]
 >
@@ -132,10 +133,10 @@ Das bedeutet, dass Sie:
 
 Die folgende Tabelle zeigt, wo die Umgebungstypen als HIPAA-fähig unterstützt werden können.
 
-| | RDE | Entw. | Etappe  | prod |
+| | RDE | Entw | Staging  | prod |
 | --- | --- | --- | --- | --- |
 | Umgebungstyp  | Nein  | Nein  | Nein  | Ja  |
 
-## Einrichtung {#setup}
+## Setup {#setup}
 
 Beim [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) bietet die Registerkarte [Sicherheit“ die Optionen zum Aktivieren des HIPAA-Schutzes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security).

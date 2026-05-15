@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '839'
 ht-degree: 100%
 
 ---
@@ -129,4 +129,4 @@ Gehen Sie wie folgt vor, um den Prozess „Benutzerzuordnung“ fortzusetzen:
 
    Sobald der Prozess der Benutzerzuordnung abgeschlossen ist, wird der **Status** für diese spezifische Konfiguration als **BEENDET** angegeben.
 
-   ![Bild](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

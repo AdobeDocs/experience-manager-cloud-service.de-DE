@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 24%
+source-wordcount: '1469'
+ht-degree: 19%
 
 ---
 
@@ -84,11 +84,11 @@ Nutzen Sie umfassende Geschäftsklassifizierungen und professionelle Daten für 
 
 **Branchen- und Geschäftsentitätstypen:**
 
-    Füge ein Feld für die Branchenklassifizierung mit NAICS-Codes hinzu
-    Erstelle eine Dropdown-Liste der Typen von Geschäftseinheiten (LLC, Corporation, Partnerschaft usw.)
-    Füge ein Feld für Unternehmensgrößenkategorien hinzu (Startup, KMU, Unternehmen)
-    Füge eine Abteilungsauswahl für große Organisationen hinzu
-    Füge ein Feld für Typen professioneller Dienstleistungen hinzu
+    Feld für die Branchenklassifizierung mit NAICS-Codes hinzufügen
+    Erstellen Sie eine Dropdown-Liste der Typen von Geschäftseinheiten (LLC, Corporation, Partnerschaft usw.)
+    Feld für die Kategorien der Unternehmensgröße (Start, KMU, Unternehmen)
+    Abteilungsauswahl für große Organisationen einbeziehen
+    Feld für professionelle Servicetypen hinzufügen
 
 **Beispielaufforderungen:**
 

@@ -2,15 +2,14 @@
 title: Veröffentlichen übersetzter Inhalte
 description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1340'
 ht-degree: 100%
 
 ---
@@ -98,7 +97,7 @@ Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für
 
 ### Aktualisieren eines automatisch erstellten Übersetzungsprojekts {#updating-automatic-project}
 
-1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**.  Beachten Sie, dass Inhalte in AEM unter `/content` gespeichert werden.
+1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Inhalte in AEM unter `/content` gespeichert werden.
 1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall haben wir `/content/wknd/en` ausgewählt.
 1. Wählen Sie die Leistenauswahl aus und zeigen Sie das Bedienfeld **Verweise** an.
 1. Wählen Sie **Sprachkopien** aus.

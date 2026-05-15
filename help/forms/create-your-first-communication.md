@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 53%
+source-wordcount: '772'
+ht-degree: 56%
 
 ---
 
@@ -69,7 +69,7 @@ Der Editor für interaktive Kommunikation bietet mehrere vorkonfigurierte Vorlag
 
 ## Schritt 5: Erstellen Sie interaktive Kommunikation
 
-Nachdem Sie alle Bausteine wie Formulardatenmodell, Dokumentfragmente und Vorlagen für die Web-Version erstellt haben, können Sie mit dem Erstellen einer interaktiven Kommunikation beginnen. So erstellen Sie eine interaktive Kommunikation:
+Nachdem Sie alle Bausteine wie Formulardatenmodell, Dokumentfragmente und Vorlagen für die Web-Version erstellt haben, können Sie mit der Erstellung einer interaktiven Kommunikation beginnen. So erstellen Sie eine interaktive Kommunikation:
 
 1. Melden Sie sich bei Ihrer AEM Forms as a Cloud Service-Umgebung an.
 1. Wechseln Sie zu Forms > Forms und Dokumente

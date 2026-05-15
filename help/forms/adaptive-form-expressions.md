@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 99%
+source-wordcount: '2738'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Ver
 
 **Rückgabetyp**: Der Ausdruck gibt einen Wert zurück, der mit dem Feld kompatibel ist, in dem das Ausdrucksergebnis angezeigt wird (z. B. eine Dezimalzahl).
 
-**Beispiel**: Zum Anzeigen der Summe zweier Felder in **field1** lautet der Berechnungsausdruck wie folgt:
+**Beispiel**: Zum Anzeigen der Summe zweier Felder in &quot;**1“** der Berechnungsausdruck:
 `field2.value + field3.value`
 
 ### Ausdruck für ein Klickereignis {#click-expression}
@@ -99,7 +99,7 @@ Das Initialisierungsskript wird ausgelöst, wenn ein adaptives Formular initiali
 
 **Rückgabetyp**: Der Ausdruck für das Initialisierungsskript gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Damit in einem Szenario mit vorausgefüllten Daten Felder, deren Wert als null gespeichert ist, mit dem Standardwert `'Adaptive Forms'` aufgefüllt werden, lautet der Ausdruck für das Initialisierungsskript wie folgt:
+**Beispiel** Um in einem Szenario mit vorausgefüllten Daten Felder mit Standardwerten zu füllen, `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Ausdruck für das Initialisierungsskript wie folgt:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Ausdruck für Optionen {#options-expression}
@@ -156,7 +156,7 @@ Das Skript zum Bestätigen von Werten wird in folgenden Fällen ausgelöst:
 
 **Rückgabetyp**: Der Ausdruck für das Skript zum Bestätigen von Werten gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Um kleingeschriebene Buchstaben nach Eingabe in das Feld zu Großbuchstaben zu ändern, sieht der Ausdruck für das Bestätigen von Werten wie folgt aus:
+**Beispiel** Um kleingeschriebene Buchstaben nach Eingabe in das Feld zu Großbuchstaben zu ändern, sieht der Ausdruck für das Bestätigen von Werten wie folgt aus:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -224,7 +224,7 @@ GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven F
 
 * Zum Validieren eines adaptiven Formulars oder seiner spezifischen Bereiche verwenden Sie `guideBridge.validate(errorList, somExpression).`
 
-#### Verwenden von GuideBridge außerhalb von Ausdrücken  {#using-guidebridge-outside-expressions-nbsp}
+#### Verwenden von GuideBridge außerhalb von Ausdrücken  {#using-guidebridge-outside-expressions-nbsp}
 
 Sie können die GuideBridge-APIs auch außerhalb von Ausdrücken verwenden. So können Sie die GuideBridge-API beispielsweise dazu verwenden, die Kommunikation zwischen der Seiten-HTML, in der das adaptive Formular integriert ist, und dem Formularmodell festzulegen. Darüber hinaus können Sie den Wert festlegen, der aus einem übergeordneten Element des iFrame kommt, in dem das Formular integriert ist.
 
@@ -279,7 +279,7 @@ Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster fü
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox* fest.
 
 1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der Eigenschaft `guideComponentType`*fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+``
 1. Sie können ein benutzerspezifisches Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen (z. B. `pattern1`) hinzu und legen Sie ihren Wert auf das Muster fest, das Sie hinzufügen möchten. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
 
    ![Erstellen benutzerspezifischer Muster für Felder in CrxDe](assets/creating-custom-patterns.png)

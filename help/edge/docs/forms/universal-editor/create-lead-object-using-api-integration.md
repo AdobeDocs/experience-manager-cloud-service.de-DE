@@ -9,10 +9,10 @@ exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 89%
 
 ---
 
@@ -61,11 +61,11 @@ Definieren Sie die Eingabeparameter für den API-Aufruf und ordnen Sie die Ausga
 
 ## Erstellen eines Formulars
 
-Erstellen Sie ein einfaches adaptives Formular mit dem universellen Editor, um die Details zum Lead-Objekt wie unten gezeigt zu erfassen.
+Erstellen Sie ein einfaches adaptives Formular mit dem universellen Editor, um die Details zum Lead-Objekt zu erfassen, wie unten gezeigt
 ![lead-object-form](assets/create-lead.png)
 
-Verwalten Sie das Klickereignis im Kontrollkästchen „Lead erstellen“ mithilfe des Regeleditors. Ordnen Sie die Eingabeparameter wie unten dargestellt den Werten der entsprechenden Formularobjekte zu. Die ID des neu erstellten Lead-Objekts wird im TextField-Objekt `leadid` angezeigt.
-![rule-editor](assets/create-leade-rule-editor.png)
+Verwalten Sie das Klickereignis im Kontrollkästchen „Lead erstellen“ mithilfe des Regeleditors. Ordnen Sie die Eingabeparameter wie unten dargestellt den Werten der entsprechenden Formularobjekte zu. Zeigt die ID des neu erstellten Lead-Objekts im `leadid` TextField-Objekt an
+![Regel-Editor](assets/create-leade-rule-editor.png)
 
 ## Testen der Integration
 

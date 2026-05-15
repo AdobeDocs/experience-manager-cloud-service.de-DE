@@ -10,9 +10,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1151'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ Der Artikel verwendet ein Beispiel, um zu veranschaulichen, wie Sie das adaptive
 
 Nachdem Sie das Paket hochgeladen haben, können Sie diese Assets in der [!DNL AEM Forms]-Benutzeroberfläche anzeigen.
 
-Installieren Sie das Paket mit dem Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
+Installieren Sie das Paket mit dem Paket-Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Das Paket enthält die folgenden Assets:
 
@@ -140,4 +140,4 @@ Das gelöschte Feld wird außerdem mit einem Symbol gekennzeichnet, um einen Feh
 
 Inhaltspaket für das Beispiel in diesem Artikel
 
-[Datei laden](assets/sample-xfa-af-sync-1.0.zip)
+[Datei abrufen](assets/sample-xfa-af-sync-1.0.zip)
