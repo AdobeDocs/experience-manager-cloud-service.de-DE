@@ -7,10 +7,9 @@ discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 feature: Adaptive Forms
 role: User
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 99%
@@ -104,7 +103,7 @@ Führen Sie nun die folgenden Schritte aus, um sämtliche Correspondence Managem
 
 1. Melden Sie sich beim [!DNL AEM Forms]-Server an.
 1. Wählen Sie **Adobe Experience Manager** in der Menüleiste für globale Navigation aus.
-1. Wählen Sie ![&#x200B; Werkzeuge](assets/tools.png) und dann **Formulare** aus.
+1. Wählen Sie ![ Werkzeuge](assets/tools.png) und dann **Formulare** aus.
 1. Wählen Sie **Correspondence Management Assets veröffentlichen** aus.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)

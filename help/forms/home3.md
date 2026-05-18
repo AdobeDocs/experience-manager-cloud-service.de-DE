@@ -6,11 +6,10 @@ keywords: AEM Forms, digitale Formulare, Formular-Builder, adaptive Formulare, F
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
-hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1990'
 ht-degree: 2%
@@ -309,7 +308,7 @@ Wählen Sie Ihren Ausgangspunkt basierend auf Ihren unmittelbaren Anforderungen 
 
 ### Schnellstart zur Datenintegration {#integration-start}
 
-**Für mehrere Datenquellen:** Mit ([) &#x200B;](/help/forms/create-form-data-models.md)
+**Für mehrere Datenquellen:** Mit ([) ](/help/forms/create-form-data-models.md)
 
 **Für Salesforce CRM:** Mit [Salesforce-Connector beginnen](/help/forms/configure-salesforce.md)
 

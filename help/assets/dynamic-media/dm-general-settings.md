@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 85%
@@ -21,7 +21,6 @@ ht-degree: 85%
 
 <!--
  hide: true
-hidefromtoc: yes
 -->
 
 {{work-with-dynamic-media}}
@@ -57,8 +56,8 @@ Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Op
    * Registerkarte [PDF](#pdf-tab)
    * Registerkarte [Illustrator](#illustrator-tab)
 
-   ![&#x200B; Seite „Allgemeine Dynamic Media-Einstellungen“](/help/assets/assets-dm/dm-general-settings.png)
-   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**&#x200B;ausgewählt ist.*<br><br>
+   ![ Seite „Allgemeine Dynamic Media-Einstellungen“](/help/assets/assets-dm/dm-general-settings.png)
+   *Seite „Allgemeine Dynamic Media-Einstellungen“, auf der die Registerkarte **[!UICONTROL Bildbearbeitung]**ausgewählt ist.*<br><br>
 
 1. Wenn Sie fertig sind, wählen Sie in der rechten oberen Ecke der Seite **[!UICONTROL Speichern]** aus.
 

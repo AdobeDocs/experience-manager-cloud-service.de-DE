@@ -4,11 +4,10 @@ description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Forms Exp
 feature: Edge Delivery Services
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 1%
@@ -232,7 +231,7 @@ Ja, Sie können verschiedene Aspekte konfigurieren:
 
 Für zusätzliche Unterstützung:
 
-- Weitere Informationen finden [&#x200B; im Handbuch „Erste Schritte](forms-experience-builder-getting-started.md)
+- Weitere Informationen finden [ im Handbuch „Erste Schritte](forms-experience-builder-getting-started.md)
 - Lesen Sie das [Bereitstellungs- und Konfigurationshandbuch](deploy-forms-experience-builder.md)
 - Wenden Sie sich an Ihren Systemadministrator
 - Wenden Sie sich bei technischen Problemen an den Adobe-Support

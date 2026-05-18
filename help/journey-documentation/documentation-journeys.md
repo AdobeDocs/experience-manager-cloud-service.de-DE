@@ -2,10 +2,9 @@
 title: AEM-Dokumentations-Touren
 description: Dokumentations-Touren bieten eine erzählerische Struktur innerhalb der AEM-Dokumentation, indem sie komplexe und ungleiche Funktionen miteinander verbinden, um ein Geschäftsziel auf eine bewährte Weise zu lösen. Die Touren sind für AEM-Anfänger entwickelt worden und stellen die Konzepte und Features von A bis Z vor, die geeignet sind, um ein Ziel zu erreichen.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
-hidefromtoc: true
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 99%

@@ -6,9 +6,8 @@ feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
 hide: true
-hidefromToC: true
 index: false
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 14%
@@ -23,8 +22,8 @@ Die JWT-Server-zu-Server-Authentifizierung in AEM Forms, insbesondere für Serve
 
 Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Stellen Sie sicher, dass Sie Zugriff auf die für [&#128279;](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) verwendete Umgebung spezifische Adobe Cloud Manager haben.
-* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Stellen Sie sicher, dass Sie Zugriff auf die für ](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) verwendete Umgebung spezifische [Adobe Cloud Manager haben.
+* Weisen Sie die Rolle [Systemadministrator oder Entwickler“ zu, um auf Adobe Cloud Manager zuzugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Wie wird ein Zugriffs-Token mit JWT-Anmeldeinformationen generiert?
 

@@ -1,11 +1,10 @@
 ---
 title: Erstellen von Zugriffs-Token für Server-seitige APIs (Legacy)
 description: Erfahren Sie, wie Sie durch Generieren eines sicheren JWT-Tokens die Kommunikation zwischen einem Drittanbieter-Server und AEM as a Cloud Service ermöglichen.
-hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 95%
@@ -22,7 +21,7 @@ Der Server-zu-Server-Fluss wird unten beschrieben, zusammen mit einem vereinfach
  ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
 -->
 
 ## Der Server-zu-Server-Fluss {#the-server-to-server-flow}
@@ -79,7 +78,7 @@ Die Nicht-AEM-Anwendung, die Aufrufe an AEM sendet, sollte in der Lage sein, auf
 
 Verwenden Sie die Anmeldeinformationen, um ein JWT-Token in einem Aufruf an den IMS-Service von Adobe zu erstellen und ein Zugriffs-Token abzurufen, das 24 Stunden gültig ist.
 
-Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository[&#128279;](https://github.com/adobe/aemcs-api-client-lib) von Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
+Die AEM CS-Service-Anmeldeinformationen können mithilfe von hierfür entwickelten Code-Beispielen gegen ein Zugriffstoken eingetauscht werden. Beispielcode ist im öffentlichen GitHub-Repository](https://github.com/adobe/aemcs-api-client-lib) von [Adobe verfügbar, das Code-Beispiele enthält, die Sie kopieren und für Ihre eigenen Projekte anpassen können. Beachten Sie, dass dieses Repository Beispiel-Code für Referenzzwecke enthält und nicht als produktionsbereite Bibliotheksabhängigkeit gepflegt wird.
 
 ```
 /*jshint node:true */

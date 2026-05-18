@@ -1,12 +1,11 @@
 ---
 title: Erstellen der Inhaltsstruktur für Ihre App
 description: Erfahren Sie, wie Sie AEM Inhaltsfragmentmodelle verwenden können, um Ihre Inhaltsstruktur zu erstellen, die als Grundlage für Ihren Headless Content dient.
-hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 100%
@@ -25,7 +24,7 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Modellkonsole starten"
 >abstract="Sehen wir uns an, wie Sie ein wiederverwendbares Schema, ein sogenanntes Inhaltsfragmentmodell, für Ihre Inhalte in Adobe Experience Manager as a Cloud Service erstellen. Sehen Sie sich das Video an, um zu verstehen, warum dieser Schritt wichtig ist. <br><br>In diesem Lernmodul wird eine Reise-Website als Beispiel verwendet und Schritt für Schritt die Erstellung eines Modells für eine Reise erläutert.<br><br>Starten Sie dieses Modul auf einer neuen Registerkarte, indem Sie auf die Schaltfläche unten klicken und dieser Anleitung folgen."
->additional-url="https://video.tv.adobe.com/v/3436549?captions=ger" text="Einführungsvideo zu Inhaltsstrukturen"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="Einführungsvideo zu Inhaltsstrukturen"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"

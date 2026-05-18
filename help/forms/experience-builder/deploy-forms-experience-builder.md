@@ -3,11 +3,10 @@ title: Bereitstellen und Konfigurieren von Forms Experience Builder
 description: Erfahren Sie, wie Sie mit Forms Experience Builder Formulare mit progressiver Offenlegung für alle Benutzertypen erstellen und verwalten können
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 74%
@@ -46,7 +45,7 @@ Ihr Einrichtungsprozess hängt von Ihrer AEM Forms-Implementierung ab. Wählen S
 
 **Für Edge Delivery Services**
 
-Wenn Sie Edge Delivery Services Forms verwenden und hauptsächlich den universellen Editor verwenden. [Bereiten Sie Ihr Projekt für Edge Delivery Services Forms &#x200B;](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md). Dies ist eine einmalige Einrichtung zum Aktivieren von Forms Experience Builder.
+Wenn Sie Edge Delivery Services Forms verwenden und hauptsächlich den universellen Editor verwenden. [Bereiten Sie Ihr Projekt für Edge Delivery Services Forms ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md). Dies ist eine einmalige Einrichtung zum Aktivieren von Forms Experience Builder.
 
 **Für Formulare, die auf Kernkomponenten basieren**
 

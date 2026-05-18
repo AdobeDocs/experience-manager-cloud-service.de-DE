@@ -4,10 +4,9 @@ description: Erfahren Sie, wie Sie E-Mail-Vorlagen mit adaptiven Formularen verw
 feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 13%
@@ -36,7 +35,7 @@ Im Folgenden finden Sie einen kurzen Überblick über die erforderlichen Schritt
 
 ## Konfigurieren einer HTML-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) &#x200B;](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer HTML-Vorlage:
 
 ### Option 1: Eine Datei mit der HTML-Vorlage auswählen
 
@@ -66,7 +65,7 @@ Ihre HTML-Vorlage ist jetzt für das adaptive Formular konfiguriert.
 
 ## Konfigurieren einer Nur-Text-Vorlage für ein adaptives Formular
 
-Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) &#x200B;](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
+Sie können ein adaptives Formular so einrichten, dass eine E-Mail beim Senden gesendet wird, indem Sie die Übermittlungsaktion [**E-Mail**) ](/help/forms/configure-submit-action-send-email.md). Die Aktion bietet zwei Methoden zum Konfigurieren einer Nur-Text-Vorlage:
 
 ### Option 1: Wählen Sie eine Datei aus, die die Vorlage enthält
 
@@ -161,4 +160,4 @@ Im Folgenden finden Sie ein Beispiel für eine Nur-Text-E-Mail-Vorlage:
 * Verwenden Sie Tools wie Litmus oder Email on Acid, um eine Vorschau Ihrer E-Mail über verschiedene E-Mail-Clients hinweg anzuzeigen.
 * Stellen Sie sicher, dass die Platzhalternamen genau mit den Formularfeldnamen übereinstimmen.
 * Prüfen Sie Ihre HTML-Vorlage auf fehlende oder falsche Tags.
-* Überprüfen Sie, ob [&#x200B; Übermittlungsaktion &#x200B;](/help/forms/configure-submit-action-send-email.md)E-Mail senden“ korrekt konfiguriert ist.
+* Überprüfen Sie, ob [ Übermittlungsaktion ](/help/forms/configure-submit-action-send-email.md)E-Mail senden“ korrekt konfiguriert ist.
