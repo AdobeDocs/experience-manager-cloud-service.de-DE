@@ -165,5 +165,5 @@ Sie können jetzt sehen, dass das adaptive Formular, das auf Foundation-Komponen
 
 ## Best Practices {#best-practices}
 
-* Stellen Sie sicher, dass Ihre auf Foundation-Komponenten basierenden Formulare nur die Komponenten verwenden, für die entsprechende [Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) verfügbar sind. Wenn Sie Foundation-Komponenten verwenden, die keine entsprechende Kernkomponente haben, wird die Foundation-Komponente nicht konvertiert. Daher funktioniert es beim Erstellen eines Formulars nicht ordnungsgemäß
+* Stellen Sie sicher, dass Ihre auf Foundation-Komponenten basierenden Formulare nur die Komponenten verwenden, für die entsprechende [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) verfügbar sind. Wenn Sie Foundation-Komponenten verwenden, die keine entsprechende Kernkomponente haben, wird die Foundation-Komponente nicht konvertiert. Daher funktioniert es beim Erstellen eines Formulars nicht ordnungsgemäß
 * Stellen Sie sicher, dass die Regeln zum Konvertieren der Foundation-Komponenten in Kernkomponenten in XML formatiert sind.
