@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
+source-git-commit: 93e633b8c9ac2f0bc03df70d3419b70d7b2ea7ba
 workflow-type: tm+mt
-source-wordcount: '2303'
-ht-degree: 55%
+source-wordcount: '2421'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie mehr über den APM-Service (Application Performance Monitoring) von
 
 ## Über New Relic One {#introduction}
 
-Adobe erachtet die Überwachbarkeit, Verfügbarkeit und Leistungsfähigkeit Ihrer Anwendung als außerordentlich wichtig. AEM as a Cloud Service bietet Zugriff auf die New Relic One-Überwachung, sodass Teams im Rahmen des Standardproduktangebots umfassende Einblicke in Metriken zur System- und Umgebungsleistung erhalten.
+Adobe legt den Schwerpunkt auf die Überwachung, Verfügbarkeit und Leistung Ihres Programms. AEM as a Cloud Service bietet Zugriff auf die New Relic One-Überwachung, sodass Teams im Rahmen des Standardproduktangebots umfassende Einblicke in Metriken zur System- und Umgebungsleistung erhalten.
 
 In diesem Artikel wird beschrieben, wie Sie den Zugriff auf APM-Funktionen (Application Performance Monitoring) von New Relic One in AEM as a Cloud Service-Umgebungen verwalten. Die effektive Verwaltung dieser Funktionen unterstützt eine optimale Leistung und maximiert die Vorteile von AEM as a Cloud Service.
 
@@ -52,7 +52,7 @@ Für ein neu erstelltes Programm wird ein New Relic One-Unterkonto für Sie erst
    1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in der **Meine**&quot; auf ein Programm, für das Sie Ihre New Relic One-Benutzer verwalten möchten.
-1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
+1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
 1. Klicken Sie auf der Seite Umgebungen rechts oben auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **New Relic aktivieren**.
 
    ![New Relic aktivieren](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
@@ -76,7 +76,7 @@ Sie können die Benutzenden Ihres New Relic One-Unterkontos definieren, das mit 
    1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in der **Meine**&quot; auf ein Programm, für das Sie Ihre New Relic One-Benutzer verwalten möchten.
-1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
+1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
 1. Klicken Sie auf der Seite Umgebungen rechts oben auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Benutzer verwalten**.
 
    ![Verwalten von New Relic-Benutzern](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
@@ -116,20 +116,20 @@ Nachdem ein New Relic One-Benutzerkonto, wie in [Verwalten von New Relic One-Ben
 
 1. New Relic sendet Ihnen eine E-Mail mit einem Link zur Kontobestätigung.
 
-Wenn Sie keine Bestätigungs-E-Mail von New Relic erhalten, finden Sie weitere Informationen im Abschnitt [Fehlerbehebung](#troubshooting).
+Wenn Sie keine Bestätigungs-E-Mail von New Relic erhalten, finden Sie weitere Informationen im Abschnitt [Fehlerbehebung](#troubleshooting).
 
 ## New Relic One öffnen {#accessing-new-relic}
 
-Nachdem Sie [Ihr New Relic-Konto aktiviert](#activate-account) haben, können Sie New Relic One über Cloud Manager oder direkt öffnen.
+Nachdem Sie [Ihr New Relic-Konto aktiviert haben](#activate-account) können Sie New Relic One mit Cloud Manager oder direkt öffnen.
 
-**So öffnen Sie New Relic One über Cloud Manager:**
+**So öffnen Sie New Relic One mit Cloud Manager:**
 
 1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
    1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
    1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm, für das Sie New Relic One öffnen möchten.
-1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
+1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
 1. Klicken Sie auf der Seite Umgebungen rechts oben auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **New Relic öffnen**.
 
    ![New Relic öffnen](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
@@ -148,7 +148,7 @@ Wenn Sie während der Anmeldung bei New Relic One aufgefordert werden, Ihre E-Ma
 
 Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzereintrag anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
 
-Um weitere Hilfe zu erhalten, öffnen Sie ein Support-Ticket über das [AEM Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+Weitere Hilfe erhalten Sie, wenn Sie über das [AEM Support-Portal ein Support-Ticket ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Änderungs-Tracker verwenden {#change-tracker}
 
@@ -166,7 +166,7 @@ Die folgenden Cloud Manager-Pipelines und die letzten beiden Workflow-Typen gene
 | **Web-Stufen-Konfiguration** | Web-Stufen-Konfigurations-Pipeline-Ausführungen. Die Ablaufverfolgung enthält den Pipeline-Namen und die Ausführungs-ID. |
 | **Frontend** | Frontend-Pipeline-Ausführungen. Die Ablaufverfolgung enthält den Pipeline-Namen und die Ausführungs-ID. |
 | **config** | Pipeline-Ausführungen konfigurieren. Die Ablaufverfolgung enthält den Pipeline-Namen und die Ausführungs-ID. |
-| **AEM-Update** | AEM-Versionsaktualisierungen. Beispielsweise von Version {} zu Version {}. Tracker werden erstellt, wenn das Änderungsereignis der Umgebung abgeschlossen ist. |
+| **AEM-Update** | AEM-Versionsaktualisierungen. Beispiel: von Version {} zu Version {}. Tracker werden erstellt, wenn das Änderungsereignis der Umgebung abgeschlossen ist. |
 | **Code wiederherstellen** | Der Code stellt Vorgänge aus einem bestimmten Repository und einer bestimmten Verzweigung wieder her. |
 
 >[!NOTE]
@@ -179,7 +179,7 @@ Nach Abschluss der Ausführung einer unterstützten Pipeline können Sie den ent
 
 **So zeigen Sie Änderungs-Tracker in New Relic One an:**
 
-1. [Greifen Sie über &#x200B;](#accessing-new-relic) Cloud Manager oder direkt auf New Relic One zu.
+1. [Zugriff auf New Relic One](#accessing-new-relic) mithilfe von Cloud Manager oder direkt.
 1. Navigieren Sie zu **APM und Services** und wählen Sie die Anwendung für die entsprechende Umgebung aus.
 1. Suchen Sie auf der Seite Anwendungszusammenfassung nach den Indikatoren für die Änderungsnachverfolgung im Diagramm. Bewegen Sie den Mauszeiger über einen Tracker, um Bereitstellungsdetails anzuzeigen.
 
@@ -228,7 +228,7 @@ Wenn Sie als New Relic One-Benutzerin bzw. -Benutzer hinzugefügt wurden, wie un
 
 1. New Relic sendet Ihnen eine E-Mail mit einem Link zur Kontobestätigung.
 
-Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, reichen Sie über die [Admin Console](https://adminconsole.adobe.com/) ein Support-Ticket ein.
+Wenn Sie den Anmeldevorgang abgeschlossen haben und sich aufgrund von E-Mail- oder Kennwortfehlermeldungen nicht bei Ihrem Konto anmelden können, erstellen Sie ein Support-Ticket mit der [Admin Console](https://adminconsole.adobe.com/).
 
 Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 
@@ -239,7 +239,7 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 ## Nutzungshinweise {#usage-notes}
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [&#x200B; New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
@@ -248,7 +248,7 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 >
 >Führen Sie die Schritte aus dem Abschnitt [Aktivieren Ihres New Relic One-Unterkontos](#activate-sub-account) in diesem Dokument aus, um Ihr New Relic One-Unterkonto erneut zu aktivieren.
 
-Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr Programm in AEM as a Cloud Service zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+Um weitere Hilfe oder zusätzliche Anleitungen zu New Relic One-Angeboten für Ihr AEM as a Cloud Service-Programm zu erhalten, öffnen Sie ein Support-Ticket über das [AEM-Support-Portal](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Häufig gestellte Fragen {#faqs}
 
@@ -266,7 +266,7 @@ Hinweis:
 
 * Pro Anwendung wird ein Lizenzschlüssel verwendet.
 * AEM as a Cloud Service-Umgebungen senden Berichte nur an ein einziges New Relic One-Konto.
-* Vollständige Überwachungsmetriken und Ereignisse für New Relic One werden drei Monate lang gespeichert. 
+* Vollständige Überwachungsmetriken und Ereignisse für New Relic One werden drei Monate lang gespeichert.
 
 +++
 
