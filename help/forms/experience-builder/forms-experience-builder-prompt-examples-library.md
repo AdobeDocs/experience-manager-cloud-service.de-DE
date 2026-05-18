@@ -393,7 +393,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
     Verbinde dieses Formular mit dem **CRM-System**, um neue Leads zu erstellen. Ordne @firstName dem Vornamen und @email der E-Mail-Adresse zu, lege LeadSource auf „Web-Formular“ und Status auf „Neu“ fest
     
-    Richte einen **Workflow-Trigger ** beim Übermitteln des Formulars ein. Übergib alle Formulardaten und löse den Genehmigungs-Workflow für die Manager-Benachrichtigung aus
+    Richte einen **Workflow-Trigger &#x200B;** beim Übermitteln des Formulars ein. Übergib alle Formulardaten und löse den Genehmigungs-Workflow für die Manager-Benachrichtigung aus
     
     Konfiguriere die **Datenbankintegration**, um Formularübermittlungen als Einträge zu speichern. Erstelle für jede Übermittlung mit hochgeladenen Dokumenten einen neuen Ordner
 
