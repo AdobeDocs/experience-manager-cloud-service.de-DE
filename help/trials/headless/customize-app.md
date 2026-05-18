@@ -8,8 +8,8 @@ feature: Headless
 role: Admin, User, Developer
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
->title="In diesem Modul haben Sie erfahren, wie sich eine React-Beispiel-App anpassen lässt.<br><br>Markteinführungszeit: beschleunigt!<br>Entwicklungszyklen: reduziert!<br><br>Jetzt wissen Sie, wie einfach die Verwaltung von Headless-Inhalten für Websites und Apps ist, die auf AEM Headless-Funktionen basieren."
+>title="In diesem Modul haben Sie erfahren, wie sich eine React-Beispiel-App anpassen lässt.<br><br>Markteinführung: Beschleunigt.<br>Entwicklungszyklen: Reduziert.<br><br>Jetzt verstehen Sie, wie einfach die Verwaltung von Headless-Inhalten für Websites und Apps ist, die auf den Headless-Funktionen von AEM basieren."
 >abstract=""
 
 ## Vorschau der App {#preview}
@@ -123,7 +123,7 @@ Nachdem Sie jetzt das Bild des Radfahrers aktualisiert haben, erläutern wir, wi
 
 1. Benennen Sie das Element „Shoppable Moment“ im Feld **Text**, z. B. `Yellow shorts`.
 
-1. Legen Sie Werte für **X** und **Y** fest. Hier sollte dieser Aufruf im Bedienfeld überlagert werden. Änderungen am Fragment werden vom Editor automatisch gespeichert
+1. Legen Sie Werte für **X** und **Y)**. Hier sollte dieser Aufruf im Bedienfeld überlagert werden. Änderungen am Fragment werden vom Editor automatisch gespeichert
 
    * **X**: `-5`
    * **Y**: `-10`
