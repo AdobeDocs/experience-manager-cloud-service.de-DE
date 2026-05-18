@@ -29,10 +29,10 @@ Bei Sites, die auf Adobe Experience Manager ausgeführt werden, haben Entwickler
 
 ## Experimentationsleiste {#experimentation-rail}
 
-Die Experimentleiste ist die primäre Möglichkeit, Experimente einzurichten. Sie kann mit Ihrem Projekt entweder im Kontext von [Edge Delivery Services](/help/edge/overview.md) oder im [universellen Editor“ verwendet ](/help/implementing/universal-editor/introduction.md). Daher benötigen Sie ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie das Plug-in [AEM Sidekick](https://www.aem.live/docs/sidekick). Wenn Sie den universellen Editor verwenden möchten, benötigen Sie auch Zugriff auf eine [AEM as a Cloud Service-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Siehe auch die Seite [Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial).
+Die Experimentleiste ist die primäre Möglichkeit, Experimente einzurichten. Sie kann mit Ihrem Projekt entweder im Kontext von [Edge Delivery Services](/help/edge/overview.md) oder im [universellen Editor“ verwendet &#x200B;](/help/implementing/universal-editor/introduction.md). Daher benötigen Sie ein GitHub-Konto, ein Inhalts-Repository wie SharePoint oder Google Drive sowie das Plug-in [AEM Sidekick](https://www.aem.live/docs/sidekick). Wenn Sie den universellen Editor verwenden möchten, benötigen Sie auch Zugriff auf eine [AEM as a Cloud Service-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Siehe auch die Seite [Erste Schritte - Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/tutorial).
 
 >[!WARNING]
->Die Experimentier-Engine ist erforderlich, um die Experimentierfunktion verwenden zu können. Stellen Sie sicher, dass die Engine ordnungsgemäß installiert und aktualisiert wurde, bevor Sie die folgenden Schritte implementieren. Weitere Informationen finden [ auf der folgenden ](https://github.com/adobe/aem-experimentation/tree/v2?tab=readme-ov-file#installation).
+>Die Experimentier-Engine ist erforderlich, um die Experimentierfunktion verwenden zu können. Stellen Sie sicher, dass die Engine ordnungsgemäß installiert und aktualisiert wurde, bevor Sie die folgenden Schritte implementieren. Weitere Informationen finden [&#x200B; auf der folgenden &#x200B;](https://github.com/adobe/aem-experimentation/tree/v2?tab=readme-ov-file#installation).
 
 ### Einrichten von Experimenten mit AEM Sidekick in Edge Delivery Services
 
@@ -75,7 +75,7 @@ Für jedes Experiment wird der Traffic zunächst zwischen Kontrolle und Herausfo
 Der [Operative Telemetrie](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)Service erfasst Daten, z. B. die Anzahl der Besucher auf der Kontrollseite im Vergleich zur Challenger-Seite. Anschließend verwenden Sie diese Daten, um die erforderlichen Verbesserungen für Ihre Site auszuwählen. Solange Sie sich in der etablierten Design-Sprache Ihrer Website bewegen und die vorhandene Funktionalität nutzen, sollten Sie in der Lage sein, eine Experimentvariante einzurichten und innerhalb von Minuten an die Produktion zu senden.
 
 >[!NOTE]
->Beachten Sie, dass das Plug-in keine Endbenutzerdaten verwendet bzw. beibehält, die zu ihrer Identifizierung führen könnten. Bei Verwendung der Standardkonfiguration, die den &quot;[ Telemetrieservice in AEM as a Cloud Service&quot; verwendet, ist weder ein Opt-in noch ein Cookie-Einverständnis ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
+>Beachten Sie, dass das Plug-in keine Endbenutzerdaten verwendet bzw. beibehält, die zu ihrer Identifizierung führen könnten. Bei Verwendung der Standardkonfiguration, die den &quot;[&#x200B; Telemetrieservice in AEM as a Cloud Service&quot; verwendet, ist weder ein Opt-in noch ein Cookie-Einverständnis &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
 <!--
 ### Frequently used terms {#frequently-used-terms}
