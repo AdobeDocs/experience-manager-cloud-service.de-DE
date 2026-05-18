@@ -5,8 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
 source-wordcount: 1570
@@ -44,7 +46,7 @@ Das Erlebnis-Audit ist für folgende Cloud Manager-Pipelines verfügbar:
 
 Weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen finden Sie im [Konfigurationsabschnitt](#configuration).
 
-Prüfungen werden als Teil der Pipeline ausgeführt. Audits können auch [On-Demand) ](#on-demand) Pipelines ausgeführt werden.
+Prüfungen werden als Teil der Pipeline ausgeführt. Audits können auch [On-Demand) &#x200B;](#on-demand) Pipelines ausgeführt werden.
 
 ## Konfiguration {#configuration}
 
@@ -161,7 +163,7 @@ Der Abschnitt **Ergebnisse des Erlebnis-Audit-Scans** enthält Detailbewertungen
 
 ![Gescannte Seiten](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-Wenn Sie auf den Link einer bestimmten Seite klicken, wird der Filter **Auswählen** des Abschnitts [**Seitenbewertungen -**) ](#trend) und die Registerkarte **Rohberichte** angezeigt, auf der Sie Bewertungen für jede Prüfung der Seite finden. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
+Wenn Sie auf den Link einer bestimmten Seite klicken, wird der Filter **Auswählen** des Abschnitts [**Seitenbewertungen -**) &#x200B;](#trend) und die Registerkarte **Rohberichte** angezeigt, auf der Sie Bewertungen für jede Prüfung der Seite finden. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
 
 ![Rohberichte](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
@@ -222,4 +224,4 @@ Die folgenden Details liefern zusätzliche Informationen darüber, wie Ihre Site
 
 * Der Audit scannt die Ursprungs-Domain (`.com`), wie sie in den [konfigurierten Pfaden der Erlebnis-Audit-Seite](#configuration) des Herausgebers definiert ist, um reale Benutzererlebnisse zu simulieren und Ihnen dabei zu helfen, bessere Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
 * In Produktions-Full-Stack-Pipelines wird die Staging-Umgebung gescannt. Um sicherzustellen, dass der Audit während des Auditings relevante Details liefert, sollte der Inhalt der Staging-Umgebung dem der Produktionsumgebung so weit wie möglich entsprechen.
-* Die im Dropdown-Menü **Auswählen** im Abschnitt [**Seitenbewertungen - Trend** angezeigten Seiten ](#trend) alle bekannte Seiten, die in der Vergangenheit vom Experience Audit gescannt wurden.
+* Die im Dropdown-Menü **Auswählen** im Abschnitt [**Seitenbewertungen - Trend** angezeigten Seiten &#x200B;](#trend) alle bekannte Seiten, die in der Vergangenheit vom Experience Audit gescannt wurden.
