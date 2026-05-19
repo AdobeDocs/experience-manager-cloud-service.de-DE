@@ -82,7 +82,7 @@ AEM Edge-Funktions-Services werden in einer YAML-Konfigurationsdatei deklariert 
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [ zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [&#x200B; zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
 
 >[!NOTE]
 >
