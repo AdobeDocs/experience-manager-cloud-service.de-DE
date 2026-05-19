@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 hide: true
 index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 29%
@@ -201,3 +201,4 @@ In den meisten Szenarien entspricht das Verhalten von MSM für Inhaltsfragmente 
 ## Einschränkungen {#limitations}
 
 * Trigger, die sich auf Änderungen beziehen, und die zugehörige Rollout-Konfiguration sind für Inhaltsfragmente nicht vorhanden.
+
