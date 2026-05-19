@@ -20,7 +20,7 @@ Der Auftrag zum Aktualisieren von Inhalten des [Experience Production Agent](/he
 
 Der Auftrag zur Inhaltsaktualisierung aktualisiert vorhandene Inhalte, einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets. Der Auftrag kann Aktionen durchführen, wie z. B. Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
 
-Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und der Agentenauftrag führt Ihre Aufgabe aus. Bei Verwendung mit AEM as a Cloud Service erstellt der Auftrag einen neuen [Launch](/help/sites-cloud/authoring/launches/overview.md), damit Sie die Aktualisierungen vor der Anwendung überprüfen können. Bei Verwendung mit der Dokumenterstellung erstellt der Auftrag eine neue [Version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+Der Auftrag zur Inhaltsaktualisierung wandelt die von Ihnen bereitgestellten Details entweder durch natürliche Sprache oder visuelle Elemente in Inhaltsaktualisierungen auf Ihrer Seite um. Sie geben die URL einer Seite an, die aktualisiert werden muss, zusammen mit Details dazu, was aktualisiert werden muss, und der Agentenauftrag führt Ihre Aufgabe aus. Bei Verwendung mit AEM as a Cloud Service erstellt der Auftrag einen neuen [Launch](/help/sites-cloud/authoring/launches/overview.md), damit Sie die Aktualisierungen vor der Anwendung überprüfen können. Bei Verwendung mit der Dokumenterstellung erstellt der Auftrag eine neue [Version](https://experienceleague.adobe.com/de/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486418?learn=on)
 
@@ -181,4 +181,4 @@ Sie können AEM-Agenten über den [Playground](https://www.aem.live/developer/ae
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_de) für angeleitete, praktische Anweisungen verwenden.
