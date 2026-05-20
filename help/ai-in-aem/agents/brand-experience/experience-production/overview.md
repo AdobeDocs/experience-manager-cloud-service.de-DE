@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM di
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: fe41f25ddc2b7ec20b74c72d4a8d19d936c22539
+source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 4%
@@ -33,7 +33,7 @@ Der Agent bietet die folgenden Aufträge:
 
 ### Auftrag zur Inhaltsaktualisierung {#content-update}
 
-Der Auftrag [Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) aktualisiert vorhandene Inhalte - einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets - mit Leichtigkeit. Der Agent kann Aktionen wie das Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen durchführen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
+Der Auftrag [Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) aktualisiert vorhandene Inhalte - einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets - mit Leichtigkeit. Der Agent kann Aktionen wie das Aktualisieren, Entfernen, Ersetzen und Hinzufügen von Inhaltselementen durchführen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein, und wenn sie mit Jira verwendet werden, können PDFs und Screenshots auch Eingaben liefern.
 
 ### Auftrag zur Inhaltserstellung {#content-create}
 
@@ -65,4 +65,4 @@ Der Agent kann mit anderen Agentenfähigkeiten arbeiten, Beispiele sind:
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_de) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) für angeleitete, praktische Anweisungen verwenden.
