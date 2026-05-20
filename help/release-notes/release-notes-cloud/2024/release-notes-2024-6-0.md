@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.6.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2181'
 ht-degree: 95%
@@ -119,7 +119,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Verbinden eines adaptiven Formulars mit Adobe Workfront
 
-Forms as a Cloud Service bietet eine vorkonfigurierte Option zum mühelosen [&#x200B; (Verbinden eines adaptiven Formulars mit Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md). Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, indem Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario auslösen können.
+Forms as a Cloud Service bietet eine vorkonfigurierte Option zum mühelosen [ (Verbinden eines adaptiven Formulars mit Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md). Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, indem Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario auslösen können.
 
 #### Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare
 

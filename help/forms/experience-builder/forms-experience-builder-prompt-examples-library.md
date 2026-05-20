@@ -6,7 +6,7 @@ index: false
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2170'
 ht-degree: 97%
@@ -389,7 +389,7 @@ Diese Beispiele zeigen, wie Sie Formulare Schritt für Schritt erstellen, indem 
 
     Verbinde dieses Formular mit dem **CRM-System**, um neue Leads zu erstellen. Ordne @firstName dem Vornamen und @email der E-Mail-Adresse zu, lege LeadSource auf „Web-Formular“ und Status auf „Neu“ fest
     
-    Richte einen **Workflow-Trigger &#x200B;** beim Übermitteln des Formulars ein. Übergib alle Formulardaten und löse den Genehmigungs-Workflow für die Manager-Benachrichtigung aus
+    Richte einen **Workflow-Trigger ** beim Übermitteln des Formulars ein. Übergib alle Formulardaten und löse den Genehmigungs-Workflow für die Manager-Benachrichtigung aus
     
     Konfiguriere die **Datenbankintegration**, um Formularübermittlungen als Einträge zu speichern. Erstelle für jede Übermittlung mit hochgeladenen Dokumenten einen neuen Ordner
 
@@ -487,4 +487,4 @@ Verwenden Sie die `@fieldName`-Syntax, um in Ihren Prompts auf vorhandene Felder
 
 Umfassende Best Practices und Validierungsrichtlinien finden Sie im Handbuch [Forms Experience Builder – Erste Schritte](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
-*Diese Prompt-Bibliothek wird auf Basis von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen fortlaufend aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=de\lang=de).*
+*Diese Prompt-Bibliothek wird auf Basis von Benutzer-Feedback und neuen Forms Experience Builder-Funktionen fortlaufend aktualisiert. Die neuesten Funktionen und Beispiele finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html\lang=de).*
