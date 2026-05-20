@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cca724e41edc333346dfead092048c7739a0ec95
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 100%
+source-wordcount: '1216'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie Ihren Code mithilfe von Cloud Manager-Pipelines in AEM as 
 
 ![Produktions-Pipeline-Diagramm](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-Die nahtlose Bereitstellung von Code zum Staging und dann bis zur Produktion erfolgt über eine Produktions-Pipeline. Die Ausführung der Produktions-Pipeline ist in die beiden folgenden logischen Phasen unterteilt:
+Die nahtlose Bereitstellung von Code zum Staging und dann bis zur Produktion erfolgt über eine Produktions-Pipeline. Die Ausführung der Produktions-Pipeline ist in zwei logische Phasen unterteilt:
 
 1. **Bereitstellung in der Staging-Umgebung**: Der Code wird erstellt und in der Staging-Umgebung für automatisierte Funktionstests, Benutzeroberflächentests, Erlebnis-Audits und Benutzerakzeptanztests (User Acceptance Testing, UAT) bereitgestellt.
 1. **Bereitstellung in der Produktionsumgebung**: Sobald der Build im Staging überprüft und für die Produktion freigegeben ist, wird das gleiche Build-Artefakt in der Produktionsumgebung bereitgestellt.
@@ -32,11 +32,11 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 
 >[!NOTE]
 >
->Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht. Er wird anschließend „vorgewärmt“, damit die neuen Veröffentlichungsknoten Traffic akzeptieren.
+>Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht und dann aufgewärmt, bevor die neuen Veröffentlichungsknoten beginnen, Traffic zu akzeptieren.
 
 ## Bereitstellen Ihres Codes mit Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-Sobald Sie [Ihre Produktions-Pipeline einschließlich Repository, Umgebung und Testumgebung konfiguriert](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) haben, können Sie Ihren Code bereitstellen.
+Sobald Sie [&#x200B; Produktions-Pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Repository, Umgebung und Testumgebung konfiguriert haben, können Sie Ihren Code bereitstellen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -82,7 +82,7 @@ Die **Staging-Testphase** umfasst die folgenden Schritte:
 | --- | --- |
 | Funktionstests für das Produkt | Die Cloud Manager-Pipeline führt Tests für die Staging-Umgebung aus.<br>Siehe auch [Produktfunktionstests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Benutzerdefinierte Funktionstests | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Wenn der Build keine Test-JAR erzeugt, wird der Test automatisch bestanden.<br>Siehe auch [Benutzerdefinierte Funktionstests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
-| Benutzerdefinierte Benutzeroberflächentests | Eine optionale Funktion, mit der für benutzerdefinierte Anwendungen erstellte Benutzeroberflächentests automatisch ausgeführt werden.<br>Benutzeroberflächentests sind Selenium-basiert und in einem Docker-Image verpackt, um Flexibilität in Bezug auf Sprachen und Frameworks zu ermöglichen. Mit diesem Ansatz können Sie Java und Maven, Node und WebDriver.io oder ein beliebiges Selenium-basiertes Framework bzw. eine beliebige Selenium-Technologie verwenden.<br>Siehe auch [Benutzerdefinierte Benutzeroberflächentests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
+| Benutzerdefinierte Benutzeroberflächentests | Eine optionale Funktion, die automatisch Benutzeroberflächentests ausführt, die für benutzerdefinierte Programme erstellt wurden.<br>Benutzeroberflächentests sind Selenium-basiert und in einem Docker-Image verpackt, um Flexibilität in Sprache und Frameworks zu bieten. Mit diesem Ansatz können Sie Java und Maven, Node und WebDriver.io oder ein beliebiges Selenium-basiertes Framework bzw. eine beliebige Selenium-Technologie verwenden.<br>Siehe auch [Benutzerdefinierte Benutzeroberflächentests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
 | Erlebnis-Audit | Dieser Schritt in der Pipeline wird immer ausgeführt und kann nicht übersprungen werden. Bei Ausführung einer Produktions-Pipeline wird nach benutzerdefinierten Funktionstests, die die Prüfungen ausführen, ein Erlebnis-Audit-Schritt eingefügt.<ul><li>Die konfigurierten Seiten werden an den Service übermittelt und ausgewertet.</li><li>Die Ergebnisse sind informativer Natur und zeigen die Bewertungen sowie die Änderung zwischen den aktuellen und vorherigen Bewertungen.</li><li>Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wird.</li></ul>Siehe [Grundlegendes zu Erlebnis-Audit-Ergebnissen](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Staging-Tests](assets/stage-testing.png)
