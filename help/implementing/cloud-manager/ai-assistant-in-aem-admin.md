@@ -115,7 +115,7 @@ Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zu dem neuen Produ
    | Name der Benutzergruppe | `AI Assistant in AEM` (oder Ihr bevorzugter Name) |
    | Beschreibung (optional) | `User group for managing AI Assistant in AEM access` |
 
-   ![ Seite „Neue Benutzergruppe erstellen“](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
+   ![&#x200B; Seite „Neue Benutzergruppe erstellen“](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
 1. Klicken Sie unten rechts in der Seite auf **Speichern**.
 
