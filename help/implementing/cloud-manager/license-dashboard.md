@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 88%
+source-wordcount: '1040'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manager bietet ein Dashboard, über das Sie die Produktberechtigungen für
 
 ## Überblick {#overview}
 
-Das Cloud Manager-Lizenz-Dashboard bietet einfachen Zugriff auf Lösungsberechtigungen, die Ihnen für alle Ihre Programme zur Verfügung stehen, einschließlich der Menge der verwendeten und verfügbaren Lösungen. Dazu kommen Verbrauchsmetriken für Inhaltsanfragen mit einer Darstellung der Entwicklung nach Monaten für die Sites-Lösung.
+Das Cloud Manager-Lizenz-Dashboard bietet einfachen Zugriff auf Lösungsberechtigungen, die Ihnen für alle Ihre Programme zur Verfügung stehen, einschließlich der Menge der verwendeten und verfügbaren Lösungen. Die Verbrauchsmetriken für Inhaltsanfragen weisen für die Sites-Lösung einen Monat auf.
 
 ## Zugriff auf das Lizenz-Dashboard {#using-dashboard}
 
@@ -41,18 +41,18 @@ Das Cloud Manager-Lizenz-Dashboard bietet einfachen Zugriff auf Lösungsberechti
 
 Das Dashboard ist in drei Abschnitte unterteilt, die Ihnen Folgendes zeigen:
 
-* **Lösungen**: Die von Ihnen lizenzierten Lösungen. Beispielsweise Sites, Edge Delivery Services, Assets u. a.
+* **Lösungen** - Welche Lösungen Sie lizenziert haben. Beispielsweise Sites, Edge Delivery Services, Assets u. a.
 
   ![Lösungsliste](assets/solutions.png)
 
-* **Add-ons**: Die mit Ihren lizenzierten Lösungen verfügbaren Add-ons.
+* **Add-ons** - Welche Add-ons zu Ihren lizenzierten Lösungen sind verfügbar?
 * **Sonstige Berechtigungen**: Die Sandbox- und Entwicklungsumgebung sowie sonstigen Berechtigungen, die mandantenseitig genutzt werden können.
 
-In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfügbar sind und wie sie verwendet werden. Derzeit werden nur Sites- und Asset-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
+In jedem Abschnitt werden die verfügbaren Funktionen und Nutzungsszenarien zusammengefasst. Derzeit werden nur Sites- und Asset-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
 
 * In der Spalte **Status** wird die Anzahl der nicht verwendeten Berechtigungen im Vergleich zur Gesamtanzahl angezeigt, die für den Mandanten verfügbar sind.
-* Die Spalte **Konfiguriert in** gibt die Programme an, auf die die Lösungsberechtigungen angewendet wurden.
-   * Eine Berechtigung gilt nur als verwendet, wenn eine Produktionsumgebung erstellt wird. Oder, falls schon eine existiert, wenn eine Update-Pipeline darauf ausgeführt wurde.
+* In **Spalte „Konfiguriert in** werden die Programme mit der angewendeten Lösungsberechtigung aufgeführt.
+   * Eine Berechtigung gilt nur dann als verwendet, wenn eine Produktionsumgebung erstellt wird oder wenn eine vorhanden ist und eine Update-Pipeline dafür ausgeführt wurde.
    * Es wird nur eine begrenzte Anzahl von Programmen einzeln in der Spalte aufgeführt, der Rest wird durch einen Eintrag `+x` repräsentiert.
    * Bewegen Sie den Mauszeiger über den Eintrag `+x`, damit ein Popup mit den Details zu allen Programmen angezeigt wird.
 * In der Spalte **Nutzung** wird die Schaltfläche **[Nutzungsdetails anzeigen](#view-usage-details)** angezeigt, um Nutzungsstatistiken für die Lösung anzuzeigen.
@@ -67,7 +67,7 @@ In jedem Abschnitt wird zusammengefasst, welche Produkte bzw. Umgebungen verfüg
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
 -->
 
-Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung Ihrer aktuellen Ressourcennutzung. Wenn Sie darauf klicken, wird ein Bericht oder Dashboard geöffnet, in dem wichtige Metriken zu Ihrer Lizenz angezeigt werden. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Diese Funktion hilft Ihnen, die Einhaltung Ihrer vertraglichen Verpflichtungen zu überwachen und sicherzustellen, und bietet gleichzeitig Einblicke in eine bessere Ressourcenplanung und -optimierung.
+Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung Ihrer aktuellen Ressourcennutzung. Wenn Sie darauf klicken, wird ein Bericht oder Dashboard geöffnet, der bzw. das wichtige Metriken im Zusammenhang mit Ihrer Lizenz anzeigt. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Mit dieser Funktion können Sie überwachen und sicherstellen, dass Sie sich an die vertraglichen Beschränkungen halten, und gleichzeitig Einblicke für eine bessere Ressourcenplanung und -optimierung bieten.
 
 Die Schaltfläche **Nutzungsdetails anzeigen** ist *deaktiviert* in den folgenden Fällen deaktiviert:
 
@@ -75,8 +75,6 @@ Die Schaltfläche **Nutzungsdetails anzeigen** ist *deaktiviert* in den folgende
 * Für diese Lösung ist kein Cloud Manager-Programm konfiguriert.
 * Eine Feature Flag, das Nutzungsdetails steuert, ist deaktiviert. Sie muss für *Organisation* aktiviert) sein, bevor die Schaltfläche verfügbar wird.
 * Die Verwendung ist für die Lösung explizit deaktiviert. Derzeit gilt diese Situation nur für Edge Delivery Services.
-
-
 
 ### Details zur Site-Nutzung {#sites-usage-details}
 
@@ -119,7 +117,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ### Was ist eine Inhaltsanfrage?{#what-is-a-content-request}
 
-Bei einer Inhaltsanfrage handelt es sich um eine an AEM Sites oder ein von der Kundschaft bereitgestelltes Caching-System, wie z. B. ein Netzwerk zur Inhaltsbereitstellung. Sie ruft Inhalte oder Daten im HTML-Format für Seitenansichten ab. Oder im JSON-Format für API-Aufrufe.
+Bei einer Inhaltsanfrage handelt es sich um eine an AEM Sites oder ein von der Kundschaft bereitgestelltes Caching-System, wie z. B. ein Netzwerk zur Inhaltsbereitstellung. Sie ruft Inhalte oder Daten im HTML-Format für Seitenansichten ab. Oder sie liegt für API-Aufrufe im JSON-Format vor.
 
 Für jeden Seitenaufruf oder für jeweils fünf API-Aufrufe wird 1 Inhaltsanfrage gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält. Inhaltsanfragen werden nur für Produktionsumgebungen gezählt.
 
@@ -141,10 +139,11 @@ Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools eines Unte
 
 ### Wie erfahre ich mehr über mein Inhaltsanfragevolumen?{#current-request-volumes}
 
-Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder an den Adobe-Kunden-Support, um einen Bericht über die hauptsächliche Nutzung anzufordern.
+Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder den Kunden-Support von Adobe, um einen Bericht zur hauptsächlichen Nutzung anzufordern.
 
 ### Was passiert, wenn ich mein eigenes CDN verwende?{#using-own-cdn}
 
-Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service-CDN verfolgt werden. Wenn Sie sich für ein eigenes CDN (BYOCDN) entscheiden, melden Sie das in Ihrem Vertrag festgelegte Inhaltsanfragevolumen einmal jährlich an Adobe.
+Das Lizenz-Dashboard zeigt nur Daten an, die vom Cloud Service CDN verfolgt werden. Wenn Sie Ihr eigenes CDN (BYOCDN) verwenden, müssen Sie Ihr Inhaltsanfragevolumen jährlich an Adobe melden, wie in Ihrem Vertrag festgelegt.
+
 
 
