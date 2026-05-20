@@ -1,19 +1,19 @@
 ---
-title: Java&trade;-Funktionstests
-description: Erfahren Sie, wie Sie Java™-Funktionstests für AEM as a Cloud Service schreiben.
+title: Java- und Trade;-Funktionstests
+description: Erfahren Sie, wie Sie Java- und Trade;-Funktionstests für AEM as a Cloud Service schreiben
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 32e19eea5a7cf90f9de57b7d71d776b4452e70ee
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 99%
+source-wordcount: '889'
+ht-degree: 82%
 
 ---
 
 
-# Java™-Funktionsprüfung
+# Java™-Funktionstests
 
 Erfahren Sie, wie Sie Java™-Funktionstests für AEM as a Cloud Service schreiben.
 
@@ -25,7 +25,7 @@ Nach der Erstellung eines neuen Code-Repositorys in Cloud Manager wird automatis
 >
 >Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
 
-Sobald Sie den Inhalt des Ordners `it.tests` haben, können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann:
+Sobald Sie den Inhalt des `it.tests` Ordners haben, können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann die folgenden Schritte ausführen:
 
 1. [Entwickeln Sie Ihre Testfälle](#writing-functional-tests).
 1. [Führen Sie die Tests lokal aus](#local-test-execution).
@@ -35,11 +35,11 @@ Sobald Sie den Inhalt des Ordners `it.tests` haben, können Sie ihn als Grundlag
 
 Mit denselben Tools, die Adobe zum Schreiben von Produktfunktionstests verwendet, können Sie auch benutzerdefinierte Funktionstests schreiben. Verwenden Sie die [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als Beispiel für das Schreiben Ihrer Tests.
 
-Der Code für den benutzerdefinierten Funktionstest ist Java™-Code im Ordner `it.tests` Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist es nicht bestimmbar, welche JAR ausgewählt wird. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Beispieltests finden Sie über den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
+Der Code für benutzerdefinierte Funktionstests ist Java™-Code im `it.tests`-Ordner Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist die ausgewählte JAR nicht deterministisch. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Beispieltests finden Sie über den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
 
 Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Veröffentlichungsinstanzen und eine Dispatcher-Konfiguration umfasst. Dieses Setup bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stapel ausgeführt werden.
 
-### Struktur von Funktionstests {#functional-tests-structure}
+### Struktur der Funktionstests {#functional-tests-structure}
 
 Benutzerdefinierte Funktionstests müssen als separate JAR-Datei verpackt werden, die mit demselben Maven-Build erstellt wird wie die Artefakte, die in AEM bereitgestellt werden sollen. Im Allgemeinen ist dieser Build ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird im Allgemeinen mithilfe des `maven-assembly-plugin` mit dem Deskriptor `jar-with-dependencies` erstellt.
 
@@ -99,9 +99,9 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 
 >[!NOTE]
 >
->Erstellen Sie für die Ausführung der Funktionstests von Ihrem lokalen Computer aus eine Benutzerin oder einen Benutzer mit Admin-ähnlichen Berechtigungen, um dasselbe Verhalten zu erzielen.
+>Erstellen Sie zum Ausführen von Funktionstests auf Ihrem lokalen Computer einen Benutzer mit Administratorberechtigungen, um dasselbe Verhalten sicherzustellen.
 
-1. Die Container-Infrastruktur, die für Funktionstests genutzt wird, ist durch die folgenden Grenzen begrenzt:
+1. Die folgenden Grenzen beschränken die für Funktionstests vorgesehene Container-Infrastruktur:
 
 | Typ | Wert | Beschreibung |
 |----------------------|-------|--------------------------------------------------------------------|
@@ -129,11 +129,11 @@ Bevorstehende Änderungen an der Container-Infrastruktur für das Ausführen von
 >Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.
 >Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
 
-### Lokale Testausführung {#local-test-execution}
+### Ausführen lokaler Tests {#local-test-execution}
 
 Vor der Aktivierung von Funktionstests in einer Cloud Manager-Pipeline wird empfohlen, die Funktionstests lokal mit dem [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) oder einer tatsächlichen AEM as a Cloud Service-Instanz auszuführen.
 
-#### Ausführung in einer IDE {#running-in-an-ide}
+#### In einer integrierten Entwicklungsumgebung (IDE) ausführen {#running-in-an-ide}
 
 Da es sich bei den Testklassen um JUnit-Tests handelt, können sie von standardmäßigen Java™-IDEs wie Eclipse, IntelliJ und NetBeans ausgeführt werden. Da sowohl die Produktfunktionstests als auch die benutzerdefinierten Funktionstests auf der gleichen Technologie basieren, können beide lokal ausgeführt werden, indem die Produkttests in die benutzerdefinierten Tests kopiert werden.
 
