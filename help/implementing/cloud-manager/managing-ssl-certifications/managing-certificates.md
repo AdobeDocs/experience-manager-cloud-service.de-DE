@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ Die Seite **SSL-Zertifikate** zeigt den Status Ihrer SSL-Zertifikate.
 | Status des SSL-Zertifikats | Beschreibung |
 | --- | --- |
 | Grün | Das Zertifikat ist ab dem aktuellen Datum mindestens 14 Tage gültig. |
-| Orangefarben | Das Zertifikat läuft in weniger als 14 Tagen ab.<br>• Sie sollten sicherstellen, dass es einen Plan gibt, wann Sie Ihr Zertifikat erneuern und über die Cloud Manager-Benutzeroberfläche ersetzen, um mögliche Website-Zugriffe oder Ausfälle zu vermeiden.<br>• Cloud Manager sendet in der Benutzeroberfläche regelmäßige Benachrichtigungen, um Sie über einen bevorstehenden Zertifikatablauf zu informieren. |
+| Orangefarben | Das Zertifikat läuft in weniger als 14 Tagen ab.<br>・ Stellen Sie sicher, dass Sie einen Plan zur Erneuerung Ihres Zertifikats haben und es über die Cloud Manager-Benutzeroberfläche ersetzen, um mögliche Website-Zugriffe oder Ausfälle zu vermeiden.<br>・ Cloud Manager sendet regelmäßig Benachrichtigungen über die Benutzeroberfläche, um Sie über einen bevorstehenden Zertifikatablauf zu informieren. |
 | Rot | Das SSL-Zertifikat ist abgelaufen.<br>Siehe [Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats](#update-ssl-certificate) oder [Löschen eines SSL-Zertifikats](#deleting-an-ssl-certificate). |
 
 ## Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#update-ssl-certificate}
@@ -96,7 +96,7 @@ Im Folgenden finden Sie einige Gründe, aus denen Sie möglicherweise ein SSL-Ze
 
 1. Klicken Sie im Dropdown-Menü auf **Umbenennen**.
 
-1. Geben Sie im Dialogfeld **DV-Zertifikat umbenennen** den neuen Namen des Zertifikats in das Feld **Zertifikatname** ein. 
+1. Geben Sie im Dialogfeld **DV-Zertifikat umbenennen** den neuen Namen des Zertifikats in das Feld **Zertifikatname** ein.
 
 1. Klicken Sie auf **Umbenennen**.
 

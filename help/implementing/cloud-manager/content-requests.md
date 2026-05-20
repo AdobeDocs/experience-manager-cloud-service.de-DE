@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 59%
+source-wordcount: '2274'
+ht-degree: 58%
 
 ---
 
@@ -57,7 +57,7 @@ Inhaltsanfragen können Abweichungen von den Analyseberichts-Tools einer Organis
 | Bots | Unbekannte Bots, die nicht vorab von AEM identifiziert und entfernt wurden, können zu Tracking-Diskrepanzen führen. |
 | Report Suites | Seiten innerhalb derselben AEM-Instanz können an verschiedene Analytics Report Suites berichten. Dabei können Daten je nach Konfiguration auf mehrere Suites aufgeteilt werden. |
 | Überwachungs- und Sicherheits-Tools von Drittanbietern | Überwachungs- und Sicherheitsprüfungs-Tools (z. B. Uptime Checker oder Vulnerability Scanner) können Seiten anfordern und so Server-seitige Inhaltsanfragen generieren, die in Analyseberichten nicht sichtbar sind. |
-| API-Zugriff | Anfragen an AEM-Seiten oder -Inhalte über APIs (z. B. über Adobe Experience Manager as a Headless CMS) zählen weiterhin als Inhaltsanfragen, lösen allerdings kein Analyse-Tracking aus. |
+| API-Zugriff | Anfragen an AEM-Seiten oder Inhalte über APIs (z. B. über Adobe Experience Manager as a Headless CMS) zählen weiterhin als Inhaltsanfragen, jedoch nicht zum Analytics-Tracking durch den Trigger. |
 | Vorheriges Abrufen von Anfragen | Ein Vorabruf (z. B. mittels einer Service-Worker- oder Edge-Funktion) kann das Traffic-Volumen erhöhen, indem Seiten im Voraus angefordert werden. Diese Anfragen werden Server-seitig gezählt, führen jedoch keinen Client-seitigen Analyse-Code aus. |
 | DDOS | Adobe verwendet Filter, um zahlreiche DDoS-Angriffe zu erkennen und zu blockieren. Einige im Rahmen eines Angriffs gestellte Anfragen werden jedoch möglicherweise noch als Inhaltsanfragen gezählt, bevor diese Filter angewendet werden. |
 | Traffic-Blocker | Browser-interne Datenschutzfunktionen oder Unternehmens-Firewalls können das Laden von Analyseskripten blockieren. Diese Benutzenden generieren weiterhin Server-seitige Inhaltsanfragen. |

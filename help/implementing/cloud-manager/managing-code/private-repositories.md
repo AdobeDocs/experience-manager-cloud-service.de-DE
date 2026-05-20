@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigen
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 99%
+source-wordcount: '1028'
+ht-degree: 86%
 
 ---
 
@@ -74,7 +74,7 @@ Die Konfiguration eines privaten GitHub-Repositorys in Cloud Manager erfolgt in 
    | Feld | Beschreibung |
    | --- | --- |
    | Repository-Name | Ein aussagekräftiger Name für Ihr neues Repository. |
-   | Repository-URL | Die URL des privaten Repositorys, die mit `.git` enden muss.<br>Beispiel: *`https://github.com/org-name/repo-name.git`* (URL-Pfad dient nur zu Illustrationszwecken). |
+   | Repository-URL | Die URL des privaten Repositorys, die auf `.git` enden muss (<br>. B. *`https://github.com/org-name/repo-name.git`* (URL-Pfad dient nur zu Veranschaulichungszwecken). |
    | Beschreibung (optional) | Eine längere Beschreibung des Repositorys. |
 
 1. Wählen Sie **Speichern** aus.
@@ -97,8 +97,8 @@ Cloud Manager kennt jetzt Ihr GitHub-Repository, benötigt aber noch den Zugriff
 
    |  | Beschreibung |
    | --- | --- |
-   | **Schritt 1: GitHub-App** | Zur sicheren Interaktion mit Ihrem privaten Repository verwendet Cloud Manager eine GitHub-App.<br>• Eine Eigentümerin bzw. ein Eigentümer Ihrer GitHub-Organisation muss die App unter `https://github.com/apps/cloud-manager-for-aem` installieren und Zugriff auf das Repository gewähren.<br>• Einzelheiten zur Installation und Gewährung des Zugriffs finden Sie in der GitHub-Dokumentation. |
-   | **Schritt 2: Geheime Datei** | Um die Sicherheit zu erhöhen, müssen Sie eine geheime Datei in der Standardverzweigung Ihres Repositorys erstellen. <br>• Klicken Sie auf **Generieren** und klicken Sie dann auf **Bestätigen**. Cloud Manager generiert den Inhalt der privaten Datei im Textfeld **Inhalt der geheimen Datei**.<br>• Klicken Sie auf das Symbol ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Inhalt aus diesem Feld zu kopieren. Der Inhalt der geheimen Datei wird nur einmal angezeigt. Wenn Sie den Inhalt nicht kopieren, bevor Sie dieses Dialogfeld schließen, müssen Sie die geheime Datei neu generieren. |
+   | **Schritt 1: GitHub-App** | Cloud Manager verwendet eine GitHub-App, um sicher mit Ihrem privaten Repository zu interagieren.<br>・ Der Eigentümer Ihres GitHub-Unternehmens muss die App unter `https://github.com/apps/cloud-manager-for-aem` installieren und Zugriff auf das Repository gewähren.<br>・ Einzelheiten zur Installation und Gewährung des Zugriffs finden Sie in der GitHub-Dokumentation. |
+   | **Schritt 2: Geheime Datei** | Zur Erhöhung der Sicherheit müssen Sie eine geheime Datei in der Standardverzweigung Ihres Repositorys erstellen.<br>・ Klicken Sie auf **Generieren** und dann auf **Bestätigen**. Cloud Manager generiert den Inhalt der privaten Datei im Textfeld **Geheime Dateiinhalte**.<br>・ Klicken Sie auf ![Symbol „Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Inhalt aus diesem Feld zu kopieren. Der Inhalt der geheimen Datei wird nur einmal angezeigt. Wenn Sie den Inhalt nicht kopieren, bevor Sie dieses Dialogfeld schließen, müssen Sie die geheime Datei neu generieren. |
 
 1. Erstellen Sie in der Standardverzweigung Ihres GitHub-Repositorys eine neue Datei mit dem Namen:
 
@@ -142,7 +142,7 @@ Wenn die Pull-Anfrage zusammengeführt oder geschlossen wird, wird die erstellte
 
 >[!TIP]
 >
->Im Dokument [Anmerkungen zur GitHub-Prüfung](github-annotations.md) finden Sie Details zu den Informationen, die bei der Ausführung von Pull-Anfrageprüfungen über GitHub bereitgestellt werden.
+>Siehe [GitHub-Check](github-annotations.md)Anmerkungen) für Details zu den Informationen, die über GitHub bereitgestellt werden, wenn Pull-Anfrage-Prüfungen ausgeführt werden.
 
 >[!TIP]
 >

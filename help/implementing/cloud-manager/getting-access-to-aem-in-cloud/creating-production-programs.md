@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1521'
-ht-degree: 66%
+source-wordcount: '1601'
+ht-degree: 67%
 
 ---
 
@@ -78,11 +78,11 @@ Siehe [Zusätzliche Optionen für Produktionsprogramme](#options).
 
 1. Klicken Sie auf **Weiter**.
 
-1. Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkarte **SLA** als zweite oder dritte Registerkarte im Dialogfeld &quot;**`Set up for production`**&quot; angezeigt. Siehe [SLA](#sla).
+1. Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkarte **SLA** als zweite oder dritte Registerkarte im Dialogfeld **`Set up for production`** angezeigt. Siehe [SLA](#sla).
 
    ![SLA-Optionen](assets/create-production-program-sla.png)
 
-   Sites und Forms bieten standardmäßig 99,9 % service level agreement (SLA).
+   Sites und Forms bieten standardmäßig ein Service Level Agreement (SLA) mit 99,99 % an.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -114,7 +114,7 @@ Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial 
 * **HIPAA** - Diese Option ermöglicht die Implementierung der HIPAA-fähigen Lösung von Adobe.
    * Erfahren Sie mehr über [HIPAA-Bereitschaft für Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) und die Implementierung der [Adobe HIPAA-fähigen Lösung](https://www.adobe.com/trust/compliance/hipaa-ready.html).
    * Die HIPAA-Option kann nach der Programmerstellung weder aktiviert noch deaktiviert werden.
-* **WAF-DDOS-Schutz**: Diese Option aktiviert die Firewall der Web-Anwendung über Regeln, um Ihre Anwendung zu schützen.
+* **WAF-DDOS-Schutz** - Mit dieser Option wird die Web Application Firewall durch Regeln zum Schutz Ihrer Anwendung aktiviert.
    * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
    * Unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) finden Sie Informationen dazu, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 
@@ -171,7 +171,7 @@ Für Sites- und Forms-Programme erfordert die SLA von 99,99 % eine [zusätzlich
 
 Für Edge Delivery Services besteht *keine* andere Anforderung als die Konfiguration der SLA-Lizenz von 99,99 % im Programm.
 
-#### Anforderungen für ein SLA von 99,99 %  {#sla-requirements}
+#### Anforderungen für ein SLA von 99,99 % {#sla-requirements}
 
 Zusätzlich zu den erforderlichen Berechtigungen umfasst die Verwendung des SLA von 99,99 % für Sites- oder Forms-Programme die folgenden zusätzlichen Anforderungen:
 

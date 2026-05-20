@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
 source-wordcount: '2585'
 ht-degree: 90%
@@ -269,7 +269,7 @@ Das Verhalten der Option **Aktualisieren** hängt von der Konfiguration und dem 
 
 | Status | Verhalten der Option „Aktualisieren“ |
 | --- | --- |
-| Die Pipeline wurde bereits aktualisiert. | Fordert Benutzende auf, die Pipeline auszuführen. |
+| Die Pipeline wurde bereits aktualisiert. | fordert den Benutzer zur Ausführung der Pipeline auf. |
 | Die Pipeline wird bereits aktualisiert. | Informiert Benutzende, dass bereits eine Aktualisierung ausgeführt wird. |
 | Die Pipeline ist nicht vorhanden. | Fordert Benutzende auf, eine Pipeline zu erstellen. |
 
