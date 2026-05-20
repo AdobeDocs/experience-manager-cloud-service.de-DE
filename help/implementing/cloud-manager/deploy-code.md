@@ -36,7 +36,7 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 
 ## Bereitstellen Ihres Codes mit Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-Sobald Sie [ Produktions-Pipeline ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Repository, Umgebung und Testumgebung konfiguriert haben, können Sie Ihren Code bereitstellen.
+Sobald Sie [&#x200B; Produktions-Pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Repository, Umgebung und Testumgebung konfiguriert haben, können Sie Ihren Code bereitstellen.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
