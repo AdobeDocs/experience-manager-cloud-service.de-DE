@@ -64,7 +64,7 @@ Die erste ist die obere Navigationsleiste von Experience Platform, die beim Navi
 
 ![Experience Platform-Navigationsleiste oben](assets/experience-cloud-header.png)
 
-* Über ![ Symbol „Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden) können Sie auf verschiedene Registerkarten zugreifen, mit denen Sie zu bestimmten Teilen eines einzelnen Programms gelangen. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
+* Über ![&#x200B; Symbol „Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden) können Sie auf verschiedene Registerkarten zugreifen, mit denen Sie zu bestimmten Teilen eines einzelnen Programms gelangen. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
 * Das ![Glockensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)) bietet Ihnen unter anderem Zugriff auf Benachrichtigungen und Ankündigungen.
 
 Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur [Adobe Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
@@ -149,7 +149,7 @@ Ein Produktionsprogramm kann so gekennzeichnet sein, dass es zusätzliche Funkti
 * Navigieren zu einer bestimmten ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
 * Öffnen der ![Programmübersicht-Symbol](/help/implementing/cloud-manager/assets/program-overview.svg) [Programmübersicht](#program-overview)
 * ![Bearbeiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -177,8 +177,8 @@ Die Programmübersicht bietet Zugriff auf alle Details eines Cloud Manager-Progr
 1. Einem [Aktionsaufruf](#cta) basierend auf den letzten Aktionen des Programms.
 1. Ein [Überblick über die Umgebungen](#environments) des Programms.
 1. Ein [Überblick über die Pipelines](#pipelines) des Programms.
-1. Ein [Überblick über die ](#performance) des Programms.
-1. Links zu [nützlichen ](#useful-resources)).
+1. Ein [Überblick über die &#x200B;](#performance) des Programms.
+1. Links zu [nützlichen &#x200B;](#useful-resources)).
 
 ### Symbolleisten {#program-overview-toolbar}
 
@@ -198,7 +198,7 @@ Die Programmsymbolleiste bietet weiterhin Zugriff auf das schnelle Wechseln zu a
 
 ![Programmsymbolleiste](assets/cloud-manager-program-toolbar.png)
 
-Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich gerade befinden, auch wenn Sie die Registerkarten mit dem Symbol ![Menü anzeigen“ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) haben.
+Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich gerade befinden, auch wenn Sie die Registerkarten mit dem Symbol ![Menü anzeigen“ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) haben.
 
 ### Programmregisterkarten {#program-tabs}
 
@@ -234,7 +234,7 @@ Klicken Sie oben links im [Cloud Manager-Header](#cloud-manager-header-2) auf ![
 
 ### Aktionsaufruf {#cta}
 
-Der Abschnitt mit dem Aktionsaufruf stellt Ihnen je nach Status Ihres Programms hilfreiche Informationen zur Verfügung. Bei einem neuen Programm werden möglicherweise die nächsten Schritte und eine Erinnerung an ein Datum der Live-Schaltung angezeigt, das [bei der Programmerstellung festgelegt) ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+Der Abschnitt mit dem Aktionsaufruf stellt Ihnen je nach Status Ihres Programms hilfreiche Informationen zur Verfügung. Bei einem neuen Programm werden möglicherweise die nächsten Schritte und eine Erinnerung an ein Datum der Live-Schaltung angezeigt, das [bei der Programmerstellung festgelegt) &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Aktionsaufruf für ein neues Programm](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
