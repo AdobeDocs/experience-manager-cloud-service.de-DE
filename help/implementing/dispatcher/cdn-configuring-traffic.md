@@ -27,7 +27,7 @@ Wenn das CDN nicht in der Lage ist, seinen Ursprung zu erreichen, können Sie au
 
 Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der Cloud Manager-[Konfigurations-Pipeline](/help/operations/config-pipeline.md) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich Traffic-Filterregeln, 100 KB nicht überschreiten darf.
 
-Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
+Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
 
 ## Reihenfolge der Auswertung {#order-of-evaluation}
 
@@ -68,7 +68,7 @@ Die typische Regelsyntax ist ein Listeneintrag mit einem Namen, einer `when` und
 
 Jeder Abschnitt der obersten Ebene (`requestTransformations`, `responseTransformations`, `redirects`, `originSelectors` und `trafficFilters` in [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md)) unterstützt einen eigenen Satz von Aktionstypen und -eigenschaften. Die zulässigen `type` Werte und Felder werden in den Tabellen und Beispielen dieses Abschnitts definiert und nicht für alle Regeltypen freigegeben. Abschnitte wie `requestTransformations` und `responseTransformations` unterstützen mehrere Aktionen, die als YAML-Liste unter `actions` Eigenschaft angegeben sind.
 
-Der Bedingungssatz „Wenn“ bestimmt basierend auf Eigenschaften wie Domain, Pfad, Abfragezeichenfolgen, Header und Cookies, ob eine Regel ausgewertet wird. Die Syntax ist bei allen Regeltypen gleich; siehe [Bedingungsstruktur](#condition-structure) unten. Traffic-Filterregeln (einschließlich WAF) verwenden dieselbe Bedingungssyntax. Informationen zu Aktionen[ Ratenbeschränkungen und WAF-spezifischem Verhalten finden Sie unter Traffic](/help/security/traffic-filter-rules-including-waf.md)Filterregeln einschließlich WAF-Regeln .
+Der Bedingungssatz „Wenn“ bestimmt basierend auf Eigenschaften wie Domain, Pfad, Abfragezeichenfolgen, Header und Cookies, ob eine Regel ausgewertet wird. Die Syntax ist bei allen Regeltypen gleich; siehe [Bedingungsstruktur](#condition-structure) unten. Traffic-Filterregeln (einschließlich WAF) verwenden dieselbe Bedingungssyntax. Informationen zu Aktionen[&#x200B; Ratenbeschränkungen und WAF-spezifischem Verhalten finden Sie unter Traffic](/help/security/traffic-filter-rules-including-waf.md)Filterregeln einschließlich WAF-Regeln .
 
 ### Bedingungsstruktur {#condition-structure}
 
@@ -459,7 +459,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 Sie können das AEM-CDN nutzen, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen (möglicherweise pro Pfad oder Subdomain).
 
-Die Anfrageeigenschaften `originalPath` und `originalUrl` sind der unveränderliche ursprüngliche Pfad (ohne Abfrageparameter) bzw. die vollständige URL (einschließlich Abfrageparameter), die jeweils vor einer CDN-[Anfrageumwandlung) ](#request-transformations). Verwenden Sie sie unter `when` Bedingungen, wenn Sie Regeln für das verankern müssen, was der Client ursprünglich gesendet hat, und nicht für Werte, die zuvor in der Auswertungssequenz möglicherweise neu geschrieben wurden. Verwenden Sie `originalPath` für den reinen Pfadabgleich. Verwenden Sie `originalUrl`, wenn die Abfragezeichenfolge Teil der Bedingung sein muss (z. B. Routing oder Filterung nach einer bestimmten anfänglichen Anfrage-URL).
+Die Anfrageeigenschaften `originalPath` und `originalUrl` sind der unveränderliche ursprüngliche Pfad (ohne Abfrageparameter) bzw. die vollständige URL (einschließlich Abfrageparameter), die jeweils vor einer CDN-[Anfrageumwandlung) &#x200B;](#request-transformations). Verwenden Sie sie unter `when` Bedingungen, wenn Sie Regeln für das verankern müssen, was der Client ursprünglich gesendet hat, und nicht für Werte, die zuvor in der Auswertungssequenz möglicherweise neu geschrieben wurden. Verwenden Sie `originalPath` für den reinen Pfadabgleich. Verwenden Sie `originalUrl`, wenn die Abfragezeichenfolge Teil der Bedingung sein muss (z. B. Routing oder Filterung nach einer bestimmten anfänglichen Anfrage-URL).
 
 Konfigurationsbeispiel:
 
@@ -520,7 +520,7 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 
 ### Proxys für benutzerdefinierte Domain an die statische AEM-Ebene {#proxy-custom-domain-static}
 
-Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
+Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 
