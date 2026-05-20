@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b68b4bb81695822a8536b5b9ec0c83cc0d530acb
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 81%
+source-wordcount: '1017'
+ht-degree: 68%
 
 ---
 
@@ -21,13 +21,13 @@ Dieses Dokument enthält Antworten auf die am häufigsten gestellten Fragen zu C
 
 Ja. Fügen Sie das `maven-toolchains-plugin` mit den richtigen Einstellungen für Java™ 11 hinzu.
 
-Der Prozess ist dokumentiert – siehe [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+Der Prozess wird dokumentiert. Siehe [Assistent zur Projekterstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
-Ein Beispiel finden Sie unter [lWKND-Beispielprojekt-Code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Ein Beispiel finden Sie unter [WKND-Beispielprojekt-Code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-## Mein Build schlägt mit einer Fehlermeldung über das maven-scr-plugin fehl, nachdem ich von Java™ 8 zu Java™ 11 gewechselt habe. Was kann ich tun? {#build-fails-maven-scr-plugin}
+## Nach dem Wechsel von Java™ 8 zu Java™ 11 schlägt mein Build mit einer Fehlermeldung über das maven-scr-plugin fehl. Was kann ich tun? {#build-fails-maven-scr-plugin}
 
-Ihr AEM Cloud Manager-Build schlägt möglicherweise fehl beim Versuch, den Build von Java™ 8 auf 11 zu wechseln. Wenn der unten stehende Fehler auftritt, müssen Sie das `maven-scr-plugin` entfernen und alle OSGi-Anmerkungen in OSGi R6-Anmerkungen konvertieren.
+Ihr AEM Cloud Manager-Build schlägt möglicherweise fehl, wenn versucht wird, den Build von Java™ 8 auf 11 umzuschalten. Wenn der unten stehende Fehler auftritt, müssen Sie das `maven-scr-plugin` entfernen und alle OSGi-Anmerkungen in OSGi R6-Anmerkungen konvertieren.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
@@ -35,7 +35,7 @@ Ihr AEM Cloud Manager-Build schlägt möglicherweise fehl beim Versuch, den Buil
 
 Anweisungen zum Entfernen dieses Plug-ins finden Sie unter [Von SCR-Anmerkungen zu OSGi-Anmerkungen](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
-## Mein Build schlägt mit einer Fehlermeldung über die RequireJavaVersion fehl, nachdem ich von Java™ 8 zu Java™ 11 gewechselt habe. Was kann ich tun? {#build-fails-requirejavaversion}
+## Nach dem Wechsel von Java™ 8 zu Java™ 11 schlägt mein Build mit einer Fehlermeldung über RequireJavaVersion fehl. Was kann ich tun? {#build-fails-requirejavaversion}
 
 Bei Cloud Manager-Builds kann das `maven-enforcer-plugin` mit diesem Fehler fehlschlagen.
 
@@ -43,9 +43,9 @@ Bei Cloud Manager-Builds kann das `maven-enforcer-plugin` mit diesem Fehler fehl
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-Dieser Fehler ist ein bekanntes Problem, da Cloud Manager eine andere Java™-Version verwendet, um den Maven-Befehl auszuführen, anstatt Code zu kompilieren. Lassen Sie einfach `requireJavaVersion` in den Konfigurationen Ihres `maven-enforcer-plugin` weg.
+Dieser Fehler ist ein bekanntes Problem, da Cloud Manager eine andere Java™-Version verwendet, um den Maven-Befehl auszuführen, anstatt Code zu kompilieren. Lassen Sie `requireJavaVersion` in Ihren `maven-enforcer-plugin`-Konfigurationen weg.
 
-## Die Code-Qualitätsprüfung ist fehlgeschlagen und unsere Bereitstellung ist blockiert. Gibt es eine Möglichkeit, diese Überprüfung zu umgehen? {#deployment-stuck}
+## Die Code-Qualitätsprüfung ist fehlgeschlagen und blockiert die Bereitstellung. Gibt es eine Möglichkeit, diese Überprüfung zu umgehen? {#deployment-stuck}
 
 Ja. Alle Fehler bei der Überprüfung der Code-Qualität mit Ausnahme der Sicherheitseinstufung sind nicht kritische Metriken. Daher können sie im Rahmen einer Bereitstellungs-Pipeline umgangen werden, indem die Elemente in der Ergebnis-Benutzeroberfläche erweitert werden.
 
@@ -57,7 +57,7 @@ Weitere Informationen finden Sie in den Dokumenten [Testen der Code-Qualität](/
 
 Ja. Bei Entwicklerbereitstellungen müssen die `pom.xml`-Dateien der Git-Verzweigung am Ende des `<version>`-Werts `-SNAPSHOT` enthalten.
 
-Dieser Wert ermöglicht die Installation einer nachfolgenden Bereitstellung, auch wenn die Version unverändert blieb. In Entwicklerbereitstellungen wird keine automatische Version für den Maven-Build hinzugefügt oder generiert.
+Dieser Wert ermöglicht die Installation einer nachfolgenden Bereitstellung, selbst wenn die Version unverändert blieb. In Entwicklerbereitstellungen wird keine automatische Version für den Maven-Build hinzugefügt oder generiert.
 
 Sie können die Version für Staging- und Produktions-Builds oder -Bereitstellungen auch auf `-SNAPSHOT` setzen. Cloud Manager legt automatisch eine geeignete Versionsnummer fest und erstellt für Sie in Git ein Tag. Falls erforderlich, kann auf dieses Tag später verwiesen werden.
 
@@ -65,11 +65,11 @@ Weitere Informationen zur Versionsverwaltung finden Sie unter [Umgang mit Maven-
 
 ## Wie funktioniert die Paket-Versionierung für Staging- und Produktionsbereitstellungen? {#snapshot-version}
 
-Bei der Staging- und Produktionsbereitstellung wird eine automatische Version erzeugt – siehe  [Umgang mit Maven-Projektversionen](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Bei Staging- und Produktionsbereitstellungen wird eine automatische Version generiert. Siehe [Umgang mit Maven-](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Für die benutzerdefinierte Versionierung in Staging- und Produktionsbereitstellungen legen Sie eine korrekte dreiteilige Maven-Version wie `1.0.0` fest. Erhöhen Sie die Version jedes Mal, wenn Sie sie in der Produktion bereitstellen.
 
-Cloud Manager fügt Staging- und Produktions-Builds automatisch eine eigene Version hinzu und erstellt sogar eine Git-Verzweigung. Es ist keine spezielle Konfiguration notwendig. Wenn Sie keine Maven-Version wie zuvor beschrieben festlegen, ist die Bereitstellung trotzdem erfolgreich und eine Version wird automatisch festgelegt.
+Cloud Manager fügt Staging- und Produktions-Builds automatisch eine eigene Version hinzu und erstellt sogar eine Git-Verzweigung. Es ist keine spezielle Konfiguration notwendig. Wenn Sie keine Maven-Version festlegen, ist die Bereitstellung dennoch erfolgreich und eine Version wird automatisch festgelegt.
 
 ## Mein Maven-Build schlägt bei Cloud Manager-Bereitstellungen fehl, lokal wird er jedoch ohne Fehler erstellt. Was läuft da schief? {#maven-build-fail}
 
@@ -88,11 +88,11 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-Benutzerinnen und Benutzer von `sling-distribution-importer` benötigen zusätzliche Berechtigungen für die im `ui.content package` definierten Inhaltspfade. Das bedeutet in der Regel, dass Sie sowohl für `/conf` als auch für `/var` Berechtigungen hinzufügen müssen.
+Benutzerinnen und Benutzer von `sling-distribution-importer` benötigen zusätzliche Berechtigungen für die im `ui.content package` definierten Inhaltspfade. Diese Regel erfordert in der Regel das Hinzufügen von Berechtigungen für `/conf` und `/var`.
 
 Die Lösung besteht darin, Ihrem Programm-Bereitstellungspaket ein [RepositoryInitializer OSGi-Konfigurations](/help/implementing/deploying/overview.md#repoint)-Skript hinzuzufügen, um ACLs für die `sling-distribution-importer`-Benutzerinnen und -Benutzer hinzuzufügen.
 
-Im obigen Beispielfehler enthält das Paket `myapp-base.ui.content-*.zip` Inhalte unter `/conf` und `/var/workflow`. Damit die Bereitstellung erfolgreich ist, werden Berechtigungen für den `sling-distribution-importer` unter diesen Pfaden benötigt.
+Im obigen Beispielfehler enthält das Paket `myapp-base.ui.content-*.zip` Inhalte unter `/conf` und `/var/workflow`. Damit die Bereitstellung erfolgreich ist, sind Berechtigungen für die `sling-distribution-importer` unter diesen Pfaden erforderlich.
 
 Hier ist ein Beispiel für eine [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config)-OSGi-Konfiguration, die zusätzliche Berechtigungen für Benutzerinnen und Benutzer von `sling-distribution-importer` hinzufügt. Die Konfiguration fügt Berechtigungen unter `/var` hinzu. Eine solche Konfiguration muss dem Anwendungspaket unter `/apps/myapp/config` hinzugefügt werden (wobei `myapp` der Ordner ist, in dem Ihr Anwendungscode gespeichert ist).
 
@@ -100,10 +100,10 @@ Hier ist ein Beispiel für eine [`org.apache.sling.jcr.repoinit.RepositoryInitia
 
 Wenn das [Hinzufügen einer OSGi-Konfiguration für RepositoryInitializer](#cloud-manager-deployment-cloud-service) den Fehler nicht behoben hat, kann dies auf eines dieser zusätzlichen Probleme zurückzuführen sein.
 
-* Die Bereitstellung schlägt möglicherweise aufgrund einer fehlerhaften OSGi-Konfiguration fehl, die einen vorkonfigurierten Service beschädigt.
+* Die Bereitstellung kann aufgrund einer ungültigen OSGi-Konfiguration fehlschlagen, die einen Standard-Service unterbricht.
    * Überprüfen Sie die Protokolle während der Bereitstellung, um festzustellen, ob offensichtliche Fehler vorliegen.
 
-* Die Bereitstellung kann aufgrund falscher Dispatcher- oder Apache-Konfigurationen fehlschlagen.
+* Die Bereitstellung kann aufgrund ungültiger Dispatcher- oder Apache-Konfigurationen fehlschlagen.
    * Achten Sie darauf, Ihre Apache- und Dispatcher-Konfigurationen lokal mit dem im SDK enthaltenen Docker-Image zu testen.
    * Informationen zum Einrichten des Dispatcher-Docker-Containers für einfache lokale Tests finden Sie unter [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery).
 
