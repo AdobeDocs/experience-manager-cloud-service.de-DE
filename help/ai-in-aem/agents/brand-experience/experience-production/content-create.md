@@ -3,7 +3,7 @@ title: Auftrag zur Inhaltserstellung
 description: Erfahren Sie, was der Inhaltserstellungsauftrag von Brand Experience Agent ist und was er für Sie tun kann.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: b92c13f690903074272e471c89bc0acc81627af1
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Sie können wie folgt auf den Auftrag zur Inhaltserstellung zugreifen:
 
 So verwenden Sie den Auftrag „Inhalt erstellen“:
 
-* Sie [&#x200B; Folgendes &#x200B;](#provide-the-prompt-and-brief):
+* Sie [ Folgendes ](#provide-the-prompt-and-brief):
 
    * Eine Eingabeaufforderung in natürlicher Sprache, die beschreibt, was erstellt werden soll und wo die Seite leben soll.
 
@@ -41,7 +41,7 @@ So verwenden Sie den Auftrag „Inhalt erstellen“:
 
       * Der Auftrag zur Inhaltserstellung verwendet eine Marketing-Zusammenfassung oder ein Dokument, das beschreibt, was der Agent generieren soll. Der Auftrag akzeptiert eine Vielzahl von Formaten für den Auftrag. In effektiven Briefs werden häufig Ziele, Zielgruppe, Themen, Anzahl der Zielworte und Schlüsselwörter angegeben.
 
-* Anschließend [&#x200B; Sie &#x200B;](#submit) Eingabeaufforderung und die Kurzbeschreibung
+* Anschließend [ Sie ](#submit) Eingabeaufforderung und die Kurzbeschreibung
 * Als Nächstes geben Sie eine [AEM-Vorlage](#select-a-template) an, die das erforderliche Layout definiert
 * Der Auftrag stellt einen [Plan zur Überprüfung bereit](#review-the-plan)
 * Sie können dann [mit der Generierung fortfahren](#proceed-with-generation) und [bei Bedarf die Bearbeitung weiter verfeinern](#further-refinement-in-authoring)
@@ -102,7 +102,7 @@ Nach Abschluss der Generierung stellt der Agent zwei Links bereit:
 
 * Ein **Vorschau**-Link
 * Ein **Bearbeiten**-Link
-   * Verwenden Sie den Link „Bearbeiten[&#x200B; um die Seite in einer AEM-Authoring-Oberfläche zur &#x200B;](#further-refinement-in-authoring) zu öffnen.
+   * Verwenden Sie den Link „Bearbeiten[ um die Seite in einer AEM-Authoring-Oberfläche zur ](#further-refinement-in-authoring) zu öffnen.
 
 ![Auftrag für Inhaltserstellung - mit der Generierung fortfahren](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-proceed-generation.png)
 
@@ -140,4 +140,4 @@ Beachten Sie die folgenden Einschränkungen:
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_de) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) für angeleitete, praktische Anweisungen verwenden.
