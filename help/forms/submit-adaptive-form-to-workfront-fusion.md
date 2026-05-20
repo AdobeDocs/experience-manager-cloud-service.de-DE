@@ -7,16 +7,14 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 90%
+source-wordcount: '1503'
+ht-degree: 89%
 
 ---
 
 # Übermitteln eines adaptiven Formulars an Adobe Workfront Fusion
-
-<span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=de) automatisiert den Prozess für sich wiederholende Aufgaben, wie z. B. Workflows zur Genehmigung von Dokumenten, E-Mail-Filterung und Sortierung, sodass Sie sich auf neue Aufgaben statt auf wiederkehrende Aufgaben konzentrieren können. Adobe Workfront Fusion umfasst mehrere Szenarien. Ein Szenario besteht aus einer Reihe von Modulen, die die Datenübertragung zwischen Anwendungen und Web-Diensten durchführen. In einem Szenario fügen Sie verschiedene Schritte (Module) hinzu, um eine Aufgabe zu automatisieren.
 
@@ -169,9 +167,9 @@ So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basieren
 So konfigurieren Sie die Übermittlungsaktion eines adaptiven Formulars basierend auf Kernkomponenten für Workfront Fusion:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
-1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL Workfront Fusion-Szenario aufrufen]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL WorkFront Fusion-Szenario aufrufen]**.
 
    ![Übermittlungsaktion für Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 1. Wählen Sie **[!UICONTROL Workfront Fusion-Szenario]** aus der Dropdown-Liste aus.

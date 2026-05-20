@@ -1,21 +1,19 @@
 ---
 title: Wie lassen sich Marketo Engage-Daten für adaptive Formulare konfigurieren?
 description: Erfahren Sie, wie Sie das Marketo Engage-Schema in adaptiven Formularen verwenden können.
-keywords: Verwenden einer Marketo Engage-Datenquelle in adaptiven Formularen, Verbinden einer Marketo-Instanz-Datenquelle mit einem Formular, Formular mit Marketo verbinden.
+keywords: Verwenden einer Marketo Engage-Datenquelle in einem adaptiven Forms, Verbinden einer Marketo-Instanz-Datenquelle mit einem Formular , ein Formular mit Marketo verbinden.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 99%
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
 # Konfigurieren von Marketo Engage-Datenquellen für vorhandene adaptive Formulare
-
-<span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 ![Workflow](/help/forms/assets/workflow-marketo-2.png)
 
@@ -88,7 +86,7 @@ Das adaptive Formular ist nun mit der Datenquelle aus der verbundenen Marketo En
 
 Führen Sie die folgenden Schritte aus, um ein im universellen Editor erstelltes adaptives Formular mit der Marketo Engage-Datenquelle zu konfigurieren:
 
-1. Öffnen Sie die Eigenschaften des Formulars zum Bearbeiten. 
+1. Öffnen Sie die Eigenschaften des Formulars zum Bearbeiten.
 1. Wählen Sie das **[!UICONTROL Formularmodell]** aus.
 1. Wählen Sie **Connector** im **[!UICONTROL Formularmodell]** aus.
 1. Nach Auswahl des **[!UICONTROL Connectors]** können Sie die Cloud-Konfiguration auswählen.

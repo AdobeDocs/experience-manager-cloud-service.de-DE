@@ -7,10 +7,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '3235'
-ht-degree: 20%
+source-wordcount: '2666'
+ht-degree: 18%
 
 ---
 
@@ -28,34 +28,41 @@ Wenn Sie an unserem Early-Access-Programm teilnehmen möchten, senden Sie einfac
 
 ## EARLY ACCESS-INNOVATIONEN
 
+<!--
+
 ### AEM Forms AI Assistant (Gen AI)
 
-Die generative KI für adaptive Formulare bietet eine völlig neue Leistungsstärke und erleichtert Ihre Formularentwicklungsprozesse. Mithilfe intelligenter KI-Funktionen können Sie schneller als je zuvor bessere Formulare erstellen.
+Generative AI for Adaptive Forms brings a whole new level of power and ease to your forms development processes. With the help of intelligent AI features, you can build better forms faster than ever before. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-Die generativen KI-Funktionen, die über den AEM Forms-KI-Assistenten angeboten werden, sind:
+The Generative AI capabilities on offer via AEM Forms AI Assistant are: 
 
-* **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre Fragen zu AEM Forms. Unser KI-Assistent fungiert als eigene persönliche Wissensdatenbank und bietet direkt in der Plattform aufschlussreiche Anleitungen und Empfehlungen.
+* **AI Assistant for Product Queries**: Get instant answers to your AEM form-related questions. Our AI assistant acts as your own personal knowledge base, providing insightful guidance and recommendations directly within the platform.
 
-* **Erstellung von adaptiven Formularen**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Prompts. Unsere generative KI generiert automatisch benutzerfreundliche Formulare, durch die Abbrüche reduziert werden und das Erlebnis personalisiert wird.
+* **Adaptive Form Generation**: Effortlessly create full-fledged forms with Generative AI Prompts. Our Generative AI automatically generates user-friendly forms that reduce drop-offs and personalize the experience.
 
-* **Panel-Generierung für Forms**: Lassen Sie KI die schwere Arbeit erledigen. Generieren von vordefinierten Formularbereichen, die auf die spezifischen Anforderungen der Datenerfassung zugeschnitten sind. Generieren Sie beispielsweise Abschnitte für die Erfassung von Zahlungsinformationen, Kundenpräferenzen oder Reisedetails. Sparen Sie Zeit und stellen Sie die Konsistenz mit vordefinierten Layouts und Funktionen sicher.
+* **Panel Generation for Forms**: Let AI do the heavy lifting. Generate pre-built form panels tailored to specific data collection needs. For example, generate sections for collecting payment information, customer preferences, or travel details. Save time and ensure consistency with pre-defined layouts and functionalities.
 
-* **Ändern von Formular-Layouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Prompts. Probieren Sie verschiedene Layouts wie Assistenten- oder Registerkartenansichten aus, um Ihr Formular optimal zu gestalten. Verwenden Sie generative KI-Prompts, um die Reaktivität Ihrer Formulare auf Mobilgeräten zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzenden gern verwendet werden.
+* **Changing Form Layouts**: Experiment with different layouts and designs using Generative AI Prompts. Try out different layouts like wizard or tabbed views to find the perfect fit for your form. Use Generative AI Prompts to optimize your forms for mobile responsiveness and create visually engaging forms that users love.
 
-* **Konfigurieren der Übermittlungsaktion**: Verwenden Sie generative KI-Prompts, um mühelos eine Übermittlungsaktion für Ihr Formular zu konfigurieren. Treffen Sie Ihre Wahl aus einer Bibliothek vordefinierter Übermittlungsaktionen oder aus einer Liste von benutzerdefinierten Übermittlungsaktionen, die von Ihrem eigenen Entwicklungs-Team erstellt und bereitgestellt wurden.
+* **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
+-->
 
-### AEM Forms Workfront Fusion-Connector
+<!--
 
-Der AEM Forms Workfront Fusion-Connector ermöglicht die nahtlose Integration zwischen Adobe Experience Manager (AEM) Forms und Adobe Workfront Fusion. Adobe Workfront dient als Programm für das Arbeits-Management, das den gesamten Arbeitszyklus zentralisiert, während Workfront Fusion als Integrationsplattform fungiert, die die Konnektivität zwischen Workfront und verschiedenen Geschäftsanwendungen erleichtert.
+### AEM Forms Workfront Fusion Connector
 
-Mit dem AEM Forms Workfront Fusion-Connector können Sie Workflows entwerfen, die automatisch bei der Übermittlung eines adaptiven Formulars ausgelöst werden. Stellen Sie sich beispielsweise ein Szenario vor, bei dem ein Workflow initiiert wird, um einer bestimmten Person die Aufgabe zuzuweisen, die übermittelten Daten zu überprüfen, sodass ein Antrag auf Grundlage der im adaptiven Formular erfassten Informationen genehmigt oder abgelehnt werden kann. Diese optimierte Integration verbessert die Effizienz und führt die Automatisierung Ihrer Workflow-Prozesse auf eine neue Stufe.
+The AEM Forms Workfront Fusion Connector empowers seamless integration between Adobe Experience Manager (AEM) Forms and Adobe Workfront Fusion. Adobe Workfront serves as a work management application, centralizing the entire work lifecycle, while Workfront Fusion acts as the integration platform facilitating connectivity between Workfront and various business applications. 
 
-Bereit zum Start? Die [Senden eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) enthält eine schrittweise Anleitung zur Verwendung der Innovation.
+Using the AEM Forms Workfront Fusion Connector, you can design workflows that are triggered automatically upon submission of an Adaptive Form. For instance, envision a scenario where a workflow is initiated to assign a specific individual the task of reviewing submitted data, allowing approval or rejection of an application based on the information captured through the adaptive form. This streamlined integration enhances efficiency and brings a new level of automation to your workflow processes.
 
-<!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
+Ready to start? The [submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) documentation provides a step-by-step guide to use the innovation.
+
+<br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/>
+
+-->
 
 ### Conversational Forms
 
@@ -74,24 +81,28 @@ Hier finden Sie weitere Funktionen von Conversational Forms:
 
 Conversational Forms sind mehr als nur ein neuer Look - sie sind eine Wende im Benutzererlebnis.  Verstärken Sie die Interaktion, reduzieren Sie den Formularabbruch und gestalten Sie die Interaktion mit Ihrer Website zu einem angenehmeren Erlebnis für alle.
 
-### Connector von AEM Forms zu Marketo
+<!--
 
-Der [Connector von AEM Forms zu Marketo](/help/forms/integrate-form-to-marketo-engage.md) schließt die Lücke zwischen Ihren mit Adobe Experience Manager (AEM) erstellten Web-Formularen (adaptiven Forms) und Ihrer Marketing-Automatisierungsplattform, Marketo.
+### AEM Forms to Marketo Connector
 
-Wenn jemand ein Formular auf Ihrer Website übermittelt, das mit AEM Adaptive Forms erstellt wurde, stellt der Connector sicher, dass die übermittelten Daten automatisch an Marketo gesendet werden. Dadurch entfällt die Notwendigkeit der manuellen Dateneingabe und das Fehlerrisiko wird reduziert.
+The [AEM Forms to Marketo Connector](/help/forms/integrate-form-to-marketo-engage.md) bridges the gap between your web forms (Adaptive Forms) built with Adobe Experience Manager (AEM) and your marketing automation platform, Marketo. 
 
-![AEM-Formular - Marketo-Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+When someone submits a form on your website created with AEM Adaptive Forms, the connector ensures that the submitted data is automatically sent to Marketo. This eliminates the need for manual data entry and reduces the risk of errors. 
 
-Durch die Optimierung des Datenübertragungsprozesses kann der Connector Ihnen dabei helfen, die Konversionsraten Ihrer Website zu verbessern. Durch das automatische Senden von Lead-Daten an Marketo können Sie sicherstellen, dass qualifizierte Leads schnell in Ihre Pflegeprogramme eingegeben werden.
+![AEM Form - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
-Im Wesentlichen hilft Ihnen der Connector von AEM Forms zu Marketo, die Stärken beider Plattformen zu nutzen, um eine effizientere und effektivere Marketing-funnel zu schaffen.
+By streamlining the data transfer process, the connector can help you improve your website's conversion rates. By automatically sending lead data to Marketo, you can ensure that qualified leads are quickly entered into your nurturing programs.
 
-Bereit zum Start? Die folgenden Artikel enthalten detaillierte Anweisungen zur Verwendung der Innovation.
+In essence, AEM Forms to Marketo Connector helps you leverage the strengths of both platforms to create a more efficient and effective marketing funnel.
 
-* [Integrieren von Marketo Engage mit AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [Integrieren eines adaptiven Formulars mit Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Konfigurieren der Marketo Engage-Anzeigendatenquelle für vorhandene adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Senden eines vorhandenen adaptiven Formulars an Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+Ready to start? The following articles provides detailed instructions to use the innovation.
+
+* [Integrate Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Integrate an Adaptive Form with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
+* [Configure Marketo Engage ad data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Submit an existing Adaptive Form to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+-->
 
 ### Interaktive Kommunikation in der Cloud
 
@@ -144,13 +155,13 @@ Auf Musterseiten wird automatisch „Seite ##&quot; angezeigt, um eine klare, ko
 * Erstellung hochwertiger, sicherer und gesetzeskonformer Korrespondenz
 * Verwalten der Erstellung, Zusammenstellung und Bereitstellung datengesteuerter interaktiver Korrespondenzen
 
-Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Der Editor für interaktive Kommunikation ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### Integration von AEM Forms mit Adobe Experience Platform (AEP)
 
 Sie können AEM Forms mit Adobe Experience Platform (AEP) verbinden, um Kundenprofile und Daten für personalisierte Formularerlebnisse und nachgelagerte Trigger-Workflows auf der Grundlage von Formularübermittlungen zu nutzen. Durch das direkte Senden von Formulardaten an AEP-Datensätze können Sie Kundenprofile anreichern und tiefere Einblicke in Benutzerinteraktionen erhalten.
 
-Bereit zum Start? [&#x200B; Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+Bereit zum Start? [ Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
 
 ### AEM FORMS HTML5 FORMS
 
@@ -194,7 +205,7 @@ not sure what's going on with this video link. cleaned up version below
 * **Entwicklerproduktivität**: Konzentrieren Sie sich auf die Erstellung von Business-Logik und Benutzeroberfläche, während die CLI sich wiederholende Einrichtungsaufgaben übernimmt.
 * **Nahtlose Integration**: Generierte Komponenten können verwendet und in bestehende AEM Forms-Projekte integriert werden.
 
-Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### API-Integrationstool für dynamische Formulardaten
 
@@ -204,7 +215,7 @@ Zu den wichtigsten Funktionen gehören:
 
 * **Visuelle Konfigurationsoberfläche**: Erstellen Sie API-Integrationen über eine intuitive Point-and-Click-Oberfläche ohne benutzerdefinierte Codierung
 * **Echtzeit-Datenpopulation**: Formularfelder werden basierend auf der Benutzereingabe automatisch ausgefüllt (z. B. Stadt und Status automatisch ausfüllen, wenn die Postleitzahl eingegeben wird)
-* **Flexible API-Unterstützung**: Verbinden Sie sich mit jeder öffentlich zugänglichen REST-API mit Unterstützung für GET-/POST-Methoden, Authentifizierung und JSON-/XML-Antworten
+* **Flexible API-Unterstützung**: Verbinden Sie sich mit jeder öffentlich zugänglichen REST-API mit Unterstützung für GET/POST-Methoden, Authentifizierung und JSON-/XML-Antworten
 * **Regelbasierte Trigger**: Festlegen, wann API-Aufrufe mithilfe der integrierten Regel-Engine ausgelöst werden (z. B. Feldänderungen, Formularereignisse)
 * **Smart-Datenzuordnung**: Konfigurieren, wie API-Antwortdaten mithilfe der JSON-Analysefunktionen von Adobe bestimmten Formularfeldern zugeordnet werden
 * **Verbessertes Benutzererlebnis**: Reduzieren Sie die manuelle Dateneingabe, verbessern Sie die Datengenauigkeit und erstellen Sie ansprechendere Formularinteraktionen
@@ -215,21 +226,27 @@ Dieses Tool ist besonders nützlich für Szenarien wie automatische Vervollstän
 
 ## Zusätzliche Early-Access-Innovationen
 
-### HTML-E-Mail-Vorlagen in adaptiven Formularen
+<!--
 
+### HTML email Templates in Adaptive Forms
 
-Adaptive Formulare ermöglichen die Verwendung von [HTML-E-Mail-Vorlagen](/help/forms/html-email-templates-in-adaptive-forms.md). Mit HTML-E-Mail-Vorlagen können Sie beim Übermitteln eines Formulars umfangreiche, personalisierte und visuell ansprechende E-Mails senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei adaptiven Formularen können Sie entweder eine Datei mit einer HTML-Vorlage hochladen oder diese Vorlagen mit einem Texteditor erstellen.
+Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
 
-![HTML-E-Mail-Vorlagen](/help/forms/assets/html-email.png)
+![HTML email templates](/help/forms/assets/html-email.png)
 
-### Übermittlungsaktion für RESTful-Webservices
+-->
 
-Adaptive Forms kann jetzt mithilfe der neuen Übermittlungsaktion RESTful-Web-Services erfasste Daten nahtlos an authentifizierte externe REST-Endpunkte senden:
+<!--
 
-* Unterstützte Standards: Swagger 2.0 und 3.0 für einfache API-Integration
-* Sichere Authentifizierung: OAuth 2.0, einfache Authentifizierung, API-Schlüssel und benutzerdefinierte Authentifizierung
-* Flexible Datenformate: Mehrteilige Formulardaten, JSON und URL-codierte (Schlüssel-Wert-Paare)
+### RESTful Web Services Submit Action
 
+Adaptive Forms can now seamlessly send captured data to authenticated external REST endpoints with the new RESTful Web Services Submit Action: 
+
+* Standards Supported: Swagger 2.0 & 3.0 for easy API integration
+* Secure Authentication: OAuth 2.0, Basic Auth, API Key, & Custom Authentication
+* Flexible Data Formats: Multi-Part Form Data, JSON, & URL-encoded (Key-Value Pairs)
+
+-->
 
 
 ### Unterstützung von RTL-Sprachen (Right-to-Left - von rechts nach links)
@@ -296,15 +313,15 @@ Der Forms-Dienst generiert interaktive PDF-Formulare für die Datenerfassung. Si
 
 ### API zur Dokumenterstellung
 
-Die Document Generation-API enthält eine optionale Funktion, die das direkte Hochladen generierter PDFs in Azure Blob Storage ermöglicht. Einige wichtige Vorteile beim Hochladen von PDFs direkt in Azure Blob Storage mithilfe der Document Generation-API sind:
+Die Document Generation-API enthält eine optionale Funktion, mit der generierte PDF-Dateien direkt in den Azure Blob-Speicher hochgeladen werden können. Einige wichtige Vorteile beim Hochladen von PDFs direkt in den Azure Blob-Speicher mithilfe der API zur Dokumenterstellung sind:
 
 * **Nahtlose Integration mit Cloud-**:
-Das direkte Hochladen generierter PDFs in Azure Blob Storage macht zusätzliche manuelle oder programmgesteuerte Schritte zur Übertragung von Dateien, zur Optimierung von Workflows und zur Steigerung der Effizienz überflüssig.
+Das direkte Hochladen generierter PDFs in den Azure Blob-Speicher macht zusätzliche manuelle oder programmgesteuerte Schritte zur Dateiübertragung, Optimierung von Workflows und Steigerung der Effizienz überflüssig.
 
 * **Zentralisiertes Dokumentenmanagement**:
-Das Speichern von PDFs im Azure Blob-Speicher ermöglicht die zentralisierte Verwaltung von Dokumenten und erleichtert so das Organisieren, Abrufen und Verwalten generierter Dateien in verschiedenen Anwendungsfällen.
+Das Speichern von PDFs im Azure Blob-Speicher ermöglicht die zentralisierte Verwaltung von Dokumenten, wodurch das Organisieren, Abrufen und Verwalten generierter Dateien in verschiedenen Anwendungsfällen erleichtert wird.
 
-* **Verbesserte Sicherheit**: Durch die Nutzung der integrierten Sicherheitsfunktionen von Azure, wie z. B. Verschlüsselung im Ruhezustand und rollenbasierte Zugriffssteuerung (RBAC), bleiben sensible Dokumente während der Speicherung geschützt.
+* **Verbesserte Sicherheit**: Durch die Nutzung der integrierten Sicherheitsfunktionen von Azure, wie z. B. Verschlüsselung im Ruhezustand und rollenbasierte Zugriffskontrolle (RBAC), bleiben sensible Dokumente während der Speicherung geschützt.
 
 * **Anpassbare Speicherpfade**: Die Möglichkeit, benutzerdefinierte Ordnerpfade zu definieren, stellt sicher, dass generierte PDF-Dateien an organisierten und anwendungsspezifischen Speicherorten gespeichert werden, was das Dateimanagement verbessert.
 
@@ -318,9 +335,13 @@ Das Speichern von PDFs im Azure Blob-Speicher ermöglicht die zentralisierte Ver
 
 * [Eigenschaftswerte aus einem JSON-Array abrufen](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Rufen Sie eine API mit einer benutzerdefinierten Funktion auf, um Werte aus einem JSON-Array zu extrahieren und sie direkt an Formularfelder zu binden.
 
-### Versionierungsunterstützung in Forms Manager
+<!--
 
-Forms Manager unterstützt jetzt die Versionierung für adaptive Forms (Kernkomponenten und Foundation-Komponenten), Formularfragmente, Designs, XDP-Vorlagen und binäre Assets. Sie können Versionen erstellen, den Verlauf anzeigen und frühere Status über die Konsole &quot;Forms und Dokumente“ wiederherstellen. Siehe [Verwalten von Formularversionen in Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+### Versioning support in Forms Manager
+
+Forms Manager now supports versioning for Adaptive Forms (Core Components and Foundation Components), form fragments, themes, XDP templates, and binary assets. You can create versions, view history, and restore earlier states from the Forms & Documents console. See [Manage form versions in Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+-->
 
 ### Verbesserte Barrierefreiheit für Formularkomponenten
 

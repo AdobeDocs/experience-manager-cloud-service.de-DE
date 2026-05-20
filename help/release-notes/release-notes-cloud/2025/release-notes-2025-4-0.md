@@ -4,9 +4,9 @@ description: Versionshinweise für Version 2025.4.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '2018'
 ht-degree: 97%
 
 ---
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Übersichtsvideo zur Version April 2025 an, das eine Zusammenfassung der Funktionen bietet, die in Version 2025.4.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464011?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -45,7 +45,7 @@ Sehen Sie sich das Übersichtsvideo zur Version April 2025 an, das eine Zusammen
 
 **Neue Admin-Benutzeroberfläche des Inhaltsfragmentmodells**
 
-Zur weiteren Vervollständigung der Liste der neuen Client-seitigen Benutzeroberflächen beim Arbeiten mit AEM-Inhaltsfragmenten ist jetzt eine neue Admin-Benutzeroberfläche für Inhaltsfragmentmodelle verfügbar. Die neue Benutzeroberfläche bietet eine klare und moderne Listenansicht, die die Suche nach Modellen mit Filtern ermöglicht und die Modell-Tags und die vorhandenen Inhaltsfragmente anzeigt, die auf einem bestimmten Modell basieren. Die Dokumentation finden Sie [hier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
+Zur weiteren Vervollständigung der Liste der neuen Client-seitigen Benutzeroberflächen beim Arbeiten mit AEM-Inhaltsfragmenten ist jetzt eine neue Admin-Benutzeroberfläche für Inhaltsfragmentmodelle verfügbar. Die neue Benutzeroberfläche bietet eine klare und moderne Listenansicht, die die Suche nach Modellen mit Filtern ermöglicht und die Modell-Tags und die vorhandenen Inhaltsfragmente anzeigt, die auf einem bestimmten Modell basieren. Die Dokumentation finden Sie [hier](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -83,6 +83,14 @@ Sie können jetzt mithilfe der Assets-Ansicht schnell eine beliebige Version ein
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Neue Funktionen in Experience Manager Forms {#new-features-forms}
+
+#### HTML-E-Mail-Vorlagen in adaptiven Formularen
+
+Adaptive Formulare ermöglichen die Verwendung von [HTML-E-Mail-Vorlagen](/help/forms/html-email-templates-in-adaptive-forms.md). Mit HTML-E-Mail-Vorlagen können Sie beim Übermitteln eines Formulars umfangreiche, personalisierte und visuell ansprechende E-Mails senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei adaptiven Formularen können Sie entweder eine Datei mit einer HTML-Vorlage hochladen oder diese Vorlagen mit einem Texteditor erstellen.
+
+![HTML-E-Mail-Vorlagen](/help/forms/assets/html-email.png)
 
 ### Funktionen der Vorabversion
 
@@ -151,7 +159,7 @@ Sie können Cookie-Attribute in [Antworttransformationen](/help/implementing/dis
 
 ### Java 21-Unterstützung {#java21}
 
-Ab der Januar-Version können Sie Code mit Java 21 und Java 17 erstellen. Sie erhalten Zugriff auf neue Funktionen wie Mustervergleich, versiegelte Klassen und verschiedene Leistungsverbesserungen. Die Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+Ab der Januar-Version können Sie Code mit Java 21 und Java 17 erstellen. Sie erhalten Zugriff auf neue Funktionen wie Mustervergleich, versiegelte Klassen und verschiedene Leistungsverbesserungen. Die Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wenn ein Java 17- oder Java 21-Build erkannt wird. Adobe empfiehlt jedoch auch, sich für Umgebungen, die mit Java 11 erstellt wurden, für die Java 21 Runtime anzumelden. Senden Sie hierzu einfach eine E-Mail an [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Erfahren Sie mehr zu den [Java 21 Runtime-Anforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
@@ -185,7 +193,7 @@ Weitere Informationen finden Sie in der [Dokumentation zur Protokollweiterleitun
 
 ### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
 
-Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Adobe würde gerne von Ihnen hören, ob Sie diese Technologie als nützlich für AEM Publish Delivery- und Edge Delivery Services-Projekte erachten. Teilen Sie uns bitte außerdem mit, wofür Sie sie voraussichtlich verwenden würden. Diese Information hilft uns bei der Gestaltung der Produkt-Roadmap. 
+Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Adobe würde gerne von Ihnen hören, ob Sie diese Technologie als nützlich für AEM Publish Delivery- und Edge Delivery Services-Projekte erachten. Teilen Sie uns bitte außerdem mit, wofür Sie sie voraussichtlich verwenden würden. Diese Information hilft uns bei der Gestaltung der Produkt-Roadmap.
 
 Verschiedene mögliche Anwendungsfälle:
 

@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 87%
+source-wordcount: '936'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ So konfigurieren Sie eine Übermittlungsaktion des Typs „E-Mail senden“ für
 
    >[!NOTE]
    >
-   > Sie können auch **[!UICONTROL HTML-Vorlage verwenden]** aktivieren, um E-Mails mit einem benutzerdefinierten HTML-Layout anstelle der Standardvorlage zu senden. Wenn diese Option aktiviert ist, geben Sie die HTML-Datei im Feld **Pfad für externe Vorlage** an. Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+   > Sie können auch **[!UICONTROL HTML-Vorlage verwenden]** aktivieren, um E-Mails mit einem benutzerdefinierten HTML-Layout anstelle der Standardvorlage zu senden. Wenn diese Option aktiviert ist, geben Sie die HTML-Datei im Feld **Pfad für externe Vorlage** an.
 
 1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
@@ -70,7 +70,7 @@ So konfigurieren Sie eine Übermittlungsaktion des Typs „E-Mail senden“ für
 So konfigurieren Sie die Übermittlungsaktion „E-Mail senden“ für die Kernkomponente:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
 1. Wählen Sie **[!UICONTROL E-Mail senden]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** aus.
 
@@ -85,7 +85,7 @@ So konfigurieren Sie die Übermittlungsaktion „E-Mail senden“ für die Kernk
 
    >[!NOTE]
    >
-   > Sie können auch **[!UICONTROL HTML-Vorlage verwenden]** aktivieren, um E-Mails mit einem benutzerdefinierten HTML-Layout anstelle der Standardvorlage zu senden. Wenn diese Option aktiviert ist, geben Sie die HTML-Datei im Feld **Pfad für externe Vorlage** an. Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+   > Sie können auch **[!UICONTROL HTML-Vorlage verwenden]** aktivieren, um E-Mails mit einem benutzerdefinierten HTML-Layout anstelle der Standardvorlage zu senden. Wenn diese Option aktiviert ist, geben Sie die HTML-Datei im Feld **Pfad für externe Vorlage** an.
 
 1. [Optional] Die Sendeaktion **[!UICONTROL E-Mail senden]** bietet die Möglichkeit, Anhänge und ein [Datensatzdokument (Document of Record, DoR)](generate-document-of-record-core-components.md) in die E-Mail aufzunehmen.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.

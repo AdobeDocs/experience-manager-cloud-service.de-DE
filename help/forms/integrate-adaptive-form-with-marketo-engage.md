@@ -6,20 +6,18 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 21%
+source-wordcount: '1052'
+ht-degree: 19%
 
 ---
 
 # Integrieren eines adaptiven Formulars mit Marketo Engage
 
-<span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
-
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-Nachdem Sie die Cloud-Service-Konfiguration für die Integration von Marketo Engage mit AEM Forms erstellt haben, können Sie ein adaptives Formular für die Integration mit [Adobe Marketo Engage konfigurieren](https://experienceleague.adobe.com/de/docs/marketo/using/home).
+Nachdem Sie die Cloud-Service-Konfiguration für die Integration von Marketo Engage mit AEM Forms erstellt haben, können Sie ein adaptives Formular für die Integration mit [Adobe Marketo Engage konfigurieren](https://experienceleague.adobe.com/en/docs/marketo/using/home).
 
 Sie können Marketo Engage mithilfe des Formular-Assistenten mit einem adaptiven Formular verbinden, wodurch der Konfigurationsprozess vereinfacht wird, indem Sie durch die einzelnen Schritte geführt werden. Dazu gehört die Auswahl von Vorlagen, Stilen und Datenfeldern sowie die Einrichtung der Datenzuordnung, um sicherzustellen, dass Ihr Formular nach der Erstellung für die Kommunikation mit Marketo Engage bereit ist. Mithilfe des Formular-Assistenten können Sie das adaptive Formular auch so konfigurieren, dass Daten bei der Übermittlung direkt an Adobe Marketo Engage gesendet werden.
 
@@ -49,7 +47,7 @@ Um ein neues adaptives Formular zu konfigurieren, das auf Foundation-Komponenten
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {**[!UICONTROL }Source eine Vorlage aus]**
+1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
 
    ![Vorlagen auswählen](/help/forms/assets/select-template-af1.png)
 
@@ -88,7 +86,7 @@ Um ein neues adaptives Formular zu konfigurieren, das auf Kernkomponenten basier
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {**[!UICONTROL }Source eine Vorlage aus]**
+1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
 
    ![Vorlagen auswählen](/help/forms/assets/select-template.png)
 
@@ -130,7 +128,7 @@ Führen Sie die folgenden Schritte aus, um ein neues adaptives Formular, das im 
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {**[!UICONTROL }Source eine Vorlage aus]**
+1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
 
    ![Vorlagen auswählen](/help/forms/assets/select-template-ue.png)
 
@@ -175,7 +173,7 @@ Das adaptive Formular ist jetzt für die Verbindung mit der Marketo Engage-Insta
 
 ## Nächster Schritt
 
-Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/de/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
+Sie können ein adaptives Formular auch mit der [Munchkin-](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
 
 ## Verwandte Artikel
 

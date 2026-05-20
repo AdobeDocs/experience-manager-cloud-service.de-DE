@@ -6,16 +6,14 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1441'
 ht-degree: 99%
 
 ---
 
 # Konfigurieren eines adaptiven Formulars für die REST-Endpunkt-Übermittlungsaktion
-
-<span class="preview"> Die Funktion zum Angeben des REST-Endpunkts per Konfiguration ist ein Early-Adopter-Programm und gilt nur für Kernkomponenten- und Edge Delivery Services-Formulare. Sie können von Ihrer offiziellen E-Mail-ID aus an `aem-forms-ea@adobe.com` schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf die Funktion anzufordern. </span>
 
 Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen Server (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
 
@@ -76,7 +74,7 @@ Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** übermit
 So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein auf Kernkomponenten basierendes adaptives Formular:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]** die Option **[!UICONTROL An REST-Endpunkt übermitteln]**.
 
@@ -104,7 +102,7 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagendaten.
+   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anhangdaten.
 
    Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** übermittelt die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP-GET-Anfrage. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
 
@@ -131,7 +129,7 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open API-Spezifikation für ein im universellen Editor erstelltes adaptives Formular:
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
-1. Klicken Sie im Editor **die Erweiterung** Formulareigenschaften bearbeiten“.
+1. Klicken Sie im Editor auf die Erweiterung **Formulareigenschaften bearbeiten**.
 
    Das Dialogfeld **Formulareigenschaften** wird angezeigt.
 
@@ -164,7 +162,7 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagendaten.
+   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anhangdaten.
 
    Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** übermittelt die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP-GET-Anfrage. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
 
