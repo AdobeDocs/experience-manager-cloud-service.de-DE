@@ -33,7 +33,7 @@ Sie können wie folgt auf den Auftrag zur Inhaltserstellung zugreifen:
 
 So verwenden Sie den Auftrag „Inhalt erstellen“:
 
-* Sie [ Folgendes ](#provide-the-prompt-and-brief):
+* Sie [&#x200B; Folgendes &#x200B;](#provide-the-prompt-and-brief):
 
    * Eine Eingabeaufforderung in natürlicher Sprache, die beschreibt, was erstellt werden soll und wo die Seite leben soll.
 
@@ -41,7 +41,7 @@ So verwenden Sie den Auftrag „Inhalt erstellen“:
 
       * Der Auftrag zur Inhaltserstellung verwendet eine Marketing-Zusammenfassung oder ein Dokument, das beschreibt, was der Agent generieren soll. Der Auftrag akzeptiert eine Vielzahl von Formaten für den Auftrag. In effektiven Briefs werden häufig Ziele, Zielgruppe, Themen, Anzahl der Zielworte und Schlüsselwörter angegeben.
 
-* Anschließend [ Sie ](#submit) Eingabeaufforderung und die Kurzbeschreibung
+* Anschließend [&#x200B; Sie &#x200B;](#submit) Eingabeaufforderung und die Kurzbeschreibung
 * Als Nächstes geben Sie eine [AEM-Vorlage](#select-a-template) an, die das erforderliche Layout definiert
 * Der Auftrag stellt einen [Plan zur Überprüfung bereit](#review-the-plan)
 * Sie können dann [mit der Generierung fortfahren](#proceed-with-generation) und [bei Bedarf die Bearbeitung weiter verfeinern](#further-refinement-in-authoring)
@@ -102,7 +102,7 @@ Nach Abschluss der Generierung stellt der Agent zwei Links bereit:
 
 * Ein **Vorschau**-Link
 * Ein **Bearbeiten**-Link
-   * Verwenden Sie den Link „Bearbeiten[ um die Seite in einer AEM-Authoring-Oberfläche zur ](#further-refinement-in-authoring) zu öffnen.
+   * Verwenden Sie den Link „Bearbeiten[&#x200B; um die Seite in einer AEM-Authoring-Oberfläche zur &#x200B;](#further-refinement-in-authoring) zu öffnen.
 
 ![Auftrag für Inhaltserstellung - mit der Generierung fortfahren](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-proceed-generation.png)
 
