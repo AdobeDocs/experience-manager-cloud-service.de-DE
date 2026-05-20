@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 42829ad85f481a7087cce3b7a530dbed0b55f7e3
+source-git-commit: 94b6fa4bdff0641780a66d86d338ff3e3d1bb807
 workflow-type: tm+mt
-source-wordcount: '7400'
+source-wordcount: '7405'
 ht-degree: 86%
 
 ---
@@ -107,6 +107,7 @@ ht-degree: 86%
    + Wartungsversionshinweise zu AEMaaCS {#maintenance}
       + [Neueste Wartungversionshinweise](/help/release-notes/maintenance/latest.md)
       + 2026 {#2026}
+         + [Wartungsversionshinweise für 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
          + [Wartungsversionshinweise für 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
          + [Wartungsversionshinweise für 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
          + [Wartungsversionshinweise für 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
@@ -1323,7 +1324,7 @@ ht-degree: 86%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

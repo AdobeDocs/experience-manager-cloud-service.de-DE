@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
+source-git-commit: 478b77488f46ae2566ffe5276ad26834371612aa
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '661'
 ht-degree: 30%
 
 ---
@@ -16,84 +16,51 @@ ht-degree: 30%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## 25892 {#release-25892}
+## 26125 {#release-26125}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 25892, die am 7. Mai 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 25520.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 26125, die am 20. Mai 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 25892.
 
 Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssatz für diese Wartungsversion bereit. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
->[!NOTE]
->
->Version 25821 wurde als privat gekennzeichnet.
+### Verbesserungen {#enhancements-26125}
 
-### Verbesserungen {#enhancements-25892}
+* ASSETS-56957: Unterstützung für Mehrfach-Audiospuren und Mehrfach-Untertitel-Uploads für Videos in Dynamic Media mit OpenAPI hinzugefügt.
+* ASSETS-58563: Adobe Commerce-Integration zu AEM Assets hinzugefügt.
+* ASSETS-65603: Verbesserte Leistung bei der Ordnerauflistung in der Touch-optimierten Benutzeroberfläche durch Konfiguration einer reduzierten Asset-Anzahl.
+* ASSETS-66032: Erweiterte Netzwerk-Proxy-Unterstützung für Assets Bulk Import für Umgebungen mit IP-eingeschränktem Cloud-Speicher hinzugefügt.
+* CQ-4363346: Die Benutzeroberfläche für Übersetzungsrichtlinien wurde um Unterstützung für das Herunterladen von Beispielrichtlinien, das Hochladen von Richtliniendateien in den Formaten JSON, PDF und DOCX und das Löschen vorhandener Richtlinien erweitert.
+* GRANITE-67514: Isoliert ein internes Caching-Bibliotheks-Bundle, um Fehler bei Transformationsvorgängen und Konflikte mit kundenbereitgestellten Bundles zu verhindern.
+* SITES-42076: Experimentell: Es wurden Massenvorgänge zum Suchen und Ersetzen für Seiten als MCP-Primitive in der Inhalts-API hinzugefügt.
+* SITES-42835: Experimentell: AEM Forms-Seiten, die außerhalb der Content-API erstellt wurden, sind jetzt über die AEM Sites Content-API zugänglich, ohne dass Migrations- oder Schemaänderungen erforderlich sind.
+* SITES-44265: Der Inhalts-API wurde eine stabile replizierte Seitenkennung hinzugefügt, die nach Seitenverschiebungen gültig bleibt, sodass veraltete Referenz-404-Fehler vermieden werden.
 
-* CQ-4362304: Erstellen Sie Richtlinien für das Frontend und aktualisieren Sie die LLM-Konfigurations-Benutzeroberfläche.
-* GRANITE-39546: Aktualisieren von Apache Tika auf 3.x.
-* GRANITE-53957: Aktualisieren Sie Azure SDK V8 auf V12 für oak-blob-azure.
-* GRANITE-61245: Alle Verwendungszwecke von commons-lang entfernen (durch commons-lang3 ersetzen).
-* GRANITE-64748: Bump OIDC Authentication Handler.
-* GRANITE-64764: Aktualisieren Sie den Apache Commons-Text auf 1.15.0.
-* GRANITE-64963: Aktualisieren von Filevault auf 4.2.0.
-* GRANITE-66197: Hinzufügen von Microsoft Graph API E-Mail-Unterstützung für M365-Mandanten.
-* GRANITE-66449: Aktualisieren der Maven-Plug-ins für die Java 17-API-Unterstützung.
-* GRANITE-66473: Hinzufügen der Coffein-Cache-Bibliothek zu base-granite.
-* GRANITE-66836: Aktualisieren des Schnellstarts auf Oak 2.0.0.
-* SKYOPS-129301: Setzen Sie die JavaDoc-Konformitätsstufe der APIs auf Java 17.
-* SKYOPS-129351: Aktualisieren von Reaktiv-Streams und Reactor-Core für die Kompatibilität mit MCP SDK.
-* SKYOPS-131412: Aktualisieren Sie Apache Commons Exec auf die neueste Version.
-* SKYOPS-131432: Felix SCR auf 2.2.14 aktualisieren.
-* SKYOPS-131907: Aktualisieren der Sling-API-Regionen auf 1.1.10.
-* SKYOPS-131938: Aktualisieren Sie GSON auf die neueste Version.
-* SKYOPS-132173: Aktualisieren des Apache Commons-Codecs auf die neueste Version.
-* SKYOPS-132182: Sling-Mandanten-Paket aktualisieren.
-* SKYOPS-132267: Aktualisieren `org.osgi.service.component` Anmerkung.
-* SKYOPS-132272: Sling Feature Model-Bundle aktualisieren.
-* SKYOPS-132525: Schnellstart-Analyzer hinzufügen, um neue API-Entfernungen zu verhindern.
-* SKYOPS-134408: `com.adobe.granite.asset.core` auf 2.2.82 aktualisieren.
-* SKYOPS-137750: `com.adobe.granite.comments` auf 1.0.40 aktualisieren.
-* SKYOPS-137759: `com.adobe.granite.jobs.async.ui.commons` auf 3.2.4 aktualisieren.
-* SKYOPS-138356: `com.adobe.granite.oauth.server` auf 1.1.36 aktualisieren.
-* SKYOPS-138739: SnakeYAML auf 2.6 aktualisieren.
+### Behobene Probleme {#fixed-issues-26125}
 
-### Behobene Probleme {#fixed-issues-25892}
+* ASSETS-36208: Feste Bildprofile werden nicht in den Ordnereigenschaften angezeigt, wenn Dynamic Media deaktiviert ist.
+* ASSETS-63240: Massenvorgänge zur Mehrfachauswahl im Append-Modus wurden korrigiert, bei denen Benutzende auf einer leeren Seite blieben, anstatt zur Assets-Konsole zurückzukehren.
+* ASSETS-65076: Es wurde ein falscher Protokollwert behoben, der an die Externalizer-API übergeben wurde und zu Fehlern bei der Verwendung von Sling-Anfrage-Buildern führte.
+* ASSETS-66102: Es wurde ein Problem mit Adobe I/O Runtime Asset-Veröffentlichungsereignissen behoben, bei denen ein falscher `repo:version` gemeldet wurde, was zu Fehlern bei nachgelagerten Integrationen führte.
+* ASSETS-66226: Anlagen werden beim Löschen nicht aus der Versandebene entfernt, wenn ihr Genehmigungsstatus mit gemischten Werten gespeichert wurde.
+* ASSETS-66669: Die Schaltfläche „Startseite“ auf der Suchergebnisseite navigiert jetzt, wenn Unified Shell aktiviert ist, nicht mehr zum Startbildschirm in der Touch-optimierten Benutzeroberfläche.
+* ASSETS-66683: Es wurde eine Genehmigungsschleife in Dynamic Media behoben, bei der OpenAPI durch Upload-Fehler ausgelöst wurde, die zu Rückstaus und gestörten Asset-Genehmigungs-Workflows führten.
+* ASSETS-67113: Massenimport wurde behoben, bei dem SVG-Assets beim Filtern nach MIME-Typ `image/svg+xml` ignoriert wurden.
+* CQ-4363355: Übersetzungsanfragen im GenAI Translation Connector wurden korrigiert, die aufgrund einer hartcodierten statischen URL an einen falschen regionalen Endpunkt weitergeleitet wurden.
+* CQ-4363466: Es wurden Fehler bei der Auflösung des Cloud-Konfigurationspfads behoben, die Auswirkungen auf Übersetzungs-Connectoren von Drittanbietern hatten, die eine benutzerdefinierte Konfigurationsauflösung verwenden.
+* SITES-44186: Meta-Tag-Einschleusung in die Ereignisverarbeitung des Seiten-Editors durch Autoren wurde korrigiert.
 
-* ASSETS-59546: Entfernen von Abhängigkeiten von veralteten Bibliotheken für „commons-lang“.
-* ASSETS-64831: AssetProcessorProcess - Zurücksetzen der Anzahl von Verarbeitungsversuchen verursacht blockierte Assets.
-* ASSETS-66683: Genehmigungsschleife aufgrund eines Upload-Blob-Fehlers.
-* CNTBF-613: Korrigieren des Zugriffs verweigert (JCR-101) beim Registrieren von Knotentypen.
-* GRANITE-44537: Zeichenfolge in „Land/Region“ nicht in AEM lokalisiert.
-* GRANITE-61760: Fehlgeschlagene Aktivierung von AdminUserInitializer korrigieren.
-* GRANITE-64543: Die Antwort auf Berechtigungsbeschränkungen folgt nicht der API-Struktur.
-* GRANITE-66692: Interner Classloader reagiert nicht auf Paketaktualisierungen.
-* GRANITE-66732: Verwenden Sie Aktivierungen anstelle von Service-Komponenten für Pakete der Startebene 1.
-* GRANITE-66846: Für die AEM-Berechtigungs-API werden keine `rep:ntNames` angezeigt.
-* SITES-39267: PagePath in Beziehungsketteneinträgen wiederherstellen.
-* SITES-43715: Die Berechtigungsprüfung schlägt beim Lesen des Ressourcenstatus fehl.
-
-#### AEM Guides {#guides-25892}
-
-* GUIDES-45110: Wenn Sie ein Bild im Editor über das Dialogfeld **Datei auswählen** auswählen, werden nur Rasterformate (wie JPG, PNG und GIF) angezeigt. Vektordateien (z. B. `.ai` und `.eps`) werden nicht angezeigt und können nicht ausgewählt werden.
-* GUIDES-41938: Wenn Sie ein Thema in einem Ordner mit Leerzeichen im Namen erstellen, wird fälschlicherweise ein doppelter Ordner erstellt, in dem Leerzeichen durch Bindestriche ersetzt werden, und das Thema wird dort anstelle des ursprünglichen Ordners gespeichert.
-* GUIDES-38377: Wenn Änderungen an einer Ausgabevorgabe in einem Ordnerprofil auf bestehende Zuordnungen angewendet werden, wird der gespeicherte **Veröffentlichungskontext** für die AEM Sites-Vorgabe zurückgesetzt.
-* GUIDES-43547: Wenn große Themen oder Karten geöffnet werden, reagiert die Autoreninstanz nicht mehr, was in einigen Fällen einen Neustart erforderlich macht.
-* GUIDES-32520: Wenn Rücktaste für Elemente verwendet wird, scrollt der Editor unabhängig von der Cursor-Position zum Anfang des Themas (Editor 2.0).
-
-Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Bekannte Probleme {#known-issues-25892}
+### Bekannte Probleme {#known-issues-26125}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-25892}
+### Eingestellte Funktionen und APIs {#deprecated-26125}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-25892}
+### Sicherheitskorrekturen {#security-26125}
 
-Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 19 identifizierte Schwachstellen und verstärkt unser Engagement für zuverlässigen Systemschutz.
+Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 19 Schwachstellen und verstärkt unser Engagement für zuverlässigen Systemschutz.
 
-### Eingebettete Technologien {#embedded-tech-25892}
+### Eingebettete Technologien {#embedded-tech-26125}
 
 | Technologie | Version | Link |
 |---|---|---|
