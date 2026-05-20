@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Brand Experience Agent die Modernisierung und Wei
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '586'
+ht-degree: 2%
 
 ---
 
@@ -47,6 +47,16 @@ Die Erlebnismodernisierung beseitigt die Reibungen bei umfangreichen Site-Migrat
 ### Auftrag zur Inhaltsaktualisierung {#content-update}
 
 [Der Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) aktualisiert vorhandene Inhalte - einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets - mit Leichtigkeit. Der Agent kann Aktionen wie das Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen durchführen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
+
+### Auftrag zur Inhaltserstellung {#content-create}
+
+Der Auftrag [Content erstellen](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) erstellt neue Seiten basierend auf einer Marketing-Zusammenfassung, einer Vorlage und einer Eingabeaufforderung in natürlicher Sprache.
+
+>[!NOTE]
+>
+>Der Auftrag zur Inhaltserstellung ist derzeit eingeschränkt verfügbar.
+>
+>Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Forms-Erstellungsauftrag {#forms-creation}
 

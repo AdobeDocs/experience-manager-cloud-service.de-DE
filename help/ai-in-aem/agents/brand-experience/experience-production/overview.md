@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM di
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 4%
@@ -41,7 +41,9 @@ Der Auftrag [Content erstellen](/help/ai-in-aem/agents/brand-experience/experien
 
 >[!NOTE]
 >
->Der Auftrag zur Inhaltserstellung ist derzeit eingeschränkt verfügbar. Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+>Der Auftrag zur Inhaltserstellung ist derzeit eingeschränkt verfügbar.
+>
+>Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Formularerstellungsauftrag {#form-creation}
 
@@ -65,4 +67,4 @@ Der Agent kann mit anderen Agentenfähigkeiten arbeiten, Beispiele sind:
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_de) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) für angeleitete, praktische Anweisungen verwenden.
