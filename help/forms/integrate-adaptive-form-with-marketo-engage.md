@@ -47,7 +47,7 @@ Um ein neues adaptives Formular zu konfigurieren, das auf Foundation-Komponenten
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
+1. Wählen Sie auf der Registerkarte {**}Source eine Vorlage aus**
 
    ![Vorlagen auswählen](/help/forms/assets/select-template-af1.png)
 
@@ -86,7 +86,7 @@ Um ein neues adaptives Formular zu konfigurieren, das auf Kernkomponenten basier
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
+1. Wählen Sie auf der Registerkarte {**}Source eine Vorlage aus**
 
    ![Vorlagen auswählen](/help/forms/assets/select-template.png)
 
@@ -128,7 +128,7 @@ Führen Sie die folgenden Schritte aus, um ein neues adaptives Formular, das im 
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {]**}Source eine Vorlage aus**[!UICONTROL 
+1. Wählen Sie auf der Registerkarte {**}Source eine Vorlage aus**
 
    ![Vorlagen auswählen](/help/forms/assets/select-template-ue.png)
 
