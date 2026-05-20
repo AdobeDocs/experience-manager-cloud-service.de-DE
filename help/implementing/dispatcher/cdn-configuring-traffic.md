@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie den CDN-Traffic konfigurieren, indem Sie Rege
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
+source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 77%
+source-wordcount: '2637'
+ht-degree: 76%
 
 ---
 
@@ -27,7 +27,7 @@ Wenn das CDN nicht in der Lage ist, seinen Ursprung zu erreichen, können Sie au
 
 Alle diese Regeln, die in einer Konfigurationsdatei in der Verwaltung der Quelle deklariert sind, werden mithilfe der Cloud Manager-[Konfigurations-Pipeline](/help/operations/config-pipeline.md) bereitgestellt. Beachten Sie, dass die kumulative Größe der Konfigurationsdatei, einschließlich Traffic-Filterregeln, 100 KB nicht überschreiten darf.
 
-Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
+Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
 
 ## Reihenfolge der Auswertung {#order-of-evaluation}
 
@@ -58,9 +58,82 @@ Bevor Sie Traffic im CDN konfigurieren können, müssen Sie Folgendes tun:
 
 Die Regeltypen in den folgenden Abschnitten verwenden eine gemeinsame Syntax.
 
-Eine Regel wird durch einen Namen, einen Bedingungssatz mit „Wenn“ und Aktionen referenziert.
+Die typische Regelsyntax ist ein Listeneintrag mit einem Namen, einer `when` und einer oder mehreren Aktionen:
 
-Der Bedingungssatz „Wenn“ bestimmt basierend auf Eigenschaften wie Domain, Pfad, Abfragezeichenfolgen, Header und Cookies, ob eine Regel ausgewertet wird. Die Syntax ist für alle Regeltypen gleich. Weitere Informationen finden Sie im [Abschnitt „Bedingungsstruktur“](/help/security/traffic-filter-rules-including-waf.md#condition-structure) im Artikel zu Traffic-Filterregeln.
+```
+- name: <name>
+  when: <condition>
+  action: <action>
+```
+
+Jeder Abschnitt der obersten Ebene (`requestTransformations`, `responseTransformations`, `redirects`, `originSelectors` und `trafficFilters` in [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md)) unterstützt einen eigenen Satz von Aktionstypen und -eigenschaften. Die zulässigen `type` Werte und Felder werden in den Tabellen und Beispielen dieses Abschnitts definiert und nicht für alle Regeltypen freigegeben. Abschnitte wie `requestTransformations` und `responseTransformations` unterstützen mehrere Aktionen, die als YAML-Liste unter `actions` Eigenschaft angegeben sind.
+
+Der Bedingungssatz „Wenn“ bestimmt basierend auf Eigenschaften wie Domain, Pfad, Abfragezeichenfolgen, Header und Cookies, ob eine Regel ausgewertet wird. Die Syntax ist bei allen Regeltypen gleich; siehe [Bedingungsstruktur](#condition-structure) unten. Traffic-Filterregeln (einschließlich WAF) verwenden dieselbe Bedingungssyntax. Informationen zu Aktionen[ Ratenbeschränkungen und WAF-spezifischem Verhalten finden Sie unter Traffic](/help/security/traffic-filter-rules-including-waf.md)Filterregeln einschließlich WAF-Regeln .
+
+### Bedingungsstruktur {#condition-structure}
+
+Eine Bedingung kann entweder eine einfache Bedingung oder eine Gruppe von Bedingungen sein.
+
+**Einfache Bedingung**
+
+Eine einfache Bedingung besteht aus einem Getter und einem Prädikat.
+
+```
+{ <getter>: <value>, <predicate>: <value> }
+```
+
+**Gruppenbedingungen**
+
+Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedingungen.
+
+```
+<allOf|anyOf>:
+  - { <getter>: <value>, <predicate>: <value> }
+  - { <getter>: <value>, <predicate>: <value> }
+  - <allOf|anyOf>:
+    - { <getter>: <value>, <predicate>: <value> }
+```
+
+| **Eigenschaft** | **Typ** | **Bedeutung** |
+|---|---|---|
+| **allOf** | `array[Condition]` | **Und**-Vorgang. „True“, wenn alle aufgelisteten Bedingungen „true“ zurückgeben |
+| **anyOf** | `array[Condition]` | **Oder** Vorgang. „True“, wenn eine der aufgelisteten Bedingungen „true“ zurückgibt |
+
+**Getter**
+
+| **Eigenschaft** | **Typ** | **Beschreibung** |
+|---|---|---|
+| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von:<br><ul><li>`path`: Gibt den vollständigen Pfad einer URL ohne die Abfrageparameter zurück. (`pathRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`originalPath`: Gibt den unveränderlichen ursprünglichen Pfad der Anfrage ohne die Abfrageparameter zurück - den Pfad vor allen CDN-Anfragetransformationen.</li><li>`url`: Gibt die vollständige URL, einschließlich der Abfrageparameter zurück. (`urlRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`originalUrl`: Gibt die unveränderliche ursprüngliche vollständige URL der Anfrage einschließlich der Abfrageparameter zurück - die URL vor allen CDN-Anfragetransformationen.</li><li>`queryString`: Gibt den Abfrageteil einer URL zurück</li><li>`method`: Gibt die in der Anfrage verwendete HTTP-Methode zurück.</li><li>`tier`: Gibt entweder `author`, `preview` oder `publish` zurück.</li><li>`domain`: Gibt die Eigenschaft der Domain (wie in der `Host`-Kopfzeile definiert) in Kleinschreibung zurück</li><li>`clientIp`: Gibt die Client-IP zurück.</li><li>`forwardedDomain`: Gibt die erste Domain wie in der `X-Forwarded-Host`-Kopfzeile definiert in Kleinschreibung zurück</li><li>`forwardedIp`: Gibt die erste IP in der `X-Forwarded-For`-Kopfzeile zurück.</li><li>`clientRegion`: Gibt den Länderunterteilungs-Code zurück, der angibt, in welcher Region sich der Client befindet, wie in [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) beschrieben.</li><li>`clientCountry`: Gibt einen aus zwei Buchstaben bestehenden Code ([Regionales Indikatorsymbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) zurück, der angibt, in welchem Land sich der Client befindet.</li><li>`clientContinent`: Gibt einen aus zwei Buchstaben bestehenden Code (AF, AN, AS, EU, NA, OC, SA) zurück, der angibt, auf welchem Kontinent sich der Client befindet.</li><li>`clientAsNumber`: Gibt die [Autonomous System](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))-Nummer zurück, die mit der Client-IP verknüpft ist.</li><li>`clientAsName`: Gibt den Namen zurück, der der Autonomous System-Nummer zugeordnet ist.</li></ul> |
+| reqHeader | `string` | Gibt die Anfragekopfzeile mit dem angegebenen Namen zurück |
+| queryParam | `string` | Gibt den Abfrageparameter mit dem angegebenen Namen zurück |
+| reqCookie | `string` | Gibt ein Cookie mit dem angegebenen Namen zurück |
+| postParam | `string` | Gibt den Post-Parameter mit dem angegebenen Namen aus dem Anfragetext zurück. Funktioniert nur, wenn der Hauptteil vom Inhaltstyp `application/x-www-form-urlencoded` ist |
+
+**Prädikat**
+
+| **Eigenschaft** | **Typ** | **Bedeutung** |
+|---|---|---|
+| **gleich** | `string` | „True“, wenn das Getter-Ergebnis dem angegebenen Wert entspricht |
+| **doesNotEqual** | `string` | „True“, wenn das Getter-Ergebnis nicht dem angegebenen Wert entspricht |
+| **like** | `string` | „True“, wenn das Getter-Ergebnis mit dem angegebenen Muster übereinstimmt |
+| **notLike** | `string` | „True“, wenn das Getter-Ergebnis nicht mit dem angegebenen Muster übereinstimmt |
+| **matches** | `string` | „True“, wenn das Getter-Ergebnis mit dem angegebenen Regex übereinstimmt |
+| **doesNotMatch** | `string` | „True“, wenn das Getter-Ergebnis nicht mit dem angegebenen Regex übereinstimmt |
+| **in** | `array[string]` | „True“, wenn die angegebene Liste das Getter-Ergebnis enthält |
+| **notIn** | `array[string]` | „True“, wenn die angegebene Liste das Getter-Ergebnis nicht enthält |
+| **exists** | `boolean` | „True“, wenn auf es auf „true“ gesetzt ist und die Eigenschaft existiert, oder wenn es auf „false“ gesetzt ist und die Eigenschaft nicht vorhanden ist |
+
+**Anmerkungen**
+
+* Die Anfrageeigenschaft `clientIp` kann nur mit den folgenden Prädikaten verwendet werden: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kann bei auch mit IP-Bereichen verglichen werden, wenn die Prädikate `in` und `notIn` verwendet werden. Im folgenden Beispiel wird eine Bedingung implementiert, um zu bewerten, ob eine Client-IP im IP-Bereich von 192.168.0.0/24 liegt (also von 192.168.0.0 bis 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Adobe empfiehlt bei der Arbeit mit Regex die Verwendung von [regex101](https://regex101.com/) und [Fastly Fiddle](https://fiddle.fastly.dev/). Weitere Informationen darüber, wie Fastly mit Regex umgeht, finden Sie in der [Fastly-Dokumentation – Reguläre Ausdrücke in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 Die Details des Aktionsknotens unterscheiden sich je nach Regeltyp und sind in den einzelnen Abschnitten unten beschrieben.
 
@@ -386,7 +459,7 @@ In der folgenden Tabelle werden die verfügbaren Aktionen erläutert.
 
 Sie können das AEM-CDN nutzen, um Traffic an verschiedene Backends zu leiten, einschließlich Adobe-fremder Anwendungen (möglicherweise pro Pfad oder Subdomain).
 
-Die Anfrageeigenschaften `originalPath` und `originalUrl` sind der unveränderliche ursprüngliche Pfad (ohne Abfrageparameter) bzw. die vollständige URL (einschließlich Abfrageparameter), die jeweils vor einer CDN-[Anfrageumwandlung) &#x200B;](#request-transformations). Verwenden Sie sie unter `when` Bedingungen, wenn Sie Regeln für das verankern müssen, was der Client ursprünglich gesendet hat, und nicht für Werte, die zuvor in der Auswertungssequenz möglicherweise neu geschrieben wurden. Verwenden Sie `originalPath` für den reinen Pfadabgleich. Verwenden Sie `originalUrl`, wenn die Abfragezeichenfolge Teil der Bedingung sein muss (z. B. Routing oder Filterung nach einer bestimmten anfänglichen Anfrage-URL).
+Die Anfrageeigenschaften `originalPath` und `originalUrl` sind der unveränderliche ursprüngliche Pfad (ohne Abfrageparameter) bzw. die vollständige URL (einschließlich Abfrageparameter), die jeweils vor einer CDN-[Anfrageumwandlung) ](#request-transformations). Verwenden Sie sie unter `when` Bedingungen, wenn Sie Regeln für das verankern müssen, was der Client ursprünglich gesendet hat, und nicht für Werte, die zuvor in der Auswertungssequenz möglicherweise neu geschrieben wurden. Verwenden Sie `originalPath` für den reinen Pfadabgleich. Verwenden Sie `originalUrl`, wenn die Abfragezeichenfolge Teil der Bedingung sein muss (z. B. Routing oder Filterung nach einer bestimmten anfänglichen Anfrage-URL).
 
 Konfigurationsbeispiel:
 
@@ -447,7 +520,7 @@ Verbindungen zu Ursprüngen sind nur SSL-Verbindungen und verwenden Port 443.
 
 ### Proxys für benutzerdefinierte Domain an die statische AEM-Ebene {#proxy-custom-domain-static}
 
-Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
+Mit Urspungs-Selektoren können Sie den AEM-Veröffentlichungs-Traffic an statische AEM-Inhalte weiterleiten, die mithilfe der [Frontend-Pipeline) bereitgestellt ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Anwendungsfälle sind die Bereitstellung von statischen Ressourcen auf derselben Domain wie die Seite (z. B. example.com/static) oder auf einer explizit anderen Domain (z. B. static.example.com).
 
 Im Folgenden finden Sie ein Beispiel einer Ursprungs-Auswahlregel, mit der dies erreicht werden kann:
 

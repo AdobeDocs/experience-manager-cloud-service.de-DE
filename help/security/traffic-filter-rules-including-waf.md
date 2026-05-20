@@ -4,9 +4,9 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
+source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
 workflow-type: tm+mt
-source-wordcount: '4819'
+source-wordcount: '4306'
 ht-degree: 96%
 
 ---
@@ -141,75 +141,9 @@ Das Format der Traffic-Filterregeln in der Datei `cdn.yaml` wird im Folgenden be
 | **Eigenschaft** | **Die meisten Traffic-Filterregeln** | **WAF-Traffic-Filterregeln** | **Typ** | **Standardwert** | **Beschreibung** |
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Regelname (64 Zeichen lang, darf nur alphanumerische Zeichen und „-“ enthalten.) |
-| wenn | X | X | `Condition` | - | Die Grundstruktur ist:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Siehe Syntax für Bedingungsstruktur](#condition-structure) weiter unten, in dem die Getter, Eigenschaften und die Kombination mehrerer Bedingungen beschrieben werden. |
+| wenn | X | X | `Condition` | - | Die grundlegende Struktur ist:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>Siehe [Bedingungsstruktur](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) unter „Konfigurieren von *im CDN* für Getter, Prädikate und die Kombination mehrerer Bedingungen. |
 | Aktion | X | X | `Action` | protokollieren | protokollieren, zulassen, blockieren oder Aktionsobjekt. Standard ist „protokollieren“ |
 | rateLimit | X |   | `RateLimit` | nicht definiert | Ratenbegrenzungskonfiguration. Die Ratenbegrenzung ist deaktiviert, wenn sie nicht definiert ist.<br><br>Weiter unten finden Sie einen separaten Abschnitt mit einer Beschreibung der rateLimit-Syntax sowie Beispiele. |
-
-### Bedingungsstruktur {#condition-structure}
-
-Eine Bedingung kann entweder eine einfache Bedingung oder eine Gruppe von Bedingungen sein.
-
-**Einfache Bedingung**
-
-Eine einfache Bedingung besteht aus einem Getter und einem Prädikat.
-
-```
-{ <getter>: <value>, <predicate>: <value> }
-```
-
-**Gruppenbedingungen**
-
-Eine Gruppe von Bedingungen besteht aus mehreren einfachen und/oder Gruppenbedingungen.
-
-```
-<allOf|anyOf>:
-  - { <getter>: <value>, <predicate>: <value> }
-  - { <getter>: <value>, <predicate>: <value> }
-  - <allOf|anyOf>:
-    - { <getter>: <value>, <predicate>: <value> }
-```
-
-| **Eigenschaft** | **Typ** | **Bedeutung** |
-|---|---|---|
-| **allOf** | `array[Condition]` | **Und**-Vorgang. „True“, wenn alle aufgelisteten Bedingungen „true“ zurückgeben |
-| **anyOf** | `array[Condition]` | **Oder** Vorgang. „True“, wenn eine der aufgelisteten Bedingungen „true“ zurückgibt |
-
-**Getter**
-
-| **Eigenschaft** | **Typ** | **Beschreibung** |
-|---|---|---|
-| reqProperty | `string` | Anfrageeigenschaft.<br><br>Eines von:<br><ul><li>`path`: Gibt den vollständigen Pfad einer URL ohne die Abfrageparameter zurück. (`pathRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`originalPath`: Gibt den unveränderlichen ursprünglichen Pfad der Anfrage ohne die Abfrageparameter zurück - den Pfad vor allen CDN-Anfragetransformationen.</li><li>`url`: Gibt die vollständige URL, einschließlich der Abfrageparameter zurück. (`urlRaw` für die Variante ohne Escape-Zeichen verwenden)</li><li>`originalUrl`: Gibt die unveränderliche ursprüngliche vollständige URL der Anfrage einschließlich der Abfrageparameter zurück - die URL vor allen CDN-Anfragetransformationen.</li><li>`queryString`: Gibt den Abfrageteil einer URL zurück</li><li>`method`: Gibt die in der Anfrage verwendete HTTP-Methode zurück.</li><li>`tier`: Gibt entweder `author`, `preview` oder `publish` zurück.</li><li>`domain`: Gibt die Eigenschaft der Domain (wie in der `Host`-Kopfzeile definiert) in Kleinschreibung zurück</li><li>`clientIp`: Gibt die Client-IP zurück.</li><li>`forwardedDomain`: Gibt die erste Domain wie in der `X-Forwarded-Host`-Kopfzeile definiert in Kleinschreibung zurück</li><li>`forwardedIp`: Gibt die erste IP in der `X-Forwarded-For`-Kopfzeile zurück.</li><li>`clientRegion`: Gibt den Länderunterteilungs-Code zurück, der angibt, in welcher Region sich der Client befindet, wie in [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) beschrieben.</li><li>`clientCountry`: Gibt einen aus zwei Buchstaben bestehenden Code ([Regionales Indikatorsymbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) zurück, der angibt, in welchem Land sich der Client befindet.</li><li>`clientContinent`: Gibt einen aus zwei Buchstaben bestehenden Code (AF, AN, AS, EU, NA, OC, SA) zurück, der angibt, auf welchem Kontinent sich der Client befindet.</li><li>`clientAsNumber`: Gibt die [Autonomous System](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))-Nummer zurück, die mit der Client-IP verknüpft ist.</li><li>`clientAsName`: Gibt den Namen zurück, der der Autonomous System-Nummer zugeordnet ist.</li></ul> |
-| reqHeader | `string` | Gibt die Anfragekopfzeile mit dem angegebenen Namen zurück |
-| queryParam | `string` | Gibt den Abfrageparameter mit dem angegebenen Namen zurück |
-| reqCookie | `string` | Gibt ein Cookie mit dem angegebenen Namen zurück |
-| postParam | `string` | Gibt den Post-Parameter mit dem angegebenen Namen aus dem Anfragetext zurück. Funktioniert nur, wenn der Hauptteil vom Inhaltstyp `application/x-www-form-urlencoded` ist |
-
-**Prädikat**
-
-| **Eigenschaft** | **Typ** | **Bedeutung** |
-|---|---|---|
-| **gleich** | `string` | „True“, wenn das Getter-Ergebnis dem angegebenen Wert entspricht |
-| **doesNotEqual** | `string` | „True“, wenn das Getter-Ergebnis nicht dem angegebenen Wert entspricht |
-| **like** | `string` | „True“, wenn das Getter-Ergebnis mit dem angegebenen Muster übereinstimmt |
-| **notLike** | `string` | „True“, wenn das Getter-Ergebnis nicht mit dem angegebenen Muster übereinstimmt |
-| **matches** | `string` | „True“, wenn das Getter-Ergebnis mit dem angegebenen Regex übereinstimmt |
-| **doesNotMatch** | `string` | „True“, wenn das Getter-Ergebnis nicht mit dem angegebenen Regex übereinstimmt |
-| **in** | `array[string]` | „True“, wenn die angegebene Liste das Getter-Ergebnis enthält |
-| **notIn** | `array[string]` | „True“, wenn die angegebene Liste das Getter-Ergebnis nicht enthält |
-| **exists** | `boolean` | „True“, wenn auf es auf „true“ gesetzt ist und die Eigenschaft existiert, oder wenn es auf „false“ gesetzt ist und die Eigenschaft nicht vorhanden ist |
-
-**Anmerkungen**
-
-* Die Anfrageeigenschaft `clientIp` kann nur mit den folgenden Prädikaten verwendet werden: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kann bei auch mit IP-Bereichen verglichen werden, wenn die Prädikate `in` und `notIn` verwendet werden. Im folgenden Beispiel wird eine Bedingung implementiert, um zu bewerten, ob eine Client-IP im IP-Bereich von 192.168.0.0/24 liegt (also von 192.168.0.0 bis 192.168.0.255):
-
-```
-when:
-  reqProperty: clientIp
-  in: [ "192.168.0.0/24" ]
-```
-
-* Adobe empfiehlt bei der Arbeit mit Regex die Verwendung von [regex101](https://regex101.com/) und [Fastly Fiddle](https://fiddle.fastly.dev/). Weitere Informationen darüber, wie Fastly mit Regex umgeht, finden Sie in der [Fastly-Dokumentation – Reguläre Ausdrücke in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
-
 
 ### Aktionsstruktur {#action-structure}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie CDN-Anmeldeinformationen und die Authentifizi
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
+source-git-commit: 7fab8d47706274bf30716f0433757789ea1248c1
 workflow-type: tm+mt
-source-wordcount: '2282'
-ht-degree: 88%
+source-wordcount: '2273'
+ht-degree: 86%
 
 ---
 
@@ -105,7 +105,7 @@ data:
           authenticator: edge-auth
 ```
 
-Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige &#x200B;](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
+Weitere Code-Snippets für gängige Szenarien finden Sie im Artikel [CDN-Konfigurations-Snippets für gängige ](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)&quot;.
 
 Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Wert der Eigenschaft `kind` sollte *CDN* sein, und die Eigenschaft `version` sollte auf `1` festgelegt werden.
 
@@ -123,7 +123,7 @@ Weitere Eigenschaften sind:
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet werden sollen, und ob es sich um die Veröffentlichungs- und/oder die Vorschaustufe handelt.  Folgendes ist enthalten:
    * name – eine beschreibende Zeichenfolge.
-   * when – eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax im Artikel [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) beurteilt werden soll. Typischerweise umfasst dies einen Vergleich der aktuellen Stufe (z. B. die Veröffentlichungsstufe), sodass der gesamte Live-Traffic beim Routing über das Kunden-CDN validiert wird.
+   * when - eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax in „Bedingungsstruktur[ ausgewertet ](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typischerweise umfasst dies einen Vergleich der aktuellen Stufe (z. B. die Veröffentlichungsstufe), sodass der gesamte Live-Traffic beim Routing über das Kunden-CDN validiert wird.
    * action – muss „authenticate“ angeben, wobei auf den vorgesehenen Authentifizierer verwiesen wird.
 
 >[!NOTE]
@@ -223,7 +223,7 @@ Weitere Eigenschaften sind:
    * purgeKey2 – wird für die Rotation von Geheimnissen verwendet, wie unten im Abschnitt [Rotieren von Geheimnissen](#rotating-secrets) beschrieben. Von `purgeKey1` und `purgeKey2` muss mindestens einer deklariert werden.
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet werden sollen, und ob es sich um die Veröffentlichungs- und/oder die Vorschaustufe handelt.  Folgendes ist enthalten:
    * name – eine beschreibende Zeichenfolge
-   * when – eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax im Artikel [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) beurteilt werden soll. Typischerweise umfasst dies einen Vergleich der aktuellen Stufe (z. B. die Veröffentlichungsstufe).
+   * when - eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax in „Bedingungsstruktur[ ausgewertet ](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typischerweise umfasst dies einen Vergleich der aktuellen Stufe (z. B. die Veröffentlichungsstufe).
    * action – muss „authenticate“ angeben, wobei auf den vorgesehenen Authentifizierer verwiesen wird.
 
 >[!NOTE]
@@ -274,10 +274,10 @@ Darüber hinaus enthält die Syntax Folgendes:
    * type – muss `basic` sein.
    * ein Array von bis zu 10 Anmeldeinformationen, die jeweils die folgenden Name/Wert-Paare enthalten, die Endbenutzende im Dialogfeld der einfachen Authentifizierung eingeben können:
       * user – der Name der Benutzerin bzw. des Benutzers.
-      * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ &#x200B;](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
+      * password – Der Wert muss auf eine [Cloud Manager-Umgebungsvariable vom Typ „secret“ ](/help/operations/config-pipeline.md#secret-env-vars) verweisen, wobei **Alle** als Dienstfeld ausgewählt ist.
 * Regeln: Hier können Sie angeben, welche der Authentifizierer verwendet und welche Ressourcen geschützt werden sollen. Jede Regel umfasst:
    * name – eine beschreibende Zeichenfolge
-   * when – eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax im Artikel [Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md) beurteilt werden soll. Typischerweise umfasst dies einen Vergleich der Veröffentlichungsstufe oder bestimmter Pfade.
+   * when - eine Bedingung, die bestimmt, wann die Regel gemäß der Syntax in „Bedingungsstruktur[ ausgewertet ](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typischerweise umfasst dies einen Vergleich der Veröffentlichungsstufe oder bestimmter Pfade.
    * action – muss „authenticate“ angeben, wobei auf den vorgesehenen Authentifizierer verwiesen wird. In diesem Fall ist dies der einfache Authentifizierer.
 
 >[!NOTE]
