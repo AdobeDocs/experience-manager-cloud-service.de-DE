@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 83%
+source-wordcount: '593'
+ht-degree: 63%
 
 ---
 
@@ -19,11 +19,11 @@ Erfahren Sie, wie Sie von Cloud Manager über wichtige Ereignisse benachrichtigt
 
 ## Benachrichtigungen in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] sendet Ihnen zu Beginn einer Produktionsbereitstellung beim Start und beim Abschluss der Produktions-Pipeline (erfolgreich oder nicht erfolgreich) Benachrichtigungen.
+[!UICONTROL Cloud Manager] sendet Ihnen Benachrichtigungen, wenn eine Produktions-Pipeline zu Beginn einer Produktionsbereitstellung gestartet und abgeschlossen wird (erfolgreich oder nicht erfolgreich).
 
 Diese Benachrichtigungen werden über das [!UICONTROL Experience Cloud]-Benachrichtigungssystem an Benutzer mit den Rollen **Geschäftsinhaber**, **Programm-Manager** und **Bereitstellungs-Manager** gesendet.
 
-Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt. Das Glockensymbol in der Kopfzeile zeigt ein Badge, wenn es neue Benachrichtigungen für Sie gibt.
+Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt. Dem Glockensymbol in der Kopfzeile wird ein Badge zugewiesen, wenn Sie neue Benachrichtigungen erhalten.
 
 ![Benachrichtigungssymbol](assets/notifications-bell-badged.png)
 
@@ -51,7 +51,7 @@ Klicken Sie auf das Zahnradsymbol oben in der Benachrichtigungsseitenleiste, um 
 
 ### Abonnements {#subscriptions}
 
-Mit den Abonnements legen Sie fest, welche Benachrichtigungen Sie für welche Produkte erhalten.
+Abonnements definieren, für welche Produkte Sie Benachrichtigungen erhalten und welche Arten von Benachrichtigungen.
 
 ![Abonnements für Benachrichtigungen](assets/notifications-subscriptions.png)
 
@@ -65,7 +65,7 @@ Prioritätswarnungen werden mit einem **HOCH**-Tag gekennzeichnet. Sie können s
 
 ![Benachrichtigungspriorität](assets/notifications-priority.png)
 
-Verwenden Sie die Dropdown-Liste, um die Liste der Kategorien zu erweitern, die als prioritär eingestuft werden. Klicken Sie auf das X neben den Kategorienamen, um sie zu entfernen.
+Verwenden Sie das Dropdown-Menü, um die Liste der Kategorien zu erweitern, die als prioritär eingestuft werden. Klicken Sie auf X neben den Kategorienamen, um sie zu entfernen.
 
 ### Warnhinweise {#alerts}
 
@@ -85,10 +85,10 @@ Benachrichtigungen sind in der Web-Benutzeroberfläche aller Adobe [!UICONTROL E
 
 ![Benachrichtigungs-E-Mails](assets/notifications-emails.png)
 
-Standardmäßig werden keine E-Mails versendet. Sie haben für den E-Mail-Empfang folgende Wahlmöglichkeiten:
+Standardmäßig werden keine E-Mails gesendet. Sie haben für den E-Mail-Empfang folgende Wahlmöglichkeiten:
 
 * Sofort
 * Täglich
 * Wöchentlich
 
-Wenn Sie **Sofortige Benachrichtigungen** auswählen, werden für jede Benachrichtigung sofort E-Mails gesendet. Bei einer **täglichen Zusammenfassung** können Sie die Uhrzeit und bei einer **wöchentlichen Zusammenfassung** können Sie den Tag und die Uhrzeit des Versands auswählen.
+Wenn Sie **Sofortige Benachrichtigungen** auswählen, werden für jede Benachrichtigung sofort E-Mails gesendet. Für **Tägliche Zusammenfassung** und **Wöchentliche Zusammenfassung** können Sie auswählen, wann Ihre tägliche Zusammenfassung gesendet wird und an welchem Tag und wann Ihre wöchentliche Zusammenfassung gesendet wird.

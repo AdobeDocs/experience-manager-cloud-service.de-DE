@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM di
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 5745156078fe3e3e72e293938c065a1340228b9a
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 5%
+source-wordcount: '396'
+ht-degree: 4%
 
 ---
 
@@ -21,6 +21,7 @@ Der Experience Production Agent automatisiert Aufgaben mit hohem Aufwand und hoh
 Der Agent bietet die folgenden Aufträge:
 
 * [Inhaltsaktualisierung](#content-update)
+* [Content-Erstellung](#content-create)
 * [Formularerstellung](#form-creation)
 * [Erstellung von Kommunikationen](#communications-creation)
 
@@ -32,7 +33,17 @@ Der Agent bietet die folgenden Aufträge:
 
 ### Auftrag zur Inhaltsaktualisierung {#content-update}
 
-Der Auftrag [Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) aktualisiert vorhandene Inhalte - einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets - mit Leichtigkeit. Der Agent kann Aktionen wie das Aktualisieren, Entfernen, Ersetzen oder Hinzufügen von Inhaltselementen durchführen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein und bei Verwendung mit Jira-PDFs und Screenshots auch Eingaben liefern.
+Der Auftrag [Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) aktualisiert vorhandene Inhalte - einschließlich Inhaltsfragmenten, Seiten, Formularen und Assets - mit Leichtigkeit. Der Agent kann Aktionen wie das Aktualisieren, Entfernen, Ersetzen und Hinzufügen von Inhaltselementen durchführen, um Erlebnisse genau und aktuell zu halten. Eingaben können Beschreibungen in natürlicher Sprache sein, und wenn sie mit Jira verwendet werden, können PDFs und Screenshots auch Eingaben liefern.
+
+### Auftrag zur Inhaltserstellung {#content-create}
+
+Der Auftrag [Content erstellen](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) erstellt neue Seiten basierend auf einer Marketing-Zusammenfassung, einer Vorlage und einer Eingabeaufforderung in natürlicher Sprache.
+
+>[!NOTE]
+>
+>Der Auftrag zur Inhaltserstellung ist derzeit eingeschränkt verfügbar.
+>
+>Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Formularerstellungsauftrag {#form-creation}
 
@@ -56,4 +67,4 @@ Der Agent kann mit anderen Agentenfähigkeiten arbeiten, Beispiele sind:
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_de) für angeleitete, praktische Anweisungen verwenden.

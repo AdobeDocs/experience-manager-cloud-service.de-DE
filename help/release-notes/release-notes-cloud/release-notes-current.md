@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: eff4f08ec399314df49246eb7431f5b100493780
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 30%
+source-wordcount: '2157'
+ht-degree: 29%
 
 ---
 
@@ -107,6 +107,9 @@ Sie können jetzt genehmigte Assets aus AEM Assets direkt in Ihren bevorzugten P
 
 ### Neue Funktionen in AEM Forms
 
+* **Versionierungsunterstützung in Forms Manager**
+Forms Manager [unterstützt jetzt die Versionierung für adaptive Forms (Kernkomponenten und Foundation-Komponenten](/help/forms/manage-form-versions-forms-manager.md), Formularfragmente, Designs, XDP-Vorlagen und binäre Assets. Erstellen Sie Versionen, zeigen Sie den vollständigen Versionsverlauf an und stellen Sie frühere Status Ihrer Formular-Assets direkt über die Konsole Forms und Dokumente wieder her.
+
 * **Überschreiben der reCAPTCHA-Cloud-Konfiguration mit OSGi** 
 ReCAPTCHA Enterprise-Projekt-IDs, Site-Schlüssel und Geheimnisse, die Sie mit Ihren Quelldateien aufbewahren, können in jeder Cloud Service-Umgebung in unterschiedliche Werte aufgelöst werden, nachdem Sie [die kontextabhängige Außerkraftsetzung der Konfiguration hinzufügen und über Cloud Manager bereitstellen](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 
@@ -134,6 +137,13 @@ Erfahren Sie mehr über [Lokale Entwicklung mit KI](/help/ai-in-aem/local-develo
 >[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Experience Governance MCP-Server {#gov-mcp-server}
+
+### Neue Funktionen in AEM Forms {#forms-new-features}
+
+**Versionierungsunterstützung in Forms Manager**
+Forms Manager [unterstützt jetzt die Versionierung für adaptive Forms (Kernkomponenten und Foundation-Komponenten](/help/forms/manage-form-versions-forms-manager.md), Formularfragmente, Designs, XDP-Vorlagen und binäre Assets. Erstellen Sie Versionen, zeigen Sie den vollständigen Versionsverlauf an und stellen Sie frühere Status Ihrer Formular-Assets direkt über die Konsole Forms und Dokumente wieder her.
+
+### Early-Access-Funktionen in AEM Forms {#forms-early-access-features}
 
 Der Experience Governance MCP-Server ist jetzt allgemein verfügbar (GA). Es lässt sich mit KI-Entwickler-Tools und Chatbots integrieren, die das Model Context Protocol (MCP) unterstützen, sodass Sie die Markenintegrität und -konformität mithilfe natürlicher Sprachaufforderungen in Ihrem Chatbot oder Ihrer IDE schützen können. Sie können Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenverwaltung auswerten und Markenkonfigurationen und verfügbare Governance-Prüfungen abrufen.
 

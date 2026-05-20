@@ -4,14 +4,13 @@ description: Schnelleres Erstellen leistungsstarker Formulare mithilfe von Formu
 feature: Edge Delivery Services
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 32%
+source-wordcount: '581'
+ht-degree: 33%
 
 ---
 
@@ -55,8 +54,6 @@ Transformieren vorhandener Dokumente in interaktive digitale Erlebnisse. Forms E
 >[!VIDEO](https://video.tv.adobe.com/v/3463164/)
 
 ## Onboarding und Voraussetzungen
-
-Forms Experience Builder ist derzeit über ein Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie von Ihrer offiziellen E-Mail-ID eine E[&#128279;](mailto:aem-forms-ea@adobe.com)Mail an aem-forms-ea@adobe.com.
 
 Experience Builder erfordert eine AEM Forms as a Cloud Service-Produktions-Autorenumgebung mit [Adaptive Forms-Kernkomponenten](/help/forms/enable-adaptive-forms-core-components.md).
 

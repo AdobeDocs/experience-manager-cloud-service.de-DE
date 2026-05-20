@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 24a995f6e487b7870ebc84e06107a26442d541c3
 workflow-type: tm+mt
-source-wordcount: '2223'
-ht-degree: 82%
+source-wordcount: '2232'
+ht-degree: 78%
 
 ---
 
@@ -52,7 +52,6 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
    >Sie können ein Modell auch direkt nach dem [Erstellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) öffnen.
 
 1. Öffnen Sie das gewünschte Modell für **Bearbeiten** verwenden Sie einen der Schnellzugriff-Links oder wählen Sie das Modell und dann die Aktion in der Symbolleiste aus.
-
 
    ![Eigenschaften](assets/cf-cfmodels-empty-model.png)
 
@@ -162,10 +161,10 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
       * Erstellen neuer Instanzen des Felds
    * Die Referenz gibt den Pfad zur referenzierten Ressource an, z. B. `/content/dam/path/to/resource`.
 
-     <!--
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -179,10 +178,10 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
    * Das Feld kann so konfiguriert werden, dass Fragmentautorinnen und -autoren neue Instanzen des Felds erstellen können.
    * Die Referenz gibt den Pfad zur referenzierten Ressource an, z. B. `/content/dam/path/to/resource`.
 
-     <!--
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -224,10 +223,10 @@ Viele Eigenschaften sind selbsterklärend. Im Folgenden finden Sie weitere Infor
   Die verschiedenen Möglichkeiten, das Feld in einem Fragment zu erstellen/zu rendern. Oft können Sie damit festlegen, ob dem Autor oder der Autorin nur eine einzige Instanz des Feldes angezeigt wird oder ob mehrere Instanzen erstellt werden dürfen. Wenn **Mehrere Felder** verwendet wird, können Sie die Mindest- und Höchstanzahl der Elemente definieren. Siehe [Validierung](#validation) für weitere Informationen.
 
 * **Feldbezeichnung**
-Das Eingeben einer **Feldbezeichnung** generiert automatisch einen **Eigenschaftsnamen**, der dann bei Bedarf manuell aktualisiert werden kann.
+Durch Eingabe einer **Feldbezeichnung** wird automatisch ein **Eigenschaftsname** generiert, der bei Bedarf manuell aktualisiert werden kann.
 
 * **Validierung**
-Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
+Die einfache Validierung ist über Mechanismen wie die Eigenschaft **erforderlich** verfügbar. Einige Datentypen verfügen über zusätzliche Validierungsfelder. Weitere Informationen finden Sie unter [Validierung](#validation).
 
 * Beim Datentyp **Mehrzeilentext** können Sie den **Standardtyp** folgendermaßen definieren:
 
@@ -239,8 +238,8 @@ Die grundlegende Basic ist mittels Mechanismen wie etwa die Eigenschaft **Erford
 
   Änderungen am **Standardtyp** in einem Fragmentmodell werden erst dann auf vorhandene, zugehörige Inhaltsfragmente angewendet, wenn das Fragment im Editor geöffnet und gespeichert wurde.
 
-* **Eindeutig**
-Der Inhalt (für das spezifische Feld) muss für alle Inhaltsfragmente, die anhand des aktuellen Modells erstellt werden, eindeutig sein.
+* **eindeutig**
+Inhalte (für das spezifische Feld) müssen in allen aus dem aktuellen Modell erstellten Inhaltsfragmenten eindeutig sein.
 
   Dadurch wird sichergestellt, dass Inhaltsersteller Content, der bereits einem anderen Fragment desselben Modells hinzugefügt wurde, nicht wiederholen können.
 
@@ -305,7 +304,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
      >[!NOTE]
      >
      >Diese Methode ist vor allem bei der Verwendung in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) interessant.
-   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
+   * Kann für eine oder mehrere Referenzen konfiguriert werden (im resultierenden Fragment).
 
 <!--
 >[!NOTE]
@@ -317,11 +316,9 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >
 >AEM bietet Schutz vor Intervallen für:
 >
->* Inhaltsverweise
->  Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
+>* Inhaltsverweise>  Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
 >
->* Fragmentreferenzen in GraphQL
->  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
+>* Fragmentreferenzen in GraphQL>  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
 
 >[!CAUTION]
 >
@@ -397,8 +394,8 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes definieren:
 * **Modelltyp**
 Es können mehrere Modelle ausgewählt werden. Beim Hinzufügen von Referenzen zu einem Inhaltsfragment müssen alle referenzierten Fragmente mit diesen Modellen erstellt worden sein.
 
-* **Stammpfad**
-Gibt einen Stammpfad für referenzierte Fragmente an.
+* **Stammverzeichnis**
+Dies gibt einen Stammpfad für alle Fragmente an, auf die verwiesen wird, oder stellt diesen dar.
 
 * **Fragmenterstellung zulassen**
 

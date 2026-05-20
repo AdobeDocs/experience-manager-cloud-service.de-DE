@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
+source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 9%
+source-wordcount: '1521'
+ht-degree: 15%
 
 ---
 
@@ -27,14 +27,14 @@ Der Health Assessment Service hat folgende Aufgaben:
 
 Bei jeder Ausführung werden Probleme nach Schweregrad, Links zu Anleitungen und empfohlenen Fehlerbehebungen aufgelistet und ein PDF-Export des Berichts unterstützt. Sie können die Ansicht **Neuester Bericht** für den aktuellen Status und **vergangene Berichte)**, um Ausführungen zu vergleichen.
 
-Regeldefinitionen und Details zur [&#x200B; finden Sie unter &#x200B;](#ha-patterns)Konsistenzbewertungsmuster“.
+Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Konsistenzbewertungsmuster“.
 
 ## Zugriff auf die Seite „Konsistenzbewertung“ {#access-health-assessment}
 
 1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
 1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie die gewünschte Organisation aus. Die Abbildung unten dient zur Veranschaulichung. Wählen Sie Ihren eigenen Organisationsnamen aus.
+1. Wählen Sie eine Organisation aus, die Sie verwenden möchten. Die Abbildung unten dient zur Veranschaulichung. Wählen Sie Ihren eigenen Organisationsnamen aus.
 
    ![Organisation in Cloud Manager auswählen](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
@@ -45,7 +45,7 @@ Regeldefinitionen und Details zur [&#x200B; finden Sie unter &#x200B;](#ha-patte
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Karte Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
 
-   * Klicken Sie im linken Menü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **&#x200B;**&#x200B;aus dem Menü aus.
+   * Klicken Sie im linken Seitenmenü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **&#x200B;**&#x200B;aus dem Menü aus.
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Seite Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
 
@@ -115,7 +115,7 @@ Regeldefinitionen und Details zur [&#x200B; finden Sie unter &#x200B;](#ha-patte
 
 ![Vergangene Berichte überprüfen](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
-* Klicken Sie rechts neben der Überschrift **Frühere Berichte** auf ![Pfeil nach unten oder Dropdown-Menü, um eine andere Umgebung auszuwählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg), um vergangene Berichte nach Datum zu sortieren.
+* Klicken Sie rechts neben der Überschrift **Vergangene Berichte** auf ![Pfeil nach unten oder Dropdown-Menü, um eine andere Umgebung auszuwählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) um vergangene Berichte nach Datum zu sortieren.
 * Ganz rechts neben einem Bericht auf das Symbol mit ![&#x200B; Auslassungspunkten oder das Symbol Mehr &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und dann auf **Details anzeigen** oder **Herunterladen**.
 
 

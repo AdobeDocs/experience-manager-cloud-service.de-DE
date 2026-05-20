@@ -13,8 +13,8 @@ cloud: Experience Cloud
 recommendations: noDisplay
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 51%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 51%
 Metadaten im GitHub-Authoring-System sind hierarchisch und werden in den folgenden zunehmenden Präzedenzfällen definiert.
 
 1. metadata.md
-1. IHV
+1. toC
 1. Artikel
 
-Die in der Datei „metadata.md“ definierten Metadaten gelten für den gesamten Bericht, können jedoch auf der IHV- (ToC) und der Artikelebene überschrieben werden. Das Überschreiben der Metadaten sollte auf der niedrigstmöglichen Ebene erfolgen.
+Metadaten, die in der Datei „metadata.md“ definiert sind, gelten für das gesamte Repository, können jedoch auf der Inhaltsverzeichnis- und Artikelebene überschrieben werden. Jede Überschreibung der Metadaten sollte auf der niedrigstmöglichen Ebene erfolgen.
 
 Die Metadaten im Repository experience-manager-cloud-service.en sind das erforderliche Minimum.
 
@@ -43,7 +43,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-IHVs
+toCS
 
 * `sub-product`
 * `user-guide-title`

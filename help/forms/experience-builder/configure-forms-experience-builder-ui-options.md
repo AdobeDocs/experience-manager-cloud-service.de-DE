@@ -3,11 +3,10 @@ title: Konfigurieren der UI-Optionen von Forms Experience Builder
 description: Erfahren Sie, wie Sie die Optionen und Einstellungen der Benutzeroberfläche von Forms Experience Builder konfigurieren und anpassen, um ein optimales Benutzererlebnis zu erzielen.
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%

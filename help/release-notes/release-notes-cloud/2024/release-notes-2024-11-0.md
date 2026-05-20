@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2024.11.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 98%
+source-wordcount: '2217'
+ht-degree: 94%
 
 ---
 
@@ -87,6 +87,22 @@ Die Assets-Ansicht ermöglicht Ihnen jetzt den Zugriff auf Dynamic Media und Dyn
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
+* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative KI für adaptives Forms bietet ein völlig neues Leistungsniveau und vereinfacht die Entwicklung von Formularen. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
+
+  ![Generativer KI-Assistent, adaptive Formulare](/help/forms/assets/generative-ai-assistant.png)
+
+  Die folgenden generativen KI-Funktionen stehen zur Verfügung:
+
+   * **KI-Assistent für Produktanfragen**: Erhalten Sie sofortige Antworten auf Ihre Fragen zu AEM Forms. Der KI-Assistent fungiert als Ihre persönliche Wissensdatenbank und bietet hilfreiche Anleitungen und Empfehlungen direkt innerhalb der Plattform.
+
+   * **Erstellung von adaptiven Formularen**: Erstellen Sie mühelos vollständige Formulare mit generativen KI-Prompts. Die generative KI von Adobe generiert automatisch benutzerfreundliche Formulare, durch die Abbrüche reduziert werden und das Erlebnis personalisiert wird.
+
+   * **Bereichsgenerierung für Forms**: Generieren Sie Formularabschnitte, die auf bestimmte Datenerfassungsanforderungen zugeschnitten sind. Generieren Sie beispielsweise Abschnitte zum Erfassen von Zahlungsinformationen, Kundenpräferenzen oder Reisedetails.
+
+   * **Ändern von Formular-Layouts**: Experimentieren Sie mit verschiedenen Layouts und Designs mithilfe von generativen KI-Prompts. Probieren Sie verschiedene Layouts wie Assistenten- oder Registerkartenansichten aus, um Ihr Formular optimal zu gestalten. Verwenden Sie generative KI-Prompts, um die Reaktivität Ihrer Formulare auf Mobilgeräten zu optimieren und visuell ansprechende Formulare zu erstellen, die von Benutzenden gern verwendet werden.
+
+   * **Konfigurieren der Übermittlungsaktion**: Verwenden Sie generative KI-Prompts, um mühelos eine Übermittlungsaktion für Ihr Formular zu konfigurieren. Treffen Sie Ihre Wahl aus einer Bibliothek vorkonfigurierter Übermittlungsaktionen oder aus benutzerdefinierten Übermittlungsaktionen, die von Ihrem Entwicklungs-Team erstellt und bereitgestellt wurden.
+
 * **[Adobe Sign-Bereiche einfach aktualisieren](/help/forms/adobe-sign-integration-adaptive-forms.md)**: Sie können die Bereiche einer Adobe Sign-Konfiguration direkt auf der Seite „AEM Cloud-Konfigurationen“ ändern, um bestehende Konfigurationen schneller und leichter zu aktualisieren.
 
 * **[Unterstützung von asynchronen Funktionen für adaptive Formulare](/help/forms/using-async-funct-in-rule-editor.md)**: Wenn für Ihr adaptives Formular asynchrone Vorgänge erforderlich sind, z. B. das Warten auf externe Prozesse oder das Abrufen von Daten, können Sie diese Vorgänge mit benutzerdefinierten Funktionen implementieren und im Regel-Editor konfigurieren.
@@ -151,7 +167,7 @@ intuitive and improving the mobile form-filling experience.
 
 >[!IMPORTANT]
 >
-> Möchten Sie am Early-Access-Programm für Forms-Innovationen teilnehmen? Senden Sie von Ihrer offiziellen E-Mail-Adresse eine Nachricht an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit der Liste der Funktionen, an denen Sie interessiert sind.## CIF-Add-on {#cloud-services-cif}
+> Möchten Sie am Early-Access-Programm für Forms-Innovationen teilnehmen? Senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) mit der Liste der Funktionen, die Sie interessieren.## Add-on für CIF {#cloud-services-cif}
 
 ## CIF-Add-on {#cif}
 
@@ -174,10 +190,10 @@ Erfahren Sie mehr über [OpenAPI-basierte AEM-APIs](/help/implementing/developin
 
 Konkret sind die unten aufgeführten API-Endpunkte im Rahmen eines Early-Adopter-Programms verfügbar. Wenn Sie daran interessiert sind, senden Sie eine E-Mail an [aem-apis@adobe.com](mailto:aem-apis@adobe.com), in der Sie beschreiben, wie Sie die API-Endpunkte verwenden möchten.
 
-* [Sites-Inhaltsfragmente-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de)
+* [Sites-Inhaltsfragment-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * Sites- und Assets-Ordner-APIs
-* [Forms-Kommunikationen-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [Forms Communications-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
 

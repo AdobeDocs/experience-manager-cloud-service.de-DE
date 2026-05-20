@@ -5,16 +5,14 @@ feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 7%
+source-wordcount: '412'
+ht-degree: 6%
 
 ---
 
 # Verwalten von Formularversionen in Assets in der Benutzeroberfläche von Forms Manager
-
-<span class="preview"> Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
 Forms Manager unterstützt jetzt die Versionierung für Formular-Assets. Sie können Versionen erstellen, den Versionsverlauf anzeigen und frühere Versionen Ihrer Assets über die Forms Manager-Benutzeroberfläche wiederherstellen.
 
@@ -31,7 +29,7 @@ Sie können Versionen für die folgenden Asset-Typen erstellen und verwalten:
 | XDP-Vorlagen | XFA-basierte Formularvorlagen |
 | Binäre Assets | Andere Dateien, die unter dem Forms DAM-Repository gespeichert sind |
 
-## Erstellen einer Version {#create-version-forms-manager}
+## Version erstellen {#create-version-forms-manager}
 
 So erstellen Sie eine Version eines Formular-Assets:
 

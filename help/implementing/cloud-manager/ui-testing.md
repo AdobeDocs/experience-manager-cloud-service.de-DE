@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 72%
+source-wordcount: '2891'
+ht-degree: 63%
 
 ---
 
@@ -26,11 +26,11 @@ Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine option
 
 AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere IT-Testgates ermöglichen bereits die Erstellung und Automatisierung von benutzerdefinierten Tests mithilfe von AEM-APIs.
 
-UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Ein Projekt für UI-Tests kann auch einfach mithilfe des [AEM-Projektarchetyps](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) erzeugt werden.
+UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Außerdem kann ein Benutzeroberflächen-Testprojekt einfach mithilfe des [AEM-Projektarchetyps) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) werden.
 
 Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automatisches Warten ermöglicht, was Zeit spart und die Produktivität beim Testen steigert. Cypress bietet auch eine einfache und intuitive Syntax, die auch für Benutzende, die noch nicht mit Tests vertraut sind, leicht zu erlernen und zu verwenden ist.
 
-Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle UI-Tests, einschließlich Regression und neue Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
+Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
 Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
 
@@ -64,9 +64,9 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Einrichten von Benu
 
 ## Erstellen von Benutzeroberflächentests {#building-ui-tests}
 
-Ein Maven-Projekt generiert einen Docker-Build-Kontext. In diesem Docker-Build-Kontext wird beschrieben, wie ein Docker-Image erstellt wird, das die Benutzeroberflächentests enthält, damit Benutzerinnen und Benutzer von Cloud Manager ein Docker-Image erzeugen können, das die eigentlichen Benutzeroberflächentests enthält.
+Ein Maven-Projekt generiert einen Docker-Build-Kontext. In diesem Docker-Build-Kontext wird beschrieben, wie Sie ein Docker-Image erstellen. Das Bild enthält die Benutzeroberflächentests, mit denen Cloud Manager ein Docker-Bild generiert, das die eigentlichen Benutzeroberflächentests enthält.
 
-In diesem Abschnitt werden die Schritte beschrieben, die zum Hinzufügen eines Projekts mit Benutzeroberflächentests zum Repository erforderlich sind.
+In diesem Abschnitt werden die Schritte beschrieben, die zum Hinzufügen eines Benutzeroberflächen-Testprojekts zu Ihrem Repository erforderlich sind.
 
 >[!TIP]
 >
@@ -118,7 +118,7 @@ Die `pom.xml`-Datei übernimmt den Maven-Build. Fügen Sie dem Maven Assembly-Pl
 </plugin>
 ```
 
-Diese Ausführung weist das Maven Assembly Plug-in an, ein Archiv basierend auf den in `assembly-ui-test-docker-context.xml` enthaltenen Anweisungen zu erstellen, das im Jargon des Plug-ins als **Assembly-Deskriptor** bezeichnet wird. Der Assembly-Deskriptor listet alle Dateien auf, die Teil des Archivs sein müssen.
+Diese Ausführung weist das Maven Assembly Plug-in an, ein Archiv basierend auf den in `assembly-ui-test-docker-context.xml` enthaltenen Anweisungen zu erstellen, das im Jargon des Plug **ins als** Assembly-Deskriptor“ bezeichnet wird. Der Assembly-Deskriptor listet alle Dateien auf, die Teil des Archivs sein müssen.
 
 ```xml
 <assembly>
@@ -153,7 +153,7 @@ Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu e
 * Das Skript `wait-for-grid.sh`, dessen Zwecke unten beschrieben werden
 * Die eigentlichen Benutzeroberflächentests, die von einem Node.js-Projekt im Ordner `test-module` implementiert wurden
 
-Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert werden könnten. Dies garantiert ein kleineres Archiv und schnellere Builds.
+Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert werden könnten. Dieser Prozess garantiert ein kleineres Archiv und schnellere Builds.
 
 Cloud Manager nimmt automatisch das Docker-Build-Kontext-Archiv auf und erstellt das Test-Image während der Bereitstellung von Pipelines. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für Ihr Programm auszuführen.
 
@@ -190,7 +190,7 @@ Um eine Datei `testing.properties` in das Build-Artefakt aufzunehmen, fügen Sie
 
 Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
 
-* Für den JavaScript-basierten Ordner `ui.tests`, der auf der Grundlage des [AEM-Projektarchetyps](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellt wurde, können Sie den folgenden Befehl ausführen, um die erforderliche Konfiguration hinzuzufügen.
+* Für den aus dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) generierten JavaScript-basierten `ui.tests` können Sie den folgenden Befehl ausführen, um die erforderliche Konfiguration hinzuzufügen.
 
   ```shell
   echo "ui-tests.version=1" > testing.properties
@@ -234,7 +234,7 @@ Die folgenden Umgebungsvariablen werden zur Laufzeit an Ihr Docker-Image überge
 | `PROXY_RETRY_ATTEMPTS` | `12` | Empfohlene Anzahl von Wiederholungsversuchen beim Warten auf Bereitschaft des Proxy-Servers | Alle außer Selenium |
 | `PROXY_RETRY_DELAY` | `5` | Empfohlene Verzögerung zwischen Wiederholungsversuchen beim Warten auf Bereitschaft des Proxy-Servers | Alle außer Selenium |
 
-`* these values will be empty if there is no publish instance`
+`* these values are empty if there is no publish instance`
 
 Die Adobe-Testbeispiele bieten Hilfsfunktionen für den Zugriff auf die Konfigurationsparameter:
 
@@ -246,7 +246,7 @@ Cypress: Verwenden der Standardfunktion `Cypress.env('VARIABLE_NAME')`
 
 ### Generieren von Testberichten {#generate-test-reports}
 
-Das Docker-Image muss Testberichte im JUnit-XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das JUnit-XML-Format ist ein weitverbreitetes Format für Testergebnisberichte. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie das [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und das [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte vorkonfiguriert erstellen.
+Das Docker-Image muss Testberichte im `JUnit` XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das `JUnit` XML-Format ist ein weit verbreitetes Format für die Meldung von Testergebnissen. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie das [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und das [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte vorkonfiguriert erstellen.
 
 Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implementiert ist, lesen Sie in der Dokumentation der ausgewählten Tools nach, wie Sie JUnit-XML-Berichte erzeugen.
 
@@ -266,7 +266,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 >
 >Erstellen Sie für die Ausführung der Funktionstests von Ihrem lokalen Computer aus eine Benutzerin oder einen Benutzer mit Admin-ähnlichen Berechtigungen, um dasselbe Verhalten zu erzielen.
 
-* Die Container-Infrastruktur, die für Funktionstests genutzt wird, ist durch die folgenden Grenzen begrenzt:
+* Die Container-Infrastruktur, die für Funktionstests genutzt wird, ist durch folgende Faktoren eingeschränkt:
 
 | Typ | Wert | Beschreibung |
 |----------------------|-------|-----------------------------------------------------------------------|
@@ -302,9 +302,9 @@ Testbeispiele für die Benutzeroberfläche von Adobe verwenden `wait-for-grid.sh
 
 ### Erfassen von Screenshots und Videos {#capture-screenshots}
 
-Das Docker-Bild kann zusätzliche Testausgaben generieren (z. B. Screenshots oder Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable `REPORTS_PATH` angegeben wird. Jede Datei, die sich unter dem Verzeichnis `REPORTS_PATH` befindet, wird in das Testergebnisarchiv aufgenommen.
+Das Docker-Bild kann zusätzliche Testausgaben generieren (z. B. Screenshots oder Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable `REPORTS_PATH` angegeben wird. Jede Datei, die sich unter dem `REPORTS_PATH` befindet, wird in das Testergebnisarchiv aufgenommen.
 
-Die von Adobe bereitgestellten Testbeispiele erstellen standardmäßig Screenshots für fehlgeschlagene Tests.
+Standardmäßig erstellen die von Adobe bereitgestellten Testbeispiele Screenshots für fehlgeschlagene Tests.
 
 Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 
@@ -515,9 +515,9 @@ Vor der Aktivierung von Benutzeroberflächentests in einer Cloud Manager-Pipelin
 
 ### Playwright-Testbeispiel {#playwright-sample}
 
-1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` in Ihrem Repository
+1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` in Ihrem Repository.
 
-1. Führen Sie den folgenden Befehl aus, um ein Docker-Image mit Maven zu erstellen:
+1. Führen Sie den folgenden Befehl aus, um das Docker-Image mit Maven zu erstellen:
 
    ```shell
    mvn clean package -Pui-tests-docker-build
@@ -546,7 +546,7 @@ Vor der Aktivierung von Benutzeroberflächentests in einer Cloud Manager-Pipelin
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests/test-module` im Repository
 
-1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten
+1. Führen Sie die folgenden Befehle aus, um die Tests mit Maven zu starten:
 
    ```shell
    # Start selenium docker image

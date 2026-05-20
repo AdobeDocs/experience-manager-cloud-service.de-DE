@@ -3,13 +3,12 @@ title: Forms Experience Builder - Prompt-Bibliothek
 description: Sammlung bewährter Prompt-Muster und Beispiele zum Erstellen von Formularen mit KI-Unterstützung in der Benutzeroberfläche für die Formularverwaltung, im Editor für adaptive Formulare und im universellen Editor.
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2170'
 ht-degree: 97%
 
 ---
@@ -17,10 +16,6 @@ ht-degree: 97%
 # Forms Experience Builder - Prompt-Bibliothek
 
 Eine Sammlung wiederverwendbarer Prompt-Muster und Beispiele, die für Forms Experience Builder optimiert ist. Diese optimierte Bibliothek konzentriert sich auf die beiden wesentlichen Methoden „Von Grund auf neu erstellen“ und „Importieren und konvertieren“ mit verbesserter Unterstützung für LLM-gestützte intelligente Felder und Markenkonsistenz.
-
->[!NOTE]
->
-> Forms Experience Builder ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 >[!IMPORTANT]
 >

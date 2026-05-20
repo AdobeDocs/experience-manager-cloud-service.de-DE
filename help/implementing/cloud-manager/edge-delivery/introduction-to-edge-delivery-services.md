@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Cloud Manager-Projekte mit Edge Delivery
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 71d514b2eaf83732cc0856f6b508ab814fe7f469
+source-git-commit: a7e3c154f36b194cde223c11e9e06ecbe3a872f5
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 53%
+source-wordcount: '1488'
+ht-degree: 57%
 
 ---
 
@@ -56,11 +56,7 @@ Diese beiden Optionen bieten auch verschiedene Funktionen:
 Vollständige Einrichtungsanweisungen finden Sie unter [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)
 
 
-## Über Edge Delivery Services mit AEM-Authoring (Beta) {#eds-aem-authoring}
-
->[!NOTE]
->
->Die hier beschriebenen Funktionen der flexiblen Veröffentlichungsebene und des AEM-Authoring-Crosswalk befinden sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+## Über Edge Delivery Services mit AEM Authoring {#eds-aem-authoring}
 
 Moderne Web-Erlebnisse erfordern eine leistungsstarke Bereitstellung, aber viele Unternehmen verlassen sich auch auf etablierte AEM-Authoring-Workflows, Governance und Muster für die Wiederverwendung von Inhalten. Um Ihre Teams bei der Modernisierung des Versands zu unterstützen, ohne das Authoring zu unterbrechen, führt Cloud Manager Funktionen ein, die Ihnen Folgendes ermöglichen:
 
@@ -128,8 +124,6 @@ Je nachdem, wie ein Projekt aufgesetzt wurde oder wann Sie die Site erstellen m�
 
 
 ## Über die Aufgabenliste von Edge Delivery in Cloud Manager {#ed-todo-list}
-
-<!-- &#x2460; for "1" inside circle -->
 
 Die **Aufgabenliste von Edge Delivery** in Cloud Manager ist eine Checkliste für Onboarding-Aufgaben, die Sie durch das Onboarding und die Verwaltung Ihrer Edge Delivery-Site bis hin zur [Live-Schaltung](/help/journey-onboarding/go-live-checklist.md) führt.
 

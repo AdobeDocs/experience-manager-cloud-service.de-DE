@@ -6,16 +6,14 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 21%
+source-wordcount: '1052'
+ht-degree: 19%
 
 ---
 
 # Integrieren eines adaptiven Formulars mit Marketo Engage
-
-<span class="preview"> Die Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
@@ -49,7 +47,7 @@ Um ein neues adaptives Formular zu konfigurieren, das auf Foundation-Komponenten
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {**[!UICONTROL }Source eine Vorlage aus]**
+1. Wählen Sie auf der Registerkarte {**}Source eine Vorlage aus**
 
    ![Vorlagen auswählen](/help/forms/assets/select-template-af1.png)
 
@@ -88,7 +86,7 @@ Um ein neues adaptives Formular zu konfigurieren, das auf Kernkomponenten basier
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {**[!UICONTROL }Source eine Vorlage aus]**
+1. Wählen Sie auf der Registerkarte {**}Source eine Vorlage aus**
 
    ![Vorlagen auswählen](/help/forms/assets/select-template.png)
 
@@ -130,7 +128,7 @@ Führen Sie die folgenden Schritte aus, um ein neues adaptives Formular, das im 
 
    ![AF auswählen](/help/forms/assets/select-create-forms.png)
 
-1. Wählen Sie auf der Registerkarte {**[!UICONTROL }Source eine Vorlage aus]**
+1. Wählen Sie auf der Registerkarte {**}Source eine Vorlage aus**
 
    ![Vorlagen auswählen](/help/forms/assets/select-template-ue.png)
 

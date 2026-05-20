@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2025.1.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 92%
+source-wordcount: '1933'
+ht-degree: 88%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Video zur Versionsübersicht von Januar 2025 an, das eine Zusammenfassung der Funktionen gibt, die in Version 2025.1.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3456083?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3456083?captions=ger&quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -48,7 +48,7 @@ Die neue und modernisierte Kommentarfunktion im Inhaltsfragment-Editor von AEM e
 
 **Inhaltsfragmenteditor und Admin-Benutzeroberflächen: AEM as a Cloud Service-Versionsunterstützung aktualisiert**
 
-Die unterstützte AEM as a Cloud Service-Mindestversion für neue Admin- und Editor-Benutzeroberflächen für Inhaltsfragmente lautet nun 2023.8.13099. Frühere Versionen aus der Zeit vor der allgemeinen Verfügbarkeit der neuen Benutzeroberflächen werden nicht mehr unterstützt.
+Die mindestens unterstützte AEM as a Cloud Service-Version für neue Administrator- und Editor-Benutzeroberflächen für Inhaltsfragmente ist jetzt 2023.8.13099. Frühere Versionen von vor der allgemeinen Verfügbarkeit der neuen Benutzeroberflächen werden nicht mehr unterstützt
 
 ### Early-Adopter-Programm {#sites-early-adopter}
 
@@ -64,7 +64,7 @@ Die [AEM REST OpenAPI für die Bereitstellung von Inhaltsfragmenten](/help/headl
 
 #### SPA-Editor {#spa-editor}
 
-Der [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) wird ab Version 2025.1.0 für neue Projekte nicht mehr unterstützt. Für bestehende Projekte wird er weiterhin unterstützt, sollte allerdings nicht mehr für neue Projekte verwendet werden.
+[Der SPA-](/help/implementing/developing/hybrid/introduction.md) wird für neue Projekte ab Version 2025.1.0 nicht mehr unterstützt. Der SPA-Editor wird für bestehende Projekte weiterhin unterstützt, sollte jedoch nicht für neue Projekte verwendet werden.
 
 Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind nun:
 
@@ -87,7 +87,7 @@ Verschaffen Sie sich Erkenntnisse zu den mit Dynamic Media bereitgestellten Asse
 
 **Mehrere Audiospuren und mehrfache Untertitel in Dynamic Media**
 
-[Unterstützung für mehrfache Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können nun ganz einfach mehrfache Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen.  Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+[Unterstützung für mehrfache Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können nun ganz einfach mehrfache Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
 **Unterstützung für Dynamic Adaptive Streaming über HTTP**
 
@@ -112,6 +112,8 @@ Bei KI-generierten Videountertiteln in Adobe Dynamic Media wird künstliche Inte
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
+* **[Integration adaptiver Formulare in Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service bietet jetzt eine benutzerfreundliche Option, um adaptive Formulare mit Adobe Marketo Engage zu verbinden. Mit dieser Integration können Sie adaptive Formulare direkt mit der Marketo Engage-Lead-Erfassung und zugehörigen benutzerdefinierten Objekten erstellen. Sie können jetzt Formularfelder mit Daten aus Marketo Engage vorab ausfüllen und Daten zurücksenden, um Workflows wie intelligente Kampagnen und E-Mail-Automatisierung zu automatisieren. Sie können auch ein adaptives Formular mit der Munchkin-Bibliothek verbinden, um die Anzahl der Besuche, Klicks und Formularübermittlungen zu verfolgen.
+
 * **Veröffentlichung verwalten**: Sie können den Workflow [Veröffentlichung verwalten](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) verwenden, um Formulare in Umgebungen zu veröffentlichen oder die Veröffentlichung rückgängig zu machen, normalerweise von der Autoreninstanz bis zur Veröffentlichungs- und Vorschauinstanz. Er ermöglicht es Benutzenden, Inhalte zu veröffentlichen, ihre Veröffentlichung rückgängig zu machen oder ihre Veröffentlichung effizient zu planen.
 
 * **[Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare](/help/forms/save-core-component-based-form-as-draft.md)**: Benutzende können jetzt von einer automatischen Speicherfunktion profitieren, mit der ein teilweise ausgefülltes Formular automatisch als Entwurf gespeichert wird. Sie können später zurückkehren, um das Ausfüllen des Formulars auf demselben oder einem anderen Gerät abzuschließen. Diese Funktion verbessert die Konversionsraten für Unternehmen, indem Formularabbrüche reduziert werden, da Benutzende nicht mit dem Ausfüllen von Formularen von Anfang an beginnen müssen.
@@ -135,13 +137,13 @@ Adaptive Forms ermöglicht die Verwendung von HTML-E-Mail-Vorlagen. Mit HTML-E-M
 
 #### Erweiterte Cloud-Speicher-Unterstützung: Direkter PDF-Upload in Azure Blob Storage
 
-AEM Forms Document Generation-APIs unterstützen jetzt das direkte Hochladen generierter PDF-Dokumente in Azure Blob Storage. Diese Erweiterung optimiert Speicherung und Abruf und verbessert so die Effizienz und Integration mit Cloud-Workflows.
+AEM Forms Document Generation-APIs unterstützen jetzt das direkte Hochladen generierter PDF-Dokumente in den Azure Blob-Speicher. Diese Erweiterung optimiert Speicherung und Abruf und verbessert so die Effizienz und Integration mit Cloud-Workflows.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service]-Foundation {#foundation}
 
 ### Java 21-Unterstützung {#java21}
 
-Sie können nun mit Java 21 Code erstellen. Diese Version umfasst neue Funktionen (z. B. Musterabgleich für Switch-Anweisungen, versiegelte Klassen) und Leistungsverbesserungen. Java 17-Builds werden jetzt ebenfalls unterstützt. Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+Sie können nun mit Java 21 Code erstellen. Diese Version umfasst neue Funktionen (z. B. Musterabgleich für Switch-Anweisungen, versiegelte Klassen) und Leistungsverbesserungen. Java 17-Builds werden jetzt ebenfalls unterstützt. Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wenn ein Java 17- oder Java 21-Build erkannt wird. Wir empfehlen jedoch auch, sich für Umgebungen, die mit Java 11 erstellt wurden, für die Java 21 Runtime anzumelden. Senden Sie hierzu einfach eine E-Mail an [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Erfahren Sie mehr zu den [Java 21 Runtime-Anforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
@@ -153,7 +155,7 @@ Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wen
 
 Sandbox-Programme unterstützen nun Konfigurations-Pipelines, die in Cloud Manager so konfiguriert werden können, dass sie in Git persistierte YAML-Dateien bereitstellen.
 
-[Erfahren Sie mehr](/help/operations/config-pipeline.md) über Konfigurations-Pipelines, die die Konfiguration von CDN, Protokollweiterleitung und Wartungsaufgaben für die Versionsbereinigung/Audit-Protokollbereinigung ermöglichen.
+[Erfahren Sie mehr](/help/operations/config-pipeline.md) über Konfigurations-Pipelines, die die Konfiguration von CDN, Protokollweiterleitung und Wartungsaufgaben für die Versionsbereinigung/Auditprotokollbereinigung ermöglichen.
 
 ### OpenAPI-basierte APIs – Early-Adopter-Programm {#open-apis-earlyadopter}
 
@@ -163,10 +165,10 @@ Erfahren Sie mehr über [OpenAPI-basierte AEM-APIs](/help/implementing/developin
 
 Konkret sind die unten aufgeführten API-Endpunkte im Rahmen eines Early-Adopter-Programms verfügbar. Wenn Sie daran interessiert sind, senden Sie eine E-Mail an [aem-apis@adobe.com](mailto:aem-apis@adobe.com), in der Sie beschreiben, wie Sie die API-Endpunkte verwenden möchten.
 
-* [Sites-Inhaltsfragmente-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de)
+* [Sites-Inhaltsfragment-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * Sites- und Assets-Ordner-APIs
-* [Forms-Kommunikationen-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [Forms Communications-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
 

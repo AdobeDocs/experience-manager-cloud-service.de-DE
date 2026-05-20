@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '2464'
-ht-degree: 95%
+source-wordcount: '2585'
+ht-degree: 90%
 
 ---
 
@@ -208,7 +208,7 @@ Wenn Sie zusätzliche Veröffentlichungsregionen aktiviert haben, können Sie de
 
    ![Status von zusätzlichen Veröffentlichungsregionen auf der Karte „Umgebungen“](assets/additional-publish-region-status-environments-card.png)
 
-Alternativ können Sie auf die gleichen Informationen über die Registerkarte **Umgebungen** zugreifen.
+Alternativ können Sie dieselben Informationen über die Registerkarte **Umgebungen** aufrufen.
 
 1. Klicken Sie auf der Seite **Überblick** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**.
 
@@ -221,9 +221,9 @@ Alternativ können Sie auf die gleichen Informationen über die Registerkarte **
 
    ![Status von zusätzliche Veröffentlichungsregionen auf der Registerkarte „Umgebungen“](assets/additional-publish-region-status-environments-tab.png)
 
-Haben Sie Geduld, wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden. Cloud Manager versucht immer wieder, die Region wiederherzustellen. Sie kann jederzeit wieder verfügbar werden. Wenn das Problem nach mehreren Stunden weiterhin besteht, können Sie den zusätzlichen Veröffentlichungsbereich entfernen und ihn erneut hinzufügen (entweder dieselbe Region oder eine andere Region), um eine vollständige Bereitstellung auszulösen.
+Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden, warten Sie eine Weile. Cloud Manager versucht kontinuierlich, die Region wiederherzustellen, und sie kann jederzeit wieder verfügbar sein. Wenn das Problem mehrere Stunden besteht, entfernen Sie die zusätzliche Veröffentlichungsregion (entweder dieselbe Region oder eine andere) und fügen Sie sie erneut hinzu, um eine vollständige Bereitstellung Trigger.
 
-Wie lange Sie darauf warten sollten, dass sich das System von selbst erholt, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen ab, die der Ausfall dieser Region auf Ihre Systeme hat.
+Wie lange Sie warten, bis das System von selbst wiederhergestellt ist, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen des Ausfalls dieser Region auf Ihre Systeme ab.
 
 Ungeachtet dessen wird [Traffic immer in die nächstgelegene Region weitergeleitet, die online ist](/help/operations/additional-publish-regions.md). Wenn weiterhin Probleme auftreten, wenden Sie sich an die Adobe-Kundenunterstützung.
 
@@ -231,7 +231,7 @@ Ungeachtet dessen wird [Traffic immer in die nächstgelegene Region weitergeleit
 
 Als Cloud-nativer Service verwaltet Adobe automatisch die Aktualisierungen Ihrer Entwicklungs-, Staging- und Produktionsumgebungen innerhalb der Produktionsprogramme.
 
-Aktualisierungen von Umgebungen in Sandbox-Programmen werden jedoch innerhalb der Programme verwaltet. Wenn in einer solchen Umgebung nicht die neueste öffentlich verfügbare AEM-Version ausgeführt wird, zeigt der Status auf der Karte **Umgebungen** auf dem Bildschirm **Überblick** des Programms **Aktualisierung verfügbar** an.
+Sandbox-Programmumgebungen werden jedoch innerhalb des Programms selbst aktualisiert. Wenn in einer Umgebung nicht die neueste öffentliche AEM-Version ausgeführt wird, wird auf der Karte **Umgebungen** auf dem Bildschirm **Übersicht** angezeigt **Update verfügbar**.
 
 ![Aktualisierungsstatus der Umgebung](assets/environ-update.png)
 
@@ -338,7 +338,7 @@ Benutzerdefinierte Domain-Namen werden in Programmen von Cloud Manager for Sites
 
 IP-Zulassungslisten werden in Cloud Manager für Autoren-, Veröffentlichtungs- und Vorschau-Services für Sites-Programme unterstützt.
 
-Um IP-Zulassungslisten zu verwalten, navigieren Sie zur Seite ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen** der Seite **Überblick** Ihres Programms. Klicken Sie auf eine einzelne Umgebung, damit Sie deren Details verwalten können.
+Um IP-Zulassungslisten zu verwalten, navigieren Sie zur Seite ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen** der Seite **Überblick** Ihres Programms. Wählen Sie eine einzelne Umgebung aus, um ihre Details zu verwalten.
 
 ### Übernehmen einer IP-Zulassungsliste {#apply-ip-allow-list}
 

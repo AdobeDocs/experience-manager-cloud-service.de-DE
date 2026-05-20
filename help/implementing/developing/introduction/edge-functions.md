@@ -3,19 +3,19 @@ title: AEM Edge-Funktionen
 description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktionen ausführen können, um Endbenutzerinnen und Endbenutzern Personalisierung, Sicherheit und dynamische Erlebnisse zu ermöglichen.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: f8000bef01d6b72fb3ac2ae81be9fc19ed1a67d1
+exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
+source-git-commit: 1fdf9c61e611db978706a066194448ec3750024a
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
-
 
 # AEM Edge-Funktionen {#aem-edge-functions}
 
 >[!IMPORTANT]
 >
->AEM Edge Functions ist eine **Beta**-Funktion. Funktionen und Dokumentation können sich ohne Vorankündigung ändern. Um am Early-Access-Programm teilzunehmen und Feedback zu geben, senden Sie eine E-Mail an [aemcs-edge-functions-feedback@adobe.com](mailto:aemcs-edge-functions-feedback@adobe.com).
+>AEM Edge Functions ist eine **Beta**-Funktion. Funktionen und Dokumentation können sich ohne Vorankündigung ändern. Um am Early-Access-Programm teilzunehmen und Feedback zu geben, senden Sie eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
 
 Mit den AEM Edge-Funktionen können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher an den Endbenutzer heranrückt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse ohne einen Roundtrip zu Ihrem Ursprung.
 
@@ -88,7 +88,7 @@ Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager 
 >
 >Wenn Sie eine schnelle Entwicklungsumgebung (RDE) verwenden, können Sie die Konfiguration direkt mit `aio aem rde:install -t env-config ./config` bereitstellen, anstatt eine Konfigurations-Pipeline zu verwenden.
 
-### &#x200B;2. Edge-Funktionsdienste deklarieren {#declare-services}
+### &#x200B;2. Edge Function Services deklarieren {#declare-services}
 
 Erstellen Sie eine Datei mit dem Namen `edgeFunctions.yaml` im Konfigurationsverzeichnis:
 
@@ -192,7 +192,7 @@ Das von Adobe verwaltete CDN stellt keinen Remote-Debugger bereit, stellt jedoch
 aio aem edge-functions tail-logs <function-name>
 ```
 
-## Konfigurationsverweis {#configuration-reference}
+## Konfigurationsreferenz {#configuration-reference}
 
 ### Ursprünge {#origins}
 

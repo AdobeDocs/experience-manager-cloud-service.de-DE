@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
+source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 89%
+source-wordcount: '402'
+ht-degree: 55%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 
 Erfahren Sie, wie Sie auf Protokolle zugreifen und diese verwalten können, um Ihren Entwicklungsprozess in AEM as a Cloud Service zu unterstützen.
 
-Sie können über die Karte **Umgebungen** auf der Seite **Überblick** oder der Seite „Umgebungsdetails“ auf eine Liste der verfügbaren Protokolldateien für die ausgewählte Umgebung zugreifen.
+Sie können über die Karte „Umgebungen“ auf der Seite „Überblick **oder der Seite „Umgebungsdetails** auf **Liste** verfügbaren Protokolldateien für **ausgewählte Umgebung**.
 
 Protokolle werden sieben Tage lang aufbewahrt.
 
@@ -33,7 +33,7 @@ Protokolle werden sieben Tage lang aufbewahrt.
 
    ![Menüelement „Protokolle herunterladen“](assets/download-logs1.png)
 
-1. Wählen Sie im Dialog **Protokolle herunterladen** den entsprechenden **Service** aus dem Dropdown-Menü aus
+1. Wählen **Dialogfeld „Protokolle herunterladen** den entsprechenden **Service** aus dem Dropdown-Menü aus.
 
    ![Dialog „Protokolle herunterladen“](assets/download-preview.png)
 
@@ -51,7 +51,7 @@ Sie können Ihre Protokolle auch über die Seite **Umgebungen** aufrufen.
 
 Abgesehen vom Herunterladen von Protokollen über die Benutzeroberfläche sind die Protokolle auch über die API und die Befehlszeilenschnittstelle verfügbar.
 
-Um die Protokolldateien für eine bestimmte Umgebung herunterzuladen, ähnelt der Befehl dem folgenden.
+Zum Herunterladen der Protokolldateien für eine bestimmte Umgebung sieht der Befehl wie folgt aus.
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
@@ -63,7 +63,7 @@ Außerdem können Sie Protokolle über die Befehlszeilenschnittstelle verfolgen.
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Um die Umgebungs-ID (in diesem Fall „1884“) und die verfügbaren Service- oder Protokollnamenoptionen abzurufen, können Sie die folgenden Befehle verwenden.
+Um die Umgebungs-ID (in diesem Beispiel 1884) und die verfügbaren Optionen für Service- oder Protokollnamen abzurufen, können Sie die folgenden Befehle verwenden:
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -90,12 +90,12 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Sehen Sie sich [dieses Video](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) an, um mehr über das Debugging von AEM as a Cloud Service zu erfahren.
+>In [dieser Videoressource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) erfahren Sie mehr über das Debugging von AEM as a Cloud Service.
 
 Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
 
-* [Dokumentation für Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [Adobe I/O-CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Cloud Manager-API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [ADOBE I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 Weitere Informationen zu Protokolldateien in AEM as a Cloud Service finden Sie in den folgenden zusätzlichen Ressourcen:
 

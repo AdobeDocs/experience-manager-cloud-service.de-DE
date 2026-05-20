@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b258bc6aaad29843b19eef244760c1e39f27dd09
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 100%
+source-wordcount: '1403'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Lernen Sie die im [AEM as a Cloud Service-Bereitstellungsprozess](/help/implemen
 
 Das folgende Diagramm bietet einen allgemeinen Überblick über die verfügbaren Pipelines im Kontext einer Gesamtteststrategie und des [AEM as a Cloud Service-Bereitstellungsprozesses](/help/implementing/cloud-manager/deploy-code.md).
 
-![Qualitäts-Gates für die AEM Cloud Service-Bereitstellung](assets/functional-testing/quality-gates-compact.svg)
+![Qualitäts-Gates für die AEM Cloud Service-Bereitstellung](assets/functional-testing/quality-gates-compact.png)
 
 ## Zweck der Funktionstests
 
@@ -42,7 +42,7 @@ Es ist wichtig zu beachten, dass diese Qualitäts-Gates nicht als umfassendes Te
 
 Das folgende Diagramm bietet einen detaillierten Überblick über die verfügbaren Qualitäts-Gates und deren Verwendung in der Gesamtteststrategie sowie den [AEM as a Cloud Service-Bereitstellungsprozess](/help/implementing/cloud-manager/deploy-code.md).
 
-![Qualitäts-Gates für die AEM Cloud Service-Bereitstellung](assets/functional-testing/quality-gates-overview.svg)
+![Qualitäts-Gates für die AEM Cloud Service-Bereitstellung](assets/functional-testing/quality-gates-overview.png)
 
 ### Zusammenfassung zu kundenseitig bereitgestellten Qualitäts-Gates
 
@@ -70,8 +70,8 @@ Unter [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-
 
 Produktfunktionstests sind stabile HTTP-Integrationstests (ITs) für Kernfunktionen in AEM wie Authoring- und Replikationsaufgaben. Adobe stellt sie standardmäßig bereit und verwaltet sie. Sie sollen verhindern, dass Änderungen an benutzerdefiniertem Anwendungs-Code bereitgestellt werden, wenn dadurch die Kernfunktionalität im AEM-Produkt beeinträchtigt wird.
 
-Sie verwenden JUnit für die Implementierung, werden mithilfe von Maven ausgeführt und stützen sich auf die offiziellen [AEM-Test-Clients](https://github.com/adobe/aem-testing-clients). Die Produkttestsuite wird als 
-[Open-Source-Projekt](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) verwaltet, folgt Best Practices und kann als guter Ausgangspunkt für die Implementierung Ihrer Tests betrachtet werden.
+Sie verwenden JUnit für die Implementierung, werden mithilfe von Maven ausgeführt und stützen sich auf die offiziellen [AEM-Test-Clients](https://github.com/adobe/aem-testing-clients). Die Produkt-Test-Suite wird wie folgt gepflegt
+Ein [Open-Source-Projekt](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) folgt Best Practices und kann als guter Ausgangspunkt für die Implementierung Ihrer Tests betrachtet werden.
 
 ### Benutzerdefinierte Funktionstests
 
