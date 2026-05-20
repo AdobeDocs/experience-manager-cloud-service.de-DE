@@ -7,10 +7,10 @@ role: Admin, Developer
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 89%
+source-wordcount: '1118'
+ht-degree: 87%
 
 ---
 
@@ -79,7 +79,7 @@ Die Erstellung von reinen Produktions- und Staging-Pipelines erfolgt auf ähnlic
 
 1. Wählen Sie auf der Registerkarte **Quell-Code** **Full-Stack-Code** aus. Mit dieser Option wird die gesamte AEM-Anwendung (Backend, Dispatcher-/Web-Stufen-Konfiguration und alle Frontend-Module im Repository) erstellt und bereitgestellt.
 
-1. Wählen Sie in der Dropdown-Liste **Zulässige Implementierungsumgebungen** die **Staging**-Umgebung als Bereitstellungsumgebung für Ihre Pipeline aus. Bei Auswahl von „Staging“ wird eine Pipeline für die Staging-Umgebung erstellt (die Produktionsweiterleitung erfolgt über eine separate Pipeline).
+1. Wählen Sie in der Dropdown-Liste **Zulässige Implementierungsumgebungen** die **Staging**-Umgebung als Bereitstellungsumgebung für Ihre Pipeline aus. Wenn Sie die Phase auswählen, wird eine Pipeline für die Staging-Umgebung erstellt (die Produktionsweiterleitung erfolgt über eine separate Pipeline).
 
 1. Wählen Sie **Repository** und **Git-Verzweigung** in den entsprechenden Dropdown-Listen aus und klicken Sie dann auf **Weiter**.
 

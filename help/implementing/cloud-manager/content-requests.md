@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 59%
+source-wordcount: '2274'
+ht-degree: 58%
 
 ---
 
@@ -57,7 +57,7 @@ Inhaltsanfragen können Abweichungen von den Analyseberichts-Tools einer Organis
 | Bots | Unbekannte Bots, die nicht vorab von AEM identifiziert und entfernt wurden, können zu Tracking-Diskrepanzen führen. |
 | Report Suites | Seiten innerhalb derselben AEM-Instanz können an verschiedene Analytics Report Suites berichten. Dabei können Daten je nach Konfiguration auf mehrere Suites aufgeteilt werden. |
 | Überwachungs- und Sicherheits-Tools von Drittanbietern | Überwachungs- und Sicherheitsprüfungs-Tools (z. B. Uptime Checker oder Vulnerability Scanner) können Seiten anfordern und so Server-seitige Inhaltsanfragen generieren, die in Analyseberichten nicht sichtbar sind. |
-| API-Zugriff | Anfragen an AEM-Seiten oder -Inhalte über APIs (z. B. über Adobe Experience Manager as a Headless CMS) zählen weiterhin als Inhaltsanfragen, lösen allerdings kein Analyse-Tracking aus. |
+| API-Zugriff | Anfragen an AEM-Seiten oder Inhalte über APIs (z. B. über Adobe Experience Manager as a Headless CMS) zählen weiterhin als Inhaltsanfragen, jedoch nicht zum Analytics-Tracking durch den Trigger. |
 | Vorheriges Abrufen von Anfragen | Ein Vorabruf (z. B. mittels einer Service-Worker- oder Edge-Funktion) kann das Traffic-Volumen erhöhen, indem Seiten im Voraus angefordert werden. Diese Anfragen werden Server-seitig gezählt, führen jedoch keinen Client-seitigen Analyse-Code aus. |
 | DDOS | Adobe verwendet Filter, um zahlreiche DDoS-Angriffe zu erkennen und zu blockieren. Einige im Rahmen eines Angriffs gestellte Anfragen werden jedoch möglicherweise noch als Inhaltsanfragen gezählt, bevor diese Filter angewendet werden. |
 | Traffic-Blocker | Browser-interne Datenschutzfunktionen oder Unternehmens-Firewalls können das Laden von Analyseskripten blockieren. Diese Benutzenden generieren weiterhin Server-seitige Inhaltsanfragen. |
@@ -107,7 +107,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, wobei ein gemeinsamer Thread im CDN-Traffic auftritt.  Als AEM-Kunde können Sie Ihre Inhaltsanfragen so überwachen und verwalten, dass sie in Ihr Lizenzbudget passen.  Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
@@ -120,7 +120,7 @@ Wie im obigen Abschnitt [Varianzen von Cloud Service-Inhaltsanfragen](#content-r
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
+Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
 
 **Dinge, die Sie beobachten und protokollieren sollten:**
 

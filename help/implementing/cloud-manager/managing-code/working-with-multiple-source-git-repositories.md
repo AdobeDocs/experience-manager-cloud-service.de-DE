@@ -5,10 +5,10 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Anstatt direkt mit dem Git-Repository von Cloud Manager zu arbeiten, können [Ku
 
 Je nachdem, wo das Git-Repository der Kundin bzw. des Kunden gehostet wird, kann zum Einrichten der Automatisierung eine GitHub-Aktion oder Continuous-Integration-Lösung wie Jenkins verwendet werden. Wenn eine Automatisierung eingerichtet ist, kann jeder Push an ein im Kundenbesitz befindliches Git-Repository automatisch an das Git-Repository von Cloud Manager weitergeleitet werden.
 
-Während eine solche Automatisierung für ein einzelnes kundeneigenes Git-Repository einfach zu bewerkstelligen ist, erfordert dies bei mehreren Repositorys eine anfängliche Einrichtung. Die Inhalte aus mehreren Git-Repositorys müssen verschiedenen Ordnern im einzigen Git-Repository von Cloud Manager zugeordnet werden. Das Git-Repository von Cloud Manager muss mit einer Maven-Stamm-Datei `pom.xml` bereitgestellt werden, in der die verschiedenen Unterprojekte im Modul-Abschnitt aufgelistet werden. 
+Während eine solche Automatisierung für ein einzelnes kundeneigenes Git-Repository einfach zu bewerkstelligen ist, erfordert dies bei mehreren Repositorys eine anfängliche Einrichtung. Die Inhalte aus mehreren Git-Repositorys müssen verschiedenen Ordnern im einzigen Git-Repository von Cloud Manager zugeordnet werden. Das Git-Repository von Cloud Manager muss mit einer Maven-Stamm-Datei `pom.xml` bereitgestellt werden, in der die verschiedenen Unterprojekte im Modul-Abschnitt aufgelistet werden.
 
 Im Folgenden finden Sie ein Beispiel einer Datei `pom.xml` für zwei kundeneigene Git-Repositorys.
 
@@ -58,7 +58,7 @@ Eine mögliche Lösung wäre die folgende.
 
 Beispielsweise wird eine Änderung in der Hauptverzweigung in Projekt A automatisch in die Hauptverzweigung im Git-Repository von Cloud Manager gepusht. Es könnte auch eine Zuordnung zwischen Verzweigungen geben, etwa wenn ein Push zu einer Verzweigung namens `dev` in Projekt A zu einer Verzweigung mit der Bezeichnung `development` im Git-Repository von Cloud Manager verschoben wird. Ähnliche Schritte sind für Projekt B erforderlich.
 
-Je nach Verzweigungsstrategie und Workflows kann die Synchronisierung für verschiedene Verzweigungen konfiguriert werden. Wenn das verwendete Git-Repository kein mit GitHub-Aktionen vergleichbares Konzept bietet, ist auch eine Integration über Jenkins (oder eine ähnliche Lösung) möglich. In diesem Fall löst ein Webhook einen Jenkins-Auftrag aus, welcher die Arbeit ausführt.
+Je nach Verzweigungsstrategie und Workflows kann die Synchronisierung für verschiedene Verzweigungen konfiguriert werden. Wenn das verwendete Git-Repository kein Konzept wie GitHub-Aktionen bereitstellt, ist auch eine Integration über Jenkins (oder Ähnliches) möglich. In diesem Fall löst ein Webhook einen Jenkins-Auftrag aus, welcher die Arbeit ausführt.
 
 Gehen Sie wie folgt vor, um eine neue (dritte) Quelle oder ein neues Repository hinzuzufügen.
 
@@ -138,7 +138,7 @@ Die Verwendung einer GitHub-Aktion ist flexibel. Es können beliebige Zuordnunge
 Das folgende ist ein Beispielskript, das in einem Jenkins-Auftrag oder ähnlichen Aufgaben verwendet werden kann und den folgenden Ablauf aufweist:
 
 1. Es wird durch eine Änderung in einem Git-Repository ausgelöst.
-1. Der Jenkins-Vorgang überprüft den aktuellen Status dieses Projekts oder Zweigs.
+1. Der Jenkins-Auftrag überprüft den aktuellen Status dieses Projekts oder Zweigs.
 1. Der Auftrag löst dann dieses Skript aus.
 1. Dieses Skript überprüft wiederum das Git-Repository von Cloud Manager und übergibt den Projekt-Code an ein Unterverzeichnis.
 

@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 93%
+source-wordcount: '798'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Es empfiehlt sich, einen Domain-Namen für Ihre Website zu verwenden, der für I
 
 >[!IMPORTANT]
 >
-> Standard-Domains unter adobeaemcloud.com **sollten nicht verwendet werden** um Inhalte bereitzustellen, die für SEO-Zwecke wichtig sind. Die Domains und Subdomains von adobeaemcloud.com können von Suchmaschinen nicht indiziert werden, da sie als &quot;[.txt“ &#x200B;](https://cdn.adobeaemcloud.com/robots.txt), die das Crawling und die Indizierung verhindert. Verwenden Sie stattdessen Ihre eigene benutzerdefinierte Domain, um eine benutzerdefinierte robots.txt bereitzustellen.
+> Standard-Domains unter adobeaemcloud.com **sollten nicht verwendet werden** um Inhalte bereitzustellen, die für SEO-Zwecke wichtig sind. Die Domains und Subdomains von adobeaemcloud.com können von Suchmaschinen nicht indiziert werden, da sie eine [default robots.txt) bereitstellen](https://cdn.adobeaemcloud.com/robots.txt) die den crawlen und die Indizierung verhindert. Verwenden Sie stattdessen Ihre eigene benutzerdefinierte Domain, um eine benutzerdefinierte robots.txt bereitzustellen.
 
 Sie können einen Domain-Namen von einer Registrierungsstelle für Domain-Namen kaufen, einer Firma oder Organisation, die Domain-Namen verwaltet und verkauft. Registrierungsstellen für Domain-Namen verwalten Domain-Namen auf DNS-Servern.
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service bietet einen integrierten CDN(Content Delivery Network)-S
 * Cloud Manager verwaltet benutzerdefinierte Domain-Namen und Zertifikate, die im von AEM verwalteten CDN installiert sind.
 * Benutzerdefinierte Domain-Namen und Zertifikate, die in einem eigenen CDN installiert sind, werden direkt in diesem CDN verwaltet.
 
-**Domains, die in Ihrem eigenen CDN verwaltet werden, erfordern keine Installation über Cloud Manager.** Sie werden AEM über „X-Forwarded-Host“ zur Verfügung gestellt und stimmen mit den im Dispatcher definierten virtuellen Hosts überein. Weitere Informationen finden Sie in der [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
+**Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden** - sie werden AEM über X-Forwarded-Host zur Verfügung gestellt und stimmen mit den in der Dispatcher definierten virtuellen Hosts überein. Weitere Informationen finden Sie in der [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
 
 In einer Umgebung können Sie beide Domains im von AEM verwalteten CDN und in Ihrem eigenen CDN installiert haben.
 
@@ -80,7 +80,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 * Derselbe Domain-Name kann nicht in mehreren Umgebungen verwendet werden.
 * Es kann jeweils nur ein Domain-Name hinzugefügt werden.
 * AEM as a Cloud Service unterstützt keine Platzhalterdomänen `*.example.com`.
-* Vor dem Hinzufügen eines benutzerdefinierten Domain-Namens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domain-Namen enthält, für Ihr Programm installiert werden (Platzhalterzertifikate sind gültig). 
+* Vor dem Hinzufügen eines benutzerdefinierten Domain-Namens muss ein gültiges SSL-Zertifikat, das den benutzerdefinierten Domain-Namen enthält, für Ihr Programm installiert werden (Platzhalterzertifikate sind gültig).
 * Für die Verwendung eines benutzerdefinierten Domain-Namens mit der [Funktion „Frontend-Pipeline“](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains) sind zusätzliche Konfigurationsschritte erforderlich.
 
 ## Erste Schritte {#get-started}
