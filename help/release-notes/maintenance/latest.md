@@ -4,7 +4,7 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 478b77488f46ae2566ffe5276ad26834371612aa
+source-git-commit: c8303f6792f36e9d1942cf398909cbf0b3f3f90f
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 30%
@@ -44,8 +44,8 @@ Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssa
 * ASSETS-66669: Die Schaltfläche „Startseite“ auf der Suchergebnisseite navigiert jetzt, wenn Unified Shell aktiviert ist, nicht mehr zum Startbildschirm in der Touch-optimierten Benutzeroberfläche.
 * ASSETS-66683: Es wurde eine Genehmigungsschleife in Dynamic Media behoben, bei der OpenAPI durch Upload-Fehler ausgelöst wurde, die zu Rückstaus und gestörten Asset-Genehmigungs-Workflows führten.
 * ASSETS-67113: Massenimport wurde behoben, bei dem SVG-Assets beim Filtern nach MIME-Typ `image/svg+xml` ignoriert wurden.
-* CQ-4363355: Übersetzungsanfragen im GenAI Translation Connector wurden korrigiert, die aufgrund einer hartcodierten statischen URL an einen falschen regionalen Endpunkt weitergeleitet wurden.
 * CQ-4363466: Es wurden Fehler bei der Auflösung des Cloud-Konfigurationspfads behoben, die Auswirkungen auf Übersetzungs-Connectoren von Drittanbietern hatten, die eine benutzerdefinierte Konfigurationsauflösung verwenden.
+* CQ-4363355: Übersetzungsanfragen im GenAI Translation Connector wurden korrigiert, die aufgrund einer hartcodierten statischen URL an einen falschen regionalen Endpunkt weitergeleitet wurden.
 * SITES-44186: Meta-Tag-Einschleusung in die Ereignisverarbeitung des Seiten-Editors durch Autoren wurde korrigiert.
 
 ### Bekannte Probleme {#known-issues-26125}
