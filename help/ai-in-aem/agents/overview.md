@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die in AEM verfügbaren Agents zur Beschleu
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 9dcef6b9dc858509a3470d3567774cb38deb96b5
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 3%
+source-wordcount: '599'
+ht-degree: 2%
 
 ---
 
@@ -20,8 +20,8 @@ Diese Agenten sind in Adobe Experience Manager (AEM) as a Cloud Service verfügb
 >
 >Die Agenten sind nur in AEM as a Cloud Service und Edge Delivery Services verfügbar.
 >
->* Sie sind derzeit weder für AEM 6.5 noch für AEM 6.5 LTS verfügbar.
->* Sie sind weder in AEM On-Premise noch in Managed Services verfügbar.
+>* Sie werden nach und nach für AEM 6.5 LTS auf Managed Services verfügbar. Kunden, die an unserem Co-Innovationsprogramm teilnehmen möchten, sollten sich an ihren Adobe Customer Success Engineer, Technical Account Manager oder Customer Service Manager wenden, um die Verfügbarkeit zu überprüfen.
+>* Sie werden nicht On-Premise in AEM 6.5/AEM 6.5 LTS verfügbar sein.
 
 ## Zugreifen auf Agenten {#accessing-agents}
 
@@ -60,8 +60,8 @@ Der [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) schützt M
 
 Beachten Sie die folgenden allgemeinen Einschränkungen der AEM-Agenten:
 
-* Die Agenten sind nur für AEM as a Cloud Service und Edge Delivery Services verfügbar.
-* Sie sind derzeit weder für AEM 6.5 noch für AEM 6.5 LTS verfügbar.
-* Sie sind derzeit weder in AEM On-Premise noch in Managed Services verfügbar.
+* Die Agenten sind in AEM as a Cloud Service und Edge Delivery Services verfügbar.
+* Sie werden nach und nach für AEM 6.5 LTS auf Managed Services verfügbar. Kunden, die an unserem Co-Innovationsprogramm teilnehmen möchten, sollten sich an ihren Adobe Customer Success Engineer, Technical Account Manager oder Customer Service Manager wenden, um die Verfügbarkeit zu überprüfen.
+* Sie werden nicht On-Premise in AEM 6.5/AEM 6.5 LTS verfügbar sein.
 
 Auf den einzelnen Seiten finden Sie agentenspezifische Einschränkungen.
