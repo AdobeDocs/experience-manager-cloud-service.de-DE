@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die in AEM verfügbaren Agents zur Beschleu
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 9dcef6b9dc858509a3470d3567774cb38deb96b5
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 3%
+source-wordcount: '599'
+ht-degree: 2%
 
 ---
 
@@ -20,18 +20,18 @@ Diese Agenten sind in Adobe Experience Manager (AEM) as a Cloud Service verfügb
 >
 >Die Agenten sind nur in AEM as a Cloud Service und Edge Delivery Services verfügbar.
 >
->* Sie sind derzeit weder für AEM 6.5 noch für AEM 6.5 LTS verfügbar.
->* Sie sind weder in AEM On-Premise noch in Managed Services verfügbar.
+>* Sie werden nach und nach für AEM 6.5 LTS auf Managed Services verfügbar. Kunden, die an unserem Co-Innovationsprogramm teilnehmen möchten, sollten sich an ihren Adobe Customer Success Engineer, Technical Account Manager oder Customer Service Manager wenden, um die Verfügbarkeit zu überprüfen.
+>* Sie werden nicht On-Premise in AEM 6.5/AEM 6.5 LTS verfügbar sein.
 
 ## Zugreifen auf Agenten {#accessing-agents}
 
 Sie haben drei Möglichkeiten, auf Agenten zuzugreifen.
 
-1. Möglicherweise haben Sie die Möglichkeit, über das Programm &quot;[&#x200B; vor dem Kauf“, &#x200B;](http://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) schrittweise eingeführt wird, auf AEM-Agenten zuzugreifen. Ihr CSM oder TAM kann Ihnen dabei helfen, die Verfügbarkeit für Ihr Unternehmen zu bestätigen.
+1. Möglicherweise haben Sie die Möglichkeit, über das Programm &quot;[ vor dem Kauf“, ](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) schrittweise eingeführt wird, auf AEM-Agenten zuzugreifen. Ihr CSM oder TAM kann Ihnen dabei helfen, die Verfügbarkeit für Ihr Unternehmen zu bestätigen.
 1. Erkunden von AEM[Agenten (durch eine Testversion)](https://www.aem.live/developer/aem-playground)
 1. Stellen Sie eine Verbindung zu Ihrem CSM oder TAM her, um den Zugriff über die Agent SKU zu besprechen, wenn dies mit Ihrer Roadmap und Ihren Bewertungsplänen übereinstimmt.
 
-Sobald neue Fähigkeiten im Rahmen der frühzeitigen Veröffentlichung verfügbar werden, werden wir zusätzliche Möglichkeiten zur Teilnahme und zum Austausch von Feedback bieten. Wir empfehlen Ihnen, sich [diese Seite) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) Updates anzusehen.
+Sobald neue Fähigkeiten im Rahmen der frühzeitigen Veröffentlichung verfügbar werden, werden wir zusätzliche Möglichkeiten zur Teilnahme und zum Austausch von Feedback bieten. Wir empfehlen Ihnen, sich [diese Seite) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) Updates anzusehen.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
@@ -60,8 +60,8 @@ Der [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) schützt M
 
 Beachten Sie die folgenden allgemeinen Einschränkungen der AEM-Agenten:
 
-* Die Agenten sind nur für AEM as a Cloud Service und Edge Delivery Services verfügbar.
-* Sie sind derzeit weder für AEM 6.5 noch für AEM 6.5 LTS verfügbar.
-* Sie sind derzeit weder in AEM On-Premise noch in Managed Services verfügbar.
+* Die Agenten sind in AEM as a Cloud Service und Edge Delivery Services verfügbar.
+* Sie werden nach und nach für AEM 6.5 LTS auf Managed Services verfügbar. Kunden, die an unserem Co-Innovationsprogramm teilnehmen möchten, sollten sich an ihren Adobe Customer Success Engineer, Technical Account Manager oder Customer Service Manager wenden, um die Verfügbarkeit zu überprüfen.
+* Sie werden nicht On-Premise in AEM 6.5/AEM 6.5 LTS verfügbar sein.
 
 Auf den einzelnen Seiten finden Sie agentenspezifische Einschränkungen.
