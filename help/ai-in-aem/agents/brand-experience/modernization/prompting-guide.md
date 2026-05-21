@@ -4,9 +4,9 @@ description: Dieses Handbuch enthält Tipps für eine effektive Eingabeaufforder
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
+source-git-commit: 212c9c4db9904de0f9ec27cec9282df8d288a25a
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3163'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Verwenden Sie diese Eingabeaufforderung, wenn Sie Inhalte von einer bestehenden 
    * Bei der Migration mehrerer Seiten lädt der Agent zuerst vorhandene benutzerdefinierte Varianten und verwendet sie dann erneut, wenn die Formatierung übereinstimmt (70 % Ähnlichkeitsschwellenwert basierend auf Zweck, Farben, Typografie, Abstand, Layout).
 * Kopf-, Navigations- und Fußzeile sind von der Seitenmigration ausgeschlossen. Diese werden von dedizierten Fähigkeiten gehandhabt.
 * Bei jeder Migration wird eine Importinfrastruktur (Seitenvorlagen, Block-Parser, Transformatoren) für zukünftige Massenimporte erstellt.
+* Dynamic Media- und Scene7-Bilder werden in der Quelle erkannt und als DM-URLs beibehalten, anstatt als statische Ausgabedarstellungen importiert zu werden, sodass responsive und spontane Transformationen intakt bleiben. Dies gilt sowohl für die Dokumenterstellung als auch für Migrationen von AEM Sites in den universellen Editor.
 
 ### Massenimport {#bulk-import}
 
