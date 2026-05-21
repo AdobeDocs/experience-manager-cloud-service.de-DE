@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: cc75cbb87c192ceeaa49e7ce860bf497743916bc
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '956'
+ht-degree: 1%
 
 ---
 
@@ -18,11 +18,11 @@ Erfahren Sie, wie der Experience Modernization Agent mithilfe von KI Websites in
 
 ## Einführung {#introduction}
 
-[Im Rahmen der Brand Experience Agent &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) der Experience Modernization Agent das Onboarding für Edge Delivery Services durch die Automatisierung von Website-Migrationen und die Einrichtung grundlegender Websites.
+[Im Rahmen der Brand Experience Agent ](/help/ai-in-aem/agents/brand-experience/overview.md) der Experience Modernization Agent das Onboarding für Edge Delivery Services durch die Automatisierung von Website-Migrationen und die Einrichtung grundlegender Websites.
 
 Es kombiniert [Site-Creation und Migration](#creation-migration) für anfängliches Onboarding von Websites und [Blockentwicklungsfunktionen](#block-development) um die Site-Erstellung und Migrations-Workflows zu unterstützen. Darüber hinaus bietet sie die [Experience Modernization Console](#console) als Web-basierte KI-unterstützte Entwicklungsumgebung, die Ihnen direkt zur Verfügung steht. Während Benutzer den Agenten direkt über diese Konsole betreiben können, behalten Entwickler die volle Kontrolle darüber, was ausgeliefert wird.
 
-Für komplexe Migrationen oder Migrationen mit hoher Priorität bietet Adobe das [Agent Outcome Engineer (AOE)-Bereitstellungsmodell, &#x200B;](#aoe-delivery) einen Engineering-geführten Service, der entwickelt wurde, um produktionsbereite Edge Delivery-Sites mithilfe des Experience Modernization Agent bereitzustellen.
+Für komplexe Migrationen oder Migrationen mit hoher Priorität bietet Adobe das [Agent Outcome Engineer (AOE)-Bereitstellungsmodell, ](#aoe-delivery) einen Engineering-geführten Service, der entwickelt wurde, um produktionsbereite Edge Delivery-Sites mithilfe des Experience Modernization Agent bereitzustellen.
 
 ## Vorteile {#benefits}
 
@@ -66,8 +66,8 @@ Die Self-Service-Konsole zur Erlebnismodernisierung ist allgemein verfügbar. In
 
 Erste Schritte mit der Experience Modernization Console!
 
-* Wenn Sie Ihre Site durch die Erstellung von Dokumenten modernisieren möchten, [&#x200B; Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-* Wenn Sie Ihre Site durch das Authoring mit AEM modernisieren möchten, [&#x200B; Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+* Wenn Sie Ihre Site durch die Erstellung von Dokumenten modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* Wenn Sie Ihre Site durch das Authoring mit AEM modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## Projektdokumentations-Kenntnisse {#project-documentation}
 
@@ -89,6 +89,7 @@ Die folgenden Anwendungsfälle erfordern zusätzlich zu den Fähigkeiten des Exp
 Die Scraping-Fähigkeit unterstützt nicht die folgenden Quellen.
 
 * Intranet oder geschützte Quellen wie Inhalte hinter Authentifizierung, VPNs oder Firewalls, auf die nicht zugegriffen werden kann
+   * Alternativ können Sie [SLICC](https://www.sliccy.com) verwenden, das den Authentifizierungskontext von Ihrem Browser aus nutzen kann, um auf geschützte Quellen zuzugreifen.
 * Komplexe dynamische Inhalte, z. B. Inhalte, für die eine anspruchsvolle Benutzerinteraktion im DOM erforderlich ist.
    * Client-seitig gerenderte Inhalte werden unterstützt, wenn der Zugriff auf die Inhalte über eine bestimmte URL möglich ist.
    * Über CSS ausgeblendete, aber im DOM vorhandene Elemente wie Registerkarten, Akkordeons oder Karussells werden ebenfalls unterstützt.
