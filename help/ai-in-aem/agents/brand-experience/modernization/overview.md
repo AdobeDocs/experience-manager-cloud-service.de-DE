@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
+source-git-commit: cc75cbb87c192ceeaa49e7ce860bf497743916bc
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '956'
+ht-degree: 1%
 
 ---
 
@@ -89,6 +89,7 @@ Die folgenden Anwendungsfälle erfordern zusätzlich zu den Fähigkeiten des Exp
 Die Scraping-Fähigkeit unterstützt nicht die folgenden Quellen.
 
 * Intranet oder geschützte Quellen wie Inhalte hinter Authentifizierung, VPNs oder Firewalls, auf die nicht zugegriffen werden kann
+   * Alternativ können Sie [SLICC](https://www.sliccy.com) verwenden, das den Authentifizierungskontext von Ihrem Browser aus nutzen kann, um auf geschützte Quellen zuzugreifen.
 * Komplexe dynamische Inhalte, z. B. Inhalte, für die eine anspruchsvolle Benutzerinteraktion im DOM erforderlich ist.
    * Client-seitig gerenderte Inhalte werden unterstützt, wenn der Zugriff auf die Inhalte über eine bestimmte URL möglich ist.
    * Über CSS ausgeblendete, aber im DOM vorhandene Elemente wie Registerkarten, Akkordeons oder Karussells werden ebenfalls unterstützt.
