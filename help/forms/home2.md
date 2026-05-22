@@ -72,7 +72,6 @@ AEM Forms unterstützt das vollständige Journey digitaler Formulare, von der er
     ↑ ↓
     
  ←←←←←←←←←←←←←←← Kontinuierliche Verbesserungsschleife
-
 ### Erstellen: Formularentwurf und -entwicklung {#create}
 
 Erstellen Sie adaptive Formulare mithilfe mehrerer Authoring-Ansätze, die auf verschiedene Anforderungen und technische Anforderungen zugeschnitten sind.
@@ -90,10 +89,10 @@ Beschleunigen Sie die Formularerstellung mithilfe vordefinierter [Vorlagen](/hel
 Verbinden von Formularen mit Backend-Systemen während der Design-Phase. Das [Formulardatenmodell](/help/forms/create-form-data-models.md) bietet eine einheitliche Schnittstelle für mehrere Datenquellen, die [Vorausfüllen](/help/forms/prepopulate-adaptive-form-fields.md), [Validierungsregeln](/help/forms/rule-editor-core-components.md) und einen nahtlosen Datenfluss zwischen Formularen und Geschäftssystemen ermöglicht.
 
 **Validierungen und Bedingungslogik**
-Implementieren Sie [Bedingungslogik](/help/forms/rule-editor-core-components.md) progressive Offenlegung und adaptive Validierung, um Benutzer durch komplexe Prozesse zu führen. [Mit der Funktion „Speichern und &#x200B;](/help/forms/save-core-component-based-form-as-draft.md)&quot; können Benutzer Formulare sitzungsübergreifend ausfüllen.
+Implementieren Sie [Bedingungslogik](/help/forms/rule-editor-core-components.md) progressive Offenlegung und adaptive Validierung, um Benutzer durch komplexe Prozesse zu führen. [Mit der Funktion „Speichern und ](/help/forms/save-core-component-based-form-as-draft.md)&quot; können Benutzer Formulare sitzungsübergreifend ausfüllen.
 
 **HTML5 Forms**
-XFA-basierte Formulare für Mobilgeräte und ältere Browser [&#128279;](/help/forms/introductionhtml5.md) HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
+XFA-basierte Formulare für Mobilgeräte und ältere Browser ](/help/forms/introductionhtml5.md) [HTML5-Formulare“ rendern. HTML5 Forms bietet ein natives mobiles Erlebnis ohne Plug-ins, während die Formularlogik und die Validierung aus XDP-Originalvorlagen beibehalten werden.
 
 **Interaktive Kommunikation**
 Erstellen Sie dokumentorientierte Kommunikationen wie Auszüge, Rechnungen und Benachrichtigungen mit einem visuellen Editor. [Interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md) Kombinieren Sie statische Inhalte mit dynamischen Daten, um personalisierte Kommunikation über Print- und digitale Kanäle zu generieren.
@@ -103,7 +102,7 @@ Erstellen Sie dokumentorientierte Kommunikationen wie Auszüge, Rechnungen und B
 Einführung von Aufsichts- und Genehmigungsprozessen, um sicherzustellen, dass die Formulare den organisatorischen Standards und rechtlichen Anforderungen entsprechen.
 
 **Workflow-basierte Genehmigungen**
-Routing von Formularentwürfen durch mehrstufige Prüfprozesse mit rollenbasierten Zuweisungen. Stakeholder können Formulare [überprüfen](/help/forms/create-reviews-forms.md) [&#x200B; (kommentieren](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) und genehmigen, bevor sie veröffentlicht werden. Dabei bleiben Qualitätskontrolle und Compliance-Überwachung mithilfe von [AEM-Workflows](/help/forms/aem-forms-workflow.md).
+Routing von Formularentwürfen durch mehrstufige Prüfprozesse mit rollenbasierten Zuweisungen. Stakeholder können Formulare [überprüfen](/help/forms/create-reviews-forms.md) [ (kommentieren](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) und genehmigen, bevor sie veröffentlicht werden. Dabei bleiben Qualitätskontrolle und Compliance-Überwachung mithilfe von [AEM-Workflows](/help/forms/aem-forms-workflow.md).
 
 **Versionsverwaltung**
 Verfolgen Sie Formularversionen und pflegen Sie Audit-Trails zur Einhaltung von Vorschriften. Die integrierte [Versionierung](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) stellt sicher, dass Sie Änderungen zurücksetzen, Iterationen vergleichen und historische Datensätze für Compliance-Audits verwalten können.
@@ -167,7 +166,7 @@ Verbinden von Formularen mit vorhandenen Geschäftssystemen und Datenquellen fü
 Native Integration mit [Salesforce](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) und Adobe Experience Cloud-Lösungen. Vorkonfigurierte Connectoren verkürzen die Entwicklungszeit und sorgen gleichzeitig für eine zuverlässige Datensynchronisation.
 
 **RESTful-API-Integration**
-Stellen Sie über RESTful-APIs über [Übermittlungsaktionen) oder &#x200B;](/help/forms/configure-submit-action-restpoint.md)Datenintegration[&#128279;](/help/forms/data-integration.md) eine Verbindung zu einem Service her, auf  über Web zugegriffen werden kann. Das Formulardatenmodell abstrahiert die Integrationskomplexität und bietet eine konsistente Schnittstelle unabhängig von der zugrunde liegenden Systemarchitektur.
+Stellen Sie über RESTful-APIs über [Übermittlungsaktionen) oder ](/help/forms/configure-submit-action-restpoint.md)Datenintegration](/help/forms/data-integration.md) eine Verbindung zu einem Service her, auf [ über Web zugegriffen werden kann. Das Formulardatenmodell abstrahiert die Integrationskomplexität und bietet eine konsistente Schnittstelle unabhängig von der zugrunde liegenden Systemarchitektur.
 
 **Datenaustausch in Echtzeit**
 Bidirektionalen Datenfluss zwischen Formularen und Geschäftssystemen aktivieren. Formulare aus vorhandenen Datensätzen vorab ausfüllen, mit Live-Daten validieren und mehrere Systeme gleichzeitig bei der Übermittlung durch umfassende [Datenintegration](/help/forms/data-integration.md) aktualisieren

@@ -6,7 +6,7 @@ feature: Headless
 role: Admin, Developer
 source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 86%
 
 ---
@@ -18,7 +18,7 @@ Im Folgenden finden Sie eine einfache Anleitung zum Erstellen, Verwalten und Ber
 1. [Erstellen einer Konfiguration](/help/headless/setup/create-configuration.md)
 1. [Erstellen eines Inhaltsfragmentmodells](/help/headless/setup/create-content-model.md)
 1. [Erstellen eines Asset-Ordners](/help/headless/setup/create-assets-folder.md)
-1. [Erstellen eines Inhaltsmodells](/help/headless/setup/create-content-fragment.md)
+1. [Erstellen eines Inhaltsfragments](/help/headless/setup/create-content-fragment.md)
 1. [Erstellen einer API-Anfrage](/help/headless/setup/create-api-request.md)
 
 >[!TIP]

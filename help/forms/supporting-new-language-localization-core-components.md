@@ -8,8 +8,8 @@ exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2160'
-ht-degree: 98%
+source-wordcount: '2331'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ AEM Forms priorisiert die folgenden Methoden zur Bestimmung des Gebietsschemas f
 
    Das System priorisiert das in der URL angegebene Gebietsschema mithilfe der Auswahlmöglichkeit [locale]. Dieses Format ermöglicht die Zwischenspeicherung für eine bessere Leistung.
 
-   Format: Die URL hat folgendes Format: http:/[AEM Forms-Server-URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled.
+   Format: Die URL hat folgendes Format: http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled.
 
    Beispiel: https://[server]/content/forms/af/contact-us.hi.html rendert das Formular in Hindi.
 
@@ -274,7 +274,7 @@ Lassen Sie uns nun die `clientlib-it-custom-locale`-Bibliothek in Ihr AEM as a C
 
 1. Suchen Sie die englischsprachige Beispieldatei:
 
-   AEM Forms stellt auf GitHub[&#128279;](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json) eine beispielhafte englische Gebietsschema-Datei (.json) zur Verfügung.
+   AEM Forms stellt auf GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json) eine [beispielhafte englische Gebietsschema-Datei (.json) zur Verfügung.
 
    Die englische Sprachdatei enthält den Standardsatz von Zeichenfolgen als Referenz. Ihre gebietsschemaspezifische Datei sollte die Struktur der englischsprachigen Datei imitieren.
 

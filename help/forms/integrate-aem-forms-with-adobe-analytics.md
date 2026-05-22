@@ -9,7 +9,7 @@ feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7904'
+source-wordcount: '8178'
 ht-degree: 18%
 
 ---
@@ -28,7 +28,7 @@ Die Formularanalyse geht über das einfache Übermittlungs-Tracking hinaus und b
 **Benutzerinteraktions-Tracking**
 Die Formularanalyse erfasst detaillierte Informationen zur Interaktion der Benutzer mit Formularen, einschließlich der Zeit, die mit jedem Feld verbracht wurde, der Mausbewegungen, des Bildlaufverhaltens und der Interaktionsmuster. Diese detaillierten Daten helfen bei der Identifizierung von Nutzungsproblemen und Optimierungsmöglichkeiten.
 
-**Analyse von Verhaltensmustern**
+**Verhaltensstrukturanalyse**
 Durch die Analyse von Benutzerverhaltensmustern in mehreren Formularsitzungen können Unternehmen allgemeine Journey, typische Abbruchstellen und Pfade für den erfolgreichen Abschluss identifizieren. Diese Analyse ermöglicht zielgerichtete Verbesserungen, die den tatsächlichen Benutzeranforderungen entsprechen.
 
 **Leistungsmessung**
@@ -85,7 +85,7 @@ Effektive Formularanalyse konzentriert sich auf Metriken, die sich direkt auf Ge
 
 Die Implementierung der Formularanalyse bietet einen messbaren geschäftlichen Nutzen über mehrere Dimensionen hinweg. Unternehmen, die die Formularanalyse nutzen, sehen in der Regel deutliche Verbesserungen bei den Konversionsraten, der Benutzerzufriedenheit und der betrieblichen Effizienz.
 
-### &#x200B;1. Reduzieren Sie den Formularabbruch und erhöhen Sie die Konversionen
+### &#x200B;1. Reduzieren von Formularabbrüchen und Erhöhen von Konversionen
 
 Der Abbruch von Formularen ist eine wichtige geschäftliche Herausforderung, die sich direkt auf den Umsatz und die Lead-Generierung auswirkt:
 
@@ -121,7 +121,7 @@ Ersetzen Sie bei der Formularoptimierung Rätselraten durch konkrete Daten:
 
 **Geschäftsauswirkungen**: Datengesteuerte Optimierung liefert in der Regel deutlich bessere Ergebnisse als intuitive Änderungen.
 
-### &#x200B;4. Steigerung der Lead-Qualität und der Verkaufseffizienz
+### &#x200B;4. Steigerung der Lead-Qualität und der Vertriebseffizienz
 
 Mit der Formularanalyse können Sie nicht nur die Quantität, sondern auch die Qualität der Formularübermittlungen optimieren:
 
@@ -326,7 +326,7 @@ Im Gegensatz zu einfachen Formularanalysetools ermöglicht Adobe Analytics eine 
 
 AEM Forms lässt sich nahtlos mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, um Leistungsmetriken für Ihre veröffentlichten Formulare automatisch zu erfassen und zu verfolgen. Sie können das Verhalten sowohl authentifizierter als auch anonymer Benutzer ohne zusätzliche Konfiguration überwachen.
 
-Stellen Sie vor der Implementierung der Formularanalyse sicher, dass Ihre [AEM Forms-Umgebung ordnungsgemäß konfiguriert &#x200B;](/help/forms/setup-forms-cloud-service.md) und Sie [Ihre adaptiven Formulare erstellt haben](/help/forms/creating-adaptive-form-core-components.md) entweder mithilfe von Kernkomponenten oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md).
+Stellen Sie vor der Implementierung der Formularanalyse sicher, dass Ihre [AEM Forms-Umgebung ordnungsgemäß konfiguriert ](/help/forms/setup-forms-cloud-service.md) und Sie [Ihre adaptiven Formulare erstellt haben](/help/forms/creating-adaptive-form-core-components.md) entweder mithilfe von Kernkomponenten oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md).
 
 **Umfassende Formular-Ereignisverfolgung:**
 
@@ -506,7 +506,7 @@ Bevor Sie mit der Implementierung der Formularanalyse beginnen, stellen Sie sich
 
 - [AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md) oder AEM Forms 6.5+ (lokale/AMS-Installationen)
 - Authoring- und Publishing-Funktionen von Forms aktiviert
-- Stellen Sie sicher, dass die Option [Forms &#x200B;](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) Ihrer AEM-Umgebung verfügbar ist
+- Stellen Sie sicher, dass die Option [Forms ](/help/forms/troubleshooting-installation-and-configuration.md#forms-option-is-unavailable) Ihrer AEM-Umgebung verfügbar ist
 - [Kernkomponenten für adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) oder [Foundation-Komponenten](/help/forms/creating-adaptive-form.md) verfügbar
 
 **Technische Anforderungen**
@@ -675,7 +675,7 @@ Führen Sie zum Veröffentlichen der Konfiguration folgende Schritte aus:
 
 ![Veröffentlichungsfluss](assets/publish-flow.png)
 
-## &#x200B;2. Konfiguration von AEM Forms {#configure-aem-forms}
+## &#x200B;2. Konfigurieren von AEM Forms {#configure-aem-forms}
 
 Bevor Sie eine Adobe Launch-Konfiguration erstellen, erstellen Sie eine [Adobe IMS-Konfiguration mit Adobe Launch als Cloud-Lösung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=de).
 
@@ -917,7 +917,7 @@ Selbst bei sorgfältiger Implementierung können bei Formularanalysekonfiguratio
 
 >[!TIP]
 >
->Weitere Anleitungen zur Fehlerbehebung finden Sie in unserer [Sammlung zur Fehlerbehebung bei AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) und in [Handbüchern zur Fehlerbehebung bei der &#x200B;](/help/forms/form-creation-failing.md)).
+>Weitere Anleitungen zur Fehlerbehebung finden Sie in unserer [Sammlung zur Fehlerbehebung bei AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) und in [Handbüchern zur Fehlerbehebung bei der ](/help/forms/form-creation-failing.md)).
 
 **Konfigurationsprobleme**
 
@@ -964,7 +964,7 @@ Für die erfolgreiche Implementierung der Formularanalyse sind die Befolgung bew
 
 >[!TIP]
 >
->Stellen Sie vor der Implementierung von Analytics sicher, dass Ihre Formulare ordnungsgemäß konfiguriert sind, indem Sie [Best &#x200B;](/help/forms/introduction-forms-authoring.md) für AEM Forms und geeignete [Übermittlungsaktionen](/help/forms/configuring-submit-actions.md) verwenden.
+>Stellen Sie vor der Implementierung von Analytics sicher, dass Ihre Formulare ordnungsgemäß konfiguriert sind, indem Sie [Best ](/help/forms/introduction-forms-authoring.md) für AEM Forms und geeignete [Übermittlungsaktionen](/help/forms/configuring-submit-actions.md) verwenden.
 
 ### Implementierungsrichtlinien
 

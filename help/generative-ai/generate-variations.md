@@ -6,8 +6,8 @@ feature: Generate Variations, AI Tools
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3295'
-ht-degree: 100%
+source-wordcount: '3392'
+ht-degree: 99%
 
 ---
 
@@ -116,7 +116,7 @@ Es gibt mehrere grundlegende Eingabefelder, die für eine Reihe von Prompts verw
 * **Zusätzlicher Kontext**
    * Fügen Sie hier relevante Inhalte ein, um die generative KI bei der Erstellung einer besseren Antwort auf Grundlage der Eingabe zu unterstützen. Wenn Sie beispielsweise ein Web-Banner für eine bestimmte Seite oder ein bestimmtes Produkt erstellen, können Sie Informationen über die Seite bzw. das Produkt einfügen.
 * **Temperatur**
-Zur Änderung der Temperatur der generativen KI von Adobe:
+Verwenden Sie , um die Temperatur von Adobe Generative AI zu ändern:
    * Eine höhere Temperatur führt zu einer stärkeren Abweichung vom Prompt und damit zu mehr Variation, Zufälligkeit und Kreativität.
    * Eine niedrigere Temperatur ist deterministischer und orientiert sich näher am Inhalt des Prompts.
    * Die Temperatur ist standardmäßig auf „1“ festgelegt. Sie können verschiedene Temperaturen ausprobieren, wenn die generierten Ergebnisse nicht Ihren Vorstellungen entsprechen.
@@ -488,8 +488,8 @@ Bevor Sie über den Sidekick (von Edge Delivery Services) auf „Varianten gener
 
 Weitere Informationen finden Sie auch unter:
 
-* [GenAI – Generieren von Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Experimente mit Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [Generieren von GenAI-Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
 * [Generative KI in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## Häufig gestellte Fragen {#faqs}

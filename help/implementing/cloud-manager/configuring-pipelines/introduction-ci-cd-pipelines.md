@@ -8,7 +8,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1633'
 ht-degree: 96%
 
 ---
@@ -113,7 +113,7 @@ Siehe [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-m
 
 ## Konfigurations-Pipelines {#config-deployment-pipeline}
 
-Mithilfe einer Konfigurations-Pipeline können Sie Einstellungen für die Protokollweiterleitung, bereinigungsbezogene Wartungsaufgaben sowie verschiedene CDN-Konfigurationen schnell bereitstellen, einschließlich Traffic-Filterregeln (z. B. WAF(Web Application Firewall)-Regeln). Darüber hinaus können Sie Anfrage- und Reaktionsumwandlungen, Ursprungs-Auswahl, Client-seitige Umleitungen, Fehlerseiten, kundenseitig verwaltete CDN-Schlüssel, Bereinigungs-API-Schlüssel und grundlegende Authentifizierungsfunktionen verwalten. 
+Mithilfe einer Konfigurations-Pipeline können Sie Einstellungen für die Protokollweiterleitung, bereinigungsbezogene Wartungsaufgaben sowie verschiedene CDN-Konfigurationen schnell bereitstellen, einschließlich Traffic-Filterregeln (z. B. WAF(Web Application Firewall)-Regeln). Darüber hinaus können Sie Anfrage- und Reaktionsumwandlungen, Ursprungs-Auswahl, Client-seitige Umleitungen, Fehlerseiten, kundenseitig verwaltete CDN-Schlüssel, Bereinigungs-API-Schlüssel und grundlegende Authentifizierungsfunktionen verwalten.
 
 Unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md) finden Sie eine umfassende Liste der unterstützten Funktionen und erfahren, wie Sie die Konfigurationen in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
 

@@ -7,8 +7,8 @@ feature: Headless
 role: Admin, Developer
 source-git-commit: 920045ab4e79dc223706219bf64347649af14125
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 98%
 
 ---
 
