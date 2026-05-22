@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1263'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Häufige Anwendungsfälle umfassen:
 - Umformatieren oder Aggregieren von Antworten von Drittanbieter-APIs, bevor sie den Browser erreichen
 - Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus mehreren Backends zusammengefügt wurden
 
-AEM Edge-Funktionen sind sowohl mit Edge Delivery Services als auch mit dem AEM Cloud Service Java-Stack kompatibel.
+AEM Edge-Funktionen sind sowohl mit Edge Delivery Services als auch mit dem AEM as a Cloud Service Java-Stack kompatibel.
 
 ## Wichtigste Vorteile {#key-benefits}
 
@@ -82,7 +82,7 @@ AEM Edge-Funktions-Services werden in einer YAML-Konfigurationsdatei deklariert 
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [&#x200B; zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [ zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
 
 >[!NOTE]
 >
