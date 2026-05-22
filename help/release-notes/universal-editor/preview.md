@@ -28,8 +28,8 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige Funktionen {#upcoming-features}
 
-* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([ Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
-   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) ](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
+* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([&#x200B; Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
+   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
    * Die Schaltfläche wird nur angezeigt, wenn die Remote[Seite über eine (Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` verfügt und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
 
 ## Bevorstehende Änderungen {#upcoming-improvements}
