@@ -55,7 +55,7 @@ Eine Zusammenfassung der in der Version 2022.8.0 hinzugefügten Funktionen find
 
 ### Neue Funktionen in [!DNL Assets] {#features-assets}
 
-* Sie können Adobe Experience Manager Assets jetzt so konfigurieren[ dass der Typ der Assets, die Benutzerinnen und Benutzer hochladen können, auf der Grundlage des MIME-Typs eingeschränkt ](/help/assets/configure-asset-upload-restrictions.md).
+* Sie können Adobe Experience Manager Assets jetzt so konfigurieren[&#x200B; dass der Typ der Assets, die Benutzerinnen und Benutzer hochladen können, auf der Grundlage des MIME-Typs eingeschränkt &#x200B;](/help/assets/configure-asset-upload-restrictions.md).
 
   ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 

@@ -89,7 +89,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Konfiguration der Batch-Größe von Assets](/help/release-notes/assets/assets-batch-size-configuration.png)
 
-* Experience Manager Assets enthält nun die neue Version 9 des `damAssetLucene`-Index. `damAssetLucene-9`[ ändert das Verhalten der Facettenzählung der Oak-Abfrage, damit die Zugriffskontrolle nicht mehr entsprechend der Facettenzahlen ausgewertet wird, die vom zugrunde liegenden Suchindex zurückgegeben werden, was zu schnelleren Antwortzeiten bei der Suche führt.](/help/assets/search-assets.md)
+* Experience Manager Assets enthält nun die neue Version 9 des `damAssetLucene`-Index. `damAssetLucene-9`[&#x200B; ändert das Verhalten der Facettenzählung der Oak-Abfrage, damit die Zugriffskontrolle nicht mehr entsprechend der Facettenzahlen ausgewertet wird, die vom zugrunde liegenden Suchindex zurückgegeben werden, was zu schnelleren Antwortzeiten bei der Suche führt.](/help/assets/search-assets.md)
 
 ### Vorabversionsfunktionen, die in [!DNL Experience Manager Assets] verfügbar sind {#prerelease-features-assets}
 

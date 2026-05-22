@@ -124,7 +124,7 @@ Nutzen Sie den [universellen Editor](https://experienceleague.adobe.com/de/docs/
 
 Das Festlegen einer TTL mithilfe des HTTP Cache-Control-Headers ist ein effektiver Ansatz, um die Leistung bei der Inhaltsbereitstellung und die Aktualität der Inhalte aufeinander abzustimmen. Wenn aktualisierte Inhalte jedoch sofort bereitgestellt werden müssen, kann es von Vorteil sein, den CDN-Cache direkt zu bereinigen.
 
-[Erfahren Sie](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) wie Sie die Konfiguration eines Bereinigungs-API-Tokens mithilfe der Cloud Manager-Konfigurations-Pipeline selbst bereitstellen können, damit Sie [ Bereinigungs-APIs ](/help/implementing/dispatcher/cdn-cache-purge.md) einer der folgenden Varianten aufrufen können:
+[Erfahren Sie](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) wie Sie die Konfiguration eines Bereinigungs-API-Tokens mithilfe der Cloud Manager-Konfigurations-Pipeline selbst bereitstellen können, damit Sie [&#x200B; Bereinigungs-APIs &#x200B;](/help/implementing/dispatcher/cdn-cache-purge.md) einer der folgenden Varianten aufrufen können:
 
 * Einzelne URL
 * Mehrere URLs unter Verwendung eines Tags

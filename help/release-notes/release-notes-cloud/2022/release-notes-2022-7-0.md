@@ -41,7 +41,7 @@ Eine Zusammenfassung der in der Version 2022.7.0 hinzugefügten Funktionen finde
 
 * Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) unterstützt jetzt [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* Mit der Web-optimierten [ von AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) die Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP erheblich verbessert werden. Dieser neue Service bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. In allen Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) können Sie diesen Service verwenden und Bilder als WebP durch Klicken auf eine Option in der Richtlinie der Bildkomponente bereitstellen.
+* Mit der Web-optimierten [&#x200B; von AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) die Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP erheblich verbessert werden. Dieser neue Service bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. In allen Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) können Sie diesen Service verwenden und Bilder als WebP durch Klicken auf eine Option in der Richtlinie der Bildkomponente bereitstellen.
 
 * Bei AEM-Personalisierungsaktivitäten können jetzt Experience Fragments anstelle der bisherigen Angebote verwendet werden. Diese Funktion:
    * Ermöglicht einen Migrationspfad, bei dem AEM-Inhalte Experience Fragment-Angebote anstelle der veralteten Bibliotheksangebote fördern, um entsprechend gestaltete Inhalte bereitzustellen, die mit der künftigen Personalisierung in Einklang stehen.
@@ -56,7 +56,7 @@ Eine Zusammenfassung der in der Version 2022.7.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-Sie können Adobe Experience Manager Assets jetzt so konfigurieren[ dass der Typ der Assets, die Benutzerinnen und Benutzer hochladen können, auf der Grundlage des MIME-Typs eingeschränkt ](/help/assets/configure-asset-upload-restrictions.md).
+Sie können Adobe Experience Manager Assets jetzt so konfigurieren[&#x200B; dass der Typ der Assets, die Benutzerinnen und Benutzer hochladen können, auf der Grundlage des MIME-Typs eingeschränkt &#x200B;](/help/assets/configure-asset-upload-restrictions.md).
 
 ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -104,7 +104,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren[ dass der Typ
 ### Neue Funktionen {#what-is-new-foundation}
 
 * Der [Repository-Browser](/help/implementing/developing/tools/repository-browser.md) verfügt jetzt über ein Pfadeingabefeld, das es ermöglicht, direkt zu einem bestimmten Ordner in der Repository-Hierarchie zu springen
-* Sling Content Distribution (SCD) unterstützt jetzt eine explizite Aktion zur „Invalidierung“, um Inhalte ungültig zu machen, ohne dass diese Inhalte veröffentlicht werden. Weitere [ finden Sie auf ](/help/implementing/dispatcher/caching.md#explicit-invalidation) Seite „Caching in AEM as a Cloud Service&quot;.
+* Sling Content Distribution (SCD) unterstützt jetzt eine explizite Aktion zur „Invalidierung“, um Inhalte ungültig zu machen, ohne dass diese Inhalte veröffentlicht werden. Weitere [&#x200B; finden Sie auf &#x200B;](/help/implementing/dispatcher/caching.md#explicit-invalidation) Seite „Caching in AEM as a Cloud Service&quot;.
 * mod_macro ist jetzt in AEM as a Cloud Service verfügbar. In [dieser Tabelle](/help/implementing/dispatcher/disp-overview.md) finden Sie eine Liste der unterstützten Apache-Module.
 
 ### Verbesserungen an AEM as a Cloud Service SDK Dispatcher-Tools {#dispatcher-tools-enhancements}
@@ -114,7 +114,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren[ dass der Typ
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 
-* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Weitere Informationen finden Sie unter [AEM as a Cloud Service ](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
+* AEM as a Cloud Service ist jetzt in Unified Shell integriert, um das Benutzererlebnis zu verbessern und es mit allen anderen Experience Cloud-Programmen zu vereinheitlichen. Weitere Informationen finden Sie unter [AEM as a Cloud Service &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
 
 ## Adobe Learning Manager-Connectoren {#learn-manage}
 
