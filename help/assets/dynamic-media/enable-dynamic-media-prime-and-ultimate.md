@@ -61,7 +61,7 @@ Führen Sie diese Schritte aus, um [!DNL Dynamic Media with OpenAPI] für Ihre C
 
 1. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Aktivieren]**, um den Aktivierungsprozess für [!DNL Dynamic Media with OpenAPI] zu starten. Nach erfolgreicher Aktivierung zeigt Cloud Manager die folgenden Statusaktualisierungen an:
    1. **[!UICONTROL Umgebungsschritt]**: **[!UICONTROL Wird ausgeführt]**
-   1. ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen sind aktiviert ]**
+   1. ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI-Funktionen sind aktiviert &#x200B;]**
 
       ![Aktivierung erfolgreich](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -70,7 +70,7 @@ Führen Sie diese Schritte aus, um [!DNL Dynamic Media with OpenAPI] für Ihre C
 Wenn die Aktivierung fehlschlägt, zeigt Cloud Manager die folgenden Statusaktualisierungen an:
 
 * **[!UICONTROL Umgebungsschritt]**: **[!UICONTROL DM mit OpenAPI fehlgeschlagen]**
-* ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen konnten nicht aktiviert werden ]**
+* ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI-Funktionen konnten nicht aktiviert werden &#x200B;]**
 
   ![Aktivierung wiederholen](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -143,7 +143,7 @@ Führen Sie die folgenden Schritte aus, um ein neues [!DNL Dynamic Media]-Untern
 
    ![Informationen zum Dynamic Media-Unternehmen](/help/assets/assets/dm-company-information.png)
 
-1. Überprüfen Sie als Dynamic Media-Admin Ihr Postfach auf eine Begrüßungs-E-Mail, die eine Liste von Schritten zum [ Konfigurieren des [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)-Unternehmens in Ihrer [!DNL AEM] Cloud Service-Umgebung enthält.
+1. Überprüfen Sie als Dynamic Media-Admin Ihr Postfach auf eine Begrüßungs-E-Mail, die eine Liste von Schritten zum [&#x200B; Konfigurieren des [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)-Unternehmens in Ihrer [!DNL AEM] Cloud Service-Umgebung enthält.
 
    ![Begrüßungs-E-Mail](/help/assets/assets/welcome-email.png)
 
@@ -171,7 +171,7 @@ AEM as a Cloud Service verfügt zwar über eine Standard-Domain, Sie können sie
 Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie den Konfigurationsprozess starten:
 
 1. [Sie haben Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. [ [!DNL Dynamic Media with OpenAPI] ist bereits in Ihrer Umgebung aktiviert](#activate-dynamic-media-with-openapi).
+1. [&#x200B; [!DNL Dynamic Media with OpenAPI] ist bereits in Ihrer Umgebung aktiviert](#activate-dynamic-media-with-openapi).
 1. [!DNL Dynamic Media with OpenAPI] ist mit dem Status „Bereit“ aktiviert.
 1. Es liegt ein EV- oder OV-Zertifikat für die Domain vor, die für die Bereitstellungsebene verwendet werden soll. Weitere Informationen finden Sie in der [Einführung in SSL-Zertifikate](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates).
 
@@ -191,7 +191,7 @@ Führen Sie die folgenden Schritte in Cloud Manager aus, um eine benutzerdefinie
 
    ![Konfigurieren des CDN-Bereitstellungsstatus](/help/assets/assets/cdn-configuration-deployment-status.png)
 
-1. Klicken Sie auf „Weitere Optionen“ (![weitere Optionen](/help/assets/assets/three-dots.svg)) und wählen Sie **[!UICONTROL Bereitschaft zur Live-Schaltung]** aus, um das gleichnamige Dialogfeld **** anzuzeigen.
+1. Klicken Sie auf „Weitere Optionen“ (![weitere Optionen](/help/assets/assets/three-dots.svg)) und wählen Sie **[!UICONTROL Bereitschaft zur Live-Schaltung]** aus, um das gleichnamige Dialogfeld **&#x200B;**&#x200B;anzuzeigen.
 
    ![Option „Bereitschaft zur Live-Schaltung“](/help/assets/assets/go-live-readiness-option.png)
 
