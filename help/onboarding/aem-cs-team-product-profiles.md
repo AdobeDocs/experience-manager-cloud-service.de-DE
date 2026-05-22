@@ -6,7 +6,7 @@ feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2148'
 ht-degree: 100%
 
 ---
@@ -266,7 +266,7 @@ Die folgende Abbildung zeigt die AEM-Gruppen, die das Produktprofil „AEM Sites
 
 >[!NOTE]
 >
->Jeder Benutzer, der einem AEM as a Cloud Service-Produktprofil zugewiesen ist, hat über die Rolle **Cloud Manager-Benutzer** schreibgeschützten Zugriff auf Cloud Manager.
+>Jede Person, die einem AEM as a Cloud Service-Produktprofil zugewiesen ist, hat über die Rolle **Cloud Manager-Benutzer** schreibgeschützten Zugriff auf Cloud Manager.
 >
 >Benutzer nur mit der Rolle **Cloud Manager-Benutzer** können sich bei Cloud Manager anmelden und zu den AEM-Autorenumgebungen navigieren (falls vorhanden), indem sie die Menüoptionen unter **Programme** verwenden. Die Rolle **Cloud Manager-Benutzer** reicht nicht aus, um auf Programmdetails zuzugreifen. Wenn ein solcher Zugriff erforderlich ist, müssen Benutzende von ihrem Systemadministrator zusätzliche Rollen erhalten.
 

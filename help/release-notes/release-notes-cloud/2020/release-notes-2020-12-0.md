@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 51%
+source-wordcount: '774'
+ht-degree: 54%
 
 ---
 
@@ -30,7 +30,7 @@ Die folgende Version (2021.1.0) wurde am 28. Januar 2021 veröffentlicht.
 
 * [!DNL Experience Manager] wurde erweitert, um Asset-Referenzen zu verfolgen und anzuzeigen, wenn ein Asset in einer Remote-Bereitstellung von [!DNL Experience Manager Sites] mithilfe der Funktion für Connected Assets verwendet wird. Die neue [!UICONTROL Verweise] auf der Seite [!UICONTROL Eigenschaften] des Assets listet jetzt lokale und Remote-Verweise des Assets auf. Anhand der Referenzen können DAM-Benutzer die Asset-Nutzung auf [!DNL Sites]-Seiten und in zusammengesetzten Assets in [!DNL Assets] verfolgen. Weitere Informationen finden Sie unter [Konfigurieren und Verwenden von Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* [!DNL Dynamic Media] Funktionen sind jetzt über AEM- [!DNL Sites] bildbasierte Kernkomponenten verfügbar. Autoren können Komponenten schnell konfigurieren, um Bildvorgaben, smarte Zuschnitte und Bildmodifikatoren beim Erstellen von Web-Seiten zu verwenden. Weitere Informationen finden Sie unter [Kernkomponenten Version 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
+* [!DNL Dynamic Media] Funktionen sind jetzt über die bildbasierten AEM [!DNL Sites]-Kernkomponenten verfügbar. Autoren können Komponenten schnell konfigurieren, um Bildvorgaben, intelligente Zuschnitte und Bildmodifikatoren beim Erstellen von Web-Seiten zu verwenden. Weitere Informationen finden Sie unter [Kernkomponenten Version 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
 * Mit dem [!DNL Experience Manager] Desktop-Programm können Benutzer Dateien und Ordner hochladen, indem sie die Dateien aus dem Windows Explorer oder Mac Finder auf die Benutzeroberfläche des Desktop-Programms ziehen. Siehe [Hinzufügen von Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
@@ -38,7 +38,7 @@ Die folgende Version (2021.1.0) wurde am 28. Januar 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-commerce}
 
-* Freigabe der CIF Venia-Referenz-Website 2020.12.01, die die aktuelle CIF-Kernkomponenten Version 1.6.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)Referenz-Site .
+* Freigabe der CIF Venia-Referenz-Website 2020.12.01, die die neueste CIF-Kernkomponenten Version 1.6.0 enthält. Weitere Informationen finden Sie unter [CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)Referenz-Site .
 
 * Version 1.6.0 von CIF-Kernkomponenten veröffentlicht. Weitere Informationen finden Sie unter {[&#128279;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0)}CIF-Kernkomponenten.
 
@@ -46,7 +46,7 @@ Die folgende Version (2021.1.0) wurde am 28. Januar 2021 veröffentlicht.
 
 ### Veröffentlichungsdatum {#release-date-cm}
 
-Die Version as a Cloud Service 2020.12.0 von Cloud Manager in Adobe Experience Manager (AEM) wurde am 10. Dezember 2020 veröffentlicht.
+Die Version 2020.12.0 von Cloud Manager in Adobe Experience Manager (AEM) as a Cloud Service wurde am 10. Dezember 2020 veröffentlicht.
 
 ### Neue Funktionen in [!DNL Cloud Manager] {#what-is-new-cm}
 
@@ -74,7 +74,7 @@ Die Version as a Cloud Service 2020.12.0 von Cloud Manager in Adobe Experience M
 
 ### Fehlerbehebungen {#crt-bug-fixes}
 
-* Mehrere Fehlerbehebungen wurden in den AEM Dispatcher Converter- und Repository Modernizer-Tools vorgenommen. Siehe [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) und [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Mehrere Fehlerbehebungen wurden in den Tools AEM Dispatcher Converter und Repository Modernizer vorgenommen. Siehe [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) und [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### Veröffentlichungsdatum {#release-date-ctt}
 

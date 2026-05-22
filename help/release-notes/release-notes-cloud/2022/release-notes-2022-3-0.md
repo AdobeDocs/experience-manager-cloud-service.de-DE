@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 84%
+source-wordcount: '1203'
+ht-degree: 85%
 
 ---
 
@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
 
-* Die Datentypen des Inhaltsmodells können jetzt mit einem einfachen Kontrollkästchen im Inhaltsmodell-Editor als übersetzbar definiert werden. Außerdem werden AEM-Übersetzungsregeln und -konfigurationen automatisch aktualisiert.
+* Die Datentypen des Inhaltsmodells können jetzt mit einem einfachen Kontrollkästchen im Inhaltsmodell-Editor als übersetzbar definiert werden. Außerdem werden die Übersetzungsregeln und -konfigurationen von AEM automatisch aktualisiert.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -81,11 +81,11 @@ Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.
 ### Neue Funktionen {#what-is-new-cif}
 
 * Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF-Cloud-Konfigurationseigenschaften konfiguriert werden.
-* Die Produktauswahl unterstützt gestaffelte Produkte über eine neue Filteroption in der Benutzeroberfläche.  Dadurch können Content-Experten das Product Content Management für bevorstehende Produkteinführungen vorbereiten.
+* Die Produktauswahl unterstützt gestaffelte Produkte über eine neue Filteroption in der Benutzeroberfläche.  Dadurch können Content-Experten das Produkt-Content-Management für bevorstehende Produkteinführungen vorbereiten.
 * Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Proxy-URL für die Konfiguration
 * Manuelle Kategorieauswahl für Produktlisten- und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden.
 
-### Neue Funktionen im CIF-Vorabveröffentlichungskanal {#prerelease-features-cif}
+### Neue Funktionen im CIF-Vorabversionskanal {#prerelease-features-cif}
 
 * AEM CIF-Such-Kernkomponente unterstützt Commerce LiveSearch.
 
@@ -93,7 +93,7 @@ Sehen Sie sich das Video [Versionsübersicht März 2022](https://video.tv.adobe.
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Für eine effizientere und effektivere Fehlerbehebung bei benutzerdefinierten Funktionen in Cloud-Umgebungen haben wir ein neues Entwickler-Tool veröffentlicht - [den Repository Browser](/help/implementing/developing/tools/repository-browser.md). Es handelt sich um einen schlanken, schreibgeschützten HTML-Browser, den Sie über die Developer Console starten können. Sie erhalten Einblicke in das Inhalts-Repository auf den Ebenen „Veröffentlichung“, „Autor“ und „Vorschau“ – und in allen Umgebungen, einschließlich Produktion, Staging und Entwicklung. Sie können die Inhaltsstruktur durchsuchen, die Eigenschaften anzeigen, die Binärdateien in der Vorschau anzeigen und sie herunterladen.
+* Für eine effizientere und effektivere Fehlerbehebung bei benutzerdefinierten Funktionen in Cloud-Umgebungen haben wir ein neues Entwickler-Tool veröffentlicht - [den Repository Browser](/help/implementing/developing/tools/repository-browser.md). Es handelt sich um einen schlanken, schreibgeschützten HTML-Browser, den Sie über Developer Console starten können. Sie erhalten Einblicke in das Inhalts-Repository auf den Ebenen „Veröffentlichung“, „Autor“ und „Vorschau“ – und in allen Umgebungen, einschließlich Produktion, Staging und Entwicklung. Sie können die Inhaltsstruktur durchsuchen, die Eigenschaften anzeigen, die Binärdateien in der Vorschau anzeigen und sie herunterladen.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
@@ -115,7 +115,7 @@ Das Content Transfer Tool 1.9.0 wurde am 28. Februar 2022 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Schutzmaßnahme Größenüberprüfung: Die Funktion „Größenüberprüfung“ des Content Transfer Tools hilft bei der Reduzierung fehlgeschlagener Inhaltsübertragungen. Mit der Funktion „Größenüberprüfung“ können Benutzer 1) vor der Extraktion feststellen, ob sie über ausreichend Speicherplatz im `crx-quickstart`-Unterverzeichnis und 2) die Größe des Migrationssatzes schätzen und überprüfen, ob er unterstützt wird. Wenn eine oder beide dieser Prüfungen nicht bestanden werden, werden den Benutzenden in der CTT-Benutzeroberfläche Warnungen angezeigt. Mit dieser Schutzmaßnahme können Sie Fehler bei der Inhaltsübertragung vermeiden und Migrationsoptionen proaktiv mit der Adobe-Kundenunterstützung besprechen. Siehe [Bestimmen der Größe des Migrationssets und des Speicherplatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#migration-set-size) für weitere Details.
+* Schutzmaßnahme Größenüberprüfung: Die Funktion „Größenüberprüfung“ des Content Transfer Tools hilft bei der Reduzierung fehlgeschlagener Inhaltsübertragungen.  Mit der Funktion „Größenüberprüfung“ können Benutzer 1) vor der Extraktion feststellen, ob sie über ausreichend Speicherplatz im `crx-quickstart`-Unterverzeichnis und 2) die Größe des Migrationssatzes schätzen und überprüfen, ob er unterstützt wird. Wenn eine oder beide dieser Prüfungen nicht bestanden werden, werden den Benutzenden in der CTT-Benutzeroberfläche Warnungen angezeigt. Mit dieser Schutzmaßnahme können Sie Fehler bei der Inhaltsübertragung vermeiden und Migrationsoptionen proaktiv mit der Adobe-Kundenunterstützung besprechen. Siehe [Bestimmen der Größe des Migrationssatzes und des Speicherplatzes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=de#migration-set-size) für weitere Details.
 
 ## Best Practices Analyzer {#bpa-release}
 

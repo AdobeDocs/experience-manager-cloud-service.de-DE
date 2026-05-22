@@ -5,9 +5,9 @@ exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 98%
 
 ---
 
@@ -60,5 +60,5 @@ Kundinnen und Kunden können die Suite [New Relic-Anwendungsleistungsüberwachun
 ## Zusätzliche Ressourcen {#resources}
 
 * [New Relic-Anwendungsleistungsüberwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=de)
-* [Protokollierung für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=de)
+* [Protokollieren für AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=de)
 * [Überwachen von Umgebungen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=de)

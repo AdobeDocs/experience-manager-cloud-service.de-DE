@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 67%
+source-wordcount: '1417'
+ht-degree: 65%
 
 ---
 
@@ -46,7 +46,7 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 
 * Mit der Funktion zur Inhaltsautomatisierung können [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs verwenden, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit verkürzt und die Anzahl der Iterationen erheblich verringert werden. Die Funktion erfordert keine Programmierung und funktioniert aus dem DAM heraus. Siehe [Erzeugen von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Die im Viewer verfügbaren Steuerelemente umfassen Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Benutzer können auch eine Vorschau der Seiten und Lesezeichen anzeigen und zu ihnen springen. Kommentare zur Datei selbst werden unterstützt. Kommentare und Anmerkungen zu Inhalten in der PDF-Datei sind für eine künftige Version geplant.
+* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Zu den im Viewer verfügbaren Steuerelementen gehören Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Benutzer können auch eine Vorschau der Seiten und Lesezeichen anzeigen und zu ihnen springen. Kommentare zur Datei selbst werden unterstützt. Kommentare und Anmerkungen zu Inhalten in der PDF-Datei sind für eine künftige Version geplant.
 
   ![PDF-Dateien in [!DNL Experience Manager] in der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
 

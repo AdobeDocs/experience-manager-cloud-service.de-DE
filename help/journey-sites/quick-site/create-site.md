@@ -8,7 +8,7 @@ role: Admin, Developer
 recommendations: noDisplay, noCatalog
 source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1519'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ Wenn Sie eine zusätzliche Front-End-Anpassung benötigen, sollten Sie beachten,
 
    ![Bearbeiten der Startseite](assets/home-page-edit.png)
 
-1. Kopieren Sie in der sich öffnenden Registerkarte den Pfad des Inhalts aus der Adressleiste.  Er sieht in etwa so aus: `/content/<your-site>/en/home.html?wcmmode=disabled`. 
+1. Kopieren Sie in der sich öffnenden Registerkarte den Pfad des Inhalts aus der Adressleiste. Er sieht in etwa so aus: `/content/<your-site>/en/home.html?wcmmode=disabled`.
 
    ![Startseite](assets/home-page.png)
 

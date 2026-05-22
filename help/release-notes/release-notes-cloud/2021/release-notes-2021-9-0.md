@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 62%
+source-wordcount: '1708'
+ht-degree: 57%
 
 ---
 
@@ -44,7 +44,7 @@ Sehen Sie sich das Video [Versionsübersicht September 2021](https://video.tv.ad
 
 * Benutzer können jetzt die in den Suchergebnissen angezeigten Assets in Spalten- und Kartenansichten sortieren. Die Sortierung funktioniert bei den Spalten „Name“, „Erstellt“, „Geändert“ oder „Keine“.
 
-  ![Sortieren der Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
+  ![Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
   *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
 
 * Um die Verarbeitung mithilfe von Asset-Microservices programmgesteuert aufzurufen, wird eine neue API eingeführt. Entwickler können jetzt ein vorhandenes Verarbeitungsprofil auf Ordnerebene auf ein oder mehrere bestimmte Assets in einem Ordner anwenden. Das Verarbeitungsprofil wird basierend auf Aktualisierungen der benutzerdefinierten Metadateneigenschaften angewendet. Siehe `AssetProcessor` in der [[!DNL Experience Manager] API-Referenz](https://developer.adobe.com/experience-manager/reference-materials/). Wie zuvor ist es möglich, [Asset-Microservices über die Benutzeroberfläche zu verwenden](/help/assets/asset-microservices-configure-and-use.md).
@@ -77,7 +77,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Beta-Funktionen von [!DNL Forms]  {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector** - Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise 
+* **Unified Storage Connector** - Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise
    * die Speicher- und Wiederaufnahmefunktion des Formularportals aktivieren und adaptive Formularentwürfe in einem kundenverwalteten Daten-Repository speichern.
    * prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
 

@@ -5,8 +5,8 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2666'
+workflow-type: tm+mt
+source-wordcount: '2701'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ Der Coffeeshop We.Cafe besteht aus drei Geschäften an drei Standorten in den US
 
 Es wird davon ausgegangen, dass der Standort in New York ein kleineres Geschäft ist, das nicht viel Platz hat, und daher:
 
-* Die Menütafel nur zwei vertikale Felder anstelle von drei für San Francisco und San Jose hat 
+* Die Menütafel nur zwei vertikale Felder anstelle von drei für San Francisco und San Jose hat
 * Das Display am Eingang vertikal statt horizontal positioniert ist
 
 >[!NOTE]
@@ -244,7 +244,7 @@ Nachdem AEM Screens und ContextHub mit Ihrem Wetterdienst verbunden sind, könne
 
 1. Klicken Sie in der Symbolleiste auf **Bearbeiten** oder geben Sie den Tastaturbefehl `e` ein, damit Sie die Seite bearbeiten können.
 
-1. Im Editor können Sie die Inhalte sehen. Ein Bild ist blau hervorgehoben, und in der Ecke befindet sich ein Zielsymbol.
+1. Im Editor können Sie die Inhalte sehen. Ein Bild ist blau hervorgehoben, und in der Ecke befindet sich ein Targeting-Symbol.
 
    ![Screens-Inhalte im Editor](assets/screens-content-editor.png)
 
@@ -282,7 +282,7 @@ Zunächst müssen Sie Ihre Screens-Demoinhalte in AEM Screens as a Cloud Service
 
    ![Einstellungen bearbeiten](assets/screens-edit-settings.png)
 
-1. Geben Sie die URLs der Authoring- und Publishing-Instanz von AEMaaCS an, in denen Sie Ihre Demo-Site erstellt haben, und klicken Sie auf **Speichern**.
+1. Geben Sie die URLs der Authoring- und Veröffentlichungsinstanz von AEMaaCS an, in denen Sie Ihre Demo-Site erstellt haben, und klicken Sie auf **Speichern**.
 
    ![Einstellungen für Screens](assets/screens-settings.png)
 
@@ -298,7 +298,7 @@ Zunächst müssen Sie Ihre Screens-Demoinhalte in AEM Screens as a Cloud Service
 
 1. Öffnen Sie den Ordner durch Anklicken, klicken Sie dann oben rechts auf **Erstellen** und wählen Sie **Display** aus.
 
-1. Geben Sie einen Namen für das Display ein und klicken Sie auf **Erstellen**.
+1. Geben Sie einen Anzeigenamen ein und klicken Sie auf **Erstellen**.
 
    ![Erstellen eines Displays](assets/create-display.png)
 

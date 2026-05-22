@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 78%
+source-wordcount: '857'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ Im folgenden Abschnitt werden die Versionshinweise zu den Funktionen der Version
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.10.0) war der 10. November 2022. Die nächste monatliche Version (2023.1.0) ist für den Freitag, 9. Februar 2023 geplant.
+Das Veröffentlichungsdatum der aktuellen Version von [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.10.0) war der 10. November 2022. Die nächste monatliche Version (2023.1.0) ist für den 9. Februar 2023 geplant.
 
 ## Video zur Version {#release-video}
 
@@ -40,7 +40,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 * Die [Personalization-Registerkarte für Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) bietet für den Experience Fragment-Editor Funktionen zur Segmentierungsspezifikation und die Flexibilität, verschachtelte Experience Fragments zu erstellen, wodurch Kopf- und Fußzeilen für mehrere Segmente erstellt werden können. Bis zur Einführung dieser Funktion ist die von AEM angebotene Personalisierung nur für Web-Seiten verfügbar, nicht aber für Experience Fragments.
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ermöglicht es Benutzenden, übersetzte Inhaltsfragmente effizient zu verwalten. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ermöglicht es Benutzenden, übersetzte Inhaltsfragmente effizient zu verwalten. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach dem Gebietsschema filtern, das sie interessiert.
 
 ![Sprachen von Inhaltsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -57,11 +57,11 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 ### Neue Funktionen in der Vorabversion von [!DNL Assets] {#prerelease-features-assets}
 
-* Experience Manager Assets verwendet jetzt ein verbessertes Framework mit künstlicher Intelligenz für Smart-Tags für Bilder. Diese inhaltsbezogene Intelligenz führt zu einer besseren Relevanz und Genauigkeit von Smart-Tags, die für alle Bild-Assets bei der Benutzende verfügbar sind. Darüber hinaus werden Orientierungsinformationen in `cq:tags` eingebettet, was mithilfe des Orientierungsfilters bessere Suchergebnisse ermöglicht.
+* Experience Manager Assets verwendet jetzt ein verbessertes Framework mit künstlicher Intelligenz für Smart-Tags für Bilder. Diese inhaltsbezogene Intelligenz führt zu einer besseren Relevanz und Genauigkeit von Smart-Tags, die für alle Bild-Assets bei der Aufnahme verfügbar sind. Darüber hinaus werden Orientierungsinformationen in `cq:tags` eingebettet, was mithilfe des Orientierungsfilters bessere Suchergebnisse ermöglicht.
 
   Wenn Sie daran interessiert sind, an der Beta-Version mitzuwirken, [füllen Sie dieses Formular](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) bis zum 14. November aus.
 
-* Experience Manager Assets unterstützt jetzt zusätzlich zum Zugriffsschlüssel [SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Bulk-Import-Tool.
+* Experience Manager Assets unterstützt jetzt zusätzlich zum Zugriffsschlüssel [SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Massenimport-Tool.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -89,7 +89,7 @@ Sehen Sie sich das Video „Versionsübersicht Oktober 2022“ an, das eine Zusa
 
 * AEM as a Cloud Service (Autoren-Service) wurde mit Unified Shell integriert, um das Benutzererlebnis zu verbessern und mit allen weiteren Experience Cloud-Anwendungen zu vereinheitlichen. Weitere Informationen finden Sie unter AEM as a [Cloud Service &#x200B;](/help/overview/aem-cloud-service-on-unified-shell.md) Unified Shell.
 
-* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ohne Binärdateien), jetzt nicht mehr unterstützt und durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den Workflow [Publish-Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) für empfohlene Ansätze zur Replikation dieser großen Inhaltspakete.
+* Wie bereits in den Versionshinweisen erwähnt, wird die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ohne Binärdateien), jetzt nicht mehr unterstützt und durchgesetzt. Siehe [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder den Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) für empfohlene Ansätze zur Replikation dieser großen Inhaltspakete.
 
 * Die Dispatcher-Konfiguration verweist jetzt auf eine Datei, in der gängige Abfrageparameter für Marketing-Kampagnen aufgelistet sind. Kunden können die Auskommentierung der für sie relevanten Parameter aufheben, was zu einer besseren Zwischenspeicherung führt. Siehe [Parameter von Marketing-Kampagnen](/help/implementing/dispatcher/caching.md#marketing-parameters) für weitere Details.
 

@@ -8,7 +8,7 @@ role: Admin, Developer
 recommendations: noDisplay, noCatalog
 source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1073'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ Nachdem Sie die Design-Anpassung am AEM-Git-Repository vorgenommen haben, könne
 
    ![Pipeline ausführen](assets/run-pipeline.png)
 
-1. Wählen Sie im Bestätigungsdialogfeld **Pipeline ausführen** die Option **Ja** aus. 
+1. Wählen Sie im Bestätigungsdialogfeld **Pipeline ausführen** die Option **Ja** aus.
 
    ![Pipeline-Ausführung bestätigen](assets/pipeline-confirm.png)
 

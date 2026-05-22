@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1928'
 ht-degree: 100%
 
 ---
@@ -95,7 +95,7 @@ Es gibt zwei Arten von AEM-Versionsaktualisierungen:
 
 Adobe Cloud Manager ist integraler Bestandteil des kontinuierlichen Upgrade-Ansatzes von AEM as a Cloud Service, da er alle Aktualisierungen Ihrer Instanzen steuert – dies ist obligatorisch.
 
-Aktualisierungen können von Adobe ausgelöst werden, wenn eine neue Version des Cloud Service verfügbar ist. Alternativ können Sie Ihre Anwendungsaktualisierungen über die von Cloud Manager bereitgestellten Pipelines auslösen.
+Aktualisierungen können von Adobe ausgelöst werden, wenn eine neue Version des Cloud-Service verfügbar ist. Alternativ können Sie Ihre Anwendungsaktualisierungen über die von Cloud Manager bereitgestellten Pipelines auslösen.
 
 Cloud Manager:
 
@@ -126,7 +126,7 @@ Cloud Manager hat sich zu einem Selbstbedienungsportal entwickelt, in dem die Ha
 Cloud Manager erstellt Umgebungen in Rechenzentren in vielen geografischen Regionen und ermöglicht so eine globale Abdeckung. CDN Points of Presence (PoPs) sorgen für die Bereitstellung von Inhalten mit niedriger Latenz für Kunden in der ganzen Welt.
 
 
-## Onboarding  {#onboarding}
+## Onboarding {#onboarding}
 
 Das Starten und Verwalten eines AEM-Projekts ist bei Verwendung von AEM as a Cloud Service unkompliziert, da Adobe für viele Aspekte verantwortlich ist:
 
@@ -218,7 +218,7 @@ In diesen Bereichen:
 
 * Die Topologien sind auf maximale Ausfallsicherheit und Effizienz optimiert. Beispielsweise ist die binärlose Replikation die Standardeinstellung.
 
-* Aufgaben mit hoher Auslastung wie Warteschlangen, Vorgänge und Massenverarbeitungsaufgaben wurden aus der AEM-Kerninstanz verschoben, um von gemeinsam genutzten und dedizierten Microservices ausgeführt zu werden.
+* Aufgaben mit hoher Auslastung wie Warteschlangen, Aufträge und Massenverarbeitungsaufgaben wurden aus der AEM-Kerninstanz verschoben, um von gemeinsam genutzten und dedizierten Microservices ausgeführt zu werden.
 
 Der Betrieb von AEM as a Cloud Service wird auch durch eine neue Überwachungs-, Berichts- und Warninfrastruktur unterstützt. Auf diese Weise können die Adobe-SREs (Site Reliability Engineers) den Service proaktiv aufrechterhalten. Die verschiedenen Elemente der Architektur sind mit einer Vielzahl von Konsistenzprüfungen ausgestattet. Wenn ein bestimmter Knoten der Architektur aus irgendeinem Grund als fehlerhaft erachtet wird, wird er aus dem Service entfernt und durch einen neuen, funktionierenden ersetzt.
 
@@ -230,7 +230,7 @@ Der Betrieb von AEM as a Cloud Service wird auch durch eine neue Überwachungs-,
 
 Eine wichtige Änderung an AEM as a Cloud Service ist die vollständig integrierte Verwendung von Adobe IDs für den Zugriff auf die Autorenebene.
 
-Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Produkte und Services von Adobe, da die Benutzerprofilinformationen im Identity Management System (IMS) von Adobe zentralisiert sind und von allen Cloud Services gemeinsam genutzt werden können. Nach der Zuweisung des Zugriffs auf AEM können die Benutzerkonten in AEM as a Cloud Service (wie bisher) referenziert werden, z. B. zur Definition von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
+Dies erfordert die Verwendung der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) zum Verwalten von Benutzern und Benutzergruppen. Die Benutzerkonten ermöglichen Ihren Benutzern den Zugriff auf Produkte und Services von Adobe, da die Benutzerprofilinformationen im Identity Management System (IMS) von Adobe zentralisiert sind und von allen Cloud-Services gemeinsam genutzt werden können. Nach der Zuweisung des Zugriffs auf AEM können die Benutzerkonten in AEM as a Cloud Service (wie bisher) referenziert werden, z. B. zur Definition von Rollen und Berechtigungen über die AEM Security-Benutzeroberflächen.
 
 Dies kombiniert die folgenden Vorteile:
 
@@ -258,7 +258,7 @@ Weitere Informationen finden Sie in der Übersicht über die [Änderungen an Sit
 
 Adobe Experience Manager Assets as a Cloud Service bietet eine Cloud-native PaaS-Lösung für Unternehmen, mit der sie nicht nur ihre Vorgänge in Digital Asset Management und Dynamic Media schnell und effektiv durchführen können, sondern auch intelligente Funktionen der nächsten Generation wie künstliche Intelligenz und maschinelles Lernen nutzen können, und zwar innerhalb eines Systems, das immer aktuell, verfügbar und lernbereit ist.
 
-Das Asset-Angebot umfasst die Verarbeitung von Assets der nächsten Generation in der Cloud sowie die hochleistungsfähige Erfassung und Suche von Assets.
+Das Asset-Angebot umfasst die Verarbeitung von Assets der nächsten Generation in der Cloud sowie die hochleistungsfähige Aufnahme und Suche von Assets.
 
 Weitere Informationen finden Sie unter [Übersicht und Einführung in Assets as a Cloud Service](/help/assets/overview.md).
 
