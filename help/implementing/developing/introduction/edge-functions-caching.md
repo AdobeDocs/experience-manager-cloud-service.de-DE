@@ -3,9 +3,9 @@ title: Caching in AEM Edge-Funktionen
 description: Erfahren Sie, wie der CDN-Cache und der Edge-Funktionsabruf-Cache interagieren, wie Sie das Caching-Verhalten konfigurieren und zwischengespeicherte Inhalte über beide Ebenen hinweg bereinigen können.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1224'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Auf dieser Seite finden Sie detaillierte technische Anleitungen dazu, wie das Caching in AEM Edge funktioniert, einschließlich der Zwei-Cache-Architektur, der Steuerung des Caching-Verhaltens in Ihrem Code und der Bereinigung von Cache-Einträgen bei Inhaltsänderungen.
 
-Allgemeine Informationen zur Funktionsweise des Caching in AEM Cloud Service finden Sie unter [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md) und [Das CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md). Code-Beispiele finden Sie im [AEM Edge Functions Boilerplate - Caching](https://github.com/adobe/aem-edge-functions-boilerplate/blob/main/README.md#caching).
+Allgemeine Informationen zur Funktionsweise der AEM as a Cloud Service-Zwischenspeicherung finden Sie unter [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md) und [Das CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md). Code-Beispiele finden Sie im [AEM Edge Functions Boilerplate - Caching](https://github.com/adobe/aem-edge-functions-boilerplate/blob/main/README.md#caching).
 
 ## Caching-Architektur {#architecture}
 
@@ -101,7 +101,7 @@ Da die Edge-Funktion sich als Backend hinter dem CDN befindet (erreichbar über 
 
 ### Bereinigen des CDN-Cache {#purge-cdn-cache}
 
-Um den äußeren CDN-Cache zu bereinigen (die auf CDN-Ebene zwischengespeicherte Antwort der Edge-Funktion), verwenden Sie die [CDN Cache Purge API](/help/implementing/dispatcher/cdn-cache-purge.md). Dies ist derselbe Bereinigungsmechanismus, der für alle AEM Cloud Service-Inhalte verwendet wird, die im CDN zwischengespeichert werden - siehe [Bereinigen des CDN-Cache](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) für eine schrittweise Anleitung.
+Um den äußeren CDN-Cache zu bereinigen (die auf CDN-Ebene zwischengespeicherte Antwort der Edge-Funktion), verwenden Sie die [CDN Cache Purge API](/help/implementing/dispatcher/cdn-cache-purge.md). Dies ist derselbe Bereinigungsmechanismus, der für alle im CDN zwischengespeicherten AEM as a Cloud Service-Inhalte verwendet wird - siehe [Bereinigen des CDN-Cache](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) für eine schrittweise Anleitung.
 
 In der AEM as a Cloud Service-Architektur empfangen Edge-Funktionen Traffic vom CDN über [Ursprungsselektoren](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) (siehe auch [CDN-Routing](/help/implementing/developing/introduction/edge-functions.md#cdn-routing)). Der vollständige Anfragefluss ist:
 
@@ -160,7 +160,7 @@ Verwenden Sie das `--soft`-Flag, um eine Soft Purge durchzuführen, bei der vera
 aio aem edge-functions purge-cache <function-name> --surrogateKey product-456 --soft
 ```
 
-#### Programmbereinigung {#programmatic-purge}
+#### Bereinigung {#programmatic-purge}
 
 Sie können Ersatzschlüssel auch programmgesteuert aus Ihrem Edge-Funktions-Code löschen, indem Sie [`purgeSurrogateKey`](https://js-compute-reference-docs.edgecompute.app/docs/fastly:compute/purgeSurrogateKey) verwenden:
 
