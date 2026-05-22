@@ -3,9 +3,9 @@ title: Massen-Upload von Prinzipalen in IMS nach Verwendung von CTT
 description: Überblick über Dateien zum Massen-Upload für Gruppen und Benutzende und deren Verwendung in der Admin Console zum Erstellen von Gruppen und Benutzenden.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '2384'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2499'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um nach der CTT-/CAM-Migration die Admin Console-Funkti
 1. Herunterladen der Massengruppendatei aus CAM
 
    1. Navigieren Sie in CAM zu **Content-Übertragung** und wählen Sie **Aufnahmeaufträge** aus.
-   1. Klicken Sie auf die Auslassungspunkte (…) in der Zeile der betreffenden Aufnahme und wählen Sie **Prinzipalzusammenfassung anzeigen** aus.
+   1. Klicken Sie auf die Auslassungspunkte (…) in der Zeile der betreffenden Aufnahme und wählen Sie &quot;**anzeigen**.
    1. Wählen Sie im angezeigten Dialogfeld in der Dropdown-Liste unter **Datei herunterladen…** die Option **Massengruppendatei** aus und klicken Sie auf die Schaltfläche **Herunterladen**.
    1. Speichern Sie die resultierende CSV-Datei.
 
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um nach der CTT-/CAM-Migration die Admin Console-Funkti
 
       * _Name der Benutzergruppe_: Der Gruppenname ist erforderlich und darf maximal 255 Zeichen enthalten.  Dieser Gruppenname muss in IMS und AEM identisch sein.
       * _Beschreibung_: Dieses Feld ist optional und darf maximal 255 Zeichen enthalten.
-      * _Benutzergruppen-Administrator_: In diesem Feld muss mindestens eine Person als Gruppen-Admin angegeben werden. Es können mehrere Admins zugewiesen werden, indem jeder Admin-Eintrag durch ein Komma getrennt und die Liste in Anführungszeichen gesetzt wird. Jeder Admin-Eintrag muss den Identitätstyp der Person enthalten, gefolgt von einem Bindestrich und der E-Mail-Adresse.  Zum Beispiel
+      * _Benutzergruppen-Administrator_: In diesem Feld muss mindestens eine Person als Gruppen-Admin angegeben werden. Es können mehrere Admins zugewiesen werden, indem jeder Admin-Eintrag durch ein Komma getrennt und die Liste in Anführungszeichen gesetzt wird. Jeder Admin-Eintrag muss den Identitätstyp der Person enthalten, gefolgt von einem Bindestrich und der E-Mail-Adresse.  Beispiel
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. Geben Sie nach dem Komma, das Admins voneinander trennt, kein Leerzeichen ein. Sie können keine Benutzenden (als Admins) einbeziehen, die derzeit nicht Teil der Organisation in der Admin Console sind.
       * _Zugewiesene Produktprofile_: Dieses Feld ist optional. Sie können mehrere Produktprofile zuweisen, indem Sie jedes Profil durch ein Komma trennen und die Liste in Anführungszeichen setzen. Die Produktprofile, die Sie einbeziehen, müssen jedoch bereits für die Organisation eingerichtet sein. Stellen Sie sicher, dass Sie den Namen des Produktprofils und nicht den Produktnamen angeben.  Die Zugehörigkeit zu Produktprofilen, die einer Gruppe zugewiesen sind, wird von allen Benutzenden in dieser Gruppe übernommen.  So suchen Sie ein Produktprofil:
 
@@ -68,9 +68,9 @@ Gehen Sie wie folgt vor, um nach der CTT-/CAM-Migration die Admin Console-Funkti
 1. Hochladen der Massengruppendatei in die Admin Console
 
    1. Navigieren Sie in der Admin Console zu **Benutzer** und dann zu **Benutzergruppen**
-   1. Klicken Sie rechts auf die Schaltfläche mit den Auslassungspunkten (…). Wählen Sie im Menü die Option **Benutzergruppen per CSV-Datei hinzufügen** und dann die CSV-Datei für den Upload aus. Klicken Sie auf **Hochladen**.
+   1. Klicken Sie auf der rechten Seite auf das Symbol &quot;…“ hinzufügen. Wählen Sie im Menü die Option **Benutzergruppen per CSV-Datei hinzufügen** und dann die CSV-Datei für den Upload aus. Klicken Sie auf **Hochladen**.
    1. Es wird eine Meldung angezeigt, dass die CSV-Datei (in die Admin Console) hochgeladen, aber noch nicht in IMS importiert wurde.
-   1. Navigieren Sie wieder zum Menü mit den Auslassungspunkten (…) und wählen Sie **Ergebnisse des Massenvorgangs** aus. Daraufhin wird eine Liste der Massen-Upload-Versuche angezeigt, in der Sie unter **Status** sehen können, ob der Massen-Upload gerade läuft, erfolgreich war oder fehlgeschlagen ist.
+   1. Gehen Sie zum selben &quot;…“ und wählen Sie **Ergebnisse des Massenvorgangs**. Daraufhin wird eine Liste der Massen-Upload-Versuche angezeigt, in der Sie unter **Status** sehen können, ob der Massen-Upload gerade läuft, erfolgreich war oder fehlgeschlagen ist.
 
       * Zunächst wird der Status „Wird verarbeitet“ angezeigt. Dies bedeutet, dass die Verarbeitung noch nicht abgeschlossen ist.
       * Klicken Sie nach erfolgreichem Abschluss auf den Link **Benutzergruppen hinzufügen**, um für jede Zeile eine einfache Statusmeldung zu sehen.
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um die Admin Console-Funktion zum Massen-Upload von Ben
 
 1. Herunterladen der Massenbenutzerdatei aus CAM
    1. Navigieren Sie in CAM zu **Content-Übertragung** und wählen Sie **Aufnahmeaufträge** aus.
-   1. Klicken Sie auf die Auslassungspunkte (…) in der Zeile der betreffenden Aufnahme und wählen Sie **Prinzipalzusammenfassung anzeigen** aus.
+   1. Klicken Sie auf die Auslassungspunkte (…) in der Zeile der betreffenden Aufnahme und wählen Sie &quot;**anzeigen**.
    1. Wählen Sie im angezeigten Dialogfeld in der Dropdown-Liste unter **Datei herunterladen** die Option **Massenbenutzerdatei** aus und klicken Sie auf die Schaltfläche **Herunterladen**.
    1. Speichern Sie die resultierende CSV-Datei.
 1. Bearbeiten der Massenbenutzerdatei
@@ -126,11 +126,11 @@ Gehen Sie wie folgt vor, um die Admin Console-Funktion zum Massen-Upload von Ben
    1. Ziehen Sie eine aus CAM heruntergeladene Massenbenutzerdatei im CSV-Format per Drag-and-Drop oder wählen Sie eine aus.
    1. Klicken Sie auf die Schaltfläche **Hochladen**.
    1. Es wird eine Meldung angezeigt, dass die CSV-Datei (in die Admin Console) hochgeladen, aber noch nicht in IMS importiert wurde.
-   1. Navigieren Sie rechts zum Menü mit den Auslassungspunkten (…) und wählen Sie **Ergebnisse des Massenvorgangs** aus. Daraufhin wird eine Liste der Massen-Upload-Versuche angezeigt, in der Sie unter **Status** sehen können, ob der Massen-Upload gerade läuft, erfolgreich war oder fehlgeschlagen ist.
+   1. Navigieren Sie zu … auf der rechten Seite und wählen Sie **Ergebnisse des Massenvorgangs**.  Daraufhin wird eine Liste der Massen-Upload-Versuche angezeigt, in der Sie unter **Status** sehen können, ob der Massen-Upload gerade läuft, erfolgreich war oder fehlgeschlagen ist.
 
       * Zunächst wird der Status „Wird verarbeitet“ angezeigt. Dies bedeutet, dass die Verarbeitung noch nicht abgeschlossen ist.
       * Klicken Sie nach erfolgreichem Abschluss auf den Link **Benutzergruppen hinzufügen**, um für jede Zeile eine einfache Statusmeldung zu sehen.
-      * Wenn der Vorgang stattdessen fehlgeschlagen ist, klicken Sie auf das kleine Symbol unter **Datei**. Sie erhalten so weitere Informationen darüber, warum der Vorgang fehlgeschlagen ist.  Die Benutzerzeilennummern werden ab Zeile 1 referenziert.
+      * Wenn der Vorgang stattdessen fehlgeschlagen ist, klicken Sie auf das kleine Symbol unter **Datei**. Sie erhalten so weitere Informationen darüber, warum der Vorgang fehlgeschlagen ist. Die Benutzerzeilennummern werden ab Zeile 1 referenziert.
 
 1. Überprüfen Sie Ihre Änderungen mit der Admin Console.
 
@@ -140,14 +140,14 @@ Gehen Sie wie folgt vor, um die Admin Console-Funktion zum Massen-Upload von Ben
 
 ### Massenbearbeitung von Benutzenden {#user-edit}
 
-#### Anwendungsfall: Gruppen und Benutzende wurden nach AEM as a Cloud Service migriert und per Massen-Upload oder mithilfe einer anderen Methode hochgeladen.  Nun müssen einige Änderungen an mehreren Benutzenden gleichzeitig vorgenommen werden, z. B. um sie einer vorhandenen IMS-Gruppe hinzuzufügen.
+#### Anwendungsfall: Gruppen und Benutzende wurden nach AEM as a Cloud Service migriert und per Massen-Upload oder mithilfe einer anderen Methode hochgeladen. Nun müssen einige Änderungen an mehreren Benutzenden gleichzeitig vorgenommen werden, z. B. um sie einer vorhandenen IMS-Gruppe hinzuzufügen.
 
 Gehen Sie wie folgt vor, um die Admin Console-Funktion zur Massenbearbeitung von Benutzenden zu verwenden:
 
 1. Herunterladen der Massenbenutzerdatei aus der Admin Console
 
    1. Navigieren Sie in der Admin Console zu „Benutzer“.
-   1. Klicken Sie rechts auf die Schaltfläche mit den Auslassungspunkten (…). Wählen Sie im Menü die Option **Benutzerdetails über CSV bearbeiten** aus.
+   1. Klicken Sie auf der rechten Seite auf das Symbol &quot;…“ hinzufügen.  Wählen Sie im Menü die Option **Benutzerdetails über CSV bearbeiten** aus.
    1. Klicken Sie auf **CSV-Vorlage herunterladen** und wählen Sie **Aktuelle Benutzer** aus.  Im lokalen Ordner „Downloads“ sollte eine CSV-Datei angezeigt werden.
 
 1. Bearbeiten der Massenbenutzerdatei
@@ -162,14 +162,14 @@ Gehen Sie wie folgt vor, um die Admin Console-Funktion zur Massenbearbeitung von
 1. Hochladen der Massenbenutzerdatei in die Admin Console
 
    1. Navigieren Sie in der Admin Console zu „Benutzer“.
-   1. Klicken Sie rechts auf die Schaltfläche mit den Auslassungspunkten (…). Wählen Sie im Menü die Option **Benutzerdetails über CSV bearbeiten** aus.
+   1. Klicken Sie auf der rechten Seite auf das Symbol &quot;…“ hinzufügen. Wählen Sie im Menü die Option **Benutzerdetails über CSV bearbeiten** aus.
    1. Ziehen Sie die bearbeitete Massenbenutzerdatei im CSV-Format per Drag-and-Drop oder wählen Sie sie aus.
    1. Klicken Sie auf die Schaltfläche „Hochladen“.
    1. Es wird eine Meldung angezeigt, dass die CSV-Datei (in die Admin Console) hochgeladen, aber noch nicht in IMS importiert wurde.
-   1. Navigieren Sie rechts zum Menü mit den Auslassungspunkten (…) und wählen Sie **Ergebnisse des Massenvorgangs** aus. Daraufhin wird eine Liste der Massen-Upload-Versuche angezeigt, in der Sie unter „Status“ sehen können, ob der Massen-Upload gerade läuft, erfolgreich war oder fehlgeschlagen ist.
+   1. Navigieren Sie zu … auf der rechten Seite und wählen Sie **Ergebnisse des Massenvorgangs**. Daraufhin wird eine Liste der Massen-Upload-Versuche angezeigt, in der Sie unter „Status“ sehen können, ob der Massen-Upload gerade läuft, erfolgreich war oder fehlgeschlagen ist.
 
       * Zunächst wird der Status „Wird verarbeitet“ angezeigt. Dies bedeutet, dass die Verarbeitung noch nicht abgeschlossen ist.
       * Klicken Sie nach erfolgreichem Abschluss auf den Link **Benutzerdetails bearbeiten**, um für jede Zeile eine einfache Statusmeldung zu sehen.
-      * Wenn der Vorgang stattdessen fehlgeschlagen ist, klicken Sie auf das kleine Symbol unter **Datei**. Dadurch werden weitere Informationen dazu angezeigt, warum der Vorgang fehlgeschlagen ist.  Die Benutzerzeilennummern werden ab Zeile 1 referenziert.
+      * Wenn der Vorgang stattdessen fehlgeschlagen ist, klicken Sie auf das kleine Symbol unter **Datei**. Dadurch werden weitere Informationen dazu angezeigt, warum der Vorgang fehlgeschlagen ist. Die Benutzerzeilennummern werden ab Zeile 1 referenziert.
 
 1. Überprüfen Sie Ihre Änderungen mit der Admin Console.

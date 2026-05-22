@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 91%
+source-wordcount: '1337'
+ht-degree: 88%
 
 ---
 
@@ -117,7 +117,7 @@ RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-R
   Platzhalterzertifikate (z. B. `*.example.com`) werden zwar unterstützt, sollten aber nur verwendet werden, wenn dies notwendig ist. Bei Überschneidungen hat das spezifischere Zertifikat Vorrang. Beispielsweise bedient das spezifische Zertifikat `dev.example.com` anstelle des Platzhalters (`*.example.com`).
 
 * **Validierung und Fehlerbehebung:**
-Bevor Sie versuchen, ein Zertifikat mit Cloud Manager zu installieren, empfiehlt Adobe, die Integrität Ihres Zertifikats lokal mit Tools wie `openssl` zu überprüfen. Zum Beispiel:
+Bevor Sie versuchen, ein Zertifikat mit Cloud Manager zu installieren, empfiehlt Adobe, die Integrität Ihres Zertifikats mithilfe von Tools wie `openssl` lokal zu überprüfen. Beispiel:
 
   `openssl verify -untrusted intermediate.pem certificate.pem`
 

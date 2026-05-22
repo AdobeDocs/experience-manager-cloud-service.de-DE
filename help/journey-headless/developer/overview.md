@@ -8,7 +8,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '965'
 ht-degree: 95%
 
 ---
@@ -26,7 +26,7 @@ Erfahren Sie mehr über die leistungsstarken und flexiblen Headless-Funktionen, 
 >additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de" text="AEM Headless-Entwicklungsressourcen"
 
 
-## Einführung  {#introduction}
+## Einführung {#introduction}
 
 Die Headless-Implementierung von AEM verwendet Inhaltsfragmentmodelle und Inhaltsfragmente, um sich auf die Erstellung von strukturierten, kanalneutralen und wiederverwendbaren Inhaltsfragmenten und deren kanalübergreifende Bereitstellung zu konzentrieren. Um dies zu erreichen, wird auf die Seiten- und Komponentenverwaltung verzichtet, wie sie bei Full-Stack-Lösungen üblich ist. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von digitalen Erlebnissen.
 

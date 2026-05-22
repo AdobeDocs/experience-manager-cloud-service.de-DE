@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Benutzende und Gruppen in IMS und AEM einrich
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '857'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Für AEM as a Cloud Service müssen Benutzende und Gruppen in erster Linie mithi
 * Zuweisen von Benutzenden zu Gruppen im IMS
 * Zuweisen von IMS-Gruppen zu AEM-Gruppen (falls erforderlich)
 
-können die ersten beiden im Grunde vor oder nach der Inhaltsmigration durchgeführt werden. Sie umfassen die Schritte, die sich nur auf Benutzende und Gruppen im IMS auswirken, möglicherweise einschließlich der Integration in ein externes IDP wie Active Directory oder LDAP.  Diese Schritte werden unter [Verwalten von Prinzipalen im IMS mit der Admin Console](/help/journey-migration/managing-principals.md) beschrieben.
+können die ersten beiden im Grunde vor oder nach der Inhaltsmigration durchgeführt werden.  Sie umfassen die Schritte, die sich nur auf Benutzende und Gruppen im IMS auswirken, möglicherweise einschließlich der Integration in ein externes IDP wie Active Directory oder LDAP.  Diese Schritte werden unter [Verwalten von Prinzipalen im IMS mit der Admin Console](/help/journey-migration/managing-principals.md) beschrieben.
 
 Sobald der Inhalt in die AEM as a Cloud Service-Umgebung migriert wurde, kann der dritte Schritt ausgeführt werden.
 
@@ -38,9 +38,9 @@ Sobald der Inhalt in die AEM as a Cloud Service-Umgebung migriert wurde, kann de
 
 In der Aufnahmephase der Migration werden Gruppen migriert, wenn sie die ACLs- oder CUG-Richtlinien für den migrierten Inhalt erfüllen müssen.  Weitere Informationen finden Sie unter [Gruppenmigration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
-Migrierte Gruppen (diejenigen, die nicht durch die Erstellung von Assets-Sammlungen oder privaten Ordnern erstellt wurden – siehe „Sammlungen und private Ordner“ unten) werden als IMS-Gruppen konfiguriert. Das bedeutet, dass jede Gruppe mit demselben Namen, die im IMS erstellt wurde (z. B. über die Admin Console), mit der Gruppe in AEM verknüpft wird und Benutzende, die Mitglieder der IMS-Gruppe sind, auch in AEM in diese Gruppe aufgenommen werden.  Damit diese Verknüpfung erfolgt, muss die Gruppe zunächst auch im IMS erstellt werden.  Verwenden Sie die Admin Console, um in Ihrer AEM-Instanz einzelne oder mehrere Gruppen zu erstellen, wie unter [Verwalten von Prinzipalen im IMS mit der Admin Console](/help/journey-migration/managing-principals.md) beschrieben.
+Migrierte Gruppen (diejenigen, die nicht durch die Erstellung von Assets-Sammlungen oder privaten Ordnern erstellt wurden – siehe „Sammlungen und private Ordner“ unten) werden als IMS-Gruppen konfiguriert.  Das bedeutet, dass jede Gruppe mit demselben Namen, die im IMS erstellt wurde (z. B. über die Admin Console), mit der Gruppe in AEM verknüpft wird und Benutzende, die Mitglieder der IMS-Gruppe sind, auch in AEM in diese Gruppe aufgenommen werden.  Damit diese Verknüpfung erfolgt, muss die Gruppe zunächst auch im IMS erstellt werden.  Verwenden Sie die Admin Console, um in Ihrer AEM-Instanz einzelne oder mehrere Gruppen zu erstellen, wie unter [Verwalten von Prinzipalen im IMS mit der Admin Console](/help/journey-migration/managing-principals.md) beschrieben.
 
-Verwenden Sie die Benutzeroberfläche „AEM-Sicherheit“, um IMS-Gruppen lokalen AEM-Gruppen zuzuweisen.  Gehen Sie dazu auf die Seite „Tools“ in AEM, klicken Sie auf „Sicherheit“ und wählen Sie „Gruppen“ aus.
+Verwenden Sie die Benutzeroberfläche „AEM-Sicherheit“, um IMS-Gruppen lokalen AEM-Gruppen zuzuweisen. Gehen Sie dazu auf die Seite „Tools“ in AEM, klicken Sie auf „Sicherheit“ und wählen Sie „Gruppen“ aus.
 
 ### IMS-Benutzende
 
@@ -50,7 +50,7 @@ Um zu erfahren, zu welchen Gruppen die einzelnen Benutzenden gehören sollen, k�
 
 ### Sammlungen und private Ordner
 
-Beim Erstellen einer Assets-Sammlung oder eines privaten Ordners werden automatisch auch einige Gruppen erstellt, um den Zugriff auf diese Assets-Inhalte zu verwalten. Diese Gruppen werden migriert, wenn sie in migrierten Inhalten erwähnt werden, aber sie sind nicht so konfiguriert, dass sie direkt mit IMS-Gruppen verknüpft werden. In AEM bleiben sie „lokale Gruppen“ und können nicht über das IMS verwaltet werden.
+Beim Erstellen einer Assets-Sammlung oder eines privaten Ordners werden automatisch auch einige Gruppen erstellt, um den Zugriff auf diese Assets-Inhalte zu verwalten.  Diese Gruppen werden migriert, wenn sie in migrierten Inhalten erwähnt werden, aber sie sind nicht so konfiguriert, dass sie direkt mit IMS-Gruppen verknüpft werden. In AEM bleiben sie „lokale Gruppen“ und können nicht über das IMS verwaltet werden.
 
 Da diese Gruppen nicht im IMS enthalten sind, kann das Tool für den Massen-Upload nicht verwendet werden, um Benutzende als ihre direkten Mitglieder zu erstellen.  IMS-Benutzende, die auch in AEM vorhanden sind, können diesen Gruppen einzeln hinzugefügt werden. Für das Hinzufügen mehrerer Benutzender auf einmal ist jedoch ein zusätzlicher Schritt erforderlich.  Eine Möglichkeit dazu ist Folgende:
 

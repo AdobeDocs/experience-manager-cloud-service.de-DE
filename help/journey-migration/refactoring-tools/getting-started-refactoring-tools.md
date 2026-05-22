@@ -5,7 +5,7 @@ exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ Wenn Sie auf die Registerkarte **Refaktorierungsauftrag** klicken, wird eine Lis
 
 ![Bild](/help/journey-migration/refactoring-tools/assets/rscam6.png)
 
-### &#x200B;1. Erstellen eines neuen Refaktorierungsauftrags
+### &#x200B;1. Erstellen eines neuen Umgestaltungsauftrags
 
 - Klicken Sie auf die Schaltfläche **Neuen Auftrag erstellen**.
 - Wählen Sie die gewünschten Refaktorierungs-Tools aus.
@@ -92,7 +92,7 @@ Wenn Sie auf die Registerkarte **Refaktorierungsauftrag** klicken, wird eine Lis
 >
 >Sie können einzelne Refaktorierungsaufträge per Trigger auslösen oder alle verfügbaren Tools in einem Schritt ausführen, indem Sie die Option **Alle Tools zusammen** verwenden.
 
-### &#x200B;2. Auftragsstatus
+### &#x200B;2. Status des Vorgangs
 
 - **Wird ausgeführt** – Der Auftrag läuft derzeit. Der Status wird nach Abschluss oder Fehler automatisch aktualisiert.
 - **Abgeschlossen** – Der Auftrag wurde erfolgreich abgeschlossen. Sie können jetzt die Ergebnisse überprüfen oder den umgestalteten Code herunterladen.

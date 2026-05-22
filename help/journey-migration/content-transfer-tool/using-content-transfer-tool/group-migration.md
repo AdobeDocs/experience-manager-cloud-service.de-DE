@@ -4,8 +4,8 @@ description: Überblick über die Gruppenmigration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 97%
+source-wordcount: '1987'
+ht-degree: 92%
 
 ---
 
@@ -39,14 +39,14 @@ Das Content Transfer Tool und Cloud Acceleration Manager migrieren alle Gruppen,
 
 * Wenn sich eine Gruppe in einer ACL- oder CUG-Richtlinie mit migrierten Inhalten befindet, wird diese Gruppe migriert. Dabei gelten die unten aufgeführten Ausnahmen.
 * Es gibt eine Reihe von Gruppen, die integriert und bereits im Cloud-Zielsystem vorhanden sind. Diese werden nie migriert.
-   * Einige integrierte Gruppen können Mitgliedergruppen enthalten, die _nicht_ integriert sind. Solche Mitgliedergruppen (direkte Mitglieder oder Mitglieder von Mitgliedern usw.), auf die in einer ACL- oder CUG-Richtlinie für migrierte Inhalte verwiesen wird, werden migriert, um sicherzustellen, dass Benutzende, die Mitglieder dieser Gruppen sind (entweder direkt oder indirekt), ihren Zugriff auf die migrierten Inhalte beibehalten.
+   * Einige integrierte Gruppen können Mitgliedergruppen enthalten, die nicht _sind_ alle Mitglieder dieser Gruppen (direkte Mitglieder oder Mitglieder von Mitgliedern usw.) Wird in einer ACL- oder CUG-Richtlinie auf migrierte Inhalte verwiesen, wird migriert, um sicherzustellen, dass Benutzende, die Mitglieder dieser Gruppen (direkt oder indirekt) sind, ihren Zugriff auf die migrierten Inhalte aufrechterhalten.
 * Andere Gruppen, z. B. Gruppen, die sich nicht in einer ACL- oder CUG-Richtlinie befinden, Gruppen, die bereits im Zielsystem vorhanden sind, und Gruppen mit bereits im Zielsystem gespeicherten, eindeutigkeitsbeschränkten Daten werden nicht migriert.
 
 Beachten Sie, dass der für eine Gruppe protokollierte/gemeldete Pfad nur der erste Pfad ist, der die Migration der Gruppe ausgelöst hat, und dass sich diese Gruppe auch in anderen Inhaltspfaden befinden könnte.
 
 Die meisten migrierten Gruppen sind so konfiguriert, dass sie von IMS verwaltet werden.  Das bedeutet, dass eine Gruppe in IMS mit demselben Namen mit der Gruppe in AEM verknüpft wird und alle IMS-Benutzenden in der IMS-Gruppe AEM Benutzende und Mitglieder der Gruppe in AEM werden.  Dadurch können diese Benutzenden entsprechend den Richtlinien der ACLs oder CUGs für die Gruppe Zugriff auf den Inhalt haben.
 
-Beachten Sie, dass migrierte Gruppen nicht mehr als „lokale Gruppen“ von AEM angesehen werden. Sie sind IMS-kompatible Gruppen in AEM, obwohl sie möglicherweise noch nicht in IMS existieren.   Sie müssen in IMS separat neu erstellt werden, damit sie zwischen AEM und IMS synchronisiert werden können.  Gruppen können in IMS unter anderem über die Admin Console einzeln oder massenhaft erstellt werden.  Weitere Informationen zum Erstellen von Gruppen (einzeln oder in großer Anzahl) in der Admin Console finden Sie unter [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
+Beachten Sie, dass migrierte Gruppen nicht mehr als „lokale Gruppen“ von AEM angesehen werden. Sie sind IMS-kompatible Gruppen in AEM, obwohl sie möglicherweise noch nicht in IMS existieren.  Sie müssen in IMS separat neu erstellt werden, damit sie zwischen AEM und IMS synchronisiert werden können.  Gruppen können in IMS unter anderem über die Admin Console einzeln oder massenhaft erstellt werden.  Weitere Informationen zum Erstellen von Gruppen (einzeln oder in großer Anzahl) in der Admin Console finden Sie unter [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
 
 Die Ausnahme für diese IMS-Konfiguration sind Gruppen, die von Assets-Sammlungen und privaten Ordnern erstellt wurden. Wenn eine Sammlung oder ein privater Ordner in AEM erstellt wird, werden Gruppen für den Zugriff auf diese Inhalte erstellt. Diese Gruppen werden in das Cloud-System migriert, sind jedoch nicht für die Verwaltung durch IMS konfiguriert.  Um diesen Gruppen IMS-Benutzende hinzuzufügen, müssen sie auf der Seite „Gruppeneigenschaften“ in der Assets-Benutzeroberfläche entweder einzeln oder gemeinsam als Teil einer anderen IMS-Gruppe hinzugefügt werden.
 
@@ -66,9 +66,9 @@ Wenn diese Einstellung deaktiviert ist, werden keine Gruppen migriert und es gib
 
 Wenn bei der Migration Gruppen eingeschlossen werden (Standard), wird ein Bericht zur Prinzipalmigration gespeichert, in dem beschrieben wird, was während der Migration mit den einzelnen Gruppen passiert.  So laden Sie diesen Bericht nach erfolgreicher Aufnahme herunter:
 
-* Navigieren Sie in CAM zu „Content-Übertragung“ und wählen Sie „Aufnahmevorgänge“ aus.
-* Klicken Sie auf die Auslassungspunkte (…) in der Zeile der betreffenden Aufnahme und wählen Sie „Prinzipalzusammenfassung anzeigen“ aus.
-* Wählen Sie im angezeigten Dialogfeld in der Dropdown-Liste unter „Datei herunterladen…“ die Option „Bericht zur Prinzipalmigration“ und klicken Sie auf die Schaltfläche „Herunterladen“.
+* Navigieren Sie in CAM zu „Content-Übertragung“ und wählen Sie „Aufnahmeaufträge“ aus.
+* Klicken Sie auf die Auslassungspunkte (…) in der Zeile der betreffenden Aufnahme und wählen Sie „Prinzipalzusammenfassung anzeigen“.
+* Wählen Sie im angezeigten Dialogfeld in der Dropdown-Liste unter „Datei herunterladen…“ die Option „Prinzipalmigrationsbericht“ aus. und klicken Sie auf die Schaltfläche Herunterladen .
 * Speichern Sie die resultierende CSV-Datei.
 
 Einige der aufgezeichneten Informationen pro Gruppe sind:

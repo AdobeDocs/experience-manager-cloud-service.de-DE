@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 100%
+source-wordcount: '2177'
+ht-degree: 97%
 
 ---
 
@@ -75,12 +75,12 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
     <td>Das Konzept des Replikationsagenten wird durch Sling-Inhaltsverteilung ersetzt. Wenn es Anpassungen gibt, die Replikationsagenten nutzen, müssen diese neu gestaltet werden.<br>Rückwärtsreplikation wird nicht unterstützt</td>
   </tr>
   <tr>
-    <td>CRX/DE und Package Manager</td>
+    <td>CRX/DE und Paket-Manager</td>
     <td></td>
-    <td>CRX/DE ist nur in der Entwicklungsumgebung zulässig.<br>Package Manager ist für alle Autoreninstanzen verfügbar. Die bereitzustellenden Pakete dürfen jedoch nur veränderliche Inhalte enthalten ( z. B.: /content oder /conf)</td>
+    <td>CRX/DE ist nur in der Entwicklungsumgebung zulässig.<br>Der Paket-Manager ist für alle Autoreninstanzen verfügbar. Die bereitzustellenden Pakete dürfen jedoch nur veränderliche Inhalte enthalten ( z. B.: /content oder /conf)</td>
   </tr>
   <tr>
-    <td>Integriertes CDN und Abrufen eines eigenen CDN </td>
+    <td>Integriertes CDN und Abrufen eines eigenen CDN</td>
     <td></td>
     <td>AEM as a Cloud Service umfasst das CDN für alle Umgebungen, das für die meisten Anwendungsfälle optimiert ist.<br>Wenn Sie Ihr eigenes CDN einrichten möchten, müssen Sie eine Anfrage an den Adobe Support senden, damit es genehmigt werden kann.<br>Wenn es genehmigt ist, verweist das CDN auf Fastly und nicht auf AEM-Instanzen in beliebigen Umgebungen.</td>
   </tr>
@@ -97,7 +97,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   <tr>
     <td>Token-basierte Authentifizierungs- und Integrationsstrategien</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow">Generieren von Zugriffs-Token für Server-seitige APIs</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=de#authentication">Tutorial zur Token-basierten Authentifizierung</a></td>
-    <td>Es ist üblich, dassexterne Systeme versuchen, HTTP-Vorgänge innerhalb von AEM auszuführen.<br>Es wird empfohlen, die hier beschriebenen Strategien zu implementieren, anstatt sich auf die Erstellung lokaler Benutzernamen mit Passwörtern in AEM zu verlassen.</td>
+    <td>Es ist üblich, dass Systeme außerhalb von AEM versuchen, HTTP-Vorgänge innerhalb von AEM durchzuführen.<br>Es wird empfohlen, die hier beschriebenen Strategien zu implementieren, anstatt sich auf die Erstellung lokaler Benutzernamen mit Passwörtern in AEM zu verlassen.</td>
   </tr>
   <tr>
     <td>Datei-IO/Festplattenauslastung</td>
@@ -117,7 +117,7 @@ Die Liste der Elemente in der folgenden Tabelle ist die Teilmenge der Änderunge
   <tr>
     <td>Workflow-Starter</td>
     <td></td>
-    <td>Entfernen Sie alle Workflow-Launcher aus Ihrem Code, die entweder einen standardmäßigen oder einen benutzerdefinierten DAM-Update-Asset-Workflow auslösen. <br>Alle Assets, die in AEM as a Cloud Service hochgeladen wurden, werden vom Asset Processing Service verarbeitet. Informationen zu benutzerdefinierten Schritten finden Sie unter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=de#post-processing-workflows"> Nachbearbeitungs-Workflows</a>, wo es um die Einrichtung und Konfiguration von Nachbearbeitungs-Workflows geht.</td>
+    <td>Entfernen Sie alle Workflow-Starter aus Ihrem Code, die entweder einen standardmäßigen oder einen benutzerdefinierten DAM-Update-Asset-Workflow auslösen. <br>Alle Assets, die in AEM as a Cloud Service hochgeladen wurden, werden vom Asset Processing Service verarbeitet. Informationen zu benutzerdefinierten Schritten finden Sie unter <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=de#post-processing-workflows"> Nachbearbeitungs-Workflows</a>, wo es um die Einrichtung und Konfiguration von Nachbearbeitungs-Workflows geht.</td>
   </tr>
   <tr>
     <td>Schritte für benutzerdefinierte Ausgabedarstellungen</td>
@@ -179,7 +179,7 @@ Der erste Schritt besteht darin, zu beurteilen, ob Sie bereit sind, von Ihrer be
 
 Führen Sie eine umfassende Bewertung Ihres aktuellen AEM-Quell-Codes anhand der wichtigen Änderungen und veralteten Funktionen durch, um den für die Umstellung zu erwartenden Aufwand zu bestimmen.
 
-Die Anzahl der Ergebnisse wird sich direkt auf die Zeitpläne und den Gesamterfolg des Projekts auswirken. Adobe empfiehlt daher, so viel wie möglich herauszufinden, damit Sie die Bereitstellung planen können. Oder initiieren Sie die Gespräche, damit Sie alle erforderlichen Anpassungen neu entwerfen können, um den Best Practices für AEM as a Cloud Service gerecht zu werden.
+Die Anzahl der Ergebnisse wird sich direkt auf die Timelines und den Gesamterfolg des Projekts auswirken. Adobe empfiehlt daher, so viel wie möglich herauszufinden, damit Sie die Bereitstellung planen können. Oder initiieren Sie die Gespräche, damit Sie alle erforderlichen Anpassungen neu entwerfen können, um den Best Practices für AEM as a Cloud Service gerecht zu werden.
 
 **Best Practice Analyzer**
 
@@ -219,7 +219,7 @@ Sobald Sie den Umfang der Änderungen kennen, die erforderlich sind, um zu AEM a
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [Erste Schritte mit Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) – Eine umfassende Anleitung zur Verwendung von Cloud Acceleration Manager, um den Wechsel zur Cloud zu beschleunigen.
-* [AEM as a Cloud Service: Einführung, Architektur und neuer Ansatz](https://experienceleague.adobe.com/de?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=de#dashboard/learning)
+* [AEM as a Cloud Service: Einführung, Architektur und neuer Ansatz](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=de#dashboard/learning)
 * [Startseite von AEM as a Cloud Service](/help/overview/introduction.md) – Beginnen Sie hier, um einen Überblick über die Dokumentation zu Experience Manager as a Cloud Service zu erhalten.
 * [Überblick über AEM as a Cloud Service](/help/overview/introduction.md) – Dieses Handbuch bietet einen Überblick über Experience Manager as a Cloud Service, einschließlich Einführung, Terminologie und Architektur.
 * [Onboarding-Tour](/help/journey-onboarding/overview.md) – Dieses Handbuch bietet eine Zusammenfassung der ersten Schritte mit Experience Manager as a Cloud Service, einschließlich der Zugriffsmöglichkeiten und der Einrichtung des Teams.

@@ -7,14 +7,14 @@ exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1251'
+ht-degree: 93%
 
 ---
 
 # Bearbeiten von Bildern in [!DNL Assets view] {#edit-images-in-assets-view}
 
-Die Benutzeroberfläche der Assets-Ansicht ermöglicht eine einfache Bildbearbeitung auf Basis von Adobe Express, das in die Benutzeroberfläche integriert ist. Diese Bearbeitung umfasst Größenanpassung, Hintergrundentfernung, Zuschneiden und Konvertierung zwischen JPEG- und PNG-Formaten. Darüber hinaus ist eine erweiterte Bearbeitung durch die Adobe Express-Benutzeroberfläche möglich, die in die Benutzeroberfläche der Assets-Ansicht integriert ist. 
+Die Benutzeroberfläche der Assets-Ansicht ermöglicht eine einfache Bildbearbeitung auf Basis von Adobe Express, das in die Benutzeroberfläche integriert ist. Diese Bearbeitung umfasst Größenanpassung, Hintergrundentfernung, Zuschneiden und Konvertierung zwischen JPEG- und PNG-Formaten. Darüber hinaus ist eine erweiterte Bearbeitung durch die Adobe Express-Benutzeroberfläche möglich, die in die Benutzeroberfläche der Assets-Ansicht integriert ist.
 
 Nachdem Sie ein Bild bearbeitet haben, können Sie das neue Bild als neue Version speichern. Mit der Versionierung können Sie bei Bedarf später zum Original-Asset zurückkehren. Um ein Bild zu bearbeiten, [öffnen Sie seine Vorschau](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) und klicken Sie auf **Bild bearbeiten**.
 
@@ -69,7 +69,7 @@ Mit den eingebetteten Schnellaktionen von [!DNL Adobe Express] ist es einfach, e
 1. Klicken Sie im linken Bereich auf **[!UICONTROL Bild zuschneiden]**.
 2. Ziehen Sie die Griffe an den Ecken des Bildes, um den gewünschten Zuschnitt zu erstellen.
 3. Klicken Sie auf **[!UICONTROL Übernehmen]**.
-   ![Speichern Sie das Bild mit Adobe Express](assets/adobe-express-crop-image.png)
+   ![Bild mit Adobe Express speichern](assets/adobe-express-crop-image.png)
 Das zugeschnittene Bild kann heruntergeladen werden. Sie können das bearbeitete Asset entweder als neue Version desselben Assets oder als neues Asset speichern.
 
 #### JPEG in PNG konvertieren {#convert-image-types-using-express}
@@ -90,7 +90,7 @@ Mithilfe von Adobe Express können Sie schnell zwischen JPEG- und PNG-Bildformat
 Benutzende mit Express-Berechtigung können den eingebetteten Express-Editor in der Assets-Ansicht verwenden, um Inhalte einfach zu bearbeiten und neue Inhalte mit GenAI von Adobe Firefly zu erstellen. Diese Funktion ermöglicht eine bessere Wiederverwendung von Inhalten und erhöht die Inhaltsgeschwindigkeit. Sie können auch vordefinierte Elemente verwenden, um Ihr Asset beeindruckend aussehen zu lassen, oder schnelle Aktionen durchführen, um Ihr Bild mit nur wenigen Klicks zu bearbeiten.
 
 ![Express in Essentials-Benutzeroberfläche](/help/assets/assets/express-in-essentials-ui.jpg)
-Gehen Sie wie folgt vor, um Bilder mit dem eingebetteten [!DNL Adobe Express]-Editor zu bearbeiten:
+Gehen Sie wie folgt vor, um Bilder mit [!DNL Adobe Express] eingebetteten Editor zu bearbeiten:
 
 1. Öffnen Sie die AEM-Assets-Ansicht, indem Sie auf den Link für die [AEM-Assets-Ansicht](https://experience.adobe.com/#/assets) klicken und das richtige Repository auswählen.
 1. Klicken Sie auf **Assets**, geben Sie einen Ordner an und wählen Sie ein Bild aus.

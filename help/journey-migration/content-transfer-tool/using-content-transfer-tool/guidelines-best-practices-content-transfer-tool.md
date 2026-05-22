@@ -1,12 +1,12 @@
 ---
-title: 'Richtlinien und Best Practices für die Verwendung des Content Transfer Tools  '
+title: Richtlinien und Best Practices für die Verwendung des Content Transfer Tools
 description: Lernen Sie die Richtlinien und Best Practices für die Verwendung des Content Transfer Tools kennen.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1477'
 ht-degree: 100%
 
 ---
