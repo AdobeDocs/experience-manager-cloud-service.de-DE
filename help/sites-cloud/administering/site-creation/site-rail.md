@@ -9,8 +9,8 @@ solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 99%
+source-wordcount: '623'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,7 @@ Lernen Sie die leistungsstarken Funktionen des Panels „Site“ kennen, mit den
 
 ## Überblick {#overview}
 
-Das Panel „Site“ ermöglicht Ihnen die Verwaltung der Design- und Vorlagenressourcen Ihrer Site für herkömmliche AEM-Authoring-Projekte mit [Veröffentlichungsbereitstellung.](/help/sites-cloud/authoring/author-publish.md) [Genau wie andere Panels](/help/sites-cloud/authoring/sites-console/console-side-panel.md), z. B. die Panels „Inhaltsstruktur“, „Verweis“ oder „Timeline“, wird auch das Panel „Site“ in der Sites-Konsole ganz links als Bereich angezeigt, der Informationen zum ausgewählten Element enthält. Im Gegensatz zu anderen Bedienfeldern gilt das Site-Bedienfeld aber nur für Site-Stammverzeichnisse.
+Im Site-Panel können Sie die Design- und Vorlagenressourcen Ihrer Site für herkömmliche AEM-Authoring-Projekte mit [Veröffentlichungsbereitstellung“ verwalten](/help/sites-cloud/authoring/author-publish.md) [Wie andere Bedienfelder](/help/sites-cloud/authoring/sites-console/console-side-panel.md) z. B. die Inhaltsstruktur-, Verweis- oder Zeitleisten-Bedienfelder, wird das Site-Bedienfeld in der Sites-Konsole als Bedienfeld ganz links angezeigt, das Informationen zum ausgewählten Element anzeigt. Im Gegensatz zu anderen Bedienfeldern gilt das Site-Bedienfeld aber nur für Site-Stammverzeichnisse.
 
 Das Site-Bedienfeld wird verwendet, um Informationen zu Designs und Vorlagen für Ihre Site zu verwalten, darunter:
 
@@ -48,7 +48,7 @@ Wählen Sie **Design-Quellen herunterladen** aus, um eine lokale Kopie des Site-
 
 ## Herunterladen von Vorlagenressourcen {#downloading-template-resources}
 
-[Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem [Site-Design Informationen enthalten.](site-themes.md) Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
+[Site-Vorlagen](site-templates.md) können zusätzlich zu Ihrer Site-Inhaltsstruktur und dem Site[Design Informationen enthalten](site-themes.md) Site-Vorlagen können beispielsweise Wireframe-Designs oder andere Site-bezogene Dateien enthalten.
 
 Wenn Ihre Site auf einer Site-Vorlage basiert und das Site-Bedienfeld in der Sites-Konsole angezeigt wird, wählen Sie das Stammverzeichnis Ihrer Site aus, um Design-Informationen über die Site anzuzeigen, einschließlich zusätzlicher Site-Ressourcen.
 

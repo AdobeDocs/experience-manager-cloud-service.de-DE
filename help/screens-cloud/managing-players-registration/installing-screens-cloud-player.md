@@ -7,7 +7,7 @@ role: Admin, Developer, User
 source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -63,12 +63,12 @@ Die folgenden Eigenschaften sind in jedem `ping` enthalten:
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| id {Zeichenfolge} | die Player-Kennung |
-| activeChannel {Zeichenfolge} | der derzeit wiedergebende Kanalpfad, oder null, wenn nichts geplant ist |
-| activeElements {Zeichenfolge} | Kommagetrennte Zeichenfolge, derzeit sichtbare Elemente in allen wiedergegebenen Sequenzkanälen (mehrere bei einem Mehrzonen-Layout) |
-| isDefaultContent {Boolesch} | „true“, wenn der Wiedergabekanal als Standard- oder Fallback-Kanal betrachtet wird (d. h. hat Priorität 1 und keinen Zeitplan) |
-| hasContentChanged {Boolesch} | „true“, wenn der Inhalt in den letzten 5 Minuten geändert wurde, andernfalls „false“ |
-| lastContentChange {Zeichenfolge} | Zeitstempel der letzten Inhaltsänderung |
+| ID {string} | die Player-Kennung |
+| activeChannel {string} | der derzeit wiedergebende Kanalpfad, oder null, wenn nichts geplant ist |
+| activeElements-{string} | Kommagetrennte Zeichenfolge, derzeit sichtbare Elemente in allen wiedergegebenen Sequenzkanälen (mehrere bei einem Mehrzonen-Layout) |
+| isDefaultContent {boolean} | „true“, wenn der Wiedergabekanal als Standard- oder Fallback-Kanal betrachtet wird (d. h. hat Priorität 1 und keinen Zeitplan) |
+| hasContentChanged-{boolean} | „true“, wenn der Inhalt in den letzten 5 Minuten geändert wurde, andernfalls „false“ |
+| lastContentChange {string} | Zeitstempel der letzten Inhaltsänderung |
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Die folgenden Eigenschaften sind in jedem `ping` enthalten:
 >
 >| Eigenschaft | Beschreibung |
 >|---|---|
->| isContentRendering {Boolesch} | „true“, wenn die GPU bestätigen kann, dass tatsächliche Inhalte wiedergegeben werden (basierend auf der Pixelanalyse) |
+>| isContentRendering {boolean} | „true“, wenn die GPU bestätigen kann, dass tatsächliche Inhalte wiedergegeben werden (basierend auf der Pixelanalyse) |
 
 ### Einschränkungen {#limitations}
 

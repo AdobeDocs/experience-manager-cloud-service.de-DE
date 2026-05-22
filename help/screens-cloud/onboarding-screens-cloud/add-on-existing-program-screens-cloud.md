@@ -6,7 +6,7 @@ feature: Screens Deployments
 role: Admin, Developer, User
 source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '285'
 ht-degree: 100%
 
 ---

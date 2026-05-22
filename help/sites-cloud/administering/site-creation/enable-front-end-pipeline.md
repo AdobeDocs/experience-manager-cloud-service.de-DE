@@ -9,7 +9,7 @@ solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '1011'
 ht-degree: 90%
 
 ---
@@ -90,7 +90,7 @@ Wie im Abschnitt [Technische Details](#technical-details) beschrieben, werden be
 
 Wenn Sie die Funktion „Benutzerdefinierte Domains“ von Cloud Manager zusammen mit der Frontend-Pipeline für Status-Assets für Ihre Site verwenden möchten, müssen zu diesen Knoten zusätzliche Eigenschaften hinzugefügt werden.
 
-1. Legen Sie die Eigenschaft `customFrontendPrefix` in `SiteConfig` für die Site fest. 
+1. Legen Sie die Eigenschaft `customFrontendPrefix` in `SiteConfig` für die Site fest.
    1. Navigieren Sie zu `/conf/<site-name>/sling:configs/com.adobe.aem.wcm.site.manager.config.SiteConfig`.
    1. Fügen Sie die Eigenschaft `customFrontendPrefix = "https://your-custom-domain.com/static/"` hinzu oder aktualisieren Sie sie.
 1. Dadurch wird der `prefixPath`-Wert der `HtmlPageItemsConfig` mit der benutzerdefinierten Domain aktualisiert.

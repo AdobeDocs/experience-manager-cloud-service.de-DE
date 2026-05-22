@@ -39,7 +39,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483069/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta-Programme {#aem-beta-programs}
@@ -89,7 +89,7 @@ Siehe [Cloud Manager-Beta-Programme](/help/implementing/cloud-manager/release-no
 
 ### KI-Übersetzungsintegration {#ai-translation-integration}
 
-AEM-Anwender können jetzt große Sprachmodelle (LLMs) für die Übersetzung von Inhalten nutzen und so eine hohe Qualität für menschliche Übersetzungen mit hoher Geschwindigkeit für maschinelle Übersetzungen gewährleisten. Ähnlich wie herkömmliche Übersetzungs-Services von Drittanbietern kann Azure OpenAI als Übersetzungsanbieter in AEM konfiguriert werden, wobei die Unterstützung für zusätzliche LLMs für zukünftige Versionen geplant ist. Kunden verwenden ihre eigenen LLM-Lizenzen für diese Funktion. Darüber hinaus können Leitfäden zu unternehmensspezifischen Übersetzungsstilen in AEM hochgeladen werden, sodass die Übersetzungsregeln extrahiert werden können, um die Konsistenz von Marke und Stil sicherzustellen. Weitere Informationen finden [&#x200B; unter „Konfigurieren &#x200B;](/help/sites-cloud/administering/translation/ai-translation-integration.md) KI-Übersetzungsintegration“.
+AEM-Anwender können jetzt große Sprachmodelle (LLMs) für die Übersetzung von Inhalten nutzen und so eine hohe Qualität für menschliche Übersetzungen mit hoher Geschwindigkeit für maschinelle Übersetzungen gewährleisten. Ähnlich wie herkömmliche Übersetzungs-Services von Drittanbietern kann Azure OpenAI als Übersetzungsanbieter in AEM konfiguriert werden, wobei die Unterstützung für zusätzliche LLMs für zukünftige Versionen geplant ist. Kunden verwenden ihre eigenen LLM-Lizenzen für diese Funktion. Darüber hinaus können Leitfäden zu unternehmensspezifischen Übersetzungsstilen in AEM hochgeladen werden, sodass die Übersetzungsregeln extrahiert werden können, um die Konsistenz von Marke und Stil sicherzustellen. Weitere Informationen finden [ unter „Konfigurieren ](/help/sites-cloud/administering/translation/ai-translation-integration.md) KI-Übersetzungsintegration“.
 
 ### Inhaltsfragment-Editor {#cf-editor}
 
@@ -147,14 +147,14 @@ Forms Manager [unterstützt jetzt die Versionierung für adaptive Forms (Kernkom
 
 Der Experience Governance MCP-Server ist jetzt allgemein verfügbar (GA). Es lässt sich mit KI-Entwickler-Tools und Chatbots integrieren, die das Model Context Protocol (MCP) unterstützen, sodass Sie die Markenintegrität und -konformität mithilfe natürlicher Sprachaufforderungen in Ihrem Chatbot oder Ihrer IDE schützen können. Sie können Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenverwaltung auswerten und Markenkonfigurationen und verfügbare Governance-Prüfungen abrufen.
 
-Erfahren Sie mehr über [AEM MCP-](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) und den [Governance Agent](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Erfahren Sie mehr über [AEM MCP-](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) und den [Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
 
 #### Claude Connector {#aem-claude-connector}
 
-Claude-Benutzer können den Anthropic-[Connector-Marketplace](https://claude.ai/settings/connectors) durchsuchen, um mit einem Klick den [Adobe Experience Manager-Connector zu &#x200B;](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector). Dieser MCP-Server stellt eine wachsende Anzahl von Tools für die Interaktion mit AEM bereit, einschließlich der Bearbeitung von Inhalten durch Eingabeaufforderungen.
+Claude-Benutzer können den Anthropic-[Connector-Marketplace](https://claude.ai/settings/connectors) durchsuchen, um mit einem Klick den [Adobe Experience Manager-Connector zu ](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector). Dieser MCP-Server stellt eine wachsende Anzahl von Tools für die Interaktion mit AEM bereit, einschließlich der Bearbeitung von Inhalten durch Eingabeaufforderungen.
 
 #### AEM OIDC bei Veröffentlichung neuer Funktionen {#aem-oidc-on-publish-new-features}
 
@@ -226,7 +226,7 @@ Wir haben nur eine begrenzte Anzahl von Möglichkeiten für die AEM-Veröffentli
 
 Die Funktionen [Fehlerbehebung bei Pipelines](/help/ai-in-aem/agents/brand-experience/development/development.md) des Entwicklungsagenten helfen Entwicklerinnen und Entwicklern bei der effizienten Diagnose und Lösung von Problemen in AEM as a Cloud Service-Bereitstellungen. Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web Tier Config-Pipeline** als Teil eines Beta-Programms.
 
-aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 #### Fehlerbehebung bei der Replikations-KI (Alpha-Programm) {#replication-ai-troubleshooting-alpha}
 
@@ -234,9 +234,9 @@ Mithilfe des KI-Assistenten in der AEM-Autoreninstanz und anderen Benutzeroberfl
 
 #### IDE AI-Tools für die Migration von AEM 6.5 zu AEM Cloud Service (Beta-Programm) {#cm-ide-migration}
 
-Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
+Beschleunigen Sie die Migration von AEM 6.5 zu AEM as a Cloud Service (Java-Stack), indem Sie IDE-KI-Tools verwenden, um die Empfehlungen des [Best Practices Analyzer-Berichts“ ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-E-Mail [&#128279;](mailto:aemcs-ai-ide-tools-feedback@adobe.com)aemcs-ai-ide-tools-feedback@adobe.com), um weitere Informationen zu erhalten und Zugriff auf die Funktion anzufordern.
+E-Mail [](mailto:aemcs-ai-ide-tools-feedback@adobe.com)aemcs-ai-ide-tools-feedback@adobe.com), um weitere Informationen zu erhalten und Zugriff auf die Funktion anzufordern.
 
 #### Edge-Authentifizierung für Edge Delivery Services (Beta-Programm) {#edge-authentication}
 
@@ -254,7 +254,7 @@ Senden Sie eine E-Mail an [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs
 
 In der Beta-Phase unterstützen schnelle Entwicklungsumgebungen (RDEs) jetzt eine Funktion [um einen Schnappschuss zu erstellen](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) des aktuellen Status von Code und Inhalten, die zu einem späteren Zeitpunkt wiederhergestellt werden kann. Dies kann nützlich sein, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
-Senden Sie eine E-Mail an [&#128279;](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
+Senden Sie eine E-Mail an [](mailto:aemcs-rde-support@adobe.com)aemcs-rde-support@adobe.com), wenn Sie an der Verwendung dieser Funktion und der Bereitstellung von Feedback dazu interessiert sind.
 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 

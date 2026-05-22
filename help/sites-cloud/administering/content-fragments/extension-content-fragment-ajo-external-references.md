@@ -8,7 +8,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '310'
 ht-degree: 98%
 
 ---
