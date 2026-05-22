@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise zum universellen Editor 2026.05.14
-description: Dies sind die Versionshinweise für die Version 2026.05.14 des universellen Editors.
+title: Versionshinweise für Universal Editor 2026.05.21
+description: Dies sind die Versionshinweise für die Version 2026.05.21 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 409ec2536b650f5b7135fc8009d955f54079dff8
+source-git-commit: 8ba59c47379e9d506813cec8e647b93679bf9815
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 20%
+source-wordcount: '82'
+ht-degree: 28%
 
 ---
 
 
-# Versionshinweise zum universellen Editor 2026.05.14 {#release-notes}
+# Versionshinweise für Universal Editor 2026.05.21 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 14. Mai 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 21. Mai 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,9 +26,4 @@ Dies sind die Versionshinweise für die Version vom 14. Mai 2026 des universelle
 
 ## Neue Funktionen {#what-is-new}
 
-* [Der Bereich „Eigenschaften](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) wird jetzt standardmäßig geöffnet.
-* [Erweiterungssymbole wurden zu Spectrum 2 migriert.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
-
-## Andere Verbesserungen {#other-improvements}
-
-* URLs mit Leerzeichen und/oder Sonderzeichen werden jetzt beim Speichern im Rich-Text-Editor ordnungsgemäß prozentual kodiert.
+* Kleinere Verbesserungen und Fehlerbehebungen
