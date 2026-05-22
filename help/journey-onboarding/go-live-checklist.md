@@ -6,7 +6,7 @@ feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '593'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 * Wenn Sie von AEM 6.5 migrieren, sollten Sie Inhalte in die Produktion migrieren und sicherstellen, dass eine relevante Teilmenge während des Tests verfügbar ist.
    * Die Best Practices von DevOps für AEM sehen vor, dass der Code von der Entwicklungs- zur Produktionsumgebung nach oben verschoben wird, während die Inhalte von der Produktionsumgebung nach unten verschoben werden.
 * Planen der Periode zum Einfrieren von Code und Inhalten.
-   * Siehe auch den Abschnitt [Zeitpläne für das Einfrieren von Code und Inhalten für die Migration](#code-content-freeze).
+   * Siehe auch den Abschnitt [Timelines für das Einfrieren von Code und Inhalten für die Migration](#code-content-freeze).
 * Ausführen der endgültigen Inhaltsauffüllung.
 * Überprüfen Sie die Dispatcher-Konfigurationen.
    * Verwenden Sie einen lokalen Dispatcher-Validator, der die Konfiguration, Validierung und Simulation des Dispatchers lokal unterstützt.

@@ -6,8 +6,8 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
 source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 78%
+source-wordcount: '686'
+ht-degree: 100%
 
 ---
 
@@ -31,14 +31,14 @@ Programme sind die höchste Organisationsebene in Cloud Manager. Abhängig von I
 
 Cloud Manager-Programme stellen eine Reihe von Cloud Manager-Umgebungen dar. Diese Programme unterstützen logische Gruppen von Geschäftsinitiativen, die normalerweise einem lizenzierten Service Level Agreement (SLA) entsprechen. Beispielsweise kann ein Programm die Adobe Experience Manager(AEM)-Ressourcen zur Unterstützung einer globalen öffentlichen Website für eine Organisation darstellen, während ein anderes Programm ein internes zentrales DAM darstellt.
 
-Betrachten wir das Beispiel von WKND Travel and Adventure Enterprises, einem Mandanten, der auf Medien zum Thema Reisen spezialisiert ist. Sie könnten zwei Programme haben. Ein AEM Sites-Programm für den WKND-Magazinbereich und ein AEM Assets-Programm für den WKND-Medienbereich. Verschiedene Team-Mitglieder hätten dann aufgrund ihrer eigenen Arbeitsteilung Zugang zu den verschiedenen Programmen.
+Sehen Sie sich das Beispiel von WKND Travel and Adventure Enterprises an, einem Mandanten, der auf Medien zum Thema Reisen spezialisiert ist. Er könnte zwei Programme haben. Ein AEM Sites-Programm für den WKND-Magazinbereich und ein AEM Assets-Programm für den WKND-Medienbereich. Verschiedene Team-Mitglieder hätten dann aufgrund ihrer eigenen Arbeitsteilung Zugang zu den verschiedenen Programmen.
 
 Es gibt zwei verschiedene Arten von Programmen:
 
 * Ein **Produktionsprogramm** wird erstellt, um Live-Traffic für Ihre Site zu ermöglichen. Dieses Programm ist Ihre „echte“ Umgebung.
 * Ein **Sandbox-Programm** wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen, Konzeptnachweise oder Dokumentation erstellt.
 
-Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen Umgebungen unterschiedliche Optionen. Der Prozess ihrer Erstellung ist jedoch ähnlich. Für diese Onboarding-Tour erstellen Sie eine Sandbox-Umgebung.
+Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen Umgebungen unterschiedliche Optionen. Die Erstellung erfolgt jedoch ähnlich. Für diese Onboarding-Tour erstellen Sie eine Sandbox-Umgebung.
 
 >[!TIP]
 >
@@ -52,7 +52,7 @@ Da sie für unterschiedliche Zwecke eingesetzt werden, haben die verschiedenen U
 
    ![Cloud Manager-Landingpage](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Wählen Sie im Assistenten zum Erstellen von Programmen die **Sandbox einrichten**, geben Sie dann einen Programmnamen ein und klicken Sie auf **Weiter**.
+1. Wählen Sie im Assistenten zum Erstellen von Programmen die Option **Sandbox einrichten**, geben Sie einen Programmnamen ein und wählen Sie **Weiter** aus.
 
    ![Erstellen von Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
@@ -64,13 +64,13 @@ Auf der Landingpage wird eine neue Sandbox-Programmkarte mit einer Statusanzeige
 
 ![Erstellen von Sandboxes von der Übersichtsseite](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
-Sobald das Programm abgeschlossen ist, können sich Mitglieder Ihres Unternehmens, die dem Produktprofil **Entwickler** zugewiesen sind, bei Cloud Manager anmelden und Cloud Manager-Git-Repositorys verwalten.
+Sobald das Programm abgeschlossen ist, können sich Mitglieder Ihrer Organisation, die dem Produktprofil **Entwickler** zugewiesen sind, bei Cloud Manager anmelden und Cloud Manager-Git-Repositories verwalten.
 
 ## Wie geht es weiter {#whats-next}
 
 Nachdem Ihr erstes Programm erstellt wurde, können Sie jetzt Umgebungen dafür erstellen. Sie sollten Ihre Onboarding-Tour fortsetzen, indem Sie das Dokument [Erstellen von Umgebungen](create-environments.md) lesen.
 
-Siehe auch [Onboarding einer Edge Delivery Services-Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+Siehe auch [Integrieren einer Edge Delivery Services-Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

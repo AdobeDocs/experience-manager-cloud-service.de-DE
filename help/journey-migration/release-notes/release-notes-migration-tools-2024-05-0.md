@@ -6,8 +6,8 @@ role: Admin
 exl-id: f50a74fa-ad7d-4837-b0a1-9945c32af02f
 source-git-commit: 3b2ed44b438fe8587a9b9603ddfacc41111fb903
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '204'
+ht-degree: 84%
 
 ---
 
@@ -36,4 +36,4 @@ Best Practices Analyzer v2.1.50 wurde im Mai 2024 veröffentlicht.
 
 * Cloud Acceleration Manager (CAM) unterstützt jetzt das automatische Hochladen von BPA-generierten Berichten direkt in CAM. Weitere Informationen finden Sie unter [Phase „Bereitschaft“ in Cloud Acceleration Manager – Verwenden der Karte „Best-Practices-Analyse“](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-* Cloud Acceleration Manager bietet jetzt eine Schätzung der möglichen Dauer einer Aufnahme, abhängig von Faktoren wie Knotenanzahl, Datenspeichergröße usw. Erfahren Sie mehr über das [Aufnehmen von Inhalten in Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+* Cloud Acceleration Manager bietet jetzt eine Schätzung der Dauer einer Aufnahme anhand von Faktoren wie Knotenanzahl, Datenspeichergröße usw. Weitere Informationen finden Sie unter [Aufnehmen von Inhalten in Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)

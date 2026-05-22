@@ -6,8 +6,8 @@ exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 94%
+source-wordcount: '827'
+ht-degree: 92%
 
 ---
 
@@ -151,7 +151,7 @@ Setzen Sie Ihre Onboarding-Tour mit dem Lesen des Dokuments [Erstellen eines Pro
 
 Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
-* [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) – 
-Erfahren Sie mehr über Cloud Manager sowie Cloud Manager-Programme und -Umgebungen.
-* [Team- und Produktprofile in AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) – Erfahren Sie, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken können. 
+* [Einführung in Cloud Manager](/help/onboarding/cloud-manager-introduction.md) -
+Erfahren Sie mehr über Cloud Manager, Cloud Manager-Programme und Umgebungen.
+* [AEM as a Cloud Service-Team und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) – Erfahren Sie, wie Sie mit dem AEM as a Cloud Service-Team und Produktprofilen den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken kann.
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion. -->
