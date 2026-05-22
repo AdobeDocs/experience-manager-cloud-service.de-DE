@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 64%
+source-wordcount: '847'
+ht-degree: 69%
 
 ---
 
@@ -51,7 +51,7 @@ Eine Zusammenfassung der in der Version 2022.5.0 hinzugefügten Funktionen finde
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Assets] verfügbar {#prerelease-features-assets}
 
-Experience Manager Assets verwendet jetzt KI-Funktionen von Adobe[&#x200B; um zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags &#x200B;](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben zwischen 1 und 40 konfigurieren, mit denen ein Bild getaggt werden kann, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
+Experience Manager Assets verwendet jetzt Adobe AI-Funktionen, um [zwischen Farben in einem Bild zu unterscheiden und diese bei der Aufnahme automatisch als Tags anzuwenden](/help/assets/color-tag-images.md). Diese Tags ermöglichen eine einfachere Suche, die auf der Farbkomposition des Bildes basiert. Sie können die Anzahl der Farben, mit denen ein Bild getaggt wird, zwischen eins und 40 konfigurieren, sodass Sie später nach Bildern suchen können, die auf diesen Farben basieren.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

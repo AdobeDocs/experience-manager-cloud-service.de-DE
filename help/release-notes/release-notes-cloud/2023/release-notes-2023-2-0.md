@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '756'
 ht-degree: 100%
 
 ---
@@ -39,8 +39,8 @@ Sehen Sie sich das Video zur Versionsübersicht Februar 2023 an, das eine Zusamm
 
 ### Neue Funktionen in der Vorabversion von [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* Exportieren Sie Inhaltsfragmente aus AEM as a Cloud-Service in Adobe Target als JSON-Angebote.
-* Die Unterstützung für Paginierung und Sortierung in GraphQL sowie interne Caching-Verbesserungen verbessern jetzt die Leistung von entkoppelten Client-Anwendungen beim Abrufen großer Inhaltssets aus AEM mithilfe komplexer GraphQL-Abfragen und -Filter.
+* Exportieren Sie Inhaltsfragmente aus AEM as a Cloud Service in Adobe Target als JSON-Angebote.
+* Die Unterstützung für Paginierung und Sortierung in GraphQL sowie interne Caching-Verbesserungen verbessern jetzt die Leistung von entkoppelten Client-Anwendungen beim Abrufen großer Content-Sets aus AEM mithilfe komplexer GraphQL-Abfragen und -Filter.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -50,7 +50,7 @@ Sehen Sie sich das Video zur Versionsübersicht Februar 2023 an, das eine Zusamm
    * Adaptives Streaming (DASH/HLS) sorgt für ein besseres Zuschauererlebnis bei der Videoanzeige
    * DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weithin verwendet
 
-* Unterstützung für WebP-Bilder hinzugefügt, um Metadaten automatisch zu extrahieren, Miniaturansichten und benutzerdefinierte Ausgabeformate zu generieren. Die Funktionen „Smartes Markieren“ und „Smartes Zuschneiden“ werden jetzt auch für diese Dateien unterstützt.
+* Unterstützung für WebP-Bilder hinzugefügt, um Metadaten automatisch zu extrahieren, Miniaturansichten und benutzerdefinierte Ausgabeformate zu generieren. Die Funktionen „Smart-Tag“ und „Intelligenter Zuschnitt“ werden jetzt auch für diese Dateien unterstützt.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -64,11 +64,11 @@ Sehen Sie sich das Video zur Versionsübersicht Februar 2023 an, das eine Zusamm
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[Effiziente Formularerstellung mit der Funktion „Adaptives Formular als Vorlage speichern“](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Beschleunigen und standardisieren Sie die Formularentwicklung, indem Sie vorhandene, von der Marke genehmigte Formulare zur schnellen Wiederverwendung speichern.
+* **[Effiziente Formularerstellung mit der Funktion „Adaptives Formular als Vorlage speichern“](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Beschleunigen und standardisieren Sie die Formularentwicklung, indem Sie vorhandene, von der Marke genehmigte Formularvorlagen zur schnellen Wiederverwendung speichern.
 
 * **[Verbinden von AEM Forms mit JDBC-unterstützten Datenbanken](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Stellen Sie mithilfe des JDBC-Protokolls eine Verbindung zu Unternehmensdatenbanken direkt über den AEM Cloud Service her, ohne dass Sie diese über die REST-API verfügbar machen müssen.
 
-* **[Integration mit REST-Endpunkten unter Verwendung von Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Nahtlose Integration in Datensatzsysteme, die Open API 3.0 zum Speichern und Abrufen von Daten mithilfe von Formulardatenmodellen unterstützen.
+* **[Integration mit REST-Endpunkten unter Verwendung von Open API 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Nahtlose Integration in Archivierungssysteme, die Open API 3.0 zum Speichern und Abrufen von Daten mithilfe von Formulardatenmodellen unterstützen.
 
 * **[Freigeben eines adaptiven Formulars zur Überprüfung](/help/forms/create-reviews-forms.md)**: Verwenden Sie den Überprüfungsmechanismus adaptiver Formulare, damit eine oder mehrere Personen das Formular überprüfen können.
 

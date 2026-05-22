@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1022'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,7 @@ Sehen Sie sich das Video Versionsübersicht Januar 2023 an, das eine Zusammenfas
 
 ### Neue Funktionen in der Vorabversion von [!DNL Sites] {#prerelease-features-sites}
 
-* Die Content-Delivery-API von AEM GraphQL unterstützt jetzt [Paging](/help/headless/graphql-api/content-fragments.md#paging) und [Sortierung](/help/headless/graphql-api/content-fragments.md#sorting) durch GraphQL, um das Abrufen und Rendern großer Inhaltssätze effizienter zu gestalten. Mit der GraphQL-Paginierung können Sie die Antwortzeit der Abfrage verbessern, indem Ergebnisse in Teilmengen zurückgegeben werden, im Gegensatz zu allem auf einmal. Die GraphQL-Sortierung ermöglicht die Platzierung von Inhaltssätzen in einer gewünschten Reihenfolge, was die Verarbeitung der Inhalte durch eine Client-Anwendung erleichtert.  Die Reaktionszeit von Abfragen wird durch Hybrid-Filter in der AEM GraphQL-Engine weiter verbessert. Inhalte werden jetzt aus JCR in kleineren Sets gelesen, die mit Abfragefiltern übereinstimmen.
+* Die Content-Delivery-API von AEM GraphQL unterstützt jetzt [Paging](/help/headless/graphql-api/content-fragments.md#paging) und [Sortierung](/help/headless/graphql-api/content-fragments.md#sorting) durch GraphQL, um das Abrufen und Rendern großer Content-Sets effizienter zu gestalten. Mit der GraphQL-Paginierung können Sie die Antwortzeit der Abfrage verbessern, indem Ergebnisse in Teilmengen zurückgegeben werden, im Gegensatz zu allem auf einmal. Die GraphQL-Sortierung ermöglicht die Platzierung von Content-Sets in einer gewünschten Reihenfolge, was die Verarbeitung der Inhalte durch eine Client-Anwendung erleichtert.  Die Reaktionszeit von Abfragen wird durch Hybrid-Filter in der AEM GraphQL-Engine weiter verbessert. Inhalte werden jetzt aus JCR in kleineren Sets gelesen, die mit Abfragefiltern übereinstimmen.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -49,13 +49,13 @@ Sehen Sie sich das Video Versionsübersicht Januar 2023 an, das eine Zusammenfas
 
   ![PDF-Ausgabe für andere Formate](/help/release-notes/assets/choose_report.png)
 
-* Experience Manager Assets unterstützt jetzt zusätzlich zum Zugriffsschlüssel [SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Bulk-Import-Tool.
+* Experience Manager Assets unterstützt jetzt zusätzlich zum Zugriffsschlüssel [SAS-Token](/help/assets/add-assets.md#asset-bulk-ingestor) für die Authentifizierung beim Herstellen einer Verbindung zur Azure Blob Storage-Datenquelle für die Aufnahme von Assets mit dem Massenimport-Tool.
 
-* Die verbesserte Verwaltung von CMYK-Bildern im Asset Compute erlaubt es Ihnen, Smarte Zuschnitte und Smart-Tags für CMYK-Bilder zu generieren.
+* Die verbesserte Verwaltung von CMYK-Bildern im Asset Compute erlaubt es Ihnen, intelligenten Zuschnitt und Smart-Tags für CMYK-Bilder zu generieren.
 
 ### Neue Funktionen in der Vorabversion von [!DNL Assets] {#prerelease-features-assets}
 
-* Experience Manager Assets unterstützt jetzt die [groß angelegte Erfassung von Assets aus Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) durch das Tool für den Massenimport.
+* Experience Manager Assets unterstützt jetzt die [groß angelegte Aufnahme von Assets aus Google Cloud Platform](/help/assets/add-assets.md#asset-bulk-ingestor) durch das Tool für den Massenimport.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

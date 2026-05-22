@@ -6,8 +6,8 @@ role: Admin
 exl-id: d5eb6d9e-308f-4a51-8bcf-b8077b5bec82
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 59%
+source-wordcount: '2008'
+ht-degree: 62%
 
 ---
 
@@ -164,7 +164,7 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 
 ### AEM-Protokollweiterleitung an weitere Ziele {#log-forwarding}
 
-Es ist jetzt möglich, AEM-Protokolle an Amazon S3, Sumo Logic, Dynatrace und Ihr eigenes New Relic-Konto (nicht das von Adobe bereitgestellte Konto) weiterzuleiten. Beachten Sie, dass AEM-Protokolle (einschließlich Apache/Dispatcher) für diese Protokollierungsziele unterstützt werden, jedoch keine CDN-Protokolle.
+Es ist jetzt möglich, AEM-Protokolle an Amazon S3, Sumo Logic, Dynatrace und Ihr eigenes New Relic-Konto (nicht das von Adobe bereitgestellte Konto) weiterzuleiten. Beachten Sie, dass zwar AEM-Protokolle (einschließlich Apache/Dispatcher) für diese Protokollierungsziele unterstützt werden, jedoch keine CDN-Protokolle.
 
 Siehe den vollständigen Satz von [unterstützten Protokollweiterleitungszielen](/help/implementing/developing/introduction/log-forwarding.md).
 

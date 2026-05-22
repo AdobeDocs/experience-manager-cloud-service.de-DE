@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1458'
 ht-degree: 100%
 
 ---
@@ -68,9 +68,9 @@ Mit Experience Manager Assets können Sie jetzt über die Benutzeroberfläche f�
 
 [!DNL Experience Manager Assets] generiert jetzt eine [Vorschau von Miniaturansichten für gängige 3D-Dateiformate](/help/assets/file-format-support.md), einschließlich gLB, USDz, FBX, 3DS, OBJ und SBSAR. Wenn diese Dateien hochgeladen werden, werden automatisch Miniaturansichten generiert.
 
-**Dynamic Media: Aktualisierte Felder für smartes Zuschneiden im Bildprofil**
+**Dynamic Media: Aktualisierte Felder für intelligenten Zuschnitt im Bildprofil**
 
-Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines smarten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de#crop-options).
+Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines intelligenten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de#crop-options).
 
 ### Neue Funktionen in der Assets-Ansicht {#assets-view-features}
 
@@ -102,9 +102,9 @@ Die Assets-Ansicht unterstützt jetzt das [Anzeigen der am häufigsten gesuchten
 
 ![Aufgaben in Workspace](/help/assets/assets/insights-top-searches.png)
 
-**Verbesserungen bei Metadaten-Formularen**
+**Verbesserungen bei Metadatenformularen**
 
-Die Assets-Ansicht ermöglicht es Ihnen jetzt, [Eigenschaftenkomponenten von Text und Dropdown-Listen mit mehreren Werten](/help/assets/metadata-assets-view.md#property-components) zu den Metadaten-Formularen hinzuzufügen.
+Die Assets-Ansicht ermöglicht es Ihnen jetzt, [Eigenschaftenkomponenten von Text und Dropdown-Listen mit mehreren Werten](/help/assets/metadata-assets-view.md#property-components) zu den Metadatenformularen hinzuzufügen.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

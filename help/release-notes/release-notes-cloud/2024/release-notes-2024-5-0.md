@@ -6,8 +6,8 @@ role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 98%
+source-wordcount: '2119'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2024.5.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version vom Mai 2024:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448071?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3448071?captions=ger&quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -105,7 +105,7 @@ Mit Experience Manager Assets können Sie jetzt über die Asset-Ansicht schnell 
 
 -->
 
-### Neue, vorab veröffentlichte Funktionen in AEM Forms {#forms-new-prerelease-features}
+### Neue, Vorabversionsfunktionen in AEM Forms {#forms-new-prerelease-features}
 
 #### Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare
 
@@ -216,7 +216,7 @@ Zuvor war ein Support-Ticket erforderlich, um den X-AEM-Edge-Key zu generieren, 
 
 #### Server-seitige Weiterleitungen (Early-Adopter-Programm) {#server-side-redirects-early-adopter}
 
-Konfigurieren Sie Server-seitige 301/302-Weiterleitungen in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) mehrere weitere Funktionen bereits verfügbar sind, einschließlich Anfrage- und Antworttransformationen und Routing des Traffics zu Nicht-AEM-Sites.
+Konfigurieren Sie Server-seitige 301/302-Weiterleitungen in der Quell-Code-Verwaltung und stellen Sie sie im CDN bereit. [Weitere Informationen](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Beachten Sie, dass im Zusammenhang mit der [CDN-Konfiguration](/help/implementing/dispatcher/cdn-configuring-traffic.md) bereits mehrere andere Funktionen verfügbar sind, darunter Anfrage- und Antworttransformationen und das Routing von Traffic zu externen AEM-Sites.
 
 #### Warnhinweise zu Traffic-Filterregeln (Early-Adopter-Programm) {#traffic-filter-rules-alerts-early-adopter}
 
@@ -226,7 +226,7 @@ Nehmen Sie am Early-Adopter-Programm teil, damit Sie benachrichtigt werden, soba
 
 #### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm). {#apache-rewritemaps-early-adopter}
 
-Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository platziert werden, und laden sie, ohne dass eine Pipeline auf der Web-Ebene ausgeführt werden muss. Dies eröffnet Business-Anwenderinnen und -Anwendern die Möglichkeit, Umleitungen entweder mithilfe einer Tabelle oder einer Benutzeroberfläche zu deklarieren, z. B. wie durch den ACS Commons Redirect Map Manager bereitgestellt oder im Rahmen einer Kundenanwendung erstellt. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+Ähnlich wie bei AEM 6.5 erfassen Apache/Dispatcher Rewrite-Zuordnungen, die an einem bestimmten Speicherort im Veröffentlichungs-Repository platziert werden, und laden sie, ohne dass eine Pipeline-Ausführung auf der Web-Ebene nötig ist. Dies eröffnet Business-Anwenderinnen und -Anwendern die Möglichkeit, Umleitungen entweder mithilfe einer Tabelle oder einer Benutzeroberfläche zu deklarieren, z. B. wie durch den ACS Commons Redirect Map Manager bereitgestellt oder im Rahmen einer Kundenanwendung erstellt. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### Edge Side Includes (ESI) für das Laden dynamischer Inhalte (Early-Adopter-Programm) {#esi-early-adopter}
 
@@ -235,9 +235,9 @@ Das von Adobe verwaltete CDN unterstützt jetzt [Edge Side Includes (ESI)](/help
 ## [!DNL Experience Manager] Guides {#guides}
 
 * **Veröffentlichen eines Themas oder seiner Elemente in einem Experience Fragment**
-Sie können jetzt mit Experience Manager Guides ein Thema oder dessen Elemente in einem Experience Fragment veröffentlichen. Ein Experience Fragment ist eine modulare Inhaltseinheit, die sowohl Inhalt als auch Layout integriert. Experience Fragments können Ihnen insbesondere beim Erstellen konsistenter und ansprechender Erlebnisse helfen.
+Jetzt können Sie mit Experience Manager Guides ein Thema oder seine Elemente in einem Experience Fragment veröffentlichen. Ein Experience Fragment ist eine modulare Inhaltseinheit, die sowohl Inhalt als auch Layout integriert.  Experience Fragments können Ihnen insbesondere beim Erstellen konsistenter und ansprechender Erlebnisse helfen.
 * **Möglichkeit, die Themen-Asset-Metadaten an die native PDF-Ausgabe zu übergeben**
-Sie können die Themen-Asset-Metadaten beim Generieren der nativen PDF-Ausgabe hinzufügen. Mit dieser Funktion können Sie bestimmte Metadaten für verschiedene Themen wie Thementitel und Autorin bzw. Autor zu den Kopf- und Fußzeilen der Themenseite hinzufügen.
+Sie können beim Generieren der nativen PDF-Ausgabe die Themen-Asset-Metadaten hinzufügen. Mit dieser Funktion können Sie bestimmte Metadaten für verschiedene Themen wie Thementitel und Autorin bzw. Autor zu den Kopf- und Fußzeilen der Themenseite hinzufügen.
 
 Weitere Informationen zu den neuen und verbesserten Funktionen sowie zu den Problemen, die in der Version behoben wurden, finden Sie in der [Roadmap für Experience Manager Guides-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 

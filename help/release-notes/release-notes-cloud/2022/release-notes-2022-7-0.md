@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 27%
+source-wordcount: '985'
+ht-degree: 30%
 
 ---
 
@@ -33,7 +33,7 @@ Die nächste Version (2022.8.0) ist für den 1. September 2022 geplant.
 
 Eine Zusammenfassung der in der Version 2022.7.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version Juli 2022:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454205/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3454205/?captions=ger&quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -41,10 +41,10 @@ Eine Zusammenfassung der in der Version 2022.7.0 hinzugefügten Funktionen finde
 
 * Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) unterstützt jetzt [Tastaturbefehle](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM as a Cloud Service [Web-optimierte Bildbereitstellung](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) ermöglicht es, die Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP erheblich zu verbessern. Dieser neue Service bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. In allen Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) können Sie diesen Service verwenden und Bilder als WebP durch Klicken auf eine Option in der Richtlinie der Bildkomponente bereitstellen.
+* Mit der Web-optimierten [&#x200B; von AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=de) die Seitengeschwindigkeit durch die Bereitstellung von Formaten wie WebP erheblich verbessert werden. Dieser neue Service bietet außerdem flexiblere Optionen zur Größenanpassung und Umwandlung von Bildern. In allen Versionen der [Kernbildkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) können Sie diesen Service verwenden und Bilder als WebP durch Klicken auf eine Option in der Richtlinie der Bildkomponente bereitstellen.
 
-* AEM-Personalisierungsaktivitäten können jetzt Experience Fragments anstelle unserer veralteten Angebote verwenden. Diese Funktion:
-   * ermöglicht einen Migrationspfad, bei dem AEM-Inhalte Experience Fragment-Angebote anstelle der veralteten Bibliotheksangebote fördern, um entsprechend gestaltete Inhalte bereitzustellen, die mit der künftigen Personalisierung in Einklang stehen.
+* Bei AEM-Personalisierungsaktivitäten können jetzt Experience Fragments anstelle der bisherigen Angebote verwendet werden. Diese Funktion:
+   * Ermöglicht einen Migrationspfad, bei dem AEM-Inhalte Experience Fragment-Angebote anstelle der veralteten Bibliotheksangebote fördern, um entsprechend gestaltete Inhalte bereitzustellen, die mit der künftigen Personalisierung in Einklang stehen.
    * verhindert, dass Inhaltsautorinnen und -autoren versehentlich unformatierte Inhalte auf ihrer Website bereitstellen.
    * ermöglicht die Konvertierung des Targeting-Modus einer beliebigen Komponente in ein Experience Fragment (sowohl JSON- als auch HTML-Typen), das bearbeitbare Vorlagen verwendet.
 
@@ -82,7 +82,7 @@ Sie können Adobe Experience Manager Assets jetzt so konfigurieren[&#x200B; dass
 
 * **[DDX aufrufen - Ein AEM-Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Dokumentbeschreibungs-XML (DDX) ist eine deklarative Markup-Sprache, deren Elemente Bausteine von Dokumenten darstellen. Diese Bausteine umfassen PDF-Seiten, XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX-Dokumente sind Vorlagen für die Dokumente und beschreiben die gewünschten Eigenschaften von Quelldokumenten, die in den Zieldokumenten angezeigt werden sollen. Eine einzelne DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können den Schritt zum Aufrufen eines AEM-Workflows verwenden, um verschiedene Vorgänge auszuführen, z. B. das Zusammenstellen von Dokumenten, das Erstellen und Ändern von Acrobat und XFA Forms und andere Vorgänge, die in der Dokumentation [DDX-Referenz](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) beschrieben sind.
 
-* **[Nach PDF/A konvertieren - Ein AEM-Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A ist ein Archivierungsformat für die Langzeitarchivierung des Dokumentinhalts, bei dem alle Schriftarten eingebettet sind und die Datei unkomprimiert ist. Jetzt können Sie den Schritt Nach PDF/A konvertieren in einem AEM-Workflow verwenden, um Ihre Dokumente oder Dateien in jedem Format in das PDF/A-Format zu konvertieren.
+* **[Nach PDF/A konvertieren - Ein AEM-Workflow-Schritt](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A ist ein Archivierungsformat für die Langzeitarchivierung des Dokumentinhalts, bei dem alle Schriftarten eingebettet sind und die Datei unkomprimiert ist. Jetzt können Sie den Schritt Nach PDF/A konvertieren in einem AEM-Workflow verwenden, um Ihre Dokumente oder Dateien in jedem Format in PDF/A zu konvertieren.
 
 
 ## CIF-Add-on {#cloud-services-cif}

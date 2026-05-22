@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1222'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Sehen Sie sich das Übersichtsvideo zur Version April 2023 an, das eine Zusammen
 ### Neue Funktionen in [!DNL Experience Manager Sites] {#sites-features}
 
 * Exportieren Sie Inhaltsfragmente aus AEM as a Cloud Service in Adobe Target im JSON-Format und erstellen Sie entsprechende JSON-Angebote in Target.
-* Die Unterstützung für Paginierung und Sortierung in GraphQL sowie interne Caching-Verbesserungen verbessern jetzt die Leistung von entkoppelten Client-Anwendungen beim Abrufen großer Inhaltssätze aus AEM mithilfe komplexer GraphQL-Abfragen und -Filter.
+* Die Unterstützung für Paginierung und Sortierung in GraphQL sowie interne Caching-Verbesserungen verbessern jetzt die Leistung von entkoppelten Client-Anwendungen beim Abrufen großer Content-Sets aus AEM mithilfe komplexer GraphQL-Abfragen und -Filter.
 
 ### Neue Funktionen in der Vorabversion von [!DNL Experience Manager Sites] {#prerelease-sites}
 
@@ -52,7 +52,7 @@ Sehen Sie sich das Übersichtsvideo zur Version April 2023 an, das eine Zusammen
 
 ### Neue Funktionen in [!DNL Assets] {#assets-features}
 
-* Unterstützung für WebP-Bilder hinzugefügt, um Metadaten automatisch zu extrahieren sowie Miniaturansichten und benutzerdefinierte Ausgabeformate zu generieren. Die Funktion „Smart Tags“ wird jetzt auch für diese Dateien unterstützt. Dynamic Media-Funktionen werden für WebP als Eingabeformat nicht unterstützt.
+* Unterstützung für WebP-Bilder hinzugefügt, um Metadaten automatisch zu extrahieren sowie Miniaturansichten und benutzerdefinierte Ausgabeformate zu generieren. Die Funktion „Smart-Tags“ wird jetzt auch für diese Dateien unterstützt. Dynamic Media-Funktionen werden für WebP als Eingabeformat nicht unterstützt.
 
 * [Verbesserungen des Sucherlebnisses](/help/assets/search-assets.md#aftersearch): Sie können jetzt schnell die folgenden Vorgänge für die Assets ausführen, die in den Suchergebnissen angezeigt werden:
 
@@ -72,7 +72,7 @@ Sehen Sie sich das Übersichtsvideo zur Version April 2023 an, das eine Zusammen
 
 ### Funktion der [!DNL Assets]-Vorabversion {#prerelease-feature-assets}
 
-* Dynamic Media: Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines smarten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de#crop-options).
+* Dynamic Media: Die Benutzeroberfläche für einige Felder mit Bezug auf smartes Zuschneiden in einem Bildprofil wurde aktualisiert und spiegelt jetzt die aktuellen Richtlinien zum Definieren eines intelligenten Zuschnitts wider. Siehe [Optionen für das Zuschneiden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=de#crop-options).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
