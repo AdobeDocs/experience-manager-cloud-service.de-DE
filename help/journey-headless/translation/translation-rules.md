@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 100%
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Im vorherigen Dokument der Tour durch die AEM Headless-Übersetzung, [Konfigurie
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Nachdem Sie Ihre Integration eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um herauszufinden, welche Inhalte übersetzt werden müssen.
+Nachdem Sie Ihre Integration eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, nämlich herauszufinden, welche Inhalte übersetzt werden müssen.
 
 >[!CAUTION]
 >

@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 100%
+source-wordcount: '1379'
+ht-degree: 99%
 
 ---
 
@@ -193,7 +193,7 @@ query {
 }
 ```
 
-Eine etwas komplexere Abfrage ist es, alle Personen auszuwählen, die nicht den Namen „Jobs“ haben. Dadurch wird unter allen Personen nach den Personen gefiltert, die nicht den Namen „Jobs“ haben. Dies wird mit dem Operator EQUALS_NOT erreicht (es gibt viele weitere):
+Eine etwas komplexere Abfrage wäre, alle Personen auszuwählen, die nicht den Namen „Jobs“ haben. Dadurch wird unter allen Personen nach den Personen gefiltert, die nicht den Namen „Jobs“ haben. Dies wird mit dem Operator EQUALS_NOT erreicht (es gibt viele weitere):
 
 ```xml
 query {
@@ -215,7 +215,7 @@ query {
 }
 ```
 
-Sie können auch komplexere Abfragen erstellen. Fragen Sie z. B. ab nach allen Firmen, die mindestens einen Mitarbeiter mit dem Namen „Smith“ haben. Diese Abfrage veranschaulicht die Filterung nach allen Personen namens „Smith“, wobei Informationen aus verschachtelten Fragmenten zurückgegeben werden.
+Sie können auch komplexere Abfragen erstellen. Fragen Sie z. B. alle Unternehmen ab, die mindestens einen Mitarbeiter mit dem Namen „Smith“ beschäftigen. Diese Abfrage veranschaulicht die Filterung nach allen Personen namens „Smith“, wobei Informationen aus verschachtelten Fragmenten zurückgegeben werden.
 
 ```xml
 query {
@@ -263,7 +263,7 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
 * [GraphQL.org](https://graphql.org)
    * [Schemata](https://graphql.org/learn/schema/)
    * [Variablen](https://graphql.org/learn/queries/#variables)
-   * [GraphQL-Java-Bibliotheken](https://graphql.org/code/#java)
+   * [GraphQL Java-Bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Verwendung von GraphQL mit AEM](/help/headless/graphql-api/content-fragments.md)
    * [Aktivieren des GraphQL-Endpunkts](/help/headless/graphql-api/graphql-endpoint.md)

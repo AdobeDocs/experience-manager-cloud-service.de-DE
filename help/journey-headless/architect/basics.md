@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 100%
+source-wordcount: '944'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Ein Inhaltsfragmentmodell beschreibt eine Entität.
 Innerhalb eines Modells:
 
 1. Mit **Datentypen** können Sie die einzelnen Attribute definieren.
-Definieren Sie beispielsweise das Feld mit dem Namen eines Lehrers als **Text** und dessen Dienstjahre als **Zahl**.
+Definieren Sie beispielsweise das Feld mit dem Namen einer Lehrkraft als **Text** und ihre Dienstjahre als **Zahl**.
 1. Mit den Datentypen **Inhaltsreferenz** und **Fragmentreferenz** können Sie Beziehungen zu anderen Inhalten in AEM erstellen.
 1. Mit dem Datentyp **Fragmentreferenz** können Sie mehrere Ebenen der Struktur umsetzen, indem Sie die Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Inhaltsmodellierung von entscheidender Bedeutung.
 
@@ -103,11 +103,11 @@ AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellier
 Zwei Datentypen bieten Verweise auf Inhalte außerhalb eines bestimmten Fragments:
 
 * **Inhaltsreferenz**/**Inhaltsreferenz (UUID)**
-Diese bietet eine einfache Referenz zu anderen Inhalten beliebigen Typs.
+Dies bietet einen einfachen Verweis auf andere Inhalte beliebigen Typs.
 Sie können beispielsweise auf ein Bild an einer bestimmten Stelle verweisen.
 
 * **Fragmentreferenz**/**Fragmentreferenz (UUID)**
-Diese bietet Verweise auf andere Inhaltsfragmente.
+Dies bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
    * Direktes Bearbeiten des referenzierten Fragments
@@ -140,7 +140,7 @@ Zum Beispiel könnten bei Ihnen die folgenden Inhaltsfragmentmodelle definiert s
 * Person
 * Auszeichnungen
 
-Es scheint ziemlich einfach, aber ein Unternehmen hat sowohl einen CEO als auch Angestellte …und dies sind alles Leute, die jeweils als Person definiert sind.
+Es scheint ziemlich einfach zu sein, aber ein Unternehmen hat sowohl einen CEO als auch Mitarbeiter…. und das sind alles Personen, die jeweils als Person definiert sind.
 
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 
