@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: b6a8b340f89e079047db668d6418e7952185a41f
+source-git-commit: 1da3f7ec7d56ec0463851aac8f6e14967f881c4f
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 21. Mai 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 28. Mai 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -26,6 +26,12 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 >
 >Der Inhalt der aktuellen Version sowie das Veröffentlichungsdatum können sich ändern.
 
+## Künftige Funktionen {#upcoming-features}
+
+* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([ Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
+   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) ](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
+   * Die Schaltfläche wird nur angezeigt, wenn die Remote[Seite über eine (Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` verfügt und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
+
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Kleinere Verbesserungen und Fehlerbehebungen
+* Die standardmäßige Hintergrundfarbe der Arbeitsfläche für die Bearbeitung ist jetzt weiß (#FFFFFF), wenn das Programm keine eigene Hintergrundfarbe festlegt.
