@@ -7,7 +7,7 @@ role: Admin
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '486'
 ht-degree: 84%
 
 ---
@@ -53,7 +53,7 @@ Sie können jetzt den Katalog mit den Staging-Daten durchsuchen. Wenn Sie eine S
 
 ## AEM-Launches {#launches}
 
-Mit AEM-Launches können Sie Inhalte für Staging-Produktdaten erstellen. Wenn Sie nicht mit Launches vertraut sind, folgen Sie dem Dokumentations-Link unter dem Abschnitt [Zusätzliche Ressourcen“.](#additional-resources) Das Launch-Datum wird dann verwendet, um auf Staging-Produktdaten zuzugreifen.
+Mit AEM-Launches können Sie Inhalte für Staging-Produktdaten erstellen. Wenn Sie nicht mit Launches vertraut sind, folgen Sie dem Dokumentations-Link unter dem Abschnitt [Zusätzliche Ressourcen“](#additional-resources) Das Launch-Datum wird dann verwendet, um auf Staging-Produktdaten zuzugreifen.
 
 ![Staging-Launch](assets/staged-launch.png)
 
@@ -68,7 +68,7 @@ Nachdem Sie nun diesen Teil der Tour abgeschlossen haben, sollten Sie:
 * die Konzepte des Staging-Produktkatalogs und Inhalts im Zusammenhang mit Launches verstehen
 * Zugriff auf Staging-Produktkatalogdaten über das Produkt-Cockpit und den Editor haben
 
-Sie können jetzt &quot;[&quot;-Erlebnisse verwalten.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) stehen für AEM Content und Commerce jedoch viele zusätzliche Optionen zur Verfügung. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
+Sie können jetzt (Produkterlebnisse[ verwalten](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) AEM Content und Commerce verfügen jedoch über viele zusätzliche Optionen. Schauen Sie sich einige der zusätzlichen Ressourcen an, die im Abschnitt [Zusätzliche Ressourcen](#additional-resources) verfügbar sind, um mehr über die Funktionen zu erfahren, die Sie während dieser Tour gesehen haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

@@ -7,7 +7,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '928'
 ht-degree: 99%
 
 ---
@@ -41,7 +41,7 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
 
    * [Workfront Cluster-IPs](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=de#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Für Details zum IP-Cluster in [!DNL Workfront] navigieren Sie zu **[!UICONTROL Einrichtung]** > **[!UICONTROL System]** > **[!UICONTROL Kundeninformationen]**.
 
-   * [Workfront Ereignisabonnement-API-IPs](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=de)
+   * [Workfront-Ereignisabonnement-APIs](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=de)
 
    >[!IMPORTANT]
    >
@@ -53,7 +53,7 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
+   >
    >    ```
 
 1. Stellen Sie sicher, dass die folgenden Überlagerungen nicht im [!DNL Experience Manager]-Repository vorhanden sind. Wenn Sie bereits vorhandene Überlagerungen auf diesen Pfaden haben, müssen Sie entweder die Überlagerungen entfernen oder das Delta der Änderungen zwischen den beiden Pfaden zusammenführen:

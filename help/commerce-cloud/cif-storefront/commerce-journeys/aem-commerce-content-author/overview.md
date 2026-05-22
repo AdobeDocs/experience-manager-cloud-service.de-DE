@@ -7,7 +7,7 @@ role: Admin
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 94%
 
 ---
@@ -25,7 +25,7 @@ Diese Anleitung führt Sie durch die wichtigsten AEM Content and Commerce-Author
 * Beginnen Sie mit den Grundlagen des AEM-CIF-Authorings
 * Erstellen Sie Produktkatalogerlebnisse mit individuellen Vorlagen und Inhalten
 * Verwalten Sie gestaffelte Produktkatalogerlebnisse
-* Reichern Sie Produktdaten mithilfe von Tools für die Verwaltung von Produkterlebnissen mit Inhalten an 
+* Reichern Sie Produktdaten mithilfe von Tools für die Verwaltung von Produkterlebnissen mit Inhalten an
 
 ## AEM-Dokumentations-Touren {#documentation-journeys}
 

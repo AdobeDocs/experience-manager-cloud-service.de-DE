@@ -6,7 +6,7 @@ exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '577'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Gehen Sie wie folgt vor, um Benutzende auf eine andere Seite weiterzuleiten:
 
 1. Wechseln Sie in Microsoft SharePoint oder Google Workspace zum Projektordner „Edge Delivery“ und öffnen Sie die Tabelle.
 1. Fügen Sie die URL in die Spalte `value` für den Feldtyp `submit` in der Tabelle ein, um Benutzende bei erfolgreicher Übermittlung des Formulars weiterzuleiten.
-Um die Seite auf eine andere Seite umzuleiten, verwenden Sie die URL der Seite [Edge Delivery-Dokumentation](https://www.aem.live/docs/) 
+Um die Seite auf eine andere Seite umzuleiten, verwenden Sie die URL der Seite [Edge Delivery-Dokumentation](https://www.aem.live/docs/)
 
    ![Umleitungs-URL für Dankesnachricht](/help/edge/docs/forms/assets/thankyou-redirecturl.png)
 
