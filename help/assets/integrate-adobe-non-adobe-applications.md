@@ -203,7 +203,7 @@ Die folgende Tabelle zeigt die Unterstützung der Content Advisor-Funktionen in 
 | Adobe Workfront-Planung | ✓ | ✓ | − | ✓ |
 | [AEM Assets-Ansicht](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
 | [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
-| [Adobe Journey Optimizer (AJO) für B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
+| [Adobe Journey Optimizer (AJO) für B2C](http://experienceleague.adobe.com/de/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
 
 ## Unterstützung von Content Advisor-Funktionen in Nicht-Adobe-Anwendungen {#content-advisor-feature-support-non-adobe-applications}
 
