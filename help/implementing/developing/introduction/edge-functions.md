@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 1fdf9c61e611db978706a066194448ec3750024a
+source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 4%
+source-wordcount: '1261'
+ht-degree: 3%
 
 ---
 
@@ -82,7 +82,7 @@ AEM Edge-Funktions-Services werden in einer YAML-Konfigurationsdatei deklariert 
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [&#x200B; zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [ zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
 
 >[!NOTE]
 >
@@ -191,6 +191,39 @@ Das von Adobe verwaltete CDN stellt keinen Remote-Debugger bereit, stellt jedoch
 ```bash
 aio aem edge-functions tail-logs <function-name>
 ```
+
+## Caching und Cache-Bereinigung {#caching}
+
+Edge-Funktionen können die Ursprungslast erheblich reduzieren und die Antwortzeiten verbessern, indem Daten am Edge zwischengespeichert werden. Für das Caching ist jedoch ein absichtliches Design erforderlich - insbesondere in Edge-Funktionen **bei denen (zwei unabhängige Cache** Ebenen) involviert sind:
+
+```
+Browser → AEM CDN (CDN Cache) → AEM Edge Functions (Fetch Cache) → Backend (AEM, APIs, etc.)
+```
+
+Bevor Sie das Caching konfigurieren, überlegen Sie, wie sich Ihr Inhalt verhält:
+
+- **Wirklich eindeutige Inhalte pro Anfrage** (Sitzungs-Token, Echtzeit-Preise für einen bestimmten Benutzer) sollten die Zwischenspeicherung umgehen, um zu vermeiden, dass falsche Ergebnisse bereitgestellt werden.
+- **Kohortenbasierte Personalisierung** (Inhalte, die nach Region, Gerätetyp oder Zielgruppensegment zugeschnitten sind) kann oft mit kürzeren TTLs oder `Vary`-Headern zwischengespeichert werden, da viele Benutzende dieselbe Variante nutzen.
+- **Stabiler, freigegebener Inhalt** (Produktkataloge, CMS-Seiten, API-Antworten, die sich nach einem bekannten Zeitplan ändern) profitiert von aggressivem Caching mit expliziter Invalidierung über Ersatzschlüssel.
+- **Wenn wir das in beide Richtungen falsch machen, hat das Konsequenzen.** Das Übercaching verursacht veraltete Inhaltsfehler, die auf zwei Cache-Ebenen schwer zu diagnostizieren sind. Die unzureichende Zwischenspeicherung vereitelt den Zweck der Leistungs- und Ursprungs-Abladung bei der Verwendung von Edge-Funktionen überhaupt.
+
+Da das CDN und der interne Abrufcache der Edge-Funktion unabhängig voneinander arbeiten, erfordert eine Änderung der zugrunde liegenden Daten die bewusste Invalidierung **beider** Ebenen. Das Verständnis dieser Architektur ist für eine zuverlässige Cache-Verwaltung unerlässlich.
+
+Detaillierte technische Anleitungen zum Konfigurieren des Caching-Verhaltens, zum Steuern der Cache-Lebensdauer, zum Verwenden von Ersatzschlüsseln und zum Bereinigen von zwischengespeicherten Inhalten finden Sie unter [Caching in AEM Edge Functions](/help/implementing/developing/introduction/edge-functions-caching.md).
+
+## Einschränkungen {#limitations}
+
+Jeder Edge-Funktionsaufruf wird innerhalb einer Sandbox mit Ressourcenbeschränkungen ausgeführt, die von der zugrunde liegenden Rechenplattform erzwungen werden.
+
+### Maximal ausgehende Abrufaufrufe pro Aufruf {#max-fetch-calls}
+
+AEM Edge-Funktionen erzwingen eine feste Grenze von **32 Backend-Anfragen pro Ausführung** (d. h. pro eingehender Anfrage, die von Ihrer Funktion verarbeitet wird). Sobald diese Grenze erreicht ist, schlagen alle weiteren `fetch()`-Aufrufe mit dem folgenden Fehler fehl:
+
+```
+Requested backend named '…' does not exist
+```
+
+Wenn dieser Fehler angezeigt wird und Ihre ursprüngliche Konfiguration korrekt ist, besteht die wahrscheinlichste Ursache darin, dass das Kontingent für die Backend-Anfrage pro Aufruf ausgeschöpft wurde. Siehe [Fastly Compute Resource Limits](https://docs.fastly.com/products/compute-resource-limits#default-limits) für die vollständige Liste der Platform Limits.
 
 ## Konfigurationsreferenz {#configuration-reference}
 
