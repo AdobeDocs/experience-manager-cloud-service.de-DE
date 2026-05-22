@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Der Content Transformer kann Ihnen bei der Lösung von Problemen helfen, die unt
 | DOPI | deprecated.ordered.index | Entfernen Sie die veralteten Indizes. |
 | OAUI | non.migrated.oauth.users | Entfernen Sie diese Benutzerinnen und Benutzer, um sicherzustellen, dass sie nicht zu AEM as a Cloud Service migriert werden. |
 | PCX | page.complexity.medium <br> page.complexity.high | Löschen Sie die Seiten bzw. untergeordneten Elemente oder verschieben Sie sie an einen anderen Ort, um sicherzustellen, dass sie nicht zu AEM as a Cloud Service migriert werden. |
-| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Entfernen Sie die erstellten Replikationsagenten. <br> ODER <br> Entfernen Sie die geänderten/hinzugefügten Eigenschaften. |
+| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Entfernen Sie die erstellten Replikationsagenten. <br> ODER <br> Entfernen der geänderten/hinzugefügten Eigenschaften. |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | Wechseln Sie zum richtigen Speicherort, um Probleme während der Migration zu vermeiden. |
 | URS | node.size | Verschieben Sie die Knoten vorübergehend in`/etc/packages/content-transformation/paths`, um sicherzustellen, dass sie nicht zu AEM as a Cloud Service migriert werden. |
 

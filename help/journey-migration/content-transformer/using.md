@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '642'
+ht-degree: 92%
 
 ---
 
@@ -25,20 +25,20 @@ Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Verwendung von Cont
 
 ## Verfügbarkeit {#availability-ct}
 
-Der Content Transformer ist mit dem [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) gebündelt, das als Zip-Datei vom Software Distribution-Portal heruntergeladen werden kann. Sie können das Paket mit Package Manager auf Ihrer Quellinstanz von (AEM) installieren.
+Der Content Transformer ist mit dem [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) gebündelt, das als Zip-Datei vom Software Distribution-Portal heruntergeladen werden kann. Sie können das Paket mit dem Paket-Manager auf Ihrer Quellinstanz von (AEM) installieren.
 
 >[!NOTE]
 >Der Content Transformer ist mit dem Content Transfer Tool v2.0.20 oder höher verfügbar.
 
 ## Öffnen von Content Transformer {#opening-ct}
 
-1. Melden Sie sich bei der Quell-AEM-Instanz als Admin an und rufen Sie die folgende Startseite auf: https://host:port/aem/start.html
+1. Melden Sie sich bei der AEM-Quellinstanz als Administrator an und gehen Sie zur Startseite: https://host:port/aem/start.html.
 1. Navigieren Sie zu Tools > Vorgänge > Inhaltsmigration
 
    ![Bild](/help/journey-migration/content-transformer/assets/ct-1.png)
 
    >[!NOTE]
-   > Stellen Sie sicher, dass Sie den BPA-Bericht bereits ausgeführt haben, und überprüfen Sie ihn mit der URL http://host:port/apps/best-practices-analyzer/content/BestPracticesReport.html.
+   > Stellen Sie sicher, dass Sie den BPA-Bericht bereits ausgeführt haben, und überprüfen Sie ihn mit der URL http://host:port/apps/best-practices-analyzer/content/BestPracticesReport.html
 
 1. Klicken Sie auf die Karte mit dem Titel **Content Transformer für BPA-Bericht**
 
@@ -60,7 +60,7 @@ Der Content Transformer ist mit dem [Content Transfer Tool](/help/journey-migrat
    > Bei Verwendung des Verschiebevorgangs wird empfohlen, alle Pfade in nur einen Ordner zu verschieben (z. B. unter `/etc/packages/content-transformation/paths`). Wenn also die Backup-Pakete installiert sind, um die Instanz wieder in den Originalzustand zu versetzen, kann der Ordner (`/etc/packages/content-transformation/paths`) mithilfe des Vorgangs zum Entfernen gelöscht werden, um die Repository-Größe zu reduzieren.
 
    ![image](/help/journey-migration/content-transformer/assets/ct-5.png)
-   ![image](/help/journey-migration/content-transformer/assets/ct-6.png)
+   ![Bild](/help/journey-migration/content-transformer/assets/ct-6.png)
 
    >[!NOTE]
    > Jeder Vorgang, der den Quellinhalt ändern kann (`move`/`remove`/`rename`), erstellt vor der Umwandlung standardmäßig ein Backup-Paket der Quellpfade unter `/etc/packages/content-transformation`. Obwohl jedes Vorgangsdialogfeld über eine Option zum Deaktivieren/Aktivieren der Erstellung von Backup-Paketen verfügt, wird dringend empfohlen, die Erstellung von Paketen immer zu aktivieren.
@@ -71,4 +71,4 @@ Der Content Transformer ist mit dem [Content Transfer Tool](/help/journey-migrat
    > Löschen Sie nicht `/etc/packages/content-transformation`, da dies der Speicherort ist, an dem sich die Backup-Pakete befinden. Nur wenn Sie sicher sind, dass Sie diese Pakete nicht mehr benötigen, können Sie diesen Speicherort löschen, um die Repository-Größe zu reduzieren.
 
    ![image](/help/journey-migration/content-transformer/assets/ct-7.png)
-   ![image](/help/journey-migration/content-transformer/assets/ct-8.png)
+   ![Bild](/help/journey-migration/content-transformer/assets/ct-8.png)
