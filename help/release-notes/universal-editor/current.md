@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Version 2026.05.21 des univ
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ba59c47379e9d506813cec8e647b93679bf9815
+source-git-commit: a18a1d09003ef646356abcdd2f37b46616a708a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 28%
@@ -27,3 +27,4 @@ Dies sind die Versionshinweise für die Version vom 21. Mai 2026 des universelle
 ## Neue Funktionen {#what-is-new}
 
 * Kleinere Verbesserungen und Fehlerbehebungen
+

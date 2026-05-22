@@ -5,10 +5,10 @@ feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 49fa36acf11a22480af58aa701bdac676676aadd
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 90%
+source-wordcount: '916'
+ht-degree: 70%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlu
 
 ## <a id="1"></a> Zugriff auf die Assets-Ansicht{#add-UI-Extensibility-in-AEM-Assets-View}
 
-Führen Sie die im folgenden Bild genannten Schritte aus, um auf die [!DNL Assets View] zuzugreifen:
+Führen Sie die in der folgenden Abbildung genannten Schritte aus, um auf die [!DNL Assets View] zuzugreifen:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
 ## Anzeigen von Benutzeroberflächenerweiterungen in [!DNL Assets View] {#ui-extensibility-panel-assets-view}
@@ -59,11 +59,25 @@ Die AEM Assets-Ansicht ermöglicht es Ihnen, die folgenden Aktionen in der Durch
 
 * Passen Sie die Aktionen an, die angezeigt werden, wenn Sie ein oder mehrere Assets in der Aktionsleiste auswählen.
 
-* Passen Sie die Aktionen an, die angezeigt werden, wenn Sie auf Weitere Optionen (…) auf der Asset-Karte klicken.
-
-* Passen Sie die im Kopfzeilenmenü verfügbaren Aktionen an.
+* Passen Sie die Aktionen an, die angezeigt werden, wenn Sie auf Weitere Optionen klicken (…) in der Asset-Karte.
 
 Weitere Informationen finden Sie unter [Ansicht für das Durchsuchen](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Anpassen des Kopfzeilenmenüs in der Assets-Ansicht {#customize-header-menu-assets-view}
+
+In der AEM Assets-Ansicht können Sie das Kopfzeilenmenü anpassen. Das Kopfzeilenmenü bezieht sich auf die Schaltflächen oben rechts in den Bildschirmen Durchsuchen und Details . Sie haben folgende Möglichkeiten:
+
+* Fügen Sie dem Kopfzeilenmenü vor den integrierten Kopfzeilenmenüschaltflächen benutzerdefinierte Schaltflächen hinzu.
+
+* Integrierte Kopfzeilen-Menüschaltflächen für den aktuellen Durchsuchen- oder Detailkontext ausblenden.
+
+* Überschreiben der integrierten Kopfzeilenmenü-Schaltfläche, auf die geklickt wird, sodass Ihre Erweiterung die Aktion anstelle des Standard-Handlers verarbeitet.
+
+In der Durchsuchen-Ansicht ist die Anpassung des Kopfzeilenmenüs kontextabhängig für Assets, Suchen, Papierkorb, kürzlich angezeigte Assets und Sammlungen. Sie können benutzerdefinierte Schaltflächen in jedem dieser Kontexte hinzufügen. Integrierte Schaltflächen wie **Ordner erstellen** und **Assets hinzufügen** (im Asset-Kontext) und **Sammlung erstellen** (in Sammlungen) können ausgeblendet oder überschrieben werden, sofern sie verfügbar sind.
+
+In der Detailansicht können Sie benutzerdefinierte Schaltflächen hinzufügen und integrierte Aktionen wie „Aufgaben zuweisen **und** Herunterladen **anpassen**.
+
+Weitere Informationen, einschließlich API-Referenzen und Code-Beispielen, finden Sie unter [Durchsuchen](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/#custom-header-menu-buttons) und [Detailansicht](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/#custom-header-menu-buttons-in-details-view).
 
 ## Öffnen benutzerdefinierter Dialogfelder in der Assets-Ansicht {#open-custom-dialogs-assets-view}
 
