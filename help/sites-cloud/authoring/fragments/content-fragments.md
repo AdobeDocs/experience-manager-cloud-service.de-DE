@@ -8,7 +8,7 @@ feature: Authoring, Content Fragments
 role: User
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1327'
 ht-degree: 99%
 
 ---
@@ -25,7 +25,7 @@ Inhaltsfragmente in Adobe Experience Manager (AEM) as a Cloud Service werden [al
 >
 >Inhaltsfragmente sind eine **Sites**-Eigenschaft, werden jedoch als **Assets** gespeichert.
 >
->Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**-Konsole verwaltet werden. 
+>Sie werden jetzt hauptsächlich mit der **[Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**-Konsole verwaltet, können jedoch weiterhin über die **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**-Konsole verwaltet werden.
 >
 >Der Standardeditor für [Inhaltsfragmente – Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) ist der neue Editor, auf den sowohl über die **Inhaltsfragmente-** als auch über die **Assets**-Konsole zugegriffen werden kann.
 >
@@ -148,7 +148,7 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 >[!CAUTION]
 >
->Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (d. h. im Inhaltsfragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragmenteditor) zu fehlerhaften/unerwarteten Ergebnissen führen.
 >
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 >
@@ -164,7 +164,7 @@ Wenn Sie Inhalt mit dem [Inhaltsfragment](/help/assets/content-fragments/content
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder zu einer Seite.
+>Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
 
 >[!NOTE]
 >

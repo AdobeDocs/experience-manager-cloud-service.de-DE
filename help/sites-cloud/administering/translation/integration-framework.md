@@ -8,8 +8,8 @@ exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1453'
-ht-degree: 99%
+source-wordcount: '1479'
+ht-degree: 89%
 
 ---
 
@@ -75,11 +75,11 @@ Die Registerkarte **Sites** steuert, wie die Übersetzung von Seiteninhalten dur
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| Übersetzungsmethode | Diese Eigenschaft definiert die Übersetzungsmethode, die das Framework für den Site-Inhalt ausführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung mithilfe der maschinellen Übersetzung in Echtzeit durch.<br>- Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte zugesendet und lässt sie durch Übersetzer übersetzen.<br>- Nicht übersetzen: Inhalte werden nicht zur Übersetzung versendet. Damit können Sie bestimmte Inhaltszweige überspringen, die nicht übersetzt, aber mit den neuesten Inhalten aktualisiert werden sollen. |
+| Übersetzungsmethode | Diese Eigenschaft definiert die Übersetzungsmethode, die das Framework für den Website-Inhalt ausführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung mithilfe der maschinellen Übersetzung in Echtzeit durch.<br>- Menschliche Übersetzung: Inhalte werden an den Übersetzungsanbieter gesendet, damit sie von Übersetzern übersetzt werden.<br>- Nicht übersetzen: Inhalte werden nicht zur Übersetzung gesendet. Damit können Sie bestimmte Inhaltszweige überspringen, die nicht übersetzt, aber mit den neuesten Inhalten aktualisiert werden sollen. |
 | Übersetzungsanbieter | Diese Eigenschaft definiert den Übersetzungsanbieter, der die Übersetzung ausführt. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist. |
 | Inhaltskategorie | (Nur maschinelle Übersetzung) Diese Eigenschaft ist eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
 | Tags übersetzen | Diese Option ermöglicht die Übersetzung von Tags, die der Seite zugeordnet sind. |
-| Seiten-Assets übersetzen | Diese Eigenschaft definiert, wie Assets übersetzt werden, die Komponenten aus dem Dateisystem hinzugefügt oder aus Assets referenziert werden:<br>- Nicht übersetzen: Seiten-Assets werden nicht übersetzt.<br>- Workflow für Sites-Übersetzung verwenden: Assets werden entsprechend der Konfigurationseigenschaften auf der Registerkarte **Sites** bearbeitet.<br>- Workflow für Assets-Übersetzung verwenden: Assets werden entsprechend der Eigenschaften auf der Registerkarte **Assets** bearbeitet. |
+| Seiten-Assets übersetzen | Diese Eigenschaft definiert, wie Assets übersetzt werden, die Komponenten aus dem Dateisystem hinzugefügt oder aus Assets referenziert werden:<br>- Nicht übersetzen: Seiten-Assets sind nicht übersetzt.<br>- Verwenden des Übersetzungs-Workflows für Sites: Assets werden gemäß den Konfigurationseigenschaften auf der Registerkarte **Sites** gehandhabt.<br>- Verwenden des Übersetzungs-Workflows für Assets: Assets werden gemäß den Eigenschaften gehandhabt, die auf der Registerkarte **Assets** konfiguriert sind. |
 | Übersetzung automatisch durchführen | Aktivieren Sie diese Eigenschaft, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen und seinen Umfang zu ermitteln. |
 | Deaktivieren der Übersetzung „Nur Update“. | Wenn diese Option markiert ist, werden beim Aktualisieren des Übersetzungsprojekts alle übersetzbaren Felder zur Übersetzung übermittelt, nicht nur die seit der letzten Übersetzung geänderten Felder. |
 
@@ -91,7 +91,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| Übersetzungsmethode | Diese Eigenschaft wählt die Art der Übersetzung aus, die das Framework für Assets durchführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung sofort mithilfe der maschinellen Übersetzung durch.<br>- Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte automatisch zugesendet und lässt sie durch Übersetzer übersetzen.<br>- Nicht übersetzen: Assets werden nicht zur Übersetzung versendet. |
+| Übersetzungsmethode | Diese Eigenschaft wählt die Art der Übersetzung aus, die das Framework für Assets durchführt:<br>- Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung sofort mithilfe der maschinellen Übersetzung durch.<br>- Menschliche Übersetzung: Die Inhalte werden automatisch an den Übersetzungsanbieter gesendet, damit sie manuell übersetzt werden.<br>-Nicht übersetzen: Assets werden nicht zur Übersetzung gesendet. |
 | Übersetzungsanbieter | Diese Eigenschaft definiert den Übersetzungsanbieter, der die Übersetzung ausführt. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist. |
 | Inhaltskategorie | (Nur maschinelle Übersetzung) Diese Eigenschaft beschreibt den zu übersetzenden Inhalt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
 | Assets übersetzen | Aktivieren Sie diese Eigenschaft, um Assets in das Übersetzungsprojekt einzubeziehen. |
@@ -112,7 +112,7 @@ Die Cloud-Konfiguration des Frameworks für die Übersetzungsintegration legt fe
 
 Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie z. B. die Seite `/content/wknd/language-masters/en/magazine` mit einem Framework für die Übersetzungsintegration verknüpfen, werden die Seite `magazine` und die untergeordneten Seiten entsprechend diesem Framework übersetzt.
 
-Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um Reisen und Lifestyle. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. In einem solchen Fall ist die Stammseite der Website mit einem Framework für die Übersetzungsintegration verknüpft, das vorgibt, dass maschinelle Übersetzung mit der Kategorie „Lifestyle“ angewendet werden soll.  Der Zweig, der das Unternehmen beschreibt, würde dagegen ein Framework nutzen, bei dem maschinelle Übersetzung mit der Kategorie „Allgemein“ angewendet wird.
+Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um Reisen und Lifestyle. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. In einem solchen Fall ist die Stammseite der Website mit einem Framework für die Übersetzungsintegration verknüpft, das vorgibt, dass maschinelle Übersetzung mit der Kategorie „Lifestyle“ angewendet werden soll. Der Zweig, der das Unternehmen beschreibt, würde dagegen ein Framework nutzen, bei dem maschinelle Übersetzung mit der Kategorie „Allgemein“ angewendet wird.
 
 ### Verknüpfen einer Seite mit einem Übersetzungsdienstleister {#associating-a-page-with-a-translation-provider}
 

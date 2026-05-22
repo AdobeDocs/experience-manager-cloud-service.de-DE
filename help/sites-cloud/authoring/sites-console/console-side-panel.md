@@ -8,7 +8,7 @@ feature: Authoring
 role: User
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '844'
 ht-degree: 99%
 
 ---
@@ -63,7 +63,7 @@ Mithilfe des seitlichen Bedienfelds der Inhaltsstruktur in Verbindung mit einer 
 
 ## Timeline {#timeline}
 
-In der Timeline werden Ereignisse angezeigt, die sich auf die ausgewählte Ressource ausgewirkt haben.  Sie können damit auch bestimmte Ereignisse wie Workflows oder Versionen starten.
+In der Timeline werden Ereignisse angezeigt, die sich auf die ausgewählte Ressource ausgewirkt haben. Sie können damit auch bestimmte Ereignisse wie Workflows oder Versionen starten.
 
 ![Timeline-Details](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
@@ -100,7 +100,7 @@ Die Ansicht **Verweise** zeigt eine Liste der Verweistypen zu oder von der Resso
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die direkt auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen. 
+* **Eingehende Links** enthält eine Liste der Seiten, die direkt auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
    * Hier werden nur statische Links angezeigt. Dynamisch generierte Links, zum Beispiel aus der Listenkomponente, sind nicht enthalten.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md) bietet Zugriff auf zugehörige Launches.
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren.

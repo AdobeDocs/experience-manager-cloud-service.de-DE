@@ -8,7 +8,7 @@ exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4135'
+source-wordcount: '4176'
 ht-degree: 99%
 
 ---
@@ -291,7 +291,7 @@ Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftr
 
 1. Wählen Sie **Stammverzeichnis** und das Wörterbuch (falls erforderlich), das Sie hinzufügen möchten, und wählen Sie dann **Hinzufügen**.
 
-    ![Auswählen eines I18n-Wörterbuchs](../assets/select-i18n.png)
+   ![Auswählen eines I18n-Wörterbuchs](../assets/select-i18n.png)
 
 Ihr Wörterbuch befindet sich nun in Ihrem Übersetzungsauftrag und der Übersetzungsprozess kann dann gestartet werden, um die Wörterbuchsprachkopien in `/content/cq:i18n` zu erstellen und diese Wörterbuchsprachkopien zwecks Übersetzung zu senden.
 
