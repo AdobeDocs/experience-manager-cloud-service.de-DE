@@ -8,7 +8,7 @@ exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1297'
 ht-degree: 99%
 
 ---
@@ -19,7 +19,7 @@ Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten
 
 >[!TIP]
 >
->Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die keine Erfahrung mit AEM oder Übersetzungen haben.
+>Wenn Sie mit der Übersetzung von Inhalten noch nicht vertraut sind, durchlaufen Sie unsere [Sites-Übersetzungs-Tour](/help/journey-sites/translation/overview.md), die Sie durch die Übersetzung Ihrer AEM Sites-Inhalte mithilfe der leistungsstarken Übersetzungs-Tools von AEM führt und ideal für alle ist, die noch keine Erfahrung mit AEM oder Übersetzungen haben.
 
 ## Inhaltsfragmente und Übersetzungsregeln {#content-fragments}
 
