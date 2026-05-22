@@ -3,9 +3,9 @@ title: Caching in AEM Edge-Funktionen
 description: Erfahren Sie, wie der CDN-Cache und der Edge-Funktionsabruf-Cache interagieren, wie Sie das Caching-Verhalten konfigurieren und zwischengespeicherte Inhalte über beide Ebenen hinweg bereinigen können.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -48,11 +48,11 @@ return new Response(body, {
 });
 ```
 
-Mehrere Ersatzschlüssel werden durch Leerzeichen getrennt. Diese Ersatzschlüssel können verwendet werden, um den CDN-Cache mithilfe der [CDN Cache Purge API) zu &#x200B;](/help/implementing/dispatcher/cdn-cache-purge.md). Das Konzept der Löschung von Ersatzschlüsseln ist dasselbe wie unter [Bereinigen des Caches für eine Gruppe von Ressourcen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) beschrieben. Der wesentliche Unterschied besteht darin, dass die CDN-Ersatzschlüssel hier durch Ihren Edge-Funktions-Code festgelegt werden und nicht durch das Backend.
+Mehrere Ersatzschlüssel werden durch Leerzeichen getrennt. Diese Ersatzschlüssel können verwendet werden, um den CDN-Cache mithilfe der [CDN Cache Purge API) zu ](/help/implementing/dispatcher/cdn-cache-purge.md). Das Konzept der Löschung von Ersatzschlüsseln ist dasselbe wie unter [Bereinigen des Caches für eine Gruppe von Ressourcen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) beschrieben. Der wesentliche Unterschied besteht darin, dass die CDN-Ersatzschlüssel hier durch Ihren Edge-Funktions-Code festgelegt werden und nicht durch das Backend.
 
 ## Edge, Funktion Zwischenspeicher abrufen (innere) {#fetch-cache}
 
-Der Cache zum Abrufen von Edge-Funktionen befindet sich zwischen der Edge-Funktion und den von ihr aufgerufenen Backends. Er speichert die **Antwort des Backends** in `fetch()` Aufrufe, die innerhalb Ihres Edge-Funktions-Codes getätigt werden. Es enthält auch alle Daten, die Ihr Code über die [**Core Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) oder [**Simple Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache) speichert - programmgesteuerte Caching-Schnittstellen, die Ihnen eine genaue Kontrolle darüber geben, was wie lange und unter welchen Ersatzschlüsseln zwischengespeichert wird.
+Der Cache zum Abrufen von Edge-Funktionen befindet sich zwischen der Edge-Funktion und den von ihr aufgerufenen Backends. Er speichert die **Antwort des Backends** in `fetch()` Aufrufe, die innerhalb Ihres Edge-Funktions-Codes getätigt werden. Es enthält auch alle Daten, die Ihr Code über die [**Core Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) oder [**Simple Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache) speichert - programmgesteuerte Caching-Schnittstellen, die Ihnen eine genaue Kontrolle darüber geben, was wie lange und unter welchen Ersatzschlüsseln zwischengespeichert wird.
 
 Sie wird **nicht** durch Kopfzeilen beeinflusst, die Sie in der ausgehenden Antwort der Edge-Funktion festlegen - nur durch die Antwort-Kopfzeilen des Backends, durch [`CacheOverride`](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache-override/CacheOverride/) von Optionen in Ihren Abrufaufrufen oder durch Ersatzschlüssel, die Sie beim Schreiben in die Core-Cache-API programmgesteuert zuweisen.
 
@@ -120,7 +120,7 @@ Der `purge-cache` CLI-Befehl löscht den **Cache für den Abruf der Edge-Funktio
 Ersatzschlüssel, die in Bereinigungsbefehlen verwendet werden, müssen mit den Schlüsseln übereinstimmen, die **im zwischengespeicherten Inhalt zum Zeitpunkt seiner Speicherung getaggt waren**. Dies entspricht dem Konzept der [schlüsselbasierten Ersatzbereinigung](/help/implementing/dispatcher/cdn-cache-purge.md#surrogate-key-purge), das im AEM CDN verwendet wird, wird aber auf den internen Cache der Edge-Funktion angewendet. Diese Schlüssel stammen aus:
 
 - Der `Surrogate-Key` Antwort-Header, den das Backend zurückgibt, wenn die Edge-Funktion daraus abruft.
-- Schlüssel, die Sie beim Schreiben in die [Core Cache API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) programmgesteuert zuweisen (z. B. über die Option `surrogateKeys` beim Einfügen eines Cache-Eintrags).
+- Schlüssel, die Sie beim Schreiben in die [Core Cache API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) programmgesteuert zuweisen (z. B. über die Option `surrogateKeys` beim Einfügen eines Cache-Eintrags).
 
 Wenn Ihr Backend beispielsweise mit antwortet:
 
