@@ -6,8 +6,8 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
 source-git-commit: 6f90bfebf2c9898bf8c1ad2643f8edc4ff4dda53
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 99%
+source-wordcount: '1929'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 >Sie können auf den Abfrage-Editor wie folgt zugreifen:
 >
 >* **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
->* direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
+>* Direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Sie gibt alle `types` für alle verfügbaren Schemata zurück.
 
 ### Beispielabfrage – Alle Informationen zu allen Städten {#sample-all-information-all-cities}
 
-Um alle Informationen zu allen Städten abzurufen, können Sie die grundlegende Abfrage verwenden:
+Um alle Informationen zu allen Städten abzurufen, können Sie die folgende einfache Abfrage verwenden:
 **Beispielabfrage**
 
 ```graphql
@@ -597,7 +597,7 @@ query {
 }
 ```
 
-### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben  {#sample-all-persons-not-jobs}
+### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben {#sample-all-persons-not-jobs}
 
 Eine Abfrage, die alle `persons` nach denen filtert, die den Namen `Jobs` oder `Smith` haben.
 
@@ -933,7 +933,7 @@ query {
 }
 ```
 
-### Beispielabfrage für verschachtelte Inhaltsfragmente – Alle Unternehmen mit mindestens einem Mitarbeiter mit dem Namen „Smith“  {#sample-companies-employee-smith}
+### Beispielabfrage für verschachtelte Inhaltsfragmente – Alle Unternehmen mit mindestens einem Mitarbeiter mit dem Namen „Smith“ {#sample-companies-employee-smith}
 
 Diese Abfrage veranschaulicht die Filterung nach `person` von `name` „Smith“, wobei Informationen aus zwei verschachtelten Fragmenten – `company` und `employee` – zurückgegeben werden.
 
@@ -1897,9 +1897,9 @@ Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
 
 Für die Beispielabfragen verwenden Sie die folgenden Inhaltsmodelle und ihre Wechselbeziehungen (Verweise ->):
 
-* [Unternehmen](#model-company)
-> [Person](#model-person)
-> [Auszeichnung](#model-award)
+* [Firma](#model-company)
+-> [Person](#model-person)
+    -> [Auszeichnung](#model-award)
 
 * [Stadt](#model-city)
 

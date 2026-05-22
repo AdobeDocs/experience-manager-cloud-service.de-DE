@@ -1,13 +1,13 @@
 ---
-title: 'Extrahieren von Inhalten aus der Quelle  '
+title: Extrahieren von Inhalten aus der Quelle
 description: Erfahren Sie, wie Sie Inhalte aus einer Adobe Experience Manager(AEM)-Quellinstanz extrahieren, um sie später in eine Cloud Service-AEM-Instanz zu übertragen.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
 source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 92%
+source-wordcount: '828'
+ht-degree: 100%
 
 ---
 
@@ -73,8 +73,7 @@ Das Content Transfer Tool verfügt über eine Funktion, die die differenzielle A
 
 >[!NOTE]
 >Nachdem Inhaltspfade in den Staging-Container migriert wurden, können diese Pfade oder alle darin enthaltenen Unterpfade nicht mehr entfernt oder von nachfolgenden Auffüllmigrationen ausgeschlossen werden.
->Beispiel: Erstmigration: content/dam/weRetail,
->Nächster Versuch eines Auffüllausschlusses: content/dam/weRetail/ab.
+>Beispiel: Anfängliche Migration: content/dam/weRetail,>Nächster Versuch eines Ausschlusses von der Auffüllung: content/dam/weRetail/ab.
 >In diesem Szenario ist das Ausschließen von content/dam/weRetail/ab nicht möglich, da die Daten bereits in den Staging-Container migriert wurden.
 
 Sobald die Extraktion abgeschlossen ist, können Sie Delta-Inhalte mithilfe der Auffüllextraktion übertragen.
@@ -89,7 +88,7 @@ Führen Sie dazu folgende Schritte durch:
 
    >[!IMPORTANT]
    >Sie sollten die Option **Überschreiben des Staging-Containers während der Extraktion** deaktivieren.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
+   >![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## Wie geht es weiter {#whats-next}

@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1247'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ In diesem Dokument erfahren Sie, wie Sie die Migration zu AEM as a Cloud Service
 
 ## Erstmalige Produktionsmigration {#initial-migration}
 
-Bevor Sie die Produktionsmigration durchführen können, befolgen Sie die Schritte zur Anpassung und zum Nachweis der Migration, die im Abschnitt [Inhaltsmigrationsstrategie und Zeitplan](/help/journey-migration/implementation.md##strategy-timeline) der [Implementierungsphase](/help/journey-migration/implementation.md) beschrieben sind.
+Bevor Sie die Produktionsmigration durchführen können, befolgen Sie die Schritte zur Anpassung und zum Nachweis der Migration, die im Abschnitt [Inhaltsmigrationsstrategie und Timeline](/help/journey-migration/implementation.md##strategy-timeline) der [Implementierungsphase](/help/journey-migration/implementation.md) beschrieben sind.
 
 * Starten Sie die Migration von der Produktion basierend auf den Erfahrungen, die Sie während der Staging-Migration für Klone in AEM as a Cloud Service gesammelt haben:
    * Author-Author
@@ -54,14 +54,14 @@ Nach der ersten Migration aus der Produktion müssen Sie inkrementelle Auffüllu
 * Planen Sie die Auffüllungen so, dass Sie eine mehr als 48 Stunden dauernde Inhaltsextraktion und -aufnahme vermeiden. Dies wird empfohlen, damit die Inhaltsauffüllungen in einen Wochenendzeitrahmen passen.
 * Planen Sie die Anzahl der erforderlichen Auffüllungen und verwenden Sie diese Schätzungen für die Planung um den Tag der Live-Schaltung herum.
 
-## Identifizieren von Zeitplänen für das Einfrieren von Code und Inhalten für die Migration {#code-content-freeze}
+## Identifizieren von Timelines für das Einfrieren von Code und Inhalten für die Migration {#code-content-freeze}
 
 Wie bereits erwähnt, müssen Sie einen Einfrierzeitraum für Code und Inhalte planen. Verwenden Sie die folgenden Fragen, um den Einfrierzeitraum zu planen:
 
 * Wie lange muss ich die Inhaltserstellung einfrieren?
 * Für welchen Zeitraum sollte ich mein Versand-Team bitten, keine neuen Funktionen mehr hinzuzufügen?
 
-Um die erste Frage zu beantworten, sollten Sie die Zeit in Betracht ziehen, die für die Durchführung von Testläufen in Nicht-Produktionsumgebungen benötigt wurde. Um die zweite Frage zu beantworten, benötigen Sie eine enge Zusammenarbeit zwischen dem Team, das neue Funktionen hinzufügt, und dem Team, das den Code überarbeitet. Das Ziel sollte darin bestehen sicherzustellen, dass der gesamte Code, der zur vorhandenen Implementierung hinzugefügt wird, auch zur Cloud Services-Verzweigung hinzugefügt, getestet und bereitgestellt wird. Im Allgemeinen bedeutet dies, dass weniger Code einfriert.
+Um die erste Frage zu beantworten, sollten Sie die Zeit in Betracht ziehen, die für die Durchführung von Testläufen in Nicht-Produktionsumgebungen benötigt wurde. Um die zweite Frage zu beantworten, benötigen Sie eine enge Zusammenarbeit zwischen dem Team, das neue Funktionen hinzufügt, und dem Team, das den Code überarbeitet. Das Ziel sollte darin bestehen sicherzustellen, dass der gesamte Code, der zur vorhandenen Implementierung hinzugefügt wird, auch zur Cloud-Services-Verzweigung hinzugefügt, getestet und bereitgestellt wird. Im Allgemeinen bedeutet dies, dass weniger Code einfriert.
 
 Außerdem müssen Sie ein Einfrieren von Inhalten einplanen, wenn die endgültige Auffüllung der Inhalte geplant ist.
 

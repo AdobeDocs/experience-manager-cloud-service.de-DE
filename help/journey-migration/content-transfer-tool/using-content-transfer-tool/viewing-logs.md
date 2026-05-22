@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 91f9bcafc087b6f9329d7a47509cc659714705ff
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,6 @@ Gehen Sie dann wie folgt vor:
 
 ### Aufnahmeprotokolle
 
-Rufen Sie die Aufnahmeprotokolle auf, indem Sie im Cloud Acceleration Manager die Liste der Aufnahmevorgänge aufrufen. Suchen Sie dann den gewünschten Migrationsvorgang und klicken Sie auf die drei Punkte (**…**) neben dem Vorgang. Sie können dann auf **Protokoll herunterladen** klicken, um Protokolle herunterzuladen.
+Um Aufnahmeprotokolle anzuzeigen, wechseln Sie zur Liste der Aufnahmevorgänge in Cloud Acceleration Manager, suchen Sie dann den gewünschten Migrationsvorgang und klicken Sie auf die drei Punkte (**…**) des Auftrags. Sie können dann auf **Protokoll herunterladen** klicken, um Protokolle herunterzuladen.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

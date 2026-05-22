@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '380'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Adobe Experience Manager Dispatcher Converter konvertiert vorhandene AEM-Dispatc
 Der Dispatcher ist das Caching- und/oder Lastenausgleichs-Tool von Adobe Experience Manager. Die Verwendung des AEM-Dispatchers trägt außerdem dazu bei, Ihren AEM-Server vor Angriffen zu schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden.
 
 >[!NOTE]
->Dispatcher wird am häufigsten zum Zwischenspeichern von Antworten aus einer **AEM-Publishing-Instanz** verwendet, um die Reaktionsfähigkeit und Sicherheit einer öffentlich zugänglichen veröffentlichten Website zu erhöhen.
+>Dispatcher wird am häufigsten zum Zwischenspeichern von Antworten aus einer **AEM-Veröffentlichungsinstanz** verwendet, um die Reaktionsfähigkeit und Sicherheit einer öffentlich zugänglichen veröffentlichten Website zu erhöhen.
 
 In der [Dispatcher-Übersicht](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) erfahren Sie, wie der Dispatcher das Caching durchführt, Dokumente zurückgibt und den Lastenausgleich vornimmt.
 

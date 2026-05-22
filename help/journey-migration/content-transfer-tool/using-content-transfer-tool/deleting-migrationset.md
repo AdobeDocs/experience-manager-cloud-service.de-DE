@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '233'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor, um einen Migrationssatz zu löschen:
 
 1. Wenn Sie auf **Löschen** klicken, wird ein Dialogfeld angezeigt, in dem Sie die Löschaktion bestätigen müssen.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
 >[!NOTE]
 >

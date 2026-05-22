@@ -6,7 +6,7 @@ feature: Operations
 role: Admin
 source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2098'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,7 @@ Wartungsaufgaben sind Prozesse, die nach einem Zeitplan ausgeführt werden, um d
 
 ## Konfigurieren von Wartungsaufgaben {#maintenance-tasks-configuring}
 
-In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kundinnen und Kunden nicht konfiguriert werden können (z. B. Datenspeicherbereinigung).  Andere Wartungsaufgaben können kundenseitig konfiguriert werden, wie in der folgenden Tabelle beschrieben.
+In früheren Versionen von AEM konnten Sie Wartungsaufgaben mithilfe der Wartungskarte konfigurieren (Tools > Vorgänge > Wartung). Bei AEM as a Cloud Service ist die Wartungskarte nicht mehr vorhanden. Daher sollten Konfigurationen an die Quell-Code-Verwaltung übertragen und mithilfe von Cloud Manager bereitgestellt werden. Adobe verwaltet Wartungsaufgaben, deren Einstellungen von Kundinnen und Kunden nicht konfiguriert werden können (z. B. Datenspeicherbereinigung). Andere Wartungsaufgaben können kundenseitig konfiguriert werden, wie in der folgenden Tabelle beschrieben.
 
 >[!CAUTION]
 >
@@ -49,14 +49,14 @@ In der folgenden Tabelle sind die verfügbaren Wartungsaufgaben aufgeführt.
   <tr>
     <td>Versionsbereinigung</td>
     <td>Kundin/Kunde</td>
-    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
+    <td>Die Versionsbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird bald standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Bereinigung der Auditprotokolle</td>
     <td>Kundin/Kunde</td>
-    <td>Die Auditprotokollbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird in Kürze standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
+    <td>Die Auditprotokollbereinigung ist derzeit standardmäßig deaktiviert, die Richtlinie kann jedoch wie unter <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Wartungsaufgaben für Versionsbereinigung und Auditprotokollbereinigung</a> beschrieben konfiguriert werden.<br/><br/>Die Bereinigung wird bald standardmäßig aktiviert, wobei diese Werte überschrieben werden können.<br>
    </td>
    </td>
   </tr>
@@ -273,7 +273,7 @@ Deklarieren Sie eine Konfigurationsdatei und stellen Sie sie wie in den folgende
    * Alle Eigenschaften müssen definiert sein. Es gibt keine geerbten Standardwerte.
    * Die in den Eigenschaftstabellen unten aufgeführten Typen (Ganzzahlen, Zeichenfolgen, Boolesche Werte usw.) müssen beachtet werden.
 
-1. Erstellen Sie eine Konfigurations-Pipeline in Cloud Manager, wie im Artikel [Pipeline konfigurieren](/help/operations/config-pipeline.md#managing-in-cloud-manager) beschrieben.
+1. Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im [Artikel zu Konfigurations-Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Versionsbereinigung {#version-purge}
 
@@ -309,7 +309,7 @@ Die Spalten, die *default* angeben, geben die Standardwerte für die Zukunft an,
 
 | Eigenschaften | Zukünftiger Standard für Umgebungen>TBD | Zukünftiger Standard für Umgebungen&lt;=TBD | Erforderlich | Typ | Werte |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| Pfade | [&quot;/content&quot;] | [&quot;/content&quot;] | Ja | Zeichenfolgen-Array | Gibt an, unter welchen Pfaden Versionen bereinigt werden sollen, wenn neue Versionen erstellt werden. Diese Eigenschaft muss kundenseitig deklariert werden. Es ist jedoch nur der Wert &quot;/content&quot; zulässig. |
+| Pfade | [&quot;/content&quot;] | [&quot;/content&quot;] | Ja | Zeichenfolgen-Array | Gibt an, unter welchen Pfaden Versionen bereinigt werden sollen, wenn neue Versionen erstellt werden.  Diese Eigenschaft muss kundenseitig deklariert werden. Es ist jedoch nur der Wert &quot;/content&quot; zulässig. |
 | maximumAgeDays | 30 | 2557 (7 Jahre + 2 Schalttage) | Ja | Ganzzahl | Jede Version, die älter als der konfigurierte Wert ist, wird entfernt. Lautet der Wert „0“, wird die Bereinigung nicht auf Basis des Alters der Version durchgeführt. |
 | maximumVersions | 5 | 0 (kein Limit) | Ja | Ganzzahl | Jede Version, die älter als die n-te neueste Version ist, wird entfernt. Lautet der Wert „0“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt. |
 | minimumVersions | 1 | 1 | Ja | Ganzzahl | Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Es wird immer mindestens eine Version beibehalten. Der Wert muss „1“ oder höher sein. |

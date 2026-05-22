@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2796'
-ht-degree: 100%
+source-wordcount: '2930'
+ht-degree: 98%
 
 ---
 
@@ -235,7 +235,7 @@ Eine einfache Möglichkeit besteht darin, eine Browser-Registerkarte im selben B
 
 Sie können auch ein Befehlszeilen-Tool wie `curl` oder `wget` oder eine beliebige HTTP-Client-Anwendung verwenden. Wenn Sie keine Browser-Registerkarte mit einer authentifizierten Sitzung verwenden, müssen Sie als Teil des Kommentars einen Administrator-Benutzernamen und ein Kennwort angeben.
 
-Im Folgenden ein Beispiel:
+Im Folgenden finden Sie ein Beispiel dafür, wie dies möglich ist:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
 
 ### Kopfzeilen und Parameter {#http-headers-and-parameters}
@@ -256,7 +256,7 @@ Die folgenden HTTP-Abfrageparameter stehen zur Verfügung, wenn HTTP-Kopfzeilen 
 
 Wenn sowohl eine HTTP-Kopfzeile als auch ein entsprechender Abfrageparameter vorhanden sind, hat der Abfrageparameter Vorrang.
 
-Mit dem folgenden Befehl können Sie die Generierung des Berichts einfach über die HTTP-Schnittstelle starten:
+Eine einfache Möglichkeit, die Berichterstellung über die HTTP-Schnittstelle zu initiieren, besteht in dem folgenden Befehl:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
 Nachdem eine Anfrage gestellt wurde, muss der Client nicht aktiv bleiben, damit der Bericht generiert wird. Die Berichterstellung kann mit einem Client mithilfe einer HTTP-GET-Anfrage initiiert und nach der Erstellung des Berichts aus dem Cache mit einem anderen Client oder dem BPA-Tool in der AEM-Benutzeroberfläche angezeigt werden.
@@ -278,7 +278,7 @@ Die folgenden Antwortwerte sind möglich:
 
 Die standardmäßige BPA-Cache-Lebensdauer beträgt 24 Stunden. Mit der Option zum Aktualisieren eines Berichts und zum erneuten Generieren des Caches sowohl in der AEM-Instanz als auch in der HTTP-Schnittstelle ist dieser Standardwert wahrscheinlich für die meisten Verwendungen von BPA geeignet. Wenn die Zeit für die Berichterstellung für Ihre AEM-Instanz besonders lang ist, möchten Sie möglicherweise die Cache-Lebensdauer anpassen, um das erneute Generieren des Berichts zu minimieren.
 
-Der Wert für die Cache-Lebensdauer wird als `maxCacheAge`-Eigenschaft im folgenden Repository-Knoten gespeichert:
+Der Wert der Cache-Lebensdauer wird als `maxCacheAge` Eigenschaft auf dem folgenden Repository-Knoten gespeichert:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 Der Wert dieser Eigenschaft ist die Cache-Lebensdauer in Sekunden. Ein Administrator kann die Cache-Lebensdauer mit CRX/DE Lite anpassen.

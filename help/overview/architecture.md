@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '2710'
-ht-degree: 98%
+source-wordcount: '2750'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ Als Kundin oder Kunde werden Sie in der Regel durch Adobe als **Mandant**, auch 
 >
 >AEM Edge Delivery Services werden in Cloud Manager als Lösung der obersten Ebene bereitgestellt und sind aus Lizenzierungsgründen gleichzeitig Teil der anderen Hauptlösungen. Zum Beispiel AEM Sites mit Edge Delivery Services.
 
-Ein Programm kann mit einer beliebigen Kombination der übergeordneten Lösungen konfiguriert werden. Jede Lösung kann ein oder mehrere Add-ons unterstützen.  Zum Beispiel Commerce oder Screens für AEM Sites, Dynamic Media oder Brand Portal für AEM Assets.
+Ein Programm kann mit einer beliebigen Kombination der übergeordneten Lösungen konfiguriert werden. Jede Lösung kann ein oder mehrere Add-ons unterstützen. Zum Beispiel Commerce oder Screens für AEM Sites, Dynamic Media oder Brand Portal für AEM Assets.
 
 ![AEM as a Cloud Service – Programme](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service – Bereitstellungsarchitektur")
 
@@ -80,12 +80,12 @@ Die Liste der übergeordneten, zusammenstellbaren Dienste in AEM as a Cloud Serv
 
 Für das Content-Management gibt es zwei Hauptsätze an Diensten für die Inhaltserstellung, die beide als *Inhaltsquellen* dargestellt werden:
 
-* AEM-Autoren-Ebene: 
-Bietet eine Web-basierte Schnittstelle (mit zugehörigen APIs) für die Verwaltung von Web-Inhalten. Dies funktioniert für beide Ansätze:
+* Die AEM-Autorenebene:
+Stellt eine Web-basierte Schnittstelle (mit zugehörigen APIs) für die Verwaltung von Web-Inhalten bereit. Dies funktioniert für beide Ansätze:
    * Headful – über den Seiten-Editor und den universellen Editor
    * Headless – über den Inhaltsfragmenteditor
-* Die Ebene des dokumentbasierten Authorings: 
-Ermöglicht die Erstellung von Inhalten mithilfe von Standardanwendungen wie:
+* Die Ebene der dokumentbasierten Bearbeitung:
+Ermöglicht das Erstellen von Inhalten mit Standardanwendungen, z. B.:
    * Microsoft Word und Excel – über SharePoint
    * Google Docs und Sheets – über Google Drive
 
@@ -141,7 +141,7 @@ Es gibt weitere benachbarte Dienste:
 * Der betriebliche Telemetrie-Dienst:
    * Ist für die Erfassung von Schlüsselmetriken aus einem Kundenerlebnis (z. B. Seitenansichten, Web-Lebenszyklen, Konversionsereignisse) und für die Beantwortung verknüpfter Abfragen zuständig (z. B. Top-Seitenansichten für eine bestimmte Domain in den letzten 7 Tagen).
 * Der Asset Compute-Service:
-   * ist für die Verarbeitung hochgeladener Bilder, Videos und Dokumente zuständig, z. B. PDF- und Adobe Photoshop-Dateien. Bei der Verarbeitung können Sie mit der KI von Adobe Bild- und Videometadaten (z. B. beschreibende Tags oder Primärfarbtöne) extrahieren und dann Ausgabedarstellungen (z. B. verschiedene Größen oder Formate) generieren, wobei Sie auf APIs wie die Adobe Photoshop- und Adobe Lightroom-APIs zugreifen können.
+   * ist für die Verarbeitung hochgeladener Bilder, Videos und Dokumente zuständig, z. B. PDF- und Adobe Photoshop-Dateien. Bei der Verarbeitung können Sie mit Adobe AI Bild- und Videometadaten (z. B. beschreibende Tags oder Primärfarbtöne) extrahieren und dann Ausgabedarstellungen (z. B. verschiedene Größen oder Formate) generieren, wobei Sie auf APIs wie die Adobe Photoshop- und Adobe Lightroom-APIs zugreifen können.
 * Der Identity Management-Dienst (IMS):
    * Ist die zentrale Stelle, die für die Verwaltung und Authentifizierung von Benutzenden und Benutzergruppen für eine bestimmte Adobe Experience Cloud-Anwendung zuständig ist (z. B. die Cloud Manager- oder AEM-Autoren-Ebene).
    * Der Zugriff erfolgt über die Adobe Admin Console.
@@ -156,7 +156,7 @@ Die AEM Autoren-Ebene wird als Cluster von AEM-Autoren-Pods verwendet, die ein e
 
 Die AEM-Veröffentlichungsebene wird als Farm von AEM-Veröffentlichungsinstanzen mit jeweils einem eigenen Content-Repository mit veröffentlichten Inhalten betrieben. Jeder Publisher ist an eine einzige Apache-Instanz gekoppelt, die mit dem AEM-Dispatcher-Modul für eine materialisierte Ansicht des Inhalts ausgestattet ist und als Ursprung für das von Adobe verwaltete CDN dient. Mindestens zwei Pods ermöglichen auch die Kontinuität des Geschäftsbetriebs, aber es ist nicht ungewöhnlich, dass sich diese Zahl in Zeiten hohen Traffics ausweitet.
 
-Die AEM-Vorschau-Ebene besteht aus einem einzelnen AEM-Knoten.  Dies wird zur Qualitätssicherung von Inhalten vor der Veröffentlichung auf der Veröffentlichungsebene verwendet. Auf der Vorshau-Ebene können insbesondere bei Bereitstellungen gelegentliche Ausfallzeiten auftreten.
+Die AEM-Vorschau-Ebene besteht aus einem einzelnen AEM-Knoten. Dies wird zur Qualitätssicherung von Inhalten vor der Veröffentlichung auf der Veröffentlichungsebene verwendet. Auf der Vorshau-Ebene können insbesondere bei Bereitstellungen gelegentliche Ausfallzeiten auftreten.
 
 ### Edge Delivery Services {#system-architecture-edge-delivery-services}
 
@@ -239,4 +239,4 @@ Die neue Architektur von AEM as a Cloud Service führt einige grundlegende Ände
 * Edge Delivery Services:
    * [Überblick über AEM as a Cloud Service – mit Edge Delivery Services](/help/edge/overview.md)
    * [Verwenden von Edge Delivery Services](/help/edge/overview.md)
-   * [Untersuchen der zugrunde liegenden Architektur und wichtiger Teile von AEM as a Cloud Service mithilfe der Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=de)
+   * [Erkunden Sie die zugrunde liegende Architektur und wichtige Teile von AEM as a Cloud Service mit Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=de)

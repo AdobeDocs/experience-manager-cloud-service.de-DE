@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '880'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Cloud Service bietet viele neue Funktionen und M�
 >id="aem_cloud_notable_changes"
 >title="Wesentliche Änderungen an AEM as a Cloud Service"
 >abstract="Auf dieser Registerkarte können Sie Inhalte anzeigen, die Ihnen dabei helfen, die Unterschiede zwischen AEM On-Premise oder Adobe Managed Services im Vergleich zu AEM as a Cloud Service zu verstehen."
->additional-url="https://video.tv.adobe.com/v/330543?captions=ger" text="Weiterentwicklung von AEM as a Cloud Service"
+>additional-url="https://video.tv.adobe.com/v/330543" text="Weiterentwicklung von AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -87,7 +87,7 @@ Zusätzliche oder benutzerdefinierte Ausführungsmodi sind in AEM Cloud Service 
 
 In AEM Cloud Service werden Inhalte über [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) veröffentlicht. Die in früheren Versionen von AEM verwendeten Replikationsagenten werden nicht mehr verwendet oder bereitgestellt, was sich möglicherweise auf die folgenden Bereiche bestehender AEM-Projekte auswirken könnte:
 
-* Benutzerdefinierte Workflows, die beispielsweise Inhalte an Replikations-Agenten von Vorschau-Servern senden.
+* Benutzerdefinierte Workflows, die beispielsweise Inhalte an Replikationsagenten von Vorschau-Servern senden.
 * Anpassung an Replikationsagenten zur Umwandlung von Inhalten.
 * Verwendung der Rückwärtsreplikation, um Inhalte aus Publish zurück an Author zu senden.
 

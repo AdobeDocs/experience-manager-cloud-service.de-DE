@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: 7c0703d746601742a28c3c98f35e69de70f25e05
 workflow-type: tm+mt
-source-wordcount: '3647'
+source-wordcount: '3846'
 ht-degree: 98%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager aufzunehmen:
 
-1. Gehen Sie zu Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmevorgänge** und klicken Sie auf **Neue Aufnahme**.
+1. Gehen Sie zu Cloud Acceleration Manager. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmeaufträge** und klicken Sie auf **Neue Aufnahme**.
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
       * Migrationssätze laufen nach längerer Inaktivität ab. Daher wird erwartet, dass die Aufnahme relativ bald nach der Extraktion erfolgt. Lesen Sie [Ablauf von Migrationssätzen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry), um mehr darüber zu erfahren.
 
    >[!TIP]
-   > Wenn die Extraktion ausgeführt wird, wird sie im Dialogfeld angezeigt. Nach erfolgreichem Abschluss der Extraktion startet die Aufnahme automatisch. Wenn die Extraktion fehlschlägt oder angehalten wird, wird der Aufnahmevorgang zurückgesetzt.
+   > Wenn die Extraktion ausgeführt wird, wird sie im Dialogfeld angezeigt. Nach erfolgreichem Abschluss der Extraktion startet die Aufnahme automatisch. Wenn die Extraktion fehlschlägt oder angehalten wird, wird der Aufnahmeauftrag zurückgesetzt.
 
    * **Ziel:** Wählen Sie die Zielumgebung aus. In dieser Umgebung werden die Inhalte des Migrationssatzes aufgenommen.
       * Aufnahmen unterstützen keine Ziele des Typs „Schnelle Entwicklungsumgebung“ (RDE) oder Vorschau und erscheinen nicht als mögliche Zielwahl, selbst wenn die Benutzenden Zugriff darauf haben.
@@ -89,7 +89,7 @@ Gehen Sie wie folgt vor, um den Migrationssatz mit Cloud Acceleration Manager au
 
    ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Klicken Sie in der Zeile auf die Schaltfläche **(i)**, um weitere Informationen zum Aufnahmevorgang zu erhalten. Sie können die Dauer jedes Aufnahmeschritts anzeigen, wenn dieser ausgeführt oder abgeschlossen wird, indem Sie erst auf **…** und dann auf **Dauer anzeigen** klicken. Die Informationen aus der Extraktion werden ebenfalls angezeigt, damit klar ist, was aufgenommen wird.
+1. Klicken Sie in der Zeile auf die Schaltfläche **(i)**, um weitere Informationen zum Aufnahmeauftrag zu erhalten. Sie können die Dauer jedes Aufnahmeschritts anzeigen, wenn dieser ausgeführt oder abgeschlossen wird, indem Sie erst auf **…** und dann auf **Dauer anzeigen** klicken. Die Informationen aus der Extraktion werden ebenfalls angezeigt, damit klar ist, was aufgenommen wird.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
@@ -273,7 +273,7 @@ Manchmal kann es unerwartet zeitweise auftretende Probleme aufgrund fehlgeschlag
 >title="Aufnahme aufgehoben"
 >abstract="Die Extraktion, auf die die Aufnahme gewartet hat, wurde nicht erfolgreich abgeschlossen. Die Aufnahme wurde aufgehoben, da sie nicht ausgeführt werden konnte."
 
-Bei einer Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wird geduldig gewartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt normal gestartet. Wenn die Extraktion fehlschlägt oder gestoppt wird, werden die Aufnahme und der dazugehörige Indizierungsvorgang nicht gestartet, sondern zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
+Bei einer Aufnahme, die mit einer laufenden Extraktion als Migrationssatz für die Quelle erstellt wurde, wird geduldig gewartet, bis diese Extraktion erfolgreich ist, und zu diesem Zeitpunkt normal gestartet. Wenn die Extraktion fehlschlägt oder gestoppt wird, werden die Aufnahme und der dazugehörige Indizierungsauftrag nicht gestartet, sondern zurückgesetzt. Überprüfen Sie in diesem Fall die Extraktion, um festzustellen, warum sie fehlgeschlagen ist, beheben Sie das Problem und beginnen Sie erneut mit dem Extrahieren. Sobald die feste Extraktion ausgeführt wird, kann eine neue Aufnahme geplant werden.
 
 ### Wartende Aufnahme konnte nicht gestartet werden {#waiting-ingestion-not-started}
 

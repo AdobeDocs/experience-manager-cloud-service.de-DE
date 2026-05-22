@@ -1,13 +1,13 @@
 ---
-title: 'Erste Schritte mit dem Content Transfer Tool  '
+title: Erste Schritte mit dem Content Transfer Tool
 description: Erfahren Sie mehr über die ersten Schritte mit dem Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 100%
+source-wordcount: '1740'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 1. Über die Schaltfläche mit dem Stiftsymbol können Sie die Konfigurationswerte bearbeiten
 1. Aktivieren Sie die **SSL-Protokollierung für Extraktion aktivieren** Einstellung festlegen, und drücken Sie dann **Speichern**:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+   ![Bild](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
 >
@@ -64,8 +64,8 @@ SSL-/TLS-Verbindungsprobleme zu verstehen kann manchmal schwierig sein. Um Verbi
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Ausführen des Content Transfer Tools"
->abstract="In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service (Autor/Veröffentlichung) migrieren."
->additional-url="https://video.tv.adobe.com/v/327075/?captions=ger&quality=12&learn=on" text=" Siehe Demo"
+>abstract="Erfahren Sie, wie Sie mit dem Content Transfer Tool den Inhalt zu AEM as a Cloud Service (Author/Publish) migrieren können."
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Siehe Demo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=de#migration" text="Tutorial – Verwenden des Content Transfer Tools"
 
 Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In diesem Abschnitt erfahren Sie, wie Sie mit dem Content Transfer Tool Inhalte zu AEM as a Cloud Service migrieren:
@@ -104,7 +104,7 @@ Der folgende Abschnitt gilt für die neue Content Transfer Tool-Version. In dies
    >
    >Der Name muss denselben Konventionen wie bei einem AEM-Knoten entsprechen, d. h., er darf keines der folgenden Zeichen enthalten: `. / : [ ] | * < > ^ ? { } % # ` und auch keine ungewöhnlichen Symbole oder Emojis.
 
-1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Klicken Sie auf Drei-Punkte-Symbol (**…**), um die Dropdown-Liste zu öffnen, und wählen Sie **Extraktionsschlüssel kopieren** aus. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
+1. Ihre Migrationsliste sollte jetzt in der Listenansicht angezeigt werden. Wählen Sie das Symbol mit den drei Punkten (**…**) , um die Dropdown-Liste zu öffnen und **Extraktionsschlüssel kopieren** auszuwählen. Sie benötigen diesen Schlüssel während der Extraktionsphase. Kopieren Sie diesen Extraktionsschlüssel.
 
    >[!NOTE]
    >
@@ -140,7 +140,7 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
 
    1. **Version einschließen**: Aktivieren Sie die Option. Wenn Versionen enthalten sind, wird der Pfad `/var/audit` automatisch einbezogen, um Prüfereignisse zu migrieren.
 
-      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
+      ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >Wenn Sie beabsichtigen, Versionen als Teil eines Migrationssatzes einzubeziehen und Auffüllungen mit `wipe=false` durchzuführen, müssen Sie aufgrund einer aktuellen Einschränkung im Content Transfer Tool die Versionsbereinigung deaktivieren. Wenn Sie es vorziehen, die Versionsbereinigung aktiviert zu lassen und in einen Migrationssatz aufzufüllen, dann müssen Sie die Aufnahme als `wipe=true` durchführen.
@@ -160,7 +160,7 @@ Um den von Ihnen in Cloud Acceleration Manager erstellten Migrationssatz zu bef�
 
       ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
 
-      1. Nur die Pfadauswahl ist zulässig und mindestens ein Pfad muss vorhanden sein. Wenn kein Pfad ausgewählt ist, tritt ein Server-Fehler auf.
+      1. Es ist nur die Pfadauswahl zulässig und es muss mindestens ein Pfad vorhanden sein.Wenn kein Pfad ausgewählt ist, tritt ein Server-Fehler auf.
 
          ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
 

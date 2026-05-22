@@ -5,9 +5,9 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 98%
 
 ---
 
@@ -22,15 +22,16 @@ ht-degree: 100%
 
 Wahrscheinlich sind in Ihrer Organisation mehrere Abteilungen für verschiedene Aspekte des digitalen Erlebnisses zuständig. Ohne Steuerung sind die Voraussetzungen für endlose Debatten, Kämpfe und Verwirrung geschaffen.
 
-Die digitale Steuerung beginnt damit, herauszufinden, wer wofür zuständig ist und wer welche digital ausgerichtete Aufgabe übernimmt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung besteht darin, einen Kulturwandel voranzutreiben – eine breite Unterstützung für die neue Technologie aufzubauen und den Mitarbeiterinnen und Mitarbeitern zu helfen, sich an neue Methoden zu gewöhnen. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
+Die digitale Steuerung beginnt damit, herauszufinden, wer wofür zuständig ist und wer welchen digital ausgerichteten Auftrag übernimmt. Möglicherweise müssen Sie einige strategische Einstellungen vornehmen, um die benötigten Fähigkeiten hinzuzufügen. Eine noch größere Herausforderung besteht darin, einen Kulturwandel voranzutreiben – eine breite Unterstützung für die neue Technologie aufzubauen und den Mitarbeiterinnen und Mitarbeitern zu helfen, sich an neue Methoden zu gewöhnen. Ein wichtiger Teil dieser Bemühungen ist die Schaffung einer digitalen Gemeinschaft, die es den Mitarbeitern ermöglicht, voneinander zu lernen und sich gegenseitig zu unterstützen.
 
 Vorerst konzentrieren wir uns darauf, die richtigen Mitarbeiterinnen und Mitarbeiter auf die richtigen Positionen zu bringen, um Ihre Adobe Experience Manager-Bereitstellung voranzutreiben. Für jedes Kernprodukt – Experience Manager Sites und Experience Manager Assets – hat Adobe eine Liste der Rollen bereitgestellt, die Sie besetzen müssen, sowie die Fähigkeiten, Fachkenntnisse und Attribute, die die Mitarbeiterinnen und Mitarbeiter in den verschiedenen Rollen effektiv machen.
 
-Ihre Aufgabe in dieser Woche ist es, beide Listen mit Ihrem Implementierungs-Team zu überprüfen und sicherzustellen, dass Sie in jeder Rolle Mitarbeiter mit den relevanten Qualifikationen haben.
+Ihre Aufgabe in dieser Woche ist es, beide Listen mit Ihrem Implementierungs-Team zu überprüfen und sicherzustellen, dass Sie in jeder Rolle Mitarbeiter mit den relevanten Qualifizierungen haben.
 
 ## **Schlüsselrollen für AEM Experience Manager Sites**
 
-Ein erfolgreiches Crew-Team braucht neun Personen auf den richtigen Plätzen – genau wie Ihr Bereitstellung-Team. Ihr Erfolg mit Adobe Experience Manager Sites hängt von der Stärke Ihrer Team-Mitglieder und von deren Zusammenarbeit ab. Stellen Sie sicher, dass Sie diese neun Rollen Mitarbeitern mit den empfohlenen Qualifikationen zugewiesen werden.
+Ein erfolgreiches Crew-Team braucht neun Personen auf den richtigen Plätzen – genau wie Ihr Bereitstellung-Team. Ihr Erfolg mit Adobe Experience Manager Sites hängt von der Stärke Ihrer Team-Mitglieder und von deren Zusammenarbeit ab. Stellen Sie sicher, dass Ihnen diese neun Rollen zugewiesen sind
+an Personen mit den vorgeschlagenen Qualifikationen.
 
 | Rolle | Kompetenzen | Kompetenzstufe | Qualitäten |
 |--- |--- |--- |--- |
@@ -50,7 +51,7 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 ![Überprüfen der Rollen für die Implementierung](assets/team_involvement.png)
 
-**Überprüfen Sie diese Liste mit Ihrem Implementierungs-Team** und stellen Sie sicher, dass Sie in jeder Rolle über entsprechende Qualifikationen verfügen. Team-Mitglieder, die mit Adobe Experience Cloud weniger vertraut sind, können sich mithilfe von [Experience League](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager)-Lernressourcen über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren lassen.
+**Überprüfen Sie diese Liste mit Ihrem Implementierungs-Team** und stellen Sie sicher, dass Sie in jeder Rolle über entsprechende Qualifizierungen verfügen. Team-Mitglieder, die mit Adobe Experience Cloud weniger vertraut sind, können sich mithilfe von [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager)-Lernressourcen über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren lassen.
 
 ## **Schlüsselrollen für AEM Experience Manager Assets**
 
@@ -79,4 +80,4 @@ Nachdem Sie nun wissen, welche Rollen erforderlich sind, sehen Sie in der folgen
 
 >[!TIP]
 >
-> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen in [Experience League](https://experienceleague.adobe.com/de?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.
+> Erfahren Sie mehr über Adobe Experience Cloud und nutzen Sie die Ressourcen in [Experience League](https://experienceleague.adobe.com/?lang=de#recommended/solutions/experience-manager). Lassen Sie sich über [Adobe Digital Learning](https://learning.adobe.com/certification.html) zertifizieren.
