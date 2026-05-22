@@ -7,8 +7,8 @@ exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
 source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 99%
+source-wordcount: '1323'
+ht-degree: 95%
 
 ---
 
@@ -54,14 +54,14 @@ So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für 
 1. [Fügen Sie Gebietsschema-Unterstützung für das Wörterbuch hinzu.](#add-locale-support-for-the-dictionary)
 1. [Übertragen Sie die Änderungen im Repository und stellen Sie die Pipeline bereit.](#commit-changes-in-repo-deploy-pipeline)
 
-#### &#x200B;1. Klonen Sie das Repository. {#clone-the-repository}
+#### &#x200B;1. Klonen des Repositorys {#clone-the-repository}
 
 1. Navigieren Sie über die Befehlszeile an die Stelle, an der Sie das Forms Cloud Service-Repository klonen möchten.
 1. Führen Sie den Befehl aus, den Sie [von Cloud Manager abgerufen haben](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git). Er sieht in etwa so aus: `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Verwenden Sie den Git-Benutzernamen und das Passwort, um das Repository zu klonen.
 1. Öffnen Sie den geklonten Forms Cloud Service-Repository-Ordner im Editor Ihrer Wahl.
 
-#### &#x200B;2. Fügen Sie ein Gebietsschema zum Handbuch-Lokalisierungsdienst hinzu. {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. Hinzufügen eines Gebietsschemas zum Guide-Localization-Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Suchen Sie die Datei `Guide Localization Service.cfg.json` und fügen Sie das gewünschte Gebietsschema in die Liste der unterstützten Gebietsschemata ein.
 
@@ -69,7 +69,7 @@ So fügen Sie während der Laufzeit in adaptiven Formularen Unterstützung für 
    >
    > Erstellen Sie eine Datei mit dem Namen `Guide Localization Service.cfg.json`, falls noch nicht vorhanden.
 
-#### &#x200B;3. Fügen Sie die Client-Bibliothek für Ordner mit Gebietsschema-spezifischen Namen hinzu {#add-locale-name-specific-folder}
+#### &#x200B;3. Hinzufügen der Client-Bibliothek für Ordner mit Gebietsschema-spezifischen Namen {#add-locale-name-specific-folder}
 
 1. Erstellen Sie im Ordner „UI.content“ den Ordner `etc/clientlibs`.
 1. Erstellen Sie außerdem einen Ordner mit dem Namen `locale-name` unter `etc/clientlibs`, der als Container für xfa- und af-clientlibs dient.
@@ -84,7 +84,7 @@ Erstellen Sie einen Knoten mit dem Namen `[locale-name]_xfa` und dem Typ `cq:Cli
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
-##### 3.2. Fügen Sie die Client-Bibliothek für adaptive Formulare für einen Ordner mit dem Gebietsschema „locale-name“ hinzu.
+##### 3.2. Hinzufügen der Client-Bibliothek für adaptive Formulare für einen Ordner mit dem Gebietsschema „locale-name“
 
 1. Erstellen Sie einen Knoten mit dem Namen `[locale-name]_af` und dem Typ `cq:ClientLibraryFolder` unter `etc/clientlibs/locale_name`, mit der Kategorie `guides.I18N.<locale>` und den Abhängigkeiten `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`.
 1. Erstellen Sie einen Ordner mit dem Namen `javascript` und fügen Sie die folgenden Dateien hinzu:
@@ -99,7 +99,7 @@ I18N.js
      LogMessages.js
    ```
 
-#### &#x200B;4. Fügen Sie Gebietsschema-Unterstützung für das Wörterbuch hinzu. {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. Hinzufügen von Gebietsschema-Unterstützung für das Wörterbuch {#add-locale-support-for-the-dictionary}
 
 Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufügen möchten, nicht unter den Gebietsschemata `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` oder `ko-kr` ist.
 
@@ -118,7 +118,7 @@ Führen Sie diesen Schritt nur dann durch, wenn das `<locale>`, das Sie hinzufü
 
 Bevor Sie die Änderungen in das AEM Git-Repository übernehmen, müssen Sie auf Ihre [Git-Repository-Informationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#accessing-git) zugreifen.
 
-#### &#x200B;5. Übertragen Sie die Änderungen an das Repository und stellen Sie die Pipeline bereit. {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. Übertragen Sie die Änderungen im Repository und stellen Sie die Pipeline bereit. {#commit-changes-in-repo-deploy-pipeline}
 
 Übertragen Sie die Änderungen an das GIT-Repository, nachdem Sie eine Gebietsschema-Unterstützung hinzugefügt haben. Stellen Sie Ihren Code mithilfe der Full-Stack-Pipeline bereit. Erfahren Sie, wie Sie [eine Pipeline einrichten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=de#setup-pipeline), um Unterstützung für ein neues Gebietsschema hinzuzufügen.
 Sobald die Pipeline-Einrichtung abgeschlossen ist, wird das neu hinzugefügte Gebietsschema in der AEM-Umgebung angezeigt.
@@ -143,7 +143,7 @@ Es gibt zwei Methoden, das Gebietsschema eines adaptiven Formulars zu identifizi
 * Durch Abrufen der folgenden Parameter in der angegebenen Reihenfolge:
 
    * Anforderungsparameter `afAcceptLang`
-Um das Browser-Gebietsschema der Benutzenden zu überschreiben, können Sie den Anfrageparameter `afAcceptLang` übergeben, um das Gebietsschema zu erzwingen. So erzwingt beispielsweise die folgende URL die Darstellung des Formulars im kanadisch-französischen Gebietsschema:
+Um das Browser-Gebietsschema von Benutzern zu überschreiben, können Sie den `afAcceptLang`-Anforderungsparameter übergeben, um das Gebietsschema zu erzwingen. So erzwingt beispielsweise die folgende URL die Darstellung des Formulars im kanadisch-französischen Gebietsschema:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * Das für den Benutzer bzw. die Benutzerin festgelegte Browser-Gebietsschema, das in der Abfrage über den Header `Accept-Language` spezifiziert wird.

@@ -6,15 +6,15 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 95%
 
 ---
 
 # Konfigurieren von Dankesnachrichten und Umleitungs-URLs
 
-Die Erfahrungen im Anschluss an die Übermittlung beeinflussen die Benutzerzufriedenheit und die Formularausfüllungsraten erheblich. Der universelle Editor von Adobe bietet umfangreiche Optionen zum Konfigurieren dessen, was Benutzende nach dem Senden von Formularen zu sehen bekommen, sei es durch personalisierte Dankesnachrichten oder strategische Umleitungen zu bestimmten Seiten.
+Die Erfahrungen im Anschluss an die Übermittlung beeinflussen die Benutzerzufriedenheit und die Formularabschlussraten erheblich. Der universelle Editor von Adobe bietet umfangreiche Optionen zum Konfigurieren dessen, was Benutzende nach dem Senden von Formularen zu sehen bekommen, sei es durch personalisierte Dankesnachrichten oder strategische Umleitungen zu bestimmten Seiten.
 
 Dieser Artikel enthält detaillierte Anleitungen zur Implementierung von Dankesnachrichten und Umleitungs-URLs, einschließlich technischer Überlegungen, Best Practices und Richtlinien für das Benutzererlebnis, um die Effektivität Ihrer Formularübermittlungen zu maximieren.
 
@@ -93,16 +93,16 @@ Erstellen Sie im Feld **Nachrichteninhalt** mit dem Rich-Text-Editor Ihre Dankes
 
 ### Beispielimplementierung
 
-    Danke für Ihre Übermittlung.
+    Vielen Dank für Ihre Übermittlung!
     
-    Ihre Bewerbung ist eingegangen und erhält die Referenznummer #REF-2024-001234.
+    Ihre Anwendung wurde unter der Referenznummer #REF-2024-001234 empfangen und zugewiesen.
     
-    **Was geschieht als Nächstes:**
-    – Sie erhalten innerhalb von 15 Minuten eine Bestätigungs-E-Mail
-    – Unser Team wird Ihre Übermittlung innerhalb von 2 Werktagen überprüfen
-    – Wir werden Sie direkt kontaktieren, wenn zusätzliche Informationen benötigt werden
+    **Wie geht es weiter:**
+    - Sie erhalten innerhalb von 15 Minuten eine Bestätigungs-E-Mail
+    - Unser Team wird Ihre Übermittlung innerhalb von 2 Werktagen überprüfen
+    - Wir werden uns direkt mit Ihnen in Verbindung setzen, wenn zusätzliche Informationen benötigt werden
     
-    **Sie benötigen Hilfe?** Kontaktieren Sie unser Support-Team unter support@example.com
+    **Hilfe benötigen?** Kontaktieren Sie unser Supportteam unter support@example.com
 
 ## Konfigurieren von Umleitungs-URLs
 

@@ -14,7 +14,7 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '2112'
 ht-degree: 96%
 
 ---
@@ -343,7 +343,7 @@ Um die von den AEM Commerce-Seiten kommenden Ereignisdaten, wie etwa Kategorie u
 
 >[!AVAILABILITY]
 >
->Stellen Sie sicher, dass Sie Teil der korrekten __Produktprofile__ unter __Adobe Experience Platform__ und __Adobe Experience Platform-Datenerfassung__ sind. Arbeiten Sie bei Bedarf mit Ihrem Systemadministrator zusammen, um „Produktprofile“ unter ____ Admin Console [&#x200B; erstellen, zu aktualisieren oder zuzuweisen](https://adminconsole.adobe.com/)
+>Stellen Sie sicher, dass Sie Teil der korrekten __Produktprofile__ unter __Adobe Experience Platform__ und __Adobe Experience Platform-Datenerfassung__ sind. Arbeiten Sie bei Bedarf mit Ihrem Systemadministrator zusammen, um „Produktprofile“ unter __[Admin Console__ erstellen, zu aktualisieren oder zuzuweisen](https://adminconsole.adobe.com/)
 
 ### Erstellen eines Schemas mit einer Commerce-Feldergruppe {#create-schema}
 
@@ -494,6 +494,6 @@ __Profil-XDM-Ereignisse :__
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- Überblick über [[!DNL Data Connection] &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=de)
-- [[!DNL Data Connection] Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=de)
-- [Überblick zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)
+- [Überblick über [!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=de)
+- [Ereignisse [!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=de)
+- [Übersicht über Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de)

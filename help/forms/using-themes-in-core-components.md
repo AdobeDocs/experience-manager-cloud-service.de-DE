@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: d1e7f305c91f65ffe0bb043944310867e5947a02
 workflow-type: tm+mt
-source-wordcount: '3033'
-ht-degree: 90%
+source-wordcount: '3220'
+ht-degree: 88%
 
 ---
 
@@ -28,9 +28,9 @@ In diesem Artikel wird erläutert, wie Sie mit Designs benutzerdefinierte Ersche
 
 Forms as Cloud Service bietet die folgenden aufgelisteten Designs für auf Kernkomponenten basierende adaptive Formulare:
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 ## Grundlegendes zur Struktur der Designs
 
@@ -50,9 +50,9 @@ Ein Design ist ein Paket, das Formatierungs-Komponenten wie die CSS-Datei, JavaS
 
 Forms as a Cloud Service bietet die folgenden Designs zum Formatieren adaptiver Formulare für auf Kernkomponenten basierende adaptive Formulare:
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Sie können [jedes dieser Designs anpassen, um ein neues Design zu erstellen](#customize-a-theme).
 
@@ -104,9 +104,9 @@ Beginnen wir mit einem Prozess, um mithilfe von Designs ein Branding-Erlebnis f�
 
 Um ein Design für die auf Kernkomponenten basierenden adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs aus:
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Gehen Sie wie folgt vor, um ein Design zu klonen:
 
@@ -226,7 +226,7 @@ Um die Änderungen in der lokalen Umgebung in der Vorschau anzuzeigen und zu tes
 * 4.1 [Konfigurieren der lokalen Umgebung für Tests](#41-configure-a-local-environment-for-testing)
 * 4.2 [Testen des Designs anhand einer lokalen Umgebung](#42-test-the-theme-using-a-local-environment)
 
-##### 4.1. Konfigurieren der lokalen Umgebung für Tests
+##### 4.1. Konfigurieren einer lokalen Umgebung für Tests
 
 1. Öffnen Sie das Design-Projekt in Ihrer IDE. Öffnen Sie beispielsweise den Ordner `aem-forms-theme-canvas` im Visual Studio Code-Editor.
 1. Benennen Sie im Design-Ordner die `env_template`-Datei in eine `.env`-Datei um und fügen Sie die folgenden Parameter hinzu:
@@ -327,7 +327,7 @@ So stellen Sie das Design mithilfe der Frontend-Pipeline in Ihrer Cloud Service-
 * 5.2 [Übertragen der Änderungen in das Repository](#52-push-the-changes-to-the-repository)
 * 5.3 [Frontend-Pipeline hinzufügen](#53-add-the-frontend-pipeline)
 * 5.4 [Legen Sie die Node.js-Version auf 20 fest](#54-set-the-nodejs-version-to-20)
-* 5.5. [Ausführen der Frontend-Pipeline](#55-run-the-frontend-pipeline)
+* 5.5 [Ausführen der Frontend-Pipeline](#55-run-the-frontend-pipeline)
 
 ##### 5.1 Erstellen eines Repositorys für das Design
 
@@ -353,11 +353,11 @@ Sie benötigen ein Repository, um das Design bereitzustellen. Melden Sie sich be
    >* Um verschiedene Designs bereitzustellen, müssen Sie separate Frontend-Pipelines erstellen.
    >* Sie können beispielsweise dasselbe Repository, z. B. `custom-canvas-theme-repo`, für das Canvas-Design, das WKND-Design und das EASEL-Design verwenden. Um die Designs bereitzustellen, müssen Sie jedoch separate Frontend-Pipelines erstellen. Zukünftige Anpassungen für ein bestimmtes Design werden mithilfe der entsprechenden Frontend-Pipeline bereitgestellt.
 
-##### 5.2. Übertragen von Änderungen in das Repository
+##### 5.2. Übertragen der Änderungen in das Repository
 
 Nun können Sie die Änderungen in das Design-Repository Ihres AEM Forms-Cloud-Service übertragen.
 
-1. Navigieren Sie zum Stammverzeichnis des Design-Ordners. In diesem Fall lautet der Name des Design-Ordners `aem-forms-theme-canvas`.
+1. Navigieren Sie zum Stammverzeichnis des Design-Ordners.  In diesem Fall lautet der Name des Design-Ordners `aem-forms-theme-canvas`.
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal.
 1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus:
 
@@ -388,8 +388,8 @@ Das Design wird mithilfe der [Frontend-Pipeline](https://experienceleague.adobe.
 1. Wählen Sie je nach Cloud Service-Umgebung **[!UICONTROL Produktionsfremde Pipeline hinzufügen]** oder **[!UICONTROL Produktions-Pipeline hinzufügen]** aus. Hier ist beispielsweise **[!UICONTROL Produktions-Pipeline hinzufügen]** ausgewählt.
 1. Geben Sie im Dialogfeld **[!UICONTROL Produktions-Pipeline hinzufügen]** als Teil der **[!UICONTROL Konfigurationsschritte]** den Namen für Ihre Pipeline an. Beispielsweise lautet der Name der Pipeline `customcanvastheme`.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie die Optionen **[!UICONTROL Zielgerichtete Bereitstellung]** > **[!UICONTROL Frontend-Code]** in den Schritten 
-unter **[!UICONTROL Quell-Code]** aus.
+1. Wählen Sie die **[!UICONTROL Zielgruppenbereitstellung]** > die **[!UICONTROL Frontend-Code]**-Optionen in aus.
+Die Schritte **[!UICONTROL Source-]**.
 1. Wählen Sie die Werte für das **[!UICONTROL Repository]** und die **[!UICONTROL Git-Verzweigung]** aus, die Ihre neuesten Änderungen aufweisen. Hier lautet beispielsweise der ausgewählte Repository-Name `custom-canvas-theme-repo` und die Git-Verzweigung `main`.
 1. Wählen Sie als **[!UICONTROL Code-Speicherort]** „`/`“ aus, wenn sich Ihre Änderungen im Stammordner befinden.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
@@ -417,7 +417,7 @@ So legen Sie die Node.js-Version mithilfe der Pipeline-Konfiguration auf 20 fest
 ![Pipeline-Konfiguration](/help/forms/assets/pipeline-config.png)
 
 
-##### 5.5. Ausführen der Frontend-Pipeline
+##### 5.5 Ausführen der Frontend-Pipeline
 
 1. Gehen Sie zum **Pipelines** und suchen Sie Ihre Frontend-Pipeline.
 1. Klicken Sie auf **[!UICONTROL Ausführen]** .
@@ -474,4 +474,4 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 * [Festlegen des Layouts von Formularen für verschiedene Bildschirmgrößen und Gerätetypen](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generieren eines Datensatzdokuments für adaptive Formulare (Kernkomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Erstellen eines adaptiven Formulars mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
-* [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Beispielthemen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)

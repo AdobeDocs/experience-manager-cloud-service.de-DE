@@ -8,7 +8,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1934'
 ht-degree: 62%
 
 ---
@@ -24,7 +24,7 @@ Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/
 >
 >Eine Produktions-Pipeline kann erst eingerichtet werden, wenn Folgendes gegeben ist:
 >
->* Das Programm ist erstellt. 
+>* Das Programm ist erstellt.
 >* Das Git-Repository hat mindestens eine Verzweigung.
 >* Die Produktions- und Staging-Umgebungen sind erstellt.
 
@@ -243,9 +243,9 @@ Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für 
 
 | Problem | Lösungsvorschläge |
 | --- | --- |
-| Buildergebnisse sind inkonsistent | ・ Deaktiviert die Zwischenspeicherung für betroffene Module.<br>・ Überprüfen des Plug-in-Verhaltens (insbesondere `exec`/`antrun` Plug-ins). |
-| Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Überprüfen Sie, ob die meisten Module häufig wechseln. |
-| Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb der Maven-Abhängigkeitsverfolgung liegen.<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
+| Buildergebnisse sind inkonsistent | ・ Deaktivierung der Zwischenspeicherung für betroffene Module.<br>・ Überprüfen des Plug-in-Verhaltens (insbesondere `exec`/`antrun`-Plug-ins). |
+| Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Prüfen Sie, ob die meisten Module häufig wechseln. |
+| Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb des Maven-Abhängigkeits-Trackings liegen<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
 
 Siehe [Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline) um die intelligente Erstellung zu aktivieren.
 

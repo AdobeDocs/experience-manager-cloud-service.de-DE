@@ -7,8 +7,8 @@ role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
 source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 61%
+source-wordcount: '635'
+ht-degree: 63%
 
 ---
 
@@ -21,7 +21,7 @@ Eine Commerce-Lösung kann eine beliebige Lösung sein, von einer Lösung für d
 * Das Unternehmen muss Produktinhalte mit seinem eigenen Lebenszyklus effizient und kanalübergreifend verwalten
 * Erstellung komplexer und personalisierter Customer Journeys für verschiedene Leads
 * Fähigkeit, sich schnell anzupassen und Innovationen am Back- und Frontend zu entwickeln
-* Betrieb einer skalierbaren und stabilen E2E-Infrastruktur, die für Spitzenleistung entwickelt wurde (Flash Sale, Black Friday, …), einschließlich einheitlicher Suche- und Cache-Verwaltung
+* Betrieb einer skalierbaren und stabilen E2E-Infrastruktur, die für Spitzenleistung entwickelt wurde (Flash Sale, Black Friday, …) einschließlich einheitlicher Suche und Cache-Verwaltung
 
 Diese Komplexität sorgt für potenzielle Schwachstellen, erhöhte Gesamtbetriebskosten, Verzögerungen und eine verminderte Wertschöpfung. Aus diesem Grund wurde das Commerce Integration Framework (CIF) entwickelt, einem Add-on für Experience Manager ist. CIF erweitert Experience Manager um Commerce-Funktionen und standardisiert die Integration mit Commerce-Engines. Das Ergebnis ist eine zukunftssichere, stabile und skalierbare Lösung mit niedrigeren Gesamtbetriebskosten (TCO). Sie ermöglicht technische und geschäftliche Innovationen mit agilen Tools und nahtlos integrierten Funktionen, um ansprechende Commerce-Erlebnisse zu gestalten.
 

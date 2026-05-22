@@ -6,14 +6,14 @@ role: Admin, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1522'
+ht-degree: 97%
 
 ---
 
 # Varianten generieren – in AEM-Editoren integriert {#generate-variations-integrated-in-aem-editors}
 
-Wenn Sie nach einer Möglichkeit suchen, Ihre digitalen Kanäle zu optimieren und die Inhaltserstellung zu beschleunigen, können Sie die in den AEM-Editoren integrierte Funktion „Varianten generieren“ verwenden. 
+Wenn Sie nach einer Möglichkeit suchen, Ihre digitalen Kanäle zu optimieren und die Inhaltserstellung zu beschleunigen, können Sie die in den AEM-Editoren integrierte Funktion „Varianten generieren“ verwenden.
 
 Die Funktion „Varianten generieren“ verwendet generative künstliche Intelligenz (KI), um Inhaltsvarianten basierend auf Ihren Eingaben zu erstellen. Nachdem Sie Varianten erstellt haben, können Sie den Inhalt auf Ihrer Website verwenden und deren Erfolg außerdem mithilfe der Funktion [Experimente](https://www.aem.live/docs/experimentation) von [Edge Delivery Services](/help/edge/overview.md) messen.
 
@@ -104,10 +104,10 @@ Um Varianten des Inhalts zu generieren, müssen Sie die gewünschten Änderungen
 
 Sie können auch **Modifikatoren** angeben, um mehr Kontext bereitzustellen:
 
-* **Eine Web-Seite referenzieren**
+* **Referenzieren einer Web-Seite**
 Geben Sie eine URL für mehr Kontext an.
 * **Inhaltsübersicht hochladen**
-Aktualisieren Sie eine `.docx`-Datei mit Details zur Inhaltsübersicht (10 MB oder weniger).
+Aktualisieren Sie eine `.docx` Datei mit Details zur Inhaltsbeschreibung (10 MB oder weniger).
 
 ### Generieren einer Kopie {#generate-copy}
 
@@ -326,13 +326,13 @@ Der Zugriff über den [AEM-Inhaltsfragmenteditor](/help/sites-cloud/administerin
 
 Weitere Informationen finden Sie auch unter:
 
-* [GenAI – Generieren von Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Experimente mit Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [Generieren von GenAI-Varianten auf GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
 * [Generative KI in Experience Cloud-Produkten](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai)
 
    * [Generative KI in Experience Cloud-Produkten – Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai#aem)
 
-* [Landingpage für „Varianten generieren“ in Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+* [Generieren von Varianten-Landingpages in Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
 * [Generative KI in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 

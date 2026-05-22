@@ -7,8 +7,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 99%
+source-wordcount: '708'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 99%
 
 * (Nur für Sandboxes) Nach der Einführung in den Service [erstellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=de) und [nutzen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=de) Sie Produktions- und Nicht-Produktions-Pipelines. Dadurch wird Ihre Umgebung um die neuesten Funktionen von [!DNL AEM Forms] as a Cloud Service erweitert.
 
-Sie können Forms as a Cloud Service verwenden, um ein adaptives Formular (digitale Registrierung) zu erstellen oder eine Kundenkommunikation zu generieren. Führen Sie nach Abschluss des [Onboardings](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de) bei [!DNL Adobe Experience Manager] as a Cloud Service eine der folgenden Aktionen aus, um die Funktionen für die digitale Registrierung oder die Kundenkommunikation zu aktivieren. <!--You can also enable both the features-->:
+Sie können Forms as a Cloud Service verwenden, um ein adaptives Formular (digitale Registrierung) zu erstellen oder eine Kundenkommunikation zu generieren. Führen Sie nach Abschluss [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=de) für die [!DNL Adobe Experience Manager] as a Cloud Service die folgenden Schritte aus, um die Funktionen &quot;Forms - Digitale Registrierung“ oder „Kundenkommunikation“ zu aktivieren. <!--You can also enable both the features-->:
 
 1. Melden Sie sich bei Cloud Manager an und öffnen Sie Ihre AEM Forms as a Cloud Service-Instanz.
 1. Öffnen Sie die Option „Programm bearbeiten“ und navigieren Sie zur Registerkarte „Lösungen und Add-ons“:

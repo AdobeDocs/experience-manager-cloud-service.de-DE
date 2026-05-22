@@ -6,7 +6,7 @@ role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
 source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Damit AEM-Admins schnell Sites erstellen können, die an geschäftliche Anforder
 Da die [Erstellung einer Site](/help/sites-cloud/administering/site-creation/create-site.md) in der Regel in den Zuständigkeitsbereich von AEM-Admins fällt, finden Sie in der Administrationsdokumentation weitere Informationen zum Anpassen von Site-Vorlagen und -Designs.
 
 * [Site-Vorlagen](/help/sites-cloud/administering/site-creation/site-templates.md): Erfahren Sie, wie AEM-Site-Vorlagen verwendet werden können, um die Struktur und den anfänglichen Inhalt einer Site vorab zu definieren, damit Sie schnell neue Sites erstellen können.
-* [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md): Erfahren Sie, wie AEM-Site-Designs verwendet werden können, um den Stil und das Design Ihrer Site anzupassen.
+* [Site-Designs](/help/sites-cloud/administering/site-creation/site-themes.md) - Erfahren Sie, wie AEM-Site-Designs verwendet werden können, um den Stil und das Design Ihrer Site anzupassen.
 
 >[!TIP]
 >

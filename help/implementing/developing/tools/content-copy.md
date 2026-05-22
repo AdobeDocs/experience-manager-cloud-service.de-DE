@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 71%
+source-wordcount: '1592'
+ht-degree: 70%
 
 ---
 
@@ -130,13 +130,13 @@ Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten
    >* in der Umgebung eine laufende Pipeline oder ein Vorgang zum Kopieren von Inhalten in Bearbeitung ist.
    >* Die Umgebung befindet sich im Ruhezustand oder fährt hoch.
 
-1. Geben Sie im Dialogfeld **Inhalt kopieren** die Quelle und das Ziel für die Inhaltskopie-Aktion an.
+1. Geben **im Dialogfeld „Inhalt kopieren** die Quelle und das Ziel für die Inhaltskopie-Aktion an.
 
    ![Kopieren von Inhalten](assets/copying-content.png)
 
    * Inhalte können nur aus einer höheren Umgebung in eine niedrigere Umgebung oder zwischen Entwicklungs- / RDE-Umgebungen kopiert werden, in denen die Hierarchie der Umgebungen wie folgt lautet (von der höchsten zur niedrigsten):
       * Produktion
-      * Staging  
+      * Staging
       * Entwicklung/RDE
    * Standardmäßig ist die programmübergreifende Inhaltskopie deaktiviert. Auf Kundenanfrage kann sie jedoch aktiviert werden, wodurch ein zusätzliches Eingabefeld **Zielprogramm** verfügbar wird.
 
@@ -156,7 +156,7 @@ Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten
 
 Der Kopiervorgang wird gestartet. Der Status des Kopiervorgangs wird für das ausgewählte Content-Set in der Konsole angezeigt.
 
-## Inhaltskopie-Aktivität {#copy-activity}
+## Aktivität „Inhaltskopie“ {#copy-activity}
 
 Sie können den Status der Kopierprozesse auf der Seite **Aktivität zum Kopieren von Inhalten** überwachen.
 
@@ -168,14 +168,14 @@ Sie können den Status der Kopierprozesse auf der Seite **Aktivität zum Kopiere
 
 ![Aktivität „Inhalt kopieren“](assets/copy-content-activity.png)
 
-### Inhaltskopie-Status {#statuses}
+### Status der Inhaltskopie {#statuses}
 
 Sobald das Kopieren von Inhalten beginnt, kann der Prozess einen der folgenden Status haben.
 
 | Status | Beschreibung |
 | --- | --- |
-| In Bearbeitung | Die Inhaltskopie wird gerade durchgeführt. |
-| Fehlgeschlagen | Der Vorgang der Inhaltskopie ist fehlgeschlagen. |
+| In Bearbeitung | Der Vorgang zum Kopieren von Inhalten wird ausgeführt. |
+| Fehlgeschlagen | Fehler beim Kopieren von Inhalten. |
 | Abgeschlossen | Die Inhaltskopie wurde erfolgreich abgeschlossen. |
 | Abgebrochen | Ein Benutzer bricht einen Vorgang zum Kopieren von Inhalten ab, nachdem er ihn gestartet hat. |
 

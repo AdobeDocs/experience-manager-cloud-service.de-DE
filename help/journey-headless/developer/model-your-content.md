@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 100%
+source-wordcount: '1865'
+ht-degree: 98%
 
 ---
 
@@ -166,7 +166,7 @@ Ein Inhaltsfragmentmodell beschreibt eine Entität.
 Innerhalb eines Modells:
 
 1. Mit **Datentypen** können Sie die einzelnen Attribute definieren.
-Definieren Sie beispielsweise das Feld mit dem Namen eines Lehrers als **Text** und dessen Dienstjahre als **Zahl**.
+Definieren Sie beispielsweise das Feld mit dem Namen einer Lehrkraft als **Text** und ihre Dienstjahre als **Zahl**.
 1. Mit den Datentypen **Inhaltsreferenz** und **Fragmentreferenz** können Sie Beziehungen zu anderen Inhalten in AEM erstellen.
 1. Mit dem Datentyp **Fragmentreferenz** können Sie mehrere Ebenen der Struktur umsetzen, indem Sie die Inhaltsfragmente verschachteln (je nach Modelltyp). Dies ist für Ihre Inhaltsmodellierung von entscheidender Bedeutung.
 
@@ -197,7 +197,7 @@ Zwei Datentypen bieten Verweise auf Inhalte außerhalb eines bestimmten Fragment
 Dies bietet einen einfachen Verweis auf andere Inhalte beliebigen Typs.
 Sie können beispielsweise auf ein Bild an einer bestimmten Stelle verweisen.
 
-* **Fragmentreferenz**
+* **Fragmentverweis**
 Dies bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:

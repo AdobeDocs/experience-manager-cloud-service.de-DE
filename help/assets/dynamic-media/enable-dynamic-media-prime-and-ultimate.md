@@ -7,7 +7,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1210'
 ht-degree: 99%
 
 ---

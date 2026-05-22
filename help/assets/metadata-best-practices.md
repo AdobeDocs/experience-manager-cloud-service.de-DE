@@ -7,7 +7,7 @@ exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1426'
 ht-degree: 95%
 
 ---
@@ -137,7 +137,7 @@ Berücksichtigen Sie die folgenden Best Practices, um die Durchsuchbarkeit Ihrer
    1. Wählen Sie das Asset aus, für das Sie die Metadaten aktualisieren möchten, und klicken Sie auf **[!UICONTROL Eigenschaften]**.
    1. Navigieren Sie zur Registerkarte **[!UICONTROL Erweitert]** und klicken Sie unter **[!UICONTROL Für Suchbegriffe erhöhen]** auf **[!UICONTROL Hinzufügen]**. <br>Sie müssen das Standard-Metadatenschema verwenden, um die Suchbegriffe zu erhöhen.
    1. Geben Sie den Suchbegriff ein, für den Sie die Suche optimieren möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.<br>
-Sie können mehrere Suchbegriffe hinzufügen und sie so anordnen, dass sie Ihrer Priorität entsprechen.
+Sie können mehrere Keywords hinzufügen und sie nach Ihrer Priorität anordnen.
    1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 Verwenden Sie die hinzugefügten Suchbegriffe, um nach dem Asset zu suchen. Das Asset wird unter den obersten Suchergebnissen angezeigt.
 

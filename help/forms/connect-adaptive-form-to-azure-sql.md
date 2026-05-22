@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
 source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 15%
+source-wordcount: '718'
+ht-degree: 16%
 
 ---
 
@@ -53,7 +53,7 @@ Die Integration von Adaptive Forms mit Azure SQL bietet mehrere Vorteile:
 * Festlegen der Port-Weiterleitung in der Cloud-Umgebung mit:
    * **portOrigin**: Zwischen `30000–30999`
    * **portDest**: `1433` (Standard-Port für Azure SQL)
-Beispiel: `portOrigin: 30433 → portDest: 1433`
+Zum Beispiel: `portOrigin: 30433 → portDest: 1433`
 
      >[!NOTE]
      > 

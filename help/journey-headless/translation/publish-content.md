@@ -7,7 +7,7 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1372'
 ht-degree: 100%
 
 ---
@@ -95,7 +95,7 @@ Der Prozess unterscheidet sich jedoch geringfügig, je nachdem, ob Sie sich für
 
 ### Aktualisieren eines automatisch erstellten Übersetzungsprojekts {#updating-automatic-project}
 
-1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**.  Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
+1. Gehen Sie zu **Navigation** > **Assets** > **Dateien**. Beachten Sie, dass Headless-Inhalte in AEM als Assets gespeichert werden. Diese werden auch als Inhaltsfragmente bezeichnet.
 1. Wählen Sie den Sprachstamm Ihres Projekts aus. In diesem Fall haben wir `/content/dam/wknd/en` ausgewählt.
 1. Wählen Sie die Leistenauswahl aus und zeigen Sie das Bedienfeld **Verweise** an.
 1. Wählen Sie **Sprachkopien** aus.

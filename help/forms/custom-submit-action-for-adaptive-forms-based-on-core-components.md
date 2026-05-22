@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 26%
+source-wordcount: '1202'
+ht-degree: 31%
 
 ---
 
@@ -53,7 +53,7 @@ Das folgende Diagramm zeigt die Schritte zum Erstellen einer benutzerdefinierten
 
    **Ihr Projekt ist bereit.**
 
-   Wenn der Befehl erfolgreich abgeschlossen wurde, wird in Ihrem lokalen Verzeichnis ein neuer Ordner erstellt. Dieser Ordner wird nach Ihrem Programm benannt (z. B. app-id). Dieser Ordner enthält alle Dateien und den Code, die Sie aus Ihrem AEM as a Cloud Service-Git-Repository heruntergeladen haben. Sie finden `<appid>` für Ihr AEM-Projekt in der Datei `archetype.properties`.
+   Wenn der Befehl erfolgreich abgeschlossen wurde, wird in Ihrem lokalen Verzeichnis ein neuer Ordner erstellt. Dieser Ordner wird nach Ihrem Programm benannt (z. B. app-id). Dieser Ordner enthält alle Dateien und den Code, die von Ihrem AEM as a Cloud Service-Git-Repository heruntergeladen wurden. Sie finden `<appid>` für Ihr AEM-Projekt in der Datei `archetype.properties`.
 
    ![Archetyp-Eigenschaften](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
@@ -86,7 +86,7 @@ Das folgende Diagramm zeigt die Schritte zum Erstellen einer benutzerdefinierten
    `Important`: Ersetzen Sie `<app-id>` durch Ihre tatsächliche Anwendungs-ID.
 
 1. Erstellen Sie eine neue Konfigurationsdatei.
-Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.content.xml`.
+Erstellen Sie im Ordner `customsubmitaction` eine neue Datei namens `.content.xml`.
 
    ![Konfigurationsdatei erstellen](/help/forms/assets/custom-submit-action-create-config-folder.png)
 
@@ -244,7 +244,7 @@ Erstellen Sie im Ordner `customsubmitaction` eine neue Datei mit dem Namen `.con
    ![Formular bearbeiten](/help/forms/assets/custom-submit-action-edit-af.png)
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
 1. Wählen Sie in **[!UICONTROL Dropdown-Liste]**&#x200B;Übermittlungsaktion“ die Übermittlungsaktion aus. Wählen Sie beispielsweise die Übermittlungsaktion wie `Custom Submit Action` aus.
 

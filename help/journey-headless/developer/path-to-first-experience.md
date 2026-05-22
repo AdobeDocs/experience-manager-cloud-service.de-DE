@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 96%
+source-wordcount: '1941'
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben
 * Kenntnis darüber, welche Tools und AEM-Konfigurationen erforderlich sind
 * Kenntnis der Best Practices, mit denen Sie für reibungslose Headless-Abläufe sorgen, die Inhaltsgenerierung effizient gestalten und die schnelle Bereitstellung von Inhalten sicherstellen können
 
-Wir möchten, dass Sie auf diesem grundlegenden Wissen aufbauen, um die Leistungsfähigkeit und Flexibilität von AEM Headless vollständig zu verstehen, damit Sie es für Ihre eigenen Projekte nutzen können.
+Ziel ist es, dass Sie auf diesem grundlegenden Wissen aufbauen, um das Potenzial und die Flexibilität von AEM Headless zu verstehen, damit Sie es für Ihre eigenen Projekte nutzen können.
 
 Fahren Sie dazu mit der AEM Headless-Journey mit [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle“ fort, &#x200B;](/help/journey-headless/developer/model-your-content.md) dem Sie lernen, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
 
@@ -153,4 +153,4 @@ Weitere Ressourcen:
 * [Einrichtung von Headless](/help/headless/introduction.md#getting-started) – kurze Einführung in die Headless-Funktionen von AEM für Anwender mit AEM-Vorkenntnissen
 * [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) – technische Dokumentation zu Inhaltsfragmentmodellen
 * [Arbeiten mit Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) – technische Dokumentation zu Inhaltsfragmenten
-* [AEM-GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/headless/graphql-api/content-fragments.md) – technische Dokumentation zur GraphQL-API
+* [Inhalt mit GraphQL abfragen](/help/headless/graphql-api/content-fragments.md) – technische Dokumentation zur GraphQL-API

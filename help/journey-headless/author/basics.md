@@ -7,8 +7,8 @@ feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 98%
+source-wordcount: '1737'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie eigene Inhalte 
 
 ## Grundlegende Handhabung {#basic-handling}
 
-Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in die Verwendung von AEM...aber nichts ersetzt das Erlebnis, sich anzumelden und zu versuchen, das System zu verwenden.
+Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in die Verwendung von AEM….. Nichts ersetzt jedoch das Erlebnis, sich anzumelden und zu versuchen, das System zu verwenden.
 
 ### Authoring, Vorschau und Veröffentlichung {#author-preview-publish}
 
@@ -92,7 +92,7 @@ Nach Auswahl des Fragments sind weitere Aktionen verfügbar (sofern zutreffend):
 
 >[!NOTE]
 >
->Aktionen wie Veröffentlichen, Veröffentlichung aufheben, Löschen, Verschieben, Umbenennen, Kopieren lösen einen asynchronen Vorgang aus. Der Fortschritt dieses Vorgangs kann über die AEM-Benutzeroberfläche für asynchrone Vorgänge überwacht werden.
+>Aktionen wie Veröffentlichen, Veröffentlichung aufheben, Löschen, Verschieben, Umbenennen, Kopieren lösen einen asynchronen Auftrag aus. Der Fortschritt dieses Auftrags kann über die AEM-Benutzeroberfläche für asynchrone Aufträge überwacht werden.
 
 ## Erstellung von Inhaltsfragmenten {#authoring-content-fragments}
 

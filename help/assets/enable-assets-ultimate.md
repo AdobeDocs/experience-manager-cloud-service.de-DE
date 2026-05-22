@@ -7,8 +7,8 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 99%
+source-wordcount: '1423'
+ht-degree: 98%
 
 ---
 
@@ -130,7 +130,7 @@ Ihre Instanz von AEM as a Cloud Service in der Admin Console umfasst jetzt die f
 
 ![AEM Assets-Produktprofile](assets/aem-assets-product-profiles.png)
 
-Wenn Content Hub aktiviert sein muss, klicken Sie auf das Symbol „Weitere Optionen“ (…) für den Programmnamen in Cloud Manager und wählen Sie **[!UICONTROL Programm bearbeiten]** aus. Erweitern Sie **[!UICONTROL Assets Ultimate]** und klicken Sie auf **[!UICONTROL Content Hub]**. Dieser Schritt aktiviert den Content Hub für Assets Ultimate. Es wird eine neue Instanz in AEM Assets as a Cloud Service für die Admin Console mit dem Suffix `delivery` erstellt:
+Wenn Content Hub aktiviert sein muss, klicken Sie auf Weitere Optionen (…) auf dem Programmnamen in Cloud Manager und wählen Sie **[!UICONTROL Programm bearbeiten]**. Erweitern Sie **[!UICONTROL Assets Ultimate]** und klicken Sie auf **[!UICONTROL Content Hub]**. Dieser Schritt aktiviert den Content Hub für Assets Ultimate. Es wird eine neue Instanz in AEM Assets as a Cloud Service für die Admin Console mit dem Suffix `delivery` erstellt:
 
 ![Neue Instanz für Content Hub](assets/new-instance-content-hub.png)
 

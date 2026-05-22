@@ -6,7 +6,7 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '931'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ In den folgenden Abschnitten werden die einzelnen erforderlichen Aufgaben beschr
 
 Sie benötigen ein neues Cloud Manager-Programm, in dem Sie SecurBank installieren können.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/ ) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus
 
 1. Erstellen Sie ein neues Sandbox-Programm für die SecurBank-Anwendung.
 

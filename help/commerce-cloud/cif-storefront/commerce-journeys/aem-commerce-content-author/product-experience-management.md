@@ -7,8 +7,8 @@ role: Admin
 index: false
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 95%
+source-wordcount: '1170'
+ht-degree: 94%
 
 ---
 
@@ -119,4 +119,4 @@ Sie können jetzt Produkterlebnisse mit AEM Content and Commerce verwalten. Für
 
 * [Authoring von Commerce-Erlebnissen](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
 * [Produkt-Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
-* [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [Inhaltsfragment-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
