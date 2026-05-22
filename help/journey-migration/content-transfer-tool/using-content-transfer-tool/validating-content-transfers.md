@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 96%
+source-wordcount: '1228'
+ht-degree: 92%
 
 ---
 
@@ -24,8 +24,8 @@ Benutzende können zuverlässig ermitteln, ob der gesamte vom Content Transfer T
 
 Die Validierung eines Inhaltstransfers ist eine optionale Funktion. Durch die Aktivierung dieser Funktion verlängert sich der zeitliche Aufwand bei der Durchführung sowohl einer Extraktion als auch einer Aufnahme. Um die Funktion zu verwenden, aktivieren Sie sie in der Systemkonsole der AEM-Quellumgebung, indem Sie die folgenden Schritte ausführen:
 
-1. Sie gelangen zur Adobe Experience Manager Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools – Vorgänge – Web-Konsole** gehen oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
-1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extrahierungs-Service**
+1. Navigieren Sie zur Adobe Experience Manager-Web-Konsole in Ihrer Quellinstanz, indem Sie zu **Tools - Vorgänge - Web-Konsole** wechseln oder direkt zur URL unter *https://serveraddress:serverport/system/console/configMgr*
+1. Suchen Sie nach **Konfiguration des Content Transfer Tool-Extraktions-Service**
 1. Über die Schaltfläche mit dem Stiftsymbol können Sie die Konfigurationswerte bearbeiten
 1. Aktivieren Sie die Einstallung **Aktivieren der Migrationsvalidierung während der Extraktion**, und klicken Sie dann auf **Speichern**:
 
@@ -130,7 +130,7 @@ Migration validation took 0 minutes
 
 Das obige Fehlerbeispiel wurde durch Ausführen einer Aufnahme und anschließendes erneutes Ausführen derselben Aufnahme mit deaktiviertem Löschen erreicht, sodass während der Aufnahme keine Knoten beteiligt waren – alles war bereits auf dem Ziel vorhanden.
 
-Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die Benutzeroberfläche der **Aufnahmeaufträge** in Cloud Acceleration Manager aufgerufen werden. Klicken Sie dazu auf die drei Punkte (**…**) und dann in der Dropdown-Liste auf **Validierungsbericht**, um den Validierungsbericht anzuzeigen.
+Der Validierungsbericht wird nicht nur in das Aufnahmeprotokoll aufgenommen, sondern kann auch über die Benutzeroberfläche der **Aufnahmeaufträge** in Cloud Acceleration Manager aufgerufen werden. Klicken Sie dazu auf die drei Punkte (**…**)  Klicken Sie dann **Validierungsbericht** in der Dropdown-Liste, um den Validierungsbericht anzuzeigen.
 
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -141,23 +141,23 @@ Weitere Informationen zur Prinzipalmigration und dazu, warum diese erforderlich 
 
 Nach erfolgreichem Abschluss der Extraktion und Aufnahme ist eine Zusammenfassung und ein Bericht zur Prinzipalmigration verfügbar. Anhand dieser Informationen lässt sich überprüfen, welche Gruppen erfolgreich migriert wurden, und ggf. feststellen, warum einige Gruppen nicht migriert wurden.
 
-Navigieren Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmevorgänge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte (**…**) für diese Aufnahme und dann in der Dropdown-Liste auf **Prinzipalzusammenfassung anzeigen**.
+Navigieren Sie zu Cloud Acceleration Manager, um diese Informationen anzuzeigen. Klicken Sie auf Ihre Projektkarte und dann auf die Karte für den Inhaltstransfer. Navigieren Sie zu **Aufnahmeaufträge** und suchen Sie nach der zu überprüfenden Aufnahme. Klicken Sie auf die drei Punkte **…** Klicken Sie für diese Aufnahme **der Dropdown** Liste auf Prinzipalzusammenfassung anzeigen .
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Um den vollständigen kommagetrennten (CSV) Prinzipalmigrationsbericht herunterzuladen, wählen Sie **Prinzipalmigrationsbericht** aus der Dropdown-Liste unter **Datei herunterladen…** und klicken Sie auf die Schaltfläche **Herunterladen**. Beachten Sie außerdem, dass sich am Ende dieses Berichts der Benutzerbericht befindet, der für die Benutzerverwaltung nach der Migration verwendet werden kann.
+Es wird ein Dialogfeld mit den Zusammenfassungsinformationen angezeigt. Verwenden Sie die Hilfesymbole, um eine umfassendere Beschreibung zu lesen. Um den vollständigen kommagetrennten (CSV-)Bericht zur Prinzipalmigration herunterzuladen, wählen Sie aus der Dropdown-Liste unter **Datei herunterladen** die Option **Bericht zur Prinzipalmigration** aus und klicken Sie auf die Schaltfläche **Herunterladen**. Beachten Sie außerdem, dass sich am Ende dieses Berichts der Benutzerbericht befindet, der für die Benutzerverwaltung nach der Migration verwendet werden kann.
 
 ![Bild](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 Im Bericht „Prinzipalmigration“ wird Folgendes angegeben:
 
 * Jede migrierte Gruppe und der erste Inhaltspfad, der die Migration dieser Gruppe ausgelöst hat. Die Gruppe kann sich auch auf anderen Pfaden befinden, es wird jedoch nur der erste gemeldet, der für eine bestimmte Gruppe gefunden wird. Es wird auch gemeldet, ob der Pfad in einer ACL- oder einer CUG-Richtlinie gefunden wurde.
-* Jede Gruppe, die als lokale Gruppe migriert wird, hat das Wort „local“ in der Zeile der Gruppe.
+* Bei jeder Gruppe, die als lokale Gruppe migriert wird, steht das Wort „lokal“ in der jeweiligen Gruppenzeile.
 * Jede nicht migrierte Gruppe und der Grund, aus dem sie nicht migriert wurde.  In der Regel liegt einer der folgenden Gründe vor:
    * Es handelt sich um eine integrierte Gruppe
    * Sie befindet sich bereits im Zielsystem
    * Sie befindet sich nicht in einer ACL- oder CUG-Richtlinie für den migrierten Inhalt
-   * Sie verfügt über ein doppeltes eindeutiges Feld (eines der Felder „rep:principalName“, „rep:authorizableId“, „jcr:uuid“ oder „rep:externalId“ befindet sich bereits im Ziel, diese müssen jedoch alle eindeutig sein).
+   * Es gibt ein doppeltes eindeutiges Feld (eines von rep:principalName, rep:authorizableId, jcr:uuid oder rep:externalId befindet sich bereits im Ziel, aber diese müssen alle eindeutig sein)
 
 ## Fehlerbehebung {#troubleshooting}
 

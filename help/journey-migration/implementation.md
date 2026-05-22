@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2407'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Dieses Dokument zielt auf Folgendes ab:
 
 * Ihnen eine Einführung in Cloud Manager, die fortwährende Integration von AEM und das für die Bereitstellung von Code für AEM as a Cloud Service benutzte Bereitstellungs-Framework zu geben.
 * Sie auf den neuesten Stand des Content Transfer Tools zu bringen
-* Ihnen eine Beschreibung der Code-Refaktorierungs-Tools an die Hand zu geben, die Sie verwenden müssen, um Ihren Code für AEM as a Cloud Service zu modernisieren  
+* Ihnen eine Beschreibung der Code-Refaktorierungs-Tools an die Hand zu geben, die Sie verwenden müssen, um Ihren Code für AEM as a Cloud Service zu modernisieren
 
 ## Verwenden von Cloud Manager {#using-cloud-manager}
 
@@ -227,7 +227,7 @@ Im folgenden Abschnitt werden die wichtigen Schritte und zugehörigen Aufgaben b
    * Segmentspeichergröße
    * Indexspeichergröße
    * Anzahl der Seiten
-   * Anzahl der Assets 
+   * Anzahl der Assets
    * Anzahl der Anwender und Gruppen
 * Überprüfen Sie, ob die folgenden Funktionen für die AEM-Quelle aktiviert sind (auch in AEM as a Cloud Service erforderlich):
    * Smart-Tagging

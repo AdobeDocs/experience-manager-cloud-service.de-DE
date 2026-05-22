@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '720'
 ht-degree: 100%
 
 ---
@@ -95,7 +95,7 @@ Mit der Karte „Inhaltstransfer“ können Sie den Inhaltstransfer von Ihrer ak
 
 In diesem Abschnitt erfahren Sie mehr über die Aktivitätskarte „Inhaltstransfer“:
 
-1. Klicken Sie in der Aktivitätskarte **Inhaltsübertragung** auf **Überprüfen**. 
+1. Klicken Sie in der Aktivitätskarte **Inhaltsübertragung** auf **Überprüfen**.
 
    ![Inhaltstransfer – Überprüfung](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
