@@ -8,8 +8,8 @@ exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
-source-wordcount: '2839'
-ht-degree: 95%
+source-wordcount: '2908'
+ht-degree: 96%
 
 ---
 
@@ -544,7 +544,7 @@ Um eine produkt- und kontextbezogene Zusammenarbeit zu ermöglichen, stellt die 
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 
-Der Inhaltsfragment-Editor bietet Autorinnen und Autoren die Möglichkeit, ihre Änderungen in einer externen Frontend-Anwendung in der Vorschau anzuzeigen. Dazu muss das **[Standard-URL-Muster](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** definiert sein, um die Schaltfläche **Vorschau** in der oberen Symbolleiste des Editors zu aktivieren. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
+Der Inhaltsfragmenteditor bietet Autorinnen und Autoren die Möglichkeit, die Vorschau von Bearbeitungen in einer externen Frontend-Anwendung anzuzeigen. Dazu muss das **[Standard-URL-Muster](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** definiert sein, um die Schaltfläche **Vorschau** in der oberen Symbolleiste des Editors zu aktivieren. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
 
 ## Veröffentlichen Ihres Fragments {#publish-content-fragment}
 
@@ -583,7 +583,7 @@ Im Bereich **Felder** sind alle Felder im Inhaltsfragment aufgeführt. Das Symbo
    <td><p> <img src="assets/cf-authoring-number-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Boolescher Wert</b></p> </td>
+   <td><p><b>Boolesch</b></p> </td>
    <td><p> <img src="assets/cf-authoring-boolean-icon.png"> </p></td>
   </tr>
   <tr>

@@ -8,8 +8,8 @@ exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 99%
+source-wordcount: '746'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Site-Vorlagen enthalten in der Regel grundlegende Site-Inhalte und -Struktur sow
 
 >[!NOTE]
 >
->Verwechseln Sie Site-Vorlagen nicht mit [Seitenvorlagen. &#x200B;](/help/sites-cloud/authoring/page-editor/templates.md) Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
+>Die Site-Vorlage ist nicht zu verwechseln mit [Seitenvorlagen.](/help/sites-cloud/authoring/page-editor/templates.md) Site-Vorlagen definieren die Gesamtstruktur einer Site. Eine Seitenvorlage definiert die Struktur und den anfänglichen Inhalt einer einzelnen Seite.
 
 ### Von Adobe bereitgestellte Site-Vorlagen {#adobe-templates}
 
@@ -95,7 +95,8 @@ Inhaltsautoren können jetzt mit der Bearbeitung beginnen!
 
 ## Site-Anpassung {#site-customization}
 
-Vorlagen sind hilfreich, um die grundlegende Struktur und den Stil einer Site schnell einzurichten. Die meisten Projekte erfordern jedoch einige zusätzliche Stile und Anpassungen. Site-Vorlagen helfen dabei, die Formatierung der Site zu entkoppeln. Frontend-Entwicklerinnen und -Entwickler benötigen keine Kenntnisse von AEM zur Gestaltung der Site und können unabhängig und parallel mit den Inhaltserstellenden arbeiten. Je nach Art des Projekts kann dies auf zweierlei Weise erfolgen.
+Vorlagen sind hilfreich, um die grundlegende Struktur und den Stil einer Site schnell einzurichten. Die meisten Projekte erfordern jedoch einige zusätzliche Stile und Anpassungen. Site-Vorlagen helfen, die Formatierung der Site zu entkoppeln, sodass Frontend-Entwicklerinnen und -Entwickler keine Kenntnisse von AEM benötigen, um die Site zu gestalten, und
+Sie arbeiten getrennt von und parallel zu den Erstellern von Inhalten. Je nach Art des Projekts kann dies auf zweierlei Weise erfolgen.
 
 * Bei Projekten mit AEM-Seitenerstellung mit dem universellen Editor und Bereitstellung über [Edge Delivery](/help/edge/overview.md) erfolgt die gesamte Formatierung im GitHub-Projekt.
    * Weitere Informationen finden Sie im Dokument [Erste Schritte – Entwickler-Tutorial für den universellen Editor](https://www.aem.live/developer/ue-tutorial).

@@ -6,7 +6,7 @@ feature: Authoring Screens
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '667'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um das Display über Screens Services Provider zu erste
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Geben Sie den Titel als **LoopingChannelDisplay** in **Display-Name** ein und klicken Sie auf **Erstellen**.
+1. Geben Sie den Titel als **LoopingChannelDisplay** in **Anzeigename** ein und klicken Sie auf **Erstellen**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 

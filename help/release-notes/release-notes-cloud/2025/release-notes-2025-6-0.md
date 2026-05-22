@@ -6,7 +6,7 @@ role: Admin
 exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
 source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1419'
 ht-degree: 99%
 
 ---
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2025.6.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version Juni 2025:
 
->[!VIDEO](https://video.tv.adobe.com/v/3470887?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3470887?captions=ger&quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -65,7 +65,7 @@ Weitere Informationen finden Sie im Artikel zur [Abschaffung](/help/release-note
 
 #### Veraltete Java-APIs und OSGi-Konfigurationen, deren Entfernungsdatum sich nähert {#deprecated-near-removals}
 
-Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigurationen anzuzeigen, die nicht mehr verwendet werden dürfen. Ausführliche Informationen, einschließlich der Zeitpläne für die Entfernung, finden Sie im Artikel zur Abschaffung.
+Erweitern Sie die unten stehende Liste, um die veralteten APIs und OSGi-Konfigurationen anzuzeigen, die nicht mehr verwendet werden dürfen. Ausführliche Informationen, einschließlich der Timelines für die Entfernung, finden Sie im Artikel zur Abschaffung.
 
 +++Erweitern Sie die Liste, um die veralteten Versionen anzuzeigen
 

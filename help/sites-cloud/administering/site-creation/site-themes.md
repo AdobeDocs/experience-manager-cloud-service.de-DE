@@ -8,8 +8,8 @@ exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
 source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 98%
+source-wordcount: '415'
+ht-degree: 93%
 
 ---
 
@@ -60,4 +60,4 @@ Adobe bietet ein Referenz-Design basierend auf Best Practices, das Sie als Grund
 
 Adobe bietet einen AEM-Site-Design-Assistenten als Satz von Skripten zum Erstellen neuer Site-Designs.
 
-[Der AEM-Site-Design-Assistent ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar.](https://github.com/adobe/aem-site-theme-builder) Um das Design anpassen zu können, ist Erfahrung in der Frontend-Entwicklung erforderlich.
+[Der AEM-Site-Design-Builder ist zusammen mit der Nutzungsdokumentation auf GitHub verfügbar.](https://github.com/adobe/aem-site-theme-builder) Um das Design anpassen zu können, ist Erfahrung in der Frontend-Entwicklung erforderlich.

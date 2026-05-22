@@ -6,8 +6,8 @@ feature: Authoring Screens
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 100%
+source-wordcount: '445'
+ht-degree: 91%
 
 ---
 
@@ -44,13 +44,13 @@ Gehen Sie wie folgt vor, um einer Anzeige einen Kanal zuzuweisen:
    1. Wählen Sie die Priorität aus.
 
       >[!NOTE]
-      >Die Priorität wird verwendet, um die Zuweisungen in eine Reihenfolge zu bringen, wenn mehrere Zuweisungen den Wiedergabekriterien entsprechen. Höhere Werte haben stets Vorrang vor niedrigeren Werten. Angenommen, es gibt zwei Kanäle, A und B. Wenn A die Priorität 1 und B die Priorität 2 hat, wird Kanal B angezeigt, da er eine höhere Priorität als A hat.
+      >Die Priorität wird verwendet, um die Zuweisungen in eine Reihenfolge zu bringen, wenn mehrere Zuweisungen den Wiedergabekriterien entsprechen. Höhere Werte haben stets Vorrang vor niedrigeren Werten. Wenn es beispielsweise zwei Kanäle A und B gibt. A hat die Priorität 1 und B hat die Priorität 2, dann wird Kanal B angezeigt, da er eine höhere Priorität als A hat.
 
    1. Wählen Sie in **Aktivierung** das Start- und Enddatum aus.
 
 1. Klicken Sie auf **+ Intervall hinzufügen**, um einen Intervallplan für Ihren Kanal hinzuzufügen.
 
-   ![image](/help/screens-cloud/assets/create-content/recurrence-1.png)
+   ![Bild](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
    >[!NOTE]
    >Sie können Ihrem Kanal mehrere Intervallzeitpläne hinzufügen. Mit den Intervallzeitplänen wird eine Tageszeiteneinteilung eingeführt, wodurch Sie einen globalen Zeitplan mit mehreren Kanälen festlegen können, die zu bestimmten Tageszeiten ausgeführt werden. Diese Einstellung kann dann für alle Displays wiederverwendet werden.

@@ -6,8 +6,8 @@ feature: Developing Screens
 role: Admin, Developer, User
 source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 100%
+source-wordcount: '501'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ Gehen Sie wie folgt vor, um den Player zu registrieren:
 
 1. Sie sollten sehen, dass dieser Player jetzt im linken Navigationsbereich unter **Player** angezeigt wird. Der in Screens Services Provider angezeigte Code stimmt mit dem Bedienfeld **Systeminformationen** in der Admin-Benutzeroberfläche unter Player-Code überein.
 
-   ![image](/help/screens-cloud/assets/player/register-player6.png)
+   ![Bild](/help/screens-cloud/assets/player/register-player6.png)
 
    >[!IMPORTANT]
    >**Empfehlungen zu Best Practices für die Sicherheit bei Verwendung des Registrierungs-Codes**

@@ -6,8 +6,8 @@ feature: Administering Screens
 role: Admin, Developer, User
 source-git-commit: bdb82da7463bc6b5265a7271072fe3a771fbb380
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 99%
 
 ---
 
