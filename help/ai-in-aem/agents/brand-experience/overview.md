@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Brand Experience Agent die Modernisierung und Wei
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 2%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
@@ -39,6 +39,8 @@ Durch diese Agenten übernimmt die Brand Experience Agent die umfangreiche opera
 ### Erlebnismodernisierungsauftrag {#modernization-job}
 
 Die Erlebnismodernisierung beseitigt die Reibungen bei umfangreichen Site-Migrationen, indem bestehende Erlebnisse automatisch modernisiert werden, was Teams dabei hilft, schneller umzusteigen und gleichzeitig Kontinuität, Qualität und Vertrauen aufrechtzuerhalten.
+
+Migrationen können von einer Live-Quell-Website, von Figma-Designs oder einer Kombination aus beidem gesteuert werden. Der Agent unterstützt [Redesign-Migrationen, die Quellinhalte in Figma-abgeleitete Blöcke &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign), und [Generieren neuer Seiten direkt aus Figma-Frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
 
 ## Erlebnisproduktionsagent {#experience-production}
 

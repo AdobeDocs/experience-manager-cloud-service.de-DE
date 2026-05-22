@@ -4,10 +4,10 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: cc75cbb87c192ceeaa49e7ce860bf497743916bc
+source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +43,24 @@ Der Experience Modernization Agent bietet Funktionen zum Erstellen neuer Edge De
 * Unterstützt Best Practices für Leistung, Barrierefreiheit und responsives Design in Übereinstimmung mit den Edge Delivery Services-Richtlinien
 
 Zu den detaillierten Kenntnissen gehören Seitenmigration, Massenimport, Designextraktion, Navigationseinrichtung und Web-Scraping.
+
+## Figmabasierte Migrationen und Seitenerstellung {#figma}
+
+Zusätzlich zu Live-Site-Migrationen kann der Experience Modernization Agent Figma als Design-Quelle verwenden. Um diese Funktionen zu verwenden, richten Sie Ihre Figma-Details in [Experience-Modernisierungs-Konsole“ ein](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+
+### Umgestalten der Migration mithilfe von FIGMA-abgeleiteten Blöcken {#figma-redesign}
+
+Wenn Sie eine vorhandene Website in ein neu gestaltetes Erlebnis migrieren, [&#x200B; der Agent zunächst die neu gestaltete Blocksammlung aus Figma-Komponenten, &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) und führt dann die Site-Migration für die Live-Quell-Website durch und ordnet Quellinhalte in diese Figma-abgeleiteten Blöcke zu.
+
+* **Figma** ist die Zieldesign- und Blockbibliotheksquelle.
+* **Die Live-Website** bleibt die Inhaltsquelle.
+* Inhalte werden anhand der Quell-Website validiert; visuelle Ausgaben werden anhand des aus Figma abgeleiteten Designsystems validiert.
+
+### Erstellen einer neuen Seite aus Figma {#figma-new-page}
+
+Wenn eine Seite nicht bereits auf einer Quell-Website vorhanden ist, generiert der Agent [eine neue Edge Delivery Services-Seite direkt aus einem Figma-Frame oder einer Figma-Seite, &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) Figma-Abschnitte vorhandenen Blöcken, Standardinhalten oder neuen Varianten zuordnet. Text und Assets stammen aus Figma.
+
+Weitere Informationen zu diesen Workflows, zur Migration einzelner Figma-Blöcke und zu Eingabetipps finden Sie im [Eingabeaufforderung für den Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
 
 ## Blockentwicklungsfunktionen {#block-development}
 
