@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 84%
+source-wordcount: '1490'
+ht-degree: 81%
 
 ---
 
@@ -60,13 +60,13 @@ Sie können jetzt einem bestimmten Ordner in Ihrer -Bereitstellung Metadatenform
 
 * **Integrieren von AEM Assets as a Cloud Service mit dem dokumentbasierten Authoring für Edge Delivery Services**: Integrieren Sie AEM Assets mit dem dokumentbasierten Authoring für Edge Delivery Services, damit Website-Autoren [in AEM Assets-Repositorys verfügbare Bilder beim Authoring von Dokumenten in Microsoft Word oder Google Docs verwenden](/help/edge/overview.md).
 
-* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die in Experience Manager verwaltet werden, und [die Dateien direkt in Experience Manager &#x200B;](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
+* **ZIP-Archive extrahieren**: Möglichkeit, ZIP-Archive auszuwählen, die in Experience Manager verwaltet werden, und [die Dateien direkt in Experience Manager ](/help/assets/manage-digital-assets.md#extract-zip-archives), ohne sie herunterzuladen.
 
   ![Anheften von Elementen für Gruppen](/help/release-notes/assets/extract-archive.png)
 
-### Vorab veröffentlichte Funktionen, die in [!DNL Experience Manager Assets] verfügbar sind {#prerelease-features-assets}
+### Vorabversionsfunktionen, die in [!DNL Experience Manager Assets] verfügbar sind {#prerelease-features-assets}
 
-* **Dynamic Media**: [Unterstützung für mehrfache Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können jetzt ganz einfach mehrfache Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen.  Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
+* **Dynamic Media**: [Unterstützung für mehrfache Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) – Sie können jetzt ganz einfach mehrfache Untertitel und mehrere Audiospuren zu einem primären Video hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autorinnen und Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
   ![Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.](/help/release-notes/assets/msma-aem-cs.png)*Registerkarte „Untertitel und Audiospuren“ auf der Seite „Eigenschaften“ eines ausgewählten Video-Assets.*
 
@@ -91,7 +91,7 @@ Sie können jetzt einem bestimmten Ordner in Ihrer -Bereitstellung Metadatenform
 
    * **Audit-Protokoll für Adobe Sign-Dokumente**: Verwenden Sie die Audit-Protokoll-Funktion, um ausführliche Erkenntnisse zum Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt eine umfassende Aufzeichnung aller Aktionen und Interaktionen führen, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie etwa die Personen, die das Dokument angesehen, bearbeitet oder unterschrieben haben, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist entscheidend für die Einhaltung von Vorschriften, die Beilegung von Streitigkeiten und die Gewährleistung der Integrität Ihrer digitalen Vereinbarungen.
 
-   * **Neue Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Unterzeichnerinnen bzw. Unterzeichner hinaus**: Adobe Acrobat Sign bietet die Möglichkeit, die Rollen für Empfängerinnen und Empfänger von Vereinbarungen über die Personen hinaus zu erweitern, die unterzeichnet haben, um Workflow-Anforderungen besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jeder Empfängerin und jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei die Person, die unterzeichnet hat, die Standardeinstellung ist.
+   * **Neue Rollen für Empfänger von Vereinbarungen, die über den Unterzeichner hinausgehen**: Adobe Acrobat Sign hat die Möglichkeit, die Rollen für Empfänger von Vereinbarungen über den Unterzeichner hinaus zu erweitern, um ihre Workflow-Anforderungen besser zu erfüllen. Wenn diese Option aktiviert ist, kann jede Empfängerin und jeder Empfänger in einer Vereinbarung individuell konfiguriert werden, wobei der Unterzeichner der Standard ist.
 
 * **Unterstützung der Seitenzahl in Kommunikations-APIs**: Sie können nun neben dem Abruf Ihres Dokuments über die Kommunikations-APIs auch wertvolle Informationen über die Anzahl der im Dokument enthaltenen Seiten beziehen.
 

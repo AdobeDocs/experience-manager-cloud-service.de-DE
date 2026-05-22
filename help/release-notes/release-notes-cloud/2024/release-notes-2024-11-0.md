@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2024.11.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version November 2024:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -87,7 +87,7 @@ Die Assets-Ansicht ermöglicht Ihnen jetzt den Zugriff auf Dynamic Media und Dyn
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
-* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative KI für adaptives Forms bietet ein völlig neues Leistungsniveau und vereinfacht die Entwicklung von Formularen. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
+* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative KI für adaptives Forms bietet ein völlig neues Leistungsniveau und vereinfacht die Entwicklung von Formularen. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
 
   ![Generativer KI-Assistent, adaptive Formulare](/help/forms/assets/generative-ai-assistant.png)
 

@@ -6,7 +6,7 @@ role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
 source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1368'
 ht-degree: 90%
 
 ---
@@ -77,7 +77,7 @@ Admins können jetzt steuern, ob abgelaufene Assets in Content Hub sichtbar sein
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Neue Vorabveröffentlichungsfunktionen in AEM Forms {#forms-new-prerelease-features}
+### Neue Vorabversionsfunktionen in AEM Forms {#forms-new-prerelease-features}
 
 #### Automatisches Speichern eines Entwurfs für auf Kernkomponenten basierende adaptive Formulare
 
@@ -150,7 +150,7 @@ Jeder kann auf die öffentliche Beta-Version zugreifen, indem in der aktuellen A
 
 ### Business-Anwenderinnen und -Anwender können Umleitungen außerhalb von Git deklarieren (Early-Adopter-Programm) {#apache-rewritemaps-early-adopter}
 
-Ähnlich wie bei AEM 6.5 nehmen Apache/Dispatcher Neuschreibungs-Zuordnungen auf, die an einem bestimmten Speicherort im Veröffentlichungs-Repository abgelegt werden, und laden sie, ohne dass eine Pipeline auf Web-Ebene ausgeführt werden muss. So können Business-Anwenderinnen und -Anwender Umleitungen mithilfe einer Tabelle oder einer Benutzeroberfläche deklarieren, z. B. mit ACS Commons Redirect Map Manager oder einer benutzerdefinierten Anwendung. Treten Sie dem Early-Adopter-Programm bei, indem Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>** senden.
+Ähnlich wie bei AEM 6.5 nehmen Apache/Dispatcher Neuschreibungs-Zuordnungen auf, die an einem bestimmten Speicherort im Veröffentlichungs-Repository abgelegt werden, und laden sie, ohne dass eine Pipeline-Ausführung auf Web-Ebene ausgeführt nötig ist. So können Business-Anwenderinnen und -Anwender Umleitungen mithilfe einer Tabelle oder einer Benutzeroberfläche deklarieren, z. B. mit ACS Commons Redirect Map Manager oder einer benutzerdefinierten Anwendung. Treten Sie dem Early-Adopter-Programm bei, indem Sie eine E-Mail an **<aemcs-cdn-config-adopter@adobe.com>** senden.
 
 ### Konfigurations-Pipeline für RDEs (Early-Adopter-Programm) {#config-pipeline-rdes-early-adopter}
 

@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2824'
 ht-degree: 95%
 
 ---
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Sehen Sie sich das Übersichtsvideo zur Version April 2024 an, das eine Zusammenfassung der Funktionen bietet, die in Version 2024.4.0 hinzugefügt wurden:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446318?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -74,7 +74,7 @@ Experience Manager Assets enthält jetzt [einfache und intuitive Tools zur Video
 
 **Dynamische Ausgabedarstellungen**
 
-Sie können jetzt [&#x200B; dynamische Ausgabedarstellungen (einschließlich intelligentem Zuschnitt)](/help/assets/renditions.md) in Experience Manager Assets ansehen und herunterladen. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
+Sie können jetzt [ dynamische Ausgabedarstellungen (einschließlich intelligentem Zuschnitt)](/help/assets/renditions.md) in Experience Manager Assets ansehen und herunterladen. Dynamische Ausgabeformate sind benutzerdefinierte Versionen von Bild-Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse. Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen.
 
 ![Dynamische Ausgabedarstellungen](/help/assets/assets/preset_smart_crop.png)
 

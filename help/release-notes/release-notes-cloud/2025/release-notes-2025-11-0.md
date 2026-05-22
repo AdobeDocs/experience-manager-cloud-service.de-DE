@@ -6,8 +6,8 @@ role: Admin
 exl-id: 56bc4014-a3fc-46cf-88d9-dbecb1d4cc37
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 68%
+source-wordcount: '1577'
+ht-degree: 69%
 
 ---
 
@@ -39,7 +39,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 

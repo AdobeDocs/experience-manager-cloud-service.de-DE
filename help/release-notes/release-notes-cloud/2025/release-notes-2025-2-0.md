@@ -6,7 +6,7 @@ role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1655'
 ht-degree: 96%
 
 ---
@@ -115,7 +115,7 @@ Mit den APIs zur Dokumenterstellung in AEM Forms können Sie nun [generierte PDF
 
 ### Java 21-Unterstützung {#java21}
 
-Wie in den Versionshinweisen von Januar erwähnt, können Sie nun mit Java 21 Code erstellen. Diese Version umfasst neue Funktionen (z. B. Musterabgleich für Switch-Anweisungen, versiegelte Klassen) und Leistungsverbesserungen. Java 17-Builds werden jetzt ebenfalls unterstützt. Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+Wie in den Versionshinweisen von Januar erwähnt, können Sie nun mit Java 21 Code erstellen. Diese Version umfasst neue Funktionen (z. B. Musterabgleich für Switch-Anweisungen, versiegelte Klassen) und Leistungsverbesserungen. Java 17-Builds werden jetzt ebenfalls unterstützt. Konfigurationsschritte, einschließlich der Aktualisierung Ihrer Maven-Projekt- und Bibliotheksversionen, finden Sie unter [Build-Umgebung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
 Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wenn ein Java 17- oder Java 21-Build erkannt wird. Wir empfehlen jedoch auch, sich für Umgebungen, die mit Java 11 erstellt wurden, für die Java 21 Runtime anzumelden. Senden Sie hierzu einfach eine E-Mail an [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Erfahren Sie mehr zu den [Java 21 Runtime-Anforderungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
@@ -125,7 +125,7 @@ Die leistungsfähigere Java 21 **Runtime** wird automatisch bereitgestellt, wen
 
 ### Edge-Computing – Einladung zum Feedback! {#edge-computing-feedback}
 
-Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Adobe würde gerne von Ihnen hören, ob Sie diese Technologie als nützlich für AEM Publish Delivery- und Edge Delivery Services-Projekte erachten. Teilen Sie uns bitte außerdem mit, wofür Sie sie voraussichtlich verwenden würden. Diese Information hilft uns bei der Gestaltung der Produkt-Roadmap. 
+Edge-Computing bringt die Datenverarbeitung näher an den Browser heran, was Vorteile bietet, darunter eine reduzierte Latenz. Adobe würde gerne von Ihnen hören, ob Sie diese Technologie als nützlich für AEM Publish Delivery- und Edge Delivery Services-Projekte erachten. Teilen Sie uns bitte außerdem mit, wofür Sie sie voraussichtlich verwenden würden. Diese Information hilft uns bei der Gestaltung der Produkt-Roadmap.
 
 Verschiedene mögliche Anwendungsfälle:
 
@@ -146,10 +146,10 @@ Erfahren Sie mehr über [OpenAPI-basierte AEM-APIs](/help/implementing/developin
 
 Konkret sind die unten aufgeführten API-Endpunkte im Rahmen eines Early-Adopter-Programms verfügbar. Wenn Sie daran interessiert sind, senden Sie eine E-Mail an [aem-apis@adobe.com](mailto:aem-apis@adobe.com), in der Sie beschreiben, wie Sie die API-Endpunkte verwenden möchten.
 
-* [Sites-Inhaltsfragmente-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/?lang=de)
+* [Sites-Inhaltsfragment-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * Sites- und Assets-Ordner-APIs
-* [Forms-Kommunikationen-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+* [Forms Communications-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### Neue AEM Developer Console (öffentliche Beta-Version) {#aem-developer-console-beta}
 

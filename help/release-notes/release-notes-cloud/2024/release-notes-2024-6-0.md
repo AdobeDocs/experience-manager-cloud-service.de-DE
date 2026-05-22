@@ -119,7 +119,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Verbinden eines adaptiven Formulars mit Adobe Workfront
 
-Forms as a Cloud Service bietet eine vorkonfigurierte Option zum mühelosen [&#x200B; (Verbinden eines adaptiven Formulars mit Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md). Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, indem Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario auslösen können.
+Forms as a Cloud Service bietet eine vorkonfigurierte Option zum mühelosen [ (Verbinden eines adaptiven Formulars mit Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md). Dadurch wird der Prozess zum Senden eines adaptiven Formulars an ein Adobe Workfront-Szenario vereinfacht, indem Sie bei der Übermittlung eines adaptiven Formulars ein Workfront Fusion-Szenario auslösen können.
 
 #### Verbesserter visueller Regeleditor für auf Kernkomponenten basierende adaptive Formulare
 

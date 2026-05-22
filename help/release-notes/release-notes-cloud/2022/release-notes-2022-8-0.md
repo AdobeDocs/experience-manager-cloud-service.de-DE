@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 62%
+source-wordcount: '677'
+ht-degree: 58%
 
 ---
 
@@ -38,7 +38,7 @@ Eine Zusammenfassung der in der Version 2022.8.0 hinzugefügten Funktionen find
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die E-Mail-Komponente ermöglicht die Erstellung von Inhalten in AEM, die dann als E-Mails per Campaign Classic versendet werden. Die E-Mail-Kernkomponente:
+* Die E-Mail-Komponente ermöglicht die Erstellung von Inhalten in AEM, die dann als E-Mails über Campaign Classic versendet werden. Die E-Mail-Kernkomponente:
    * basiert auf der [WCM-Kernkomponente](https://github.com/adobe/aem-core-wcm-components) die bearbeitbare Vorlagen und das Stilsystem unterstützt.
    * bietet zehn für E-Mails optimierte produktionsbereite Komponenten (Seite, Container, Titel, Text, Bild, Schaltfläche, Teaser, Experience Fragment, Inhaltsfragment, Segmentierung).
    * bietet fortschrittliche Personalisierung und Segmentierung, dank der [Einfügung von Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization)-Variablen in die meisten Dialogfelder und der flexiblen [Segmentierungskomponente](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
@@ -47,7 +47,7 @@ Eine Zusammenfassung der in der Version 2022.8.0 hinzugefügten Funktionen find
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Sites] verfügbar {#prerelease-features-sites}
 
-* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) bietet Benutzenden die Möglichkeit, die Gesamtzahl der mit einem Inhaltsfragment verknüpften Sprachkopien anzuzeigen. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach der Region filtern, die sie interessiert.
+* Die [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) bietet Benutzenden die Möglichkeit, die Gesamtzahl der mit einem Inhaltsfragment verknüpften Sprachkopien anzuzeigen. Über einen 1-Klick-Zugriff können auch alle Sprachkopien angezeigt werden. Benutzende können die Tabellenansicht auch nach dem Gebietsschema filtern, das sie interessiert.
 
 ![Sprachen von Inhaltsfragmenten](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ Eine Zusammenfassung der in der Version 2022.8.0 hinzugefügten Funktionen find
 
 ### Neue Funktionen in [!DNL Assets] {#features-assets}
 
-* Sie können Adobe Experience Manager Assets jetzt so konfigurieren[&#x200B; dass der Typ der Assets, die Benutzerinnen und Benutzer hochladen können, auf der Grundlage des MIME-Typs eingeschränkt &#x200B;](/help/assets/configure-asset-upload-restrictions.md).
+* Sie können Adobe Experience Manager Assets jetzt so konfigurieren[ dass der Typ der Assets, die Benutzerinnen und Benutzer hochladen können, auf der Grundlage des MIME-Typs eingeschränkt ](/help/assets/configure-asset-upload-restrictions.md).
 
   ![Einschränkungen beim Hochladen von Assets](/help/assets/assets/asset-upload-restrictions.png)
 
