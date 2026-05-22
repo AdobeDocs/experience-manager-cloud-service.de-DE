@@ -48,7 +48,7 @@ return new Response(body, {
 });
 ```
 
-Mehrere Ersatzschlüssel werden durch Leerzeichen getrennt. Diese Ersatzschlüssel können verwendet werden, um den CDN-Cache mithilfe der [CDN Cache Purge API) zu &#x200B;](/help/implementing/dispatcher/cdn-cache-purge.md). Das Konzept der Löschung von Ersatzschlüsseln ist dasselbe wie unter [Bereinigen des Caches für eine Gruppe von Ressourcen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) beschrieben. Der wesentliche Unterschied besteht darin, dass die CDN-Ersatzschlüssel hier durch Ihren Edge-Funktions-Code festgelegt werden und nicht durch das Backend.
+Mehrere Ersatzschlüssel werden durch Leerzeichen getrennt. Diese Ersatzschlüssel können verwendet werden, um den CDN-Cache mithilfe der [CDN Cache Purge API) zu &#x200B;](/help/implementing/dispatcher/cdn-cache-purge.md). Das Konzept der Löschung von Ersatzschlüsseln ist dasselbe wie unter [Bereinigen des Caches für eine Gruppe von Ressourcen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) beschrieben. Der wesentliche Unterschied besteht darin, dass die CDN-Ersatzschlüssel hier durch Ihren Edge-Funktions-Code festgelegt werden und nicht durch das Backend.
 
 ## Edge, Funktion Zwischenspeicher abrufen (innere) {#fetch-cache}
 
