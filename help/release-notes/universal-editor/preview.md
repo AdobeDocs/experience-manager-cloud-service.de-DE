@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 1da3f7ec7d56ec0463851aac8f6e14967f881c4f
+source-git-commit: a18a1d09003ef646356abcdd2f37b46616a708a1
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -28,10 +28,11 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige Funktionen {#upcoming-features}
 
-* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([&#x200B; Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
-   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
+* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([ Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
+   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) ](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
    * Die Schaltfläche wird nur angezeigt, wenn die Remote[Seite über eine (Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` verfügt und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
 
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
 * Die standardmäßige Hintergrundfarbe der Arbeitsfläche für die Bearbeitung ist jetzt weiß (#FFFFFF), wenn das Programm keine eigene Hintergrundfarbe festlegt.
+
