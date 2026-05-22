@@ -60,7 +60,7 @@ Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden,
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [ Funktionen und deren Verwendung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im [Cloud Manager MCP Server-.
+Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 
