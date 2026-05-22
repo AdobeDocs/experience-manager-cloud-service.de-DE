@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 67%
+source-wordcount: '1417'
+ht-degree: 65%
 
 ---
 
@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug) diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, damit Sie sie nutzen können.
+* Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr ](/help/implementing/dispatcher/disp-overview.md#validation-debug) diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, damit Sie sie nutzen können.
 * Die Benutzeroberfläche für die Strukturreplikation unter der Registerkarte „Verteilen“ des Replikationsagenten sollte als veraltet betrachtet werden und wurde nach dem 30. September 2021 entfernt. [Erfahren Sie mehr](/help/operations/replication.md#tree-activation) über alternative Replikationsstrategien.
 * Das Bundle `org.apache.sling.datasource-1.0.4.jar` für die Unterstützung der Sling-Datenquelle wurde entfernt, da es veraltete Funktionen aufweist und von Kunden nicht verwendet wird.
 
@@ -46,7 +46,7 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 
 * Mit der Funktion zur Inhaltsautomatisierung können [!DNL Experience Manager Assets] die [!DNL Adobe Creative Cloud]-APIs verwenden, um die Asset-Produktion skaliert zu automatisieren. Die Inhaltsgeschwindigkeit wird verbessert, indem die zum Erstellen von Varianten desselben Assets erforderliche Zeit verkürzt und die Anzahl der Iterationen erheblich verringert werden. Die Funktion erfordert keine Programmierung und funktioniert aus dem DAM heraus. Siehe [Erzeugen von Varianten von Assets mithilfe der Creative Cloud-Integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Die im Viewer verfügbaren Steuerelemente umfassen Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Benutzer können auch eine Vorschau der Seiten und Lesezeichen anzeigen und zu ihnen springen. Kommentare zur Datei selbst werden unterstützt. Kommentare und Anmerkungen zu Inhalten in der PDF-Datei sind für eine künftige Version geplant.
+* [!DNL Experience Manager Assets] enthält den [!DNL Document Cloud]-PDF-Viewer zur nativen Vorschau von PDF-Dokumenten. Mit dieser Funktion können Benutzer mehrseitige PDF-Dateien ohne Dateiverarbeitung oder Konvertierung in der Vorschau anzeigen. Diese Funktion verbessert die Parität mit [!DNL Experience Manager] 6.5. Zu den im Viewer verfügbaren Steuerelementen gehören Zoom, Navigieren zu Seiten, Entfernen von Steuerelementen und Anzeigen im Vollbildmodus. Benutzer können auch eine Vorschau der Seiten und Lesezeichen anzeigen und zu ihnen springen. Kommentare zur Datei selbst werden unterstützt. Kommentare und Anmerkungen zu Inhalten in der PDF-Datei sind für eine künftige Version geplant.
 
   ![PDF-Dateien in [!DNL Experience Manager] in der Vorschau mit dem PDF-Viewer anzeigen](/help/assets/assets/preview-pdf-file-viewer.png)
 
@@ -86,7 +86,7 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms}
 
-* Sie können jetzt den Service für die automatische Formularkonvertierung verwenden, um [PDF forms in französischer, deutscher und spanischer Sprache) in &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=de?#language-specific-meta-model) Formulare zu konvertieren.
+* Sie können jetzt den Service für die automatische Formularkonvertierung verwenden, um [PDF forms in französischer, deutscher und spanischer Sprache) in ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=de?#language-specific-meta-model) Formulare zu konvertieren.
 * Es wurde ein separates Bedienfeld zum Vorlagen-Editor hinzugefügt, um Fehler im Zusammenhang mit Komponenten von adaptiven Formularen anzuzeigen. Dies hilft, alle Fehler in adaptiven Formularen an einem Ort zu konsolidieren und die Auflösungszeit zu verkürzen.
 
 ### Neue Funktionen in [!DNL Forms] im Kanal für die Vorabversion {#beta-features-forms}
@@ -100,7 +100,7 @@ Die API `com.day.cq.dam.api.collection.SmartCollection` ist in [!DNL Experience 
 
 * **Acroform-basiertes aufzuzeichnendes Dokument**: Sie können auch [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=de) als Vorlage für ein aufzuzeichnendes Dokument neben XFA-basierten Formularvorlagen verwenden.
 
-* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=de). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
+* **Microsoft® Azure-Datenspeicher-Connector**: Sie können jetzt [Formulardatenmodell mit Microsoft verbinden® Azure-Speicher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Damit können Sie Daten adaptiver Formulare abrufen und im Microsoft® Azure-Speicher als BLOB speichern.
 
 ## CIF-Add-on {#cloud-services-cif}
 
@@ -196,4 +196,4 @@ Cloud Acceleration Manager ist eine Cloud-basierte Anwendung, die IT-Teams währ
 
 >[!NOTE]
 >
-> Sehen Sie sich dieses Demovideo zu [Cloud Acceleration Manager &#x200B;](https://video.tv.adobe.com/v/335547).
+> Sehen Sie sich dieses Demovideo zu [Cloud Acceleration Manager ](https://video.tv.adobe.com/v/335547).

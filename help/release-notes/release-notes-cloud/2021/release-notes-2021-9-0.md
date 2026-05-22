@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 62%
+source-wordcount: '1708'
+ht-degree: 57%
 
 ---
 
@@ -44,7 +44,7 @@ Sehen Sie sich das Video [Versionsübersicht September 2021](https://video.tv.ad
 
 * Benutzer können jetzt die in den Suchergebnissen angezeigten Assets in Spalten- und Kartenansichten sortieren. Die Sortierung funktioniert bei den Spalten „Name“, „Erstellt“, „Geändert“ oder „Keine“.
 
-  ![Sortieren der Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
+  ![Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten](/help/assets/assets/sort-searched-assets.png)
   *Abbildung: Sortieren Sie die Suchergebnisse in [!DNL Assets] in Spalten- und Kartenansichten.*
 
 * Um die Verarbeitung mithilfe von Asset-Microservices programmgesteuert aufzurufen, wird eine neue API eingeführt. Entwickler können jetzt ein vorhandenes Verarbeitungsprofil auf Ordnerebene auf ein oder mehrere bestimmte Assets in einem Ordner anwenden. Das Verarbeitungsprofil wird basierend auf Aktualisierungen der benutzerdefinierten Metadateneigenschaften angewendet. Siehe `AssetProcessor` in der [[!DNL Experience Manager] API-Referenz](https://developer.adobe.com/experience-manager/reference-materials/). Wie zuvor ist es möglich, [Asset-Microservices über die Benutzeroberfläche zu verwenden](/help/assets/asset-microservices-configure-and-use.md).
@@ -67,17 +67,17 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Neue Funktionen in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Verwenden von Adobe Sign-Rollen in einem adaptiven Formular** - Mit den Service-Levels von Adobe Sign für Unternehmen können Sie optional die Rollen für Empfänger von Vereinbarungen über den Unterzeichner hinaus erweitern, um ihre Workflow-Anforderungen besser zu erfüllen. Sie können jetzt [jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular zu konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=de#addsignerstoanadaptiveform) wobei Signer die Standardrolle ist.
+* **Verwenden von Adobe Sign-Rollen in einem adaptiven Formular** - Mit den Service-Levels von Adobe Sign für Unternehmen können Sie optional die Rollen für Empfänger von Vereinbarungen über den Unterzeichner hinaus erweitern, um ihre Workflow-Anforderungen besser zu erfüllen. Sie können jetzt [jedem Empfänger der Vereinbarung die Möglichkeit geben, seine Rolle in einem adaptiven Formular zu konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) wobei Signer die Standardrolle ist.
 
 * **Analytics für Adaptive Forms** - Sie können jetzt das Endbenutzerverhalten mit Adobe Analytics for Adaptive Forms erfassen und verfolgen, um Erkenntnisse über Endbenutzern zu sammeln. Es hilft dabei, fundierte Entscheidungen auf der Grundlage von Daten zu treffen, um das Endbenutzererlebnis zu verbessern.
 
-* **Einfaches Verbinden von Adobe Experience Manager (AEM) Forms mit Microsoft® Dynamics und Salesforce** - Der Service bietet eine sofort einsatzbereite Datenquellenkonfiguration und Datenmodelle für Microsoft® Dynamics und Salesforce. Dadurch können [schneller und einfacher Microsoft® Dynamics und Salesforce als Datenquellen für adaptive Formulare konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=de).
+* **Einfaches Verbinden von Adobe Experience Manager (AEM) Forms mit Microsoft® Dynamics und Salesforce** - Der Service bietet eine sofort einsatzbereite Datenquellenkonfiguration und Datenmodelle für Microsoft® Dynamics und Salesforce. Dadurch können [schneller und einfacher Microsoft® Dynamics und Salesforce als Datenquellen für adaptive Formulare konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
 
 * **E-Signieren eines adaptiven Formulars mit DocuSign** - Sie können DocuSign verwenden, um ein adaptives Formular elektronisch zu unterzeichnen. Der Service bietet eine benutzerdefinierte Übermittlungsaktion zur Verwendung von DocuSign bei einem adaptiven Formular. Sie können das im Bereich Software-Verteilung verfügbare Package installieren, um die Übermittlungsaktion zu importieren.
 
 ### Beta-Funktionen von [!DNL Forms]  {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector** - Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise 
+* **Unified Storage Connector** - Verwenden Sie Unified Storage Connector, um prozessinterne Daten in vom Kunden verwalteten Repositorys zu externalisieren. Sie können beispielsweise
    * die Speicher- und Wiederaufnahmefunktion des Formularportals aktivieren und adaptive Formularentwürfe in einem kundenverwalteten Daten-Repository speichern.
    * prozessinterne AEM-Workflow-Daten (AEM-Workflow-Variablendaten), die sensible personenbezogene Daten (SPD) beinhalten, in einem vom Kunden verwalteten Repository speichern.
 
@@ -115,10 +115,10 @@ Sie können sich an [!DNL formscsbeta@adobe.com] wenden, um sich für das Beta-P
 ### Neue Funktionen {#what-is-new-screens}
 
 * Screens as a Cloud Service unterstützt jetzt eine einfache Wiedergabe-Überwachung. Der Player meldet jetzt bei jedem Ping (standardmäßig alle 30 Sekunden) verschiedene Wiedergabemetriken. Basierend auf den Metriken können verschiedene Randfälle erkannt werden (steckengebliebenes Erlebnis, leerer Bildschirm, Zeitplanprobleme usw.). Mit dieser Funktion kann das Team aus der Ferne überwachen, ob ein Player die Inhalte ordnungsgemäß wiedergibt. Dadurch wird die Reaktionsfähigkeit auf leere Bildschirme oder fehlerhafte Erlebnisse im Feld verbessert und das Risiko verringert, dem Benutzer ein fehlerhaftes Erlebnis anzuzeigen.
-Weitere Informationen finden Sie unter [Einfache Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=de#playback-monitoring).
+Weitere Informationen finden Sie unter [Einfache Wiedergabe-Überwachung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring).
 
 * Unterstützung von Miniaturansichten für Videos in wird in Screens as a Cloud Service jetzt unterstützt. Inhaltsautorinnen und -autoren können eine Miniaturansicht für Videos definieren, sodass das Bild als Platzhalter verwendet und die Inhaltswiedergabe und das Targeting ordnungsgemäß getestet werden können, während das eigentliche Video vom entsprechenden Team fertiggestellt wird. Das Bild kann auch verwendet werden, wenn die Wiedergabe des Videos fehlschlägt.
-Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten für Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=de).
+Weitere Informationen finden Sie unter [Unterstützung von Miniaturansichten für Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html).
 
 ### Fehlerbehebungen {#bug-fixes-screens}
 
@@ -195,7 +195,7 @@ Die Version 1.6.0 von Content Transfer Tool wurde am 4. Oktober 2021 veröffent
 
 ### Neue Funktionen {#what-is-new-ctt}
 
-* Verbesserte Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=de#using-user-mapping-tool).
+* Verbesserte Benutzerzuordnung mit einem vereinfachten Benutzererlebnis, einschließlich der folgenden unten aufgeführten Funktionen. Weitere Informationen finden Sie unter [Verwenden des Tools für die Benutzerzuordnung](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool).
    * Testen der Verbindung zur User Management-API, bevor die Benutzerzuordnung ausgeführt wird
    * Fehler elegant überspringen und mit der Aktivität Benutzerzuordnung fortfahren
    * Die Benutzerzuordnung schlägt nicht mehr fehl, wenn das Zugriffstoken abläuft (nach 24 Stunden). Die Benutzerzuordnung kann an der Stelle erneut ausgeführt werden, an der sie zuletzt angehalten wurde.

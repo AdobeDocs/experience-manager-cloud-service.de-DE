@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 85%
+source-wordcount: '604'
+ht-degree: 86%
 
 ---
 
@@ -36,7 +36,7 @@ Sehen Sie sich das Video [Versionsübersicht April 2022](https://video.tv.adobe.
 
 ### Neue Funktionen in [!DNL Sites] {#sites-features}
 
-* Die Datentypen des Inhaltsmodells können jetzt mit einem einfachen Kontrollkästchen im Inhaltsmodell-Editor als [übersetzbar](/help/assets/content-fragments/content-fragments-models.md#properties) definiert werden. Außerdem werden AEM-Übersetzungsregeln und -konfigurationen automatisch aktualisiert.
+* Die Datentypen des Inhaltsmodells können jetzt mit einem einfachen Kontrollkästchen im Inhaltsmodell-Editor als [übersetzbar](/help/assets/content-fragments/content-fragments-models.md#properties) definiert werden. Außerdem werden die Übersetzungsregeln und -konfigurationen von AEM automatisch aktualisiert.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -51,7 +51,7 @@ Sehen Sie sich das Video [Versionsübersicht April 2022](https://video.tv.adobe.
 
 * **Kommunikation – Unterstützung von APIs zur Dokumentbearbeitung im Forms as a Cloud Service SDK**: [APIs zur Dokumentbearbeitung](/help/forms/aem-forms-cloud-service-communications.md) helfen beim Kombinieren, Neuanordnen und Validieren von PDF-Dokumenten. Sie können jetzt mithilfe des AEM Forms as a Cloud Service SDK Kommunikations-APIs für die Dokumentengenerierung in einer lokalen Entwicklungsumgebung verwenden.
 
-* **Verwenden einer benutzerdefinierten XCI-Datei zum Generieren eines Datensatzdokuments**: Sie können jetzt [eine benutzerdefinierten XCI-Datei verwenden, um verschiedene Eigenschaften eines Datensatzdokuments festzulegen](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Sie überschreibt die primäre XCI-Datei mit den benutzerdefinierten Änderungen. Sie bietet mehr Kontrolle über die Generierung von Datensatzdokumenten, mehr Personalisierung und Anpassungsmöglichkeiten.
+* **Verwenden einer benutzerdefinierten XCI-Datei zum Generieren eines Datensatzdokuments**: Sie können jetzt [eine benutzerdefinierten XCI-Datei verwenden, um verschiedene Eigenschaften eines Datensatzdokuments festzulegen](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Sie überschreibt die primäre XCI-Datei mit den benutzerdefinierten Änderungen. Sie bietet mehr Kontrolle über die Generierung von archivierbaren Dokumenten, mehr Personalisierung und Anpassungsmöglichkeiten.
 
 * **Verwenden eines unsichtbaren Captcha in einem adaptiven Formular**: Sie können das [unsichtbare Captcha verwenden, um den Captcha-Test nur bei einer verdächtigen Aktivität anzuzeigen](/help/forms/captcha-adaptive-forms.md). Wenn keine verdächtige Aktivität gefunden wird, wird die Captcha-Aufforderung nicht angezeigt. Sie hilft bei der Bewertung des Ausfüllens von Formularen durch Menschen ohne Kontrollkästchenanforderungen, reduziert den Anpassungsaufwand und verbessert das Erlebnis für Endbenutzerinnen und -benutzer.
 
