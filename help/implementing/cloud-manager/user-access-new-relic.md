@@ -52,7 +52,7 @@ Für ein neu erstelltes Programm wird ein New Relic One-Unterkonto für Sie erst
    1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in der **Meine**&quot; auf ein Programm, für das Sie Ihre New Relic One-Benutzer verwalten möchten.
-1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
+1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
 1. Klicken Sie auf der Seite Umgebungen rechts oben auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **New Relic aktivieren**.
 
    ![New Relic aktivieren](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
@@ -76,7 +76,7 @@ Sie können die Benutzenden Ihres New Relic One-Unterkontos definieren, das mit 
    1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in der **Meine**&quot; auf ein Programm, für das Sie Ihre New Relic One-Benutzer verwalten möchten.
-1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
+1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
 1. Klicken Sie auf der Seite Umgebungen rechts oben auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Benutzer verwalten**.
 
    ![Verwalten von New Relic-Benutzern](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
@@ -129,7 +129,7 @@ Nachdem Sie [Ihr New Relic-Konto aktiviert haben](#activate-account) können Sie
    1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie die gewünschte Organisation aus.
 1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm, für das Sie New Relic One öffnen möchten.
-1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
+1. Klicken Sie im linken Menü unter **Services** auf ![Datensymbol oder &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Umgebungen**.
 1. Klicken Sie auf der Seite Umgebungen rechts oben auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **New Relic öffnen**.
 
    ![New Relic öffnen](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
@@ -148,7 +148,7 @@ Wenn Sie während der Anmeldung bei New Relic One aufgefordert werden, Ihre E-Ma
 
 Wenn Sie Ihre E-Mail-Adresse nicht verifizieren, versucht New Relic, Sie mit dem zuletzt erstellten Benutzereintrag anzumelden, der mit Ihrer E-Mail-Adresse verknüpft ist. Um zu vermeiden, dass Ihre E-Mail-Adresse bei jeder Anmeldung überprüft wird, klicken Sie im Anmeldebildschirm auf das Kontrollkästchen **Angaben speichern**.
 
-Weitere Hilfe erhalten Sie, wenn Sie über das [AEM Support-Portal ein Support-Ticket ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+Weitere Hilfe erhalten Sie, wenn Sie über das [AEM Support-Portal ein Support-Ticket &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 ## Änderungs-Tracker verwenden {#change-tracker}
 
@@ -239,7 +239,7 @@ Falls Sie keine E-Mail von New Relic erhalten, gehen Sie wie folgt vor:
 ## Nutzungshinweise {#usage-notes}
 
 * Es können maximal 30 Benutzende hinzugefügt werden. Wenn die maximale Anzahl von Benutzenden erreicht wurde, entfernen Sie Benutzende, um neue Benutzende hinzufügen zu können.
-* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [ New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* Benutzende, die zu New Relic hinzugefügt werden, weisen den Typ **Allgemein** auf. Weitere Informationen finden Sie in der [&#x200B; New Relic-Dokumentation](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
 * AEM as a Cloud Service bietet nur die New Relic One APM-Lösung, aber keine Unterstützung für Warnhinweise, Protokollierung oder API-Integrationen.
 
 >[!NOTE]
