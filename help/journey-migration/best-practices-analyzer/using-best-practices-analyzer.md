@@ -100,7 +100,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
    ![Festlegen des BPA-Upload-Schlüssels](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
->Sie haben die Möglichkeit, das automatische Hochladen in CAM zu überspringen, indem Sie die Option für das Überspringen des automatischen Uploads in CAM **** wählen. Wenn Sie sich für das Überspringen entscheiden, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertedatei herunterladen und die Datei dann in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
+>Sie haben die Möglichkeit, das automatische Hochladen in CAM zu überspringen, indem Sie die Option für das Überspringen des automatischen Uploads in CAM **&#x200B;**&#x200B;wählen. Wenn Sie sich für das Überspringen entscheiden, müssen Sie den BPA-Bericht manuell als kommagetrennte Wertedatei herunterladen und die Datei dann in CAM hochladen. Es wird empfohlen, die Option für den Upload-Schlüssel zu verwenden, da sie den Vorgang optimiert.
 
 >[!IMPORTANT]
 >Beim manuellen Hochladen in CAM sind die Berichtsgrößen auf etwa 200 MB beschränkt. Für größere Berichte müssen Sie den automatischen Upload nutzen.
@@ -120,7 +120,7 @@ Folgen Sie diesem Abschnitt, um zu erfahren, wie Sie den Best Practices Analyzer
 
    ![Berichtsübersicht](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. Sie haben die Möglichkeit, den Bericht in einem kommagetrennten Format (CSV) herunterzuladen, indem Sie auf **In CSV exportieren** klicken. Sie können den Bericht auch in CAM anzeigen, indem Sie auf die Option zum Wechsel zu CAM **** klicken. Dadurch gelangen Sie auf die Seite [Best-Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM.
+1. Sie haben die Möglichkeit, den Bericht in einem kommagetrennten Format (CSV) herunterzuladen, indem Sie auf **In CSV exportieren** klicken. Sie können den Bericht auch in CAM anzeigen, indem Sie auf die Option zum Wechsel zu CAM **&#x200B;**&#x200B;klicken. Dadurch gelangen Sie auf die Seite [Best-Practices-Analyse](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) in CAM.
 
 Sie können den BPA zwingen, seinen Cache zu leeren und den Bericht neu zu generieren, indem Sie auf **Bericht aktualisieren** klicken.
 

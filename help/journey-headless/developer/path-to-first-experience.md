@@ -134,7 +134,7 @@ Nachdem Sie nun diesen Teil der AEM Headless-Entwickler-Tour abgeschlossen haben
 
 Ziel ist es, dass Sie auf diesem grundlegenden Wissen aufbauen, um das Potenzial und die Flexibilität von AEM Headless zu verstehen, damit Sie es für Ihre eigenen Projekte nutzen können.
 
-Fahren Sie dazu mit der AEM Headless-Journey mit [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle“ fort, ](/help/journey-headless/developer/model-your-content.md) dem Sie lernen, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
+Fahren Sie dazu mit der AEM Headless-Journey mit [Modellieren Ihres Inhalts als AEM-Inhaltsmodelle“ fort, &#x200B;](/help/journey-headless/developer/model-your-content.md) dem Sie lernen, wie Sie Ihre Inhaltsstruktur in AEM modellieren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
