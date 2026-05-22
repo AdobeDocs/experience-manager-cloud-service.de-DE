@@ -5,8 +5,8 @@ role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
 source-git-commit: 9c5838a01ceecf094aea19578e6560a5e5ca8c4c
-workflow-type: ht
-source-wordcount: '775'
+workflow-type: tm+mt
+source-wordcount: '791'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Es gibt fünf verschiedene Arten von Umgebungen:
 * **Produktion und Staging**: Die Produktions- und Staging-Umgebungen sind als Paar verfügbar und werden für Produktions- bzw. Testzwecke verwendet.
 * **Entwicklung**: Die Entwicklungsumgebung kann zu Entwicklungs- und Testzwecken erstellt werden und wird ausschließlich produktionsfremden Pipelines zugeordnet.
 * **Schnelle Entwicklung**: Eine schnelle Entwicklungsumgebung (RDE) ermöglicht es Entwickelnden, Änderungen schnell bereitzustellen und zu überprüfen. Dadurch wird der Zeitaufwand für das Testen von Funktionen, die in einer lokalen Entwicklungsumgebung nachweislich funktionieren, minimiert.
-* **Spezialisierte Testumgebung**: Bietet einen dedizierten Raum für die Validierung von Funktionen unter produktionsnahen Bedingungen, ideal für Belastungstests und erweiterte Prüfungen vor der Bereitstellung. 
+* **Spezialisierte Testumgebung**: Bietet einen dedizierten Raum für die Validierung von Funktionen unter produktionsnahen Bedingungen, ideal für Belastungstests und erweiterte Prüfungen vor der Bereitstellung.
 
 Für die Zwecke dieser Onboarding-Tour erstellen Sie eine Entwicklungsumgebung, mit der Sie die Funktionen von AEM as a Cloud Service untersuchen können, um mit einem Minimum zu beginnen.
 

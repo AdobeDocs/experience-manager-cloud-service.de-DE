@@ -5,8 +5,8 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1130'
+workflow-type: tm+mt
+source-wordcount: '1136'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Damit die richtigen Personen diese Benachrichtigungen erhalten, müssen Sie Benu
 
 Da Benutzergruppen in der Admin Console erstellt und gepflegt werden, müssen vor dem Erstellen von Profilen für Benachrichtigungen folgende Bedingungen erfüllt sein:
 
-* Sie verfügen über Berechtigungen zum Hinzufügen und Bearbeiten von Profilmitgliedschaften.
+* Sie verfügen über Berechtigungen zum Hinzufügen und Bearbeiten von Profilzugehörigkeiten.
 * Sie verfügen über ein gültiges Adobe Admin Console-Profil.
 
 ## Erstellen neuer Cloud Manager-Produktprofile {#create-profiles}
