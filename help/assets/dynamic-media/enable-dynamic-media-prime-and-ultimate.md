@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 601309b68e4b99cf65233bdcf0f795bb551be63b
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 99%
+source-wordcount: '1406'
+ht-degree: 87%
 
 ---
 
@@ -107,9 +107,25 @@ Führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie die **[!UICONTROL Dynamic Media]**-Lösung aus und klicken Sie auf **[!UICONTROL Fortfahren]**, um die **[!UICONTROL Dynamic Media]**-Lösung zu Ihrem Programm hinzuzufügen. Mit dieser Aktion werden alle vorhandenen Umgebungen in Ihrem Programm neu gestartet und ihnen wird die [!DNL Dynamic Media]-Lösung hinzugefügt. Außerdem erhält jede neue Umgebung, die Sie unter Ihrem Programm erstellen, automatisch [!DNL Dynamic Media].
 
-   ![Für die Produktion einrichten](/help/assets/assets/set-up-for-prod.png){width="500" align="left"}
+   ![Für die Produktion einrichten](/help/assets/assets/set-up-for-prod.png)
 
 Unter [Aktivieren [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) finden Sie Informationen darüber, wie Sie die Funktionen von [!DNL Dynamic Media] mit OpenAPI-Funktionen in Ihrer Umgebung nutzen können.
+
+### Zugriff auf Dynamic Media-APIs {#access-dynamic-media-apis}
+
+Nach [Aktivieren von Dynamic Media mit OpenAPI](#activate-dynamic-media-with-openapi) wird eine `delivery` erstellt. Klicken Sie auf die Versandinstanz, um das `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` Produktprofil anzuzeigen. Für das Produktprofil ist bereits **AEM Dynamic Media Enable API Services** standardmäßig aktiviert.
+
+![Dynamic Media-API-Services](/help/assets/assets/dynamic-media-api-services.png)
+
+Erstellen Sie ein neues Projekt in [Adobe Developer Console](https://developer.adobe.com/console) und verwenden Sie die AEM Dynamic Media-API-Karte, um Zugriff auf Dynamic Media mit OpenAPI-Funktionen zu erhalten.
+
+![Dynamic Media-APIs](/help/assets/assets/dynamic-media-apis.png)
+
+Sie können entweder [Server-zu-Server-Authentifizierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) oder Benutzerauthentifizierung mit [Web-App-](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app)- oder [SPA-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-single-page-app) verwenden.
+
+Bevor Sie auf die API zugreifen, müssen Sie zum Produktprofil `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` hinzugefügt werden.
+
+Sobald das Zugriffstoken mit einer der Authentifizierungsmethoden abgerufen wurde, können Sie [die Client-ID als den API-Schlüssel in der cURL-Anfrage definieren](/help/assets/search-assets-api.md) und mit der Verwendung von [Dynamic Media mit OpenAPIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/) beginnen.
 
 ### Erstellen und Auflisten von [!DNL Dynamic Media]-Unternehmen {#create-and-list-dynamic-media-companies}
 
