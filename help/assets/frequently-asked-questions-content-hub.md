@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 65e10efffcc5430ab2f7cd08ba795dc9f96cd41a
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 67%
+source-wordcount: '1702'
+ht-degree: 66%
 
 ---
 
@@ -129,7 +129,7 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen AEM Assets C
 |  | Anonyme Link-Freigabe | ✓ | ✓ |
 |  | Private Sammlungen | ✓ | ✓ |
 | Berechtigungen | ACL-basierte Berechtigungen | − | ✓ |
-|  | Attributbasierte Zugriffssteuerung – Übersicht | ✓ | − |
+|  | Attributbasierte Zugriffssteuerung | ✓ | − |
 | Express-Integration | Bearbeiten von Content Hub-Assets in Adobe Express und Speichern im DAM | ✓ | − |
 | Dashboards und Berichte | Erkenntnis-Dashboard | ✓ | − |
 | Erweiterbarkeit der Benutzeroberfläche | Benutzerdefinierte Erweiterungspunkte auf der Seite „Asset-Details“ | Eingeschränkte Verfügbarkeit | − |
@@ -152,7 +152,9 @@ Wenn Sie AEM Assets Content Hub für Produktionsumgebungen und andere untere Umg
 
 ## Wie kann AEM Assets Content Hub die Miniaturvorschau für den Dateityp .ZIP anzeigen? {#thumbnail-preview-zip-file}
 
-Um eine Miniaturansicht für Dateitypen wie ZIP-Dateien in AEM Assets Content Hub bereitzustellen, können Sie eine Ausgabedarstellung mit dem Namen `cq5dam.preview.jpg` oder `cq5dam.preview.png` zum Stamm des Pfads hinzufügen, unter dem die ZIP-Datei in der Authoring-Umgebung von AEM as a Cloud Service verfügbar ist.
+Um eine Miniaturansicht für Dateitypen wie ZIP-Dateien in AEM Assets Content Hub bereitzustellen, können Sie eine Ausgabedarstellung mit dem Namen `cq5dam.<label>.<width>.<height>.<ext>` zum Stammverzeichnis des Pfads hinzufügen, in dem die ZIP-Datei in der Authoring-Umgebung von AEM as a Cloud Service verfügbar ist. Beispiel: `cq5dam.preview.500.500.png`.
+
+Content Hub wählt die Ausgabedarstellung mit der größten Breite unter allen `cq5dam.*` Ausgabedarstellungen aus. Eine benutzerdefinierte Ausgabedarstellung wird nur gewonnen, wenn ihre kodierte Breite vorhandene automatisch generierte Ausgabedarstellungen überschreitet.
 
 Das Bild, das Sie als Ausgabedarstellung hinzufügen:
 
@@ -161,5 +163,9 @@ Das Bild, das Sie als Ausgabedarstellung hinzufügen:
 * Darf maximal 50 MB groß sein
 
 Sofern verfügbar, zeigt Content Hub das Bild als Vorschauminiatur für die ZIP-Datei in Content Hub an.
+
+>[!NOTE]
+>
+>Eine Ausgabedarstellung mit dem Namen `cq5dam.preview.png` (ohne Dimensionen) wird nicht als Vorschauminiatur angezeigt.
 
 
