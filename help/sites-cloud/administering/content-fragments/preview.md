@@ -27,7 +27,7 @@ Sie können eine Vorschau Ihres Fragments anzeigen:
 
 * mit einer [Visualisierungsvorlage (HTML)](#preview-with-visualization-html-templates)
 
-Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ ](/help/sites-cloud/administering/content-fragments/authoring.md).
+Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >
@@ -87,7 +87,7 @@ Sie können eine Vorschau eines Inhaltsfragments in einer externen Anwendung anz
 
 >[!NOTE]
 >
->Für [ Option muss ](#preview-url-pattern) „Vorschau des URL-Musters“ konfiguriert werden.
+>Für [&#x200B; Option muss &#x200B;](#preview-url-pattern) „Vorschau des URL-Musters“ konfiguriert werden.
 
 1. Navigieren Sie in der Inhaltsfragmentkonsole zum Speicherort des gewünschten Fragments.
 1. Fragment im Editor öffnen
