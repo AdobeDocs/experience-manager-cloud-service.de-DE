@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM di
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 4%
+source-wordcount: '453'
+ht-degree: 3%
 
 ---
 
@@ -45,6 +45,18 @@ Der Auftrag [Content erstellen](/help/ai-in-aem/agents/brand-experience/experien
 >
 >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
+### Auftrag „Figma zu visuellen Inhaltsfragmenten“ {#figma-to-visual-content-fragments}
+
+Der Auftrag [Figma zu visuellen Inhaltsfragmenten](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importiert Figma-Designs in AEM-Inhaltsmodelle, Inhaltsfragmente und HTML-Vorlagen.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>Der Auftrag Figma zu visuellen Inhaltsfragmenten ist derzeit eingeschränkt verfügbar.
+>
+>Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ### Formularerstellungsauftrag {#form-creation}
 
 Der Auftrag [Formularerstellung](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) ermöglicht es Benutzern, adaptive Formulare über Eingabeaufforderungen in natürlicher Sprache zu erstellen, ohne von Entwicklungs- oder IT-Teams abhängig zu sein. Diese Funktion beschleunigt die Formularentwicklung, während die Markenkonsistenz gewahrt bleibt und es Geschäftsbenutzern ermöglicht wird, Formulare ohne fundierte technische Produktkenntnisse zu erstellen.
@@ -67,4 +79,4 @@ Der Agent kann mit anderen Agentenfähigkeiten arbeiten, Beispiele sind:
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_de) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) für angeleitete, praktische Anweisungen verwenden.

@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
+source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 96%
+source-wordcount: '2930'
+ht-degree: 94%
 
 ---
 
@@ -138,7 +138,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* [Unter Verwendung der Funktion „Varianten generieren“ &#x200B;](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+* [Unter Verwendung der Funktion „Varianten generieren“ ](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -156,7 +156,7 @@ So erstellen Sie eine Variante Ihres Inhaltsfragments:
    >
    >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
@@ -279,7 +279,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
@@ -544,7 +544,25 @@ Um eine produkt- und kontextbezogene Zusammenarbeit zu ermöglichen, stellt die 
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 
-Der Inhaltsfragmenteditor bietet Autorinnen und Autoren die Möglichkeit, die Vorschau von Bearbeitungen in einer externen Frontend-Anwendung anzuzeigen. Dazu muss das **[Standard-URL-Muster](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** definiert sein, um die Schaltfläche **Vorschau** in der oberen Symbolleiste des Editors zu aktivieren. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
+Der Inhaltsfragment-Editor bietet Autorinnen und Autoren zwei Optionen für die Vorschau ihrer Fragmente.
+
+Beide Optionen sind über die Option **Vorschau** in der oberen Symbolleiste verfügbar:
+
+* **Anwendung**
+
+   * Wählen Sie diese Option, um die [externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-application).
+
+* **Vorlage**
+
+   * Ermöglicht die Vorschau Ihres Inhaltsfragments mit **[Visualisierungsvorlagen (HTML)](#preview-with-visualization-html-templates)**.
+
+     <!-- CQDOC-23232 - remove when GA -->
+
+     >[!NOTE]
+     >
+     >Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
+     >
+     >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Veröffentlichen Ihres Fragments {#publish-content-fragment}
 

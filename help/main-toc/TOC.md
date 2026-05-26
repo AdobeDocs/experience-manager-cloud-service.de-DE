@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: 68b7fa602a70e2bd9c4590f4acdf5a27f25db4ba
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7436'
 ht-degree: 85%
 
 ---
@@ -527,6 +527,7 @@ ht-degree: 85%
          + [Überlegungen zum Löschen](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analysieren der Struktur](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Vorschau von Fragmenten](/help/sites-cloud/administering/content-fragments/preview.md)
+         + [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
          + {hide-from-toc}[Wiederverwenden von Inhaltsfragmenten mit MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
@@ -1140,6 +1141,7 @@ ht-degree: 85%
             + [Auftrag zur Inhaltserstellung](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
             + [Kommunikationserstellungsauftrag](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
             + [Formularerstellungsauftrag](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+            + [Auftrag „Figma zu visuellen Inhaltsfragmenten“](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
          + Experience Modernization Agent {#modernization}
             + [Übersicht](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
             + [Erste Schritte](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
@@ -1326,7 +1328,7 @@ ht-degree: 85%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1615,6 +1617,8 @@ ht-degree: 85%
       + [Anpassen und Erweitern von Inhaltsfragmenten](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [Anpassen von Inhaltsfragmentkonsole und -editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [Visuelle Inhaltsfragmente - Vorlagen](/help/implementing/developing/extending/content-fragments-visualization-templates.md)
+      + [Visuelle Inhaltsfragmente - Versand über die Veröffentlichungs-URL](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md)
       + Verwalten von Suchformularen {#manage-search-forms}
          + [Konfigurieren von Suchformularen](/help/implementing/developing/extending/search-forms.md)
          + [Konfigurieren von Suchfiltern für den Posteingang](/help/implementing/developing/extending/configure-inbox-search-rail.md)
