@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 1548c70e63dcccd545d8d5838a1249ef6909f6a2
+source-git-commit: 5c8054e9a4f0bbcc2a6fce2fba70403c1f4268d8
 workflow-type: tm+mt
 source-wordcount: '6011'
 ht-degree: 91%
@@ -1268,8 +1268,8 @@ Entwicklerinnen und Entwickler, die beide Plug-ins (`aio-cli-plugin-cloudmanager
 
 ##### Weiterverwendung des Kontexts `aio-cli-plugin-cloudmanager`
 
-Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird eine Warnung angezeigt, dass er veraltet ist. Diese Warnung kann durch Verwenden des Modus ```--quiet``` ignoriert werden. Neuere Versionen des RDE-Plug-ins bieten keine Ausweichmöglichkeit, um den Kontext `aio-cli-plugin-cloudmanager` länger zu lesen. Um ihn weiterhin zu verwenden, konfigurieren Sie einfach den Standardkontext für `aio-cli-plugin-cloudmanager`. Siehe das [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
+Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird eine Warnung angezeigt, dass er veraltet ist. Diese Warnung kann durch Verwenden des Modus `--quiet` ignoriert werden. Neuere Versionen des RDE-Plug-ins bieten keine Ausweichmöglichkeit, um den Kontext `aio-cli-plugin-cloudmanager` länger zu lesen. Um ihn weiterhin zu verwenden, konfigurieren Sie einfach den Standardkontext für `aio-cli-plugin-cloudmanager`. Siehe das [Beispiel zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) oben.
 
 ##### Verwenden eines anderen Kontextnamens auch für das Cloud Manager-Plug-in
 
-Die Cloud Manager-Plug-ins bieten einen Parameter zur Definition eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie hierzu das RDE-Plug-in anhand des [Beispiels zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, bei jedem Aufruf `myContext` wie ```--imsContextName=myContext``` zu verwenden.
+Die Cloud Manager-Plug-ins bieten einen Parameter zur Definition eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie hierzu das RDE-Plug-in anhand des [Beispiels zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, bei jedem Aufruf `myContext` wie `--imsContextName=myContext` zu verwenden.
