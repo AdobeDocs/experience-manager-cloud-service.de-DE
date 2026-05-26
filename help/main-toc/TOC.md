@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 68b7fa602a70e2bd9c4590f4acdf5a27f25db4ba
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '7436'
 ht-degree: 85%
@@ -1139,9 +1139,9 @@ ht-degree: 85%
             + [Überblick](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
             + [Auftrag zur Inhaltsaktualisierung](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
             + [Auftrag zur Inhaltserstellung](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
+            + [Auftrag „Figma zu visuellen Inhaltsfragmenten“](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
             + [Kommunikationserstellungsauftrag](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
             + [Formularerstellungsauftrag](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
-            + [Auftrag „Figma zu visuellen Inhaltsfragmenten“](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
          + Experience Modernization Agent {#modernization}
             + [Übersicht](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
             + [Erste Schritte](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
@@ -1328,7 +1328,7 @@ ht-degree: 85%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

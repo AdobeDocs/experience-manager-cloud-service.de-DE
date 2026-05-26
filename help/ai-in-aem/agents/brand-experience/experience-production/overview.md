@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM di
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,7 @@ Der Agent bietet die folgenden Aufträge:
 
 * [Inhaltsaktualisierung](#content-update)
 * [Content-Erstellung](#content-create)
+* [Auftrag „Figma zu visuellen Inhaltsfragmenten“](#figma-to-visual-content-fragments)
 * [Formularerstellung](#form-creation)
 * [Erstellung von Kommunikationen](#communications-creation)
 
@@ -79,4 +80,4 @@ Der Agent kann mit anderen Agentenfähigkeiten arbeiten, Beispiele sind:
 
 Die folgenden Ressourcen können bei der weiteren Untersuchung des Experience Production Agent nützlich sein:
 
-* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_de) für angeleitete, praktische Anweisungen verwenden.
+* Sie können auch die [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) für angeleitete, praktische Anweisungen verwenden.

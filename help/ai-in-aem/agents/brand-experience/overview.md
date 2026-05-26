@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Brand Experience Agent die Modernisierung und Wei
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 68b7fa602a70e2bd9c4590f4acdf5a27f25db4ba
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '689'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Brand Experience Agent beschleunigt die Modernisierung und Weiterentwicklung dig
 Brand Experience Agent liefert seine Ergebnisse über die folgenden Agenten, die jeweils auf eine bestimmte Reihe von Aufträgen spezialisiert sind:
 
 * [Experience Modernization Agent](#experience-modernization) - Migriert Websites in Cloud-fähige Formate
-* [Experience Production Agent](#experience-production) - Verkürzt die Time-to-Market durch Inhaltsaktualisierungen, Formularerstellung und Kommunikation
+* [Experience Production Agent](#experience-production) - Verkürzt die Time-to-Market durch Inhaltsaktualisierungen, Inhaltserstellung, Figma-zu-Visual-Inhaltsfragment-Importe, Formularerstellung und Kommunikation
 * [Entwicklungsagent](#development) - Bietet KI-unterstützte Fehlerbehebung und Build-Automatisierung
 
 Durch diese Agenten übernimmt die Brand Experience Agent die umfangreiche operative Arbeit, die hinter Updates und Modernisierungen steckt, und hilft Teams, Änderungen schneller und mit größerem Vertrauen in die heutige KI-Ära zu liefern.
@@ -40,7 +40,7 @@ Durch diese Agenten übernimmt die Brand Experience Agent die umfangreiche opera
 
 Die Erlebnismodernisierung beseitigt die Reibungen bei umfangreichen Site-Migrationen, indem bestehende Erlebnisse automatisch modernisiert werden, was Teams dabei hilft, schneller umzusteigen und gleichzeitig Kontinuität, Qualität und Vertrauen aufrechtzuerhalten.
 
-Migrationen können von einer Live-Quell-Website, von Figma-Designs oder einer Kombination aus beidem gesteuert werden. Der Agent unterstützt [Redesign-Migrationen, die Quellinhalte in Figma-abgeleitete Blöcke &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign), und [Generieren neuer Seiten direkt aus Figma-Frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
+Migrationen können von einer Live-Quell-Website, von Figma-Designs oder einer Kombination aus beidem gesteuert werden. Der Agent unterstützt [Redesign-Migrationen, die Quellinhalte in Figma-abgeleitete Blöcke ](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign), und [Generieren neuer Seiten direkt aus Figma-Frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
 
 ## Erlebnisproduktionsagent {#experience-production}
 

@@ -3,7 +3,7 @@ title: Auftrag „Figma zu visuellen Inhaltsfragmenten“
 description: Erfahren Sie, was der Auftrag „Figma zu visuellen Inhaltsfragmenten“ von Brand Experience Agent ist und was er für Sie tun kann.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Auftrag „Figma zu visuellen Inhaltsfragmenten“ {#figma-to-visual-content-fragments-job}
 
-Der Auftrag Figma zu visuellen Inhaltsfragmenten des [Erlebnisproduktionsagenten](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatisiert den Prozess der Neuerstellung von Figma-Designs in Adobe Experience Manager (AEM) as a Cloud Service.
+Der Auftrag Figma zu visuellen Inhaltsfragmenten des [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatisiert den Prozess der Neuerstellung von Figma-Designs in Adobe Experience Manager (AEM) as a Cloud Service.
 
 <!-- CQDOC-23232 - remove when GA -->
 

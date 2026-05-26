@@ -3,9 +3,9 @@ title: Erstellen von Visualisierungsvorlagen für Inhaltsfragmente
 description: Vorschau und Veröffentlichung von Inhaltsfragmenten mit Visualisierungsvorlagen. Erfahren Sie, wie Sie die Vorlagen erstellen und anpassen können.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2142'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ Weitere Informationen zur Verwendung Ihrer Vorlage in AEM finden Sie unter:
 
 ### Verwenden der Veröffentlichungs-URL für visuelle Inhaltsfragmente {#using-the-visual-content-fragment-publish-url}
 
-Nachdem Sie visuelle Inhaltsfragmente mithilfe der Vorlage erstellt haben, können Sie die [Veröffentlichungs-URL Ihrer visuellen Inhaltsfragmente“ &#x200B;](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Nachdem Sie visuelle Inhaltsfragmente mithilfe der Vorlage erstellt haben, können Sie die [Veröffentlichungs-URL Ihrer visuellen Inhaltsfragmente“ ](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars - die (sehr) Grundlagen {#handlebars-the-very-basics}
 
@@ -373,7 +373,7 @@ Denken Sie daran, beim Zugriff auf Array-Elemente nach Index in Handlebars:
 
 ### Zahlenfelder mit mehreren Werten {#multi-valued-number-fields}
 
-Zahlen werden zur [&#x200B; in &#x200B;](#multi-valued-text-fields) umgewandelt:
+Zahlen werden zur [ in ](#multi-valued-text-fields) umgewandelt:
 
 ```handlebars
 <div class="pricing">

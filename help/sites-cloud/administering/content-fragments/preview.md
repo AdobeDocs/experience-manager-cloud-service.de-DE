@@ -6,7 +6,7 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 37%
@@ -27,7 +27,7 @@ Sie können eine Vorschau Ihres Fragments anzeigen:
 
 * mit einer [Visualisierungsvorlage (HTML)](#preview-with-visualization-html-templates)
 
-Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
+Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >
@@ -87,7 +87,7 @@ Sie können eine Vorschau eines Inhaltsfragments in einer externen Anwendung anz
 
 >[!NOTE]
 >
->Für [&#x200B; Option muss &#x200B;](#preview-url-pattern) „Vorschau des URL-Musters“ konfiguriert werden.
+>Für [ Option muss ](#preview-url-pattern) „Vorschau des URL-Musters“ konfiguriert werden.
 
 1. Navigieren Sie in der Inhaltsfragmentkonsole zum Speicherort des gewünschten Fragments.
 1. Fragment im Editor öffnen
@@ -111,4 +111,3 @@ Siehe [Visuelle Inhaltsfragmente](/help/sites-cloud/administering/content-fragme
 >[!NOTE]
 >
 >Unter [Visual Content Fragments - Vorlagen](/help/implementing/developing/extending/content-fragments-visualization-templates.md) finden Sie Einzelheiten zum Erstellen, Anpassen und Hochladen eigener HTML-Vorlagen.
-

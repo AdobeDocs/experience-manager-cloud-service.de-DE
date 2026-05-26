@@ -3,7 +3,7 @@ title: Visuelle Inhaltsfragmente - Versand über die Veröffentlichungs-URL
 description: Verwenden Sie die Veröffentlichungs-URL, um visuelle Inhaltsfragmente bereitzustellen.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 5413e173ac159015f224845e238779c5dc997ee5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '1456'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Visuelle Inhaltsfragmente - Versand über die Veröffentlichungs-URL {#visual-content-fragments-deliver-with-the-publish-url}
 
-Wenn ein Inhaltsfragment, das auf einem Modell mit einer oder mehreren angehängten HTML-Vorlagen basiert, veröffentlicht wird, wird die gerenderte HTML dieses Fragments über die Adobe Experience Manager (AEM) as a Cloud Service-Veröffentlichungsebene unter einer URL mit dieser Struktur verfügbar gemacht:
+Wenn ein Inhaltsfragment, das auf einem Modell mit einer oder mehreren angehängten HTML-Vorlagen basiert, veröffentlicht wird, wird die gerenderte HTML dieses Fragments über die as a Cloud Service-Veröffentlichungsebene von Adobe Experience Manager (AEM) unter einer URL mit dieser Struktur verfügbar gemacht:
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html

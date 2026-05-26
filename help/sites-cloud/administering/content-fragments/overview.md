@@ -6,20 +6,20 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: a62769ad302c39a3c1ac7d99960afd2a377a1319
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
 source-wordcount: '2553'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten - Konzepte und Best Practices {#working-with-content-fragments-concepts-and-best-practices}
 
-In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen es Ihnen, Inhalte so vorzubereiten, dass sie an mehreren Orten und über mehrere Kanäle verwendet werden können, ideal für die [Headless-Bereitstellung](/help/headless/what-is-headless.md) und die [Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
+In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Stellen und über mehrere Kanäle verwendet werden können und ideal für [Headless-Bereitstellung](/help/headless/what-is-headless.md) und [Seitenbearbeitung](/help/sites-cloud/authoring/fragments/content-fragments.md) sind.
 
 >[!TIP]
 >
->Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 >[!IMPORTANT]
 >
