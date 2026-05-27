@@ -87,7 +87,7 @@ Die Assets-Ansicht ermöglicht Ihnen jetzt den Zugriff auf Dynamic Media und Dyn
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
-* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative KI für adaptives Forms bietet ein völlig neues Leistungsniveau und vereinfacht die Entwicklung von Formularen. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
+* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative KI für adaptives Forms bietet ein völlig neues Leistungsniveau und vereinfacht die Entwicklung von Formularen. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
 
   ![Generativer KI-Assistent, adaptive Formulare](/help/forms/assets/generative-ai-assistant.png)
 
