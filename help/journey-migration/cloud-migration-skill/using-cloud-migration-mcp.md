@@ -93,4 +93,4 @@ Verwenden Sie dies, um zu entscheiden, welche Muster in Ihren Sitzungen priorisi
 
 ## So geht es weiter {#whats-next}
 
-Wenn der MCP konfiguriert ist, finden [ unter „Verwenden der Cloud-](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)&quot; eine vollständige Referenz zu Migrationsmustern und zur Sitzungsverwaltung.
+Wenn der MCP konfiguriert ist, finden [&#x200B; unter „Verwenden der Cloud-](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)&quot; eine vollständige Referenz zu Migrationsmustern und zur Sitzungsverwaltung.
