@@ -4,9 +4,9 @@ description: Aktuelle Wartungsversionshinweise zu [!DNL Adobe Experience Manager
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c8303f6792f36e9d1942cf398909cbf0b3f3f90f
+source-git-commit: 6087c41fda8f00d3606059484b0452ef5187f6ef
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '667'
 ht-degree: 30%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 Der folgende Abschnitt enthält die technischen Versionshinweise für die aktuelle Wartungsversion von Experience Manager as a Cloud Service.
 
-## 26125 {#release-26125}
+## 26309 {#release-26309}
 
-Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 26125, die am 20. Mai 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 25892.
+Im Folgenden finden Sie die kontinuierlichen Verbesserungen für die Wartungsversion 26309, die am 26. Mai 2026 veröffentlicht wurde. Die vorherige Wartungsversion war Version 25892.
 
 Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssatz für diese Wartungsversion bereit. Weitere Informationen finden Sie in der [Experience Manager-Versions-Roadmap](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Verbesserungen {#enhancements-26125}
+>[!NOTE]
+>
+>Version 26125 wurde als privat gekennzeichnet.
+
+### Verbesserungen {#enhancements-26309}
 
 * ASSETS-56957: Unterstützung für Mehrfach-Audiospuren und Mehrfach-Untertitel-Uploads für Videos in Dynamic Media mit OpenAPI hinzugefügt.
 * ASSETS-58563: Adobe Commerce-Integration zu AEM Assets hinzugefügt.
@@ -34,7 +38,7 @@ Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssa
 * SITES-42835: Experimentell: AEM Forms-Seiten, die außerhalb der Content-API erstellt wurden, sind jetzt über die AEM Sites Content-API zugänglich, ohne dass Migrations- oder Schemaänderungen erforderlich sind.
 * SITES-44265: Der Inhalts-API wurde eine stabile replizierte Seitenkennung hinzugefügt, die nach Seitenverschiebungen gültig bleibt, sodass veraltete Referenz-404-Fehler vermieden werden.
 
-### Behobene Probleme {#fixed-issues-26125}
+### Behobene Probleme {#fixed-issues-26309}
 
 * ASSETS-36208: Feste Bildprofile werden nicht in den Ordnereigenschaften angezeigt, wenn Dynamic Media deaktiviert ist.
 * ASSETS-63240: Massenvorgänge zur Mehrfachauswahl im Append-Modus wurden korrigiert, bei denen Benutzende auf einer leeren Seite blieben, anstatt zur Assets-Konsole zurückzukehren.
@@ -48,15 +52,15 @@ Die Aktivierung von Funktionen in 2026.5.0 stellt den vollständigen Funktionssa
 * CQ-4363355: Übersetzungsanfragen im GenAI Translation Connector wurden korrigiert, die aufgrund einer hartcodierten statischen URL an einen falschen regionalen Endpunkt weitergeleitet wurden.
 * SITES-44186: Meta-Tag-Einschleusung in die Ereignisverarbeitung des Seiten-Editors durch Autoren wurde korrigiert.
 
-### Bekannte Probleme {#known-issues-26125}
+### Bekannte Probleme {#known-issues-26309}
 
 Keine.
 
-### Eingestellte Funktionen und APIs {#deprecated-26125}
+### Eingestellte Funktionen und APIs {#deprecated-26309}
 
 Veraltete und entfernte Funktionen und APIs in AEM as a Cloud Service werden im Dokument [Veraltete und entfernte Funktionen und APIs](/help/release-notes/deprecated-removed-features.md) beschrieben.
 
-### Sicherheitskorrekturen {#security-26125}
+### Sicherheitskorrekturen {#security-26309}
 
 Mit AEM as a Cloud Service sollen Sicherheit und Leistung Ihrer Plattform optimiert werden. Diese Wartungsversion behebt 19 Schwachstellen und verstärkt unser Engagement für zuverlässigen Systemschutz.
 
