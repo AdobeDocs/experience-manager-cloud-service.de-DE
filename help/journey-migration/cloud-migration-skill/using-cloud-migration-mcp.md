@@ -3,7 +3,7 @@ title: Verwenden des AEM Cloud Migration MCP
 description: Erfahren Sie, wie Sie den AEM Cloud Migration MCP-Server zu Ihrer KI-aktivierten IDE hinzufügen und ihn verwenden, um während einer Migrationssitzung Best Practices Analyzer-Ergebnisse aus Cloud Acceleration Manager abzurufen.
 feature: Migration
 role: Developer
-source-git-commit: f3f81e043b95576bbd1d236645a562668c355e76
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 1%
@@ -93,4 +93,5 @@ Verwenden Sie dies, um zu entscheiden, welche Muster in Ihren Sitzungen priorisi
 
 ## So geht es weiter {#whats-next}
 
-Wenn der MCP konfiguriert ist, finden [&#x200B; unter „Verwenden der Cloud-](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)&quot; eine vollständige Referenz zu Migrationsmustern und zur Sitzungsverwaltung.
+Wenn der MCP konfiguriert ist, finden [ unter „Verwenden der Cloud-](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)&quot; eine vollständige Referenz zu Migrationsmustern und zur Sitzungsverwaltung.
+

@@ -3,7 +3,7 @@ title: Workflows für die Strukturreplikation in AEM as a Cloud Service
 description: Erfahren Sie, wie Sie tiefe Inhaltshierarchien mithilfe des Workflow-Schritts zur Baumstrukturaktivierung und der zugehörigen Workflows in AEM as a Cloud Service replizieren.
 feature: Operations
 role: Admin
-source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 82%
@@ -162,3 +162,4 @@ Nachfolgend finden Sie Beispiele für Protokolle, die während eines Beispiel-Wo
 ```
 
 +++
+

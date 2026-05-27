@@ -3,7 +3,7 @@ title: Verwenden der AEM Cloud-Migrationsfertigkeit
 description: Referenz für jedes Migrationsmuster, das von AEM Cloud Migration unterstützt wird, einschließlich OSGi-Konfigurationskonvertierung, BPA-Quelloptionen und Sitzungsverwaltungsanleitungen.
 feature: Migration
 role: Developer
-source-git-commit: f3f81e043b95576bbd1d236645a562668c355e76
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
@@ -142,3 +142,4 @@ Bei BPA-Berichten mit vielen Ergebnissen ermöglicht der Batch-für-Batch-Ansatz
 Der Agent sucht und bearbeitet Dateien nur in den geöffneten IDE-Arbeitsbereichordnern. Übergeordnete Verzeichnisse, gleichrangige Ordner oder andere Speicherorte auf der Festplatte werden nicht überprüft.
 
 Wenn eine BPA-Suche auf einen Dateipfad verweist, der nicht im Arbeitsbereich vorhanden ist, stoppt der Agent und teilt Ihnen mit, welche Pfade fehlen. Öffnen Sie den richtigen Projektordner oder geben Sie die Pfade explizit an, um fortzufahren.
+
