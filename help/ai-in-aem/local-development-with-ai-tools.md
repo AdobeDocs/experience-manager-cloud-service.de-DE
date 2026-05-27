@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
+source-git-commit: 38e599d34e591d0d8c9f822c0296bef27d24a605
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1836'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Vier einander ergänzende Komponenten befassen sich damit:
 | **AEM-Schnellstart für lokalen MCP-Server** | Zeigt Live-Laufzeitdaten aus einer lokalen AEM SDK-Instanz zur Fehlerbehebung an |
 | **Lokaler Dispatcher-MCP-Server** | Ermöglicht die Laufzeitvalidierung und -überprüfung einer lokalen Dispatcher-Instanz |
 
-In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
+In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
 
 >[!TIP]
 >
@@ -56,11 +56,12 @@ Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](http
 | `ensure-agents-md` | Bootstrapping `AGENTS.md` und `CLAUDE.md` auf die eigentliche Modulstruktur des Projekts zugeschnitten |
 | `create-component` | Strukturvorlagen ermöglichen eine vollständige AEM-Komponente: Komponentendefinition, XML-Dialogfeld, HTL-Vorlage, Sling-Modell, Komponententests und Client-Bibliotheken |
 | `dispatcher` | KI-gestützter Dispatcher- und Apache HTTPD-Konfigurationsassistent, der die Konfigurationserstellung, technische Beratung, die Reaktion auf Vorfälle, Leistungsoptimierung und die Sicherheitsabsicherung behandelt. |
+| `migration` | Migriert AEM 6.x-, AMS- oder On-Premise-Java-Code- und OSGi-Konfigurationen nach AEM as a Cloud Service, gesteuert durch [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)-Ergebnisse aus einem CSV-Export oder [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) |
 | `workflow` | Dies ist der zentrale Einstiegspunkt für alle AEM as a Cloud Service Workflow-Fähigkeiten. Es behandelt das Design von Workflow-Modellen, die Entwicklung benutzerdefinierter Prozessschritte und Teilnehmerauswahlen, die Starterkonfiguration, das Auslösen von Workflows und die Produktionsunterstützung, einschließlich des Debuggens blockierter/fehlgeschlagener Workflows, des Auslösens von Vorfällen mit Cloud Manager-Protokollen, der Thread-Pool-Analyse und der Sling-Auftragsdiagnose für die Granite Workflow-Engine. |
 
 ### Kenntnisse installieren {#install-skills}
 
-Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [&#x200B; Anleitung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
+Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [ Anleitung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
 
 #### Claude Code {#claude-code}
 
@@ -124,7 +125,17 @@ CTA Link (ctaLink) - Pathfield
 
 Der Agent wiederholt die Feldspezifikation zur Bestätigung und generiert dann alle Komponentendateien. Zu den unterstützten Mustern gehören Mehrfachfeld- mit zusammengesetzten verschachtelten Elementen, bedingte Einblenden-/Ausblenden-Logik, Kernkomponenten-Erweiterung über Sling Resource Merger und JUnit 5-Tests mit AEM Mocks. Das Design kann aus verschiedenen Quellen stammen, darunter eine Textbeschreibung, ein Bild oder eine Figma Design URL unter Verwendung des MCP-Servers von Figma.
 
-Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+
+### Verwenden der Migrationsfertigkeit {#use-the-migration-skill}
+
+Die `migration` Kenntnisse leiten den Agenten durch die Migration von AEM Java-Code und OSGi-Konfigurationen zu AEM as a Cloud Service. Es funktioniert ein Muster nach dem anderen: Sie benennen das Muster (z. B. `scheduler` oder `replication`), lassen den Agenten auf Ihre Best Practices Analyzer-Ergebnisse verweisen, suchen die betroffenen Dateien in Ihrem Projekt und wenden die richtigen Transformationen in Batches an, wobei Sie nach jeder Überprüfung anhalten.
+
+Zu den unterstützten Mustern gehören Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener und EventHandler, Assets API, HTL-Link-Fehlerbehebungen und OSGi-Konfigurationskonvertierung mit Cloud Manager Secrets und Extraktion von Umgebungsvariablen.
+
+Die Kenntnisse sind mit dem [Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) verknüpft, um Ergebnisse direkt aus [Cloud Acceleration Manager abzurufen](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Ohne konfiguriertes MCP wird die Qualifikation auf einen lokalen [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV-Export zurückgesetzt oder Sie können sie auf bestimmte Dateien manuell verweisen.
+
+Vollständige Setupanweisungen und Musterverweise finden Sie unter [KI-unterstützte Code-Migration zu AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 ### Dispatcher-Kenntnisse verwenden {#use-the-dispatcher-skill}
 
