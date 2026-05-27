@@ -152,7 +152,7 @@ Jeder Replikationsagent zeigt zwei Replikationswarteschlangen an. AEM as a Cloud
 
 1. Überprüfen Sie auf **Registerkarte** Status“, ob jede Warteschlange einen einwandfreien Status aufweist. Überprüfen Sie **Artikel ausstehend** für Arbeit, die darauf wartet, verarbeitet zu werden, und **Letztes Element verarbeitet** für die letzte Aktivität.
 
-   ![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten ](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
+   ![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten &#x200B;](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
 
 1. Wählen Sie **Verbindung testen** aus, um zu überprüfen, ob der Agent den Verteilungs-Service erreichen kann.
 1. Wählen Sie die **Protokolle** aus, um den Verlauf der Inhaltsveröffentlichungen anzuzeigen.
