@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 3c10af78edeb3e71b178c78d0833cb2e1cfcad4a
 workflow-type: tm+mt
-source-wordcount: '7436'
+source-wordcount: '7454'
 ht-degree: 85%
 
 ---
@@ -421,6 +421,10 @@ ht-degree: 85%
             + {hide-from-toc}[Übersicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + {hide-from-toc}[Wichtige Überlegungen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + {hide-from-toc}[Verwenden des User Mapping Tools](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
+   + KI-unterstützte Code-Migration {#cloud-migration-skill}
+      + [Überblick](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)
+      + [Verwenden der Cloud-Migrationsfertigkeit](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)
+      + [Verwenden des MCP für die Cloud-Migration](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
    + Tools für die Code-Refaktorierung {#refactoring-tools}
       + [Erste Schritte mit Refaktorierungs-Tools](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [Übersicht über die Refaktorierungs-Tools](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -1328,7 +1332,7 @@ ht-degree: 85%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
@@ -1669,6 +1673,7 @@ ht-degree: 85%
    + [Aktionszentrum](/help/operations/actions-center.md)
    + [Inhaltssuche und -indizierung](/help/operations/indexing.md)
    + [Content-Replikations-Service](/help/operations/replication.md)
+   + [Baumstruktur-Replikations-Workflows](/help/operations/tree-replication-workflows.md)
    + [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md)
    + [Infrastruktur- und Service-Überwachung in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Wartungsaufgaben](/help/operations/maintenance.md)

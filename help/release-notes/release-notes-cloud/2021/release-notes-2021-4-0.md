@@ -4,9 +4,9 @@ description: Versionshinweise für Version 2021.4.0 von [!DNL Adobe Experience M
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1583'
 ht-degree: 93%
 
 ---
@@ -31,7 +31,7 @@ Die folgende Version (2021.5.0) wurde am 27. Mai 2021 veröffentlicht.
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* [Workflow zum Veröffentlichen der Inhaltsstruktur](/help/operations/replication.md#publish-content-tree-workflow) – Ein neues Workflow-Modell und ein neuer Schritt bieten eine höhere Leistung bei der Veröffentlichung tiefer Inhalts-Hierarchien.
+* [Workflow zum Veröffentlichen der Inhaltsstruktur](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) – Ein neues Workflow-Modell und ein neuer Schritt bieten eine höhere Leistung bei der Veröffentlichung tiefer Inhalts-Hierarchien.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -177,7 +177,7 @@ Die folgende Version wurde am 06. Mai 2021 veröffentlicht.
 
 ### Fehlerbehebungen {#bug-fixes-cm-april}
 
-* Beim Bearbeiten der Seite „Erlebnisprüfung“ einer Pipeline führt ein Eingabepfad, der mit einem Schrägstrich `( / )` beginnt, nicht mehr dazu, dass der Schritt im Status „Ausstehend“ feststeckt.
+* Beim Bearbeiten der Seite „Erlebnis-Audit“ einer Pipeline führt ein Eingabepfad, der mit einem Schrägstrich `( / )` beginnt, nicht mehr dazu, dass der Schritt im Status „Ausstehend“ feststeckt.
 
 * Wenn beim Erstellen einer neuen Produktions-Pipeline vom Benutzer keine Überschreibung bei der Inhaltsprüfung hinzugefügt wird, findet jetzt trotzdem eine Überprüfung der standardmäßigen Homepage statt.
 

@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.11.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 94%
@@ -37,7 +37,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Eine Zusammenfassung der in der Version 2024.11.0 hinzugefügten Funktionen finden Sie im Übersichtsvideo zur Version November 2024:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440929?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -87,7 +87,7 @@ Die Assets-Ansicht ermöglicht Ihnen jetzt den Zugriff auf Dynamic Media und Dyn
 
 ### Neue Funktionen in AEM Forms {#forms-new-features}
 
-* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative KI für adaptives Forms bietet ein völlig neues Leistungsniveau und vereinfacht die Entwicklung von Formularen. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
+* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative KI für adaptives Forms bietet ein völlig neues Leistungsniveau und vereinfacht die Entwicklung von Formularen. Dadurch können Sie schneller als je zuvor bessere Formulare erstellen.
 
   ![Generativer KI-Assistent, adaptive Formulare](/help/forms/assets/generative-ai-assistant.png)
 
@@ -180,7 +180,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### Verbesserte Leistung bei der Strukturreplikation (und Einstellung der Verwendung des Workflows für die Veröffentlichung einer Inhaltsstruktur) {#tree-replication-performance}
 
-Der [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) ist ein neuer Workflow-Modellschritt, der zum Replizieren von tiefen Inhaltshierarchien empfohlen wird. Beachten Sie, dass unabhängige Replikationen (z. B. durch schnelle Veröffentlichung oder Verwalten der Veröffentlichung) parallel zum laufenden Workflow für die Strukturreplikation fortgesetzt werden können. Dies ist besonders nützlich, wenn Sie zeitkritische Inhalte veröffentlichen müssen, während eine Massenreplikation noch läuft. Der Strukturreplikationsschritt ersetzt den Workflow für die Veröffentlichung der Inhaltsstruktur und den zugehörigen Workflow-Schritt, der jetzt nicht mehr unterstützt wird.
+Der [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation) ist ein neuer Workflow-Modellschritt, der zum Replizieren von tiefen Inhaltshierarchien empfohlen wird. Beachten Sie, dass unabhängige Replikationen (z. B. durch schnelle Veröffentlichung oder Verwalten der Veröffentlichung) parallel zum laufenden Workflow für die Strukturreplikation fortgesetzt werden können. Dies ist besonders nützlich, wenn Sie zeitkritische Inhalte veröffentlichen müssen, während eine Massenreplikation noch läuft. Der Strukturreplikationsschritt ersetzt den Workflow für die Veröffentlichung der Inhaltsstruktur und den zugehörigen Workflow-Schritt, der jetzt nicht mehr unterstützt wird.
 
 ### OpenAPI-basierte APIs – Early-Adopter-Programm {#open-apis-earlyadopter}
 

@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2022.6.0 von [!DNL Adobe Experience 
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 84%
@@ -96,7 +96,7 @@ Experience Manager Assets verwendet jetzt Adobe AI-Funktionen, um [zwischen Farb
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wurde die Option „Struktur hinzufügen“ auf der Registerkarte „Verteilen **im Admin-Bildschirm** Replikationsagenten entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) repliziert werden.
+* Wie in den Versionshinweisen vom Mai (2022.5.0) erwähnt, wurde die Option „Struktur hinzufügen“ auf der Registerkarte „Verteilen **im Admin-Bildschirm** Replikationsagenten entfernt. Pakete mit einer Baumstruktur von Inhalten sollten stattdessen mit [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) repliziert werden.
 
 ## Cloud Manager {#cloud-manager}
 
