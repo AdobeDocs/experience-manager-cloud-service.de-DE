@@ -120,9 +120,9 @@ Detaillierte Informationen zu Setup und Fehlerbehebung finden Sie unter [Verwend
 Die Kenntnisse und das MCP ergänzen die anderen Tools in der **Implementierungsphase**:
 
 - **Best Practices Analyzer**: Erzeugt die Ergebnisse, die zu den neuen Fähigkeiten beitragen. Siehe [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md).
-- **Cloud Acceleration Manager**: hostet BPA-Berichte und verfolgt den gesamten Migrationsfortschritt. Siehe [ Schritte mit CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md).
+- **Cloud Acceleration Manager**: hostet BPA-Berichte und verfolgt den gesamten Migrationsfortschritt. Siehe [&#x200B; Schritte mit CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md).
 - **Refaktorierungs-Tools**: Übernimmt die Modernisierung der Repository-Struktur und Dispatcher-Konfiguration. Siehe [Übersicht über die Umgestaltungs-Tools](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md).
 - **Content Transfer Tool**: Migriert Repository-Inhalte von AEM 6.x auf AEMaaCS.
 
-Umfassende Informationen finden Sie [ „Übersicht ](/help/journey-migration/implementation.md) Implementierungsphase“.
+Umfassende Informationen finden Sie [&#x200B; „Übersicht &#x200B;](/help/journey-migration/implementation.md) Implementierungsphase“.
 
