@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 099240530dd6cf80fc710fe83110f9876b6c1d49
+source-git-commit: b60f1a7416fda1844dc43e75fcd14bb90230cc51
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 86%
@@ -117,6 +117,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    ```
 
 >[!NOTE]
+>
 > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standard-Browser zu öffnen. So können Sie sie kopieren und mit einem **Inkognito**-Fenster Ihres Browsers öffnen. Dadurch wird sichergestellt, dass sich dies nicht auf Ihre aktuelle Sitzung im Hauptfenster des Browsers auswirkt, sodass Sie sich mit dem spezifischen Konto und der Organisation anmelden können, die für Ihre Aufgabe erforderlich sind.
 
 Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen `.aio`-Konfigurationsdatei (die Datei wird bei Bedarf erstellt). Der zweite Befehl legt den Kontext `mycontext` als „aktuellen“ Kontext fest, d. h. als Standard.
@@ -211,10 +212,9 @@ Adobe empfiehlt den folgenden Workflow für die Entwicklung einer neuen Funktion
 
 * Setzen Sie die RDE zurück, wenn sie von einer anderen Funktion verwendet wurde und Sie sie [auf den Standardstatus zurücksetzen](#reset-the-rde) möchten. <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-in-cloud-manager) or by way of the [command line](#reset-the-rde-using-the-command-line). -->Das Zurücksetzen dauert einige Minuten, und der gesamte vorhandene Inhalt samt Code wird gelöscht. Sie können den RDE-Statusbefehl verwenden, um zu bestätigen, dass die RDE bereit ist. Die RDE wird mit der neuesten Version von AEM wiederhergestellt.
 
-  >[!IMPORTANT]
-  >
-  >Wenn Ihre Staging- und Produktionsumgebungen keine automatischen AEM-Versionsaktualisierungen erhalten und sich hinter der neuesten Version befinden, kann die RDE eine andere Version von AEM ausführen. Daher stimmt das Code-Verhalten in der RDE möglicherweise nicht mit der Funktionsweise in der Staging- und Produktionsumgebung überein. In diesem Fall ist es wichtig, den Code beim Staging gründlich zu testen, bevor er in der Produktion bereitgestellt wird.
-
+>[!IMPORTANT]
+>
+>Wenn Ihre Staging- und Produktionsumgebungen keine automatischen AEM-Versionsaktualisierungen erhalten und sich hinter der neuesten Version befinden, kann die RDE eine andere Version von AEM ausführen. Daher stimmt das Code-Verhalten in der RDE möglicherweise nicht mit der Funktionsweise in der Staging- und Produktionsumgebung überein. In diesem Fall ist es wichtig, den Code beim Staging gründlich zu testen, bevor er in der Produktion bereitgestellt wird.
 
 * Synchronisieren Sie den lokalen Code über die RDE-Befehlszeilenschnittstelle mit der RDE. Sie können verschiedene Arten von Dateien installieren, z. B.:
 
@@ -278,7 +278,7 @@ Bei sorgfältiger Koordinierung ist es jedoch möglich, dass mehrere Entwickelnd
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  Erfordert eine ```aio login```-Ausführung.
+  Erfordert eine `aio login`-Ausführung.
 
 ### Bereitstellen in einer RDE {#deploy-to-rde}
 
@@ -662,7 +662,7 @@ Sie können die RDE zurücksetzen und sie auf einen Standardstatus zurückbringe
 
 `aio aem:rde:reset`
 
-Dieser Vorgang dauert in der Regel einige Minuten und meldet ```Environment reset.``` im Erfolgsfall bzw. ```Failed to reset the environment.```, wenn Fehler aufgetreten sind. Eine strukturierte Ausgabe finden Sie weiter unten im Kapitel über ```--json```-Ausgaben.
+Dieser Vorgang dauert in der Regel einige Minuten und meldet `Environment reset.` im Erfolgsfall bzw. `Failed to reset the environment.`, wenn Fehler aufgetreten sind. Eine strukturierte Ausgabe finden Sie weiter unten im Kapitel über `--json`-Ausgaben.
 
 Verwenden Sie den [Statusbefehl](#check-the-status-of-the-rde), um zu überprüfen, ob die Umgebung wieder bereit ist.
 
@@ -780,7 +780,7 @@ Um eine ausstehende Löschung abzubrechen und einen Schnappschuss beizubehalten,
 
 ## Befehle, die die JSON-Ausgabe unterstützen {#commands-that-support-json-output}
 
-Die meisten Befehle unterstützen das globale Flag ```--json```, das die Konsolenausgabe unterdrückt und gültige JSON_Dateien zurückgibt, die in Skripten verarbeitet werden sollen. Im Folgenden finden Sie einige unterstützte Befehle mit Beispielen für die JSON-Ausgabe.
+Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenausgabe unterdrückt und gültige JSON_Dateien zurückgibt, die in Skripten verarbeitet werden sollen. Im Folgenden finden Sie einige unterstützte Befehle mit Beispielen für die JSON-Ausgabe.
 
 ### Status {#status}
 
