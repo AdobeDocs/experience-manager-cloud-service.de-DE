@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: b60f1a7416fda1844dc43e75fcd14bb90230cc51
+source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 86%
@@ -785,7 +785,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 ### Status {#status}
 
 <details>
-  <summary>Erweitern, um Statusbeispiele anzuzeigen</summary>
+<summary>Erweitern, um Statusbeispiele anzuzeigen</summary>
 
 #### Eine saubere RDE {#clean-rde}
 
@@ -921,7 +921,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 ### Löschen {#delete}
 
 <details>
-  <summary>Erweitern, um Beispiele zum Löschen anzuzeigen</summary>
+<summary>Erweitern, um Beispiele zum Löschen anzuzeigen</summary>
 
 ```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
 
@@ -1003,7 +1003,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 ### Verlauf {#history}
 
 <details>
-  <summary>Erweitern, um Verlaufsbeispiele anzuzeigen</summary>
+<summary>Erweitern, um Verlaufsbeispiele anzuzeigen</summary>
 
 ```$ aio aem rde history --json```
 
@@ -1100,7 +1100,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 ### Zurücksetzen {#reset}
 
 <details>
-  <summary>Erweitern, um Beispiele zum Zurücksetzen anzuzeigen</summary>
+<summary>Erweitern, um Beispiele zum Zurücksetzen anzuzeigen</summary>
 
 #### Feuer und Vergessen, No-Wait {#fire-and-forget-no-wait}
 
@@ -1143,7 +1143,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 ### Neu starten {#restart}
 
 <details>
-  <summary>Erweitern, um Beispiele zum Neustarten anzuzeigen</summary>
+<summary>Erweitern, um Beispiele zum Neustarten anzuzeigen</summary>
 
 ```$ aio aem rde restart --json```
 
