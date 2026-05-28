@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 1a920bd30f80dd9831c96a4ec100e097ca0bfb7b
+source-git-commit: 099240530dd6cf80fc710fe83110f9876b6c1d49
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 86%
@@ -24,6 +24,7 @@ Sobald die Änderungen in einer RDE getestet wurden, können sie über die Cloud
 > Schnelle Entwicklungsumgebungen sollten auf die Entwicklung, Fehleranalyse und Funktionstests beschränkt sein und nicht für die Verarbeitung hoher Arbeitslasten oder großer Inhaltsmengen konzipiert sein.
 
 >[!NOTE]
+>
 > Kontaktieren Sie die RDE-Entwickelnden über den [Discord-Kanal](https://discord.com/channels/1131492224371277874/1245304281184079872) von Adobe. Sie können Fragen stellen oder Feedback zu RDE-Themen geben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
@@ -85,7 +86,7 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie Version 20 von [Node und NPM installiert haben](https://nodejs.org/en/download/), damit Adobe I/O (AIO) CLI und die zugehörigen Plug-ins richtig funktionieren.
+> Stellen Sie sicher, dass Sie Version 20 von [Node und NPM installiert haben](https://nodejs.org/en/download/), damit Adobe I/O (AIO) CLI und die zugehörigen Plug-ins richtig funktionieren.
 
 
 1. Installieren Sie die AIO-CLI-Tools gemäß dem [hier](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install) beschriebenen Verfahren.
@@ -115,15 +116,15 @@ Nachdem Sie mit Cloud Manager eine RDE für Ihr Programm hinzugefügt haben, kö
    aio login --no-open
    ```
 
-   >[!NOTE]
-   > Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standard-Browser zu öffnen. So können Sie sie kopieren und mit einem **Inkognito**-Fenster Ihres Browsers öffnen. Dadurch wird sichergestellt, dass sich dies nicht auf Ihre aktuelle Sitzung im Hauptfenster des Browsers auswirkt, sodass Sie sich mit dem spezifischen Konto und der Organisation anmelden können, die für Ihre Aufgabe erforderlich sind.
+>[!NOTE]
+> Der Anmeldebefehl mit der Option `--no-open` gibt eine URL im Terminal aus, anstatt den Standard-Browser zu öffnen. So können Sie sie kopieren und mit einem **Inkognito**-Fenster Ihres Browsers öffnen. Dadurch wird sichergestellt, dass sich dies nicht auf Ihre aktuelle Sitzung im Hauptfenster des Browsers auswirkt, sodass Sie sich mit dem spezifischen Konto und der Organisation anmelden können, die für Ihre Aufgabe erforderlich sind.
 
-   Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen `.aio`-Konfigurationsdatei (die Datei wird bei Bedarf erstellt). Der zweite Befehl legt den Kontext `mycontext` als „aktuellen“ Kontext fest, d. h. als Standard.
+Der erste Befehl erstellt eine neue Konfiguration des Anmeldekontexts mit dem Namen `mycontext` in Ihrer lokalen `.aio`-Konfigurationsdatei (die Datei wird bei Bedarf erstellt). Der zweite Befehl legt den Kontext `mycontext` als „aktuellen“ Kontext fest, d. h. als Standard.
 
-   Mit dieser Konfiguration speichert der Anmeldebefehl automatisch die Anmelde-Token im Kontext `mycontext` und behält sie somit lokal bei.
+Mit dieser Konfiguration speichert der Anmeldebefehl automatisch die Anmelde-Token im Kontext `mycontext` und behält sie somit lokal bei.
 
-   Mehrere Kontexte können durch Speichern lokaler Konfigurationen in mehreren Ordnern verwaltet werden. Alternativ können Sie auch mehrere Kontexte in einer einzelnen Konfigurationsdatei einrichten und zwischen ihnen wechseln, indem Sie den „aktuellen“ Kontext ändern.
-   </details>
+Mehrere Kontexte können durch Speichern lokaler Konfigurationen in mehreren Ordnern verwaltet werden. Alternativ können Sie auch mehrere Kontexte in einer einzelnen Konfigurationsdatei einrichten und zwischen ihnen wechseln, indem Sie den „aktuellen“ Kontext ändern.
+</details>
 
 1. Konfigurieren Sie das RDE-Plug-in für die Verwendung Ihrer Organisation, Ihres Programms und Ihrer Umgebung. Der folgende Setup-Befehl stellt Benutzenden interaktiv eine Liste der Programme in ihrer Organisation zur Verfügung und zeigt RDE-Umgebungen in diesem Programm an, aus denen gewählt werden kann.
 
@@ -626,10 +627,10 @@ Das folgende Beispiel zeigt, wie die Autorenebene verfolgt wird, wobei ein Paket
 >[!TIP]
 >
 >Falls der Fehler `RDECLI:UNEXPECTED_API_ERROR` angezeigt wird, wenn Sie die Protokollbefehle für den Author-Service ausprobieren, setzen Sie Ihre Umgebung zurück und versuchen Sie es erneut. Dieser Fehler wird ausgegeben, wenn der letzte Vorgang zum Zurücksetzen vor Ende Mai 2024 stattgefunden hat.
->
->```
->aio aem:rde:reset
->```
+
+```
+aio aem:rde:reset
+```
 
 Weitere Informationen zum vollständigen Satz von Befehlszeilenoptionen finden Sie unter `aio aem:rde:logs --help`.
 
@@ -1248,10 +1249,10 @@ Sie können auch bestätigen, dass Sie über diese Entwicklerrolle verfügen, in
 >[!TIP]
 >
 >Wenn Sie den Fehler `Warning: cloudmanager:* is not a aio command.` sehen, müssen Sie [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) installieren, indem Sie den folgenden Befehl ausführen:
->
->```
->aio plugins:install @adobe/aio-cli-plugin-cloudmanager
->```
+
+```
+aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+```
 
 Überprüfen Sie, ob die Anmeldung erfolgreich abgeschlossen wurde, indem Sie den folgenden Befehl ausführen:
 
