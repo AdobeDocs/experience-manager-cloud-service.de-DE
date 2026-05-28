@@ -5,10 +5,10 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
-source-wordcount: '3195'
-ht-degree: 99%
+source-wordcount: '3225'
+ht-degree: 95%
 
 ---
 
@@ -82,7 +82,7 @@ Um eine Datei (oder mehrere Dateien) hochzuladen, können Sie diese auf Ihrem De
    Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter `Ctrl`- oder `Command`-Taste markieren, können Sie mehrere Dateien auswählen. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
 
 1. Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht [!DNL Assets] den teilweise hochgeladenen Teil des Assets.
-Wenn Sie das Hochladen abbrechen, bevor die Dateien hochgeladen sind, stoppt [!DNL Assets] den Upload der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
+Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen sind, unterbricht [!DNL Assets] den Upload der aktuellen Datei und aktualisiert den Inhalt. Bereits hochgeladene Dateien werden jedoch nicht gelöscht.
 
 1. Das Dialogfeld für den Upload-Fortschritt in [!DNL Assets] zeigt die Anzahl der erfolgreich hochgeladenen Dateien und die der Dateien an, die nicht hochgeladen werden konnten.
 Darüber hinaus zeigt die [!DNL Assets]-Benutzeroberfläche das zuletzt hochgeladene Asset oder den Ordner an, den Sie zuerst erstellt haben.
@@ -158,7 +158,7 @@ Verwenden Sie einen der folgenden Ansätze, um eine größere Anzahl von Dateien
 
 Das Tool wird nur der Administratorgruppe zur Verfügung gestellt, um Assets in großem Umfang aus Azure- oder S3-Datenspeichern aufzunehmen. Sehen Sie sich eine Video-Anleitung zur Konfiguration und Aufnahme an.
 
->[!VIDEO](https://video.tv.adobe.com/v/341385/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 Die folgende Abbildung zeigt die verschiedenen Phasen der Aufnahme von Assets in Experience Manager aus einem Datenspeicher:
 
@@ -361,8 +361,8 @@ Experience Manager zeigt den Auftragsverlauf an. Auf der Seite mit dem Verlauf d
 
 Zusätzlich zur Webbrowser-Benutzeroberfläche unterstützt [!DNL Experience Manager] auch andere Clients auf dem Desktop. Sie bieten außerdem ein Upload-Erlebnis, ohne dass der Browser aufgerufen werden muss.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) bietet den Zugriff auf Assets aus [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Programmen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Programme in [!DNL Experience Manager] hochladen.
-* Das [[!DNL Experience Manager] -Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder dem nativen Programm, das diese verarbeitet. Es ist nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browser-Upload nur das Hochladen flacher Dateilisten unterstützt.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) bietet den Zugriff auf Assets aus [!DNL Experience Manager] in Adobe Photoshop-, Adobe Illustrator- und Adobe InDesign-Desktop-Programmen. Sie können das aktuell geöffnete Dokument direkt über die Adobe Asset Link-Benutzeroberfläche in diesen Desktop-Programmen in [!DNL Experience Manager] hochladen.
+* [[!DNL Experience Manager] Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) vereinfacht die Arbeit mit Assets auf dem Desktop, unabhängig vom Dateityp oder dem nativen Programm, das diese verarbeitet. Es ist nützlich, um Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochzuladen, da der Browser-Upload nur das Hochladen flacher Dateilisten unterstützt.
 
 ## Verarbeiten von Assets beim Hochladen {#process-when-uploaded}
 
@@ -400,7 +400,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Einige Upload-Methoden verhindern nicht, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
 
-* Das Hochladen von Assets mit dem Browser unterstützt nur flache Dateilisten und keine verschachtelten Ordnerhierarchien. Wenn Sie alle Assets in verschachtelten Ordnern hochladen möchten, sollten Sie das [Desktop-Programm](#upload-assets-desktop-clients) verwenden.
+* Das Hochladen von Assets mit dem Browser unterstützt nur flache Dateilisten und keine verschachtelten Ordnerhierarchien. Wenn Sie alle Assets in einem verschachtelten Ordner hochladen möchten, sollten Sie das -Desktop[Programm ](#upload-assets-desktop-clients).
 
 * Die Massenimportmethode importiert die gesamte Ordnerstruktur so, wie sie in der Datenquelle vorhanden ist. Allerdings werden nur die nicht leeren Ordner in [!DNL Experience Manager] erstellt.
 

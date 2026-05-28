@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -115,7 +115,7 @@ Sie können innerhalb einer Sammlung suchen, um relevante Assets leicht zu finde
 
    * **[!DNL All]:** Zeigt sowohl reguläre als auch Smart-Sammlungen an.
    * **[!DNL Collection]:** Zeigt manuell erstellte Sammlungen an, in denen Assets einzeln hinzugefügt werden.
-   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert &#x200B;](#manage-smart-collection).
+   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert ](#manage-smart-collection).
 
 * Mit dem Dropdown-Menü **[!DNL Created Date]** können Sie Sammlungen nach dem Zeitpunkt filtern, zu dem sie erstellt wurden. Sie können einen Datumsbereich angeben, um kürzlich erstellte oder ältere Sammlungen zu finden.
 
@@ -191,7 +191,7 @@ Anzeigen und Bearbeiten von Sammlungsmetadaten
 
 ## Freigeben von Links für Sammlungen {#share-collection-links}
 
-[!DNL Assets view] ermöglicht es Ihnen, einen Link zu erstellen und Sammlungen und Assets innerhalb von Sammlungen für externe Stakeholder freizugeben, die keinen Zugriff auf [!DNL Assets view] haben. Sie können ein Ablaufdatum für den Link definieren und ihn dann mithilfe Ihrer bevorzugten Kommunikationsmethode wie E-Mail oder Messaging-Services für andere freigeben. Empfänger des Links können eine Vorschau der Medienelemente anzeigen und sie herunterladen.
+[!DNL Assets view] können Sie einen Link erstellen und Sammlungen und Assets innerhalb von Sammlungen für externe Stakeholder freigeben, die keinen Zugriff auf das [!DNL Assets view]-Programm haben. Sie können ein Ablaufdatum für den Link definieren und ihn dann mithilfe Ihrer bevorzugten Kommunikationsmethode wie E-Mail oder Messaging-Services für andere freigeben. Empfänger des Links können eine Vorschau der Medienelemente anzeigen und sie herunterladen.
 
 ![Freigeben von Links für Assets](assets/share-link-collections.png)
 

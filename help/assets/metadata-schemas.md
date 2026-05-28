@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
-source-wordcount: '2640'
-ht-degree: 99%
+source-wordcount: '2670'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Um eine Liste von Formularen oder Vorlagen anzuzeigen, gehen Sie in der [!DNL Ex
 | [!UICONTROL default] | | Dies ist das Basis-Metadatenschema-Formular für Assets. |
 | | Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des [!UICONTROL Standard]-Formulars: | |
 | | <ul><li>[!UICONTROL Dm_video]</li></ul> | Schemaformular für Dynamic Media-Videos. |
-| | <ul><li>[!UICONTROL image]</li></ul> | Schemaformular für Bilder mit dem MIME-Typ wie z. B. `image/jpeg` und `image/png`. <br> Das Formular [!UICONTROL Bild] weist die folgenden untergeordneten Formularvorlagen auf: <ul><li> [!UICONTROL jpeg]: Schemaformular für Assets mit dem Untertyp [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schemaformular für Assets mit dem Untertyp „tiff“.</li></ul> |
+| | <ul><li>[!UICONTROL Bild]</li></ul> | Schemaformular für Bilder mit dem MIME-Typ wie `image/jpeg` und `image/png`. <br> Das [!UICONTROL Bild]-Formular weist die folgenden untergeordneten Formularvorlagen auf: <ul><li> [!UICONTROL jpeg]: Schemaformular für Assets mit dem Untertyp [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schemaformular für Assets mit dem Untertyp „tiff“.</li></ul> |
 | | <ul><li>[!UICONTROL Anwendung]</li></ul> | Schemaformular für Assets mit dem MIME-Typ wie z. B. `application/pdf` und `application/zip`. <br>[!UICONTROL pdf]: Schemaformular für Assets mit dem Untertyp „pdf“. |
 | | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Video-Assets mit dem MIME-Typ wie z. B. `video/avi` und `video/mp4`. |
 | [!UICONTROL collection] | | Schemaformular für Sammlungen. |
@@ -129,7 +129,7 @@ Um sicherzustellen, dass die Komponente ordnungsgemäß im Metadatenschema-Formu
 * **Platzhalter**: Verwenden Sie diese Eigenschaft, um relevanten Platzhaltertext für die Metadateneigenschaft anzugeben.
 * **Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftsseite als obligatorisch markieren.
 * **Bearbeitung deaktivieren**: Verwenden Sie diese Eigenschaft, um die Bearbeitung einer Eigenschaft auf der Eigenschaftsseite zu verbieten.
-* **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
+* **Leeres Feld anzeigen bei Schreibgeschützt**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auf der Eigenschaftsseite anzuzeigen, selbst wenn sie keinen Wert hat. Wenn eine Metadateneigenschaft keinen Wert aufweist, wird sie standardmäßig nicht auf der Eigenschaftsseite aufgeführt.
 * **Liste geordnet anzeigen**: Mit dieser Eigenschaft zeigen Sie eine geordnete Liste von Optionen an.
 * **Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
 * **Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
