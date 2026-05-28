@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 5fe6ecd2d6f4df99f81f407d012dd06c8e8b6a09
+source-git-commit: b50c28965c2f98dee126b183055499a4de8e6a06
 workflow-type: tm+mt
-source-wordcount: '5979'
-ht-degree: 86%
+source-wordcount: '6004'
+ht-degree: 85%
 
 ---
 
@@ -711,8 +711,10 @@ Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umge
 ## Momentaufnahmen {#snapshots}
 
 >[!NOTE]
+>RDE-Momentaufnahmen werden Anfang Juni in der öffentlichen Beta-Version veröffentlicht. Zu diesem Zeitpunkt kann sie durch eine Aktualisierung auf das neueste API-Plug-in aktiviert werden.
 >
->Diese Funktion ist in Beta verfügbar. Wenn Sie an der Verwendung dieser neuen Funktion und der Weitergabe Ihres Feedbacks interessiert sind, senden Sie eine E-Mail an [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com), in der Ihr Anwendungsfall beschrieben wird.
+>Durch die Verwendung der RDE-Snapshots-Beta erkennen Sie an, dass sie sich noch in der Entwicklung befindet und dass Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit von Daten verlassen sollten. Obwohl wir diese Funktion ausführlich getestet haben, besteht eine geringe Möglichkeit, dass Ihre RDE instabil wird. In diesem Fall wird sie durch Zurücksetzen wieder in den Betriebszustand versetzt.
+>Wir freuen uns über Feedback unter [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
 
 RDEs unterstützen die Erstellung einer Momentaufnahme des aktuellen Status von Code und Inhalt, die zu einem späteren Zeitpunkt wiederhergestellt werden kann. Momentaufnahmen sind nützlich, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt eines Snapshots als bekannten Ausgangspunkt für Tests wiederherzustellen.
 

@@ -4,17 +4,17 @@ description: Erfahren Sie, wie Sie die betrieblichen Auswirkungen automatischer 
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
+source-git-commit: 53900e778b64d1b818a9268bf9148db11414b7a8
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '931'
+ht-degree: 3%
 
 ---
 
 # Ruhezeiten und Freie Zeiträume aktualisieren {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ &#x200B;](/help/implementing/deploying/aem-version-updates.md) sind.
+>Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ ](/help/implementing/deploying/aem-version-updates.md) sind.
 
 Die [automatischen Wartungs-Updates](/help/implementing/deploying/aem-version-updates.md) von AEM as a Cloud Service stellen sicher, dass Ihre Instanzen sicher sind und mit den neuesten Wartungsversionen auf dem neuesten Stand sind. In einigen Fällen (z. B. bei Go-Live-Ereignissen) müssen Sie diese kritischen Arbeitszeiten jedoch möglicherweise vor potenziellen Unterbrechungen „schützen“. AEM as a Cloud Service bietet Optionen zur Auswahl von Zeiträumen, in denen die automatischen Wartungsaktualisierungen für Ihre Programme angehalten werden. Dadurch werden nicht alle Infrastrukturaktivitäten verhindert. Plattformänderungen auf niedrigerer Ebene außerhalb von Wartungs-Updates können dennoch stattfinden (z. B. IMS).
 
@@ -26,6 +26,10 @@ Sie können diese Zeitrahmen mithilfe von zwei Planungsoptionen konfigurieren:
 Die Funktionen „Freie Zeiträume und Ruhezeiten aktualisieren“ werden „pro Programm“ konfiguriert. Denken Sie daran, dass nur Benutzer mit der „Benutzerrolle“ &quot;**Geschäftsinhaber** und **Bereitstellungs-Manager** diese Funktionen anzeigen und verwenden können.
 
 Informationen zu geplanten automatischen AEM as a Cloud Service-Wartungszeiträumen finden Sie auf der Seite [Roadmap für Experience Manager-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+## Verwalten mit dem AEM AI Assistant manage-ai-assistant (eingeschränkte Verfügbarkeit){#manage-ai-assistant}
+
+Zusätzlich zur Cloud Manager-Oberfläche können Sie über den AEM AI Assistant auch Ruhezeiten verwalten und kostenlose Zeiträume aktualisieren. Der Assistent kann über eine Anfrage in natürlicher Sprache Ihre aktuellen Ruhezeiten auflisten und Freie Zeiträume aktualisieren, einen neuen Zeitraum für die Aktualisierung oder ein Intervall für ruhige Stunden erstellen und vorhandene bearbeiten oder entfernen. Da der Assistent Sie durch die verfügbaren Optionen und die Regeln führt, die im Laufe der Arbeit gelten, hilft er Ihnen, ungültige Konfigurationen zu vermeiden, bevor sie auftreten. Es zeigt die relevanten Beschränkungen im Gespräch auf, einschließlich der maximal drei Update-freien Zeiträume innerhalb eines unverankerten 365-Tage-Fensters, des obligatorischen einwöchigen Intervalls zwischen Zeiträumen, der 8-Stunden-Beschränkung für ruhige Stunden und der Einschränkung der Planung während geplanter Wartungs-Ausschlusszeiträume. Wie bei der manuellen Konfiguration gelten diese Aktionen pro Programm und stehen nur Benutzenden mit der Rolle Geschäftsinhaber oder Bereitstellungs-Manager zur Verfügung.
 
 ## Ruhige Stunden {#quiet-hours}
 
