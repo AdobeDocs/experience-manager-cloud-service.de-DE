@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
+source-git-commit: 5fe6ecd2d6f4df99f81f407d012dd06c8e8b6a09
 workflow-type: tm+mt
 source-wordcount: '5979'
 ht-degree: 86%
@@ -167,11 +167,11 @@ Nach dem Abrufen der Programme können Benutzende aus der Liste auswählen und a
 
 Um den aktuellen Umgebungskontext anzuzeigen, führen Sie Folgendes aus:
 
-```aio aem rde setup --show```
+`aio aem rde setup --show`
 
 Der Befehl antwortet mit einem Ergebnis ähnlich Folgendem:
 
-```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+`Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)`
 
 ### Manuelles Einrichtungsverfahren in einer nicht interaktiven Umgebung {#manual-setup-procedure-in-a-non-interactive-environment}
 
@@ -789,7 +789,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 
 #### Eine saubere RDE {#clean-rde}
 
-```$ aio aem rde status --json```
+`$ aio aem rde status --json`
 
 ```json
 {
@@ -809,7 +809,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 
 #### Eine RDE mit einigen installierten Bundles {#an-rde-with-some-installed-bundles}
 
-```$ aio aem rde status --json```
+`$ aio aem rde status --json`
 
 ```json
 {
@@ -882,7 +882,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 <details>
   <summary>Erweitern, um Installationsbeispiele anzuzeigen</summary>
 
-```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
+`$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json`
 
 ```json
 {
@@ -923,7 +923,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 <details>
 <summary>Erweitern, um Beispiele zum Löschen anzuzeigen</summary>
 
-```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
+`$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json`
 
 ```json
 {
@@ -1005,7 +1005,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 <details>
 <summary>Erweitern, um Verlaufsbeispiele anzuzeigen</summary>
 
-```$ aio aem rde history --json```
+`$ aio aem rde history --json`
 
 ```json
 {
@@ -1104,7 +1104,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 
 #### Feuer und Vergessen, No-Wait {#fire-and-forget-no-wait}
 
-```$ aio aem rde reset --no-wait --json```
+`$ aio aem rde reset --no-wait --json`
 
 ```json
 {
@@ -1116,7 +1116,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 
 #### Warten auf Abschluss, Zurücksetzen erfolgreich {#wait-for-completion-reset-successfully}
 
-```$ aio aem rde reset --json```
+`$ aio aem rde reset --json`
 
 ```json
 {
@@ -1128,7 +1128,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 
 #### Warten auf Abschluss, Zurücksetzen fehlgeschlagen {#wait-for-completion-reset-failed}
 
-```$ aio aem rde reset --json```
+`$ aio aem rde reset --json`
 
 ```json
 {
@@ -1145,7 +1145,7 @@ Die meisten Befehle unterstützen das globale Flag `--json`, das die Konsolenaus
 <details>
 <summary>Erweitern, um Beispiele zum Neustarten anzuzeigen</summary>
 
-```$ aio aem rde restart --json```
+`$ aio aem rde restart --json`
 
 ```json
 {
