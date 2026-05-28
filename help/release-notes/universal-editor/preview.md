@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: d6e62f6991eaf1f52ae6414a62af812d7965f25a
+source-git-commit: 4d759c3bde24d0dce13b36f645ab520ac2e3b993
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -29,3 +29,4 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
 * Es wurde ein Problem behoben, bei dem durch Ändern des ausgewählten Textes von *Überschrift* zu *Code* im Rich-Text-Editor die Formatierung auf *Absatz* zurückgesetzt werden konnte, anstatt den ausgewählten Code-Stil beizubehalten.
+
