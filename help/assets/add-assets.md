@@ -400,7 +400,7 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 
 * Einige Upload-Methoden verhindern nicht, Assets mit [unzulässigen Zeichen](#filename-handling) in den Dateinamen hochzuladen. Die Zeichen werden durch das Symbol `-` ersetzt.
 
-* Das Hochladen von Assets mit dem Browser unterstützt nur flache Dateilisten und keine verschachtelten Ordnerhierarchien. Wenn Sie alle Assets in einem verschachtelten Ordner hochladen möchten, sollten Sie das -Desktop[Programm ](#upload-assets-desktop-clients).
+* Das Hochladen von Assets mit dem Browser unterstützt nur flache Dateilisten und keine verschachtelten Ordnerhierarchien. Wenn Sie alle Assets in einem verschachtelten Ordner hochladen möchten, sollten Sie das -Desktop[Programm &#x200B;](#upload-assets-desktop-clients).
 
 * Die Massenimportmethode importiert die gesamte Ordnerstruktur so, wie sie in der Datenquelle vorhanden ist. Allerdings werden nur die nicht leeren Ordner in [!DNL Experience Manager] erstellt.
 
