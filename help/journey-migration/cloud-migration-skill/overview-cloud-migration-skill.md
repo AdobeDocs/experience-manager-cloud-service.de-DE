@@ -3,9 +3,9 @@ title: KI-gestützte Code-Migration zu AEM as a Cloud Service
 description: Überblick über die AEM Cloud Migration Skills und MCP, eine KI-Agent-Lösung, die BPA-Ergebnisse liest und AEM 6.x-Code nach Muster zu AEM as a Cloud Service migriert.
 feature: Migration
 role: Developer
-source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
+source-git-commit: 98298a088aa7c65826f6dbad2f4d16095e074524
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '756'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Die **AEM Cloud Migration**-Lösung ist ein agentenbasiertes Toolset, das Entwic
 
 Das folgende Demovideo bietet eine kurze Beschreibung der AEM Cloud-Migrationslösung und ist als Referenz enthalten.
 
->[!VIDEO](https://publish.tv.adobe.com/bucket/7642/category/12553/video/3491438/)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438?learn=on)
 
 Die Lösung besteht aus zwei Komponenten:
 
@@ -120,9 +120,9 @@ Detaillierte Informationen zu Setup und Fehlerbehebung finden Sie unter [Verwend
 Die Kenntnisse und das MCP ergänzen die anderen Tools in der **Implementierungsphase**:
 
 - **Best Practices Analyzer**: Erzeugt die Ergebnisse, die zu den neuen Fähigkeiten beitragen. Siehe [Verwenden von Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md).
-- **Cloud Acceleration Manager**: hostet BPA-Berichte und verfolgt den gesamten Migrationsfortschritt. Siehe [&#x200B; Schritte mit CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md).
+- **Cloud Acceleration Manager**: hostet BPA-Berichte und verfolgt den gesamten Migrationsfortschritt. Siehe [ Schritte mit CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md).
 - **Refaktorierungs-Tools**: Übernimmt die Modernisierung der Repository-Struktur und Dispatcher-Konfiguration. Siehe [Übersicht über die Umgestaltungs-Tools](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md).
 - **Content Transfer Tool**: Migriert Repository-Inhalte von AEM 6.x auf AEMaaCS.
 
-Umfassende Informationen finden Sie [&#x200B; „Übersicht &#x200B;](/help/journey-migration/implementation.md) Implementierungsphase“.
+Umfassende Informationen finden Sie [ „Übersicht ](/help/journey-migration/implementation.md) Implementierungsphase“.
 
