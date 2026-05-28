@@ -14,7 +14,7 @@ ht-degree: 3%
 # Ruhezeiten und Freie Zeiträume aktualisieren {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ ](/help/implementing/deploying/aem-version-updates.md) sind.
+>Sie können die Funktionen Ruhige Stunden und Freie Zeiträume aktualisieren erst verwenden, nachdem Sie in die [automatischen Wartungsaktualisierungen“ &#x200B;](/help/implementing/deploying/aem-version-updates.md) sind.
 
 Die [automatischen Wartungs-Updates](/help/implementing/deploying/aem-version-updates.md) von AEM as a Cloud Service stellen sicher, dass Ihre Instanzen sicher sind und mit den neuesten Wartungsversionen auf dem neuesten Stand sind. In einigen Fällen (z. B. bei Go-Live-Ereignissen) müssen Sie diese kritischen Arbeitszeiten jedoch möglicherweise vor potenziellen Unterbrechungen „schützen“. AEM as a Cloud Service bietet Optionen zur Auswahl von Zeiträumen, in denen die automatischen Wartungsaktualisierungen für Ihre Programme angehalten werden. Dadurch werden nicht alle Infrastrukturaktivitäten verhindert. Plattformänderungen auf niedrigerer Ebene außerhalb von Wartungs-Updates können dennoch stattfinden (z. B. IMS).
 
