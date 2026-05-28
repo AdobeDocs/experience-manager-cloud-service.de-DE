@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern de
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '688'
 ht-degree: 92%
 
 ---
@@ -24,7 +24,6 @@ Erfahren Sie mehr über die verschiedenen Optionen zum Erweitern der Funktionen 
 Als Adobe Experience Cloud-Service kann die Benutzeroberfläche des universellen Editors mit App Builder und Experience Manager erweitert werden. Adobe bietet viele vorkonfigurierte Erweiterungen, die Sie über den [Extension Manager](https://experience.adobe.com/aem/extension-manager) für Ihr Projekt verwenden können.
 
 * **[Erweiterung für AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Unterbrechen oder reaktivieren Sie die Vererbung auf Komponentenebene
-* **[AEM-Erweiterung für Seiteneigenschaften](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: Greifen Sie im universellen Editor auf das Fenster „Seiteneigenschaften“ einer Seite zu
 * **[AEM Site Admin-Erweiterung](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Öffnen Sie im universellen Editor die Sites-Konsole zum Speicherort der Seite
 * **[AEM-Erweiterung für Seitensperren](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: Ermöglicht das Anzeigen und Ändern des Seitensperrstatus im universellen Editor
 * **[AEM-Erweiterung für Workflows](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Starten Sie im universellen Editor Workflows auf der Seite und in Seiteninhalten
