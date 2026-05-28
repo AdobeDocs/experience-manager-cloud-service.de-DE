@@ -6,7 +6,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 96c3ac3494fb726b36d413703ed010ec84a3b3dd
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 99%
@@ -160,17 +160,17 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
 ### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
-Wenn Sie Inhalt mit dem [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) [verknüpft](/help/assets/content-fragments/content-fragments-assoc-content.md) haben, sind diese Assets im seitlichen Panel verfügbar (nachdem Sie Ihr Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Wenn Sie [verknüpfte Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im seitlichen Bedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [Zwischeninhalte](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
->Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
+>Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder zu einer Seite.
 
 >[!NOTE]
 >
 >Wenn Sie mehrere Inhaltsfragmente auf einer Seite haben, werden auf der Registerkarte **Zugehörige Inhalte** die zu allen Fragmenten gehörenden Assets angezeigt.
 
-Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Verknüpfte Inhalte**) im Seitenbereich geöffnet.
+Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Verknüpfte Inhalte**) im seitlichen Bedienfeld geöffnet.
 
 Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder zu einer vorhandenen Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
 
@@ -180,7 +180,7 @@ Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder
 
 Wenn Assets (z. B. Bilder) in das Fragment selbst eingefügt wurden (als [Fragmente mit gemischten Medien](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt.
 
-Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
+Für ein Bild haben Sie beispielsweise folgende Möglichkeiten:
 
 * Zuschneiden, Drehen oder Spiegeln des Bildes.
 * Fügen Sie einen Titel oder alternativen Text hinzu.
