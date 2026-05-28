@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Version 2026.05.28 des univ
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: ca7dd07b150114374f30318d22e141bb8d6a4c0e
+source-git-commit: 63c3a7e2ca28890370701fd388f6cc9f068c6dc5
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 14%
@@ -26,8 +26,8 @@ Dies sind die Versionshinweise für die Version vom 28. Mai 2026 des universelle
 
 ## Neue Funktionen {#what-is-new}
 
-* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([&#x200B; Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
-   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
+* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([ Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
+   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) ](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
    * Die Schaltfläche wird nur angezeigt, wenn die Remote-Seite eine [Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` aufweist und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
 
 ## Andere Verbesserungen {#other-improvements}
