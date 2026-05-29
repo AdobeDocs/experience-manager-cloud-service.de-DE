@@ -4,7 +4,7 @@ description: Informationen zum Suchen nach Assets in [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 02f28aef708166b210d5508e714352a800114c14
+source-git-commit: 0ee0778243448e3ff9f6f5b8fb1097fc9b6bec27
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 58%
@@ -158,7 +158,7 @@ Führen Sie die folgenden Schritte aus, um KI-Suchen in Content Hub zu aktiviere
         </ul>
       </td>
      </tr>
-     <!--<tr>
+     <tr>
       <td>Subject</td>
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
@@ -173,7 +173,7 @@ Führen Sie die folgenden Schritte aus, um KI-Suchen in Content Hub zu aktiviere
         </ul>
       </td>
      </tr>    
-     <!--<tr>
+     <tr>
       <td>Asset ID</td>
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
