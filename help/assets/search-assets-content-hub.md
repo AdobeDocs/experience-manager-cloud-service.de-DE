@@ -4,10 +4,10 @@ description: Informationen zum Suchen nach Assets in [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 02f28aef708166b210d5508e714352a800114c14
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 81%
+source-wordcount: '1615'
+ht-degree: 58%
 
 ---
 
@@ -56,6 +56,45 @@ Suchen Sie beispielsweise nach allen **[!UICONTROL JPEG]**-Bildern mit dem Suchb
 Verwenden Sie das Bedienfeld „Filter“, um nach auf Metadaten basierenden Assets zu suchen. Sie können Suchergebnisse anhand verschiedener Suchprädikate filtern. Sie können alle passenden Eigenschaften auswählen, um Ihre Suchergebnisse zu minimieren oder einzugrenzen. Sie können beim Filtern Ihrer Suchergebnisse mehr als 10 Prädikate auswählen. Wenn Sie mehrere Optionen in einem Filter auswählen, zeigt Content Hub die Assets an, die mit einer der in einem Filter ausgewählten Optionen übereinstimmen. Wenn Sie jedoch mehrere Optionen in verschiedenen Filtern auswählen, zeigt Content Hub nur die Assets an, die mit allen Optionen übereinstimmen, die in allen Filtern ausgewählt wurden, um Ihre Suchergebnisse einzugrenzen.
 
 Zu den Standardfiltern gehören „Dateiformat“, „Genehmigt von“, „Datum der Genehmigung“, „Abgelaufene Assets“, „Nicht abgelaufene Assets“ sowie „Ablaufdatum“. Admins können auch die Filter konfigurieren, die in der Filterliste angezeigt werden. Weitere Informationen finden Sie unter [Konfigurieren der Benutzeroberfläche von Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+## KI-Suche in Content Hub {#ai-search-aem-assets-content-hub}
+
+KI-Suchen in AEM Assets Content Hub ist eine erweiterte Suchfunktion, die die Bedeutung und den Zweck der Abfrage eines Benutzers versteht, anstatt sich auf exakte Keyword-Übereinstimmungen zu verlassen. Es nutzt künstliche Intelligenz (KI) und maschinelles Lernen, um genauere und kontextbezogene Ergebnisse zu liefern.
+
+Im Gegensatz zur herkömmlichen schlüsselwortbasierten Suche, die nach exakten Begriffen sucht, interpretiert die KI-Suche die Beziehungen zwischen Wörtern, Konzepten und der Absicht der Benutzenden. Dadurch wird sichergestellt, dass Benutzende das Gesuchte finden – selbst wenn die Abfrage anders formuliert ist, Tippfehler enthält oder in einer anderen Sprache verfasst ist.
+
+Zu den wichtigsten Vorteilen zählen:
+
+* **Mehrsprachiger Support**: Suchen Sie über mehrere Sprachen hinweg, ohne dass genaue Übersetzungen erforderlich sind. Benutzende können relevante Inhalte unabhängig von ihrer Abfragesprache finden.
+
+* **Behandelt Rechtschreibfehler**: Interpretiert Tippfehler und Rechtschreibfehler, um sicherzustellen, dass auch bei unvollständiger Eingabe genaue Ergebnisse vorliegen.
+
+* **Verständnis von Synonymen**: Ergebnisse für verwandte Begriffe und Ausdrücke werden bereitgestellt, sodass Benutzende nicht das korrekte Keyword erraten müssen.
+
+* **Kontextuell relevante Suche**: Erkennt den Zweck hinter einer Abfrage, nicht nur die genauen Wörter.
+
+### Beispiele für KI-Suchen in Content Hub {#examples-ai-search-aem-assets-content-hub}
+
+**Beispiel-Prompt**: *Woman drinking coffee*
+
+Die herkömmliche Keyword-basierte Suche sucht nach exakten Übereinstimmungen mit Asset-Metadaten wie `Woman`, `drinking` und `Coffee` und gibt Assets zurück, die alle diese Begriffe in den Metadaten enthalten.
+
+KI-Suche gleicht jedoch ähnliche Begriffe wie `Girl` ab, `Lady` bei `Woman` und `Cappuccino` und `Latte` bei `Coffee`.
+
+Genauso können Sie diesen Prompt auf Spanisch eingeben oder `Woman` fälschlicherweise als `Wman` schreiben und trotzdem dieselben Ergebnisse erhalten.
+
+
+### Aktivieren oder Deaktivieren von KI-Suchen in Content Hub {#enable-disable-ai-search-content-hub}
+
+Führen Sie die folgenden Schritte aus, um KI-Suchen in Content Hub zu aktivieren oder zu deaktivieren:
+
+1. Navigieren Sie zu Ihrem Benutzerprofilsymbol und klicken Sie auf **[!UICONTROL Konfigurationen]**.
+
+1. Wählen Sie auf der **[!UICONTROL Suche]** die Option **[!UICONTROL KI-Suche]** aus, um KI-Suchen für Content Hub zu aktivieren, oder **[!UICONTROL Keyword]**, um sie zu deaktivieren.
+
+   ![KI-Suche in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 <!--
 
@@ -162,6 +201,57 @@ Um die Massensuche in [!DNL Content Hub] durchzuführen, gehen Sie wie folgt vor
 1. Fügen Sie eine Suchabfrage mit Trennzeichen hinzu, die in der Konfiguration angegeben sind. Die Suchabfrage sollte eine Zeichenfolge und mehrere kommagetrennte Werte enthalten.
 
 ![UI der Massensuche](assets/bulk-search-ui.png)
+
+## Konfigurieren der Sortierung in Content Hub {#configure-sorting-aem-assets-content-hub}
+
+Content Hub bietet vordefinierte Sortieroptionen, mit denen Benutzer Asset-Suchergebnisse organisieren können. Admins können auch benutzerdefinierte Metadatenfelder als Sortieroptionen aktivieren, damit Benutzende Assets basierend auf geschäftsspezifischen Metadaten wie Kanal, Region, SKU oder Kampagne sortieren können.
+
+### Standardmäßige Sortieroptionen {#default-sorting-options}
+
+Standardmäßig umfasst Content Hub die folgenden Sortieroptionen auf der Content Hub-Startseite:
+
+* Größe
+
+* Geändert
+
+* Name
+
+* Relevanz
+
+### Hinzufügen benutzerdefinierter Metadatenfelder als Sortieroptionen {#add-custom-metadata-fields-for-sorting}
+
+Admins können zusätzliche Metadatenfelder konfigurieren, die im Menü Sortierung angezeigt werden.
+
+So aktivieren Sie ein Metadatenfeld für die Sortierung:
+
+1. Klicken Sie auf das Benutzerprofilsymbol und wählen Sie **Konfigurationen** aus.
+1. Navigieren Sie zur Registerkarte **Filter**.
+1. Suchen Sie das Metadatenfeld, das Sie für die Sortierung aktivieren möchten.
+1. Klicken Sie auf das Bearbeitungssymbol, das für dieses bestimmte Metadatenfeld verfügbar ist.
+1. Aktivieren Sie im Dialogfeld Filter bearbeiten die Option **Sortieren**.
+1. Klicken Sie **Bestätigen** und speichern Sie die Konfiguration. Die Aktualisierungen werden wirksam, wenn der **Status**-Feldwert für das Metadatenfeld als `Active` angezeigt wird.
+
+Wenn Sie beispielsweise die Sortierung für das Kanal-Metadatenfeld aktivieren, können Benutzerinnen und Benutzer die Asset-Ergebnisse mithilfe des Kanalwerts sortieren.
+
+![Einfache Suche](assets/enable-filters-sorting.png)
+
+### Verwenden benutzerdefinierter Sortieroptionen auf der Content Hub-Startseite {#use-custom-sorting-options}
+
+Nachdem Sie die Sortierung für ein Metadatenfeld aktiviert haben:
+
+* Das Feld wird im Menü Sortierung auf der Content Hub-Startseite angezeigt.
+* Benutzerdefinierte Sortierfelder werden im Menü Sortieren unter einer Trennlinie angezeigt.
+* Das Trennzeichen unterscheidet visuell zwischen vom Administrator konfigurierten benutzerdefinierten Feldern und den standardmäßigen vordefinierten Sortieroptionen.
+
+Wenn beispielsweise das Kanal-Metadatenfeld für die Sortierung aktiviert ist, wird das Sortiermenü angezeigt:
+
+* Standardfelder wie Größe, Geändert, Name und Relevanz
+* Eine Trennlinie
+* Der Kanal des benutzerdefinierten Feldes
+
+Diese Unterscheidung hilft Benutzenden, schnell die standardmäßigen Sortieroptionen gegenüber den organisationsspezifischen metadatenbasierten Sortieroptionen zu identifizieren.
+
+![Einfache Suche](assets/custom-sorting-options.png)
 
 ## Weitere Aktionen bei der Suche {#do-more-with-search}
 

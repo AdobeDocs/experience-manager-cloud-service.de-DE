@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über einige der kürzlich eingeführten Content 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 6aeab06b4dc48249e69dd265eefb99db9d45d6c3
+source-git-commit: 02f28aef708166b210d5508e714352a800114c14
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 74%
+source-wordcount: '1492'
+ht-degree: 58%
 
 ---
 
@@ -25,9 +25,34 @@ Das folgende Video zeigt die wichtigsten Funktionen von Content Hub:
 
 ## Veröffentlichungsdatum {#release-date}
 
-Das Datum der Content Hub-Funktionsveröffentlichung (2026.02.0) ist der Freitag, 26. Februar 2026 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version (2026.03.0) ist für den Freitag, 26. März 2026 geplant.
+Das Veröffentlichungsdatum der Content Hub-Funktionsveröffentlichung (2026.05.0) ist der 28. Mai 2026 (identisch mit dem der AEM as a Cloud Service-Version). Die nächste Version (2026.06.0) ist für den 25. Juni 2026 geplant.
 
-## Funktionen der Version Februar 2026 {#february-release-features}
+## Funktionen der Version Mai 2026 {#may-2026-release-features}
+
+**KI-Suche**
+
+AEM Assets Content Hub enthält jetzt KI-Suchen, eine erweiterte Suchfunktion, die die Bedeutung und den Zweck von Benutzerabfragen versteht, anstatt sich nur auf exakte Keyword-Übereinstimmungen zu verlassen. KI-Suche liefert genauere und kontextbezogene Ergebnisse, indem sie die Beziehungen zwischen Wörtern, Konzepten und der Absicht der Benutzenden erkennt. Es unterstützt mehrsprachige Abfragen, verarbeitet Rechtschreibfehler und Tippfehler, versteht Synonyme und zeigt relevante Assets, auch wenn Benutzende keine exakten Metadatenbegriffe verwenden.
+
+Bei einer Suche nach `Woman drinking coffee` können beispielsweise auch Assets zurückgegeben werden, die mit verwandten Begriffen wie `Lady`, `Girl`, `Latte` oder `Cappuccino` getaggt wurden.
+
+Admins können KI-Suchen in Content Hub über das Konfigurationsmenü aktivieren oder deaktivieren, indem sie entweder KI-Suchen oder die herkömmliche Keyword-Suche auswählen.
+
+
+**Benutzerdefinierte Sortieroptionen**
+
+Mit Content Hub können Admins jetzt benutzerdefinierte Metadatenfelder als Sortieroptionen auf der Content Hub-Startseite aktivieren. Zusätzlich zu den standardmäßigen Sortieroptionen, Größe, Geändert, Name und Relevanz können Admins geschäftsspezifische Metadatenfelder wie Kanal, Region, SKU oder Kampagne konfigurieren, um Benutzenden zu helfen, Suchergebnisse effektiver zu organisieren.
+
+**Asset-Suche und Download-Ereignisunterstützung für Bereitstellungs-APIs**
+
+AEM Assets-Bereitstellungs-APIs unterstützen jetzt die Asset-Suche und Asset-Download-Ereignisse, sodass Unternehmen verfolgen und darauf reagieren können, wie Assets in allen verbundenen Anwendungen und Erlebnissen erkannt und genutzt werden. Diese Ereignisse verbessern die Sichtbarkeit von Asset-Nutzungsmustern, unterstützen Analyse- und Reporting-Workflows und vereinfachen die Integration mit externen Systemen und Automatisierungsprozessen.
+
+Mit ereignisgesteuerten Einblicken können Teams die Interaktion mit Inhalten besser verstehen und vernetztere Workflows für digitale Assets erstellen. Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
+
+>[!IMPORTANT]
+>
+>Diese Funktionen sind als Funktionen mit begrenzter Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+
+## Funktionen der Version Februar 2026 {#february-2026-release-features}
 
 **Berechtigungsverwaltung in Content Hub mit dem AEM Governance Agent**
 
@@ -35,10 +60,10 @@ In Content Hub stellt der AEM Governance Agent sicher, dass nur die richtigen Pe
 
 ![Übersicht über die Berechtigungsverwaltung](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
-## Funktionen der Oktober-Version {#october-release-features}
+## Funktionen der Version Oktober 2025 {#october-2025-release-features}
 
 **Verbesserungen am Content Hub-Download-Erlebnis**
 
@@ -46,7 +71,7 @@ Content Hub unterstützt jetzt das Herunterladen mehrerer Asset-Ausgabedarstellu
 
 [!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
-## Funktionen der September-Version {#september-release-features}
+## Funktionen der Version September 2025 {#september-2025-release-features}
 
 **Sammlungen als Favoriten markieren**
 
@@ -56,9 +81,9 @@ Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Org
 
 Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
-## Funktionen der August-Version {#august-release-features}
+## Funktionen der Version August 2025 {#august-release-features}
 
 **Massensuche über Filtereigenschaften**
 
@@ -66,7 +91,7 @@ Mit Content Hub können Sie jetzt schneller die benötigten Assets finden. Mit d
 
 [!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
-## Funktionen der Juli-Version {#july-release-features}
+## Funktionen der Version Juli 2025 {#july-2025-release-features}
 
 **Verbesserte Branding-Flexibilität in Content Hub**
 
@@ -86,7 +111,7 @@ Sie können jetzt beim Generieren eines freigegebenen Links einen Titel hinzufü
 
 Content Hub enthält jetzt in Filtern die Option **Alle anzeigen**, mit der Benutzende alle verfügbaren Facetten zusammen mit der Asset-Anzahl im Zusammenhang mit der aktuellen Einschränkung auf bis zu zehn Facetten anzeigen können. Verbesserte Such- und Sortierfunktionen in jedem Filter erleichtern die effizientere Erkennung und Verwaltung von Assets.
 
-## Funktionen der Juni-Version {#june-release-features}
+## Funktionen der Version Juni 2025 {#june-2025-release-features}
 
 ### Governance von Sammlungen {#collections-governance}
 
@@ -96,7 +121,7 @@ Mit Content Hub können Sie jetzt den Zugriff auf Sammlungen während der Erstel
 
 [!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
-## Funktionen der Mai-Version {#may-release-features}
+## Funktionen der Version Mai 2025 {#may-2025-release-features}
 
 Die Mai-Version von Content Hub umfasst die folgenden Funktionen:
 
