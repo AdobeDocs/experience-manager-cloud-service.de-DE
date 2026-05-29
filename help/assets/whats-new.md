@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über einige der kürzlich eingeführten Content 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 02f28aef708166b210d5508e714352a800114c14
+source-git-commit: a7e847b70b02f8c7da880ac530792d56999035a6
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 58%
@@ -60,7 +60,7 @@ In Content Hub stellt der AEM Governance Agent sicher, dass nur die richtigen Pe
 
 ![Übersicht über die Berechtigungsverwaltung](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funktionen der Version Oktober 2025 {#october-2025-release-features}
@@ -81,7 +81,7 @@ Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Org
 
 Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funktionen der Version August 2025 {#august-release-features}
 
