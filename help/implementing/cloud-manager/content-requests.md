@@ -107,7 +107,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie in [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, z. B. weil der Traffic das CDN erreicht. Als AEM-Kunde ist es hilfreich, wenn Sie Ihre Inhaltsanfragen überwachen und verwalten, damit Sie Ihr Lizenzbudget einhalten. Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie in [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, z. B. weil der Traffic das CDN erreicht. Als AEM-Kunde ist es hilfreich, wenn Sie Ihre Inhaltsanfragen überwachen und verwalten, damit Sie Ihr Lizenzbudget einhalten. Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
