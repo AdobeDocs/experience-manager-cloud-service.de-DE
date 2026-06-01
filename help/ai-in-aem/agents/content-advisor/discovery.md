@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Content Discovery Agent relevante AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
+source-git-commit: b47fa12a5301c97688e09d285b66241a2745e085
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2402'
 ht-degree: 1%
 
 ---
@@ -238,9 +238,9 @@ Der Content Discovery Agent gibt die wichtigsten Ergebnisse für jede Abfrage au
 
 Jedes Ergebnis wird als Asset-Karte angezeigt, die den Asset-Namen, die Vorschau und wichtige Metadaten wie Beschreibung und Format enthält. Sie können auf das Informationssymbol auf einer Karte klicken, um zusätzliche Asset-Eigenschaften anzuzeigen.
 
-Verwenden Sie die Option **Tabelle anzeigen**, um Ergebnisse in einem tabellarischen Format anzuzeigen. Klicken Sie **Alle Ergebnisse anzeigen**, um den vollständigen Satz von 20 abgerufenen Assets im rechten Bereich anzuzeigen.
+Verwenden Sie die Option **Tabelle anzeigen**, um Ergebnisse in einem tabellarischen Format anzuzeigen. Klicken Sie **Alle Ergebnisse anzeigen**, um den vollständigen Satz von 20 abgerufenen Assets im rechten Bereich anzuzeigen. Sie können auch auf das Symbol Herunterladen klicken, um die Liste der 20 Assets als ZIP-Datei mit einer maximalen Größe von 1,5 GB herunterzuladen.
 
-Jedes Ergebnis enthält auch wichtige Asset-Metadaten wie den Asset-Pfad, die Größe, das Erstellungsdatum und das Erstellungsdatum sowie das Änderungsdatum zusammen mit dem Benutzer, der das Asset geändert hat, das Format und die Beschreibung. Wenn sich ein Asset im Status Genehmigt befindet, umfassen die Ergebnisse auch [Dynamic Media mit OpenAPI-URL](/help/assets/dynamic-media-open-apis-overview.md). Sie können auf den Asset-Pfad klicken, um nahtlos zum Asset-Speicherort in AEM zu navigieren.
+Jedes Ergebnis enthält auch wichtige Asset-Metadaten wie den Asset-Pfad, die Größe, das Erstellungsdatum und das Erstellungsdatum, das Änderungsdatum zusammen mit dem Benutzer, der das Asset geändert hat, das Format, den Download-Link und die Beschreibung. Wenn sich ein Asset im Status Genehmigt befindet, umfassen die Ergebnisse auch [Dynamic Media mit OpenAPI-URL](/help/assets/dynamic-media-open-apis-overview.md). Sie können auf den Asset-Pfad klicken, um nahtlos zum Asset-Speicherort in AEM zu navigieren.
 
 ![Suchen nach Assets mit dem Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
@@ -248,7 +248,7 @@ Sie können diese Asset-Details verwenden, um schnell zu beurteilen, ob ein Asse
 
 >[!NOTE]
 >
->Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [&#x200B; Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
+>Das [Dynamic Media-URL](/help/assets/dynamic-media/dynamic-media.md)-Feld wird nur dann in den Suchergebnissen angezeigt, wenn das Asset veröffentlicht wurde und Sie über eine gültige Dynamic Media-Lizenz verfügen. Ebenso wird [ Feld „Dynamic Media mit OpenAPI-](/help/assets/dynamic-media-open-apis-overview.md)&quot; nur angezeigt, wenn Sie über eine gültige Dynamic Media-Lizenz verfügen und Dynamic Media mit OpenAPI für Ihre AEM as a Cloud Service-Instanz aktiviert ist.
 
 ### Inhaltsfragmente {#discovery-agent-search-results-content-fragments}
 
