@@ -5,7 +5,7 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+source-git-commit: f5df62bfdd1159038a8e511152c66b62301ff54b
 workflow-type: tm+mt
 source-wordcount: '1411'
 ht-degree: 93%
@@ -115,3 +115,4 @@ Wenn Sie wissen möchten, was Adobe empfiehlt, damit Sie Ihr Team beim Onboardin
 Im Folgenden finden Sie zusätzliche optionale Ressourcen, wenn Sie über den Inhalt der Onboarding-Tour hinausgehen möchten.
 
 * [Onboarding in AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) – In diesem kurzen Video erhalten Sie einen Überblick über den Cloud Service-Onboarding-Prozess für AEM.
+
