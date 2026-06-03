@@ -35,7 +35,7 @@ Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von 
 
 * alle benutzerspezifischen Links, die Sie zusätzlich zu Assets, Sammlungen und Erkenntnissen in Content Hub einschließen müssen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472955/?captions=ger&learn=on&enablevpops){transcript=true}
 
 ## Voraussetzungen {#prerequisites-configuration-ui}
 
