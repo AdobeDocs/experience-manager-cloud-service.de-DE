@@ -3,7 +3,7 @@ title: Adobe-verwaltete API-Integrationen in Adobe Admin Console
 description: Erfahren Sie mehr über Adobe-Managed Service-Integrationen in Adobe Admin Console für AEM as a Cloud Service, was sie tun und wie Sie sie deaktivieren oder wiederherstellen.
 feature: Security
 role: Admin
-source-git-commit: dfa8d82358db48b37917e9bc7fb4a7c645138305
+source-git-commit: ab959e98fdca60ea936b14cf6941ab531c32c9ac
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 2%
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Service-Integrationen aufgeführt, die Adobe f
 
 | Name wie in Admin Console angezeigt | Funktion | Verwendet von | Erteilte Berechtigungen | Standardmäßig aktiviert |
 |---|---|---|---|---|
-| **AEM Managed CDN-Integration** | Ermöglicht es dem LLM Optimizer-Service, Ihr in AEM as a Cloud Service verwaltetes CDN (**-Traffic-Routing-Regeln** in Ihrem Namen zu aktualisieren, damit KI- und Agent-Crawler (wie ChatGPT, Perplexity und Claude) ohne manuelle CDN-Änderungen durch Ihr Team an LLM Optimizer-optimierte Ursprünge weitergeleitet werden können. | **LLM Optimizer** über die Funktion [Bei Edge optimieren](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Cloud Manager **Bereitstellungs-Manager** Rolle | Ja |
+| **AEM Managed CDN-Integration** | Ermöglicht es dem LLM Optimizer-Service, Ihr in AEM as a Cloud Service verwaltetes CDN (**-Traffic-Routing-Regeln** in Ihrem Namen zu aktualisieren, damit KI- und Agent-Crawler (wie ChatGPT, Perplexity und Claude) ohne manuelle CDN-Änderungen durch Ihr Team an LLM Optimizer-optimierte Ursprünge weitergeleitet werden können. | **LLM Optimizer** über die Funktion [Bei Edge optimieren](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Cloud Manager **Bereitstellungs-Manager** Rolle | Ja |
 
 Der folgende Screenshot ist ein Beispiel für die in der obigen Tabelle **Integration des von AEM verwalteten CDN.**
 
@@ -97,3 +97,4 @@ Wenn Sie eine Integration zuvor deaktiviert haben und erneut aktivieren möchten
 >[!NOTE]
 >
 >Wenn Sie die Service-Integration im Dialogfeld zum Hinzufügen von Benutzern nicht finden können (z. B. weil Adobe sie aus Ihrer Organisation und nicht nur aus dem Profil entfernt hat), wenden Sie sich an den [Adobe-Kunden-Support](https://helpx.adobe.com/de/support.html), um die Bereitstellung anzufordern. Adobe fügt eine Service-Integration, die Ihr Administrator entfernt hat, nicht automatisch erneut hinzu.
+
