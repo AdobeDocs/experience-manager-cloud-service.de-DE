@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
+source-git-commit: 662715341c35fab62ac0c882a03cba8f41748dbf
 workflow-type: tm+mt
-source-wordcount: '4146'
+source-wordcount: '4154'
 ht-degree: 71%
 
 ---
@@ -46,6 +46,7 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
 | Sites | [Unterstützung von Inhaltsfragmenten in dem Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>zusammen mit<br> [OpenAPIs für das Management von Inhaltsfragmenten und Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md) |
+| Sites | Zusammenfassung des Inhaltsfragmenttextes | AEM Generate Variations |
 | Sites | [PWA-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Keine |
 | Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind:<br>– [Der universelle Editor](https://www.aem.live/docs/aem-authoring) für visuelle Bearbeitung.<br>– [Der Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) für formularbasierte Bearbeitung. |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |
@@ -54,7 +55,7 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | [!DNL Sites] | Vorlagenbasierte einfache Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). |
 | [!DNL Assets] | `DAM Asset Update`-Workflow zur Verarbeitung erfasster Bilder. | Für die Asset-Aufnahme werden jetzt [Asset-Microservices](/help/assets/asset-microservices-overview.md) verwendet. |
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [Bestimmte Workflow-Schritte &#x200B;](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | [Bestimmte Workflow-Schritte ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation). |
 | [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation) |
@@ -384,7 +385,7 @@ In diesem Abschnitt werden APIs aufgelistet, die veraltet sind und entfernt wurd
 
 Dieser Abschnitt enthält Anleitungen zum Entfernen von APIs für verschiedene APIs in den obigen Tabellen.
 
-Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
+Um festzustellen, welche veralteten Java-APIs Ihr Code verwendet, integrieren Sie das [AEM as a Cloud Service SDK Build Analyzer Maven-Plug-](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) in Ihr Maven-Projekt und führen Sie es lokal aus. Der Bericht listet alle erkannten veralteten API-Verwendungen auf und zeigt an, welches OSGi-Bundle auf die einzelnen APIs verweist. In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) erfahren Sie, wie Sie das Maven-Plug-in verwenden.
 
 Sie sollten zwar alle veralteten APIs im Laufe der Zeit beheben, aber priorisieren Sie alle APIs, die in der Tabelle Veraltete APIs aufgeführt sind, mit dem Zieldatum für die Entfernung am 26. Februar 2026 (oder früher). Im AEM Analyzer-Bericht können diese APIs mit dem Datum der wirksamen Entfernung 8/31/2025 angezeigt werden.
 
