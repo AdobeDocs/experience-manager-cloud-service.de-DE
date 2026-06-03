@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 6b354e8c8fe1de2341e7e4630b82a3b61c5a4ee6
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1891'
 ht-degree: 1%
 
 ---
@@ -47,10 +47,10 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 
 | MCP-Server | Endpunkt | Beschreibung |
 |---|---|---|
-| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import und Asset-Suche.<br>Senden Sie eine E-Mail an `aemcs-mcp-feedback@adobe.com`, um die **Asset-Suche** für Sie aktivieren zu lassen. Fügen Sie den Organisationsnamen zusammen mit dem Anwendungsfall in die E-Mail ein. |
-| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (Abrufen, Auflisten/Suchen) für Seiten und Inhaltsfragmente sowie die Asset-Suche.<br>Senden Sie eine E-Mail an `aemcs-mcp-feedback@adobe.com`, um die **Asset-Suche** für Sie aktivieren zu lassen. Fügen Sie den Organisationsnamen zusammen mit dem Anwendungsfall in die E-Mail ein. |
+| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import und Asset-Suche (die mindestens erforderliche AEM-Versionsversion ist `26309`). |
+| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (GET, LIST/SEARCH) für Seiten und Inhaltsfragmente sowie die Asset-Suche (die mindestens erforderliche AEM-Release-Version ist `26309`). |
 | **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. |
-| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
+| **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
 | **Cloud-Migration** | `/cloud-migration` | Rufen Sie Best Practices Analyzer (BPA)-Ergebnisse aus Cloud Acceleration Manager (CAM) nach Migrationsmuster oder Schweregrad ab, sodass KI-Agenten die Code-Migration von AEM 6.x zu AEM as a Cloud Service fördern können. Siehe [Verwenden des Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
@@ -61,7 +61,7 @@ Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden,
 
 Der MCP-Client verwendet das MCP-Protokoll, um die Toolliste und die Schemata abzurufen, die der LLM dann verwenden kann.
 
-Weitere Informationen zu [&#x200B; Funktionen und deren Verwendung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial[&#128279;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im Cloud Manager MCP Server-.
+Weitere Informationen zu [ Funktionen und deren Verwendung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)Content MCP Server-Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) und im [Cloud Manager MCP Server-.
 
 ## Unterstützte MCP-Anwendungen {#supported-mcp-applications}
 
@@ -178,7 +178,7 @@ Zu den repräsentativen Szenarien gehören:
 
   >[!NOTE]
   >
-  >Senden Sie eine E-Mail an `aemcs-mcp-feedback@adobe.com`, damit die Asset-Suche für Sie aktiviert wird. Fügen Sie den Organisationsnamen zusammen mit dem Anwendungsfall in die E-Mail ein.
+  >Die mindestens erforderliche AEM-Versionsversion für den Zugriff auf **Assets Search** über den MCP-Endpunkt ist `26309`.
 
 ### Beispiel-Workflows {#example-workflows}
 

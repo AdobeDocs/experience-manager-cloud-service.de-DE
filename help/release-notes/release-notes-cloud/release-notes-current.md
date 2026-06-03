@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ccca1d88486ff1c1ac2e9272287ce74bc0ac10b1
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2282'
 ht-degree: 28%
 
 ---
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491499/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -110,9 +110,14 @@ AEM Assets-Bereitstellungs-APIs unterstützen jetzt die Asset-Suche und Asset-Do
 
 Mit ereignisgesteuerten Einblicken können Teams die Interaktion mit Inhalten besser verstehen und vernetztere Workflows für digitale Assets erstellen. Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
 
+**Asset-Bereitstellungs-URL**
+
+Content Hub ermöglicht es Benutzenden jetzt, die Bereitstellungs-URL eines Assets direkt aus den Asset-Eigenschaften zu kopieren. Diese Verbesserung erleichtert die Freigabe und Einbettung genehmigter Assets auf Websites, Anwendungen und externen Systemen. Durch schnellen Zugriff auf bereitstellungsfertige Links können Teams die Workflows für die Inhaltsverteilung optimieren und die Wiederverwendung von Assets in digitalen Erlebnissen beschleunigen.
+
 >[!IMPORTANT]
 >
 >Diese Funktionen sind als Funktionen mit begrenzter Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-openapi}
 
@@ -156,7 +161,7 @@ Beschleunigen Sie die Migration von AEM 6.5 (oder früher) zu AEM as a Cloud Ser
 
 Erfahren Sie mehr über [IDE-KI-Tools für die Cloud](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)Migration und auch über andere [Lokale Entwicklung mit KI-Tools](/help/ai-in-aem/local-development-with-ai-tools.md) (Agentenkenntnisse und lokale MCP-Server).
 
->[!VIDEO](https://video.tv.adobe.com/v/3491447/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
 #### Änderungen der Anzeige des Status der Replikationswarteschlange {#replication-queue-status-display}
 
@@ -164,7 +169,7 @@ In der Authoring-Benutzeroberfläche zeigen Replikationsagenten jetzt zwei konso
 
 Weitere Informationen zu [Replikationswarteschlangen](/help/operations/replication.md#replication-queues).
 
-![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten &#x200B;](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
+![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten ](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
 
 ### Wichtige Hinweise zu [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-notices}
 
@@ -236,7 +241,7 @@ Beta-Version für AEM-Veröffentlichungs-Bereitstellung oder Edge Delivery Servi
 
 Die Funktionen [Fehlerbehebung bei Pipelines](/help/ai-in-aem/agents/brand-experience/development/development.md) des Entwicklungsagenten helfen Entwicklerinnen und Entwicklern bei der effizienten Diagnose und Lösung von Problemen in AEM as a Cloud Service-Bereitstellungen. Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web Tier Config-Pipeline** als Teil eines Beta-Programms.
 
-aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 #### Fehlerbehebung bei der Replikations-KI (Beta-Programm) {#replication-ai-troubleshooting-alpha}
 
