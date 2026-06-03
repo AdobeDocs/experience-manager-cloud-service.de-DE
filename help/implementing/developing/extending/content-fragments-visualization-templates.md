@@ -3,9 +3,9 @@ title: Erstellen von Visualisierungsvorlagen für Inhaltsfragmente
 description: Vorschau und Veröffentlichung von Inhaltsfragmenten mit Visualisierungsvorlagen. Erfahren Sie, wie Sie die Vorlagen erstellen und anpassen können.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: c2f78402233872c0b9b8c12e767130f461366b24
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2119'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ Weitere Informationen zur Verwendung Ihrer Vorlage in AEM finden Sie unter:
 
 ### Verwenden der Veröffentlichungs-URL für visuelle Inhaltsfragmente {#using-the-visual-content-fragment-publish-url}
 
-Nachdem Sie visuelle Inhaltsfragmente mithilfe der Vorlage erstellt haben, können Sie die [Veröffentlichungs-URL Ihrer visuellen Inhaltsfragmente“ &#x200B;](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Nachdem Sie visuelle Inhaltsfragmente mithilfe der Vorlage erstellt haben, können Sie die [Veröffentlichungs-URL Ihrer visuellen Inhaltsfragmente“ ](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars - die (sehr) Grundlagen {#handlebars-the-very-basics}
 
@@ -373,7 +373,7 @@ Denken Sie daran, beim Zugriff auf Array-Elemente nach Index in Handlebars:
 
 ### Zahlenfelder mit mehreren Werten {#multi-valued-number-fields}
 
-Zahlen werden zur [&#x200B; in &#x200B;](#multi-valued-text-fields) umgewandelt:
+Zahlen werden zur [ in ](#multi-valued-text-fields) umgewandelt:
 
 ```handlebars
 <div class="pricing">
@@ -956,7 +956,7 @@ Einige Hinweise zur Fehlerbehebung:
 | Feld mit mehreren Werten zeigt nur das erste Element an | Array mit fünf Elementen rendert nur ein Element | `{{#each fields.tags}}` verwenden, um alle Elemente zu iterieren |
 | Zugriff auf Array-Index funktioniert nicht | `{{{fields.tags[0]}}}` wird leer dargestellt | Punktklammersyntax verwenden: `{{{fields.tags.[0]}}}` |
 | Referenzierte Fragmente werden nicht angezeigt | `hasReferencedFragments` ist immer „false“ | Hydratation aktivieren: `?hydration=%7B%22enabled%22%3Atrue%7D;` auch `{{#if referencesError}}` überprüfen |
-| Vorlage rendert nichts | Leere Seite oder leere Ausgabe | Auf nicht geschlossene `{{#if}}` oder `{{#each}}` prüfen; Diagnoseausgabe hinzufügen: `<pre>hasFields: {{hasFields}}`|`title: {{properties.title}}</pre>` |
+| Vorlage rendert nichts | Leere Seite oder leere Ausgabe | Auf nicht geschlossene `{{#if}}` oder `{{#each}}` prüfen; Diagnoseausgabe hinzufügen: `<pre>hasFields: {{hasFields}} \| title: {{properties.title}}</pre>` |
 | Kommentare werden auf der gerenderten Seite angezeigt | Für Endbenutzer sichtbarer HTML-Kommentartext | Verwenden von Handlebars-Kommentaren `{{! comment }}` anstelle von HTML `<!-- comment -->` |
 | Bedingung wird immer als „true“ ausgewertet | `{{#if fields.enabled}}` ist immer wahr | Hinweis: Der `"false"` ist in Handlebars wahr. Nur tatsächliche `false`, `null`, `undefined`, `0`, `""` und `[]` sind falsch. |
 | Sonderzeichen werden als Entitäten gerendert | `&lt;`, `&amp;` anstelle von `<` angezeigt, `&` | Verwenden Sie dreifache geschweifte Klammern für vorab gerenderte HTML-Inhalte: `{{{fields.content}}}` |
