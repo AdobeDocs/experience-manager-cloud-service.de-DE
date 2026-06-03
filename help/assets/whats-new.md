@@ -37,14 +37,14 @@ Bei einer Suche nach `Woman drinking coffee` können beispielsweise auch Assets 
 
 Admins können KI-Suchen in Content Hub über das Konfigurationsmenü aktivieren oder deaktivieren, indem sie entweder KI-Suchen oder die herkömmliche Keyword-Suche auswählen.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
 
 
 **Benutzerdefinierte Sortieroptionen**
 
 Mit Content Hub können Admins jetzt benutzerdefinierte Metadatenfelder als Sortieroptionen auf der Content Hub-Startseite aktivieren. Zusätzlich zu den standardmäßigen Sortieroptionen, Größe, Geändert, Name und Relevanz können Admins geschäftsspezifische Metadatenfelder wie Kanal, Region, SKU oder Kampagne konfigurieren, um Benutzenden zu helfen, Suchergebnisse effektiver zu organisieren.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
 
 **Asset-Suche und Download-Ereignisunterstützung für Bereitstellungs-APIs**
 
@@ -69,7 +69,7 @@ In Content Hub stellt der AEM Governance Agent sicher, dass nur die richtigen Pe
 
 ![Übersicht über die Berechtigungsverwaltung](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funktionen der Version Oktober 2025 {#october-2025-release-features}
@@ -90,7 +90,7 @@ Sie können Sammlungen in Content Hub jetzt als Favoriten markieren, was das Org
 
 Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um schnell darauf zugreifen zu können. Angeheftete Sammlungen werden in einem speziellen Abschnitt **[!UICONTROL Angeheftet]** auf der Startseite von Sammlungen angezeigt, wodurch es einfacher ist, wichtige Sammlungen in Reichweite zu halten.
 
-[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Weitere Informationen zu dieser Funktion]{type=Informative url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funktionen der Version August 2025 {#august-release-features}
 
