@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 033af0a109c14304e5f1d83f0dda205991be6909
+source-git-commit: 77b81e63078f95ad1c70c4e19af8d9be41bf2c84
 workflow-type: tm+mt
-source-wordcount: '7461'
+source-wordcount: '7469'
 ht-degree: 85%
 
 ---
@@ -338,6 +338,7 @@ ht-degree: 85%
    + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Open ID Connect-Unterstützung für AEM as a Cloud Service auf Veröffentlichungsebene](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [Einrichten von IMS-Integrationen für AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [Adobe-verwaltete API-Integrationen in Adobe Admin Console](/help/security/adobe-managed-api-integrations-in-adobe-admin-console.md)
    + [Prinzipalansicht für die Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md)
    + [Best Practices für Sling Service-Benutzerzuordnung und Dienstbenutzerdefinition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Kundenseitig verwaltete Schlüssel für Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
@@ -1334,7 +1335,7 @@ ht-degree: 85%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
