@@ -169,7 +169,7 @@ In der Authoring-Benutzeroberfläche zeigen Replikationsagenten jetzt zwei konso
 
 Weitere Informationen zu [Replikationswarteschlangen](/help/operations/replication.md#replication-queues).
 
-![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten ](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
+![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten &#x200B;](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
 
 ### Wichtige Hinweise zu [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-notices}
 
@@ -241,7 +241,7 @@ Beta-Version für AEM-Veröffentlichungs-Bereitstellung oder Edge Delivery Servi
 
 Die Funktionen [Fehlerbehebung bei Pipelines](/help/ai-in-aem/agents/brand-experience/development/development.md) des Entwicklungsagenten helfen Entwicklerinnen und Entwicklern bei der effizienten Diagnose und Lösung von Problemen in AEM as a Cloud Service-Bereitstellungen. Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web Tier Config-Pipeline** als Teil eines Beta-Programms.
 
-aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 #### Fehlerbehebung bei der Replikations-KI (Beta-Programm) {#replication-ai-troubleshooting-alpha}
 
