@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2022.5.0 von  [!DNL Adobe Experience
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 69%
@@ -81,9 +81,9 @@ Experience Manager Assets verwendet jetzt Adobe AI-Funktionen, um [zwischen Farb
 
 ### Neue Funktionen {#what-is-new-foundation}
 
-* Die Option „Struktur hinzufügen“ auf der Registerkarte „Verteilen **im Administrator-Bildschirm des Replikationsagenten,** zuvor als veraltet angekündigt wurde, wurde am 20. Juni 2022 oder kurz danach entfernt. Pakete mit einer Baumstruktur mit Inhalten sollten stattdessen mithilfe von [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder mit dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) repliziert werden.
+* Die Option „Struktur hinzufügen“ auf der Registerkarte „Verteilen **im Administrator-Bildschirm des Replikationsagenten,** zuvor als veraltet angekündigt wurde, wurde am 20. Juni 2022 oder kurz danach entfernt. Pakete mit einer Baumstruktur mit Inhalten sollten stattdessen mithilfe von [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder mit dem Workflow [Inhaltsstruktur veröffentlichen](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) repliziert werden.
 
-* Die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ohne Binärdateien), wird nicht mehr unterstützt und wird am 12. September 2022 oder bald danach erzwungen. Stattdessen muss [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder der Workflow [Inhaltsstruktur veröffentlichen](/help/operations/replication.md#publish-content-tree-workflow) verwendet werden, um derart große Inhaltspakete zu replizieren. Wenn versucht wird, derart große Inhaltspakete zu replizieren, wird ab Juli auf der Registerkarte **Verteilen** des Replikationsagenten eine Warnmeldung angezeigt. Ebenso erscheint eine Warnmeldung im AEM-Fehlerprotokoll, wenn die Replikations-API verwendet wird, um solche großen Inhaltspakete zu replizieren. Im September wurden die Warnungen durch Fehler ersetzt. Anpassen der Prozesse entsprechend.
+* Die Verwendung des Administrationsbildschirms des Replikationsagenten oder der Replikations-API für die Verteilung von Inhaltspaketen, die größer als 10 MB sind (Knoten mit Eigenschaften, ohne Binärdateien), wird nicht mehr unterstützt und wird am 12. September 2022 oder bald danach erzwungen. Stattdessen muss [Veröffentlichung verwalten](/help/operations/replication.md#manage-publication) oder der Workflow [Inhaltsstruktur veröffentlichen](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) verwendet werden, um derart große Inhaltspakete zu replizieren. Wenn versucht wird, derart große Inhaltspakete zu replizieren, wird ab Juli auf der Registerkarte **Verteilen** des Replikationsagenten eine Warnmeldung angezeigt. Ebenso erscheint eine Warnmeldung im AEM-Fehlerprotokoll, wenn die Replikations-API verwendet wird, um solche großen Inhaltspakete zu replizieren. Im September wurden die Warnungen durch Fehler ersetzt. Anpassen der Prozesse entsprechend.
 
 ### Neue Funktionen im Kanal für die Vorabversion von [!DNL Experience Manager] verfügbar {#prerelease-features-foundation}
 

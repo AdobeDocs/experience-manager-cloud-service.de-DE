@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2024.11.0 von [!DNL Adobe Experience
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 94%
@@ -180,7 +180,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### Verbesserte Leistung bei der Strukturreplikation (und Einstellung der Verwendung des Workflows für die Veröffentlichung einer Inhaltsstruktur) {#tree-replication-performance}
 
-Der [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) ist ein neuer Workflow-Modellschritt, der zum Replizieren von tiefen Inhaltshierarchien empfohlen wird. Beachten Sie, dass unabhängige Replikationen (z. B. durch schnelle Veröffentlichung oder Verwalten der Veröffentlichung) parallel zum laufenden Workflow für die Strukturreplikation fortgesetzt werden können. Dies ist besonders nützlich, wenn Sie zeitkritische Inhalte veröffentlichen müssen, während eine Massenreplikation noch läuft. Der Strukturreplikationsschritt ersetzt den Workflow für die Veröffentlichung der Inhaltsstruktur und den zugehörigen Workflow-Schritt, der jetzt nicht mehr unterstützt wird.
+Der [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation) ist ein neuer Workflow-Modellschritt, der zum Replizieren von tiefen Inhaltshierarchien empfohlen wird. Beachten Sie, dass unabhängige Replikationen (z. B. durch schnelle Veröffentlichung oder Verwalten der Veröffentlichung) parallel zum laufenden Workflow für die Strukturreplikation fortgesetzt werden können. Dies ist besonders nützlich, wenn Sie zeitkritische Inhalte veröffentlichen müssen, während eine Massenreplikation noch läuft. Der Strukturreplikationsschritt ersetzt den Workflow für die Veröffentlichung der Inhaltsstruktur und den zugehörigen Workflow-Schritt, der jetzt nicht mehr unterstützt wird.
 
 ### OpenAPI-basierte APIs – Early-Adopter-Programm {#open-apis-earlyadopter}
 

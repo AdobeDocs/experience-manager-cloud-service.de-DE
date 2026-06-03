@@ -6,16 +6,16 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 81%
+source-wordcount: '2553'
+ht-degree: 77%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten - Konzepte und Best Practices {#working-with-content-fragments-concepts-and-best-practices}
 
-In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen es Ihnen, Inhalte so vorzubereiten, dass sie an mehreren Orten und über mehrere Kanäle verwendet werden können, ideal für die [Headless-Bereitstellung](/help/headless/what-is-headless.md) und die [Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
+In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfragmenten seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Stellen und über mehrere Kanäle verwendet werden können und ideal für [Headless-Bereitstellung](/help/headless/what-is-headless.md) und [Seitenbearbeitung](/help/sites-cloud/authoring/fragments/content-fragments.md) sind.
 
 >[!TIP]
 >
@@ -39,7 +39,6 @@ In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfrag
 >* Verwendung des [*originalen* Inhaltsfragmenteditors](/help/assets/content-fragments/content-fragments-variations.md),
 >* Verwendung von [Inhaltsfragmenten für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
-
 Inhaltsfragmente enthalten strukturierte Inhalte:
 
 * Jedes Fragment basiert auf einem [Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
@@ -59,10 +58,26 @@ Inhaltsfragmente enthalten strukturierte Inhalte:
       * Mit den verfügbaren Referenzdatentypen können Sie Ihre Inhalte verschachteln.
       * Wird in der Regel für die Headless-Bereitstellung an Ihre Anwendung verwendet.
 
-Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
+Inhaltsfragmente können auch bereitgestellt werden in:
 
-* bietet Ihnen die Möglichkeit, mithilfe der Komponente zu bestimmen, welche Fragmentelemente bereitgestellt werden sollen
-* ermöglicht durch das Hinzufügen mehrerer [Inhaltsfragment-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) auf der für die API-Bereitstellung verwendeten Seite eine Bereitstellung in größerem Umfang
+* JSON-Format unter Verwendung der Exportfunktionen des Sling-Modells (JSON) der AEM-Kernkomponenten. Diese Form der Bereitstellung:
+
+   * bietet Ihnen die Möglichkeit, mithilfe der Komponente zu bestimmen, welche Fragmentelemente bereitgestellt werden sollen
+   * ermöglicht durch das Hinzufügen mehrerer [Inhaltsfragment-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) auf der für die API-Bereitstellung verwendeten Seite eine Bereitstellung in größerem Umfang
+
+* HTML-Format unter Verwendung [visueller Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) gerendert mit [HTML-Vorlagen, entwickelt mit Handlebars](/help/implementing/developing/extending/content-fragments-visualization-templates.md). Diese Form der Bereitstellung:
+
+   * bietet eine visuelle Darstellung, die die Vorschau und Überprüfung von Inhalten erleichtert
+   * bietet eine visuelle Darstellung für die direkte und sofortige Verwendung durch externe Kanäle und Anwendungen
+
+  <!-- CQDOC-23232 - remove when GA -->
+
+  >[!NOTE]
+  >
+  >Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
+  >
+  >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
@@ -111,6 +126,7 @@ Nachdem das Fragment erstellt wurde, können Sie Folgendes tun:
 * [Integrieren und Verwenden von Inhaltsfragmenten in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
 * Erstellen und Verwalten von [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Oder Verwenden Ihrer Fragmente für die Seitenerstellung](/help/sites-cloud/authoring/fragments/content-fragments.md)
+* Bereitstellen einer [visuellen (HTML) Darstellung](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) Ihres Fragments
 
 >[!NOTE]
 >

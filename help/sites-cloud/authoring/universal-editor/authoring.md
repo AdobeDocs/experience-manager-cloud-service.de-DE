@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
 workflow-type: tm+mt
-source-wordcount: '3159'
-ht-degree: 67%
+source-wordcount: '3149'
+ht-degree: 66%
 
 ---
 
@@ -320,7 +320,7 @@ Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwische
 
 1. Wählen Sie eine Komponente entweder im Editor oder in der Inhaltsstruktur aus.
 1. Sie haben dann folgende Möglichkeiten:
-   * Klicken Sie auf **Kopieren** im Bedienfeld [Eigenschaften“.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * Klicken Sie auf **Kopieren**-Symbol im [Eigenschaftenbereich.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![Aus Bedienfeld kopieren](assets/copy-from-panel.png)
    * Wählen Sie **Kontextmenü die Option**&#x200B;Kopieren“ aus.
      ![Aus Kontextmenü kopieren](assets/copy-from-context-menu.png)
@@ -385,17 +385,16 @@ Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokum
 
 ### Zugreifen auf Seiteneigenschaften {#page-properties}
 
-Die **AEM-Erweiterung für Seiteneigenschaften** ermöglicht den schnellen Zugriff auf das [Fenster „Seiteneigenschaften“](/help/sites-cloud/authoring/sites-console/page-properties.md) für die aktuell in Bearbeitung befindliche Seite.
+Die Schaltfläche **Seiteneigenschaften** ermöglicht den schnellen Zugriff auf das Fenster [AEM-Seiteneigenschaften](/help/sites-cloud/authoring/sites-console/page-properties.md) für die Seite, die gerade bearbeitet wird.
 
 ![Symbol „Seiteneigenschaften“](assets/page-properties-icon.png)
 
 Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Symbol **Seiteneigenschaften**, um die Seiteneigenschaften für die Seite in einem neuen Browser-Tab zu öffnen.
 
-Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
-
 >[!NOTE]
 >
->Die **AEM-Erweiterung für Seiteneigenschaften** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+>* Die **AEM-Erweiterung für Seiteneigenschaften** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+>* Die Schaltfläche wird nur angezeigt, wenn die Remote-Seite eine [Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` aufweist und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
 
 ### Zugreifen auf die Sites-Konsole {#sites-console}
 

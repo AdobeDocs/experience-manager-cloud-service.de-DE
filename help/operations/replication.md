@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Verteilung und Fehlerbehebung bei der R
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1711'
-ht-degree: 100%
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
+workflow-type: tm+mt
+source-wordcount: '1007'
+ht-degree: 43%
 
 ---
 
@@ -23,10 +23,10 @@ Adobe Experience Manager as a Cloud Service verwendet die [Sling Content Distrib
 
 >[!NOTE]
 >
->Wenn Sie an Massenveröffentlichungen von Inhalten interessiert sind, erstellen Sie einen Workflow mit dem [Workflow-Schritt für die Strukturaktivierung](#tree-activation), der eine effiziente Verarbeitung umfangreicher Payloads ermöglicht.
->>Es wird nicht empfohlen, für die Massenveröffentlichung Ihren eigenen, benutzerdefinierten Code zu erstellen.
->>Wenn Sie aus irgendeinem Grund Anpassungen vornehmen müssen, können Sie mit diesem Schritt einen Workflow über vorhandene Workflow-APIs auslösen.
->>Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die auch veröffentlicht werden müssen. Achten Sie außerdem darauf, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen hinsichtlich der Menge der Inhalte, die Sie über Workflows mit dem Workflow-Schritt für die Strukturaktivierung senden können.
+>Wenn Sie an Massenveröffentlichungen von Inhalten interessiert sind, erstellen Sie einen Workflow mit dem [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation), der eine effiziente Verarbeitung umfangreicher Payloads ermöglicht.
+>Es wird nicht empfohlen, für die Massenveröffentlichung Ihren eigenen, benutzerdefinierten Code zu erstellen.
+>Wenn Sie aus irgendeinem Grund Anpassungen vornehmen müssen, können Sie mit diesem Schritt einen Workflow über vorhandene Workflow-APIs auslösen.
+>Es empfiehlt sich immer, nur Inhalte zu veröffentlichen, die auch veröffentlicht werden müssen. Achten Sie außerdem darauf, nicht zu versuchen, eine große Anzahl von Inhalten zu veröffentlichen, wenn dies nicht notwendig ist. Es gibt jedoch keine Beschränkungen hinsichtlich der Menge der Inhalte, die Sie über Workflows mit dem Workflow-Schritt für die Strukturaktivierung senden können.
 
 ### Schnelles Rückgängigmachen einer Veröffentlichung/Veröffentlichen – Geplantes Rückgängigmachen einer Veröffentlichung/Veröffentlichen {#publish-unpublish}
 
@@ -46,154 +46,11 @@ Um die automatische Replikation für diese Funktion zu realisieren, aktivieren S
 
 „Veröffentlichung verwalten“ bietet mehr Optionen als „Schnell veröffentlichen“. Mit diesen können Sie auch untergeordnete Seiten einschließen, Verweise anpassen, alle nötigen Workflows starten und die Veröffentlichung bei Bedarf zu einem späteren Zeitpunkt starten.
 
-Wenn Sie die untergeordneten Elemente eines Ordners für die Option „Später veröffentlichen“ einbeziehen, wird der Workflow „Inhaltsstruktur veröffentlichen“ aufgerufen, der in diesem Artikel beschrieben wird.
+Wenn Sie die untergeordneten Elemente eines Ordners für die Option „Später veröffentlichen“ einbeziehen, wird der Workflow „Inhaltsstruktur veröffentlichen“ aufgerufen, der unter [Workflows für die Strukturreplikation](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) beschrieben wird.
 
 Ausführlichere Informationen zur Funktion „Veröffentlichung verwalten“ finden Sie in der [Dokumentation zu Veröffentlichungsgrundlagen](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
-### Workflow-Schritt für die Strukturaktivierung {#tree-activation}
-
-Mit dem Workflow-Schritt für die Strukturaktivierung soll eine tiefe Hierarchie von Inhaltsknoten effektiv repliziert werden. Er wird automatisch angehalten, wenn die Warteschlange zu groß wird, damit andere Replikationen parallel mit minimaler Latenz fortgesetzt werden können.
-
-So erstellen Sie ein Workflow-Modell, das den Prozessschritt `TreeActivation` verwendet:
-
-1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**.
-1. Klicken Sie auf der Seite „Workflow-Modelle“ in der oberen rechten Ecke des Bildschirms auf **Erstellen**.
-1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de).
-1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**
-1. Löschen Sie im folgenden Fenster den standardmäßig angezeigten Schritt
-1. Ziehen Sie den Prozessschritt per Drag-and-Drop in den aktuellen Modellfluss:
-
-   ![Prozessschritt](/help/operations/assets/processstep.png)
-
-1. Klicken Sie auf den Prozessschritt im Fluss und wählen Sie **Konfigurieren** aus, indem Sie auf das Schraubenschlüsselsymbol klicken.
-1. Wählen Sie die Registerkarte **Prozess** und wählen Sie `Publish Content Tree` aus der Dropdown-Liste aus; aktivieren Sie dann das Kontrollkästchen **Handler-Modus**
-
-   ![Aktivieren der Braumstruktur](/help/operations/assets/new-treeactivationstep.png)
-
-1. Legen Sie alle zusätzlichen Parameter im Feld **Argumente** fest. Mehrere kommagetrennte Argumente können zusammengefügt werden. Zum Beispiel:
-
-   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
-
-   >[!NOTE]
-   >
-   >Eine Liste der Parameter finden Sie unten im Abschnitt **Parameter**.
-
-1. Klicken Sie auf **Fertig**, um das Workflow-Modell zu speichern.
-
-**Parameter**
-
-| Name | default | Beschreibung |
-| -------------- | ------- | --------------------------------------------------------------- |
-| path |         | Der Stammpfad zum Starten |
-| agentId | publish | Der Name des zu verwendenden Replikationsagenten |
-| chunkSize | 50 | Die Anzahl der Pfade, die in einer einzelnen Replikation gebündelt werden sollen |
-| maxTreeSize | 500000 | Die maximale Anzahl von Knoten, damit eine Baumstruktur als klein gilt |
-| maxQueueSize | 10 | Die maximale Anzahl von Elementen in der Replikationswarteschlange |
-| enableVersion | false | Aktivierung der Versionierung |
-| dryRun | false | Wenn „true“ festgelegt ist, wird die Replikation nicht tatsächlich aufgerufen |
-| userId |         | Nur für den Job. Beim Workflow wird die Person verwendet, die den Workflow aufruft |
-| filters |         | Liste mit den Namen der Knotenfilter. Siehe „Unterstützte Filter“ unten |
-
-**Unterstützte Filter**
-
-| Name | Beschreibung |
-| ------------- | ------------------------------------------- |
-| onlyModified | Knoten: sowohl neue als auch bereits vorhandene, die seit der letzten Veröffentlichung geändert wurden. |
-| onlyActivated | Knoten: die vor der letzten Veröffentlichung veröffentlicht wurden. |
-
-
-**Fortsetzung der Unterstützung**
-
-Der Workflow verarbeitet Inhalte in Blöcken, von denen jeder eine Teilmenge des vollständigen zu veröffentlichenden Inhalts darstellt.  Wenn der Workflow vom System angehalten wird, wird er dort fortgesetzt, wo er abgebrochen wurde.
-
-**Überwachen des Workflow-Fortschritts**
-
-1. Gehen Sie auf der Startseite von AEM as a Cloud Service zu **Tools > Allgemein > Aufträge**.
-1. Sehen Sie sich die Zeile an, die Ihrem Workflow entspricht. Die Spalte *Fortschritt* gibt an, wie die Replikation voranschreitet. Beispielsweise kann dort „41/564“ und nach der Aktualisierung „52/564“ angezeigt werden.
-
-   ![Treeactivation-Fortschritt](/help/operations/assets/treeactivation-progress.png)
-
-
-1. Wenn Sie die Zeile auswählen und öffnen, erhalten Sie weitere Details zum Status der Workflow-Ausführung.
-
-   ![Details zum Treeactivation-Status](/help/operations/assets/treeactivation-progress-details.png)
-
-
-
-### Workflow zum Veröffentlichen der Inhaltsstruktur {#publish-content-tree-workflow}
-
->[!NOTE]
->
->Diese Funktion wurde zugunsten des leistungsfähigeren Schritts zur Strukturaktivierung aufgegeben, der in einen benutzerdefinierten Workflow eingeschlossen werden kann.
-
-+++ Klicken Sie hier, um mehr über diese nicht mehr unterstützte Funktion zu erfahren.
-
-Sie können eine Baumstruktur replizieren, indem Sie **Tools > Workflow > Modelle** auswählen und das vorkonfigurierte Workflow-Modell **Inhaltsstruktur veröffentlichen** kopieren, wie unten dargestellt:
-
-![Die Workflow-Karte für die Veröffentlichung der Inhaltsstruktur](/help/operations/assets/publishcontenttreeworkflow.png)
-
-Rufen Sie das Originalmodell nicht auf. Kopieren Sie stattdessen unbedingt zuerst das Modell und rufen Sie dann diese Kopie auf.
-
-Wie alle Workflows kann es auch über eine API aufgerufen werden. Weitere Informationen finden Sie unter [Programmgesteuerte Interaktion mit Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=de#extending-aem).
-
-Alternativ können Sie auch ein Workflow-Modell erstellen, das den Prozessschritt `Publish Content Tree` verwendet.
-
-1. Gehen Sie auf der Homepage von AEM as a Cloud Service zu **Tools > Workflow > Modelle**.
-1. Klicken Sie auf der Seite „Workflow-Modelle“ in der oberen rechten Ecke des Bildschirms auf **Erstellen**.
-1. Fügen Sie Ihrem Modell einen Titel und einen Namen hinzu. Weitere Informationen finden Sie unter [Erstellen von Workflow-Modellen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=de).
-1. Wählen Sie das neu erstellte Modell aus der Liste aus und klicken Sie auf **Bearbeiten**
-1. Ziehen Sie im folgenden Fenster den Prozessschritt per Drag-and-Drop in den aktuellen Modellfluss:
-
-   ![Prozessschritt](/help/operations/assets/processstep.png)
-
-1. Klicken Sie auf den Prozessschritt im Fluss und wählen Sie **Konfigurieren** aus, indem Sie auf das Schraubenschlüsselsymbol klicken.
-1. Wählen Sie die Registerkarte **Prozess** und wählen Sie `Publish Content Tree` aus der Dropdown-Liste aus; aktivieren Sie dann das Kontrollkästchen **Handler-Modus**
-
-   ![Aktivieren der Braumstruktur](/help/operations/assets/newstep.png)
-
-1. Legen Sie alle zusätzlichen Parameter im Feld **Argumente** fest. Mehrere kommagetrennte Argumente können zusammengefügt werden. Zum Beispiel:
-
-   `enableVersion=true,agentId=publish,includeChildren=true`
-
-
-   >[!NOTE]
-   >
-   >Eine Liste der Parameter finden Sie unten im Abschnitt **Parameter**.
-
-1. Klicken Sie auf **Fertig**, um das Workflow-Modell zu speichern.
-
-**Parameter**
-
-* `includeChildren` (boolescher Wert, Standard: `false`). Der Wert `false` bedeutet, dass nur der Pfad veröffentlicht wird, während `true` bedeutet, dass auch untergeordnete Elemente veröffentlicht werden.
-* `replicateAsParticipant` (boolescher Wert, Standard: `false`). Wenn als `true` konfiguriert, verwendet die Replikation die `userid` des Prinzipals, der den Teilnehmerschritt ausgeführt hat.
-* `enableVersion` (boolescher Wert, Standard: `false`). Dieser Parameter bestimmt, ob bei der Replikation eine neue Version erstellt wird.
-* `agentId` (Zeichenfolgenwert, Standard bedeutet, dass nur Agenten für die Veröffentlichung verwendet werden). Es wird empfohlen, die agentId explizit anzugeben. Legen Sie sie beispielsweise auf den Wert „publish“ fest. Wird der Agent auf `preview` gesetzt, erfolgt die Veröffentlichung im Vorschau-Service.
-* `filters` (Zeichenfolgenwert, Standard bedeutet, dass alle Pfade aktiviert sind). Verfügbare Werte sind:
-   * `onlyActivated`: nur Seiten aktivieren, die bereits vorher aktiviert waren. Dies stellt eine Art von Reaktivierung dar.
-   * `onlyModified` – Nur Pfade werden aktiviert, die bereits aktiviert sind und deren Änderungsdatum nach dem Aktivierungsdatum liegt.
-   * Das obige kann als ODER mit einem senkrechten Strich („|“) angegeben werden. Beispiel: `onlyActivated|onlyModified`.
-
-**Protokollierung**
-
-Wenn der Workflow-Schritt für die Aktivierung der Baumstruktur gestartet wird, werden die Konfigurationsparameter auf der INFO-Protokollebene protokolliert. Wenn Pfade aktiviert werden, wird auch eine INFO-Anweisung protokolliert.
-
-Eine endgültige INFO-Anweisung wird dann protokolliert, nachdem der Workflow-Schritt alle Pfade repliziert hat.
-
-Zusätzlich können Sie die Protokollebene der Logger unter `com.day.cq.wcm.workflow.process.impl` auf DEBUG/TRACE erhöhen, um weitere Protokollinformationen zu erhalten.
-
-Bei Fehlern wird der Workflow-Schritt mit einer `WorkflowException` beendet, welche die zugrunde liegende Ausnahme umschließt.
-
-Nachfolgend finden Sie Beispiele für Protokolle, die während eines Beispiel-Workflows zum Veröffentlichen von Inhaltsstrukturen erzeugt werden:
-
-```
-21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
-```
-
-```
-21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
-```
-
-+++
+Um tiefe Inhaltshierarchien stapelweise zu replizieren, verwenden Sie einen Workflow-basierten Ansatz. Siehe [Workflows für die Strukturreplikation](/help/operations/tree-replication-workflows.md) für den empfohlenen Workflow-Schritt für die Aktivierung der Baumstruktur, die Konfigurationsparameter und die Anleitung zur Überwachung. Der veraltete Workflow „Inhaltsstruktur veröffentlichen“ ist dort ebenfalls als Referenz dokumentiert.
 
 ### Replikations-API {#replication-api}
 
@@ -220,15 +77,26 @@ replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/cont
 Resource enResource = resourceResolver.getResource("/content/we-retail/en");
 Resource deResource = resourceResolver.getResource("/content/we-retail/de");
 ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
-// if you need to get the status for more more than 1 resource at once, this approach is more performant
+// if you need to get the status for more than 1 resource at once, this approach is more performant
 Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
 ```
 
+**Replikationsagenten**
+
+AEM as a Cloud Service bietet zwei vordefinierte Replikationsagenten, die Inhalte über Sling Content Distribution von der Autoren- zur Zielebene weiterleiten:
+
+* **publish** - Repliziert aktivierte Inhalte auf der Live-Veröffentlichungsebene. Dieser Agent ist standardmäßig aktiviert und wird bei der Veröffentlichung über die Benutzeroberfläche, Workflows oder die Replikations-API verwendet, sofern nicht anders angegeben.
+* **preview** - Repliziert Inhalte auf der Vorschauebene, damit Autoren Änderungen überprüfen können, bevor sie live gehen. Dieser Agent ist standardmäßig nicht aktiviert.
+
+Sie können beide Agenten unter **Tools** > **Bereitstellung** > **Verteilung** anzeigen und überwachen:
+
+![Verteilungsagenten mit Veröffentlichungs- und Vorschau](/help/operations/assets/replication-agents.png "Verteilungsagenten")
+
+Wenn Sie eine Agentenkarte auswählen, werden ihr Status, ihre Protokolle und [Warteschlangendetails](#replication-queues) geöffnet.
+
 **Replikation mit bestimmten Agenten**
 
-Beim Replizieren von Ressourcen, wie im Beispiel oben, werden nur die standardmäßig aktiven Agenten verwendet. In AEM as a Cloud Service ist dies nur der Publish-Agent, der die Autoren- mit der Veröffentlichungsebene verbindet.
-
-Um die Vorschaufunktion zu unterstützen, wurde ein neuer Preview-Agent hinzugefügt, der standardmäßig nicht aktiv ist. Dieser Agent wird verwendet, um die Autoren- mit der Vorschauebene zu verbinden. Wenn Sie nur über den Vorschauagenten replizieren möchten, müssen Sie diesen Vorschauagenten explizit über einen `AgentFilter` auswählen.
+Wenn Sie wie oben gezeigt mit der API replizieren, werden nur Agenten verwendet, die standardmäßig aktiviert sind - in AEM as a Cloud Service also nur **publish**. Um ausschließlich auf der Vorschauebene zu replizieren, übergeben Sie eine `AgentFilter`, die den Vorschauagenten auswählt:
 
 Siehe folgendes Beispiel:
 
@@ -251,37 +119,48 @@ ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // 
 ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
 ```
 
-Wenn Sie keinen solchen Filter bereitstellen und nur den Publish-Agenten verwenden, wird der Preview-Agent nicht verwendet und die Replikationsaktion wirkt sich nicht auf die Vorschauebene aus.
+Wenn Sie ohne eine `AgentFilter` replizieren, wird nur **publish** verwendet und die Vorschauebene ist nicht betroffen.
 
-Der Gesamt-`ReplicationStatus` einer Ressource wird nur geändert, wenn die Replikationsaktion mindestens einen Agenten enthält, der standardmäßig aktiv ist. Im obigen Beispiel war dieser Fluss nicht der Fall. Die Replikation verwendete nur den Vorschau-Agenten. Daher müssen Sie die neue Methode `getStatusForAgent()` verwenden, mit der Sie den Status für einen bestimmten Agenten abfragen können. Diese Methode funktioniert auch für den Publish-Agenten. Gibt einen Wert zurück, der nicht null ist, wenn eine Replikationsaktion mit dem bereitgestellten Agenten durchgeführt wurde.
+Die `ReplicationStatus` einer Ressource wird nur aktualisiert, wenn die Replikation mindestens einen Agenten enthält, der standardmäßig aktiviert ist. Im obigen Beispiel wurde nur **preview** verwendet, sodass `ReplicationStatus.isActivated` weiterhin `false` bleibt. Verwenden Sie `getStatusForAgent()`, um den Status für einen bestimmten Agenten zu überprüfen, z. B. `getStatusForAgent("preview")` nach einer reinen Vorschaureplikation oder `getStatusForAgent("publish")` für die Live-Veröffentlichungsebene.
 
 ### Methoden zum Invalidieren von Inhalten {#invalidating-content}
 
-Sie können Inhalte direkt ungültig machen, indem Sie entweder die Sling Content Invalidation (SCD) von Author verwenden (bevorzugte Methode) oder die Replikations-API verwenden, um den Replikations-Agenten für das Leeren des Publish-Dispatchers aufzurufen. Weitere Information finden Sie auf der Seite [Caching](/help/implementing/dispatcher/caching.md).
+Sie können Inhalte direkt ungültig machen, indem Sie entweder die Sling Content Invalidation (SCD) von Author verwenden (bevorzugte Methode) oder die Replikations-API verwenden, um den Replikationsagenten für das Leeren des Publish-Dispatchers aufzurufen. Weitere Information finden Sie auf der Seite [Caching](/help/implementing/dispatcher/caching.md).
 
 **Kapazitätsbeschränkungen der Replikations-API**
 
 Replizieren Sie weniger als 100 Pfade gleichzeitig, wobei 500 die Grenze ist. Oberhalb der Grenze wird eine `ReplicationException` ausgelöst.
-Wenn Ihre Anwendungslogik keine atomare Replikation erfordert, kann diese Grenze außer Kraft gesetzt werden, indem Sie `ReplicationOptions.setUseAtomicCalls` auf „false“ setzen. Dadurch wird eine beliebige Anzahl von Pfaden akzeptiert, aber es werden intern Buckets erstellt, um unter diesem Grenzwert zu bleiben.
+Wenn Ihre Anwendungslogik keine atomare Replikation erfordert, kann diese Grenze außer Kraft gesetzt werden, indem Sie die `ReplicationOptions.setUseAtomicCalls` auf „false“ setzen. Dadurch wird eine beliebige Anzahl von Pfaden akzeptiert, aber es werden intern Buckets erstellt, um unter diesem Grenzwert zu bleiben.
 
 Die Größe des pro Replikationsaufruf gesendeten Inhalts darf nicht größer sein als `10 MB`. Diese Regel umfasst die Knoten und Eigenschaften, jedoch keine Binärdateien (Workflow-Pakete und Inhaltspakete werden als Binärdateien erachtet).
 
 
+## Replikations-Warteschlangen {#replication-queues}
+
+Jeder Replikationsagent zeigt zwei Replikationswarteschlangen an. AEM as a Cloud Service zeigt nicht mehr für jeden Veröffentlichungs-Pod eine separate Warteschlange an. Die Veröffentlichungsebene wird automatisch skaliert, sodass Warteschlangen pro Pod die Komplexität erhöhten, ohne dass praktische Vorteile entstanden wären. Der Warteschlangenstatus wird wie folgt konsolidiert:
+
+* **persistiert** - Die Änderung wird dauerhaft auf der Veröffentlichungsebene gespeichert. Nachdem ein Element diese Warteschlange gelöscht hat, wird der Inhalt beibehalten. Veröffentlichungsinstanzen erreichen im Laufe der Zeit einen konsistenten Status.
+* **Vollständig veröffentlicht** - Die Änderung ist auf allen Veröffentlichungs-Pods verfügbar und der Dispatcher-Cache wird für die betroffenen Pfade gelöscht. Nachdem ein Element diese Warteschlange gelöscht hat, erhalten Besucher den aktualisierten Inhalt.
+
+### Überwachen von Replikationswarteschlangen {#monitor-replication-queues}
+
+1. Navigieren Sie in der [globalen Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation) von AEM zu **Tools** > **Bereitstellung**.
+
+   ![Navigieren Sie in der Tools-/](/help/operations/assets/replication-agent-navigation.png "-Navigation zur Verteilung")
+
+1. Wählen Sie **Verteilung** aus und öffnen Sie dann die **publish** oder **preview** Agentenkarte.
+
+1. Überprüfen Sie auf **Registerkarte** Status“, ob jede Warteschlange einen einwandfreien Status aufweist. Überprüfen Sie **Artikel ausstehend** für Arbeit, die darauf wartet, verarbeitet zu werden, und **Letztes Element verarbeitet** für die letzte Aktivität.
+
+   ![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten &#x200B;](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
+
+1. Wählen Sie **Verbindung testen** aus, um zu überprüfen, ob der Agent den Verteilungs-Service erreichen kann.
+1. Wählen Sie die **Protokolle** aus, um den Verlauf der Inhaltsveröffentlichungen anzuzeigen.
+
+   ![Replikationsprotokolle](/help/operations/assets/publish-logs.png "Protokolle")
+
 ## Fehlerbehebung {#troubleshooting}
 
-Um Fehler bei der Replikation zu beheben, navigieren Sie zu den Replikationswarteschlangen in der Web-Benutzeroberfläche des AEM-Authoring-Service:
+Wenn Inhalte nicht veröffentlicht werden können, wird die Veröffentlichung vom AEM-Veröffentlichungs-Service rückgängig gemacht. Verwenden Sie [Replikationswarteschlangen überwachen](#monitor-replication-queues), um die Registerkarte **Status** des Agenten zu öffnen und die betroffene Warteschlange zu identifizieren.
 
-1. Navigieren Sie in der [globalen AEM-Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation) zu **Tools** > **Bereitstellung** > **Verteilung**.
-1. Wählen Sie die Karte **Veröffentlichen** aus
-
-   ![Status](assets/publish-status.png "Status")
-
-1. Überprüfen des Warteschlangenstatus, der grün sein sollte
-1. Sie können die Verbindung zum Replikations-Service testen
-1. Wählen Sie die Registerkarte **Protokolle** aus, auf der der Verlauf der Inhaltsveröffentlichungen angezeigt wird
-
-![Protokolle](assets/publish-logs.png "Protokolle")
-
-Wenn der Inhalt nicht veröffentlicht werden konnte, wird die gesamte Veröffentlichung vom AEM-Publish-Service zurückgesetzt.
-
-In diesem Fall zeigt die bearbeitbare Haupt-Warteschlange einen roten Status an und sollte überprüft werden, um festzustellen, welche Elemente den Abbruch der Veröffentlichung verursacht haben. Wenn Sie auf diese Warteschlange klicken, werden die ausstehenden Elemente angezeigt, die einzeln oder insgesamt gelöscht werden können.
+Wenn eine Warteschlange den Status Rot aufweist, überprüfen Sie die ausstehenden Elemente, um herauszufinden, was den Fehler verursacht hat. Wählen Sie die Warteschlange aus, um ausstehende Elemente anzuzeigen, und löschen Sie dann bei Bedarf einzelne Elemente oder die gesamte Warteschlange.

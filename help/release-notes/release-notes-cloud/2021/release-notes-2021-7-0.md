@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2021.7.0 von  [!DNL Adobe Experience 
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
 feature: Release Information
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 65%
@@ -37,7 +37,7 @@ Sehen Sie sich das Video [Versionsübersicht Juli 2021](https://video.tv.adobe.c
 ### Neue Funktionen {#what-is-new-foundation}
 
 * Flexiblere Dispatcher-Konfiguration: Projekte können leichter organisiert werden. Beispielsweise können Sie jetzt mehrere Rewrite-Regeldateien einbeziehen, die Ihre Website-Struktur widerspiegeln. [Erfahren Sie mehr &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug) diesen flexiblen Modus, einschließlich der Strukturierung Ihrer Dispatcher-Konfiguration, damit Sie sie nutzen können.
-* Die Benutzeroberfläche für die Strukturreplikation unter der Registerkarte „Verteilen“ des Replikationsagenten sollte als veraltet betrachtet werden und wurde nach dem 30. September 2021 entfernt. [Erfahren Sie mehr](/help/operations/replication.md#tree-activation) über alternative Replikationsstrategien.
+* Die Benutzeroberfläche für die Strukturreplikation unter der Registerkarte „Verteilen“ des Replikationsagenten sollte als veraltet betrachtet werden und wurde nach dem 30. September 2021 entfernt. [Erfahren Sie mehr](/help/operations/tree-replication-workflows.md#tree-activation) über alternative Replikationsstrategien.
 * Das Bundle `org.apache.sling.datasource-1.0.4.jar` für die Unterstützung der Sling-Datenquelle wurde entfernt, da es veraltete Funktionen aufweist und von Kunden nicht verwendet wird.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}

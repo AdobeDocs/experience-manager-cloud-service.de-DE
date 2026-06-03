@@ -5,10 +5,10 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 5c8054e9a4f0bbcc2a6fce2fba70403c1f4268d8
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 86%
+source-wordcount: '1012'
+ht-degree: 88%
 
 ---
 
@@ -95,8 +95,8 @@ Die folgende Tabelle zeigt die vorhandenen Attribute, die die Funktion standardm
 
 | `invalidateType` | Wert | Typ (Array/String/Boolean) | Löscht dies den Dispatcher-Cache? | Kommentar |
 |------------------------------|-------------------|---|---|---|
-| `productSkus` | Produkt-SKU (die im Cache ungültig gemacht werden muss). | Array | Ja | Löschen Sie den Cache aus dem internen Speicher nach dem folgenden Muster: <br>```"\"sku\":\\s*\""```<br>Dispatcher<br><ul><li>Löschen Sie den PDP-Seiten-Cache der entsprechenden SKUs</li><li>Löschen Sie den Cache der entsprechenden Kategorieseite, in der sie vorhanden sind (basierend auf der GraphQL-Antwort von Commerce)</li><li>Löschen Sie den Cache basierend auf der folgenden Abfrage:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))``` |
-| `categoryUids` | Die UID der Kategorie (die im Cache ungültig gemacht werden muss). | Array | Ja | Löschen Sie den Cache aus dem internen Speicher nach dem folgenden Muster: <br>```"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""```<br>Dispatcher<br><ul><li>Löschen des Kategorieseiten-Cache für entsprechende Daten (einschließlich der untergeordneten Kategorieseite)</li><li>Löschen Sie alle PDP-Seiten mit den entsprechenden Kategorien</li><li>Löschen Sie den Cache basierend auf der folgenden Abfrage:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))``` |
+| `productSkus` | Produkt-SKU (die im Cache ungültig gemacht werden muss). | Array | Ja | Löschen Sie den Cache aus dem internen Speicher nach dem folgenden Muster: <br>`"\"sku\":\\s*\""`<br>Dispatcher<br><ul><li>Löschen Sie den PDP-Seiten-Cache der entsprechenden SKUs</li><li>Löschen Sie den Cache der entsprechenden Kategorieseite, in der sie vorhanden sind (basierend auf der GraphQL-Antwort von Commerce)</li><li>Löschen Sie den Cache basierend auf der folgenden Abfrage:</li></ul><br>`SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))` |
+| `categoryUids` | Die UID der Kategorie (die im Cache ungültig gemacht werden muss). | Array | Ja | Löschen Sie den Cache aus dem internen Speicher nach dem folgenden Muster: <br>`"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""`<br>Dispatcher<br><ul><li>Löschen des Kategorieseiten-Cache für entsprechende Daten (einschließlich der untergeordneten Kategorieseite)</li><li>Löschen Sie alle PDP-Seiten mit den entsprechenden Kategorien</li><li>Löschen Sie den Cache basierend auf der folgenden Abfrage:</li></ul><br>`SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))` |
 | `regexPatterns` | Wenn Sie die GraphQL-Antwortdaten basierend auf dem Regex-Muster löschen müssen, verwenden Sie dies. | Array | Nein | |
 | `cacheNames` | Diese Werte werden unter der entsprechenden CIF GraphQL Client Configuration Factory > Entsprechende StorePath-GraphQL-Konfiguration > GraphQL-Cache-Konfigurationen definiert | Array | Nein | |
 | `invalidateAll` | „True“ oder „False“ | Boolesch | Ja | |

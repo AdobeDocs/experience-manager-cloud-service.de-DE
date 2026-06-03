@@ -7,10 +7,10 @@ level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: df57b10ad1ed7eb8fe92f6f5f4e45ed282afff8d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 99%
+source-wordcount: '1033'
+ht-degree: 97%
 
 ---
 
@@ -106,7 +106,7 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem AD FS (
    Dabei ist:
 
    * `Client-ID` eine Client-ID, die Sie mit einem beliebigen GUID-Generator generieren können.
-   * `redirect-uri` die URL zu dem [!DNL Microsoft Dynamics]-OData-Cloud-Service auf [!DNL Experience Manager Forms]. Der mit [!DNL Experience Manager Forms] installierte standardmäßige Cloud-Service wird unter der folgenden URL bereitgestellt:
+   * `redirect-uri` ist die URL zum [!DNL Microsoft Dynamics] OData-Cloud-Service auf [!DNL Experience Manager Forms]. Der mit dem [!DNL Experience Manager Forms] installierte standardmäßige Cloud-Service wird unter der folgenden URL bereitgestellt:
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Führen Sie den folgenden Befehl aus, um Zugriff auf den AD FS-Computer zu gewähren:
@@ -133,7 +133,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen O
 
    Weitere Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Service-Konfigurationen finden Sie unter [Konfigurieren des Ordners für Cloud Service-Konfigurationen](#cloud-folder).
 
-1. Wählen Sie **[!UICONTROL Erstellen]**, um den **[!UICONTROL Assistenten zum Erstellen der Datenquellenkonfiguration]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Service]** aus der **[!UICONTROL Dropdown-Liste „Service-Typ“]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und wählen Sie **[!UICONTROL Weiter]**.
+1. Wählen Sie **[!UICONTROL Erstellen]** aus, um den **[!UICONTROL Konfigurationsassistenten für Data Source zu]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]** aus, suchen Sie optional nach einem Miniaturbild für die Konfiguration und klicken Sie auf **[!UICONTROL Weiter]**.
 Auf der Registerkarte **[!UICONTROL Authentifizierungseinstellungen]**:
 
    1. Geben Sie den Wert für das Feld **[!UICONTROL Service-Stamm]** ein. Wechseln Sie zur Dynamics-Instanz und navigieren Sie zu **[!UICONTROL Entwickler-Ressourcen]**, um den Wert für das Feld „Service-Stamm“ anzuzeigen. Beispiel: https://&lt;tenant-name>/api/data/v9.1/
@@ -181,6 +181,7 @@ Sie können [die Formulardatenmodell-Übermittlungsaktion](/help/forms/using-for
 
 Weitere Informationen zur Erstellung und Verwendung eines Formulardatenmodells (FDM) in Unternehmens-Workflows finden Sie unter [Datenintegration](data-integration.md).
 
-## Verwandte Artikel
+## Ähnliche Artikel
 
 {{af-submit-action}}
+

@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 459858d160eaaeddc24321aea031e855911e735f
+source-git-commit: 662715341c35fab62ac0c882a03cba8f41748dbf
 workflow-type: tm+mt
-source-wordcount: '4146'
+source-wordcount: '4154'
 ht-degree: 71%
 
 ---
@@ -46,6 +46,7 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | Funktionen | Veraltete Funktion | Ersatz |
 | ------------ | ------------------ | ----------- |
 | Sites | [Unterstützung von Inhaltsfragmenten in dem Assets-HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Bereitstellung von Inhaltsfragmenten mit OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>zusammen mit<br> [OpenAPIs für das Management von Inhaltsfragmenten und Inhaltsfragmentmodellen](/help/headless/content-fragment-openapis.md) |
+| Sites | Zusammenfassung des Inhaltsfragmenttextes | AEM Generate Variations |
 | Sites | [PWA-Funktionen](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Keine |
 | Sites | [SPA-Editor](/help/implementing/developing/hybrid/introduction.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind:<br>– [Der universelle Editor](https://www.aem.live/docs/aem-authoring) für visuelle Bearbeitung.<br>– [Der Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) für formularbasierte Bearbeitung. |
 | [!DNL Sites] | [JavaScript-Anwendungs-API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java-Anwendungs-API](https://experienceleague.adobe.com/de/docs/experience-manager-htl/content/java-use-api) |
@@ -56,10 +57,10 @@ Die Funktionen in der folgenden Tabelle wurden schon als veraltet angekündigt, 
 | [!DNL Assets] | Hochladen von Assets direkt in [!DNL Experience Manager]. Siehe [Veraltete APIs zum Hochladen von Assets](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Verwenden Sie den [direkten binären Upload](/help/assets/add-assets.md). Weitere technische Daten finden Sie im Abschnitt zu den [APIs für den direkten Upload](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Bestimmte Workflow-Schritte &#x200B;](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) im `DAM Asset Update`-Workflow werden nicht unterstützt, darunter der Aufruf von Befehlszeilen-Tools wie [!DNL ImageMagick]. | [Asset-Microservices](/help/assets/asset-microservices-overview.md) bieten Ersatz für viele Workflows. Verwenden Sie für die benutzerdefinierte Verarbeitung [Nachbearbeitungs-Workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg-Transcodierung von Videos. | Verwenden Sie für die Generierung von FFmpeg-Miniaturen [Asset-Microservices](/help/assets/asset-microservices-overview.md). Verwenden Sie für die von FFmpeg-Transcodierung [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation). |
-| [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | Benutzeroberfläche für die Strukturreplikation auf der Registerkarte „Verteilung“ des Replikationsagenten (nach dem 30. September 2021 entfernt) | Ansätze zum [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder zum [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation). |
+| [!DNL Foundation] | Die Registerkarte „Verteilen“ im Admin-Bildschirm des Replikationsagenten und die Replikations-API können keine Inhaltspakete replizieren, die größer als 10 MB sind. | [Verwalten der Veröffentlichung](/help/operations/replication.md#manage-publication) oder [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation) |
 | [!DNL Foundation] | Integrationen mit Anmeldedaten, die aus Adobe Developer Console-Projekten generiert wurden, verlieren schrittweise die Unterstützung für Service-Konto-Anmeldedaten (JWT). Seit dem 1. Mai 2024 können in Adobe Developer Console keine neuen Anmeldedaten für Service-Konten (JWT) mehr erstellt werden. Vorhandene Anmeldedaten für Service-Konten (JWT) bleiben bis zum 1. Januar 2025 für konfigurierte Integrationen nutzbar. Danach funktionieren sie nicht mehr, sodass Kundinnen und Kunden zu OAuth-Server-zu-Server-Anmeldedaten migrieren müssen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrieren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) Sie zu OAuth-Server-zu-Server-Anmeldedaten. |
-| [!DNL Foundation] | Der Workflow für die Veröffentlichung der Inhaltsstruktur und der zugehörige Workflow-Schritt für die Veröffentlichung der Inhaltsstruktur, der für die Replikationen von Inhaltshierarchien verwendet wurde. | Verwenden Sie den [Workflow-Schritt für die Strukturaktivierung](/help/operations/replication.md#tree-activation), der leistungsfähiger ist. |
+| [!DNL Foundation] | Der Workflow für die Veröffentlichung der Inhaltsstruktur und der zugehörige Workflow-Schritt für die Veröffentlichung der Inhaltsstruktur, der für die Replikationen von Inhaltshierarchien verwendet wurde. | Verwenden Sie den [Workflow-Schritt für die Strukturaktivierung](/help/operations/tree-replication-workflows.md#tree-activation), der leistungsfähiger ist. |
 | [!DNL Foundation] | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. | Adobe empfiehlt Kundinnen und Kunden, für ihre Implementierung zum Google Closure Compiler (GCC) zu wechseln. |
 | [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration |
 

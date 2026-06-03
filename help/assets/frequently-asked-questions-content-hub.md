@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 65e10efffcc5430ab2f7cd08ba795dc9f96cd41a
+source-git-commit: 72c26630e23af16ad5ece3ab1d07f7f31bf67270
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1706'
 ht-degree: 66%
 
 ---
@@ -154,7 +154,7 @@ Wenn Sie AEM Assets Content Hub für Produktionsumgebungen und andere untere Umg
 
 Um eine Miniaturansicht für Dateitypen wie ZIP-Dateien in AEM Assets Content Hub bereitzustellen, können Sie eine Ausgabedarstellung mit dem Namen `cq5dam.<label>.<width>.<height>.<ext>` zum Stammverzeichnis des Pfads hinzufügen, in dem die ZIP-Datei in der Authoring-Umgebung von AEM as a Cloud Service verfügbar ist. Beispiel: `cq5dam.preview.500.500.png`.
 
-Content Hub wählt die Ausgabedarstellung mit der größten Breite unter allen `cq5dam.*` Ausgabedarstellungen aus. Eine benutzerdefinierte Ausgabedarstellung wird nur gewonnen, wenn ihre kodierte Breite vorhandene automatisch generierte Ausgabedarstellungen überschreitet.
+Content Hub wählt die Ausgabedarstellung mit der größten Breite unter allen `cq5dam.*` Ausgabedarstellungen aus. Eine benutzerdefinierte Ausgabedarstellung wird nur dann als Miniaturvorschau angezeigt, wenn ihre kodierte Breite vorhandene automatisch generierte Ausgabedarstellungen überschreitet.
 
 Das Bild, das Sie als Ausgabedarstellung hinzufügen:
 

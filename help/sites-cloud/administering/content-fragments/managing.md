@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '3342'
-ht-degree: 86%
+source-wordcount: '3412'
+ht-degree: 80%
 
 ---
 
@@ -23,6 +23,7 @@ Erfahren Sie, wie Sie Ihre **Inhaltsfragmente** in Adobe Experience Manager (AEM
 >
 >* [Verwalten von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 >* [Anzeigen und Verwalten von Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+>* [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 
 Nachdem Sie Ihre [Inhaltsfragmentmodelle](#creating-a-content-model) definiert haben, können Sie diese für Folgendes verwenden:
 
@@ -64,9 +65,9 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
    * Hier können Sie die Ordnerstruktur ein- oder ausblenden
    * Sie können einen bestimmten Zweig des Baums auswählen
    * Die Größe kann geändert werden, um verschachtelte Ordner anzuzeigen
-   * As well as Content Fragments, you can:
-      * View [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
-      * Create, and manage, [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+   * Neben Inhaltsfragmenten haben Sie folgende Möglichkeiten:
+      * Anzeigen [Inhaltsfragmentmodelle](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) oder [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); Sie können auch Links zu den Bedienfeldern komprimieren oder erweitern
+      * Erstellen und Verwalten von [Launches für Inhaltsfragmente](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * Das Haupt-/rechte Bedienfeld – von hier aus können Sie:
    * Eine Liste aller Inhaltsfragmente im ausgewählten Zweig des Baums anzeigen:
       * Es werden die Inhaltsfragmente aus dem ausgewählten Ordner und dazu alle untergeordneten Ordner angezeigt.
@@ -81,7 +82,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
          * Auswählen eines Wertes in der Spalte, der sofort als Filter angewendet wird
          * „Schnelles Filtern“ wird nur für die Spalten **Modell**, **Status**, **Geändert von**, **Tags** und **Veröffentlicht von** unterstützt.
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
-         * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
+         * Sortieren - Wählen Sie die entsprechende Aktion für aufsteigende oder absteigende Darstellung aus.
 Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
          * Ändern Sie die Größe der Spalte – entweder mithilfe der Aktion oder der Breitenregler
       * Ein oder mehrere Fragmente für weitere [Aktionen](#actions-selected-content-fragment) wählen
@@ -94,8 +95,8 @@ Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist
 Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von Informationen zu Ihren Inhaltsfragmenten. Einige Elemente bieten auch direkte Links zu weiteren Aktionen und/oder Informationen:
 
 * **Titel**
-   * A padlock icon indicates that the fragment is [checked out](#check-out-and-check-in) and locked by one user; selecting the padlock icon shows details of the account that has checked out the fragment.
-   * The information (i) icon provides quick access to additional, fragment specific, information in the right panel.
+   * Ein Schlosssymbol gibt an, dass das Fragment [ausgecheckt](#check-out-and-check-in) und von einem Benutzer gesperrt wurde. Wenn Sie das Schlosssymbol auswählen, werden Details zu dem Konto angezeigt, das das Fragment ausgecheckt hat.
+   * Das Informationssymbol (i) bietet schnellen Zugriff auf zusätzliche, fragmentspezifische Informationen und Konfigurationsoptionen im rechten Bedienfeld.
 * **Name**
    * Stellt einen Link zum Öffnen des Fragments im Editor bereit.
 * **Modell**
@@ -149,7 +150,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
      ![Inhaltsfragmentkonsole – Symbol „Workflows“](assets/cf-managing-console-workflows-icon.png)
 
-     So öffnen Sie ein Dialogfeld mit detaillierten Informationen zu Workflows (früheren und aktuellen) für das Fragment.:
+     So öffnen Sie ein Dialogfeld mit detaillierten Informationen zu den Workflows (frühere und aktuelle) für das Fragment:
 
      ![Inhaltsfragmentkonsole – Dialogfeld „Workflows“](assets/cf-managing-console-workflows-dialog.png)
 
@@ -172,7 +173,7 @@ Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhalt
 
   >[!NOTE]
   >
-  >Die **Assets-Konsole** wird verwendet, um auf Assets wie Bilder und Videos zuzugreifen. Auf die Konsole kann wie folgt zugegriffen werden:
+  >Die **Assets-Konsole** wird verwendet, um auf Assets wie Bilder und Videos zuzugreifen.  Auf die Konsole kann wie folgt zugegriffen werden:
   >
   >* mithilfe des Links **In Assets öffnen** (in der Konsole „Inhaltsfragmente“)
   >* direkt über das globale **Navigationsfenster**
@@ -188,9 +189,10 @@ Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, d
 * **[Tags verwalten](#manage-tags)**
 * **[Kopieren](#copy-a-content-fragment)**
 * **[Ersetzen](#find-and-replace)**
+* **[Vorschau](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
 * **Verschieben**
 * **Umbenennen**
-* **[Check Out and Check In](#check-out-and-check-in)**
+* **[Auschecken und Einchecken](#check-out-and-check-in)**
 * **[Löschen](#deleting-a-fragment)** (nur für nicht veröffentlichte Fragmente verfügbar)
 
 <!-- CQDOC-23473 - feature is beta, activate when GA -->
@@ -245,16 +247,16 @@ So erstellen Sie ein Inhaltsfragment:
 
 Während seines Bestehens kann ein Inhaltsfragment mehrere Status haben, wie in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) und dem [Inhaltsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) gezeigt:
 
-* **Neu** (Grau)
-Im Inhaltsfragmenteditor wurde ein neues Inhaltsfragment erstellt, es hat jedoch keinen Inhalt und wurde nie bearbeitet oder geöffnet.
-* **Entwurf** (Blau)
-Das (neue) Inhaltsfragment wurde im Inhaltsfragmenteditor von jemandem bearbeitet oder geöffnet, es wurde jedoch noch nicht veröffentlicht.
-* **Veröffentlicht** (Grün)
+* **Neu** (grau)
+Ein neues Inhaltsfragment wurde erstellt, hat jedoch keinen Inhalt, da es nie im Inhaltsfragment-Editor bearbeitet oder geöffnet wurde.
+* **Entwurf** (blau)
+Das (neue) Inhaltsfragment wurde im Inhaltsfragment-Editor bearbeitet oder geöffnet, es wurde jedoch noch nicht veröffentlicht.
+* **Veröffentlicht** (grün)
 Das Inhaltsfragment wurde veröffentlicht.
-* **Geändert** (Orange)
+* **Geändert** (orange)
 Das Inhaltsfragment wurde nach der Veröffentlichung bearbeitet (aber vor der Veröffentlichung der Änderung).
-* **Veröffentlichung rückgängig gemacht** (Rot)
-Die Veröffentlichung des Inhaltsfragments wurde rückgängig gemacht.
+* **Unveröffentlicht** (rot)
+Die Veröffentlichung des Inhaltsfragments wurde aufgehoben.
 
 ## Bearbeiten des Inhalts Ihres Fragments (und von Varianten) {#editing-the-content-of-your-fragment}
 
@@ -283,9 +285,9 @@ Durch **Kopieren** wird eine Kopie des ausgewählten Fragments am gleichen Speic
      Die [Speicherorte, in die die referenzierten Fragmente kopiert werden](#locations-that-the-referenced-fragments-are-copied-to) hängen von der ausgewählten Option ab:
 
       * **In den ausgewählten Ordner kopieren**
-Wenn diese Option ausgewählt ist, werden die referenzierten Fragmente an denselben Speicherort kopiert wie das ursprünglich ausgewählte Fragment.
+Wenn diese Option aktiviert ist, werden die referenzierten Fragmente an dieselbe Position kopiert wie das ursprünglich ausgewählte Fragment.
 
-      * **An ihre ursprünglichen Speicherorte kopieren**
+      * **Kopie an ihren ursprünglichen Speicherort**
 Die referenzierten Fragmente werden an denselben Speicherort wie das ursprünglich referenzierte Fragment kopiert. Dies ist die Standardeinstellung und wird verwendet, wenn keine Option ausgewählt ist.
 
 * Die Kopie des ausgewählten Fragments verweist auf die Kopien der referenzierten Fragmente.
@@ -397,19 +399,35 @@ Sie können die Eigenschaften (Metadaten) eines Fragments mithilfe der Registerk
 
 ## Veröffentlichen und Anzeigen von Fragmenten in der Vorschau {#publishing-and-previewing-a-fragment}
 
-Sie können Ihre Inhaltsfragmente hier veröffentlichen:
+Sie haben folgende Möglichkeiten:
 
-* der **[Publishing-Service](/help/headless/deployment/architecture.md)** – für uneingeschränkten öffentlichen Zugriff
+* Vorschau Ihrer Inhaltsfragmente:
 
-* the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
+   * mit [Visualisierungsvorlagen](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
-  >[!CAUTION]
-  >
-  >Das Veröffentlichen von Inhaltsfragmenten im **Vorschau-Service** ist nur über die Inhaltsfragmentkonsole mithilfe der Aktion **Veröffentlichen** verfügbar.
+     <!-- CQDOC-23232 - remove when GA -->
 
-  >[!NOTE]
-  >
-  >Weitere Informationen zu den Vorschauumgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+     >[!NOTE]
+     >
+     >Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
+     >
+     >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+   * In der [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)-Instanz
+
+* Veröffentlichen Sie Ihre Inhaltsfragmente in:
+
+   * der **[Publishing-Service](/help/headless/deployment/architecture.md)** – für uneingeschränkten öffentlichen Zugriff
+
+   * **[Vorschau-Service](/help/headless/deployment/architecture.md)** - [Vorschau](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) des Inhalts vor der vollständigen Verfügbarkeit
+
+     >[!CAUTION]
+     >
+     >Das Veröffentlichen von Inhaltsfragmenten im **Vorschau-Service** ist nur über die Inhaltsfragmentkonsole mithilfe der Aktion **Veröffentlichen** verfügbar.
+
+     >[!NOTE]
+     >
+     >Weitere Informationen zu den Vorschauumgebungen finden Sie unter [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
@@ -419,7 +437,7 @@ Sie können Ihre Inhaltsfragmente hier veröffentlichen:
 
 >[!TIP]
 >
->Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
@@ -494,63 +512,63 @@ Vor dem Ersetzen werden die Validierungskriterien überprüft und Sie werden üb
 
 ![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
 
-## Check Out and Check In {#check-out-and-check-in}
+## Auschecken und Einchecken {#check-out-and-check-in}
 
-AEM lets you:
+AEM bietet Ihnen folgende Möglichkeiten:
 
-* [check out](#check-out-a-content-fragment) a Content Fragment, preventing other users from working on the fragment
-* [check in](#check-in-a-content-fragment) Content Fragments, allowing other users to resume working with the fragment
+* [Auschecken](#check-out-a-content-fragment) eines Inhaltsfragments, das andere Benutzer daran hindert, am Fragment zu arbeiten
+* [Einchecken](#check-in-a-content-fragment) von Inhaltsfragmenten, damit andere Benutzer die Arbeit mit dem Fragment fortsetzen können
 
-When you check out a fragment it is locked (`jcr:lock`). A padlock icon in the **Title** column indicates a locked fragment. Selecting the padlock icon provides details of the account that has checked out the fragment.
+Beim Auschecken eines Fragments wird es gesperrt (`jcr:lock`). Ein Schlosssymbol in der Spalte **Titel** zeigt ein gesperrtes Fragment an. Wenn Sie das Vorhängeschloss-Symbol auswählen, erhalten Sie Details zu dem Konto, das das Fragment ausgecheckt hat.
 
-You can edit, publish, unpublish, move, or delete a locked fragment. Other users cannot perform any of these actions on the fragment until you check in the fragment; though they can still change the metadata for the locked fragment.
+Sie können gesperrte Fragmente bearbeiten, veröffentlichen, die Veröffentlichung aufheben, verschieben oder löschen. Andere Benutzer können diese Aktionen erst dann für das Fragment ausführen, wenn Sie das Fragment eingecheckt haben. Sie können jedoch weiterhin die Metadaten für das gesperrte Fragment ändern.
 
-This functionality helps prevent conflicts when multiple users collaborate on editing fragments.
+Mit dieser Funktion können Konflikte verhindert werden, wenn mehrere Benutzende beim Bearbeiten von Fragmenten zusammenarbeiten.
 
 >[!NOTE]
 >
->To be able to check out/in a Content Fragment, you must have write access.
+>Um ein Inhaltsfragment ein- oder auschecken zu können, benötigen Sie Schreibzugriff.
 
 >[!CAUTION]
 >
->It is possible to delete a folder that contains a checked out Content Fragment.
+>Es ist möglich, einen Ordner zu löschen, der ein ausgechecktes Inhaltsfragment enthält.
 >
->Before deleting a folder, ensure that it does not contain any Content Fragments (or other digital assets) that are checked-out by users.
+>Stellen Sie vor dem Löschen eines Ordners sicher, dass er keine Inhaltsfragmente (oder andere digitale Assets) enthält, die von Benutzenden ausgecheckt wurden.
 
 >[!NOTE]
 >
->As Content Fragments are stored internally as Assets, this functionality is closely related to [Check-in and check-out files in Experience Manager DAM](/help/assets/check-out-and-submit-assets.md).
+>Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ &#x200B;](/help/assets/check-out-and-submit-assets.md).
 
-### Check Out a Content Fragment {#check-out-a-content-fragment}
+### Auschecken eines Inhaltsfragments {#check-out-a-content-fragment}
 
-To check a fragment out:
+So checken Sie ein Fragment aus:
 
-1. In the **Content Fragments** console navigate to the location of the Content Fragment.
+1. Navigieren **in der** „Inhaltsfragmente“ zum Speicherort des Inhaltsfragments.
 1. Wählen Sie das Fragment aus.
-1. Select **Check Out** from the toolbar.
-1. Confirm the **Check Out** action.
+1. Wählen **Auschecken** aus der Symbolleiste aus.
+1. Bestätigen Sie die Aktion **Auschecken** .
 
-   * A padlock icon in the **Title** column indicates that the fragment is locked and can only be edited by you.
-   * If another user opens the fragment for editing, they see a message stating that they are in read-only mode.
+   * Ein Schlosssymbol in der Spalte **Titel** gibt an, dass das Fragment gesperrt ist und nur von Ihnen bearbeitet werden kann.
+   * Wenn ein(e) andere(r) Benutzende(r) das Fragment zur Bearbeitung öffnet, wird eine Meldung angezeigt, die besagt, dass er/sie sich im schreibgeschützten Modus befindet.
 
-### Check In a Content Fragment {#check-in-a-content-fragment}
+### Einchecken eines Inhaltsfragments {#check-in-a-content-fragment}
 
-To check a fragment in:
+So checken Sie ein Fragment in aus:
 
-1. In the **Content Fragments** console navigate to the location of the Content Fragment.
+1. Navigieren **in der** „Inhaltsfragmente“ zum Speicherort des Inhaltsfragments.
 1. Wählen Sie das Fragment aus.
-1. Select **Check In** from the toolbar.
-1. Confirm the **Check In** action.
+1. Wählen **Einchecken** in der Symbolleiste aus.
+1. Bestätigen Sie die Aktion **Einchecken**.
 
-### Forced (Administrator) Check In {#forced-adminstrator-check-in}
+### Erzwungenes Einchecken (Administrator) {#forced-adminstrator-check-in}
 
-It can happen that the user who has checked out a Content Fragment is unavailable to check in the fragment.
+Es kann vorkommen, dass der Benutzer, der ein Inhaltsfragment ausgecheckt hat, nicht zum Einchecken des Fragments verfügbar ist.
 
-In such situations an administrator can perform the **Check In** operation.
+In solchen Fällen kann ein Administrator den Vorgang **Einchecken** ausführen.
 
 >[!NOTE]
 >
->See also Assets [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
+>Siehe auch Assets [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Löschen von Fragmenten {#deleting-a-fragment}
 

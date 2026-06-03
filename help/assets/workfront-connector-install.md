@@ -5,7 +5,7 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 7f10146a18627e1d18747c1675b730c281cf7425
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 99%
@@ -51,10 +51,7 @@ Führen Sie vor der Installation des Connectors die folgenden Vorinstallationssc
    >
    >* Um die IP-Adresse Ihres Programms zu finden, öffnen Sie ein Terminal-Fenster und führen Sie einen Befehl aus wie z. B.:
    >
-   >    ```
-   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
-   >    ```
+   >  `>dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com`
 
 1. Stellen Sie sicher, dass die folgenden Überlagerungen nicht im [!DNL Experience Manager]-Repository vorhanden sind. Wenn Sie bereits vorhandene Überlagerungen auf diesen Pfaden haben, müssen Sie entweder die Überlagerungen entfernen oder das Delta der Änderungen zwischen den beiden Pfaden zusammenführen:
 

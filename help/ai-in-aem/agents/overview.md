@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die in AEM verfügbaren Agents zur Beschleu
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: d47eebef32cbecfcd4490d16fff4277b1c7d390c
+source-git-commit: d773681c29a813d9781e0d7449a51eb66e2fbdb3
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 2%
@@ -18,7 +18,7 @@ Diese Agenten sind in Adobe Experience Manager (AEM) as a Cloud Service verfügb
 
 >[!IMPORTANT]
 >
->Die Agenten sind nur in AEM as a Cloud Service und Edge Delivery Services verfügbar.
+>* Die Agenten sind nur in AEM as a Cloud Service und Edge Delivery Services verfügbar.
 >
 >* Agenten werden nach und nach für AEM 6.5 LTS auf Managed Services verfügbar sein. Kunden, die an unserem Co-Innovationsprogramm teilnehmen möchten, sollten sich an ihren Adobe Customer Success Engineer, Technical Account Manager oder Customer Service Manager wenden, um die Verfügbarkeit zu überprüfen.
 >* Agenten sind in AEM 6.5/AEM 6.5 LTS On-Premise nicht verfügbar.

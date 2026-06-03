@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit dem Experience Production Agent in AEM di
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 4%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
 
@@ -22,6 +22,7 @@ Der Agent bietet die folgenden Aufträge:
 
 * [Inhaltsaktualisierung](#content-update)
 * [Content-Erstellung](#content-create)
+* [Auftrag „Figma zu visuellen Inhaltsfragmenten“](#figma-to-visual-content-fragments)
 * [Formularerstellung](#form-creation)
 * [Erstellung von Kommunikationen](#communications-creation)
 
@@ -42,6 +43,18 @@ Der Auftrag [Content erstellen](/help/ai-in-aem/agents/brand-experience/experien
 >[!NOTE]
 >
 >Der Auftrag zur Inhaltserstellung ist derzeit eingeschränkt verfügbar.
+>
+>Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+### Auftrag „Figma zu visuellen Inhaltsfragmenten“ {#figma-to-visual-content-fragments}
+
+Der Auftrag [Figma zu visuellen Inhaltsfragmenten](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importiert Figma-Designs in AEM-Inhaltsmodelle, Inhaltsfragmente und HTML-Vorlagen.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>Der Auftrag Figma zu visuellen Inhaltsfragmenten ist derzeit eingeschränkt verfügbar.
 >
 >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 

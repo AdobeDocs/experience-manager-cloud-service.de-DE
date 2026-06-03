@@ -6,16 +6,16 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 96c3ac3494fb726b36d413703ed010ec84a3b3dd
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 98%
+source-wordcount: '297'
+ht-degree: 79%
 
 ---
 
 # Zugehörige Inhalte{#associated-content}
 
-Bei den Inhaltsfragmenten von Adobe Experience Manager (AEM) as a Cloud Service stellt die zugehörige Inhaltsfunktion (verfügbar im Original-Editor) die Verbindung her, sodass Assets optional mit dem Fragment verwendet werden können. Dies bietet Ihnen mehr Flexibilität, wenn es darum geht, [eine Reihe von Assets bereitzustellen, auf die bei der Verwendung des Inhaltsfragments zugegriffen werden soll](/help/assets/content-fragments/content-fragments.md#using-associated-content). Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert. Diese Funktion kann sowohl für Ihre Headless Content-Bereitstellung als auch für die Seitenbearbeitung verwendet werden.
+Bei den Inhaltsfragmenten von Adobe Experience Manager (AEM) as a Cloud Service stellt die zugehörige Inhaltsfunktion (verfügbar im Original-Editor) die Verbindung her, sodass Assets optional mit dem Fragment verwendet werden können. Dies bietet Ihnen mehr Flexibilität, wenn es darum geht, [eine Reihe von Assets bereitzustellen, auf die bei der Verwendung des Inhaltsfragments zugegriffen werden soll](/help/assets/content-fragments/content-fragments.md#using-associated-content). Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert. Diese Funktion kann sowohl für die Bereitstellung von Headless-Inhalten als auch für die Seitenbearbeitung verwendet werden.
 
 >[!NOTE]
 >
@@ -29,13 +29,13 @@ Bei den Inhaltsfragmenten von Adobe Experience Manager (AEM) as a Cloud Service 
 >
 >Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
 
-Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
+Um die Verknüpfung vorzunehmen, müssen Sie zunächst [Ihre Medien-Assets zu einer Sammlung hinzufügen](/help/assets/manage-collections.md). Danach haben Sie folgende Möglichkeiten:
 
 1. Öffnen Sie das Fragment und wählen Sie im seitlichen Bedienfeld **Zugehörige Inhalte** aus.
 
    ![Zugehörige Inhalte](assets/cfm-assoc-content-01.png)
 
-1. Je nachdem, ob bereits Sammlungen zugeordnet wurden oder nicht, wählen Sie eine der folgenden Optionen aus:
+1. Je nachdem, ob bereits Sammlungen verknüpft wurden oder nicht, wählen Sie eine der folgenden Optionen aus:
 
    * **Inhalt verknüpfen**: Die erste verknüpfte Sammlung
    * **Sammlung verknüpfen**: Zugeordnete Sammlungen sind bereits konfiguriert
@@ -52,7 +52,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
 ## Bearbeiten zugehöriger Inhalte {#editing-associated-content}
 
-Nachdem Sie eine Sammlung zugewiesen haben, können Sie Folgendes tun:
+Nachdem Sie eine Sammlung zugeordnet haben, können Sie:
 
 * Die Verknüpfung **aufheben**.
 * **Assets zur Sammlung hinzufügen**.

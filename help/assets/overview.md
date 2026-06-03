@@ -3,7 +3,7 @@ title: Assets as a Cloud Service für Digital Asset Management in AEM
 description: Assets as a Cloud Service für Digital Asset Management in AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
 workflow-type: tm+mt
 source-wordcount: '6014'
 ht-degree: 81%
@@ -1018,7 +1018,7 @@ Adobe bietet robuste DAM-Lösungen (Digital Asset Management), mit denen Sie Ihr
 
 * **Assets-Ansicht**: Das einfache Asset-Management-Erlebnis von Adobe zum Speichern, Verwalten, Entdecken und Verwenden digitaler Assets. Es handelt sich um eine optimierte Benutzeroberfläche mit den wesentlichen Digital Asset Management-Funktionen. Entwickelt für Benutzerinnen und Benutzer eines einfachen DAM mit Schwerpunkt auf Upload, Metadatenverwaltung, Suche, Download und Freigabe.
 
-![add-tags](assets/newui-overview.svg)
+![add-tags](assets/newui-overview.png)
 
 Benutzerinnen und Benutzer mit Zugriff auf die Admin-Ansicht können auch auf die Asset-Ansicht zugreifen. Die vereinfachte Benutzeroberfläche der Assets-Ansicht erleichtert das Verwalten, Erkennen und Verteilen Ihrer digitalen Assets. Ein breites Spektrum von Benutzerinnen und Benutzern aus verschiedenen Funktionen, einschließlich Kreativ-, Marketing- und Branchen-Teams, kann an Assets zusammenarbeiten und auf die richtigen, genehmigten Assets zugreifen, wo und wann immer sie benötigt werden. Viele gelegentliche DAM-Benutzerinnen und -Benutzer bevorzugen die Asset-Ansicht, da sie nur eine Teilmenge der Funktionen enthält. Das Erlebnis richtet sich an Kreative, Nutzerinnen und Nutzer von schreibgeschützten Assets und einfache DAM-Benutzerinnen und -Benutzer.
 

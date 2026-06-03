@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 96%
+source-wordcount: '2932'
+ht-degree: 93%
 
 ---
 
@@ -544,7 +544,25 @@ Um eine produkt- und kontextbezogene Zusammenarbeit zu ermöglichen, stellt die 
 
 ## Vorschau des Fragments anzeigen {#preview-content-fragment}
 
-Der Inhaltsfragmenteditor bietet Autorinnen und Autoren die Möglichkeit, die Vorschau von Bearbeitungen in einer externen Frontend-Anwendung anzuzeigen. Dazu muss das **[Standard-URL-Muster](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** definiert sein, um die Schaltfläche **Vorschau** in der oberen Symbolleiste des Editors zu aktivieren. Sie können diese Schaltfläche auswählen, um die externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten.
+Der Inhaltsfragment-Editor bietet Autorinnen und Autoren zwei Optionen für die Vorschau ihrer Fragmente.
+
+Beide Optionen sind über die Option **Vorschau** in der oberen Symbolleiste verfügbar:
+
+* **Anwendung**
+
+   * Wählen Sie diese Option, um die [externe Anwendung (auf einer separaten Registerkarte) zum Rendern des Inhaltsfragments zu starten](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-application).
+
+* **Vorlage**
+
+   * Mit dieser Option können Sie eine Vorschau Ihres Inhaltsfragments mit **[Visualisierungsvorlagen (HTML))](#preview-with-visualization-html-templates)**.
+
+     <!-- CQDOC-23232 - remove when GA -->
+
+     >[!NOTE]
+     >
+     >Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
+     >
+     >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Veröffentlichen Ihres Fragments {#publish-content-fragment}
 

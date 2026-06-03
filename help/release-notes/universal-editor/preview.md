@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: a18a1d09003ef646356abcdd2f37b46616a708a1
+source-git-commit: e9b972bcc2c1570ecfbce09550e4df143e2b64a8
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,6 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 >
 >Der Inhalt der aktuellen Version sowie das Veröffentlichungsdatum können sich ändern.
 
-## Künftige Funktionen {#upcoming-features}
-
-* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([&#x200B; Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
-   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
-   * Die Schaltfläche wird nur angezeigt, wenn die Remote[Seite über eine (Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` verfügt und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
-
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Die standardmäßige Hintergrundfarbe der Arbeitsfläche für die Bearbeitung ist jetzt weiß (#FFFFFF), wenn das Programm keine eigene Hintergrundfarbe festlegt.
-
+* Es wurde ein Problem behoben, bei dem durch Ändern des ausgewählten Textes von *Überschrift* zu *Code* im Rich-Text-Editor die Formatierung auf *Absatz* zurückgesetzt werden konnte, anstatt den ausgewählten Code-Stil beizubehalten.

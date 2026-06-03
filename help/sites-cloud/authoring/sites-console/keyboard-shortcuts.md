@@ -6,9 +6,9 @@ exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5c8054e9a4f0bbcc2a6fce2fba70403c1f4268d8
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '389'
 ht-degree: 98%
 
 ---
@@ -29,7 +29,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Assets“
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-cloud/authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-cloud/authoring/basic-handling.md#rail-selector) |
-|  | ``` ` ``` | Ausblenden der Schiene |
+|  | &grave; | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |
