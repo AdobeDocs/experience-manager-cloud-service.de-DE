@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Service-Integrationen aufgeführt, die Adobe f
 
 | Name wie in Admin Console angezeigt | Funktion | Verwendet von | Erteilte Berechtigungen | Standardmäßig aktiviert |
 |---|---|---|---|---|
-| **AEM Managed CDN-Integration** | Ermöglicht es dem LLM Optimizer-Service, Ihr in AEM as a Cloud Service verwaltetes CDN (**-Traffic-Routing-Regeln** in Ihrem Namen zu aktualisieren, damit KI- und Agent-Crawler (wie ChatGPT, Perplexity und Claude) ohne manuelle CDN-Änderungen durch Ihr Team an LLM Optimizer-optimierte Ursprünge weitergeleitet werden können. | **LLM Optimizer** über die Funktion [Bei Edge optimieren](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Cloud Manager **Bereitstellungs-Manager** Rolle | Ja |
+| **AEM Managed CDN-Integration** | Ermöglicht es dem LLM Optimizer-Service, Ihr in AEM as a Cloud Service verwaltetes CDN (**-Traffic-Routing-Regeln** in Ihrem Namen zu aktualisieren, damit KI- und Agent-Crawler (wie ChatGPT, Perplexity und Claude) ohne manuelle CDN-Änderungen durch Ihr Team an LLM Optimizer-optimierte Ursprünge weitergeleitet werden können. | **LLM Optimizer** über die Funktion [Bei Edge optimieren](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview) | Cloud Manager **Bereitstellungs-Manager** Rolle | Ja |
 
 Der folgende Screenshot ist ein Beispiel für die in der obigen Tabelle **Integration des von AEM verwalteten CDN.**
 
