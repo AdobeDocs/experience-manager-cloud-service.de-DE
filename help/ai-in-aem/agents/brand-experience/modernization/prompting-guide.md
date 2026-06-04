@@ -4,7 +4,7 @@ description: Dieses Handbuch enthält Tipps für eine effektive Eingabeaufforder
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 628d1db0be64205eab9b9992020c1b27e233b9b6
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '3240'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Verwenden Sie diese Eingabeaufforderung, wenn Sie Inhalte von einer bestehenden 
 
 ### Site-Katalog {#site-catalog}
 
-Verwenden Sie diese Eingabeaufforderung, um eine vorhandene Website zu analysieren, um deren Skalierung, Vorlagen und Blockvarianten zu verstehen, bevor Sie eine Migration beginnen. Die Ergebnisse können für Massenimporte [&#x200B; werden](#bulk-import)
+Verwenden Sie diese Eingabeaufforderung, um eine vorhandene Website zu analysieren, um deren Skalierung, Vorlagen und Blockvarianten zu verstehen, bevor Sie eine Migration beginnen. Die Ergebnisse können für Massenimporte [ werden](#bulk-import)
 
 #### Beispiel-Eingabeaufforderungen {#example-prompts-site-catalog}
 
@@ -488,3 +488,4 @@ Verwenden Sie diese Eingabeaufforderung, um Probleme mit Blöcken, Bildern, CSS 
 
 @gwalt, is the additional content in the prompting guide wiki ready to be added here?
 -->
+

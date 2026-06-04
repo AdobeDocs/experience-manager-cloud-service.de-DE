@@ -3,7 +3,7 @@ title: Site Catalog SKILL
 description: Erfahren Sie, wie die Site-Katalog-Kenntnisse des Experience Modernisierungs-Agenten eine vorhandene Website automatisch analysieren, um die Migrationsplanung für Edge Delivery Services zu unterstützen.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: f035a0fdbc4fe275e2af4665ba6f25292924af0f
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Die Kenntnisse unterstützen Sie und Ihre Migration eines vorhandenen Projekts z
 
 ## Aufrufen {#invoking}
 
-[Verwenden &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/console.md) in der Experience Modernization Console eine natürliche Sprache, um den Agenten zum Katalogisieren einer Site aufzufordern. Im Folgenden finden Sie Beispielaufforderungen.
+[Verwenden ](/help/ai-in-aem/agents/brand-experience/modernization/console.md) in der Experience Modernization Console eine natürliche Sprache, um den Agenten zum Katalogisieren einer Site aufzufordern. Im Folgenden finden Sie Beispielaufforderungen.
 
 * `scope site https://www.example.com`
 * `site scope https://www.example.com`
@@ -136,3 +136,4 @@ Für die Katalogfertigkeit der Site gelten die folgenden Einschränkungen.
 * **Nur öffentliche Websites** - Das Ziel muss öffentlich zugänglich sein (keine Authentifizierung, VPN oder Firewall).
 * **Dynamische Inhalte werden nicht unterstützt** - Inhalte, für die eine Benutzerinteraktion im DOM erforderlich ist, werden möglicherweise nicht erfasst.
 * **Standard-URL-Limit von 1.000** - Die Deep-Analysis-Phase ist standardmäßig auf 1.000 URLs beschränkt, [die überschrieben werden können](#sampling) auf bis zu 4.000 URLs.
+
