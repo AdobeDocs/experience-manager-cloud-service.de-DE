@@ -3,7 +3,7 @@ title: Multi-Audio und mehrere Untertitel in Dynamic Media mit OpenAPI-Funktione
 description: Erfahren Sie, wie Sie mit OpenAPI-Funktionen in Adobe Experience Manager Assets mehrere Audiospuren und Untertitel für Video-Assets in Dynamic Media hinzufügen und verwalten können.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
-source-git-commit: 111fa1857261c71999088b2c061ae778115e5ef4
+source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 8%
@@ -42,11 +42,11 @@ Vergewissern Sie sich über Folgendes:
 So fügen Sie einem Video Audiospuren hinzu:
 
 1. Navigieren Sie zum hochgeladenen Video-Asset.
-2. Wählen Sie das Asset aus und klicken Sie auf **Eigenschaften**.
-3. Öffnen Sie die **Untertitel und Audiospuren**.
-4. Klicken Sie **Audiospuren hochladen**.
-5. Wählen Sie eine oder mehrere `.mp3` aus.
-6. Klicken Sie **Symbol** Zeichnen“ neben dem Dateinamen der Audiospur.
+1. Wählen Sie das Asset aus und klicken Sie auf **Eigenschaften**.
+1. Öffnen Sie die **Untertitel und Audiospuren**.
+1. Klicken Sie **Audiospuren hochladen**.
+1. Wählen Sie eine oder mehrere `.mp3` aus.
+1. Klicken Sie **Symbol** Zeichnen“ neben dem Dateinamen der Audiospur.
 
 Im Dialogfeld **Audiospur bearbeiten**:
 
@@ -58,8 +58,8 @@ Im Dialogfeld **Audiospur bearbeiten**:
 ![Dialogfeld „Audiospur“](/help/assets/assets/edit-audio1.png)
 
 1. Klicken Sie auf **Speichern**.
-2. Wiederholen Sie dies für weitere Audiospuren, falls erforderlich.
-3. Klicken Sie auf **Speichern und schließen**.
+1. Wiederholen Sie dies für weitere Audiospuren, falls erforderlich.
+1. Klicken Sie auf **Speichern und schließen**.
 
 >[!NOTE]
 >
@@ -72,10 +72,10 @@ Im Dialogfeld **Audiospur bearbeiten**:
 So fügen Sie Beschriftungen hinzu:
 
 1. Öffnen Sie die Seite **Eigenschaften**.
-2. Öffnen Sie **Registerkarte Untertitel und** Audiospuren“.
-3. Klicken Sie **Beschriftung erstellen** > **Dateien hochladen**.
-4. Wählen Sie eine oder mehrere `.vtt` aus.
-5. Klicken Sie **Zeichnen**-Symbol neben der Untertiteldatei.
+1. Öffnen Sie **Registerkarte Untertitel und** Audiospuren“.
+1. Klicken Sie **Beschriftung erstellen** > **Dateien hochladen**.
+1. Wählen Sie eine oder mehrere `.vtt` aus.
+1. Klicken Sie **Zeichnen**-Symbol neben der Untertiteldatei.
 
 ![Dialogfeld „Beschriftung hochladen“](/help/assets/assets/upload-caption.png)
 
@@ -112,16 +112,13 @@ Die Validierung hängt vom übergeordneten Video-Asset ab:
 Standardmäßig wird Originalaudio verwendet.
 
 1. Öffnen Sie **Untertitel und Audiospuren**.
-
-2. Audiospur auswählen.
-
-3. Klicken Sie **Als Standard festlegen**.
+1. Audiospur auswählen.
+1. Klicken Sie **Als Standard festlegen**.
 
    ![Als Standardaktion festlegen](/help/assets/assets/set-default.png)
 
-4. Klicken Sie auf **OK**.
-
-5. Klicken Sie auf **Speichern und schließen**.
+1. Klicken Sie auf **OK**.
+1. Klicken Sie auf **Speichern und schließen**.
 
 ## Vorschau von Audio und Untertiteln {#preview-audio-captions}
 
@@ -131,7 +128,7 @@ Nach der Verarbeitung:
 
    ![Videovorschau-Player](/help/assets/assets/preview-caption-audio.png)
 
-2. Verwenden von Player-Steuerelementen:
+1. Verwenden von Player-Steuerelementen:
 
    * Audiospuren wechseln
    * Beschriftungen aktivieren
@@ -139,23 +136,21 @@ Nach der Verarbeitung:
 ## Untertitel oder Audiodateien herunterladen {#download-tracks}
 
 1. Wählen Sie Untertitel oder Audiodatei aus.
-
-2. Klicken Sie auf **Herunterladen**.
+1. Klicken Sie auf **Herunterladen**.
 
    ![Aktion für Tracking herunterladen](/help/assets/assets/download-caption.png)
 
-3. Klicken Sie auf **Herunterladen**.
+1. Klicken Sie auf **Herunterladen**.
 
 Die ausgewählte Datei wird auf Ihr lokales System heruntergeladen.
 
 ## Untertitel oder Audiodateien löschen {#delete-tracks}
 
 1. Wählen Sie Untertitel oder Audiodatei aus.
-
-2. Klicken Sie auf **Löschen**.
+1. Klicken Sie auf **Löschen**.
 
    ![Track-Aktion löschen](/help/assets/assets/delete-caption.png)
 
-3. Klicken Sie auf **OK**.
+1. Klicken Sie auf **OK**.
 
 Aus dem Video extrahiertes Originalaudio kann nicht gelöscht werden.
