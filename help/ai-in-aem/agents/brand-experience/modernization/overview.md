@@ -4,9 +4,9 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
+source-git-commit: f2ab0a3d604ed4cd07ec8922ed331dfc37b45e5f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Erfahren Sie, wie der Experience Modernization Agent mithilfe von KI Websites in
 
 ## Einführung {#introduction}
 
-[Im Rahmen der Brand Experience Agent &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) der Experience Modernization Agent das Onboarding für Edge Delivery Services durch die Automatisierung von Website-Migrationen und die Einrichtung grundlegender Websites.
+[Im Rahmen der Brand Experience Agent ](/help/ai-in-aem/agents/brand-experience/overview.md) der Experience Modernization Agent das Onboarding für Edge Delivery Services durch die Automatisierung von Website-Migrationen und die Einrichtung grundlegender Websites.
 
 Es kombiniert [Site-Creation und Migration](#creation-migration) für anfängliches Onboarding von Websites und [Blockentwicklungsfunktionen](#block-development) um die Site-Erstellung und Migrations-Workflows zu unterstützen. Darüber hinaus bietet sie die [Experience Modernization Console](#console) als Web-basierte KI-unterstützte Entwicklungsumgebung, die Ihnen direkt zur Verfügung steht. Während Benutzer den Agenten direkt über diese Konsole betreiben können, behalten Entwickler die volle Kontrolle darüber, was ausgeliefert wird.
 
-Für komplexe Migrationen oder Migrationen mit hoher Priorität bietet Adobe das [Agent Outcome Engineer (AOE)-Bereitstellungsmodell, &#x200B;](#aoe-delivery) einen Engineering-geführten Service, der entwickelt wurde, um produktionsbereite Edge Delivery-Sites mithilfe des Experience Modernization Agent bereitzustellen.
+Für komplexe Migrationen oder Migrationen mit hoher Priorität bietet Adobe das [Agent Outcome Engineer (AOE)-Bereitstellungsmodell, ](#aoe-delivery) einen Engineering-geführten Service, der entwickelt wurde, um produktionsbereite Edge Delivery-Sites mithilfe des Experience Modernization Agent bereitzustellen.
 
 ## Vorteile {#benefits}
 
@@ -50,7 +50,7 @@ Zusätzlich zu Live-Site-Migrationen kann der Experience Modernization Agent Fig
 
 ### Umgestalten der Migration mithilfe von FIGMA-abgeleiteten Blöcken {#figma-redesign}
 
-Wenn Sie eine vorhandene Website in ein neu gestaltetes Erlebnis migrieren, [&#x200B; der Agent zunächst die neu gestaltete Blocksammlung aus Figma-Komponenten, &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) und führt dann die Site-Migration für die Live-Quell-Website durch und ordnet Quellinhalte in diese Figma-abgeleiteten Blöcke zu.
+Wenn Sie eine vorhandene Website in ein neu gestaltetes Erlebnis migrieren, [ der Agent zunächst die neu gestaltete Blocksammlung aus Figma-Komponenten, ](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) und führt dann die Site-Migration für die Live-Quell-Website durch und ordnet Quellinhalte in diese Figma-abgeleiteten Blöcke zu.
 
 * **Figma** ist die Zieldesign- und Blockbibliotheksquelle.
 * **Die Live-Website** bleibt die Inhaltsquelle.
@@ -58,7 +58,7 @@ Wenn Sie eine vorhandene Website in ein neu gestaltetes Erlebnis migrieren, [&#x
 
 ### Erstellen einer neuen Seite aus Figma {#figma-new-page}
 
-Wenn eine Seite nicht bereits auf einer Quell-Website vorhanden ist, generiert der Agent [eine neue Edge Delivery Services-Seite direkt aus einem Figma-Frame oder einer Figma-Seite, &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) Figma-Abschnitte vorhandenen Blöcken, Standardinhalten oder neuen Varianten zuordnet. Text und Assets stammen aus Figma.
+Wenn eine Seite nicht bereits auf einer Quell-Website vorhanden ist, generiert der Agent [eine neue Edge Delivery Services-Seite direkt aus einem Figma-Frame oder einer Figma-Seite, ](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) Figma-Abschnitte vorhandenen Blöcken, Standardinhalten oder neuen Varianten zuordnet. Text und Assets stammen aus Figma.
 
 Weitere Informationen zu diesen Workflows, zur Migration einzelner Figma-Blöcke und zu Eingabetipps finden Sie im [Eingabeaufforderung für den Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
 
@@ -84,12 +84,22 @@ Die Self-Service-Konsole zur Erlebnismodernisierung ist allgemein verfügbar. In
 
 Erste Schritte mit der Experience Modernization Console!
 
-* Wenn Sie Ihre Site durch die Erstellung von Dokumenten modernisieren möchten, [&#x200B; Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-* Wenn Sie Ihre Site durch das Authoring mit AEM modernisieren möchten, [&#x200B; Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+* Wenn Sie Ihre Site durch die Erstellung von Dokumenten modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* Wenn Sie Ihre Site durch das Authoring mit AEM modernisieren möchten, [ Sie hier (Erste Schritte)](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## Projektdokumentations-Kenntnisse {#project-documentation}
 
 Angesichts der zeitintensiven Natur von Projekt-Handovers kann [die Projektdokumentationsfertigkeit](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) nach Abschluss der Autoren- und Entwicklungsarbeiten automatisch eine umfassende Dokumentation erstellen.
+
+## Site Catalog SKILL {#site-catalog}
+
+Die Katalogfertigkeit der Site crawlen eine vorhandene Website, katalogisiert alle Seitenvorlagen und Blockvarianten, erfasst Screenshots jeder Vorlage und jedes Blocks und generiert ein interaktives HTML-Berichtspaket zur Überprüfung. Diese Kenntnisse sind nützlich für:
+
+* **Jeder, der ein Migrationsprojekt startet** um eine vollständige Bestandsaufnahme der Seitenlayouts, Blockvarianten, Gebietsschemata und Seiten pro Vorlage zu erhalten, bevor Code geschrieben wird, damit Teams die Komplexität frühzeitig genau planen und aufdecken können
+* **Teams, die Massenimporte durchführen** Um zu ermitteln, welche Seiten dasselbe Layout verwenden, importieren und perfektionieren Sie zuerst die repräsentativen Seiten manuell und importieren dann alle verbleibenden Seiten für diese Vorlage per Massenimport
+* **Projektleiter und Stakeholder** um den Umfang der Bemühungen zu verstehen
+
+Bitte lesen Sie das Dokument [Site-Katalog Kenntnisse](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md) für weitere Informationen.
 
 ## Versand durch Agent Outcome Engineer (AOE) {#aoe-delivery}
 

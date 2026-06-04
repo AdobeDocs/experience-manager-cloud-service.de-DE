@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b7e4bc576d13b39f7d8a8d8f942e9a16a8ada9a
+source-git-commit: 44aacc1578fc1288d1d07e06ac2307dea31ec90a
 workflow-type: tm+mt
-source-wordcount: '7474'
+source-wordcount: '7480'
 ht-degree: 85%
 
 ---
@@ -762,6 +762,7 @@ ht-degree: 85%
          + [Optimieren von Bildern](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
          + [Vanity-URLs erstellen](/help/assets/vanity-urls.md)
          + [Cache-Verwaltung](/help/assets/cache-management-dynamic-media-open-api.md)
+         + [Intelligentes Zuschneiden von Videos](/help/assets/video-smart-crops.md)
          + [Multi-Audio und Multi-Untertitel](/help/assets/multi-audio-multi-caption.md)
          + [Häufig gestellte Fragen](/help/assets/dynamic-media-open-apis-faqs.md)
    + Arbeiten mit der Assets-Ansicht {#assets-view}
@@ -1157,6 +1158,7 @@ ht-degree: 85%
             + [Modernisierungs-Konsole](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [Anleitung zur Eingabeaufforderung](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
             + [Projektdokumentations-Kenntnisse](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+            + [Site Catalog SKILL](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
             + [AOE-Bereitstellung](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [Entwicklungsagent](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Inhaltsratgeber-Agent {#content-advisor}
@@ -1336,7 +1338,7 @@ ht-degree: 85%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
