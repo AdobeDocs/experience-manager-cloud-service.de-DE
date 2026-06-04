@@ -1,46 +1,67 @@
 ---
-title: Versionshinweise für Cloud Manager 2026.5.0
-description: Erfahren Sie mehr über die Version Cloud Manager 2026.5.0 in Adobe Experience Manager as a Cloud Service.
+title: Versionshinweise für Cloud Manager 2026.6.0
+description: Erfahren Sie mehr über die Version Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 61101046e4383acb534b04f467bef1b0313c4ef5
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 10%
+source-wordcount: '726'
+ht-degree: 4%
 
 ---
 
-# Versionshinweise für Cloud Manager 2026.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Versionshinweise für Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
+<!-- 
+https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
+-->
 
-Erfahren Sie mehr über die Version Cloud Manager 2026.5.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Erfahren Sie mehr über die Version Cloud Manager 2026.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 Hier finden Sie die [aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Veröffentlichungsdaten {#release-date}
 
-Cloud Manager 2026.5.0 wurde in AEM as a Cloud Service am Donnerstag, 7. Mai 2026 veröffentlicht.
+Cloud Manager 2026.6.0 wurde in AEM as a Cloud Service am Donnerstag, 4. Juni 2026 veröffentlicht.
 
-Die nächste geplante Version ist Donnerstag, der 4. Juni 2026.
+Die nächste geplante Version ist Donnerstag, der 9. Juli 2026.
 
 
 ## Neue Funktionen - Cloud Manager {#cloud-manager-whats-new}
 
-* **Soft Delete für ein Produktionsprogramm**
+* **Self-Service für kundenverwaltete Schlüssel (CMK)**
+Kunden können jetzt kundenverwaltete Schlüssel direkt in Cloud Manager konfigurieren, ohne dass der Adobe-Support einbezogen werden muss. Eine neue CMK-Option ist während der Programmerstellung in den Einstellungen zur Programmbearbeitung und auf der Seite „Umgebungsdetails“ verfügbar.
 
-  Cloud Manager ermöglicht es Kunden jetzt, Produktionsprogramme mithilfe eines Soft-Delete-Workflows zu löschen. Sie können gelöschte Programme innerhalb von 30 Tagen wiederherstellen und erhalten so ein zusätzliches Sicherheitsfenster vor dem endgültigen Löschen. Diese Funktion wird im Laufe des Monats Mai schrittweise eingeführt.
+  Der CMK-Status wird auf den Karten Meine Programme und im Lizenz-Dashboard angezeigt, sodass Administratoren einen klaren Einblick in die Verschlüsselungskonfiguration in allen Umgebungen erhalten. Dieser Ansatz vereinfacht Compliance-Workflows für Unternehmen, die die Kontrolle über ihre eigenen Verschlüsselungsschlüssel benötigen.
 
-  Siehe [Markieren eines Produktionsprogramms zum Löschen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-production-program).
+  ![Karte „Meine Programme“ mit dem Symbol „Kundenverwalteter Schlüssel“](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+  *Meine Programmkarte*
+
+
+  ![Dialogfeld „Für Produktion einrichten“ mit ausgewählter Option „Kundenseitig verwaltete Schlüssel“ auf der Registerkarte „Sicherheit“](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
+  *Vom Kunden verwaltete Schlüssel auf der Registerkarte „Sicherheit“ im Dialogfeld „Für Produktion einrichten“ ausgewählt*
+
+  ![Anzeige der Anzahl der im Lizenz-Dashboard verfügbaren kundenverwalteten Schlüssel](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
+  *Anzeige der Anzahl der im Lizenz-Dashboard verfügbaren kundenverwalteten Schlüssel*
+
+* **Umgebungsvariablenlimit wurde auf 400 erhöht**
+Cloud Manager unterstützt jetzt bis zu 400 Umgebungsvariablen pro Umgebung, doppelt so viel wie zuvor (200).
+
+  Pipeline-Variablen bleiben auf 200 begrenzt. Die Benutzeroberfläche erzwingt die richtige Begrenzung pro Kontext und verhindert Ergänzungen über den zulässigen Schwellenwert hinaus.
+
+  Durch diese Änderung werden Kunden mit komplexeren Bereitstellungskonfigurationen unterstützt, für die eine größere Anzahl umgebungsspezifischer Einstellungen erforderlich ist.
+
+<!--CMGR-76755 · CMGR-76753 -->
+
 
 ## Beta-Programme {#private-beta-program}
 
-Nehmen Sie am Beta-Programm von Cloud Manager teil, um exklusiven Zugriff auf bevorstehende Funktionen vor ihrer regulären Veröffentlichung zu erhalten.
+Um vor der allgemeinen Veröffentlichung exklusiven Zugriff auf bevorstehende Funktionen zu erhalten, können Sie an den Beta-Programmen von Cloud Manager teilnehmen.
 
 >[!IMPORTANT]
 >
->Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (durch Adobe Support Services oder anderweitig). Adobe empfiehlt Kunden, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
+>Beta-Versionen enthalten Mängel und werden ohne Mängelgewähr und ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen. Kundinnen und Kunden verwenden Beta-Versionen auf eigenes Risiko und sollten sich nicht auf die korrekte Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt ausschließlich auf eigene Gefahr des Kunden.
 
 Siehe auch [AEM Beta-Programme](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -51,10 +72,10 @@ Die folgenden Möglichkeiten des Beta-Programms sind derzeit verfügbar:
 Cloud Manager führt zwei Funktionen ein, die moderne Bereitstellungsarchitekturen unterstützen.
 
 * **Edge Delivery Services mit AEM-Authoring**
-Sie können jetzt Sites mit Edge Delivery Services bereitstellen, während Sie weiterhin Inhalte im AEM-Autorenmodus erstellen. Je nach Ihren Workflow-Voreinstellungen können Sie zwischen den folgenden Authoring-Ansätzen wählen:
+Sie können jetzt Sites mit Edge Delivery Services bereitstellen, während Sie weiterhin Inhalte im AEM-Autorenmodus erstellen. Je nach Ihren Workflow-Voreinstellungen können Sie aus den folgenden Authoring-Ansätzen wählen:
 
    * Dokumentenbasiertes Authoring
-   * AEM Author-based Authoring
+   * AEM-basiertes Authoring
 
 Weitere Informationen finden Sie unter [Erstellen einer Edge Delivery-Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
 
@@ -68,7 +89,7 @@ Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:gr
 
 ### Schnellere Builds mit Modul-Caching {#quick-build-cm-pipelines}
 
-Ein neues Build-Modell kompiliert nur geänderte Module (nicht das gesamte Repository) mithilfe des Caching auf Modulebene, um die Erstellungszeiten zu verkürzen. Dies gilt für Produktions-Pipelines. Sie steuern, welche Produktions-Pipelines &quot;**Build“**.
+Bei einem neuen Build-Modell werden nur geänderte Module kompiliert (nicht das gesamte Repository), indem die Zwischenspeicherung auf Modulebene verwendet wird, um die Erstellungszeiten zu reduzieren. Dies gilt für Produktions-Pipelines. Sie steuern, welche Produktions-Pipelines &quot;**Build“**.
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
@@ -101,7 +122,12 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ## Fehlerbehebungen {#bug-fixes}
 
-Es gibt keine signifikanten Fehlerbehebungen in der Cloud Manager-Version vom Mai 2026.
+* **Umgebung bleibt beim Aktualisieren ohne aktiven Vorgang hängen**
+Es wurde ein Problem behoben, bei dem Umgebungen dauerhaft in einem Aktualisierungsstatus feststecken, selbst wenn keine Pipeline-Ausführung oder Konfigurationsänderung ausgeführt wird. Betroffene Umgebungen können jetzt normal verwaltet werden, ohne dass der Adobe-Support manuell eingreifen muss. (CMGR-77133)
+* **Erweiterte Netzwerke - Falsche Port-Forward-Regel für doppelte Quell-Ports gelöscht**
+Wenn zwei Regeln für die Port-Weiterleitung im erweiterten Netzwerk denselben Quell-Port (portOrg) verwenden, wird beim Löschen einer Regel fälschlicherweise die andere entfernt. Cloud Manager identifiziert und entfernt jetzt korrekt nur die beabsichtigte Regel. (CMGR-77019)
+
+<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 

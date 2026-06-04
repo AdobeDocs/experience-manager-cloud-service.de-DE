@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f8c9a7549305e30418e672f8ca14fe95f2a3b333
+source-git-commit: a4915aa53902b70b0a09b53381386023638b4072
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 84%
+source-wordcount: '1219'
+ht-degree: 82%
 
 ---
 
@@ -48,8 +48,8 @@ Um Umgebungsvariablen hinzuzufügen, zu aktualisieren oder zu löschen, müssen 
 1. Klicken Sie im Seitenmenü auf **Umgebungen**.
 1. Wählen Sie auf der Seite **Umgebungen** eine Zeile in der Tabelle aus, die die Umgebung enthält, für die Sie eine Umgebungsvariable hinzufügen möchten.
 1. Klicken Sie auf der Seite mit den Umgebungsdetails auf die Registerkarte **Konfiguration**.
-1. Klicken Sie auf ![Hinzufügen/Aktualisieren – Symbol mit Pluszeichen in Kreis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen/Aktualisieren**.
-Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, klicken Sie in der Mitte der Seite auf **Konfiguration hinzufügen**.
+1. Klicken Sie ![Hinzufügen/Aktualisieren - Symbol Kreis hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen/Aktualisieren**.
+Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, klicken Sie **Konfiguration hinzufügen** in der Mitte der Seite.
 
    ![Registerkarte „Konfiguration“](assets/configuration-tab.png)
 
@@ -57,7 +57,7 @@ Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, klicken Sie in der M
 
    | Feld | Beschreibung |
    | --- | --- |
-   | Name | Ein eindeutiger Name der Konfigurationsvariablen. Er identifiziert die spezifische Variable, die in der Umgebung verwendet wird, und muss den folgenden Namenskonventionen entsprechen:<ul><li>Variablen dürfen nur alphanumerische Zeichen und einen Unterstrich (`_`) enthalten.</li><li>Pro Umgebung sind maximal 200 Variablen zulässig.</li><li>Jeder Name darf maximal 100 Zeichen lang sein.</li></ul> |
+   | Name | Ein eindeutiger Name der Konfigurationsvariablen. Er identifiziert die spezifische Variable, die in der Umgebung verwendet wird, und muss den folgenden Namenskonventionen entsprechen:<ul><li>Variablen dürfen nur alphanumerische Zeichen und einen Unterstrich (`_`) enthalten.</li><li>Pro Umgebung sind maximal 400 Variablen zulässig.</li><li>Jeder Name darf maximal 100 Zeichen lang sein.</li></ul> |
    | Wert | Der Wert, den die Variable enthält. |
    | Angewendeter Schritt | Wählen Sie den Service aus, für den die Variable gilt. Wählen Sie **Alle** aus, damit die Variable auf alle Dienste angewendet wird.<ul><li>**Alle**</li><li>**Autor**</li><li>**Veröffentlichen**</li><li>**Vorschau**</li></ul> |
    | Typ | Legen Sie fest, ob die Variable eine normale Variable oder ein Geheimnis sein soll. |
@@ -94,7 +94,7 @@ Wenn mehrere Variablen aktualisiert werden sollen, empfiehlt Adobe, das Dialogfe
    ![Variable bearbeiten oder löschen](assets/edit-delete-variable.png)
 
 1. Aktualisieren Sie den Wert der Umgebungsvariablen nach Bedarf.
-Beim Bearbeiten von Geheimnissen kann der jeweilige Wert nur aktualisiert, aber nicht angezeigt werden.
+Beim Bearbeiten geheimer Daten kann der Wert nur aktualisiert, aber nicht angezeigt werden.
 
    ![Variable bearbeiten](assets/edit-variable.png)
 
@@ -114,7 +114,7 @@ Beim Bearbeiten von Geheimnissen kann der jeweilige Wert nur aktualisiert, aber 
 1. Klicken Sie im Seitenmenü auf **Umgebungen**.
 1. Wählen Sie auf der Seite **Umgebungen** eine Zeile in der Tabelle aus, die die Umgebung enthält, für die eine Variable aktualisiert werden soll.
 1. Klicken Sie auf der Seite mit den Umgebungsdetails auf die Registerkarte **Konfiguration**.
-1. Klicken Sie auf ![Hinzufügen/Aktualisieren – Hinzufügen-Kreissymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen/Aktualisieren**.
+1. Klicken Sie auf ![Hinzufügen/Aktualisieren – Symbol mit Pluszeichen in Kreis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen/Aktualisieren**.
 1. Klicken Sie im Dialogfeld **Umgebungskonfiguration** auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in der letzten Spalte der Zeile der Variablen, die geändert werden soll.
 1. Klicken Sie im Dropdown-Menü auf **Löschen**, um die Variable umgehend zu entfernen.
 1. Klicken Sie auf **Speichern**.
