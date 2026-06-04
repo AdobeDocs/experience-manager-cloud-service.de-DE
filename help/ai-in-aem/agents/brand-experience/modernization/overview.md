@@ -4,9 +4,9 @@ description: Erfahren Sie, wie der Experience Modernization Agent mithilfe von K
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 8f964484f944d49cdc6c456147f060f29a20778e
+source-git-commit: f2ab0a3d604ed4cd07ec8922ed331dfc37b45e5f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,16 @@ Erste Schritte mit der Experience Modernization Console!
 ## Projektdokumentations-Kenntnisse {#project-documentation}
 
 Angesichts der zeitintensiven Natur von Projekt-Handovers kann [die Projektdokumentationsfertigkeit](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) nach Abschluss der Autoren- und Entwicklungsarbeiten automatisch eine umfassende Dokumentation erstellen.
+
+## Site Catalog SKILL {#site-catalog}
+
+Die Katalogfertigkeit der Site crawlen eine vorhandene Website, katalogisiert alle Seitenvorlagen und Blockvarianten, erfasst Screenshots jeder Vorlage und jedes Blocks und generiert ein interaktives HTML-Berichtspaket zur Überprüfung. Diese Kenntnisse sind nützlich für:
+
+* **Jeder, der ein Migrationsprojekt startet** um eine vollständige Bestandsaufnahme der Seitenlayouts, Blockvarianten, Gebietsschemata und Seiten pro Vorlage zu erhalten, bevor Code geschrieben wird, damit Teams die Komplexität frühzeitig genau planen und aufdecken können
+* **Teams, die Massenimporte durchführen** Um zu ermitteln, welche Seiten dasselbe Layout verwenden, importieren und perfektionieren Sie zuerst die repräsentativen Seiten manuell und importieren dann alle verbleibenden Seiten für diese Vorlage per Massenimport
+* **Projektleiter und Stakeholder** um den Umfang der Bemühungen zu verstehen
+
+Bitte lesen Sie das Dokument [Site-Katalog Kenntnisse](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md) für weitere Informationen.
 
 ## Versand durch Agent Outcome Engineer (AOE) {#aoe-delivery}
 

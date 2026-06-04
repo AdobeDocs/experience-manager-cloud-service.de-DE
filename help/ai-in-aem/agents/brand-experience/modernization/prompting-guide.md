@@ -4,9 +4,9 @@ description: Dieses Handbuch enthält Tipps für eine effektive Eingabeaufforder
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 212c9c4db9904de0f9ec27cec9282df8d288a25a
+source-git-commit: 628d1db0be64205eab9b9992020c1b27e233b9b6
 workflow-type: tm+mt
-source-wordcount: '3163'
+source-wordcount: '3240'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,20 @@ Verwenden Sie diese Eingabeaufforderung, wenn Sie Inhalte von einer bestehenden 
 * Kopf-, Navigations- und Fußzeile sind von der Seitenmigration ausgeschlossen. Diese werden von dedizierten Fähigkeiten gehandhabt.
 * Bei jeder Migration wird eine Importinfrastruktur (Seitenvorlagen, Block-Parser, Transformatoren) für zukünftige Massenimporte erstellt.
 * Dynamic Media- und Scene7-Bilder werden in der Quelle erkannt und als DM-URLs beibehalten, anstatt als statische Ausgabedarstellungen importiert zu werden, sodass responsive und spontane Transformationen intakt bleiben. Dies gilt sowohl für die Dokumenterstellung als auch für Migrationen von AEM Sites in den universellen Editor.
+
+### Site-Katalog {#site-catalog}
+
+Verwenden Sie diese Eingabeaufforderung, um eine vorhandene Website zu analysieren, um deren Skalierung, Vorlagen und Blockvarianten zu verstehen, bevor Sie eine Migration beginnen. Die Ergebnisse können für Massenimporte [&#x200B; werden](#bulk-import)
+
+#### Beispiel-Eingabeaufforderungen {#example-prompts-site-catalog}
+
+* „Scope site https://example.com&quot;
+* „Suchen von Vorlagen auf https://example.com&quot;
+* „Katalog-Website https://example.com&quot;
+* „Wie viele Seitentypen gibt es auf https://example.com&quot;
+* „Wie lauten die Layouts auf https://example.com&quot;
+
+Details zu den Katalogkenntnissen für die Site finden Sie im Dokument [Site-Katalogkenntnisse.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
 
 ### Massenimport {#bulk-import}
 
