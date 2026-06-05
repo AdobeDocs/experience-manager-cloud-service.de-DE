@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2026.6.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 61101046e4383acb534b04f467bef1b0313c4ef5
+source-git-commit: 3c78dbcbc453eaaaab3904b83f22744eef60080c
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 4%
@@ -12,10 +12,6 @@ ht-degree: 4%
 ---
 
 # Versionshinweise für Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
-
-<!-- 
-https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
--->
 
 Erfahren Sie mehr über die Version Cloud Manager 2026.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
@@ -37,7 +33,6 @@ Kunden können jetzt kundenverwaltete Schlüssel direkt in Cloud Manager konfigu
 
   ![Karte „Meine Programme“ mit dem Symbol „Kundenverwalteter Schlüssel“](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
   *Meine Programmkarte*
-
 
   ![Dialogfeld „Für Produktion einrichten“ mit ausgewählter Option „Kundenseitig verwaltete Schlüssel“ auf der Registerkarte „Sicherheit“](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
   *Vom Kunden verwaltete Schlüssel auf der Registerkarte „Sicherheit“ im Dialogfeld „Für Produktion einrichten“ ausgewählt*
@@ -85,18 +80,18 @@ Mit Cloud Manager können Sie jetzt konfigurieren, ob für Ihr Programm eine Ver
 
 Weitere Informationen finden Sie unter [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 ### Schnellere Builds mit Modul-Caching {#quick-build-cm-pipelines}
 
-Bei einem neuen Build-Modell werden nur geänderte Module kompiliert (nicht das gesamte Repository), indem die Zwischenspeicherung auf Modulebene verwendet wird, um die Erstellungszeiten zu reduzieren. Dies gilt für Produktions-Pipelines. Sie steuern, welche Produktions-Pipelines &quot;**Build“**.
+Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte Repository) mithilfe des Caching auf Modulebene, um die Build-Leistung zu verbessern. Dies gilt für Produktions-Pipelines. Sie steuern, welche Produktions-Pipelines &quot;**Build“**.
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
 * [Verwenden von Smart Build in einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
-* [Produktions-Pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* [Produktions-Pipeline ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 <!-- 
 OLD
@@ -124,7 +119,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 * **Umgebung bleibt beim Aktualisieren ohne aktiven Vorgang hängen**
 Es wurde ein Problem behoben, bei dem Umgebungen dauerhaft in einem Aktualisierungsstatus feststecken, selbst wenn keine Pipeline-Ausführung oder Konfigurationsänderung ausgeführt wird. Betroffene Umgebungen können jetzt normal verwaltet werden, ohne dass der Adobe-Support manuell eingreifen muss. (CMGR-77133)
-* **Erweiterte Netzwerke - Falsche Port-Forward-Regel für doppelte Quell-Ports gelöscht**
+* **Erweiterte Netzwerke - Falsche Regel für die Port-Weiterleitung an doppelten Quell-Ports gelöscht**
 Wenn zwei Regeln für die Port-Weiterleitung im erweiterten Netzwerk denselben Quell-Port (portOrg) verwenden, wird beim Löschen einer Regel fälschlicherweise die andere entfernt. Cloud Manager identifiziert und entfernt jetzt korrekt nur die beabsichtigte Regel. (CMGR-77019)
 
 <!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
