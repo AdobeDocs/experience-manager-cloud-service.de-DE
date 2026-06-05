@@ -25,7 +25,7 @@ Ihr Vertrag mit Adobe definiert die Anzahl und die Arten von Lösungen, die Ihre
 
 >[!NOTE]
 >
->>Abhängig von den Berechtigungen Ihres Unternehmens können Sie möglicherweise auch kundenverwaltete Schlüssel (CMK) für ein Produktionsprogramm aktivieren. Mit CMK können Sie Ihre eigenen Verschlüsselungsschlüssel für Daten im Ruhezustand bereitstellen. Siehe [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+>&#x200B;>Abhängig von den Berechtigungen Ihres Unternehmens können Sie möglicherweise auch kundenverwaltete Schlüssel (CMK) für ein Produktionsprogramm aktivieren. Mit CMK können Sie Ihre eigenen Verschlüsselungsschlüssel für Daten im Ruhezustand bereitstellen. Siehe [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 In der folgenden Tabelle werden gängige Szenarien der verfügbaren Lösungen und die darauf basierenden typischen Produktionsprogramme beschrieben.
 
