@@ -80,7 +80,7 @@ Mit Cloud Manager können Sie jetzt konfigurieren, ob für Ihr Programm eine Ver
 
 Weitere Informationen finden Sie unter [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 ### Schnellere Builds mit Modul-Caching {#quick-build-cm-pipelines}
 
@@ -89,9 +89,9 @@ Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte R
 Weitere Informationen finden Sie in den folgenden Themen:
 
 * [Verwenden von Smart Build in einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
-* [Produktions-Pipeline ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* [Produktions-Pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 <!-- 
 OLD
