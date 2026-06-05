@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 67%
+source-wordcount: '1720'
+ht-degree: 55%
 
 ---
 
@@ -21,8 +21,8 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 
 ## Erstellen eines Produktionsprogramms {#create}
 
-Abhängig von den Berechtigungen Ihrer Organisation werden möglicherweise zusätzliche Optionen für Produktionsprogramme angezeigt, wenn Sie Ihr Programm hinzufügen.
-Siehe [Zusätzliche Optionen für Produktionsprogramme](#options).
+Die Berechtigungen Ihres Unternehmens bestimmen die zusätzlichen Produktionsprogrammoptionen, die beim Hinzufügen Ihres Programms verfügbar sind.
+Siehe [Zusätzliche Produktions-Programmoptionen](#options).
 
 **So erstellen Sie ein Produktionsprogramm:**
 
@@ -48,13 +48,13 @@ Siehe [Zusätzliche Optionen für Produktionsprogramme](#options).
 
 1. Wählen Sie auf **Registerkarte** die Sicherheitsoptionen aus, die Sie verwenden möchten. Siehe [Sicherheit](#security).
 
-   ![Registerkarte „Sicherheit“ im Assistenten „Für Produktion einrichten“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+   ![Registerkarte „Sicherheit“ im Assistenten „Für Produktion einrichten“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
 1. Klicken Sie auf **Weiter**.
 
 1. Wählen Sie im Listenfeld **Lösungen und Add-ons** eine oder mehrere Lösungen aus, die im Programm enthalten sein sollen.
 
-   * Wenn Sie sich nicht sicher sind, ob Sie ein oder mehrere Programme für die verschiedenen verfügbaren Lösungen benötigen, wählen Sie diejenige aus, die für Sie am interessantesten ist. Sie können zusätzliche Lösungen aktivieren, indem Sie [das Programm später bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Weitere Empfehlungen zur Programmeinrichtung finden Sie im Dokument [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * Wenn Sie nicht sicher sind, ob Sie ein oder mehrere Programme für die verschiedenen verfügbaren Lösungen benötigen, wählen Sie das Programm aus, das Sie am meisten interessiert. Sie können zusätzliche Lösungen aktivieren, indem Sie [das Programm später bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Weitere Empfehlungen zur Programmeinrichtung finden Sie im Dokument [Einführung in Produktionsprogramme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
    * Sie müssen mindestens eine Lösung für die Programmerstellung auswählen. Sie können beispielsweise **Edge Delivery Services** auswählen, um eine vollständig verwaltete CDN-Lösung zu erhalten, die digitale Erlebnisse optimiert. Siehe [Informationen zur Verwendung von Edge Delivery Services zur Bereitstellung Ihres Cloud Manager-Projekts](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
    * Klicken Sie auf ![Pfeilsymbol Größe 300](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) links neben einem Lösungsnamen, um optionale Add-ons anzuzeigen. <!-- such as the **Commerce** add-on option under **Sites**. -->
@@ -97,26 +97,42 @@ Siehe [Zusätzliche Optionen für Produktionsprogramme](#options).
 
    ![Übersicht über Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-my-programs.png)
 
+
 ## Zusätzliche Optionen für Produktionsprogramme {#options}
 
-Je nachdem, welche Berechtigungen Ihrer Organisation verfügbar sind, stehen Ihnen beim Erstellen eines Produktionsprogramms möglicherweise die folgenden zusätzlichen Optionen zur Verfügung.
+Je nachdem, welche Berechtigungen Ihrer Organisation zur Verfügung stehen, stehen Ihnen beim Erstellen eines Produktionsprogramms die folgenden zusätzlichen Optionen zur Verfügung.
 
 ### Sicherheit {#security}
 
 Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkarte **Sicherheit** als erste Registerkarte im Dialogfeld **`Set up for production`** angezeigt.
 
-![Sicherheitsoptionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+![Sicherheitsoptionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
 Die Registerkarte **Sicherheit** bietet die Möglichkeit, **HIPAA** und/oder **WAF-DDOS-Schutz** oder beide Optionen für Ihr Produktionsprogramm zu aktivieren.
 
 Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial of Service) von Adobe erleichtert die Cloud-basierte Sicherheit als Teil eines mehrschichtigen Ansatzes zum Schutz vor Sicherheitslücken.
 
 * **HIPAA** - Diese Option ermöglicht die Implementierung der HIPAA-fähigen Lösung von Adobe.
-   * Erfahren Sie mehr über [HIPAA-Bereitschaft für Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) und die Implementierung der [Adobe HIPAA-fähigen Lösung](https://www.adobe.com/trust/compliance/hipaa-ready.html).
+   * Erfahren Sie mehr über [HIPAA-Bereitschaft für Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) und die Implementierung der [Adobe HIPAA-fähigen Lösung](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html).
    * Die HIPAA-Option kann nach der Programmerstellung weder aktiviert noch deaktiviert werden.
 * **WAF-DDOS-Schutz** - Mit dieser Option wird die Web Application Firewall durch Regeln zum Schutz Ihrer Anwendung aktiviert.
    * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
    * Unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) finden Sie Informationen dazu, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+* **Kundenseitig verwaltete Schlüssel** - Mit dieser Option wird CMK (Customer Managed Keys) für das Programm aktiviert, sodass Sie eigene Verschlüsselungsschlüssel für ruhende Daten in Azure Blob Storage und MongoDB bereitstellen können.
+
+  >[!IMPORTANT]
+  >
+  >CMK kann nach der Programmerstellung nicht mehr aktiviert oder deaktiviert werden.
+
+   * CMK ist nur für Cloud Service-Programme verfügbar. Es kann nicht in Sandbox-Programmen aktiviert werden.
+   * Innerhalb eines Programms deckt CMK nur die Staging- und Produktionsumgebungen ab.
+   * CMK kann nicht deaktiviert werden, nachdem es für ein Programm aktiviert wurde.
+   * Konfigurieren Sie nach der Aktivierung von CMK Ihre Verschlüsselungsschlüssel in Experience Hub.
+Siehe [Einrichten kundenverwalteter Schlüssel für AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+   * Wenn CMK aktiviert ist, zeigt die Programmübersichtsseite ein Sperrsymbol an, um anzugeben, dass CMK im Programm aktiv ist. Das Symbol spiegelt nicht den Aktivierungsstatus von CMK für einzelne Umgebungen innerhalb des Programms wider.
+     ![Das Sperrsymbol, das angibt, dass CMK im Programm aktiv ist](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+Die CMK-Lizenznutzung ist im Lizenz-Dashboard sichtbar. Informationen zur Anzahl der CMK-Credits, die Ihr Unternehmen erworben hat, und zur Anzahl der Programme, die diese Credits nutzen, finden Sie unter [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+     ![Anzeige der Anzahl der im Lizenz-Dashboard verfügbaren kundenverwalteten Schlüssel](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
 
 ### Flexible Veröffentlichungsebene (Beta) {#flexible-publish-tier}
 
@@ -149,7 +165,7 @@ Indem Sie die Veröffentlichungsebene nur bei Bedarf aktivieren, können Teams F
 **Funktionsweise**
 Wenn die Funktion für die flexible Veröffentlichungsebene für Ihre Organisation aktiviert ist:
 
-* Alle neuen Umgebungen im Programm werden standardmäßig nur mit der **Autorenebene** bereitgestellt. Eine Informationsmeldung, die auf der Benutzeroberfläche angezeigt wird, bestätigt dieses Verhalten.
+* Cloud Manager stellt allen neuen Umgebungen im Programm standardmäßig die **nur Autorenebene** zur Verfügung. Eine Informationsmeldung, die auf der Benutzeroberfläche angezeigt wird, bestätigt dieses Verhalten.
 * Wenn der/die Benutzende während **Programmerstellung die Option** AEM-Veröffentlichung“ auswählt, wird die Veröffentlichungsebene aktiviert und mit &quot;*Umgebungen“*.
 * Die Veröffentlichungsebene kann auch später durch Bearbeiten des Programms aktiviert werden. Siehe [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -167,7 +183,7 @@ Sites und Forms bieten standardmäßig ein Service Level Agreement (SLA) mit 99,
 
 Das SLA von 99,99 % bietet unter anderem die Vorteile einer höheren Verfügbarkeit und geringeren Latenz.
 
-Für Sites- und Forms-Programme erfordert die SLA von 99,99 % eine [zusätzliche Veröffentlichungsregion](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), die im Programm auf die Produktionsumgebung angewendet werden muss. Wenn die [Anforderungen](#sla-requirements) für die Aktivierung des SLA von 99,99 % erfüllt sind, müssen Sie eine [Full-Stack-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ausführen, um es zu aktivieren.
+Für Sites- und Forms-Programme erfordert die SLA von 99,99 % eine [zusätzliche Veröffentlichungsregion](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), die im Programm auf die Produktionsumgebung angewendet werden muss. Um SLA zu 99,99 % zu aktivieren, wenn die [Anforderungen](#sla-requirements) erfüllt sind, führen Sie eine [Full-Stack-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) aus.
 
 Für Edge Delivery Services besteht *keine* andere Anforderung als die Konfiguration der SLA-Lizenz von 99,99 % im Programm.
 
@@ -198,7 +214,7 @@ Zusätzlich zu den erforderlichen Berechtigungen umfasst die Verwendung des SLA 
 
 >[!TIP]
 >
->Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der Konsole **Meine Programme** finden Sie unter [Navigation in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md).
+>Unter [Navigieren in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md) finden Sie Details zum Navigieren in Cloud Manager und zur **&quot;** Programme“.
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1c42dff8efb505d050583c8af2f150a7f862d8c9
+source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 29%
+source-wordcount: '1212'
+ht-degree: 22%
 
 ---
 
@@ -19,7 +19,7 @@ Um Programme zu verwalten und zu bearbeiten, beginnen Sie bei der Konsole [**Mei
 
 Von der **Programmübersicht** aus können Benutzende mit den erforderlichen Berechtigungen [Produktionsprogramme, die in Ihrer Organisation erstellt wurden](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden](creating-sandbox-programs.md), bearbeiten. Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
 
-* Hinzufügen der Sites-Lösung zu einem vorhandenen Programm mit Assets oder umgekehrt.
+* Fügen Sie die Sites-Lösung einem vorhandenen Programm mit Assets hinzu und fügen Sie Assets einem vorhandenen Programm mit Sites hinzu.
 * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets enthält.
 * Hinzufügen einer nicht verwendeten Lösungsberechtigung für ein vorhandenes Programm oder Erstellen eines neuen Programms.
 * Markieren Sie Produktionsprogramme zum Löschen.
@@ -51,9 +51,32 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
    Die zur Bearbeitung des Programms verfügbaren Optionen sind mit denen zum Erstellen des Programms identisch.
    * Sie können konfigurieren, ob eine Veröffentlichungsebene für neue Umgebungen (Beta) bereitgestellt wird. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Einzelheiten zu den einzelnen Optionen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
-   * Abhängig von den Ansprüchen Ihrer Organisation können [weitere Optionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) für Ihr Produktionsprogramm verfügbar sein.
+   * [Zusätzliche Optionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) sind für Ihr Produktionsprogramm verfügbar, je nach den Berechtigungen Ihrer Organisation.
+   * Auf der Registerkarte **Sicherheit** können Sie auch **Kundenseitig verwaltete Schlüssel** für ein vorhandenes Programm aktivieren.
+
+   ![Dialogfeld „Programm bearbeiten“ mit ausgewählten kundenverwalteten Schlüsseln](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   CMK kann nach der Aktivierung nicht deaktiviert werden. Konfigurieren Sie nach der Aktivierung von CMK Ihre Verschlüsselungsschlüssel in Experience Hub. Siehe [Konfigurieren von CMK in Experience Hub](#configure-cmk-experience-hub).
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen zu speichern.
+
+## Konfigurieren von CMK in Experience Hub {#configure-cmk-experience-hub}
+
+Nachdem CMK für ein Programm aktiviert wurde, stellt Cloud Manager einen direkten Link zur CMK-Konfigurationsseite in Experience Hub bereit, über die Sie Folgendes einrichten können
+Verschlüsselungsschlüssel, ohne das Programm verlassen zu müssen.
+
+Nachdem CMK für eine Umgebung erfolgreich konfiguriert wurde, wird auf der Seite mit den Umgebungsdetails das Status-Badge **CMK-Konfiguration** angezeigt. Wenn CMK für das Programm aktiviert ist, aber noch nicht für eine bestimmte Umgebung konfiguriert wurde, wird das Badge nicht auf der Detailseite dieser Umgebung angezeigt.
+
+**So konfigurieren Sie CMK in Experience Hub:**
+
+1. Suchen Sie auf **Seite** Meine Programme“ die Programmkarte mit aktiviertem CMK.
+2. Klicken Sie auf ![Auslassungszeichen - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **CMK konfigurieren**.
+
+   ![Programmkarte mit dem CMK-Symbol, um aktiviert anzugeben, dann die Option CMK konfigurieren im Menü mit den Auslassungspunkten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-configure-edit-program-dlg.png)
+
+   Experience Hub öffnet die CMK-Konfigurationsseite, auf der Sie Details zum Azure-Schlüsseltresor und Informationen zum Verschlüsselungsschlüssel angeben können.
+
+   Die vollständigen Konfigurationsschritte finden Sie unter [Einrichten kundenverwalteter Schlüssel für AEM as a Cloud Service](/help/security/customer-managed-keys.md).
 
 ## Ein Produktionsprogramm zum Löschen markieren {#delete-production-program}
 
@@ -124,7 +147,7 @@ Sie können ein Produktionsprogramm, das zum Löschen *markiert* wiederherstelle
 
    ![Aufheben der Markierung des geplanten Datums für die endgültige Entfernung des Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png)
 
-   Das Produktionsprogramm ist nicht als gelöscht gekennzeichnet.
+   Das Produktionsprogramm ist nicht zum Löschen markiert.
 
 ## Löschen eines Sandbox-Programms {#delete-sandbox-program}
 
