@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3443e9d000cf9ddc4f4f2ac18bcdf614688f5242
+source-git-commit: 657d097b36ffe361655999d51b0a95ec497ddc48
 workflow-type: tm+mt
-source-wordcount: '2287'
-ht-degree: 28%
+source-wordcount: '2332'
+ht-degree: 27%
 
 ---
 
@@ -40,7 +40,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491499/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -86,6 +86,10 @@ Siehe [AEM Foundation-Betaprogramme](#foundation-early-adopter).
 ### Cloud Manager (Beta-Programme) {#cloud-manager-beta-programs}
 
 Siehe [Cloud Manager-Beta-Programme](/help/implementing/cloud-manager/release-notes/current.md).
+
+### AEM Assets (Beta-Programme) {#aem-assets-beta-programs}
+
+Siehe [AEM Assets-Beta-Programme](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -161,7 +165,7 @@ Beschleunigen Sie die Migration von AEM 6.5 (oder früher) zu AEM as a Cloud Ser
 
 Erfahren Sie mehr über [IDE-KI-Tools für die Cloud](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)Migration und auch über andere [Lokale Entwicklung mit KI-Tools](/help/ai-in-aem/local-development-with-ai-tools.md) (Agentenkenntnisse und lokale MCP-Server).
 
->[!VIDEO](https://video.tv.adobe.com/v/3491447/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
 #### Änderungen der Anzeige des Status der Replikationswarteschlange {#replication-queue-status-display}
 
@@ -169,7 +173,7 @@ In der Authoring-Benutzeroberfläche zeigen Replikationsagenten jetzt zwei konso
 
 Weitere Informationen zu [Replikationswarteschlangen](/help/operations/replication.md#replication-queues).
 
-![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten &#x200B;](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
+![Replikationswarteschlangen mit persistenten und vollständig veröffentlichten ](/help/operations/assets/replication-queues.png "Replikationswarteschlangen")
 
 ### Wichtige Hinweise zu [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-notices}
 
@@ -241,7 +245,7 @@ Beta-Version für AEM-Veröffentlichungs-Bereitstellung oder Edge Delivery Servi
 
 Die Funktionen [Fehlerbehebung bei Pipelines](/help/ai-in-aem/agents/brand-experience/development/development.md) des Entwicklungsagenten helfen Entwicklerinnen und Entwicklern bei der effizienten Diagnose und Lösung von Problemen in AEM as a Cloud Service-Bereitstellungen. Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web Tier Config-Pipeline** als Teil eines Beta-Programms.
 
-aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+aem-devagent@adobe.com Um Zugriff auf die Beta-Version anzufordern, senden Sie eine E-Mail an [](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
 
 #### Fehlerbehebung bei der Replikations-KI (Beta-Programm) {#replication-ai-troubleshooting-alpha}
 
@@ -268,6 +272,15 @@ Diese Funktion befindet sich in der Alpha-Phase. Sich dem Programm anschließen 
 #### Erweiterte Leistungsüberwachung von Anwendungen (APM) (Alpha-Programm) {#apm-alpha}
 
 Zur Beobachtung unterstützt AEM Cloud Service derzeit von Adobe bereitgestelltes [New Relic One](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) und kundenverwaltetes [Dynatrace](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). Da wir gerade Unterstützung für weitere APM-Optionen prüfen, bitten wir Sie, uns eine E-Mail an [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) zu senden und uns Ihren bevorzugten Anbieter bzw. Ihre bevorzugte Technologie sowie Ihre Anwendungsfälle mitzuteilen.
+
+### Funktionen von [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta {#assets-beta-program-features}
+
+#### Erweiterbarkeit der Benutzeroberfläche für die Assets-Ansicht {#ui-extensibility-assets-view}
+
+Assets View unterstützt die Benutzeroberflächen-Erweiterbarkeit, eine Funktion, mit der Kunden das vordefinierte Erlebnis so anpassen können, dass es ihren spezifischen Geschäftsanforderungen entspricht.
+Kunden können bestehende stabile Erweiterungspunkte nutzen, indem sie der Entwicklerdokumentation von Adobe folgen, um Erweiterungen mit minimalem Aufwand zu erstellen und bereitzustellen. Für Anwendungsfälle, bei denen noch kein erforderlicher Erweiterungspunkt verfügbar ist, arbeitet Adobe direkt mit Kunden zusammen, um die Anforderungen zu untersuchen und die technische Machbarkeit der Bereitstellung neuer Erweiterbarkeits-APIs zu bewerten, die auf ihre Anforderungen zugeschnitten sind, und kann solche neuen APIs wie **Beta-Versionen** bereitstellen.
+Darüber hinaus hat Adobe ein **GenAI-basiertes Erweiterungsgenerierungstool entwickelt** das derzeit in einer internen frühen Implementierungsphase verfügbar ist. Dieses Tool kann die Entwicklungszeit für Erweiterungen erheblich beschleunigen. Kunden, die an diesem Beta-Programm teilnehmen, erhalten Zugriff auf das Tool und werden ermutigt, Feedback zu geben, um die Entwicklung zu gestalten.
+Um teilzunehmen oder mehr zu erfahren, senden Sie eine E-Mail an `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
