@@ -7,10 +7,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 4994babacc862977c5ff4c398027d54546c65212
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 99%
+source-wordcount: '1371'
+ht-degree: 66%
 
 ---
 
@@ -26,11 +26,11 @@ Sie können [adaptive Formulare in eine AEM Sites-Seite](/help/forms/embed-adapt
 
 ## Voraussetzungen {#prerequisites}
 
-Führen Sie folgende Schritte aus, bevor Sie ein adaptives Formular in eine externe Web-Seite einbetten:
+Führen Sie folgende Schritte aus, bevor Sie ein adaptives Formular in eine externe Website einbetten:
 
-* Veröffentlichen Sie das einzubettende adaptive Formular in der Veröffentlichungsinstanz von AEM Forms Server.
-* Erstellen Sie auf Ihrer Website eine Webseite oder legen Sie sie fest, um das adaptive Formular zu hosten. Stellen Sie sicher, dass die Webseite [jQuery-Dateien von einem CDN lesen](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) kann oder eine lokale Kopie von jQuery eingebettet hat. jQuery ist erforderlich, um ein adaptives Formular zu rendern.
-* Wenn AEM-Server und die Web-Seite sich in verschiedenen Domains befinden, führen Sie die im Abschnitt [Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site durch AEM Forms](#cross-site) beschriebenen Schritte aus.
+* Veröffentlichen Sie das einzubettende adaptive Formular in der Veröffentlichungsinstanz des AEM Forms-Servers.
+* Erstellen Sie auf Ihrer Website eine Web-Seite oder legen Sie sie fest, um dort das adaptive Formular zu hosten. Stellen Sie sicher, dass die Web-Seite [jQuery-Dateien von einem CDN lesen](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) kann oder eine lokale jQuery-Kopie eingebettet hat. jQuery ist erforderlich, um ein adaptives Formular zu rendern.
+* Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, führen Sie die im Abschnitt „Konfigurieren [&#x200B; absoluten Anforderungs-URLs mit GuideBridge“ und &quot;](#configure-base-url) [&#x200B; von AEM Forms, um adaptive Formulare auf einer Domain-übergreifenden Site bereitzustellen“ &#x200B;](#cross-site).
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
 
@@ -96,7 +96,7 @@ Einbetten des adaptiven Formulars:
 
 1. Im eingebetteten Code:
 
-   * Ersetzen Sie den Wert der Variablen *options.path* durch die Veröffentlichungs-URL des adaptiven Formulars. Wenn der AEM-Server in einem Kontextpfad ausgeführt wird, stellen Sie sicher, dass die URL diesen Pfad enthält. Geben Sie immer den vollständigen Namen des adaptiven Formulars einschließlich der Erweiterung an. Beispielsweise befinden sich der Code und das adaptive Formular im Beispiel oben auf demselben AEM Forms-Server, daher wird im Kontextpfad dieses Beispiels der Pfad „/content/forms/af/locbasic.html“ für das adaptive Formular verwendet.
+   * Ersetzen Sie den Wert der Variablen *options.path* durch den Pfad der Veröffentlichungs-URL des adaptiven Formulars. Wenn der AEM-Server in einem Kontextpfad ausgeführt wird, stellen Sie sicher, dass die URL diesen Pfad enthält. Geben Sie immer den vollständigen Namen des adaptiven Formulars einschließlich der Erweiterung an. Beispielsweise befinden sich der obige Code und das adaptive Formular auf demselben AEM Forms-Server, daher wird im Beispiel der Kontextpfad des `/content/forms/af/myadaptiveform.html` für adaptive Formulare verwendet.
    * CSS_Selector ist der CSS-Selektor des Formularcontainers, in den das adaptive Formular eingebettet ist. Im obigen Beispiel ist die CSS-Klasse „.customafsection“ der CSS-Selektor.
 
 Das adaptive Formular wird in die Web-Seite eingebettet. Beobachten Sie Folgendes im eingebetteten adaptiven Formular:
@@ -105,14 +105,38 @@ Das adaptive Formular wird in die Web-Seite eingebettet. Beobachten Sie Folgende
 * Die im adaptiven Originalformular konfigurierte Übermittlungsaktion wird im eingebetteten Formular beibehalten.
 * Regeln für adaptive Formulare bleiben erhalten und sind im eingebetteten Formular voll funktionsfähig.
 * Die im Originalformular konfigurierten Experience Targeting- und A/B-Tests funktionieren im eingebetteten adaptiven Formular nicht.
-* Wenn Adobe Analytics im ursprünglichen Formular konfiguriert ist, werden die Analysedaten im Adobe Analytics-Server erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
+* Wenn Adobe Analytics im ursprünglichen Formular konfiguriert ist, werden die Analysedaten vom Adobe Analytics-Server erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
 * In auf Kernkomponenten basierenden adaptiven Formularen werden die Client-Bibliotheken (ClientLibs) zusammen mit den Kopf- und Fußzeilenkomponenten eines Formulars eingeschlossen und geladen. Wenn Sie also ein auf Kernkomponenten basierendes adaptives Formular in eine Web-Seite einbetten, enthält diese immer die Kopf- und Fußzeile des Formulars.
+
+## Konfigurieren absoluter Anforderungs-URLs mit GuideBridge {#configure-base-url}
+
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, können Sie die GuideBridge-API verwenden, um den von den GuideRuntime-Bibliotheken generierten Anfragen einen absoluten AEM-Veröffentlichungsursprung voranzustellen. Verwenden Sie die `baseUrl`-Konfiguration, um guideRuntime anzuweisen, Anforderungen wie Formularübermittlung, Datenabruf zum Vorbefüllen, Generierung von Datensatzdokumenten, Datei-Uploads und internen Übermittlungsvorgängen den angegebenen absoluten Ursprung voranzustellen.
+
+Fügen Sie der einbettenden Web-Seite das folgende Snippet zusammen mit der vorhandenen `guideBridge.connect`-Implementierung hinzu:
+
+```javascript
+window.guideBridge.connect(function () {
+    window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
+});
+```
+
+Ersetzen Sie `https://publish.example.com` durch die Veröffentlichungs-URL des AEM Forms-Servers.
+
+Mit dieser Konfiguration wird eine Anfrage-URL ähnlich dem folgenden Beispiel angezeigt:
+
+`/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp`
+
+wird wie folgt an den AEM-Server gesendet:
+
+`https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp`
+
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, müssen Sie auch CORS in der AEM-Veröffentlichungsinstanz konfigurieren. Führen Sie die im Abschnitt &quot;AEM Forms [&#x200B; Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site aktivieren“ &#x200B;](#cross-site).
 
 ## Beispieltopologie {#sample-topology}
 
-Die externe Web-Seite, in die das adaptive Formular eingebettet wird, sendet Anfragen an den AEM-Server, der sich in der Regel hinter der Firewall in einem privaten Netzwerk befindet. Um sicherzustellen, dass die Anforderungen sicher auf den AEM-Server geleitet werden, wird empfohlen, einen Reverse-Proxy-Server einzurichten.
+Die externe Web-Seite, in die das adaptive Formular eingebettet wird, sendet Anfragen an den AEM-Server, der sich in der Regel hinter der Firewall in einem privaten Netzwerk befindet. Um sicherzustellen, dass die Anfragen sicher an den AEM-Server weitergeleitet werden, wird empfohlen, einen Reverse-Proxy-Server einzurichten.
 
-Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server ohne Dispatcher einrichten können.  In diesem Beispiel hosten Sie den AEM-Server mit dem Kontextpfad `/forms` und weisen `/forms` für den Reverse-Proxy zu. Dadurch wird sichergestellt, dass alle Anforderungen für `/forms` auf dem Apache-Server an die AEM-Instanz geleitet werden. Diese Topologie hilft dabei, die Anzahl der Regeln auf der Dispatcher-Ebene zu reduzieren, da alle Anforderungen mit dem Präfix `/forms` an den AEM-Server weitergeleitet werden.
+Sehen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server ohne Dispatcher einrichten können. In diesem Beispiel hosten Sie den AEM-Server mit dem Kontextpfad `/forms` und weisen `/forms` für den Reverse-Proxy zu. Dadurch wird sichergestellt, dass alle Anfragen für `/forms` auf dem Apache-Server an die AEM-Instanz weitergeleitet werden. Diese Topologie hilft dabei, die Anzahl der Regeln auf der Dispatcher-Ebene zu reduzieren, da alle Anfragen mit dem Präfix `/forms` an den AEM-Server weitergeleitet werden.
 
 1. Öffnen Sie die Konfigurationsdatei `httpd.conf` und heben Sie den Kommentar für die folgenden Codezeilen auf. Alternativ können Sie die folgenden Codezeilen in die Datei einfügen.
 
@@ -153,17 +177,104 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Web-Seite die folgenden Best Practices:
 
-* Stellen Sie sicher, dass die in den CSS der Web-Seite definierten Formatierungsregeln nicht mit den CSS des Formularobjekts in Konflikt stehen.  Um dies zu vermeiden, können Sie die CSS der Web-Seite im Design für das adaptive Formular mithilfe der AEM-Client-Bibliothek wiederverwenden.  Weitere Informationen zur Verwendung der Client-Bibliothek in den Designs für adaptive Formulare finden Sie unter [Designs in AEM Forms](/help/forms/using-themes-in-core-components.md).
-* Stellen Sie sicher, dass der Formular-Container auf der Web-Seite die gesamte Fensterbreite verwendet. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren.  Wenn der Formular-Container nicht die gesamte Fensterbreite einnimmt, müssen Sie benutzerdefinierte CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
+* Stellen Sie sicher, dass die in den CSS der Web-Seite definierten Formatierungsregeln nicht mit den CSS des Formularobjekts in Konflikt stehen. Um dies zu vermeiden, können Sie die CSS der Web-Seite im Design für das adaptive Formular mithilfe der AEM-Client-Bibliothek wiederverwenden. Weitere Informationen zur Verwendung der Client-Bibliothek in den Designs für adaptive Formulare finden Sie unter [Designs in AEM Forms](/help/forms/using-themes-in-core-components.md).
+* Stellen Sie sicher, dass der Formular-Container auf der Web-Seite die gesamte Fensterbreite verwendet. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formular-Container nicht die gesamte Fensterbreite einnimmt, müssen Sie ein benutzerdefiniertes CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
 * Verwenden Sie die API `[getData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)`, um die XML- oder JSON-Darstellung der Formulardaten im Client abzurufen.
 * Verwenden Sie die API `[unloadAdaptiveForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)`, um das adaptive Formular aus HTML DOM zu entfernen.
-* Richten Sie den Header „access-control-origin“ ein, wenn Sie eine Antwort vom AEM-Server senden.
+* Richten Sie den Header „access-control-origin“ ein, wenn Sie eine Antwort von einem AEM-Server senden.
 
 ## Bereitstellung adaptiver Formulare auf einer Domain-übergreifenden Site durch AEM Forms {#cross-site}
 
-1. Gehen Sie in der AEM-Veröffentlichungsinstanz zum Konfigurations-Manager der AEM-Web-Konsole unter `https://'[server]:[port]'/system/console/configMgr`.
-1. Suchen Sie die Konfiguration **Apache Sling Referrer Filter** und öffnen Sie sie.
-1. Geben Sie im Feld Zulässige Hosts die Domain an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungs-Domains anzugeben.
+Wenn sich der AEM-Server und die Web-Seite in verschiedenen Domains befinden, konfigurieren Sie die AEM-Veröffentlichungsinstanz mit einer der folgenden Optionen.
+
+>[!NOTE]
+>
+> AEM as a Cloud Service bietet keinen Zugriff auf die OSGi-Web-Konsole in Veröffentlichungsinstanzen. Fügen Sie die folgenden Konfigurationen zu Ihrem Cloud Manager-Git-Repository unter `ui.config/src/main/content/jcr_root/apps/<application-folder>/osgiconfig/config.publish` hinzu und [&#x200B; Sie die Änderungen über Cloud Manager &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
+
+>[!BEGINTABS]
+
+>[!TAB Verwenden der GuideBridge-baseUrl-Konfiguration]
+
+Wenn Sie die GuideBridge-`baseUrl`-Konfiguration verwenden, konfigurieren Sie CORS auf der AEM-Veröffentlichungsinstanz so, dass der AEM-Server geeignete Kopfzeilen für die Endpunkte „Übermittlung“, „Vorbefüllen“ und „Datensatzdokument“ zurückgibt.
+
+1. Navigieren Sie in Ihrem Cloud Manager-Git-Repository zu `ui.config/src/main/content/jcr_root/apps/<application-folder>/osgiconfig/config.publish`.
+1. Erstellen Sie die OSGi-Konfigurationsdatei `com.adobe.granite.cors.impl.CORSPolicyImpl~embedded-forms.cfg.json` mit Inhalten, die dem folgenden Beispiel ähneln. Ersetzen Sie `https://www.example.com` durch den Ursprung der einbettenden Web-Seite.
+
+   ```json
+   {
+     "supportscredentials": false,
+     "supportedmethods": [
+       "GET",
+       "HEAD",
+       "POST"
+     ],
+     "exposedheaders": [
+       ""
+     ],
+     "alloworigin": [
+       "https://www.example.com"
+     ],
+     "maxage:Integer": 1800,
+     "alloworiginregexp": [
+       ""
+     ],
+     "supportedheaders": [
+       "Origin",
+       "Accept",
+       "X-Requested-With",
+       "Content-Type",
+       "Access-Control-Request-Method",
+       "Access-Control-Request-Headers"
+     ],
+     "allowedpaths": [
+       "/content/forms/af/.*",
+       "/libs/granite/csrf/token.json"
+     ]
+   }
+   ```
+
+1. Übertragen, Übertragen und Bereitstellen der Konfiguration über eine Cloud Manager-Pipeline.
+
+Weitere Informationen finden Sie unter [CORS-Konfiguration (Cross-Origin Resource Sharing)](/help/headless/deployment/cross-origin-resource-sharing.md).
+
+>[!TAB Apache Sling Referrer Filter]
+
+Wenn Sie einen Reverse-Proxy verwenden oder das adaptive Formular ohne die GuideBridge-`baseUrl`-Konfiguration einbetten, konfigurieren Sie den Apache Sling Referrer-Filter auf der AEM-Veröffentlichungsinstanz.
+
+1. Navigieren Sie in Ihrem Cloud Manager-Git-Repository zu `ui.config/src/main/content/jcr_root/apps/<application-folder>/osgiconfig/config.publish`.
+1. Erstellen oder aktualisieren Sie die OSGi-Konfigurationsdatei `org.apache.sling.security.impl.ReferrerFilter.cfg.json` mit Inhalten, die dem folgenden Beispiel ähneln. Ersetzen Sie `www.example.com` durch die Domain, in der sich die Webseite befindet.
+
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "www.example.com"
+     ],
+     "allow.hosts.regexp": [
+       ""
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
+
+1. Übertragen, Übertragen und Bereitstellen der Konfiguration über eine Cloud Manager-Pipeline.
+
+>[!WARNING]
+>
+> Der Referrer-Filter von AEM ist keine OSGi-Konfigurations-Factory, d. h., für einen AEM-Service ist immer nur eine Konfiguration aktiv. Wenn möglich, vermeiden Sie das Hinzufügen benutzerdefinierter Referrer-Filterkonfigurationen, da dies die nativen Konfigurationen von AEM überschreibt und die Produktfunktionalität beeinträchtigen kann.
+
+Weitere Informationen finden Sie unter [Konfiguration des Referrer-Filters](/help/headless/deployment/referrer-filter.md).
+
+>[!ENDTABS]
 
 <!--
 
