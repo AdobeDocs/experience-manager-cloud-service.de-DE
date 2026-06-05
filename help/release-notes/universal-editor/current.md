@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise zum universellen Editor 2026.05.28
-description: Dies sind die Versionshinweise für die Version 2026.05.28 des universellen Editors.
+title: Versionshinweise für Universal Editor 2026.06.04
+description: Dies sind die Versionshinweise für die Version 2026.06.05 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 63c3a7e2ca28890370701fd388f6cc9f068c6dc5
+source-git-commit: 683e8c5f5d51872d9ba9cee59b05570920e697fe
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 14%
+source-wordcount: '124'
+ht-degree: 20%
 
 ---
 
 
-# Versionshinweise zum universellen Editor 2026.05.28 {#release-notes}
+# Versionshinweise zum universellen Editor 2026.06.05 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 28. Mai 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 5. Juni 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,11 +26,8 @@ Dies sind die Versionshinweise für die Version vom 28. Mai 2026 des universelle
 
 ## Neue Funktionen {#what-is-new}
 
-* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt ([&#x200B; Zugriff auf die Seiteneigenschaften von AEM.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
-   * Dadurch werden die Funktionen der früheren `aem-page-properties` ([) &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor hinzugefügt.
-   * Die Schaltfläche wird nur angezeigt, wenn die Remote-Seite eine [Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` aufweist und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
+* Der universelle Editor unterstützt jetzt [authentifizierte Dokumenterstellungsseiten“](https://docs.da.live/developers/reference/access-control)
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die standardmäßige Hintergrundfarbe der Arbeitsfläche für die Bearbeitung ist jetzt weiß (#FFFFFF), wenn das Programm keine eigene Hintergrundfarbe festlegt.
-* Es wurde ein Problem behoben, bei dem das Kopieren und Einfügen über Seiten hinweg nicht funktionierte.
+* Es wurde ein Problem behoben, bei dem durch Ändern des ausgewählten Textes von **Überschrift** zu **Code** im Rich-Text-Editor die Formatierung auf **Absatz** zurückgesetzt werden konnte, anstatt den ausgewählten Stil beizubehalten.

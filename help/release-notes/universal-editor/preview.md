@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: e9b972bcc2c1570ecfbce09550e4df143e2b64a8
+source-git-commit: ca134ec3e691e9e8a3f5609c786720c91780ceeb
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 28. Mai 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 11. Juni 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,4 +28,5 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Es wurde ein Problem behoben, bei dem durch Ändern des ausgewählten Textes von *Überschrift* zu *Code* im Rich-Text-Editor die Formatierung auf *Absatz* zurückgesetzt werden konnte, anstatt den ausgewählten Code-Stil beizubehalten.
+* Es wurde ein Problem behoben, bei dem leere Knoten bei bestimmten Vorgängen nicht ordnungsgemäß aus dem JCR gelöscht wurden.
+* Dekorative Bilder werden jetzt ordnungsgemäß vor Hilfstechnologien verborgen.
