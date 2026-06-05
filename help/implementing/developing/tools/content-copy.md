@@ -4,10 +4,10 @@ description: Mit dem Inhaltskopie-Werkzeug können Benutzende veränderbare Inha
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
+source-git-commit: e0b07719cbafdd0b19d597db83d319c50fb993cd
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 70%
+source-wordcount: '1610'
+ht-degree: 69%
 
 ---
 
@@ -108,7 +108,7 @@ Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwend
 Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten verwenden.
 
 >[!NOTE]
-> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [&#x200B; Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
+> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [ Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
 
 **So kopieren Sie Inhalte:**
 
@@ -151,6 +151,11 @@ Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten
            ![Kopieren von Inhalten](assets/content-copy-wipe-destination-warning.png)
 
       * Wenn Sie nicht &quot;**vor dem Import löschen“ wählen** funktioniert **Fluss** Inhalt kopieren“ wie zuvor.
+
+   * **Richtlinie für Package-Import** Wählen Sie die beim Package-Import zu verwendende Richtlinie aus:
+     ![Kopieren von Inhalten](assets/content-copy-import-policy.png)
+      * **Bei erstem Fehler anhalten**: Standardmodus, wird nach dem ersten Fehler angehalten
+      * **Mit verbleibenden Paketen fortfahren**: Der Importvorgang wird auch nach einem Fehler fortgesetzt. Die Pakete (und deren Inhalt), die nicht erfolgreich waren, finden Sie in den Importprotokollen
 
 1. Klicken Sie auf **Kopieren**.
 
