@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 662715341c35fab62ac0c882a03cba8f41748dbf
+source-git-commit: 4942d2acaa59ec0a5b8c4e7b8a0ea5d29995cea6
 workflow-type: tm+mt
-source-wordcount: '4154'
+source-wordcount: '4171'
 ht-degree: 71%
 
 ---
@@ -251,6 +251,12 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden bere
     <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extract<br>org.apache.tika.fork<br>org.apache.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.language.translate <br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chmParser m.accessor<br>org.apache.parser.chm.assertion<br>org.apache.parser.chm.coreOrg.apache.parser.chm.exceptionOrg.apache.tika.parser.chm.lzxXorg.apache.parser.codeOrg.apache.apache.apache.parser.ctake<br>org.apache.parser.parser.ctake<br>org.apache.parser.parser.dbfParserOrg.apache .tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwgOrg.apache.tika.parser.enviOrg.apache.tika.parser.parser.parser.org.apache.parser.parser<br>org.apache.tika.parser.epubOrg.apache.apache<br>parser.apache.tika<br>feed.<br>.org.apache.tika.parser.fontOrg.apache.tika.parser.parser al<br>.org.apache.parser.topic<br>org.apache.tika.parser.geo.topic.Gazetteerorg.apache.parser.geoinfoOrg.apache.parser.gribOrg.parser<br>.hdfParser.parser.org.apache.parser.htmlParserorg<br>parser.apache.parser.image.parser.org.apache.apache.<br>.parser.xache.parser.org.apache tika.parser.iptc<br>org.apache.tika.parser.isTabab<br>org.apache.tika.parser.iWorkOrg.apache.tika.parser.iwork.iwanaOrg.apache.tika.parser.jdbcOrg.apache.apache.parser.org.parser.apache.apache.apache.tika.parser.jpegOrgApache.apache.parserOrg.parserOrg.apache<br>org.apache tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.parser.microsoft.ooxmlorg.apache.tika.parser.parser.microsoft.tika.parser.microsoft.ooxml.xwpfMlXWPFapache.org.apache.org.apache.org.apache.org.ooxml.xwpf.ml2006org.apache.parser.microsoft.xmlParser g.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.nerOrg.apache.parser.ner.corenlpOrg.apache.apache.ner.grobidOrg.apache.tika.Ner.mitieOrg.apacheTikaParser.parser.Ner.nltkOrgApache.apache.tika.parser.ner.opennlpOrg.apache.tika.tika parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocrOrg.apache.tika.parser.org.apache.tika.parser.parser.parser.org.parser.parser.parser.org.apache.tika.parser.parser<br>org.apacheTikaParser.parserOrg.apache.tikaOrg.apache.tika.parser.prtOrg.apache.tika.parser Recognition<br>org.apache.tika.parser.Recognition.F<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.Sentiment CD<br>org.apache.parser.strings<br>tikaorg.apache.parser.txtOrg.apache.tika.parser.utilsOrg.apache.tika.parser.videoOrg.apache.tika.parser.parser.utilsOrg.apache.apache.parser.xmlParser.org.apache.apache.<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>.tika.utilsorg.apache.org.apache.org.apache.org.aptika.org.apache.org.apache</td>
     <td>Diese Version von Apache Tika ist veraltet und wird daher aus Cloud Service entfernt. Wechseln Sie zu einer neueren Version von Apache Tika.</td>
     <td>4/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
+    <td>Verwenden Sie stattdessen die offizielle Servlet-API für die Verarbeitung von Datei-Uploads.</td>
+    <td>2/6/2026</td>
     <td>9/30/2026</td>
   </tr>
   <tr>
