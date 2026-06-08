@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1723'
 ht-degree: 55%
 
 ---
@@ -118,11 +118,7 @@ Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial 
 * **WAF-DDOS-Schutz** - Mit dieser Option wird die Web Application Firewall durch Regeln zum Schutz Ihrer Anwendung aktiviert.
    * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
    * Unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) finden Sie Informationen dazu, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
-* **Kundenseitig verwaltete Schlüssel** - Mit dieser Option wird CMK (Customer Managed Keys) für das Programm aktiviert, sodass Sie eigene Verschlüsselungsschlüssel für ruhende Daten in Azure Blob Storage und MongoDB bereitstellen können.
-
-  >[!IMPORTANT]
-  >
-  >CMK kann nach der Programmerstellung nicht mehr aktiviert oder deaktiviert werden.
+* **Kundenseitig verwaltete Schlüssel** - Mit dieser Option wird CMK (Customer Managed Keys) für das Programm aktiviert, sodass Sie eigene Verschlüsselungsschlüssel für ruhende Daten in Azure Blob Storage und MongoDB bereitstellen können. Wenn Sie möchten, können Sie später CMK aktivieren, indem Sie [ein Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * CMK ist nur für Cloud Service-Programme verfügbar. Es kann nicht in Sandbox-Programmen aktiviert werden.
    * Innerhalb eines Programms deckt CMK nur die Staging- und Produktionsumgebungen ab.
