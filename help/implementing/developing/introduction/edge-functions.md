@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 757b64c4b3340f56cc8a5e5a7c1200fcd8d0c1be
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 3%
+source-wordcount: '1417'
+ht-degree: 2%
 
 ---
 
@@ -112,6 +112,7 @@ Die Konfiguration unterstützt bis zu drei Services. Die Schlüssel der obersten
 | `services` | Liste der Edge-Funktions-Services, die jeweils durch eine `name` gekennzeichnet sind. |
 | `configs` | Schlüssel/Wert-Paare, die allen Edge-Funktions-Services als Umgebungsvariablen bereitgestellt werden. |
 | `secrets` | Schlüssel/Wert-Paare, die auf Cloud Manager-Geheimnisse verweisen und für alle Edge-Funktions-Services verfügbar gemacht werden. |
+| `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüssel-Wert-Daten zur Laufzeit, die über alle Edge-Funktionsdienste gemeinsam genutzt werden. |
 
 ### &#x200B;3. Hinzufügen von CDN-Ursprungsauswahlregeln {#cdn-routing}
 
@@ -244,6 +245,10 @@ const request = new Request("https://example.com/test");
 const response = await fetch(request, { backend: "my-origin-name" });
 ```
 
+>[!NOTE]
+>
+>Service-Stores (`configs`, `secrets` und `kvs`) sind in „Sandbox[Programmen“ &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktions-Services selbst werden normalerweise in Sandbox-Umgebungen ausgeführt - nur die Stores werden nicht bereitgestellt.
+
 ### Service-Konfiguration {#service-configuration}
 
 Offenlegung von Umgebungsvariablen für Ihre Funktionen mithilfe der `configs` in `edgeFunctions.yaml`. Die Werte werden in einem Konfigurationsspeicher mit dem Namen `config_default` gespeichert:
@@ -293,6 +298,35 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Bei Schlüsselnamen wird zwischen Groß- und Kleinschreibung unterschieden.
 >- Geheime Daten sind unveränderlich, sobald sie erstellt wurden.
 >- Der geheime Speicher wird für alle Edge-Funktions-Services in derselben Umgebung freigegeben.
+
+### KV-Dienstspeicher {#service-kv-store}
+
+Edge-Funktionen können beliebige Schlüssel-Wert-Daten zur Laufzeit über einen KV-Speicher lesen und schreiben. Um sie zu aktivieren, legen Sie `kvs: true` in `edgeFunctions.yaml` fest:
+
+```yaml
+kvs: true
+```
+
+Dadurch wird ein leerer KV-Speicher mit dem Namen `kv_default` bereitgestellt. Füllen Sie es zur Laufzeit aus Ihrem Edge-Funktions-Code mithilfe der [Fastly KV Store-API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore):
+
+```js
+import { KVStore } from "fastly:kv-store";
+
+const kv = new KVStore('kv_default');
+
+// Read a value
+const entry = await kv.get('visit-count');
+const count = entry ? Number(await entry.text()) : 0;
+
+// Write a value
+await kv.put('visit-count', String(count + 1));
+```
+
+>[!NOTE]
+>
+>- Der KV-Speicher heißt immer `kv_default`.
+>- Der KV-Speicher ist zur Bereitstellungszeit leer; füllen Sie ihn zur Laufzeit über die [Fastly KV-Speicher-API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore). Deklarative Schlüssel/Wert-Einträge in `edgeFunctions.yaml` werden nicht unterstützt.
+>- Der KV-Speicher wird über alle Edge-Funktions-Services in derselben Umgebung gemeinsam genutzt.
 
 ### Protokollierung {#logging}
 
