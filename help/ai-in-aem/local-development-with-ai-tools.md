@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 38e599d34e591d0d8c9f822c0296bef27d24a605
+source-git-commit: 293b9136ee5249ee435b089b49dcaab2ca45fea8
 workflow-type: tm+mt
 source-wordcount: '1836'
 ht-degree: 0%
@@ -222,6 +222,8 @@ Jeder MCP-Client kann eine Verbindung herstellen, indem er mit einem `Authorizat
 Der Dispatcher MCP-Server ist im Paket mit dem AEM Dispatcher SDK enthalten. Dadurch können KI-Tools die Dispatcher- und Apache-HTTPD-Konfiguration überprüfen, die Verarbeitung von Trace-Anfragen verfolgen und das Cacheverhalten mit einer Dispatcher-Instanz überprüfen, die lokal in Docker ausgeführt wird.
 
 Anders als die Dispatcher-Kenntnisse stellt der Dispatcher MCP-Server nur Tools bereit: sieben MCP-Tools und keine Eingabeaufforderungen oder Ressourcen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3491968?captions=ger&quality=12&learn=on)
 
 ### Voraussetzungen {#prerequisites}
 
