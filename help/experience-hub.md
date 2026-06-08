@@ -8,7 +8,7 @@ feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: e31b3f6a249d6b0a5836f42b5cf8725e1339b117
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 65%
@@ -89,9 +89,7 @@ Wenn keine AEM Cloud Service- oder Managed Services-Produktionsumgebungen vorhan
 
 +++**Wie konfiguriere ich kundenseitig verwaltete Schlüssel von Experience Hub?**
 
-Wenn CMK für Ihr Programm aktiviert ist, stellt Experience Hub einen direkten Link zur CMK-Konfigurationsseite bereit. Wählen Sie **CMK konfigurieren** aus Ihrer Programmkarte aus oder
-über Schnellbefehle. Die vollständigen Konfigurationsschritte finden Sie unter
-[Einrichtung kundenverwalteter Schlüssel für AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+Wenn CMK für Ihr Programm aktiviert ist, stellt Experience Hub einen direkten Link zur CMK-Konfigurationsseite bereit. Wählen Sie **CMK konfigurieren** aus Ihrer Programmkarte oder aus den Schnellbefehlen aus. Die vollständigen Konfigurationsschritte finden Sie unter [Einrichten kundenverwalteter Schlüssel für AEM as a Cloud Service](/help/security/customer-managed-keys.md).
 
 +++
 
