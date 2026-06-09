@@ -242,7 +242,7 @@ Der [Day CQ Mail Service OSGI](https://experienceleague.adobe.com/docs/experienc
 
 ### Konfiguration {#email-configuration}
 
-E-Mails in AEM sollten mit dem [Day CQ Mail Service OSGI-Service) gesendet ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service).
+E-Mails in AEM sollten mit dem [Day CQ Mail Service OSGI-Service) gesendet &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service).
 
 Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService` OSGi-Dienst:
 
