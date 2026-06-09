@@ -5,17 +5,17 @@ feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 14%
+source-wordcount: '1341'
+ht-degree: 15%
 
 ---
 
 
 # Speichern von Formularen als Entwürfe und Auflisten auf der Sites-Seite
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Erwägen Sie einen Benutzer, der mit dem Ausfüllen eines Formulars beginnt, aber später anhalten und zurückkehren muss. AEM bietet eine `save-as-draft` Option, mit der Benutzende das Formular als Entwurf für den zukünftigen Abschluss speichern können. Um dies zu erleichtern, stellt AEM die Forms **Portalkomponente „Entwürfe und Übermittlungen** bereit, die Entwürfe und Übermittlungen auf AEM Sites-Seiten anzeigt. Die Komponente listet Formulare auf, die als Entwürfe für den späteren Abschluss gespeichert wurden, sowie die gesendeten Formulare. Nur angemeldete Benutzer können ihre Entwürfe bearbeiten oder ihre gesendeten Formulare anzeigen. Wenn ein anonymer Benutzer jedoch mithilfe der Komponente **Suche und Auflister** durch die Liste der Formulare navigiert und ein Formular als Entwurf speichert, wird dieser Entwurf nicht durch die Komponente **Entwürfe und Sendungen** aufgeführt. Um Entwürfe und Übermittlungen anzuzeigen, müssen Benutzer zum Zeitpunkt der Formularübermittlung angemeldet sein.
 
@@ -159,23 +159,19 @@ Sie können ein adaptives Formular auch so konfigurieren, dass es automatisch au
 ## Anzeigen von Entwürfen/gesendeten Formularen auf der Sites-Seite mithilfe der Komponente „Drafts &amp; Submissions“
 
 Um gespeicherte Entwürfe oder übermittelte Formulare anzuzeigen, verwenden Sie die **Entwürfe und Übermittlungen** Forms Portal-Komponente.
-Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld **Konfigurieren der Komponente „Entwürfe und Einsendungen** als [Forms&quot; ausgewählt ist](#configure-properties-of-the-drafts--submissions-component) werden die als Entwürfe gespeicherten Formulare auf der Sites-Seite angezeigt. Sie können die Entwürfe öffnen, indem Sie auf die Auslassungspunkte (…) klicken, um das Formular auszufüllen.
+Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld [Konfigurieren der Komponente „Entwürfe und Einsendungen **als** Forms&quot; ausgewählt ist](#configure-properties-of-the-drafts--submissions-component) werden die als Entwürfe gespeicherten Formulare auf der Sites-Seite angezeigt. Sie können die Entwürfe öffnen, indem Sie auf die Auslassungspunkte (…) klicken, um das Formular auszufüllen.
 
 ![Symbol für Entwürfe](assets/drafts-component.png)
 
-Forms Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, &#x200B;](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
+Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, ](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
 
 ![Symbol für Einsendungen](assets/submission-listing.png)
 
-Sie können Formulare auch verwerfen, indem Sie auf die Auslassungspunkte (…) in der rechten unteren Ecke des Formulars klicken.
-
->[!NOTE]
->
-> Im Forms-Portal unterstützt die Komponente „Drafts &amp; Submissions“ nur Übermittlungen aus Foundation-basierten Formularen.
+Sie können Formulare auch verwerfen, indem Sie auf die Auslassungspunkte (…) klicken die in der rechten unteren Ecke des Formulars angezeigt wird.
 
 ## Nächste Schritte
 
-Im nächsten Artikel erfahren wir, [&#x200B; Sie mithilfe der Link-Forms-Portal-Komponente Verweise auf Formulare auf der Sites-Seite hinzufügen](/help/forms/add-form-link-to-aem-sites-page.md).
+Im nächsten Artikel erfahren wir, [ Sie mithilfe der Link-Forms-Portal-Komponente Verweise auf Formulare auf der Sites-Seite hinzufügen](/help/forms/add-form-link-to-aem-sites-page.md).
 
 ## Verwandte Artikel
 

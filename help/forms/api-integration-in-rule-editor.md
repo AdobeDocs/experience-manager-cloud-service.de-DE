@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 keywords: Integrieren der API im Regeleditor, Aufrufen von Service-Verbesserungen
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 4%
+source-wordcount: '1554'
+ht-degree: 2%
 
 ---
 
@@ -52,12 +52,16 @@ Im folgenden Screenshot sehen Sie das Konfigurationsfenster für die API-Integra
 * **API URL**: Endpunkt des API-Services.
 * **HTTP-Methode auswählen**: Die HTTP-Anfragemethode, die zum Aufrufen der API verwendet wird.
 * **Content-**: Definiert das Anfrage- und Antwortformat.
-* **Verschlüsselung erforderlich**: (Optional) Stellt sicher, dass vertrauliche Daten während der Übertragung verschlüsselt werden.
+* **Verschlüsselung erforderlich** (Optional) Wenn diese Option aktiviert ist, können Anfrage- und Antwort-Payloads mit benutzerdefinierten Funktionen in „function.**&quot;** werden. Ein Feld **Öffentlicher Schlüssel** wird angezeigt. Fügen Sie Ihren öffentlichen Schlüssel in dieses Feld ein, bevor Sie die API-Integrationskonfiguration speichern.
 * **Auf Client ausführen**: Wenn diese Option aktiviert ist, erfolgt der API-Aufruf vom Client (Browser) anstelle vom Server.
+
+>[!NOTE]
+>
+> Schritte und Beispielfunktionen **verschlüsseln** und **entschlüsseln** finden Sie unter [Verschlüsselung und Entschlüsselung](#encryption-and-decryption).
 
 **Authentifizierungstyp**
 
-* **Optionen**: Keine, Standard, API-Schlüssel, OAuth 2.0.
+* **options**: Keine, Standard, API-Schlüssel.
 
 **Eingabeparameter**
 
@@ -90,7 +94,7 @@ Im folgenden Screenshot sehen Sie das Konfigurationsfenster für die API-Integra
 6. Zielland (Dropdown)
 7. Vorgesehenes Anreisedatum (Datum)
 
-Anstatt eine statische Liste von Ländern zu verwalten, ruft das Formular Länderinformationen (Kontinent, Hauptstadt, ISO-Alpha-Codes usw.) mithilfe der **getCountryName-API**:
+Anstatt eine statische Liste von Ländern zu verwalten, ruft das Formular dynamisch Länderinformationen ab (Kontinent, Hauptstadt, ISO-Alpha-Codes usw.) mithilfe der **getCountryName-API**:
 
 `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 
@@ -126,7 +130,70 @@ Ebenso verwenden **Land der Passausstellung** und **Zielland** denselben API-Auf
 
 >[!NOTE]
 >
-> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
+> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
+
+## Bearbeiten einer vorhandenen API-Integration
+
+Nachdem Sie eine API-Integration erstellt haben, können Sie sie über den Regeleditor aktualisieren, ohne eine neue Integration zu erstellen. Wenn eine **Invoke Service**-Anweisung auf eine API-Integration verweist **ist für diese Integration eine** Bearbeiten“ verfügbar.
+
+So bearbeiten Sie eine vorhandene API-Integration:
+
+1. Öffnen Sie die Regel im Regeleditor, der eine Anweisung **Dienst aufrufen** enthält.
+2. Wählen Sie in **Anweisung „Service aufrufen** die API-Integration aus, die Sie aktualisieren möchten.
+3. Klicken Sie auf **Bearbeiten**, um das Fenster **API-Integrationskonfiguration** zu öffnen.
+4. Aktualisieren Sie die API-URL, Authentifizierungs-, Eingabe- und Ausgabeparameter oder andere Einstellungen und speichern Sie Ihre Änderungen.
+
+![API-Integration bearbeiten](/help/forms/assets/edit-api-rule-editor.png)
+
+## Verschlüsselung und Entschlüsselung
+
+Wenn **Verschlüsselung erforderlich** für eine API-Integration ausgewählt ist, fügen Sie Ihren öffentlichen Schlüssel in das Feld **Öffentlicher Schlüssel** im Konfigurationsfenster der API-Integration ein. Der Regeleditor ruft vor jeder ausgehenden Anfrage **verschlüsseln** auf und **nach** Antwort „entschlüsseln“. Wenn Sie in „function.js“ keine benutzerdefinierte Logik **,** beide Funktionen die Payload unverändert zurück.
+
+Um Anfrage- und Antwortdaten zu ver- und entschlüsseln, fügen Sie &quot;**&quot;** &quot;**&quot;** Funktionen zu **function.js**:
+
+1. Öffnen Sie die Datei **function.js** für Ihr adaptives Formular.
+2. Fügen Sie eine **encrypt**-Funktion hinzu, um die Anfrage (Hauptteil, Kopfzeilen und zugehörige Optionen) vor dem API-Aufruf umzuwandeln.
+3. Fügen Sie eine Funktion **decrypt** hinzu, um die Antwort nach einem erfolgreichen API-Aufruf umzuwandeln. Die Funktion **decrypt** empfängt die verschlüsselte Antwort und **originalRequest**, die alle **cryptoMetadata** enthält, die während der Verschlüsselung festgelegt wurden.
+4. Speichern Sie **function.js** und testen Sie dann die Integration mithilfe von **Invoke Service** im Regeleditor.
+
+Im folgenden Beispielcode wird veranschaulicht, wie die Funktion **encrypt** in &quot;**.js“ hinzugefügt**:
+
+```javascript
+function encrypt(payload) {
+    const { body, headers, options } = payload;
+    const { encryptedBody, encryptedKey } = await myRsaEncrypt(body);
+    return {
+        body: encryptedBody,
+        headers: { ...headers, 'X-Encrypted-Key': encryptedKey },
+        cryptoMetadata: { keyId: 'rsa-2048-v1' },
+        options
+    };
+}
+```
+
+
+
+**Verschlüsseln (Payload-Hook für die Anfrage)**
+
+Die **encrypt**-Funktion empfängt ein Payload-Objekt mit **body**, **headers** und optional **cryptoMetadata** und **options**. Gibt eine geänderte Version derselben Form zurück. Das **options**-Feld übernimmt Abrufen von API-Einstellungen (z. B. `credentials: 'include'`) über die Anfrage-Pipeline. Werte in **options** werden auf den zugrunde liegenden `fetch()` angewendet. Das **cryptoMetadata**-Feld speichert Daten für die Verwendung während der Entschlüsselung. Was Sie in **cryptoMetadata** während der Verschlüsselung festlegen, wird in **originalRequest.cryptoMetadata** beibehalten und später für die **decrypt**-Funktion verfügbar gemacht. Trotz des Namens **encrypt** ein allgemeiner Pre-Request-Transformator. Sie können damit Kopfzeilen oder den Anfragetext ändern, nicht nur zur kryptografischen Verschlüsselung. Die Standardimplementierung gibt die Payload unverändert zurück.
+>>
+
+Der folgende Beispiel-Code veranschaulicht eine &quot;**&quot;-**:
+
+```javascript
+function decrypt(encryptedData, originalRequest) {
+    const { keyId } = originalRequest?.cryptoMetadata || {};
+    return await myRsaDecrypt(encryptedData, keyId);
+}
+```
+
+**Entschlüsseln (Hook für POST-Anforderungsantwort)**
+
+Die Funktion **decrypt** wird nach einer erfolgreichen Antwort ausgeführt. Sie erhält den Antworttext und **originalRequest**. Das **originalRequest**-Objekt enthält **cryptoMetadata** aus Ihrer **encrypt**-Funktion zusammen mit **url**, **method** und anderen Anfragemetadaten. Er muss den entschlüsselten Text synchron oder asynchron zurückgeben. Die Standardimplementierung gibt die Daten unverändert zurück. Die Funktion **decrypt** wird nur bei erfolgreichen Antworten ausgeführt. Fehlerantworten rufen nicht auf **decrypt**.
+
+>[!NOTE]
+>
+> Ersetzen Sie in den obigen Beispielen `myRsaEncrypt` und `myRsaDecrypt` durch Ihre Verschlüsselungsfunktionen.
 
 ## Implementieren des Wiederholungsmechanismus bei API-Fehlern
 
@@ -207,4 +274,4 @@ Im obigen Code verwaltet die Funktion **retryHandler** API-Anfragen mit automati
   Nein. Mit dem visuellen Regeleditor können Sie APIs direkt mit der Option **API-Integration erstellen** integrieren, ohne ein Formulardatenmodell zu erstellen. Dieser Ansatz eignet sich am besten für einfache oder formularspezifische Anwendungsfälle.
 
 * **Kann ich API-Aufrufe über den Regeleditor sichern?**\
-  Ja. Die API-Integrationskonfiguration bietet Authentifizierungsoptionen wie **Standard, API-Schlüssel und OAuth 2.0**. Sie können auch **Verschlüsselung erforderlich** aktivieren, um sicherzustellen, dass vertrauliche Daten sicher übertragen werden.
+  Ja. Die Konfiguration der API-Integration bietet Authentifizierungsoptionen wie **Standard** und **API-Schlüssel**. Sie können auch **Verschlüsselung erforderlich** auswählen und benutzerdefinierte Logik **** und **entschlüsseln** in **function.js**. Konfigurationsschritte und Beispiele finden Sie unter [Verschlüsselung und Entschlüsselung](#encryption-and-decryption).
