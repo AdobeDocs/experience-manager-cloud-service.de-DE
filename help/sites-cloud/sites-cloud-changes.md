@@ -6,10 +6,10 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5d1a5007a4089628fb72ec6a4ae5c576497a6c3a
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 99%
+source-wordcount: '575'
+ht-degree: 93%
 
 ---
 
@@ -55,11 +55,11 @@ Sie können den Status asynchroner Aufträge am [Dashboard für Hintergrundvorg�
 
 [WKND](https://wknd.site/), eine neue AEM-Referenz-Site, wurde aktualisiert und veröffentlicht, um die Best Practices für den Aufbau einer Website mit AEM und den umfassenden Satz an Funktionen, Komponenten und Bereitstellungsmodellen, die in AEM verfügbar sind, zu berücksichtigen. Die neue Referenz-Site und das [dazugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) gehen auf grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung mit Adobe Experience Manager Sites ein.
 
-Zuvor wurde We.Retail standardmäßig mit AEM installiert (sofern die Site nicht im Produktionsmodus gestartet wurde). In AEM as a Cloud Service ist eine Referenz-Website nicht standardmäßig installiert. Stattdessen werden das [Git-Repository](https://github.com/adobe/aem-guides-wknd/) und das [zugehörige Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) mit dem aktualisierten Code der WKND-Referenz-Website bereitgestellt.
+Zuvor wurde We.Retail standardmäßig mit AEM installiert (sofern die Site nicht im Produktionsmodus gestartet wurde). In AEM as a Cloud Service ist eine Referenz-Website nicht standardmäßig installiert. Stattdessen werden das [Git](https://github.com/adobe/aem-guides-wknd/)Repository und [begleitendes Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) mit dem aktualisierten Code der WKND-Referenz-Site bereitgestellt.
 
 ## Funktionen zur Laufzeit nicht verfügbar {#capabilities-not-available-at-runtime}
 
-AEM as a Cloud Service ist immer verfügbar und auf dem neuesten Stand. Um dies zu erreichen, muss das AEM-Repository in unveränderliche und veränderliche Inhalte unterteilt und der Zugriff auf unveränderliche Inhalte zur Laufzeit unterbunden werden. Weitere Informationen zu veränderlichen und unveränderlichen Inhalten finden Sie unter [Veränderliche und unveränderliche Bereiche des Repositorys im Vergleich](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
+AEM as a Cloud Service ist immer verfügbar und auf dem neuesten Stand. Um dies zu erreichen, muss das AEM-Repository in unveränderliche und veränderliche Inhalte unterteilt und der Zugriff auf unveränderliche Inhalte zur Laufzeit unterbunden werden. Weitere Informationen zu veränderlichen und unveränderlichen Inhalten finden Sie unter [Veränderliche und unveränderliche Bereiche des Repositorys](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
 
 Da zur Laufzeit nicht auf unveränderliche Inhalte zugegriffen werden kann, sind die folgenden AEM Sites-Vorgänge zur Laufzeit nicht verfügbar:
 

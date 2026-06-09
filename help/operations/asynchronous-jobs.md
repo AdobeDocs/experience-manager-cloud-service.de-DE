@@ -4,16 +4,16 @@ description: Adobe Experience Manager optimiert die Leistung durch asynchrone Au
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: 222d644d9989591baf449131e6a3718f15fcc7a0
+workflow-type: tm+mt
+source-wordcount: '865'
+ht-degree: 93%
 
 ---
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Um negative Auswirkungen auf die Leistung einzuschränken, werden bestimmte lang laufende und ressourcenintensive Vorgänge in Adobe Experience Manager asynchron im Hintergrund verarbeitet. Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
+Um negative Auswirkungen auf die Leistung zu reduzieren, verarbeitet Adobe Experience Manager bestimmte lang laufende und ressourcenintensive Vorgänge asynchron im Hintergrund. Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
 
 Zu diesen Vorgängen gehören:
 
@@ -51,7 +51,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
    * **[!UICONTROL Fehlschlag]** oder **[!UICONTROL Fehler]**: Der Vorgang konnte nicht bearbeitet werden.
 
-   * **[!UICONTROL Geplant]**: Die Verarbeitung des Vorgangs ist für einen späteren Zeitpunkt geplant
+   * **[!UICONTROL Geplant]**: Der Vorgang ist für die Verarbeitung zu einem späteren Zeitpunkt geplant
 
 1. Um einen aktiven Vorgang abzubrechen, wählen Sie ihn in der Liste aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Stopp]** in der Symbolleiste.
 
@@ -81,7 +81,7 @@ Es gibt verschiedene Optionen für asynchrone Aufträge, die konfiguriert werden
 
 ### Bereinigen von abgeschlossenen Aufträgen {#purging-completed-jobs}
 
-AEM führt jede Nacht um 01:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
+AEM führt jeden Tag um 01 Uhr einen Bereinigungsauftrag aus:00 um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
 
 Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem können Sie anpassen, wie lange die Details zu abgeschlossenen Aufträgen gespeichert werden sollen, bevor sie gelöscht werden. Darüber hinaus können Sie die maximale Anzahl abgeschlossener Aufträge konfigurieren, deren Details zu einem beliebigen Zeitpunkt gespeichert werden.
 
@@ -108,7 +108,7 @@ Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert übe
 
    ![Schwellenwert zum Löschen von Assets](assets/async-delete-threshold.png)
 
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten.
 1. Speichern Sie die Änderungen.
 
 ### Konfigurieren von asynchronen Vorgängen zum Verschieben von Assets {#configuring-asynchronous-move-operations}
