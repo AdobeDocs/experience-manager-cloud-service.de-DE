@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2026.6.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3c78dbcbc453eaaaab3904b83f22744eef60080c
+source-git-commit: ab2b623cd8c0605a41b96401762baf254dc8b339
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '733'
 ht-degree: 4%
 
 ---
@@ -37,17 +37,17 @@ Kunden können jetzt kundenverwaltete Schlüssel direkt in Cloud Manager konfigu
   ![Dialogfeld „Für Produktion einrichten“ mit ausgewählter Option „Kundenseitig verwaltete Schlüssel“ auf der Registerkarte „Sicherheit“](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
   *Vom Kunden verwaltete Schlüssel auf der Registerkarte „Sicherheit“ im Dialogfeld „Für Produktion einrichten“ ausgewählt*
 
-  ![Anzeige der Anzahl der im Lizenz-Dashboard verfügbaren kundenverwalteten Schlüssel](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
+  ![Anzeigen der Anzahl der vom Kunden verwalteten Schlüssel, die im Lizenz-Dashboard verfügbar sind](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
   *Anzeige der Anzahl der im Lizenz-Dashboard verfügbaren kundenverwalteten Schlüssel*
+
+  Siehe [Erstellen von &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) und [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
 * **Umgebungsvariablenlimit wurde auf 400 erhöht**
 Cloud Manager unterstützt jetzt bis zu 400 Umgebungsvariablen pro Umgebung, doppelt so viel wie zuvor (200).
 
   Pipeline-Variablen bleiben auf 200 begrenzt. Die Benutzeroberfläche erzwingt die richtige Begrenzung pro Kontext und verhindert Ergänzungen über den zulässigen Schwellenwert hinaus.
 
-  Durch diese Änderung werden Kunden mit komplexeren Bereitstellungskonfigurationen unterstützt, für die eine größere Anzahl umgebungsspezifischer Einstellungen erforderlich ist.
-
-<!--CMGR-76755 · CMGR-76753 -->
+  Durch diese Änderung werden Kunden mit komplexeren Bereitstellungskonfigurationen unterstützt, für die eine größere Anzahl umgebungsspezifischer Einstellungen erforderlich ist. <!--CMGR-76755 · CMGR-76753 -->
 
 
 ## Beta-Programme {#private-beta-program}
