@@ -130,7 +130,7 @@ Ebenso verwenden **Land der Passausstellung** und **Zielland** denselben API-Auf
 
 >[!NOTE]
 >
-> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion ](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
+> Sie können [Eigenschaftswerte aus einem JSON-Array abrufen, indem Sie eine API aufrufen und eine benutzerdefinierte Funktion &#x200B;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Mit diesem Ansatz können Sie Werte extrahieren und direkt an Formularfelder binden.
 
 ## Bearbeiten einer vorhandenen API-Integration
 
@@ -176,7 +176,7 @@ function encrypt(payload) {
 **Verschlüsseln (Payload-Hook für die Anfrage)**
 
 Die **encrypt**-Funktion empfängt ein Payload-Objekt mit **body**, **headers** und optional **cryptoMetadata** und **options**. Gibt eine geänderte Version derselben Form zurück. Das **options**-Feld übernimmt Abrufen von API-Einstellungen (z. B. `credentials: 'include'`) über die Anfrage-Pipeline. Werte in **options** werden auf den zugrunde liegenden `fetch()` angewendet. Das **cryptoMetadata**-Feld speichert Daten für die Verwendung während der Entschlüsselung. Was Sie in **cryptoMetadata** während der Verschlüsselung festlegen, wird in **originalRequest.cryptoMetadata** beibehalten und später für die **decrypt**-Funktion verfügbar gemacht. Trotz des Namens **encrypt** ein allgemeiner Pre-Request-Transformator. Sie können damit Kopfzeilen oder den Anfragetext ändern, nicht nur zur kryptografischen Verschlüsselung. Die Standardimplementierung gibt die Payload unverändert zurück.
->>
+&#x200B;>>
 
 Der folgende Beispiel-Code veranschaulicht eine &quot;**&quot;-**:
 
@@ -274,4 +274,4 @@ Im obigen Code verwaltet die Funktion **retryHandler** API-Anfragen mit automati
   Nein. Mit dem visuellen Regeleditor können Sie APIs direkt mit der Option **API-Integration erstellen** integrieren, ohne ein Formulardatenmodell zu erstellen. Dieser Ansatz eignet sich am besten für einfache oder formularspezifische Anwendungsfälle.
 
 * **Kann ich API-Aufrufe über den Regeleditor sichern?**\
-  Ja. Die Konfiguration der API-Integration bietet Authentifizierungsoptionen wie **Standard** und **API-Schlüssel**. Sie können auch **Verschlüsselung erforderlich** auswählen und benutzerdefinierte Logik **** und **entschlüsseln** in **function.js**. Konfigurationsschritte und Beispiele finden Sie unter [Verschlüsselung und Entschlüsselung](#encryption-and-decryption).
+  Ja. Die Konfiguration der API-Integration bietet Authentifizierungsoptionen wie **Standard** und **API-Schlüssel**. Sie können auch **Verschlüsselung erforderlich** auswählen und benutzerdefinierte Logik **&#x200B;**&#x200B;und **entschlüsseln** in **function.js**. Konfigurationsschritte und Beispiele finden Sie unter [Verschlüsselung und Entschlüsselung](#encryption-and-decryption).
