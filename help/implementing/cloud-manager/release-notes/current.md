@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2026.6.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ab2b623cd8c0605a41b96401762baf254dc8b339
+source-git-commit: 012a31a9b1ffe3d7228d714049295536f2deeaac
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,9 @@ Die nächste geplante Version ist Donnerstag, der 9. Juli 2026.
 ## Neue Funktionen - Cloud Manager {#cloud-manager-whats-new}
 
 * **Self-Service für kundenverwaltete Schlüssel (CMK)**
-Kunden können jetzt kundenverwaltete Schlüssel direkt in Cloud Manager konfigurieren, ohne dass der Adobe-Support einbezogen werden muss. Eine neue CMK-Option ist während der Programmerstellung in den Einstellungen zur Programmbearbeitung und auf der Seite „Umgebungsdetails“ verfügbar.
+Kunden können jetzt kundenverwaltete Schlüssel direkt in Cloud Manager konfigurieren, ohne dass der Adobe-Support einbezogen werden muss. Eine neue CMK-Option ist während der Programmerstellung oder -bearbeitung und auf der Seite „Umgebungsdetails“ verfügbar.
+
+  Siehe [Erstellen von ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) und [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
   Der CMK-Status wird auf den Karten Meine Programme und im Lizenz-Dashboard angezeigt, sodass Administratoren einen klaren Einblick in die Verschlüsselungskonfiguration in allen Umgebungen erhalten. Dieser Ansatz vereinfacht Compliance-Workflows für Unternehmen, die die Kontrolle über ihre eigenen Verschlüsselungsschlüssel benötigen.
 
@@ -40,7 +42,6 @@ Kunden können jetzt kundenverwaltete Schlüssel direkt in Cloud Manager konfigu
   ![Anzeigen der Anzahl der vom Kunden verwalteten Schlüssel, die im Lizenz-Dashboard verfügbar sind](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
   *Anzeige der Anzahl der im Lizenz-Dashboard verfügbaren kundenverwalteten Schlüssel*
 
-  Siehe [Erstellen von &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) und [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
 * **Umgebungsvariablenlimit wurde auf 400 erhöht**
 Cloud Manager unterstützt jetzt bis zu 400 Umgebungsvariablen pro Umgebung, doppelt so viel wie zuvor (200).
@@ -80,7 +81,7 @@ Mit Cloud Manager können Sie jetzt konfigurieren, ob für Ihr Programm eine Ver
 
 Weitere Informationen finden Sie unter [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 ### Schnellere Builds mit Modul-Caching {#quick-build-cm-pipelines}
 
@@ -89,9 +90,9 @@ Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte R
 Weitere Informationen finden Sie in den folgenden Themen:
 
 * [Verwenden von Smart Build in einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
-* [Produktions-Pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* [Produktions-Pipeline ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 <!-- 
 OLD
