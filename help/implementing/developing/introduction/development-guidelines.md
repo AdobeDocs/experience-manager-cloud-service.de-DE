@@ -4,10 +4,10 @@ description: Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud 
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
+source-git-commit: bfacb1fd76bda46999d6331c1605583e072beedd
 workflow-type: tm+mt
 source-wordcount: '2890'
-ht-degree: 69%
+ht-degree: 63%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 69%
 >abstract="Lernen Sie die Richtlinien für die Entwicklung mit AEM as a Cloud Service kennen und erfahren Sie, worin sich dieser Dienst von AEM vor Ort und AEM in AMS unterscheidet."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo zur Paketstruktur"
 
-Dieses Dokument enthält Richtlinien für die Entwicklung von AEM as a Cloud Service und wichtige Unterschiede zu AEM vor Ort und AEM in AMS.
+Dieses Dokument enthält Richtlinien für die Entwicklung mit AEM as a Cloud Service und wichtige Unterschiede zu AEM vor Ort und AEM in AMS.
 
 ## Code muss Cluster-fähig sein {#cluster-aware}
 
@@ -48,11 +48,11 @@ Ebenso kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z.
 
 Bei Code, der als Hintergrundaufgabe ausgeführt wird, muss davon ausgegangen werden, dass die Instanz, in der er ausgeführt wird, jederzeit heruntergefahren werden kann. Daher muss der Code stabil und vor allem verwendbar sein. Das bedeutet, dass der Code bei einer erneuten Ausführung nicht von vorne beginnen sollte, sondern eher nahe an der Stelle, an der er aufgehört hat. Dies ist zwar keine neue Anforderung für diese Art von Code, aber in AEM as a Cloud Service ist es wahrscheinlicher, dass eine Instanz entfernt wird.
 
-Um die Probleme zu minimieren, sollten Aufträge mit langer Laufzeit nach Möglichkeit vermieden und zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling-Aufträge, die eine Garantie für mindestens einmaliges Ausführen haben und daher, falls sie unterbrochen werden, so schnell wie möglich wieder ausgeführt werden. Aber sie sollten wahrscheinlich nicht wieder von vorne anfangen. Für die Planung solcher Aufträge ist es am besten, die Planung von [Sling-Aufträgen](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) zu verwenden, da dies wiederum die mindestens einmalige Ausführung garantiert.
+Um die Probleme zu minimieren, sollten Aufträge mit langer Laufzeit nach Möglichkeit vermieden und zumindest wieder aufgenommen werden können. Verwenden Sie für die Ausführung solcher Aufträge Sling-Aufträge, die eine Garantie für mindestens einmal haben und daher, falls sie unterbrochen werden, so bald wie möglich erneut ausgeführt werden. Aber sie sollten wahrscheinlich nicht von vorn beginnen. Für die Planung solcher Aufträge ist es am besten, die Planung [Sling-Aufträge](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) zu verwenden, da dies wiederum die mindestens einmalige Ausführung garantiert.
 
 Verwenden Sie den Sling Commons Scheduler nicht für die Planung, da die Ausführung nicht garantiert werden kann. Es ist nur wahrscheinlicher, dass er eingeplant wird.
 
-In ähnlicher Weise kann nicht garantiert werden, dass alles, was asynchron geschieht, wie z. B. die Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt wird. Daher muss man bei der Verwendung vorsichtig sein. Dies gilt bereits jetzt für AEM-Bereitstellungen.
+In ähnlicher Weise kann nicht garantiert werden, dass Aufträge bei allem, was asynchron geschieht, wie bei der Reaktion auf Beobachtungsereignisse (JCR-Ereignisse oder Sling-Ressourcenereignisse), ausgeführt werden. Daher müssen sie mit Vorsicht verwendet werden. Dies gilt derzeit bereits für AEM-Bereitstellungen.
 
 ## Ausgehende HTTP-Verbindungen {#outgoing-http-connections}
 
@@ -62,13 +62,13 @@ Für Code, der diese Zeitüberschreitungen nicht anwendet, erzwingen AEM-Instanz
 
 Adobe empfiehlt zum Herstellen von HTTP-Verbindungen die Verwendung der bereitgestellten [Apache HttpComponents Client 4.x-Bibliothek](https://hc.apache.org/httpcomponents-client-ga/).
 
-Alternativen, von denen bekannt ist, dass sie funktionieren, für die Sie jedoch möglicherweise die Abhängigkeiten selbst bereitstellen müssen, sind:
+Alternativen, von denen bekannt ist, dass sie funktionieren (für die Sie jedoch möglicherweise die Abhängigkeit selbst angeben müssen), sind:
 
 * [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) und/oder [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (bereitgestellt von AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (nicht empfohlen, da veraltet und durch Version 4.x ersetzt)
 * [OK HTTP](https://square.github.io/okhttp/) (nicht von AEM bereitgestellt)
 
-Neben der Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgemäße Verarbeitung solcher Zeitüberschreitungen sowie unerwarteter HTTP-Status-Codes implementiert werden.
+Zusätzlich zur Bereitstellung von Zeitüberschreitungen sollte auch eine ordnungsgemäße Verarbeitung dieser Zeitüberschreitungen und unerwarteten HTTP-Status-Codes implementiert werden.
 
 ## Umgang mit Beschränkungen von Anfrageraten {#rate-limit-handling}
 
@@ -102,7 +102,7 @@ Inhalte werden über einen Herausgeber-Abonnenten-Mechanismus von der Autoren- a
 
 Die Größe von Produktionsumgebungen ist höher, um einen stabilen Betrieb sicherzustellen, während Staging-Umgebungen wie Produktionsumgebungen skaliert werden, um realistische Tests unter Produktionsbedingungen sicherzustellen.
 
-Entwicklungsumgebungen und schnelle Entwicklungsumgebungen sollten auf Entwicklungs-, Fehleranalyse- und Funktionstests beschränkt werden und sind nicht für die Verarbeitung hoher Arbeitslasten oder großer Inhaltsmengen konzipiert.
+Entwicklungsumgebungen und schnelle Entwicklungsumgebungen sollten auf Entwicklung, Fehleranalyse und Funktionstests beschränkt sein und nicht für die Verarbeitung hoher Arbeitslasten oder großer Inhaltsmengen konzipiert sein.
 
 Wenn Sie beispielsweise eine Indexdefinition in einem großen Inhalts-Repository in einer Entwicklungsumgebung ändern, kann dies zu einer Neuindizierung führen, was zu einer zu starken Verarbeitung führt. Tests, die umfangreiche Inhalte erfordern, sollten in Staging-Umgebungen durchgeführt werden.
 
@@ -112,7 +112,7 @@ Wenn Sie beispielsweise eine Indexdefinition in einem großen Inhalts-Repository
 
 Für die lokale Entwicklung werden Protokolleinträge in lokale Dateien im `/crx-quickstart/logs` Ordner geschrieben.
 
-In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud-Umgebungen können Entwickler Protokolle über Cloud Manager herunterladen oder ein Befehlszeilen-Tool verwenden, um die Protokolle zu verfolgen. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Festlegen der Protokollebene**
 
@@ -184,7 +184,7 @@ Für die lokale Entwicklung (mit der SDK) können `/apps` und `/libs` direkt ges
 >* Einige Kundinnen und Kunden haben die Möglichkeit, ein überarbeitetes Erlebnis für die AEM Cloud Service Developer Console auszuprobieren. Weitere Informationen finden Sie in [diesem Artikel](/help/implementing/developing/introduction/aem-developer-console.md).
 >* Die AEM as a Cloud Service Developer Console sollte nicht mit der ähnlich benannten [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) verwechselt werden.
 
-Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Ein entsprechender Versuch führt zu Fehlern.
+Kunden können in der Entwicklungsumgebung der Autorenebene auf CRXDE Lite zugreifen, jedoch nicht in der Staging- oder Produktionsumgebung. Das unveränderliche Repository (`/libs`, `/apps`) kann zur Laufzeit nicht in beschrieben werden. Der Versuch, dies zu tun, führt zu Fehlern.
 
 Stattdessen kann der Repository-Browser von der AEM as a Cloud Service Developer Console aus gestartet werden und bietet eine schreibgeschützte Ansicht des Repositorys für alle Umgebungen auf den Ebenen „Autor“, „Veröffentlichung“ und „Vorschau“. Weitere Informationen finden Sie unter [Repository-Browser](/help/implementing/developing/tools/repository-browser.md).
 
@@ -242,7 +242,7 @@ Der [Day CQ Mail Service OSGI](https://experienceleague.adobe.com/docs/experienc
 
 ### Konfiguration {#email-configuration}
 
-E-Mails in AEM sollten mit dem [Day CQ Mail Service OSGI-Service) gesendet &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service).
+E-Mails in AEM sollten mit dem [Day CQ Mail Service OSGI-Service) gesendet ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de#configuring-the-mail-service).
 
 Weitere Informationen zum Konfigurieren von E-Mail-Einstellungen finden Sie in der [AEM 6.5-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=de). Beachten Sie für AEM as a Cloud Service die folgenden erforderlichen Anpassungen am `com.day.cq.mailer.DefaultMailService` OSGi-Dienst:
 
