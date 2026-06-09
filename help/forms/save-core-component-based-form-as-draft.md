@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 14%
+source-wordcount: '1341'
+ht-degree: 15%
 
 ---
 
@@ -159,19 +159,15 @@ Sie können ein adaptives Formular auch so konfigurieren, dass es automatisch au
 ## Anzeigen von Entwürfen/gesendeten Formularen auf der Sites-Seite mithilfe der Komponente „Drafts &amp; Submissions“
 
 Um gespeicherte Entwürfe oder übermittelte Formulare anzuzeigen, verwenden Sie die **Entwürfe und Übermittlungen** Forms Portal-Komponente.
-Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld **Konfigurieren der Komponente „Entwürfe und Einsendungen** als [Forms&quot; ausgewählt ist](#configure-properties-of-the-drafts--submissions-component) werden die als Entwürfe gespeicherten Formulare auf der Sites-Seite angezeigt. Sie können die Entwürfe öffnen, indem Sie auf die Auslassungspunkte (…) klicken, um das Formular auszufüllen.
+Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld [Konfigurieren der Komponente „Entwürfe und Einsendungen **als** Forms&quot; ausgewählt ist](#configure-properties-of-the-drafts--submissions-component) werden die als Entwürfe gespeicherten Formulare auf der Sites-Seite angezeigt. Sie können die Entwürfe öffnen, indem Sie auf die Auslassungspunkte (…) klicken, um das Formular auszufüllen.
 
 ![Symbol für Entwürfe](assets/drafts-component.png)
 
-Forms Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, &#x200B;](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
+Wenn **[!UICONTROL Typ auswählen]** im Dialogfeld „Konfigurieren **der Komponente „Drafts &amp; Submissions** als „Gesendete“ ausgewählt [, &#x200B;](#configure-properties-of-the-drafts--submissions-component) die gesendeten Formulare angezeigt. Sie können die übermittelten Formulare anzeigen, sie jedoch nicht bearbeiten.
 
 ![Symbol für Einsendungen](assets/submission-listing.png)
 
-Sie können Formulare auch verwerfen, indem Sie auf die Auslassungspunkte (…) in der rechten unteren Ecke des Formulars klicken.
-
->[!NOTE]
->
-> Im Forms-Portal unterstützt die Komponente „Drafts &amp; Submissions“ nur Übermittlungen aus Foundation-basierten Formularen.
+Sie können Formulare auch verwerfen, indem Sie auf die Auslassungspunkte (…) klicken die in der rechten unteren Ecke des Formulars angezeigt wird.
 
 ## Nächste Schritte
 
