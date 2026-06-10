@@ -55,7 +55,7 @@ Sie können die PDF direkt speichern, um sie Ihren Teams bereitzustellen, oder s
 
 >[!NOTE]
 >
->Wenn Sie nicht berechtigt sind, auf die Edge Delivery Services Admin-API zuzugreifen oder die Option **LLM erlauben, in meinem Namen auf admin.hlx.page zuzugreifen** [ in den Einstellungen der Konsole.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) nicht aktiviert ist, erstellt der Agent die Dokumentation basierend auf der Code-Basis, auf die er zugreifen kann.
+>Wenn Sie nicht berechtigt sind, auf die Edge Delivery Services Admin-API zuzugreifen oder die Option **LLM erlauben, in meinem Namen auf admin.hlx.page zuzugreifen** [&#x200B; in den Einstellungen der Konsole.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) nicht aktiviert ist, erstellt der Agent die Dokumentation basierend auf der Code-Basis, auf die er zugreifen kann.
 
 ## Fehlerbehebung {#troubleshooting}
 
