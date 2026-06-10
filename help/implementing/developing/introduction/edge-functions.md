@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 757b64c4b3340f56cc8a5e5a7c1200fcd8d0c1be
+source-git-commit: 3d12f495e0f1a07c81033b93fd607fd260023c48
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1441'
 ht-degree: 2%
 
 ---
@@ -97,15 +97,14 @@ kind: "EdgeFunctions"
 version: "1"
 data:
   services:
-    - name: first-function
-    - name: second-function
+    - name: my-edge-function
     # Uncomment to enable secrets
     # secrets:
     #   - key: API_TOKEN
     #     value: ${{ API_TOKEN_SECRET }}
 ```
 
-Die Konfiguration unterstützt bis zu drei Services. Die Schlüssel der obersten Ebene sind:
+Der standardmäßige Grenzwert beträgt 1 Funktion für AEM as a Cloud Service-Umgebungen und 3 Funktion für Edge Delivery Services Sites. Die Schlüssel der obersten Ebene sind:
 
 | Schlüssel | Beschreibung |
 |---|---|
@@ -124,19 +123,19 @@ version: '1'
 data:
   originSelectors:
     rules:
-      - name: route-to-first-function
+      - name: route-weather-to-edge-function
         when: { reqProperty: path, equals: "/weather" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-first-function
-      - name: route-to-second-function
+          originName: edgefunction-my-edge-function
+      - name: route-hello-world-to-edge-function
         when: { reqProperty: path, equals: "/hello-world" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-second-function
+          originName: edgefunction-my-edge-function
 ```
 
-Mit den Regeln der Ursprungsauswahl können Sie Traffic basierend auf einer in der CDN-Regel-Engine verfügbaren Bedingung, z. B. einem bestimmten Pfad, einer bestimmten Domain oder einem Anfrageheader, an Ihre Edge-Funktionen weiterleiten. Siehe [Ursprungs-Selektoren](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) für die vollständige Regelsyntax.
+Mit den Regeln der Ursprungsauswahl können Sie Traffic basierend auf einer in der CDN-Regel-Engine verfügbaren Bedingung, z. B. einem bestimmten Pfad, einer bestimmten Domain oder einem Anfrageheader, an Ihre Edge-Funktionen weiterleiten. Mehrere Regeln können verschiedene Pfade zu derselben Edge-Funktion routen. Siehe [Ursprungs-Selektoren](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) für die vollständige Regelsyntax.
 
 ### &#x200B;4. Bereitstellen der Konfiguration {#deploy-configuration}
 
