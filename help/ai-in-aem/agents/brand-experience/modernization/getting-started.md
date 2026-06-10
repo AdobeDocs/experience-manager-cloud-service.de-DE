@@ -4,10 +4,10 @@ description: Lernen Sie die ersten Schritte kennen, um mit dem Experience Modern
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: c4b1da46f6739f43d38bc05584c246371340a966
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 0%
+source-wordcount: '1208'
+ht-degree: 2%
 
 ---
 
@@ -39,20 +39,33 @@ Erfahren Sie mehr über die ersten Schritte mit dem Experience Modernization Age
 1. Navigieren Sie zu [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 1. Melden Sie sich mit Ihrer Adobe ID an.
 
-## Verbinden Ihres GitHub-Repositorys {#connect-repo}
+## Demomodus {#demo-mode}
 
-Die Konsole fordert Sie bei der ersten Anmeldung zur Angabe eines Repositorys auf.
+Die Konsole wird im Demomodus gestartet, wenn Sie sich zum ersten Mal anmelden. In diesem Modus können Sie eine vorhandene Site erkunden, auf der Sie zusätzliche Seiten migrieren können. Ein Banner am unteren Bildschirmrand zeigt an, dass Sie sich im Demomodus befinden.
 
-![Erster Anmeldebildschirm der Konsole](assets/first-sign-on.png)
+![Demomodus](assets/demo-mode.png)
 
-1. Klicken Sie auf **Repository verbinden**.
-1. Dadurch wird die AEM Code Connector-App auf einer neuen Browser-Registerkarte geöffnet. Klicken Sie **AEM Code Connector autorisieren**.
-1. Geben Sie zurück in der Konsole die Vorschau-URL der Site an. Die Vorschau-URL kann durch Vorschau eines beliebigen Dokuments auf der Website oder durch Erstellen aus einer Verzweigung, einem Site-Namen und einer Organisation abgerufen werden. Das System ruft das zugehörige GitHub-Projekt automatisch ab. In einigen Fällen werden Sie möglicherweise auch aufgefordert, die GitHub-Koordinaten anzugeben.
+## Verbinden Ihrer Site {#connect-repo}
+
+Wenn Sie bereit sind, Ihre eigene Website zu bearbeiten, können Sie den Demomodus beenden, indem Sie eine Verbindung zu Ihrem eigenen Projekt herstellen.
+
+1. Klicken Sie **Site wechseln** im Demomodus-Banner.
+1. Dadurch werden Sie aufgefordert, die AEM Code Connector-App mit Ihren GitHub-Anmeldeinformationen zu autorisieren. Klicken Sie **AEM Code Connector autorisieren**.
+1. Geben Sie zurück in der Konsole die Vorschau-URL der Site an. Die Vorschau-URL kann durch Vorschau eines beliebigen Dokuments auf der Website oder durch Erstellen aus einer Verzweigung, einem Site-Namen und einer Organisation abgerufen werden. Das System ruft das zugehörige GitHub-Projekt automatisch ab. Alternativ können Sie Ihre autorisierten GitHub-Projekte durchsuchen, um eine Site zu finden.
    ![Verbindung zum GitHub-Projekt herstellen](assets/connect-site-and-github.png)
+1. Klicken Sie **Auschecken in den Arbeitsbereich**, nachdem die Website überprüft wurde.
 1. Wenn Sie aufgefordert werden **„Vorhandenen Arbeitsbereich ersetzen**, klicken Sie auf **Arbeitsbereich ersetzen**.
    ![Vorhandenen Arbeitsbereich ersetzen](assets/replace-existing-workspace.png)
 
-Ihr GitHub-Projekt ist jetzt mit der Konsole verbunden und Sie befinden sich auf dem Startbildschirm.
+Ihr GitHub-Projekt und Ihre Site sind jetzt mit der Konsole verbunden.
+
+Wenn der Demomodus beendet wurde, aber kein neues Projekt verbunden wurde, erzwingen nachfolgende Besuche beim Experience Modernization Agent die Verbindung einer Site.
+
+![Site-Verbindung](assets/first-sign-on.png)
+
+## Konsolen-Startseite {#console-home}
+
+Beim Besuch [aemcoder](https://aemcoder.adobe.io) wird die Startseite angezeigt, bis ein Chat-Gespräch gestartet wurde. Auf der Startseite können Sie mit dem Chat beginnen, indem Sie entweder Ihre erste Eingabeaufforderung eingeben oder eine der vorgeschlagenen Eingabeaufforderungen auswählen.
 
 ![Konsole - Startseite](assets/console-home.png)
 
@@ -82,22 +95,17 @@ Jetzt haben Sie sowohl den Inhalt als auch die Stile in die Konsole importiert.
 
 ## Inhalt hochladen {#upload-content}
 
->[!TIP]
->
->Wenn Sie an einem AEM Sites- und einem universellen Editor-Projekt arbeiten, funktioniert das Hochladen von Inhalten in AEM etwas anders. Spezifische Upload-[&#x200B; finden Sie unter „Erste Schritte mit dem Experience Modernization Agent für AEM Sites/Universal Editor &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content)&quot;.
-
 So laden Sie Ihre Inhalte in [Dokumenterstellung](https://da.live) hoch:
 
-1. Stellen Sie sicher, dass Sie sich in der **Inhalt** befinden, und klicken Sie dann oben rechts auf **Schaltfläche** Inhalt hochladen.
+1. Vergewissern Sie sich, dass Sie sich in **Inhalt** befinden, und klicken Sie dann oben rechts auf **Schaltfläche** Inhalt hochladen.
    * Standardmäßig befinden Sie sich in der **Content**-Ansicht, wenn Sie die Konsole aufrufen.
-   * Ihre Ansicht wird durch das hervorgehobene Symbol in der Seitenleiste auf der linken Seite der Konsole angezeigt.
-1. Das Dialogfeld **Inhalt hochladen** wird mit der Ziel-Organisation und dem Repository geöffnet, die aus Ihrer `fstab.yaml` vorausgefüllt sind.
+   * Ihre Ansicht wird durch das ausgewählte Element der Ansichtsauswahl im Arbeitsbereich der Konsole angezeigt.
+1. Das Dialogfeld **Inhalt hochladen** wird mit der Zielorg und dem Repository geöffnet, die aus Ihren Projekteinstellungen vorausgefüllt sind.
    * Wenn in Ihrem verbundenen Repository keine `fstab.yaml` vorhanden ist, müssen Sie Ihre **Organisation“** „Repository **manuell**.
    * Wenn Sie das Textbaustein verwendet haben, wird ein `fstab.yaml` bereitgestellt.
 1. Wählen Sie die Dateien aus, die Sie hochladen möchten, und klicken Sie auf **Hochladen**.
    ![Dialogfeld „Inhalt hochladen“](assets/upload-content.png)
-1. Die Konsole zeigt den Upload-Prozess durch Ausgrauen der Schaltfläche **Hochladen** an.
-   ![Upload](assets/uploading.png)
+1. Die Konsole zeigt den Upload-Prozess an, indem sie die Schaltfläche **Hochladen** deaktiviert.
 1. Nach Abschluss des Vorgangs wird unten in der Konsole eine Benachrichtigung angezeigt.
    ![In AEM anzeigen](assets/view-in-aem.png)
 
@@ -107,14 +115,18 @@ Um auf die hochgeladenen Inhalte in der Dokumenterstellung zuzugreifen, klicken 
 
 Ihr importierter Inhalt befindet sich jetzt in der Dokumenterstellung.
 
+>[!TIP]
+>
+>Wenn Sie an einem AEM Sites- und einem universellen Editor-Projekt arbeiten, funktioniert das Hochladen von Inhalten in AEM etwas anders. Spezifische Upload-[&#x200B; finden Sie unter „Erste Schritte mit dem Experience Modernization Agent für AEM Sites/Universal Editor &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content)&quot;.
+
 ## Push-Code-Änderungen {#push-code-changes}
 
 Sobald Sie mit den Änderungen zufrieden sind, die Sie an Ihrem Code vorgenommen haben, können Sie sie an Ihr GitHub-Repository pushen.
 
-1. Wechseln Sie zur **Code**-Ansicht (`</>`-Symbol in der linken Seitenleiste) und dann zur Registerkarte **Git-**&quot; (Verzweigungs-Symbol oben rechts).
+1. Wechseln Sie **Ansicht**&#x200B;Änderungen“ (Verzweigungssymbol in der Ansichtsauswahl).
    ![Code-Ansicht](assets/code-view-git-changes.png)
 1. Wenn in der Liste der geänderten Dateien einige Dateien als nicht verfolgt angezeigt werden, klicken Sie auf ihre `+`-Schaltfläche, um sie bereitzustellen.
-1. Klicken Sie oben rechts auf **GitHub** Aktionen“ und wählen Sie dann **Push** aus der Dropdown-Liste aus.
+1. Klicken Sie **rechts oben** die Schaltfläche „Push“.
 1. Wählen **Dialogfeld „Änderungen** Push übertragen“, um Änderungen an eine neue PR (Standard) oder die aktuelle Verzweigung zu pushen, und klicken Sie auf **Bestätigen**, um sie zu pushen.
    * Im Zweifelsfall können Sie zum aktuellen Zweig pushen, um die Dinge einfach zu halten.
 1. Nach Abschluss des Vorgangs wird unten in der Konsole eine Benachrichtigung angezeigt.
@@ -155,7 +167,7 @@ Wenn sich Ihre Site hinter einer Firewall oder Zugriffsbeschränkungen befindet,
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Die folgenden Dokumente können nützlich sein, wenn Sie den Experience Modernization Agent und seine Konsole weiter erkunden.
+Die folgenden Dokumente können nützlich sein, um den Experience Modernization Agent und seine Konsole weiter zu erkunden.
 
 * [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details zur Konsole, ihren Ansichten, Optionen und Funktionen
 * [Prompting Guide for Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Ideen, wie der Agent aufgefordert werden kann und was seine Fähigkeiten tun können

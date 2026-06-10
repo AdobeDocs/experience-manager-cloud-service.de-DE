@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit den Dokumentationsfähigkeiten des Experi
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
-source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
+source-git-commit: c4f6edf58710aa03410e1828a2d8b61db0052255
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '472'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Stellen Sie Folgendes sicher, bevor Sie diese Kenntnisse verwenden.
 
 Sobald die Voraussetzungen erfüllt sind, müssen Sie den Agenten einfach bitten, eine Dokumentation für Ihr Projekt zu erstellen.
 
-1. In der Chat-Aufgabe „Dokumentation zu diesem Projekt erstellen“.
+1. Im Chat fragen Sie `Create documentation for this project`.
 1. Geben Sie den Organisationsnamen des Projekts an, wenn der Agent danach fragt.
 1. Der Agent fragt, welche Dokumentation Sie erstellen möchten. Normalerweise würden Sie &quot;**&quot;**.
 
