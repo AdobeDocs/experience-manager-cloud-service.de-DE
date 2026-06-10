@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Cloud Manager Ihr AEM-Projekt mittels seiner Prog
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '864'
-ht-degree: 100%
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 96%
 
 ---
 
@@ -26,9 +26,9 @@ Folgen Sie diesen Schritten, um zu Cloud Manager zu navigieren.
 
 1. Wählen Sie das Programm auf der Cloud Manager-Seite **Programme und Produkte** aus, um die Seite **Überblick** zu starten.
 
-Darüber hinaus können Sie von der Adobe Experience Cloud-Startseite aus auch zur Seite „Programme und Produkte“ von Cloud Manager navigieren.
+Sie können auch von der Startseite von Adobe CX Enterprise zur Seite „Programme und Produkte“ von Cloud Manager gehen.
 
-1. Navigieren Sie zu Adobe Experience Cloud unter [`https://experience.adobe.com`](https://experience.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
+1. Navigieren Sie zu Adobe CX Enterprise unter [`https://experience.adobe.com`](https://experience.adobe.com) und melden Sie sich mit Ihrem Adobe ID an.
 
 1. Vergewissern Sie sich, dass Sie sich in der richtigen Organisation befinden, indem Sie auf den Organisationsnamen achten, der oben rechts in der Symbolleiste angezeigt wird.
 

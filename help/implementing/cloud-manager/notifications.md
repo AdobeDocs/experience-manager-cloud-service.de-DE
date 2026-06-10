@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 63%
+ht-degree: 55%
 
 ---
 
@@ -21,9 +21,9 @@ Erfahren Sie, wie Sie von Cloud Manager über wichtige Ereignisse benachrichtigt
 
 [!UICONTROL Cloud Manager] sendet Ihnen Benachrichtigungen, wenn eine Produktions-Pipeline zu Beginn einer Produktionsbereitstellung gestartet und abgeschlossen wird (erfolgreich oder nicht erfolgreich).
 
-Diese Benachrichtigungen werden über das [!UICONTROL Experience Cloud]-Benachrichtigungssystem an Benutzer mit den Rollen **Geschäftsinhaber**, **Programm-Manager** und **Bereitstellungs-Manager** gesendet.
+Diese Benachrichtigungen werden über das [!UICONTROL CX Enterprise]-Benachrichtigungssystem an Benutzer mit den Rollen **Geschäftsinhaber**, **Programm-Manager** und **Bereitstellungs-Manager** gesendet.
 
-Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager]-Benutzeroberfläche und überall in Adobe [!UICONTROL Experience Cloud] angezeigt. Dem Glockensymbol in der Kopfzeile wird ein Badge zugewiesen, wenn Sie neue Benachrichtigungen erhalten.
+Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager] und überall in Adobe [!UICONTROL CX Enterprise] angezeigt. Dem Glockensymbol in der Kopfzeile wird ein Badge zugewiesen, wenn Sie neue Benachrichtigungen erhalten.
 
 ![Benachrichtigungssymbol](assets/notifications-bell-badged.png)
 
@@ -45,7 +45,7 @@ Klicken Sie auf die Option **Alle als gelesen markieren** am Ende des Bedienfeld
 
 Sie können einstellen, wie Sie welche Benachrichtigungen erhalten möchten.
 
-Klicken Sie auf das Zahnradsymbol oben in der Benachrichtigungsseitenleiste, um das Fenster **Experience Cloud-Einstellungen** zu öffnen. Hier können Sie Ihre Benachrichtigungsabonnements und den Empfang Ihrer Benachrichtigungen definieren.
+Klicken Sie auf das Zahnradsymbol oben in der Benachrichtigungsseitenleiste, um das Fenster **CX Enterprise-**&quot; zu öffnen. Hier können Sie Ihre Benachrichtigungsabonnements und den Empfang Ihrer Benachrichtigungen definieren.
 
 ![Symbol für Benachrichtigungseinstellungen](assets/notifications-configuration.png)
 
@@ -81,7 +81,7 @@ Sie können das Verhalten der Warnhinweise definieren.
 
 ### E-Mails {#emails}
 
-Benachrichtigungen sind in der Web-Benutzeroberfläche aller Adobe [!UICONTROL Experience Cloud]-Lösungen verfügbar. Sie können auch im Abschnitt **E-Mails** festlegen, dass diese Benachrichtigungen per E-Mai gesendet werden sollen.
+Benachrichtigungen sind in der Web-Benutzeroberfläche aller Adobe [!UICONTROL CX Enterprise]-Lösungen verfügbar. Sie können auch im Abschnitt **E-Mails** festlegen, dass diese Benachrichtigungen per E-Mai gesendet werden sollen.
 
 ![Benachrichtigungs-E-Mails](assets/notifications-emails.png)
 
