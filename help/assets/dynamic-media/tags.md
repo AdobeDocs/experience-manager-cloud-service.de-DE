@@ -1,15 +1,15 @@
 ---
 title: Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Tags
-description: Erfahren Sie mehr über die Dynamic Media Viewers-Erweiterung für Experience Platform Tags und Dynamic Media Viewers 5.13. Sie ermöglicht es Kunden von Adobe Analytics und Platform Tags, für Dynamic Media Viewers in ihrer Experience Platform Tags-Konfiguration spezifische Ereignisse und Daten zu verwenden.
+description: Erfahren Sie mehr über die Dynamic Media Viewers-Erweiterung für Experience Platform Tags und Dynamic Media Viewers 5.13. Damit können Kundinnen und Kunden von Adobe Analytics- und Platform-Tags für die Dynamic Media-Viewer in ihrer Experience Platform-Tags-Konfiguration spezifische Ereignisse und Daten verwenden.
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
-source-wordcount: '6673'
-ht-degree: 99%
+source-wordcount: '6962'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 name used to be Experience Platform Launch. Changed to Experience Platform Data Collection
 -->
 
-Die Erweiterung *Dynamic Media Viewers* für Experience Platform Tags ist für Dynamic Media Viewers 5.13 geeignet. Damit kann Adobe Analytics- und Experience Platform Tags-Kundschaft Dynamic Media Viewers-Ereignisse und -Daten in ihren Tag-Konfigurationen verwenden. 
+Die *Dynamic Media Viewers*-Erweiterung für Experience Platform Tags funktioniert mit Dynamic Media Viewers 5.13. Damit können Adobe Analytics- und Experience Platform-Tags-Kunden die Ereignisse und Daten von Dynamic Media Viewers in ihren Tag-Konfigurationen verwenden.
 
 Diese Integration ermöglicht es Ihnen, die Nutzung von Dynamic Media Viewers auf Ihrer Website mit Adobe Analytics zu verfolgen. Gleichzeitig können Sie die von den Viewern angezeigten Ereignisse und Daten mit jeder anderen Experience Platform Tags-Erweiterung von Adobe oder einem Drittanbieter verwenden.
 
@@ -127,7 +127,7 @@ Die folgende Beispielkonfiguration in Experience Platform Tags zeigt, wie sich e
 
 ### Informationen zu Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
-Wenn für die Verwendung von Adobe Analytics for Audio and Video ein Experience Cloud-Konto abonniert wird, reicht es, in den Einstellungen der Erweiterung *Dynamic Media Viewers* das Video-Tracking zu aktivieren. Videometriken werden so in Adobe Analytics verfügbar. Video-Tracking ist auf die Erweiterung „Adobe Media Analytics for Audio and Video“ angewiesen.
+Wenn für die Verwendung von Adobe Analytics for Audio and Video ein CX Enterprise-Konto abonniert wird, reicht es, in den Erweiterungseinstellungen *Dynamic Media Viewers* das Video-Tracking zu aktivieren. Videometriken werden so in Adobe Analytics verfügbar. Video-Tracking ist auf die Erweiterung „Adobe Media Analytics for Audio and Video“ angewiesen.
 
 Siehe [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions).
 
@@ -421,7 +421,7 @@ Wenn diese Integrationslösung mit Experience Manager Sites verwendet wird, muss
 * [Adobe Developer Console](https://developer.adobe.com/console/home) – Erstellung der Integration für Experience Platform-Tags.
 * Experience Manager-Autorenknoten – IMS-Konfiguration und Experience Platform Tags-Cloud-Konfiguration.
 
-Vergewissern Sie sich, dass Sie bei der Konfiguration Zugriff auf eine Firma in Adobe Experience Cloud haben, für die Adobe Analytics und Experience Platform Tags bereits aktiviert sind.
+Vergewissern Sie sich, dass Sie bei der Konfiguration Zugriff auf eine Firma in Adobe CX Enterprise haben, für die Adobe Analytics und Experience Platform bereits Tags aktiviert sind.
 
 ## Konfigurieren von Adobe Analytics für die Integration {#configuring-adobe-analytics-for-the-integration}
 
@@ -435,7 +435,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://experienceleague.adobe.c
 
 **So konfigurieren Sie Adobe Analytics für die Integration:**
 
-1. Beginnen Sie, indem Sie über die Experience Cloud-[Startseite](https://experience.adobe.com/#/home) auf Adobe Analytics zugreifen. Klicken Sie in der Menüleiste oben rechts auf der Seite auf ![Apps-Symbol, Lösungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Lösungen** und wählen Sie **[!UICONTROL Analytics]**.
+1. Beginnen Sie, indem Sie über die CX Enterprise [Startseite](https://experience.adobe.com/#/home) auf Adobe Analytics zugreifen. Klicken Sie in der Menüleiste oben rechts auf der Seite auf ![Apps-Symbol, Lösungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Lösungen** und wählen Sie **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -502,7 +502,7 @@ Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integra
 
 **So konfigurieren Sie Experience Platform Tags für die Integration:**
 
-1. Beginnen Sie, indem Sie über die Experience Cloud-[Startseite](https://experience.adobe.com/#/home) auf Experience Platform Tags zugreifen. Klicken Sie in der Menüleiste oben rechts auf der Seite auf ![Apps-Symbol, Lösungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Lösungen** und dann auf **[!UICONTROL Tags]**.
+1. Beginnen Sie, indem Sie über die CX Enterprise-[ auf Experience Platform Tags zugreifen](https://experience.adobe.com/#/home). Klicken Sie in der Menüleiste oben rechts auf der Seite auf ![Apps-Symbol, Lösungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Lösungen** und dann auf **[!UICONTROL Tags]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -533,11 +533,11 @@ Um eine Erweiterung zu installieren, klicken Sie auf **[!UICONTROL Installieren]
 
 Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguriert werden:
 
-* (Erforderlich) *Experience Cloud ID Service*-Erweiterung
+* (Erforderlich) *CX Enterprise ID Service*-Erweiterung
 
 Es ist keine zusätzliche Konfiguration erforderlich, außer für etwaige vorgeschlagene Werte. Wenn Sie fertig sind, klicken Sie unbedingt auf **[!UICONTROL Speichern]**.
 
-Siehe [Experience Cloud Identity Service-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/id-service/overview).
+Siehe [CX Enterprise Identity Service-](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/id-service/overview).
 
 * (Erforderlich) *Adobe Analytics*-Erweiterung
 
@@ -753,7 +753,8 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
    * **[!UICONTROL Autorisierungs-Server]**: Kehren Sie zur Seite mit den Integrationsdetails zurück, die Sie zuvor geöffnet haben. Klicken Sie auf die Registerkarte **[!UICONTROL JWT]**. Kopieren Sie den Servernamen – ohne Pfad – wie unten hervorgehoben.
 
    Kehren Sie zur Seite **[!UICONTROL Konto]** zurück und fügen Sie den Namen in das entsprechende Feld ein.
-Beispiel: `https://ims-na1.adobelogin.com/`(Der Beispiel-Server-Name dient nur zu Veranschaulichungszwecken.)
+Beispiel: `https://ims-na1.adobelogin.com/`
+(Der Beispiel-Server-Name dient nur zu Veranschaulichungszwecken.)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    *Seite mit Integrationsdetails - Registerkarte „JWT“*
@@ -805,7 +806,7 @@ Beispiel: `https://ims-na1.adobelogin.com/`(Der Beispiel-Server-Name dient nur z
 
    * **[!UICONTROL Zugewiesene Adobe IMS-Konfiguration]** – Wählen Sie die IMS-Konfiguration aus, die Sie zuvor unter [Konfigurieren von Experience Manager IMS](#configuring-aem-ims) erstellt haben.
 
-   * **[!UICONTROL Firma]** – Wählen Sie aus der Dropdown-Liste **[!UICONTROL Firma]** Ihre Experience Cloud-Firma aus. Die Liste wird automatisch ausgefüllt.
+   * **[!UICONTROL Unternehmen]** - Wählen Sie in der Dropdown **[!UICONTROL Liste]** Unternehmen“ Ihre CX Enterprise-Firma aus. Die Liste wird automatisch ausgefüllt.
 
    * **[!UICONTROL Eigenschaft]** – Wählen Sie in der Dropdown-Liste „Eigenschaft“ die zuvor erstellte Experience Platform Tags-Eigenschaft aus. Die Liste wird automatisch ausgefüllt.
 
