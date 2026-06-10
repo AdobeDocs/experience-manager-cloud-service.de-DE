@@ -4,22 +4,23 @@ description: Erfahren Sie mehr über die spezifischen Einrichtungsschritte, die 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
+
 # Erste Schritte mit dem Experience Modernization Agent für AEM-Authoring-Projekte {#getting-started-aem-authoring}
 
-Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die Vorbereitung des Experience Modernization Agent vom standardmäßigen Edge Delivery-Ablauf. In diesem Dokument werden diese Einrichtungsunterschiede behandelt. Sobald die folgenden Schritte abgeschlossen sind, folgen Sie dem [&#x200B; „Erste Schritte mit dem Experience &#x200B;](getting-started.md)&quot;.
+Bei AEM-Authoring-Projekten mit dem universellen Editor unterscheidet sich die Vorbereitung des Experience Modernization Agent vom standardmäßigen Edge Delivery-Ablauf. In diesem Dokument werden diese Einrichtungsunterschiede behandelt. Sobald die folgenden Schritte abgeschlossen sind, folgen Sie dem [ „Erste Schritte mit dem Experience ](getting-started.md)&quot;.
 
 ## Erstellen des Edge Delivery Services-Projekt-Repositorys {#create-repo}
 
 1. Verwenden Sie das [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk)-Repository als Vorlage (nicht das standardmäßige Edge Delivery Services-Textbaustein).
 1. Vergewissern Sie sich, dass `fstab.yaml` auf Ihren AEM-Host, Git-Eigentümer und Ihr Git-Repository verweist, und übertragen Sie alle Änderungen an `main`, bevor Sie die GitHub-Apps verbinden.
-   * Anweisungen finden [&#x200B; unter „Konfigurieren &#x200B;](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) Inhaltsquelle“.
+   * Anweisungen finden [ unter „Konfigurieren ](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) Inhaltsquelle“.
 1. Befolgen Sie das [Tutorial zum universellen Editor](https://www.aem.live/developer/ue-tutorial), um Ihr Repository einzurichten.
    * Beenden, wenn Sie aufgefordert werden, eine Site in AEM zu erstellen.
 1. Löschen Sie `paths.json` und übertragen Sie diese Änderung auf `main`.
@@ -57,7 +58,7 @@ Nachdem Sie diese Schritte zum Migrieren des Inhalts abgeschlossen haben, fahren
 
 ## Inhalt überprüfen {#validate-content}
 
-Validieren des Inhalts der ausgewählten Seite im Vorschaubereich. Alle Fehler werden durch Klicken auf die Schaltfläche **Fehler** angezeigt.
+Überprüfen des Inhalts der ausgewählten Seite in der Vorschau des Bedienfelds „Inhalt“. Alle Fehler werden durch Klicken auf die Schaltfläche **Fehler** angezeigt.
 Setzen Sie Ihr Chat-Gespräch mit dem Agenten fort, um die Fehler zu beheben. Verwenden Sie die Funktion **Zum Chat hinzufügen**, um Fehlerbehebungen für bestimmte Elemente der Seite, Parser-Dateien oder Transformatordateien auszuwählen.
 
 ![Kontextueller Chat](assets/contextual-chat.png)
@@ -66,7 +67,7 @@ Setzen Sie Ihr Chat-Gespräch mit dem Agenten fort, um die Fehler zu beheben. Ve
 
 So laden Sie Ihre Inhalte in AEM hoch:
 
-1. Stellen Sie sicher, dass Sie sich in der Ansicht **Inhalt** befinden, und klicken Sie auf die Schaltfläche **Inhalt hochladen** oben rechts.
+1. Vergewissern Sie sich, dass Sie sich in **Inhalt** befinden, und klicken Sie oben rechts auf **Schaltfläche** Inhalt hochladen.
 1. Wählen **Dialogfeld „Inhaltspaket erstellen** die Seiten aus, die in das Paket aufgenommen werden sollen.
    * Geben Sie optional einen **Paketnamen** ein (standardmäßig den Website-Namen, wenn Sie das Feld leer lassen).
    * Verwenden Sie **Alle auswählen**, **Auswahl aufheben**, **Alle erweitern** oder **Alle reduzieren**, um die Liste zu verwalten.
