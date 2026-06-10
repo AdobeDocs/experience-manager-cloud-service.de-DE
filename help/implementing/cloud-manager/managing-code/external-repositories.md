@@ -1,13 +1,13 @@
 ---
 title: Hinzufügen von externen Repositorys in Cloud Manager
-description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Cloud Manager unterstützt die Integration mit GitHub Enterprise-, GitLab-, Bitbucket- und Azure DevOps-Repositorys.
+description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Cloud Manager unterstützt die Integration mit GitHub Enterprise Server, GitLab, Bitbucket und Azure DevOps-Repositorys.
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: b267227fd855e0959aaad6c2fe74540d020f4233
+source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 98%
+source-wordcount: '2610'
+ht-degree: 82%
 
 ---
 
@@ -15,12 +15,17 @@ ht-degree: 98%
 
 <!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
 
-Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Cloud Manager unterstützt die Integration mit GitHub Enterprise-, GitLab- und Bitbucket-Repositorys.
+Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinzufügen. Cloud Manager unterstützt die Integration mit GitHub Enterprise Server, GitLab, Bitbucket und Azure DevOps-Repositorys.
 
 Kundinnen und Kunden können nun auch ihre Azure DevOps-Git-Repositorys in Cloud Manager integrieren, wobei sowohl moderne Azure DevOps- als auch ältere VSTS(Visual Studio Team Services)-Repositorys unterstützt werden.
 
 * Für Edge Delivery Services-Benutzende kann das integrierte Repository zum Synchronisieren und Bereitstellen von Sitecode verwendet werden.
 * Für Benutzende von AEM as a Cloud Service und Adobe Managed Services (AMS) kann das Repository mit Fullstack- und Frontend-Pipelines verknüpft werden.
+
+Cloud Manager überprüft die Eigentümerschaft des GitHub-Repositorys auf eine von zwei Arten, je nachdem, wo das Repository gehostet wird:
+
+* GitHub Enterprise Server (selbst gehostet)-Repositorys verwenden ein persönliches Zugriffstoken und einen Webhook. Auf dieser Seite wird diese Methode beschrieben.
+* Repositorys auf `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, verwenden die Adobe GitHub-App. Siehe [Hinzufügen eines privaten GitHub-Cloud-Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
 ## Konfigurieren eines externen Repositorys
 
@@ -62,8 +67,8 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
    | Feld | Beschreibung |
    | --- | --- |
    | **Repository-Name** | Erforderlich. Ein aussagekräftiger Name für Ihr neues Repository. |
-   | **Repository-URL** | Erforderlich. Die URL des Repositorys.<br><br>Wenn Sie ein von GitHub gehostetes Repository verwenden, muss der Pfad mit `.git` enden.<br>Beispiel: *`https://github.com/org-name/repo-name.git`* (URL-Pfad dient nur zu Illustrationszwecken).<br><br>Wenn Sie ein externes Repository verwenden, muss es das folgende URL-Pfadformat verwenden:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> oder <br>`https://self-hosted-domain/org-name/repo-name.git`<br>. Außerdem muss es mit Ihrem Git-Anbieter übereinstimmen. |
-   | **Repository-Typ auswählen** | Erforderlich. Wählen Sie den verwendeten Repository-Typ aus. Wenn der Repository-URL-Pfad den Namen des Git-Anbieters enthält, z. B. GitLab oder Bitbucket, ist der Repository-Typ bereits für Sie vorausgewählt.:<ul><li>**GitHub** (GitHub Enterprise und die selbst gehostete GitHub-Version)</li><li>**GitLab** (sowohl `gitlab.com` als auch die selbst gehostete GitLab-Version) </li><li>**Bitbucket** (nur `bitbucket.org` – Cloud-Version) wird unterstützt. Die selbst gehostete Version von Bitbucket wird seit dem 15. Februar 2024 nicht mehr unterstützt.</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
+   | **Repository-URL** | Erforderlich. Die URL des Repositorys.<br><br>Wenn Sie ein von GitHub gehostetes Repository verwenden, muss der Pfad auf `.git` enden.<br>Beispiel: *`https://github.com/org-name/repo-name.git`* (der URL-Pfad dient nur zu Veranschaulichungszwecken).<br><br>Wenn Sie ein externes Repository verwenden, muss das folgende URL-Pfadformat verwendet werden:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> oder<br>`https://self-hosted-domain/org-name/repo-name.git`<br>Und muss mit Ihrem Git-Anbieter übereinstimmen. |
+   | **Repository-Typ auswählen** | Erforderlich. Wählen Sie den verwendeten Repository-Typ aus. Wenn der Repository-URL-Pfad den Namen des Git-Anbieters enthält, z. B. GitLab oder Bitbucket, ist der Repository-Typ für Sie vorausgewählt:<br><br>* **GitHub** (GitHub Enterprise Server, die selbst gehostete Version von GitHub). Repositorys auf `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, finden Sie unter [Stattdessen ein privates GitHub-Cloud-Repository in Cloud Manager hinzufügen](/help/implementing/cloud-manager/managing-code/private-repositories.md).<br>* **GitLab** (sowohl `gitlab.com` als auch die selbst gehostete Version von GitLab)<br>* **Bitbucket** (nur `bitbucket.org`, die Cloud-Version). Die selbst gehostete Version von Bitbucket ist seit dem 15. Februar 2024 veraltet.<br>* **Azure DevOps** (`dev.azure.com`) |
    | **Beschreibung** | Optional. Eine längere Beschreibung des Repositorys. |
 
 1. Wählen Sie **Speichern**, um das Repository hinzuzufügen.
@@ -77,14 +82,14 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Zugriffs-Token-Option | Beschreibung |
 | --- | --- |
 | **Vorhandenes Zugriffs-Token verwenden** | Wenn Sie bereits ein Repository-Zugriffs-Token für Ihre Organisation bereitgestellt haben und Zugriff auf mehrere Repositorys haben, können Sie ein vorhandenes Token auswählen. Verwenden Sie die Dropdown-Liste **Tokenname**, um das Token auszuwählen, das Sie auf das Repository anwenden möchten. Fügen Sie andernfalls ein neues Zugriffs-Token hinzu. |
-| **Neues Zugriffs-Token hinzufügen** | <ul><li> Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffs-Token ein, das Sie erstellen.<li>Erstellen Sie ein persönliches Zugriffs-Token, indem Sie die Anweisungen in der [GitHub-Dokumentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) befolgen.<li>Erforderliche Berechtigungen für das persönliche Zugriffs-Token (Personal Access Token, PAT) in GitHub<br>Diese Berechtigungen stellen sicher, dass Cloud Manager Pull-Anfragen validieren, Commit-Statusprüfungen verwalten und auf erforderliche Repository-Details zugreifen kann.<br>Wenn Sie in GitHub das PAT generieren, stellen Sie sicher, dass es die folgenden Repository-Berechtigungen enthält:<ul><li>Pull-Anfrage (Lesen und Schreiben)<li>Commit-Status (Lesen und Schreiben)<li>Repository-Metadaten (schreibgeschützt)</li></li></ul></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
+| **Neues Zugriffs-Token hinzufügen** | <ul><li> Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffs-Token ein, das Sie erstellen.<li>Erstellen Sie ein persönliches Zugriffs-Token, indem Sie die Anweisungen in der [GitHub-Dokumentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) befolgen.<li>Erforderliche Berechtigungen für das GitHub Enterprise Server Personal Access Token (PAT)<br>Diese Berechtigungen stellen sicher, dass Cloud Manager Pull-Anforderungen validieren, Commit-Statusprüfungen verwalten und auf erforderliche Repo-Details zugreifen kann.<br>Wenn Sie den Pfad in GitHub Enterprise Server generieren, stellen Sie sicher, dass er die folgenden Repository-Berechtigungen enthält:<ul><li>Pull-Anfrage (Lesen und Schreiben)<li>Commit-Status (Lesen und Schreiben)<li>Repository-Metadaten (schreibgeschützt)</li></li></ul></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
 
 Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
 
@@ -110,7 +115,7 @@ Siehe auch [Verwalten von Zugriffs-Token](/help/implementing/cloud-manager/manag
 | Zugriffs-Token-Option | Beschreibung |
 | --- | --- |
 | **Vorhandenes Zugriffs-Token verwenden** | Wenn Sie bereits ein Repository-Zugriffs-Token für Ihre Organisation bereitgestellt haben und Zugriff auf mehrere Repositorys haben, können Sie ein vorhandenes Token auswählen. Verwenden Sie die Dropdown-Liste **Tokenname**, um das Token auszuwählen, das Sie auf das Repository anwenden möchten. Fügen Sie andernfalls ein neues Zugriffs-Token hinzu. |
-| **Neues Zugriffs-Token hinzufügen** | <ul><li>Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffs-Token ein, das Sie erstellen.<li>Erstellen Sie ein Repository-Zugriffs-Token mithilfe der [Bitbucket-Dokumentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Erforderliche Berechtigungen für das Bitbucket-Repository-Zugriffstoken.<br>Diese Berechtigungen ermöglichen Cloud Manager den Zugriff auf Repository-Inhalte, das Verwalten von Pull-Anfragen und das Konfigurieren von oder Reagieren auf Webhook-Ereignisse.<br>Wenn Sie das Repository-Zugriffstoken in Bitbucket erstellen, stellen Sie sicher, dass es die folgenden erforderlichen Berechtigungen enthält:<ul><li>Repository (schreibgeschützt)<li>Pull-Anfragen (Lesen und Schreiben)<li>Webhooks (Lesen und Schreiben)</li></li></ul></li></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
+| **Neues Zugriffs-Token hinzufügen** | <ul><li>Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffs-Token ein, das Sie erstellen.<li>Erstellen Sie ein Repository-Zugriffs-Token mithilfe der [Bitbucket-Dokumentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Erforderliche Berechtigungen für das Bitbucket-Repository-Zugriffstoken <br>Diese Berechtigungen ermöglichen Cloud Manager den Zugriff auf Repository-Inhalte, die Verwaltung von Pull-Anforderungen und die Konfiguration von oder Reaktion auf Webhook-Ereignisse.<br>Wenn Sie das Repository-Zugriffstoken in Bitbucket erstellen, stellen Sie sicher, dass es die folgenden erforderlichen Berechtigungen enthält:<ul><li>Repository (schreibgeschützt)<li>Pull-Anfragen (Lesen und Schreiben)<li>Webhooks (Lesen und Schreiben)</li></li></ul></li></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
 
 Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
 
@@ -123,7 +128,7 @@ Siehe auch [Verwalten von Zugriffs-Token](/help/implementing/cloud-manager/manag
 | Zugriffs-Token-Option | Beschreibung |
 | --- | --- |
 | **Vorhandenes Zugriffs-Token verwenden** | Wenn Sie bereits ein Repository-Zugriffs-Token für Ihre Organisation bereitgestellt haben und Zugriff auf mehrere Repositorys haben, können Sie ein vorhandenes Token auswählen. Verwenden Sie die Dropdown-Liste **Tokenname**, um das Token auszuwählen, das Sie auf das Repository anwenden möchten. Fügen Sie andernfalls ein neues Zugriffs-Token hinzu. |
-| **Neues Zugriffs-Token hinzufügen** | <ul><li>Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffstoken ein, das Sie erstellen.<li>Erstellen Sie ein Repository-Zugriffstoken mithilfe der [Azure DevOps-Dokumentation](https://learn.microsoft.com/de-de/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Erforderliche Berechtigungen für das persönliche Zugrifftoken (Personal Access Token, PAT) in Azure DevOps.<br>Diese Berechtigungen ermöglichen Cloud Manager den Zugriff auf Repository-Inhalte, das Verwalten von Pull-Anfragen und das Konfigurieren von oder Reagieren auf Webhook-Ereignisse.<br>Stellen Sie beim Erstellen des App-Passworts in Azure DevOps sicher, dass es die folgenden erforderlichen App-Passwortberechtigungen enthält:<ul><li>Code (Lesen)</li><li>Code (Status)</li><li>Pull-Request-Threads (Lesen und Schreiben)</li></ul></li></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
+| **Neues Zugriffs-Token hinzufügen** | <ul><li>Geben Sie im Textfeld **Token-Name** einen Namen für das Zugriffstoken ein, das Sie erstellen.<li>Erstellen Sie ein Repository-Zugriffstoken mithilfe der [Azure DevOps-Dokumentation](https://learn.microsoft.com/de-de/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Erforderliche Berechtigungen für das Azure DevOps Personal Access Token (PAT). <br>Diese Berechtigungen ermöglichen Cloud Manager den Zugriff auf Repository-Inhalte, die Verwaltung von Pull-Anfragen und die Konfiguration von oder Reaktion auf Webhook-Ereignisse.<br>Stellen Sie beim Erstellen des App-Passworts in Azure DevOps sicher, dass es die folgenden erforderlichen App-Passwortberechtigungen enthält:<ul><li>Code (Lesen)</li><li>Code (Status)</li><li>Pull-Request-Threads (Lesen und Schreiben)</li></ul></li></li></ul></ul></ul><ul><li>Fügen Sie im Feld **Zugriffs-Token** das soeben erstellte Token ein. |
 
 Nach der Überprüfung kann das externe Repository verwendet und mit einer Pipeline verknüpft werden.
 
@@ -166,9 +171,9 @@ Mit Webhooks kann Cloud Manager beispielsweise Aktionen auf Grundlage von Ereign
 * Push-Ereignisse: Startet Pipelines, wenn der Trigger „Bei Git-Commit“ aktiviert ist.
 * Künftige kommentarbasierte Aktionen: Ermöglicht Workflows, etwa die direkte Bereitstellung aus einer PR in einer schnellen Entwicklungsumgebung (Rapid Development Environment, RDE).
 
-Die Webhook-Konfiguration ist für auf `GitHub.com` gehosteten Repositorys nicht erforderlich, da Cloud Manager direkt über die GitHub-App integriert wird.
+Die Webhook-Konfiguration ist für auf `gitub.com` gehosteten Repositorys nicht erforderlich, da Cloud Manager direkt über die GitHub-App integriert wird.
 
-Für alle anderen externen Repositorys, die mit einem Zugriffs-Token integriert sind – wie GitHub Enterprise, GitLab, Bitbucket und Azure DevOps – ist eine Webhook-Konfiguration verfügbar, die manuell eingerichtet werden muss.
+Für alle anderen externen Repositorys, die mit einem Zugriffstoken integriert werden - wie GitHub Enterprise Server, GitLab, Bitbucket und Azure DevOps - ist eine Webhook-Konfiguration verfügbar und muss manuell eingerichtet werden.
 
 **So konfigurieren Sie einen Webhook für ein externes Repository:**
 
@@ -190,12 +195,12 @@ Für alle anderen externen Repositorys, die mit einem Zugriffs-Token integriert 
 
 1. Gehen Sie im Dialogfeld **Webhook konfigurieren** wie folgt vor:
 
-   1. Klicken Sie neben dem Feld **Webhook-URL** auf ![Kopieren-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Fügen Sie die URL in eine einfache Textdatei ein. Die kopierte URL ist für die Webhook-Einstellungen Ihres Git-Anbieters erforderlich.
-   1. Klicken Sie neben dem Feld **Webhook-Geheimnis** auf **Generieren** und dann auf ![Kopieren-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis ist für die Webhook-Einstellungen Ihres Git-Anbieters erforderlich.
+   1. Klicken Sie neben dem Feld **Webhook** URL) auf ![Symbol „Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
+Fügen Sie die URL in eine Textdatei ein. Die kopierte URL ist für die Webhook-Einstellungen Ihres Git-Anbieters erforderlich.
+   1. Klicken Sie neben dem Feld **Webhook** Geheimnis) auf **Generieren** und dann auf ![Symbol „Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
+Fügen Sie die geheimen Daten in eine Textdatei ein. Das kopierte Geheimnis ist für die Webhook-Einstellungen Ihres Git-Anbieters erforderlich.
 1. Klicken Sie auf **Schließen**.
-1. Navigieren Sie zu Ihrer Git-Anbieterlösung (GitHub Enterprise, GitLab, Bitbucket oder Azure DevOps).
+1. Navigieren Sie zu Ihrer Git-Anbieterlösung (GitHub Enterprise Server, GitLab, Bitbucket oder Azure DevOps).
 
    Alle Details zur Webhook-Konfiguration und den für jeden Anbieter erforderlichen Ereignissen finden Sie unter [Hinzufügen eines externen Repositorys](#add-ext-repo). Sehen Sie sich die Tabelle mit Registerkarten unter Schritt 8 an.
 
@@ -210,7 +215,7 @@ Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis 
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
@@ -224,7 +229,7 @@ Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis 
 
 | Erforderliche Webhook-Ereignisse |
 | --- |
-| Diese Webhook-Ereignisse ermöglichen es Cloud Manager, Pipelines bei der Push-Übertragung von Code oder beim Senden einer Zusammenführungsanfrage auszulösen. Sie verfolgen außerdem Kommentare im Zusammenhang mit der Validierung von Pull-Anfragen (durch Notizereignisse).<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Push-Ereignisse<li>Zusammenführen von Anfrageereignissen<li>Notizereignisse</li></li></li></ul></ul></ul> |
+| Diese Webhook-Ereignisse ermöglichen es Cloud Manager, Pipelines bei der Push-Übertragung von Code oder beim Senden einer Zusammenführungsanfrage auszulösen. Sie verfolgen auch Kommentare im Zusammenhang mit der Validierung von Pull-Anforderungen (durch Notizereignisse). <br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er für die folgenden erforderlichen Webhook-Ereignisse Trigger aufweist<ul><li>Push-Ereignisse<li>Zusammenführen von Anfrageereignissen<li>Notizereignisse</li></li></li></ul></ul></ul> |
 
 >[!TAB Bitbucket]
 
@@ -240,7 +245,7 @@ Fügen Sie das Geheimnis in eine einfache Textdatei ein. Das kopierte Geheimnis 
 
 | Erforderliche Webhook-Ereignisse und Authentifizierung |
 | --- |
-| Diese Ereignisse stellen sicher, dass Cloud Manager Pull-Anfragen validieren, auf Push-Übertragungen von Code reagieren und mit Kommentaren zur Pipeline-Koordination interagieren kann.<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Code übermittelt</li><li>Pull-Request mit Kommentaren</li><li>Pull-Abfrage erstellt</li><li>Pull-Request aktualisiert</li></ul>Festlegen der Authentifizierung:<br>1. Geben Sie in das Feld **Benutzername für Standardauthentifizierung** `cloudmanager` ein.<br>2. Geben Sie in das Feld **Kennwort für die Standardauthentifizierung** das in der Benutzeroberfläche von Cloud Manager generierte Webhook-Geheimnis ein. |
+| Diese Ereignisse stellen sicher, dass Cloud Manager Pull-Anfragen validieren, auf Push-Übertragungen von Code reagieren und mit Kommentaren zur Pipeline-Koordination interagieren kann.<br>Stellen Sie sicher, dass der Webhook so eingerichtet ist, dass er bei den folgenden erforderlichen Webhook-Ereignissen ausgelöst wird:<ul><li>Code übermittelt</li><li>Pull-Request mit Kommentaren</li><li>Pull-Abfrage erstellt</li><li>Pull-Request aktualisiert</li></ul>Festlegen der Authentifizierung:<br>1. Geben Sie im Feld **Benutzername für** Authentifizierung“ `cloudmanager`.<br>2 ein. Geben Sie in das Feld **Kennwort für die Standardauthentifizierung** das in der Benutzeroberfläche von Cloud Manager generierte Webhook-Geheimnis ein. |
 
 >[!ENDTABS]
 
@@ -254,11 +259,11 @@ Das Verhalten variiert je nach dem verwendeten Git-Anbieter, wie unten beschrieb
 >[!BEGINTABS]
 
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-Wenn die Prüfung erstellt wird, sieht sie wie der folgende Screenshot aus. Der wesentliche Unterschied zu `GitHub.com` besteht darin, dass `GitHub.com` eine Überprüfungsausführung verwendet, während GitHub Enterprise (unter Verwendung von persönlichen Zugriffs-Token) einen Commit-Status generiert:
+Wenn die Prüfung erstellt wird, sieht sie wie der folgende Screenshot aus. Der wesentliche Unterschied zu `GitHub.com` besteht darin, dass `GitHub.com` einen Check-Run verwendet, während GitHub Enterprise Server (unter Verwendung von persönlichen Zugriffstoken) einen Commit-Status generiert:
 
 ![Commit-Status zur Angabe des PR-Validierungsprozesses in GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 

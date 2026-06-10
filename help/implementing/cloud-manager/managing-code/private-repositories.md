@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigen
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 86%
+source-wordcount: '1104'
+ht-degree: 75%
 
 ---
 
@@ -15,16 +15,35 @@ ht-degree: 86%
 
 Durch das Einrichten von Cloud Manager zur Integration in Ihre privaten GitHub Cloud-Repositorys (auf `github.com` gehostete Repositorys) können Sie mithilfe von Cloud Manager Ihren Code direkt in GitHub validieren. Mit dieser Konfiguration müssen Sie Ihren Code nicht mehr regelmäßig mit dem Adobe-Repository synchronisieren.
 
+Cloud Manager überprüft die Eigentümerschaft des GitHub-Repositorys auf eine von zwei Arten, je nachdem, wo das Repository gehostet wird:
+
+* Repositorys auf `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, verwenden die Adobe GitHub-App. Auf dieser Seite wird diese Methode beschrieben.
+* GitHub Enterprise Server (selbst gehostet)-Repositorys verwenden einen PAT (Personal Access Token) und einen Webhook. Siehe [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+
 >[!NOTE]
 >
->Sie können auch die folgenden Repository-Typen mit Webhooks hinzufügen:
+>Diese Seite gilt für Repositorys, die auf `github.com` gehostet werden, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen. Diese Repositorys verwenden die Adobe GitHub-App , um die Eigentümerschaft zu überprüfen. Es ist keine Webhook-Konfiguration erforderlich, da Cloud Manager direkt über die App integriert wird.
 >
->* GitHub Enterprise Server-Repositorys (selbst gehostete GitHub-Version).
->* GitLab-Repositorys (sowohl `gitlab.com` als auch selbst gehostete GitLab-Versionen).
->* Bitbucket-Repositorys (sowohl `bitbucket.org` als auch Bitbucket Server, die selbst gehostete Bitbucket-Version).
->* Azure DevOps-Repositorys ([dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) und selbst gehostete Azure DevOps-Versionen)
+>Informationen zum Hinzufügen der folgenden Repository-Typen finden Sie unter [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Diese Repositorys verwenden einen PAT (Personal Access Token) und einen manuell konfigurierten Webhook , um den Besitz zu überprüfen.
 >
->Siehe [Hinzufügen von externen Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>* GitHub Enterprise Server (die selbst gehostete Version von GitHub)
+>* GitLab (`gitlab.com` und die selbst gehostete Version von GitLab)
+>* Bitbucket (nur `bitbucket.org`, die Cloud-Version)
+>* Azure DevOps (`dev.azure.com`)
+
+<!--
+>[!NOTE]
+>
+>You can also add the following repository types with webhooks:
+>
+>* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
+>* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
+>* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
+>* Azure DevOps (both [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) and self-hosted versions of Azure DevOps) repositories.
+>
+>See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+-->
 
 <!--
  CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
@@ -78,7 +97,7 @@ Die Konfiguration eines privaten GitHub-Repositorys in Cloud Manager erfolgt in 
    | Beschreibung (optional) | Eine längere Beschreibung des Repositorys. |
 
 1. Wählen Sie **Speichern** aus.
-Jetzt können Sie [die Eigentümerschaft des privaten Repositorys validieren](#validate-ownership).
+Jetzt können Sie [den Besitz des privaten Repositorys überprüfen](#validate-ownership).
 
 >[!TIP]
 >
