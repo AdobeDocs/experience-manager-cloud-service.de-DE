@@ -502,7 +502,7 @@ Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integra
 
 **So konfigurieren Sie Experience Platform Tags für die Integration:**
 
-1. Beginnen Sie, indem Sie über die CX Enterprise-[ auf Experience Platform Tags zugreifen](https://experience.adobe.com/#/home). Klicken Sie in der Menüleiste oben rechts auf der Seite auf ![Apps-Symbol, Lösungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Lösungen** und dann auf **[!UICONTROL Tags]**.
+1. Beginnen Sie, indem Sie über die CX Enterprise-[&#x200B; auf Experience Platform Tags zugreifen](https://experience.adobe.com/#/home). Klicken Sie in der Menüleiste oben rechts auf der Seite auf ![Apps-Symbol, Lösungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Lösungen** und dann auf **[!UICONTROL Tags]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
