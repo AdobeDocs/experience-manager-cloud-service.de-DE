@@ -82,7 +82,7 @@ AEM Edge-Funktions-Services werden in einer YAML-Konfigurationsdatei deklariert 
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [ zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [&#x200B; zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ const response = await fetch(request, { backend: "my-origin-name" });
 
 >[!NOTE]
 >
->Service-Stores (`configs`, `secrets` und `kvs`) sind in „Sandbox[Programmen“ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktions-Services selbst werden normalerweise in Sandbox-Umgebungen ausgeführt - nur die Stores werden nicht bereitgestellt.
+>Service-Stores (`configs`, `secrets` und `kvs`) sind in „Sandbox[Programmen“ &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktions-Services selbst werden normalerweise in Sandbox-Umgebungen ausgeführt - nur die Stores werden nicht bereitgestellt.
 
 ### Service-Konfiguration {#service-configuration}
 
