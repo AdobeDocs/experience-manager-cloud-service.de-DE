@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Cloud Manager Ihre Git-Repositorys hinzuf�
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 71%
 
 ---
 
@@ -20,11 +20,12 @@ Erfahren Sie, wie Sie in Cloud Manager Ihre Git-Repositorys hinzufügen, anzeige
 
 Repositorys werden in Cloud Manager zum Speichern und Verwalten Ihres Projekt-Codes mithilfe von Git verwendet. Für jedes von Ihnen hinzugefügte *Programm* wird automatisch ein von Adobe verwaltetes Repository erstellt.
 
-Darüber hinaus haben Sie die Möglichkeit, weitere von Adobe verwaltete Repositorys zu erstellen oder eigene private Repositorys hinzuzufügen. Alle mit Ihrem Programm verlinkten Repositorys können auf der Seite **Repositorys** eingesehen werden.
+Darüber hinaus haben Sie die Möglichkeit, weitere von Adobe verwaltete Repositorys oder Ihre eigenen selbst verwalteten Repositorys zu erstellen, die von einem externen Git-Anbieter gehostet werden. Bei selbst verwalteten Repositorys unterscheiden sich die Onboarding-Schritte je nachdem, wo Ihr Code gehostet wird. Repositorys auf `github.com` verwenden die Adobe-GitHub-App, während selbst gehostete und andere externe Repositorys ein persönliches Zugriffstoken und einen Webhook verwenden. Alle mit Ihrem Programm verlinkten Repositorys können auf der Seite **Repositorys** eingesehen werden.
 
 In Cloud Manager erstellte Repositorys können auch beim Hinzufügen oder Bearbeiten von Pipelines ausgewählt werden. Weitere Informationen zum Konfigurieren von Pipelines finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 Jede Pipeline ist mit einem primären Repository oder einer primären Verzweigung verknüpft. Mit der [Unterstützung von Git-Untermodulen](git-submodules.md) können jedoch zum Zeitpunkt der Erstellung mehrere sekundäre Verzweigungen einbezogen werden.
+
 
 ## Anzeigen der Seite „Repositorys“ {#repositories-window}
 
@@ -48,21 +49,31 @@ Weitere verfügbare Aktionen im Dropdown-Menü sind **[Repository-URL kopieren](
    ![Seite „Repositorys“](assets/repositories.png)
    *Die Seite „Repositorys“ in Cloud Manager.*
 
-## Hinzufügen eines Repositorys {#adding-repositories}
+## Adobe-Repository hinzufügen {#adding-repositories}
 
 Benutzende müssen die Rolle **Bereitstellungs-Manager** oder **Geschäftsinhaber** innehaben, um ein Repository hinzufügen zu können.
 
-Klicken Sie auf der Seite **Repositorys** oben rechts auf **Repository hinzufügen**.
+Hilfe bei der Auswahl zwischen der privaten und der externen Repository-Methode finden Sie unter [Hinzufügen eines Nicht-Adobe-Repositorys](#add-non-adobe-repositories).
 
-![Dialogfeld „Repository hinzufügen“](assets/repository-add.png)
-*Dialogfeld „Repository hinzufügen“.*
+1. Klicken Sie auf der Seite **Repositorys** oben rechts auf **Repository hinzufügen**.
 
-Cloud Manager unterstützt zwei Typen von Repositorys: von Adobe verwaltete Repositorys (**Adobe-Repository**) und selbstverwaltete Repositorys (**Privates Repository**). Die Pflichtfelder für das Setup unterscheiden sich je nach dem Repository-Typ, den Sie hinzufügen möchten. Weitere Informationen finden Sie in den folgenden Themen:
+   ![Dialogfeld „Repository hinzufügen“](assets/repository-add.png)
+   *Dialogfeld „Repository hinzufügen“*
 
-* [Hinzufügen von Adobe-Repositorys in Cloud Manager](adobe-repositories.md)
-* [Hinzufügen von privaten Repositorys in Cloud Manager](private-repositories.md)
+1. Klicken Sie auf **Adobe-Repository**. Siehe [Hinzufügen von Adobe-Repositorys in Cloud Manager](adobe-repositories.md).
 
-Für jedes Unternehmen oder eine IMS-Organisation gibt es eine Grenze von 300 Repositorys über alle Programme hinweg.
+   Für jedes Unternehmen oder eine IMS-Organisation gibt es eine Grenze von 300 Repositorys über alle Programme hinweg.
+
+### Hinzufügen eines Nicht-Adobe-Repositorys {#add-non-adobe-repositories}
+
+Wenn Sie Ihren Code außerhalb von Adobe hosten, hängen sowohl die Anleitungsseite als auch die Methode zur Eigentümervalidierung davon ab, wo das Repository gehostet wird. Verwenden Sie die folgende Tabelle, um den richtigen Pfad auszuwählen.
+
+| Wo Ihr Repository gehostet wird | Validierungsmethode | Seite mit den zu verwendenden Anweisungen |
+| --- | --- | --- |
+| `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen | Adobe GitHub-App und eine Geheimdatei. Kein Webhook erforderlich. | [Ein privates GitHub-Cloud-Repository in Cloud Manager hinzufügen](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| GitHub Enterprise Server (selbst gehostet) | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
+| GitLab, Bitbucket oder Azure DevOps | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+
 
 ## Zugriff auf Repository-Informationen {#repo-info}
 
@@ -97,7 +108,7 @@ Die Aktion **Löschen** entfernt das Repository aus Ihrem Projekt. Ein Repositor
 
 ![Löschen](assets/repository-delete.png)
 
-Nach dem Löschen eines Repositorys kann sein Name nicht mehr für zukünftig neu erstellte Repositorys verwendet werden. Wenn Sie versuchen, ein Repository mit demselben Namen wie ein gelöschtes Repository hinzuzufügen, wird die folgende Fehlermeldung angezeigt:
+Durch das Löschen eines Repositorys wird verhindert, dass sein Name für neue Repositorys verwendet wird, die in Zukunft erstellt werden. Wenn Sie versuchen, ein Repository mit demselben Namen wie ein gelöschtes Repository hinzuzufügen, wird die folgende Fehlermeldung angezeigt:
 
 `Repository name should be unique within organization.`
 
