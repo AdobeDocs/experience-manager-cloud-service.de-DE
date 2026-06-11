@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise für Universal Editor 2026.06.04
-description: Dies sind die Versionshinweise für die Version 2026.06.05 des universellen Editors.
+title: Versionshinweise für Universal Editor 2026.06.11
+description: Dies sind die Versionshinweise für die Version 2026.06.11 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 683e8c5f5d51872d9ba9cee59b05570920e697fe
+source-git-commit: 3ceab6402b4b93813ee838108dd381903cb915a9
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 20%
+source-wordcount: '126'
+ht-degree: 18%
 
 ---
 
 
-# Versionshinweise zum universellen Editor 2026.06.05 {#release-notes}
+# Versionshinweise für Universal Editor 2026.06.11 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 5. Juni 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 11. Juni 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -24,10 +24,8 @@ Dies sind die Versionshinweise für die Version vom 5. Juni 2026 des universelle
 >
 >Die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service finden Sie auf [dieser Seite.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## Neue Funktionen {#what-is-new}
-
-* Der universelle Editor unterstützt jetzt [authentifizierte Dokumenterstellungsseiten“](https://docs.da.live/developers/reference/access-control)
-
 ## Andere Verbesserungen {#other-improvements}
 
-* Es wurde ein Problem behoben, bei dem durch Ändern des ausgewählten Textes von **Überschrift** zu **Code** im Rich-Text-Editor die Formatierung auf **Absatz** zurückgesetzt werden konnte, anstatt den ausgewählten Stil beizubehalten.
+* Es wurde ein Problem behoben, bei dem leere Knoten bei bestimmten Vorgängen nicht ordnungsgemäß aus dem JCR gelöscht wurden.
+* Dekorative Bilder werden jetzt ordnungsgemäß vor Hilfstechnologien verborgen.
+* Bestimmte Fehlermeldungen wurden lesbarer, indem der gesamte Stacktrace entfernt wurde und nur die ursprüngliche Fehlermeldung angezeigt wurde.

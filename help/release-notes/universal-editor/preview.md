@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: ca134ec3e691e9e8a3f5609c786720c91780ceeb
+source-git-commit: be63e86bb0d677e03deded6d42af5020fee509de
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 11. Juni 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 18. Juni 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,5 +28,8 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Es wurde ein Problem behoben, bei dem leere Knoten bei bestimmten Vorgängen nicht ordnungsgemäß aus dem JCR gelöscht wurden.
-* Dekorative Bilder werden jetzt ordnungsgemäß vor Hilfstechnologien verborgen.
+* Die Drehschaltfläche kommuniziert nun den aktuellen Status korrekt mit Hilfstechnologien.
+* Der Status des unendlichen Ladens wurde in Situationen korrigiert, in denen Inhaltsfragmente Registerkarten ohne Inhalt enthalten.
+* Es wurde ein Fehler behoben, durch den ein Renderer in einigen Situationen beim Neuladen bestimmter Modelle abstürzte.
+* Es wurde ein Fehler behoben, durch den bestimmte Tags nicht entfernt werden konnten.
+* Der barrierefreie Name der Schaltfläche für das vorgestellte Bild enthält keine doppelten Informationen mehr.
