@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinz
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
+source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
 workflow-type: tm+mt
-source-wordcount: '2612'
-ht-degree: 82%
+source-wordcount: '2683'
+ht-degree: 74%
 
 ---
 
@@ -22,10 +22,18 @@ Kundinnen und Kunden können nun auch ihre Azure DevOps-Git-Repositorys in Cloud
 * Für Edge Delivery Services-Benutzende kann das integrierte Repository zum Synchronisieren und Bereitstellen von Sitecode verwendet werden.
 * Für Benutzende von AEM as a Cloud Service und Adobe Managed Services (AMS) kann das Repository mit Fullstack- und Frontend-Pipelines verknüpft werden.
 
-Cloud Manager überprüft die Eigentümerschaft am GitHub-Repository auf eine der beiden folgenden Arten, je nachdem, wo das Repository gehostet wird:
-
-* GitHub Enterprise Server (selbst gehostet)-Repositorys verwenden ein persönliches Zugriffstoken und einen Webhook. Auf dieser Seite wird diese Methode beschrieben.
-* Repositorys auf `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, verwenden die Adobe GitHub-App. Siehe [Hinzufügen eines privaten GitHub-Cloud-Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>[!IMPORTANT]
+>
+>Cloud Manager überprüft die Eigentümerschaft am GitHub-Repository auf eine der beiden folgenden Arten, je nachdem, wo das Repository gehostet wird:
+>
+>* Diese Anleitungsseite gilt für das Hinzufügen eines der folgenden Repository-Typen. Diese Repository-Typen verwenden einen PAT (Personal Access Token) und einen manuell konfigurierten Webhook , um den Besitz zu überprüfen.
+>
+>   * GitHub Enterprise Server (selbst gehostete Version von GitHub)-Repositorys.
+>   * GitLab-Repositorys (sowohl `gitlab.com` als auch die selbst gehostete Version von GitLab).
+>   * Bitbucket-Repositorys (nur `bitbucket.org`, Cloud-Version). Die selbst gehostete Version von Bitbucket wird seit dem 15. Februar 2024 nicht mehr unterstützt.
+>   * Azure DevOps (`dev.azure.com`)-Repositorys.
+>* Auf `github.com` gehostete Repositorys, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, verwenden die Adobe-GitHub-App, um die Eigentümerschaft zu überprüfen. Es ist keine Webhook-Konfiguration erforderlich, da Cloud Manager direkt über die App integriert werden kann. Siehe [Hinzufügen eines privaten GitHub Enterprise Cloud-Repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>
 
 ## Konfigurieren eines externen Repositorys
 
@@ -73,9 +81,9 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
 
 1. Wählen Sie **Speichern**, um das Repository hinzuzufügen.
 
-   Geben Sie jetzt ein Zugriffs-Token an, um die Eigentümerschaft des externen Repositorys zu validieren.
+   Um die Eigentümerschaft des externen Repositorys zu überprüfen, geben Sie ein Zugriffs-Token an.
 
-1. Geben Sie im Dialogfeld **Validierung der Eigentümerschaft eines privaten Repositorys** ein Zugriffs-Token an, um die Eigentümerschaft des externen Repositorys zu validieren, sodass Sie darauf zugreifen können. Klicken Sie anschließend auf **Validierung**.
+1. Geben **im Dialogfeld Validierung des Repository-Eigentümers** Zugriffstoken an, um den Besitz des externen Repositorys zu überprüfen, sodass Sie darauf zugreifen können, und klicken Sie dann auf **Validierung**.
 
    ![Auswählen eines vorhandenen Zugriffs-Tokens für ein Repository](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
    *Auswählen eines vorhandenen Zugriffs-Tokens für ein Bitbucket-Repository (nur zu Veranschaulichungszwecken).*
@@ -171,7 +179,7 @@ Mit Webhooks kann Cloud Manager beispielsweise Aktionen auf Grundlage von Ereign
 * Push-Ereignisse: Startet Pipelines, wenn der Trigger „Bei Git-Commit“ aktiviert ist.
 * Künftige kommentarbasierte Aktionen: Ermöglicht Workflows, etwa die direkte Bereitstellung aus einer PR in einer schnellen Entwicklungsumgebung (Rapid Development Environment, RDE).
 
-Die Webhook-Konfiguration ist für auf `gitub.com` gehosteten Repositorys nicht erforderlich, da Cloud Manager direkt über die GitHub-App integriert wird.
+Die Webhook-Konfiguration ist für auf `github.com` gehosteten Repositorys nicht erforderlich, da Cloud Manager direkt über die GitHub-App integriert wird.
 
 Für alle anderen externen Repositorys, die mit einem Zugriffstoken integriert werden - wie GitHub Enterprise Server, GitLab, Bitbucket und Azure DevOps - ist eine Webhook-Konfiguration verfügbar und muss manuell eingerichtet werden.
 
@@ -181,11 +189,11 @@ Für alle anderen externen Repositorys, die mit einem Zugriffstoken integriert w
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus, mit dem ein Webhook für ein externes Repository konfiguriert werden soll.
 
-1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das linke Seitenmenü anzuzeigen.
+1. Klicken Sie oben links auf der Seite auf ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) um das linke Menü anzuzeigen.
 
 1. Klicken Sie im linken Seitenmenü unter der Überschrift **Programm** auf ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositorys**.
 
-1. Wählen Sie auf der **Repositorys** mithilfe der Spalte **Typ** das gewünschte Repository und klicken Sie dann daneben auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Suchen Sie auf der **Repositorys** mithilfe der Spalte **Typ** nach dem gewünschten Repository und klicken Sie dann neben ![ Symbol Auslassungspunkte - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
    ![Option „Webhook konfigurieren“ im Dropdown-Menü für ein ausgewähltes Repository](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
@@ -208,10 +216,10 @@ Fügen Sie die geheimen Daten in eine Textdatei ein. Das kopierte Geheimnis ist 
 1. Fügen Sie die zuvor kopierte Webhook-URL in das URL-Textfeld ein.
    1. Ersetzen Sie den Abfrageparameter `api_key` in der Webhook-URL durch Ihren eigenen echten API-Schlüssel.
 
-      Um einen API-Schlüssel zu generieren, müssen Sie ein Integrationsprojekt in Adobe Developer Console erstellen. Ausführliche Informationen finden Sie unter [Erstellen eines API-Integrationsprojekts](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/).
+      Um einen API-Schlüssel zu generieren, müssen Sie ein Integrationsprojekt in Adobe Developer Console erstellen. Ausführliche Informationen finden Sie unter [Erstellen eines API-Integrationsprojekts](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration).
 
 1. Fügen Sie das zuvor kopierte Webhook-Geheimnis in das Textfeld **Geheimnis** (oder **Geheimer Schlüssel** oder **Geheimes Token**) ein.
-1. Konfigurieren Sie den Webhook so, dass die für Cloud Manager erforderlichen Ereignisse gesendet werden. Verwenden Sie die folgende Tabelle, um die richtigen Ereignisse für Ihren Git-Anbieter zu ermitteln.
+1. Um die Ereignisse zu senden, die für Cloud Manager erforderlich sind, konfigurieren Sie den Webhook. Verwenden Sie die folgende Tabelle, um die richtigen Ereignisse für Ihren Git-Anbieter zu ermitteln.
 
 >[!BEGINTABS]
 
@@ -263,16 +271,16 @@ Das Verhalten variiert je nach dem verwendeten Git-Anbieter, wie unten beschrieb
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-Wenn die Prüfung erstellt wird, sieht sie wie der folgende Screenshot aus. Der wesentliche Unterschied zu `GitHub.com` besteht darin, dass `GitHub.com` einen Check-Run verwendet, während GitHub Enterprise Server (unter Verwendung von persönlichen Zugriffstoken) einen Commit-Status generiert:
+Wenn die Prüfung erstellt wird, wird sie wie im folgenden Screenshot gezeigt angezeigt. Der wesentliche Unterschied zu `GitHub.com` besteht darin, dass `GitHub.com` einen Check-Run verwendet, während GitHub Enterprise Server (unter Verwendung von persönlichen Zugriffstoken) den folgenden Commit-Status generiert:
 
-![Commit-Status zur Angabe des PR-Validierungsprozesses in GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+![Commit-Status, um den PR-Validierungsprozess auf GitHub Enterprise Server anzugeben](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-GitLab-Interaktionen basieren ausschließlich auf Kommentaren. Bei Start der Validierung wird ein Kommentar hinzugefügt. Nach Abschluss der Validierung (ob erfolgreich oder fehlgeschlagen) wird der ursprüngliche Kommentar entfernt und durch einen neuen Kommentar mit Validierungsergebnissen oder Fehlerdetails ersetzt.
+GitLab-Interaktionen basieren nur auf Kommentaren. Bei Start der Validierung wird ein Kommentar hinzugefügt. Nach Abschluss der Validierung (ob erfolgreich oder fehlgeschlagen) wird der ursprüngliche Kommentar entfernt und durch einen neuen Kommentar mit Validierungsergebnissen oder Fehlerdetails ersetzt.
 
 Wenn die Validierung der Code-Qualität ausgeführt wird:
 
