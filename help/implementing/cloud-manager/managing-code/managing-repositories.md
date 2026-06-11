@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Cloud Manager Ihre Git-Repositorys hinzuf�
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -72,7 +72,7 @@ Wenn Sie Ihren Code außerhalb von Adobe hosten, hängen sowohl die Anleitungsse
 | --- | --- | --- |
 | `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen | Adobe GitHub-App und eine Geheimdatei. Kein Webhook erforderlich. | [Ein privates GitHub-Cloud-Repository in Cloud Manager hinzufügen](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server (selbst gehostet) | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| GitLab, Bitbucket oder Azure DevOps | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| GitLab, Bitbucket oder Azure DevOps | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Zugriff auf Repository-Informationen {#repo-info}
@@ -96,7 +96,7 @@ In **AEM Cloud Manager** dient die Aktion **Verzweigungen überprüfen/Projekt e
 
 Die Aktion **Repository-URL kopieren** kopiert die URL des auf der Seite **Repositorys** ausgewählten Repositorys in die Zwischenablage, um sie an anderer Stelle zu verwenden.
 
-## Anzeigen und Aktualisieren eines Repositorys {#view-update}
+## Repository anzeigen und aktualisieren {#view-update}
 
 Mit der Aktion **Anzeigen/aktualisieren** wird das Dialogfeld **Repository aktualisieren** geöffnet, in dem Sie den **Namen** des Repositorys und die **Repository-URL-Vorschau** anzeigen können. Außerdem können Sie damit die **Beschreibung** des Repositorys aktualisieren.
 
