@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 4b0145191ec0e31e227b59b99d7dff098f57d9a2
+source-git-commit: 0bc06c164838c75f185363a2bf05512171c9bd41
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 27%
@@ -189,7 +189,7 @@ Es ist wichtig, die Verwendung veralteter APIs zu entfernen.
 
 Seit **14.** schlagen Cloud Manager-Pipelines, die Code enthalten, der mit APIs zum Entfernen von 2/26/2026 **, während des** fehl. Bereitstellungen werden blockiert, bis die veraltete API-Nutzung entfernt wird. *Dies kann verhindern, dass zeitkritische Updates veröffentlicht werden, und sich auf Ihre Geschäftsabläufe auswirken.*
 
-Ab **11. Juni 2026** Umgebungen, die diese veralteten APIs verwenden, **keine wichtigen Adobe-Versions-Updates** und unterliegen nicht den Standardverpflichtungen von Adobe in Bezug auf Leistung und Verfügbarkeit. Infolgedessen erhalten Sie keine neuen Funktionen oder Fehlerbehebungen, die Anwendungsstabilität und -verfügbarkeit kann sich negativ auswirken und das Sicherheitsrisiko kann weiter zunehmen.
+Ab **23. Juli 2026** Umgebungen, die diese veralteten APIs weiterhin verwenden **erhalten keine wichtigen Adobe-Versions-** mehr und unterliegen nicht den Standardverpflichtungen von Adobe in Bezug auf Leistung und Verfügbarkeit. Infolgedessen erhalten Sie keine neuen Funktionen oder Fehlerbehebungen, die Anwendungsstabilität und -verfügbarkeit kann sich negativ auswirken und das Sicherheitsrisiko kann weiter zunehmen.
 
 Ausführliche Informationen finden Sie im [Artikel zur Einstellung](/help/release-notes/deprecated-removed-features.md#aem-apis). Als Referenz sind diese APIs unten aufgeführt:
 

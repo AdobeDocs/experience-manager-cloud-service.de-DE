@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4942d2acaa59ec0a5b8c4e7b8a0ea5d29995cea6
+source-git-commit: d3133acd35ffe533a4bd0014d106b8978953296d
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 71%
@@ -31,12 +31,12 @@ Während des Zeitfensters für die Einstellung erinnert Adobe die Kundinnen und 
 
 >[!IMPORTANT]
 >
->Mehrere [veraltete APIs](#aem-apis) werden am (**. Juni 2026)**. Bitte überprüfen Sie diese wichtigen Daten und Auswirkungen:
+>Mehrere [veraltete APIs](#aem-apis) werden am (23 **Juli 2026)**. Bitte überprüfen Sie diese wichtigen Daten und Auswirkungen:
 >
 >* **Ab 26. Januar 2026**: Benachrichtigungs-E-Mails zum Aktionscenter werden als Erinnerung gesendet, um die Verwendung dieser APIs zu entfernen, wenn eine Pipeline kürzlich ausgeführt wurde.
 >* **26. Februar 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet, **während** Schritts **Code-Qualität** angehalten. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können das Problem außer Kraft setzen, damit die Pipeline fortgesetzt werden kann. *Dies kann Ihre Fähigkeit, Code-Änderungen zu validieren und freizugeben, verlangsamen.*
 >* **14. April 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet **schlagen** während des **Code-** fehl. Bereitstellungen werden blockiert, bis die veraltete API-Nutzung entfernt wird. *Dies kann verhindern, dass zeitkritische Updates veröffentlicht werden, und sich auf Ihre Geschäftsabläufe auswirken.*
->* **11. Juni 2026**: Umgebungen, die weiterhin veraltete APIs verwenden **erhalten keine wichtigen Adobe-Versions-** und unterliegen nicht den Standardverpflichtungen von Adobe in Bezug auf Leistung und Verfügbarkeit. Infolgedessen erhalten Sie keine neuen Funktionen oder Fehlerbehebungen, die Anwendungsstabilität und -verfügbarkeit kann sich negativ auswirken und das Sicherheitsrisiko kann weiter zunehmen. Um erneut Adobe-Versions-Updates zu erhalten, muss eine Full-Stack-Pipeline erfolgreich ausgeführt werden. Die Aktualisierung wird dann innerhalb weniger Tage angewendet.
+>* **23. Juli 2026**: Umgebungen, die weiterhin veraltete APIs verwenden **erhalten keine wichtigen Adobe-Versions-** und unterliegen nicht den Standardverpflichtungen von Adobe in Bezug auf Leistung und Verfügbarkeit. Infolgedessen erhalten Sie keine neuen Funktionen oder Fehlerbehebungen, die Anwendungsstabilität und -verfügbarkeit kann sich negativ auswirken und das Sicherheitsrisiko kann weiter zunehmen. Um erneut Adobe-Versions-Updates zu erhalten, muss eine Full-Stack-Pipeline erfolgreich ausgeführt werden. Die Aktualisierung wird dann innerhalb weniger Tage angewendet.
 >
 
 ## Veraltete Funktionalität {#deprecated-features}
@@ -87,12 +87,12 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden bere
 
 >[!IMPORTANT]
 >
->Mehrere [veraltete APIs](#aem-apis) werden am (**. Juni 2026)**. Bitte überprüfen Sie diese wichtigen Daten und Auswirkungen:
+>Mehrere [veraltete APIs](#aem-apis) werden am (23 **Juli 2026)**. Bitte überprüfen Sie diese wichtigen Daten und Auswirkungen:
 >
 >* **Ab 26. Januar 2026**: Benachrichtigungs-E-Mails zum Aktionscenter werden als Erinnerung gesendet, um die Verwendung dieser APIs zu entfernen.
 >* **26. Februar 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet, **während** Schritts **Code-Qualität** angehalten. Bereitstellungs-Manager, Projekt-Manager oder Geschäftsinhaber können das Problem außer Kraft setzen, damit die Pipeline fortgesetzt werden kann. *Dies kann Ihre Fähigkeit, Code-Änderungen zu validieren und freizugeben, verlangsamen.*
 >* **14. April 2026**: Cloud Manager-Pipelines, die Code enthalten, der diese APIs verwendet **schlagen** während des **Code-** fehl. Bereitstellungen werden blockiert, bis die veraltete API-Nutzung entfernt wird. *Dies kann verhindern, dass zeitkritische Updates veröffentlicht werden, und sich auf Ihre Geschäftsabläufe auswirken.*
->* **11. Juni 2026**: Umgebungen, die weiterhin veraltete APIs verwenden **erhalten keine wichtigen Adobe-Versions-Updates** unterliegen nicht den Standardverpflichtungen von Adobe in Bezug auf Leistung und Verfügbarkeit. Infolgedessen erhalten Sie keine neuen Funktionen oder Fehlerbehebungen, die Anwendungsstabilität und -verfügbarkeit kann sich negativ auswirken und das Sicherheitsrisiko kann weiter zunehmen.
+>* **23. Juli 2026**: Umgebungen, die weiterhin veraltete APIs verwenden **erhalten keine wichtigen Adobe-Versions-Updates** unterliegen nicht den Standardverpflichtungen von Adobe in Bezug auf Leistung und Verfügbarkeit. Infolgedessen erhalten Sie keine neuen Funktionen oder Fehlerbehebungen, die Anwendungsstabilität und -verfügbarkeit kann sich negativ auswirken und das Sicherheitsrisiko kann weiter zunehmen.
 >
 
 <details>
