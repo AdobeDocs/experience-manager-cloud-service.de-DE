@@ -63,7 +63,7 @@ Generative KI wird überall in AEM verwendet:
 
   Mit der AI-Übersetzungsintegration können Sie ein großes Sprachmodell (LLM) als Übersetzungs-Service für Inhalte verwenden, die Sie in Adobe Experience Manager erstellen. Sie stellen eine Verbindung zwischen AEM und Ihrem LLM-Anbieter her (beginnend mit Microsoft Azure OpenAI), verwenden dieselben Übersetzungs-Workflows wie für andere Connectoren und laden optional stilistische Leitfäden für Übersetzungen hoch, damit AEM Regeln generieren kann, die den Ton, die Terminologie und die Markensprache über verschiedene Gebietsschemata hinweg konsistent halten.
 
-* [AEM Content-KI](https://experienceleague.adobe.com/en/docs/experience-manager-content-ai/using/introduction)
+* [AEM Content-KI](https://experienceleague.adobe.com/de/docs/experience-manager-content-ai/using/introduction)
 
   Die AEM Content AI unterstützt Marken bei der Pflege genauer, aktueller und markeninterner Inhalte, da KI-Systeme zunehmend ihre Botschaften darstellen. Sie bietet KI-gestütztes Authoring, die Ermittlung von Inhalten in natürlicher Sprache und markenbewusste Generierung sowohl für menschliche als auch für KI-gesteuerte Erlebnisse.
 
