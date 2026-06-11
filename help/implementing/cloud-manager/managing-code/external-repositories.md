@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinz
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
+source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2612'
 ht-degree: 82%
 
 ---
@@ -22,7 +22,7 @@ Kundinnen und Kunden können nun auch ihre Azure DevOps-Git-Repositorys in Cloud
 * Für Edge Delivery Services-Benutzende kann das integrierte Repository zum Synchronisieren und Bereitstellen von Sitecode verwendet werden.
 * Für Benutzende von AEM as a Cloud Service und Adobe Managed Services (AMS) kann das Repository mit Fullstack- und Frontend-Pipelines verknüpft werden.
 
-Cloud Manager überprüft die Eigentümerschaft des GitHub-Repositorys auf eine von zwei Arten, je nachdem, wo das Repository gehostet wird:
+Cloud Manager überprüft die Eigentümerschaft am GitHub-Repository auf eine der beiden folgenden Arten, je nachdem, wo das Repository gehostet wird:
 
 * GitHub Enterprise Server (selbst gehostet)-Repositorys verwenden ein persönliches Zugriffstoken und einen Webhook. Auf dieser Seite wird diese Methode beschrieben.
 * Repositorys auf `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, verwenden die Adobe GitHub-App. Siehe [Hinzufügen eines privaten GitHub-Cloud-Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
