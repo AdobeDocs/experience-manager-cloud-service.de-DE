@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über KI in Adobe Experience Manager as a Cloud S
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: b18758b46e999222c4af1fa19781018acc9eb7ea
+source-git-commit: 7cbada357eee47726df788915e071f073b7bce79
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 42%
+source-wordcount: '586'
+ht-degree: 45%
 
 ---
 
@@ -18,7 +18,7 @@ Künstliche Intelligenz (KI) ist ein integraler Bestandteil von Adobe Experience
 
 ## KI-Assistent {#ai-assistant}
 
-Der [KI-Assistent in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) bietet eine Gesprächsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre AEM-bezogenen Abfragen zu optimieren.
+Der [KI-Assistent in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) bietet eine Konversationsoberfläche, die darauf ausgelegt ist, die Suche nach Antworten auf Ihre AEM-bezogenen Abfragen zu erleichtern.
 
 ## Agent AI in AEM {#agentic-ai-in-aem}
 
@@ -63,6 +63,10 @@ Generative KI wird überall in AEM verwendet:
 
   Mit der AI-Übersetzungsintegration können Sie ein großes Sprachmodell (LLM) als Übersetzungs-Service für Inhalte verwenden, die Sie in Adobe Experience Manager erstellen. Sie stellen eine Verbindung zwischen AEM und Ihrem LLM-Anbieter her (beginnend mit Microsoft Azure OpenAI), verwenden dieselben Übersetzungs-Workflows wie für andere Connectoren und laden optional stilistische Leitfäden für Übersetzungen hoch, damit AEM Regeln generieren kann, die den Ton, die Terminologie und die Markensprache über verschiedene Gebietsschemata hinweg konsistent halten.
 
+* [AEM Content-KI](https://experienceleague.adobe.com/de/docs/experience-manager-content-ai/using/introduction)
+
+  Die AEM Content AI unterstützt Marken bei der Pflege genauer, aktueller und markeninterner Inhalte, da KI-Systeme zunehmend ihre Botschaften darstellen. Sie bietet KI-gestütztes Authoring, die Ermittlung von Inhalten in natürlicher Sprache und markenbewusste Generierung sowohl für menschliche als auch für KI-gesteuerte Erlebnisse.
+
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
 -->
@@ -71,10 +75,10 @@ Generative KI wird überall in AEM verwendet:
 
 Es stehen viele Ressourcen zur Verfügung, darunter:
 
-* [Übersicht über Adobe AI](https://www.adobe.com/de/ai/overview.html)
+* [Überblick über die Adobe-KI](https://www.adobe.com/de/ai/overview.html)
 
 * [Verantwortungsvolle KI bei Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
 * [Generative KI in Experience Cloud-Produkten](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai)
 
-   * [Generative KI in Experience Cloud-Produkten - Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai#aem)
+   * [Generative KI in Experience Cloud-Produkten – Adobe Experience Manager](https://experienceleague.adobe.com/de/docs/core-services/interface/features/generative-ai#aem)
