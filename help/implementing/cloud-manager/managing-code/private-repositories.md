@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigen
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 60%
+source-wordcount: '1084'
+ht-degree: 59%
 
 ---
 
@@ -134,7 +134,6 @@ Die Spalte **Typ** in der Tabelle auf der Seite **Repositorys** kennzeichnet die
 Um später auf das Repository zuzugreifen und die Validierung abzuschließen, klicken Sie auf der Seite **Repositorys** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in der Zeile, die das hinzugefügte GitHub-Repository darstellt. Wählen Sie in der Dropdown-Liste **Validierung der Eigentümerschaft** aus.
 
 
-
 ## Verwenden privater GitHub Cloud-Repositorys mit Cloud Manager {#using}
 
 Nachdem das GitHub-Repository in Cloud Manager validiert wurde, ist die Integration abgeschlossen. Sie können jetzt das Repository mit Cloud Manager verwenden.
@@ -171,7 +170,7 @@ Validierte private Repositorys können [Full-Stack- und Frontend-Pipelines zugeo
 
 ## Einschränkungen {#limitations}
 
-Bei der Verwendung privater Repositorys mit Cloud Manager gelten bestimmte Einschränkungen.
+Die folgenden Einschränkungen gelten für die Verwendung privater Repositorys mit Cloud Manager.
 
 * Bei Verwendung privater Repositorys in Full-Stack-Produktions-Pipelines wird kein Git-Tag erstellt und gepusht.
 * Wenn die Adobe-GitHub-App aus Ihrer GitHub-Organisation entfernt wird, wird die Pull-Anforderung-Validierungsfunktion für alle Repositorys entfernt.
