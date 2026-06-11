@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: be63e86bb0d677e03deded6d42af5020fee509de
+source-git-commit: fd128d2aa5bbd4c84b5ab438542ec696768b06a1
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -33,3 +33,4 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 * Es wurde ein Fehler behoben, durch den ein Renderer in einigen Situationen beim Neuladen bestimmter Modelle abstürzte.
 * Es wurde ein Fehler behoben, durch den bestimmte Tags nicht entfernt werden konnten.
 * Der barrierefreie Name der Schaltfläche für das vorgestellte Bild enthält keine doppelten Informationen mehr.
+

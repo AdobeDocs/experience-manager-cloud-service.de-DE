@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Version 2026.06.11 des univ
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 3ceab6402b4b93813ee838108dd381903cb915a9
+source-git-commit: fd128d2aa5bbd4c84b5ab438542ec696768b06a1
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 18%
@@ -29,3 +29,4 @@ Dies sind die Versionshinweise für die Version vom 11. Juni 2026 des universell
 * Es wurde ein Problem behoben, bei dem leere Knoten bei bestimmten Vorgängen nicht ordnungsgemäß aus dem JCR gelöscht wurden.
 * Dekorative Bilder werden jetzt ordnungsgemäß vor Hilfstechnologien verborgen.
 * Bestimmte Fehlermeldungen wurden lesbarer, indem der gesamte Stacktrace entfernt wurde und nur die ursprüngliche Fehlermeldung angezeigt wurde.
+
