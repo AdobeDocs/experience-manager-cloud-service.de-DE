@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinz
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 74%
 
 ---
@@ -26,7 +26,7 @@ Kundinnen und Kunden können nun auch ihre Azure DevOps-Git-Repositorys in Cloud
 >
 >Cloud Manager überprüft die Eigentümerschaft am GitHub-Repository auf eine der beiden folgenden Arten, je nachdem, wo das Repository gehostet wird:
 >
->* Diese Anleitungsseite gilt für das Hinzufügen eines der folgenden Repository-Typen. Diese Repository-Typen verwenden einen PAT (Personal Access Token) und einen manuell konfigurierten Webhook , um den Besitz zu überprüfen.
+>* Diese Anleitungsseite gilt für das Hinzufügen eines der folgenden Repository-Typen. Diese Typen verwenden einen PAT (Personal Access Token) und einen manuell konfigurierten Webhook , um den Besitz zu überprüfen.
 >
 >   * GitHub Enterprise Server (selbst gehostete Version von GitHub)-Repositorys.
 >   * GitLab-Repositorys (sowohl `gitlab.com` als auch die selbst gehostete Version von GitLab).
@@ -193,7 +193,7 @@ Für alle anderen externen Repositorys, die mit einem Zugriffstoken integriert w
 
 1. Klicken Sie im linken Seitenmenü unter der Überschrift **Programm** auf ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositorys**.
 
-1. Suchen Sie auf der **Repositorys** mithilfe der Spalte **Typ** nach dem gewünschten Repository und klicken Sie dann neben ![&#x200B; Symbol Auslassungspunkte - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Suchen Sie auf der **Repositorys** mithilfe der Spalte **Typ** nach dem gewünschten Repository und klicken Sie dann neben ![ Symbol Auslassungspunkte - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
    ![Option „Webhook konfigurieren“ im Dropdown-Menü für ein ausgewähltes Repository](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
