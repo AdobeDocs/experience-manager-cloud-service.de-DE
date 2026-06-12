@@ -4,21 +4,21 @@ description: Erfahren Sie, wie Sie Cloud Manager für die Arbeit mit Ihren eigen
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 01bd83a9285158ba2d3ce840bccf8bef1b1f37a8
+source-git-commit: 188201dfaececb21d373450711eb206b8e2323e2
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 59%
+source-wordcount: '1093'
+ht-degree: 47%
 
 ---
 
-# Hinzufügen eines privaten GitHub Enterprise Cloud-Repositorys in Cloud Manager {#private-repositories}
+# Hinzufügen eines privaten GitHub-Repositorys in Cloud Manager {#private-repositories}
 
-Durch das Einrichten von Cloud Manager zur Integration in Ihre privaten GitHub Cloud-Repositorys (auf `github.com` gehostete Repositorys) können Sie mithilfe von Cloud Manager Ihren Code direkt in GitHub validieren. Mit dieser Konfiguration müssen Sie Ihren Code nicht mehr regelmäßig mit dem Adobe-Repository synchronisieren.
+Durch das Einrichten von Cloud Manager für die Integration mit Ihrem auf `github.com` gehosteten privaten GitHub-Repository können Sie Ihren Code mithilfe von Cloud Manager direkt in GitHub validieren. Diese Seite gilt für alle auf `github.com` gehosteten Repositorys, unabhängig vom GitHub-Plan (kostenlos, Pro, Team oder Enterprise Cloud). Mit dieser Konfiguration müssen Sie Ihren Code nicht mehr regelmäßig mit dem Adobe-Repository synchronisieren.
 
 >[!IMPORTANT]
 >Cloud Manager überprüft die Eigentümerschaft am GitHub-Repository auf eine der beiden folgenden Arten, je nachdem, wo das Repository gehostet wird:
 >
->* Diese Seite gilt für Repositorys, die auf `github.com` gehostet werden, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen. Diese Repositorys verwenden die Adobe GitHub-App , um die Eigentümerschaft zu überprüfen. Es ist keine Webhook-Konfiguration erforderlich, da Cloud Manager direkt über die App integriert werden kann.
+>* Diese Seite gilt für alle auf `github.com` gehosteten Repositorys, unabhängig vom GitHub-Plan (kostenlos, Pro, Team oder Enterprise Cloud). Diese Repositorys verwenden die Adobe GitHub-App , um die Eigentümerschaft zu überprüfen. Es ist keine Webhook-Konfiguration erforderlich, da Cloud Manager direkt über die App integriert wird.
 >* Wenn Sie einen der folgenden Repository-Typen hinzufügen möchten, finden Sie weitere Informationen unter [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). Diese Repositorys verwenden einen PAT (Personal Access Token) und einen manuell konfigurierten Webhook , um den Besitz zu überprüfen.
 >
 >   * GitHub Enterprise Server (selbst gehostete Version von GitHub)-Repositorys.
@@ -28,14 +28,14 @@ Durch das Einrichten von Cloud Manager zur Integration in Ihre privaten GitHub C
 
 ## Konfiguration {#configuration}
 
-Die Konfiguration eines privaten GitHub-Repositorys in Cloud Manager erfolgt in zwei Schritten:
+Die Konfiguration eines privaten GitHub-Repositorys in Cloud Manager besteht aus zwei Schritten:
 
-1. Fügen Sie einem ausgewählten Programm [ein privates GitHub-Repository hinzu](#add-repo).
-1. [Überprüfen Sie dann die Eigentümerschaft des privaten GitHub Cloud-Repositorys](#validate-ownership).
+1. [Privates GitHub-Repository hinzufügen](#add-repo) zu einem ausgewählten Programm hinzufügen.
+1. Überprüfen Sie dann [die Eigentümerschaft des privaten GitHub-Repositorys](#validate-ownership).
 
 
 
-### Hinzufügen eines privaten GitHub Cloud-Repositorys zu einem Programm {#add-repo}
+### Hinzufügen eines privaten GitHub-Repositorys zu einem Programm {#add-repo}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -103,11 +103,11 @@ Die Spalte **Typ** in der Tabelle auf der Seite **Repositorys** kennzeichnet die
 Um später auf das Repository zuzugreifen und die Validierung abzuschließen, klicken Sie auf der Seite **Repositorys** auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in der Zeile, die das hinzugefügte GitHub-Repository darstellt. Wählen Sie in der Dropdown-Liste **Validierung der Eigentümerschaft** aus.
 
 
-## Verwenden privater GitHub Cloud-Repositorys mit Cloud Manager {#using}
+## Verwenden privater GitHub-Repositorys mit Cloud Manager {#using}
 
 Nachdem das GitHub-Repository in Cloud Manager validiert wurde, ist die Integration abgeschlossen. Sie können jetzt das Repository mit Cloud Manager verwenden.
 
-**So verwenden Sie private GitHub Cloud-Repositorys mit Cloud Manager:**
+**So verwenden Sie private GitHub-Repositorys mit Cloud Manager:**
 
 1. Beim Erstellen einer Pull-Anfrage wird automatisch eine GitHub-Prüfung ausgeführt.
 
@@ -130,8 +130,7 @@ Wenn die Pull-Anfrage zusammengeführt oder geschlossen wird, wird die erstellte
 >Sie können die automatisch erstellten Pipelines so steuern, dass sie jede Pull-Anfrage an ein privates Repository validieren. Weitere Informationen finden Sie unter [Konfiguration der GitHub-Prüfung für private Repositorys](github-check-config.md).
 
 
-
-## Zuordnen von privaten GitHub Cloud-Repositorys zu Pipelines {#pipelines}
+## Verknüpfen privater GitHub-Repositorys mit Pipelines {#pipelines}
 
 Validierte private Repositorys können [Full-Stack- und Frontend-Pipelines zugeordnet werden](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
@@ -143,7 +142,7 @@ Die folgenden Einschränkungen gelten für die Verwendung privater Repositorys m
 
 * Bei Verwendung privater Repositorys in Full-Stack-Produktions-Pipelines wird kein Git-Tag erstellt und gepusht.
 * Wenn die Adobe-GitHub-App aus Ihrer GitHub-Organisation entfernt wird, wird die Pull-Anforderung-Validierungsfunktion für alle Repositorys entfernt.
-* Pipelines, die private GitHub Cloud-Repositorys und den „On-Commit“-Build-Trigger verwenden, werden nicht automatisch gestartet, wenn ein neuer Commit in die ausgewählte Verzweigung verschoben wird.
+* Pipelines, die private GitHub-Repositorys verwenden und den Build-Trigger „on-commit“ verwenden, werden nicht automatisch gestartet, wenn ein neuer Commit in die ausgewählte Verzweigung gepusht wird.
 * Die [Funktion zur Wiederverwendung von Artefakten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) gilt nicht für private Repositorys.
 * Sie können die Validierung der Pull-Anfrage nicht mithilfe der GitHub-Prüfung über Cloud Manager anhalten. Während der Validierung des GitHub-Repositorys in Cloud Manager versucht Cloud Manager immer, die für dieses Repository erstellten Pull-Anfragen zu validieren.
 * Wenn Ihre GitHub-Organisation IP-Einschränkungen durchsetzt, erstellen Sie einen Support-Fall, um die Liste der zuzulassen IP-Adressen zu erhalten.
