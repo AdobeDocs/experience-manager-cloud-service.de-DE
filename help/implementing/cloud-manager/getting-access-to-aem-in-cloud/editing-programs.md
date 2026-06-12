@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
+source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 20%
@@ -17,8 +17,8 @@ ht-degree: 20%
 
 Um Programme zu verwalten und zu bearbeiten, beginnen Sie bei der Konsole [**Meine Programme**](/help/implementing/cloud-manager/navigation.md). Die Seite **Meine Programme** bietet einen Überblick über alle Programme, auf die Sie Zugriff haben. Bei der Auswahl eines einzelnen Programms **die Seite** Programmübersicht“ einen Überblick über die Details des Programms.
 
-
 Von der **Programmübersicht** aus können Benutzende mit den erforderlichen Berechtigungen [Produktionsprogramme, die in Ihrer Organisation erstellt wurden](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden](creating-sandbox-programs.md), bearbeiten. Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
+
 
 * Aktivieren oder deaktivieren Sie den **WAF-DDOS** Schutz auf der Registerkarte **Sicherheit**.
 * Fügen Sie die Sites-Lösung einem vorhandenen Programm mit Assets hinzu und fügen Sie Assets einem vorhandenen Programm mit Sites hinzu.

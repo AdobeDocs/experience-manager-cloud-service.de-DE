@@ -4,7 +4,7 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
+source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 68%
@@ -16,10 +16,10 @@ ht-degree: 68%
 
 Traffic-Filterregeln blockieren oder erlauben Anfragen auf CDN-Ebene. Dies ist in Szenarien wie den folgenden nützlich:
 
-
 * Beschränken des Zugriffs auf bestimmte Domains auf den internen Unternehmens-Traffic, bevor eine neue Site live geschaltet wird
 * Um weniger anfällig für volumetrische DoS-Angriffe zu sein, richten Sie Ratenbeschränkungen ein.
 * Verhindern, dass Ihre Seiten von bekannten bösartigen IP-Adressen angesprochen werden.
+
 
 Viele dieser Traffic-Filterregeln stehen allen Kundinnen und Kunden von AEM as a Cloud Service Sites und Forms zur Verfügung. Als *Standard-Traffic-Filterregeln* werden sie für Anfrageeigenschaften verwendet: IP, Hostname, Pfad und Benutzeragent. Standard-Traffic-Filterregeln umfassen Ratenbegrenzungsregeln zum Schutz vor Traffic-Spitzen.
 
