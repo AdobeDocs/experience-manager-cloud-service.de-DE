@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 55%
+source-wordcount: '1792'
+ht-degree: 51%
 
 ---
 
@@ -108,7 +108,7 @@ Wenn Sie über die erforderlichen Berechtigungen verfügen, wird die Registerkar
 
 ![Sicherheitsoptionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
-Die Registerkarte **Sicherheit** bietet die Möglichkeit, **HIPAA** und/oder **WAF-DDOS-Schutz** oder beide Optionen für Ihr Produktionsprogramm zu aktivieren.
+Die Registerkarte **Sicherheit** bietet die Optionen zum Aktivieren **HIPAA**, **WAF-DDOS-** oder beides für Ihr Produktionsprogramm und **Kundenseitig verwaltete Schlüssel**.
 
 Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial of Service) von Adobe erleichtert die Cloud-basierte Sicherheit als Teil eines mehrschichtigen Ansatzes zum Schutz vor Sicherheitslücken.
 
@@ -117,7 +117,17 @@ Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial 
    * Die HIPAA-Option kann nach der Programmerstellung weder aktiviert noch deaktiviert werden.
 * **WAF-DDOS-Schutz** - Mit dieser Option wird die Web Application Firewall durch Regeln zum Schutz Ihrer Anwendung aktiviert.
    * Nach der Aktivierung kann der WAF-DDOS-Schutz durch Einrichten einer [produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) konfiguriert werden.
-   * Unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) finden Sie Informationen dazu, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+
+     >[!NOTE]
+     >
+     >Wenn Sie **WAF-DDOS-Schutz** aktivieren, wird die Funktion aktiviert, aber lizenzierte WAF-Regeln bieten nur dann Schutz, wenn das Kontrollkästchen aktiviert ist. Unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md) erfahren Sie, wie Sie Traffic-Filterregeln in Ihrem Repository verwalten, damit sie ordnungsgemäß bereitgestellt werden.
+     >
+     >Um sicherzustellen, dass die Funktion aktiv ist, überprüfen Sie die [CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)Protokolle, sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Zum Beispiel:
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >Dieses Attribut wird angezeigt, sobald WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
+
 * **Kundenseitig verwaltete Schlüssel** - Mit dieser Option wird CMK (Customer Managed Keys) für das Programm aktiviert, sodass Sie eigene Verschlüsselungsschlüssel für ruhende Daten in Azure Blob Storage und MongoDB bereitstellen können. Wenn Sie möchten, können Sie später CMK aktivieren, indem Sie [ein Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * CMK ist nur für Cloud Service-Programme verfügbar. Es kann nicht in Sandbox-Programmen aktiviert werden.
@@ -134,7 +144,7 @@ Die CMK-Lizenznutzung ist im Lizenz-Dashboard sichtbar. Informationen zur Anzahl
 
 >[!NOTE]
 >
->Die hier beschriebene flexible Veröffentlichungsebene befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebene flexible Veröffentlichungsebene befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Wenn für Ihr Unternehmen die Funktion „Flexible Veröffentlichungsebene“ aktiviert ist, können Sie konfigurieren, ob für die Umgebungen Ihres Programms eine Veröffentlichungsebene erforderlich ist. Diese Option wird auf der Registerkarte **Bereitstellungstyp** im Dialogfeld **Für Produktion einrichten** angezeigt (während der [Programmerstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)).
 
