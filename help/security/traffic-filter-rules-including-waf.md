@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
+source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -26,7 +26,7 @@ Eine Unterkategorie von Traffic-Filterregeln erfordert entweder eine Lizenz für
 
 Traffic-Filterregeln können über Cloud Manager-Konfigurations-Pipelines in Entwicklungs-, Staging- und Produktionsumgebungen bereitgestellt werden. Die Konfigurationsdatei kann mithilfe von Befehlszeilenprogrammen in schnellen Entwicklungsumgebungen (Rapid Development Environments, RDEs) bereitgestellt werden.
 
-Um sich schnell mit dieser Funktion vertraut zu machen, [&#x200B; Sie ein Tutorial &#x200B;](#tutorial).
+Um sich schnell mit dieser Funktion vertraut zu machen, [ Sie ein Tutorial ](#tutorial).
 
 >[!NOTE]
 >Weitere Konfigurationsoptionen für CDN-Traffic - z. B. das Bearbeiten von Anfragen/Antworten, das Deklarieren von Weiterleitungen und das Weiterleiten von Proxys an Nicht-AEM-Absender - finden Sie im Artikel [Konfigurieren von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) .
@@ -61,7 +61,7 @@ Kunden ergreifen proaktive Maßnahmen, um Angriffe auf Anwendungsebene (Ebene 7)
 
 Auf der Apache-Ebene konfigurieren Kunden beispielsweise entweder das [Dispatcher-Modul](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) oder [ModSecurity](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection), um den Zugriff auf bestimmte Inhalte zu beschränken.
 
-In diesem Artikel wird beschrieben, wie Traffic-Filterregeln mithilfe der Cloud Manager-Pipelines (config[&#x200B; für das von Adobe verwaltete CDN bereitgestellt &#x200B;](/help/operations/config-pipeline.md). Neben *Standard-Traffic-Filterregeln* (IP, Pfad, Kopfzeilen, Ratenbeschränkungen) lizenzieren Kunden *WAF-Regeln*.
+In diesem Artikel wird beschrieben, wie Traffic-Filterregeln mithilfe der Cloud Manager-Pipelines (config[ für das von Adobe verwaltete CDN bereitgestellt ](/help/operations/config-pipeline.md). Neben *Standard-Traffic-Filterregeln* (IP, Pfad, Kopfzeilen, Ratenbeschränkungen) lizenzieren Kunden *WAF-Regeln*.
 
 ## Vorgeschlagener Prozess {#suggested-process}
 
@@ -108,7 +108,7 @@ Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess zur Bes
 
    1. Um WAF in einem neuen Programm zu konfigurieren, aktivieren Sie das Kontrollkästchen **WAF-DDOS-Schutz** auf der Registerkarte **Sicherheit**, wenn Sie [ein Produktionsprogramm erstellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
-   1. Um WAF für ein vorhandenes Programm zu konfigurieren, [&#x200B; Sie „Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Aktivieren Sie auf der **Sicherheit** die Option **WAF-DDOS-Schutz**, um die Funktion zu aktivieren, oder deaktivieren Sie sie, um die Funktion zu deaktivieren. Sie können diese Einstellung jederzeit ändern.
+   1. Um WAF für ein vorhandenes Programm zu konfigurieren, [ Sie „Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Aktivieren Sie auf der **Sicherheit** die Option **WAF-DDOS-Schutz**, um die Funktion zu aktivieren, oder deaktivieren Sie sie, um die Funktion zu deaktivieren. Sie können diese Einstellung jederzeit ändern.
 
       Um zu bestätigen, dass die Funktion *aktiv* ist, nachdem Sie sie aktiviert haben, überprüfen Sie die [CDN-](#cdn-logs), sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Beispiel:
 
@@ -122,7 +122,7 @@ Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess zur Bes
 
 Um Muster wie IP, Benutzeragent, Kopfzeilen, Hostname, Geografie oder URL abzugleichen, können Sie *Traffic-Filterregeln* konfigurieren.
 
-Kunden mit einer Lizenz für erweiterte Sicherheit oder erweiterte Sicherheit für das Gesundheitswesen konfigurieren *WAF-Regeln* die auf [WAF-Flags &#x200B;](#waf-flags-list).
+Kunden mit einer Lizenz für erweiterte Sicherheit oder erweiterte Sicherheit für das Gesundheitswesen konfigurieren *WAF-Regeln* die auf [WAF-Flags ](#waf-flags-list).
 
 Im Folgenden finden Sie ein Beispiel für einen Satz von Traffic-Filterregeln, der auch eine WAF-Regel enthält.
 
@@ -458,7 +458,7 @@ data:
 
 Eine E[Mail](/help/operations/actions-center.md)Benachrichtigung des Aktionszentrums warnt Sie, wenn ein hoher Traffic von derselben IP-Adresse den Ursprung erreicht, was auf einen DDoS-Angriff hindeutet.
 
-Wenn dieser Schwellenwert erreicht ist, blockiert Adobe den Traffic von dieser IP-Adresse. Ergreifen Sie zusätzliche Maßnahmen zum Schutz Ihrer Herkunft, z. B. die Konfiguration von Traffic-Filterregeln für das Ratenlimit. Eine [&#x200B; Anleitung finden Sie im Tutorial zum Blockieren von DoS- und DDoS](#tutorial-blocking-DDoS-with-rules)Angriffen mit Traffic-Regeln .
+Wenn dieser Schwellenwert erreicht ist, blockiert Adobe den Traffic von dieser IP-Adresse. Ergreifen Sie zusätzliche Maßnahmen zum Schutz Ihrer Herkunft, z. B. die Konfiguration von Traffic-Filterregeln für das Ratenlimit. Eine [ Anleitung finden Sie im Tutorial zum Blockieren von DoS- und DDoS](#tutorial-blocking-DDoS-with-rules)Angriffen mit Traffic-Regeln .
 
 Das System aktiviert diesen Warnhinweis standardmäßig, Sie können ihn jedoch mit der Eigenschaft *defaultTrafficAlerts* deaktivieren und auf „false“ setzen. Sobald der Warnhinweis ausgelöst wurde, wird er erst am nächsten Tag (UTC) erneut Trigger.
 
@@ -724,13 +724,13 @@ Vor Juli 2025 empfahl Adobe die unten aufgeführten WAF-Regeln, die weiterhin g�
 
 ## Tutorial {#tutorial}
 
-Um praktische Kenntnisse und Erfahrungen über Traffic-Filterregeln, einschließlich WAF-Regeln, zu sammeln, [&#x200B; Sie sich in (einer Reihe von Tutorials](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview).
+Um praktische Kenntnisse und Erfahrungen über Traffic-Filterregeln, einschließlich WAF-Regeln, zu sammeln, [ Sie sich in (einer Reihe von Tutorials](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview).
 
 Folgende Tutorials sind verfügbar:
 
-* Standard- und WAF-Traffic-Filterregeln – Überblick
+* Eine Übersicht über die Traffic-Filterregeln von Standard und WAF.
 * Um Angriffe, einschließlich Denial-of-Service (DoS), zu blockieren, konfigurieren Sie die empfohlenen Standard- und WAF-Traffic-Filterregeln.
-* Bereitstellen von Regeln mit der Cloud Manager-Konfigurations-Pipeline
-* Testen von Regeln mit Tools zur Simulation von bösartigem Traffic
-* Analysieren der Ergebnisse mit den Tools für die Protokollanalyse
-* Best Practices
+* Bereitstellen von Regeln mithilfe der Cloud Manager-Konfigurations-Pipeline.
+* Testen von Regeln mithilfe von Tools zur Simulation von bösartigem Traffic.
+* Ergebnisanalyse mithilfe des Tools für die Protokollanalyse.
+* Best Practices.
