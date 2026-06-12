@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Cloud Manager ein externes Repository hinz
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
+source-git-commit: ccad3e1f46865bce575e14a04a9992efa38edb87
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2667'
 ht-degree: 74%
 
 ---
@@ -32,15 +32,15 @@ Kundinnen und Kunden können nun auch ihre Azure DevOps-Git-Repositorys in Cloud
 >   * GitLab-Repositorys (sowohl `gitlab.com` als auch die selbst gehostete Version von GitLab).
 >   * Bitbucket-Repositorys (nur `bitbucket.org`, Cloud-Version). Die selbst gehostete Version von Bitbucket wird seit dem 15. Februar 2024 nicht mehr unterstützt.
 >   * Azure DevOps (`dev.azure.com`)-Repositorys.
->* Auf `github.com` gehostete Repositorys, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, verwenden die Adobe-GitHub-App, um die Eigentümerschaft zu überprüfen. Es ist keine Webhook-Konfiguration erforderlich, da Cloud Manager direkt über die App integriert werden kann. Siehe [Hinzufügen eines privaten GitHub Enterprise Cloud-Repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>* Auf gehostete Repositorys `github.com` die Adobe-GitHub-App, um die Eigentümerschaft zu überprüfen. Es ist keine Webhook-Konfiguration erforderlich, da Cloud Manager direkt über die App integriert werden kann. Siehe [Hinzufügen eines privaten GitHub-Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 >
 
 ## Konfigurieren eines externen Repositorys
 
 Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgende Weise:
 
-1. [Fügen Sie ein externes Repository](#add-external-repo) zu einem ausgewählten Programm hinzu.
-1. [Verknüpfen eines validierten externen Repositorys mit einer Pipeline](#validate-ext-repo)
+1. Fügen Sie einem ausgewählten Programm [ein externes Repository hinzu](#add-external-repo).
+1. [Verknüpfen eines validierten externen Repositorys mit einer Pipeline](#validate-ext-repo).
    <!--
      1. Provide an access token to the external repository.
     1. Validate ownership of the private GitHub repository.
@@ -76,7 +76,7 @@ Die Konfiguration eines externen Repositorys in Cloud Manager erfolgt auf folgen
    | --- | --- |
    | **Repository-Name** | Erforderlich. Ein aussagekräftiger Name für Ihr neues Repository. |
    | **Repository-URL** | Erforderlich. Die URL des Repositorys.<br><br>Wenn Sie ein von GitHub gehostetes Repository verwenden, muss der Pfad auf `.git` enden.<br>Beispiel: *`https://github.com/org-name/repo-name.git`* (der URL-Pfad dient nur zu Veranschaulichungszwecken).<br><br>Wenn Sie ein externes Repository verwenden, muss das folgende URL-Pfadformat verwendet werden:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> oder<br>`https://self-hosted-domain/org-name/repo-name.git`<br>Und muss mit Ihrem Git-Anbieter übereinstimmen. |
-   | **Repository-Typ auswählen** | Erforderlich. Wählen Sie den verwendeten Repository-Typ aus. Wenn der Repository-URL-Pfad den Namen des Git-Anbieters enthält, z. B. GitLab oder Bitbucket, ist der Repository-Typ für Sie vorausgewählt:<br><br>* **GitHub** (GitHub Enterprise Server, die selbst gehostete Version von GitHub). Repositorys auf `github.com`, einschließlich auf `github.com` gehosteter GitHub Enterprise Cloud-Bereitstellungen, finden Sie unter [Stattdessen ein privates GitHub-Cloud-Repository in Cloud Manager hinzufügen](/help/implementing/cloud-manager/managing-code/private-repositories.md).<br>* **GitLab** (sowohl `gitlab.com` als auch die selbst gehostete Version von GitLab)<br>* **Bitbucket** (nur `bitbucket.org`, die Cloud-Version). Die selbst gehostete Version von Bitbucket ist seit dem 15. Februar 2024 veraltet.<br>* **Azure DevOps** (`dev.azure.com`) |
+   | **Repository-Typ auswählen** | Erforderlich. Wählen Sie den verwendeten Repository-Typ aus. Wenn der Repository-URL-Pfad den Namen des Git-Anbieters enthält, z. B. GitLab oder Bitbucket, ist der Repository-Typ für Sie vorausgewählt:<br><br>* **GitHub** Für Repositorys auf `github.com`. Das heißt, alle GitHub-Pläne (kostenlos, Pro, Team oder Enterprise Cloud), siehe [Stattdessen ein privates GitHub-Repository in Cloud Manager hinzufügen](/help/implementing/cloud-manager/managing-code/private-repositories.md).<br>* **GitLab** Sowohl `gitlab.com` als auch die selbst gehostete Version von GitLab.<br>* **Bitbucket** nur `bitbucket.org`, die Cloud-Version. Die selbst gehostete Version von Bitbucket ist seit dem 15. Februar 2024 veraltet.<br>* **Azure DevOps** (`dev.azure.com`) |
    | **Beschreibung** | Optional. Eine längere Beschreibung des Repositorys. |
 
 1. Wählen Sie **Speichern**, um das Repository hinzuzufügen.
