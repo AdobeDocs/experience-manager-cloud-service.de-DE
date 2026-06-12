@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
+source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -728,9 +728,9 @@ Um praktische Kenntnisse und Erfahrungen über Traffic-Filterregeln, einschließ
 
 Folgende Tutorials sind verfügbar:
 
-* Standard- und WAF-Traffic-Filterregeln – Überblick
+* Eine Übersicht über die Traffic-Filterregeln von Standard und WAF.
 * Um Angriffe, einschließlich Denial-of-Service (DoS), zu blockieren, konfigurieren Sie die empfohlenen Standard- und WAF-Traffic-Filterregeln.
-* Bereitstellen von Regeln mit der Cloud Manager-Konfigurations-Pipeline
-* Testen von Regeln mit Tools zur Simulation von bösartigem Traffic
-* Analysieren der Ergebnisse mit den Tools für die Protokollanalyse
-* Best Practices
+* Bereitstellen von Regeln mithilfe der Cloud Manager-Konfigurations-Pipeline.
+* Testen von Regeln mithilfe von Tools zur Simulation von bösartigem Traffic.
+* Ergebnisanalyse mithilfe des Tools für die Protokollanalyse.
+* Best Practices.
