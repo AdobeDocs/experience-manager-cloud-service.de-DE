@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
+source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -32,7 +32,7 @@ Um sich schnell mit dieser Funktion vertraut zu machen, [&#x200B; Sie ein Tutori
 >Weitere Konfigurationsoptionen für CDN-Traffic - z. B. das Bearbeiten von Anfragen/Antworten, das Deklarieren von Weiterleitungen und das Weiterleiten von Proxys an Nicht-AEM-Absender - finden Sie im Artikel [Konfigurieren von Traffic im CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) .
 
 
-## Wie dieser Artikel organisiert ist {#how-organized}
+## Organisation dieses Artikels {#how-organized}
 
 Dieser Artikel ist in die folgenden Abschnitte unterteilt:
 
@@ -49,7 +49,7 @@ Dieser Artikel ist in die folgenden Abschnitte unterteilt:
 * **Empfohlene Anfangsregeln:** Ein Regelsatz für die ersten Schritte.
 * **Tutorial:** Informationen über die Funktion, einschließlich der Verwendung von Dashboard-Tools zum Deklarieren der entsprechenden Regeln.
 
-## Traffic-Schutz – Übersicht {#traffic-protection-overview}
+## Übersicht über den Traffic-Schutz {#traffic-protection-overview}
 
 In der aktuellen digitalen Landschaft stellt schädlicher Traffic eine immer präsente Bedrohung dar. Adobe ist sich der Ernsthaftigkeit des Risikos bewusst und bietet verschiedene Ansätze zum Schutz von Kundenanwendungen und zur Eindämmung von Angriffen.
 
@@ -118,7 +118,7 @@ Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess zur Bes
 
 1. Erstellen Sie in Cloud Manager eine Konfigurations-Pipeline. Folgen Sie dabei den Anweisungen im [Artikel zu Konfigurations-Pipelines](/help/operations/config-pipeline.md#managing-in-cloud-manager). Die Pipeline verweist auf einen `config` der obersten Ebene, wobei die `cdn.yaml` irgendwo unten abgelegt ist, siehe [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
-## Syntax für Traffic-Filterregeln {#rules-syntax}
+## Syntax von Traffic-Filterregeln {#rules-syntax}
 
 Um Muster wie IP, Benutzeragent, Kopfzeilen, Hostname, Geografie oder URL abzugleichen, können Sie *Traffic-Filterregeln* konfigurieren.
 
@@ -170,11 +170,11 @@ Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, d
 | **block** | `status, wafFlags` (optional und sich gegenseitig ausschließend), `alert` (optional) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehler-Code wird durch die Statuseigenschaft definiert bzw. standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht dies bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
 | **log** | `wafFlags` (optional), `alert` (optional) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
 
-### WAF-Flags-Liste {#waf-flags-list}
+### WAF Flags-Liste {#waf-flags-list}
 
 Die `wafFlags` -Eigenschaft, die in den lizenzierbaren Traffic-Filterregeln von WAF verwendet wird, verweist auf Folgendes:
 
-#### Schädlicher Traffic
+#### böswilliger Datenverkehr
 
 | **Flag-ID** | **Flag-Name** | **Beschreibung** |
 |---|---|---|
@@ -210,7 +210,7 @@ Die `wafFlags` -Eigenschaft, die in den lizenzierbaren Traffic-Filterregeln von 
 | PRIVATEFILE | Private Dateien | Private Dateien sind vertraulich, wie z. B. eine Apache `.htaccess`-Datei oder eine Konfigurationsdatei, der vertrauliche Informationen entnommen werden könnten. |
 | SCANNER | Scanner | Identifiziert beliebte Scan-Dienste und -Werkzeuge. |
 
-#### Sonstiger Traffic
+#### sonstiger Verkehr
 
 | **Flag-ID** | **Flag-Name** | **Beschreibung** |
 |---|---|---|
@@ -232,7 +232,7 @@ Die `wafFlags` -Eigenschaft, die in den lizenzierbaren Traffic-Filterregeln von 
 
 * Übereintimmungen für eine WAF-Regel erscheinen nur in CDN-Protokollen bei Fehlschlägen und Durchgängen von CDN, nicht jedoch bei Treffern.
 
-## Regelbeispiele {#examples}
+## Beispiele für Regeln {#examples}
 
 Es folgen einige Regelbeispiele. Weitere Informationen zu Beispielen für Ratenbegrenzungsregeln finden Sie weiter unten im Abschnitt [Ratenbegrenzung](#rate-limit-rules).
 
@@ -351,7 +351,7 @@ data:
         action: block
 ```
 
-## Ratenbegrenzungsregeln
+## Regeln für Limits
 
 Manchmal ist es wünschenswert, Traffic zu blockieren, wenn er eine bestimmte Rate eingehender Anfragen überschreitet, basierend auf einer bestimmten Bedingung. Wenn Sie einen Wert für die Eigenschaft `rateLimit` festlegen, wird die Rate der Anfragen, die mit der Regelbedingung übereinstimmen, begrenzt.
 
@@ -427,7 +427,7 @@ Wenn eine Traffic-Anfrage mit einer CVE übereinstimmt, wird sie im entsprechend
 
 Wenden Sie sich an den Adobe-Support, wenn Sie Fragen zu einem bestimmten CVE haben oder wenn es eine bestimmte CVE-Regel gibt, die Ihr Unternehmen deaktivieren möchte.
 
-## Warnhinweise für Traffic-Filterregeln {#traffic-filter-rules-alerts}
+## Warnhinweise zu Traffic-Filterregeln {#traffic-filter-rules-alerts}
 
 Eine Regel kann so konfiguriert werden, dass eine Benachrichtigung des Aktionszentrums gesendet wird, wenn sie innerhalb eines 5-minütigen Fensters zehnmal ausgelöst wird. Eine solche Regel warnt Sie, wenn bestimmte Traffic-Muster auftreten, sodass Sie die erforderlichen Maßnahmen treffen können. Nachdem ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) erneut Trigger.
 
@@ -454,7 +454,7 @@ data:
           alert: true
 ```
 
-## Standard-Warnhinweis zu Traffic-Spitze am Ursprung {#traffic-spike-at-origin-alert}
+## Standard-Traffic-Spitze bei Ursprungs-Warnhinweis {#traffic-spike-at-origin-alert}
 
 Eine E[Mail](/help/operations/actions-center.md)Benachrichtigung des Aktionszentrums warnt Sie, wenn ein hoher Traffic von derselben IP-Adresse den Ursprung erreicht, was auf einen DDoS-Angriff hindeutet.
 
@@ -586,7 +586,7 @@ Dashboard-Tools können direkt aus dem GitHub-Repository [AEMCS-CDN-Log-Analysis
 
 Für konkrete Anleitungen zum Verwenden der Dashboard-Tools ist [ein Tutorial](#tutorial) verfügbar.
 
-## Empfohlene Anfangsregeln {#recommended-starter-rules}
+## Empfohlene Startregeln {#recommended-starter-rules}
 
 Adobe empfiehlt, mit den unten stehenden Traffic-Filterregeln zu beginnen und dann im Lauf der Zeit Optimierungen vorzunehmen. *Standardregeln* sind mit einer Sites- oder Forms-Lizenz verfügbar, während *WAF-Regeln* eine erweiterte Sicherheitslizenz (früher WAF-DDoS-Schutz genannt) oder eine erweiterte Sicherheitslizenz für das Gesundheitswesen (früher Enhanced Security genannt) erfordern.
 
