@@ -193,7 +193,7 @@ Für alle anderen externen Repositorys, die mit einem Zugriffstoken integriert w
 
 1. Klicken Sie im linken Seitenmenü unter der Überschrift **Programm** auf ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositorys**.
 
-1. Suchen Sie auf der **Repositorys** mithilfe der Spalte **Typ** nach dem gewünschten Repository und klicken Sie dann neben ![ Symbol Auslassungspunkte - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Suchen Sie auf der **Repositorys** mithilfe der Spalte **Typ** nach dem gewünschten Repository und klicken Sie dann neben ![&#x200B; Symbol Auslassungspunkte - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
    ![Option „Webhook konfigurieren“ im Dropdown-Menü für ein ausgewähltes Repository](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
