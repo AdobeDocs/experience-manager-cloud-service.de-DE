@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 21%
+source-wordcount: '2276'
+ht-degree: 25%
 
 ---
 
@@ -91,7 +91,7 @@ Das Layout „Horizontale Registerkarten“ wird auch als Layout „Registerkart
 
 Layout horizontaler Registerkarten
 
-Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
+Sie können die Komponente [Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) verwenden, um das Layout Horizontale Registerkarten einem Formular hinzuzufügen. Detaillierte Anweisungen zum Konfigurieren der verschiedenen Eigenschaften der Komponente „Horizontale Registerkarten“ finden Sie im Artikel [Komponente „Horizontale Registerkarten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) .
 
 
 >[!TAB Akkordeon-Layout]
@@ -179,7 +179,7 @@ In diesem Fall fügen wir beispielsweise den Namen der horizontalen Registerkart
 
 Nachdem die Layout-Komponente zum Formular hinzugefügt wurde, ändern Sie die Anzahl der Bedienfelder entsprechend den Anforderungen.
 
-### &#x200B;2. Bedienfelder zum Layout hinzufügen
+### &#x200B;2. Hinzufügen von Bedienfeldern zum Layout
 
 Hinzufügen eines neuen Bedienfelds zur horizontalen Registerkarten-Komponente:
 
@@ -236,7 +236,7 @@ Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Ans
 -->
 
 1. Suchen Sie den Abschnitt innerhalb des Bedienfelds, in dem Sie Komponenten hinzufügen können.
-1. Klicken Sie auf das Symbol **Hinzufügen**. Das Symbol ist ein Pluszeichen (+). Es steht für die Option zum Hinzufügen neuer Komponenten.
+1. Klicken Sie auf **Hinzufügen**-Symbol. Das Symbol ist ein Pluszeichen (+), das die Option zum Hinzufügen neuer Komponenten angibt.
    ![Layout einfügen](/help/forms/assets/tabs-on-top-add-component.png)
 
    Wenn Sie auf das Symbol **Hinzufügen** klicken, wird das Dialogfeld **Neue Komponente einfügen** angezeigt, in dem verschiedene Komponenten zum Einfügen angezeigt werden.
@@ -276,7 +276,7 @@ Außerdem können Sie Titel für die beiden anderen Bedienfelder ausblenden. Ans
 1. Klicken Sie **[!UICONTROL Vorschau]** in der oberen rechten Ecke Ihrer Authoring-Umgebung.
    ![Horizontales Layout](/help/forms/assets/horizontal-layout.gif)
 
-Sie können die [&#x200B; auch ziehen und ablegen, &#x200B;](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
+Sie können die [ auch ziehen und ablegen, ](#extra-bytes) die Formularkomponenten jedem Bedienfeld hinzuzufügen.
 
 
 <!--
