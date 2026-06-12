@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 22%
+source-wordcount: '1324'
+ht-degree: 20%
 
 ---
 
@@ -19,6 +19,7 @@ Um Programme zu verwalten und zu bearbeiten, beginnen Sie bei der Konsole [**Mei
 
 Von der **Programmübersicht** aus können Benutzende mit den erforderlichen Berechtigungen [Produktionsprogramme, die in Ihrer Organisation erstellt wurden](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden](creating-sandbox-programs.md), bearbeiten. Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
 
+* Aktivieren oder deaktivieren Sie den **WAF-DDOS** Schutz auf der Registerkarte **Sicherheit**.
 * Fügen Sie die Sites-Lösung einem vorhandenen Programm mit Assets hinzu und fügen Sie Assets einem vorhandenen Programm mit Sites hinzu.
 * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets enthält.
 * Hinzufügen einer nicht verwendeten Lösungsberechtigung für ein vorhandenes Programm oder Erstellen eines neuen Programms.
@@ -49,10 +50,23 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
    ![Registerkarte „Allgemein“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
    Die zur Bearbeitung des Programms verfügbaren Optionen sind mit denen zum Erstellen des Programms identisch.
+
+   * Auf der Registerkarte **Sicherheit** können Sie **Kundenseitig verwaltete Schlüssel** für ein vorhandenes Programm aktivieren.
+
+     >[!NOTE]
+     >
+     >Um die Web Application Firewall (WAF) jederzeit zu aktivieren oder zu deaktivieren, aktivieren oder deaktivieren Sie auf derselben Registerkarte Sicherheit das Kontrollkästchen **WAF-DDOS-Schutz**. Wenn WAF-Regeln lizenziert werden, dieses Kontrollkästchen jedoch nicht aktiviert ist, ist die Funktion nicht aktiv und die zugehörigen Schutzmechanismen sind nicht anwendbar. Weitere Informationen finden Sie unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
+     >
+     >Um sicherzustellen, dass die Funktion aktiv ist, überprüfen Sie die [CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)Protokolle, sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Zum Beispiel:
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >Dieses Attribut wird angezeigt, sobald WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
+
    * Sie können konfigurieren, ob eine Veröffentlichungsebene für neue Umgebungen (Beta) bereitgestellt wird. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Einzelheiten zu den einzelnen Optionen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
    * [Zusätzliche Optionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) sind für Ihr Produktionsprogramm verfügbar, je nach den Berechtigungen Ihrer Organisation.
-   * Auf der Registerkarte **Sicherheit** können Sie auch **Kundenseitig verwaltete Schlüssel** für ein vorhandenes Programm aktivieren.
+
 
    ![Dialogfeld „Programm bearbeiten“ mit ausgewählten kundenverwalteten Schlüsseln](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
 
