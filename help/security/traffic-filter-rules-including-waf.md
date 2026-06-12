@@ -4,7 +4,7 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 68%
@@ -15,6 +15,7 @@ ht-degree: 68%
 # Traffic-Filterregeln, einschließlich WAF-Regeln {#traffic-filter-rules-including-waf-rules}
 
 Traffic-Filterregeln blockieren oder erlauben Anfragen auf CDN-Ebene. Dies ist in Szenarien wie den folgenden nützlich:
+
 
 * Beschränken des Zugriffs auf bestimmte Domains auf den internen Unternehmens-Traffic, bevor eine neue Site live geschaltet wird
 * Um weniger anfällig für volumetrische DoS-Angriffe zu sein, richten Sie Ratenbeschränkungen ein.
