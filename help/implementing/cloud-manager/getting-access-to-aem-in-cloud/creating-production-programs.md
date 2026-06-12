@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
+source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 51%
@@ -17,8 +17,8 @@ ht-degree: 51%
 
 Ein Produktionsprogramm richtet sich an Benutzende, die mit Adobe Experience Manager (AEM) und Cloud Manager vertraut sind und Code schreiben, erstellen und testen können, um ihn für Live-Traffic bereitzustellen.
 
-
 Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmtypen](program-types.md).
+
 
 ## Erstellen eines Produktionsprogramms {#create}
 
@@ -145,7 +145,7 @@ Die CMK-Lizenznutzung ist im Lizenz-Dashboard sichtbar. Informationen zur Anzahl
 
 >[!NOTE]
 >
->Die hier beschriebene flexible Veröffentlichungsebene befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+>Die hier beschriebene flexible Veröffentlichungsebene befindet sich in Beta. Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 Wenn für Ihr Unternehmen die Funktion „Flexible Veröffentlichungsebene“ aktiviert ist, können Sie konfigurieren, ob für die Umgebungen Ihres Programms eine Veröffentlichungsebene erforderlich ist. Diese Option wird auf der Registerkarte **Bereitstellungstyp** im Dialogfeld **Für Produktion einrichten** angezeigt (während der [Programmerstellung](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)).
 
