@@ -2,38 +2,39 @@
 title: Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene
 description: Erfahren Sie, wie Sie in Adobe Cloud Manager eine benutzerdefinierte Domain für die Bereitstellungsebene konfigurieren.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
+source-git-commit: b24faf23435948a8f122223bf38227a0936bbeb5
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 78%
+source-wordcount: '293'
+ht-degree: 46%
 
 ---
+
 
 # Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene{#configure-custom-domain}
 
 In Adobe Cloud Manager können Sie Ihre Website durch das Hinzufügen einer benutzerdefinierten Domain hervorheben. AEM as a Cloud Service verfügt zwar über eine Standard-Domain, Sie können sie aber nach Bedarf anpassen.
 
-## Voraussetzungen
-
-* Sie müssen über ein TLS- oder SSL-Zertifikat mit mehreren Subject Alternative Names (SANs) verfügen.
-* Das SSL-Zertifikat sollte über verschiedene SANs für das Zertifikat verfügen, das für die Bereitstellungsebene innerhalb derselben Domain zugeordnet ist.
-* Die Zertifikatsrichtlinie muss entweder der Richtlinie „Extended Validation“ (EV) oder „Organization Validation“ (OV), aber nicht der Richtlinie „Domain Validation“ (DV) entsprechen.
-
-
-## Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene
-
-1. Navigieren Sie zu **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Programmübersicht]** > **[!UICONTROL SSL-Zertifikate]** und fügen Sie Ihr SSL-Zertifikat hinzu.
-   ![Bild](/help/assets/assets/ssl-certificate.png)
-Erfahren Sie, wie Sie in Adobe Cloud Manager ein [SSL-Zertifikat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) hinzufügen.
-
-1. Fügen Sie nach dem Hinzufügen des SSL-Zertifikats eine benutzerdefinierte Domain hinzu. Klicken Sie auf **[!UICONTROL Domain-Einstellungen]** und geben Sie die benutzerdefinierte Domain für die Option **[!UICONTROL Veröffentlichungs-Service]** an.
-Erfahren Sie mehr über [benutzerdefinierte Domains](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-1. Fügen Sie zwei [CNAME-Einträge](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) in Ihrem DNS-Eintrag hinzu, die den Veröffentlichungs-Domains entsprechen.
-Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.
-
-1. Reichen Sie einen Support-Fall ein, um die Konfiguration der benutzerdefinierten Domain zu erleichtern und sicherzustellen, dass sie zur Bereitstellungsebene führt.
-
 >[!NOTE]
 >
->Fügen Sie die benutzerdefinierte Domain zur Liste der zulässigen Umleitungs-URLs hinzu. Die Liste befindet sich im IMS-Client für den Asset-Wähler.<br>Stimmen Sie sich zur Durchführung dieser Aufgabe mit dem entsprechenden Adobe-Team ab, indem Sie die Zeichenfolge der benutzerdefinierten Domain bereitstellen.
+>Kunden mit Dynamic Media Prime- oder Dynamic Media Ultimate-Lizenzen müssen die in Cloud Manager verfügbare benutzerdefinierte Self-Service-Domain-Konfiguration verwenden.
+> Informationen finden [&#x200B; in der Dokumentation zu Dynamic Prime und Ultimate &#x200B;](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md#configure-custom-domain-in-delivery-tier).
+>
+>Kunden, die ältere Dynamic Media-Setups verwenden, bei denen Dynamic Media mit OpenAPI manuell aktiviert ist, sollten diese Dokumentation befolgen. Für diese Setups wird die benutzerdefinierte Domain-Zuordnung über eine Adobe-Support-Anfrage abgeschlossen.
+
+## Vorbereiten auf die ersten Schritte
+
+Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie den Konfigurationsprozess starten:
+
+* Zugriff auf Cloud Manager
+* Dynamic Media wurde bereits mit OpenAPI in Ihrer Umgebung über ein Support-Ticket aktiviert
+* EV- oder OV-SSL-Zertifikat für die in der Bereitstellungsebene verwendete Domain. Weitere [&#x200B; finden Sie unter „Einführung &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) SSL-Zertifikate“
+
+## Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene mithilfe von Cloud Manager
+
+Führen Sie die folgenden Schritte in Cloud Manager aus:
+
+1. [Hinzufügen eines vom Kunden verwalteten SSL-Zertifikats](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert)
+
+2. [Hinzufügen eines benutzerdefinierten Domain-Namens](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)
+
+Erstellen Sie nach Abschluss der oben genannten Schritte ein Adobe-Support-Ticket für die benutzerdefinierte Domain-Zuordnung. Adobe führt die Domain-Zuordnung im Rahmen des Support-Prozesses durch.
