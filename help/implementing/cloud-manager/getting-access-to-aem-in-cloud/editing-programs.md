@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 20%
@@ -16,6 +16,7 @@ ht-degree: 20%
 # Bearbeiten von Programmen {#editing-programs}
 
 Um Programme zu verwalten und zu bearbeiten, beginnen Sie bei der Konsole [**Meine Programme**](/help/implementing/cloud-manager/navigation.md). Die Seite **Meine Programme** bietet einen Überblick über alle Programme, auf die Sie Zugriff haben. Bei der Auswahl eines einzelnen Programms **die Seite** Programmübersicht“ einen Überblick über die Details des Programms.
+
 
 Von der **Programmübersicht** aus können Benutzende mit den erforderlichen Berechtigungen [Produktionsprogramme, die in Ihrer Organisation erstellt wurden](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden](creating-sandbox-programs.md), bearbeiten. Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
 
@@ -115,7 +116,7 @@ Bevor das Markieren zum Löschen initiiert wird, prüft das System, ob das Produ
 1. Wählen Sie das entsprechende Unternehmen aus.
 1. Klicken Sie auf der **Meine**&quot; für das Produktionsprogramm, das Sie zum Löschen markieren möchten, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Programm löschen**.
 
-   ![Die Auswahl von Programm löschen aus der Dropdown-Liste eines Produktionsprogramms &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Beispielproduktionsprogramm wie oben gezeigt dient nur zu Veranschaulichungszwecken.*
+   ![Die Auswahl von Programm löschen aus der Dropdown-Liste eines Produktionsprogramms ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Beispielproduktionsprogramm wie oben gezeigt dient nur zu Veranschaulichungszwecken.*
 
 1. Überprüfen Sie im Dialogfeld **Produktionsprogramm zum Löschen markieren** die Warnung, die die mit Ihrem Programm verbundenen Ressourcen auflistet, einschließlich Produktions-, Staging- und Entwicklungsumgebungen.
 
@@ -184,6 +185,6 @@ Durch das Löschen eines Sandbox-Programms werden alle damit verbundenen Umgebun
 
    ![Option „Programm löschen“](assets/delete-sandbox1.png)
 
-Alternativ können Sie auf der Übersichtsseite von Cloud Manager auf ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) Karte Ihres Sandbox-Programms auf &quot;&quot; klicken und **Programm löschen** auswählen.
+Alternativ können Sie auf der Übersichtsseite von Cloud Manager auf ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) Karte Ihres Sandbox-Programms auf &quot;![&quot; klicken und **Programm löschen** auswählen.
 
 ![Sandbox aus Programmkarte löschen](assets/delete-sandbox2.png)
