@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: d5c87853bcc10587c97710e69b350bb9ebe509ae
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 20%
@@ -52,26 +52,24 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
 
    Die zur Bearbeitung des Programms verfügbaren Optionen sind mit denen zum Erstellen des Programms identisch.
 
-   * Auf der Registerkarte **Sicherheit** können Sie **Kundenseitig verwaltete Schlüssel** für ein vorhandenes Programm aktivieren.
+   * Sie können konfigurieren, ob eine Veröffentlichungsebene für neue Umgebungen (Beta) bereitgestellt wird. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+   * Einzelheiten zu den einzelnen Optionen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
+   * Um die Web Application Firewall (WAF) jederzeit zu aktivieren oder zu deaktivieren, wählen Sie die Registerkarte **Sicherheit** aus und aktivieren oder deaktivieren Sie dann das Kontrollkästchen **WAF-DDOS-**. Wenn WAF-Regeln lizenziert werden, dieses Kontrollkästchen jedoch nicht aktiviert ist, ist die Funktion nicht aktiv und die zugehörigen Schutzmechanismen sind nicht anwendbar. Weitere Informationen finden Sie unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
 
      >[!NOTE]
-     >
-     >Um die Web Application Firewall (WAF) jederzeit zu aktivieren oder zu deaktivieren, aktivieren oder deaktivieren Sie auf derselben Registerkarte Sicherheit das Kontrollkästchen **WAF-DDOS-Schutz**. Wenn WAF-Regeln lizenziert werden, dieses Kontrollkästchen jedoch nicht aktiviert ist, ist die Funktion nicht aktiv und die zugehörigen Schutzmechanismen sind nicht anwendbar. Weitere Informationen finden Sie unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
-     >
      >Um sicherzustellen, dass die Funktion aktiv ist, überprüfen Sie die [CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)Protokolle, sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Zum Beispiel:
      >
      >`"rules": "waf=SQLI"`
      >
      >Dieses Attribut wird angezeigt, sobald WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
 
-   * Sie können konfigurieren, ob eine Veröffentlichungsebene für neue Umgebungen (Beta) bereitgestellt wird. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
-   * Einzelheiten zu den einzelnen Optionen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
+     ![Dialogfeld „Programm bearbeiten“ mit Optionen auf der Registerkarte „Sicherheit“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   * Auf derselben Registerkarte **Sicherheit** können Sie **Kundenseitig verwaltete Schlüssel** für ein vorhandenes Programm aktivieren.
+
+     CMK kann nach der Aktivierung nicht deaktiviert werden. Konfigurieren Sie nach der Aktivierung von CMK Ihre Verschlüsselungsschlüssel in Experience Hub. Siehe [Konfigurieren von CMK in Experience Hub](#configure-cmk-experience-hub).
+
    * [Zusätzliche Optionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) sind für Ihr Produktionsprogramm verfügbar, je nach den Berechtigungen Ihrer Organisation.
-
-
-   ![Dialogfeld „Programm bearbeiten“ mit ausgewählten kundenverwalteten Schlüsseln](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
-
-   CMK kann nach der Aktivierung nicht deaktiviert werden. Konfigurieren Sie nach der Aktivierung von CMK Ihre Verschlüsselungsschlüssel in Experience Hub. Siehe [Konfigurieren von CMK in Experience Hub](#configure-cmk-experience-hub).
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen zu speichern.
 
@@ -116,7 +114,7 @@ Bevor das Markieren zum Löschen initiiert wird, prüft das System, ob das Produ
 1. Wählen Sie das entsprechende Unternehmen aus.
 1. Klicken Sie auf der **Meine**&quot; für das Produktionsprogramm, das Sie zum Löschen markieren möchten, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Programm löschen**.
 
-   ![Die Auswahl von Programm löschen aus der Dropdown-Liste eines Produktionsprogramms &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Beispielproduktionsprogramm wie oben gezeigt dient nur zu Veranschaulichungszwecken.*
+   ![Die Auswahl von Programm löschen aus der Dropdown-Liste eines Produktionsprogramms ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Beispielproduktionsprogramm wie oben gezeigt dient nur zu Veranschaulichungszwecken.*
 
 1. Überprüfen Sie im Dialogfeld **Produktionsprogramm zum Löschen markieren** die Warnung, die die mit Ihrem Programm verbundenen Ressourcen auflistet, einschließlich Produktions-, Staging- und Entwicklungsumgebungen.
 
@@ -185,6 +183,6 @@ Durch das Löschen eines Sandbox-Programms werden alle damit verbundenen Umgebun
 
    ![Option „Programm löschen“](assets/delete-sandbox1.png)
 
-Alternativ können Sie auf der Übersichtsseite von Cloud Manager auf ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) Karte Ihres Sandbox-Programms auf &quot;&quot; klicken und **Programm löschen** auswählen.
+Alternativ können Sie auf der Übersichtsseite von Cloud Manager auf ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) Karte Ihres Sandbox-Programms auf &quot;![&quot; klicken und **Programm löschen** auswählen.
 
 ![Sandbox aus Programmkarte löschen](assets/delete-sandbox2.png)
