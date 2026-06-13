@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: d5c87853bcc10587c97710e69b350bb9ebe509ae
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 20%
@@ -52,26 +52,24 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
 
    Die zur Bearbeitung des Programms verfügbaren Optionen sind mit denen zum Erstellen des Programms identisch.
 
-   * Auf der Registerkarte **Sicherheit** können Sie **Kundenseitig verwaltete Schlüssel** für ein vorhandenes Programm aktivieren.
+   * Sie können konfigurieren, ob eine Veröffentlichungsebene für neue Umgebungen (Beta) bereitgestellt wird. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+   * Einzelheiten zu den einzelnen Optionen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
+   * Um die Web Application Firewall (WAF) jederzeit zu aktivieren oder zu deaktivieren, wählen Sie die Registerkarte **Sicherheit** aus und aktivieren oder deaktivieren Sie dann das Kontrollkästchen **WAF-DDOS-**. Wenn WAF-Regeln lizenziert werden, dieses Kontrollkästchen jedoch nicht aktiviert ist, ist die Funktion nicht aktiv und die zugehörigen Schutzmechanismen sind nicht anwendbar. Weitere Informationen finden Sie unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
 
      >[!NOTE]
-     >
-     >Um die Web Application Firewall (WAF) jederzeit zu aktivieren oder zu deaktivieren, aktivieren oder deaktivieren Sie auf derselben Registerkarte Sicherheit das Kontrollkästchen **WAF-DDOS-Schutz**. Wenn WAF-Regeln lizenziert werden, dieses Kontrollkästchen jedoch nicht aktiviert ist, ist die Funktion nicht aktiv und die zugehörigen Schutzmechanismen sind nicht anwendbar. Weitere Informationen finden Sie unter [Traffic-Filterregeln einschließlich WAF-Regeln](/help/security/traffic-filter-rules-including-waf.md).
-     >
      >Um sicherzustellen, dass die Funktion aktiv ist, überprüfen Sie die [CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)Protokolle, sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Zum Beispiel:
      >
      >`"rules": "waf=SQLI"`
      >
      >Dieses Attribut wird angezeigt, sobald WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
 
-   * Sie können konfigurieren, ob eine Veröffentlichungsebene für neue Umgebungen (Beta) bereitgestellt wird. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
-   * Einzelheiten zu den einzelnen Optionen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
+     ![Dialogfeld „Programm bearbeiten“ mit Optionen auf der Registerkarte „Sicherheit“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   * Auf derselben Registerkarte **Sicherheit** können Sie **Kundenseitig verwaltete Schlüssel** für ein vorhandenes Programm aktivieren.
+
+     CMK kann nach der Aktivierung nicht deaktiviert werden. Konfigurieren Sie nach der Aktivierung von CMK Ihre Verschlüsselungsschlüssel in Experience Hub. Siehe [Konfigurieren von CMK in Experience Hub](#configure-cmk-experience-hub).
+
    * [Zusätzliche Optionen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) sind für Ihr Produktionsprogramm verfügbar, je nach den Berechtigungen Ihrer Organisation.
-
-
-   ![Dialogfeld „Programm bearbeiten“ mit ausgewählten kundenverwalteten Schlüsseln](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
-
-   CMK kann nach der Aktivierung nicht deaktiviert werden. Konfigurieren Sie nach der Aktivierung von CMK Ihre Verschlüsselungsschlüssel in Experience Hub. Siehe [Konfigurieren von CMK in Experience Hub](#configure-cmk-experience-hub).
 
 1. Klicken Sie auf **Aktualisieren**, um Ihre Änderungen zu speichern.
 
