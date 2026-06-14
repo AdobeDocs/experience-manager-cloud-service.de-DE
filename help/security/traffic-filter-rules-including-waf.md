@@ -4,9 +4,9 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: 3c140f8cdf3bd03c4b4be101d2d1fb6d8cff84ea
 workflow-type: tm+mt
-source-wordcount: '4257'
+source-wordcount: '4268'
 ht-degree: 68%
 
 ---
@@ -73,7 +73,7 @@ Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess zur Bes
 
    >[!IMPORTANT]
    >
-   >Regeln für die Lizenzierung von WAF aktivieren sie nicht. Die Funktion bleibt inaktiv, bis **WAF-DDOS Protection** auf der Registerkarte **Security** in Cloud Manager aktiviert ist.
+   >Regeln für WAF *lizenziert (*). Die Funktion bleibt inaktiv, bis **WAF-DDOS Protection** auf der Registerkarte **Security** in Cloud Manager aktiviert ist. Siehe [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) oder [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md), um die Funktion zu aktivieren.
 
 1. Lesen und absolvieren Sie das Tutorial, um zu verstehen, wie Sie Traffic-Filterregeln verwenden, einschließlich WAF-Regeln, wenn sie lizenziert wurden. Das Tutorial führt Sie durch die Bereitstellung von Regeln in einer Entwicklungsumgebung, die Simulation von schädlichem Traffic sowie den Download der [CDN-Protokolle](#cdn-logs) und ihre Analyse in den [Dashboard-Tools](#dashboard-tooling).
 1. Kopieren Sie die empfohlenen Anfangsregeln nach `cdn.yaml` und stellen Sie die Konfiguration mit einigen der Regeln in der Produktionsumgebung im Protokollmodus bereit.

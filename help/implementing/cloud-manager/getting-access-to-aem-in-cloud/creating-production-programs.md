@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: c5949b2d49cb8d405da7a34cb7e69da62ec28247
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 51%
@@ -127,7 +127,7 @@ Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial 
      >
      >`"rules": "waf=SQLI"`
      >
-     >Dieses Attribut wird angezeigt, sobald WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
+     >Dieses Attribut wird angezeigt, wenn WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
 
 * **Kundenseitig verwaltete Schlüssel** - Mit dieser Option wird CMK (Customer Managed Keys) für das Programm aktiviert, sodass Sie eigene Verschlüsselungsschlüssel für ruhende Daten in Azure Blob Storage und MongoDB bereitstellen können. Wenn Sie möchten, können Sie später CMK aktivieren, indem Sie [ein Programm bearbeiten](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
