@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d3133acd35ffe533a4bd0014d106b8978953296d
+source-git-commit: 4e896f6bbea276c061e086c80d5dabed30421970
 workflow-type: tm+mt
-source-wordcount: '4171'
-ht-degree: 71%
+source-wordcount: '4207'
+ht-degree: 70%
 
 ---
 
@@ -257,6 +257,18 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden bere
     <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
     <td>Verwenden Sie stattdessen die offizielle Servlet-API für die Verarbeitung von Datei-Uploads.</td>
     <td>2/6/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.adobe.cq.smartContent</td>
+    <td>Diese API wird nicht mehr unterstützt und soll entfernt werden.</td>
+    <td>6/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>openNLP.tools.chunker<br>openNLP.tools.dictionary<br>openNLP.tools.dictionary.serializer.<br>openNLP.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.Quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>openNLP.tools.NameFind<br>OpenNLP.tools.ngram<br>OpenNLP.tools<br>openLP.tools.Tokenize<br>OpenNP .tools.tokenize.lang<br>OpenLP.tools.util<br>OpenLP.tools.util.<br>OpenLP.tools.util.Ext<br>OpenLP.tools.util.FeatureGen<br>OpenLP.Tools.util.Model</td>
+    <td>Diese Version der OpenNLP-Bibliothek wird nicht mehr unterstützt. Verwenden Sie Ihre eigene Version von OpenNLP.</td>
+    <td>6/30/2026</td>
     <td>9/30/2026</td>
   </tr>
   <tr>
