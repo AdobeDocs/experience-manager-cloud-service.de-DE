@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 3d12f495e0f1a07c81033b93fd607fd260023c48
+source-git-commit: 0bafec06aff183b58838c8c0d3eee50e4411ac78
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1697'
 ht-degree: 2%
 
 ---
@@ -33,13 +33,14 @@ AEM Edge-Funktionen sind sowohl mit Edge Delivery Services als auch mit dem AEM 
 | Vorteil | Beschreibung |
 |---|---|
 | **Leistung** | Schnelles TTFB über Edge SSR, das vollständig gerenderte HTML zurückgibt. API-Aufrufe mit geringer Latenz über parallele Abrufe und optimierte Netzwerk-Hops. |
-| **SEO/GEO** | Server-HTML wird beim ersten crawlen indiziert. Vollständig gerenderte Inhalte sind für KI-Crawler bereit. |
+| **SEO/GEO** | KI-Crawler können Inhalte indizieren, die Server-seitig zusammengefügt werden. |
 | **Sicherheit** | API-Anmeldeinformationen Server-seitig aufbewahren und vor Client-JavaScript verbergen. Authentifizierung bei einem Identitätsanbieter und Einschränkung des Inhaltszugriffs. |
 | **Personalisierung** | Personalisieren Sie Inhalte vor dem Laden der Seite anhand von Geo- und Gerätesignalen. Führen Sie Zielgruppen-Lookups am Edge für einen zielgerichteten Versand aus. |
 
 ## Voraussetzungen {#prerequisites}
 
-- Eine AEM as a Cloud Service-Umgebung
+- Ein Cloud Manager-Programm, das entweder AEM Java-Stack-Umgebungen oder Edge Delivery Services Sites enthält. Erfahren Sie, wie Sie [EDS Sites in Cloud Manager integrieren](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
+- Eine Cloud Manager-Konfigurations-Pipeline (genannt Edge Delivery Services-Pipeline für EDS Sites).
 - Das AEM-Administratorproduktprofil in der Autoreninstanz Ihrer Cloud Service-Umgebung **oder** Rolle &quot;Cloud Manager-Bereitstellungs-Manager“ in Admin Console für Edge Delivery Services Sites
 - [Node.js und npm](https://nodejs.org/)
 
@@ -76,19 +77,19 @@ Kopieren Sie [aem-edge-features-boilerplate](https://github.com/adobe/aem-edge-f
 npm install
 ```
 
-## Erstellen der ersten Funktion {#create-your-function}
+## Registrieren der AEM Edge-Funktion {#register-your-function}
 
-AEM Edge-Funktions-Services werden in einer YAML-Konfigurationsdatei deklariert und über die Cloud Manager-Konfigurations-Pipeline bereitgestellt.
+AEM Edge-Funktionen werden in einer YAML-Konfigurationsdatei deklariert und über die Cloud Manager-Konfigurations-Pipeline bereitgestellt.
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist. Wenn nicht, erstellen [&#x200B; zuerst eine Konfigurations](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)Pipeline.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist (wenn Sie den AEM Java-Stack verwenden) oder dass eine Edge Delivery Services-Pipeline vorhanden ist, wenn Ihr Projekt mit Edge Delivery Services implementiert ist. Informationen [ Konfigurieren der Pipelines finden ](/help/operations/config-pipeline.md) unter „Verwenden von-Pipelines“.
 
 >[!NOTE]
 >
 >Wenn Sie eine schnelle Entwicklungsumgebung (RDE) verwenden, können Sie die Konfiguration direkt mit `aio aem rde:install -t env-config ./config` bereitstellen, anstatt eine Konfigurations-Pipeline zu verwenden.
 
-### &#x200B;2. Edge Function Services deklarieren {#declare-services}
+### &#x200B;2. Edge-Funktion deklarieren {#declare-functions}
 
 Erstellen Sie eine Datei mit dem Namen `edgeFunctions.yaml` im Konfigurationsverzeichnis:
 
@@ -98,22 +99,66 @@ version: "1"
 data:
   services:
     - name: my-edge-function
-    # Uncomment to enable secrets
-    # secrets:
-    #   - key: API_TOKEN
-    #     value: ${{ API_TOKEN_SECRET }}
+    # add advanced configuration under here
 ```
 
-Der standardmäßige Grenzwert beträgt 1 Funktion für AEM as a Cloud Service-Umgebungen und 3 Funktion für Edge Delivery Services Sites. Die Schlüssel der obersten Ebene sind:
+Java-Stack-Umgebungen verfügen über 1 Edge-Funktion und Edge Delivery Services-Implementierungen über 3 Edge-Funktionen. Die optionalen Schlüssel der obersten Ebene sind:
 
 | Schlüssel | Beschreibung |
 |---|---|
-| `services` | Liste der Edge-Funktions-Services, die jeweils durch eine `name` gekennzeichnet sind. |
-| `configs` | Schlüssel/Wert-Paare, die allen Edge-Funktions-Services als Umgebungsvariablen bereitgestellt werden. |
-| `secrets` | Schlüssel/Wert-Paare, die auf Cloud Manager-Geheimnisse verweisen und für alle Edge-Funktions-Services verfügbar gemacht werden. |
-| `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüssel-Wert-Daten zur Laufzeit, die über alle Edge-Funktionsdienste gemeinsam genutzt werden. |
+| `services` | Liste der Edge-Funktions-Services, die jeweils durch eine `name` gekennzeichnet sind. Hinweis: Dieser wird bald in `functions` umbenannt. |
+| `configs` | Schlüssel/Wert-Paare, die den Edge-Funktionen einer Umgebung als Umgebungsvariablen bereitgestellt werden. |
+| `secrets` | Schlüssel/Wert-Paare, die auf Cloud Manager-Geheimnisse verweisen, in Bezug auf die Edge-Funktionen einer Umgebung |
+| `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüsselwertdaten mit Lese-/Schreibzugriff zur Laufzeit, die über alle Edge-Funktionen in einer Umgebung gemeinsam genutzt werden. |
 
-### &#x200B;3. Hinzufügen von CDN-Ursprungsauswahlregeln {#cdn-routing}
+Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [ Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
+
+### &#x200B;3. Bereitstellen der Edge-Funktion über Cloud Manager {#deploy-functions-via-cm}
+
+Stellen Sie mithilfe von Cloud Manager die Pipeline bereit, damit die Edge-Funktion im CDN registriert wird.
+
+## AEM Edge-Funktions-Code erstellen, erstellen und bereitstellen {#build-deploy}
+
+### Author {#author}
+
+Schreiben Sie Ihre Geschäftslogik für den Edge-Funktions[Code mithilfe des `src` Ordners ](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src)Textbausteinvorlage“ als Ausgangspunkt.
+
+### Aufbauen {#build}
+
+Verpacken Sie Ihren Edge-Funktions-Code für die Bereitstellung:
+
+```bash
+aio aem edge-functions build
+```
+
+### Bereitstellen {#deploy}
+
+Stellen Sie den gepackten Code der Edge-Funktion für die benannte Edge-Funktion bereit. Das `function-name`-Argument muss mit dem `name` in `edgeFunctions.yaml` übereinstimmen:
+
+```bash
+aio aem edge-functions deploy <function-name>
+```
+
+### Testen {#test}
+
+Stellen Sie sicher, dass die Kantenfunktion erwartungsgemäß funktioniert. Sie können es unter folgender Adresse testen:
+
+`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com.adobeaemcloud.com/<path>`
+
+Beispielsweise für den AEM Java-Stack: <br/>
+`edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+oder für Edge Delivery Services:<br/>
+`edgefunction-pXXXXX-dYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+Diese Domain mit dem Präfix *EDGEFUNCTION* dient nur zur Fehlerbehebung, darf *für Live-Traffic nicht referenziert werden* da kein stabiler Name garantiert ist. Informationen zum Bestimmen des Werts für JJJJ finden Sie in der Ausgabe des Bereitstellungsbefehls.
+
+
+## In den Inhaltsbereitstellungs-Fluss integrieren {#wiring}
+
+Funktions-Traffic von Edge sollte an die Domain der Website gesendet werden, die normalerweise eine benutzerdefinierte Domain für den AEM Java-Stack ist, und *muss* eine benutzerdefinierte Domain für Edge Delivery Services Sites sein.
+
+### &#x200B;1. Herkunft-Selektoren definieren {#origin-selectors}
 
 Edge-Funktionen werden aufgerufen, indem CDN-Traffic über Regeln der Ursprungsauswahl an sie weitergeleitet wird. Fügen Sie der `cdn.yaml`-Konfigurationsdatei Folgendes hinzu (oder erstellen Sie eine, falls sie nicht vorhanden ist):
 
@@ -137,32 +182,14 @@ data:
 
 Mit den Regeln der Ursprungsauswahl können Sie Traffic basierend auf einer in der CDN-Regel-Engine verfügbaren Bedingung, z. B. einem bestimmten Pfad, einer bestimmten Domain oder einem Anfrageheader, an Ihre Edge-Funktionen weiterleiten. Mehrere Regeln können verschiedene Pfade zu derselben Edge-Funktion routen. Siehe [Ursprungs-Selektoren](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) für die vollständige Regelsyntax.
 
-### &#x200B;4. Bereitstellen der Konfiguration {#deploy-configuration}
+### &#x200B;2. Bereitstellen der Konfiguration {#deploy-to-cdn}
 
-Übertragen Sie sowohl `edgeFunctions.yaml` als auch `cdn.yaml` in das Cloud Manager-Git-Repository und erstellen Sie einen Trigger für die Konfigurations-Pipeline. Sobald die Pipeline erfolgreich abgeschlossen wurde, sind Ihre Edge-Funktionsendpunkte unter verfügbar:
+Übertragen Sie `cdn.yaml` in Ihr Cloud Manager-Git-Repository und Trigger in die Konfigurations-Pipeline. Sobald die Pipeline erfolgreich abgeschlossen wurde, sind Ihre Edge-Funktionsendpunkte unter verfügbar:
 
-- `publish-pXXXXX-eYYYYY.adobeaemcloud.com/weather`
-- `publish-pXXXXX-eYYYYY.adobeaemcloud.com/hello-world`
+- `example.com/weather`
+- `example.com/hello-world`
 
-Wo `pXXXXX-eYYYYY` Ihre Umgebungskoordinaten sind. Wenn eine benutzerdefinierte Domain konfiguriert ist, sind die Funktionen auch über diese Domain-Pfade erreichbar (z. B. `example.com/weather`).
-
-## Erstellen und Bereitstellen des Funktionscodes für AEM Edge {#build-deploy}
-
-### Aufbauen {#build}
-
-Verpacken Sie Ihren Edge-Funktions-Code für die Bereitstellung:
-
-```bash
-aio aem edge-functions build
-```
-
-### Bereitstellen {#deploy}
-
-Stellen Sie das erstellte Paket in einem benannten Edge-Funktions-Service bereit. Das `function-name`-Argument muss mit dem `name` in `edgeFunctions.yaml` übereinstimmen:
-
-```bash
-aio aem edge-functions deploy <function-name>
-```
+Zum Debuggen können Sie die Edge-Funktion auf der Domain-`publish-pXXXXX-eYYYYY.adobeaemcloud.com` (für den AEM Java-Stack) oder `publish-pXXXXX-dYYYYY.adobeaemcloud.com` (für Edge Delivery Services Sites) referenzieren. Verwenden Sie diese Domain nicht für die Verwendung in der Produktion, da sie nicht garantiert ein stabiler Name ist. Informationen zum Bestimmen des Werts für JJJJ finden Sie in der Ausgabe des Bereitstellungsbefehls.
 
 ## Lokale Entwicklung {#local-development}
 
@@ -176,7 +203,7 @@ aio aem edge-functions serve
 
 In dieser [Compute JavaScript-Dokumentation](https://www.fastly.com/documentation/guides/compute/javascript/) finden Sie Details dazu, was die lokale Laufzeit unterstützt.
 
-### Testen {#test}
+### Testen {#test-localdev}
 
 Ausführen der Test-Suite mit [Mokka](https://mochajs.org/):
 
@@ -225,7 +252,7 @@ Requested backend named '…' does not exist
 
 Wenn dieser Fehler angezeigt wird und Ihre ursprüngliche Konfiguration korrekt ist, besteht die wahrscheinlichste Ursache darin, dass das Kontingent für die Backend-Anfrage pro Aufruf ausgeschöpft wurde. Siehe [Fastly Compute Resource Limits](https://docs.fastly.com/products/compute-resource-limits#default-limits) für die vollständige Liste der Platform Limits.
 
-## Konfigurationsreferenz {#configuration-reference}
+## Erweiterte Edge-Funktionskonfiguration {#advanced-function-configuration}
 
 ### Ursprünge {#origins}
 
@@ -246,17 +273,23 @@ const response = await fetch(request, { backend: "my-origin-name" });
 
 >[!NOTE]
 >
->Service-Stores (`configs`, `secrets` und `kvs`) sind in „Sandbox[Programmen“ &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktions-Services selbst werden normalerweise in Sandbox-Umgebungen ausgeführt - nur die Stores werden nicht bereitgestellt.
+>Konfigurationen, Geheimnisse und KVs sind in [Sandbox-Programmen) ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktionen selbst werden in Sandbox-Umgebungen normal ausgeführt - nur diese Entitäten werden nicht bereitgestellt.
 
-### Service-Konfiguration {#service-configuration}
+### Edge-Funktionskonfigurationsvariablen {#function-configuration}
 
 Offenlegung von Umgebungsvariablen für Ihre Funktionen mithilfe der `configs` in `edgeFunctions.yaml`. Die Werte werden in einem Konfigurationsspeicher mit dem Namen `config_default` gespeichert:
 
 ```yaml
-configs:
-  - key: LOG_LEVEL
-    value: DEBUG
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  configs:
+    - key: LOG_LEVEL
+      value: DEBUG
 ```
+
 
 Lesen Sie die Konfigurationswerte im Funktionscode:
 
@@ -271,16 +304,22 @@ const logLevel = config.get('LOG_LEVEL') || 'info';
 >
 >- Der Konfigurationsspeicher hat immer den Namen `config_default`.
 >- Bei Schlüsselnamen wird zwischen Groß- und Kleinschreibung unterschieden.
->- Der Konfigurationsspeicher wird für alle Edge-Funktions-Services in derselben Umgebung freigegeben.
+>- Der Konfigurationsspeicher wird für alle Edge-Funktionen in derselben Umgebung freigegeben.
 
-### Dienstgeheimnisse {#service-secrets}
+### Edge-Funktionsgeheimnis-Variablen {#function-secrets}
 
 Geheimnisse werden in `edgeFunctions.yaml` referenziert, nicht gespeichert. Das `value` muss mithilfe der `${{SECRET_REFERENCE}}` auf geheime Daten vom Typ Cloud Manager verweisen. Definieren Sie zunächst das zugrunde liegende Geheimnis in Cloud Manager - siehe [Cloud Manager-Geheimnisvariablen](/help/implementing/cloud-manager/environment-variables.md).
 
+
 ```yaml
-secrets:
-  - key: API_TOKEN
-    value: ${{ API_TOKEN_SECRET }}
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  secrets:
+    - key: API_TOKEN
+      value: ${{ API_TOKEN_SECRET }}
 ```
 
 Abrufen von geheimen Daten im Funktionscode mithilfe des `SecretStoreManager` Helpers aus dem Textbaustein:
@@ -296,14 +335,20 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Der geheime Speicher heißt immer `secret_default`.
 >- Bei Schlüsselnamen wird zwischen Groß- und Kleinschreibung unterschieden.
 >- Geheime Daten sind unveränderlich, sobald sie erstellt wurden.
->- Der geheime Speicher wird für alle Edge-Funktions-Services in derselben Umgebung freigegeben.
+>- Der geheime Speicher wird für alle Edge-Funktionen in derselben Umgebung freigegeben.
 
-### KV-Dienstspeicher {#service-kv-store}
+### Edge-Funktions-KV-Speicher {#function-kv-store}
 
 Edge-Funktionen können beliebige Schlüssel-Wert-Daten zur Laufzeit über einen KV-Speicher lesen und schreiben. Um sie zu aktivieren, legen Sie `kvs: true` in `edgeFunctions.yaml` fest:
 
+
 ```yaml
-kvs: true
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  kvs: true
 ```
 
 Dadurch wird ein leerer KV-Speicher mit dem Namen `kv_default` bereitgestellt. Füllen Sie es zur Laufzeit aus Ihrem Edge-Funktions-Code mithilfe der [Fastly KV Store-API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore):
@@ -325,7 +370,7 @@ await kv.put('visit-count', String(count + 1));
 >
 >- Der KV-Speicher heißt immer `kv_default`.
 >- Der KV-Speicher ist zur Bereitstellungszeit leer; füllen Sie ihn zur Laufzeit über die [Fastly KV-Speicher-API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore). Deklarative Schlüssel/Wert-Einträge in `edgeFunctions.yaml` werden nicht unterstützt.
->- Der KV-Speicher wird über alle Edge-Funktions-Services in derselben Umgebung gemeinsam genutzt.
+>- Der KV-Speicher ist über alle Edge-Funktionen in derselben Umgebung verteilt.
 
 ### Protokollierung {#logging}
 
@@ -359,5 +404,5 @@ logger.log(JSON.stringify({
 
 >[!NOTE]
 >
->CDN-Protokolle, die AEM Edge-Funktionsprotokolleinträge enthalten, können für Java-Stack-Umgebungen von Cloud Manager heruntergeladen werden, nicht aber für Edge Delivery Services Sites.
+>CDN-Protokolle, die AEM Edge-Funktionsprotokolleinträge enthalten, können für Java-Stack-Umgebungen von Cloud Manager heruntergeladen werden, nicht aber für Edge Delivery Sites.
 >
