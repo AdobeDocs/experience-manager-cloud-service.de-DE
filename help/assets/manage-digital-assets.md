@@ -7,10 +7,10 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: f06e04efec715413306b41be82328fba24c31404
 workflow-type: tm+mt
-source-wordcount: '4336'
-ht-degree: 98%
+source-wordcount: '4541'
+ht-degree: 93%
 
 ---
 
@@ -279,6 +279,25 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
    >[!NOTE]
    >
    >Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Sie können das Löschen referenzierter Assets verbieten, da dies fehlerhafte Links verursacht. Deaktivieren Sie die Schaltfläche „Löschen erzwingen“ mit einer Überlagerung.
+
+## Asynchrone Hintergrundaufträge {#asynchronous-background-jobs}
+
+Um die Leistung und Zuverlässigkeit bei der Verarbeitung einer großen Anzahl von Assets zu verbessern, verwendet AEM asynchrone Hintergrundaufträge für bestimmte Asset-Management-Vorgänge. Anstatt diese Vorgänge sofort abzuschließen, verarbeitet AEM sie im Hintergrund und ermöglicht es den Benutzenden, weiter zu arbeiten, während der Fortschritt separat verfolgt wird.
+
+
+Vorgänge wie das Verschieben, Kopieren oder Löschen von Ordnern, die mehr als 150 Assets enthalten, werden automatisch als asynchrone Aufträge ausgeführt. Beim Starten eines dieser Vorgänge können Benutzer den Auftrag sofort ausführen oder für einen späteren Zeitpunkt planen.
+
+![Datumsauswahl](assets/schedule-asnyc-job.png)
+
+Während des Vorgangs verarbeitet AEM Assets in Batches und speichert regelmäßig den Fortschritt. Die AEM-Benutzeroberfläche zeigt auch Fortschrittsaktualisierungen an, damit Benutzer den Status des Vorgangs überwachen können.
+
+![Datumsauswahl](assets/move-progress-folder-indicator.png)
+
+Bei Verschiebungs- und Löschvorgängen ist der Zugriff auf die betroffenen Ordner während der Ausführung des Auftrags eingeschränkt, um widersprüchliche Aktionen zu verhindern.
+
+Um den Auftragsfortschritt zu verfolgen, öffnen Sie die Assets-Auftragskonsole (**Assets** > **Aufträge** in der Admin-Ansicht). Die Konsole zeigt Details wie den aktuellen Status, den Prozentsatz der Fertigstellung und andere Auftragsinformationen an. Wählen Sie einen Auftrag aus und klicken Sie auf Öffnen , um weitere Details anzuzeigen, darunter Fortschrittsinformationen und die geschätzte verbleibende Zeit bis zum Abschluss. Benutzende werden auch benachrichtigt, wenn der Vorgang abgeschlossen ist.
+
+![Datumsauswahl](assets/async-jobs-status.png)
 
 ## Herunterladen von Assets {#download-assets}
 
