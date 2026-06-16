@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f58ab16d09b995d81879e9efaeb91446e530f540
+source-git-commit: ee44611ddea115fffd9800a54728d747d4360a6b
 workflow-type: tm+mt
-source-wordcount: '7486'
-ht-degree: 85%
+source-wordcount: '7496'
+ht-degree: 84%
 
 ---
 
@@ -895,6 +895,7 @@ ht-degree: 85%
          + [Übermitteln eines adaptiven Formulars an Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Übermitteln eines adaptiven Formulars an Azure Blob-Speicher](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“ für adaptive Formulare](/help/forms/configure-submit-action-restpoint.md)
+         + [Konfigurieren Sie umgebungsspezifische REST-Endpunkte für dasselbe adaptive Formular](/help/forms/configure-environment-specific-rest-endpoints.md)
          + [Senden eines adaptiven Formulars an Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
          + [Integrieren eines adaptiven AEM-Formulars in einen AEM-Workflow](/help/forms/configure-submit-action-workflow.md)
          + [Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
@@ -1340,7 +1341,7 @@ ht-degree: 85%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)
