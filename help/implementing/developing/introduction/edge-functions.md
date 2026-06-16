@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 33998fa44df1ad26d127bdc27b6903e9c56b7fc3
+source-git-commit: 21f4115d09e6dc804a69ecc012a2c654794f39ad
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 2%
@@ -283,7 +283,7 @@ Offenlegung von Umgebungsvariablen für Ihre Funktionen mithilfe der `configs` i
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   configs:
     - key: LOG_LEVEL
@@ -315,7 +315,7 @@ Geheimnisse werden in `edgeFunctions.yaml` referenziert, nicht gespeichert. Das 
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
@@ -346,7 +346,7 @@ Edge-Funktionen können beliebige Schlüssel-Wert-Daten zur Laufzeit über einen
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   kvs: true
 ```
