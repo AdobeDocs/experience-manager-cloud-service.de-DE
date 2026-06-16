@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 4a080bfb281ba9b61bf9b8ebd090f7e98ddaf2d0
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 99%
+source-wordcount: '1352'
+ht-degree: 88%
 
 ---
 
@@ -41,9 +41,9 @@ So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open AP
 
    ![Aktionskonfiguration für „An REST-Endpunkt übermitteln“](/help/forms/assets/submit-action-restendpoint.png)
 
-   Um Daten auf einem internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche Sende-Anfragen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
+   Um Daten an einen internen Server zu senden, geben Sie den Pfad der Ressource an. Die Daten werden an den Pfad der Ressource gesendet. Beispiel: `/content/restEndPoint`. Für solche POST-Anfragen werden die Authentifizierungsinformationen der Sendeanfrage verwendet.
 Mit dieser Option können Sie den Ziel-REST-Endpunkt direkt eingeben.
-Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
+Um Daten an einen externen Server zu senden, geben Sie eine URL an. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zur Verarbeitung der POST-Anfrage anonym konfigurieren.
    ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Dankeseite](assets/post-enabled-actionconfig.png)
 
    Im obigen Beispiel hat der Benutzer Informationen in die `textbox` eingegeben, die mithilfe von Parameter `param1` erfasst werden. Die Syntax zur Veröffentlichung erfasster Daten mithilfe von `param1` lautet:
@@ -57,8 +57,8 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anhangdaten.
-Die Übermittlungsoption **[!UICONTROL An REST-Endpunkt übermitteln]** übermittelt die im Formular eingetragenen Daten zu einer konfigurierten Bestätigungsseite im Rahmen der HTTP-GET-Anfrage. Sie können den Namen der anzufordernden Felder hinzufügen. Das Format der Anfrage lautet:
+   In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagendaten.
+Die Übermittlungsaktion **[!UICONTROL An REST-Endpunkt übermitteln]** übermittelt die im Formular eingetragenen Daten als Teil der HTTP GET-Anfrage an eine konfigurierte Bestätigungsseite. Sie können den Namen des Felds hinzufügen, das angefordert werden soll. Das Format der Anfrage lautet:
    `{fieldName}={request parameter name}`
 
    Wie in der folgenden Abbildung dargestellt, werden `param1` und `param2` als Parameter mit Werten, die aus den Feldern **textbox** und **numericbox** kopiert wurden, für die nächste Aktion weitergeleitet.
@@ -87,7 +87,7 @@ So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open AP
    +++URL
 
    Mit dieser Option können Sie den Ziel-REST-Endpunkt direkt eingeben.
-Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
+Um Daten an einen externen Server zu senden, geben Sie eine URL an. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zur Verarbeitung der POST-Anfrage anonym konfigurieren.
 
    ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Dankeseite](assets/post-enabled-actionconfig.png)
 
@@ -118,7 +118,7 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    +++Konfiguration
 
-   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Informationen zum Weiterleiten desselben Formulars an einen anderen Endpunkt in jeder Umgebung finden Sie [Konfigurieren umgebungsspezifischer REST-Endpunkte für dasselbe adaptive Formular](/help/forms/configure-environment-specific-rest-endpoints.md).
 
    +++
 
@@ -147,7 +147,7 @@ So konfigurieren Sie eine Übermittlungsaktion basierend auf der Swagger Open AP
    +++URL
 
    Mit dieser Option können Sie den Ziel-REST-Endpunkt direkt eingeben.
-Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
+Um Daten an einen externen Server zu senden, geben Sie eine URL an. Das Format der URL ist `https://host:port/path_to_rest_end_point`. Stellen Sie sicher, dass Sie den Pfad zur Verarbeitung der POST-Anfrage anonym konfigurieren.
 
    ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Dankeseite](assets/post-enabled-actionconfig.png)
 
@@ -178,7 +178,7 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
    +++Konfiguration
 
-   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   Mit dieser Option können Sie eine vordefinierte HTTP-Konfiguration hinzufügen, die über den Konfigurations-Browser von AEM verwaltet wird. Sie können die Konfiguration auswählen, die Sie für den Authentifizierungstyp Ihres Dienst-REST-Endpunkts und die Inhaltstypen erstellt haben. Weitere Informationen zum Authentifizierungstyp und zu den Inhaltstypen finden Sie unter [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). Informationen zum Weiterleiten desselben Formulars an einen anderen Endpunkt in jeder Umgebung finden Sie [Konfigurieren umgebungsspezifischer REST-Endpunkte für dasselbe adaptive Formular](/help/forms/configure-environment-specific-rest-endpoints.md).
 
    +++
 
@@ -208,7 +208,8 @@ Geben Sie eine URL an, um Daten an einen externen Server zu senden. Das Format d
 
 * Stellen Sie beim Senden von Daten an einen externen Server sicher, dass die URL sicher ist, und konfigurieren Sie den Pfad, um die POST-Anforderung anonym zu verarbeiten und dadurch vertrauliche Informationen zu schützen.
 * Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, und zwar auch dann, wenn die Felder in verschiedene Bereiche platziert wurden.
+* Um eine andere REST-Endpunkt-URL in der Staging- und Produktionsumgebung zu verwenden, ohne das Formular zu ändern, siehe [Konfigurieren umgebungsspezifischer REST-Endpunkte für dasselbe adaptive Formular](/help/forms/configure-environment-specific-rest-endpoints.md).
 
-## Verwandte Artikel
+## Ähnliche Artikel
 
 {{af-submit-action}}
