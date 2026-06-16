@@ -1,50 +1,113 @@
 ---
 title: Übersicht über den Entwicklungsagenten
-description: Erfahren Sie, wie der Entwicklungsagent in AEM fehlgeschlagene Pipelines in Cloud Manager analysiert und Protokolle erstellt, um Code-Fehlerbehebungen vorzuschlagen und das Debugging zu beschleunigen.
+description: Erfahren Sie, wie der Entwicklungsagent in AEM fehlgeschlagene Pipelines in Cloud Manager analysiert und Protokolle erstellt, um Code-Fehlerbehebungen vorzuschlagen und das Debugging zu beschleunigen. Erfahren Sie außerdem, wie Sie Cloud Manager-Informationen abrufen, Hilfe bei Replikationsfehlern erhalten und wie Sie ruhige Stunden einrichten und kostenlose Zeiträume für AEM-Updates aktualisieren.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 0b050b161b11b9b4cd58e575d69472d3173dfe94
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 0%
+source-wordcount: '1184'
+ht-degree: 10%
 
 ---
 
 
 # Übersicht über den Entwicklungsagenten {#development-agent-overview}
 
-[Als Teil der Brand Experience Agent &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) der Entwicklungsagent Entwicklerinnen und Entwicklern sowie Admins von AEM dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
+[Im Rahmen der Brand Experience Agent ](/help/ai-in-aem/agents/brand-experience/overview.md) der Entwicklungsagent herkömmliche AEM Java-Stack-Entwickler und -Administratoren dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
 
-Der Agent kann Pipeline-Status abrufen und Sie bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten unterstützen, indem er Fehlerbehebungen vorschlägt und so Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen spart. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
+Es unterstützt die folgenden Aufträge, auf die über die Konversationsoberfläche des KI-Assistenten zugegriffen werden kann.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478016?captions=ger&quality=12&learn=on)
+* Cloud Manager-Vorgang: Nur-Lese-Vorgänge, einschließlich der Auflistung von Programmen und Umgebungen und des Pipeline-Status
+* Pipeline-Fehlerbehebung: Pipelines debuggen fehlgeschlagen
+* Ruhezeiten und Verwaltung freier Zeiträume aktualisieren (eingeschränkte Verfügbarkeit): Ruhestunden anzeigen, erstellen und bearbeiten und Freie Zeiträume aktualisieren
+* Fehlerbehebung bei Replikationsproblemen (Beta): Beheben Sie replikationsbezogene Probleme, z. B. blockierte Warteschlangen.
+
+>[!NOTE]
+>
+> Entwickler finden diese KI-gestützten Funktionen ebenfalls nützlich:
+> * [IDE Agent Skills](/help/ai-in-aem/local-development-with-ai-tools.md#agent-skills) für lokale Entwicklungsszenarien wie das Generieren von AEM-Komponenten.
+> * [Lokale MCP-Server](/help/ai-in-aem/local-development-with-ai-tools.md#aem-quickstart-mcp-server) für die lokale Entwicklung, insbesondere zum Debugging von AEM- und Dispatcher-Problemen.
+> * [Remote-MCP-Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) für den Zugriff auf APIs und AEM-Agenten.
 
 >[!IMPORTANT]
 >
 >KI-generierte Antworten können ungenau oder irreführend sein. Überprüfen Sie unbedingt die vorgeschlagenen Fehlerbehebungen und Antworten.
 >
->Siehe auch [Benutzerhandbücher für die generative KI von Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Siehe auch [Benutzerhandbücher für generative KI von Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+Sie können das für den Entwicklungsagenten spezifische Feedback per E-Mail an [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) senden.
+
+## Cloud Manager-Vorgang {#cloud-manager-job}
+
+Hier finden Sie Informationen zu Ihren AEM-Programmen und -Umgebungen, einschließlich:
+* Auflisten von Programmen und Umgebungen
+* Auflisten von Umgebungsvariablen
+* Suchen der Namen von Pipelines sowie des aktuellen Ausführungsstatus und der Schrittdetails
+* Abrufen von Links zu Protokollen, die heruntergeladen werden können
+
+### Eingabeaufforderungen im Beispiel {#sample-cm-job-prompts}
+
+
+| Prompt | Ergebnis |
+| --- | --- |
+| *Listen Sie alle meine AEM Cloud Service-Programme auf* | Listet Programme auf, auf die Sie Zugriff haben. |
+| *Abrufen von Details zur 12345* | Abrufen von Details zum Programm. |
+| *Auflisten von Umgebungen in 12345* | Führt Umgebungen im Programm auf. |
+| *Abrufen von Protokollen für die Produktionsumgebung* | Ruft Links zu verschiedenen AEM-, Dispatcher- und CDN-Protokolldateien ab, damit sie für Debugging- oder andere Zwecke heruntergeladen werden können. |
+| *Auflisten von Pipelines für 12345* | Listen Sie Pipelines im Programm auf. |
+| *Wie ist der Status der aktuellen Pipeline-Ausführung?* | Antwortet mit Status der Pipeline. |
+| *Erhalten Sie die Build-Protokoll-Links für die Pipeline-Ausführung 12345* | Ruft Links zu Pipeline-Build-Protokollen für eine bestimmte Pipeline-Ausführung ab. |
+
+
+## Ruhestunden und Aktualisieren von Freie Zeiträume Management Job {#control-updates-job}
+
+>[!AVAILABILITY]
+>
+>Diese Funktion befindet sich in der Phase der eingeschränkten Verfügbarkeit und wird in den nächsten Wochen eingeführt. E-Mail [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) für sofortigen Zugriff.
+
+Ruhestunden anzeigen, erstellen und bearbeiten und Freizeiten aktualisieren direkt über den AEM AI-Assistenten.
+
+Der Hauptvorteil liegt in der Verringerung von Zeitplanfehlern. Wenn Sie eine Anfrage stellen, führt Sie der Assistent durch das Mögliche und kennzeichnet die geltenden Beschränkungen, z. B. die Obergrenze für drei Zeiträume, die obligatorische Lücke von einer Woche zwischen Zeiträumen und die geplanten Zeitfenster für Wartungsausschlüsse, für die Sie keinen Zeitplan festlegen können.
+
+Anstatt also nach einer fehlgeschlagenen Konfiguration eine Einschränkung zu ermitteln, werden Geschäftsinhaber und Bereitstellungs-Manager im selben Gespräch auf einen gültigen Zeitplan geleitet. Dadurch werden wichtige Geschäftsfenster vor automatischen Wartungs-Updates geschützt und gleichzeitig das Hin- und Herschieben und Fehlkonfigurieren reduziert.
+
+### Eingabeaufforderungen im Beispiel {#sample-updates-prompts}
+
+| Prompt | Ergebnis |
+| --- | --- |
+| *Wie sieht der aktuelle Aktualisierungszeitplan für Programm 12345 aus?* | Dies führt zu einer Auflistung der aktuellen AEM-Aktualisierungsregeln. |
+| *Blockieren Sie AEM-Updates von 9 bis 17 Uhr EST für 12345* | Richtet eine Regel ein, damit AEM-Aktualisierungen nicht während der Standardarbeitszeit angewendet werden. |
+| *Entfernen des täglichen Update-Blocks für das Programm 12345* | Entfernt die Regeln, die AEM-Updates verhindern. |
+| *AEM-Updates ab zwei Wochen pausieren, um 12345* zu erhalten | Erstellt eine Regel, um AEM-Aktualisierungen zu verhindern. |
+| *Mein Programm wird zu unangenehmen Zeiten immer wieder aktualisiert. Welche Optionen habe ich?* | Antwortet mit Informationen darüber, wie Regeln zur Steuerung des AEM-Aktualisierungszeitplans festgelegt werden. |
+
+
+
+## Fehlerbehebung bei Pipeline-Aufträgen  {#cloud-manager-pipeline-troubleshooting}
+
+Dieser Auftrag kann Pipeline-Status abrufen und Ihnen bei der Fehlerbehebung bei fehlgeschlagenen Build-Schritten helfen, indem Fehlerbehebungen vorgeschlagen werden. Dies spart Zeit beim Debugging von AEM as a Cloud Service-Bereitstellungen in Entwicklungs-, Staging- und Produktionsumgebungen. Es werden Build-Protokolle und verwandter Code untersucht, um eine Fehlerbehebung zu empfehlen, die Sie manuell anwenden können.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!NOTE]
 >
->Die Fehlerbehebung bei Pipelines ist auf Full-Stack-Pipelines (Bereitstellung und Code-Qualität) beschränkt, aber die Unterstützung für **Web-Stufen-Konfigurations** Pipeline) ist jetzt in der Beta-Version verfügbar. aem-devagent@adobe.com Um den Zugriff anzufordern, senden Sie eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com). Bereits vorhandener Zugriff auf Agenten in AEM ist erforderlich.
+>Die Fehlerbehebung bei Pipelines ist auf Full-Stack-Pipelines (Bereitstellung und Code-Qualität) und die Web-Stufen-Konfigurations-Pipeline beschränkt.
 
-<!-- 
-## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
+<!--
+To access this agent, please refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, being sure to indicate your interest in the  Development Agent. You can also email development agent–specific feedback to [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
+
 -->
 
-Um auf diesen Agenten zuzugreifen, lesen Sie die [Versionshinweise](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) für Anweisungen zur Registrierung für das Beta-Programm. Achten Sie darauf, Ihr Interesse am Entwicklungs-Agent zu bekunden. Sie können auch ein E-Mail-Feedback für den Entwicklungsagenten an [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) senden.
+[In einem Tutorial erfahren ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
 
-[In einem Tutorial erfahren &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
-
-## Zugriff auf den Entwicklungsagenten über Cloud Manager {#how-to-access-the-agent}
+### Zugriff auf den Entwicklungsagenten über Cloud Manager {#how-to-access-the-agent}
 
 Der Zugriff auf den Entwicklungsagenten erfolgt über den KI-Assistenten, der sich in den Benutzeroberflächen, einschließlich Cloud Manager oder Experience Hub, befindet.
 
 1. Klicken Sie zunächst auf [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home), um die Startseite zu öffnen.
 
-   ![Adobe Experience Cloud-Startseite](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+   ![Startseite von Adobe Experience Cloud](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. Klicken Sie in der linken Leiste unter **Services** auf **Cloud Manager**.
 
@@ -64,13 +127,13 @@ Der Zugriff auf den Entwicklungsagenten erfolgt über den KI-Assistenten, der si
 
    ![Pipeline-Fehler, wie auf der Seite Build- und Code-Überprüfung angezeigt](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-failure.png)
 
-1. Klicken Sie in der rechten oberen Ecke der Benutzeroberfläche von AEM (entweder auf den Cloud Manager-Seiten oder in der Autoreninstanz der AEM-Umgebungen) auf das Symbol **KI-**).
+1. Klicken Sie in der rechten oberen Ecke der Benutzeroberfläche von AEM (entweder auf den Cloud Manager-Seiten oder in der Autoreninstanz der AEM-Umgebungen) auf das Symbol **KI-Assistent**.
 
    ![Symbol „KI-Assistent“ in der Symbolleiste](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
    Siehe auch [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
-1. Geben Sie im Textfeld **KI** Assistent“ unten Ihre Frage oder Eingabeaufforderung ein und drücken Sie dann die `Enter` oder klicken Sie auf ![Senden-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. Geben Sie im Textfeld **KI-Assistent** unten Ihre Frage oder Ihren Prompt ein und drücken Sie dann `Enter` oder klicken Sie auf das Symbol zum ![Senden](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
 
    Beispiel:
    *Analysieren Sie im Programm „eda-org-01-no-access“ den Fehler bei der Pipeline „no-access“ und beheben Sie die Fehler.*
@@ -79,11 +142,11 @@ Der Zugriff auf den Entwicklungsagenten erfolgt über den KI-Assistenten, der si
 
    ![KI-Assistenten-Eingabeaufforderung und resultierende Antwort](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
-## Berechtigungen {#permissions}
+### Berechtigungen {#permissions}
 
-Der Entwicklungsagent benötigt entweder die Rolle Cloud Manager - Entwickler oder die Rolle Cloud Manager - Programm-Manager.
+Für die Fehlerbehebung bei Pipelines ist entweder die Rolle Cloud Manager - Entwickler oder die Rolle Cloud Manager - Programm-Manager erforderlich.
 
-## Eingabeaufforderungen im Beispiel {#sample-prompts}
+### Eingabeaufforderungen im Beispiel {#sample-pipeline-prompts}
 
 | Prompt | Ergebnis |
 | --- | --- |
@@ -92,8 +155,16 @@ Der Entwicklungsagent benötigt entweder die Rolle Cloud Manager - Entwickler od
 | *Analysieren Sie meine fehlgeschlagene Pipeline mit dem Namen „Entwicklungs-Pipeline“* | Diese Eingabeaufforderung führt zu einer Analyse der fehlgeschlagenen Pipeline mit Vorschlägen zur Korrektur. Bei mehreren Fehlern werden dem Benutzer zusätzliche Fragen gestellt. |
 | *Fehlerbehebung bei der Pipeline-Ausführung 1234567* | Durch Angabe einer exakten Pipeline-Ausführungs-ID wird eine Pipeline-Analyse durchgeführt. |
 
-## Nicht im Umfang enthaltene Funktionen {#out-of-scope-features}
+### Nicht im Umfang enthaltene Funktionen {#out-of-scope-features}
 
-Die Fehlerbehebung bei Pipelines erfolgt im Build- und Unit-Test-Schritt und im Code-Scan-Schritt in Full-Stack-Bereitstellungs- und Code-Qualitäts-Pipelines. Debuggen Sie bei anderen Pipeline-Typen und -Schritten Fehler, indem Sie die Protokolle herunterladen und überprüfen.
+Die Fehlerbehebung bei Pipelines erfolgt im Build- und Unit-Test-Schritt und im Code-Scan-Schritt in Full-Stack-Bereitstellungs- und Code-Qualitäts-Pipelines. Es unterstützt auch [Pipelines mit Webstufen-Konfiguration](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
 
-Weitere Informationen finden [&#x200B; unter „Zugreifen auf und Herunterladen &#x200B;](/help/implementing/cloud-manager/manage-logs.md) Protokollen“.
+Debuggen Sie bei anderen Pipeline-Typen und -Schritten Fehler, indem Sie die Protokolle herunterladen und überprüfen. Weitere Informationen finden [ unter „Zugreifen auf und Herunterladen ](/help/implementing/cloud-manager/manage-logs.md) Protokollen“.
+
+
+
+## Fehlerbehebungsauftrag für die Replikation (Beta) {#replication-troubleshooting-job}
+
+Debuggen Sie replikationsbezogene Probleme, z. B. blockierte Warteschlangen.
+
+aem-devagent@adobe.com Bitte eine E-Mail an [](mailto:aem-devagent@adobe.com) senden, um Zugriff auf das Beta-Programm zu erhalten.
