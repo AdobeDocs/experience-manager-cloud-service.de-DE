@@ -4,10 +4,10 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 2976da7d7032a40912d9822816788fcdc95d828d
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '4268'
-ht-degree: 68%
+source-wordcount: '4278'
+ht-degree: 66%
 
 ---
 
@@ -105,7 +105,9 @@ Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess zur Bes
    Eine Beschreibung der Eigenschaften oberhalb des Knotens `data` finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md#common-syntax). Der Eigenschaftswert `kind` sollte auf *CDN* und die Version auf `1` festgelegt werden.
 
 
-1. Wenn WAF-Regeln lizenziert sind *müssen Sie* Funktion in Cloud Manager aktivieren. Lizenzierte WAF-Regeln sind nicht aktiv und bieten keinen Schutz, bis **WAF-DDOS-Schutz** aktiviert ist. Aktivieren Sie die Funktion sowohl für das neue als auch für das vorhandene Programmszenario, wie im Folgenden beschrieben:
+1. Wenn WAF-Regeln lizenziert sind *müssen Sie* Funktion in Cloud Manager aktivieren. Regeln für die Lizenzierung von WAF aktivieren sie nicht. Die Funktion bleibt inaktiv, bis **WAF-DDOS Protection** auf der Registerkarte Sicherheit in Cloud Manager aktiviert ist.
+
+   Aktivieren Sie die Funktion sowohl für das neue als auch für das vorhandene Programmszenario, wie im Folgenden beschrieben:
 
    1. Um WAF in einem neuen Programm zu konfigurieren, aktivieren Sie das Kontrollkästchen **WAF-DDOS-Schutz** auf der Registerkarte **Sicherheit**, wenn Sie [ein Produktionsprogramm erstellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -167,9 +169,9 @@ Aktionen werden entsprechend ihren Typen in der folgenden Tabelle priorisiert, d
 
 | **Name** | **Zulässige Eigenschaften** | **Bedeutung** |
 |---|---|---|
-| **allow** | `wafFlags` (optional), `alert` (optional) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und es wird mit der Bereitstellung der Antwort fortgefahren. Wenn wafFlags vorhanden ist, deaktiviert dies die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
-| **block** | `status, wafFlags` (optional und sich gegenseitig ausschließend), `alert` (optional) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehler-Code wird durch die Statuseigenschaft definiert bzw. standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht dies bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
-| **log** | `wafFlags` (optional), `alert` (optional) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Sobald ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) wieder ausgelöst. |
+| **allow** | `wafFlags` (optional), `alert` (optional) | Wenn wafFlags nicht vorhanden ist, stoppt die weitere Regelverarbeitung und es wird mit der Bereitstellung der Antwort fortgefahren. Wenn wafFlags vorhanden ist, deaktiviert dies die angegebenen WAF-Schutzmechanismen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Nachdem ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) erneut ausgelöst. |
+| **block** | `status, wafFlags` (optional und sich gegenseitig ausschließend), `alert` (optional) | Wenn wafFlags nicht vorhanden ist, wird der HTTP-Fehler unter Umgehung aller anderen Eigenschaften zurückgegeben. Der Fehler-Code wird durch die Statuseigenschaft definiert bzw. standardmäßig auf 406 gesetzt. Wenn wafFlags vorhanden ist, ermöglicht dies bestimmte WAF-Schutzmaßnahmen und fährt mit der weiteren Regelverarbeitung fort. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Nachdem ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) erneut ausgelöst. |
+| **log** | `wafFlags` (optional), `alert` (optional) | protokolliert die Tatsache, dass die Regel ausgelöst wurde, hat jedoch ansonsten keine Auswirkung auf die Verarbeitung. wafFlags hat keine Auswirkung. <br>Falls ein Warnhinweis angegeben wird, wird eine Benachrichtigung des Aktionszentrums gesendet, wenn die Regel zehnmal innerhalb eines 5-minütigen Zeitfensters ausgelöst wird. Nachdem ein Warnhinweis für eine bestimmte Regel ausgelöst wurde, wird er erst am nächsten Tag (UTC) erneut ausgelöst. |
 
 ### WAF Flags-Liste {#waf-flags-list}
 
@@ -189,7 +191,7 @@ Die `wafFlags` -Eigenschaft, die in den lizenzierbaren Traffic-Filterregeln von 
 | DURCHLAUF | Verzeichnisdurchlauf | Verzeichnisdurchlauf ist der Versuch, in einem System durch privilegierte Ordner zu navigieren, in der Hoffnung, vertrauliche Informationen zu erhalten. |
 | USERAGENT | Angriffs-Tooling | Angriffs-Tooling ist der Einsatz automatisierter Software zur Identifizierung von Sicherheitslücken oder zum Versuch, eine entdeckte Anfälligkeit auszunutzen. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-Angriffe versuchen, die [Log4Shell-Anfälligkeit](https://en.wikipedia.org/wiki/Log4Shell) in Log4J-Versionen vor 2.16.0 auszunutzen. |
-| CVE | CVE | Markierung zur Identifizierung eines CVE. Wird immer mit einer `CVE-<CVE Number>`-Markierung kombiniert. Wenden Sie sich an Adobe, um mehr darüber zu erfahren, vor welchen CVEs Adobe Sie schützt. |
+| CVE | CVE | Markierung zur Identifizierung von CVE (Common Vulnerabilities and Expositions). Wird immer mit einer `CVE-<CVE Number>`-Markierung kombiniert. Wenden Sie sich an Adobe, um mehr darüber zu erfahren, vor welchen CVEs Adobe Sie schützt. |
 
 #### Verdächtiger Traffic
 
@@ -370,7 +372,7 @@ Ratenbegrenzungen werden entweder anhand von Traffic bewertet, der am Edge ankom
 | window | Ganzzahl: 1, 10 oder 60 | 10 | Stichprobenfenster in Sekunden, für das die Anfragerate berechnet wird. Die Genauigkeit der Zähler hängt von der Größe des Fensters ab (ein größeres Fenster liefert höhere Genauigkeit). Beispielsweise kann man für das 1-Sekunden-Fenster eine Genauigkeit von 50 % und für das 60-Sekunden-Fenster eine Genauigkeit von 90 % erwarten. |
 | penalty | Ganzzahl von 60 bis 3600 | 300 (5 Minuten) | Ein Zeitraum in Sekunden, für den übereinstimmende Anfragen blockiert werden (auf die nächste Minute gerundet). |
 | Anzahl | alle, Abrufe, Fehler | alle | wird basierend auf Traffic am Edge (alle), Ursprungs-Traffic (Abrufe) oder der Anzahl der Fehler (Fehler) bewertet. |
-| groupBy | array[Getter] | keine | Der Zähler der Ratenbegrenzer wird durch eine Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
+| groupBy | array[Getter] | keine | Der Zähler für den Ratenbegrenzer wird von einer Reihe von Anfrageeigenschaften aggregiert (z. B. clientIp). |
 
 ### Beispiele {#ratelimiting-examples}
 
