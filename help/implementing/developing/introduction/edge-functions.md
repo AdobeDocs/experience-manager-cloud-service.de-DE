@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 0bafec06aff183b58838c8c0d3eee50e4411ac78
+source-git-commit: fc46155da4012672ad07b320b046179d93671441
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 2%
@@ -83,7 +83,7 @@ AEM Edge-Funktionen werden in einer YAML-Konfigurationsdatei deklariert und übe
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist (wenn Sie den AEM Java-Stack verwenden) oder dass eine Edge Delivery Services-Pipeline vorhanden ist, wenn Ihr Projekt mit Edge Delivery Services implementiert ist. Informationen [&#x200B; Konfigurieren der Pipelines finden &#x200B;](/help/operations/config-pipeline.md) unter „Verwenden von-Pipelines“.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist (wenn Sie den AEM Java-Stack verwenden) oder dass eine Edge Delivery Services-Pipeline vorhanden ist, wenn Ihr Projekt mit Edge Delivery Services implementiert ist. Informationen [ Konfigurieren der Pipelines finden ](/help/operations/config-pipeline.md) unter „Verwenden von-Pipelines“.
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Java-Stack-Umgebungen verfügen über 1 Edge-Funktion und Edge Delivery Services
 | `secrets` | Schlüssel/Wert-Paare, die auf Cloud Manager-Geheimnisse verweisen, in Bezug auf die Edge-Funktionen einer Umgebung |
 | `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüsselwertdaten mit Lese-/Schreibzugriff zur Laufzeit, die über alle Edge-Funktionen in einer Umgebung gemeinsam genutzt werden. |
 
-Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [&#x200B; Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
+Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [ Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
 
 ### &#x200B;3. Bereitstellen der Edge-Funktion über Cloud Manager {#deploy-functions-via-cm}
 
@@ -121,7 +121,7 @@ Stellen Sie mithilfe von Cloud Manager die Pipeline bereit, damit die Edge-Funkt
 
 ### Author {#author}
 
-Schreiben Sie Ihre Geschäftslogik für den Edge-Funktions[Code mithilfe des `src` Ordners &#x200B;](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src)Textbausteinvorlage“ als Ausgangspunkt.
+Schreiben Sie Ihre Geschäftslogik für den Edge-Funktions[Code mithilfe des `src` Ordners ](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src)Textbausteinvorlage“ als Ausgangspunkt.
 
 ### Aufbauen {#build}
 
@@ -143,7 +143,7 @@ aio aem edge-functions deploy <function-name>
 
 Stellen Sie sicher, dass die Kantenfunktion erwartungsgemäß funktioniert. Sie können es unter folgender Adresse testen:
 
-`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com.adobeaemcloud.com/<path>`
+`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
 Beispielsweise für den AEM Java-Stack: <br/>
 `edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
@@ -273,7 +273,7 @@ const response = await fetch(request, { backend: "my-origin-name" });
 
 >[!NOTE]
 >
->Konfigurationen, Geheimnisse und KVs sind in [Sandbox-Programmen) &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktionen selbst werden in Sandbox-Umgebungen normal ausgeführt - nur diese Entitäten werden nicht bereitgestellt.
+>Konfigurationen, Geheimnisse und KVs sind in [Sandbox-Programmen) ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktionen selbst werden in Sandbox-Umgebungen normal ausgeführt - nur diese Entitäten werden nicht bereitgestellt.
 
 ### Edge-Funktionskonfigurationsvariablen {#function-configuration}
 
