@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 20%
@@ -59,7 +59,7 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
      >[!NOTE]
      >Um sicherzustellen, dass die Funktion aktiv ist, überprüfen Sie die [CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)Protokolle, sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Zum Beispiel:
      >
-     >`"rules": "waf=SQLI"`
+     >`"rules": "*waf=*"`
      >
      >Dieses Attribut wird angezeigt, sobald WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
 

@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 50%
@@ -125,7 +125,7 @@ Die HIPAA-Compliance und WAF-DDOS (Web Application Firewall- Distributed Denial 
      >
      >Um sicherzustellen, dass die Funktion aktiv ist, überprüfen Sie die [CDN](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)Protokolle, sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Zum Beispiel:
      >
-     >`"rules": "waf=SQLI"`
+     >`"rules": "*waf=*"`
      >
      >Dieses Attribut wird angezeigt, wenn WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
 

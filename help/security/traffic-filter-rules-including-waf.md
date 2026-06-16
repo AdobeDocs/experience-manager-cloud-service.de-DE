@@ -4,7 +4,7 @@ description: Konfigurieren von Traffic-Filterregeln, einschließlich WAF-Regeln 
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '4278'
 ht-degree: 66%
@@ -115,7 +115,7 @@ Im Folgenden finden Sie einen allgemeinen empfohlenen End-to-End-Prozess zur Bes
 
       Um zu bestätigen, dass die Funktion *aktiv* ist, nachdem Sie sie aktiviert haben, überprüfen Sie die [CDN-](#cdn-logs), sobald Traffic auf die Site fließt. Suchen Sie nach Protokolleinträgen, die eine `rules`-Eigenschaft mit einem `waf` enthalten. Beispiel:
 
-      `"rules": "waf=SQLI" `
+      `"rules": "*waf=*" `
 
       Dieses Attribut wird angezeigt, sobald WAF aktiv ist, sogar bevor WAF-Regeln bereitgestellt werden.
 
