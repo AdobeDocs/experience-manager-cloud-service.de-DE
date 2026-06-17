@@ -3,7 +3,7 @@ title: Integrieren von Content Advisor mit Dynamic Media
 description: Erfahren Sie, wie Sie Content Advisor mit Dynamic Media integrieren, um Benutzern das Durchsuchen, Anzeigen und Auswählen von Dynamic Media-Ausgabedarstellungen für die Verwendung in ihren Programmen und Workflows zu ermöglichen.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
-source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
+source-git-commit: 95209a154a0d3208c5fcda8d4117f80d1015d2fe
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 1%
@@ -338,5 +338,4 @@ rotate=90&width=1200
 ```
 
 Die generierte Zeichenfolge wird an die endgültige Dynamic Media-URL angehängt und wendet die ausgewählten Umwandlungen an, wenn das Asset bereitgestellt wird.
-
 
