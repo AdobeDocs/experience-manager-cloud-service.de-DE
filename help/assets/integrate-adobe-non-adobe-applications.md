@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
+source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2203'
 ht-degree: 3%
 
 ---
@@ -127,6 +127,8 @@ Klicken Sie auf das ![Vorschausymbol](assets/do-not-localize/preview-icon.svg), 
 ![Vorschau von Dynamic Media-Ausgabedarstellungen](assets/content-advisor-dm-preview.png)
 
 Klicken Sie auf **[!UICONTROL Modifikatoren hinzufügen]**, geben Sie einen Modifikator im Textfeld an und drücken Sie die Eingabetaste , um die Umwandlung in Echtzeit auf alle Asset-Ausgabedarstellungen anzuwenden. Auf ähnliche Weise können Sie mehrere Modifikatoren zu Ausgabedarstellungen hinzufügen und eine Vorschau dieser Umwandlungen anzeigen. Klicken Sie auf den Namen der Ausgabedarstellung und anschließend auf **[!UICONTROL Auswählen]**, um die Ausgabedarstellung in der Hostanwendung verfügbar zu machen. Die Ausgabedarstellung nach Anwendung dieser Modifikatoren wird nicht gespeichert. Eine Liste der unterstützten Modifikatoren für [Dynamic Media Scene7](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) und [Dynamic Media mit OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) finden Sie.
+
+Informationen zum Integrieren des Dynamic Media-Bedienfelds mit dem Inhaltsratgeber finden Sie unter [Integration mit Dynamic Media](/help/assets/integration-with-dynamic-media.md).
 
 ### Auffinden von Inhaltsfragmenten {#content-fragments-discovery-content-advisor}
 
