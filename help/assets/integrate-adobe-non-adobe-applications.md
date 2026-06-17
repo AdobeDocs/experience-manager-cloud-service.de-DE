@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
+source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2203'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ Dynamic Media-Ausgabedarstellungen bieten einsatzbereite, kanaloptimierte Versio
 
 Sie können Dynamic Media-Modifikatoren auch anwenden, um Anpassungen in Echtzeit anzuzeigen, bevor Sie die Ausgabedarstellung für das Adobe-Host-Programm auswählen, was eine schnellere Auswahl der am besten geeigneten Ausgabedarstellung ermöglicht und dabei die Konsistenz und Qualität des Assets wahrt.
 
-Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder &#x200B;](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) &#x200B;](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
+Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder ](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) ](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
 
 Sie müssen über eine gültige AEM Dynamic Media-Lizenz verfügen, um die Registerkarte „Dynamic Media“ anzeigen zu können.
 
@@ -127,6 +127,8 @@ Klicken Sie auf das ![Vorschausymbol](assets/do-not-localize/preview-icon.svg), 
 ![Vorschau von Dynamic Media-Ausgabedarstellungen](assets/content-advisor-dm-preview.png)
 
 Klicken Sie auf **[!UICONTROL Modifikatoren hinzufügen]**, geben Sie einen Modifikator im Textfeld an und drücken Sie die Eingabetaste , um die Umwandlung in Echtzeit auf alle Asset-Ausgabedarstellungen anzuwenden. Auf ähnliche Weise können Sie mehrere Modifikatoren zu Ausgabedarstellungen hinzufügen und eine Vorschau dieser Umwandlungen anzeigen. Klicken Sie auf den Namen der Ausgabedarstellung und anschließend auf **[!UICONTROL Auswählen]**, um die Ausgabedarstellung in der Hostanwendung verfügbar zu machen. Die Ausgabedarstellung nach Anwendung dieser Modifikatoren wird nicht gespeichert. Eine Liste der unterstützten Modifikatoren für [Dynamic Media Scene7](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) und [Dynamic Media mit OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) finden Sie.
+
+Informationen zum Integrieren des Dynamic Media-Bedienfelds mit dem Inhaltsratgeber finden Sie unter [Integration mit Dynamic Media](/help/assets/integration-with-dynamic-media.md).
 
 ### Auffinden von Inhaltsfragmenten {#content-fragments-discovery-content-advisor}
 
@@ -203,7 +205,7 @@ Die folgende Tabelle zeigt die Unterstützung der Content Advisor-Funktionen in 
 | Adobe Workfront-Planung | ✓ | ✓ | − | ✓ |
 | [AEM Assets-Ansicht](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
 | [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
-| [Adobe Journey Optimizer (AJO) für B2C](http://experienceleague.adobe.com/de/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
+| [Adobe Journey Optimizer (AJO) für B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
 
 ## Unterstützung von Content Advisor-Funktionen in Nicht-Adobe-Anwendungen {#content-advisor-feature-support-non-adobe-applications}
 
