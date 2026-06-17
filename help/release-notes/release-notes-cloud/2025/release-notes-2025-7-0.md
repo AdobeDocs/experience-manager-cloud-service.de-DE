@@ -4,7 +4,7 @@ description: Versionshinweise für Version 2025.7.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4184506d5b0e3413c410aec704127694c9e11196
 workflow-type: tm+mt
 source-wordcount: '2376'
 ht-degree: 96%
@@ -55,7 +55,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 **Hinzufügen von Formen zu Dynamic Media-Vorlagen**
 
-Sie können jetzt in Experience Manager Assets [Formebenen zu Dynamic Media-Vorlagen hinzufügen](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas). Ähnlich wie Bild- und Textebenen unterstützen Formebenen Parameter für Echtzeit-Updates über die Vorlagen-URL. Sie können auch Links mit Aktionsaufrufen (CTA-Links) zu Formen in Ihre Vorlagen aufnehmen.
+Sie können jetzt in Experience Manager Assets [Formebenen zu Dynamic Media-Vorlagen hinzufügen](/help/assets/dynamic-media/manage-dynamic-media-templates.md#add-shapes-to-the-canvas). Ähnlich wie Bild- und Textebenen unterstützen Formebenen Parameter für Echtzeit-Updates über die Vorlagen-URL. Sie können auch Links mit Aktionsaufrufen (CTA-Links) zu Formen in Ihre Vorlagen aufnehmen.
 
 ![Hinzufügen von Formen zu Dynamic Media-Vorlagen](/help/assets/assets/enable-uniform-radius-shape.png)
 
