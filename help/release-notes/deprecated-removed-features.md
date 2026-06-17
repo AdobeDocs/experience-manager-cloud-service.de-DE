@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e896f6bbea276c061e086c80d5dabed30421970
+source-git-commit: 5fcbb483fc6a298b2dccfcf79467ecd39562cb66
 workflow-type: tm+mt
-source-wordcount: '4207'
+source-wordcount: '4206'
 ht-degree: 70%
 
 ---
@@ -197,103 +197,103 @@ Die APIs in der folgenden Tabelle (klicken Sie, um sie zu erweitern) wurden bere
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>Diese API dient nur zur internen Verwendung.</td>
     <td>23.09.2024</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Die Verwendung dieses APIs wird in AEM as a Cloud Service nicht unterstützt.</td>
     <td>31.10.2022</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>Diese API wird nicht mehr unterstützt. Verwenden Sie stattdessen die Builder von Apache Sling.</td>
     <td>31.10.2022</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>Verwenden Sie stattdessen org.apache.sling.xss.</td>
     <td>12.12.2023</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>Diese API wird nicht mehr unterstützt.</td>
     <td>07/10/2024</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>Diese API ist veraltet, da sie von commons-lang abhängt (was seit 2021 nicht mehr unterstützt wird).</td>
     <td>11/30/2025</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>Diese API wird nicht mehr unterstützt.</td>
     <td>01/01/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>Die Verwendung dieses APIs wird in AEM as a Cloud Service nicht unterstützt.</td>
     <td>2/13/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>Verwenden Sie stattdessen org.apache.sling.xss.</td>
     <td>12.12.2023</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extract<br>org.apache.tika.fork<br>org.apache.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.language.translate <br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chmParser m.accessor<br>org.apache.parser.chm.assertion<br>org.apache.parser.chm.coreOrg.apache.parser.chm.exceptionOrg.apache.tika.parser.chm.lzxXorg.apache.parser.codeOrg.apache.apache.apache.parser.ctake<br>org.apache.parser.parser.ctake<br>org.apache.parser.parser.dbfParserOrg.apache .tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwgOrg.apache.tika.parser.enviOrg.apache.tika.parser.parser.parser.org.apache.parser.parser<br>org.apache.tika.parser.epubOrg.apache.apache<br>parser.apache.tika<br>feed.<br>.org.apache.tika.parser.fontOrg.apache.tika.parser.parser al<br>.org.apache.parser.topic<br>org.apache.tika.parser.geo.topic.Gazetteerorg.apache.parser.geoinfoOrg.apache.parser.gribOrg.parser<br>.hdfParser.parser.org.apache.parser.htmlParserorg<br>parser.apache.parser.image.parser.org.apache.apache.<br>.parser.xache.parser.org.apache tika.parser.iptc<br>org.apache.tika.parser.isTabab<br>org.apache.tika.parser.iWorkOrg.apache.tika.parser.iwork.iwanaOrg.apache.tika.parser.jdbcOrg.apache.apache.parser.org.parser.apache.apache.apache.tika.parser.jpegOrgApache.apache.parserOrg.parserOrg.apache<br>org.apache tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.parser.microsoft.ooxmlorg.apache.tika.parser.parser.microsoft.tika.parser.microsoft.ooxml.xwpfMlXWPFapache.org.apache.org.apache.org.apache.org.ooxml.xwpf.ml2006org.apache.parser.microsoft.xmlParser g.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.nerOrg.apache.parser.ner.corenlpOrg.apache.apache.ner.grobidOrg.apache.tika.Ner.mitieOrg.apacheTikaParser.parser.Ner.nltkOrgApache.apache.tika.parser.ner.opennlpOrg.apache.tika.tika parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocrOrg.apache.tika.parser.org.apache.tika.parser.parser.parser.org.parser.parser.parser.org.apache.tika.parser.parser<br>org.apacheTikaParser.parserOrg.apache.tikaOrg.apache.tika.parser.prtOrg.apache.tika.parser Recognition<br>org.apache.tika.parser.Recognition.F<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.Sentiment CD<br>org.apache.parser.strings<br>tikaorg.apache.parser.txtOrg.apache.tika.parser.utilsOrg.apache.tika.parser.videoOrg.apache.tika.parser.parser.utilsOrg.apache.apache.parser.xmlParser.org.apache.apache.<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>.tika.utilsorg.apache.org.apache.org.apache.org.aptika.org.apache.org.apache</td>
     <td>Diese Version von Apache Tika ist veraltet und wird daher aus Cloud Service entfernt. Wechseln Sie zu einer neueren Version von Apache Tika.</td>
     <td>4/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
     <td>Verwenden Sie stattdessen die offizielle Servlet-API für die Verarbeitung von Datei-Uploads.</td>
     <td>2/6/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.cq.smartContent</td>
     <td>Diese API wird nicht mehr unterstützt und soll entfernt werden.</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>openNLP.tools.chunker<br>openNLP.tools.dictionary<br>openNLP.tools.dictionary.serializer.<br>openNLP.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.Quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>openNLP.tools.NameFind<br>OpenNLP.tools.ngram<br>OpenNLP.tools<br>openLP.tools.Tokenize<br>OpenNP .tools.tokenize.lang<br>OpenLP.tools.util<br>OpenLP.tools.util.<br>OpenLP.tools.util.Ext<br>OpenLP.tools.util.FeatureGen<br>OpenLP.Tools.util.Model</td>
     <td>Diese Version der OpenNLP-Bibliothek wird nicht mehr unterstützt. Verwenden Sie Ihre eigene Version von OpenNLP.</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 befindet sich im Wartungsmodus. Stattdessen sollte Commons Lang 3 verwendet werden. <a href="#apache.commons">Siehe die folgenden Hinweise zur Entfernung.</a></td>
-    <td>4/30/2021</td>
-    <td>3/31/2027 (vorläufig)</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 befindet sich im Wartungsmodus. Stattdessen sollte Commons Collections 4 verwendet werden. <a href="#apache.commons">Siehe die folgenden Hinweise zur Entfernung.</a></td>
-    <td>4/30/2021</td>
-    <td>3/31/2027 (vorläufig)</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>Die Apache Johnzon-Implementierung von <a href="https://johnzon.apache.org/index.html">javax.json</a> wird empfohlen und sollte verwendet werden. </td>
-    <td>4/30/2021</td>
-    <td>3/31/2027 (vorläufig)</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.commons.predicate</td>
     <td>Diese API wird nicht mehr unterstützt. Verwenden Sie stattdessen com.day.cq.commons.predicates.</td>
     <td>6/1/2024</td>
-    <td>3/31/2027 (vorläufig)</td>
+    <td>3/31/2027</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 befindet sich im Wartungsmodus. Stattdessen sollte Commons Lang 3 verwendet werden. <a href="#apache.commons">Siehe die folgenden Hinweise zur Entfernung.</a></td>
+    <td>4/30/2021</td>
+    <td>12/31/2027 (vorläufig)</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 befindet sich im Wartungsmodus. Stattdessen sollte Commons Collections 4 verwendet werden. <a href="#apache.commons">Siehe die folgenden Hinweise zur Entfernung.</a></td>
+    <td>4/30/2021</td>
+    <td>12/31/2027 (vorläufig)</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>Die Apache Johnzon-Implementierung von <a href="https://johnzon.apache.org/index.html">javax.json</a> wird empfohlen und sollte verwendet werden. </td>
+    <td>4/30/2021</td>
+    <td>12/31/2027 (vorläufig)</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
