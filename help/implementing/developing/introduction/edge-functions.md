@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 21f4115d09e6dc804a69ecc012a2c654794f39ad
+source-git-commit: db458670dfc8e216d9f7f54e6017e75439101645
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1902'
 ht-degree: 2%
 
 ---
@@ -109,7 +109,7 @@ Java-Stack-Umgebungen verfügen über 1 Edge-Funktion und Edge Delivery Services
 | `functions` | Liste der Kantenfunktionen, jeweils gekennzeichnet durch eine `name`. Aus Gründen der Abwärtskompatibilität wird `services` ebenfalls akzeptiert, aber `functions` ist der bevorzugte Schlüssel. Die Verwendung von beiden in derselben Datei ist nicht zulässig. |
 | `configs` | Schlüssel/Wert-Paare, die den Edge-Funktionen einer Umgebung als Umgebungsvariablen bereitgestellt werden. |
 | `secrets` | Schlüssel/Wert-Paare, die auf Cloud Manager-Geheimnisse verweisen, in Bezug auf die Edge-Funktionen einer Umgebung |
-| `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüsselwertdaten mit Lese-/Schreibzugriff zur Laufzeit, die über alle Edge-Funktionen in einer Umgebung gemeinsam genutzt werden. |
+| `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüsselwertdaten mit Lese-/Schreibzugriff zur Laufzeit, die über alle Edge-Funktionen in einer Umgebung hinweg gemeinsam genutzt werden. |
 
 Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [&#x200B; Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
 
@@ -240,7 +240,18 @@ Detaillierte technische Anleitungen zum Konfigurieren des Caching-Verhaltens, zu
 
 ## Einschränkungen {#limitations}
 
-Jeder Edge-Funktionsaufruf wird innerhalb einer Sandbox mit Ressourcenbeschränkungen ausgeführt, die von der zugrunde liegenden Rechenplattform erzwungen werden.
+- Jeder Edge-Funktionsaufruf wird innerhalb einer Sandbox mit Ressourcenbeschränkungen ausgeführt, die von der zugrunde liegenden Rechenplattform erzwungen werden.
+
+- Die maximale Größe des erstellten Web-Assembly-Artefakts (wasm) beträgt 100 MB
+
+- Maximaler Speicherverbrauch beträgt 1 MB Byte-Stack, 128 MB Heap
+
+- Wichtige Informationen zur Ausführung der Edge-Funktion:
+   - Eine Ausführung wird nach 120s Wandzeit beendet
+   - Ausführungen werden mit 1 s Berechnung beendet (nicht Wandzeit)
+   - Die durchschnittliche Ausführungszeit der Edge-Funktion muss unter 100 ms liegen.
+
+- Siehe Einschränkungen in Bezug auf [Edge-Funktionskonfigurationsvariablen](#function-configuration), [Edge-](#function-secrets) und [Edge-Funktions-KV-Speicher](#function-kv-store).
 
 ### Maximal ausgehende Abrufaufrufe pro Aufruf {#max-fetch-calls}
 
@@ -305,6 +316,10 @@ const logLevel = config.get('LOG_LEVEL') || 'info';
 >- Der Konfigurationsspeicher hat immer den Namen `config_default`.
 >- Bei Schlüsselnamen wird zwischen Groß- und Kleinschreibung unterschieden.
 >- Der Konfigurationsspeicher wird für alle Edge-Funktionen in derselben Umgebung freigegeben.
+>- Der Konfigurationsspeicher wird über das globale Netzwerk des von Adobe verwalteten CDN repliziert
+>- Max. 500 Einträge
+>- Max. Größe für Name/Wert: 255 und 8.000 Zeichen
+
 
 ### Edge-Funktionsgeheimnis-Variablen {#function-secrets}
 
@@ -319,7 +334,7 @@ data:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
-      value: ${{ API_TOKEN_SECRET }}
+      value: ${{API_TOKEN_SECRET}}
 ```
 
 Abrufen von geheimen Daten im Funktionscode mithilfe des `SecretStoreManager` Helpers aus dem Textbaustein:
@@ -336,6 +351,8 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Bei Schlüsselnamen wird zwischen Groß- und Kleinschreibung unterschieden.
 >- Geheime Daten sind unveränderlich, sobald sie erstellt wurden.
 >- Der geheime Speicher wird für alle Edge-Funktionen in derselben Umgebung freigegeben.
+>- Der geheime Speicher wird über das globale Netzwerk des von Adobe verwalteten CDN repliziert
+>- Maximale Größe aller geheimen Daten: 64 KB
 
 ### Edge-Funktions-KV-Speicher {#function-kv-store}
 
@@ -371,6 +388,13 @@ await kv.put('visit-count', String(count + 1));
 >- Der KV-Speicher heißt immer `kv_default`.
 >- Der KV-Speicher ist zur Bereitstellungszeit leer; füllen Sie ihn zur Laufzeit über die [Fastly KV-Speicher-API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore). Deklarative Schlüssel/Wert-Einträge in `edgeFunctions.yaml` werden nicht unterstützt.
 >- Der KV-Speicher ist über alle Edge-Funktionen in derselben Umgebung verteilt.
+>- Der KV-Speicher wird über das globale Netzwerk des von Adobe verwalteten CDN repliziert
+>- KV-Speicher sorgen letztendlich für Konsistenz, was bedeutet, dass das Lesen eines Schlüssels unmittelbar nach dem Schreiben nicht unbedingt den aktualisierten Wert zurückgibt.
+>- KV-Schlüsselnamen sind maximal 1024 Byte UTF-8-Dateien
+>- KV-Eingangsgröße ist max. 25M
+>- KV-Speicher-Elemente haben eine Ratenbegrenzung von 1 Schreib pro Sekunde pro Element.
+>- Für KV-Speicherartikel-Batch-Anforderungen gilt eine Beschränkung von 100.000 Elementen pro Anforderung.
+
 
 ### Protokollierung {#logging}
 
