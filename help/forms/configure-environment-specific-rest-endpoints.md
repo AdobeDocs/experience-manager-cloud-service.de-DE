@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 40410875-96d0-4728-8cbd-b1e1dfa438c4
-source-git-commit: ee79ef0d9b1101a245ea918c8ce46d502e98fdb3
+source-git-commit: 8d60f09ffd3912f4a14df01baccf1c368a518a91
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 4%
@@ -107,7 +107,7 @@ Verwenden Sie diese Option, wenn Sie eine Paketkonfiguration wünschen, deren En
 
 Bei REST-Konfigurationen erstellen Sie normalerweise Umgebungsvariablen für die `serviceEndPoint`-, `userName`- und `password`-Eigenschaften und verweisen dann aus einer `OsgiConfigurationOverrideProvider` Konfigurationsdatei in Ihrem Projekt darauf.
 
-Das vollständige Verfahren finden Sie unter [Kontextabhängige Cloud-Konfigurationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
+Das vollständige Verfahren finden Sie unter [Kontextabhängige Cloud-Konfigurationen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
 
 ## Aktualisieren der Endpunkt-URL in der Produktion {#configure-endpoint-on-production}
 
@@ -148,5 +148,6 @@ Senden Sie dasselbe Formular aus der Staging- und Produktionsumgebung und bestä
 
 * [Konfigurieren eines adaptiven Formulars für die REST-Endpunkt-Übermittlungsaktion](/help/forms/configure-submit-action-restpoint.md)
 * [Konfigurieren von Datenquellen](/help/forms/configure-data-sources.md)
-* [Kontextsensitive Cloud-Konfigurationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
+* [Kontextsensitive Cloud-Konfigurationen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
 * [Übermittlungsaktion für adaptive Formulare](/help/forms/aem-forms-submit-action.md)
+
