@@ -4,15 +4,15 @@ description: Erfahren Sie, wie Sie Vorlagen von [!DNL Dynamic Media] mit einem W
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a9ce385329244aa4f79f3119506acf72ca6f4d6c
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 84%
+source-wordcount: '3558'
+ht-degree: 83%
 
 ---
 
 
-# [!DNL Dynamic Media]-Vorlagen{#dynamic-media-templates}
+# [!DNL Dynamic Media] verwalten{#dynamic-media-templates}
 
 Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mithilfe von [!DNL Dynamic Media]-Vorlagen in einem WYSIWYG-Vorlageneditor. Veröffentlichen Sie Ihre [!DNL Dynamic Media]-Vorlage und verwenden Sie sie in nachgelagerten Anwendungen. Eine [!DNL Dynamic Media]-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
 
@@ -290,7 +290,7 @@ Führen Sie diese Schritte aus, um den Parametern zum [!UICONTROL Ausblenden] (!
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Ebenen zu gruppieren.
 1. Führen Sie Schritt 3 und dann Schritt 4 im Abschnitt [**[!UICONTROL Vorschau und Veröffentlichung]**](#preview-and-publish-template-and-copy-template-deliver-url) aus, um Ihre Änderungen anzuzeigen.
 
-## Anzeigen der Vorlage in der Vorschau und Veröffentlichen der Vorlage zum Kopieren der Bereitstellungs-URL{#preview-and-publish-template-and-copy-template-deliver-url}
+## Vorschau anzeigen und Dynamic Media-Vorlage veröffentlichen, um die Versand-URL zu kopieren{#preview-and-publish-dynamic-media-template-and-copy-template-deliver-url}
 
 Führen Sie die folgenden Schritte aus, um die Vorlage in der Vorschau anzuzeigen und zu veröffentlichen und die Bereitstellungs-URL zu kopieren:
 
@@ -320,7 +320,7 @@ Führen Sie die folgenden Schritte aus, um die Bereitstellungs-URL der Vorlage z
 1. Fügen Sie diese URL in Ihre Browser-Registerkarte ein und sehen Sie sich Ihre Live-Vorlage an. Passen Sie die Vorlage in Echtzeit an, indem Sie den erforderlichen Parameterwert (Schlüsselwert) in der URL direkt aktualisieren, wie in [Schritt 2](#preview-and-publish-template-and-copy-template-deliver-url) des Abschnitts **Vorschau und Veröffentlichung** gezeigt.
 1. Verwenden Sie diese URL für das schnelle Merchandising Ihrer Produkte oder Services. Sie können diese URL für Ihre Kundschaft freigeben oder in Ihre Website oder eine nachgelagerte Drittanbieteranwendung integrieren, um das Banner anzuzeigen und Aktualisierungen daran in Echtzeit vorzunehmen, sodass die laufenden Angebote widergespiegelt werden.
 
-## Vornehmen von Aktualisierungen an der Vorlage in Echtzeit über die URL{#update-the-template-from-the-url}
+## Nehmen Sie Echtzeitaktualisierungen an der Dynamic Media-Vorlage über die URL vor{#update-the-template-from-the-url}
 
 Das direkte Bearbeiten von Parametern in der URL kann mühsam sein. Zur Vereinfachung können Sie wie folgt vorgehen:
 
@@ -333,7 +333,7 @@ Das direkte Bearbeiten von Parametern in der URL kann mühsam sein. Zur Vereinfa
 
 Fügen Sie diese aktualisierte URL in Ihren Browser ein, um die Änderungen anzuzeigen.
 
-## Bearbeiten der Vorlage{#edit-the-template}
+## Bearbeiten der Dynamic Media-Vorlage{#edit-the-template}
 
 Gehen Sie wie folgt vor, um die Vorlage zu bearbeiten:
 
@@ -342,7 +342,7 @@ Gehen Sie wie folgt vor, um die Vorlage zu bearbeiten:
 3. Wählen Sie die Vorlage aus.
 4. Klicken Sie auf **[!UICONTROL Vorlage bearbeiten]**. Auf der Vorlagenarbeitsfläche werden die Vorlage und die Liste aller zugehörigen Ebenen im Bedienfeld „Ebenen“ angezeigt. Bearbeiten Sie Ihre Vorlage gemäß Ihren Anforderungen.
 
-## Hinzufügen eines CTA-Links zu Ihrer Vorlagenebene{#add-CTA-in-dynamic-media-templates}
+## Fügen Sie einen Link für Call to action (CTA) zu Ihrer Dynamic Media-Vorlagenebene hinzu{#add-CTA-in-dynamic-media-templates}
 
 Verwandeln Sie eine Bild-, Text- oder Formebene Ihrer [!DNL Dynamic Media]-Vorlage in einen Hyperlink, indem Sie einen Link für Aktionsaufrufe hinzufügen, der Benutzende zu einer Zielseite weiterleitet.
 
