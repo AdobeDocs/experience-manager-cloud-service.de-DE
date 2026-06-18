@@ -4,10 +4,10 @@ description: Versionshinweise für Version 2025.9.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: b39198d9-97ca-4cf9-acd5-ff8c778ab386
-source-git-commit: 2e7072043a6b8e5dbaa5f9b6a0579de3d6509c85
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 90%
+source-wordcount: '2202'
+ht-degree: 89%
 
 ---
 
@@ -67,7 +67,7 @@ Verbessern der Lesbarkeit von Dynamic Media mit OpenAPI-URLs durch Verwendung vo
 >
 >Diese Funktion ist nur eingeschränkt verfügbar. Siehe diesen [Artikel](/help/assets/vanity-urls.md) um zu beginnen.
 
-### Neue Funktionen in Content Hub {#new-features-content-hub}
+### Neue Funktionen in Content Hub
 
 **Sammlungen als Favoriten markieren**
 
@@ -84,7 +84,7 @@ Content Hub-Administratoren können jetzt Sammlungen in Content Hub anheften, um
 
 <!--
 
-### New Features in Content Hub {#new-features-content-hub}
+### New Features in Content Hub
 
 **Mark Collections as Favourites**
 
@@ -96,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -167,7 +167,7 @@ Tage, an denen die Live-Schaltung geschieht, Live-Ereignisse stattfinden oder Sp
 >[!NOTE]
 >
 >Verfügbar als Haftungsfunktion am 25. September.
->Senden Sie eine E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com), um sie in Ihren Programmen zu aktivieren.
+>E-Mail an [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) senden, um es in Ihren Programmen zu aktivieren.
 
 ### Neue Version von AEM Developer Tools für Eclipse {#aem-develeper-tools-for-eclipse}
 

@@ -7,10 +7,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Verwendung von AEM-Workflows, Verwendung von Schritten zur Aufgabenzuweisung, Schritt zur Konvertierung in PDF/A, Schritt zur Generierung eines Datensatzdokuments, Verwendung von Workflows, Schritt zur Unterzeichnung eines Dokuments, Schritt zur Generierung einer gedruckten Ausgabe, Schritt zur Generierung einer nicht interaktiven PDF-Ausgabe
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '7415'
-ht-degree: 99%
+source-wordcount: '7593'
+ht-degree: 98%
 
 ---
 
@@ -250,7 +250,7 @@ Wenn Sie den Pfad eines Ordners angeben, z. B. Anhänge, werden alle Dateien, d
 
 **[!UICONTROL Gebietsschema]**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **[!UICONTROL Literal]** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **[!UICONTROL Variable]**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps „Zeichenfolge“ gespeichert ist. Definieren Sie den Gebietsschema-Code und speichern Sie den Wert für das Gebietsschema in einer Variablen. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
-## Schritt „DDX aufrufen“ {#invokeddx}
+## Schritt „DDX aufrufen“
 
 Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren Elemente Dokumentbausteine darstellen. Diese Bausteine umfassen PDF-Seiten, XDP-Dokumente sowie andere Elemente wie Kommentare, Lesezeichen und formatierten Text. DDX definiert eine Reihe von Vorgängen, die auf ein oder mehrere Eingabedokumente angewendet werden können, um ein oder mehrere Ausgabedokumente zu generieren. Eine einzelne DDX kann mit einer Reihe von Quelldokumenten verwendet werden. Sie können in einem AEM-Workflow den ***DDX-Schritt aufrufen***, um verschiedene Vorgänge wie Zusammenstellen/Aufteilen von Dokumenten oder Erstellen und Ändern von Acrobat und XFA Forms und andere auszuführen, die in der [DDX-Referenzdokumentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) beschrieben werden.
 
@@ -280,7 +280,7 @@ Dokumentbeschreibungs-XML (DDX) ist eine deklarative Auszeichnungssprache, deren
 
 ## Schritt „Formulardatenmodell(FDM)-Dienst aufrufen“ {#invoke-form-data-model-service-step}
 
-Sie können [[!DNL AEM Forms] -Datenintegration](data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Diese Datenquellen können ein Webservice, ein REST-Service, ein OData-Service und eine CRM-Lösung sein. Mit der [!DNL AEM Forms]-Datenintegration können Sie ein Formulardatenmodell (FDM) erstellen, das verschiedene Dienste umfasst, um Vorgänge zum Abrufen, Hinzufügen und Aktualisieren von Daten in der konfigurierten Datenbank durchzuführen. Sie können den **[!UICONTROL Schritt „Formulardatenmodell-Service aufrufen“]** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Services des FDM verwenden, um Daten aus unterschiedlichen Datenquellen abzurufen, sie zu aktualisieren oder hinzuzufügen.
+Sie können [[!DNL AEM Forms] -Datenintegration](data-integration.md) verwenden, um unterschiedliche Datenquellen zu konfigurieren und Verbindungen zu ihnen herzustellen. Bei diesen Datenquellen kann es sich um einen Webservice, einen REST-Service, einen OData-Service und eine CRM-Lösung handeln. [!DNL AEM Forms] Mit der -Datenintegration können Sie ein Formulardatenmodell (FDM) erstellen, das verschiedene Services umfasst, um Vorgänge zum Abrufen von Daten, Hinzufügen und Aktualisieren in der konfigurierten Datenbank durchzuführen. Sie können den **[!UICONTROL Schritt „Formulardatenmodell-Service aufrufen“]** verwenden, um ein Formulardatenmodell (FDM) zu wählen und die Services des FDM verwenden, um Daten aus unterschiedlichen Datenquellen abzurufen, sie zu aktualisieren oder hinzuzufügen.
 
 Um die Eingaben für die Felder des Schritts zu erläutern, werden die folgende Datenbanktabelle und JSON-Datei als Beispiel verwendet:
 
@@ -478,7 +478,7 @@ Generate a Non-Interactive PDF. It provides various customization options.
 
 Merges form data into a PDF form. You can import form data into a PDF form.
 
-### Invoke DDX step {#invokeddx}
+### Invoke DDX step
 
 Executes the DDX file on the specified map of input documents and returns the manipulated PDF documents.
 
@@ -563,10 +563,10 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 * **[!UICONTROL XCI-Datei auswählen mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularentwurfselemente verwendet werden. Sie können eine XCI-Datei relativ zur Payload, in einem absoluten Pfad oder mithilfe einer Variablen des Datentyps „Document“ beibehalten.
 
 * **[!UICONTROL Gebietsschema]**: Legt die Sprache fest, die zum Generieren des PDF-Dokuments verwendet wird. Wenn Sie einen Literalwert angeben, wählen Sie eine Sprache aus der Liste oder einen der folgenden Werte:
-   * **[!UICONTROL Server-Standard verwenden]**:
-(Standard) Verwenden Sie die auf dem Server [!DNL AEM Forms] konfigurierte Gebietsschema-Einstellung. Die Einstellung „Gebietsschema“ wird mit der Administrationskonsole konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+   * **[!UICONTROL So verwenden Sie den Server-]**:
+(Standard) Verwenden Sie die Einstellung „Gebietsschema“, die auf dem [!DNL AEM Forms]-Server konfiguriert ist. Die Einstellung „Gebietsschema“ wird mit der Administrationskonsole konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
-   * **[!UICONTROL So verwenden Sie einen benutzerdefinierten Wert]**: 
+   * **[!UICONTROL So verwenden Sie einen benutzerdefinierten Wert]**:
 Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie eine Zeichenfolgenvariable aus, die den Gebietsschema-Code enthält. Eine vollständige Liste der unterstützten Gebietsschemata finden Sie unter https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Kopien angibt, die für die Ausgabe generiert werden. Der Standardwert ist 1.
@@ -576,7 +576,7 @@ Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie 
    * **[!UICONTROL Duplex, kurze Kante]**: Verwenden Sie den zweiseitigen Druck mit Paginierung an kurzen Kanten.
    * **[!UICONTROL Simplex]**: Verwenden Sie den einseitigen Druck.
 
-## Schritt „Nicht interaktive PDF-Ausgabe generieren“ {#generatePDFdocuments}
+## Schritt „Nicht interaktive PDF-Ausgabe generieren“   {#generatePDFdocuments}
 
 1. Ziehen Sie den Workflow „Nicht-interaktive PDF-Ausgabe generieren“ unter die Registerkarte „Forms Workflow“ per Drag-and-Drop in den Sidekick.
 1. Doppelklicken Sie auf den hinzugefügten Workflow-Schritt, um die Komponente zu bearbeiten.

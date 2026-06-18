@@ -5,9 +5,9 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1944'
 ht-degree: 99%
 
 ---
@@ -55,7 +55,7 @@ Die Einstellungen für die E-Mail-Konfiguration finden Sie unter [Dokumentation 
 
 ![E-Mail-Dienst konfigurieren](/help/assets/assets/config-email-service.png)
 
-## Freigeben von Assets als Link {#sharelink}
+## Freigeben von Assets als Link
 
 Die Freigabe von Assets über einen Link ist eine praktische Methode, um die Ressourcen für externe Parteien, Marketing-Experten und andere [!DNL Experience Manager]-Benutzer verfügbar zu machen. Mit dieser Funktion können anonyme Benutzer auf die für sie freigegebenen Assets zugreifen und diese herunterladen. Beim Herunterladen von Assets über einen freigegebenen Link verwendet [!DNL Experience Manager Assets] einen asynchronen Service, der einen schnelleren und unterbrechungsfreien Download bietet. Die herunterzuladenden Assets werden im Hintergrund in eine Warteschlange in ZIP-Archiven mit angemessener Dateigröße aufgenommen. Bei großen Downloads wird der Download in mehrere Dateien mit einer Dateigröße von 100 GB gebündelt.
 
@@ -174,7 +174,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 
 
 <!--
-## Share assets as a link {#sharelink}
+## Share assets as a link
 
 To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to Experience Manager Assets.
 

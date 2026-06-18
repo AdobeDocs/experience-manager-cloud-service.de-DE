@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie ein oder mehrere Assets und deren Ausgabedars
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 41%
@@ -21,7 +21,7 @@ Sie können mit [!DNL Content Hub] einzelne oder mehrere Assets und ihre verfüg
 
 Siehe [Typen von in Content Hub verfügbaren Ausgabedarstellungen](#types-of-renditions).
 
-## Herunterladen von Assets und deren Ausgabedarstellungen {#download-asset-renditions}
+## Herunterladen von Assets und deren Ausgabedarstellungen
 
 Um ein oder mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führen Sie die folgenden Schritte aus:
 
@@ -64,7 +64,7 @@ Wenn **[!UICONTROL Dialogfeld „Assets herunterladen]** Asset-Lizenzen anzeigt,
 
 <!--
 
-## Download an asset and its renditions {#download-asset-renditions} 
+## Download an asset and its renditions
 
 To download an asset and its renditions, execute the following steps: 
 

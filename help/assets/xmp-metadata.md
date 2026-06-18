@@ -6,10 +6,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 99%
+source-wordcount: '1008'
+ht-degree: 90%
 
 ---
 
@@ -30,7 +30,7 @@ XMP bietet nicht nur universelle Metadatenkodierung, die in alle Dateiformate ei
 
 Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Programme, um Informationen über mehrere Dateiformate hinweg zu übergeben. Das [!DNL Assets]-Repository extrahiert die XMP-Metadaten und verwaltet damit den Inhaltslebenszyklus. Außerdem wird die Erstellung von Automatisierungs-Workflows ermöglicht.
 
-XMP standardisiert die Art, wie Metadaten definiert, erstellt und verarbeitet werden, indem ein Datenmodell, ein Speichermodell und Schemata bereitgestellt werden. Diese Grundlagen werden alle in diesem Abschnitt behandelt.
+XMP standardisiert die Definition, Erstellung und Verarbeitung von Metadaten durch Bereitstellung eines Datenmodells, eines Speichermodells und von Schemata. Alle diese Konzepte werden in diesem Abschnitt behandelt.
 
 Alle veralteten Metadaten aus EXIF, ID3 oder Microsoft Office werden automatisch in XMP übersetzt. Diese können erweitert werden, um kundenspezifische Metadatenschemata wie Produktkataloge zu unterstützen.
 
@@ -59,8 +59,8 @@ Das XMP-Standardformat ist erweiterbar, sodass Sie den XMP-Daten benutzerdefinie
 
 **Namespaces und Schemata**
 
-Ein XMP-Schema ist ein Set aus Eigenschaftsnamen in einem gemeinsamen XML-Namespace, der
-den Datentyp und beschreibende Informationen umfasst. Ein XMP-Schema wird durch die zugehörige XML-Namespace-URI identifiziert. Durch Verwendung von Namespaces werden Konflikte zwischen Eigenschaften in verschiedenen Schemata verhindert, die denselben Namen, aber eine andere Bedeutung haben.
+Ein XMP-Schema ist ein Satz von Eigenschaftsnamen in einem gemeinsamen XML-Namespace, der Folgendes enthält
+Der Datentyp und beschreibende Informationen. Ein XMP-Schema wird anhand seines XML-Namespace-URI identifiziert. Die Verwendung von Namespaces verhindert Konflikte zwischen Eigenschaften in verschiedenen Schemata, die denselben Namen, aber eine andere Bedeutung haben.
 
 Beispiel: Die Eigenschaft **Creator** in zwei unabhängig voneinander entwickelten Schemata kann einerseits für die Person stehen, die das Asset erstellt hat, oder andererseits für das Programm, von dem das Asset erstellt wurde (z. B. Adobe Photoshop).
 
@@ -79,8 +79,8 @@ Mit XMP können Sie die Eigenschaft `xml:lang` zu Texteigenschaften hinzufügen,
 
 ## XMP-Writeback zu Ausgabedarstellungen {#xmp-writeback-to-renditions}
 
-Die XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets.
-Wenn Sie die Metadaten für ein Asset aus [!DNL Assets] heraus ändern oder das Asset hochladen, werden die Änderungen zuerst im Metadaten-Knoten in der Asset-Hierarchie gespeichert. Mit der-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namespace `jcr` verwenden, d. h. eine Eigenschaft namens `dc:title` wird zurückgeschrieben, eine Eigenschaft namens `mytitle` jedoch nicht.
+Diese XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets.
+Wenn Sie die Metadaten für ein Asset aus [!DNL Assets] heraus ändern oder das Asset hochladen, werden die Änderungen zunächst im Metadatenknoten in der Asset-Hierarchie gespeichert. Mit der Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die `jcr` Namespace verwenden, d. h. eine Eigenschaft namens `dc:title` wird zurückgeschrieben, eine Eigenschaft namens `mytitle` jedoch nicht.
 
 Stellen Sie sich z. B. vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
@@ -94,7 +94,7 @@ In diesem Fall speichert [!DNL Assets] die Änderungen an der Eigenschaft **[!UI
 >
 >Die Writeback-Funktion ist in [!DNL Assets] nicht standardmäßig aktiviert. Erfahren Sie, wie Sie die [Metadaten-Writeback-Funktion aktivieren](#enable-xmp-writeback). MSM für digitale Assets funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben wird die Vererbung unterbrochen.
 
-### Aktivieren der XMP-Writeback-Funktion {#enable-xmp-writeback}
+### Aktivieren der XMP-Writeback-Funktion
 
 Der Workflow [!UICONTROL DAM-Metadaten-Writeback] wird zum Zurückschreiben der Metadaten eines Assets verwendet. Um das Writeback zu aktivieren, führen Sie eine der folgenden drei Methoden aus:
 
@@ -118,7 +118,7 @@ Um den Workflow auf die hochgeladenen Assets anzuwenden, fügen Sie den Workflow
 <!--
  Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-### Enable XMP writeback {#enable-xmp-writeback}
+### Enable XMP writeback
 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 

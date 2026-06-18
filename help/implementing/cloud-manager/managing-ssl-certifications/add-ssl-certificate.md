@@ -5,15 +5,15 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1013'
+ht-degree: 97%
 
 ---
 
 
-# Hinzufügen eines SSL-Zertifikats {#add-ssl-cert}
+# Hinzufügen eines SSL-Zertifikats
 
 Erfahren Sie, wie Sie mit Cloud Ihr eigenes SSL- oder ein von Adobe verwaltetes DV(Domain-Validierungs)-Zertifikat hinzufügen.
 
@@ -39,8 +39,8 @@ Nach dem [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementin
 
 * **Bei einem von Adobe verwalteten (DV) SSL-Zertifikat:**
    * Die Domain-Validierung erfolgt, sobald die benutzerdefinierte Domain in Cloud Manager hinzugefügt und verifiziert wurde.
-   * Jetzt müssen Sie [ein von Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](#add-adobe-managed-ssl-cert).
-Nachdem Sie dieses in Cloud Manager hinzugefügt haben, warten Sie, bis Adobe das DV-SSL-Zertifikat in Ihrem Namen ausstellt und installiert.
+   * Jetzt müssen Sie [ein in Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](#add-adobe-managed-ssl-cert).
+Warten Sie nach dem Hinzufügen zu Cloud Manager, bis Adobe das DV-SSL-Zertifikat in Ihrem Namen ausstellt und installiert hat.
    * Wenn das Zertifikat aktiv ist, kann Ihre benutzerdefinierte Domain verwendet werden.
 
 * **Bei einem kundenseitig verwalteten (OV/EV) Zertifikat:**
@@ -113,8 +113,8 @@ Benötigen Sie Hilfe, um sich für Ihre Domain zwischen einem von Adobe verwalte
 
 1. Wählen Sie im Dialogfeld **SSL-Zertifikat hinzufügen**, basierend auf Ihrem [vorliegenden Anwendungsfall](#which-ssl-to-add), die Option **Kundenseitig verwaltet (OV/EV)** aus.
 
-1. b. Geben Sie in das Feld **Zertifikatname** einen Namen für Ihr Zertifikat ein. 
-Dieses Feld dient nur zu Informationszwecken. Der Name kann so gewählt werden, dass Sie Ihr SSL-Zertifikat leicht finden können.
+1. Geben **im Feld** einen Namen für Ihr Zertifikat ein.
+Dieses Feld dient nur zu Informationszwecken und kann ein beliebiger Name sein, der Ihnen das einfache Referenzieren Ihres SSL-Zertifikats erleichtert.
 
 1. Kopieren Sie in die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** die erforderlichen Werte aus Ihrem OV- oder EV-SSL-Zertifikat und fügen Sie sie in die entsprechenden Felder im Dialogfeld ein.
 
@@ -157,7 +157,7 @@ Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/domain
 
 
 <!--
-## Add an SSL certificate {#add-ssl-cert}
+## Add an SSL certificate
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
