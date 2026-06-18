@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
+source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
 workflow-type: tm+mt
 source-wordcount: '3149'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -393,7 +393,7 @@ Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Sym
 
 >[!NOTE]
 >
->* Die **AEM-Erweiterung für Seiteneigenschaften** funktioniert nur für Seiten, nicht für Inhaltsfragmente.
+>* Die Schaltfläche **AEM** Seiteneigenschaften&#39; funktioniert nur für Seiten, nicht für Inhaltsfragmente.
 >* Die Schaltfläche wird nur angezeigt, wenn die Remote-Seite eine [Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` aufweist und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
 
 ### Zugreifen auf die Sites-Konsole {#sites-console}
