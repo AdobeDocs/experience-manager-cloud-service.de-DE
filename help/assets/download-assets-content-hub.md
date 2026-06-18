@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie ein oder mehrere Assets und deren Ausgabedars
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 41%
@@ -21,7 +21,7 @@ Sie können mit [!DNL Content Hub] einzelne oder mehrere Assets und ihre verfüg
 
 Siehe [Typen von in Content Hub verfügbaren Ausgabedarstellungen](#types-of-renditions).
 
-## Herunterladen von Assets und deren Ausgabedarstellungen {#download-asset-renditions}
+## Herunterladen von Assets und deren Ausgabedarstellungen
 
 Um ein oder mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führen Sie die folgenden Schritte aus:
 
@@ -35,7 +35,7 @@ Um ein oder mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führe
   Klicken Sie alternativ auf die Asset-Miniaturansicht und dann auf ![Herunterladen](/help/assets/assets/download-icon.svg), um die verfügbaren Ausgabedarstellungen auszuwählen und im Dialogfeld anzuzeigen, bevor Sie sie herunterladen. Sie können auch die Versand-URL für die Asset-Ausgabedarstellungen kopieren, wenn Sie zu den Asset-Eigenschaften navigieren und auf das Symbol Herunterladen klicken. Die Option zum Kopieren der Versand-URL ist nur verfügbar, wenn die Validierungszielgruppe des Assets [auf Versand eingestellt](/help/assets/approve-assets-content-hub.md#set-approval-target) ist.
 
 * So laden Sie mehrere Assets und ihre Ausgabedarstellungen herunter:
-   1. Wählen Sie die Assets aus![&#x200B; klicken Sie auf &#x200B;](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
+   1. Wählen Sie die Assets aus![ klicken Sie auf ](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
    1. Wählen Sie eine oder mehrere Ausgabedarstellungen aus, um sie als ZIP-Datei herunterzuladen. Wenn Sie **[!UICONTROL Intelligenter Zuschnitt]** und **[!UICONTROL Statische Ausgabedarstellungen]** auswählen, werden für jedes der ausgewählten Assets alle verfügbaren Ausgabedarstellungen heruntergeladen, sowohl die statischen als auch die mit intelligentem Zuschnitt.
    1. Optional: Deaktivieren Sie **[!UICONTROL Für jedes Asset einen separaten Ordner erstellen]**, um die ausgewählten Assets und ihre Ausgabedarstellungen als flache Hierarchie in einem Ordner in der ZIP-Datei herunterzuladen. Standardmäßig lädt [!DNL Content Hub] die ausgewählten Assets und ihre Ausgabedarstellungen in separaten Ordnern in einer ZIP-Datei herunter.
 
@@ -64,7 +64,7 @@ Wenn **[!UICONTROL Dialogfeld „Assets herunterladen]** Asset-Lizenzen anzeigt,
 
 <!--
 
-## Download an asset and its renditions {#download-asset-renditions} 
+## Download an asset and its renditions
 
 To download an asset and its renditions, execute the following steps: 
 

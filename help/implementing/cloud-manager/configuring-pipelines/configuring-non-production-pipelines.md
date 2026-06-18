@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 33%
+source-wordcount: '1759'
+ht-degree: 34%
 
 ---
 
@@ -24,7 +24,7 @@ Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/
 >
 >Nach der Ersteinrichtung können Sie die [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
-## Hinzufügen einer neuen produktionsfremden Pipeline {#adding-non-production-pipeline}
+## Hinzufügen einer neuen produktionsfremden Pipeline
 
 Nachdem Sie in der Benutzeroberfläche von Cloud Manager ein Programm eingerichtet und mindestens eine Umgebung erstellt haben, können Sie produktionsfremde Pipelines hinzufügen. Verwenden Sie diese Pipelines, um die Code-Qualität zu testen, bevor Sie sie in Produktionsumgebungen bereitstellen.
 
@@ -70,7 +70,7 @@ Wählen Sie auf der Registerkarte **Source** des Dialogfelds **Produktionsfremde
    Weitere Informationen zu den Pipeline-Typen finden Sie unter [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 
-### Ich verwende den Full-Stack-Code {#full-stack-code}
+### Ich verwende den Full-Stack-Code
 
 Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code-Builds bereit, die ein oder mehrere AEM-Server-Programme zusammen mit der HTTPD-/Dispatcher-Konfiguration enthalten.
 
@@ -161,7 +161,7 @@ The steps to complete the creation of your non-production, targeted deployment p
      > 
      >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-   * **Git-Verzweigung** - Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll. Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
+   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll. Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
    * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
 
 <!--
@@ -249,9 +249,9 @@ Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für 
 
 | Problem | Lösungsvorschläge |
 | --- | --- |
-| Buildergebnisse sind inkonsistent | ・ Deaktiviert die Zwischenspeicherung für betroffene Module.<br>・ Überprüfen des Plug-in-Verhaltens (insbesondere `exec`/`antrun` Plug-ins). |
-| Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Überprüfen Sie, ob die meisten Module häufig wechseln. |
-| Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb der Maven-Abhängigkeitsverfolgung liegen.<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
+| Buildergebnisse sind inkonsistent | ・ Deaktivierung der Zwischenspeicherung für betroffene Module.<br>・ Überprüfen des Plug-in-Verhaltens (insbesondere `exec`/`antrun`-Plug-ins). |
+| Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Prüfen Sie, ob die meisten Module häufig wechseln. |
+| Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb des Maven-Abhängigkeits-Trackings liegen<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
 
 Siehe [Hinzufügen einer produktionsfremden Pipeline](#adding-non-production-pipeline) um die intelligente Erstellung zu aktivieren.
 
@@ -266,7 +266,7 @@ Siehe [Hinzufügen einer produktionsfremden Pipeline](#adding-non-production-pip
 
 
 <!--
-## Add a non-production pipeline {#adding-non-production-pipeline}
+## Add a non-production pipeline
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
@@ -311,7 +311,7 @@ See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/int
 
 The steps to complete the creation of your non-production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
-### Full Stack Code {#full-stack-code}
+### Full Stack Code
 
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration.
 

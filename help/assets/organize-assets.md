@@ -6,9 +6,9 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '953'
 ht-degree: 93%
 
 ---
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 1. Select the **Enabled** check box to make the folder and its assets available only to a closed user group.  
 1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **Add item**. If necessary, add the realm. Click **OK** to save your changes.
 
-## Use tags to organize assets {#use-tags-to-organize-assets}
+## Use tags to organize assets
 
 You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
@@ -79,7 +79,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, die Asset
 * Erstellen Sie ein Verzeichnis mit Ordnern, die sich wahrscheinlich nicht ändern werden, damit Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Verarbeitungsprofile weiterhin.
 * Angenommen, ein Asset wurde bereits veröffentlicht. Dann verschieben Sie das Asset mit [!DNL Experience Manager] in einen anderen Ordner und veröffentlichen es von seinem neuen Speicherort erneut. Die ursprüngliche Position des veröffentlichten Assets sowie das neu veröffentlichte Asset sind weiterhin verfügbar. Das ursprünglich veröffentlichte Asset ist allerdings für [!DNL Experience Manager] *nicht mehr zugänglich*. Daher kann dessen Veröffentlichung nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
 
-## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
+## Organisieren von Assets mit Tags
 
 Das Hinzufügen von Tags zu Assets erleichtert deren Abruf während einer Suche, das Erstellen von Sammlungen mithilfe der Suchergebnisse, das Erhöhen des Suchrangs für einige Assets und das Anwenden von KI-Algorithmen von Adobe AI zur Asset-Erkennung.
 

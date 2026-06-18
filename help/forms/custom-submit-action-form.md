@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1900'
 ht-degree: 98%
 
 ---
@@ -25,7 +25,7 @@ Ein adaptives Formular stellt mehrere vordefinierte Sende-Aktionen zur Verfügun
 
 Sie können eine benutzerdefinierte Sende-Aktion erstellen, um Funktionen hinzuzufügen, die nicht in [vordefinierten Sende-Aktionen](configuring-submit-actions.md) enthalten sind oder nicht durch eine einzelne vordefinierte Sende-Aktion unterstützt werden. Beispielsweise das Senden von Daten an einen Workflow, das Speichern der Daten in einem Datenspeicher, das Senden von E-Mail-Benachrichtigungen an die Person, die das Formular sendet, und das Senden einer E-Mail an die Person, die für die Verarbeitung des gesendeten Formulars für Genehmigungen und Ablehnungen verantwortlich ist, über eine einzige Sende-Aktion.
 
-## XML-Datenformat {#xml-data-format}
+## XML-Datenformat
 
 Die XML-Daten werden mit dem Abfrageparameter **`jcr:data`** an das Servlet gesendet. Sende-Aktionen können zur Verarbeitung der Daten auf den Parameter zugreifen. Der folgende Code beschreibt das Format der XML-Daten. Die Felder, die an das Formularmodell gebunden sind, befinden sich im Bereich **`afBoundData`**. Nicht gebundene Felder befinden sich im `afUnoundData`Bereich. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
@@ -49,7 +49,7 @@ Die XML-Daten werden mit dem Abfrageparameter **`jcr:data`** an das Servlet gese
 </afData>
 ```
 
-### Aktionsfelder {#action-fields}
+### Aktionsfelder
 
 Eine Sende-Aktion kann dem gerenderten Formular-HTML (mit dem HTML-Tag [input](https://developer.mozilla.org/de/docs/Web/HTML/Element/Input)) verborgene Eingabefelder hinzufügen. Diese verborgenen Felder können Werte enthalten, die bei der Verarbeitung der Formularübermittlung benötigt werden. Wenn das Formular gesendet wird, werden diese Formularwerte als Abfrageparameter zurückgegeben, die die Sende-Aktion während der Verarbeitung der Übermittlung verwenden kann. Die Eingabefelder werden als Aktionsfelder bezeichnet.
 
@@ -57,7 +57,7 @@ Eine Sende-Aktion, die auch die für das Ausfüllen eines Formulars benötigte Z
 
 Ein Skript kann die Werte der Felder `startTime` und `endTime` bereitstellen, wenn das Formular ausgegeben bzw. bevor das Formular übermittelt wird. Das Skript der Sende-Aktion `post.jsp` kann dann mithilfe von Abfrageparametern auf diese Felder zugreifen und die für das Ausfüllen des Formulars benötigte Gesamtzeit berechnen.
 
-### Dateianhänge {#file-attachments}
+### Dateianhänge
 
 Sende-Aktionen können auch die Dateianhänge nutzen, die Sie mit der Komponente „Dateianhang“ hochladen. Skripts für Sende-Aktionen können mit der Sling-API-Klasse [RequestParameter](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html) auf diese Dateien zugreifen. Mit der Methode [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) der API lässt sich identifizieren, ob es sich beim Abfrageparameter um eine Datei oder ein Formularfeld handelt. Sie können in einer Sende-Aktion über die Abfrageparameter iterieren, um Dateianhang-Parameter zu identifizieren.
 
@@ -75,13 +75,13 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Wenn Sie Dateien an das adaptive Formular anhängen, validiert der Server die Dateianhänge nach der Übermittlung des adaptiven Formulars und gibt eine Fehlermeldung zurück, wenn eine der folgenden Bedingungen vorliegt:
 
-* Dateianhänge enthalten einen Dateinamen, der mit dem Zeichen (.) beginnt, die Zeichen \ / : * ?  &quot; &lt; > | ; % $ beinhaltet oder spezielle Dateinamen enthält, die für das Windows-Betriebssystem reserviert sind, wie `nul`, `prn`, `con`, `lpt` oder `com`.
+* Dateianhänge enthalten einen Dateinamen, der mit (.) beginnt, das Zeichen \ / : * ? &quot; &lt; > | ; % $ beinhaltet oder spezielle Dateinamen enthält, die für das Windows-Betriebssystem reserviert sind, wie `nul`, `prn`, `con`, `lpt` oder `com`.
 
 * Die Größe des Dateianhangs beträgt 0 Byte.
 
 * Das Format des Dateianhangs wird beim Konfigurieren der Komponente „Dateianhang“ in einem adaptiven Formular nicht im Abschnitt [Unterstützte Dateitypen](https://helpx.adobe.com/de/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) definiert.
 
-### Weiterleitungspfad und Umleitungs-URL {#forward-path-and-redirect-url}
+### Weiterleitungspfad und Umleitungs-URL
 
 Nach dem Ausführen der gewünschten Aktion leitet das Sende-Servlet die Abfrage an den Weiterleitungspfad weiter. Eine Aktion verwendet die setForwardPath-API, um den Weiterleitungspfad im Guide Submit-Servlet festzulegen.
 
@@ -93,7 +93,7 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlung
 >
 >Sie können eine benutzerdefinierte Sende-Aktion schreiben, die eine Abfrage an eine Ressource oder ein Servlet weiterleitet. Adobe empfiehlt, dass das Skript, das das Ressourcen-Handling für den Weiterleitungspfad durchführt, die Abfrage an die Umleitungs-URL weiterleitet, wenn die Verarbeitung abgeschlossen ist.
 
-## Sende-Aktion {#submit-action}
+## Sende-Aktion
 
 Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgendes enthält:
 
@@ -111,7 +111,7 @@ Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgende
 
    * **submitService** vom Typ „String“. Weitere Informationen finden Sie unter [Planen der Übermittlung adaptiver Formulare für benutzerdefinierte Aktionen](#schedule-adaptive-form-submission).
 
-## Erstellen einer benutzerdefinierten Sende-Aktion {#creating-a-custom-submit-action}
+## Erstellen einer benutzerdefinierten Sende-Aktion
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ The flowchart depicts the workflow for a Submit Action that is triggered when yo
 
 ![Flowchart depicting the workflow for Submit Action](assets/diagram1.png)
 
-### XML data format {#xml-data-format}
+### XML data format
 
 The XML data is sent to the servlet using the **`jcr:data`** request parameter. Submit Actions can access the parameter to process the data. The following code describes the format of the XML data. The fields that are bound to the Form model appear in the **`afBoundData`** section. Unbound fields appear in the `afUnoundData`section. For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).
 
@@ -256,7 +256,7 @@ The XML data is sent to the servlet using the **`jcr:data`** request parameter. 
 </afData>
 ```
 
-### Action fields {#action-fields}
+### Action fields
 
 A Submit Action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. These hidden fields can contain values that it needs while processing form submission. When submitting the form, these field values are posted back as request parameters that the Submit Action can use during submission handling. The input fields are called action fields.
 
@@ -264,7 +264,7 @@ For example, a Submit Action that also captures the time taken to fill a form ca
 
 A script can supply the values of the `startTime` and `endTime` fields when the form renders and before form submission, respectively. The Submit Action script `post.jsp` can then access these fields using request parameters and compute the total time required to fill the form.
 
-### File attachments {#file-attachments}
+### File attachments
 
 Submit Actions can also use the file attachments you upload using the File Attachment component. Submit Action scripts can access these files using the sling [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). The [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) method of the API helps identify whether the request parameter is a file or a form field. You can iterate over the Request parameters in a Submit Action to identify File Attachment parameters.
 
@@ -280,7 +280,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 }
 ```
 
-### Forward path and Redirect URL {#forward-path-and-redirect-url}
+### Forward path and Redirect URL
 
 After performing the required action, the Submit servlet forwards the request to the forward path. An action uses the setForwardPath API to set the forward path in the Guide Submit servlet.
 
@@ -292,7 +292,7 @@ If the action does not provide a forward path, the Submit servlet redirects the 
 >
 >You can write a custom Submit Action that forwards a request to a resource or servlet. Adobe recommends that the script that performs resource handling for the forward path redirect the request to the Redirect URL when the processing completes.
 
-## Submit Action {#submit-action}
+## Submit Action
 
 A Submit Action is a sling:Folder that includes the following:
 
@@ -305,7 +305,7 @@ A Submit Action is a sling:Folder that includes the following:
 
     * **jcr:description** of type String. The value of this property is displayed in the Submit Action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location **/libs/fd/af/components/guidesubmittype**.
 
-## Creating a custom Submit Action {#creating-a-custom-submit-action}
+## Creating a custom Submit Action
 
 Perform the following steps to create a custom Submit Action that saves the data in the CRX repository and then sends you an email. The Adaptive Form contains the OOTB Submit Action Store Content (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, configure the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
 

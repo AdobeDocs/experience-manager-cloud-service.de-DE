@@ -5,7 +5,7 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 8e71e63b09cc7346043379bddfb855231bbebb93
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 87%
@@ -62,7 +62,7 @@ Führen Sie diese Schritte aus, um [!DNL Dynamic Media with OpenAPI] für Ihre C
 
 1. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Aktivieren]**, um den Aktivierungsprozess für [!DNL Dynamic Media with OpenAPI] zu starten. Nach erfolgreicher Aktivierung zeigt Cloud Manager die folgenden Statusaktualisierungen an:
    1. **[!UICONTROL Umgebungsschritt]**: **[!UICONTROL Wird ausgeführt]**
-   1. ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI-Funktionen sind aktiviert &#x200B;]**
+   1. ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen sind aktiviert ]**
 
       ![Aktivierung erfolgreich](/help/assets/assets/activation-successful.png){width="700"}
 
@@ -71,7 +71,7 @@ Führen Sie diese Schritte aus, um [!DNL Dynamic Media with OpenAPI] für Ihre C
 Wenn die Aktivierung fehlschlägt, zeigt Cloud Manager die folgenden Statusaktualisierungen an:
 
 * **[!UICONTROL Umgebungsschritt]**: **[!UICONTROL DM mit OpenAPI fehlgeschlagen]**
-* ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; OpenAPI-Funktionen konnten nicht aktiviert werden &#x200B;]**
+* ![DM aktiviert](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  OpenAPI-Funktionen konnten nicht aktiviert werden ]**
 
   ![Aktivierung wiederholen](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700"}
 
@@ -112,7 +112,7 @@ Führen Sie die folgenden Schritte aus:
 
 Unter [Aktivieren [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) finden Sie Informationen darüber, wie Sie die Funktionen von [!DNL Dynamic Media] mit OpenAPI-Funktionen in Ihrer Umgebung nutzen können.
 
-### Zugriff auf Dynamic Media-APIs {#access-dynamic-media-apis}
+### Zugriff auf Dynamic Media-APIs
 
 Nach [Aktivieren von Dynamic Media mit OpenAPI](#activate-dynamic-media-with-openapi) wird eine `delivery` erstellt. Klicken Sie auf die Versandinstanz, um das `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` Produktprofil anzuzeigen. Für das Produktprofil ist bereits **AEM Dynamic Media Enable API Services** standardmäßig aktiviert.
 
@@ -122,7 +122,7 @@ Erstellen Sie ein neues Projekt in [Adobe Developer Console](https://developer.a
 
 ![Dynamic Media-APIs](/help/assets/assets/dynamic-media-apis.png)
 
-Sie können entweder [Server-zu-Server-Authentifizierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) oder Benutzerauthentifizierung mit [Web-App-](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app)- oder [SPA-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-single-page-app) verwenden.
+Sie können entweder [Server-zu-Server-Authentifizierung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) oder Benutzerauthentifizierung mit [Web-App-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app)- oder [SPA-Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-single-page-app) verwenden.
 
 Bevor Sie auf die API zugreifen, müssen Sie zum Produktprofil `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` hinzugefügt werden.
 
@@ -160,7 +160,7 @@ Führen Sie die folgenden Schritte aus, um ein neues [!DNL Dynamic Media]-Untern
 
    ![Informationen zum Dynamic Media-Unternehmen](/help/assets/assets/dm-company-information.png)
 
-1. Überprüfen Sie als Dynamic Media-Admin Ihr Postfach auf eine Begrüßungs-E-Mail, die eine Liste von Schritten zum [&#x200B; Konfigurieren des [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)-Unternehmens in Ihrer [!DNL AEM] Cloud Service-Umgebung enthält.
+1. Überprüfen Sie als Dynamic Media-Admin Ihr Postfach auf eine Begrüßungs-E-Mail, die eine Liste von Schritten zum [ Konfigurieren des [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media)-Unternehmens in Ihrer [!DNL AEM] Cloud Service-Umgebung enthält.
 
    ![Begrüßungs-E-Mail](/help/assets/assets/welcome-email.png)
 
@@ -188,7 +188,7 @@ AEM as a Cloud Service verfügt zwar über eine Standard-Domain, Sie können sie
 Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie den Konfigurationsprozess starten:
 
 1. [Sie haben Zugriff auf Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. [&#x200B; [!DNL Dynamic Media with OpenAPI] ist bereits in Ihrer Umgebung aktiviert](#activate-dynamic-media-with-openapi).
+1. [ [!DNL Dynamic Media with OpenAPI] ist bereits in Ihrer Umgebung aktiviert](#activate-dynamic-media-with-openapi).
 1. [!DNL Dynamic Media with OpenAPI] ist mit dem Status „Bereit“ aktiviert.
 1. Es liegt ein EV- oder OV-Zertifikat für die Domain vor, die für die Bereitstellungsebene verwendet werden soll. Weitere Informationen finden Sie in der [Einführung in SSL-Zertifikate](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates).
 
@@ -208,7 +208,7 @@ Führen Sie die folgenden Schritte in Cloud Manager aus, um eine benutzerdefinie
 
    ![Konfigurieren des CDN-Bereitstellungsstatus](/help/assets/assets/cdn-configuration-deployment-status.png)
 
-1. Klicken Sie auf „Weitere Optionen“ (![weitere Optionen](/help/assets/assets/three-dots.svg)) und wählen Sie **[!UICONTROL Bereitschaft zur Live-Schaltung]** aus, um das gleichnamige Dialogfeld **&#x200B;**&#x200B;anzuzeigen.
+1. Klicken Sie auf „Weitere Optionen“ (![weitere Optionen](/help/assets/assets/three-dots.svg)) und wählen Sie **[!UICONTROL Bereitschaft zur Live-Schaltung]** aus, um das gleichnamige Dialogfeld **** anzuzeigen.
 
    ![Option „Bereitschaft zur Live-Schaltung“](/help/assets/assets/go-live-readiness-option.png)
 
@@ -232,9 +232,9 @@ Create an API key to access [!DNL Dynamic Media] with OpenAPIs and the delivery 
 
 To start the API keys onboarding process, ensure you have:
 
-1. [Access to Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
-1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
+1. [Access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#create-adobe-developer-console-adc-project).
 
 #### Onboard the API keys using [!DNL AEM Dynamic Media] API card {#onboarding-api-keys-using-aem-dynamic-media-api-card}
 
@@ -243,7 +243,7 @@ Use the [Adobe Developer Console](https://developer.adobe.com/developer-console/
 1. [Access Dynamic Media APIs](#access-dynamic-media-apis)
 1. [Access Delivery tier backed Asset Selector](#access-delivery-tier-backed-asset-selector)
 
-#### Create an API key to access [!DNL Dynamic Media] with OpenAPIs {#access-dynamic-media-apis}
+#### Create an API key to access [!DNL Dynamic Media] with OpenAPIs
 
 Execute the following steps to create an API key to access [!DNL Dynamic Media] with OpenAPIs:
 
@@ -257,7 +257,7 @@ Execute the following steps to create an API key to access [!DNL Dynamic Media] 
    >
    >This delivery instance is common for [!DNL Content Hub] and [!DNL Dynamic Media] with OpenAPI capabilities.
 
-1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
+1. Navigate to the [Adobe Developer console](https://developer.adobe.com/console) and [create a new project](https://developer.adobe.com/dep/guides/dev-console/create-project/). See [Invoke OpenAPI-based AEM APIs for server to server authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) to learn about creating a new project.
 1. Select **[!UICONTROL AEM Dynamic Media API]** to access to the [!DNL Dynamic Media with OpenAPI capabilities] and click **[!UICONTROL Next]**.
 ![adobe developer console](/help/assets/assets/adobe-developer-console.png)
 1. Select **[!UICONTROL Server-to-Server Authentication]** and click **[!UICONTROL Next]**. See [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) to learn more about this authentication type.
@@ -281,7 +281,7 @@ headers: {
       'X-Api-Key': 'YOUR_API_KEY_HERE'
     `},
 ```
-See [Search Assets API](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
+See [Search Assets API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/search-assets-api#search-assets-api-header) for more information.
 
 ### Access Delivery tier backed Asset Selector {#access-delivery-tier-backed-asset-selector}
 
