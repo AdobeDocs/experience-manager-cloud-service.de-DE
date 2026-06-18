@@ -29,7 +29,7 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 ## Künftige Funktionen {#upcoming-features}
 
 * Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt, um auf die AEM Sites-Konsole zuzugreifen.
-   * Dadurch werden die Funktionen der ehemaligen **AEM Site Admin-Erweiterung** Erweiterung[ nativ ](/help/implementing/universal-editor/extending.md) universellen Editor integriert.
+   * Dadurch werden die Funktionen der ehemaligen **AEM Site Admin-Erweiterung** Erweiterung[&#x200B; nativ &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor integriert.
    * Die Schaltfläche öffnet die aktuelle AEM-Seite in der [Sites-Konsole](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) oder der [Experience Fragments-](/help/sites-cloud/authoring/fragments/experience-fragments.md) für `/content/experience-fragments` Pfade.
    * Die Schaltfläche ist für DAM-Pfade (`/content/dam`) ausgeblendet und wenn keine eindeutige AEM-Seite aus den aktuellen bearbeitbaren Elementen ermittelt werden kann.
 * Tastaturbefehle mit einzelnen Zeichen funktionieren jetzt besser mit Barrierefreiheitstechnologien.
