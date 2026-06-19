@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3402'
 ht-degree: 80%
 
 ---
@@ -52,7 +52,7 @@ Sie können in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/cont
 
 Wenn Sie **Inhaltsfragmente** auswählen, wird die Konsole in einer neuen Registerkarte geöffnet.
 
-![Inhaltsfragmentkonsole – Übersicht](assets/cf-managing-console-overview.png)
+![Inhaltsfragmentkonsole – Übersicht](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-overview.png)
 
 Hier können Sie sehen, dass es drei Hauptbereiche gibt:
 
@@ -104,7 +104,7 @@ Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von 
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Ordner**
    * Stellt einen Link zum Öffnen des Ordners in der Konsole bereit.
-Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
+Wenn Sie den Mauszeiger über den Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 * **Status**
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
@@ -130,17 +130,17 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 * **Referenziert von**:
    * Stellt einen Link bereit, der ein Dialogfeld öffnet, in dem alle [übergeordneten Verweise](#parent-references-fragment) dieses Fragments aufgelistet werden, einschließlich der Referenzierung von Inhaltsfragmenten, Experience Fragments und Seiten. Um eine bestimmte Referenz zu öffnen, klicken Sie im Dialogfeld auf **Titel**.
 
-     ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cf-managing-console-references-dialog.png)
+     ![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 * **Sprache**: Angabe jedweder [Sprachkopie](#language-copies-fragment)
 
    * Gibt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtzahl der mit dem Inhaltsfragment verknüpften Gebietsschemata/[Sprachkopien](#language-copies-fragment) an.
 
-     ![Inhaltsfragmentkonsole – Sprachindikator](assets/cf-managing-console-language-indicator.png)
+     ![Inhaltsfragmentkonsole – Sprachindikator](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-language-indicator.png)
 
    * Wählen Sie die Anzahl aus, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf den **Titel** im Dialogfeld.
 
-     ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
+     ![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 * **Workflows**
 
@@ -148,11 +148,11 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
    * Wählen Sie das Symbol für ein bestimmtes Fragment aus:
 
-     ![Inhaltsfragmentkonsole – Symbol „Workflows“](assets/cf-managing-console-workflows-icon.png)
+     ![Inhaltsfragmentkonsole – Symbol „Workflows“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-icon.png)
 
      So öffnen Sie ein Dialogfeld mit detaillierten Informationen zu den Workflows (frühere und aktuelle) für das Fragment:
 
-     ![Inhaltsfragmentkonsole – Dialogfeld „Workflows“](assets/cf-managing-console-workflows-dialog.png)
+     ![Inhaltsfragmentkonsole – Dialogfeld „Workflows“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-dialog.png)
 
 ## Aktionen {#actions}
 
@@ -182,7 +182,7 @@ Bestimmte Aktionen sind über die Konsole verfügbar, ohne ein bestimmtes Inhalt
 
 Wenn Sie ein bestimmtes Fragment auswählen, wird eine Symbolleiste geöffnet, die die verfügbaren Aktionen für dieses Fragment anzeigt. Sie können auch mehrere Fragmente auswählen. Die Auswahl der Aktionen wird dann entsprechend angepasst.
 
-![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](assets/cf-managing-console-fragment-toolbar.png)
+![Konsole „Inhaltsfragmente“ – Symbolleiste für ein ausgewähltes Fragment](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fragment-toolbar.png)
 
 * **[In neuem Editor öffnen](#editing-the-content-of-your-fragment)**
 * **[Veröffentlichen](#publishing-and-previewing-a-fragment)** (und **[Veröffentlichung rückgängig machen](#unpublishing-a-fragment)**)
@@ -239,7 +239,7 @@ So erstellen Sie ein Inhaltsfragment:
    * **Name** – Dies wird basierend auf dem **Titel** automatisch ausgefüllt, kann jedoch bei Bedarf bearbeitet werden.
    * **Beschreibung**
 
-   ![Dialogfeld „Neues Inhaltsfragment“](assets/cf-managing-new-cf-dialog.png)
+   ![Dialogfeld „Neues Inhaltsfragment“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-new-cf-dialog.png)
 
 1. Wählen Sie **Erstellen** oder, um Ihre Definition beizubehalten, **Erstellen und öffnen** aus.
 
@@ -271,7 +271,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 1. Der Fragmenteditor wird geöffnet. Wählen Sie Ihre erforderliche **Variante** aus und nehmen Sie Ihre Änderungen nach Bedarf vor (sie werden automatisch gespeichert):
 
-   ![Fragmenteditor](assets/cf-managing-editor.png)
+   ![Fragmenteditor](/help/sites-cloud/administering/content-fragments/assets/cf-managing-editor.png)
 
 ## Kopieren eines Inhaltsfragments {#copy-a-content-fragment}
 
@@ -385,7 +385,7 @@ So verwalten Sie die Tags:
 1. Wählen Sie in der Symbolleiste **Tags verwalten** aus.
 1. Verwenden Sie die Tag-Auswahl, um Tags auszuwählen, die angewendet oder entfernt werden sollen:
 
-   ![Verwalten von Tags](assets/cf-managing-manage-tags.png)
+   ![Verwalten von Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-manage-tags.png)
 
 1. **Speichern** Sie die Aktualisierungen. Hierdurch kehren Sie zur Konsole zurück.
 
@@ -458,7 +458,7 @@ Nach Auswahl der Aktion **Veröffentlichen**:
 
 1. Geben Sie alle Details im Dialogfeld an. Beispiel für eine geplante Veröffentlichungsanfrage:
 
-   ![Dialogfeld „Veröffentlichen“](assets/cf-managing-publish-dialog.png)
+   ![Dialogfeld „Veröffentlichen“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
@@ -486,7 +486,7 @@ Wählen Sie in beiden Fällen **Veröffentlichung rückgängig machen** in der S
 
 Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den gewünschten Service auswählen:
 
-![Dialogfeld „Veröffentlichung rückgängig machen“](assets/cf-managing-unpublish-dialog.png)
+![Dialogfeld „Veröffentlichung rückgängig machen“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
 >
@@ -500,7 +500,7 @@ Wenn das entsprechende Dialogfeld geöffnet wird, können Sie den gewünschten S
 
 Die Aktion **Ersetzen** ist verfügbar (in der oberen Symbolleiste), um den angegebenen Text in den ausgewählten Inhaltsfragmenten zu suchen und zu ersetzen.
 
-![Suchen und Ersetzen](assets/cf-managing-find-replace.png)
+![Suchen und Ersetzen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
 Vor dem Ersetzen werden die Validierungskriterien überprüft und Sie werden über etwaige Konflikte informiert, sodass Sie die Ersatz-Zeichenfolge ändern oder nur die validierten Instanzen ersetzen können.
 
@@ -510,7 +510,7 @@ Vor dem Ersetzen werden die Validierungskriterien überprüft und Sie werden üb
 >
 >Wenn Sie mehr als 20 Inhaltsfragmente auswählen, wird die Nachricht **Suchen und Ersetzen ist nicht möglich** angezeigt.
 
-![Ersetzen bestätigen](assets/cf-managing-confirm-replace.png)
+![Ersetzen bestätigen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
 ## Auschecken und Einchecken {#check-out-and-check-in}
 
@@ -594,7 +594,7 @@ Beide stellen einen Link bereit, der ein Dialogfeld öffnet, in dem alle überge
 
 Beispiel:
 
-![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](assets/cf-managing-console-references-dialog.png)
+![Inhaltsfragmentkonsole – Dialogfeld „Verweise“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 ## Suchen von Sprachkopien Ihres Fragments {#language-copies-fragment}
 
@@ -605,21 +605,21 @@ Details zu Sprachkopien sind abrufbar über:
 
 Das Symbol gibt das Gebietsschema des Inhaltsfragments zusammen mit der Gesamtzahl der mit dem Inhaltsfragment verknüpften Gebietsschemata/Sprachkopien an. Beispielsweise in der Konsole:
 
-![Inhaltsfragmentkonsole – Sprachindikator](assets/cfc-console-language-indicator.png)
+![Inhaltsfragmentkonsole – Sprachindikator](/help/sites-cloud/administering/content-fragments/assets/cfc-console-language-indicator.png)
 
 Wählen Sie die Anzahl aus, um ein Dialogfeld zu öffnen, in dem alle Sprachkopien angezeigt werden. Um eine bestimmte Sprachkopie zu öffnen, klicken Sie auf den **Titel** im Dialogfeld.
 
-![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](assets/cf-managing-console-languages-dialog.png)
+![Inhaltsfragmentkonsole – Dialogfeld „Sprache“](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 ## Auswählen der Spalten, die in der Konsole angezeigt werden {#select-columns-console}
 
 Wie bei anderen Konsolen können Sie konfigurieren, welche Spalten sichtbar und für eine Aktion verfügbar sind:
 
-![Inhaltsfragmentkonsole – Spaltenkonfiguration](assets/cf-managing-console-column-icon.png)
+![Inhaltsfragmentkonsole – Spaltenkonfiguration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeigen können:
 
-![Inhaltsfragmentkonsole – Spaltenkonfiguration](assets/cf-managing-console-column-selection.png)
+![Inhaltsfragmentkonsole – Spaltenkonfiguration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-selection.png)
 
 ## Filtern von Fragmenten {#filtering-fragments}
 
@@ -634,7 +634,7 @@ Der Panel zum Filtern bietet folgende Optionen:
 
 Nach der Auswahl werden die Optionen **Filtern nach** angezeigt (unter dem Suchfeld). Sie können von dort aus abgewählt werden. Beispiel:
 
-![Inhaltsfragmentkonsole – Filtern](assets/cf-managing-console-filter.png)
+![Inhaltsfragmentkonsole – Filtern](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Schnelles Filtern {#fast-filtering}
 
@@ -646,22 +646,22 @@ Wählen Sie zum Beispiel **Veröffentlicht** in der Spalte **Status**:
 >
 >Die Schnellfilterung wird nur für die Spalten **Modell**, **Status**, **Geändert von**, **Tags** und **Veröffentlicht von** unterstützt.
 
-![Inhaltsfragmentkonsole – Filtern](assets/cf-managing-console-fast-filter-overview.png)
+![Inhaltsfragmentkonsole – Filtern](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-overview.png)
 
 Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entsprechend gefiltert:
 
-![Konsole „Inhaltsfragmente“ – Filtern](assets/cf-managing-console-fast-filter-criteria.png)
+![Konsole „Inhaltsfragmente“ – Filtern](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-criteria.png)
 
 ## Suchen von Fragmenten {#searching-fragments}
 
 Das Suchfeld unterstützt die Volltextsuche. Geben Sie Ihre Suchbegriffe in das Suchfeld ein:
 
-![Konsole „Inhaltsfragmente“ – Suchen](assets/cf-managing-console-search-specification.png)
+![Konsole „Inhaltsfragmente“ – Suchen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
 
 Die ausgewählten Ergebnisse werden bereitgestellt:
 
-![Konsole „Inhaltsfragmente“ – Suchergebnisse](assets/cf-managing-console-search-results.png)
+![Konsole „Inhaltsfragmente“ – Suchergebnisse](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
 
 Das Suchfeld bietet außerdem schnellen Zugriff auf die **letzten Inhaltsfragmente** und die **gespeicherten Suchvorgänge**:
 
-![Konsole „Inhaltsfragmente“ – Zuletzt und gespeichert](assets/cf-managing-console-search-saved.png)
+![Konsole „Inhaltsfragmente“ – Zuletzt und gespeichert](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)

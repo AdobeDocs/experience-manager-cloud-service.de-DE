@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 94%
+source-wordcount: '2472'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ In Inhaltsfragmentmodellen in Adobe Experience Manager (AEM) as a Cloud Service 
 >
 >Diese Seite enthält den Abschnitt der Konsole, in dem (nur) Inhaltsfragmentmodelle angezeigt werden. Für andere Panels siehe:
 >
->* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)   
+>* [Verwalten von Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)
 >* [Anzeigen und Verwalten von Assets in der Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 >[!NOTE]
@@ -53,7 +53,7 @@ Sie können in der [Inhaltsfragmentkonsole](/help/sites-cloud/administering/cont
 
 Dadurch wird die Ansicht für Inhaltsfragmentmodelle geöffnet:
 
-![Inhaltsfragmentkonsole – Verwalten von Inhaltsfragmentmodellen](assets/cf-managing-content-fragment-models.png)
+![Inhaltsfragmentkonsole – Verwalten von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models.png)
 
 Hier können Sie sehen, dass es drei Hauptbereiche gibt:
 
@@ -81,7 +81,7 @@ Hier können Sie sehen, dass es drei Hauptbereiche gibt:
          * Auswählen eines Wertes in der Spalte, der sofort als Filter angewendet wird
          * Schnelles Filtern wird nur für die Spalten **Geändert von**, **Veröffentlicht von** und **Status** unterstützt.
       * Wenn Sie den Mauszeiger über die Spaltenüberschriften bewegen, werden ein Selektor der Dropdown-Aktionen und ein Breitenregler angezeigt. Diese ermöglichen Ihnen Folgendes:
-         * Sortieren – Wählen Sie die entsprechende Aktion für aufsteigende bzw. absteigende Darstellung aus. 
+         * Sortieren - Wählen Sie die entsprechende Aktion für aufsteigende oder absteigende Darstellung aus.
 Dadurch wird die gesamte Tabelle nach dieser Spalte sortiert. Die Sortierung ist nur für die entsprechenden Spalten verfügbar.
          * Ändern Sie die Größe der Spalte – entweder mithilfe der Aktion oder der Breitenregler
       * Wählen Sie ein oder mehrere Fragmente für weitere [Aktionen](#actions-selected-content-fragment-models) aus
@@ -98,7 +98,7 @@ Das Haupt-/rechte Panel (Tabellenansicht) der Konsole enthält eine Reihe von In
    * Wenn das Modell gesperrt ist, wird dies durch ein Schlosssymbol angezeigt.
 * **Pfad**
    * Stellt den Pfad als Link zum Öffnen der Konfiguration in der Konsole bereit.
-Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
+Wenn Sie den Mauszeiger über den Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 * **Status**
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
@@ -130,7 +130,7 @@ Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angez
 
 Wenn Sie ein bestimmtes Modell auswählen, werden die Eigenschaften dieses Modells angezeigt (wie beim [Erstellen des Modells](#creating-a-content-fragment-model) definiert). Wenn das Modell nicht **gesperrt** ist, können einige Elemente aktualisiert werden. Sie können auch das Informationssymbol (neben dem Modell **Titel**) verwenden, um das Panel „Informationen“ zu öffnen und zu schließen.
 
-![Inhaltsfragmentkonsole – Informationen für ein ausgewähltes Inhaltsfragmentmodell](assets/cf-managing-content-fragment-models-selected.png)
+![Inhaltsfragmentkonsole – Informationen für ein ausgewähltes Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-selected.png)
 
 * **[Pfad](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
@@ -181,11 +181,11 @@ Wenn Sie ein einzelnes Modell auswählen, werden im rechten Panel auch die [Mode
 
 Wie bei anderen Konsolen können Sie konfigurieren, welche Spalten sichtbar und für eine Aktion verfügbar sind:
 
-![Inhaltsfragmentkonsole – Spaltenkonfiguration](assets/cf-managing-console-column-icon.png)
+![Inhaltsfragmentkonsole – Spaltenkonfiguration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 Daraufhin wird eine Liste von Spalten angezeigt, die Sie ausblenden oder anzeigen können:
 
-![Inhaltsfragmentkonsole – Spaltenkonfiguration](assets/cf-managing-content-fragment-models-column-selection.png)
+![Inhaltsfragmentkonsole – Spaltenkonfiguration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-column-selection.png)
 
 ## Filtern von Inhaltsfragmentmodellen {#filter-content-fragment-models}
 
@@ -202,7 +202,7 @@ Der Panel zum Filtern bietet folgende Optionen:
 
 Nach der Auswahl werden die Optionen zum **Filtern nach** angezeigt (oben im Haupt-Panel). Sie können von dort aus abgewählt werden. Beispiel:
 
-![Inhaltsfragmentkonsole – Filtern von Inhaltsfragmentmodellen](assets/cf-managing-content-fragment-models-filter.png)
+![Inhaltsfragmentkonsole – Filtern von Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-filter.png)
 
 ### Schnelles Filtern {#fast-filtering}
 
@@ -240,8 +240,8 @@ Wählen Sie zum Beispiel **Aktiviert** in der Spalte **Status** aus. Nach der Au
 
    Sie können auch verschiedene Eigenschaften definieren:
 
-   * **Titel**
-Wenn Sie zuerst den **Titel** eingeben, wird der **Name** daraus generiert.
+   * **title**
+Wenn Sie zuerst **Titel** eingeben, wird **Name** daraus generiert.
    * eine **Beschreibung**
    * **Modell aktivieren**, um [das Modell zu aktivieren](#enabling-disabling-a-content-fragment-model)
 
@@ -249,7 +249,7 @@ Wenn Sie zuerst den **Titel** eingeben, wird der **Name** daraus generiert.
    >
    >Weitere Informationen finden Sie unter [Inhaltsfragmentmodell – Eigenschaften](#model-properties).
 
-   ![Titel und Beschreibung](assets/cf-managing-content-fragment-models-create.png)
+   ![Titel und Beschreibung](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
 1. Wählen Sie **Erstellen** aus, um das leere Modell zu speichern, oder verwenden Sie **Erstellen und öffnen**.
 
@@ -308,7 +308,7 @@ So konfigurieren Sie die **Richtlinien** für **Zulässige Inhaltsfragmentmodell
 
      Es können mehrere Modelle zugelassen werden.
 
-   ![Richtlinie für Inhaltsfragmentmodell](assets/cf-cfmodels-policy-assets-folder.png)
+   ![Richtlinie für Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-policy-assets-folder.png)
 
 1. **Speichern** Sie die Änderungen.
 
@@ -343,7 +343,7 @@ So veröffentlichen Sie ein Inhaltsfragmentmodell:
 
 1. Navigieren Sie zu Ihrem Inhaltsfragmentmodell und wählen Sie dieses aus. Sie können mehrere Modelle auswählen.
 
-1. Wählen Sie in der Symbolleiste die Option **Veröffentlichen** aus. 
+1. Wählen Sie in der Symbolleiste die Option **Veröffentlichen** aus.
 
 1. Wählen Sie im Dialogfeld „Veröffentlichen“ das **Ziel** aus:
 
@@ -359,7 +359,7 @@ Die Veröffentlichung von Inhaltsfragmentmodellen kann rückgängig gemacht werd
 So machen Sie die Veröffentlichung eines Inhaltsfragmentmodells rückgängig:
 
 1. Navigieren Sie zu und wählen Sie Ihr Inhaltsfragmentmodell aus.
-Der Status „Veröffentlicht“ wird in der Konsole angezeigt.
+Der Veröffentlichungsstatus wird in der Konsole angezeigt.
 
 1. Wählen **in der** die Option Veröffentlichung aufheben aus.
 
@@ -425,7 +425,7 @@ Sie können **Gesperrte** Modelle entweder aus der Konsole heraus oder im Modell
 
    * Wenn Sie **Bearbeiten** auswählen, können Sie Ihre Änderungen bearbeiten und speichern:
 
-     ![Bearbeiten – gesperrtes Inhaltsfragmentmodell](assets/cf-cfmodels-editor-locked-edit.png)
+     ![Bearbeiten – gesperrtes Inhaltsfragmentmodell](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-editor-locked-edit.png)
 
      >[!NOTE]
      >

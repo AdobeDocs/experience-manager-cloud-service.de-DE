@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 24a995f6e487b7870ebc84e06107a26442d541c3
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2188'
 ht-degree: 78%
 
 ---
@@ -53,7 +53,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
 1. Öffnen Sie das gewünschte Modell für **Bearbeiten** verwenden Sie einen der Schnellzugriff-Links oder wählen Sie das Modell und dann die Aktion in der Symbolleiste aus.
 
-   ![Eigenschaften](assets/cf-cfmodels-empty-model.png)
+   ![Eigenschaften](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
    Nach dem Öffnen zeigt der Modell-Editor Folgendes an:
 
@@ -86,7 +86,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
 
    * Sie können ein Feld mithilfe der Punktbildung links im Feld neu positionieren:
 
-     ![Feld verschieben](assets/cf-cfmodels-move-field-icon.png)
+     ![Feld verschieben](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-move-field-icon.png)
 
    * Nachdem ein Feld zum Modell hinzugefügt wurde (und ausgewählt ist), werden im rechten Bereich die **Eigenschaften** angezeigt, die für diesen bestimmten Datentyp definiert werden können. Hier können Sie festlegen, was für die jeweiligen
 Feld.
@@ -102,7 +102,7 @@ Feld.
 
      Zum Beispiel:
 
-     ![Feldeigenschaften](assets/cf-cfmodels-field-properties.png)
+     ![Feldeigenschaften](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
      >[!NOTE]
      >
@@ -112,7 +112,7 @@ Feld.
 
    Wählen Sie das Papierkorbsymbol für das entsprechende Feld im mittleren Bereich aus.
 
-   ![Entfernen](assets/cf-cfmodels-remove-icon.png)
+   ![Entfernen](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-remove-icon.png)
 
 1. Fügen Sie alle erforderlichen Felder hinzu und legen Sie bei Bedarf die zugehörigen Eigenschaften fest.
 
@@ -304,7 +304,7 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
      >[!NOTE]
      >
      >Diese Methode ist vor allem bei der Verwendung in Verbindung mit der [Headless-Inhaltsbereitstellung mittels Inhaltsfragmenten mit GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) interessant.
-   * Kann für eine oder mehrere Referenzen konfiguriert werden (im resultierenden Fragment).
+   * Kann für einen oder mehrere Verweise konfiguriert werden (im resultierenden Fragment).
 
 <!--
 >[!NOTE]
@@ -316,9 +316,9 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >
 >AEM bietet Schutz vor Intervallen für:
 >
->* Inhaltsverweise>  Dies verhindert, dass Benutzende einen Verweis zum aktuellen Fragment hinzufügen, und kann zu einem leeren Auswahldialogfeld der Fragmentreferenzen führen.
+>* Inhaltsreferenzen : >   verhindert, dass Benutzende dem aktuellen Fragment einen Verweis hinzufügen, und kann zu einem leeren Dialogfeld für die Auswahl von Fragmentverweisen führen.
 >
->* Fragmentreferenzen in GraphQL>  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
+>* Fragmentverweise in GraphQL>   Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, wird beim ersten Vorkommen null zurückgegeben.
 
 >[!CAUTION]
 >
@@ -354,7 +354,7 @@ Zusätzlich zu den Standardeigenschaften können Sie Folgendes angeben:
    * Miniatur anzeigen
    * Bildeinschränkungen hinsichtlich Höhe und Breite
 
-![Inhaltsreferenz](assets/cf-cfmodels-content-reference.png)
+![Inhaltsreferenz](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-content-reference.png)
 
 ### Fragmentreferenz (verschachtelte Fragmente) {#fragment-reference-nested-fragments}
 
@@ -403,7 +403,7 @@ Dies gibt einen Stammpfad für alle Fragmente an, auf die verwiesen wird, oder s
 
    * **fragmentreferencecomposite**: Ermöglicht dem Fragmentautor das Erstellen einer Composite-Datei durch Auswahl mehrerer Fragmente.
 
-  ![Fragmentreferenz](assets/cf-cfmodels-fragment-reference.png)
+  ![Fragmentreferenz](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >

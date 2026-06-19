@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '136'
 ht-degree: 97%
 
 ---
@@ -34,4 +34,4 @@ Die mehrschichtige Struktur wird mithilfe von Verweisen aufgebaut:
 
 Zum Beispiel:
 
-![Inhaltsfragmenteditor – Baumstruktur](assets/cf-authoring-structure-tree.png)
+![Inhaltsfragmenteditor – Baumstruktur](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
