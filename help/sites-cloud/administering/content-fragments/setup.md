@@ -6,10 +6,10 @@ role: Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 96%
+source-wordcount: '381'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Das Einrichten Ihrer Instanz ist abgeschlossen:
 
 >[!TIP]
 >
->Edge Delivery Services Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ## Aktivieren von Inhaltsfragmentfunktionen im Konfigurations-Browser {#enable-content-fragment-functionality-configuration-browser}
 
@@ -64,13 +64,13 @@ Um die Inhaltsfragmentfunktionen von Inhaltsfragmentmodellen und von GraphQL bes
 1. Öffnen Sie über **Erstellen** das Dialogfeld, in dem Sie:
 
    1. einen **Titel** angeben,
-   1. Bei der Erstellung wird der **Name** zum Knotennamen im Repository
-Sie können einen Namen eingeben. Wenn Sie das Feld leer lassen, wird automatisch ein Name basierend auf dem Titel generiert und dann entsprechend der [AEM-Namenskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst. Sie können das Ergebnis bei Bedarf anpassen.
+   1. Bei der Erstellung wird **Name** zum Knotennamen im Repository.
+Sie können einen Namen eingeben. Wenn Sie das Feld leer lassen, wird es automatisch auf der Grundlage des Titels generiert und dann gemäß den [AEM-Benennungskonventionen](/help/implementing/developing/introduction/naming-conventions.md) angepasst. Sie können das Ergebnis bei Bedarf anpassen.
    1. Um ihre Verwendung zu aktivieren, wählen Sie
       * **Inhaltsfragmentmodelle**
       * **GraphQL – Persistente Abfragen**
 
-      ![Konfiguration definieren](assets/cf-setup-create-conf.png)
+      ![Konfiguration definieren](/help/sites-cloud/administering/content-fragments/assets/cf-setup-create-conf.png)
 
 1. Wählen Sie **Erstellen** aus, um die Definition zu speichern.
 
@@ -80,4 +80,4 @@ Wenn die Konfiguration **Global** für die Inhaltsfragmentfunktionen aktiviert i
 
 Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbaren Assets-Ordner zu verwenden, müssen Sie die Verbindung definieren. Wählen Sie dazu die entsprechende **Konfiguration** in der Registerkarte **Cloud-Services** der **Ordnereigenschaften** des entsprechenden Ordners aus.
 
-![Konfiguration anwenden](assets/cf-setup-apply-conf.png)
+![Konfiguration anwenden](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)

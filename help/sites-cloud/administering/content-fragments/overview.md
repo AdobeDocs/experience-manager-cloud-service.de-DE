@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
 source-wordcount: '2553'
 ht-degree: 77%
@@ -19,7 +19,7 @@ In Adobe Experience Manager (AEM) as a Cloud Service können Sie mit Inhaltsfrag
 
 >[!TIP]
 >
->Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 >[!IMPORTANT]
 >
@@ -302,7 +302,7 @@ Die Inhaltsfragmentkonsole dient der Verwaltung, Suche und Erstellung von [Inhal
 
 Die Konsole kann direkt von der obersten Ebene der globalen Navigation aus aufgerufen werden.
 
-![Globale Navigation – Inhaltsfragmentkonsole](assets/cf-managing-global-navigation.png)
+![Globale Navigation – Inhaltsfragmentkonsole](/help/sites-cloud/administering/content-fragments/assets/cf-managing-global-navigation.png)
 
 Sie können im Panel ganz links den Ressourcentyp auswählen, um Folgendes anzuzeigen, zu durchsuchen und zu verwalten:
 

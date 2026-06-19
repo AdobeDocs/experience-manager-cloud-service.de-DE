@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2938'
 ht-degree: 93%
 
 ---
@@ -58,7 +58,7 @@ Beim ersten Öffnen des Inhaltsfragmenteditors werden vier Hauptbereiche angezei
    * die Aktionen [Veröffentlichen](#publish-content-fragment) und [Veröffentlichung aufheben](#unpublish-content-fragment)
    * eine Option zum Anzeigen aller **übergeordneten Verweise** (Verknüpfungssymbol)
    * der **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** des Fragments und Informationen über die letzte Speicherung
-   * ein Umschalter zum Umschalten auf den ursprünglichen (Assets-basierten) Editor
+   * Ein Umschalter zum Wechsel zum ursprünglichen (/help/sites-cloud/administration/content-fragments/assets-based) Editor
 
      >[!WARNING]
      >
@@ -138,7 +138,7 @@ Das Inhaltsfragment wird bei jeder von Ihnen vorgenommenen Aktualisierung automa
 
 * [Erstellen von Varianten](#create-variation) des **Haupt-Inhalts**
 
-* [Unter Verwendung der Funktion „Varianten generieren“ &#x200B;](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
+* [Unter Verwendung der Funktion „Varianten generieren“ ](#generate-variations-ai) können Sie eine auf Prompts basierende Vorlage verwenden, die Adobe für einen bestimmten Anwendungsfall erstellt hat.
 
 * Die erforderliche Variante zum Bearbeiten des Inhalts auswählen
 
@@ -156,7 +156,7 @@ So erstellen Sie eine Variante Ihres Inhaltsfragments:
    >
    >Nach der Erstellung Ihrer ersten Variante werden vorhandene Varianten im selben Bereich aufgelistet.
 
-   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante &#x200B;](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
+   ![Inhaltsfragmenteditor – Erstellen Ihrer ersten Variante ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. Geben Sie im Dialogfeld einen **Titel** für Ihre Variante und, wenn gewünscht, eine **Beschreibung** ein:
 
@@ -279,7 +279,7 @@ Dadurch wird das mehrzeilige Feld im Vollbild geöffnet und:
 
   >[!CAUTION]
   >
-  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**&#x200B;in die Variante* zu kopieren.
+  >Die Synchronisierung ist nur verfügbar, um Änderungen *von der **Hauptvariante**in die Variante* zu kopieren.
   >
   >Es ist nicht möglich, Änderungen *von einer Variante auf die **Hauptvariante*** zu übertragen.
 
@@ -601,7 +601,7 @@ Im Bereich **Felder** sind alle Felder im Inhaltsfragment aufgeführt. Das Symbo
    <td><p> <img src="assets/cf-authoring-number-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Boolesch</b></p> </td>
+   <td><p><b>Boolescher Wert</b></p> </td>
    <td><p> <img src="assets/cf-authoring-boolean-icon.png"> </p></td>
   </tr>
   <tr>
