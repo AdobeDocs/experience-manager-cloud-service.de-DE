@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
+source-git-commit: a927c0556f47056fc4e6b0f812703baa34e53903
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 97%
+source-wordcount: '2155'
+ht-degree: 94%
 
 ---
 
@@ -69,6 +69,12 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 >
 > Adobe rät vom Hochladen von Asset-Paketen ab, da dies gegen unsere Best Practices verstößt, die Binärdatenverarbeitung in AEM zu vermeiden. Das Hochladen von Assets über JCR-Pakete führt nicht dazu, dass die Verarbeitung dieser Assets in AEM as a Cloud Service ausgelöst wird.
 
+## Einrichten von OpenAPI-basierten AEM Assets-APIs {#setup-openapi-aem-assets}
+
+Wenn `AEM Assets API Users` Produktprofil-Service nicht in Produktions-, Entwicklungs- oder niedrigeren Umgebungen angezeigt wird, die vor November 2024 erstellt wurden, müssen Sie OpenAPI-basierte AEM Assets-APIs einrichten.
+
+Das Einrichten von OpenAPI-basierten AEM Assets-APIs umfasst die Modernisierung der AEM as a Cloud Service-Umgebung und die Aktivierung des Zugriffs auf AEM Assets-APIs. Die Modernisierung muss pro Umgebung (Produktion, Entwicklung und Staging) durchgeführt werden. Weitere Informationen finden Sie unter [Einrichten von OpenAPI-basierten AEM-APIs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+
 ## Asset-Upload {#asset-upload}
 
 In [!DNL Experience Manager] as a [!DNL Cloud Service] können Sie die Assets mithilfe der HTTP-API direkt in den Cloud-Speicher hochladen. Die Schritte zum Hochladen einer Binärdatei werden unten beschrieben. Führen Sie diese Schritte in einer externen Anwendung und nicht in der [!DNL Experience Manager] JVM aus.
@@ -126,7 +132,7 @@ Eine einzige Anfrage kann dazu verwendet werden, Uploads für mehrere Binärdate
 }
 ```
 
-* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://[aem_server]:[port]/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens &#x200B;](#complete-upload).
+* `completeURI` (Zeichenfolge): Diese URI aufrufen, wenn das Hochladen der Binärdatei abgeschlossen ist. Die URI kann eine absolute oder relative URI sein. Clients sollten in der Lage sein, beide Fälle zu handhaben. Das heißt, dass der Wert `"https://[aem_server]:[port]/content/dam.completeUpload.json"` oder `"/content/dam.completeUpload.json"` sein kann. Siehe [Abschließen des Hochladens ](#complete-upload).
 * `folderPath` (Zeichenfolge): Vollständiger Pfad zum Ordner, in den die Binärdatei hochgeladen wird.
 * `(files)` (Array): Eine Liste der Elemente, deren Länge und Reihenfolge mit der Länge und Reihenfolge der Liste der binären Informationen übereinstimmen, die in der Anfrage zum Initiieren bereitgestellt werden.
 * `fileName` (Zeichenfolge): Der Name der entsprechenden Binärdatei, wie in der Anfrage zum Initiieren angegeben. Dieser Wert sollte in der vollständigen Anfrage enthalten sein.

@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5a7a52a4ec67417f8a61406913ecf5175d330664
+source-git-commit: d41a68a2d60c45fcd0b48799c93f43b533948217
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 55%
@@ -15,7 +15,7 @@ ht-degree: 55%
 
 # Einführung in die Produktionsprogramme {#production-programs}
 
-Ein Produktionsprogramm ist für ein Team gedacht, das bereit ist, Code zu schreiben, zu erstellen und zu testen. Ziel ist die Bereitstellung für das Hosten von Live-Traffic.
+Ein Produktionsprogramm ist für ein Team gedacht, das bereit ist, Code zu schreiben, zu erstellen und zu testen. Ziel ist die Bereitstellung der Lösung zur Unterstützung von Live-Traffic.
 
 Nach dem [Erstellen Ihres Produktionsprogramms](creating-production-programs.md) führt ein [Assistent zur Programmerstellung](using-the-wizard.md) die Benutzer durch die verschiedenen Auswahlmöglichkeiten, je nachdem, welches Ziel sie mit der Erstellung des Programms verfolgt haben.
 

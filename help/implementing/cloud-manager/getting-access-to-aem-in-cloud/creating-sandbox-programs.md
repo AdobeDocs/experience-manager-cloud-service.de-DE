@@ -5,10 +5,10 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0376fa4df5966807a11a64f304c8da2112e62bfd
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 63%
 
 ---
 
@@ -26,13 +26,13 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 
    ![Cloud Manager-Landingpage](assets/log-in.png)
 
-1. Geben Sie im Assistenten *Erstellen Sie Ihr Programm* im Textfeld **Programmname** den gewünschten Namen für das Programm ein.
+1. Geben *im Assistenten „Programm erstellen* im Textfeld **Programmname** den gewünschten Namen für das Programm ein.
 
 1. Wählen Sie unter **Programmziel** die Option ![Zauberstab-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **Sandbox einrichten**.
 
    ![Erstellen von Programmtypen](assets/create-sandbox.png)
 
-1. (Optional) Führen Sie unten rechts im Dialogfeld des Assistenten einen der folgenden Schritte aus:
+1. (Optional) Führen Sie in der rechten unteren Ecke des Dialogfelds „Assistent“ einen der folgenden Schritte aus:
 
    * Ziehen Sie eine Bilddatei per Drag-and-Drop auf das Ziel ![Bildsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Programmbild hinzufügen**.
    * Klicken Sie auf ![Bildsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Programmbild hinzufügen** und wählen Sie dann ein Bild aus einem Datei-Browser aus.
@@ -43,7 +43,7 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 1. Wählen Sie im Listenfeld **Lösungen und Add-ons** eine oder mehrere Lösungen aus, die im Programm enthalten sein sollen.
 
    * Klicken Sie auf den Pfeil links neben dem Lösungsnamen, um alle verfügbaren optionalen Add-ons anzuzeigen, die in eine ausgewählte Lösung aufgenommen werden sollen.
-   * Die Lösungen **Sites**, **Assets** und **Edge Delivery Services** sind beim Erstellen eines Sandbox-Programms standardmäßig immer ausgewählt. Sie können sie nicht abwählen.
+   * Cloud Manager wählt beim Erstellen eines Sandbox **Programms standardmäßig immer die Lösungen** Sites **,** Assets **und** Edge Delivery Servicesaus. Sie können die Auswahl nicht aufheben.
 
    ![Auswählen von Lösungen und Add-ons für eine Sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -53,13 +53,13 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 
 ## Sandbox-Zugriff {#access}
 
-Nachdem ein neues Sandbox-Programm erstellt wurde, können Sie Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung zugreifen, indem Sie die Seite „Programmübersicht“ aufrufen.
+Nachdem Sie ein neues Sandbox-Programm erstellt haben, können Sie die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung zugreifen, indem Sie die Seite Programmübersicht aufrufen.
 
-1. Klicken Sie auf der Landingpage von Cloud Manager im Sandbox-Programm auf ![Dreipunktemenü-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in Ihrem erstellten Sandbox-Programm.
+1. Klicken Sie auf der Cloud Manager-Landingpage für das Sandbox-Programm im erstellten Sandbox![Programm auf ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)Mehr kleine Liste“.
 
    ![Zugriff auf die Programmübersicht](assets/program-overview-sandbox.png)
 
-1. Sobald der Schritt zur Projekterstellung abgeschlossen ist, können Sie den Link **Auf Repository-Informationen zugreifen** verwenden, um Ihr Git-Repository zu verwenden.
+1. Wenn der Schritt zur Projekterstellung abgeschlossen ist, können Sie auf den Link **Auf Repository-Informationen zugreifen** klicken, um Ihr Git-Repository zu verwenden.
 
    ![Konfiguration von Programmen](assets/create-program4.png)
 
@@ -71,10 +71,10 @@ Nachdem ein neues Sandbox-Programm erstellt wurde, können Sie Details Ihrer San
 
    ![Link „Zugriff auf AEM“](assets/create-program5.png)
 
-1. Wenn die Bereitstellung der produktionsfremden Pipeline in der Entwicklungsumgebung abgeschlossen ist, führt Sie der Assistent in den Anleitungen zum Aktionsaufruf entweder zum Zugriff auf die AEM-Entwicklungsumgebung oder zur Code-Bereitstellung in der Entwicklungsumgebung.
+1. Wenn die Bereitstellung der produktionsfremden Pipeline in der Entwicklungsumgebung abgeschlossen ist, führt Sie der Assistent in der call-to-action entweder zum Zugriff auf die AEM-Entwicklungsumgebung oder zur Bereitstellung von Code dafür.
 
    ![Bereitstellen einer Sandbox](assets/create-program-setup-deploy.png)
 
 >[!TIP]
 >
->Weitere Informationen zum Navigieren in Cloud Manager und zum Verständnis der Konsole **Meine Programme** finden Sie unter [Navigation in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md).
+>Unter [Navigieren in der Cloud Manager-Benutzeroberfläche](/help/implementing/cloud-manager/navigation.md) finden Sie Details zum Navigieren in Cloud Manager und zur **&quot;** Programme“.
