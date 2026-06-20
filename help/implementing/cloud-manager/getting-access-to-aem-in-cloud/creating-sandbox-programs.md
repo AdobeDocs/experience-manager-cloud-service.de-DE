@@ -55,7 +55,7 @@ Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmt
 
 Nachdem Sie ein neues Sandbox-Programm erstellt haben, können Sie die Details Ihrer Sandbox-Einrichtung anzeigen und auf die Umgebung zugreifen, indem Sie die Seite Programmübersicht aufrufen.
 
-1. Klicken Sie auf der Cloud Manager-Landingpage für das Sandbox-Programm im erstellten Sandbox![Programm auf ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)Mehr kleine Liste“.
+1. Klicken Sie auf der Cloud Manager-Landingpage für das Sandbox-Programm im erstellten Sandbox![Programm auf &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)Mehr kleine Liste“.
 
    ![Zugriff auf die Programmübersicht](assets/program-overview-sandbox.png)
 

@@ -39,7 +39,7 @@ Cloud Manager erstellt und testet Ihren Code mithilfe einer speziellen Erstellun
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Andere Pakete werden zur Build-Zeit installiert, wie im Abschnitt [Installieren zusätzlicher Systempakete“ ](#installing-additional-system-packages).
+* Andere Pakete werden zur Build-Zeit installiert, wie im Abschnitt [Installieren zusätzlicher Systempakete“ &#x200B;](#installing-additional-system-packages).
 * Jeder Build wird in einer neuen Umgebung ausgeführt. Der Build-Container speichert die Daten zwischen den Ausführungen nicht.
 * Maven wird immer mit den folgenden drei Befehlen ausgeführt.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`

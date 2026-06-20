@@ -29,9 +29,9 @@ Sandbox-Programme ermöglichen eine automatische Erstellung. Bei der [Erstellung
 
 * Fügt AEM Sites, Assets und Edge Delivery Services als Standardlösungen zu Ihrem Programm hinzu.
 
-  ![Auswählen der Lösungen und Add-ons für eine Sandbox ](assets/sandbox-solutions-add-ons.png)
+  ![Auswählen der Lösungen und Add-ons für eine Sandbox &#x200B;](assets/sandbox-solutions-add-ons.png)
 
-* Initialisiert ein Projekt-Git-Repository mit einem Beispielprojekt, das auf dem [AEM-Projektarchetyp} ](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Initialisiert ein Projekt-Git-Repository mit einem Beispielprojekt, das auf dem [AEM-Projektarchetyp&rbrace; &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Eine Entwicklungsumgebung wird erstellt.
 * Eine Nicht-Produktions-Pipeline, die in der Entwicklungsumgebung bereitgestellt wird, wird erstellt.
 

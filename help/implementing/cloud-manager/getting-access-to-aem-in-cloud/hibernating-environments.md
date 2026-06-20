@@ -52,7 +52,7 @@ Sandbox-Programmumgebungen werden innerhalb von Minuten in den Ruhezustand verse
 
    ![Bestätigen des Ruhezustands](assets/hibernate-2.png)
 
-Nach erfolgreicher Aktivierung des Ruhezustands wird im Bildschirm **Developer Console} eine Benachrichtigung über den Abschluss des Ruhezustands für Ihre Umgebung**.
+Nach erfolgreicher Aktivierung des Ruhezustands wird im Bildschirm **Developer Console&rbrace; eine Benachrichtigung über den Abschluss des Ruhezustands für Ihre Umgebung**.
 
 ![Ruhezustand – Bestätigung](assets/hibernate-4.png)
 
