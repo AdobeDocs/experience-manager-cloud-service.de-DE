@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1f5eb7bd50f90c9bac3adb42823f038668a10c36
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '528'
+ht-degree: 72%
 
 ---
 
@@ -19,9 +19,9 @@ Erfahren Sie, was Sandbox-Programme sind und inwiefern sie sich von Produktionsp
 
 ## Einführung {#introduction}
 
-Sandboxes werden normalerweise für Schulungen, Ausführung von Demos, Aktivierungen oder Proof of Concepts (POCs) erstellt. Sie sind nicht dazu gedacht, Live-Traffic zu übertragen.
+Ein Sandbox-Programm wird normalerweise für Schulungen, Ausführungen von Demos, Aktivierungen oder Proof of Concepts (POCs) erstellt und ist daher nicht für Live-Traffic vorgesehen.
 
-Ein Sandbox-Programm ist einer von zwei Programmtypen, die in AEM as a Cloud Service verfügbar sind. Der andere ist das [Produktionsprogramm](introduction-production-programs.md). Weitere Informationen zu Programmtypen finden Sie unter [Programme und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Ein Sandbox-Programm ist einer von zwei Programmtypen, die in AEM as a Cloud Service verfügbar sind. Der andere ist das [Produktionsprogramm](introduction-production-programs.md). Weitere Informationen zu Programmtypen finden Sie unter [Grundlegendes zu Programmen und Programmtypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Automatische Erstellung {#auto-creation}
 
@@ -29,17 +29,17 @@ Sandbox-Programme ermöglichen eine automatische Erstellung. Bei der [Erstellung
 
 * Fügt AEM Sites, Assets und Edge Delivery Services als Standardlösungen zu Ihrem Programm hinzu.
 
-  ![Auswählen der Lösungen und Add-ons für eine Sandbox ](assets/sandbox-solutions-add-ons.png)
+  ![Auswählen der Lösungen und Add-ons für eine Sandbox &#x200B;](assets/sandbox-solutions-add-ons.png)
 
-* Ein Projekt-Git-Repository mit einem Beispielprojekt, das auf dem [AEM-Projektarchetyp](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) basiert, wird eingerichtet.
+* Initialisiert ein Projekt-Git-Repository mit einem Beispielprojekt, das auf dem [AEM-Projektarchetyp&rbrace; &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Eine Entwicklungsumgebung wird erstellt.
 * Eine Nicht-Produktions-Pipeline, die in der Entwicklungsumgebung bereitgestellt wird, wird erstellt.
 
-Ein Sandbox-Programm hat nur eine Entwicklungsumgebung.
+Ein Sandbox-Programm ist auf eine Entwicklungsumgebung beschränkt.
 
-## Nutzungshinweise und -bedingungen {#usage-notes-conditions}
+## Nutzungsbeschränkungen und -bedingungen {#usage-notes-conditions}
 
-Da Sandbox-Programme nicht für Live-Traffic vorgesehen sind, haben sie bestimmte Einschränkungen und Bedingungen für ihre Verwendung, was sie von Produktionsprogrammen unterscheidet.
+Da Sandbox-Programme nicht für Live-Traffic vorgesehen sind, haben sie bestimmte Einschränkungen und Bedingungen für ihre Verwendung, wodurch sie sich von Produktionsprogrammen unterscheiden.
 
 | Einschränkung/Bedingung | Beschreibung |
 | --- | --- |
@@ -49,6 +49,6 @@ Da Sandbox-Programme nicht für Live-Traffic vorgesehen sind, haben sie bestimmt
 | Keine zusätzlichen Veröffentlichungsregionen | [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) sind in Sandbox-Programmen nicht verfügbar. |
 | Kein SLA von 99,99 % | Das [SLA von 99,99 %](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) gilt nicht für Sandbox-Programme. |
 | Keine erweiterten Netzwerkfunktionen | [Erweiterte Netzwerkfunktionen](/help/security/configuring-advanced-networking.md) (z. B. Self-Service-Bereitstellung von VPN, nicht standardmäßigen Ports und dedizierten Ausgangs-IP-Adressen) sind in Sandbox-Programmen nicht verfügbar. |
-| Keine automatischen AEM-Updates | AEM-Updates werden nicht automatisch auf Sandbox-Programme angewendet, können aber manuell auf die Umgebungen in Ihrem Sandbox-Programm angewendet werden.<br>• Ein manuelles Update ist nur möglich, wenn die Zielumgebung über eine ordnungsgemäß konfigurierte Pipeline verfügt.<br>• Bei einem manuellen Update der Produktions- oder Staging-Umgebung wird jeweils automatisch auch die andere Umgebung aktualisiert. Der Satz aus Produktions- und Staging-Umgebung muss sich in derselben AEM-Version befinden.<br>Weitere Informationen finden Sie unter [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md).<br>Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). |
+| Keine automatischen AEM-Updates | AEM-Updates werden nicht automatisch an Sandbox-Programme gesendet, können aber manuell auf die Umgebungen in Ihrem Sandbox-Programm angewendet werden.<br>・ Ein manuelles Update kann nur ausgeführt werden, wenn die Zielumgebung über eine ordnungsgemäß konfigurierte Pipeline verfügt.<br>・ Ein manuelles Update einer Produktions- oder Staging-Umgebung aktualisiert automatisch die andere. Der Satz aus Produktions- und Staging-Umgebung muss sich in derselben AEM-Version befinden.<br>Weitere Informationen finden Sie unter [AEM-Versionsaktualisierungen](/help/implementing/deploying/aem-version-updates.md).<br>Informationen zum Aktualisieren einer Umgebung finden Sie unter [Aktualisieren von Umgebungen](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). |
 | Kein technischer Support | Da Sandbox-Programme normalerweise für Schulungen, Demos, Aktivierungen oder Machbarkeitsnachweise (Proof of Concepts, POCs) erstellt werden, steht kein technischer Support für Probleme mit Sandbox-Programmen zur Verfügung.<br>Wenn beim Erstellen und Verwalten von Sandbox-Programmen Probleme auftreten, ist dies durch den technischen Support abgedeckt. |
 | Ruhezustand und Löschung | Umgebungen in einem Sandbox-Programm werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Sandbox-Umgebungen werden nach sechsmonatigem kontinuierlichem Ruhezustand gelöscht.<br>Weitere Informationen zum Deaktivieren des Ruhezustands von Umgebungen und zum automatischen Löschen von Sandboxes finden Sie unter [Aktivieren und Deaktivieren des Ruhezustands von Sandbox-Umgebungen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md). |

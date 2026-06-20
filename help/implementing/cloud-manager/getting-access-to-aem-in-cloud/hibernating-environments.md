@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9834479cfb7a5ddc116fe23074b84a77b3466389
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 100%
+source-wordcount: '717'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ Umgebungen innerhalb eines Sandbox-Programms werden in den Ruhezustand versetzt,
 Der Ruhezustand kann entweder automatisch oder manuell aktiviert werden.
 
 * **Automatisch**: Sandbox-Programmumgebungen werden nach acht Stunden Inaktivität automatisch in den Ruhezustand versetzt. Inaktivität ist definiert als das Fehlen von Anfragen an Autoren-, Vorschau- und Services.
-* **Manuell**: Als Benutzende können Sie eine Sandbox-Programmumgebung manuell in den Ruhezustand versetzen. Dies ist nicht unbedingt erforderlich, da der Ruhezustand wie zuvor beschrieben automatisch eintritt.
+* **Manuell** - Sie können eine Sandbox-Programmumgebung manuell in den Ruhezustand versetzen. Dies ist nicht unbedingt erforderlich, da der Ruhezustand wie zuvor beschrieben automatisch eintritt.
 
-Es kann einige Minuten dauern, bis Sandbox-Programmumgebungen in den Ruhezustand wechseln. Daten werden im Ruhezustand beibehalten.
+Sandbox-Programmumgebungen werden innerhalb von Minuten in den Ruhezustand versetzt. Daten werden im Ruhezustand beibehalten.
 
 ### Manuelles Versetzen einer Sandbox-Programmumgebung in den Ruhezustand {#using-manual-hibernation}
 
@@ -52,7 +52,7 @@ Es kann einige Minuten dauern, bis Sandbox-Programmumgebungen in den Ruhezustand
 
    ![Bestätigen des Ruhezustands](assets/hibernate-2.png)
 
-Nach erfolgreicher Aktivierung des Ruhezustands wird im Bildschirm **Developer Console** eine Benachrichtigung zur Fertigstellung des Ruhezustands für Ihre Umgebung angezeigt.
+Nach erfolgreicher Aktivierung des Ruhezustands wird im Bildschirm **Developer Console&rbrace; eine Benachrichtigung über den Abschluss des Ruhezustands für Ihre Umgebung**.
 
 ![Ruhezustand – Bestätigung](assets/hibernate-4.png)
 
@@ -82,7 +82,7 @@ Klicken Sie in der Entwicklerkonsole auf den Link **Umgebungen** in den Breadcru
 
    ![Schaltfläche „Ruhezustand aufheben“](assets/de-hibernation-img1.png)
 
-1. Klicken Sie auf **Ruhezustand aufheben**, um den Schritt zu bestätigen.
+1. Klicken Sie **Ruhezustand aufheben**, um den Schritt zu bestätigen.
 
    ![Bestätigen der Aufhebung des Ruhezustands](assets/de-hibernation-img2.png)
 
@@ -100,7 +100,7 @@ Klicken Sie in der Developer Console auf den Link **Umgebungen** in den Breadcru
 
 ### Berechtigungen zum Aufheben des Ruhezustands {#permissions-de-hibernate}
 
-Jede Person mit einem Produktprofil, das Zugriff auf AEM as a Cloud Service gewährt, sollte auf die **Entwicklerkonsole** zugreifen und somit die Umgebung reaktivieren können.
+Jeder Benutzer mit einem Produktprofil, das Zugriff auf AEM as a Cloud Service gewährt, kann auf die **Developer Console** zugreifen. Auf diese Weise können sie den Ruhezustand der Umgebung aufheben.
 
 ## Zugreifen auf eine im Ruhezustand befindliche Umgebung {#accessing-hibernated-environment}
 
@@ -112,7 +112,7 @@ Wenn eine Person eine Browser-Anfrage an den Autoren-, Vorschau- oder Veröffent
 
 In im Ruhezustand befindlichen Umgebungen können weiterhin Bereitstellungen und manuelle AEM-Upgrades vorgenommen werden.
 
-* Benutzende können eine Pipeline verwenden, um benutzerdefinierten Code für im Ruhezustand befindliche Umgebungen bereitzustellen. Die Umgebung verbleibt im Ruhezustand; der neue Code wird in der Umgebung angezeigt, sobald der Ruhezustand aufgehoben wurde.
+* Ein Benutzer verwendet eine Pipeline, um benutzerdefinierten Code in im Ruhezustand befindlichen Umgebungen bereitzustellen. Die Umgebung verbleibt im Ruhezustand; der neue Code wird in der Umgebung angezeigt, sobald der Ruhezustand aufgehoben wurde.
 
 * AEM-Upgrades können auf im Ruhezustand befindliche Umgebungen angewendet werden. Sie können in Cloud Manager von Kundinnen und Kunden manuell ausgelöst werden. Die Umgebung verbleibt im Ruhezustand; die neue Version wird in der Umgebung angezeigt, sobald der Ruhezustand aufgehoben wurde.
 

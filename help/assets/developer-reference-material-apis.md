@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
+source-git-commit: a927c0556f47056fc4e6b0f812703baa34e53903
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 97%
+source-wordcount: '2155'
+ht-degree: 94%
 
 ---
 
@@ -68,6 +68,12 @@ Der Artikel enthält Empfehlungen, Referenzmaterialien und Ressourcen für Entwi
 >[!NOTE]
 >
 > Adobe rät vom Hochladen von Asset-Paketen ab, da dies gegen unsere Best Practices verstößt, die Binärdatenverarbeitung in AEM zu vermeiden. Das Hochladen von Assets über JCR-Pakete führt nicht dazu, dass die Verarbeitung dieser Assets in AEM as a Cloud Service ausgelöst wird.
+
+## Einrichten von OpenAPI-basierten AEM Assets-APIs {#setup-openapi-aem-assets}
+
+Wenn `AEM Assets API Users` Produktprofil-Service nicht in Produktions-, Entwicklungs- oder niedrigeren Umgebungen angezeigt wird, die vor November 2024 erstellt wurden, müssen Sie OpenAPI-basierte AEM Assets-APIs einrichten.
+
+Das Einrichten von OpenAPI-basierten AEM Assets-APIs umfasst die Modernisierung der AEM as a Cloud Service-Umgebung und die Aktivierung des Zugriffs auf AEM Assets-APIs. Die Modernisierung muss pro Umgebung (Produktion, Entwicklung und Staging) durchgeführt werden. Weitere Informationen finden Sie unter [Einrichten von OpenAPI-basierten AEM-APIs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ## Asset-Upload {#asset-upload}
 
