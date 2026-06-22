@@ -6,10 +6,10 @@ mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '4302'
-ht-degree: 99%
+source-wordcount: '4380'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Bei Verwendung von RTE können Autorinnen und Autoren Inhalte in einem der folge
 
 * **Microsoft Word-Modus**: Fügen Sie beim Kopieren aus Microsoft Word Text, einschließlich Tabellen, mitsamt Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder Microsoft Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
 
-### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen   {#configure-paste-options-available-on-the-rte-toolbar}
+### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine dieser drei Symbole zur Verfügung stellen:
 
@@ -276,7 +276,7 @@ Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte
 
    * **Name** `cssName`
    * **Typ** `String`
-   * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+   * **Wert** Der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
 1. Fügen Sie demselben Knoten die Eigenschaft `text` hinzu. Dadurch wird der im Auswahlfeld angezeigte Text definiert:
 
@@ -363,7 +363,7 @@ Gehen Sie wie folgt vor, um das Plug-in `paraformat` zu aktivieren:
 
 Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 
-1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/paraformat`, den Sie in [&#x200B; erstellt haben. Dies aktiviert die Dropdown-Auswahl „Format“](#styleselectorlist).
+1. Navigieren Sie in der Komponentendefinition zum Knoten `<rtePlugins-node>/paraformat`, den Sie in [ erstellt haben. Dies aktiviert die Dropdown-Auswahl „Format“](#styleselectorlist).
 1. Erstellen Sie unter dem Knoten `paraformat` einen neuen Knoten, unter dem die Liste der Formate gespeichert werden soll:
 
    * **Name** `formats`
@@ -678,13 +678,13 @@ Beim Hinzufügen von Links in [!DNL Experience Manager] können Sie die zu verwe
 
       * **Name** `cssInternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * CSS-Stil für externe Links
 
       * **Name** `cssExternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * Array gültiger **[!UICONTROL Protokolle]**, einschließlich `https://`, `https://`, `file://`, `mailto:` und andere,
 
