@@ -5,18 +5,18 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9a30310615956afab762d11c2bc95b2ae70de4dc
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 73%
 
 ---
 
 # Assistent zur Projekterstellung {#project-creation-wizard}
 
-Nachdem Sie Ihr Produktionsprogramm erstellt haben, bietet Cloud Manger einen Assistenten zum Erstellen eines minimalen AEM-Projekts auf der Grundlage des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), damit Sie umgehend beginnen können.
+Nachdem Sie Ihr Produktionsprogramm erstellt haben, bietet Cloud Manager einen Assistenten zum Erstellen eines AEM-Projekts auf der Grundlage des [AEM-Projektarchetyps](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview), um Ihnen den Einstieg zu erleichtern.
 
-Gehen Sie wie folgt vor, um mit dem Assistenten ein AEM-Anwendungsprojekt in Cloud Manager zu erstellen.
+Gehen Sie wie folgt vor, um mithilfe des Assistenten ein AEM-Anwendungsprojekt in Cloud Manager zu erstellen.
 
 1. Erstellen Sie ein Produktionsprogramm, indem Sie die im Dokument [Erstellen von Produktionsprogrammen](creating-production-programs.md) beschriebenen Schritte befolgen
 
@@ -28,14 +28,14 @@ Gehen Sie wie folgt vor, um mit dem Assistenten ein AEM-Anwendungsprojekt in Clo
 
    ![Verzweigung und Projekt erstellen](assets/create-wizard2.png)
 
-1. Optional können Sie auf die Trennlinie klicken, um die zusätzlichen Parameter Ihres Projekts anzuzeigen. Die Standardwerte werden vom AEM-Projektarchetyp bereitgestellt und müssen im Allgemeinen nicht geändert werden.
+1. Optional können Sie auf die Trennlinie klicken, um die zusätzlichen Parameter Ihres Projekts anzuzeigen. Der AEM-Projektarchetyp stellt die Standardwerte bereit, die nicht geändert werden müssen.
 
    ![Zusätzliche Projektparameter](assets/create-wizard5.png)
 
 1. Klicken Sie auf **Erstellen**, um den Projekterstellungsprozess zu starten.
 
 
-Eine Karte **Projekterstellung in Bearbeitung** ersetzt jetzt die Aktionsaufrufs-Karte **Verzweigung und Projekt erstellen** am oberen Rand des Bildschirms **Programmübersicht**.
+Die Karte **Projekt wird erstellt** ersetzt jetzt die Karte **Verzweigung und Projekt erstellen** call-to-action oben im Bildschirm **Programmübersicht**.
 
 ![Projekterstellung läuft](assets/create-wizard3.png)
 
