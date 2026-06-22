@@ -26,7 +26,7 @@ Um mit Cloud Manager erfolgreich Projekte zu erstellen und bereitzustellen, müs
 * Cloud Manager erkennt bereitstellbare Inhaltspakete, indem es nach Inhaltspaketen `.zip` -Dateien sucht, die in einem Verzeichnis mit dem Namen `target` enthalten sind. Eine beliebige Anzahl von Untermodulen erzeugt Inhaltspakete.
 * Cloud Manager erkennt bereitstellbare Dispatcher-Artefakte, indem es nach `.zip`-Dateien (ebenfalls in einem Verzeichnis namens `target`) sucht, die Verzeichnisse mit den Namen `conf` und `conf.d` enthalten.
 * Wenn mehrere Inhaltspakete vorhanden sind, ist die Reihenfolge der Paketbereitstellungen nicht garantiert. Wenn eine bestimmte Reihenfolge benötigt wird, können die Abhängigkeiten des Inhaltspakets zum Definieren der Reihenfolge verwendet werden.
-* Pakete werden [ der Bereitstellung ](#skipping-content-packages).
+* Pakete werden [&#x200B; der Bereitstellung &#x200B;](#skipping-content-packages).
 
 ## Aktivieren von Maven-Profilen in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
