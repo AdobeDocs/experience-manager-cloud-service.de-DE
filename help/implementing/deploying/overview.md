@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Grundlagen und Best Practices für die 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '3538'
-ht-degree: 100%
+source-wordcount: '3539'
+ht-degree: 98%
 
 ---
 
@@ -118,9 +118,9 @@ Die Installation veränderlicher Inhalte in Autoren- oder Veröffentlichungsinst
 >[!NOTE]
 >Inhaltspakete werden für alle Umgebungstypen (dev, stage, prod) bereitgestellt. Die Bereitstellung kann nicht auf eine bestimmte Umgebung beschränkt werden. Diese Einschränkung dient dazu, einen Testlauf der automatischen Ausführung zu ermöglichen. Umgebungsspezifische Inhalte müssen manuell über den [Paket-Manager](/help/implementing/developing/tools/package-manager.md) installiert werden.
 
-Außerdem gibt es kein Verfahren, um Änderungen durch veränderliche Inhaltspakete nach deren Anwendung zurückzusetzen. Wenn Kundinnen oder Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
+Außerdem gibt es keinen Mechanismus zum Zurücksetzen der Änderungen des veränderlichen Inhaltspakets, nachdem sie angewendet wurden. Wenn Kundinnen oder Kunden ein Problem entdecken, können sie es in ihrer nächsten Code-Version beheben oder – als letzte Möglichkeit – das ganze System auf einen Zeitpunkt vor der Bereitstellung zurücksetzen.
 
-Für alle enthaltenen Pakete von Drittanbietern muss die Kompatibilität mit AEM as a Cloud Service validiert werden, andernfalls führt ihre Einbeziehung zu einem Bereitstellungsfehler.
+Alle enthaltenen Pakete von Drittanbietern müssen als AEM as a Cloud Service-kompatibel validiert werden. Andernfalls führt ihre Einbeziehung zu einem Bereitstellungsfehler.
 
 Wie bereits erwähnt, sollten sich Kundinnen bzw. Kunden mit bestehender Code-Basis an die Umstrukturierung des Repositorys halten, die durch die in der [Dokumentation zu AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=de) beschriebenen Änderungen des 6.5-Repositorys erforderlich ist.
 

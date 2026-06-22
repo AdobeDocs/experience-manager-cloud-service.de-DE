@@ -6,10 +6,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 90%
+source-wordcount: '1592'
+ht-degree: 87%
 
 ---
 
@@ -44,8 +44,8 @@ Es kann benutzerdefinierter Registrierungs-Code geschrieben werden, der mindeste
 
 **Voraussetzung:**
 
-Damit die oben beschriebene Logik ordnungsgemäß funktioniert, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization),
-indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben.
+Damit die oben beschriebene Logik ordnungsgemäß funktioniert, aktivieren Sie [Datensynchronisierung](#data-synchronization-data-synchronization) durch Senden von
+eine Anfrage an den Kunden-Support mit Angabe des entsprechenden Programms und der entsprechenden Umgebungen.
 
 ### Extern {#external-managed-registration}
 
@@ -68,8 +68,8 @@ Kunden können eigene benutzerdefinierte Komponenten schreiben. Dazu empfehlen w
 
 **Voraussetzung:**
 
-Damit die oben beschriebene Logik ordnungsgemäß funktioniert, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization),
-indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben.
+Damit die oben beschriebene Logik ordnungsgemäß funktioniert, aktivieren Sie [Datensynchronisierung](#data-synchronization-data-synchronization) durch Senden von
+eine Anfrage an den Kunden-Support mit Angabe des entsprechenden Programms und der entsprechenden Umgebungen.
 
 ### Zusammenarbeit mit einem Identitätsanbieter {#integration-with-an-idp}
 
@@ -114,8 +114,7 @@ Informationen zum Anwenderprofil können auf zwei Arten geschrieben und gelesen 
 
 **Voraussetzung:**
 
-Damit die Persistenzlogik des Server-seitigen Benutzerprofils ordnungsgemäß funktioniert, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization),
-indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben.
+Damit die Persistenzlogik des Server-seitigen Benutzerprofils ordnungsgemäß funktioniert, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization), indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben.
 
 ### Datenspeicher von Drittanbietern {#third-party-data-stores}
 
@@ -125,8 +124,7 @@ Der Echtzeitzugriff auf Dienste von Drittanbietern zum Abruf von Profilattribute
 
 **Voraussetzung:**
 
-Damit die oben beschriebene Logik ordnungsgemäß funktioniert, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization),
-indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben.
+Damit die oben beschriebene Logik ordnungsgemäß funktioniert, aktivieren Sie die [Datensynchronisierung](#data-synchronization-data-synchronization), indem Sie eine Anfrage an den Support senden und darin das entsprechende Programm und die entsprechenden Umgebungen angeben.
 
 ## Berechtigungen (geschlossene Benutzergruppen) {#permissions-closed-user-groups}
 

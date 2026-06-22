@@ -4,10 +4,10 @@ description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktio
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ec74b76306fb1321f270ece0bd2a79dc33e8277
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ Die Baumstruktur definiert Datenelemente im Speicher als Schlüssel-Wert-Paare. 
 
 Für die Bearbeitung von JavaScript-Objekten stellt ContextHub die Klasse [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) bereit. Mithilfe der Funktionen dieser Klasse können Sie JavaScript-Objekte bearbeiten, bevor Sie sie einem Speicher hinzufügen oder nachdem Sie sie aus einem Speicher abgerufen haben.
 
-Außerdem bietet die Klasse [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) Funktionen zum Serialisieren von Objekten zu Zeichenfolgen und zum Deserialisieren von Zeichenfolgen zu Objekten. Verwenden Sie diese Klasse zur Behandlung von JSON-Daten, um Browser zu unterstützen, die nativ nicht über die Funktionen `JSON.parse` und `JSON.stringify` verfügen.
+Außerdem stellt die [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json)-Klasse Funktionen zum Serialisieren von Objekten in Zeichenfolgen und zum Deserialisieren von Zeichenfolgen in Objekten bereit. Verwenden Sie diese Klasse zur Behandlung von JSON-Daten, um Browser zu unterstützen, die nativ nicht über die Funktionen `JSON.parse` und `JSON.stringify` verfügen.
 
 ## Interagieren mit ContextHub-Stores {#interacting-with-contexthub-stores}
 
