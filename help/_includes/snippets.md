@@ -1,8 +1,8 @@
 ---
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 99%
+source-wordcount: '1719'
+ht-degree: 93%
 
 ---
 # Snippets {#snippets}
@@ -18,7 +18,7 @@ ht-degree: 99%
 * [Erstellen eines adaptiven AEM-Formulars](/help/forms/creating-adaptive-form-core-components.md)
 * [Hinzufügen eines adaptiven AEM-Formulars zu einer AEM Sites-Seite](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Anwenden von Designs auf ein adaptives AEM-Formular](/help/forms/using-themes-in-core-components.md)
-* [Hinzufügen von Komponenten zu einem adaptiven AEM-Formular](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [Hinzufügen von Komponenten zu adaptiven AEM-Formularen](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [Verwenden von CAPTCHA in einem adaptiven AEM-Formular](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Generieren einer PDF-Version (DoR) eines adaptiven AEM-Formulars](/help/forms/generate-document-of-record-core-components.md)
 * [Übersetzen eines adaptiven AEM-Formulars](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -51,7 +51,7 @@ ht-degree: 99%
 * [An Power Automate senden](/help/forms/forms-microsoft-power-automate-integration.md)
 * [An Workfront Fusion senden](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Verbinden eines adaptiven Formulars mit einer Salesforce-Anwendung](/help/forms/aem-forms-salesforce-integration.md)
-* [Verbinden eines adaptiven Formulars mit Microsoft](/help/forms/configure-msdynamics.md)
+* [Verbinden eines adaptiven Formulars mit Microsoft® Dynamics](/help/forms/configure-msdynamics.md)
 * [Verbinden eines adaptiven Formulars mit Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Erstellen einer benutzerdefinierten Sendeaktion](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
@@ -100,7 +100,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
    <tr>
     <td>Mathematische Vorgänge für das wiederholbare Bedienfeldfeld ausführen </td>
     <td>Vorkonfigurierte mathematische Funktionen können auf wiederholbare Felder in einem Bedienfeld angewendet werden, um Funktionen wie Summe und Durchschnitt mit dem Regeleditor auszuführen. Es müssen zwei Argumente angegeben werden: Das erste gibt das wiederholbare Panel an, das das Feld enthält, während das zweite das Feld innerhalb des entsprechenden wiederholbaren Panels angibt. </td>
-    <td>Mathematische Vorgänge für das wiederholbare Panel können mit den benutzerdefinierten Funktionen ausgeführt werden. Mithilfe des Regeleditors können Sie die mathematischen Funktionen auch direkt auf die Felder des wiederholbaren Bedienfelds anwenden.
+    <td>Mathematische Operationen für das wiederholbare Bedienfeldfeld können mithilfe der benutzerdefinierten Funktionen durchgeführt werden. Sie können die mathematischen Funktionen auch direkt auf die Felder des wiederholbaren Bereichs im Regeleditor anwenden.
    </td>
    </tr>
       <tr>
@@ -166,20 +166,20 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 
 >[!IMPORTANT]
 >
->Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste vorab zu Cloud Manager hinzugefügt wird.
->[Fügen Sie bei Bedarf die IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md), indem Sie den unten stehenden Adressblock kopieren. Die einzelnen Adressen werden durch ein Komma voneinander getrennt. Fügen Sie den Block in das Feld **IP-Adresse/CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
->Um Störungen bei der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird, *bevor* Sie die Pipeline aktivieren.
+>Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste zuvor zu Cloud Manager hinzugefügt wird.
+>Fügen Sie bei Bedarf [ IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) indem Sie den unten stehenden Adressblock kopieren. Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Block in das Feld **IP-Adresse / CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
+>Um eine Unterbrechung der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird *bevor* die Pipeline aktivieren.
 >
->**Cloud Manager-IP-Zulassungsliste**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>**Cloud Manager IP-Zulassungsliste**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,20.14.241.153,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.106.224/28,52.254.107.0/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251,,
 >   
 
 ## Hinzufügen von Cloud Manager-IP-Zulassungsliste und Frontend-Pipelines {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Wenn Sie die Frontend-Pipeline zur Entwicklung von Sites verwenden bzw. verwenden möchten, muss zuvor die Cloud Manager-IP-Zulassungsliste hinzugefügt werden.
->Siehe [Verwenden der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Wenn Sie die Frontend-Pipeline zum Entwickeln von Sites verwenden oder verwenden möchten, muss die Cloud Manager-IP-Zulassungsliste zuvor hinzugefügt werden.
+>Siehe [Verwendung der Cloud Manager-IP-Zulassungsliste mit der Frontend-Pipeline](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## IP-Zulassungslisten und der universelle Editor {#ip-allow-lists-ue}
 
@@ -220,7 +220,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 
@@ -287,3 +287,12 @@ Um die Site-Erstellung zu beschleunigen, bietet Adobe eine Reihe von Vorlagen f�
 * [AEM-Site mit Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) – Zum Erstellen von AEM-Seiten mit dem universellen Editor und zur Bereitstellung über [Edge-Bereitstellung](/help/edge/overview.md)
 * [Edge Delivery Services mit AEM-Authoring für Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) – Zum Erstellen von AEM-Seiten mit dem universellen Editor für Commerce-Projekte und die Bereitstellung über [Edge-Bereitstellung](/help/edge/overview.md)
 * [Standard-AEM-Site-Vorlage](https://github.com/adobe/aem-site-template-standard/releases) – Für das Erstellen herkömmlicher AEM-Seiten und die Bereitstellung über [Veröffentlichungsbereitstellung](/help/sites-cloud/authoring/author-publish.md)
+
+
+## Bei Cloud Manager anmelden {#sign-in-to-cloud-manager}
+
+1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
+   1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
+   1. Klicken Sie im linken Panel auf **Cloud Manager**.
+1. Wählen Sie in Cloud Manager rechts oben auf der Seite die gewünschte Organisation aus.
+
