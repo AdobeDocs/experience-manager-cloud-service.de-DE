@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihrem Produktions- oder Sandbox-Programm eine
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 564e0cf551a52d0e54799a6e9578d916a98438af
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 80%
+source-wordcount: '591'
+ht-degree: 58%
 
 ---
 
@@ -15,22 +15,20 @@ ht-degree: 80%
 
 >[!IMPORTANT]
 >
->Erfahren Sie, warum Sie Ihre Edge Delivery Services-Site in Cloud Manager integrieren müssen. 
->Weitere Informationen finden Sie unter [Vorteile des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Erfahren Sie, warum Sie Ihre Edge Delivery Services-Site in Cloud Manager integrieren müssen.
+>Siehe [Vorteile der Verwendung des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **So fügen Sie eine Edge Delivery-Site zu Cloud Manager hinzu:**
 
-1. Stellen Sie sicher, dass Ihr Programm zuerst mit einer Edge Delivery Services-Lizenz erstellt wird, bevor Sie eine Edge Delivery-Site in Cloud Manager integrieren.
-Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+1. Vergewissern Sie sich, dass Sie Ihr Programm mit einer Edge Delivery Services-Lizenz erstellt haben, bevor Sie eine Edge Delivery-Site in Cloud Manager integrieren.
+Siehe [Erstellen eines Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
    >[!TIP]
    >
    >Wenn Sie eine neue Edge Delivery-Site erstellen möchten, die das AEM-Authoring mit dem universellen Editor verwendet, anstatt eine vorhandene Site zu registrieren, finden Sie weitere Informationen unter [Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). Bei Programmen, die Edge Delivery für die Bereitstellung verwenden, ist möglicherweise keine Veröffentlichungsebene erforderlich. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
-1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie die gewünschte Organisation aus.
+{{sign-in-to-cloud-manager}}
+
 1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm.
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -38,8 +36,8 @@ Weitere Informationen finden Sie unter [Erstellen eines Produktionsprogramms](/h
 
      ![Hinzufügen einer Edge Delivery-Site auf der Registerkarte „Edge Delivery“](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das linke Seitenmenü anzuzeigen.
-Klicken Sie unter der Überschrift **Services** auf ![Web-Seiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery-Sites**.
+   * Klicken Sie oben links auf der Seite auf ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) um das linke Menü zu öffnen.
+Klicken Sie unter **Services** auf ![Web-Seitensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
 Klicken Sie oben rechts auf der Seite auf ![Link-Symbol oder Hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) **Edge Delivery-Site hinzufügen**.
 
      ![Hinzufügen einer Edge Delivery-Site über die Schaltfläche „Edge Delivery-Sites“](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
@@ -50,16 +48,16 @@ Klicken Sie oben rechts auf der Seite auf ![Link-Symbol oder Hinzufügen](https:
    | - | --- |
    | Site-Name | Geben Sie den Namen der Edge Delivery-Site ein, die Sie hinzufügen.<br>Der Name dient als eindeutige Kennung für die Site in Cloud Manager. |
    | Edge Delivery-Herkunft | Dieser Wert gibt den URL-Pfad zur Inhaltsquelle für Ihre Site in Edge Delivery Services an. Außerdem wird dadurch Cloud Manager mit Ihrer Live-Site verknüpft.<br>Die URL umfasst normalerweise *Verzweigung*, *Projekt* und *Mandant*, wie im folgenden Beispiel (nur zu Veranschaulichungszwecken):<br>`https://main--{site}--{org}.aem.live` |
-   | Site-Beschreibung (optional) | Geben Sie eine kurze Beschreibung der Edge Delivery-Site ein, die Sie hinzufügen.<br>Eine Beschreibung hilft, die Site zu identifizieren und zu unterscheiden und so die Verwaltung und Erkennung von anderen von Ihnen hinzugefügten Sites zu vereinfachen. |
+   | Site-Beschreibung (optional) | Geben Sie eine kurze Beschreibung der Edge Delivery-Site ein, die Sie hinzufügen.<br>Eine Beschreibung hilft bei der Identifizierung und Unterscheidung der Site, sodass Sie sie leichter verwalten und unter anderen hinzugefügten Sites erkennen können. |
 
 1. Klicken Sie unten rechts im Dialogfeld auf **Speichern**.
 
-1. Verifizieren Sie im Dialogfeld **Repository-Eigentümerschaft verifizieren** die Eigentümerschaft Ihres Repositorys, indem Sie die folgenden Schritte ausführen:
+1. Überprüfen **im Dialogfeld „Repository** Eigentümerschaft überprüfen“ die Eigentümerschaft Ihres Repositorys, indem Sie Folgendes durchführen:
 
    | Schritt | Beschreibung |
    | - | - |
    | **1** | Fügen Sie eine Datei mit dem Pfad und dem Namen `well-known/adobe/cloudmanager-challenge.txt` zur Verzweigung `main` des Git-Repositorys hinzu, das im Feld **Repository-URL** aufgeführt ist. Fügen Sie am Anfang des Speicherortpfads *keinen* Punkt hinzu.<br>Klicken Sie bei Bedarf auf ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Pfad in die Zwischenablage zu kopieren. |
-   | **2** | Fügen Sie den im Textfeld in Schritt 2 angezeigten Code der Datei hinzu, die Sie gerade in Schritt 1 erstellt haben.<br>Klicken Sie bei Bedarf auf ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Code in die Zwischenablage zu kopieren. |
+   | **2** | Fügen Sie den Code aus dem Textfeld in Schritt 2 der Datei hinzu, die Sie gerade in Schritt 1 erstellt haben.<br>Klicken Sie ggf. auf ![Symbol „Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Code in die Zwischenablage zu kopieren. |
    | **3** | Erstellen Sie eine Pull-Anfrage für die soeben erstellten Änderungen im Git-Repository und führen Sie sie dann mit `main` zusammen, um den Code zu übertragen. |
 
 1. Klicken Sie auf **Überprüfen**.
@@ -70,6 +68,6 @@ Klicken Sie oben rechts auf der Seite auf ![Link-Symbol oder Hinzufügen](https:
 
 
 
-Sobald das Repository verifiziert wurde, wird sein Status in der Tabelle der Edge Delivery-Sites aktualisiert. Der Status wird durch einen grünen Kreis mit weißem Häkchen angegeben.
+Wenn das Repository überprüft wird, wird sein Status in der Edge Delivery Sites-Tabelle aktualisiert. Der Status wird durch einen grünen Kreis mit weißem Häkchen angegeben.
 
 Klicken Sie in derselben Tabelle auf ![Symbol für Informationen zur Edge Delivery-Site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg), um Site-Details anzuzeigen. Zu diesen Informationen gehören die verifizierte Repository-URL sowie die Vorschau- und Produktions-Website-URLs.

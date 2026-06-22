@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1349'
 ht-degree: 20%
 
 ---
@@ -40,7 +40,7 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
 1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
 1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie das entsprechende Unternehmen aus.
+1. Wählen Sie in Cloud Manager die entsprechende Organisation aus.
 1. Klicken Sie auf der **Meine**&quot; auf das Programm, das Sie bearbeiten möchten.
 1. Klicken Sie oben links auf der Seite auf den Namen des Programms und wählen Sie dann **Programm bearbeiten** aus.
 
@@ -176,7 +176,6 @@ Durch das Löschen eines Sandbox-Programms werden alle damit verbundenen Umgebun
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
 1. Klicken Sie im linken Panel auf **Cloud Manager**.
 1. Wählen Sie das entsprechende Unternehmen aus.
-
 1. Klicken Sie auf **[Seite „Meine](#my-programs)**&quot; auf das Sandbox-Programm, das Sie bearbeiten möchten, um seine Details anzuzeigen.
 
 1. Klicken Sie oben links auf der Seite auf den Namen Ihres Sandbox-Programms und wählen Sie **Programm löschen**.
