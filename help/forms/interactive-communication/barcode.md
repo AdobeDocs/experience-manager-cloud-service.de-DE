@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '706'
 ht-degree: 2%
 
 ---
 
 # Barcode-Komponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -154,3 +151,8 @@ Autoren können den Barcode in Layout-Container einbetten und entsprechend dem M
 - Achten Sie auf ausreichende Ränder, um beim Drucken ein Abschneiden zu vermeiden.
 
 Mit der Barcode-Komponente im Editor für interaktive Kommunikation können Dokumentersteller die Lücke zwischen digitalen und physischen Systemen schließen. Bei effektiver Implementierung verbessert es die Automatisierung, verbessert die Benutzerfreundlichkeit und unterstützt die nahtlose Integration mit Scangeräten und -Workflows.
+
+## Siehe auch
+
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Generieren einer PDF-Vorschau im Editor für interaktive Kommunikation](/help/forms/interactive-communication/generate-pdf-preview.md)

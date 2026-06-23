@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 3%
+source-wordcount: '566'
+ht-degree: 5%
 
 ---
 
 # Bildfeldkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -31,7 +28,7 @@ Diese Komponente unterstützt gängige Formate wie **JPEG** und **PNG** und biet
 
 Die Bildfeldkomponente enthält mehrere konfigurierbare Eigenschaften:
 
-2.1. Grundfeld
+2.1. Basisfeld
 
 - **Name:** Definieren Sie eine eindeutige Kennung für das Feld, die zum Verweisen auf Datenmodelle und Regeln verwendet wird.
 
@@ -41,7 +38,7 @@ Die Bildfeldkomponente enthält mehrere konfigurierbare Eigenschaften:
 
 - **Reservebild:** Definieren Sie die Ausrichtung des Bildes (links, rechts, oben oder unten) oder geben Sie eine **benutzerdefinierte Position)** Einheiten wie Millimeter (z. B. 20 mm) an.
 
-2.2. Lage
+2.2. Position
 
 Steuert die räumliche Platzierung des Bildes im Layout.
 
@@ -49,7 +46,7 @@ Steuert die räumliche Platzierung des Bildes im Layout.
 
 - Höhe und Breite (in mm)
 
-2.3. Spanne
+2.3. Rand
 
 Definieren Sie den Abstand um das Textfeld:
 
@@ -61,11 +58,11 @@ Definieren Sie den Abstand um das Textfeld:
 
 - Rechtsbündig
 
-2.4. Erscheinungsbild
+2.4. Darstellung
 
 Erscheinungsbild: Definiert den visuellen Stil des Bildfelds, wählen Sie Vorgaben wie umrandet, flach oder erhöht und passen Sie mit Füllfarbe, Strichbreite und Eckstil (abgerundet oder scharf) an.
 
-2.5. Vorhandensein
+2.5. Präsenz
 
 Bestimmt die Sichtbarkeit der Bildkomponente zur Laufzeit.
 
@@ -108,3 +105,9 @@ Autoren können das Feld zur Ausrichtung in Teilformularen oder Layout-Container
 - Binden des Felds an einen aussagekräftigen Schemapfad bei der Integration mit dem Backend
 
 Die Bildfeldkomponente im Editor für interaktive Kommunikation ist eine vielseitige Komponente, die die Formularinteraktivität verbessert, indem sie das Hochladen visueller Inhalte ermöglicht. Wenn sie mit Stilen, Validierung und Datenbindung entwickelt wurde, unterstützt sie ein nahtloses Benutzererlebnis und eine effiziente Datenerfassung für bildbasierte Übermittlungen.
+
+## Siehe auch
+
+- [Bildkomponente](/help/forms/interactive-communication/image.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

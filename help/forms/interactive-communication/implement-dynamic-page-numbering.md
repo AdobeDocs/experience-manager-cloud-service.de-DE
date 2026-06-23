@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 5%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
 # Dynamische Seitennummerierung im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## Einführung
 
@@ -55,7 +52,7 @@ Unten in der Mitte jeder Seite wird eine Seitennummerierungskomponente im folgen
 
    - Die zweite **##** stellt die Gesamtzahl der Seiten in der Kommunikation dar.
 
-- **Dynamische Anzeige in der PDF-Vorschau:**
+- **Dynamic Display in der PDF-Vorschau:**
 Die Seitenzahlen werden während der PDF-Vorschau dynamisch gerendert, sodass in der endgültigen Ausgabe eine genaue Seitennummerierung angezeigt wird.
 
 ### Beispiel

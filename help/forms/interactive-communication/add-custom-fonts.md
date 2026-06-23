@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: 66bd3730062284a9d155b89a3c653ed7ab86466b
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 8%
+source-wordcount: '135'
+ht-degree: 2%
 
 ---
 
 # Hinzufügen benutzerdefinierter Schriftarten zum Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Mit der Funktion für benutzerdefinierte Schriftarten können Sie das Erscheinungsbild Ihrer interaktiven Kommunikation verbessern, indem Sie benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten verwenden. Mit dieser Funktion können Sie Schriftarten in Ihre AEM Forms as a Cloud Service-Umgebung packen und einbetten, um ein konsistentes PDF-Rendering über Geräte und Plattformen hinweg sicherzustellen.
 

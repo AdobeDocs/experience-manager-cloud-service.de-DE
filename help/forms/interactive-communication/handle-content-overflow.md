@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f19abed5-34a1-4c26-9e92-e219da798dab
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 3%
+source-wordcount: '433'
+ht-degree: 1%
 
 ---
 
 # Umgang mit Inhaltsüberläufen im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## Einführung
 
@@ -70,7 +67,7 @@ Großer Text, der in den Editor eingefügt wird, fließt automatisch über Seite
 - **Überlaufanzeige:**
 Wenn der Inhalt den Container (Teilformular oder Seite) überschreitet, wird der Texteditor zur Bearbeitung erweitert, die Elementhöhe bleibt jedoch unverändert.
 
-- **Visueller Warnhinweis:**
+- **Visueller Alarm:**
 Am Boden des Containers wird ein roter Rand angezeigt, um den Überlauf anzuzeigen.
 
 - **Manuelle Einstellung:**

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 7%
+source-wordcount: '712'
+ht-degree: 4%
 
 ---
 
 # Erste Schritte mit dem Editor für interaktive Kommunikation (IC)
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Der **Editor für interaktive Kommunikation** in Adobe Experience Manager (AEM) Forms ermöglicht es Unternehmen, personalisierte, datengesteuerte Kommunikationen wie Auszüge, Rechnungen und Briefe über digitale Kanäle und Druckkanäle hinweg zu entwerfen und bereitzustellen. Dieses Handbuch bietet einen Überblick über die ersten Schritte - vom Onboarding bis zur Navigation in der Benutzeroberfläche des IC-Editors.
 
@@ -35,7 +32,7 @@ Um die unterstützten Browser und Client-Plattformen zu erfahren, folgen Sie dem
 >[!NOTE]
 >
 > **Unterstützung für Browser mit schnellen Versionszyklen:**
-> Die Versionen von Firefox, Chrome und Edge werden regelmäßig aktualisiert. Adobe ist bestrebt, die Unterstützungsebene wie oben aufgeführt für die künftigen Versionen dieser Browser aufrechtzuerhalten.
+> Die Versionen von Firefox, Chrome und Edge werden regelmäßig aktualisiert. Adobe ist bestrebt, die oben aufgeführte Unterstützungsebene für bevorstehende Versionen dieser Browser beizubehalten.
 
 ### Konfigurieren von Benutzerrollen und Berechtigungen
 
@@ -77,7 +74,7 @@ Die Benutzeroberfläche **Editor für interaktive**) bietet Autorinnen und Autor
 
 **Enthält:**
 
-Zeigt die **Adobe Experience Cloud-Umgebung** (z. B. Staging) zusammen mit den **Projekttitel**, **Beta-**, **Benachrichtigungen** und **Profilsteuerelementen** für die Verwaltung von Benutzereinstellungen und Umgebungszugriff.
+Zeigt die **Adobe Experience Cloud-Umgebung** (z. B. Staging) zusammen mit den **Projekttitel**, **Beta-Feedback**, **Benachrichtigungen** und **Profil-** für die Verwaltung von Benutzereinstellungen und Umgebungszugriff.
 
 ### &#x200B;2. Registerkartenleiste (Design/Master-Registerkarten und Dateisteuerelemente)
 
@@ -95,7 +92,7 @@ Zeigt die **Adobe Experience Cloud-Umgebung** (z. B. Staging) zusammen mit den *
 
 **Steuerelemente anzeigen:** Optionen wie Regel, Erstellung, Zoom (85 %), Rückgängig/Wiederholen, Löschen, PDF-Vorschau und Speichern
 
-### &#x200B;3. Linkes Bedienfeld (Navigations- und Komponenten-Tools)
+### &#x200B;3. Linkes Bedienfeld (Navigation und Komponenten-Tools)
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/left-panel.png)
 
@@ -137,7 +134,7 @@ Zeigt die **Adobe Experience Cloud-Umgebung** (z. B. Staging) zusammen mit den *
 
 * Vorschau des endgültigen Layouts vor der Veröffentlichung
 
-### &#x200B;5. Rechter Bereich (Eigenschaftenbereich)
+### &#x200B;5. Rechter Bereich (Bedienfeld „Eigenschaften„)
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/right-panel.png)
 

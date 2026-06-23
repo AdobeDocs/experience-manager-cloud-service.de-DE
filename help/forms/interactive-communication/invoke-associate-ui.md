@@ -6,16 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1142'
 ht-degree: 2%
 
 ---
 
 # Integrieren der Associate-Benutzeroberfläche in Ihr Programm
 
-<span> Die Funktion für interaktive Kommunikation ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie eine E-Mail von Ihrer Geschäftsadresse an `aem-forms-ea@adobe.com`, um Zugriff anzufordern.</span>
 
 In diesem Artikel wird erläutert, wie Sie die Benutzeroberfläche „Verknüpfen“ in Ihr Programm integrieren und es kundenorientierten Fachleuten wie Außendienstmitarbeitern und Service-Agenten ermöglichen, in Echtzeit personalisierte interaktive Kommunikation in Veröffentlichungsinstanzen zu generieren.
 
@@ -483,7 +482,7 @@ Geben Sie die Daten ein, und die Benutzeroberfläche „Verknüpfen“ wird wie 
 
 **Lösung**:
 - Überprüfen Sie, ob die IC-ID korrekt ist und die IC veröffentlicht wurde
-- Browser-Konsole auf JavaScript-Fehler prüfen
+- Überprüfen der Browser-Konsole auf JavaScript-Fehler
 - Stellen Sie sicher, dass die `postMessage` genau mit der Spezifikation übereinstimmt
 - Überprüfen, ob der Formulardatenmodell-Service richtig konfiguriert ist
 
@@ -523,5 +522,3 @@ When implementing the Associate UI integration, follow these best practices:
 - [Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Übermittlungs-Workflow für Associate UI - IC-Generierung der PDF-Ausgabe](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-- [Interaktive Kommunikation in der Cloud](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
-- [Funktionen für frühzeitigen Zugriff](/help/forms/early-access-ea-features.md)

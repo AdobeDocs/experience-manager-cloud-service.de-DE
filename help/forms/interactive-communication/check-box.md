@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
 # Kontrollkästchenkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -120,3 +117,9 @@ Kontrollkästchen können in Layout-Rastern oder Bedienfeldern platziert und zur
 - Verwenden Sie Sichtbarkeitsregeln, wenn Kontrollkästchen von vorherigen Eingaben oder Bedingungen abhängig sind.
 
 Die Kontrollkästchenkomponente im Editor für interaktive Kommunikation ist eine einfache, aber wichtige Komponente für binäre Eingaben. Durch die Unterstützung für Formatierung, bedingte Präsenz und flexible Datenbindung spielt sie eine wichtige Rolle bei der Verbesserung der Interaktivität und Benutzerkontrolle in intelligenten digitalen Formularen. Wenn Kontrollkästchen mit durchdachten Beschriftungen, konsistentem Stil und aussagekräftiger Datenintegration implementiert werden, tragen sie erheblich zu einem reibungslosen und intuitiven Formularerlebnis bei.
+
+## Siehe auch
+
+- [Optionsschaltflächen-Komponente](/help/forms/interactive-communication/radio-button.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

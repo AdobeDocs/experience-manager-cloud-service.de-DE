@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 1%
 
 ---
 
 # Textfeldkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -130,3 +127,11 @@ Autoren können das Feld zur Ausrichtung in Teilformularen oder Layout-Rastern p
 - Für einfachere Wartung möglichst direkt an das Datenmodell binden.
 
 Die Textfeldkomponente im IC-Editor ist ein vielseitiger Baustein, der die Datenerfassung optimiert. Durch eine sorgfältige Konfiguration mit gut ausgewählter Typografie, klaren Beschriftungen, ordnungsgemäßer Validierung und solider Datenbindung bietet sie ein nahtloses, benutzerfreundliches Erlebnis und zuverlässige Daten für die nachgelagerte Verarbeitung.
+
+## Siehe auch
+
+- [Textfeld-Komponente](/help/forms/interactive-communication/text-box.md)
+- [Numerische Feldkomponente](/help/forms/interactive-communication/numeric-field.md)
+- [Ungebundene Variablenkomponente](/help/forms/interactive-communication/unbound-variable.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

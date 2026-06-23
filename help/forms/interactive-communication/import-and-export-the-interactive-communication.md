@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
 # Interaktive Kommunikation importieren und exportieren
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Die Import- und Exportfunktion in Interactive Communication (IC) ermöglicht es Benutzern, die Kommunikation über Umgebungen hinweg nahtlos zu migrieren, wiederzuverwenden und zu verwalten. Dadurch können Sie eine interaktive Kommunikation (IC) zusammen mit den zugehörigen Fragmenten und Datenmodellen aus einer Umgebung exportieren und in eine andere importieren, was Konsistenz gewährleistet und den doppelten Aufwand bei der Bereitstellung reduziert.
 
@@ -48,7 +45,7 @@ Erstellen Sie eine interaktive Kommunikation (IC) in einer Umgebung und verwende
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/uploadfile.png)
 
-2.4. Nach dem Hochladen wird die IC zusammen mit den zugehörigen Fragmenten und dem Datenmodell angezeigt.
+2.4. Nach dem Hochladen wird die ID zusammen mit den zugehörigen Fragmenten und dem Datenmodell angezeigt.
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/importfragment.png)
 +++

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 4%
 
 ---
 
 # Textfeldkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -27,7 +24,41 @@ Das Textfeld unterstützt **Datenbindung**, sodass Autoren statische und dynamis
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/textbox.png)
 
-## &#x200B;2. Eigenschaften
+## &#x200B;2. Anzeigemuster
+
+Sie können einem Textfeld **Bereich** Eigenschaften **ein** zuweisen. Anzeigemuster steuern, wie Feldwerte den Endbenutzern in der Vorschau der Arbeitsfläche und in der generierten Ausgabe angezeigt werden - z. B. maskieren eines Texteintrags als Telefonnummer: **(555) 123-4567**.
+
+Das konfigurierte Muster wird sofort in der Vorschau der Arbeitsfläche angezeigt und bleibt über die Speicher- und Neuladungszyklen hinweg erhalten. Für erweiterte Anwendungsfälle können Sie eine **benutzerdefinierte XFA-Bildklausel) definieren** um das gewünschte Ausgabeformat zu erzielen.
+
+### Konfigurieren eines Anzeigemusters
+
+1. Wählen Sie die Textfeldkomponente auf der Design-Arbeitsfläche aus.
+2. Öffnen Sie das Bedienfeld **Eigenschaften**.
+3. Wählen **im Abschnitt** ein vordefiniertes Muster aus oder geben Sie eine benutzerdefinierte Bildklausel ein.
+4. Zeigen Sie eine Vorschau des formatierten Werts auf der Arbeitsfläche an.
+
+### Beispiel für ein benutzerdefiniertes Muster (Text)
+
+| Muster | Beispielausgabe | Beschreibung |
+|---------|----------------|-------------|
+| `text{(999) 999-9999}` | (555) 123-4567 | Rufnummernmaske |
+
+**Picture-Klauselsymbole (Text):**
+
+| Symbol | Bedeutung |
+|--------|---------|
+| 9 | Entspricht einer Ziffer |
+| A | Passt zu einem Brief |
+| O | Entspricht alphanumerischen Zeichen |
+| X | Entspricht einem beliebigen Zeichen |
+
+### Best Practices
+
+- Wählen Sie ein Muster aus, das der Art und Weise entspricht, wie die Endbenutzer den Wert lesen möchten (Telefon, ID, Postleitzahl).
+- Validieren von Beispieldaten auf der Arbeitsfläche vor der Veröffentlichung.
+- Verwenden Sie benutzerdefinierte Bildklauseln nur, wenn vordefinierte Muster Ihre Formatierungsanforderungen nicht erfüllen.
+
+## &#x200B;3. Eigenschaften
 
 Die Textfeldkomponente bietet eine Vielzahl von Eigenschaften, die Ihnen bei der Konfiguration von Erscheinungsbild, Verhalten und Verhalten helfen.
 
@@ -81,7 +112,7 @@ Definieren Sie den Abstand um das Textfeld:
 
 
 
-## &#x200B;3. Verwendung
+## &#x200B;4. Nutzung
 
 Das Textfeld wird verwendet für:
 
@@ -95,7 +126,7 @@ Das Textfeld wird verwendet für:
 
 Autoren können das Textfeld aus der Komponentenbibliothek in die Design-Ansicht oder die Master-Ansicht ziehen und sein Verhalten mithilfe des Bedienfelds „Eigenschaften“ konfigurieren.
 
-## 4. Best Practices
+## 5. Best Practices
 
 - Verknüpfen Sie Textfelder immer mit aussagekräftigen Feldbezeichnungen, um die Barrierefreiheit zu verbessern.
 
@@ -106,3 +137,12 @@ Autoren können das Textfeld aus der Komponentenbibliothek in die Design-Ansicht
 - Vermeiden Sie übermäßige Schriftstile, die die Lesbarkeit beeinträchtigen könnten.
 
 Durch sorgfältige Konfiguration der Eigenschaften von Textfeldern können Autorinnen und Autoren im Editor für interaktive Kommunikation in AEM interaktive, responsive und benutzerfreundliche Kommunikationserlebnisse erstellen.
+
+## Siehe auch
+
+- [Numerische Feldkomponente](/help/forms/interactive-communication/numeric-field.md)
+- [Komponente „Datumsfeld“](/help/forms/interactive-communication/date-field.md)
+- [Datum/Uhrzeit-Feldkomponente](/help/forms/interactive-communication/date-time-field.md)
+- [Ungebundene Variablenkomponente](/help/forms/interactive-communication/unbound-variable.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

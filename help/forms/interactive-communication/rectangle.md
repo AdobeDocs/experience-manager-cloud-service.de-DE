@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 4%
+source-wordcount: '415'
+ht-degree: 7%
 
 ---
 
 # Rechteckkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -34,7 +31,7 @@ Die Komponente Rechteck enthält mehrere anpassbare Eigenschaften:
 
 Name: Eine eindeutige Kennung für das Rechteck. Wird hauptsächlich für die Referenzierung in Layout-Hierarchien oder die konsistente Anwendung von Stilen verwendet.
 
-2.2. Lage
+2.2. Position
 
 - **Beschreibung:** Bestimmt, wo das Rechteck im Dokument-Layout angezeigt wird.
 
@@ -44,7 +41,7 @@ Name: Eine eindeutige Kennung für das Rechteck. Wird hauptsächlich für die Re
 
    - **Höhe und Breite (in mm):** die Größe des Rechtecks.
 
-2.3. Spanne
+2.3. Rand
 
 Definiert den Abstand um die Rechteckkomponente, um sie von anderen Benutzeroberflächenelementen zu trennen:
 
@@ -56,7 +53,7 @@ Definiert den Abstand um die Rechteckkomponente, um sie von anderen Benutzerober
 
 - Rechtsbündig
 
-2.4. Erscheinungsbild
+2.4. Darstellung
 
 - **Beschreibung:** Steuert die visuelle Formatierung des Rechtecks.
 
@@ -72,7 +69,7 @@ Definiert den Abstand um die Rechteckkomponente, um sie von anderen Benutzerober
 
    - **Kanten:** Steuert das Erscheinungsbild der Ecke (z. B. abgerundete oder scharfe Kanten).
 
-2.5. Vorhandensein
+2.5. Präsenz
 
 - **Beschreibung:** Gibt an, ob das Rechteck beim Rendern der Kommunikation angezeigt wird.
 
@@ -109,3 +106,9 @@ Rechtecke können mit anderen Layout-Elementen wie Teilformularen oder Container
 - Blenden Sie Rechtecke aus, wenn sie nur für Entwurfszwecke während der Bearbeitung benötigt werden, aber in der endgültigen Ausgabe nicht erforderlich sind.
 
 Die Rechteckkomponente ist ein nicht interaktives, aber leistungsstarkes Tool im IC-Editor. Wenn sie gestaltet und effektiv positioniert sind, verbessert sie die Layout-Genauigkeit, den visuellen Fluss und das Benutzererlebnis, ohne die Datenbindung oder Interaktivität zu vereinfachen.
+
+## Siehe auch
+
+- [LINE-Komponente](/help/forms/interactive-communication/line.md)
+- [Bildkomponente](/help/forms/interactive-communication/image.md)
+- [Überlauf von Inhalten im Editor für interaktive Kommunikation handhaben](/help/forms/interactive-communication/handle-content-overflow.md)

@@ -5,18 +5,15 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 4%
+source-wordcount: '440'
+ht-degree: 1%
 
 ---
 
 # Übermittlungs-Workflow für die Associate-Benutzeroberfläche
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 In diesem Artikel wird erläutert, wie Übermittlung und Workflow funktionieren, wenn Sie einen Workflow für die Benutzeroberfläche „Verknüpfen“ aktivieren. Anschließend wird erläutert, wie ein Übermittlungs-Workflow konfiguriert wird. In der exemplarischen Vorgehensweise wird das Generieren einer PDF aus der IC-Payload (Interactive Communication) als Beispiel verwendet. Sie können die Schritte für andere Workflow-Typen anpassen.
 

@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 3%
+source-wordcount: '865'
+ht-degree: 5%
 
 ---
 
 # Datums-/Uhrzeitfeld-Komponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -27,11 +24,43 @@ Das Feld unterstützt verschiedene Formatierungsoptionen (z. B. TT/MM/JJJJ, 24-S
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/datetime.png)
 
-## &#x200B;2. Eigenschaften
+## &#x200B;2. Anzeigemuster
+
+Sie können einem Datums **/Uhrzeit** Feld im Bedienfeld **Eigenschaften** ein „Anzeigemuster“ zuweisen, z. B.: **04/01/2007 2:3010**.
+
+Das konfigurierte Muster wird sofort in der Vorschau der Arbeitsfläche angezeigt und bleibt über die Speicher- und Neuladungszyklen hinweg erhalten. Für erweiterte Anwendungsfälle können Sie eine **benutzerdefinierte XFA-Bildklausel) definieren** um das gewünschte Ausgabeformat zu erzielen.
+
+### Konfigurieren eines Anzeigemusters
+
+1. Wählen Sie die Komponente Datums-/Uhrzeitfeld auf der Design-Arbeitsfläche aus.
+2. Öffnen Sie das Bedienfeld **Eigenschaften**.
+3. Wählen **im Abschnitt** ein vordefiniertes Muster aus oder geben Sie eine benutzerdefinierte Bildklausel ein.
+4. Zeigen Sie eine Vorschau des formatierten Werts auf der Arbeitsfläche an.
+
+### Beispiel für ein benutzerdefiniertes Muster (Datum/Uhrzeit)
+
+| Muster | Beispielausgabe | Beschreibung |
+|---------|----------------|-------------|
+| `date{MM/DD/YYYY} time{HH:MM}` | 04/01/2007 14:30 | Kombiniertes Datum und Uhrzeit |
+
+**Allgemeine Zeit-Token:**
+
+| Token | Bedeutung |
+|-------|---------|
+| HH | 24-stündig |
+| h | 12-stündig |
+| MM | Minuten |
+| A | Vormittag/Nachmittag |
+
+>[!NOTE]
+>
+> Die zugrunde liegenden Datums-/Uhrzeitwerte müssen dem **ISO 8601** im Format **JJJJ-MM-TT:MM** entsprechen (z. B. `2007-04-01T14:30`). Werte, die diesem Format nicht folgen, werden unverändert angezeigt, ohne dass eine Musterformatierung angewendet wird.
+
+## &#x200B;3. Eigenschaften
 
 Die Komponente „Datum/Uhrzeit-Feld“ enthält mehrere konfigurierbare Eigenschaften:
 
-2.1. Grundfeld
+2.1. Basisfeld
 
 - **Name:** Eine eindeutige Kennung für das Feld. Wird für Referenzierungen in Regeln, Ausdrücken und Datenbindungen verwendet.
 
@@ -53,7 +82,7 @@ Steuert den Stil des Textes innerhalb des Datums-/Uhrzeitfelds:
 
 - **Schriftgröße:** Standardeinstellung ist 10 pt, um die Konsistenz mit dem Formularlayout zu wahren.
 
-2.3. Lage
+2.3. Position
 
 - **Beschreibung:** Definiert die Platzierung des Datums-/Uhrzeitfelds im Formularlayout.
 
@@ -63,7 +92,7 @@ Steuert den Stil des Textes innerhalb des Datums-/Uhrzeitfelds:
 
    - **Höhe und Breite** (gemessen in mm oder Pixeln) für die präzise Größenbestimmung des Felds.
 
-2.4. Spanne
+2.4. Rand
 
 Definiert Abstände um das Feld für saubere Ausrichtung und Layout-Flexibilität:
 
@@ -75,7 +104,7 @@ Definiert Abstände um das Feld für saubere Ausrichtung und Layout-Flexibilitä
 
 - Rechtsbündig
 
-2.5. Erscheinungsbild
+2.5. Darstellung
 
 Definiert den Stil des Containers, um visuelle Konsistenz und Klarheit zu gewährleisten:
 
@@ -89,7 +118,7 @@ Definiert den Stil des Containers, um visuelle Konsistenz und Klarheit zu gewäh
 
 - **Kanten** Wählen Sie je nach Formulardesign aus scharfen oder abgerundeten Ecken.
 
-2.6. Vorhandensein
+2.6. Präsenz
 
 Bestimmt, wie sich das Feld zur Laufzeit verhält:
 
@@ -109,7 +138,7 @@ Verknüpft das Feld mit einer Datenquelle, um Werte zu speichern oder abzurufen.
 
 - **Keine Datenbindung:** Feld ist mit keinen Backend-Daten verbunden (nur für visuelle oder berechnete Werte verwendet).
 
-## &#x200B;3. Verwendung
+## &#x200B;4. Nutzung
 
 Das Datums-/Uhrzeitfeld eignet sich ideal für Szenarien, in denen konsistente zeitliche Daten erforderlich sind. Häufige Anwendungsszenarien umfassen:
 
@@ -123,7 +152,7 @@ Das Datums-/Uhrzeitfeld eignet sich ideal für Szenarien, in denen konsistente z
 
 Autoren können das Feld mit Layout-Containern, Validierungen oder bedingten Regeln kombinieren, um das Format, die erforderlichen Felder und die kontextsensitive Sichtbarkeit zu steuern.
 
-## 4. Best Practices
+## 5. Best Practices
 
 - Verwenden Sie klare Beschriftungen wie „Datum auswählen“ oder „Terminzeit“, um Benutzer zu leiten.
 
@@ -138,3 +167,12 @@ Autoren können das Feld mit Layout-Containern, Validierungen oder bedingten Reg
 - Binden Sie das Feld an einen gültigen Schemapfad, um eine ordnungsgemäße Datenerfassung und -verarbeitung sicherzustellen.
 
 Die Komponente „Datum/Uhrzeit-Feld“ im Editor für interaktive Kommunikation ist eine leistungsstarke und benutzerfreundliche Komponente, die die zeitbasierte Eingabe optimiert. Mit der richtigen Konfiguration für Stil, Datenverarbeitung und Layout-Steuerelemente ermöglicht es saubere, zuverlässige und intuitive Formularerlebnisse sowohl für Benutzer als auch für Backend-Systeme.
+
+## Siehe auch
+
+- [Textfeld-Komponente](/help/forms/interactive-communication/text-box.md)
+- [Numerische Feldkomponente](/help/forms/interactive-communication/numeric-field.md)
+- [Komponente „Datumsfeld“](/help/forms/interactive-communication/date-field.md)
+- [Ungebundene Variablenkomponente](/help/forms/interactive-communication/unbound-variable.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

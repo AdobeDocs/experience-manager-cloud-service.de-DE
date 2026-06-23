@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 3%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
 
 # Vorlagensperre im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -88,3 +85,11 @@ Speichern Sie die Vorlage und erstellen Sie eine neue auf ihr basierende ID, um 
 - **Verwenden Sie Layout-Sperren, um Konsistenz zu gewährleisten**: Vermeiden Sie falsche Ausrichtung oder visuelle Verzerrungen in häufig wiederverwendeten Vorlagen.
 
 - **Nutzung von Sperren mitteilen:** Stellen Sie sicher, dass nachgelagerten Benutzern bewusst ist, welche Abschnitte absichtlich eingeschränkt sind, um Verwirrung zu vermeiden.
+
+- **Sperren verhindern, dass zur Masterseite verschoben wird:** Wenn Sie eine Inhalts- oder Layout-Sperre auf eine Komponente anwenden, können Sie **Zur Masterseite verschieben** nicht verwenden. Entfernen Sie zuerst die Sperre oder planen Sie beim Entwerfen der Vorlage die Platzierung der Komponente auf der Musterseite.
+
+## Siehe auch
+
+- [Verschieben einer Komponente auf die Musterseite](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+- [Implementieren der dynamischen Seitennummerierung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
+- [Erstellen einer Vorlage für interaktive Kommunikation](/help/forms/interactive-communication/create-interactive-communication-template.md)
