@@ -167,7 +167,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!IMPORTANT]
 >
 >Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste zuvor zu Cloud Manager hinzugefügt wird.
->Fügen Sie bei Bedarf [ IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) indem Sie den unten stehenden Adressblock kopieren. Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Block in das Feld **IP-Adresse / CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
+>Fügen Sie bei Bedarf [&#x200B; IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) indem Sie den unten stehenden Adressblock kopieren. Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Block in das Feld **IP-Adresse / CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
 >Um eine Unterbrechung der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird *bevor* die Pipeline aktivieren.
 >
 >**Cloud Manager IP-Zulassungsliste**
