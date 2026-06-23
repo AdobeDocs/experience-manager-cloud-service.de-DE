@@ -7,7 +7,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 21%
@@ -164,7 +164,7 @@ Ready to start? The Interactive Communications editor is available under the Ear
 
 Sie können AEM Forms mit Adobe Experience Platform (AEP) verbinden, um Kundenprofile und Daten für personalisierte Formularerlebnisse und nachgelagerte Trigger-Workflows auf der Grundlage von Formularübermittlungen zu nutzen. Durch das direkte Senden von Formulardaten an AEP-Datensätze können Sie Kundenprofile anreichern und tiefere Einblicke in Benutzerinteraktionen erhalten.
 
-Bereit zum Start? [&#x200B; Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+Bereit zum Start? [ Erfahren Sie mehr über die Integration von AEM Forms mit Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
 
 ### AEM FORMS HTML5 FORMS
 
@@ -208,7 +208,7 @@ not sure what's going on with this video link. cleaned up version below
 * **Entwicklerproduktivität**: Konzentrieren Sie sich auf die Erstellung von Business-Logik und Benutzeroberfläche, während die CLI sich wiederholende Einrichtungsaufgaben übernimmt.
 * **Nahtlose Integration**: Generierte Komponenten können verwendet und in bestehende AEM Forms-Projekte integriert werden.
 
-Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [&#128279;](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
+Bereit zum Start? Das AEM Forms-CLI-Tool ist im Rahmen des Early-Access-Programms für Forms as a Cloud Service-Bereitstellungen verfügbar. Um den Zugriff anzufordern, senden Sie Ihre Organisations-ID und Programmdetails per E-Mail an [](mailto:aem-forms-ea@adobe.com)aem-forms-ea@adobe.com) von Ihrer offiziellen Adresse.
 
 ### API-Integrationstool für dynamische Formulardaten
 
@@ -357,4 +357,5 @@ Adaptive Forms-Kernkomponenten führen WCAG-konformes semantisches Markup für K
 * [Funktionen von AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Unterschied zwischen AEM 6.5 Forms (AMS und On-Premise) und AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
+
 

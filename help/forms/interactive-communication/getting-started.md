@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 4%
@@ -27,7 +27,7 @@ Um die interaktive Kommunikation zu verwenden, stellen Sie sicher, dass Ihre AEM
 
 ### Browser überprüfen
 
-Um die unterstützten Browser und Client-Plattformen zu erfahren, folgen Sie dem verknüpften Artikel [Unterstützte Client-Plattformen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Um die unterstützten Browser und Client-Plattformen zu erfahren, folgen Sie dem verknüpften Artikel [Unterstützte Client-Plattformen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Der Zugriff auf IC Editor-Funktionen wird durch [Benutzerrollen innerhalb von AE
 | **Formularautor** | Erstellt und bearbeitet interaktive Kommunikationen. | ICs erstellen, bearbeiten, in der Vorschau anzeigen und veröffentlichen. |
 | **Vorlagenerstellung** | Entwirft wiederverwendbare Vorlagen für interaktive Kommunikation. | Erstellen und sperren Sie Vorlagen, definieren Sie Layouts. |
 | **Administrator** | Verwaltet Benutzerzugriff, Berechtigungen und Konfigurationen. | Rollen zuweisen, Vorlagen verwalten, ICs veröffentlichen. |
-| **FDM-Autor** | [Erstellt und verwaltet Formulardatenmodelle (FDM) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) Datenintegration. | Erstellen, Bearbeiten und Konfigurieren von Datenquellen und Modellen. |
+| **FDM-Autor** | [Erstellt und verwaltet Formulardatenmodelle (FDM) ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) Datenintegration. | Erstellen, Bearbeiten und Konfigurieren von Datenquellen und Modellen. |
 
 >[!NOTE]
 >
@@ -149,3 +149,4 @@ Zeigt die **Adobe Experience Cloud-Umgebung** (z. B. Staging) zusammen mit den *
 * Layout- und Darstellungsoptionen
 
 * Steuerelemente für Paginierung, Position, Präsenz und Datenbindung
+

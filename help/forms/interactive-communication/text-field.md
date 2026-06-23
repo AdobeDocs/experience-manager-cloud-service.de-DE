@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%
@@ -135,3 +135,4 @@ Die Textfeldkomponente im IC-Editor ist ein vielseitiger Baustein, der die Daten
 - [Ungebundene Variablenkomponente](/help/forms/interactive-communication/unbound-variable.md)
 - [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
 - [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)
+

@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -90,3 +90,4 @@ Nach Aktivierung der Associate-Ansicht und optionaler Konfiguration des Workflow
 - [Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Übermittlungs-Workflow für die Associate-Benutzeroberfläche - IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md) - Funktionsweise von Übermittlung und Workflow sowie ein Beispiel-Workflow, der PDF aus IC-Übermittlungen generiert.
+

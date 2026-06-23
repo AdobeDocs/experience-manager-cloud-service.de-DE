@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Um ein Fragment für interaktive Kommunikation zu erstellen, führen Sie die fol
 
 1. Bei Auswahl des Fragments Interaktive Kommunikation wird ein Bildschirm angezeigt, in dem Sie wichtige Fragmentdetails wie Titel, Name, Beschreibung, Datenmodell (eine strukturierte Darstellung von Backend-Daten) und Tags definieren.
 
-   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![IC-Dokument suchen](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
@@ -50,3 +50,4 @@ Durch die Erstellung interaktiver Kommunikationsfragmente stellen Sie die Konsis
 
 [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
 [Erstellen einer interaktiven Kommunikationsvorlage](/help/forms/interactive-communication/create-interactive-communication-template.md)
+

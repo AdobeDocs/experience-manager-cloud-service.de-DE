@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -70,3 +70,4 @@ Autoren können **Fragmente direkt** die Arbeitsfläche ziehen und dort ablegen.
 - Verwenden Sie die Versionskontrolle, um Aktualisierungen über XDP- und Fragmentabhängigkeiten hinweg zu verwalten.
 
 - Überprüfen Sie die Datenbindungen nach der Bearbeitung, um das korrekte Rendering zu bestätigen.
+
