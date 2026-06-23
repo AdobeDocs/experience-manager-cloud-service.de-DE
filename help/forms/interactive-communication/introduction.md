@@ -54,7 +54,7 @@ Der Editor für interaktive Kommunikation (IC) wurde für Effizienz, Benutzerfre
 
 Um mit der interaktiven Kommunikation zu beginnen, folgen Sie der Dokumentation [Einstieg in den Service](/help/forms/setup-forms-cloud-service.md), um die interaktive Kommunikation in Ihrer AEM Forms-Umgebung zu aktivieren.
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Nächste Schritte
 

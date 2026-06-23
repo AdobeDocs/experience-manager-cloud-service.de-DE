@@ -35,7 +35,7 @@ Um ein Fragment für interaktive Kommunikation zu erstellen, führen Sie die fol
 
 1. Bei Auswahl des Fragments Interaktive Kommunikation wird ein Bildschirm angezeigt, in dem Sie wichtige Fragmentdetails wie Titel, Name, Beschreibung, Datenmodell (eine strukturierte Darstellung von Backend-Daten) und Tags definieren.
 
-   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Weitere Informationen finden Sie im [Datenmodell-Konfigurationshandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![IC-Dokument suchen](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
