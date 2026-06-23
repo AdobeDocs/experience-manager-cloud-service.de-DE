@@ -83,7 +83,7 @@ Führen Sie diese Schritte als Autor aus.
 
    ![Resolve 3](/help/forms/interactive-communication/assets/add-annotate8.png)
 
-1. Nachdem Sie einen Kommentar beantwortet haben, klicken Sie im Abschnitt ******Kommentare** auf „Auflösen“.
+1. Nachdem Sie einen Kommentar beantwortet haben, klicken Sie im Abschnitt **&#x200B;**&#x200B;**Kommentare** auf „Auflösen“.
 
 1. Wiederholen Sie die Schritte 2 bis 4 für jede verbleibende Anmerkung.
 
@@ -119,7 +119,7 @@ Anmerkungspins sind direkt auf der Arbeitsfläche im Editor für interaktive Kom
 Anzahl Anmerkungen sind nur Teil des Authoring- und Review-Workflows. Sie werden nie in veröffentlichte oder kundenorientierte Ausgaben aufgenommen.
 
 **Was ist der Unterschied zwischen einer Anmerkung und einem Kommentar?**
-Eine Anmerkung ist ein positionierter Pin, der an eine bestimmte Komponente auf der Arbeitsfläche gebunden und in der schreibgeschützten Anmerkungsansicht sichtbar ist. Ein Kommentar ist ein allgemeiner Hinweis, der an die interaktive Kommunikation als Ganzes angehängt und im Bedienfeld „Kommentare“ im Editor hinzugefügt wird. Einzelheiten [ Kommentare finden Sie unter ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) und Kommentare .
+Eine Anmerkung ist ein positionierter Pin, der an eine bestimmte Komponente auf der Arbeitsfläche gebunden und in der schreibgeschützten Anmerkungsansicht sichtbar ist. Ein Kommentar ist ein allgemeiner Hinweis, der an die interaktive Kommunikation als Ganzes angehängt und im Bedienfeld „Kommentare“ im Editor hinzugefügt wird. Einzelheiten [&#x200B; Kommentare finden Sie unter &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) und Kommentare .
 
 ## Siehe auch
 
