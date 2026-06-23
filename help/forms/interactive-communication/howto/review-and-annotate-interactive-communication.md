@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: review-annotate-interactive-communication
-source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -83,7 +83,7 @@ Führen Sie diese Schritte als Autor aus.
 
    ![Resolve 3](/help/forms/interactive-communication/assets/add-annotate8.png)
 
-1. Nachdem Sie einen Kommentar beantwortet haben, klicken Sie im Abschnitt **&#x200B;**&#x200B;**Kommentare** auf „Auflösen“.
+1. Nachdem Sie einen Kommentar beantwortet haben, klicken Sie im Abschnitt ******Kommentare** auf „Auflösen“.
 
 1. Wiederholen Sie die Schritte 2 bis 4 für jede verbleibende Anmerkung.
 
@@ -119,10 +119,11 @@ Anmerkungspins sind direkt auf der Arbeitsfläche im Editor für interaktive Kom
 Anzahl Anmerkungen sind nur Teil des Authoring- und Review-Workflows. Sie werden nie in veröffentlichte oder kundenorientierte Ausgaben aufgenommen.
 
 **Was ist der Unterschied zwischen einer Anmerkung und einem Kommentar?**
-Eine Anmerkung ist ein positionierter Pin, der an eine bestimmte Komponente auf der Arbeitsfläche gebunden und in der schreibgeschützten Anmerkungsansicht sichtbar ist. Ein Kommentar ist ein allgemeiner Hinweis, der an die interaktive Kommunikation als Ganzes angehängt und im Bedienfeld „Kommentare“ im Editor hinzugefügt wird. Einzelheiten [&#x200B; Kommentare finden Sie unter &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) und Kommentare .
+Eine Anmerkung ist ein positionierter Pin, der an eine bestimmte Komponente auf der Arbeitsfläche gebunden und in der schreibgeschützten Anmerkungsansicht sichtbar ist. Ein Kommentar ist ein allgemeiner Hinweis, der an die interaktive Kommunikation als Ganzes angehängt und im Bedienfeld „Kommentare“ im Editor hinzugefügt wird. Einzelheiten [ Kommentare finden Sie unter ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) und Kommentare .
 
 ## Siehe auch
 
 - [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
 - [Vorlagensperre im Editor für interaktive Kommunikation](/help/forms/interactive-communication/enable-template-lock.md)
 - [Versionierung und Kommentare im Editor für interaktive Kommunikation](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+
