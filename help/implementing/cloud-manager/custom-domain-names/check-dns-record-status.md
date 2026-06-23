@@ -5,10 +5,10 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -37,9 +37,9 @@ Sie müssen die DNS-Einstellungen für Ihren benutzerdefinierten Domain-Namen be
 
 1. Klicken Sie auf das Symbol **Status**, um den Domain-Namen zu sehen.
 
-Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt dessen [aktuellen Status](#statuses) an:
+Cloud Manager führt eine DNS-Suche nach Ihrem Domain-Namen durch und zeigt den [aktuellen Status](#statuses) an.
 
-Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerdefinierter Domain-Name zum ersten Mal überprüft und bereitgestellt wird. Bei nachfolgenden Versuchen müssen Sie das Symbol zum **erneuten Auflösen** neben dem Status aktiv anklicken.
+Cloud Manager löst automatisch eine DNS-Suche aus, wenn Ihr benutzerdefinierter Domain-Name zum ersten Mal überprüft und bereitgestellt wird. Bei nachfolgenden Versuchen müssen Sie das Symbol **Erneut auflösen** neben dem Status auswählen.
 
 ## DNS-Status in Cloud Manager {#statuses}
 

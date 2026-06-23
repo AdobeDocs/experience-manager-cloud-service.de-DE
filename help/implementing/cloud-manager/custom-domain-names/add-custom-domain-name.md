@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 87%
+source-wordcount: '1130'
+ht-degree: 80%
 
 ---
 
@@ -23,7 +23,7 @@ Erfüllen Sie die folgenden Anforderungen, bevor Sie einen benutzerdefinierten D
 
 * *Bevor* Sie einen benutzerdefinierten Domain-Namen hinzufügen, müssen Sie ein SSL-Domain-Zertifikat für die gewünschte Domain hinzugefügt haben, wie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) beschrieben.
 * Sie müssen über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um einen benutzerdefinierten Domain-Namen in Cloud Manager hinzufügen zu können.
-* Verwenden Sie Fastly oder ein anderes CDN (Content Delivery Network).
+* Fastly oder ein anderes CDN (Content Delivery Network) verwenden.
 
 >[!IMPORTANT]
 >
@@ -53,8 +53,8 @@ Siehe auch [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) 
 
 1. Klicken Sie oben rechts auf der Seite **Domain-Einstellungen** auf **Domain hinzufügen**.
 
-1. Geben Sie im Dialogfeld **Domain hinzufügen** in das Feld **Domain-Name** den von Ihnen verwendeten benutzerdefinierten Domain-Namen ein.
-Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://` noch Leerzeichen einzuschließen.
+1. Geben **im Dialogfeld** Domain hinzufügen“ im Feld **Domain-Name** den von Ihnen verwendeten benutzerdefinierten Domain-Namen ein.
+Geben Sie bei der Eingabe des Domain-Namens keine `http://`, `https://` oder Leerzeichen ein.
 
    >[!NOTE]
    >
@@ -75,8 +75,8 @@ Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://`
 1. Führen Sie im Dialogfeld **Domain verifizieren** je nach ausgewähltem Zertifikatstyp einen der folgenden Schritte aus:
 
    | Ausgewählter Zertifikatstyp | Beschreibung |
-   | --- | ---  |
-   | Verwaltetes Adobe-Zertifikat | a. Führen Sie die folgenden Schritte für das verwaltete Adobe[&#128279;](#adobe-managed-cert-steps)Zertifikat aus. Klicken Sie nach Abschluss der Schritte im Dialogfeld **Domain verifizieren** auf **Überprüfen**.<ul><li>Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.</li><li>Cloud Manager überprüft schließlich die Eigentümerschaft des Domain-Namens und aktualisiert den Status in der Tabelle **Domain-Einstellungen**. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Überprüfen des Domain-Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>B. Sie können jetzt [ein in Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | --- | --- |
+   | Verwaltetes Adobe-Zertifikat | a. Führen Sie die folgenden Schritte für das verwaltete Adobe](#adobe-managed-cert-steps)Zertifikat aus. [Klicken Sie nach Abschluss der Schritte im Dialogfeld **Domain verifizieren** auf **Überprüfen**.<ul><li>Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.</li><li>Cloud Manager überprüft schließlich die Eigentümerschaft des Domain-Namens und aktualisiert den Status in der Tabelle **Domain-Einstellungen**. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Überprüfen des Domain-Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>B. Sie können jetzt [ein in Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Kundenseitig verwaltetes Zertifikat | a. Klicken Sie auf **OK**.<br>b. Sie können jetzt [ein vom Kunden verwaltetes (OV/EV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Nachdem Sie das Zertifikat hinzugefügt haben, wird Ihr Domain-Name in der Tabelle **Domain-Einstellungen** als verifiziert markiert. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li></ul><br>![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
@@ -92,7 +92,7 @@ Wenn Sie den Zertifikatstyp *Verwaltetes Adobe-Zertifikat* ausgewählt haben, f�
 
 Um die verwendete Domain zu überprüfen, müssen Sie einen CNAME hinzufügen und überprüfen.
 
-Ein Eintrag vom Typ `CNAME` oder `A` leitet, sobald er bereitgestellt ist, den gesamten Internet-Datenverkehr für die Domain zu dem Punkt, auf den er verweist. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, kann es zu Fehlern in den Inhalten kommen. Aus diesem Grund wird dieser Schritt immer durchgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
+Ein Eintrag vom Typ `CNAME` oder `A` leitet, sobald er bereitgestellt ist, den gesamten Internet-Datenverkehr für die Domain zu dem Punkt, auf den er verweist. Wenn dieser Speicherort nicht für den Traffic vorgesehen ist, kommt es zu einem Ausfall. Wenn er nicht getestet wurde, können Fehler im Inhalt auftreten. Aus diesem Grund wird dieser Schritt immer ausgeführt, nachdem der Test abgeschlossen ist und Sie bereit sind, live zu gehen.
 
 Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ein Apex-Eintrag so konfiguriert sein muss, dass Ihr benutzerdefinierter Domain-Name auf den Cloud Manager-Domain-Namen verweist. Die folgenden Abschnitte dieses Dokuments können Ihnen dabei helfen, zu ermitteln, welche Art von Eintrag für Ihre DNS-Konfiguration geeignet ist.
 
@@ -105,7 +105,7 @@ Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ei
 
 >[!WARNING]
 >
->Hier gilt der Grundsatz „Registrierung vor Handlung“. Das heißt, die Konfiguration des DNS sollte erst ausgeführt werden, *nachdem* Sie die Domain-Zuordnung erfolgreich hinzugefügt haben. Dadurch wird sichergestellt, dass Cloud Manager erkennt und überprüft, ob die Domain in seiner eigenen Konfiguration vorhanden ist, bevor er auf Anfragen reagieren kann. Außerdem werden dadurch Domain-Übernahmeversuche vermieden.
+>Hier gilt der Grundsatz „Registrierung vor Handlung“. Das heißt, die Konfiguration des DNS sollte nur durchgeführt werden *nachdem* die Domain-Zuordnung erfolgreich hinzugefügt haben. Dadurch wird sichergestellt, dass Cloud Manager erkennt und überprüft, ob die Domain in seiner eigenen Konfiguration vorhanden ist, bevor er auf Anfragen reagieren kann. Außerdem werden dadurch Domain-Übernahmeversuche vermieden.
 
 Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, *bevor* Sie Ihre DNS-Einträge konfigurieren:
 
@@ -119,7 +119,7 @@ Ein kanonischer Name oder CNAME-Eintrag ist eine Art von DNS-Eintrag, der einen 
 
 Melden Sie sich bei Ihrem DNS-Dienstleister an und erstellen Sie einen `CNAME`-Eintrag, um Ihren benutzerdefinierten Domain-Namen auf das Ziel verweisen zu lassen, wie in der folgenden Tabelle dargestellt.
 
-| CNAME | Benutzerdefinierter Domain-Name, der auf das Ziel verweist |
+| CNAME | Benutzerdefinierter Domain-Name verweist auf Ziel |
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 

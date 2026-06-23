@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie überprüfen können, ob Cloud Manager Ihren benutzerdefin
 
 ## Überprüfen des Status eines benutzerdefinierten Domain-Namens {#how-to}
 
-Bevor Sie den Status Ihres Domain-Namens in Cloud Manager überprüfen, stellen Sie sicher, dass Sie bereits ein kundenseitig verwaltetes SSL-Zertifikat (OV/EV) für Ihre benutzerdefinierte Domain hinzugefügt haben, wie unter [Hinzufügen eines kundenseitig verwalteten SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert) beschrieben.
+Bevor Sie den Status Ihres Domain-Namens in Cloud Manager überprüfen, stellen Sie sicher, dass Sie bereits ein kundenseitig verwaltetes SSL-Zertifikat (OV/EV) für Ihre benutzerdefinierte Domain hinzugefügt haben, wie unter [Hinzufügen eines kundenseitig verwalteten SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) beschrieben.
 
 **So überprüfen Sie den Status eines benutzerdefinierten Domain-Namens:**
 
@@ -48,7 +48,7 @@ Cloud Manager überprüft die Eigentümerschaft der Domain über das kundenseiti
 
 | Status | Beschreibung |
 | --- | --- |
-| Domain-Überprüfung fehlgeschlagen | Das kundenseitig verwaltete EV/OV-Zertifikat fehlt entweder oder wird mit Fehlern erkannt.<br> Befolgen Sie die Anweisungen in der Statusmeldung, um das Problem zu beheben. Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Überprüfen** neben dem Status auswählen. |
+| Domain-Überprüfung fehlgeschlagen | Das vom Kunden verwaltete EV/OV-Zertifikat fehlt oder wird mit Fehlern erkannt.<br> Befolgen Sie die Anweisungen in der Statusmeldung, um das Problem zu beheben. Wenn Sie bereit sind, müssen Sie das Symbol zum **erneuten Überprüfen** neben dem Status auswählen. |
 | Überprüfung des Domain-Namens in Bearbeitung | Die Überprüfung läuft.<br>Dieser Status wird in der Regel angezeigt, nachdem Sie das Symbol **Erneut überprüfen** neben dem Status ausgewählt haben. Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern. |
 | Überprüft. Bereitstellung fehlgeschlagen | Die Überprüfung des EV/OV-Zertifikats war erfolgreich, aber die CDN-Bereitstellung ist fehlgeschlagen.<br>Wenden Sie sich in einem solchen Fall an den Adobe-Support. |
 | Domain überprüft und bereitgestellt | Dieser Status gibt an, dass Ihr benutzerdefinierter Domain-Name verwendet werden kann.<br>An dieser Stelle steht Ihr benutzerdefinierter Domain-Name zum Testen und Verweisen auf den Domain-Namen von Cloud Manager bereit. Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
@@ -64,17 +64,17 @@ Im Folgenden finden Sie einen häufigen Fehler bei der Überprüfung des Domain-
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-Beim Versuch, eine Domain-Zuordnung in Cloud Manager hinzuzufügen, kann die folgende Fehlermeldung auftreten:
+Wenn Sie versuchen, eine Domain-Zuordnung in Cloud Manager hinzuzufügen, kann die folgende Fehlermeldung auftreten:
 
-*Die Domain ist bereits in einem Fastly-Konto installiert. Bitte entfernen Sie sie zuerst aus dem Konto, bevor Sie sie zu Cloud Service hinzufügen.*
+*Die Domain ist bereits in einem Fastly-Konto installiert. Entfernen Sie sie, bevor Sie sie zu Cloud Service hinzufügen.*
 
 <!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
 **Fehlerursache**
-Fastly sperrt eine Domain für das Konto, das sie zuerst registriert hat, und andere Konten müssen die Erlaubnis zur Registrierung einer Subdomain beantragen. Darüber hinaus ermöglicht Fastly es Ihnen nur, eine Apex-Domain und zugehörige Subdomains einem Fastly-Service und -Konto zuzuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Namen und dieselbe Subdomain verknüpft, die für Ihre AEM as a Cloud Service-Domains verwendet werden, wird dieser Fehler angezeigt.
+Fastly sperrt eine Domain für das Konto, das sie zuerst registriert, und andere Konten müssen die Berechtigung zur Registrierung einer Subdomain anfordern. Darüber hinaus können Sie mit Fastly eine Apex-Domain und zugehörige Subdomains nur einem Fastly-Service und -Konto zuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das dieselbe Spitze und dieselbe Subdomain verknüpft, die für Ihre AEM Cloud Service-Domains verwendet werden, wird möglicherweise der folgende Fehler angezeigt.
 
 **Fehlerbehebung**
-Der Fehler lässt sich wie folgt beheben:
+Der Fehler wird wie folgt behoben:
 
 * Entfernen Sie die Apex- und Subdomains aus dem vorhandenen Konto, bevor Sie die Domain in Cloud Manager installieren.
 
@@ -84,7 +84,7 @@ Der Fehler lässt sich wie folgt beheben:
 
 >[!TIP]
 >
->Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert normalerweise 1 bis 2 Werktage. Daher wird empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren.
+>Die Lösung von Problemen bei der Domain-Delegation mit Fastly dauert im Durchschnitt 1-2 Werktage. Aus diesem Grund empfiehlt Adobe, die Domains rechtzeitig vor ihrem Tag der Live-Schaltung zu installieren.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Der Fehler lässt sich wie folgt beheben:
 
 Wenn Sie bereits über eine CDN(Content Delivery Network)-Konfiguration für Ihre benutzerdefinierten Domain-Namen verfügen, wird auf den Seiten **Individuelle Domain-Namen** und **Umgebung** eine informative Meldung angezeigt. In dieser wird empfohlen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager verwaltet und angezeigt werden können.
 
-Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es kann 1–2 Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
+Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es dauert 1-2 Werktage, bis die Nachricht nicht mehr angezeigt wird.
 
 Weitere Informationen finden Sie unter [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
