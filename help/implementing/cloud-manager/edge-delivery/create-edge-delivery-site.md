@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit einem Klick auf eine Schaltfläche schnel
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 53%
+source-wordcount: '1419'
+ht-degree: 54%
 
 ---
 
@@ -40,10 +40,8 @@ Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implem
 
 **So erstellen Sie eine Edge Delivery-Site in Cloud Manager mit einem Klick:**
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
-   1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-   1. Klicken Sie im linken Panel auf **Cloud Manager**.
-   1. Organisation auswählen.
+{{sign-in-to-cloud-manager}}
+
 1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm.
 1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das linke Seitenmenü anzuzeigen.
 1. Klicken Sie im linken Seitenmenü unter der Überschrift **Programm** auf **Überblick**.
@@ -77,7 +75,7 @@ Siehe auch [Veröffentlichen von Inhalten von AEM Author in Edge Delivery](#publ
    | Folgendes kann erkundet werden | Schritte |
    | --- | --- |
    | GitHub-Repository einer Site | <ul><li>Klicken Sie im Listenfeld **Edge Delivery-Sites** unter der Spaltenüberschrift **Repository** auf die URL der soeben erstellten Site.<br>Möglicherweise müssen Sie sich mit Ihrem Benutzernamen oder Ihrer E-Mail-Adresse und Ihrem Kennwort bei GitHub anmelden.</li> |
-   | Veröffentlichen einer Site | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie ![&#x200B; Dropdown-Menü auf &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg)Überprüfen-Symbol **Website veröffentlichen**. <br>Es wird eine Popup-Meldung angezeigt, die Sie darüber informiert, dass die Veröffentlichung der Site erfolgreich gestartet wurde.</li></ul> |
+   | Veröffentlichen einer Site | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie ![ Dropdown-Menü auf ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg)Überprüfen-Symbol **Website veröffentlichen**. <br>Es wird eine Popup-Meldung angezeigt, die Sie darüber informiert, dass die Veröffentlichung der Site erfolgreich gestartet wurde.</li></ul> |
    | Vorschau einer veröffentlichten Site | <ul><li>Klicken Sie im Listenfeld **Edge Delivery-Sites** unter der Spaltenüberschrift **Site-Name** auf die URL der soeben erstellten und veröffentlichten Site.<br>Beachten Sie, dass die URL der Site in der URL-Adressleiste Ihres Browsers mit `.page` endet. Dies zeigt an, dass Sie eine Vorschau der Site sehen.</li><li>Um die Site live anzuzeigen, ändern Sie `.page` in der URL-Adressleiste manuell in `.live`.</li></ul> |
    | Gewähren von Benutzerzugriff auf das Content-Repository auf Google Drive | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie im Dropdown-Menü auf ![Users Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **Zugriff auf das Content-Repository erhalten**.</li><li>Geben Sie im Dialogfeld **`Add collaborators to your site`** die E-Mail-Adresse eines Mitwirkenden ein und klicken Sie auf ![Häkchensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Fahren Sie nach Bedarf mit dem Hinzufügen der E-Mail-Adressen von Mitwirkenden fort.</li><li>Klicken Sie abschließend auf **Mitarbeitende hinzufügen**.</li><li>Um den Link für Ihre Mitwirkenden an der Inhaltserstellung freizugeben, klicken Sie im Dialogfeld **Zusammenarbeit erfolgreich hinzugefügt** auf **OK**.</li><li>Klicken Sie im Dialogfeld „Zusammenarbeit erfolgreich hinzugefügt“ auf ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Link zu kopieren und für Ihre Mitwirkenden freizugeben.<br>Vergewissern Sie sich vor der Freigabe des Links, dass die Mitwirkenden mit der E-Mail-Adresse angemeldet sind, die mit ihrem IMS-Konto verknüpft ist. Wenn ihr IMS-E-Mail-Konto nicht verfügbar ist, müssen sie die als Mitwirkende bzw. Mitwirkender hinzugefügte E-Mail-Adresse verwenden. Dadurch wird sichergestellt, dass Mitwirkende auf den Link zugreifen und die zu bearbeitenden oder zu aktualisierenden Inhalte auf Google Drive sehen können.</li><li>Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie **Website veröffentlichen** in Cloud Manager, wie oben beschrieben.<br>Oder zeigen Sie eine Vorschau der vorgenommenen Änderungen an, wie oben beschrieben.</li></ul> |
    | Gewähren von Benutzerzugriff auf das Basis-Rrepository auf GitHub | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie im Dropdown-Menü auf ![Code icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Zugriff auf das Basis-Repository erhalten**.</li><li>Geben Sie im Dialogfeld **Auf das Basis-Repository der Site zugreifen** den GitHub-Benutzernamen eines oder einer Mitwirkenden ein, und klicken Sie dann auf ![Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Fahren Sie nach Bedarf mit dem Hinzufügen von GitHub-Benutzernamen fort.</li><li>Klicken Sie abschließend auf **Mitarbeitende hinzufügen**.</li>Benutzende müssen Zugriff auf ihren eigenen GitHub-Benutzernamen gewähren, um das Repository anzeigen zu können. |

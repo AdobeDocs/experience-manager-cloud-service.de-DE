@@ -5,16 +5,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1526'
 ht-degree: 15%
 
 ---
 
 # Statusprüfung {#about-health-assessment}
 
-Die Konsistenzbewertung ist eine automatisierte, unterbrechungsfreie Prüfung für Produktions- und Staging-Umgebungen in Cloud Manager innerhalb von AEM as a Cloud Service. Es bewertet Inhalte, Code und Konfigurationen, um Anti-Muster und Abweichungen von Best Practices zu finden und so die Sicherheit und Leistung zu verbessern.
+Die Konsistenzbewertung ist eine automatisierte, unterbrechungsfreie Prüfung für Produktions- und Staging-Umgebungen in Cloud Manager innerhalb von AEM as a Cloud Service. Es bewertet Inhalte, Code und Konfigurationen, um Anti-Muster und Abweichungen von Best Practices zu identifizieren und so die Sicherheit und Leistung zu verbessern.
 
 Der Health Assessment Service hat folgende Aufgaben:
 
@@ -27,25 +27,25 @@ Der Health Assessment Service hat folgende Aufgaben:
 
 Bei jeder Ausführung werden Probleme nach Schweregrad, Links zu Anleitungen und empfohlenen Fehlerbehebungen aufgelistet und ein PDF-Export des Berichts unterstützt. Sie können die Ansicht **Neuester Bericht** für den aktuellen Status und **vergangene Berichte)**, um Ausführungen zu vergleichen.
 
-Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Konsistenzbewertungsmuster“.
+Regeldefinitionen und Details zur ](#ha-patterns) finden Sie unter [Konsistenzbewertungsmuster“.
 
 ## Zugriff auf die Seite „Konsistenzbewertung“ {#access-health-assessment}
 
 1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
 1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie eine Organisation aus, die Sie verwenden möchten. Die Abbildung unten dient zur Veranschaulichung. Wählen Sie Ihren eigenen Organisationsnamen aus.
+1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Wählen Sie in Cloud Manager rechts oben auf der Seite eine Organisation aus, die Sie verwenden möchten. Das nachstehende Bild dient nur als Referenz. Wählen Sie Ihre Organisation aus.
 
    ![Organisation in Cloud Manager auswählen](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
 1. Klicken Sie in **Konsole** Meine Programme“ auf das Programm, für das Sie den Bericht anzeigen möchten.
 
-1. Führen Sie eine der folgenden Aktionen aus:
+1. Führen Sie einen der folgenden Schritte aus:
    * Klicken Sie auf **Karte** Umgebungen“ rechts neben einem Umgebungsnamen auf das Symbol ![Auslassungspunkte oder Mehr](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **Konsistenzbewertung** aus dem Menü aus.
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Karte Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
 
-   * Klicken Sie im linken Seitenmenü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **&#x200B;**&#x200B;aus dem Menü aus.
+   * Klicken Sie im linken Seitenmenü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **** aus dem Menü aus.
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Seite Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
 
@@ -64,7 +64,7 @@ Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Kon
 
    ![Bericht wird gerade ausgeführt](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
-   Nach Abschluss des Berichts wird der Bericht auf der Seite **Gesundheitsbewertung** im Abschnitt **Neuester Bericht** angezeigt.
+   Wenn der Bericht vollständig ist, wird er im Abschnitt **Neuester Bericht** der Seite **Gesundheitsbewertung** angezeigt.
 
 ## Anzeigen des neuesten Berichts {#view-latest-report}
 
@@ -90,7 +90,7 @@ Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Kon
 
      ![Problembeschreibungen und -erkennung](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
 
-   * Die **Download**-Option bietet Ihnen die Möglichkeit, individuelle Problemberichte in PDF herunterzuladen.
+   * Mit **Option** Herunterladen“ können Sie individuelle Problemberichte in PDF herunterladen.
 
      ![Herunterladen von PDF mit individuellen Problemberichten](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
 
@@ -116,12 +116,12 @@ Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Kon
 ![Vergangene Berichte überprüfen](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
 * Klicken Sie rechts neben der Überschrift **Vergangene Berichte** auf ![Pfeil nach unten oder Dropdown-Menü, um eine andere Umgebung auszuwählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) um vergangene Berichte nach Datum zu sortieren.
-* Ganz rechts neben einem Bericht auf das Symbol mit ![&#x200B; Auslassungspunkten oder das Symbol Mehr &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und dann auf **Details anzeigen** oder **Herunterladen**.
+* Ganz rechts neben einem Bericht auf das Symbol mit ![ Auslassungspunkten oder das Symbol Mehr ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und dann auf **Details anzeigen** oder **Herunterladen**.
 
 
 ## Muster der Gesundheitsbewertung {#ha-patterns}
 
-Im Folgenden finden Sie eine vollständige Liste der Anti-Muster und -Probleme, die von Health Assessment in AEM as a Cloud Service erkannt werden. In der Tabelle werden Elemente in drei Typen unterteilt: Inhaltsanalyse, Codeanalyse und Anti-Muster von Cloud Service Optimizer mit jeweils einer Erklärung.
+Im Folgenden finden Sie eine vollständige Liste der Anti-Muster und Probleme, die von der Konsistenzbewertung in AEM as a Cloud Service erkannt werden. In der Tabelle werden Elemente in drei Typen unterteilt: Inhaltsanalyse, Codeanalyse und Anti-Muster von Cloud Service Optimizer mit jeweils einer Erklärung.
 
 | Mustername | Kategorie | Typ | Beschreibung | Auswirkungen | Automatisch korrigiert? |
 | --- | --- | --- | --- | --- | --- |

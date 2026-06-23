@@ -1,8 +1,8 @@
 ---
-source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 93%
+source-wordcount: '1721'
+ht-degree: 92%
 
 ---
 # Snippets {#snippets}
@@ -167,7 +167,7 @@ Die folgende Tabelle zeigt den Unterschied zwischen den Funktionen, die in den K
 >[!IMPORTANT]
 >
 >Die Frontend-Pipeline erfordert, dass die folgende IP-Zulassungsliste zuvor zu Cloud Manager hinzugefügt wird.
->Fügen Sie bei Bedarf [&#x200B; IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) indem Sie den unten stehenden Adressblock kopieren. Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Block in das Feld **IP-Adresse / CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
+>Fügen Sie bei Bedarf [ IP-Zulassungsliste hinzu](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) indem Sie den unten stehenden Adressblock kopieren. Jede Adresse wird durch ein Komma getrennt. Fügen Sie den Block in das Feld **IP-Adresse / CIDR** des Dialogfelds **IP-Zulassungsliste hinzufügen** ein. Platzieren Sie den Cursor direkt nach dem ersten Komma in der Adressliste und drücken Sie die **Eingabetaste**. Speichern Sie die Liste.
 >Um eine Unterbrechung der Ausführung der Frontend-Pipeline zu vermeiden, stellen Sie sicher, dass diese IP-Zulassungsliste zu Cloud Manager hinzugefügt wird *bevor* die Pipeline aktivieren.
 >
 >**Cloud Manager IP-Zulassungsliste**
@@ -220,7 +220,7 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 **So reichen Sie ein Support-Ticket ein:**
 
-1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/de?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
+1. [Folgen Sie dem standardmäßigen Support-Prozess](https://experienceleague.adobe.com/?support-tab=home&lang=de#support) und erstellen Sie ein Ticket.
 1. Fügen Sie **Edge Delivery** zum Titel des Tickets hinzu.
 1. Geben Sie in der Beschreibung zusätzlich zur Problembeschreibung die folgenden Details an:
 
@@ -231,8 +231,8 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
    1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-   1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie in Cloud Manager rechts oben auf der Seite die gewünschte Organisation aus.
+   1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Wählen Sie in Cloud Manager rechts oben auf der Seite eine Organisation aus, die Sie verwenden möchten.
 
 
 ## Universeller Editor gegenüber SPA-Editor bevorzugt {#ue-over-spa}
