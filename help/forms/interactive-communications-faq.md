@@ -34,7 +34,7 @@ Ein Anzeigemuster steuert, wie ein Feldwert in der Arbeitsflächenvorschau und i
 Anzeigemuster werden für die Komponenten „Textfeld“, „Numerisches Feld“, „Datumsfeld“, „Datum/Uhrzeit-Feld“ und „Ungebundene Variable“ unterstützt. Jeder Feldtyp verwendet eine seinem Datentyp entsprechende XFA-Picture-Klauselsyntax.
 
 **F: Mein Datumsanzeigemuster funktioniert nicht - das Feld zeigt den Rohwert anstelle der formatierten Ausgabe an. Was ist los?**
-Für Datums- und Datums-/Uhrzeitfelder muss der zugrunde liegende Wert dem ISO 8601**Format**. Geben Sie für Datumsfelder Werte im `YYYY-MM-DD` an (z. B. `2007-04-01`). Verwenden Sie für Datums-/Uhrzeitfelder `YYYY-MM-DDTHH:MM` Format (z. B. `2007-04-01T14:30`). Werte, die nicht ISO 8601 entsprechen, werden unverändert angezeigt, ohne dass das Anzeigemuster angewendet wird.
+Für Datums- und Datums-/Uhrzeitfelder muss der zugrunde liegende Wert dem ISO 8601&#x200B;**Format**. Geben Sie für Datumsfelder Werte im `YYYY-MM-DD` an (z. B. `2007-04-01`). Verwenden Sie für Datums-/Uhrzeitfelder `YYYY-MM-DDTHH:MM` Format (z. B. `2007-04-01T14:30`). Werte, die nicht ISO 8601 entsprechen, werden unverändert angezeigt, ohne dass das Anzeigemuster angewendet wird.
 
 **F: Kann ich ein benutzerdefiniertes Muster definieren, das nicht in der vordefinierten Liste enthalten ist?**
 Ja. Sie können eine benutzerdefinierte **XFA-Bildklausel** direkt im Feld Anzeigemuster im Bedienfeld Eigenschaften eingeben. Siehe die Picture-Klauselsymbole für jeden Feldtyp auf den entsprechenden Komponenten-Referenzseiten.
@@ -67,7 +67,7 @@ Anzahl Wenn ein Absatz neu geschrieben oder angeordnet wurde, werden beide Seite
 ## Tabellen
 
 **F: Kann ich Zellen in einer Tabelle zusammenführen?**
-Ja. Wählen Sie zwei oder mehr aufeinander folgende Zellen in derselben Zeile aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie **Zellen verbinden**. Es können nur aufeinander folgende Zellen innerhalb derselben Zeile zusammengeführt werden. Zeilenübergreifende Zusammenführungen werden nicht vollständig unterstützt. Siehe [Zusammenführen und Aufteilen von ](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
+Ja. Wählen Sie zwei oder mehr aufeinander folgende Zellen in derselben Zeile aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie **Zellen verbinden**. Es können nur aufeinander folgende Zellen innerhalb derselben Zeile zusammengeführt werden. Zeilenübergreifende Zusammenführungen werden nicht vollständig unterstützt. Siehe [Zusammenführen und Aufteilen von &#x200B;](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
 
 **F: Kann ich eine Zellzusammenführung rückgängig machen?**
 Ja. Klicken Sie mit der rechten Maustaste auf die zusammengeführte Zelle, wählen Sie **Zelle teilen** und geben Sie die Anzahl der Spalten an, in die aufgeteilt werden soll (bis zur ursprünglichen Anzahl der zusammengeführten Zellen).
