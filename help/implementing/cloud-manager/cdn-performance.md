@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '363'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Jedes Cloud Manager-Programm verfügt über ein CDN-Leistungs-Dashboard. Dieses 
 
 Das CDN-Dashboard ist auf der Übersichtsseite jedes Programms verfügbar.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+{{sign-in-to-cloud-manager}}
 
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, dessen CDN-Dashboard angezeigt werden soll.
 

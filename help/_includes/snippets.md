@@ -1,8 +1,8 @@
 ---
-source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 93%
+source-wordcount: '1721'
+ht-degree: 92%
 
 ---
 # Snippets {#snippets}
@@ -231,8 +231,8 @@ Um ein Support-Ticket zu erstellen, müssen Sie zunächst Ihre Edge Delivery-Sit
 
 1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
    1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-   1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie in Cloud Manager rechts oben auf der Seite die gewünschte Organisation aus.
+   1. Klicken Sie im linken Bedienfeld auf **Cloud Manager**.
+1. Wählen Sie in Cloud Manager rechts oben auf der Seite eine Organisation aus, die Sie verwenden möchten.
 
 
 ## Universeller Editor gegenüber SPA-Editor bevorzugt {#ue-over-spa}

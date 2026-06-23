@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: cca724e41edc333346dfead092048c7739a0ec95
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1203'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 
 Sobald Sie [&#x200B; Produktions-Pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Repository, Umgebung und Testumgebung konfiguriert haben, können Sie Ihren Code bereitstellen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+{{sign-in-to-cloud-manager}}
 
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf das Programm, für das Code bereitgestellt werden soll.
 

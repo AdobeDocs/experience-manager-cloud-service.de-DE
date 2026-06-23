@@ -5,23 +5,23 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 20%
+source-wordcount: '1261'
+ht-degree: 13%
 
 ---
 
 
 # Bearbeiten von Programmen {#editing-programs}
 
-Um Programme zu verwalten und zu bearbeiten, beginnen Sie bei der Konsole [**Meine Programme**](/help/implementing/cloud-manager/navigation.md). Die Seite **Meine Programme** bietet einen Überblick über alle Programme, auf die Sie Zugriff haben. Bei der Auswahl eines einzelnen Programms **die Seite** Programmübersicht“ einen Überblick über die Details des Programms.
+Um Programme zu verwalten und zu bearbeiten, beginnen Sie bei der Konsole [**Meine Programme**](/help/implementing/cloud-manager/navigation.md). Die Seite **Meine Programme** bietet einen Überblick über alle Programme, auf die Sie Zugriff haben. Bei der Auswahl eines einzelnen Programms **die Seite** Programmübersicht“ einen Überblick über die Programmdetails.
 
 Von der **Programmübersicht** aus können Benutzende mit den erforderlichen Berechtigungen [Produktionsprogramme, die in Ihrer Organisation erstellt wurden](creating-production-programs.md) und [Sandbox-Programme, die in Ihrer Organisation erstellt wurden](creating-sandbox-programs.md), bearbeiten. Durch die Bearbeitung eines Programms haben Sie folgende Möglichkeiten:
 
 
 * Aktivieren oder deaktivieren Sie den **WAF-DDOS** Schutz auf der Registerkarte **Sicherheit**.
-* Fügen Sie die Sites-Lösung einem vorhandenen Programm mit Assets hinzu und fügen Sie Assets einem vorhandenen Programm mit Sites hinzu.
+* Fügen Sie die Sites-Lösung einem vorhandenen Programm hinzu, das Assets enthält, und fügen Sie Assets einem vorhandenen Programm hinzu, das Sites enthält.
 * Entfernen Sie Sites oder Assets aus einem vorhandenen Programm, das sowohl Sites als auch Assets enthält.
 * Hinzufügen einer nicht verwendeten Lösungsberechtigung für ein vorhandenes Programm oder Erstellen eines neuen Programms.
 * Markieren Sie Produktionsprogramme zum Löschen.
@@ -33,14 +33,12 @@ Sie müssen die Rolle **Geschäftsinhaber** haben, um Programme zu bearbeiten, S
 
 ## Bearbeiten eines Programms {#editing}
 
-Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens oder Entfernens einer Lösung oder eines Add-ons, werden diese Änderungen erst nach der nächsten Bereitstellung wirksam.
+Wenn ein Programm bearbeitet wird, einschließlich Hinzufügen oder Entfernen einer Lösung oder eines Add-ons, werden diese Änderungen nach der nächsten Bereitstellung wirksam.
 
 **Bearbeiten eines Programms:**
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
-1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie in Cloud Manager die entsprechende Organisation aus.
+{{sign-in-to-cloud-manager}}
+
 1. Klicken Sie auf der **Meine**&quot; auf das Programm, das Sie bearbeiten möchten.
 1. Klicken Sie oben links auf der Seite auf den Namen des Programms und wählen Sie dann **Programm bearbeiten** aus.
 
@@ -50,7 +48,7 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
 
    ![Registerkarte „Allgemein“](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
-   Die zur Bearbeitung des Programms verfügbaren Optionen sind mit denen zum Erstellen des Programms identisch.
+   Die für die Bearbeitung des Programms verfügbaren Optionen sind die gleichen wie die Optionen für die Programmerstellung.
 
    * Sie können konfigurieren, ob eine Veröffentlichungsebene für neue Umgebungen (Beta) bereitgestellt wird. Siehe [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Einzelheiten zu den einzelnen Optionen finden Sie unter [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) und [Erstellen von Sandbox-Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
@@ -75,8 +73,8 @@ Jedes Mal, wenn ein Programm bearbeitet wird, einschließlich des Hinzufügens o
 
 ## Konfigurieren von CMK in Experience Hub {#configure-cmk-experience-hub}
 
-Nachdem CMK für ein Programm aktiviert wurde, stellt Cloud Manager einen direkten Link zur CMK-Konfigurationsseite in Experience Hub bereit, über die Sie Folgendes einrichten können
-Verschlüsselungsschlüssel, ohne das Programm verlassen zu müssen.
+Nachdem CMK für ein Programm aktiviert wurde, stellt Cloud Manager einen direkten Link zur CMK-Konfigurationsseite in Experience Hub bereit, über die Sie Folgendes konfigurieren können
+Verschlüsselungsschlüssel, während Sie im Programm verbleiben.
 
 Nachdem CMK für eine Umgebung erfolgreich konfiguriert wurde, wird auf der Seite mit den Umgebungsdetails das Status-Badge **CMK-Konfiguration** angezeigt. Wenn CMK für das Programm aktiviert ist, aber noch nicht für eine bestimmte Umgebung konfiguriert wurde, wird das Badge nicht auf der Detailseite dieser Umgebung angezeigt.
 
@@ -93,12 +91,12 @@ Nachdem CMK für eine Umgebung erfolgreich konfiguriert wurde, wird auf der Seit
 
 ## Ein Produktionsprogramm zum Löschen markieren {#delete-production-program}
 
-Das Löschen eines Produktionsprogramms erfolgt in zwei Phasen. Ein Geschäftsinhaber markiert das Programm zum Löschen, wodurch ein Trigger für einen Validierungs- und Stilllegungszeitraum entsteht. Das Programm wird dann nach Ablauf der Stilllegungszeit dauerhaft entfernt.
+Das Löschen eines Produktionsprogramms erfolgt in zwei Phasen. Ein Geschäftsinhaber markiert das Programm zum Löschen, wodurch ein Trigger für einen Validierungs- und Entfernungszeitraum entsteht. Das Programm wird dann nach Ablauf der Stilllegungszeit dauerhaft entfernt.
 
 Wenn ein Produktionsprogramm zum Löschen markiert wird, geschieht Folgendes:
 
 * Die mit dem Produktionsprogramm verknüpfte Gutschrift wird an den Kunden zurückgegeben.
-* Alle zum Produktionsprogramm gehörenden Umgebungen werden entfernt.
+* Alle Umgebungen, die zum Produktionsprogramm gehören, werden entfernt.
 
 Bevor das Markieren zum Löschen initiiert wird, prüft das System, ob das Produktionsprogramm zum Löschen geeignet ist. Wenn die Markierung fehlschlägt, wechselt das Produktionsprogramm stattdessen in einen `Failed to mark for deletion`.
 
@@ -108,10 +106,8 @@ Bevor das Markieren zum Löschen initiiert wird, prüft das System, ob das Produ
 
 **So markieren Sie ein Produktionsprogramm zum Löschen:**
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
-1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie das entsprechende Unternehmen aus.
+{{sign-in-to-cloud-manager}}
+
 1. Klicken Sie auf der **Meine**&quot; für das Produktionsprogramm, das Sie zum Löschen markieren möchten, auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Programm löschen**.
 
    ![Die Auswahl von Programm löschen aus der Dropdown-Liste eines Produktionsprogramms &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Beispielproduktionsprogramm wie oben gezeigt dient nur zu Veranschaulichungszwecken.*
@@ -142,9 +138,9 @@ Bevor das Markieren zum Löschen initiiert wird, prüft das System, ob das Produ
 
    ![Anzeige des geplanten Termins für die endgültige Entfernung des Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete5.png)
 
-   Nach Ablauf der Stilllegungszeit wird das Programm dauerhaft entfernt und kann nicht wiederhergestellt werden.
+   Nach Ablauf des Entfernungszeitraums wird das Programm dauerhaft entfernt und kann nicht wiederhergestellt werden.
 
-### Markierung eines Produktionsprogramms beim Löschen aufheben {#unmark-from-deletion}
+### Abbrechen des Löschens eines Produktionsprogramms {#unmark-from-deletion}
 
 Sie können ein Produktionsprogramm, das zum Löschen *markiert* wiederherstellen, solange die dauerhafte Entfernung noch nicht erfolgt ist.
 
@@ -152,7 +148,7 @@ Sie können ein Produktionsprogramm, das zum Löschen *markiert* wiederherstelle
 >
 >Um ein Produktionsprogramm wiederherzustellen, das zur Löschung markiert wurde, muss der Kunde über verfügbare Credits verfügen.
 
-**So heben Sie die Markierung eines Produktionsprogramms beim Löschen auf:**
+**So brechen Sie das Löschen eines Produktionsprogramms ab:**
 
 1. Suchen Sie auf der **Meine**&quot; die Karte für das Produktionsprogramm, auf der &quot;**zum Löschen markiert** angezeigt wird.
 
@@ -160,7 +156,7 @@ Sie können ein Produktionsprogramm, das zum Löschen *markiert* wiederherstelle
 
    ![Aufheben der Markierung des geplanten Datums für die endgültige Entfernung des Produktionsprogramms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png)
 
-   Das Produktionsprogramm ist nicht zum Löschen markiert.
+   Das Löschen des Produktionsprogramms wurde abgebrochen.
 
 ## Löschen eines Sandbox-Programms {#delete-sandbox-program}
 
@@ -168,15 +164,13 @@ Durch das Löschen eines Sandbox-Programms werden alle damit verbundenen Umgebun
 
 >[!TIP]
 >
->Benutzende mit den Rollen **Geschäftsinhaber** oder **Bereitstellungs-Manager** können alternativ ihre Produktions- und Staging-Umgebungen anstelle des gesamten Sandbox-Programms löschen.
+>Benutzer mit den Rollen **Geschäftsinhaber** oder **Bereitstellungs-Manager** können ihre Produktions- und Staging-Umgebungen anstelle des gesamten Sandbox-Programms löschen.
 
 **So löschen Sie ein Sandbox-Programm:**
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
-1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-1. Klicken Sie im linken Panel auf **Cloud Manager**.
-1. Wählen Sie das entsprechende Unternehmen aus.
-1. Klicken Sie auf **[Seite „Meine](#my-programs)**&quot; auf das Sandbox-Programm, das Sie bearbeiten möchten, um seine Details anzuzeigen.
+{{sign-in-to-cloud-manager}}
+
+1. Klicken Sie auf **[Seite „Meine](#my-programs)**&quot; auf das Sandbox-Programm, das Sie löschen möchten, um dessen Details anzuzeigen.
 
 1. Klicken Sie oben links auf der Seite auf den Namen Ihres Sandbox-Programms und wählen Sie **Programm löschen**.
 

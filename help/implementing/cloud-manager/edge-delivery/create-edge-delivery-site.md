@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit einem Klick auf eine Schaltfläche schnel
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 53%
+source-wordcount: '1419'
+ht-degree: 54%
 
 ---
 
@@ -40,10 +40,8 @@ Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implem
 
 **So erstellen Sie eine Edge Delivery-Site in Cloud Manager mit einem Klick:**
 
-1. Melden Sie sich bei Cloud Manager unter [experience.adobe.com](https://experience.adobe.com) an.
-   1. Klicken Sie **Abschnitt „Schnellzugriff** auf **Experience Manager**.
-   1. Klicken Sie im linken Panel auf **Cloud Manager**.
-   1. Organisation auswählen.
+{{sign-in-to-cloud-manager}}
+
 1. Klicken Sie in **Konsole** Meine Programme“ auf ein Programm.
 1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das linke Seitenmenü anzuzeigen.
 1. Klicken Sie im linken Seitenmenü unter der Überschrift **Programm** auf **Überblick**.
