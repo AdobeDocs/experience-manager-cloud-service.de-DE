@@ -4,19 +4,19 @@ description: Erfahren Sie, wie Sie mit einem Klick auf eine Schaltfläche schnel
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 9cf3ab69adf8819d9f5496bf826c63f7cf01d554
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 57%
+source-wordcount: '1446'
+ht-degree: 53%
 
 ---
 
 
 # Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick{#about-one-click-edge-delivery-site}
 
-Das Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick wurde entwickelt, um das Onboarding und die Bereitstellung von Edge Delivery-Sites in Cloud Manager zu automatisieren. Dies vereinfacht den Prozess erheblich, da Sie nur auf eine einzige Schaltfläche klicken müssen. Mit einem einzigen Klick wird die erforderliche Infrastruktur bereitgestellt, mit GitHub zur Versionskontrolle integriert und der Dokument- und Asset-Speicher in Google Drive konfiguriert.
+Das Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick wurde entwickelt, um das Onboarding und die Bereitstellung von Edge Delivery-Sites in Cloud Manager zu automatisieren. Dies vereinfacht den Prozess, indem eine einzige Schaltfläche für die Bereitstellung bereitgestellt wird. Mit einem einzigen Klick wird die erforderliche Infrastruktur bereitgestellt, mit GitHub zur Versionskontrolle integriert und der Dokument- und Asset-Speicher in Google Drive konfiguriert.
 
-Diese Automatisierung trägt dazu bei, den manuellen Aufwand bei der Einrichtung Ihrer ersten Site zu reduzieren. Auf diese Weise werden nicht nur nahtlose Workflows sowie Skalierbarkeit sichergestellt, sondern auch die Leistung Ihrer Teams bei der Verwaltung von Inhalten am Edge verbessert.
+Diese Automatisierung trägt dazu bei, den manuellen Aufwand bei der Einrichtung Ihrer ersten Site zu reduzieren. Es sorgt für nahtlose Workflows, Skalierbarkeit und verbessert die Leistung Ihrer Teams bei der Verwaltung von Inhalten an der Edge.
 
 >[!IMPORTANT]
 >
@@ -60,7 +60,7 @@ Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implem
 
 1. Klicken Sie **Site jetzt erstellen**.
 
-   Oben in der Mitte des Bildschirms wird eine Popup-Meldung angezeigt, die Sie darüber informiert, dass die Bereitstellung der Edge Delivery-Site begonnen hat.
+   In der oberen Mitte des Bildschirms wird eine Benachrichtigung angezeigt, die Sie darüber informiert, dass die Bereitstellung der Edge Delivery-Site begonnen hat.
 
    Wenn Cloud Manager die Site-Bereitstellung und -Validierung abgeschlossen hat **wird der** Site-Name“ (der zuvor eingegebene Projektname) im Listenfeld **Edge Delivery Sites** auf der Edge Delivery-Seite angezeigt. Links neben der Statusspalte **Verifiziert“ wird** grüner Punkt angezeigt.
 
@@ -77,7 +77,7 @@ Siehe auch [Veröffentlichen von Inhalten von AEM Author in Edge Delivery](#publ
    | Folgendes kann erkundet werden | Schritte |
    | --- | --- |
    | GitHub-Repository einer Site | <ul><li>Klicken Sie im Listenfeld **Edge Delivery-Sites** unter der Spaltenüberschrift **Repository** auf die URL der soeben erstellten Site.<br>Möglicherweise müssen Sie sich mit Ihrem Benutzernamen oder Ihrer E-Mail-Adresse und Ihrem Kennwort bei GitHub anmelden.</li> |
-   | Veröffentlichen einer Site | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie ![&#x200B; Dropdown-Menü auf &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg)Überprüfen-Symbol **Website veröffentlichen**. <br>Es wird eine Popup-Meldung angezeigt, die Sie darüber informiert, dass die Veröffentlichung der Site erfolgreich gestartet wurde.</li></ul> |
+   | Veröffentlichen einer Site | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie ![ Dropdown-Menü auf ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg)Überprüfen-Symbol **Website veröffentlichen**. <br>Es wird eine Popup-Meldung angezeigt, die Sie darüber informiert, dass die Veröffentlichung der Site erfolgreich gestartet wurde.</li></ul> |
    | Vorschau einer veröffentlichten Site | <ul><li>Klicken Sie im Listenfeld **Edge Delivery-Sites** unter der Spaltenüberschrift **Site-Name** auf die URL der soeben erstellten und veröffentlichten Site.<br>Beachten Sie, dass die URL der Site in der URL-Adressleiste Ihres Browsers mit `.page` endet. Dies zeigt an, dass Sie eine Vorschau der Site sehen.</li><li>Um die Site live anzuzeigen, ändern Sie `.page` in der URL-Adressleiste manuell in `.live`.</li></ul> |
    | Gewähren von Benutzerzugriff auf das Content-Repository auf Google Drive | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie im Dropdown-Menü auf ![Users Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **Zugriff auf das Content-Repository erhalten**.</li><li>Geben Sie im Dialogfeld **`Add collaborators to your site`** die E-Mail-Adresse eines Mitwirkenden ein und klicken Sie auf ![Häkchensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Fahren Sie nach Bedarf mit dem Hinzufügen der E-Mail-Adressen von Mitwirkenden fort.</li><li>Klicken Sie abschließend auf **Mitarbeitende hinzufügen**.</li><li>Um den Link für Ihre Mitwirkenden an der Inhaltserstellung freizugeben, klicken Sie im Dialogfeld **Zusammenarbeit erfolgreich hinzugefügt** auf **OK**.</li><li>Klicken Sie im Dialogfeld „Zusammenarbeit erfolgreich hinzugefügt“ auf ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um den Link zu kopieren und für Ihre Mitwirkenden freizugeben.<br>Vergewissern Sie sich vor der Freigabe des Links, dass die Mitwirkenden mit der E-Mail-Adresse angemeldet sind, die mit ihrem IMS-Konto verknüpft ist. Wenn ihr IMS-E-Mail-Konto nicht verfügbar ist, müssen sie die als Mitwirkende bzw. Mitwirkender hinzugefügte E-Mail-Adresse verwenden. Dadurch wird sichergestellt, dass Mitwirkende auf den Link zugreifen und die zu bearbeitenden oder zu aktualisierenden Inhalte auf Google Drive sehen können.</li><li>Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie **Website veröffentlichen** in Cloud Manager, wie oben beschrieben.<br>Oder zeigen Sie eine Vorschau der vorgenommenen Änderungen an, wie oben beschrieben.</li></ul> |
    | Gewähren von Benutzerzugriff auf das Basis-Rrepository auf GitHub | <ul><li> Klicken Sie im Listenfeld **Edge Delivery-Sites** ganz rechts neben dem Namen Ihrer Site auf ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um das Dropdown-Menü zu öffnen.</li><li>Klicken Sie im Dropdown-Menü auf ![Code icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Zugriff auf das Basis-Repository erhalten**.</li><li>Geben Sie im Dialogfeld **Auf das Basis-Repository der Site zugreifen** den GitHub-Benutzernamen eines oder einer Mitwirkenden ein, und klicken Sie dann auf ![Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Fahren Sie nach Bedarf mit dem Hinzufügen von GitHub-Benutzernamen fort.</li><li>Klicken Sie abschließend auf **Mitarbeitende hinzufügen**.</li>Benutzende müssen Zugriff auf ihren eigenen GitHub-Benutzernamen gewähren, um das Repository anzeigen zu können. |
