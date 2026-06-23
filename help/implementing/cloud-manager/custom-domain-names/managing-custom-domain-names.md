@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ Mit Cloud Manager können Sie benutzerdefinierte Domain-Namen bearbeiten, aktual
 
 ## Bearbeiten der Konfiguration eines benutzerdefinierten Domain-Namens {#view-and-update}
 
-Es könnte aus folgenden Gründen erforderlich sein, dass Sie die Konfiguration eines benutzerdefinierten Domain-Namens in Adobe Cloud Manager bearbeiten:
+In Adobe Cloud Manager können Sie eine benutzerdefinierte Domain-Namenskonfiguration aus den folgenden Gründen bearbeiten:
 
 * **Wechseln von Umgebungen**: Um die richtige Konfiguration anzuwenden, je nachdem, ob Sie Inhalte für Endbenutzende (Veröffentlichen) oder interne Benutzende (Autor) bereitstellen.
 * **Sicherheits-Updates**: Zum Aktualisieren auf ein neueres SSL-Zertifikat, um die Sicherheit oder Compliance zu verbessern.
@@ -31,7 +31,7 @@ Es könnte aus folgenden Gründen erforderlich sein, dass Sie die Konfiguration 
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
-1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das linke Seitenmenü anzuzeigen.
+1. Klicken Sie oben links auf der Seite auf das Symbol ![Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das linke Seitenmenü zu öffnen.
 
 1. Klicken Sie unter der Überschrift **Services** auf ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain-Zuordnungen**.
 
@@ -49,7 +49,7 @@ Es könnte aus folgenden Gründen erforderlich sein, dass Sie die Konfiguration 
 
 ## Aktualisieren des SSL-Zertifikats eines benutzerdefinierten Domain-Namens {#update-cert}
 
-Führen Sie die oben beschriebenen Schritte aus, um das SSL-Zertifikat eines benutzerdefinierten Domain-Namens zu aktualisieren.
+Gehen Sie wie oben beschrieben vor, um das SSL-Zertifikat eines benutzerdefinierten Domain-Namens zu aktualisieren.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Siehe auch [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implement
 
 1. Klicken Sie im Dropdown-Menü auf **Überprüfen**.
 
-1. Wählen Sie im Dialogfeld **Domain verifizieren** aus der Dropdown-Liste **Welchen Zertifikatstyp möchten Sie mit dieser Domain verwenden?** eine der folgenden Optionen aus:
+1. Geben Sie im Dialogfeld **Domain überprüfen** im Feld **Welchen Zertifikatstyp möchten Sie mit dieser Domain verwenden?** aus einer der folgenden Optionen auswählen:
 
    | Option für den Zertifikatstyp | Beschreibung |
    | --- | --- |
@@ -81,8 +81,8 @@ Siehe auch [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implement
 
    | Ausgewählter Zertifikatstyp | Beschreibung |
    | --- | ---  |
-   | Verwaltetes Adobe-Zertifikat | a. Führen Sie die [Schritte für von Adobe verwaltete Zertifikate](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps) aus. Klicken Sie nach Abschluss der Schritte im Dialogfeld **Domain verifizieren** auf **Überprüfen**.<ul><li>Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.</li><li>Cloud Manager überprüft schließlich die Eigentümerschaft des Domain-Namens und aktualisiert den Status in der Tabelle **Domain-Einstellungen**. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Überprüfen des Domain-Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Sie können jetzt [ein von Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
-   | Kundenseitig verwaltetes Zertifikat | a. Klicken Sie auf **OK**.<br>b. Sie können jetzt ein [kundenseitig verwaltetes (OV/EV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Nachdem Sie das Zertifikat hinzugefügt haben, wird Ihr Domain-Name in der Tabelle **Domain-Einstellungen** als verifiziert markiert. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li></ul><br>![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
+   | Verwaltetes Adobe-Zertifikat | a. Führen Sie die Schritte für das verwaltete Adobe-Zertifikat [&#128279;](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps) aus. Klicken Sie nach Abschluss der Schritte im Dialogfeld **Domain verifizieren** auf **Überprüfen**.<ul><li>Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.</li><li>Cloud Manager überprüft schließlich die Eigentümerschaft des Domain-Namens und aktualisiert den Status in der Tabelle **Domain-Einstellungen**. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Überprüfen des Domain-Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>B. Sie können jetzt [ein in Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Kundenseitig verwaltetes Zertifikat | a. Klicken Sie auf **OK**.<br>b. Sie können jetzt [ein vom Kunden verwaltetes (OV/EV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Nachdem Sie das Zertifikat hinzugefügt haben, wird Ihr Domain-Name in der Tabelle **Domain-Einstellungen** als verifiziert markiert. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li></ul><br>![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
 ## Löschen eines benutzerdefinierten Domain-Namens aus allen zugehörigen Umgebungen {#deleting}
@@ -108,15 +108,15 @@ Benutzende mit der Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** 
 
 >[!WARNING]
 >
->Entfernen Sie die DNS-Einträge der Domain bei Ihrem DNS-Anbieter, *bevor* Sie die Domain in Cloud Manager löschen. Verworfene (verwaiste) DNS-Einträge können gekapert werden und stellen ein Sicherheitsrisiko dar.
+>Entfernen Sie die DNS-Einträge der Domain bei Ihrem DNS-Anbieter, *bevor* Sie die Domain in Cloud Manager löschen. Nicht verwendete DNS-Einträge können gefährdet sein und ein Sicherheitsrisiko darstellen.
 
 **So löschen Sie einen benutzerdefinierten Domain-Namen aus einer bestimmten Umgebung:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
-1. Gehen Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
+1. Navigieren Sie von der Seite **Überblick** zum Bildschirm **Umgebungen**.
 
-1. Navigieren Sie von der Seite **Umgebungen** zum Bildschirm „Umgebungsdetails“ der betreffenden Umgebung.
+1. Navigieren **auf** Seite „Umgebungen“ zu einem Detailbildschirm der ausgewählten Umgebung.
 
 1. Ermitteln Sie in der Tabelle mit den Domain-Zuordnungen die Zeile mit dem benutzerdefinierten Domain-Namen, der gelöscht werden soll.
 

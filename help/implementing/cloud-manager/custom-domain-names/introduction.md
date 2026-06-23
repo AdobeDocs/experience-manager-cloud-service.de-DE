@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 89%
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 89%
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Hinzufügen eines benutzerdefinierten Domain-Namens"
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Anzeigen und Aktualisieren eines benutzerdefinierten Domain-Namens"
 
-Adobe Experience Manager as a Cloud Service wird mit einem standardmäßigen Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Über die Benutzeroberfläche von Cloud Manager können Sie eine benutzerdefinierte Domain hinzufügen, um Ihre Website selbst mit einem eindeutigen, markenspezifischen Namen zu kennzeichnen. Der standardmäßige Domain-Name `*.adobeaemcloud.com` bleibt selbst dann bestehen, wenn Sie Ihrer Website benutzerdefinierte Domain-Namen zuordnen.
+Adobe Experience Manager as a Cloud Service wird mit einem standardmäßigen Domain-Namen bereitgestellt, der auf `*.adobeaemcloud.com` endet. Um Ihre Site im Self-Service mit einem eindeutigen, markenspezifischen Namen zu identifizieren, können Sie eine benutzerdefinierte Domain mithilfe der Benutzeroberfläche von Cloud Manager hinzufügen. Der standardmäßige `*.adobeaemcloud.com` bleibt auch dann bestehen, wenn Sie benutzerdefinierte Domain-Namen mit Ihrer Website verknüpfen.
 
 ## Was sind benutzerdefinierte Domain-Namen? {#what-are-custom-domain-names}
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service bietet einen integrierten CDN(Content Delivery Network)-S
 * Cloud Manager verwaltet benutzerdefinierte Domain-Namen und Zertifikate, die im von AEM verwalteten CDN installiert sind.
 * Benutzerdefinierte Domain-Namen und Zertifikate, die in einem eigenen CDN installiert sind, werden direkt in diesem CDN verwaltet.
 
-**Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden** - sie werden AEM über X-Forwarded-Host zur Verfügung gestellt und stimmen mit den in der Dispatcher definierten virtuellen Hosts überein. Weitere Informationen finden Sie in der [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
+**Domänen, die in Ihrem eigenen CDN verwaltet werden, müssen nicht über Cloud Manager installiert werden** — sie werden AEM über X-Forwarded-Host zur Verfügung gestellt und stimmen mit den in der Dispatcher definierten virtuellen Hosts überein. Weitere Informationen finden Sie in der [CDN-Dokumentation](/help/implementing/dispatcher/cdn.md).
 
 In einer Umgebung können Sie beide Domains im von AEM verwalteten CDN und in Ihrem eigenen CDN installiert haben.
 
@@ -69,7 +69,7 @@ Das Hinzufügen eines benutzerdefinierten Domain-Namens erfordert die Interaktio
 
 >[!TIP]
 >
->In der Regel ist das Einrichten benutzerdefinierter Domain-Namen mit AEM as a Cloud Service ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Delegierung kommen, deren Behebung 1 bis 2 Werktage dauern kann. Daher wird empfohlen, die Domains rechtzeitig vor dem Tag ihrer Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+>Das Einrichten benutzerdefinierter Domain-Namen mit AEM as a Cloud Service ist in der Regel ein einfacher Prozess. Gelegentlich kann es jedoch zu Problemen mit der Domain-Delegierung kommen, deren Behebung 1 bis 2 Werktage dauern kann. Aus diesem Grund empfiehlt Adobe, die Domains rechtzeitig vor ihrem Tag der Live-Schaltung zu installieren. Weitere Informationen finden Sie im Dokument [Überprüfen des Domain-Namensstatus](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## Nutzungshinweise {#usage-notes}
 
