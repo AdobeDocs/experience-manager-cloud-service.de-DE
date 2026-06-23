@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: review-annotate-interactive-communication
-source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -126,3 +126,4 @@ Eine Anmerkung ist ein positionierter Pin, der an eine bestimmte Komponente auf 
 - [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
 - [Vorlagensperre im Editor für interaktive Kommunikation](/help/forms/interactive-communication/enable-template-lock.md)
 - [Versionierung und Kommentare im Editor für interaktive Kommunikation](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+

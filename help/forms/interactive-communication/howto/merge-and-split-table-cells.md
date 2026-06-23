@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: merge-split-table-cells-ic-editor
-source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 3%
@@ -84,3 +84,4 @@ Im Dialogfeld „Aufspaltung“ wird der Wert **Max. Spalten** angezeigt, der de
 - [Tabellenkomponente im Editor für interaktive Kommunikation](/help/forms/interactive-communication/table.md)
 - [Erstellen einer dynamischen Tabelle im Editor für interaktive Kommunikation](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
 - [Erstellen einer interaktiven Kommunikation](/help/forms/interactive-communication/create-interactive-communication.md)
+

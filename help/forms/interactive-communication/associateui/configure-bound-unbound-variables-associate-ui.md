@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: configure-bound-unbound-variables-associate-ui
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -213,4 +213,5 @@ Im linken Dateneingabefeld wird nur eine Instanz angezeigt. Der Associate gibt d
 - [Konfigurieren von Dropdown-Optionen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
 - [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Komponente „Ungebundene Variable“ im Editor für interaktive Kommunikation](/help/forms/interactive-communication/unbound-variable.md)
+
 

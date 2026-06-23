@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: unbound-variable-ic-editor
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 3%
@@ -155,3 +155,4 @@ Sie können eine ungebundene Variable in Teilformularen, Layout-Containern oder 
 - [Datums-/Uhrzeitfeldkomponente](/help/forms/interactive-communication/date-time-field.md) - Anzeigemustersyntax für kombinierte Datums- und Uhrzeitwerte
 - [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md) — Schreiben von Ausdrücken zum Berechnen und Zuweisen von Werten zu ungebundenen Variablen
 - [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+
