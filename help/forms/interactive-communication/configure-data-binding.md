@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 2%
@@ -77,3 +77,4 @@ Autoren wählen das FDM normalerweise zu Beginn des Projekts aus, ordnen Felder 
 - **Vertrauliche Daten schützen** Maskieren, Verschlüsselung und Zugriff mit den geringsten Rechten für personenbezogene Daten oder Zahlungsdetails anwenden.
 
 Durch die sorgfältige Konfiguration der Datenbindung schaffen Autoren eine zuverlässige Brücke zwischen Design und Daten - durch die Beschleunigung der Kommunikationserstellung, die Sicherstellung der Genauigkeit und die Bereitstellung hochgradig personalisierter Erlebnisse in großem Umfang.
+

@@ -8,7 +8,7 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -81,3 +81,4 @@ Nach dem Einfügen der interaktiven Kommunikation:
 - Überprüfen Sie die Datenbindungen und Ausgabekanäle nach dem Kopieren, um Korrektheit sicherzustellen.
 
 Die Funktion zum Kopieren und Einfügen in der interaktiven Kommunikation vereinfacht die Wiederverwendung und Anpassung, indem sie es Autoren ermöglicht, vorhandene ICs zu duplizieren und unabhängig zu ändern. Sie ermöglicht eine schnellere Entwicklung, sicherere Experimente und eine konsistente Kommunikation - ohne das Risiko von Änderungen an der ursprünglichen interaktiven Kommunikation einzugehen.
+

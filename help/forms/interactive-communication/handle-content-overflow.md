@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f19abed5-34a1-4c26-9e92-e219da798dab
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 1%
@@ -86,3 +86,4 @@ Autoren ändern die Größe des Containers manuell, um zusätzliche Inhalte einz
 - Hilft bei der schnellen Identifizierung von Überläufen durch visuelle Indikatoren.
 
 - Verbessert die Flexibilität beim Kommunikationsdesign für beide Layouttypen.
+

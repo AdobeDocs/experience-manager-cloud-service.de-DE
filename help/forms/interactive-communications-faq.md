@@ -4,7 +4,7 @@ description: Häufig gestellte Fragen zu interaktiven Kommunikationen in AEM For
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
-source-git-commit: 8043d0bd709962023f4828a6fffa2939788538b2
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 5%
@@ -79,3 +79,4 @@ Verschieben Sie die Komponente auf die Musterseite. Klicken Sie mit der rechten 
 
 **F: Welche Komponententypen können nicht auf die Musterseite verschoben werden?**
 Die folgenden Typen sind nicht für die Aktion Zur primären Seite wechseln geeignet: Inhaltsbereiche, Seitenbereiche, Seitensätze, Fragmente, Teilformulare, Tabellenzeilen, Tabellenzellen und Optionsfelder. Komponenten mit angewendeter Inhalts- oder Layout-Sperre sind ebenfalls nicht zulässig.
+

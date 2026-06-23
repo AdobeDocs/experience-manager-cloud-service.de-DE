@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -103,3 +103,4 @@ Der Regeleditor wird häufig verwendet, um sicherzustellen, dass Formulare und K
 
 
 Durch die sorgfältige Konfiguration von Regeln können Autoren Kommunikationen erstellen, die intelligent auf Daten und Benutzeraktionen reagieren. So werden Prozesse optimiert, Fehler reduziert und ein nahtloses, personalisiertes Erlebnis bereitgestellt.
+
