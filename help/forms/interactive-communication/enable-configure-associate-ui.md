@@ -4,19 +4,16 @@ description: Erfahren Sie, wie Sie in den Einstellungen für interaktive Kommuni
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: 7c3e8a2b-5f21-4a1e-9e2d-8a4b6c7d8e9f
-source-git-commit: a41459520feb03594212b91e68cfd8e2b1e610c4
+exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 1%
+source-wordcount: '762'
+ht-degree: 0%
 
 ---
 
 # Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 In diesem Artikel wird beschrieben, wie Sie die Benutzeroberfläche „Verknüpfen“ für eine interaktive Kommunikation (IC) aktivieren und optional einen AEM-Workflow für Übermittlungen konfigurieren. Autoren führen diese Schritte in **Einstellungen für interaktive Kommunikation** aus.
 

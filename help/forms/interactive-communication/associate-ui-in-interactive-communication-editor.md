@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
+source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 4%
+source-wordcount: '652'
+ht-degree: 3%
 
 ---
 
 # Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Die **Associate-Benutzeroberfläche** ist eine spezielle, vereinfachte Benutzeroberfläche, die auf dem Editor für interaktive Kommunikation (IC) aufbaut. Es wurde für kundenorientierte Fachleute wie Außendienstmitarbeiter und Service-Agenten entwickelt, um während Live-Interaktionen in Echtzeit personalisierte, konforme und genaue Kommunikation zu generieren.
 
@@ -55,7 +52,7 @@ Verantwortlich für die Systemeinrichtung, Governance, Backend-Integrationen und
 | Governance und Sicherheit | Verwaltet Benutzerberechtigungen und stellt die Systemkonformität sicher. |
 | Integrationsverwaltung | Pflegt Backend-Integrationen und Live-Kundendatenverbindungen. |
 
-### &#x200B;2. Autor
+### 2. Author
 
 Entwirft und verwaltet die interaktive Kommunikation und konfiguriert sie für die Associate-Benutzeroberfläche (einschließlich Aktivierung der Associate-Ansicht und optionalem Workflow).
 
@@ -109,5 +106,7 @@ Durch die Kombination von intuitivem Design, robuster Backend-Konfiguration und 
 ## Siehe auch
 
 - [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Konfigurieren von Dropdown-Optionen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+- [Konfigurieren von gebundenen und ungebundenen Variablen für die Associate-Benutzeroberfläche](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Übermittlungs-Workflow für Associate UI - IC-Generierung der PDF-Ausgabe](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)

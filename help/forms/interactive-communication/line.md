@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 4%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
 # LINE-Komponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -29,7 +26,7 @@ Mit der Linienkomponente im Editor für interaktive Kommunikation (IC) können A
 
 Die Linienkomponente verfügt über eine Reihe konfigurierbarer Eigenschaften, um ihre Identität, ihr Erscheinungsbild, ihre Platzierung und Sichtbarkeit innerhalb des Dokuments zu definieren.
 
-2.1. Grundfeld
+2.1. Basisfeld
 
 - **Name:** Eine eindeutige Kennung, die intern verwendet wird, um auf die LINE-Komponente in Datenmodellen, Regeln oder Skripten zu verweisen.
 
@@ -41,7 +38,7 @@ Die Linienkomponente verfügt über eine Reihe konfigurierbarer Eigenschaften, u
 
    - **Unterstreichen:** Zeichnet eine Unterstreichung, die normalerweise unter Überschriften oder Feldern verwendet wird.
 
-2.2. Lage
+2.2. Position
 
 - **Beschreibung:** Definiert die physische Platzierung der Zeile im Formular-Layout.
 
@@ -51,7 +48,7 @@ Die Linienkomponente verfügt über eine Reihe konfigurierbarer Eigenschaften, u
 
    - **Höhe und Breite:** Legen Sie die Länge und Stärke der Linie (in mm) fest.
 
-2.3. Spanne
+2.3. Rand
 
 - **Beschreibung:** Fügt einen Abstand um die Linienkomponente hinzu, um die Layoutdichte zu steuern.
 
@@ -65,7 +62,7 @@ Die Linienkomponente verfügt über eine Reihe konfigurierbarer Eigenschaften, u
 
    - Rechtsbündig
 
-2.4. Erscheinungsbild
+2.4. Darstellung
 
 - **Beschreibung:** Ermöglicht die Gestaltung der Zeile entsprechend dem Dokumententwurf.
 
@@ -77,7 +74,7 @@ Die Linienkomponente verfügt über eine Reihe konfigurierbarer Eigenschaften, u
 
    - **Style:** Sie zwischen den Stilen Gestrichelt, Punkte oder Durchgezogene Linien.
 
-2.5. Vorhandensein
+2.5. Präsenz
 
 - **Beschreibung:** Steuert die Sichtbarkeit der Linienkomponente während der Laufzeit.
 
@@ -110,3 +107,8 @@ Die LINE-Komponente wird häufig verwendet, um:
 - Unnötige Linien ausblenden, um Ablenkungen zu vermeiden und gleichzeitig den Layout-Abstand beizubehalten.
 
 Die LINE-Komponente im Editor für interaktive Kommunikation ist ein einfaches, aber leistungsstarkes Design-Element. Bei strategischer Verwendung verbessert es die visuelle Struktur von Kommunikationsdokumenten, unterstützt Benutzende dabei, besser durch Inhalte zu navigieren, und sorgt für ein saubereres, klareres Layout.
+
+## Siehe auch
+
+- [Rechteckkomponente](/help/forms/interactive-communication/rectangle.md)
+- [Bildkomponente](/help/forms/interactive-communication/image.md)

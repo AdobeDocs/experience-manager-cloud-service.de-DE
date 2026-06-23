@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 5%
 
 ---
 
 
 # Erstellen einer Vorlage für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Vorlagen für interaktive Kommunikation in AEM ermöglichen es Benutzenden, wiederverwendbare Layout-Strukturen wie Kopf- und Fußzeilen, Logos und Standardstile zu definieren. Diese Vorlagen dienen als Grundlage für die Erstellung konsistenter, markenspezifischer und effizienter Kommunikation.
 

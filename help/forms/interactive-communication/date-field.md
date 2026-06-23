@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 5%
 
 ---
 
 # Datumsfeldobjekt im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -27,11 +24,43 @@ Das Datumsfeld ist ideal zur Erfassung von Geburtsdaten, Terminplänen, Bewerbun
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/date.png)
 
-## &#x200B;2. Eigenschaften
+## &#x200B;2. Anzeigemuster
+
+Sie können einem Datumsfeld **Anzeigemuster** im Bedienfeld **Eigenschaften** zuweisen, z. B. **1. April 2007** **01/04/2007**.
+
+Das konfigurierte Muster wird sofort in der Vorschau der Arbeitsfläche angezeigt und bleibt über die Speicher- und Neuladungszyklen hinweg erhalten. Für erweiterte Anwendungsfälle können Sie eine **benutzerdefinierte XFA-Bildklausel) definieren** um das gewünschte Ausgabeformat zu erzielen.
+
+### Konfigurieren eines Anzeigemusters
+
+1. Wählen Sie die Komponente Datumsfeld auf der Design-Arbeitsfläche aus.
+2. Öffnen Sie das Bedienfeld **Eigenschaften**.
+3. Wählen **im Abschnitt** ein vordefiniertes Muster aus oder geben Sie eine benutzerdefinierte Bildklausel ein.
+4. Zeigen Sie eine Vorschau des formatierten Werts auf der Arbeitsfläche an.
+
+### Beispiel für ein benutzerdefiniertes Muster (Datum)
+
+| Muster | Beispielausgabe | Beschreibung |
+|---------|----------------|-------------|
+| `date{DD/MM/YYYY}` | 01/04/2007 | Tag/Monat/Jahr |
+
+**Allgemeine Datums-Token:**
+
+| Token | Bedeutung |
+|-------|---------|
+| D, TT | Tag |
+| M, MM, MMM, MMMM | Monat |
+| JJJJ, JJJJ | Jahr |
+| EEEE | Wochentag |
+
+>[!NOTE]
+>
+> Damit Anzeigemuster korrekt gerendert werden können, müssen die zugrunde liegenden Datumsfeldwerte mit **ISO 8601** übereinstimmen. Geben Sie Werte im **JJJJ-MM-TT**-Format an (z. B. `2007-04-01`). Werte, die diesem Format nicht folgen, werden unverändert angezeigt, ohne dass eine Musterformatierung angewendet wird.
+
+## &#x200B;3. Eigenschaften
 
 Das Datumsfeldobjekt enthält mehrere konfigurierbare Eigenschaften:
 
-2.1. Grundfeld
+2.1. Basisfeld
 
 - **Name:** Eindeutige Kennung, die zum Referenzieren des Felds in Regeln, Skripten und Datenmodellen verwendet wird.
 
@@ -51,7 +80,7 @@ Steuert, wie das Datum visuell im Feld angezeigt wird:
 
 - **Größe:** in der Regel standardmäßig auf 10 pt festgelegt, kann jedoch aus Gründen der Konsistenz mit dem umgebenden Inhalt angepasst werden.
 
-2.3. Lage
+2.3. Position
 
 Definiert die räumliche Platzierung innerhalb des Dokumentlayouts:
 
@@ -59,7 +88,7 @@ Definiert die räumliche Platzierung innerhalb des Dokumentlayouts:
 
 - **Breite und Höhe** Legen Sie sie in Millimetern oder Prozentsätzen fest, um sie an anderen Formularelementen auszurichten.
 
-2.4. Spanne
+2.4. Rand
 
 Gibt den Abstand um die Feldgrenzen an:
 
@@ -73,7 +102,7 @@ Gibt den Abstand um die Feldgrenzen an:
 
 Diese Werte helfen bei der präzisen Ausrichtung innerhalb von Teilformularen oder Layout-Rastern.
 
-2.5. Erscheinungsbild
+2.5. Darstellung
 
 Definiert den visuellen Stil des Feld-Containers:
 
@@ -87,7 +116,7 @@ Definiert den visuellen Stil des Feld-Containers:
 
 - **Kanten** Passen Sie Ecken als abgerundet oder scharf für verschiedene Designvoreinstellungen an.
 
-2.6. Vorhandensein
+2.6. Präsenz
 
 Bestimmt, wie und wann das Feld angezeigt wird:
 
@@ -111,7 +140,7 @@ Verbindet das Datumsfeld mit Datenstrukturen zum Speichern oder Vorausfüllen vo
 
 Dies ermöglicht das Abrufen, Anzeigen oder Speichern dynamischer Datumswerte basierend auf der Anwendungslogik.
 
-## &#x200B;3. Verwendung
+## &#x200B;4. Nutzung
 
 Das Datumsfeld ist besonders in folgenden Szenarien nützlich:
 
@@ -123,7 +152,7 @@ Das Datumsfeld ist besonders in folgenden Szenarien nützlich:
 
 Autoren können das Datumsfeld in Layout-Containern oder Teilformularen platzieren und die Validierung (z. B. Datumsformat, Bereichsbeschränkungen) konfigurieren, um die Datenqualität zu verbessern.
 
-## 4. Best Practices
+## 5. Best Practices
 
 - Verwenden Sie für bessere Benutzererlebnisse klare Beschriftungen wie „Startdatum“ oder „Termindatum auswählen“.
 
@@ -136,3 +165,12 @@ Autoren können das Datumsfeld in Layout-Containern oder Teilformularen platzier
 - Dynamisches Ausblenden nicht relevanter Datumsfelder mithilfe von Sichtbarkeitsregeln.
 
 Das **Datumsfeld**-Objekt im Editor für interaktive Kommunikation ist ein leistungsstarkes Tool zur präzisen und einfachen Erfassung zeitkritischer Daten. Wenn sie durchdacht gestaltet und mit aussagekräftigen Datenpfaden verbunden sind, unterstützt sie ein nahtloses Benutzererlebnis und eine effiziente Verarbeitung von zeitbasierten Einträgen.
+
+## Siehe auch
+
+- [Textfeld-Komponente](/help/forms/interactive-communication/text-box.md)
+- [Numerische Feldkomponente](/help/forms/interactive-communication/numeric-field.md)
+- [Datum/Uhrzeit-Feldkomponente](/help/forms/interactive-communication/date-time-field.md)
+- [Ungebundene Variablenkomponente](/help/forms/interactive-communication/unbound-variable.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

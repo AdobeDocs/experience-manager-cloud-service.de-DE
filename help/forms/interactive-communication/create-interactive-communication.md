@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 5%
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
 
 # Erstellen einer interaktiven Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Interaktive Kommunikation ermöglicht Ihnen das Erstellen, Verwalten und Bereitstellen personalisierter und interaktiver Kommunikation, einschließlich Kundendienst, Abrechnung, Onboarding-Dokumenten, Angebotsbriefen, Kontoaktualisierungen und mehr. Sie wurde entwickelt, um alle Szenarien zu unterstützen, in denen dynamische, benutzerspezifische Inhalte das Kommunikationserlebnis branchenübergreifend verbessern.
 
@@ -92,3 +89,10 @@ Beginnen Sie mit der Erstellung interaktiver Kommunikationen, um Ihre Workflows 
 
 [Erstellen einer interaktiven Kommunikationsvorlage](/help/forms/interactive-communication/create-interactive-communication-template.md)
 [Erstellen eines interaktiven Kommunikationsfragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+
+## Siehe auch
+
+* [Interaktive Kommunikation überprüfen und kommentieren](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) - Zusammenarbeit mit Reviewern mithilfe von positionierten Anmerkungspins auf der IC-Arbeitsfläche.
+* [Versionen der interaktiven Kommunikation vergleichen](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) - Untersuchen Sie Layout- und Inhaltsunterschiede zwischen zwei Versionen nebeneinander.
+* [Zusammenführen und Aufteilen von Tabellenzellen](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) - Erstellen flexibler Tabellen-Layouts durch Zusammenführen oder Aufteilen von Zellen.
+* [Verschieben einer Komponente auf die Musterseite](/help/forms/interactive-communication/howto/move-component-to-master-page.md) - Stellen Sie eine konsistente seitenübergreifende Komponentenplatzierung sicher.

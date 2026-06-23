@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 3%
+source-wordcount: '499'
+ht-degree: 2%
 
 ---
 
 # Teilformularkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -107,3 +104,9 @@ Teilformulare können auch als Container für die Drag-and-Drop-Design-Ausrichtu
 - Wenden Sie bedingte Sichtbarkeitsregeln an, um das Benutzererlebnis in komplexen Formularen zu optimieren.
 
 Die **Teilformular**-Komponente im Editor für interaktive Kommunikation bietet eine leistungsstarke Möglichkeit, komplexe Formularlayouts zu strukturieren und zu steuern. Unabhängig davon, ob Sie Eingabefelder organisieren, dynamische Inhalte verwalten oder einen modularen Entwurf ermöglichen, verbessern Teilformulare in allen Dokumentvorlagen sowohl die Benutzerfreundlichkeit als auch die Wartungsfreundlichkeit.
+
+## Siehe auch
+
+- [Überlauf von Inhalten im Editor für interaktive Kommunikation handhaben](/help/forms/interactive-communication/handle-content-overflow.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

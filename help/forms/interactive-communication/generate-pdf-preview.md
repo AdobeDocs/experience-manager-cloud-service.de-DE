@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '336'
 ht-degree: 4%
 
 ---
 
 # PDF-Vorschau im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Die PDF-Vorschaufunktion ermöglicht Benutzenden die Vorschau von interaktiver Kommunikation auf drei verschiedene Arten: ohne Daten, mit lokalen JSON-basierten Daten oder mit Beispieldaten aus dem konfigurierten Datenmodell.
 
@@ -47,9 +44,9 @@ Zeigen Sie eine Vorschau der interaktiven Kommunikation ohne Daten, lokale Daten
 
 +++&#x200B;2. Vorschau mit lokalen JSON-Daten
 
-2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[&#x200B; (FDM](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
+2.1. Bereiten Sie eine strukturierte JSON-Datei vor. Als Referenz können Sie die Beispieldaten aus dem für die Kommunikation verwendeten JSON-[ (FDM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) kopieren.
 
-2.2. Wechseln Sie im IC-Editor zu **PDF-Vorschau** > Lokale Daten verwenden.
+2.2. Wechseln Sie im IC-Editor zu **PDF-Vorschau** > Verwenden lokaler Daten.
 
 2.3. Wählen Sie Ihre JSON-Datei aus und laden Sie sie hoch, um eine PDF-Vorschau mit den bereitgestellten Daten zu rendern.
 
@@ -59,7 +56,7 @@ Zeigen Sie eine Vorschau der interaktiven Kommunikation ohne Daten, lokale Daten
 
 +++&#x200B;3. Vorschau mit Datenmodell 
 
-3.1. Wählen Sie **Mit Datenmodell** aus, um Beispieldaten aus einem bereits konfigurierten Formulardatenmodell (FDM) der IC zu verwenden.
+3.1. Wählen Sie **Mit Datenmodell** aus, um Beispieldaten aus einem bereits konfigurierten Formulardatenmodell (FDM) des IC zu verwenden.
 
 3.2. Die Vorschau füllt automatisch Daten aus Modellfeldern. Stellen Sie sicher, dass die Beispieldaten bei der ersten Verwendung in FDM gespeichert werden oder die Vorschau als Nicht-Daten angezeigt wird.
 

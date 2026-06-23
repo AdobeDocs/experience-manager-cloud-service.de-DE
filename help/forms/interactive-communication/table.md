@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '640'
 ht-degree: 2%
 
 ---
 
 # Tabellenkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -115,3 +112,9 @@ Autoren können die Anzahl der Zeilen und Spalten konfigurieren, bedingte Sichtb
 - Verwenden Sie Standardvorlagen, um tabellarische Inhalte für alle Dokumente zu standardisieren.
 
 Die Tabellenkomponente im IC-Editor ist eine flexible, datenfreundliche Komponente, die strukturierte Inhalte in Ihrer Kommunikation unterstützt. Mit anpassbaren Layout-Optionen, Styling-Funktionen und leistungsstarker Datenbindung ermöglicht sie es Autoren, Informationen klar und effektiv darzustellen.
+
+## Siehe auch
+
+- [Zusammenführen und Aufteilen von Tabellenzellen im Editor für interaktive Kommunikation](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) - Erfahren Sie, wie Sie benachbarte Zellen zu einer Zelle kombinieren oder eine zusammengeführte Zelle aufteilen, um flexible Tabellen-Layouts zu erstellen.
+- [Erstellen einer dynamischen Tabelle im Editor für interaktive Kommunikation](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)

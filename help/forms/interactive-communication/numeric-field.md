@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 3%
 
 ---
 
 # Komponente „Numerisches Feld“ im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -25,7 +22,39 @@ Mit der Komponente „Numerisches Feld“ im Editor für interaktive Kommunikati
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/numericfield.png)
 
-## &#x200B;2. Eigenschaften
+## &#x200B;2. Anzeigemuster
+
+Sie können einem numerischen Feld **Anzeigemuster** aus dem Bedienfeld **Eigenschaften** zuweisen, z. B. Rendern eines Werts als Währung: **$1.234,21**.
+
+Das konfigurierte Muster wird sofort in der Vorschau der Arbeitsfläche angezeigt und bleibt über die Speicher- und Neuladungszyklen hinweg erhalten. Für erweiterte Anwendungsfälle können Sie eine **benutzerdefinierte XFA-Bildklausel) definieren** um das gewünschte Ausgabeformat zu erzielen.
+
+### Konfigurieren eines Anzeigemusters
+
+1. Wählen Sie die Komponente Numerisches Feld auf der Design-Arbeitsfläche aus.
+2. Öffnen Sie das Bedienfeld **Eigenschaften**.
+3. Wählen **im Abschnitt** ein vordefiniertes Muster aus oder geben Sie eine benutzerdefinierte Bildklausel ein.
+4. Zeigen Sie eine Vorschau des formatierten Werts auf der Arbeitsfläche an.
+
+### Beispiel für ein benutzerdefiniertes Muster (numerisch)
+
+| Muster | Beispielausgabe | Beschreibung |
+|---------|----------------|-------------|
+| `num{$z,zzz,zz9.99}` | $1,234.21 | Währung mit Tausendertrennzeichen |
+
+**Picture-Klauselsymbole (numerisch):**
+
+| Symbol | Bedeutung |
+|--------|---------|
+| 9 | Erforderliche Ziffer |
+| z | Unterdrückt führende Nullen. |
+
+### Best Practices
+
+- Wählen Sie ein Muster, das die Einheit des Werts klar darstellt (Währungssymbol, Prozentsatz usw.).
+- Validieren von Beispieldaten auf der Arbeitsfläche vor der Veröffentlichung.
+- Verwenden Sie benutzerdefinierte Bildklauseln nur, wenn vordefinierte Muster Ihre Formatierungsanforderungen nicht erfüllen.
+
+## &#x200B;3. Eigenschaften
 
 2.1 Basisfeld
 
@@ -101,7 +130,7 @@ Steuert die Sichtbarkeit des numerischen Felds zur Laufzeit.
 
 **Keine Datenbindung:** Behält das Feld für die reine visuelle Verwendung oder die temporäre Eingabe bei.
 
-## &#x200B;3. Verwendung
+## &#x200B;4. Nutzung
 
 Numerische Felder sind ideal in Szenarien, in denen nur Ziffern eine gültige Eingabe sind. Häufige Anwendungsszenarien umfassen:
 
@@ -115,7 +144,7 @@ Numerische Felder sind ideal in Szenarien, in denen nur Ziffern eine gültige Ei
 
 Autoren können numerische Felder in Layout-Containern oder Teilformularen platzieren und Validierungen (wie Längen-, Mindest- oder Höchstwertbeschränkungen) anwenden, um die Datenqualität zu verbessern.
 
-## 4. Best Practices
+## 5. Best Practices
 
 - Numerische Felder ggf. eindeutig mit Einheiten kennzeichnen (z. B. „Betrag in ₹„).
 
@@ -128,3 +157,12 @@ Autoren können numerische Felder in Layout-Containern oder Teilformularen platz
 - Halten Sie ein konsistentes Erscheinungsbild und Typografie aufrecht, um den Markenrichtlinien zu entsprechen.
 
 Die **Numerisches Feld**-Komponente im Editor für interaktive Kommunikation ist ein präzises, zuverlässiges Tool für die ziffernbasierte Datenerfassung. Mit robuster Formatierung, Sichtbarkeitssteuerelementen und Datenbindungsoptionen wird sichergestellt, dass numerische Eingaben klar erfasst und nahtlos in digitale Formulare integriert werden. Wenn sie richtig formatiert und konfiguriert sind, werden die Benutzerfreundlichkeit der Formulare und die allgemeine Datengenauigkeit erheblich verbessert.
+
+## Siehe auch
+
+- [Textfeld-Komponente](/help/forms/interactive-communication/text-box.md)
+- [Komponente „Datumsfeld“](/help/forms/interactive-communication/date-field.md)
+- [Datum/Uhrzeit-Feldkomponente](/help/forms/interactive-communication/date-time-field.md)
+- [Ungebundene Variablenkomponente](/help/forms/interactive-communication/unbound-variable.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

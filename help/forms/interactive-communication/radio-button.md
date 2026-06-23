@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 2%
+source-wordcount: '543'
+ht-degree: 4%
 
 ---
 
 # Optionsfeldkomponente im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 ## &#x200B;1. Einführung
 
@@ -30,7 +27,7 @@ Optionsschaltflächen sind intuitiv, einfach zu konfigurieren und können an Bac
 
 Die Optionsschaltflächen-Komponente enthält mehrere konfigurierbare Eigenschaften:
 
-2.1. Grundfeld
+2.1. Basisfeld
 
 - **Name:** Eine eindeutige Kennung für das Feld. Sie wird für Verweise innerhalb von Datenmodellen, Regeln und Geschäftslogik verwendet.
 
@@ -40,7 +37,7 @@ Die Optionsschaltflächen-Komponente enthält mehrere konfigurierbare Eigenschaf
 
 - **Reserve:** Optionaler Fallback-Wert, wenn keine Auswahl getroffen oder die Datenbindung leer ist.
 
-2.2. Lage
+2.2. Position
 
 Beschreibung: Steuert die räumliche Platzierung der Optionsfeldgruppe im Layout.
 
@@ -50,7 +47,7 @@ Beschreibung: Steuert die räumliche Platzierung der Optionsfeldgruppe im Layout
 
 - **Höhe und Breite** (für responsives Layout in mm oder % definiert)
 
-2.3. Spanne
+2.3. Rand
 
 Definieren Sie den Abstand um das Textfeld:
 
@@ -62,7 +59,7 @@ Definieren Sie den Abstand um das Textfeld:
 
 - Rechtsbündig
 
-2.4. Vorhandensein
+2.4. Präsenz
 
 - **Beschreibung:** Bestimmt die Sichtbarkeit der Optionsschaltflächen-Komponente zur Laufzeit.
 
@@ -115,3 +112,9 @@ Autoren können verwandte Optionsschaltflächen gruppieren und in Layout-Contain
 - Verwenden Sie konsistente Abstände und Ausrichtung für eine bessere visuelle Klarheit, insbesondere in mobilfreundlichen Layouts.
 
 Die Optionsschaltflächen-Komponente im Editor für interaktive Kommunikation ist eine grundlegende Eingabekomponente, die Endbenutzern eine saubere, strukturierte Entscheidungsfindung bietet. Wenn sie mit klaren Bezeichnungen, durchdachten Abständen und Datenbindung konfiguriert ist, sorgt sie für eine zuverlässige Datenerfassung und ein reibungsloseres Benutzererlebnis für Formulare, Umfragen und Onboarding-Workflows.
+
+## Siehe auch
+
+- [Kontrollkästchenkomponente](/help/forms/interactive-communication/check-box.md)
+- [Konfigurieren der Datenbindung im Editor für interaktive Kommunikation](/help/forms/interactive-communication/configure-data-binding.md)
+- [Verwenden des Regeleditors im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md)

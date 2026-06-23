@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d906be2812090ed7f6439b0ffafc481d29b13e1
+source-git-commit: e4a81d514422497ec3f41537e3a2e57677730af5
 workflow-type: tm+mt
-source-wordcount: '7502'
+source-wordcount: '7545'
 ht-degree: 84%
 
 ---
@@ -1058,6 +1058,10 @@ ht-degree: 84%
       + [Erstellen eines interaktiven Kommunikationsfragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + {hide-from-toc}[Einführung in die interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
       + {hide-from-toc}[Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/create-your-first-communication.md)
+   + Überprüfen und Zusammenarbeiten {#review-collaborate}
+      + {hide-from-toc}[Versionierung und Kommentare im Editor für interaktive Kommunikation](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + {hide-from-toc}[Interaktive Kommunikation überprüfen und mit Anmerkungen versehen](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+      + {hide-from-toc}[Versionen der interaktiven Kommunikation vergleichen](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Component {#component}
       + [Textfeld](/help/forms/interactive-communication/text-box.md)
       + [Bild](/help/forms/interactive-communication/image.md)
@@ -1073,6 +1077,7 @@ ht-degree: 84%
       + [Tabelle](/help/forms/interactive-communication//table.md)
       + [Line](/help/forms/interactive-communication/line.md)
       + [Strichcode](/help/forms/interactive-communication/barcode.md)
+      + [Ungebundene Variable](/help/forms/interactive-communication/unbound-variable.md)
    + Anleitung {#howto}
       + [Konfigurieren der Datenbindung](/help/forms/interactive-communication/configure-data-binding.md)
       + [Verwenden des Regeleditors](/help/forms/interactive-communication/use-the-rule-editor.md)
@@ -1083,16 +1088,19 @@ ht-degree: 84%
       + [Implementieren der dynamischen Seitennummerierung](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
       + [Überlauf von Inhalten handhaben](/help/forms/interactive-communication/handle-content-overflow.md)
       + [Unterstützung der XDP-Bearbeitung](/help/forms/interactive-communication/support-xdp-editing.md)
-      + {hide-from-toc}[Erstellen von Versionen und Hinzufügen von Kommentaren](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
       + {hide-from-toc}[Kopieren und Einfügen der interaktiven Kommunikation](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [Workflow in interaktiver Kommunikation starten](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [Dynamische Tabelle erstellen](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+      + {hide-from-toc}[Zusammenführen und Aufteilen von Tabellenzellen](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+      + {hide-from-toc}[Verschieben einer Komponente auf die Musterseite](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
    + Benutzeroberfläche verknüpfen {#associateui}
       + [Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [Übermittlungs-Workflow für Associate UI - IC-Generierung der PDF-Ausgabe](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-   + {hide-from-toc}[Häufig gestellte Fragen](/help/forms/interactive-communications-faq.md)
+      + {hide-from-toc}[Konfigurieren von Dropdown-Optionen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+      + {hide-from-toc}[Konfigurieren von gebundenen und ungebundenen Variablen für die Associate-Benutzeroberfläche](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+   + [Häufig gestellte Fragen](/help/forms/interactive-communications-faq.md)
 + Formularzentrierte Workflows {#create-form-centric-workflows}
    + {hide-from-toc}[Einführung in Forms-zentrierte Workflows](/help/forms/aem-forms-workflow.md)
    + [Verwenden von formularzentrierten Schritten in einem Workflow – Schritt-Referenz](/help/forms/aem-forms-workflow-step-reference.md)

@@ -8,18 +8,15 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '372'
+ht-degree: 1%
 
 ---
 
 # Kopieren und Einfügen im Editor für interaktive Kommunikation
 
->[!NOTE]
->
-> Die interaktive Kommunikationsfunktion ist im Rahmen des Early-Adopter-Programms verfügbar. Senden Sie von Ihrer Geschäftsadresse eine E-Mail an `aem-forms-ea@adobe.com`, um den Zugriff anzufordern.
 
 Mit der Funktion zum Kopieren und Einfügen im Editor für interaktive Kommunikation (IC) können Autoren eine vorhandene interaktive Kommunikation duplizieren und sie in einem anderen Ordner oder Speicherort wiederverwenden. Diese Funktion hilft Teams, effizient zu arbeiten, indem mehrere Varianten einer IC aktiviert werden, ohne die Originalversion zu ändern.
 
