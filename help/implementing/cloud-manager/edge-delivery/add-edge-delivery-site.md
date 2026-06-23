@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihrem Produktions- oder Sandbox-Programm eine
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 58%
@@ -15,7 +15,7 @@ ht-degree: 58%
 
 >[!IMPORTANT]
 >
->Erfahren Sie, warum Sie Ihre Edge Delivery Services-Site in Cloud Manager integrieren müssen.
+>Erfahren Sie, warum Sie Ihre Edge Delivery Services-Site zu Cloud Manager hinzufügen müssen.
 >Siehe [Vorteile der Verwendung des von Adobe empfohlenen Pfads für Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **So fügen Sie eine Edge Delivery-Site zu Cloud Manager hinzu:**

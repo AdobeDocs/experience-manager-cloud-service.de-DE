@@ -4,19 +4,19 @@ description: Erfahren Sie, wie Sie mit einem Klick auf eine Schaltfläche schnel
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 9cf3ab69adf8819d9f5496bf826c63f7cf01d554
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 57%
+source-wordcount: '1446'
+ht-degree: 53%
 
 ---
 
 
 # Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick{#about-one-click-edge-delivery-site}
 
-Das Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick wurde entwickelt, um das Onboarding und die Bereitstellung von Edge Delivery-Sites in Cloud Manager zu automatisieren. Dies vereinfacht den Prozess erheblich, da Sie nur auf eine einzige Schaltfläche klicken müssen. Mit einem einzigen Klick wird die erforderliche Infrastruktur bereitgestellt, mit GitHub zur Versionskontrolle integriert und der Dokument- und Asset-Speicher in Google Drive konfiguriert.
+Das Erstellen Ihrer ersten Edge Delivery-Site mit einem Klick wurde entwickelt, um das Onboarding und die Bereitstellung von Edge Delivery-Sites in Cloud Manager zu automatisieren. Dies vereinfacht den Prozess, indem eine einzige Schaltfläche für die Bereitstellung bereitgestellt wird. Mit einem einzigen Klick wird die erforderliche Infrastruktur bereitgestellt, mit GitHub zur Versionskontrolle integriert und der Dokument- und Asset-Speicher in Google Drive konfiguriert.
 
-Diese Automatisierung trägt dazu bei, den manuellen Aufwand bei der Einrichtung Ihrer ersten Site zu reduzieren. Auf diese Weise werden nicht nur nahtlose Workflows sowie Skalierbarkeit sichergestellt, sondern auch die Leistung Ihrer Teams bei der Verwaltung von Inhalten am Edge verbessert.
+Diese Automatisierung trägt dazu bei, den manuellen Aufwand bei der Einrichtung Ihrer ersten Site zu reduzieren. Es sorgt für nahtlose Workflows, Skalierbarkeit und verbessert die Leistung Ihrer Teams bei der Verwaltung von Inhalten an der Edge.
 
 >[!IMPORTANT]
 >
@@ -60,7 +60,7 @@ Siehe auch [Einführung in Edge Delivery Services in Cloud Manager](/help/implem
 
 1. Klicken Sie **Site jetzt erstellen**.
 
-   Oben in der Mitte des Bildschirms wird eine Popup-Meldung angezeigt, die Sie darüber informiert, dass die Bereitstellung der Edge Delivery-Site begonnen hat.
+   In der oberen Mitte des Bildschirms wird eine Benachrichtigung angezeigt, die Sie darüber informiert, dass die Bereitstellung der Edge Delivery-Site begonnen hat.
 
    Wenn Cloud Manager die Site-Bereitstellung und -Validierung abgeschlossen hat **wird der** Site-Name“ (der zuvor eingegebene Projektname) im Listenfeld **Edge Delivery Sites** auf der Edge Delivery-Seite angezeigt. Links neben der Statusspalte **Verifiziert“ wird** grüner Punkt angezeigt.
 
