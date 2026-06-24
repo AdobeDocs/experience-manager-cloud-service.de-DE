@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
+source-git-commit: 0d8b2820b338be530429114afad74fa4686d286a
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 77%
+source-wordcount: '561'
+ht-degree: 67%
 
 ---
 
@@ -26,7 +26,7 @@ Dieser Fehler tritt auf, weil die Kundin bzw. der Kunde einen verschlüsselten p
 
 +++**Der private Schlüssel muss im PKCS 8-Format sein**
 
-## Der private Schlüssel muss im PKCS 8-Format sein. {#pkcs-8}
+## Privater Schlüssel muss im PKCS-8-Format vorliegen {#pkcs-8}
 
 Dieser Fehler tritt auf, weil die Kundin bzw. der Kunde einen verschlüsselten privaten Schlüssel verwendet und den Schlüssel im DER-Format bereitgestellt hat.
 
@@ -72,7 +72,7 @@ Wenn Sie beim Hinzufügen eines Zertifikats einen Fehler wie den folgenden erhal
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-Wahrscheinlich haben Sie das Client-Zertifikat in die Zertifikatskette aufgenommen. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
+Es ist möglich, dass Sie das Client-Zertifikat in die Zertifikatkette eingeschlossen haben. Vergewissern Sie sich, dass die Kette nicht das Client-Zertifikat enthält, und versuchen Sie es erneut.
 
 +++
 
@@ -142,12 +142,12 @@ Cloud Manager erwartet, dass das SSL-Zertifikat ab dem aktuellen Datum mindesten
 
 ## Auf meine Domain wird ein falsches SAN-Zertifikat angewendet {#wrong-san-cert}
 
-Nehmen wir an, Sie möchten `dev.yoursite.com` und `stage.yoursite.com` mit Ihrer produktionsfremden Umgebung und `prod.yoursite.com` mit Ihrer Produktionsumgebung verknüpfen.
+Sie möchten beispielsweise `dev.yoursite.com` und `stage.yoursite.com` mit Ihrer Nicht-Produktionsumgebung und `prod.yoursite.com` mit Ihrer Produktionsumgebung verknüpfen.
 
 Um das CDN für diese Domains zu konfigurieren, muss für jede Domain ein Zertifikat installiert sein. Daher müssen Sie ein Zertifikat installieren, das die `*.yoursite.com` für Ihre Nicht-Produktions-Domains abdeckt, und ein weiteres, das auch die `*.yoursite.com` für Ihre Produktions-Domains abdeckt.
 
-Diese Konfiguration ist gültig. Wenn Sie jedoch eines der Zertifikate aktualisieren, decken beide Zertifikate immer noch denselben SAN-Eintrag ab. Daher installiert das CDN das neueste Zertifikat auf allen anwendbaren Domains, was unerwartet erscheinen kann.
+Diese Konfiguration ist gültig. Wenn Sie jedoch eines der Zertifikate aktualisieren, decken beide Zertifikate immer noch denselben SAN-Eintrag ab. Daher installiert das CDN das neueste Zertifikat auf allen anwendbaren Domains, was unerwartet erscheint.
 
-Obwohl dieses Szenario unerwartet sein kann, ist es kein Fehler und das Standardverhalten des zugrunde liegenden CDN. Wenn Sie zwei oder mehr SAN-Zertifikate haben, die denselben SAN-Domäneneintrag abdecken, installiert das CDN das zuletzt aktualisierte Zertifikat für diese Domäne. Diese Situation tritt auch dann auf, wenn ein anderes Zertifikat bereits denselben Domain-Eintrag abdeckt.
+Obwohl dieses Szenario unerwartet eintritt, handelt es sich hierbei nicht um einen Fehler und es handelt sich um das Standardverhalten des zugrunde liegenden CDN. Wenn Sie zwei oder mehr SAN-Zertifikate haben, die denselben SAN-Domäneneintrag abdecken, installiert das CDN das zuletzt aktualisierte Zertifikat für diese Domäne. Diese Situation tritt auch dann auf, wenn ein anderes Zertifikat bereits denselben Domain-Eintrag abdeckt.
 
 +++
