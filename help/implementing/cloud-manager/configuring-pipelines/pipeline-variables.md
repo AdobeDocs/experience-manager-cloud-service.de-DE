@@ -5,16 +5,16 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7a229f94996802ba1df6ac188c41572a9a76145a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 97%
+source-wordcount: '675'
+ht-degree: 81%
 
 ---
 
 # Pipeline-Variablen in Cloud Manager {#configuring-pipeline-variables}
 
-Ihr Build-Prozess basiert möglicherweise auf bestimmten Konfigurationsvariablen, die nicht im Git-Repository gespeichert werden sollen. Oder Sie müssen sie ggf. zwischen Pipeline-Ausführungen in derselben Verzweigung anpassen. Mit Cloud Manager können Sie diese Einstellungen als Pipeline-Variablen verwalten.
+Ihr Build-Prozess verwendet bestimmte Konfigurationsvariablen, die nicht im Git-Repository gespeichert sind. Oder Sie müssen sie zwischen Pipeline-Ausführungen auf derselben Verzweigung anpassen. Mit Cloud Manager können Sie diese Einstellungen als Pipeline-Variablen verwalten.
 
 ## Über Pipeline-Variablen {#pipeline-variables}
 
@@ -22,13 +22,13 @@ Mithilfe von Cloud Manager können Sie Pipeline-Variablen auf verschiedene Arten
 
 * [Verwenden der Cloud Manager-Benutzeroberfläche](#ui)
 * [Verwenden der Cloud Manager-CLI](#cli)
-* [Verwenden der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
+* [Verwenden der Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Variables/operation/getPipelineVariables)
 
-Variablen können entweder als reiner Test oder im Ruhezustand verschlüsselt gespeichert werden. In beiden Fällen werden Variablen innerhalb der Build-Umgebung als Umgebungsvariable bereitgestellt, die dann in der Datei `pom.xml` oder anderen Build-Skripten referenziert werden kann.
+Variablen werden entweder als reiner Text oder im Ruhezustand verschlüsselt gespeichert. Variablen sind innerhalb der Build-Umgebung als Umgebungsvariable verfügbar, die dann von der `pom.xml`-Datei oder anderen Build-Skripten referenziert werden kann.
 
 ## Hinzufügen einer Pipeline-Variablen über Cloud Manager {#ui}
 
-Pipeline-Variablen können über die Cloud Manager-Benutzeroberfläche konfiguriert und verwaltet werden. Sie helfen beim Optimieren der Pipeline-Verwaltung, insbesondere wenn unterschiedliche Konfigurationen in verschiedenen Schritten erforderlich sind.
+Pipeline-Variablen können über die Cloud Manager-Benutzeroberfläche konfiguriert und verwaltet werden. Sie vereinfachen die Pipeline-Verwaltung, insbesondere wenn in verschiedenen Schritten unterschiedliche Konfigurationen erforderlich sind.
 
 Sie müssen über Berechtigungen zum Bearbeiten der Pipeline verfügen, um Pipeline-Variablen hinzufügen, bearbeiten und löschen zu können.
 
@@ -97,13 +97,13 @@ Wenn eine Pipeline ausgeführt wird, wird die Variablenverwaltung blockiert.
 
 ## Festlegen von Pipeline-Variablen mithilfe der Cloud Manager-Befehlszeilenschnittstelle {#cli}
 
-Dieser Befehl in der Befehlszeilenschnittstelle legt eine Variable fest.
+Dieser CLI-Befehl (Command Line Interface) konfiguriert Variablen.
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
 ```
 
-Dieser Befehl listet Variablen auf.
+Dieser Befehl listet die Variablen auf.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables PIPELINEID
