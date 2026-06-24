@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 51b9e7fd6fd51ee3565ff2c563e6d0c8a6283389
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 95%
+source-wordcount: '1103'
+ht-degree: 81%
 
 ---
 
@@ -21,9 +21,9 @@ Erfahren Sie, wie Sie mit Cloud Manager den Status Ihrer SSL-Zertifikate überpr
 
 Cloud Manager bietet einen Überblick über den Status aller Zertifikate für Ihr Programm.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie das entsprechende Programm aus.
+1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
-1. Klicken Sie oben links auf der Seite auf ![Symbol zur Menüanzeige](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das Seitenmenü anzuzeigen.
+1. Klicken Sie oben links auf der Seite auf ![Menüsymbol anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), um das Seitenmenü zu öffnen.
 1. Klicken Sie unter der Überschrift **Services** auf ![Sperrsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL-Zertifikate**.
 
 Die Seite **SSL-Zertifikate** zeigt den Status Ihrer SSL-Zertifikate.
@@ -36,13 +36,13 @@ Die Seite **SSL-Zertifikate** zeigt den Status Ihrer SSL-Zertifikate.
 
 ## Aktualisieren eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#update-ssl-certificate}
 
-Wenn ein kundenseitig verwaltetes Zertifikat abläuft, funktionieren die Domains, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Durch das Aktualisieren Ihrer Zertifikate wird sichergestellt, dass Ihre Domain weiterhin wie gewünscht funktioniert.
+Wenn ein vom Kunden verwaltetes Zertifikat abläuft, funktionieren alle Domains, die mit dem abgelaufenen Zertifikat verwendet werden, nicht mehr. Durch die Aktualisierung Ihrer Zertifikate wird sichergestellt, dass Ihre Domain weiterhin ordnungsgemäß funktioniert.
 
 Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um diese Aufgabe abzuschließen.
 
 >[!IMPORTANT]
 >
->Schließen Sie beim Hinzufügen oder Aktualisieren eines SSL-Zertifikats das neue Zertifikat nicht in die Zertifikatskette ein. Sonst wird das erfolgreiche Abschließen des Uploads verhindert.
+>Schließen Sie beim Hinzufügen oder Aktualisieren eines SSL-Zertifikats das neue Zertifikat nicht in die Zertifikatskette ein. Dadurch wird verhindert, dass der Upload abgeschlossen wird.
 
 **So aktualisieren Sie ein abgelaufenes, kundenseitig verwaltetes SSL-Zertifikat:**
 
@@ -57,7 +57,7 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 1. Gehen Sie im Dialogfeld **SSL-Zertifikat anzeigen und aktualisieren** wie folgt vor:
 
    * (Optional) Geben Sie im Feld **Zertifikatname** einen neuen Namen ein.
-   * Fügen Sie im Feld **Zertifikat** den neuen Schlüssel des Zertifikatinhalts ein.
+   * Fügen Sie **Feld** Zertifikat“ den neuen Zertifikatinhalt ein.
    * Aktualisieren Sie dieses Feld im Feld **Privater Schlüssel** nur, wenn Sie Änderungen am Zertifikat vorgenommen haben.
    * Fügen Sie im Feld **Zertifikatskette** (oder Vertrauenskette) die Zertifikatskette ein.
 
@@ -72,15 +72,15 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 ## Ersetzen eines abgelaufenen, kundenseitig verwalteten SSL-Zertifikats {#replace-ssl-certificate}
 
-Führen Sie dieselben Schritte aus, die unter [Aktualisieren eines abgelaufenen SSL-Zertifikats](#update-ssl-certificate) beschrieben sind, um ein abgelaufenes, kundenseitig verwaltetes SSL-Zertifikat zu ersetzen.
+Führen Sie dieselben Schritte aus, die unter [Aktualisieren eines abgelaufenen SSL-Zertifikats](#update-ssl-certificate) beschrieben sind, um ein abgelaufenes kundenverwaltetes SSL-Zertifikat zu ersetzen.
 
 ## Umbenennen eines von Adobe verwalteten SSL-Zertifikats (#rename-an-ssl-certificate)
 
-Im Folgenden finden Sie einige Gründe, aus denen Sie möglicherweise ein SSL-Zertifikat umbenennen möchten:
+Im Folgenden finden Sie Gründe für das Umbenennen eines SSL-Zertifikats:
 
 * **Verbesserte Organisation**: Das Umbenennen des Zertifikats kann dazu beitragen, seinen Zweck zu verdeutlichen, z. B. die Identifizierung der Umgebung (z. B. Staging, Produktion) oder der Domain, für die es bestimmt ist.
 * **Vermeiden von Verwirrung**: Wenn Sie mehrere Zertifikate verwalten, kann ein klarer, beschreibender Name dazu beitragen, Fehler zu verhindern, wie etwa das Anwenden des falschen Zertifikats auf die falsche Domain.
-* **Konformität und Auditing**: Das Verfolgen ordnungsgemäß benannter Zertifikate aus Sicherheits- und Audit-Gründen ist leichter.
+* **Compliance und Auditing**: Richtig benannte Zertifikate sind für Sicherheits- und Auditzwecke einfacher zu verfolgen.
 
 **So benennen Sie ein von Adobe verwaltetes SSL-Zertifikat um:**
 
@@ -107,7 +107,7 @@ Das Löschen von SSL-Zertifikaten, die von Adobe oder kundenseitig verwaltet wer
 
 >[!NOTE]
 >
->Sie können ein von Adobe verwaltetes SSL-Zertifikat, dem mindestens eine aktive Domain zugeordnet ist, nicht löschen. Alle verknüpften aktiven Domains müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Weitere Information finden Sie unter [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
+>Sie können ein von Adobe verwaltetes SSL-Zertifikat, dem mindestens eine aktive Domain zugeordnet ist, nicht löschen. Alle verknüpften aktiven Domains müssen vor dem Löschen des SSL-Zertifikats gelöscht werden. Weitere Informationen finden Sie unter [Verwalten von benutzerdefinierten Domain-Namen](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Manager** verfügen, um diese Aufgabe abzuschließen.
 
@@ -123,20 +123,20 @@ Eine Person muss über die Rolle **Geschäftsinhaber** oder **Bereitstellungs-Ma
 
 1. Klicken Sie auf der Seite „SSL-Zertifikate“ ganz rechts in der Tabellenzeile des zu löschenden Zertifikats auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und dann auf **Löschen**.
 
-   Wenn die Schaltfläche **Löschen** ein Informationssymbol aufweist, wie in der folgenden Abbildung dargestellt, finden Sie weitere Informationen im Hinweis oben.
+   Wenn **Löschen** ein Informationssymbol aufweist, wie in der folgenden Abbildung dargestellt, sehen Sie sich den Hinweis oben an.
 
    ![Schaltfläche „Löschen“ mit Informationssymbol](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. Klicken Sie im Dialogfeld **SSL-Zertifikat löschen** auf **Löschen**, um den Löschvorgang zu bestätigen.
 
-1. Führen Sie die Pipeline aus, um die Bereitstellung des gelöschten Zertifikats aufzuheben.
+1. Um die Bereitstellung des gelöschten Zertifikats aufzuheben, führen Sie die Pipeline aus.
 
 
 ## Bereits vorhandene CDN-Konfigurationen {#pre-existing-cdn}
 
 Wenn Sie bereits über eine CDN-Konfiguration für Ihr SSL-Zertifikat verfügen, zeigt die Seite **SSL-Zertifikate** eine informative Meldung an. In dieser wird empfohlen, diese Konfigurationen über die Benutzeroberfläche hinzuzufügen, damit sie in Cloud Manager sichtbar und verwaltbar sind.
 
-Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Es kann einen bis zwei Werktage dauern, bis die Nachricht nicht mehr angezeigt wird.
+Die Nachricht verschwindet, nachdem alle bereits vorhandenen Umgebungskonfigurationen über die Benutzeroberfläche migriert worden sind. Die Nachricht wird innerhalb von ein bis zwei Werktagen entfernt.
 
 Weitere Details finden Sie unter [Hinzufügen eines SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
