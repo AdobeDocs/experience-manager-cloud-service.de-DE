@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 0171e2e6a27a8b60bcd94792e616961598f580fb
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 34%
+source-wordcount: '1712'
+ht-degree: 29%
 
 ---
 
@@ -54,13 +54,13 @@ Nachdem Sie in der Benutzeroberfläche von Cloud Manager ein Programm eingericht
 1. Wählen Sie das **Verhalten bei bedeutenden Metrikfehlern** aus, das Sie verwenden möchten.
 
    * **Jedes Mal fragen**: Dieses Verhalten ist die Standardeinstellung und erfordert ein manuelles Eingreifen bei einem bedeutenden Fehler.
-   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler abgebrochen. Im Wesentlichen wird damit ein Benutzer simuliert, der manuell jeden Fehler ablehnt.
-   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler automatisch fortgesetzt. Im Wesentlichen wird damit eine Benutzerin oder ein Benutzer simuliert, die bzw. der manuell jeden Fehler genehmigt.
+   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler abgebrochen. Es emuliert einen Benutzer, der manuell jeden Fehler ablehnt.
+   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler automatisch fortgesetzt. Es emuliert einen Benutzer, der manuell jeden Fehler genehmigt.
 
 1. Klicken Sie auf **Weiter**.
 
 1. Die restlichen Schritte, die Sie zum Abschließen der Konfiguration Ihrer produktionsfremden Pipeline verwenden, hängen vom Typ des Quell-Codes ab, den Sie verwenden möchten.
-Wählen Sie auf der Registerkarte **Source** des Dialogfelds **Produktionsfremde Pipeline hinzufügen** aus, welche Art von Code die produktionsfremde Pipeline verarbeiten soll.
+Wählen Sie auf der Registerkarte **Source** des Dialogfelds **Produktionsfremde Pipeline hinzufügen** den Code-Typ aus, den die produktionsfremde Pipeline verarbeitet.
 
    * **[Ich verwende den Full-Stack-Code](#full-stack-code)**
    * **[Ich verwende eine zielgerichtete Bereitstellung](#targeted-deployment)**
@@ -80,14 +80,14 @@ Gehen Sie wie folgt vor, um die Konfiguration der produktionsfremden Full-Stack-
 
 1. Definieren Sie im Abschnitt **Source** Code die folgenden Optionen.
 
-   * **Mögliche Bereitstellungsumgebungen** - Nur verfügbar, wenn Sie eine produktionsfremde Pipeline bearbeiten. Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, für welche Umgebungen sie etwas bereitstellen soll.
+   * **Mögliche Bereitstellungsumgebungen** - Nur verfügbar, wenn Sie eine produktionsfremde Pipeline bearbeiten. Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, wählen Sie die Umgebungen aus, in denen sie bereitgestellt wird.
    * **Repository**: Wählen Sie in der Dropdown-Liste das Git-Repository aus, das die Pipeline als Quelle verwendet. Cloud Manager erstellt Code aus dem Repository, das Sie hier auswählen.
 
      >[!TIP]
      > 
      >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-   * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus der die Pipeline erstellen soll. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
+   * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus dem die Pipeline erstellt. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
    * **Strategie erstellen**
       * **Vollständiger Build**: Erstellt jedes Mal alle Module im Repository.
       * BETA **Smart Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
@@ -109,8 +109,7 @@ Gehen Sie wie folgt vor, um die Konfiguration der produktionsfremden Full-Stack-
 
 1. Klicken Sie auf **Speichern**.
 
-Die Pipeline wird gespeichert und Sie können jetzt [Pipelines verwalten]&#x200B;(managing-pipe)
-lines.md) auf der Karte **Pipelines** auf der Seite **Programmübersicht**.
+Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
 ### Ich verwende eine zielgerichtete Bereitstellung. {#targeted-deployment}
 
@@ -130,7 +129,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
    * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
-* **Web-Stufen-Konfiguration**: Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
+* **Web-Stufen-**: Konfigurieren von Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
    * Weitere Informationen finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
    * Wenn für die ausgewählte Umgebung bereits eine Code-Pipeline auf Web-Ebene vorhanden ist, wird diese Auswahl deaktiviert.
    * Wenn eine Full-Stack-Pipeline bereits in einer Umgebung bereitgestellt wird, können Sie dennoch eine Web-Stufen-Konfigurations-Pipeline für dieselbe Umgebung erstellen. Dabei ignoriert Cloud Manager die Web-Stufen-Konfiguration in der Full-Stack-Pipeline.
@@ -153,14 +152,14 @@ The steps to complete the creation of your non-production, targeted deployment p
 
 1. Definieren Sie im Abschnitt **Source** Code die folgenden Optionen:
 
-   * **Repository**: Diese Option definiert, aus welchem GIT-Repository die produktionsfremde Pipeline den Code abrufen soll.
+   * **Repository** - Mit dieser Option wird das GIT-Repository definiert, aus dem die produktionsfremde Pipeline den Code abruft.
 
      >[!TIP]
      > 
      >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll. Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
-   * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
+   * **Git-Verzweigung**: Mit dieser Option wird die Verzweigung definiert, aus der die ausgewählte Pipeline den Code abruft. Geben Sie die ersten Zeichen des Verzweigungsnamens ein und verwenden Sie die Funktion zur automatischen Vervollständigung dieses Felds. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
+   * **Code-Speicherort** - Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys definiert, aus dem die Pipeline den Code abruft.
 
 <!--
    * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)**.
@@ -168,7 +167,7 @@ The steps to complete the creation of your non-production, targeted deployment p
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 -->
 
-1. Wenn Sie das Erlebnis-Audit aktiviert haben, klicken Sie auf **Weiter**, um zur Registerkarte **Erlebnis-Audit** zu gelangen. Dort können Sie die Pfade definieren, die immer in das Erlebnis-Audit einbezogen werden sollen.
+1. Wenn Sie Experience Audit aktiviert haben, klicken Sie auf **Weiter**, um zur Registerkarte **Experience Audit** zu gelangen. Definieren Sie die Pfade, die immer im Experience Audit enthalten sind.
 
    * Wenn Sie **Erlebnis-Audit** aktiviert haben, finden Sie im Dokument [Erlebnis-Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md) Details zur Konfiguration.
    * Wenn nicht, überspringen Sie diesen Schritt.
@@ -210,7 +209,7 @@ Der Leistungsgewinn durch die Verwendung von Smart Build hängt von mehreren Fak
 * Häufigkeit und Umfang von Code-Änderungen.
 * Die Verteilung von Abhängigkeiten über Module hinweg.
 
-Im Allgemeinen können Projekte mit vielen unabhängigen Modulen die größte Verbesserung verzeichnen.
+Die größte Verbesserung erleben Projekte mit vielen unabhängigen Modulen.
 
 ### Opt-out aus dem Cache pro Modul{#smart-build-cache-optout}
 
@@ -230,15 +229,15 @@ Sie können die folgende Eigenschaft zum `pom.xml` des betroffenen Moduls hinzuf
 </properties>
 ```
 
-Diese Syntax zwingt das Modul bei jeder Pipeline-Ausführung neu zu erstellen, während andere Module weiterhin vom Caching profitieren.
+Diese Konfiguration erfordert, dass das Modul bei jeder Pipeline-Ausführung neu erstellt, während andere Module weiterhin vom Caching profitieren.
 
 ### Einschränkungen und Überlegungen bei der Verwendung von Smart Build{#smart-build-limitations}
 
 Beachten Sie bei der Verwendung von Smart Build Folgendes:
 
 * Smarter Build beruht auf Maven-Abhängigkeitsanalyse.
-* Bei Änderungen außerhalb des Abhängigkeitsdiagramms werden Trigger-Neuaufbauten möglicherweise nicht unterstützt.
-* Einige Plug-ins sind möglicherweise nicht vollständig mit der Zwischenspeicherung kompatibel.
+* Bei Änderungen außerhalb des Abhängigkeitsdiagramms werden Trigger-Neuaufbauten nicht unterstützt.
+* Einige Plug-ins sind nicht vollständig mit der Zwischenspeicherung kompatibel.
 * Sie können jederzeit wieder zu **Vollständiger Build** wechseln, indem Sie die produktionsfremde Pipeline bearbeiten.
 
 Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für bestimmte Module deaktivieren oder Ihre Build-Strategie vorübergehend auf **Vollständiger Build** umstellen.
@@ -251,7 +250,7 @@ Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für 
 | Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Prüfen Sie, ob die meisten Module häufig wechseln. |
 | Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb des Maven-Abhängigkeits-Trackings liegen<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
 
-Siehe [Hinzufügen einer produktionsfremden Pipeline](#adding-non-production-pipeline) um die intelligente Erstellung zu aktivieren.
+Siehe [Hinzufügen einer produktionsfremden Pipeline](#add-non-production-pipeline) um die intelligente Erstellung zu aktivieren.
 
 
 
@@ -348,9 +347,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 ## Dispatcher-Pakete ausschließen {#exclude-dispatcher-packages}
 
-Wenn Sie möchten, dass Dispatcher-Pakete in Ihrer Pipeline erstellt, aber nicht in den Build-Speicher hochgeladen werden, deaktivieren Sie die Veröffentlichung. Dadurch kann die Laufzeit der Pipeline verkürzt werden.
+Wenn Sie möchten, dass Dispatcher-Pakete in Ihrer Pipeline erstellt, aber nicht in den Build-Speicher hochgeladen werden, deaktivieren Sie die Veröffentlichung. Diese Konfiguration kann die Laufzeit der Pipeline verkürzen.
 
-Fügen Sie Ihrer Projekt-`pom.xml`-Datei die folgende Konfiguration hinzu, um die Veröffentlichung von Dispatcher-Paketen zu deaktivieren. Legen Sie eine Umgebungsvariable im Cloud Manager-Build-Container fest, um zu kennzeichnen, wann Dispatcher-Pakete ignoriert werden sollen. Die Pipeline liest dieses Flag und ignoriert sie entsprechend.
+Um das Veröffentlichen von Dispatcher-Paketen zu deaktivieren, fügen Sie Ihrer Projekt-`pom.xml` die folgende Konfiguration hinzu. Legen Sie eine Umgebungsvariable im Cloud Manager-Build-Container fest, um zu kennzeichnen, wann Dispatcher-Pakete ignoriert werden sollen. Die Pipeline liest dieses Flag und ignoriert sie entsprechend.
 
 ```xml
 <profile>

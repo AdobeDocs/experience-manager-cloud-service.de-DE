@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 883e35047917de29fb71331fe2f28243e66a16b7
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 62%
+source-wordcount: '1889'
+ht-degree: 54%
 
 ---
 
@@ -52,7 +52,7 @@ Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung m
 
    ![Die Karte „Pipelines“ im Programm-Manager – Überblick](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
-1. Das Dialogfeld **Produktions-Pipeline hinzufügen** erscheint. Geben Sie einen **Pipeline-Name** an, um Ihre Pipeline zu identifizieren, sowie die folgenden Optionen. Klicken Sie auf **Weiter**.
+1. Das Dialogfeld **Produktions-Pipeline hinzufügen** erscheint. Geben Sie zur Identifizierung Ihrer Pipeline **Name der Pipeline** zusammen mit den folgenden Optionen an. Klicken Sie auf **Weiter**.
 
    **Bereitstellungsauslöser**: Beim Definieren der Bereitstellungsauslöser für den Start der Pipeline haben Sie die folgenden Optionen.
 
@@ -62,12 +62,12 @@ Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung m
    **Verhalten bei bedeutenden Metrikfehlern**: Bei der Einrichtung oder Bearbeitung der Pipeline kann der **Bereitstellungs-Manager** festlegen, wie sich die Pipeline verhält, wenn bei einem der Quality Gates ein wichtiger Fehler auftritt. Folgende Optionen sind verfügbar:
 
    * **Jedes Mal fragen**: Dies ist die Standardeinstellung, die ein manuelles Eingreifen bei jedem bedeutenden Fehler verlangt.
-   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler abgebrochen. Damit wird im Grunde eine Person simuliert, die manuell jeden Fehler ablehnt.
-   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler automatisch fortgesetzt. Damit wird im Grunde eine Person simuliert, die manuell jeden Fehler quittiert.
+   * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler abgebrochen. Dieser Prozess emuliert einen Benutzer, der manuell jeden Fehler ablehnt.
+   * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler automatisch fortgesetzt. Dieser Prozess emuliert einen Benutzer, der manuell jeden Fehler genehmigt.
 
    ![Konfiguration der Produktions-Pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. Legen Sie auf der Registerkarte **Quell-Code** fest, welche Art von Code von der Pipeline verarbeitet werden soll.
+1. Wählen Sie auf der Registerkarte **Source** Code den Code-Typ aus, den die Pipeline verarbeitet.
 
    * **[Ich verwende den Full-Stack-Code](#full-stack-code)**
    * **[Konfigurieren einer zielgerichteten Bereitstellungs-Pipeline](#targeted-deployment)**
@@ -76,7 +76,7 @@ Weitere Informationen zu diesem Pipeline-Typ finden Sie unter [CI/CD-Pipelines](
 
 Die Schritte zum Abschluss der Erstellung Ihrer Produktions-Pipeline variieren je nach dem von Ihnen gewählten Typ von Quell-Code. Folgen Sie den oben stehenden Links, um zum nächsten Abschnitt dieses Dokuments zu springen und die Konfiguration Ihrer Pipeline abzuschließen.
 
-### Ich verwende einen Full-Stack-Code {#full-stack-code}
+### Ich verwende den Full-Stack-Code {#full-stack-code}
 
 Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code-Builds bereit, die ein oder mehrere AEM-Server-Programme zusammen mit der HTTPD-/Dispatcher-Konfiguration enthalten.
 
@@ -88,13 +88,13 @@ Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code
 
 1. Definieren Sie auf der Registerkarte **Quell-Code** die folgenden Optionen:
 
-   * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
+   * **Repository** - Definiert das Git-Repository, aus dem die Pipeline den Code abruft.
 
    >[!TIP]
    > 
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-   * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus der die Pipeline erstellen soll. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
+   * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus dem die Pipeline erstellt. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
    * **Strategie erstellen**
       * **Vollständiger Build**: Erstellt jedes Mal alle Module im Repository.
       * BETA **Smart Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
@@ -134,7 +134,7 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 * **Frontend-Code** – Konfigurieren Sie JavaScript und CSS für das Frontend Ihrer AEM-Anwendung.
    * Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
    * Weitere Informationen dazu, wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, finden Sie im Dokument [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
-* **Web-Stufen-Konfiguration**: Konfigurieren Sie die Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
+* **Web-Stufen-**: Konfigurieren von Dispatcher-Eigenschaften zum Speichern, Verarbeiten und Bereitstellen von Web-Seiten für den Client.
    * Weitere Informationen finden Sie im Dokument [CI/CD-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
    * Wenn für die ausgewählte Umgebung bereits eine Code-Pipeline auf Web-Ebene vorhanden ist, wird diese Auswahl deaktiviert.
    * Wenn Sie eine Konfigurations-Pipeline auf Web-Ebene für eine Umgebung mit einer vorhandenen Full-Stack-Pipeline erstellen, wird die Konfiguration auf Web-Ebene in der Full-Stack-Pipeline ignoriert. Diese Änderung betrifft nur die Web-Stufen-Konfiguration in dieser Umgebung.
@@ -151,19 +151,19 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 1. Definieren Sie die **geeigneten Bereitstellungsumgebungen**.
 
-   * Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, müssen Sie auswählen, für welche Umgebungen sie etwas bereitstellen soll.
+   * Wenn es sich bei Ihrer Pipeline um eine Bereitstellungs-Pipeline handelt, wählen Sie die Umgebungen aus, in denen sie bereitgestellt wird.
 
 1. Definieren Sie unter **Quell-Code** die folgenden Optionen:
 
-   * **Repository**: Diese Option legt fest, aus welchem Git-Repository die Pipeline den Code abrufen soll.
+   * **Repository** - Mit dieser Option wird das Git-Repository definiert, aus dem die Pipeline den Code abruft.
 
    >[!TIP]
    > 
    >Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-   * **Git-Verzweigung**: Mit dieser Option wird festgelegt, von welcher Verzweigung in der ausgewählten Pipeline der Code abgerufen werden soll.
+   * **Git-Verzweigung** - Mit dieser Option wird die Verzweigung in der ausgewählten Pipeline definiert, aus der der Code abgerufen wird.
       * Geben Sie die ersten Zeichen des Verzweigungsnamens und die Funktion zur automatischen Vervollständigung dieses Felds ein. Es werden die entsprechenden auswählbaren Verzweigungen gesucht.
-   * **Speicherort des Codes**: Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys festgelegt, aus dem die Pipeline den Code abrufen soll.
+   * **Code-Speicherort** - Mit dieser Option wird der Pfad in der Verzweigung des ausgewählten Repositorys definiert, aus dem die Pipeline den Code abruft.
    * **Anhalten vor der Bereitstellung in der Produktion**: Diese Option setzt die Pipeline vor der Bereitstellung in der Produktion aus.
    * **Geplant**: Ermöglicht Benutzenden die Aktivierung der geplanten Produktionsbereitstellung. Nur für Web-Stufen-spezifische Bereitstellungen verfügbar.
 
@@ -204,7 +204,7 @@ Der Leistungsgewinn durch die Verwendung von Smart Build hängt von mehreren Fak
 * Häufigkeit und Umfang von Code-Änderungen.
 * Die Verteilung von Abhängigkeiten über Module hinweg.
 
-Im Allgemeinen können Projekte mit vielen unabhängigen Modulen die größte Verbesserung verzeichnen.
+Die größte Verbesserung erleben Projekte mit vielen unabhängigen Modulen.
 
 ### Opt-out aus dem Cache pro Modul{#smart-build-cache-optout}
 
@@ -231,8 +231,8 @@ Diese Syntax zwingt das Modul bei jeder Pipeline-Ausführung neu zu erstellen, w
 Beachten Sie bei der Verwendung von Smart Build Folgendes:
 
 * Smarter Build beruht auf Maven-Abhängigkeitsanalyse.
-* Bei Änderungen außerhalb des Abhängigkeitsdiagramms werden Trigger-Neuaufbauten möglicherweise nicht unterstützt.
-* Einige Plug-ins sind möglicherweise nicht vollständig mit der Zwischenspeicherung kompatibel.
+* Bei Änderungen außerhalb des Abhängigkeitsdiagramms werden Trigger-Neuaufbauten nicht unterstützt.
+* Einige Plug-ins sind nicht vollständig mit der Zwischenspeicherung kompatibel.
 * Sie können jederzeit wieder zu **Vollständiger Build** wechseln, indem Sie die Produktions-Pipeline bearbeiten.
 
 Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für bestimmte Module deaktivieren oder Ihre Build-Strategie vorübergehend auf **Vollständiger Build** umstellen.
@@ -245,11 +245,11 @@ Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für 
 | Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Prüfen Sie, ob die meisten Module häufig wechseln. |
 | Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb des Maven-Abhängigkeits-Trackings liegen<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
 
-Siehe [Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline) um die intelligente Erstellung zu aktivieren.
+Informationen zum Aktivieren von Smart Build [ Sie unter „Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline).
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 
-Um Dispatcher-Pakete in Ihrer Pipeline zu erstellen, ohne sie für den Build-Speicher zu veröffentlichen, können Sie die Veröffentlichungsoption deaktivieren. Dies kann dazu beitragen, die Laufzeit der Pipeline zu verkürzen.
+Um Dispatcher-Pakete in Ihrer Pipeline zu erstellen, ohne sie für den Build-Speicher zu veröffentlichen, können Sie die Veröffentlichungsoption deaktivieren. Dadurch wird die Laufzeit der Pipeline verkürzt.
 
 Die folgende Konfiguration zum Deaktivieren von Veröffentlichungs-Dispatcher-Paketen muss über die Datei `pom.xml` Ihres Projekts hinzugefügt werden. Eine Umgebungsvariable dient als Flag, das Sie im Cloud Manager-Build-Container festlegen, um festzulegen, wann Dispatcher-Pakete ignoriert werden sollen.
 

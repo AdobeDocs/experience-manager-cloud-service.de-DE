@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4c142a00601c37bb30e1d8774cb25927e5f9838
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 100%
+source-wordcount: '1572'
+ht-degree: 84%
 
 ---
 
@@ -35,7 +35,7 @@ Wenn Sie auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/sta
 Am Ende der Pipeline-Liste befinden sich die folgenden allgemeinen Optionen:
 
 * **Hinzufügen**: Dient zum [Hinzufügen einer neuen Produktions-Pipeline](configuring-production-pipelines.md) oder zum [Hinzufügen einer neuen produktionsfremden Pipeline](configuring-non-production-pipelines.md).
-* **Alle anzeigen**: Leitet den Anwender zum Bildschirm „Pipelines“, wo alle Pipelines in einer detaillierteren Tabelle angezeigt werden.
+* **Alle anzeigen**: Um alle Pipelines in einer detaillierteren Tabelle anzuzeigen, wechseln Sie zum Bildschirm Pipelines .
 * **Zugriff auf Repo Info**: Zeigt die Informationen an, die für den Zugriff auf das Cloud Manager-Git-Repository erforderlich sind
 * **Weitere Infos**: Navigiert zu den Dokumentationsressourcen zur CI/CD-Pipeline.
 
@@ -49,7 +49,7 @@ Die Seite **Pipelines** zeigt eine vollständige Liste aller Pipelines für das 
 
 1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte ![Registerkarte „Pipelines“ – Workflow Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
 
-1. Auf der Seite **Pipelines** können Sie eine Liste aller Pipelines für das Programm sehen und die Pipeline-Ausführung starten und stoppen, wie Sie es auf der **Pipelines-Karte** tun würden.
+1. Auf der Seite **Pipelines** zeigen Sie eine Liste aller Pipelines für das Programm an und starten und stoppen die Pipeline-Ausführung, wie Sie es auf der Karte **Pipelines** tun.
 
 Wenn eine Pipeline ausgeführt wird, können Sie in der Spalte **Status** auf ![Info – mittleres Symbol](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) klicken, um ein Popup mit Informationen zur Ausführung anzuzeigen. Klicken Sie im Popup-Fenster auf **Details anzeigen**, um [Details zur Pipeline-Ausführung](#view-details) zu sehen.
 
@@ -69,13 +69,13 @@ Sie können bestimmte Pipelines als Favoriten markieren, damit sie oben in der L
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 1. Klicken Sie auf der Seite **Programmübersicht** auf die Registerkarte ![Registerkarte „Pipelines“ – Workflow Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
-1. Klicken Sie auf der Seite „Pipelines“ links neben einem Pipeline-Namen und -Typ auf ![Sternsymbol für eine nicht favorisierte Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg), um sie der Favoritenliste hinzuzufügen.
-Klicken Sie alternativ auf ![Sternsymbol für eine favorisierte Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg), um die Pipeline aus Ihrer Favoritenliste zu entfernen.
+1. Klicken Sie auf der Seite Pipelines links neben einem Pipeline-Namen und -Typ auf ![Sternsymbol für nicht bevorzugte Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg), um sie der Favoritenliste hinzuzufügen.
+Klicken Sie alternativ auf ![Sternsymbol für eine Lieblings-Pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg), um die Pipeline aus Ihrer Favoritenliste zu entfernen.
 
 
 ## Seite „Aktivität“ {#activity}
 
-Die Seite **Aktivität** zeigt eine vollständige Liste aller Pipeline-Ausführungen für das ausgewählte Programm sowie andere wichtige Programmereignisse an.
+Die **Aktivität** zeigt eine vollständige Liste aller Pipeline-Ausführungen für das ausgewählte Programm und andere wichtige Programmereignisse an.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
@@ -99,7 +99,7 @@ Sie können auch auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe
 
 1. Navigieren Sie von der Seite **Programmübersicht** aus zur Karte **Pipelines**.
 
-1. Klicken Sie neben der von Ihnen ausgeführten Pipeline auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Klicken Sie ![Auslassungszeichen - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, die Sie ausführen möchten.
 
 1. Klicken Sie im Dropdown-Menü auf ![Ausführen – Wiedergabesymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PlayCircle_18_N.svg) **Ausführen**.
 
@@ -107,22 +107,22 @@ Sie können auch auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe
 
 Sie können die Details der Ausführung sehen, indem Sie erneut auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) klicken und dann **[Details anzeigen](#view-details)** auswählen.
 
-Je nach Pipeline-Typ können Sie die Ausführung möglicherweise abbrechen, indem Sie erneut auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) klicken und **Abbrechen** auswählen.
+Brechen Sie je nach Pipeline-Typ die Ausführung ab, indem Sie erneut auf ![Auslassungszeichen - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) und auf **Abbrechen** klicken.
 
 ## Ausführen mehrerer Pipelines {#run-multiple-pipelines}
 
-Mit Cloud Manager können Sie mehrere Pipelines gleichzeitig ausführen, was die Bereitstellungseffizienz für Kundinnen und Kunden von AEM as a Cloud Service verbessert. Mit der Funktion **Ausgewählte ausführen** können Sie mehrere Pipelines auswählen und die gleichzeitige Ausführung aller Pipelines auslösen. Dies reduziert den manuellen Aufwand, der mit der individuellen Ausführung von Pipelines verbunden ist, und optimiert Build- und Bereitstellungs-Workflows.
+Mit Cloud Manager können Sie mehrere Pipelines gleichzeitig ausführen, was die Bereitstellungseffizienz für Kundinnen und Kunden von AEM as a Cloud Service verbessert. Mit der Funktion **Ausgewählte ausführen** können Sie mehrere Pipelines auswählen und die gleichzeitige Ausführung aller Pipelines auslösen. Dies reduziert den manuellen Aufwand beim individuellen Ausführen von Pipelines und optimiert Build- und Bereitstellungs-Workflows.
 
 **So führen Sie mehrere Pipelines aus:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 1. Klicken Sie im linken Seitenmenü auf ![Workflow-Symbol ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
-1. Aktivieren Sie in der Tabelle auf der Seite **Pipeline** die Kontrollkästchen neben den Pipelines, die Sie ausführen möchten.
-Klicken Sie bei Bedarf auf ![Filtersymbol, Trichter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filter**, um Pipelines nach Name, Umgebung und/oder Typ des bereitgestellten Codes zu sortieren.
+1. Aktivieren Sie in der Tabelle auf **Seite**Pipeline) die Kontrollkästchen neben den Pipelines, die Sie ausführen möchten.
+Klicken Sie bei Bedarf auf ![Filtersymbol, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filter**, um Pipelines nach Name, Umgebung oder bereitgestelltem Code-Typ oder einer Kombination aus allen drei Typen zu sortieren.
 1. Klicken Sie oben rechts auf der Seite auf **Ausgewählte ausführen (x)**.
 1. Klicken Sie im Dialogfeld **Ausgewählte Pipelines ausführen (x)** auf **Ausführen (x)**.
 
-   Auf der Schaltfläche **Ausführen** wird die Anzahl der Pipelines angegeben, die sich starten lassen. Sie haben beispielsweise vier Pipelines ausgewählt, von denen eine jedoch bereits ausgeführt wird. Oder eine Umgebung, die mit einer ausgewählten Pipeline verknüpft war, existiert nicht mehr. In solchen Fällen nimmt das System die entsprechenden Anpassungen vor. Die Schaltfläche wird zu „Ausführen (3)“ aktualisiert, um anzugeben, dass drei Pipelines ausgeführt werden können.
+   Auf der Schaltfläche **Ausführen** wird die Anzahl der Pipelines angegeben, die sich starten lassen. Sie haben beispielsweise vier Pipelines ausgewählt, von denen jedoch eine bereits ausgeführt wird. Oder eine Umgebung, die mit einer ausgewählten Pipeline verknüpft war, existiert nicht mehr. In solchen Fällen nimmt das System die entsprechenden Anpassungen vor. Die Schaltfläche wird zu „Ausführen (3)“ aktualisiert, um anzugeben, dass drei Pipelines ausgeführt werden können.
 
 1. Die Ausführung der Pipelines beginnt und ihr Status wird in der Liste **Pipelines** aktualisiert.
 
@@ -158,20 +158,20 @@ Sie können eine Pipeline löschen, wenn sie nicht ausgeführt wird.
 
 1. Navigieren Sie von der Seite **Programmübersicht** aus zur Karte **Pipelines**.
 
-1. Klicken Sie neben der von Ihnen ausgeführten Pipeline auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Klicken Sie ![Auslassungszeichen - Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) neben der Pipeline, die Sie ausführen möchten.
 
 1. Klicken Sie im Dropdown-Menü auf **Löschen**.
 
 
 ## Anzeigen von Details der letzten Ausführung einer Pipeline {#view-details}
 
-Sie können die Details einer Pipeline prüfen, um den Status und die Protokolle ihrer letzten Ausführung anzuzeigen. Ein Zugriff auf die Details ist jedoch nur möglich, wenn die Pipeline aktuell ausgeführt wird oder bereits mindestens einmal ausgeführt wurde.
+Um den Status und die Protokolle der letzten Ausführung anzuzeigen, überprüfen Sie die Details einer Pipeline. Ein Zugriff auf die Details ist jedoch nur möglich, wenn die Pipeline aktuell ausgeführt wird oder bereits mindestens einmal ausgeführt wurde.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
 
 1. Navigieren Sie von der Seite **Programmübersicht** aus zur Karte **Pipelines**.
 
-1. Klicken Sie im Dropdown-Menü neben der von Ihnen ausgeführten Pipeline auf ![Auslassungspunkte – Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Klicken Sie im Dropdown-Menü neben ![ Pipeline, die Sie ausführen möchten, auf ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)Auslassungszeichen - Mehr“.
 
 1. Klicken Sie im Dropdown-Menü auf **Letzte Ausführung anzeigen**.
 
@@ -195,7 +195,7 @@ Sie können die Details einer Pipeline prüfen, um den Status und die Protokolle
 
    ![Probleme mit der Code-Qualität](assets/managing-pipelines-code-quality-issues.png)
 
-   Die CSV-Datei enthält eine Spalte mit dem **Speicherort der Projektdatei**, in der der Pfad zum problematischen Code relativ zum Projekt angezeigt wird. Im Gegensatz dazu entspricht die Spalte **Dateispeicherort** dem von Maven generierten Pfad.
+   Die CSV-Datei enthält eine Spalte **Speicherort der Projektdatei**, die den Pfad zum Code mit projektbezogenen Problemen anzeigt. Die Spalte **Dateispeicherort** spiegelt den von Maven generierten Pfad wider.
 
    ![Details zu Problemen beim Scannen des Projekt-Codes](assets/managing-pipelines-code-quality-details.png)
 

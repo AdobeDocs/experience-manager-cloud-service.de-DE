@@ -6,15 +6,15 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: bd129278f5885bd0eb1a25372bba80e863fcc5e7
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 96%
+source-wordcount: '1587'
+ht-degree: 75%
 
 ---
 
 
-# CI/CD-Pipelines in Cloud Manager {#intro-cicd}
+# Cloud Manager CI/CD-Pipelines {#intro-cicd}
 
 Erfahren Sie mehr über CI/CD(Continuous Integration/Continuous Delivery)-Pipelines in Cloud Manager und darüber, wie Sie mit diesen Ihren Code effizient bereitstellen können.
 
@@ -45,7 +45,7 @@ Eine Produktions-Pipeline ist eine speziell entwickelte Pipeline, die eine Reihe
 
 ## Produktionsfremde Pipelines {#non-prod-pipeline}
 
-Eine produktionsfremde Pipeline dient hauptsächlich dazu, Code-Qualitätsprüfungen durchzuführen oder Quell-Code in einer Entwicklungsumgebung bereitzustellen.
+Eine produktionsfremde Pipeline dient dazu, Code-Qualitätsprüfungen durchzuführen oder Quell-Code in einer Entwicklungsumgebung bereitzustellen.
 
 >[!TIP]
 >
@@ -53,14 +53,14 @@ Eine produktionsfremde Pipeline dient hauptsächlich dazu, Code-Qualitätsprüfu
 
 ## Code-Quellen {#code-sources}
 
-Pipelines können sich zusätzlich zur Produktions- und produktionsfremden Umgebung auch in Bezug auf den Typ des von ihnen bereitgestellten Codes unterscheiden.
+Pipelines unterscheiden sich auch durch den Code, den sie bereitstellen, abgesehen von Produktions- und Nicht-Produktionsumgebungen.
 
 * **[Full-Stack-Pipelines](#full-stack-pipeline)**: Diese Pipelines ermöglichen die gleichzeitige Bereitstellung von Backend- und Frontend-Codebuilds mit einer oder mehreren AEM-Server-Anwendungen zusammen mit HTTPD-/Dispatcher-Konfigurationen.
 * **[Konfigurations-Pipelines](#config-deployment-pipeline)**: Sie können Konfigurationen für Funktionen wie Protokollweiterleitung und bereinigungsbezogene Wartungsaufgaben schnell bereitstellen. Dies umfasst zudem verschiedene CDN(Content Delivery Network)-Konfigurationen wie Traffic-Filterregeln, einschließlich Web Application Firewall(WAF)-Regeln. Darüber hinaus können Sie Anfrage- und Reaktionsumwandlungen, Ursprungs-Auswahl, Client-seitige Umleitungen, Fehlerseiten, CDN-Schlüssel, Bereinigungs-API-Schlüssel und grundlegende Authentifizierungsfunktionen verwalten. Weitere Informationen finden Sie unter [Verwenden von Konfigurations-Pipelines](/help/operations/config-pipeline.md).
 * **[Frontend-Pipelines](#front-end)**: Diese Pipelines ermöglichen die Bereitstellung von Frontend-Codebuilds mit einer oder mehreren Client-seitigen Benutzeroberflächenanwendungen.
 * **[Web-Stufen-Konfigurations-Pipelines](#web-tier-config-pipelines)**: Diese Pipelines ermöglichen die Bereitstellung von HTTPD-/Dispatcher-Konfigurationen.
 
-Diese Pipeline-Typen werden an späterer Stelle in diesem Dokument detailliert beschrieben.
+Diese Pipeline-Typen werden später in diesem Dokument beschrieben.
 
 ### Grundlegendes zu CI/CD-Pipelines in Cloud Manager {#understand-pipelines}
 
@@ -84,25 +84,25 @@ Die folgende Abbildung zeigt Pipeline-Konfigurationen in Cloud Manager mit tradi
 
 Full-Stack-Pipelines stellen Backend-Code, Frontend-Code und Web-Stufen-Konfigurationen für AEM Runtime gleichzeitig bereit.
 
-* Backend-Code: Unveränderliche Inhalte wie Java-Code, OSGi-Konfigurationen, RepoInit sowie veränderliche Inhalte
+* Backend-Code: Unveränderlicher Inhalt (Java-Code, OSGi-Konfigurationen, repoinit) und veränderlicher Inhalt
 * Frontend-Code: Ressourcen der Programm-Benutzeroberfläche wie JavaScript, CSS, Schriftarten
 * Web-Stufen-Konfiguration: HTTPD-/Dispatcher-Konfigurationen
 
-Die Full-Stack-Pipeline stellt eine „Uber“-Pipeline dar. Sie verarbeitet alles gleichzeitig und ermöglicht es Benutzenden, ihren Frontend-Code oder ihre Dispatcher-Konfigurationen separat bereitzustellen. Diese Bereitstellung erfolgt über die Frontend-Pipeline bzw. die Web-Stufen-Konfigurations-Pipelines.
+Die Full-Stack-Pipeline stellt eine umfassende Pipeline dar. Sie verarbeitet alles gleichzeitig und ermöglicht es Benutzenden, ihren Frontend-Code oder ihre Dispatcher-Konfigurationen separat bereitzustellen. Diese Bereitstellung erfolgt über die Frontend-Pipeline bzw. die Web-Stufen-Konfigurations-Pipelines.
 
 Full-Stack-Pipelines packen Frontend-Code (JavaScript/CSS) als [AEM Client-Bibliotheken](/help/implementing/developing/introduction/clientlibs.md).
 
-Full-Stack-Pipelines können Web-Stufen-Konfigurationen bereitstellen, wenn eine [Web-Stufen-Konfigurations-Pipeline](#web-tier-config-pipelines) nicht konfiguriert ist.
+Full-Stack-Pipelines stellen Web-Stufen-Konfigurationen bereit, wenn eine [Web-Stufen-Konfigurations](#web-tier-config-pipelines)Pipeline nicht konfiguriert ist.
 
 Folgende Einschränkungen gelten.
 
-* Eine Benutzerin bzw. ein Benutzer muss mit der Rolle **Bereitstellungs-Manager** angemeldet sein, um Pipelines konfigurieren oder ausführen zu können.
+* Ein Benutzer muss mit der Rolle „Bereitstellungs **Manager“ angemeldet sein** um Pipelines konfigurieren oder ausführen zu können.
 * Es kann immer nur eine Full-Stack-Pipeline pro Umgebung geben.
 
 Achten Sie außerdem darauf, wie sich die Full-Stack-Pipeline verhält, wenn Sie eine [Web-Stufen-Konfigurations-Pipeline](#web-tier-config-pipelines) einführen.
 
 * Die Full-Stack-Pipeline für eine Umgebung ignoriert die Dispatcher-Konfiguration, wenn die entsprechende Web-Stufen-Konfigurations-Pipeline vorhanden ist.
-* Wenn die entsprechende Web-Stufen-Konfigurations-Pipeline für die Umgebung nicht vorhanden ist, kann die Benutzerin bzw. der Benutzer die Full-Stack-Pipeline so konfigurieren, dass sie die Dispatcher-Konfiguration berücksichtigt oder ignoriert.
+* Um die Dispatcher-Konfiguration einzuschließen oder zu ignorieren, kann der Benutzer die Full-Stack-Pipeline konfigurieren, wenn die entsprechende Web-Stufen-Konfigurations-Pipeline für die Umgebung nicht vorhanden ist.
 
 Full-Stack-Pipelines können Pipelines zur Code-Qualitätsprüfung oder für die Bereitstellung sein.
 
@@ -129,9 +129,9 @@ Siehe [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-m
 
 ## Frontend-Pipelines {#front-end}
 
-Frontend-Code ist jeder Code, der als statische Datei bereitgestellt wird. Er ist nicht mit dem von AEM bereitgestellten UI-Code identisch und kann Site-Designs, kundendefinierte SPAs, SPAs und andere Lösungen umfassen.
+Frontend-Code ist jeder Code, der als statische Dateien bereitgestellt wird. Sie ist vom Benutzeroberflächen-Code, der von AEM bereitgestellt wird, getrennt und umfasst Site-Designs, kundendefinierte SPAs, SPAs und andere Lösungen.
 
-Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu optimieren, indem sie eine beschleunigte Bereitstellung von Frontend-Code ermöglichen, der asynchron von der Backend-Entwicklung ausgeführt wird. Diese dedizierte Pipeline stellt JavaScript und CSS als Design auf der AEM-Verteilungsebene bereit, was zu einer neuen Design-Version führt, die von Seiten referenziert werden kann, die von AEM bereitgestellt werden.
+Frontend-Pipelines helfen Ihren Teams, Ihren Design- und Entwicklungsprozess zu optimieren, indem sie eine beschleunigte Bereitstellung von Frontend-Code ermöglichen, asynchron von der Backend-Entwicklung. Diese dedizierte Pipeline stellt JavaScript und CSS als Design auf der AEM-Verteilungsebene bereit, was zu einer neuen Design-Version führt, die von Seiten referenziert wird, die von AEM bereitgestellt werden.
 
 >[!NOTE]
 >
@@ -154,11 +154,11 @@ Siehe [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-m
 
 Mit Frontend-Pipelines erhalten Frontend-Entwickelnde mehr Unabhängigkeit, und der Entwicklungsprozess kann beschleunigt werden.
 
-Wie dieser Prozess abläuft und was dabei zu beachten ist, um das volle Potenzial dieses Prozesses auszuschöpfen, erfahren Sie unter [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+Unter [Entwickeln von Sites mit der Frontend-Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) finden Sie Informationen zur Funktionsweise dieses Prozesses sowie einige Überlegungen, die Sie beachten sollten, um das Potenzial dieses Prozesses zu maximieren.
 
 ## Web-Stufen-Konfigurations-Pipelines {#web-tier-config-pipelines}
 
-Web-Stufen-Konfigurations-Pipelines ermöglichen die exklusive Bereitstellung der HTTPD-/Dispatcher-Konfiguration zur AEM-Runtime, indem sie sie von anderen Code-Änderungen entkoppeln. Es handelt sich um eine optimierte Pipeline, die Benutzenden, die nur Änderungen an der Dispatcher-Konfiguration bereitstellen möchten, eine beschleunigte Möglichkeit bietet, dies innerhalb weniger Minuten zu tun.
+Web-Stufen-Konfigurations-Pipelines ermöglichen die exklusive Bereitstellung der HTTPD-/Dispatcher-Konfiguration zur AEM-Runtime, indem sie sie von anderen Code-Änderungen entkoppeln. Es handelt sich dabei um eine optimierte Pipeline, die Benutzenden, die nur Dispatcher-Konfigurationsänderungen bereitstellen möchten, eine beschleunigte Möglichkeit bietet, dies zu tun.
 
 >[!TIP]
 >
@@ -168,10 +168,10 @@ Folgende Einschränkungen gelten.
 
 * Sie müssen die AEM-Version `2021.12.6151.20211217T120950Z` oder höher verwenden, um Web-Stufen-Konfigurations-Pipelines nutzen zu können.
 * Sie müssen [in den flexiblen Modus der Dispatcher-Tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) wechseln, um Web-Stufen-Konfigurations-Pipelines nutzen zu können.
-* Eine Benutzerin bzw. ein Benutzer muss mit der Rolle **Bereitstellungs-Manager** angemeldet sein, um Pipelines konfigurieren oder ausführen zu können.
+* Ein Benutzer muss mit der Rolle „Bereitstellungs **Manager“ angemeldet sein** um Pipelines konfigurieren oder ausführen zu können.
 * Es kann immer nur eine Web-Ebenen-Konfigurations-Pipeline pro Umgebung geben.
 * Benutzende können eine Web-Ebenen-Konfigurations-Pipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
-* Die Web-Stufen-Struktur muss der im Dokument [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug) definierten flexiblen Modusstruktur entsprechen.
+* Die Web-Stufen-Struktur muss der in [ Dispatcher in der Cloud definierten flexiblen Modusstruktur ](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Außerdem sollten Sie darauf achten, wie sich die [Full-Stack-Pipeline](#full-stack-pipeline) bei der Einführung einer Web-Stufen-Pipeline verhält.
 

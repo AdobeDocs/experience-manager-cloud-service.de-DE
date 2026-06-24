@@ -7,10 +7,10 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 4f9c0d41fce9ee16aae19077759cea312487513f
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 73%
+ht-degree: 65%
 
 ---
 
@@ -26,7 +26,7 @@ Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/
 
 >[!IMPORTANT]
 >
->Eine Edge Delivery-Pipeline lässt sich erst konfigurieren, nachdem folgende Aufgaben erledigt wurden:
+>Eine Edge Delivery-Pipeline kann erst konfiguriert werden, nachdem Folgendes passiert ist:
 >
 >* Es wurde ein Programm erstellt, das eine Edge Delivery Services-Site und eine zugeordnete Domain enthält. Andernfalls wird die Option **Edge Delivery-Pipeline hinzufügen** in der Benutzeroberfläche deaktiviert angezeigt und in einer QuickInfo werden fehlende Anforderungen erläutert. Siehe [Erstellen einer Edge Delivery-Site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* Das Git-Repository hat mindestens eine Verzweigung. Siehe [Verwalten von Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
@@ -91,12 +91,12 @@ Konfigurieren Sie Ihre Pipeline-Einstellungen über [!UICONTROL Cloud Manager], 
 
    * **Bereitstellungsumgebung**: Zeigt das Zielumgebungsfeld an; bleibt schreibgeschützt.
 
-   * **Repository**: Verwenden Sie die Dropdown-Liste, um die Pipeline auf das exakte Git-Repository zu verweisen, in dem die Edge Delivery-Konfiguration gespeichert ist.
+   * **Repository**: Verwenden Sie die Dropdown-Liste, um die Pipeline auf das Git-Repository zu verweisen, in dem die Edge Delivery-Konfiguration gespeichert ist.
 
      Weitere Informationen dazu, wie Sie Repositorys in Cloud Manager hinzufügen und verwalten, finden Sie unter [Hinzufügen und Verwalten von Repositorys](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-   * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste eine bestimmte Verzweigung im ausgewählten Repository aus. Klicken Sie bei Bedarf auf ![Symbol „Recyceln“ oder &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) „Aktualisieren“, um die Dropdown-Liste „Git-Verzweigung“ nach den letzten Push-Benachrichtigungen neu zu laden.
-   * **Code-Speicherort**: Definiert den Ordnerpfad innerhalb des Repositorys, in dem Pipeline-fähiger Code beginnt (`/` entspricht dem Repository-Stamm).
+   * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste eine bestimmte Verzweigung im ausgewählten Repository aus. Klicken Sie bei Bedarf auf ![Symbol „Recyceln“ oder ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)-Symbol aktualisieren, um die Dropdown-Liste der Git-Verzweigungen nach kürzlich erfolgten Commits zu aktualisieren.
+   * **Code-Speicherort** - Definiert den Ordnerpfad innerhalb des Repositorys, in dem Pipeline-fähiger Code beginnt (`/` entspricht dem Repository-Stamm).
 
    ![Konfigurations-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 
