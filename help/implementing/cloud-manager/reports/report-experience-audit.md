@@ -5,14 +5,12 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+source-git-commit: f0562cd812c89aad5af468f4839f068ed26eada1
 workflow-type: tm+mt
-source-wordcount: 1570
-ht-degree: 80%
+source-wordcount: 1551
+ht-degree: 66%
 
 ---
 
@@ -32,9 +30,9 @@ Der Erlebnis-Audit validiert den Bereitstellungsprozess und stellt sicher, dass 
 
 Experience Audit in Cloud Manager stellt sicher, dass das Benutzererlebnis auf der Site höchsten Standards entspricht.
 
-Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese Erkenntnis ist wertvoll, um festzustellen, ob es eine Regression gibt, die mit der aktuellen Bereitstellung eingeführt wurde.
+Die Ergebnisse des Audits sind rein informativ und ermöglichen es dem Bereitstellungs-Manager, die Bewertungen sowie die Unterschiede zwischen aktuellen und vorherigen Bewertungen anzuzeigen. Diese insight ist nützlich, um festzustellen, ob durch die aktuelle Bereitstellung eine Regression eingeführt wurde.
 
-Das Erlebnis-Audit basiert auf [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), einem Open-Source-Tool von Google, und ist in allen Cloud Manager-Produktions-Pipelines aktiviert.
+[Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), ein Open-Source-Tool von Google, unterstützt Experience Audit, und Cloud Manager aktiviert es in allen Produktions-Pipelines.
 
 ## Verfügbarkeit {#availability}
 
@@ -46,16 +44,16 @@ Das Erlebnis-Audit ist für folgende Cloud Manager-Pipelines verfügbar:
 
 Weitere Informationen zum Konfigurieren der Prüfung für die optionalen Umgebungen finden Sie im [Konfigurationsabschnitt](#configuration).
 
-Prüfungen werden als Teil der Pipeline ausgeführt. Audits können auch [On-Demand) &#x200B;](#on-demand) Pipelines ausgeführt werden.
+Prüfungen werden als Teil der Pipeline ausgeführt. Audits können auch [On-Demand) ](#on-demand) Pipelines ausgeführt werden.
 
 ## Konfiguration {#configuration}
 
-Das Erlebnis-Audit ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für die Entwicklung von Full-Stack- und Frontend-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
+Das Erlebnis-Audit ist standardmäßig für Produktions-Pipelines verfügbar. Sie kann optional für Full-Stack- und Frontend-Pipelines aktiviert werden. In allen Fällen müssen Sie definieren, welche Inhaltspfade während der Pipeline-Ausführung ausgewertet werden.
 
 1. Führen Sie je nach Typ der Pipeline, die konfiguriert werden soll, einen der folgenden Schritte aus:
 
-   * [Fügen Sie eine Produktions-Pipeline hinzu](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), um die Pfade zu definieren, die vom Audit ausgewertet werden sollen.
-   * [Fügen Sie eine produktionsfremde Pipeline hinzu](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), wenn Sie das Audit für eine Frontend- oder Full-Stack-Entwicklungs-Pipeline aktivieren möchten.
+   * Um die Pfade zu definieren, die vom Audit ausgewertet werden sollen, [ Sie eine Produktions-Pipeline ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [Hinzufügen einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) wenn Sie die Prüfung für eine Frontend- oder Full-Stack-Pipeline aktivieren möchten.
    * Sie können [eine vorhandene Pipeline bearbeiten](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) und die vorhandenen Optionen aktualisieren.
 
 1. Um den Erlebnis-Audit beim Hinzufügen oder Bearbeiten einer Nicht-Produktions-Pipeline zu verwenden, aktivieren Sie das Kontrollkästchen **Erlebnis-Audit**. Diese Option finden Sie auf der Registerkarte **Quell-Code**.
@@ -68,7 +66,7 @@ Das Erlebnis-Audit ist standardmäßig für Produktions-Pipelines verfügbar. Si
 1. Die Pfade für Produktions-Pipelines und produktionsfremde Pipelines, die in das Erlebnis-Audit aufgenommen werden sollen, werden auf der Registerkarte **Erlebnis-Audit** definiert.
 
    * Seitenpfade müssen mit `/` beginnen und sind relativ zu Ihrer Site.
-   * Wenn Ihre Site beispielsweise `wknd.site` ist und Sie `https://wknd.site/us/en/about-us.html` (nur Beispiel-URL) in das Experience Audit aufnehmen möchten, geben Sie den Pfad `/us/en/about-us.html` ein.
+   * Wenn Ihre Site beispielsweise `wknd.site` ist und Sie `https://wknd.site/us/en/about-us.html` (nur Beispiel-URL) in das Experience Audit aufnehmen, geben Sie den Pfad `/us/en/about-us.html` ein.
 
    ![Definieren eines Pfads für das Erlebnis-Audit](/help/implementing/cloud-manager/reports/assets/experience-audit-add-page.png)
 
@@ -79,7 +77,7 @@ Das Erlebnis-Audit ist standardmäßig für Produktions-Pipelines verfügbar. Si
 1. Fügen Sie weitere Pfade hinzu, indem Sie die vorherigen beiden Schritte wiederholen.
 
    * Sie können maximal 25 Pfade hinzufügen.
-   * Wenn Sie keine Pfade definieren, wird die Startseite der Site standardmäßig in das Erlebnis-Audit einbezogen.
+   * Wenn Sie keine Pfade definieren, umfasst Experience Audit standardmäßig die Homepage der Site.
 
 1. Klicken Sie auf **Speichern**.
 
@@ -108,7 +106,7 @@ Sie können auf die vollständigen Prüfergebnisse zugreifen, indem Sie im Cloud
 
 ### Anzeigen der langsamsten Seiten {#view-slowest-pages}
 
-Klicken Sie auf **Langsamste Seiten anzeigen**, um das Dialogfeld **Langsamste 5 Seiten** zu öffnen. Die fünf Seiten mit der niedrigsten Leistung, die Sie [für den Audit konfiguriert haben](#configuration), werden angezeigt.
+Um das Dialogfeld **Langsamste 5 Seiten** zu öffnen, klicken Sie auf **Langsamste Seiten anzeigen**. Die fünf Seiten mit der niedrigsten Leistung, die Sie [für den Audit konfiguriert haben](#configuration), werden angezeigt.
 
 ![Die langsamsten fünf](/help/implementing/cloud-manager/reports/assets/experience-audit-slowest-five.png)
 
@@ -159,11 +157,11 @@ Wenn Sie zu einem bestimmten Zeitpunkt auf das Diagramm klicken, wird ein Popup 
 
 #### Ergebnisse des Erlebnis-Audit-Scans {#scan-results}
 
-Der Abschnitt **Ergebnisse des Erlebnis-Audit-Scans** enthält Detailbewertungen für alle gescannten Seiten. Verwenden Sie die Schaltflächen **Prev** und **Next**, um durch die Ergebnisse zu blättern und auszuwählen, wie viele die Anzeige anzeigen soll.
+Der Abschnitt **Ergebnisse des Erlebnis-Audit-Scans** enthält Detailbewertungen für alle gescannten Seiten. Verwenden Sie die Schaltflächen **Prev** und **Next**, um durch die Ergebnisse zu navigieren und auszuwählen, wie viele angezeigt werden sollen.
 
 ![Gescannte Seiten](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-Wenn Sie auf den Link einer bestimmten Seite klicken, wird der Filter **Auswählen** des Abschnitts [**Seitenbewertungen -**) &#x200B;](#trend) und die Registerkarte **Rohberichte** angezeigt, auf der Sie Bewertungen für jede Prüfung der Seite finden. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
+Wenn Sie auf den Link einer bestimmten Seite klicken, wird der Filter **Auswählen** des Abschnitts [**Seitenbewertungen -**) ](#trend) und die Registerkarte **Rohberichte** angezeigt, auf der Sie Bewertungen für jede Prüfung der Seite finden. Klicken Sie in der Spalte **Lighthouse-Bericht** auf das Berichtsdatum, um eine JSON-Datei der Rohdaten abzurufen.
 
 ![Rohberichte](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
@@ -173,13 +171,13 @@ Eine neue Registerkarte, die in Ihrem Browser geöffnet wird, führt Sie zu `htt
 
 ## On-Demand-Scan-Audit-Berichte {#on-demand}
 
-Experience Audit-Berichte werden nicht nur während der Pipeline-Ausführung ausgeführt, sondern können auch bei Bedarf erstellt werden. Dies ist eine gute Lösung, um Ihre Seiten schnell zu scannen, ohne eine Pipeline ausführen zu müssen.
+Experience Audit-Berichte werden nicht nur während der Pipeline-Ausführung ausgeführt, sondern können auch bei Bedarf erstellt werden. Diese Option ist eine effektive Lösung, um Ihre Seiten schnell zu scannen, ohne eine Pipeline ausführen zu müssen.
 
 Navigieren Sie zum Ausführen eines Scans auf Anforderung zur Registerkarte **Berichte**, damit Sie den vollständigen Auditbericht sehen können, und klicken Sie dann auf die Schaltfläche **Scan ausführen**.
 
 ![On-Demand-Scan](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand.png)
 
-Die Schaltfläche **Scan ausführen** wird nicht mehr verfügbar und ist durch ein Uhrensymbol gekennzeichnet, wenn bereits ein Scan auf Anfrage ausgeführt wird.
+Die Schaltfläche **Scan ausführen** wird nicht mehr verfügbar und zeigt ein Uhrensymbol an, wenn bereits ein Scan auf Anforderung ausgeführt wird.
 
 ![Laufender On-Demand-Scan](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand-running.png)
 
@@ -199,7 +197,7 @@ Sie können das Bewertungsdiagramm nach dem Trigger-Typ filtern, indem Sie die A
 
 Wenn [Seiten, die Sie für den Audit konfiguriert haben](#configuration), nicht verfügbar waren oder beim Audit andere Fehler aufgetreten sind, spiegelt der Erlebnis-Audit dies wider.
 
-Die Pipeline präsentiert einen erweiterbaren Fehlerabschnitt, um die relativen URL-Pfade anzuzeigen, wenn kein Zugriff möglich war.
+Die Pipeline zeigt einen erweiterbaren Fehlerabschnitt an, um die relativen URL-Pfade anzuzeigen, auf die sie nicht zugreifen kann.
 
 ![Beim Erlebnis-Audit aufgetretene Probleme](/help/implementing/cloud-manager/reports/assets/experience-audit-issues.png)
 
@@ -207,7 +205,7 @@ Wenn Sie den vollständigen Bericht anzeigen, finden Sie Details dazu im erweite
 
 ![Vollständiger Bericht – Probleme](/help/implementing/cloud-manager/reports/assets/experience-audit-issues-report.png)
 
-Die Seiten können beispielsweise aus folgenden Gründen nicht verfügbar sein:
+Einige Gründe dafür, dass die Seiten nicht verfügbar sind, sind die folgenden:
 
 * Der Zugriff wird durch die Konfiguration blockiert.
 * Die Seite ist nicht vorhanden.
@@ -216,12 +214,12 @@ Die Seiten können beispielsweise aus folgenden Gründen nicht verfügbar sein:
 
 >[!TIP]
 >
->Indem Sie die [Rohberichte für eine Seite aufrufen](#scan-results), können Sie Einzelheiten darüber erfahren, warum die Seite nicht geprüft werden konnte.
+>[Zugriff auf die Rohberichte](#scan-results) für eine Seite liefert Details dazu, warum die Seite nicht geprüft wurde.
 
 ## Auswertungsdetails beim Erlebnis-Audit {#details}
 
 Die folgenden Details liefern zusätzliche Informationen darüber, wie Ihre Site vom Erlebnis-Audit ausgewertet wird. Sie sind für die allgemeine Nutzung der Funktion nicht erforderlich und werden hier der Vollständigkeit halber bereitgestellt.
 
-* Der Audit scannt die Ursprungs-Domain (`.com`), wie sie in den [konfigurierten Pfaden der Erlebnis-Audit-Seite](#configuration) des Herausgebers definiert ist, um reale Benutzererlebnisse zu simulieren und Ihnen dabei zu helfen, bessere Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
-* In Produktions-Full-Stack-Pipelines wird die Staging-Umgebung gescannt. Um sicherzustellen, dass der Audit während des Auditings relevante Details liefert, sollte der Inhalt der Staging-Umgebung dem der Produktionsumgebung so weit wie möglich entsprechen.
-* Die im Dropdown-Menü **Auswählen** im Abschnitt [**Seitenbewertungen - Trend** angezeigten Seiten &#x200B;](#trend) alle bekannte Seiten, die in der Vergangenheit vom Experience Audit gescannt wurden.
+* Die Prüfung scannt die Ursprungs-(`.com`-)Domain aus den [konfigurierten Experience Audit-](#configuration) des Herausgebers, um echte Benutzererlebnisse zu simulieren und Ihnen dabei zu helfen, fundierte Entscheidungen über die Verwaltung und Optimierung Ihrer Websites zu treffen.
+* In Produktions-Full-Stack-Pipelines wird die Staging-Umgebung gescannt. Um sicherzustellen, dass der Audit beim Audit relevante Details liefert, ist der Inhalt der Staging-Umgebung so nah wie möglich an der Produktionsumgebung.
+* Die im Dropdown-Menü **Auswählen** im Abschnitt [**Seitenbewertungen - Trend** angezeigten Seiten ](#trend) alle bekannte Seiten, die in der Vergangenheit vom Experience Audit gescannt wurden.
