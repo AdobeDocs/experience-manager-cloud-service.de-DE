@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2026.6.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 012a31a9b1ffe3d7228d714049295536f2deeaac
+source-git-commit: 60e6140c4902e515d740a38bde066d8cef859674
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 4%
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ Die nächste geplante Version ist Donnerstag, der 9. Juli 2026.
 * **Self-Service für kundenverwaltete Schlüssel (CMK)**
 Kunden können jetzt kundenverwaltete Schlüssel direkt in Cloud Manager konfigurieren, ohne dass der Adobe-Support einbezogen werden muss. Eine neue CMK-Option ist während der Programmerstellung oder -bearbeitung und auf der Seite „Umgebungsdetails“ verfügbar.
 
-  Siehe [Erstellen von &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) und [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
+  Siehe [Erstellen von ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) und [Bearbeiten von Programmen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
   Der CMK-Status wird auf den Karten Meine Programme und im Lizenz-Dashboard angezeigt, sodass Administratoren einen klaren Einblick in die Verschlüsselungskonfiguration in allen Umgebungen erhalten. Dieser Ansatz vereinfacht Compliance-Workflows für Unternehmen, die die Kontrolle über ihre eigenen Verschlüsselungsschlüssel benötigen.
 
@@ -81,18 +81,18 @@ Mit Cloud Manager können Sie jetzt konfigurieren, ob für Ihr Programm eine Ver
 
 Weitere Informationen finden Sie unter [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um an der Beta teilzunehmen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
-### Schnellere Builds mit Modul-Caching {#quick-build-cm-pipelines}
+### Verbesserte Build-Leistung mit Modul-Caching {#quick-build-cm-pipelines}
 
 Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte Repository) mithilfe des Caching auf Modulebene, um die Build-Leistung zu verbessern. Dies gilt für Produktions-Pipelines. Sie steuern, welche Produktions-Pipelines &quot;**Build“**.
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
 * [Verwenden von Smart Build in einer Produktions-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
-* [Produktions-Pipeline &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* [Produktions-Pipeline ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
 
-Um sich der Beta anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um sich der Beta anzuschließen, senden Sie eine E-Mail an [](mailto:beta_quickbuild_cmpipelines@adobe.com)beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 <!-- 
 OLD
