@@ -245,7 +245,7 @@ Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für 
 | Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Prüfen Sie, ob die meisten Module häufig wechseln. |
 | Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb des Maven-Abhängigkeits-Trackings liegen<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
 
-Informationen zum Aktivieren von Smart Build [ Sie unter „Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline).
+Informationen zum Aktivieren von Smart Build [&#x200B; Sie unter „Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline).
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

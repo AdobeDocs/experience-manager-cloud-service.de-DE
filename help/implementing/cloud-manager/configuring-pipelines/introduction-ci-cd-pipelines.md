@@ -171,7 +171,7 @@ Folgende Einschränkungen gelten.
 * Ein Benutzer muss mit der Rolle „Bereitstellungs **Manager“ angemeldet sein** um Pipelines konfigurieren oder ausführen zu können.
 * Es kann immer nur eine Web-Ebenen-Konfigurations-Pipeline pro Umgebung geben.
 * Benutzende können eine Web-Ebenen-Konfigurations-Pipeline nicht konfigurieren, wenn die entsprechende Full-Stack-Pipeline ausgeführt wird.
-* Die Web-Stufen-Struktur muss der in [ Dispatcher in der Cloud definierten flexiblen Modusstruktur ](/help/implementing/dispatcher/disp-overview.md#validation-debug).
+* Die Web-Stufen-Struktur muss der in [&#x200B; Dispatcher in der Cloud definierten flexiblen Modusstruktur &#x200B;](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Außerdem sollten Sie darauf achten, wie sich die [Full-Stack-Pipeline](#full-stack-pipeline) bei der Einführung einer Web-Stufen-Pipeline verhält.
 
