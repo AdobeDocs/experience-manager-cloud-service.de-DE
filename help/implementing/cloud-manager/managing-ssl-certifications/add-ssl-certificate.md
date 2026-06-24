@@ -5,17 +5,17 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: b0f6e6920c66d7972ccf3da35818636b1ee304cf
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 97%
+source-wordcount: '1015'
+ht-degree: 85%
 
 ---
 
 
 # Hinzufügen eines SSL-Zertifikats
 
-Erfahren Sie, wie Sie mit Cloud Ihr eigenes SSL- oder ein von Adobe verwaltetes DV(Domain-Validierungs)-Zertifikat hinzufügen.
+Erfahren Sie, wie Sie Ihr eigenes SSL-Zertifikat oder ein in Adobe verwaltetes DV-Zertifikat (Domain-Validierung) mithilfe von Cloud Manager hinzufügen
 
 >[!NOTE]
 >
@@ -46,10 +46,10 @@ Warten Sie nach dem Hinzufügen zu Cloud Manager, bis Adobe das DV-SSL-Zertifika
 * **Bei einem kundenseitig verwalteten (OV/EV) Zertifikat:**
 
    * Rufen Sie Ihr OV-/EV-SSL-Zertifikat von einer Zertifizierungsstelle ab. Weitere Informationen finden Sie unter [Anforderungen für kundenseitig verwaltete OV-/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
-   * Nach dem Erwerb des Zertifikats [fügen Sie die Details Ihres kundenseitig verwalteten (OV/EV) SSL-Zertifikats](#add-customer-managed-ssl-cert) in Cloud Manager hinzu.
+   * Nachdem Sie das Zertifikat erworben haben[ geben Sie in Cloud Manager die Details zum ](#add-customer-managed-ssl-cert) Ihres kundenverwalteten SSL-Zertifikats (OV/EV) an.
    * Nachdem Sie das Zertifikat hinzugefügt haben, wird Ihr benutzerdefinierter Domain-Name als verifiziert markiert und das SSL-Zertifikat wird angewendet.
 
-In beiden Fällen ist die benutzerdefinierte Domain nach der Verifizierung und Installation des Zertifikats für die sichere Verwendung in Ihrer Umgebung verfügbar. Achten Sie darauf, in der Cloud Manager-Benutzeroberfläche regelmäßig [den Status der Domain zu überprüfen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md), um sicherzustellen, dass alles erwartungsgemäß funktioniert.
+In beiden Fällen ist die benutzerdefinierte Domain nach der Verifizierung und Installation des Zertifikats für die sichere Verwendung in Ihrer Umgebung verfügbar. Stellen Sie sicher[ dass Sie in der Benutzeroberfläche von Cloud Manager regelmäßig den Status ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) Domain überprüfen. Dadurch wird bestätigt, dass die Konfiguration erwartungsgemäß funktioniert.
 
 Siehe auch [Einführung in SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md).
 
@@ -83,11 +83,11 @@ Benötigen Sie Hilfe, um sich für Ihre Domain zwischen einem von Adobe verwalte
 
    Nachdem das SSL-Zertifikat erfolgreich ausgestellt wurde, wird in der Tabelle **SSL-Zertifikate** ein grünes Häkchen („Gültig“) angezeigt.
 
-Sie haben nun ein funktionierendes von Adobe verwaltetes DV-SSL-Zertifikat für Ihr Projekt hinzugefügt. Dieser Schritt ist oft der erste, um einen benutzerdefinierten Domain-Namen einzurichten.
+Sie haben jetzt ein funktionierendes in Adobe verwaltetes DV-SSL-Zertifikat für Ihr Projekt hinzugefügt. Dieser Schritt ist häufig der erste Schritt zum Konfigurieren eines benutzerdefinierten Domain-Namens.
 
 Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) hinzufügen.
 
-## Hinzufügen eines kundenseitig verwalteten SSL-Zertifikats (OV/EV) {#add-customer-managed-ssl-cert}
+## Hinzufügen eines vom Kunden verwalteten SSL-Zertifikats (OV/EV) {#add-customer-managed-ssl-cert}
 
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
@@ -118,7 +118,7 @@ Dieses Feld dient nur zu Informationszwecken und kann ein beliebiger Name sein, 
 
 1. Kopieren Sie in die Felder **Zertifikat**, **Privater Schlüssel** und **Zertifikatskette** die erforderlichen Werte aus Ihrem OV- oder EV-SSL-Zertifikat und fügen Sie sie in die entsprechenden Felder im Dialogfeld ein.
 
-   Alle erkannten Fehler in den Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zum Beheben häufiger Fehler finden Sie unter [Zertifikatfehler](#certificate-errors).
+   Alle erkannten Fehler in den Werten werden angezeigt. Bevor Sie Ihr Zertifikat speichern können, müssen Sie alle Fehler beheben. Weitere Informationen zur Fehlerbehebung bei häufigen Fehlern finden Sie unter [Zertifikatfehler](#certificate-errors).
 
    ![Dialogfeld „SSL-Zertifikat hinzufügen“](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -130,7 +130,7 @@ Dieses Feld dient nur zu Informationszwecken und kann ein beliebiger Name sein, 
 
    Nachdem das SSL-Zertifikat erfolgreich ausgestellt wurde, wird in der Tabelle **SSL-Zertifikate** ein grünes Häkchen („Überprüft“) angezeigt.
 
-Sie haben jetzt ein funktionierendes SSL-Zertifikat für Ihr Projekt hinzugefügt. Dieser Schritt ist oft der erste, um einen benutzerdefinierten Domain-Namen einzurichten.
+Sie haben jetzt ein funktionierendes SSL-Zertifikat für Ihr Projekt hinzugefügt. Dieser Schritt ist häufig der erste Schritt zum Einrichten eines benutzerdefinierten Domain-Namens.
 
 Sie können nun eine [CDN-Konfiguration](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) hinzufügen.
 

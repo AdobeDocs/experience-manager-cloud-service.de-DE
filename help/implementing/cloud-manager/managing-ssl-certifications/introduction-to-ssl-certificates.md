@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
+source-git-commit: b4b5fb587f2b93019e7a0a273bd106d9ab1de54c
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 88%
+source-wordcount: '1302'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie mehr über die Self-Service-Tools, die Cloud Manager Ihnen zur Inst
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Verwalten von SSL-Zertifikaten"
->abstract="Erfahren Sie, inwiefern Cloud Manager Self-Service-Tools zur Installation und Verwaltung von SSL-Zertifikaten zur Verfügung stellt, um Ihre Website für Ihre Benutzenden zu sichern. Cloud Manager verwendet einen Plattform-TLS-Service zum Verwalten von SSL-Zertifikaten und privaten Schlüsseln, die der Kundschaft gehören und von unabhängigen Zertifizierungsstellen bezogen werden."
+>abstract="Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL-Zertifikaten. Sie verwendet einen Plattform-TLS-Service zur Verwaltung von kundeneigenen Zertifikaten und privaten Schlüsseln von Zertifizierungsstellen Dritter."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Überprüfen des Status eines SSL-Zertifikats"
 
@@ -28,7 +28,7 @@ Erfahren Sie mehr über die Self-Service-Tools, die Cloud Manager Ihnen zur Inst
 
 Unternehmen und Organisationen verwenden SSL(Secure Socket Layer)-Zertifikate, um ihre Websites sicher zu machen, damit ihre Kundinnen und Kunden ihnen vertrauen können. Um das SSL-Protokoll verwenden zu können, erfordert ein Webserver ein SSL-Zertifikat.
 
-Wenn eine Organisation oder ein Unternehmen ein Zertifikat von einer Zertifizierungsstelle (ZS) anfordert, führt die Zertifizierungsstelle einen Überprüfungsprozess durch. Dieser Prozess kann von der Überprüfung der Namenskontrolle der Domains bis zur Erfassung von Unternehmensregistrierungsdokumenten und Abonnentenvereinbarungen reichen. Sobald die Informationen eines Unternehmens oder einer Organisation verifiziert wurden, signiert die Zertifizierungsstelle den entsprechenden öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifizierungsstellen über Stammzertifikate in Webbrowsern verfügen, wird das Zertifikat der Organisation oder des Unternehmens über eine *Vertrauenskette* verknüpft und vom Webbrowser als vertrauenswürdiges Zertifikat erkannt.
+Wenn eine Entität ein Zertifikat von einer Zertifizierungsstelle (CA) anfordert, schließt die CA einen Verifizierungsprozess ab. Dieser Prozess kann von der Überprüfung der Namenskontrolle der Domains bis zur Erfassung von Unternehmensregistrierungsdokumenten und Abonnentenvereinbarungen reichen. Sobald die Informationen eines Unternehmens oder einer Organisation verifiziert wurden, signiert die Zertifizierungsstelle den entsprechenden öffentlichen Schlüssel mithilfe des privaten Schlüssels der Zertifizierungsstelle. Da alle wichtigen Zertifizierungsstellen über Stammzertifikate in Webbrowsern verfügen, wird das Zertifikat der Organisation oder des Unternehmens über eine *Vertrauenskette* verknüpft und vom Webbrowser als vertrauenswürdiges Zertifikat erkannt.
 
 >[!IMPORTANT]
 >
@@ -46,8 +46,8 @@ Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL(S
 Beide Modelle bieten die folgenden allgemeinen Funktionen für die Verwaltung Ihrer Zertifikate:
 
 * Jede Cloud Manager-Umgebung kann mehrere Zertifikate verwenden.
-* Ein privater Schlüssel kann mehrere SSL-Zertifikate ausstellen.
-* Der Plattform-TLS-Service leitet Anfragen basierend auf dem zum Beenden verwendeten SSL-Zertifikat und dem CDN-Service, der diese Domain hostet, an den CDN-Service der Kundin bzw. des Kunden weiter.
+* Ein privater Schlüssel wird verwendet, um mehrere SSL-Zertifikate auszustellen.
+* Der Platform-TLS-Service leitet Anfragen an den CDN-Service des Kunden weiter. Dieses Routing basiert auf dem SSL-Zertifikat, das zum Beenden der Verbindung verwendet wird. Sie basiert auch auf dem CDN-Service, der diese Domain hostet.
 
 >[!IMPORTANT]
 >
@@ -75,7 +75,7 @@ OV und EV bieten diese Funktionen zusätzlich über DV-Zertifikate in Cloud Mana
 
 >[!TIP]
 >
->Wenn Sie mehrere benutzerdefinierte Domains haben, möchten Sie vielleicht nicht jedes Mal, wenn Sie eine neue Domain hinzufügen, ein Zertifikat hochladen. In diesem Fall können Sie von einem einzigen Zertifikat profitieren, das mehrere Domains abdeckt.
+>Wenn Sie mehrere benutzerdefinierte Domains haben, möchten Sie vielleicht nicht jedes Mal, wenn Sie eine neue Domain hinzufügen, ein Zertifikat hochladen. In diesem Fall profitieren Sie von einem einzigen Zertifikat, das mehrere Domains abdeckt.
 
 #### Anforderungen für kundenseitig verwaltete OV/EV-SSL-Zertifikate {#requirements}
 
@@ -86,8 +86,8 @@ Wenn Sie sich dafür entscheiden, Ihr eigenes kundenseitig verwaltetes SSL-Zerti
 * Das Zertifikat muss ein X.509-TLS-Zertifikat sein, das von einer vertrauenswürdigen Zertifizierungsstelle (ZS) ausgestellt wurde.
 * Folgende Kryptografieschlüsseltypen werden unterstützt:
 
-   * RSA 2048-Bit, Standardunterstützung.
-RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-RSA-Schlüssel), werden derzeit nicht unterstützt.
+   * RSA 2048-Bit, Standard Support.
+RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-RSA-Schlüssel) werden derzeit nicht unterstützt.
    * Elliptic Curve(EC)-Schlüssel `prime256v1` (`secp256r1`) und `secp384r1`.
    * Elliptic Curve Digital Signature Algorithm(ECDSA)-Zertifikate. Solche Zertifikate sind gemäß Adobe-Empfehlung RSA vorzuziehen, um die Leistung, Sicherheit und Effizienz zu verbessern.
 
@@ -101,7 +101,7 @@ RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-R
 
 * **Vermeiden von sich überschneidenden Zertifikaten:**
 
-   * Um eine reibungslose Zertifikatsverwaltung sicherzustellen, sollten Sie die Bereitstellung sich überschneidender Zertifikate vermeiden, die derselben Domain entsprechen. Beispielsweise kann ein Platzhalterzertifikat (*.example.com) neben einem bestimmten Zertifikat (dev.example.com) zu Verwirrung führen.
+   * Um eine reibungslose Zertifikatsverwaltung sicherzustellen, sollten Sie die Bereitstellung sich überschneidender Zertifikate vermeiden, die derselben Domain entsprechen. Beispielsweise führt ein Platzhalterzertifikat (*.example.com) neben einem bestimmten Zertifikat (dev.example.com) zu Verwirrung.
    * Die TLS-Ebene priorisiert das spezifischste und zuletzt bereitgestellte Zertifikat.
 
   Beispielszenarien:
@@ -132,7 +132,7 @@ Bevor Sie versuchen, ein Zertifikat mit Cloud Manager zu installieren, empfiehlt
 
 #### Format für kundenseitig verwaltete Zertifikate {#certificate-format}
 
-SSL-Dateien müssen im PEM-Format vorliegen, damit sie in Cloud Manager installiert werden können. Häufige Dateierweiterungen des PEM-Formats umfassen `.pem,`, `crt`, `.cer` und `.cert`.
+SSL-Dateien müssen im PEM-Format vorliegen, damit sie in Cloud Manager installiert werden können. Häufige Dateierweiterungen des PEM-Formats umfassen `.pem`, `.crt`, `.cer` und `.cert`.
 
 Folgende `openssl`-Befehle können zum Konvertieren von Nicht-PEM-Zertifikaten verwendet werden.
 
@@ -164,7 +164,7 @@ Wenn Sie den Grenzwert erreicht haben, überprüfen Sie Ihre Zertifikate und lö
 
 ### Verschlüsseln wir Ratenbeschränkungen für Adobe-verwaltete DV-Zertifikate
 
-Adobe-verwaltete DV-Zertifikate verwenden Let&#39;s Encrypt. Zusätzlich zum Cloud Manager-Limit für installierte Zertifikate erzwingt Let&#39;s Encrypt eigene Ratenbeschränkungen. Ein wichtiges Limit ist **Neue Zertifikate pro exaktem Kennungssatz**: Innerhalb eines Zeitraums von sieben Tagen können bis zu 5 Zertifikate für denselben Hostnamen ausgestellt werden. Wenn diese Grenze erreicht ist, zeigt Cloud Manager einen Fehler an und kann erst dann weitere Zertifikate für diesen Hostnamen erstellen, wenn das Ratenbegrenzungsfenster zurückgesetzt wurde. Die neuesten Werte und andere zugehörige Beschränkungen finden Sie in der [Dokumentation zu verschlüsselten Ratenbeschränkungen](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+Adobe-verwaltete DV-Zertifikate verwenden Let&#39;s Encrypt. Zusätzlich zum Cloud Manager-Limit für installierte Zertifikate erzwingt Let&#39;s Encrypt eigene Ratenbeschränkungen. Ein zentrales Limit ist **Neue Zertifikate pro exaktem Kennungssatz**: Für den Hostnamensatz werden innerhalb eines Zeitraums von sieben Tagen bis zu fünf Zertifikate ausgestellt. Wenn diese Grenze erreicht ist, zeigt Cloud Manager einen Fehler an und kann erst dann weitere Zertifikate für diesen Hostnamen erstellen, wenn das Ratenbegrenzungsfenster zurückgesetzt wurde. Die neuesten Werte und andere zugehörige Beschränkungen finden Sie in der [Dokumentation zu verschlüsselten Ratenbeschränkungen](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Weitere Informationen {#learn-more}
 
