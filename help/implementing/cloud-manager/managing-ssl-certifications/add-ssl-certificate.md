@@ -46,10 +46,10 @@ Warten Sie nach dem Hinzufügen zu Cloud Manager, bis Adobe das DV-SSL-Zertifika
 * **Bei einem kundenseitig verwalteten (OV/EV) Zertifikat:**
 
    * Rufen Sie Ihr OV-/EV-SSL-Zertifikat von einer Zertifizierungsstelle ab. Weitere Informationen finden Sie unter [Anforderungen für kundenseitig verwaltete OV-/EV-SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
-   * Nachdem Sie das Zertifikat erworben haben[ geben Sie in Cloud Manager die Details zum ](#add-customer-managed-ssl-cert) Ihres kundenverwalteten SSL-Zertifikats (OV/EV) an.
+   * Nachdem Sie das Zertifikat erworben haben[&#x200B; geben Sie in Cloud Manager die Details zum &#x200B;](#add-customer-managed-ssl-cert) Ihres kundenverwalteten SSL-Zertifikats (OV/EV) an.
    * Nachdem Sie das Zertifikat hinzugefügt haben, wird Ihr benutzerdefinierter Domain-Name als verifiziert markiert und das SSL-Zertifikat wird angewendet.
 
-In beiden Fällen ist die benutzerdefinierte Domain nach der Verifizierung und Installation des Zertifikats für die sichere Verwendung in Ihrer Umgebung verfügbar. Stellen Sie sicher[ dass Sie in der Benutzeroberfläche von Cloud Manager regelmäßig den Status ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) Domain überprüfen. Dadurch wird bestätigt, dass die Konfiguration erwartungsgemäß funktioniert.
+In beiden Fällen ist die benutzerdefinierte Domain nach der Verifizierung und Installation des Zertifikats für die sichere Verwendung in Ihrer Umgebung verfügbar. Stellen Sie sicher[&#x200B; dass Sie in der Benutzeroberfläche von Cloud Manager regelmäßig den Status &#x200B;](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) Domain überprüfen. Dadurch wird bestätigt, dass die Konfiguration erwartungsgemäß funktioniert.
 
 Siehe auch [Einführung in SSL-Zertifikate](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md).
 
