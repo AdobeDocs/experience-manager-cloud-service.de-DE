@@ -1,11 +1,12 @@
 ---
 title: Neuer Video-Viewer
-description: Der neue Video-Viewer in Dynamic Media bietet ein verbessertes Videowiedergabeerlebnis
+description: Der neue Video-Viewer in Dynamic Media bietet ein verbessertes Videowiedergabeerlebnis mit verbesserter Leistung, Barrierefreiheit und Konfigurierbarkeit.
 role: User
-source-git-commit: 1ee4f1352a0fe1e8d1f2fd7b79555ad4144bb02c
+exl-id: c819c6b3-bb7c-4d0e-b745-62b42f4ecd5f
+source-git-commit: 92b48e3413b27b664ee38ec43b28d5d881f0bf40
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 2%
+source-wordcount: '1477'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +29,7 @@ Der neue Video Viewer ist für Unternehmen gedacht, die ein verbessertes und erw
 
 > **HINWEIS**
 >
-> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ &#x200B;](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+> Der neue Video-Viewer ist eine Funktion mit begrenzter Verfügbarkeit. Sie können es aktivieren, indem Sie ein „Support[Ticket“ ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
 
 
 ## Funktionsweise des neuen Video-Viewers {#how-it-works}
@@ -96,10 +97,10 @@ Führen Sie die folgenden Schritte aus, um ein Video mithilfe der Dynamic Media-
 Führen Sie die folgenden Schritte aus, um die Viewer-Vorgabe zu konfigurieren:
 
 1. Wählen Sie die **Dynamic Media** auf der Seite aus.
-2. Klicken Sie **der Komponenten**&#x200B;Symbolleiste auf „Konfigurieren“.
+2. Klicken Sie **der Komponenten**Symbolleiste auf „Konfigurieren“.
    ![Dynamic Media-Einstellungen öffnen](assets/configure-asset.png)
 
-3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**&#x200B;Vorgabe .
+3. Wählen Sie **Dialogfeld „Einstellungen für Dynamic**&quot; **Video (neu)** aus der Dropdown-Liste **Viewer**Vorgabe .
    ![Viewer-Vorgabe „Video auswählen (neu)“](assets/viewer-preset.jpeg)
 
 4. Geben Sie alle erforderlichen Modifikatoren in das Feld **Viewer** ein (z. B. `autoplay=true&muted=true`).
@@ -139,6 +140,7 @@ Mit Viewer-Modifikatoren können Sie das Laden von Assets, das Wiedergabeverhalt
 | `isletterboxed=true/false` | Steuert, ob das Video im Briefkasten abgelegt oder gestreckt ist. |
 | `customcss` | Gibt eine benutzerdefinierte CSS-Datei für den Viewer-Stil an. |
 | `transition` | Gibt das Ein- oder Ausblenden des Übergangsverhaltens für Viewer-Steuerelemente an. |
+| `mode=smartcrop` | Zeigt die Smart-Crop-Ausgabe für das Video an. |
 
 Modifikatoren werden als Abfrageparameter im Feld **Viewer-Modifikatoren** angegeben.
 
