@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3261003447e54a2af4304d61c56068b7cab5986c
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 98%
+source-wordcount: '1160'
+ht-degree: 77%
 
 ---
 
@@ -19,13 +19,13 @@ Hier finden Sie Informationen dazu, wie das Testen der Code-Qualität von Pipeli
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="Testen der Code-Qualität"
->abstract="Beim Testen der Code-Qualität wird Ihr Programm-Code anhand eines Satzes von Qualitätsregeln bewertet. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die unmittelbar nach dem Erstellungsschritt in allen produktionsfremden und Produktions-Pipelines ausgeführt wird."
+>abstract="Beim Testen der Code-Qualität wird Ihr Programm-Code anhand von Qualitätsregeln bewertet. Dies ist der primäre Zweck einer reinen Code-Qualitäts-Pipeline, die nach dem Build-Schritt in allen Pipelines ausgeführt wird."
 
 ## Einführung {#introduction}
 
 Beim Testen der Code-Qualität wird Ihr Programm-Code anhand eines Satzes von Qualitätsregeln bewertet. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die unmittelbar nach dem Erstellungsschritt in allen produktionsfremden und Produktions-Pipelines ausgeführt wird.
 
-Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren Ihrer CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+Weitere Informationen zu den verschiedenen Pipelines finden Sie unter [Konfigurieren der CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Code-Qualitätsregeln {#understanding-code-quality-rules}
 
@@ -43,7 +43,7 @@ Probleme, die durch das Testen der Code-Qualität erkannt werden, werden einer v
 
 * **Kritisch**: Probleme, die zu einem sofortigen Pipeline-Fehler führen.
 
-* **Wichtig**: Probleme, durch die die Pipeline angehalten wird. Bereitstellungs- oder Projekt-Managerinnen bzw. -Manager und Unternehmensführende können die Probleme übergehen, sodass die Pipeline fortgesetzt werden kann. Alternativ können sie die Probleme akzeptieren, wodurch die Pipeline mit einem Fehler angehalten wird.
+* **Wichtig**: Probleme, durch die die Pipeline angehalten wird. Bereitstellungs-Manager, Projekt-Manager oder Business Lead können die Probleme außer Kraft setzen, sodass die Pipeline fortgesetzt werden kann. Alternativ können sie die Probleme akzeptieren, wodurch die Pipeline mit einem Fehler angehalten wird.
 
 * **Info**: Probleme, die ausschließlich zu Informationszwecken angegeben werden und keine Auswirkungen auf die Pipeline-Ausführung haben
 
@@ -70,7 +70,7 @@ In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die 
 
 >[!NOTE]
 >
->Genauere Definitionen finden Sie unter [Metrikdefinitionen von SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
+>Genauere Definitionen finden Sie unter [Metrikdefinitionen von SonarQube](https://docs.sonarsource.com/sonarqube-server/user-guide/code-metrics/metrics-definition).
 
 >[!NOTE]
 >
@@ -78,9 +78,9 @@ In der folgenden Tabelle sind die Bewertungen und Fehlerschwellenwerte für die 
 
 ## Umgang mit falsch positiven Treffern {#dealing-with-false-positives}
 
-Das Verfahren zur Qualitätsprüfung ist nicht perfekt und benennt mitunter Probleme, die tatsächlich nicht problematisch sind. Dieser Status wird als **falsch positiv** bezeichnet.
+Das Verfahren zur Qualitätsprüfung ist nicht fehlerfrei und kennzeichnet manchmal Probleme, die keine tatsächlichen Fehler sind. Dieser Status wird als **falsch positiv** bezeichnet.
 
-In diesen Fällen kann der Quell-Code mit der standardmäßigen `@SuppressWarnings`-Java-Anmerkung kommentiert werden. Dabei wird die Regel-ID als Anmerkungsattribut angegeben. Ein häufiges Problem besteht etwa darin, dass die SonarQube-Regel zur Erkennung hartcodierter Kennwörter in Bezug auf die Identifizierung eines hartcodierten Kennworts „aggressiv“ sein kann.
+In diesen Fällen kann der Quell-Code mit der standardmäßigen `@SuppressWarnings`-Java-Anmerkung kommentiert werden. Dabei wird die Regel-ID als Anmerkungsattribut angegeben. Ein häufiges Problem ist beispielsweise, dass die SonarQube-Regel zur Erkennung hartcodierter Kennwörter zu restriktiv in Bezug auf die Identifizierung eines hartcodierten Kennworts sein kann.
 
 Der folgende Code ist in einem AEM-Projekt, das eine Verbindung zu einem externen Service herstellen soll, relativ häufig.
 
@@ -97,7 +97,7 @@ SonarQube weist dann auf eine „Blocker“-Schwachstelle hin. Nach Prüfung des
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-Wenn der Code allerdings tatsächlich wie folgt lautete:
+Wenn der Code wie folgt lautete:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -108,14 +108,14 @@ Dann bestünde die richtige Lösung darin, das hartcodierte Kennwort zu entferne
 
 >[!NOTE]
 >
->Obwohl es als Best Practice bekannt ist, die Anmerkung `@SuppressWarnings` so spezifisch wie möglich zu gestalten – d. h. eine Anmerkung nur zu der Anweisung oder dem Block, die bzw. der das Problem verursacht –, ist auch eine Anmerkung auf Klassenebene möglich.
+>Obwohl es sich als Best Practice empfiehlt, die `@SuppressWarnings` Anmerkung spezifisch zu gestalten, können Sie auch Anmerkungen auf Klassenebene hinzufügen.
 
 >[!NOTE]
->Es gibt zwar keinen expliziten Schritt für Sicherheitstests, aber beim Schritt der Code-Qualität werden sicherheitsbezogene Regeln für die Code-Qualität evaluiert. Weitere Informationen zur Sicherheit in Cloud Service finden Sie in der [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
+>Es gibt zwar keinen expliziten Schritt für Sicherheitstests, aber beim Schritt der Code-Qualität werden sicherheitsbezogene Regeln für die Code-Qualität evaluiert. Weitere Informationen zur Sicherheit in Cloud Service finden Sie unter [Sicherheitsübersicht für AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Optimierung der Inhaltspaketüberprüfung {#content-package-scanning-optimization}
 
-Im Rahmen des Qualitätsanalyseprozesses führt Cloud Manager eine Analyse der vom Maven-Build erzeugten Inhaltspakete durch. Cloud Manager bietet Optimierungen zur Beschleunigung dieses Prozesses an, die wirksam sind, wenn bestimmte Verpackungseinschränkungen beachtet werden. Die wichtigste Optimierung betrifft Projekte, die ein einzelnes „all“-Paket erstellen, das vom Build her mehrere Inhaltspakete enthält, die als „übersprungen“ markiert sind. Wenn Cloud Manager dieses Szenario erkennt, wird nicht das gesamte Paket entpackt, sondern die einzelnen Inhaltspakete werden direkt gescannt und auf der Grundlage von Abhängigkeiten sortiert. Betrachten Sie zum Beispiel die folgende Build-Ausgabe.
+Im Rahmen des Qualitätsanalyseprozesses führt Cloud Manager eine Analyse der vom Maven-Build erzeugten Inhaltspakete durch. Cloud Manager bietet Optimierungen zur Beschleunigung dieses Prozesses an, die wirksam sind, wenn bestimmte Verpackungseinschränkungen beachtet werden. Die wichtigsten Optimierungsziele sind Projekte, die ein einziges „all“-Paket produzieren. Dieses Paket enthält mehrere Inhaltspakete aus dem Build, die als übersprungen markiert sind. Wenn Cloud Manager dieses Szenario erkennt, wird nicht das gesamte Paket entpackt, sondern die einzelnen Inhaltspakete werden direkt gescannt und auf der Grundlage von Abhängigkeiten sortiert. Betrachten Sie zum Beispiel die folgende Build-Ausgabe.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (Inhaltspaket)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (übersprungenes Inhaltspaket)
@@ -123,9 +123,9 @@ Im Rahmen des Qualitätsanalyseprozesses führt Cloud Manager eine Analyse der v
 
 Wenn die beiden übersprungenen Inhaltspakete die einzigen Elemente innerhalb von `myco-all-1.0.0-SNAPSHOT.zip` sind, werden die beiden eingebetteten Pakete anstelle des gesamten Inhaltspakets („all“) gescannt.
 
-Bei Projekten, die Dutzende von eingebetteten Paketen produzieren, kann diese Optimierung nachweislich bis zu 10 Minuten pro Pipeline-Ausführung einsparen.
+Bei Projekten, die Dutzende von eingebetteten Paketen produzieren, spart diese Optimierung nachweislich mehr als 10 Minuten pro Pipeline-Ausführung.
 
-Ein Sonderfall kann eintreten, wenn das Inhaltspaket „all“ eine Kombination aus übersprungenen Inhaltspaketen und OSGi-Bundles enthält. Wenn `myco-all-1.0.0-SNAPSHOT.zip` beispielsweise die beiden zuvor erwähnten eingebetteten Pakete und ein oder mehrere OSGi-Bundles enthält, wird ein neues, minimales Inhaltspaket nur mit den OSGi-Bundles erstellt. Dieses Paket hat immer die Bezeichnung `cloudmanager-synthetic-jar-package` und die darin enthaltenen Bundles werden in `/apps/cloudmanager-synthetic-installer/install` abgelegt.
+Ein Sonderfall kann eintreten, wenn das Inhaltspaket „all“ eine Kombination aus übersprungenen Inhaltspaketen und OSGi-Bundles enthält. Wenn `myco-all-1.0.0-SNAPSHOT.zip` beispielsweise die beiden genannten eingebetteten Pakete und OSGi-Bundles enthalten, wird ein neues, minimales Inhaltspaket nur mit den OSGi-Bundles erstellt. Dieses Paket hat immer die Bezeichnung `cloudmanager-synthetic-jar-package` und die darin enthaltenen Bundles werden in `/apps/cloudmanager-synthetic-installer/install` abgelegt.
 
 >[!NOTE]
 >
