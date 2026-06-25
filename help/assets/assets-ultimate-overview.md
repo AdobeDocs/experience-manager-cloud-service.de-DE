@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 17d8d0774461a893d9decc7f184cba084570a737
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 99%
+source-wordcount: '2062'
+ht-degree: 41%
 
 ---
 
@@ -108,3 +108,61 @@ In der folgenden Tabelle sind die verfügbaren AEM Assets-Benutzertypen, ihre Be
 Informationen zu den ersten Schritten mit Assets Ultimate finden Sie unter [Aktivieren von AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Wenn Sie von vorhandenen AEM Assets-Benutzenden gefragt werden, wann Sie ein Upgrade auf Assets Ultimate durchführen können, wenden Sie sich an die Adobe-Kundenbetreuung. Weitere Informationen finden Sie unter [Aktivieren von Assets Ultimate für bestehende Kundschaft](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers).
 
 AEM Assets bietet außerdem ein einfacheres DAM für Kundinnen und Kunden ohne weitergehende Anforderungen wie Erweiterbarkeit der Benutzeroberfläche, API-gesteuerte Automatisierung und Bereitstellung von benutzerdefiniertem Code. Weitere Informationen finden Sie unter [AEM Assets Prime](/help/assets/assets-prime.md).
+
+## Häufig gestellte Fragen {#frequently-asked-questions-assets-ultimate}
+
+### Was ist AEM Assets Ultimate und was unterscheidet es von anderen AEM Assets-Angeboten? {#what-is-assets-ultimate}
+
+AEM Assets Ultimate ist das erweiterte Digital Asset Management-Angebot von Adobe innerhalb von Adobe Experience Manager as a Cloud Service, das für die Verwaltung komplexer Inhaltslieferketten und die Sicherstellung einer guten Leistung von Inhalten über alle Kanäle hinweg entwickelt wurde. Es bietet vier verschiedene Benutzertypen: Eingeschränkte Benutzer, Mitwirkende, Hauptbenutzer und Administratoren, die jeweils über einen definierten Satz von Funktionen und Produktprofilzuweisungen verfügen. AEM Assets Ultimate umfasst auch die nahtlose Content Hub-Verteilung, die KI-gestützte Inhaltserstellung über Adobe Express und Firefly sowie Integrationen mit Adobe- und Nicht-Adobe-Anwendungen.
+
+### Was kann ein eingeschränkter Benutzer in AEM Assets Ultimate tun? {#limited-user-capabilities}
+
+Eingeschränkte Benutzerinnen und Benutzer von AEM Assets Ultimate können über das AEM Assets Content Hub-Portal von der Organisation aus auf markengenehmigte Assets zugreifen und diese verwenden. Eingeschränkte Benutzerinnen und Benutzer können keine Assets erstellen oder bearbeiten, Metadaten verwalten, auf die AEM Assets-Autorenumgebung zugreifen oder Assets mit anderen Programmen integrieren. Ihr Zugriff beschränkt sich ausschließlich auf die Erkennung und Nutzung genehmigter Assets über Content Hub, wodurch dieser Benutzertyp für erweiterte Stakeholder geeignet ist, die kontrollierten Zugriff auf fertige Marken-Assets benötigen.
+
+### Zu welchem Produktprofil muss in AEM Assets Ultimate ein eingeschränkter Benutzer hinzugefügt werden? {#limited-user-product-profile}
+
+Ein eingeschränkter Benutzer in AEM Assets Ultimate muss dem folgenden Produktprofil in Adobe Admin Console hinzugefügt werden: AEM > Versandinstanz > AEM Assets Eingeschränkte Benutzer. Dies ist das einzige Produktprofil, das für eingeschränkte Benutzer erforderlich ist. Gewährt Zugriff auf das AEM Assets Content Hub-Portal zur Erkennung und Verwendung genehmigter Assets. Für diesen Benutzertyp ist kein Profil der Produktionsautoreninstanz erforderlich.
+
+### Was kann ein Collaborator-Benutzer in AEM Assets Ultimate tun? {#collaborator-user-capabilities}
+
+Ein Mitwirkender in AEM Assets Ultimate kann über das AEM Assets Content Hub-Portal auf markengenehmigte Assets zugreifen, Assets mithilfe von Adobe Express und Firefly mit professionell entworfenen Vorlagen und Marken-Kits erstellen und bearbeiten und mit Assets aus Adobe Experience Manager über Integrationen arbeiten, die in anderen Adobe-Produkten und Nicht-Adobe-Anwendungen verfügbar sind. Collaborator-Benutzer können in der AEM Assets-Autorenumgebung keine Assets auf DAM-Ebene verwalten, die Metadaten-Governance konfigurieren oder Berechtigungen verwalten. Diese Funktionen sind Power-Benutzern und Administratoren vorbehalten.
+
+### Zu welchen Produktprofilen muss ein Collaborator-Benutzer in AEM Assets Ultimate hinzugefügt werden? {#collaborator-user-product-profiles}
+
+Ein Mitarbeiter-Benutzer in AEM Assets Ultimate muss zwei Produktprofilen in Adobe Admin Console hinzugefügt werden: AEM > Bereitstellungsinstanz > AEM Assets Eingeschränkte Benutzer und AEM > Produktionsautoreninstanz > AEM Assets-Mitarbeiter-Benutzer. Das Versandinstanzprofil gewährt Content Hub Zugriff. Das Profil der Produktionsautoreninstanz ermöglicht Asset-Integrationen und die Adobe Express- und Firefly-gestützte Inhaltserstellung. Beide Profile sind für das vollständige Benutzererlebnis mit dem Partner erforderlich.
+
+### Was kann ein Power User in AEM Assets Ultimate tun? {#power-user-capabilities}
+
+Ein Power User in AEM Assets Ultimate hat Zugriff auf alle Funktionen von AEM Assets, einschließlich Asset-Aufnahme, -Speicherung, -Katalogisierung, Metadatenverwaltung, Governance und Automatisierung im Zusammenhang mit digitalen Assets. Power-User können Assets auch mit Adobe Express und Firefly erstellen und bearbeiten, mit Assets über Integrationen in Adobe- und Nicht-Adobe-Anwendungen arbeiten und über das AEM Assets Content Hub-Portal auf markengenehmigte Assets zugreifen. Hauptbenutzer können in der AEM Assets-Autorenumgebung keine Berechtigungen verwalten. Diese Funktion ist Administratoren vorbehalten.
+
+### Zu welchen Produktprofilen muss ein Power User in AEM Assets Ultimate hinzugefügt werden? {#power-user-product-profiles}
+
+Ein Hauptbenutzer in AEM Assets Ultimate muss zwei Produktprofilen in Adobe Admin Console hinzugefügt werden: AEM > Bereitstellungsinstanz > AEM Assets Eingeschränkte Benutzer und AEM > Produktionsautoreninstanz > AEM Assets Hauptbenutzer. Das Versandinstanzprofil gewährt Content Hub Zugriff. Das Profil der Produktions-Autoreninstanz ermöglicht die Nutzung aller AEM Assets-DAM-Funktionen, einschließlich Asset-Management, Metadaten-Governance und Automatisierungs-Workflows. Beide Profile sind für das vollständige Power User-Erlebnis erforderlich.
+
+### Was kann ein Administrator in AEM Assets Ultimate tun? {#administrator-capabilities}
+
+Ein Administrator in AEM Assets Ultimate verfügt über alle Funktionen eines Hauptbenutzers und verwaltet zusätzlich die Berechtigungen für Inhalte in der AEM Assets-Autorenumgebung. Administratoren sind für die Konfiguration der anderen drei Benutzertypen - Eingeschränkte Benutzer, Mitarbeiter-Benutzer und Hauptbenutzer - innerhalb des Unternehmens verantwortlich. Dazu gehört die Zuweisung von Produktprofilen in Adobe Admin Console, die Festlegung von Zugriffsrechten und die Sicherstellung, dass für jeden Benutzertyp im gesamten Unternehmen die richtige Berechtigungsstruktur vorhanden ist.
+
+### Zu welchem Produktprofil muss in AEM Assets Ultimate ein Administrator hinzugefügt werden? {#administrator-product-profiles}
+
+In AEM Assets Ultimate muss ein Administrator zwei Produktprofilen in Adobe Admin Console hinzugefügt werden: AEM > Versandinstanz > AEM Assets Eingeschränkte Benutzende und AEM > Produktionsautoreninstanz > AEM-Administratoren. Das Versandinstanzprofil gewährt Content Hub Zugriff. Das Profil der Produktionsautoreninstanz gewährt volle administrative Kontrolle, einschließlich der Berechtigungsverwaltung in der AEM Assets-Autorenumgebung und der Möglichkeit, alle anderen Benutzertypen innerhalb des Unternehmens zu konfigurieren.
+
+### Welche Benutzertypen in AEM Assets Ultimate können auf das Content Hub-Portal zugreifen? {#content-hub-access-user-types}
+
+Alle vier Benutzertypen in AEM Assets Ultimate - eingeschränkte Benutzende, Mitwirkende, Hauptbenutzende und Administratoren - können auf das AEM Assets Content Hub-Portal zugreifen, um markengenehmigte Assets zu finden und zu verwenden. Der Zugriff auf Content Hub wird über das Produktprofil AEM > Bereitstellungsinstanz > AEM Assets Eingeschränkte Benutzer in Adobe Admin Console gewährt. Dieses Produktprofil ist unabhängig von den zusätzlichen Funktionen für jeden Benutzertyp in AEM Assets Ultimate erforderlich.
+
+### Welche Benutzertypen in AEM Assets Ultimate können Assets mit Adobe Express und Firefly erstellen und bearbeiten? {#express-firefly-access-user-types}
+
+Mitwirkende, Hauptbenutzer und Administratoren in AEM Assets Ultimate können Assets mit den integrierten Funktionen von Adobe Express und Firefly erstellen und bearbeiten, einschließlich professionell gestalteter Vorlagen, Marken-Kits und Adobe Stock-Assets. Eingeschränkte Benutzende haben keinen Zugriff auf die Funktionen zur Asset-Erstellung oder -Bearbeitung. Ihr Zugriff beschränkt sich auf die Erkennung und Verwendung von markengeprüften Assets über das AEM Assets Content Hub-Portal.
+
+### Welche Benutzertypen in AEM Assets Ultimate können Assets in Adobe und Nicht-Adobe-Anwendungen integrieren? {#integration-access-user-types}
+
+Mitwirkende, Hauptbenutzer und Administratoren in AEM Assets Ultimate können mit Assets aus Adobe Experience Manager über Integrationen arbeiten, die für andere Adobe-Produkte und Nicht-Adobe-Anwendungen verfügbar sind. Eingeschränkte Benutzende können nicht auf Asset-Integrationen zugreifen - ihre Funktionen sind auf den Zugriff über das Content Hub-Portal beschränkt, um genehmigte Assets zu finden und zu nutzen. Der Integrationszugriff wird über die AEM > Produktprofile der Produktionsautoreninstanz aktiviert, die jedem dieser Benutzertypen zugewiesen sind.
+
+### Welcher Benutzertyp in AEM Assets Ultimate verfügt über vollständige DAM-Verwaltungsfunktionen, einschließlich Metadaten-Governance? {#dam-management-user-types}
+
+Power-User und Administratoren in AEM Assets Ultimate haben Zugriff auf alle AEM Assets DAM-Funktionen, einschließlich Asset-Aufnahme, -Speicherung, -Katalogisierung, Metadatenverwaltung, Governance und Automatisierung im Zusammenhang mit digitalen Assets. Collaborator-Benutzer und eingeschränkte Benutzer haben keinen Zugriff auf die Verwaltung auf DAM-Ebene oder auf die Metadaten-Governance. Der vollständige DAM-Zugriff wird über das Produktprofil AEM > Produktionsautoreninstanz > AEM Assets Power Users oder AEM Administrators in Adobe Admin Console aktiviert.
+
+### Welcher Benutzertyp in AEM Assets Ultimate kann Berechtigungen in der AEM Assets-Autorenumgebung verwalten? {#permission-management-user-type}
+
+Nur Administratoren in AEM Assets Ultimate können Berechtigungen für Inhalte in der AEM Assets-Autorenumgebung verwalten. Hauptbenutzer, Mitarbeiter-Benutzer und eingeschränkte Benutzer verfügen nicht über Funktionen zur Berechtigungsverwaltung. Diese exklusive Funktion wird über das Produktprofil AEM > Produktionsautoreninstanz > AEM-Administratoren in Adobe Admin Console aktiviert. Admins sind auch für die Konfiguration und Zuweisung der richtigen Produktprofile zu allen anderen Benutzertypen innerhalb des Unternehmens verantwortlich.
