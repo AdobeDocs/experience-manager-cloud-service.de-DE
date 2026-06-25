@@ -3,7 +3,7 @@ title: KI-gestützte Code-Migration zu AEM as a Cloud Service
 description: Überblick über die AEM Cloud Migration Skills und MCP, eine KI-Agent-Lösung, die BPA-Ergebnisse liest und AEM 6.x-Code nach Muster zu AEM as a Cloud Service migriert.
 feature: Migration
 role: Developer
-source-git-commit: 98298a088aa7c65826f6dbad2f4d16095e074524
+source-git-commit: 087017a7c0528f0806dfa8e8bd18a057a1763b14
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Die Migrationsfertigkeit ist eine Agentenfertigkeit für KI-aktivierte IDEs. Er 
 | `htlLint` | `data-sly-test` von redundanten, konstanten Vergleichswarnungen in HTL-Vorlagen |
 | OSGi-Konfigurationen | `.cfg.json`, Berechnung des Ausführungsmodus und Extraktion von Cloud Manager-Geheimnissen/env-var |
 
-Die Qualifikation delegiert alle Code-Umwandlungsschritte an die Companion-`best-practices`-Qualifikation. Beide werden zusammen als das Paket für `aem-cloud-service` Kenntnisse verteilt. Installieren Sie das Paket einmal, um beide zu erhalten.
+Die Qualifikation delegiert alle Code-Umwandlungsschritte an die Companion-`code-assessment`-Qualifikation. Beide werden zusammen als das Paket für `aem-cloud-service` Kenntnisse verteilt. Installieren Sie das Paket einmal, um beide zu erhalten.
 
 ### Erste Schritte {#getting-started-skill}
 
