@@ -3,9 +3,9 @@ title: Verwenden der AEM Cloud-Migrationsfertigkeit
 description: Referenz für jedes Migrationsmuster, das von AEM Cloud Migration unterstützt wird, einschließlich OSGi-Konfigurationskonvertierung, BPA-Quelloptionen und Sitzungsverwaltungsanleitungen.
 feature: Migration
 role: Developer
-source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
+source-git-commit: 7ea634871fc1655e5f0ec5b3fb88edbb0f317249
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Jede Migrationssitzung folgt dieser Reihenfolge:
 
 1. **Benennen des Musters**: Geben Sie ein Muster an (z. B. `scheduler`)
 2. **Ergebnisse bereitstellen**: aus einer BPA-CSV-Datei, CAM über MCP oder bestimmten Dateipfaden
-3. **Agent liest Umwandlungsregeln**: Die Kenntnis liest das relevante Best-Practices-Modul, bevor sie Code-Änderungen vornimmt
+3. **Agent liest Umwandlungsregeln**: Die Qualifikation liest die relevanten Umwandlungsregeln aus der begleitenden `code-assessment` vor, bevor Code-Änderungen vorgenommen werden
 4. **Erster Batch von fünf**: Der Agent wandelt bis zu fünf Funde um und meldet, was er geändert hat
 5. **Sie überprüfen und fortfahren**: Nachdem Sie jeden Batch überprüft haben, `continue` Sie, um mit dem nächsten fortzufahren
 
