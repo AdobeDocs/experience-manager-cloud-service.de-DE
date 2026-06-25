@@ -18,7 +18,7 @@ Erfahren Sie, wie Sie bei der Arbeit mit Cloud Manager mehrere Git-Repositorys v
 
 ## Synchronisieren von privaten Git-Repositorys {#syncing-customer-managed-git-repositories}
 
-Anstatt direkt mit dem Git-Repository von Cloud Manager zu arbeiten[ können Kunden mit ihrem eigenen privaten Git-Repository ](integrating-with-git.md) mehreren privaten Git-Repositorys arbeiten. Richten Sie einen automatisierten Synchronisierungsprozess ein, um sicherzustellen, dass das Git-Repository in Cloud Manager immer auf dem neuesten Stand ist.
+Anstatt direkt mit dem Git-Repository von Cloud Manager zu arbeiten[&#x200B; können Kunden mit ihrem eigenen privaten Git-Repository &#x200B;](integrating-with-git.md) mehreren privaten Git-Repositorys arbeiten. Richten Sie einen automatisierten Synchronisierungsprozess ein, um sicherzustellen, dass das Git-Repository in Cloud Manager immer auf dem neuesten Stand ist.
 
 Je nachdem, wo das Git-Repository des Kunden gehostet wird, richtet eine GitHub-Aktion oder Continuous-Integration-Lösung wie Jenkins die Automatisierung ein. Bei vorhandener Automatisierung kann jeder Push an ein kundeneigenes Git-Repository automatisch an das Git-Repository von Cloud Manager weitergeleitet werden.
 
