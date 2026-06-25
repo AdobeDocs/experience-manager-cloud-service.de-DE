@@ -4,11 +4,13 @@ description: Verwenden Sie den  [!DNL AEM Forms]  Designer, um Datensatzdokument
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+hide: true
+index: false
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 96%
+source-wordcount: '195'
+ht-degree: 90%
 
 ---
 
@@ -19,8 +21,8 @@ Designer ist ein grafisches Design-Tool für Formulare, das leicht zu bedienen i
 Die folgenden Dokumente enthalten Anweisungen für die Verwendung von Designer zum Erstellen von XDP-Vorlagen und PDF-Formularen:
 
 + [Verwenden von Designer](assets/using-designer-cs.pdf)
-+ [Quickstart-Lernprogramme für Designer](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
-+ [Beispiele für Designer](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/designer-samples.pdf)
++ [Schnellstart-Tutorials für Designer](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)
++ [Designer-Beispiele](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/designer-samples.pdf)
 + [Skriptgrundlagen für Designer](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/scripting-basics.pdf)
 + [Skriptreferenz für Designer](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/scripting-reference.pdf)
-+ [FormCalc-Referenz für Designer](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
++ [Designer FormCalc-Referenz](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/formcalc-reference.pdf)
