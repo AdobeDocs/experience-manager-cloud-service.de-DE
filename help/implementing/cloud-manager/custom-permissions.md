@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: ff567c4f328bf0ab10ee9e93ad850a597536cdbf
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 62%
+source-wordcount: '1258'
+ht-degree: 54%
 
 ---
 
@@ -40,10 +40,10 @@ Für das Erstellen und Verwenden eigener, benutzerdefinierter Berechtigungen sin
 1. [Weisen Sie dem Produktprofil Benutzende zu](#assign-users).
 
 >[!TIP]
->Möglicherweise ist es hilfreich, die Abschnitte [Bedingungen](#terms) und [Konfigurierbare Berechtigungen](#configurable-permissions) beim Erstellen eigener benutzerdefinierter Berechtigungen zu lesen.
+>Lesen Sie die Abschnitte [Bedingungen](#terms) und [Konfigurierbare Berechtigungen](#configurable-permissions) , während Sie Ihre eigenen benutzerdefinierten Berechtigungen erstellen.
 
 >[!IMPORTANT]
->Sie müssen in der Admin Console für Adobe Experience Manager as a Cloud Service über Produktadministratorrechte verfügen, um Produktprofile zu erstellen und Berechtigungen für Cloud Manager zu verwalten.
+>Zum Erstellen von Produktprofilen und Verwalten von Berechtigungen für Cloud Manager benötigen Sie Produktadministratorrechte in der Admin Console für Adobe Experience Manager as a Cloud Service.
 
 ### Produktprofil erstellen {#create}
 
@@ -80,7 +80,7 @@ Das neue Produktprofil wird gespeichert und ist in der Liste der Produktprofile 
 
 1. Führen **im Dialogfeld „Berechtigungen für benutzerdefiniertes** bearbeiten“ einen der folgenden Schritte aus:
 
-   * Klicken Sie oben in der Spalte **Verfügbare Berechtigungselemente** auf ![Symbol hinzufügen oder Pluszeichen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Alle hinzufügen**, um alle Berechtigungen hinzuzufügen.
+   * Klicken Sie oben in der Spalte **Verfügbare Berechtigungselemente** auf ![Hinzufügen-Symbol oder Pluszeichen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Alle hinzufügen**, um alle Berechtigungen einzuschließen.
    * Um der Spalte **Enthaltene Berechtigungselemente“ eine einzelne Berechtigung hinzuzufügen** klicken Sie auf die zugehörige ![Symbol hinzufügen oder Pluszeichen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg).
 
      ![Berechtigungselemente bearbeiten](assets/edit-permission-items.png)
@@ -134,7 +134,7 @@ Die folgenden Berechtigungen sind verfügbar, wenn Sie ein benutzerdefiniertes P
 
 ### Berechtigungen auf Unternehmensebene {#organization-level}
 
-Berechtigungen auf Unternehmensebene beziehen sich auf Berechtigungen, die immer für alle Programme in einem Unternehmen gewährt werden.
+Berechtigungen auf Organisationsebene beziehen sich auf Berechtigungen, die immer für alle Programme in einer Organisation erteilt werden.
 
 Folgende Berechtigungen sind Berechtigungen auf Unternehmensebene:
 
@@ -167,12 +167,12 @@ Berechtigungselemente beziehen sich auf den Anwendungsumfang der Berechtigungen.
 ## Nutzungshinweise {#usage-notes}
 
 * Ein benutzerdefiniertes Berechtigungsprofil führt beim Konfigurieren von Berechtigungen auch AMS-Programme, -Umgebungen und -Pipelines auf.
-* Es kann mehrere Minuten dauern, bis Ressourcen wie Programm, Umgebung und Pipeline, die in Cloud Manager erstellt wurden, in Admin Console angezeigt werden, um die Berechtigungen zu konfigurieren.
-* In seltenen Fällen, in denen ein benutzerdefinierter Berechtigungsdienst nicht reagiert, sind vordefinierte Profile weiterhin verfügbar und Benutzende in vordefinierten Profilen haben weiterhin darauf Zugriff.
+* Für Ressourcen wie Programme, Umgebungen und Pipelines, die in Cloud Manager erstellt wurden, dauert es mehrere Minuten, bis sie in Admin Console zur Berechtigungskonfiguration angezeigt werden.
+* Wenn ein benutzerdefinierter Berechtigungs-Service nicht reagiert, sind weiterhin vordefinierte Profile verfügbar und Benutzer in vordefinierten Profilen haben weiterhin angemessenen Zugriff.
 
 ## Häufig gestellte Fragen {#faq}
 
-### Welche Berechtigungsprofile sind vordefinierte Berechtigungsprofile?
+### Welche Berechtigungsprofile sind vordefiniert?
 
 * Geschäftsinhaber
 * Programm-Manager
@@ -183,7 +183,7 @@ Weitere Informationen zu vordefinierten Rollen finden Sie unter [AEM as a Cloud 
 
 ### Was passiert mit vordefinierten Berechtigungsprofilen mit der Einführung benutzerdefinierter Profile?
 
-Die standardmäßigen Produktprofile und Cloud Manager-Rollen funktionieren weiterhin wie zuvor.
+Standardproduktprofile und Cloud Manager-Rollen funktionieren weiterhin wie zuvor.
 
 ### Kann ich vordefinierte Berechtigungsprofile bearbeiten?
 
@@ -195,8 +195,8 @@ Löschen Sie keine vordefinierten Berechtigungsprofile aus der Admin Console.
 
 ### Kann ich Benutzende zu mehreren Berechtigungsprofilen hinzufügen?
 
-Ja. Ein Benutzer kann Teil mehrerer Profile sein, einschließlich vordefinierter und benutzerdefinierter Berechtigungsprofile. Wenn eine Person mehreren Profilen zugewiesen wird, stehen ihr die kombinierten Berechtigungen aus allen zugewiesenen Berechtigungsprofilen zur Verfügung.
+Ja. Ein Benutzer kann mehreren Profilen zugewiesen werden, einschließlich vordefinierter und benutzerdefinierter Berechtigungsprofile. Wenn eine Person mehreren Profilen zugewiesen wird, stehen ihr die kombinierten Berechtigungen aus allen zugewiesenen Berechtigungsprofilen zur Verfügung.
 
-### Was passiert, wenn eine Person berechtigt ist, eine Umgebung/Pipeline zu bearbeiten, aber keinen Zugriff auf ein Programm hat, das die Umgebung/Pipeline enthält?
+### Was passiert, wenn ein Benutzer berechtigt ist, eine Umgebung/Pipeline zu bearbeiten, aber keinen Zugriff auf ein Programm hat, das die Umgebung/Pipeline enthält?
 
-Der Benutzer kann nicht auf die Umgebung oder Pipeline zugreifen, wenn er nicht über die **Programmzugriff**-Berechtigungen verfügt, die die Umgebung oder Pipeline enthalten.
+Der Benutzer kann nicht auf die Umgebung oder Pipeline zugreifen, wenn er nicht über die **Programmzugriff**-Berechtigungen verfügt, die mit der Umgebung oder Pipeline verknüpft sind.
