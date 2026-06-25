@@ -4,13 +4,12 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 89b0405ff170b17d8d6e26d035ebeed3ab361f4c
+source-git-commit: eac2d89b3cebc134b40fc0e537cf66c78fa1db50
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2118'
 ht-degree: 0%
 
 ---
-
 
 # Lokale Entwicklung mit KI-Tools {#local-development-with-ai-tools}
 
@@ -29,7 +28,7 @@ Vier einander ergänzende Komponenten befassen sich damit:
 | **AEM-Schnellstart für lokalen MCP-Server** | Zeigt Live-Laufzeitdaten aus einer lokalen AEM SDK-Instanz zur Fehlerbehebung an |
 | **Lokaler Dispatcher-MCP-Server** | Ermöglicht die Laufzeitvalidierung und -überprüfung einer lokalen Dispatcher-Instanz |
 
-In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
+In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
 
 Senden Sie eine E-Mail an [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) mit Feedback, um die Produktentwicklung mitzugestalten.
 
@@ -65,7 +64,7 @@ Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](http
 
 ### Kenntnisse installieren {#install-skills}
 
-Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [&#x200B; Anleitung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
+Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [ Anleitung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
 
 #### Claude Code {#claude-code}
 
@@ -129,7 +128,7 @@ CTA Link (ctaLink) - Pathfield
 
 Der Agent wiederholt die Feldspezifikation zur Bestätigung und generiert dann alle Komponentendateien. Zu den unterstützten Mustern gehören Mehrfachfeld- mit zusammengesetzten verschachtelten Elementen, bedingte Einblenden-/Ausblenden-Logik, Kernkomponenten-Erweiterung über Sling Resource Merger und JUnit 5-Tests mit AEM Mocks. Das Design kann aus verschiedenen Quellen stammen, darunter eine Textbeschreibung, ein Bild oder eine Figma Design URL unter Verwendung des MCP-Servers von Figma.
 
-Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Verwenden der Migrationsfertigkeit {#use-the-migration-skill}
 
@@ -261,7 +260,7 @@ Der Dispatcher MCP-Server ist im Paket mit dem AEM Dispatcher SDK enthalten. Dad
 
 Anders als die Dispatcher-Kenntnisse stellt der Dispatcher MCP-Server nur Tools bereit: sieben MCP-Tools und keine Eingabeaufforderungen oder Ressourcen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491968?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
 
 ### Voraussetzungen {#prerequisites}
 

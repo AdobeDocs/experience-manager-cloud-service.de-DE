@@ -5,7 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 06fa3a08c34299df3c5de78b8b7740cfc0200ed1
+nudge: please
+source-git-commit: 494148e276bec785513ba9528e70cb0d706bcc45
 workflow-type: tm+mt
 source-wordcount: '3035'
 ht-degree: 21%
@@ -40,7 +41,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491499/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -178,11 +179,11 @@ Adaptive Forms, die an eine Microsoft SharePoint-Liste senden, unterstützen jet
 
 #### Conversational AI Interface für Cloud Manager - Fragen {#devagent-cloudmanager}
 
-Der Entwicklungsagent wird erweitert, um Fragen im Zusammenhang mit Cloud Manager über den [Cloud Manager-Auftrag zu &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). Rufen Sie im KI-Assistenten Informationen zu Programmen, Umgebungen und Pipelines ab (z. B. Ausführungsstatus). Schnelles Auffinden von Links zu Fehlerprotokollen, Zugriffsprotokollen und Build-Protokollen.
+Der Entwicklungsagent wird erweitert, um Fragen im Zusammenhang mit Cloud Manager über den [Cloud Manager-Auftrag zu ](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). Rufen Sie im KI-Assistenten Informationen zu Programmen, Umgebungen und Pipelines ab (z. B. Ausführungsstatus). Schnelles Auffinden von Links zu Fehlerprotokollen, Zugriffsprotokollen und Build-Protokollen.
 
 #### Verbesserungen bei der Fehlerbehebung bei Pipeline-Agent-Vorgängen {#devagent-pipeline-troubleshooting}
 
-Der Vorgang zur Fehlerbehebung bei [-Pipelines &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) Entwicklern, Probleme in AEM as a Cloud Service-Bereitstellungen zu diagnostizieren und zu beheben. Zu den neuen Funktionen gehören:
+Der Vorgang zur Fehlerbehebung bei [-Pipelines ](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) Entwicklern, Probleme in AEM as a Cloud Service-Bereitstellungen zu diagnostizieren und zu beheben. Zu den neuen Funktionen gehören:
 
 * Unterstützung für die Web-Stufen-Konfigurations-Pipeline : Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web-Stufen-Konfigurations-Pipeline**
 
@@ -190,7 +191,7 @@ Der Vorgang zur Fehlerbehebung bei [-Pipelines &#x200B;](/help/ai-in-aem/agents/
 
 #### Verwalten von Ruhezeiten und Aktualisieren von Freizeiten mit dem KI-Assistenten {#quiet-hours-ai}
 
-Sie können jetzt &quot;[&#x200B; Stunden“ und „Freie Zeiträume aktualisieren“ direkt über &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) AEM-KI-Assistenten anzeigen, erstellen und bearbeiten.
+Sie können jetzt &quot;[ Stunden“ und „Freie Zeiträume aktualisieren“ direkt über ](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) AEM-KI-Assistenten anzeigen, erstellen und bearbeiten.
 Der Hauptvorteil liegt in der Verringerung von Zeitplanfehlern. Wenn Sie eine Anfrage stellen, führt Sie der Assistent durch das Mögliche und kennzeichnet die geltenden Beschränkungen, z. B. die Obergrenze für drei Zeiträume, die obligatorische Lücke von einer Woche zwischen Zeiträumen und die geplanten Zeitfenster für Wartungsausschlüsse, für die Sie keinen Zeitplan festlegen können. Anstatt also nach einer fehlgeschlagenen Konfiguration eine Einschränkung zu ermitteln, werden Geschäftsinhaber und Bereitstellungs-Manager im selben Gespräch auf einen gültigen Zeitplan geleitet. Dadurch werden wichtige Geschäftsfenster vor automatischen Wartungs-Updates geschützt und gleichzeitig das Hin- und Herschieben und Fehlkonfigurieren reduziert.
 
 ### Wichtige Hinweise zu [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-notices}
@@ -240,9 +241,9 @@ Der lokale Dispatcher-MCP-Server ermöglicht es KI-Tools, die Dispatcher- und Ap
 
 Java 25 ist die nächste LTS-Version (Long-Term Support) nach Java 21, die Verbesserungen in den Bereichen Leistung, Entwicklerproduktivität und Sicherheit bietet:
 
-&#x200B;- **Leistung** - Verringerter Speicherbedarf, effizientere Speicherbereinigung und schnellere JVM-Aufwärmphase kommen Cloud-nativen Bereitstellungen zugute.
-&#x200B;- **Entwicklerproduktivität** - Sauberere Objektinitialisierung, ausdrucksstärkere Musterübereinstimmung und vereinfachte gleichzeitige Aufgabenverwaltung reduzieren Textbausteine und verbessern die Code-Klarheit.
-&#x200B;- **Sicherheit** - Modernisierte API für die Ableitung kryptografischer Schlüssel zur Vereinfachung gängiger Sicherheits-Workflows.
+- **Leistung** - Verringerter Speicherbedarf, effizientere Speicherbereinigung und schnellere JVM-Aufwärmphase kommen Cloud-nativen Bereitstellungen zugute.
+- **Entwicklerproduktivität** - Sauberere Objektinitialisierung, ausdrucksstärkere Musterübereinstimmung und vereinfachte gleichzeitige Aufgabenverwaltung reduzieren Textbausteine und verbessern die Code-Klarheit.
+- **Sicherheit** - Modernisierte API für die Ableitung kryptografischer Schlüssel zur Vereinfachung gängiger Sicherheits-Workflows.
 
 Um Unternehmen bei der Planung von Tests und Validierungen vor dem erforderlichen Java 25-Laufzeitupgrade zu unterstützen, stellt Adobe die folgenden Zieldaten bereit. Alle Aktualisierungen dieser Zeitleiste werden über Versionshinweise kommuniziert.
 
@@ -319,12 +320,12 @@ AEM as a Cloud Service unterstützt jetzt den OpenTelemetry-basierten Telemetrie
 
 Verwenden Sie diese Integration für Folgendes:
 
-&#x200B;- Untersuchen langsamer oder fehlgeschlagener Anfragen
-&#x200B;- JVM-Status und Ressourcennutzung im Zeitverlauf verfolgen
-&#x200B;- Erstellen von Dashboards und Warnhinweisen für Ihre AEM-Ebenen
-&#x200B;- Korrelieren des AEM-Verhaltens mit anderen Services während Vorfällen
+- Untersuchen langsamer oder fehlgeschlagener Anfragen
+- JVM-Status und Ressourcennutzung im Zeitverlauf verfolgen
+- Erstellen von Dashboards und Warnhinweisen für Ihre AEM-Ebenen
+- Korrelieren des AEM-Verhaltens mit anderen Services während Vorfällen
 
-Um sich der Alpha-Phase anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com, in der Ihr Anwendungsfall beschrieben wird.
+Um sich der Alpha-Phase anzuschließen, senden Sie eine E-Mail an [](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com, in der Ihr Anwendungsfall beschrieben wird.
 
 ### Funktionen von [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta {#assets-beta-program-features}
 
