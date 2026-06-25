@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise zum universellen Editor 2026.06.18
-description: Dies sind die Versionshinweise für die Version 2026.06.18 des universellen Editors.
+title: Versionshinweise zum universellen Editor 2026.06.25
+description: Dies sind die Versionshinweise für die Version 2026.06.25 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8658d6c71927cbd610e42b618705509b51a2d672
+source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 16%
+source-wordcount: '186'
+ht-degree: 13%
 
 ---
 
 
-# Versionshinweise zum universellen Editor 2026.06.18 {#release-notes}
+# Versionshinweise zum universellen Editor 2026.06.25 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 18. Juni 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version 25. Juni 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,12 +26,13 @@ Dies sind die Versionshinweise für die Version vom 18. Juni 2026 des universell
 
 ## Neue Funktionen {#what-is-new}
 
-* Es wurde die Möglichkeit hinzugefügt, alle ausgewählten Kontrollkästchen zu löschen.
+* Die Symbolleiste **eine neue Schaltfläche** In Site-Admin öffnen, um auf die AEM Sites-Konsole zuzugreifen.
+   * Dadurch werden die Funktionen der ehemaligen **AEM Site Admin-Erweiterung** Erweiterung[&#x200B; nativ &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor integriert.
+   * Die Schaltfläche öffnet die aktuelle AEM-Seite in der [Sites-Konsole](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) oder der [Experience Fragments-](/help/sites-cloud/authoring/fragments/experience-fragments.md) für `/content/experience-fragments` Pfade.
+   * Die Schaltfläche ist für DAM-Pfade (`/content/dam`) ausgeblendet und wenn keine eindeutige AEM-Seite aus den aktuellen bearbeitbaren Elementen ermittelt werden kann.
+* Tastaturbefehle für einzelne Zeichen funktionieren jetzt besser mit Barrierefreiheitstechnologien.
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Die Drehschaltfläche kommuniziert nun den aktuellen Status korrekt mit Hilfstechnologien.
-* Der Status des unendlichen Ladens wurde in Situationen korrigiert, in denen Inhaltsfragmente Registerkarten ohne Inhalt enthalten.
-* Es wurde ein Fehler behoben, durch den ein Renderer in einigen Situationen beim Neuladen bestimmter Modelle abstürzte.
-* Es wurde ein Fehler behoben, durch den bestimmte Tags nicht entfernt werden konnten.
-* Der barrierefreie Name der Schaltfläche für das vorgestellte Bild enthält keine doppelten Informationen mehr.
+* Zahlreiche Schaltflächen haben jetzt korrekt barrierefreie Namen.
+* Ein Problem mit der Beibehaltung bestimmter Inhaltsfragmente nach ihrer Auswahl mit einer Auswahl wurde behoben.

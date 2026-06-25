@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
+source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
 workflow-type: tm+mt
-source-wordcount: '3149'
-ht-degree: 65%
+source-wordcount: '3165'
+ht-degree: 63%
 
 ---
 
@@ -396,15 +396,15 @@ Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Sym
 >* Die Schaltfläche **AEM** Seiteneigenschaften&#39; funktioniert nur für Seiten, nicht für Inhaltsfragmente.
 >* Die Schaltfläche wird nur angezeigt, wenn die Remote-Seite eine [Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` aufweist und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
 
-### Zugreifen auf die Sites-Konsole {#sites-console}
+### In Site-Admin öffnen {#sites-console}
 
-Die **AEM-Erweiterung für Site Admin** ermöglicht den schnellen Zugriff auf die Seite, die in der [Sites-Konsole von AEM bearbeitet wird](/help/sites-cloud/authoring/sites-console/introduction.md), und ermöglicht Ihnen die Navigation in der Site-Baumstruktur oder das Ausführen von Aktionen auf Seitenebene in der Konsole.
+Die Schaltfläche **In Site-Admin öffnen** ermöglicht den schnellen Zugriff auf die [Sites-Konsole von AEM](/help/sites-cloud/authoring/sites-console/introduction.md) (oder die [Experience Fragments-](/help/sites-cloud/authoring/fragments/experience-fragments.md) für `/content/experience-fragments` Pfade), um anzuzeigen, wo die Seite, die Sie gerade bearbeiten, in Ihrer Inhaltsstruktur vorhanden ist. Dadurch können Sie in der Site-Struktur navigieren oder Aktionen auf Seitenebene in der Konsole ausführen.
 
 ![Symbol „In Site Admin öffnen“](assets/open-in-site-admin-icon.png)
 
 Tippen oder klicken Sie auf das Symbol, um die Sites-Konsole in einem neuen Browser-Tab zu öffnen, und navigieren Sie zu der Seite, die sich derzeit im Editor befindet.
 
-Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+Die Schaltfläche ist für DAM-Pfade (`/content/dam`) ausgeblendet und wenn keine eindeutige AEM-Seite aus den aktuellen bearbeitbaren Elementen ermittelt werden kann.
 
 ### Sperren und Entsperren von Seiten {#locking-pages}
 
