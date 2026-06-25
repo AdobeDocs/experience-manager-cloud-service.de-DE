@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Verschlüsselungsschlüssel für AEM as a Clo
 feature: Security
 role: Admin
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 753542017cb92871a2b22a53cb9de0f38324872c
+source-git-commit: 424c679f6da1aaa0f40df598f4d0d1517a3e8c5b
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 36%
+source-wordcount: '1350'
+ht-degree: 32%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service speichert derzeit Kundendaten in Azure Blob Storage und M
 >
 >Bevor Sie Ihren Azure-Schlüsseltresor konfigurieren, müssen Sie zunächst CMK für Ihr Cloud Service-Programm in Cloud Manager aktivieren. CMK wird während der Erstellung eines Produktionsprogramms oder **Bearbeitung eines vorhandenen Programms auf der Registerkarte** Sicherheit“ aktiviert.
 >
->Siehe [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) oder [Bearbeiten von &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+>Siehe [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) oder [Bearbeiten von ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 
 ## Zweck dieser Lösung {#the-problem-being-solved}
@@ -67,7 +67,11 @@ Bevor Sie mit dem Rest dieses Handbuchs fortfahren, melden Sie sich mit `az logi
 ## Starten des CMK-Konfigurationsprozesses für AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
 Sie müssen die Konfiguration für kundenverwaltete Schlüssel (CMK) für Ihre AEM as a Cloud Service-Umgebung über die Benutzeroberfläche anfordern. Navigieren Sie dazu zur AEM Home Security-Benutzeroberfläche im Abschnitt **Kundenseitig verwaltete Schlüssel** .
-Sie können dann den Onboarding-Prozess starten, indem Sie auf die Schaltfläche **Onboarding starten** klicken.
+Auf der Seite werden alle Programme aufgelistet, die CMK unterstützen. Sie können dann den Onboarding-Prozess starten, indem Sie auf die Schaltfläche Programm aktivieren klicken.
+
+![Aktivieren eines Programms zur Verwendung von CMK](./assets/cmk/step0.png)
+
+Wenn CMK beim Erstellen/Bearbeiten eines Programms in Cloud Manager aktiviert wurde, klicken Sie auf die Schaltfläche Onboarding starten .
 
 ![Starten des Onboardings einer Website mithilfe der CMK-Benutzeroberfläche](./assets/cmk/step1.png)
 
@@ -197,17 +201,27 @@ Das Widerrufen oder Deaktivieren des Zugriffs auf die Schlüsseltresor-, Schlüs
 
 Wenn Sie sich entscheiden, den Zugriff von AEM as a Cloud Service auf Ihre Daten zu sperren, können Sie dies tun, indem Sie die mit dem Programm verknüpfte Benutzerrolle aus dem Schlüsseltresor in Azure entfernen.
 
-## Nächste Schritte {#next-steps}
+## Staging-CMK einrichten {#stage-cmk-setup}
 
-Nachdem Sie die erforderlichen Informationen in der CMK-Benutzeroberfläche bereitgestellt haben, startet Adobe den Konfigurationsprozess für Ihre AEM as a Cloud Service-Umgebung. Dieser Vorgang erfordert Zeit, und Sie werden benachrichtigt, sobald er abgeschlossen ist.
+Nachdem Sie die erforderlichen Informationen in der CMK-Benutzeroberfläche bereitgestellt haben, startet Adobe den Konfigurationsprozess für Ihre AEM as a Cloud Service Staging-Umgebung. Dieser Vorgang erfordert Zeit, und Sie werden benachrichtigt, sobald er abgeschlossen ist.
 
-![Warten Sie, bis Adobe die Umgebung konfiguriert hat.](./assets/cmk/step4.png)
+![Warten Sie, bis Adobe die Staging-Umgebung konfiguriert hat](./assets/cmk/step4.png)
+
+## CMK-Einrichtung erstellen {#prod-cmk-setup}
+
+Nach Abschluss der Staging-Einrichtung sollten Sie eine gründliche End-2-End-Validierung durchführen. Wenn alles einwandfrei funktioniert, müssen Sie sicherstellen, dass die Produktionsumgebung entsprechend konfiguriert werden kann.
+
+![Bestätigen der Produktionsumgebung](./assets/cmk/step5.png)
+
+Nachdem Sie dies in der CMK-Benutzeroberfläche bestätigt haben, startet Adobe den Konfigurationsprozess für Ihre AEM as a Cloud Service-Produktionsumgebung. Dieser Vorgang erfordert Zeit, und Sie werden benachrichtigt, sobald er abgeschlossen ist.
+
+![Warten Sie, bis Adobe die Produktionsumgebung konfiguriert hat](./assets/cmk/step6.png)
 
 
 ## Abschließen der CMK-Einrichtung {#complete-the-cmk-setup}
 
 Sobald der Konfigurationsprozess abgeschlossen ist, können Sie den Status Ihrer CMK-Einrichtung in der Benutzeroberfläche sehen. Sie können auch den Schlüsseltresor und den Verschlüsselungsschlüssel sehen.
-![Der Prozess in ist jetzt abgeschlossen](./assets/cmk/step5.png)
+![Der Prozess in ist jetzt abgeschlossen](./assets/cmk/step7.png)
 
 ## Fragen und Support {#questions-and-support}
 
