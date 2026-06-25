@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: c75fb9425b72dea9130ed24cc2a098b56f23d13d
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 96%
+source-wordcount: '1197'
+ht-degree: 83%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 96%
 
 <!-- badge: label="Beta" type="Positive" -->
 
-Um den KI-Assistenten in AEM (Adobe Experience Manager) zu verwenden, ist eine Berechtigung für den Zugriff auf Produktkenntnisse über den KI-Assistenten obligatorisch. Diese Berechtigung ist standardmäßig AKTIVIERT.
+Um den KI-Assistenten in AEM (Adobe Experience Manager) zu verwenden, ist eine Berechtigung für den Zugriff auf Produktkenntnisse über den KI-Assistenten obligatorisch. Adobe aktiviert diese Berechtigung standardmäßig.
 
 Wenn Sie steuern möchten, wer auf Produktkenntnisse zugreifen kann, senden Sie von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-Mail an [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com). Adobe kann die Zugriffssteuerung auf Benutzerebene aktivieren. Wenn die Option aktiviert ist, kann Ihr Admin mittels der unten beschriebenen Schritte Zugriff auf Benutzerebene gewähren.
 
-Wenn Sie die Zugriffskontrolle auf Benutzerebene angefordert haben, muss sich Ihr Unternehmen über die Adobe Admin Console anmelden. Eine bzw. ein Produkt-Admin erstellt (oder wählt) eine Benutzergruppe und gewährt ihr die neue Berechtigung „KI-Assistent“. Jede Person, die dieser Gruppe hinzugefügt wird, erhält sofort Zugriff auf den KI-Assistenten in AEM. Wenn das Ziel unternehmensweite Verfügbarkeit ist, weist die bzw. der Admin einfach alle Benutzenden dieser Gruppe zu.
+Wenn Sie die Zugriffskontrolle auf Benutzerebene angefordert haben, muss sich Ihr Unternehmen über die Adobe Admin Console anmelden. Eine bzw. ein Produkt-Admin erstellt (oder wählt) eine Benutzergruppe und gewährt ihr die neue Berechtigung „KI-Assistent“. Jede Person, die dieser Gruppe hinzugefügt wird, erhält sofort Zugriff auf den KI-Assistenten in AEM. Wenn das Ziel die unternehmensweite Verfügbarkeit ist, weist der Administrator alle Benutzer dieser Gruppe zu.
 
-Aus Mitarbeitersicht ist der Prozess einfach: Bestimmen Sie den Produkt-Admin für Adobe Experience Manager in Ihrer Organisation und fordern Sie das Hinzufügen zur KI-fähigen Benutzergruppe an. Sobald Sie in dieser Gruppe angezeigt werden, erscheint automatisch das Assistentensymbol, wenn Sie sich das nächste Mal anmelden.
+Für -Benutzende ist der Prozess einfach: Ermitteln Sie den Produktadministrator für Adobe Experience Manager in Ihrem Unternehmen und fordern Sie an, zur KI-aktivierten Benutzergruppe hinzugefügt zu werden. Sobald Sie dieser Gruppe hinzugefügt wurden, wird das Assistentensymbol automatisch angezeigt, wenn Sie sich das nächste Mal anmelden.
 
-Admins sollten die normale Cloud Manager-Governance im Auge behalten. Mit Produktadministratorrechten in der Admin Console können Sie Profile erstellen, Benutzergruppen verwalten oder Berechtigungen bearbeiten. Wenn Benutzende auch die integrierte Funktion **Support-Ticket erstellen** des Assistenten benötigen, fügen Sie denselben Personen oder derselben Gruppe die standardmäßige Rolle **Support-Admin** (standardmäßige Admin Console-Rolle) hinzu.
+Administratoren sollten die normale Governance von Cloud Manager befolgen. Um Profile zu erstellen, Benutzergruppen zu verwalten oder Berechtigungen zu bearbeiten, halten Sie Produktadministratorrechte in der Admin Console bereit. Wenn Benutzende auch die integrierte Funktion **Support-Ticket erstellen** des Assistenten benötigen, fügen Sie denselben Personen oder derselben Gruppe die standardmäßige Rolle **Support-Admin** (standardmäßige Admin Console-Rolle) hinzu.
 
 Der Konfigurationsprozess des KI-Assistenten in AEM umfasst die folgenden Schritte:
 
@@ -45,9 +45,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 
 **Konfigurationsaspekte**
 
-* Verarbeitungsdauer: Ressourcen, die in Cloud Manager erstellt werden, brauchen bis zu zwei Minuten, bis sie in der Admin Console zur Berechtigungskonfiguration angezeigt werden.
+* Verarbeitungszeit: Es kann bis zu 2 Minuten dauern, bis in Cloud Manager erstellte Ressourcen zur Berechtigungskonfiguration in Admin Console angezeigt werden.
 * Verschiedene Profile: Benutzende können verschiedenen Profilen angehören und Berechtigungen werden aus allen zugewiesenen Profilen kombiniert.
-* Organisationsumfang: Manche Berechtigungen können auf Organisationsebene für alle Programme gelten.
+* Organisationsbereich: Einige Berechtigungen gelten auf Organisationsebene für alle Programme.
 * Vordefinierte Profile: Löschen Sie keine vordefinierten Berechtigungsprofile aus der Admin Console.
 
 
@@ -133,7 +133,7 @@ Sie können eine bestehende AEM-Benutzergruppe nutzen, wenn sie die Zugriffsanfo
 
 >[!TAB Hinzufügen von einzelnen Benutzenden]
 
-1. Klicken Sie auf der Seite **Benutzergruppen** in der Tabelle **Gruppenname** auf den Namen der neu erstellten Benutzergruppe oder auf den Namen einer vorhandenen Benutzergruppe.
+1. Klicken Sie auf **Seite** Benutzergruppen“ in der Tabelle **Gruppenname** auf den Namen der neu erstellten Benutzergruppe oder auf einen vorhandenen Benutzergruppennamen.
 
    ![Seite „Benutzergruppen“ mit dem Benutzergruppennamen KI-Assistent in AEM in der Tabelle](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
@@ -193,7 +193,7 @@ Bitten Sie einen Benutzenden aus der zugewiesenen Gruppe, Folgendes zu tun:
 
 1. Melden Sie sich bei AEM an.
 2. Überprüfen, ob die Funktionen des KI-Assistenten verfügbar sind.
-3. Testen der Funktionalität des KI-Assistenten, um eine ordnungsgemäße Aktivierung sicherzustellen.
+3. Um eine ordnungsgemäße Aktivierung sicherzustellen, testen Sie die Funktionalität des KI-Assistenten.
 
 ## Siehe auch
 
