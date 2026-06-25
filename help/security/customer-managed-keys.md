@@ -19,7 +19,7 @@ AEM as a Cloud Service speichert derzeit Kundendaten in Azure Blob Storage und M
 >
 >Bevor Sie Ihren Azure-Schlüsseltresor konfigurieren, müssen Sie zunächst CMK für Ihr Cloud Service-Programm in Cloud Manager aktivieren. CMK wird während der Erstellung eines Produktionsprogramms oder **Bearbeitung eines vorhandenen Programms auf der Registerkarte** Sicherheit“ aktiviert.
 >
->Siehe [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) oder [Bearbeiten von ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+>Siehe [Erstellen von Produktionsprogrammen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) oder [Bearbeiten von &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 
 ## Zweck dieser Lösung {#the-problem-being-solved}
