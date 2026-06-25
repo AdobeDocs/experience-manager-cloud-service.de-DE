@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # Übersicht über den Entwicklungsagenten {#development-agent-overview}
 
-[Im Rahmen der Brand Experience Agent ](/help/ai-in-aem/agents/brand-experience/overview.md) der Entwicklungsagent herkömmliche AEM Java-Stack-Entwickler und -Administratoren dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
+[Im Rahmen der Brand Experience Agent &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md) der Entwicklungsagent herkömmliche AEM Java-Stack-Entwickler und -Administratoren dabei, Code effizienter zu erstellen, zu debuggen, bereitzustellen und zu optimieren.
 
 Es unterstützt die folgenden Aufträge, auf die über die Konversationsoberfläche des KI-Assistenten zugegriffen werden kann.
 
@@ -96,7 +96,7 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 -->
 
-[In einem Tutorial erfahren ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
+[In einem Tutorial erfahren &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline), wie Sie mit dem Entwicklungsagenten Pipeline-Fehler beheben können.
 
 ### Zugriff auf den Entwicklungsagenten über Cloud Manager {#how-to-access-the-agent}
 
@@ -188,10 +188,10 @@ Für die Fehlerbehebung bei Pipelines ist entweder die Rolle Cloud Manager - Ent
 
 Die Fehlerbehebung bei Pipelines erfolgt im Build- und Unit-Test-Schritt und im Code-Scan-Schritt in Full-Stack-Bereitstellungs- und Code-Qualitäts-Pipelines. Es unterstützt auch [Pipelines mit Webstufen-Konfiguration](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines).
 
-Debuggen Sie bei anderen Pipeline-Typen und -Schritten Fehler, indem Sie die Protokolle herunterladen und überprüfen. Weitere Informationen finden [ unter „Zugreifen auf und Herunterladen ](/help/implementing/cloud-manager/manage-logs.md) Protokollen“.
+Debuggen Sie bei anderen Pipeline-Typen und -Schritten Fehler, indem Sie die Protokolle herunterladen und überprüfen. Weitere Informationen finden [&#x200B; unter „Zugreifen auf und Herunterladen &#x200B;](/help/implementing/cloud-manager/manage-logs.md) Protokollen“.
 
 ## Fehlerbehebungsauftrag für die Replikation (Beta) {#replication-troubleshooting-job}
 
 Debuggen Sie replikationsbezogene Probleme, z. B. blockierte Warteschlangen.
 
-aem-devagent@adobe.com Bitte eine E-Mail an [](mailto:aem-devagent@adobe.com) senden, um Zugriff auf das Beta-Programm zu erhalten.
+aem-devagent@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com) senden, um Zugriff auf das Beta-Programm zu erhalten.
