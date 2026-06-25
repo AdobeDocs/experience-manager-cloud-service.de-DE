@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 293b9136ee5249ee435b089b49dcaab2ca45fea8
+source-git-commit: 32461fe79a72c2a5d83fd3518d84807427112763
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Vier einander ergänzende Komponenten befassen sich damit:
 | **AEM-Schnellstart für lokalen MCP-Server** | Zeigt Live-Laufzeitdaten aus einer lokalen AEM SDK-Instanz zur Fehlerbehebung an |
 | **Lokaler Dispatcher-MCP-Server** | Ermöglicht die Laufzeitvalidierung und -überprüfung einer lokalen Dispatcher-Instanz |
 
-In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
+In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
 
 >[!TIP]
 >
->Die Remote-MCP-Server von AEM Cloud Service sind auch für die lokale Entwicklung nützlich. Weitere Informationen dazu finden Sie im Artikel [Verwenden von MCP mit Cloud Service].(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+>Die Remote-MCP-Server von AEM Cloud Service sind auch für die lokale Entwicklung nützlich. Weitere Informationen dazu finden Sie im Artikel [Verwenden von MCP mit Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
@@ -58,10 +58,11 @@ Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](http
 | `dispatcher` | KI-gestützter Dispatcher- und Apache HTTPD-Konfigurationsassistent, der die Konfigurationserstellung, technische Beratung, die Reaktion auf Vorfälle, Leistungsoptimierung und die Sicherheitsabsicherung behandelt. |
 | `migration` | Migriert AEM 6.x-, AMS- oder On-Premise-Java-Code- und OSGi-Konfigurationen nach AEM as a Cloud Service, gesteuert durch [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)-Ergebnisse aus einem CSV-Export oder [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) |
 | `workflow` | Dies ist der zentrale Einstiegspunkt für alle AEM as a Cloud Service Workflow-Fähigkeiten. Es behandelt das Design von Workflow-Modellen, die Entwicklung benutzerdefinierter Prozessschritte und Teilnehmerauswahlen, die Starterkonfiguration, das Auslösen von Workflows und die Produktionsunterstützung, einschließlich des Debuggens blockierter/fehlgeschlagener Workflows, des Auslösens von Vorfällen mit Cloud Manager-Protokollen, der Thread-Pool-Analyse und der Sling-Auftragsdiagnose für die Granite Workflow-Engine. |
+| `code-assessment` | **(Beta)** Erkennt und behebt Probleme mit Best Practices für AEM, der Code-Qualität und der Korrektheit in Ihrem lokalen Projekt, meldet Ergebnisse und führt chirurgische Korrekturen durch |
 
 ### Kenntnisse installieren {#install-skills}
 
-Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [&#x200B; Anleitung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
+Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [ Anleitung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
 
 #### Claude Code {#claude-code}
 
@@ -94,7 +95,7 @@ gh upskill adobe/skills --path plugins/aem/cloud-service --all
 
 Öffnen Sie nach der Installation der Kenntnisse Ihren KI-Assistenten in jedem AEM as a Cloud Service-Projekt, das noch keine `AGENTS.md` hat. Die Kenntnisse werden automatisch vor der Verarbeitung Ihrer ersten Anfrage ausgeführt, sodass beide Dateien im Projektstamm erstellt werden, ohne dass ein expliziter Aufruf erforderlich ist.
 
-### Verwenden der Create-component Skill {#use-the-create-component-skill}
+### Verwenden der Create-component SKILL {#use-the-create-component-skill}
 
 Bei der ersten Verwendung erkennt die Kenntnis automatisch `project`, `package` und `group` aus `pom.xml` und vorhandenen Komponenten und fordert Sie auf, die erkannten Werte zu bestätigen. Anschließend wird `.aem-skills-config.yaml` im Projektstamm erstellt. Vor der ersten Verwendung ist keine manuelle Konfiguration erforderlich.
 
@@ -125,7 +126,7 @@ CTA Link (ctaLink) - Pathfield
 
 Der Agent wiederholt die Feldspezifikation zur Bestätigung und generiert dann alle Komponentendateien. Zu den unterstützten Mustern gehören Mehrfachfeld- mit zusammengesetzten verschachtelten Elementen, bedingte Einblenden-/Ausblenden-Logik, Kernkomponenten-Erweiterung über Sling Resource Merger und JUnit 5-Tests mit AEM Mocks. Das Design kann aus verschiedenen Quellen stammen, darunter eine Textbeschreibung, ein Bild oder eine Figma Design URL unter Verwendung des MCP-Servers von Figma.
 
-Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Verwenden der Migrationsfertigkeit {#use-the-migration-skill}
 
@@ -153,6 +154,36 @@ Rufen Sie die Dispatcher-Kenntnisse für alle Dispatcher- oder Apache HTTPD-Konf
 Bei allgemeinen oder erstmaligen Anfragen beginnen Sie mit der `workflow-orchestrator` Unterqualifikation. Beschreiben Sie für zielgerichtete Arbeiten das spezifische Anliegen und die Qualifikationswege zum entsprechenden Spezialisten.
 
 Die Dispatcher-Kenntnisse umfassen die Orchestrierung und Beratung. Der Dispatcher MCP-Server, der im folgenden Abschnitt beschrieben wird, stellt die sieben Validierungs- und Laufzeittools bereit, die die Qualifikation verwendet, wenn sie lokale Beweise benötigt.
+
+### Code-Bewertungsfähigkeiten verwenden {#use-the-code-assessment-skill}
+
+**(Beta)** Die `code-assessment`-Kenntnisse erkennen, überprüfen und beheben Probleme mit der Code-Qualität und -Korrektheit in einem AEM as a Cloud Service-Projekt vollständig innerhalb Ihres lokalen Arbeitsbereichs. Beschreiben Sie das Problem, und die Qualifikation leitet die Anfrage an den entsprechenden Workflow zur Behebung weiter.
+
+Zu den unterstützten Prüfungen gehören die Modernisierung der Sling-Modell-Abhängigkeitseinschleusung, die Aktualisierung veralteter Maven-Abhängigkeiten, das Hinzufügen fehlender Zeitüberschreitungswerte zu ausgehenden HTTP-Aufrufen, das Binden ungebundener Abfragen, Sling-Scheduler, Ressourcenänderungs-Listener, die Replikations- und Assets-APIs sowie JCR- oder OSGi-Ereignisverarbeitung mit mehr Hinweisen im Laufe der Zeit. Je nach Problem wendet die Kenntnis entweder direkt eine mechanische Korrektur an oder führt Sie durch eine, die einen Beurteilungsaufruf erfordert.
+
+Für eine umfassende oder Erstüberprüfung bitten Sie die SKILL, das gesamte Projekt zu bewerten: Es wird jeder Detektor ausgeführt, alle Ergebnisse werden gemeldet und der Code behebt ein Muster nach dem anderen.
+
+Öffnen Sie zunächst einen neuen Agent-Chat in Ihrem AEM as a Cloud Service-Projekt.
+
+**1. Überprüfen Sie Ihr Projekt.** Einen Bericht anfordern. Die SKILL führt ihren Analyzer aus und gibt die Ergebnisse inline zurück, gruppiert nach Muster und Schweregrad, mit einem vorgeschlagenen Plan zur Mängelbehebung. Zu diesem Zeitpunkt wird kein Code geändert.
+
+```
+scan my AEM project and report any code-quality issues
+```
+
+Für einen expliziteren Aufruf benennen Sie die Qualifikation direkt:
+
+```
+/code-assessment review my code for AEM as a Cloud Service issues
+```
+
+**2. Fehlerbehebungen einzeln anwenden.** Bitten Sie die Kenntnis, ein bestimmtes Muster zu korrigieren. Es nimmt chirurgische Bearbeitungen vor und überprüft, ob sie kompiliert wurden. Mechanische Korrekturen gelten direkt; geführte Korrekturen führen Sie durch jede Entscheidung.
+
+```
+apply unbounded-query
+```
+
+Es übergibt niemals einen Commit oder einen Push - man überprüft den Diff und übernimmt. Große Fehlerbehebungen werden in wiederverwendbaren Batches ausgeführt. Antworten Sie `apply <pattern>`, um fortzufahren.
 
 ## AEM QuickStart MCP-Server {#aem-quickstart-mcp-server}
 
@@ -223,7 +254,7 @@ Der Dispatcher MCP-Server ist im Paket mit dem AEM Dispatcher SDK enthalten. Dad
 
 Anders als die Dispatcher-Kenntnisse stellt der Dispatcher MCP-Server nur Tools bereit: sieben MCP-Tools und keine Eingabeaufforderungen oder Ressourcen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491968?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
 
 ### Voraussetzungen {#prerequisites}
 
