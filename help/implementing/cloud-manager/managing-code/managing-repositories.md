@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Cloud Manager Ihre Git-Repositorys hinzuf�
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 188201dfaececb21d373450711eb206b8e2323e2
+source-git-commit: c1e63069e215e275ee6048d50496f4e0010d2da1
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 68%
+source-wordcount: '892'
+ht-degree: 65%
 
 ---
 
@@ -31,7 +31,7 @@ Jede Pipeline ist mit einem primären Repository oder einer primären Verzweigun
 
 Die Seite **Repositorys** zeigt Details zum ausgewählten Repository an. Diese Informationen umfassen den Typ des verwendeten Repositorys. Wenn das Repository als **Adobe** gekennzeichnet ist, bedeutet dies, dass es sich um ein von Adobe verwaltetes Repository handelt. Wenn es als **GitHub** gekennzeichnet ist, bezieht es sich auf ein privates GitHub-Repository, das Sie verwalten. Darüber hinaus enthält die Seite Details wie den Zeitpunkt der Erstellung des Repositorys und die damit verbundenen Pipelines.
 
-Um eine Aktion auf ein ausgewähltes Repository anzuwenden, können Sie auf das Repository klicken und das Symbol ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) verwenden, um ein Dropdown-Menü zu öffnen. Für von Adobe verwaltete Repositorys können Sie **[Verzweigungen überprüfen/Projekt erstellen](#check-branches)**.
+Um ein ausgewähltes Repository zu verwalten, klicken Sie auf das Repository und verwenden Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)Symbol, um ein Dropdown-Menü zu öffnen. Für von Adobe verwaltete Repositorys können Sie **[Verzweigungen überprüfen/Projekt erstellen](#check-branches)**.
 
 ![Repository-Aktionen](assets/repository-actions.png)
 *Dropdown-Menü auf der Seite „Repositorys“.*
@@ -66,13 +66,13 @@ Hilfe bei der Auswahl zwischen der privaten und der externen Repository-Methode 
 
 ### Hinzufügen eines Nicht-Adobe-Repositorys {#add-non-adobe-repositories}
 
-Wenn Sie Ihren Code außerhalb von Adobe hosten, hängen sowohl die Anleitungsseite als auch die Methode zur Eigentümervalidierung davon ab, wo das Repository gehostet wird. Verwenden Sie die folgende Tabelle, um den richtigen Pfad auszuwählen.
+Wenn Sie Ihren Code außerhalb von Adobe hosten, hängen sowohl die Anleitungsseite als auch die Methode zur Eigentümervalidierung davon ab, wo das Repository gehostet wird. Verwenden Sie die folgende Tabelle, um die richtige Option auszuwählen.
 
 | Wo Ihr Repository gehostet wird | Validierungsmethode | Seite mit den zu verwendenden Anweisungen |
 | --- | --- | --- |
 | `github.com` (alle GitHub-Pläne wie Free, Pro, Team oder Enterprise Cloud) | Adobe GitHub-App und eine Geheimdatei. Kein Webhook erforderlich. | [Ein privates GitHub-Repository in Cloud Manager hinzufügen](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server (selbst gehostet) | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| GitLab, Bitbucket oder Azure DevOps | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| GitLab, Bitbucket oder Azure DevOps | Persönliches Zugriffstoken und Webhook | [Hinzufügen externer Repositorys in Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## Zugriff auf Repository-Informationen {#repo-info}

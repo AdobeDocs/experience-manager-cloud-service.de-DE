@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
+source-git-commit: acc4f8187a8bf87168dc568df4470ae460af9016
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 70%
 
 ---
 
@@ -19,14 +19,14 @@ Erfahren Sie, wie Sie mithilfe der Self-Service-Verwaltung der Git-Repositorys �
 
 ## Zugreifen auf Repository-Informationen von der Übersichtsseite aus {#overview-page}
 
-Cloud Manager macht es Ihnen leicht, Ihre Repository-Zugriffsinformationen für von Adobe verwaltete Repositorys abzurufen, indem Sie auf der Karte **Pipelines** die Option **Auf Repository-Informationen zugreifen** verwenden.
+Mit Cloud Manager können Sie Ihre Repository-Zugriffsinformationen für von Adobe verwaltete Repositorys über **Auf Repository-Informationen zugreifen** von der Karte **Pipelines** abrufen.
 
 Das Dialogfeld **Repository-Informationen** zeigt Ihnen die folgenden Zugriffsinformationen für von Adobe verwaltete Repositorys:
 
 * Den Git-Benutzernamen.
 * Das Git-Kennwort.
 * Die URL zum Git-Repository von Cloud Manager.
-* Vordefinierte Git-Befehle zum schnellen Hinzufügen einer Remote-Verbindung zu Ihrem Git-Repository und Push-Code.
+* Vordefinierte Git-Befehle zum Hinzufügen einer Remote-Instanz zu Ihrem Git-Repository und Push-Code.
 
   ![Fenster „Repository-Informationen“](assets/repository-info.png)
 
@@ -42,7 +42,7 @@ Die Funktion **Auf Repository-Informationen zugreifen** ist für Benutzende mit 
 
    ![„Auf Repository-Informationen zugreifen“ auf der Karte „Pipelines“](assets/pipelines-card.png)
 
-1. Um auf das Kennwort zugreifen zu können, muss ein neues Kennwort generiert werden. Wählen Sie im Dialogfeld **Repository-Informationen** die Option **Kennwort generieren**.
+1. Um auf das Kennwort zuzugreifen, müssen Sie ein neues generieren. Wählen Sie im Dialogfeld **Repository-Informationen** die Option **Kennwort generieren**.
 
 1. Klicken Sie im Bestätigungsdialogfeld auf **Kennwort generieren**.
 
@@ -51,8 +51,8 @@ Die Funktion **Auf Repository-Informationen zugreifen** ist für Benutzende mit 
 1. Klicken Sie rechts neben dem Feld **Kennwort** auf das Symbol ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg), um das Kennwort in die Zwischenablage zu kopieren.
 
    * Durch das Generieren eines Kennworts wird das vorherige Kennwort ungültig.
-   * Cloud Manager speichert das Kennwort nicht. Es liegt in Ihrer Verantwortung, das Kennwort sicher zu speichern.
-   * Da Cloud Manager das Kennwort nicht speichert, müssen Sie ein neues Kennwort generieren, wenn Sie Ihr Kennwort verlieren.
+   * Cloud Manager speichert das Kennwort nicht. Speichern Sie das Kennwort sicher.
+   * Da Cloud Manager das Kennwort nicht speichert, müssen Sie ein neues generieren, wenn Sie es verlegen.
 
    ![Kennwort im Dialogfeld „Repository-Informationen“ kopieren](/help/implementing/cloud-manager/managing-code/assets/repository-copy-password.png)
 
@@ -66,4 +66,4 @@ Die Funktion **Auf Repository-Informationen zugreifen** ist auch von der Seite [
 
 Sie können jederzeit ein Zugangskennwort sperren lassen.
 
-[Erstellen Sie hierzu für diese Anfrage ein entsprechendes Support-Ticket](https://experienceleague.adobe.com/de?lang=de&support-solution=Experience+Manager&support-tab=home#support). Das Ticket wird mit hoher Priorität behandelt und die Sperrung erfolgt normalerweise innerhalb eines Tages.
+[Erstellen Sie hierzu für diese Anfrage ein entsprechendes Support-Ticket](https://experienceleague.adobe.com/?lang=de&support-solution=Experience+Manager&support-tab=home#support). Das Ticket wird mit hoher Priorität bearbeitet und das Passwort wird in der Regel innerhalb von 24 Stunden widerrufen.
