@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie schnelle Entwicklungsumgebungen für schnelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: b50c28965c2f98dee126b183055499a4de8e6a06
+source-git-commit: d4fc40740fe21296d82afb875f41c577c87a02c6
 workflow-type: tm+mt
-source-wordcount: '6004'
+source-wordcount: '6002'
 ht-degree: 85%
 
 ---
@@ -711,7 +711,7 @@ Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umge
 ## Momentaufnahmen {#snapshots}
 
 >[!NOTE]
->RDE-Momentaufnahmen werden Anfang Juni in der öffentlichen Beta-Version veröffentlicht. Zu diesem Zeitpunkt kann sie durch eine Aktualisierung auf das neueste API-Plug-in aktiviert werden.
+>RDE-Momentaufnahmen befinden sich in der öffentlichen Beta-Phase und können daher aktiviert werden, indem auf das neueste aio-Plug-in aktualisiert wird, ohne dass Adobe kontaktiert werden muss.
 >
 >Durch die Verwendung der RDE-Snapshots-Beta erkennen Sie an, dass sie sich noch in der Entwicklung befindet und dass Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit von Daten verlassen sollten. Obwohl wir diese Funktion ausführlich getestet haben, besteht eine geringe Möglichkeit, dass Ihre RDE instabil wird. In diesem Fall wird sie durch Zurücksetzen wieder in den Betriebszustand versetzt.
 >Wir freuen uns über Feedback unter [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).

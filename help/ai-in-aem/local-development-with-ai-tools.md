@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 32461fe79a72c2a5d83fd3518d84807427112763
+source-git-commit: 89b0405ff170b17d8d6e26d035ebeed3ab361f4c
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2156'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,10 @@ Vier einander ergänzende Komponenten befassen sich damit:
 | **AEM-Schnellstart für lokalen MCP-Server** | Zeigt Live-Laufzeitdaten aus einer lokalen AEM SDK-Instanz zur Fehlerbehebung an |
 | **Lokaler Dispatcher-MCP-Server** | Ermöglicht die Laufzeitvalidierung und -überprüfung einer lokalen Dispatcher-Instanz |
 
-In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
+In den [KI-unterstützten Entwicklungs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)Tutorials finden Sie zusätzliche praktische Anweisungen.
+
+Senden Sie eine E-Mail an [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) mit Feedback, um die Produktentwicklung mitzugestalten.
+
 
 >[!TIP]
 >
@@ -62,7 +65,7 @@ Adobe veröffentlicht AEM as a Cloud Service-Kenntnisse im **[Adobe/Skills](http
 
 ### Kenntnisse installieren {#install-skills}
 
-Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [&#x200B; Anleitung finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
+Wählen Sie die Methode aus, die Ihrem KI-Kodierungstool entspricht. Durch das Installieren von Kenntnissen werden diese für alle Projekte auf diesem Computer verfügbar. Eine [ Anleitung finden Sie ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) Tutorial zum Einrichten von AEM Agent-.
 
 #### Claude Code {#claude-code}
 
@@ -126,7 +129,7 @@ CTA Link (ctaLink) - Pathfield
 
 Der Agent wiederholt die Feldspezifikation zur Bestätigung und generiert dann alle Komponentendateien. Zu den unterstützten Mustern gehören Mehrfachfeld- mit zusammengesetzten verschachtelten Elementen, bedingte Einblenden-/Ausblenden-Logik, Kernkomponenten-Erweiterung über Sling Resource Merger und JUnit 5-Tests mit AEM Mocks. Das Design kann aus verschiedenen Quellen stammen, darunter eine Textbeschreibung, ein Bild oder eine Figma Design URL unter Verwendung des MCP-Servers von Figma.
 
-Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+Weitere Informationen erhalten Sie im Tutorial [Komponentenentwicklung mit AEM Agent-Kenntnissen“](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Verwenden der Migrationsfertigkeit {#use-the-migration-skill}
 
@@ -155,11 +158,15 @@ Bei allgemeinen oder erstmaligen Anfragen beginnen Sie mit der `workflow-orchest
 
 Die Dispatcher-Kenntnisse umfassen die Orchestrierung und Beratung. Der Dispatcher MCP-Server, der im folgenden Abschnitt beschrieben wird, stellt die sieben Validierungs- und Laufzeittools bereit, die die Qualifikation verwendet, wenn sie lokale Beweise benötigt.
 
-### Code-Bewertungsfähigkeiten verwenden {#use-the-code-assessment-skill}
+### Kenntnisse zur Code-Bewertung verwenden (Beta) {#use-the-code-assessment-skill}
 
-**(Beta)** Die `code-assessment`-Kenntnisse erkennen, überprüfen und beheben Probleme mit der Code-Qualität und -Korrektheit in einem AEM as a Cloud Service-Projekt vollständig innerhalb Ihres lokalen Arbeitsbereichs. Beschreiben Sie das Problem, und die Qualifikation leitet die Anfrage an den entsprechenden Workflow zur Behebung weiter.
+>Diese Funktion ist **Beta**. Adobe empfiehlt Ihnen, Feedback zu geben, indem Sie [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) per E-Mail versenden, um die Produktentwicklung zu gestalten.
+>
+>Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (durch Adobe Support Services oder anderweitig). Adobe empfiehlt Kunden, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
 
-Zu den unterstützten Prüfungen gehören die Modernisierung der Sling-Modell-Abhängigkeitseinschleusung, die Aktualisierung veralteter Maven-Abhängigkeiten, das Hinzufügen fehlender Zeitüberschreitungswerte zu ausgehenden HTTP-Aufrufen, das Binden ungebundener Abfragen, Sling-Scheduler, Ressourcenänderungs-Listener, die Replikations- und Assets-APIs sowie JCR- oder OSGi-Ereignisverarbeitung mit mehr Hinweisen im Laufe der Zeit. Je nach Problem wendet die Kenntnis entweder direkt eine mechanische Korrektur an oder führt Sie durch eine, die einen Beurteilungsaufruf erfordert.
+Die `code-assessment` kann Probleme mit der Code-Qualität und -Korrektheit in einem AEM as a Cloud Service-Projekt vollständig innerhalb Ihres lokalen Arbeitsbereichs erkennen, überprüfen und beheben. Beschreiben Sie das Problem, und die Qualifikation leitet die Anfrage an den entsprechenden Workflow zur Behebung weiter.
+
+Zu den unterstützten Prüfungen gehören die Modernisierung der Sling-Modell-Abhängigkeitseinschleusung, die Aktualisierung veralteter Maven-Abhängigkeiten, das Hinzufügen fehlender Timeouts zu ausgehenden HTTP-Aufrufen, das Binden ungebundener Abfragen, Sling-Scheduler, Ressourcenänderungs-Listener, die Replikations- und Assets-APIs sowie JCR- oder OSGi-Ereignisverarbeitung sowie das Scannen und Beheben der Verwendung von [veralteten und entfernten AEM-APIs](/help/release-notes/deprecated-removed-features.md) mit mehr Hinzugefügten im Laufe der Zeit. Je nach Problem wendet die Kenntnis entweder direkt eine mechanische Korrektur an oder führt Sie durch eine, die einen Beurteilungsaufruf erfordert.
 
 Für eine umfassende oder Erstüberprüfung bitten Sie die SKILL, das gesamte Projekt zu bewerten: Es wird jeder Detektor ausgeführt, alle Ergebnisse werden gemeldet und der Code behebt ein Muster nach dem anderen.
 
@@ -175,6 +182,12 @@ Für einen expliziteren Aufruf benennen Sie die Qualifikation direkt:
 
 ```
 /code-assessment review my code for AEM as a Cloud Service issues
+```
+
+Um den Fokus auf ein einzelnes Muster zu legen, benennen Sie es in der Eingabeaufforderung:
+
+```
+scan my project for unbounded queries
 ```
 
 **2. Fehlerbehebungen einzeln anwenden.** Bitten Sie die Kenntnis, ein bestimmtes Muster zu korrigieren. Es nimmt chirurgische Bearbeitungen vor und überprüft, ob sie kompiliert wurden. Mechanische Korrekturen gelten direkt; geführte Korrekturen führen Sie durch jede Entscheidung.
@@ -244,17 +257,11 @@ Jeder MCP-Client kann eine Verbindung herstellen, indem er mit einem `Authorizat
 
 ## Dispatcher MCP-Server {#dispatcher-mcp-server}
 
->[!IMPORTANT]
->
->Diese Funktion ist **Beta**. Durch frühzeitigen Zugriff auf Funktionen, die Adobe entwickelt, können Kunden und Partner Feedback geben (per E-Mail an [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) und die Produktentwicklung mitgestalten. Außerdem erhalten sie Unterstützung bei der Vorbereitung auf die Einführung neuer Funktionen vor der allgemeinen Verfügbarkeit.
->
->Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (durch Adobe Support Services oder anderweitig). Adobe empfiehlt Kunden, Vorsicht walten zu lassen und sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder auf begleitende Dokumentationen oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
-
 Der Dispatcher MCP-Server ist im Paket mit dem AEM Dispatcher SDK enthalten. Dadurch können KI-Tools die Dispatcher- und Apache-HTTPD-Konfiguration überprüfen, die Verarbeitung von Trace-Anfragen verfolgen und das Cacheverhalten mit einer Dispatcher-Instanz überprüfen, die lokal in Docker ausgeführt wird.
 
 Anders als die Dispatcher-Kenntnisse stellt der Dispatcher MCP-Server nur Tools bereit: sieben MCP-Tools und keine Eingabeaufforderungen oder Ressourcen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491968?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
 
 ### Voraussetzungen {#prerequisites}
 
