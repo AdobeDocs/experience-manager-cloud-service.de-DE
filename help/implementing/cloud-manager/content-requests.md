@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f625c95a067b2a16f3a237b80005c4ea4cc6cd4d
+source-git-commit: 45fb44079ec9b999cc2cd82b8011b14eff3bcfe1
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 55%
+source-wordcount: '2276'
+ht-degree: 51%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 55%
 
 ## Einführung {#introduction}
 
-Inhaltsanfragen umfassen an AEM Sites gesendete Anfragen. Diese Anfragen können über Edge Delivery Services oder kundenseitig bereitgestellte Caching-Systeme wie ein Content Delivery Network (CDN) weitergeleitet werden. Diese Anfragen liefern strukturierte Daten im HTML- oder JSON-Format und unterstützen Seitenansichten (z. B. Seiten und Experience Fragments) oder JSON-Rückgaben über APIs (Headless).
+Inhaltsanfragen umfassen an AEM Sites gesendete Anfragen. Diese Anfragen werden über Edge Delivery Services oder vom Kunden bereitgestellte Caching-Systeme wie ein Content Delivery Network (CDN) weitergeleitet. Diese Anfragen liefern strukturierte Daten im HTML- oder JSON-Format und unterstützen Seitenansichten (z. B. Seiten und Experience Fragments) oder JSON-Rückgaben über APIs (Headless).
 
 Das System zählt die Inhaltsanfragen, wenn eine Benutzerin oder ein Benutzer eine Seite mithilfe von HTML oder JSON anzeigt. Es erfasst die Anfrage dort, wo das erste Caching-System sie erhält. Bestimmte HTTP-Anfragen werden beim Zählen von Inhaltsanfragen ein- bzw. ausgeschlossen. Siehe die vollständige Liste der [eingeschlossenen HTTP-Inhaltsanfragen](#included-content-requests) und der [ausgeschlossenen HTTP-Inhaltsanfragen](#excluded-content-requests).
 
@@ -35,7 +35,7 @@ AEM (Adobe Experience Manager) as a Cloud Service identifiziert Inhaltsanfragen 
 Anfragen für statische Assets wie JavaScript-Dateien, CSS-Stylesheets und Bilder werden nicht als Inhaltsanfragen gezählt.
 
 >[!NOTE]
->Wenn eine API-Anfrage HTML oder JSON zurückgibt, das als Inhalt auf Seitenebene dient (z. B. bei der Headless-Bereitstellung), kann sie je nach Kontext dennoch als Inhaltsanfrage gezählt werden.
+>Wenn eine API-Anfrage HTML oder JSON zurückgibt, das als Inhalt auf Seitenebene dient (z. B. bei der Headless-Bereitstellung), wird sie je nach Kontext als Inhaltsanfrage gezählt.
 
 Inhaltsanfragen werden unabhängig davon gemessen, ob die Antwort vom CDN-Cache bereitgestellt oder an die ursprüngliche AEM-Umgebung weitergeleitet wurde.
 
@@ -47,7 +47,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Abweichungen von Cloud Service-Inhaltsanfragen {#content-requests-variances}
 
-Inhaltsanfragen können Abweichungen von den Analyseberichts-Tools einer Organisation aufweisen, die in der folgenden Tabelle zusammengefasst sind. Vermeiden Sie im Allgemeinen die Verwendung von Analyse-Tools, die auf eine Client-seitige Instrumentation angewiesen sind, um die Anzahl der Inhaltsanfragen für eine Site zu melden. Bei diesen Tools wird häufig ein großer Teil des Traffics verpasst, da ihre Aktivierung von einer Benutzerzustimmung abhängt. Analyse-Tools, die Daten Server-seitig in Protokolldateien sammeln, oder CDN-Berichte für Kundinnen und Kunden, die zusätzlich zu AEM as a Cloud Service ihr eigenes CDN hinzufügen, bieten bessere Zählungen.
+Inhaltsanfragen können Abweichungen von den Analyseberichts-Tools einer Organisation aufweisen, die in der folgenden Tabelle zusammengefasst sind. Vermeiden Sie im Allgemeinen die Verwendung von Analyse-Tools, die auf eine Client-seitige Instrumentation angewiesen sind, um die Anzahl der Inhaltsanfragen für eine Site zu melden. Bei diesen Tools wird häufig ein großer Teil des Traffics verpasst, da ihre Aktivierung von einer Benutzerzustimmung abhängt. Analytics-Tools, die Daten Server-seitig in Protokolldateien erfassen, oder CDN-Berichte für Kunden, die ihr eigenes CDN zu AEM as a Cloud Service hinzufügen, bieten eine bessere Zählung.
 
 | Grund für die Abweichung | Erklärung |
 |---|---|
@@ -74,7 +74,7 @@ In der folgenden Tabelle sind die Typen der eingeschlossenen und ausgeschlossene
 ### Arten von enthaltenen Inhaltsanfragen {#included-content-requests}
 
 >[!NOTE]
->Wenn eine API-Anfrage eine HTML-Antwort zurückgibt, kann sie je nach Nutzungskontext als Inhaltsanfrage klassifiziert werden. API-Anfragen, die Nicht-UI-Daten zurückgeben, werden in der Regel ausgeschlossen.
+>Wenn eine API-Anfrage eine HTML-Antwort zurückgibt, wird sie je nach Nutzungskontext als Inhaltsanfrage klassifiziert. API-Anfragen, die Nicht-UI-Daten zurückgeben, werden in der Regel ausgeschlossen.
 
 | Abfragetyp | Inhaltsanfrage | Beschreibung |
 | --- | --- | --- |
@@ -107,20 +107,20 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie in [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, z. B. weil der Traffic das CDN erreicht. Als AEM-Kunde ist es hilfreich, wenn Sie Ihre Inhaltsanfragen überwachen und verwalten, damit Sie Ihr Lizenzbudget einhalten. Die Verwaltung von Inhaltsanfragen ist im Allgemeinen eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie in [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, z. B. weil der Traffic das CDN erreicht. Als AEM-Kunde ist es hilfreich, wenn Sie Ihre Inhaltsanfragen überwachen und verwalten, damit Sie Ihr Lizenzbudget einhalten. Die Verwaltung von Inhaltsanfragen ist eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
 * Stellen Sie sicher, dass alle Antworten vom Typ „Seite nicht gefunden“ mit dem HTTP-Status 404 zugestellt werden. Wenn sie mit dem Status 200 zurückgegeben werden, werden sie für Inhaltsanfragen gezählt.
 * Leiten Sie Konsistenzprüfungs- oder Überwachungs-Tools an die URL unter /system/probes/health oder verwenden Sie die HEAD-Methode anstelle von GET, um aufkommende Inhaltsanfragen zu vermeiden.
-* Schaffen Sie ein ausgewogenes Verhältnis zwischen Ihren Anforderungen an die Aktualität von Inhalten und den AEM-Lizenzkosten für alle benutzerdefinierten Such-Crawler, die Sie auf Ihrer Site integriert haben. Eine übermäßig aktive Crawler kann viele Inhaltsanfragen verbrauchen.
-* Behandeln Sie alle Weiterleitungen als Server-seitig (Status 301 oder 302) und nicht Client-seitig (Status 200 mit JavaScript-Weiterleitung), um zwei separate Inhaltsanfragen zu vermeiden.
-* Kombinieren oder reduzieren Sie API-Aufrufe, bei denen es sich um JSON-Antworten von AEM handelt, die geladen werden können, um die Seite zu rendern.
+* Schaffen Sie ein ausgewogenes Verhältnis zwischen Ihren Anforderungen an die Aktualität von Inhalten und den AEM-Lizenzkosten für alle benutzerdefinierten Such-Crawler, die Sie auf Ihrer Site integriert haben. Eine übermäßig aktive Crawler verbraucht viele Inhaltsanfragen.
+* Um zwei separate Inhaltsanfragen zu vermeiden, behandeln Sie alle Umleitungen als Server-seitig (Status 301 oder 302) und nicht Client-seitig (Status 200 mit JavaScript-Umleitung).
+* Kombinieren oder reduzieren Sie API-Aufrufe, bei denen es sich um JSON-Antworten von AEM handelt, die geladen werden, um die Seite zu rendern.
 * Stellen Sie sicher, dass der Benutzeragent des Browsers ordnungsgemäß an AEM übergeben wird. Dabei wird die oben beschriebene Ausschlussregel für Inhaltsanfragen von „bekannten Suchmaschinen“ verwendet. Manchmal geht der ursprüngliche Benutzeragent bei bestimmten Headless-Implementierungen oder CDN-Konfigurationen verloren. In diesem Fall kann der Ausschluss verhindert werden, was zu höheren Inhaltsanfragen führen kann, als wenn der Benutzeragent weitergeleitet würde.
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
+Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
 
 **Zu überwachende und zu protokollierende Elemente:**
 
@@ -163,4 +163,4 @@ trafficFilters:
 
 Ersetzen Sie die Beispielwerte durch den Länder-Code, den Netzwerk- oder Bot-Namen, den Sie sperren möchten. Siehe [Syntax von Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) und [Bedingungsstruktur](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) für weitere Optionen.
 
-Einige Bots können eine Website an einem Tag mit Traffic überlasten und dann am nächsten Tag verschwinden. Eine solche Funktionalität kann jeden Versuch, eine bestimmte IP-Adresse oder einen Benutzeragenten zu blockieren, vereiteln. Ein generischer Ansatz besteht in der Einführung einer [Regel für Limits](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Sehen Sie sich die [Beispiele](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) an und erstellen Sie eine Regel, die Ihrer Toleranz für eine schnelle Anfragerate entspricht. Überprüfen Sie die [Bedingungsstruktur](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure)-Syntax für alle Ausnahmen, die Sie möglicherweise zulassen möchten, um eine allgemeine Ratenbeschränkung festzulegen.
+Einige Bots können eine Website an einem Tag mit Traffic überlasten und dann am nächsten Tag verschwinden. Solche Funktionen können alle Versuche erschweren, eine bestimmte IP-Adresse oder einen Benutzeragenten zu blockieren. Ein generischer Ansatz besteht in der Einführung einer [Regel für Limits](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Sehen Sie sich die [Beispiele](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) an und erstellen Sie eine Regel, die Ihrer Toleranz für eine schnelle Anfragerate entspricht. Überprüfen Sie die [Bedingungsstruktur](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure)-Syntax für alle Ausnahmen, die Sie einer allgemeinen Ratenbeschränkung gestatten.
