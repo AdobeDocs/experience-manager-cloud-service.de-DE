@@ -5,10 +5,10 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81b78ba9668d1c5530d2f6d6f443038549152aa3
+source-git-commit: 884f991bbc067b8c2d628600c18a89e5950df17c
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 81%
+source-wordcount: '473'
+ht-degree: 67%
 
 ---
 
@@ -46,9 +46,9 @@ Das Liniendiagramm eines ausgewählten Jahres enthält Datenpunkte für jeden Mo
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Bewegen Sie den Cursor über einen Datenpunkt im Liniendiagramm, um die spezifischen Werte für diesen Punkt anzuzeigen.
+   * Um die spezifischen Werte für einen Datenpunkt anzuzeigen, bewegen Sie den Cursor im Liniendiagramm darüber.
    * Klicken Sie unter dem Jahr des Liniendiagramms auf das Symbol **Herunterladen**, um eine PNG-Bilddatei des Liniendiagramms zu speichern.
-   * Klicken Sie auf den Namen einer Metrik, um nur die Daten dieser Metrik anzuzeigen. Oder drücken Sie auf der Tastatur auf `Shift`, während Sie einen oder mehrere Metriknamen auswählen oder die Auswahl für Metriknamen aufheben.
+   * Klicken Sie auf einen Metriknamen, um die Daten dieser Metrik anzuzeigen. Alternativ können Sie `Shift` auf der Tastatur gedrückt halten, während Sie einen oder mehrere Metriknamen auswählen oder die Auswahl aufheben.
 
 ## Ereignisanalyse {#event-analysis}
 
@@ -60,12 +60,12 @@ Für jeden Vorfall werden Zeitraum und Ursache mitsamt Kommentaren angegeben.
 
 ## Aktualisierungsintervall von SLA-Berichten {#refresh}
 
-Die SLA-Berichterstellung gibt Ihnen einen Einblick in die Leistung Ihrer AEM-Produktionsumgebung und ist aktuell, aber nicht sofort verfügbar. Die Erstellung von SLA-Berichten erfolgt monatlich und wird für neue Programme generiert, die als `Production previous month` gekennzeichnet sind. Die Berichterstellung erfolgt nicht sofort. Beachten Sie aufgrund dieser Verzögerung bei der Überprüfung Ihres SLA-Berichts Folgendes:
+Die SLA-Berichterstellung enthält Informationen zur Leistung Ihrer AEM-Produktionsumgebung und ist aktuell, jedoch nicht sofort verfügbar. Die Erstellung von SLA-Berichten erfolgt monatlich und wird für neue Programme generiert, die als `Production previous month` gekennzeichnet sind. Es ist nicht sofort. Beachten Sie aufgrund dieser Verzögerung bei der Überprüfung Ihres SLA-Berichts Folgendes:
 
 * Das SLA, zu dem der Bericht erstellt wird, ist dasjenige, das zu Beginn des Monats bestand, auch wenn sich das SLA im Laufe des Monats geändert hat.
 * Wenn es zu Beginn des Monats kein SLA gab, weil das Programm nicht existierte, gilt das SLA, das zum Zeitpunkt der Erstellung des Programms existierte.
 
 ## Vorschau-Umgebungen {#preview}
 
-Die Vorschau-Umgebung ist als Tool für Autorinnen und Autoren von Inhalten gedacht, um das endgültige Erlebnis des Inhalts vor der Veröffentlichung zu überprüfen. Aufgrund dieser Funktion sind Vorschauumgebungen nicht mit hoher Verfügbarkeit konzipiert und verfügen nicht über eine zugehörige SLA.
+Die Vorschauumgebung ist als Tool für Inhaltsautoren gedacht, um die Inhalte vor der Veröffentlichung zu überprüfen. Aufgrund dieser Funktion sind Vorschauumgebungen nicht mit hoher Verfügbarkeit konzipiert und verfügen nicht über eine zugehörige SLA.
 
