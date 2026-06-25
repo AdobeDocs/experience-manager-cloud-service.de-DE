@@ -4,9 +4,9 @@ description: Erfahren Sie, wie der Entwicklungsagent in AEM fehlgeschlagene Pipe
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: fb0eaf8173b0cb5c81062424dbdfa723319df539
+source-git-commit: 8495dd5cc4629dd960f6c5c31d9d50c126d6d750
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1542'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ Es unterstützt die folgenden Aufträge, auf die über die Konversationsoberflä
 
 * Cloud Manager-Vorgang: Nur-Lese-Vorgänge, einschließlich der Auflistung von Programmen und Umgebungen und des Pipeline-Status
 * Pipeline-Fehlerbehebung: Pipelines debuggen fehlgeschlagen
-* Ruhezeiten und Verwaltung freier Zeiträume aktualisieren (eingeschränkte Verfügbarkeit): Ruhestunden anzeigen, erstellen und bearbeiten und Freie Zeiträume aktualisieren
+* Ruhezeiten und Verwaltung freier Zeiträume aktualisieren Auftrag: Ruhestunden anzeigen, erstellen und bearbeiten und Freie Zeiträume aktualisieren
 * Fehlerbehebung bei Replikationsproblemen (Beta): Beheben Sie replikationsbezogene Probleme, z. B. blockierte Warteschlangen.
 
 >[!NOTE]
@@ -61,10 +61,6 @@ Hier finden Sie Informationen zu Ihren AEM-Programmen und -Umgebungen, einschlie
 
 
 ## Ruhestunden und Aktualisieren von Freie Zeiträume Management Job {#control-updates-job}
-
->[!AVAILABILITY]
->
->Diese Funktion befindet sich in der Phase der eingeschränkten Verfügbarkeit und wird in den nächsten Wochen eingeführt. E-Mail [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) für sofortigen Zugriff.
 
 Ruhestunden anzeigen, erstellen und bearbeiten und Freizeiten aktualisieren direkt über den AEM AI-Assistenten.
 
