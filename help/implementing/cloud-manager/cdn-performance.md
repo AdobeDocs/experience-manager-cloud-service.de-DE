@@ -5,10 +5,10 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 91b880dcff55531c49229eb034348ad9cf91dca2
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 100%
+source-wordcount: '355'
+ht-degree: 78%
 
 ---
 
@@ -32,7 +32,7 @@ Das CDN-Dashboard ist auf der Übersichtsseite jedes Programms verfügbar.
 
    ![Seite „Meine Programme“](assets/my-programs.png)
 
-1. Scrollen Sie auf der Seite **Programmübersicht** Ihres Programms nach unten unter die Karten **Umgebungen** und **Pipelines**, um die Karte **Leistung** zu sehen.
+1. Um die Karte **Leistung** anzuzeigen, scrollen Sie auf der Seite **Programmübersicht** unter den Karten **Umgebungen** und **Pipelines**.
 
    ![Leistung](assets/cdn-performance-overview.png)
 
@@ -52,11 +52,11 @@ Für Vorschläge zur Verbesserung der CDN-Leistung wählen Sie die Registerkarte
 
 ![CDN-Empfehlungen](assets/cdn-performance-recommendations.png)
 
-Klicken Sie auf den Pfeil neben einer Empfehlung in der Liste, um Details zu den zu ergreifenden Verbesserungsmaßnahmen und zur Ursache des Problems anzuzeigen.
+Klicken Sie auf den Pfeil neben einer Empfehlung in der Liste, um Details zu den erforderlichen Verbesserungsschritten und zur Ursache des Problems anzuzeigen.
 
 ## Cache-Trefferdefinition {#cache-hit}
 
-Das Cache-Trefferverhältnis ist eine Maßeinheit dafür, wie viele Inhaltsanfragen ein Cache erfolgreich füllen kann, im Vergleich zu wie vielen Anforderungen er erhält. Je höher das Cache-Trefferverhältnis ist, desto besser ist die Leistung eines CDN.
+Das Cache-Trefferverhältnis ist eine Maßeinheit dafür, wie viele Inhaltsanfragen ein Cache erfolgreich füllen kann, im Vergleich zu wie vielen Anforderungen er erhält. Eine höhere Cache-Trefferquote bedeutet eine bessere CDN-Leistung.
 
 >[!TIP]
 >
@@ -68,7 +68,7 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 
 * **Hit**: Daten werden aus dem Cache angefordert und gefunden.
 * **Miss**: Daten werden aus dem Cache angefordert, aber nicht gefunden.
-* **Pass**: Daten werden aus dem Cache angefordert und er so ist eingestellt, dass diese Daten auf keinen Fall zwischengespeichert werden.
+* **Übergeben** - Daten werden aus dem Cache angefordert und es wird festgelegt, dass diese Daten nicht zwischengespeichert werden.
 * **Other**: Alle Datenanforderungen aus dem Cache, für die nichts der obigen der Fall ist.
 
 Cache-Metriken werden alle 24 Stunden aktualisiert.
