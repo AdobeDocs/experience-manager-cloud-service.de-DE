@@ -27,7 +27,7 @@ Dies sind die Versionshinweise für die Version 25. Juni 2026 des universellen E
 ## Neue Funktionen {#what-is-new}
 
 * Die Symbolleiste **eine neue Schaltfläche** In Site-Admin öffnen, um auf die AEM Sites-Konsole zuzugreifen.
-   * Dadurch werden die Funktionen der ehemaligen **AEM Site Admin-Erweiterung** Erweiterung[ nativ ](/help/implementing/universal-editor/extending.md) universellen Editor integriert.
+   * Dadurch werden die Funktionen der ehemaligen **AEM Site Admin-Erweiterung** Erweiterung[&#x200B; nativ &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor integriert.
    * Die Schaltfläche öffnet die aktuelle AEM-Seite in der [Sites-Konsole](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) oder der [Experience Fragments-](/help/sites-cloud/authoring/fragments/experience-fragments.md) für `/content/experience-fragments` Pfade.
    * Die Schaltfläche ist für DAM-Pfade (`/content/dam`) ausgeblendet und wenn keine eindeutige AEM-Seite aus den aktuellen bearbeitbaren Elementen ermittelt werden kann.
 * Tastaturbefehle für einzelne Zeichen funktionieren jetzt besser mit Barrierefreiheitstechnologien.
