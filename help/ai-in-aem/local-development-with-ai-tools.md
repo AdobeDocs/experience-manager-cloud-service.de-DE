@@ -254,7 +254,7 @@ Der Dispatcher MCP-Server ist im Paket mit dem AEM Dispatcher SDK enthalten. Dad
 
 Anders als die Dispatcher-Kenntnisse stellt der Dispatcher MCP-Server nur Tools bereit: sieben MCP-Tools und keine Eingabeaufforderungen oder Ressourcen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491968?captions=ger&quality=12&learn=on)
 
 ### Voraussetzungen {#prerequisites}
 
