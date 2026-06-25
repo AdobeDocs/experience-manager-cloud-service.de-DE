@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
 source-wordcount: '7545'
 ht-degree: 84%
@@ -1117,9 +1117,9 @@ ht-degree: 84%
    + [Generieren von AFP-Output mithilfe der AEM Forms-API](/help/forms/document-generation-afp-api.md)
    + {hide-from-toc}[OAuth Server-zu-Server-Authentifizierung](/help/forms/oauth-api-authetication.md)
    + {hide-from-toc}[JWT(JSON Web Token) Server-zu-Server-Authentifizierung](/help/forms/jwt-api-authentication.md)
-   + [Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
-   + [Verwenden von Forms Designer, um Vorlagen zu erstellen](/help/forms/use-forms-designer.md)
-   + [Ändern des Inhalts auf Seite Null in Designer](/help/forms/changing-page-zero-content-designer.md)
+   + {hide-from-toc}[Installieren und Konfigurieren von Forms Designer](/help/forms/installing-configuring-designer.md)
+   + {hide-from-toc}[Verwenden von Forms Designer zum Erstellen von Vorlagen](/help/forms/use-forms-designer.md)
+   + {hide-from-toc}[Ändern des Inhalts auf Seite Null in Designer](/help/forms/changing-page-zero-content-designer.md)
    + [Verwenden benutzerdefinierter Schriftarten in PDF-Dokumenten](/help/forms/use-custom-fonts.md)
    + [Liste der unterstützten Schriftarten in PDF-Dokumenten](/help/forms/supported-out-of-the-box-fonts.md)
    + [Bekannte Probleme, Best Practices und häufig gestellte Fragen](/help/forms/communications-known-issues-limitations.md)
