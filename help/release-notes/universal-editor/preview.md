@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
+source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 25. Juni 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 2. Juli 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,13 +28,10 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Künftige Funktionen {#upcoming-features}
 
-* Der Symbolleiste wurde eine neue Schaltfläche hinzugefügt, um auf die AEM Sites-Konsole zuzugreifen.
-   * Dadurch werden die Funktionen der ehemaligen **AEM Site Admin-Erweiterung** Erweiterung[&#x200B; nativ &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor integriert.
-   * Die Schaltfläche öffnet die aktuelle AEM-Seite in der [Sites-Konsole](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) oder der [Experience Fragments-](/help/sites-cloud/authoring/fragments/experience-fragments.md) für `/content/experience-fragments` Pfade.
-   * Die Schaltfläche ist für DAM-Pfade (`/content/dam`) ausgeblendet und wenn keine eindeutige AEM-Seite aus den aktuellen bearbeitbaren Elementen ermittelt werden kann.
-* Tastaturbefehle mit einzelnen Zeichen funktionieren jetzt besser mit Barrierefreiheitstechnologien.
+* Der Editor unterstützt jetzt ein `preview`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags), um das Laden des Editors im [Vorschaumodus“ zu erzwingen](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+* Der Editor unterstützt jetzt ein `readonly`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags) zum Deaktivieren der Bearbeitung, sodass Benutzende weiterhin eine beliebige Komponente auswählen, den Inhalt jedoch nicht ändern können.
 
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Zahlreiche Schaltflächen haben jetzt korrekt barrierefreie Namen.
-* Ein Problem mit der Beibehaltung bestimmter Inhaltsfragmente nach ihrer Auswahl mit einer Auswahl wurde behoben.
+* Die Barrierefreiheit von Überschriftenhierarchien wurde verbessert.
+* Es wurden Verbesserungen an der Barrierefreiheit vorgenommen, damit der Fokus in der Positionsleiste ordnungsgemäß bleibt, um die Tastaturnavigation des Editors zu erleichtern.

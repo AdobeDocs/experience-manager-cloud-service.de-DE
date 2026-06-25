@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
+source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
 workflow-type: tm+mt
-source-wordcount: '3149'
-ht-degree: 65%
+source-wordcount: '3165'
+ht-degree: 63%
 
 ---
 
@@ -143,7 +143,7 @@ Der Rich-Text-Editor (RTE) des universellen Editors ermöglicht es dem Autor, st
 * **Alle Formatierungen entfernen**
    * Entfernen Sie alle Formatierungsoptionen aus dem ausgewählten Text.
 
-Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [&#x200B; Dokument „Konfigurieren des RTE für &#x200B;](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
+Je nach Back-End können die standardmäßig verfügbaren Optionen variieren. Der RTE kann so konfiguriert werden, dass Optionen je nach Anforderungen der Autoren ausgeblendet oder zusätzliche Optionen angezeigt werden. Weitere Informationen finden Sie [ Dokument „Konfigurieren des RTE für ](/help/implementing/universal-editor/configure-rte.md) universellen Editor“.
 
 ### Bearbeiten von Medien {#edit-media}
 
@@ -160,7 +160,7 @@ Sie können die Details im [Bedienfeld „Eigenschaften“](/help/sites-cloud/au
 
 ### Bearbeiten von Inhaltsfragmenten {#edit-content-fragment}
 
-Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Wenn Sie ein [Inhaltsfragment](/help/sites-cloud/administering/content-fragments/overview.md) auswählen, können Sie dessen Details im [Eigenschaftenbereich“ ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Bearbeiten von Inhaltsfragmenten](assets/ue-edit-cf.png)
 
@@ -237,7 +237,7 @@ Die Komponente wird dupliziert und unterhalb der ausgewählten Komponente eingef
    * Wählen Sie **Eigenschaftenbedienfeld das** „Löschen“ aus.
 
      ![Löschen einer Komponente](assets/ue-delete-component.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Löschen“ aus.
+   * Wählen Sie **Kontextmenü die Option**Löschen“ aus.
      ![Löschen aus dem Kontextmenü](assets/delete-from-context-menu.png)
 
 Die ausgewählte Komponente wird gelöscht.
@@ -280,7 +280,7 @@ Die Komponente wird sowohl im Editor als auch in die Inhaltsstruktur verschoben.
 
 >[!NOTE]
 >
->Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [&#x200B; die Inhaltsstruktur](#reorder-content-tree)
+>Die Optionen im Kontextmenü können nur Komponenten innerhalb ihrer Container verschieben. Wenn Sie Komponenten zwischen Containern verschieben möchten, verwenden [ die Inhaltsstruktur](#reorder-content-tree)
 
 #### Verschieben von Komponenten mit der Inhaltsstruktur {#reorder-content-tree}
 
@@ -322,7 +322,7 @@ Das Kopieren und Einfügen kann auf derselben Browser-Registerkarte oder zwische
 1. Sie haben dann folgende Möglichkeiten:
    * Klicken Sie auf **Kopieren**-Symbol im [Eigenschaftenbereich.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![Aus Bedienfeld kopieren](assets/copy-from-panel.png)
-   * Wählen Sie **Kontextmenü die Option**&#x200B;Kopieren“ aus.
+   * Wählen Sie **Kontextmenü die Option**Kopieren“ aus.
      ![Aus Kontextmenü kopieren](assets/copy-from-context-menu.png)
 1. Wählen Sie die Komponente aus, _nach_ der Sie die kopierte Komponente einfügen möchten.
 1. Sie haben dann folgende Möglichkeiten:
@@ -396,15 +396,15 @@ Tippen oder klicken Sie in der Symbolleiste des universellen Editors auf das Sym
 >* Die Schaltfläche **AEM** Seiteneigenschaften&#39; funktioniert nur für Seiten, nicht für Inhaltsfragmente.
 >* Die Schaltfläche wird nur angezeigt, wenn die Remote-Seite eine [Verbindung mit Protokoll](/help/implementing/universal-editor/component-definition.md#plugins) `aem` oder `xwalk` aufweist und ein eindeutiger Seitenpfad aus der aktuellen bearbeitbaren Datei aufgelöst werden kann.
 
-### Zugreifen auf die Sites-Konsole {#sites-console}
+### In Site-Admin öffnen {#sites-console}
 
-Die **AEM-Erweiterung für Site Admin** ermöglicht den schnellen Zugriff auf die Seite, die in der [Sites-Konsole von AEM bearbeitet wird](/help/sites-cloud/authoring/sites-console/introduction.md), und ermöglicht Ihnen die Navigation in der Site-Baumstruktur oder das Ausführen von Aktionen auf Seitenebene in der Konsole.
+Die Schaltfläche **In Site-Admin öffnen** ermöglicht den schnellen Zugriff auf die [Sites-Konsole von AEM](/help/sites-cloud/authoring/sites-console/introduction.md) (oder die [Experience Fragments-](/help/sites-cloud/authoring/fragments/experience-fragments.md) für `/content/experience-fragments` Pfade), um anzuzeigen, wo die Seite, die Sie gerade bearbeiten, in Ihrer Inhaltsstruktur vorhanden ist. Dadurch können Sie in der Site-Struktur navigieren oder Aktionen auf Seitenebene in der Konsole ausführen.
 
 ![Symbol „In Site Admin öffnen“](assets/open-in-site-admin-icon.png)
 
 Tippen oder klicken Sie auf das Symbol, um die Sites-Konsole in einem neuen Browser-Tab zu öffnen, und navigieren Sie zu der Seite, die sich derzeit im Editor befindet.
 
-Weitere Informationen zum Aktivieren dieser Erweiterung [finden Sie in der Dokumentation zu Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+Die Schaltfläche ist für DAM-Pfade (`/content/dam`) ausgeblendet und wenn keine eindeutige AEM-Seite aus den aktuellen bearbeitbaren Elementen ermittelt werden kann.
 
 ### Sperren und Entsperren von Seiten {#locking-pages}
 
