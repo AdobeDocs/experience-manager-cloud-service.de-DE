@@ -30,7 +30,7 @@ In dieser Videoreihe werden verschiedene Anwendungsfälle bei der Integration ei
 
 Die Videoreihe erfordert grundlegende Kenntnisse der Git- und Quell-Code-Verwaltung. Weitere Informationen zu Git finden Sie in den [folgenden zusätzlichen Ressourcen](#additional-resources).
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/33718?captions=ger)
 
 Die in dieser Videoreihe beschriebenen Schritte und Benennungskonventionen stellen einige Best Practices für die Arbeit mit einem vom Kunden verwalteten Git-Repository in Cloud Manager dar. Es wird erwartet, dass die dargestellten Konventionen und Workflows für einzelne Anwendungsfälle angepasst werden.
 
@@ -38,31 +38,31 @@ Die in dieser Videoreihe beschriebenen Schritte und Benennungskonventionen stell
 
 In diesem Video erfahren Sie die ersten Schritte zum Synchronisieren eines kundenverwalteten Git-Repositorys mit dem Git-Repository von Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33717/?captions=ger&quality=12)
 
 ## Grundlegende Verzweigungsstrategie {#branching-strategy}
 
 In diesem Video erfahren Sie grundlegende Verzweigungsstrategien.
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33716/?captions=ger&quality=12)
 
 ## Entwicklung von Funktionsverzweigungen {#feature-development}
 
 Verwenden Sie eine Funktionsverzweigung, um Code-Änderungen in einem kundenseitig verwalteten Git-Repository zu isolieren und mit dem Git-Repository von Cloud Manager zu synchronisieren. So können Sie eine produktionsfremde Pipeline für Code-Qualitäts- und Validierungstests verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33715/?captions=ger&quality=12)
 
 ## Produktionsbereitstellung {#production-deployment}
 
 Bereiten Sie Code für eine Produktionsfreigabe in einem kundenverwalteten Git-Repository vor und synchronisieren Sie mit dem Git-Repository von Cloud Manager, um eine Bereitstellung in Staging- und Produktionsumgebungen vorzunehmen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/328889/?captions=ger&quality=12)
 
 ## Synchronisieren von Versions-Tags {#sync-tags}
 
 Um Einblicke in den Code zu gewähren, der in Staging- und Produktionsumgebungen bereitgestellt wurde, synchronisieren Sie Release-Tags aus einem Cloud Manager-Git-Repository in einem kundenverwalteten Git-Repository.
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/33713/?captions=ger&quality=12)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
