@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in Cloud Manager ein von Adobe verwaltetes Re
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: db5d8007420692b2e4818a55f8209373a28eb3c0
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '226'
+ht-degree: 73%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 Erfahren Sie, wie Sie in Cloud Manager ein von Adobe verwaltetes Repository hinzufügen.
 
-Auf der Seite **Repositorys** können Sie ganz einfach zusätzliche von Adobe verwaltete Repositorys zu einem ausgewählten Programm hinzufügen.
+Auf **Seite** Repositorys“ können Sie einem ausgewählten Programm zusätzliche von Adobe verwaltete Repositorys hinzufügen.
 
 **So fügen Sie in Cloud Manager ein Adobe-Repository hinzu:**
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das Programm aus, zu dem Sie ein von Adobe verwaltetes Repository hinzufügen möchten.
 
-1. Klicken Sie auf der Seite **Programmübersicht** im Seitenmenü auf die Registerkarte ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositorys** .
+1. Klicken Sie auf der **Programmübersicht** im Seitenmenü auf die Registerkarte ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositorys**.
 
 1. Klicken Sie auf der Seite **Repositorys** oben rechts auf **Repository hinzufügen**.
 
@@ -32,13 +32,13 @@ Auf der Seite **Repositorys** können Sie ganz einfach zusätzliche von Adobe ve
 1. Geben Sie in die entsprechenden Textfelder Folgendes ein:
 
    * **Repository-Name** – Ein aussagekräftiger Name für Ihr neues Repository.
-   * **Repository-URL-Vorschau** – Sie brauchen weder einen URL-Pfad einzugeben noch den vorhandenen Pfad zu bearbeiten, da die Repository-Infrastruktur bereits vorhanden ist und vollständig von Adobe integriert und verwaltet wird.
+   * **Repository-URL** Vorschau: Sie müssen keinen URL-Pfad eingeben oder den vorhandenen Pfad bearbeiten, da die Repository-Infrastruktur bereits von Adobe konfiguriert, integriert und verwaltet wird.
    * **Beschreibung (optional)** – Eine längere Beschreibung des Repositorys.
 
    ![Dialogfeld „Repository hinzufügen“](assets/add-adobe-repository.png)
 
-1. Klicken Sie auf **Speichern**.
-Ihr neues Repository wird in der Tabelle auf der Seite **Repositorys** angezeigt.
+1. Klicken Sie **Speichern**.
+Das neue Repository wird in der Tabelle auf der Seite **Repositorys** angezeigt.
 
 Sie können nun eine [CI/CD-Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) damit verbinden oder es im Fenster [**Repositorys** verwalten](managing-repositories.md).
 
