@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4851afdacb54e4c9bffc3df707afb057cb361675
+source-git-commit: 6b9a7d90bbf6ae5afa823616b88bdd44cfdddca7
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 84%
+source-wordcount: '1377'
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe bietet mehrere integrierte Qualitäts-Gates, während andere Ihren Eingrif
 
 Die integrierten Qualitäts-Gates validieren in erster Linie die Funktionalität des AEM-Produkts im Kontext Ihrer AEM-Anwendung. Die von Ihnen eingerichteten benutzerdefinierten QualitätsGates hingegen dienen dazu, zu überprüfen, ob die kritischen Funktionen und Benutzerinteraktionen Ihrer Anwendung wie gewünscht funktionieren. Gemeinsam arbeiten diese beiden Sets von Qualitäts-Gates zusammen, um eine robuste und sichere automatisierte Bereitstellung sowohl für Ihre Änderungen am Code als auch für AEM-Produktaktualisierungen sicherzustellen.
 
-Es ist wichtig zu beachten, dass diese Qualitäts-Gates nicht als umfassendes Test-Framework für Ihre gesamte Teststrategie gedacht sind. Das AEM-Produkt wird ausführlichen Tests unterzogen, bevor es in den Bereitstellungsprozess von AEM Cloud Service eintritt. Ebenso sollte Ihre Anwendung bereits von hoher Qualität sein, bevor sie die Bereitstellungsphase erreicht. Dieser Ansatz stellt sicher, dass sich die Qualitäts-Gates auf ihr vorrangiges Ziel konzentrieren, den sicheren Implementierungsprozess zu gewährleisten, anstatt ein vollständiges Testverfahren zu ersetzen.
+Es ist wichtig zu beachten, dass diese Qualitäts-Gates nicht als umfassendes Test-Framework für Ihre gesamte Teststrategie gedacht sind. Das AEM-Produkt wird ausführlichen Tests unterzogen, bevor es in den Bereitstellungsprozess von AEM Cloud Service eintritt. Ebenso ist Ihre Anwendung bereits von hoher Qualität, bevor sie die Bereitstellungsphase erreicht. Dadurch wird sichergestellt, dass sich die Quality Gates auf ihr primäres Ziel konzentrieren, den Bereitstellungsprozess zu sichern, anstatt als Ersatz für einen vollständigen Testplan zu dienen.
 
 ## Qualitäts-Gates beim Testen
 
@@ -68,7 +68,7 @@ Unter [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-
 
 ### Produkttests
 
-Produktfunktionstests sind stabile HTTP-Integrationstests (ITs) für Kernfunktionen in AEM wie Authoring- und Replikationsaufgaben. Adobe stellt sie standardmäßig bereit und verwaltet sie. Sie sollen verhindern, dass Änderungen an benutzerdefiniertem Anwendungs-Code bereitgestellt werden, wenn dadurch die Kernfunktionalität im AEM-Produkt beeinträchtigt wird.
+Produktfunktionstests sind stabile HTTP-Integrationstests (ITs) für Kernfunktionen in AEM wie Authoring- und Replikationsaufgaben. Adobe stellt sie standardmäßig bereit und verwaltet sie. Sie sollen verhindern, dass Änderungen an benutzerdefiniertem Anwendungs-Code bereitgestellt werden, wenn sie die Kernfunktionen im AEM-Produkt beeinträchtigen.
 
 Sie verwenden JUnit für die Implementierung, werden mithilfe von Maven ausgeführt und stützen sich auf die offiziellen [AEM-Test-Clients](https://github.com/adobe/aem-testing-clients). Die Produkt-Test-Suite wird wie folgt gepflegt
 Ein [Open-Source-Projekt](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), befolgt Best Practices und kann als guter Ausgangspunkt für die Implementierung Ihrer Tests betrachtet werden.
@@ -79,7 +79,7 @@ Ein [Open-Source-Projekt](https://github.com/adobe/aem-test-samples/tree/aem-clo
 
 >[!NOTE]
 >
->Benutzerdefinierte Funktionstests werden in den Produktions-Pipelines und produktionsfremden (Opt-in-)Pipelines ausgeführt, die von den Bereitstellungen der AEM-Anwendungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie spielen eine entscheidende Rolle bei der Sicherstellung der ordnungsgemäßen Funktionsfähigkeit Ihrer Anwendung und bei der Verbesserung der Versionssicherheit. Die Kundenfunktionstests werden auch in internen Vorabversion-Validierungs-Pipelines für jede Kundin und jeden Kunden ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
+>Benutzerdefinierte Funktionstests werden sowohl in Produktions- als auch in Nicht-Produktions-Pipelines (Opt-in) ausgeführt, die für Bereitstellungen von AEM-Anwendungsänderungen und AEM-Produktaktualisierungen verwendet werden. Sie spielen eine entscheidende Rolle bei der Sicherstellung der ordnungsgemäßen Funktionsfähigkeit Ihrer Anwendung und bei der Verbesserung der Versionssicherheit. Die Kundenfunktionstests werden auch in internen Vorabversion-Validierungs-Pipelines für jede Kundin und jeden Kunden ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
 
 Um effiziente Pipeline-Ausführungen zu gewährleisten, empfiehlt Adobe, sich auf wichtige Funktionen und die Interaktionsflüsse der primären Benutzenden zu konzentrieren und eine funktionale Testlaufzeit von höchstens 15 Minuten anzustreben. Vollständige Funktionstestsuiten, die diese Dauer überschreiten, sollten im Rahmen der allgemeinen Kundenvalidierungs-Pipelines während des Entwicklungsprozesses ausgeführt werden.
 
@@ -91,13 +91,13 @@ Weitere Informationen finden Sie unter [Java-Funktionstests](/help/implementing/
 
 Um die Risikokontrolle für kundenspezifische Entwicklungen zu maximieren, empfiehlt Adobe, wichtige Benutzeroberflächentests in AEM as a Cloud Service einzubeziehen. Halten Sie die Tests begrenzt und konzentrieren Sie sich auf die Auswirkungen auf das Kundenerlebnis.
 
-Die Tests sind in einem Docker-Image verpackt, das für maximale Volatilität entwickelt wurde und Cypress, Playwright, Selenium, Java und JavaScript unterstützt. Sie haben dieselben Eigenschaften und Ziele wie die benutzerdefinierten Funktionstests.
+Die Tests sind in einem Docker-Image verpackt, das für maximale Flexibilität entwickelt wurde und Cypress, Playwright, Selenium, Java und JavaScript unterstützt. Sie haben dieselben Eigenschaften und Ziele wie die benutzerdefinierten Funktionstests.
 
 >[!NOTE]
 >
->Benutzerdefinierte Benutzeroberflächentests werden in den Produktions-Pipelines und produktionsfremden (Opt-in-)Pipelines ausgeführt, die von den Bereitstellungen der AEM-Anwendungsänderungen und Push-Updates für AEM-Produkte verwendet werden. Sie sind unerlässlich, um die ordnungsgemäße Funktionsfähigkeit Ihrer Anwendung sicherzustellen und die Versionssicherheit zu erhöhen. Die benutzerdefinierten Benutzeroberflächentests werden auch in internen Vorabversions-Validierungs-Pipelines für jeden Kunden und jede Kundin ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
+>Benutzerdefinierte Benutzeroberflächentests werden sowohl in Produktions- als auch in Nicht-Produktions-Pipelines (Opt-in) ausgeführt, die für Bereitstellungen von AEM-Anwendungsänderungen und AEM-Produktaktualisierungen verwendet werden. Sie sind unerlässlich, um die ordnungsgemäße Funktionsfähigkeit Ihrer Anwendung sicherzustellen und die Versionssicherheit zu erhöhen. Die benutzerdefinierten Benutzeroberflächentests werden auch in internen Vorabversions-Validierungs-Pipelines für jeden Kunden und jede Kundin ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
 >
->Nicht-Selenium-Container sollten Tests mithilfe eines HTTP-Proxys ausführen, der auf den Umgebungsvariablen im [UI-Tests-Abschnitt](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) beruht.
+>Nicht-Selenium-Container führen Tests mithilfe eines HTTP-Proxys aus, der auf den Umgebungsvariablen im Abschnitt [Benutzeroberflächentests“ ](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Damit Pipeline-Ausführungen effizient bleiben, empfiehlt Adobe, dass Sie sich auf Schlüsselfunktionen und die wichtigsten Benutzerinteraktionsabläufe konzentrieren. Umfassende Test-Suites der Benutzeroberfläche, die dieses Quality Gate übertreffen, sollten als Teil der allgemeinen Kundenvalidierungs-Pipelines ausgeführt werden. Integrieren Sie sie in den Entwicklungsprozess der Kundin bzw. des Kunden.
 
@@ -117,7 +117,7 @@ Weitere Details finden Sie unter [Testen mit Erlebnis-Audit](/help/implementing/
 
 Der Qualitätstest für Kundenvalidierungen ist ein Platzhalter für die kundeneigene Teststrategie und den Testaufwand auf Kundenseite. Er wird ausgeführt, bevor die kundenseitigen Anwendungsänderungen die AEM-Cloud-Bereitstellungs-Pipelines erreichen.
 
-Hier können Sie die Tools und Frameworks auswählen, die Sie bevorzugen. Im Gegensatz zu Funktionstests und benutzerdefinierten Benutzeroberflächentests gibt es keine Einschränkungen in Bezug auf AEM as a Cloud Service. Daher empfiehlt Adobe, hier langwierige Funktions- und Benutzeroberflächentests durchzuführen.
+Hier können Sie die Tools und Frameworks auswählen, die Sie bevorzugen. Im Gegensatz zu Kundenfunktionstests und benutzerdefinierten Benutzeroberflächentests gibt es keine Einschränkungen in Bezug auf AEM as a Cloud Service. Daher empfiehlt Adobe, hier langwierige Funktions- und Benutzeroberflächentests durchzuführen.
 
 Sie können zwar ein beliebiges Tool und Framework wählen, Adobe empfiehlt jedoch, HTTP-basierte Integrationstests und Benutzeroberflächentests mit den Tools und Frameworks abzustimmen, die für die Qualitäts-Gates benutzerdefinierter Funktions- und Benutzeroberflächentests verwendet werden. Darüber hinaus empfiehlt Adobe, [schnelle Entwicklungsumgebungen](/help/implementing/developing/introduction/rapid-development-environments.md) (Rapid Development Environments, RDE) in Ihre lokale Teststrategie zu integrieren, um AEM Cloud-Umgebungen möglichst genau widerzuspiegeln.
 
@@ -125,4 +125,4 @@ Sie können zwar ein beliebiges Tool und Framework wählen, Adobe empfiehlt jedo
 
 Das Qualitäts-Gate für manuelle Tests ist ein Platzhalter für Kunden, die manuelle Tests durchführen. Da AEM-Cloud-Pipelines manuelle Tests nicht unterstützen, ist eine Aufnahme in Ihre lokale Teststrategie erforderlich.
 
-Für manuelle Tests kann die Integration in eine zusätzliche AEM Cloud Service-Entwicklungsumgebung nützlich sein.
+Für manuelle Tests kann es nützlich sein, eine zusätzliche AEM Cloud Service-Entwicklungsumgebung zu verwenden.
