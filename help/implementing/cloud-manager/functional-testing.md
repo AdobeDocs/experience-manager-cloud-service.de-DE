@@ -97,7 +97,7 @@ Die Tests sind in einem Docker-Image verpackt, das für maximale Flexibilität e
 >
 >Benutzerdefinierte Benutzeroberflächentests werden sowohl in Produktions- als auch in Nicht-Produktions-Pipelines (Opt-in) ausgeführt, die für Bereitstellungen von AEM-Anwendungsänderungen und AEM-Produktaktualisierungen verwendet werden. Sie sind unerlässlich, um die ordnungsgemäße Funktionsfähigkeit Ihrer Anwendung sicherzustellen und die Versionssicherheit zu erhöhen. Die benutzerdefinierten Benutzeroberflächentests werden auch in internen Vorabversions-Validierungs-Pipelines für jeden Kunden und jede Kundin ausgeführt. Dies trägt zu frühzeitigem Feedback bei.
 >
->Nicht-Selenium-Container führen Tests mithilfe eines HTTP-Proxys aus, der auf den Umgebungsvariablen im Abschnitt [Benutzeroberflächentests“ ](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
+>Nicht-Selenium-Container führen Tests mithilfe eines HTTP-Proxys aus, der auf den Umgebungsvariablen im Abschnitt [Benutzeroberflächentests“ &#x200B;](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Damit Pipeline-Ausführungen effizient bleiben, empfiehlt Adobe, dass Sie sich auf Schlüsselfunktionen und die wichtigsten Benutzerinteraktionsabläufe konzentrieren. Umfassende Test-Suites der Benutzeroberfläche, die dieses Quality Gate übertreffen, sollten als Teil der allgemeinen Kundenvalidierungs-Pipelines ausgeführt werden. Integrieren Sie sie in den Entwicklungsprozess der Kundin bzw. des Kunden.
 
