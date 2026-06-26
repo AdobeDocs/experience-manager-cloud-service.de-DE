@@ -50,7 +50,7 @@ Um Zugriff auf den KI-Assistenten in AEM zu erhalten, müssen Kundinnen und Kund
 
 1. Zur Verwendung des KI-Assistenten in AEM ist eine Berechtigung für den Zugriff auf Produktkenntnisse über den KI-Assistenten obligatorisch. Das System aktiviert diese Berechtigung standardmäßig.
 
-   Wenn Sie steuern möchten, wer auf Produktkenntnisse zugreifen kann, senden Sie von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-Mail an [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com). Adobe kann die Zugriffssteuerung auf Benutzerebene aktivieren. Wenn diese Option aktiviert ist, kann der Administrator über den [KI-Assistenten in AEM konfigurieren“ Zugriff auf ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) gewähren.
+   Wenn Sie steuern möchten, wer auf Produktkenntnisse zugreifen kann, senden Sie von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-Mail an [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com). Adobe kann die Zugriffssteuerung auf Benutzerebene aktivieren. Wenn diese Option aktiviert ist, kann der Administrator über den [KI-Assistenten in AEM konfigurieren“ Zugriff auf &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) gewähren.
 
 ## Umfang {#scope}
 
@@ -83,7 +83,7 @@ Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Ado
 | Gezieltes Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar **<br>**Beispiele** |
+| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar &#x200B;**<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstelle ein Support-Ticket für mich.</li></ul> |
 | Status von Support-Ticket abrufen | <ul><li>Zeige mir alle Support-Tickets, die ich geöffnet habe.</li><li>Zeige mir den Status von Ticket „E-----------“</li></ul> |
 
