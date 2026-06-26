@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 5467a311-727d-4f67-ba43-4b6548431061
-source-git-commit: 8c5c34018aee84a1ec54d3f1d0bc77b8c660869c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 15%
@@ -27,7 +27,7 @@ Der Health Assessment Service hat folgende Aufgaben:
 
 Bei jeder Ausführung werden Probleme nach Schweregrad, Links zu Anleitungen und empfohlenen Fehlerbehebungen aufgelistet und ein PDF-Export des Berichts unterstützt. Sie können die Ansicht **Neuester Bericht** für den aktuellen Status und **vergangene Berichte)**, um Ausführungen zu vergleichen.
 
-Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Konsistenzbewertungsmuster“.
+Regeldefinitionen und Details zur ](#ha-patterns) finden Sie unter [Konsistenzbewertungsmuster“.
 
 ## Zugriff auf die Seite „Konsistenzbewertung“ {#access-health-assessment}
 
@@ -45,7 +45,7 @@ Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Kon
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Karte Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png)
 
-   * Klicken Sie im linken Seitenmenü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **&#x200B;**&#x200B;aus dem Menü aus.
+   * Klicken Sie im linken Seitenmenü unter **Services** auf ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Umgebungen**. Klicken Sie auf der Seite „Umgebungen“ rechts neben einem Umgebungsnamen auf ![Ellipsensymbol oder Mehr-Symbol](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und wählen Sie dann **** aus dem Menü aus.
 
      ![Auswahl der Konsistenzbewertung aus dem Menü mit den Auslassungspunkten auf der Seite Umgebungen](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png)
 
@@ -116,7 +116,7 @@ Regeldefinitionen und Details zur [&#128279;](#ha-patterns) finden Sie unter Kon
 ![Vergangene Berichte überprüfen](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
 * Klicken Sie rechts neben der Überschrift **Vergangene Berichte** auf ![Pfeil nach unten oder Dropdown-Menü, um eine andere Umgebung auszuwählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) um vergangene Berichte nach Datum zu sortieren.
-* Ganz rechts neben einem Bericht auf das Symbol mit ![&#x200B; Auslassungspunkten oder das Symbol Mehr &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und dann auf **Details anzeigen** oder **Herunterladen**.
+* Ganz rechts neben einem Bericht auf das Symbol mit ![ Auslassungspunkten oder das Symbol Mehr ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) und dann auf **Details anzeigen** oder **Herunterladen**.
 
 
 ## Muster der Gesundheitsbewertung {#ha-patterns}
@@ -160,3 +160,4 @@ Im Folgenden finden Sie eine vollständige Liste der Muster, die von den Best Pr
 | Repository-Struktur | Muster in Bezug auf JCR-Repository-Organisation und -Struktur. |
 | Abhängigkeiten | Muster in Bezug auf Codeabhängigkeiten und Versionsverwaltung. |
 | Statistiken | Muster, die Nutzungsstatistiken und Metriken darstellen. |
+

@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 0fdc71bad1f2c4844ad47d41f47e898eac8c2373
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 78%
@@ -31,7 +31,7 @@ Er ist direkt in AEM eingebettet und kann über die AEM Experience Hub-, Cloud M
 
 Das folgende Video (3 Minuten und 25 Sekunden lang) bietet eine schrittweise Anleitung zum KI-Assistenten in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475367/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Zugriff auf den KI-Assistenten in AEM erhalten{#get-access}
 
@@ -50,7 +50,7 @@ Um Zugriff auf den KI-Assistenten in AEM zu erhalten, müssen Kundinnen und Kund
 
 1. Zur Verwendung des KI-Assistenten in AEM ist eine Berechtigung für den Zugriff auf Produktkenntnisse über den KI-Assistenten obligatorisch. Das System aktiviert diese Berechtigung standardmäßig.
 
-   Wenn Sie steuern möchten, wer auf Produktkenntnisse zugreifen kann, senden Sie von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-Mail an [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com). Adobe kann die Zugriffssteuerung auf Benutzerebene aktivieren. Wenn diese Option aktiviert ist, kann der Administrator über den [KI-Assistenten in AEM konfigurieren“ Zugriff auf &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) gewähren.
+   Wenn Sie steuern möchten, wer auf Produktkenntnisse zugreifen kann, senden Sie von der mit Ihrer Adobe ID verknüpften E-Mail-Adresse eine E-Mail an [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com). Adobe kann die Zugriffssteuerung auf Benutzerebene aktivieren. Wenn diese Option aktiviert ist, kann der Administrator über den [KI-Assistenten in AEM konfigurieren“ Zugriff auf ](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md) gewähren.
 
 ## Umfang {#scope}
 
@@ -83,7 +83,7 @@ Produktkenntnisse umfassen Konzepte und Themen, die aus der Dokumentation zu Ado
 | Gezieltes Lernen | <ul><li>Was ist der universelle Editor?</li><li>Wie erstelle ich ein Programm in Cloud Manager?</li></ul> |
 | Erkennung öffnen | <ul><li>Wie verwende ich den universellen Editor?</li><li>Gibt es eine Möglichkeit, Inhalte von einer Umgebung in eine andere zu kopieren?</li></ul> |
 | Fehlerbehebung | <ul><li>Warum kann ich nicht auf den universellen Editor zugreifen?</li><li>Warum schlägt meine Pipeline fehl?</li></ul> |
-| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar &#x200B;**<br>**Beispiele** |
+| **Erstellung von Support-Tickets** | **Nur für Support-Admins verfügbar **<br>**Beispiele** |
 | Automatisierte Erstellung von Support-Tickets zur Erfassung des Verlaufs und Kontexts des KI-Assistenten | <ul><li>Erstelle ein Support-Ticket für mich.</li></ul> |
 | Status von Support-Ticket abrufen | <ul><li>Zeige mir alle Support-Tickets, die ich geöffnet habe.</li><li>Zeige mir den Status von Ticket „E-----------“</li></ul> |
 
@@ -123,7 +123,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 -->
@@ -237,3 +237,4 @@ To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Ass
 
 This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
 -->
+

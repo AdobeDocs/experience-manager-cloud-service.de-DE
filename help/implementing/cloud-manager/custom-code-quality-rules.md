@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ea84bbdf5492bec7f35952c964be54b784091ead
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '4362'
 ht-degree: 79%
@@ -523,7 +523,7 @@ Die Experience Manager-API-Oberfläche wird ständig überprüft, um APIs zu ide
 
 Je näher das Entfernungsdatum rückt, desto höher ist die Schwere der Verletzung dieser Regel. Die Verwendung solcher APIs muss durch eine sichere Alternative ersetzt werden.
 
-In [&#x200B; Artikel finden &#x200B;](/help/release-notes/deprecated-removed-features.md#aem-apis) Anleitungen zum Entfernen veralteter APIs.
+In [ Artikel finden ](/help/release-notes/deprecated-removed-features.md#aem-apis) Anleitungen zum Entfernen veralteter APIs.
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -547,7 +547,7 @@ Es gibt jedoch Fälle, in denen eine API im Kontext von Experience Manager veral
 
 Das `Apache Sling`-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da es in Kombination mit dem `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) zu schlechter Leistung führen kann. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Weitere Informationen zu den empfohlenen Anmerkungen und [&#128279;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1), warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu `Apache Sling` .
+Weitere Informationen zu den empfohlenen Anmerkungen und ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1), warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu [`Apache Sling` .
 
 
 ### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
@@ -1292,3 +1292,4 @@ AEM Cloud Service verbietet die Erstellung von Tokenizern mit falschen Namen in 
 * **Seit**: Version 2024.7.0
 
 AEM Cloud Service verbietet die Erstellung von Indizierungsdefinitionen, die Eigenschaften mit Leerzeichen enthalten.
+

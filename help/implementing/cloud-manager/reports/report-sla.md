@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 884f991bbc067b8c2d628600c18a89e5950df17c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 67%
@@ -68,4 +68,5 @@ Die SLA-Berichterstellung enthält Informationen zur Leistung Ihrer AEM-Produkti
 ## Vorschau-Umgebungen {#preview}
 
 Die Vorschauumgebung ist als Tool für Inhaltsautoren gedacht, um die Inhalte vor der Veröffentlichung zu überprüfen. Aufgrund dieser Funktion sind Vorschauumgebungen nicht mit hoher Verfügbarkeit konzipiert und verfügen nicht über eine zugehörige SLA.
+
 

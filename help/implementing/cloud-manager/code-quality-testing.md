@@ -5,7 +5,7 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 3261003447e54a2af4304d61c56068b7cab5986c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 77%
@@ -131,3 +131,4 @@ Ein Sonderfall kann eintreten, wenn das Inhaltspaket „all“ eine Kombination 
 >
 >* Diese Optimierung hat keine Auswirkungen auf die Pakete, die in AEM bereitgestellt werden.
 >* Der Abgleich zwischen eingebetteten Inhaltspaketen und übersprungenen Inhaltspaketen basiert auf Dateinamen. Diese Optimierung ist nicht möglich, wenn mehrere übersprungene Pakete denselben Dateinamen haben oder sich der Dateiname während der Einbettung ändert.
+

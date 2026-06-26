@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: ff567c4f328bf0ab10ee9e93ad850a597536cdbf
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1257'
 ht-degree: 54%
 
 ---
@@ -199,4 +199,5 @@ Ja. Ein Benutzer kann mehreren Profilen zugewiesen werden, einschließlich vorde
 
 ### Was passiert, wenn ein Benutzer berechtigt ist, eine Umgebung/Pipeline zu bearbeiten, aber keinen Zugriff auf ein Programm hat, das die Umgebung/Pipeline enthält?
 
-Der Benutzer kann nicht auf die Umgebung oder Pipeline zugreifen, wenn er nicht über die **Programmzugriff**-Berechtigungen verfügt, die mit der Umgebung oder Pipeline verknüpft sind.
+Der Benutzer kann nicht auf die Umgebung oder Pipeline zugreifen, wenn er nicht über die **Programmzugriff**-Berechtigungen verfügt, die die Umgebung oder Pipeline enthalten.
+

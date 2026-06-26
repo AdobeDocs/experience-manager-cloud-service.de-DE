@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 45fb44079ec9b999cc2cd82b8011b14eff3bcfe1
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 51%
@@ -107,7 +107,7 @@ Siehe auch [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard
 
 ## Verwalten von Inhaltsanfragen {#managing-content-requests}
 
-Wie in [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, z. B. weil der Traffic das CDN erreicht. Als AEM-Kunde ist es hilfreich, wenn Sie Ihre Inhaltsanfragen überwachen und verwalten, damit Sie Ihr Lizenzbudget einhalten. Die Verwaltung von Inhaltsanfragen ist eine Kombination aus Implementierungstechniken [&#x200B; Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
+Wie in [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances) erwähnt, können Inhaltsanfragen aus mehreren Gründen höher als erwartet sein, z. B. weil der Traffic das CDN erreicht. Als AEM-Kunde ist es hilfreich, wenn Sie Ihre Inhaltsanfragen überwachen und verwalten, damit Sie Ihr Lizenzbudget einhalten. Die Verwaltung von Inhaltsanfragen ist eine Kombination aus Implementierungstechniken [ Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Implementierungstechniken für die Verwaltung von Inhaltsanfragen {#implementation-techniques-to-manage-crs}
 
@@ -120,7 +120,7 @@ Wie in [Varianzen von Cloud Service-Inhaltsanfragen](#content-requests-variances
 
 ### Traffic-Filterregeln zur Verwaltung von Inhaltsanfragen {#traffic-filter-rules-to-manage-crs}
 
-Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
+Um Ihre Inhaltsanfragen besser zu steuern, analysieren Sie Ihren CDN-Traffic, bevor Sie Filterregeln definieren. Mit dem [CDN-Protokollanalyse-Tool](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) erhalten Sie Einblicke in die CDN-Leistung und Anfragemuster. Zunächst müssen Sie verstehen, woher Ihr Traffic kommt und ob unerwartete Signalisierungsmuster vorhanden sind (ein gängiges Bot-Muster besteht darin, einen leeren Benutzeragenten zu verwenden).
 
 **Zu überwachende und zu protokollierende Elemente:**
 
@@ -164,3 +164,4 @@ trafficFilters:
 Ersetzen Sie die Beispielwerte durch den Länder-Code, den Netzwerk- oder Bot-Namen, den Sie sperren möchten. Siehe [Syntax von Traffic-Filterregeln](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) und [Bedingungsstruktur](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) für weitere Optionen.
 
 Einige Bots können eine Website an einem Tag mit Traffic überlasten und dann am nächsten Tag verschwinden. Solche Funktionen können alle Versuche erschweren, eine bestimmte IP-Adresse oder einen Benutzeragenten zu blockieren. Ein generischer Ansatz besteht in der Einführung einer [Regel für Limits](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Sehen Sie sich die [Beispiele](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) an und erstellen Sie eine Regel, die Ihrer Toleranz für eine schnelle Anfragerate entspricht. Überprüfen Sie die [Bedingungsstruktur](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure)-Syntax für alle Ausnahmen, die Sie einer allgemeinen Ratenbeschränkung gestatten.
+

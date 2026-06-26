@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: c75fb9425b72dea9130ed24cc2a098b56f23d13d
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 83%
@@ -115,7 +115,7 @@ Referenzartikel: [Zuweisen benutzerdefinierter Berechtigungen zu dem neuen Produ
    | Name der Benutzergruppe | `AI Assistant in AEM` (oder Ihr bevorzugter Name) |
    | Beschreibung (optional) | `User group for managing AI Assistant in AEM access` |
 
-   ![&#x200B; Seite „Neue Benutzergruppe erstellen“](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
+   ![ Seite „Neue Benutzergruppe erstellen“](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
 1. Klicken Sie unten rechts in der Seite auf **Speichern**.
 
@@ -200,3 +200,4 @@ Bitten Sie einen Benutzenden aus der zugewiesenen Gruppe, Folgendes zu tun:
 * [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 * [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/overview)
 * [Benutzerdefinierte Cloud Manager-Berechtigungen](/help/implementing/cloud-manager/custom-permissions.md)
+
