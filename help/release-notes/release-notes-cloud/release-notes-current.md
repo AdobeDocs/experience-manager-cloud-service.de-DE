@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 50a64c8968182ac1fb5a57082da991c9efd4dc46
+source-git-commit: 4bd1044567206bc6a97aef5b2d2e99541936b476
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3825'
 ht-degree: 17%
 
 ---
@@ -41,7 +41,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491499/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -152,15 +152,11 @@ Die Dynamic Media-Komponente bettet jetzt Transkripte für Videos ein, um die Ba
 
 Mit Dynamic Media mit OpenAPI-Funktionen können Sie jetzt benutzerdefinierte Miniaturansichten für Video-Assets hochladen. Durch das Ersetzen automatisch generierter Miniaturansichten durch gebrandete oder speziell entwickelte Bilder können Unternehmen die Präsentation von Inhalten verbessern, die Auffindbarkeit von Assets verbessern und ein ansprechenderes Anwendererlebnis schaffen.
 
-
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in AEM Forms
 
 #### Editor für die interaktive Kommunikation
-
-Der Editor für interaktive Kommunikation und die Benutzeroberfläche von Associate bieten neue Funktionen für Zusammenarbeit, Layout und Bearbeitung von Verknüpfungen, mit denen Autoren schneller entwerfen und Mitarbeiter die Kundenkommunikation präziser abschließen können.
 
 Der Editor für interaktive Kommunikation (IC) ist jetzt in AEM Forms as a Cloud Service verfügbar. Es handelt sich dabei um eine Browser-basierte Lösung zur Erstellung, Verwaltung und Bereitstellung datengesteuerter interaktiver Korrespondenzen wie Geschäftskorrespondenz, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-E-Mails, Rechnungen und Begrüßungspakete.
 
@@ -174,7 +170,7 @@ Der Editor für interaktive Kommunikation (IC) ist jetzt in AEM Forms as a Cloud
 
 * **Regeleditor**: Erstellen Sie dynamische, datengesteuerte Aktionen direkt in Ihren Dokumenten mithilfe einer intuitiven Point-and-Click-Oberfläche. Sie können bedingte Logik einfach definieren, Workflows automatisieren und Inhalte personalisieren, ohne programmieren zu müssen. Weitere Informationen finden Sie unter [Erstellen von Regeln im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md).
 
-* **Vorlagen und Dokumentfragmente**: Erstellen Sie wiederverwendbare Vorlagen und modulare Inhaltsbausteine (Kopfzeilen, Fußzeilen, Haftungsausschlüsse), um die Konsistenz und Effizienz mehrerer Kommunikationen zu gewährleisten. Weitere Informationen finden Sie unter [Erstellen einer &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md) und [Erstellen eines Fragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
+* **Vorlagen und Dokumentfragmente**: Erstellen Sie wiederverwendbare Vorlagen und modulare Inhaltsbausteine (Kopfzeilen, Fußzeilen, Haftungsausschlüsse), um die Konsistenz und Effizienz mehrerer Kommunikationen zu gewährleisten. Weitere Informationen finden Sie unter [Erstellen einer ](/help/forms/interactive-communication/create-interactive-communication-template.md) und [Erstellen eines Fragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
 
 * **Vorlagensperrung**: Sperren Sie Inhalte und Layout-Elemente in Vorlagen, um die Markenintegrität zu wahren und nicht autorisierte Änderungen zu verhindern. Weitere Informationen finden Sie unter [Vorlagensperre](/help/forms/interactive-communication/enable-template-lock.md).
 
@@ -182,7 +178,7 @@ Der Editor für interaktive Kommunikation (IC) ist jetzt in AEM Forms as a Cloud
 
 * **Benutzerdefinierte Schriftarten**: Betten Sie benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten ein, um ein konsistentes, markenspezifisches PDF-Rendering auf allen Geräten sicherzustellen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Schriftarten](/help/forms/interactive-communication/add-custom-fonts.md).
 
-* **Importieren und Exportieren**: Nahtlose Migration und Wiederverwendung der interaktiven Kommunikation mit ihren Fragmenten und Datenmodellen über Umgebungen hinweg. Weitere Informationen finden Sie unter [&#x200B; und Exportieren](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
+* **Importieren und Exportieren**: Nahtlose Migration und Wiederverwendung der interaktiven Kommunikation mit ihren Fragmenten und Datenmodellen über Umgebungen hinweg. Weitere Informationen finden Sie unter [ und Exportieren](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
 
 * **Inhaltsüberlauf**: Option „Seitenumbrüche innerhalb von Inhalten zulassen“ für fließende Layouts für eine reibungslose mehrseitige Bearbeitung und eine bessere Textverwaltung für komplexe Dokumente. Weitere Informationen finden Sie unter [Umgang mit Inhaltsüberläufen](/help/forms/interactive-communication/handle-content-overflow.md).
 
@@ -198,7 +194,7 @@ Der Editor für interaktive Kommunikation (IC) ist jetzt in AEM Forms as a Cloud
 
 * **Versionen der interaktiven Kommunikation vergleichen**: Sie können jetzt zwei beliebige gespeicherte Versionen einer interaktiven Kommunikation nebeneinander vergleichen, während PDF-Vorschauen das Layout und statische Inhaltsänderungen vor der Veröffentlichung überprüfen. Weitere Informationen finden Sie unter [Versionen der interaktiven Kommunikation vergleichen](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md).
 
-* **Zusammenführen und Aufteilen von Tabellenzellen**: Der Editor für interaktive Kommunikation unterstützt jetzt das Zusammenführen benachbarter Tabellenzellen und das Aufteilen zusammengeführter Zellen wieder in einzelne Spalten, was das Überspannen von Kopfzeilen, Zusammenfassungszeilen und flexiblere Tabellen-Layouts ermöglicht. Weitere Informationen finden Sie unter [Zusammenführen und Aufteilen von &#x200B;](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
+* **Zusammenführen und Aufteilen von Tabellenzellen**: Der Editor für interaktive Kommunikation unterstützt jetzt das Zusammenführen benachbarter Tabellenzellen und das Aufteilen zusammengeführter Zellen wieder in einzelne Spalten, was das Überspannen von Kopfzeilen, Zusammenfassungszeilen und flexiblere Tabellen-Layouts ermöglicht. Weitere Informationen finden Sie unter [Zusammenführen und Aufteilen von ](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
 
 * **Verschieben einer Komponente auf die Musterseite**: Sie können jetzt mit einer Aktion eine Komponente von einer Designseite auf die Musterseite verschieben, damit sie konsistent auf jeder Seite einer interaktiven Kommunikation angezeigt wird, ohne sie neu zu erstellen. Weitere Informationen finden Sie unter [Verschieben einer Komponente auf die Musterseite](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
 
@@ -206,17 +202,17 @@ Der Editor für interaktive Kommunikation (IC) ist jetzt in AEM Forms as a Cloud
 
 * **Konfigurieren von gebundenen und ungebundenen Variablen für die**-Benutzeroberfläche: Gebundene und ungebundene Variablen in **Text**-Komponenten können jetzt für die Benutzeroberfläche „Verknüpfen“ konfiguriert werden. Autoren können auswählen, ob Verknüpfungen den gesamten Textblock in der Dokumentvorschau inline bearbeiten oder Werte für einzelne Variablen im Dateneingabefeld eingeben sollen. Doppelte Variablennamen übertragen Werte auf alle übereinstimmenden Vorkommnisse in der Vorschau. Weitere Informationen finden Sie unter [Konfigurieren von gebundenen und ungebundenen Variablen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
 
-## Early Adopter-Funktionen
+### Early Adopter-Funktionen
 
-### Datensatzdokument für in AEM Sites eingebettete Formulare
+#### Datensatzdokument für in AEM Sites eingebettete Formulare
 
 Autorinnen und Autoren können jetzt ein Datensatzdokument (Document of Record, PDF) für adaptive Forms-Kernkomponenten konfigurieren und generieren, die in AEM Sites-Seiten eingebettet sind. Die DoR-Einstellungen, einschließlich der automatischen Generierung, benutzerdefinierter XDP-Vorlagen und des Brandings, sind direkt über den **Container für adaptive Formulare** im Sites-Seiteneditor verfügbar. [Weitere Informationen](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
 
-### Gebietsschema-spezifische benutzerdefinierte XDP-Vorlagen für das Datensatzdokument
+#### Gebietsschema-spezifische benutzerdefinierte XDP-Vorlagen für das Datensatzdokument
 
 Wenn Sie eine benutzerdefinierte XDP-Vorlage für DoR zuordnen, können Sie im selben Ordner gebietsschemaspezifische Versionen mithilfe der `basename.<locale>.xdp` bereitstellen (z. B. `a.xdp` und `a.fr.xdp`). AEM Forms wählt beim Generieren der Übermittlungs-PDF automatisch die Vorlage aus, die dem Formulargebietsschema entspricht, mit Fallback auf die Standardvorlage. [Weitere Informationen](/help/forms/generate-document-of-record-core-components.md#locale-specific-custom-xdp-templates-for-document-of-record).
 
-### Gültigkeit der Adobe Sign-Vereinbarung
+#### Gültigkeit der Adobe Sign-Vereinbarung
 
 Sie können festlegen, wie lange Empfänger das Signieren abschließen müssen, indem Sie **Dokumentenablauf (Tage)** im Abschnitt **Elektronische Signatur** eines adaptiven Formulars angeben. Der Wert wird als `daysUntilSigningDeadline` an Adobe Sign gesendet. Wenn dies leer gelassen wird, läuft die Vereinbarung nicht ab. [Weitere Informationen](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement).
 
@@ -226,11 +222,11 @@ Sie können festlegen, wie lange Empfänger das Signieren abschließen müssen, 
 
 #### Conversational AI Interface für Cloud Manager - Fragen {#devagent-cloudmanager}
 
-Der Entwicklungsagent wird erweitert, um Fragen im Zusammenhang mit Cloud Manager über den [Cloud Manager-Auftrag zu &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). Rufen Sie im KI-Assistenten Informationen zu Programmen, Umgebungen und Pipelines ab (z. B. Ausführungsstatus). Schnelles Auffinden von Links zu Fehlerprotokollen, Zugriffsprotokollen und Build-Protokollen.
+Der Entwicklungsagent wird erweitert, um Fragen im Zusammenhang mit Cloud Manager über den [Cloud Manager-Auftrag zu ](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). Rufen Sie im KI-Assistenten Informationen zu Programmen, Umgebungen und Pipelines ab (z. B. Ausführungsstatus). Schnelles Auffinden von Links zu Fehlerprotokollen, Zugriffsprotokollen und Build-Protokollen.
 
 #### Verbesserungen bei der Fehlerbehebung bei Pipeline-Agent-Vorgängen {#devagent-pipeline-troubleshooting}
 
-Der Vorgang zur Fehlerbehebung bei [-Pipelines &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) Entwicklern, Probleme in AEM as a Cloud Service-Bereitstellungen zu diagnostizieren und zu beheben. Zu den neuen Funktionen gehören:
+Der Vorgang zur Fehlerbehebung bei [-Pipelines ](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) Entwicklern, Probleme in AEM as a Cloud Service-Bereitstellungen zu diagnostizieren und zu beheben. Zu den neuen Funktionen gehören:
 
 * Unterstützung für die Web-Stufen-Konfigurations-Pipeline : Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web-Stufen-Konfigurations-Pipeline**
 
@@ -238,7 +234,7 @@ Der Vorgang zur Fehlerbehebung bei [-Pipelines &#x200B;](/help/ai-in-aem/agents/
 
 #### Verwalten von Ruhezeiten und Aktualisieren von Freizeiten mit dem KI-Assistenten {#quiet-hours-ai}
 
-Sie können jetzt &quot;[&#x200B; Stunden“ und „Freie Zeiträume aktualisieren“ direkt über &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) AEM-KI-Assistenten anzeigen, erstellen und bearbeiten.
+Sie können jetzt &quot;[ Stunden“ und „Freie Zeiträume aktualisieren“ direkt über ](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) AEM-KI-Assistenten anzeigen, erstellen und bearbeiten.
 Der Hauptvorteil liegt in der Verringerung von Zeitplanfehlern. Wenn Sie eine Anfrage stellen, führt Sie der Assistent durch das Mögliche und kennzeichnet die geltenden Beschränkungen, z. B. die Obergrenze für drei Zeiträume, die obligatorische Lücke von einer Woche zwischen Zeiträumen und die geplanten Zeitfenster für Wartungsausschlüsse, für die Sie keinen Zeitplan festlegen können. Anstatt also nach einer fehlgeschlagenen Konfiguration eine Einschränkung zu ermitteln, werden Geschäftsinhaber und Bereitstellungs-Manager im selben Gespräch auf einen gültigen Zeitplan geleitet. Dadurch werden wichtige Geschäftsfenster vor automatischen Wartungs-Updates geschützt und gleichzeitig das Hin- und Herschieben und Fehlkonfigurieren reduziert.
 
 ### Wichtige Hinweise zu [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-notices}
@@ -288,9 +284,9 @@ Der lokale Dispatcher-MCP-Server ermöglicht es KI-Tools, die Dispatcher- und Ap
 
 Java 25 ist die nächste LTS-Version (Long-Term Support) nach Java 21, die Verbesserungen in den Bereichen Leistung, Entwicklerproduktivität und Sicherheit bietet:
 
-&#x200B;- **Leistung** - Verringerter Speicherbedarf, effizientere Speicherbereinigung und schnellere JVM-Aufwärmphase kommen Cloud-nativen Bereitstellungen zugute.
-&#x200B;- **Entwicklerproduktivität** - Sauberere Objektinitialisierung, ausdrucksstärkere Musterübereinstimmung und vereinfachte gleichzeitige Aufgabenverwaltung reduzieren Textbausteine und verbessern die Code-Klarheit.
-&#x200B;- **Sicherheit** - Modernisierte API für die Ableitung kryptografischer Schlüssel zur Vereinfachung gängiger Sicherheits-Workflows.
+- **Leistung** - Verringerter Speicherbedarf, effizientere Speicherbereinigung und schnellere JVM-Aufwärmphase kommen Cloud-nativen Bereitstellungen zugute.
+- **Entwicklerproduktivität** - Sauberere Objektinitialisierung, ausdrucksstärkere Musterübereinstimmung und vereinfachte gleichzeitige Aufgabenverwaltung reduzieren Textbausteine und verbessern die Code-Klarheit.
+- **Sicherheit** - Modernisierte API für die Ableitung kryptografischer Schlüssel zur Vereinfachung gängiger Sicherheits-Workflows.
 
 Um Unternehmen bei der Planung von Tests und Validierungen vor dem erforderlichen Java 25-Laufzeitupgrade zu unterstützen, stellt Adobe die folgenden Zieldaten bereit. Alle Aktualisierungen dieser Zeitleiste werden über Versionshinweise kommuniziert.
 
@@ -367,12 +363,12 @@ AEM as a Cloud Service unterstützt jetzt den OpenTelemetry-basierten Telemetrie
 
 Verwenden Sie diese Integration für Folgendes:
 
-&#x200B;- Untersuchen langsamer oder fehlgeschlagener Anfragen
-&#x200B;- JVM-Status und Ressourcennutzung im Zeitverlauf verfolgen
-&#x200B;- Erstellen von Dashboards und Warnhinweisen für Ihre AEM-Ebenen
-&#x200B;- Korrelieren des AEM-Verhaltens mit anderen Services während Vorfällen
+- Untersuchen langsamer oder fehlgeschlagener Anfragen
+- JVM-Status und Ressourcennutzung im Zeitverlauf verfolgen
+- Erstellen von Dashboards und Warnhinweisen für Ihre AEM-Ebenen
+- Korrelieren des AEM-Verhaltens mit anderen Services während Vorfällen
 
-Um sich der Alpha-Phase anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com, in der Ihr Anwendungsfall beschrieben wird.
+Um sich der Alpha-Phase anzuschließen, senden Sie eine E-Mail an [](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com, in der Ihr Anwendungsfall beschrieben wird.
 
 ### Funktionen von [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta {#assets-beta-program-features}
 
