@@ -191,7 +191,7 @@ Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, wa
 
 * **Sitemap generieren** – Wenn ausgewählt, wird eine `sitemap.xml` für diese Seite und ihre Unterseiten generiert.
 
-* **Strukturierte Daten (JSON-LD)** - Der hier definierte Inhalt wird innerhalb eines `<script type="application/ld+json">`-Tags im Seitenkopf von der „Seitenkomponente[ ausgegeben](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
+* **Strukturierte Daten (JSON-LD)** - Der hier definierte Inhalt wird innerhalb eines `<script type="application/ld+json">`-Tags im Seitenkopf von der „Seitenkomponente[&#x200B; ausgegeben](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
    * Klicken Sie **Hinzufügen**, um strukturierte Daten hinzuzufügen.
    * Jeder Eintrag muss ein vollständiges JSON-LD-Objekt eines [schema.org](https://schema.org)-Typs (z. B. FAQPage, HowTo oder Product) sein.
 
