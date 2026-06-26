@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
 workflow-type: tm+mt
-source-wordcount: '3249'
-ht-degree: 99%
+source-wordcount: '3341'
+ht-degree: 91%
 
 ---
 
@@ -61,18 +61,18 @@ Konfigurieren von [!DNL Adobe Sign] für ein adaptives Formular:
 1. [Aktivieren von [!DNL Adobe Sign] für ein adaptives Formular](#enableadobsignforanadaptiveform)
 1. [Hinzufügen von  [!DNL Adobe Sign] -Feldern zu einem adaptiven Formular](#addadobesignfieldstoanadaptiveform)
 1. [Auswahl von [!DNL Adobe Sign] as a Cloud Service für ein adaptives Formular](#select-adobe-sign-cloud-service-and-signing-order)
-
+1. [Festlegen des Dokumentenablaufs für eine Adobe Sign-Vereinbarung](#set-document-expiration-for-an-adobe-sign-agreement)
 1. [Hinzufügen eines [!DNL Adobe Sign] -Empfängers zu einem adaptiven Formular](#addsignerstoanadaptiveform)
 1. [Übermittlungsaktion für ein adaptives Formular auswählen](#selectsubmitactionforanadaptiveform)
 
-![Empfängerdetails](assets/signer_details_new.png)
+![Konfiguration elektronischer Signaturen einschließlich Gültigkeitsdauer des Dokuments (Tage) und Empfängereinstellungen](assets/signer_details_new.png)
 
 ### Aktivieren von [!DNL Adobe Sign] für ein adaptives Formular  {#enableadobesign}
 
 Sie können [!DNL Adobe Sign] für ein vorhandenes adaptives Formular aktivieren oder ein [!DNL Adobe Sign]-fähiges adaptives Formular erstellen. Wählen Sie eine der folgenden Möglichkeiten:
 
 * [Ein  [!DNL Adobe Sign] -fähiges adaptives Formular erstellen](#create-an-adaptive-form-for-adobe-sign)
-* [&#x200B; [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
+* [ [!DNL Adobe Sign]  für ein vorhandenes adaptives Formular aktivieren](#editafsign).
 
 #### Erstellen eines adaptiven Formulars für Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
@@ -191,6 +191,22 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 
 1. [Fügen Sie dem adaptiven Formular Empfängerinnen und Empfänger hinzu](working-with-adobe-sign.md#addsignerstoanadaptiveform) und wählen Sie das Symbol „Fertig“ ![Speichern](assets/save_icon.svg), um die Änderungen zu speichern.
 
+### Festlegen des Dokumentenablaufs für eine Adobe Sign-Vereinbarung {#set-document-expiration-for-an-adobe-sign-agreement}
+
+Sie können in Adobe Sign-Vereinbarungen eine Ablauffrist festlegen, sodass Empfängerinnen und Empfänger das Signieren innerhalb einer bestimmten Anzahl von Tagen abschließen müssen. Wenn ein Formular gesendet wird, übergibt AEM Forms den konfigurierten Wert als `daysUntilSigningDeadline` an Adobe Sign.
+
+So legen Sie den Dokumentenablauf fest:
+
+1. Wählen Sie im Inhalts-Browser **[!UICONTROL Formular-Container]** und das Symbol **[!UICONTROL Konfigurieren]** ![configure](assets/Smock_Wrench_18_N.svg) aus.
+1. Erweitern Sie im Eigenschaftenbrowser das Akkordeon **[!UICONTROL Elektronische Signatur]** und wählen Sie die Option **[!UICONTROL Adobe Sign aktivieren]**.
+1. Geben Sie im Feld **[!UICONTROL Dokumentenablauf (Tage)]** die Anzahl der Tage an, innerhalb derer die Empfänger das Signieren abschließen müssen.
+
+1. Wählen Sie das Symbol Fertig ![Speichern](assets/save_icon.svg), um die Änderungen zu speichern.
+
+>[!NOTE]
+>
+> Das Feld **[!UICONTROL Dokumentablauf (Tage)]** ist optional. Wenn Sie es leer lassen, läuft die Vereinbarung nicht ab.
+
 ### Hinzufügen von Empfängern zu einem adaptiven Formular {#addsignerstoanadaptiveform}
 
 Es kann einen oder mehrere Empfänger für eine Adobe Sign-Vereinbarung geben. Wenn Sie einen Empfänger hinzufügen, können Sie auch Authentifizierungsdetails für den Empfänger konfigurieren und auswählen, ob der Formularausfüller und der Empfänger dieselbe Person sind. Führen Sie die folgenden Schritte durch, um einen Empfänger hinzuzufügen und seine Details anzugeben:
@@ -301,7 +317,7 @@ Optional können Sie auch eine „bindref“ mit einer Vereinbarungs-ID (agreeme
 >Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-Damit ist der Ablauf zur Formularunterzeichnung vollständig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen. Im veröffentlichten Formular werden [!DNL Adobe Sign]-Blockfelder angezeigt, wenn ein Empfänger das Formular per E-Mail zum Signieren erhält. Wenn die Option **[!UICONTROL Ist der Empfänger mit der Person identisch, die das Formular ausfüllt?]** mit „Ja“ gekennzeichnet und die Bedingung erfüllt ist, wird der Benutzer nach den Übermittlungen zur Adobe Sign-Vereinbarung weitergeleitet, und der Benutzer kann das Dokument sofort signieren, anstatt darauf zu warten, dass die Vereinbarung per E-Mail eintrifft.
+Damit ist der Ablauf zur Formularunterzeichnung vollständig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen. Im veröffentlichten Formular werden [!DNL Adobe Sign]-Blockfelder angezeigt, wenn ein Empfänger das Formular per E-Mail zum Signieren erhält. Wenn die **[!UICONTROL Wann ist der Empfänger mit der Person identisch, die das Formular ausfüllt?]** mit „Ja“ gekennzeichnet und die Bedingung erfüllt ist, wird der Benutzer nach den Übermittlungen zur Adobe Sign-Vereinbarung weitergeleitet, und der Benutzer kann das Dokument sofort signieren, anstatt darauf zu warten, dass die Vereinbarung per E-Mail eintrifft.
 
 ## Konfigurieren von Cloud-Signaturen für ein adaptives Formular {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -349,21 +365,21 @@ Die Komponente **[!UICONTROL Zusammenfassungsschritt]** übermittelt automatisch
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
-**F:** Es ist möglich, ein adaptives Formular in ein anderes adaptives Formular einzubetten. Kann das eingebettete adaptive Formular für [!DNL Adobe Sign] aktiviert werden?
-**A:** Nein. Experience Manager Forms unterstützt die Verwendung eines adaptiven Formulars, das ein [!DNL Adobe Sign]-fähiges adaptives Formular zum Signieren einbettet, nicht.
+**F:** Sie können ein adaptives Formular in ein anderes adaptives Formular einbetten. Kann das eingebettete adaptive Formular [!DNL Adobe Sign] aktiviert werden?
+**A:** Nein. Experience Manager Forms unterstützt die Verwendung eines adaptiven Formulars, das ein [!DNL Adobe Sign] aktiviertes adaptives Formular zum Signieren einbettet, nicht
 
-**F:** Wenn ich ein adaptives Formular unter Verwendung der erweiterten Vorlage erstelle und es zur Bearbeitung öffne, wird die Fehlermeldung „Elektronische Signatur oder Empfänger sind nicht korrekt konfiguriert“ angezeigt. Wie behebe ich den Fehler?
-**A:** Adaptive Formulare, die die erweiterte Vorlage nutzen, sind für die Verwendung von [!DNL Adobe Sign] konfiguriert. Um den Fehler zu beheben, erstellen Sie eine [!DNL Adobe Sign]-Cloud-Konfiguration, wählen Sie sie aus und konfigurieren Sie einen [!DNL Adobe Sign]-Empfänger für das adaptive Formular.
+**F:** Wenn ich ein adaptives Formular unter Verwendung der erweiterten Vorlage erstelle und es zur Bearbeitung öffne, wird die Fehlermeldung „Elektronische Signatur oder Empfänger sind nicht korrekt konfiguriert“ angezeigt. Wie kann ich die Fehlermeldung beheben?
+**A:** Adaptive Formular, das mit der erweiterten Vorlage erstellt wurde, ist für die Verwendung von [!DNL Adobe Sign] konfiguriert. Um den Fehler zu beheben, erstellen Sie eine [!DNL Adobe Sign] Cloud-Konfiguration, wählen Sie sie aus und konfigurieren Sie einen [!DNL Adobe Sign] Empfänger für das adaptive Formular.
 
 **F:** Kann ich [!DNL Adobe Sign]-Text-Tags in einer statischen Textkomponente eines adaptiven Formulars verwenden?
-**A:** Ja, Sie können Text-Tags in einer Textkomponente verwenden, um [!DNL Adobe Sign]-Felder einem adaptiven Formular mit Datensatzdokument hinzuzufügen (nur Option für automatisch generiertes Datensatzdokument). Informationen zu den Verfahren und Regeln zum Erstellen eines Text-Tags finden Sie in der [Adobe Sign-Dokumentation](https://helpx.adobe.com/de/sign/using/text-tag.html). Beachten Sie außerdem, dass adaptive Formulare Text-Tags nur begrenzt unterstützen. Sie können die Text-Tags verwenden, um nur die von [Adobe Sign-Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) unterstützten Felder zu erstellen.
+**A:** Ja, Sie können Text-Tags in einer Textkomponente verwenden, um [!DNL Adobe Sign] Felder einem adaptiven Formular mit Datensatzdokument hinzuzufügen (nur Option für automatisch generiertes Datensatzdokument). Informationen zu den Verfahren und Regeln zum Erstellen eines Text-Tags finden Sie unter [Adobe Sign-Dokumentation](https://helpx.adobe.com/de/sign/using/text-tag.html). Beachten Sie außerdem, dass adaptive Forms Text-Tags nur begrenzt unterstützen. Sie können die Text-Tags verwenden, um nur die Felder zu erstellen, die [Adobe Sign-Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) unterstützt.
 
 ## Fehlerbehebung {#troubleshoot}
 
 ### Fehler bei der [!DNL Adobe Sign]-Vereinbarung {#adobe-sign-agreement-failures}
 
 **Problem**
-Wenn der [!DNL Adobe Sign]-Service für ein adaptives Formular konfiguriert ist, kann vom Service keine [!DNL Adobe Sign]-Vereinbarung für das zugrunde liegende adaptive Formular erstellt werden.
+Wenn [!DNL Adobe Sign] Dienst für ein adaptives Formular konfiguriert ist, kann vom Dienst keine [!DNL Adobe Sign] für das zugrunde liegende adaptive Formular erstellt werden.
 
 **Auflösung**
 

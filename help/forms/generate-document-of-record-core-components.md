@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
 workflow-type: tm+mt
-source-wordcount: '3320'
-ht-degree: 43%
+source-wordcount: '3984'
+ht-degree: 37%
 
 ---
 
@@ -37,8 +37,10 @@ Um eine Übermittlungs-PDF zu erstellen, wird eine XFA- oder AcroForm-basierte V
 Sie haben folgende Möglichkeiten:
 
 * [Generieren einer XFA-basierten Übermittlungs-PDF](#generate-an-XFA-based-document-of-record)
+* [Verwenden von gebietsschemaspezifischen benutzerdefinierten XDP-Vorlagen für die Übermittlungs-PDF](#locale-specific-custom-xdp-templates-for-document-of-record)
 * [Erzeugen einer AcroForm-basierten (Acrobat Form PDF) Übermittlungs-PDF](#generate-an-Acroform-based-document-of-record)
 * [Automatisches Generieren einer Übermittlungs-PDF](#auto-generate-a-document-of-record)
+* [Konfigurieren der Übermittlungs-PDF für Formulare, die auf AEM Sites-Seiten eingebettet sind](#configure-document-of-record-for-forms-embedded-in-aem-sites)
 
 ## Bevor Sie beginnen {#components-to-automatically-generate-a-document-of-record}
 
@@ -60,6 +62,33 @@ Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen S
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für die PDF zur Übermittlung verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
+
+## Verwenden von gebietsschemaspezifischen benutzerdefinierten XDP-Vorlagen für die Übermittlungs-PDF {#locale-specific-custom-xdp-templates-for-document-of-record}
+
+Wenn Sie eine benutzerdefinierte XFA-Vorlage (XDP-Datei) als Vorlage für die PDF-Übermittlung zuordnen, können Sie gebietsschemaspezifische Versionen der Vorlage bereitstellen. AEM Forms wählt beim Generieren der Übermittlungs-PDF automatisch die entsprechende XDP-Datei basierend auf dem Formulargebietsschema aus.
+
+### Funktionsweise der gebietsschemaspezifischen Vorlagenauswahl
+
+1. Laden Sie eine standardmäßige XDP-Vorlage in Ihre AEM Forms-Instanz hoch. Beispiel: `a.xdp`.
+1. Um lokalisierte Vorlagen bereitzustellen, erstellen und laden Sie gebietsschemaspezifische XDP-Dateien im selben Ordner hoch, indem Sie die `basename.<locale>.xdp` der Namenskonvention verwenden. Beispiel:
+
+   * `a.xdp` — Standardvorlage
+   * `a.fr.xdp` — Vorlage für französisches Gebietsschema
+   * `a.de.xdp` — Deutsche Gebietsschema-Vorlage
+
+1. Konfigurieren Sie das adaptive Formular so **dass die Formularvorlage als Datensatzdokument-Vorlage zugeordnet wird** und wählen Sie die standardmäßige XDP-Datei aus (z. B. `a.xdp`).
+1. Wenn eine Übermittlungs-PDF generiert wird, verwendet AEM Forms das Gebietsschema des Formulars, um die Vorlage aufzulösen. Für ein Formular des Typs „Französisches Gebietsschema“ verwendet das System `a.fr.xdp`, wenn es vorhanden ist. Andernfalls wird es auf den `a.xdp` zurückgesetzt.
+
+### Beispiel-Workflow
+
+1. Laden Sie in **[!UICONTROL Forms]** > **[!UICONTROL Forms und Dokumente]** `a.xdp` und `a.fr.xdp` in denselben Ordner hoch (z. B. `/content/dam/formsanddocuments/testlang/`).
+1. Konfigurieren Sie die Einstellungen **[!UICONTROL Datensatzdokuments des Formulars]** um `a.xdp` als Vorlage zu verknüpfen.
+1. Wenn ein(e) Benutzende(r) die französische Version des Formulars ausfüllt und die Übermittlungs-PDF generiert oder herunterlädt, verwendet die PDF Inhalte aus der französischen XDP-Vorlage (z. B. lokalisierten Kopfzeilentext und Feldtitel, die in der Vorlage definiert sind).
+1. Übermittlungsaktionen, die einen PDF-Anhang zur Übermittlung enthalten (z. B **[!UICONTROL „E-Mail senden]**), enthalten auch die dem Gebietsschema entsprechende PDF.
+
+>[!NOTE]
+>
+> Gebietsschema-spezifische Unterstützung für benutzerdefinierte XDP-Vorlagen wird angewendet, wenn Sie eine Formularvorlage als Datensatzdokument-Vorlage verknüpfen. Informationen zur automatisch generierten PDF-Lokalisierung finden Sie unter [Verwenden von maschineller Übersetzung oder menschlicher Übersetzung, um ein auf Kernkomponenten basierendes adaptives Formular zu übersetzen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md).
 
 ## Generieren einer Acroform-basierten Übermittlungs-PDF {#generate-an-Acroform-based-document-of-record}
 
@@ -113,12 +142,53 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 -->
 
 Sie können Übermittlungsaktionen wie „E-Mail senden“, &quot;AEM-Workflow aufrufen“, „Power Automate-Fluss aufrufen“ und andere [Übermittlungsaktionen“ verwenden](configuring-submit-actions.md) um eine Übermittlungs-PDF zu erhalten.
-![Bildübermittlungsaktionen](/help/forms/assets/submit-actions-img.png)
+![Bild-Übermittlungsaktionen](/help/forms/assets/submit-actions-img.png)
 
 
 >[!NOTE]
 >
 > Sie können die Übermittlungs-PDF für jedes Formulardatenmodell speichern, indem Sie die **[!UICONTROL Bindungsverweis für das Datensatzdokument“]**.
+
+## Konfigurieren der Übermittlungs-PDF für Formulare, die auf AEM Sites-Seiten eingebettet sind {#configure-document-of-record-for-forms-embedded-in-aem-sites}
+
+Sie können eine Übermittlungs-PDF (Datensatzdokument) für ein adaptives Forms konfigurieren und generieren, das in AEM Sites-Seiten eingebettet ist, indem Sie die **[!UICONTROL Container für adaptive Formulare]** verwenden. Autorinnen und Autoren können DoR-Einstellungen direkt auf der Sites-Seite konfigurieren, ohne das Formular im Forms-Editor zu öffnen.
+
+### Bevor Sie beginnen
+
+* Ein adaptives Formular wird mithilfe der Komponente **[!UICONTROL Container für adaptive Formulare]** auf einer AEM Sites-Seite oder in einem Experience Fragment erstellt. Weitere Informationen finden Sie unter [Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+* Adaptive Forms-Client-Bibliotheken werden der Sites-Seitenvorlage hinzugefügt.
+
+### Konfigurieren von Submission PDF auf einer Sites-Seite
+
+1. Öffnen Sie im Bearbeitungsmodus die AEM Sites-Seite oder das Experience Fragment mit dem eingebetteten Formular.
+1. Wählen Sie die Komponente **[!UICONTROL Container für adaptive Formulare]** auf der Seite aus und klicken Sie auf das Symbol ![Konfigurieren](assets/configure-icon.svg).
+1. Öffnen Sie **[!UICONTROL Registerkarte]** Datensatzdokument“.
+1. Wählen Sie eine der folgenden Optionen aus:
+
+   * **None** - Keine PDF für die Übermittlung generieren.
+   * **Generieren eines Datensatzdokuments** - Automatisches Generieren einer Übermittlungs-PDF.
+   * **Formularvorlage als Datensatzdokument-Vorlage zuordnen** - Verwenden Sie eine benutzerdefinierte XDP- oder AcroForm-Vorlage. Durchsuchen Sie die Vorlage in Ihrer AEM Forms-Instanz und wählen Sie sie aus.
+
+1. (Optional) Wählen Sie **Dateianhänge aus Datensatzdokument ausschließen**, um hochgeladene Anhänge aus der Übermittlungs-PDF wegzulassen.
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
+
+### Anpassen der Eigenschaften von Datensatzdokumenten
+
+Nach der Aktivierung der Generierung der Übermittlungs-PDF können Sie das Branding und Layout auf der Sites-Seite anpassen:
+
+1. Wählen Sie den Stammbereich des eingebetteten Formulars im **[!UICONTROL Container für adaptive Formulare]** aus.
+1. Öffnen Sie in der Seitenleiste „Eigenschaften **[!UICONTROL die Registerkarte]** Datensatzdokument“.
+1. Konfigurieren Sie Optionen auf den Registerkarten **[!UICONTROL Allgemein]**, **[!UICONTROL Formularfeldeigenschaften]** und **[!UICONTROL Eigenschaften der Musterseite]**. Einzelheiten zu den einzelnen Eigenschaften finden Sie unter [Anpassen der Branding-Informationen in Submission PDF](#customize-the-branding-information-in-document-of-record).
+1. Klicken Sie auf **[!UICONTROL Fertig]**.
+
+### Vorschau und Herunterladen der Übermittlungs-PDF
+
+* Zeigen Sie eine Vorschau des Formulars auf der Sites-Seite an und senden Sie es, oder fügen Sie mit dem [Regel-Editor **eine Schaltfläche** DoR herunterladen](/help/forms/rule-editor-enhancements-use-cases.md#download-document-of-record) hinzu, um die PDF für die Übermittlung bei Bedarf zu generieren.
+* Übermittlungsaktionen, die für das eingebettete Formular konfiguriert sind (z **[!UICONTROL B. „E-Mail senden]** oder **[!UICONTROL AEM-Workflow aufrufen]**), können die generierte Übermittlungs-PDF enthalten.
+
+>[!NOTE]
+>
+> Die Generierung von Übermittlungs-PDF für Formulare, die in Sites-Seiten eingebettet sind, wird für adaptive Forms unterstützt, die mit Kernkomponenten in der Komponente **[!UICONTROL Container für adaptive Formulare]** erstellt wurden. Für Formulare, die mit der **[!UICONTROL Adaptive Forms - Einbettungskomponente (v2) hinzugefügt]**, konfigurieren Sie das Datensatzdokument im Forms-Editor.
 
 ## Inkrementelle Aktualisierungen der Vorlage für die PDF-Übermittlung {#document-of-record-template-incremental-updates}
 
@@ -148,7 +218,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF generiert.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit der Übermittlungs-PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -364,9 +434,9 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       **Kennzeichnungen für das Mehrfachauswahl-Dropdown-Menü anzeigen**
 
-      <span class="preview"> Diese Funktion ist über das Early Access-Programm verfügbar. Um den Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+      <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; &#x200B;](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
    1. **Eigenschaften der primären Seite**:
 
@@ -422,7 +492,7 @@ Die Einstellung der Komponente „Datensatzdokument“ ist in den Eigenschaften 
 
 ## Häufig gestellte Fragen {#faq}
 
-**F: Änderungen werden nicht in der Übermittlungs-PDF angezeigt.**
+**F: Änderungen werden nicht in der PDF für die Übermittlung angezeigt.**
 **A:** Öffnen Sie das Formular im Editor für adaptive Forms, nehmen Sie eine kleinere Bearbeitung vor (z. B. Anpassen einer Feldbezeichnung oder Neuanordnung eines Felds) und speichern Sie das Formular. Dadurch wird die Vorlage für die PDF-Übermittlung neu generiert, und die Änderungen werden in der nächsten generierten PDF angezeigt.
 
 ## Siehe auch {#see-also}
