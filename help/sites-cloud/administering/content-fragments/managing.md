@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
 workflow-type: tm+mt
-source-wordcount: '3402'
-ht-degree: 80%
+source-wordcount: '3451'
+ht-degree: 79%
 
 ---
 
@@ -405,14 +405,6 @@ Sie haben folgende Möglichkeiten:
 
    * mit [Visualisierungsvorlagen](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
-     <!-- CQDOC-23232 - remove when GA -->
-
-     >[!NOTE]
-     >
-     >Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
-     >
-     >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
    * In der [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)-Instanz
 
 * Veröffentlichen Sie Ihre Inhaltsfragmente in:
@@ -437,7 +429,7 @@ Sie haben folgende Möglichkeiten:
 
 >[!TIP]
 >
->Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
@@ -537,7 +529,7 @@ Mit dieser Funktion können Konflikte verhindert werden, wenn mehrere Benutzende
 
 >[!NOTE]
 >
->Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ &#x200B;](/help/assets/check-out-and-submit-assets.md).
+>Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ ](/help/assets/check-out-and-submit-assets.md).
 
 ### Auschecken eines Inhaltsfragments {#check-out-a-content-fragment}
 
@@ -654,14 +646,37 @@ Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entspre
 
 ## Suchen von Fragmenten {#searching-fragments}
 
-Das Suchfeld unterstützt die Volltextsuche. Geben Sie Ihre Suchbegriffe in das Suchfeld ein:
+Die Inhaltsfragmentkonsole unterstützt:
 
-![Konsole „Inhaltsfragmente“ – Suchen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
+* [Volltextsuche](#full-text-search)
+* [Semantische Suche](#semantic-search)
 
-Die ausgewählten Ergebnisse werden bereitgestellt:
+<!-- CQDOC-23674 - activate when toggle visible -->
+<!--
 
-![Konsole „Inhaltsfragmente“ – Suchergebnisse](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
+Use the toggle option to select your search method:
+
+![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
+-->
 
 Das Suchfeld bietet außerdem schnellen Zugriff auf die **letzten Inhaltsfragmente** und die **gespeicherten Suchvorgänge**:
 
 ![Konsole „Inhaltsfragmente“ – Zuletzt und gespeichert](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
+
+### Volltextsuche {#full-text-search}
+
+Mit der Volltextsuche können Sie den Inhalt des Inhaltsfragments nach einem bestimmten Wort oder einer Phrase durchsuchen. Geben Sie Ihre Suchbegriffe in das Suchfeld ein:
+
+![Inhaltsfragmentkonsole - Volltextsuche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-specification.png)
+
+Die ausgewählten Ergebnisse werden bereitgestellt:
+
+![Konsole „Inhaltsfragmente“ – Suchergebnisse](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+### Semantische Suche {#semantic-search}
+
+Die semantische Suche nach Inhaltsfragmenten verbessert die Inhaltssuche, indem sie Abfragen in natürlicher Sprache ermöglicht. So können Sie Fragmente basierend auf Bedeutung und Zweck suchen, anstatt sich ausschließlich auf exakte Keywords oder Volltexttreffer zu verlassen.
+
+Geben Sie Ihre Suchanfrage in das Suchfeld ein, z. B. `fruity and light roast`:
+
+![Inhaltsfragmentkonsole - semantische Suche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
