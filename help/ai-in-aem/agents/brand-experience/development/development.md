@@ -5,7 +5,7 @@ feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
 nudge: please
-source-git-commit: 4b652e866e4b009e186f1379f2ae451061182df8
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 8%
@@ -195,3 +195,4 @@ Debuggen Sie bei anderen Pipeline-Typen und -Schritten Fehler, indem Sie die Pro
 Debuggen Sie replikationsbezogene Probleme, z. B. blockierte Warteschlangen.
 
 aem-devagent@adobe.com Bitte eine E-Mail an [&#128279;](mailto:aem-devagent@adobe.com) senden, um Zugriff auf das Beta-Programm zu erhalten.
+

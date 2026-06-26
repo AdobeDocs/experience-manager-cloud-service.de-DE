@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: a42d2318380061c0ce9f894145e1812d0ec1fe1f
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 2%
@@ -432,3 +432,4 @@ logger.log(JSON.stringify({
 >
 >CDN-Protokolle, die AEM Edge-Funktionsprotokolleinträge enthalten, können für Java-Stack-Umgebungen von Cloud Manager heruntergeladen werden, nicht aber für Edge Delivery Sites.
 >
+

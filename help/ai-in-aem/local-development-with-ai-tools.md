@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie KI-Kodierungstools mit Projektkontext, Agente
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: eac2d89b3cebc134b40fc0e537cf66c78fa1db50
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -329,3 +329,4 @@ Andere IDEs können auf ähnliche Weise konfiguriert werden. Die `docs/Dispatche
 | `tail_logs` | Verweist relevante Dispatcher- und HTTPD-Laufzeitprotokolle |
 
 Die MCP-Oberfläche legt absichtlich nur diese sieben Tools offen. Eingabeaufforderungen und Ressourcen verbleiben in der Kompetenzschicht. Die vollständige Referenzdokumentation finden Sie in der `docs/DispatcherMCP.md` im extrahierten Dispatcher SDK.
+

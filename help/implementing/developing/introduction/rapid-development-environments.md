@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
 nudge: please
-source-git-commit: 4ba5d595f4043cb559343efded11907ce55971c1
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '6002'
 ht-degree: 85%
@@ -1276,3 +1276,4 @@ Der Kontext kann weiterhin verwendet werden. Im RDE-Plug-in wird eine Warnung an
 ##### Verwenden Sie einen anderen Kontextnamen auch für das Cloud Manager-Plug-in {#use-any-other-context-name-also-for-the-cloud-manager-plug-in}
 
 Die Cloud Manager-Plug-ins bieten einen Parameter zur Definition eines zu verwendenden Kontexts. Die standardmäßige IMS-Kontextkonfiguration wird noch nicht unterstützt. Konfigurieren Sie hierzu das RDE-Plug-in anhand des [Beispiels zum Einrichten eines lokalen Kontexts](/help/implementing/developing/introduction/rapid-development-environments.md#install-the-rde-command-line-tools) und weisen Sie das Cloud Manager-Plug-in an, bei jedem Aufruf `myContext` wie `--imsContextName=myContext` zu verwenden.
+

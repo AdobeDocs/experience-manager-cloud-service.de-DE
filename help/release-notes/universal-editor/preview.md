@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -35,3 +35,4 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 * Die Barrierefreiheit von Überschriftenhierarchien wurde verbessert.
 * Es wurden Verbesserungen an der Barrierefreiheit vorgenommen, damit der Fokus in der Positionsleiste ordnungsgemäß bleibt, um die Tastaturnavigation des Editors zu erleichtern.
+

@@ -4,7 +4,7 @@ description: Dies sind die Versionshinweise für die Version 2026.06.25 des univ
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c5aec0d045162327bad3d0d03b22386bf2effe6e
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 13%
@@ -36,3 +36,4 @@ Dies sind die Versionshinweise für die Version 25. Juni 2026 des universellen E
 
 * Zahlreiche Schaltflächen haben jetzt korrekt barrierefreie Namen.
 * Ein Problem mit der Beibehaltung bestimmter Inhaltsfragmente nach ihrer Auswahl mit einer Auswahl wurde behoben.
+
