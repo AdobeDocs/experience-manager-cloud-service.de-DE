@@ -1,12 +1,12 @@
 ---
 title: Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation
-description: Entdecken Sie die zugehörige Benutzeroberfläche im Editor für interaktive Kommunikation, indem Sie kundenorientierten Agenten die Erstellung personalisierter, konformer Kommunikationen ermöglichen.
+description: Entdecken Sie die Benutzeroberfläche „Associate“ im Editor für interaktive Kommunikation, indem Sie kundenorientierten Mitarbeitern ermöglichen, personalisierte, konforme Kommunikation zu generieren.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 # Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation
 
 
-Die **Associate-Benutzeroberfläche** ist eine spezielle, vereinfachte Benutzeroberfläche, die auf dem Editor für interaktive Kommunikation (IC) aufbaut. Es wurde für kundenorientierte Fachleute wie Außendienstmitarbeiter und Service-Agenten entwickelt, um während Live-Interaktionen in Echtzeit personalisierte, konforme und genaue Kommunikation zu generieren.
+Die **Associate-Benutzeroberfläche** ist eine spezielle, vereinfachte Benutzeroberfläche, die auf dem Editor für interaktive Kommunikation (IC) aufbaut. Es wurde für kundenorientierte Fachleute wie Außendienstmitarbeiter und Service-Vertreter entwickelt, um während Live-Interaktionen in Echtzeit personalisierte, konforme und genaue Kommunikation zu generieren.
 
 ![IC-Dokument suchen](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 

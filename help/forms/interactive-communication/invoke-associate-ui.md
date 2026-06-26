@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die AEM Forms Associate-Benutzeroberfläche i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 # Integrieren der Associate-Benutzeroberfläche in Ihr Programm
 
 
-In diesem Artikel wird erläutert, wie Sie die Benutzeroberfläche „Verknüpfen“ in Ihr Programm integrieren und es kundenorientierten Fachleuten wie Außendienstmitarbeitern und Service-Agenten ermöglichen, in Echtzeit personalisierte interaktive Kommunikation in Veröffentlichungsinstanzen zu generieren.
+In diesem Artikel wird erläutert, wie Sie die Benutzeroberfläche „Verknüpfen“ in Ihr Programm integrieren und es kundenorientierten Fachleuten wie Außendienstmitarbeitern und Service-Mitarbeitern ermöglichen, in Echtzeit personalisierte interaktive Kommunikation in Veröffentlichungsinstanzen zu generieren.
 
 ## Voraussetzungen
 

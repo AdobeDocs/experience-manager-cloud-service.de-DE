@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie eine Komponente von einer Design-Seite auf di
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms."
 exl-id: move-component-to-master-page-ic-editor
-source-git-commit: 38a10bc5caaa1615188d2e6623b9d432bd4c3d69
+source-git-commit: 6c8d7cdd025e547631687d491dd8af125555c3c9
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 2%

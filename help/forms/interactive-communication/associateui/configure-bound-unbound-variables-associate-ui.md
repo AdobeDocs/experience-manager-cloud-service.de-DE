@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie gebundene und ungebundene Variablen in Textko
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms."
 exl-id: configure-bound-unbound-variables-associate-ui
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1404'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Autoren aktivieren die Bearbeitung in Verbindung **„Bearbeitung zulassen nach*
 | Wer? | Vorteil |
 |-----|---------|
 | **Author (Interactive Communication Designer)** | Wählen Sie aus, ob Verknüpfungen inline in der Vorschau oder Feld für Feld im Dateneingabefeld bearbeiten sollen. |
-| **Mitarbeiter (Agent/Service-Vertreter)** | Geben Sie Daten in den Workflow ein, der am besten zur Kommunikation passt - Inline-Bearbeitung oder strukturierter Bedienfeldeintrag. |
+| **Mitarbeiter (Service-Mitarbeiter)** | Geben Sie Daten in den Workflow ein, der am besten zur Kommunikation passt - Inline-Bearbeitung oder strukturierter Bedienfeldeintrag. |
 
 ## Bevor Sie beginnen
 
@@ -44,6 +44,7 @@ Eine ungebundene Variable wird direkt in einer **Text**-Komponente erstellt und 
 
 - Das Bedienfeld **Feld** Eigenschaften zeigt **Name**, **Wert**, **Anzeigetyp** und **Bindung**.
 - Unter **Eigenschaften zuordnen** können Sie **QuickInfo** und **Validierungen** konfigurieren.
+
 
 ## Gesamte Textkomponente in der Dokumentvorschau bearbeiten
 
@@ -79,6 +80,7 @@ Aktivieren Sie **Bearbeitung durch Verknüpfung zulassen** für die Komponente *
    ![Bearbeiten der gesamten Textkomponente inline in der Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/assets/bound-unbound-variable2.png)
 
 1. Wählen Sie optional **Druckvorschau**, um zu bestätigen, dass die generierte Ausgabe mit der Vorschau übereinstimmt.
+
 
 ## Bearbeiten einzelner Variablen im Dateneingabefeld
 
@@ -131,6 +133,7 @@ Deaktivieren Sie **Bearbeitung durch Verknüpfung zulassen** in der Komponente *
 
 1. Wählen Sie optional **Druckvorschau**, um zu bestätigen, dass die generierte Ausgabe mit der Vorschau übereinstimmt.
 
+
 ## Doppelte Variablennamen (gebunden und ungebunden)
 
 Wenn gebundene und ungebundene Variablen mit demselben Namen an mehreren Stellen auf der Design-Arbeitsfläche angezeigt werden, wird im linken Dateneingabefeld nur eine Instanz jedes Variablennamens angezeigt. Der Associate gibt jeden Wert einmal ein. Er wird automatisch an alle entsprechenden Vorkommen in der Dokumentvorschau weitergegeben.
@@ -163,6 +166,7 @@ Wenn gebundene und ungebundene Variablen mit demselben Namen an mehreren Stellen
    ![Überprüfen der Übertragung doppelter Variablen in der Associate-Benutzeroberfläche](/help/forms/interactive-communication/assets/bound-unbound-variable8.png)
 
 1. Wählen Sie optional **Druckvorschau**, um zu bestätigen, dass die generierte Ausgabe mit der Vorschau übereinstimmt.
+
 
 ## Überlegungen
 
