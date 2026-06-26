@@ -210,7 +210,7 @@ Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die ü
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Container für adaptive Formulare]**, der Ihr adaptives Formular enthält. Eine AEM Sites-Seite kann mehrere adaptive Formulare hosten. Wählen Sie daher sorgfältig den richtigen Container für adaptive Formulare aus.
-1. Klicken Sie auf das Symbol für die Eigenschaften ![ Containers für adaptive Formulare (Eigenschaften ](/help/forms/assets/configure-icon.svg) Container für adaptive Formulare). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Übermittlungsaktionen wird geöffnet.
+1. Klicken Sie auf das Symbol für die Eigenschaften ![&#x200B; Containers für adaptive Formulare (Eigenschaften &#x200B;](/help/forms/assets/configure-icon.svg) Container für adaptive Formulare). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Übermittlungsaktionen wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld „Container für ein adaptives Formular“ zu öffnen und eine Übermittlungsaktion für ein adaptives Formular zu konfigurieren.](/help/forms/assets/adaptive-forms-container.png)
 1. Wählen Sie je nach Ihren Anforderungen eine Sendeaktion aus und konfigurieren Sie sie. Detaillierte Informationen zu Sendeaktionen finden Sie unter [Sendeaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md)
 
@@ -226,7 +226,7 @@ So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell (FDM) für Ihr
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Container für adaptive Formulare]**, der Ihr adaptives Formular enthält. Eine AEM Sites-Seite kann mehrere adaptive Formulare hosten. Wählen Sie daher sorgfältig den richtigen Container für adaptive Formulare aus.
-1. Klicken Sie auf das Symbol für die Eigenschaften ![ Containers für adaptive Formulare (Eigenschaften ](/help/forms/assets/configure-icon.svg) Container für adaptive Formulare). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
+1. Klicken Sie auf das Symbol für die Eigenschaften ![&#x200B; Containers für adaptive Formulare (Eigenschaften &#x200B;](/help/forms/assets/configure-icon.svg) Container für adaptive Formulare). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um Datenmodelle für das adaptive Formular zu konfigurieren.](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Wählen Sie ein JSON-Schema oder ein Formulardatenmodell (FDM) aus und konfigurieren Sie es entsprechend Ihren Anforderungen. Detaillierte Informationen zu Sendeaktionen finden Sie unter [Sendeaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md).
 
@@ -259,7 +259,7 @@ Sie können den Vorbefüllungsdienst für Formulardatenmodelle verwenden, um Fel
 
 1. Öffnen Sie den AEM Seiten-Editor oder das Experience Fragment, das das adaptive Formular enthält.
 1. Öffnen Sie die Inhaltsstruktur und wählen Sie den **[!UICONTROL Container für adaptive Formulare]**, der Ihr adaptives Formular enthält. Eine AEM Sites-Seite kann mehrere adaptive Formulare hosten. Wählen Sie daher sorgfältig den richtigen Container für adaptive Formulare aus.
-1. Klicken Sie auf das Symbol für die Eigenschaften ![ Containers für adaptive Formulare (Eigenschaften ](/help/forms/assets/configure-icon.svg) Container für adaptive Formulare). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
+1. Klicken Sie auf das Symbol für die Eigenschaften ![&#x200B; Containers für adaptive Formulare (Eigenschaften &#x200B;](/help/forms/assets/configure-icon.svg) Container für adaptive Formulare). Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld „Container für ein adaptives Formular“ zu öffnen und den Vorbefüllungsdienst für das adaptive Formular zu konfigurieren](/help/forms/assets/adaptive-forms-container.png)
 1. Wählen Sie ein Formulardatenmodell aus. Öffnen Sie die Registerkarte **[!UICONTROL Allgemein]**. Wählen Sie im Vorbefüllungsdienst die Option **[!UICONTROL Vorbefüllungsdienst für Formulardatenmodell]**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**. Ihr adaptives Formular ist jetzt so konfiguriert, dass es die Vorbefüllung für Formulardatenmodelle verwendet. Sie können nun den [Regeleditor](rule-editor.md) verwenden, um Regeln zu erstellen, nach denen Felder des Formulars vorausgefüllt werden.
