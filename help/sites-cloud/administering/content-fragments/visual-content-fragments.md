@@ -3,9 +3,9 @@ title: Visual Content Fragments
 description: Erfahren Sie, wie Sie visuelle Inhaltsfragmente mithilfe von HTML-Vorlagen visualisieren und veröffentlichen.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,9 @@ Inhaltsfragmente enthalten strukturierten Inhalt, der für die JSON-Ausgabe ohne
 
 Die gerenderte Ausgabe eines AEM-Inhaltsfragments, das das Layout und Design einer angehängten HTML-Vorlage verwendet, wird als &quot;*Inhaltsfragment“*.
 
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
->
->Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
 HTML-Vorlagen enthalten Layout- und Design-Informationen, die die Visualisierung von Inhaltsfragmenten ermöglichen. Die Verbindung zwischen einer Vorlage und einem Inhaltsfragment wird mithilfe der Handlebars-Syntax hergestellt, um HTML-Tags den im Inhaltsfragmentmodell definierten Datentypen (Feldern) zuzuordnen. Diese Definition ermöglicht die Anzeige von Inhalten, die in den entsprechenden Feldern des Inhaltsfragment-Editors erstellt wurden, an den entsprechenden Stellen innerhalb der Vorlage.
 
-Sie oder Ihr Entwicklungs-Team können [Ihre eigenen HTML-Vorlagen erstellen und anpassen](/help/implementing/developing/extending/content-fragments-visualization-templates.md) und dann [eines oder mehrere von ihnen hochladen und an Inhaltsfragmentmodelle anhängen](#upload-and-assign-your-template) sodass die entsprechenden Fragmente in Erlebnisse gerendert, [in der Vorschau angezeigt](#preview-your-fragment-with-a-template) und nach Bedarf [&#x200B; bereitgestellt werden können](#deliver-your-visual-content-fragment).
+Sie oder Ihr Entwicklungs-Team können [Ihre eigenen HTML-Vorlagen erstellen und anpassen](/help/implementing/developing/extending/content-fragments-visualization-templates.md) und dann [eines oder mehrere von ihnen hochladen und an Inhaltsfragmentmodelle anhängen](#upload-and-assign-your-template) sodass die entsprechenden Fragmente in Erlebnisse gerendert, [in der Vorschau angezeigt](#preview-your-fragment-with-a-template) und nach Bedarf [ bereitgestellt werden können](#deliver-your-visual-content-fragment).
 
 >[!NOTE]
 >
@@ -71,7 +63,7 @@ Hochladen der neuen HTML-Vorlage:
 1. Geben Sie einen **Vorlagennamen** zur Verwendung in AEM ein.
 1. Bestätigen Sie mit **Vorlage erstellen**.
 1. Die Vorlage wird in AEM erstellt und unter **HTML-Vorlagen** in den Eigenschaften von Inhaltsfragmentmodellen aufgeführt.
-Nach dem Laden kann sie für die [Vorschau von Fragmenten) &#x200B;](#preview-your-fragment-with-a-template) werden. Sie können die Vorlage auch **[Herunterladen](#download-your-template)** oder **[Löschen](#download-your-template)**.
+Nach dem Laden kann sie für die [Vorschau von Fragmenten) ](#preview-your-fragment-with-a-template) werden. Sie können die Vorlage auch **[Herunterladen](#download-your-template)** oder **[Löschen](#download-your-template)**.
 
 ## Vorschau eines Fragments mit einer Vorlage {#preview-your-fragment-with-a-template}
 
@@ -120,7 +112,7 @@ Kopieren Sie die **Vorschau-URL** oder die **Veröffentlichungs-URL**. Greifen S
 Sie können Ihr visuelles Fragment auf einer Edge Delivery Service (EDS)-Seite bereitstellen.
 
 1. Navigieren Sie zu Ihrem EDS-Projekt.
-1. Fügen Sie einen (Block **[des &#x200B;](https://www.aem.live/developer/block-collection)** (**[) hinzu oder greifen Sie &#x200B;](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**.
+1. Fügen Sie einen (Block **[des ](https://www.aem.live/developer/block-collection)** (**[) hinzu oder greifen Sie ](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**.
 1. Fügen Sie die **Veröffentlichungs-URL** in den Block ein.
 1. Veröffentlichen Sie Ihre EDS-Seite. Die HTML-Darstellung Ihres Fragments wird angezeigt.
 
@@ -132,7 +124,7 @@ Sie können Ihr visuelles Fragment auf einer Edge Delivery Service (EDS)-Seite b
 
 Sie können Ihr visuelles Inhaltsfragment auf einer AEM-Seite mithilfe der Kernkomponente bereitstellen: Inhaltsfragment.
 
-Beim Konfigurieren einer **Inhaltsfragment**-Komponente [&#x200B; Ihrer Seite](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
+Beim Konfigurieren einer **Inhaltsfragment**-Komponente [ Ihrer Seite](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
 
 1. Geben Sie das erforderliche **Inhaltsfragment** an.
 1. Wählen Sie **Inhaltsfragmentvisualisierung** aus.

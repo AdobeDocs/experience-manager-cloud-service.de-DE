@@ -3,9 +3,9 @@ title: Visuelle Inhaltsfragmente - Versand über die Veröffentlichungs-URL
 description: Verwenden Sie die Veröffentlichungs-URL, um visuelle Inhaltsfragmente bereitzustellen.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 65d8d29ba13b0c5d8360aad4bc0742bd7f625922
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,6 @@ https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemp
 ```
 
 Diese URL gibt ein *eigenständiges HTML-Dokument* (einschließlich Inline-CSS und -Struktur) zurück, das in jeden Web-Kontext eingebettet werden kann.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
->
->Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Einbettungstechniken - Übersicht {#embedding-techniques-overview}
 
@@ -341,3 +333,16 @@ Verwenden Sie Folgendes als Entscheidungshandbuch, um die geeignete Methode ausz
 | Benötigen Sie die schnellsten Konflikte mit Prototypen, identischen Quellen und CSS? | Inline-Element |
 | Einbetten in Edge Delivery Services? | Block einbetten (iframe unter der Haube) |
 | Einbetten in AEM Sites-Seiten? | Kernkomponente (Shadow DOM, integriert) |
+
+
+## Zusätzliche Ressourcen {#additional-resources}
+
+Zusätzliche Ressourcen sind verfügbar:
+
+* [Dokumentation zu AEM-Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+
+<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
+
+<!--
+* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
+-->

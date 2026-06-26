@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 37%
+source-wordcount: '533'
+ht-degree: 39%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können eine Vorschau Ihres Fragments anzeigen:
 
 * mit einer [Visualisierungsvorlage (HTML)](#preview-with-visualization-html-templates)
 
-Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ &#x200B;](/help/sites-cloud/administering/content-fragments/authoring.md).
+Sie können Ihr Fragment natürlich auch im [Inhaltsfragment-Editor“ ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >
@@ -87,7 +87,7 @@ Sie können eine Vorschau eines Inhaltsfragments in einer externen Anwendung anz
 
 >[!NOTE]
 >
->Für [&#x200B; Option muss &#x200B;](#preview-url-pattern) „Vorschau des URL-Musters“ konfiguriert werden.
+>Für [ Option muss ](#preview-url-pattern) „Vorschau des URL-Musters“ konfiguriert werden.
 
 1. Navigieren Sie in der Inhaltsfragmentkonsole zum Speicherort des gewünschten Fragments.
 1. Fragment im Editor öffnen
@@ -95,14 +95,6 @@ Sie können eine Vorschau eines Inhaltsfragments in einer externen Anwendung anz
 1. Wählen Sie **Anwendung** aus, um Ihr Fragment in der externen Anwendung zu öffnen, z. B. im [universellen Editor](/help/implementing/universal-editor/introduction.md).
 
 ## Vorschau mit Visualisierungsvorlagen (HTML) {#preview-with-visualization-html-templates}
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
->
->Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 Mit AEM können Sie eine Vorschau Ihres Inhaltsfragments mithilfe eines visuellen Layouts anzeigen, das auf einer HTML-Vorlage basiert.
 

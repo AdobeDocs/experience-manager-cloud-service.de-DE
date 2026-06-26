@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Brand Experience Agent die Modernisierung und Wei
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '657'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Durch diese Agenten übernimmt die Brand Experience Agent die umfangreiche opera
 >
 >KI-generierte Antworten können ungenau oder irreführend sein. Überprüfen Sie unbedingt die vorgeschlagenen Fehlerbehebungen und Antworten.
 >
->Siehe auch [Benutzerhandbücher für die generative KI von Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Siehe auch [Benutzerhandbücher für generative KI von Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Experience Modernization Agent {#experience-modernization}
 
@@ -40,7 +40,7 @@ Durch diese Agenten übernimmt die Brand Experience Agent die umfangreiche opera
 
 Die Erlebnismodernisierung beseitigt die Reibungen bei umfangreichen Site-Migrationen, indem bestehende Erlebnisse automatisch modernisiert werden, was Teams dabei hilft, schneller umzusteigen und gleichzeitig Kontinuität, Qualität und Vertrauen aufrechtzuerhalten.
 
-Migrationen können von einer Live-Quell-Website, von Figma-Designs oder einer Kombination aus beidem gesteuert werden. Der Agent unterstützt [Redesign-Migrationen, die Quellinhalte in Figma-abgeleitete Blöcke &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign), und [Generieren neuer Seiten direkt aus Figma-Frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
+Migrationen können von einer Live-Quell-Website, von Figma-Designs oder einer Kombination aus beidem gesteuert werden. Der Agent unterstützt [Redesign-Migrationen, die Quellinhalte in Figma-abgeleitete Blöcke ](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign), und [Generieren neuer Seiten direkt aus Figma-Frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
 
 ## Erlebnisproduktionsagent {#experience-production}
 
@@ -63,14 +63,6 @@ Der Auftrag [Content erstellen](/help/ai-in-aem/agents/brand-experience/experien
 ### Auftrag „Figma zu visuellen Inhaltsfragmenten“ {#figma-to-visual-content-fragments}
 
 Der Auftrag [Figma zu visuellen Inhaltsfragmenten](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) importiert Figma-Designs in AEM-Inhaltsmodelle, Inhaltsfragmente und HTML-Vorlagen.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Der Auftrag Figma zu visuellen Inhaltsfragmenten ist derzeit eingeschränkt verfügbar.
->
->Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Forms-Erstellungsauftrag {#forms-creation}
 
