@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 65cac96f2d99100ffd50679c0c2b19da232efa70
 workflow-type: tm+mt
-source-wordcount: '2938'
-ht-degree: 93%
+source-wordcount: '2910'
+ht-degree: 94%
 
 ---
 
@@ -555,14 +555,6 @@ Beide Optionen sind über die Option **Vorschau** in der oberen Symbolleiste ver
 * **Vorlage**
 
    * Mit dieser Option können Sie eine Vorschau Ihres Inhaltsfragments mit **[Visualisierungsvorlagen (HTML))](#preview-with-visualization-html-templates)**.
-
-     <!-- CQDOC-23232 - remove when GA -->
-
-     >[!NOTE]
-     >
-     >Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
-     >
-     >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Veröffentlichen Ihres Fragments {#publish-content-fragment}
 

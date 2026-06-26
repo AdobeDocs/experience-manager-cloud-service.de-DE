@@ -3,9 +3,9 @@ title: Visual Content Fragments
 description: Erfahren Sie, wie Sie visuelle Inhaltsfragmente mithilfe von HTML-Vorlagen visualisieren und veröffentlichen.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,6 @@ Inhaltsfragmente enthalten strukturierten Inhalt, der für die JSON-Ausgabe ohne
 * Die Bereitstellung eines visuellen Fragments unterstützt die Omni-Channel-Bereitstellung und ermöglicht die Wiederverwendung modularer Erlebnisse in Kanälen wie Web, E-Mail oder Mobile Apps.
 
 Die gerenderte Ausgabe eines AEM-Inhaltsfragments, das das Layout und Design einer angehängten HTML-Vorlage verwendet, wird als &quot;*Inhaltsfragment“*.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
->
->Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 HTML-Vorlagen enthalten Layout- und Design-Informationen, die die Visualisierung von Inhaltsfragmenten ermöglichen. Die Verbindung zwischen einer Vorlage und einem Inhaltsfragment wird mithilfe der Handlebars-Syntax hergestellt, um HTML-Tags den im Inhaltsfragmentmodell definierten Datentypen (Feldern) zuzuordnen. Diese Definition ermöglicht die Anzeige von Inhalten, die in den entsprechenden Feldern des Inhaltsfragment-Editors erstellt wurden, an den entsprechenden Stellen innerhalb der Vorlage.
 

@@ -3,24 +3,16 @@ title: Erstellen von Visualisierungsvorlagen für Inhaltsfragmente
 description: Vorschau und Veröffentlichung von Inhaltsfragmenten mit Visualisierungsvorlagen. Erfahren Sie, wie Sie die Vorlagen erstellen und anpassen können.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: c2f78402233872c0b9b8c12e767130f461366b24
+source-git-commit: 0fe5e82962b7407d879f937d859d54aa6cb739f3
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 3%
+source-wordcount: '2083'
+ht-degree: 4%
 
 ---
 
 # Visuelle Inhaltsfragmente - Vorlagen {#visual-content-fragments-templates}
 
 In Adobe Experience Manager (AEM) as a Cloud Service können HTML-Vorlagen verwendet werden, um Inhaltsfragmente zu visualisieren und im HTML-Format bereitzustellen.
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visuelle Inhaltsfragmente und der Auftrag „Figma zu visuellen Inhaltsfragmenten“ sind derzeit nur eingeschränkt verfügbar.
->
->Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 Mit HTML-Vorlagen können Sie steuern, wie Ihre Inhaltsfragmente angezeigt werden. Sie können HTML-Vorlagen in Ihrem Codeeditor erstellen und diese dann hochladen und Inhaltsfragmentmodellen in AEM zuweisen.  Platzhalter für Inhalte mit Handlebars.js ermöglichen die Zuordnung der Vorlage zu Datentypen im Inhaltsfragmentmodell. Sobald eine Vorlage einem Modell zugewiesen wurde, kann sie mit jedem auf dem Modell basierenden Inhaltsfragment verwendet werden, um das Fragment zu visualisieren oder als modulares Erlebnis im HTML-Format für jeden Kanal bereitzustellen, z. B. Web, E-Mail, Mobile App oder andere.
 
@@ -1281,3 +1273,8 @@ Zusätzliche Ressourcen sind verfügbar:
 * [Integrierte Handlebars-Helfer](https://handlebarsjs.com/guide/builtin-helpers.html)
 * [Dokumentation zu AEM-Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
+<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
+
+<!--
+* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
+-->

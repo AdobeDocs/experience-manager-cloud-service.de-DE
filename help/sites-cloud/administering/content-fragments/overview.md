@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 65cac96f2d99100ffd50679c0c2b19da232efa70
 workflow-type: tm+mt
-source-wordcount: '2553'
-ht-degree: 77%
+source-wordcount: '2525'
+ht-degree: 78%
 
 ---
 
@@ -69,15 +69,6 @@ Inhaltsfragmente können auch bereitgestellt werden in:
 
    * bietet eine visuelle Darstellung, die die Vorschau und Überprüfung von Inhalten erleichtert
    * bietet eine visuelle Darstellung für die direkte und sofortige Verwendung durch externe Kanäle und Anwendungen
-
-  <!-- CQDOC-23232 - remove when GA -->
-
-  >[!NOTE]
-  >
-  >Visuelle Inhaltsfragmente sind derzeit nur eingeschränkt verfügbar.
-  >
-  >Wenn Sie teilnehmen möchten, senden Sie bitte eine Anfrage von Ihrer offiziellen E-Mail-Adresse an [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
 
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
