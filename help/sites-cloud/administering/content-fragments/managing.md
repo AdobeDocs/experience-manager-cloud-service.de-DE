@@ -429,7 +429,7 @@ Sie haben folgende Möglichkeiten:
 
 >[!TIP]
 >
->Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
@@ -529,7 +529,7 @@ Mit dieser Funktion können Konflikte verhindert werden, wenn mehrere Benutzende
 
 >[!NOTE]
 >
->Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ ](/help/assets/check-out-and-submit-assets.md).
+>Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ &#x200B;](/help/assets/check-out-and-submit-assets.md).
 
 ### Auschecken eines Inhaltsfragments {#check-out-a-content-fragment}
 
