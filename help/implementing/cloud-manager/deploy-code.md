@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 18d47f745ba1332ccafc7e092d710a70710f1033
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 93%
+source-wordcount: '1200'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +24,7 @@ Die nahtlose Bereitstellung von Code zum Staging und dann bis zur Produktion erf
 1. **Bereitstellung in der Staging-Umgebung**: Der Code wird erstellt und in der Staging-Umgebung für automatisierte Funktionstests, Benutzeroberflächentests, Erlebnis-Audits und Benutzerakzeptanztests (User Acceptance Testing, UAT) bereitgestellt.
 1. **Bereitstellung in der Produktionsumgebung**: Sobald der Build im Staging überprüft und für die Produktion freigegeben ist, wird das gleiche Build-Artefakt in der Produktionsumgebung bereitgestellt.
 
-_Nur der Pipeline-Typ „Full Stack code“ unterstützt das Scannen von Code, Funktionstests, Benutzeroberflächentests und Erlebnis-Audits._
+_Nur der Pipelinetyp „Full Stack Code“ unterstützt das Codescannen, Funktionstests, Benutzeroberflächentests und Erlebnis-Audits._
 
 ## Bereitstellungsprozess {#deployment-process}
 
@@ -32,7 +32,7 @@ Alle Cloud-Dienste werden in einem fortlaufenden Prozess bereitgestellt, um zu g
 
 >[!NOTE]
 >
->Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht und dann aufgewärmt, bevor die neuen Veröffentlichungsknoten beginnen, Traffic zu akzeptieren.
+>Der Dispatcher-Cache wird bei jeder Bereitstellung gelöscht und dann aktualisiert, bevor die neuen Veröffentlichungsknoten beginnen, Traffic zu akzeptieren.
 
 ## Bereitstellen Ihres Codes mit Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
@@ -89,19 +89,19 @@ Die **Staging-Testphase** umfasst die folgenden Schritte:
 
 ### Phase der Produktionsbereitstellung {#production-deployment}
 
-Der Prozess für die Bereitstellung in Produktionstopologien unterscheidet sich geringfügig, um die Auswirkungen auf die Besuchenden einer AEM-Site zu minimieren.
+Der Prozess zur Bereitstellung in Produktionstopologien unterscheidet sich geringfügig, um die Auswirkungen auf Benutzende einer [!DNL AEM] Site zu minimieren.
 
-Produktionsbereitstellungen nutzen im Allgemeinen die oben beschriebenen Schritte, aber auf rollierende Weise. Dazu gehören die folgenden Schritte:
+Produktionsbereitstellungen erfolgen auf die gleiche Weise wie zuvor beschrieben, jedoch auf rollierende Weise. Dazu gehören die folgenden Schritte:
 
 1. AEM-Pakete werden für Author bereitgestellt
 1. `dispatcher1` wird aus dem Lastenausgleich gelöst.
 1. AEM-Pakete werden in `publish1` und das Dispatcher-Paket in `dispatcher1` bereitgestellt und der Dispatcher-Cache geleert.
-1. `dispatcher1` wird in den Lastenausgleich zurückgesetzt.
+1. Fügen Sie `dispatcher1` wieder zum Lastenausgleich hinzu.
 1. Sobald `dispatcher1` wieder aktiv ist, wird `dispatcher2` aus dem Lastenausgleich entfernt.
 1. AEM-Pakete werden in `publish2` und das Dispatcher-Paket in `dispatcher2` bereitgestellt und der Dispatcher-Cache geleert.
-1. `dispatcher2` wird in den Lastenausgleich zurückgesetzt.
+1. Fügen Sie `dispatcher2` wieder zum Lastenausgleich hinzu.
 
-Dieser Vorgang wird fortgesetzt, bis die Bereitstellung alle Publisher und Dispatcher in der Topologie erreicht hat.
+Dieser Vorgang wird wiederholt, bis die Bereitstellung auf alle Publisher und Dispatcher in der Topologie angewendet wird.
 
 ![Phase der Produktionsbereitstellung](assets/production-deployment.png)
 
@@ -120,10 +120,10 @@ Bei folgenden Schritten kommt es zu einer Zeitüberschreitung, wenn sie während
 
 ## Erneutes Ausführen einer Produktionsbereitstellung {#reexecute-deployment}
 
-In seltenen Fällen kann es vorkommen, dass Schritte der Produktionsbereitstellung aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die erneute Ausführung des Schritts der Produktionsbereitstellung unterstützt, solange der Schritt der Produktionsbereitstellung abgeschlossen ist, unabhängig von der Art des Abschlusses (wie zum Beispiel abgebrochen oder fehlgeschlagen). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus den folgenden drei Schritten besteht:
+In seltenen Fällen können Produktionsbereitstellungsschritte aus vorübergehenden Gründen fehlschlagen. In solchen Fällen wird die erneute Ausführung des Schritts der Produktionsbereitstellung unterstützt, solange der Schritt der Produktionsbereitstellung abgeschlossen ist, unabhängig von der Art des Abschlusses (wie zum Beispiel abgebrochen oder fehlgeschlagen). Bei der erneuten Ausführung wird eine neue Ausführung mit derselben Pipeline erstellt, die aus den folgenden drei Schritten besteht:
 
 1. **Validierung**: Dieser Schritt führt dieselbe Validierung wie bei einer normalen Pipeline-Ausführung durch.
-1. **Build**: Im Rahmen einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen wirklich neuen Build-Prozess aus.
+1. **Build** - Im Kontext einer erneuten Ausführung kopiert der Build-Schritt Artefakte und führt keinen neuen Build-Prozess aus.
 1. **Produktionsbereitstellung**: Dieser Schritt verwendet dieselbe Konfiguration und dieselben Optionen wie der Schritt der Produktionsbereitstellung bei einer normalen Pipeline-Ausführung.
 
 In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die Statusseite der Produktions-Pipeline neben der üblichen Option **Build-Protokoll herunterladen** auch die Option **Erneut ausführen**.
@@ -142,7 +142,7 @@ In solchen Fällen, in denen eine erneute Ausführung möglich ist, bietet die S
 
 ### Erneutes Ausführen der API {#reexecute-API}
 
-Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [die Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) verwenden, um erneute Ausführungen auszulösen und Ausführungen zu identifizieren, die als erneute Ausführungen ausgelöst wurden.
+Zusätzlich zur Verfügbarkeit in der Benutzeroberfläche können Sie [die Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Pipeline-Execution) verwenden, um erneute Ausführungen auszulösen und Ausführungen zu identifizieren, die als erneute Ausführungen ausgelöst wurden.
 
 #### Auslösen einer erneuten Ausführung {#reexecute-deployment-api}
 
@@ -192,6 +192,6 @@ Die Syntax des href-Werts des HAL-Links ist nur ein Beispiel. Der tatsächliche 
 
 Das Senden einer PUT-Anfrage an diesen Endpunkt führt zu einer 201-Antwort bei Erfolg, wobei der Antworttext die Darstellung der neuen Ausführung ist. Dieser Workflow ähnelt dem Starten einer regulären Ausführung über die API.
 
-#### Identifizieren einer Ausführung mit erneuter Ausführung {#identify-reexecution}
+#### Ermitteln einer erneuten Ausführung {#identify-reexecution}
 
 Das System identifiziert erneut ausgeführte Ausführungen, indem das Feld `trigger` auf den Wert `RE_EXECUTE` gesetzt wird.
