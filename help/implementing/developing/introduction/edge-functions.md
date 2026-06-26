@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2023'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions ist eine **öffentliche Beta**-Funktion, mit der Sie sie im Selbstbedienungsmodus ausprobieren können, ohne sich zur Aktivierung an Adobe zu wenden. Adobe empfiehlt Ihnen, eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) zu senden, um Ihren Anwendungsfall zu beschreiben, damit Adobe sicherstellen kann, dass er unterstützt wird, und eine Anleitung bereitstellen kann. Durch die Verwendung von AEM Edge Functions Beta erkennen Sie an, dass es sich noch in der Entwicklung befindet und Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit der Daten verlassen sollten. Diese Funktion wird unverändert bereitgestellt, kann sich ohne Vorankündigung ändern und wird nicht von der Produktion abgedeckt.
+>AEM Edge Functions ist eine **öffentliche Beta**-Funktion, mit der Sie sie im Selbstbedienungsmodus ausprobieren können, ohne sich zur Aktivierung an Adobe zu wenden. Adobe empfiehlt Ihnen, eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) zu senden, um Ihren Anwendungsfall zu beschreiben, damit Adobe sicherstellen kann, dass er unterstützt wird, und eine Anleitung bereitstellen kann. Es ist besonders wichtig, Adobe zu kontaktieren, bevor Sie die Funktion für den Produktions-Traffic bereitstellen.
+>
+>Durch die Verwendung von AEM Edge Functions Beta erkennen Sie an, dass es sich noch in der Entwicklung befindet und Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit der Daten verlassen sollten. Diese Funktion wird unverändert bereitgestellt, kann sich ohne Vorankündigung ändern und wird nicht von der Produktion abgedeckt.
 
 Mit den AEM Edge-Funktionen können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher an den Endbenutzer heranrückt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse ohne einen Roundtrip zu Ihrem Ursprung.
 
@@ -28,7 +30,7 @@ Häufige Anwendungsfälle umfassen:
 
 AEM Edge-Funktionen sind sowohl mit Edge Delivery Services als auch mit dem AEM as a Cloud Service Java-Stack für AEM Sites-Kunden kompatibel.
 
-<!-- Follow this tutorial for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations. -->
+In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
 
 ## Wichtigste Vorteile {#key-benefits}
 
@@ -85,7 +87,7 @@ AEM Edge-Funktionen werden in einer YAML-Konfigurationsdatei deklariert und übe
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist (wenn Sie den AEM Java-Stack verwenden) oder dass eine Edge Delivery Services-Pipeline vorhanden ist, wenn Ihr Projekt mit Edge Delivery Services implementiert ist. Informationen [&#x200B; Konfigurieren der Pipelines finden &#x200B;](/help/operations/config-pipeline.md) unter „Verwenden von-Pipelines“.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist (wenn Sie den AEM Java-Stack verwenden) oder dass eine Edge Delivery Services-Pipeline vorhanden ist, wenn Ihr Projekt mit Edge Delivery Services implementiert ist. Informationen [ Konfigurieren der Pipelines finden ](/help/operations/config-pipeline.md) unter „Verwenden von-Pipelines“.
 
 >[!NOTE]
 >
@@ -113,7 +115,7 @@ Java-Stack-Umgebungen verfügen über 1 Edge-Funktion und Edge Delivery Services
 | `secrets` | Schlüssel/Wert-Paare, die auf Cloud Manager-Geheimnisse verweisen, in Bezug auf die Edge-Funktionen einer Umgebung |
 | `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüsselwertdaten mit Lese-/Schreibzugriff zur Laufzeit, die über alle Edge-Funktionen in einer Umgebung hinweg gemeinsam genutzt werden. |
 
-Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [&#x200B; Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
+Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [ Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
 
 ### &#x200B;3. Bereitstellen der Edge-Funktion über Cloud Manager {#deploy-functions-via-cm}
 
@@ -123,7 +125,7 @@ Stellen Sie mithilfe von Cloud Manager die Pipeline bereit, damit die Edge-Funkt
 
 ### Author {#author}
 
-Schreiben Sie Ihre Geschäftslogik für den Edge-Funktions[Code mithilfe des `src` Ordners &#x200B;](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src)Textbausteinvorlage“ als Ausgangspunkt.
+Schreiben Sie Ihre Geschäftslogik für den Edge-Funktions[Code mithilfe des `src` Ordners ](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src)Textbausteinvorlage“ als Ausgangspunkt.
 
 ### Aufbauen {#build}
 
@@ -286,7 +288,7 @@ const response = await fetch(request, { backend: "my-origin-name" });
 
 >[!NOTE]
 >
->Konfigurationen, Geheimnisse und KVs sind in [Sandbox-Programmen) &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktionen selbst werden in Sandbox-Umgebungen normal ausgeführt - nur diese Entitäten werden nicht bereitgestellt.
+>Konfigurationen, Geheimnisse und KVs sind in [Sandbox-Programmen) ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktionen selbst werden in Sandbox-Umgebungen normal ausgeführt - nur diese Entitäten werden nicht bereitgestellt.
 
 ### Edge-Funktionskonfigurationsvariablen {#function-configuration}
 
