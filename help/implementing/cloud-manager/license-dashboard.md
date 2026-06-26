@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 2f5f1880ddcb18688a115d3112b2dd6156722294
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 71%
+source-wordcount: '1029'
+ht-degree: 55%
 
 ---
 
@@ -25,13 +25,13 @@ Cloud Manager bietet ein Dashboard, über das Sie die Produktberechtigungen für
 
 ## Überblick {#overview}
 
-Das Cloud Manager-Lizenz-Dashboard bietet einfachen Zugriff auf Lösungsberechtigungen, die Ihnen für alle Ihre Programme zur Verfügung stehen, einschließlich der Menge der verwendeten und verfügbaren Lösungen. Die Verbrauchsmetriken für Inhaltsanfragen weisen für die Sites-Lösung einen Monat auf.
+Das Cloud Manager-Lizenz-Dashboard bietet einfachen Zugriff auf Lösungsberechtigungen, die Ihnen für alle Ihre Programme zur Verfügung stehen, einschließlich der Anzahl der verwendeten und der verbleibenden verfügbaren Lösungen. Die Verbrauchsmetriken für Inhaltsanfragen weisen für die Sites-Lösung einen Monat auf.
 
 ## Zugriff auf das Lizenz-Dashboard {#using-dashboard}
 
 >[!NOTE]
 >
->Benutzende mit der Rolle **Geschäftsinhaber** müssen angemeldet sein, damit ihnen das Lizenz-Dashboard angezeigt wird.
+>Um das Lizenz-Dashboard anzeigen zu können, muss eine Person mit der Rolle **Geschäftsinhaber** angemeldet sein.
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 1. Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** im [Cloud Manager-Header](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) auf das Symbol ![Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg). Durch diese Aktion werden die Registerkarten angezeigt.
@@ -41,12 +41,12 @@ Das Cloud Manager-Lizenz-Dashboard bietet einfachen Zugriff auf Lösungsberechti
 
 Das Dashboard ist in drei Abschnitte unterteilt, die Ihnen Folgendes zeigen:
 
-* **Lösungen** - Welche Lösungen Sie lizenziert haben. Beispielsweise Sites, Edge Delivery Services, Assets u. a.
+* **Lösungen** - Welche Lösungen Sie lizenziert haben. Zum Beispiel Sites, Edge Delivery Services und Assets.
 
   ![Lösungsliste](assets/solutions.png)
 
 * **Add-ons** - Welche Add-ons zu Ihren lizenzierten Lösungen sind verfügbar?
-* **Sonstige Berechtigungen**: Die Sandbox- und Entwicklungsumgebung sowie sonstigen Berechtigungen, die mandantenseitig genutzt werden können.
+* **Sonstige Berechtigungen** - Welche Sandbox- und Entwicklungsumgebungen und andere Berechtigungen können in Ihrem Mandanten genutzt werden?
 
 In jedem Abschnitt werden die verfügbaren Funktionen und Nutzungsszenarien zusammengefasst. Derzeit werden nur Sites- und Asset-Lösungen angezeigt, selbst wenn im Mandanten andere Lösungen vorhanden sind.
 
@@ -54,7 +54,7 @@ In jedem Abschnitt werden die verfügbaren Funktionen und Nutzungsszenarien zusa
 * In **Spalte „Konfiguriert in** werden die Programme mit der angewendeten Lösungsberechtigung aufgeführt.
    * Eine Berechtigung gilt nur dann als verwendet, wenn eine Produktionsumgebung erstellt wird oder wenn eine vorhanden ist und eine Update-Pipeline dafür ausgeführt wurde.
    * Es wird nur eine begrenzte Anzahl von Programmen einzeln in der Spalte aufgeführt, der Rest wird durch einen Eintrag `+x` repräsentiert.
-   * Bewegen Sie den Mauszeiger über den Eintrag `+x`, damit ein Popup mit den Details zu allen Programmen angezeigt wird.
+   * Wählen Sie den Eintrag `+x` aus, um ein Popup mit Details zu allen Programmen anzuzeigen.
 * In der Spalte **Nutzung** wird die Schaltfläche **[Nutzungsdetails anzeigen](#view-usage-details)** angezeigt, um Nutzungsstatistiken für die Lösung anzuzeigen.
 
 >[!TIP]
@@ -67,7 +67,7 @@ In jedem Abschnitt werden die verfügbaren Funktionen und Nutzungsszenarien zusa
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
 -->
 
-Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung Ihrer aktuellen Ressourcennutzung. Wenn Sie darauf klicken, wird ein Bericht oder Dashboard geöffnet, der bzw. das wichtige Metriken im Zusammenhang mit Ihrer Lizenz anzeigt. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Mit dieser Funktion können Sie überwachen und sicherstellen, dass Sie sich an die vertraglichen Beschränkungen halten, und gleichzeitig Einblicke für eine bessere Ressourcenplanung und -optimierung bieten.
+Die Schaltfläche **Nutzungsdetails anzeigen** im Lizenzbereich von Cloud Manager bietet eine detaillierte Aufschlüsselung Ihrer aktuellen Ressourcennutzung. Wenn Sie darauf klicken, wird ein Bericht oder Dashboard geöffnet, der bzw. das wichtige Metriken im Zusammenhang mit Ihrer Lizenz anzeigt. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Mit dieser Funktion können Sie überwachen und sicherstellen, dass Sie sich im Rahmen Ihres Vertrags befinden, und gleichzeitig Daten für die Ressourcenplanung und -optimierung bereitstellen.
 
 Die Schaltfläche **Nutzungsdetails anzeigen** ist *deaktiviert* in den folgenden Fällen deaktiviert:
 
@@ -84,7 +84,7 @@ Das Fenster **Details zur Site-Nutzung** enthält Diagramme, die einen Überblic
 
 Die linke Seite des Fensters zeigt ein Tortendiagramm mit der Aufschlüsselung des Vertrags für das im Dropdown-Menü **Vertragsjahr anzeigen** ausgewählte Vertragsjahr.
 
-Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Wenn Sie den Mauszeiger darüber bewegen, wird ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt angezeigt.
+Auf der rechten Seite des Fensters befindet sich ein Flächendiagramm, in dem die Nutzung für das ausgewählte Vertragsjahr nach Programm aufgeschlüsselt dargestellt wird. Bei Auswahl des Datenpunkts wird ein Popup mit Details pro Programm für den ausgewählten Zeitpunkt angezeigt.
 
 In der rechten oberen Ecke der Dashboard-Seite können Sie auf **Bericht herunterladen** klicken, um die Daten als CSV-Datei zu exportieren. Dieser Download vereinfacht die Analyse und Freigabe von Nutzungs-Trends.
 
@@ -102,7 +102,7 @@ For both storage and standard users views, you can use the **Environment Type** 
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a pop-up with details per program for the selected point in time.
 
 #### Standard Users {#standard-users}
 
@@ -110,7 +110,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a pop-up with details per program for the selected point in time.
 -->
 
 ## Häufig gestellte Fragen {#faq}
@@ -121,7 +121,7 @@ Bei einer Inhaltsanfrage handelt es sich um eine an AEM Sites oder ein von der K
 
 Für jeden Seitenaufruf oder für jeweils fünf API-Aufrufe wird 1 Inhaltsanfrage gezählt, gemessen am Eingang des ersten Caching-Systems, das eine Inhaltsanfrage erhält. Inhaltsanfragen werden nur für Produktionsumgebungen gezählt.
 
-Inhaltsanfragen schließen Anfragen oder Aktivitäten aus, die von oder für Adobe allein zum Zweck der Bereitstellung von Produkten und Dienstleistungen initiiert wurden. Auch der von Adobe identifizierte Benutzeragenten-Traffic von Bots, Crawlern und Spidern im Zusammenhang mit gängigen Suchmaschinen und Social-Media-Services ist ausgeschlossen.
+Inhaltsanfragen schließen Anfragen oder Aktivitäten aus, die von oder für Adobe allein zum Zweck der Bereitstellung von Produkten und Dienstleistungen initiiert wurden. Adobe-identifizierter Benutzeragenten-Traffic von Bots, Crawlers und Spiders im Zusammenhang mit gängigen Suchmaschinen und Social-Media-Services ist ebenfalls ausgeschlossen.
 
 Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
 
@@ -129,7 +129,7 @@ Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/c
 
 Inhaltsanfragen werden auf den Edge-Servern von AEM as a Cloud Service erfasst. Der Ursprungs-Traffic zählt nicht für Inhaltsanfragen. Das in AEM as a Cloud Service integrierte CDN verfolgt gültige HTML- und JSON-Anfragen.
 
-AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, einschließlich bekannter Services, die die Site regelmäßig besuchen, um ihren Suchindex oder -Service zu aktualisieren.
+AEM verfügt auch über Regeln, um bekannte Bots auszuschließen, darunter Services, die die Site regelmäßig besuchen, um ihren Suchindex oder -Service zu aktualisieren.
 
 Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
 
@@ -137,9 +137,9 @@ Siehe auch [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/c
 
 Inhaltsanfragen weisen Abweichungen von den Analytics-Reporting-Tools eines Unternehmens auf. Weitere Informationen finden Sie unter [Grundlegendes zu Cloud Service-Inhaltsanfragen](/help/implementing/cloud-manager/content-requests.md).
 
-### Wie erfahre ich mehr über mein Inhaltsanfragevolumen?{#current-request-volumes}
+### Wie erhalte ich weitere Informationen über mein Inhaltsanfragevolumen?{#current-request-volumes}
 
-Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, kann Ihnen Ihr Adobe-Team einen Bericht bereitstellen, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Wenden Sie sich an Ihr Adobe-Team oder den Kunden-Support von Adobe, um einen Bericht zur hauptsächlichen Nutzung anzufordern.
+Wenn Sie zusätzliche Einblicke in das Inhaltsanfragevolumen erhalten möchten, das im Lizenz-Dashboard angezeigt wird, stellt Ihr Adobe-Team einen Bericht bereit, der die wichtigsten Treiber von Inhaltsanfragen aufzeigt. Um einen Bericht zur hauptsächlichen Nutzung anzufordern, wenden Sie sich an Ihr Adobe-Team oder den Kunden-Support von Adobe.
 
 ### Was passiert, wenn ich mein eigenes CDN verwende?{#using-own-cdn}
 
