@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3984'
-ht-degree: 37%
+source-wordcount: '4035'
+ht-degree: 36%
 
 ---
 
@@ -64,6 +64,8 @@ Laden Sie Ihre XFA-Vorlage (XDP-Datei) in Ihre AEM Forms-Instanz hoch. Führen S
 Ihr adaptives Formular ist jetzt so konfiguriert, dass eine XDP-Datei als Vorlage für die PDF zur Übermittlung verwendet wird. Der nächste Schritt besteht darin, [die Komponenten des adaptiven Formulars an die entsprechenden Vorlagenfelder zu binden](#bind-adaptive-form-components-with-template-fields).
 
 ## Verwenden von gebietsschemaspezifischen benutzerdefinierten XDP-Vorlagen für die Übermittlungs-PDF {#locale-specific-custom-xdp-templates-for-document-of-record}
+
+<span class="preview"> Konfiguration der PDF für die Übermittlung für Formulare, die in AEM Sites-Seiten eingebettet sind, und gebietsschemaspezifische benutzerdefinierte XDP-Vorlagen für Datensatzdokumente sind Teil des Early-Adopter-Programms. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf diese Funktionen anzufordern. </span>
 
 Wenn Sie eine benutzerdefinierte XFA-Vorlage (XDP-Datei) als Vorlage für die PDF-Übermittlung zuordnen, können Sie gebietsschemaspezifische Versionen der Vorlage bereitstellen. AEM Forms wählt beim Generieren der Übermittlungs-PDF automatisch die entsprechende XDP-Datei basierend auf dem Formulargebietsschema aus.
 
@@ -218,7 +220,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 Wenn das adaptive Formular übermittelt wird, wird eine aktualisierte Übermittlungs-PDF generiert.
 
-![Aktualisiert: &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![Aktualisiert: ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## Wichtige Aspekte beim Arbeiten mit der Übermittlungs-PDF {#key-considerations-when-working-with-document-of-record}
 
@@ -436,7 +438,7 @@ Achten Sie darauf, dass für Ihren Browser das richtige Gebietsschema festgelegt
 
       <span class="preview"> Diese Funktion ist über das Early-Access-Programm verfügbar. Um Zugriff anzufordern, senden Sie eine E-Mail von Ihrer offiziellen Adresse an [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; &#x200B;](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+      Die Übermittlungs-PDF zeigt jetzt die ausgewählten Anzeigebeschriftungen für Dropdown-Komponenten mit mehreren Auswahlmöglichkeiten anstelle der internen gespeicherten Werte an. Wenn Benutzende beispielsweise „Kalifornien“ und „New York“ aus einem Dropdown-Menü auswählen, zeigt die Übermittlungs-PDF die ausgewählten Beschriftungen anstelle der internen Werte wie `CA` und `NY` an. Jede ausgewählte Option wird in einer separaten Zeile anstelle von kommagetrennten Werten angezeigt, was dem Verhalten in [Foundation-Komponentenbasiertem adaptiven Forms&quot; ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
    1. **Eigenschaften der primären Seite**:
 
