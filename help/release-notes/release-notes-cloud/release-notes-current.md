@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 50a64c8968182ac1fb5a57082da991c9efd4dc46
+source-git-commit: 4bd1044567206bc6a97aef5b2d2e99541936b476
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3825'
 ht-degree: 17%
 
 ---
@@ -152,15 +152,11 @@ Die Dynamic Media-Komponente bettet jetzt Transkripte für Videos ein, um die Ba
 
 Mit Dynamic Media mit OpenAPI-Funktionen können Sie jetzt benutzerdefinierte Miniaturansichten für Video-Assets hochladen. Durch das Ersetzen automatisch generierter Miniaturansichten durch gebrandete oder speziell entwickelte Bilder können Unternehmen die Präsentation von Inhalten verbessern, die Auffindbarkeit von Assets verbessern und ein ansprechenderes Anwendererlebnis schaffen.
 
-
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Neue Funktionen in AEM Forms
 
 #### Editor für die interaktive Kommunikation
-
-Der Editor für interaktive Kommunikation und die Benutzeroberfläche von Associate bieten neue Funktionen für Zusammenarbeit, Layout und Bearbeitung von Verknüpfungen, mit denen Autoren schneller entwerfen und Mitarbeiter die Kundenkommunikation präziser abschließen können.
 
 Der Editor für interaktive Kommunikation (IC) ist jetzt in AEM Forms as a Cloud Service verfügbar. Es handelt sich dabei um eine Browser-basierte Lösung zur Erstellung, Verwaltung und Bereitstellung datengesteuerter interaktiver Korrespondenzen wie Geschäftskorrespondenz, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-E-Mails, Rechnungen und Begrüßungspakete.
 
@@ -206,17 +202,17 @@ Der Editor für interaktive Kommunikation (IC) ist jetzt in AEM Forms as a Cloud
 
 * **Konfigurieren von gebundenen und ungebundenen Variablen für die**-Benutzeroberfläche: Gebundene und ungebundene Variablen in **Text**-Komponenten können jetzt für die Benutzeroberfläche „Verknüpfen“ konfiguriert werden. Autoren können auswählen, ob Verknüpfungen den gesamten Textblock in der Dokumentvorschau inline bearbeiten oder Werte für einzelne Variablen im Dateneingabefeld eingeben sollen. Doppelte Variablennamen übertragen Werte auf alle übereinstimmenden Vorkommnisse in der Vorschau. Weitere Informationen finden Sie unter [Konfigurieren von gebundenen und ungebundenen Variablen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
 
-## Early Adopter-Funktionen
+### Early Adopter-Funktionen
 
-### Datensatzdokument für in AEM Sites eingebettete Formulare
+#### Datensatzdokument für in AEM Sites eingebettete Formulare
 
 Autorinnen und Autoren können jetzt ein Datensatzdokument (Document of Record, PDF) für adaptive Forms-Kernkomponenten konfigurieren und generieren, die in AEM Sites-Seiten eingebettet sind. Die DoR-Einstellungen, einschließlich der automatischen Generierung, benutzerdefinierter XDP-Vorlagen und des Brandings, sind direkt über den **Container für adaptive Formulare** im Sites-Seiteneditor verfügbar. [Weitere Informationen](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
 
-### Gebietsschema-spezifische benutzerdefinierte XDP-Vorlagen für das Datensatzdokument
+#### Gebietsschema-spezifische benutzerdefinierte XDP-Vorlagen für das Datensatzdokument
 
 Wenn Sie eine benutzerdefinierte XDP-Vorlage für DoR zuordnen, können Sie im selben Ordner gebietsschemaspezifische Versionen mithilfe der `basename.<locale>.xdp` bereitstellen (z. B. `a.xdp` und `a.fr.xdp`). AEM Forms wählt beim Generieren der Übermittlungs-PDF automatisch die Vorlage aus, die dem Formulargebietsschema entspricht, mit Fallback auf die Standardvorlage. [Weitere Informationen](/help/forms/generate-document-of-record-core-components.md#locale-specific-custom-xdp-templates-for-document-of-record).
 
-### Gültigkeit der Adobe Sign-Vereinbarung
+#### Gültigkeit der Adobe Sign-Vereinbarung
 
 Sie können festlegen, wie lange Empfänger das Signieren abschließen müssen, indem Sie **Dokumentenablauf (Tage)** im Abschnitt **Elektronische Signatur** eines adaptiven Formulars angeben. Der Wert wird als `daysUntilSigningDeadline` an Adobe Sign gesendet. Wenn dies leer gelassen wird, läuft die Vereinbarung nicht ab. [Weitere Informationen](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement).
 
