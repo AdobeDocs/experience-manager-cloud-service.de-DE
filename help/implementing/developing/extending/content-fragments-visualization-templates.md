@@ -3,9 +3,9 @@ title: Erstellen von Visualisierungsvorlagen für Inhaltsfragmente
 description: Vorschau und Veröffentlichung von Inhaltsfragmenten mit Visualisierungsvorlagen. Erfahren Sie, wie Sie die Vorlagen erstellen und anpassen können.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 0fe5e82962b7407d879f937d859d54aa6cb739f3
+source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2082'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Mit HTML-Vorlagen können Sie steuern, wie Ihre Inhaltsfragmente angezeigt werde
 
 In diesem Artikel wird erläutert, wie Sie benutzerdefinierte HTML-Vorlagen mit Handlebars-Syntax zum Rendern visueller Inhaltsfragmente erstellen.
 
-Nach dem Erstellen der Vorlagen haben Sie folgende Möglichkeiten:
+Nach der Erstellung der Vorlagen haben Sie folgende Möglichkeiten:
 
 * [Verwenden von Vorlagen in AEM](#using-a-content-fragment-html-template-in-aem)
 
@@ -68,7 +68,7 @@ Weitere Informationen zur Verwendung Ihrer Vorlage in AEM finden Sie unter:
 
 ### Verwenden der Veröffentlichungs-URL für visuelle Inhaltsfragmente {#using-the-visual-content-fragment-publish-url}
 
-Nachdem Sie visuelle Inhaltsfragmente mithilfe der Vorlage erstellt haben, können Sie die [Veröffentlichungs-URL Ihrer visuellen Inhaltsfragmente“ &#x200B;](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Nachdem Sie visuelle Inhaltsfragmente mithilfe der Vorlage erstellt haben, können Sie die [Veröffentlichungs-URL Ihrer visuellen Inhaltsfragmente“ ](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars - die (sehr) Grundlagen {#handlebars-the-very-basics}
 
@@ -365,7 +365,7 @@ Denken Sie daran, beim Zugriff auf Array-Elemente nach Index in Handlebars:
 
 ### Zahlenfelder mit mehreren Werten {#multi-valued-number-fields}
 
-Zahlen werden zur [&#x200B; in &#x200B;](#multi-valued-text-fields) umgewandelt:
+Zahlen werden zur [ in ](#multi-valued-text-fields) umgewandelt:
 
 ```handlebars
 <div class="pricing">
