@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 32e19eea5a7cf90f9de57b7d71d776b4452e70ee
+source-git-commit: fe1c1efaa00fc117ae0dc35879662dfd5ed4ecc2
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 82%
+source-wordcount: '876'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ Nach der Erstellung eines neuen Code-Repositorys in Cloud Manager wird automatis
 
 >[!NOTE]
 >
->Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests`-Ordner erstellt hat, können Sie die neueste Version auch mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) erstellen.
+>Wenn Ihr Repository erstellt wurde, bevor Cloud Manager automatisch `it.tests` Ordner erstellt hat, generieren Sie die neueste Version mit dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 
 Sobald Sie den Inhalt des `it.tests` Ordners haben, können Sie ihn als Grundlage für Ihre eigenen Tests verwenden und dann die folgenden Schritte ausführen:
 
@@ -35,13 +35,13 @@ Sobald Sie den Inhalt des `it.tests` Ordners haben, können Sie ihn als Grundlag
 
 Mit denselben Tools, die Adobe zum Schreiben von Produktfunktionstests verwendet, können Sie auch benutzerdefinierte Funktionstests schreiben. Verwenden Sie die [Produktfunktionstests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als Beispiel für das Schreiben Ihrer Tests.
 
-Der Code für benutzerdefinierte Funktionstests ist Java™-Code im `it.tests`-Ordner Ihres Projekts. Er sollte eine einzige JAR mit allen Funktionstests erstellen. Wenn der Build mehr als eine Test-JAR erzeugt, ist die ausgewählte JAR nicht deterministisch. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Beispieltests finden Sie über den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
+Der Code für benutzerdefinierte Funktionstests ist Java™-Code im `it.tests`-Ordner Ihres Projekts. Es erstellt eine einzige JAR mit allen Funktionstests. Wenn der Build mehr als eine Test-JAR erzeugt, ist die ausgewählte JAR nicht deterministisch. Wenn keine Test-JARs erzeugt werden, ist der Testschritt standardmäßig bestanden. Beispieltests finden Sie über den [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests).
 
-Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Veröffentlichungsinstanzen und eine Dispatcher-Konfiguration umfasst. Dieses Setup bedeutet, dass Ihre benutzerdefinierten Funktionstests für den gesamten AEM-Stapel ausgeführt werden.
+Die Tests werden auf der von Adobe verwalteten Testinfrastruktur ausgeführt, die mindestens zwei Autoreninstanzen, zwei Veröffentlichungsinstanzen und eine Dispatcher-Konfiguration umfasst. Diese Konfiguration bedeutet, dass Ihre benutzerdefinierten Funktionstests für die gesamte AEM-Umgebung ausgeführt werden.
 
 ### Struktur der Funktionstests {#functional-tests-structure}
 
-Benutzerdefinierte Funktionstests müssen als separate JAR-Datei verpackt werden, die mit demselben Maven-Build erstellt wird wie die Artefakte, die in AEM bereitgestellt werden sollen. Im Allgemeinen ist dieser Build ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird im Allgemeinen mithilfe des `maven-assembly-plugin` mit dem Deskriptor `jar-with-dependencies` erstellt.
+Benutzerdefinierte Funktionstests müssen als separate JAR-Datei verpackt werden, die mit demselben Maven-Build erstellt wird wie die Artefakte, die in AEM bereitgestellt werden sollen. Dieser Build ist ein separates Maven-Modul. Die resultierende JAR-Datei muss alle erforderlichen Abhängigkeiten enthalten und wird mithilfe des `maven-assembly-plugin` mit dem `jar-with-dependencies`-Deskriptor erstellt.
 
 Darüber hinaus muss für die JAR-Datei der `Cloud-Manager-TestType`-Manifest-Header auf `integration-test`eingestellt sein.
 
@@ -81,7 +81,7 @@ Im Folgenden wird eine Beispielkonfiguration für das `maven-assembly-plugin` ge
 
 Innerhalb dieser JAR-Datei müssen die Klassennamen der tatsächlich auszuführenden Tests in `IT` enden.
 
-Beispielsweise würde eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleIT` ausgeführt, eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleTest` jedoch nicht.
+Beispielsweise wird eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleIT` ausgeführt, eine Klasse mit dem Namen `com.myco.tests.aem.it.ExampleTest` jedoch nicht.
 
 Um Test-Code von der Abdeckungsprüfung des Code-Scans auszuschließen, muss der Test-Code unterhalb eines Pakets mit dem Namen `it` liegen (der Filter für den Abdeckungsausschluss lautet `**/it/**/*.java`).
 
@@ -91,15 +91,15 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 
 >[!TIP]
 >
->[In diesem Video](https://www.youtube.com/watch?v=yJX6r3xRLHU) erfahren Sie, wie Sie mit benutzerdefinierten Funktionstests das Vertrauen in Ihre CI/CD-Pipelines verbessern können.
+>[In diesem Video erfahren ](https://www.youtube.com/watch?v=yJX6r3xRLHU), wie Sie benutzerdefinierte Funktionstests verwenden können, um Ihre CI/CD-Pipelines zu verbessern.
 
 ### Voraussetzungen {#prerequisites}
 
-1. Die Tests in Cloud Manager werden von technischen Admins ausgeführt.
+1. Die Tests in Cloud Manager werden von einem technischen Administrator bzw. einer technischen Administratorin ausgeführt.
 
 >[!NOTE]
 >
->Erstellen Sie zum Ausführen von Funktionstests auf Ihrem lokalen Computer einen Benutzer mit Administratorberechtigungen, um dasselbe Verhalten sicherzustellen.
+>Um dasselbe Verhalten beim Ausführen von Funktionstests auf dem lokalen Computer sicherzustellen, erstellen Sie einen Benutzer mit Administratorberechtigungen.
 
 1. Die folgenden Grenzen beschränken die für Funktionstests vorgesehene Container-Infrastruktur:
 
@@ -126,8 +126,7 @@ Bevorstehende Änderungen an der Container-Infrastruktur für das Ausführen von
 
 >[!NOTE]
 >
->Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.
->Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
+>Diese Änderung muss vor dem 6. April 2024 vorgenommen werden.Wenn die Abhängigkeitsbibliothek nicht aktualisiert wird, treten Pipeline-Fehler beim Schritt „Benutzerdefinierte Funktionstests“ auf.
 
 ### Ausführen lokaler Tests {#local-test-execution}
 
