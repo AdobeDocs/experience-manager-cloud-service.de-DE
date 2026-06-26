@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 248e3db5298e96f01a683d8a69ea91ada701eef7
+source-git-commit: e06e200b372b510b093e05a767e508a89b1cb852
 workflow-type: tm+mt
 source-wordcount: '7552'
 ht-degree: 84%
@@ -1061,9 +1061,9 @@ ht-degree: 84%
       + {hide-from-toc}[Einführung in die interaktive Kommunikation](/help/forms/introduction-to-interactive-communication.md)
       + {hide-from-toc}[Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/create-your-first-communication.md)
    + Überprüfen und Zusammenarbeiten {#review-collaborate}
-      + {hide-from-toc}[Versionierung und Kommentare im Editor für interaktive Kommunikation](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
-      + {hide-from-toc}[Interaktive Kommunikation überprüfen und mit Anmerkungen versehen](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
-      + {hide-from-toc}[Versionen der interaktiven Kommunikation vergleichen](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
+      + [Versionierung und Kommentare im Editor für interaktive Kommunikation](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + [Überprüfen und Kommentieren einer interaktiven Kommunikation](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+      + [Versionen der interaktiven Kommunikation vergleichen](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Component {#component}
       + [Textfeld](/help/forms/interactive-communication/text-box.md)
       + [Bild](/help/forms/interactive-communication/image.md)
@@ -1093,15 +1093,15 @@ ht-degree: 84%
       + {hide-from-toc}[Kopieren und Einfügen der interaktiven Kommunikation](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [Workflow in interaktiver Kommunikation starten](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [Dynamische Tabelle erstellen](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
-      + {hide-from-toc}[Zusammenführen und Aufteilen von Tabellenzellen](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
-      + {hide-from-toc}[Verschieben einer Komponente auf die Musterseite](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+      + [Zusammenführen und Aufteilen von Tabellenzellen](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+      + [Verschieben einer Komponente auf die Musterseite](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
    + Benutzeroberfläche verknüpfen {#associateui}
       + [Zuordnen der Benutzeroberfläche im Editor für interaktive Kommunikation](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [Aktivieren und Konfigurieren der Associate-Benutzeroberfläche für interaktive Kommunikation](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integrieren der Associate-Benutzeroberfläche in Ihr Programm](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [Übermittlungs-Workflow für Associate UI - IC-Generierung der PDF-Ausgabe](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-      + {hide-from-toc}[Konfigurieren von Dropdown-Optionen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
-      + {hide-from-toc}[Konfigurieren von gebundenen und ungebundenen Variablen für die Associate-Benutzeroberfläche](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+      + [Konfigurieren von Dropdown-Optionen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+      + [Konfigurieren von gebundenen und ungebundenen Variablen für die Associate-Benutzeroberfläche](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
    + [Häufig gestellte Fragen](/help/forms/interactive-communications-faq.md)
 + Formularzentrierte Workflows {#create-form-centric-workflows}
    + {hide-from-toc}[Einführung in Forms-zentrierte Workflows](/help/forms/aem-forms-workflow.md)
@@ -1353,7 +1353,7 @@ ht-degree: 84%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

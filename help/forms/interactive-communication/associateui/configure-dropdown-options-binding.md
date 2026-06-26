@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Bindungsoptionen oder manuelle statische Opti
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms."
 exl-id: configure-dropdown-options-associate-ui
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Dropdown-Felder im Editor für interaktive Kommunikation verwenden ein fokussier
 | Wer? | Vorteil |
 |-----|---------|
 | **Author (Interactive Communication Designer)** | Stellen Sie exakte, datengesteuerte Dropdown-Optionen für Verknüpfungen ohne nicht unterstützte Datenbindungskonfigurationen bereit. |
-| **Mitarbeiter (Agent/Service-Vertreter)** | Sehen Sie sich die richtige Optionsliste und den vorab ausgewählten Wert an, wenn Sie die Kundenkommunikation in der Benutzeroberfläche von Associate abschließen. |
+| **Mitarbeiter (Service-Mitarbeiter)** | Sehen Sie sich die richtige Optionsliste und den vorab ausgewählten Wert an, wenn Sie die Kundenkommunikation in der Benutzeroberfläche von Associate abschließen. |
 
 ## Bevor Sie beginnen
 
@@ -43,6 +43,7 @@ Wenn **Optionen Source** nicht auf &quot;**aus Daten binden** eingestellt ist:
 
 - Autoren können Optionen manuell über das Bedienfeld **Eigenschaften** hinzufügen.
 - **Standardwert** bleibt verfügbar. Der Formular-Designer kann explizit auswählen, welche Option als vorab ausgewählter Wert in der Benutzeroberfläche „Verknüpfen“ angezeigt wird.
+
 
 ## Dropdown-Optionen konfigurieren
 
@@ -69,6 +70,7 @@ Wenn **Optionen Source** nicht auf &quot;**aus Daten binden** eingestellt ist:
 1. Wenn Sie manuelle Optionen verwenden, setzen **Standardwert** nach Bedarf.
 
 1. Klicken Sie **Speichern** und veröffentlichen Sie die interaktive Kommunikation.
+
 
 ## Überprüfen in der Associate-Benutzeroberfläche
 

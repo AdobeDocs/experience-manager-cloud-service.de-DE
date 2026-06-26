@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie zwei Versionen einer interaktiven Kommunikati
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms."
 exl-id: compare-interactive-communication-versions
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Wenn eine interaktive Kommunikation mehrere Bearbeitungsdurchgänge durchläuft,
 
 Stellen Sie sicher, dass Sie mindestens eine Version der interaktiven Kommunikation gespeichert haben, die Sie mit dem aktuellen Design vergleichen möchten.
 
-Um eine Version zu erstellen, öffnen Sie **Forms und Dokumente**, wählen Sie die interaktive Kommunikation aus, öffnen Sie das Bedienfeld **Zeitleiste** in der linken Leiste und klicken Sie auf **Als Version speichern**. Eine [&#x200B; Anleitung finden Sie unter „Versionierung und Kommentare &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) Editor für interaktive Kommunikation“.
+Um eine Version zu erstellen, öffnen Sie **Forms und Dokumente**, wählen Sie die interaktive Kommunikation aus, öffnen Sie das Bedienfeld **Zeitleiste** in der linken Leiste und klicken Sie auf **Als Version speichern**. Eine [ Anleitung finden Sie unter „Versionierung und Kommentare ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) Editor für interaktive Kommunikation“.
 
 Aktualisieren Sie nach dem Speichern der Version die interaktive Kommunikation im Editor, sodass sich das aktuelle Design von der gespeicherten Version unterscheidet. Sie benötigen sowohl eine gespeicherte Version als auch einen geänderten aktuellen Status, bevor Sie sie vergleichen können.
 
