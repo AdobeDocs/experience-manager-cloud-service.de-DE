@@ -3,9 +3,9 @@ title: Erstellen von Visualisierungsvorlagen für Inhaltsfragmente
 description: Vorschau und Veröffentlichung von Inhaltsfragmenten mit Visualisierungsvorlagen. Erfahren Sie, wie Sie die Vorlagen erstellen und anpassen können.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 0fe5e82962b7407d879f937d859d54aa6cb739f3
+source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2082'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Mit HTML-Vorlagen können Sie steuern, wie Ihre Inhaltsfragmente angezeigt werde
 
 In diesem Artikel wird erläutert, wie Sie benutzerdefinierte HTML-Vorlagen mit Handlebars-Syntax zum Rendern visueller Inhaltsfragmente erstellen.
 
-Nach dem Erstellen der Vorlagen haben Sie folgende Möglichkeiten:
+Nach der Erstellung der Vorlagen haben Sie folgende Möglichkeiten:
 
 * [Verwenden von Vorlagen in AEM](#using-a-content-fragment-html-template-in-aem)
 

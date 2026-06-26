@@ -3,9 +3,9 @@ title: Visual Content Fragments
 description: Erfahren Sie, wie Sie visuelle Inhaltsfragmente mithilfe von HTML-Vorlagen visualisieren und veröffentlichen.
 feature: Content Fragments
 role: User, Developer
-source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
+source-git-commit: e5ba7a502a7633b6616880bcdcc65e99c22de561
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
