@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a4915aa53902b70b0a09b53381386023638b4072
+source-git-commit: 6869505004f6736f14d840168c29c785542bac28
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 82%
+source-wordcount: '1248'
+ht-degree: 79%
 
 ---
 
@@ -23,23 +23,23 @@ Umgebungsvariablen können umgebungsspezifische Werte oder Umgebungsgeheimnisse 
 
 Umgebungsvariablen bieten verschiedene Vorteile für AEM as a Cloud Service-Benutzende, darunter die folgenden:
 
-* Sie ermöglichen es, das Verhalten Ihres Codes und Ihres Programms je nach Kontext und Umgebung zu variieren. Beispielsweise können sie verwendet werden, um in der Entwicklungsumgebung andere Konfigurationen als in der Produktions- oder Staging-Umgebung zu ermöglichen, um kostspielige Fehler zu vermeiden.
+* Sie ermöglichen es, das Verhalten Ihres Codes und Ihres Programms je nach Kontext und Umgebung zu variieren. Sie können beispielsweise verwendet werden, um in der Entwicklungsumgebung andere Konfigurationen als in der Produktions- oder Staging-Umgebung zu ermöglichen, um kostspielige Fehler zu vermeiden.
 * Sie müssen nur einmal konfiguriert und eingerichtet werden und können bei Bedarf aktualisiert und gelöscht werden.
 * Ihre Werte können jederzeit aktualisiert werden und werden sofort wirksam, ohne dass Code-Änderungen oder -Bereitstellungen erforderlich sind.
 * Sie können Code von der Konfiguration trennen und die Notwendigkeit beseitigen, vertrauliche Informationen in die Versionskontrolle einzubeziehen.
-* Sie verbessern die Sicherheit von AEM as a Cloud Service-Anwendungen, da sie außerhalb der Codebasis existieren.
+* Sie verbessern die Sicherheit von AEM as a Cloud Service-Anwendungen, da sie außerhalb der Codebasis gespeichert werden.
 
 Zu den typischen Anwendungsfällen für die Verwendung von Umgebungsvariablen zählen die Folgenden:
 
 * Verbinden des AEM-Programms mit verschiedenen externen Endpunkten.
-* Verwenden einer Referenz beim Speichern von Kennwörtern, anstatt sie direkt in der Code-Basis zu speichern.
-* In einem Programm sind mehrere Entwicklungsumgebungen vorhanden, und einige Konfigurationen unterscheiden sich von einer Umgebung zur anderen.
+* Verwenden einer Referenz beim Speichern von Kennwörtern, anstatt sie direkt in der Codebasis zu speichern.
+* In einem Programm sind mehrere Entwicklungsumgebungen vorhanden, und einige Konfigurationen variieren zwischen den Umgebungen.
 
 ## Hinzufügen einer Umgebungsvariablen {#add-variables}
 
 Wenn Sie mehrere Variablen hinzufügen möchten, empfiehlt Adobe, die erste Variable hinzuzufügen und dann im Dialogfeld **Umgebungskonfiguration** die Schaltfläche ![Hinzufügen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Hinzufügen** zu verwenden, um die zusätzlichen Variablen hinzuzufügen. Mit dieser Methode können Sie sie mit einer einzigen Umgebungsaktualisierung hinzufügen.
 
-Um Umgebungsvariablen hinzuzufügen, zu aktualisieren oder zu löschen, müssen Sie Mitglied der Rolle [Bereitstellungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) sein.
+Um Umgebungsvariablen hinzuzufügen, zu aktualisieren oder zu löschen, müssen Sie Mitglied der Rolle [Bereitstellungs-Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions) sein.
 
 **So fügen Sie eine Umgebungsvariable hinzu:**
 
@@ -48,8 +48,7 @@ Um Umgebungsvariablen hinzuzufügen, zu aktualisieren oder zu löschen, müssen 
 1. Klicken Sie im Seitenmenü auf **Umgebungen**.
 1. Wählen Sie auf der Seite **Umgebungen** eine Zeile in der Tabelle aus, die die Umgebung enthält, für die Sie eine Umgebungsvariable hinzufügen möchten.
 1. Klicken Sie auf der Seite mit den Umgebungsdetails auf die Registerkarte **Konfiguration**.
-1. Klicken Sie ![Hinzufügen/Aktualisieren - Symbol Kreis hinzufügen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen/Aktualisieren**.
-Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, klicken Sie **Konfiguration hinzufügen** in der Mitte der Seite.
+1. Klicken Sie auf ![Hinzufügen/Aktualisieren – Symbol mit Pluszeichen in Kreis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Hinzufügen/Aktualisieren**.Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, klicken Sie in der Mitte der Seite auf **Konfiguration hinzufügen**.
 
    ![Registerkarte „Konfiguration“](assets/configuration-tab.png)
 
@@ -70,7 +69,7 @@ Wenn Sie zum ersten Mal eine Umgebungsvariable hinzufügen, klicken Sie **Konfig
 
 1. Klicken Sie auf **Speichern**.
 
-   Oben rechts in der Tabelle wird ein Wartekreisel mit dem Status **Aktualisierung läuft** angezeigt. Links von neu hinzugefügten Variablen wird ebenfalls ein Wartekreisel angezeigt. Diese Status zeigen an, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss ist die neue Umgebungsvariable in der Tabelle sichtbar.
+   Ein Indikator mit dem Status **Aktualisieren** wird in der oberen rechten Ecke der Tabelle angezeigt. Ein Indikator wird auch links neben allen neu hinzugefügten Variablen angezeigt. Diese Status zeigen an, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss ist die neue Umgebungsvariable in der Tabelle sichtbar.
 
 ![Variablen aktualisieren](assets/updating-variables.png)
 
@@ -93,8 +92,7 @@ Wenn mehrere Variablen aktualisiert werden sollen, empfiehlt Adobe, das Dialogfe
 
    ![Variable bearbeiten oder löschen](assets/edit-delete-variable.png)
 
-1. Aktualisieren Sie den Wert der Umgebungsvariablen nach Bedarf.
-Beim Bearbeiten geheimer Daten kann der Wert nur aktualisiert, aber nicht angezeigt werden.
+1. Aktualisieren Sie den Wert der Umgebungsvariablen nach Bedarf.Beim Bearbeiten von Geheimnissen kann der jeweilige Wert nur aktualisiert, aber nicht angezeigt werden.
 
    ![Variable bearbeiten](assets/edit-variable.png)
 
@@ -105,7 +103,7 @@ Beim Bearbeiten geheimer Daten kann der Wert nur aktualisiert, aber nicht angeze
 
 1. Klicken Sie auf **Speichern**.
 
-   Oben rechts in der Tabelle wird ein Wartekreisel mit dem Status **Aktualisierung läuft** angezeigt. Links von aktualisierten Variablen wird ebenfalls ein Wartekreisel angezeigt. Diese Status zeigen an, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss ist die aktualisierte Umgebungsvariable in der Tabelle sichtbar.
+   Oben rechts in der Tabelle wird ein Wartekreisel mit dem Status **Aktualisierung läuft** angezeigt. Ein Indikator wird auch links neben aktualisierten Variablen angezeigt. Diese Status zeigen an, dass die Umgebung mit der Konfiguration aktualisiert wird. Nach Abschluss ist die aktualisierte Umgebungsvariable in der Tabelle sichtbar.
 
 ## Löschen einer Umgebungsvariablen {#delete-env-variable}
 
