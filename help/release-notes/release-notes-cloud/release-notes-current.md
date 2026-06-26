@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 64ad7ab638f71f0dcaf5384b29499e75085c778f
+source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3862'
 ht-degree: 17%
 
 ---
@@ -303,7 +303,7 @@ AEM Cloud Service unterstützt weiterhin die Kompilierung von Kunden-Code mit Ja
 
 #### AEM Edge-Funktionen (*Public Beta*-Programm) {#edge-functions}
 
-[AEM Edge-Funktionen](/help/implementing/developing/introduction/edge-functions.md) befindet sich jetzt in der öffentlichen Beta-Phase, sodass Sie sie selbst ausprobieren können, ohne sich zur Aktivierung an Adobe zu wenden.
+[AEM Edge-Funktionen](/help/implementing/developing/introduction/edge-functions.md) befindet sich jetzt in der öffentlichen Beta-Phase, sodass Sie es selbst ausprobieren können, ohne sich zur Aktivierung an Adobe wenden zu müssen.
 
 Mit dieser Funktion können Sie JavaScript auf CDN-Ebene ausführen, wodurch die Datenverarbeitung näher am Endbenutzer rückt. Dies reduziert die Latenz und ermöglicht responsive, dynamische Erlebnisse am Edge. Sie ist sowohl für AEM Cloud Service Java-Stack- als auch für Edge Delivery Services-Projekte für AEM Sites-Kunden verfügbar.
 
@@ -313,6 +313,8 @@ Häufige Anwendungsszenarien umfassen:
 * Fungieren als Middleware zwischen dem CDN und Ihrer Herkunft
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
+
+In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
 
 *Durch die Verwendung von AEM Edge Functions Beta erkennen Sie an, dass es sich noch in der Entwicklung befindet und Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit der Daten verlassen sollten. Diese Funktion wird unverändert bereitgestellt,
 können sich ohne Vorankündigung ändern und werden nicht von Produktions-SLAs abgedeckt.*
