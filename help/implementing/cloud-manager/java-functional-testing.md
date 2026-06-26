@@ -91,7 +91,7 @@ Weitere Informationen finden Sie im [`aem-testing-clients`GitHub-Repository](htt
 
 >[!TIP]
 >
->[In diesem Video erfahren ](https://www.youtube.com/watch?v=yJX6r3xRLHU), wie Sie benutzerdefinierte Funktionstests verwenden können, um Ihre CI/CD-Pipelines zu verbessern.
+>[In diesem Video erfahren &#x200B;](https://www.youtube.com/watch?v=yJX6r3xRLHU), wie Sie benutzerdefinierte Funktionstests verwenden können, um Ihre CI/CD-Pipelines zu verbessern.
 
 ### Voraussetzungen {#prerequisites}
 
