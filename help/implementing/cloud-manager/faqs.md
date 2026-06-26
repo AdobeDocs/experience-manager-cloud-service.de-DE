@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: c0323e54ce74f0b56c9a60f3bdca1ab4a7426116
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 66%
+source-wordcount: '1010'
+ht-degree: 56%
 
 ---
 
@@ -71,13 +71,13 @@ Für die benutzerdefinierte Versionierung in Staging- und Produktionsbereitstell
 
 Cloud Manager fügt Staging- und Produktions-Builds automatisch eine eigene Version hinzu und erstellt sogar eine Git-Verzweigung. Es ist keine spezielle Konfiguration notwendig. Wenn Sie keine Maven-Version festlegen, ist die Bereitstellung dennoch erfolgreich und eine Version wird automatisch festgelegt.
 
-## Mein Maven-Build schlägt bei Cloud Manager-Bereitstellungen fehl, lokal wird er jedoch ohne Fehler erstellt. Was läuft da schief? {#maven-build-fail}
+## Mein Maven-Build schlägt bei Cloud Manager-Bereitstellungen fehl, lokal wird er jedoch ohne Fehler erstellt. Was ist die Ursache? {#maven-build-fail}
 
 Weitere Informationen dazu finden Sie in [dieser Git-Ressource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md).
 
 ## Was ist zu tun, wenn die Implementierung von Cloud Manager beim Bereitstellungsschritt in der AEM as a Cloud Service-Umgebung fehlschlägt? {#cloud-manager-deployment-cloud-service}
 
-Der häufigste Grund für fehlgeschlagene Bereitstellungen liegt in unzureichenden Berechtigungen für den `sling-distribution-importer`-Benutzer. In diesem Fall schlägt der Bereitstellungsschritt während einer Cloud Manager-Implementierung fehl und es werden Fehler wie die folgenden erzeugt.
+Der häufigste Grund für fehlgeschlagene Bereitstellungen sind unzureichende Berechtigungen für den `sling-distribution-importer` Benutzer. In diesem Fall schlägt der Bereitstellungsschritt während einer Cloud Manager-Implementierung fehl und es werden Fehler wie die folgenden erzeugt.
 
 ```text
 [Queue Processor for Subscriber agent forwardPublisherSubscriber] org.apache.jackrabbit.vault.fs.io.Importer Error while committing changes. Retrying import from checkpoint at /. Retries 4/10
@@ -88,7 +88,7 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-Benutzerinnen und Benutzer von `sling-distribution-importer` benötigen zusätzliche Berechtigungen für die im `ui.content package` definierten Inhaltspfade. Diese Regel erfordert in der Regel das Hinzufügen von Berechtigungen für `/conf` und `/var`.
+Benutzerinnen und Benutzer von `sling-distribution-importer` benötigen zusätzliche Berechtigungen für die im `ui.content package` definierten Inhaltspfade. Diese Konfiguration erfordert in der Regel das Hinzufügen von Berechtigungen für `/conf` und `/var`.
 
 Die Lösung besteht darin, Ihrem Programm-Bereitstellungspaket ein [RepositoryInitializer OSGi-Konfigurations](/help/implementing/deploying/overview.md#repoint)-Skript hinzuzufügen, um ACLs für die `sling-distribution-importer`-Benutzerinnen und -Benutzer hinzuzufügen.
 
@@ -98,16 +98,16 @@ Hier ist ein Beispiel für eine [`org.apache.sling.jcr.repoinit.RepositoryInitia
 
 ## Meine Cloud Manager-Implementierung schlägt beim Bereitstellungsschritt in AEM as a Cloud Service fehl und ich habe bereits eine OSGi-Konfiguration für RepositoryInitializer hinzugefügt. Was kann ich sonst noch tun? {#build-failures}
 
-Wenn das [Hinzufügen einer OSGi-Konfiguration für RepositoryInitializer](#cloud-manager-deployment-cloud-service) den Fehler nicht behoben hat, kann dies auf eines dieser zusätzlichen Probleme zurückzuführen sein.
+Wenn [Hinzufügen einer OSGi-Konfiguration für RepositoryInitializer](#cloud-manager-deployment-cloud-service) den Fehler nicht behoben hat, kann dies auf eines der folgenden Probleme zurückzuführen sein:
 
-* Die Bereitstellung kann aufgrund einer ungültigen OSGi-Konfiguration fehlschlagen, die einen Standard-Service unterbricht.
+* Die Bereitstellung schlägt aufgrund einer ungültigen OSGi-Konfiguration fehl, die einen Standard-Service unterbricht.
    * Überprüfen Sie die Protokolle während der Bereitstellung, um festzustellen, ob offensichtliche Fehler vorliegen.
 
-* Die Bereitstellung kann aufgrund ungültiger Dispatcher- oder Apache-Konfigurationen fehlschlagen.
+* Die Bereitstellung schlägt aufgrund ungültiger Dispatcher- oder Apache-Konfigurationen fehl.
    * Achten Sie darauf, Ihre Apache- und Dispatcher-Konfigurationen lokal mit dem im SDK enthaltenen Docker-Image zu testen.
-   * Informationen zum Einrichten des Dispatcher-Docker-Containers für einfache lokale Tests finden Sie unter [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery).
+   * Unter [Dispatcher in der Cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery) finden Sie Informationen zum Einrichten des Dispatcher-Docker-Containers für einfache lokale Tests.
 
-* Die Bereitstellung könnte aufgrund eines anderen Fehlers während der Replikation der Inhaltspakete (Sling-Verteilung) von den Authoring- zu den Veröffentlichungsinstanzen fehlschlagen.
+* Die Bereitstellung schlägt aufgrund eines anderen Fehlers während der Replikation der Inhaltspakete (Sling-Verteilung) von der Autoren- zu der Veröffentlichungsinstanz fehl.
    * Führen Sie diese Schritte aus, um das Problem bei einem lokalen Setup zu simulieren.
       1. Installieren Sie eine Autoren- und eine Veröffentlichungsinstanz lokal mit den neuesten AEM SDK-JARs.
       1. Melden Sie sich bei der Autoreninstanz an.
@@ -116,7 +116,7 @@ Wenn das [Hinzufügen einer OSGi-Konfiguration für RepositoryInitializer](#clou
 
 ## Ich kann eine Variable nicht mit einem aio-Befehl festlegen. Was kann ich tun? {#set-variable}
 
-Wenn Sie versuchen, Pipeline-Variablen mithilfe von `aio`-Befehlen aufzulisten oder zu setzen, erhalten Sie möglicherweise einen `403`-Fehler wie den folgenden.
+Wenn Sie versuchen, Pipeline-Variablen mithilfe von `aio`-Befehlen aufzulisten oder festzulegen, erhalten Sie einen `403`-Fehler wie den folgenden.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222
@@ -136,4 +136,4 @@ Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/
 
 In diesem Fall müssen die Personen, die diese Befehle ausführen, in der Admin Console zur Rolle der **Bereitstellungs-Manager** hinzugefügt werden.
 
-Weitere Informationen finden Sie unter [API-Berechtigungen](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/).
+Weitere Informationen finden Sie unter [API-Berechtigungen](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions).
