@@ -31,7 +31,7 @@ Wenn eine interaktive Kommunikation mehrere Bearbeitungsdurchgänge durchläuft,
 
 Stellen Sie sicher, dass Sie mindestens eine Version der interaktiven Kommunikation gespeichert haben, die Sie mit dem aktuellen Design vergleichen möchten.
 
-Um eine Version zu erstellen, öffnen Sie **Forms und Dokumente**, wählen Sie die interaktive Kommunikation aus, öffnen Sie das Bedienfeld **Zeitleiste** in der linken Leiste und klicken Sie auf **Als Version speichern**. Eine [ Anleitung finden Sie unter „Versionierung und Kommentare ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) Editor für interaktive Kommunikation“.
+Um eine Version zu erstellen, öffnen Sie **Forms und Dokumente**, wählen Sie die interaktive Kommunikation aus, öffnen Sie das Bedienfeld **Zeitleiste** in der linken Leiste und klicken Sie auf **Als Version speichern**. Eine [&#x200B; Anleitung finden Sie unter „Versionierung und Kommentare &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) Editor für interaktive Kommunikation“.
 
 Aktualisieren Sie nach dem Speichern der Version die interaktive Kommunikation im Editor, sodass sich das aktuelle Design von der gespeicherten Version unterscheidet. Sie benötigen sowohl eine gespeicherte Version als auch einen geänderten aktuellen Status, bevor Sie sie vergleichen können.
 
