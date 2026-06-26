@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
+source-git-commit: fb677fc41d66133313c8cf9f4e198aa70a7891b1
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 96%
+source-wordcount: '2318'
+ht-degree: 93%
 
 ---
 
@@ -75,12 +75,12 @@ Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie eine
 
 ### Weitere Titel und Beschreibungen {#more-titles}
 
-* **Seitentitel**: Ein Titel zur Verwendung auf der Seite. 
+* **Seitentitel**: Ein Titel zur Verwendung auf der Seite.
 
    * Dieser wird normalerweise von Titelkomponenten verwendet.
    * Wenn dies leer gelassen wird, wird der **Titel** verwendet.
 
-* **Navigationstitel**: Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen). 
+* **Navigationstitel**: Sie können einen eigenen Titel für die Navigation angeben (z. B. wenn Sie einen kürzeren Titel wünschen).
 
    * Wenn dies leer gelassen wird, wird der **Seitentitel** verwendet.
 
@@ -149,6 +149,10 @@ Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, wa
 
 * **Cloud-Konfiguration**: Der Pfad zur gewählten Konfiguration
 
+### SPA-Konfiguration {#spa-configuration}
+
+* **Remote-App-**: Die URL der Remote-App bei der Implementierung einer [Einzelseitenanwendung](/help/implementing/developing/hybrid/introduction.md)
+
 ### Vorlageneinstellungen {#template-settings}
 
 * **Erlaubte Vorlagen**: [Definiert die Liste der Vorlagen, die innerhalb dieses Unterzweigs verfügbar sind](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)
@@ -186,6 +190,10 @@ Mit dieser Eigenschaft können Sie eine Vanity-URL für diese Seite eingeben, wa
    * Einige Optionen stehen im Konflikt miteinander, wobei in diesem Fall die Option mit größerer Berechtigung Vorrang hat.
 
 * **Sitemap generieren** – Wenn ausgewählt, wird eine `sitemap.xml` für diese Seite und ihre Unterseiten generiert.
+
+* **Strukturierte Daten (JSON-LD)** - Der hier definierte Inhalt wird innerhalb eines `<script type="application/ld+json">`-Tags im Seitenkopf von der „Seitenkomponente[&#x200B; ausgegeben](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
+   * Klicken Sie **Hinzufügen**, um strukturierte Daten hinzuzufügen.
+   * Jeder Eintrag muss ein vollständiges JSON-LD-Objekt eines [schema.org](https://schema.org)-Typs (z. B. FAQPage, HowTo oder Product) sein.
 
 ## Bilder {#images}
 
@@ -230,7 +238,7 @@ Verwenden Sie die Registerkarte **Berechtigungen**, um festzulegen, welche Benut
 
 * **Hinzufügen von Berechtigungen**
 * **Geschlossene Benutzergruppe bearbeiten**
-* **Effektive Berechtigungen** anzeigen 
+* **Effektive Berechtigungen** anzeigen
 
 ## Blueprint {#blueprint}
 

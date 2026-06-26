@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 91%
+source-wordcount: '3379'
+ht-degree: 90%
 
 ---
 
@@ -194,6 +194,8 @@ So wählen Sie einen Cloud Service und die Signierreihenfolge aus:
 ### Festlegen des Dokumentenablaufs für eine Adobe Sign-Vereinbarung {#set-document-expiration-for-an-adobe-sign-agreement}
 
 Sie können in Adobe Sign-Vereinbarungen eine Ablauffrist festlegen, sodass Empfängerinnen und Empfänger das Signieren innerhalb einer bestimmten Anzahl von Tagen abschließen müssen. Wenn ein Formular gesendet wird, übergibt AEM Forms den konfigurierten Wert als `daysUntilSigningDeadline` an Adobe Sign.
+
+<span class="preview"> Festlegen des Dokumentenablaufs für Adobe Sign-Vereinbarungen erfolgt im Rahmen des Early-Adopter-Programms. Sie können von Ihrer offiziellen E-Mail-ID aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und Zugriff auf diese Funktion anzufordern. </span>
 
 So legen Sie den Dokumentenablauf fest:
 
