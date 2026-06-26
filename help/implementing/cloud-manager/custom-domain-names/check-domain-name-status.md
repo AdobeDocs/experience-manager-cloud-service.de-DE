@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
+source-git-commit: 350d8a1524e3c0f3b91537988f140555cb1b65bc
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 80%
+source-wordcount: '886'
+ht-degree: 72%
 
 ---
 
@@ -19,7 +19,7 @@ Erfahren Sie, wie Sie überprüfen können, ob Cloud Manager Ihren benutzerdefin
 
 ## Überprüfen des Status eines benutzerdefinierten Domain-Namens {#how-to}
 
-Bevor Sie den Status Ihres Domain-Namens in Cloud Manager überprüfen, stellen Sie sicher, dass Sie bereits ein kundenseitig verwaltetes SSL-Zertifikat (OV/EV) für Ihre benutzerdefinierte Domain hinzugefügt haben, wie unter [Hinzufügen eines kundenseitig verwalteten SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) beschrieben.
+Bevor Sie den Status Ihres Domain-Namens in Cloud Manager überprüfen, stellen Sie sicher, dass Sie bereits ein kundenverwaltetes SSL-Zertifikat (OV/EV) für Ihre benutzerdefinierte Domain hinzugefügt haben, wie in [Hinzufügen eines kundenverwalteten SSL-Zertifikats](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert) beschrieben.
 
 **So überprüfen Sie den Status eines benutzerdefinierten Domain-Namens:**
 
@@ -39,12 +39,12 @@ Das Statusdetail wird angezeigt. Ihre benutzerdefinierte Domain kann verwendet w
 >
 >Bei Verwendung eines *von Adobe verwalteten SSL-Zertifikats (DV)* mit der Domain löst Cloud Manager automatisch eine Überprüfung aus, wenn Sie beim [Hinzufügen eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) im Dialogfeld „Domain verifizieren“ auf **Überprüfen** klicken.
 >
->Wenn Sie ein **kundenseitig verwaltetes SSL-Zertifikat (OV/EV)** verwenden möchten, wird Ihre Domain überprüft, *nachdem* Sie [das OV/EV-SSL-Zertifikat hinzugefügt haben](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+>Wenn Sie die Verwendung eines **kundenverwalteten (OV/EV) SSL-Zertifikats** planen, wird Ihre Domain überprüft *nachdem* Sie [das OV/EV-SSL-Zertifikat hinzugefügt haben](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
 
 ## Überprüfungsstatus {#statuses}
 
-Cloud Manager überprüft die Eigentümerschaft der Domain über das kundenseitig verwaltete SSL-Zertifikat (OV/EV). Wenn dies abgeschlossen ist, wird eine der folgenden Statusmeldungen angezeigt:
+Cloud Manager überprüft die Domain-Eigentümerschaft über das kundenverwaltete SSL-Zertifikat (OV/EV). Wenn dies abgeschlossen ist, wird eine der folgenden Statusmeldungen angezeigt:
 
 | Status | Beschreibung |
 | --- | --- |
@@ -71,7 +71,7 @@ Wenn Sie versuchen, eine Domain-Zuordnung in Cloud Manager hinzuzufügen, kann d
 <!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
 **Fehlerursache**
-Fastly sperrt eine Domain für das Konto, das sie zuerst registriert, und andere Konten müssen die Berechtigung zur Registrierung einer Subdomain anfordern. Darüber hinaus können Sie mit Fastly eine Apex-Domain und zugehörige Subdomains nur einem Fastly-Service und -Konto zuweisen. Wenn Sie über ein vorhandenes Fastly-Konto verfügen, das dieselbe Spitze und dieselbe Subdomain verknüpft, die für Ihre AEM Cloud Service-Domains verwendet werden, wird möglicherweise der folgende Fehler angezeigt.
+Fastly beschränkt eine Domain auf das Konto, das sie zuerst registriert, und andere Konten müssen die Berechtigung zur Registrierung einer Subdomain anfordern. Darüber hinaus können Sie mit Fastly eine Apex-Domain und zugehörige Subdomains nur einem Fastly-Service und -Konto zuweisen. Wenn Sie über ein Fastly-Konto verfügen, das denselben apex und dieselben Subdomains verknüpft, die für Ihre AEM as a Cloud Service-Domains verwendet werden, wird möglicherweise der folgende Fehler angezeigt.
 
 **Fehlerbehebung**
 Der Fehler wird wie folgt behoben:
