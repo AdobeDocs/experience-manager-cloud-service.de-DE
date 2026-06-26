@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 0026550effc426691a4d63faf169ecd7b9228a57
 workflow-type: tm+mt
-source-wordcount: '2587'
-ht-degree: 17%
+source-wordcount: '4335'
+ht-degree: 11%
 
 ---
 
@@ -215,7 +215,7 @@ Darüber hinaus können Sie die hinzugefügten Bilder mithilfe von **[!UICONTROL
 
    ![AEM ersetzen](assets/aem-replace.png)
 
-1. [Content Advisor](#intelligent-asset-discovery-content-advisor) wird im linken Navigationsbereich geöffnet. Adobe Express zeigt die Liste der Repositorys an, auf die Sie zugreifen dürfen, sowie die Liste der Assets und Ordner, die auf der Stammebene verfügbar sind. Wählen Sie dort ein Asset aus, um eine Vorschau der Ersetzung auf der Arbeitsfläche anzuzeigen, und klicken Sie dann zur Bestätigung **[!UICONTROL Ersetzen]**.
+1. [Content Advisor](#intelligent-asset-discovery-content-advisor) wird im linken Navigationsbereich geöffnet. Adobe Express zeigt die Liste der Repositorys an, auf die Sie Zugriff haben, zusammen mit der Liste der Assets und Ordner, die auf der Stammebene verfügbar sind. Wählen Sie dort ein Asset aus, um eine Vorschau der Ersetzung auf der Arbeitsfläche anzuzeigen, und klicken Sie dann zur Bestätigung **[!UICONTROL Ersetzen]**.
 
    >[!NOTE]
    >
@@ -231,15 +231,13 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
 2. **AEM Assets**. Adobe Express zeigt das Dialogfeld „Hochladen“ an.
 
-3. Wählen Sie entweder **Aktuelle Seite** oder **Alle Seiten** aus. Geben Sie einen Namen und ein Format für die Assets an, die exportiert werden sollen. Sie können die Inhalte der Arbeitsfläche in die folgenden Formate exportieren: PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG. Das Format passt sich basierend auf den Assets automatisch an die Seite(n) der Arbeitsfläche an.
-Durch Auswahl von **Aktuelle Seite** wird das Asset auf Ihrer aktuellen Seite in Ihrem Zielordner gespeichert. Wenn Sie **Alle Seiten** auswählen und das Exportformat nicht „PDF“ lautet, werden alle Seiten der Arbeitsfläche als separate Dateien in einem neuen Ordner in Ihrem Zielordner gespeichert. Wenn das Exportformat „PDF“ lautet, werden alle Seiten der Arbeitsfläche als eine einzige PDF-Datei im Zielordner gespeichert.
+3. Wählen Sie entweder **Aktuelle Seite** oder **Alle Seiten** aus. Geben Sie einen Namen und ein Format für die Assets an, die exportiert werden sollen. Sie können die Inhalte der Arbeitsfläche in die folgenden Formate exportieren: PNG, JPEG, PDF, MP4, MP4+PNG oder MP4+JPEG. Das Format passt sich basierend auf den Assets automatisch an die Seite(n) der Arbeitsfläche an.Durch Auswahl von **Aktuelle Seite** wird das Asset auf Ihrer aktuellen Seite in Ihrem Zielordner gespeichert. Wenn Sie **Alle Seiten** auswählen und das Exportformat nicht „PDF“ lautet, werden alle Seiten der Arbeitsfläche als separate Dateien in einem neuen Ordner in Ihrem Zielordner gespeichert. Wenn das Exportformat „PDF“ lautet, werden alle Seiten der Arbeitsfläche als eine einzige PDF-Datei im Zielordner gespeichert.
 
 4. Klicken Sie auf das Ordnersymbol unter „**Zielordner**“, um einen Speicherort auszuwählen und die Assets zu speichern.
 
    ![Speichern von Assets in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-5. Optional: Sie können mit dem Feld **Projekt- oder Kampagnenname** Kampagnen-Metadaten für Ihren Upload hinzufügen. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Geben Sie zum Registrieren des Namens einfach den Namen ein und drücken Sie die Eingabetaste.
-Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sowie ein verbessertes Sucherlebnis für Ihre hochgeladenen Assets zu schaffen.
+5. Optional: Sie können mit dem Feld **Projekt- oder Kampagnenname** Kampagnen-Metadaten für Ihren Upload hinzufügen. Sie können einen vorhandenen Namen verwenden oder einen neuen erstellen. Sie können mehrere Projekt- oder Kampagnennamen für Ihren Upload definieren. Geben Sie zum Registrieren des Namens einfach den Namen ein und drücken Sie die Eingabetaste.Adobe empfiehlt als Best Practice, in den restlichen Feldern Werte anzugeben sowie ein verbessertes Sucherlebnis für Ihre hochgeladenen Assets zu schaffen.
 
 6. Definieren Sie auf ähnliche Weise Werte für die Felder **[!UICONTROL Keywords]** und **[!UICONTROL Kanäle]**.
 
@@ -323,4 +321,77 @@ The [Content Fragments](/help/assets/content-fragments/content-fragments.md) tab
 ![Browse assets using Content Fragments](assets/browse-assets-content-fragment.png)
 -->
 
+## Häufig gestellte Fragen {#frequently-asked-questions-content-advisor}
+
+### Was ist Content Advisor in der Integration von AEM Assets und Adobe Express? {#content-advisor-overview}
+
+Content Advisor ist eine intelligente, kontextbezogene Asset-Erkennungsfunktion, die in die native AEM Assets-Integration in Adobe Express integriert ist. Es werden relevante, genehmigte Assets basierend auf dem Inhalt der Express-Arbeitsfläche, der Kampagnenbeschreibung und dem kreativen Intent angezeigt, ohne dass eine manuelle Keyword-Suche erforderlich ist. Content Advisor bietet außerdem Zugriff auf Dynamic Media-Ausgabedarstellungen, Asset-Metadaten, Filter, gespeicherte Suchen und Sammlungen, sodass Designer AEM Assets direkt in der Adobe Express-Benutzeroberfläche suchen, auswerten und verwenden können, ohne die Tools wechseln zu müssen.
+
+### Was sind die Voraussetzungen für die Verwendung von AEM Assets in Adobe Express? {#aem-assets-express-prerequisites}
+
+Für die Verwendung von AEM Assets in Adobe Express sind Berechtigungen für den Zugriff auf Adobe Express und mindestens eine AEM Assets-Umgebung erforderlich. Die Umgebung kann ein beliebiges Adobe Experience Manager Assets as a Cloud Service-Repository sein. Es ist keine zusätzliche Connector- oder Plug-in-Installation erforderlich - die Integration erfolgt nativ in Adobe Express.
+
+### Wie verwende ich AEM Assets im Adobe Express-Editor? {#access-aem-assets-in-express}
+
+Um mit der Verwendung von AEM Assets in Adobe Express zu beginnen, öffnen Sie die Adobe Express-Webanwendung und eine neue leere Arbeitsfläche, Vorlage oder ein neues Projekt. Klicken Sie im linken Navigationsbereich auf Assets , um Content Advisor zu öffnen. In diesem Fenster werden die verfügbaren Repositorys zusammen mit Assets und Ordnern auf der Stammebene angezeigt. Suchen Sie nach Assets oder ziehen Sie sie per Drag-and-Drop auf die Arbeitsfläche oder klicken Sie auf ein Asset, um es automatisch zu platzieren. Assets kann auch nach Genehmigungsstatus, Dateityp, MIME-Typ und Dimensionen gefiltert werden. Beachten Sie, dass die Filterung nach Dimension nicht für Video-Assets gilt.
+
+### Welchen Repository-Typ muss ich in Content Advisor auswählen, um auf alle Funktionen zuzugreifen? {#content-advisor-repository-selection}
+
+Ein Autoren-Repository muss aus der Dropdown-Liste „Repository“ in Content Advisor ausgewählt werden, um auf alle Content Advisor-Funktionen zuzugreifen, einschließlich KI-Suchen, Smart Suggestions, Kampagnenkommentare und Dynamic Media-Ausgabedarstellungen. In einem Versand-Repository werden keine Content Advisor-Funktionen angezeigt. Assets in einem Versand-Repository werden auf der Stammebene nur in einer flachen Struktur angezeigt - sie sind nicht in Ordnern oder Sammlungen organisiert.
+
+### Welche Dateiformate können mit Content Advisor zur Adobe Express-Arbeitsfläche hinzugefügt werden? {#content-advisor-supported-formats}
+
+Content Advisor unterstützt das Hinzufügen von Assets im PNG-, JPEG-, PSD-, MP4-, SVG- und PDF-Format zur Adobe Express-Arbeitsfläche. PDF-Dateien können als scrollbare Dokumente in der Vorschau angezeigt werden, indem Sie auf der Asset-Karte auf das Infosymbol klicken, bevor Sie sie auf der Arbeitsfläche platzieren. Auf Asset-Metadaten und Dynamic Media-Ausgabedarstellungen kann sowohl in der Listen- als auch in der Rasteransicht auch über das Informationssymbol für jedes Asset zugegriffen werden.
+
+### Wie funktioniert KI-Suche in Content Advisor? {#content-advisor-ai-search-faq}
+
+KI-Suche in Content Advisor verwendet künstliche Intelligenz und maschinelles Lernen, um die Bedeutung und den Zweck einer Suchanfrage zu interpretieren, anstatt exakte Keywords abzugleichen. Es unterstützt mehrsprachige Abfragen, verarbeitet Rechtschreibfehler und Tippfehler, versteht Synonyme und verwandte Begriffe und liefert kontextbezogene Ergebnisse basierend auf der Benutzerabsicht - sodass Benutzende relevante Assets finden können, selbst wenn Abfragen anders formuliert oder in einer anderen Sprache eingegeben werden. Die mindestens erforderliche AEM-Release-Version für den Zugriff auf KI-Suchen in Content Advisor ist 21994.
+
+### Was sind intelligente Vorschläge in Content Advisor und welche Inhalte werden analysiert? {#content-advisor-smart-suggestions-overview}
+
+Intelligente Vorschläge in Content Advisor zeigen automatisch relevante Assets basierend auf dem Kontext und der Absicht von Textebenen oder dem Titel auf der Adobe Express-Arbeitsfläche an. Intelligente Vorschläge analysieren nur Textinhalte auf der Arbeitsfläche - sie analysieren keine Bilder, die auf der Arbeitsfläche verfügbar sind. Smart Suggestions werden nicht automatisch aktualisiert, wenn sich die Arbeitsfläche ändert. Klicken Sie auf das Aktualisierungssymbol im Bedienfeld Vorgeschlagener Inhalt , um eine aktualisierte Liste der Vorschläge anzuzeigen. Die mindestens erforderliche AEM-Release-Version für den Zugriff auf Smart Suggestions ist 21994.
+
+### Benötigen Smart Suggestions in Content Advisor eine zusätzliche Vereinbarung für den Zugriff? {#content-advisor-smart-suggestions-genai-rider}
+
+Für den Zugriff auf intelligente Vorschläge in Content Advisor muss ein GenAI-Rider signiert werden. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um den GenAI Rider zu unterzeichnen und Smart Suggestions für Ihr Unternehmen zu aktivieren. Sobald der GenAI-Treiber unterzeichnet ist, stehen Smart Suggestions (intelligente Vorschläge) in Content Advisor in Adobe Express für alle Benutzenden in der Organisation zur Verfügung, die die Mindestanforderung an die AEM-Versionsnummer von 21994 erfüllen.
+
+### Wie verwende ich eine Kampagnenbeschreibung, um Assets in Content Advisor zu finden? {#content-advisor-campaign-briefs}
+
+Der Content Advisor unterstützt das Hochladen eines Kampagnenübersichtsdokuments, um relevante Assets zu ermitteln, ohne Suchbegriffe manuell eingeben zu müssen. Laden Sie eine Kampagnenbeschreibung im PDF-, DOCX- oder TXT-Format hoch. Content Advisor analysiert den Textinhalt, um den Kampagnenzweck zu verstehen, und empfiehlt relevante Assets aus AEM Assets. Kampagnenkommentare werden nur auf der Grundlage von Textinhalten analysiert. Bilder innerhalb des Kurzdokuments werden nicht analysiert. Für den Zugriff auf Kampagnenseminare muss ein GenAI-Treiber signiert werden. Wenden Sie sich an den Adobe-Support, um dies zu aktivieren. Die mindestens erforderliche AEM-Release-Version ist 21994.
+
+### Wie greife ich in Content Advisor auf Dynamic Media-Ausgabedarstellungen für ein Asset zu? {#content-advisor-dynamic-media-renditions}
+
+Um auf Dynamic Media-Ausgabedarstellungen in Content Advisor zuzugreifen, klicken Sie auf das Infosymbol auf einer Asset-Karte und wählen Sie die Registerkarte Dynamic Media aus. Zu den verfügbaren Ausgabedarstellungen gehören Bildvorgaben, smartes Zuschneiden, Formattypen und Farbprofile, die für bestimmte Kanäle optimiert wurden. Wählen Sie entweder Dynamic Media Scene7 oder Dynamic Media mit OpenAPI-Ausgabedarstellungen aus. Bei OpenAPI-Ausgabedarstellungen werden verfügbare Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und in Dynamic Media mit OpenAPI verfügbar ist. Zum Anzeigen der Registerkarte „Dynamic Media“ ist eine gültige AEM Dynamic Media-Lizenz erforderlich.
+
+### Kann ich Modifikatoren in der Vorschau anzeigen und auf Dynamic Media-Ausgabedarstellungen anwenden, bevor ich sie auf der Arbeitsfläche platziere? {#content-advisor-dynamic-media-modifiers}
+
+Dynamic Media-Ausgabedarstellungen in Content Advisor können in der Vorschau angezeigt und geändert werden, bevor sie auf der Adobe Express-Arbeitsfläche platziert werden. Klicken Sie auf das Vorschausymbol einer Ausgabedarstellung, um sie in der Vorschau anzuzeigen, oder klicken Sie auf den Namen der Ausgabedarstellung, um sie direkt auf der Arbeitsfläche zu platzieren. Klicken Sie auf Modifikatoren hinzufügen , geben Sie einen Modifikator im Textfeld an und drücken Sie die Eingabetaste , um Echtzeit-Transformationen anzuwenden. Es können mehrere Modifikatoren gleichzeitig angewendet und in der Vorschau angezeigt werden. Ziehen Sie die Vorschau der Ausgabedarstellung per Drag-and-Drop auf die Arbeitsfläche, um sie zu platzieren. Dabei werden die während der Vorschau angewendeten Modifikatoren nicht im Asset in AEM Assets gespeichert.
+
+### Wie hilft Dynamic Media bei der Begrenzung der Dateigröße in Adobe Express? {#content-advisor-dynamic-media-file-size}
+
+Dynamic Media in Content Advisor überwindet die Größenbeschränkung von 80 MB für Upload-Dateien in Adobe Express, indem optimierte Ausgabedarstellungen großer Assets direkt aus AEM Assets bereitgestellt werden. Ein TIFF-Asset mit 300 MB kann beispielsweise als Ausgabedarstellung mit 2,5 MB bereitgestellt werden, ohne dass die visuelle Qualität beeinträchtigt wird. Dies ermöglicht die effiziente Verwendung hochauflösender Assets in Adobe Express, ohne dass eine manuelle Reduzierung der Dateigröße oder Duplizierung vor dem Import erforderlich ist.
+
+### Wie funktionieren gespeicherte Suchen in Content Advisor und werden sie für die Assets-Ansicht freigegeben? {#content-advisor-saved-searches}
+
+Gespeicherte Suchvorgänge, die in der Assets-Ansicht erstellt wurden, sind in Content Advisor verfügbar und funktionieren browserübergreifend konsistent, sodass vordefinierte Suchkriterien in beiden Benutzeroberflächen wiederverwendet werden können. Um eine Suche im Inhaltsratgeber zu speichern, wenden Sie die gewünschten Filter an, klicken Sie auf das Symbol Filter, wählen Sie Gespeicherte Suchen verwalten aus, klicken Sie auf Neue gespeicherte Suche erstellen und geben Sie einen Namen an. Kürzliche Suchvorgänge sind jedoch zwischen der Assets-Ansicht und dem Inhaltsratgeber nicht konsistent. Derselbe Benutzer kann in jeder Benutzeroberfläche unterschiedliche kürzlich durchgeführte Suchvorgänge haben. Kürzliche Suchvorgänge werden nicht in verschiedenen Browsern gemeinsam genutzt, sind nicht im Inkognito-Modus verfügbar und sind AEM-umgebungsspezifisch. Die in der Assets-Ansicht verfügbare Standardfunktion für die gespeicherte Suche ist in Content Advisor nicht verfügbar.
+
+### Kann ich mit Content Advisor nach Assets in einer bestimmten Sammlung suchen? {#content-advisor-collection-search}
+
+Content Advisor unterstützt die Suche nach Assets in allen Sammlungen oder die Beschränkung der Suche auf eine bestimmte Sammlung. Dies ermöglicht einen schnellen Zugriff auf Assets aus kuratierten Sammlungen, während der beabsichtigte Organisationskontext beibehalten wird. Die gleichen Filterfunktionen, die in der Assets-Ansicht verfügbar sind, gelten für Suchen innerhalb von Sammlungen in Content Advisor, um ein konsistentes Asset-Erkennungserlebnis in AEM Assets und Adobe Express sicherzustellen.
+
+### Wie ersetze ich ein Bild auf der Express-Arbeitsfläche durch ein Asset aus AEM Assets? {#replace-image-aem-assets-express}
+
+Um ein Bild auf der Adobe Express-Arbeitsfläche durch ein Asset aus AEM Assets zu ersetzen, wählen Sie das Bild auf der Arbeitsfläche aus, klicken Sie auf Ersetzen und wählen Sie dann AEM Assets aus den verfügbaren Optionen aus. Der Content Advisor wird im linken Navigationsbereich geöffnet und zeigt die verfügbaren Repositorys und Assets an. Wählen Sie das Ersatz-Asset aus, um es auf der Arbeitsfläche in der Vorschau anzuzeigen, und klicken Sie dann zur Bestätigung auf Ersetzen . SVG-Dateitypen werden für die Bildersetzung mit diesem Workflow nicht unterstützt.
+
+### Wie speichere ich ein Adobe Express-Projekt wieder im AEM Assets-Repository? {#save-express-project-aem-assets}
+
+Um ein Adobe Express-Projekt in AEM Assets zu speichern, klicken Sie auf der Express-Arbeitsfläche auf Freigeben , um das Dialogfeld Freigeben zu öffnen, und wählen Sie dann AEM Assets aus. Wählen Sie im Upload-Dialogfeld entweder Aktuelle Seite oder Alle Seiten aus, geben Sie einen Namen und ein Exportformat an und klicken Sie unter Zielordner auf das Ordnersymbol, um einen Speicherort auszuwählen. Zu den unterstützten Exportformaten gehören PNG, JPEG, PDF, MP4, MP4+PNG und MP4+JPEG. Fügen Sie optional Kampagnenmetadaten mithilfe der Felder Projekt- oder Kampagnenname, Keywords und Kanäle hinzu, bevor Sie auf Hochladen klicken. Beim Speichern in einem Content Hub-Versand-Repository ist das Feld Projekt- oder Kampagnenname obligatorisch, und der Zielordner wird automatisch aus Metadaten abgeleitet.
+
+### Welche Dateigrößen- und Dimensionsbeschränkungen gelten für Assets, die aus AEM Assets in Adobe Express importiert werden? {#aem-assets-express-file-size-limits}
+
+Adobe Express über AEM Assets unterstützt die folgenden Dateigrößen und Größenbeschränkungen: JPEG- und PNG-Assets unterstützen bis zu 65 Megapixel - z. B. 8K × 8K oder 16K × 4K - mit einer maximalen Dateigröße von 80 MB auf dem Desktop und 40 MB auf dem Mobilgerät. SVG-Dateien unterstützen eine Dateigröße von maximal 250 KB. MP4-Videos unterstützen bis zu 3840 × 3840 Pixel mit einer maximalen Dateigröße von 200 MB. PSD-Dateien unterstützen bis zu 65 Megapixel bei einer Dateigröße von maximal 80 MB auf dem Desktop und 40 MB auf dem Mobilgerät. PDF-Dateien haben keine definierte maximale Dimension oder Dateigrößenbeschränkung.
+
+### Welche Videoeinschränkungen bestehen bei der Integration von AEM Assets und Adobe Express? {#aem-assets-express-video-limitations}
+
+Die Integration von AEM Assets und Adobe Express unterstützt MP4 als einzigen Videodateityp für Import und Export. Beim MP4-Videoimport werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt. Für den MP4-Videoexport beträgt die maximal unterstützte Dateigröße 200 MB. Wenn die Größe der Exportdatei 200 MB überschreitet, wird empfohlen, das Video auf maximal 200 MB zu kürzen oder es nach dem lokalen Download manuell in den AEM Assets-Zielordner hochzuladen.
 
