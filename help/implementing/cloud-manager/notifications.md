@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
+source-git-commit: 5b3e3ddfea1584072276108767fa42175465188b
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 55%
+source-wordcount: '581'
+ht-degree: 38%
 
 ---
 
@@ -19,11 +19,11 @@ Erfahren Sie, wie Sie von Cloud Manager über wichtige Ereignisse benachrichtigt
 
 ## Benachrichtigungen in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] sendet Ihnen Benachrichtigungen, wenn eine Produktions-Pipeline zu Beginn einer Produktionsbereitstellung gestartet und abgeschlossen wird (erfolgreich oder nicht erfolgreich).
+[!UICONTROL Cloud Manager] Stellt Benachrichtigungen bereit, wenn eine Produktions-Pipeline während einer Produktionsbereitstellung gestartet und abgeschlossen wird (erfolgreich oder nicht erfolgreich).
 
 Diese Benachrichtigungen werden über das [!UICONTROL CX Enterprise]-Benachrichtigungssystem an Benutzer mit den Rollen **Geschäftsinhaber**, **Programm-Manager** und **Bereitstellungs-Manager** gesendet.
 
-Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager] und überall in Adobe [!UICONTROL CX Enterprise] angezeigt. Dem Glockensymbol in der Kopfzeile wird ein Badge zugewiesen, wenn Sie neue Benachrichtigungen erhalten.
+Die Benachrichtigungen werden in einer Seitenleiste der [!UICONTROL Cloud Manager] und überall in Adobe [!UICONTROL CX Enterprise] angezeigt. Das Glockensymbol in der Kopfzeile zeigt ein Abzeichen, wenn Sie neue Benachrichtigungen erhalten.
 
 ![Benachrichtigungssymbol](assets/notifications-bell-badged.png)
 
@@ -35,7 +35,7 @@ Die Registerkarte **Ankündigungen** enthält Ankündigungen zu Adobe-Produkten.
 
 ![Benachrichtigungsseitenleiste](assets/notificaitons-announcements.png)
 
-Klicken Sie auf eine Benachrichtigung oder Mitteilung, um deren Details anzuzeigen. Benachrichtigungen, die mit Aktivitäten wie Pipeline-Bereitstellungen verknüpft sind, führen Sie zu den Details dieser Aktivität, beispielsweise dem Pipeline-Ausführungsfenster.
+Klicken Sie auf eine Benachrichtigung oder Mitteilung, um deren Details anzuzeigen. Benachrichtigungen, die mit Aktivitäten wie Pipeline-Bereitstellungen verknüpft sind, führen Sie zu den Details dieser Aktivität, z. B. dem Pipeline-Ausführungsfenster.
 
 Klicken Sie auf die Option **Alles anzeigen** am Ende des Bedienfelds, um alle Benachrichtigungen in Ihrem Posteingang anzuzeigen.
 
@@ -45,13 +45,13 @@ Klicken Sie auf die Option **Alle als gelesen markieren** am Ende des Bedienfeld
 
 Sie können einstellen, wie Sie welche Benachrichtigungen erhalten möchten.
 
-Klicken Sie auf das Zahnradsymbol oben in der Benachrichtigungsseitenleiste, um das Fenster **CX Enterprise-**&quot; zu öffnen. Hier können Sie Ihre Benachrichtigungsabonnements und den Empfang Ihrer Benachrichtigungen definieren.
+Klicken Sie auf das Einstellungssymbol oben in der Benachrichtigungsseitenleiste, um das Fenster **CX Enterprise-**&quot; zu öffnen. Hier können Sie Ihre Benachrichtigungsabonnements und den Empfang von Benachrichtigungen definieren.
 
 ![Symbol für Benachrichtigungseinstellungen](assets/notifications-configuration.png)
 
 ### Abonnements {#subscriptions}
 
-Abonnements definieren, für welche Produkte Sie Benachrichtigungen erhalten und welche Arten von Benachrichtigungen.
+Abonnements definieren, für welche Produkte Sie Benachrichtigungen erhalten und welche Arten von Benachrichtigungen Sie erhalten.
 
 ![Abonnements für Benachrichtigungen](assets/notifications-subscriptions.png)
 
@@ -61,11 +61,11 @@ Standardmäßig erhalten Sie alle Benachrichtigungen für alle Produkte sowohl i
 
 ### Priorität {#priority}
 
-Prioritätswarnungen werden mit einem **HOCH**-Tag gekennzeichnet. Sie können sie so konfigurieren, dass sie ausschließlich als Warnhinweise empfangen werden. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
+Prioritätswarnhinweise sind mit einer **HIGH**-Kennzeichnung gekennzeichnet. Sie können den Empfang als Warnhinweise konfigurieren. Im Abschnitt **Priorität** können Sie festlegen, welche Kategorien als Prioritätsbenachrichtigungen eingestuft werden.
 
 ![Benachrichtigungspriorität](assets/notifications-priority.png)
 
-Verwenden Sie das Dropdown-Menü, um die Liste der Kategorien zu erweitern, die als prioritär eingestuft werden. Klicken Sie auf X neben den Kategorienamen, um sie zu entfernen.
+Verwenden Sie das Dropdown-Menü, um die Liste der Kategorien zu erweitern, die als prioritär eingestuft werden. Klicken Sie auf das Löschsymbol neben den Kategorienamen, um sie zu entfernen.
 
 ### Warnhinweise {#alerts}
 
@@ -75,13 +75,13 @@ Warnhinweise werden für einige Sekunden in der oberen rechten Ecke des Fensters
 
 Sie können das Verhalten der Warnhinweise definieren.
 
-* **Warnhinweise anzeigen für**: Definiert die Arten von Benachrichtigungen, die Warnhinweise auslösen.
-* **Warnhinweise sollen am Bildschirm angezeigt werden, bis ich sie schließe**: Legt fest, ob die Warnhinweise bestehen bleiben sollen, bis Sie sie aktiv deaktivieren.
-* **Dauer**: Legt fest, wie lange ein Warnhinweis auf dem Bildschirm eingeblendet werden soll, außer Sie haben ausgewählt, dass ein Warnhinweis auf dem Bildschirm verbleiben soll.
+* **Warnhinweise anzeigen für** - Definiert die Arten von Benachrichtigungen, bei denen ein Trigger Warnhinweise ausgibt.
+* **Warnhinweise bleiben auf dem Bildschirm, bis Sie sie schließen** - Legt fest, ob die Warnhinweise bestehen bleiben, bis Sie sie aktiv deaktivieren.
+* **Dauer** - Legt fest, wie lange der Warnhinweis auf dem Bildschirm eingeblendet wird, solange er nicht für die Beibehaltung konfiguriert wurde.
 
 ### E-Mails {#emails}
 
-Benachrichtigungen sind in der Web-Benutzeroberfläche aller Adobe [!UICONTROL CX Enterprise]-Lösungen verfügbar. Sie können auch im Abschnitt **E-Mails** festlegen, dass diese Benachrichtigungen per E-Mai gesendet werden sollen.
+Benachrichtigungen sind in der Web-Benutzeroberfläche aller Adobe [!UICONTROL CX Enterprise]-Lösungen verfügbar. Um sich für den Versand dieser Benachrichtigungen per E-Mail zu entscheiden, verwenden Sie den Abschnitt **E-Mails**.
 
 ![Benachrichtigungs-E-Mails](assets/notifications-emails.png)
 
