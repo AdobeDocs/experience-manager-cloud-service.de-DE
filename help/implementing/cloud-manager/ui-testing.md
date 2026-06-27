@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: c17bbdac3738ab99be6d58da26825640eedbbdc4
 workflow-type: tm+mt
-source-wordcount: '2891'
-ht-degree: 63%
+source-wordcount: '2839'
+ht-degree: 53%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 63%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI-Tests"
->abstract="Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann. Benutzeroberflächentests sind Selenium-basierte Tests, die in einem Docker-Image verpackt werden, um eine breite Auswahl an Sprachen und Frameworks zu ermöglichen. Dazu gehören Java und Maven, Node und WebDriver.io oder jedes andere Framework und jede andere Technologie, die auf Selenium basieren."
+>abstract="Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen mithilfe von Selenium-basierten Docker-Images erstellen und automatisch ausführen können."
 
 Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann.
 
@@ -26,13 +26,13 @@ Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine option
 
 AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere IT-Testgates ermöglichen bereits die Erstellung und Automatisierung von benutzerdefinierten Tests mithilfe von AEM-APIs.
 
-UI-Tests werden in einem Docker-Bild zusammengefasst, um eine große Auswahl an Sprachen und Frameworks zu ermöglichen (z. B. Cypress, Selenium, Java und Maven sowie JavaScript). Außerdem kann ein Benutzeroberflächen-Testprojekt einfach mithilfe des [AEM-Projektarchetyps) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) werden.
+Benutzeroberflächentests sind in einem Docker-Image verpackt, um verschiedene Sprachen und Frameworks zu unterstützen (z. B. Cypress, Selenium, Java und JavaScript). Außerdem kann ein Benutzeroberflächen-Testprojekt einfach mithilfe des [AEM-Projektarchetyps) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) werden.
 
-Adobe empfiehlt die Verwendung von Cypress, da es Echtzeit-Neuladen und automatisches Warten ermöglicht, was Zeit spart und die Produktivität beim Testen steigert. Cypress bietet auch eine einfache und intuitive Syntax, die auch für Benutzende, die noch nicht mit Tests vertraut sind, leicht zu erlernen und zu verwenden ist.
+Adobe fördert die Verwendung von Cypress, da es Echtzeit-Neuladung und automatisches Warten bietet, was die Effizienz und Produktivität beim Testen verbessert. Cypress bietet auch eine einfache und intuitive Syntax, die auch für Benutzende, die noch nicht mit Tests vertraut sind, leicht zu erlernen und zu verwenden ist.
 
-Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle Benutzeroberflächentests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
+Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle UI-Tests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests ein Docker-Image sein. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests als Docker-Image ausgeführt werden. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
 
 >[!TIP]
 >
@@ -70,7 +70,7 @@ In diesem Abschnitt werden die Schritte beschrieben, die zum Hinzufügen eines B
 
 >[!TIP]
 >
->Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) kann ein Projekt für Benutzeroberflächentests für Sie generieren, das der folgenden Beschreibung entspricht, wenn Sie keine speziellen Anforderungen für die Programmiersprache haben.
+>Der [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype) kann ein Projekt für Benutzeroberflächentests für Sie generieren, das der folgenden Beschreibung entspricht, wenn Sie keine spezifischen Anforderungen für die Programmiersprache haben.
 
 ### Erstellen eines Docker-Build-Kontexts {#generate-docker-build-context}
 
@@ -79,7 +79,7 @@ Um einen Docker-Build-Kontext zu generieren, benötigen Sie ein Maven-Modul, das
 * ein Archiv erzeugt, das ein `Dockerfile` und jede andere Datei enthält, die zum Erstellen des Docker-Images mit Ihren Tests erforderlich ist.
 * das Archiv mit dem `ui-test-docker-context`-Klassifikator markiert.
 
-Die einfachste Möglichkeit besteht darin, das [Maven Assembly-Plug-in](https://maven.apache.org/plugins/maven-assembly-plugin/) so zu konfigurieren, dass das Docker-Build-Kontextarchiv erstellt und ihm der richtige Klassifikator zugewiesen wird.
+Eine empfohlene Methode besteht darin, das [Maven Assembly-Plug-in](https://maven.apache.org/plugins/maven-assembly-plugin/) so zu konfigurieren, dass das Docker-Build-Kontextarchiv erstellt und ihm der richtige Klassifikator zugewiesen wird.
 
 Sie können Benutzeroberflächentests mit verschiedenen Technologien und Frameworks erstellen. In diesem Abschnitt wird jedoch davon ausgegangen, dass Ihr Projekt ähnlich wie folgt aufgebaut ist.
 
@@ -118,7 +118,7 @@ Die `pom.xml`-Datei übernimmt den Maven-Build. Fügen Sie dem Maven Assembly-Pl
 </plugin>
 ```
 
-Diese Ausführung weist das Maven Assembly Plug-in an, ein Archiv basierend auf den in `assembly-ui-test-docker-context.xml` enthaltenen Anweisungen zu erstellen, das im Jargon des Plug **ins als** Assembly-Deskriptor“ bezeichnet wird. Der Assembly-Deskriptor listet alle Dateien auf, die Teil des Archivs sein müssen.
+Diese Ausführung weist das Maven Assembly Plug-in an, ein Archiv basierend auf den in `assembly-ui-test-docker-context.xml` enthaltenen Anweisungen zu erstellen, das in der Terminologie des Plug **ins als** Assembly-Deskriptor“ bezeichnet wird. Der Assembly-Deskriptor listet alle Dateien auf, die Teil des Archivs sein müssen.
 
 ```xml
 <assembly>
@@ -153,11 +153,11 @@ Der Assembly-Deskriptor weist das Plug-in an, ein Archiv des Typs `.tar.gz` zu e
 * Das Skript `wait-for-grid.sh`, dessen Zwecke unten beschrieben werden
 * Die eigentlichen Benutzeroberflächentests, die von einem Node.js-Projekt im Ordner `test-module` implementiert wurden
 
-Der Assembly-Deskriptor schließt auch einige Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert werden könnten. Dieser Prozess garantiert ein kleineres Archiv und schnellere Builds.
+Der Assemblydeskriptor schließt auch Dateien aus, die beim lokalen Ausführen der Benutzeroberflächentests generiert wurden. Dieser Prozess garantiert ein kleineres Archiv und schnellere Builds.
 
 Cloud Manager nimmt automatisch das Docker-Build-Kontext-Archiv auf und erstellt das Test-Image während der Bereitstellung von Pipelines. Schließlich führt Cloud Manager das Docker-Image aus, um die Benutzeroberflächentests für Ihr Programm auszuführen.
 
-Der Build sollte entweder 0 oder 1 Archiv erzeugen. Wenn kein Archiv erzeugt wird, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als ein Archiv erzeugt, ist das ausgewählte Archiv nicht deterministisch.
+Der Build erzeugt entweder kein oder ein Archiv. Wenn kein Archiv erzeugt wird, wird der Testschritt standardmäßig durchgeführt. Wenn der Build mehr als ein Archiv erzeugt, ist das ausgewählte Archiv nicht deterministisch.
 
 ### Kunden-Opt-in {#customer-opt-in}
 
@@ -186,11 +186,11 @@ Um eine Datei `testing.properties` in das Build-Artefakt aufzunehmen, fügen Sie
 >
 >Falls Ihr Projekt diese Zeile nicht enthält, müssen Sie die Datei bearbeiten, um sich für Tests der Benutzeroberfläche anmelden zu können.
 >
->Die Datei enthält möglicherweise die Zeile *NICHT ÄNDERN*. Dies ist lediglich eine Warnung aus älteren Vorlagen/Beispielen und hindert *nicht* Sie daran, die für Cloud Manager-Benutzeroberflächentests erforderlichen Opt-in-Änderungen vorzunehmen. Sie können den Hinweis ignorieren; Sie können `assembly-ui-test-docker-context.xml` und `pom.xml` in *Ihrem Projekt“ bearbeiten* wenn Sie die Opt-in-Schritte ausführen (z. B. um `testing.properties` einzuschließen).
+>Die Datei enthält die Zeile &quot;*NICHT ÄNDERN*. Es handelt sich um eine alte Warnung aus älteren Vorlagen/Beispielen und *nicht* Sie daran hindern, die Opt-in-Änderungen vorzunehmen, die für Tests der Cloud Manager-Benutzeroberfläche erforderlich sind. Sie können den Hinweis ignorieren; Sie können `assembly-ui-test-docker-context.xml` und `pom.xml` in *Ihrem Projekt* bearbeiten, wenn Sie die Opt-in-Schritte ausführen (z. B. um `testing.properties` einzuschließen).
 
 Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
 
-* Für den aus dem [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) generierten JavaScript-basierten `ui.tests` können Sie den folgenden Befehl ausführen, um die erforderliche Konfiguration hinzuzufügen.
+* Um die erforderliche Konfiguration für den aus dem [AEM-Projektarchetyp&rbrace; generierten JavaScript-basierten `ui.tests` hinzuzufügen](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) führen Sie den folgenden Befehl aus.
 
   ```shell
   echo "ui-tests.version=1" > testing.properties
@@ -246,7 +246,7 @@ Cypress: Verwenden der Standardfunktion `Cypress.env('VARIABLE_NAME')`
 
 ### Generieren von Testberichten {#generate-test-reports}
 
-Das Docker-Image muss Testberichte im `JUnit` XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das `JUnit` XML-Format ist ein weit verbreitetes Format für die Meldung von Testergebnissen. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie das [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und das [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte vorkonfiguriert erstellen.
+Das Docker-Image muss Testberichte im `JUnit` XML-Format generieren und in dem von der Umgebungsvariablen `REPORTS_PATH` angegebenen Pfad speichern. Das `JUnit` XML-Format ist ein weit verbreitetes Format für die Meldung von Testergebnissen. Wenn das Docker-Image Java und Maven verwendet, können Standard-Testmodule wie [Maven Surefire Plug-in](https://maven.apache.org/surefire/maven-surefire-plugin/) und [Maven Failsafe Plug-in](https://maven.apache.org/surefire/maven-failsafe-plugin/) solche Berichte automatisch erstellen.
 
 Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implementiert ist, lesen Sie in der Dokumentation der ausgewählten Tools nach, wie Sie JUnit-XML-Berichte erzeugen.
 
@@ -254,7 +254,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 >
 >Das Ergebnis des Benutzeroberflächen-Testschritts wird nur anhand der Testberichte ausgewertet. Stellen Sie sicher, dass Sie den Bericht entsprechend Ihrer Testausführung generieren.
 >
->Verwenden Sie Assertionen, anstatt einfach einen Fehler in STDERR zu protokollieren oder einen Exit-Code ungleich Null zurückzugeben, da Ihre Bereitstellungs-Pipeline sonst normal weiterlaufen kann.
+>Verwenden Sie Assertionen, anstatt einen Fehler in STDERR zu protokollieren oder einen Exit-Code ungleich null zurückzugeben, oder Ihre Bereitstellungs-Pipeline wird normal fortgesetzt.
 >
 >Wenn während der Testausführung ein HTTP-Proxy verwendet wurde, enthalten die Ergebnisse eine `request.log`.
 
@@ -264,9 +264,9 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 
 >[!NOTE]
 >
->Erstellen Sie für die Ausführung der Funktionstests von Ihrem lokalen Computer aus eine Benutzerin oder einen Benutzer mit Admin-ähnlichen Berechtigungen, um dasselbe Verhalten zu erzielen.
+>Um dasselbe Verhalten beim Ausführen von Funktionstests auf Ihrem lokalen Computer zu erzielen, erstellen Sie einen Benutzer mit admin-ähnlichen Berechtigungen.
 
-* Die Container-Infrastruktur, die für Funktionstests genutzt wird, ist durch folgende Faktoren eingeschränkt:
+* Die folgenden Einschränkungen beschränken die Container-Infrastruktur, die für Funktionstests genutzt wird:
 
 | Typ | Wert | Beschreibung |
 |----------------------|-------|-----------------------------------------------------------------------|
@@ -275,12 +275,11 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 | Zeitüberschreitung | 30m | Dauer des Tests. |
 | Empfohlene Dauer | 15m | Adobe empfiehlt, Tests unter diesem Zeitlimit zu belassen. |
 
-* Wenn das Ziel „Autor/Veröffentlichung“ durch IP-Zulassungsauflistung geschützt ist, muss die Testinfrastruktur der Pipeline-Benutzeroberfläche auf die Zulassungsliste gesetzt werden, da andernfalls Benutzeroberflächentests mit 403 Verboten fehlschlagen können.
-Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistungen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Wenn die IP-Zulassungsauflistung die Zielautor-/Veröffentlichungsinstanz schützt, kann die Pipeline-UI-Testinfrastruktur fehlschlagen oder Benutzeroberflächentests können mit 403 Verboten fehlschlagen.Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistungen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
-> Wenn Sie mehr Ressourcen benötigen, erstellen Sie einen Fall für die Kundenunterstützung und beschreiben Sie Ihren Anwendungsfall. Adobe prüft Ihre Anfrage und bietet angemessene Unterstützung.
+> Wenn Sie weitere Ressourcen benötigen, erstellen Sie einen Fall für die Kundenunterstützung und beschreiben Sie Ihren Anwendungsfall. Adobe prüft Ihre Anfrage und bietet angemessene Unterstützung.
 
 ## Selenium-spezifische Details
 
@@ -288,21 +287,21 @@ Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](h
 >
 >Dieser Abschnitt gilt nur, wenn Selenium die ausgewählte Testinfrastruktur ist.
 
-### Warten, bis Selenium bereit ist {#waiting-for-selenium}
+### Um sicherzustellen, dass Selenium bereit ist, warten Sie. {#waiting-for-selenium}
 
 Bevor die Tests beginnen, muss das Docker-Image sicherstellen, dass der Selenium-Server betriebsbereit ist. Das Warten auf den Selenium-Service erfolgt in zwei Schritten.
 
 1. Lesen der URL des Selenium-Service aus der Umgebungsvariablen `SELENIUM_BASE_URL`.
 1. Abrufen des von der Selenium-API bereitgestellten [Statusendpunkts](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) in regelmäßigen Abständen.
 
-Sobald der Statusendpunkt von Selenium positiv antwortet, können die Tests beginnen.
+Sobald der Selenium-Status-Endpunkt mit einer positiven Antwort antwortet, können die Tests beginnen.
 
 Testbeispiele für die Benutzeroberfläche von Adobe verwenden `wait-for-grid.sh`. Er wird beim Start des Dockers ausgeführt und startet Tests erst, wenn das Raster bereit ist.
 
 
 ### Erfassen von Screenshots und Videos {#capture-screenshots}
 
-Das Docker-Bild kann zusätzliche Testausgaben generieren (z. B. Screenshots oder Videos) und sie in dem Pfad speichern, der durch die Umgebungsvariable `REPORTS_PATH` angegeben wird. Jede Datei, die sich unter dem `REPORTS_PATH` befindet, wird in das Testergebnisarchiv aufgenommen.
+Das Docker-Bild generiert zusätzliche Testausgaben (z. B. Screenshots oder Videos) und speichert sie in dem Pfad, der durch die Umgebungsvariable `REPORTS_PATH` angegeben wird. Jede Datei, die sich unter dem `REPORTS_PATH` befindet, wird in das Testergebnisarchiv aufgenommen.
 
 Standardmäßig erstellen die von Adobe bereitgestellten Testbeispiele Screenshots für fehlgeschlagene Tests.
 
@@ -352,12 +351,12 @@ Wenn dieser Wert leer ist, sind keine zusätzlichen Schritte erforderlich und di
 Wenn er nicht leer ist, gilt für das Einstiegspunkt-Skript Folgendes:
 
 1. Konfigurieren Sie eine HTTP-Proxy-Verbindung für die Ausführung von Benutzeroberflächentests, indem Sie die `HTTP_PROXY` Umgebungsvariable exportieren, die anhand der folgenden Werte erstellt wurde:
-   * Proxy-Host, bereitgestellt von der Variablen `PROXY_HOST`
-   * Proxy-Port, der von der Variablen `PROXY_HTTPS_PORT` oder `PROXY_HTTP_PORT` bereitgestellt wird (die Variable mit einem nicht leeren Wert wird verwendet)
-2. Legen Sie das CA-Zertifikat fest, das beim Herstellen einer Verbindung mit dem HTTP-Proxy verwendet wird. Seine Lage wird durch die Variable `PROXY_CA_PATH` angegeben.
+   * Proxy-Host, den die `PROXY_HOST` bereitstellt.
+   * Proxy-Port, den die Variable `PROXY_HTTPS_PORT` oder `PROXY_HTTP_PORT` bereitstellt (die Variable mit einem nicht leeren Wert wird verwendet).
+2. Legen Sie das CA-Zertifikat fest, das beim Herstellen einer Verbindung mit dem HTTP-Proxy verwendet wird. Die `PROXY_CA_PATH` gibt ihren Speicherort an.
    * Exportieren Sie `NODE_EXTRA_CA_CERTS` Umgebungsvariable.
 3. Es muss warten, bis der HTTP-Proxy bereit ist.
-   * Anhand der Umgebungsvariablen `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` und `PROXY_RETRY_DELAY` kann geprüft werden, ob er bereit ist.
+   * Zur Überprüfung der Bereitschaft können die Umgebungsvariablen `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` und `PROXY_RETRY_DELAY` verwendet werden.
    * Sie können dies mit einer cURL-Anfrage überprüfen, wobei cURL in Ihrer `Dockerfile` installiert sein muss.
 
 Eine Beispielimplementierung finden Sie im Einstiegspunkt des Cypress-Beispieltestmoduls auf [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh).
@@ -380,7 +379,7 @@ In diesem Fall müssen die folgenden Änderungen vorgenommen werden.
 
 #### Dockerfile
 
-Installieren Sie cURL und `libnss3-tools`, was `certutil.` bereitstellt
+Installieren Sie cURL und `libnss3-tools`, die `certutil.` bereitstellen
 
 ```dockerfile
 RUN apt -y update \
@@ -427,7 +426,7 @@ fi
 
 #### Playwright-Konfiguration
 
-Ändern Sie die Playwright-Konfiguration (z. B. in `playwright.config.js`), um einen Proxy zu verwenden, falls die Umgebungsvariable `HTTP_PROXY` festgelegt ist.
+Um einen Proxy zu verwenden, falls die Umgebungsvariable `HTTP_PROXY` festgelegt ist, ändern Sie die Playwright-Konfiguration (z. B. in `playwright.config.js`).
 
 Beispielimplementierung:
 
@@ -493,7 +492,7 @@ Vor der Aktivierung von Benutzeroberflächentests in einer Cloud Manager-Pipelin
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` in Ihrem Repository.
 
-1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten.
+1. Um die Tests mit Maven zu starten, führen Sie den folgenden Befehl aus.
 
    ```shell
    mvn verify -Pui-tests-local-execution \
@@ -517,13 +516,13 @@ Vor der Aktivierung von Benutzeroberflächentests in einer Cloud Manager-Pipelin
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests` in Ihrem Repository.
 
-1. Führen Sie den folgenden Befehl aus, um das Docker-Image mit Maven zu erstellen:
+1. Um das Docker-Image mit Maven zu erstellen, führen Sie den folgenden Befehl aus:
 
    ```shell
    mvn clean package -Pui-tests-docker-build
    ```
 
-1. Führen Sie den folgenden Befehl aus, um die Tests mit Maven zu starten:
+1. Um die Tests mit Maven zu starten, führen Sie den folgenden Befehl aus:
 
    ```shell
    mvn verify -Pui-tests-docker-execution \
@@ -546,7 +545,7 @@ Vor der Aktivierung von Benutzeroberflächentests in einer Cloud Manager-Pipelin
 
 1. Öffnen Sie eine Shell und navigieren Sie zum Ordner `ui.tests/test-module` im Repository
 
-1. Führen Sie die folgenden Befehle aus, um die Tests mit Maven zu starten:
+1. Um die Tests mit Maven zu starten, führen Sie die folgenden Befehle aus:
 
    ```shell
    # Start selenium docker image
