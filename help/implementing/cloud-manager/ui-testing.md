@@ -26,13 +26,13 @@ Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine option
 
 AEM bietet eine integrierte Suite mit [Cloud Manager-Qualitäts-Akzeptanztests](/help/implementing/cloud-manager/custom-code-quality-rules.md), um eine reibungslose Aktualisierung ihrer benutzerdefinierten Programme sicherzustellen. Insbesondere IT-Testgates ermöglichen bereits die Erstellung und Automatisierung von benutzerdefinierten Tests mithilfe von AEM-APIs.
 
-Benutzeroberflächentests sind in einem Docker-Image verpackt, um verschiedene Sprachen und Frameworks zu unterstützen (z. B. Cypress, Selenium, Java und JavaScript). Außerdem kann ein Benutzeroberflächen-Testprojekt einfach mithilfe des [AEM-Projektarchetyps) ](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) werden.
+Benutzeroberflächentests sind in einem Docker-Image verpackt, um verschiedene Sprachen und Frameworks zu unterstützen (z. B. Cypress, Selenium, Java und JavaScript). Außerdem kann ein Benutzeroberflächen-Testprojekt einfach mithilfe des [AEM-Projektarchetyps) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview) werden.
 
 Adobe fördert die Verwendung von Cypress, da es Echtzeit-Neuladung und automatisches Warten bietet, was die Effizienz und Produktivität beim Testen verbessert. Cypress bietet auch eine einfache und intuitive Syntax, die auch für Benutzende, die noch nicht mit Tests vertraut sind, leicht zu erlernen und zu verwenden ist.
 
 Benutzeroberflächentests werden als Qualitätstest im Schritt [**Benutzerdefinierte Benutzeroberflächentests**](/help/implementing/cloud-manager/deploy-code.md) ausgeführt, der in [Produktions-Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) erforderlich ist und optional in [produktionsfremden Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Alle UI-Tests, einschließlich Regression und neuer Funktionen, ermöglichen die Erkennung und Meldung von Fehlern.
 
-Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests als Docker-Image ausgeführt werden. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[ definierten Konventionen ](#building-ui-tests).
+Im Gegensatz zu benutzerdefinierten Funktionstests, bei denen es sich um HTTP-Tests handelt, die in Java geschrieben wurden, können Benutzeroberflächentests als Docker-Image ausgeführt werden. Die Tests können in jeder Sprache geschrieben werden, sofern sie den unter „Erstellen von Benutzeroberflächentests[&#x200B; definierten Konventionen &#x200B;](#building-ui-tests).
 
 >[!TIP]
 >
@@ -190,7 +190,7 @@ Um eine Datei `testing.properties` in das Build-Artefakt aufzunehmen, fügen Sie
 
 Wenn Sie die von Adobe bereitgestellten Beispiele verwenden:
 
-* Um die erforderliche Konfiguration für den aus dem [AEM-Projektarchetyp} generierten JavaScript-basierten `ui.tests` hinzuzufügen](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) führen Sie den folgenden Befehl aus.
+* Um die erforderliche Konfiguration für den aus dem [AEM-Projektarchetyp&rbrace; generierten JavaScript-basierten `ui.tests` hinzuzufügen](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) führen Sie den folgenden Befehl aus.
 
   ```shell
   echo "ui-tests.version=1" > testing.properties
@@ -275,7 +275,7 @@ Wenn das Docker-Image mit anderen Programmiersprachen oder Test-Runnern implemen
 | Zeitüberschreitung | 30m | Dauer des Tests. |
 | Empfohlene Dauer | 15m | Adobe empfiehlt, Tests unter diesem Zeitlimit zu belassen. |
 
-* Wenn die IP-Zulassungsauflistung die Zielautor-/Veröffentlichungsinstanz schützt, kann die Pipeline-UI-Testinfrastruktur fehlschlagen oder Benutzeroberflächentests können mit 403 Verboten fehlschlagen.Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistungen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Wenn die IP-Zulassungsauflistung die Zielautor-/Veröffentlichungsinstanz schützt, kann die Pipeline-UI-Testinfrastruktur fehlschlagen oder Benutzeroberflächentests können mit 403 Verboten fehlschlagen.Siehe auch [Fehler beim Benutzeroberflächen-Test in AEMaaCS aufgrund von IP-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) und [Einführung in IP-Zulassungsauflistungen &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Mithilfe der Hilfsfunktionen können Sie Screenshots durch Ihre Tests erstellen.
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 -->
 
-Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) ](/help/implementing/cloud-manager/deploy-code.md).
+Wenn während der Ausführung eines Benutzeroberflächen-Tests ein Testergebnisarchiv erstellt wird, können Sie es von Cloud Manager herunterladen, indem Sie auf die Schaltfläche `Download Details` unter dem Schritt [**Benutzerdefinierte**) &#x200B;](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Hochladen von Dateien {#upload-files}
 
