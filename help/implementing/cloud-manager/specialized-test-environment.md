@@ -79,6 +79,6 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* Video: [Grundlegendes zu Umgebungstypen in AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* Video: [Grundlegendes zu Umgebungstypen in AEM Cloud Manager](https://experienceleague.adobe.com/de/perspectives/cloud-manager-environment-types)
 * [Verwalten von Umgebungen](/help/implementing/cloud-manager/manage-environments.md)
 
