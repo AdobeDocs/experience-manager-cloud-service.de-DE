@@ -5,10 +5,10 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 8f1bbbb30dad4c87a0f373117c0ca89afee98235
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 55%
+source-wordcount: '401'
+ht-degree: 34%
 
 ---
 
@@ -23,7 +23,7 @@ Protokolle werden sieben Tage lang aufbewahrt.
 
 ## Protokolle herunterladen {#download-logs}
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Unternehmen aus.
 
 1. Wählen Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** das Programm aus.
 
@@ -37,7 +37,7 @@ Protokolle werden sieben Tage lang aufbewahrt.
 
    ![Dialog „Protokolle herunterladen“](assets/download-preview.png)
 
-   Falls [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für Ihre Umgebung aktiviert sind, können Sie jede Region auswählen und ihre Protokolle separat herunterladen, wie unten dargestellt:
+   Wenn [Zusätzliche Veröffentlichungsregionen](/help/operations/additional-publish-regions.md) für Ihre Umgebung aktiviert sind, können Sie jede Region auswählen und ihre Protokolle separat herunterladen, wie unten dargestellt:
 
    ![Herunterladen von Protokollen für zusätzliche Veröffentlichungsregionen](assets/download-publish-region-logs.png)
 
@@ -49,15 +49,15 @@ Sie können Ihre Protokolle auch über die Seite **Umgebungen** aufrufen.
 
 ## Protokolle über die API {#logs-through-api}
 
-Abgesehen vom Herunterladen von Protokollen über die Benutzeroberfläche sind die Protokolle auch über die API und die Befehlszeilenschnittstelle verfügbar.
+Protokolle sind zusätzlich zur Benutzeroberfläche über die API und die Befehlszeilenschnittstelle verfügbar.
 
-Zum Herunterladen der Protokolldateien für eine bestimmte Umgebung sieht der Befehl wie folgt aus.
+Verwenden Sie zum Herunterladen der Protokolldateien für eine bestimmte Umgebung einen Befehl ähnlich dem folgenden:
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Außerdem können Sie Protokolle über die Befehlszeilenschnittstelle verfolgen.
+Über die Befehlszeilenschnittstelle können Sie auch sofort auf Protokolle zugreifen.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -90,7 +90,7 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->In [dieser Videoressource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) erfahren Sie mehr über das Debugging von AEM as a Cloud Service.
+>Weitere Informationen zum Debugging von AEM as a Cloud Service finden Sie [dieser Videoressource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab).
 
 Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in den folgenden zusätzlichen Ressourcen:
 
@@ -99,5 +99,5 @@ Weitere Informationen zur Cloud Manager-API und zur Adobe I/O-CLI finden Sie in 
 
 Weitere Informationen zu Protokolldateien in AEM as a Cloud Service finden Sie in den folgenden zusätzlichen Ressourcen:
 
-* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5-AEM-Protokolldateien](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Debugging von AEM as a Cloud Service mithilfe von Protokollen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
