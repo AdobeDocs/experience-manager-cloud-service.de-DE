@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 0ca2d1d71f2087c8dfbd1c14bbed0edb33bd3bf1
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 90%
+source-wordcount: '2579'
+ht-degree: 82%
 
 ---
 
@@ -57,7 +57,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   Wenn die Option **Umgebung hinzufügen** abgeblendet (deaktiviert) ist, kann dies auf fehlende Berechtigungen oder eine Abhängigkeit von den lizenzierten Ressourcen zurückzuführen sein.
+   Wenn die **Umgebung hinzufügen**-Option abgeblendet (deaktiviert) ist, kann dies auf fehlende Berechtigungen oder eine Abhängigkeit von den lizenzierten Ressourcen zurückzuführen sein.
 
    * Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf der Karte **Umgebungen** auf **Umgebung hinzufügen**.
 
@@ -73,7 +73,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
    * Geben Sie einen **Namen** für die Umgebung an. Der Umgebungsname kann nach der Erstellung der Umgebung nicht mehr geändert werden.
    * Geben Sie eine optionale **Beschreibung** für die Umgebung an.
    * Wenn Sie eine Umgebung für **Produktion + Staging** hinzufügen, müssen Sie einen Umgebungsnamen und eine Beschreibung sowohl für die Produktions- als auch für die Staging-Umgebung angeben.
-   * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus. Die primäre Region kann nach der Erstellung nicht mehr geändert werden. Je nach den verfügbaren Berechtigungen können Sie auch [mehrere Regionen](#multiple-regions) konfigurieren.
+   * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus. Die primäre Region kann nach der Erstellung nicht mehr geändert werden. Darüber hinaus können Sie je nach den verfügbaren Berechtigungen ([&#x200B; Regionen) &#x200B;](#multiple-regions).
 
    ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
 
@@ -83,11 +83,11 @@ Die Seite **Überblick** zeigt nun auf der Karte **Umgebungen** Ihre neue Umgebu
 
 ## Mehrere Veröffentlichungsregionen {#multiple-regions}
 
-Benutzende mit der **Geschäftsinhaber**-Rolle können Produktions- und Staging-Umgebungen so konfigurieren, dass neben der primären Region bis zu drei weitere Veröffentlichungsregionen einbezogen werden. Zusätzliche Veröffentlichungsregionen können die Verfügbarkeit verbessern. Weitere Details finden Sie in der [Zusätzlichen Dokumentation zu Veröffentlichungsregionen](/help/operations/additional-publish-regions.md).
+Um zusätzlich zur primären Region bis zu drei weitere Veröffentlichungsregionen einzuschließen, konfiguriert ein Benutzer mit der Rolle **Geschäftsinhaber** Produktions- und Staging-Umgebungen. Zusätzliche Veröffentlichungsregionen können die Verfügbarkeit verbessern. Weitere Details finden Sie in der [Zusätzlichen Dokumentation zu Veröffentlichungsregionen](/help/operations/additional-publish-regions.md).
 
 >[!TIP]
 >
->Sie können die [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) verwenden, um eine aktuelle Liste der verfügbaren Regionen abzufragen.
+>Sie können die [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments#creating-aem-cloud-service-environments) verwenden, um eine aktuelle Liste der verfügbaren Regionen abzufragen.
 
 ### Hinzufügen mehrerer Veröffentlichungsregionen zu einer neuen Umgebung {#add-regions}
 
@@ -114,7 +114,7 @@ Wenn Sie für das Programm [erweiterte Vernetzung](/help/security/configuring-ad
 
 Wenn Sie anfangs keine weiteren Regionen angegeben haben, können Sie dies auch nach der Erstellung der Umgebung noch tun, sofern Sie über die erforderlichen Berechtigungen verfügen.
 
-Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können jedoch in einer Transaktion Regionen nur entweder hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine andere Region entfernen müssen, fügen Sie zuerst eine hinzu, speichern Ihre Änderung und entfernen dann die andere (oder umgekehrt).
+Sie können auch zusätzliche Veröffentlichungsregionen entfernen. Sie können jedoch Regionen in einer Transaktion hinzufügen oder entfernen. Wenn Sie eine Region hinzufügen und eine Region entfernen müssen, fügen Sie zuerst hinzu, speichern Sie Ihre Änderungen und entfernen Sie dann (oder umgekehrt).
 
 1. Klicken Sie in der Konsole „Programmübersicht“ Ihres Programms auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) für Ihre Produktionsumgebung und wählen Sie im Menü die Option **Bearbeiten** aus.
 
@@ -184,7 +184,7 @@ Bei der Erstellung wird auf den Vorschau-Service eine standardmäßige IP-Zulass
 
 Benutzende mit den erforderlichen Berechtigungen müssen die folgenden Schritte ausführen, bevor sie die Vorschau-Service-URL freigeben können, damit der Zugriff darauf möglich ist.
 
-1. Erstellen Sie eine entsprechende IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und heben Sie direkt danach die Anwendung der `Preview Default [<envId>]`-Zulassungsliste wieder auf.
+1. Erstellen Sie eine entsprechende IP-Zulassungsliste, wenden Sie sie auf den Vorschau-Service an und heben Sie die Anwendung der `Preview Default [<envId>]` auf.
 
    Weitere Details finden Sie unter [Anwenden und Aufheben der Anwendung von IP-Zulassungslisten](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
 
@@ -221,7 +221,7 @@ Alternativ können Sie dieselben Informationen über die Registerkarte **Umgebun
 
    ![Status von zusätzliche Veröffentlichungsregionen auf der Registerkarte „Umgebungen“](assets/additional-publish-region-status-environments-tab.png)
 
-Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden, warten Sie eine Weile. Cloud Manager versucht kontinuierlich, die Region wiederherzustellen, und sie kann jederzeit wieder verfügbar sein. Wenn das Problem mehrere Stunden besteht, entfernen Sie die zusätzliche Veröffentlichungsregion (entweder dieselbe Region oder eine andere) und fügen Sie sie erneut hinzu, um eine vollständige Bereitstellung Trigger.
+Wenn Probleme mit zusätzlichen Veröffentlichungsregionen gemeldet werden, einen kurzen Zeitraum warten. Cloud Manager versucht kontinuierlich, die Region wiederherzustellen, und sie wird automatisch wieder verfügbar. Wenn das Problem mehrere Stunden besteht, entfernen Sie die zusätzliche Veröffentlichungsregion (entweder dieselbe Region oder eine andere) und fügen Sie sie erneut hinzu, um eine vollständige Bereitstellung zu starten.
 
 Wie lange Sie warten, bis das System von selbst wiederhergestellt ist, bevor Sie zusätzliche Maßnahmen ergreifen, hängt von den Auswirkungen des Ausfalls dieser Region auf Ihre Systeme ab.
 
@@ -244,12 +244,12 @@ Wenn Cloud Manager erkennt, dass eine neuere AEM-Version verfügbar ist als die,
 Der Prozess der Aktualisierung erfolgt also in zwei Schritten:
 
 1. Aktualisieren der Pipeline mit der neuesten AEM-Version
-1. Ausführen der Pipeline zum Bereitstellen der neuen Version von AEM in einer Umgebung
+1. Um die neue Version von AEM in einer Umgebung bereitzustellen, führen Sie die Pipeline aus.
 
 ### Aktualisieren von Umgebungen {#updating-your-environments}
 
 >[!NOTE]
-> Seit 2024 werden Entwicklungsinstanzen und einige Sandbox-Programme bereits automatisch aktualisiert, sodass Aktualisierungen für sie nicht manuell verwaltet werden müssen. Aufgrund dieses Übergangs ist die Option zur manuellen Aktualisierung der Umgebung für Entwicklungsinstanzen möglicherweise für _einige_ Ihrer Programme nicht verfügbar.
+> Seit 2024 werden Entwicklungsinstanzen und einige Sandbox-Programme bereits automatisch aktualisiert, sodass Aktualisierungen für sie nicht manuell verwaltet werden müssen. Als Ergebnis dieser Umstellung ist die Option zum manuellen Aktualisieren der Umgebung für Entwicklungsinstanzen für (_)_ Programme nicht verfügbar.
 
 Die Option **Aktualisieren** ist auf der Karte **Umgebungen** für bestimmte Entwicklungs- und Sandbox-Umgebungen verfügbar. Klicken Sie neben der Umgebung auf ![Mehr-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), um auf **Aktualisieren** zuzugreifen.
 
@@ -298,7 +298,7 @@ Wählen Sie aus dem Menü mit den Auslassungspunkten der Umgebung auf der Karte 
 
 >[!TIP]
 >
->Unter [AEM as a Cloud Service – Team- und Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md) erfahren Sie, wie Sie mit Team- und Produktprofilen in AEM as a Cloud Service den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren oder einschränken können.
+>Informationen dazu, wie AEM as a Cloud Service-Teams und Produktprofile den Zugriff auf Ihre lizenzierten Adobe-Lösungen gewähren und einschränken, finden Sie unter [AEM as a Cloud Service-Teams und -Produktprofile](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Zugriff auf die Entwicklerkonsole {#accessing-developer-console}
 
