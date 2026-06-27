@@ -73,7 +73,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
    * Geben Sie einen **Namen** für die Umgebung an. Der Umgebungsname kann nach der Erstellung der Umgebung nicht mehr geändert werden.
    * Geben Sie eine optionale **Beschreibung** für die Umgebung an.
    * Wenn Sie eine Umgebung für **Produktion + Staging** hinzufügen, müssen Sie einen Umgebungsnamen und eine Beschreibung sowohl für die Produktions- als auch für die Staging-Umgebung angeben.
-   * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus. Die primäre Region kann nach der Erstellung nicht mehr geändert werden. Darüber hinaus können Sie je nach den verfügbaren Berechtigungen ([ Regionen) ](#multiple-regions).
+   * Wählen Sie in der Dropdown-Liste eine **primäre Region** aus. Die primäre Region kann nach der Erstellung nicht mehr geändert werden. Darüber hinaus können Sie je nach den verfügbaren Berechtigungen ([&#x200B; Regionen) &#x200B;](#multiple-regions).
 
    ![Dialogfeld „Umgebung hinzufügen“](assets/add-environment2.png)
 
