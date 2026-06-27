@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: 6861ae63c85ca2e10638a7f2128783eae02cc2b6
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 87%
+source-wordcount: '2382'
+ht-degree: 51%
 
 ---
 
@@ -112,7 +112,7 @@ Führen Sie die folgenden Schritte aus:
 
 Unter [Aktivieren [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) finden Sie Informationen darüber, wie Sie die Funktionen von [!DNL Dynamic Media] mit OpenAPI-Funktionen in Ihrer Umgebung nutzen können.
 
-### Zugriff auf Dynamic Media-APIs
+### Zugriff auf Dynamic Media-APIs {#access-dynamic-media-apis}
 
 Nach [Aktivieren von Dynamic Media mit OpenAPI](#activate-dynamic-media-with-openapi) wird eine `delivery` erstellt. Klicken Sie auf die Versandinstanz, um das `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` Produktprofil anzuzeigen. Für das Produktprofil ist bereits **AEM Dynamic Media Enable API Services** standardmäßig aktiviert.
 
@@ -298,3 +298,49 @@ So aktivieren Sie [!DNL Dynamic Media] Prime:
 <!--
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)
 -->
+
+## Häufig gestellte Fragen {#frequently-asked-questions-dynamic-media-prime-ultimate}
+
+### Was sind die Voraussetzungen für die Aktivierung von Dynamic Media mit OpenAPI? {#dynamic-media-openapi-prerequisites}
+
+Für die Aktivierung von Dynamic Media mit OpenAPI sind drei Voraussetzungen erforderlich: Zugriff auf Cloud Manager, ein Programm mit Dynamic Media-Lösungen und eine gültige Lizenz für Dynamic Media Prime oder Ultimate. Wenn in Cloud Manager keine Umgebung verfügbar ist, muss eine neue Umgebung erstellt werden, bevor die Aktivierung beginnen kann. Die Dynamic Media-Lösung muss dem Programm hinzugefügt werden, bevor der Aktivierungsschritt auf der Seite mit den Umgebungsdetails ausgeführt wird.
+
+### Wie aktiviere ich Dynamic Media mit OpenAPI in meiner Cloud Service-Umgebung? {#activate-dynamic-media-openapi}
+
+Um Dynamic Media mit OpenAPI zu aktivieren, gehen Sie zur Cloud Manager-Benutzeroberfläche und öffnen Sie die Seite mit den Umgebungsdetails. Suchen Sie im Abschnitt Umgebungsinformationen nach der Zeile Dynamic Media und klicken Sie auf Zum Aktivieren klicken. Klicken Sie im Bestätigungsdialogfeld auf Aktivieren , um den Aktivierungsprozess zu starten. Nach erfolgreicher Aktivierung zeigt Cloud Manager die Umgebungsstufe als „Wird ausgeführt“ und den Dynamic Media-Status als „OpenAPI-Funktionen aktiviert“ an.
+
+### Was sollte ich tun, wenn die Aktivierung von Dynamic Media mit OpenAPI fehlschlägt? {#dynamic-media-openapi-activation-failure}
+
+Wenn die Dynamic Media-Aktivierung mit OpenAPI fehlschlägt, zeigt Cloud Manager das Umgebungsstadium als DM mit fehlgeschlagener OpenAPI-Aktivierung an, und der Dynamic Media-Status als fehlgeschlagene OpenAPI-Funktionen. Klicken Sie auf der Seite mit den Umgebungsdetails auf Zum Wiederholen klicken. Alternativ können Sie zur Seite mit allen Umgebungen navigieren, auf das Symbol Mehr Optionen am Ende der Zeile Umgebung klicken und DM mit OpenAPI-Aktivierung erneut versuchen wählen, um den Prozess neu zu starten.
+
+### Was sind die Voraussetzungen für die Konfiguration von Dynamic Media-Lösungen? {#configure-dynamic-media-solutions-prerequisites}
+
+Für die Konfiguration von Dynamic Media-Lösungen ist der Zugriff auf Cloud Manager und eine gültige Dynamic Media Ultimate-Lizenz erforderlich. Dynamic Media Prime erfordert diesen Schritt nicht. Er gilt nur für Dynamic Media Ultimate-Kunden, die die Dynamic Media-Lösung zu einem vorhandenen oder neuen Programm in Cloud Manager hinzufügen müssen.
+
+### Wie füge ich die Dynamic Media-Lösung zu einem AEM Cloud Service-Programm hinzu? {#add-dynamic-media-solution-program}
+
+Um die Dynamic Media-Lösung einem Programm hinzuzufügen, erstellen Sie ein neues Programm oder navigieren Sie zu einem vorhandenen Programm in Cloud Manager und klicken Sie auf Bearbeiten. Wählen Sie auf der Seite Für Produktion einrichten die Registerkarte Lösungen und Add-ons und dann Assets, Assets Prime, Assets Ultimate oder Sites aus, um die Dynamic Media-Lösung verfügbar zu machen. Wählen Sie Dynamic Media aus und klicken Sie auf Weiter , um es dem Programm hinzuzufügen. Diese Aktion startet alle vorhandenen Umgebungen im Programm neu und fügt die Dynamic Media-Lösung hinzu. Alle im Rahmen des Programms erstellten neuen Umgebungen erhalten automatisch Dynamic Media.
+
+### Wie greife ich auf Dynamic Media-APIs zu, nachdem ich Dynamic Media mit OpenAPI aktiviert habe? {#dynamic-media-apis-faqs}
+
+Nach der Aktivierung von Dynamic Media mit OpenAPI wird in Adobe Admin Console eine Bereitstellungsinstanz erstellt. Klicken Sie auf die Versandinstanz, um das Produktprofil AEM Assets DM OpenAPI Users anzuzeigen, in dem AEM Dynamic Media API Services standardmäßig aktiviert ist. Um auf die APIs zuzugreifen, erstellen Sie ein neues Projekt in Adobe Developer Console und verwenden Sie die AEM Dynamic Media-API-Karte. Zu den Authentifizierungsoptionen gehören Server-zu-Server-Authentifizierung, Web-App-Anmeldeinformationen oder SPA-Anmeldeinformationen. Bevor auf die API zugegriffen werden kann, muss der Anwender zum Produktprofil AEM Assets DM OpenAPI Users-Bereitstellung für das entsprechende Programm und die entsprechende Umgebung hinzugefügt werden.
+
+### Was sind die Voraussetzungen für die Erstellung eines Dynamic Media-Unternehmens? {#create-dynamic-media-company-prerequisites}
+
+Zum Erstellen eines Dynamic Media-Unternehmens ist der Zugriff auf Cloud Manager und eine gültige Dynamic Media Ultimate-Lizenz erforderlich. Das Unternehmen wird auf der Seite &quot;Cloud Manager-Lizenz“ erstellt und stellt ein Konto dar, das in der AEM Cloud Service-Umgebung konfiguriert werden kann. Die Dynamic Media-Unternehmenserstellung ist ein für Dynamic Media Ultimate spezifischer Schritt und für Dynamic Media Prime nicht erforderlich.
+
+### Wie erstelle ich ein neues Dynamic Media-Unternehmen in meiner IMS-Organisation? {#create-dynamic-media-company}
+
+Um ein neues Dynamic Media-Unternehmen zu erstellen, gehen Sie zur Seite &quot;Cloud Manager-Lizenz“ und klicken Sie auf „Unternehmen hinzufügen“. Geben Sie im Dialogfeld Dynamic Media-Firma erstellen einen eindeutigen Firmennamen an, wählen Sie eine Unternehmensregion aus und fügen Sie E-Mail-IDs für Unternehmensadministratoren hinzu, die durch Kommas getrennt sind. Klicken Sie auf Erstellen , um die Unternehmenserstellung zu starten. Eine neue Zeile wird zum Abschnitt Dynamic Media-Unternehmen mit dem Status Einrichten hinzugefügt. Nach Abschluss der Erstellung wird der Status auf Bereit gesetzt. Der Dynamic Media-Administrator erhält eine Begrüßungs-E-Mail mit Schritten zum Konfigurieren des Dynamic Media-Unternehmens in der AEM Cloud Service-Umgebung.
+
+### Was sollte ich tun, wenn die Erstellung eines Dynamic Media-Unternehmens fehlschlägt? {#dynamic-media-company-creation-failure}
+
+Wenn die Erstellung eines Dynamic Media-Unternehmens fehlschlägt, hängt die zu ergreifende Aktion vom angezeigten Status ab. Wenn der Status „Ausstehend“ lautet, wenden Sie sich zur Lösung des Problems an das Adobe-Support-Team. Wenn der Status Fehlgeschlagen ist, wiederholen Sie die Erstellung basierend auf der Ursache des Fehlers, der angezeigt wird. Ein Fehlschlagen bei der Unternehmenserstellung ist unabhängig vom Aktivierungsfehler. Beide verfügen über eigene Wiederholungsmechanismen in Cloud Manager.
+
+### Was sind die Voraussetzungen für die Konfiguration einer benutzerdefinierten Domain auf der Bereitstellungsebene von Dynamic Media? {#custom-domain-delivery-tier-prerequisites}
+
+Für die Konfiguration einer benutzerdefinierten Domain auf der Dynamic Media-Bereitstellungsebene sind vier Voraussetzungen erforderlich: Zugriff auf Cloud Manager, Dynamic Media mit bereits aktiviertem und in der Umgebung bereitem OpenAPI-Status und ein SSL-Zertifikat vom Typ „EV“ oder „OV“ für die Domain, die auf der Bereitstellungsebene verwendet werden soll. Die Konfiguration der benutzerdefinierten Domain ist sowohl für Dynamic Media Prime als auch für Dynamic Media Ultimate optional.
+
+### Wie konfiguriere ich eine benutzerdefinierte Domain für die Dynamic Media-Bereitstellung mithilfe von Cloud Manager? {#configure-custom-domain-delivery-tier}
+
+Um eine benutzerdefinierte Domain für die Dynamic Media-Bereitstellung zu konfigurieren, führen Sie in Cloud Manager drei Schritte aus: Hinzufügen eines kundenverwalteten SSL-Zertifikats, Hinzufügen eines benutzerdefinierten Domain-Namens und Hinzufügen einer CDN-Konfiguration über die Seite mit den Umgebungsdetails - Auswahl von Bereitstellung im Feld Ebene des Dialogfelds CDN konfigurieren . Nachdem Sie die CDN-Konfiguration hinzugefügt haben, wird der Status auf Angewendet aktualisiert. Klicken Sie auf Weitere Optionen und wählen Sie Go-Live-Bereitschaft aus. Befolgen Sie dann die Schritte zum Konfigurieren von CNAME, um cdn.adobeaemcloud.com als CNAME-Eintrag im DNS-Service-Provider zuzuordnen. Nachdem die DNS-Zuordnung bestätigt wurde, klicken Sie auf „OK“ und der Domain-Status wird auf „Verifiziert“ aktualisiert, sodass die benutzerdefinierte Domain in Versand-URLs verwendet werden kann.
