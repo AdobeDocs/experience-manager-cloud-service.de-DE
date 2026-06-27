@@ -4,10 +4,10 @@ description: Erfahren Sie, wie spezialisierte Testumgebungen in Cloud Manager ei
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 399fddc57489577d0cfeb79f63199451e0fe1ed4
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 33%
+source-wordcount: '539'
+ht-degree: 32%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->Spezielle Testumgebungen können jetzt erworben werden. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um eine Bestellung aufzugeben.
+>Spezielle Testumgebungen können jetzt erworben werden. Um eine Bestellung aufzugeben, wenden Sie sich an Ihren Adobe-Support-Mitarbeiter.
 
 
 Die spezialisierte Testumgebung ist eine neue Art von Cloud Manager-Umgebung, die Sie erstellen können. Es wurde entwickelt, um erweiterte Anwendungsfälle wie Benutzerakzeptanztests (UAT) und Leistungsvalidierung zu unterstützen. Im Gegensatz zu herkömmlichen Entwicklungs-, Rapid Development- oder Staging-Umgebungen werden spezialisierte Testumgebungen außerhalb der Produktionsbereitstellungs-Pipeline ausgeführt. Auf diese Weise bieten sie Ihnen mehr Flexibilität bei gleichzeitiger strikter Isolation, um Störungen in Produktions-Workflows zu vermeiden.
 
-Eine spezielle Testumgebung wurde entwickelt, um die Größe, Skalierbarkeit und Konfigurationen einer typischen Staging-Umgebung widerzuspiegeln. Dieser Ansatz stellt sicher, dass Tests, die in der spezialisierten Testumgebung durchgeführt werden, realistische Einblicke in die Leistung von Code und Inhalten in produktionsähnlichen Bedingungen liefern können. Die -Umgebung unterstützt auch das direkte Kopieren von Inhalten aus der Produktion oder Staging. Sie bleibt hinsichtlich Bereitstellungs-Workflows, Zugriffssteuerungen und Netzwerkkonfigurationen mit Entwicklungsumgebungen gleichberechtigt.
+Eine spezielle Testumgebung wurde entwickelt, um die Größe, Skalierbarkeit und Konfigurationen einer typischen Staging-Umgebung widerzuspiegeln. Dieser Ansatz stellt sicher, dass Tests, die in der spezialisierten Testumgebung durchgeführt werden, genaue Einblicke in die Leistung von Code und Inhalten in produktionsähnlichen Bedingungen liefern können. Die -Umgebung unterstützt auch das direkte Kopieren von Inhalten aus der Produktion oder Staging. Darüber hinaus bleibt die Konsistenz mit Entwicklungsumgebungen in Bezug auf Bereitstellungs-Workflows, Zugriffssteuerungen und Netzwerkkonfigurationen gewahrt.
 
 ## Wichtige Funktionen und Konfigurationen einer spezialisierten Testumgebung {#key-features}
 
@@ -56,8 +56,7 @@ Um eine Umgebung hinzufügen oder bearbeiten zu können, muss eine Benutzerin bz
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie in der **[Meine](/help/implementing/cloud-manager/navigation.md#my-programs)**-Konsole auf der Karte **Umgebungen** auf **Umgebung hinzufügen**.
-Wenn die Option **Umgebung hinzufügen** abgeblendet (deaktiviert) ist, kann dies auf fehlende Berechtigungen oder eine Abhängigkeit von den lizenzierten Ressourcen zurückzuführen sein.
+   * Klicken Sie in der Konsole **[Meine Programme](/help/implementing/cloud-manager/navigation.md#my-programs)** auf der Karte **Umgebungen** auf **Umgebung hinzufügen**.Wenn die **Umgebung hinzufügen**-Option abgeblendet (deaktiviert) ist, liegt dies an fehlenden Berechtigungen oder an lizenzierten Ressourcen.
 
      ![Karte „Umgebungen“](assets/no-environments.png)
 
