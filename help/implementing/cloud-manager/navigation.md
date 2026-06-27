@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 56322227b6f2d13fa16a6cbc9b32b54d9180099c
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 79%
+source-wordcount: '1786'
+ht-degree: 72%
 
 ---
 
@@ -39,7 +39,7 @@ Wenn Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.clo
 
 ![Konsole „Meine Programme“](assets/my-programs-console.png)
 
-Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, auf die Sie in der ausgewählten Organisation Zugriff haben. Sie besteht aus mehreren Teilen.
+Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, auf die Sie in der ausgewählten Organisation Zugriff haben. Sie besteht aus folgenden Teilen:
 
 1. [Symbolleisten](#toolbars-my-programs-toolbars) für die Auswahl von Organisationen, Warnmeldungen und Kontoeinstellungen
 1. Registerkarten, um die aktuelle Ansicht der Programme zu wechseln:
@@ -56,7 +56,7 @@ Die Konsole „Meine Programme“ bietet einen Überblick über alle Programme, 
 
 ### Symbolleisten {#my-programs-toolbars}
 
-Es gibt zwei Symbolleisten übereinander.
+Es gibt zwei gestapelte Symbolleisten.
 
 #### Experience Platform - Navigationsleiste oben {#cloud-manager-header}
 
@@ -64,10 +64,10 @@ Die erste ist die obere Navigationsleiste von Experience Platform, die beim Navi
 
 ![Experience Platform-Navigationsleiste oben](assets/experience-cloud-header.png)
 
-* Über ![&#x200B; Symbol „Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden) können Sie auf verschiedene Registerkarten zugreifen, mit denen Sie zu bestimmten Teilen eines einzelnen Programms gelangen. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
+* Über ![ Symbol „Menü anzeigen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (Seitenmenü ein- oder ausblenden) können Sie auf verschiedene Registerkarten zugreifen, mit denen Sie zu bestimmten Teilen eines einzelnen Programms gelangen. Alternativ können Sie je nach Kontext zwischen dem [Lizenz-Dashboard](/help/implementing/cloud-manager/license-dashboard.md) und der Konsole **[Meine Programme](#my-programs-console)** wechseln.
 * Das ![Glockensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Benachrichtigungen](/help/implementing/cloud-manager/notifications.md)) bietet Ihnen unter anderem Zugriff auf Benachrichtigungen und Ankündigungen.
 
-Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur [Adobe Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
+Weitere Informationen zur oberen Navigationsleiste von Experience Platform finden Sie im Handbuch zur [Adobe Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Programmsymbolleiste {#program-toolbar}
 
@@ -81,13 +81,13 @@ Die Programmsymbolleiste enthält Links zum Wechseln zwischen Cloud Manager-Prog
 
 ### Statistiken und Aktionsaufrufe {#statistics}
 
-Im Abschnitt für Statistiken und Aktionsaufrufe finden Sie zusammengefasste Daten zu Ihrer Organisation. Wenn Sie z. B. Ihre Programme erfolgreich eingerichtet haben, können Sie hier Statistiken über Ihre Aktivitäten der letzten 90 Tage einsehen, einschließlich:
+Der Abschnitt Statistiken und call-to-action enthält aggregierte Daten für Ihr Unternehmen. Wenn Sie beispielsweise Ihre Programme erfolgreich eingerichtet haben, werden Statistiken zu Ihren Aktivitäten der letzten 90 Tage angezeigt, darunter:
 
 * Anzahl der [Bereitstellungen](/help/implementing/cloud-manager/deploy-code.md)
 * Anzahl der identifizierten [Code-Qualitätsprobleme](/help/implementing/cloud-manager/code-quality-testing.md)
 * Anzahl der Builds
 
-Oder wenn Sie gerade mit der Einrichtung Ihrer Organisation beginnen, gibt es Tipps zu den nächsten Schritten oder Dokumentationsressourcen.
+Wenn Sie mit der Einrichtung Ihrer Organisation beginnen, finden Sie hier Tipps zu den nächsten Schritten oder Dokumentationsressourcen.
 
 ### Abschnitt „Meine Programme“ {#my-programs-section}
 
@@ -97,7 +97,7 @@ Im Abschnitt **Meine Programme** sind die Karten der einzelnen Programme aufgeli
 
 >[!NOTE]
 >
->Abhängig von Ihren Berechtigungen können Sie bestimmte Programme möglicherweise nicht auswählen.
+>Je nach Ihren Berechtigungen können Sie möglicherweise bestimmte Programme nicht auswählen.
 
 
 Verwenden Sie die Sortieroptionen, um das benötigte Programm leichter zu finden.
@@ -130,7 +130,7 @@ Jedes Programm wird durch eine Karte (oder eine Zeile in einer Tabelle) dargeste
 * Konfigurierte Lösungen. Auf dem Bild oben sind „Sites“ und „Assets“ die konfigurierten Lösungen.
 * Erstellungsdatum.
 
-Ein Produktionsprogramm kann so gekennzeichnet sein, dass es zusätzliche Funktionen anzeigt, die Sie zum Zeitpunkt des Hinzufügens ausgewählt haben, z. B.:
+Ein Produktionsprogramm wird so gekennzeichnet, dass es zusätzliche Funktionen anzeigt, die Sie beim Hinzufügen ausgewählt haben, z. B. die folgenden:
 
 * ![HIPAA-Zeichen](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
@@ -149,7 +149,7 @@ Ein Produktionsprogramm kann so gekennzeichnet sein, dass es zusätzliche Funkti
 * Navigieren zu einer bestimmten ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Umgebung](/help/implementing/cloud-manager/manage-environments.md) des Programms
 * Öffnen der ![Programmübersicht-Symbol](/help/implementing/cloud-manager/assets/program-overview.svg) [Programmübersicht](#program-overview)
 * ![Bearbeiten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Bearbeiten des Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Löschen-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Löschen eines Sandbox-Programms](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -170,15 +170,15 @@ Wenn ein Programm in der Konsole **[Meine Programme](#my-programs-console)** aus
 
 ![Programmübersicht](assets/program-overview.png)
 
-Die Programmübersicht bietet Zugriff auf alle Details eines Cloud Manager-Programms. Wie die Konsole **Meine Programme** besteht sie aus mehreren Teilen.
+Die Programmübersicht bietet Zugriff auf alle Details eines Cloud Manager-Programms. Wie die **Meine Programme**-Konsole besteht sie aus folgenden Teilen:
 
 1. [Symbolleisten](#program-overview-toolbar), um schnell zur Konsole „Meine Programme“ zurückzukehren und im Programm zu navigieren.
 1. [Registerkarten](#program-tabs), um zwischen verschiedenen Aspekten des Programms zu wechseln.
 1. Einem [Aktionsaufruf](#cta) basierend auf den letzten Aktionen des Programms.
 1. Ein [Überblick über die Umgebungen](#environments) des Programms.
 1. Ein [Überblick über die Pipelines](#pipelines) des Programms.
-1. Ein [Überblick über die &#x200B;](#performance) des Programms.
-1. Links zu [nützlichen &#x200B;](#useful-resources)).
+1. Ein [Überblick über die ](#performance) des Programms.
+1. Links zu [nützlichen ](#useful-resources)).
 
 ### Symbolleisten {#program-overview-toolbar}
 
@@ -190,19 +190,19 @@ In der linken oberen Ecke der Seite befindet sich der Adobe Cloud Manager-Header
 
 ![Cloud Manager-Seitenmenü](assets/cloud-manager-hamburger.png)
 
-Klicken Sie auf „Adobe Cloud Manager“, um zur Startseite zurückzukehren.
+Klicken Sie auf Adobe Cloud Manager , um zur Startseite zurückzukehren.
 
 #### Programmsymbolleiste {#program-toolbar-2}
 
-Die Programmsymbolleiste bietet weiterhin Zugriff auf das schnelle Wechseln zu anderen Programmen, bietet aber auch Zugriff auf kontextbezogene Aktionen, z. B. das Hinzufügen und Bearbeiten des Programms.
+Die Programm-Symbolleiste bietet Zugriff, um schnell zu anderen Programmen zu wechseln, und bietet auch Zugriff auf kontextbezogene Aktionen, wie das Hinzufügen und Bearbeiten des Programms.
 
 ![Programmsymbolleiste](assets/cloud-manager-program-toolbar.png)
 
-Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich gerade befinden, auch wenn Sie die Registerkarten mit dem Symbol ![Menü anzeigen“ &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) haben.
+Die Symbolleiste zeigt immer die Registerkarte an, auf der Sie sich gerade befinden, auch wenn Sie die Registerkarten mit dem Symbol ![Menü anzeigen“ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) haben.
 
 ### Programmregisterkarten {#program-tabs}
 
-Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und Daten werden auf Registerkarten zusammengefasst, um die Navigation im Programm zu vereinfachen. Die Registerkarten bieten Zugriff auf:
+Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und Daten sind in Registerkarten unterteilt, um die Navigation im Programm zu vereinfachen. Die Registerkarten bieten Zugriff auf:
 
 **Programm**
 
@@ -219,7 +219,7 @@ Jedem Programm sind zahlreiche Optionen und Daten zugeordnet. Diese Optionen und
 * ![Einstellungssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain-Einstellungen:](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Verwalten benutzerdefinierter Domain-Namen für das Programm
 * ![Symbol für geschlossenes Schloss](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL-Zertifikate:](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) Verwalten von SSL-Zertifikaten für das Programm
 * ![Symbol für soziale Netzwerke](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN-Konfigurationen](/help/implementing/cloud-manager/custom-domain-names/introduction.md): Verwalten von Domain-Zuordnungen
-* ![Aufgabenlistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Zulassungslisten für bestimmte IP-Adressen definieren
+* ![Aufgabenlistensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Definieren von Zulassungslisten für bestimmte IP-Adressen
 * ![Kisten-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content-Sets:](/help/implementing/developing/tools/content-copy.md) Sets von Inhalten, die für Kopierzwecke erstellt wurden
 * ![Verlaufs-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Aktivität zum Kopieren von Inhalten:](/help/implementing/developing/tools/content-copy.md) Aktivitäten zur Inhaltskopie
 * ![Kanal-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Netzwerkinfrastrukturen:](/help/security/configuring-advanced-networking.md) Verwalten erweiterter Netzwerkoptionen für das Programm
@@ -234,7 +234,7 @@ Klicken Sie oben links im [Cloud Manager-Header](#cloud-manager-header-2) auf ![
 
 ### Aktionsaufruf {#cta}
 
-Der Abschnitt mit dem Aktionsaufruf stellt Ihnen je nach Status Ihres Programms hilfreiche Informationen zur Verfügung. Bei einem neuen Programm werden möglicherweise die nächsten Schritte und eine Erinnerung an ein Datum der Live-Schaltung angezeigt, das [bei der Programmerstellung festgelegt) &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+Der Abschnitt mit dem Aktionsaufruf stellt Ihnen je nach Status Ihres Programms hilfreiche Informationen zur Verfügung. Für ein neues Programm sehen Sie die nächsten Schritte und eine Erinnerung an ein Datum der Live-Schaltung, das [bei der Programmerstellung festgelegt) ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Aktionsaufruf für ein neues Programm](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
