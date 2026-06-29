@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
+source-git-commit: 9f6c56b099268b9d13e060a5920ca3b6021169f1
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 80%
+source-wordcount: '1142'
+ht-degree: 81%
 
 ---
 
@@ -53,8 +53,7 @@ Siehe auch [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) 
 
 1. Klicken Sie oben rechts auf der Seite **Domain-Einstellungen** auf **Domain hinzufügen**.
 
-1. Geben **im Dialogfeld** Domain hinzufügen“ im Feld **Domain-Name** den von Ihnen verwendeten benutzerdefinierten Domain-Namen ein.
-Geben Sie bei der Eingabe des Domain-Namens keine `http://`, `https://` oder Leerzeichen ein.
+1. Geben Sie im Dialogfeld **Domain hinzufügen** in das Feld **Domain-Name** den von Ihnen verwendeten benutzerdefinierten Domain-Namen ein.Achten Sie bei der Eingabe des Domain-Namens darauf, weder `http://`, `https://` noch Leerzeichen einzuschließen.
 
    >[!NOTE]
    >
@@ -76,7 +75,7 @@ Geben Sie bei der Eingabe des Domain-Namens keine `http://`, `https://` oder Lee
 
    | Ausgewählter Zertifikatstyp | Beschreibung |
    | --- | --- |
-   | Verwaltetes Adobe-Zertifikat | a. Führen Sie die folgenden Schritte für das verwaltete Adobe[&#128279;](#adobe-managed-cert-steps)Zertifikat aus. Klicken Sie nach Abschluss der Schritte im Dialogfeld **Domain verifizieren** auf **Überprüfen**.<ul><li>Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.</li><li>Cloud Manager überprüft schließlich die Eigentümerschaft des Domain-Namens und aktualisiert den Status in der Tabelle **Domain-Einstellungen**. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Überprüfen des Domain-Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>B. Sie können jetzt [ein in Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Verwaltetes Adobe-Zertifikat | a. Führen Sie die folgenden Schritte für das verwaltete Adobe](#adobe-managed-cert-steps)Zertifikat aus. [Klicken Sie nach Abschluss der Schritte im Dialogfeld **Domain verifizieren** auf **Überprüfen**.<ul><li>Die DNS-Überprüfung kann aufgrund von Verzögerungen bei der DNS-Weitergabe einige Stunden dauern.</li><li>Cloud Manager überprüft schließlich die Eigentümerschaft des Domain-Namens und aktualisiert den Status in der Tabelle **Domain-Einstellungen**. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Überprüfen des Domain-Status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>B. Sie können jetzt [ein in Adobe verwaltetes (DV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Kundenseitig verwaltetes Zertifikat | a. Klicken Sie auf **OK**.<br>b. Sie können jetzt [ein vom Kunden verwaltetes (OV/EV) SSL-Zertifikat hinzufügen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Nachdem Sie das Zertifikat hinzugefügt haben, wird Ihr Domain-Name in der Tabelle **Domain-Einstellungen** als verifiziert markiert. Weitere Informationen finden Sie unter [Überprüfen des Status eines benutzerdefinierten Domain-Namens](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li></ul><br>![Verifizieren der Domain für ein kundenseitig verwaltetes EV/OV-Zertifikat](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
@@ -107,7 +106,7 @@ Um diese Einstellungen zu konfigurieren, legen Sie fest, ob ein `CNAME`- oder ei
 >
 >Hier gilt der Grundsatz „Registrierung vor Handlung“. Das heißt, die Konfiguration des DNS sollte nur durchgeführt werden *nachdem* die Domain-Zuordnung erfolgreich hinzugefügt haben. Dadurch wird sichergestellt, dass Cloud Manager erkennt und überprüft, ob die Domain in seiner eigenen Konfiguration vorhanden ist, bevor er auf Anfragen reagieren kann. Außerdem werden dadurch Domain-Übernahmeversuche vermieden.
 
-Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, *bevor* Sie Ihre DNS-Einträge konfigurieren:
+Stellen Sie sicher, dass Sie die folgenden Anforderungen *erfüllen* bevor Sie Ihre DNS-Einträge konfigurieren:
 
 * Identifizieren Sie Ihren Domain-Host oder Ihre Registrierungsstelle, falls Sie sie noch nicht kennen.
 * Sie müssen in der Lage sein, die DNS-Einträge für die Domain Ihres Unternehmens zu ändern, oder sich andernfalls an eine entsprechende Person wenden, die dies kann.
