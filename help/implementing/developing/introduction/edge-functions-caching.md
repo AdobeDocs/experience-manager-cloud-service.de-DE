@@ -3,9 +3,9 @@ title: Caching in AEM Edge-Funktionen
 description: Erfahren Sie, wie der CDN-Cache und der Edge-Funktionsabruf-Cache interagieren, wie Sie das Caching-Verhalten konfigurieren und zwischengespeicherte Inhalte über beide Ebenen hinweg bereinigen können.
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
+source-git-commit: eec07e98d235e80c423bea0d51f75e170c34d1e5
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->AEM Edge Functions ist eine **Beta**-Funktion. Funktionen und Dokumentation können sich ohne Vorankündigung ändern. Um am Early-Access-Programm teilzunehmen und Feedback zu geben, senden Sie eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions ist eine **öffentliche Beta**-Funktion, mit der Sie sie im Selbstbedienungsmodus ausprobieren können, ohne sich zur Aktivierung an Adobe zu wenden. Adobe empfiehlt Ihnen, eine E-Mail an [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) zu senden, um Ihren Anwendungsfall zu beschreiben, damit Adobe sicherstellen kann, dass er unterstützt wird, und eine Anleitung bereitstellen kann. Es ist besonders wichtig, Adobe zu kontaktieren, bevor Sie die Funktion für den Produktions-Traffic bereitstellen.
+>
+>Durch die Verwendung von AEM Edge Functions Beta erkennen Sie an, dass es sich noch in der Entwicklung befindet und Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit der Daten verlassen sollten. Diese Funktion wird unverändert bereitgestellt, kann sich ohne Vorankündigung ändern und wird nicht von der Produktion abgedeckt.
 
 Auf dieser Seite finden Sie detaillierte technische Anleitungen dazu, wie das Caching in AEM Edge funktioniert, einschließlich der Zwei-Cache-Architektur, der Steuerung des Caching-Verhaltens in Ihrem Code und der Bereinigung von Cache-Einträgen bei Inhaltsänderungen.
 
@@ -48,7 +50,7 @@ return new Response(body, {
 });
 ```
 
-Mehrere Ersatzschlüssel werden durch Leerzeichen getrennt. Diese Ersatzschlüssel können verwendet werden, um den CDN-Cache mithilfe der [CDN Cache Purge API) zu &#x200B;](/help/implementing/dispatcher/cdn-cache-purge.md). Das Konzept der Löschung von Ersatzschlüsseln ist dasselbe wie unter [Bereinigen des Caches für eine Gruppe von Ressourcen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) beschrieben. Der wesentliche Unterschied besteht darin, dass die CDN-Ersatzschlüssel hier durch Ihren Edge-Funktions-Code festgelegt werden und nicht durch das Backend.
+Mehrere Ersatzschlüssel werden durch Leerzeichen getrennt. Diese Ersatzschlüssel können verwendet werden, um den CDN-Cache mithilfe der [CDN Cache Purge API) zu ](/help/implementing/dispatcher/cdn-cache-purge.md). Das Konzept der Löschung von Ersatzschlüsseln ist dasselbe wie unter [Bereinigen des Caches für eine Gruppe von Ressourcen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources) beschrieben. Der wesentliche Unterschied besteht darin, dass die CDN-Ersatzschlüssel hier durch Ihren Edge-Funktions-Code festgelegt werden und nicht durch das Backend.
 
 ## Edge, Funktion Zwischenspeicher abrufen (innere) {#fetch-cache}
 
