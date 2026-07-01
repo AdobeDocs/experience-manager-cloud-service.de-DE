@@ -69,7 +69,7 @@ Der universelle Editor bietet viele Funktionen zur Unterstützung einer Vielzahl
 * **Konsistenz**: Stellen Sie die Einhaltung von Markenrichtlinien sicher und sorgen Sie für Einheitlichkeit bei allen Inhalten.
 * **Sicherheit**: [Erzwingen Sie eine Zugriffskontrolle](/help/implementing/universal-editor/authentication.md), schützen Sie die Inhaltsintegrität und verfolgen sie Änderungen mit [robuster Versionierung](/help/sites-cloud/authoring/sites-console/page-versions.md) nach.
 * **[Veröffentlichung](/help/sites-cloud/authoring/universal-editor/publishing.md)**: Integrieren Sie Prüfungs-, Genehmigungs- und Veröffentlichungs-Workflows direkt im Editor.
-* **Vereinheitlicht**: Ist vollständig in AEM-Tools wie [Sites-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md), [Inhaltsfragmenteditor ](/help/sites-cloud/administering/content-fragments/overview.md) und viele mehr integriert und bietet ein kohärentes Authoring-Erlebnis.
+* **Vereinheitlicht**: Ist vollständig in AEM-Tools wie [Sites-Konsole](/help/sites-cloud/authoring/sites-console/introduction.md), [Inhaltsfragmenteditor &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md) und viele mehr integriert und bietet ein kohärentes Authoring-Erlebnis.
 
 ## Erweiterbarkeit {#extensibility}
 
