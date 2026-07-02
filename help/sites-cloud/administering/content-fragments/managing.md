@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
+source-git-commit: 0c868761c03936b501988ec27c51577426f30bda
 workflow-type: tm+mt
 source-wordcount: '3487'
 ht-degree: 79%
@@ -672,6 +672,6 @@ Die ausgewählten Ergebnisse werden bereitgestellt:
 
 Die KI-Suche (semantisch) nach Inhaltsfragmenten verbessert die Inhaltssuche, indem Abfragen in natürlicher Sprache aktiviert werden. So können Sie Fragmente basierend auf Bedeutung und Zweck suchen, anstatt sich ausschließlich auf exakte Keywords oder Volltexttreffer zu verlassen.
 
-Geben Sie Ihre Suchanfrage in das Suchfeld ein, z. B. `fruity and light roast`:
+Geben Sie Ihre Suchanfrage in das Suchfeld ein. Zum Beispiel `fruity and light roast`:
 
 ![Inhaltsfragmentkonsole - semantische Suche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
