@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
+source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3487'
 ht-degree: 79%
 
 ---
@@ -103,8 +103,7 @@ Der Haupt-/rechte Bereich (Tabellenansicht) der Konsole enthält eine Reihe von 
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
 * **Ordner**
-   * Stellt einen Link zum Öffnen des Ordners in der Konsole bereit.
-Wenn Sie den Mauszeiger über den Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
+   * Stellt einen Link zum Öffnen des Ordners in der Konsole bereit.Wenn Sie den Mauszeiger über einen Ordnernamen bewegen, wird der JCR-Pfad angezeigt.
 * **Status**
    * Nur Informationen.
    * Kann für [Schnelles Filtern](#fast-filtering) verwendet werden.
@@ -429,7 +428,7 @@ Sie haben folgende Möglichkeiten:
 
 >[!TIP]
 >
->Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
@@ -529,7 +528,7 @@ Mit dieser Funktion können Konflikte verhindert werden, wenn mehrere Benutzende
 
 >[!NOTE]
 >
->Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ &#x200B;](/help/assets/check-out-and-submit-assets.md).
+>Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ ](/help/assets/check-out-and-submit-assets.md).
 
 ### Auschecken eines Inhaltsfragments {#check-out-a-content-fragment}
 
@@ -649,15 +648,11 @@ Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entspre
 Die Inhaltsfragmentkonsole unterstützt:
 
 * [Volltextsuche](#full-text-search)
-* [Semantische Suche](#semantic-search)
+* [KI-Suche ](#ai-search) (semantische Suche)
 
-<!-- CQDOC-23674 - activate when toggle visible -->
-<!--
+Verwenden Sie die Umschaltoption **KI-Suche**, um die Suchmethode auszuwählen, die Sie verwenden möchten:
 
-Use the toggle option to select your search method:
-
-![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
--->
+![Konsole „Inhaltsfragmente“ - Suchmethode auswählen](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
 
 Das Suchfeld bietet außerdem schnellen Zugriff auf die **letzten Inhaltsfragmente** und die **gespeicherten Suchvorgänge**:
 
@@ -673,9 +668,9 @@ Die ausgewählten Ergebnisse werden bereitgestellt:
 
 ![Konsole „Inhaltsfragmente“ – Suchergebnisse](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
 
-### Semantische Suche {#semantic-search}
+### KI-Suche (semantische Suche) {#ai-search}
 
-Die semantische Suche nach Inhaltsfragmenten verbessert die Inhaltssuche, indem sie Abfragen in natürlicher Sprache ermöglicht. So können Sie Fragmente basierend auf Bedeutung und Zweck suchen, anstatt sich ausschließlich auf exakte Keywords oder Volltexttreffer zu verlassen.
+Die KI-Suche (semantisch) nach Inhaltsfragmenten verbessert die Inhaltssuche, indem Abfragen in natürlicher Sprache aktiviert werden. So können Sie Fragmente basierend auf Bedeutung und Zweck suchen, anstatt sich ausschließlich auf exakte Keywords oder Volltexttreffer zu verlassen.
 
 Geben Sie Ihre Suchanfrage in das Suchfeld ein, z. B. `fruity and light roast`:
 
