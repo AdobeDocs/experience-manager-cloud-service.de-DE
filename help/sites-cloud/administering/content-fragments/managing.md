@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Gilt für AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
+source-git-commit: 0c868761c03936b501988ec27c51577426f30bda
 workflow-type: tm+mt
 source-wordcount: '3487'
 ht-degree: 79%
@@ -428,7 +428,7 @@ Sie haben folgende Möglichkeiten:
 
 >[!TIP]
 >
->Inhaltsfragmente können in [&#x200B; veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
+>Inhaltsfragmente können in [ veröffentlicht werden](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publishing {#publishing}
 
@@ -528,7 +528,7 @@ Mit dieser Funktion können Konflikte verhindert werden, wenn mehrere Benutzende
 
 >[!NOTE]
 >
->Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ &#x200B;](/help/assets/check-out-and-submit-assets.md).
+>Da Inhaltsfragmente intern als Assets gespeichert werden, ist diese Funktion eng mit dem [Ein- und Auschecken von Dateien im Experience Manager DAM“ ](/help/assets/check-out-and-submit-assets.md).
 
 ### Auschecken eines Inhaltsfragments {#check-out-a-content-fragment}
 
@@ -648,7 +648,7 @@ Nach der Auswahl wird dies als Filtereigenschaft angezeigt und die Liste entspre
 Die Inhaltsfragmentkonsole unterstützt:
 
 * [Volltextsuche](#full-text-search)
-* [KI-Suche &#x200B;](#ai-search) (semantische Suche)
+* [KI-Suche ](#ai-search) (semantische Suche)
 
 Verwenden Sie die Umschaltoption **KI-Suche**, um die Suchmethode auszuwählen, die Sie verwenden möchten:
 
@@ -672,6 +672,6 @@ Die ausgewählten Ergebnisse werden bereitgestellt:
 
 Die KI-Suche (semantisch) nach Inhaltsfragmenten verbessert die Inhaltssuche, indem Abfragen in natürlicher Sprache aktiviert werden. So können Sie Fragmente basierend auf Bedeutung und Zweck suchen, anstatt sich ausschließlich auf exakte Keywords oder Volltexttreffer zu verlassen.
 
-Geben Sie Ihre Suchanfrage in das Suchfeld ein, z. B. `fruity and light roast`:
+Geben Sie Ihre Suchanfrage in das Suchfeld ein. Zum Beispiel `fruity and light roast`:
 
 ![Inhaltsfragmentkonsole - semantische Suche](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
