@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Open ID Connect (OIDC) für AEM as a Cloud Se
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 70687e4f2ea0df923e44237bc20635745c46323a
+source-git-commit: c7ab8608da31bf03863fdbe8682dd8d0d0a72fa1
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 53%
+source-wordcount: '3425'
+ht-degree: 41%
 
 ---
 
@@ -35,7 +35,7 @@ Wir gehen davon aus, dass die folgenden Informationen verfügbar oder definiert 
 Informationen aus der IDP-Konfiguration:
 
 1. Die im IDP konfigurierte Client-ID
-1. Das im IDP konfigurierte Client-Geheimnis. Wenn PKCE für den IDP konfiguriert wurde, ist das Client-Geheimnis nicht verfügbar. Speichern Sie den Nur-Text-Wert nicht in der Konfigurationsdatei. Verwenden Sie ein CM-Geheimnis und verweisen Sie darauf.
+1. Das in der ID konfigurierte Client-Geheimnis. Wenn PKCE für die ID konfiguriert wurde, ist das Client-Geheimnis nicht verfügbar. Speichern Sie den Nur-Text-Wert nicht in der Konfigurationsdatei. Verwenden Sie ein CM-Geheimnis und verweisen Sie darauf.
 1. Die für den IDP konfigurierten Bereiche. Es muss mindestens der Bereich `openid` angegeben werden
 1. Ob PKCE für den IDP aktiviert ist
 1. Die `callbackUrl` wird mithilfe eines der konfigurierten Pfade definiert, die unter Punkt 1 definiert sind, und es wird das folgende Suffix hinzugefügt: `/j_security_check`
@@ -74,9 +74,7 @@ Zunächst müssen wir die OIDC-Verbindung konfigurieren. Es können mehrere OIDC
    }
    ```
 
-In einigen Umgebungen macht der Identitätsanbieter (IdP) möglicherweise keinen gültigen `.well-known`-Endpunkt verfügbar.
-In diesem Fall können die erforderlichen Endpunkte manuell definiert werden, indem die folgenden Eigenschaften in der Konfigurationsdatei angegeben werden.
-In diesem Konfigurationsmodus darf die `baseUrl`-Eigenschaft nicht festgelegt werden.
+In einigen Umgebungen macht der Identitätsanbieter (IdP) möglicherweise keinen gültigen `.well-known`-Endpunkt verfügbar.In diesem Fall können die erforderlichen Endpunkte manuell definiert werden, indem die folgenden Eigenschaften in der Konfigurationsdatei angegeben werden.In diesem Konfigurationsmodus darf die `baseUrl`-Eigenschaft nicht festgelegt werden.
 
 ```
 "authorizationEndpoint": "https://idp-url/oauth2/v1/authorize",
@@ -109,7 +107,7 @@ Konfigurieren Sie jetzt den OIDC-Authentifizierungs-Handler. Es können mehrere 
 1. Konfigurieren Sie dann die Eigenschaften wie folgt:
    * `path`: Der zu schützende Pfad
    * `callbackUri`: Der zu schützende Pfad, wobei das Suffix `/j_security_check` hinzugefügt wird. Derselbe CallbackUri muss auch in der Remote-ID als Umleitungs-URL konfiguriert werden.
-   * `defaultConnectionName`: Konfigurieren Sie dies mit dem Namen, der für die OIDC-Verbindung im vorherigen Schritt definiert wurde+
+   * `defaultConnectionName`: Konfigurieren Sie dies mit dem Namen, der für die OIDC-Verbindung im vorherigen Schritt definiert wurde
    * `pkceEnabled`: `true` PKCE (Proof Key for Code Exchange) im Autorisierungs-Code-Fluss
    * `idp`: Der Name des [externen OAK-Identitätsanbieters](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Beachten Sie, dass ein anderer OAK-IDP keine Benutzenden oder Gruppen freigeben kann
 
@@ -133,14 +131,13 @@ Konfigurieren Sie jetzt den OIDC-Authentifizierungs-Handler. Es können mehrere 
    * `groupsClaimName`: Name der Anforderung, die die in AEM zu synchronisierenden Gruppen enthält.
    * `connection`: Konfigurieren Sie dies mit dem Namen, der für die OIDC-Verbindung im vorherigen Schritt definiert wurde
    * `storeAccessToken`: „true“, wenn das Zugriffstoken im Repository gespeichert werden muss. Standardmäßig ist dies „false“. Legen Sie es nur dann auf „true“ fest, wenn AEM im Namen der Benutzenden auf Ressourcen zugreifen muss, die auf externen Servern gespeichert sind, die vom selben IDP geschützt werden.
-   * `storeRefreshToken`: „true“, wenn das Aktualisierungstoken im Repository gespeichert werden muss. Standardmäßig ist dies „false“. Legen Sie ihn nur dann auf „true“ fest, wenn AEM im Namen des Benutzers auf Ressourcen zugreifen muss, die in externen Servern gespeichert sind, die durch dieselbe ID geschützt sind, und das Token von der ID aktualisieren muss.
-   * `idpNameInPrincipals`: Bei Festlegung auf „true“ wird der Name der IDp als Suffix an die Benutzer- und Gruppenprinzipale angefügt, getrennt durch &quot;;“. Wenn beispielsweise der IdP-Name `azure-idp` und der Benutzername `john.doe` ist, wird der in Oak gespeicherte Prinzipal `john.doe;azure-idp`. Dies ist nützlich, wenn in Oak mehrere IDs konfiguriert sind, um Konflikte zwischen Benutzern oder Gruppen mit demselben Namen, die von verschiedenen IDs stammen, zu vermeiden. Diese Einstellung kann auch festgelegt werden, um Konflikte mit Benutzern oder Gruppen zu vermeiden, die von anderen Authentifizierungs-Handlern wie SAML erstellt wurden.
-Beachten Sie, dass Zugriffstoken und Aktualisierungstoken mit dem AEM-Hauptschlüssel verschlüsselt gespeichert werden.
+   * `storeRefreshToken`: „true“, wenn das Aktualisierungs-Token im Repository gespeichert werden muss. Standardmäßig ist dies „false“. Legen Sie ihn nur dann auf „true“ fest, wenn AEM im Namen des Benutzers auf Ressourcen zugreifen muss, die in externen Servern gespeichert sind, die durch dieselbe ID geschützt sind, und das Token von der ID aktualisieren muss.
+   * `idpNameInPrincipals`: Bei Festlegung auf „true“ wird der Name der IDp als Suffix an die Benutzer- und Gruppenprinzipale angefügt, getrennt durch &quot;;“. Wenn beispielsweise der IdP-Name `azure-idp` und der Benutzername `john.doe` ist, wird der in Oak gespeicherte Prinzipal `john.doe;azure-idp`. Dies ist nützlich, wenn in Oak mehrere IDs konfiguriert sind, um Konflikte zwischen Benutzern oder Gruppen mit demselben Namen, die von verschiedenen IDs stammen, zu vermeiden. Diese Einstellung kann auch festgelegt werden, um Konflikte mit Benutzern oder Gruppen zu vermeiden, die von anderen Authentifizierungs-Handlern wie SAML erstellt wurden.Beachten Sie, dass Zugriffstoken und Aktualisierungstoken mit dem AEM-Hauptschlüssel verschlüsselt gespeichert werden.
 
 
 ### Konfigurieren des Synchronisierungs-Handlers {#configure-the-synchronization-handler}
 
-Es muss mindestens ein Synchronisierungs-Handler konfiguriert werden, um die in Oak authentifizierten Benutzenden zu synchronisieren. Weitere Details finden Sie auf [dieser](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) Seite.
+Es muss mindestens ein Synchronisierungshandler konfiguriert werden, um die in Oak authentifizierten Benutzer zu synchronisieren. Weitere Details finden Sie auf [dieser](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) Seite.
 
 Erstellen Sie eine Datei mit dem Namen `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json`. Das Suffix **azure** muss eine eindeutige Kennung sein. Weitere Informationen zum Konfigurieren der Eigenschaften finden Sie in der [Dokumentation zur Benutzer- und Gruppensynchronisierung in Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html). Nachfolgend sehen Sie eine Beispielkonfiguration:
 
@@ -162,8 +159,7 @@ Erstellen Sie eine Datei mit dem Namen `org.apache.jackrabbit.oak.spi.security.a
 }
 ```
 
-Während der Entwicklung können die Ablaufzeiten auf einen niedrigeren Wert reduziert werden (z. B.: 1s), um das Testen der Benutzer- und Gruppensynchronisierung in Oak zu beschleunigen.
-Im Folgenden finden Sie einige der relevantesten Attribute, die in DefaultSyncHandler konfiguriert werden müssen. Beachten Sie, dass die dynamische Gruppenmitgliedschaft immer in Cloud Services aktiviert sein sollte.
+Während der Entwicklung können die Ablaufzeiten auf einen niedrigeren Wert reduziert werden (z. B.: 1s), um das Testen der Benutzer- und Gruppensynchronisierung in Oak zu beschleunigen.Im Folgenden finden Sie einige der relevantesten Attribute, die in DefaultSyncHandler konfiguriert werden müssen. Beachten Sie, dass die dynamische Gruppenmitgliedschaft immer in Cloud Services aktiviert sein sollte.
 
 | Eigenschaftsname | Anmerkungen | Vorgeschlagener Wert |
 |---|---|---|
@@ -495,9 +491,7 @@ Das Format lautet `jcrPropertyPath=credentialAttributeName`. Auf der linken Seit
 
 ### Konfigurieren von ACL für externe Gruppen {#configure-acl-for-external-groups}
 
-Wenn Benutzer über OIDC authentifiziert werden, werden ihre Gruppenmitgliedschaften normalerweise mit dem externen Identitätsanbieter synchronisiert.
-Diese externen Gruppen werden dynamisch im AEM-Repository erstellt, aber nicht automatisch mit Zugriffssteuerungseinträgen verknüpft.
-Um sicherzustellen, dass Benutzende über die entsprechenden Berechtigungen verfügen, müssen für diese Gruppen explizit Zugriffssteuerungslisten (ACLs) definiert werden.
+Wenn Benutzer über OIDC authentifiziert werden, werden ihre Gruppenmitgliedschaften normalerweise mit dem externen Identitätsanbieter synchronisiert.Diese externen Gruppen werden dynamisch im AEM-Repository erstellt, aber nicht automatisch mit Zugriffssteuerungseinträgen verknüpft.Um sicherzustellen, dass Benutzende über die entsprechenden Berechtigungen verfügen, müssen für diese Gruppen explizit Zugriffssteuerungslisten (ACLs) definiert werden.
 
 Es stehen zwei Hauptansätze zur Verfügung.
 
@@ -542,7 +536,7 @@ ACLs können mithilfe von RepoInit-Skripten direkt auf externe Gruppen angewende
    * Wir definieren den Namen der OIDC-Verbindung, den Authentifizierungs-Handler und DefaultSyncHandler wie folgt: `azure`
    * Die Website-URL ist: `www.mywebsite.com`
    * Wir schützen den Pfad `/content/wknd/us/en/adventures`, auf den nur authentifizierte Benutzer der Gruppe `adventures` zugreifen können
-   * Der Mandant ist: `tennat-id`
+   * Mandant ist: `tennat-id`,
    * Die Client-ID ist: `client-id`
    * Das Geheimnis ist: `secret`
    * Die Gruppen werden im ID-Token in einer Anforderung mit folgendem Namen gesendet: `groups`
@@ -639,7 +633,7 @@ Um die Gruppenanforderung im ID-Token zu aktivieren, fügen Sie die Anforderung 
 
 Die Konfiguration von `SlingUserInfoProcessor` muss wie im folgenden Beispiel geändert werden.
 
-Der Dateiname, der geändert werden muss, ist `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl.cfg.json`. Der Inhalt muss wie folgt konfiguriert werden:
+Der Dateiname, der geändert werden muss, lautet `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl.cfg.json`. Der Inhalt muss wie folgt konfiguriert werden:
 
 ```
 {
@@ -694,14 +688,146 @@ Wenn eine ungültige Umleitungs-URL angegeben wird, schlägt die Authentifizieru
    /content/mysite/protected?redirect=/content/mysite/protected/specific-document
    ```
 
+## Konfigurieren der einmaligen Abmeldung {#configure-single-logout}
+
+Standardmäßig wird durch die Abmeldung von AEM nur die lokale AEM-Sitzung (das Anmelde-Cookie) gelöscht. Die Benutzersitzung beim Identitäts-Provider (IdP) bleibt aktiv, sodass die Rückkehr zu einem geschützten Pfad dazu führen kann, dass der Benutzer im Hintergrund erneut authentifiziert wird, ohne erneut zur Eingabe der Anmeldeinformationen aufgefordert zu werden.
+
+Um auch die Sitzung am IdP zu beenden, unterstützt AEM **SP-initiiertes Single Logout** (auch als *RP-Initiated Logout* bezeichnet, wie in der [OpenID Connect RP-Initiated Logout Specification](https://openid.net/specs/openid-connect-rpinitiated-1_0.html) definiert). Wenn diese Option aktiviert ist, leitet AEM den Browser zum ID-`end_session_endpoint` um, damit der ID-Administrator eine eigene Sitzung beenden kann, bevor der Benutzer zu einer konfigurierten Seite zurückkehrt.
+
+### Funktionsweise der einmaligen Abmeldung {#how-single-logout-works}
+
+1. Die Trigger melden sich ab, normalerweise durch Anfrage von `/system/sling/logout?resource=<protected-path>`. Mit dem Parameter `resource` kann der Sling-Authentifizierer die Abmeldung an den richtigen OIDC-Authentifizierungs-Handler weiterleiten.
+1. AEM löscht das lokale Anmelde-Cookie.
+1. AEM leitet den Browser zur ID-`end_session_endpoint` um und fügt hinzu:
+   * `post_logout_redirect_uri` - Wohin der IdP den Benutzer nach dem Abmelden senden soll.
+   * `id_token_hint` - das gespeicherte ID-Token des Benutzers (falls verfügbar), das von vielen IDs benötigt wird, um den Abmeldevorgang ohne Aufforderung abzuschließen.
+1. Der IdP beendet seine Sitzung und leitet den Browser zurück zum `post_logout_redirect_uri`.
+
+Wenn die SP-initiierte einmalige Abmeldung deaktiviert ist oder der IdP keine `end_session_endpoint` anzeigt, wird die lokale AEM-Sitzung einfach durch die Abmeldung gelöscht.
+
+### Erforderliche Konfigurationsänderungen {#single-logout-configuration}
+
+Die Aktivierung der einmaligen Abmeldung erfordert Änderungen an den vier Konfigurationsdateien, die zuvor in diesem Dokument beschrieben wurden.
+
+#### &#x200B;1. Hinzufügen des `end_session_endpoint` zur OIDC-Verbindung {#single-logout-connection}
+
+Der `endSessionEndpoint` ist die IDp-URL, mit der die IDp-Sitzung beendet wird.
+
+* Wenn die Verbindung mit einem `baseUrl` konfiguriert ist (d. h. der IdP einen gültigen `.well-known`-Endpunkt verfügbar macht), wird der `end_session_endpoint` automatisch aus den Provider-Metadaten gelesen und muss **explizit** werden.
+* Wenn die Endpunkte manuell konfiguriert werden (keine `baseUrl`) oder die IdP-Metadaten keine `end_session_endpoint` anzeigen, legen Sie diese explizit fest.
+
+**org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json**
+
+```
+{
+  "name":"azure",
+  "scopes":[
+    "openid"
+  ],
+  "baseUrl":"https://login.microsoftonline.com/tenant-id/v2.0",
+  "clientId":"client-id",
+  "clientSecret":"secret",
+  "endSessionEndpoint":"https://login.microsoftonline.com/tenant-id/oauth2/v2.0/logout"
+}
+```
+
+#### &#x200B;2. Aktivieren der SP-initiierten Abmeldung im Authentifizierungs-Handler {#single-logout-handler}
+
+**org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json**
+
+```
+{
+  "path":[
+    "/content/wknd/us/en/adventures"
+  ],
+  "callbackUri":"https://www.mywebsite.com/content/wknd/us/en/adventures/j_security_check",
+  "idp":"azure",
+  "defaultConnectionName":"azure",
+  "enableSPInitiatedSingleLogout":true,
+  "logoutRedirectPath":"/content/wknd/us/en/logout-complete",
+  "logoutRedirectAllowedHosts":[
+    "www.mywebsite.com"
+  ]
+}
+```
+
+Konfigurieren Sie die Eigenschaften wie folgt:
+
+* `enableSPInitiatedSingleLogout`: Legen Sie hierfür `true` fest, um beim Abmelden zum `end_session_endpoint` des IDs umzuleiten. Beim `false` (Standard) wird die lokale AEM-Sitzung nur durch Abmelden gelöscht.
+* `logoutRedirectPath`: Der Pfad, zu dem der IdP nach dem Abmelden weiterleitet. Sie wird als `post_logout_redirect_uri` verwendet. Standardwert ist `/`.
+* `logoutRedirectAllowedHosts`: **erforderlich, wenn `enableSPInitiatedSingleLogout` `true` ist.** Eine Liste der im `post_logout_redirect_uri` zulässigen Hostnamen. Dadurch werden Open-Redirect-Angriffe über `Host` Header-Spoofing verhindert. Wenn der Anfrage-Host nicht in dieser Liste enthalten ist, wird stattdessen der erste zulässige Host verwendet.
+
+>[!IMPORTANT]
+>Wenn `enableSPInitiatedSingleLogout` `true`, aber `logoutRedirectAllowedHosts` leer ist, wird der Authentifizierungs-Handler **kann nicht aktiviert werden**. Dies ist eine absichtliche Schutzmaßnahme gegen Sicherheitslücken bei offener Umleitung. Listen Sie immer alle öffentlichen Host-Namen auf, von denen sich Benutzer abmelden.
+
+#### &#x200B;3. ID-Token für `id_token_hint` speichern {#single-logout-store-id-token}
+
+Die meisten IDs erfordern, dass der `id_token_hint` den Abmeldevorgang abschließt, ohne den Benutzer zur Bestätigung aufzufordern. Um das ID-Token beim Abmelden verfügbar zu machen, aktivieren Sie `storeIdToken` in der `SlingUserInfoProcessor`. Das ID-Token wird mit dem AEM-Hauptschlüssel verschlüsselt, bevor er gespeichert wird.
+
+**org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json**
+
+```
+{
+  "connection": "azure",
+  "groupsInIdToken": true,
+  "groupsClaimName": "groups",
+  "storeAccessToken": false,
+  "storeRefreshToken": false,
+  "storeIdToken": true
+}
+```
+
+* `storeIdToken`: Legen Sie hierfür `true` fest, um das (verschlüsselte) ID-Token zu speichern, damit es während des Abmeldens als `id_token_hint` gesendet werden kann. Standardwert ist `false`.
+
+#### &#x200B;4. Beibehalten des ID-Tokens über den Synchronisierungs-Handler {#single-logout-sync-id-token}
+
+Damit das gespeicherte ID-Token beim Abmelden lesbar ist, fügen Sie eine `id_token` Zuordnung zur `DefaultSyncHandler` Eigenschaftenzuordnung hinzu, damit sie auf dem Benutzerknoten beibehalten wird.
+
+**org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json**
+
+```
+{
+  "user.expirationTime":"1h",
+  "user.membershipExpTime":"1h",
+  "group.expirationTime": "1d",
+  "user.propertyMapping":[
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
+    "profile/email=profile/email",
+    "id_token=id_token"
+  ],
+  "user.pathPrefix":"azure",
+  "handler.name":"azure"
+}
+```
+
+Das Zuordnungsformat ist `jcrPropertyPath=credentialAttributeName`. Der Eintrag `id_token=id_token` behält das vom `SlingUserInfoProcessor` festgelegte verschlüsselte ID-Token auf dem Benutzerknoten bei, wo der Abmelde-Handler es zum Erstellen des `id_token_hint` zurückliest.
+
+>[!IMPORTANT]
+>Das ID-Token wird auf dem Benutzerknoten gespeichert und muss auf der Veröffentlichungsinstanz verfügbar sein, die die Abmeldeanfrage verarbeitet. Auf der Veröffentlichungsebene werden Benutzerknoten nur dann über Instanzen hinweg übertragen, wenn [Datensynchronisierung](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) aktiviert ist. Aktivieren Sie die Datensynchronisation, damit das gespeicherte ID-Token für die Instanz verfügbar ist, die die Abmeldung verarbeitet. Andernfalls kann die `id_token_hint` fehlen.
+
+>[!NOTE]
+>Wenn das ID-Token nicht gespeichert wird (oder nicht gelesen werden kann), wird die Abmeldung trotzdem fortgesetzt. AEM leitet den `end_session_endpoint` ohne `id_token_hint` weiter. Abhängig von der ID wird der Benutzer dann möglicherweise aufgefordert, die Abmeldung zu bestätigen.
+
+### Anpassen der Umleitung nach dem Abmelden {#single-logout-redirect-parameter}
+
+Ähnlich wie beim Anmeldefluss kann das Ziel nach dem Abmelden pro Anfrage überschrieben werden, indem ein `redirect` Parameter zur Abmeldeanfrage hinzugefügt wird:
+
+```
+/system/sling/logout?resource=/content/wknd/us/en/adventures&redirect=/content/wknd/us/en/goodbye
+```
+
+Es gelten dieselben Sicherheitsbeschränkungen wie für [Login-Umleitung](#custom-redirect-after-authentication): Der Wert muss ein **relativer Pfad** sein (beginnend mit einem einzelnen `/`), und der resultierende Host wird gegen `logoutRedirectAllowedHosts` validiert. Wenn die Validierung des `redirect` fehlschlägt, kehrt AEM zum konfigurierten `logoutRedirectPath` zurück.
+
 ## Migration vom SAML-Authentifizierungs-Handler zum OIDC-Authentifizierungs-Handler
 
-Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
+Wenn AEM bereits mit einem SAML-Authentifizierungs-Handler konfiguriert ist und Benutzende mit aktivierter [Datensynchronisierung](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) im Repository vorhanden sind, können Konflikte zwischen den ursprünglichen SAML-Benutzenden und den neuen OIDC-Benutzenden auftreten.
 
 1. Konfigurieren Sie [OidcAuthenticationHandler](#configure-oidc-authentication-handler) und aktivieren Sie `idpNameInPrincipals` in der Konfiguration [SlingUserInfoProcessor](#configure-slinguserinfoprocessor).
 1. Einrichten [ACL für externe Gruppen](#configure-acl-for-external-groups).
 1. Nach der Anmeldung von Benutzern können die alten Benutzer, die vom SAML-Authentifizierungs-Handler erstellt wurden, gelöscht werden.
 
 >[!NOTE]
->Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
+>Sobald der SAML-Authentifizierungs-Handler deaktiviert und der OIDC-Authentifizierungs-Handler aktiviert ist und [Datensynchronisierung](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) nicht aktiviert ist, werden bestehende Sitzungen ungültig. Die Benutzer müssen sich erneut authentifizieren, was zur Erstellung neuer OIDC-Benutzerknoten im Repository führt.
 
