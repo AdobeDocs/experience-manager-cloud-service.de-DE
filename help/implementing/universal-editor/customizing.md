@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: c20290b92f6abdd602986ddca6e305dabdc13cfc
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 67%
+source-wordcount: '532'
+ht-degree: 53%
 
 ---
 
@@ -24,6 +24,8 @@ Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des universellen
 
 Bestimmte Authoring-Workflows erfordern möglicherweise die Verwendung einiger Funktionen des universellen Editors und nicht anderer. Um diese Anwendungsfälle zu unterstützen, stehen Meta-Tags zur Verfügung, mit denen bestimmte Funktionen oder Schaltflächen des Editors konfiguriert oder deaktiviert werden können.
 
+### Deaktivieren von Funktionen {#disable-features}
+
 Verwenden Sie dieses Tag im `<head>` Abschnitt der Seite, um eine oder mehrere Funktionen zu deaktivieren:
 
 ```html
@@ -37,7 +39,7 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | Inhaltswert | Beschreibung |
 |---|---|
 | `publish` | Deaktivieren Sie alle [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)-Funktionen, d. h. die [Publish](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) und [Unpublish](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
-| `publish-live` | Live ([) &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-live` | Live ([) ](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | Vorschauveröffentlichung deaktivieren (wenn der [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist) |
 | `unpublish` | Deaktivieren Sie die Schaltfläche [Veröffentlichung rückgängig machen](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | Deaktiviert die [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
@@ -45,13 +47,40 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | `header-open-page` | Deaktiviert die Schaltfläche [Seite öffnen](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 | `aem-dev-login` | Deaktiviert die Schaltfläche [Entwickleranmeldung](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
-## Ändern des Endpunkts {#custom-endpoint}
+### Editor-Modus definieren {#defining-mode}
+
+Sie können das Öffnen des universellen Editors in einem bestimmten Modus erzwingen. Verwenden Sie dieses Tag im `<head>` Abschnitt der Seite, um den Editor-Modus zu erzwingen:
+
+```html
+<meta name="urn:adobe:aue:config:mode" content="..." />
+```
+
+Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funktionen, die mit Meta-Tags deaktiviert werden können.
+
+| Inhaltswert | Beschreibung |
+|---|---|
+| `preview` | Der Editor wird im [-Modus geöffnet](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) Das **Vorschau**-Symbol ist ausgeblendet und der/die Benutzende kann nicht in den Bearbeitungsmodus zurückkehren. |
+| `readonly` | Der Editor wird im schreibgeschützten Modus geöffnet. Die [**Eigenschaften** Schaltfläche und das ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) sind ausgeblendet. Details sind in der Inhaltsstruktur verfügbar, es können jedoch keine Änderungen vorgenommen werden. |
+
+Beim Definieren von Modi über Meta-Tags können die Modi vom Benutzer nicht überschrieben werden.
+
+### Benutzerdefinierte Vorschau-URLs {#custom-preview-urls}
+
+Sie können eine benutzerdefinierte Vorschau-URL über eine Meta-Konfiguration `urn:adobe:aue:config:preview` angeben, die beim Klicken auf die Schaltfläche **Seite öffnen** in der [oberen rechten Symbolleiste des Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) geöffnet wird.
+
+Fügen Sie dazu einfach die gewünschte Vorschau-URL wie im folgenden Beispiel in ein Meta-Tag der instrumentierten App ein.
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
+
+### Ändern des Endpunkts {#custom-endpoint}
 
 Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sondern Ihre eigene gehostete Version verwenden möchten, können Sie dies in einem Meta-Tag festlegen. Weitere Informationen finden Sie im Dokument [Erste Schritte mit dem universellen Editor in AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings).
 
 ## Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [&#x200B; Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
@@ -93,13 +122,3 @@ Bedingungen können mithilfe des [JsonLogic-Schemas](https://jsonlogic.com/) def
 ![Eingeblendetes Textfeld](assets/shown.png)
 
 >[!ENDTABS]
-
-## Benutzerdefinierte Vorschau-URLs {#custom-preview-urls}
-
-Sie können eine benutzerdefinierte Vorschau-URL über eine Meta-Konfiguration `urn:adobe:aue:config:preview` angeben, die beim Klicken auf die Schaltfläche **Seite öffnen** in der [oberen rechten Symbolleiste des Editors](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar) geöffnet wird.
-
-Fügen Sie dazu einfach die gewünschte Vorschau-URL wie im folgenden Beispiel in ein Meta-Tag der instrumentierten App ein.
-
-```html
-<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
-```
