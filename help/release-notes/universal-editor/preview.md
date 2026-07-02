@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 3da0b684974f92ae078fbefb8adeaf1554291d8c
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,8 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 >
 >Der Inhalt der aktuellen Version sowie das Veröffentlichungsdatum können sich ändern.
 
-## Künftige Funktionen {#upcoming-features}
-
-* Der Editor unterstützt jetzt ein `preview`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags), um das Laden des Editors im [Vorschaumodus“ zu erzwingen](/help/sites-cloud/authoring/sites-console/previewing-content.md)
-* Der Editor unterstützt jetzt ein `readonly`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags) zum Deaktivieren der Bearbeitung, sodass Benutzende weiterhin eine beliebige Komponente auswählen, den Inhalt jedoch nicht ändern können.
-
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Die Barrierefreiheit von Überschriftenhierarchien wurde verbessert.
-* Es wurden Verbesserungen an der Barrierefreiheit vorgenommen, damit der Fokus in der Positionsleiste ordnungsgemäß bleibt, um die Tastaturnavigation des Editors zu erleichtern.
-
+* Die Aktionen zum Rückgängigmachen/Wiederholen wurden verbessert.
+* Sortierte Listen werden jetzt korrekt dargestellt, wenn sie inline mit dem Rich-Text-Editor bearbeitet werden.
+* Die Drag-and-Drop-Neuanordnung von Abschnitten funktioniert jetzt ordnungsgemäß.

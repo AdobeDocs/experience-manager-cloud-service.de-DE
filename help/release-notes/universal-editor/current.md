@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise zum universellen Editor 2026.06.25
-description: Dies sind die Versionshinweise für die Version 2026.06.25 des universellen Editors.
+title: Versionshinweise für Universal Editor 2026.07.02
+description: Dies sind die Versionshinweise für die Version 2026.07.02 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 3351ce89ae2f5f3a60983a8d2d9d1a447d468b4b
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 13%
+source-wordcount: '148'
+ht-degree: 16%
 
 ---
 
 
-# Versionshinweise zum universellen Editor 2026.06.25 {#release-notes}
+# Versionshinweise für Universal Editor 2026.07.02 {#release-notes}
 
-Dies sind die Versionshinweise für die Version 25. Juni 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 2. Juli 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,14 +26,10 @@ Dies sind die Versionshinweise für die Version 25. Juni 2026 des universellen E
 
 ## Neue Funktionen {#what-is-new}
 
-* Die Symbolleiste **eine neue Schaltfläche** In Site-Admin öffnen, um auf die AEM Sites-Konsole zuzugreifen.
-   * Dadurch werden die Funktionen der ehemaligen **AEM Site Admin-Erweiterung** Erweiterung[&#x200B; nativ &#x200B;](/help/implementing/universal-editor/extending.md) universellen Editor integriert.
-   * Die Schaltfläche öffnet die aktuelle AEM-Seite in der [Sites-Konsole](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) oder der [Experience Fragments-](/help/sites-cloud/authoring/fragments/experience-fragments.md) für `/content/experience-fragments` Pfade.
-   * Die Schaltfläche ist für DAM-Pfade (`/content/dam`) ausgeblendet und wenn keine eindeutige AEM-Seite aus den aktuellen bearbeitbaren Elementen ermittelt werden kann.
-* Tastaturbefehle für einzelne Zeichen funktionieren jetzt besser mit Barrierefreiheitstechnologien.
+* Der Editor unterstützt jetzt ein `preview`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags), um das Laden des Editors im [Vorschaumodus“ zu erzwingen](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+* Der Editor unterstützt jetzt ein `readonly`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags) zum Deaktivieren der Bearbeitung, sodass Benutzende weiterhin eine beliebige Komponente auswählen, den Inhalt jedoch nicht ändern können.
 
 ## Andere Verbesserungen {#other-improvements}
 
-* Zahlreiche Schaltflächen haben jetzt korrekt barrierefreie Namen.
-* Ein Problem mit der Beibehaltung bestimmter Inhaltsfragmente nach ihrer Auswahl mit einer Auswahl wurde behoben.
-
+* Die Barrierefreiheit von Überschriftenhierarchien wurde verbessert.
+* Es wurden Verbesserungen an der Barrierefreiheit vorgenommen, damit der Fokus in der Positionsleiste ordnungsgemäß bleibt, um die Tastaturnavigation des Editors zu erleichtern.
