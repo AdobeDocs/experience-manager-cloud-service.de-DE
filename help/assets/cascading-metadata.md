@@ -5,10 +5,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 99%
+source-wordcount: '987'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    ![select_form](assets/select_form.png)
 
-1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld zur Konditionalisierung.  Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und einen Eigenschaftspfad an. 
+1. (Optional) Erstellen Sie im Metadatenschema-Editor ein Feld zur Konditionalisierung. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und einen Eigenschaftspfad an.
 
    Um eine Registerkarte zu erstellen, wählen Sie `+` aus, um eine Registerkarte sowie anschließend ein Metadatenfeld hinzuzufügen.
 
@@ -108,24 +108,27 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. Navigieren Sie zu dem Ordner, auf den Sie das Metadatenschema angewendet haben, und öffnen Sie die Eigenschaftenseite eines Assets. Je nach Ihrer Auswahl im Feld „Asset-Typ“ werden relevante kaskadierende Metadatenfelder angezeigt.
 
-   ![Kaskadierende Metadaten für Video-Assets](assets/video_asset.png)
+   ![Kaskadierende Metadaten für Video-Asset
    *Abbildung: Kaskadierende Metadaten für Video-Assets*
 
-   ![Kaskadierende Metadaten für Dokumenten-Assets](assets/doc_type_fields.png)
+   ![Kaskadierende Metadaten für Dokumenten-Assets
    *Abbildung: Kaskadierende Metadaten für Dokumenten-Assets*
 
 **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

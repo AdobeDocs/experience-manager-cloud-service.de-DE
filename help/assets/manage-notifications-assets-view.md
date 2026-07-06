@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 67%
+source-wordcount: '822'
+ht-degree: 69%
 
 ---
 
@@ -107,7 +107,7 @@ Gehen Sie wie folgt vor, um abonnierte Inhalte anzuzeigen:
 
 1. Navigieren Sie zu **[!UICONTROL Überwachter Assets]** unter [!UICONTROL Asset-Management].
 
-1. Die Assets-Ansicht zeigt eine Liste der abonnierten Assets an, einschließlich ihres Namens, Typs und Pfads. Wählen Sie ein Asset, einen Ordner oder eine Sammlung aus der Liste aus, um seine Details, seinen Speicherort oder sein [&#x200B; anzuzeigen](#unsubscribe-to-content).
+1. Die Assets-Ansicht zeigt eine Liste der abonnierten Assets an, einschließlich ihres Namens, Typs und Pfads. Wählen Sie ein Asset, einen Ordner oder eine Sammlung aus der Liste aus, um seine Details, seinen Speicherort oder sein [ anzuzeigen](#unsubscribe-to-content).
 
    ![Abonnierte Inhalte anzeigen](assets/view-watched-assets.png)
 
@@ -117,7 +117,7 @@ Gehen Sie wie folgt vor, um Ihre Inhaltsabonnentinnen und -abonnenten anzuzeigen
 
 1. Navigieren Sie im Ordner, Asset oder in der Sammlung und wählen Sie **[!UICONTROL Details]** aus.
 
-1. Klicken Sie ![&#x200B; Augensymbol &#x200B;](assets/do-not-localize/eye-icon.png) rechten Bereich, um eine Liste der Beobachter des Inhalts anzuzeigen.
+1. Klicken Sie ![ Augensymbol ](assets/do-not-localize/eye-icon.png) rechten Bereich, um eine Liste der Beobachter des Inhalts anzuzeigen.
 
    Klicken Sie alternativ auf ![Kommentarsymbol](assets/do-not-localize/comment-icon.svg) im rechten Bereich, um die Inhaltsbeobachter anzuzeigen.
 
@@ -131,7 +131,7 @@ Abmelden:
 
    ![Abonnement von Inhalt kündigen](assets/unsubscribe-assets.png)
 
-Alternativ können Sie den Ordner, das Asset oder die Sammlung unter [!UICONTROL Asset-Management“ &#x200B;]. Wählen Sie das [abonnierte Asset](#subscribe-to-content) und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
+Alternativ können Sie den Ordner, das Asset oder die Sammlung unter [!UICONTROL Asset-Management“ ]. Wählen Sie das [abonnierte Asset](#subscribe-to-content) und klicken Sie auf **[!UICONTROL Nicht mehr beobachten]**.
 
 ## Anzeigen von Benachrichtigungen {#view-notifications}
 
@@ -140,3 +140,22 @@ Die Benachrichtigungen werden in der Benutzeroberfläche der Assets-Ansicht am r
 ![Benachrichtigungen in der Assets-Ansicht](assets/notifications-assets-essentials.png)
 
 Wenn Sie auf eine Benachrichtigung klicken, gelangen Sie in der Assets-Ansicht zum entsprechenden Asset oder Ordner, worauf sich die Benachrichtigung bezieht.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

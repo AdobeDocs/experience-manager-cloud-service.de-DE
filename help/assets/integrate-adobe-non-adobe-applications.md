@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 3%
+source-wordcount: '2246'
+ht-degree: 5%
 
 ---
 
@@ -116,7 +116,7 @@ Dynamic Media-Ausgabedarstellungen bieten einsatzbereite, kanaloptimierte Versio
 
 Sie können Dynamic Media-Modifikatoren auch anwenden, um Anpassungen in Echtzeit anzuzeigen, bevor Sie die Ausgabedarstellung für das Adobe-Host-Programm auswählen, was eine schnellere Auswahl der am besten geeigneten Ausgabedarstellung ermöglicht und dabei die Konsistenz und Qualität des Assets wahrt.
 
-Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder &#x200B;](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) &#x200B;](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
+Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder ](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) ](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
 
 Sie müssen über eine gültige AEM Dynamic Media-Lizenz verfügen, um die Registerkarte „Dynamic Media“ anzeigen zu können.
 
@@ -205,7 +205,7 @@ Die folgende Tabelle zeigt die Unterstützung der Content Advisor-Funktionen in 
 | Adobe Workfront-Planung | ✓ | ✓ | − | ✓ |
 | [AEM Assets-Ansicht](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
 | [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
-| [Adobe Journey Optimizer (AJO) für B2C](http://experienceleague.adobe.com/de/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
+| [Adobe Journey Optimizer (AJO) für B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home) | ✓ | ✓ | ✓ | ✓ |
 
 ## Unterstützung von Content Advisor-Funktionen in Nicht-Adobe-Anwendungen {#content-advisor-feature-support-non-adobe-applications}
 
@@ -221,3 +221,21 @@ Weitere Informationen zu Integrationen, Eigenschaften und Anpassungen finden Sie
 
 * [Anpassungen von Content Advisor](/help/assets/content-advisor-customization.md)
 
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 99%
+source-wordcount: '642'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Führen Sie als Admin die folgenden Schritte aus, um die in [!DNL Admin View] ve
 
    ![Seite „Metadatenformulare“](/help/assets/assets/metadata-forms-page.png)
 
-1. Wählen Sie **[!UICONTROL Importieren]** aus. Eine Verarbeitungsmeldung (z. B. *2 Metadatenformulare werden verarbeitet … Bitte warten.*) wird angezeigt, während der Import läuft. Nach Abschluss der Verarbeitung wird die Tabelle **[!UICONTROL Metadatenformulare importieren]** angezeigt, die eine Liste der in [!DNL Admin View] verfügbaren Metadatenformulare enthält. Die Tabellenzeile enthält Metadatenformularnamen (unter **[!UICONTROL Name]**), mit diesem Formular verknüpfte Ordner (unter **[!UICONTROL Ordnerzuordnung]**) und eine Option zum Anzeigen einer Vorschau ![Vorschau](/help/assets/assets/Preview.svg) des Formulars vor dem Importieren.
+1. Wählen Sie **[!UICONTROL Importieren]**, wird eine Verarbeitungsmeldung angezeigt (z. B. *Verarbeitung von 2 Metadatenformularen … Bitte warten.*) Während des Imports. Nach Abschluss der Verarbeitung wird die Tabelle **[!UICONTROL Metadatenformulare importieren]** angezeigt, die eine Liste der in [!DNL Admin View] verfügbaren Metadatenformulare enthält. Die Tabellenzeile enthält Metadatenformularnamen (unter **[!UICONTROL Name]**), mit diesem Formular verknüpfte Ordner (unter **[!UICONTROL Ordnerzuordnung]**) und eine Option zum Anzeigen einer Vorschau ![Vorschau](/help/assets/assets/Preview.svg) des Formulars vor dem Importieren.
 
    ![Seite „Metadatenformulare importieren“](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -43,7 +43,7 @@ Führen Sie als Admin die folgenden Schritte aus, um die in [!DNL Admin View] ve
 
    ![Seite „Metadatenformulare importieren“](/help/assets/assets/unsupported-import-elements.png)
 
-1. Wählen Sie ein oder mehrere Formulare in der Tabelle aus und klicken Sie auf **[!UICONTROL Import starten]**, um die Metadatenformulare und die zugehörigen Ordner in [!DNL Assets View] zu importieren. Eine Verarbeitungsmeldung wird angezeigt (z. B. *3 Metadatenformulare werden importiert. Bitte warten!*). Nach Abschluss des Imports wird in einer Erfolgsmeldung bestätigt, dass die Formulare erfolgreich importiert wurden. Auf der Seite **[!UICONTROL Metadatenformulare]** (von [!DNL Assets View]) werden sowohl kürzlich importierte als auch vorhandene Formulare angezeigt, die in [!DNL Assets View] verfügbar sind. Auf dieser Seite haben Sie folgende Möglichkeiten:
+1. Wählen Sie ein oder mehrere Formulare in der Tabelle aus und klicken Sie auf **[!UICONTROL Import starten]**, um die Metadatenformulare und die zugehörigen Ordner in [!DNL Assets View] zu importieren. Eine Verarbeitungsmeldung wird angezeigt (z. B. *3 Metadatenformulare werden importiert. Bitte warten Sie!*). Nach Abschluss des Imports wird in einer Erfolgsmeldung bestätigt, dass die Formulare erfolgreich importiert wurden. Auf der Seite **[!UICONTROL Metadatenformulare]** (von [!DNL Assets View]) werden sowohl kürzlich importierte als auch vorhandene Formulare angezeigt, die in [!DNL Assets View] verfügbar sind. Auf dieser Seite haben Sie folgende Möglichkeiten:
 
    * Klicken Sie auf die Spaltenkopfzeile, um die Tabelle nach [!UICONTROL Name], [!UICONTROL Geändert] oder [!UICONTROL Autorin bzw. Autor] zu sortieren.
    * Wählen Sie das importierte Formular aus und klicken Sie auf **[!UICONTROL Aus Ordner(n) entfernen]**. Überprüfen Sie dann den Ordnernamen im Ordnerpfad, um sicherzustellen, dass der Ordner korrekt portiert wurde.
@@ -62,3 +62,22 @@ Führen Sie nach dem Import der Metadatenformulare aus [!DNL Admin View] in [!DN
    >[!NOTE]
    >
    > Auf der [[!DNL Assets View] -Detailseite](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) oder der [[!DNL Admin View] -Eigenschaftenseite](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/metadata-schemas) werden Änderungen an den Metadateneigenschaftswerten automatisch zwischen den beiden Benutzeroberflächen synchronisiert. Strukturänderungen im Formular, z. B. das Hinzufügen oder Entfernen von Feldern oder andere Änderungen, werden jedoch nicht synchronisiert.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

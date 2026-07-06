@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Sammlungen in Content Hub verwalten
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 54%
+source-wordcount: '2000'
+ht-degree: 56%
 
 ---
 
@@ -31,7 +31,7 @@ Mit [!DNL Content Hub] können Sie öffentliche Sammlungen erstellen. Diese Samm
 
 Dies ermöglicht Benutzenden, auf einfache Weise auf die verschiedenen in [!DNL Content Hub] verfügbaren Assets zuzugreifen und diese zu verwalten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445309/?captions=ger&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Voraussetzungen {#prerequisites}
 
@@ -248,7 +248,26 @@ Nur Administratoren und der Ersteller einer Sammlung können sie löschen. Um si
 
 Der -Administrator kann die folgenden Optionen für Sammlungen in AEM Assets Content Hub aktivieren oder deaktivieren:
 
-* Aktivieren Sie den **Nur Sammlungen anzeigen**-Umschalter, um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur vom Ersteller und Administrator bearbeitet werden können.
+* Aktivieren Sie den Umschalter **Nur schreibgeschützte Sammlungen**, um Sammlungen zuzulassen, die für alle zugänglich sind, aber nur von der erstellenden Person und den Admins bearbeitet werden können.
 
 * Aktivieren Sie den Umschalter **Öffentliche Sammlungen**, um Sammlungen zuzulassen, die für alle zugänglich und bearbeitbar sind. Wenn die Umschalter **Nur schreibgeschützte Sammlungen** und **Öffentliche Sammlungen** deaktiviert sind, können Benutzende ohne Administratorrechte standardmäßig nur private Sammlungen erstellen.
 
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

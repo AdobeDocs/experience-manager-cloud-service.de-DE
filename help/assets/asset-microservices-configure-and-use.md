@@ -6,10 +6,10 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2899'
-ht-degree: 99%
+source-wordcount: '3139'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ Bei der Standardkonfiguration wird nur das einfachste Verarbeitungsprofil konfig
 
 ## Standardkonfiguration {#standard-config}
 
-[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate gemäß den Anforderungen der Benutzenden. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Smartphone und Tablet generieren. [In diesem Video erfahren Sie, wie Sie [!UICONTROL Verarbeitungsprofile“ erstellen und anwenden &#x200B;] auf die erstellten Ausgabedarstellungen zugreifen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/content-automation/creative-operations).
+[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate gemäß den Anforderungen der Benutzenden. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Smartphone und Tablet generieren. [In diesem Video erfahren Sie, wie Sie [!UICONTROL Verarbeitungsprofile“ erstellen und anwenden ] auf die erstellten Ausgabedarstellungen zugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations).
 
 * **Breite und Höhe der Ausgabedarstellung**: Das Angeben der Breite und Höhe der Ausgabedarstellung sorgt für die maximale Größe des generierten Ausgabebilds. Asset-Microservices versuchen, die größtmögliche Ausgabedarstellung zu erstellen, dessen Breite und Höhe nicht größer als die angegebene Breite bzw. Höhe sind. Das Seitenverhältnis wird beibehalten, d. h. es entspricht dem Original. Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen des Originals berücksichtigt werden.
 
@@ -95,7 +95,7 @@ Das Verarbeitungsprofil kann eine FPO-Wiedergabe (nur für Platzierung) enthalte
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/33384?captions=ger&quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
 <!--
@@ -162,8 +162,7 @@ Erstellen Sie zusätzliche benutzerdefinierte Verarbeitungsprofile und wenden Si
 Verwenden Sie eine der folgenden Methoden, um Verarbeitungsprofile auf Ordner anzuwenden:
 
 * Admins können unter **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Verarbeitungsprofile]** eine Verarbeitungsprofildefinition auswählen und die Aktion **[!UICONTROL Profil auf Ordner anwenden]** nutzen. Dadurch wird ein Inhalts-Browser geöffnet, mit dem Sie zu bestimmten Ordnern navigieren, diese auswählen und die Anwendung des Profils bestätigen können.
-* Wählen Sie einen Ordner in der Assets-Benutzeroberfläche aus und verwenden Sie zum Öffnen der Ordnereigenschaften die Aktion **[!UICONTROL Eigenschaften]**. Klicken Sie auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]** und wählen Sie das entsprechende Verarbeitungsprofil für den Ordner aus der Liste [!UICONTROL Verarbeitungsprofil] aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.
-  ![Verarbeitungsprofil auf der Registerkarte „Asset-Eigenschaften“ auf einen Ordner anwenden](assets/folder-properties-processing-profile.png)
+* Wählen Sie einen Ordner in der Assets-Benutzeroberfläche aus und verwenden Sie zum Öffnen der Ordnereigenschaften die Aktion **[!UICONTROL Eigenschaften]**. Klicken Sie auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]** und wählen Sie das entsprechende Verarbeitungsprofil für den Ordner aus der Liste [!UICONTROL Verarbeitungsprofil] aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um die Änderungen zu speichern.  ![Verarbeitungsprofil auf der Registerkarte „Asset-Eigenschaften“ auf einen Ordner anwenden](assets/folder-properties-processing-profile.png)
 
 * Benutzer können Ordner oder bestimmte Assets in der Assets-Benutzeroberfläche auswählen, um ein Verarbeitungsprofil anzuwenden, und dann die Option ![assets reprocess icon](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Assets erneut verarbeiten]** aus den oben verfügbaren Optionen auswählen.
 
@@ -296,3 +295,22 @@ Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordne
 * How/where can admins check what's already configured and provisioned.
 * How/where to request for new provisioning/purchase.
 -->
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

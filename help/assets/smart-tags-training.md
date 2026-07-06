@@ -5,9 +5,9 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1572'
 ht-degree: 98%
 
 ---
@@ -41,7 +41,7 @@ Ein Smart-Tags-Training ist in den folgenden Szenarien erforderlich:
 
 ## Grundlegendes zu Tag-Modellen und Richtlinien {#understand-tag-models-guidelines}
 
-Ein Tag-Modell ist eine Gruppe verwandter Tags, die mit verschiedenen visuellen Aspekten von Bildern verknüpft sind, die mit Tags versehen werden. Tags beziehen sich auf die deutlich unterschiedlichen visuellen Aspekte von Bildern, sodass die Tags beim Suchen nach bestimmten Bildtypen hilfreich sind. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Tags helfen dabei, verschiedene Schuhtypen zu finden, zum Beispiel nach Design oder nach Funktion. 
+Ein Tag-Modell ist eine Gruppe verwandter Tags, die mit verschiedenen visuellen Aspekten von Bildern verknüpft sind, die mit Tags versehen werden. Tags beziehen sich auf die deutlich unterschiedlichen visuellen Aspekte von Bildern, sodass die Tags beim Suchen nach bestimmten Bildtypen hilfreich sind. Beispielsweise kann eine Schuhkollektion unterschiedliche Tags haben, aber alle Tags beziehen sich auf Schuhe und können zum selben Tag-Modell gehören. Tags helfen dabei, verschiedene Schuhtypen zu finden, zum Beispiel nach Design oder nach Funktion.
 
 Bevor Sie ein Tag-Modell erstellen und den Service trainieren, identifizieren Sie einen Satz eindeutiger Tags, die die Objekte in den Bildern im Kontext Ihres Unternehmens am besten beschreiben. Stellen Sie sicher, dass die Assets in Ihrem kuratierten Satz den [Trainings-Richtlinien](#training-guidelines) entsprechen.
 
@@ -118,8 +118,7 @@ Stellen Sie sicher, dass die Bilder im Trainings-Satz den folgenden Richtlinien 
 
 >[!NOTE]
 >
->Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Sie können jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell verknüpfen. Es ist möglich, dasselbe Bild mit verschiedenen Tags zu versehen, die zu verschiedenen Tag-Modellen gehören.
->Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
+>Sie können dieselben Bilder zum Trainieren verschiedener Tag-Modelle verwenden. Sie können jedoch kein Bild mit mehr als einem Tag in einem Tag-Modell verknüpfen. Es ist möglich, dasselbe Bild mit verschiedenen Tags zu versehen, die zu verschiedenen Tag-Modellen gehören.Sie können das Training nicht rückgängig machen. Die obigen Richtlinien sollen Ihnen bei der Auswahl guter Bilder für das Training helfen.
 
 ## Trainieren des Modelle für Ihre benutzerdefinierten Tags {#train-model}
 
@@ -161,8 +160,7 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 
 >[!NOTE]
 >
->Kann ich ein Smart-Tags-Training per Export von einer Instanz auf eine andere übertragen?
->Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur selben IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in mehreren IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
+>Kann ich ein Smart-Tags-Training per Export von einer Instanz auf eine andere übertragen?Sie müssen das Smart-Tags-Training nicht exportieren, wenn die Umgebung zur selben IMS-Organisation gehört. Es wird automatisch freigegeben. Wenn sich die Umgebung in mehreren IMS-Organisationen befindet, gibt es keine Möglichkeit, das Smart-Tags-Training freizugeben oder zu exportieren.
 
 ## Einschränkungen und Best Practices im Zusammenhang mit Smart-Tags {#limitations-smart-tags-training}
 
@@ -172,5 +170,23 @@ Um sicherzustellen, dass der Smart-Tags-Service mit Ihren Tags im Asset-Training
 
 >[!NOTE]
 >
->Die Fähigkeit der Smart-Tags, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab.
->Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
+>Die Fähigkeit der Smart-Tags, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab.Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

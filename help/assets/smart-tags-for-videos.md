@@ -5,9 +5,9 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1245'
 ht-degree: 99%
 
 ---
@@ -78,7 +78,7 @@ Bei Ihren Suchergebnissen handelt es sich um eine Kombination aus Video-Assets m
 
 Weitere Information zur Moderation von Smart-Tags für Assets finden Sie unter [Verwalten von Smart-Tags](smart-tags.md#manage-smart-tags-and-searches).
 
-![Moderieren von Video-Smart-Tags &#x200B;](assets/manage-video-smart-tags.png)
+![Moderieren von Video-Smart-Tags ](assets/manage-video-smart-tags.png)
 
 >[!NOTE]
 >
@@ -139,3 +139,22 @@ Gehen Sie folgendermaßen vor, um den Konfidenzwert für die OSGi-Konfiguration 
 >
 >* [Verwalten von Smart-Tags und Asset-Suchvorgängen](smart-tags.md#manage-smart-tags-and-searches)
 >* [Trainieren des Smart-Tag-Service und Tagging von Bildern](smart-tags.md)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

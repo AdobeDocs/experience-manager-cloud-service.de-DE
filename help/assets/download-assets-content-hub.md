@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie ein oder mehrere Assets und deren Ausgabedars
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 41%
+source-wordcount: '1514'
+ht-degree: 43%
 
 ---
 
@@ -35,7 +35,7 @@ Um ein oder mehrere Assets und ihre Ausgabedarstellungen herunterzuladen, führe
   Klicken Sie alternativ auf die Asset-Miniaturansicht und dann auf ![Herunterladen](/help/assets/assets/download-icon.svg), um die verfügbaren Ausgabedarstellungen auszuwählen und im Dialogfeld anzuzeigen, bevor Sie sie herunterladen. Sie können auch die Versand-URL für die Asset-Ausgabedarstellungen kopieren, wenn Sie zu den Asset-Eigenschaften navigieren und auf das Symbol Herunterladen klicken. Die Option zum Kopieren der Versand-URL ist nur verfügbar, wenn die Validierungszielgruppe des Assets [auf Versand eingestellt](/help/assets/approve-assets-content-hub.md#set-approval-target) ist.
 
 * So laden Sie mehrere Assets und ihre Ausgabedarstellungen herunter:
-   1. Wählen Sie die Assets aus![&#x200B; klicken Sie auf &#x200B;](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
+   1. Wählen Sie die Assets aus![ klicken Sie auf ](/help/assets/assets/download-icon.svg)Herunterladen **[!UICONTROL Herunterladen]** und überprüfen Sie die Liste der ausgewählten Assets **[!UICONTROL Dialogfeld Assets herunterladen]**. Klicken Sie auf ![Auswahl aufheben](/help/assets/assets/Close.svg) neben einem Asset, um dessen Auswahl aus der Liste aufzuheben.
    1. Wählen Sie eine oder mehrere Ausgabedarstellungen aus, um sie als ZIP-Datei herunterzuladen. Wenn Sie **[!UICONTROL Intelligenter Zuschnitt]** und **[!UICONTROL Statische Ausgabedarstellungen]** auswählen, werden für jedes der ausgewählten Assets alle verfügbaren Ausgabedarstellungen heruntergeladen, sowohl die statischen als auch die mit intelligentem Zuschnitt.
    1. Optional: Deaktivieren Sie **[!UICONTROL Für jedes Asset einen separaten Ordner erstellen]**, um die ausgewählten Assets und ihre Ausgabedarstellungen als flache Hierarchie in einem Ordner in der ZIP-Datei herunterzuladen. Standardmäßig lädt [!DNL Content Hub] die ausgewählten Assets und ihre Ausgabedarstellungen in separaten Ordnern in einer ZIP-Datei herunter.
 
@@ -233,3 +233,20 @@ Um Ausgabedarstellungen in AEM Assets Content Hub herunterzuladen, wählen Sie d
 
 
 
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

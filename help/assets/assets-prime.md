@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1162'
 ht-degree: 99%
 
 ---
@@ -156,3 +156,22 @@ Sie können auch auf die den Power-Benutzenden zugewiesenen Dienste zugreifen un
 ![Dienste für Power-Benutzende](assets/aem-assets-power-users.png)
 
 Die Dienste `Adobe Express` und `AEM Assets Power Users` sind standardmäßig aktiviert. Sie können den Umschalter entsprechend Ihren Anforderungen deaktivieren und aktivieren. Adobe empfiehlt jedoch, die standardmäßig für die Produktprofile aktivierten Dienste zu verwenden.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über das Anpassen von Suchfiltern in Formularen
 role: User, Leader, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1477'
 ht-degree: 85%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 85%
 
 # Anpassen von Suchfiltern {#customize-search-filters}
 
-Suchfilter ermöglichen es Ihnen, Suchergebnisse basierend auf verschiedenen Parametern wie Datum, Dateityp, Tags und Relevanz zu optimieren, wodurch die Präzision von Suchabfragen verbessert wird. Durch das Anwenden von Filtern können Sie schnell und effizient die relevantesten Ergebnisse durchsuchen. Dies spart nicht nur Zeit, sondern verbessert auch das Gesamterlebnis bei der Suche, indem die Ergebnisse auf konkrete Vorlieben und Bedürfnisse zugeschnitten werden.
-Weitere Informationen über die [Suche](search-assets-view.md).
+Suchfilter ermöglichen es Ihnen, Suchergebnisse basierend auf verschiedenen Parametern wie Datum, Dateityp, Tags und Relevanz zu optimieren, wodurch die Präzision von Suchabfragen verbessert wird. Durch das Anwenden von Filtern können Sie schnell und effizient die relevantesten Ergebnisse durchsuchen. Dies spart nicht nur Zeit, sondern verbessert auch das Gesamterlebnis bei der Suche, indem die Ergebnisse auf konkrete Vorlieben und Bedürfnisse zugeschnitten werden.Weitere Informationen über die [Suche](search-assets-view.md).
 
 Angepasste Suchfilter in AEM Assets können nur Einträgen in Ihrem durchsuchbaren Eigenschaftsindex zugeordnet werden. Stellen Sie sicher, dass alle benutzerdefinierten Metadaten enthalten sind, bevor Sie Ihr benutzerdefiniertes Filtererlebnis konfigurieren. Mit [!DNL Assets view] können Suchfilter angepasst werden, um den Suchvorgang zu optimieren. Um die benutzerdefinierten Suchfilter von AEM Assets anzupassen, führen Sie die folgenden Schritte aus:
 
@@ -362,7 +361,7 @@ Jedes Filterelement ist mit einer Reihe von Eigenschaften verknüpft. AEM Assets
         <th>Beschreibung</th>
     </tr>
     <tr>
-        <td>Label</td>
+        <td>Bezeichnung</td>
         <td>Text</td>
         <td>Eine Kennung des verwendeten Filters.</td>
     </tr>
@@ -401,7 +400,7 @@ Jedes Filterelement ist mit einer Reihe von Eigenschaften verknüpft. AEM Assets
         <ul>
         <li>Klicken Sie auf <b>Hinzufügen</b>, um einen neuen Wert hinzuzufügen. 
         <li>Klicken Sie auf <span>✎</span>, um das Label zu bearbeiten. 
-        <li>Klicken Sie auf <span>??</span>, um den Optionswert zu löschen. 
+        <li>Klicken Sie auf <span>🗑</span>, um den Optionswert zu löschen. 
         <li>Klicken Sie <b>Bearbeiten</b>, um die Bearbeitungsoptionen zu ändern. 
         <li>Sie können auch die Sequenz der Optionen ändern, indem Sie sie gedrückt halten.
         </td>
@@ -450,3 +449,22 @@ Nachdem Sie die Suchfilter konfiguriert haben, können Sie sie für die Suche na
 >[!MORELIKETHIS]
 >
 >* [Suchen von Assets](search-assets-view.md)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

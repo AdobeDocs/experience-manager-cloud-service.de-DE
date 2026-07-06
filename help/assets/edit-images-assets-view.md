@@ -5,9 +5,9 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: aa18d6572f3ba8a6f8bb61d96d3004a6db46d925
+source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1299'
 ht-degree: 93%
 
 ---
@@ -157,7 +157,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/de/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -200,9 +200,28 @@ TBD: Insert a video of the available social media options.
 
 * Geben Sie Feedback zur Dokumentation mithilfe der Option zum [!UICONTROL Bearbeiten der Seite] ![Seite bearbeiten](assets/do-not-localize/edit-page.png) oder zum [!UICONTROL Melden eines Problems] ![GitHub-Ticket erstellen](assets/do-not-localize/github-issue.png) in der rechten Seitenleiste.
 
-* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General?lang=de#support)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=General?lang=de#support)
 
 >[!MORELIKETHIS]
 >
 >* [Schnellaktionen in Adobe Express](https://helpx.adobe.com/de/express/using/resize-image.html)
 >* [Anzeigen des Versionsverlaufs eines Assets](navigate-assets-view.md)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

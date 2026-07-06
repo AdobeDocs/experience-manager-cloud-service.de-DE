@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre markenkonformen Assets in Content Hub ho
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 64%
+source-wordcount: '1217'
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 64%
 
 [Content Hub-Benutzende mit Berechtigungen zum Hinzufügen von Assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) können Assets zu Content Hub hinzufügen. Assets können aus dem lokalen Dateisystem hinzugefügt oder aus OneDrive- oder Dropbox-Datenquellen importiert werden. Alle Assets werden unabhängig von der Ordnerstruktur in Ihrem lokalen Dateisystem oder den OneDrive- und Dropbox-Datenquellen auf der obersten Ebene in Content Hub angezeigt, um die Suchfunktionen zu verbessern.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445388/?captions=ger&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Die Assets, die in Assets as a Cloud Service als `Approved` markiert sind, sind automatisch in Content Hub verfügbar. Weitere Informationen finden Sie unter [Genehmigen von Assets für Content Hub](/help/assets/approve-assets-content-hub.md).
 
@@ -105,3 +105,20 @@ Admins können über die Konfigurations-Benutzeroberfläche die Felder definiere
 
 Wenn Assets nicht automatisch in AEM Assets Content Hub angezeigt werden, bedeutet dies, dass der Umschalter für die automatische Genehmigung deaktiviert ist. Die Assets befinden sich im Ordner **hydrated** Ihrer Assets as a Cloud Service-Umgebung. Sie müssen ihren Status stapelweise in &quot;**&quot;**, damit sie in Content Hub angezeigt werden.
 
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

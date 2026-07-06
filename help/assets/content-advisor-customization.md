@@ -4,10 +4,10 @@ description: Verwenden Sie Funktionen zum Anpassen von Content Advisor in Ihrer 
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: b2034a3d7fcbb74f155299cd305d2cd3ccb1b7c7
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 85%
+source-wordcount: '1276'
+ht-degree: 86%
 
 ---
 
@@ -225,7 +225,6 @@ Die `handleSelection`-Eigenschaft wird verwendet, um einzelne oder mehrere Auswa
 ### Deaktivieren der Auswahl von Assets {#disable-selection}
 
 Die Funktion „disableSelection“ wird verwendet, um die Möglichkeit zur Auswahl der Assets oder Ordner auszublenden bzw. zu deaktivieren. Dabei wird das Kontrollkästchen „Auswählen“ auf der Karte oder im Asset ausgeblendet und eine Auswahl verhindert. Um diese Funktion zu verwenden, können Sie die Position eines in einem Array zu deaktivierenden Assets oder Ordners deklarieren. Wenn Sie beispielsweise die Auswahl eines Ordners an der ersten Position deaktivieren möchten, können Sie den folgenden Code hinzufügen:
-`disableSelection: [0]:folder`
 
 Sie können dem Array eine Liste von MIME-Typen (z. B. Bild, Ordner, Datei oder andere MIME-Typen wie Bild/jpeg) bereitstellen, die deaktiviert werden sollen. Die von Ihnen deklarierten MIME-Typen werden den Attributen `data-card-type` und `data-card-mimetype` eines Assets zugeordnet.
 
@@ -494,7 +493,7 @@ uploadConfig: {
      }, 
 ```
 
-*Weitere Eigenschaften sind u. a. `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Weitere Informationen finden [&#x200B; unter „Eigenschaften &#x200B;](/help/assets/content-advisor-properties.md) Inhaltsratgebers“.
+*Weitere Eigenschaften sind u. a. `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Weitere Informationen finden [ unter „Eigenschaften ](/help/assets/content-advisor-properties.md) Inhaltsratgebers“.
 
 ### Hochladen mit Metadaten {#upload-with-metadata}
 
@@ -665,3 +664,20 @@ dragOptions: {
          }
 ```
 
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

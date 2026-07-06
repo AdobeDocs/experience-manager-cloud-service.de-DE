@@ -4,10 +4,10 @@ description: Dynamic Media mit OpenAPI-Funktionen ermöglicht die Vorschau von A
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 99%
+source-wordcount: '882'
+ht-degree: 97%
 
 ---
 
@@ -67,12 +67,29 @@ Nachdem Sie die Asset-Version fertiggestellt haben [veröffentlichen Sie Ihre Se
 Nachdem Sie die Asset-Version für die öffentliche Verwendung fertiggestellt haben, setzen Sie den Asset-Status auf **[!UICONTROL Genehmigt]**. Veröffentlichen Sie dann Ihre Seiten auf der Veröffentlichungsebene. Führen Sie die folgenden Schritte aus, um Ihre Seiten zu veröffentlichen:
 
 1. Befolgen Sie Schritt 1 im obigen Abschnitt [Anzeigen einer Assets-Vorschau auf der Sites-Vorschauseite](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), um den Asset-Status zu **[!UICONTROL Genehmigt]** zu ändern.
-1. Navigieren Sie zu Ihrer Sites-Authoring-Seite und veröffentlichen Sie sie im [!DNL Publish tier]. Veröffentlichen Sie die Seiten, indem Sie die Schritte im Abschnitt [Veröffentlichen vom Seiteneditor aus](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) ausführen.
-Alternativ können Sie die Schritte im Abschnitt [Veröffentlichen von Seiten über die Sites-Konsole](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) ausführen, um Ihre Seite über die Sites-Konsole zu veröffentlichen.
+1. Navigieren Sie zu Ihrer Sites-Authoring-Seite und veröffentlichen Sie sie im [!DNL Publish tier]. Veröffentlichen Sie die Seiten, indem Sie die Schritte im Abschnitt [Veröffentlichen vom Seiteneditor aus](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) ausführen.Alternativ können Sie die Schritte im Abschnitt [Veröffentlichen von Seiten über die Sites-Konsole](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) ausführen, um Ihre Seite über die Sites-Konsole zu veröffentlichen.
 
    >[!NOTE]
    >
    > Es können nur genehmigte Assets auf der Veröffentlichungsebene bereitgestellt werden. Genehmigen Sie die Assets, bevor Sie Ihre Seite zur öffentlichen Verwendung auf der Veröffentlichungsebene veröffentlichen.
 
    ![Die Seite wurde veröffentlicht](/help/assets/assets/the-page-has-been-publushed.png)
-Nach erfolgreicher Veröffentlichung wird die Bestätigungsmeldung **[!UICONTROL Die Seite wurde veröffentlicht]** angezeigt. Navigieren Sie auf der Veröffentlichungsebene zu Ihrer veröffentlichten Seite, um zu bestätigen, dass die Aktualisierungen live sind und der Inhalt wie erwartet angezeigt wird.
+Nach erfolgreicher Veröffentlichung wird **[!UICONTROL Bestätigungsmeldung „Die]** wurde veröffentlicht“ angezeigt. Navigieren Sie auf der Veröffentlichungsebene zu Ihrer veröffentlichten Seite, um zu bestätigen, dass die Aktualisierungen live sind und der Inhalt wie erwartet angezeigt wird.
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

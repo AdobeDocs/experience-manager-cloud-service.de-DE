@@ -5,9 +5,9 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1850'
 ht-degree: 99%
 
 ---
@@ -210,3 +210,22 @@ Bearbeiten Sie im Workflow-Editor in Experience Manager die Eigenschaften des Wo
 Um Änderungen in benutzerdefinierten Formularen von [!DNL Workfront]-Dokumenten zu abonnieren, wählen Sie die entsprechende Option auf der Registerkarte **[!UICONTROL Erweitert]**. Wenn Sie diese Aktualisierungen abonnieren, werden Ihre zugeordnete [!DNL Experience Manager]-Metadatenfelder aktualisiert, sobald das entsprechende Feld im benutzerdefinierten Formular des [!DNL Workfront]-Dokuments geändert wurde.
 
 ![Konfiguration für benutzerdefinierte Formularaktualisierungen im Workfront-Dokument in [!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

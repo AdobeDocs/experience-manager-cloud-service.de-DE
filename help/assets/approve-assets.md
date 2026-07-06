@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmige
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 96%
+source-wordcount: '1122'
+ht-degree: 94%
 
 ---
 
@@ -29,8 +29,7 @@ Sie müssen das entsprechende Metadatenschema in der Admin-Ansicht einmalig aktu
 1. Wählen Sie das entsprechende Metadatenschema aus und klicken Sie auf **[!UICONTROL Bearbeiten]**. <br>Der **[!UICONTROL Metadatenschema-Formular-Editor]** wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]** ist hervorgehoben.
 1. Scrollen Sie nach unten und klicken Sie auf **[!UICONTROL Überprüfungsstatus]**.
 1. Klicken Sie im Bedienfeld auf der rechten Seite auf die Registerkarte **[!UICONTROL Regeln]**.
-1. Deaktivieren Sie **[!UICONTROL Bearbeitung deaktivieren]**.
-Um die Eigenschaft anzuzeigen, der das Feld **[!UICONTROL Überprüfungsstatus]** zugeordnet ist, navigieren Sie zur Registerkarte **[!UICONTROL Einstellungen]** und zeigen Sie den Wert `./jcr:content/metadata/dam:status` im Feld **[!UICONTROL Zu Eigenschaft zuordnen]** an.
+1. Deaktivieren Sie **[!UICONTROL Bearbeitung deaktivieren]**.Um die Eigenschaft anzuzeigen, der das Feld **[!UICONTROL Überprüfungsstatus]** zugeordnet ist, navigieren Sie zur Registerkarte **[!UICONTROL Einstellungen]** und zeigen Sie den Wert `./jcr:content/metadata/dam:status` im Feld **[!UICONTROL Zu Eigenschaft zuordnen]** an.
 1. Ziehen Sie ein **[!UICONTROL Dropdown-Feld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und nehmen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** vor:
    1. Ändern Sie den **[!UICONTROL Feldtitel]** in _Genehmigungsziel_.
@@ -63,14 +62,13 @@ Führen Sie folgende Schritte aus, um Assets in [!DNL Experience Manager Admin v
 
 ## Massengenehmigung von Assets {#bulk-approve-assets}
 
-Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen. Sie können eine Massengenehmigung von Assets durchführen, um den Genehmigungsprozess zu beschleunigen, Zeit zu sparen und die Produktivität zu steigern.
-<br>Führen Sie die folgenden Schritte aus, um gleichzeitig mehrere Assets in [!DNL Experience Manager Admin view] zu genehmigen:
+Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen. Sie können eine Massengenehmigung von Assets durchführen, um den Genehmigungsprozess zu beschleunigen, Zeit zu sparen und die Produktivität zu steigern.<br>Führen Sie die folgenden Schritte aus, um gleichzeitig mehrere Assets in [!DNL Experience Manager Admin view] zu genehmigen:
 
 1. Erstellen Sie einen Ordner in der Autorenumgebung (https://author-pXXX-eYYY.adobeaemcloud.com). Ersetzen Sie _XXX_ durch Ihre Programm-ID und _YYY_ durch die Umgebungs-ID aus Experience Manager.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Erstellen]**.
 1. Fügen Sie einen Profiltitel hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Das Metadatenprofil wird erstellt.
-1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**&#x200B;wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**&#x200B;ist hervorgehoben.
+1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**ist hervorgehoben.
 1. Ziehen Sie ein **[!UICONTROL einzeiliges Textfeld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Genehmigte Assets_.
@@ -96,7 +94,7 @@ Optimieren Sie Ihren Workflow, indem Sie mehrere Assets gleichzeitig genehmigen.
 
 >[!NOTE]
 > 
->Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Assets, die bereits im Ordner vorhanden sind, müssen Sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Erneut verarbeiten]** verwenden, um die Änderungen vom Metadatenprofil auf ältere Assets anzuwenden.
+>Bei diesem Ansatz werden die neu erstellten Assets im Ordner genehmigt. Für vorhandene Assets im Ordner müssen Sie sie manuell auswählen und genehmigen. <br> Alternativ können Sie die Option **[!UICONTROL Erneut verarbeiten]** verwenden, um die Änderungen aus dem Metadatenprofil auf ältere Assets anzuwenden.
 
 So genehmigen Sie gleichzeitig mehrere Assets in einem Ordner in der Assets-Ansicht:
 
@@ -139,3 +137,22 @@ So kopieren Sie die Bereitstellungs-URL für ein genehmigtes Asset im Repository
    >Die Option zum Kopieren der Bereitstellungs-URL für genehmigte Assets ist nur in der Assets-Ansicht verfügbar.
 
 Informationen zu anderen Ausgabedarstellungen, die im Dynamic Media-Bedienfeld angezeigt werden, finden Sie unter [Anzeigen und Herunterladen von Dynamic Media-Ausgabedarstellungen](/help/assets/renditions.md#view-download-dm-renditions).
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

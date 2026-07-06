@@ -6,10 +6,10 @@ feature: Asset Management, Renditions
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 99%
+source-wordcount: '1117'
+ht-degree: 97%
 
 ---
 
@@ -37,9 +37,7 @@ Der folgenden Legende können Sie entnehmen, inwieweit ein Format unterstützt w
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Experience Manager Assets] unterstützt nur die in diesem Artikel aufgeführten Dateiformate.
->Einige Funktionen scheinen möglicherweise mit anderen Formaten zu funktionieren, diese Formate werden jedoch nicht offiziell unterstützt. Die Ergebnisse können inkonsistent sein und die Funktionen funktionieren möglicherweise nicht wie erwartet.
->Verwenden Sie nur die unterstützten Formate, um konsistente und zuverlässige Ergebnisse zu gewährleisten.
+>[!DNL Adobe Experience Manager Assets] unterstützt nur die in diesem Artikel aufgeführten Dateiformate.Einige Funktionen scheinen möglicherweise mit anderen Formaten zu funktionieren, diese Formate werden jedoch nicht offiziell unterstützt. Die Ergebnisse können inkonsistent sein und die Funktionen funktionieren möglicherweise nicht wie erwartet.Verwenden Sie nur die unterstützten Formate, um konsistente und zuverlässige Ergebnisse zu gewährleisten.
 
 ## Adobe-Formate {#adobe-formats}
 
@@ -271,21 +269,24 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#suppor
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif | |
 | STL | Stereolithografie | application/vnd.ms-pki.stl | |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung der Aufnahme und Erstellung von Miniaturansichten; 3D-Vorschau wird noch nicht unterstützt.* USDZ ist ein 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung für die Aufnahme und Generierung von Miniaturen; 3D-Vorschauen werden noch nicht unterstützt.* USDZ ist ein 3D-Format, das von Safari oder iOS nativ angezeigt werden kann. |
 
 **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

@@ -6,10 +6,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2533'
-ht-degree: 99%
+source-wordcount: '2628'
+ht-degree: 98%
 
 ---
 
@@ -23,8 +23,7 @@ Dieses Hilfedokument enthält Best Practices für die AEM-Suchfunktion mithilfe 
 
 Im Folgenden werden die wichtigsten Schritte beschrieben, die in Experience Manager durchgeführt werden müssen, bevor Sie mit der Suche beginnen:
 
-* Rufen Sie in der **Admin-Ansicht** in Experience Manager „Assets“ > „Dateien“ auf und klicken Sie auf das Suchsymbol in der oberen Leiste. Alternativ können Sie einen Schrägstrich (/) verwenden, um das Omni-Suchfeld zu öffnen.
-In der **Assets-Ansicht** ist die Suchleiste oben sichtbar und kann direkt aufgerufen werden.
+* Rufen Sie in der **Admin-Ansicht** in Experience Manager „Assets“ > „Dateien“ auf und klicken Sie auf das Suchsymbol in der oberen Leiste. Alternativ können Sie einen Schrägstrich (/) verwenden, um das Omni-Suchfeld zu öffnen.In der **Assets-Ansicht** ist die Suchleiste oben sichtbar und kann direkt aufgerufen werden.
 * `Location:Assets` und `Path:/content/dam` sind vorausgewählt, um den Suchbereich auf Ihr Experience Manager Assets-Repository zu beschränken. Wenn Sie zu einem anderen Ordner navigieren, wird `Path:/content/dam/<folder name>` im Feld der Omni-Suche angezeigt, um den Suchbereich auf den aktuellen Ordner zu beschränken.
 
 ## Einfache Suche {#basic-search}
@@ -64,15 +63,15 @@ Der Filter „Dateien und Ordner“ hilft Ihnen bei der Eingrenzung Ihrer Suche.
 Führen Sie die folgenden Schritte aus, um dieses Szenario zu erreichen:
 
 1. Geben Sie `classic car` als Suchbegriff ein und klicken Sie auf „Suchen“.
-2. Klicken Sie auf „Filter“ und definieren Sie den Ordnerpfad für den Ordner `automobile`. Beispiel: `/content/dam/multiple-assets/automobile`
-Wählen Sie den Ordner aus dem Pfad aus und navigieren Sie zum gewünschten Ordner, wenn Sie ihn durchsuchen möchten.
+2. Klicken Sie auf „Filter“ und definieren Sie den Ordnerpfad für den Ordner `automobile`. Zum Beispiel: `/content/dam/multiple-assets/automobile`
+Wählen Sie den Ordner aus dem Pfad aus und navigieren Sie zum gewünschten Ordner, wenn Sie in dem bestimmten Ordner suchen möchten.
 3. Wählen Sie „Dateien“ aus der Dropdown-Liste aus, um alle Dateien mit dem Suchbegriff `classic car` anzuzeigen.
 
 <!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
-## Operatoren  {#operators}
+## Operatoren {#operators}
 
 **Szenario 3: Suchen Sie nach den Schlüsselwörtern `Classic Car` oder `Car` und verwenden Sie verschiedene Operatorkombinationen, um Ihre Suche einzugrenzen.**
 
@@ -102,7 +101,7 @@ Auf ähnliche Weise können Sie etwa nach allen Autos außer Jeeps suchen. Die A
 
 Die **[!UICONTROL Asset-Ansicht]** unterstützt die Verwendung von Operatoren nicht.
 
-## Platzhalter  {#wildcards}
+## Platzhalter {#wildcards}
 
 Platzhalter werden verwendet, um ein oder mehrere Zeichen in der Suche zu ersetzen. Um das obige Szenario in der **[!UICONTROL Admin-Ansicht]** auszuführen, können Sie eine Kombination aus verschiedenen Platzhaltern verwenden und so Ihr Sucherlebnis verbessern. Es werden zwei Platzhalter verwendet, um die Suche durchzuführen: Fragezeichen (?) und Sternchen (*). Das Fragezeichen-Symbol wird verwendet, um nach einem einzelnen Zeichen zu suchen, während das Sternchen-Symbol zum Ersetzen von mehreren Zeichen verwendet wird.
 
@@ -216,7 +215,7 @@ Szenario 6 kann nicht in der **[!UICONTROL Asset-Ansicht]** ausgeführt werden, 
 
 So führen Sie die Suche für Szenario 7 durch:
 
-Geben Sie den Suchbegriff `car - classic` in die Suchleiste ein. Navigieren Sie zum Filterbedienfeld und wählen Sie unter „Dateityp“ die Option „Dokumente“. Die Prioritätsreihenfolge der Suche basiert auf den folgenden Kriterien:
+Geben Sie den Suchbegriff `car - classic` in die Suchleiste ein. Navigieren Sie zum Filterbedienfeld und wählen Sie unter „Dateityp“ die Option „Dokumente“. Die Prioritätsreihenfolge der Suche basiert auf Folgendem:
 Priorität 1: Metadaten
 Priorität 2: Smart-Tags
 
@@ -255,9 +254,8 @@ Die Suche zeigt ähnliche Ergebnisse an, wenn Sie in der **[!UICONTROL Assets-An
 Bei der Suche in AEM können Sie Ihre Ergebnisse filtern, indem Sie ähnliche Assets wie die ausgewählten anzeigen lassen. Sie können die Option **Ähnliche suchen** verwenden, um die Suche auf exakte oder ähnliche Übereinstimmungen mit dem gesuchten Asset einzugrenzen. Dies hilft beim Suchen nach Assets, die ähnliche Smart-Tags wie das ausgewählte Asset haben. Wenn Sie beispielsweise nach ähnlichen Assets suchen möchten, führen Sie die folgenden Schritte aus:
 
 1. Suchen Sie das Asset gemäß Ihren Anforderungen.
-1. Bewegen Sie den Mauszeiger über das Asset > klicken Sie auf die Auslassungspunkte > wählen Sie [!UICONTROL Ähnliche suchen].
-oder
-Markieren Sie das Asset > navigieren Sie zu den Auslassungspunkten oben rechts > wählen Sie [!UICONTROL Ähnliche suchen].
+1. Bewegen Sie den Mauszeiger über das Asset > klicken Sie auf die Auslassungspunkte > wählen Sie [!UICONTROL Ähnliche suchen].oder
+Wählen Sie das Asset aus und navigieren Sie oben rechts zu den Auslassungspunkten und wählen Sie [!UICONTROL Ähnliche suchen].
 
    ![Ähnliche suchen](assets/find-similar.png)
 
@@ -266,8 +264,7 @@ Markieren Sie das Asset > navigieren Sie zu den Auslassungspunkten oben rechts >
 Führen Sie die folgenden Schritte in der **[!UICONTROL Asset-Ansicht]** aus:
 
 1. Suchen Sie das Asset gemäß Ihren Anforderungen.
-1. Wählen Sie das Bild aus und navigieren Sie zur Option [!UICONTROL Ähnliches Bild suchen] in der Navigationsleiste am oberen Rand.
-Sie gelangen darüber zur Sammlung von Assets mit ähnlichen Farben und Metadaten.
+1. Wählen Sie das Bild aus und navigieren Sie zur Option [!UICONTROL Ähnliches Bild suchen] in der Navigationsleiste am oberen Rand.Sie gelangen darüber zur Sammlung von Assets mit ähnlichen Farben und Metadaten.
 
 ## Benutzerdefinierte Suchfacetten {#custom-search-facets}
 
@@ -321,8 +318,7 @@ The newly added assets are not indexed.
     <tr>
         <td> Benutzerdefinierte Facetten </td>
         <td> Sie können <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=de">benutzerdefinierte Suchfacetten je nach Anforderung hinzufügen.</td>
-        <td> Die benutzerdefinierten Facetten werden teilweise in der Asset-Ansicht unterstützt. Folgende Facetten werden unterstützt:
-            <ul>
+        <td> Die benutzerdefinierten Facetten werden teilweise in der Asset-Ansicht unterstützt. Folgende Facetten werden unterstützt:<ul>
             <li> Prognostizierte Tags
             <li> Name
             <li> Vertrauenswürdigkeit prognostizierter Tags
@@ -332,12 +328,12 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> Operatoren  </td>
+        <td> Operatoren </td>
         <td> Unterstützt AND, OR und NOT </td>
         <td> Nicht unterstützt </td>
     </tr>
     <tr>
-        <td> Platzhalter  </td>
+        <td> Platzhalter </td>
         <td> Unterstützt Fragezeichen (?) und Sternchen (*).</td>
         <td> Nicht unterstützt </td>
     </tr>
@@ -397,7 +393,7 @@ The newly added assets are not indexed.
             <ul>
             <li> Bilder
             <li> Dokumente
-            <li> Video 
+            <li> Video
             <li> Ordner 
             </ul> 
         Weitere Optionen sind unter „MIME-Typ“ aufgeführt.
@@ -436,3 +432,22 @@ The newly added assets are not indexed.
 >
 >* [Suchen von Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=de)
 >* [Suchfacetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=de)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

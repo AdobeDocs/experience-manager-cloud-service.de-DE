@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1934'
 ht-degree: 99%
 
 ---
@@ -58,7 +58,7 @@ Führen Sie die folgenden Schritte aus:
 
    * Wählen Sie **[!UICONTROL Vollständige Dropbox]**, wenn Sie Zugriff auf alle Dateien und Ordner in Ihrem Dropbox-Konto benötigen.
 
-1. Geben Sie einen Namen für das Formular ein und klicken Sie auf **[!UICONTROL App erstellen]**. 
+1. Geben Sie einen Namen für das Formular ein und klicken Sie auf **[!UICONTROL App erstellen]**.
 
 1. Fügen Sie in der Registerkarte **[!UICONTROL Einstellungen]** Ihrer Anwendung „https://experience.adobe.com“ zum Abschnitt **[!UICONTROL Umleitungs-URIs]** hinzu.
 
@@ -136,8 +136,7 @@ Führen Sie die folgenden Schritte aus, um in [!DNL Experience Manager Assets] 
    >* Der Quellordner muss sich im Stammverzeichnis befinden. Ordnerpfade werden nicht unterstützt.
 
 1. (Optional) Wählen Sie die Option **[!UICONTROL Quelldatei nach Import löschen]** aus, um die Originaldateien aus dem Quelldatenspeicher zu löschen, nachdem die Dateien in Experience Manager Assets importiert wurden.
-1. Wählen Sie den **[!UICONTROL Importmodus]**. Wählen Sie **[!UICONTROL Überspringen]**, **[!UICONTROL Ersetzen]** oder **[!UICONTROL Version erstellen]**. Der Modus „Überspringen“ ist der Standardmodus. In diesem Modus überspringt das Aufnahme-Tool den Import eines Assets, wenn es bereits vorhanden ist.
-   ![Importieren von Quelldetails](/help/assets/assets/bulk-import-source-details.png)
+1. Wählen Sie den **[!UICONTROL Importmodus]**. Wählen Sie **[!UICONTROL Überspringen]**, **[!UICONTROL Ersetzen]** oder **[!UICONTROL Version erstellen]**. Der Modus „Überspringen“ ist der Standardmodus. In diesem Modus überspringt das Aufnahme-Tool den Import eines Assets, wenn es bereits vorhanden ist.   ![Importieren von Quelldetails](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Optional) Geben Sie im Feld **[!UICONTROL Metadatendatei]** die zu importierende Metadatendatei im CSV-Format an. Die Metadaten-Quelldatei muss sich im Quellordner befinden. Klicken Sie auf **[!UICONTROL Weiter]**, um zu **[!UICONTROL Speicherort und Filter]** zu navigieren.
 
@@ -158,7 +157,7 @@ Führen Sie die folgenden Schritte aus, um in [!DNL Experience Manager Assets] 
 
    * **[!UICONTROL Import speichern]**, um die Konfiguration vorerst zu speichern, damit Sie sie später ausführen können.
    * **[!UICONTROL Import speichern und ausführen]**, um die Konfiguration zu speichern und den Massenimport auszuführen.
-   * **[!UICONTROL Import speichern und planen]**, um die Konfiguration zu speichern und den Massenimport für einen späteren Zeitpunkt zu planen. Sie können die Häufigkeit des Massenimports auswählen und Datum und Uhrzeit für den Import festlegen.  Der Massenimport wird am festgelegten Datum und zur festgelegten Uhrzeit in der ausgewählten Häufigkeit ausgeführt.
+   * **[!UICONTROL Import speichern und planen]**, um die Konfiguration zu speichern und den Massenimport für einen späteren Zeitpunkt zu planen. Sie können die Häufigkeit des Massenimports auswählen und Datum und Uhrzeit für den Import festlegen. Der Massenimport wird am festgelegten Datum und zur festgelegten Uhrzeit in der ausgewählten Häufigkeit ausgeführt.
 
    ![Massenimport ausführen](assets/save-run.png)
 
@@ -228,3 +227,22 @@ Klicken Sie auf das Symbol ![Mehr](assets/do-not-localize/more-icon.svg) neben d
 ## Navigieren zu Assets nach einem Massenimport {#view-assets-after-bulk-import}
 
 Um den Asset-Zielspeicherort anzuzeigen, in den die Assets importiert werden, nachdem der Massenimportauftrag ausgeführt wurde, klicken Sie auf das Symbol ![Mehr](assets/do-not-localize/more-icon.svg) neben dem Konfigurationsnamen und dann auf **[!UICONTROL Assets anzeigen]**.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

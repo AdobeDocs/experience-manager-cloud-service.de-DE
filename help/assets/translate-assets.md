@@ -6,9 +6,9 @@ feature: Asset Management, Translation
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2645'
 ht-degree: 99%
 
 ---
@@ -31,11 +31,11 @@ Maschinelle Asset-Übersetzung in AEM: Der Service für maschinelle Übersetzung
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=de
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=de
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=de)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=de
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -264,7 +264,7 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Wählen Sie in der Symbolleiste **[!UICONTROL Speichern]** und anschließend **[!UICONTROL OK]** aus, um das Dialogfeld zu schließen. Der Übersetzungsdienst wird auf den Ordner angewendet.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Speichern]** aus und klicken Sie dann auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen.Der Übersetzungs-Service wird auf den Ordner angewendet.
 
 ### Anwenden eines benutzerdefinierten Übersetzungs-Connectors {#applying-custom-translation-connector}
 
@@ -287,15 +287,18 @@ Wenn Sie einen benutzerdefinierten Connector für die Übersetzungs-Services anw
 
 **Siehe auch**
 
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

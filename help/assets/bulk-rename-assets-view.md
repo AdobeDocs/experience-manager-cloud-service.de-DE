@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Assets mit der neuen Assets-Benutzeroberfläc
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e041811b-0246-408f-9246-248da55f66a1
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 99%
+source-wordcount: '507'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ Im Folgenden finden Sie einige Beispiele für die Verwendung von KI zur Massenum
 * Verwende als Präfix „00“, „01“ usw. und als Suffix das heutige Datum.
 * Ändere alle Dateien in „my-file“ und hänge eine inkrementierende Zahl an.
 * Entferne Präfix und Suffix und behalte nur den mittleren Teil des Namens.
-* Verwende als Präfix für die Dateien „001“, „002“ usw. und übersetze ihn ins Englische.
+* Verwende als Präfix für die Dateien „001“, „002“ usw. und übersetze ins Englische.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440975)
 
@@ -62,10 +62,29 @@ Im Folgenden finden Sie einige Beispiele für die Verwendung von KI zur Massenum
 
 ## Nächste Schritte {#next-steps}
 
-* [Sehen Sie sich ein Video zum Verwalten von Metadatenformularen in der Assets-Ansicht an](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=de)
+* [Video zum Verwalten von Metadatenformularen in der Assets-Ansicht ansehen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=de)
 
 * Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

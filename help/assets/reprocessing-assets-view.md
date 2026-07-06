@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Methoden zur Neuverarbeitung d
 role: User, Leader, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '823'
 ht-degree: 99%
 
 ---
@@ -24,8 +24,7 @@ Verarbeiten Sie Assets in einem Ordner neu, wenn eines der folgenden beiden Szen
 
 Wie folgt können Sie Assets in einem Ordner erneut verarbeiten:
 
-1. Wählen Sie in [!DNL Assets view] auf der Assets-Seite die neu hinzugefügten Assets oder die Assets aus, die Sie erneut verarbeiten möchten.
-Wenn Sie einen Ordner auswählen:
+1. Wählen Sie in [!DNL Assets view] auf der Assets-Seite die neu hinzugefügten Assets oder die Assets aus, die Sie erneut verarbeiten möchten.Wenn Sie einen Ordner auswählen:
 
    * Der Workflow berücksichtigt rekursiv alle Dateien in dem ausgewählten Ordner.
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
@@ -46,8 +45,7 @@ Wenn Sie einen Ordner auswählen:
 
       * **[!UICONTROL Metadaten]:** Wählen Sie diese Option, wenn Sie Metadateninformationen und Smart-Tags für die ausgewählten Assets extrahieren möchten.
 
-      * **[!UICONTROL Verarbeitungsprofile]:** Wählen Sie diese Option, wenn Sie ein ausgewähltes Profil erneut verarbeiten möchten. Sie können die Option **[!UICONTROL Vollständiger Prozess]** wählen, um die Standardverarbeitung und das benutzerdefinierte Profil einzuschließen, die auf der Ordnerebene zugewiesen sind.
-        <!--When assets are uploaded to a folder, [!DNL Assets ~~view~~] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL Verarbeitungsprofile]:** Wählen Sie diese Option, wenn Sie ein ausgewähltes Profil erneut verarbeiten möchten. Sie können die Option **[!UICONTROL Vollständiger Prozess]** wählen, um die Standardverarbeitung und das benutzerdefinierte Profil einzuschließen, die auf der Ordnerebene zugewiesen sind.        <!--When assets are uploaded to a folder, [!DNL Assets ~~view~~] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
       * **[!UICONTROL Nachbearbeitungs-Workflow]:** Wählen Sie diese Option, bei der eine zusätzliche Verarbeitung von Assets erforderlich ist, die mit den Verarbeitungsprofilen nicht erreicht werden kann. Der Konfiguration können weitere Nachbearbeitungs-Workflows hinzugefügt werden. Mit der Nachbearbeitung können Sie zusätzlich zur konfigurierbaren Verarbeitung mithilfe von Asset-Microservices eine vollständig angepasste Verarbeitung hinzufügen.
 
@@ -91,3 +89,22 @@ Sie können Assets in einem Ordner neu verarbeiten, der bereits über ein späte
 ### Workflows
 
 Lesen Sie mehr zu [Verarbeitungsprofilen und Nachbearbeitungs-Workflows](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=de).
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

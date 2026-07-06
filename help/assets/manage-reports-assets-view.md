@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 8f04036493722f73fb29416b51dae6d64633249c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 95%
+source-wordcount: '1562'
+ht-degree: 97%
 
 ---
 
@@ -141,7 +141,7 @@ Hier erhalten Sie Einblicke in die Bereitstellung von Assets, die mit Dynamic Me
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Voraussetzungen {#prereqs-dynamic-media-delivery-reports}
@@ -186,8 +186,7 @@ Informationen zum Löschen oder Herunterladen des Dynamic Media-Bereitstellungsb
 
 ## Anzeigen und Herunterladen von vorhandenen Berichten {#View-and-download-existing-report}
 
-Vorhandene Berichte werden auf der Registerkarte **Ausgeführte Berichte** angezeigt. Klicken Sie auf **Berichte** und wählen Sie **Ausgeführte Berichte** aus, um alle erstellten Berichte mit dem Status **Abgeschlossen** anzuzeigen, dass sie zum Herunterladen bereit sind. Um den Bericht im CSV-Format herunterzuladen oder zu löschen, wählen Sie die Berichtszeile aus. Wählen Sie dann **CSV herunterladen** oder **Löschen**.
-![Anzeigen und Herunterladen vorhandener Berichte](/help/assets/assets/view-download-existing-report.png)
+Vorhandene Berichte werden auf der Registerkarte **Ausgeführte Berichte** angezeigt. Klicken Sie auf **Berichte** und wählen Sie **Ausgeführte Berichte** aus, um alle erstellten Berichte mit dem Status **Abgeschlossen** anzuzeigen. Dieser Status bedeutet, dass sie zum Herunterladen bereit sind. Um den Bericht im CSV-Format herunterzuladen oder zu löschen, wählen Sie die Berichtszeile aus. Wählen Sie dann **CSV herunterladen** oder **Löschen** aus.![Anzeigen und Herunterladen von vorhandenen Berichten](/help/assets/assets/view-download-existing-report.png)
 
 
 ## Planen eines Berichts {#schedule-report}
@@ -220,13 +219,11 @@ Geplante Berichte werden systematisch organisiert auf der Registerkarte **Geplan
 1. Navigieren Sie zur Registerkarte **Geplante Berichte**.
 1. Wählen Sie die Berichtszeile aus.
 1. Klicken Sie auf **Bearbeiten**.
-1. Klicken Sie **Zeitplan abbrechen** und anschließend auf **Bestätigen**, um den terminierten Bericht abzubrechen. Bei abgebrochenen Berichten wird die nächste Laufzeit leer und der Status wird „abgebrochen“ angezeigt.
-   ![Bearbeiten und Abbrechen eines geplanten Berichts](/help/assets/assets/cancel-edit-scheduled-reports.png)
+1. Klicken Sie auf **Zeitplan abbrechen** und dann auf **Bestätigen**, um den geplanten Bericht abzubrechen. Bei abgebrochenen Berichten ist „Zeit der nächsten Ausführung“ leer und der Status ist „Abgebrochen“.   ![Bearbeiten und Abbrechen eines geplanten Berichts](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### Zeitplan fortsetzen {#resume-schedule}
 
-Um den abgebrochenen Zeitplan fortzusetzen, wählen Sie die Berichtszeile aus und klicken Sie auf **Zeitplan fortsetzen**. Wenn sie fortgesetzt wird, werden die nächsten Laufzeiteinträge erneut angezeigt und der Status wird „Fortaufend“ angezeigt.
-![Zeitplan fortsetzen](/help/assets/assets/resume-schedule.png)
+Um den abgebrochenen Zeitplan wieder aufzunehmen, wählen Sie die Berichtszeile aus und klicken Sie auf **Zeitplan fortsetzen**. Nach dem Fortsetzen werden die Einträge für die nächsten Ausführungen erneut angezeigt und der Status ist „Laufend“.![Zeitplan fortsetzen](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
 >
@@ -265,3 +262,22 @@ Klicken Sie auf **[!UICONTROL Erkenntnisse]** im linken Navigationsbereich, um d
 * **Asset-Anzahl nach Größe:** Segmentiert die gesamte Asset-Anzahl in Ihrer Assets-Ansicht-Umgebung in unterschiedliche Größenbereiche und hebt die Anzahl und den Prozentsatz der Assets in jedem Größenbereich hervor, dargestellt durch ein Ringdiagramm.
 
 * **Asset-Anzahl nach Asset-Typ:** Segmentiert die gesamte Asset-Anzahl in Ihrer Assets-Ansicht-Umgebung und hebt die Anzahl und den Prozentsatz der Assets anhand ihrer Dateitypen hervor, dargestellt durch ein Ringdiagramm.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

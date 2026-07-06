@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 72c26630e23af16ad5ece3ab1d07f7f31bf67270
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 66%
+source-wordcount: '1749'
+ht-degree: 67%
 
 ---
 
@@ -87,7 +87,7 @@ Es gibt einige Konfigurationen dazu, wie Benutzende [!DNL Content Hub] und [!DNL
    >
    >Die Person, die Express- und Assets-Produktprofilen in zwei Admin Consoles zugewiesen ist, muss über dieselbe E-Mail-Adresse verfügen und ein Unternehmenskonto vom Typ **Unternehmen oder Schule** statt des **persönlichen** Kontos verwenden. In der idealen Konfiguration sind beide Admin Consoles als **Federated ID** mit einer vertrauenswürdigen Beziehung zwischen ihnen eingerichtet, damit Benutzende von einem nahtlosen Single Sign-on-Erlebnis profitieren. Einige der Express-Abos (z. B. Express Teams) unterstützen Federated ID/Single Sign-on nicht.
 
-Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[!UICONTROL # /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Zusätzlich zu den richtigen Produktberechtigungen erfordert die Adobe Express-Integration in Content Hub, dass zugewiesene Benutzende mindestens über Berechtigungen vom Typ [!UICONTROL Bearbeiten] für die Assets-Autorenumgebung verfügen, die Content Hub unterstützt, und zwar mindestens für die Ordnerhierarchie **[#UICONTROL /content/dam/hydrated-assets/]**, in der Content Hub-Benutzende mit Express erstellte Inhalte speichern können. Siehe [Berechtigungsverwaltung](/help/security/touch-ui-principal-view.md) in der Admin-Ansicht (Touch-Benutzeroberfläche) oder eine vereinfachte [Berechtigungsverwaltung in der Assets-Ansicht](https://experienceleague.adobe.com/de/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Kann ich AEM Assets Content Hub so einrichten, dass die Markenrichtlinien meines Unternehmens als Link auf der Startseite angezeigt werden? {#content-hub-setup-brand-guidelines}
 
@@ -129,7 +129,7 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen AEM Assets C
 |  | Anonyme Link-Freigabe | ✓ | ✓ |
 |  | Private Sammlungen | ✓ | ✓ |
 | Berechtigungen | ACL-basierte Berechtigungen | − | ✓ |
-|  | Attributbasierte Zugriffssteuerung | ✓ | − |
+|  | Attributbasierte Zugriffssteuerung – Übersicht | ✓ | − |
 | Express-Integration | Bearbeiten von Content Hub-Assets in Adobe Express und Speichern im DAM | ✓ | − |
 | Dashboards und Berichte | Erkenntnis-Dashboard | ✓ | − |
 | Erweiterbarkeit der Benutzeroberfläche | Benutzerdefinierte Erweiterungspunkte auf der Seite „Asset-Details“ | Eingeschränkte Verfügbarkeit | − |
@@ -169,3 +169,20 @@ Sofern verfügbar, zeigt Content Hub das Bild als Vorschauminiatur für die ZIP-
 >Eine Ausgabedarstellung mit dem Namen `cq5dam.preview.png` (ohne Dimensionen) wird nicht als Vorschauminiatur angezeigt.
 
 
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

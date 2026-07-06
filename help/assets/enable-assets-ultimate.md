@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: e8d9414c204222cbd1068530cc9329f30c7a9fbe
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2582'
 ht-degree: 55%
 
 ---
@@ -252,3 +252,22 @@ Für das AEM Assets Power Users-Produktprofil in Adobe Admin Console sind standa
 ### Was ist der Unterschied zwischen dem Versand und dem ContentHub-Suffix in der Content Hub Admin Console-Instanz? {#content-hub-suffix-difference}
 
 Das Suffix der Content Hub-Instanz in Adobe Admin Console hängt davon ab, wann Content Hub bereitgestellt wurde. Kunden, die Content Hub nach dem 14. August 2024 bereitgestellt haben, haben eine -Instanz mit einem Versand-Suffix. Kunden, die Content Hub vor dem 14. August 2024 bereitgestellt haben, haben eine -Instanz mit einem ContentHub-Suffix. Im früheren Bereitstellungsfall zeigt das Content Hub-Produktprofil auch „ContentHub“ nach Eingeschränkten Benutzenden anstelle von „Bereitstellung“ an. Beide Konfigurationen bieten dasselbe Produktprofil für eingeschränkte AEM Assets-Benutzer, um Zugriff auf Content Hub zu gewähren.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

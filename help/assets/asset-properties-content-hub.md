@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie in  [!DNL Content Hub] Assets und Eigenschaft
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 60%
+source-wordcount: '1041'
+ht-degree: 61%
 
 ---
 
@@ -112,7 +112,7 @@ Einige Asset-Eigenschaften, die in [!DNL Content Hub] angezeigt werden, werden a
 
 * **Smart-Tags:** [!DNL The Content Hub] verwendet den Smart Content Services von Adobe AI, um Assets mithilfe des Erkennungsalgorithmus auf der Tag-basierten Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf Assets an.
 
-* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
+* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
 
 * Upload-Datum
 
@@ -160,3 +160,20 @@ Ja, Administratoren haben die Möglichkeit, zu konfigurieren, welche Eigenschaft
 Zu den unterstützten Dateiformaten in AEM Assets Content Hub gehören JPEG und PNG für Bilder, Quicktime, MP4 und MPEG für Videos, TXT, DOC/DOCX und XML für Dokumente sowie PDF für Druckmedien.
 
 
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

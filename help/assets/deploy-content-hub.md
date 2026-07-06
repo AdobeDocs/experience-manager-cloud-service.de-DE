@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Content Hub bereitstellen und aktivieren sowi
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2663'
 ht-degree: 61%
 
 ---
@@ -21,7 +21,7 @@ Dieser Artikel enthält einen durchgängigen Workflow zur Bereitstellung von Con
 
 In diesem Video erfahren Sie, wie Sie Content Hub für Experience Manager Assets aktivieren:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472944/?captions=ger&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 Zu den verschiedenen Berechtigungen für Content Hub gehören:
 
@@ -62,7 +62,7 @@ In der folgenden Tabelle sind die verfügbaren Content Hub-Benutzertypen, ihre B
 ## Schritt 1: Aktivieren von Content Hub für Experience Manager Assets mithilfe von Cloud Manager {#enable-content-hub}
 
 
-Um auf das Content Hub-Portal zugreifen zu können, müssen Admins zunächst Content Hub für Experience Manager Assets as a Cloud Service mithilfe von Cloud Manager aktivieren. 
+Um auf das Content Hub-Portal zugreifen zu können, müssen Admins zunächst Content Hub für Experience Manager Assets as a Cloud Service mithilfe von Cloud Manager aktivieren.
 
 ### Berechtigungen {#permissions-edit-program}
 
@@ -72,7 +72,7 @@ So aktivieren Sie Content Hub für Experience Manager Assets:
 
 1. Melden Sie sich bei Cloud Manager an. Stellen Sie sicher, dass Sie beim Anmelden die richtige Organisation auswählen. Cloud Manager listet alle Ihre Programme auf.
 
-1. Navigieren Sie zum Programm Experience Manager Assets as a Cloud Service, klicken Sie auf das Symbol für weitere Optionen (…) und wählen Sie **[!UICONTROL Programm bearbeiten]** aus.
+1. Navigieren Sie zum Experience Manager Assets as a Cloud Service-Programm und klicken Sie auf das Symbol Weitere Optionen (…) und wählen Sie **[!UICONTROL Programm bearbeiten]**.
 
    ![„Programm bearbeiten“ in Cloud Manager](assets/edit-program-cloud-manager.png)
 
@@ -344,5 +344,20 @@ AEM Assets Content Hub-Benutzende mit Berechtigungen zum Remixen von Assets habe
 
 
 
+**Siehe auch**
 
-
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

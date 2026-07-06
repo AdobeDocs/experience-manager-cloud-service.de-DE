@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 61%
+source-wordcount: '3115'
+ht-degree: 70%
 
 ---
 
@@ -35,7 +35,7 @@ Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von 
 
 * alle benutzerspezifischen Links, die Sie zusätzlich zu Assets, Sammlungen und Erkenntnissen in Content Hub einschließen müssen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472955/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Voraussetzungen {#prerequisites-configuration-ui}
 
@@ -117,8 +117,7 @@ Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Asse
    >
    >Der neue Filter wird nur dann auf der Suchseite angezeigt, wenn im Repository mindestens ein Asset vorhanden ist, das den Filterkriterien entspricht.
 
-Ebenso können Sie auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) klicken, das neben jedem verfügbaren Filter verfügbar ist, um die Beschriftungen zu bearbeiten, oder auf das Löschsymbol klicken, um einen vorhandenen Filter zu löschen. Klicken Sie **[!UICONTROL Speichern]** nachdem Sie alle Änderungen vorgenommen haben, um die Änderungen anzuwenden.
-![Filter der Konfigurations-Benutzeroberfläche auf Content Hub](assets/add-filters.png)
+Sie können auch auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jedem verfügbaren Filter klicken, um die Labels zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um einen vorhandenen Filter zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.![Filter in der Konfigurationsoberfläche in Content Hub](assets/add-filters.png)
 
 Die in der Konfigurations-Benutzeroberfläche aktivierten Filter werden auf der Seite „Suchen“ angezeigt:
 ![Suche in Content Hub](assets/content-hub-filters1.png)
@@ -159,8 +158,7 @@ Die auf der Konfigurationsoberfläche aktivierten Eigenschaften werden auf der S
 
 ### Asset-Karte {#asset-card}
 
-Sie können auch die wichtigsten Metadateneigenschaften konfigurieren, die Sie auf der **Asset-Karte** für maximal sechs Felder anzeigen möchten.
-![Schlüsselmetadaten auf der Asset-Karte](/help/assets/assets/asset-card-metadata.png)
+Sie können auch die wichtigsten Metadateneigenschaften (maximal 6 Felder) konfigurieren, die auf der **Asset-Karte** angezeigt werden sollen.![Schlüssel-Metadaten auf der Asset-Karte](/help/assets/assets/asset-card-metadata.png)
 Führen Sie die folgenden Schritte aus, um die Metadateneigenschaften zu konfigurieren und sie auf der **[!UICONTROL Asset-Karte“ anzuzeigen]**:
 
 1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **Asset-Karte**.
@@ -186,13 +184,11 @@ Admins können die Metadatenfelder definieren, die durchsucht werden, wenn jeman
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen anzuwenden, sodass die neue Metadateneigenschaft in der Liste der Metadatenfelder angezeigt wird.
 
-Ebenso können Sie auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) klicken, das neben jeder verfügbaren Metadateneigenschaft verfügbar ist, um die Eigenschaft zu bearbeiten, oder auf das Löschsymbol klicken, um eine vorhandene Eigenschaft zu löschen. Klicken Sie **[!UICONTROL Speichern]** nachdem Sie alle Änderungen vorgenommen haben, um die Änderungen anzuwenden.
-![Suche in der Konfigurations-Benutzeroberfläche in Content Hub](assets/configuration-search.png)
+Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Metadateneigenschaft klicken, um die Eigenschaft zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um eine vorhandene Eigenschaft zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.![Suche in Content Hub in der Konfigurations-Benutzeroberfläche](assets/configuration-search.png)
 
 ### Branding {#configure-branding-content-hub}
 
-Passen Sie als Administrator Ihr [!DNL Content Hub] Portal an Ihre Branding-Anforderungen an.
-![Standard zurücksetzen](/help/assets/assets/reset-default-content-hub.png)
+Passen Sie als Admin Ihr [!DNL Content Hub]-Portal an Ihre Branding-Anforderungen an.![Standard zurücksetzen](/help/assets/assets/reset-default-content-hub.png)
 Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die Abschnitte **[!UICONTROL Banner]**, **[!UICONTROL Farben]** und **[!UICONTROL Bannerbild]**, um die folgenden Anpassungen auszuführen:
 
 1. [Ändern des Logobilds im Abschnitt [!UICONTROL Logobild].](#Change-the-logo-image)
@@ -226,15 +222,12 @@ Führen Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!
 
 #### Fügen Sie dem Banner Titel und Textinhalte hinzu und ändern Sie die Textfarbe{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-Verwenden Sie auf der ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die entsprechenden Felder im Abschnitt **[!UICONTROL Banner]**, um dem Banner Titel- und Textinhalte hinzuzufügen.
-Klicken Sie auf das quadratische Feld neben **[!UICONTROL Bannertextfarbe]**, um eine Textfarbe aus der Farbauswahl für Ihren Bannertext auszuwählen, oder geben Sie den Hexadezimalcode der Farbe in das Feld neben dem quadratischen Feld der Farbauswahl ein.
-![Bannertext-Content-Hub](/help/assets/assets/banner-text-content-hub.png)
+Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** die entsprechenden Felder im Abschnitt **[!UICONTROL Banner]**, um dem Banner Titel- und Textinhalte hinzuzufügen.Klicken Sie auf das quadratische Feld neben **[!UICONTROL Bannertextfarbe]**, um mit dem Farbwähler eine Textfarbe für Ihren Bannertext auszuwählen, oder geben Sie den Hexadezimal-Code der Farbe in das Feld neben dem quadratischen Farbwählerfeld ein.![Bannertext-Content-Hub](/help/assets/assets/banner-text-content-hub.png)
 
 #### Ändern der primären und sekundären Farbe{#Change-the-primary-and-secondary-color}
 
-Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** den Abschnitt **[!UICONTROL Farben]**, um primäre und sekundäre Farben festzulegen, indem Sie diese entweder mit der Farbauswahl auswählen oder den Hexadezimalcode der Farbe definieren. Diese Farben legen die Hintergrund-, Text- und Symbolfarben von Benutzeroberflächenelementen fest, um Ihre [!DNL Content Hub]-Benutzeroberfläche an das Design Ihrer Marke anzupassen.
-![Primär- und Sekundärfarbe](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Primäre Farbe]:** Das Primärfarbschema gilt für Auswahlaktionen, interaktive Elemente wie Kontrollkästchen, Suchleisten und Umschalter in [!DNL Content Hub], einschließlich [!DNL Content Hub] Startseite und [!UICONTROL Konfigurationsseite]. Dies gilt auch für Aktionsoptionen, die auf primären [!DNL Content Hub] verfügbar sind, z. B. Optionen auf den Seiten **[!UICONTROL Alle Assets]** und **[!UICONTROL Sammlungen]**.
+Verwenden Sie auf der Seite ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** den Abschnitt **[!UICONTROL Farben]**, um primäre und sekundäre Farben festzulegen, indem Sie diese entweder mit dem Farbwähler auswählen oder den Hexadezimal-Code der Farbe definieren. Diese Farben legen die Hintergrund-, Text- und Symbolfarben von Benutzeroberflächenelementen fest, um Ihre [!DNL Content Hub]-Benutzeroberfläche an das Design Ihrer Marke anzupassen.![Primär- und Sekundärfarbe](/help/assets/assets/primary-secondary-color-content-hub1.png)
+**[!UICONTROL Primäre Farbe]:** Das Primärfarbschema gilt für Auswahlaktionen, interaktive Elemente wie Kontrollkästchen, Suchleisten und Umschalter in [!DNL Content Hub], einschließlich [!DNL Content Hub] Startseite und [!UICONTROL Konfigurationsseite]. Dies gilt auch für Aktionsoptionen, die auf primären [!DNL Content Hub]-Oberflächen verfügbar sind, z. B. Optionen auf den Seiten **[!UICONTROL Alle Assets]** und **[!UICONTROL Sammlungen]**.
 
 **[!UICONTROL Sekundäre Farbe]:** Auf der [!DNL Content Hub]-Startseite gilt das sekundäre Farbschema für Benutzeroberflächenoptionen und Eingabefelder, die in Dialogfeldern verfügbar sind. Dies gilt für alle Konfigurationsmenüoptionen auf der Seite [!UICONTROL Konfiguration] mit Ausnahme von Auswahlaktionen, Kontrollkästchen, Suchleisten und Umschaltern.
 
@@ -294,11 +287,9 @@ Zusätzlich zu den Standardregisterkarten **[!UICONTROL Alle Assets]**, **[!UICO
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-Ebenso können Sie auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) klicken, das neben jeder URL verfügbar ist, um die Links zu bearbeiten, oder auf das Löschsymbol klicken, um eine vorhandene URL zu löschen. Klicken Sie **[!UICONTROL Speichern]** nachdem Sie alle Änderungen vorgenommen haben, um die Änderungen anzuwenden.
-![Benutzerdefinierte Links der Konfigurationsoberfläche in Content Hub](assets/configuration-custom-links1.png)
+Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Metadateneigenschaft klicken, um die Links zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um eine vorhandene URL zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.![Benutzerdefinierte Links in der Konfigurationsoberfläche in Content Hub](assets/configuration-custom-links1.png)
 
-Der benutzerdefinierte Link wird als neue Registerkarte neben der Registerkarte Insights auf der Content Hub-Startseite angezeigt.
-![Registerkarten für benutzerdefinierte Links der Konfigurationsoberfläche in Content Hub](assets/configuration-ui-custom-link-tab.png)
+Der benutzerspezifische Link wird auf der Content Hub-Startseite neben der Registerkarte „Erkenntnisse“ als neue Registerkarte angezeigt.![Registerkarten der benutzerdefinierten Links in der Konfigurationsoberfläche in Content Hub](assets/configuration-ui-custom-link-tab.png)
 
 ### Sammlungen und Freigabe {#configure-collections-content-hub}
 
@@ -387,3 +378,21 @@ Admins können die auf den Asset-Karten angezeigten Metadatendetails anpassen, i
 ### Können Administratoren Ihr AEM Assets Content Hub-Portal an die Branding-Anforderungen Ihres Unternehmens anpassen?
 
 Ja. Admins können das Erscheinungsbild von AEM Assets Content Hub personalisieren, indem sie den Titel und den Haupttext für das Hauptbanner bearbeiten, Textfarben über eine Farbauswahl oder einen Hexadezimalcode auswählen und sekundäre und primäre Farben für Hintergrund, Text und Symbole festlegen.
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 90%
+source-wordcount: '2197'
+ht-degree: 89%
 
 ---
 
@@ -39,8 +39,7 @@ Bei Bildern basieren die Smart-Tags auf visuellen Aspekten. Bilder in vielen For
 Bei videobasierten Assets ist das Tagging in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] standardmäßig aktiviert. Wie bei bild- und textbasierten Tags werden Videos auch beim Hochladen neuer Videos oder bei der Neuverarbeitung vorhandener Videos automatisch mit Tags versehen. [!DNL Adobe AI] generiert zwei Sätze von Tags für ein Video: Ein Satz entspricht Objekten, Szenen und Attributen in diesem Video, und der andere Satz bezieht sich auf Aktionen wie Trinken, Laufen und Joggen. Siehe auch [Opt-out für Video-Smart-Tagging](#opt-out-video-smart-tagging).
 
 * **Textbasierte Assets**
-Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert wird und zur Suche nach den Assets verwendet wird. Smart-Tags, die auf Keywords im Text basieren, bieten jedoch eine dedizierte, strukturierte und höher priorisierte Suchfacette. Letzteres trägt dazu bei, die Asset-Erkennung im Vergleich zu einem Suchindex zu verbessern.
-Bei textbasierten Assets hängt die Wirksamkeit von Smart-Tags nicht von der Textmenge im Asset ab, sondern von den relevanten Keywords oder Entitäten, die im Text des Assets vorhanden sind.
+Bei unterstützten Assets extrahiert [!DNL Experience Manager] bereits den Text, der dann indiziert wird und zur Suche nach den Assets verwendet wird. Smart-Tags, die auf Keywords im Text basieren, bieten jedoch eine dedizierte, strukturierte und höher priorisierte Suchfacette. Letzteres trägt dazu bei, die Asset-Erkennung im Vergleich zu einem Suchindex zu verbessern.Bei textbasierten Assets hängt die Wirksamkeit von Smart-Tags nicht von der Menge des Textes im Asset ab, sondern von den relevanten Keywords oder Entitäten, die im Text des Assets vorhanden sind.
 
   ![Smart-tag-types](assets/smart-tags-types.png)
 
@@ -279,3 +278,22 @@ Smart-Tags werden nur in englischer Sprache generiert. Sie können in andere Spr
 Sie können [das Smart-Tagging deaktivieren](#opt-out-smart-tagging) wenn Sie dies beenden möchten.
 
 +++
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1186'
 ht-degree: 83%
 
 ---
@@ -115,7 +115,7 @@ Sie können innerhalb einer Sammlung suchen, um relevante Assets leicht zu finde
 
    * **[!DNL All]:** Zeigt sowohl reguläre als auch Smart-Sammlungen an.
    * **[!DNL Collection]:** Zeigt manuell erstellte Sammlungen an, in denen Assets einzeln hinzugefügt werden.
-   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert &#x200B;](#manage-smart-collection).
+   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert ](#manage-smart-collection).
 
 * Mit dem Dropdown-Menü **[!DNL Created Date]** können Sie Sammlungen nach dem Zeitpunkt filtern, zu dem sie erstellt wurden. Sie können einen Datumsbereich angeben, um kürzlich erstellte oder ältere Sammlungen zu finden.
 
@@ -238,3 +238,22 @@ Weitere Informationen zum vollständigen Workflow finden Sie unter [Verwalten vo
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

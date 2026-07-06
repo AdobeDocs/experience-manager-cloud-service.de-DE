@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User
-source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1097'
 ht-degree: 92%
 
 ---
@@ -56,7 +56,7 @@ So veröffentlichen Sie Assets beim Hochladen in einen Ordner, für den der [!UI
 
    ![Datei-Upload – Modus „Unmittelbar“](/help/assets/assets/dynaimc-media-publish-upon-activation.png)
 
-   Da der [!UICONTROL Veröffentlichungsmodus für Dynamic &#x200B;] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
+   Da der [!UICONTROL Veröffentlichungsmodus für Dynamic ] auf **[!UICONTROL Sofort]** festgelegt ist, werden die hochgeladenen Assets automatisch in [!DNL Dynamic Media] veröffentlicht, wenn Sie auf **[!UICONTROL Hochladen]**.
 
 1. Wählen Sie **In AEM veröffentlichen** aus, um die hochgeladenen Assets in [!DNL AEM] zu veröffentlichen, und klicken Sie auf **[!UICONTROL Hochladen]**.
 
@@ -137,3 +137,22 @@ Die folgenden Funktionen sind beim Veröffentlichen von Assets in [!DNL AEM and 
 * Möglichkeit zum Überschreiben des Synchronisierungsstatus von [!DNL Dynamic Media] auf Ordnerebene.
 * Möglichkeit zum Überschreiben des [!DNL Dynamic Media]-Veröffentlichungsmodus auf Ordnerebene.
 * Noch keine Unterstützung für „Veröffentlichung verwalten“.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

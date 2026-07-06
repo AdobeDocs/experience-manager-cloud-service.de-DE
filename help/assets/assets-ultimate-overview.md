@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: f26e6633bf20d49433a40e94bb03350bcb67c4d5
+source-git-commit: 14730c3aa6830d8954e2a4f84a1fd7750a656d03
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 40%
+source-wordcount: '2098'
+ht-degree: 41%
 
 ---
 
@@ -166,3 +166,22 @@ Power-User und Administratoren in AEM Assets Ultimate haben Zugriff auf alle AEM
 ### Welcher Benutzertyp in AEM Assets Ultimate kann Berechtigungen in der AEM Assets-Autorenumgebung verwalten? {#permission-management-user-type}
 
 Nur Administratoren in AEM Assets Ultimate können Berechtigungen für Inhalte in der AEM Assets-Autorenumgebung verwalten. Hauptbenutzer, Mitarbeiter-Benutzer und eingeschränkte Benutzer verfügen nicht über Funktionen zur Berechtigungsverwaltung. Diese exklusive Funktion wird über das Produktprofil AEM > Produktionsautoreninstanz > AEM-Administratoren in Adobe Admin Console aktiviert. Admins sind auch für die Konfiguration und Zuweisung der richtigen Produktprofile zu allen anderen Benutzertypen innerhalb des Unternehmens verantwortlich.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

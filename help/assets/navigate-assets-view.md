@@ -5,9 +5,9 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1066'
 ht-degree: 99%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 <!-- TBD: The options in left sidebar may change. Shared with me and Shared by me are missing for now. Update this section as UI is updated. -->
 
-## Grundlegendes zur Benutzeroberfläche von [!DNL Assets view]  {#understand-interface-navigation}
+## Grundlegendes zur Benutzeroberfläche von [!DNL Assets view] {#understand-interface-navigation}
 
 [!DNL Assets view] bietet eine intuitive und benutzerfreundliche Benutzeroberfläche. Die klare Benutzeroberfläche erleichtert das Auffinden und Speichern von Assets und zugehörigen Informationen.
 
@@ -32,8 +32,7 @@ Wenn Sie sich bei [!DNL Assets view] anmelden, sehen Sie die folgende Oberfläch
 
 ## Durchsuchen und Anzeigen von Assets und Ordnern {#browse-repository}
 
-Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenleiste durchsuchen. Experience Manager Assets zeigt eine visuelle Vorschau des Ordnerinhalts auf der Ordnerminiaturansicht an, wenn Sie nach Inhalten suchen. Dies verbessert die Erkennung von Assets, die im AEM Assets-Repository verfügbar sind. Mit dieser Ordnerminiaturansicht sparen Sie Zeit bei der Suche nach bestimmten Assets in einem Ordner im AEM Assets-Repository.
-Beim Durchsuchen von Assets in einem Ordner können Sie die Benutzeroberfläche verwenden, um Asset-Miniaturansichten anzuzeigen und auf diese Weise das Repository visuell zu durchsuchen oder um Asset-Details anzuzeigen und so das gewünschte Asset schnell zu finden. Die in der linken Seitenleiste verfügbaren Optionen sind:
+Sie können die Ordner über die Hauptbenutzeroberfläche oder die linke Seitenleiste durchsuchen. Experience Manager Assets zeigt eine visuelle Vorschau des Ordnerinhalts auf der Ordnerminiaturansicht an, wenn Sie nach Inhalten suchen. Dies verbessert die Erkennung von Assets, die im AEM Assets-Repository verfügbar sind. Mit dieser Ordnerminiaturansicht sparen Sie Zeit bei der Suche nach bestimmten Assets in einem Ordner im AEM Assets-Repository.Beim Durchsuchen von Assets in einem Ordner können Sie die Benutzeroberfläche verwenden, um Asset-Miniaturansichten anzuzeigen und auf diese Weise das Repository visuell zu durchsuchen oder um Asset-Details anzuzeigen und so das gewünschte Asset schnell zu finden. Die in der linken Seitenleiste verfügbaren Optionen sind:
 
 * [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md): Assets enthält jetzt einen anpassbaren Arbeitsbereich, der Widgets für den bequemen Zugriff auf wichtige Bereiche der Assets-Benutzeroberfläche und Informationen bereitstellt, die für Sie am relevantesten sind. Diese Seite dient als zentrale Anlaufstelle, um einen Überblick über Ihre Arbeitselemente zu erhalten und schnellen Zugriff auf wichtige Workflows zu ermöglichen. Ein bequemerer Zugriff auf diese Optionen erhöht Ihre Effizienz und inhaltliche Geschwindigkeit.
 * [Aufgaben](/help/assets/my-workspace-assets-view.md): Sie können die Aufgaben, die Ihnen zugewiesen wurden, auf der Registerkarte **Meine Aufgaben** ansehen. Die Aufgaben, die von Ihnen erstellt wurden, können hingegen auf der Registerkarte **Zugewiesene Aufgaben** angesehen werden. Außerdem finden Sie die Aufgaben, die Sie abgeschlossen haben, auf der Registerkarte **Abgeschlossene Aufgaben**.
@@ -106,3 +105,22 @@ Other use cases after previewing.
 >[!MORELIKETHIS]
 >
 >* [Anzeigen von Versionen eines Assets](/help/assets/manage-organize-assets-view.md#view-versions).
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

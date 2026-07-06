@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung aktivi
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: b736af556c8580d005097c27cceba050b21a57c9
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 18%
+source-wordcount: '2182'
+ht-degree: 20%
 
 ---
 
@@ -38,7 +38,7 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 * Unterstützt eine skalierbare Governance über Marken und Regionen hinweg
 * Verbessert das Asset-Management
 
->[!VIDEO](https://video.tv.adobe.com/v/3475423/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Aktivieren der attributbasierten Zugriffssteuerung {#enable-attribute-based-access-control}
 
@@ -177,7 +177,7 @@ ABAC kann auch bei folgenden Szenarien helfen:
 
 >[!IMPORTANT]
 >
->Standardmäßig wird allen anderen Benutzergruppen, die nicht mit Regeln im [Arbeitsblatt“ angegeben &#x200B;](#configure-abac-spreadsheet), der Zugriff verweigert. Wenn ein(e) Benutzende(r) nicht zu einer Gruppe gehört, für die ABAC-Regeln definiert sind, kann er/sie nicht auf Assets zugreifen. Wenn einige Benutzende Zugriff auf alle Assets haben müssen, z. B. Administratoren, schließen Sie eine Gruppe mit einer Gruppen-ID in die Tabelle ein und geben Sie an, dass die Gruppe Zugriff auf alle Assets benötigt, damit Adobe sie entsprechend konfigurieren kann.
+>Standardmäßig wird allen anderen Benutzergruppen, die nicht mit Regeln im [Arbeitsblatt“ angegeben ](#configure-abac-spreadsheet), der Zugriff verweigert. Wenn ein(e) Benutzende(r) nicht zu einer Gruppe gehört, für die ABAC-Regeln definiert sind, kann er/sie nicht auf Assets zugreifen. Wenn einige Benutzende Zugriff auf alle Assets haben müssen, z. B. Administratoren, schließen Sie eine Gruppe mit einer Gruppen-ID in die Tabelle ein und geben Sie an, dass die Gruppe Zugriff auf alle Assets benötigt, damit Adobe sie entsprechend konfigurieren kann.
 
 ## Unterstützte Regelkonstrukte {#supported-rule-constructs}
 
@@ -237,3 +237,21 @@ ABAC ist für Unternehmen mit großen Teams nützlich, da es einen granularen, r
 ### Wie sollten Administratoren die ABAC-Tabelle für AEM Assets Content Hub vorbereiten, bevor sie sie an den Adobe-Support senden?
 
 Administratoren sollten Benutzergruppen in der Adobe Admin Console erstellen, ihre Gruppen-IDs notieren, die Berechtigungen und Bedingungen für jede Gruppe in der Tabelle klar definieren, sicherstellen, dass alle Metadateneigenschaften den entsprechenden Schemata korrekt zugeordnet sind, und die Spalte „Kommentare“ verwenden, um den geschäftlichen Zweck jeder Regel zu verdeutlichen.
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

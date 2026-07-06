@@ -6,10 +6,10 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 99%
+source-wordcount: '1429'
+ht-degree: 95%
 
 ---
 
@@ -20,17 +20,15 @@ ht-degree: 99%
 | AEM 6.5 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=de) |
 | AEM as a Cloud Service | Dieser Artikel |
 
-Mit einem Metadatenprofil können Sie standardmäßige Metadaten auf Assets in einem Ordner anwenden. Erstellen Sie ein Metadatenprofil und wenden Sie es auf einen Ordner an. Jedes Asset, das Sie nachfolgend in den Ordner hochladen, übernimmt die standardmäßigen Metadaten, die Sie in „Metadatenprofil“ konfiguriert haben.
+Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordner anwenden. Erstellen Sie ein Metadatenprofil und wenden Sie es auf einen Ordner an. Jedes Asset, das Sie anschließend in den Ordner hochladen, erbt die Standardmetadaten, die Sie im Metadatenprofil konfiguriert haben.
 
-Ein wichtiges Konzept zur Verwendung von Profilen in Experience Manager Assets ist deren Zuweisung zu Ordnern. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden.
-Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
+Ein wichtiges Konzept zur Verwendung von Profilen in Experience Manager Assets ist deren Zuweisung zu Ordnern. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden.Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden.
 
 ## Hinzufügen eines Metadatenprofils {#adding-a-metadata-profile}
 
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]** und klicken Sie dann auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Titel für das Metadatenprofil ein, etwa „Beispielmetadaten“, und tippen Sie auf **[!UICONTROL Senden]**. Es wird das Formular zum Bearbeiten für das Metadatenprofil angezeigt.
-1. Klicken Sie auf eine Komponente und konfigurieren Sie ihre Eigenschaften in der Registerkarte **[!UICONTROL Einstellungen]**. Klicken Sie beispielsweise auf die **[!UICONTROL Beschreibungskomponente]** und bearbeiten Sie die Eigenschaften.
-Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Beschreibung]**:
+1. Klicken Sie auf eine Komponente und konfigurieren Sie ihre Eigenschaften in der Registerkarte **[!UICONTROL Einstellungen]**. Klicken Sie beispielsweise auf die **[!UICONTROL Beschreibungskomponente]** und bearbeiten Sie die Eigenschaften.Bearbeiten Sie die folgenden Eigenschaften für die Komponente **[!UICONTROL Beschreibung]**:
 
    * **[!UICONTROL Feldbezeichnung]**: Der Anzeigename der Metadateneigenschaft. Dieser dient lediglich als Referenz für den Benutzer.
    * **[!UICONTROL Zu Eigenschaft zuordnen]**: Der Wert dieser Eigenschaft liefert den relativen Pfad oder Namen zum Asset-Knoten für dessen Speicherort im Repository. Der Wert sollte immer mit `./` beginnen, weil dies anzeigt, dass sich der Pfad unter dem Knoten des Assets befindet.
@@ -133,16 +131,20 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **Tools** entfernen. W
 
 **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+

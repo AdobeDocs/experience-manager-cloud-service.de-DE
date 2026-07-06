@@ -5,9 +5,9 @@ role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1469'
 ht-degree: 95%
 
 ---
@@ -31,8 +31,7 @@ Basierend auf den verschiedenen Aspekten von Daten werden Metadaten als technisc
 
 ### Technische Metadaten
 
-Technische Metadaten umfassen die technischen Aspekte eines Assets. Diese Art von Metadaten ist für Benutzende entscheidend, um die inhärenten Merkmale digitaler Assets zu verstehen und so eine effiziente Verarbeitung und Nutzung zu ermöglichen.
-Sie enthalten Details wie:
+Technische Metadaten umfassen die technischen Aspekte eines Assets. Diese Art von Metadaten ist für Benutzende entscheidend, um die inhärenten Merkmale digitaler Assets zu verstehen und so eine effiziente Verarbeitung und Nutzung zu ermöglichen.Sie enthalten Details wie:
 
 * Dateigröße
 * Format
@@ -89,8 +88,7 @@ Um konsistente Ergebnisse im gesamten Repository sicherzustellen, planen Sie die
 
 ### Erstellen eines Metadaten-Governance-Plans
 
-Data Governance stellt sicher, dass die Metadatenverwaltung des Unternehmens auf die allgemeinen Geschäftsziele abgestimmt ist.
-Die Governance-Strategie kann Folgendes umfassen:
+Data Governance stellt sicher, dass die Metadatenverwaltung des Unternehmens auf die allgemeinen Geschäftsziele abgestimmt ist.Die Governance-Strategie kann Folgendes umfassen:
 
 * Festlegen von Richtlinien und Verfahren für die Daten- und Metadatenverwaltung.
 * Festlegen von Standards für Datenqualität und -integrität.
@@ -118,8 +116,7 @@ Im Folgenden sind einige Best Practices aufgeführt, die Sie befolgen sollten:
 
   Verwenden Sie beispielsweise konsistent Begriffe wie *product_launch* oder *event_promotion* beim Taggen von Bildern mit Designs, um die systematische Reihenfolge beizubehalten.
 
-* **Achten Sie stets auf richtige und vollständige Angaben:** Damit Metadaten konsistent bleiben, ist es entscheidend, über verschiedene Quellen hinweg richtige, vollständige und aufeinander ausgerichtete Angaben zu machen.
-Überprüfen Sie beispielsweise beim Hinzufügen von Metadaten zu einem PDF-Dokument, ob Details wie Autorennamen und Suchbegriffe richtig und vollständig sind.
+* **Achten Sie stets auf richtige und vollständige Angaben:** Damit Metadaten konsistent bleiben, ist es entscheidend, über verschiedene Quellen hinweg richtige, vollständige und aufeinander ausgerichtete Angaben zu machen.Überprüfen Sie beispielsweise beim Hinzufügen von Metadaten zu einem PDF-Dokument, ob Details wie Autorennamen und Suchbegriffe richtig und vollständig sind.
 
 #### Video: Hinzufügen von Massenmetadaten zu Assets
 
@@ -136,10 +133,8 @@ Berücksichtigen Sie die folgenden Best Practices, um die Durchsuchbarkeit Ihrer
    1. Navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Datei]** > **[!UICONTROL [Asset-Ordner]]**.
    1. Wählen Sie das Asset aus, für das Sie die Metadaten aktualisieren möchten, und klicken Sie auf **[!UICONTROL Eigenschaften]**.
    1. Navigieren Sie zur Registerkarte **[!UICONTROL Erweitert]** und klicken Sie unter **[!UICONTROL Für Suchbegriffe erhöhen]** auf **[!UICONTROL Hinzufügen]**. <br>Sie müssen das Standard-Metadatenschema verwenden, um die Suchbegriffe zu erhöhen.
-   1. Geben Sie den Suchbegriff ein, für den Sie die Suche optimieren möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.<br>
-Sie können mehrere Keywords hinzufügen und sie nach Ihrer Priorität anordnen.
-   1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
-Verwenden Sie die hinzugefügten Suchbegriffe, um nach dem Asset zu suchen. Das Asset wird unter den obersten Suchergebnissen angezeigt.
+   1. Geben Sie den Suchbegriff ein, für den Sie die Suche optimieren möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.Sie können mehrere Keywords hinzufügen und sie nach Ihrer Priorität anordnen.
+   1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.Verwenden Sie die hinzugefügten Suchbegriffe, um nach dem Asset zu suchen. Das Asset wird unter den obersten Suchergebnissen angezeigt.
 
   Informieren Sie sich über das [Optimieren der Suche in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=de).
 
@@ -156,8 +151,7 @@ Verwenden Sie die hinzugefügten Suchbegriffe, um nach dem Asset zu suchen. Das 
 
 ### Einfache und leicht verständliche Metadaten
 
-Vereinfachen Sie Metadaten für eine bessere Governance und Benutzerakzeptanz. Halten Sie sie einfach und leicht verständlich und fordern Sie die Benutzenden auf, wichtige Informationen hinzuzufügen.
-Probieren Sie die folgenden Best Practices aus, um die Metadaten zu vereinfachen:
+Vereinfachen Sie Metadaten für eine bessere Governance und Benutzerakzeptanz. Halten Sie sie einfach und leicht verständlich und fordern Sie die Benutzenden auf, wichtige Informationen hinzuzufügen.Probieren Sie die folgenden Best Practices aus, um die Metadaten zu vereinfachen:
 
 * **Optimieren Sie die Eigenschaftsoptionen:** Konzentrieren Sie sich auf die Hervorhebung wichtiger Eigenschaften, ohne die Benutzenden mit zu vielen auszufüllenden Metadatenfeldern zu belasten. Nehmen Sie beispielsweise beim Hinzufügen von Metadaten für ein Bild nur Schlüsselfelder wie Titel, Beschreibung und Tags auf, um eine effektive Kategorisierung zu ermöglichen.
 
@@ -172,3 +166,22 @@ Untersuchen Sie die Content-Lieferkette, um Metadatenquellen zu finden und alle 
 Vermitteln Sie Ziele, Fortschritte, Meilensteine und Herausforderungen frühzeitig, um Beiträge und die Zusammenarbeit aller Beteiligten zu ermöglichen. Fördern Sie die Zusammenarbeit im gesamten Unternehmen, um effiziente Prozesse und wertvolle Metadaten zu erstellen.
 
 Erfahren Sie mehr über [Metadaten und zugehörige Konzepte](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=de) zur effektiven Verwaltung Ihrer Experience Manager-Metadaten.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
