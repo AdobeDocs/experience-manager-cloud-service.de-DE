@@ -493,7 +493,7 @@ uploadConfig: {
      }, 
 ```
 
-*Weitere Eigenschaften sind u. a. `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Weitere Informationen finden [ unter „Eigenschaften ](/help/assets/content-advisor-properties.md) Inhaltsratgebers“.
+*Weitere Eigenschaften sind u. a. `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Weitere Informationen finden [&#x200B; unter „Eigenschaften &#x200B;](/help/assets/content-advisor-properties.md) Inhaltsratgebers“.
 
 ### Hochladen mit Metadaten {#upload-with-metadata}
 

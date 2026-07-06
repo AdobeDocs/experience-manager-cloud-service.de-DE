@@ -1,6 +1,6 @@
 ---
 title: Massenbearbeitung von Metadaten in [!DNL Assets View]
-description: Erfahren Sie, wie Sie einen vordefinierten Satz von standardmäßigen Metadatenfeldern für mehrere Assets aktualisieren können, die gleichzeitig in der [DNL! Assets View] verfügbar sind.
+description: Erfahren Sie, wie Sie einen vordefinierten Satz von standardmäßigen Metadatenfeldern für mehrere Assets aktualisieren können, die gleichzeitig in der [!DNL ! Assets View] verfügbar sind.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4

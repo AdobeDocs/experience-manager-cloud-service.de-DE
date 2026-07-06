@@ -171,9 +171,9 @@ const assetSelectorProps = {
 <AssetSelector {...assetSelectorProps} />
 ```
 
-In `contentFragmentSelectorProps` können Sie auf jede der verfügbaren Eigenschaften verweisen (Eigenschaften [ Inhaltsfragmentauswahl](/help/headless/content-fragment-selector/properties.md).
+In `contentFragmentSelectorProps` können Sie auf jede der verfügbaren Eigenschaften verweisen (Eigenschaften [&#x200B; Inhaltsfragmentauswahl](/help/headless/content-fragment-selector/properties.md).
 
-Informationen zur Integration von Content Advisor in Angular-, React- und JavaScript-Anwendungen finden Sie unter [ für die Integration von Content Advisor](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples).
+Informationen zur Integration von Content Advisor in Angular-, React- und JavaScript-Anwendungen finden Sie unter [&#x200B; für die Integration von Content Advisor](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples).
 
 
 **Siehe auch**
