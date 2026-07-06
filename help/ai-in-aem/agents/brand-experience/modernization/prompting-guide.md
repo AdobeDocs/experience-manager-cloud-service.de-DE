@@ -4,9 +4,9 @@ description: Dieses Handbuch enthält Tipps für eine effektive Eingabeaufforder
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
+source-git-commit: 2b3471df0910f08878df7fbce6431be349a2c954
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3312'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Verwenden Sie diese Eingabeaufforderung, wenn Sie Inhalte von einer bestehenden 
 
 ### Site-Katalog {#site-catalog}
 
-Verwenden Sie diese Eingabeaufforderung, um eine vorhandene Website zu analysieren, um deren Skalierung, Vorlagen und Blockvarianten zu verstehen, bevor Sie eine Migration beginnen. Die Ergebnisse können für Massenimporte [&#x200B; werden](#bulk-import)
+Verwenden Sie diese Eingabeaufforderung, um eine vorhandene Website zu analysieren, um deren Skalierung, Vorlagen und Blockvarianten zu verstehen, bevor Sie eine Migration beginnen. Die Ergebnisse können für Massenimporte [ werden](#bulk-import)
 
 #### Beispiel-Eingabeaufforderungen {#example-prompts-site-catalog}
 
@@ -167,20 +167,18 @@ Verwenden Sie diese Eingabeaufforderung, um visuelles Design aus einer Quell-Sit
 * „Migrieren des Designs aus `https://example.com`&quot;
 * „Design-Token extrahieren“
 * „Den Heldenblock gestalten“
+* „Alle Blöcke formatieren“
 
 #### Was Sie wissen sollten {#wtk-design}
 
 * Die Designmigration umfasst zwei Phasen:
-   1. Phase 1 (standortweit) extrahiert Folgendes nach `styles/styles.css`:
-      * Farbpalette und Akzentfarben weltweit
-      * Typografie-System (Schriftarten, Größen, Gewichtungen)
-      * Abstandssystem (Abstand, Ränder, Lücken)
-      * Abschnittshintergründe (hell, dunkel, farbig)
-      * Stile der Basiskomponenten (Schaltflächen, Links, Bilder)
-      * Ausgaben an
-   1. Phase 2 migriert einzelne Blockstile und erstellt blockspezifische CSS-Dateien in `/blocks/{name}/{name}.css`.
+   1. Phase 1 (standortweit) generiert `styles/brand.css` und `styles/styles.css`:
+      * `brand.css` enthält Design-Token als benutzerdefinierte CSS-Eigenschaften (Schriftarten, Farben, Abstände, Überschriftengrößen).
+      * `styles.css` importiert `brand.css` und wendet die Token auf Standardinhalte (Überschriften, Absätze, Schaltflächen, Links, Abschnittshintergründe) an.
+      * Wenn Ihr Projekt bereits über eine `brand.css` verfügt, fordern Sie den Agenten auf, diese zu verwenden, anstatt sie aus der Quelle zu extrahieren.
+   1. Phase 2 formatiert einzelne Blöcke parallel und erstellt blockspezifisches CSS in `/blocks/{name}/{name}.css`, wobei auf die Token aus `brand.css` verwiesen wird.
 * Um die Blockformatierung (Phase 2) durchzuführen, muss zunächst das Site-Wide Design (Phase 1) abgeschlossen sein.
-   * Das globale Designsystem stellt benutzerdefinierte CSS-Eigenschaften bereit, die Verweise blockieren.
+* Phase 2 erreicht 80-90 % Stiltreue auf Blockebene in einem einzigen Durchgang.
 * Geschätzte Zeit:
    * Phase 1: 5-10 Minuten
    * Phase 2: 10-15 Minuten
@@ -197,21 +195,38 @@ Verwenden Sie diese Eingabeaufforderung, um einzelne migrierte Blöcke zu validi
 
 #### Was Sie wissen sollten {#wtk-block-critique}
 
-* Die Blockkritik vergleicht einen migrierten Block mit seiner ursprünglichen Quelle und wendet iterativ CSS-Korrekturen an, bis eine visuelle Ähnlichkeit von 85 % erreicht ist oder drei Iterationen abgeschlossen sind.
+* Die Blockkritik vergleicht einen migrierten Block mit seiner ursprünglichen Quelle und wendet Fehlerbehebungen an, bis eine 85%ige Ähnlichkeit erreicht ist oder drei Iterationen abgeschlossen sind.
 * Für die Kenntnis muss der Block zuerst durch Seitenmigration erstellt worden sein.
-* Eine Blockkritik folgt einem sechsstufigen Workflow:
-   1. Erfasst den ursprünglichen Block aus der Quellseite mithilfe einer XPath-Auswahl.
-   1. Es initialisiert die Kritik-Sitzung.
-   1. Es überprüft den Originalblock (Screenshots, Stile, HTML).
-   1. Er überprüft den migrierten Block.
-   1. Es vergleicht Elemente und generiert einen Ähnlichkeitswert mit CSS-Korrekturen.
-   1. Es werden Fehlerbehebungen vorgenommen und die Prüfungen wiederholt, bis das 85-%-Ziel erreicht ist.
-* Jede Iteration zeigt einen vollständigen Kritikbericht mit allen Unterschieden an, wendet alle CSS-Korrekturen an (priorisiert durch visuelle Auswirkungen), prüft in der Vorschau, überprüft erneut und zeigt Verbesserungsmetriken an.
+* Die Kritik erkennt und behebt sowohl **inhaltliche/strukturelle Probleme** als auch **Stilprobleme**:
+   * Inhalt/Struktur: fehlende Überschriften, Absätze, Links, falsche Anzahl von Tabellenzeilen/Zellen - Fehlerkorrektur durch Aktualisieren der Parser und erneutes Importieren.
+   * Stile: CSS-Unterschiede in Farben, Abständen, Typografie, Layout - werden durch die Aktualisierung von Block-CSS behoben.
+* Die Kaskadierung reparieren läuft in der richtigen Reihenfolge: globale Stile → Abschnittstransformatoren → Inhalts-/Struktur-Parser → CSS blockieren. Jede Ebene wird erneut importiert und bewertet, bevor sie zur nächsten Ebene verschoben wird.
 * Verwenden Sie die Blockkritik, nachdem [Design-Migration](#design-migration) abgeschlossen ist.
+
+### Site-Kritik {#site-critique}
+
+Verwenden Sie diese Eingabeaufforderung, um alle migrierten Blöcke auf Ihrer Site in einem einzigen Durchgang zu validieren, was ideal für mehrseitige Migrationen ist.
+
+#### Beispiel-Eingabeaufforderungen {#example-site-critique}
+
+* „Kritikstelle“
+* „Validieren aller Blöcke auf der migrierten Site“
+
+#### Was Sie wissen sollten {#wtk-site-critique}
+
+* Site Critique validiert alle Blöcke über alle migrierten Vorlagen hinweg mithilfe paralleler Subagenten, einen pro Vorlage.
+* Es wird dieselbe Fehlerbehebung wie bei der Blockkritik angewendet (globale Stile → Abschnittstransformatoren → Inhalts-/Struktur-Parser → Blockieren von CSS), jedoch gleichzeitig auf alle Seiten.
+* Fehlerbehebungen werden dedupliziert - Wenn dasselbe Problem auf mehreren Seiten auftritt, die denselben Block verwenden, wird die Fehlerbehebung einmal angewendet.
+* Wenn `brand.css` noch nicht vorhanden ist, läuft die Kritik im reinen Inhaltsstruktur-Modus (Parser und Transformatoren werden repariert, ohne dass ein Stil verwendet wird).
+* Site-Kritik ist der empfohlene Ansatz nach der Designmigration für mehrseitige Projekte.
+* Der folgende Workflow wird empfohlen:
+   1. Migrieren von Seiten (einzeln oder stapelweise).
+   1. Führen Sie die Designmigration aus.
+   1. Führen Sie `critique site` aus, um verbleibende Lücken in allen Vorlagen zu validieren und automatisch zu beheben.
 
 ### Seitenkritik {#page-critique}
 
-Verwenden Sie diese Eingabeaufforderung, um die gesamte migrierte Seite im Hinblick auf ihre vollständige visuelle Wiedergabetreue mit der ursprünglichen Website zu überprüfen.
+Verwenden Sie diese Eingabeaufforderung, um eine einzelne migrierte Seite im Hinblick auf ihre visuelle Wiedergabetreue mit der ursprünglichen Website zu validieren.
 
 #### Beispiel-Eingabeaufforderungen {#example-page-critique}
 
@@ -220,21 +235,10 @@ Verwenden Sie diese Eingabeaufforderung, um die gesamte migrierte Seite im Hinbl
 
 #### Was Sie wissen sollten {#wtk-page-critique}
 
-* Die Seitenkritik führt einen ganzseitigen visuellen Vergleich zwischen der ursprünglichen und der migrierten Seite durch und iteriert, bis ein Ähnlichkeitsziel von 85 % erreicht ist oder drei Iterationen abgeschlossen sind.
-* Eine Seitenkritik hat einen fünfstufigen Workflow:
-   1. Es initialisiert eine Kritiksitzung.
-   1. Es werden alle Elemente auf der Originalseite überprüft.
-   1. Es werden alle Elemente auf der migrierten Seite überprüft.
-   1. Er vergleicht und generiert einen Ähnlichkeitswert mit priorisierten CSS-Fehlerbehebungen.
-   1. Es werden Fehlerbehebungen vorgenommen und die Prüfungen wiederholt, bis das 85-%-Ziel erreicht ist.
-* Eine Seitenkritik benötigt die URL der Quellseite und den migrierten Pfad (z. B. &quot;/about„) als Eingabe.
-* Verwenden Sie die Seitenkritik bei der Validierung der Gesamtseitentreue oder der gleichzeitigen Validierung mehrerer Blöcke.
-* [Blockkritik verwenden](#block-critique) für fokussierte Validierung auf bestimmte Komponenten.
-* Der folgende Workflow wird empfohlen:
-   1. Migrieren einer Seite.
-   1. Wenden Sie ein Design an.
-   1. Blockkritik auf Schlüsselblöcke ausführen
-   1. Führen Sie eine Seitenkritik zur vollständigen Validierung aus.
+* Die Seitenkritik validiert eine einzelne Seite und wendet dieselbe Kaskadenkorrektur (globale → Abschnitte → Inhalt → Stil) bis zu einer Ähnlichkeit von 85 % oder drei Iterationen an.
+* Erfordert die Quellseiten-URL und den migrierten Pfad (z. B. &quot;/about„) als Eingabe.
+* Verwenden Sie die Seitenkritik für die Verfeinerung einzelner Seiten nach der Seitenkritik oder für die zielgerichtete Validierung.
+* Verwenden Sie bei mehrseitigen Projekten [Site Critique](#site-critique). Alle Seiten werden automatisch verarbeitet und Fehlerbehebungen werden automatisch dedupliziert.
 
 ### FIGMA-Blockmigration {#figma-block-migration}
 
