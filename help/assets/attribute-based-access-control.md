@@ -38,7 +38,7 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 * Unterstützt eine skalierbare Governance über Marken und Regionen hinweg
 * Verbessert das Asset-Management
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475423/?captions=ger&learn=on&enablevpops){transcript=true}
 
 ## Aktivieren der attributbasierten Zugriffssteuerung {#enable-attribute-based-access-control}
 
