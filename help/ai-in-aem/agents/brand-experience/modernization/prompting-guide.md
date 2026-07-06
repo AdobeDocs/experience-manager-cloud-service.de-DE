@@ -81,7 +81,7 @@ Verwenden Sie diese Eingabeaufforderung, wenn Sie Inhalte von einer bestehenden 
 
 ### Site-Katalog {#site-catalog}
 
-Verwenden Sie diese Eingabeaufforderung, um eine vorhandene Website zu analysieren, um deren Skalierung, Vorlagen und Blockvarianten zu verstehen, bevor Sie eine Migration beginnen. Die Ergebnisse können für Massenimporte [ werden](#bulk-import)
+Verwenden Sie diese Eingabeaufforderung, um eine vorhandene Website zu analysieren, um deren Skalierung, Vorlagen und Blockvarianten zu verstehen, bevor Sie eine Migration beginnen. Die Ergebnisse können für Massenimporte [&#x200B; werden](#bulk-import)
 
 #### Beispiel-Eingabeaufforderungen {#example-prompts-site-catalog}
 
