@@ -249,7 +249,7 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
 ## Unterstützte Dateiformate {#supported-file-formats-import-assets}
 
-Adobe Express unterstützt nativ die Formate unter [Überprüfen der Mindestanforderungen an das Bild](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets unterstützt jedoch die folgenden Formattypen:
+Adobe Express unterstützt nativ die Formate unter [Überprüfen der Mindestanforderungen an das Bild](https://helpx.adobe.com/de/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets unterstützt jedoch die folgenden Formattypen:
 
 | Unterstütztes Format | Max. Abmessungen/Auflösung | Maximale Dateigröße |
 |------------------|---------------------------------------------|---------------|
