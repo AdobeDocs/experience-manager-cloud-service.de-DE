@@ -3,10 +3,10 @@ title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 67%
+source-wordcount: '1807'
+ht-degree: 68%
 
 ---
 
@@ -109,8 +109,8 @@ Die folgende Tabelle zeigt die Voraussetzungen für die Anzeige der Dropdown-Lis
 
 Nachdem Sie von der Assets-Ansicht zur Admin-Ansicht gewechselt haben, können Sie Ordnereinstellungen einrichten, damit alle neuen Assets, die zum Ordner hinzugefügt werden, automatisch genehmigt werden.
 
-Sie können wie folgt zwischen der Admin- und Assets-Ansicht wechseln:
-![Übersicht über „Mein Arbeitsbereich“](assets/assets-view.png)
+Sie können wie folgt zwischen der Admin- und der Assets-Ansicht wechseln:
+![Übersicht über das Dashboard „Mein Arbeitsbereich“](assets/assets-view.png)
 
 Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene Assets in [!DNL Experience Manager Admin view] zu automatisieren:
 
@@ -188,8 +188,26 @@ Wenn das Feld **Validierungsziel** auf der Detailseite für Assets-Asset anzeige
 
 ### Wie kann die Genehmigung für neu aufgenommene Assets in der AEM Assets Admin-Ansicht automatisiert werden?
 
-Erstellen Sie einen Ordner in der Autorenumgebung, navigieren Sie zu **Tools** > **Assets** > **Metadatenprofile** und erstellen und bearbeiten Sie ein Metadatenprofil. Fügen Sie ein einzeiliges Textfeld hinzu, beschriften Sie es mit **Approved Assets**, ordnen Sie es &#39; zu./jcr:content/metadata/dam:status&#39; festgelegt und seinen Standardwert auf `approved` festgelegt. Wenden Sie das Metadatenprofil auf den Ordner an. Dadurch werden neue Assets, die zum Ordner hinzugefügt werden, automatisch genehmigt.
+Erstellen Sie einen Ordner in der Autorenumgebung, navigieren Sie zu **Tools** > **Assets** > **Metadatenprofile** und erstellen und bearbeiten Sie ein Metadatenprofil. Fügen Sie ein einzeiliges Textfeld hinzu, beschriften Sie es mit **Genehmigte Assets**, ordnen Sie es &quot;./jcr:content/metadata/dam:status&quot; zu und legen Sie seinen Standardwert auf `approved` fest. Wenden Sie das Metadatenprofil auf den Ordner an. Dadurch werden neue Assets, die zum Ordner hinzugefügt werden, automatisch genehmigt.
 
 ### Wer kann auf genehmigte Assets in AEM Assets Content Hub zugreifen und welche Steuerelemente sind vorhanden?
 
 Genehmigte Assets stehen Benutzenden zur Verfügung, die derselben Organisation in AEM Assets Content Hub angehören. Strenge Kontrollen gewährleisten, dass nur die neuesten, genehmigten Versionen verfügbar sind, was zur Aufrechterhaltung der Markenkonsistenz und -sicherheit beiträgt.
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

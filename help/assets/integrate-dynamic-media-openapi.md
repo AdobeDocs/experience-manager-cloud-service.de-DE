@@ -4,10 +4,10 @@ description: Integrieren von Content Advisor mit verschiedenen Adobe-, Nicht-Ado
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: d5d3ff8d2bbeea8a10f950f533e4b104907ab387
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 76%
+source-wordcount: '897'
+ht-degree: 77%
 
 ---
 
@@ -42,8 +42,7 @@ Mit dieser Konfiguration können Sie alle genehmigten Assets ohne Ordner oder al
 
 ### Erstellen einer dynamischen Bereitstellungs-URL aus genehmigten Assets {#create-dynamic-media-url}
 
-Nachdem Sie Content Advisor eingerichtet haben, wird ein Schema von Objekten verwendet, um eine dynamische Bereitstellungs-URL aus den ausgewählten Assets zu erstellen.
-Hier ist ein Beispiel für ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
+Nachdem Sie Content Advisor eingerichtet haben, wird ein Schema von Objekten verwendet, um eine dynamische Bereitstellungs-URL aus den ausgewählten Assets zu erstellen.Hier ist ein Beispiel für ein Schema eines Objekts aus einem Array von Objekten, das bei Auswahl eines Assets empfangen wird:
 
 ```
 {
@@ -68,7 +67,7 @@ Der Carrier für alle ausgewählten Assets ist die `handleSelection`-Funktion, d
 #### API-Spezifikation für die Bereitstellung genehmigter Assets {#approved-assets-delivery-api-specification}
 
 URL-Format:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
+
 
 Dabei gilt Folgendes:
 
@@ -106,8 +105,7 @@ Im Folgenden werden die beiden Möglichkeiten zum Durchlaufen des JSON-Objekts b
 
 ![Dynamische Versand-URL](assets/dynamic-delivery-url.png)
 
-* **Miniaturansicht:** Bei Miniaturansichten kann es sich um Bilder und Assets wie PDF, Videos usw. handeln. Sie können jedoch die Höhe- und Breitenattribute der Miniaturansicht eines Assets als Ausgabedarstellung für die dynamische Bereitstellung verwenden.
-Der folgende Satz von Ausgabedarstellungen kann für Assets vom Typ PDF verwendet werden:
+* **Miniaturansicht:** Bei Miniaturansichten kann es sich um Bilder und Assets wie PDF, Videos usw. handeln. Sie können jedoch die Höhe- und Breitenattribute der Miniaturansicht eines Assets als Ausgabedarstellung für die dynamische Bereitstellung verwenden.Der folgende Satz von Ausgabedarstellungen kann für Assets vom Typ PDF verwendet werden:
 Sobald eine PDF-Datei im Sidekick ausgewählt wurde, bietet der Auswahlkontext die folgenden Informationen. Nachstehend wird beschrieben, wie Sie das JSON-Objekt durchlaufen:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -125,8 +123,7 @@ Sobald eine PDF-Datei im Sidekick ausgewählt wurde, bietet der Auswahlkontext d
 
 Im obigen Screenshot muss die Versand-URL der Original-Ausgabedarstellung der PDF-Datei in das Zielerlebnis integriert werden, wenn eine PDF-Datei erforderlich ist und nicht ihre Miniaturansicht. Zum Beispiel: `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **Video:** Sie können die Video-Player-URL für die Assets vom Typ „Video“ verwenden, die einen eingebetteten iFrame verwenden. Sie können die folgenden Array-Ausgabedarstellungen im Zielerlebnis verwenden:
-  <!--![Video dynamic delivery url](image.png)-->
+* **Video:** Sie können die Video-Player-URL für die Assets vom Typ „Video“ verwenden, die einen eingebetteten iFrame verwenden. Sie können die folgenden Array-Ausgabedarstellungen im Zielerlebnis verwenden:  <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
@@ -157,3 +154,21 @@ In Content Advisor für Dynamic Media mit OpenAPI-Funktionen wird beispielsweise
 
 Um den Namen abzurufen, muss eine einmalige Aktivität durchgeführt werden. Führen Sie einen Such-API-Aufruf für das Asset aus und rufen Sie den Eigenschaftsnamen (also den Bucket) ab.
 
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

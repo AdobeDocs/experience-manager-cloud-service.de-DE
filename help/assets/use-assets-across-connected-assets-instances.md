@@ -7,9 +7,9 @@ feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '3875'
+source-wordcount: '3984'
 ht-degree: 99%
 
 ---
@@ -45,7 +45,7 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Bereitstellung.
-* Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] funktioniert mit [!DNL Experience Manager] 6.5. Weitere Informationen dazu, wie diese Funktion in [!DNL Experience Manager] 6.5 funktioniert, finden Sie unter [Connected Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=de).
+* Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] funktioniert mit [!DNL Experience Manager] 6.5. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] 6.5 finden Sie unter [Connected Assets in [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=de).
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
   |---|---|---|---|
@@ -141,8 +141,8 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 
 Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen und der [!DNL Assets]-Bereitstellung überprüfen.
 
-![Verbindungstest für konfigurierte Connected Assets [!DNL Sites]](assets/connected-assets-multiple-config.png)
-*Abbildung: Verbindungstest für konfigurierte Connected Assets [!DNL Sites].*
+![Verbindungstest für Connected Assets konfiguriert [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*Abbildung: Verbindungstest für konfigurierte Connected Assets-[!DNL Sites].*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -371,15 +371,18 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 
 **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Assets durchsuchen](search-assets.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

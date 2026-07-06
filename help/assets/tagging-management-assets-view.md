@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1811'
 ht-degree: 99%
 
 ---
@@ -66,8 +66,7 @@ Führen Sie die folgenden Schritte aus, um einen Namespace zu erstellen:
 Führen Sie die folgenden Schritte aus, um Tags zu einem Namespace hinzuzufügen:
 
 1. Gehen Sie zum **[!UICONTROL Taxonomie-Management]**.
-1. Wählen Sie den Namespace aus und klicken Sie auf `Create`, um das Tag auf der obersten Ebene unter dem Namespace zu erstellen. Wenn Sie ein untergeordnetes Tag unter einem Tag erstellen müssen, das in einem Namespace vorhanden ist, wählen Sie das Tag aus und klicken Sie dann auf `Create`.
-   ![Hierarchie der Tags](assets/hierarchy-of-tags.png)
+1. Wählen Sie den Namespace aus und klicken Sie auf `Create`, um das Tag auf der obersten Ebene unter dem Namespace zu erstellen. Wenn Sie ein untergeordnetes Tag unter einem Tag erstellen müssen, das in einem Namespace vorhanden ist, wählen Sie das Tag aus und klicken Sie dann auf `Create`.   ![Hierarchie der Tags](assets/hierarchy-of-tags.png)
 
    In diesem Beispiel stellt das Bild auf der linken Seite das Tag dar, das im Feld `Path` direkt unter dem Namespace `automobile-four-wheeler` angezeigt wird. Das Bild rechts ist ein Beispiel für untergeordnete Tags, die innerhalb eines Tags hinzugefügt werden, da neben dem Namespace mehr Tag-Namen (nämlich `jeep` und `jeep-meridian`) im Feld `Path` angezeigt werden.
 1. Geben Sie den Titel, den Namen und die Beschreibung für das Tag an und klicken Sie auf `Save`.
@@ -145,8 +144,7 @@ Sehen Sie sich dieses kurze Video an, um zu erfahren, wie Sie die Tags-Komponent
 
    ![Tagging von Assets](assets/adding-tags-to-assets.png)
 
-1. Wählen Sie mindestens ein Tag aus. Das untergeordnete Tag wird automatisch zusammen mit dem übergeordneten Tag oder Namespace ausgewählt.
-In den Assets Essentials geänderte Tags werden auch in Assets as a Cloud Service angewendet.
+1. Wählen Sie mindestens ein Tag aus. Das untergeordnete Tag wird automatisch zusammen mit dem übergeordneten Tag oder Namespace ausgewählt.In den Assets Essentials geänderte Tags werden auch in Assets as a Cloud Service angewendet.
 
 ## Hinzufügen von Tags zur Blockierungsliste {#blocklist-essentials}
 
@@ -206,3 +204,22 @@ Falls Sie eine Vorlage für blockierte Tags herunterladen möchten, gehen Sie wi
 1. Klicken Sie auf **[!UICONTROL Vorlage herunterladen]**.
 1. Wählen Sie den entsprechenden Speicherort für die CSV-Datei aus. Sie können die Datei auch gemäß den Anforderungen umbenennen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Vorlagen für blockierte Tags im CSV-Format werden am ausgewählten Speicherort heruntergeladen.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

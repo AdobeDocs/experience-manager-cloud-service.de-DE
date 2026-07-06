@@ -4,10 +4,10 @@ description: Freigeben von Assets in [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 44%
+source-wordcount: '976'
+ht-degree: 46%
 
 ---
 
@@ -93,5 +93,20 @@ Ja, Sie können in AEM Assets Content Hub Ablaufdaten für private und öffentli
 Empfänger, die einen freigegebenen Asset-Link erhalten, können diesen in ihrem Browser öffnen, um die bereitgestellten Assets in der Vorschau anzuzeigen, auszuwählen und herunterzuladen. Wenn Asset-Ausgabedarstellungen in AEM Assets Content Hub aktiviert sind, können Empfängerinnen und Empfänger auswählen, welche Ausgabedarstellungen (z. B. original oder statisch) sie herunterladen möchten. Die Assets und Ausgabedarstellungen werden als ZIP-Datei heruntergeladen, und die Metadaten können durch Klicken auf die Miniaturansicht des Assets angezeigt werden. Der Link bleibt bis zum festgelegten Ablaufdatum funktionsfähig.
 
 
+**Siehe auch**
 
-
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

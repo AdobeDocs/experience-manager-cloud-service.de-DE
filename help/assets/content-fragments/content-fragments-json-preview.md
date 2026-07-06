@@ -6,7 +6,7 @@ exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: aaab9048c433cbd5c1a21cee9fa487924c00ec7a
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 97%

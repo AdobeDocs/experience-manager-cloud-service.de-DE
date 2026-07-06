@@ -1,15 +1,15 @@
 ---
 title: Wie können Sie die Assets-Ansicht in AEM nutzen?
-description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht in AEM.  Adobe nutzt sein Know-how bei der Unterstützung von Marketing- und Kreativ-Profis und bietet damit ein völlig neues Anwendungserlebnis.
+description: Erfahren Sie mehr über die wichtigsten Vorteile der Assets-Ansicht in AEM. Adobe nutzt sein Know-how bei der Unterstützung von Marketing- und Kreativ-Profis und bietet damit ein völlig neues Anwendungserlebnis.
 mini-toc-levels: 3
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '972'
-ht-degree: 99%
+source-wordcount: '1046'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Freuen Sie sich auf eine Digital Asset Management-Lösung, die die unterschiedli
 
 ### Insights für datenbasierte Entscheidungen {#insights-data}
 
-Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Insights unerlässlich. Die Assets-Ansicht bietet erweiterte Einblicke innerhalb des Dashboards „Mein Arbeitsbereich“ und liefert wertvolle Daten zur Asset-Leistung, zur Zielgruppennutzung und zu Interaktionen.  Marketing-Fachleute können datenbasierte Entscheidungen treffen, Inhaltsstrategien optimieren und die nachgelagerten Sendungen verfeinern, um optimale Ergebnisse zu erzielen. Durch den Zugriff auf aussagekräftige Insights können Unternehmen dem Wettbewerb voraus bleiben und außergewöhnliche Ergebnisse erzielen.
+Um mit der Inhaltsgeschwindigkeit Schritt zu halten, sind umsetzbare Insights unerlässlich. Die Assets-Ansicht bietet erweiterte Einblicke innerhalb des Dashboards „Mein Arbeitsbereich“ und liefert wertvolle Daten zur Asset-Leistung, zur Zielgruppennutzung und zu Interaktionen. Marketing-Fachleute können datenbasierte Entscheidungen treffen, Inhaltsstrategien optimieren und die nachgelagerten Sendungen verfeinern, um optimale Ergebnisse zu erzielen. Durch den Zugriff auf aussagekräftige Insights können Unternehmen dem Wettbewerb voraus bleiben und außergewöhnliche Ergebnisse erzielen.
 
 ![Insights-Überblick](assets/insights-overview.gif)
 
@@ -106,7 +106,7 @@ Erschließen Sie das Potenzial der digitalen Asset-Bibliothek Ihrer Organisation
 
 ### Abonnieren von Repository-Inhalten für effizientes Asset-Management {#subscribe-content}
 
-Die Assets-Ansicht ermöglicht Ihnen die Überwachung der Vorgänge, die mit den im Repository verfügbaren Assets, Ordnern oder Sammlungen durchgeführt werden.  Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden. Sie können auch die Ereignistypen konfigurieren, z. B. das Löschen oder Ändern von abonnierten Inhalten. Die Benachrichtigungen werden Ihnen dann nur für diese Ereignistypen gesendet.
+Die Assets-Ansicht ermöglicht Ihnen die Überwachung der Vorgänge, die mit den im Repository verfügbaren Assets, Ordnern oder Sammlungen durchgeführt werden. Sie müssen den Inhalt auswählen und abonnieren, für den die Benachrichtigungen an Sie gesendet werden. Sie können auch die Ereignistypen konfigurieren, z. B. das Löschen oder Ändern von abonnierten Inhalten. Die Benachrichtigungen werden Ihnen dann nur für diese Ereignistypen gesendet.
 
 ![Empfangen von Benachrichtigungen](assets/notifications.gif)
 
@@ -126,10 +126,29 @@ Zusätzlich zu diesen Funktionen können Sie mit der Assets-Ansicht auch die fol
 
 * Umbenennen der im Repository verfügbaren Assets und Ordner.
 
-Die Assets-Ansicht ist darauf zugeschnitten, Workflows zu optimieren, die Zusammenarbeit zu fördern und die Bereitstellung von Assets zu beschleunigen.  Durch die schnelle Bereitstellung von Inhalten können Marketing-Fachleute das gesamte Potenzial ihrer digitalen Assets ausschöpfen und eine beispiellose Kreativität freisetzen.
+Die Assets-Ansicht ist darauf zugeschnitten, Workflows zu optimieren, die Zusammenarbeit zu fördern und die Bereitstellung von Assets zu beschleunigen. Durch die schnelle Bereitstellung von Inhalten können Marketing-Fachleute das gesamte Potenzial ihrer digitalen Assets ausschöpfen und eine beispiellose Kreativität freisetzen.
 
 
 Verwenden Sie diese Links, um schnell mit der Assets-Ansicht zu beginnen:
 
 * [Mein Arbeitsbereich](/help/assets/my-workspace-assets-view.md)
 * [Erste Schritte mit der Assets-Ansicht](/help/assets/get-started-assets-view.md)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

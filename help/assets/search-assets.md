@@ -7,9 +7,9 @@ feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Pro
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '6103'
+source-wordcount: '6119'
 ht-degree: 91%
 
 ---
@@ -54,20 +54,9 @@ Machen Sie sich mit der Asset-Suchoberfläche und den verfügbaren Aktionen vert
 ![Wissenswertes zur Benutzeroberfläche für Suchergebnisse von Experience Manager Assets](assets/aem-search-interface.png)
 *Abbildung: Wissenswertes [!DNL Experience Manager Assets] Benutzeroberfläche für Suchergebnisse.*
 
-**A.** Suche als Smart-Sammlung speichern.
-**B.** Filter oder Prädikate zur Eingrenzung der Suchergebnisse.
-**C.** Dateien, Ordner oder beides anzeigen.
-**D.** Die Suchposition ist DAM.
-**E.** Auf gespeicherte Suchen zugreifen.
-**F.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen.
-**G.** Zeigt Assets als Standardsuche an.
-**H.** Die Suchposition ist DAM.
-**I.** Omnisearch-Feld mit benutzerdefiniertem Suchbegriff.
-**J.** Geladene Suchergebnisse auswählen.
-**K.** Sortieren nach Erstellt, Geändert, Name, Keine.
-**L.** Sortieren nach aufsteigender oder absteigender Reihenfolge
-**M.** Anzahl der angezeigten Suchergebnisse im Verhältnis zu den gesamten Suchergebnissen. **N.** Die Suche schließen.
-**O.** Zwischen Karten- und Listenansicht wechseln.
+**A.** Suche als Smart-Sammlung speichern.**B.** Filter oder Prädikate zur Eingrenzung der Suchergebnisse.**C.** Dateien, Ordner oder beides anzeigen.**D.** Die Suchposition ist DAM.
+**E.** Auf gespeicherte Suchen zugreifen.**F.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen.**G.** Zeigt Assets als Standardsuche an.**H.** Die Suchposition ist DAM.
+**I.** Omnisearch-Feld mit benutzerdefiniertem Suchbegriff.**J.** Geladene Suchergebnisse auswählen.**K.** Sortieren nach Erstellt, Geändert, Name, Keine.**L.** Sortieren nach aufsteigender oder absteigender Reihenfolge **M.** Anzahl der angezeigten Suchergebnisse im Verhältnis zu den gesamten Suchergebnissen. **N.** Die Suche schließen.**O.** Zwischen Karten- und Listenansicht wechseln.
 
 ### Dynamische Suchfacetten {#dynamicfacets}
 
@@ -538,17 +527,20 @@ Navigieren Sie zum Ordnerspeicherort für Assets, die in den Suchergebnissen ang
 
 **Siehe auch**
 
-* [Best Practices für die Suche](search-best-practices.md)
-* [Assets übersetzen](translate-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

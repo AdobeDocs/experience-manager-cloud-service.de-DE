@@ -7,9 +7,9 @@ feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3592'
 ht-degree: 99%
 
 ---
@@ -133,9 +133,7 @@ Einige wichtige Punkte zu dieser Integration:
 * Wenn Assets aus Adobe Stock in Experience Manager gespeichert werden, werden sie zu regulären Experience Manager-Assets. Binärdateien werden dabei im Experience Manager-Repository gespeichert. Einige zu Adobe Stock gehörige Metadaten werden für das Asset in Experience Manager gespeichert. Ansonsten verläuft die Aufnahme wie bei jeder anderen Datei. Wenn beispielsweise Smart-Tags aktiv sind, werden die Tags beim Speichern diesen Assets hinzugefügt.
 * Das in Experience Manager gespeicherte Asset ist eine Kopie, kein Link zurück zu Adobe Stock.
 
-**Arbeiten mit Assets in Creative Cloud, die aus Adobe Stock in Experience Manager gespeichert wurden**. Diese Integration ist zwar unabhängig von Adobe Asset Link, aber Adobe Asset Link erkennt diese so aus Adobe Stock gespeicherten Assets und zeigt zusätzliche Metadaten sowie ein Adobe Stock-Symbol auf diesen Assets in der Adobe Asset Link-Erweiterungsoberfläche in Photoshop, Illustrator bzw. InDesign an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch Speichern in Experience Manager zu regulären Experience Manager-Assets werden.
-Kreative Benutzer, die in Creative Cloud-Programmen mit vorhandener Adobe Asset Link-Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus Adobe Stock in Experience Manager auch Zugriff auf das Creative Cloud Libraries-Bedienfeld, um Adobe Stock-Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
-Lizenzierte und in Experience Manager gespeicherte Assets aus Adobe Stock werden allgemeineren Teams zur Verfügung gestellt, die auf die Experience Manager Assets-Bereitstellung zugreifen. Kreative hingegen, die Assets aus Adobe Stock über das Creative Cloud Libraries-Bedienfeld lizenzieren, können die Assets standardmäßig lediglich sich selbst in ihrem Creative Cloud-Konto zur Verfügung stellen.
+**Arbeiten mit Assets in Creative Cloud, die aus Adobe Stock in Experience Manager gespeichert wurden**. Diese Integration ist zwar unabhängig von Adobe Asset Link, aber Adobe Asset Link erkennt diese so aus Adobe Stock gespeicherten Assets und zeigt zusätzliche Metadaten sowie ein Adobe Stock-Symbol auf diesen Assets in der Adobe Asset Link-Erweiterungsoberfläche in Photoshop, Illustrator bzw. InDesign an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch Speichern in Experience Manager zu regulären Experience Manager-Assets werden.Kreative Benutzer, die in Creative Cloud-Programmen mit vorhandener Adobe Asset Link-Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus Adobe Stock in Experience Manager auch Zugriff auf das Creative Cloud Libraries-Bedienfeld, um Adobe Stock-Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.Lizenzierte und in Experience Manager gespeicherte Assets aus Adobe Stock werden allgemeineren Teams zur Verfügung gestellt, die auf die Experience Manager Assets-Bereitstellung zugreifen. Kreative hingegen, die Assets aus Adobe Stock über das Creative Cloud Libraries-Bedienfeld lizenzieren, können die Assets standardmäßig lediglich sich selbst in ihrem Creative Cloud-Konto zur Verfügung stellen.
 
 ## Informationen zum Speichern von Assets in DAM {#about-storing-assets-in-a-dam}
 
@@ -239,16 +237,18 @@ Verwenden Sie das Experience Manager-Desktop-Programm nicht für die direkte Ver
 
 **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

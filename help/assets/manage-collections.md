@@ -7,10 +7,10 @@ feature: Collections, Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2404'
-ht-degree: 99%
+source-wordcount: '2432'
+ht-degree: 98%
 
 ---
 
@@ -89,8 +89,7 @@ Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie
    >
    >Bei Auswahl von **[!UICONTROL Öffentlich]** wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** deaktivieren, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Smart-Sammlung zu erstellen, und schließen Sie dann das Meldungsfeld, um den Vorgang abzuschließen. Die neue Smart-Sammlung wird auch zur Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt.
-Die Bezeichnung der Schaltfläche **[!UICONTROL Smart-Sammlung erstellen]** wird in **[!UICONTROL Smart-Sammlung bearbeiten]** geändert. Um die Einstellungen der Smart-Sammlung zu bearbeiten, wählen Sie **[!UICONTROL Dateien]** aus der Liste **[!UICONTROL Dateien und Ordner]** aus. Wählen Sie dann die Schaltfläche **[!UICONTROL Smart-Auswahl bearbeiten]** aus.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Smart-Sammlung zu erstellen, und schließen Sie dann das Meldungsfeld, um den Vorgang abzuschließen. Die neue Smart-Sammlung wird auch zur Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt.Die Bezeichnung der Schaltfläche **[!UICONTROL Smart-Sammlung erstellen]** wird in **[!UICONTROL Smart-Sammlung bearbeiten]** geändert. Um die Einstellungen der Smart-Sammlung zu bearbeiten, wählen Sie **[!UICONTROL Dateien]** aus der Liste **[!UICONTROL Dateien und Ordner]** aus. Wählen Sie dann die Schaltfläche **[!UICONTROL Smart-Auswahl bearbeiten]** aus.
 
 ## Hinzufügen von Assets zu einer Sammlung {#add-assets-to-a-collection}
 
@@ -112,7 +111,7 @@ Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt,
 1. Wählen Sie in der Symbolleiste der Assets-Benutzeroberfläche das Symbol **[!UICONTROL Suchen]** aus.
 1. Drücken Sie die `Enter`-Taste, während sich der Cursor im Feld „Omnisearch“ befindet.
 1. Wählen Sie das GlobalNav-Symbol aus, um den Filterbereich anzuzeigen.
-1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
+1. Wählen Sie in **[!UICONTROL Liste „Gespeicherte]**&quot; die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
 1. Ändern Sie den bzw. die Filter nach Bedarf. Wählen Sie **[!UICONTROL Smart-Sammlung bearbeiten]** aus. Sie können auch den Namen der Smart-Sammlung ändern.
 1. Wählen Sie **[!UICONTROL Speichern]** aus. Das Dialogfeld **[!UICONTROL Smart-Sammlung bearbeiten]** wird angezeigt.
@@ -262,19 +261,24 @@ Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn di
 
 **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 
 >[!MORELIKETHIS]
 >
 >* [Erstellen einer Prüfungsaufgabe für Sammlungen](/help/assets/bulk-approval.md)
+

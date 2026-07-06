@@ -3,9 +3,9 @@ title: Massenbearbeitung von Metadaten in [!DNL Assets View]
 description: Erfahren Sie, wie Sie einen vordefinierten Satz von standardmäßigen Metadatenfeldern für mehrere Assets aktualisieren können, die gleichzeitig in der [!DNL ! Assets View] verfügbar sind.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '507'
 ht-degree: 99%
 
 ---
@@ -28,8 +28,7 @@ Führen Sie diese Schritte aus, um die Metadaten mehrerer Assets gleichzeitig in
    * **[!UICONTROL Autorin bzw. Autor]:** Geben Sie den Namen der Autorin bzw. des Autors an.
    * **[!UICONTROL Keywords]:** Fügen Sie bestimmte Begriffe oder Textzeichenfolgen hinzu, die allgemeine Informationen über die Assets bieten und ihre Auffindbarkeit verbessern. Fügen Sie ein Keyword hinzu und drücken Sie die **Eingabetaste** oder **Return-Taste**, um der Liste ein weiteres Keyword hinzuzufügen.
    * **[!UICONTROL Tags]:** Klicken Sie auf ![Massenbearbeitung von Metadaten](/help/assets/assets/tags-icon.svg), um „Tags“ aus den verfügbaren Optionen auszuwählen. Tags bieten genauere Informationen über die Assets und verbessern ihre Auffindbarkeit. Bereits auf die ausgewählten Assets angewendete Tags werden im Panel **[!UICONTROL Eigenschaften]** angezeigt. Wenn Sie die entsprechenden Tags nicht finden können, erstellen Sie sie und weisen Sie sie den ausgewählten Assets zu. Weitere Informationen zum Erstellen von Tags und Zuweisen von diesen zu Assets finden Sie unter [Verwalten von Tags in [!DNL Assets view]](/help/assets/tagging-management-assets-view.md).
-   * Klicken Sie **[!UICONTROL Speichern]**, um die oben genannten Metadatenaktualisierungen auf die ausgewählten Assets anzuwenden. Nach dem Speichern werden **[!UICONTROL Keywords]** und **[!UICONTROL Tags]** hinzugefügt und die aktualisierten Details für **[!UICONTROL Status]**, **[!UICONTROL Ablaufdatum]** und **[!UICONTROL Autorin bzw. Autor]** überschreiben die vorhandenen Details.
-     ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
+   * Klicken Sie **[!UICONTROL Speichern]**, um die oben genannten Metadatenaktualisierungen auf die ausgewählten Assets anzuwenden. Nach dem Speichern werden **[!UICONTROL Keywords]** und **[!UICONTROL Tags]** hinzugefügt und die aktualisierten Details für **[!UICONTROL Status]**, **[!UICONTROL Ablaufdatum]** und **[!UICONTROL Autorin bzw. Autor]** überschreiben die vorhandenen Details.     ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]
      >
@@ -40,3 +39,22 @@ Um die auf ein Asset angewendeten Metadatenaktualisierungen anzuzeigen, navigier
 >[!NOTE]
 >
 >**[!UICONTROL Status]**, **[!UICONTROL Ablaufdatum]**, **[!UICONTROL Autorin bzw. Autor]**, **[!UICONTROL Keywords]** und **[!UICONTROL Tags]** sind standardmäßige Metadateneigenschaften für die Massenbearbeitung von Metadaten, die unabhängig von ordnerspezifischen Metadaten verfügbar sind. Diese Metadateneigenschaften werden nur dann auf der Seite [!UICONTROL Asset-Details] angezeigt, wenn sie in dem Metadatenformular enthalten sind, das auf den Ordner des Assets angewendet wurde. Wenn Sie diese standardmäßigen Metadateneigenschaften auf der Seite [!UICONTROL Asset-Details] nicht finden können, bearbeiten Sie das Metadatenformular des Asset-Ordners, um sie einzuschließen. Unter [Metadaten in [!DNL Assets View]](/help/assets/metadata-assets-view.md) erfahren Sie, wie Sie ein Metadatenformular erstellen oder bearbeiten und es auf einen Ordner anwenden.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -3,10 +3,10 @@ title: Integrieren der Remote-Version von AEM Assets mit AEM Sites
 description: Erfahren Sie, wie Sie AEM Sites mit genehmigtem AEM Assets konfigurieren und verbinden.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 99%
+source-wordcount: '1151'
+ht-degree: 96%
 
 ---
 
@@ -34,8 +34,8 @@ Für die Unterstützung von Remote-Assets mit Dynamic Media mit OpenAPI-Funktion
 
 * Richten Sie die folgenden [Umgebungsvariablen](/help/implementing/cloud-manager/environment-variables.md#add-variables) für AEM as a Cloud Service ein:
 
-   * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot; <br>
-     `pXXXX` bezeichnet die Programm-ID <br>
+   * ASSET_DELIVERY_REPOSITORY_ID= „delivery-pxxxxx-eyyyyy.adobeaemcloud.com“ 
+     `pXXXX` bezeichnet die Programm-ID 
      `eYYYY` bezeichnet die Umgebungs-ID
 
   Diese Variablen werden über die Cloud Manager-Benutzeroberfläche der AEM as a Cloud Service-Umgebung festgelegt, die als Ihre lokale Sites-Instanz fungiert.
@@ -45,7 +45,7 @@ Für die Unterstützung von Remote-Assets mit Dynamic Media mit OpenAPI-Funktion
      Alternativ können Sie die [OSGi-Einstellungen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) für AEM 6.5 in der AEM Sites-Instanz konfigurieren, indem Sie die folgenden Schritte ausführen:
 
    1. Melden Sie sich bei der Konsole an und klicken Sie auf **[!UICONTROL OSGi] >** oder
-verwenden Sie die direkte URL, z. B.: `https://localhost:4502/system/console/configMgr`
+die direkte URL verwenden, zum Beispiel: `https://localhost:4502/system/console/configMgr`
 
    1. Konfigurieren Sie die OSGi-Konfiguration **Next Generation Dynamic Media Config** (`NextGenDynamicMediaConfigImpl`) wie folgt und ersetzen Sie die Werte durch die Werte Ihrer Remote-Asset-Umgebung.
 
@@ -57,9 +57,8 @@ verwenden Sie die direkte URL, z. B.: `https://localhost:4502/system/console/co
       ```
 
       `imsOrg` ist keine obligatorische Eingabe.
-      `repositoryId` = &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot;
-wobei `pXXXX` die Programm-ID bezeichnet
-      `eYYYY` bezeichnet die Umgebungs-ID
+      `repositoryId` = „delivery-pxxxxx-eyyyyy.adobeaemcloud.com“
+wobei `pXXXX` auf die Programm-ID verweist      `eYYYY` bezeichnet die Umgebungs-ID
 
       ![Das OSGi-Konfigurationsfenster von Next Generation Dynamic Media](/help/assets/assets/remote-assets-osgi.png)
 
@@ -125,8 +124,8 @@ Führen Sie die folgenden Schritte aus, um Remote-Assets im AEM-Inhaltsfragment 
 1. Wählen Sie **[!UICONTROL Remote]** aus, um das Asset aus dem Remote-DAM abzurufen. <br>
 Sie können je nach Bedarf entweder das **[!UICONTROL lokale]** oder das **[!UICONTROL Remote]**-DAM-Repository auswählen.
 
-   ![Bild](/help/assets/assets/cf-pick.jpg)
-Sie werden aufgefordert, sich anzumelden.
+   ![image](/help/assets/assets/cf-pick.jpg)
+Sie werden zur Anmeldung aufgefordert.
 1. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Auswählen]**.
    <br> Die URL des Remote-Assets wird in der Textkomponente angezeigt.
 
@@ -137,3 +136,22 @@ Sie werden aufgefordert, sich anzumelden.
 ### Zugriff auf Remote-Assets in Edge Delivery Services {#access-assets-eds}
 
 Sie können beim Erstellen von Inhalten in Microsoft Word, Google Docs oder im universellen Editor auf Remote-Assets zugreifen und die Inhalte dann in Edge Delivery Services veröffentlichen. Sie können auch Dynamic Media mit OpenAPI verwenden, um markenkonforme Assets bereitzustellen und viele andere seiner Vorteile zu nutzen. Weitere Informationen finden Sie unter [Integrieren von AEM Assets beim Erstellen von Inhalten für Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

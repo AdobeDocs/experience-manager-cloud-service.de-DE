@@ -3,10 +3,10 @@ title: Assets as a Cloud Service für Digital Asset Management in AEM
 description: Assets as a Cloud Service für Digital Asset Management in AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '6014'
-ht-degree: 81%
+source-wordcount: '6486'
+ht-degree: 76%
 
 ---
 
@@ -49,7 +49,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/bulk-import-assets-view.md">
       <strong>Verwenden des Tools für den Massenimport</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie eine große Anzahl von Assets direkt aus einer Datenquelle importieren.</em>
@@ -64,7 +64,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="https://experienceleague.adobe.com/de/docs/experience-manager-desktop-app/using/get-started">
       <strong>Verwenden des AEM-Desktop-Programms</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie mit der Desktop-Anwendung von AEM Dateien in verschachtelten Ordnerhierarchien aus Ihrem lokalen Dateisystem hochladen.</em>
@@ -77,7 +77,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html">
       <strong>Adobe Asset Link verwenden</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Assets mithilfe von Creative Cloud-Programmen nach Experience Manager hochladen.</em>
@@ -103,7 +103,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/smart-tags.md">
       <strong>Hinzufügen von KI-Smart-Tags zu Assets</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Smart-Tags automatisch auf hochgeladene Assets anwenden.</em>
@@ -117,7 +117,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/manage-notifications-assets-view.md">
       <strong>Hinzufügen intelligenter farbbasierter Tags</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie bei der Aufnahme automatisch farbbasierte Tags anwenden.</em>
@@ -130,7 +130,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/metadata-assets-view.md">
       <strong>KI-generierte Metadaten</strong>
-      </a>
+      
    </div>
    <p>
       <em>Verwenden Sie KI zum Generieren von Asset-Metadaten wie Titel und Beschreibung. </em>
@@ -155,7 +155,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/search-assets-view.md#contextual-search">
       <strong>Kontextuelle Suche</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie mit einfachen Text-Prompts nach Assets suchen.</em>
@@ -170,7 +170,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/search-assets-view.md#search-firefly">
       <strong>Generieren von Assets mit Adobe Firefly</strong>
-      </a>
+      
    </div>
    <p>
       <em>Generieren Sie Assets in Echtzeit mit Adobe Firefly.</em>
@@ -183,7 +183,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
       <strong>Integration mit Adobe Express</strong>
-      </a>
+      
    </div>
    <p>
       <em>Verwenden von Adobe Express-KI-Funktionen in der Benutzeroberfläche von AEM Assets.</em>
@@ -204,7 +204,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/dynamic-media/imaging-faq.md">
       <strong>Intelligente Bildbearbeitung</strong>
-      </a>
+      
    </div>
    <p>
       <em>Optimieren Sie das Format und die Dateigröße eines Bildes je nach Browser-Fähigkeiten und Netzwerkgeschwindigkeit der Benutzerinnen und Benutzer.</em>
@@ -219,7 +219,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="https://experienceleague.adobe.com/de/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
       <strong>Smartes Zuschneiden</strong>
-      </a>
+      
    </div>
    <p>
       <em>Verwenden Sie KI, um den Fokus in einem Bild oder Video automatisch zu erkennen und es so zuzuschneiden, dass er erhalten bleibt.</em>
@@ -232,7 +232,7 @@ Verwenden Sie diese Links, um auf eine detaillierte Dokumentation zu diesen Tool
    <div>
       <a href="/help/assets/dynamic-media/video.md">
       <strong>KI-generierte Videountertitel</strong>
-      </a>
+      
    </div>
    <p>
       <em>Verwenden Sie künstliche Intelligenz, um Untertitel für Videoinhalte automatisch zu generieren. </em>
@@ -261,7 +261,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
    <div>
       <a href="/help/assets/metadata-assets-view.md">
       <strong>Verwalten von Metadaten in der Assets-Ansicht</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Metadaten und Metadatenformulare in der Assets-Ansicht verwalten.</em>
@@ -276,7 +276,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
    <div>
       <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=de">
       <strong>Best Practices für die Metadatenverwaltung</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Metadaten vor und nach der Migration Ihrer Assets zu AEM verwalten.</em>
@@ -289,7 +289,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
    <div>
       <a href="/help/assets/manage-metadata.md">
       <strong>Verwalten von Metadaten in der Admin-Ansicht</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Metadaten und Metadatenformulare in der Admin-Ansicht verwalten.</em>
@@ -311,7 +311,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
    <div>
       <a href="/help/assets/smart-tags.md">
       <strong>Hinzufügen von Smart-Tags zu Assets</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Smart-Tags automatisch auf hochgeladene Assets anwenden.</em>
@@ -326,7 +326,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
    <div>
       <a href="/help/assets/search-assets-view.md">
       <strong>Suche nach Assets in der Assets-Ansicht</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie die kontextbezogene Suche und andere Suchfunktionen in der Assets-Ansicht effektiv verwenden.</em>
@@ -339,7 +339,7 @@ AEM Assets bietet Funktionen, mit denen Sie schnell das richtige Asset finden k�
    <div>
       <a href="/help/assets/search-best-practices.md">
       <strong>Best Practices für die Suche</strong>
-      </a>
+      
    </div>
    <p>
       <em>Lernen Sie verschiedene Szenarien kennen, die Benutzerinnen und Benutzern von AEM dabei helfen, einfache und erweiterte Suchvorgänge durchzuführen.</em>
@@ -369,7 +369,7 @@ Sie können auch Asset-Versionen verwalten, den Asset-Status festlegen und das A
    <div>
       <a href="/help/assets/manage-organize-assets-view.md">
       <strong>Asset-Management-Aufgaben</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie einige grundlegende und erweiterte Asset-Management-Aufgaben ausführen.</em>
@@ -383,7 +383,7 @@ Sie können auch Asset-Versionen verwalten, den Asset-Status festlegen und das A
    <div>
       <a href="/help/assets/my-workspace-assets-view.md">
       <strong>Mein Workspace</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie „Mein Arbeitsbereich“ verwenden, um schnell auf wichtige Bereiche der Assets-Benutzeroberfläche zuzugreifen.</em>
@@ -396,7 +396,7 @@ Sie können auch Asset-Versionen verwalten, den Asset-Status festlegen und das A
    <div>
       <a href="/help/assets/content-credentials.md">
       <strong>Content Credentials</strong>
-      </a>
+      
    </div>
    <p>
       <em>Gewinnen Sie mit Content Credentials Erkenntnisse zum Verlauf eines digitalen Assets.</em>
@@ -420,7 +420,7 @@ Sie können auch Asset-Versionen verwalten, den Asset-Status festlegen und das A
    <div>
       <a href="/help/assets/manage-collections-assets-view.md">
       <strong>Sammlungen verwalten</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Ihre Assets in Sammlungen organisieren, um Assets effizient freizugeben.</em>
@@ -435,7 +435,7 @@ Sie können auch Asset-Versionen verwalten, den Asset-Status festlegen und das A
    <div>
       <a href="/help/assets/manage-notifications-assets-view.md">
       <strong>Benachrichtigungen festlegen</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Benachrichtigungen festlegen, um die Vorgänge zu überwachen, die mit Assets, Ordnern oder Sammlungen durchgeführt werden.</em>
@@ -448,7 +448,7 @@ Sie können auch Asset-Versionen verwalten, den Asset-Status festlegen und das A
    <div>
       <a href="/help/assets/detect-duplicate-assets.md">
       <strong>Erkennen doppelter Assets</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erkennen doppelter Assets, die in AEM Assets hochgeladen wurden, und Benachrichtigen der Benutzenden.</em>
@@ -466,8 +466,7 @@ AEM Assets kann nahtlos mit verschiedenen Adobe- und Nicht-Adobe-Anwendungen int
 
 * **Dynamic Media mit OpenAPI-Funktionen**: [Dynamic Media mit OpenAPI-Funktionen](/help/assets/dynamic-media-open-apis-overview.md) bietet einen umfassenden Satz von APIs für [Suche](/help/assets/search-assets-api.md) und [Bereitstellung](/help/assets/deliver-assets-apis.md). Dadurch können Ihre Entwickelnden die Bereitstellung von Assets ganz einfach in ihre Anwendungen integrieren. Zu den Anwendungen gehören Adobe-Anwendungen sowie Anwendungen von Drittanbietern. Eine Benutzeroberfläche für die Auswahl der Mikro-Frontend-Assets ermöglicht das Suchen und Auswählen genehmigter Assets. Die Auswahl kann mühelos in jede Anwendung integriert werden, die auf JavaScript-Frameworks wie React JS, Angular JS und Vanilla JS basiert.
 
-* **Content Advisor**: Content Advisor bietet eine Benutzeroberfläche, die mit dem Experience Manager Assets-Repository integriert ist, sodass Sie im Repository verfügbare digitale Assets durchsuchen können. Sie können sie dann in Ihrem Anwendungs-Authoring-Erlebnis verwenden.
-Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integrieren.
+* **Content Advisor**: Content Advisor bietet eine Benutzeroberfläche, die mit dem Experience Manager Assets-Repository integriert ist, sodass Sie im Repository verfügbare digitale Assets durchsuchen können. Sie können sie dann in Ihrem Anwendungs-Authoring-Erlebnis verwenden.Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integrieren.
 
 <table>
 <td>
@@ -477,7 +476,7 @@ Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integr
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
       <strong>Übersicht über die Funktionen von Dynamic Media mit OpenAPI</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie mehr über die wichtigsten Vorteile und wie Sie diese aktivieren. </em>
@@ -492,7 +491,7 @@ Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integr
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
       <strong>Beschränken des Zugriffs auf Assets in Experience Manager</strong>
-      </a>
+      
    </div>
    <p>
       <em> Konfigurieren Sie Rollen, um den Zugriff auf genehmigte Assets zu beschränken.</em>
@@ -505,7 +504,7 @@ Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integr
    <div>
       <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
       <strong>Inhaltsratgeber</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Content Advisor mit einer Adobe oder einer Nicht-Adobe-Anwendung integrieren.</em>
@@ -535,7 +534,7 @@ Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integr
    <div>
       <a href="/help/assets/workfront-integrations.md">
       <strong>Integration mit Adobe Workfront</strong>
-      </a>
+      
    </div>
    <p>
       <em>Nutzen Sie die Integration mit Adobe Workfront, um den gesamten Arbeitszyklus an einem Ort zu verwalten.</em>
@@ -548,7 +547,7 @@ Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integr
    <div>
       <a href="/help/assets/manage-collections-assets-view.md">
       <strong>Integration mit Figma</strong>
-      </a>
+      
    </div>
    <p>
       <em>Greifen Sie über die Figma-Benutzeroberfläche auf die in AEM Assets gespeicherten Assets zu.</em>
@@ -561,7 +560,7 @@ Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integr
    <div>
       <a href="/help/assets/native-integration-adobe-express.md">
       <strong>Native Integration mit Adobe Express</strong>
-      </a>
+      
    </div>
    <p>
       <em>Platzieren Sie in AEM Assets verfügbare Assets auf der Express-Arbeitsfläche und speichern Sie aktualisierte Assets in AEM. </em>
@@ -575,8 +574,7 @@ Sie können Content Advisor in eine Adobe oder eine Nicht-Adobe-Anwendung integr
 * **Integration mit Adobe Journey Optimizer**: Führen Sie Marketing- und Kreativ-Workflows mit Adobe Experience Manager Assets zusammen. Greifen Sie auf Assets as a Cloud Service zu, das nativ mit Adobe Journey Optimizer integriert ist, um digitale Assets zu speichern, zu verwalten, zu entdecken und zu verteilen. So wird ein zentrales Repository mit Assets bereitgestellt, die Sie für Ihre Nachrichten verwenden können.
 
 * **Integration mit Commerce**: Die Integration von Adobe Experience Manager (AEM) Assets für Commerce kombiniert die leistungsstarken Funktionen von AEM as a Digital Asset Management (DAM) mit Adobe Commerce, um E-Commerce-Erlebnisse zu verbessern. Diese Funktionen werden bereitgestellt, indem Commerce-Projekte mit der leistungsstarken Asset-Management-Umgebung von AEM verbunden werden, um eine nahtlose, skalierbare und effiziente Möglichkeit zur Verwaltung und Bereitstellung von Assets in Commerce-Storefronts zu bieten.
-* **Integrieren von AEM Assets mit dokumentbasierten Authoring-Flüssen für Edge Delivery Services**: Wenn [!DNL AEM Assets] mit Ihren dokumentbasierten Authoring-Tools wie [!DNL Microsoft Word] oder [!DNL Google Docs] integriert ist, bietet es Inhaltsratgeber in Ihrem Authoring-Tool. Verwenden Sie den Inhaltsratgeber, um auf [!DNL AEM Assets] zuzugreifen, und fügen Sie genehmigte Assets in Ihre Inhalte ein.
-Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, finden Sie in der [[!DNL AEM Assets] Plug-in](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)-Dokumentation Informationen zur Integration von [!DNL AEM Assets] in Ihr vorhandenes [!DNL AEM]-Projekt.
+* **Integrieren von AEM Assets mit dokumentbasierten Authoring-Flüssen für Edge Delivery Services**: Wenn [!DNL AEM Assets] mit Ihren dokumentbasierten Authoring-Tools wie [!DNL Microsoft Word] oder [!DNL Google Docs] integriert ist, bietet es Inhaltsratgeber in Ihrem Authoring-Tool. Verwenden Sie den Inhaltsratgeber, um auf [!DNL AEM Assets] zuzugreifen, und fügen Sie genehmigte Assets in Ihre Inhalte ein.Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, finden Sie in der [[!DNL AEM Assets] Plug-in](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)-Dokumentation Informationen zur Integration von [!DNL AEM Assets] in Ihr vorhandenes [!DNL AEM]-Projekt.
 
 * **Integration von [!DNL AEM Assets] mit [!DNL Universal Editor]-basierten Authoring-Flüssen für[!DNL Edge Delivery Services]**: Richten Sie den [!DNL Universal Editor] für die Integration mit [!DNL AEM Assets] ein. Durch diese Integration können Sie [!DNL Dynamic Media with OpenAPI capabilities] verwenden, um Assets bereitzustellen.
 
@@ -591,7 +589,7 @@ Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, fin
    <div>
       <a href="https://experienceleague.adobe.com/de/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integration mit Adobe Journey Optimizer</strong>
-      </a>
+      
    </div>
    <p>
       <em>Führen Sie Marketing- und Kreativ-Workflows mithilfe der Integration mit AJO zusammen</em>
@@ -604,7 +602,7 @@ Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, fin
    <div>
       <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/overview">
       <strong>Integration mit Commerce</strong>
-      </a>
+      
    </div>
    <p>
       <em>Integrieren Sie AEM Assets mit Commerce für bessere E-Commerce-Erlebnisse.</em>
@@ -617,7 +615,7 @@ Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, fin
    <div>
       <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md">
       <strong>Integrieren von AEM Assets mit EDS</strong>
-      </a>
+      
    </div>
    <p>
       <em>Integrieren Sie AEM Assets mit auf Dokumenten oder dem universellen Editor basierenden Authoring-Flüssen.</em>
@@ -704,7 +702,7 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
    <div>
       <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Übersicht über den Discovery Agent</strong>
-      </a>
+      
    </div>
    <p>
       <em>Überblick über den Discovery Agent und seine Funktionen zur konversativen Inhaltserkennung.</em>
@@ -718,7 +716,7 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
    <div>
       <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Inhaltsoptimierungs-Agent - Übersicht</strong>
-      </a>
+      
    </div>
    <p>
       <em>Überblick über den Inhaltsoptimierungsagenten und die unterstützten Optimierungs-Workflows.</em>
@@ -732,7 +730,7 @@ Zu den wichtigsten Vorteilen von Governance Agent gehören:
    <div>
       <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Governance-Agent - Übersicht</strong>
-      </a>
+      
    </div>
    <p>
       <em>Überblick über den Governance Agent für die Einhaltung und Durchsetzung von Richtlinien.</em>
@@ -772,7 +770,7 @@ Content Hub bietet die folgenden Hauptvorteile:
    <div>
       <a href="/help/assets/product-overview.md">
       <strong>Übersicht über Content Hub</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie mehr über die wichtigsten Vorteile von Content Hub und wie Sie darauf zugreifen können. </em>
@@ -787,7 +785,7 @@ Content Hub bietet die folgenden Hauptvorteile:
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
       <strong>Konfigurieren der Benutzeroberfläche von Content Hub</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie die in der Content Hub-Benutzeroberfläche verfügbaren Optionen konfigurieren.</em>
@@ -800,7 +798,7 @@ Content Hub bietet die folgenden Hauptvorteile:
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
       <strong>Bearbeiten mit Adobe Express</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Bilder in Content Hub mit Adobe Express bearbeiten.</em>
@@ -842,7 +840,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten finden Sie unter [Dyna
    <div>
       <a href="/help/assets/dynamic-media/dynamic-media.md">
       <strong>Arbeiten mit Dynamic Media</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Assets für den Gebrauch im Web, in Mobile Apps und in Social Media bereitstellen. </em>
@@ -857,7 +855,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten finden Sie unter [Dyna
    <div>
       <a href="/help/assets/dynamic-media/dm-journey-part1.md">
       <strong>Dynamic Media-Journey</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Ihre Arbeit von Dynamic Media profitiert.</em>
@@ -870,7 +868,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten finden Sie unter [Dyna
    <div>
       <a href="/help/assets/dynamic-media/dm-best-practices.md">
       <strong>Best Practices für Dynamic Media</strong>
-      </a>
+      
    </div>
    <p>
       <em>Best Practices beim Arbeiten mit Bildern, Videos und Viewern.</em>
@@ -912,7 +910,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten finden Sie unter [Dyna
    <div>
       <a href="/help/assets/dynamic-media-open-apis-overview.md">
       <strong>Übersicht über die Funktionen von Dynamic Media mit OpenAPI</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie mehr über die wichtigsten Vorteile und wie Sie diese aktivieren. </em>
@@ -927,7 +925,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten finden Sie unter [Dyna
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
       <strong>Beschränken des Zugriffs auf Assets in Experience Manager</strong>
-      </a>
+      
    </div>
    <p>
       <em> Konfigurieren Sie Rollen, um den Zugriff auf genehmigte Assets zu beschränken.</em>
@@ -940,7 +938,7 @@ Informationen zu den verfügbaren Dynamic Media-Angeboten finden Sie unter [Dyna
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
       <strong>Integrieren von Remote AEM Assets mit AEM Sites</strong>
-      </a>
+      
    </div>
    <p>
       <em>Integrieren Sie die Remote-Version von AEM Assets mit AEM Sites. </em>
@@ -972,7 +970,7 @@ Sie können verschiedene Berichtstypen generieren, z. B. Upload, Download und Dy
    <div>
       <a href="/help/assets/manage-reports-assets-view.md">
       <strong>Verwalten von Berichten in der Assets-Ansicht</strong>
-      </a>
+      
    </div>
    <p>
       <em>Gewinnen Sie mit der Assets-Ansicht Erkenntnisse zu wichtigen Erfolgsmetriken. </em>
@@ -987,7 +985,7 @@ Sie können verschiedene Berichtstypen generieren, z. B. Upload, Download und Dy
    <div>
       <a href="/help/assets/asset-reports.md">
       <strong>Verwalten von Berichten in der Admin-Ansicht</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie in der Admin-Ansicht integrierte Berichte in Adobe Analytics verwalten.</em>
@@ -1000,7 +998,7 @@ Sie können verschiedene Berichtstypen generieren, z. B. Upload, Download und Dy
    <div>
       <a href="/help/assets/insights-content-hub.md">
       <strong>Assets Insights in Content Hub</strong>
-      </a>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Asset-Erkenntnisse in Content Hub anzeigen.</em>
@@ -1029,3 +1027,22 @@ Informationen zum Zugriff auf die Assets-Ansicht und einige der Vereinfachungen,
 ## KI-Assistent in AEM
 
 Für Kundinnen und Kunden, die die [Voraussetzungen erfüllen](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), steht der KI-Assistent in AEM den Benutzenden ihres Unternehmens zur Verfügung. Siehe [KI-Assistent in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

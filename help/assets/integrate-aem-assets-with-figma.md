@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie [!DNL AEM Assets] mit [!DNL Figma] integriere
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: f0fa0203e3265ba6afffcabe1154d6679b92e46b
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 25%
+source-wordcount: '1520'
+ht-degree: 28%
 
 ---
 
@@ -33,10 +33,8 @@ Dank der nativen Integration von [!DNL AEM Assets] mit [!DNL Figma] können Entw
 Führen Sie die folgenden Schritte aus, um auf den [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] zuzugreifen:
 
 1. Klicken Sie auf Ihrer [!DNL Figma]-Startseite in der Symbolleiste unten auf der Arbeitsfläche auf **[!UICONTROL Aktionen]** und suchen Sie in der Suchleiste im Dialogfeld nach [!DNL Adobe Experience Manager (AEM) Assets Connector].
-1. Wählen Sie [!DNL Adobe Experience Manager (AEM) Assets Connector] aus, um das [!DNL Adobe Experience Manager (AEM) Assets Connector] anzuzeigen. [Assets  [!DNL AEM]  diesem Bedienfeld in  [!DNL Figma] /](#import-aem-assets-into-figma-workflow) importieren.
-   ![Aktionen](/help/assets/assets/actions-on-figma.png)
-Alternativ können Sie über die [!DNL Figma]-Community auf [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) zugreifen, indem Sie auf **[!UICONTROL In … öffnen]** klicken, eine kürzlich erstellte Datei auswählen oder eine neue Datei erstellen und auf **[!UICONTROL Ausführen]** klicken, um das Panel [!DNL Adobe Experience Manager (AEM) Assets Connector] aufzurufen.
-   ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
+1. Wählen Sie [!DNL Adobe Experience Manager (AEM) Assets Connector] aus, um das Panel [!DNL Adobe Experience Manager (AEM) Assets Connector] anzuzeigen. [Importieren Sie [!DNL AEM] Assets über dieses Panel in Ihre [!DNL Figma] Arbeitsfläche](#import-aem-assets-into-figma-workflow).   ![Aktionen](/help/assets/assets/actions-on-figma.png)
+Alternativ können Sie auf die in [!DNL Figma] Community verfügbaren [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) zugreifen, auf **[!UICONTROL Öffnen in…]** klicken, eine aktuelle Datei auswählen oder eine neue Datei erstellen und auf **[!UICONTROL Ausführen]** klicken, um auf das [!DNL Adobe Experience Manager (AEM) Assets Connector] zuzugreifen.   ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
 >
@@ -50,8 +48,7 @@ Alternativ können Sie über die [!DNL Figma]-Community auf [[!DNL Adobe Experie
 
 1. Ziehen Sie das Asset per Drag-and-Drop auf die Arbeitsfläche oder wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Auswählen]**, damit das Asset auf der Arbeitsfläche angezeigt wird.
 
-1. Klicken Sie ![drei Punkte](/help/assets/assets/three-dots.svg) im Ordnerpfad, um alle übergeordneten und untergeordneten Ordner in der aktuellen Hierarchie anzuzeigen. Wählen Sie einen Ordner aus, um zu diesem Speicherort zu navigieren.
-   ![drei Punkte](/help/assets/assets/figma-v2-plugin.png)
+1. Klicken Sie auf ![drei Punkte](/help/assets/assets/three-dots.svg) im Ordnerpfad, um alle übergeordneten und untergeordneten Ordner in der aktuellen Hierarchie anzuzeigen. Wählen Sie einen Ordner aus, um zu diesem Speicherort zu navigieren.   ![drei Punkte](/help/assets/assets/figma-v2-plugin.png)
 
 1. [Optional] Klicken Sie auf **[!UICONTROL Nach Updates suchen]**. Die im aktuellen Figma-Dokument verwendeten Assets werden mit den in AEM vorhandenen Assets verglichen. Alle Aktualisierungen werden in einem separaten Fenster aufgelistet. Klicken Sie **[!UICONTROL Aktualisieren]**, um das aktualisierte Asset von AEM in Ihr Figma-Dokument zu übernehmen.
 
@@ -66,8 +63,7 @@ Sobald Ihr Figma-Design fertig ist, können Sie [das Asset in das AEM Assets-Rep
 1. Klicken Sie auf ![Datei-Upload](/help/assets/assets/upload-icon.svg) **[!UICONTROL Hochladen]**, um das Dialogfeld **[!UICONTROL Asset hochladen]** anzuzeigen.
 1. Wählen Sie im Dialogfeld entweder **[!UICONTROL Ausgewähltes Element]** oder **[!UICONTROL Seite]** aus, geben Sie einen Datei- oder Seitennamen an, definieren Sie eine Exportkonfiguration und klicken Sie auf **[!UICONTROL Hochladen]**, um das ausgewählte Asset oder das gesamte Design in den Zielordner hochzuladen.
 
-   Die Exportkonfiguration umfasst das Dateiformat, die Skalierung und die Qualität. Wenn Sie beispielsweise JPG als Dateiformat auswählen, können Sie auch die Bildgröße und -qualität definieren. Wenn Sie PNG als Dateiformat auswählen, können Sie auch die Bildgröße definieren.
-   ![Hochladen des Figma-Designs](/help/assets/assets/upload-figma-design.png)
+   Die Exportkonfiguration umfasst das Dateiformat, die Skalierung und die Qualität. Wenn Sie beispielsweise JPG als Dateiformat auswählen, können Sie auch die Bildgröße und -qualität definieren. Wenn Sie PNG als Dateiformat auswählen, können Sie auch die Bildgröße definieren.   ![Hochladen des Figma-Designs](/help/assets/assets/upload-figma-design.png)
 
 
 ## Häufig gestellte Fragen {#frequently-asked-questions-aem-assets-figma-integration}
@@ -111,3 +107,22 @@ Figma-Designs können auf der Arbeitsfläche gruppiert werden, bevor sie in das 
 ### Wie kann ich in Figma durch Ordner im AEM Assets-Repository navigieren? {#navigate-aem-folders-figma}
 
 Die Ordnernavigation innerhalb des AEM Assets-Repositorys ist direkt im Adobe Experience Manager AEM Assets-Connector-Bedienfeld in Figma verfügbar. Klicken Sie auf das Dreipunkt-Symbol im Ordnerpfad, um alle übergeordneten und untergeordneten Ordner in der aktuellen Hierarchie anzuzeigen. Wählen Sie einen beliebigen Ordner aus der Liste aus, um zu diesem Speicherort zu navigieren. Klicken Sie beim Exportieren eines Designs in einen anderen Zielordner auf Weitere Optionen im Ordnerpfad, um einen alternativen Ordner im AEM Assets-Repository auszuwählen.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

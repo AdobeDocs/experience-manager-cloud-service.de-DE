@@ -3,10 +3,10 @@ title: Überblick über Content Hub
 description: Erfahren Sie mehr über Content Hub, seine wichtigsten Vorteile, den Zugriff darauf und das Feedback zu den in Content Hub verfügbaren Optionen.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 64%
+source-wordcount: '1490'
+ht-degree: 70%
 
 ---
 
@@ -124,8 +124,8 @@ Benutzer können über direkte Links (https://experience.adobe.com/#/assets/cont
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-<strong>Konfigurieren der Benutzeroberfläche von Content Hub</strong>
-</a>
+      <strong>Konfigurieren der Benutzeroberfläche von Content Hub</strong>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Admins die Benutzeroberfläche von Content Hub konfigurieren können. </em>
@@ -139,8 +139,8 @@ Benutzer können über direkte Links (https://experience.adobe.com/#/assets/cont
    </a>
    <div>
       <a href="/help/assets/search-assets-content-hub.md">
-<strong>Suchen nach in Content Hub verfügbaren Assets</strong>
-</a>
+      <strong>In Content Hub verfügbare Assets suchen</strong>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie verschiedene Funktionen nutzen können, um Ihre Suchergebnisse einzugrenzen.</em>
@@ -152,8 +152,8 @@ Benutzer können über direkte Links (https://experience.adobe.com/#/assets/cont
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-<strong>Bearbeiten von Bildern mit Adobe Express</strong>
-</a>
+      <strong>Bearbeiten von Bildern mit Adobe Express</strong>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie mit Adobe Express Varianten von Bildern in Content Hub erstellen</em>
@@ -167,8 +167,8 @@ Benutzer können über direkte Links (https://experience.adobe.com/#/assets/cont
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-<strong>Freigeben von in Content Hub verfügbaren Assets</strong>
-</a>
+      <strong>Freigeben von in Content Hub verfügbaren Assets</strong>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie ein oder mehrere Assets als Link freigeben und dann darauf zugreifen.</em>
@@ -180,8 +180,8 @@ Benutzer können über direkte Links (https://experience.adobe.com/#/assets/cont
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">
-<strong>Verwalten von Sammlungen in Content Hub</strong>
-</a>
+      <strong>Verwalten von Sammlungen in Content Hub</strong>
+      
    </div>
    <p>
       <em>Erfahren Sie, wie Sie Sammlungen mithilfe von Assets erstellen und diese dann verwalten.</em>
@@ -193,11 +193,30 @@ Benutzer können über direkte Links (https://experience.adobe.com/#/assets/cont
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-<strong>Anzeigen von Asset-Einblicken in Content Hub</strong>
-</a>
+      <strong>Asset Insights in Content Hub anzeigen</strong>
+      
    </div>
    <p>
       <em> Das Inhaltsmodul bietet wertvolle Einblicke in Assets und geht eine Herausforderung an, auf die Marketing-Stakeholder häufig stoßen</em>
    </p>
 </td>
 </table>
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

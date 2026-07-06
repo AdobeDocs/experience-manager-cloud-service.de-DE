@@ -7,9 +7,9 @@ role: User, Admin, Developer
 feature: Asset Management
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '3413'
+source-wordcount: '3442'
 ht-degree: 99%
 
 ---
@@ -121,7 +121,7 @@ Die folgenden beiden Methoden funktionieren für Assets und Ordner:
 >
 >Tipp: Um den Status einiger separater Live Copy zu überprüfen, verwenden Sie die erste Methode, die die Seite **[!UICONTROL Eigenschaften]** anzeigt. Zum Prüfen des Status vieler Live Copys können Sie die zweite Methode verwenden. Lesen Sie also die Seite **[!UICONTROL Beziehungsstatus]**.
 
-### Informationen und Status von Live Copies   {#status-lc-asset}
+### Informationen und Status von Live Copies {#status-lc-asset}
 
 Führen Sie folgende Schritte aus, um Informationen und Status eines Live Copy-Assets oder -Ordners zu prüfen.
 
@@ -179,7 +179,7 @@ Klicken Sie für eine bestimmte Live Copy auf **[!UICONTROL Live Copy bearbeit
 
 *Abbildung: Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration einer bestimmten Live Copy.*
 
-### Schnellaktionen in der Leiste „Verweise“ für Live Copies   {#ref-rail-lc}
+### Schnellaktionen in der Leiste „Verweise“ für Live Copies {#ref-rail-lc}
 
 Für Live Copy-Assets oder -Ordner können Sie die folgenden Informationen über die Leiste „Verweise“ anzeigen und die folgenden Aktionen von dort aus direkt ausführen:
 
@@ -193,11 +193,11 @@ Wählen Sie Live Copy-Asset oder -Ordner aus, öffnen Sie die linke Leiste und 
 
 *Abbildung: In der Leiste „Verweise“ für die ausgewählte Live Copy verfügbare Aktionen.*
 
-## Übertragen von Änderungen von der Quelle an Live Copies   {#rollout-sync}
+## Übertragen von Änderungen von der Quelle an Live Copies {#rollout-sync}
 
 Nach der Bearbeitung einer Quelle können die Änderungen entweder mithilfe einer Aktion „Synchronisieren“ oder „Rollout“ an die Live Copies übertragen werden. Informationen zu den Unterschieden zwischen beiden Aktionen finden Sie im [Glossar](#glossary).
 
-### Aktion „Rollout“  {#rollout}
+### Aktion „Rollout“ {#rollout}
 
 Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle oder einige ausgewählte Live Copies aktualisieren.
 
@@ -220,7 +220,7 @@ Sie können eine Aktion „Rollout“ auch über die Leiste „Verweise“ initi
 
 *Abbildung: Rollout von Quelländerungen an die ausgewählte Live Copy.*
 
-### Wissenswertes über die Aktion „Synchronisieren“  {#about-sync}
+### Wissenswertes über die Aktion „Synchronisieren“ {#about-sync}
 
 Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur an die ausgewählte Live Copy übertragen. Die Aktion „Synchronisieren“ respektiert und bewahrt die lokalen Änderungen, die nach dem Abbrechen der Vererbung vorgenommen wurden. Die lokalen Änderungen werden nicht überschrieben und die abgebrochene Vererbung wird nicht wiederhergestellt. Sie haben drei Möglichkeiten, um eine Aktion „Synchronisieren“ zu initiieren.
 
@@ -230,7 +230,7 @@ Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur 
 | Symbolleiste auf der Seite [!UICONTROL Eigenschaften] | Initiieren von Synchronisationen bei bereits öffneten Live Copy-Eigenschaften | Siehe [Synchronisieren von Live Copies](#sync-lc) |
 | [!UICONTROL Konsole „Live Copy-Übersicht“] | Schnelles Synchronisieren mehrerer Assets (nicht unbedingt von allen), wenn der Quellordner ausgewählt oder die Konsole [!UICONTROL Live Copy-Übersicht] bereits geöffnet ist; Initiieren der Aktion „Synchronisieren“ für jeweils ein Asset, aber eine schnellere Methode, um mehrere Assets auf einmal zu synchronisieren | Siehe [Aktionen für viele Assets in einem Live Copy-Ordner](#bulk-actions) |
 
-### Synchronisieren von Live Copies   {#sync-lc}
+### Synchronisieren von Live Copies {#sync-lc}
 
 Um eine Aktion „Synchronisieren“ zu starten, öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
 
@@ -296,7 +296,7 @@ Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den S
 
 *Abbildung: Aktion „Zurücksetzen“ – Überschreiben lokaler Bearbeitungen und Abgleichen der Live Copy mit der zugehörigen Quelle*
 
-## Entfernen von Live-Beziehungen   {#detach}
+## Entfernen von Live-Beziehungen {#detach}
 
 Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trennen“ vollständig entfernen. Nach dem Trennen wird die Live Copy zu einem eigenständigen Asset oder Ordner. Sie wird unmittelbar nach dem Trennen als neues Asset in der [!DNL Experience Manager]-Oberfläche angezeigt. Führen Sie die folgenden Schritte aus, um eine Live Copy von ihrer Quelle zu trennen.
 
@@ -375,17 +375,18 @@ Im Folgenden finden Sie Einschränkungen von MSM für [!DNL Assets].
 
 **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
-* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

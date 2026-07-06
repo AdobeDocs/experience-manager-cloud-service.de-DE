@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen (FAQs) zu Content Hub
 description: Hier erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen (FAQs) zum Content-Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 72c26630e23af16ad5ece3ab1d07f7f31bf67270
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 66%
+source-wordcount: '1749'
+ht-degree: 67%
 
 ---
 
@@ -129,7 +129,7 @@ In der folgenden Tabelle sind die wichtigsten Unterschiede zwischen AEM Assets C
 |  | Anonyme Link-Freigabe | ✓ | ✓ |
 |  | Private Sammlungen | ✓ | ✓ |
 | Berechtigungen | ACL-basierte Berechtigungen | − | ✓ |
-|  | Attributbasierte Zugriffssteuerung | ✓ | − |
+|  | Attributbasierte Zugriffssteuerung – Übersicht | ✓ | − |
 | Express-Integration | Bearbeiten von Content Hub-Assets in Adobe Express und Speichern im DAM | ✓ | − |
 | Dashboards und Berichte | Erkenntnis-Dashboard | ✓ | − |
 | Erweiterbarkeit der Benutzeroberfläche | Benutzerdefinierte Erweiterungspunkte auf der Seite „Asset-Details“ | Eingeschränkte Verfügbarkeit | − |
@@ -169,3 +169,20 @@ Sofern verfügbar, zeigt Content Hub das Bild als Vorschauminiatur für die ZIP-
 >Eine Ausgabedarstellung mit dem Namen `cq5dam.preview.png` (ohne Dimensionen) wird nicht als Vorschauminiatur angezeigt.
 
 
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

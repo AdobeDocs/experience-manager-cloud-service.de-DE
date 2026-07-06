@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 82%
+source-wordcount: '779'
+ht-degree: 84%
 
 ---
 
@@ -22,8 +22,7 @@ Ausgabedarstellungen werden zwischen statisch und dynamisch klassifiziert, wobei
 
 ## Statische Ausgabeformate {#static-renditions}
 
-Statische Ausgabedarstellungen sind vorgenerierte Versionen digitaler Assets, die normalerweise bei der Aufnahme oder Änderung von Assets erstellt werden. Diese Ausgabedarstellungen sind für bestimmte Zwecke und Plattformen optimiert, wie Web-Miniaturansichten, mobile Formate für responsives Design oder hochauflösende Druckversionen, um ein effizientes und konsistentes Erlebnis zu gewährleisten.
-Erfahren Sie, wie Sie [statische Ausgabedarstellungen in Experience Manager Assets anzeigen und herunterladen](#view-and-download-static-renditions) können.
+Statische Ausgabedarstellungen sind vorgenerierte Versionen digitaler Assets, die normalerweise bei der Aufnahme oder Änderung von Assets erstellt werden. Diese Ausgabedarstellungen sind für bestimmte Zwecke und Plattformen optimiert, wie Web-Miniaturansichten, mobile Formate für responsives Design oder hochauflösende Druckversionen, um ein effizientes und konsistentes Erlebnis zu gewährleisten.Erfahren Sie, wie Sie [statische Ausgabedarstellungen in Experience Manager Assets anzeigen und herunterladen](#view-and-download-static-renditions) können.
 
 ### Anzeigen und Herunterladen statischer Ausgabedarstellungen{#view-and-download-static-renditions}
 
@@ -37,8 +36,7 @@ Gehen Sie wie folgt vor, um die Ausgabedarstellungen eines Assets anzuzeigen und
 
 ## Dynamische Ausgabedarstellungen {#dynamic-renditions}
 
-Dynamische Ausgabedarstellungen sind benutzerdefinierte Versionen von Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse.
-Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen. Sie können dynamische Ausgabedarstellungen in Experience Manager Assets anzeigen und herunterladen.
+Dynamische Ausgabedarstellungen sind benutzerdefinierte Versionen von Assets, die in Echtzeit erstellt werden, um bestimmten Anforderungen zu entsprechen, z. B. die Größenanpassung von Bildern an die Auflösung des Geräts oder das Zuschneiden auf verschiedene Seitenverhältnisse.Mit diesen Ausgabedarstellungen können Unternehmen personalisierte und optimierte Erlebnisse für unterschiedliche Zielgruppenanforderungen bereitstellen. Sie können dynamische Ausgabedarstellungen in Experience Manager Assets anzeigen und herunterladen.
 
 ## Dynamic Media-Ausgabedarstellungen {#dynamic-media-renditions}
 
@@ -88,10 +86,27 @@ Gehen Sie folgendermaßen vor, um dynamische Ausgabedarstellungen von Bildern in
 ### Anzeigen von Ausgabedarstellungen durch Dynamic Media mit OpenAPI-Funktionen {#view-download-dm-with-openapi-renditions}
 
 1. Wählen Sie das Asset aus und klicken Sie auf **Details**.
-1. Klicken Sie auf das Dynamic Media-Symbol im rechten Bedienfeld. Das Dynamic Media-Bedienfeld zeigt basierend auf Ausgabedarstellungen, dynamische Ausgabedarstellungen und Ausgabedarstellungen für smartes Zuschneiden für unterstützte Asset-Typen an.
-   ![Download-Symbol](/help/assets/assets/new-new1.png)
+1. Klicken Sie auf das Dynamic Media-Symbol im rechten Bedienfeld. Das Dynamic Media-Bedienfeld zeigt basierend auf Ausgabedarstellungen, dynamische Ausgabedarstellungen und Ausgabedarstellungen für smartes Zuschneiden für unterstützte Asset-Typen an.   ![Download-Symbol](/help/assets/assets/new-new1.png)
 1. Wählen Sie **Basisausgabe** und klicken Sie auf **URL kopieren**, um die Bereitstellungs-URL des Assets zu kopieren, oder klicken Sie auf **Ausgabedarstellung herunterladen**, um das Asset herunterzuladen.
 
 Wenn sowohl Scene7 (Dynamic Media) als auch Dynamic Media mit OpenAPI-Funktionen für das Repository aktiviert sind, ist in der Benutzeroberfläche eine Umschaltoption verfügbar, mit der zwischen den beiden Optionen gewechselt werden kann. Die angezeigten Ausgabedarstellungen und die generierten URLs werden basierend auf der ausgewählten Konfiguration aktualisiert.
 
 ![Option ein/aus](/help/assets/assets/new-new2.png)
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

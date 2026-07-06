@@ -4,10 +4,10 @@ description: Erfahren Sie mehr zur Integration von [!DNL AEM Assets] mit [!DNL E
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 99%
+source-wordcount: '875'
+ht-degree: 96%
 
 ---
 
@@ -27,9 +27,7 @@ Nachdem Sie den Inhalt bearbeitet haben, können Sie ihn in Edge Delivery Servic
 
 ## Integrieren von [!DNL AEM Assets] mit dokumentenbasierten Authoring-Flüssen für [!DNL Edge Delivery Services] {#integrate-dynamic-media-with-edge-delivery-services}
 
-Wenn [!DNL AEM Assets] mit Ihren dokumentbasierten Authoring-Tools wie [!DNL Microsoft Word] oder [!DNL Google Docs] integriert wird, steht eine Asset-Auswahl in Ihrem Authoring-Tool zur Verfügung. Verwenden Sie diese Asset-Auswahl, um auf [!DNL AEM Assets] zuzugreifen und genehmigte Assets in Ihren Inhalt einzufügen.
-Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, finden Sie in der [[!DNL AEM Assets] Plug-in](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)-Dokumentation Informationen zur Integration von [!DNL AEM Assets] in Ihr vorhandenes [!DNL AEM]-Projekt.
-Befolgen Sie die folgenden Abschnitte [Voraussetzungen](#integrate-aem-assets-with-microsoft-word-and-google-docs) und [Integrieren von [!DNL AEM Assets] mit der dokumentbasierten](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs), wenn Sie keine [!DNL Edge Delivery Services]-Website haben, um Ihre inklusiven Inhalte von [!DNL AEM Assets] zu veröffentlichen, die in dokumentbasierten Authoring-Tools erstellt wurden.
+Wenn [!DNL AEM Assets] mit Ihren dokumentbasierten Authoring-Tools wie [!DNL Microsoft Word] oder [!DNL Google Docs] integriert wird, steht eine Asset-Auswahl in Ihrem Authoring-Tool zur Verfügung. Verwenden Sie diese Asset-Auswahl, um auf [!DNL AEM Assets] zuzugreifen und genehmigte Assets in Ihren Inhalt einzufügen.Wenn Sie bereits über eine [!DNL Edge Delivery Services]-Website verfügen, finden Sie in der [[!DNL AEM Assets] Plug-in](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)-Dokumentation Informationen zur Integration von [!DNL AEM Assets] in Ihr vorhandenes [!DNL AEM]-Projekt.Befolgen Sie die folgenden Abschnitte [Voraussetzungen](#integrate-aem-assets-with-microsoft-word-and-google-docs) und [Integrieren von [!DNL AEM Assets] mit der dokumentbasierten](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs), wenn Sie keine [!DNL Edge Delivery Services]-Website haben, um Ihre inklusiven Inhalte von [!DNL AEM Assets] zu veröffentlichen, die in dokumentbasierten Authoring-Tools erstellt wurden.
 
 ### Voraussetzungen{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
@@ -76,7 +74,7 @@ Wählen Sie die folgenden Links aus, um zu erfahren, wie Sie mit [!DNL Dynamic M
 
 * [Hinzufügen von Bildern zu Inhalten](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
 * [Hinzufügen von Videos zu Inhalten](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
-* [Hinzufügen von Nicht-Bild- und Nicht-Video-Assets wie PDF-, ZIP-Dateien und mehr zu Inhalten](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
+* [Hinzufügen von Nicht-Bild- und Video-Assets wie PDF, ZIP-Dateien und mehr zu Ihrem Inhalt](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
 In diesem Video erfahren Sie, wie Sie Assets in Ihren Inhalten mit Dynamic Media mit OpenAPI-Funktionen bereitstellen.
 
@@ -92,3 +90,21 @@ Einrichten des [!DNL Universal Editor] für die Integration mit [!DNL AEM Assets
 
 * Unter [Konfiguration in  [!DNL Edge Delivery] -Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) erfahren Sie, wie Sie im [!DNL Universal Editor] eine benutzerdefinierte Asset-Auswahlfunktion hinzufügen. Mit der benutzerdefinierten Asset-Auswahl können Sie Assets direkt in Ihren [!DNL Universal Editor] einfügen.
 * Unter [Erweiterungen – Überblick](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) erfahren Sie, wie Sie beim Authoring im [!DNL Universal Editor] auf [!DNL AEM Assets] zugreifen und die Assets einfügen können.
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

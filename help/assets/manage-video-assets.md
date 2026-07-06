@@ -6,14 +6,14 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '4995'
+source-wordcount: '5117'
 ht-degree: 98%
 
 ---
 
-# Verwalten von Video-Assets  {#manage-video-assets}
+# Verwalten von Video-Assets {#manage-video-assets}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -34,8 +34,7 @@ Sie können Video-Assets im unterstützten Format auf [!DNL Experience Manager A
 Gehen Sie wie folgt vor, um ein Video-Asset hochzuladen:
 
 1. Navigieren Sie im Ordner „Digitale Assets“ (oder dessen Unterordnern) zum Speicherort, an dem Sie das Asset hinzufügen möchten.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Dateien]**. <br>Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen.
-In [!DNL Experience Manager Assets] finden Sie weitere Informationen zum [Hochladen von Assets](manage-digital-assets.md#uploading-assets).
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Dateien]**. <br>Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen.In [!DNL Experience Manager Assets] finden Sie weitere Informationen zum [Hochladen von Assets](manage-digital-assets.md#uploading-assets).
 
 <!--
  1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
@@ -236,8 +235,7 @@ Mit Experience Manager 6.4 wurde eine neue Methode für die Touch-Benutzeroberfl
 1. Klicken Sie oben rechts auf der globalen Seite auf **[!UICONTROL Erstellen]**.
 1. Geben Sie auf der Seite „YouTube-Veröffentlichungskonfiguration erstellen“ unter „Google Cloud Platform-Einstellungen“ im Feld **[!UICONTROL Anwendungsname]** die Google-Projekt-ID ein.
 
-   Sie haben die Projekt-ID bereits während der Konfiguration der Google Cloud-Einstellungen angegeben.
-Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet. Sie kehren gleich zu ihr zurück.
+   Sie haben die Projekt-ID bereits während der Konfiguration der Google Cloud-Einstellungen angegeben.Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet. Sie kehren gleich zu ihr zurück.
 
    ![6_5_youtubepublish-createyoutubeconconfiguration](/help/assets/dynamic-media/assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -284,8 +282,7 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet. Sie kehren
 1. Wählen Sie **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld „YouTube-Kontoeinstellungen“ im Feld **[!UICONTROL Anwendungsname]** die Google-Projekt-ID ein.
 
-   Sie haben die Projekt-ID bereits während der [Konfiguration der Google Cloud-Einstellungen](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) angegeben.
-Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gleich zu ihm zurückkehren werden.
+   Sie haben die Projekt-ID bereits während der [Konfiguration der Google Cloud-Einstellungen](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) angegeben.Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gleich zu ihm zurückkehren werden.
 
 1. Öffnen Sie die in der vorherigen Aufgabe zum Konfigurieren von Google Cloud-Einstellungen heruntergeladene und gespeicherte JSON-Datei in einem Nur-Text-Editor.
 1. Markieren und kopieren Sie den gesamten JSON-Text.
@@ -316,7 +313,7 @@ Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gle
 
    Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und klicken Sie auf **X**.
 
-1. Wenn Sie mit dem Hinzufügen der gewünschten Tags fertig sind, klicken Sie auf **[!UICONTROL OK]**. 
+1. Wenn Sie mit dem Hinzufügen der gewünschten Tags fertig sind, klicken Sie auf **[!UICONTROL OK]**.
 
    Nun können Sie Videos in Ihrem YouTube-Kanal veröffentlichen.
 
@@ -335,20 +332,16 @@ Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die We
 1. Klicken Sie unter der Überschrift „Veröffentlichen auf YouTube“ auf **[!UICONTROL YouTube-Kategorie]**.
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen Sie den Wert im Textfeld **[!UICONTROL Zu Eigenschaft zuordnen]** aus und kopieren Sie ihn.
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie den Wert im Textfeld **[!UICONTROL Zu Eigenschaft zuordnen]** aus und kopieren Sie ihn.Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
-   * Wählen Sie unter **[!UICONTROL Wahlen]** den Standardwert aus, den Sie verwenden möchten (beispielsweise „Personen und Blogs“ oder „Wissenschaft und Technik“).
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie unter **[!UICONTROL Wahlen]** den Standardwert aus, den Sie verwenden möchten (beispielsweise „Personen und Blogs“ oder „Wissenschaft und Technik“).Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
 1. Klicken Sie unter der Überschrift „Veröffentlichen auf YouTube“ auf **[!UICONTROL YouTube-Datenschutz]**.
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen Sie den Wert im Textfeld **[!UICONTROL Zu Eigenschaft zuordnen]** aus und kopieren Sie ihn.
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie den Wert im Textfeld **[!UICONTROL Zu Eigenschaft zuordnen]** aus und kopieren Sie ihn.Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
-   * Wählen Sie unter **[!UICONTROL Wahlen]** den Standardwert aus, den Sie verwenden möchten, und kopieren Sie ihn. Beachten Sie, dass unter „Wahlen“ Paare von jeweils zwei Werten vorliegen. Das untere Feld des Wertepaars ist der Standardwert, den Sie kopieren müssen, beispielsweise „Öffentlich“, „Nicht aufgeführt“ oder „Privat“.
-Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
+   * Wählen Sie unter **[!UICONTROL Wahlen]** den Standardwert aus, den Sie verwenden möchten, und kopieren Sie ihn. Beachten Sie, dass unter „Wahlen“ Paare von jeweils zwei Werten vorliegen. Das untere Feld des Wertepaars ist der Standardwert, den Sie kopieren müssen, beispielsweise „Öffentlich“, „Nicht aufgeführt“ oder „Privat“.Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
 1. Klicken Sie nahe der rechten oberen Ecke der Seite „Metadatenschema-Editor“ auf **[!UICONTROL Abbrechen]**.
 1. Klicken Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und gehen Sie dann in der linken Leiste zu **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
@@ -640,19 +633,22 @@ Sie können Anmerkungen zu Video-Assets hinzufügen. Während Videos mit Anmerku
 
   **Siehe auch**
 
-* [Assets übersetzen](translate-assets.md)
-* [Assets-HTTP-API](mac-api-assets.md)
-* [Von AEM Assets unterstützte Dateiformate](file-format-support.md)
-* [Suchen von Assets](search-assets.md)
-* [Connected Assets](use-assets-across-connected-assets-instances.md)
-* [Asset-Berichte](asset-reports.md)
-* [Metadatenschemata](metadata-schemas.md)
-* [Herunterladen von Assets](download-assets-from-aem.md)
-* [Verwalten von Metadaten](manage-metadata.md)
-* [Suchfacetten](search-facets.md)
-* [Verwalten von Sammlungen](manage-collections.md)
-* [Massenimport von Metadaten](metadata-import-export.md)
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 
 >[!MORELIKETHIS]
 >

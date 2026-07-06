@@ -3,10 +3,10 @@ title: Anwenden von smartem Zuschneiden für Videos auf genehmigte Videos
 description: Mit den Dynamic Media-Funktionen mit OpenAPI können Sie in Adobe Experience Manager (AEM) Smart-Crop-Ausgaben für Video-Assets generieren.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets."
-source-git-commit: 30037f08d5caeab878b6cf89b936308d16ae3e8d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 9%
+source-wordcount: '466'
+ht-degree: 17%
 
 ---
 
@@ -80,3 +80,22 @@ Sobald das smarte Zuschneiden für Videos generiert wurde, schließen Sie den `m
 * Smartes Zuschneiden von Videos wird während der Wiedergabe dynamisch angewendet, wenn der `mode=smartcrop` verwendet wird.
 * Der Dynamic Media-Viewer wählt automatisch den am besten geeigneten Zuschnitt auf der Grundlage des Geräts und des Seitenverhältnisses aus.
 * Die Videowiedergabe wird dynamisch angepasst, um das Hauptmotiv im Fokus zu halten.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

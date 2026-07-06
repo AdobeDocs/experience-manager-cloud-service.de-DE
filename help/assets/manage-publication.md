@@ -6,9 +6,9 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1758'
 ht-degree: 99%
 
 ---
@@ -104,8 +104,8 @@ In der folgenden Tabelle wird erläutert, wie die Veröffentlichung je nach dem 
 | [!UICONTROL Ziel] | [!UICONTROL Veröffentlichungsmodus für Dynamic Media] | [!UICONTROL Ziel veröffentlichen] | Zulässiger Inhalt |
 | --- | --- | --- | --- |
 | Publish | Selektive Veröffentlichung | `AEM` | Assets und/oder Ordner |
-| Veröffentlichen  | Unmittelbar | `AEM` und `Dynamic Media` | Assets und/oder Ordner |
-| Veröffentlichen  | Bei Aktivierung | `AEM` und `Dynamic Media` | Assets und/oder Ordner |
+| Veröffentlichen | Unmittelbar | `AEM` und `Dynamic Media` | Assets und/oder Ordner |
+| Veröffentlichen | Bei Aktivierung | `AEM` und `Dynamic Media` | Assets und/oder Ordner |
 | Dynamic Media | Selektive Veröffentlichung | `Dynamic Media` | Assets |
 | Dynamic Media | Unmittelbar | `None` | Assets können nicht veröffentlicht werden |
 | Dynamic Media | Bei Aktivierung | `None` | Assets können nicht veröffentlicht werden |
@@ -164,10 +164,10 @@ Nur Assets werden in [!DNL Dynamic Media] veröffentlicht. Das Veröffentlichung
 
 Der Veröffentlichungsprozess für die Modi **[!UICONTROL Sofort]** und **[!UICONTROL Bei Aktivierung]** ist konsistent ist, unterscheidet sich jedoch für die **[!UICONTROL Selektive Veröffentlichung]**. Weitere Informationen finden Sie unter [Konfigurieren von selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de). Nachdem Sie selektive Veröffentlichung in einem Ordner konfiguriert haben, haben Sie folgende Möglichkeiten:
 
-* [Assets mithilfe von „Veröffentlichung verwalten“ für Dynamic Media oder Experience Manager selektiv veröffentlichen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de#selective-publish-manage-publication)
-* [Heben Sie die Veröffentlichung von Assets in Dynamic Media oder Experience Manager mithilfe von „Veröffentlichung verwalten“ auf](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de#selective-unpublish-manage-publication)
+* [Selektives Veröffentlichen von Assets mithilfe von „Veröffentlichung verwalten“ für Dynamic Media oder Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de#selective-publish-manage-publication)
+* [Selektives Aufheben der Veröffentlichung von Assets in Dynamic Media oder Experience Manager mithilfe von „Veröffentlichung verwalten“](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de#selective-unpublish-manage-publication)
 * [Veröffentlichen von Assets in Dynamic Media oder Experience Manager mithilfe von „Quick Publish“](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de#quick-publish-aem-dm)
-* [Veröffentlichen Sie Assets mithilfe von Suchergebnissen selektiv bzw. heben Sie die Veröffentlichung auf](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de#selective-publish-unpublish-search-results)
+* [Selektive Veröffentlichung oder Aufheben der Veröffentlichung von Assets mithilfe von Suchergebnissen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=de#selective-publish-unpublish-search-results)
 
 ## Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
 
@@ -203,3 +203,22 @@ Die Option „Veröffentlichung anfordern“ steht folgenden Benutzenden zur Ver
 * Leere Ordner werden nicht veröffentlicht.
 * Wenn Sie ein Asset veröffentlichen, das verarbeitet wird, wird nur der Originalinhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset, oder veröffentlichen Sie es erneut, erst dann, wenn die Verarbeitung abgeschlossen ist.
 * Wenn Sie die Veröffentlichung eines komplexen Assets aufheben möchten, achten Sie darauf, nur die Veröffentlichung des Assets aufzuheben. Machen Sie nicht die Veröffentlichung der Verweise rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

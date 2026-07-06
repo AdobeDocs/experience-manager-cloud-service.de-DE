@@ -5,10 +5,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 29%
+source-wordcount: '1235'
+ht-degree: 33%
 
 ---
 
@@ -40,7 +40,7 @@ Wir verwenden ein Dropdown-Feld mit dem Namen `Image` als Beispiel, um Dateien b
 >
 >Sie können Regeln nur basierend auf Dropdown-Feldern erstellen.
 
-Unabhängig vom ausgewählten Asset-Typ müssen Sie die Copyright-Informationen als erforderliches Feld anzeigen. Sie können die [vordefinierten Metadatenkomponenten“ verwenden &#x200B;](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
+Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen als erforderliches Feld an. Sie können die [vordefinierten Metadatenkomponenten“ verwenden &#x200B;](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
 
 ### Erstellen von Metadaten in Forms {#build-metadata-schema-forms}
 
@@ -113,7 +113,7 @@ Gehen Sie wie folgt vor, um ein vorhandenes Metadatenformular zu ändern:
 
    ![rule](assets/image-required-rule2.png)
 
-1. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Sichtbar, basierend auf neuer Regel]** aus. Klicken Sie auf ![Pluszeichen](assets/do-not-localize/aem_assets_add_icon.png), um eine neue Regel hinzuzufügen.
+1. Wählen Sie unter **[!UICONTROL Sichtbarkeit]** die Option **[!UICONTROL Sichtbar, basierend auf neuer Regel]** aus. Klicken Sie auf ![Pluszeichen](assets/do-not-localize/aem_assets_add_icon.png), um eine neue Regel hinzuzufügen.
 
    >[!NOTE]
    >
@@ -144,10 +144,29 @@ Gehen Sie wie folgt vor, um ein vorhandenes Metadatenformular zu ändern:
 
 ## Nächste Schritte {#next-steps}
 
-* [Sehen Sie sich ein Video zum Verwalten von Metadatenformularen in der Assets-Ansicht an](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=de)
+* [Video zum Verwalten von Metadatenformularen in der Assets-Ansicht ansehen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=de)
 
 * Geben Sie Produkt-Feedback über die Option [!UICONTROL Feedback] in der Benutzeroberfläche der Assets-Ansicht
 
 * Geben Sie Feedback zur Dokumentation durch ![Bearbeiten der Seite](assets/do-not-localize/edit-page.png) über die Option [!UICONTROL Diese Seite bearbeiten] oder durch ![Erstellen eines GitHub-Themas](assets/do-not-localize/github-issue.png) über die Option [!UICONTROL Problem protokollieren] in der rechten Seitenleiste
 
 * Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=General#support)
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

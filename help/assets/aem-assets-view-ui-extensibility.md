@@ -5,10 +5,10 @@ feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 49fa36acf11a22480af58aa701bdac676676aadd
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 70%
+source-wordcount: '967'
+ht-degree: 72%
 
 ---
 
@@ -30,8 +30,7 @@ Führen Sie die in der folgenden Abbildung genannten Schritte aus, um auf die [!
 
 ## Anzeigen von Benutzeroberflächenerweiterungen in [!DNL Assets View] {#ui-extensibility-panel-assets-view}
 
-Navigieren Sie in [!DNL Assets View] zur Seite **[!UICONTROL Details]** eines Assets, Ordners oder einer Sammlung. Auf der Seite **[!UICONTROL Details]** wird die hinzugefügte Benutzeroberflächenerweiterung in einem eigenen Panel angezeigt.
-![Mein Arbeitsbereich](/help/assets/assets/my-workspace-assets-view3.png)
+Navigieren Sie in [!DNL Assets View] zur Seite **[!UICONTROL Details]** eines Assets, Ordners oder einer Sammlung. Auf der Seite **[!UICONTROL Details]** wird die hinzugefügte Benutzeroberflächenerweiterung in einem eigenen Panel angezeigt.![Mein Arbeitsbereich](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## Voraussetzungen für das Hinzufügen der Erweiterbarkeitskomponente{#assets-view-ui-extensibility}
 
@@ -82,3 +81,22 @@ Weitere Informationen, einschließlich API-Referenzen und Code-Beispielen, finde
 ## Öffnen benutzerdefinierter Dialogfelder in der Assets-Ansicht {#open-custom-dialogs-assets-view}
 
 Die Assets-Ansicht bietet außerdem die Möglichkeit, benutzerdefinierte Dialogfelder mit einem Text Ihrer Wahl zu öffnen. Sie können dem Text auch Links hinzufügen. Weitere Informationen finden Sie unter [Modales API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

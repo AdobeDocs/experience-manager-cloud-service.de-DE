@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 75%
+source-wordcount: '748'
+ht-degree: 74%
 
 ---
 
@@ -57,7 +57,7 @@ So konfigurieren Sie KI-generierte Titel:
 
 Um die erweiterte Smart-Tags-Funktion zu verwenden, führen Sie die folgenden Schritte aus:
 
-1. Wechseln Sie in der [!DNL Experience Manager]-Benutzeroberfläche zum gewünschten Ordner und klicken Sie auf **[!UICONTROL Assets hinzufügen]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Die kompatiblen Bilddateiformate sind `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` und `bmp`.
+1. Wechseln Sie in der [!DNL Experience Manager] zum gewünschten Ordner und klicken Sie auf **[!UICONTROL Assets hinzufügen]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Die kompatiblen Bilddateiformate sind `png`, `jpg`, `jpeg`, `psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` und `bmp`.
 
 1. Warten Sie, bis das neu hochgeladene Asset verarbeitet wurde. Navigieren Sie anschließend zu den Asset-Eigenschaften.
 
@@ -91,6 +91,25 @@ So deaktivieren Sie KI-generierte Metadaten auf Ordnerebene:
 
 1. Wählen Sie **[!UICONTROL Registerkarte]** Asset-Verarbeitung“ aus.
 
-1. Wählen **[!UICONTROL im Abschnitt Smart-Tags]** Verbesserungen für Bilder aus **[!UICONTROL Dropdown-Menü die Option]** Deaktivieren aus.
+1. Wählen **[!UICONTROL im Abschnitt Smart-Tags]** Verbesserungen für Bilder aus **Dropdown-Menü die Option** Deaktivieren aus.
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um KI-generierte Metadaten für den ausgewählten Ordner zu deaktivieren.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 0026550effc426691a4d63faf169ecd7b9228a57
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '4335'
-ht-degree: 11%
+source-wordcount: '4378'
+ht-degree: 12%
 
 ---
 
@@ -395,3 +395,21 @@ Adobe Express über AEM Assets unterstützt die folgenden Dateigrößen und Grö
 
 Die Integration von AEM Assets und Adobe Express unterstützt MP4 als einzigen Videodateityp für Import und Export. Beim MP4-Videoimport werden Videos mit transparentem Hintergrund (Alphakanal) nicht unterstützt. Für den MP4-Videoexport beträgt die maximal unterstützte Dateigröße 200 MB. Wenn die Größe der Exportdatei 200 MB überschreitet, wird empfohlen, das Video auf maximal 200 MB zu kürzen oder es nach dem lokalen Download manuell in den AEM Assets-Zielordner hochzuladen.
 
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

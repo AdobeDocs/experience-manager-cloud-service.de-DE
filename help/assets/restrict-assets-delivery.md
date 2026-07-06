@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Asset-Bereitstellung mit OpenAPI-Funktion
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 97%
+source-wordcount: '1286'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Das Feld ist im Standard-Metadatenformular verfügbar. Wenn Ihr Asset nicht auf 
 1. Fügen Sie über den Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite ein Feld **[!UICONTROL Datum]** zum Abschnitt „Metadaten“ des Formulars hinzu.
 1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in **Einschaltzeit** oder **Ausschaltzeit**.
-   1. Setzen Sie **[!UICONTROL Zu Eigenschaft zuordnen]** auf _./jcr:content/onTime_ für **Einschaltzeit** Feld und _./jcr:content/offTime_ für das Feld **Ausschaltzeit**.
+   1. Aktualisieren Sie die **[!UICONTROL Zu Eigenschaft zuordnen]** für das Feld **Einschaltzeit** und das Feld _./jcr:content/offTime_ für **Ausschaltzeit** auf _./jcr:content_/onTime.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Wenn Ihr Asset in der Assets-Ansicht nicht auf dem Standard-Metadatenschema basiert und die Felder „Einschaltzeit“ und „Ausschaltzeit“ in den Asset-Eigenschaften nicht verfügbar sind, führen Sie die folgenden Schritte aus:
@@ -64,7 +64,7 @@ Wenn Ihr Asset in der Assets-Ansicht nicht auf dem Standard-Metadatenschema basi
 1. Wählen Sie das Metadatenformular aus und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Fügen Sie über den Abschnitt **[!UICONTROL Komponenten]** im linken Bereich ein Feld **[!UICONTROL Datum]** zum Formular hinzu.
 1. Klicken Sie auf das neu hinzugefügte Feld und ändern Sie die **[!UICONTROL Bezeichnung]** in **Einschaltzeit** oder **Ausschaltzeit**.
-1. Aktualisieren Sie die **[!UICONTROL Metadateneigenschaft]** auf _./jcr:content/onTime_ für **Einschaltzeit** Feld und _./jcr:content/offTime_ für das Feld **Ausschaltzeit**.
+1. Aktualisieren Sie die **[!UICONTROL Metadateneigenschaft]** für das Feld **Einschaltzeit** und das Feld _./jcr:content/offTime_ für **Ausschaltzeit** auf _./jcr:content_/onTime.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 
@@ -95,3 +95,22 @@ Bei Autoren-Services von AEM Cloud Service sowie beim Asset-Wähler wird das IMS
 ### Bereitstellung für benutzerdefinierte Identitätsanbieter im Veröffentlichungs-Service {#delivery-custom-identity-provider}
 
 Lizenzen für AEM Sites, AEM Assets und Dynamic Media mit OpenAPI können gemeinsam verwendet werden, um die Konfiguration der beschränkten Bereitstellung von Assets auf Websites zu ermöglichen, die auf dem AEM Veröffentlichungs- oder Vorschau-Service gehostet werden. Der sichere Bereitstellungsfluss nutzt Browser-Cookies, um den Zugriff der Person festzustellen und über eine benutzerdefinierte Domain für die Bereitstellungsebene zu verfügen, die eine Subdomain der Veröffentlichungs-Domain ist. Dies ist eine Voraussetzung für die Implementierung dieses Anwendungsfalls. Falls die Veröffentlichungs- und Vorschau-Services von AEM Sites so konfiguriert sind, dass sie einen [benutzerdefinierten Identitätsanbieter (IdP)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) verwenden, muss nach der Authentifizierung der Person ein neues Cookie mit dem Namen `delivery-token` für die Veröffentlichungs-Domain festgelegt werden, das die Gruppenzugehörigkeit der Person enthält. Die Bereitstellungsebene extrahiert das Autorisierungsmaterial aus dem sicheren Cookie und validiert den Zugriff. Reichen Sie ein [Support-Ticket für Unternehmen](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) ein, um weitere Informationen zu erhalten.
+
+
+**Siehe auch**
+
+* [Assets übersetzen](/help/assets/translate-assets.md)
+* [Assets-HTTP-API](/help/assets/mac-api-assets.md)
+* [Von AEM Assets unterstützte Dateiformate](/help/assets/file-format-support.md)
+* [Suchen von Assets](/help/assets/search-assets.md)
+* [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset-Berichte](/help/assets/asset-reports.md)
+* [Metadatenschemata](/help/assets/metadata-schemas.md)
+* [Herunterladen von Assets](/help/assets/download-assets-from-aem.md)
+* [Verwalten von Metadaten](/help/assets/manage-metadata.md)
+* [Verwalten von Dynamic Media-Vorlagen](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Verwalten von Berichten](/help/assets/manage-reports-assets-view.md)
+* [Suchfacetten](/help/assets/search-facets.md)
+* [Verwalten von Sammlungen](/help/assets/manage-collections.md)
+* [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
+* [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
