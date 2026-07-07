@@ -3,9 +3,9 @@ title: Erstellen von Visualisierungsvorlagen für Inhaltsfragmente
 description: Vorschau und Veröffentlichung von Inhaltsfragmenten mit Visualisierungsvorlagen. Erfahren Sie, wie Sie die Vorlagen erstellen und anpassen können.
 feature: Developing, Content Fragments
 role: Admin, Developer
-source-git-commit: 733e7a8c497fcffdfadd22c2abd3323d35d54e3e
+source-git-commit: b0a32380b028ff230ec4904a86b55b8ba0f4558f
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2134'
 ht-degree: 4%
 
 ---
@@ -967,8 +967,7 @@ Assets, auf die von Inhaltsfragmenten verwiesen wird, wird von AEM vorab als HTM
 
 Denken Sie daran:
 
-* Verwenden Sie immer dreifache Klammern für Asset-Felder.
-Bei Verwendung doppelter Klammern wird das generierte HTML-Tag mit Escape-Zeichen versehen und als Rohtext angezeigt, anstatt das Bild, Video oder den Link zu rendern.
+* Verwenden Sie immer dreifache Klammern für Asset-Felder.Bei Verwendung doppelter Klammern wird das generierte HTML-Tag mit Escape-Zeichen versehen und als Rohtext angezeigt, anstatt das Bild, Video oder den Link zu rendern.
 
 ### Nutzung der Asset-Felder {#asset-field-usage}
 
@@ -1272,9 +1271,5 @@ Zusätzliche Ressourcen sind verfügbar:
 * [Dokumentation zu Handlebars](https://handlebarsjs.com/)
 * [Integrierte Handlebars-Helfer](https://handlebarsjs.com/guide/builtin-helpers.html)
 * [Dokumentation zu AEM-Inhaltsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+* [APIs für Visualisierungsvorlagen von Inhaltsfragmenten](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)
 
-<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
-
-<!--
-* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
--->
