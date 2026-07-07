@@ -78,7 +78,7 @@ Bei Ihren Suchergebnissen handelt es sich um eine Kombination aus Video-Assets m
 
 Weitere Information zur Moderation von Smart-Tags für Assets finden Sie unter [Verwalten von Smart-Tags](smart-tags.md#manage-smart-tags-and-searches).
 
-![Moderieren von Video-Smart-Tags ](assets/manage-video-smart-tags.png)
+![Moderieren von Video-Smart-Tags &#x200B;](assets/manage-video-smart-tags.png)
 
 >[!NOTE]
 >
