@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '4378'
 ht-degree: 12%
@@ -46,7 +46,7 @@ Führen Sie die folgenden Schritte aus, um mit der Verwendung von AEM Assets im 
 
 3. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Assets]**. Adobe Express zeigt [Content Advisor](#intelligent-asset-discovery-content-advisor) an, in dem die Repositorys, auf die Sie zugreifen dürfen, zusammen mit der Liste der auf der Stammebene verfügbaren Assets und Ordner aufgeführt sind.
 
-4. Suchen Sie mit [Content Advisor) nach Assets im Repository &#x200B;](#intelligent-asset-discovery-content-advisor) ziehen Sie sie per Drag-and-Drop auf die Arbeitsfläche. Klicken Sie alternativ auf die Assets, um sie auf der Arbeitsfläche zu platzieren. Sie können ![&#x200B; Assets auch &#x200B;](assets/do-not-localize/filter.svg) verschiedenen Kriterien filtern (filtern), z. B. Genehmigungsstatus, Dateityp, MIME-Typ und Dimensionen.
+4. Suchen Sie mit [Content Advisor) nach Assets im Repository ](#intelligent-asset-discovery-content-advisor) ziehen Sie sie per Drag-and-Drop auf die Arbeitsfläche. Klicken Sie alternativ auf die Assets, um sie auf der Arbeitsfläche zu platzieren. Sie können ![ Assets auch ](assets/do-not-localize/filter.svg) verschiedenen Kriterien filtern (filtern), z. B. Genehmigungsstatus, Dateityp, MIME-Typ und Dimensionen.
 
    >[!NOTE]
    >
@@ -145,7 +145,7 @@ Dynamic Media-Ausgabedarstellungen bieten einsatzbereite, kanaloptimierte Versio
 
 Sie können Dynamic Media-Modifikatoren auch anwenden, um Anpassungen in Echtzeit anzuzeigen, bevor Sie die Ausgabedarstellung auf der Express-Arbeitsfläche platzieren. So können Sie die am besten geeignete Ausgabedarstellung schneller auswählen und gleichzeitig die Konsistenz und Qualität des Assets beibehalten.
 
-Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder &#x200B;](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) &#x200B;](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
+Klicken Sie auf das Symbol ![Info](assets/info-icon.svg) auf der Asset-Karte und wählen Sie die Registerkarte **[!UICONTROL Dynamic Media]** aus, um die verfügbaren Ausgabedarstellungen für ein Asset anzuzeigen. Sie können die Ausgabedarstellungen [Dynamic Media Scene7) oder ](/help/assets/dynamic-media/dynamic-media.md)Dynamic Media mit [OpenAPI) ](/help/assets/dynamic-media-open-apis-overview.md). Wenn Sie **[!UICONTROL OpenAPI]** für ein Asset auswählen, werden die verfügbaren Ausgabedarstellungen nur angezeigt, wenn das Asset genehmigt wurde und für Dynamic Media mit OpenAPI verfügbar ist.
 
 Sie müssen über eine gültige AEM Dynamic Media-Lizenz verfügen, um die Registerkarte „Dynamic Media“ anzeigen zu können.
 
@@ -249,7 +249,7 @@ Nachdem Sie entsprechende Änderungen in die Express-Arbeitsfläche eingefügt h
 
 ## Unterstützte Dateiformate {#supported-file-formats-import-assets}
 
-Adobe Express unterstützt nativ die Formate unter [Überprüfen der Mindestanforderungen an das Bild](https://helpx.adobe.com/de/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets unterstützt jedoch die folgenden Formattypen:
+Adobe Express unterstützt nativ die Formate unter [Überprüfen der Mindestanforderungen an das Bild](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets unterstützt jedoch die folgenden Formattypen:
 
 | Unterstütztes Format | Max. Abmessungen/Auflösung | Maximale Dateigröße |
 |------------------|---------------------------------------------|---------------|
@@ -413,3 +413,4 @@ Die Integration von AEM Assets und Adobe Express unterstützt MP4 als einzigen V
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

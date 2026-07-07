@@ -6,7 +6,7 @@ feature: Asset Management, Publishing
 role: User, Developer, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 99%
@@ -123,3 +123,4 @@ Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart-Tags, keinen [!DNL 
 >
 >* [DAM-Funktionen in  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=de)
 >* [[!DNL Experience Manager]  as a  [!DNL Cloud Service] -Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+

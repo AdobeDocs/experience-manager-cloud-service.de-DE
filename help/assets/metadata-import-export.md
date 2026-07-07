@@ -6,7 +6,7 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 99%
@@ -104,3 +104,4 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 >[!MORELIKETHIS]
 >
 >* [Importieren von Metadaten beim Massenimport von Assets](/help/assets/add-assets.md#asset-bulk-ingestor)
+

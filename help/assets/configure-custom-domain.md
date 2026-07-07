@@ -2,7 +2,7 @@
 title: Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene
 description: Erfahren Sie, wie Sie in Adobe Cloud Manager eine benutzerdefinierte Domain für die Bereitstellungsebene konfigurieren.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 49%
@@ -16,7 +16,7 @@ In Adobe Cloud Manager können Sie Ihre Website durch das Hinzufügen einer benu
 
 >[!NOTE]
 >
->Kunden mit Dynamic Media Prime- oder Dynamic Media Ultimate-Lizenzen müssen die in Cloud Manager verfügbare benutzerdefinierte Self-Service-Domain-Konfiguration verwenden.Weitere Informationen finden [&#x200B; in der Dokumentation zu Dynamic Media Prime &#x200B;](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md#configure-custom-domain-in-delivery-tier) Ultimate .
+>Kunden mit Dynamic Media Prime- oder Dynamic Media Ultimate-Lizenzen müssen die in Cloud Manager verfügbare benutzerdefinierte Self-Service-Domain-Konfiguration verwenden.Weitere Informationen finden [ in der Dokumentation zu Dynamic Media Prime ](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md#configure-custom-domain-in-delivery-tier) Ultimate .
 >
 >Kunden, die ältere Dynamic Media-Setups verwenden, bei denen Dynamic Media mit OpenAPI manuell aktiviert ist, sollten diese Dokumentation befolgen. Für diese Setups wird die benutzerdefinierte Domain-Zuordnung über eine Adobe-Support-Anfrage abgeschlossen.
 
@@ -26,7 +26,7 @@ Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie de
 
 * Zugriff auf Cloud Manager
 * Dynamic Media wurde bereits mit OpenAPI in Ihrer Umgebung über ein Support-Ticket aktiviert
-* EV- oder OV-SSL-Zertifikat für die in der Bereitstellungsebene verwendete Domain. Weitere [&#x200B; finden Sie unter „Einführung &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) SSL-Zertifikate“
+* EV- oder OV-SSL-Zertifikat für die in der Bereitstellungsebene verwendete Domain. Weitere [ finden Sie unter „Einführung ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) SSL-Zertifikate“
 
 ## Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene mithilfe von Cloud Manager
 
@@ -55,3 +55,4 @@ Erstellen Sie nach Abschluss der oben genannten Schritte ein Adobe-Support-Ticke
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

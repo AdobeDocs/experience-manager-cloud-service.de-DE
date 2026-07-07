@@ -4,7 +4,7 @@ description: Verwenden Sie Funktionen zum Anpassen von Content Advisor in Ihrer 
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 86%
@@ -493,7 +493,7 @@ uploadConfig: {
      }, 
 ```
 
-*Weitere Eigenschaften sind u. a. `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Weitere Informationen finden [&#x200B; unter „Eigenschaften &#x200B;](/help/assets/content-advisor-properties.md) Inhaltsratgebers“.
+*Weitere Eigenschaften sind u. a. `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Weitere Informationen finden [ unter „Eigenschaften ](/help/assets/content-advisor-properties.md) Inhaltsratgebers“.
 
 ### Hochladen mit Metadaten {#upload-with-metadata}
 
@@ -681,3 +681,4 @@ dragOptions: {
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
