@@ -91,7 +91,7 @@ So deaktivieren Sie KI-generierte Metadaten auf Ordnerebene:
 
 1. Wählen Sie **[!UICONTROL Registerkarte]** Asset-Verarbeitung“ aus.
 
-1. Wählen **[!UICONTROL im Abschnitt Smart-Tags]** Verbesserungen für Bilder aus ]**Dropdown-Menü die Option**[!UICONTROL  Deaktivieren aus.
+1. Wählen **[!UICONTROL im Abschnitt Smart-Tags]** Verbesserungen für Bilder aus **Dropdown-Menü die Option** Deaktivieren aus.
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**, um KI-generierte Metadaten für den ausgewählten Ordner zu deaktivieren.
 
