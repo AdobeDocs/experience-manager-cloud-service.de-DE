@@ -4,10 +4,10 @@ description: Erfahren Sie mehr zur Integration von [!DNL AEM Assets] mit [!DNL E
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 37652ec153be900e9b99222f7a7d257c6febacc0
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 96%
+source-wordcount: '876'
+ht-degree: 94%
 
 ---
 
@@ -76,7 +76,7 @@ Wählen Sie die folgenden Links aus, um zu erfahren, wie Sie mit [!DNL Dynamic M
 * [Hinzufügen von Videos zu Inhalten](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
 * [Hinzufügen von Nicht-Bild- und Video-Assets wie PDF, ZIP-Dateien und mehr zu Ihrem Inhalt](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-In diesem Video erfahren Sie, wie Sie Assets in Ihren Inhalten mit Dynamic Media mit OpenAPI-Funktionen bereitstellen.
+Im folgenden Video erfahren Sie, wie Sie Assets in Ihren Inhalten mithilfe von Dynamic Media mit OpenAPI-Funktionen bereitstellen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
