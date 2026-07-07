@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1404'
 ht-degree: 92%
 
 ---
@@ -24,14 +24,13 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für die aktuelle
 
 ## Veröffentlichungsdatum {#release-date}
 
-Die Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am 27. Mai 2021 veröffentlicht.
-Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
+Die Version 2021.5.0 von [!DNL Adobe Experience Manager] as a Cloud Service wurde am 27. Mai 2021 veröffentlicht.Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
 ## AEM as a Cloud Service Foundation {#foundation}
 
 ### Neue Funktionen in Adobe Experience Manager as a Cloud Service Foundation {#what-is-new-foundation}
 
-* [Vorabveröffentlichungskanal](/help/release-notes/prerelease.md): Sehen Sie sich kommende Funktionen einen ganzen Monat vor deren Veröffentlichung in der Vorschau an.
+* [Vorabversionskanal](/help/release-notes/prerelease.md): Sehen Sie sich kommende Funktionen einen ganzen Monat vor deren Veröffentlichung in der Vorschau an.
 
 * [Veraltete APIs](/help/release-notes/deprecated-removed-features.md): Die neueste Liste der veralteten APIs für Adobe Experience Manager as a Cloud Service ist verfügbar.
 
@@ -51,7 +50,7 @@ Die folgende Version (2021.6.0) wird am 28. Juni 2021 veröffentlicht.
 
   ![Posteingang herunterladen](/help/assets/assets/download-inbox.png)
 
-### Neue Funktionen im Vorabveröffentlichungskanal {#what-is-new-assets-prerelease}
+### Neue Funktionen im Vorabversionskanal {#what-is-new-assets-prerelease}
 
 * Metadatenschemata können direkt auf die Ordnereigenschaften angewendet werden.
 
@@ -103,8 +102,7 @@ In diesem Abschnitt finden Sie die Versionshinweise für Cloud Manager in AEM as
 
 ### Veröffentlichungsdatum {#release-date-cm-may}
 
-Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.
-Die nächste Version ist für den 3. Juni 2021 geplant.
+Die Version 2021.5.0 von Cloud Manager in AEM as a Cloud Service wurde am 6. Mai 2021 veröffentlicht.Die nächste Version ist für den 3. Juni 2021 geplant.
 
 ### Neue Funktionen {#what-is-new-may}
 

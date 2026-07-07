@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '3539'
-ht-degree: 100%
+source-wordcount: '3840'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
 * Stellen Sie sicher, dass jede Seite nur von einem Protokoll bedient wird.
 
-   * Manchmal werden Websites über `http` bedient, bis eine Benutzerin bzw. ein Benutzer eine Seite erreicht, die beispielsweise ein Zahlungsformular oder Anmeldeformular enthält, woraufhin die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
+   * Manchmal werden Websites über `http` bedient, bis eine Benutzerin bzw. ein Benutzer eine Seite erreicht, die beispielsweise ein Checkout- oder Anmeldeformular enthält, woraufhin die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und der Benutzer auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
 
    * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` zu bedienen.
 
@@ -192,7 +192,7 @@ Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Sei
 * wäre folgende URL besser:
   `www.mydomain.com/es/casa.html`.
 
-Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Sprachen benötigen.
+Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Gebietsschemata benötigen.
 
 Die Eigenschaft `sling:alias` ermöglicht das Beste aus beiden Welten. `sling:alias` kann jeder Ressource als Eigenschaft hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
 
@@ -202,7 +202,7 @@ Die Eigenschaft `sling:alias` ermöglicht das Beste aus beiden Welten. `sling:al
 * Dieser fügen Sie dann eine Eigenschaft hinzu:
   `sling:alias` = `casa`
 
-Dies würde es den AEM-Übersetzungs-Tools wie dem Multi-Site-Manager ermöglichen, eine Beziehung zwischen folgenden Seiten beizubehalten:
+Dies würde es den AEM-Übersetzungs-Tools wie dem Multi-Site Manager ermöglichen, eine Beziehung zwischen folgenden Seiten beizubehalten:
 
 * `/en/home`
 
@@ -241,7 +241,7 @@ Ein Beispiel dafür, wie dieses Problem auftritt:
 
 1. Der Dispatcher speichert die Antwort unter `/my-page.html` und gibt die Antwort an den Benutzer zurück.
 1. Ein Inhaltsautor ändert diese Seite und aktiviert sie.
-1. Der Flush-Agent des Dispatchers sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.** Da der Dispatcher auf diesem Pfad keine Seite in den Cache geladen hat, bleibt der alte Inhalt im Cache und ist nicht mehr aktuell.
+1. Der Dispatcher Flush-Agent sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.** Da die Dispatcher auf diesem Pfad keine Seite in den Cache geladen hat, bleibt der alte Inhalt im Cache und ist nicht mehr aktuell.
 
 Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, welche die kürzere URL zur Invalidierung des Caches der längeren URL zuordnen.
 
@@ -249,9 +249,9 @@ Es gibt jedoch auch einfachere Möglichkeiten, dieses Problem zu beheben:
 
 1. **SlingResourceResolver-Regeln**
 
-   Verwenden Sie die Web-Konsole (zum Beispiel localhost:4502/system/console/configMgr), um den Sling Resource Resolver zu konfigurieren:
+   Über die Web-Konsole (z. B. localhost:4502/system/console/configMgr) können Sie den Sling Resource Resolver konfigurieren:
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Apache Sling Resource Resolver Factory
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Es wird empfohlen, die zur Kürzung von URLs zu regulären Ausdrücken notwendigen Zuordnungen zu erstellen und diese Konfigurationen dann unter einem OsgiConfignode, `config.publish`, zu definieren, der im Build enthalten ist.
