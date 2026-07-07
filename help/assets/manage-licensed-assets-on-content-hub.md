@@ -3,7 +3,7 @@ title: Verwalten lizenzierter Assets in Content Hub
 description: Erfahren Sie, wie Sie ein Lizenzfeld zum Metadatenformular für Assets hinzufügen, die Metadateneigenschaft „Lizenz“ auf Asset-Ordner anwenden und Assets mit Lizenzen zur Nutzung genehmigen.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 44%
@@ -74,3 +74,4 @@ Admins sind in AEM Assets Content Hub für die Bearbeitung von Metadatenformular
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

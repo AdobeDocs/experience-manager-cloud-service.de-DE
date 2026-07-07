@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie [!DNL AEM Assets] mit [!DNL Figma] integriere
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 28%
@@ -126,3 +126,4 @@ Die Ordnernavigation innerhalb des AEM Assets-Repositorys ist direkt im Adobe Ex
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

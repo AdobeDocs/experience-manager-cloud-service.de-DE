@@ -6,7 +6,7 @@ feature: Asset Management, Renditions
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 97%
@@ -293,3 +293,4 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/file-format-support.md#suppor
 >
 >* [Asset-Verarbeitung mithilfe von Asset-Microservices](asset-microservices-overview.md).
 >* [Unterstützte Dateiformate für das Tagging textbasierter Assets mit Smart-Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+

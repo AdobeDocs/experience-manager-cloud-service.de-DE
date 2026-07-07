@@ -4,7 +4,7 @@ description: Häufig gestellte Fragen zu Dynamic Media mit OpenAPI-Funktionen
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1716'
 ht-degree: 97%
@@ -168,3 +168,4 @@ Klicken Sie hier, um mehr über die Verwendung der [experimentellen APIs](https:
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -6,7 +6,7 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1731'
 ht-degree: 99%
@@ -319,3 +319,4 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 >[!MORELIKETHIS]
 >
 >* [Referenzdokumente für Entwickelnde für [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+
