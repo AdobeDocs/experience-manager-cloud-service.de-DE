@@ -3,7 +3,7 @@ title: Massenbearbeitung von Metadaten in [!DNL Assets View]
 description: Erfahren Sie, wie Sie einen vordefinierten Satz von standardmäßigen Metadatenfeldern für mehrere Assets aktualisieren können, die gleichzeitig in der [!DNL ! Assets View] verfügbar sind.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 99%
@@ -58,3 +58,4 @@ Um die auf ein Asset angewendeten Metadatenaktualisierungen anzuzeigen, navigier
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

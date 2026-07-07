@@ -5,7 +5,7 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 99%
@@ -341,4 +341,5 @@ Siehe [Konfigurieren von [!DNL Assets] für die Verwendung mit [!DNL Adobe Asset
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 

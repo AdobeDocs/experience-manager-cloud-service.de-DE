@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 98%
@@ -314,3 +314,4 @@ Befolgen Sie die Schritte unter [Anwenden eines Workflow-Modells auf einen Ordne
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -5,7 +5,7 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 89%
@@ -297,3 +297,4 @@ Sie können [das Smart-Tagging deaktivieren](#opt-out-smart-tagging) wenn Sie di
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -6,7 +6,7 @@ feature: Asset Management, Translation
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2645'
 ht-degree: 99%
@@ -33,7 +33,7 @@ We have multiple articles around translation of assets. For now, dumping all con
 
 https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=de
 https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=de
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=de)
 
 One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=de
 
@@ -302,3 +302,4 @@ Wenn Sie einen benutzerdefinierten Connector für die Übersetzungs-Services anw
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

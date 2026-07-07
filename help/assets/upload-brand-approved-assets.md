@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre markenkonformen Assets in Content Hub ho
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 65%
@@ -122,3 +122,4 @@ Wenn Assets nicht automatisch in AEM Assets Content Hub angezeigt werden, bedeut
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

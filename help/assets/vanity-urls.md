@@ -5,7 +5,7 @@ role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 5%
@@ -260,3 +260,4 @@ Befolgen Sie die folgenden Best Practices zum Erstellen [Vanity-IDs](#create-van
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

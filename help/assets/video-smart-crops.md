@@ -3,7 +3,7 @@ title: Anwenden von smartem Zuschneiden für Videos auf genehmigte Videos
 description: Mit den Dynamic Media-Funktionen mit OpenAPI können Sie in Adobe Experience Manager (AEM) Smart-Crop-Ausgaben für Video-Assets generieren.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets."
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 17%
@@ -99,3 +99,4 @@ Sobald das smarte Zuschneiden für Videos generiert wurde, schließen Sie den `m
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

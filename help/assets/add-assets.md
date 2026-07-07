@@ -5,7 +5,7 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 96%
@@ -431,3 +431,4 @@ Technische Details zu den Upload-APIs und dem Protokoll sowie Links zu Open-Sour
 >* [Info [!DNL Adobe Asset Link]](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] Dokumentation](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)
 >* [Technische Referenz zum Asset-Upload](developer-reference-material-apis.md#asset-upload)
+

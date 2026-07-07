@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Assets in [!DNL Experience Manager] genehmige
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 94%
@@ -156,3 +156,4 @@ Informationen zu anderen Ausgabedarstellungen, die im Dynamic Media-Bedienfeld a
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
