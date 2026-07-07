@@ -3,7 +3,7 @@ title: Multi-Audio und mehrere Untertitel in Dynamic Media mit OpenAPI-Funktione
 description: Erfahren Sie, wie Sie mit OpenAPI-Funktionen in Adobe Experience Manager Assets mehrere Audiospuren und Untertitel für Video-Assets in Dynamic Media hinzufügen und verwalten können.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 15%

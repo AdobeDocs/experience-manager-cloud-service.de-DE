@@ -2,7 +2,7 @@
 title: Konfigurieren einer benutzerdefinierten Domain für die Bereitstellungsebene
 description: Erfahren Sie, wie Sie in Adobe Cloud Manager eine benutzerdefinierte Domain für die Bereitstellungsebene konfigurieren.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 49%
@@ -55,3 +55,4 @@ Erstellen Sie nach Abschluss der oben genannten Schritte ein Adobe-Support-Ticke
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

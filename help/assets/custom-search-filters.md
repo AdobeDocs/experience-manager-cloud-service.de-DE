@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über das Anpassen von Suchfiltern in Formularen
 role: User, Leader, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 85%
@@ -468,3 +468,4 @@ Nachdem Sie die Suchfilter konfiguriert haben, können Sie sie für die Suche na
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

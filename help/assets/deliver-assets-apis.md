@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Bereitstellungs-APIs verwenden.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 98%
@@ -95,3 +95,4 @@ Informationen zum Anzeigen von Anfragebeispielen, Antwortbeispielen und Antwort-
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
