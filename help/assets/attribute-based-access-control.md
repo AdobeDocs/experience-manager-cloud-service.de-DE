@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die attributbasierte Zugriffssteuerung aktivi
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 20%
@@ -38,7 +38,7 @@ Zu den wichtigsten Vorteilen der attributbasierten Zugriffssteuerung gehören:
 * Unterstützt eine skalierbare Governance über Marken und Regionen hinweg
 * Verbessert das Asset-Management
 
->[!VIDEO](https://video.tv.adobe.com/v/3475423/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Aktivieren der attributbasierten Zugriffssteuerung {#enable-attribute-based-access-control}
 
@@ -177,7 +177,7 @@ ABAC kann auch bei folgenden Szenarien helfen:
 
 >[!IMPORTANT]
 >
->Standardmäßig wird allen anderen Benutzergruppen, die nicht mit Regeln im [Arbeitsblatt“ angegeben &#x200B;](#configure-abac-spreadsheet), der Zugriff verweigert. Wenn ein(e) Benutzende(r) nicht zu einer Gruppe gehört, für die ABAC-Regeln definiert sind, kann er/sie nicht auf Assets zugreifen. Wenn einige Benutzende Zugriff auf alle Assets haben müssen, z. B. Administratoren, schließen Sie eine Gruppe mit einer Gruppen-ID in die Tabelle ein und geben Sie an, dass die Gruppe Zugriff auf alle Assets benötigt, damit Adobe sie entsprechend konfigurieren kann.
+>Standardmäßig wird allen anderen Benutzergruppen, die nicht mit Regeln im [Arbeitsblatt“ angegeben ](#configure-abac-spreadsheet), der Zugriff verweigert. Wenn ein(e) Benutzende(r) nicht zu einer Gruppe gehört, für die ABAC-Regeln definiert sind, kann er/sie nicht auf Assets zugreifen. Wenn einige Benutzende Zugriff auf alle Assets haben müssen, z. B. Administratoren, schließen Sie eine Gruppe mit einer Gruppen-ID in die Tabelle ein und geben Sie an, dass die Gruppe Zugriff auf alle Assets benötigt, damit Adobe sie entsprechend konfigurieren kann.
 
 ## Unterstützte Regelkonstrukte {#supported-rule-constructs}
 
@@ -255,3 +255,4 @@ Administratoren sollten Benutzergruppen in der Adobe Admin Console erstellen, ih
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

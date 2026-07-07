@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie in  [!DNL Content Hub] Assets und Eigenschaft
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 61%
@@ -112,7 +112,7 @@ Einige Asset-Eigenschaften, die in [!DNL Content Hub] angezeigt werden, werden a
 
 * **Smart-Tags:** [!DNL The Content Hub] verwendet den Smart Content Services von Adobe AI, um Assets mithilfe des Erkennungsalgorithmus auf der Tag-basierten Struktur zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden. Smart-Tags erhöhen die Inhaltsgeschwindigkeit Ihrer Projekte, da Sie relevante Assets schnell finden können. Die Smart-Tags sind ein Beispiel für Asset-Informationen, die nicht im Bild enthalten sind. [!DNL Experience Manager Assets] wendet standardmäßig automatisch Smart-Tags auf Assets an.
 
-* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=de) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
+* **Farb-Tags** [Farb-Tags](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) helfen Ihnen, ein Asset mithilfe von Farben zu erkennen, die automatisch in einem Asset mithilfe der KI-Funktionen von Adobe identifiziert werden.
 
 * Upload-Datum
 
@@ -177,3 +177,4 @@ Zu den unterstützten Dateiformaten in AEM Assets Content Hub gehören JPEG und 
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

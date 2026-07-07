@@ -5,7 +5,7 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 99%
@@ -113,7 +113,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 
 1. Stellen Sie sicher, dass **[!UICONTROL Einzelauswahl]** deaktiviert ist, damit Benutzer mehrere Optionen für Dateitypen gleichzeitig auswählen können (z. B. Bilder, Dokumente, Multimedia und Archive). Wenn Sie **[!UICONTROL Einzelauswahl]** aktivieren, können Benutzer jeweils nur eine Option für Dateitypen auswählen.
 
-   ![Die verfügbaren Felder in der Options-Eigenschaft &#x200B;](assets/options_predicate.png)
+   ![Die verfügbaren Felder in der Options-Eigenschaft ](assets/options_predicate.png)
 
    Die verfügbaren Felder in der Options-Eigenschaft
 
@@ -363,3 +363,4 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 >[!MORELIKETHIS]
 >
 >* [Suchen nach digitalen Assets](search-assets.md).
+

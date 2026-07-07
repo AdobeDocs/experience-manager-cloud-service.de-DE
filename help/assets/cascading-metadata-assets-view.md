@@ -5,7 +5,7 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 33%
@@ -40,7 +40,7 @@ Wir verwenden ein Dropdown-Feld mit dem Namen `Image` als Beispiel, um Dateien b
 >
 >Sie können Regeln nur basierend auf Dropdown-Feldern erstellen.
 
-Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen als erforderliches Feld an. Sie können die [vordefinierten Metadatenkomponenten“ verwenden &#x200B;](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
+Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen als erforderliches Feld an. Sie können die [vordefinierten Metadatenkomponenten“ verwenden ](metadata-assets-view.md#property-components)und [einem Ordner Metadaten zuweisen](metadata-assets-view.md#assign-metadata-form-folder).
 
 ### Erstellen von Metadaten in Forms {#build-metadata-schema-forms}
 
@@ -170,3 +170,4 @@ Gehen Sie wie folgt vor, um ein vorhandenes Metadatenformular zu ändern:
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

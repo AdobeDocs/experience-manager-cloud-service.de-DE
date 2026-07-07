@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die API zum Durchsuchen von Assets verwenden.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 96%
@@ -79,3 +79,4 @@ Anfragebeispiele, Antwortbeispiele und Antwort-Codes finden Sie unter [API zum D
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

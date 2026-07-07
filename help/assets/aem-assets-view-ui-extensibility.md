@@ -5,7 +5,7 @@ feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 72%
@@ -15,7 +15,7 @@ ht-degree: 72%
 # Aktivieren der Erweiterbarkeit der Benutzeroberfläche in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
 
 [!DNL AEM Assets View] unterstützt die Erweiterbarkeit der Benutzeroberfläche, sodass Sie Ihrer [!DNL Assets View]-Benutzeroberfläche benutzerdefinierte Benutzeroberflächenkomponenten für bestimmte Workflows und Geschäftsanforderungen hinzufügen können, die von den vorkonfigurierten Funktionen von [!DNL AEM Assets View] nicht erfüllt werden. Diese Erweiterbarkeitsfunktion der Benutzeroberfläche von [!DNL AEM Assets View] erhöht die Flexibilität und ermöglicht es Organisationen, die Benutzeroberfläche an bestimmte Workflows und Anforderungen anzupassen.\
-Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **&#x200B;**&#x200B;angezeigt.
+Sie können Ihre Erweiterungen auf den Ebenen **Asset**, **Ordner** und **Sammlung** hinzufügen. Die hinzugefügte Erweiterung wird in einem eigenen Panel auf der Seite **Asset**, **Sammlung** oder **Ordnerdetails** **** angezeigt.
 
 >[!IMPORTANT]
 >
@@ -50,7 +50,7 @@ Sie müssen die folgenden Anforderungen erfüllen, um die Erweiterbarkeitskompon
 1. Fügen Sie benutzerdefinierte Seiten-Panels zur Oberfläche der [!DNL Assets View] hinzu. Die Host-Anwendung ([!DNL Assets View]) verwaltet diese Panels, um Benutzeroberflächeninteraktionen wie Umschalten und Deep-Linking zu verarbeiten. Erweiterungen verwenden den Erweiterungspunkt `aem/assets/details/1`, um benutzerdefinierte Panels zu integrieren, die Eigenschaften wie Panel-ID, Titel und Inhalts-URL festlegen. Entwickelnde registrieren benutzerdefinierte Panels mit der `getPanels()`-Methode und erstellen Routen, um benutzerdefinierte Inhalte anzuzeigen. Ausführliche Implementierungen, einschließlich API-Referenzen und Code-Beispielen, finden Sie unter [Detailansicht](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/).
 1. Richten Sie Ihre lokale Umgebung ein und erstellen Sie Ihre erste Benutzeroberflächenerweiterung, um den Prozess der Entwicklung von Benutzeroberflächenerweiterungen in der [!DNL Assets View] aus erster Hand zu erleben. Weitere Informationen finden Sie unter [Schrittweise Entwicklung der Erweiterung für die AEM Assets-Ansicht](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/).
 1. Richten Sie Ihre Anwendung mithilfe der AIO-CLI ein, um die grundlegende Erweiterungsstruktur und den erforderlichen Code zu generieren. Weitere Informationen finden Sie unter [Code-Generierung für die [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
-1. Testen Sie Ihre Erweiterungen lokal, um sicherzustellen, dass sie vor der Bereitstellung wie erwartet funktionieren. Führen Sie Ihre Erweiterung in einer vollständig isolierten Umgebung oder mit teilweiser Isolierung aus und verbinden Sie Ihre Erweiterung zum Testen mit der in der Produktion eingesetzten [!DNL AEM Assets View]. Weitere Informationen finden Sie unter [Fehlerbehebung – Erweiterbarkeit der [!DNL AEM Assets View] &#x200B;](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
+1. Testen Sie Ihre Erweiterungen lokal, um sicherzustellen, dass sie vor der Bereitstellung wie erwartet funktionieren. Führen Sie Ihre Erweiterung in einer vollständig isolierten Umgebung oder mit teilweiser Isolierung aus und verbinden Sie Ihre Erweiterung zum Testen mit der in der Produktion eingesetzten [!DNL AEM Assets View]. Weitere Informationen finden Sie unter [Fehlerbehebung – Erweiterbarkeit der [!DNL AEM Assets View] ](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
 
 ## Anpassen von Aktionen in der Assets-Ansicht {#customize-actions-assets-view}
 
@@ -100,3 +100,4 @@ Die Assets-Ansicht bietet außerdem die Möglichkeit, benutzerdefinierte Dialogf
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

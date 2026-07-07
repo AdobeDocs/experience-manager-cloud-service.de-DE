@@ -3,7 +3,7 @@ title: Genehmigen von Assets für Content Hub
 description: Erfahren Sie, wie Sie Assets in Assets as a Cloud Service genehmigen können, um sie in Content Hub verfügbar zu machen.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1807'
 ht-degree: 68%
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um die Genehmigung für neu aufgenommene
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadatenprofile]**.
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Erstellen]**.
 1. Fügen Sie einen Profiltitel hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Das Metadatenprofil wird erstellt.
-1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**&#x200B;wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**&#x200B;ist hervorgehoben.
+1. Wählen Sie das neu erstellte Metadatenprofil aus und klicken Sie auf **[!UICONTROL Bearbeiten _(e)_]**. <br>Das Formular **[!UICONTROL Metadatenprofil bearbeiten]**wird geöffnet und die Registerkarte **[!UICONTROL Allgemein]**ist hervorgehoben.
 1. Ziehen Sie ein **[!UICONTROL einzeiliges Textfeld]** per Drag-and-Drop aus dem Abschnitt **[!UICONTROL Formular erstellen]** auf der rechten Seite in den Abschnitt „Metadaten“ des Formulars.
 1. Klicken Sie auf das neu hinzugefügte Feld und führen Sie dann die folgenden Aktualisierungen im Bedienfeld **[!UICONTROL Einstellungen]** durch:
    1. Ändern Sie die **[!UICONTROL Feldbezeichnung]** in _Genehmigte Assets_.
@@ -179,7 +179,7 @@ Wenn der Umschalter Automatische Genehmigung aktiviert ist, sind mit AEM Assets 
 
 ### Was ist das Feld Validierungsziel in der AEM Assets-Ansicht und wie wirkt es sich auf die Asset-Veröffentlichung aus?
 
-Im Feld **Validierungsziel** auf der Seite Asset-Details können Sie auswählen, wo genehmigte Assets veröffentlicht werden sollen. Die Optionen umfassen **Bereitstellung** (wird mit OpenAPI und Content Hub sowohl in Dynamic Media veröffentlicht) oder nur **Content Hub**. Wenn keine Option ausgewählt ist, wird der Standard für Ihre Assets as a Cloud Service-Umgebung angewendet. Weitere [&#x200B; finden Sie unter „Standardmäßige Genehmigungszielgruppe und Veröffentlichungsziele &#x200B;](#default-approval-target-options-publish-destinations) genehmigte Assets“.
+Im Feld **Validierungsziel** auf der Seite Asset-Details können Sie auswählen, wo genehmigte Assets veröffentlicht werden sollen. Die Optionen umfassen **Bereitstellung** (wird mit OpenAPI und Content Hub sowohl in Dynamic Media veröffentlicht) oder nur **Content Hub**. Wenn keine Option ausgewählt ist, wird der Standard für Ihre Assets as a Cloud Service-Umgebung angewendet. Weitere [ finden Sie unter „Standardmäßige Genehmigungszielgruppe und Veröffentlichungsziele ](#default-approval-target-options-publish-destinations) genehmigte Assets“.
 
 
 ### Was passiert, wenn das Feld Validierungsziel auf der Detailseite des AEM Assets-Assets nicht angezeigt wird?
@@ -211,3 +211,4 @@ Genehmigte Assets stehen Benutzenden zur Verfügung, die derselben Organisation 
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
