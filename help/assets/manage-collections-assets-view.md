@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 83%
@@ -115,7 +115,7 @@ Sie können innerhalb einer Sammlung suchen, um relevante Assets leicht zu finde
 
    * **[!DNL All]:** Zeigt sowohl reguläre als auch Smart-Sammlungen an.
    * **[!DNL Collection]:** Zeigt manuell erstellte Sammlungen an, in denen Assets einzeln hinzugefügt werden.
-   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert &#x200B;](#manage-smart-collection).
+   * **[!DNL Smart Collection]:** Zeigt Sammlungen an, die automatisch Assets enthalten, die unter „Smart[Sammlungen“ gespeichert ](#manage-smart-collection).
 
 * Mit dem Dropdown-Menü **[!DNL Created Date]** können Sie Sammlungen nach dem Zeitpunkt filtern, zu dem sie erstellt wurden. Sie können einen Datumsbereich angeben, um kürzlich erstellte oder ältere Sammlungen zu finden.
 
@@ -257,3 +257,4 @@ Weitere Informationen zum vollständigen Workflow finden Sie unter [Verwalten vo
 * [Verwalten von Sammlungen](/help/assets/manage-collections.md)
 * [Massenimport von Metadaten](/help/assets/metadata-import-export.md)
 * [Veröffentlichen von Assets in AEM und Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
