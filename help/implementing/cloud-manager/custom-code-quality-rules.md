@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 79%
+source-wordcount: '4455'
+ht-degree: 82%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Qualitätsregeln für benutzerspezifischen Code"
->abstract="Erfahren Sie mehr über die Qualitätsregeln für benutzerspezifischen Code von Cloud Manager, die auf den Best Practices für die Entwicklung von Adobe Experience Manager basieren, um durch gründliche Tests eine hohe Code-Qualität sicherzustellen."
+>abstract="Erfahren Sie mehr über die benutzerspezifischen Regeln für die Code-Qualität von Cloud Manager, die auf Best Practices von Adobe Experience Manager Engineering basieren, um durch gründliche Tests hochwertigen Code sicherzustellen."
 
-Erfahren Sie mehr über die Qualitätsregeln für benutzerspezifischen Code von Cloud Manager, die auf den Best Practices für die Entwicklung von Adobe Experience Manager basieren, um durch gründliche Tests eine hohe Code-Qualität sicherzustellen. Siehe auch [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md).
+Erfahren Sie mehr über die benutzerspezifischen Regeln für die Code-Qualität von Cloud Manager, die auf Best Practices von Adobe Experience Manager Engineering basieren, um durch gründliche Tests hochwertigen Code sicherzustellen. Siehe auch [Testen der Code-Qualität](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Vollständige SonarQube-Regeln stehen aufgrund von proprietären Informationen von Adobe nicht zum Download zur Verfügung. Sie können die vollständige Liste *aktueller* Regeln [über diesen Link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) herunterladen. Lesen Sie dieses Dokument weiter, um Beschreibungen und Beispiele für die Regeln zu sehen.
 
@@ -117,8 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Schweregrad**: Kritisch
 * **Seit**: Version 2018.6.0
 
-Bei HTTP-Anfragen innerhalb eines Experience Manager-Programms ist es wichtig, geeignete Zeitüberschreitungswerte zu konfigurieren, um unnötige Thread-Nutzung zu verhindern.
-Standardmäßig schreiben sowohl der Java™ HTTP-Client (java.net.HttpUrlConnection) als auch der häufig verwendete Client für Apache-HTTP-Komponenten keine Zeitüberschreitungen vor, sodass sie manuell konfiguriert werden müssen. Als Best Practice gilt, Zeitüberschreitungen auf maximal 60 Sekunden festzulegen.
+Bei HTTP-Anfragen in einer Experience Manager-Anwendung ist es wichtig, geeignete Zeitüberschreitungswerte zu konfigurieren, um unnötigen Thread-Verbrauch zu vermeiden.Standardmäßig geben sowohl der Java™ HTTP-Client (java.net.HttpUrlConnection) als auch der häufig verwendete Apache HTTP Components-Client keine Zeitüberschreitungswerte vor. Daher müssen sie manuell konfiguriert werden. Als Best Practice gilt, Zeitüberschreitungen bei maximal 60 Sekunden zu definieren.
 
 #### Nicht konformer Code {#non-compliant-code-2}
 
@@ -523,7 +522,7 @@ Die Experience Manager-API-Oberfläche wird ständig überprüft, um APIs zu ide
 
 Je näher das Entfernungsdatum rückt, desto höher ist die Schwere der Verletzung dieser Regel. Die Verwendung solcher APIs muss durch eine sichere Alternative ersetzt werden.
 
-In [&#x200B; Artikel finden &#x200B;](/help/release-notes/deprecated-removed-features.md#aem-apis) Anleitungen zum Entfernen veralteter APIs.
+In [ Artikel finden ](/help/release-notes/deprecated-removed-features.md#aem-apis) Anleitungen zum Entfernen veralteter APIs.
 
 ### Keine nicht mehr unterstützten Experience Manager-APIs verwenden {#sonarqube-aem-deprecated}
 
@@ -547,7 +546,7 @@ Es gibt jedoch Fälle, in denen eine API im Kontext von Experience Manager veral
 
 Das `Apache Sling`-Projekt rät von der Verwendung der `@Inject`-Anmerkung im Kontext von Sling-Modellen ab, da es in Kombination mit dem `DefaultInjectionStrategy.OPTIONAL` (entweder auf Feld- oder Klassenebene) zu schlechter Leistung führen kann. Stattdessen sollten spezifischere Injektionen (wie die `@ValueMapValue`- oder `@OsgiInjector`-Anmerkungen) verwendet werden.
 
-Weitere Informationen zu den empfohlenen Anmerkungen und [&#128279;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1), warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu `Apache Sling` .
+Weitere Informationen zu den empfohlenen Anmerkungen und ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1), warum diese Empfehlung abgegeben wurde, finden Sie in der Dokumentation zu [`Apache Sling` .
 
 
 ### Wiederverwenden von HTTPClient-Instanzen {#sonarqube-reuse-httpclient}
@@ -1067,8 +1066,7 @@ Konfigurieren Sie `includedPaths` und `queryPaths` bei benutzerdefinierten Indiz
 * **Schweregrad**: Gering
 * **Seit**: Version 2023.1.0
 
-Beim Festlegen der `nodeScopeIndex`-Eigenschaft für einen „generischen“ Knotentyp wie `nt:unstructured` oder `nt:base` müssen Sie auch die `includedPaths`- und `queryPaths` angeben.
-Der Knotentyp `nt:base` kann als „generisch“ betrachtet werden, da alle Knotentypen von ihm erben. Wenn Sie also einen `nodeScopeIndex` auf `nt:base` festlegen, werden alle Knoten im Repository indiziert. Ebenso wird `nt:unstructured` auch als „generisch“ betrachtet, da es viele Knoten in Repositorys dieses Typs gibt.
+Wenn Sie die Eigenschaft `nodeScopeIndex` für einen „generischen“ Knotentyp wie `nt:unstructured` oder `nt:base` festlegen, müssen Sie auch die Eigenschaften `includedPaths` und `queryPaths` angeben.Der Knotentyp `nt:base` kann als „generisch“ betrachtet werden, da alle Knotentypen von ihm erben. Das Festlegen eines `nodeScopeIndex` für `nt:base` führt also dazu, dass er alle Knoten im Repository indiziert. Ebenso wird auch `nt:unstructured` als „generisch“ betrachtet, da es in Repositorys viele Knoten mit diesem Typ gibt.
 
 #### Nicht konformer Code {#non-compliant-code-full-text-on-generic-node-type}
 
