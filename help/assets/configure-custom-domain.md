@@ -16,7 +16,7 @@ In Adobe Cloud Manager können Sie Ihre Website durch das Hinzufügen einer benu
 
 >[!NOTE]
 >
->Kunden mit Dynamic Media Prime- oder Dynamic Media Ultimate-Lizenzen müssen die in Cloud Manager verfügbare benutzerdefinierte Self-Service-Domain-Konfiguration verwenden.Weitere Informationen finden [ in der Dokumentation zu Dynamic Media Prime ](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md#configure-custom-domain-in-delivery-tier) Ultimate .
+>Kunden mit Dynamic Media Prime- oder Dynamic Media Ultimate-Lizenzen müssen die in Cloud Manager verfügbare benutzerdefinierte Self-Service-Domain-Konfiguration verwenden.Weitere Informationen finden [&#x200B; in der Dokumentation zu Dynamic Media Prime &#x200B;](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md#configure-custom-domain-in-delivery-tier) Ultimate .
 >
 >Kunden, die ältere Dynamic Media-Setups verwenden, bei denen Dynamic Media mit OpenAPI manuell aktiviert ist, sollten diese Dokumentation befolgen. Für diese Setups wird die benutzerdefinierte Domain-Zuordnung über eine Adobe-Support-Anfrage abgeschlossen.
 
@@ -26,7 +26,7 @@ Stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen, bevor Sie de
 
 * Zugriff auf Cloud Manager
 * Dynamic Media wurde bereits mit OpenAPI in Ihrer Umgebung über ein Support-Ticket aktiviert
-* EV- oder OV-SSL-Zertifikat für die in der Bereitstellungsebene verwendete Domain. Weitere [ finden Sie unter „Einführung ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) SSL-Zertifikate“
+* EV- oder OV-SSL-Zertifikat für die in der Bereitstellungsebene verwendete Domain. Weitere [&#x200B; finden Sie unter „Einführung &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) SSL-Zertifikate“
 
 ## Konfigurieren einer benutzerdefinierten Domain in der Bereitstellungsebene mithilfe von Cloud Manager
 

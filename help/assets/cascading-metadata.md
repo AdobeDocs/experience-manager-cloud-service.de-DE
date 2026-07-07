@@ -108,10 +108,10 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. Navigieren Sie zu dem Ordner, auf den Sie das Metadatenschema angewendet haben, und öffnen Sie die Eigenschaftenseite eines Assets. Je nach Ihrer Auswahl im Feld „Asset-Typ“ werden relevante kaskadierende Metadatenfelder angezeigt.
 
-   ![Kaskadierende Metadaten für Video-Asset
+   !&lbrack;Kaskadierende Metadaten für Video-Asset
    *Abbildung: Kaskadierende Metadaten für Video-Assets*
 
-   ![Kaskadierende Metadaten für Dokumenten-Assets
+   !&lbrack;Kaskadierende Metadaten für Dokumenten-Assets
    *Abbildung: Kaskadierende Metadaten für Dokumenten-Assets*
 
 **Siehe auch**
