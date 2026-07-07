@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: c17bbdac3738ab99be6d58da26825640eedbbdc4
 workflow-type: tm+mt
 source-wordcount: '2839'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI-Tests"
->abstract="Benutzerdefinierte Benutzeroberflächentests sind eine optionale Funktion, mit der Sie Benutzeroberflächentests für Ihre Anwendungen mithilfe von Selenium-basierten Docker-Images erstellen und automatisch ausführen können."
+>abstract="Benutzerdefinierte UI-Tests sind eine optionale Funktion, mit der Sie unter Verwendung Selenium-basierter Docker-Images Benutzeroberflächentests für Ihre Anwendungen erstellen und automatisch ausführen können."
 
 Die Testfunktion für die benutzerdefinierte Benutzeroberfläche ist eine optionale Funktion, mit der man Benutzeroberflächentests für Anwendungen erstellen und automatisch ausführen kann.
 

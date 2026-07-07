@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Hier finden Sie Informationen dazu, wie das Testen der Code-Qualität von Pipeli
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="Testen der Code-Qualität"
->abstract="Beim Testen der Code-Qualität wird Ihr Programm-Code anhand von Qualitätsregeln bewertet. Dies ist der primäre Zweck einer reinen Code-Qualitäts-Pipeline, die nach dem Build-Schritt in allen Pipelines ausgeführt wird."
+>abstract="Beim Testen der Code-Qualität wird Ihr Anwendungs-Code anhand eines Satzes von Qualitätsregeln bewertet. Dabei handelt es sich um das Kernziel einer reinen Code-Qualitäts-Pipeline, die nach dem Erstellungsschritt in allen Pipelines ausgeführt wird."
 
 ## Einführung {#introduction}
 

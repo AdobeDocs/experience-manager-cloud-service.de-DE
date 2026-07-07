@@ -7,8 +7,8 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: b4b5fb587f2b93019e7a0a273bd106d9ab1de54c
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 78%
+source-wordcount: '1323'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie mehr über die Self-Service-Tools, die Cloud Manager Ihnen zur Inst
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Verwalten von SSL-Zertifikaten"
->abstract="Cloud Manager bietet Self-Service-Tools zum Installieren und Verwalten von SSL-Zertifikaten. Sie verwendet einen Plattform-TLS-Service zur Verwaltung von kundeneigenen Zertifikaten und privaten Schlüsseln von Zertifizierungsstellen Dritter."
+>abstract="Cloud Manager bietet Self-Service-Tools für die Installation und Verwaltung von SSL-Zertifikaten. Mithilfe eines Plattform-TLS-Services werden kundeneigene Zertifikate und private Schlüssel von Zertifizierungsstellen Dritter verwaltet."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Anzeigen, Aktualisieren oder Ersetzen eines SSL-Zertifikats"
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Überprüfen des Status eines SSL-Zertifikats"
 
@@ -86,8 +86,7 @@ Wenn Sie sich dafür entscheiden, Ihr eigenes kundenseitig verwaltetes SSL-Zerti
 * Das Zertifikat muss ein X.509-TLS-Zertifikat sein, das von einer vertrauenswürdigen Zertifizierungsstelle (ZS) ausgestellt wurde.
 * Folgende Kryptografieschlüsseltypen werden unterstützt:
 
-   * RSA 2048-Bit, Standard Support.
-RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-RSA-Schlüssel) werden derzeit nicht unterstützt.
+   * RSA 2048-Bit, Standardunterstützung.RSA-Schlüssel, die größer als 2048 Bit sind (z. B. 3072-Bit- oder 4096-Bit-RSA-Schlüssel), werden derzeit nicht unterstützt.
    * Elliptic Curve(EC)-Schlüssel `prime256v1` (`secp256r1`) und `secp384r1`.
    * Elliptic Curve Digital Signature Algorithm(ECDSA)-Zertifikate. Solche Zertifikate sind gemäß Adobe-Empfehlung RSA vorzuziehen, um die Leistung, Sicherheit und Effizienz zu verbessern.
 
