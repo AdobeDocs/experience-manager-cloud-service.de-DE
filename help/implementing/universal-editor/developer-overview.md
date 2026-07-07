@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 100%
+source-wordcount: '3229'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Dies geschieht anhand eines Standardbeispiels, mit dem die meisten AEM-Entwickle
 
 Um dieser Übersicht folgen zu können, benötigen Sie Folgendes.
 
-* [Eine lokale Entwicklungsinstanz in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
+* [Eine lokale Entwicklungsinstanz von AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
    * Ihre lokale Entwicklungsinstanz muss [für Entwicklungszwecke mit HTTPS auf konfiguriert`localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=de) sein.
    * [Die WKND-Demo-Site muss installiert sein](https://github.com/adobe/aem-guides-wknd).
 * [Zugriff auf den universellen Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
@@ -77,7 +77,7 @@ Der universelle Editor lädt den zu bearbeitenden Inhalt in einen Frame. AEM-Sta
 
 Die X-Frame-Option `sameorigin` verhindert das Rendern von AEM-Seiten in einem Frame. Sie müssen diesen Header entfernen, damit die Seiten im universellen Editor geladen werden können.
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
 
    ```text
    https://localhost:8443/system/console/configMgr
@@ -108,7 +108,7 @@ Sie können sich jedoch nicht erfolgreich anmelden. In der Browser-Konsole könn
 
 Das Anmelde-Token-Cookie wird als Drittanbieter-Domain an AEM gesendet. Daher müssen in AEM die gleichen Site-Cookies erlaubt sein.
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
 
    ```text
    https://localhost:8443/system/console/configMgr
