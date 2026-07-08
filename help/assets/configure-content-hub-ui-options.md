@@ -2,10 +2,10 @@
 title: Konfigurieren der Benutzeroberfläche von Content Hub
 description: Konfigurieren der Benutzeroberfläche von Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
+source-git-commit: 078adecd9639945076f503cd255403a8d9ad4c0f
 workflow-type: tm+mt
-source-wordcount: '3115'
-ht-degree: 70%
+source-wordcount: '3205'
+ht-degree: 68%
 
 ---
 
@@ -35,7 +35,7 @@ Mit Experience Manager Assets können Admins die in der Benutzeroberfläche von 
 
 * alle benutzerspezifischen Links, die Sie zusätzlich zu Assets, Sammlungen und Erkenntnissen in Content Hub einschließen müssen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472955/?captions=ger&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Voraussetzungen {#prerequisites-configuration-ui}
 
@@ -105,7 +105,9 @@ Metadaten, die in der Benutzeroberfläche „Konfiguration“ aktiviert sind, we
 
 ### Filter {#configure-filters-content-hub}
 
-Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Assets angezeigt werden. Führen Sie die folgenden Schritte aus, um einen neuen Filter hinzuzufügen:
+Mit Content Hub können Admins Filter konfigurieren, die bei der Suche nach Assets angezeigt werden. Sie können maximal 40 Filter mithilfe der Konfigurations-Benutzeroberfläche konfigurieren.
+
+Führen Sie die folgenden Schritte aus, um einen neuen Filter hinzuzufügen:
 
 1. Klicken Sie in der Benutzeroberfläche [Konfigurationen](#access-configuration-options-content-hub) auf **[!UICONTROL Filter]**.
 1. Klicken Sie auf **[!UICONTROL Filter hinzufügen]**.
@@ -174,7 +176,9 @@ Admins können die Metadatenfelder definieren, die durchsucht werden, wenn jeman
 
 >[!CAUTION]
 >
->Es wird empfohlen, die als durchsuchbar markierten Felder sorgfältig auszuwählen. Nur Felder einbeziehen, nach denen Benutzende wahrscheinlich suchen und die dabei helfen, aussagekräftige Ergebnisse zurückzugeben. Felder wie Daten und Zahlen eignen sich besser zum Filtern und Sortieren als durchsuchbare Inhalte. Wenn Sie zu viele Felder als durchsuchbar markieren, kann dies die Qualität und Leistung der Suchergebnisse beeinträchtigen.
+>Es wird empfohlen, die als durchsuchbar markierten Felder sorgfältig auszuwählen. Nur Felder einbeziehen, nach denen Benutzende wahrscheinlich suchen und die dabei helfen, aussagekräftige Ergebnisse zurückzugeben. Felder wie Daten und Zahlen eignen sich besser zum Filtern und Sortieren als durchsuchbare Inhalte. Wenn Sie zu viele Felder als durchsuchbar oder filterbar markieren, kann dies die Qualität und Leistung der Suchergebnisse beeinträchtigen.
+> 
+> Sie können maximal 30 Suchfelder mithilfe der Konfigurations-Benutzeroberfläche konfigurieren.
 >
 >Tag-Eigenschaften sind nur zum Filtern aktiviert und können nicht durchsucht werden.
 
@@ -185,6 +189,12 @@ Admins können die Metadatenfelder definieren, die durchsucht werden, wenn jeman
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen anzuwenden, sodass die neue Metadateneigenschaft in der Liste der Metadatenfelder angezeigt wird.
 
 Sie können auch auf ähnliche Weise auf ![Bearbeiten-Symbol](assets/do-not-localize/edit_icon.svg) neben jeder verfügbaren Metadateneigenschaft klicken, um die Eigenschaft zu bearbeiten, oder klicken Sie auf das Symbol „Löschen“, um eine vorhandene Eigenschaft zu löschen. Klicken Sie auf **[!UICONTROL Speichern]**, um alle vorgenommenen Änderungen zu übernehmen.![Suche in Content Hub in der Konfigurations-Benutzeroberfläche](assets/configuration-search.png)
+
+Die Liste der hinzugefügten Suchfelder muss in der Reihenfolge der Relevanz stehen, da sich die Reihenfolge auf die Suchergebnisse auswirkt.
+
+>[!NOTE]
+>
+>Sie müssen die Content Hub-Konfigurationsseite mit den Feldern synchronisieren, die Sie verwenden möchten. Entfernen Sie keine Felder über die Benutzeroberfläche, insbesondere wenn diese Felder in ABAC-Regeln oder bei der direkten Suche nach API-Nutzung verwendet werden.
 
 ### Branding {#configure-branding-content-hub}
 
