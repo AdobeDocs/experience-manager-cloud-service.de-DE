@@ -6,7 +6,7 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 93%
@@ -39,7 +39,7 @@ The Cloud Manager user activates Brand Portal for an Experience Manager Assets a
 You require the following to activate Brand Portal on your Experience Manager Assets as a [!DNL Cloud Service] instance:
 
 * An up and running Experience Manager Assets as a [!DNL Cloud Service] instance.
-* A user having access to Cloud Manager, assigned to Profiles of the Cloud Manager Product. See [accessing Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) for more information. 
+* A user having access to Cloud Manager, assigned to Profiles of the Cloud Manager Product. See [accessing Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=de#accessing-cloud-manager) for more information. 
 
 >[!NOTE]
 >
@@ -208,11 +208,13 @@ Im folgenden Abschnitt wird die manuelle Konfiguration von Experience Manager As
 Experience Manager Assets as a [!DNL Cloud Service] wurde früher manuell über die Adobe-Entwicklerkonsole mit Brand Portal konfiguriert. Dadurch wird ein Konto-Token für Adobe Identity Management Services (IMS) zur Autorisierung Ihres Brand Portal-Mandanten abgerufen. Dazu müssen sowohl in Experience Manager Assets als auch in der Adobe-Entwicklerkonsole Einstellungen konfiguriert werden.
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
+
 <!--
 1. Under the project, configure an API using the public key to create a service account connection.
 1. Get the service account credentials and JSON Web Token (JWT) payload information.
 1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.
 -->
+
 1. Erstellen Sie in der Adobe Developer Console ein Projekt für Ihren Brand Portal-Mandanten (Organisation).
 1. Konfigurieren Sie in Experience Manager Assets den Brand Portal-Cloud-Service mithilfe des IMS-Kontos und des Brand Portal-Endpunkts (Organisations-URL).
 1. Testen Sie die Konfiguration, indem Sie ein Asset aus Experience Manager Assets in Brand Portal veröffentlichen.
@@ -235,14 +237,14 @@ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um Experi
 
 1. [Konfigurieren der OAuth-Anmeldedaten in der Adobe Developer Console](#config-oauth)
 1. [Erstellen einer neuen Adobe IMS-Integration mithilfe von OAuth](#create-ims-account-configuration)
-1. &lbrack;Konfigurieren von Cloud Service
-   <!--1. [Obtain public certificate](#public-certificate)-->
+1. [Konfigurieren von Cloud-Service](#configure-cloud-service)
+
+<!--1. [Obtain public certificate](#public-certificate)-->
+
 <!--
 1. [Create service account (JWT) connection](#createnewintegration) 
 1. [Configure IMS account](#create-ims-account-configuration)
--->
 
-<!--
 ### Create IMS configuration {#create-ims-configuration}
 
 The IMS configuration authenticates your Experience Manager Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
@@ -251,8 +253,6 @@ IMS configuration includes two steps:
 
 * [Obtain public certificate](#public-certificate) 
 * [Configure IMS account](#create-ims-account-configuration)
--->
-<!--
 
 ### Obtain public certificate {#public-certificate}
 
@@ -278,8 +278,6 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
     In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
     Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
--->
-<!--
 
 ### Create service account (JWT) connection {#createnewintegration}
 
@@ -332,8 +330,7 @@ Perform the following steps to generate the service account credentials and JWT 
 1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
 
 You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in Experience Manager Assets.
--->
-<!--
+
 1. Click **[!UICONTROL Create Integration]**.
 
 1. Select **[!UICONTROL Access an API]**, and click **[!UICONTROL Continue]**.
@@ -529,9 +526,6 @@ In the above example, an additional request and response is triggered. The syste
 >[!NOTE]
 >
 >Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
--->
-
-<!--
 
 ## Additional information {#additional-information}
 
@@ -547,15 +541,10 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
 
--->
-
-<!--
    Comment Type: draft
 
    <li> </li>
-   -->
 
-<!--
    Comment Type: draft
 
    <li>Step text</li>
