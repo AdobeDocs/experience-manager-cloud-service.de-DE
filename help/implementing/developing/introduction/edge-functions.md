@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
+source-git-commit: 6b281173b952318e5bd29644faf5c2679ec9e611
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 2%
+source-wordcount: '2053'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,9 @@ Häufige Anwendungsfälle umfassen:
 
 AEM Edge-Funktionen sind sowohl mit Edge Delivery Services als auch mit dem AEM as a Cloud Service Java-Stack für AEM Sites-Kunden kompatibel.
 
-In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
+In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
+
+Siehe auch [dieses Repository](https://github.com/adobe/aem-edge-functions-examples) mit Code-Beispielen, einschließlich des Zuordnens von Inhalten im CDN und des ordnungsgemäßen Abrufens von Inhalten aus der AEM-Veröffentlichungsebene.
 
 ## Wichtigste Vorteile {#key-benefits}
 
@@ -149,11 +151,11 @@ Stellen Sie sicher, dass die Kantenfunktion erwartungsgemäß funktioniert. Sie 
 
 `edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
-Beispielsweise für den AEM Java-Stack: <br/>
-`edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
+Beispielsweise für den AEM Java-Stack:
 
-oder für Edge Delivery Services:<br/>
-`edgefunction-pXXXXX-dYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+oder für Edge Delivery Services:
+
 
 Diese Domain mit dem Präfix *EDGEFUNCTION* dient nur zur Fehlerbehebung, darf *für Live-Traffic nicht referenziert werden* da kein stabiler Name garantiert ist. Informationen zum Bestimmen des Werts für JJJJ finden Sie in der Ausgabe des Bereitstellungsbefehls.
 
