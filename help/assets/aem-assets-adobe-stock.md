@@ -6,7 +6,7 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 99%
@@ -201,7 +201,7 @@ To configure the IMS account:
 -->
 
 1. [Einrichten eines Programms in der [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Hinzufügen der Konfiguration in der Autoreninstanz von [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Hinzufügen der Konfiguration in der Autoreninstanz von [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Einrichten eines Programms in der [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -225,7 +225,7 @@ Führen Sie die folgenden Schritte aus, um ein Programm in der [!DNL Developer C
 
 Führen Sie die folgenden Schritte aus, um die Konfiguration in Ihrer [!DNL AEM]-Autoreninstanz hinzuzufügen:
 
-1. [Einrichten einer neuen [!DNL Adobe Stock IMS configuration] in Ihrer Autoreninstanz von [!DNL AEM] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [Einrichten einer neuen [!DNL Adobe Stock IMS configuration] in Ihrer Autoreninstanz von [!DNL AEM] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [Hinzufügen der Cloud-Konfiguration zum Verbinden mit [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### Einrichten einer neuen [!DNL Adobe Stock IMS configuration] in Ihrer [!DNL AEM author]-Instanz {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -543,3 +543,4 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Video-Tutorial zur Verwendung von Adobe Stock-Assets mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=de)
 >* [Hilfe zum Adobe Stock-Unternehmensplan](https://helpx.adobe.com/de/enterprise/using/adobe-stock-enterprise.html)
 >* [Häufig gestellte Fragen zu Adobe Stock](https://helpx.adobe.com/de/stock/faq.html)
+

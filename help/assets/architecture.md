@@ -6,7 +6,7 @@ feature: Asset Management, Asset Compute Microservices
 role: Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 76%
@@ -42,3 +42,4 @@ Eine Übersicht über die Architektur von Asset-Microservices finden Sie in dies
 >* [Überblick und neue Funktionen](/help/assets/overview.md)
 >* [Unterstützte Dateiformate und MIME-Typen](file-format-support.md)
 >* [Übersicht über Asset-Microservices](asset-microservices-overview.md)
+

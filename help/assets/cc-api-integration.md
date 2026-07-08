@@ -6,7 +6,7 @@ feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 99%
@@ -127,3 +127,4 @@ Um die vorhandenen Assets zu verarbeiten, wählen Sie die Assets aus, klicken Si
 >* [Konfigurieren und verwenden Sie Asset-Microservices über Verarbeitungsprofile](/help/assets/asset-microservices-configure-and-use.md).
 >* [Integrieren Sie [!DNL Experience Manager] mit [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Asset-Aufnahme und -Verarbeitung mit Asset-Microservices: Ein Überblick](/help/assets/asset-microservices-overview.md).
+

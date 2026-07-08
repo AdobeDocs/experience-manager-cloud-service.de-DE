@@ -5,7 +5,7 @@ feature: Release Information
 role: User, Leader, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 99%
@@ -97,3 +97,4 @@ Stellen Sie für eine umfassende Validierung des Codes und des Prozesses, einsch
 >* [Wesentliche Änderungen](/help/release-notes/aem-cloud-changes.md)
 >* [Wesentliche Änderungen [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Video-Tutorials](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/overview)
+
