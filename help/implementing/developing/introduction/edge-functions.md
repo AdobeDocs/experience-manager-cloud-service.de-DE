@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie JavaScript auf CDN-Ebene mit AEM Edge-Funktio
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
+source-git-commit: 6b281173b952318e5bd29644faf5c2679ec9e611
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 2%
+source-wordcount: '2053'
+ht-degree: 1%
 
 ---
 
@@ -31,6 +31,8 @@ Häufige Anwendungsfälle umfassen:
 AEM Edge-Funktionen sind sowohl mit Edge Delivery Services als auch mit dem AEM as a Cloud Service Java-Stack für AEM Sites-Kunden kompatibel.
 
 In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
+
+Siehe auch [dieses Repository](https://github.com/adobe/aem-edge-functions-examples) mit Code-Beispielen, einschließlich des Zuordnens von Inhalten im CDN und des ordnungsgemäßen Abrufens von Inhalten aus der AEM-Veröffentlichungsebene.
 
 ## Wichtigste Vorteile {#key-benefits}
 
@@ -87,7 +89,7 @@ AEM Edge-Funktionen werden in einer YAML-Konfigurationsdatei deklariert und übe
 
 ### &#x200B;1. Einrichten einer Konfigurations-Pipeline {#configuration-pipeline}
 
-Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist (wenn Sie den AEM Java-Stack verwenden) oder dass eine Edge Delivery Services-Pipeline vorhanden ist, wenn Ihr Projekt mit Edge Delivery Services implementiert ist. Informationen [&#x200B; Konfigurieren der Pipelines finden &#x200B;](/help/operations/config-pipeline.md) unter „Verwenden von-Pipelines“.
+Stellen Sie vor dem Erstellen einer Edge-Funktion sicher, dass in Cloud Manager eine Konfigurations-Pipeline für Ihre Umgebung vorhanden ist (wenn Sie den AEM Java-Stack verwenden) oder dass eine Edge Delivery Services-Pipeline vorhanden ist, wenn Ihr Projekt mit Edge Delivery Services implementiert ist. Informationen [ Konfigurieren der Pipelines finden ](/help/operations/config-pipeline.md) unter „Verwenden von-Pipelines“.
 
 >[!NOTE]
 >
@@ -115,7 +117,7 @@ Java-Stack-Umgebungen verfügen über 1 Edge-Funktion und Edge Delivery Services
 | `secrets` | Schlüssel/Wert-Paare, die auf Cloud Manager-Geheimnisse verweisen, in Bezug auf die Edge-Funktionen einer Umgebung |
 | `kvs` | Boolescher Umschalter zur Bereitstellung eines KV-Speichers für Schlüsselwertdaten mit Lese-/Schreibzugriff zur Laufzeit, die über alle Edge-Funktionen in einer Umgebung hinweg gemeinsam genutzt werden. |
 
-Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [&#x200B; Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
+Weitere Informationen zur erweiterten Konfiguration wie `configs`, `secrets` und `kvs` finden Sie [ Abschnitt „Erweiterte Konfiguration](#advanced-function-configuration) weiter unten.
 
 ### &#x200B;3. Bereitstellen der Edge-Funktion über Cloud Manager {#deploy-functions-via-cm}
 
@@ -125,7 +127,7 @@ Stellen Sie mithilfe von Cloud Manager die Pipeline bereit, damit die Edge-Funkt
 
 ### Author {#author}
 
-Schreiben Sie Ihre Geschäftslogik für den Edge-Funktions[Code mithilfe des `src` Ordners &#x200B;](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src)Textbausteinvorlage“ als Ausgangspunkt.
+Schreiben Sie Ihre Geschäftslogik für den Edge-Funktions[Code mithilfe des `src` Ordners ](https://github.com/adobe/aem-edge-functions-boilerplate/tree/main/src)Textbausteinvorlage“ als Ausgangspunkt.
 
 ### Aufbauen {#build}
 
@@ -149,11 +151,11 @@ Stellen Sie sicher, dass die Kantenfunktion erwartungsgemäß funktioniert. Sie 
 
 `edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
-Beispielsweise für den AEM Java-Stack: <br/>
-`edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
+Beispielsweise für den AEM Java-Stack:
 
-oder für Edge Delivery Services:<br/>
-`edgefunction-pXXXXX-dYYYYY-my-edge-function.adobeaemcloud.com/weather`
+
+oder für Edge Delivery Services:
+
 
 Diese Domain mit dem Präfix *EDGEFUNCTION* dient nur zur Fehlerbehebung, darf *für Live-Traffic nicht referenziert werden* da kein stabiler Name garantiert ist. Informationen zum Bestimmen des Werts für JJJJ finden Sie in der Ausgabe des Bereitstellungsbefehls.
 
@@ -288,7 +290,7 @@ const response = await fetch(request, { backend: "my-origin-name" });
 
 >[!NOTE]
 >
->Konfigurationen, Geheimnisse und KVs sind in [Sandbox-Programmen) &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktionen selbst werden in Sandbox-Umgebungen normal ausgeführt - nur diese Entitäten werden nicht bereitgestellt.
+>Konfigurationen, Geheimnisse und KVs sind in [Sandbox-Programmen) ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge-Funktionen selbst werden in Sandbox-Umgebungen normal ausgeführt - nur diese Entitäten werden nicht bereitgestellt.
 
 ### Edge-Funktionskonfigurationsvariablen {#function-configuration}
 
