@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
+source-git-commit: 002fdc34a8429345fe11ce0f0bda320e2fcb68d0
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2241'
 ht-degree: 5%
 
 ---
@@ -215,7 +215,7 @@ Auf diese Weise können Sie genehmigte Assets aus AEM Assets direkt in Ihren ext
 
 Weitere Informationen zu Integrationen, Eigenschaften und Anpassungen finden Sie in den folgenden Artikeln:
 
-* [Beispiele für die Integration von Content Advisor](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Beispiele für die Integration von Content Advisor](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Eigenschaften von Content Advisor](/help/assets/content-advisor-properties.md)
 
