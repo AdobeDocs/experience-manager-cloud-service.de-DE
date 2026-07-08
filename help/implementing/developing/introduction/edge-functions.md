@@ -30,7 +30,7 @@ Häufige Anwendungsfälle umfassen:
 
 AEM Edge-Funktionen sind sowohl mit Edge Delivery Services als auch mit dem AEM as a Cloud Service Java-Stack für AEM Sites-Kunden kompatibel.
 
-In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
+In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
 
 Siehe auch [dieses Repository](https://github.com/adobe/aem-edge-functions-examples) mit Code-Beispielen, einschließlich des Zuordnens von Inhalten im CDN und des ordnungsgemäßen Abrufens von Inhalten aus der AEM-Veröffentlichungsebene.
 
