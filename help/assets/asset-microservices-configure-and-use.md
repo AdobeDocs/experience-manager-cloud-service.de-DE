@@ -63,7 +63,7 @@ Bei der Standardkonfiguration wird nur das einfachste Verarbeitungsprofil konfig
 
 ## Standardkonfiguration {#standard-config}
 
-[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate gemäß den Anforderungen der Benutzenden. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Smartphone und Tablet generieren. [In diesem Video erfahren Sie, wie Sie [!UICONTROL Verarbeitungsprofile“ erstellen und anwenden ] auf die erstellten Ausgabedarstellungen zugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations).
+[!DNL Experience Manager] bietet Funktionen zum Generieren spezifischerer Ausgabedarstellungen für gängige Formate gemäß den Anforderungen der Benutzenden. Ein Administrator kann zusätzliche [!UICONTROL Verarbeitungsprofile] anlegen, um die Erstellung solcher Ausgabedarstellungen zu erleichtern. Benutzer können dann eines oder mehrere der verfügbaren Profile bestimmten Ordnern zuweisen, um die zusätzliche Verarbeitung zu erhalten. Beispielsweise kann die zusätzliche Verarbeitung Ausgabedarstellungen für Web, Smartphone und Tablet generieren. [In diesem Video erfahren Sie, wie Sie [!UICONTROL Verarbeitungsprofile“ erstellen und anwenden &#x200B;] auf die erstellten Ausgabedarstellungen zugreifen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations).
 
 * **Breite und Höhe der Ausgabedarstellung**: Das Angeben der Breite und Höhe der Ausgabedarstellung sorgt für die maximale Größe des generierten Ausgabebilds. Asset-Microservices versuchen, die größtmögliche Ausgabedarstellung zu erstellen, dessen Breite und Höhe nicht größer als die angegebene Breite bzw. Höhe sind. Das Seitenverhältnis wird beibehalten, d. h. es entspricht dem Original. Ein leerer Wert bedeutet, dass bei der Asset-Verarbeitung die Pixelabmessungen des Originals berücksichtigt werden.
 
@@ -218,7 +218,7 @@ Nachdem die Asset-Microservices die Verarbeitung der hochgeladenen Assets abgesc
 
 #### Anwenden eines Workflow-Modells auf einen Ordner {#apply-workflow-model-to-folder}
 
-Für typische Anwendungsfälle nach der Verarbeitung sollten Sie den Einsatz der Methode, einen Workflow auf einen Ordner anzuwenden, erwägen. Gehen Sie wie folgt vor, um ein Workflow[!UICONTROL Modell im Ordner ]Eigenschaften“ anzuwenden:
+Für typische Anwendungsfälle nach der Verarbeitung sollten Sie den Einsatz der Methode, einen Workflow auf einen Ordner anzuwenden, erwägen. Gehen Sie wie folgt vor, um ein Workflow[!UICONTROL Modell im Ordner &#x200B;]Eigenschaften“ anzuwenden:
 
 1. Erstellen Sie ein Workflow-Modell.
 1. Wählen Sie einen Ordner aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** und dann auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]**.
