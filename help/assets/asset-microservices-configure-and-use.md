@@ -6,9 +6,9 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 07d02342ecdbb1497010baf2c4f3ab55fbfc1500
+source-git-commit: 4edee72db5a1514e6d2f0e25bc4bdf1d0f42b265
 workflow-type: tm+mt
-source-wordcount: '3102'
+source-wordcount: '3103'
 ht-degree: 98%
 
 ---
@@ -218,7 +218,7 @@ Nachdem die Asset-Microservices die Verarbeitung der hochgeladenen Assets abgesc
 
 #### Anwenden eines Workflow-Modells auf einen Ordner {#apply-workflow-model-to-folder}
 
-Für typische Anwendungsfälle nach der Verarbeitung sollten Sie den Einsatz der Methode, einen Workflow auf einen Ordner anzuwenden, erwägen. Gehen Sie wie folgt vor, um ein Workflow-Modell im Ordner [!UICONTROL Eigenschaften] anzuwenden:
+Für typische Anwendungsfälle nach der Verarbeitung sollten Sie den Einsatz der Methode, einen Workflow auf einen Ordner anzuwenden, erwägen. Gehen Sie wie folgt vor, um ein Workflow[!UICONTROL Modell im Ordner &#x200B;]Eigenschaften“ anzuwenden:
 
 1. Erstellen Sie ein Workflow-Modell.
 1. Wählen Sie einen Ordner aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** und dann auf die Registerkarte **[!UICONTROL Asset-Verarbeitung]**.
