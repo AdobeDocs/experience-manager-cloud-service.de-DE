@@ -316,7 +316,7 @@ Häufige Anwendungsszenarien umfassen:
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
-In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
+In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
 
 *Durch die Verwendung von AEM Edge Functions Beta erkennen Sie an, dass es sich noch in der Entwicklung befindet und Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit der Daten verlassen sollten. Diese Funktion wird unverändert bereitgestellt,
 können sich ohne Vorankündigung ändern und werden nicht von Produktions-SLAs abgedeckt.*
