@@ -1,13 +1,13 @@
 ---
-title: Verwalten der Vorlagen von [!DNL Dynamic Media] ?
-description: Erfahren Sie, wie Sie Vorlagen von [!DNL Dynamic Media] mit einem WYSIWYG-Vorlageneditor einrichten und mehrere Bilder und Textebenen einschließen, um Banner und Flyer schnell zu erstellen, die Sie dann in nachgelagerten Anwendungen verwenden können.
+title: Dynamic Media-Vorlagen
+description: Erfahren Sie, wie Sie mit einem WYSIWYG-Vorlageneditor Dynamic Media-Vorlagen erstellen und mehrere Bild-, Text- und Formebenen einschließen können, um Banner und Flyer schnell zu erstellen und in nachgelagerten Anwendungen zu verwenden.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: e567a059fe4a41c2b33d769d267fabdc610b113f
+source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
 workflow-type: tm+mt
-source-wordcount: '3928'
-ht-degree: 85%
+source-wordcount: '3931'
+ht-degree: 84%
 
 ---
 
