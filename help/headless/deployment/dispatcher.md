@@ -1,20 +1,24 @@
 ---
 title: Dispatcher – Endpunktkonfiguration mit AEM Headless
-description: Der Dispatcher ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Es werden verschiedene Konfigurationen verwendet, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
+description: Der Dispatcher ist eine Caching- und Zugriffsfilterschicht vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Es werden verschiedene Konfigurationen verwendet, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ecf3f0ac54acf4ac772d2906fa0b26d283549929
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 100%
+source-wordcount: '306'
+ht-degree: 72%
 
 ---
 
 
 # Dispatcher – Endpunktkonfiguration mit AEM Headless
 
-Der [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) ist eine Caching- und Sicherheitsebene vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Standardmäßig sind mehrere Konfigurationen enthalten, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
+Die [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) ist eine Caching- und Zugriffsfilterschicht vor den Adobe Experience Manager-Veröffentlichungsumgebungen. Standardmäßig sind mehrere Konfigurationen enthalten, um GraphQL-Endpunkte für Headless-Anwendungen zu öffnen.
+
+>[!IMPORTANT]
+>
+>Dispatcher-Filterregeln sind Steuerelemente zum Filtern des Zugriffs, die nicht die JCR-ACL-basierte Zugriffssteuerung für die Veröffentlichungsinstanz ersetzen. Die Veröffentlichungsinstanz muss unabhängig von der Dispatcher-Konfiguration gesichert werden. Stellen Sie sicher, dass sensible Ressourcen geschützt werden, indem Sie `jcr:read` für die `everyone` und `anonymous` Prinzipale auf Repository-Ebene verweigern, unabhängig von der Dispatcher-Filterkonfiguration.
 
 >[!NOTE]
 >
