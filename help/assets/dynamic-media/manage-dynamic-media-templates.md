@@ -16,7 +16,7 @@ ht-degree: 84%
 
 Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mithilfe von [!DNL Dynamic Media]-Vorlagen in einem WYSIWYG-Vorlageneditor. Veröffentlichen Sie Ihre [!DNL Dynamic Media]-Vorlage und verwenden Sie sie in nachgelagerten Anwendungen. Eine [!DNL Dynamic Media]-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451736/?captions=ger&learn=on&enablevpops)
 
 Zu den Hauptfunktionen gehören:
 
