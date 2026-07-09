@@ -4,9 +4,9 @@ description: Dies sind die Versionshinweise für die Vorabversion des universell
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 3da0b684974f92ae078fbefb8adeaf1554291d8c
+source-git-commit: 5dd5d30668878da0f178ed1cac03a7454d382688
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionshinweise zur Vorschau des universellen Editors {#preview}
 
-Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 2. Juli 2026 allgemein verfügbar sein.
+Dies sind die Versionshinweise für die **Vorschauversion** des universellen Editors. Diese Funktionen sind derzeit in der „Vorschau-Umgebung“ **universellen Editors**. Diese Funktionen werden voraussichtlich am 16. Juli 2026 allgemein verfügbar sein.
 
 Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, welche Änderungen am universellen Editor bevorstehen, und sie testen können, indem Sie [zu Ihrer Vorschauversion wechseln.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,6 +28,5 @@ Diese **Vorschau**-Versionshinweise werden bereitgestellt, damit Sie wissen, wel
 
 ## Bevorstehende Änderungen {#upcoming-improvements}
 
-* Die Aktionen zum Rückgängigmachen/Wiederholen wurden verbessert.
-* Sortierte Listen werden jetzt korrekt dargestellt, wenn sie inline mit dem Rich-Text-Editor bearbeitet werden.
-* Die Drag-and-Drop-Neuanordnung von Abschnitten funktioniert jetzt ordnungsgemäß.
+* Die Optionsfelder zum Auswählen des [responsiven Modus](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) des Editors verfügen jetzt über barrierefreie Beschriftungen.
+* Mit der Option Alle löschen für Kontrollkästchen werden nun alle Felder ordnungsgemäß gelöscht, auch wenn eine Standardeinstellung vorhanden ist.
