@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 99%
+source-wordcount: '2189'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Die Vorteile dieser Flexibilität zeigen sich in Programmen mit einer großen Au
 
 Siehe [Entdecken Sie Sling in 15 Minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) für die ersten Schritte zur Entwicklung mit Sling.
 
-Das folgende Diagramm erläutert die Sling-Skriptauflösung: Es wird gezeigt, wie Sie von der HTTP-Anfrage zum Inhaltsknoten, vom Inhaltsknoten zum Ressourcentyp, vom Ressourcentyp zum Skript gelangen und welche Skriptvariablen verfügbar sind. 
+Das folgende Diagramm erläutert die Sling-Skriptauflösung. Es zeigt, wie Sie von einer HTTP-Anfrage zum Inhaltsknoten, von einem Inhaltsknoten zum Ressourcentyp, vom Ressourcentyp zum Skript und welche Skriptvariablen verfügbar sind.
 
 ![Verstehen der Auflösung des Apache Sling-Skripts](assets/sling-cheatsheet-01.png)
 
@@ -181,8 +181,6 @@ Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der
 
 Beispiel: Eine Anfrage zum Zugriff auf die Ressource
 
-
-
 * `/content/corporate/jobs/developer.print.a4.html`
 
 Vom Typ
@@ -296,7 +294,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 * `/home` – Anwender- und Gruppeninformationen.
 * `/libs` – Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` stellen die vordefinierten AEM-Funktionen dar. Der Inhalt in `/libs` kann nicht geändert werden. Die für Ihre Website spezifischen Funktionen sollten unter `/apps` erstellt werden.
 * `/tmp` - Temporärer Arbeitsbereich.
-* `/var` – Dateien, die sich ändern und vom System aktualisiert werden, wie Audit-Logs, Statistiken, Event-Handling.
+* `/var` – Dateien, die sich ändern und vom System aktualisiert werden, wie Auditprotokolle, Statistiken, Event-Handling.
 
 >[!CAUTION]
 >
