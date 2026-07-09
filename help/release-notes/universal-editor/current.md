@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise für Universal Editor 2026.07.02
-description: Dies sind die Versionshinweise für die Version 2026.07.02 des universellen Editors.
+title: Versionshinweise zum universellen Editor 2026.07.09
+description: Dies sind die Versionshinweise für die Version 2026.07.09 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 3351ce89ae2f5f3a60983a8d2d9d1a447d468b4b
+source-git-commit: 06bb5b7e685336a5b628e6523f3ae9733a2e78e2
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 16%
+source-wordcount: '126'
+ht-degree: 18%
 
 ---
 
 
-# Versionshinweise für Universal Editor 2026.07.02 {#release-notes}
+# Versionshinweise zum universellen Editor 2026.07.09 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 2. Juli 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 9. Juli 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -24,12 +24,9 @@ Dies sind die Versionshinweise für die Version vom 2. Juli 2026 des universelle
 >
 >Die aktuellen Versionshinweise für Adobe Experience Manager as a Cloud Service finden Sie auf [dieser Seite.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## Neue Funktionen {#what-is-new}
-
-* Der Editor unterstützt jetzt ein `preview`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags), um das Laden des Editors im [Vorschaumodus“ zu erzwingen](/help/sites-cloud/authoring/sites-console/previewing-content.md)
-* Der Editor unterstützt jetzt ein `readonly`Meta[Tag](/help/implementing/universal-editor/customizing.md#meta-tags) zum Deaktivieren der Bearbeitung, sodass Benutzende weiterhin eine beliebige Komponente auswählen, den Inhalt jedoch nicht ändern können.
-
 ## Andere Verbesserungen {#other-improvements}
 
-* Die Barrierefreiheit von Überschriftenhierarchien wurde verbessert.
-* Es wurden Verbesserungen an der Barrierefreiheit vorgenommen, damit der Fokus in der Positionsleiste ordnungsgemäß bleibt, um die Tastaturnavigation des Editors zu erleichtern.
+* [Rückgängig/Wiederholen](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)-Aktionen wurden verbessert.
+* [Sortierte Listen](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) werden jetzt korrekt gerendert, wenn sie inline mit dem Rich-Text-Editor bearbeitet werden.
+* [Neuanordnung von Abschnitten durch Ziehen und Ablegen](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move) funktioniert jetzt ordnungsgemäß.
+* Dropdown-Listen für die Feldauswahl im Eigenschaftenbereich werden in bestimmten Situationen nicht mehr durch die Experience Platform-Navigationsleiste verdeckt.
