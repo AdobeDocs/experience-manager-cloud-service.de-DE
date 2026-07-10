@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07e4c47ac1f0dc531ebc3fb61219a8dcac0318b0
+source-git-commit: 8b95cf0f3e83e469c8698e5b6e7ddd01a365130b
 workflow-type: tm+mt
 source-wordcount: '7563'
 ht-degree: 84%
@@ -656,7 +656,7 @@ ht-degree: 84%
       + [Farb-Tags für Bilder](/help/assets/color-tag-images.md)
       + [PDF-Dokumente verwalten](/help/assets/manage-pdf-documents.md)
       + [Zielauswahl für Micro-Frontend](/help/assets/destination-selector.md)
-      + [AEM Assets-Aktivierungsbericht (Beta)](/help/assets/aem-assets-activation-report.md)
+      + {hide-from-toc}[AEM Assets-Aktivierungsbericht (Beta)](/help/assets/aem-assets-activation-report.md)
    + Konfigurieren, Verwalten und Erweitern von [!DNL Assets] {#admin}
       + [Erkennen doppelter Assets](/help/assets/detect-duplicate-assets.md)
       + [Verweise auf Entwicklerdokumente und APIs](/help/assets/developer-reference-material-apis.md)
@@ -1356,7 +1356,7 @@ ht-degree: 84%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=de)
          + [Markdown-Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=de)
-      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=de)
+      + [Vorschau von Fragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Strukturbaum](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=de)
    + Inhaltsfragment-Selektor {#content-fragment-selector}
       + [Micro-Frontend-Inhaltsfragment-Selektor – Überblick](/help/headless/content-fragment-selector/overview.md)

@@ -5,9 +5,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
-source-git-commit: 07e4c47ac1f0dc531ebc3fb61219a8dcac0318b0
+source-git-commit: 8b95cf0f3e83e469c8698e5b6e7ddd01a365130b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Gemeinsam verbinden diese Metriken interne Asset-Aktivitäten mit externer Reich
 
 Dies ist nur der Anfang Ihres Journey mit AEM Assets, und diese Metriken werden sich parallel dazu weiterentwickeln. Wir würden uns über Ihr Feedback freuen, wenn Sie sie verwenden, damit wir diese Berichte für Sie nützlicher gestalten können.
 
-**Hinweis**: Wenn Sie diese mit Adobe Product/Engineering überprüfen oder Feedback einholen möchten, senden Sie eine E-Mail-`GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
+**Hinweis**: Wenn Sie diese mit Adobe Product/Engineering überprüfen oder Feedback einholen möchten, senden Sie eine E-Mail an `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 
 | | Metrik | Definition |
 |---|---|---|
