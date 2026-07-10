@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mit einem WYSIWYG-Vorlageneditor Dynamic Medi
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
+source-git-commit: 625eb59b08391a0a67f2cffb4e026418c49bc2f2
 workflow-type: tm+mt
 source-wordcount: '3931'
 ht-degree: 84%
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 Erstellen Sie in Echtzeit anpassbare Vorlagen für Ihre Banner und Flyer mithilfe von [!DNL Dynamic Media]-Vorlagen in einem WYSIWYG-Vorlageneditor. Veröffentlichen Sie Ihre [!DNL Dynamic Media]-Vorlage und verwenden Sie sie in nachgelagerten Anwendungen. Eine [!DNL Dynamic Media]-Vorlage enthält Bild- und Textebenen. Fügen Sie den Bild- und Textebenen der Vorlage Parameter hinzu und verwenden Sie [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media), um die Ebene neu zu positionieren, ihre Größe zu ändern und ihren Inhalt in Echtzeit zu aktualisieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451736/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451736/?captions=ger&learn=on&enablevpops){transcript=true}
 
 Zu den Hauptfunktionen gehören:
 
