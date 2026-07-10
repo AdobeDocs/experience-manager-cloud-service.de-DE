@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine Edge Delivery-Site mit einem privaten od
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
+source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 54%
+source-wordcount: '442'
+ht-degree: 35%
 
 ---
 
@@ -42,3 +42,22 @@ Um Code aus einem privaten Git-Repository abzurufen, das bereits in Cloud Manage
 1. Wählen Sie die zu synchronisierende Verzweigung aus und klicken Sie auf **Synchronisieren**.
 
 Jeder Commit bei einer Verzweigung löst jetzt eine automatische Synchronisierung aus. Nutzen Sie **Code synchronisieren** erneut, wenn Sie eine vollständige manuelle Synchronisierung benötigen.
+
+## Authentifizieren von Git-Klon-Anfragen {#authenticate-git-clone-requests}
+
+Sie können Ihr [!DNL Bring Your Own Git]-Repository aus Cloud Manager entweder mithilfe eines IMS-Tokens oder des von Cloud Manager beim Konfigurieren der Site generierten Byogit-Geheimnisses klonen. Beide Anmeldeinformationen authentifizieren sich beim Klon-Endpunkt, sodass Sie die geheimen Daten verwenden können, die helix-admin bereits für die Synchronisierung [!DNL Edge Delivery Services] Codes speichert.
+
+Der Klon-Endpunkt akzeptiert die Anmeldeinformationen in der `Authorization`-Kopfzeile. Cloud Manager validiert das Byogit-Geheimnis anhand des für dieses Repository gespeicherten Werts. Anfragen, die weder ein gültiges IMS-Token noch ein gültiges Byogit-Geheimnis enthalten, geben eine `401` Antwort zurück.
+
+>[!NOTE]
+>
+>Bestehende Workflows für IMS-authentifizierte Klone sind davon nicht betroffen. Das Byogit-Geheimnis ist eine zusätzliche Option, kein Ersatz.
+
+**So klonen Sie das Repository mit dem byogit-Geheimnis:**
+
+1. Kopieren Sie die geheimen Daten, die Cloud Manager bei der Konfiguration der Site zurückgibt.
+1. Führen Sie den Klonbefehl aus und übergeben Sie die geheimen Daten in die `Authorization`.
+
+   `git -c http.extraHeader="Authorization: <byogit-secret>"` Klonen von `https://cm-repo.adobe.io/api/program/<program-id>/repository/<repository-id>.git`
+
+   Ersetzen Sie `<byogit-secret>` durch die geheimen Daten aus Cloud Manager und ersetzen Sie `<program-id>` und `<repository-id>` durch die Werte aus Ihrem Programm.

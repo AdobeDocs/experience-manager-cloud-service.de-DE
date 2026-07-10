@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 0171e2e6a27a8b60bcd94792e616961598f580fb
+source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 29%
+source-wordcount: '1740'
+ht-degree: 28%
 
 ---
 
@@ -59,8 +59,7 @@ Nachdem Sie in der Benutzeroberfläche von Cloud Manager ein Programm eingericht
 
 1. Klicken Sie auf **Weiter**.
 
-1. Die restlichen Schritte, die Sie zum Abschließen der Konfiguration Ihrer produktionsfremden Pipeline verwenden, hängen vom Typ des Quell-Codes ab, den Sie verwenden möchten.
-Wählen Sie auf der Registerkarte **Source** des Dialogfelds **Produktionsfremde Pipeline hinzufügen** den Code-Typ aus, den die produktionsfremde Pipeline verarbeitet.
+1. Die restlichen Schritte, die Sie zum Abschließen der Konfiguration Ihrer produktionsfremden Pipeline verwenden, hängen vom Typ des Quell-Codes ab, den Sie verwenden möchten.Wählen Sie auf der Registerkarte **Source** des Dialogfelds **Produktionsfremde Pipeline hinzufügen** den Code-Typ aus, den die produktionsfremde Pipeline verarbeitet.
 
    * **[Ich verwende den Full-Stack-Code](#full-stack-code)**
    * **[Ich verwende eine zielgerichtete Bereitstellung](#targeted-deployment)**
@@ -90,11 +89,11 @@ Gehen Sie wie folgt vor, um die Konfiguration der produktionsfremden Full-Stack-
    * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus dem die Pipeline erstellt. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
    * **Strategie erstellen**
       * **Vollständiger Build**: Erstellt jedes Mal alle Module im Repository.
-      * BETA **Smart Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
+      * **Smarter Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
 
-        >[!IMPORTANT]
+        >[!NOTE]
         >
-        >Smarter Build ist nur für Code-Qualitäts-Pipelines und Bereitstellungs-Pipelines für Entwicklungs-Full-Stack-Code verfügbar.
+        >Smart Build ist für Code-Qualitäts-Pipelines und alle Full-Stack-Bereitstellungs-Pipelines (Entwicklung, Staging, Produktion) verfügbar.
 
    * **Konfiguration der Webstufe ignorieren** Kontrollkästchen - Wenn diese Option aktiviert ist, stellt die Pipeline Ihre Webstufenkonfiguration nicht bereit.
 
@@ -177,7 +176,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 Die Pipeline wird gespeichert, und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
 
-## Über die Verwendung von Smart Build in einer produktionsfremden Pipeline{#about-smart-build-non-production-pipeline}
+## Über die Verwendung von Smart Build in Ihrer Pipeline{#about-smart-build-non-production-pipeline}
 
 **Smart Build** in Cloud Manager ist eine optimierte Build-Strategie für produktionsfremde Pipelines. Smartes Erstellen reduziert Build-Zeiten, indem Module zwischengespeichert und nur die Module neu erstellt werden, die seit der letzten erfolgreichen Ausführung geändert wurden. Unveränderte Module werden aus dem Cache wiederverwendet, während nur geänderte Module und ihre Abhängigkeiten neu erstellt werden, was die Effizienz für Workflows für die iterative Entwicklung verbessert.
 
@@ -185,6 +184,7 @@ Smart Build ist derzeit nur für Folgendes verfügbar:
 
 * Code-Qualitäts-Pipelines
 * Entwickeln Sie Full-Stack-Bereitstellungs-Pipelines.
+* Staging- und Produktions-Full-Stack-Bereitstellungs-Pipelines
 
 >[!NOTE]
 >
