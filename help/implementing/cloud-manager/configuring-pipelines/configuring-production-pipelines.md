@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1856'
 ht-degree: 54%
 
 ---
@@ -34,7 +34,7 @@ Konfigurieren Sie Ihre Pipeline-Einstellungen über [!UICONTROL Cloud Manager], 
 >
 >Nach der Ersteinrichtung können Sie die [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
-## Hinzufügen einer neuen Produktions-Pipeline {#adding-production-pipeline}
+## Hinzufügen einer Produktions-Pipeline {#adding-production-pipeline}
 
 Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] verfügen, können Sie eine Produktions-Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 
@@ -237,7 +237,7 @@ Wenn Sie auf unerwartetes Build-Verhalten stoßen, sollten Sie das Caching für 
 | Keine Leistungsverbesserung | ・ Stellen Sie sicher, dass mehrere Durchgänge stattgefunden haben (Aufwärmen des Cache).<br>・ Prüfen Sie, ob die meisten Module häufig wechseln. |
 | Unerwartete Artefakte oder fehlende Änderungen | ・ Überprüfen, ob Änderungen außerhalb des Maven-Abhängigkeits-Trackings liegen<br>・ Verwenden Sie **Vollständiger Build** zur Überprüfung. |
 
-Informationen zum Aktivieren von Smart Build [&#x200B; Sie unter „Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline).
+Informationen zum Aktivieren von Smart Build [ Sie unter „Hinzufügen einer Produktions-Pipeline](#adding-production-pipeline).
 
 ## Überspringen von Dispatcher-Paketen {#skip-dispatcher-packages}
 

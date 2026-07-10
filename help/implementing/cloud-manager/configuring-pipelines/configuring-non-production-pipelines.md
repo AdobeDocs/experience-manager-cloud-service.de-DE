@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1739'
 ht-degree: 28%
 
 ---
@@ -24,7 +24,7 @@ Benutzende müssen über die Rolle **[Bereitstellungs-Manager](/help/onboarding/
 >
 >Nach der Ersteinrichtung können Sie die [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
-## Hinzufügen einer neuen produktionsfremden Pipeline
+## Hinzufügen einer produktionsfremden Pipeline
 
 Nachdem Sie in der Benutzeroberfläche von Cloud Manager ein Programm eingerichtet und mindestens eine Umgebung erstellt haben, können Sie produktionsfremde Pipelines hinzufügen. Verwenden Sie diese Pipelines, um die Code-Qualität zu testen, bevor Sie sie in Produktionsumgebungen bereitstellen.
 

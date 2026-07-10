@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2026.7.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 3%
@@ -42,8 +42,8 @@ Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte R
 
   Weitere Informationen finden Sie in den folgenden Themen:
 
-   * [Über die Verwendung von Smart Build in einer Produktions](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)Pipeline und [Über die Verwendung von Smart Build in einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
-   * [Produktions-Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code) und [produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
+   * [Über die Verwendung von Smart Build in einer Produktions](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#about-smart-build-production-pipeline)Pipeline und [Über die Verwendung von Smart Build in einer produktionsfremden Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
+   * [Produktions-Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) und [produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
 
 * **Inhaltskopie: Programmübergreifender und Vorwärtsfluss**\
   Cloud Manager **Inhaltskopie** ermöglicht es Teams, Inhalte ohne Bereitstellung zwischen AEM-Umgebungen zu kopieren, und bietet zwei Funktionen, die für alle Programme verfügbar sind. Die programmübergreifende Unterstützung ermöglicht das Kopieren von Inhalten über verschiedene Cloud Manager-Programme hinweg, nicht nur innerhalb desselben Programms. Der Vorwärtsfluss entfernt die gerichtete Einschränkung, sodass Inhalte von jeder Umgebung in jede andere kopiert werden können - auch von niedrigeren Umgebungen nach oben.
@@ -79,7 +79,7 @@ Mit Cloud Manager können Sie jetzt konfigurieren, ob für Ihr Programm eine Ver
 
 Weitere Informationen finden Sie unter [Flexible Veröffentlichungsebene (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-Um an der Beta teilzunehmen, senden Sie eine E-Mail an [&#128279;](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
+Um an der Beta teilzunehmen, senden Sie eine E-Mail an [](mailto:grp-beta_xwalk-publish_config@adobe.com)grp-beta_xwalk-publish_config@adobe.com) mit Ihrer Adobe Organisations-ID und Programm-ID.
 
 <!-- 
 OLD
