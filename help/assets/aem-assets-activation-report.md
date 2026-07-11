@@ -3,11 +3,10 @@ title: AEM Assets-Aktivierungsbericht (Beta)
 description: Definitionen für Beta-Metriken (AEM Assets Activation Report), die Aktivierungen (Downloads, Freigaben) und Verteilungen (Dynamic Media, Sites) umfassen.“
 role: Admin
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
-source-git-commit: 8b95cf0f3e83e469c8698e5b6e7ddd01a365130b
+source-git-commit: 0b5e61f75a97bd31da034ebf282779a634217366
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -33,7 +32,7 @@ Dies ist nur der Anfang Ihres Journey mit AEM Assets, und diese Metriken werden 
 | | Metrik | Definition |
 |---|---|---|
 | **Aktivierungen** | **Downloads (Assets-Ansicht)** | Die Häufigkeit, mit der Assets direkt aus der AEM Assets-Kernumgebung heruntergeladen werden, z. B. von internen Benutzenden, die Dateien über die Assets-Ansichtsoberfläche durchsuchen und herunterladen. |
-| | **Linkfreigabe (Assets-Ansicht)** | Die Anzahl der Freigaben (über freigebbare Links, die generiert wurden) in der AEM Assets-Ansicht, um externen oder nicht authentifizierten Benutzenden direkten Zugriff auf bestimmte Assets, Ordner oder Sammlungen zu gewähren, ohne sich anmelden zu müssen. |
+| | **Freigaben (Assets-Ansicht)** | Die Anzahl der Freigaben (über freigebbare Links, die generiert wurden) in der AEM Assets-Ansicht, um externen oder nicht authentifizierten Benutzenden direkten Zugriff auf bestimmte Assets, Ordner oder Sammlungen zu gewähren, ohne sich anmelden zu müssen. |
 | | **Downloads (Content Hub)** | Die Häufigkeit, mit der Assets von Benutzenden über Content Hub heruntergeladen werden, die Self-Service-Benutzeroberfläche, über die umfassendere Teams genehmigte, markenfertige Assets durchsuchen und herunterladen können. |
 | | **Freigaben (Content Hub)** | Die Anzahl der Freigaben (über freigebbare Links, die generiert wurden) innerhalb von Content Hub, um anderen Benutzenden direkten Zugriff auf ausgewählte Assets oder Sammlungen zu gewähren. |
 | | **Für Content Hub aktivieren** | Die Aktion des Genehmigens/Veröffentlichens eines Assets aus AEM Assets, damit es für Endbenutzende in Content Hub verfügbar wird. In Content Hub werden nur genehmigte Assets angezeigt. |
