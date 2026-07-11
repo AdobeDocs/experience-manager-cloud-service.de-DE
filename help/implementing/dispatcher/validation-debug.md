@@ -6,8 +6,8 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '3028'
-ht-degree: 100%
+source-wordcount: '3077'
+ht-degree: 94%
 
 ---
 
@@ -198,8 +198,7 @@ Es wird empfohlen, dass die oben genannten Dateien auf die unten aufgeführten u
 
 * `conf.d/available_vhosts/default.vhost`
 
-Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.
-Kopieren Sie die Datei „default.vhost“ nicht direkt in `conf.d/enabled_vhosts`.
+Enthält einen virtuellen Beispiel-Host. Erstellen Sie für Ihren eigenen virtuellen Host eine Kopie dieser Datei, passen Sie sie an, gehen Sie zu `conf.d/enabled_vhosts` und erstellen Sie eine symbolische Verknüpfung zu Ihrer angepassten Kopie.Kopieren Sie die Datei „default.vhost“ nicht direkt in `conf.d/enabled_vhosts`.
 
 Stellen Sie sicher, dass immer ein virtueller Host verfügbar ist, der mit den Server-Aliassen `\*.local`, `localhost` und `127.0.0.1` übereinstimmt, die für die Dispatcher-Invalidierung benötigt werden. Die Server-Aliase `*.adobeaemcloud.net` und `*.adobeaemcloud.com` werden für interne Adobe-Prozesse benötigt.
 
@@ -295,7 +294,7 @@ Das Skript umfasst die folgenden drei Phasen:
 
 1. Es führt den Validator aus. Wenn die Konfiguration nicht gültig ist, schlägt das Skript fehl.
 2. Es führt den Befehl `httpd -t` aus, um zu testen, ob die Syntax korrekt ist, sodass „Apache httpd“ gestartet werden kann. Bei Erfolg sollte die Konfiguration für die Bereitstellung bereit sein.
-3. Überprüft, ob die Untergruppe der Dispatcher-SDK-Konfigurationsdateien, die unveränderlich sein sollen, wie im [Dateistruktur-Abschnitt](##flexible-mode-file-structure) beschrieben, nicht geändert wurde und der aktuellen SDK-Version entspricht.
+3. Überprüft, ob die Teilmenge der Dispatcher-SDK-Konfigurationsdateien, die unveränderlich sein sollen, wie im [Dateistruktur-Abschnitt](##flexible-mode-file-structure) beschrieben, nicht geändert wurde und der aktuellen SDK-Version entspricht.
 
 Während einer Cloud Manager-Bereitstellung wird auch die `httpd -t`-Syntaxprüfung ausgeführt und alle Fehler werden in das `Build Images step failure`-Protokoll von Cloud Manager aufgenommen.
 
@@ -316,15 +315,18 @@ Nachfolgend finden Sie Fehlerbehebungsverfahren für das Debugging häufiger Val
 
 **Kann einen `conf.dispatcher.d`-Unterordner im Archiv nicht finden**
 
-Ihr Archiv sollte Ordner `conf.d` und `conf.dispatcher.d` enthalten. Beachten Sie, dass Sie **nicht** das Präfix `etc/httpd` in Ihrem Archiv verwenden sollten.
+Ihr Archiv sollte Ordner `conf.d` und `conf.dispatcher.d` enthalten. Beachten Sie Folgendes: **nicht**
+Verwenden Sie das Präfix `etc/httpd` in Ihrem Archiv.
 
 **Keine Farm gefunden in`conf.dispatcher.d/enabled_farms`**
 
 Ihre aktivierten Farmen sollten sich im angegebenen Unterordner befinden.
 
-**Enthaltene Datei (…) muss wie folgt benannt sein: …**
+**Datei enthalten (…) Muss heißen: …**
 
-Es gibt zwei Abschnitte in Ihrer Farm-Konfiguration, die eine bestimmte Datei enthalten **müssen**: `/renders` und `/allowedClients` im Abschnitt `/cache`. Diese Abschnitte müssen wie folgt aussehen:
+Es gibt zwei Abschnitte in Ihrer Farm-Konfiguration, die **müssen** enthalten:
+Spezifische Datei: `/renders` und `/allowedClients` im Abschnitt `/cache`. Diese
+Die Abschnitte müssen wie folgt aussehen:
 
 ```
 /renders {
@@ -355,8 +357,8 @@ Alternativ können Sie die **Standardversion** dieser Dateien einschließen, der
 
 **Anweisung einbeziehen in (…), kein bekannter Speicherort: …**
 
-Abgesehen von den sechs oben erwähnten Abschnitten ist die Verwendung der 
-Anweisung `$include` nicht zulässig. So würde z. B. der folgende Text diesen Fehler erzeugen:
+Abgesehen von den sechs oben erwähnten Abschnitten ist dies nicht zulässig
+Um beispielsweise die `$include`-Anweisung zu verwenden, würde der folgende Fehler ausgegeben:
 
 ```
 /invalidate {
@@ -366,7 +368,8 @@ Anweisung `$include` nicht zulässig. So würde z. B. der folgende Text diesen 
 
 **Zugelassene Clients/Renderer nicht einbezogen von: …**
 
-Dieser Fehler tritt auf, wenn Sie im Abschnitt `/cache` kein „include“ für `/renders` und `/allowedClients` angeben. Siehe **einbezogene Datei (…) muss einen Namen haben: …**, um mehr zu erfahren.
+Dieser Fehler tritt auf, wenn Sie im Abschnitt `/cache` kein „include“ für `/renders` und `/allowedClients` angeben. Siehe
+**Datei enthalten (…) Muss benannt werden: …** Abschnitt für weitere Informationen.
 
 **Filter darf kein glob-Muster nutzen, um Anfragen zuzulassen**
 
@@ -380,7 +383,7 @@ Es ist nicht sicher, Anfragen mit einer `/glob`-Stilregel zuzulassen, die mit de
 
 Diese Anweisung soll Anfragen nach `css`-Dateien zulassen, lässt aber auch Anfragen nach **beliebigen** Ressourcen gefolgt von der Abfragezeichenfolge `?a=.css` zu. Daher ist die Verwendung solcher Filter verboten (siehe auch CVE-2016-0957).
 
-**einbezogene Datei (…) stimmt mit keiner bekannten Datei überein**
+**Enthaltene Datei (…) Entspricht keiner bekannten Datei**
 
 Es gibt zwei Arten von Dateien in Ihrer virtuellen Apache-Host-Konfiguration, die als Include-Dateien definiert werden können: Umschreibungen und Variablen.
 
@@ -403,13 +406,13 @@ Sie können beispielsweise wie folgt eine Datei in ein neu erstelltes Unterverze
 Include conf.d/includes/mynewdirectory/myincludefile.conf
 ```
 
-Alternativ können Sie die **Standardversion** der Neuschreibungsregeln einbeziehen, deren Name `conf.d/rewrites/default_rewrite.rules` lautet.
-Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
+Alternativ können Sie die **Standardversion** der Neuschreibungsregeln einbeziehen, deren Name `conf.d/rewrites/default_rewrite.rules` lautet.Beachten Sie, dass es keine Standardversion der Variablendateien gibt.
 
 **Veraltetes Konfigurations-Layout erkannt, Kompatibilitätsmodus wird aktiviert**
 
-Diese Meldung weist darauf hin, dass Ihre Konfiguration das veraltete Layout von Version 1 aufweist, das eine vollständige Apache-Konfiguration und Dateien mit `ams_`-Präfixen enthält. Obwohl diese Konfiguration für
-Abwärtskompatibilität weiterhin unterstützt wird, sollten Sie dennoch zum neuen Layout wechseln.
+Diese Meldung weist darauf hin, dass Ihre Konfiguration das Layout Version 1 aufweist, das nicht mehr unterstützt wird und eine vollständige enthält
+Apache-Konfiguration und Dateien mit `ams_` Präfixen. Diese Konfiguration wird jedoch für die Rückwärtskonfiguration weiterhin unterstützt
+Kompatibilität, Sie sollten zum neuen Layout wechseln.
 
 Die erste Phase kann auch **separat** anstatt vom Wrapper-Skript `validate.sh` ausgeführt werden.
 
@@ -441,8 +444,7 @@ In dieser Phase wird die Apache-Syntax überprüft, indem Apache HTTPD in einem 
 
 >[!NOTE]
 >
->Windows-Benutzerinnen und -Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.
->Sowohl für Windows als auch für macOS empfiehlt Adobe die Verwendung von Docker Desktop.
+>Windows-Benutzerinnen und -Benutzer müssen Windows 10 Professional oder andere Distributionen verwenden, die Docker unterstützen. Dies ist eine Voraussetzung für das Ausführen und Debuggen von Dispatcher auf einem lokalen Computer.Sowohl für Windows als auch für macOS empfiehlt Adobe die Verwendung von Docker Desktop.
 
 Diese Phase kann auch unabhängig über `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` initiiert werden.
 
@@ -603,8 +605,7 @@ Wenn Sie Ihre Konfiguration lokal testen, können Sie verschiedene Umgebungstype
 $ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
-Der Standardausführungsmodus, wenn kein Wert für DISP_RUN_MODE übergeben wird, ist „Dev“.
-Für eine vollständige Liste der verfügbaren Optionen und Variablen führen Sie das Skript `docker_run.sh` ohne Argumente aus.
+Der Standardausführungsmodus, wenn kein Wert für DISP_RUN_MODE übergeben wird, ist „Dev“.Für eine vollständige Liste der verfügbaren Optionen und Variablen führen Sie das Skript `docker_run.sh` ohne Argumente aus.
 
 ## Anzeigen der Dispatcher-Konfiguration, die von Ihrem Docker-Container verwendet wird {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
@@ -633,7 +634,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 Mit der Cloud Manager-Version 2021.7.0 generieren neue Cloud Manager-Programme Maven-Projektstrukturen mit [AEM-Archetyp 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) oder höher, der die Datei **opt-in/USE_SOURCES_DIRECTLY** enthält. Dadurch werden frühere Einschränkungen des [veralteten Modus](/help/implementing/dispatcher/validation-debug-legacy.md) bezüglich der Anzahl und Größe von Dateien entfernt, was dazu führt, dass das SDK und die Laufzeitumgebung die Konfiguration auf verbesserte Weise validieren und bereitstellen. Wenn Ihre Dispatcher-Konfiguration nicht über diese Datei verfügt, wird eine Migration dringend empfohlen. Gehen Sie wie folgt vor, um einen sicheren Übergang zu gewährleisten:
 
-1. **Lokale Tests.** Fügen Sie mithilfe des neuesten Dispatcher-Tools-SDK den Ordner und die Datei `opt-in/USE_SOURCES_DIRECTLY` hinzu. Befolgen Sie die Anweisungen in diesem Artikel zur „lokalen Validierung“, um zu testen, ob der Dispatcher lokal funktioniert.
+1. **Lokale Tests.** Fügen Sie mithilfe des neuesten Dispatcher-Tools SDK die Ordner- und `opt-in/USE_SOURCES_DIRECTLY` hinzu. Befolgen Sie die Anweisungen in diesem Artikel zur „lokalen Validierung“, um zu testen, ob der Dispatcher lokal funktioniert.
 1. **Cloud-Entwicklungstests:**
    * Übertragen Sie die Datei `opt-in/USE_SOURCES_DIRECTLY` in eine Git-Verzweigung, die von der produktionsfremden Pipeline in eine Cloud-Entwicklungsumgebung bereitgestellt wird.
    * Verwenden Sie Cloud Manager, um eine Bereitstellung in einer Cloud-Entwicklungsumgebung durchzuführen.

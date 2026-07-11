@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 883e35047917de29fb71331fe2f28243e66a16b7
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1856'
 ht-degree: 54%
 
 ---
@@ -34,7 +34,7 @@ Konfigurieren Sie Ihre Pipeline-Einstellungen über [!UICONTROL Cloud Manager], 
 >
 >Nach der Ersteinrichtung können Sie die [Pipeline-Einstellungen bearbeiten](managing-pipelines.md).
 
-## Hinzufügen einer neuen Produktions-Pipeline {#adding-production-pipeline}
+## Hinzufügen einer Produktions-Pipeline {#adding-production-pipeline}
 
 Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung mit der Benutzeroberfläche von [!UICONTROL Cloud Manager] verfügen, können Sie eine Produktions-Pipeline hinzufügen, indem Sie die folgenden Schritte ausführen.
 
@@ -61,7 +61,7 @@ Nachdem Sie Ihr Programm eingerichtet haben und über mindestens eine Umgebung m
 
    **Verhalten bei bedeutenden Metrikfehlern**: Bei der Einrichtung oder Bearbeitung der Pipeline kann der **Bereitstellungs-Manager** festlegen, wie sich die Pipeline verhält, wenn bei einem der Quality Gates ein wichtiger Fehler auftritt. Folgende Optionen sind verfügbar:
 
-   * **Jedes Mal fragen**: Dies ist die Standardeinstellung, die ein manuelles Eingreifen bei jedem bedeutenden Fehler verlangt.
+   * **Jedes Mal fragen**: Dies ist die Standardeinstellung, Bei einem wichtigen Fehler ist ein manuelles Eingreifen erforderlich.
    * **Sofortiger Ausfall**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler abgebrochen. Dieser Prozess emuliert einen Benutzer, der manuell jeden Fehler ablehnt.
    * **Sofort fortfahren**: Wenn diese Option ausgewählt ist, wird die Pipeline bei einem bedeutenden Fehler automatisch fortgesetzt. Dieser Prozess emuliert einen Benutzer, der manuell jeden Fehler genehmigt.
 
@@ -97,11 +97,7 @@ Eine Pipeline mit Full-Stack-Code stellt gleichzeitig Backend- und Frontend-Code
    * **Git-Verzweigung**: Wählen Sie in der Dropdown-Liste die Verzweigung im ausgewählten Repository aus, aus dem die Pipeline erstellt. Der Standardwert lautet `main`. Die Pipeline verwendet die ausgewählte Verzweigung als Quelle für die Erstellung und Bereitstellung. Klicken Sie bei Bedarf auf **Aktualisieren**, um die Liste der verfügbaren Verzweigungen für das ausgewählte Repository zu aktualisieren. Verwenden Sie diese Option, wenn eine kürzlich erstellte Verzweigung nicht in der Liste angezeigt wird.
    * **Strategie erstellen**
       * **Vollständiger Build**: Erstellt jedes Mal alle Module im Repository.
-      * BETA **Smart Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
-
-        >[!IMPORTANT]
-        >
-        >Smarter Build ist nur für Code-Qualitäts-Pipelines und Bereitstellungs-Pipelines für Entwicklungs-Full-Stack-Code verfügbar.
+      * **Smarter Build** - Erstellt nur Module, die seit dem letzten Commit geändert wurden.<br>Weitere Informationen über [Verwendung von Smart Build in einer produktionsfremden Pipeline](#about-smart-build-non-production-pipeline).
    * **Konfiguration der Web-Stufe ignorieren**: Wenn diese Option aktiviert ist, stellt die Pipeline Ihre Web-Stufenkonfiguration nicht bereit.
    * **Vor Bereitstellung in Produktion pausieren**: Setzt die Pipeline vor der Bereitstellung in der Produktion aus.
    * **Geplant**: Ermöglicht Benutzenden die Aktivierung der geplanten Produktionsbereitstellung.
@@ -173,13 +169,9 @@ Bei einer zielgerichteten Bereitstellung wird Code nur für ausgewählte Teile I
 
 Die Pipeline wird gespeichert und auf der Seite **Programmübersicht** können Sie nun über die Karte **Pipelines** [Ihre Pipelines verwalten](managing-pipelines.md).
 
-## BETA: Über die Verwendung von Smart Build in einer Produktions-Pipeline{#about-smart-build-production-pipeline}
+## Über die Verwendung von Smart Build in einer Produktions-Pipeline{#about-smart-build-production-pipeline}
 
 **Smart Build** in Cloud Manager ist eine optimierte Build-Strategie für Produktions-Pipelines. Smartes Erstellen reduziert Build-Zeiten, indem Module zwischengespeichert und nur die Module neu erstellt werden, die seit der letzten erfolgreichen Ausführung geändert wurden. Unveränderte Module werden aus dem Cache wiederverwendet, während nur geänderte Module und ihre Abhängigkeiten neu erstellt werden, was die Effizienz für Workflows für die iterative Entwicklung verbessert.
-
->[!NOTE]
->
->Interessiert an dieser Beta-Version? Senden Sie eine E-Mail an [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) mit Ihrer Adobe-OrgID und Programm-ID.
 
 >[!IMPORTANT]
 >
