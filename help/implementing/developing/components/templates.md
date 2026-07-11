@@ -178,7 +178,7 @@ Eine Liste aller zulässigen Einträge wird erstellt. Wenn sich Konfigurationen 
 Zum Erstellen eines Ordners stehen Ihnen die folgenden Optionen zur Auswahl:
 
 * Programmierbar oder mit CRXDE Lite
-* Verwenden des [Konfigurations-Browsers ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Verwenden des [Konfigurations-Browsers &#x200B;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Verwenden von CRXDE Lite {#using-crxde-lite}
 
