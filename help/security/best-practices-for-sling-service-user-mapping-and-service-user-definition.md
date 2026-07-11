@@ -5,8 +5,8 @@ exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1883'
+workflow-type: tm+mt
+source-wordcount: '1938'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Nachstehend finden Sie eine Liste von Gründen für die Formatänderung und die 
 * Möglichkeit der Wiederverwendung von Dienstbenutzenden durch Kombination von besonderen Kundenbedürfnissen und allgemeinen Aufgaben
 * Vermeiden von doppelten Berechtigungen
 * Besseres Verständnis der effektiven Berechtigungen (und Aufgaben), die ein bestimmter Dienst tatsächlich ausführt
-* Keine Notwendigkeit einer expliziten Gruppenmitgliedschaft von Dienstbenutzenden. Dies kann bei Änderung der Gruppenberechtigungen zu problematischen Nebenwirkungen führen
+* Keine Notwendigkeit einer expliziten Gruppenzugehörigkeit von Dienstbenutzenden. Dies kann bei Änderung der Gruppenberechtigungen zu problematischen Nebenwirkungen führen
 * Leistungsverbesserungen und Skalierbarkeit
 
 ## Zuordnungsauflösung und Dienstanmeldung {#mapping-resolution-and-service-login}
@@ -84,7 +84,7 @@ Die neue Zuordnung mit Prinzipalnamen führt zur folgenden vereinfachten Reposit
 
 * Die Gruppe von Prinzipalnamen wird als die effektiven Prinzipale behandelt, die zum Ausfüllen des `Subject` verwendet werden sollen
 * Die Repository-Anmeldung kann somit vorauthentifiziert werden
-* Keine Auflösung der Gruppenmitgliedschaft
+* Keine Auflösung der Gruppenzugehörigkeit
 
   >[!NOTE]
   >

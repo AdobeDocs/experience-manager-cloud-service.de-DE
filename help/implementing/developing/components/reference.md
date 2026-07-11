@@ -6,7 +6,7 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3713'
 ht-degree: 98%
 
 ---
@@ -286,7 +286,7 @@ Weitere Informationen zum Erstellen von Vorlagen finden Sie in der [Vorlagendoku
 
 Wir erstellen und konfigurieren eine Instanz der **Titelkomponente** auf der Seite: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
-![Bearbeitungsdialogfeld &#x200B;](assets/components-title-dialog.png)
+![Bearbeitungsdialogfeld ](assets/components-title-dialog.png)
 
 Dann sehen wir die Struktur des Inhalts, der innerhalb des Repositorys erstellt wurde:
 
@@ -323,8 +323,7 @@ In AEM sind viele Konfigurationen vorhanden. Sie können mit dem Abfrage-Tool in
 
 Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte sie visuell aus der Benutzeroberfläche des Editors verschwinden, sodass sie zwar technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall sind die Autoren nicht in der Lage, die leere Komponente auszuwählen und mit ihr zu interagieren.
 
-Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiteneditor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
-Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
+Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiteneditor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>

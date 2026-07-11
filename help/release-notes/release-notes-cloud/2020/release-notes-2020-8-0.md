@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 92%
+source-wordcount: '1085'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
    * Asynchrone Downloads für große Downloads, sodass Benutzer nicht warten müssen.
    * Eine neue modulare API für die Erweiterbarkeit für Entwickler.
 
-* Die Leistung der Metadatenextraktion für Asset-Microservices wurde verbessert. Sie erhöht den Gesamtdurchsatz der Asset-Erfassung.
+* Die Leistung der Metadatenextraktion für Asset-Microservices wurde verbessert. Sie erhöht den Gesamtdurchsatz der Asset-Aufnahme.
 
 * Verwenden eines Verarbeitungsprofils, um benutzerdefinierte Metadaten mithilfe des Compute Service zu generieren. Weitere Informationen finden Sie unter [Benutzerdefinierte Metadaten mithilfe eines Verarbeitungsprofils](/help/assets/manage-metadata.md#metadata-compute-service).
 
@@ -55,7 +55,7 @@ Im folgenden Abschnitt werden die allgemeinen Versionshinweise für Experience M
    * Die Akkordeonelemente im Abschnitt mit den Suchfiltern werden als erweiterbare Standardakkordeons interpretiert. <!-- via CQ-4273103 -->
    * Beim Anwenden eines Tags auf ein Asset zeigt das Dialogfeld Tags als Baumelemente an. ARIA-Attribute werden entsprechend auf die Baumelemente angewendet, damit sie jetzt verfügbar sind. <!-- via CQ-4272964 -->
 
-* Version 2.0.3 von [!DNL AEM Desktop app] ist jetzt verfügbar. Sie verbessert die Kompatibilität mit dem Service Pack [!DNL Experience Manager] 6.5.5 und verfügt über eine aktualisierte Kompatibilitätsliste für Client-Betriebssysteme. [!DNL Windows] 7-Versionen und [!DNL macOS]-Versionen älter als 10.14 werden nicht unterstützt.
+* Version 2.0.3 von [!DNL AEM Desktop app] ist jetzt verfügbar. Es verbessert die Kompatibilität mit [!DNL Experience Manager] 6.5.5 Service Pack und enthält eine aktualisierte Liste zur Kompatibilität des Client-Betriebssystems. [!DNL Windows] 7 und [!DNL macOS] Versionen vor 10.14 werden nicht unterstützt.
 
 ### Fehlerbehebungen in [!DNL Assets] {#bugs-fixed}
 
@@ -104,7 +104,7 @@ Die [!UICONTROL Cloud Manager]-Version 2020.8.0 wurde am 6. August 2020 veröff
 
 * Bei der Bereitstellung einer neuen Organisation erhielten einige Benutzer mit anderen administrativen Rollen als Systemadministratoren fälschlicherweise Zugriff auf Cloud Manager.
 
-* Unter bestimmten Umständen wurde der Vorgang zur Indexaktualisierung mehrmals parallel gestartet, was zu einem Bereitstellungsfehler führte.
+* Unter bestimmten Umständen wurde der Auftrag zur Indexaktualisierung mehrmals parallel gestartet, was zu einem Bereitstellungsfehler führte.
 
 * Die QuickInfo auf den Programmkarten war nicht immer korrekt.
 
@@ -140,8 +140,8 @@ In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen und Updates fü
 
 ### Neue Funktionen {#what-is-new-refactoring}
 
-* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere [&#x200B; finden Sie unter „Git-Ressource: aio-cli-plugin-aem-cloud-service](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)migration“.
+* Das AIO-CLI-Plugin wurde veröffentlicht, um Code-Refaktorierungs-Tools zu vereinheitlichen, damit Entwickler Code-Refaktorierungs-Tools von einem Ort aus aufrufen und ausführen können. Weitere [ finden Sie unter „Git-Ressource: aio-cli-plugin-aem-cloud-service](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)migration“.
 
-* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Weitere [&#x200B; finden Sie unter „Git-Ressource: AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)Dispatcher-Konvertierer“.
+* AEM Dispatcher Converter wurde erweitert, um die Konvertierung von On-Premise- und Adobe Managed Services-Dispatcher-Konfigurationen in AEM as a Cloud Service-kompatible Dispatcher-Konfigurationen zu unterstützen. Weitere [ finden Sie unter „Git-Ressource: AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)Dispatcher-Konvertierer“.
 
 * AEM Dispatcher Converter wurde in ` node.js ` neu geschrieben und in das AIO-CLI-Plug-in integriert.

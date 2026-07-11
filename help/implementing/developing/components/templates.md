@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 100%
+source-wordcount: '3503'
+ht-degree: 99%
 
 ---
 
@@ -233,7 +233,7 @@ Sobald Ihre Vorlagenordner erstellt sind (entweder über CRXDE oder den Konfigur
 
 Die Vorlagenordner für das [WKND-Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) können als Beispiel herangezogen werden.
 
-#### Die Gruppe „template-authors“  {#the-template-authors-group}
+#### Die Gruppe „template-authors“ {#the-template-authors-group}
 
 Die Gruppe `template-authors` ist die Gruppe zum Verwalten des Zugriffs auf Vorlagen und standardmäßig in AEM integriert. Sie ist aber leer. Benutzer müssen der Gruppe für das Projekt bzw. die Site hinzugefügt werden.
 
@@ -380,7 +380,7 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-sites-example-custom-template-type auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type).
+* [Öffnen Sie das Projekt aem-sites-example-custom-template-type in GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip) herunter.
 
 ## Vorlagendefinitionen {#template-definitions}
