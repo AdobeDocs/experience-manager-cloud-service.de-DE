@@ -39,7 +39,7 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | Inhaltswert | Beschreibung |
 |---|---|
 | `publish` | Deaktivieren Sie alle [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)-Funktionen, d. h. die [Publish](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) und [Unpublish](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
-| `publish-live` | Live ([) ](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-live` | Live ([) &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | Vorschauveröffentlichung deaktivieren (wenn der [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist) |
 | `unpublish` | Deaktivieren Sie die Schaltfläche [Veröffentlichung rückgängig machen](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | Deaktiviert die [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
@@ -60,7 +60,7 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | Inhaltswert | Beschreibung |
 |---|---|
 | `preview` | Der Editor wird im [-Modus geöffnet](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) Das **Vorschau**-Symbol ist ausgeblendet und der/die Benutzende kann nicht in den Bearbeitungsmodus zurückkehren. |
-| `readonly` | Der Editor wird im schreibgeschützten Modus geöffnet. Die [**Eigenschaften** Schaltfläche und das ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) sind ausgeblendet. Details sind in der Inhaltsstruktur verfügbar, es können jedoch keine Änderungen vorgenommen werden. |
+| `readonly` | Der Editor wird im schreibgeschützten Modus geöffnet. Die [**Eigenschaften** Schaltfläche und das &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) sind ausgeblendet. Details sind in der Inhaltsstruktur verfügbar, es können jedoch keine Änderungen vorgenommen werden. |
 
 Beim Definieren von Modi über Meta-Tags können die Modi vom Benutzer nicht überschrieben werden.
 
@@ -80,7 +80,7 @@ Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sonder
 
 ## Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [&#x200B; Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
