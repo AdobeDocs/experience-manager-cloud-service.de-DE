@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: c20290b92f6abdd602986ddca6e305dabdc13cfc
+source-git-commit: 349ac17aeb6c66e691596f5656e93a2cdb8472e5
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 53%
+source-wordcount: '631'
+ht-degree: 44%
 
 ---
 
@@ -39,7 +39,7 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | Inhaltswert | Beschreibung |
 |---|---|
 | `publish` | Deaktivieren Sie alle [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)-Funktionen, d. h. die [Publish](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) und [Unpublish](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
-| `publish-live` | Live ([) &#x200B;](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-live` | Live ([) ](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | Vorschauveröffentlichung deaktivieren (wenn der [Vorschau-Service](/help/sites-cloud/authoring/sites-console/previewing-content.md) verfügbar ist) |
 | `unpublish` | Deaktivieren Sie die Schaltfläche [Veröffentlichung rückgängig machen](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | Deaktiviert die [Kopieren und Einfügen](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
@@ -60,7 +60,7 @@ Im Folgenden finden Sie die unterstützten Werte für `content`, d. h. die Funkt
 | Inhaltswert | Beschreibung |
 |---|---|
 | `preview` | Der Editor wird im [-Modus geöffnet](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) Das **Vorschau**-Symbol ist ausgeblendet und der/die Benutzende kann nicht in den Bearbeitungsmodus zurückkehren. |
-| `readonly` | Der Editor wird im schreibgeschützten Modus geöffnet. Die [**Eigenschaften** Schaltfläche und das &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) sind ausgeblendet. Details sind in der Inhaltsstruktur verfügbar, es können jedoch keine Änderungen vorgenommen werden. |
+| `readonly` | Der Editor wird im schreibgeschützten Modus geöffnet. Die [**Eigenschaften** Schaltfläche und das ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) sind ausgeblendet. Details sind in der Inhaltsstruktur verfügbar, es können jedoch keine Änderungen vorgenommen werden. |
 
 Beim Definieren von Modi über Meta-Tags können die Modi vom Benutzer nicht überschrieben werden.
 
@@ -80,7 +80,7 @@ Wenn Sie nicht den von Adobe gehosteten Dienst „Universeller Editor“, sonder
 
 ## Filtern von Komponenten {#filtering-components}
 
-Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [&#x200B; Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
+Sie können die zulässigen Komponenten pro Container im universellen Editor mithilfe von Komponentenfiltern einschränken. Weitere Informationen finden unter [ Filtern von Komponenten](/help/implementing/universal-editor/filtering.md).
 
 ## Bedingtes Anzeigen und Ausblenden von Komponenten im Bedienfeld „Eigenschaften“ {#conditionally-hide}
 
@@ -122,3 +122,9 @@ Bedingungen können mithilfe des [JsonLogic-Schemas](https://jsonlogic.com/) def
 ![Eingeblendetes Textfeld](assets/shown.png)
 
 >[!ENDTABS]
+
+### Einschränkung: Bedingungen in Containern mit mehreren Feldern {#conditions-multi-field-limitation}
+
+Bedingung `var` Auflösung ist absolut und nicht relativ zur aktuellen Zeile. Ein `var` muss entweder ein `fieldName` auf Stammebene sein oder bei Feldern innerhalb eines Containers den Container-Namen als `containerName|fieldName` vorangestellt haben.
+
+Derselbe Ansatz funktioniert nicht für mehrere Container (wiederholbare Zeilen). Zeileninhalte werden zur Laufzeit als `containerName/0|fieldName`, `containerName/1|fieldName` usw. indiziert, dieser Index ist jedoch beim Erstellen der Bedingung nicht bekannt und wechselt, wenn Zeilen hinzugefügt, entfernt oder neu angeordnet werden. Daher können Autoren kein bestimmtes Feld in derselben Zeile als Ziel auswählen, sodass Bedingungen innerhalb von Multi-Containern nicht unterstützt werden.
