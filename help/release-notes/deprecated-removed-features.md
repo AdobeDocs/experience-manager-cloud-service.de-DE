@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 5fcbb483fc6a298b2dccfcf79467ecd39562cb66
+source-git-commit: 617af08792034232efd5ce0a44407ce23871aea7
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4208'
 ht-degree: 70%
 
 ---
@@ -468,7 +468,7 @@ Je nach Ihren Anforderungen können Sie eine andere Version auswählen.
 
 ### Entfernung von `com.google.common*` {#com.google.common}
 
-Entfernen Sie die Verwendung der Google Guava-Kernbibliotheken oder nehmen Sie eine geeignete Version in Ihr Projekt auf. In vielen Fällen kann die Verwendung dieser Bibliothek durch Sammlungsklassen aus JDK oder Apache Commons Collections4 ersetzt werden. Wenn Sie keinen Ersatz finden, verwenden Sie die neueste Version der Google Guava-Kernbibliothek in Ihrem Projekt. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
+Entfernen Sie die Verwendung der Google Guava-Kernbibliotheken oder nehmen Sie eine entsprechende Version in Ihr Projekt auf. In vielen Fällen kann die Verwendung dieser Bibliothek durch Sammlungsklassen aus JDK oder Apache Commons Collections4 ersetzt werden. Wenn Sie keinen Ersatz finden, schließen Sie die neueste Version der Google Guava Core Library in Ihr Projekt ein. Wenn Sie eine alte [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)-Version verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren.
 
 Aktionsliste:
 

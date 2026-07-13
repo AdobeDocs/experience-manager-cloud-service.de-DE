@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die verschiedenen Optionen zum Anpassen des
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: c20290b92f6abdd602986ddca6e305dabdc13cfc
+source-git-commit: 349ac17aeb6c66e691596f5656e93a2cdb8472e5
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 53%
+source-wordcount: '631'
+ht-degree: 44%
 
 ---
 
@@ -122,3 +122,9 @@ Bedingungen können mithilfe des [JsonLogic-Schemas](https://jsonlogic.com/) def
 ![Eingeblendetes Textfeld](assets/shown.png)
 
 >[!ENDTABS]
+
+### Einschränkung: Bedingungen in Containern mit mehreren Feldern {#conditions-multi-field-limitation}
+
+Bedingung `var` Auflösung ist absolut und nicht relativ zur aktuellen Zeile. Ein `var` muss entweder ein `fieldName` auf Stammebene sein oder bei Feldern innerhalb eines Containers den Container-Namen als `containerName|fieldName` vorangestellt haben.
+
+Derselbe Ansatz funktioniert nicht für mehrere Container (wiederholbare Zeilen). Zeileninhalte werden zur Laufzeit als `containerName/0|fieldName`, `containerName/1|fieldName` usw. indiziert, dieser Index ist jedoch beim Erstellen der Bedingung nicht bekannt und wechselt, wenn Zeilen hinzugefügt, entfernt oder neu angeordnet werden. Daher können Autoren kein bestimmtes Feld in derselben Zeile als Ziel auswählen, sodass Bedingungen innerhalb von Multi-Containern nicht unterstützt werden.
