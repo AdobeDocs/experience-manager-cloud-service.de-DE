@@ -4,10 +4,10 @@ description: Mit dem Inhaltskopie-Werkzeug können Benutzende veränderbare Inha
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: e0b07719cbafdd0b19d597db83d319c50fb993cd
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 69%
+source-wordcount: '1628'
+ht-degree: 51%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 Mit dem Inhaltskopie-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu Testzwecken in niedrigere Umgebungen kopieren.
 
 >[!NOTE]
->Während der Kopierfluss für primären Inhalt von höheren Umgebungen in niedrigere Umgebungen erfolgt, ermöglicht die zusätzliche Funktion **Vorwärtsfluss** das Kopieren aus niedrigeren produktionsfremden Umgebungen in höhere produktionsfremde Umgebungen (z. B. Entwicklung → Staging, RDE → Staging). Siehe [Einschränkungen](#limitations) für Details, einschließlich Verfügbarkeitsanforderungen.
+>Der Kopierfluss für den primären Inhalt erfolgt von höheren Umgebungen in niedrigere Umgebungen. **Vorwärtsfluss** ermöglicht auch das Kopieren aus niedrigeren Nicht-Produktionsumgebungen in höhere Nicht-Produktionsumgebungen (z. B. Entwicklung in die Staging- oder RDE in die Staging-Umgebung). Weitere Informationen finden [ unter ](#limitations).
 
 ## Einführung {#introduction}
 
@@ -32,7 +32,7 @@ Ein Content-Set definiert die zu kopierenden Inhalte. Ein Content-Set besteht au
 /etc/clientlibs/fd/themes
 ```
 
-Beim Kopieren von Inhalten ist die Quellumgebung die Datenquelle.
+Beim Kopieren von Inhalten ist die Quellumgebung die primäre Datenquelle.
 
 * Wenn die Quell- und Zielpfade übereinstimmen, überschreibt der Inhalt aus der Quelle den geänderten Inhalt in der Zielumgebung.
 * Wenn die Pfade unterschiedlich sind, wird der Inhalt der Quelle mit dem Inhalt des Ziels zusammengeführt.
@@ -50,9 +50,9 @@ Weitere Informationen zu Berechtigungen und dazu, wie sie festgelegt werden, fin
 
 ## Erstellen eines Content-Sets {#create-content-set}
 
-Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach der Definition können Content-Sets zum Kopieren von Inhalten wiederverwendet werden. Führen Sie die folgenden Schritte aus, damit Sie ein Content-Set erstellen können.
+Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach der Definition können Content-Sets zum Kopieren von Inhalten wiederverwendet werden. Gehen Sie wie folgt vor, um ein Content-Set zu erstellen.
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation und das entsprechende Programm aus.
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Unternehmen und Programm aus.
 
 1. Navigieren Sie im seitlichen Navigationsbedienfeld über die Seite **Übersicht** zur Registerkarte **Content-Sets**.
 
@@ -86,7 +86,7 @@ Bevor Inhalt kopiert werden kann, muss ein Content-Set definiert werden. Nach de
 
 1. Sie können die angegebenen Pfade bei Bedarf bearbeiten.
 
-   1. Klicken Sie auf das „X“ neben den ausgeschlossenen Unterpfaden, um diese zu löschen.
+   1. Klicken Sie auf das X neben den ausgeschlossenen Unterpfaden, um sie zu löschen.
    1. Klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben den Pfaden, um die Optionen **Bearbeiten** und **Löschen** anzuzeigen.
 
    ![Bearbeiten der Pfadliste](assets/add-content-set-excluded-paths.png)
@@ -97,22 +97,22 @@ Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwend
 
 ## Bearbeiten eines Content-Sets {#edit-content-set}
 
-1. Hierbei führen Sie ähnliche Schritte wie beim Erstellen eines Content-Sets aus. Anstatt auf **Content-Set hinzufügen** zu klicken, wählen Sie einen vorhandenen Satz in der Konsole aus und wählen Sie **Bearbeiten** aus dem Ellipsenmenü.
+1. Führen Sie ähnliche Schritte wie beim Erstellen eines Content-Sets aus. Anstatt auf **Content-Set hinzufügen** zu klicken, wählen Sie einen vorhandenen Satz in der Konsole aus und wählen Sie **Bearbeiten** aus dem Ellipsenmenü.
 
 ![Bearbeiten des Content-Sets](assets/edit-content-set.png)
 
-1. Bei der Bearbeitung Ihres Content-Sets können Sie die konfigurierten Pfade erweitern, um die ausgeschlossenen Unterpfade anzuzeigen.
+1. Um die ausgeschlossenen Unterpfade anzuzeigen, können Sie die konfigurierten Pfade beim Bearbeiten des Content-Sets erweitern.
 
 ## Kopieren von Inhalten {#copy-content}
 
 Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten verwenden.
 
 >[!NOTE]
-> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [&#x200B; Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
+> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [ Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
 
 **So kopieren Sie Inhalte:**
 
-1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation sowie das entsprechende Programm aus.
+1. Melden Sie sich bei Cloud Manager unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) an und wählen Sie das entsprechende Unternehmen und Programm aus.
 
 1. Navigieren Sie auf **Seite**&#x200B;Überblick“ zu **Umgebungen** > **Content-Sets**.
 
@@ -132,19 +132,18 @@ Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten
 
 1. Geben **im Dialogfeld „Inhalt kopieren** die Quelle und das Ziel für die Inhaltskopie-Aktion an.
 
-   ![Kopieren von Inhalten](assets/copying-content.png)
+   ![Kopieren von Inhalten](/help/implementing/developing/tools/assets/copy-content2.png)
 
-   * Inhalte können nur aus einer höheren Umgebung in eine niedrigere Umgebung oder zwischen Entwicklungs- / RDE-Umgebungen kopiert werden, in denen die Hierarchie der Umgebungen wie folgt lautet (von der höchsten zur niedrigsten):
+   * Inhalte können von einer höheren Umgebung in eine niedrigere Umgebung, zwischen Entwicklungs- und RDE-Umgebungen oder von einer niedrigeren Nicht-Produktionsumgebung in eine höhere Nicht-Produktionsumgebung kopiert werden (Vorwärtsfluss). Die Umgebungshierarchie sieht wie folgt aus, von der höchsten zur niedrigsten:
       * Produktion
       * Staging
       * Entwicklung/RDE
-   * Standardmäßig ist die programmübergreifende Inhaltskopie deaktiviert. Auf Kundenanfrage kann sie jedoch aktiviert werden, wodurch ein zusätzliches Eingabefeld **Zielprogramm** verfügbar wird.
+   * Eine programmübergreifende Inhaltskopie ist standardmäßig verfügbar. Wählen Sie **Abschnitt** Ziel“ ein **Programm** und wählen Sie dann die Zielumgebung aus.
 
 1. (Optional) Legen Sie bei Bedarf Folgendes fest:
 
    * **Zugriffssteuerungslisten einschließen** - Wählen Sie diese Option aus, wenn Sie die Zugriffssteuerungsberechtigungen des Inhalts zusammen mit dem Inhalt kopieren möchten.
-   * **Löschen** - Wählen Sie diese Option aus, um den vorhandenen Inhalt am Ziel zu löschen, bevor Sie mit dem Import beginnen, sodass Sie in einem sauberen Zustand beginnen und Konflikte mit bereits vorhandenen Inhalten vermeiden können. Wenn Sie die Option **Löschen** deaktiviert lassen, importiert Cloud Manager den neuen Inhalt zusätzlich zum vorhandenen Zielinhalt. Bevor das Löschen beginnt, wird eine Bestätigungsaufforderung angezeigt, und Cloud Manager protokolliert die Löschaktion und Importdetails, um die Rückverfolgbarkeit zu gewährleisten.
-     ![Kopieren von Inhalten](assets/content_copy_wipe-destination.png)
+   * **Löschen** - Wählen Sie diese Option, um den vorhandenen Inhalt am Ziel zu löschen, bevor Sie mit dem Import beginnen, sodass Sie mit einem leeren Status beginnen und Konflikte mit vorhandenen Inhalten vermeiden können. Wenn Sie die Option **Löschen** deaktiviert lassen, importiert Cloud Manager den neuen Inhalt zusätzlich zum vorhandenen Zielinhalt. Bevor das Löschen beginnt, wird eine Bestätigungsaufforderung angezeigt, und Cloud Manager protokolliert die Löschaktion und Importdetails, um die Rückverfolgbarkeit zu gewährleisten.     ![Kopieren von Inhalten](assets/content_copy_wipe-destination.png)
       * Wenn Sie die Option **Ziel vor Import löschen** auswählen und auf **Kopieren** klicken, wird ein Popup mit einer Warnung angezeigt, in dem Sie folgende Optionen haben:
          * **Abbrechen** (in diesem Fall wird der **Inhaltskopie** Fluss nicht gestartet)
          * **Bestätigen** (der **Inhaltskopie**-Fluss wird gestartet und der Inhalt auf dem Ziel wird gelöscht)
@@ -154,8 +153,8 @@ Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten
 
    * **Richtlinie für Package-Import** Wählen Sie die beim Package-Import zu verwendende Richtlinie aus:
      ![Kopieren von Inhalten](assets/content-copy-import-policy.png)
-      * **Bei erstem Fehler anhalten**: Standardmodus, wird nach dem ersten Fehler angehalten
-      * **Mit verbleibenden Paketen fortfahren**: Der Importvorgang wird auch nach einem Fehler fortgesetzt. Die Pakete (und deren Inhalt), die nicht erfolgreich waren, finden Sie in den Importprotokollen
+      * **Bei erstem Fehler anhalten**: Standardmodus, wird nach dem ersten aufgetretenen Fehler angehalten.
+      * **Mit verbleibenden Paketen fortfahren**: Setzt den Importvorgang auch nach einem Fehler fort. Die Pakete (und deren Inhalt), die nicht erfolgreich waren, finden Sie in den Importprotokollen
 
 1. Klicken Sie auf **Kopieren**.
 
@@ -217,13 +216,13 @@ Die Protokolle werden auf Ihren lokalen Computer heruntergeladen.
 Für das Werkzeug zum Kopieren von Inhalten gelten die folgenden Einschränkungen.
 
 * Das Tool zum Kopieren von Inhalten unterstützt zwei Flussmodi:
-   1. Top-Down-Fluss: Inhalte können aus höheren Umgebungen in niedrigere Umgebungen kopiert werden (z. B. Produktion → Staging, Staging → Entwicklung/RDE).
-   2. Vorwärtsfluss (neue Funktion): Inhalte können auch von einer niedrigeren produktionsfremden Umgebung in eine höhere produktionsfremde Umgebung kopiert werden (z. B. Entwicklung → Staging, RDE → Staging). Diese Funktion ist nur auf ausdrückliche Anfrage verfügbar und bleibt aktiviert, bis explizit eine Deaktivierung angefordert wird. Produktionsumgebungen sind nie gültige Ziele für den Vorwärtsfluss.
+   1. Top-Down-Fluss: Inhalte können aus höheren Umgebungen in niedrigere Umgebungen kopiert werden (z. B. Produktion → Staging, Staging → Entwicklung/RDE).
+   2. Weiterleiten: Inhalte können auch von einer niedrigeren produktionsfremden Umgebung in eine höhere produktionsfremde Umgebung kopiert werden (z. B. von der Entwicklungs- in die Staging- oder von der RDE in die Staging-Umgebung). Produktionsumgebungen sind nie gültige Ziele für den Vorwärtsfluss.
 * Inhalte können nur aus und in Authoring-Services kopiert werden.
 * Die Ausführung gleichzeitiger Inhaltskopievorgänge in derselben Umgebung ist nicht möglich.
 * Pro Content-Set können bis zu 50 Pfade angegeben werden. Für ausgeschlossene Pfade gibt es keine Beschränkung.
 * Das Inhaltskopie-Tool sollte nicht als Klon- oder Spiegelwerkzeug verwendet werden, da es keine verschobenen oder gelöschten Inhalte auf der Quelle verfolgen kann.
 * Das Inhaltskopie-Tool verfügt über keine Versionierungsfunktion und kann geänderte oder erstellte Inhalte in der Quellumgebung in einem Content-Set seit dem letzten Inhaltskopievorgang nicht automatisch erkennen.
-   * Um die Zielumgebung nur mit Inhaltsänderungen zu aktualisieren, die seit dem letzten Inhaltskopiervorgang vorgenommen wurden, müssen Sie ein Content-Set erstellen. Geben Sie dann die Pfade auf der Quellinstanz an, an denen seit dem letzten Inhaltskopiervorgang Änderungen vorgenommen wurden.
+   * Wenn Sie Ihre Zielumgebung mit Inhaltsänderungen seit dem letzten Inhaltskopievorgang aktualisieren möchten, müssen Sie ein vorhandenes Content-Set verwenden. Geben Sie dann die Pfade auf der Quellinstanz an, an denen seit dem letzten Inhaltskopiervorgang Änderungen vorgenommen wurden.
 * Versionsinformationen sind in einer Inhaltskopie nicht enthalten.
 * In [Inhaltsfragmentmodellen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) können Referenzfelder basierend auf Universally Unique IDs (UUID) angegeben werden. Solche UUIDs sind Repository-spezifisch, sodass das Inhaltskopie-Tool diese UUIDs beim Kopieren von Inhaltsfragmenten in der Zielumgebung neu berechnet.
