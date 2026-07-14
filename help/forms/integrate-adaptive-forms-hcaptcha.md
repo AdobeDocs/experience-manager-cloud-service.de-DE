@@ -1,22 +1,20 @@
 ---
-title: Wie wird hCAPTCHA&reg; in einem adaptiven AEM-Formular verwendet?
-description: Mit dem hCaptcha®-Dienst können Sie die Formularsicherheit optimieren. Schrittweise Anleitung enthalten.
+title: Verwenden von hCAPTCHA&reg; in Foundation-Komponenten für adaptive Formulare in AEM
+description: Mit dem hCaptcha&reg;-Dienst können Sie die Formularsicherheit einfach optimieren. Schrittweise Anleitung enthalten!
 topic-tags: Adaptive Forms, author
-keywords: CAPTCHA&reg; -Service, Adaptive Forms, CAPTCHA-Herausforderung, Bot-Vermeidung, Sicherheit bei der Formularübermittlung, Spam-Verhinderung von Formularen
+keywords: hCAPTCHA&reg; Service, Adaptive Forms, CAPTCHA Challenge, Bot-Prävention, Sicherheit bei der Formularübermittlung, Spam-Verhinderung von Formularen
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 52%
+source-wordcount: '1000'
+ht-degree: 54%
 
 ---
 
 # Verbinden Ihrer AEM Forms-Umgebung mit hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
-
-<span class="preview"> Diese Funktion befindet sich im Early-Adopter-Programm. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -57,14 +55,13 @@ Um hCAPTCHA® mit AEM Forms zu konfigurieren, müssen Sie den [hCAPTCHA®-SiteKe
 1. Konfigurieren des Cloud-Service:
    1. Wechseln Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® in der Benutzeroberfläche](assets/hcaptcha-in-ui.png)
-   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
-      ![Konfiguration hCAPTCHA®](assets/config-hcaptcha.png)
+   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.      ![Konfiguration hCAPTCHA®](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für den hCAPTCHA®-Service [erhalten in PREREQUISITE](#prerequisite). Wählen Sie **[!UICONTROL Erstellen]** aus.
 
       ![Konfigurieren des Cloud-Service für die Verbindung Ihrer AEM Forms-Umgebung mit hCaptcha®](assets/create-hcaptcha-config.png)
 
 >[!NOTE]
-> Benutzende müssen die Client[seitige JavaScript-Validierungs-URL &#x200B;](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht ändern, da sie bereits für die hCAPTCHA®-Validierung vorausgefüllt sind. Für einige Länder können die Endpunkte unterschiedlich sein. Weitere Informationen finden Sie in [hCaptcha® &#x200B;](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) FAQs).
+> Benutzende brauchen die [Client-seitige JavaScript-Validierungs-URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) und die [Server-seitige Validierungs-URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) nicht zu ändern, da sie bereits für die hCaptcha®-Validierung vorausgefüllt sind. Für einige Länder können die Endpunkte unterschiedlich sein. Weitere Informationen finden Sie in [hCaptcha® &#x200B;](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) FAQs).
 
 Sobald der CAPTCHA-Dienst konfiguriert ist, kann er in einem adaptiven Formular verwendet werden.
 

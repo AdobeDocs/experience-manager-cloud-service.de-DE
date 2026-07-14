@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4356'
 ht-degree: 16%
 
 ---
@@ -204,6 +204,13 @@ Mit Dynamic Media mit OpenAPI-Funktionen können Sie jetzt benutzerdefinierte Mi
 * **Konfigurieren von Dropdown-Optionen für die**-Benutzeroberfläche: Dropdown-Felder in der Benutzeroberfläche „Verknüpfen“ verwenden jetzt ein **Binding-**). Autoren konfigurieren **Bindung aus Daten** für dynamische Optionslisten oder manuelle statische Optionen, damit die Verknüpfungen die richtigen Auswahlmöglichkeiten und vorab ausgewählten Werte sehen. **Datenbindung** wird für Dropdown-Felder nicht unterstützt. Weitere Informationen finden Sie unter [Konfigurieren von Dropdown-Optionen für die Benutzeroberfläche „Verknüpfen](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
 * **Konfigurieren von gebundenen und ungebundenen Variablen für die**-Benutzeroberfläche: Gebundene und ungebundene Variablen in **Text**-Komponenten können jetzt für die Benutzeroberfläche „Verknüpfen“ konfiguriert werden. Autoren können auswählen, ob Verknüpfungen den gesamten Textblock in der Dokumentvorschau inline bearbeiten oder Werte für einzelne Variablen im Dateneingabefeld eingeben sollen. Doppelte Variablennamen übertragen Werte auf alle übereinstimmenden Vorkommnisse in der Vorschau. Weitere Informationen finden Sie unter [Konfigurieren von gebundenen und ungebundenen Variablen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
+#### Zusätzliche CAPTCHA-Optionen für den Bot-Schutz
+
+AEM Forms unterstützt jetzt zusätzlich zum bereits verfügbaren Google reCAPTCHA zwei weitere CAPTCHA-Lösungen zum Schutz von adaptivem Forms vor Bots und Spam-Übermittlungen. Dadurch erhalten Sie mehr Auswahl und Flexibilität beim Schützen Ihrer Formulare.
+
+* **Cloudflare Turnstile**: Ein reibungsloses CAPTCHA, das Benutzer durch eine einfache Herausforderung überprüft, ohne explizite Interaktion zu erfordern, wodurch das Benutzererlebnis verbessert wird. Weitere Informationen finden Sie unter [Verwenden eines Drehkreuzes in einem adaptiven Formular für Kernkomponenten](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) und [Verwenden eines Drehkreuzes in einem adaptiven Formular für Foundation-Komponenten](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCAPTCHA**: Ein auf Datenschutz fokussiertes CAPTCHA, das eine benutzerfreundliche Alternative bietet, bei der der Schwerpunkt auf Datenschutz, Sicherheit und Anwendererlebnis liegt. Weitere Informationen finden Sie unter [Verwenden von hCAPTCHA in einem adaptiven Formular für Kernkomponenten](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) und [Verwenden von hCAPTCHA in einem adaptiven Formular für Foundation-Komponenten](/help/forms/integrate-adaptive-forms-hcaptcha.md).
 
 ### Early Adopter-Funktionen
 

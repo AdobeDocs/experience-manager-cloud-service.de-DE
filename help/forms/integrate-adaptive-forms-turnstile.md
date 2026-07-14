@@ -1,21 +1,19 @@
 ---
-title: Verwenden von Drehkreuz in einem adaptiven Formular von AEM
+title: Verwenden von Drehkreuz in Foundation-Komponenten für adaptive Formulare in AEM
 description: Mit dem Turnstile-Service können Sie die Formularsicherheit verbessern. Schrittweise Anleitung enthalten.
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 51%
+source-wordcount: '942'
+ht-degree: 53%
 
 ---
 
 # Integrieren von Turnstile CAPTCHA mit Adaptive Forms
-
-<span class="preview"> Diese Funktion befindet sich im Early-Adopter-Programm. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
 CAPTCHA („Completely Automated Public Turing test to tell Computers and Humans Apart“ – „vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen“) ist ein Programm, das bei Onlinetransaktionen eingesetzt wird, um zwischen Menschen und Bots oder automatisierten Programmen zu unterscheiden. Es stellt eine herausfordernde Aufgabe und bewertet die Benutzerantwort, um festzustellen, ob es sich um einen Menschen oder einen Bot handelt, der mit der Site interagiert. Dabei wird verhindert, dass der Benutzer fortfährt, wenn der Test fehlschlägt, wodurch Onlinetransaktionen sicherer werden, da Bots keinen Spam senden oder andere bösartige Zwecke verfolgen können.
 
@@ -27,7 +25,7 @@ AEM Forms as a Cloud Service unterstützt die folgenden CAPTCHA-Lösungen:
 
 ## Integrieren der AEM Forms-Umgebung mit Turnstile Captcha
 
-Turnstile Captcha von Cloudflare bietet eine Sicherheitsmaßnahme zum Schutz von Formularen vor automatisierten Bots, bösartigen Angriffen, Spams und unerwünschtem automatisierten Traffic. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem Sie überprüfen können, ob es sich um menschliche Daten handelt, bevor Sie ihnen das Senden des Formulars ermöglichen. AEM Forms as a Cloud Service unterstützt Drehkreuz-Captcha in adaptivem Forms.
+Turnstile Captcha von Cloudflare bietet eine Sicherheitsmaßnahme zum Schutz von Formularen vor automatisierten Bots, bösartigen Angriffen, Spams und unerwünschtem automatisierten Traffic. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem überprüft wird, ob es sich um menschliche Benutzende handelt, bevor das Formular übermittelt werden kann. AEM Forms as a Cloud Service unterstützt Drehkreuz-Captcha in adaptivem Forms.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
@@ -54,8 +52,7 @@ Um Turnstile für AEM Forms zu konfigurieren, müssen Sie den [Site-Schlüssel v
 1. Konfigurieren des Cloud-Service:
    1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und wählen Sie **[!UICONTROL Drehkreuz]**.
       ![Drehkreuz in der Benutzeroberfläche](assets/turnstile-in-ui.png)
-   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
-      ![Konfiguration von Turnstile](assets/config-hcaptcha.png)
+   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.      ![Konfiguration von Turnstile](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Widget-Typ]** als verwaltet an. Der Widget-Typ kann sich ändern, was von dem Schlüssel abhängt, der in den Voraussetzungen **[!UICONTROL Titel]**, **[!UICONTROL Name]**, **[!UICONTROL Site-Schlüssel]** und **[!UICONTROL Geheimer Schlüssel]** für den Drehkreuz-Dienst [erhalten in Voraussetzung](#prerequisite) wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
 
       ![Konfigurieren des Cloud-Services für die Verbindung Ihrer AEM Forms-Umgebung mit Turnstile](assets/config-turntstile.png)

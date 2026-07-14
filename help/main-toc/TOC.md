@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '7565'
-ht-degree: 84%
+source-wordcount: '7571'
+ht-degree: 83%
 
 ---
 
@@ -936,8 +936,8 @@ ht-degree: 84%
             + [Konfigurieren der Umleitungsseite oder der Dankesnachricht](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Erstellen von Formularen mit wiederholbaren Abschnitten](/help/forms/create-forms-repeatable-sections.md)
             + [Verwenden von Google reCAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Verwenden von hCAPTCHA in einem adaptiven Formular (Kernkomponenten)](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Verwenden von Turnstile Captcha in einem adaptiven Formular (Kernkomponenten)](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [Verwenden von hCaptcha in einem adaptiven Formular für Kernkomponenten](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Verwenden eines Drehkreuzes in einem adaptiven Formular für Kernkomponenten](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Hinzufügen eines benutzerdefinierten Fehler-Handlers in einem adaptiven Formular](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Hinzufügen eines Gebietsschemas für auf Kernkomponenten basierende adaptive Formulare](/help/forms/supporting-new-language-localization-core-components.md)
             + [Entwerfen eines JSON-Schemas für ein adaptives Formular (Kernkomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -987,8 +987,8 @@ ht-degree: 84%
             + {hide-from-toc}[Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen](/help/forms/publishing-unpublishing-forms.md)
          + Hinzufügen von Komponenten zu adaptiven Formularen {#add-components-to-an-adaptive-form}
             + [Verwenden von CAPTCHA in einem adaptiven Formular](/help/forms/captcha-adaptive-forms.md)
-            + [Verwenden von hCaptcha in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Verwenden von Turnstile CAPTCHA in einem adaptiven Formular](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Verwenden von hCaptcha in einem adaptiven Formular für grundlegende Komponenten](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [Verwenden eines Drehkreuzes in einem adaptiven Formular für Foundation-Komponenten](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Verwenden der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
             + [Anwenden einer Freihandsignatur](/help/forms/signing-forms-using-scribble.md)
             + [Hinzufügen einer Tabelle zu einem adaptiven Formular](/help/forms/adaptive-forms-tables.md)
