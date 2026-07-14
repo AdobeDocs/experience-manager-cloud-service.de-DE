@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4356'
 ht-degree: 16%
 
 ---
@@ -41,7 +41,7 @@ Die neuesten Wartungsversionshinweise finden Sie [hier](/help/release-notes/main
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3491499/?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
 
 -->
 
@@ -124,7 +124,7 @@ Durch die Pflege der Metadaten zur Asset-Herkunft können Teams die Governance, 
 
 **AEM-Integration mit Workfront Planning und GenStudio for Performance Marketing für Standard-Kampagnenmetadaten**
 
-Wenn AEM Assets mit [Workfront Planning und GenStudio for Performance Marketing](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index) integriert ist, sind jetzt Kampagnenmetadatenfelder, einschließlich Kampagnenname, Region, Kanal, Rolle und Produkt, in der Leiste „Asset-Ansicht“ der Eigenschaften in einer dedizierten schreibgeschützten Kampagnenregisterkarte verfügbar. Wenn Benutzerinnen und Benutzer in Workfront Planning Assets aus AEM mit GenStudio mit den entsprechenden Objekten in Adobe GenStudio Workspace verbinden, werden bestimmte Werte (z. B. ein bestimmter Kampagnenname) automatisch zu den Metadaten des AEM-Assets hinzugefügt.
+Wenn AEM Assets mit [Workfront Planning und GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index) integriert ist, sind jetzt Kampagnenmetadatenfelder, einschließlich Kampagnenname, Region, Kanal, Rolle und Produkt, in der Leiste „Asset-Ansicht“ der Eigenschaften in einer dedizierten schreibgeschützten Kampagnenregisterkarte verfügbar. Wenn Benutzerinnen und Benutzer in Workfront Planning Assets aus AEM mit GenStudio mit den entsprechenden Objekten in Adobe GenStudio Workspace verbinden, werden bestimmte Werte (z. B. ein bestimmter Kampagnenname) automatisch zu den Metadaten des AEM-Assets hinzugefügt.
 
 Die Integration ermöglicht es Benutzenden, auf der Grundlage von Kampagnenattributen schnell Assets zu finden und nach ihnen zu suchen. Diese Verbesserung verbessert die Auffindbarkeit von Assets, optimiert die Workflows für das Content-Management und hilft Teams, die richtigen Assets für bestimmte Marketing-Initiativen effizienter zu finden.
 
@@ -173,7 +173,7 @@ Mit Dynamic Media mit OpenAPI-Funktionen können Sie jetzt benutzerdefinierte Mi
 
 * **Regeleditor**: Erstellen Sie dynamische, datengesteuerte Aktionen direkt in Ihren Dokumenten mithilfe einer intuitiven Point-and-Click-Oberfläche. Sie können bedingte Logik einfach definieren, Workflows automatisieren und Inhalte personalisieren, ohne programmieren zu müssen. Weitere Informationen finden Sie unter [Erstellen von Regeln im Editor für interaktive Kommunikation](/help/forms/interactive-communication/use-the-rule-editor.md).
 
-* **Vorlagen und Dokumentfragmente**: Erstellen Sie wiederverwendbare Vorlagen und modulare Inhaltsbausteine (Kopfzeilen, Fußzeilen, Haftungsausschlüsse), um die Konsistenz und Effizienz mehrerer Kommunikationen zu gewährleisten. Weitere Informationen finden Sie unter [Erstellen einer &#x200B;](/help/forms/interactive-communication/create-interactive-communication-template.md) und [Erstellen eines Fragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
+* **Vorlagen und Dokumentfragmente**: Erstellen Sie wiederverwendbare Vorlagen und modulare Inhaltsbausteine (Kopfzeilen, Fußzeilen, Haftungsausschlüsse), um die Konsistenz und Effizienz mehrerer Kommunikationen zu gewährleisten. Weitere Informationen finden Sie unter [Erstellen einer ](/help/forms/interactive-communication/create-interactive-communication-template.md) und [Erstellen eines Fragments](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
 
 * **Vorlagensperrung**: Sperren Sie Inhalte und Layout-Elemente in Vorlagen, um die Markenintegrität zu wahren und nicht autorisierte Änderungen zu verhindern. Weitere Informationen finden Sie unter [Vorlagensperre](/help/forms/interactive-communication/enable-template-lock.md).
 
@@ -181,7 +181,7 @@ Mit Dynamic Media mit OpenAPI-Funktionen können Sie jetzt benutzerdefinierte Mi
 
 * **Benutzerdefinierte Schriftarten**: Betten Sie benutzerdefinierte oder vom Unternehmen genehmigte Schriftarten ein, um ein konsistentes, markenspezifisches PDF-Rendering auf allen Geräten sicherzustellen. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Schriftarten](/help/forms/interactive-communication/add-custom-fonts.md).
 
-* **Importieren und Exportieren**: Nahtlose Migration und Wiederverwendung der interaktiven Kommunikation mit ihren Fragmenten und Datenmodellen über Umgebungen hinweg. Weitere Informationen finden Sie unter [&#x200B; und Exportieren](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
+* **Importieren und Exportieren**: Nahtlose Migration und Wiederverwendung der interaktiven Kommunikation mit ihren Fragmenten und Datenmodellen über Umgebungen hinweg. Weitere Informationen finden Sie unter [ und Exportieren](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
 
 * **Inhaltsüberlauf**: Option „Seitenumbrüche innerhalb von Inhalten zulassen“ für fließende Layouts für eine reibungslose mehrseitige Bearbeitung und eine bessere Textverwaltung für komplexe Dokumente. Weitere Informationen finden Sie unter [Umgang mit Inhaltsüberläufen](/help/forms/interactive-communication/handle-content-overflow.md).
 
@@ -197,13 +197,20 @@ Mit Dynamic Media mit OpenAPI-Funktionen können Sie jetzt benutzerdefinierte Mi
 
 * **Versionen der interaktiven Kommunikation vergleichen**: Sie können jetzt zwei beliebige gespeicherte Versionen einer interaktiven Kommunikation nebeneinander vergleichen, während PDF-Vorschauen das Layout und statische Inhaltsänderungen vor der Veröffentlichung überprüfen. Weitere Informationen finden Sie unter [Versionen der interaktiven Kommunikation vergleichen](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md).
 
-* **Zusammenführen und Aufteilen von Tabellenzellen**: Der Editor für interaktive Kommunikation unterstützt jetzt das Zusammenführen benachbarter Tabellenzellen und das Aufteilen zusammengeführter Zellen wieder in einzelne Spalten, was das Überspannen von Kopfzeilen, Zusammenfassungszeilen und flexiblere Tabellen-Layouts ermöglicht. Weitere Informationen finden Sie unter [Zusammenführen und Aufteilen von &#x200B;](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
+* **Zusammenführen und Aufteilen von Tabellenzellen**: Der Editor für interaktive Kommunikation unterstützt jetzt das Zusammenführen benachbarter Tabellenzellen und das Aufteilen zusammengeführter Zellen wieder in einzelne Spalten, was das Überspannen von Kopfzeilen, Zusammenfassungszeilen und flexiblere Tabellen-Layouts ermöglicht. Weitere Informationen finden Sie unter [Zusammenführen und Aufteilen von ](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
 
 * **Verschieben einer Komponente auf die Musterseite**: Sie können jetzt mit einer Aktion eine Komponente von einer Designseite auf die Musterseite verschieben, damit sie konsistent auf jeder Seite einer interaktiven Kommunikation angezeigt wird, ohne sie neu zu erstellen. Weitere Informationen finden Sie unter [Verschieben einer Komponente auf die Musterseite](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
 
 * **Konfigurieren von Dropdown-Optionen für die**-Benutzeroberfläche: Dropdown-Felder in der Benutzeroberfläche „Verknüpfen“ verwenden jetzt ein **Binding-**). Autoren konfigurieren **Bindung aus Daten** für dynamische Optionslisten oder manuelle statische Optionen, damit die Verknüpfungen die richtigen Auswahlmöglichkeiten und vorab ausgewählten Werte sehen. **Datenbindung** wird für Dropdown-Felder nicht unterstützt. Weitere Informationen finden Sie unter [Konfigurieren von Dropdown-Optionen für die Benutzeroberfläche „Verknüpfen](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
 * **Konfigurieren von gebundenen und ungebundenen Variablen für die**-Benutzeroberfläche: Gebundene und ungebundene Variablen in **Text**-Komponenten können jetzt für die Benutzeroberfläche „Verknüpfen“ konfiguriert werden. Autoren können auswählen, ob Verknüpfungen den gesamten Textblock in der Dokumentvorschau inline bearbeiten oder Werte für einzelne Variablen im Dateneingabefeld eingeben sollen. Doppelte Variablennamen übertragen Werte auf alle übereinstimmenden Vorkommnisse in der Vorschau. Weitere Informationen finden Sie unter [Konfigurieren von gebundenen und ungebundenen Variablen für die Benutzeroberfläche „Verknüpfen“](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
+#### Zusätzliche CAPTCHA-Optionen für den Bot-Schutz
+
+AEM Forms unterstützt jetzt zusätzlich zum bereits verfügbaren Google reCAPTCHA zwei weitere CAPTCHA-Lösungen zum Schutz von adaptivem Forms vor Bots und Spam-Übermittlungen. Dadurch erhalten Sie mehr Auswahl und Flexibilität beim Schützen Ihrer Formulare.
+
+* **Cloudflare Turnstile**: Ein reibungsloses CAPTCHA, das Benutzer durch eine einfache Herausforderung überprüft, ohne explizite Interaktion zu erfordern, wodurch das Benutzererlebnis verbessert wird. Weitere Informationen finden Sie unter [Verwenden eines Drehkreuzes in einem adaptiven Formular für Kernkomponenten](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) und [Verwenden eines Drehkreuzes in einem adaptiven Formular für Foundation-Komponenten](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCAPTCHA**: Ein auf Datenschutz fokussiertes CAPTCHA, das eine benutzerfreundliche Alternative bietet, bei der der Schwerpunkt auf Datenschutz, Sicherheit und Anwendererlebnis liegt. Weitere Informationen finden Sie unter [Verwenden von hCAPTCHA in einem adaptiven Formular für Kernkomponenten](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) und [Verwenden von hCAPTCHA in einem adaptiven Formular für Foundation-Komponenten](/help/forms/integrate-adaptive-forms-hcaptcha.md).
 
 ### Early Adopter-Funktionen
 
@@ -225,11 +232,11 @@ Sie können festlegen, wie lange Empfänger das Signieren abschließen müssen, 
 
 #### Conversational AI Interface für Cloud Manager - Fragen {#devagent-cloudmanager}
 
-Der Entwicklungsagent wird erweitert, um Fragen im Zusammenhang mit Cloud Manager über den [Cloud Manager-Auftrag zu &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). Rufen Sie im KI-Assistenten Informationen zu Programmen, Umgebungen und Pipelines ab (z. B. Ausführungsstatus). Schnelles Auffinden von Links zu Fehlerprotokollen, Zugriffsprotokollen und Build-Protokollen.
+Der Entwicklungsagent wird erweitert, um Fragen im Zusammenhang mit Cloud Manager über den [Cloud Manager-Auftrag zu ](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). Rufen Sie im KI-Assistenten Informationen zu Programmen, Umgebungen und Pipelines ab (z. B. Ausführungsstatus). Schnelles Auffinden von Links zu Fehlerprotokollen, Zugriffsprotokollen und Build-Protokollen.
 
 #### Verbesserungen bei der Fehlerbehebung bei Pipeline-Agent-Vorgängen {#devagent-pipeline-troubleshooting}
 
-Der Vorgang zur Fehlerbehebung bei [-Pipelines &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) Entwicklern, Probleme in AEM as a Cloud Service-Bereitstellungen zu diagnostizieren und zu beheben. Zu den neuen Funktionen gehören:
+Der Vorgang zur Fehlerbehebung bei [-Pipelines ](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) Entwicklern, Probleme in AEM as a Cloud Service-Bereitstellungen zu diagnostizieren und zu beheben. Zu den neuen Funktionen gehören:
 
 * Unterstützung für die Web-Stufen-Konfigurations-Pipeline : Zusätzlich zur Unterstützung von Full-Stack-Pipelines (Bereitstellung und Code-Qualität) unterstützt der Entwicklungsagent jetzt die Fehlerbehebung für die **Web-Stufen-Konfigurations-Pipeline**
 
@@ -237,7 +244,7 @@ Der Vorgang zur Fehlerbehebung bei [-Pipelines &#x200B;](/help/ai-in-aem/agents/
 
 #### Verwalten von Ruhezeiten und Aktualisieren von Freizeiten mit dem KI-Assistenten {#quiet-hours-ai}
 
-Sie können jetzt &quot;[&#x200B; Stunden“ und „Freie Zeiträume aktualisieren“ direkt über &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) AEM-KI-Assistenten anzeigen, erstellen und bearbeiten.Der Hauptvorteil liegt in der Verringerung von Zeitplanfehlern. Wenn Sie eine Anfrage stellen, führt Sie der Assistent durch das Mögliche und kennzeichnet die geltenden Beschränkungen, z. B. die Obergrenze für drei Zeiträume, die obligatorische Lücke von einer Woche zwischen Zeiträumen und die geplanten Zeitfenster für Wartungsausschlüsse, für die Sie keinen Zeitplan festlegen können. Anstatt also nach einer fehlgeschlagenen Konfiguration eine Einschränkung zu ermitteln, werden Geschäftsinhaber und Bereitstellungs-Manager im selben Gespräch auf einen gültigen Zeitplan geleitet. Dadurch werden wichtige Geschäftsfenster vor automatischen Wartungs-Updates geschützt und gleichzeitig das Hin- und Herschieben und Fehlkonfigurieren reduziert.
+Sie können jetzt &quot;[ Stunden“ und „Freie Zeiträume aktualisieren“ direkt über ](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) AEM-KI-Assistenten anzeigen, erstellen und bearbeiten.Der Hauptvorteil liegt in der Verringerung von Zeitplanfehlern. Wenn Sie eine Anfrage stellen, führt Sie der Assistent durch das Mögliche und kennzeichnet die geltenden Beschränkungen, z. B. die Obergrenze für drei Zeiträume, die obligatorische Lücke von einer Woche zwischen Zeiträumen und die geplanten Zeitfenster für Wartungsausschlüsse, für die Sie keinen Zeitplan festlegen können. Anstatt also nach einer fehlgeschlagenen Konfiguration eine Einschränkung zu ermitteln, werden Geschäftsinhaber und Bereitstellungs-Manager im selben Gespräch auf einen gültigen Zeitplan geleitet. Dadurch werden wichtige Geschäftsfenster vor automatischen Wartungs-Updates geschützt und gleichzeitig das Hin- und Herschieben und Fehlkonfigurieren reduziert.
 
 ### Wichtige Hinweise zu [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-notices}
 
@@ -286,9 +293,9 @@ Der lokale Dispatcher-MCP-Server ermöglicht es KI-Tools, die Dispatcher- und Ap
 
 Java 25 ist die nächste LTS-Version (Long-Term Support) nach Java 21, die Verbesserungen in den Bereichen Leistung, Entwicklerproduktivität und Sicherheit bietet:
 
-&#x200B;- **Leistung** - Verringerter Speicherbedarf, effizientere Speicherbereinigung und schnellere JVM-Aufwärmphase kommen Cloud-nativen Bereitstellungen zugute.
-&#x200B;- **Entwicklerproduktivität** - Sauberere Objektinitialisierung, ausdrucksstärkere Musterübereinstimmung und vereinfachte gleichzeitige Aufgabenverwaltung reduzieren Textbausteine und verbessern die Code-Klarheit.
-&#x200B;- **Sicherheit** - Modernisierte API für die Ableitung kryptografischer Schlüssel zur Vereinfachung gängiger Sicherheits-Workflows.
+- **Leistung** - Verringerter Speicherbedarf, effizientere Speicherbereinigung und schnellere JVM-Aufwärmphase kommen Cloud-nativen Bereitstellungen zugute.
+- **Entwicklerproduktivität** - Sauberere Objektinitialisierung, ausdrucksstärkere Musterübereinstimmung und vereinfachte gleichzeitige Aufgabenverwaltung reduzieren Textbausteine und verbessern die Code-Klarheit.
+- **Sicherheit** - Modernisierte API für die Ableitung kryptografischer Schlüssel zur Vereinfachung gängiger Sicherheits-Workflows.
 
 Um Unternehmen bei der Planung von Tests und Validierungen vor dem erforderlichen Java 25-Laufzeitupgrade zu unterstützen, stellt Adobe die folgenden Zieldaten bereit. Alle Aktualisierungen dieser Zeitleiste werden über Versionshinweise kommuniziert.
 
@@ -316,7 +323,7 @@ Häufige Anwendungsszenarien umfassen:
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
-In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
+In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
 
 *Durch die Verwendung von AEM Edge Functions Beta erkennen Sie an, dass es sich noch in der Entwicklung befindet und Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit der Daten verlassen sollten. Diese Funktion wird unverändert bereitgestellt,
 können sich ohne Vorankündigung ändern und werden nicht von Produktions-SLAs abgedeckt.*
@@ -367,12 +374,12 @@ AEM as a Cloud Service unterstützt jetzt den OpenTelemetry-basierten Telemetrie
 
 Verwenden Sie diese Integration für Folgendes:
 
-&#x200B;- Untersuchen langsamer oder fehlgeschlagener Anfragen
-&#x200B;- JVM-Status und Ressourcennutzung im Zeitverlauf verfolgen
-&#x200B;- Erstellen von Dashboards und Warnhinweisen für Ihre AEM-Ebenen
-&#x200B;- Korrelieren des AEM-Verhaltens mit anderen Services während Vorfällen
+- Untersuchen langsamer oder fehlgeschlagener Anfragen
+- JVM-Status und Ressourcennutzung im Zeitverlauf verfolgen
+- Erstellen von Dashboards und Warnhinweisen für Ihre AEM-Ebenen
+- Korrelieren des AEM-Verhaltens mit anderen Services während Vorfällen
 
-Um sich der Alpha-Phase anzuschließen, senden Sie eine E-Mail an [&#128279;](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com, in der Ihr Anwendungsfall beschrieben wird.
+Um sich der Alpha-Phase anzuschließen, senden Sie eine E-Mail an [](mailto:aemcs-apm-beta@adobe.com)aemcs-apm-beta@adobe.com, in der Ihr Anwendungsfall beschrieben wird.
 
 ### Funktionen von [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta {#assets-beta-program-features}
 
