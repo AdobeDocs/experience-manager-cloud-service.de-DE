@@ -4,9 +4,9 @@ description: Definitionen für Beta-Metriken (AEM Assets Activation Report), die
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
-source-git-commit: 0b5e61f75a97bd31da034ebf282779a634217366
+source-git-commit: 49f94bdbd1c0fdd96e6d42c534900334af5c946d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ In diesem Artikel werden die Metriken hinter dieser Journey aufgeschlüsselt und
 
 Gemeinsam verbinden diese Metriken interne Asset-Aktivitäten mit externer Reichweite und Interaktion und helfen Ihnen dabei zu erkennen, wie Ihre Inhaltsvorgänge in echte Geschäftsergebnisse übersetzt werden.
 
-Dies ist nur der Anfang Ihres Journey mit AEM Assets, und diese Metriken werden sich parallel dazu weiterentwickeln. Wir würden uns über Ihr Feedback freuen, wenn Sie sie verwenden, damit wir diese Berichte für Sie nützlicher gestalten können.
+Dies ist nur der Anfang Ihres Journey mit AEM Assets, und diese Metriken werden sich parallel dazu weiterentwickeln. Wir würden Ihr Feedback benötigen, während Sie sie verwenden, damit wir diese Berichte für Sie nützlicher gestalten können.
 
 **Hinweis**: Wenn Sie diese mit Adobe Product/Engineering überprüfen oder Feedback einholen möchten, senden Sie eine E-Mail an `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 
