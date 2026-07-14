@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Version Cloud Manager 2026.7.0 in Adobe
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,9 @@ Ein neues Build-Modell kompiliert nur geänderte Module (und nicht das gesamte R
    * [Produktions-Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) und [produktionsfremde Pipeline hinzufügen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
 
 * **Inhaltskopie: Programmübergreifender und Vorwärtsfluss**\
-  Cloud Manager **Inhaltskopie** ermöglicht es Teams, Inhalte ohne Bereitstellung zwischen AEM-Umgebungen zu kopieren, und bietet zwei Funktionen, die für alle Programme verfügbar sind. Die programmübergreifende Unterstützung ermöglicht das Kopieren von Inhalten über verschiedene Cloud Manager-Programme hinweg, nicht nur innerhalb desselben Programms. Der Vorwärtsfluss entfernt die gerichtete Einschränkung, sodass Inhalte von jeder Umgebung in jede andere kopiert werden können - auch von niedrigeren Umgebungen nach oben.
+  Cloud Manager **Inhaltskopie** ermöglicht es Teams, Inhalte ohne Bereitstellung zwischen AEM-Umgebungen zu kopieren, und bietet zwei Funktionen, die für alle Programme verfügbar sind. Die programmübergreifende Unterstützung ermöglicht das Kopieren von Inhalten über verschiedene Cloud Manager-Programme hinweg, nicht nur innerhalb desselben. Der Vorwärtsfluss entfernt die gerichtete Einschränkung, sodass Inhalte von jeder Umgebung in jede andere kopiert werden können - auch von niedrigeren Umgebungen nach oben.
+
+  Weitere Informationen finden Sie unter [Das Inhaltskopie-Tool](/help/implementing/developing/tools/content-copy.md).
 
 
 ## Beta-Programme {#private-beta-program}

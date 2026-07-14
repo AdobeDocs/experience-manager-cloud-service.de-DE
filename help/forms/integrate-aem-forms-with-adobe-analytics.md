@@ -7,9 +7,9 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Gilt für AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 8364530ae83289156c1dfec2f9b1cb5aa445521d
 workflow-type: tm+mt
-source-wordcount: '8178'
+source-wordcount: '8255'
 ht-degree: 18%
 
 ---
@@ -496,7 +496,7 @@ Bevor Sie mit der Implementierung der Formularanalyse beginnen, stellen Sie sich
 >
 >Wenn beim Setup Probleme auftreten, finden Sie in unserem umfassenden Handbuch zur Fehlerbehebung bei [AEM Forms](/help/forms/troubleshooting-installation-and-configuration.md) Informationen zu Installations- und Konfigurationsproblemen.
 
-**Adobe Experience Cloud-Zugriff**
+**Zugriff auf Adobe Experience Cloud**
 
 - Gültige Adobe Experience Cloud-Organisation mit Adobe Analytics-Lizenzierung
 - Administrativer Zugriff auf Adobe Analytics- und AEM Forms-Umgebungen
@@ -561,22 +561,23 @@ Nach der Installation der Erweiterung **[!UICONTROL Adobe Experience Manager For
 <table>
  <tbody>
   <tr>
-   <td>FieldName</th>
-   <td>FieldTitle</th>
-   <td>FormInstance</th>
-  </tr>
-  <tr>
-   <td>FormName<br /> </td>
-   <td>FormTitle<br /> </td>
+   <td>PageTitle</td>
+   <td>PageURL</td>
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
-   <td>PanelTitle<br /> </td>
-   <td>TimeSpent</td>
+   <td>FieldTitle</td>
+   <td>PanelTitle</td>
+   <td></td>
   </tr>
  </tbody>
 </table>
+
+Die Datenelemente **PageTitle**, **PageURL**, **PageName**, **FieldTitle** und **PanelTitle** erfassen den Kontext auf Seiten- und Feldebene für mehrseitige adaptive Formulare. Verwenden Sie **PageTitle** und **PageName**, um die aktuelle Formularseite oder den aktuellen Formularbereich zu identifizieren, **PageURL**, um die URL aufzuzeichnen, unter der das Formular gerendert wird, und **FieldTitle** und **PanelTitle**, um die Beschriftung des aktiven Felds und des zugehörigen Bereichs zu melden.
+
+>[!NOTE]
+>
+> Wenn ein Benutzer die Daten in der Browser[Konsole anzeigen &#x200B;](/help/forms/creating-adaptive-form.md), verwenden Sie für adaptive Formulare, die mit „Foundation-Komponenten“ erstellt wurden, das `window.formAnalytics`.
 
 Führen Sie die folgenden Schritte aus, um Datenelemente zu konfigurieren:
 
@@ -584,7 +585,7 @@ Führen Sie die folgenden Schritte aus, um Datenelemente zu konfigurieren:
 
 1. Wählen Sie **[!UICONTROL Neues Datenelement erstellen]** aus.
 
-1. Geben Sie einen Namen für das Datenelement an. Zum Beispiel „Formulartitel“ für ein Datenelement vom Typ Formulartitel.
+1. Geben Sie einen Namen für das Datenelement an. Beispielsweise „Seitentitel“ für den Datenelementtyp „PageTitle“.
 
 1. Geben Sie **[!UICONTROL Adobe Experience Manager Forms]** als Name der Erweiterung an.
 
@@ -643,8 +644,7 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** das Pluszeichen (+) aus und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
 
-1. Wählen Sie als Aktionstyp **[!UICONTROL Variablen löschen]** aus. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte durchgeführt haben, wird der Abschnitt **[!UICONTROL Aktionen]** wie folgt angezeigt:
-   ![Konfiguration von Aktionen](assets/actions-config.png)
+1. Wählen Sie als Aktionstyp **[!UICONTROL Variablen löschen]** aus. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte durchgeführt haben, wird der Abschnitt **[!UICONTROL Aktionen]** wie folgt angezeigt:   ![Konfiguration von Aktionen](assets/actions-config.png)
 
    Passen Sie den Abschnitt **[!UICONTROL Aktionen]** Ihren Anforderungen entsprechend an. Sie können beispielsweise zwei Schritte **Beacon senden** in einem Aktionsfluss definieren, um in einem Schritt Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln und im zweiten Schritt Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln.
 
@@ -1026,7 +1026,7 @@ A.: Die Formularanalyse konzentriert sich speziell auf Benutzerinteraktionen inn
 
 **F: Benötige ich technische Expertise, um die Formularanalyse mit Adobe Analytics zu implementieren?**
 
-A.: Die grundlegende Implementierung kann mit moderatem technischem Wissen erreicht werden, aber erweiterte Konfigurationen profitieren von technischem Know-how. Adobe bietet automatisierte Einrichtungsoptionen durch Experience Cloud Setup Automation für einfachere Implementierungen. Bei komplexen Unternehmensbereitstellungen mit benutzerdefinierten Ereignissen und erweiterten Berichten wird die Zusammenarbeit mit Entwicklern oder Adobe-Beratern empfohlen.
+A.: Die grundlegende Implementierung kann mit moderatem technischem Wissen erreicht werden, aber erweiterte Konfigurationen profitieren von technischem Know-how. Adobe bietet automatisierte Einrichtungsoptionen durch Automatisierung der Einrichtung von Experience Cloud für einfachere Implementierungen. Bei komplexen Unternehmensbereitstellungen mit benutzerdefinierten Ereignissen und erweiterten Berichten wird die Zusammenarbeit mit Entwicklern oder Adobe-Beratern empfohlen.
 
 **F: Wie lange dauert es, bis aussagekräftige Daten aus der Formularanalyse angezeigt werden?**
 
@@ -1094,7 +1094,7 @@ A: Einhaltung der Datenschutzbestimmungen implementieren, indem Sie die Einwilli
 
 **F: Kann ich die Formularanalyse mit anderen Adobe Experience Cloud-Lösungen integrieren?**
 
-A: Ja, Adobe Analytics lässt sich nahtlos mit anderen Experience Cloud-Lösungen integrieren. Verbinden Sie sich mit Adobe Target für Formular-A/B-Tests und Personalisierung, integrieren Sie mit Adobe Campaign für Lead-Nurturing auf Grundlage des Formularverhaltens, verwenden Sie Adobe Audience Manager für die erweiterte Segmentierung und nutzen Sie Adobe Experience Platform für eine umfassende Journey-Analyse.
+A: Ja, Adobe Analytics lässt sich nahtlos in andere Experience Cloud-Lösungen integrieren. Verbinden Sie sich mit Adobe Target für Formular-A/B-Tests und Personalisierung, integrieren Sie mit Adobe Campaign für Lead-Nurturing auf Grundlage des Formularverhaltens, verwenden Sie Adobe Audience Manager für die erweiterte Segmentierung und nutzen Sie Adobe Experience Platform für eine umfassende Journey-Analyse.
 
 **F: Wie richte ich prädiktive Analysen für den Formularabbruch ein?**
 
