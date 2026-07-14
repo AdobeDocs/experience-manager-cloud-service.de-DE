@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder ei
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
+source-git-commit: 71cf6c00d91ce0e63a68c1b4d4e9a884feee1a33
 workflow-type: tm+mt
-source-wordcount: '5860'
-ht-degree: 90%
+source-wordcount: '5799'
+ht-degree: 76%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 In diesem Artikel werden die in AEM as a Cloud Service verfügbaren erweiterten Netzwerkfunktionen vorgestellt. Zu diesen Funktionen gehören Selfservice- und API-Bereitstellung von VPNs, nicht standardmäßige Ports und dedizierte Ausgangs-IP-Adressen.
 
-Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die Sie durch die erweiterten Netzwerkoptionen führen. Siehe [Erweiterte Netzwerkfunktionen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die Sie durch die einzelnen erweiterten Netzwerkoptionen führen. Siehe [Erweiterte Netzwerkfunktionen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
@@ -24,8 +24,7 @@ Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die S
 >
 >Dieser Artikel beschreibt die benutzeroberflächenbasierte Methode. Wenn Sie die Konfiguration lieber über das API automatisieren möchten, finden Sie weitere Informationen dazu im Tutorial [Virtuelles privates Netzwerk (VPN)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
->**Automatisieren erweiterter Netzwerke mit der API**
->Zur Automatisierung der Einrichtung erweiterter Netzwerkfunktionen (z. B. VPN-Erstellung) können Sie das Cloud Manager-API verwenden:
+>**Automatisieren erweiterter Netzwerke mit der APIZur Automatisierung der Einrichtung erweiterter Netzwerkfunktionen (z. B. VPN-Erstellung) können Sie das Cloud Manager-API verwenden:
 >
 >```bash
 >curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
@@ -55,11 +54,11 @@ AEM as a Cloud Service bietet die folgenden erweiterten Netzwerkoptionen:
 * [Dedizierte Ausgangs-IP-Adresse](#dedicated-egress-ip-address): Konfigurieren von Traffic aus AEM as a Cloud Service, der von einer eindeutigen IP stammt.
 * [Virtuelles privates Netzwerk (VPN)](#vpn): Sicherung des Traffics zwischen Ihrer Infrastruktur und AEM as a Cloud Service, wenn Sie über ein VPN verfügen.
 
-In diesem Artikel wird jede dieser Optionen zunächst im Detail beschrieben und erläutert, warum Sie sie ggf. verwenden sollten. Anschließend wird beschrieben, wie die Optionen über die Cloud Manager-Benutzeroberfläche und die API konfiguriert werden. Zum Abschluss des Artikels werden einige Anwendungsfälle für Fortgeschrittene vorgestellt.
+In diesem Artikel werden die einzelnen Optionen detailliert beschrieben und erläutert, warum Sie sie verwenden, bevor Sie beschreiben, wie sie mithilfe der Benutzeroberfläche von Cloud Manager und der API konfiguriert werden. Zum Abschluss des Artikels werden einige Anwendungsfälle für Fortgeschrittene vorgestellt.
 
 >[!CAUTION]
 >
->Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&lang=de#home).
+>Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=de#home).
 >
 >Der Versuch, erweiterte Netzwerke mit einer veralteten Egress-Technologie zu konfigurieren, kann sich auf die Konnektivität der Site auswirken.
 
@@ -72,9 +71,9 @@ Bei der Konfiguration erweiterter Netzwerkfunktionen gelten die folgenden Einsch
 * Benutzende müssen über die Rolle **Admin** verfügen, um die Netzwerkinfrastruktur in ihrem Programm hinzuzufügen und zu konfigurieren.
 * Die Produktionsumgebung muss erstellt werden, bevor in Ihrem Programm eine Netzwerkinfrastruktur hinzugefügt werden kann.
 * Ihre Netzwerkinfrastruktur muss sich in derselben Region befinden wie die primäre Region Ihrer Produktionsumgebung.
-   * Wenn Ihre Produktionsumgebung über [zusätzliche Veröffentlichungsregionen](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) verfügt, können Sie zusätzliche Netzwerkinfrastrukturen erstellen, die jede zusätzliche Region widerspiegeln.
+   * Wenn Ihre Produktionsumgebung über [zusätzliche Veröffentlichungsregionen](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) verfügt, erstellen Sie eine Netzwerkinfrastruktur, die jede zusätzliche Region spiegelt.
    * Sie dürfen nicht mehr Netzwerkinfrastrukturen erstellen als die in Ihrer Produktionsumgebung konfigurierte maximale Anzahl von Regionen.
-   * Sie können so viele Netzwerkinfrastrukturen definieren, wie Regionen in Ihrer Produktionsumgebung verfügbar sind. Die neue Infrastruktur muss jedoch vom gleichen Typ sein wie die zuvor erstellte Infrastruktur.
+   * Sie können so viele Netzwerkinfrastrukturen definieren, wie Regionen in Ihrer Produktionsumgebung verfügbar sind. Die neue Infrastruktur muss jedoch vom gleichen Typ sein wie die zuvor erstellte.
    * Beim Erstellen mehrerer Infrastrukturen dürfen Sie nur die Regionen auswählen, in denen keine erweiterte Netzwerkinfrastruktur erstellt wurde.
 
 ### Konfigurieren und Aktivieren erweiterter Netzwerke {#configuring-enabling}
@@ -88,7 +87,7 @@ Beide Schritte können entweder über die Cloud Manager-Benutzeroberfläche oder
 
 * Bei Verwendung der Cloud Manager-Benutzeroberfläche müssen erweiterte Netzwerkkonfigurationen mithilfe eines Assistenten auf Programmebene erstellt und dann die einzelnen Umgebungen bearbeitet werden, in denen Sie die Konfiguration aktivieren möchten.
 
-* Bei der Verwendung der Cloud Manager-API wird der `/networkInfrastructures`-API-Endpunkt auf der Programmebene aufgerufen, um die gewünschte Art der erweiterten Vernetzung zu deklarieren. Es folgt ein Aufruf des `/advancedNetworking`-Endpunkts für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren.
+* Bei der Verwendung der Cloud Manager-API wird der `/networkInfrastructures`-API-Endpunkt auf der Programmebene aufgerufen, um die gewünschte Art der erweiterten Vernetzung zu deklarieren. Es folgt ein Aufruf an den `/advancedNetworking`-Endpunkt für jede Umgebung, um die Infrastruktur zu aktivieren und umgebungsspezifische Parameter zu konfigurieren.
 
 ## Flexibler Port-Ausgang {#flexible-port-egress}
 
@@ -96,7 +95,7 @@ Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service s
 
 >[!TIP]
 >
->Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse empfiehlt es sich, den flexiblen Port-Ausgang zu wählen, wenn eine bestimmte IP-Adresse nicht erforderlich ist. Der Grund dafür ist, dass Adobe über den flexiblen Port-Ausgang die Leistung des Traffics optimieren kann.
+>Bei der Entscheidung zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse empfiehlt es sich, den flexiblen Port-Ausgang zu wählen, wenn eine bestimmte IP-Adresse nicht erforderlich ist. Der Grund dafür ist, dass Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann.
 
 >[!NOTE]
 >
@@ -121,7 +120,7 @@ Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service s
 
    ![Bestätigen der Konfiguration des flexiblen Port-Ausgangs](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
-Unter der Überschrift **Netzwerkinfrastruktur** im seitlichen Panel wird ein neuer Eintrag angezeigt. Er enthält Details wie den Typ der Infrastruktur, den Status, die Region und die Umgebungen, in der die Infrastruktur aktiviert ist.
+Unter der Überschrift **Netzwerkinfrastruktur** im seitlichen Panel wird ein neuer Eintrag angezeigt. Dazu gehören der Infrastrukturtyp, der Status, die Region und aktivierte Umgebungen.
 
 ![Neuer Eintrag unter Netzwerkinfrastruktur](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -131,20 +130,20 @@ Unter der Überschrift **Netzwerkinfrastruktur** im seitlichen Panel wird ein ne
 
 ### API-Konfiguration {#configuring-flexible-port-egress-provision-api}
 
-Einmal pro Programm wird der POST-Endpunkt `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `flexiblePortEgress` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status.
+Einmal pro Programm wird der Endpunkt POST-`/program/<programId>/networkInfrastructures` aufgerufen, wobei der Wert von `flexiblePortEgress` für den `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status.
 
-Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf des [Netzwerkinfrastruktur-GET-Endpunkts](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) von Cloud Manager würde den Status **Bereit** anzeigen.
+Nach dem Aufruf dauert es etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf des Cloud Manager-Endpunkts [Netzwerkinfrastruktur-GET](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure) zeigt den Status &quot;**&quot;**.
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ### Traffic-Routing {#flexible-port-egress-traffic-routing}
 
-Für HTTP- oder HTTPS-Traffic, der an andere Ports als 80 oder 443 geleitet wird, sollte ein Proxy mit den folgenden Host- und Port-Umgebungsvariablen konfiguriert werden:
+Für HTTP- oder HTTPS-Traffic, der an andere Ports als 80 oder 443 geleitet wird, konfigurieren Sie einen Proxy mit den folgenden Host- und Port-Umgebungsvariablen:
 
-* für HTTP: `AEM_PROXY_HOST`/`AEM_HTTP_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
-* für HTTPS: `AEM_PROXY_HOST`/`AEM_HTTPS_PROXY_PORT ` (Standardeinstellung ist `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
+* für HTTP: `AEM_PROXY_HOST`/ `AEM_HTTP_PROXY_PORT` (standardmäßig `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
+* für HTTPS: `AEM_PROXY_HOST`/ `AEM_HTTPS_PROXY_PORT` (standardmäßig `proxy.tunnel:3128` in AEM-Versionen &lt; 6094)
 
 Hier finden Sie Beispiel-Code zum Senden einer Anfrage an `www.example.com:8443`:
 
@@ -162,7 +161,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Wenn Sie nicht standardmäßige Java™-Netzwerkbibliotheken verwenden, konfigurieren Sie mithilfe der oben genannten Eigenschaften Proxys für den gesamten Traffic.
 
-Nicht-HTTP/S-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, sollte auf eine Eigenschaft namens `AEM_PROXY_HOST` verweisen, zusammen mit dem zugeordneten Port. Zum Beispiel:
+Nicht-HTTP/S-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, verweist auf eine Eigenschaft namens `AEM_PROXY_HOST`, zusammen mit dem zugeordneten Port. Zum Beispiel:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -246,13 +245,13 @@ Eine dedizierte IP-Adresse kann die Sicherheit bei der Integration mit SaaS-Anbi
 
 Dieselbe dedizierte IP wird auf alle Umgebungen in einem Programm angewendet und gilt gleichermaßen für Autoren- und Veröffentlichungs-Service.
 
-Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von gemeinsam genutzten IPs. Diese IPs werden von anderen Kundinnen und Kunden von AEM as a Cloud Service verwendet.
+Wenn die Funktion der dedizierten IP-Adresse nicht aktiviert ist, fließt der Traffic von AEM as a Cloud Service über eine Reihe von gemeinsam genutzten IPs. Andere AEM as a Cloud Service-Kunden verwenden diese IPs.
 
 Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Port-Ausgang](#flexible-port-egress). Der Hauptunterschied besteht darin, dass der Traffic nach der Konfiguration immer von einer dedizierten, eindeutigen IP-Adresse ausgeht. Um diese IP zu finden, verwenden Sie einen DNS-Resolver, um die IP-Adresse zu identifizieren, die mit `p{PROGRAM_ID}.external.adobeaemcloud.com` verbunden ist. Es wird nicht erwartet, dass sich die IP-Adresse ändert. Falls sie aber doch geändert werden muss, wird vorher eine Benachrichtigung gesendet.
 
 >[!TIP]
 >
->Bei der Wahl zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse ist der flexible Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist. Der Grund dafür ist, dass Adobe über den flexiblen Port-Ausgang die Leistung des Traffics optimieren kann.
+>Bei der Wahl zwischen flexiblem Port-Ausgang und dedizierter Ausgangs-IP-Adresse ist der flexible Port-Ausgang zu wählen, wenn keine bestimmte IP-Adresse erforderlich ist. Der Grund dafür ist, dass Adobe die Leistung des Ausgangs-Traffics des flexiblen Ports optimieren kann.
 
 >[!NOTE]
 >
@@ -283,7 +282,7 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Po
 
    ![Bestätigen der Konfiguration des flexiblen Port-Ausgangs](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Seitenbereich angezeigt. Er enthält Details wie den Typ der Infrastruktur, den Status, die Region und die Umgebungen, in der die Infrastruktur aktiviert ist.
+Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Seitenbereich angezeigt. Dazu gehören der Infrastrukturtyp, der Status, die Region und aktivierte Umgebungen.
 
 ![Neuer Eintrag unter Netzwerkinfrastruktur](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
@@ -293,19 +292,19 @@ Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Sei
 
 ### API-Konfiguration {#configuring-dedicated-egress-provision-api}
 
-Einmal pro Programm wird der POST-Endpunkt `/program/<programId>/networkInfrastructures` aufgerufen, wobei einfach der Wert von `dedicatedEgressIp` für den Parameter `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status.
+Einmal pro Programm wird der Endpunkt POST-`/program/<programId>/networkInfrastructures` aufgerufen, wobei der Wert von `dedicatedEgressIp` für den `kind` und die Region übergeben wird. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status.
 
-Nach dem Aufruf dauert es in der Regel etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf des [Netzwerkinfrastruktur-GET-Endpunkts](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) von Cloud Manager würde den Status **Bereit** anzeigen.
+Nach dem Aufruf dauert es etwa 15 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Ein Aufruf des Cloud Manager-Endpunkts [Netzwerkinfrastruktur-GET](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure) zeigt den Status &quot;**&quot;**.
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ### Traffic-Routing {#dedicated-egress-ip-traffic-routing}
 
 HTTP- oder HTTPS-Traffic durchläuft einen vorkonfigurierten Proxy, sofern er standardmäßige Java™-Systemeigenschaften für Proxy-Konfigurationen verwendet.
 
-Nicht-HTTP/s-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, sollte auf eine Eigenschaft namens `AEM_PROXY_HOST` verweisen, zusammen mit dem zugeordneten Port. Zum Beispiel:
+Nicht-HTTP/S-Traffic mit Zielen über Ports, die im `portForwards`-Parameter deklariert wurden, verweist auf eine Eigenschaft namens `AEM_PROXY_HOST`, zusammen mit dem zugeordneten Port. Zum Beispiel:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -403,7 +402,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 Einige Bibliotheken erfordern eine explizite Konfiguration, um standardmäßige Java™-Systemeigenschaften für Proxy-Konfigurationen zu verwenden.
 
-Ein Beispiel mit Apache HttpClient, das explizite Aufrufe von erfordert
+Ein Code-Beispiel mit Apache HttpClient, das explizite Aufrufe von erfordert
 [`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) oder verwenden
 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
@@ -423,7 +422,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Überlegungen zum Debugging {#debugging-considerations}
 
-Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Andernfalls kann es nützlich sein, einen Debugging-Dienst wie [https://ifconfig.me/ip](https://ifconfig.me/ip) aufzurufen, der die aufrufende IP-Adresse zurückgibt.
+Um zu überprüfen, ob der Traffic tatsächlich über die erwartete dedizierte IP-Adresse ausgeht, überprüfen Sie die Protokolle im Zieldienst, sofern verfügbar. Rufen Sie andernfalls einen Debugging-Service wie [https://ifconfig.me/ip](https://ifconfig.me/ip) auf, der die aufrufende IP-Adresse zurückgibt.
 
 ## Virtuelles privates Netzwerk (VPN) {#vpn}
 
@@ -431,12 +430,11 @@ Ein VPN ermöglicht die Verbindung zu einer On-Premise-Infrastruktur oder einem 
 
 Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die Informationen in der Spalte **RouteBased-Konfigurationsanweisungen** in [dieser Geräteliste](https://learn.microsoft.com/de-de/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Konfigurieren Sie das Gerät, wie in der Tabelle beschrieben.
 
->[!NOTE]
->
->Im Folgenden finden Sie Einschränkungen für eine VPN-Infrastruktur:
->
->* Die Unterstützung ist auf eine einzige VPN-Verbindung beschränkt
->* DNS-Resolver müssen im Gateway-Adressraum aufgeführt sein, um private Host-Namen aufzulösen.
+Eine VPN-Infrastruktur unterstützt mehrere Verbindungen, sodass Sie über dieselbe Infrastruktur eine Verbindung zu mehr als einem On-Premise-Netzwerk oder Rechenzentrum herstellen können. Adobe empfiehlt maximal 20 Verbindungen pro Infrastruktur.
+
+<!-- NEW Each connection uses either static routing or BGP dynamic routing, and both types can coexist within the same infrastructure. For more information on configuring routing, see [Add a VPN connection](). -->
+
+Um private Hostnamen aufzulösen, müssen DNS-Resolver im Adressbereich des Gateways aufgeführt werden.
 
 ### Konfiguration der Benutzeroberfläche {#configuring-vpn-ui}
 
@@ -461,7 +459,7 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 
    ![Konfigurieren des VPN](assets/advanced-networking-ui-vpn.png)
 
-1. Geben Sie auf der Registerkarte **Verbindungen** des Assistenten einen **Verbindungsnamen** ein, um Ihre VPN-Verbindung zu identifizieren und klicken Sie auf **Verbindung hinzufügen**.
+1. Um Ihre VPN-Verbindung zu identifizieren, geben Sie einen **Verbindungsnamen** auf der Registerkarte **Verbindungen** des Assistenten ein und klicken Sie auf **Verbindung hinzufügen**.
 
    ![Hinzufügen einer Verbindung](assets/advanced-networking-ui-vpn-add-connection.png)
 
@@ -484,17 +482,17 @@ Die meisten VPN-Geräte mit IPSec-Technologie werden unterstützt. Lesen Sie die
 
    ![Bestätigen der Konfiguration des flexiblen Port-Ausgangs](assets/advanced-networking-ui-vpn-confirm.png)
 
-Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Seitenbereich angezeigt. Er enthält Details wie den Typ der Infrastruktur, den Status, die Region und die Umgebungen, in der die Infrastruktur aktiviert ist.
+Ein neuer Datensatz wird unter der Überschrift **Netzwerkinfrastruktur** im Seitenbereich angezeigt. Dazu gehören der Infrastrukturtyp, der Status, die Region und aktivierte Umgebungen.
 
 ### API-Konfiguration {#configuring-vpn-api}
 
 Einmal pro Programm wird der POST-Endpunkt `/program/<programId>/networkInfrastructures` aufgerufen. Er übergibt eine Payload von Konfigurationsinformationen. Diese Informationen umfassen den Wert von **vpn** für den Parameter `kind`, Region, Adressraum (Liste der CIDRs – beachten Sie, dass dieser Wert später nicht mehr geändert werden kann), DNS-Resolver (zur Auflösung von Namen in Ihrem Netzwerk). Es enthält auch VPN-Verbindungsinformationen wie Gateway-Konfiguration, freigegebenen VPN-Schlüssel und die IP-Sicherheitsrichtlinie. Der Endpunkt antwortet mit der `network_id` sowie anderen Informationen, einschließlich des Status.
 
-Nach dem Aufruf dauert es in der Regel zwischen 45 und 60 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Die GET-Methode in der API kann aufgerufen werden, um den Status zurückzugeben, der schließlich von `creating` zu `ready` wechselt. In der API-Dokumentation finden Sie alle Status.
+Nach dem Aufruf dauert es in der Regel zwischen 45 und 60 Minuten, bis die Netzwerkinfrastruktur bereitgestellt wird. Die GET-Methode in der API kann aufgerufen werden, um den Status zurückzugeben, der sich schließlich von `creating` zu `ready` ändert. In der API-Dokumentation finden Sie alle Status.
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ### Traffic-Routing {#vpn-traffic-routing}
 
@@ -622,7 +620,7 @@ Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, k�
    * Für jeden Ziel-Host müssen Sie den vorgesehenen Ziel-Port einem Port von 30000 bis 30999 zuordnen.
    * Port-Weiterleitungsregeln sind für alle erweiterten Netzwerktypen verfügbar.
 
-* **Nicht-Proxy-Hosts** - Mit Nicht-Proxy-Hosts können Sie eine Reihe von Hosts deklarieren, die über einen freigegebenen IP-Adressbereich anstatt über die dedizierte IP routen sollen.
+* **Nicht-Proxy-Hosts** - Mit Nicht-Proxy-Hosts können Sie eine Reihe von Hosts deklarieren, die über einen freigegebenen IP-Adressbereich anstatt über die dedizierte IP-Adresse routen.
    * Dieser Ansatz kann nützlich sein, da der Traffic, der über freigegebene IP-Adressen austritt, weiter optimiert werden kann.
    * Nicht-Proxy-Hosts sind nur für die erweiterten Netzwerktypen „Dedizierte Ausgangs-IP-Adresse“ und „VPN“ verfügbar.
 
@@ -661,7 +659,7 @@ Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, k�
 
 1. Klicken Sie im Dialogfeld auf **Speichern**, damit Sie die Konfiguration auf die Umgebung anwenden können.
 
-Die erweiterte Netzwerkkonfiguration wird auf die ausgewählte Umgebung angewendet. Zurück auf der Registerkarte **Umgebungen** können Sie Details zu der auf die ausgewählte Umgebung angewendeten Konfiguration und ihren Status sehen.
+Die erweiterte Netzwerkkonfiguration wird auf die ausgewählte Umgebung angewendet. Auf der Registerkarte **Umgebungen** können Sie die Details der Konfiguration sehen, die auf die ausgewählte Umgebung angewendet wurde, sowie deren Status.
 
 ![Umgebung mit erweiterter Netzwerkkonfiguration](assets/advanced-networking-ui-configured-environment.png)
 
@@ -669,17 +667,17 @@ Die erweiterte Netzwerkkonfiguration wird auf die ausgewählte Umgebung angewend
 
 Um eine erweiterte Netzwerkkonfiguration für eine Umgebung zu aktivieren, muss der Endpunkt `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` pro Umgebung aufgerufen werden.
 
-Die API sollte in nur wenigen Sekunden antworten und den Status `updating` anzeigen. Nach etwa 10 Minuten zeigt ein Aufruf des GET-Endpunkts für die Umgebung von Cloud Manager den Status `ready` an, was bedeutet, dass die Aktualisierung der Umgebung angewendet wird.
+Die API antwortet in einigen Sekunden und gibt den Status `updating` an. Nach etwa 10 Minuten zeigt ein Aufruf des GET-Endpunkts für die Umgebung von Cloud Manager den Status `ready` an, was bedeutet, dass die Aktualisierung der Umgebung angewendet wird.
 
-Die umgebungsabhängigen Port-Weiterleitungsregeln können aktualisiert werden, indem der Endpunkt `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` aufgerufen und dabei alle Konfigurationsparameter und nicht nur eine Teilmenge eingeschlossen werden.
+Die Regeln für die Port-Weiterleitung pro Umgebung können durch Aufrufen des `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`-Endpunkts und das Einschließen des vollständigen Satzes von Konfigurationsparametern (anstelle einer Teilmenge) aktualisiert werden.
 
-Die erweiterten Netzwerkkonfigurationstypen „Dedizierte Ausgangs-IP-Adresse“ und „VPN“ unterstützen den `nonProxyHosts`-Parameter. Durch diese Unterstützung können Sie eine Reihe von Hosts deklarieren, die über einen freigegebenen IP-Adressbereich anstatt über die dedizierte IP-Adresse routen sollten. Die `nonProxyHost`-URLs können dem Muster von `example.com` oder `*.example.com` folgen, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
+Die erweiterten Netzwerkkonfigurationstypen „Dedizierte Ausgangs-IP-Adresse“ und „VPN“ unterstützen den `nonProxyHosts`-Parameter. Durch diese Unterstützung können Sie eine Gruppe von Hosts deklarieren, die über einen freigegebenen IP-Adressbereich anstatt über die dedizierte IP-Adresse routen. Die `nonProxyHost`-URLs folgen den Mustern von `example.com` oder `*.example.com`, wobei der Platzhalter nur am Beginn der Domain unterstützt wird.
 
-Auch wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics gibt (Hosts oder Bypässe), muss `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` trotzdem aufgerufen werden, nur mit einer leeren Payload.
+Auch wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics (Hosts oder Bypässe) gibt, rufen Sie `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` mit einer leeren Payload auf.
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ## Bearbeiten und Löschen erweiterter Netzwerkkonfigurationen in Umgebungen {#editing-deleting-environments}
 
@@ -712,7 +710,7 @@ Um eine erweiterte Netzwerkkonfiguration für eine bestimmte Umgebung zu lösche
 
 >[!TIP]
 >
->Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+>Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
 ## Bearbeiten und Löschen der Netzwerkinfrastruktur eines Programms {#editing-deleting-program}
 
@@ -770,8 +768,7 @@ Wenn Sie einen anderen Infrastrukturtyp für erweiterte Netzwerke als den bereit
 
 >[!WARNING]
 >
-> Dieses Verfahren führt zu einer Ausfallzeit der Dienste für die erweiterte Vernetzung zwischen der Löschung und der Neuerstellung.
-> Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben würden, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.
+> Dieses Verfahren führt zu einer Ausfallzeit der Dienste für die erweiterte Vernetzung zwischen der Löschung und der Neuerstellung.Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.
 
 ## Erweiterte Netzwerkkonfiguration für andere Veröffentlichungsregionen {#advanced-networking-configuration-for-additional-publish-regions}
 
@@ -779,7 +776,7 @@ Wenn zu einer Umgebung mit einem bereits konfigurierten erweiterten Netzwerk ein
 
 >[!NOTE]
 >
->Alle Regionen haben die gleiche [erweiterte Netzwerkkonfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), sodass es nicht möglich ist, den Traffic an verschiedene Ziele zu leiten, je nachdem, aus welcher Region der Traffic kommt.
+>Alle Regionen haben die gleiche [erweiterte Netzwerkkonfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Environment-Advanced-Networking-Configuration), sodass es nicht möglich ist, den Traffic an verschiedene Ziele zu leiten, je nachdem, aus welcher Region der Traffic kommt.
 
 ### Dedizierte Ausgangs-IP-Adressen {#additional-publish-regions-dedicated-egress}
 
@@ -789,14 +786,14 @@ Wenn in der primären Region bereits eine erweiterte Netzwerkkonfiguration aktiv
 
 1. Wenn Sie Ihre Infrastruktur so eingeschränkt haben, dass die dedizierte AEM-IP-Adresse auf der Zulassungsliste steht, deaktivieren Sie vorübergehend alle Ablehnungsregeln in dieser Infrastruktur. Wenn Sie diesen Schritt überspringen, lehnt Ihre Infrastruktur Anfragen von den IP-Adressen der neuen Region vorübergehend ab. Dieser Schritt ist nicht erforderlich, wenn Sie Ihre Infrastruktur über einen vollständig qualifizierten Domain-Namen (Fully Qualified Domain Name, FQDN) abgeschottet haben, z. B. `p1234.external.adobeaemcloud.com`). Alle AEM-Regionen geben den erweiterten Netzwerk-Traffic von demselben FQDN aus.
 1. Erstellen Sie die programmweite Netzwerkinfrastruktur für die sekundäre Region durch einen POST-Aufruf an die Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur, wie in der Dokumentation zu erweiterten Netzwerken beschrieben. Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
-1. Wenn Sie Ihre Infrastruktur per IP sperren müssen, um AEM-Traffic zuzulassen, fügen Sie die IP-Adressen hinzu, die `p1234.external.adobeaemcloud.com` entsprechen. Pro Region sollte es eine geben.
+1. Wenn Sie Ihre Infrastruktur per IP sperren müssen, um AEM-Traffic zuzulassen, fügen Sie die IP-Adressen hinzu, die `p1234.external.adobeaemcloud.com` entsprechen. Es gibt eine pro Region.
 
 #### Noch kein erweitertes Netzwerk in einer Region konfiguriert {#not-yet-configured}
 
 Das Verfahren ähnelt größtenteils den vorherigen Anweisungen. Wenn die Produktionsumgebung jedoch noch nicht für erweiterte Netzwerke aktiviert wurde, besteht die Möglichkeit, die Konfiguration zu testen, indem sie zuerst in einer Staging-Umgebung aktiviert wird:
 
-1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch einen POST-Aufruf an das [Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
-1. Aktivieren und konfigurieren Sie für die Staging-Umgebung das erweiterte Netzwerk, das im Umgebungsumfang verfügbar ist, indem Sie `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` ausführen. Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration).
+1. Erstellen Sie eine Netzwerkinfrastruktur für alle Regionen durch einen POST-Aufruf an das [Cloud Manager-API zum Erstellen einer Netzwerkinfrastruktur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Network-infrastructure/operation/createNetworkInfrastructure). Der einzige Unterschied in der JSON-Konfiguration der Payload im Verhältnis zur primären Region ist die Regionseigenschaft.
+1. Aktivieren und konfigurieren Sie für die Staging-Umgebung das erweiterte Netzwerk, das im Umgebungsumfang verfügbar ist, indem Sie `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` ausführen. Weitere Informationen finden Sie in der [API-Dokumentation](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration).
 1. Sperren Sie ggf. die externe Infrastruktur, vorzugsweise nach FQDN (z. B. `p1234.external.adobeaemcloud.com`). Andernfalls können Sie auch die IP-Adresse verwenden.
 1. Wenn die Staging-Umgebung erwartungsgemäß funktioniert, aktivieren und konfigurieren Sie die erweiterte Netzwerkkonfiguration der Umgebung für die Produktion.
 
@@ -806,13 +803,13 @@ Das Verfahren ist fast identisch mit den Anweisungen für dedizierte Ausgangs-IP
 
 ## Fehlerbehebung
 
-Beachten Sie, dass die folgenden Punkte als informative Richtlinien bereitgestellt werden und Best Practices für die Fehlerbehebung enthalten. Diese Empfehlungen sollen dazu beitragen, Probleme effektiv zu diagnostizieren und zu lösen.
+Die folgenden Punkte sind informative Richtlinien und enthalten Best Practices für die Fehlerbehebung. Diese Empfehlungen sollen dazu beitragen, Probleme effektiv zu diagnostizieren und zu lösen.
 
 ### Verbindungs-Pools {#connection-pooling-advanced-networking}
 
-Verbindungs-Pools sind eine Technik zur Erstellung und Aufrechterhaltung eines Repositorys von Verbindungen, die für die sofortige Verwendung durch jeden Thread bereit sind, der sie benötigt. Zahlreiche Verbindungs-Pool-Techniken finden Sie auf verschiedenen Online-Plattformen und -Ressourcen, jeweils mit ihren einzigartigen Vorteilen und Details. Adobe empfiehlt seiner Kundschaft, sich über diese Methoden zu informieren und diejenigen auszusuchen, die mit der Architektur ihres Systems am besten kompatibel sind.
+Beim Verbindungspooling handelt es sich um eine Technik, mit der eine Sammlung von Verbindungen erstellt und verwaltet werden kann. Diese Verbindungen sind für die sofortige Verwendung durch jeden Thread verfügbar, der sie benötigt. Es stehen verschiedene Verbindungspoolingtechniken zur Verfügung, die jeweils spezifische Vorzüge und Überlegungen aufweisen. Adobe empfiehlt seiner Kundschaft, sich über diese Methoden zu informieren und diejenigen auszusuchen, die mit der Architektur ihres Systems am besten kompatibel sind.
 
-Die Implementierung einer geeigneten Strategie zur Bündelung von Verbindungen ist eine proaktive Maßnahme, um ein gängiges Problem bei der Systemkonfiguration zu korrigieren, die zu einer suboptimalen Leistung führen. Durch die ordnungsgemäße Einrichtung eines Verbindungs-Pools kann Adobe Experience Manager (AEM) die Effizienz externer Aufrufe verbessern. Dieser Ansatz reduziert nicht nur den Ressourcenverbrauch, sondern verkleinert auch das Risiko von Dienstunterbrechungen sowie die Wahrscheinlichkeit des Fehlschlagens von Anfragen bei der Kommunikation mit Upstream-Servern.
+Die Implementierung einer geeigneten Verbindungspoolingstrategie ist eine Maßnahme, um ein häufiges Problem in der Systemkonfiguration zu beheben, das häufig zu Leistungseinbußen führt. Durch die ordnungsgemäße Einrichtung eines Verbindungs-Pools kann Adobe Experience Manager (AEM) die Effizienz externer Aufrufe verbessern. Dieser Ansatz reduziert den Ressourcenverbrauch, mindert das Risiko von Service-Unterbrechungen und verringert die Wahrscheinlichkeit von fehlgeschlagenen Anfragen bei der Kommunikation mit externen Servern.
 
 Auf Grundlage dieser Informationen empfiehlt Adobe, Ihre aktuelle AEM-Konfiguration zu überprüfen. Erwägen Sie auch, Verbindungs-Pools bewusst zusammen mit Ihren erweiterten Netzwerkeinstellungen zu verwenden. Indem Sie die Anzahl der parallelen Verbindungen steuern und die der veralteten Verbindungen reduzieren, können Sie die Netzwerkleistung optimieren. Diese Aktionen verringern das Risiko, dass Proxy-Server ihre Verbindungsgrenzen erreichen. Eine solche strategische Implementierung soll somit die Wahrscheinlichkeit verringern, dass Anfragen externe Endpunkte nicht erreichen.
 
@@ -830,7 +827,7 @@ Die Beschränkung gilt nur für Verbindungen, die erweiterte Netzwerkfunktionen 
 
 Wenn die Kundin oder der Kunde dynamisch Verbindungen erstellt (z. B. eine oder mehrere Verbindungen für jede Anfrage), kann ein Anstieg des Traffics zu einer Spitze der Verbindungen führen.
 
-##### Hätte sich in der Vergangenheit eine ähnliche Situation ergeben, ohne dass ein Warnhinweis ausgelöst worden wäre?
+##### Ist in der Vergangenheit eine ähnliche Situation eingetreten, ohne dass ein Warnhinweis ausgelöst wurde?
 
 Warnhinweise werden nur gesendet, wenn die weiche Grenze erreicht ist.
 
@@ -844,7 +841,7 @@ Nein. Eine große Anzahl von Verbindungen kann erhebliche Leistungseinbußen ver
 
 ##### Werden die Verbindungen nach einem bestimmten Zeitraum automatisch vom AEM geschlossen?
 
-Ja. Verbindungen werden auf JVM-Ebene und an verschiedenen Punkten in der Netzwerkinfrastruktur geschlossen. Dieser Workflow kommt für Produktionsdienste jedoch zu spät. Verbindungen sollten explizit geschlossen werden, sobald sie nicht mehr benötigt werden, oder bei Verwendung von Verbindungs-Pools zum Pool zurückgegeben werden. Andernfalls ist der Ressourcenverbrauch zu hoch und kann zu einer Erschöpfung der Ressourcen führen.
+Ja, die Verbindungen werden auf JVM-Ebene und innerhalb der Netzwerkinfrastruktur geschlossen. Dieser Workflow kommt für Produktionsdienste jedoch zu spät. Verbindungen sollten explizit geschlossen werden, sobald sie nicht mehr benötigt werden, oder bei Verwendung von Verbindungs-Pools zum Pool zurückgegeben werden. Andernfalls ist der Ressourcenverbrauch zu hoch und kann zu einer Erschöpfung der Ressourcen führen.
 
 ##### Wenn die maximale Verbindungsgrenze erreicht ist, wirkt sich dies auf irgendwelche Lizenzen aus und verursacht zusätzliche Kosten?
 
