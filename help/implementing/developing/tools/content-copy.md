@@ -16,7 +16,7 @@ ht-degree: 51%
 Mit dem Inhaltskopie-Tool können Benutzende veränderbare Inhalte bei Bedarf aus ihren Produktionsumgebungen in AEM as a Cloud Service zu Testzwecken in niedrigere Umgebungen kopieren.
 
 >[!NOTE]
->Der Kopierfluss für den primären Inhalt erfolgt von höheren Umgebungen in niedrigere Umgebungen. **Vorwärtsfluss** ermöglicht auch das Kopieren aus niedrigeren Nicht-Produktionsumgebungen in höhere Nicht-Produktionsumgebungen (z. B. Entwicklung in die Staging- oder RDE in die Staging-Umgebung). Weitere Informationen finden [ unter ](#limitations).
+>Der Kopierfluss für den primären Inhalt erfolgt von höheren Umgebungen in niedrigere Umgebungen. **Vorwärtsfluss** ermöglicht auch das Kopieren aus niedrigeren Nicht-Produktionsumgebungen in höhere Nicht-Produktionsumgebungen (z. B. Entwicklung in die Staging- oder RDE in die Staging-Umgebung). Weitere Informationen finden [&#x200B; unter &#x200B;](#limitations).
 
 ## Einführung {#introduction}
 
@@ -108,7 +108,7 @@ Das Content-Set kann jetzt zum Kopieren von Inhalten zwischen Umgebungen verwend
 Nachdem ein Content-Set erstellt wurde, können Sie es zum Kopieren von Inhalten verwenden.
 
 >[!NOTE]
-> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [ Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
+> Verwenden Sie keine Inhaltskopie in einer Umgebung, während [&#x200B; Vorgang „Inhaltsübertragung](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in dieser Umgebung ausgeführt wird.
 
 **So kopieren Sie Inhalte:**
 
