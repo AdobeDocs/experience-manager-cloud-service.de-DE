@@ -4,15 +4,15 @@ description: Erfahren Sie, wie Sie erweiterte Netzwerkfunktionen wie VPN oder ei
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 71cf6c00d91ce0e63a68c1b4d4e9a884feee1a33
+source-git-commit: 126ba1233a2533aa4b47288509da76ba6d784698
 workflow-type: tm+mt
 source-wordcount: '5799'
-ht-degree: 76%
+ht-degree: 75%
 
 ---
 
 
-# Konfigurieren der erweiterten Netzwerkfunktionen für AEM as a Cloud Service {#configuring-advanced-networking}
+# Erweiterte Netzwerkfunktionen für AEM as a Cloud Service konfigurieren {#configuring-advanced-networking}
 
 In diesem Artikel werden die in AEM as a Cloud Service verfügbaren erweiterten Netzwerkfunktionen vorgestellt. Zu diesen Funktionen gehören Selfservice- und API-Bereitstellung von VPNs, nicht standardmäßige Ports und dedizierte Ausgangs-IP-Adressen.
 
@@ -24,7 +24,8 @@ Zusätzlich zu dieser Dokumentation gibt es auch eine Reihe von Tutorials, die S
 >
 >Dieser Artikel beschreibt die benutzeroberflächenbasierte Methode. Wenn Sie die Konfiguration lieber über das API automatisieren möchten, finden Sie weitere Informationen dazu im Tutorial [Virtuelles privates Netzwerk (VPN)](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
->**Automatisieren erweiterter Netzwerke mit der APIZur Automatisierung der Einrichtung erweiterter Netzwerkfunktionen (z. B. VPN-Erstellung) können Sie das Cloud Manager-API verwenden:
+>**Automatisieren erweiterter Netzwerke mit der API**
+>Zur Automatisierung der Einrichtung erweiterter Netzwerkfunktionen (z. B. VPN-Erstellung) können Sie das Cloud Manager-API verwenden:
 >
 >```bash
 >curl -X POST https://cloudmanager.adobe.io/api/program/{PROGRAM_ID}/environment/{ENV_ID}/vpn \
@@ -58,7 +59,7 @@ In diesem Artikel werden die einzelnen Optionen detailliert beschrieben und erl�
 
 >[!CAUTION]
 >
->Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&lang=de#home).
+>Wenn Sie bereits mit einer älteren dedizierten Ausgangs-Technologie ausgestattet sind und eine dieser erweiterten Netzwerkoptionen konfigurieren möchten, [wenden Sie sich an die Kundenunterstützung von Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=de#home).
 >
 >Der Versuch, erweiterte Netzwerke mit einer veralteten Egress-Technologie zu konfigurieren, kann sich auf die Konnektivität der Site auswirken.
 
@@ -76,7 +77,7 @@ Bei der Konfiguration erweiterter Netzwerkfunktionen gelten die folgenden Einsch
    * Sie können so viele Netzwerkinfrastrukturen definieren, wie Regionen in Ihrer Produktionsumgebung verfügbar sind. Die neue Infrastruktur muss jedoch vom gleichen Typ sein wie die zuvor erstellte.
    * Beim Erstellen mehrerer Infrastrukturen dürfen Sie nur die Regionen auswählen, in denen keine erweiterte Netzwerkinfrastruktur erstellt wurde.
 
-### Konfigurieren und Aktivieren erweiterter Netzwerke {#configuring-enabling}
+### Konfigurieren und Aktivieren von erweiterten Netzwerkfunktionen {#configuring-enabling}
 
 Die Verwendung erweiterter Netzwerkfunktionen erfordert zwei Schritte:
 
@@ -101,7 +102,7 @@ Diese erweiterte Netzwerkfunktion ermöglicht es Ihnen, AEM as a Cloud Service s
 >
 >Nach der Erstellung können die Infrastrukturtypen des flexiblen Port-Ausgangs nicht mehr bearbeitet werden. Die einzige Möglichkeit zum Ändern von Konfigurationswerten besteht darin, sie zu löschen und neu zu erstellen.
 
-### Konfiguration der Benutzeroberfläche {#configuring-flexible-port-egress-provision-ui}
+### UI-Konfiguration {#configuring-flexible-port-egress-provision-ui}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -263,7 +264,7 @@ Die Konfiguration der dedizierten Ausgangs-IP-Adresse ähnelt dem [flexiblen Po
 >
 >Nach der Erstellung können die Infrastrukturtypen von dedizierten Ausgangs-IP-Adressen nicht mehr bearbeitet werden. Die einzige Möglichkeit zum Ändern von Konfigurationswerten besteht darin, sie zu löschen und neu zu erstellen.
 
-### Konfiguration der Benutzeroberfläche {#configuring-dedicated-egress-provision-ui}
+### UI-Konfiguration {#configuring-dedicated-egress-provision-ui}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -436,7 +437,7 @@ Eine VPN-Infrastruktur unterstützt mehrere Verbindungen, sodass Sie über diese
 
 Um private Hostnamen aufzulösen, müssen DNS-Resolver im Adressbereich des Gateways aufgeführt werden.
 
-### Konfiguration der Benutzeroberfläche {#configuring-vpn-ui}
+### UI-Konfiguration {#configuring-vpn-ui}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -628,7 +629,7 @@ Wenn Sie eine erweiterte Netzwerkkonfiguration für eine Umgebung aktivieren, k�
 >
 >Sie können erweiterte Netzwerkkonfiguration für eine Umgebung nicht aktivieren, wenn sich die Umgebung im Status **Wird aktualisiert** befindet.
 
-### Aktivieren über die Benutzeroberfläche {#enabling-ui}
+### Aktivieren von über die Benutzeroberfläche {#enabling-ui}
 
 1. Melden Sie sich unter [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) bei Cloud Manager an und wählen Sie die entsprechende Organisation aus.
 
@@ -663,7 +664,7 @@ Die erweiterte Netzwerkkonfiguration wird auf die ausgewählte Umgebung angewend
 
 ![Umgebung mit erweiterter Netzwerkkonfiguration](assets/advanced-networking-ui-configured-environment.png)
 
-### Aktivieren über die API {#enabling-api}
+### Aktivieren mithilfe der API {#enabling-api}
 
 Um eine erweiterte Netzwerkkonfiguration für eine Umgebung zu aktivieren, muss der Endpunkt `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` pro Umgebung aufgerufen werden.
 
@@ -679,7 +680,7 @@ Auch wenn es keine Regeln für die Weiterleitung des Umgebungs-Traffics (Hosts o
 >
 >Der vollständige Satz von Parametern, die genaue Syntax und wichtige Informationen darüber, welche Parameter z. B. später nicht mehr geändert werden können, [können der API-Dokumentation entnommen werden](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/createNetworkInfrastructure).
 
-## Bearbeiten und Löschen erweiterter Netzwerkkonfigurationen in Umgebungen {#editing-deleting-environments}
+## Erweiterte Netzwerkkonfigurationen in Umgebungen bearbeiten und löschen {#editing-deleting-environments}
 
 Nach der [Aktivierung der erweiterten Netzwerkkonfigurationen für Umgebungen](#enabling) können Sie die Details dieser Konfigurationen aktualisieren oder löschen.
 
@@ -704,7 +705,7 @@ Nach der [Aktivierung der erweiterten Netzwerkkonfigurationen für Umgebungen](#
 
 Die Änderungen werden auf der Registerkarte **Umgebungen** widergespiegelt.
 
-### Bearbeiten oder Löschen über die API {#editing-api}
+### Bearbeiten oder Löschen mit der API {#editing-api}
 
 Um eine erweiterte Netzwerkkonfiguration für eine bestimmte Umgebung zu löschen, rufen Sie `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` auf.
 
@@ -768,7 +769,8 @@ Wenn Sie einen anderen Infrastrukturtyp für erweiterte Netzwerke als den bereit
 
 >[!WARNING]
 >
-> Dieses Verfahren führt zu einer Ausfallzeit der Dienste für die erweiterte Vernetzung zwischen der Löschung und der Neuerstellung.Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.
+> Dieses Verfahren führt zu einer Ausfallzeit der Dienste für die erweiterte Vernetzung zwischen der Löschung und der Neuerstellung.
+> Wenn Ausfallzeiten erhebliche geschäftliche Auswirkungen haben, wenden Sie sich an den Support, um Hilfe zu erhalten, und beschreiben Sie, was bereits erstellt wurde und warum die Änderung vorgenommen wurde.
 
 ## Erweiterte Netzwerkkonfiguration für andere Veröffentlichungsregionen {#advanced-networking-configuration-for-additional-publish-regions}
 
