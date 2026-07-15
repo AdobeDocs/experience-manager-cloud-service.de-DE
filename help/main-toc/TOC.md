@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Erfahren Sie, wie Experience Manager as a Cloud Service funktioniert und wie Sie die Software nutzen können.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
+source-git-commit: 73e771836baccaae940737c0d3ab129cc2814295
 workflow-type: tm+mt
-source-wordcount: '7580'
+source-wordcount: '7586'
 ht-degree: 83%
 
 ---
@@ -677,6 +677,7 @@ ht-degree: 83%
       + [Importieren und Exportieren von Asset-Metadaten](/help/assets/metadata-import-export.md)
       + [Konfigurieren von Einschränkungen beim Hochladen von Assets](/help/assets/configure-asset-upload-restrictions.md)
       + [KI-gestütztes Content-Onboarding und Inhaltsautomatisierung mit supply chain](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
+      + [Asset-Beschaffungsportal für AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
    + Freigeben und Verteilen von Assets {#brand-portal}
       + [Konfigurieren von [!DNL Assets] mit [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Veröffentlichen von Assets in  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)

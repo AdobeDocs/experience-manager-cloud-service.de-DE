@@ -5,14 +5,21 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
 nudge: please
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: d39e6d7256caa721561a6b29d0fb1061572ec9d6
 workflow-type: tm+mt
-source-wordcount: '6002'
+source-wordcount: '6065'
 ht-degree: 85%
 
 ---
 
 # Schnelle Entwicklungsumgebungen {#rapid-development-environments}
+
+>[!NOTE]
+>
+>**Neue Verbesserung: RDE-Momentaufnahmen**
+>
+>Nehmen Sie jetzt in der öffentlichen Beta-Version einen RDE-Schnappschuss vor, um später Code und Inhalte wiederherzustellen. [Weitere Informationen finden &#x200B;](#snapshots) unten.
+>
 
 Zur Bereitstellung von Änderungen erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und -Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
 
@@ -714,8 +721,7 @@ Weitere Informationen zur Verwendung von Cloud Manager zur Verwaltung Ihrer Umge
 >[!NOTE]
 >RDE-Momentaufnahmen befinden sich in der öffentlichen Beta-Phase und können daher aktiviert werden, indem auf das neueste aio-Plug-in aktualisiert wird, ohne dass Adobe kontaktiert werden muss.
 >
->Durch die Verwendung der RDE-Snapshots-Beta erkennen Sie an, dass sie sich noch in der Entwicklung befindet und dass Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit von Daten verlassen sollten. Obwohl wir diese Funktion ausführlich getestet haben, besteht eine geringe Möglichkeit, dass Ihre RDE instabil wird. In diesem Fall wird sie durch Zurücksetzen wieder in den Betriebszustand versetzt.
->Wir freuen uns über Feedback unter [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
+>Durch die Verwendung der RDE-Snapshots-Beta erkennen Sie an, dass sie sich noch in der Entwicklung befindet und dass Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit von Daten verlassen sollten. Obwohl wir diese Funktion ausführlich getestet haben, besteht eine geringe Möglichkeit, dass Ihre RDE instabil wird. In diesem Fall wird sie durch Zurücksetzen wieder in den Betriebszustand versetzt.Wir freuen uns über Feedback unter [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
 
 RDEs unterstützen die Erstellung einer Momentaufnahme des aktuellen Status von Code und Inhalt, die zu einem späteren Zeitpunkt wiederhergestellt werden kann. Momentaufnahmen sind nützlich, wenn Code synchronisiert wird, der möglicherweise zurückgesetzt werden muss, oder wenn zwischen der Entwicklung verschiedener Funktionen gewechselt wird. Es ist auch möglich, nur den veränderlichen Inhalt eines Snapshots als bekannten Ausgangspunkt für Tests wiederherzustellen.
 
