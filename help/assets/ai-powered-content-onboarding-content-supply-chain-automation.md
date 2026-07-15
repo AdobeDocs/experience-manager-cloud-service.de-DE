@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie einmalige Inhaltsmigrationen und die Automati
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Gilt für AEM Assets)."
-source-git-commit: 3985d61b59b610c63f94407a9fdc4860390d7e42
+source-git-commit: c2a7e7ab0b3c8c336343036af105a827cd77f3c2
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 2%
+source-wordcount: '676'
+ht-degree: 6%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 2%
 Unternehmen speichern häufig digitale Assets und Metadaten über mehrere Repositorys hinweg, z. B. Digital Asset Management (DAM)-Systeme, Cloud-Speicher-Services und Inhaltsplattformen. Die Migration von Inhalten auf ein neues System oder die Synchronisierung mehrerer Repositorys erfordert in der Regel manuellen Aufwand oder benutzerdefinierte Integrationen, die schwer zu erstellen und zu pflegen sind.
 
 Mit dieser Funktion können Sie einmalige Inhaltsmigrationen und wiederkehrende Synchronisierungen zwischen unterstützten Repositorys automatisieren. Ein KI-basierter Agent führt Sie durch die Konfiguration von Inhaltsübertragungen, indem er Repository-Verbindungen, Metadatenzuordnungen und Übertragungseinstellungen vorschlägt und so den Aufwand für das Verschieben und Synchronisieren von Inhalten zwischen Systemen reduziert.
+
+>[!IMPORTANT]
+>
+>Diese Funktion ist als Funktion für eingeschränkte Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
 
 ## Vorteile {#benefits-ai-powered-content-onboarding-content-supply-chain-automation}
 
