@@ -124,7 +124,7 @@ Durch die Pflege der Metadaten zur Asset-Herkunft können Teams die Governance, 
 
 **AEM-Integration mit Workfront Planning und GenStudio for Performance Marketing für Standard-Kampagnenmetadaten**
 
-Wenn AEM Assets mit [Workfront Planning und GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index) integriert ist, sind jetzt Kampagnenmetadatenfelder, einschließlich Kampagnenname, Region, Kanal, Rolle und Produkt, in der Leiste „Asset-Ansicht“ der Eigenschaften in einer dedizierten schreibgeschützten Kampagnenregisterkarte verfügbar. Wenn Benutzerinnen und Benutzer in Workfront Planning Assets aus AEM mit GenStudio mit den entsprechenden Objekten in Adobe GenStudio Workspace verbinden, werden bestimmte Werte (z. B. ein bestimmter Kampagnenname) automatisch zu den Metadaten des AEM-Assets hinzugefügt.
+Wenn AEM Assets mit [Workfront Planning und GenStudio for Performance Marketing](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index) integriert ist, sind jetzt Kampagnenmetadatenfelder, einschließlich Kampagnenname, Region, Kanal, Rolle und Produkt, in der Leiste „Asset-Ansicht“ der Eigenschaften in einer dedizierten schreibgeschützten Kampagnenregisterkarte verfügbar. Wenn Benutzerinnen und Benutzer in Workfront Planning Assets aus AEM mit GenStudio mit den entsprechenden Objekten in Adobe GenStudio Workspace verbinden, werden bestimmte Werte (z. B. ein bestimmter Kampagnenname) automatisch zu den Metadaten des AEM-Assets hinzugefügt.
 
 Die Integration ermöglicht es Benutzenden, auf der Grundlage von Kampagnenattributen schnell Assets zu finden und nach ihnen zu suchen. Diese Verbesserung verbessert die Auffindbarkeit von Assets, optimiert die Workflows für das Content-Management und hilft Teams, die richtigen Assets für bestimmte Marketing-Initiativen effizienter zu finden.
 
@@ -331,7 +331,7 @@ Häufige Anwendungsszenarien umfassen:
 * Umformatieren von Antworten aus APIs von Drittanbietern (und möglicherweise Aggregieren mehrerer API-Antworten), bevor sie an den Browser gesendet werden
 * Erstellen und Bereitstellen von Server-gerenderter HTML am Edge mithilfe von Inhalten, die aus verschiedenen Backends zusammengefügt wurden
 
-In [diesem Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
+In [diesem Tutorial](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/edge-functions/overview) finden Sie eine Anleitung für Edge Delivery Services und AEM as a Cloud Service Java-Stack-Varianten.
 
 *Durch die Verwendung von AEM Edge Functions Beta erkennen Sie an, dass es sich noch in der Entwicklung befindet und Sie sich nicht auf die ordnungsgemäße Funktionsweise der Technologie oder die Verfügbarkeit der Daten verlassen sollten. Diese Funktion wird unverändert bereitgestellt,
 können sich ohne Vorankündigung ändern und werden nicht von Produktions-SLAs abgedeckt.*
