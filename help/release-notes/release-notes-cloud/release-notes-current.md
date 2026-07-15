@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4455'
 ht-degree: 16%
 
 ---
@@ -131,6 +131,14 @@ Die Integration ermöglicht es Benutzenden, auf der Grundlage von Kampagnenattri
 >[!IMPORTANT]
 >
 >Diese Funktion ist als Funktion mit eingeschränkter Verfügbarkeit verfügbar und erfordert Lizenzen für Workfront Planning und GenStudio for Performance Marketing. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
+
+**KI-gestütztes Content-Onboarding und supply chain-Automatisierung von Inhalten**
+
+Verwenden Sie einen KI-gestützten Agenten, um Inhaltsmigrationen und wiederkehrende Synchronisierungen zwischen unterstützten Inhalts-Repositorys zu konfigurieren und zu automatisieren. Der Agent führt Sie durch die Einrichtung der Verbindung, die Metadatenzuordnung und die Validierung mit Probeläufen vor der Übertragung von Inhalten. Durch die Eliminierung manueller Prozesse und benutzerdefinierter Integrationen beschleunigt diese Funktion das Onboarding, vereinfacht die laufende Synchronisierung und hilft, Assets und Metadaten systemübergreifend konsistent zu halten.
+
+>[!IMPORTANT]
+>
+>Diese Funktion ist als Funktion für eingeschränkte Verfügbarkeit verfügbar. Sie können [einen Adobe-Support-Fall erstellen und übermitteln](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die Funktion für Ihre Bereitstellung zu aktivieren.
 
 
 ### Neue Funktionen in Dynamic Media mit OpenAPI-Funktionen {#new-features-dynamic-media-openapi}
