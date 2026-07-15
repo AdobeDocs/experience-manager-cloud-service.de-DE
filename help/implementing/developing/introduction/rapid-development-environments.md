@@ -18,7 +18,7 @@ ht-degree: 85%
 >
 >**Neue Verbesserung: RDE-Momentaufnahmen**
 >
->Nehmen Sie jetzt in der öffentlichen Beta-Version einen RDE-Schnappschuss vor, um später Code und Inhalte wiederherzustellen. [Weitere Informationen finden ](#snapshots) unten.
+>Nehmen Sie jetzt in der öffentlichen Beta-Version einen RDE-Schnappschuss vor, um später Code und Inhalte wiederherzustellen. [Weitere Informationen finden &#x200B;](#snapshots) unten.
 >
 
 Zur Bereitstellung von Änderungen erfordern aktuelle Cloud-Entwicklungsumgebungen die Verwendung eines Prozesses, der umfassende Code-Sicherheits- und -Qualitätsregeln anwendet, die als CI/CD-Pipeline bezeichnet werden. Für Situationen, in denen schnelle und iterative Änderungen erforderlich sind, hat Adobe schnelle Entwicklungsumgebungen (Rapid Development Environments, RDEs) eingeführt.
