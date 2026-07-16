@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie das Model Context Protocol mit AEM as a Cloud
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c47ffb63648e5eaa55bff1d993f6550d7c2a6bf1
+source-git-commit: 804e0b0c96f7adf2d0863f26f77966ec8fc03d55
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 1%
+source-wordcount: '2105'
+ht-degree: 0%
 
 ---
 
@@ -47,11 +47,12 @@ AEM stellt MCP-Server als HTTP-Endpunkte bereit. Die unten aufgeführten Endpunk
 
 | MCP-Server | Endpunkt | Beschreibung |
 |---|---|---|
-| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import und Asset-Suche (die mindestens erforderliche AEM-Versionsversion ist `26309`). Mit dem [Claude-Connector](/help/ai-in-aem/mcp-support/setup-claude.md) werden auch das Hochladen, Herunterladen, Verschieben/Kopieren/Löschen und Veröffentlichen/Rückgängigmachen der Veröffentlichung von Assets sowie das Bearbeiten von Metadaten, das Überprüfen von Verweisen und das Identifizieren nicht verwendeter Assets unterstützt. |
-| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (GET, LIST/SEARCH) für Seiten und Inhaltsfragmente sowie die Asset-Suche (die mindestens erforderliche AEM-Release-Version ist `26309`). Mit dem [Claude-Connector](/help/ai-in-aem/mcp-support/setup-claude.md) wird auch der Asset-Download, die Überprüfung von Verweisen und die Identifizierung nicht verwendeter Assets unterstützt. |
+| **Inhalt** | `/content` | Inhaltsvorgänge, einschließlich Erstellen, Lesen, Aktualisieren und Löschen (CRUD) für Seiten und Inhaltsfragmente sowie Asset-Import und Asset-Suche (die mindestens erforderliche AEM-Versionsversion ist `26309`). Mit dem [Claude-Connector](/help/ai-in-aem/mcp-support/setup-claude.md) und dem [ChatGPT-Plug-in](/help/ai-in-aem/mcp-support/setup-chatgpt.md) werden auch das Hochladen, Herunterladen, Verschieben/Kopieren/Löschen und Veröffentlichen/Rückgängigmachen der Veröffentlichung von Assets sowie das Bearbeiten von Metadaten, das Überprüfen von Verweisen und das Identifizieren nicht verwendeter Assets unterstützt. |
+| **Inhalt (schreibgeschützt)** | `/content-readonly` | Schreibgeschützte Inhaltsvorgänge (GET, LIST/SEARCH) für Seiten und Inhaltsfragmente sowie die Asset-Suche (die mindestens erforderliche AEM-Release-Version ist `26309`). Mit dem [Claude-Connector](/help/ai-in-aem/mcp-support/setup-claude.md) und dem [ChatGPT-Plug-](/help/ai-in-aem/mcp-support/setup-chatgpt.md) wird auch der Asset-Download, die Überprüfung von Verweisen und die Identifizierung nicht verwendeter Assets unterstützt. |
 | **Cloud Manager** | `/cloudmanager` | Verwalten Sie Cloud Manager-Entitäten, einschließlich Programmen, Umgebungen, Repositorys und Pipelines, die ebenfalls ausgelöst werden können. |
 | **Experience Governance** | `/experience-governance` | Bewerten Sie Inhalte (Text, Bilder, Seiten) anhand der Regeln der Markenführung und listen Sie Markenkonfigurationen und -prüfungen auf.<br/>Wenn Sie Interesse haben, müssen Sie sich für die [Agenten-Testversion anmelden oder über eine gebührenpflichtige Lizenz verfügen](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) um auf den Experience Governance MCP zugreifen zu können. |
 | **Cloud-Migration** | `/cloud-migration` | Rufen Sie Best Practices Analyzer (BPA)-Ergebnisse aus Cloud Acceleration Manager (CAM) nach Migrationsmuster oder Schweregrad ab, sodass KI-Agenten die Code-Migration von AEM 6.x zu AEM as a Cloud Service fördern können. Siehe [Verwenden des Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
+| **AEM MCP-Server** | `/aem` | Seit Juni 2026 neu ist dies ein zentraler Endpunkt, der die Tools der oben aufgeführten AEM-MCP-Server aggregiert (außer Cloud-Migration) und über eine Verbindung verfügbar macht. Dies ist die bevorzugte Methode zur Verbindung mit AEM. Beachten Sie, dass die Zugriffsbeschränkungen, die Sie von Adobe für diesen aggregierten Server anfordern können, unterschiedlich und derzeit stärker eingeschränkt sind als für die einzelnen Server. Stellen Sie daher sicher, dass sie Ihren Anforderungen entsprechen. Siehe [Einschränken von MCP-Servern](#restricting-mcp-servers). |
 
 Die spezifischen Tools, die von den einzelnen MCP-Servern bereitgestellt werden, können sich im Laufe der Zeit weiterentwickeln. In der Praxis können Sie Ihre MCP-fähige Anwendung bitten, Tools über eine Eingabeaufforderung zu ermitteln, z. B.:
 
@@ -99,7 +100,7 @@ Die Konfiguration von MCP für AEM umfasst zwei Hauptbestandteile:
 Eine schrittweise Anleitung zu beiden Schritten finden Sie unter:
 
 * [Anthropic Claude (sowohl für die manuelle Konfiguration von MCP-Servern als auch für die Installation des AEM Claude-Connectors)](/help/ai-in-aem/mcp-support/setup-claude.md)
-* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+* [OpenAI ChatGPT (sowohl für die manuelle Konfiguration von MCP-Servern als auch für die Installation des AEM ChatGPT-Plug-ins)](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Mauszeiger](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [JetBrains mit GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
@@ -114,7 +115,11 @@ Alle Anwendungen, die unter [Unterstützte MCP-Anwendungen](#supported-mcp-appli
 
 #### Einschränken von MCP-Servern {#restricting-mcp-servers}
 
-Alle MCP-Server sind standardmäßig aktiviert. Als Administrator haben Sie die Möglichkeit, den Zugriff auf bestimmte MCP-Server auf Organisations-, Programm- oder Umgebungsebene einzuschränken. Durch diese Einschränkung erhalten Sie eine granulare Kontrolle darüber, welche MCP-Funktionen Benutzern in Ihrer Organisation zur Verfügung stehen.
+Alle MCP-Server sind standardmäßig aktiviert. Als Administrator haben Sie die Möglichkeit, den Zugriff auf bestimmte MCP-Server auf Organisations-, Programm- oder Umgebungsebene einzuschränken (außer auf den AEM MCP-Server - siehe Hinweis unten). Durch diese Einschränkung erhalten Sie eine granulare Kontrolle darüber, welche MCP-Funktionen Benutzern in Ihrer Organisation zur Verfügung stehen.
+
+>[!IMPORTANT]
+>
+>Der **AEM MCP-Server** (`/aem`) aggregiert mehrere MCP-Server hinter einem einzigen Endpunkt. Die Konfiguration, die Sie von Adobe anfordern können, ist anders, mit der Option **Schreibgeschützt** (nur schreibgeschützte Tools zulassen) oder **Kein Zugriff** (überhaupt keine Tools). Die Standardeinstellung ist der Zugriff auf alle Tools **Lese-/**). Um eine Konfigurationsänderung anzufordern, wenden Sie sich unter **`aemcs-mcp-feedback@adobe.com`** an Adobe.
 
 #### Verwalten des MCP-Client-Zugriffs {#managing-mcp-client-access}
 
