@@ -1,20 +1,20 @@
 ---
-title: Versionshinweise zum universellen Editor 2026.07.09
-description: Dies sind die Versionshinweise für die Version 2026.07.09 des universellen Editors.
+title: Versionshinweise zum universellen Editor 2026.07.16
+description: Dies sind die Versionshinweise für die Version 2026.07.16 des universellen Editors.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 06bb5b7e685336a5b628e6523f3ae9733a2e78e2
+source-git-commit: 863939466578c684b854f2e6d4f67a12b29ea7e3
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 18%
+source-wordcount: '129'
+ht-degree: 17%
 
 ---
 
 
-# Versionshinweise zum universellen Editor 2026.07.09 {#release-notes}
+# Versionshinweise zum universellen Editor 2026.07.16 {#release-notes}
 
-Dies sind die Versionshinweise für die Version vom 9. Juli 2026 des universellen Editors.
+Dies sind die Versionshinweise für die Version vom 16. Juli 2026 des universellen Editors.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ Dies sind die Versionshinweise für die Version vom 9. Juli 2026 des universelle
 
 ## Andere Verbesserungen {#other-improvements}
 
-* [Rückgängig/Wiederholen](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)-Aktionen wurden verbessert.
-* [Sortierte Listen](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) werden jetzt korrekt gerendert, wenn sie inline mit dem Rich-Text-Editor bearbeitet werden.
-* [Neuanordnung von Abschnitten durch Ziehen und Ablegen](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move) funktioniert jetzt ordnungsgemäß.
-* Dropdown-Listen für die Feldauswahl im Eigenschaftenbereich werden in bestimmten Situationen nicht mehr durch die Experience Platform-Navigationsleiste verdeckt.
+* Die Optionsfelder zum Auswählen des [responsiven Modus](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) des Editors verfügen jetzt über barrierefreie Beschriftungen.
+* Mit der Option Alle löschen für Kontrollkästchen werden nun alle Felder ordnungsgemäß gelöscht, auch wenn eine Standardeinstellung vorhanden ist.
+* Wählen Sie Dropdown-Listen aus, die jetzt ordnungsgemäß gerendert werden sollen.
+* Beschriftungen und Symbole auf Schaltflächen und Untermenüs für die Erweiterbarkeit sind jetzt korrekt ausgerichtet.
