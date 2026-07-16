@@ -15,16 +15,16 @@ ht-degree: 0%
 
 Dieser Artikel behandelt zwei verschiedene Möglichkeiten, OpenAI ChatGPT mit AEM zu verwenden:
 
-- Konfigurieren Sie manuell einen oder mehrere MCP-Server von AEM in ChatGPT (die unter &quot;[ von MCP mit AEM as a Cloud Service - MCP-Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers) beschriebenen Server).
+- Konfigurieren Sie manuell einen oder mehrere MCP-Server von AEM in ChatGPT (die unter &quot;[&#x200B; von MCP mit AEM as a Cloud Service - MCP-Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers) beschriebenen Server).
 - Installieren Sie das Adobe Experience Manager-Plug-in über den ChatGPT-Plug-in-Marketplace. Es weist derzeit eine Funktionsparität mit Content MCP Server auf und stellt eine wachsende Untergruppe von Tools zur Verfügung, die in AEM MCP-Servern verfügbar sind.
 
 ## Manuelles Konfigurieren der AEM-MCP-Server in ChatGPT {#manual-configure-aems-mcp-servers-in-chatgpt}
 
 In diesem Abschnitt wird der Ansatz **manuelle Konfiguration** beschrieben, bei dem Sie einen oder mehrere MCP-Server von AEM als benutzerdefinierte Programme oder Connectoren zu ChatGPT hinzufügen.
 
-* Fügen Sie eine oder mehrere AEM MCP-Server-URLs in dem Bereich hinzu, in dem MCP-Verbindungen oder -Tools konfiguriert sind.
-* Erstellen Sie einen Trigger für die Verbindung und melden Sie sich bei der Weiterleitung mit Ihrer Adobe ID an.
-* Verweisen Sie in einem Chat auf die konfigurierten AEM-Tools in Ihren Eingabeaufforderungen, z. B.:
+&#x200B;* Fügen Sie eine oder mehrere AEM MCP-Server-URLs in dem Bereich hinzu, in dem MCP-Verbindungen oder -Tools konfiguriert sind.
+&#x200B;* Erstellen Sie einen Trigger für die Verbindung und melden Sie sich bei der Weiterleitung mit Ihrer Adobe ID an.
+&#x200B;* Verweisen Sie in einem Chat auf die konfigurierten AEM-Tools in Ihren Eingabeaufforderungen, z. B.:
 
   ```
   "Using the configured AEM MCP tools, list all sites in the author environment."
