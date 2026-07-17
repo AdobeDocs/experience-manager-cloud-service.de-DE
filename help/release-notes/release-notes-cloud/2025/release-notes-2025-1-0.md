@@ -4,9 +4,9 @@ description: Versionshinweise für Version 2025.1.0 von [!DNL Adobe Experience 
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 73d703220c685ec94c60bc0bea412ea6106ec34a
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1940'
 ht-degree: 88%
 
 ---
@@ -129,7 +129,9 @@ Das Early-Access-Programm von AEM Forms bietet Ihnen die einmalige Möglichkeit,
 
 In diesen Versionshinweisen werden die in der aktuellen Version bereitgestellten Innovationen aufgeführt. Eine vollständige Liste der im Rahmen des Early-Access-Programms verfügbaren Innovationen finden Sie in der [Dokumentation zum AEM Forms-Early-Access-Programm](/help/forms/early-access-ea-features.md).
 
-#### [HTML-E-Mail-Vorlagen in adaptivem Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### HTML-E-Mail-Vorlagen in adaptiven Formularen
+
+[HTML-E-Mail-Vorlagen in adaptiven Formularen](/help/forms/html-email-templates-in-adaptive-forms.md)
 
 Adaptive Forms ermöglicht die Verwendung von HTML-E-Mail-Vorlagen. Mit HTML-E-Mail-Vorlagen können Sie beim Übermitteln eines Formulars umfangreiche, personalisierte und visuell ansprechende E-Mails senden. Diese E-Mails können mit Formulardaten angepasst und mit verschiedenen E-Mail-Tags, wie Bildern und Links, erweitert werden. Bei adaptiven Formularen können Sie entweder eine Datei mit einer HTML-Vorlage hochladen oder diese Vorlagen mit einem Texteditor erstellen.
 
